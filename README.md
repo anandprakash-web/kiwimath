@@ -42,8 +42,12 @@ uvicorn app.main:app --reload
 | Question schema | ✅ v0.1 locked |
 | Pydantic models | ✅ shipped |
 | Schema validator | ✅ shipped |
-| FastAPI skeleton | 🚧 in progress |
-| Question renderer | ⏳ this week |
-| Flutter app | ⏳ next week |
-| Firebase wiring | ⏳ next week |
-| Adaptive engine v0 | ⏳ Week 2 |
+| Question renderer | ✅ shipped (params, locale, pronouns, distractors, step-downs) |
+| Safe formula evaluator | ✅ shipped (ast-based, no eval()) |
+| SVG generator framework | ✅ shipped (1 generator: object_row_with_cross_out) |
+| FastAPI skeleton | ✅ shipped (/questions/next, /questions/{id}, /health) |
+| Content store (in-memory) | ✅ shipped |
+| Flutter app | ⏳ Week 3 |
+| Firebase wiring | ⏳ Week 3 |
+| Adaptive engine v0 | ⏳ Week 3 |
+| Postgres ingester | ⏳ Week 4 |
