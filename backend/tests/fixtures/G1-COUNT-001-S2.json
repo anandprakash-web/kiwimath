@@ -1,0 +1,40 @@
+{
+  "id": "G1-COUNT-001-S2",
+  "grade": 1,
+  "topic": "counting_observation",
+  "subtopic": "subtraction_word_problems",
+  "subskills": ["subtraction_within_10"],
+  "difficulty": 1,
+  "tier": "warmup",
+  "parent_id": "G1-COUNT-001",
+  "step_index": 2,
+
+  "stem_template": "Look: here are {N} {object}. We cross out {K_small}. How many are left?",
+  "visual": {
+    "type": "svg_generator",
+    "generator": "object_row_with_cross_out",
+    "params": {"count_from": "N", "cross_out": "K_small"}
+  },
+  "answer_type": "multiple_choice",
+
+  "params": {
+    "object":  {"inherit_from_parent": true},
+    "N":       {"inherit_from_parent": true},
+    "K_small": {"range": [2, 3], "constraint": "K_small < N"}
+  },
+
+  "answer_formula": "N - K_small",
+  "distractors": [
+    {"formula": "N",                "label": "no_change"},
+    {"formula": "K_small",          "label": "picked_crossed_out"},
+    {"formula": "N - K_small + 1", "label": "off_by_one"}
+  ],
+
+  "misconceptions": [],
+
+  "tags": ["step_down", "topic:counting", "visual_support"],
+  "est_time_seconds": 20,
+  "version": 1,
+  "author": "AP",
+  "status": "draft"
+}

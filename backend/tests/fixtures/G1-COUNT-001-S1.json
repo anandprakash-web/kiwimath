@@ -1,0 +1,43 @@
+{
+  "id": "G1-COUNT-001-S1",
+  "grade": 1,
+  "topic": "counting_observation",
+  "subtopic": "subtraction_word_problems",
+  "subskills": ["subtraction_within_10"],
+  "difficulty": 1,
+  "tier": "warmup",
+  "parent_id": "G1-COUNT-001",
+  "step_index": 1,
+
+  "stem_template": "{name} has {N} {object}. {pronoun_subject} gives away just 1. How many {object} now?",
+  "visual": {
+    "type": "svg_generator",
+    "generator": "object_row_with_cross_out",
+    "params": {"count_from": "N", "cross_out": 1}
+  },
+  "answer_type": "multiple_choice",
+
+  "params": {
+    "name":   {"inherit_from_parent": true},
+    "object": {"inherit_from_parent": true},
+    "N":      {"inherit_from_parent": true}
+  },
+  "derived": {
+    "pronoun_subject": "pronoun_from_name(name)"
+  },
+
+  "answer_formula": "N - 1",
+  "distractors": [
+    {"formula": "N",     "label": "no_change"},
+    {"formula": "N + 1", "label": "added_one"},
+    {"formula": "N - 2", "label": "overcorrect"}
+  ],
+
+  "misconceptions": [],
+
+  "tags": ["step_down", "topic:counting"],
+  "est_time_seconds": 15,
+  "version": 1,
+  "author": "AP",
+  "status": "draft"
+}

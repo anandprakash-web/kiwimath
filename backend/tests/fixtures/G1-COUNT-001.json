@@ -1,0 +1,63 @@
+{
+  "id": "G1-COUNT-001",
+  "grade": 1,
+  "topic": "counting_observation",
+  "subtopic": "subtraction_word_problems",
+  "subskills": ["subtraction_within_10", "word_problem_parsing"],
+  "difficulty": 1,
+  "tier": "warmup",
+  "source_inspiration": "Kangaroo Felix — Pablo and the balloons (Topic 1 Q1)",
+
+  "stem_template": "{name} has {N} {object}. {pronoun_subject} gives away {K} of them. How many {object} does {name} have now?",
+  "visual": null,
+  "answer_type": "multiple_choice",
+
+  "params": {
+    "name":   {"pool": ["Pablo", "Aarav", "Mei", "Zara", "Liam", "Priya", "Diya", "Kofi", "Sofia"]},
+    "object": {"pool": ["balloons", "apples", "stickers", "marbles", "cookies", "pencils"]},
+    "N":      {"range": [6, 10]},
+    "K":      {"range": [2, 4], "constraint": "K < N"}
+  },
+  "derived": {
+    "pronoun_subject": "pronoun_from_name(name)"
+  },
+
+  "answer_formula": "N - K",
+  "distractors": [
+    {"formula": "N + K", "label": "added_instead"},
+    {"formula": "N",     "label": "ignored_action"},
+    {"formula": "K",     "label": "picked_salient"}
+  ],
+
+  "misconceptions": [
+    {
+      "trigger_answer": "N + K",
+      "diagnosis": "added_instead_of_subtracted",
+      "feedback_child": "Giving away means we end up with fewer, not more. Let's try it step by step.",
+      "step_down_path": ["G1-COUNT-001-S1", "G1-COUNT-001-S2", "G1-COUNT-001-S3"]
+    },
+    {
+      "trigger_answer": "N",
+      "diagnosis": "ignored_action_word",
+      "feedback_child": "{name} gave some away — so the number must change. Let's see.",
+      "step_down_path": ["G1-COUNT-001-S2", "G1-COUNT-001-S3"]
+    },
+    {
+      "trigger_answer": "K",
+      "diagnosis": "picked_salient_number",
+      "feedback_child": "The answer is how many are *left*, not how many were given away. Let's count together.",
+      "step_down_path": ["G1-COUNT-001-S1", "G1-COUNT-001-S3"]
+    }
+  ],
+
+  "locale_context": {
+    "IN":     {"names": ["Aarav", "Priya", "Diya", "Rohan", "Ananya"], "objects": ["laddoos", "marbles", "stickers"]},
+    "global": {"names": ["Pablo", "Mei", "Liam", "Sofia", "Kofi"],     "objects": ["balloons", "apples", "stickers"]}
+  },
+
+  "tags": ["topic:counting", "skill:subtraction", "format:word_problem"],
+  "est_time_seconds": 25,
+  "version": 1,
+  "author": "AP",
+  "status": "draft"
+}

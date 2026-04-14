@@ -1,0 +1,40 @@
+{
+  "id": "G1-COUNT-001-S3",
+  "grade": 1,
+  "topic": "counting_observation",
+  "subtopic": "subtraction_word_problems",
+  "subskills": ["subtraction_within_10", "word_problem_parsing"],
+  "difficulty": 2,
+  "tier": "warmup",
+  "parent_id": "G1-COUNT-001",
+  "step_index": 3,
+
+  "stem_template": "Okay — now the full problem. {name} has {N} {object}. {pronoun_subject} gives away {K}. How many {object} now?",
+  "visual": null,
+  "answer_type": "multiple_choice",
+
+  "params": {
+    "name":   {"inherit_from_parent": true},
+    "object": {"inherit_from_parent": true},
+    "N":      {"inherit_from_parent": true},
+    "K":      {"inherit_from_parent": true}
+  },
+  "derived": {
+    "pronoun_subject": "pronoun_from_name(name)"
+  },
+
+  "answer_formula": "N - K",
+  "distractors": [
+    {"formula": "N + K", "label": "added_instead"},
+    {"formula": "N",     "label": "ignored_action"},
+    {"formula": "K",     "label": "picked_salient"}
+  ],
+
+  "misconceptions": [],
+
+  "tags": ["step_down", "topic:counting", "return_to_parent"],
+  "est_time_seconds": 25,
+  "version": 1,
+  "author": "AP",
+  "status": "draft"
+}
