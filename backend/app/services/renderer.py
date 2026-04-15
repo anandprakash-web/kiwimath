@@ -79,6 +79,9 @@ class RenderedQuestion:
     # App uses this to fire the right step-down path when the kid taps a wrong option.
     wrong_option_diagnosis: Dict[int, str] = field(default_factory=dict)
     wrong_option_step_down_path: Dict[int, List[str]] = field(default_factory=dict)
+    # Warm, kid-facing message per wrong option (from Misconception.feedback_child,
+    # with {placeholders} substituted).
+    wrong_option_feedback: Dict[int, str] = field(default_factory=dict)
 
     def to_dict(self) -> Dict[str, Any]:
         return {
@@ -92,6 +95,7 @@ class RenderedQuestion:
             "visual": self.visual,
             "wrong_option_diagnosis": self.wrong_option_diagnosis,
             "wrong_option_step_down_path": self.wrong_option_step_down_path,
+            "wrong_option_feedback": self.wrong_option_feedback,
         }
 
 
@@ -276,10 +280,12 @@ def render_question(
     correct_index = -1
     wrong_diagnosis: Dict[int, str] = {}
     wrong_steps: Dict[int, List[str]] = {}
+    wrong_feedback: Dict[int, str] = {}
 
-    # Build misconception lookup: formula -> misconception
+    # Build misconception lookup: formula -> misconception (parents only; step-downs
+    # have empty misconceptions by schema).
     misc_by_formula: Dict[str, Any] = {
-        m.trigger_answer: m for m in q.misconceptions
+        m.trigger_answer: m for m in getattr(q, "misconceptions", [])
     }
 
     for idx, (value, is_correct, distractor) in enumerate(all_options):
@@ -293,6 +299,11 @@ def render_question(
                 if misc is not None:
                     wrong_diagnosis[idx] = misc.diagnosis
                     wrong_steps[idx] = list(misc.step_down_path)
+                    # Substitute placeholders in the kid-facing feedback message too.
+                    try:
+                        wrong_feedback[idx] = _substitute(misc.feedback_child, values)
+                    except RenderError:
+                        wrong_feedback[idx] = misc.feedback_child
 
     stem = _substitute(q.stem_template, values)
 
@@ -315,4 +326,5 @@ def render_question(
         visual=visual_dict,
         wrong_option_diagnosis=wrong_diagnosis,
         wrong_option_step_down_path=wrong_steps,
+        wrong_option_feedback=wrong_feedback,
     )

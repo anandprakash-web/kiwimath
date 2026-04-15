@@ -14,7 +14,7 @@ Week 3 will add:
 from __future__ import annotations
 
 import random
-from typing import Dict, List, Optional
+from typing import Any, Dict, List, Optional
 
 from fastapi import APIRouter, HTTPException, Query
 from pydantic import BaseModel, Field
@@ -55,8 +55,14 @@ class QuestionOut(BaseModel):
     # Secrets the app should NOT show — kept server-side in a real deploy.
     # For v0 we include them so you can see the full render in browser.
     correct_index: int
+    # The concrete param values this render used. The app passes these back to
+    # the server when fetching step-down questions so they inherit consistently.
+    params_used: Dict[str, Any] = Field(default_factory=dict)
     wrong_option_diagnosis: Dict[int, str] = Field(default_factory=dict)
     wrong_option_step_down_path: Dict[int, List[str]] = Field(default_factory=dict)
+    # Warm kid-facing message per wrong option (from misconception.feedback_child
+    # with placeholders substituted).
+    wrong_option_feedback: Dict[int, str] = Field(default_factory=dict)
 
 
 # ---------------------------------------------------------------------------
@@ -89,6 +95,12 @@ def _render_visual(visual_dict: Optional[Dict]) -> Optional[VisualOut]:
 def _to_response(
     rendered, est_time_seconds: Optional[int]
 ) -> QuestionOut:
+    # Only send inherit-friendly params (strings/numbers), not derived pronouns.
+    # Step-down questions don't need pronouns; they re-derive them from name.
+    safe_params = {
+        k: v for k, v in rendered.params_used.items()
+        if isinstance(v, (str, int, float, bool))
+    }
     return QuestionOut(
         question_id=rendered.question_id,
         stem=rendered.stem,
@@ -96,8 +108,10 @@ def _to_response(
         visual=_render_visual(rendered.visual),
         est_time_seconds=est_time_seconds,
         correct_index=rendered.correct_index,
+        params_used=safe_params,
         wrong_option_diagnosis=rendered.wrong_option_diagnosis,
         wrong_option_step_down_path=rendered.wrong_option_step_down_path,
+        wrong_option_feedback=rendered.wrong_option_feedback,
     )
 
 

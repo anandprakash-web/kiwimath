@@ -150,6 +150,35 @@ def test_pronoun_matches_final_name_after_locale_swap():
 # ---------------------------------------------------------------------------
 
 
+def test_warm_feedback_messages_carried_to_wrong_options():
+    q = _golden()
+    r = render_question(q, seed=5)
+    # Every diagnosed wrong option must have a kid-friendly feedback message.
+    for idx, diagnosis in r.wrong_option_diagnosis.items():
+        assert idx in r.wrong_option_feedback, (
+            f"option {idx} has diagnosis {diagnosis} but no feedback_child"
+        )
+        msg = r.wrong_option_feedback[idx]
+        assert isinstance(msg, str) and len(msg) > 0
+        # Placeholders should be resolved
+        assert "{" not in msg and "}" not in msg
+
+
+def test_feedback_placeholder_substitution():
+    """feedback_child may reference {name} — it must come out with the final name."""
+    q = _golden()
+    r = render_question(q, seed=11, locale="IN")
+    name = r.params_used["name"]
+    # At least one misconception references {name}
+    has_name_in_any = any(name in fb for fb in r.wrong_option_feedback.values())
+    # Not all of them reference name, but at least one should have the substitution work
+    # (the "ignored_action_word" misconception uses {name}).
+    assert has_name_in_any, (
+        f"expected at least one feedback message to contain '{name}'; "
+        f"got {r.wrong_option_feedback}"
+    )
+
+
 def test_step_down_renders_with_inherited_params():
     from app.models.question import parse_question_file
     data = json.loads((FIXTURE_DIR / "G1-COUNT-001-S1.json").read_text())
