@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../models/question.dart';
 import '../models/session.dart';
 import '../services/api_client.dart';
+import '../services/auth_service.dart';
 import '../theme/kiwi_theme.dart';
 import '../widgets/feedback_banner.dart';
 import '../widgets/option_card.dart';
@@ -232,7 +233,16 @@ class _QuestionScreenState extends State<QuestionScreen> {
           _StatChip(icon: Icons.local_fire_department, value: '$_streak'),
           const SizedBox(width: 8),
           _StatChip(icon: Icons.diamond, value: '$_gems', color: KiwiColors.gemGold),
-          const SizedBox(width: 16),
+          const SizedBox(width: 8),
+          IconButton(
+            icon: const Icon(Icons.logout, size: 20),
+            tooltip: 'Sign out',
+            onPressed: () async {
+              await AuthService().signOut();
+              // AuthWrapper listens to the stream and swaps back to SignInScreen.
+            },
+          ),
+          const SizedBox(width: 8),
         ],
       ),
       body: _buildBody(),

@@ -142,12 +142,19 @@ def questions_next(
             ),
         )
 
-    q = random.choice(candidates)
-    try:
-        rendered = render_question(q, seed=seed, locale=locale)
-    except RenderError as e:
-        raise HTTPException(status_code=500, detail=f"render failed: {e}")
-    return _to_response(rendered, q.est_time_seconds)
+    pool = list(candidates)
+    random.shuffle(pool)
+    last_error = None
+    MAX_ATTEMPTS = min(10, len(pool))
+    for q in pool[:MAX_ATTEMPTS]:
+        try:
+            rendered = render_question(q, seed=seed, locale=locale)
+            return _to_response(rendered, q.est_time_seconds)
+        except RenderError as e:
+            print(f"[questions_next] skipping {q.id}: {e}")
+            last_error = f"{q.id}: {e}"
+            continue
+    raise HTTPException(status_code=500, detail=f"All {MAX_ATTEMPTS} attempts failed. Last error: {last_error}")
 
 
 @router.get("/questions/{question_id}", response_model=QuestionOut)
