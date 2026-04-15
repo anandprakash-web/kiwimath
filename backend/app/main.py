@@ -14,6 +14,7 @@ Then visit:
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
+from app.api.preview import router as preview_router
 from app.api.questions import router as questions_router
 from app.services import content_store
 
@@ -34,6 +35,7 @@ def create_app() -> FastAPI:
     )
 
     app.include_router(questions_router)
+    app.include_router(preview_router)
 
     @app.on_event("startup")
     def _startup():
