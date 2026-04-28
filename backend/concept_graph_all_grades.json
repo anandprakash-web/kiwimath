@@ -1,0 +1,4836 @@
+{
+  "version": 1,
+  "nodes": [
+    {
+      "concept_id": "g1.attribute_counting",
+      "display_name": "Attribute Counting",
+      "description": "Grade 1, Chapter 1: Attribute Counting",
+      "grade_range": [
+        1,
+        1
+      ],
+      "prerequisites": [],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g1.counting_objects",
+      "display_name": "Counting Objects",
+      "description": "Grade 1, Chapter 1: Counting Objects",
+      "grade_range": [
+        1,
+        1
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g1.attribute_counting",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g1.hundred_chart",
+      "display_name": "Hundred Chart",
+      "description": "Grade 1, Chapter 1: Hundred Chart",
+      "grade_range": [
+        1,
+        1
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g1.counting_objects",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g1.lateral_counting",
+      "display_name": "Lateral Counting",
+      "description": "Grade 1, Chapter 1: Lateral Counting",
+      "grade_range": [
+        1,
+        1
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g1.hundred_chart",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g1.number_sequence",
+      "display_name": "Number Sequence",
+      "description": "Grade 1, Chapter 1: Number Sequence",
+      "grade_range": [
+        1,
+        1
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g1.lateral_counting",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "algebra"
+    },
+    {
+      "concept_id": "g1.subitizing",
+      "display_name": "Subitizing",
+      "description": "Grade 1, Chapter 1: Subitizing",
+      "grade_range": [
+        1,
+        1
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g1.number_sequence",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g1.apart_together",
+      "display_name": "Apart & Together",
+      "description": "Grade 1, Chapter 2: Apart & Together",
+      "grade_range": [
+        1,
+        1
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g1.subitizing",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "shape_forest",
+      "topic_branch": "geometry"
+    },
+    {
+      "concept_id": "g1.shape_names",
+      "display_name": "Shape Names",
+      "description": "Grade 1, Chapter 2: Shape Names",
+      "grade_range": [
+        1,
+        1
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g1.apart_together",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "shape_forest",
+      "topic_branch": "geometry"
+    },
+    {
+      "concept_id": "g1.spatial_paths",
+      "display_name": "Spatial Paths",
+      "description": "Grade 1, Chapter 2: Spatial Paths",
+      "grade_range": [
+        1,
+        1
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g1.shape_names",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "shape_forest",
+      "topic_branch": "geometry"
+    },
+    {
+      "concept_id": "g1.spins_flips",
+      "display_name": "Spins & Flips",
+      "description": "Grade 1, Chapter 2: Spins & Flips",
+      "grade_range": [
+        1,
+        1
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g1.spatial_paths",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "shape_forest",
+      "topic_branch": "geometry"
+    },
+    {
+      "concept_id": "g1.comparison_puzzle",
+      "display_name": "Comparison Puzzle",
+      "description": "Grade 1, Chapter 3: Comparison Puzzle",
+      "grade_range": [
+        1,
+        1
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g1.spins_flips",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "combinatorics"
+    },
+    {
+      "concept_id": "g1.lengths",
+      "display_name": "Lengths",
+      "description": "Grade 1, Chapter 3: Lengths",
+      "grade_range": [
+        1,
+        1
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g1.comparison_puzzle",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "shape_forest",
+      "topic_branch": "measurement"
+    },
+    {
+      "concept_id": "g1.more_or_less",
+      "display_name": "More or Less",
+      "description": "Grade 1, Chapter 3: More or Less",
+      "grade_range": [
+        1,
+        1
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g1.lengths",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g1.one_for_one",
+      "display_name": "One for One",
+      "description": "Grade 1, Chapter 3: One for One",
+      "grade_range": [
+        1,
+        1
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g1.more_or_less",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g1.ordering",
+      "display_name": "Ordering",
+      "description": "Grade 1, Chapter 3: Ordering",
+      "grade_range": [
+        1,
+        1
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g1.one_for_one",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g1.adding_multiple",
+      "display_name": "Adding Multiple",
+      "description": "Grade 1, Chapter 4: Adding Multiple",
+      "grade_range": [
+        1,
+        1
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g1.ordering",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g1.addition_basics",
+      "display_name": "Addition Basics",
+      "description": "Grade 1, Chapter 4: Addition Basics",
+      "grade_range": [
+        1,
+        1
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g1.adding_multiple",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g1.commutativity",
+      "display_name": "Commutativity",
+      "description": "Grade 1, Chapter 4: Commutativity",
+      "grade_range": [
+        1,
+        1
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g1.addition_basics",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g1.counting_up",
+      "display_name": "Counting Up",
+      "description": "Grade 1, Chapter 4: Counting Up",
+      "grade_range": [
+        1,
+        1
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g1.commutativity",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g1.number_bonds",
+      "display_name": "Number Bonds",
+      "description": "Grade 1, Chapter 4: Number Bonds",
+      "grade_range": [
+        1,
+        1
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g1.counting_up",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g1.story_problems",
+      "display_name": "Story Problems",
+      "description": "Grade 1, Chapter 4: Story Problems",
+      "grade_range": [
+        1,
+        1
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g1.number_bonds",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g1.add_sub_connection",
+      "display_name": "Add-Sub Connection",
+      "description": "Grade 1, Chapter 5: Add-Sub Connection",
+      "grade_range": [
+        1,
+        1
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g1.story_problems",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g1.counting_down",
+      "display_name": "Counting Down",
+      "description": "Grade 1, Chapter 5: Counting Down",
+      "grade_range": [
+        1,
+        1
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g1.add_sub_connection",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g1.finding_difference",
+      "display_name": "Finding Difference",
+      "description": "Grade 1, Chapter 5: Finding Difference",
+      "grade_range": [
+        1,
+        1
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g1.counting_down",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g1.strategies",
+      "display_name": "Strategies",
+      "description": "Grade 1, Chapter 5: Strategies",
+      "grade_range": [
+        1,
+        1
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g1.finding_difference",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g1.subtract_10",
+      "display_name": "Subtract 10",
+      "description": "Grade 1, Chapter 5: Subtract 10",
+      "grade_range": [
+        1,
+        1
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g1.strategies",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g1.taking_away",
+      "display_name": "Taking Away",
+      "description": "Grade 1, Chapter 5: Taking Away",
+      "grade_range": [
+        1,
+        1
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g1.subtract_10",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g1.number_categories",
+      "display_name": "Number Categories",
+      "description": "Grade 1, Chapter 6: Number Categories",
+      "grade_range": [
+        1,
+        1
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g1.taking_away",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "data"
+    },
+    {
+      "concept_id": "g1.sorting",
+      "display_name": "Sorting",
+      "description": "Grade 1, Chapter 6: Sorting",
+      "grade_range": [
+        1,
+        1
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g1.number_categories",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "data"
+    },
+    {
+      "concept_id": "g1.venn_diagrams",
+      "display_name": "Venn Diagrams",
+      "description": "Grade 1, Chapter 6: Venn Diagrams",
+      "grade_range": [
+        1,
+        1
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g1.sorting",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "data"
+    },
+    {
+      "concept_id": "g1.adding_tens",
+      "display_name": "Adding Tens",
+      "description": "Grade 1, Chapter 7: Adding Tens",
+      "grade_range": [
+        1,
+        1
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g1.venn_diagrams",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g1.basic_facts_review",
+      "display_name": "Basic Facts Review",
+      "description": "Grade 1, Chapter 7: Basic Facts Review",
+      "grade_range": [
+        1,
+        1
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g1.adding_tens",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g1.number_line",
+      "display_name": "Number Line",
+      "description": "Grade 1, Chapter 7: Number Line",
+      "grade_range": [
+        1,
+        1
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g1.basic_facts_review",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g1.place_value_add",
+      "display_name": "Place Value Add",
+      "description": "Grade 1, Chapter 7: Place Value Add",
+      "grade_range": [
+        1,
+        1
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g1.number_line",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g1.strategies_review",
+      "display_name": "Strategies Review",
+      "description": "Grade 1, Chapter 7: Strategies Review",
+      "grade_range": [
+        1,
+        1
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g1.place_value_add",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g1.comparing_differences",
+      "display_name": "Comparing Differences",
+      "description": "Grade 1, Chapter 8: Comparing Differences",
+      "grade_range": [
+        1,
+        1
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g1.strategies_review",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g1.comparing_expressions",
+      "display_name": "Comparing Expressions",
+      "description": "Grade 1, Chapter 8: Comparing Expressions",
+      "grade_range": [
+        1,
+        1
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g1.comparing_differences",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "algebra"
+    },
+    {
+      "concept_id": "g1.comparison_tricks",
+      "display_name": "Comparison Tricks",
+      "description": "Grade 1, Chapter 8: Comparison Tricks",
+      "grade_range": [
+        1,
+        1
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g1.comparing_expressions",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g1.compensation",
+      "display_name": "Compensation",
+      "description": "Grade 1, Chapter 8: Compensation",
+      "grade_range": [
+        1,
+        1
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g1.comparison_tricks",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g1.place_value_ordering",
+      "display_name": "Place Value Ordering",
+      "description": "Grade 1, Chapter 8: Place Value Ordering",
+      "grade_range": [
+        1,
+        1
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g1.compensation",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g1.growing_patterns",
+      "display_name": "Growing Patterns",
+      "description": "Grade 1, Chapter 9: Growing Patterns",
+      "grade_range": [
+        1,
+        1
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g1.place_value_ordering",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "algebra"
+    },
+    {
+      "concept_id": "g1.number_patterns",
+      "display_name": "Number Patterns",
+      "description": "Grade 1, Chapter 9: Number Patterns",
+      "grade_range": [
+        1,
+        1
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g1.growing_patterns",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "algebra"
+    },
+    {
+      "concept_id": "g1.shape_patterns",
+      "display_name": "Shape Patterns",
+      "description": "Grade 1, Chapter 9: Shape Patterns",
+      "grade_range": [
+        1,
+        1
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g1.number_patterns",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "shape_forest",
+      "topic_branch": "geometry"
+    },
+    {
+      "concept_id": "g1.skip_counting",
+      "display_name": "Skip Counting",
+      "description": "Grade 1, Chapter 9: Skip Counting",
+      "grade_range": [
+        1,
+        1
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g1.shape_patterns",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "algebra"
+    },
+    {
+      "concept_id": "g1.special_patterns",
+      "display_name": "Special Patterns",
+      "description": "Grade 1, Chapter 9: Special Patterns",
+      "grade_range": [
+        1,
+        1
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g1.skip_counting",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "algebra"
+    },
+    {
+      "concept_id": "g1.counting_by_10s",
+      "display_name": "Counting by 10s",
+      "description": "Grade 1, Chapter 10: Counting by 10s",
+      "grade_range": [
+        1,
+        1
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g1.special_patterns",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g1.expanded_form",
+      "display_name": "Expanded Form",
+      "description": "Grade 1, Chapter 10: Expanded Form",
+      "grade_range": [
+        1,
+        1
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g1.counting_by_10s",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g1.place_value",
+      "display_name": "Place Value",
+      "description": "Grade 1, Chapter 10: Place Value",
+      "grade_range": [
+        1,
+        1
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g1.expanded_form",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g1.reading_numbers",
+      "display_name": "Reading Numbers",
+      "description": "Grade 1, Chapter 10: Reading Numbers",
+      "grade_range": [
+        1,
+        1
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g1.place_value",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g1.regrouping",
+      "display_name": "Regrouping",
+      "description": "Grade 1, Chapter 10: Regrouping",
+      "grade_range": [
+        1,
+        1
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g1.reading_numbers",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g1.comparing_lengths",
+      "display_name": "Comparing Lengths",
+      "description": "Grade 1, Chapter 11: Comparing Lengths",
+      "grade_range": [
+        1,
+        1
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g1.regrouping",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "shape_forest",
+      "topic_branch": "measurement"
+    },
+    {
+      "concept_id": "g1.days_time",
+      "display_name": "Days & Time",
+      "description": "Grade 1, Chapter 11: Days & Time",
+      "grade_range": [
+        1,
+        1
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g1.comparing_lengths",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "shape_forest",
+      "topic_branch": "measurement"
+    },
+    {
+      "concept_id": "g1.ruler",
+      "display_name": "Ruler",
+      "description": "Grade 1, Chapter 11: Ruler",
+      "grade_range": [
+        1,
+        1
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g1.days_time",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "shape_forest",
+      "topic_branch": "measurement"
+    },
+    {
+      "concept_id": "g1.time",
+      "display_name": "Time",
+      "description": "Grade 1, Chapter 11: Time",
+      "grade_range": [
+        1,
+        1
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g1.ruler",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "shape_forest",
+      "topic_branch": "measurement"
+    },
+    {
+      "concept_id": "g1.using_units",
+      "display_name": "Using Units",
+      "description": "Grade 1, Chapter 11: Using Units",
+      "grade_range": [
+        1,
+        1
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g1.time",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "shape_forest",
+      "topic_branch": "measurement"
+    },
+    {
+      "concept_id": "g1.directions",
+      "display_name": "Directions",
+      "description": "Grade 1, Chapter 12: Directions",
+      "grade_range": [
+        1,
+        1
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g1.using_units",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "shape_forest",
+      "topic_branch": "geometry"
+    },
+    {
+      "concept_id": "g1.location",
+      "display_name": "Location",
+      "description": "Grade 1, Chapter 12: Location",
+      "grade_range": [
+        1,
+        1
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g1.directions",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "shape_forest",
+      "topic_branch": "geometry"
+    },
+    {
+      "concept_id": "g1.logic_puzzles",
+      "display_name": "Logic Puzzles",
+      "description": "Grade 1, Chapter 12: Logic Puzzles",
+      "grade_range": [
+        1,
+        1
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g1.location",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "algebra"
+    },
+    {
+      "concept_id": "g1.pathfinding",
+      "display_name": "Pathfinding",
+      "description": "Grade 1, Chapter 12: Pathfinding",
+      "grade_range": [
+        1,
+        1
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g1.logic_puzzles",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "shape_forest",
+      "topic_branch": "geometry"
+    },
+    {
+      "concept_id": "g1.turns",
+      "display_name": "Turns",
+      "description": "Grade 1, Chapter 12: Turns",
+      "grade_range": [
+        1,
+        1
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g1.pathfinding",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "shape_forest",
+      "topic_branch": "geometry"
+    },
+    {
+      "concept_id": "g1.word_problems",
+      "display_name": "Word Problems",
+      "description": "Grade 1, Chapter 12: Word Problems",
+      "grade_range": [
+        1,
+        1
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g1.turns",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g2.adding_subtracting_1_10_100",
+      "display_name": "Adding/Subtracting 1, 10, 100",
+      "description": "Grade 2, Chapter 1: Adding/Subtracting 1, 10, 100",
+      "grade_range": [
+        2,
+        2
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g1.subtract_10",
+          "edge_type": "soft_prereq"
+        },
+        {
+          "concept_id": "g1.word_problems",
+          "edge_type": "soft_prereq"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g2.breaking_regrouping",
+      "display_name": "Breaking & Regrouping",
+      "description": "Grade 2, Chapter 1: Breaking & Regrouping",
+      "grade_range": [
+        2,
+        2
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g2.adding_subtracting_1_10_100",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g2.digits_places",
+      "display_name": "Digits & Places",
+      "description": "Grade 2, Chapter 1: Digits & Places",
+      "grade_range": [
+        2,
+        2
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g2.breaking_regrouping",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g2.expanded_form",
+      "display_name": "Expanded Form",
+      "description": "Grade 2, Chapter 1: Expanded Form",
+      "grade_range": [
+        2,
+        2
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g2.digits_places",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g2.mystery_numbers",
+      "display_name": "Mystery Numbers",
+      "description": "Grade 2, Chapter 1: Mystery Numbers",
+      "grade_range": [
+        2,
+        2
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g2.expanded_form",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g2.closest_to",
+      "display_name": "Closest To",
+      "description": "Grade 2, Chapter 2: Closest To",
+      "grade_range": [
+        2,
+        2
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g2.mystery_numbers",
+          "edge_type": "strand_order"
+        },
+        {
+          "concept_id": "g1.compensation",
+          "edge_type": "soft_prereq"
+        },
+        {
+          "concept_id": "g1.word_problems",
+          "edge_type": "soft_prereq"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g2.distance_between_numbers",
+      "display_name": "Distance Between Numbers",
+      "description": "Grade 2, Chapter 2: Distance Between Numbers",
+      "grade_range": [
+        2,
+        2
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g2.closest_to",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g2.number_line",
+      "display_name": "Number Line",
+      "description": "Grade 2, Chapter 2: Number Line",
+      "grade_range": [
+        2,
+        2
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g2.distance_between_numbers",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g2.ordering",
+      "display_name": "Ordering",
+      "description": "Grade 2, Chapter 2: Ordering",
+      "grade_range": [
+        2,
+        2
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g2.number_line",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g2.using",
+      "display_name": "Using < > =",
+      "description": "Grade 2, Chapter 2: Using < > =",
+      "grade_range": [
+        2,
+        2
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g2.ordering",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g2.adding_three_numbers",
+      "display_name": "Adding Three Numbers",
+      "description": "Grade 2, Chapter 3: Adding Three Numbers",
+      "grade_range": [
+        2,
+        2
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g2.using",
+          "edge_type": "strand_order"
+        },
+        {
+          "concept_id": "g1.reading_numbers",
+          "edge_type": "soft_prereq"
+        },
+        {
+          "concept_id": "g1.word_problems",
+          "edge_type": "soft_prereq"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g2.doubles_near_doubles",
+      "display_name": "Doubles & Near-Doubles",
+      "description": "Grade 2, Chapter 3: Doubles & Near-Doubles",
+      "grade_range": [
+        2,
+        2
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g2.adding_three_numbers",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g2.making_10s_and_100s",
+      "display_name": "Making 10s and 100s",
+      "description": "Grade 2, Chapter 3: Making 10s and 100s",
+      "grade_range": [
+        2,
+        2
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g2.doubles_near_doubles",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g2.place_value_strategies",
+      "display_name": "Place Value Strategies",
+      "description": "Grade 2, Chapter 3: Place Value Strategies",
+      "grade_range": [
+        2,
+        2
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g2.making_10s_and_100s",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g2.checking_with_addition",
+      "display_name": "Checking with Addition",
+      "description": "Grade 2, Chapter 4: Checking with Addition",
+      "grade_range": [
+        2,
+        2
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g2.place_value_strategies",
+          "edge_type": "strand_order"
+        },
+        {
+          "concept_id": "g1.compensation",
+          "edge_type": "soft_prereq"
+        },
+        {
+          "concept_id": "g1.word_problems",
+          "edge_type": "soft_prereq"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g2.counting_up",
+      "display_name": "Counting Up",
+      "description": "Grade 2, Chapter 4: Counting Up",
+      "grade_range": [
+        2,
+        2
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g2.checking_with_addition",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g2.subtracting_in_parts",
+      "display_name": "Subtracting in Parts",
+      "description": "Grade 2, Chapter 4: Subtracting in Parts",
+      "grade_range": [
+        2,
+        2
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g2.place_value_strategies",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g2.subtraction_order",
+      "display_name": "Subtraction Order",
+      "description": "Grade 2, Chapter 4: Subtraction Order",
+      "grade_range": [
+        2,
+        2
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g2.subtracting_in_parts",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g2.evaluating",
+      "display_name": "Evaluating",
+      "description": "Grade 2, Chapter 5: Evaluating",
+      "grade_range": [
+        2,
+        2
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g2.subtraction_order",
+          "edge_type": "strand_order"
+        },
+        {
+          "concept_id": "g1.lateral_counting",
+          "edge_type": "soft_prereq"
+        },
+        {
+          "concept_id": "g1.word_problems",
+          "edge_type": "soft_prereq"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g2.missing_numbers",
+      "display_name": "Missing Numbers",
+      "description": "Grade 2, Chapter 5: Missing Numbers",
+      "grade_range": [
+        2,
+        2
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g2.evaluating",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g2.parentheses",
+      "display_name": "Parentheses",
+      "description": "Grade 2, Chapter 5: Parentheses",
+      "grade_range": [
+        2,
+        2
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g2.missing_numbers",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g2.reading_expressions",
+      "display_name": "Reading Expressions",
+      "description": "Grade 2, Chapter 5: Reading Expressions",
+      "grade_range": [
+        2,
+        2
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g2.parentheses",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "algebra"
+    },
+    {
+      "concept_id": "g2.writing_expressions",
+      "display_name": "Writing Expressions",
+      "description": "Grade 2, Chapter 5: Writing Expressions",
+      "grade_range": [
+        2,
+        2
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g2.reading_expressions",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "algebra"
+    },
+    {
+      "concept_id": "g2.act_it_out",
+      "display_name": "Act It Out",
+      "description": "Grade 2, Chapter 6: Act It Out",
+      "grade_range": [
+        2,
+        2
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g2.writing_expressions",
+          "edge_type": "strand_order"
+        },
+        {
+          "concept_id": "g1.word_problems",
+          "edge_type": "soft_prereq"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g2.drawing_a_picture",
+      "display_name": "Drawing a Picture",
+      "description": "Grade 2, Chapter 6: Drawing a Picture",
+      "grade_range": [
+        2,
+        2
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g2.act_it_out",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g2.guess_and_check",
+      "display_name": "Guess and Check",
+      "description": "Grade 2, Chapter 6: Guess and Check",
+      "grade_range": [
+        2,
+        2
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g2.drawing_a_picture",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g2.making_a_list",
+      "display_name": "Making a List",
+      "description": "Grade 2, Chapter 6: Making a List",
+      "grade_range": [
+        2,
+        2
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g2.guess_and_check",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g2.working_backwards",
+      "display_name": "Working Backwards",
+      "description": "Grade 2, Chapter 6: Working Backwards",
+      "grade_range": [
+        2,
+        2
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g2.making_a_list",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g2.estimation",
+      "display_name": "Estimation",
+      "description": "Grade 2, Chapter 7: Estimation",
+      "grade_range": [
+        2,
+        2
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g2.working_backwards",
+          "edge_type": "strand_order"
+        },
+        {
+          "concept_id": "g1.compensation",
+          "edge_type": "soft_prereq"
+        },
+        {
+          "concept_id": "g1.word_problems",
+          "edge_type": "soft_prereq"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g2.perimeter_intro",
+      "display_name": "Perimeter Intro",
+      "description": "Grade 2, Chapter 7: Perimeter Intro",
+      "grade_range": [
+        2,
+        2
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g2.estimation",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "shape_forest",
+      "topic_branch": "measurement"
+    },
+    {
+      "concept_id": "g2.unit_conversions",
+      "display_name": "Unit Conversions",
+      "description": "Grade 2, Chapter 7: Unit Conversions",
+      "grade_range": [
+        2,
+        2
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g2.perimeter_intro",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "shape_forest",
+      "topic_branch": "measurement"
+    },
+    {
+      "concept_id": "g2.using_a_ruler",
+      "display_name": "Using a Ruler",
+      "description": "Grade 2, Chapter 7: Using a Ruler",
+      "grade_range": [
+        2,
+        2
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g2.unit_conversions",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "shape_forest",
+      "topic_branch": "measurement"
+    },
+    {
+      "concept_id": "g2.canceling",
+      "display_name": "Canceling",
+      "description": "Grade 2, Chapter 8: Canceling",
+      "grade_range": [
+        2,
+        2
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g2.using_a_ruler",
+          "edge_type": "strand_order"
+        },
+        {
+          "concept_id": "g1.counting_up",
+          "edge_type": "soft_prereq"
+        },
+        {
+          "concept_id": "g1.word_problems",
+          "edge_type": "soft_prereq"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g2.compensation",
+      "display_name": "Compensation",
+      "description": "Grade 2, Chapter 8: Compensation",
+      "grade_range": [
+        2,
+        2
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g2.canceling",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g2.evaluating_expressions",
+      "display_name": "Evaluating Expressions",
+      "description": "Grade 2, Chapter 8: Evaluating Expressions",
+      "grade_range": [
+        2,
+        2
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g2.compensation",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "algebra"
+    },
+    {
+      "concept_id": "g2.rearranging",
+      "display_name": "Rearranging",
+      "description": "Grade 2, Chapter 8: Rearranging",
+      "grade_range": [
+        2,
+        2
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g2.evaluating_expressions",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g2.skip_counting",
+      "display_name": "Skip Counting",
+      "description": "Grade 2, Chapter 8: Skip Counting",
+      "grade_range": [
+        2,
+        2
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g2.rearranging",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "algebra"
+    },
+    {
+      "concept_id": "g2.add_sub_patterns",
+      "display_name": "Add/Sub Patterns",
+      "description": "Grade 2, Chapter 9: Add/Sub Patterns",
+      "grade_range": [
+        2,
+        2
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g2.skip_counting",
+          "edge_type": "strand_order"
+        },
+        {
+          "concept_id": "g1.number_patterns",
+          "edge_type": "soft_prereq"
+        },
+        {
+          "concept_id": "g1.logic_puzzles",
+          "edge_type": "soft_prereq"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "algebra"
+    },
+    {
+      "concept_id": "g2.coins_sharing",
+      "display_name": "Coins & Sharing",
+      "description": "Grade 2, Chapter 9: Coins & Sharing",
+      "grade_range": [
+        2,
+        2
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g2.add_sub_patterns",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g2.even_numbers",
+      "display_name": "Even Numbers",
+      "description": "Grade 2, Chapter 9: Even Numbers",
+      "grade_range": [
+        2,
+        2
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g2.coins_sharing",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g2.odd_numbers",
+      "display_name": "Odd Numbers",
+      "description": "Grade 2, Chapter 9: Odd Numbers",
+      "grade_range": [
+        2,
+        2
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g2.even_numbers",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g2.puzzles",
+      "display_name": "Puzzles",
+      "description": "Grade 2, Chapter 9: Puzzles",
+      "grade_range": [
+        2,
+        2
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g2.odd_numbers",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "combinatorics"
+    },
+    {
+      "concept_id": "g2.comparing_big_numbers",
+      "display_name": "Comparing Big Numbers",
+      "description": "Grade 2, Chapter 10: Comparing Big Numbers",
+      "grade_range": [
+        2,
+        2
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g2.puzzles",
+          "edge_type": "strand_order"
+        },
+        {
+          "concept_id": "g1.comparing_differences",
+          "edge_type": "soft_prereq"
+        },
+        {
+          "concept_id": "g1.word_problems",
+          "edge_type": "soft_prereq"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g2.computing_with_big_numbers",
+      "display_name": "Computing with Big Numbers",
+      "description": "Grade 2, Chapter 10: Computing with Big Numbers",
+      "grade_range": [
+        2,
+        2
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g2.comparing_big_numbers",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g2.infinity",
+      "display_name": "Infinity",
+      "description": "Grade 2, Chapter 10: Infinity",
+      "grade_range": [
+        2,
+        2
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g2.computing_with_big_numbers",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g2.rounding_estimating",
+      "display_name": "Rounding & Estimating",
+      "description": "Grade 2, Chapter 10: Rounding & Estimating",
+      "grade_range": [
+        2,
+        2
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g2.infinity",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g2.thousands_beyond",
+      "display_name": "Thousands & Beyond",
+      "description": "Grade 2, Chapter 10: Thousands & Beyond",
+      "grade_range": [
+        2,
+        2
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g2.rounding_estimating",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g2.cryptarithms",
+      "display_name": "Cryptarithms",
+      "description": "Grade 2, Chapter 11: Cryptarithms",
+      "grade_range": [
+        2,
+        2
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g2.thousands_beyond",
+          "edge_type": "strand_order"
+        },
+        {
+          "concept_id": "g1.comparison_puzzle",
+          "edge_type": "soft_prereq"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "combinatorics"
+    },
+    {
+      "concept_id": "g2.multi_borrow_subtraction",
+      "display_name": "Multi-Borrow Subtraction",
+      "description": "Grade 2, Chapter 11: Multi-Borrow Subtraction",
+      "grade_range": [
+        2,
+        2
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g2.cryptarithms",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g2.stacking_addition",
+      "display_name": "Stacking Addition",
+      "description": "Grade 2, Chapter 11: Stacking Addition",
+      "grade_range": [
+        2,
+        2
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g2.multi_borrow_subtraction",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g2.stacking_subtraction",
+      "display_name": "Stacking Subtraction",
+      "description": "Grade 2, Chapter 11: Stacking Subtraction",
+      "grade_range": [
+        2,
+        2
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g2.stacking_addition",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g2.stacking_three_numbers",
+      "display_name": "Stacking Three Numbers",
+      "description": "Grade 2, Chapter 11: Stacking Three Numbers",
+      "grade_range": [
+        2,
+        2
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g2.stacking_subtraction",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g2.logic_puzzles",
+      "display_name": "Logic Puzzles",
+      "description": "Grade 2, Chapter 12: Logic Puzzles",
+      "grade_range": [
+        2,
+        2
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g2.stacking_three_numbers",
+          "edge_type": "strand_order"
+        },
+        {
+          "concept_id": "g1.logic_puzzles",
+          "edge_type": "soft_prereq"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "algebra"
+    },
+    {
+      "concept_id": "g2.math_meet_puzzles",
+      "display_name": "Math Meet Puzzles",
+      "description": "Grade 2, Chapter 12: Math Meet Puzzles",
+      "grade_range": [
+        2,
+        2
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g2.logic_puzzles",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "combinatorics"
+    },
+    {
+      "concept_id": "g2.multi_step_problems",
+      "display_name": "Multi-Step Problems",
+      "description": "Grade 2, Chapter 12: Multi-Step Problems",
+      "grade_range": [
+        2,
+        2
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g2.math_meet_puzzles",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g2.organizing_data",
+      "display_name": "Organizing Data",
+      "description": "Grade 2, Chapter 12: Organizing Data",
+      "grade_range": [
+        2,
+        2
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g2.multi_step_problems",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "data"
+    },
+    {
+      "concept_id": "g2.pattern_discovery",
+      "display_name": "Pattern Discovery",
+      "description": "Grade 2, Chapter 12: Pattern Discovery",
+      "grade_range": [
+        2,
+        2
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g2.organizing_data",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "number_island",
+      "topic_branch": "algebra"
+    },
+    {
+      "concept_id": "g2.spatial_pathfinding",
+      "display_name": "Spatial Pathfinding",
+      "description": "Grade 2, Chapter 12: Spatial Pathfinding",
+      "grade_range": [
+        2,
+        2
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g2.pattern_discovery",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "shape_forest",
+      "topic_branch": "geometry"
+    },
+    {
+      "concept_id": "g3.angles",
+      "display_name": "Angles",
+      "description": "Grade 3, Chapter 1: Angles",
+      "grade_range": [
+        3,
+        3
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g2.spatial_pathfinding",
+          "edge_type": "soft_prereq"
+        }
+      ],
+      "world_region": "shape_forest",
+      "topic_branch": "geometry"
+    },
+    {
+      "concept_id": "g3.polyominoes",
+      "display_name": "Polyominoes",
+      "description": "Grade 3, Chapter 1: Polyominoes",
+      "grade_range": [
+        3,
+        3
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g3.angles",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "shape_forest",
+      "topic_branch": "geometry"
+    },
+    {
+      "concept_id": "g3.quadrilaterals",
+      "display_name": "Quadrilaterals",
+      "description": "Grade 3, Chapter 1: Quadrilaterals",
+      "grade_range": [
+        3,
+        3
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g3.polyominoes",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "shape_forest",
+      "topic_branch": "geometry"
+    },
+    {
+      "concept_id": "g3.symmetry",
+      "display_name": "Symmetry",
+      "description": "Grade 3, Chapter 1: Symmetry",
+      "grade_range": [
+        3,
+        3
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g3.quadrilaterals",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "shape_forest",
+      "topic_branch": "geometry"
+    },
+    {
+      "concept_id": "g3.triangles",
+      "display_name": "Triangles",
+      "description": "Grade 3, Chapter 1: Triangles",
+      "grade_range": [
+        3,
+        3
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g3.symmetry",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "shape_forest",
+      "topic_branch": "geometry"
+    },
+    {
+      "concept_id": "g3.hundred_chart_patterns",
+      "display_name": "Hundred Chart Patterns",
+      "description": "Grade 3, Chapter 2: Hundred Chart Patterns",
+      "grade_range": [
+        3,
+        3
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g3.triangles",
+          "edge_type": "strand_order"
+        },
+        {
+          "concept_id": "g2.add_sub_patterns",
+          "edge_type": "soft_prereq"
+        },
+        {
+          "concept_id": "g2.pattern_discovery",
+          "edge_type": "soft_prereq"
+        }
+      ],
+      "world_region": "equation_valley",
+      "topic_branch": "algebra"
+    },
+    {
+      "concept_id": "g3.skip_count_by_2s_5s_10s",
+      "display_name": "Skip-Count by 2s, 5s, 10s",
+      "description": "Grade 3, Chapter 2: Skip-Count by 2s, 5s, 10s",
+      "grade_range": [
+        3,
+        3
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g3.hundred_chart_patterns",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "multiplication_mountains",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g3.skip_count_by_3s_4s_6s",
+      "display_name": "Skip-Count by 3s, 4s, 6s",
+      "description": "Grade 3, Chapter 2: Skip-Count by 3s, 4s, 6s",
+      "grade_range": [
+        3,
+        3
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g3.skip_count_by_2s_5s_10s",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "multiplication_mountains",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g3.skip_count_from_any_number",
+      "display_name": "Skip-Count from Any Number",
+      "description": "Grade 3, Chapter 2: Skip-Count from Any Number",
+      "grade_range": [
+        3,
+        3
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g3.skip_count_by_3s_4s_6s",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "multiplication_mountains",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g3.area_by_counting",
+      "display_name": "Area by Counting",
+      "description": "Grade 3, Chapter 3: Area by Counting",
+      "grade_range": [
+        3,
+        3
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g3.skip_count_from_any_number",
+          "edge_type": "strand_order"
+        },
+        {
+          "concept_id": "g2.using_a_ruler",
+          "edge_type": "soft_prereq"
+        }
+      ],
+      "world_region": "measurement_meadow",
+      "topic_branch": "measurement"
+    },
+    {
+      "concept_id": "g3.area_of_rectangles",
+      "display_name": "Area of Rectangles",
+      "description": "Grade 3, Chapter 3: Area of Rectangles",
+      "grade_range": [
+        3,
+        3
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g3.area_by_counting",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "shape_forest",
+      "topic_branch": "geometry"
+    },
+    {
+      "concept_id": "g3.perimeter",
+      "display_name": "Perimeter",
+      "description": "Grade 3, Chapter 3: Perimeter",
+      "grade_range": [
+        3,
+        3
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g3.area_of_rectangles",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "measurement_meadow",
+      "topic_branch": "measurement"
+    },
+    {
+      "concept_id": "g3.same_perimeter_different_area",
+      "display_name": "Same Perimeter, Different Area",
+      "description": "Grade 3, Chapter 3: Same Perimeter, Different Area",
+      "grade_range": [
+        3,
+        3
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g3.perimeter",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "measurement_meadow",
+      "topic_branch": "measurement"
+    },
+    {
+      "concept_id": "g3.commutative_property",
+      "display_name": "Commutative Property",
+      "description": "Grade 3, Chapter 4: Commutative Property",
+      "grade_range": [
+        3,
+        3
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g3.same_perimeter_different_area",
+          "edge_type": "strand_order"
+        },
+        {
+          "concept_id": "g2.multi_step_problems",
+          "edge_type": "soft_prereq"
+        }
+      ],
+      "world_region": "multiplication_mountains",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g3.meaning_of_multiplication",
+      "display_name": "Meaning of Multiplication",
+      "description": "Grade 3, Chapter 4: Meaning of Multiplication",
+      "grade_range": [
+        3,
+        3
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g3.commutative_property",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "data_desert",
+      "topic_branch": "data"
+    },
+    {
+      "concept_id": "g3.times_tables_1_10",
+      "display_name": "Times Tables 1-10",
+      "description": "Grade 3, Chapter 4: Times Tables 1-10",
+      "grade_range": [
+        3,
+        3
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g3.meaning_of_multiplication",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "measurement_meadow",
+      "topic_branch": "measurement"
+    },
+    {
+      "concept_id": "g3.word_problems",
+      "display_name": "Word Problems",
+      "description": "Grade 3, Chapter 4: Word Problems",
+      "grade_range": [
+        3,
+        3
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g3.times_tables_1_10",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "multiplication_mountains",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g3.building_squares",
+      "display_name": "Building Squares",
+      "description": "Grade 3, Chapter 5: Building Squares",
+      "grade_range": [
+        3,
+        3
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g3.word_problems",
+          "edge_type": "strand_order"
+        },
+        {
+          "concept_id": "g2.drawing_a_picture",
+          "edge_type": "soft_prereq"
+        },
+        {
+          "concept_id": "g2.multi_step_problems",
+          "edge_type": "soft_prereq"
+        }
+      ],
+      "world_region": "multiplication_mountains",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g3.dots_and_boxes",
+      "display_name": "Dots and Boxes",
+      "description": "Grade 3, Chapter 5: Dots and Boxes",
+      "grade_range": [
+        3,
+        3
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g3.building_squares",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "multiplication_mountains",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g3.patterns_in_squares",
+      "display_name": "Patterns in Squares",
+      "description": "Grade 3, Chapter 5: Patterns in Squares",
+      "grade_range": [
+        3,
+        3
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g3.dots_and_boxes",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "equation_valley",
+      "topic_branch": "algebra"
+    },
+    {
+      "concept_id": "g3.square_numbers",
+      "display_name": "Square Numbers",
+      "description": "Grade 3, Chapter 5: Square Numbers",
+      "grade_range": [
+        3,
+        3
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g3.patterns_in_squares",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "multiplication_mountains",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g3.breaking_apart",
+      "display_name": "Breaking Apart",
+      "description": "Grade 3, Chapter 6: Breaking Apart",
+      "grade_range": [
+        3,
+        3
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g3.square_numbers",
+          "edge_type": "strand_order"
+        },
+        {
+          "concept_id": "g2.spatial_pathfinding",
+          "edge_type": "soft_prereq"
+        }
+      ],
+      "world_region": "shape_forest",
+      "topic_branch": "geometry"
+    },
+    {
+      "concept_id": "g3.breaking_apart_rectangles",
+      "display_name": "Breaking Apart Rectangles",
+      "description": "Grade 3, Chapter 6: Breaking Apart Rectangles",
+      "grade_range": [
+        3,
+        3
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g3.breaking_apart",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "shape_forest",
+      "topic_branch": "geometry"
+    },
+    {
+      "concept_id": "g3.multiplying_by_multiples_of_10",
+      "display_name": "Multiplying by Multiples of 10",
+      "description": "Grade 3, Chapter 6: Multiplying by Multiples of 10",
+      "grade_range": [
+        3,
+        3
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g3.breaking_apart_rectangles",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "multiplication_mountains",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g3.order_of_operations",
+      "display_name": "Order of Operations",
+      "description": "Grade 3, Chapter 6: Order of Operations",
+      "grade_range": [
+        3,
+        3
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g3.multiplying_by_multiples_of_10",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "fraction_falls",
+      "topic_branch": "fractions"
+    },
+    {
+      "concept_id": "g3.two_digit_one_digit",
+      "display_name": "Two-Digit \u00d7 One-Digit",
+      "description": "Grade 3, Chapter 6: Two-Digit \u00d7 One-Digit",
+      "grade_range": [
+        3,
+        3
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g3.order_of_operations",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "multiplication_mountains",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g3.evaluating_expressions",
+      "display_name": "Evaluating Expressions",
+      "description": "Grade 3, Chapter 7: Evaluating Expressions",
+      "grade_range": [
+        3,
+        3
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g3.two_digit_one_digit",
+          "edge_type": "strand_order"
+        },
+        {
+          "concept_id": "g2.evaluating_expressions",
+          "edge_type": "soft_prereq"
+        },
+        {
+          "concept_id": "g2.pattern_discovery",
+          "edge_type": "soft_prereq"
+        }
+      ],
+      "world_region": "equation_valley",
+      "topic_branch": "algebra"
+    },
+    {
+      "concept_id": "g3.solving_for_unknowns",
+      "display_name": "Solving for Unknowns",
+      "description": "Grade 3, Chapter 7: Solving for Unknowns",
+      "grade_range": [
+        3,
+        3
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g3.evaluating_expressions",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "equation_valley",
+      "topic_branch": "algebra"
+    },
+    {
+      "concept_id": "g3.what_is_a_variable",
+      "display_name": "What is a Variable?",
+      "description": "Grade 3, Chapter 7: What is a Variable?",
+      "grade_range": [
+        3,
+        3
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g3.solving_for_unknowns",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "equation_valley",
+      "topic_branch": "algebra"
+    },
+    {
+      "concept_id": "g3.writing_equations",
+      "display_name": "Writing Equations",
+      "description": "Grade 3, Chapter 7: Writing Equations",
+      "grade_range": [
+        3,
+        3
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g3.what_is_a_variable",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "equation_valley",
+      "topic_branch": "algebra"
+    },
+    {
+      "concept_id": "g3.division_facts",
+      "display_name": "Division Facts",
+      "description": "Grade 3, Chapter 8: Division Facts",
+      "grade_range": [
+        3,
+        3
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g3.writing_equations",
+          "edge_type": "strand_order"
+        },
+        {
+          "concept_id": "g2.digits_places",
+          "edge_type": "soft_prereq"
+        },
+        {
+          "concept_id": "g2.multi_step_problems",
+          "edge_type": "soft_prereq"
+        }
+      ],
+      "world_region": "multiplication_mountains",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g3.division_with_remainders",
+      "display_name": "Division with Remainders",
+      "description": "Grade 3, Chapter 8: Division with Remainders",
+      "grade_range": [
+        3,
+        3
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g3.division_facts",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "multiplication_mountains",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g3.meaning_of_division",
+      "display_name": "Meaning of Division",
+      "description": "Grade 3, Chapter 8: Meaning of Division",
+      "grade_range": [
+        3,
+        3
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g3.division_with_remainders",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "data_desert",
+      "topic_branch": "data"
+    },
+    {
+      "concept_id": "g3.teamwork_division",
+      "display_name": "Teamwork Division",
+      "description": "Grade 3, Chapter 8: Teamwork Division",
+      "grade_range": [
+        3,
+        3
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g3.meaning_of_division",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "multiplication_mountains",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g3.converting_units",
+      "display_name": "Converting Units",
+      "description": "Grade 3, Chapter 9: Converting Units",
+      "grade_range": [
+        3,
+        3
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g3.teamwork_division",
+          "edge_type": "strand_order"
+        },
+        {
+          "concept_id": "g2.unit_conversions",
+          "edge_type": "soft_prereq"
+        },
+        {
+          "concept_id": "g2.using_a_ruler",
+          "edge_type": "soft_prereq"
+        }
+      ],
+      "world_region": "measurement_meadow",
+      "topic_branch": "measurement"
+    },
+    {
+      "concept_id": "g3.time",
+      "display_name": "Time",
+      "description": "Grade 3, Chapter 9: Time",
+      "grade_range": [
+        3,
+        3
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g3.converting_units",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "measurement_meadow",
+      "topic_branch": "measurement"
+    },
+    {
+      "concept_id": "g3.unit_conversion_chains",
+      "display_name": "Unit Conversion Chains",
+      "description": "Grade 3, Chapter 9: Unit Conversion Chains",
+      "grade_range": [
+        3,
+        3
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g3.time",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "measurement_meadow",
+      "topic_branch": "measurement"
+    },
+    {
+      "concept_id": "g3.units_of_length",
+      "display_name": "Units of Length",
+      "description": "Grade 3, Chapter 9: Units of Length",
+      "grade_range": [
+        3,
+        3
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g3.unit_conversion_chains",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "measurement_meadow",
+      "topic_branch": "measurement"
+    },
+    {
+      "concept_id": "g3.weight_and_capacity",
+      "display_name": "Weight and Capacity",
+      "description": "Grade 3, Chapter 9: Weight and Capacity",
+      "grade_range": [
+        3,
+        3
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g3.units_of_length",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "measurement_meadow",
+      "topic_branch": "measurement"
+    },
+    {
+      "concept_id": "g3.comparing_fractions",
+      "display_name": "Comparing Fractions",
+      "description": "Grade 3, Chapter 10: Comparing Fractions",
+      "grade_range": [
+        3,
+        3
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g3.weight_and_capacity",
+          "edge_type": "strand_order"
+        },
+        {
+          "concept_id": "g2.spatial_pathfinding",
+          "edge_type": "soft_prereq"
+        }
+      ],
+      "world_region": "fraction_falls",
+      "topic_branch": "fractions"
+    },
+    {
+      "concept_id": "g3.equivalent_fractions",
+      "display_name": "Equivalent Fractions",
+      "description": "Grade 3, Chapter 10: Equivalent Fractions",
+      "grade_range": [
+        3,
+        3
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g3.comparing_fractions",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "fraction_falls",
+      "topic_branch": "fractions"
+    },
+    {
+      "concept_id": "g3.fractions_on_number_line",
+      "display_name": "Fractions on Number Line",
+      "description": "Grade 3, Chapter 10: Fractions on Number Line",
+      "grade_range": [
+        3,
+        3
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g3.equivalent_fractions",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "fraction_falls",
+      "topic_branch": "fractions"
+    },
+    {
+      "concept_id": "g3.what_is_a_fraction",
+      "display_name": "What is a Fraction?",
+      "description": "Grade 3, Chapter 10: What is a Fraction?",
+      "grade_range": [
+        3,
+        3
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g3.fractions_on_number_line",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "fraction_falls",
+      "topic_branch": "fractions"
+    },
+    {
+      "concept_id": "g3.estimating_products",
+      "display_name": "Estimating Products",
+      "description": "Grade 3, Chapter 11: Estimating Products",
+      "grade_range": [
+        3,
+        3
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g3.what_is_a_fraction",
+          "edge_type": "strand_order"
+        },
+        {
+          "concept_id": "g2.estimation",
+          "edge_type": "soft_prereq"
+        },
+        {
+          "concept_id": "g2.multi_step_problems",
+          "edge_type": "soft_prereq"
+        }
+      ],
+      "world_region": "multiplication_mountains",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g3.estimating_sums_and_differences",
+      "display_name": "Estimating Sums and Differences",
+      "description": "Grade 3, Chapter 11: Estimating Sums and Differences",
+      "grade_range": [
+        3,
+        3
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g3.estimating_products",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "multiplication_mountains",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g3.estimation_games",
+      "display_name": "Estimation Games",
+      "description": "Grade 3, Chapter 11: Estimation Games",
+      "grade_range": [
+        3,
+        3
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g3.estimating_sums_and_differences",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "multiplication_mountains",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g3.rounding",
+      "display_name": "Rounding",
+      "description": "Grade 3, Chapter 11: Rounding",
+      "grade_range": [
+        3,
+        3
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g3.estimation_games",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "multiplication_mountains",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g3.area_and_perimeter_together",
+      "display_name": "Area and Perimeter Together",
+      "description": "Grade 3, Chapter 12: Area and Perimeter Together",
+      "grade_range": [
+        3,
+        3
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g3.rounding",
+          "edge_type": "strand_order"
+        },
+        {
+          "concept_id": "g2.spatial_pathfinding",
+          "edge_type": "soft_prereq"
+        }
+      ],
+      "world_region": "shape_forest",
+      "topic_branch": "geometry"
+    },
+    {
+      "concept_id": "g3.area_of_complex_shapes",
+      "display_name": "Area of Complex Shapes",
+      "description": "Grade 3, Chapter 12: Area of Complex Shapes",
+      "grade_range": [
+        3,
+        3
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g3.area_and_perimeter_together",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "shape_forest",
+      "topic_branch": "geometry"
+    },
+    {
+      "concept_id": "g3.missing_side_lengths",
+      "display_name": "Missing Side Lengths",
+      "description": "Grade 3, Chapter 12: Missing Side Lengths",
+      "grade_range": [
+        3,
+        3
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g3.area_of_complex_shapes",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "measurement_meadow",
+      "topic_branch": "measurement"
+    },
+    {
+      "concept_id": "g3.right_triangle_area",
+      "display_name": "Right Triangle Area",
+      "description": "Grade 3, Chapter 12: Right Triangle Area",
+      "grade_range": [
+        3,
+        3
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g3.missing_side_lengths",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "shape_forest",
+      "topic_branch": "geometry"
+    },
+    {
+      "concept_id": "g3.square_units",
+      "display_name": "Square Units",
+      "description": "Grade 3, Chapter 12: Square Units",
+      "grade_range": [
+        3,
+        3
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g3.right_triangle_area",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "measurement_meadow",
+      "topic_branch": "measurement"
+    },
+    {
+      "concept_id": "g4.angle_relationships",
+      "display_name": "Angle Relationships",
+      "description": "Grade 4, Chapter 1: Angle Relationships",
+      "grade_range": [
+        4,
+        4
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g3.angles",
+          "edge_type": "soft_prereq"
+        },
+        {
+          "concept_id": "g3.right_triangle_area",
+          "edge_type": "soft_prereq"
+        }
+      ],
+      "world_region": "angle_archipelago",
+      "topic_branch": "geometry"
+    },
+    {
+      "concept_id": "g4.angles_degrees",
+      "display_name": "Angles (Degrees)",
+      "description": "Grade 4, Chapter 1: Angles (Degrees)",
+      "grade_range": [
+        4,
+        4
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g4.angle_relationships",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "angle_archipelago",
+      "topic_branch": "geometry"
+    },
+    {
+      "concept_id": "g4.line_symmetry",
+      "display_name": "Line Symmetry",
+      "description": "Grade 4, Chapter 1: Line Symmetry",
+      "grade_range": [
+        4,
+        4
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g4.angles_degrees",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "angle_archipelago",
+      "topic_branch": "geometry"
+    },
+    {
+      "concept_id": "g4.polygon_properties",
+      "display_name": "Polygon Properties",
+      "description": "Grade 4, Chapter 1: Polygon Properties",
+      "grade_range": [
+        4,
+        4
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g4.line_symmetry",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "angle_archipelago",
+      "topic_branch": "geometry"
+    },
+    {
+      "concept_id": "g4.shape_definitions",
+      "display_name": "Shape Definitions",
+      "description": "Grade 4, Chapter 1: Shape Definitions",
+      "grade_range": [
+        4,
+        4
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g4.polygon_properties",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "angle_archipelago",
+      "topic_branch": "geometry"
+    },
+    {
+      "concept_id": "g4.multi_digit_1_digit",
+      "display_name": "Multi-Digit \u00d7 1-Digit",
+      "description": "Grade 4, Chapter 2: Multi-Digit \u00d7 1-Digit",
+      "grade_range": [
+        4,
+        4
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g4.shape_definitions",
+          "edge_type": "strand_order"
+        },
+        {
+          "concept_id": "g3.two_digit_one_digit",
+          "edge_type": "soft_prereq"
+        },
+        {
+          "concept_id": "g3.rounding",
+          "edge_type": "soft_prereq"
+        }
+      ],
+      "world_region": "calculation_castle",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g4.multi_digit_multi_digit",
+      "display_name": "Multi-Digit \u00d7 Multi-Digit",
+      "description": "Grade 4, Chapter 2: Multi-Digit \u00d7 Multi-Digit",
+      "grade_range": [
+        4,
+        4
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g4.multi_digit_1_digit",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "calculation_castle",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g4.multiplying_with_zeros",
+      "display_name": "Multiplying with Zeros",
+      "description": "Grade 4, Chapter 2: Multiplying with Zeros",
+      "grade_range": [
+        4,
+        4
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g4.multi_digit_multi_digit",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "calculation_castle",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g4.units_digit_patterns",
+      "display_name": "Units Digit Patterns",
+      "description": "Grade 4, Chapter 2: Units Digit Patterns",
+      "grade_range": [
+        4,
+        4
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g4.multiplying_with_zeros",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "measurement_meadow",
+      "topic_branch": "measurement"
+    },
+    {
+      "concept_id": "g4.binary_numbers",
+      "display_name": "Binary Numbers",
+      "description": "Grade 4, Chapter 3: Binary Numbers",
+      "grade_range": [
+        4,
+        4
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g4.units_digit_patterns",
+          "edge_type": "strand_order"
+        },
+        {
+          "concept_id": "g3.square_units",
+          "edge_type": "soft_prereq"
+        }
+      ],
+      "world_region": "power_tower",
+      "topic_branch": "exponents"
+    },
+    {
+      "concept_id": "g4.exponent_rules_intro",
+      "display_name": "Exponent Rules Intro",
+      "description": "Grade 4, Chapter 3: Exponent Rules Intro",
+      "grade_range": [
+        4,
+        4
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g4.binary_numbers",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "power_tower",
+      "topic_branch": "exponents"
+    },
+    {
+      "concept_id": "g4.powers_of_2_and_10",
+      "display_name": "Powers of 2 and 10",
+      "description": "Grade 4, Chapter 3: Powers of 2 and 10",
+      "grade_range": [
+        4,
+        4
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g4.exponent_rules_intro",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "power_tower",
+      "topic_branch": "exponents"
+    },
+    {
+      "concept_id": "g4.understanding_exponents",
+      "display_name": "Understanding Exponents",
+      "description": "Grade 4, Chapter 3: Understanding Exponents",
+      "grade_range": [
+        4,
+        4
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g4.powers_of_2_and_10",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "power_tower",
+      "topic_branch": "exponents"
+    },
+    {
+      "concept_id": "g4.counting_arrangements",
+      "display_name": "Counting Arrangements",
+      "description": "Grade 4, Chapter 4: Counting Arrangements",
+      "grade_range": [
+        4,
+        4
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g4.understanding_exponents",
+          "edge_type": "strand_order"
+        },
+        {
+          "concept_id": "g3.meaning_of_division",
+          "edge_type": "soft_prereq"
+        }
+      ],
+      "world_region": "data_desert",
+      "topic_branch": "data"
+    },
+    {
+      "concept_id": "g4.multiplication_principle",
+      "display_name": "Multiplication Principle",
+      "description": "Grade 4, Chapter 4: Multiplication Principle",
+      "grade_range": [
+        4,
+        4
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g4.counting_arrangements",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "puzzle_plateau",
+      "topic_branch": "combinatorics"
+    },
+    {
+      "concept_id": "g4.organized_counting",
+      "display_name": "Organized Counting",
+      "description": "Grade 4, Chapter 4: Organized Counting",
+      "grade_range": [
+        4,
+        4
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g4.multiplication_principle",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "data_desert",
+      "topic_branch": "data"
+    },
+    {
+      "concept_id": "g4.organized_lists",
+      "display_name": "Organized Lists",
+      "description": "Grade 4, Chapter 4: Organized Lists",
+      "grade_range": [
+        4,
+        4
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g4.organized_counting",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "data_desert",
+      "topic_branch": "data"
+    },
+    {
+      "concept_id": "g4.divisibility_challenges",
+      "display_name": "Divisibility Challenges",
+      "description": "Grade 4, Chapter 5: Divisibility Challenges",
+      "grade_range": [
+        4,
+        4
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g4.organized_lists",
+          "edge_type": "strand_order"
+        },
+        {
+          "concept_id": "g3.square_units",
+          "edge_type": "soft_prereq"
+        }
+      ],
+      "world_region": "prime_peaks",
+      "topic_branch": "number_theory"
+    },
+    {
+      "concept_id": "g4.divisibility_rules",
+      "display_name": "Divisibility Rules",
+      "description": "Grade 4, Chapter 5: Divisibility Rules",
+      "grade_range": [
+        4,
+        4
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g4.divisibility_challenges",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "prime_peaks",
+      "topic_branch": "number_theory"
+    },
+    {
+      "concept_id": "g4.long_division",
+      "display_name": "Long Division",
+      "description": "Grade 4, Chapter 5: Long Division",
+      "grade_range": [
+        4,
+        4
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g4.divisibility_rules",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "calculation_castle",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g4.special_quotients",
+      "display_name": "Special Quotients",
+      "description": "Grade 4, Chapter 5: Special Quotients",
+      "grade_range": [
+        4,
+        4
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g4.long_division",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "calculation_castle",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g4.if_then_statements",
+      "display_name": "If-Then Statements",
+      "description": "Grade 4, Chapter 6: If-Then Statements",
+      "grade_range": [
+        4,
+        4
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g4.special_quotients",
+          "edge_type": "strand_order"
+        },
+        {
+          "concept_id": "g3.writing_equations",
+          "edge_type": "soft_prereq"
+        }
+      ],
+      "world_region": "equation_valley",
+      "topic_branch": "algebra"
+    },
+    {
+      "concept_id": "g4.logic_puzzles",
+      "display_name": "Logic Puzzles",
+      "description": "Grade 4, Chapter 6: Logic Puzzles",
+      "grade_range": [
+        4,
+        4
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g4.if_then_statements",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "equation_valley",
+      "topic_branch": "algebra"
+    },
+    {
+      "concept_id": "g4.venn_diagrams",
+      "display_name": "Venn Diagrams",
+      "description": "Grade 4, Chapter 6: Venn Diagrams",
+      "grade_range": [
+        4,
+        4
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g4.logic_puzzles",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "data_desert",
+      "topic_branch": "data"
+    },
+    {
+      "concept_id": "g4.yes_no_questions",
+      "display_name": "Yes/No Questions",
+      "description": "Grade 4, Chapter 6: Yes/No Questions",
+      "grade_range": [
+        4,
+        4
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g4.venn_diagrams",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "calculation_castle",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g4.factor_pairs",
+      "display_name": "Factor Pairs",
+      "description": "Grade 4, Chapter 7: Factor Pairs",
+      "grade_range": [
+        4,
+        4
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g4.yes_no_questions",
+          "edge_type": "strand_order"
+        },
+        {
+          "concept_id": "g3.square_units",
+          "edge_type": "soft_prereq"
+        }
+      ],
+      "world_region": "prime_peaks",
+      "topic_branch": "number_theory"
+    },
+    {
+      "concept_id": "g4.finding_all_factors",
+      "display_name": "Finding All Factors",
+      "description": "Grade 4, Chapter 7: Finding All Factors",
+      "grade_range": [
+        4,
+        4
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g4.factor_pairs",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "prime_peaks",
+      "topic_branch": "number_theory"
+    },
+    {
+      "concept_id": "g4.gcf",
+      "display_name": "GCF",
+      "description": "Grade 4, Chapter 7: GCF",
+      "grade_range": [
+        4,
+        4
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g4.finding_all_factors",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "prime_peaks",
+      "topic_branch": "number_theory"
+    },
+    {
+      "concept_id": "g4.prime_numbers",
+      "display_name": "Prime Numbers",
+      "description": "Grade 4, Chapter 7: Prime Numbers",
+      "grade_range": [
+        4,
+        4
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g4.gcf",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "prime_peaks",
+      "topic_branch": "number_theory"
+    },
+    {
+      "concept_id": "g4.adding_different_denominator",
+      "display_name": "Adding Different Denominator",
+      "description": "Grade 4, Chapter 8: Adding Different Denominator",
+      "grade_range": [
+        4,
+        4
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g4.prime_numbers",
+          "edge_type": "strand_order"
+        },
+        {
+          "concept_id": "g3.what_is_a_fraction",
+          "edge_type": "soft_prereq"
+        }
+      ],
+      "world_region": "fraction_falls",
+      "topic_branch": "fractions"
+    },
+    {
+      "concept_id": "g4.adding_same_denominator",
+      "display_name": "Adding Same Denominator",
+      "description": "Grade 4, Chapter 8: Adding Same Denominator",
+      "grade_range": [
+        4,
+        4
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g4.adding_different_denominator",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "fraction_falls",
+      "topic_branch": "fractions"
+    },
+    {
+      "concept_id": "g4.fraction_story_problems",
+      "display_name": "Fraction Story Problems",
+      "description": "Grade 4, Chapter 8: Fraction Story Problems",
+      "grade_range": [
+        4,
+        4
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g4.adding_same_denominator",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "fraction_falls",
+      "topic_branch": "fractions"
+    },
+    {
+      "concept_id": "g4.mixed_numbers",
+      "display_name": "Mixed Numbers",
+      "description": "Grade 4, Chapter 8: Mixed Numbers",
+      "grade_range": [
+        4,
+        4
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g4.fraction_story_problems",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "fraction_falls",
+      "topic_branch": "fractions"
+    },
+    {
+      "concept_id": "g4.adding_integers",
+      "display_name": "Adding Integers",
+      "description": "Grade 4, Chapter 9: Adding Integers",
+      "grade_range": [
+        4,
+        4
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g4.mixed_numbers",
+          "edge_type": "strand_order"
+        },
+        {
+          "concept_id": "g3.square_units",
+          "edge_type": "soft_prereq"
+        }
+      ],
+      "world_region": "integer_ice_caves",
+      "topic_branch": "integers"
+    },
+    {
+      "concept_id": "g4.comparing_integers",
+      "display_name": "Comparing Integers",
+      "description": "Grade 4, Chapter 9: Comparing Integers",
+      "grade_range": [
+        4,
+        4
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g4.adding_integers",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "integer_ice_caves",
+      "topic_branch": "integers"
+    },
+    {
+      "concept_id": "g4.negative_numbers",
+      "display_name": "Negative Numbers",
+      "description": "Grade 4, Chapter 9: Negative Numbers",
+      "grade_range": [
+        4,
+        4
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g4.comparing_integers",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "integer_ice_caves",
+      "topic_branch": "integers"
+    },
+    {
+      "concept_id": "g4.subtracting_integers",
+      "display_name": "Subtracting Integers",
+      "description": "Grade 4, Chapter 9: Subtracting Integers",
+      "grade_range": [
+        4,
+        4
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g4.negative_numbers",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "integer_ice_caves",
+      "topic_branch": "integers"
+    },
+    {
+      "concept_id": "g4.dividing_by_fractions",
+      "display_name": "Dividing by Fractions",
+      "description": "Grade 4, Chapter 10: Dividing by Fractions",
+      "grade_range": [
+        4,
+        4
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g4.subtracting_integers",
+          "edge_type": "strand_order"
+        },
+        {
+          "concept_id": "g3.comparing_fractions",
+          "edge_type": "soft_prereq"
+        },
+        {
+          "concept_id": "g3.what_is_a_fraction",
+          "edge_type": "soft_prereq"
+        }
+      ],
+      "world_region": "fraction_falls",
+      "topic_branch": "fractions"
+    },
+    {
+      "concept_id": "g4.fraction_of_problems",
+      "display_name": "Fraction \"Of\" Problems",
+      "description": "Grade 4, Chapter 10: Fraction \"Of\" Problems",
+      "grade_range": [
+        4,
+        4
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g4.dividing_by_fractions",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "fraction_falls",
+      "topic_branch": "fractions"
+    },
+    {
+      "concept_id": "g4.fraction_of_a_whole_number",
+      "display_name": "Fraction of a Whole Number",
+      "description": "Grade 4, Chapter 10: Fraction of a Whole Number",
+      "grade_range": [
+        4,
+        4
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g4.fraction_of_problems",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "fraction_falls",
+      "topic_branch": "fractions"
+    },
+    {
+      "concept_id": "g4.multiplying_fractions",
+      "display_name": "Multiplying Fractions",
+      "description": "Grade 4, Chapter 10: Multiplying Fractions",
+      "grade_range": [
+        4,
+        4
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g4.fraction_of_a_whole_number",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "fraction_falls",
+      "topic_branch": "fractions"
+    },
+    {
+      "concept_id": "g4.comparing_decimals",
+      "display_name": "Comparing Decimals",
+      "description": "Grade 4, Chapter 11: Comparing Decimals",
+      "grade_range": [
+        4,
+        4
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g4.multiplying_fractions",
+          "edge_type": "strand_order"
+        },
+        {
+          "concept_id": "g3.comparing_fractions",
+          "edge_type": "soft_prereq"
+        },
+        {
+          "concept_id": "g3.what_is_a_fraction",
+          "edge_type": "soft_prereq"
+        }
+      ],
+      "world_region": "fraction_falls",
+      "topic_branch": "fractions"
+    },
+    {
+      "concept_id": "g4.decimal_operations",
+      "display_name": "Decimal Operations",
+      "description": "Grade 4, Chapter 11: Decimal Operations",
+      "grade_range": [
+        4,
+        4
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g4.comparing_decimals",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "fraction_falls",
+      "topic_branch": "fractions"
+    },
+    {
+      "concept_id": "g4.decimal_place_value",
+      "display_name": "Decimal Place Value",
+      "description": "Grade 4, Chapter 11: Decimal Place Value",
+      "grade_range": [
+        4,
+        4
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g4.decimal_operations",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "fraction_falls",
+      "topic_branch": "fractions"
+    },
+    {
+      "concept_id": "g4.fraction_decimal_conversion",
+      "display_name": "Fraction-Decimal Conversion",
+      "description": "Grade 4, Chapter 11: Fraction-Decimal Conversion",
+      "grade_range": [
+        4,
+        4
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g4.decimal_place_value",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "fraction_falls",
+      "topic_branch": "fractions"
+    },
+    {
+      "concept_id": "g4.compound_events",
+      "display_name": "Compound Events",
+      "description": "Grade 4, Chapter 12: Compound Events",
+      "grade_range": [
+        4,
+        4
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g4.fraction_decimal_conversion",
+          "edge_type": "strand_order"
+        },
+        {
+          "concept_id": "g3.meaning_of_division",
+          "edge_type": "soft_prereq"
+        }
+      ],
+      "world_region": "data_desert",
+      "topic_branch": "data"
+    },
+    {
+      "concept_id": "g4.computing_probability",
+      "display_name": "Computing Probability",
+      "description": "Grade 4, Chapter 12: Computing Probability",
+      "grade_range": [
+        4,
+        4
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g4.compound_events",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "data_desert",
+      "topic_branch": "data"
+    },
+    {
+      "concept_id": "g4.fair_games",
+      "display_name": "Fair Games",
+      "description": "Grade 4, Chapter 12: Fair Games",
+      "grade_range": [
+        4,
+        4
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g4.computing_probability",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "data_desert",
+      "topic_branch": "data"
+    },
+    {
+      "concept_id": "g4.likelihood",
+      "display_name": "Likelihood",
+      "description": "Grade 4, Chapter 12: Likelihood",
+      "grade_range": [
+        4,
+        4
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g4.fair_games",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "data_desert",
+      "topic_branch": "data"
+    },
+    {
+      "concept_id": "g5.identifying_solids",
+      "display_name": "Identifying Solids",
+      "description": "Grade 5, Chapter 1: Identifying Solids",
+      "grade_range": [
+        5,
+        5
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g4.shape_definitions",
+          "edge_type": "soft_prereq"
+        }
+      ],
+      "world_region": "dimension_docks",
+      "topic_branch": "geometry"
+    },
+    {
+      "concept_id": "g5.nets",
+      "display_name": "Nets",
+      "description": "Grade 5, Chapter 1: Nets",
+      "grade_range": [
+        5,
+        5
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g5.identifying_solids",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "dimension_docks",
+      "topic_branch": "geometry"
+    },
+    {
+      "concept_id": "g5.surface_area",
+      "display_name": "Surface Area",
+      "description": "Grade 5, Chapter 1: Surface Area",
+      "grade_range": [
+        5,
+        5
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g5.nets",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "dimension_docks",
+      "topic_branch": "geometry"
+    },
+    {
+      "concept_id": "g5.volume_of_prisms",
+      "display_name": "Volume of Prisms",
+      "description": "Grade 5, Chapter 1: Volume of Prisms",
+      "grade_range": [
+        5,
+        5
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g5.surface_area",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "dimension_docks",
+      "topic_branch": "geometry"
+    },
+    {
+      "concept_id": "g5.absolute_value",
+      "display_name": "Absolute Value",
+      "description": "Grade 5, Chapter 2: Absolute Value",
+      "grade_range": [
+        5,
+        5
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g5.volume_of_prisms",
+          "edge_type": "strand_order"
+        },
+        {
+          "concept_id": "g4.subtracting_integers",
+          "edge_type": "soft_prereq"
+        }
+      ],
+      "world_region": "integer_ice_caves",
+      "topic_branch": "integers"
+    },
+    {
+      "concept_id": "g5.integer_arithmetic",
+      "display_name": "Integer Arithmetic",
+      "description": "Grade 5, Chapter 2: Integer Arithmetic",
+      "grade_range": [
+        5,
+        5
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g5.absolute_value",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "integer_ice_caves",
+      "topic_branch": "integers"
+    },
+    {
+      "concept_id": "g5.order_of_operations_with_integers",
+      "display_name": "Order of Operations with Integers",
+      "description": "Grade 5, Chapter 2: Order of Operations with Integers",
+      "grade_range": [
+        5,
+        5
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g5.integer_arithmetic",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "fraction_falls",
+      "topic_branch": "fractions"
+    },
+    {
+      "concept_id": "g5.powers_of_negatives",
+      "display_name": "Powers of Negatives",
+      "description": "Grade 5, Chapter 2: Powers of Negatives",
+      "grade_range": [
+        5,
+        5
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g5.order_of_operations_with_integers",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "power_tower",
+      "topic_branch": "exponents"
+    },
+    {
+      "concept_id": "g5.checking_solutions",
+      "display_name": "Checking Solutions",
+      "description": "Grade 5, Chapter 3: Checking Solutions",
+      "grade_range": [
+        5,
+        5
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g5.powers_of_negatives",
+          "edge_type": "strand_order"
+        },
+        {
+          "concept_id": "g4.yes_no_questions",
+          "edge_type": "soft_prereq"
+        }
+      ],
+      "world_region": "calculation_castle",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g5.reading_expressions",
+      "display_name": "Reading Expressions",
+      "description": "Grade 5, Chapter 3: Reading Expressions",
+      "grade_range": [
+        5,
+        5
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g5.checking_solutions",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "equation_valley",
+      "topic_branch": "algebra"
+    },
+    {
+      "concept_id": "g5.simplifying_expressions",
+      "display_name": "Simplifying Expressions",
+      "description": "Grade 5, Chapter 3: Simplifying Expressions",
+      "grade_range": [
+        5,
+        5
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g5.reading_expressions",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "equation_valley",
+      "topic_branch": "algebra"
+    },
+    {
+      "concept_id": "g5.solving_one_step_equations",
+      "display_name": "Solving One-Step Equations",
+      "description": "Grade 5, Chapter 3: Solving One-Step Equations",
+      "grade_range": [
+        5,
+        5
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g5.simplifying_expressions",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "equation_valley",
+      "topic_branch": "algebra"
+    },
+    {
+      "concept_id": "g5.two_step_equations",
+      "display_name": "Two-Step Equations",
+      "description": "Grade 5, Chapter 3: Two-Step Equations",
+      "grade_range": [
+        5,
+        5
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g5.solving_one_step_equations",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "equation_valley",
+      "topic_branch": "algebra"
+    },
+    {
+      "concept_id": "g5.mean_median_mode",
+      "display_name": "Mean, Median, Mode",
+      "description": "Grade 5, Chapter 4: Mean, Median, Mode",
+      "grade_range": [
+        5,
+        5
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g5.two_step_equations",
+          "edge_type": "strand_order"
+        },
+        {
+          "concept_id": "g4.venn_diagrams",
+          "edge_type": "soft_prereq"
+        },
+        {
+          "concept_id": "g4.likelihood",
+          "edge_type": "soft_prereq"
+        }
+      ],
+      "world_region": "data_desert",
+      "topic_branch": "data"
+    },
+    {
+      "concept_id": "g5.misleading_graphs",
+      "display_name": "Misleading Graphs",
+      "description": "Grade 5, Chapter 4: Misleading Graphs",
+      "grade_range": [
+        5,
+        5
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g5.mean_median_mode",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "data_desert",
+      "topic_branch": "data"
+    },
+    {
+      "concept_id": "g5.range_and_outliers",
+      "display_name": "Range and Outliers",
+      "description": "Grade 5, Chapter 4: Range and Outliers",
+      "grade_range": [
+        5,
+        5
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g5.misleading_graphs",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "data_desert",
+      "topic_branch": "data"
+    },
+    {
+      "concept_id": "g5.reading_graphs",
+      "display_name": "Reading Graphs",
+      "description": "Grade 5, Chapter 4: Reading Graphs",
+      "grade_range": [
+        5,
+        5
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g5.range_and_outliers",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "data_desert",
+      "topic_branch": "data"
+    },
+    {
+      "concept_id": "g5.factor_trees",
+      "display_name": "Factor Trees",
+      "description": "Grade 5, Chapter 5: Factor Trees",
+      "grade_range": [
+        5,
+        5
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g5.reading_graphs",
+          "edge_type": "strand_order"
+        },
+        {
+          "concept_id": "g4.factor_pairs",
+          "edge_type": "soft_prereq"
+        },
+        {
+          "concept_id": "g4.prime_numbers",
+          "edge_type": "soft_prereq"
+        }
+      ],
+      "world_region": "prime_peaks",
+      "topic_branch": "number_theory"
+    },
+    {
+      "concept_id": "g5.gcf",
+      "display_name": "GCF",
+      "description": "Grade 5, Chapter 5: GCF",
+      "grade_range": [
+        5,
+        5
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g5.factor_trees",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "prime_peaks",
+      "topic_branch": "number_theory"
+    },
+    {
+      "concept_id": "g5.lcm",
+      "display_name": "LCM",
+      "description": "Grade 5, Chapter 5: LCM",
+      "grade_range": [
+        5,
+        5
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g5.gcf",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "prime_peaks",
+      "topic_branch": "number_theory"
+    },
+    {
+      "concept_id": "g5.prime_factorization",
+      "display_name": "Prime Factorization",
+      "description": "Grade 5, Chapter 5: Prime Factorization",
+      "grade_range": [
+        5,
+        5
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g5.lcm",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "prime_peaks",
+      "topic_branch": "number_theory"
+    },
+    {
+      "concept_id": "g5.all_four_operations",
+      "display_name": "All Four Operations",
+      "description": "Grade 5, Chapter 6: All Four Operations",
+      "grade_range": [
+        5,
+        5
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g5.prime_factorization",
+          "edge_type": "strand_order"
+        },
+        {
+          "concept_id": "g4.decimal_operations",
+          "edge_type": "soft_prereq"
+        },
+        {
+          "concept_id": "g4.fraction_decimal_conversion",
+          "edge_type": "soft_prereq"
+        }
+      ],
+      "world_region": "fraction_falls",
+      "topic_branch": "fractions"
+    },
+    {
+      "concept_id": "g5.basic_fraction_addition",
+      "display_name": "Basic Fraction Addition",
+      "description": "Grade 5, Chapter 6: Basic Fraction Addition",
+      "grade_range": [
+        5,
+        5
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g5.all_four_operations",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "fraction_falls",
+      "topic_branch": "fractions"
+    },
+    {
+      "concept_id": "g5.fraction_word_problems",
+      "display_name": "Fraction Word Problems",
+      "description": "Grade 5, Chapter 6: Fraction Word Problems",
+      "grade_range": [
+        5,
+        5
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g5.basic_fraction_addition",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "fraction_falls",
+      "topic_branch": "fractions"
+    },
+    {
+      "concept_id": "g5.simplifying_before_multiplying",
+      "display_name": "Simplifying Before Multiplying",
+      "description": "Grade 5, Chapter 6: Simplifying Before Multiplying",
+      "grade_range": [
+        5,
+        5
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g5.fraction_word_problems",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "calculation_castle",
+      "topic_branch": "arithmetic"
+    },
+    {
+      "concept_id": "g5.arithmetic_sequences",
+      "display_name": "Arithmetic Sequences",
+      "description": "Grade 5, Chapter 7: Arithmetic Sequences",
+      "grade_range": [
+        5,
+        5
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g5.simplifying_before_multiplying",
+          "edge_type": "strand_order"
+        },
+        {
+          "concept_id": "g4.logic_puzzles",
+          "edge_type": "soft_prereq"
+        }
+      ],
+      "world_region": "equation_valley",
+      "topic_branch": "algebra"
+    },
+    {
+      "concept_id": "g5.finding_the_nth_term",
+      "display_name": "Finding the nth Term",
+      "description": "Grade 5, Chapter 7: Finding the nth Term",
+      "grade_range": [
+        5,
+        5
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g5.arithmetic_sequences",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "equation_valley",
+      "topic_branch": "algebra"
+    },
+    {
+      "concept_id": "g5.geometric_sequences",
+      "display_name": "Geometric Sequences",
+      "description": "Grade 5, Chapter 7: Geometric Sequences",
+      "grade_range": [
+        5,
+        5
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g5.finding_the_nth_term",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "equation_valley",
+      "topic_branch": "algebra"
+    },
+    {
+      "concept_id": "g5.triangular_numbers",
+      "display_name": "Triangular Numbers",
+      "description": "Grade 5, Chapter 7: Triangular Numbers",
+      "grade_range": [
+        5,
+        5
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g5.geometric_sequences",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "equation_valley",
+      "topic_branch": "algebra"
+    },
+    {
+      "concept_id": "g5.equivalent_ratios",
+      "display_name": "Equivalent Ratios",
+      "description": "Grade 5, Chapter 8: Equivalent Ratios",
+      "grade_range": [
+        5,
+        5
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g5.triangular_numbers",
+          "edge_type": "strand_order"
+        },
+        {
+          "concept_id": "g4.decimal_operations",
+          "edge_type": "soft_prereq"
+        },
+        {
+          "concept_id": "g4.fraction_decimal_conversion",
+          "edge_type": "soft_prereq"
+        }
+      ],
+      "world_region": "fraction_falls",
+      "topic_branch": "fractions"
+    },
+    {
+      "concept_id": "g5.understanding_ratios",
+      "display_name": "Understanding Ratios",
+      "description": "Grade 5, Chapter 8: Understanding Ratios",
+      "grade_range": [
+        5,
+        5
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g5.equivalent_ratios",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "fraction_falls",
+      "topic_branch": "fractions"
+    },
+    {
+      "concept_id": "g5.unit_conversions",
+      "display_name": "Unit Conversions",
+      "description": "Grade 5, Chapter 8: Unit Conversions",
+      "grade_range": [
+        5,
+        5
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g5.understanding_ratios",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "measurement_meadow",
+      "topic_branch": "measurement"
+    },
+    {
+      "concept_id": "g5.unit_rates",
+      "display_name": "Unit Rates",
+      "description": "Grade 5, Chapter 8: Unit Rates",
+      "grade_range": [
+        5,
+        5
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g5.unit_conversions",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "measurement_meadow",
+      "topic_branch": "measurement"
+    },
+    {
+      "concept_id": "g5.decimal_decimal",
+      "display_name": "Decimal \u00d7 Decimal",
+      "description": "Grade 5, Chapter 9: Decimal \u00d7 Decimal",
+      "grade_range": [
+        5,
+        5
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g5.unit_rates",
+          "edge_type": "strand_order"
+        },
+        {
+          "concept_id": "g4.decimal_place_value",
+          "edge_type": "soft_prereq"
+        },
+        {
+          "concept_id": "g4.fraction_decimal_conversion",
+          "edge_type": "soft_prereq"
+        }
+      ],
+      "world_region": "fraction_falls",
+      "topic_branch": "fractions"
+    },
+    {
+      "concept_id": "g5.decimal_fraction_conversions",
+      "display_name": "Decimal-Fraction Conversions",
+      "description": "Grade 5, Chapter 9: Decimal-Fraction Conversions",
+      "grade_range": [
+        5,
+        5
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g5.decimal_decimal",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "fraction_falls",
+      "topic_branch": "fractions"
+    },
+    {
+      "concept_id": "g5.place_value_patterns",
+      "display_name": "Place Value Patterns",
+      "description": "Grade 5, Chapter 9: Place Value Patterns",
+      "grade_range": [
+        5,
+        5
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g5.decimal_fraction_conversions",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "equation_valley",
+      "topic_branch": "algebra"
+    },
+    {
+      "concept_id": "g5.percent_calculations",
+      "display_name": "Percent Calculations",
+      "description": "Grade 5, Chapter 10: Percent Calculations",
+      "grade_range": [
+        5,
+        5
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g5.place_value_patterns",
+          "edge_type": "strand_order"
+        },
+        {
+          "concept_id": "g4.decimal_operations",
+          "edge_type": "soft_prereq"
+        },
+        {
+          "concept_id": "g4.fraction_decimal_conversion",
+          "edge_type": "soft_prereq"
+        }
+      ],
+      "world_region": "fraction_falls",
+      "topic_branch": "fractions"
+    },
+    {
+      "concept_id": "g5.percent_increase_decrease",
+      "display_name": "Percent Increase/Decrease",
+      "description": "Grade 5, Chapter 10: Percent Increase/Decrease",
+      "grade_range": [
+        5,
+        5
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g5.percent_calculations",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "fraction_falls",
+      "topic_branch": "fractions"
+    },
+    {
+      "concept_id": "g5.percent_proportions",
+      "display_name": "Percent Proportions",
+      "description": "Grade 5, Chapter 10: Percent Proportions",
+      "grade_range": [
+        5,
+        5
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g5.percent_increase_decrease",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "fraction_falls",
+      "topic_branch": "fractions"
+    },
+    {
+      "concept_id": "g5.understanding_percents",
+      "display_name": "Understanding Percents",
+      "description": "Grade 5, Chapter 10: Understanding Percents",
+      "grade_range": [
+        5,
+        5
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g5.percent_proportions",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "fraction_falls",
+      "topic_branch": "fractions"
+    },
+    {
+      "concept_id": "g5.estimating_square_roots",
+      "display_name": "Estimating Square Roots",
+      "description": "Grade 5, Chapter 11: Estimating Square Roots",
+      "grade_range": [
+        5,
+        5
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g5.understanding_percents",
+          "edge_type": "strand_order"
+        },
+        {
+          "concept_id": "g4.understanding_exponents",
+          "edge_type": "soft_prereq"
+        }
+      ],
+      "world_region": "power_tower",
+      "topic_branch": "exponents"
+    },
+    {
+      "concept_id": "g5.perfect_square_roots",
+      "display_name": "Perfect Square Roots",
+      "description": "Grade 5, Chapter 11: Perfect Square Roots",
+      "grade_range": [
+        5,
+        5
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g5.estimating_square_roots",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "power_tower",
+      "topic_branch": "exponents"
+    },
+    {
+      "concept_id": "g5.pythagorean_theorem_intro",
+      "display_name": "Pythagorean Theorem Intro",
+      "description": "Grade 5, Chapter 11: Pythagorean Theorem Intro",
+      "grade_range": [
+        5,
+        5
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g5.perfect_square_roots",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "dimension_docks",
+      "topic_branch": "geometry"
+    },
+    {
+      "concept_id": "g5.simplifying_square_roots",
+      "display_name": "Simplifying Square Roots",
+      "description": "Grade 5, Chapter 11: Simplifying Square Roots",
+      "grade_range": [
+        5,
+        5
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g5.pythagorean_theorem_intro",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "power_tower",
+      "topic_branch": "exponents"
+    },
+    {
+      "concept_id": "g5.exponent_basics_review",
+      "display_name": "Exponent Basics Review",
+      "description": "Grade 5, Chapter 12: Exponent Basics Review",
+      "grade_range": [
+        5,
+        5
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g5.simplifying_square_roots",
+          "edge_type": "strand_order"
+        },
+        {
+          "concept_id": "g4.exponent_rules_intro",
+          "edge_type": "soft_prereq"
+        },
+        {
+          "concept_id": "g4.understanding_exponents",
+          "edge_type": "soft_prereq"
+        }
+      ],
+      "world_region": "power_tower",
+      "topic_branch": "exponents"
+    },
+    {
+      "concept_id": "g5.exponent_rules",
+      "display_name": "Exponent Rules",
+      "description": "Grade 5, Chapter 12: Exponent Rules",
+      "grade_range": [
+        5,
+        5
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g5.exponent_basics_review",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "power_tower",
+      "topic_branch": "exponents"
+    },
+    {
+      "concept_id": "g5.scientific_notation_intro",
+      "display_name": "Scientific Notation Intro",
+      "description": "Grade 5, Chapter 12: Scientific Notation Intro",
+      "grade_range": [
+        5,
+        5
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g5.exponent_rules",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "power_tower",
+      "topic_branch": "exponents"
+    },
+    {
+      "concept_id": "g5.zero_and_negative_exponents",
+      "display_name": "Zero and Negative Exponents",
+      "description": "Grade 5, Chapter 12: Zero and Negative Exponents",
+      "grade_range": [
+        5,
+        5
+      ],
+      "prerequisites": [
+        {
+          "concept_id": "g5.scientific_notation_intro",
+          "edge_type": "strand_order"
+        }
+      ],
+      "world_region": "power_tower",
+      "topic_branch": "exponents"
+    }
+  ]
+}

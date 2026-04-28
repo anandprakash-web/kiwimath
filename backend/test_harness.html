@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kiwimath — Session Test Harness</title>
+<style>
+  :root {
+    --kiwi-green: #4CAF50;
+    --kiwi-dark: #2E7D32;
+    --warm-bg: #FFF8E1;
+    --card-bg: #FFFFFF;
+    --wrong-red: #EF5350;
+    --step-down-blue: #42A5F5;
+    --text-dark: #333;
+    --text-muted: #888;
+    --mascot-size: 80px;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background: var(--warm-bg);
+    color: var(--text-dark);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header {
+    width: 100%;
+    background: linear-gradient(135deg, var(--kiwi-green), var(--kiwi-dark));
+    color: white;
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  }
+
+  .header h1 { font-size: 22px; font-weight: 700; }
+  .header .subtitle { font-size: 13px; opacity: 0.85; }
+
+  .mastery-bar-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .mastery-bar {
+    width: 120px;
+    height: 10px;
+    background: rgba(255,255,255,0.3);
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  .mastery-bar-fill {
+    height: 100%;
+    background: #FFD54F;
+    border-radius: 5px;
+    transition: width 0.6s ease;
+  }
+  .mastery-label { font-size: 12px; font-weight: 600; }
+
+  /* Setup panel */
+  .setup-panel {
+    width: 100%;
+    max-width: 480px;
+    margin: 40px auto;
+    background: var(--card-bg);
+    border-radius: 20px;
+    padding: 32px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    text-align: center;
+  }
+  .setup-panel h2 { margin-bottom: 8px; font-size: 24px; }
+  .setup-panel p { color: var(--text-muted); margin-bottom: 20px; }
+
+  .concept-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  .concept-card {
+    padding: 14px 10px;
+    border: 2px solid #E0E0E0;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-align: left;
+  }
+  .concept-card:hover { border-color: var(--kiwi-green); background: #E8F5E9; }
+  .concept-card.selected { border-color: var(--kiwi-green); background: #C8E6C9; }
+  .concept-card .name { font-weight: 600; font-size: 13px; }
+  .concept-card .count { font-size: 11px; color: var(--text-muted); }
+
+  .start-btn {
+    background: var(--kiwi-green);
+    color: white;
+    border: none;
+    padding: 14px 40px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.15s, box-shadow 0.15s;
+  }
+  .start-btn:hover { transform: scale(1.04); box-shadow: 0 4px 16px rgba(76,175,80,0.4); }
+  .start-btn:disabled { background: #bbb; cursor: default; transform: none; box-shadow: none; }
+
+  /* Question card */
+  .question-area {
+    width: 100%;
+    max-width: 480px;
+    margin: 24px auto;
+    display: none;
+  }
+
+  .phase-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+  }
+  .phase-badge.parent { background: #E8F5E9; color: var(--kiwi-dark); }
+  .phase-badge.step-down { background: #E3F2FD; color: #1565C0; }
+  .phase-badge.retry { background: #FFF3E0; color: #E65100; }
+
+  .question-card {
+    background: var(--card-bg);
+    border-radius: 20px;
+    padding: 28px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    margin-bottom: 16px;
+  }
+
+  .stem {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 20px;
+  }
+
+  .visual-area {
+    margin-bottom: 16px;
+    text-align: center;
+    min-height: 40px;
+  }
+  .visual-area svg { max-width: 100%; height: auto; }
+
+  .options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .option-btn {
+    width: 100%;
+    padding: 16px 20px;
+    border: 2px solid #E0E0E0;
+    border-radius: 14px;
+    background: white;
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .option-btn:hover:not(:disabled) { border-color: var(--kiwi-green); background: #F1F8E9; }
+  .option-btn:disabled { cursor: default; opacity: 0.9; }
+  .option-btn.correct { border-color: var(--kiwi-green); background: #C8E6C9; }
+  .option-btn.wrong { border-color: var(--wrong-red); background: #FFCDD2; }
+  .option-btn .letter {
+    width: 32px; height: 32px;
+    border-radius: 50%;
+    background: #F5F5F5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 14px;
+    flex-shrink: 0;
+  }
+  .option-btn.correct .letter { background: var(--kiwi-green); color: white; }
+  .option-btn.wrong .letter { background: var(--wrong-red); color: white; }
+
+  /* Feedback bar */
+  .feedback-bar {
+    display: none;
+    padding: 16px 20px;
+    border-radius: 14px;
+    margin-bottom: 16px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.4;
+    animation: slideUp 0.3s ease;
+  }
+  .feedback-bar.show { display: flex; align-items: flex-start; gap: 12px; }
+  .feedback-bar.correct-fb { background: #C8E6C9; color: #1B5E20; }
+  .feedback-bar.wrong-fb { background: #FFCDD2; color: #B71C1C; }
+  .feedback-bar.info-fb { background: #E3F2FD; color: #0D47A1; }
+
+  .mascot {
+    font-size: 36px;
+    flex-shrink: 0;
+  }
+
+  .next-btn {
+    background: var(--kiwi-green);
+    color: white;
+    border: none;
+    padding: 12px 32px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    display: none;
+    margin: 0 auto;
+    transition: transform 0.15s;
+  }
+  .next-btn:hover { transform: scale(1.04); }
+  .next-btn.show { display: block; }
+
+  /* Session complete */
+  .session-complete {
+    display: none;
+    text-align: center;
+    padding: 40px 28px;
+    background: var(--card-bg);
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  }
+  .session-complete h2 { font-size: 28px; margin-bottom: 8px; }
+  .session-complete .emoji { font-size: 64px; margin-bottom: 12px; }
+
+  .stats-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin: 20px 0;
+  }
+  .stat-card {
+    background: #F5F5F5;
+    border-radius: 12px;
+    padding: 16px;
+  }
+  .stat-card .value { font-size: 28px; font-weight: 800; color: var(--kiwi-dark); }
+  .stat-card .label { font-size: 12px; color: var(--text-muted); }
+
+  /* Event log */
+  .event-log {
+    width: 100%;
+    max-width: 480px;
+    margin: 16px auto 40px;
+    background: #263238;
+    border-radius: 12px;
+    padding: 16px;
+    max-height: 300px;
+    overflow-y: auto;
+    font-family: 'SF Mono', 'Fira Code', monospace;
+    font-size: 11px;
+    color: #B0BEC5;
+  }
+  .event-log .entry { margin-bottom: 4px; }
+  .event-log .time { color: #546E7A; }
+  .event-log .correct { color: #66BB6A; }
+  .event-log .wrong { color: #EF5350; }
+  .event-log .info { color: #42A5F5; }
+  .event-log .step { color: #AB47BC; }
+
+  @keyframes slideUp {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .loading { text-align: center; padding: 40px; color: var(--text-muted); }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div>
+    <h1>Kiwimath</h1>
+    <div class="subtitle">Adaptive Engine Test Harness</div>
+  </div>
+  <div class="mastery-bar-container">
+    <div class="mastery-bar"><div class="mastery-bar-fill" id="masteryFill" style="width:0%"></div></div>
+    <span class="mastery-label" id="masteryLabel">new 0%</span>
+  </div>
+</div>
+
+<!-- Setup Panel -->
+<div class="setup-panel" id="setupPanel">
+  <h2>Pick a Concept</h2>
+  <p>Choose what to practice today</p>
+  <div class="concept-grid" id="conceptGrid">
+    <div class="loading">Loading concepts...</div>
+  </div>
+  <button class="start-btn" id="startBtn" disabled onclick="startSession()">Start Session</button>
+</div>
+
+<!-- Question Area -->
+<div class="question-area" id="questionArea">
+  <div id="phaseBadge" class="phase-badge parent">Parent Question</div>
+  <div class="question-card">
+    <div class="stem" id="stem"></div>
+    <div class="visual-area" id="visualArea"></div>
+    <div class="options" id="options"></div>
+  </div>
+  <div class="feedback-bar" id="feedbackBar">
+    <span class="mascot" id="mascotEmoji"></span>
+    <span id="feedbackText"></span>
+  </div>
+  <button class="next-btn" id="nextBtn" onclick="handleNext()">Next Question →</button>
+</div>
+
+<!-- Session Complete -->
+<div class="question-area" id="completeArea" style="display:none">
+  <div class="session-complete" style="display:block">
+    <div class="emoji">🎉</div>
+    <h2>Session Complete!</h2>
+    <p id="completeConcept"></p>
+    <div class="stats-grid" id="statsGrid"></div>
+    <button class="start-btn" onclick="location.reload()" style="margin-top:16px">Play Again</button>
+  </div>
+</div>
+
+<!-- Event Log -->
+<div class="event-log" id="eventLog">
+  <div class="entry info">Kiwimath Test Harness ready.</div>
+</div>
+
+<script>
+const API = 'http://localhost:8000';
+let selectedConcept = null;
+let sessionId = null;
+let currentQuestion = null;
+let pendingNextData = null;  // Pre-loaded next question from answer response
+let answerLocked = false;
+let questionStartTime = 0;
+
+const MASCOT_MAP = {
+  neutral: '🥝',
+  happy: '😊',
+  celebrating: '🎉',
+  encouraging: '💪',
+  thinking: '🤔',
+  waving: '👋',
+};
+
+// ── Setup ──────────────────────────────────────────────────────────
+async function loadConcepts() {
+  try {
+    const res = await fetch(`${API}/session/concepts`);
+    const concepts = await res.json();
+    const grid = document.getElementById('conceptGrid');
+    grid.innerHTML = '';
+
+    if (concepts.length === 0) {
+      grid.innerHTML = '<div class="loading">No concepts loaded. Check DAG path.</div>';
+      return;
+    }
+
+    // Only show concepts that have questions
+    const withQuestions = concepts.filter(c => c.question_count > 0);
+    withQuestions.forEach(c => {
+      const card = document.createElement('div');
+      card.className = 'concept-card';
+      card.innerHTML = `<div class="name">${c.display_name}</div><div class="count">${c.question_count} questions</div>`;
+      card.onclick = () => selectConcept(c.concept_id, card);
+      grid.appendChild(card);
+    });
+
+    // Also show concepts with 0 questions (grayed out)
+    concepts.filter(c => c.question_count === 0).forEach(c => {
+      const card = document.createElement('div');
+      card.className = 'concept-card';
+      card.style.opacity = '0.4';
+      card.innerHTML = `<div class="name">${c.display_name}</div><div class="count">no questions yet</div>`;
+      grid.appendChild(card);
+    });
+
+    log('info', `Loaded ${concepts.length} concepts (${withQuestions.length} with questions)`);
+  } catch (e) {
+    document.getElementById('conceptGrid').innerHTML =
+      '<div class="loading">Cannot reach server. Is uvicorn running on :8000?</div>';
+    log('wrong', `Failed to load concepts: ${e.message}`);
+  }
+}
+
+function selectConcept(conceptId, cardEl) {
+  selectedConcept = conceptId;
+  document.querySelectorAll('.concept-card').forEach(c => c.classList.remove('selected'));
+  cardEl.classList.add('selected');
+  document.getElementById('startBtn').disabled = false;
+  log('info', `Selected concept: ${conceptId}`);
+}
+
+// ── Session lifecycle ──────────────────────────────────────────────
+async function startSession() {
+  const res = await fetch(`${API}/session/start`, {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({concept_id: selectedConcept, user_id: 'test-kid'})
+  });
+  const data = await res.json();
+  sessionId = data.session_id;
+
+  log('info', `Session started: ${sessionId} for ${selectedConcept}`);
+
+  document.getElementById('setupPanel').style.display = 'none';
+  document.getElementById('questionArea').style.display = 'block';
+
+  updateMastery(data.mastery_snapshot);
+  displayQuestion(data);
+}
+
+function displayQuestion(data) {
+  if (data.session_complete) {
+    showSessionComplete(data);
+    return;
+  }
+
+  const q = data.question;
+  if (!q) {
+    log('wrong', 'No question in response — session may be stuck');
+    return;
+  }
+
+  currentQuestion = q;
+  answerLocked = false;
+  questionStartTime = Date.now();
+
+  // Phase badge
+  const badge = document.getElementById('phaseBadge');
+  if (data.is_step_down) {
+    badge.className = 'phase-badge step-down';
+    badge.textContent = '🔧 Step-Down Scaffold';
+  } else {
+    badge.className = 'phase-badge parent';
+    badge.textContent = '📝 Parent Question';
+  }
+
+  // Stem
+  document.getElementById('stem').textContent = q.stem;
+
+  // Visual (SVG)
+  const visualArea = document.getElementById('visualArea');
+  if (q.visual && q.visual.svg && !q.visual.svg.startsWith('<!--')) {
+    visualArea.innerHTML = q.visual.svg;
+  } else {
+    visualArea.innerHTML = '';
+  }
+
+  // Options
+  const optionsDiv = document.getElementById('options');
+  optionsDiv.innerHTML = '';
+  const letters = 'ABCDEFGH';
+  q.options.forEach((opt, idx) => {
+    const btn = document.createElement('button');
+    btn.className = 'option-btn';
+    btn.innerHTML = `<span class="letter">${letters[idx]}</span><span>${opt.text}</span>`;
+    btn.onclick = () => submitAnswer(idx);
+    optionsDiv.appendChild(btn);
+  });
+
+  // Hide feedback and next button
+  document.getElementById('feedbackBar').className = 'feedback-bar';
+  document.getElementById('nextBtn').className = 'next-btn';
+  pendingNextData = null;
+
+  // Show feedback from previous question if present
+  if (data.feedback_message) {
+    showFeedback(data.feedback_message, data.misconception_diagnosis ? 'info-fb' : 'correct-fb', data.mascot_emotion);
+  }
+
+  log(data.is_step_down ? 'step' : 'info',
+    `Q: ${q.question_id} — "${q.stem.substring(0, 50)}..." [${q.options.length} options]`);
+}
+
+async function submitAnswer(optionIdx) {
+  if (answerLocked) return;
+  answerLocked = true;
+
+  const timeTaken = Date.now() - questionStartTime;
+  const isCorrect = optionIdx === currentQuestion.correct_index;
+
+  // Highlight chosen option
+  const btns = document.querySelectorAll('.option-btn');
+  btns.forEach((btn, i) => {
+    btn.disabled = true;
+    if (i === optionIdx) {
+      btn.classList.add(isCorrect ? 'correct' : 'wrong');
+    }
+    if (i === currentQuestion.correct_index && !isCorrect) {
+      btn.classList.add('correct');
+    }
+  });
+
+  log(isCorrect ? 'correct' : 'wrong',
+    `Answer: option ${optionIdx} (${currentQuestion.options[optionIdx].text}) — ${isCorrect ? 'CORRECT' : 'WRONG'}`);
+
+  // Submit to server
+  try {
+    const res = await fetch(`${API}/session/answer`, {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({
+        session_id: sessionId,
+        question_id: currentQuestion.question_id,
+        selected_option_index: optionIdx,
+        time_taken_ms: timeTaken,
+      })
+    });
+    const data = await res.json();
+
+    updateMastery(data.mastery_snapshot);
+
+    if (data.misconception_diagnosis) {
+      log('step', `Misconception: ${data.misconception_diagnosis}`);
+    }
+
+    if (data.session_complete) {
+      showFeedback(
+        data.feedback_message || "Great session!",
+        'correct-fb',
+        data.mascot_emotion || 'celebrating'
+      );
+      pendingNextData = data;
+      document.getElementById('nextBtn').className = 'next-btn show';
+      document.getElementById('nextBtn').textContent = 'See Results →';
+      return;
+    }
+
+    // Show feedback
+    const fbType = isCorrect ? 'correct-fb' : (data.is_step_down ? 'info-fb' : 'wrong-fb');
+    showFeedback(
+      data.feedback_message || (isCorrect ? 'Correct!' : 'Not quite...'),
+      fbType,
+      data.mascot_emotion
+    );
+
+    // Store next question data and show next button
+    pendingNextData = data;
+    document.getElementById('nextBtn').className = 'next-btn show';
+    document.getElementById('nextBtn').textContent =
+      data.is_step_down ? "Let's practice →" : 'Next Question →';
+
+  } catch (e) {
+    log('wrong', `Error submitting: ${e.message}`);
+    showFeedback(`Server error: ${e.message}`, 'wrong-fb', 'neutral');
+  }
+}
+
+function handleNext() {
+  if (pendingNextData) {
+    displayQuestion(pendingNextData);
+  }
+}
+
+// ── UI helpers ─────────────────────────────────────────────────────
+function showFeedback(message, className, emotion) {
+  const bar = document.getElementById('feedbackBar');
+  bar.className = `feedback-bar show ${className}`;
+  document.getElementById('mascotEmoji').textContent = MASCOT_MAP[emotion] || '🥝';
+  document.getElementById('feedbackText').textContent = message;
+}
+
+function updateMastery(snapshot) {
+  if (!snapshot) return;
+  const pct = snapshot.shown_score;
+  document.getElementById('masteryFill').style.width = pct + '%';
+  document.getElementById('masteryLabel').textContent = `${snapshot.mastery_label} ${pct}%`;
+}
+
+function showSessionComplete(data) {
+  document.getElementById('questionArea').style.display = 'none';
+  document.getElementById('completeArea').style.display = 'block';
+
+  const stats = data.session_stats || {};
+  document.getElementById('completeConcept').textContent =
+    `Concept: ${stats.concept_id || selectedConcept}`;
+
+  const grid = document.getElementById('statsGrid');
+  grid.innerHTML = '';
+
+  const statItems = [
+    {value: stats.parent_questions_served || 0, label: 'Questions'},
+    {value: stats.total_attempts || 0, label: 'Total Attempts'},
+    {value: stats.correct_streak_best || 0, label: 'Best Streak'},
+    {value: (stats.masteries && stats.masteries[selectedConcept])
+      ? stats.masteries[selectedConcept].shown_score + '%'
+      : '—', label: 'Mastery Score'},
+  ];
+
+  statItems.forEach(s => {
+    const card = document.createElement('div');
+    card.className = 'stat-card';
+    card.innerHTML = `<div class="value">${s.value}</div><div class="label">${s.label}</div>`;
+    grid.appendChild(card);
+  });
+
+  log('info', `Session complete! Parents: ${stats.parent_questions_served}, ` +
+    `Total: ${stats.total_questions_served}, Streak: ${stats.correct_streak_best}`);
+
+  if (data.suggest_next_concept) {
+    log('info', `Suggested next concept: ${data.suggest_next_concept}`);
+  }
+}
+
+function log(type, message) {
+  const el = document.getElementById('eventLog');
+  const time = new Date().toLocaleTimeString('en-GB', {hour12: false});
+  const entry = document.createElement('div');
+  entry.className = 'entry';
+  entry.innerHTML = `<span class="time">[${time}]</span> <span class="${type}">${message}</span>`;
+  el.appendChild(entry);
+  el.scrollTop = el.scrollHeight;
+}
+
+// ── Boot ───────────────────────────────────────────────────────────
+loadConcepts();
+</script>
+</body>
+</html>

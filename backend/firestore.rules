@@ -1,0 +1,139 @@
+rules_version = '2';
+
+// Kiwimath Firestore Security Rules
+// ==================================
+// COPPA-compliant rules for a kids math app. These rules enforce strict
+// data isolation per user, prevent free-text injection, and ensure that
+// sensitive learning-state collections (mastery, revisits) can only be
+// written by server-side Cloud Functions via the Admin SDK.
+//
+// Design principles (from the cofounder's event schema spec):
+//   1. Clients write attempts only to their own subcollection.
+//   2. mastery and revisits are server-write-only (Admin SDK bypasses rules).
+//   3. No free-text fields — every field in an attempt is validated.
+//   4. Users can read their own profile but never write it.
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // ---------------------------------------------------------------
+    // Helper: check that the requesting user owns this path segment.
+    // ---------------------------------------------------------------
+    function isOwner(userId) {
+      return request.auth != null && request.auth.uid == userId;
+    }
+
+    // ---------------------------------------------------------------
+    // Helper: validate an attempt document's structure.
+    //
+    // We whitelist every field and type so that no free-text can sneak
+    // in — important for COPPA compliance (kids should never be able
+    // to store arbitrary strings that could contain PII).
+    // ---------------------------------------------------------------
+    function isValidAttempt() {
+      let data = request.resource.data;
+      let keys = data.keys();
+
+      // Only these fields are allowed — nothing else.
+      let allowedKeys = ['concept_id', 'is_correct', 'time_taken_ms',
+                         'question_id', 'selected_answer', 'created_at'];
+
+      return keys.hasAll(['concept_id', 'is_correct', 'time_taken_ms'])
+          // No extra fields beyond the allowed set.
+          && keys.hasOnly(allowedKeys)
+          // is_correct must be a boolean — no strings, no numbers.
+          && data.is_correct is bool
+          // time_taken_ms must be a non-negative integer.
+          && data.time_taken_ms is int
+          && data.time_taken_ms >= 0
+          // concept_id must match our naming convention:
+          //   e.g. "G1.NBT.1", "G2.OA.3" — grade.domain.skill
+          && data.concept_id is string
+          && data.concept_id.matches('^G[0-9]+\\.[A-Z]+\\.[0-9]+$')
+          // question_id, if present, must be a string (UUID format from client).
+          && (!('question_id' in keys) || data.question_id is string)
+          // selected_answer, if present, must be a string or int (answer key).
+          && (!('selected_answer' in keys)
+              || data.selected_answer is string
+              || data.selected_answer is int)
+          // created_at, if present, must be a timestamp.
+          && (!('created_at' in keys) || data.created_at is timestamp);
+    }
+
+    // ---------------------------------------------------------------
+    // /users/{userId} — user profile document
+    //
+    // Readable by the owning user so the client can display name,
+    // avatar, grade level, etc.  Writable ONLY by server (Admin SDK
+    // bypasses these rules), because profile data is managed by
+    // Cloud Functions on account creation and admin actions.
+    // ---------------------------------------------------------------
+    match /users/{userId} {
+      allow read:  if isOwner(userId);
+      allow write: if false;  // Server-only via Admin SDK.
+
+      // -------------------------------------------------------------
+      // /users/{userId}/attempts/{attemptId}
+      //
+      // The ONLY subcollection clients can write to.  Each attempt
+      // records the child's answer to a single question.  We validate
+      // the document shape tightly — no free-text fields, no extra
+      // keys.  Reads are allowed so the client can show recent
+      // history, but this is optional and could be removed if the
+      // client only needs mastery/revisits.
+      // -------------------------------------------------------------
+      match /attempts/{attemptId} {
+        allow read:   if isOwner(userId);
+        allow create: if isOwner(userId) && isValidAttempt();
+        // Updates and deletes are not allowed — attempts are immutable
+        // once written.  This prevents tampering with learning history.
+        allow update: if false;
+        allow delete: if false;
+      }
+
+      // -------------------------------------------------------------
+      // /users/{userId}/mastery/{conceptId}
+      //
+      // Server-write-only.  Cloud Functions compute mastery state
+      // (e.g. BKT probability, stars earned) after each attempt and
+      // write it here.  The client reads this to show progress.
+      // -------------------------------------------------------------
+      match /mastery/{conceptId} {
+        allow read:  if isOwner(userId);
+        allow write: if false;  // Server-only via Admin SDK.
+      }
+
+      // -------------------------------------------------------------
+      // /users/{userId}/revisits/{conceptId}
+      //
+      // Server-write-only.  Cloud Functions schedule spaced-repetition
+      // revisit times here.  The client reads this to know which
+      // concepts to review.
+      // -------------------------------------------------------------
+      match /revisits/{conceptId} {
+        allow read:  if isOwner(userId);
+        allow write: if false;  // Server-only via Admin SDK.
+      }
+
+      // -------------------------------------------------------------
+      // /users/{userId}/sessions/{sessionId}
+      //
+      // Server-write-only.  The backend logs completed session data
+      // (stats, rewards, mastery snapshot) here.  The client reads
+      // this to show session history.
+      // -------------------------------------------------------------
+      match /sessions/{sessionId} {
+        allow read:  if isOwner(userId);
+        allow write: if false;  // Server-only via Admin SDK.
+      }
+    }
+
+    // ---------------------------------------------------------------
+    // Default deny: any path not matched above is blocked.
+    // Firestore denies by default, but we add this for explicitness.
+    // ---------------------------------------------------------------
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

@@ -75,6 +75,67 @@ class AuthService {
     await _auth.sendPasswordResetEmail(email: email);
   }
 
+  // ---------------------------------------------------------------------------
+  // Phone OTP sign-in
+  // ---------------------------------------------------------------------------
+
+  /// Start phone number verification. Firebase sends an OTP SMS.
+  ///
+  /// [onCodeSent] fires once the SMS is dispatched — the caller should
+  /// show an OTP input field and call [verifyOtp] with the code.
+  ///
+  /// [onAutoVerified] fires on Android when the SMS is auto-read.
+  ///
+  /// [onError] fires if verification fails (invalid number, quota, etc.).
+  Future<void> sendOtp({
+    required String phoneNumber,
+    required void Function(String verificationId) onCodeSent,
+    required void Function(User user) onAutoVerified,
+    required void Function(String message) onError,
+  }) async {
+    await _auth.verifyPhoneNumber(
+      phoneNumber: phoneNumber,
+      timeout: const Duration(seconds: 60),
+
+      // Android auto-verification — SMS is read automatically.
+      verificationCompleted: (PhoneAuthCredential credential) async {
+        final userCredential = await _auth.signInWithCredential(credential);
+        if (userCredential.user != null) {
+          onAutoVerified(userCredential.user!);
+        }
+      },
+
+      verificationFailed: (FirebaseAuthException e) {
+        onError(humanMessage(e));
+      },
+
+      codeSent: (String verificationId, int? resendToken) {
+        onCodeSent(verificationId);
+      },
+
+      codeAutoRetrievalTimeout: (String verificationId) {
+        // Android auto-retrieval timed out — user must enter code manually.
+      },
+    );
+  }
+
+  /// Verify an OTP code entered by the user.
+  Future<User> verifyOtp({
+    required String verificationId,
+    required String smsCode,
+  }) async {
+    final credential = PhoneAuthProvider.credential(
+      verificationId: verificationId,
+      smsCode: smsCode,
+    );
+    final userCredential = await _auth.signInWithCredential(credential);
+    final user = userCredential.user;
+    if (user == null) {
+      throw AuthFailure('OTP verification returned no user');
+    }
+    return user;
+  }
+
   /// Convert a FirebaseAuthException into a friendlier message.
   static String humanMessage(Object error) {
     if (error is FirebaseAuthException) {
@@ -93,6 +154,12 @@ class AuthService {
           return 'Password must be at least 6 characters.';
         case 'too-many-requests':
           return 'Too many attempts. Wait a moment and try again.';
+        case 'invalid-verification-code':
+          return 'Invalid OTP code. Please check and try again.';
+        case 'invalid-phone-number':
+          return 'Invalid phone number. Include country code (e.g. +91).';
+        case 'session-expired':
+          return 'OTP has expired. Please request a new code.';
         case 'network-request-failed':
           return 'Network error. Check your internet connection.';
         case 'account-exists-with-different-credential':

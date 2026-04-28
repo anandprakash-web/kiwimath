@@ -1,52 +1,311 @@
 import 'package:flutter/material.dart';
 
-/// Kiwimath brand colors + theme.
-/// v0 is utilitarian — polish and mascot come in Week 4.
+/// Kiwimath design tokens — grade-adaptive theming.
+///
+/// K-2 (grades 1-2): Bright, playful, kid-friendly. Big rounded shapes,
+///   warm colors, cute mascot emphasis, larger touch targets.
+///
+/// 3-5 (grades 3-5): Modern, cooler palette, anime-inspired feel.
+///   Deeper colors, sharper corners, more sophisticated layout.
+
+// ===========================================================================
+// Shared base colors (used across both tiers)
+// ===========================================================================
 class KiwiColors {
-  static const Color kiwiGreen = Color(0xFF7CB342);
-  static const Color kiwiGreenDark = Color(0xFF558B2F);
-  static const Color kiwiGreenLight = Color(0xFFDCEDC8);
-  static const Color kiwiBrown = Color(0xFF795548);
-  static const Color correct = Color(0xFF43A047);
-  static const Color wrong = Color(0xFFE53935);
-  static const Color gemGold = Color(0xFFFFB300);
-  static const Color background = Color(0xFFFFFBF0);
+  // Brand — candy-bright kiwi green
+  static const Color kiwiGreen = Color(0xFF00C853);
+  static const Color kiwiGreenDark = Color(0xFF00962E);
+  static const Color kiwiGreenLight = Color(0xFFD5FFDB);
+
+  // Functional — vivid, high-saturation
+  static const Color correct = Color(0xFF00E676);
+  static const Color wrong = Color(0xFFFF5252);
+  static const Color gemBlue = Color(0xFF448AFF);
+  static const Color xpPurple = Color(0xFFAA00FF);
+  static const Color gemGold = Color(0xFFFFD600);
+  static const Color streakOrange = Color(0xFFFF6D00);
+  static const Color leagueBlue = Color(0xFF2979FF);
+
+  // Warm / step-down — richer tones
+  static const Color warmOrange = Color(0xFFFF9100);
+  static const Color warmOrangeDark = Color(0xFFE65100);
+  static const Color warmOrangeBg = Color(0xFFFFF3E0);
+  static const Color warmOrangeBorder = Color(0xFFFFCC80);
+
+  // Surfaces — warm and inviting
+  static const Color background = Color(0xFFF8FFF2);
   static const Color cardBg = Color(0xFFFFFFFF);
-  static const Color textDark = Color(0xFF2E2E2E);
+  static const Color textDark = Color(0xFF1A1A2E);
+  static const Color textMuted = Color(0xFF7B7B8E);
+
+  // Visual card backgrounds — brighter
+  static const Color visualYellowBg = Color(0xFFFFFDE7);
+  static const Color visualYellowBorder = Color(0xFFFFD54F);
+  static const Color visualBlueBg = Color(0xFFE1F5FE);
+  static const Color visualBlueBorder = Color(0xFF4FC3F7);
+
+  // Candy topic card palette — 12 vivid gradients
+  static const List<List<Color>> topicGradients = [
+    [Color(0xFF00E676), Color(0xFF00C853)], // emerald
+    [Color(0xFF448AFF), Color(0xFF2962FF)], // electric blue
+    [Color(0xFFFF6D00), Color(0xFFFF3D00)], // tangerine
+    [Color(0xFFAA00FF), Color(0xFF7C4DFF)], // grape
+    [Color(0xFFFF4081), Color(0xFFF50057)], // bubblegum pink
+    [Color(0xFF00E5FF), Color(0xFF00B8D4)], // aqua
+    [Color(0xFFFFD600), Color(0xFFFFC400)], // sunshine
+    [Color(0xFF76FF03), Color(0xFF64DD17)], // lime
+    [Color(0xFFFF6E40), Color(0xFFFF3D00)], // coral
+    [Color(0xFF536DFE), Color(0xFF304FFE)], // indigo pop
+    [Color(0xFFFF80AB), Color(0xFFFF4081)], // rose
+    [Color(0xFF1DE9B6), Color(0xFF00BFA5)], // mint
+  ];
 }
 
-ThemeData kiwiTheme() {
+// ===========================================================================
+// Grade tier — determines which theme to use
+// ===========================================================================
+enum GradeTier { junior, senior }
+
+GradeTier gradeTier(int grade) => grade <= 2 ? GradeTier.junior : GradeTier.senior;
+
+// ===========================================================================
+// Tier-specific design tokens
+// ===========================================================================
+class KiwiTierColors {
+  final Color primary;
+  final Color primaryDark;
+  final Color accent;
+  final Color background;
+  final Color cardBg;
+  final Color textPrimary;
+  final Color textSecondary;
+  final Color streakGradientStart;
+  final Color streakGradientEnd;
+  final Color buttonGradientStart;
+  final Color buttonGradientEnd;
+  final Color topicCardBorder;
+
+  const KiwiTierColors({
+    required this.primary,
+    required this.primaryDark,
+    required this.accent,
+    required this.background,
+    required this.cardBg,
+    required this.textPrimary,
+    required this.textSecondary,
+    required this.streakGradientStart,
+    required this.streakGradientEnd,
+    required this.buttonGradientStart,
+    required this.buttonGradientEnd,
+    required this.topicCardBorder,
+  });
+
+  /// K-2: Candy-bright, warm, playful — pure joy.
+  static const junior = KiwiTierColors(
+    primary: Color(0xFF00C853),       // Candy green
+    primaryDark: Color(0xFF00962E),
+    accent: Color(0xFFFFD600),        // Sunshine yellow
+    background: Color(0xFFFFFDE7),    // Warm buttercream
+    cardBg: Color(0xFFFFFFFF),
+    textPrimary: Color(0xFF3E2723),   // Warm dark brown
+    textSecondary: Color(0xFF8D6E63), // Warm muted brown
+    streakGradientStart: Color(0xFFFF6D00),  // Blazing orange
+    streakGradientEnd: Color(0xFFFF3D00),    // Fire red-orange
+    buttonGradientStart: Color(0xFF00E676),  // Neon green
+    buttonGradientEnd: Color(0xFF00C853),
+    topicCardBorder: Color(0xFFFFD54F),      // Golden border
+  );
+
+  /// 3-5: Electric, modern, anime-inspired energy.
+  static const senior = KiwiTierColors(
+    primary: Color(0xFF536DFE),       // Electric indigo
+    primaryDark: Color(0xFF304FFE),
+    accent: Color(0xFF00E5FF),        // Neon cyan
+    background: Color(0xFFF0F4FF),    // Cool lavender white
+    cardBg: Color(0xFFFFFFFF),
+    textPrimary: Color(0xFF1A1A2E),   // Deep navy
+    textSecondary: Color(0xFF7C4DFF), // Vivid purple
+    streakGradientStart: Color(0xFF7C4DFF),  // Purple pop
+    streakGradientEnd: Color(0xFF304FFE),    // Deep indigo
+    buttonGradientStart: Color(0xFF448AFF),  // Bright blue
+    buttonGradientEnd: Color(0xFF2962FF),    // Deep blue
+    topicCardBorder: Color(0xFFB388FF),      // Lavender border
+  );
+}
+
+class KiwiTierTypography {
+  final double headlineSize;
+  final double bodySize;
+  final double chipSize;
+  final double topicNameSize;
+  final double buttonSize;
+  final double streakNumberSize;
+  final FontWeight headlineWeight;
+  final String fontFamily;
+
+  const KiwiTierTypography({
+    required this.headlineSize,
+    required this.bodySize,
+    required this.chipSize,
+    required this.topicNameSize,
+    required this.buttonSize,
+    required this.streakNumberSize,
+    required this.headlineWeight,
+    required this.fontFamily,
+  });
+
+  /// K-2: Larger, rounder, friendlier.
+  static const junior = KiwiTierTypography(
+    headlineSize: 20,
+    bodySize: 16,
+    chipSize: 14,
+    topicNameSize: 15,
+    buttonSize: 17,
+    streakNumberSize: 40,
+    headlineWeight: FontWeight.w800,
+    fontFamily: 'Nunito',  // Round, friendly
+  );
+
+  /// 3-5: More compact, sharper, mature.
+  static const senior = KiwiTierTypography(
+    headlineSize: 17,
+    bodySize: 14,
+    chipSize: 12,
+    topicNameSize: 13,
+    buttonSize: 15,
+    streakNumberSize: 34,
+    headlineWeight: FontWeight.w700,
+    fontFamily: 'Poppins',  // Modern, clean
+  );
+}
+
+class KiwiTierShape {
+  final double cardRadius;
+  final double buttonRadius;
+  final double chipRadius;
+  final double topicCardAspect;
+  final EdgeInsets buttonPadding;
+  final EdgeInsets cardPadding;
+
+  const KiwiTierShape({
+    required this.cardRadius,
+    required this.buttonRadius,
+    required this.chipRadius,
+    required this.topicCardAspect,
+    required this.buttonPadding,
+    required this.cardPadding,
+  });
+
+  /// K-2: Rounder, bigger touch targets.
+  static const junior = KiwiTierShape(
+    cardRadius: 20,
+    buttonRadius: 18,
+    chipRadius: 20,
+    topicCardAspect: 1.4,
+    buttonPadding: EdgeInsets.symmetric(vertical: 18, horizontal: 24),
+    cardPadding: EdgeInsets.all(16),
+  );
+
+  /// 3-5: Sharper corners, standard sizing.
+  static const senior = KiwiTierShape(
+    cardRadius: 14,
+    buttonRadius: 12,
+    chipRadius: 16,
+    topicCardAspect: 1.55,
+    buttonPadding: EdgeInsets.symmetric(vertical: 14, horizontal: 20),
+    cardPadding: EdgeInsets.all(12),
+  );
+}
+
+// ===========================================================================
+// Unified theme accessor
+// ===========================================================================
+class KiwiTier {
+  final GradeTier tier;
+  final KiwiTierColors colors;
+  final KiwiTierTypography typography;
+  final KiwiTierShape shape;
+
+  KiwiTier._(this.tier, this.colors, this.typography, this.shape);
+
+  factory KiwiTier.forGrade(int grade) {
+    final t = gradeTier(grade);
+    switch (t) {
+      case GradeTier.junior:
+        return KiwiTier._(t, KiwiTierColors.junior, KiwiTierTypography.junior, KiwiTierShape.junior);
+      case GradeTier.senior:
+        return KiwiTier._(t, KiwiTierColors.senior, KiwiTierTypography.senior, KiwiTierShape.senior);
+    }
+  }
+
+  bool get isJunior => tier == GradeTier.junior;
+  bool get isSenior => tier == GradeTier.senior;
+
+  /// Mascot display style per tier.
+  /// K-2: cute chibi style, emoji-heavy, exclamation marks.
+  /// 3-5: cool anime style, minimal emoji, confident tone.
+  String get mascotStyle => isJunior ? 'chibi' : 'anime';
+
+  /// Emoji set per tier (for topic cards, feedback, etc.)
+  String feedbackCorrect() => isJunior ? '\u{1F389}\u{1F31F}' : '\u{2705}';
+  String feedbackWrong() => isJunior ? '\u{1F914}\u{1F4AD}' : '\u{1F504}';
+  String feedbackStreak() => isJunior ? '\u{1F525}\u{2B50}' : '\u{1F525}';
+}
+
+// ===========================================================================
+// Theme builder (for MaterialApp)
+// ===========================================================================
+ThemeData kiwiTheme({int grade = 1}) {
+  final tier = KiwiTier.forGrade(grade);
+  final c = tier.colors;
+  final t = tier.typography;
+
   return ThemeData(
     useMaterial3: true,
-    scaffoldBackgroundColor: KiwiColors.background,
+    scaffoldBackgroundColor: c.background,
     colorScheme: ColorScheme.fromSeed(
-      seedColor: KiwiColors.kiwiGreen,
-      primary: KiwiColors.kiwiGreen,
+      seedColor: c.primary,
+      primary: c.primary,
       brightness: Brightness.light,
     ),
-    textTheme: const TextTheme(
+    textTheme: TextTheme(
       headlineLarge: TextStyle(
-        fontSize: 28,
-        fontWeight: FontWeight.w700,
-        color: KiwiColors.textDark,
+        fontSize: t.headlineSize + 4,
+        fontWeight: t.headlineWeight,
+        color: c.textPrimary,
       ),
       headlineMedium: TextStyle(
-        fontSize: 22,
-        fontWeight: FontWeight.w700,
-        color: KiwiColors.textDark,
+        fontSize: t.bodySize + 2,
+        fontWeight: FontWeight.w600,
+        color: c.textPrimary,
+        height: 1.45,
       ),
       bodyLarge: TextStyle(
-        fontSize: 20,
-        color: KiwiColors.textDark,
+        fontSize: t.bodySize,
+        color: c.textPrimary,
+      ),
+      bodyMedium: TextStyle(
+        fontSize: t.bodySize - 2,
+        color: c.textPrimary,
+      ),
+      labelSmall: TextStyle(
+        fontSize: t.chipSize - 1,
+        fontWeight: FontWeight.w600,
+        color: c.textSecondary,
       ),
     ),
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(
-        backgroundColor: KiwiColors.kiwiGreen,
+        backgroundColor: c.primary,
         foregroundColor: Colors.white,
-        padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 16),
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-        textStyle: const TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
+        padding: tier.shape.buttonPadding,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(tier.shape.buttonRadius),
+        ),
+        textStyle: TextStyle(
+          fontSize: t.buttonSize,
+          fontWeight: FontWeight.w700,
+        ),
       ),
     ),
   );

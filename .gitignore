@@ -14,3 +14,24 @@ build/
 .vscode/
 node_modules/
 *.log
+
+# Database files
+*.db
+*.db-journal
+
+# Lock files
+.~lock.*
+
+# Temp files
+*.tmp
+
+# Build artifacts
+app/.dart_tool/
+app/build/
+app/.flutter-plugins-dependencies
+
+# OS files
+Thumbs.db
+
+# Generated docs (keep source, not output)
+Kiwimath_Project_Summary.pdf

@@ -51,3 +51,4 @@ uvicorn app.main:app --reload
 | Firebase wiring | ⏳ Week 3 |
 | Adaptive engine v0 | ⏳ Week 3 |
 | Postgres ingester | ⏳ Week 4 |
+| Parent daily-summary push notification | ⏳ Post-launch |

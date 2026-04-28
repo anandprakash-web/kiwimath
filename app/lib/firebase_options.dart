@@ -17,10 +17,7 @@ import 'package:flutter/foundation.dart'
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
-      throw UnsupportedError(
-        'DefaultFirebaseOptions have not been configured for web - '
-        'you can reconfigure this by running the FlutterFire CLI again.',
-      );
+      return web;
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
@@ -52,6 +49,16 @@ class DefaultFirebaseOptions {
     }
   }
 
+  static const FirebaseOptions web = FirebaseOptions(
+    apiKey: 'AIzaSyBaKCLjvMl0FSjj9cVVUrbQKM23waNWfdU',
+    appId: '1:876296514345:web:85456e6a4fa9fd6f462538',
+    messagingSenderId: '876296514345',
+    projectId: 'kiwimath-801c1',
+    authDomain: 'kiwimath-801c1.firebaseapp.com',
+    storageBucket: 'kiwimath-801c1.firebasestorage.app',
+    measurementId: 'G-23JK4JYF50',
+  );
+
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyAnKemVJ_qPn4LTUuN5JhCqK1FQ-ms5Oug',
     appId: '1:876296514345:android:3b94e133bb479159462538',
@@ -59,4 +66,5 @@ class DefaultFirebaseOptions {
     projectId: 'kiwimath-801c1',
     storageBucket: 'kiwimath-801c1.firebasestorage.app',
   );
+
 }

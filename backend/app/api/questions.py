@@ -123,6 +123,7 @@ def _to_response(
 @router.get("/questions/next", response_model=QuestionOut)
 def questions_next(
     topic: Optional[str] = Query(None, description="Filter to a single topic"),
+    grade: Optional[int] = Query(None, ge=1, le=5, description="Filter to a grade (1-5)"),
     locale: Optional[str] = Query(None, description="IN / US / SG / global"),
     seed: Optional[int] = Query(None, description="Fix the RNG for reproducible renders"),
 ):
@@ -130,6 +131,8 @@ def questions_next(
     candidates: List[Question]
     if topic:
         candidates = content_store.store.by_topic(topic)
+    elif grade:
+        candidates = content_store.store.by_grade(grade)
     else:
         candidates = content_store.store.parents()
 
@@ -195,8 +198,3 @@ def question_by_id(
     except RenderError as e:
         raise HTTPException(status_code=500, detail=f"render failed: {e}")
     return _to_response(rendered, obj.est_time_seconds)
-
-
-@router.get("/health")
-def health():
-    return {"status": "ok", **content_store.store.stats()}

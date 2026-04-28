@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kiwimath — Launch Roadmap</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Inter', -apple-system, sans-serif; background: #f8faf8; color: #1a1a1a; line-height: 1.6; }
+
+  .container { max-width: 900px; margin: 0 auto; padding: 40px 24px; }
+
+  /* Header */
+  .header { text-align: center; margin-bottom: 48px; }
+  .header h1 { font-size: 36px; font-weight: 800; color: #1B5E20; margin-bottom: 4px; }
+  .header .subtitle { font-size: 16px; color: #666; }
+  .header .date { font-size: 13px; color: #999; margin-top: 8px; }
+
+  /* Stats banner */
+  .stats-banner { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 48px; }
+  .stat-card { background: white; border-radius: 14px; padding: 20px; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+  .stat-card .number { font-size: 32px; font-weight: 800; }
+  .stat-card .label { font-size: 12px; color: #777; font-weight: 500; text-transform: uppercase; letter-spacing: 0.5px; margin-top: 2px; }
+  .stat-green .number { color: #2E7D32; }
+  .stat-blue .number { color: #1565C0; }
+  .stat-purple .number { color: #6A1B9A; }
+  .stat-orange .number { color: #E65100; }
+
+  /* Section */
+  .section { margin-bottom: 44px; }
+  .section-title { font-size: 22px; font-weight: 700; color: #1B5E20; margin-bottom: 20px; padding-bottom: 8px; border-bottom: 3px solid #C8E6C9; }
+
+  /* Phase blocks */
+  .phase { background: white; border-radius: 14px; padding: 24px 28px; margin-bottom: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); position: relative; overflow: hidden; }
+  .phase::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 5px; }
+  .phase-done::before { background: #4CAF50; }
+  .phase-current::before { background: #FF9800; }
+  .phase-next::before { background: #2196F3; }
+  .phase-future::before { background: #9E9E9E; }
+
+  .phase-header { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+  .phase-badge { font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 12px; text-transform: uppercase; letter-spacing: 0.5px; }
+  .badge-done { background: #E8F5E9; color: #2E7D32; }
+  .badge-current { background: #FFF3E0; color: #E65100; }
+  .badge-next { background: #E3F2FD; color: #1565C0; }
+  .badge-future { background: #F5F5F5; color: #616161; }
+
+  .phase-name { font-size: 18px; font-weight: 700; }
+  .phase-time { margin-left: auto; font-size: 13px; color: #999; font-weight: 500; }
+
+  .task-list { list-style: none; padding: 0; }
+  .task-list li { padding: 6px 0; padding-left: 28px; position: relative; font-size: 14px; }
+  .task-list li::before { position: absolute; left: 0; top: 6px; font-size: 16px; }
+  .task-done::before { content: '✅'; }
+  .task-current::before { content: '🔧'; }
+  .task-todo::before { content: '⬜'; }
+  .task-blocked::before { content: '🔒'; }
+  .task-name { font-weight: 500; }
+  .task-detail { color: #777; font-size: 13px; }
+
+  /* Owner tags */
+  .owner { font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 8px; margin-left: 6px; }
+  .owner-eng { background: #E3F2FD; color: #1565C0; }
+  .owner-acad { background: #F3E5F5; color: #7B1FA2; }
+  .owner-design { background: #FFF3E0; color: #E65100; }
+  .owner-ops { background: #E8F5E9; color: #2E7D32; }
+
+  /* Timeline */
+  .timeline-bar { display: flex; margin: 32px 0; border-radius: 8px; overflow: hidden; height: 36px; }
+  .timeline-segment { display: flex; align-items: center; justify-content: center; color: white; font-size: 11px; font-weight: 600; }
+  .tl-done { background: #4CAF50; }
+  .tl-current { background: #FF9800; }
+  .tl-next { background: #2196F3; }
+  .tl-future { background: #BDBDBD; }
+
+  /* Callout */
+  .callout { background: #FFF8E1; border: 1px solid #FFE082; border-radius: 12px; padding: 16px 20px; margin: 20px 0; }
+  .callout-title { font-weight: 700; font-size: 14px; color: #F57F17; margin-bottom: 4px; }
+  .callout-text { font-size: 14px; color: #555; }
+
+  /* Summary table */
+  .summary-table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 14px; }
+  .summary-table th { background: #E8F5E9; color: #1B5E20; text-align: left; padding: 10px 14px; font-weight: 600; font-size: 13px; }
+  .summary-table td { padding: 10px 14px; border-bottom: 1px solid #eee; }
+  .summary-table tr:last-child td { border-bottom: none; }
+
+  .pct-bar { height: 8px; border-radius: 4px; background: #E0E0E0; width: 100px; display: inline-block; vertical-align: middle; margin-right: 8px; }
+  .pct-fill { height: 100%; border-radius: 4px; }
+
+  /* Bottom line */
+  .bottom-line { background: linear-gradient(135deg, #1B5E20, #2E7D32); border-radius: 16px; padding: 32px; color: white; text-align: center; margin-top: 40px; }
+  .bottom-line h2 { font-size: 24px; margin-bottom: 8px; }
+  .bottom-line p { font-size: 16px; opacity: 0.9; }
+  .bottom-line .target { font-size: 40px; font-weight: 800; margin: 16px 0 4px; }
+
+  @media (max-width: 640px) {
+    .stats-banner { grid-template-columns: repeat(2, 1fr); }
+    .phase-time { display: none; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+<!-- HEADER -->
+<div class="header">
+  <h1>🥝 Kiwimath Launch Roadmap</h1>
+  <div class="subtitle">Duolingo for Grade 1 Maths — Status & Plan</div>
+  <div class="date">Updated: 18 April 2026</div>
+</div>
+
+<!-- STATS BANNER -->
+<div class="stats-banner">
+  <div class="stat-card stat-green">
+    <div class="number">479</div>
+    <div class="label">Questions authored</div>
+  </div>
+  <div class="stat-card stat-blue">
+    <div class="number">51</div>
+    <div class="label">SVG generators</div>
+  </div>
+  <div class="stat-card stat-purple">
+    <div class="number">6,215</div>
+    <div class="label">Backend LoC</div>
+  </div>
+  <div class="stat-card stat-orange">
+    <div class="number">3,795</div>
+    <div class="label">Flutter LoC</div>
+  </div>
+</div>
+
+<!-- TIMELINE BAR -->
+<div class="section">
+  <div class="section-title">Timeline at a Glance</div>
+  <div class="timeline-bar">
+    <div class="timeline-segment tl-done" style="width:45%">Phase 1–3 ✓</div>
+    <div class="timeline-segment tl-current" style="width:12%">Phase 4</div>
+    <div class="timeline-segment tl-next" style="width:23%">Phase 5–6</div>
+    <div class="timeline-segment tl-future" style="width:20%">Phase 7–8</div>
+  </div>
+  <div style="display:flex; justify-content:space-between; font-size:12px; color:#999; margin-top:4px;">
+    <span>Sessions 1–3 (done)</span>
+    <span>This week</span>
+    <span>Weeks 2–3</span>
+    <span>Week 4 → Launch</span>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- PHASE 1: FOUNDATION — DONE -->
+<!-- ============================================================ -->
+<div class="section">
+<div class="section-title">Completed Work</div>
+
+<div class="phase phase-done">
+  <div class="phase-header">
+    <span class="phase-badge badge-done">Done</span>
+    <span class="phase-name">Phase 1 — Architecture & Schema</span>
+    <span class="phase-time">Session 1</span>
+  </div>
+  <ul class="task-list">
+    <li class="task-done"><span class="task-name">Concept DAG for Grade 1</span> <span class="task-detail">— 6 topics, 20 concepts, prerequisite graph</span></li>
+    <li class="task-done"><span class="task-name">Question schema v2 (hybrid)</span> <span class="task-detail">— param sampling, constraints, derived fields, locale, SVG visuals</span></li>
+    <li class="task-done"><span class="task-name">Slot taxonomy</span> <span class="task-detail">— Indian names, objects, animals, festivals for localised stems</span></li>
+    <li class="task-done"><span class="task-name">Content authoring guide</span> <span class="task-detail">— step-by-step for acad team to write JSON questions</span></li>
+    <li class="task-done"><span class="task-name">Event schema v1</span> <span class="task-detail">— analytics events for every user action</span></li>
+    <li class="task-done"><span class="task-name">Firestore security rules</span></li>
+  </ul>
+</div>
+
+<div class="phase phase-done">
+  <div class="phase-header">
+    <span class="phase-badge badge-done">Done</span>
+    <span class="phase-name">Phase 2 — Adaptive Engine (Backend)</span>
+    <span class="phase-time">Sessions 1–2</span>
+  </div>
+  <ul class="task-list">
+    <li class="task-done"><span class="task-name">3-loop adaptive engine</span> <span class="task-detail">— within-question step-down, within-session concept selection, across-session spaced repetition</span></li>
+    <li class="task-done"><span class="task-name">Mastery model</span> <span class="task-detail">— Elo K=0.15, asymmetric, difficulty banding (new→1-2, familiar→2-3, proficient→3-5)</span></li>
+    <li class="task-done"><span class="task-name">Question renderer</span> <span class="task-detail">— param sampling → constraints → derived → locale → answer formula → distractors → dedup → shuffle</span></li>
+    <li class="task-done"><span class="task-name">SVG generator framework</span> <span class="task-detail">— 10 generators (batch 1–2: object_row, dice, triangle, grid, ten_frame, number_line, bar_model, etc.)</span></li>
+    <li class="task-done"><span class="task-name">Session API endpoints</span> <span class="task-detail">— POST /session/start, POST /session/answer, GET /session/state, GET /session/concepts</span></li>
+    <li class="task-done"><span class="task-name">Content store</span> <span class="task-detail">— recursive JSON loader with ContentStore class</span></li>
+    <li class="task-done"><span class="task-name">Critical bug fix: render-shuffle</span> <span class="task-detail">— stored correct_index in session state so re-render doesn't change answers</span></li>
+    <li class="task-done"><span class="task-name">Cloud Functions designed</span> <span class="task-detail">— mastery_recompute, revisit_scheduler</span></li>
+  </ul>
+</div>
+
+<div class="phase phase-done">
+  <div class="phase-header">
+    <span class="phase-badge badge-done">Done</span>
+    <span class="phase-name">Phase 3 — Flutter App + Content</span>
+    <span class="phase-time">Sessions 2–3</span>
+  </div>
+  <ul class="task-list">
+    <li class="task-done"><span class="task-name">Flutter app (15 Dart files)</span> <span class="task-detail">— Firebase Auth, home screen, question screen, celebration, feedback, SVG visual widget</span></li>
+    <li class="task-done"><span class="task-name">Rewired app to Session API</span> <span class="task-detail">— removed client-side step-down logic, server now owns all adaptive decisions</span></li>
+    <li class="task-done"><span class="task-name">Kiwi theme</span> <span class="task-detail">— green palette, streak cards, gem/XP chips, topic grid, league teaser</span></li>
+    <li class="task-done"><span class="task-name">479 questions authored</span> <span class="task-detail">— 163 parents + 316 step-downs across Counting (132), Arithmetic (246), Shapes (96)</span></li>
+    <li class="task-done"><span class="task-name">Content audit passed</span> <span class="task-detail">— 100% step-down coverage, difficulty progression validated</span></li>
+    <li class="task-done"><span class="task-name">41 new SVG generators (batch 3)</span> <span class="task-detail">— tally_marks, domino, cube_stack, jars, balloons, shapes, colour sequences, etc.</span></li>
+    <li class="task-done"><span class="task-name">Zero missing generators</span> <span class="task-detail">— all 89 questions with visual fields now have valid generators</span></li>
+  </ul>
+</div>
+
+</div>
+
+<!-- ============================================================ -->
+<!-- REMAINING WORK -->
+<!-- ============================================================ -->
+<div class="section">
+<div class="section-title">Remaining Work</div>
+
+<!-- PHASE 4: CONTENT VISUALS — IN PROGRESS -->
+<div class="phase phase-current">
+  <div class="phase-header">
+    <span class="phase-badge badge-current">In Progress</span>
+    <span class="phase-name">Phase 4 — Visual Coverage (Content Task)</span>
+    <span class="phase-time">~3–4 days</span>
+  </div>
+  <div class="callout">
+    <div class="callout-title">⚡ This is the critical path blocker</div>
+    <div class="callout-text">390 of 479 questions have no SVG visual. A child seeing plain text with no picture is a non-starter. The Visual_Coverage_Tracker.xlsx has every question, with suggestions and the full generator catalog.</div>
+  </div>
+  <table class="summary-table">
+    <tr><th>Topic</th><th>Coverage</th><th>Parents to fix</th><th>Step-downs to fix</th></tr>
+    <tr>
+      <td>Shapes</td>
+      <td><span class="pct-bar"><span class="pct-fill" style="width:0%; background:#e53935;"></span></span>0%</td>
+      <td>32</td><td>64</td>
+    </tr>
+    <tr>
+      <td>Arithmetic</td>
+      <td><span class="pct-bar"><span class="pct-fill" style="width:6%; background:#FF9800;"></span></span>6%</td>
+      <td>79</td><td>153</td>
+    </tr>
+    <tr>
+      <td>Counting</td>
+      <td><span class="pct-bar"><span class="pct-fill" style="width:55%; background:#4CAF50;"></span></span>55%</td>
+      <td>19</td><td>40</td>
+    </tr>
+  </table>
+  <ul class="task-list">
+    <li class="task-current"><span class="task-name">Add visual specs to 130 parent questions</span> <span class="owner owner-acad">Acad Cofounder</span><br><span class="task-detail">Pick generator + params for each. Priority: Shapes → Arithmetic → Counting</span></li>
+    <li class="task-todo"><span class="task-name">Add visual specs to 260 step-down questions</span> <span class="owner owner-acad">Acad Cofounder</span><br><span class="task-detail">Most can reuse parent's generator with adjusted params</span></li>
+    <li class="task-todo"><span class="task-name">Fix 33 visual param reference issues</span> <span class="owner owner-acad">Acad Cofounder</span><br><span class="task-detail">Some existing visuals reference undefined question params</span></li>
+  </ul>
+</div>
+
+<!-- PHASE 5: BACKEND HARDENING -->
+<div class="phase phase-next">
+  <div class="phase-header">
+    <span class="phase-badge badge-next">Next</span>
+    <span class="phase-name">Phase 5 — Backend Hardening & Deploy</span>
+    <span class="phase-time">~3–4 days</span>
+  </div>
+  <ul class="task-list">
+    <li class="task-todo"><span class="task-name">Deploy FastAPI to Cloud Run / GCP</span> <span class="owner owner-eng">Eng</span><br><span class="task-detail">Dockerfile, env config, CORS, health check, auto-scaling</span></li>
+    <li class="task-todo"><span class="task-name">Firestore integration</span> <span class="owner owner-eng">Eng</span><br><span class="task-detail">Persist session state, mastery scores, streaks, XP — currently in-memory</span></li>
+    <li class="task-todo"><span class="task-name">Wire Cloud Functions</span> <span class="owner owner-eng">Eng</span><br><span class="task-detail">mastery_recompute (nightly), revisit_scheduler (spaced repetition triggers)</span></li>
+    <li class="task-todo"><span class="task-name">Load real user state in Flutter</span> <span class="owner owner-eng">Eng</span><br><span class="task-detail">Replace hardcoded streak=5, gems=42, xp=230 with Firestore reads</span></li>
+    <li class="task-todo"><span class="task-name">Error handling & retry logic</span> <span class="owner owner-eng">Eng</span><br><span class="task-detail">Network failures, session timeouts, graceful degradation</span></li>
+    <li class="task-todo"><span class="task-name">Rate limiting & auth middleware</span> <span class="owner owner-eng">Eng</span><br><span class="task-detail">Firebase ID token verification on every API call</span></li>
+  </ul>
+</div>
+
+<!-- PHASE 6: APP POLISH -->
+<div class="phase phase-next">
+  <div class="phase-header">
+    <span class="phase-badge badge-next">Next</span>
+    <span class="phase-name">Phase 6 — App Polish & UX</span>
+    <span class="phase-time">~3–4 days</span>
+  </div>
+  <ul class="task-list">
+    <li class="task-todo"><span class="task-name">Sound effects & haptics</span> <span class="owner owner-eng">Eng</span><br><span class="task-detail">Correct/wrong answer sounds, streak milestone celebration, button taps</span></li>
+    <li class="task-todo"><span class="task-name">Animations</span> <span class="owner owner-eng">Eng</span><br><span class="task-detail">Card flip on answer, progress bar fill, XP counter increment, confetti on streak</span></li>
+    <li class="task-todo"><span class="task-name">Offline mode</span> <span class="owner owner-eng">Eng</span><br><span class="task-detail">Cache next 10 questions locally, sync answers when back online</span></li>
+    <li class="task-todo"><span class="task-name">Parent dashboard screen</span> <span class="owner owner-eng">Eng</span><br><span class="task-detail">Progress per topic, time spent, mastery levels — gated behind parent PIN</span></li>
+    <li class="task-todo"><span class="task-name">Onboarding flow</span> <span class="owner owner-eng">Eng</span><br><span class="task-detail">Welcome screens, placement test (5 questions to set initial difficulty), avatar pick</span></li>
+    <li class="task-todo"><span class="task-name">Notification system</span> <span class="owner owner-eng">Eng</span><br><span class="task-detail">Daily practice reminder, streak-at-risk alert, weekly progress to parents</span></li>
+  </ul>
+</div>
+
+<!-- PHASE 7: QA & TESTING -->
+<div class="phase phase-future">
+  <div class="phase-header">
+    <span class="phase-badge badge-future">Week 4</span>
+    <span class="phase-name">Phase 7 — QA & Testing</span>
+    <span class="phase-time">~3–4 days</span>
+  </div>
+  <ul class="task-list">
+    <li class="task-todo"><span class="task-name">Playtest with 5–10 real Grade 1 kids</span> <span class="owner owner-acad">Acad</span><br><span class="task-detail">Watch them use it. Where do they get stuck? What confuses them?</span></li>
+    <li class="task-todo"><span class="task-name">Content QA pass</span> <span class="owner owner-acad">Acad</span><br><span class="task-detail">Every question rendered, every visual checked, every distractor sensible</span></li>
+    <li class="task-todo"><span class="task-name">Device testing</span> <span class="owner owner-eng">Eng</span><br><span class="task-detail">Android 10–14, budget phones (Redmi, Realme), tablets, small screens</span></li>
+    <li class="task-todo"><span class="task-name">Load testing</span> <span class="owner owner-eng">Eng</span><br><span class="task-detail">Simulate 500 concurrent sessions, measure p95 latency</span></li>
+    <li class="task-todo"><span class="task-name">Fix issues from playtesting</span> <span class="owner owner-eng">Eng</span></li>
+  </ul>
+</div>
+
+<!-- PHASE 8: LAUNCH -->
+<div class="phase phase-future">
+  <div class="phase-header">
+    <span class="phase-badge badge-future">Week 4–5</span>
+    <span class="phase-name">Phase 8 — Launch</span>
+    <span class="phase-time">~2 days</span>
+  </div>
+  <ul class="task-list">
+    <li class="task-todo"><span class="task-name">Play Store listing</span> <span class="owner owner-ops">Ops</span><br><span class="task-detail">Screenshots, description, COPPA compliance, age rating, privacy policy</span></li>
+    <li class="task-todo"><span class="task-name">App Store listing</span> <span class="owner owner-ops">Ops</span><br><span class="task-detail">iOS build, TestFlight, App Review submission (allow 2–3 days)</span></li>
+    <li class="task-todo"><span class="task-name">Analytics & monitoring</span> <span class="owner owner-eng">Eng</span><br><span class="task-detail">Firebase Analytics events, Crashlytics, Cloud Run monitoring dashboard</span></li>
+    <li class="task-todo"><span class="task-name">Soft launch (100 users)</span> <span class="owner owner-ops">Ops</span><br><span class="task-detail">Invite-only cohort, daily metrics review for 3–5 days</span></li>
+    <li class="task-todo"><span class="task-name">Public launch</span> <span class="owner owner-ops">Ops</span></li>
+  </ul>
+</div>
+
+</div>
+
+<!-- ============================================================ -->
+<!-- EFFORT ESTIMATE -->
+<!-- ============================================================ -->
+<div class="section">
+  <div class="section-title">Effort Estimate</div>
+  <table class="summary-table">
+    <tr><th>Phase</th><th>Owner</th><th>Effort</th><th>Can Parallel?</th></tr>
+    <tr><td>Phase 4 — Visual coverage</td><td><span class="owner owner-acad">Acad Cofounder</span></td><td>3–4 days</td><td>Yes — starts now</td></tr>
+    <tr><td>Phase 5 — Backend deploy</td><td><span class="owner owner-eng">Eng (Claude + You)</span></td><td>3–4 days</td><td>Yes — parallel with Phase 4</td></tr>
+    <tr><td>Phase 6 — App polish</td><td><span class="owner owner-eng">Eng (Claude + You)</span></td><td>3–4 days</td><td>Yes — parallel with Phase 4</td></tr>
+    <tr><td>Phase 7 — QA & testing</td><td><span class="owner owner-acad">Acad</span> + <span class="owner owner-eng">Eng</span></td><td>3–4 days</td><td>After Phases 4–6</td></tr>
+    <tr><td>Phase 8 — Launch</td><td><span class="owner owner-ops">Ops</span></td><td>2 days + review</td><td>After Phase 7</td></tr>
+    <tr style="font-weight:700; background:#F1F8E9;"><td>Total remaining</td><td></td><td colspan="2">~3.5–4.5 weeks (with parallelism)</td></tr>
+  </table>
+
+  <div class="callout">
+    <div class="callout-title">Key insight on parallelism</div>
+    <div class="callout-text">Phases 4, 5, and 6 can all run simultaneously. While your acad cofounder adds visuals to 390 questions, we can deploy the backend and polish the app. This compresses 10–12 days of serial work into ~4 days of calendar time.</div>
+  </div>
+</div>
+
+<!-- BOTTOM LINE -->
+<div class="bottom-line">
+  <h2>Realistic Launch Target</h2>
+  <div class="target">Mid-May 2026</div>
+  <p>Soft launch in ~4 weeks · Public launch in ~5 weeks</p>
+  <p style="font-size:13px; opacity:0.7; margin-top:12px;">At the pace we've been building (entire adaptive engine + app + 51 SVG generators in 3 sessions),<br>the eng work is not the bottleneck — content visuals are.</p>
+</div>
+
+</div>
+</body>
+</html>

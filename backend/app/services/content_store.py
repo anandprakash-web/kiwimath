@@ -4,6 +4,10 @@ In-memory content store.
 For v0 this just loads JSON files from a directory on disk at startup and
 keeps them in memory. When we move to Postgres + an ingester in Week 3, this
 interface stays the same — only the implementation changes.
+
+v3b support: tries the v3 adapter first when loading JSON files, falling back
+to the original parse_question_file if the adapter fails or returns None.
+Supports loading from any grade directory (Grade1, Grade2, ... Grade5+).
 """
 
 from __future__ import annotations
@@ -18,6 +22,7 @@ from app.models.question import (
     StepDownQuestion,
     parse_question_file,
 )
+from app.services.v3_adapter import adapt_v3b
 
 
 class ContentStore:
@@ -25,18 +30,53 @@ class ContentStore:
         self._parents: Dict[str, Question] = {}
         self._step_downs: Dict[str, StepDownQuestion] = {}
 
+    def _try_load_json(self, data: Dict) -> Optional[Union[Question, StepDownQuestion]]:
+        """Try loading a JSON dict as a question, using v3 adapter then fallback.
+
+        Strategy:
+          1. Try v3b adapter -> parse_question_file on adapted data
+          2. Fall back to direct parse_question_file on raw data
+        """
+        # Strategy 1: v3b adapter
+        try:
+            adapted = adapt_v3b(data)
+            if adapted:
+                return parse_question_file(adapted)
+        except Exception:
+            pass
+
+        # Strategy 2: direct parse (original format)
+        try:
+            return parse_question_file(data)
+        except Exception:
+            pass
+
+        return None
+
     def load_folder(self, root: Path) -> int:
-        """Load all *.json question files under root. Returns count loaded."""
+        """Load all *.json question files under root. Returns count loaded.
+
+        Supports any grade directory structure — recursively walks all
+        subdirectories (Grade1/, Grade2/, Ch01_COUN/, etc.).
+        """
         count = 0
         for path in sorted(root.rglob("*.json")):
             if any(part.startswith(".") for part in path.parts):
                 continue
+            # Skip known non-question files
+            if path.name in ("content_index.json", "package.json"):
+                continue
             try:
                 data = json.loads(path.read_text())
-                obj = parse_question_file(data)
-            except Exception as e:
-                print(f"[content_store] skipping {path.name}: {e}")
+            except (json.JSONDecodeError, OSError) as e:
+                print(f"[content_store] skipping {path.name}: cannot read JSON: {e}")
                 continue
+
+            obj = self._try_load_json(data)
+            if obj is None:
+                print(f"[content_store] skipping {path.name}: failed both v3b adapter and direct parse")
+                continue
+
             if isinstance(obj, Question):
                 self._parents[obj.id] = obj
             elif isinstance(obj, StepDownQuestion):
@@ -53,11 +93,29 @@ class ContentStore:
     def by_topic(self, topic: str) -> List[Question]:
         return [q for q in self._parents.values() if q.topic.value == topic]
 
+    def by_grade(self, grade: int) -> List[Question]:
+        """Return all parent questions for a given grade (1-5)."""
+        prefix = f"G{grade}-"
+        return [q for q in self._parents.values() if q.id.startswith(prefix)]
+
     def stats(self) -> Dict[str, int]:
         return {
             "parents": len(self._parents),
             "step_downs": len(self._step_downs),
         }
+
+    def stats_by_grade(self) -> Dict[str, Dict[str, int]]:
+        """Return parent/step-down counts grouped by grade."""
+        grade_stats: Dict[str, Dict[str, int]] = {}
+        for qid in self._parents:
+            g = qid.split("-")[0]  # e.g. "G1"
+            grade_stats.setdefault(g, {"parents": 0, "step_downs": 0})
+            grade_stats[g]["parents"] += 1
+        for qid in self._step_downs:
+            g = qid.split("-")[0]
+            grade_stats.setdefault(g, {"parents": 0, "step_downs": 0})
+            grade_stats[g]["step_downs"] += 1
+        return grade_stats
 
 
 # Module-level singleton. Populated by app startup.
@@ -65,12 +123,17 @@ store = ContentStore()
 
 
 def bootstrap_from_env() -> None:
-    """Called at app startup. Reads KIWIMATH_CONTENT_DIR env var."""
+    """Called at app startup. Reads KIWIMATH_CONTENT_DIR env var.
+
+    Supports pointing to:
+      - A single grade folder (e.g., Grade1/)
+      - A parent folder containing multiple grade folders (e.g., Kiwimath_Content_v3b/)
+    """
     content_dir = os.environ.get("KIWIMATH_CONTENT_DIR")
     if not content_dir:
         print(
             "[content_store] KIWIMATH_CONTENT_DIR not set; using empty store. "
-            "Set it to your Grade1/ folder to load questions."
+            "Set it to your content folder to load questions."
         )
         return
     root = Path(content_dir).expanduser().resolve()

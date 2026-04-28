@@ -22,6 +22,14 @@
           }
         },
         {
+          "client_id": "876296514345-mpun9q34onvahofgq4hcbsmfp8v3odsb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kiwimath.kiwimath_app",
+            "certificate_hash": "3798f1321cca4ad552d3f90f8aee486c36e5c8e9"
+          }
+        },
+        {
           "client_id": "876296514345-n83fc1fhl4tl6pjd0aj5vetph2agsabg.apps.googleusercontent.com",
           "client_type": 3
         }

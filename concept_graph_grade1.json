@@ -1,0 +1,466 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "concept_id": "counting.cardinality",
+      "display_name": "Counting & Cardinality",
+      "description": "Count objects up to 20, one-to-one correspondence, number recognition",
+      "grade_range": [1, 1],
+      "world_region": "number_island",
+      "topic_branch": "number_sense",
+      "prerequisites": []
+    },
+    {
+      "concept_id": "counting.subitizing",
+      "display_name": "Subitizing",
+      "description": "Instantly recognise small quantities (1-5) without counting",
+      "grade_range": [1, 1],
+      "world_region": "number_island",
+      "topic_branch": "number_sense",
+      "prerequisites": []
+    },
+    {
+      "concept_id": "counting.ten_frame",
+      "display_name": "Ten-Frame Counting",
+      "description": "Use ten-frames to count and represent numbers up to 20",
+      "grade_range": [1, 1],
+      "world_region": "number_island",
+      "topic_branch": "number_sense",
+      "prerequisites": [
+        { "concept_id": "counting.cardinality", "edge_type": "hard_prereq", "min_mastery": "practising" }
+      ]
+    },
+    {
+      "concept_id": "counting.ordinal",
+      "display_name": "Ordinal Numbers",
+      "description": "Understand position words: first, second, third, etc.",
+      "grade_range": [1, 1],
+      "world_region": "number_island",
+      "topic_branch": "number_sense",
+      "prerequisites": [
+        { "concept_id": "counting.cardinality", "edge_type": "soft_prereq", "min_mastery": "practising" }
+      ]
+    },
+    {
+      "concept_id": "addition.within_10",
+      "display_name": "Addition within 10",
+      "description": "Add single-digit numbers with sums up to 10",
+      "grade_range": [1, 1],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic",
+      "prerequisites": [
+        { "concept_id": "counting.cardinality", "edge_type": "soft_prereq", "min_mastery": "practising" }
+      ]
+    },
+    {
+      "concept_id": "subtraction.within_10",
+      "display_name": "Subtraction within 10",
+      "description": "Subtract single-digit numbers within 10",
+      "grade_range": [1, 1],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic",
+      "prerequisites": [
+        { "concept_id": "counting.cardinality", "edge_type": "soft_prereq", "min_mastery": "practising" }
+      ]
+    },
+    {
+      "concept_id": "addition.within_20",
+      "display_name": "Addition within 20",
+      "description": "Add numbers with sums up to 20, including bridging through 10",
+      "grade_range": [1, 1],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic",
+      "prerequisites": [
+        { "concept_id": "addition.within_10", "edge_type": "hard_prereq", "min_mastery": "practising" },
+        { "concept_id": "place_value.tens_ones", "edge_type": "soft_prereq", "min_mastery": "introduced" }
+      ]
+    },
+    {
+      "concept_id": "subtraction.within_20",
+      "display_name": "Subtraction within 20",
+      "description": "Subtract numbers within 20, including crossing 10",
+      "grade_range": [1, 1],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic",
+      "prerequisites": [
+        { "concept_id": "subtraction.within_10", "edge_type": "hard_prereq", "min_mastery": "practising" },
+        { "concept_id": "place_value.tens_ones", "edge_type": "soft_prereq", "min_mastery": "introduced" }
+      ]
+    },
+    {
+      "concept_id": "arithmetic.number_bonds",
+      "display_name": "Number Bonds",
+      "description": "Know number bonds to 10 and 20 — part-part-whole relationships",
+      "grade_range": [1, 1],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic",
+      "prerequisites": [
+        { "concept_id": "addition.within_10", "edge_type": "hard_prereq", "min_mastery": "practising" },
+        { "concept_id": "subtraction.within_10", "edge_type": "soft_prereq", "min_mastery": "introduced" }
+      ]
+    },
+    {
+      "concept_id": "arithmetic.doubles",
+      "display_name": "Doubles & Near-Doubles",
+      "description": "Know doubles facts (1+1 to 10+10) and use near-doubles strategy",
+      "grade_range": [1, 1],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic",
+      "prerequisites": [
+        { "concept_id": "addition.within_10", "edge_type": "hard_prereq", "min_mastery": "practising" }
+      ]
+    },
+    {
+      "concept_id": "arithmetic.fact_families",
+      "display_name": "Fact Families",
+      "description": "Understand the relationship between addition and subtraction using fact families",
+      "grade_range": [1, 1],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic",
+      "prerequisites": [
+        { "concept_id": "addition.within_10", "edge_type": "hard_prereq", "min_mastery": "practising" },
+        { "concept_id": "subtraction.within_10", "edge_type": "hard_prereq", "min_mastery": "practising" }
+      ]
+    },
+    {
+      "concept_id": "arithmetic.missing_number",
+      "display_name": "Missing Number Problems",
+      "description": "Find the missing addend, subtrahend, or minuend in an equation",
+      "grade_range": [1, 1],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic",
+      "prerequisites": [
+        { "concept_id": "arithmetic.number_bonds", "edge_type": "soft_prereq", "min_mastery": "practising" },
+        { "concept_id": "arithmetic.fact_families", "edge_type": "soft_prereq", "min_mastery": "introduced" }
+      ]
+    },
+    {
+      "concept_id": "arithmetic.word_problems",
+      "display_name": "Word Problems (Add & Subtract)",
+      "description": "Solve addition and subtraction word problems with real-world contexts",
+      "grade_range": [1, 1],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic",
+      "prerequisites": [
+        { "concept_id": "addition.within_10", "edge_type": "hard_prereq", "min_mastery": "practising" },
+        { "concept_id": "subtraction.within_10", "edge_type": "hard_prereq", "min_mastery": "practising" }
+      ]
+    },
+    {
+      "concept_id": "arithmetic.skip_counting",
+      "display_name": "Skip Counting",
+      "description": "Count by 2s, 5s, and 10s forwards and backwards",
+      "grade_range": [1, 1],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic",
+      "prerequisites": [
+        { "concept_id": "counting.cardinality", "edge_type": "hard_prereq", "min_mastery": "practising" }
+      ]
+    },
+    {
+      "concept_id": "arithmetic.sharing",
+      "display_name": "Equal Sharing",
+      "description": "Share objects equally into groups — early division concept",
+      "grade_range": [1, 1],
+      "world_region": "number_island",
+      "topic_branch": "arithmetic",
+      "prerequisites": [
+        { "concept_id": "counting.cardinality", "edge_type": "hard_prereq", "min_mastery": "practising" }
+      ]
+    },
+    {
+      "concept_id": "place_value.tens_ones",
+      "display_name": "Tens and Ones",
+      "description": "Understand that two-digit numbers are composed of tens and ones",
+      "grade_range": [1, 1],
+      "world_region": "number_island",
+      "topic_branch": "place_value",
+      "prerequisites": [
+        { "concept_id": "counting.cardinality", "edge_type": "hard_prereq", "min_mastery": "practising" },
+        { "concept_id": "counting.ten_frame", "edge_type": "soft_prereq", "min_mastery": "introduced" }
+      ]
+    },
+    {
+      "concept_id": "place_value.compose_decompose",
+      "display_name": "Compose & Decompose Numbers",
+      "description": "Break apart and put together two-digit numbers using tens and ones",
+      "grade_range": [1, 1],
+      "world_region": "number_island",
+      "topic_branch": "place_value",
+      "prerequisites": [
+        { "concept_id": "place_value.tens_ones", "edge_type": "hard_prereq", "min_mastery": "practising" }
+      ]
+    },
+    {
+      "concept_id": "place_value.compare",
+      "display_name": "Compare Two-Digit Numbers",
+      "description": "Compare two-digit numbers using place value understanding",
+      "grade_range": [1, 1],
+      "world_region": "number_island",
+      "topic_branch": "place_value",
+      "prerequisites": [
+        { "concept_id": "place_value.tens_ones", "edge_type": "hard_prereq", "min_mastery": "practising" },
+        { "concept_id": "comparison.numbers", "edge_type": "soft_prereq", "min_mastery": "introduced" }
+      ]
+    },
+    {
+      "concept_id": "place_value.expanded_form",
+      "display_name": "Expanded Form",
+      "description": "Write numbers in expanded form (e.g. 45 = 40 + 5)",
+      "grade_range": [1, 1],
+      "world_region": "number_island",
+      "topic_branch": "place_value",
+      "prerequisites": [
+        { "concept_id": "place_value.compose_decompose", "edge_type": "hard_prereq", "min_mastery": "practising" }
+      ]
+    },
+    {
+      "concept_id": "place_value.number_words",
+      "display_name": "Number Words",
+      "description": "Read and write number names for numbers up to 99",
+      "grade_range": [1, 1],
+      "world_region": "number_island",
+      "topic_branch": "place_value",
+      "prerequisites": [
+        { "concept_id": "place_value.tens_ones", "edge_type": "soft_prereq", "min_mastery": "practising" }
+      ]
+    },
+    {
+      "concept_id": "shapes.2d_identify",
+      "display_name": "2D Shapes",
+      "description": "Identify and name basic 2D shapes: circle, triangle, square, rectangle",
+      "grade_range": [1, 1],
+      "world_region": "shape_forest",
+      "topic_branch": "geometry",
+      "prerequisites": []
+    },
+    {
+      "concept_id": "shapes.attributes",
+      "display_name": "Shape Attributes",
+      "description": "Describe shapes by number of sides, corners, and other properties",
+      "grade_range": [1, 1],
+      "world_region": "shape_forest",
+      "topic_branch": "geometry",
+      "prerequisites": [
+        { "concept_id": "shapes.2d_identify", "edge_type": "hard_prereq", "min_mastery": "practising" },
+        { "concept_id": "counting.cardinality", "edge_type": "soft_prereq", "min_mastery": "practising" }
+      ]
+    },
+    {
+      "concept_id": "shapes.symmetry",
+      "display_name": "Symmetry",
+      "description": "Identify lines of symmetry and complete symmetrical shapes",
+      "grade_range": [1, 1],
+      "world_region": "shape_forest",
+      "topic_branch": "geometry",
+      "prerequisites": [
+        { "concept_id": "shapes.2d_identify", "edge_type": "hard_prereq", "min_mastery": "practising" }
+      ]
+    },
+    {
+      "concept_id": "shapes.compose",
+      "display_name": "Compose & Partition Shapes",
+      "description": "Put shapes together and split shapes into halves and quarters",
+      "grade_range": [1, 1],
+      "world_region": "shape_forest",
+      "topic_branch": "geometry",
+      "prerequisites": [
+        { "concept_id": "shapes.2d_identify", "edge_type": "hard_prereq", "min_mastery": "practising" }
+      ]
+    },
+    {
+      "concept_id": "time.oclock",
+      "display_name": "O'Clock Times",
+      "description": "Read and show times to the hour on analog and digital clocks",
+      "grade_range": [1, 1],
+      "world_region": "measure_meadow",
+      "topic_branch": "measurement",
+      "prerequisites": [
+        { "concept_id": "counting.cardinality", "edge_type": "soft_prereq", "min_mastery": "practising" }
+      ]
+    },
+    {
+      "concept_id": "time.half_past",
+      "display_name": "Half Past Times",
+      "description": "Read and show times to the half hour on analog and digital clocks",
+      "grade_range": [1, 1],
+      "world_region": "measure_meadow",
+      "topic_branch": "measurement",
+      "prerequisites": [
+        { "concept_id": "time.oclock", "edge_type": "hard_prereq", "min_mastery": "practising" }
+      ]
+    },
+    {
+      "concept_id": "time.daily_routine",
+      "display_name": "Daily Routine & Time Sense",
+      "description": "Relate everyday activities to times of day, sequence daily events",
+      "grade_range": [1, 1],
+      "world_region": "measure_meadow",
+      "topic_branch": "measurement",
+      "prerequisites": [
+        { "concept_id": "time.oclock", "edge_type": "soft_prereq", "min_mastery": "introduced" }
+      ]
+    },
+    {
+      "concept_id": "time.elapsed",
+      "display_name": "Elapsed Time",
+      "description": "Find how much time passes between two events in whole hours",
+      "grade_range": [1, 1],
+      "world_region": "measure_meadow",
+      "topic_branch": "measurement",
+      "prerequisites": [
+        { "concept_id": "time.oclock", "edge_type": "hard_prereq", "min_mastery": "practising" },
+        { "concept_id": "subtraction.within_10", "edge_type": "soft_prereq", "min_mastery": "introduced" }
+      ]
+    },
+    {
+      "concept_id": "time.sequence_events",
+      "display_name": "Sequence Events",
+      "description": "Order events chronologically using before, after, first, next, last",
+      "grade_range": [1, 1],
+      "world_region": "measure_meadow",
+      "topic_branch": "measurement",
+      "prerequisites": [
+        { "concept_id": "counting.ordinal", "edge_type": "soft_prereq", "min_mastery": "introduced" }
+      ]
+    },
+    {
+      "concept_id": "money.identify_coins",
+      "display_name": "Identify Coins",
+      "description": "Recognise Indian coins (₹1, ₹2, ₹5, ₹10) by appearance and value",
+      "grade_range": [1, 1],
+      "world_region": "market_town",
+      "topic_branch": "measurement",
+      "prerequisites": [
+        { "concept_id": "counting.cardinality", "edge_type": "soft_prereq", "min_mastery": "practising" }
+      ]
+    },
+    {
+      "concept_id": "money.count_coins",
+      "display_name": "Count Coins",
+      "description": "Count the total value of a set of coins",
+      "grade_range": [1, 1],
+      "world_region": "market_town",
+      "topic_branch": "measurement",
+      "prerequisites": [
+        { "concept_id": "money.identify_coins", "edge_type": "hard_prereq", "min_mastery": "practising" },
+        { "concept_id": "addition.within_10", "edge_type": "soft_prereq", "min_mastery": "practising" }
+      ]
+    },
+    {
+      "concept_id": "money.shopping",
+      "display_name": "Simple Shopping",
+      "description": "Solve shopping problems: enough to buy, make change, compare prices",
+      "grade_range": [1, 1],
+      "world_region": "market_town",
+      "topic_branch": "measurement",
+      "prerequisites": [
+        { "concept_id": "money.count_coins", "edge_type": "hard_prereq", "min_mastery": "practising" },
+        { "concept_id": "subtraction.within_10", "edge_type": "soft_prereq", "min_mastery": "practising" }
+      ]
+    },
+    {
+      "concept_id": "money.notes_coins",
+      "display_name": "Notes and Coins",
+      "description": "Work with Indian notes (₹10, ₹20, ₹50) alongside coins",
+      "grade_range": [1, 1],
+      "world_region": "market_town",
+      "topic_branch": "measurement",
+      "prerequisites": [
+        { "concept_id": "money.count_coins", "edge_type": "hard_prereq", "min_mastery": "practising" },
+        { "concept_id": "place_value.tens_ones", "edge_type": "soft_prereq", "min_mastery": "introduced" }
+      ]
+    },
+    {
+      "concept_id": "patterns.repeating",
+      "display_name": "Repeating Patterns",
+      "description": "Identify, extend and create repeating patterns (AB, ABB, ABC)",
+      "grade_range": [1, 1],
+      "world_region": "pattern_park",
+      "topic_branch": "algebra",
+      "prerequisites": [
+        { "concept_id": "counting.cardinality", "edge_type": "soft_prereq", "min_mastery": "practising" }
+      ]
+    },
+    {
+      "concept_id": "patterns.growing",
+      "display_name": "Growing Patterns",
+      "description": "Recognise and extend patterns that increase by a fixed amount",
+      "grade_range": [1, 1],
+      "world_region": "pattern_park",
+      "topic_branch": "algebra",
+      "prerequisites": [
+        { "concept_id": "patterns.repeating", "edge_type": "hard_prereq", "min_mastery": "practising" },
+        { "concept_id": "addition.within_10", "edge_type": "soft_prereq", "min_mastery": "practising" }
+      ]
+    },
+    {
+      "concept_id": "patterns.number_patterns",
+      "display_name": "Number Patterns",
+      "description": "Identify rules in number sequences (count by 2s, 5s, 10s; odd/even)",
+      "grade_range": [1, 1],
+      "world_region": "pattern_park",
+      "topic_branch": "algebra",
+      "prerequisites": [
+        { "concept_id": "patterns.repeating", "edge_type": "soft_prereq", "min_mastery": "practising" },
+        { "concept_id": "arithmetic.skip_counting", "edge_type": "soft_prereq", "min_mastery": "introduced" }
+      ]
+    },
+    {
+      "concept_id": "comparison.objects",
+      "display_name": "Compare Groups of Objects",
+      "description": "Compare groups using more, fewer, same — one-to-one matching",
+      "grade_range": [1, 1],
+      "world_region": "number_island",
+      "topic_branch": "number_sense",
+      "prerequisites": [
+        { "concept_id": "counting.cardinality", "edge_type": "soft_prereq", "min_mastery": "practising" }
+      ]
+    },
+    {
+      "concept_id": "comparison.numbers",
+      "display_name": "Compare Numbers",
+      "description": "Use >, <, = symbols to compare one- and two-digit numbers",
+      "grade_range": [1, 1],
+      "world_region": "number_island",
+      "topic_branch": "number_sense",
+      "prerequisites": [
+        { "concept_id": "comparison.objects", "edge_type": "soft_prereq", "min_mastery": "practising" },
+        { "concept_id": "counting.cardinality", "edge_type": "hard_prereq", "min_mastery": "practising" }
+      ]
+    },
+    {
+      "concept_id": "comparison.ordering",
+      "display_name": "Order Numbers",
+      "description": "Arrange numbers from least to greatest and greatest to least",
+      "grade_range": [1, 1],
+      "world_region": "number_island",
+      "topic_branch": "number_sense",
+      "prerequisites": [
+        { "concept_id": "comparison.numbers", "edge_type": "hard_prereq", "min_mastery": "practising" }
+      ]
+    },
+    {
+      "concept_id": "comparison.number_line",
+      "display_name": "Number Line Comparison",
+      "description": "Use a number line to compare and order numbers, find numbers between",
+      "grade_range": [1, 1],
+      "world_region": "number_island",
+      "topic_branch": "number_sense",
+      "prerequisites": [
+        { "concept_id": "comparison.numbers", "edge_type": "soft_prereq", "min_mastery": "practising" }
+      ]
+    },
+    {
+      "concept_id": "measurement.length_compare",
+      "display_name": "Comparing Lengths",
+      "description": "Compare objects by length using direct comparison and non-standard units",
+      "grade_range": [1, 1],
+      "world_region": "measure_meadow",
+      "topic_branch": "measurement",
+      "prerequisites": [
+        { "concept_id": "counting.cardinality", "edge_type": "soft_prereq", "min_mastery": "practising" }
+      ]
+    }
+  ]
+}

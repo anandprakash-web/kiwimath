@@ -15,22 +15,30 @@ class SignInScreen extends StatefulWidget {
   State<SignInScreen> createState() => _SignInScreenState();
 }
 
-enum _Mode { signIn, signUp }
+enum _Mode { signIn, signUp, phone }
 
 class _SignInScreenState extends State<SignInScreen> {
   final AuthService _auth = AuthService();
   final _formKey = GlobalKey<FormState>();
   final _emailCtrl = TextEditingController();
   final _passwordCtrl = TextEditingController();
+  final _phoneCtrl = TextEditingController();
+  final _otpCtrl = TextEditingController();
 
   _Mode _mode = _Mode.signIn;
   bool _busy = false;
   String? _errorMessage;
 
+  // Phone OTP state
+  String? _verificationId;
+  bool _otpSent = false;
+
   @override
   void dispose() {
     _emailCtrl.dispose();
     _passwordCtrl.dispose();
+    _phoneCtrl.dispose();
+    _otpCtrl.dispose();
     super.dispose();
   }
 
@@ -81,6 +89,69 @@ class _SignInScreenState extends State<SignInScreen> {
     }
   }
 
+  Future<void> _sendOtp() async {
+    if (_busy) return;
+    final phone = _phoneCtrl.text.trim();
+    if (phone.isEmpty) {
+      setState(() => _errorMessage = 'Enter your phone number.');
+      return;
+    }
+    // Auto-add +91 if no country code
+    final fullPhone = phone.startsWith('+') ? phone : '+91$phone';
+    setState(() {
+      _busy = true;
+      _errorMessage = null;
+    });
+    await _auth.sendOtp(
+      phoneNumber: fullPhone,
+      onCodeSent: (verificationId) {
+        if (mounted) {
+          setState(() {
+            _verificationId = verificationId;
+            _otpSent = true;
+            _busy = false;
+          });
+        }
+      },
+      onAutoVerified: (user) {
+        // Auto-verified on Android — AuthWrapper handles navigation.
+        if (mounted) setState(() => _busy = false);
+      },
+      onError: (message) {
+        if (mounted) {
+          setState(() {
+            _errorMessage = message;
+            _busy = false;
+          });
+        }
+      },
+    );
+  }
+
+  Future<void> _verifyOtp() async {
+    if (_busy || _verificationId == null) return;
+    final code = _otpCtrl.text.trim();
+    if (code.length != 6) {
+      setState(() => _errorMessage = 'Enter the 6-digit code.');
+      return;
+    }
+    setState(() {
+      _busy = true;
+      _errorMessage = null;
+    });
+    try {
+      await _auth.verifyOtp(
+        verificationId: _verificationId!,
+        smsCode: code,
+      );
+      // AuthWrapper handles navigation.
+    } catch (e) {
+      if (mounted) setState(() => _errorMessage = AuthService.humanMessage(e));
+    } finally {
+      if (mounted) setState(() => _busy = false);
+    }
+  }
+
   Future<void> _resetPassword() async {
     final email = _emailCtrl.text.trim();
     if (email.isEmpty) {
@@ -124,17 +195,22 @@ class _SignInScreenState extends State<SignInScreen> {
                   Text(
                     _mode == _Mode.signIn
                         ? 'Welcome back'
-                        : 'Create a parent account',
+                        : _mode == _Mode.signUp
+                            ? 'Create a parent account'
+                            : 'Sign in with phone',
                     textAlign: TextAlign.center,
                     style: const TextStyle(fontSize: 18, color: Colors.black54),
                   ),
                   const SizedBox(height: 32),
                   _GoogleButton(busy: _busy, onPressed: _signInWithGoogle),
                   const SizedBox(height: 20),
-                  _DividerWithLabel(label: 'or with email'),
+                  const _DividerWithLabel(label: 'or'),
                   const SizedBox(height: 20),
                   _buildModeToggle(),
                   const SizedBox(height: 24),
+                  if (_mode == _Mode.phone)
+                    _buildPhoneForm()
+                  else
                   Form(
                     key: _formKey,
                     child: Column(
@@ -191,26 +267,7 @@ class _SignInScreenState extends State<SignInScreen> {
                           ),
                         if (_errorMessage != null) ...[
                           const SizedBox(height: 4),
-                          Container(
-                            padding: const EdgeInsets.all(12),
-                            decoration: BoxDecoration(
-                              color: const Color(0xFFFFEBEE),
-                              borderRadius: BorderRadius.circular(8),
-                              border: Border.all(color: KiwiColors.wrong),
-                            ),
-                            child: Row(
-                              children: [
-                                const Icon(Icons.error_outline, color: KiwiColors.wrong),
-                                const SizedBox(width: 8),
-                                Expanded(
-                                  child: Text(
-                                    _errorMessage!,
-                                    style: const TextStyle(color: KiwiColors.wrong),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
+                          _buildErrorBox(),
                         ],
                         const SizedBox(height: 16),
                         ElevatedButton(
@@ -245,6 +302,94 @@ class _SignInScreenState extends State<SignInScreen> {
     );
   }
 
+  Widget _buildPhoneForm() {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        TextFormField(
+          controller: _phoneCtrl,
+          keyboardType: TextInputType.phone,
+          textInputAction: _otpSent ? TextInputAction.next : TextInputAction.done,
+          decoration: InputDecoration(
+            labelText: 'Phone number',
+            hintText: '9876543210',
+            prefixIcon: const Icon(Icons.phone_outlined),
+            prefixText: '+91 ',
+            border: const OutlineInputBorder(),
+            enabled: !_otpSent,
+          ),
+        ),
+        if (_otpSent) ...[
+          const SizedBox(height: 16),
+          TextFormField(
+            controller: _otpCtrl,
+            keyboardType: TextInputType.number,
+            textInputAction: TextInputAction.done,
+            maxLength: 6,
+            onFieldSubmitted: (_) => _verifyOtp(),
+            decoration: const InputDecoration(
+              labelText: 'OTP Code',
+              hintText: '123456',
+              prefixIcon: Icon(Icons.sms_outlined),
+              border: OutlineInputBorder(),
+              counterText: '',
+            ),
+          ),
+        ],
+        if (_errorMessage != null) ...[
+          const SizedBox(height: 8),
+          _buildErrorBox(),
+        ],
+        const SizedBox(height: 16),
+        ElevatedButton(
+          onPressed: _busy ? null : (_otpSent ? _verifyOtp : _sendOtp),
+          child: _busy
+              ? const SizedBox(
+                  height: 20,
+                  width: 20,
+                  child: CircularProgressIndicator(strokeWidth: 2, color: Colors.white),
+                )
+              : Text(_otpSent ? 'Verify OTP' : 'Send OTP'),
+        ),
+        if (_otpSent)
+          TextButton(
+            onPressed: _busy ? null : () {
+              setState(() {
+                _otpSent = false;
+                _verificationId = null;
+                _otpCtrl.clear();
+                _errorMessage = null;
+              });
+            },
+            child: const Text('Change number'),
+          ),
+      ],
+    );
+  }
+
+  Widget _buildErrorBox() {
+    return Container(
+      padding: const EdgeInsets.all(12),
+      decoration: BoxDecoration(
+        color: const Color(0xFFFFEBEE),
+        borderRadius: BorderRadius.circular(8),
+        border: Border.all(color: KiwiColors.wrong),
+      ),
+      child: Row(
+        children: [
+          const Icon(Icons.error_outline, color: KiwiColors.wrong),
+          const SizedBox(width: 8),
+          Expanded(
+            child: Text(
+              _errorMessage!,
+              style: const TextStyle(color: KiwiColors.wrong),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
   Widget _buildModeToggle() {
     return Container(
       decoration: BoxDecoration(
@@ -256,6 +401,7 @@ class _SignInScreenState extends State<SignInScreen> {
         children: [
           Expanded(child: _toggleButton(_Mode.signIn, 'Sign in')),
           Expanded(child: _toggleButton(_Mode.signUp, 'Sign up')),
+          Expanded(child: _toggleButton(_Mode.phone, 'Phone')),
         ],
       ),
     );
@@ -271,6 +417,8 @@ class _SignInScreenState extends State<SignInScreen> {
           : () => setState(() {
                 _mode = target;
                 _errorMessage = null;
+                _otpSent = false;
+                _verificationId = null;
               }),
       child: Container(
         padding: const EdgeInsets.symmetric(vertical: 12),
