@@ -1,0 +1,42 @@
+{
+  "id": "G1-COUNT-085-S2",
+  "grade": 1,
+  "topic": "counting_observation",
+  "subtopic": "scaffolded_step_down",
+  "subskills": [
+    "process_of_elimination"
+  ],
+  "difficulty": 4,
+  "tier": "challenge",
+  "parent_id": "G1-COUNT-085",
+  "step_index": 2,
+  "stem_template": "{name_1} can't have the cat and can't have the fish. What's left?",
+  "visual": null,
+  "answer_type": "multiple_choice",
+  "params": {
+    "name_1": {
+      "pool": [
+        "Aarav"
+      ]
+    }
+  },
+  "answer_formula": "'dog'",
+  "distractors": [
+    {
+      "formula": "'cat'",
+      "label": "wrong"
+    },
+    {
+      "formula": "'fish'",
+      "label": "wrong_too"
+    }
+  ],
+  "misconceptions": [],
+  "tags": [
+    "step_down"
+  ],
+  "est_time_seconds": 15,
+  "version": 1,
+  "author": "AP",
+  "status": "draft"
+}

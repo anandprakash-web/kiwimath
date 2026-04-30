@@ -1,0 +1,36 @@
+{
+  "id": "G1-COUNT-082-S1",
+  "grade": 1,
+  "topic": "counting_observation",
+  "subtopic": "scaffolded_step_down",
+  "subskills": [
+    "logical_deduction"
+  ],
+  "difficulty": 4,
+  "tier": "challenge",
+  "parent_id": "G1-COUNT-082",
+  "step_index": 1,
+  "stem_template": "A bag has red and blue sweets. You pull out 1 red, then 1 blue. Do you have a matching pair yet?",
+  "visual": null,
+  "answer_type": "multiple_choice",
+  "params": {},
+  "answer_formula": "'No'",
+  "distractors": [
+    {
+      "formula": "'Yes'",
+      "label": "wrong"
+    },
+    {
+      "formula": "'Maybe'",
+      "label": "uncertain"
+    }
+  ],
+  "misconceptions": [],
+  "tags": [
+    "step_down"
+  ],
+  "est_time_seconds": 15,
+  "version": 1,
+  "author": "AP",
+  "status": "draft"
+}

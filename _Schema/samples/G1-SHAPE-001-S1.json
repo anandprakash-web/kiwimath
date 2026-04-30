@@ -1,0 +1,34 @@
+{
+  "id": "G1-SHAPE-001-S1",
+  "grade": 1,
+  "topic": "shapes_folding_symmetry",
+  "subtopic": "scaffolded_step_down",
+  "subskills": ["guided_shape_recognition"],
+  "difficulty": 1,
+  "tier": "warmup",
+  "parent_id": "G1-SHAPE-001",
+  "step_index": 1,
+  "stem_template": "Count the sides of this shape. How many sides does it have?",
+  "visual": null,
+  "answer_type": "multiple_choice",
+  "params": {
+    "shape": {"pool": ["triangle", "square"]},
+    "N":     {"pool": [3, 4]}
+  },
+  "derived": {},
+  "answer_formula": "N",
+  "distractors": [
+    {"formula": "N+1", "label": "over_count"},
+    {"formula": "N-1", "label": "under_count"}
+  ],
+  "misconceptions": [],
+  "visual_manifest": {
+    "art_brief": "A single large {shape} with each side highlighted in a different colour to help counting.",
+    "alt_text": "A {shape} with coloured sides."
+  },
+  "tags": ["step_down"],
+  "est_time_seconds": 15,
+  "version": 1,
+  "author": "acad-v2",
+  "status": "approved"
+}

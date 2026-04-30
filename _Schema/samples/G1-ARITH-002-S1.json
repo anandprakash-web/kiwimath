@@ -1,0 +1,35 @@
+{
+  "id": "G1-ARITH-002-S1",
+  "grade": 1,
+  "topic": "arithmetic_missing_numbers",
+  "subtopic": "scaffolded_step_down",
+  "subskills": ["guided_subtraction"],
+  "difficulty": 1,
+  "tier": "warmup",
+  "parent_id": "G1-ARITH-002",
+  "step_index": 1,
+  "stem_template": "There are {N} {object}. Cross out {K}. How many are left?",
+  "visual": null,
+  "answer_type": "multiple_choice",
+  "params": {
+    "N":      {"range": [3, 7]},
+    "K":      {"range": [1, 3], "constraint": "K<N"},
+    "object": {"pool": ["apples", "marbles", "stickers"]}
+  },
+  "derived": {},
+  "answer_formula": "N-K",
+  "distractors": [
+    {"formula": "N",     "label": "forgot_to_subtract"},
+    {"formula": "N-K+1", "label": "off_by_one"}
+  ],
+  "misconceptions": [],
+  "visual_manifest": {
+    "art_brief": "{N} {object} in a row with {K} of them crossed out. Clear and easy to count the remaining.",
+    "alt_text": "{N} {object} with {K} crossed out."
+  },
+  "tags": ["step_down"],
+  "est_time_seconds": 15,
+  "version": 1,
+  "author": "acad-v2",
+  "status": "approved"
+}

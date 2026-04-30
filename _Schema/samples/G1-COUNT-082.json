@@ -1,0 +1,114 @@
+{
+  "id": "G1-COUNT-082",
+  "grade": 1,
+  "topic": "counting_observation",
+  "subtopic": "pigeonhole_reasoning",
+  "subskills": [
+    "logical_deduction",
+    "worst_case_reasoning"
+  ],
+  "difficulty": 5,
+  "tier": "challenge",
+  "source_inspiration": "IMO seed \u2014 pigeonhole principle for young learners",
+  "pedagogy": "exploration",
+  "stem_template": "A bag has {R} red sweets and {B} blue sweets. {name} reaches in WITHOUT looking. What is the smallest number of sweets {name} must take to be SURE of having 2 the same colour?",
+  "answer_type": "multiple_choice",
+  "interaction": {
+    "type": "multiple_choice",
+    "fallback_type": "multiple_choice"
+  },
+  "visual": null,
+  "visual_manifest": {
+    "art_brief": "A cloth bag with a question mark on it. Beside it, {R} red sweets and {B} blue sweets are shown outside the bag for reference. {name} reaches in with one hand.",
+    "alt_text": "A bag containing red and blue sweets.",
+    "style": "warm_cartoon",
+    "layout_hint": "centered",
+    "visual_type": "illustration"
+  },
+  "params": {
+    "R": {
+      "range": [
+        3,
+        5
+      ]
+    },
+    "B": {
+      "range": [
+        3,
+        5
+      ]
+    },
+    "name": {
+      "pool": [
+        "Aarav",
+        "Mei",
+        "Sofia",
+        "Kofi"
+      ]
+    }
+  },
+  "derived": {},
+  "answer_formula": "3",
+  "distractors": [
+    {
+      "formula": "2",
+      "label": "best_case"
+    },
+    {
+      "formula": "4",
+      "label": "one_extra"
+    },
+    {
+      "formula": "R + B",
+      "label": "took_all"
+    }
+  ],
+  "misconceptions": [
+    {
+      "trigger_answer": "2",
+      "diagnosis": "assumed_best_case",
+      "feedback_child": "2 MIGHT work \u2014 but what if you get 1 red and 1 blue? Not sure yet!",
+      "step_down_path": [
+        "G1-COUNT-082-S1",
+        "G1-COUNT-082-S2"
+      ]
+    },
+    {
+      "trigger_answer": "4",
+      "diagnosis": "overcounted_worst_case",
+      "feedback_child": "Worst case: 1 red, 1 blue = 2 colours. The 3rd MUST match one!",
+      "step_down_path": [
+        "G1-COUNT-082-S1"
+      ]
+    },
+    {
+      "trigger_answer": "R + B",
+      "diagnosis": "took_everything",
+      "feedback_child": "You don't need them all! With 2 colours, the 3rd sweet must match.",
+      "step_down_path": [
+        "G1-COUNT-082-S1",
+        "G1-COUNT-082-S2"
+      ]
+    }
+  ],
+  "socratic_feedback": {
+    "on_correct": "Brilliant! With 2 colours, the 3rd pick MUST match one. That's clever thinking!",
+    "generic_incorrect": "Imagine the worst luck: 1st pick is red, 2nd is blue. What MUST the 3rd one be?",
+    "encouragement_after_retry": "Think: with only 2 colour choices, how many picks before one repeats?"
+  },
+  "curriculum_alignment": {
+    "cambridge_stage": 2,
+    "kangaroo_level": "Felix",
+    "olympiad_skill": "Pigeonhole Principle / Worst-case Reasoning",
+    "reference": "IMO combinatorics seed"
+  },
+  "tags": [
+    "topic:counting",
+    "skill:pigeonhole",
+    "level:olympiad_foundation"
+  ],
+  "est_time_seconds": 50,
+  "version": 1,
+  "author": "AP",
+  "status": "draft"
+}

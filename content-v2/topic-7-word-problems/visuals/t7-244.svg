@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <rect width="200" height="200" fill="#f0f4f8" rx="12"/>
+  <text x="100" y="30" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#333">Word Problem</text>
+  <rect x="20" y="60" width="55" height="55" rx="10" fill="#FF6B6B" stroke="#333" stroke-width="1.5"/>
+  <text x="47" y="95" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" font-weight="bold" fill="#333">12</text>
+  <text x="90" y="95" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" font-weight="bold" fill="#555">+</text>
+  <rect x="105" y="60" width="55" height="55" rx="10" fill="#45B7D1" stroke="#333" stroke-width="1.5"/>
+  <text x="132" y="95" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" font-weight="bold" fill="#333">3</text>
+  <text x="100" y="150" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="bold" fill="#555">= ?</text>
+</svg>

@@ -1,0 +1,11 @@
+<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <rect x="160" y="60" width="80" height="80" fill="#eef" stroke="#99c" stroke-width="2" rx="4"/>
+  <g transform="translate(200,100)">
+    <line x1="0" y1="0" x2="0" y2="-30" stroke="#3498db" stroke-width="3"/>
+    <polygon points="-6,-25 0,-35 6,-25" fill="#3498db"/>
+  </g>
+  <g transform="translate(200,100) rotate(360)">
+    <line x1="0" y1="0" x2="0" y2="-30" stroke="#e74c3c" stroke-width="3" stroke-dasharray="4,2"/>
+    <polygon points="-6,-25 0,-35 6,-25" fill="#e74c3c"/>
+  </g>
+</svg>

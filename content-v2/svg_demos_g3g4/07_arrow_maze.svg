@@ -1,0 +1,29 @@
+<svg viewBox="0 0 400 350" xmlns="http://www.w3.org/2000/svg">
+  <rect x="110" y="107" width="45" height="45" fill="#D5F5E3" stroke="#BDC3C7" stroke-width="1"/>
+  <text x="132" y="136" text-anchor="middle" font-family="system-ui" font-size="20" fill="#2C3E50" font-weight="bold">→</text>
+  <rect x="155" y="107" width="45" height="45" fill="#FFFFFF" stroke="#BDC3C7" stroke-width="1"/>
+  <text x="177" y="136" text-anchor="middle" font-family="system-ui" font-size="20" fill="#2C3E50" font-weight="bold">↓</text>
+  <rect x="200" y="107" width="45" height="45" fill="#FFFFFF" stroke="#BDC3C7" stroke-width="1"/>
+  <text x="222" y="136" text-anchor="middle" font-family="system-ui" font-size="20" fill="#2C3E50" font-weight="bold">→</text>
+  <rect x="245" y="107" width="45" height="45" fill="#FFFFFF" stroke="#BDC3C7" stroke-width="1"/>
+  <text x="267" y="136" text-anchor="middle" font-family="system-ui" font-size="20" fill="#2C3E50" font-weight="bold">↓</text>
+  <rect x="110" y="152" width="45" height="45" fill="#FFFFFF" stroke="#BDC3C7" stroke-width="1"/>
+  <text x="132" y="181" text-anchor="middle" font-family="system-ui" font-size="20" fill="#2C3E50" font-weight="bold">↓</text>
+  <rect x="155" y="152" width="45" height="45" fill="#FFFFFF" stroke="#BDC3C7" stroke-width="1"/>
+  <text x="177" y="181" text-anchor="middle" font-family="system-ui" font-size="20" fill="#2C3E50" font-weight="bold">→</text>
+  <rect x="200" y="152" width="45" height="45" fill="#FFFFFF" stroke="#BDC3C7" stroke-width="1"/>
+  <text x="222" y="181" text-anchor="middle" font-family="system-ui" font-size="20" fill="#2C3E50" font-weight="bold">↓</text>
+  <rect x="245" y="152" width="45" height="45" fill="#FFFFFF" stroke="#BDC3C7" stroke-width="1"/>
+  <text x="267" y="181" text-anchor="middle" font-family="system-ui" font-size="20" fill="#2C3E50" font-weight="bold">↓</text>
+  <rect x="110" y="197" width="45" height="45" fill="#FFFFFF" stroke="#BDC3C7" stroke-width="1"/>
+  <text x="132" y="226" text-anchor="middle" font-family="system-ui" font-size="20" fill="#2C3E50" font-weight="bold">→</text>
+  <rect x="155" y="197" width="45" height="45" fill="#FFFFFF" stroke="#BDC3C7" stroke-width="1"/>
+  <text x="177" y="226" text-anchor="middle" font-family="system-ui" font-size="20" fill="#2C3E50" font-weight="bold">→</text>
+  <rect x="200" y="197" width="45" height="45" fill="#FFFFFF" stroke="#BDC3C7" stroke-width="1"/>
+  <text x="222" y="226" text-anchor="middle" font-family="system-ui" font-size="20" fill="#2C3E50" font-weight="bold">→</text>
+  <rect x="245" y="197" width="45" height="45" fill="#FADBD8" stroke="#BDC3C7" stroke-width="1"/>
+  <text x="267" y="226" text-anchor="middle" font-family="system-ui" font-size="20" fill="#2C3E50" font-weight="bold">→</text>
+  <text x="132" y="102" text-anchor="middle" font-family="system-ui" font-size="10" fill="#27AE60" font-weight="bold">START</text>
+  <text x="267" y="192" text-anchor="middle" font-family="system-ui" font-size="10" fill="#E74C3C" font-weight="bold">END</text>
+  <rect x="110" y="107" width="180" height="135" fill="none" stroke="#2C3E50" stroke-width="2"/>
+</svg>

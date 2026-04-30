@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <rect width="200" height="200" fill="#f0f4f8" rx="12"/>
+  <text x="100" y="30" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="bold" fill="#333">Shape Challenge</text>
+  <polygon points="62.5,75.625 38.125,124.375 86.875,124.375" fill="#FF6B6B" stroke="#333" stroke-width="1.5"/>
+  <text x="62.5" y="138.375" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#555">Triangle</text>
+  <rect x="113.125" y="75.625" width="48.75" height="48.75" fill="#4ECDC4" stroke="#333" stroke-width="1.5" rx="3"/>
+  <text x="137.5" y="138.375" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#555">Square</text>
+</svg>

@@ -1,0 +1,118 @@
+{
+  "id": "G1-COUNT-053",
+  "grade": 1,
+  "topic": "counting_observation",
+  "subtopic": "ten_frame_counting",
+  "subskills": [
+    "one_to_one_correspondence",
+    "ten_frame_fluency"
+  ],
+  "difficulty": 1,
+  "tier": "warmup",
+  "source_inspiration": "US Common Core K.CC.B.5 \u2014 ten-frame",
+  "pedagogy": "cpa_concrete",
+  "stem_template": "How many {object} are in the ten-frame?",
+  "answer_type": "multiple_choice",
+  "interaction": {
+    "type": "tap_to_count",
+    "target_formula": "N",
+    "tap_targets": "object",
+    "fallback_type": "multiple_choice"
+  },
+  "visual": {
+    "type": "svg_generator",
+    "generator": "ten_frame",
+    "params": {
+      "filled": "{N}",
+      "object": "{object}"
+    }
+  },
+  "visual_manifest": {
+    "art_brief": "A 2\u00d75 ten-frame grid. {N} cells contain a bright {object}; the remaining cells are empty. Objects should be placed left-to-right, top row first.",
+    "alt_text": "A ten-frame with {N} {object}.",
+    "style": "warm_cartoon",
+    "layout_hint": "grid",
+    "visual_type": "illustration"
+  },
+  "params": {
+    "N": {
+      "range": [
+        3,
+        8
+      ]
+    },
+    "object": {
+      "pool": [
+        "stars",
+        "hearts",
+        "smiley faces",
+        "flowers"
+      ]
+    }
+  },
+  "derived": {},
+  "answer_formula": "N",
+  "distractors": [
+    {
+      "formula": "N + 1",
+      "label": "counted_empty_cell"
+    },
+    {
+      "formula": "N - 1",
+      "label": "missed_one"
+    },
+    {
+      "formula": "10 - N",
+      "label": "counted_empties"
+    }
+  ],
+  "misconceptions": [
+    {
+      "trigger_answer": "N + 1",
+      "diagnosis": "counted_empty_as_filled",
+      "feedback_child": "That empty cell doesn't have a {object} in it! Only count the filled ones.",
+      "step_down_path": [
+        "G1-COUNT-053-S1",
+        "G1-COUNT-053-S2"
+      ]
+    },
+    {
+      "trigger_answer": "N - 1",
+      "diagnosis": "skipped_corner_object",
+      "feedback_child": "Almost! Look at every cell \u2014 did you miss one in the corner?",
+      "step_down_path": [
+        "G1-COUNT-053-S1"
+      ]
+    },
+    {
+      "trigger_answer": "10 - N",
+      "diagnosis": "counted_empties_not_filled",
+      "feedback_child": "You counted the empty cells! We want the ones WITH {object}.",
+      "step_down_path": [
+        "G1-COUNT-053-S1",
+        "G1-COUNT-053-S2"
+      ]
+    }
+  ],
+  "socratic_feedback": {
+    "on_correct": "You counted {N} {object}! The ten-frame helped, didn't it?",
+    "on_under_count": "Keep going! There might be one more hiding in the grid.",
+    "on_over_count": "Some cells are empty \u2014 only count the ones with {object} inside.",
+    "encouragement_after_retry": "Try going row by row: top first, then bottom."
+  },
+  "curriculum_alignment": {
+    "common_core": "K.CC.B.5",
+    "cambridge_stage": 1,
+    "cambridge_strand": "Number: Counting",
+    "singapore_strand": "Whole Numbers"
+  },
+  "tags": [
+    "topic:counting",
+    "skill:ten_frame",
+    "cpa:concrete"
+  ],
+  "est_time_seconds": 20,
+  "version": 1,
+  "author": "AP",
+  "status": "draft"
+}

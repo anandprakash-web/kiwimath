@@ -1,0 +1,6 @@
+<svg viewBox="0 0 170 140" xmlns="http://www.w3.org/2000/svg" font-family="system-ui">
+<rect x="30" y="20" width="90" height="90" fill="#FFF9C4" stroke="#2C3E50" stroke-width="2"/>
+<line x1="30" y1="20" x2="120" y2="110" stroke="#FF6B6B" stroke-width="2" stroke-dasharray="5,3"/>
+<text x="85" y="75" text-anchor="middle" font-size="10" fill="#FF6B6B" transform="rotate(45,85,75)">fold</text>
+<text x="75" y="130" text-anchor="middle" font-size="11" fill="#333">Square folded along diagonal</text>
+</svg>

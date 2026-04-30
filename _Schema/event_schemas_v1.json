@@ -1,0 +1,199 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "kiwimath-events-v1",
+  "title": "Kiwimath Event Schemas v1",
+  "description": "Three events drive the adaptive loop: attempt_recorded, mastery_updated, revisit_due. Machine-readable companion to events.py Pydantic models.",
+
+  "$defs": {
+    "firestoreTimestamp": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 timestamp. In Firestore, stored as server-side Timestamp."
+    },
+    "conceptId": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_.]+$",
+      "examples": ["counting.one_to_one", "addition.within_10", "shapes.2d_basic"]
+    },
+    "userId": {
+      "type": "string",
+      "description": "Opaque user identifier. No PII. COPPA/GDPR-K safe."
+    },
+    "tier": {
+      "type": "string",
+      "enum": ["explorer", "adventurer", "architect"]
+    },
+    "masteryLabel": {
+      "type": "string",
+      "enum": ["new", "familiar", "proficient", "mastered"]
+    },
+    "solutionPath": {
+      "type": "string",
+      "enum": ["direct", "counted_up", "counted_down", "trial_and_error", "used_hint", "unknown"],
+      "description": "How the kid solved it — inferred from tap signature. Extensible by acad cofounder."
+    },
+    "revisitReason": {
+      "type": "string",
+      "enum": ["spaced_repetition", "decay_threshold", "prerequisite_review", "mastery_check"]
+    },
+    "mascotEmotion": {
+      "type": "string",
+      "enum": ["neutral", "thinking", "happy", "encouraging", "celebrating", "waving", "reading"],
+      "description": "Defined emotion set for universal mascot assets. Asset path: /assets/universal/mascot/{companion_id}-{emotion}.svg"
+    },
+    "structuredAnswer": {
+      "type": "object",
+      "required": ["answer_type", "value"],
+      "properties": {
+        "answer_type": {
+          "type": "string",
+          "enum": ["count", "option_index", "option_letter", "ordered_list", "structured"]
+        },
+        "value": {
+          "description": "Typed by answer_type: int for count, string for option, array for ordered_list"
+        },
+        "raw_json": {
+          "type": "object",
+          "description": "Full structured representation if needed"
+        }
+      }
+    },
+    "strategySignals": {
+      "type": "object",
+      "properties": {
+        "manipulable_taps": { "type": "integer", "minimum": 0 },
+        "undo_count": { "type": "integer", "minimum": 0, "default": 0 },
+        "overshoot_count": { "type": "integer", "minimum": 0, "default": 0 },
+        "first_tap_latency_ms": { "type": "integer", "minimum": 0 },
+        "pauses_over_3s_count": { "type": "integer", "minimum": 0, "default": 0 },
+        "solution_path": { "$ref": "#/$defs/solutionPath" },
+        "hint_used": { "type": "boolean", "default": false },
+        "hint_tap_count": { "type": "integer", "minimum": 0, "default": 0 },
+        "audio_replay_count": { "type": "integer", "minimum": 0, "default": 0 }
+      }
+    }
+  },
+
+  "oneOf": [
+    { "$ref": "#/$defs/attemptRecorded" },
+    { "$ref": "#/$defs/masteryUpdated" },
+    { "$ref": "#/$defs/revisitDue" }
+  ],
+
+  "$defs_events": {
+    "attemptRecorded": {
+      "type": "object",
+      "title": "attempt_recorded",
+      "description": "Firestore: users/{userId}/attempts/{attemptId}. Written by CLIENT. attemptId is client UUID for idempotent offline flush.",
+      "required": ["attempt_id", "user_id", "question_id", "concept_id", "session_id", "tier", "is_correct", "answer_given", "correct_answer", "time_taken_ms", "client_timestamp"],
+      "properties": {
+        "attempt_id": { "type": "string", "description": "Client UUID — idempotent on retry" },
+        "user_id": { "$ref": "#/$defs/userId" },
+        "question_id": { "type": "string", "pattern": "^G\\d+-[A-Z]+-\\d{3}(-S\\d)?$" },
+        "concept_id": { "$ref": "#/$defs/conceptId" },
+        "session_id": { "type": "string" },
+        "tier": { "$ref": "#/$defs/tier" },
+        "region": { "type": "string" },
+        "locale": { "type": "string" },
+        "is_correct": { "type": "boolean" },
+        "answer_given": { "$ref": "#/$defs/structuredAnswer" },
+        "correct_answer": { "$ref": "#/$defs/structuredAnswer" },
+        "retry_number": { "type": "integer", "minimum": 0, "maximum": 10, "default": 0 },
+        "time_taken_ms": { "type": "integer", "minimum": 0 },
+        "strategy": { "$ref": "#/$defs/strategySignals" },
+        "client_timestamp": { "$ref": "#/$defs/firestoreTimestamp" },
+        "server_timestamp": { "$ref": "#/$defs/firestoreTimestamp" },
+        "is_offline_flush": { "type": "boolean", "default": false },
+        "offline_queue_position": { "type": "integer", "minimum": 0 }
+      }
+    },
+
+    "masteryUpdated": {
+      "type": "object",
+      "title": "mastery_updated",
+      "description": "Firestore: users/{userId}/mastery/{conceptId}. Written by CLOUD FUNCTION ONLY in transaction. INVARIANT: shown_score = max(prev_shown, floor(internal*100)).",
+      "required": ["user_id", "concept_id", "internal_score", "shown_score", "mastery_label", "last_attempt_id", "last_attempt_correct", "first_attempted_at", "last_attempted_at"],
+      "properties": {
+        "user_id": { "$ref": "#/$defs/userId" },
+        "concept_id": { "$ref": "#/$defs/conceptId" },
+        "internal_score": { "type": "number", "minimum": 0.0, "maximum": 1.0 },
+        "shown_score": { "type": "integer", "minimum": 0, "maximum": 100, "description": "MONOTONIC: max(prev_shown, floor(internal*100))" },
+        "mastery_label": { "$ref": "#/$defs/masteryLabel" },
+        "total_attempts": { "type": "integer", "minimum": 0, "default": 0 },
+        "correct_attempts": { "type": "integer", "minimum": 0, "default": 0 },
+        "streak_current": { "type": "integer", "minimum": 0, "default": 0 },
+        "streak_best": { "type": "integer", "minimum": 0, "default": 0 },
+        "last_attempt_id": { "type": "string" },
+        "last_attempt_correct": { "type": "boolean" },
+        "first_attempted_at": { "$ref": "#/$defs/firestoreTimestamp" },
+        "last_attempted_at": { "$ref": "#/$defs/firestoreTimestamp" },
+        "mastered_at": { "$ref": "#/$defs/firestoreTimestamp" },
+        "review_interval_days": { "type": "integer", "minimum": 1, "maximum": 180 },
+        "next_review_at": { "$ref": "#/$defs/firestoreTimestamp" }
+      }
+    },
+
+    "revisitDue": {
+      "type": "object",
+      "title": "revisit_due",
+      "description": "Firestore: users/{userId}/revisits/{conceptId}. One active revisit per concept. Nudge cap: 3.",
+      "required": ["user_id", "concept_id", "reason", "priority", "current_shown_score", "current_mastery_label", "created_at"],
+      "properties": {
+        "user_id": { "$ref": "#/$defs/userId" },
+        "concept_id": { "$ref": "#/$defs/conceptId" },
+        "reason": { "$ref": "#/$defs/revisitReason" },
+        "priority": { "type": "integer", "minimum": 1, "maximum": 5 },
+        "trigger_attempt_id": { "type": "string" },
+        "is_active": { "type": "boolean", "default": true },
+        "nudge_count": { "type": "integer", "minimum": 0, "maximum": 3, "default": 0 },
+        "last_nudged_at": { "$ref": "#/$defs/firestoreTimestamp" },
+        "current_shown_score": { "type": "integer", "minimum": 0, "maximum": 100 },
+        "current_mastery_label": { "$ref": "#/$defs/masteryLabel" },
+        "decay_from_score": { "type": "integer", "minimum": 0, "maximum": 100 },
+        "created_at": { "$ref": "#/$defs/firestoreTimestamp" },
+        "resolved_at": { "$ref": "#/$defs/firestoreTimestamp" },
+        "expires_at": { "$ref": "#/$defs/firestoreTimestamp" }
+      }
+    }
+  },
+
+  "indexRequirements": [
+    {
+      "collection": "users/{userId}/attempts",
+      "indexes": [
+        { "fields": ["concept_id ASC", "client_timestamp DESC"], "purpose": "Recent attempts for concept" },
+        { "fields": ["session_id ASC", "client_timestamp ASC"], "purpose": "All attempts in session order" },
+        { "fields": ["is_correct ASC", "concept_id ASC"], "purpose": "Wrong attempts by concept" }
+      ]
+    },
+    {
+      "collection": "users/{userId}/mastery",
+      "indexes": [
+        { "fields": ["mastery_label ASC", "last_attempted_at DESC"], "purpose": "Concepts by mastery level" },
+        { "fields": ["next_review_at ASC"], "purpose": "Upcoming reviews" }
+      ]
+    },
+    {
+      "collection": "users/{userId}/revisits",
+      "indexes": [
+        { "fields": ["is_active ASC", "priority ASC"], "purpose": "Active revisits sorted by priority" },
+        { "fields": ["reason ASC", "is_active ASC"], "purpose": "Active revisits by type" }
+      ]
+    }
+  ],
+
+  "securityPrinciples": [
+    "Client can only WRITE to attempts subcollection under their own userId",
+    "Client can only READ mastery and revisits subcollections under their own userId",
+    "mastery and revisits are SERVER-WRITE-ONLY (Cloud Functions)",
+    "No PII in any kid-writable field — userId is opaque, no free-text",
+    "attemptId is client UUID — server validates uniqueness on write"
+  ],
+
+  "offlineStrategy": {
+    "description": "Flutter queues attempts locally when offline. On reconnect, flushes in order with is_offline_flush=true.",
+    "idempotency": "attemptId is client UUID — duplicate writes are no-ops",
+    "ordering": "offline_queue_position preserves attempt order within a session",
+    "staleness": "server_timestamp is set by Firestore trigger, not client — no clock drift issues for mastery computation"
+  }
+}

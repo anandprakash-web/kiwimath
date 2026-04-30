@@ -1,0 +1,9 @@
+<svg viewBox="0 0 140 160" xmlns="http://www.w3.org/2000/svg" font-family="system-ui">
+<rect x="20" y="20" width="100" height="100" rx="12" fill="#FAFAFA" stroke="#2C3E50" stroke-width="2.5"/>
+<circle cx="45" cy="45" r="8" fill="#2C3E50"/>
+<circle cx="95" cy="45" r="8" fill="#2C3E50"/>
+<circle cx="70" cy="70" r="8" fill="#2C3E50"/>
+<circle cx="45" cy="95" r="8" fill="#2C3E50"/>
+<circle cx="95" cy="95" r="8" fill="#2C3E50"/>
+<text x="70" y="145" text-anchor="middle" font-size="12" fill="#333">Top face</text>
+</svg>

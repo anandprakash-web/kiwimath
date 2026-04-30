@@ -1,0 +1,40 @@
+{
+  "id": "G1-COUNT-083-S1",
+  "grade": 1,
+  "topic": "counting_observation",
+  "subtopic": "scaffolded_step_down",
+  "subskills": [
+    "systematic_listing"
+  ],
+  "difficulty": 4,
+  "tier": "challenge",
+  "parent_id": "G1-COUNT-083",
+  "step_index": 1,
+  "stem_template": "If red is first, blue and yellow are left. How many ways to arrange those 2?",
+  "visual": null,
+  "answer_type": "multiple_choice",
+  "params": {},
+  "answer_formula": "2",
+  "distractors": [
+    {
+      "formula": "1",
+      "label": "only_one"
+    },
+    {
+      "formula": "3",
+      "label": "too_many"
+    },
+    {
+      "formula": "4",
+      "label": "way_off"
+    }
+  ],
+  "misconceptions": [],
+  "tags": [
+    "step_down"
+  ],
+  "est_time_seconds": 15,
+  "version": 1,
+  "author": "AP",
+  "status": "draft"
+}

@@ -1,0 +1,95 @@
+{
+  "id": "G1-COUNT-060",
+  "grade": 1,
+  "topic": "counting_observation",
+  "subtopic": "rote_sequence",
+  "subskills": [
+    "stable_order_counting",
+    "number_after"
+  ],
+  "difficulty": 1,
+  "tier": "warmup",
+  "source_inspiration": "Cambridge Nn1 \u2014 recite number names in order",
+  "pedagogy": "cpa_abstract",
+  "stem_template": "What number comes next? {A}, {B}, {C}, __",
+  "answer_type": "multiple_choice",
+  "interaction": {
+    "type": "multiple_choice",
+    "fallback_type": "multiple_choice"
+  },
+  "visual": null,
+  "visual_manifest": null,
+  "params": {
+    "A": {
+      "range": [
+        1,
+        15
+      ]
+    }
+  },
+  "derived": {
+    "B": "A + 1",
+    "C": "A + 2"
+  },
+  "answer_formula": "A + 3",
+  "distractors": [
+    {
+      "formula": "A + 2",
+      "label": "repeated_last"
+    },
+    {
+      "formula": "A + 4",
+      "label": "skipped_one"
+    },
+    {
+      "formula": "A",
+      "label": "went_back"
+    }
+  ],
+  "misconceptions": [
+    {
+      "trigger_answer": "A + 2",
+      "diagnosis": "repeated_last_number",
+      "feedback_child": "That's {C} again! What comes AFTER {C}?",
+      "step_down_path": [
+        "G1-COUNT-060-S1"
+      ]
+    },
+    {
+      "trigger_answer": "A + 4",
+      "diagnosis": "skipped_ahead_one",
+      "feedback_child": "You went one too far! After {C} comes just the next number.",
+      "step_down_path": [
+        "G1-COUNT-060-S1"
+      ]
+    },
+    {
+      "trigger_answer": "A",
+      "diagnosis": "went_backwards",
+      "feedback_child": "We're going forwards, not backwards! Count up from {C}.",
+      "step_down_path": [
+        "G1-COUNT-060-S1"
+      ]
+    }
+  ],
+  "socratic_feedback": {
+    "on_correct": "That's right! The numbers go up by one each time.",
+    "generic_incorrect": "Say the numbers out loud: {A}, {B}, {C}... what's next?",
+    "encouragement_after_retry": "Use your fingers! Count up: {A}, {B}, {C}, and one more..."
+  },
+  "curriculum_alignment": {
+    "common_core": "K.CC.A.1",
+    "cambridge_stage": 1,
+    "cambridge_strand": "Number: Counting",
+    "singapore_strand": "Whole Numbers"
+  },
+  "tags": [
+    "topic:counting",
+    "skill:sequence",
+    "cpa:abstract"
+  ],
+  "est_time_seconds": 15,
+  "version": 1,
+  "author": "AP",
+  "status": "draft"
+}

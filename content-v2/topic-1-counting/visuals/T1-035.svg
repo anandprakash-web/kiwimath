@@ -1,0 +1,46 @@
+<svg viewBox="0 0 286 68" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="28" cy="24" r="14" fill="#4caf50" stroke="white" stroke-width="1.5"/>
+<circle cx="24" cy="21" r="2" fill="white"/>
+<circle cx="32" cy="21" r="2" fill="white"/>
+<circle cx="24" cy="21" r="1" fill="#333"/>
+<circle cx="32" cy="21" r="1" fill="#333"/>
+<path d="M25,27 Q28,31 31,27" fill="none" stroke="white" stroke-width="1"/>
+<circle cx="66" cy="24" r="14" fill="#4caf50" stroke="white" stroke-width="1.5"/>
+<circle cx="62" cy="21" r="2" fill="white"/>
+<circle cx="70" cy="21" r="2" fill="white"/>
+<circle cx="62" cy="21" r="1" fill="#333"/>
+<circle cx="70" cy="21" r="1" fill="#333"/>
+<path d="M63,27 Q66,31 69,27" fill="none" stroke="white" stroke-width="1"/>
+<circle cx="104" cy="24" r="14" fill="#4caf50" stroke="white" stroke-width="1.5"/>
+<circle cx="100" cy="21" r="2" fill="white"/>
+<circle cx="108" cy="21" r="2" fill="white"/>
+<circle cx="100" cy="21" r="1" fill="#333"/>
+<circle cx="108" cy="21" r="1" fill="#333"/>
+<path d="M101,27 Q104,31 107,27" fill="none" stroke="white" stroke-width="1"/>
+<circle cx="142" cy="24" r="14" fill="#4caf50" stroke="white" stroke-width="1.5"/>
+<circle cx="138" cy="21" r="2" fill="white"/>
+<circle cx="146" cy="21" r="2" fill="white"/>
+<circle cx="138" cy="21" r="1" fill="#333"/>
+<circle cx="146" cy="21" r="1" fill="#333"/>
+<path d="M139,27 Q142,31 145,27" fill="none" stroke="white" stroke-width="1"/>
+<circle cx="180" cy="24" r="14" fill="#4caf50" stroke="white" stroke-width="1.5"/>
+<circle cx="176" cy="21" r="2" fill="white"/>
+<circle cx="184" cy="21" r="2" fill="white"/>
+<circle cx="176" cy="21" r="1" fill="#333"/>
+<circle cx="184" cy="21" r="1" fill="#333"/>
+<path d="M177,27 Q180,31 183,27" fill="none" stroke="white" stroke-width="1"/>
+<circle cx="218" cy="24" r="14" fill="#4caf50" stroke="white" stroke-width="1.5"/>
+<circle cx="214" cy="21" r="2" fill="white"/>
+<circle cx="222" cy="21" r="2" fill="white"/>
+<circle cx="214" cy="21" r="1" fill="#333"/>
+<circle cx="222" cy="21" r="1" fill="#333"/>
+<path d="M215,27 Q218,31 221,27" fill="none" stroke="white" stroke-width="1"/>
+<circle cx="256" cy="24" r="14" fill="#4caf50" stroke="white" stroke-width="1.5"/>
+<circle cx="252" cy="21" r="2" fill="white"/>
+<circle cx="260" cy="21" r="2" fill="white"/>
+<circle cx="252" cy="21" r="1" fill="#333"/>
+<circle cx="260" cy="21" r="1" fill="#333"/>
+<path d="M253,27 Q256,31 259,27" fill="none" stroke="white" stroke-width="1"/>
+
+  <text x="143.0" y="64" text-anchor="middle" font-family="system-ui" font-size="10" fill="#666">Count: birds</text>
+</svg>

@@ -1,0 +1,131 @@
+{
+  "id": "G1-COUNT-058",
+  "grade": 1,
+  "topic": "counting_observation",
+  "subtopic": "take_away_counting",
+  "subskills": [
+    "cross_out_semantics",
+    "subtraction_readiness"
+  ],
+  "difficulty": 1,
+  "tier": "warmup",
+  "source_inspiration": "Cambridge Stage 1 \u2014 take away with visuals",
+  "pedagogy": "cpa_concrete",
+  "stem_template": "There were {N} {object} on the plate. {name} ate {K}. How many are left on the plate?",
+  "answer_type": "multiple_choice",
+  "interaction": {
+    "type": "multiple_choice",
+    "fallback_type": "multiple_choice"
+  },
+  "visual": {
+    "type": "svg_generator",
+    "generator": "object_row_with_cross_out",
+    "params": {
+      "count_from": "{N}",
+      "cross_out": "{K}"
+    }
+  },
+  "visual_manifest": {
+    "art_brief": "A plate with {N} {object}. {K} of them are crossed out (eaten). The remaining {object} are whole and bright.",
+    "alt_text": "{N} {object} with {K} crossed out.",
+    "style": "warm_cartoon",
+    "layout_hint": "row",
+    "visual_type": "illustration"
+  },
+  "params": {
+    "N": {
+      "range": [
+        5,
+        9
+      ]
+    },
+    "K": {
+      "range": [
+        1,
+        3
+      ],
+      "constraint": "K < N"
+    },
+    "object": {
+      "pool": [
+        "cookies",
+        "strawberries",
+        "grapes",
+        "crackers"
+      ]
+    },
+    "name": {
+      "pool": [
+        "Aarav",
+        "Mei",
+        "Sofia",
+        "Kofi",
+        "Liam"
+      ]
+    }
+  },
+  "derived": {},
+  "answer_formula": "N - K",
+  "distractors": [
+    {
+      "formula": "N",
+      "label": "ignored_eaten"
+    },
+    {
+      "formula": "K",
+      "label": "counted_eaten"
+    },
+    {
+      "formula": "N + K",
+      "label": "added_instead"
+    }
+  ],
+  "misconceptions": [
+    {
+      "trigger_answer": "N",
+      "diagnosis": "ignored_action_word",
+      "feedback_child": "{name} ate some! So there are fewer now. Count the ones NOT crossed out.",
+      "step_down_path": [
+        "G1-COUNT-058-S1",
+        "G1-COUNT-058-S2"
+      ]
+    },
+    {
+      "trigger_answer": "K",
+      "diagnosis": "counted_eaten_only",
+      "feedback_child": "Those are the eaten ones! We want the ones still on the plate.",
+      "step_down_path": [
+        "G1-COUNT-058-S1"
+      ]
+    },
+    {
+      "trigger_answer": "N + K",
+      "diagnosis": "added_instead_of_subtracted",
+      "feedback_child": "Eating means fewer, not more! Count only the remaining {object}.",
+      "step_down_path": [
+        "G1-COUNT-058-S1",
+        "G1-COUNT-058-S2"
+      ]
+    }
+  ],
+  "socratic_feedback": {
+    "on_correct": "Right! {N} take away {K} leaves you with the ones still on the plate.",
+    "generic_incorrect": "The crossed-out ones are gone. Count only the whole {object}.",
+    "encouragement_after_retry": "Cover the crossed-out ones with your hand. Now count what's left!"
+  },
+  "curriculum_alignment": {
+    "common_core": "K.OA.A.1",
+    "cambridge_stage": 1,
+    "cambridge_strand": "Number: Subtraction",
+    "singapore_strand": "Whole Numbers"
+  },
+  "tags": [
+    "topic:counting",
+    "skill:take_away",
+    "cpa:concrete"
+  ],
+  "est_time_seconds": 25,
+  "version": 1,
+  "author": "AP",
+  "status": "draft"
+}

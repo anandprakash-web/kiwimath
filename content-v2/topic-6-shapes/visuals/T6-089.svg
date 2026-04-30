@@ -1,0 +1,15 @@
+<svg viewBox="0 0 200 165" xmlns="http://www.w3.org/2000/svg" font-family="system-ui">
+<polygon points="60,87 60,122 77,140 77,105" fill="#FF6B6B" stroke="#2C3E50" stroke-width="1.5"/>
+<polygon points="60,87 77,70 95,87 77,105" fill="#FF8E8E" stroke="#2C3E50" stroke-width="1.5"/>
+<polygon points="77,105 95,87 95,122 77,140" fill="#E74C3C" stroke="#2C3E50" stroke-width="1.5"/>
+<polygon points="95,69 95,104 112,122 112,87" fill="#4ECDC4" stroke="#2C3E50" stroke-width="1.5"/>
+<polygon points="95,69 112,52 130,69 112,87" fill="#81E6D9" stroke="#2C3E50" stroke-width="1.5"/>
+<polygon points="112,87 130,69 130,104 112,122" fill="#38B2AC" stroke="#2C3E50" stroke-width="1.5"/>
+<polygon points="60,52 60,87 77,105 77,70" fill="#F1C40F" stroke="#2C3E50" stroke-width="1.5"/>
+<polygon points="60,52 77,35 95,52 77,70" fill="#F7DC6F" stroke="#2C3E50" stroke-width="1.5"/>
+<polygon points="77,70 95,52 95,87 77,105" fill="#D4AC0D" stroke="#2C3E50" stroke-width="1.5"/>
+<polygon points="95,34 95,69 112,87 112,52" fill="#3498DB" stroke="#2C3E50" stroke-width="1.5"/>
+<polygon points="95,34 112,17 130,34 112,52" fill="#5DADE2" stroke="#2C3E50" stroke-width="1.5"/>
+<polygon points="112,52 130,34 130,69 112,87" fill="#2980B9" stroke="#2C3E50" stroke-width="1.5"/>
+<text x="100" y="150" text-anchor="middle" font-size="11" fill="#333">2×2×2 cube (8 unit cubes)</text>
+</svg>

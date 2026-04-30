@@ -14,10 +14,11 @@ from __future__ import annotations
 
 import json
 import os
+import re
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Union
 
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, field_validator
 
 
 # ---------------------------------------------------------------------------
@@ -38,21 +39,37 @@ class HintLadder(BaseModel):
 # v2 Question model (flat, no templates)
 # ---------------------------------------------------------------------------
 
+# Allow 3- or 4-digit numeric IDs so Grade 3-4 content (T1-601 onwards) can
+# coexist with the original Grade 1-2 set (T1-001 to T1-600).
+_QUESTION_ID_RE = re.compile(r"^T[1-8]-\d{3,4}$")
+
+
 class QuestionV2(BaseModel):
     id: str
     stem: str
     original_stem: Optional[str] = None
     choices: List[str]
     correct_answer: int = Field(..., ge=0, le=3)
-    difficulty_tier: str  # easy, medium, hard
-    difficulty_score: int = Field(..., ge=1, le=100)
+    difficulty_tier: str  # easy, medium, hard, advanced, expert
+    difficulty_score: int = Field(..., ge=1, le=500)
     visual_svg: Optional[str] = None
     visual_alt: Optional[str] = None
     diagnostics: Dict[str, str] = Field(default_factory=dict)
     topic: str
     topic_name: str
     tags: List[str] = Field(default_factory=list)
+    concept_cluster: Optional[str] = None
     hint: Optional[Union[str, Dict[str, str]]] = None
+
+    @field_validator("id")
+    @classmethod
+    def validate_id_format(cls, v: str) -> str:
+        if not _QUESTION_ID_RE.match(v):
+            raise ValueError(
+                f"Question ID '{v}' does not match required format T[1-8]-NNN "
+                f"(e.g. T1-001, T8-600)"
+            )
+        return v
 
     @property
     def hint_ladder(self) -> Optional[HintLadder]:
@@ -91,41 +108,87 @@ class ContentStoreV2:
         self._by_topic: Dict[str, List[QuestionV2]] = {}     # topic_id -> sorted list
         self._topics: List[TopicV2] = []                     # topic metadata
         self._svg_cache: Dict[str, str] = {}                 # svg filename -> svg content
+        self._cluster_index: Dict[str, List[str]] = {}       # cluster -> list of qids
         self._root: Optional[Path] = None
 
     def load_folder(self, root: Path) -> int:
-        """Load all topic folders under root. Returns total questions loaded."""
+        """Load all topic folders under root. Returns total questions loaded.
+
+        Each topic folder is expected to contain `questions.json` (Grade 1-2,
+        difficulty 1-100). Optional secondary files like `grade34_questions.json`
+        (Grade 3-4, difficulty 101-200) are loaded automatically and merged
+        into the same topic — see Task #191.
+        """
         self._root = root
         count = 0
+
+        # Files we look for inside each topic folder, in load order.
+        # Adding files here is the explicit way to opt new content packs into
+        # the loader (e.g. variety augmentations). The order here also
+        # determines tie-breaking — earlier wins on question_id collisions.
+        question_files = [
+            "questions.json",
+            "grade34_questions.json",
+            "grade34_variety_questions.json",
+            "g56_questions.json",
+            "data_handling.json",
+            "geometry_measurement.json",
+            "measurement_units.json",
+        ]
 
         for topic_dir in sorted(root.iterdir()):
             if not topic_dir.is_dir() or topic_dir.name.startswith("."):
                 continue
 
-            questions_path = topic_dir / "questions.json"
-            if not questions_path.exists():
-                continue
+            topic_id: Optional[str] = None
+            topic_name: Optional[str] = None
+            topic_questions: List[QuestionV2] = []
+            combined_distribution: Dict[str, int] = {}
+            loaded_files: List[str] = []
 
-            try:
-                data = json.loads(questions_path.read_text())
-            except (json.JSONDecodeError, OSError) as e:
-                print(f"[content_store_v2] skipping {topic_dir.name}: {e}")
-                continue
-
-            topic_id = data.get("topic_id", topic_dir.name)
-            topic_name = data.get("topic_name", topic_id)
-            questions_data = data.get("questions", [])
-
-            topic_questions = []
-            for qd in questions_data:
-                try:
-                    q = QuestionV2(**qd)
-                    self._questions[q.id] = q
-                    topic_questions.append(q)
-                    count += 1
-                except Exception as e:
-                    print(f"[content_store_v2] skipping question: {e}")
+            for fname in question_files:
+                p = topic_dir / fname
+                if not p.exists():
                     continue
+                try:
+                    data = json.loads(p.read_text())
+                except (json.JSONDecodeError, OSError) as e:
+                    print(f"[content_store_v2] skipping {p}: {e}")
+                    continue
+
+                # Handle both formats: {"questions": [...]} and flat [...]
+                if isinstance(data, list):
+                    question_list = data
+                    if topic_id is None:
+                        topic_id = topic_dir.name
+                        topic_name = topic_id
+                else:
+                    question_list = data.get("questions", [])
+                    if topic_id is None:
+                        topic_id = data.get("topic_id", topic_dir.name)
+                        topic_name = data.get("topic_name", topic_id)
+
+                for qd in question_list:
+                    try:
+                        q = QuestionV2(**qd)
+                        self._questions[q.id] = q
+                        topic_questions.append(q)
+                        count += 1
+                        # Build cluster index
+                        if q.concept_cluster:
+                            self._cluster_index.setdefault(q.concept_cluster, []).append(q.id)
+                    except Exception as e:
+                        print(f"[content_store_v2] skipping question: {e}")
+                        continue
+
+                dist = data.get("difficulty_distribution") if isinstance(data, dict) else None
+                for tier, n in (dist or {}).items():
+                    combined_distribution[tier] = combined_distribution.get(tier, 0) + int(n)
+
+                loaded_files.append(fname)
+
+            if not topic_questions:
+                continue
 
             # Sort by difficulty_score (should already be sorted, but ensure it)
             topic_questions.sort(key=lambda q: q.difficulty_score)
@@ -135,10 +198,13 @@ class ContentStoreV2:
                 topic_id=topic_id,
                 topic_name=topic_name,
                 total_questions=len(topic_questions),
-                difficulty_distribution=data.get("difficulty_distribution", {}),
+                difficulty_distribution=combined_distribution,
             ))
 
-            print(f"[content_store_v2] loaded {topic_dir.name}: {len(topic_questions)} questions")
+            print(
+                f"[content_store_v2] loaded {topic_dir.name}: "
+                f"{len(topic_questions)} questions from {loaded_files}"
+            )
 
         return count
 
@@ -158,13 +224,21 @@ class ContentStoreV2:
         self,
         topic_id: str,
         min_score: int = 1,
-        max_score: int = 100,
+        max_score: int = 500,
     ) -> List[QuestionV2]:
-        """Get questions within a difficulty range for a topic."""
+        """Get questions within a difficulty range for a topic (1-200)."""
         return [
             q for q in self.by_topic(topic_id)
             if min_score <= q.difficulty_score <= max_score
         ]
+
+    def get_cluster_qids(self, cluster: str) -> List[str]:
+        """Get all question IDs belonging to a concept cluster."""
+        return self._cluster_index.get(cluster, [])
+
+    def cluster_stats(self) -> Dict[str, int]:
+        """Return cluster → count mapping for diagnostics."""
+        return {k: len(v) for k, v in self._cluster_index.items()}
 
     def next_question(
         self,
@@ -174,8 +248,11 @@ class ContentStoreV2:
         exclude_ids: Optional[List[str]] = None,
         min_difficulty: Optional[int] = None,
         max_difficulty: Optional[int] = None,
+        exclude_clusters: Optional[List[str]] = None,
+        max_per_cluster: int = 2,
+        seen_clusters: Optional[Dict[str, int]] = None,
     ) -> Optional[QuestionV2]:
-        """Pick the best next question adaptively.
+        """Pick the best next question adaptively with cluster deduplication.
 
         Args:
             topic_id: filter to a specific topic (or None for all)
@@ -184,8 +261,12 @@ class ContentStoreV2:
             exclude_ids: question IDs to skip (already answered)
             min_difficulty: floor for difficulty range (grade filter)
             max_difficulty: ceiling for difficulty range (grade filter)
+            exclude_clusters: clusters to fully skip (mastered patterns)
+            max_per_cluster: max questions from same cluster in a session (default 2)
+            seen_clusters: dict of cluster -> times_seen for soft limiting
 
-        Returns the closest available question to the target difficulty.
+        Returns the closest available question to the target difficulty,
+        preferring questions from unseen concept clusters.
         """
         import random
 
@@ -209,18 +290,46 @@ class ContentStoreV2:
         if not pool:
             return None
 
+        # --- Cluster-aware filtering ---
+        excluded_clusters = set(exclude_clusters or [])
+        cluster_counts = dict(seen_clusters or {})
+
+        # Partition into preferred (unseen/under-limit clusters) and fallback
+        preferred = []
+        fallback = []
+        for q in pool:
+            cluster = q.concept_cluster
+            if cluster and cluster in excluded_clusters:
+                fallback.append(q)
+                continue
+            if cluster and cluster_counts.get(cluster, 0) >= max_per_cluster:
+                fallback.append(q)
+                continue
+            preferred.append(q)
+
+        # Use preferred pool if non-empty, otherwise fall back to all
+        active_pool = preferred if preferred else fallback if fallback else pool
+
         if difficulty is None:
-            return random.choice(pool)
+            return random.choice(active_pool)
 
         # Find questions within the window
         candidates = [
-            q for q in pool
+            q for q in active_pool
             if abs(q.difficulty_score - difficulty) <= window
         ]
 
         if not candidates:
-            # Fallback: closest question
-            candidates = sorted(pool, key=lambda q: abs(q.difficulty_score - difficulty))[:5]
+            # Widen: try from full active pool
+            candidates = sorted(active_pool, key=lambda q: abs(q.difficulty_score - difficulty))[:5]
+
+        if not candidates:
+            return random.choice(active_pool) if active_pool else None
+
+        # Diversity bonus: prefer questions from clusters not yet seen
+        unseen = [q for q in candidates if not q.concept_cluster or cluster_counts.get(q.concept_cluster, 0) == 0]
+        if unseen:
+            return random.choice(unseen)
 
         return random.choice(candidates)
 

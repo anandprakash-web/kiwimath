@@ -1,0 +1,40 @@
+{
+  "id": "G1-COUNT-080-S2",
+  "grade": 1,
+  "topic": "spatial_reasoning_3d",
+  "subtopic": "scaffolded_step_down",
+  "subskills": [
+    "lateral_inversion"
+  ],
+  "difficulty": 4,
+  "tier": "challenge",
+  "parent_id": "G1-COUNT-080",
+  "step_index": 2,
+  "stem_template": "The letter 'b' is held up to a mirror. It looks like the letter ___.",
+  "visual": null,
+  "answer_type": "multiple_choice",
+  "params": {},
+  "answer_formula": "'d'",
+  "distractors": [
+    {
+      "formula": "'b'",
+      "label": "no_change"
+    },
+    {
+      "formula": "'p'",
+      "label": "vertical_flip"
+    }
+  ],
+  "misconceptions": [],
+  "visual_manifest": {
+    "art_brief": "The letter 'b' on the left side of a mirror line, with a blank space on the right for the reflection.",
+    "alt_text": "Letter b next to a mirror line."
+  },
+  "tags": [
+    "step_down"
+  ],
+  "est_time_seconds": 20,
+  "version": 1,
+  "author": "AP",
+  "status": "draft"
+}

@@ -1,0 +1,502 @@
+# ═══════════════════════════════════════════════════════════
+# Kiwimath Slot Taxonomy v1
+# 38 slots across 9 categories
+# Machine-readable companion to Slot_Taxonomy_v1.docx
+# Single source of truth for the template engine
+# ═══════════════════════════════════════════════════════════
+
+version: 1
+total_slots: 38
+
+# ─── Co-dependency rules (resolver must enforce) ────────
+codependency_rules:
+  - id: name_pronoun
+    description: "name pool entries carry gender_tag; resolver picks pronoun_set from tag"
+    slots: [name, pronoun_set]
+    type: joint_binding
+
+  - id: object_illustration
+    description: "illustration_object asset ID must match text object slot value"
+    slots: [object_fruit, object_toy, object_animal, object_stationery, object_vehicle, object_prepared_food, object_coin, illustration_object]
+    type: key_match
+
+  - id: currency_family
+    description: "all currency slots resolve from a single pack entry"
+    slots: [currency, currency_symbol, currency_coin_denominations, currency_bill_denominations]
+    type: family_binding
+
+  - id: sport_equipment
+    description: "equipment list is keyed by sport value"
+    slots: [sport_popular, sport_equipment]
+    type: key_match
+
+  - id: unit_system
+    description: "small + large units must belong to same system per region"
+    slots: [unit_length_small, unit_length_large, unit_mass_small, unit_mass_large]
+    type: system_consistency
+
+  - id: week_start
+    description: "calendar visuals must honor regional week start"
+    slots: [week_start_day, day_of_week]
+    type: rendering_constraint
+
+# ─── Category 1: Person ─────────────────────────────────
+categories:
+  person:
+    slots:
+      name:
+        type: string
+        localization: per_region
+        pool_min: 10
+        gender_tag: true  # carries m/f/n for pronoun resolution
+        examples:
+          en-IN: [Aarav, Ananya, Priya, Rohan, Diya, Arjun, Meera, Kabir, Saanvi, Vivaan]
+          en-US: [Sofia, Liam, Emma, Noah, Olivia, Ethan, Ava, Mason, Mia, Lucas]
+          es-MX: [Sofía, Mateo, Valentina, Santiago, Camila, Sebastián, Isabella, Diego, Luciana, Emiliano]
+          ar-SA: [يوسف, فاطمة, محمد, نورة, عبدالله, سارة, خالد, ريم, عمر, لينا]
+
+      pronoun_set:
+        type: object
+        localization: per_locale
+        description: "Resolved from name.gender_tag — never authored directly"
+        schema:
+          subject: string    # he/she/they
+          object: string     # him/her/them
+          possessive: string # his/her/their
+        examples:
+          en: [{subject: he, object: him, possessive: his}, {subject: she, object: her, possessive: her}, {subject: they, object: them, possessive: their}]
+          es: [{subject: él, object: lo, possessive: su}, {subject: ella, object: la, possessive: su}]
+          ar: [{subject: هو, object: ـه, possessive: ـه}, {subject: هي, object: ـها, possessive: ـها}]
+
+      friend_name:
+        type: string
+        localization: per_region
+        pool_min: 8
+        gender_tag: true
+        description: "Second person in two-person problems. Must differ from name."
+        examples:
+          en-IN: [Riya, Arjun, Kavya, Dev]
+          en-US: [Emma, Noah, Ava, Ethan]
+
+      friend_pronoun_set:
+        type: object
+        localization: per_locale
+        description: "Resolved from friend_name.gender_tag"
+
+  # ─── Category 2: Objects (typed) ────────────────────────
+  objects:
+    slots:
+      object_fruit:
+        type: string
+        localization: per_region
+        pool_min: 6
+        countable: true
+        examples:
+          en-IN: [mango, banana, guava, apple, orange, pomegranate]
+          en-US: [apple, orange, banana, strawberry, grape, blueberry]
+          es-MX: [manzana, naranja, plátano, fresa, uva, mango]
+          ar-SA: [تمر, برتقال, موز, تفاح, عنب, رمان]
+
+      object_toy:
+        type: string
+        localization: per_region
+        pool_min: 5
+        countable: true
+        examples:
+          en-IN: [marble, top, kite, ball, toy car]
+          en-US: [marble, block, ball, doll, toy car]
+          es-MX: [canica, pelota, muñeca, carrito, trompo]
+
+      object_animal:
+        type: string
+        localization: per_region
+        pool_min: 5
+        countable: true
+        description: "Safe defaults across regions: rabbits, ducks, fish, birds, butterflies"
+        examples:
+          en-IN: [parrot, rabbit, fish, butterfly, duck]
+          en-US: [rabbit, bird, fish, butterfly, duck]
+
+      object_stationery:
+        type: string
+        localization: universal
+        pool_min: 5
+        countable: true
+        examples:
+          en: [pencil, crayon, eraser, ruler, notebook]
+
+      object_vehicle:
+        type: string
+        localization: per_region
+        pool_min: 4
+        countable: true
+        examples:
+          en-IN: [auto-rickshaw, bus, bicycle, car]
+          en-US: [car, bus, bicycle, truck]
+
+      object_prepared_food:
+        type: string
+        localization: per_region
+        pool_min: 4
+        countable: true
+        sensitivity: [no_pork_muslim, no_beef_hindu, no_alcohol_all]
+        examples:
+          en-IN: [samosa, ladoo, idli, roti]
+          en-US: [cookie, cupcake, sandwich, pizza slice]
+          es-MX: [taco, churro, empanada, galleta]
+
+      object_coin:
+        type: string
+        localization: per_region
+        pool_min: 3
+        countable: true
+        description: "Physical coin denominations for money problems"
+        examples:
+          en-IN: ["1 rupee coin", "2 rupee coin", "5 rupee coin"]
+          en-US: [penny, nickel, dime, quarter]
+
+  # ─── Category 3: Units ──────────────────────────────────
+  units:
+    slots:
+      currency:
+        type: string
+        localization: per_region
+        family: currency_family
+        examples:
+          IN: rupee
+          US: dollar
+          MX: peso
+          SA: riyal
+
+      currency_symbol:
+        type: string
+        localization: per_region
+        family: currency_family
+        examples:
+          IN: "₹"
+          US: "$"
+          MX: "$"
+          SA: "﷼"
+
+      currency_coin_denominations:
+        type: "list[int]"
+        localization: per_region
+        family: currency_family
+        examples:
+          IN: [1, 2, 5, 10]
+          US: [1, 5, 10, 25]
+
+      currency_bill_denominations:
+        type: "list[int]"
+        localization: per_region
+        family: currency_family
+        examples:
+          IN: [10, 20, 50, 100, 200, 500]
+          US: [1, 5, 10, 20]
+
+      unit_length_small:
+        type: string
+        localization: per_region
+        system_constraint: unit_system
+        examples:
+          IN: cm
+          US: inch
+          SA: cm
+
+      unit_length_large:
+        type: string
+        localization: per_region
+        system_constraint: unit_system
+        examples:
+          IN: meter
+          US: foot
+          SA: meter
+
+      unit_mass_small:
+        type: string
+        localization: per_region
+        system_constraint: unit_system
+        examples:
+          IN: gram
+          US: ounce
+
+      unit_mass_large:
+        type: string
+        localization: per_region
+        system_constraint: unit_system
+        examples:
+          IN: kg
+          US: pound
+
+      unit_volume:
+        type: string
+        localization: per_region
+        examples:
+          IN: mL
+          US: fl oz
+
+      unit_time_short:
+        type: string
+        localization: per_locale
+        examples:
+          en: [second, minute]
+          es: [segundo, minuto]
+
+      unit_time_long:
+        type: string
+        localization: per_locale
+        examples:
+          en: [hour, day, week]
+          es: [hora, día, semana]
+
+  # ─── Category 4: Calendar ───────────────────────────────
+  calendar:
+    slots:
+      day_of_week:
+        type: "list[string]"
+        localization: per_locale
+        examples:
+          en: [Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday]
+          ar: [الاثنين, الثلاثاء, الأربعاء, الخميس, الجمعة, السبت, الأحد]
+
+      week_start_day:
+        type: string
+        localization: per_region
+        description: "Affects calendar visual rendering"
+        examples:
+          IN: Sunday
+          US: Sunday
+          UK: Monday
+          SA: Saturday
+
+      month_of_year:
+        type: "list[string]"
+        localization: per_locale
+        examples:
+          en: [January, February, March, April, May, June, July, August, September, October, November, December]
+
+      time_format:
+        type: string
+        localization: per_region
+        examples:
+          IN: "12h"
+          US: "12h"
+          UK: "24h"
+          SA: "12h"
+
+      season:
+        type: object
+        localization: per_region
+        description: "Maps canonical season names to local month ranges"
+        examples:
+          IN: {summer: "Apr-Jun", monsoon: "Jul-Sep", winter: "Oct-Feb"}
+          US: {spring: "Mar-May", summer: "Jun-Aug", fall: "Sep-Nov", winter: "Dec-Feb"}
+
+  # ─── Category 5: Shapes ─────────────────────────────────
+  shapes:
+    slots:
+      shape_2d:
+        type: string
+        localization: per_locale
+        pool_min: 4
+        examples:
+          en: [circle, square, triangle, rectangle, hexagon, oval]
+          es: [círculo, cuadrado, triángulo, rectángulo, hexágono, óvalo]
+
+      shape_3d:
+        type: string
+        localization: per_locale
+        pool_min: 4
+        examples:
+          en: [sphere, cube, cylinder, cone, rectangular prism]
+
+      shape_real_world_example:
+        type: string
+        localization: per_region
+        description: "Real-world object that maps to a shape (clock→circle, door→rectangle)"
+        examples:
+          en-IN: {circle: bangle, rectangle: door, triangle: samosa, sphere: ladoo}
+          en-US: {circle: clock, rectangle: door, triangle: yield sign, sphere: basketball}
+
+  # ─── Category 6: Illustrations ──────────────────────────
+  illustrations:
+    slots:
+      illustration_protagonist:
+        type: string
+        localization: per_region
+        description: "Asset ID for the character illustration. Pool must include diverse skin tones, attire, glasses, mobility aid."
+        examples:
+          IN: [child_in_01, child_in_02, child_in_03, child_in_04]
+          US: [child_us_01, child_us_02, child_us_03, child_us_04]
+
+      illustration_object:
+        type: string
+        localization: per_region
+        description: "Asset ID keyed by object slot value. Co-dependent with object_* slots."
+        examples:
+          IN: {mango: asset_mango_in, banana: asset_banana}
+          US: {apple: asset_apple_us, orange: asset_orange}
+
+      illustration_background:
+        type: string
+        localization: per_region
+        description: "Scene background for the visual card"
+        examples:
+          IN: [bg_classroom_in, bg_market_in, bg_park_in]
+          US: [bg_classroom_us, bg_store_us, bg_park_us]
+
+      illustration_mascot_emotion:
+        type: string
+        localization: universal
+        description: "Kiwi/companion emotion variant — same art everywhere, only emotion changes"
+        examples:
+          all: [happy, thinking, celebrate, sad, hint, wave]
+
+  # ─── Category 7: Actions ────────────────────────────────
+  actions:
+    slots:
+      action_give:
+        type: string
+        localization: per_locale
+        description: "Verb for giving/sharing in subtraction problems"
+        examples:
+          en: gives
+          es: regala
+          ar: يعطي
+
+      action_receive:
+        type: string
+        localization: per_locale
+        description: "Verb for receiving/getting in addition problems"
+        examples:
+          en: gets
+          es: recibe
+          ar: يحصل على
+
+      action_remove:
+        type: string
+        localization: per_locale
+        description: "Verb for removal/taking away"
+        examples:
+          en: takes away
+          es: quita
+          ar: يأخذ
+
+  # ─── Category 8: Culture & Place ────────────────────────
+  culture_place:
+    slots:
+      location_commerce:
+        type: string
+        localization: per_region
+        pool_min: 3
+        examples:
+          en-IN: [bazaar, shop, kirana store]
+          en-US: [store, supermarket, mall]
+          es-MX: [tienda, mercado, supermercado]
+
+      location_learning:
+        type: string
+        localization: per_region
+        pool_min: 2
+        examples:
+          en-IN: [school, tuition centre]
+          en-US: [school, library]
+
+      location_outdoor:
+        type: string
+        localization: per_region
+        pool_min: 3
+        examples:
+          en-IN: [park, playground, garden, maidan]
+          en-US: [park, playground, backyard, beach]
+
+      location_home:
+        type: string
+        localization: per_region
+        pool_min: 3
+        examples:
+          en-IN: [kitchen, balcony, terrace, drawing room]
+          en-US: [kitchen, backyard, living room, garage]
+
+      sport_popular:
+        type: string
+        localization: per_region
+        pool_min: 3
+        codependent: sport_equipment
+        examples:
+          IN: [cricket, kabaddi, badminton]
+          US: [basketball, baseball, soccer]
+          MX: [fútbol, béisbol, lucha libre]
+
+      sport_equipment:
+        type: "list[string]"
+        localization: per_region
+        description: "Keyed by sport_popular value"
+        examples:
+          IN: {cricket: [bat, ball, wickets], badminton: [racket, shuttlecock]}
+          US: {basketball: [basketball, hoop], baseball: [bat, ball, glove]}
+
+      meal_name:
+        type: string
+        localization: per_region
+        pool_min: 3
+        examples:
+          en-IN: [breakfast, lunch, dinner, tiffin]
+          en-US: [breakfast, lunch, dinner, snack]
+          es-MX: [desayuno, almuerzo, cena, merienda]
+
+  # ─── Category 9: Linguistic (ICU) ──────────────────────
+  linguistic:
+    slots:
+      plural:
+        type: string
+        localization: per_locale
+        description: "ICU plural rules — resolver applies locale-specific pluralization"
+        examples:
+          en: "{count, plural, one {# apple} other {# apples}}"
+          ar: "{count, plural, zero {# تفاحات} one {تفاحة واحدة} two {تفاحتان} few {# تفاحات} many {# تفاحة} other {# تفاحة}}"
+
+      ordinal:
+        type: string
+        localization: per_locale
+        description: "1st, 2nd, 3rd for ordinal number problems"
+        examples:
+          en: "{n, selectordinal, one {#st} two {#nd} few {#rd} other {#th}}"
+
+      number_display:
+        type: string
+        localization: per_region
+        description: "Digit rendering — Western Arabic vs Arabic-Indic vs Devanagari"
+        examples:
+          IN: western_arabic   # 0-9
+          US: western_arabic
+          SA: arabic_indic     # ٠-٩
+
+      measurement_format:
+        type: string
+        localization: per_region
+        description: "How measurements are displayed (e.g., 5 cm vs 5cm vs 5 سم)"
+        examples:
+          IN: "{value} {unit}"
+          US: "{value} {unit}"
+          SA: "{value} {unit}"  # RTL: unit appears before value visually
+
+# ─── Sensitivity rules (content QA enforcement) ──────────
+sensitivity_rules:
+  food:
+    - "No pork in Muslim-majority or Jewish-observant regions"
+    - "No beef in Hindu-majority regions (default: India, Nepal)"
+    - "No alcohol anywhere, any grade"
+  animals:
+    - "No dogs framed as pets in strictly-observant Muslim regions"
+    - "Safe defaults: rabbits, ducks, fish, birds, butterflies"
+  family_terms:
+    - "Avoid uncle/aunt — family taxonomy is culture-specific"
+    - "Default to: mother, father, sibling, cousin, grandparent"
+  festivals:
+    - "Festival slot is OPTIONAL — default templates assume no festival"
+    - "Festival problems ship as separate opt-in content packs per region"
+  representation:
+    - "illustration_protagonist pool must include diverse skin tones, hair, attire"
+    - "At least one asset with glasses and one with mobility aid per region"
+    - "Never depict real named people"

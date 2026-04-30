@@ -1,0 +1,96 @@
+{
+  "id": "G1-COUNT-085",
+  "grade": 1,
+  "topic": "logic_ordering",
+  "subtopic": "logical_deduction",
+  "subskills": [
+    "process_of_elimination",
+    "constraint_satisfaction"
+  ],
+  "difficulty": 5,
+  "tier": "challenge",
+  "source_inspiration": "Kangaroo Felix — logic grid for young solvers",
+  "pedagogy": "exploration",
+  "stem_template": "{name_1}, {name_2}, and {name_3} each have a different pet: a cat, a dog, and a fish. {name_1} does NOT have the cat. {name_2} has the fish. What pet does {name_1} have?",
+  "answer_type": "multiple_choice",
+  "interaction": {
+    "type": "multiple_choice",
+    "fallback_type": "multiple_choice"
+  },
+  "visual": null,
+  "visual_manifest": {
+    "art_brief": "Three children ({name_1}, {name_2}, {name_3}) standing in a row. Above them are icons of a cat, dog, and fish with question marks. {name_2} has a line connecting to the fish.",
+    "alt_text": "Three children, three pets. Who has which?",
+    "style": "warm_cartoon",
+    "layout_hint": "row",
+    "visual_type": "diagram"
+  },
+  "params": {
+    "name_1": {
+      "pool": [
+        "Aarav"
+      ]
+    },
+    "name_2": {
+      "pool": [
+        "Mei"
+      ]
+    },
+    "name_3": {
+      "pool": [
+        "Kofi"
+      ]
+    }
+  },
+  "derived": {},
+  "answer_formula": "'dog'",
+  "distractors": [
+    {
+      "formula": "'cat'",
+      "label": "violated_constraint"
+    },
+    {
+      "formula": "'fish'",
+      "label": "took_meis_pet"
+    }
+  ],
+  "misconceptions": [
+    {
+      "trigger_answer": "'cat'",
+      "diagnosis": "ignored_not_constraint",
+      "feedback_child": "But the clue says {name_1} does NOT have the cat! Try again.",
+      "step_down_path": [
+        "G1-COUNT-085-S1",
+        "G1-COUNT-085-S2"
+      ]
+    },
+    {
+      "trigger_answer": "'fish'",
+      "diagnosis": "assigned_wrong_pet",
+      "feedback_child": "{name_2} already has the fish! What's left for {name_1}?",
+      "step_down_path": [
+        "G1-COUNT-085-S1"
+      ]
+    }
+  ],
+  "socratic_feedback": {
+    "on_correct": "The dog! {name_2} has the fish, {name_1} can't have the cat, so the dog is left.",
+    "generic_incorrect": "Cross out what you know: {name_2} = fish. {name_1} ≠ cat. What's left?",
+    "encouragement_after_retry": "Use elimination: mark off the impossible ones first."
+  },
+  "curriculum_alignment": {
+    "cambridge_stage": 2,
+    "kangaroo_level": "Felix",
+    "olympiad_skill": "Logical Deduction / Process of Elimination",
+    "reference": "Kangaroo Felix logic problems"
+  },
+  "tags": [
+    "topic:logic",
+    "skill:deduction",
+    "level:olympiad_foundation"
+  ],
+  "est_time_seconds": 50,
+  "version": 1,
+  "author": "AP",
+  "status": "draft"
+}

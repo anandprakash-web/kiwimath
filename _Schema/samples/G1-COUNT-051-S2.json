@@ -1,0 +1,55 @@
+{
+  "id": "G1-COUNT-051-S2",
+  "grade": 1,
+  "topic": "counting_observation",
+  "subtopic": "scaffolded_step_down",
+  "subskills": [
+    "ordinal_position"
+  ],
+  "difficulty": 1,
+  "tier": "warmup",
+  "parent_id": "G1-COUNT-051",
+  "step_index": 2,
+  "stem_template": "Here are 4 {animal} in a row. Tap the 2nd {animal_singular}.",
+  "visual": null,
+  "answer_type": "multiple_choice",
+  "params": {
+    "animal": {
+      "pool": [
+        "ducks",
+        "frogs",
+        "penguins"
+      ]
+    },
+    "animal_singular": {
+      "pool": [
+        "duck",
+        "frog",
+        "penguin"
+      ]
+    }
+  },
+  "answer_formula": "2",
+  "distractors": [
+    {
+      "formula": "1",
+      "label": "off_by_one_left"
+    },
+    {
+      "formula": "3",
+      "label": "off_by_one_right"
+    }
+  ],
+  "misconceptions": [],
+  "visual_manifest": {
+    "art_brief": "A row of 4 {animal}, each labelled with position numbers 1st, 2nd, 3rd, 4th.",
+    "alt_text": "4 {animal} in a numbered row."
+  },
+  "tags": [
+    "step_down"
+  ],
+  "est_time_seconds": 15,
+  "version": 1,
+  "author": "AP",
+  "status": "draft"
+}

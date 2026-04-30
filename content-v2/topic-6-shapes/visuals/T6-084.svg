@@ -1,0 +1,11 @@
+<svg viewBox="0 0 270 95" xmlns="http://www.w3.org/2000/svg" font-family="system-ui">
+<rect x="10" y="20" width="50" height="50" fill="#FFF9C4" stroke="#2C3E50" stroke-width="1.5"/>
+<text x="35" y="85" text-anchor="middle" font-size="8" fill="#333">1. Square</text>
+<polygon points="80,20 130,70 80,70" fill="#FFF9C4" stroke="#2C3E50" stroke-width="1.5"/>
+<text x="95" y="85" text-anchor="middle" font-size="8" fill="#333">2. Fold diag</text>
+<polygon points="150,70 175,45 175,70" fill="#FFF9C4" stroke="#2C3E50" stroke-width="1.5"/>
+<text x="165" y="85" text-anchor="middle" font-size="8" fill="#333">3. Fold half</text>
+<polygon points="210,70 235,45 235,70" fill="#FFF9C4" stroke="#2C3E50" stroke-width="1.5"/>
+<path d="M 225 58 A 8 8 0 1 1 225 57.99" fill="white" stroke="#FF6B6B" stroke-width="1"/>
+<text x="225" y="85" text-anchor="middle" font-size="8" fill="#FF6B6B">4. Cut semi-⊙</text>
+</svg>

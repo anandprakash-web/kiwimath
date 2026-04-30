@@ -1,0 +1,41 @@
+<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <rect x="78" y="130" width="35" height="30" fill="#3498db" stroke="#2c3e50" stroke-width="1.5"/>
+  <polygon points="78,130 86,122 121,122 113,130" fill="#3498db" opacity="0.3" stroke="#2c3e50" stroke-width="0.5"/>
+  <polygon points="113,130 121,122 121,152 113,160" fill="#3498db" opacity="0.2" stroke="#2c3e50" stroke-width="0.5"/>
+  <rect x="113" y="130" width="35" height="30" fill="#3498db" stroke="#2c3e50" stroke-width="1.5"/>
+  <polygon points="113,130 121,122 156,122 148,130" fill="#3498db" opacity="0.3" stroke="#2c3e50" stroke-width="0.5"/>
+  <polygon points="148,130 156,122 156,152 148,160" fill="#3498db" opacity="0.2" stroke="#2c3e50" stroke-width="0.5"/>
+  <rect x="148" y="130" width="35" height="30" fill="#3498db" stroke="#2c3e50" stroke-width="1.5"/>
+  <polygon points="148,130 156,122 191,122 183,130" fill="#3498db" opacity="0.3" stroke="#2c3e50" stroke-width="0.5"/>
+  <polygon points="183,130 191,122 191,152 183,160" fill="#3498db" opacity="0.2" stroke="#2c3e50" stroke-width="0.5"/>
+  <rect x="183" y="130" width="35" height="30" fill="#3498db" stroke="#2c3e50" stroke-width="1.5"/>
+  <polygon points="183,130 191,122 226,122 218,130" fill="#3498db" opacity="0.3" stroke="#2c3e50" stroke-width="0.5"/>
+  <polygon points="218,130 226,122 226,152 218,160" fill="#3498db" opacity="0.2" stroke="#2c3e50" stroke-width="0.5"/>
+  <rect x="218" y="130" width="35" height="30" fill="#3498db" stroke="#2c3e50" stroke-width="1.5"/>
+  <polygon points="218,130 226,122 261,122 253,130" fill="#3498db" opacity="0.3" stroke="#2c3e50" stroke-width="0.5"/>
+  <polygon points="253,130 261,122 261,152 253,160" fill="#3498db" opacity="0.2" stroke="#2c3e50" stroke-width="0.5"/>
+  <rect x="253" y="130" width="35" height="30" fill="#3498db" stroke="#2c3e50" stroke-width="1.5"/>
+  <polygon points="253,130 261,122 296,122 288,130" fill="#3498db" opacity="0.3" stroke="#2c3e50" stroke-width="0.5"/>
+  <polygon points="288,130 296,122 296,152 288,160" fill="#3498db" opacity="0.2" stroke="#2c3e50" stroke-width="0.5"/>
+  <rect x="288" y="130" width="35" height="30" fill="#3498db" stroke="#2c3e50" stroke-width="1.5"/>
+  <polygon points="288,130 296,122 331,122 323,130" fill="#3498db" opacity="0.3" stroke="#2c3e50" stroke-width="0.5"/>
+  <polygon points="323,130 331,122 331,152 323,160" fill="#3498db" opacity="0.2" stroke="#2c3e50" stroke-width="0.5"/>
+  <rect x="83" y="102" width="35" height="30" fill="#3498db" stroke="#2c3e50" stroke-width="1.5"/>
+  <polygon points="83,102 91,94 126,94 118,102" fill="#3498db" opacity="0.3" stroke="#2c3e50" stroke-width="0.5"/>
+  <polygon points="118,102 126,94 126,124 118,132" fill="#3498db" opacity="0.2" stroke="#2c3e50" stroke-width="0.5"/>
+  <rect x="118" y="102" width="35" height="30" fill="#3498db" stroke="#2c3e50" stroke-width="1.5"/>
+  <polygon points="118,102 126,94 161,94 153,102" fill="#3498db" opacity="0.3" stroke="#2c3e50" stroke-width="0.5"/>
+  <polygon points="153,102 161,94 161,124 153,132" fill="#3498db" opacity="0.2" stroke="#2c3e50" stroke-width="0.5"/>
+  <rect x="153" y="102" width="35" height="30" fill="#3498db" stroke="#2c3e50" stroke-width="1.5"/>
+  <polygon points="153,102 161,94 196,94 188,102" fill="#3498db" opacity="0.3" stroke="#2c3e50" stroke-width="0.5"/>
+  <polygon points="188,102 196,94 196,124 188,132" fill="#3498db" opacity="0.2" stroke="#2c3e50" stroke-width="0.5"/>
+  <rect x="188" y="102" width="35" height="30" fill="#3498db" stroke="#2c3e50" stroke-width="1.5"/>
+  <polygon points="188,102 196,94 231,94 223,102" fill="#3498db" opacity="0.3" stroke="#2c3e50" stroke-width="0.5"/>
+  <polygon points="223,102 231,94 231,124 223,132" fill="#3498db" opacity="0.2" stroke="#2c3e50" stroke-width="0.5"/>
+  <rect x="223" y="102" width="35" height="30" fill="#3498db" stroke="#2c3e50" stroke-width="1.5"/>
+  <polygon points="223,102 231,94 266,94 258,102" fill="#3498db" opacity="0.3" stroke="#2c3e50" stroke-width="0.5"/>
+  <polygon points="258,102 266,94 266,124 258,132" fill="#3498db" opacity="0.2" stroke="#2c3e50" stroke-width="0.5"/>
+  <rect x="258" y="102" width="35" height="30" fill="#3498db" stroke="#2c3e50" stroke-width="1.5"/>
+  <polygon points="258,102 266,94 301,94 293,102" fill="#3498db" opacity="0.3" stroke="#2c3e50" stroke-width="0.5"/>
+  <polygon points="293,102 301,94 301,124 293,132" fill="#3498db" opacity="0.2" stroke="#2c3e50" stroke-width="0.5"/>
+</svg>

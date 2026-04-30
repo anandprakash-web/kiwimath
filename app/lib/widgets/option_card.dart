@@ -4,7 +4,10 @@ import '../theme/kiwi_theme.dart';
 
 enum OptionState { idle, selected, selectedCorrect, selectedWrong, disabled }
 
-/// v2 option card — compact, with letter badge (A/B/C/D).
+/// v3 option card — designed for 2x2 grid layout.
+///
+/// Compact, centered text, no letter badge clutter.
+/// Inspired by competitor's clean card-per-option style.
 class OptionCard extends StatelessWidget {
   final String text;
   final int index;
@@ -24,117 +27,92 @@ class OptionCard extends StatelessWidget {
     Color bg;
     Color borderColor;
     Color fg;
-    Color badgeBg;
-    Color badgeFg;
-    Color badgeBorder;
-
-    // Badge color palette — each option gets a fun color
-    const badgeIdleColors = [
-      Color(0xFF448AFF), // A: blue
-      Color(0xFFFF6D00), // B: orange
-      Color(0xFF00C853), // C: green
-      Color(0xFFAA00FF), // D: purple
-    ];
-    final idleBadgeColor = badgeIdleColors[index % badgeIdleColors.length];
+    double borderWidth;
+    IconData? trailingIcon;
+    Color? iconColor;
 
     switch (state) {
       case OptionState.selected:
         bg = const Color(0xFFE3F2FD);
         borderColor = const Color(0xFF448AFF);
         fg = KiwiColors.textDark;
-        badgeBg = const Color(0xFF448AFF);
-        badgeFg = Colors.white;
-        badgeBorder = const Color(0xFF448AFF);
+        borderWidth = 2.5;
         break;
       case OptionState.selectedCorrect:
         bg = const Color(0xFFE8F5E9);
         borderColor = const Color(0xFF00C853);
         fg = KiwiColors.textDark;
-        badgeBg = const Color(0xFF00C853);
-        badgeFg = Colors.white;
-        badgeBorder = const Color(0xFF00C853);
+        borderWidth = 2.5;
+        trailingIcon = Icons.check_circle;
+        iconColor = const Color(0xFF00C853);
         break;
       case OptionState.selectedWrong:
         bg = const Color(0xFFFFEBEE);
         borderColor = const Color(0xFFFF5252);
         fg = KiwiColors.textDark;
-        badgeBg = const Color(0xFFFF5252);
-        badgeFg = Colors.white;
-        badgeBorder = const Color(0xFFFF5252);
+        borderWidth = 2.5;
+        trailingIcon = Icons.cancel;
+        iconColor = const Color(0xFFFF5252);
         break;
       case OptionState.disabled:
         bg = Colors.grey.shade50;
         borderColor = Colors.grey.shade200;
         fg = Colors.grey.shade400;
-        badgeBg = Colors.grey.shade100;
-        badgeFg = Colors.grey.shade400;
-        badgeBorder = Colors.grey.shade200;
+        borderWidth = 1.5;
         break;
       case OptionState.idle:
         bg = KiwiColors.cardBg;
-        borderColor = idleBadgeColor.withOpacity(0.2);
+        borderColor = const Color(0xFFE0E0E0);
         fg = KiwiColors.textDark;
-        badgeBg = idleBadgeColor.withOpacity(0.1);
-        badgeFg = idleBadgeColor;
-        badgeBorder = idleBadgeColor.withOpacity(0.3);
+        borderWidth = 1.5;
     }
 
-    final letter = String.fromCharCode(65 + index); // A, B, C, D
-
-    return Padding(
-      padding: const EdgeInsets.only(bottom: 8),
+    return GestureDetector(
+      onTap: (state == OptionState.idle || state == OptionState.selected)
+          ? onTap
+          : null,
       child: AnimatedContainer(
-        duration: const Duration(milliseconds: 150),
-        child: Material(
+        duration: const Duration(milliseconds: 200),
+        curve: Curves.easeOut,
+        padding: const EdgeInsets.symmetric(vertical: 14, horizontal: 12),
+        decoration: BoxDecoration(
           color: bg,
-          borderRadius: BorderRadius.circular(14),
-          elevation: state == OptionState.idle ? 2 : 0,
-          shadowColor: idleBadgeColor.withOpacity(0.15),
-          child: InkWell(
-            borderRadius: BorderRadius.circular(12),
-            onTap: (state == OptionState.idle || state == OptionState.selected)
-                ? onTap
-                : null,
-            child: Container(
-              padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 16),
-              decoration: BoxDecoration(
-                border: Border.all(color: borderColor, width: 2),
-                borderRadius: BorderRadius.circular(14),
-              ),
-              child: Row(
-                children: [
-                  Container(
-                    width: 28,
-                    height: 28,
-                    decoration: BoxDecoration(
-                      color: badgeBg,
-                      shape: BoxShape.circle,
-                      border: Border.all(color: badgeBorder, width: 1.5),
-                    ),
-                    alignment: Alignment.center,
-                    child: Text(
-                      letter,
-                      style: TextStyle(
-                        fontSize: 12,
-                        fontWeight: FontWeight.w700,
-                        color: badgeFg,
-                      ),
-                    ),
+          border: Border.all(color: borderColor, width: borderWidth),
+          borderRadius: BorderRadius.circular(16),
+          boxShadow: state == OptionState.idle
+              ? [
+                  BoxShadow(
+                    color: Colors.black.withOpacity(0.04),
+                    blurRadius: 6,
+                    offset: const Offset(0, 2),
                   ),
-                  const SizedBox(width: 12),
-                  Expanded(
-                    child: Text(
-                      text,
-                      style: TextStyle(
-                        fontSize: 15,
-                        fontWeight: FontWeight.w600,
-                        color: fg,
-                      ),
-                    ),
+                ]
+              : null,
+        ),
+        child: Center(
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Flexible(
+                child: Text(
+                  text,
+                  style: TextStyle(
+                    fontSize: 15,
+                    fontWeight: FontWeight.w600,
+                    color: fg,
+                    height: 1.3,
                   ),
-                ],
+                  textAlign: TextAlign.center,
+                  maxLines: 3,
+                  overflow: TextOverflow.ellipsis,
+                ),
               ),
-            ),
+              if (trailingIcon != null) ...[
+                const SizedBox(width: 6),
+                Icon(trailingIcon, size: 20, color: iconColor),
+              ],
+            ],
           ),
         ),
       ),

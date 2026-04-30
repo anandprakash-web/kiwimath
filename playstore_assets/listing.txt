@@ -1,0 +1,64 @@
+==========================================
+PLAY STORE LISTING — Kiwimath
+==========================================
+
+APP NAME: Kiwimath
+
+SHORT DESCRIPTION (80 chars max):
+Fun, adaptive math practice for Grades 1-6 with hints, characters & rewards!
+
+FULL DESCRIPTION (4000 chars max):
+Kiwimath makes math fun with 10,000+ questions that adapt to your child's level. Featuring friendly characters like Kiwi, Chikoo, and Captain Kiwi, every problem becomes a mini adventure.
+
+HOW IT WORKS
+Questions start easy and get harder as your child improves. If they struggle, the difficulty steps down automatically — no frustration, just steady progress. A smart hint system gives gentle nudges without spoiling the answer.
+
+WHAT'S INSIDE
+• 10,000+ carefully crafted math questions across 8 topics
+• Grades 1 through 6 — from counting to fractions to logic puzzles
+• Adaptive difficulty that matches each child's ability
+• 3-level hint ladder for every question — scaffolded support
+• Specific feedback on wrong answers — not just "try again" but "12 is too high because..."
+• Olympiad-level problems for advanced learners (Felix & Écolier inspired)
+
+TOPICS COVERED
+• Counting & Number Sense
+• Arithmetic & Operations
+• Patterns & Sequences
+• Logic & Reasoning
+• Spatial Thinking & Geometry
+• Shapes & Measurement
+• Word Problems
+• Puzzles & Brain Teasers
+
+FUN CHARACTERS
+Meet Kiwi the curious bird, Chef Cheetah who loves cooking with fractions, Builder Bee who measures everything, and many more! Characters make problems relatable and turn math into storytelling.
+
+REWARDS THAT MOTIVATE
+Earn XP, collect badges, and level up through 10 stages. Streak bonuses encourage daily practice. Every correct answer feels like a win.
+
+FOR PARENTS
+Track your child's progress with a parent dashboard showing strengths, areas for improvement, and learning patterns. See which topics need attention and celebrate milestones together.
+
+DESIGNED FOR CHILDREN
+• No ads — ever
+• No data collection
+• COPPA compliant
+• Works offline for practice sessions
+• Clean, distraction-free interface
+
+Built by educators who believe every child can love math — they just need the right nudge.
+
+Download Kiwimath and watch your child's confidence in math grow!
+
+==========================================
+CATEGORY: Education
+CONTENT RATING: Everyone
+TARGET AGE: 5-12 (Grades 1-6)
+==========================================
+
+TAGS/KEYWORDS:
+math, kids math, grade 1 math, grade 2 math, grade 3 math, elementary math,
+adaptive learning, math practice, math games for kids, olympiad math,
+counting, arithmetic, fractions, geometry, patterns, logic puzzles,
+educational app, learning app, STEM, math tutor

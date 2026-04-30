@@ -1,0 +1,9 @@
+<svg viewBox="0 0 400 80" xmlns="http://www.w3.org/2000/svg" font-family="system-ui">
+<rect x="20" y="20" width="200" height="40" fill="#FFF9C4" stroke="#2C3E50" stroke-width="1.5"/>
+<line x1="120" y1="20" x2="120" y2="60" stroke="#2C3E50" stroke-width="1" stroke-dasharray="4,3"/>
+<text x="120" y="15" text-anchor="middle" font-size="10" fill="#666">fold here</text>
+<text x="240" y="45" font-size="16" fill="#333">→</text>
+<rect x="270" y="20" width="100" height="40" fill="#FFF9C4" stroke="#2C3E50" stroke-width="1.5"/>
+<line x1="320" y1="20" x2="320" y2="60" stroke="#FF6B6B" stroke-width="2" stroke-dasharray="4,3"/>
+<text x="320" y="15" text-anchor="middle" font-size="10" fill="#FF6B6B">cut</text>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <rect width="200" height="200" fill="#f0f4f8" rx="12"/>
+  <text x="100" y="28" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#333">12 Cookies</text>
+  <circle cx="36.0" cy="59.66666666666667" r="10.4" fill="#ABEBC6" stroke="#333" stroke-width="1.5"/>
+  <circle cx="68.0" cy="59.66666666666667" r="10.4" fill="#BB8FCE" stroke="#333" stroke-width="1.5"/>
+  <circle cx="100.0" cy="59.66666666666667" r="10.4" fill="#BB8FCE" stroke="#333" stroke-width="1.5"/>
+  <circle cx="132.0" cy="59.66666666666667" r="10.4" fill="#F8C471" stroke="#333" stroke-width="1.5"/>
+  <circle cx="164.0" cy="59.66666666666667" r="10.4" fill="#82E0AA" stroke="#333" stroke-width="1.5"/>
+  <circle cx="36.0" cy="103.00000000000001" r="10.4" fill="#4ECDC4" stroke="#333" stroke-width="1.5"/>
+  <circle cx="68.0" cy="103.00000000000001" r="10.4" fill="#F9E79F" stroke="#333" stroke-width="1.5"/>
+  <circle cx="100.0" cy="103.00000000000001" r="10.4" fill="#85C1E9" stroke="#333" stroke-width="1.5"/>
+  <circle cx="132.0" cy="103.00000000000001" r="10.4" fill="#BB8FCE" stroke="#333" stroke-width="1.5"/>
+  <circle cx="164.0" cy="103.00000000000001" r="10.4" fill="#F9E79F" stroke="#333" stroke-width="1.5"/>
+  <circle cx="36.0" cy="146.33333333333334" r="10.4" fill="#FFEAA7" stroke="#333" stroke-width="1.5"/>
+  <circle cx="68.0" cy="146.33333333333334" r="10.4" fill="#98D8C8" stroke="#333" stroke-width="1.5"/>
+</svg>

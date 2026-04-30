@@ -12,14 +12,30 @@ import 'package:flutter/material.dart';
 // Shared base colors (used across both tiers)
 // ===========================================================================
 class KiwiColors {
-  // Brand — candy-bright kiwi green
-  static const Color kiwiGreen = Color(0xFF00C853);
-  static const Color kiwiGreenDark = Color(0xFF00962E);
-  static const Color kiwiGreenLight = Color(0xFFD5FFDB);
+  // Brand — v4.1 warm kiwi green
+  static const Color kiwiGreen = Color(0xFF4CAF50);
+  static const Color kiwiGreenDark = Color(0xFF2E7D32);
+  static const Color kiwiGreenLight = Color(0xFFE8F5E9);
 
-  // Functional — vivid, high-saturation
-  static const Color correct = Color(0xFF00E676);
-  static const Color wrong = Color(0xFFFF5252);
+  // v4.1 palette additions
+  static const Color coral = Color(0xFFFF6B6B);
+  static const Color amber = Color(0xFFFFB74D);
+  static const Color teal = Color(0xFF26C6DA);
+  static const Color indigo = Color(0xFF7C4DFF);
+  static const Color sky = Color(0xFF42A5F5);
+
+  // Functional — v4.1 softer feedback colors
+  static const Color correct = Color(0xFF66BB6A);
+  static const Color correctBg = Color(0xFFE8F5E9);
+  static const Color wrong = Color(0xFFFF8A65);
+  static const Color wrongBg = Color(0xFFFFF3E0);
+
+  // Path states
+  static const Color pathDone = Color(0xFF4CAF50);
+  static const Color pathCurrent = Color(0xFFFFB74D);
+  static const Color pathLocked = Color(0xFFE0E0E0);
+
+  // Legacy functional colors (still used across tiers)
   static const Color gemBlue = Color(0xFF448AFF);
   static const Color xpPurple = Color(0xFFAA00FF);
   static const Color gemGold = Color(0xFFFFD600);
@@ -32,11 +48,13 @@ class KiwiColors {
   static const Color warmOrangeBg = Color(0xFFFFF3E0);
   static const Color warmOrangeBorder = Color(0xFFFFCC80);
 
-  // Surfaces — warm and inviting
-  static const Color background = Color(0xFFF8FFF2);
+  // Surfaces — v4.1 warm cream
+  static const Color background = Color(0xFFFFFBF5);
+  static const Color backgroundDark = Color(0xFFF5F0EA);
   static const Color cardBg = Color(0xFFFFFFFF);
   static const Color textDark = Color(0xFF1A1A2E);
-  static const Color textMuted = Color(0xFF7B7B8E);
+  static const Color textMid = Color(0xFF4A4A5A);
+  static const Color textMuted = Color(0xFF9A9AAA);
 
   // Visual card backgrounds — brighter
   static const Color visualYellowBg = Color(0xFFFFFDE7);
@@ -76,9 +94,11 @@ class KiwiTierColors {
   final Color primaryDark;
   final Color accent;
   final Color background;
+  final Color backgroundDark;
   final Color cardBg;
   final Color textPrimary;
   final Color textSecondary;
+  final Color textMuted;
   final Color streakGradientStart;
   final Color streakGradientEnd;
   final Color buttonGradientStart;
@@ -90,9 +110,11 @@ class KiwiTierColors {
     required this.primaryDark,
     required this.accent,
     required this.background,
+    required this.backgroundDark,
     required this.cardBg,
     required this.textPrimary,
     required this.textSecondary,
+    required this.textMuted,
     required this.streakGradientStart,
     required this.streakGradientEnd,
     required this.buttonGradientStart,
@@ -100,19 +122,21 @@ class KiwiTierColors {
     required this.topicCardBorder,
   });
 
-  /// K-2: Candy-bright, warm, playful — pure joy.
+  /// K-2: v4.1 warm cream palette — friendly, playful, inviting.
   static const junior = KiwiTierColors(
-    primary: Color(0xFF00C853),       // Candy green
-    primaryDark: Color(0xFF00962E),
-    accent: Color(0xFFFFD600),        // Sunshine yellow
-    background: Color(0xFFFFFDE7),    // Warm buttercream
+    primary: Color(0xFF4CAF50),        // Kiwi green (v4.1)
+    primaryDark: Color(0xFF2E7D32),
+    accent: Color(0xFFFFD600),         // Sunshine yellow
+    background: Color(0xFFFFFBF5),     // Warm cream (v4.1)
+    backgroundDark: Color(0xFFF5F0EA), // Warm cream dark (v4.1)
     cardBg: Color(0xFFFFFFFF),
-    textPrimary: Color(0xFF3E2723),   // Warm dark brown
-    textSecondary: Color(0xFF8D6E63), // Warm muted brown
+    textPrimary: Color(0xFF1A1A2E),    // v4.1 textDark
+    textSecondary: Color(0xFF4A4A5A),  // v4.1 textMid
+    textMuted: Color(0xFF9A9AAA),      // v4.1 textMuted
     streakGradientStart: Color(0xFFFF6D00),  // Blazing orange
     streakGradientEnd: Color(0xFFFF3D00),    // Fire red-orange
-    buttonGradientStart: Color(0xFF00E676),  // Neon green
-    buttonGradientEnd: Color(0xFF00C853),
+    buttonGradientStart: Color(0xFF4CAF50),  // Kiwi green (v4.1)
+    buttonGradientEnd: Color(0xFF2E7D32),    // Kiwi dark (v4.1)
     topicCardBorder: Color(0xFFFFD54F),      // Golden border
   );
 
@@ -122,9 +146,11 @@ class KiwiTierColors {
     primaryDark: Color(0xFF304FFE),
     accent: Color(0xFF00E5FF),        // Neon cyan
     background: Color(0xFFF0F4FF),    // Cool lavender white
+    backgroundDark: Color(0xFFE0E4EE),
     cardBg: Color(0xFFFFFFFF),
     textPrimary: Color(0xFF1A1A2E),   // Deep navy
     textSecondary: Color(0xFF7C4DFF), // Vivid purple
+    textMuted: Color(0xFF9A9AAA),
     streakGradientStart: Color(0xFF7C4DFF),  // Purple pop
     streakGradientEnd: Color(0xFF304FFE),    // Deep indigo
     buttonGradientStart: Color(0xFF448AFF),  // Bright blue

@@ -1,0 +1,8 @@
+<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="200" cy="30" r="20" fill="#f1c40f" stroke="#e67e22" stroke-width="2"/>
+  <circle cx="200" cy="100" r="15" fill="#3498db" stroke="#333" stroke-width="2"/>
+  <text x="200" y="105" text-anchor="middle" font-size="10" fill="white">K</text>
+  <ellipse cx="200" cy="170" rx="40" ry="10" fill="#3498db" opacity="0.3"/>
+  <text x="200" y="45" text-anchor="middle" font-size="9" fill="#999">above</text>
+  <text x="200" y="155" text-anchor="middle" font-size="9" fill="#999">below</text>
+</svg>

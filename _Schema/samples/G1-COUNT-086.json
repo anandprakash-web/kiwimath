@@ -1,0 +1,100 @@
+{
+  "id": "G1-COUNT-086",
+  "grade": 1,
+  "topic": "logic_ordering",
+  "subtopic": "balance_reasoning",
+  "subskills": [
+    "transitive_reasoning",
+    "equivalence_chains"
+  ],
+  "difficulty": 5,
+  "tier": "challenge",
+  "source_inspiration": "Kangaroo Felix \u2014 balance scale chains",
+  "pedagogy": "exploration",
+  "stem_template": "On a balance: 1 watermelon = 2 pineapples. 1 pineapple = {K} oranges. How many oranges balance 1 watermelon?",
+  "answer_type": "multiple_choice",
+  "interaction": {
+    "type": "multiple_choice",
+    "fallback_type": "multiple_choice"
+  },
+  "visual": null,
+  "visual_manifest": {
+    "art_brief": "Two balance scales. Scale 1: 1 watermelon on the left = 2 pineapples on the right (balanced). Scale 2: 1 pineapple on the left = {K} oranges on the right (balanced). A third empty scale with a watermelon on the left and a '?' on the right.",
+    "alt_text": "Balance scale puzzle: watermelon = 2 pineapples, pineapple = {K} oranges.",
+    "style": "warm_cartoon",
+    "layout_hint": "stacked",
+    "visual_type": "diagram"
+  },
+  "params": {
+    "K": {
+      "range": [
+        2,
+        4
+      ]
+    }
+  },
+  "derived": {},
+  "answer_formula": "2 * K",
+  "distractors": [
+    {
+      "formula": "K",
+      "label": "one_pineapple_only"
+    },
+    {
+      "formula": "K + 2",
+      "label": "added_instead"
+    },
+    {
+      "formula": "2",
+      "label": "gave_pineapple_count"
+    }
+  ],
+  "misconceptions": [
+    {
+      "trigger_answer": "K",
+      "diagnosis": "forgot_two_pineapples",
+      "feedback_child": "{K} oranges = 1 pineapple. But the watermelon = 2 pineapples! So double it.",
+      "step_down_path": [
+        "G1-COUNT-086-S1",
+        "G1-COUNT-086-S2"
+      ]
+    },
+    {
+      "trigger_answer": "K + 2",
+      "diagnosis": "added_instead_of_multiplied",
+      "feedback_child": "Don't add \u2014 each pineapple becomes {K} oranges. 2 pineapples = 2 groups of {K}.",
+      "step_down_path": [
+        "G1-COUNT-086-S1"
+      ]
+    },
+    {
+      "trigger_answer": "2",
+      "diagnosis": "gave_pineapples_not_oranges",
+      "feedback_child": "2 is the pineapple count! Replace each pineapple with {K} oranges.",
+      "step_down_path": [
+        "G1-COUNT-086-S1",
+        "G1-COUNT-086-S2"
+      ]
+    }
+  ],
+  "socratic_feedback": {
+    "on_correct": "Exactly! 1 watermelon = 2 pineapples = 2 \u00d7 {K} oranges. Chain reasoning!",
+    "generic_incorrect": "Step by step: 1 watermelon = 2 pineapples. Now replace EACH pineapple with oranges.",
+    "encouragement_after_retry": "Draw it: watermelon \u2192 2 pineapples \u2192 ? oranges each."
+  },
+  "curriculum_alignment": {
+    "cambridge_stage": 2,
+    "kangaroo_level": "Felix",
+    "olympiad_skill": "Transitive Reasoning / Equivalence Chains",
+    "reference": "Kangaroo Felix balance problems"
+  },
+  "tags": [
+    "topic:logic",
+    "skill:transitive",
+    "level:olympiad_foundation"
+  ],
+  "est_time_seconds": 55,
+  "version": 1,
+  "author": "AP",
+  "status": "draft"
+}

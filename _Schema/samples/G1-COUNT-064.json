@@ -1,0 +1,115 @@
+{
+  "id": "G1-COUNT-064",
+  "grade": 1,
+  "topic": "counting_observation",
+  "subtopic": "one_more",
+  "subskills": [
+    "cardinality",
+    "addition_readiness"
+  ],
+  "difficulty": 1,
+  "tier": "warmup",
+  "source_inspiration": "Singapore CPA \u2014 1 more/1 less",
+  "pedagogy": "cpa_concrete",
+  "stem_template": "{name} has {N} {object}. {name} finds 1 more. How many {object} does {name} have now?",
+  "answer_type": "multiple_choice",
+  "interaction": {
+    "type": "multiple_choice",
+    "fallback_type": "multiple_choice"
+  },
+  "visual": null,
+  "visual_manifest": {
+    "art_brief": "{N} {object} on the left side. On the right, 1 extra {object} with a sparkle or glow around it to show it's new.",
+    "alt_text": "{N} {object} and 1 more being added.",
+    "style": "warm_cartoon",
+    "layout_hint": "row",
+    "visual_type": "illustration"
+  },
+  "params": {
+    "N": {
+      "range": [
+        2,
+        8
+      ]
+    },
+    "name": {
+      "pool": [
+        "Aarav",
+        "Mei",
+        "Sofia",
+        "Kofi",
+        "Liam"
+      ]
+    },
+    "object": {
+      "pool": [
+        "stickers",
+        "shells",
+        "marbles",
+        "coins"
+      ]
+    }
+  },
+  "derived": {},
+  "answer_formula": "N + 1",
+  "distractors": [
+    {
+      "formula": "N",
+      "label": "forgot_new_one"
+    },
+    {
+      "formula": "N - 1",
+      "label": "subtracted_instead"
+    },
+    {
+      "formula": "N + 2",
+      "label": "added_two"
+    }
+  ],
+  "misconceptions": [
+    {
+      "trigger_answer": "N",
+      "diagnosis": "forgot_the_extra",
+      "feedback_child": "{name} found 1 MORE \u2014 that means one extra! Add it to the group.",
+      "step_down_path": [
+        "G1-COUNT-064-S1"
+      ]
+    },
+    {
+      "trigger_answer": "N - 1",
+      "diagnosis": "subtracted_instead_of_added",
+      "feedback_child": "Finding more means you have MORE, not less!",
+      "step_down_path": [
+        "G1-COUNT-064-S1"
+      ]
+    },
+    {
+      "trigger_answer": "N + 2",
+      "diagnosis": "added_two_not_one",
+      "feedback_child": "{name} found just 1 more, not 2. Add only one to the group.",
+      "step_down_path": [
+        "G1-COUNT-064-S1"
+      ]
+    }
+  ],
+  "socratic_feedback": {
+    "on_correct": "{N} and 1 more makes {N} + 1. That's the number right after {N}!",
+    "generic_incorrect": "Hold up {N} fingers. Now put up one more. How many fingers now?",
+    "encouragement_after_retry": "Count them all together \u2014 the old ones plus the new one."
+  },
+  "curriculum_alignment": {
+    "common_core": "K.CC.B.4c",
+    "cambridge_stage": 1,
+    "cambridge_strand": "Number: Counting On",
+    "singapore_strand": "Whole Numbers"
+  },
+  "tags": [
+    "topic:counting",
+    "skill:one_more",
+    "cpa:concrete"
+  ],
+  "est_time_seconds": 15,
+  "version": 1,
+  "author": "AP",
+  "status": "draft"
+}

@@ -1,0 +1,5 @@
+<svg viewBox="0 0 170 160" xmlns="http://www.w3.org/2000/svg" font-family="system-ui">
+<circle cx="80" cy="75" r="55" fill="#4ECDC4" stroke="#2C3E50" stroke-width="2" opacity="0.5"/>
+<rect x="58" y="53" width="44" height="44" fill="#FF6B6B" stroke="#2C3E50" stroke-width="1.5" opacity="0.5"/>
+<text x="80" y="145" text-anchor="middle" font-size="11" fill="#333">Which takes up more space?</text>
+</svg>

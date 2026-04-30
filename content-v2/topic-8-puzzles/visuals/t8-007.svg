@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <rect width="200" height="200" fill="#f0f4f8" rx="12"/>
+  <text x="100" y="28" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#333">9 Blocks</text>
+  <rect x="27.0" y="50.56666666666667" width="26.0" height="18.2" fill="#85C1E9" stroke="#333" stroke-width="1.5" rx="2"/>
+  <rect x="67.0" y="50.56666666666667" width="26.0" height="18.2" fill="#F8C471" stroke="#333" stroke-width="1.5" rx="2"/>
+  <rect x="107.0" y="50.56666666666667" width="26.0" height="18.2" fill="#4ECDC4" stroke="#333" stroke-width="1.5" rx="2"/>
+  <rect x="147.0" y="50.56666666666667" width="26.0" height="18.2" fill="#85C1E9" stroke="#333" stroke-width="1.5" rx="2"/>
+  <rect x="27.0" y="93.90000000000002" width="26.0" height="18.2" fill="#D2B4DE" stroke="#333" stroke-width="1.5" rx="2"/>
+  <rect x="67.0" y="93.90000000000002" width="26.0" height="18.2" fill="#D2B4DE" stroke="#333" stroke-width="1.5" rx="2"/>
+  <rect x="107.0" y="93.90000000000002" width="26.0" height="18.2" fill="#AED6F1" stroke="#333" stroke-width="1.5" rx="2"/>
+  <rect x="147.0" y="93.90000000000002" width="26.0" height="18.2" fill="#D2B4DE" stroke="#333" stroke-width="1.5" rx="2"/>
+  <rect x="27.0" y="137.23333333333335" width="26.0" height="18.2" fill="#4ECDC4" stroke="#333" stroke-width="1.5" rx="2"/>
+</svg>

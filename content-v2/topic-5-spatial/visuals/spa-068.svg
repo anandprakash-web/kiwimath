@@ -1,0 +1,7 @@
+<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <text x="100" y="30" text-anchor="middle" font-family="system-ui" font-size="12" fill="#666">Before</text>
+  <text x="300" y="30" text-anchor="middle" font-family="system-ui" font-size="12" fill="#666">After</text>
+  <text x="200" y="100" text-anchor="middle" font-family="system-ui" font-size="24" fill="#999">⟶</text>
+  <polygon points="100,60 75,120 125,120" fill="#2ecc71" stroke="#2c3e50" stroke-width="2"/>
+  <circle cx="300" cy="100" r="30" fill="#e74c3c" stroke="#2c3e50" stroke-width="2"/>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <rect width="200" height="200" fill="#f0f4f8" rx="12"/>
+  <text x="100" y="28" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#333">3 Trees</text>
+  <rect x="44.06666666666667" y="103.0" width="5.2" height="17.333333333333336" fill="#8B4513" stroke="#333" stroke-width="1"/><circle cx="46.66666666666667" cy="101.26666666666667" r="10.4" fill="#F7DC6F" stroke="#333" stroke-width="1.2"/>
+  <rect x="97.40000000000002" y="103.0" width="5.2" height="17.333333333333336" fill="#8B4513" stroke="#333" stroke-width="1"/><circle cx="100.00000000000001" cy="101.26666666666667" r="10.4" fill="#F1948A" stroke="#333" stroke-width="1.2"/>
+  <rect x="150.73333333333335" y="103.0" width="5.2" height="17.333333333333336" fill="#8B4513" stroke="#333" stroke-width="1"/><circle cx="153.33333333333334" cy="101.26666666666667" r="10.4" fill="#AED6F1" stroke="#333" stroke-width="1.2"/>
+</svg>

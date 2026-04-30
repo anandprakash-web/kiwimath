@@ -1,0 +1,15 @@
+<svg viewBox="0 0 280 110" xmlns="http://www.w3.org/2000/svg" font-family="system-ui">
+<text x="30" y="50" text-anchor="middle" font-size="32" fill="#2C3E50" font-weight="bold">A</text>
+<line x1="48" y1="20" x2="48" y2="60" stroke="#FF6B6B" stroke-width="1" stroke-dasharray="3,2"/>
+<text x="30" y="75" text-anchor="middle" font-size="10" fill="#333">A</text>
+<text x="90" y="50" text-anchor="middle" font-size="32" fill="#2C3E50" font-weight="bold">B</text>
+<line x1="108" y1="20" x2="108" y2="60" stroke="#FF6B6B" stroke-width="1" stroke-dasharray="3,2"/>
+<text x="90" y="75" text-anchor="middle" font-size="10" fill="#333">B</text>
+<text x="150" y="50" text-anchor="middle" font-size="32" fill="#2C3E50" font-weight="bold">H</text>
+<line x1="168" y1="20" x2="168" y2="60" stroke="#FF6B6B" stroke-width="1" stroke-dasharray="3,2"/>
+<text x="150" y="75" text-anchor="middle" font-size="10" fill="#333">C</text>
+<text x="210" y="50" text-anchor="middle" font-size="32" fill="#2C3E50" font-weight="bold">F</text>
+<line x1="228" y1="20" x2="228" y2="60" stroke="#FF6B6B" stroke-width="1" stroke-dasharray="3,2"/>
+<text x="210" y="75" text-anchor="middle" font-size="10" fill="#333">D</text>
+<text x="120" y="95" text-anchor="middle" font-size="10" fill="#FF6B6B">mirror on right side →</text>
+</svg>

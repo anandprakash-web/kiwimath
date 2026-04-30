@@ -7,19 +7,18 @@ import '../services/api_client.dart';
 import '../services/companion_service.dart';
 import '../theme/kiwi_theme.dart';
 import '../widgets/companion_view.dart';
-import '../widgets/feedback_banner.dart';
 import '../widgets/hint_ladder_bar.dart';
 import '../widgets/option_card.dart';
 import 'celebration_screen.dart';
 
-/// v2 question screen — stateless adaptive practice.
+/// v3 question screen — clean, competitor-informed redesign.
 ///
-/// Uses the v2 API which is simpler than the session-based v1:
-///   1. Fetch next question (GET /v2/questions/next)
-///   2. Display question with choices
-///   3. Check answer (POST /v2/answer/check)
-///   4. Adjust difficulty based on response
-///   5. Repeat until 10 questions answered
+/// Key changes from v2:
+///   - Segmented progress dots instead of gradient bar
+///   - 2x2 grid options instead of vertical list
+///   - Minimal wrong-answer feedback with "Why?" button
+///   - In-place correct answer celebration
+///   - Cleaner header (back + dots + one stat)
 class QuestionScreenV2 extends StatefulWidget {
   final String topicId;
   final String topicName;
@@ -27,6 +26,10 @@ class QuestionScreenV2 extends StatefulWidget {
   final int grade;
   final VoidCallback? onBackToHome;
   final CompanionService? companionService;
+
+  /// If provided, uses these as the question queue (smart session mode)
+  /// instead of calling /v2/questions/next one at a time.
+  final List<Map<String, dynamic>>? sessionPlan;
 
   const QuestionScreenV2({
     super.key,
@@ -36,6 +39,7 @@ class QuestionScreenV2 extends StatefulWidget {
     this.grade = 1,
     this.onBackToHome,
     this.companionService,
+    this.sessionPlan,
   });
 
   @override
@@ -54,7 +58,6 @@ enum _PhaseV2 {
 class _QuestionScreenV2State extends State<QuestionScreenV2> {
   final ApiClient _api = ApiClient();
 
-  // Grade-adaptive tier for proper theming.
   KiwiTier get _tier => KiwiTier.forGrade(widget.grade);
 
   // Session state
@@ -64,13 +67,16 @@ class _QuestionScreenV2State extends State<QuestionScreenV2> {
   int? _selectedIndex;
   String? _error;
 
-  // Difficulty tracking — start at easiest (1) and let adaptive engine ramp up
+  // Difficulty tracking
   int _currentDifficulty = 1;
 
   // Progress tracking
   int _questionsAnswered = 0;
-  final int _totalQuestions = 10;
+  late final int _totalQuestions;
   int _correctCount = 0;
+
+  // Smart session mode — index into sessionPlan
+  int _planIndex = 0;
   int _xp = 0;
   int _coins = 0;
   int _gems = 0;
@@ -79,10 +85,10 @@ class _QuestionScreenV2State extends State<QuestionScreenV2> {
   // Exclude already-answered question IDs
   final List<String> _excludeIds = [];
 
-  // Track hint usage per question for gamification
+  // Track hint usage per question
   int _maxHintLevel = -1;
 
-  // Time tracking for adaptive engine
+  // Time tracking
   DateTime? _questionStartTime;
 
   // Companion state
@@ -108,6 +114,7 @@ class _QuestionScreenV2State extends State<QuestionScreenV2> {
   @override
   void initState() {
     super.initState();
+    _totalQuestions = widget.sessionPlan?.length ?? 10;
     widget.companionService?.startNewLesson();
     widget.companionService?.startDeepThinkMonitor();
     _fetchNextQuestion();
@@ -128,14 +135,31 @@ class _QuestionScreenV2State extends State<QuestionScreenV2> {
     });
 
     try {
-      final question = await _api.nextQuestionV2(
-        topic: widget.topicId,
-        difficulty: _currentDifficulty,
-        window: 10,
-        exclude: _excludeIds.isNotEmpty ? _excludeIds : null,
-        userId: widget.userId,
-        grade: widget.grade,
-      );
+      QuestionV2 question;
+
+      if (widget.sessionPlan != null) {
+        // Smart session mode — load questions by ID from the plan
+        if (_planIndex >= widget.sessionPlan!.length) {
+          // Plan exhausted — show session complete
+          _showSessionComplete();
+          return;
+        }
+        final planItem = widget.sessionPlan![_planIndex];
+        final questionId = planItem['question_id'] as String;
+        question = await _api.getQuestionV2(questionId);
+        _planIndex++;
+      } else {
+        // Default topic-locked mode
+        question = await _api.nextQuestionV2(
+          topic: widget.topicId,
+          difficulty: _currentDifficulty,
+          window: 10,
+          exclude: _excludeIds.isNotEmpty ? _excludeIds : null,
+          userId: widget.userId,
+          grade: widget.grade,
+        );
+      }
+
       if (!mounted) return;
 
       setState(() {
@@ -168,7 +192,6 @@ class _QuestionScreenV2State extends State<QuestionScreenV2> {
 
     setState(() => _phase = _PhaseV2.submitting);
 
-    // Calculate time taken
     final timeTakenMs = _questionStartTime != null
         ? DateTime.now().difference(_questionStartTime!).inMilliseconds
         : 0;
@@ -187,7 +210,6 @@ class _QuestionScreenV2State extends State<QuestionScreenV2> {
       _questionsAnswered++;
       _excludeIds.add(q.questionId);
 
-      // Update counters from API response
       _xp += result.xpEarned;
       _coins += result.coinsEarned;
       _gems += result.gemsEarned;
@@ -197,18 +219,15 @@ class _QuestionScreenV2State extends State<QuestionScreenV2> {
         _correctCount++;
         _streak++;
         setState(() => _phase = _PhaseV2.correct);
-        // Trigger companion celebration bounce
         _companionKey.currentState?.playCelebration();
       } else {
         _streak = 0;
         setState(() => _phase = _PhaseV2.wrong);
       }
 
-      // Show gamification events
       _showGamificationEvents(result);
     } catch (e) {
       if (!mounted) return;
-      // Roll back to selected so the Check button reappears.
       setState(() => _phase = _PhaseV2.selected);
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
@@ -219,8 +238,7 @@ class _QuestionScreenV2State extends State<QuestionScreenV2> {
           backgroundColor: const Color(0xFFE65100),
           behavior: SnackBarBehavior.floating,
           margin: const EdgeInsets.fromLTRB(16, 0, 16, 80),
-          shape:
-              RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
           duration: const Duration(seconds: 4),
         ),
       );
@@ -232,12 +250,10 @@ class _QuestionScreenV2State extends State<QuestionScreenV2> {
   // -------------------------------------------------------------------
 
   void _showGamificationEvents(AnswerCheckResponse result) {
-    // XP toast
     if (result.xpEarned > 0) {
       _showXpToast(result.xpEarned);
     }
 
-    // Micro celebration snackbar
     if (result.microCelebration != null) {
       Future.delayed(const Duration(milliseconds: 400), () {
         if (!mounted) return;
@@ -258,7 +274,6 @@ class _QuestionScreenV2State extends State<QuestionScreenV2> {
       });
     }
 
-    // Badge unlocks
     if (result.badgeUnlocks.isNotEmpty) {
       Future.delayed(const Duration(milliseconds: 800), () {
         if (!mounted) return;
@@ -268,7 +283,6 @@ class _QuestionScreenV2State extends State<QuestionScreenV2> {
       });
     }
 
-    // Level up
     if (result.levelUp != null) {
       Future.delayed(
         Duration(milliseconds: result.badgeUnlocks.isNotEmpty ? 1600 : 800),
@@ -306,7 +320,6 @@ class _QuestionScreenV2State extends State<QuestionScreenV2> {
         );
       },
       pageBuilder: (ctx, _, __) {
-        // Auto-dismiss after 3 seconds
         Future.delayed(const Duration(seconds: 3), () {
           if (Navigator.of(ctx, rootNavigator: true).canPop()) {
             Navigator.of(ctx, rootNavigator: true).pop();
@@ -501,11 +514,37 @@ class _QuestionScreenV2State extends State<QuestionScreenV2> {
     }
   }
 
-  void _onTryAgain() {
-    setState(() {
-      _selectedIndex = null;
-      _phase = _PhaseV2.answering;
-    });
+  void _onWhyPressed() {
+    final q = _question;
+    final result = _lastResult;
+    if (q == null) return;
+
+    final correctIdx = result?.correctAnswer ?? q.correctAnswer;
+    final selectedIdx = _selectedIndex ?? 0;
+
+    final correctAnswer = correctIdx < q.choices.length
+        ? q.choices[correctIdx]
+        : 'Answer ${correctIdx + 1}';
+    final wrongAnswer = selectedIdx < q.choices.length
+        ? q.choices[selectedIdx]
+        : 'Your pick';
+    final feedback = result?.feedback ?? 'Let\'s understand this better.';
+
+    showModalBottomSheet(
+      context: context,
+      isScrollControlled: true,
+      backgroundColor: Colors.transparent,
+      builder: (ctx) => _WhyBottomSheet(
+        feedbackMessage: feedback,
+        questionStem: q.stem,
+        correctAnswer: correctAnswer,
+        wrongAnswer: wrongAnswer,
+        onDone: () {
+          Navigator.of(ctx).pop(); // close sheet
+          _onWrongContinue();
+        },
+      ),
+    );
   }
 
   void _showSessionComplete() {
@@ -522,11 +561,11 @@ class _QuestionScreenV2State extends State<QuestionScreenV2> {
           totalQuestions: _totalQuestions,
           companionService: widget.companionService,
           onContinue: () {
-            Navigator.of(context).pop(); // pop celebration
+            Navigator.of(context).pop();
             if (widget.onBackToHome != null) {
               widget.onBackToHome!();
             } else {
-              Navigator.of(context).maybePop(); // pop question screen
+              Navigator.of(context).maybePop();
             }
           },
         ),
@@ -548,7 +587,6 @@ class _QuestionScreenV2State extends State<QuestionScreenV2> {
             : Column(
                 children: [
                   _buildTopBar(),
-                  _buildDifficultyBar(),
                   Expanded(child: _buildContent()),
                   _buildBottomBar(),
                 ],
@@ -557,6 +595,7 @@ class _QuestionScreenV2State extends State<QuestionScreenV2> {
     );
   }
 
+  /// v3 top bar: back arrow + segmented dots + report flag + XP badge
   Widget _buildTopBar() {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
@@ -565,70 +604,43 @@ class _QuestionScreenV2State extends State<QuestionScreenV2> {
           // Close / back button
           GestureDetector(
             onTap: widget.onBackToHome ?? () => Navigator.of(context).maybePop(),
-            child: const Icon(Icons.close, size: 22, color: KiwiColors.textMuted),
-          ),
-          const SizedBox(width: 10),
-          // Progress bar (question count) — thicker, rounded, gradient feel
-          Expanded(
             child: Container(
-              height: 10,
+              width: 32,
+              height: 32,
               decoration: BoxDecoration(
-                color: _tier.colors.primary.withOpacity(0.1),
-                borderRadius: BorderRadius.circular(5),
+                color: _tier.colors.primary.withOpacity(0.08),
+                shape: BoxShape.circle,
               ),
-              child: FractionallySizedBox(
-                alignment: Alignment.centerLeft,
-                widthFactor: _totalQuestions > 0
-                    ? (_questionsAnswered / _totalQuestions).clamp(0.0, 1.0)
-                    : 0,
-                child: Container(
-                  decoration: BoxDecoration(
-                    gradient: LinearGradient(
-                      colors: [
-                        _tier.colors.buttonGradientStart,
-                        _tier.colors.buttonGradientEnd,
-                      ],
-                    ),
-                    borderRadius: BorderRadius.circular(5),
-                    boxShadow: [
-                      BoxShadow(
-                        color: _tier.colors.primary.withOpacity(0.3),
-                        blurRadius: 4,
-                        offset: const Offset(0, 1),
-                      ),
-                    ],
-                  ),
+              child: Icon(Icons.close, size: 18, color: _tier.colors.textSecondary),
+            ),
+          ),
+          const SizedBox(width: 12),
+          // Segmented progress dots — one per question
+          Expanded(child: _buildProgressDots()),
+          const SizedBox(width: 8),
+          // Report / flag — only shown when a question is loaded
+          if (_question != null) ...[
+            GestureDetector(
+              onTap: _onReportPressed,
+              child: Container(
+                width: 32,
+                height: 32,
+                decoration: BoxDecoration(
+                  color: _tier.colors.primary.withOpacity(0.08),
+                  shape: BoxShape.circle,
+                ),
+                child: Icon(
+                  Icons.flag_outlined,
+                  size: 18,
+                  color: _tier.colors.textSecondary,
                 ),
               ),
             ),
-          ),
-          const SizedBox(width: 10),
-          // Question counter — show as "Q 3/10"
-          Container(
-            padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
-            decoration: BoxDecoration(
-              color: _tier.colors.primary.withOpacity(0.1),
-              borderRadius: BorderRadius.circular(8),
-            ),
-            child: Text(
-              'Q $_questionsAnswered/$_totalQuestions',
-              style: TextStyle(
-                fontSize: 11,
-                fontWeight: FontWeight.w700,
-                color: _tier.colors.primaryDark,
-              ),
-            ),
-          ),
-          const SizedBox(width: 8),
-          // Coin badge
-          _StatBadge(icon: Icons.monetization_on, value: '$_coins', color: KiwiColors.gemGold),
-          const SizedBox(width: 5),
-          // Gem badge
-          _StatBadge(icon: Icons.diamond, value: '$_gems', color: KiwiColors.gemBlue),
-          const SizedBox(width: 5),
-          // XP badge
+            const SizedBox(width: 8),
+          ],
+          // Single stat: XP
           _StatBadge(icon: Icons.bolt, value: '$_xp', color: KiwiColors.xpPurple),
-          // Streak indicator (only when active)
+          // Streak fire (only when hot)
           if (_streak >= 2) ...[
             const SizedBox(width: 6),
             _StatBadge(
@@ -642,89 +654,53 @@ class _QuestionScreenV2State extends State<QuestionScreenV2> {
     );
   }
 
-  Widget _buildDifficultyBar() {
-    if (_phase == _PhaseV2.loading) return const SizedBox.shrink();
+  // -------------------------------------------------------------------
+  // Report / flag question (Task #194)
+  // -------------------------------------------------------------------
 
-    final tierLabel = _question?.difficultyTier ?? 'easy';
-    final diffColor = _difficultyColor(tierLabel);
-
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 0),
-      child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 7),
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-            colors: [
-              diffColor.withOpacity(0.1),
-              diffColor.withOpacity(0.05),
-            ],
-          ),
-          borderRadius: BorderRadius.circular(12),
-          border: Border.all(color: diffColor.withOpacity(0.2)),
-        ),
-        child: Row(
-          children: [
-            Icon(Icons.trending_up, size: 14, color: diffColor),
-            const SizedBox(width: 6),
-            Expanded(
-              child: Text(
-                widget.topicName,
-                style: TextStyle(
-                  fontSize: 11,
-                  fontWeight: FontWeight.w700,
-                  color: diffColor,
-                ),
-                overflow: TextOverflow.ellipsis,
-              ),
-            ),
-            const SizedBox(width: 8),
-            // Difficulty progress bar (1-100) — gradient fill
-            SizedBox(
-              width: 60,
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(4),
-                child: LinearProgressIndicator(
-                  value: _currentDifficulty / 100.0,
-                  minHeight: 5,
-                  backgroundColor: diffColor.withOpacity(0.12),
-                  valueColor: AlwaysStoppedAnimation<Color>(diffColor),
-                ),
-              ),
-            ),
-            const SizedBox(width: 6),
-            Container(
-              padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
-              decoration: BoxDecoration(
-                color: diffColor.withOpacity(0.15),
-                borderRadius: BorderRadius.circular(10),
-                border: Border.all(color: diffColor.withOpacity(0.3)),
-              ),
-              child: Text(
-                tierLabel,
-                style: TextStyle(
-                  fontSize: 9,
-                  fontWeight: FontWeight.w800,
-                  color: diffColor,
-                ),
-              ),
-            ),
-          ],
-        ),
+  void _onReportPressed() {
+    final q = _question;
+    if (q == null) return;
+    showModalBottomSheet<void>(
+      context: context,
+      isScrollControlled: true,
+      backgroundColor: Colors.transparent,
+      builder: (ctx) => _ReportQuestionSheet(
+        questionId: q.questionId,
+        userId: widget.userId,
+        api: _api,
       ),
     );
   }
 
-  Color _difficultyColor(String tier) {
-    switch (tier.toLowerCase()) {
-      case 'easy':
-        return const Color(0xFF00C853);
-      case 'medium':
-        return const Color(0xFFFF6D00);
-      case 'hard':
-        return const Color(0xFFFF5252);
-      default:
-        return const Color(0xFF00C853);
-    }
+  /// Segmented progress dots: filled = answered, current = pulse, empty = upcoming
+  Widget _buildProgressDots() {
+    return Row(
+      children: List.generate(_totalQuestions, (i) {
+        final isAnswered = i < _questionsAnswered;
+        final isCurrent = i == _questionsAnswered && _phase != _PhaseV2.loading;
+
+        Color dotColor;
+        if (isAnswered) {
+          dotColor = _tier.colors.primary;
+        } else if (isCurrent) {
+          dotColor = _tier.colors.primary.withOpacity(0.4);
+        } else {
+          dotColor = _tier.colors.primary.withOpacity(0.12);
+        }
+
+        return Expanded(
+          child: Container(
+            height: isCurrent ? 6 : 4,
+            margin: EdgeInsets.only(right: i < _totalQuestions - 1 ? 3 : 0),
+            decoration: BoxDecoration(
+              color: dotColor,
+              borderRadius: BorderRadius.circular(3),
+            ),
+          ),
+        );
+      }),
+    );
   }
 
   Widget _buildContent() {
@@ -733,16 +709,16 @@ class _QuestionScreenV2State extends State<QuestionScreenV2> {
     }
 
     final q = _question!;
-
     final companionSvc = widget.companionService;
+
     return SingleChildScrollView(
       padding: const EdgeInsets.symmetric(horizontal: 16),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const SizedBox(height: 8),
+          const SizedBox(height: 4),
 
-          // Companion — floats to the right of the topic chip
+          // Companion — floats to the right
           if (companionSvc != null && companionSvc.isLoaded)
             Align(
               alignment: Alignment.centerRight,
@@ -752,71 +728,31 @@ class _QuestionScreenV2State extends State<QuestionScreenV2> {
                   key: _companionKey,
                   surface: _companionSurface,
                   config: companionSvc.config!,
-                  size: 56,
+                  size: 48,
                   picoAppearancesInLesson: companionSvc.picoAppearancesInLesson,
                 ),
               ),
             ),
 
-          // Topic chip — gradient pill
-          Container(
-            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
-            decoration: BoxDecoration(
-              gradient: LinearGradient(
-                colors: [
-                  _tier.colors.primary.withOpacity(0.12),
-                  _tier.colors.accent.withOpacity(0.08),
-                ],
-              ),
-              borderRadius: BorderRadius.circular(16),
-              border: Border.all(
-                color: _tier.colors.primary.withOpacity(0.2),
-              ),
-            ),
-            child: Text(
-              q.topicName,
-              style: TextStyle(
-                fontSize: 11,
-                fontWeight: FontWeight.w700,
-                color: _tier.colors.primaryDark,
-              ),
-            ),
-          ),
-          const SizedBox(height: 10),
-
-          // SVG visual from URL
+          // SVG visual — full width, light-gray bg (Brilliant-style separation)
           if (q.visualSvgUrl != null) ...[
             Container(
               width: double.infinity,
               padding: const EdgeInsets.all(14),
               decoration: BoxDecoration(
-                gradient: LinearGradient(
-                  colors: [
-                    KiwiColors.visualYellowBg,
-                    KiwiColors.visualBlueBg.withOpacity(0.3),
-                  ],
-                  begin: Alignment.topLeft,
-                  end: Alignment.bottomRight,
-                ),
+                color: const Color(0xFFF3F1EC),
                 borderRadius: BorderRadius.circular(16),
                 border: Border.all(
-                  color: KiwiColors.visualYellowBorder,
+                  color: const Color(0xFFE0DDD6),
                   width: 1.5,
                 ),
-                boxShadow: [
-                  BoxShadow(
-                    color: KiwiColors.visualYellowBorder.withOpacity(0.2),
-                    blurRadius: 8,
-                    offset: const Offset(0, 3),
-                  ),
-                ],
               ),
               child: Center(
                 child: Semantics(
                   label: q.visualAlt ?? 'Question illustration',
                   image: true,
                   child: ConstrainedBox(
-                    constraints: const BoxConstraints(maxHeight: 120),
+                    constraints: const BoxConstraints(maxHeight: 140),
                     child: SvgPicture.network(
                       _api.visualUrlV2(q.questionId),
                       fit: BoxFit.contain,
@@ -827,6 +763,34 @@ class _QuestionScreenV2State extends State<QuestionScreenV2> {
                           child: CircularProgressIndicator(strokeWidth: 2),
                         ),
                       ),
+                      errorBuilder: (context, error, stackTrace) {
+                        final alt = q.visualAlt;
+                        if (alt != null && alt.isNotEmpty) {
+                          return Padding(
+                            padding: const EdgeInsets.symmetric(vertical: 8),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Icon(Icons.image_outlined,
+                                    size: 18, color: Colors.grey.shade400),
+                                const SizedBox(width: 8),
+                                Flexible(
+                                  child: Text(
+                                    alt,
+                                    style: TextStyle(
+                                      fontSize: 12,
+                                      color: Colors.grey.shade600,
+                                      fontStyle: FontStyle.italic,
+                                    ),
+                                    textAlign: TextAlign.center,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          );
+                        }
+                        return const SizedBox.shrink();
+                      },
                     ),
                   ),
                 ),
@@ -835,7 +799,7 @@ class _QuestionScreenV2State extends State<QuestionScreenV2> {
             const SizedBox(height: 14),
           ],
 
-          // Stem
+          // Stem — clean, large, bold
           Text(
             q.stem,
             style: TextStyle(
@@ -845,66 +809,119 @@ class _QuestionScreenV2State extends State<QuestionScreenV2> {
               height: 1.45,
             ),
           ),
-          const SizedBox(height: 14),
 
-          // Choices
-          ...List.generate(q.choices.length, (i) {
-            return OptionCard(
-              text: q.choices[i],
-              index: i,
-              state: _optionStateFor(i),
-              onTap: () => _onOptionTap(i),
-            );
-          }),
-
-          // Hint ladder button (shown when available and not yet answered)
+          // Hint button — between stem and options (always visible)
           if (q.hintLadder != null &&
               (_phase == _PhaseV2.answering || _phase == _PhaseV2.selected))
             Padding(
-              padding: const EdgeInsets.only(top: 8),
+              padding: const EdgeInsets.only(top: 10, bottom: 12),
               child: Align(
-                alignment: Alignment.centerLeft,
+                alignment: Alignment.centerRight,
                 child: HintButton(
                   hintLadder: q.hintLadder!,
                   onHintRevealed: (level) {
-                    // Track hint usage for gamification
                     _maxHintLevel = level > _maxHintLevel ? level : _maxHintLevel;
                   },
                 ),
               ),
             )
-          // Fallback: simple hint text for questions without structured hints
+          // Fallback: simple hint text between stem and options
           else if (q.hint != null &&
               (_phase == _PhaseV2.answering || _phase == _PhaseV2.selected))
             Padding(
-              padding: const EdgeInsets.only(top: 8),
-              child: Container(
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-                decoration: BoxDecoration(
-                  color: const Color(0xFFE3F2FD),
-                  borderRadius: BorderRadius.circular(10),
-                  border: Border.all(color: const Color(0xFF90CAF9)),
-                ),
-                child: Row(
-                  children: [
-                    const Icon(Icons.lightbulb_outline,
-                        size: 16, color: Color(0xFF1565C0)),
-                    const SizedBox(width: 8),
-                    Expanded(
-                      child: Text(
-                        q.hint!,
-                        style: const TextStyle(
-                          fontSize: 12,
-                          color: Color(0xFF1976D2),
-                          height: 1.3,
+              padding: const EdgeInsets.only(top: 8, bottom: 12),
+              child: Align(
+                alignment: Alignment.centerRight,
+                child: GestureDetector(
+                  onTap: () {
+                    showModalBottomSheet(
+                      context: context,
+                      backgroundColor: Colors.transparent,
+                      builder: (ctx) => Container(
+                        padding: const EdgeInsets.all(20),
+                        decoration: const BoxDecoration(
+                          color: Color(0xFFFAFCFF),
+                          borderRadius: BorderRadius.vertical(top: Radius.circular(24)),
+                        ),
+                        child: Column(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            Container(
+                              width: 40, height: 4,
+                              decoration: BoxDecoration(
+                                color: const Color(0xFFBDBDBD),
+                                borderRadius: BorderRadius.circular(2),
+                              ),
+                            ),
+                            const SizedBox(height: 16),
+                            const Row(
+                              children: [
+                                Text('\u{1F95D}', style: TextStyle(fontSize: 20)),
+                                SizedBox(width: 8),
+                                Text(
+                                  'Hint',
+                                  style: TextStyle(
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.w700,
+                                    color: KiwiColors.textDark,
+                                  ),
+                                ),
+                              ],
+                            ),
+                            const SizedBox(height: 12),
+                            Text(
+                              q.hint!,
+                              style: const TextStyle(
+                                fontSize: 14,
+                                color: Color(0xFF1976D2),
+                                height: 1.4,
+                              ),
+                            ),
+                            const SizedBox(height: 20),
+                          ],
                         ),
                       ),
+                    );
+                  },
+                  child: Container(
+                    padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                    decoration: BoxDecoration(
+                      gradient: const LinearGradient(
+                        colors: [Color(0xFFB3E5FC), Color(0xFF81D4FA)],
+                      ),
+                      borderRadius: BorderRadius.circular(16),
+                      boxShadow: [
+                        BoxShadow(
+                          color: const Color(0xFF039BE5).withOpacity(0.2),
+                          blurRadius: 6,
+                          offset: const Offset(0, 2),
+                        ),
+                      ],
                     ),
-                  ],
+                    child: const Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Text('\u{1F95D}', style: TextStyle(fontSize: 14)),
+                        SizedBox(width: 4),
+                        Text(
+                          'Hint',
+                          style: TextStyle(
+                            fontSize: 12,
+                            fontWeight: FontWeight.w700,
+                            color: Color(0xFF0277BD),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
                 ),
               ),
-            ),
+            )
+          else
+            const SizedBox(height: 16),
+
+          // 2x2 Grid Options
+          _buildOptionsGrid(q),
 
           const SizedBox(height: 16),
         ],
@@ -912,29 +929,97 @@ class _QuestionScreenV2State extends State<QuestionScreenV2> {
     );
   }
 
-  Widget _buildBottomBar() {
-    // Wrong answer sheet
-    if (_phase == _PhaseV2.wrong) {
-      final result = _lastResult;
-      final feedback = result?.feedback ?? 'Think about the problem again.';
-      final correctIdx = result?.correctAnswer ?? _question?.correctAnswer ?? 0;
-      final correctChoice = _question != null && correctIdx < _question!.choices.length
-          ? _question!.choices[correctIdx]
-          : '';
-
-      return _WrongAnswerSheetV2(
-        feedback: feedback,
-        correctAnswer: correctChoice,
-        onTryAgain: _onTryAgain,
-        onNext: _onWrongContinue,
+  /// 2x2 grid of answer options
+  Widget _buildOptionsGrid(QuestionV2 q) {
+    final count = q.choices.length;
+    // For 2 choices, use a single row. For 3-4, use 2x2 grid.
+    if (count <= 2) {
+      return Row(
+        children: List.generate(count, (i) {
+          return Expanded(
+            child: Padding(
+              padding: EdgeInsets.only(right: i < count - 1 ? 8 : 0),
+              child: OptionCard(
+                text: q.choices[i],
+                index: i,
+                state: _optionStateFor(i),
+                onTap: () => _onOptionTap(i),
+              ),
+            ),
+          );
+        }),
       );
     }
 
-    // Correct answer bar
+    // 2x2 grid for 3-4 choices
+    return Column(
+      children: [
+        Row(
+          children: [
+            Expanded(
+              child: OptionCard(
+                text: q.choices[0],
+                index: 0,
+                state: _optionStateFor(0),
+                onTap: () => _onOptionTap(0),
+              ),
+            ),
+            const SizedBox(width: 10),
+            Expanded(
+              child: OptionCard(
+                text: q.choices[1],
+                index: 1,
+                state: _optionStateFor(1),
+                onTap: () => _onOptionTap(1),
+              ),
+            ),
+          ],
+        ),
+        const SizedBox(height: 10),
+        Row(
+          children: [
+            Expanded(
+              child: OptionCard(
+                text: q.choices[2],
+                index: 2,
+                state: _optionStateFor(2),
+                onTap: () => _onOptionTap(2),
+              ),
+            ),
+            const SizedBox(width: 10),
+            Expanded(
+              child: count > 3
+                  ? OptionCard(
+                      text: q.choices[3],
+                      index: 3,
+                      state: _optionStateFor(3),
+                      onTap: () => _onOptionTap(3),
+                    )
+                  : const SizedBox.shrink(),
+            ),
+          ],
+        ),
+      ],
+    );
+  }
+
+  Widget _buildBottomBar() {
+    // Wrong answer — minimal feedback with "Why?" button + encouragement
+    if (_phase == _PhaseV2.wrong) {
+      return _WrongAnswerSheetV3(
+        onWhy: _onWhyPressed,
+        onContinue: _onWrongContinue,
+        encouragement: _lastResult?.nextAction?['message'] as String?,
+      );
+    }
+
+    // Correct answer — celebration bar
     if (_phase == _PhaseV2.correct) {
-      return CorrectAnswerBar(
+      return _CorrectAnswerBarV3(
         xpEarned: _lastResult?.xpEarned ?? 15,
+        coinsEarned: _lastResult?.coinsEarned ?? 0,
         streak: _streak,
+        encouragement: _lastResult?.nextAction?['message'] as String?,
         onContinue: _onCorrectContinue,
       );
     }
@@ -944,12 +1029,12 @@ class _QuestionScreenV2State extends State<QuestionScreenV2> {
       return _buildCheckButton();
     }
 
-    // Submitting — show spinner
+    // Submitting
     if (_phase == _PhaseV2.submitting) {
       return _buildCheckButton(disabled: true, isLoading: true);
     }
 
-    // Answering state — disabled check button
+    // Answering — disabled check
     if (_phase == _PhaseV2.answering) {
       return _buildCheckButton(disabled: true);
     }
@@ -971,8 +1056,8 @@ class _QuestionScreenV2State extends State<QuestionScreenV2> {
               ? ElevatedButton(
                   onPressed: null,
                   style: ElevatedButton.styleFrom(
-                    disabledBackgroundColor: const Color(0xFFE8E8E8),
-                    disabledForegroundColor: const Color(0xFFAAAAAA),
+                    disabledBackgroundColor: _tier.colors.primary.withOpacity(0.08),
+                    disabledForegroundColor: _tier.colors.primary.withOpacity(0.35),
                     padding: const EdgeInsets.symmetric(vertical: 16),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(_tier.shape.buttonRadius),
@@ -983,16 +1068,16 @@ class _QuestionScreenV2State extends State<QuestionScreenV2> {
                     ),
                   ),
                   child: isLoading
-                      ? const SizedBox(
+                      ? SizedBox(
                           width: 20,
                           height: 20,
                           child: CircularProgressIndicator(
                             strokeWidth: 2,
-                            valueColor:
-                                AlwaysStoppedAnimation<Color>(Color(0xFFAAAAAA)),
+                            valueColor: AlwaysStoppedAnimation<Color>(
+                                _tier.colors.primary.withOpacity(0.4)),
                           ),
                         )
-                      : const Text('Check answer'),
+                      : const Text('Pick an answer'),
                 )
               : DecoratedBox(
                   decoration: BoxDecoration(
@@ -1026,7 +1111,7 @@ class _QuestionScreenV2State extends State<QuestionScreenV2> {
                         fontWeight: FontWeight.w700,
                       ),
                     ),
-                    child: const Text('Check answer'),
+                    child: const Text('Check'),
                   ),
                 ),
         ),
@@ -1090,6 +1175,10 @@ class _QuestionScreenV2State extends State<QuestionScreenV2> {
   }
 }
 
+// ==========================================================================
+// Supporting widgets
+// ==========================================================================
+
 class _StatBadge extends StatelessWidget {
   final IconData icon;
   final String value;
@@ -1128,7 +1217,7 @@ class _StatBadge extends StatelessWidget {
   }
 }
 
-/// Animated "+XP" toast that floats up near the top-right XP badge.
+/// Animated "+XP" toast that floats up near the XP badge.
 class _XpToastAnimation extends StatefulWidget {
   final int xp;
   final VoidCallback onDone;
@@ -1173,7 +1262,6 @@ class _XpToastAnimationState extends State<_XpToastAnimation>
 
   @override
   Widget build(BuildContext context) {
-    // Position near the top-right where the XP badge sits
     final mq = MediaQuery.of(context);
     return Positioned(
       top: mq.padding.top + 6,
@@ -1213,138 +1301,738 @@ class _XpToastAnimationState extends State<_XpToastAnimation>
   }
 }
 
-/// v2-specific wrong answer sheet — shows correct answer and diagnostic feedback.
-class _WrongAnswerSheetV2 extends StatelessWidget {
-  final String feedback;
-  final String correctAnswer;
-  final VoidCallback onTryAgain;
-  final VoidCallback onNext;
+/// v3 wrong answer — minimal, with "Why?" button.
+///
+/// Competitor-inspired: brief text, two clear actions.
+/// "Why?" opens the explanation screen for deeper learning.
+class _WrongAnswerSheetV3 extends StatelessWidget {
+  final VoidCallback onWhy;
+  final VoidCallback onContinue;
+  final String? encouragement;
 
-  const _WrongAnswerSheetV2({
-    required this.feedback,
-    required this.correctAnswer,
-    required this.onTryAgain,
-    required this.onNext,
+  const _WrongAnswerSheetV3({
+    required this.onWhy,
+    required this.onContinue,
+    this.encouragement,
   });
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: const BoxDecoration(
-        color: KiwiColors.warmOrangeBg,
-        border: Border(top: BorderSide(color: KiwiColors.warmOrange, width: 2)),
+      decoration: BoxDecoration(
+        color: const Color(0xFFFFF8F0),
+        border: const Border(
+          top: BorderSide(color: Color(0xFFFFCC80), width: 1.5),
+        ),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withOpacity(0.05),
+            blurRadius: 10,
+            offset: const Offset(0, -2),
+          ),
+        ],
       ),
-      padding: const EdgeInsets.all(14),
+      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 14),
       child: SafeArea(
         top: false,
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          crossAxisAlignment: CrossAxisAlignment.start,
+        child: Row(
           children: [
-            // Title row
-            Row(
-              children: [
-                const Text('\u{1F914}', style: TextStyle(fontSize: 22)),
-                const SizedBox(width: 8),
-                const Expanded(
-                  child: Text(
-                    'Not quite!',
-                    style: TextStyle(
-                      fontWeight: FontWeight.w700,
-                      color: KiwiColors.warmOrangeDark,
-                      fontSize: 15,
-                    ),
-                  ),
-                ),
-                // Show correct answer badge
-                if (correctAnswer.isNotEmpty)
-                  Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
-                    decoration: BoxDecoration(
-                      color: KiwiColors.kiwiGreenLight,
-                      borderRadius: BorderRadius.circular(10),
-                      border: Border.all(color: KiwiColors.kiwiGreen),
-                    ),
-                    child: Row(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        const Icon(Icons.check, size: 14, color: KiwiColors.kiwiGreenDark),
-                        const SizedBox(width: 4),
-                        ConstrainedBox(
-                          constraints: const BoxConstraints(maxWidth: 120),
-                          child: Text(
-                            correctAnswer,
-                            style: const TextStyle(
-                              fontSize: 12,
-                              fontWeight: FontWeight.w700,
-                              color: KiwiColors.kiwiGreenDark,
-                            ),
-                            maxLines: 1,
-                            overflow: TextOverflow.ellipsis,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-              ],
+            // Status indicator
+            Container(
+              width: 36,
+              height: 36,
+              decoration: const BoxDecoration(
+                color: Color(0xFFFFEBEE),
+                shape: BoxShape.circle,
+              ),
+              child: const Icon(Icons.close, size: 20, color: Color(0xFFEF5350)),
             ),
-            const SizedBox(height: 6),
-            // Diagnostic feedback
-            Text(
-              feedback,
-              style: const TextStyle(
-                fontSize: 12,
-                color: Color(0xFFBF360C),
-                height: 1.3,
+            const SizedBox(width: 12),
+            // Text + encouragement
+            Expanded(
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const Text(
+                    'Not quite right.',
+                    style: TextStyle(
+                      fontSize: 15,
+                      fontWeight: FontWeight.w600,
+                      color: Color(0xFFBF360C),
+                    ),
+                  ),
+                  if (encouragement != null && encouragement!.isNotEmpty)
+                    Padding(
+                      padding: const EdgeInsets.only(top: 2),
+                      child: Text(
+                        encouragement!,
+                        style: const TextStyle(
+                          fontSize: 11,
+                          fontWeight: FontWeight.w600,
+                          color: Color(0xFFBF360C),
+                        ),
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
+                      ),
+                    ),
+                ],
               ),
             ),
-            const SizedBox(height: 10),
-            // Action buttons
-            Row(
-              children: [
-                Expanded(
-                  child: OutlinedButton(
-                    onPressed: onTryAgain,
-                    style: OutlinedButton.styleFrom(
-                      foregroundColor: KiwiColors.warmOrangeDark,
-                      side: const BorderSide(color: Color(0xFFFFB74D), width: 2),
-                      padding: const EdgeInsets.symmetric(vertical: 11),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                      textStyle: const TextStyle(
-                        fontSize: 13,
-                        fontWeight: FontWeight.w700,
-                      ),
-                    ),
-                    child: const Text('Try again'),
+            // Why? button — the key innovation
+            GestureDetector(
+              onTap: onWhy,
+              child: Container(
+                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(12),
+                  border: Border.all(color: const Color(0xFFFFCC80), width: 1.5),
+                ),
+                child: const Text(
+                  'Why?',
+                  style: TextStyle(
+                    fontSize: 14,
+                    fontWeight: FontWeight.w700,
+                    color: Color(0xFFE65100),
                   ),
                 ),
-                const SizedBox(width: 8),
-                Expanded(
-                  child: ElevatedButton(
-                    onPressed: onNext,
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: KiwiColors.warmOrange,
-                      foregroundColor: Colors.white,
-                      padding: const EdgeInsets.symmetric(vertical: 11),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                      elevation: 2,
-                      shadowColor: KiwiColors.warmOrange.withAlpha(77),
-                      textStyle: const TextStyle(
-                        fontSize: 13,
-                        fontWeight: FontWeight.w700,
-                      ),
-                    ),
-                    child: const Text('Next question \u2192'),
+              ),
+            ),
+            const SizedBox(width: 8),
+            // Continue button
+            GestureDetector(
+              onTap: onContinue,
+              child: Container(
+                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+                decoration: BoxDecoration(
+                  gradient: const LinearGradient(
+                    colors: [Color(0xFFFF9800), Color(0xFFE65100)],
+                  ),
+                  borderRadius: BorderRadius.circular(12),
+                ),
+                child: const Text(
+                  'Got it',
+                  style: TextStyle(
+                    fontSize: 14,
+                    fontWeight: FontWeight.w700,
+                    color: Colors.white,
                   ),
                 ),
-              ],
+              ),
             ),
           ],
         ),
+      ),
+    );
+  }
+}
+
+/// v3 correct answer — celebration bar with streak emphasis.
+class _CorrectAnswerBarV3 extends StatelessWidget {
+  final int xpEarned;
+  final int coinsEarned;
+  final int streak;
+  final String? encouragement;
+  final VoidCallback onContinue;
+
+  const _CorrectAnswerBarV3({
+    required this.xpEarned,
+    this.coinsEarned = 0,
+    required this.streak,
+    this.encouragement,
+    required this.onContinue,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      decoration: BoxDecoration(
+        color: const Color(0xFFF0FFF0),
+        border: const Border(
+          top: BorderSide(color: Color(0xFF66BB6A), width: 1.5),
+        ),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withOpacity(0.05),
+            blurRadius: 10,
+            offset: const Offset(0, -2),
+          ),
+        ],
+      ),
+      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 14),
+      child: SafeArea(
+        top: false,
+        child: Row(
+          children: [
+            // Green checkmark
+            Container(
+              width: 36,
+              height: 36,
+              decoration: const BoxDecoration(
+                color: Color(0xFFE8F5E9),
+                shape: BoxShape.circle,
+              ),
+              child: const Icon(Icons.check, size: 22, color: Color(0xFF00C853)),
+            ),
+            const SizedBox(width: 12),
+            // "Correct!" text with streak + encouragement + rewards
+            Expanded(
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Row(
+                    children: [
+                      const Text(
+                        'Correct!',
+                        style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.w700,
+                          color: Color(0xFF2E7D32),
+                        ),
+                      ),
+                      if (streak >= 2) ...[
+                        const SizedBox(width: 6),
+                        Text(
+                          '\u{1F525} $streak in a row!',
+                          style: const TextStyle(
+                            fontSize: 12,
+                            fontWeight: FontWeight.w600,
+                            color: Color(0xFFFF8F00),
+                          ),
+                        ),
+                      ],
+                    ],
+                  ),
+                  // Show encouragement message from Kiwi Brain
+                  if (encouragement != null && encouragement!.isNotEmpty)
+                    Padding(
+                      padding: const EdgeInsets.only(top: 2),
+                      child: Text(
+                        encouragement!,
+                        style: const TextStyle(
+                          fontSize: 11,
+                          fontWeight: FontWeight.w500,
+                          color: Color(0xFF388E3C),
+                        ),
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
+                      ),
+                    ),
+                  // Coins earned
+                  if (coinsEarned > 0)
+                    Padding(
+                      padding: const EdgeInsets.only(top: 2),
+                      child: Text(
+                        '+$coinsEarned \u{1FA99}${xpEarned > 0 ? "  +$xpEarned XP" : ""}',
+                        style: const TextStyle(
+                          fontSize: 11,
+                          fontWeight: FontWeight.w700,
+                          color: Color(0xFF66BB6A),
+                        ),
+                      ),
+                    ),
+                ],
+              ),
+            ),
+            // Continue button
+            GestureDetector(
+              onTap: onContinue,
+              child: Container(
+                padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                decoration: BoxDecoration(
+                  gradient: const LinearGradient(
+                    colors: [Color(0xFF66BB6A), Color(0xFF2E7D32)],
+                  ),
+                  borderRadius: BorderRadius.circular(12),
+                  boxShadow: [
+                    BoxShadow(
+                      color: const Color(0xFF2E7D32).withOpacity(0.3),
+                      blurRadius: 8,
+                      offset: const Offset(0, 2),
+                    ),
+                  ],
+                ),
+                child: const Text(
+                  'Continue',
+                  style: TextStyle(
+                    fontSize: 14,
+                    fontWeight: FontWeight.w700,
+                    color: Colors.white,
+                  ),
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+// ===========================================================================
+// Report / Flag Question bottom sheet (Task #194)
+// ===========================================================================
+
+class _ReportQuestionSheet extends StatefulWidget {
+  final String questionId;
+  final String? userId;
+  final ApiClient api;
+
+  const _ReportQuestionSheet({
+    required this.questionId,
+    required this.userId,
+    required this.api,
+  });
+
+  @override
+  State<_ReportQuestionSheet> createState() => _ReportQuestionSheetState();
+}
+
+class _ReportQuestionSheetState extends State<_ReportQuestionSheet> {
+  String? _selectedType;
+  final TextEditingController _commentController = TextEditingController();
+  bool _submitting = false;
+  bool _submitted = false;
+
+  // Display label, internal feedback_type code
+  static const List<List<String>> _options = [
+    ['Wrong answer', 'wrong_answer', '⚠️'],
+    ['Question is unclear', 'unclear_stem', '❓'],
+    ['Bad picture / visual', 'bad_visual', '🖼️'],
+    ['Too easy', 'too_easy', '😴'],
+    ['Too hard', 'too_hard', '😵'],
+    ['Something else', 'other', '💬'],
+  ];
+
+  @override
+  void dispose() {
+    _commentController.dispose();
+    super.dispose();
+  }
+
+  Future<void> _submit() async {
+    final type = _selectedType;
+    if (type == null) return;
+    setState(() => _submitting = true);
+    try {
+      await widget.api.submitQuestionFeedback(
+        questionId: widget.questionId,
+        feedbackType: type,
+        userId: widget.userId,
+        comment: _commentController.text,
+      );
+      if (!mounted) return;
+      setState(() {
+        _submitting = false;
+        _submitted = true;
+      });
+      // Auto-dismiss after a beat so the kid sees the thank-you message.
+      Future.delayed(const Duration(milliseconds: 1100), () {
+        if (mounted) Navigator.of(context).maybePop();
+      });
+    } catch (_) {
+      if (!mounted) return;
+      setState(() => _submitting = false);
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text("Couldn't send report — please try again."),
+          duration: Duration(seconds: 2),
+        ),
+      );
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: EdgeInsets.only(
+        bottom: MediaQuery.of(context).viewInsets.bottom,
+      ),
+      child: Container(
+        decoration: const BoxDecoration(
+          color: Colors.white,
+          borderRadius: BorderRadius.vertical(top: Radius.circular(24)),
+        ),
+        padding: const EdgeInsets.fromLTRB(20, 12, 20, 24),
+        child: SafeArea(
+          top: false,
+          child: _submitted
+              ? const Padding(
+                  padding: EdgeInsets.symmetric(vertical: 24),
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Icon(Icons.check_circle, size: 48, color: KiwiColors.kiwiGreen),
+                      SizedBox(height: 10),
+                      Text(
+                        'Thanks for letting us know!',
+                        style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.w700,
+                          color: KiwiColors.textDark,
+                        ),
+                      ),
+                    ],
+                  ),
+                )
+              : Column(
+                  mainAxisSize: MainAxisSize.min,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Center(
+                      child: Container(
+                        width: 36,
+                        height: 4,
+                        decoration: BoxDecoration(
+                          color: Colors.grey.shade300,
+                          borderRadius: BorderRadius.circular(2),
+                        ),
+                      ),
+                    ),
+                    const SizedBox(height: 14),
+                    const Text(
+                      "What's wrong with this question?",
+                      style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.w800,
+                        color: KiwiColors.textDark,
+                      ),
+                    ),
+                    const SizedBox(height: 12),
+                    ..._options.map((opt) {
+                      final label = opt[0];
+                      final code = opt[1];
+                      final emoji = opt[2];
+                      final isSelected = _selectedType == code;
+                      return Padding(
+                        padding: const EdgeInsets.only(bottom: 8),
+                        child: GestureDetector(
+                          onTap: () => setState(() => _selectedType = code),
+                          child: Container(
+                            padding: const EdgeInsets.symmetric(
+                                horizontal: 14, vertical: 12),
+                            decoration: BoxDecoration(
+                              color: isSelected
+                                  ? KiwiColors.kiwiGreenLight
+                                  : Colors.grey.shade100,
+                              borderRadius: BorderRadius.circular(12),
+                              border: Border.all(
+                                color: isSelected
+                                    ? KiwiColors.kiwiGreen
+                                    : Colors.transparent,
+                                width: 1.5,
+                              ),
+                            ),
+                            child: Row(
+                              children: [
+                                Text(emoji, style: const TextStyle(fontSize: 18)),
+                                const SizedBox(width: 10),
+                                Expanded(
+                                  child: Text(
+                                    label,
+                                    style: TextStyle(
+                                      fontSize: 14,
+                                      fontWeight: FontWeight.w600,
+                                      color: isSelected
+                                          ? KiwiColors.kiwiGreenDark
+                                          : KiwiColors.textDark,
+                                    ),
+                                  ),
+                                ),
+                                if (isSelected)
+                                  const Icon(Icons.check_circle,
+                                      size: 18, color: KiwiColors.kiwiGreen),
+                              ],
+                            ),
+                          ),
+                        ),
+                      );
+                    }),
+                    const SizedBox(height: 6),
+                    TextField(
+                      controller: _commentController,
+                      maxLines: 2,
+                      maxLength: 200,
+                      decoration: InputDecoration(
+                        hintText: 'Add a note (optional)',
+                        hintStyle: TextStyle(
+                          fontSize: 13,
+                          color: Colors.grey.shade500,
+                        ),
+                        contentPadding: const EdgeInsets.symmetric(
+                            horizontal: 12, vertical: 10),
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(10),
+                          borderSide: BorderSide(color: Colors.grey.shade300),
+                        ),
+                        counterText: '',
+                      ),
+                      style: const TextStyle(fontSize: 13),
+                    ),
+                    const SizedBox(height: 12),
+                    SizedBox(
+                      width: double.infinity,
+                      child: ElevatedButton(
+                        onPressed:
+                            _selectedType == null || _submitting ? null : _submit,
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: KiwiColors.kiwiGreen,
+                          foregroundColor: Colors.white,
+                          disabledBackgroundColor: Colors.grey.shade300,
+                          padding: const EdgeInsets.symmetric(vertical: 14),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(12),
+                          ),
+                          textStyle: const TextStyle(
+                            fontSize: 15,
+                            fontWeight: FontWeight.w700,
+                          ),
+                        ),
+                        child: _submitting
+                            ? const SizedBox(
+                                width: 18,
+                                height: 18,
+                                child: CircularProgressIndicator(
+                                  strokeWidth: 2,
+                                  valueColor: AlwaysStoppedAnimation<Color>(
+                                      Colors.white),
+                                ),
+                              )
+                            : const Text('Send report'),
+                      ),
+                    ),
+                  ],
+                ),
+        ),
+      ),
+    );
+  }
+}
+
+/// "Why?" bottom sheet — slides up from the bottom on the same screen.
+///
+/// Shows the explanation inline instead of navigating to a new page.
+/// The kid stays in context and can dismiss by swiping down or tapping "Got it".
+class _WhyBottomSheet extends StatelessWidget {
+  final String feedbackMessage;
+  final String questionStem;
+  final String correctAnswer;
+  final String wrongAnswer;
+  final VoidCallback onDone;
+
+  const _WhyBottomSheet({
+    required this.feedbackMessage,
+    required this.questionStem,
+    required this.correctAnswer,
+    required this.wrongAnswer,
+    required this.onDone,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return DraggableScrollableSheet(
+      initialChildSize: 0.55,
+      minChildSize: 0.3,
+      maxChildSize: 0.85,
+      builder: (context, scrollController) {
+        return Container(
+          decoration: const BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.vertical(top: Radius.circular(24)),
+            boxShadow: [
+              BoxShadow(
+                color: Color(0x1A000000),
+                blurRadius: 20,
+                offset: Offset(0, -4),
+              ),
+            ],
+          ),
+          child: Column(
+            children: [
+              // Drag handle
+              Padding(
+                padding: const EdgeInsets.only(top: 12, bottom: 4),
+                child: Container(
+                  width: 40,
+                  height: 4,
+                  decoration: BoxDecoration(
+                    color: const Color(0xFFE0E0E0),
+                    borderRadius: BorderRadius.circular(2),
+                  ),
+                ),
+              ),
+              // Header
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
+                child: Row(
+                  children: [
+                    Container(
+                      width: 32,
+                      height: 32,
+                      decoration: const BoxDecoration(
+                        color: Color(0xFFFFF3E0),
+                        shape: BoxShape.circle,
+                      ),
+                      child: const Center(
+                        child: Text('\u{1F4A1}', style: TextStyle(fontSize: 16)),
+                      ),
+                    ),
+                    const SizedBox(width: 10),
+                    const Text(
+                      'Understanding the answer',
+                      style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.w700,
+                        color: Color(0xFFE65100),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              const Divider(height: 1, color: Color(0xFFF5F5F5)),
+              // Content
+              Expanded(
+                child: ListView(
+                  controller: scrollController,
+                  padding: const EdgeInsets.all(20),
+                  children: [
+                    // Your answer vs correct answer
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        _buildAnswerChip(wrongAnswer, false),
+                        const Padding(
+                          padding: EdgeInsets.symmetric(horizontal: 10),
+                          child: Icon(Icons.arrow_forward,
+                              color: Color(0xFFBDBDBD), size: 18),
+                        ),
+                        _buildAnswerChip(correctAnswer, true),
+                      ],
+                    ),
+                    const SizedBox(height: 18),
+                    // Explanation
+                    Container(
+                      width: double.infinity,
+                      padding: const EdgeInsets.all(16),
+                      decoration: BoxDecoration(
+                        color: const Color(0xFFFFFDE7),
+                        borderRadius: BorderRadius.circular(14),
+                        border: Border.all(
+                            color: const Color(0xFFFFF9C4), width: 1.5),
+                      ),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          const Text(
+                            'Here\'s why:',
+                            style: TextStyle(
+                              fontSize: 13,
+                              fontWeight: FontWeight.w700,
+                              color: Color(0xFFF57F17),
+                            ),
+                          ),
+                          const SizedBox(height: 8),
+                          Text(
+                            feedbackMessage,
+                            style: const TextStyle(
+                              fontSize: 14,
+                              color: Color(0xFF424242),
+                              height: 1.5,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    const SizedBox(height: 16),
+                    // Question reminder (collapsed)
+                    Container(
+                      width: double.infinity,
+                      padding: const EdgeInsets.all(14),
+                      decoration: BoxDecoration(
+                        color: const Color(0xFFF5F5F5),
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                      child: Text(
+                        questionStem,
+                        style: const TextStyle(
+                          fontSize: 12,
+                          color: Color(0xFF757575),
+                          height: 1.4,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              // Bottom button
+              Padding(
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+                child: SafeArea(
+                  top: false,
+                  child: SizedBox(
+                    width: double.infinity,
+                    child: GestureDetector(
+                      onTap: onDone,
+                      child: Container(
+                        padding: const EdgeInsets.symmetric(vertical: 14),
+                        decoration: BoxDecoration(
+                          gradient: const LinearGradient(
+                            colors: [Color(0xFFFF9800), Color(0xFFE65100)],
+                          ),
+                          borderRadius: BorderRadius.circular(14),
+                        ),
+                        child: const Text(
+                          'Got it, next question \u{2192}',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            fontSize: 15,
+                            fontWeight: FontWeight.w700,
+                            color: Colors.white,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
+        );
+      },
+    );
+  }
+
+  Widget _buildAnswerChip(String text, bool isCorrect) {
+    final color =
+        isCorrect ? const Color(0xFF2E7D32) : const Color(0xFFEF5350);
+    final bg =
+        isCorrect ? const Color(0xFFE8F5E9) : const Color(0xFFFFEBEE);
+    final icon = isCorrect ? Icons.check : Icons.close;
+
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
+      decoration: BoxDecoration(
+        color: bg,
+        borderRadius: BorderRadius.circular(12),
+        border: Border.all(color: color.withOpacity(0.3), width: 1.5),
+      ),
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Icon(icon, color: color, size: 16),
+          const SizedBox(width: 5),
+          Text(
+            text,
+            style: TextStyle(
+              fontSize: 16,
+              fontWeight: FontWeight.w700,
+              color: color,
+            ),
+          ),
+        ],
       ),
     );
   }

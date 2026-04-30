@@ -1,0 +1,9 @@
+<svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+  <rect x="120" y="45" width="160" height="160" fill="#FFFFFF" stroke="#2C3E50" stroke-width="1.5"/>
+  <line x1="200" y1="45" x2="200" y2="205" stroke="#CCC" stroke-width="1" stroke-dasharray="4,3"/>
+  <circle cx="160" cy="95" r="6" fill="#333"/>
+  <circle cx="240" cy="95" r="6" fill="#333"/>
+  <circle cx="160" cy="125" r="6" fill="#333"/>
+  <circle cx="240" cy="125" r="6" fill="#333"/>
+  <defs><marker id="fold-arrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#999"/></marker></defs>
+</svg>

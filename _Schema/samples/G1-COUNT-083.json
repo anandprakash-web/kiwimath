@@ -1,0 +1,108 @@
+{
+  "id": "G1-COUNT-083",
+  "grade": 1,
+  "topic": "counting_observation",
+  "subtopic": "systematic_enumeration",
+  "subskills": [
+    "systematic_listing",
+    "combinatorial_thinking"
+  ],
+  "difficulty": 5,
+  "tier": "challenge",
+  "source_inspiration": "IMO seed \u2014 permutations for young learners",
+  "pedagogy": "exploration",
+  "stem_template": "{name} has 3 coloured blocks: red, blue, and yellow. In how many different orders can {pronoun} line them up?",
+  "answer_type": "multiple_choice",
+  "interaction": {
+    "type": "multiple_choice",
+    "fallback_type": "multiple_choice"
+  },
+  "visual": null,
+  "visual_manifest": {
+    "art_brief": "Three blocks labelled R (red), B (blue), and Y (yellow). Show one example arrangement: R-B-Y. An arrow suggests 'how many other ways?'",
+    "alt_text": "3 coloured blocks that can be arranged.",
+    "style": "warm_cartoon",
+    "layout_hint": "row",
+    "visual_type": "diagram"
+  },
+  "params": {
+    "name": {
+      "pool": [
+        "Aarav",
+        "Mei",
+        "Sofia",
+        "Kofi"
+      ]
+    },
+    "pronoun": {
+      "pool": [
+        "he",
+        "she"
+      ]
+    }
+  },
+  "derived": {},
+  "answer_formula": "6",
+  "distractors": [
+    {
+      "formula": "3",
+      "label": "counted_blocks"
+    },
+    {
+      "formula": "4",
+      "label": "incomplete_list"
+    },
+    {
+      "formula": "9",
+      "label": "three_squared"
+    }
+  ],
+  "misconceptions": [
+    {
+      "trigger_answer": "3",
+      "diagnosis": "counted_objects_not_arrangements",
+      "feedback_child": "3 is how many blocks. Each ORDER is different! Try listing: RBY, RYB...",
+      "step_down_path": [
+        "G1-COUNT-083-S1",
+        "G1-COUNT-083-S2"
+      ]
+    },
+    {
+      "trigger_answer": "4",
+      "diagnosis": "incomplete_enumeration",
+      "feedback_child": "You found some but missed a few! Start with red first: how many ways?",
+      "step_down_path": [
+        "G1-COUNT-083-S1"
+      ]
+    },
+    {
+      "trigger_answer": "9",
+      "diagnosis": "wrong_multiplication",
+      "feedback_child": "Not 3\u00d73. The first spot has 3 choices, next has 2, last has 1. 3\u00d72\u00d71 = ?",
+      "step_down_path": [
+        "G1-COUNT-083-S1",
+        "G1-COUNT-083-S2"
+      ]
+    }
+  ],
+  "socratic_feedback": {
+    "on_correct": "6 different orders! You discovered that 3\u00d72\u00d71 = 6. That's called a factorial!",
+    "generic_incorrect": "Start with red first. How many ways can you arrange blue and yellow after it? Now try blue first...",
+    "encouragement_after_retry": "List them out: red-blue-yellow, red-yellow-blue... keep going!"
+  },
+  "curriculum_alignment": {
+    "cambridge_stage": 2,
+    "kangaroo_level": "Felix",
+    "olympiad_skill": "Systematic Enumeration / Permutations",
+    "reference": "IMO combinatorics foundation"
+  },
+  "tags": [
+    "topic:counting",
+    "skill:permutations",
+    "level:olympiad_foundation"
+  ],
+  "est_time_seconds": 55,
+  "version": 1,
+  "author": "AP",
+  "status": "draft"
+}

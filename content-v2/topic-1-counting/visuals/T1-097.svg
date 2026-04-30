@@ -1,0 +1,7 @@
+<svg viewBox="0 0 180 68" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="28" cy="24" r="14" fill="#f44336" stroke="white" stroke-width="1.5"/>
+<circle cx="66" cy="24" r="14" fill="#f44336" stroke="white" stroke-width="1.5"/>
+<circle cx="104" cy="24" r="14" fill="#f44336" stroke="white" stroke-width="1.5"/>
+
+  <text x="90.0" y="64" text-anchor="middle" font-family="system-ui" font-size="10" fill="#666">Count: apples</text>
+</svg>

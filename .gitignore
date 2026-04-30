@@ -30,6 +30,17 @@ app/.dart_tool/
 app/build/
 app/.flutter-plugins-dependencies
 
+# Flutter generated
+app/.metadata
+
+# Firebase hosting
+.firebase/
+
+# Sensitive files — never commit
+app/android/key.properties
+*.jks
+*.keystore
+
 # OS files
 Thumbs.db
 

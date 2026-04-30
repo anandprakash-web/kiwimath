@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <rect width="200" height="200" fill="#f0f4f8" rx="12"/>
+  <text x="100" y="30" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="bold" fill="#333">Color Pattern</text>
+  <circle cx="29.1" cy="90" r="9.1" fill="#45B7D1" stroke="#333" stroke-width="1.5"/>
+  <circle cx="49.1" cy="90" r="9.1" fill="#F1948A" stroke="#333" stroke-width="1.5"/>
+  <circle cx="69.1" cy="90" r="9.1" fill="#45B7D1" stroke="#333" stroke-width="1.5"/>
+  <circle cx="89.1" cy="90" r="9.1" fill="#F1948A" stroke="#333" stroke-width="1.5"/>
+  <circle cx="109.1" cy="90" r="9.1" fill="#45B7D1" stroke="#333" stroke-width="1.5"/>
+  <circle cx="129.1" cy="90" r="9.1" fill="#F1948A" stroke="#333" stroke-width="1.5"/>
+  <circle cx="149.1" cy="90" r="9.1" fill="#45B7D1" stroke="#333" stroke-width="1.5"/>
+  <circle cx="169.1" cy="90" r="9.1" fill="#F1948A" stroke="#333" stroke-width="1.5"/>
+  <circle cx="189.1" cy="90" r="9.1" fill="#eee" stroke="#333" stroke-width="2" stroke-dasharray="3,2"/>
+  <text x="189.1" y="94" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" font-weight="bold" fill="#555">?</text>
+</svg>

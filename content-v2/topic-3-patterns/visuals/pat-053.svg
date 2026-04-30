@@ -1,0 +1,8 @@
+<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <polygon points="30,60 36,74 50,76 40,88 42,102 30,94 18,102 20,88 10,76 24,74" fill="yellow" stroke="#333" stroke-width="1.5"/>
+  <polygon points="80,60 62,96 98,96" fill="blue" stroke="#333" stroke-width="1.5"/>
+  <polygon points="130,60 136,74 150,76 140,88 142,102 130,94 118,102 120,88 110,76 124,74" fill="yellow" stroke="#333" stroke-width="1.5"/>
+  <polygon points="180,60 162,96 198,96" fill="blue" stroke="#333" stroke-width="1.5"/>
+  <rect x="212" y="62" width="36" height="36" fill="#eee" stroke="#999" stroke-width="2" stroke-dasharray="5,5"/>
+  <text x="230" y="87" text-anchor="middle" font-family="system-ui" font-size="24" fill="#999">?</text>
+</svg>

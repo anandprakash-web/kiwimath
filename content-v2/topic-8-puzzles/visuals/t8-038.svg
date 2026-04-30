@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <rect width="200" height="200" fill="#f0f4f8" rx="12"/>
+  <text x="100" y="28" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#333">Think About It!</text>
+  <circle cx="62.5" cy="100.0" r="24.4" fill="#D2B4DE" stroke="#333" stroke-width="1.5"/>
+  <text x="62.5" y="104.9" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="bold" fill="#333">18</text>
+  <circle cx="137.5" cy="100.0" r="24.4" fill="#82E0AA" stroke="#333" stroke-width="1.5"/>
+  <text x="137.5" y="104.9" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="bold" fill="#333">3</text>
+</svg>

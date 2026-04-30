@@ -1,0 +1,21 @@
+<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <text x="200" y="13" text-anchor="middle" font-family="system-ui" font-size="12" fill="#666">Magic Square (each row, column, diagonal = 15)</text>
+  <rect x="133" y="23" width="45" height="45" fill="#ffffcc" stroke="#333" stroke-width="2"/>
+  <text x="155" y="52" text-anchor="middle" font-family="system-ui" font-size="20" fill="#e74c3c" font-weight="bold">?</text>
+  <rect x="178" y="23" width="45" height="45" fill="#fff" stroke="#333" stroke-width="2"/>
+  <text x="200" y="52" text-anchor="middle" font-family="system-ui" font-size="20" fill="#333" font-weight="bold">7</text>
+  <rect x="223" y="23" width="45" height="45" fill="#fff" stroke="#333" stroke-width="2"/>
+  <text x="245" y="52" text-anchor="middle" font-family="system-ui" font-size="20" fill="#333" font-weight="bold">6</text>
+  <rect x="133" y="68" width="45" height="45" fill="#fff" stroke="#333" stroke-width="2"/>
+  <text x="155" y="97" text-anchor="middle" font-family="system-ui" font-size="20" fill="#333" font-weight="bold">9</text>
+  <rect x="178" y="68" width="45" height="45" fill="#fff" stroke="#333" stroke-width="2"/>
+  <text x="200" y="97" text-anchor="middle" font-family="system-ui" font-size="20" fill="#333" font-weight="bold">5</text>
+  <rect x="223" y="68" width="45" height="45" fill="#fff" stroke="#333" stroke-width="2"/>
+  <text x="245" y="97" text-anchor="middle" font-family="system-ui" font-size="20" fill="#333" font-weight="bold">1</text>
+  <rect x="133" y="113" width="45" height="45" fill="#fff" stroke="#333" stroke-width="2"/>
+  <text x="155" y="142" text-anchor="middle" font-family="system-ui" font-size="20" fill="#333" font-weight="bold">4</text>
+  <rect x="178" y="113" width="45" height="45" fill="#fff" stroke="#333" stroke-width="2"/>
+  <text x="200" y="142" text-anchor="middle" font-family="system-ui" font-size="20" fill="#333" font-weight="bold">3</text>
+  <rect x="223" y="113" width="45" height="45" fill="#fff" stroke="#333" stroke-width="2"/>
+  <text x="245" y="142" text-anchor="middle" font-family="system-ui" font-size="20" fill="#333" font-weight="bold">8</text>
+</svg>

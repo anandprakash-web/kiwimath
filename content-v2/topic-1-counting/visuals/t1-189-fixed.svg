@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100">
+  <rect width="400" height="100" fill="#FFFBF5" rx="12"/>
+  <polygon points="25,40 37,68 13,68" fill="#FF6B6B"/>
+  <polygon points="55,40 67,68 43,68" fill="#FF6B6B"/>
+  <polygon points="85,40 97,68 73,68" fill="#FF6B6B"/>
+  <polygon points="115,40 127,68 103,68" fill="#FF6B6B"/>
+  <polygon points="145,40 157,68 133,68" fill="#FF6B6B"/>
+  <polygon points="175,40 187,68 163,68" fill="#FF6B6B"/>
+  <polygon points="205,40 217,68 193,68" fill="#FF6B6B"/>
+  <polygon points="235,40 247,68 223,68" fill="#FF6B6B"/>
+  <rect x="253" y="40" width="24" height="24" fill="#66BB6A" rx="2"/>
+  <rect x="283" y="40" width="24" height="24" fill="#66BB6A" rx="2"/>
+  <rect x="313" y="40" width="24" height="24" fill="#66BB6A" rx="2"/>
+  <circle cx="355" cy="54" r="13" fill="#42A5F5"/>
+  <text x="200" y="90" text-anchor="middle" font-family="Arial" font-size="10" fill="#999">How many shapes?</text>
+</svg>

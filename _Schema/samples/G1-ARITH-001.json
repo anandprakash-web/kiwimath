@@ -1,0 +1,102 @@
+{
+  "id": "G1-ARITH-001",
+  "grade": 1,
+  "topic": "arithmetic_missing_numbers",
+  "subtopic": "addition_within_10",
+  "subskills": ["addition_basic", "counting_on"],
+  "difficulty": 1,
+  "tier": "warmup",
+  "source_inspiration": "Academic cofounder L1 — add within 10 word problem",
+
+  "pedagogy": "cpa_concrete",
+
+  "stem_template": "{name} has {N} {object}. {pronoun_subject} gets {K} more. How many {object} does {name} have now?",
+  "answer_type": "multiple_choice",
+
+  "interaction": {
+    "type": "multiple_choice",
+    "correct_option_index": null,
+    "fallback_type": "multiple_choice"
+  },
+
+  "visual": {
+    "type": "svg_generator",
+    "generator": "grouped_objects",
+    "params": {"group_a": "{N}", "group_b": "{K}", "object": "{object}"}
+  },
+  "visual_manifest": {
+    "art_brief": "Two groups of {object}: one group of {N} and another group of {K} being added. Bright, colourful cartoon style.",
+    "alt_text": "{N} {object} plus {K} more {object}.",
+    "style": "warm_cartoon",
+    "layout_hint": "two_groups",
+    "visual_type": "illustration"
+  },
+
+  "params": {
+    "N":      {"range": [2, 7]},
+    "K":      {"range": [1, 5], "constraint": "N+K<=10"},
+    "name":   {"pool": ["Aarav", "Priya", "Liam", "Sofia"]},
+    "object": {"pool": ["apples", "marbles", "stickers"]}
+  },
+  "derived": {
+    "pronoun_subject": "pronoun_from_name(name)"
+  },
+
+  "answer_formula": "N+K",
+  "distractors": [
+    {"formula": "N",     "label": "forgot_to_add"},
+    {"formula": "K",     "label": "only_counted_new"},
+    {"formula": "N+K+1", "label": "off_by_one"}
+  ],
+
+  "misconceptions": [
+    {
+      "trigger_answer": "N",
+      "diagnosis": "forgot_to_add",
+      "feedback_child": "Don't forget the extra {object}! {name} got {K} more. Try adding them together.",
+      "step_down_path": ["G1-ARITH-001-S1", "G1-ARITH-001-S2"]
+    },
+    {
+      "trigger_answer": "K",
+      "diagnosis": "only_counted_new",
+      "feedback_child": "That's only the new ones! {name} already had {N} {object} too. Add them all up.",
+      "step_down_path": ["G1-ARITH-001-S1", "G1-ARITH-001-S2"]
+    },
+    {
+      "trigger_answer": "N+K+1",
+      "diagnosis": "off_by_one_high",
+      "feedback_child": "So close! You counted one too many. Try again carefully.",
+      "step_down_path": ["G1-ARITH-001-S1"]
+    }
+  ],
+
+  "socratic_feedback": {
+    "on_correct": "Awesome! {N} + {K} = {N+K}. {name} has {N+K} {object} now!",
+    "on_incorrect": "Let's try again. Start with {N} and count on {K} more.",
+    "on_timeout": "Take your time! Count {N} first, then keep counting {K} more.",
+    "encouragement_after_retry": "You can do it! Use your fingers to count on."
+  },
+
+  "curriculum_alignment": {
+    "common_core": "1.OA.A.1",
+    "cambridge_stage": 1,
+    "cambridge_strand": "Number: Addition and Subtraction",
+    "singapore_strand": "Whole Numbers"
+  },
+
+  "locale_context": {
+    "IN":     {"objects": ["laddoos", "marbles", "stickers"]},
+    "global": {"objects": ["apples", "marbles", "stickers"]}
+  },
+
+  "mastery_config": {
+    "concept_id": "addition.within_10",
+    "weight": 1.0
+  },
+
+  "tags": ["topic:arithmetic", "skill:addition", "cpa:concrete"],
+  "est_time_seconds": 25,
+  "version": 1,
+  "author": "acad-v2",
+  "status": "approved"
+}

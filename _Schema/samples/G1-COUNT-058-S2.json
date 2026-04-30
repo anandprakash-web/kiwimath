@@ -1,0 +1,58 @@
+{
+  "id": "G1-COUNT-058-S2",
+  "grade": 1,
+  "topic": "counting_observation",
+  "subtopic": "scaffolded_step_down",
+  "subskills": [
+    "guided_counting"
+  ],
+  "difficulty": 1,
+  "tier": "warmup",
+  "parent_id": "G1-COUNT-058",
+  "step_index": 2,
+  "stem_template": "Count only the cookies that are NOT crossed out.",
+  "visual": null,
+  "answer_type": "multiple_choice",
+  "params": {
+    "N": {
+      "range": [
+        4,
+        7
+      ]
+    },
+    "K": {
+      "range": [
+        1,
+        2
+      ],
+      "constraint": "K < N"
+    }
+  },
+  "answer_formula": "N - K",
+  "distractors": [
+    {
+      "formula": "N",
+      "label": "counted_all"
+    },
+    {
+      "formula": "K",
+      "label": "counted_crossed"
+    },
+    {
+      "formula": "N - K + 1",
+      "label": "off_by_one"
+    }
+  ],
+  "misconceptions": [],
+  "tags": [
+    "step_down"
+  ],
+  "est_time_seconds": 15,
+  "version": 1,
+  "author": "AP",
+  "status": "draft",
+  "visual_manifest": {
+    "art_brief": "{N} cookies, {K} crossed out. Remaining ones are bright.",
+    "alt_text": "Cookies with {K} crossed out."
+  }
+}

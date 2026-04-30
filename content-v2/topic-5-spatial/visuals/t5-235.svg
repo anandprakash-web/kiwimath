@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <rect width="200" height="200" fill="#f0f4f8" rx="12"/>
+  <text x="100" y="28" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#333">Count Them!</text>
+  <circle cx="46.7" cy="70.5" r="17.3" fill="#FAD7A0" stroke="#333" stroke-width="1.5"/>
+  <circle cx="100.0" cy="70.5" r="17.3" fill="#A3E4D7" stroke="#333" stroke-width="1.5"/>
+  <circle cx="153.3" cy="70.5" r="17.3" fill="#F8C471" stroke="#333" stroke-width="1.5"/>
+  <circle cx="46.7" cy="135.5" r="17.3" fill="#96CEB4" stroke="#333" stroke-width="1.5"/>
+  <circle cx="100.0" cy="135.5" r="17.3" fill="#D2B4DE" stroke="#333" stroke-width="1.5"/>
+</svg>

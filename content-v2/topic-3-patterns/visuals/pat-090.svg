@@ -1,0 +1,13 @@
+<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <rect x="24" y="60" width="36" height="36" rx="6" fill="#3498db" stroke="#2c3e50" stroke-width="1.5"/>
+  <text x="42" y="84" text-anchor="middle" font-family="system-ui" font-size="18" fill="white" font-weight="bold">123</text>
+  <text x="84" y="84" text-anchor="middle" font-family="system-ui" font-size="14" fill="#999">→</text>
+  <rect x="104" y="60" width="36" height="36" rx="6" fill="#3498db" stroke="#2c3e50" stroke-width="1.5"/>
+  <text x="122" y="84" text-anchor="middle" font-family="system-ui" font-size="18" fill="white" font-weight="bold">456</text>
+  <text x="164" y="84" text-anchor="middle" font-family="system-ui" font-size="14" fill="#999">→</text>
+  <rect x="184" y="60" width="36" height="36" rx="6" fill="#3498db" stroke="#2c3e50" stroke-width="1.5"/>
+  <text x="202" y="84" text-anchor="middle" font-family="system-ui" font-size="18" fill="white" font-weight="bold">789</text>
+  <text x="244" y="84" text-anchor="middle" font-family="system-ui" font-size="14" fill="#999">→</text>
+  <rect x="264" y="60" width="36" height="36" rx="6" fill="#3498db" stroke="#2c3e50" stroke-width="1.5"/>
+  <text x="282" y="84" text-anchor="middle" font-family="system-ui" font-size="18" fill="white" font-weight="bold">5</text>
+</svg>

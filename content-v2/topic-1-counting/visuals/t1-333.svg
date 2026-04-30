@@ -1,0 +1,22 @@
+<svg viewBox="0 0 195 125" xmlns="http://www.w3.org/2000/svg"><rect width="195" height="125" fill="#fff8f0" rx="8"/><circle cx="20" cy="20" r="13" fill="#FF6B6B"/>
+<text x="20" y="24" text-anchor="middle" font-size="10" fill="white" font-weight="bold">1</text>
+<circle cx="55" cy="20" r="13" fill="#4ECDC4"/>
+<text x="55" y="24" text-anchor="middle" font-size="10" fill="white" font-weight="bold">2</text>
+<circle cx="90" cy="20" r="13" fill="#45B7D1"/>
+<text x="90" y="24" text-anchor="middle" font-size="10" fill="white" font-weight="bold">3</text>
+<circle cx="125" cy="20" r="13" fill="#FFA07A"/>
+<text x="125" y="24" text-anchor="middle" font-size="10" fill="white" font-weight="bold">4</text>
+<circle cx="160" cy="20" r="13" fill="#98D8C8"/>
+<text x="160" y="24" text-anchor="middle" font-size="10" fill="white" font-weight="bold">5</text>
+<circle cx="20" cy="55" r="13" fill="#F7DC6F"/>
+<text x="20" y="59" text-anchor="middle" font-size="10" fill="white" font-weight="bold">6</text>
+<circle cx="55" cy="55" r="13" fill="#BB8FCE"/>
+<text x="55" y="59" text-anchor="middle" font-size="10" fill="white" font-weight="bold">7</text>
+<circle cx="90" cy="55" r="13" fill="#85C1E9"/>
+<text x="90" y="59" text-anchor="middle" font-size="10" fill="white" font-weight="bold">8</text>
+<circle cx="125" cy="55" r="13" fill="#FF6B6B"/>
+<text x="125" y="59" text-anchor="middle" font-size="10" fill="white" font-weight="bold">9</text>
+<circle cx="160" cy="55" r="13" fill="#4ECDC4"/>
+<text x="160" y="59" text-anchor="middle" font-size="10" fill="white" font-weight="bold">10</text>
+<circle cx="20" cy="90" r="13" fill="#45B7D1"/>
+<text x="20" y="94" text-anchor="middle" font-size="10" fill="white" font-weight="bold">11</text></svg>

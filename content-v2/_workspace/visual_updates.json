@@ -1,0 +1,3474 @@
+[
+  {
+    "id": "T1-101",
+    "topic_folder": "topic-1-counting",
+    "old_svg": "t1-101.svg",
+    "new_svg": "t1-101.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T1-103",
+    "topic_folder": "topic-1-counting",
+    "old_svg": "t1-103.svg",
+    "new_svg": "t1-103.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T1-104",
+    "topic_folder": "topic-1-counting",
+    "old_svg": "t1-104.svg",
+    "new_svg": "t1-104.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T1-116",
+    "topic_folder": "topic-1-counting",
+    "old_svg": "t1-116.svg",
+    "new_svg": "t1-116.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T1-132",
+    "topic_folder": "topic-1-counting",
+    "old_svg": "t1-132.svg",
+    "new_svg": "t1-132.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T1-133",
+    "topic_folder": "topic-1-counting",
+    "old_svg": "t1-133.svg",
+    "new_svg": "t1-133.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T1-134",
+    "topic_folder": "topic-1-counting",
+    "old_svg": "t1-134.svg",
+    "new_svg": "t1-134.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T1-135",
+    "topic_folder": "topic-1-counting",
+    "old_svg": "t1-135.svg",
+    "new_svg": "t1-135.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T1-137",
+    "topic_folder": "topic-1-counting",
+    "old_svg": "t1-137.svg",
+    "new_svg": "t1-137.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T1-145",
+    "topic_folder": "topic-1-counting",
+    "old_svg": "t1-145.svg",
+    "new_svg": "t1-145.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T1-148",
+    "topic_folder": "topic-1-counting",
+    "old_svg": "t1-148.svg",
+    "new_svg": "t1-148.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T1-152",
+    "topic_folder": "topic-1-counting",
+    "old_svg": "t1-152.svg",
+    "new_svg": "t1-152.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T1-155",
+    "topic_folder": "topic-1-counting",
+    "old_svg": "t1-155.svg",
+    "new_svg": "t1-155.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T1-157",
+    "topic_folder": "topic-1-counting",
+    "old_svg": "t1-157.svg",
+    "new_svg": "t1-157.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T1-158",
+    "topic_folder": "topic-1-counting",
+    "old_svg": "t1-158.svg",
+    "new_svg": "t1-158.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T1-189",
+    "topic_folder": "topic-1-counting",
+    "old_svg": "t1-189.svg",
+    "new_svg": "t1-189.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T1-190",
+    "topic_folder": "topic-1-counting",
+    "old_svg": "t1-190.svg",
+    "new_svg": "t1-190.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T1-191",
+    "topic_folder": "topic-1-counting",
+    "old_svg": "t1-191.svg",
+    "new_svg": "t1-191.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T1-192",
+    "topic_folder": "topic-1-counting",
+    "old_svg": "t1-192.svg",
+    "new_svg": "t1-192.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T1-193",
+    "topic_folder": "topic-1-counting",
+    "old_svg": "t1-193.svg",
+    "new_svg": "t1-193.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T1-194",
+    "topic_folder": "topic-1-counting",
+    "old_svg": "t1-194.svg",
+    "new_svg": "t1-194.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T1-195",
+    "topic_folder": "topic-1-counting",
+    "old_svg": "t1-195.svg",
+    "new_svg": "t1-195.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T1-196",
+    "topic_folder": "topic-1-counting",
+    "old_svg": "t1-196.svg",
+    "new_svg": "t1-196.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T1-198",
+    "topic_folder": "topic-1-counting",
+    "old_svg": "t1-198.svg",
+    "new_svg": "t1-198.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T1-199",
+    "topic_folder": "topic-1-counting",
+    "old_svg": "t1-199.svg",
+    "new_svg": "t1-199.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T1-200",
+    "topic_folder": "topic-1-counting",
+    "old_svg": "t1-200.svg",
+    "new_svg": "t1-200.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T1-201",
+    "topic_folder": "topic-1-counting",
+    "old_svg": "t1-201.svg",
+    "new_svg": "t1-201.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T1-202",
+    "topic_folder": "topic-1-counting",
+    "old_svg": "t1-202.svg",
+    "new_svg": "t1-202.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T1-203",
+    "topic_folder": "topic-1-counting",
+    "old_svg": "t1-203.svg",
+    "new_svg": "t1-203.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T1-206",
+    "topic_folder": "topic-1-counting",
+    "old_svg": "t1-206.svg",
+    "new_svg": "t1-206.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T1-208",
+    "topic_folder": "topic-1-counting",
+    "old_svg": "t1-208.svg",
+    "new_svg": "t1-208.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T1-211",
+    "topic_folder": "topic-1-counting",
+    "old_svg": "t1-211.svg",
+    "new_svg": "t1-211.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T1-212",
+    "topic_folder": "topic-1-counting",
+    "old_svg": "t1-212.svg",
+    "new_svg": "t1-212.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T1-328",
+    "topic_folder": "topic-1-counting",
+    "old_svg": "t1-328.svg",
+    "new_svg": "t1-328.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T1-329",
+    "topic_folder": "topic-1-counting",
+    "old_svg": "t1-329.svg",
+    "new_svg": "t1-329.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T1-335",
+    "topic_folder": "topic-1-counting",
+    "old_svg": "t1-335.svg",
+    "new_svg": "t1-335.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T1-337",
+    "topic_folder": "topic-1-counting",
+    "old_svg": "t1-337.svg",
+    "new_svg": "t1-337.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T1-338",
+    "topic_folder": "topic-1-counting",
+    "old_svg": "t1-338.svg",
+    "new_svg": "t1-338.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T1-389",
+    "topic_folder": "topic-1-counting",
+    "old_svg": "t1-389.svg",
+    "new_svg": "t1-389.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T1-391",
+    "topic_folder": "topic-1-counting",
+    "old_svg": "t1-391.svg",
+    "new_svg": "t1-391.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T1-547",
+    "topic_folder": "topic-1-counting",
+    "old_svg": "t1-547.svg",
+    "new_svg": "t1-547.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T1-548",
+    "topic_folder": "topic-1-counting",
+    "old_svg": "t1-548.svg",
+    "new_svg": "t1-548.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T1-549",
+    "topic_folder": "topic-1-counting",
+    "old_svg": "t1-549.svg",
+    "new_svg": "t1-549.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T1-550",
+    "topic_folder": "topic-1-counting",
+    "old_svg": "t1-550.svg",
+    "new_svg": "t1-550.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T1-555",
+    "topic_folder": "topic-1-counting",
+    "old_svg": "t1-555.svg",
+    "new_svg": "t1-555.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T1-556",
+    "topic_folder": "topic-1-counting",
+    "old_svg": "t1-556.svg",
+    "new_svg": "t1-556.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-079",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "T2-079.svg",
+    "new_svg": "t2-079.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-082",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "T2-082.svg",
+    "new_svg": "t2-082.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-101",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-101.svg",
+    "new_svg": "t2-101.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-102",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-102.svg",
+    "new_svg": "t2-102.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-104",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-104.svg",
+    "new_svg": "t2-104.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-106",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-106.svg",
+    "new_svg": "t2-106.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-109",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-109.svg",
+    "new_svg": "t2-109.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-117",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-117.svg",
+    "new_svg": "t2-117.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-118",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-118.svg",
+    "new_svg": "t2-118.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-121",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-121.svg",
+    "new_svg": "t2-121.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-122",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-122.svg",
+    "new_svg": "t2-122.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-123",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-123.svg",
+    "new_svg": "t2-123.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-124",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-124.svg",
+    "new_svg": "t2-124.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-127",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-127.svg",
+    "new_svg": "t2-127.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-131",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-131.svg",
+    "new_svg": "t2-131.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-134",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-134.svg",
+    "new_svg": "t2-134.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-136",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-136.svg",
+    "new_svg": "t2-136.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-137",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-137.svg",
+    "new_svg": "t2-137.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-138",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-138.svg",
+    "new_svg": "t2-138.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-141",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-141.svg",
+    "new_svg": "t2-141.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-142",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-142.svg",
+    "new_svg": "t2-142.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-144",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-144.svg",
+    "new_svg": "t2-144.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-145",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-145.svg",
+    "new_svg": "t2-145.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-147",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-147.svg",
+    "new_svg": "t2-147.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-148",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-148.svg",
+    "new_svg": "t2-148.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-150",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-150.svg",
+    "new_svg": "t2-150.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-154",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-154.svg",
+    "new_svg": "t2-154.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-158",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-158.svg",
+    "new_svg": "t2-158.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-161",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-161.svg",
+    "new_svg": "t2-161.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-162",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-162.svg",
+    "new_svg": "t2-162.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-169",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-169.svg",
+    "new_svg": "t2-169.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-170",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-170.svg",
+    "new_svg": "t2-170.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-175",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-175.svg",
+    "new_svg": "t2-175.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-176",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-176.svg",
+    "new_svg": "t2-176.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-178",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-178.svg",
+    "new_svg": "t2-178.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-179",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-179.svg",
+    "new_svg": "t2-179.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-180",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-180.svg",
+    "new_svg": "t2-180.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-184",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-184.svg",
+    "new_svg": "t2-184.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-188",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-188.svg",
+    "new_svg": "t2-188.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-190",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-190.svg",
+    "new_svg": "t2-190.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-197",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-197.svg",
+    "new_svg": "t2-197.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-198",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-198.svg",
+    "new_svg": "t2-198.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-199",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-199.svg",
+    "new_svg": "t2-199.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-202",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-202.svg",
+    "new_svg": "t2-202.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-206",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-206.svg",
+    "new_svg": "t2-206.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-216",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-216.svg",
+    "new_svg": "t2-216.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-223",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-223.svg",
+    "new_svg": "t2-223.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-225",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-225.svg",
+    "new_svg": "t2-225.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-230",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-230.svg",
+    "new_svg": "t2-230.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-233",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-233.svg",
+    "new_svg": "t2-233.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-234",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-234.svg",
+    "new_svg": "t2-234.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-238",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-238.svg",
+    "new_svg": "t2-238.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-269",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-269.svg",
+    "new_svg": "t2-269.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-272",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-272.svg",
+    "new_svg": "t2-272.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-273",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-273.svg",
+    "new_svg": "t2-273.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-275",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-275.svg",
+    "new_svg": "t2-275.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-278",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-278.svg",
+    "new_svg": "t2-278.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-280",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-280.svg",
+    "new_svg": "t2-280.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-283",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-283.svg",
+    "new_svg": "t2-283.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-284",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-284.svg",
+    "new_svg": "t2-284.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-285",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-285.svg",
+    "new_svg": "t2-285.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-287",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-287.svg",
+    "new_svg": "t2-287.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-291",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-291.svg",
+    "new_svg": "t2-291.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-293",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-293.svg",
+    "new_svg": "t2-293.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-294",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-294.svg",
+    "new_svg": "t2-294.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-295",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-295.svg",
+    "new_svg": "t2-295.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-296",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-296.svg",
+    "new_svg": "t2-296.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-306",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-306.svg",
+    "new_svg": "t2-306.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-311",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-311.svg",
+    "new_svg": "t2-311.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-314",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-314.svg",
+    "new_svg": "t2-314.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-316",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-316.svg",
+    "new_svg": "t2-316.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-317",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-317.svg",
+    "new_svg": "t2-317.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-320",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-320.svg",
+    "new_svg": "t2-320.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-321",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-321.svg",
+    "new_svg": "t2-321.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-324",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-324.svg",
+    "new_svg": "t2-324.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-326",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-326.svg",
+    "new_svg": "t2-326.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-327",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-327.svg",
+    "new_svg": "t2-327.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-328",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-328.svg",
+    "new_svg": "t2-328.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-335",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-335.svg",
+    "new_svg": "t2-335.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-336",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-336.svg",
+    "new_svg": "t2-336.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-339",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-339.svg",
+    "new_svg": "t2-339.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-340",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-340.svg",
+    "new_svg": "t2-340.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-342",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-342.svg",
+    "new_svg": "t2-342.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-343",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-343.svg",
+    "new_svg": "t2-343.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-344",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-344.svg",
+    "new_svg": "t2-344.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-346",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-346.svg",
+    "new_svg": "t2-346.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-348",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-348.svg",
+    "new_svg": "t2-348.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-349",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-349.svg",
+    "new_svg": "t2-349.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-350",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-350.svg",
+    "new_svg": "t2-350.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-358",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-358.svg",
+    "new_svg": "t2-358.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-366",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-366.svg",
+    "new_svg": "t2-366.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-380",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-380.svg",
+    "new_svg": "t2-380.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-385",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-385.svg",
+    "new_svg": "t2-385.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-408",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-408.svg",
+    "new_svg": "t2-408.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-431",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-431.svg",
+    "new_svg": "t2-431.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-452",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-452.svg",
+    "new_svg": "t2-452.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-476",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-476.svg",
+    "new_svg": "t2-476.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-490",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-490.svg",
+    "new_svg": "t2-490.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-495",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-495.svg",
+    "new_svg": "t2-495.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-508",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-508.svg",
+    "new_svg": "t2-508.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-509",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-509.svg",
+    "new_svg": "t2-509.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-510",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-510.svg",
+    "new_svg": "t2-510.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-513",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-513.svg",
+    "new_svg": "t2-513.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-516",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-516.svg",
+    "new_svg": "t2-516.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-527",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-527.svg",
+    "new_svg": "t2-527.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-533",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-533.svg",
+    "new_svg": "t2-533.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-536",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-536.svg",
+    "new_svg": "t2-536.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-540",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-540.svg",
+    "new_svg": "t2-540.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-557",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-557.svg",
+    "new_svg": "t2-557.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-560",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-560.svg",
+    "new_svg": "t2-560.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-564",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-564.svg",
+    "new_svg": "t2-564.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-566",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-566.svg",
+    "new_svg": "t2-566.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-569",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-569.svg",
+    "new_svg": "t2-569.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-580",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-580.svg",
+    "new_svg": "t2-580.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-581",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-581.svg",
+    "new_svg": "t2-581.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-589",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-589.svg",
+    "new_svg": "t2-589.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-591",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-591.svg",
+    "new_svg": "t2-591.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-594",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-594.svg",
+    "new_svg": "t2-594.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-595",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-595.svg",
+    "new_svg": "t2-595.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-596",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-596.svg",
+    "new_svg": "t2-596.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T3-383",
+    "topic_folder": "topic-3-patterns",
+    "old_svg": "t3-383.svg",
+    "new_svg": "t3-383.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T3-388",
+    "topic_folder": "topic-3-patterns",
+    "old_svg": "t3-388.svg",
+    "new_svg": "t3-388.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T3-393",
+    "topic_folder": "topic-3-patterns",
+    "old_svg": "t3-393.svg",
+    "new_svg": "t3-393.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T3-400",
+    "topic_folder": "topic-3-patterns",
+    "old_svg": "t3-400.svg",
+    "new_svg": "t3-400.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T3-404",
+    "topic_folder": "topic-3-patterns",
+    "old_svg": "t3-404.svg",
+    "new_svg": "t3-404.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T3-406",
+    "topic_folder": "topic-3-patterns",
+    "old_svg": "t3-406.svg",
+    "new_svg": "t3-406.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T3-414",
+    "topic_folder": "topic-3-patterns",
+    "old_svg": "t3-414.svg",
+    "new_svg": "t3-414.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T3-415",
+    "topic_folder": "topic-3-patterns",
+    "old_svg": "t3-415.svg",
+    "new_svg": "t3-415.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T3-419",
+    "topic_folder": "topic-3-patterns",
+    "old_svg": "t3-419.svg",
+    "new_svg": "t3-419.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T3-420",
+    "topic_folder": "topic-3-patterns",
+    "old_svg": "t3-420.svg",
+    "new_svg": "t3-420.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T3-426",
+    "topic_folder": "topic-3-patterns",
+    "old_svg": "t3-426.svg",
+    "new_svg": "t3-426.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T3-427",
+    "topic_folder": "topic-3-patterns",
+    "old_svg": "t3-427.svg",
+    "new_svg": "t3-427.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T3-435",
+    "topic_folder": "topic-3-patterns",
+    "old_svg": "t3-435.svg",
+    "new_svg": "t3-435.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T3-444",
+    "topic_folder": "topic-3-patterns",
+    "old_svg": "t3-444.svg",
+    "new_svg": "t3-444.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T3-451",
+    "topic_folder": "topic-3-patterns",
+    "old_svg": "t3-451.svg",
+    "new_svg": "t3-451.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T3-454",
+    "topic_folder": "topic-3-patterns",
+    "old_svg": "t3-454.svg",
+    "new_svg": "t3-454.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T3-459",
+    "topic_folder": "topic-3-patterns",
+    "old_svg": "t3-459.svg",
+    "new_svg": "t3-459.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T3-462",
+    "topic_folder": "topic-3-patterns",
+    "old_svg": "t3-462.svg",
+    "new_svg": "t3-462.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T3-464",
+    "topic_folder": "topic-3-patterns",
+    "old_svg": "t3-464.svg",
+    "new_svg": "t3-464.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T3-483",
+    "topic_folder": "topic-3-patterns",
+    "old_svg": "t3-483.svg",
+    "new_svg": "t3-483.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T3-485",
+    "topic_folder": "topic-3-patterns",
+    "old_svg": "t3-485.svg",
+    "new_svg": "t3-485.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T3-488",
+    "topic_folder": "topic-3-patterns",
+    "old_svg": "t3-488.svg",
+    "new_svg": "t3-488.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T3-506",
+    "topic_folder": "topic-3-patterns",
+    "old_svg": "t3-506.svg",
+    "new_svg": "t3-506.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T3-513",
+    "topic_folder": "topic-3-patterns",
+    "old_svg": "t3-513.svg",
+    "new_svg": "t3-513.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T3-524",
+    "topic_folder": "topic-3-patterns",
+    "old_svg": "t3-524.svg",
+    "new_svg": "t3-524.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T3-525",
+    "topic_folder": "topic-3-patterns",
+    "old_svg": "t3-525.svg",
+    "new_svg": "t3-525.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T3-526",
+    "topic_folder": "topic-3-patterns",
+    "old_svg": "t3-526.svg",
+    "new_svg": "t3-526.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T3-533",
+    "topic_folder": "topic-3-patterns",
+    "old_svg": "t3-533.svg",
+    "new_svg": "t3-533.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T3-540",
+    "topic_folder": "topic-3-patterns",
+    "old_svg": "t3-540.svg",
+    "new_svg": "t3-540.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T3-544",
+    "topic_folder": "topic-3-patterns",
+    "old_svg": "t3-544.svg",
+    "new_svg": "t3-544.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T3-552",
+    "topic_folder": "topic-3-patterns",
+    "old_svg": "t3-552.svg",
+    "new_svg": "t3-552.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T3-556",
+    "topic_folder": "topic-3-patterns",
+    "old_svg": "t3-556.svg",
+    "new_svg": "t3-556.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T3-557",
+    "topic_folder": "topic-3-patterns",
+    "old_svg": "t3-557.svg",
+    "new_svg": "t3-557.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T3-568",
+    "topic_folder": "topic-3-patterns",
+    "old_svg": "t3-568.svg",
+    "new_svg": "t3-568.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T3-570",
+    "topic_folder": "topic-3-patterns",
+    "old_svg": "t3-570.svg",
+    "new_svg": "t3-570.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T3-575",
+    "topic_folder": "topic-3-patterns",
+    "old_svg": "t3-575.svg",
+    "new_svg": "t3-575.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T3-577",
+    "topic_folder": "topic-3-patterns",
+    "old_svg": "t3-577.svg",
+    "new_svg": "t3-577.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T3-580",
+    "topic_folder": "topic-3-patterns",
+    "old_svg": "t3-580.svg",
+    "new_svg": "t3-580.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T3-602",
+    "topic_folder": "topic-3-patterns",
+    "old_svg": "t3-602.svg",
+    "new_svg": "t3-602.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T4-046",
+    "topic_folder": "topic-4-logic",
+    "old_svg": "T4-046.svg",
+    "new_svg": "t4-046.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T4-048",
+    "topic_folder": "topic-4-logic",
+    "old_svg": "T4-048.svg",
+    "new_svg": "t4-048.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T4-049",
+    "topic_folder": "topic-4-logic",
+    "old_svg": "T4-049.svg",
+    "new_svg": "t4-049.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T4-050",
+    "topic_folder": "topic-4-logic",
+    "old_svg": "T4-050.svg",
+    "new_svg": "t4-050.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T4-056",
+    "topic_folder": "topic-4-logic",
+    "old_svg": "T4-056.svg",
+    "new_svg": "t4-056.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T4-099",
+    "topic_folder": "topic-4-logic",
+    "old_svg": "T4-099.svg",
+    "new_svg": "t4-099.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T4-509",
+    "topic_folder": "topic-4-logic",
+    "old_svg": "t4-509.svg",
+    "new_svg": "t4-509.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T4-513",
+    "topic_folder": "topic-4-logic",
+    "old_svg": "t4-513.svg",
+    "new_svg": "t4-513.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T4-514",
+    "topic_folder": "topic-4-logic",
+    "old_svg": "t4-514.svg",
+    "new_svg": "t4-514.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T4-515",
+    "topic_folder": "topic-4-logic",
+    "old_svg": "t4-515.svg",
+    "new_svg": "t4-515.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T4-516",
+    "topic_folder": "topic-4-logic",
+    "old_svg": "t4-516.svg",
+    "new_svg": "t4-516.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T4-518",
+    "topic_folder": "topic-4-logic",
+    "old_svg": "t4-518.svg",
+    "new_svg": "t4-518.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T4-521",
+    "topic_folder": "topic-4-logic",
+    "old_svg": "t4-521.svg",
+    "new_svg": "t4-521.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T4-522",
+    "topic_folder": "topic-4-logic",
+    "old_svg": "t4-522.svg",
+    "new_svg": "t4-522.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T4-523",
+    "topic_folder": "topic-4-logic",
+    "old_svg": "t4-523.svg",
+    "new_svg": "t4-523.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T4-525",
+    "topic_folder": "topic-4-logic",
+    "old_svg": "t4-525.svg",
+    "new_svg": "t4-525.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T4-526",
+    "topic_folder": "topic-4-logic",
+    "old_svg": "t4-526.svg",
+    "new_svg": "t4-526.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T4-527",
+    "topic_folder": "topic-4-logic",
+    "old_svg": "t4-527.svg",
+    "new_svg": "t4-527.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T4-529",
+    "topic_folder": "topic-4-logic",
+    "old_svg": "t4-529.svg",
+    "new_svg": "t4-529.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T4-531",
+    "topic_folder": "topic-4-logic",
+    "old_svg": "t4-531.svg",
+    "new_svg": "t4-531.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T4-532",
+    "topic_folder": "topic-4-logic",
+    "old_svg": "t4-532.svg",
+    "new_svg": "t4-532.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T4-533",
+    "topic_folder": "topic-4-logic",
+    "old_svg": "t4-533.svg",
+    "new_svg": "t4-533.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T4-536",
+    "topic_folder": "topic-4-logic",
+    "old_svg": "t4-536.svg",
+    "new_svg": "t4-536.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "SPA-016",
+    "topic_folder": "topic-5-spatial",
+    "old_svg": "spa-016.svg",
+    "new_svg": "spa-016.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "SPA-017",
+    "topic_folder": "topic-5-spatial",
+    "old_svg": "spa-017.svg",
+    "new_svg": "spa-017.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "SPA-018",
+    "topic_folder": "topic-5-spatial",
+    "old_svg": "SPA-018.svg",
+    "new_svg": "spa-018.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "SPA-019",
+    "topic_folder": "topic-5-spatial",
+    "old_svg": "spa-019.svg",
+    "new_svg": "spa-019.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "SPA-020",
+    "topic_folder": "topic-5-spatial",
+    "old_svg": "spa-020.svg",
+    "new_svg": "spa-020.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "SPA-041",
+    "topic_folder": "topic-5-spatial",
+    "old_svg": "spa-041.svg",
+    "new_svg": "spa-041.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "SPA-043",
+    "topic_folder": "topic-5-spatial",
+    "old_svg": "spa-043.svg",
+    "new_svg": "spa-043.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "SPA-044",
+    "topic_folder": "topic-5-spatial",
+    "old_svg": "spa-044.svg",
+    "new_svg": "spa-044.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "SPA-045",
+    "topic_folder": "topic-5-spatial",
+    "old_svg": "spa-045.svg",
+    "new_svg": "spa-045.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "SPA-049",
+    "topic_folder": "topic-5-spatial",
+    "old_svg": "spa-049.svg",
+    "new_svg": "spa-049.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "SPA-050",
+    "topic_folder": "topic-5-spatial",
+    "old_svg": "spa-050.svg",
+    "new_svg": "spa-050.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "SPA-051",
+    "topic_folder": "topic-5-spatial",
+    "old_svg": "SPA-051.svg",
+    "new_svg": "spa-051.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "SPA-052",
+    "topic_folder": "topic-5-spatial",
+    "old_svg": "spa-052.svg",
+    "new_svg": "spa-052.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "SPA-053",
+    "topic_folder": "topic-5-spatial",
+    "old_svg": "spa-053.svg",
+    "new_svg": "spa-053.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "SPA-054",
+    "topic_folder": "topic-5-spatial",
+    "old_svg": "SPA-054.svg",
+    "new_svg": "spa-054.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "SPA-056",
+    "topic_folder": "topic-5-spatial",
+    "old_svg": "spa-056.svg",
+    "new_svg": "spa-056.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "SPA-073",
+    "topic_folder": "topic-5-spatial",
+    "old_svg": "spa-073.svg",
+    "new_svg": "spa-073.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "SPA-074",
+    "topic_folder": "topic-5-spatial",
+    "old_svg": "spa-074.svg",
+    "new_svg": "spa-074.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "SPA-077",
+    "topic_folder": "topic-5-spatial",
+    "old_svg": "spa-077.svg",
+    "new_svg": "spa-077.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "SPA-078",
+    "topic_folder": "topic-5-spatial",
+    "old_svg": "spa-078.svg",
+    "new_svg": "spa-078.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "SPA-079",
+    "topic_folder": "topic-5-spatial",
+    "old_svg": "spa-079.svg",
+    "new_svg": "spa-079.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "SPA-081",
+    "topic_folder": "topic-5-spatial",
+    "old_svg": "SPA-081.svg",
+    "new_svg": "spa-081.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "SPA-082",
+    "topic_folder": "topic-5-spatial",
+    "old_svg": "SPA-082.svg",
+    "new_svg": "spa-082.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "SPA-083",
+    "topic_folder": "topic-5-spatial",
+    "old_svg": "SPA-083.svg",
+    "new_svg": "spa-083.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "SPA-084",
+    "topic_folder": "topic-5-spatial",
+    "old_svg": "SPA-084.svg",
+    "new_svg": "spa-084.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "SPA-085",
+    "topic_folder": "topic-5-spatial",
+    "old_svg": "SPA-085.svg",
+    "new_svg": "spa-085.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "SPA-086",
+    "topic_folder": "topic-5-spatial",
+    "old_svg": "SPA-086.svg",
+    "new_svg": "spa-086.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "SPA-087",
+    "topic_folder": "topic-5-spatial",
+    "old_svg": "SPA-087.svg",
+    "new_svg": "spa-087.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "SPA-089",
+    "topic_folder": "topic-5-spatial",
+    "old_svg": "SPA-089.svg",
+    "new_svg": "spa-089.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "SPA-090",
+    "topic_folder": "topic-5-spatial",
+    "old_svg": "SPA-090.svg",
+    "new_svg": "spa-090.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "SPA-093",
+    "topic_folder": "topic-5-spatial",
+    "old_svg": "SPA-093.svg",
+    "new_svg": "spa-093.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "SPA-094",
+    "topic_folder": "topic-5-spatial",
+    "old_svg": "SPA-094.svg",
+    "new_svg": "spa-094.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "SPA-096",
+    "topic_folder": "topic-5-spatial",
+    "old_svg": "SPA-096.svg",
+    "new_svg": "spa-096.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "SPA-097",
+    "topic_folder": "topic-5-spatial",
+    "old_svg": "SPA-097.svg",
+    "new_svg": "spa-097.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "SPA-099",
+    "topic_folder": "topic-5-spatial",
+    "old_svg": "SPA-099.svg",
+    "new_svg": "spa-099.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "SPA-100",
+    "topic_folder": "topic-5-spatial",
+    "old_svg": "SPA-100.svg",
+    "new_svg": "spa-100.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T6-108",
+    "topic_folder": "topic-6-shapes",
+    "old_svg": "t6-108.svg",
+    "new_svg": "t6-108.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T6-113",
+    "topic_folder": "topic-6-shapes",
+    "old_svg": "t6-113.svg",
+    "new_svg": "t6-113.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T7-112",
+    "topic_folder": "topic-7-word-problems",
+    "old_svg": "t7-112.svg",
+    "new_svg": "t7-112.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T7-133",
+    "topic_folder": "topic-7-word-problems",
+    "old_svg": "t7-133.svg",
+    "new_svg": "t7-133.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T7-147",
+    "topic_folder": "topic-7-word-problems",
+    "old_svg": "t7-147.svg",
+    "new_svg": "t7-147.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T7-152",
+    "topic_folder": "topic-7-word-problems",
+    "old_svg": "t7-152.svg",
+    "new_svg": "t7-152.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T7-170",
+    "topic_folder": "topic-7-word-problems",
+    "old_svg": "t7-170.svg",
+    "new_svg": "t7-170.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T7-182",
+    "topic_folder": "topic-7-word-problems",
+    "old_svg": "t7-182.svg",
+    "new_svg": "t7-182.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T7-190",
+    "topic_folder": "topic-7-word-problems",
+    "old_svg": "t7-190.svg",
+    "new_svg": "t7-190.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T7-254",
+    "topic_folder": "topic-7-word-problems",
+    "old_svg": "t7-254.svg",
+    "new_svg": "t7-254.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T7-265",
+    "topic_folder": "topic-7-word-problems",
+    "old_svg": "t7-265.svg",
+    "new_svg": "t7-265.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T7-268",
+    "topic_folder": "topic-7-word-problems",
+    "old_svg": "t7-268.svg",
+    "new_svg": "t7-268.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T7-303",
+    "topic_folder": "topic-7-word-problems",
+    "old_svg": "t7-303.svg",
+    "new_svg": "t7-303.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T7-306",
+    "topic_folder": "topic-7-word-problems",
+    "old_svg": "t7-306.svg",
+    "new_svg": "t7-306.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T7-310",
+    "topic_folder": "topic-7-word-problems",
+    "old_svg": "t7-310.svg",
+    "new_svg": "t7-310.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T7-317",
+    "topic_folder": "topic-7-word-problems",
+    "old_svg": "t7-317.svg",
+    "new_svg": "t7-317.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T7-343",
+    "topic_folder": "topic-7-word-problems",
+    "old_svg": "t7-343.svg",
+    "new_svg": "t7-343.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T7-344",
+    "topic_folder": "topic-7-word-problems",
+    "old_svg": "t7-344.svg",
+    "new_svg": "t7-344.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T7-357",
+    "topic_folder": "topic-7-word-problems",
+    "old_svg": "t7-357.svg",
+    "new_svg": "t7-357.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T7-382",
+    "topic_folder": "topic-7-word-problems",
+    "old_svg": "t7-382.svg",
+    "new_svg": "t7-382.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T7-389",
+    "topic_folder": "topic-7-word-problems",
+    "old_svg": "t7-389.svg",
+    "new_svg": "t7-389.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T7-392",
+    "topic_folder": "topic-7-word-problems",
+    "old_svg": "t7-392.svg",
+    "new_svg": "t7-392.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T7-403",
+    "topic_folder": "topic-7-word-problems",
+    "old_svg": "t7-403.svg",
+    "new_svg": "t7-403.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T7-411",
+    "topic_folder": "topic-7-word-problems",
+    "old_svg": "t7-411.svg",
+    "new_svg": "t7-411.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T7-461",
+    "topic_folder": "topic-7-word-problems",
+    "old_svg": "t7-461.svg",
+    "new_svg": "t7-461.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T7-469",
+    "topic_folder": "topic-7-word-problems",
+    "old_svg": "t7-469.svg",
+    "new_svg": "t7-469.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T7-510",
+    "topic_folder": "topic-7-word-problems",
+    "old_svg": "t7-510.svg",
+    "new_svg": "t7-510.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T7-521",
+    "topic_folder": "topic-7-word-problems",
+    "old_svg": "t7-521.svg",
+    "new_svg": "t7-521.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T7-528",
+    "topic_folder": "topic-7-word-problems",
+    "old_svg": "t7-528.svg",
+    "new_svg": "t7-528.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T7-536",
+    "topic_folder": "topic-7-word-problems",
+    "old_svg": "t7-536.svg",
+    "new_svg": "t7-536.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T7-581",
+    "topic_folder": "topic-7-word-problems",
+    "old_svg": "t7-581.svg",
+    "new_svg": "t7-581.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T7-587",
+    "topic_folder": "topic-7-word-problems",
+    "old_svg": "t7-587.svg",
+    "new_svg": "t7-587.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T7-592",
+    "topic_folder": "topic-7-word-problems",
+    "old_svg": "t7-592.svg",
+    "new_svg": "t7-592.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T7-599",
+    "topic_folder": "topic-7-word-problems",
+    "old_svg": "t7-599.svg",
+    "new_svg": "t7-599.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "WOR-002",
+    "topic_folder": "topic-7-word-problems",
+    "old_svg": "WOR-002.svg",
+    "new_svg": "wor-002.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "WOR-011",
+    "topic_folder": "topic-7-word-problems",
+    "old_svg": "WOR-011.svg",
+    "new_svg": "wor-011.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "WOR-016",
+    "topic_folder": "topic-7-word-problems",
+    "old_svg": "WOR-016.svg",
+    "new_svg": "wor-016.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "WOR-017",
+    "topic_folder": "topic-7-word-problems",
+    "old_svg": "WOR-017.svg",
+    "new_svg": "wor-017.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "WOR-030",
+    "topic_folder": "topic-7-word-problems",
+    "old_svg": "WOR-030.svg",
+    "new_svg": "wor-030.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "WOR-041",
+    "topic_folder": "topic-7-word-problems",
+    "old_svg": "wor-041.svg",
+    "new_svg": "wor-041.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "WOR-042",
+    "topic_folder": "topic-7-word-problems",
+    "old_svg": "wor-042.svg",
+    "new_svg": "wor-042.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "WOR-043",
+    "topic_folder": "topic-7-word-problems",
+    "old_svg": "wor-043.svg",
+    "new_svg": "wor-043.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "WOR-044",
+    "topic_folder": "topic-7-word-problems",
+    "old_svg": "wor-044.svg",
+    "new_svg": "wor-044.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "WOR-045",
+    "topic_folder": "topic-7-word-problems",
+    "old_svg": "wor-045.svg",
+    "new_svg": "wor-045.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "WOR-046",
+    "topic_folder": "topic-7-word-problems",
+    "old_svg": "wor-046.svg",
+    "new_svg": "wor-046.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "WOR-047",
+    "topic_folder": "topic-7-word-problems",
+    "old_svg": "wor-047.svg",
+    "new_svg": "wor-047.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "WOR-048",
+    "topic_folder": "topic-7-word-problems",
+    "old_svg": "wor-048.svg",
+    "new_svg": "wor-048.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "WOR-049",
+    "topic_folder": "topic-7-word-problems",
+    "old_svg": "wor-049.svg",
+    "new_svg": "wor-049.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "WOR-050",
+    "topic_folder": "topic-7-word-problems",
+    "old_svg": "wor-050.svg",
+    "new_svg": "wor-050.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "WOR-056",
+    "topic_folder": "topic-7-word-problems",
+    "old_svg": "wor-056.svg",
+    "new_svg": "wor-056.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "WOR-057",
+    "topic_folder": "topic-7-word-problems",
+    "old_svg": "wor-057.svg",
+    "new_svg": "wor-057.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "WOR-058",
+    "topic_folder": "topic-7-word-problems",
+    "old_svg": "wor-058.svg",
+    "new_svg": "wor-058.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "WOR-059",
+    "topic_folder": "topic-7-word-problems",
+    "old_svg": "wor-059.svg",
+    "new_svg": "wor-059.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "WOR-060",
+    "topic_folder": "topic-7-word-problems",
+    "old_svg": "wor-060.svg",
+    "new_svg": "wor-060.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "WOR-061",
+    "topic_folder": "topic-7-word-problems",
+    "old_svg": "wor-061.svg",
+    "new_svg": "wor-061.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "WOR-062",
+    "topic_folder": "topic-7-word-problems",
+    "old_svg": "wor-062.svg",
+    "new_svg": "wor-062.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "WOR-063",
+    "topic_folder": "topic-7-word-problems",
+    "old_svg": "wor-063.svg",
+    "new_svg": "wor-063.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "WOR-064",
+    "topic_folder": "topic-7-word-problems",
+    "old_svg": "wor-064.svg",
+    "new_svg": "wor-064.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "WOR-065",
+    "topic_folder": "topic-7-word-problems",
+    "old_svg": "wor-065.svg",
+    "new_svg": "wor-065.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "PUZ-037",
+    "topic_folder": "topic-8-puzzles",
+    "old_svg": "puz-037.svg",
+    "new_svg": "puz-037.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "PUZ-038",
+    "topic_folder": "topic-8-puzzles",
+    "old_svg": "puz-038.svg",
+    "new_svg": "puz-038.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "PUZ-039",
+    "topic_folder": "topic-8-puzzles",
+    "old_svg": "puz-039.svg",
+    "new_svg": "puz-039.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "PUZ-040",
+    "topic_folder": "topic-8-puzzles",
+    "old_svg": "puz-040.svg",
+    "new_svg": "puz-040.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "PUZ-085",
+    "topic_folder": "topic-8-puzzles",
+    "old_svg": "puz-085.svg",
+    "new_svg": "puz-085.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "PUZ-086",
+    "topic_folder": "topic-8-puzzles",
+    "old_svg": "puz-086.svg",
+    "new_svg": "puz-086.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "PUZ-087",
+    "topic_folder": "topic-8-puzzles",
+    "old_svg": "puz-087.svg",
+    "new_svg": "puz-087.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "PUZ-088",
+    "topic_folder": "topic-8-puzzles",
+    "old_svg": "puz-088.svg",
+    "new_svg": "puz-088.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "PUZ-089",
+    "topic_folder": "topic-8-puzzles",
+    "old_svg": "PUZ-089.svg",
+    "new_svg": "puz-089.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T8-101",
+    "topic_folder": "topic-8-puzzles",
+    "old_svg": "t8-101.svg",
+    "new_svg": "t8-101.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T8-117",
+    "topic_folder": "topic-8-puzzles",
+    "old_svg": "t8-117.svg",
+    "new_svg": "t8-117.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T8-130",
+    "topic_folder": "topic-8-puzzles",
+    "old_svg": "t8-130.svg",
+    "new_svg": "t8-130.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T8-151",
+    "topic_folder": "topic-8-puzzles",
+    "old_svg": "t8-151.svg",
+    "new_svg": "t8-151.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T8-159",
+    "topic_folder": "topic-8-puzzles",
+    "old_svg": "t8-159.svg",
+    "new_svg": "t8-159.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T8-212",
+    "topic_folder": "topic-8-puzzles",
+    "old_svg": "t8-212.svg",
+    "new_svg": "t8-212.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T8-253",
+    "topic_folder": "topic-8-puzzles",
+    "old_svg": "t8-253.svg",
+    "new_svg": "t8-253.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T8-294",
+    "topic_folder": "topic-8-puzzles",
+    "old_svg": "t8-294.svg",
+    "new_svg": "t8-294.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T8-401",
+    "topic_folder": "topic-8-puzzles",
+    "old_svg": "t8-401.svg",
+    "new_svg": "t8-401.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T8-440",
+    "topic_folder": "topic-8-puzzles",
+    "old_svg": "t8-440.svg",
+    "new_svg": "t8-440.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T8-476",
+    "topic_folder": "topic-8-puzzles",
+    "old_svg": "t8-476.svg",
+    "new_svg": "t8-476.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T8-508",
+    "topic_folder": "topic-8-puzzles",
+    "old_svg": "t8-508.svg",
+    "new_svg": "t8-508.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T1-146",
+    "topic_folder": "topic-1-counting",
+    "old_svg": "t1-146.svg",
+    "new_svg": "t1-146.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T1-147",
+    "topic_folder": "topic-1-counting",
+    "old_svg": "t1-147.svg",
+    "new_svg": "t1-147.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T1-149",
+    "topic_folder": "topic-1-counting",
+    "old_svg": "t1-149.svg",
+    "new_svg": "t1-149.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T1-151",
+    "topic_folder": "topic-1-counting",
+    "old_svg": "t1-151.svg",
+    "new_svg": "t1-151.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T1-153",
+    "topic_folder": "topic-1-counting",
+    "old_svg": "t1-153.svg",
+    "new_svg": "t1-153.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T1-177",
+    "topic_folder": "topic-1-counting",
+    "old_svg": "t1-177.svg",
+    "new_svg": "t1-177.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T1-178",
+    "topic_folder": "topic-1-counting",
+    "old_svg": "t1-178.svg",
+    "new_svg": "t1-178.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T1-182",
+    "topic_folder": "topic-1-counting",
+    "old_svg": "t1-182.svg",
+    "new_svg": "t1-182.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T1-183",
+    "topic_folder": "topic-1-counting",
+    "old_svg": "t1-183.svg",
+    "new_svg": "t1-183.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T1-184",
+    "topic_folder": "topic-1-counting",
+    "old_svg": "t1-184.svg",
+    "new_svg": "t1-184.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T1-185",
+    "topic_folder": "topic-1-counting",
+    "old_svg": "t1-185.svg",
+    "new_svg": "t1-185.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T1-186",
+    "topic_folder": "topic-1-counting",
+    "old_svg": "t1-186.svg",
+    "new_svg": "t1-186.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T1-187",
+    "topic_folder": "topic-1-counting",
+    "old_svg": "t1-187.svg",
+    "new_svg": "t1-187.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T1-479",
+    "topic_folder": "topic-1-counting",
+    "old_svg": "t1-479.svg",
+    "new_svg": "t1-479.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T1-480",
+    "topic_folder": "topic-1-counting",
+    "old_svg": "t1-480.svg",
+    "new_svg": "t1-480.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T1-481",
+    "topic_folder": "topic-1-counting",
+    "old_svg": "t1-481.svg",
+    "new_svg": "t1-481.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T1-482",
+    "topic_folder": "topic-1-counting",
+    "old_svg": "t1-482.svg",
+    "new_svg": "t1-482.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T1-483",
+    "topic_folder": "topic-1-counting",
+    "old_svg": "t1-483.svg",
+    "new_svg": "t1-483.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T1-484",
+    "topic_folder": "topic-1-counting",
+    "old_svg": "t1-484.svg",
+    "new_svg": "t1-484.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T1-485",
+    "topic_folder": "topic-1-counting",
+    "old_svg": "t1-485.svg",
+    "new_svg": "t1-485.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T1-486",
+    "topic_folder": "topic-1-counting",
+    "old_svg": "t1-486.svg",
+    "new_svg": "t1-486.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T1-487",
+    "topic_folder": "topic-1-counting",
+    "old_svg": "t1-487.svg",
+    "new_svg": "t1-487.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T1-488",
+    "topic_folder": "topic-1-counting",
+    "old_svg": "t1-488.svg",
+    "new_svg": "t1-488.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T1-490",
+    "topic_folder": "topic-1-counting",
+    "old_svg": "t1-490.svg",
+    "new_svg": "t1-490.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-021",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "T2-021.svg",
+    "new_svg": "t2-021.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-022",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "T2-022.svg",
+    "new_svg": "t2-022.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-023",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "T2-023.svg",
+    "new_svg": "t2-023.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-024",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "T2-024.svg",
+    "new_svg": "t2-024.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-025",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "T2-025.svg",
+    "new_svg": "t2-025.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-081",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "T2-081.svg",
+    "new_svg": "t2-081.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-185",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-185.svg",
+    "new_svg": "t2-185.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-219",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-219.svg",
+    "new_svg": "t2-219.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-226",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-226.svg",
+    "new_svg": "t2-226.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-244",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-244.svg",
+    "new_svg": "t2-244.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-260",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-260.svg",
+    "new_svg": "t2-260.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-268",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-268.svg",
+    "new_svg": "t2-268.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-351",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-351.svg",
+    "new_svg": "t2-351.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-355",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-355.svg",
+    "new_svg": "t2-355.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-356",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-356.svg",
+    "new_svg": "t2-356.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-361",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-361.svg",
+    "new_svg": "t2-361.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-369",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-369.svg",
+    "new_svg": "t2-369.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-373",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-373.svg",
+    "new_svg": "t2-373.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-406",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-406.svg",
+    "new_svg": "t2-406.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-412",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-412.svg",
+    "new_svg": "t2-412.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-419",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-419.svg",
+    "new_svg": "t2-419.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-450",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-450.svg",
+    "new_svg": "t2-450.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-453",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-453.svg",
+    "new_svg": "t2-453.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-482",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-482.svg",
+    "new_svg": "t2-482.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T2-496",
+    "topic_folder": "topic-2-arithmetic",
+    "old_svg": "t2-496.svg",
+    "new_svg": "t2-496.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "PAT-025",
+    "topic_folder": "topic-3-patterns",
+    "old_svg": "pat-025.svg",
+    "new_svg": "pat-025.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "PAT-026",
+    "topic_folder": "topic-3-patterns",
+    "old_svg": "pat-026.svg",
+    "new_svg": "pat-026.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "PAT-027",
+    "topic_folder": "topic-3-patterns",
+    "old_svg": "pat-027.svg",
+    "new_svg": "pat-027.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "PAT-028",
+    "topic_folder": "topic-3-patterns",
+    "old_svg": "pat-028.svg",
+    "new_svg": "pat-028.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "PAT-029",
+    "topic_folder": "topic-3-patterns",
+    "old_svg": "pat-029.svg",
+    "new_svg": "pat-029.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "PAT-030",
+    "topic_folder": "topic-3-patterns",
+    "old_svg": "pat-030.svg",
+    "new_svg": "pat-030.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "PAT-031",
+    "topic_folder": "topic-3-patterns",
+    "old_svg": "pat-031.svg",
+    "new_svg": "pat-031.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "PAT-032",
+    "topic_folder": "topic-3-patterns",
+    "old_svg": "pat-032.svg",
+    "new_svg": "pat-032.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "PAT-033",
+    "topic_folder": "topic-3-patterns",
+    "old_svg": "pat-033.svg",
+    "new_svg": "pat-033.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "PAT-034",
+    "topic_folder": "topic-3-patterns",
+    "old_svg": "pat-034.svg",
+    "new_svg": "pat-034.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "PAT-035",
+    "topic_folder": "topic-3-patterns",
+    "old_svg": "pat-035.svg",
+    "new_svg": "pat-035.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T3-384",
+    "topic_folder": "topic-3-patterns",
+    "old_svg": "t3-384.svg",
+    "new_svg": "t3-384.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T3-399",
+    "topic_folder": "topic-3-patterns",
+    "old_svg": "t3-399.svg",
+    "new_svg": "t3-399.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T3-408",
+    "topic_folder": "topic-3-patterns",
+    "old_svg": "t3-408.svg",
+    "new_svg": "t3-408.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T3-433",
+    "topic_folder": "topic-3-patterns",
+    "old_svg": "t3-433.svg",
+    "new_svg": "t3-433.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T3-468",
+    "topic_folder": "topic-3-patterns",
+    "old_svg": "t3-468.svg",
+    "new_svg": "t3-468.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T3-478",
+    "topic_folder": "topic-3-patterns",
+    "old_svg": "t3-478.svg",
+    "new_svg": "t3-478.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T3-579",
+    "topic_folder": "topic-3-patterns",
+    "old_svg": "t3-579.svg",
+    "new_svg": "t3-579.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T4-029",
+    "topic_folder": "topic-4-logic",
+    "old_svg": "T4-029.svg",
+    "new_svg": "t4-029.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T4-034",
+    "topic_folder": "topic-4-logic",
+    "old_svg": "T4-034.svg",
+    "new_svg": "t4-034.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T4-041",
+    "topic_folder": "topic-4-logic",
+    "old_svg": "T4-041.svg",
+    "new_svg": "t4-041.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T4-042",
+    "topic_folder": "topic-4-logic",
+    "old_svg": "T4-042.svg",
+    "new_svg": "t4-042.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T4-047",
+    "topic_folder": "topic-4-logic",
+    "old_svg": "T4-047.svg",
+    "new_svg": "t4-047.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T4-052",
+    "topic_folder": "topic-4-logic",
+    "old_svg": "T4-052.svg",
+    "new_svg": "t4-052.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T4-061",
+    "topic_folder": "topic-4-logic",
+    "old_svg": "T4-061.svg",
+    "new_svg": "t4-061.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T4-063",
+    "topic_folder": "topic-4-logic",
+    "old_svg": "T4-063.svg",
+    "new_svg": "t4-063.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T4-072",
+    "topic_folder": "topic-4-logic",
+    "old_svg": "T4-072.svg",
+    "new_svg": "t4-072.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T4-085",
+    "topic_folder": "topic-4-logic",
+    "old_svg": "T4-085.svg",
+    "new_svg": "t4-085.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "SPA-001",
+    "topic_folder": "topic-5-spatial",
+    "old_svg": "spa-001.svg",
+    "new_svg": "spa-001.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "SPA-002",
+    "topic_folder": "topic-5-spatial",
+    "old_svg": "spa-002.svg",
+    "new_svg": "spa-002.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "SPA-003",
+    "topic_folder": "topic-5-spatial",
+    "old_svg": "spa-003.svg",
+    "new_svg": "spa-003.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "SPA-004",
+    "topic_folder": "topic-5-spatial",
+    "old_svg": "spa-004.svg",
+    "new_svg": "spa-004.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "SPA-005",
+    "topic_folder": "topic-5-spatial",
+    "old_svg": "spa-005.svg",
+    "new_svg": "spa-005.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "SPA-008",
+    "topic_folder": "topic-5-spatial",
+    "old_svg": "SPA-008.svg",
+    "new_svg": "spa-008.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "SPA-010",
+    "topic_folder": "topic-5-spatial",
+    "old_svg": "SPA-010.svg",
+    "new_svg": "spa-010.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "SPA-042",
+    "topic_folder": "topic-5-spatial",
+    "old_svg": "spa-042.svg",
+    "new_svg": "spa-042.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "SPA-046",
+    "topic_folder": "topic-5-spatial",
+    "old_svg": "spa-046.svg",
+    "new_svg": "spa-046.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "SPA-047",
+    "topic_folder": "topic-5-spatial",
+    "old_svg": "spa-047.svg",
+    "new_svg": "spa-047.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "SPA-048",
+    "topic_folder": "topic-5-spatial",
+    "old_svg": "spa-048.svg",
+    "new_svg": "spa-048.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "SPA-055",
+    "topic_folder": "topic-5-spatial",
+    "old_svg": "spa-055.svg",
+    "new_svg": "spa-055.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T6-105",
+    "topic_folder": "topic-6-shapes",
+    "old_svg": "t6-105.svg",
+    "new_svg": "t6-105.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T6-111",
+    "topic_folder": "topic-6-shapes",
+    "old_svg": "t6-111.svg",
+    "new_svg": "t6-111.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T6-116",
+    "topic_folder": "topic-6-shapes",
+    "old_svg": "t6-116.svg",
+    "new_svg": "t6-116.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T6-120",
+    "topic_folder": "topic-6-shapes",
+    "old_svg": "t6-120.svg",
+    "new_svg": "t6-120.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T6-123",
+    "topic_folder": "topic-6-shapes",
+    "old_svg": "t6-123.svg",
+    "new_svg": "t6-123.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T6-125",
+    "topic_folder": "topic-6-shapes",
+    "old_svg": "t6-125.svg",
+    "new_svg": "t6-125.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T6-127",
+    "topic_folder": "topic-6-shapes",
+    "old_svg": "t6-127.svg",
+    "new_svg": "t6-127.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T6-128",
+    "topic_folder": "topic-6-shapes",
+    "old_svg": "t6-128.svg",
+    "new_svg": "t6-128.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T6-139",
+    "topic_folder": "topic-6-shapes",
+    "old_svg": "t6-139.svg",
+    "new_svg": "t6-139.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T6-142",
+    "topic_folder": "topic-6-shapes",
+    "old_svg": "t6-142.svg",
+    "new_svg": "t6-142.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T6-145",
+    "topic_folder": "topic-6-shapes",
+    "old_svg": "t6-145.svg",
+    "new_svg": "t6-145.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T6-157",
+    "topic_folder": "topic-6-shapes",
+    "old_svg": "t6-157.svg",
+    "new_svg": "t6-157.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T6-162",
+    "topic_folder": "topic-6-shapes",
+    "old_svg": "t6-162.svg",
+    "new_svg": "t6-162.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T6-163",
+    "topic_folder": "topic-6-shapes",
+    "old_svg": "t6-163.svg",
+    "new_svg": "t6-163.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T6-172",
+    "topic_folder": "topic-6-shapes",
+    "old_svg": "t6-172.svg",
+    "new_svg": "t6-172.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T6-177",
+    "topic_folder": "topic-6-shapes",
+    "old_svg": "t6-177.svg",
+    "new_svg": "t6-177.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T6-183",
+    "topic_folder": "topic-6-shapes",
+    "old_svg": "t6-183.svg",
+    "new_svg": "t6-183.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T6-184",
+    "topic_folder": "topic-6-shapes",
+    "old_svg": "t6-184.svg",
+    "new_svg": "t6-184.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T6-189",
+    "topic_folder": "topic-6-shapes",
+    "old_svg": "t6-189.svg",
+    "new_svg": "t6-189.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T6-190",
+    "topic_folder": "topic-6-shapes",
+    "old_svg": "t6-190.svg",
+    "new_svg": "t6-190.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T6-191",
+    "topic_folder": "topic-6-shapes",
+    "old_svg": "t6-191.svg",
+    "new_svg": "t6-191.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T6-192",
+    "topic_folder": "topic-6-shapes",
+    "old_svg": "t6-192.svg",
+    "new_svg": "t6-192.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T6-193",
+    "topic_folder": "topic-6-shapes",
+    "old_svg": "t6-193.svg",
+    "new_svg": "t6-193.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T6-194",
+    "topic_folder": "topic-6-shapes",
+    "old_svg": "t6-194.svg",
+    "new_svg": "t6-194.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T6-199",
+    "topic_folder": "topic-6-shapes",
+    "old_svg": "t6-199.svg",
+    "new_svg": "t6-199.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T6-204",
+    "topic_folder": "topic-6-shapes",
+    "old_svg": "t6-204.svg",
+    "new_svg": "t6-204.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T6-205",
+    "topic_folder": "topic-6-shapes",
+    "old_svg": "t6-205.svg",
+    "new_svg": "t6-205.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T6-213",
+    "topic_folder": "topic-6-shapes",
+    "old_svg": "t6-213.svg",
+    "new_svg": "t6-213.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T6-214",
+    "topic_folder": "topic-6-shapes",
+    "old_svg": "t6-214.svg",
+    "new_svg": "t6-214.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T6-217",
+    "topic_folder": "topic-6-shapes",
+    "old_svg": "t6-217.svg",
+    "new_svg": "t6-217.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T6-218",
+    "topic_folder": "topic-6-shapes",
+    "old_svg": "t6-218.svg",
+    "new_svg": "t6-218.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T6-220",
+    "topic_folder": "topic-6-shapes",
+    "old_svg": "t6-220.svg",
+    "new_svg": "t6-220.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T6-222",
+    "topic_folder": "topic-6-shapes",
+    "old_svg": "t6-222.svg",
+    "new_svg": "t6-222.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T6-227",
+    "topic_folder": "topic-6-shapes",
+    "old_svg": "t6-227.svg",
+    "new_svg": "t6-227.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T6-228",
+    "topic_folder": "topic-6-shapes",
+    "old_svg": "t6-228.svg",
+    "new_svg": "t6-228.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T6-230",
+    "topic_folder": "topic-6-shapes",
+    "old_svg": "t6-230.svg",
+    "new_svg": "t6-230.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T6-232",
+    "topic_folder": "topic-6-shapes",
+    "old_svg": "t6-232.svg",
+    "new_svg": "t6-232.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T6-237",
+    "topic_folder": "topic-6-shapes",
+    "old_svg": "t6-237.svg",
+    "new_svg": "t6-237.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T6-238",
+    "topic_folder": "topic-6-shapes",
+    "old_svg": "t6-238.svg",
+    "new_svg": "t6-238.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T6-245",
+    "topic_folder": "topic-6-shapes",
+    "old_svg": "t6-245.svg",
+    "new_svg": "t6-245.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T6-250",
+    "topic_folder": "topic-6-shapes",
+    "old_svg": "t6-250.svg",
+    "new_svg": "t6-250.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T7-118",
+    "topic_folder": "topic-7-word-problems",
+    "old_svg": "t7-118.svg",
+    "new_svg": "t7-118.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T7-120",
+    "topic_folder": "topic-7-word-problems",
+    "old_svg": "t7-120.svg",
+    "new_svg": "t7-120.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T7-243",
+    "topic_folder": "topic-7-word-problems",
+    "old_svg": "t7-243.svg",
+    "new_svg": "t7-243.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T7-308",
+    "topic_folder": "topic-7-word-problems",
+    "old_svg": "t7-308.svg",
+    "new_svg": "t7-308.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T7-350",
+    "topic_folder": "topic-7-word-problems",
+    "old_svg": "t7-350.svg",
+    "new_svg": "t7-350.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T7-434",
+    "topic_folder": "topic-7-word-problems",
+    "old_svg": "t7-434.svg",
+    "new_svg": "t7-434.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T7-495",
+    "topic_folder": "topic-7-word-problems",
+    "old_svg": "t7-495.svg",
+    "new_svg": "t7-495.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T7-542",
+    "topic_folder": "topic-7-word-problems",
+    "old_svg": "t7-542.svg",
+    "new_svg": "t7-542.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T7-552",
+    "topic_folder": "topic-7-word-problems",
+    "old_svg": "t7-552.svg",
+    "new_svg": "t7-552.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T7-555",
+    "topic_folder": "topic-7-word-problems",
+    "old_svg": "t7-555.svg",
+    "new_svg": "t7-555.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T7-565",
+    "topic_folder": "topic-7-word-problems",
+    "old_svg": "t7-565.svg",
+    "new_svg": "t7-565.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T8-107",
+    "topic_folder": "topic-8-puzzles",
+    "old_svg": "t8-107.svg",
+    "new_svg": "t8-107.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T8-149",
+    "topic_folder": "topic-8-puzzles",
+    "old_svg": "t8-149.svg",
+    "new_svg": "t8-149.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T8-166",
+    "topic_folder": "topic-8-puzzles",
+    "old_svg": "t8-166.svg",
+    "new_svg": "t8-166.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T8-222",
+    "topic_folder": "topic-8-puzzles",
+    "old_svg": "t8-222.svg",
+    "new_svg": "t8-222.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T8-279",
+    "topic_folder": "topic-8-puzzles",
+    "old_svg": "t8-279.svg",
+    "new_svg": "t8-279.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T8-306",
+    "topic_folder": "topic-8-puzzles",
+    "old_svg": "t8-306.svg",
+    "new_svg": "t8-306.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T8-338",
+    "topic_folder": "topic-8-puzzles",
+    "old_svg": "t8-338.svg",
+    "new_svg": "t8-338.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T8-353",
+    "topic_folder": "topic-8-puzzles",
+    "old_svg": "t8-353.svg",
+    "new_svg": "t8-353.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T8-458",
+    "topic_folder": "topic-8-puzzles",
+    "old_svg": "t8-458.svg",
+    "new_svg": "t8-458.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T8-484",
+    "topic_folder": "topic-8-puzzles",
+    "old_svg": "t8-484.svg",
+    "new_svg": "t8-484.svg",
+    "diagnostics": {}
+  },
+  {
+    "id": "T8-562",
+    "topic_folder": "topic-8-puzzles",
+    "old_svg": "t8-562.svg",
+    "new_svg": "t8-562.svg",
+    "diagnostics": {}
+  }
+]

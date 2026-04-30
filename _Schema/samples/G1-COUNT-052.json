@@ -1,0 +1,91 @@
+{
+  "id": "G1-COUNT-052",
+  "grade": 1,
+  "topic": "counting_observation",
+  "subtopic": "subitizing_composition",
+  "subskills": ["subitizing", "part_part_whole"],
+  "difficulty": 1,
+  "tier": "warmup",
+  "source_inspiration": "Academic cofounder L1 — ladybird spots (Singapore CPA Pictorial)",
+
+  "pedagogy": "cpa_pictorial",
+
+  "stem_template": "Count the {feature} on the {creature}. Which number shows the total?",
+  "answer_type": "multiple_choice",
+
+  "interaction": {
+    "type": "multiple_choice",
+    "fallback_type": "multiple_choice"
+  },
+
+  "visual": {
+    "type": "svg_generator",
+    "generator": "split_object",
+    "params": {"left_count": "{A}", "right_count": "{B}", "object": "{creature}"}
+  },
+  "visual_manifest": {
+    "art_brief": "A {creature} with {A} black {feature} on its left wing and {B} black {feature} on its right wing.",
+    "alt_text": "A {creature} with {N} {feature}.",
+    "style": "warm_cartoon",
+    "layout_hint": "centered",
+    "visual_type": "illustration"
+  },
+
+  "params": {
+    "A":        {"range": [2, 4]},
+    "B":        {"range": [2, 4]},
+    "creature": {"pool": ["ladybird", "butterfly", "beetle"]},
+    "feature":  {"pool": ["spots", "dots", "markings"]}
+  },
+  "derived": {
+    "N": "A + B"
+  },
+
+  "answer_formula": "A + B",
+  "distractors": [
+    {"formula": "A + B - 2", "label": "under_count"},
+    {"formula": "A + B - 1", "label": "missed_one"},
+    {"formula": "A + B + 1", "label": "over_count"}
+  ],
+
+  "misconceptions": [
+    {
+      "trigger_answer": "A + B - 2",
+      "diagnosis": "counted_one_wing_only",
+      "feedback_child": "There are {feature} on both wings! Count them all.",
+      "step_down_path": ["G1-COUNT-052-S1", "G1-COUNT-052-S2"]
+    },
+    {
+      "trigger_answer": "A + B - 1",
+      "diagnosis": "missed_one_spot",
+      "feedback_child": "Almost! Look carefully — did you miss one?",
+      "step_down_path": ["G1-COUNT-052-S1"]
+    },
+    {
+      "trigger_answer": "A + B + 1",
+      "diagnosis": "over_counted",
+      "feedback_child": "That's a lot! Let's count them one by one: 1, 2, 3...",
+      "step_down_path": ["G1-COUNT-052-S1"]
+    }
+  ],
+
+  "socratic_feedback": {
+    "on_correct": "Bingo! {N} {feature} in total. Well done!",
+    "incorrect_low": "Count the {feature} on both wings! Try again — maybe there are more than you think.",
+    "incorrect_high": "That's a lot of {feature}! Let's count them one by one: 1, 2, 3...",
+    "encouragement_after_retry": "You're doing great! Count the left wing first, then the right."
+  },
+
+  "curriculum_alignment": {
+    "common_core": "K.OA.A.3",
+    "cambridge_stage": 1,
+    "singapore_strand": "Whole Numbers",
+    "kangaroo_level": "Felix"
+  },
+
+  "tags": ["topic:counting", "skill:subitizing", "skill:composition", "cpa:pictorial"],
+  "est_time_seconds": 25,
+  "version": 1,
+  "author": "AP",
+  "status": "draft"
+}

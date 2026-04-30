@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <rect width="200" height="200" fill="#f0f4f8" rx="12"/>
+  <text x="100" y="28" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#333">3 Balls</text>
+  <circle cx="46.66666666666667" cy="103.0" r="17.333333333333336" fill="#F7DC6F" stroke="#333" stroke-width="1.5"/>
+  <circle cx="100.00000000000001" cy="103.0" r="17.333333333333336" fill="#45B7D1" stroke="#333" stroke-width="1.5"/>
+  <circle cx="153.33333333333334" cy="103.0" r="17.333333333333336" fill="#ABEBC6" stroke="#333" stroke-width="1.5"/>
+</svg>

@@ -1,0 +1,62 @@
+{
+  "id": "G1-COUNT-052-S2",
+  "grade": 1,
+  "topic": "counting_observation",
+  "subtopic": "scaffolded_step_down",
+  "subskills": [
+    "part_part_whole"
+  ],
+  "difficulty": 1,
+  "tier": "warmup",
+  "parent_id": "G1-COUNT-052",
+  "step_index": 2,
+  "stem_template": "The left wing has {A} {feature}. The right wing has {B} {feature}. How many altogether?",
+  "visual": null,
+  "answer_type": "multiple_choice",
+  "params": {
+    "A": {
+      "range": [
+        2,
+        3
+      ]
+    },
+    "B": {
+      "range": [
+        1,
+        2
+      ]
+    },
+    "feature": {
+      "pool": [
+        "spots",
+        "dots"
+      ]
+    }
+  },
+  "derived": {
+    "N": "A + B"
+  },
+  "answer_formula": "A + B",
+  "distractors": [
+    {
+      "formula": "A + B - 1",
+      "label": "missed_one"
+    },
+    {
+      "formula": "A + B + 1",
+      "label": "over_count"
+    }
+  ],
+  "misconceptions": [],
+  "visual_manifest": {
+    "art_brief": "Two wings side by side: left wing has {A} {feature}, right wing has {B} {feature}.",
+    "alt_text": "{A} + {B} {feature} on two wings."
+  },
+  "tags": [
+    "step_down"
+  ],
+  "est_time_seconds": 15,
+  "version": 1,
+  "author": "AP",
+  "status": "draft"
+}

@@ -1,0 +1,15 @@
+<svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+  <polygon points="180,220 220,220 200,195" fill="#95A5A6" stroke="#7F8C8D" stroke-width="2"/>
+  <rect x="197" y="120" width="6" height="75" fill="#BDC3C7" stroke="#95A5A6" stroke-width="1"/>
+  <line x1="60" y1="120" x2="340" y2="120" stroke="#2C3E50" stroke-width="4" stroke-linecap="round"/>
+  <line x1="70" y1="120" x2="70" y2="150" stroke="#7F8C8D" stroke-width="1.5"/>
+  <ellipse cx="70" cy="150" rx="50" ry="8" fill="#ECF0F1" stroke="#BDC3C7" stroke-width="1.5"/>
+  <circle cx="46" cy="128" r="10" fill="#FF6B6B" stroke="#333" stroke-width="1.5"/>
+  <circle cx="70" cy="128" r="10" fill="#FF6B6B" stroke="#333" stroke-width="1.5"/>
+  <rect x="85" y="119" width="18" height="18" fill="#4ECDC4" stroke="#333" stroke-width="1.5" rx="2"/>
+  <line x1="330" y1="120" x2="330" y2="150" stroke="#7F8C8D" stroke-width="1.5"/>
+  <ellipse cx="330" cy="150" rx="50" ry="8" fill="#ECF0F1" stroke="#BDC3C7" stroke-width="1.5"/>
+  <polygon points="306,117 296,135 316,135" fill="#F1C40F" stroke="#333" stroke-width="1.5"/>
+  <polygon points="330,117 320,135 340,135" fill="#F1C40F" stroke="#333" stroke-width="1.5"/>
+  <polygon points="354,117 344,135 364,135" fill="#F1C40F" stroke="#333" stroke-width="1.5"/>
+</svg>

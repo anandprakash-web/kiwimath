@@ -1,0 +1,6 @@
+<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <polygon points="150,140 200,60 250,140" fill="#9b59b6" stroke="#2c3e50" stroke-width="2"/>
+  <polygon points="250,140 300,120 250,40 200,60" fill="#8e44ad" stroke="#2c3e50" stroke-width="1.5"/>
+  <line x1="250" y1="40" x2="200" y2="60" stroke="#2c3e50" stroke-width="1.5"/>
+  <text x="200" y="185" text-anchor="middle" font-family="system-ui" font-size="12" fill="#666">triangular prism</text>
+</svg>

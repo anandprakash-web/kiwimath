@@ -1,0 +1,36 @@
+{
+  "id": "G1-COUNT-084-S1",
+  "grade": 1,
+  "topic": "counting_observation",
+  "subtopic": "scaffolded_step_down",
+  "subskills": [
+    "odd_even_awareness"
+  ],
+  "difficulty": 3,
+  "tier": "practice",
+  "parent_id": "G1-COUNT-084",
+  "step_index": 1,
+  "stem_template": "Is 1 odd or even?",
+  "visual": null,
+  "answer_type": "multiple_choice",
+  "params": {},
+  "answer_formula": "'odd'",
+  "distractors": [
+    {
+      "formula": "'even'",
+      "label": "wrong"
+    },
+    {
+      "formula": "'neither'",
+      "label": "confused"
+    }
+  ],
+  "misconceptions": [],
+  "tags": [
+    "step_down"
+  ],
+  "est_time_seconds": 15,
+  "version": 1,
+  "author": "AP",
+  "status": "draft"
+}

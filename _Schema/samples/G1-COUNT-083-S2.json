@@ -1,0 +1,40 @@
+{
+  "id": "G1-COUNT-083-S2",
+  "grade": 1,
+  "topic": "counting_observation",
+  "subtopic": "scaffolded_step_down",
+  "subskills": [
+    "systematic_listing"
+  ],
+  "difficulty": 4,
+  "tier": "challenge",
+  "parent_id": "G1-COUNT-083",
+  "step_index": 2,
+  "stem_template": "If red is first: 2 ways. If blue is first: 2 ways. If yellow is first: 2 ways. Total?",
+  "visual": null,
+  "answer_type": "multiple_choice",
+  "params": {},
+  "answer_formula": "6",
+  "distractors": [
+    {
+      "formula": "3",
+      "label": "only_firsts"
+    },
+    {
+      "formula": "2",
+      "label": "only_one_group"
+    },
+    {
+      "formula": "8",
+      "label": "wrong_add"
+    }
+  ],
+  "misconceptions": [],
+  "tags": [
+    "step_down"
+  ],
+  "est_time_seconds": 15,
+  "version": 1,
+  "author": "AP",
+  "status": "draft"
+}

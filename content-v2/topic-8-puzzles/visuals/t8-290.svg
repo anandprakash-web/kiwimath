@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <rect width="200" height="200" fill="#f0f4f8" rx="12"/>
+  <text x="100" y="25" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#333">Puzzle Time</text>
+  <rect x="50" y="40" width="32" height="32" rx="5" fill="#A3E4D7" stroke="#333" stroke-width="1.2"/>
+  <rect x="88" y="40" width="32" height="32" rx="5" fill="#FF6B6B" stroke="#333" stroke-width="1.2"/>
+  <rect x="126" y="40" width="32" height="32" rx="5" fill="#F9E79F" stroke="#333" stroke-width="1.2"/>
+  <rect x="50" y="78" width="32" height="32" rx="5" fill="#85C1E9" stroke="#333" stroke-width="1.2"/>
+  <rect x="88" y="78" width="32" height="32" rx="5" fill="#96CEB4" stroke="#333" stroke-width="1.2"/>
+  <rect x="126" y="78" width="32" height="32" rx="5" fill="#F1948A" stroke="#333" stroke-width="1.2"/>
+  <rect x="50" y="116" width="32" height="32" rx="5" fill="#ABEBC6" stroke="#333" stroke-width="1.2"/>
+  <rect x="88" y="116" width="32" height="32" rx="5" fill="#45B7D1" stroke="#333" stroke-width="1.2"/>
+  <rect x="126" y="116" width="32" height="32" rx="5" fill="#BB8FCE" stroke="#333" stroke-width="1.2"/>
+</svg>

@@ -4,14 +4,19 @@ import 'package:flutter/material.dart';
 
 import 'firebase_options.dart';
 import 'models/question_v2.dart';
+import 'models/student_levels.dart';
 import 'models/user_profile.dart';
 import 'screens/home_screen.dart';
+import 'screens/learning_path_screen.dart';
+import 'screens/onboarding_screen.dart';
+import 'screens/parent_dashboard_screen.dart';
 import 'screens/question_screen_v2.dart';
 import 'screens/sign_in_screen.dart';
 import 'services/api_client.dart';
 import 'services/auth_service.dart';
 import 'services/companion_service.dart';
 import 'theme/kiwi_theme.dart';
+import 'widgets/parental_gate.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -81,18 +86,33 @@ class _AppShellState extends State<_AppShell> {
   // Multi-grade support.
   int _selectedGrade = 1;
 
+  // Kid's display name (from onboarding or profile).
+  String _studentName = '';
+
   // v2 topics.
   List<TopicV2>? _topicsV2;
   bool _topicsV2Loading = false;
 
+  // Student level progression.
+  StudentLevels? _studentLevels;
+
+  // Mastery overview for home screen badges.
+  Map<String, dynamic>? _masteryOverview;
+
   // Companion system.
   final CompanionService _companionService = CompanionService();
+
+  // First-launch onboarding routing — guard so we only push the screen once
+  // per signed-in session even if the profile reloads.
+  bool _onboardingHandled = false;
 
   @override
   void initState() {
     super.initState();
     _loadProfile();
     _loadTopicsV2();
+    _loadStudentLevels();
+    _loadMasteryOverview();
     _companionService.initialize();
   }
 
@@ -113,7 +133,14 @@ class _AppShellState extends State<_AppShell> {
       setState(() {
         _profile = profile;
         _loading = false;
+        // Use saved display name if we don't already have one from onboarding.
+        if (_studentName.isEmpty &&
+            profile.displayName.isNotEmpty &&
+            profile.displayName != 'Kiwi Learner') {
+          _studentName = profile.displayName;
+        }
       });
+      _maybeShowOnboarding();
     } catch (e) {
       debugPrint('Failed to load profile: $e');
       setState(() {
@@ -122,6 +149,102 @@ class _AppShellState extends State<_AppShell> {
         _error = 'Offline mode \u2014 data will sync when connected';
       });
     }
+  }
+
+  /// Detects a first-launch and pushes the onboarding flow.
+  ///
+  /// Heuristic: if the loaded profile has zero XP, zero streak, and zero
+  /// daily progress, treat it as a brand-new user. After onboarding completes
+  /// (which submits 10 answers and seeds the adaptive engine), the next
+  /// profile load will have non-zero XP and we'll skip this branch.
+  void _maybeShowOnboarding() {
+    if (_onboardingHandled) return;
+    final isFresh = _profile.xpTotal == 0 &&
+        _profile.streakCurrent == 0 &&
+        _profile.dailyProgress == 0 &&
+        _profile.kiwiCoins == 0;
+    if (!isFresh) {
+      _onboardingHandled = true;
+      return;
+    }
+    _onboardingHandled = true;
+    // Defer to next frame so we have a valid Navigator context.
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (!mounted) return;
+      Navigator.of(context).push(
+        MaterialPageRoute(
+          fullscreenDialog: true,
+          builder: (_) => OnboardingScreen(
+            userId: widget.userId,
+            onComplete: (result) {
+              // Capture kid's name from onboarding.
+              if (result.kidName.isNotEmpty) {
+                setState(() => _studentName = result.kidName);
+              }
+              // Switch the home view to the recommended grade and refresh.
+              final newGrade = result.grade.clamp(1, 5);
+              if (newGrade != _selectedGrade) {
+                setState(() => _selectedGrade = newGrade);
+                _loadTopicsV2();
+              }
+              Navigator.of(context).pop();
+              _loadProfile();
+            },
+          ),
+        ),
+      );
+    });
+  }
+
+  Future<void> _openParentDashboard() async {
+    // Parental gate — multiplication problem a kid can't solve.
+    final verified = await ParentalGate.show(context);
+    if (!verified || !mounted) return;
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (_) => ParentDashboardScreen(
+          userId: widget.userId,
+          childName: _profile.displayName == 'Kiwi Learner'
+              ? null
+              : _profile.displayName,
+        ),
+      ),
+    );
+  }
+
+  void _openLearningPath() {
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (_) => LearningPathScreen(
+          userId: widget.userId,
+          grade: _selectedGrade,
+          companionService: _companionService,
+        ),
+      ),
+    );
+  }
+
+  void _restartOnboarding() {
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        fullscreenDialog: true,
+        builder: (_) => OnboardingScreen(
+          userId: widget.userId,
+          onComplete: (result) {
+            if (result.kidName.isNotEmpty) {
+              setState(() => _studentName = result.kidName);
+            }
+            final newGrade = result.grade.clamp(1, 5);
+            if (newGrade != _selectedGrade) {
+              setState(() => _selectedGrade = newGrade);
+              _loadTopicsV2();
+            }
+            Navigator.of(context).pop();
+            _loadProfile();
+          },
+        ),
+      ),
+    );
   }
 
   Future<void> _loadTopicsV2() async {
@@ -141,6 +264,66 @@ class _AppShellState extends State<_AppShell> {
     }
   }
 
+  Future<void> _loadStudentLevels() async {
+    try {
+      final levels = await _api.getStudentLevels(
+        userId: widget.userId,
+        grade: _selectedGrade,
+      );
+      setState(() => _studentLevels = levels);
+    } catch (e) {
+      debugPrint('Failed to load student levels: $e');
+    }
+  }
+
+  Future<void> _loadMasteryOverview() async {
+    try {
+      final overview = await _api.getMasteryOverview(widget.userId, _selectedGrade);
+      setState(() => _masteryOverview = overview);
+    } catch (e) {
+      debugPrint('Failed to load mastery overview: $e');
+    }
+  }
+
+  Future<void> _navigateToSmartSession() async {
+    try {
+      final plan = await _api.getSessionPlan(widget.userId, _selectedGrade);
+      if (!mounted) return;
+      final questions = plan['questions'] as List<dynamic>?;
+      if (questions == null || questions.isEmpty) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(content: Text('No questions available for smart session')),
+        );
+        return;
+      }
+      Navigator.of(context).push(
+        MaterialPageRoute(
+          builder: (_) => QuestionScreenV2(
+            topicId: 'smart-session',
+            topicName: 'Smart Practice',
+            userId: widget.userId,
+            grade: _selectedGrade,
+            companionService: _companionService,
+            sessionPlan: questions.cast<Map<String, dynamic>>(),
+            onBackToHome: () {
+              Navigator.of(context).pop();
+              _loadProfile();
+              _loadStudentLevels();
+              _loadMasteryOverview();
+            },
+          ),
+        ),
+      );
+    } catch (e) {
+      debugPrint('Failed to load session plan: $e');
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(content: Text('Could not load smart session. Try again.')),
+        );
+      }
+    }
+  }
+
   void _navigateToQuestions({
     required String topicId,
     required String topicName,
@@ -156,6 +339,8 @@ class _AppShellState extends State<_AppShell> {
           onBackToHome: () {
             Navigator.of(context).pop();
             _loadProfile();
+            _loadStudentLevels();
+            _loadMasteryOverview();
           },
         ),
       ),
@@ -165,7 +350,9 @@ class _AppShellState extends State<_AppShell> {
   void _onGradeChanged(int grade) {
     if (grade == _selectedGrade) return;
     setState(() => _selectedGrade = grade);
-    _loadTopicsV2(); // Reload topics for the new grade
+    _loadTopicsV2();
+    _loadStudentLevels();
+    _loadMasteryOverview();
   }
 
   Future<void> _signOut() async {
@@ -181,6 +368,7 @@ class _AppShellState extends State<_AppShell> {
     }
 
     final homeScreen = HomeScreen(
+      studentName: _studentName.isNotEmpty ? _studentName : _profile.displayName,
       streak: _profile.streakCurrent,
       kiwiCoins: _profile.kiwiCoins,
       masteryGems: _profile.masteryGems,
@@ -197,6 +385,12 @@ class _AppShellState extends State<_AppShell> {
       topicsV2: _topicsV2,
       topicsV2Loading: _topicsV2Loading,
       companionService: _companionService,
+      studentLevels: _studentLevels,
+      onOpenLearningPath: _openLearningPath,
+      onOpenParentDashboard: _openParentDashboard,
+      onRestartOnboarding: _restartOnboarding,
+      masteryOverview: _masteryOverview,
+      onSmartSession: _navigateToSmartSession,
     );
 
     // Show offline banner if initial profile load failed.

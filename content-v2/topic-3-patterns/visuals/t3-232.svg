@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <rect width="200" height="200" fill="#f0f4f8" rx="12"/>
+  <text x="100" y="30" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="bold" fill="#333">Shape Challenge</text>
+  <rect x="33.75" y="83.75" width="32.5" height="32.5" fill="#FF6B6B" stroke="#333" stroke-width="1.5" rx="3"/>
+  <text x="50.0" y="130.25" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#555">Square</text>
+  <polygon points="100.0,83.75 116.25,100.0 100.0,116.25 83.75,100.0" fill="#4ECDC4" stroke="#333" stroke-width="1.5"/>
+  <text x="100.0" y="130.25" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#555">Diamond</text>
+  <polygon points="150.0,83.8 154.3,94.1 165.5,95.0 157.0,102.3 159.6,113.1 150.0,107.3 140.4,113.1 143.0,102.3 134.5,95.0 145.7,94.1" fill="#45B7D1" stroke="#333" stroke-width="1.5"/>
+  <text x="150.0" y="130.25" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#555">Star</text>
+</svg>

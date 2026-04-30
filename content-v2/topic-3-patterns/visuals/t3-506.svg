@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 110">
+  <rect width="260" height="110" fill="#FFFBF5" rx="12"/>
+  <rect x="13" y="29" width="42" height="42" fill="#42A5F5" rx="10" opacity="0.85"/>
+  <text x="34" y="55" text-anchor="middle" font-family="Arial" font-size="15" font-weight="bold" fill="white">25</text>
+  <polygon points="99.6,50.0 90.8,65.24204710660612 73.2,65.24204710660612 64.4,50.0 73.19999999999999,34.757952893393885 90.8,34.75795289339388" fill="#FFD54F" opacity="0.85"/>
+  <text x="82" y="55" text-anchor="middle" font-family="Arial" font-size="15" font-weight="bold" fill="white">36</text>
+  <circle cx="130" cy="50" r="23" fill="#AB47BC" opacity="0.85"/>
+  <text x="130" y="55" text-anchor="middle" font-family="Arial" font-size="15" font-weight="bold" fill="white">49</text>
+  <rect x="154" y="26" width="48" height="48" fill="#26C6DA" rx="12" opacity="0.85"/>
+  <text x="178" y="55" text-anchor="middle" font-family="Arial" font-size="15" font-weight="bold" fill="white">64</text>
+  <polygon points="242.0,50.0 234.0,63.856406460551014 218.0,63.85640646055102 210.0,50.0 218.0,36.143593539448986 234.0,36.143593539448986" fill="#42A5F5" opacity="0.85"/>
+  <text x="226" y="55" text-anchor="middle" font-family="Arial" font-size="15" font-weight="bold" fill="white">81</text>
+  <rect x="20" y="88" width="220" height="3" fill="#F06292" rx="1.5" opacity="0.4"/>
+</svg>

@@ -1,7 +1,7 @@
 name: kiwimath_app
-description: Kiwimath — adaptive Grade-1 math for global learners.
+description: Kiwimath — adaptive math learning for Grades 1-6 with characters, hints, and rewards.
 publish_to: 'none'
-version: 0.1.0+1
+version: 1.1.0+3
 
 environment:
   sdk: ">=3.3.0 <4.0.0"

@@ -1,0 +1,114 @@
+{
+  "project_info": {
+    "project_number": "876296514345",
+    "project_id": "kiwimath-801c1",
+    "storage_bucket": "kiwimath-801c1.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:876296514345:android:3b94e133bb479159462538",
+        "android_client_info": {
+          "package_name": "com.kiwimath.kiwimath_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "876296514345-iraulf2hdh90fredke52pq1pfa8oo61t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kiwimath.kiwimath_app",
+            "certificate_hash": "6523743039ccc362559a5108a28bcc2571a59f73"
+          }
+        },
+        {
+          "client_id": "876296514345-mpun9q34onvahofgq4hcbsmfp8v3odsb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kiwimath.kiwimath_app",
+            "certificate_hash": "3798f1321cca4ad552d3f90f8aee486c36e5c8e9"
+          }
+        },
+        {
+          "client_id": "876296514345-n83fc1fhl4tl6pjd0aj5vetph2agsabg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnKemVJ_qPn4LTUuN5JhCqK1FQ-ms5Oug"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "876296514345-n83fc1fhl4tl6pjd0aj5vetph2agsabg.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "876296514345-178ggvidddvvmj54qm0hd5aiaqi3t9c8.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.kiwimath.kiwimathApp"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:876296514345:android:36648fe480c848a7462538",
+        "android_client_info": {
+          "package_name": "com.vedantu.kiwimath"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "876296514345-i60unvop5vdb00c868r8qieqd6694971.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vedantu.kiwimath",
+            "certificate_hash": "6523743039ccc362559a5108a28bcc2571a59f73"
+          }
+        },
+        {
+          "client_id": "876296514345-l2shrjiqg8asvmhg2o2fdeg7jgjl2mlg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vedantu.kiwimath",
+            "certificate_hash": "3798f1321cca4ad552d3f90f8aee486c36e5c8e9"
+          }
+        },
+        {
+          "client_id": "876296514345-n83fc1fhl4tl6pjd0aj5vetph2agsabg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnKemVJ_qPn4LTUuN5JhCqK1FQ-ms5Oug"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "876296514345-n83fc1fhl4tl6pjd0aj5vetph2agsabg.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "876296514345-178ggvidddvvmj54qm0hd5aiaqi3t9c8.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.kiwimath.kiwimathApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

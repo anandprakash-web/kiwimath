@@ -1,0 +1,13 @@
+<svg viewBox="0 0 340 180" xmlns="http://www.w3.org/2000/svg" font-family="system-ui">
+<polygon points="30,15 12,50 48,50" fill="#4ECDC4" stroke="#2C3E50" stroke-width="1.5"/>
+<polygon points="85,15 67,50 103,50" fill="#4ECDC4" stroke="#2C3E50" stroke-width="1.5"/>
+<polygon points="140,15 122,50 158,50" fill="#4ECDC4" stroke="#2C3E50" stroke-width="1.5"/>
+<polygon points="195,15 177,50 213,50" fill="#4ECDC4" stroke="#2C3E50" stroke-width="1.5"/>
+<polygon points="250,15 232,50 268,50" fill="#4ECDC4" stroke="#2C3E50" stroke-width="1.5"/>
+<rect x="12" y="65" width="36" height="36" fill="#FF6B6B" stroke="#2C3E50" stroke-width="1.5"/>
+<rect x="67" y="65" width="36" height="36" fill="#FF6B6B" stroke="#2C3E50" stroke-width="1.5"/>
+<rect x="122" y="65" width="36" height="36" fill="#FF6B6B" stroke="#2C3E50" stroke-width="1.5"/>
+<circle cx="30" cy="130" r="18" fill="#F1C40F" stroke="#2C3E50" stroke-width="1.5"/>
+<circle cx="85" cy="130" r="18" fill="#F1C40F" stroke="#2C3E50" stroke-width="1.5"/>
+<text x="170" y="170" text-anchor="middle" font-size="12" fill="#333">How many shapes in all?</text>
+</svg>

@@ -1,0 +1,114 @@
+{
+  "id": "G1-COUNT-054",
+  "grade": 1,
+  "topic": "counting_observation",
+  "subtopic": "body_counting",
+  "subskills": [
+    "one_to_one_correspondence",
+    "subitizing"
+  ],
+  "difficulty": 1,
+  "tier": "warmup",
+  "source_inspiration": "Singapore CPA \u2014 concrete body counting",
+  "pedagogy": "cpa_concrete",
+  "stem_template": "{name} holds up {A} fingers on one hand and {B} on the other. How many fingers in total?",
+  "answer_type": "multiple_choice",
+  "interaction": {
+    "type": "multiple_choice",
+    "fallback_type": "multiple_choice"
+  },
+  "visual": null,
+  "visual_manifest": {
+    "art_brief": "Two hands side by side. The left hand shows {A} fingers up, the right hand shows {B} fingers up. The remaining fingers are folded down.",
+    "alt_text": "{A} fingers on one hand and {B} on the other.",
+    "style": "warm_cartoon",
+    "layout_hint": "side_by_side",
+    "visual_type": "illustration"
+  },
+  "params": {
+    "name": {
+      "pool": [
+        "Aarav",
+        "Mei",
+        "Sofia",
+        "Kofi",
+        "Liam"
+      ]
+    },
+    "A": {
+      "range": [
+        1,
+        5
+      ]
+    },
+    "B": {
+      "range": [
+        1,
+        5
+      ]
+    }
+  },
+  "derived": {
+    "N": "A + B"
+  },
+  "answer_formula": "A + B",
+  "distractors": [
+    {
+      "formula": "A",
+      "label": "counted_one_hand"
+    },
+    {
+      "formula": "A + B - 1",
+      "label": "missed_one"
+    },
+    {
+      "formula": "A + B + 1",
+      "label": "over_count"
+    }
+  ],
+  "misconceptions": [
+    {
+      "trigger_answer": "A",
+      "diagnosis": "counted_one_hand_only",
+      "feedback_child": "That's just one hand! Count both hands together.",
+      "step_down_path": [
+        "G1-COUNT-054-S1"
+      ]
+    },
+    {
+      "trigger_answer": "A + B - 1",
+      "diagnosis": "missed_one_finger",
+      "feedback_child": "Almost! Check if a thumb got missed. Count all fingers on both hands.",
+      "step_down_path": [
+        "G1-COUNT-054-S1"
+      ]
+    },
+    {
+      "trigger_answer": "A + B + 1",
+      "diagnosis": "double_counted_finger",
+      "feedback_child": "One too many! Count each finger just once.",
+      "step_down_path": [
+        "G1-COUNT-054-S1"
+      ]
+    }
+  ],
+  "socratic_feedback": {
+    "on_correct": "{A} plus {B} makes {N}! Great counting, {name}!",
+    "generic_incorrect": "Count the left hand first, then keep counting with the right hand.",
+    "encouragement_after_retry": "Hold up your own fingers and count along!"
+  },
+  "curriculum_alignment": {
+    "common_core": "K.CC.B.4",
+    "cambridge_stage": 1,
+    "singapore_strand": "Whole Numbers"
+  },
+  "tags": [
+    "topic:counting",
+    "skill:addition_readiness",
+    "cpa:concrete"
+  ],
+  "est_time_seconds": 20,
+  "version": 1,
+  "author": "AP",
+  "status": "draft"
+}

@@ -1,0 +1,97 @@
+{
+  "id": "G1-COUNT-050",
+  "grade": 1,
+  "topic": "counting_observation",
+  "subtopic": "counting_objects",
+  "subskills": ["one_to_one_correspondence", "cardinality"],
+  "difficulty": 1,
+  "tier": "warmup",
+  "source_inspiration": "Academic cofounder L1 — picnic blanket counting",
+
+  "pedagogy": "cpa_concrete",
+
+  "stem_template": "Look at the {scene}. How many {adjective} {object} do you see?",
+  "answer_type": "multiple_choice",
+
+  "interaction": {
+    "type": "tap_to_count",
+    "target_formula": "N",
+    "tap_targets": "object",
+    "fallback_type": "multiple_choice"
+  },
+
+  "visual": {
+    "type": "svg_generator",
+    "generator": "scattered_objects",
+    "params": {"count_from": "{N}", "object": "{object}"}
+  },
+  "visual_manifest": {
+    "art_brief": "A {scene} with {N} bright {adjective} {object} scattered across it. Each {object} should be distinct and easy to tap.",
+    "alt_text": "{N} {adjective} {object} on a {scene}.",
+    "style": "warm_cartoon",
+    "layout_hint": "scattered",
+    "visual_type": "illustration"
+  },
+
+  "params": {
+    "N":         {"range": [3, 7]},
+    "object":    {"pool": ["apples", "marbles", "stickers", "butterflies"]},
+    "adjective": {"pool": ["red", "shiny", "sparkly", "round"]},
+    "scene":     {"pool": ["picnic blanket", "garden table", "playground bench"]}
+  },
+  "derived": {},
+
+  "answer_formula": "N",
+  "distractors": [
+    {"formula": "N + 1", "label": "over_count"},
+    {"formula": "N - 1", "label": "under_count"},
+    {"formula": "N + 2", "label": "wild_guess"}
+  ],
+
+  "misconceptions": [
+    {
+      "trigger_answer": "N + 1",
+      "diagnosis": "double_counted_one",
+      "feedback_child": "Almost! One got counted twice. Try pointing to each one just once.",
+      "step_down_path": ["G1-COUNT-050-S1", "G1-COUNT-050-S2"]
+    },
+    {
+      "trigger_answer": "N - 1",
+      "diagnosis": "skipped_one_object",
+      "feedback_child": "So close! Check if you missed one hiding in the corner.",
+      "step_down_path": ["G1-COUNT-050-S1", "G1-COUNT-050-S2"]
+    },
+    {
+      "trigger_answer": "N + 2",
+      "diagnosis": "random_guess",
+      "feedback_child": "Let's slow down and count together, one by one.",
+      "step_down_path": ["G1-COUNT-050-S1", "G1-COUNT-050-S2"]
+    }
+  ],
+
+  "socratic_feedback": {
+    "on_correct": "Great job! You counted {N} {object}. Now they're ready for the picnic!",
+    "on_under_count": "You're almost there! Keep counting — what number comes after that?",
+    "on_over_count": "Oops! Looks like you counted one twice. Point at each one just once.",
+    "on_timeout": "Take your time! Start from the left and tap each {object} one at a time.",
+    "encouragement_after_retry": "You've got this! Touch each one only once."
+  },
+
+  "curriculum_alignment": {
+    "common_core": "K.CC.B.4",
+    "cambridge_stage": 1,
+    "cambridge_strand": "Thinking and Working Mathematically: Counting",
+    "singapore_strand": "Whole Numbers"
+  },
+
+  "locale_context": {
+    "IN":     {"objects": ["laddoos", "marbles", "stickers"]},
+    "global": {"objects": ["apples", "marbles", "butterflies"]}
+  },
+
+  "tags": ["topic:counting", "skill:one_to_one", "cpa:concrete"],
+  "est_time_seconds": 20,
+  "version": 1,
+  "author": "AP",
+  "status": "draft"
+}

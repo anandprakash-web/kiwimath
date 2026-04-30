@@ -1,0 +1,40 @@
+{
+  "id": "G1-COUNT-081-S2",
+  "grade": 1,
+  "topic": "spatial_reasoning_3d",
+  "subtopic": "scaffolded_step_down",
+  "subskills": [
+    "top_view_projection"
+  ],
+  "difficulty": 4,
+  "tier": "challenge",
+  "parent_id": "G1-COUNT-081",
+  "step_index": 2,
+  "stem_template": "Here is the top view of the plates. The big plate's edge is visible around the small plate. Can you see both?",
+  "visual": null,
+  "answer_type": "multiple_choice",
+  "params": {},
+  "answer_formula": "'yes'",
+  "distractors": [
+    {
+      "formula": "'no'",
+      "label": "thinks_hidden"
+    },
+    {
+      "formula": "'only_small'",
+      "label": "only_top"
+    }
+  ],
+  "misconceptions": [],
+  "visual_manifest": {
+    "art_brief": "Top-down view: a small circle (plate) inside a larger circle (plate), both visible as concentric rings.",
+    "alt_text": "Top view of two concentric plates."
+  },
+  "tags": [
+    "step_down"
+  ],
+  "est_time_seconds": 20,
+  "version": 1,
+  "author": "AP",
+  "status": "draft"
+}

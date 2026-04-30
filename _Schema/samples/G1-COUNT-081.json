@@ -1,0 +1,85 @@
+{
+  "id": "G1-COUNT-081",
+  "grade": 1,
+  "topic": "spatial_reasoning_3d",
+  "subtopic": "perspective_projection",
+  "subskills": ["top_view_projection", "size_comparison"],
+  "difficulty": 5,
+  "tier": "challenge",
+  "source_inspiration": "Felix 2018 Q5 — disc tower top view",
+
+  "pedagogy": "exploration",
+
+  "stem_template": "{name} looks at a tower of {N} stacked discs from directly above. How many discs can {pronoun_subject_lower} see?",
+  "answer_type": "multiple_choice",
+
+  "interaction": {
+    "type": "multiple_choice",
+    "fallback_type": "multiple_choice"
+  },
+
+  "visual": null,
+  "visual_manifest": {
+    "art_brief": "A tower of {N} discs stacked from bottom to top. The bottom disc is the widest, each disc above is slightly smaller. Show the 3D tower from a slight angle so all discs are visible, with an arrow indicating 'view from above'.",
+    "alt_text": "A 3D stack of {N} discs of decreasing size.",
+    "style": "warm_cartoon",
+    "layout_hint": "stacked",
+    "visual_type": "3D_diagram"
+  },
+
+  "params": {
+    "N":    {"range": [3, 5]},
+    "name": {"pool": ["Theodor", "Aarav", "Mei", "Liam", "Sofia"]},
+    "pronoun_subject_lower": {"pool": ["he", "she"]}
+  },
+  "derived": {},
+
+  "answer_formula": "N",
+  "distractors": [
+    {"formula": "1",     "label": "only_top"},
+    {"formula": "N - 1", "label": "missed_bottom"},
+    {"formula": "0",     "label": "none_visible"}
+  ],
+
+  "misconceptions": [
+    {
+      "trigger_answer": "1",
+      "diagnosis": "assumed_top_only_visible",
+      "feedback_child": "The top disc is smallest! The bigger ones underneath stick out. Can you see their edges?",
+      "step_down_path": ["G1-COUNT-081-S1", "G1-COUNT-081-S2"]
+    },
+    {
+      "trigger_answer": "N - 1",
+      "diagnosis": "missed_one_disc",
+      "feedback_child": "Almost all of them! Even the very bottom one is wider — its edge peeks out.",
+      "step_down_path": ["G1-COUNT-081-S1"]
+    },
+    {
+      "trigger_answer": "0",
+      "diagnosis": "confused_by_perspective",
+      "feedback_child": "You can always see at least the top! And the bigger ones below peek out too.",
+      "step_down_path": ["G1-COUNT-081-S1", "G1-COUNT-081-S2"]
+    }
+  ],
+
+  "socratic_feedback": {
+    "on_correct": "Great eye for perspective! Because the bottom discs are wider, their edges are still visible from the top.",
+    "incorrect_one": "Think about it — the top disc is the smallest. The ones underneath are wider. Can their edges be seen from above?",
+    "generic_incorrect": "Imagine stacking plates of different sizes. If you look down from above, can you see the edges of the bigger plates?",
+    "encouragement_after_retry": "Try stacking some coins of different sizes and looking straight down. What do you see?"
+  },
+
+  "curriculum_alignment": {
+    "cambridge_stage": 2,
+    "cambridge_strand": "Geometry and Measure: 3D Shapes",
+    "kangaroo_level": "Felix",
+    "olympiad_skill": "Geometric Projection / Perspective",
+    "reference": "Felix 2018 Q5"
+  },
+
+  "tags": ["topic:spatial_3d", "skill:perspective", "level:olympiad_foundation"],
+  "est_time_seconds": 40,
+  "version": 1,
+  "author": "AP",
+  "status": "draft"
+}

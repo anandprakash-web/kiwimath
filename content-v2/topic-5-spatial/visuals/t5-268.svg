@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <rect width="200" height="200" fill="#f0f4f8" rx="12"/>
+  <text x="100" y="28" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#333">Brain Teaser</text>
+  <polygon points="50.0,62.5 54.6,73.6 66.6,74.6 57.5,82.4 60.3,94.2 50.0,87.9 39.7,94.2 42.5,82.4 33.4,74.6 45.4,73.6" fill="#D5DBDB" stroke="#333" stroke-width="1.5"/>
+  <polygon points="150.0,62.5 154.6,73.6 166.6,74.6 157.5,82.4 160.3,94.2 150.0,87.9 139.7,94.2 142.5,82.4 133.4,74.6 145.4,73.6" fill="#F8C471" stroke="#333" stroke-width="1.5"/>
+  <polygon points="100.0,112.5 104.6,123.6 116.6,124.6 107.5,132.4 110.3,144.2 100.0,137.9 89.7,144.2 92.5,132.4 83.4,124.6 95.4,123.6" fill="#FF6B6B" stroke="#333" stroke-width="1.5"/>
+</svg>

@@ -1,0 +1,35 @@
+{
+  "id": "G1-ARITH-003-S1",
+  "grade": 1,
+  "topic": "arithmetic_missing_numbers",
+  "subtopic": "scaffolded_step_down",
+  "subskills": ["guided_addition"],
+  "difficulty": 1,
+  "tier": "warmup",
+  "parent_id": "G1-ARITH-003",
+  "step_index": 1,
+  "stem_template": "Count the {object} on the plate: {N}. Now {K} more arrive. How many now?",
+  "visual": null,
+  "answer_type": "multiple_choice",
+  "params": {
+    "N":      {"range": [2, 4]},
+    "K":      {"range": [1, 3], "constraint": "N+K<=7"},
+    "object": {"pool": ["apples", "marbles", "stickers"]}
+  },
+  "derived": {},
+  "answer_formula": "N+K",
+  "distractors": [
+    {"formula": "N",     "label": "ignored_new_items"},
+    {"formula": "N+K+1", "label": "off_by_one"}
+  ],
+  "misconceptions": [],
+  "visual_manifest": {
+    "art_brief": "A plate with {N} {object} clearly arranged, and {K} more {object} next to the plate ready to be added.",
+    "alt_text": "{N} {object} on plate, {K} more arriving."
+  },
+  "tags": ["step_down"],
+  "est_time_seconds": 15,
+  "version": 1,
+  "author": "acad-v2",
+  "status": "approved"
+}

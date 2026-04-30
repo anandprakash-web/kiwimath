@@ -1,0 +1,47 @@
+{
+  "id": "G1-COUNT-055-S1",
+  "grade": 1,
+  "topic": "counting_observation",
+  "subtopic": "scaffolded_step_down",
+  "subskills": [
+    "guided_counting"
+  ],
+  "difficulty": 1,
+  "tier": "warmup",
+  "parent_id": "G1-COUNT-055",
+  "step_index": 1,
+  "stem_template": "Count these marks: | | |. How many?",
+  "visual": null,
+  "answer_type": "multiple_choice",
+  "params": {
+    "N": {
+      "range": [
+        2,
+        4
+      ]
+    }
+  },
+  "answer_formula": "N",
+  "distractors": [
+    {
+      "formula": "N - 1",
+      "label": "under"
+    },
+    {
+      "formula": "N + 1",
+      "label": "over"
+    },
+    {
+      "formula": "N + 2",
+      "label": "way_over"
+    }
+  ],
+  "misconceptions": [],
+  "tags": [
+    "step_down"
+  ],
+  "est_time_seconds": 15,
+  "version": 1,
+  "author": "AP",
+  "status": "draft"
+}

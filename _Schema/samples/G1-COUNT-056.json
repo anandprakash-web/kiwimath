@@ -1,0 +1,114 @@
+{
+  "id": "G1-COUNT-056",
+  "grade": 1,
+  "topic": "counting_observation",
+  "subtopic": "domino_counting",
+  "subskills": [
+    "subitizing",
+    "part_part_whole"
+  ],
+  "difficulty": 1,
+  "tier": "warmup",
+  "source_inspiration": "Singapore CPA \u2014 domino subitizing",
+  "pedagogy": "cpa_pictorial",
+  "stem_template": "How many dots are on this domino in total?",
+  "answer_type": "multiple_choice",
+  "interaction": {
+    "type": "multiple_choice",
+    "fallback_type": "multiple_choice"
+  },
+  "visual": {
+    "type": "svg_generator",
+    "generator": "domino",
+    "params": {
+      "left": "{A}",
+      "right": "{B}"
+    }
+  },
+  "visual_manifest": {
+    "art_brief": "A domino tile split in half. Left side has {A} dots in standard domino pattern. Right side has {B} dots. A dividing line separates the halves.",
+    "alt_text": "A domino with {A} dots on the left and {B} on the right.",
+    "style": "warm_cartoon",
+    "layout_hint": "side_by_side",
+    "visual_type": "illustration"
+  },
+  "params": {
+    "A": {
+      "range": [
+        1,
+        5
+      ]
+    },
+    "B": {
+      "range": [
+        1,
+        5
+      ]
+    }
+  },
+  "derived": {
+    "N": "A + B"
+  },
+  "answer_formula": "A + B",
+  "distractors": [
+    {
+      "formula": "A",
+      "label": "counted_left_only"
+    },
+    {
+      "formula": "B",
+      "label": "counted_right_only"
+    },
+    {
+      "formula": "A + B + 1",
+      "label": "over_counted"
+    }
+  ],
+  "misconceptions": [
+    {
+      "trigger_answer": "A",
+      "diagnosis": "counted_one_half_only",
+      "feedback_child": "That's just one side! A domino has TWO halves. Count both!",
+      "step_down_path": [
+        "G1-COUNT-056-S1"
+      ]
+    },
+    {
+      "trigger_answer": "B",
+      "diagnosis": "counted_wrong_half",
+      "feedback_child": "That's the other side! Add both sides together for the total.",
+      "step_down_path": [
+        "G1-COUNT-056-S1"
+      ]
+    },
+    {
+      "trigger_answer": "A + B + 1",
+      "diagnosis": "double_counted_dot",
+      "feedback_child": "One too many! Count each dot just once.",
+      "step_down_path": [
+        "G1-COUNT-056-S1"
+      ]
+    }
+  ],
+  "socratic_feedback": {
+    "on_correct": "{A} and {B} make {N}! Dominoes are great for practising adding.",
+    "generic_incorrect": "Count the left side first, remember the number, then keep counting the right side.",
+    "encouragement_after_retry": "Try this: say the left number, then count on from there with the right dots."
+  },
+  "curriculum_alignment": {
+    "common_core": "K.OA.A.3",
+    "cambridge_stage": 1,
+    "singapore_strand": "Whole Numbers",
+    "kangaroo_level": "Felix"
+  },
+  "tags": [
+    "topic:counting",
+    "skill:subitizing",
+    "skill:addition_readiness",
+    "cpa:pictorial"
+  ],
+  "est_time_seconds": 20,
+  "version": 1,
+  "author": "AP",
+  "status": "draft"
+}

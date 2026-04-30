@@ -1,0 +1,55 @@
+{
+  "id": "G1-COUNT-051-S1",
+  "grade": 1,
+  "topic": "counting_observation",
+  "subtopic": "scaffolded_step_down",
+  "subskills": [
+    "ordinal_position"
+  ],
+  "difficulty": 1,
+  "tier": "warmup",
+  "parent_id": "G1-COUNT-051",
+  "step_index": 1,
+  "stem_template": "Here are 3 {animal} in a row. Tap the 1st {animal_singular}.",
+  "visual": null,
+  "answer_type": "multiple_choice",
+  "params": {
+    "animal": {
+      "pool": [
+        "ducks",
+        "frogs",
+        "penguins"
+      ]
+    },
+    "animal_singular": {
+      "pool": [
+        "duck",
+        "frog",
+        "penguin"
+      ]
+    }
+  },
+  "answer_formula": "1",
+  "distractors": [
+    {
+      "formula": "2",
+      "label": "second_not_first"
+    },
+    {
+      "formula": "3",
+      "label": "last_not_first"
+    }
+  ],
+  "misconceptions": [],
+  "visual_manifest": {
+    "art_brief": "A row of 3 {animal}, clearly left-to-right.",
+    "alt_text": "3 {animal} in a row."
+  },
+  "tags": [
+    "step_down"
+  ],
+  "est_time_seconds": 15,
+  "version": 1,
+  "author": "AP",
+  "status": "draft"
+}

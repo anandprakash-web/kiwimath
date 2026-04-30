@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <rect width="200" height="200" fill="#f0f4f8" rx="12"/>
+  <text x="100" y="28" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#333">3 Pencils</text>
+  <rect x="44.06666666666667" y="85.66666666666666" width="5.2" height="31.200000000000006" fill="#4ECDC4" stroke="#333" stroke-width="1"/><polygon points="44.06666666666667,116.86666666666667 49.26666666666667,116.86666666666667 46.66666666666667,120.33333333333334" fill="#F8C471" stroke="#333" stroke-width="1"/>
+  <rect x="97.40000000000002" y="85.66666666666666" width="5.2" height="31.200000000000006" fill="#FF6B6B" stroke="#333" stroke-width="1"/><polygon points="97.40000000000002,116.86666666666667 102.60000000000001,116.86666666666667 100.00000000000001,120.33333333333334" fill="#F8C471" stroke="#333" stroke-width="1"/>
+  <rect x="150.73333333333335" y="85.66666666666666" width="5.2" height="31.200000000000006" fill="#45B7D1" stroke="#333" stroke-width="1"/><polygon points="150.73333333333335,116.86666666666667 155.93333333333334,116.86666666666667 153.33333333333334,120.33333333333334" fill="#F8C471" stroke="#333" stroke-width="1"/>
+</svg>

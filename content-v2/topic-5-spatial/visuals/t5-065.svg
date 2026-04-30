@@ -1,0 +1,21 @@
+<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <rect x="130" y="30" width="35" height="35" fill="#fff" stroke="#ccc" stroke-width="1"/>
+  <rect x="165" y="30" width="35" height="35" fill="#fff" stroke="#ccc" stroke-width="1"/>
+  <rect x="200" y="30" width="35" height="35" fill="#fff" stroke="#ccc" stroke-width="1"/>
+  <rect x="235" y="30" width="35" height="35" fill="#fff" stroke="#ccc" stroke-width="1"/>
+  <rect x="130" y="65" width="35" height="35" fill="#fff" stroke="#ccc" stroke-width="1"/>
+  <rect x="165" y="65" width="35" height="35" fill="#fff" stroke="#ccc" stroke-width="1"/>
+  <rect x="200" y="65" width="35" height="35" fill="#fff" stroke="#ccc" stroke-width="1"/>
+  <rect x="235" y="65" width="35" height="35" fill="#fff" stroke="#ccc" stroke-width="1"/>
+  <rect x="130" y="100" width="35" height="35" fill="#fff" stroke="#ccc" stroke-width="1"/>
+  <rect x="165" y="100" width="35" height="35" fill="#fff" stroke="#ccc" stroke-width="1"/>
+  <rect x="200" y="100" width="35" height="35" fill="#fff" stroke="#ccc" stroke-width="1"/>
+  <rect x="235" y="100" width="35" height="35" fill="#fff" stroke="#ccc" stroke-width="1"/>
+  <rect x="130" y="135" width="35" height="35" fill="#fff" stroke="#ccc" stroke-width="1"/>
+  <rect x="165" y="135" width="35" height="35" fill="#fff" stroke="#ccc" stroke-width="1"/>
+  <rect x="200" y="135" width="35" height="35" fill="#fff" stroke="#ccc" stroke-width="1"/>
+  <rect x="235" y="135" width="35" height="35" fill="#fff" stroke="#ccc" stroke-width="1"/>
+  <circle cx="147" cy="117" r="12" fill="#f1c40f" stroke="#333" stroke-width="1.5"/>
+  <text x="147" y="121" text-anchor="middle" font-family="system-ui" font-size="10" fill="#333" font-weight="bold">K</text>
+  <text x="252" y="52" text-anchor="middle" font-family="system-ui" font-size="20" fill="#e74c3c">★</text>
+</svg>

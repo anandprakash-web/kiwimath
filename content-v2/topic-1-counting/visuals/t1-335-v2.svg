@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 110">
+  <rect width="260" height="110" fill="#FFFBF5" rx="12"/>
+  <polygon points="65.4,50.0 56.2,65.93486742963367 37.800000000000004,65.93486742963367 28.599999999999998,50.0 37.79999999999999,34.06513257036633 56.2,34.06513257036633" fill="#FF6B6B" opacity="0.85"/>
+  <text x="47" y="55" text-anchor="middle" font-family="Arial" font-size="15" font-weight="bold" fill="white">17</text>
+  <circle cx="102" cy="50" r="24" fill="#66BB6A" opacity="0.85"/>
+  <text x="102" y="55" text-anchor="middle" font-family="Arial" font-size="15" font-weight="bold" fill="white">11</text>
+  <rect x="137" y="30" width="40" height="40" fill="#FFA726" rx="10" opacity="0.85"/>
+  <text x="157" y="55" text-anchor="middle" font-family="Arial" font-size="15" font-weight="bold" fill="white">14</text>
+  <polygon points="228.8,50.0 220.4,64.54922678357858 203.6,64.54922678357858 195.2,50.0 203.6,35.45077321642144 220.4,35.45077321642143" fill="#F06292" opacity="0.85"/>
+  <text x="212" y="55" text-anchor="middle" font-family="Arial" font-size="15" font-weight="bold" fill="white">8</text>
+  <rect x="20" y="88" width="220" height="3" fill="#AB47BC" rx="1.5" opacity="0.4"/>
+</svg>

@@ -8,7 +8,6 @@ import '../widgets/feedback_banner.dart';
 import '../widgets/option_card.dart';
 import '../widgets/svg_visual.dart';
 import 'celebration_screen.dart';
-import 'explanation_screen.dart';
 
 /// v3 question screen — server-driven adaptive loop.
 ///
@@ -281,24 +280,25 @@ class _QuestionScreenState extends State<QuestionScreen> {
     final correctAnswer = q.options[q.correctIndex].text;
     final feedback = resp.feedbackMessage ?? "Let's break this down step by step.";
 
-    Navigator.of(context).push(
-      MaterialPageRoute(
-        builder: (_) => ExplanationScreen(
-          feedbackMessage: feedback,
-          questionStem: q.stem,
-          correctAnswer: correctAnswer,
-          wrongAnswer: wrongAnswer,
-          onDone: () {
-            Navigator.of(context).pop();
-            // Show the next question from the server response.
-            if (resp.sessionComplete) {
-              _sessionRewards = resp.rewards;
-              setState(() => _phase = _Phase.sessionComplete);
-            } else {
-              _showQuestion(resp.question, resp.isStepDown);
-            }
-          },
-        ),
+    showModalBottomSheet(
+      context: context,
+      isScrollControlled: true,
+      backgroundColor: Colors.transparent,
+      builder: (ctx) => _WhyBottomSheet(
+        feedbackMessage: feedback,
+        questionStem: q.stem,
+        correctAnswer: correctAnswer,
+        wrongAnswer: wrongAnswer,
+        onDone: () {
+          Navigator.of(ctx).pop(); // close sheet
+          // Show the next question from the server response.
+          if (resp.sessionComplete) {
+            _sessionRewards = resp.rewards;
+            setState(() => _phase = _Phase.sessionComplete);
+          } else {
+            _showQuestion(resp.question, resp.isStepDown);
+          }
+        },
       ),
     );
   }
@@ -1245,4 +1245,221 @@ class _StatItem {
   final String label;
   final String value;
   const _StatItem(this.label, this.value);
+}
+
+/// Inline bottom-sheet explanation for "Why?" — keeps the kid in context.
+class _WhyBottomSheet extends StatelessWidget {
+  final String feedbackMessage;
+  final String questionStem;
+  final String correctAnswer;
+  final String wrongAnswer;
+  final VoidCallback onDone;
+
+  const _WhyBottomSheet({
+    required this.feedbackMessage,
+    required this.questionStem,
+    required this.correctAnswer,
+    required this.wrongAnswer,
+    required this.onDone,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return DraggableScrollableSheet(
+      initialChildSize: 0.55,
+      minChildSize: 0.3,
+      maxChildSize: 0.85,
+      builder: (context, scrollController) {
+        return Container(
+          decoration: const BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.vertical(top: Radius.circular(24)),
+            boxShadow: [
+              BoxShadow(
+                color: Color(0x1A000000),
+                blurRadius: 20,
+                offset: Offset(0, -4),
+              ),
+            ],
+          ),
+          child: Column(
+            children: [
+              Padding(
+                padding: const EdgeInsets.only(top: 12, bottom: 4),
+                child: Container(
+                  width: 40,
+                  height: 4,
+                  decoration: BoxDecoration(
+                    color: const Color(0xFFE0E0E0),
+                    borderRadius: BorderRadius.circular(2),
+                  ),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
+                child: Row(
+                  children: [
+                    Container(
+                      width: 32,
+                      height: 32,
+                      decoration: const BoxDecoration(
+                        color: Color(0xFFFFF3E0),
+                        shape: BoxShape.circle,
+                      ),
+                      child: const Center(
+                        child: Text('\u{1F4A1}', style: TextStyle(fontSize: 16)),
+                      ),
+                    ),
+                    const SizedBox(width: 10),
+                    const Text(
+                      'Understanding the answer',
+                      style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.w700,
+                        color: Color(0xFFE65100),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              const Divider(height: 1, color: Color(0xFFF5F5F5)),
+              Expanded(
+                child: ListView(
+                  controller: scrollController,
+                  padding: const EdgeInsets.all(20),
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        _buildAnswerChip(wrongAnswer, false),
+                        const Padding(
+                          padding: EdgeInsets.symmetric(horizontal: 10),
+                          child: Icon(Icons.arrow_forward,
+                              color: Color(0xFFBDBDBD), size: 18),
+                        ),
+                        _buildAnswerChip(correctAnswer, true),
+                      ],
+                    ),
+                    const SizedBox(height: 18),
+                    Container(
+                      width: double.infinity,
+                      padding: const EdgeInsets.all(16),
+                      decoration: BoxDecoration(
+                        color: const Color(0xFFFFFDE7),
+                        borderRadius: BorderRadius.circular(14),
+                        border: Border.all(
+                            color: const Color(0xFFFFF9C4), width: 1.5),
+                      ),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          const Text(
+                            'Here\'s why:',
+                            style: TextStyle(
+                              fontSize: 13,
+                              fontWeight: FontWeight.w700,
+                              color: Color(0xFFF57F17),
+                            ),
+                          ),
+                          const SizedBox(height: 8),
+                          Text(
+                            feedbackMessage,
+                            style: const TextStyle(
+                              fontSize: 14,
+                              color: Color(0xFF424242),
+                              height: 1.5,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    const SizedBox(height: 16),
+                    Container(
+                      width: double.infinity,
+                      padding: const EdgeInsets.all(14),
+                      decoration: BoxDecoration(
+                        color: const Color(0xFFF5F5F5),
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                      child: Text(
+                        questionStem,
+                        style: const TextStyle(
+                          fontSize: 12,
+                          color: Color(0xFF757575),
+                          height: 1.4,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              Padding(
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+                child: SafeArea(
+                  top: false,
+                  child: SizedBox(
+                    width: double.infinity,
+                    child: GestureDetector(
+                      onTap: onDone,
+                      child: Container(
+                        padding: const EdgeInsets.symmetric(vertical: 14),
+                        decoration: BoxDecoration(
+                          gradient: const LinearGradient(
+                            colors: [Color(0xFFFF9800), Color(0xFFE65100)],
+                          ),
+                          borderRadius: BorderRadius.circular(14),
+                        ),
+                        child: const Text(
+                          'Got it, next question \u{2192}',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            fontSize: 15,
+                            fontWeight: FontWeight.w700,
+                            color: Colors.white,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
+        );
+      },
+    );
+  }
+
+  Widget _buildAnswerChip(String text, bool isCorrect) {
+    final color =
+        isCorrect ? const Color(0xFF2E7D32) : const Color(0xFFEF5350);
+    final bg =
+        isCorrect ? const Color(0xFFE8F5E9) : const Color(0xFFFFEBEE);
+    final icon = isCorrect ? Icons.check : Icons.close;
+
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
+      decoration: BoxDecoration(
+        color: bg,
+        borderRadius: BorderRadius.circular(12),
+        border: Border.all(color: color.withOpacity(0.3), width: 1.5),
+      ),
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Icon(icon, color: color, size: 16),
+          const SizedBox(width: 5),
+          Text(
+            text,
+            style: TextStyle(
+              fontSize: 16,
+              fontWeight: FontWeight.w700,
+              color: color,
+            ),
+          ),
+        ],
+      ),
+    );
+  }
 }

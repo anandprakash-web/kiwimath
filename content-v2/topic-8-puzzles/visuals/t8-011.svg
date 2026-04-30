@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <rect width="200" height="200" fill="#f0f4f8" rx="12"/>
+  <text x="100" y="28" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#333">2 Blocks</text>
+  <rect x="34.0" y="84.8" width="52.0" height="36.4" fill="#85C1E9" stroke="#333" stroke-width="1.5" rx="2"/>
+  <rect x="114.0" y="84.8" width="52.0" height="36.4" fill="#96CEB4" stroke="#333" stroke-width="1.5" rx="2"/>
+</svg>

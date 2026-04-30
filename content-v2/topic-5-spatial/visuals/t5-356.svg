@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <rect width="200" height="200" fill="#f0f4f8" rx="12"/>
+  <text x="100" y="30" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="bold" fill="#333">Shape Challenge</text>
+  <polygon points="100.0,64.25 64.25,135.75 135.75,135.75" fill="#FF6B6B" stroke="#333" stroke-width="1.5"/>
+  <text x="100.0" y="149.75" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#555">Pyramid</text>
+</svg>

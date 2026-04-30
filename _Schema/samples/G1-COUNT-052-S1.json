@@ -1,0 +1,54 @@
+{
+  "id": "G1-COUNT-052-S1",
+  "grade": 1,
+  "topic": "counting_observation",
+  "subtopic": "scaffolded_step_down",
+  "subskills": [
+    "subitizing"
+  ],
+  "difficulty": 1,
+  "tier": "warmup",
+  "parent_id": "G1-COUNT-052",
+  "step_index": 1,
+  "stem_template": "Count the {feature} on the left wing. How many?",
+  "visual": null,
+  "answer_type": "multiple_choice",
+  "params": {
+    "A": {
+      "range": [
+        2,
+        4
+      ]
+    },
+    "feature": {
+      "pool": [
+        "spots",
+        "dots",
+        "markings"
+      ]
+    }
+  },
+  "answer_formula": "A",
+  "distractors": [
+    {
+      "formula": "A - 1",
+      "label": "under_count"
+    },
+    {
+      "formula": "A + 1",
+      "label": "over_count"
+    }
+  ],
+  "misconceptions": [],
+  "visual_manifest": {
+    "art_brief": "One ladybird wing with {A} clearly visible {feature}.",
+    "alt_text": "{A} {feature} on a wing."
+  },
+  "tags": [
+    "step_down"
+  ],
+  "est_time_seconds": 15,
+  "version": 1,
+  "author": "AP",
+  "status": "draft"
+}

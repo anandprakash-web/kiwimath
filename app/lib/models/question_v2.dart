@@ -48,6 +48,19 @@ class HintLadder {
       default: return level0;
     }
   }
+
+  /// Consolidated 3-level hint (combines pairs from 6-level ladder).
+  /// Level 1: Gentle nudge (level0 + level1)
+  /// Level 2: Think deeper (level2 + level3)
+  /// Level 3: Almost the answer (level4 + level5)
+  String forLevel3(int level) {
+    switch (level) {
+      case 0: return level0.isNotEmpty ? level0 : level1;
+      case 1: return level2.isNotEmpty ? level2 : level3;
+      case 2: return level4.isNotEmpty ? level4 : level5;
+      default: return level0;
+    }
+  }
 }
 
 class TopicV2 {

@@ -1,0 +1,95 @@
+{
+  "id": "G1-COUNT-080",
+  "grade": 1,
+  "topic": "spatial_reasoning_3d",
+  "subtopic": "mirror_reflection",
+  "subskills": ["lateral_inversion", "spatial_transformation"],
+  "difficulty": 5,
+  "tier": "challenge",
+  "source_inspiration": "Felix 2021 Q5 — mirror number reflection",
+
+  "pedagogy": "exploration",
+
+  "stem_template": "{name} is wearing a white T-shirt with the number '{N}' on it. {pronoun_subject} looks into a mirror. Which number does {pronoun_subject_lower} see in the mirror?",
+  "answer_type": "multiple_choice",
+
+  "interaction": {
+    "type": "multiple_choice_visual",
+    "options_descriptions": [
+      "The number {N} (unchanged)",
+      "The number {N_reversed}",
+      "The mirrored image of {N}",
+      "The number {N_random}"
+    ],
+    "correct_option_index": 2,
+    "fallback_type": "multiple_choice"
+  },
+
+  "visual": null,
+  "visual_manifest": {
+    "art_brief": "A child in a white T-shirt showing the number '{N}'. A vertical line represents a mirror next to them. On the mirror side, show the laterally inverted reflection of the number.",
+    "alt_text": "Mirror reflection problem with the number {N}.",
+    "style": "warm_cartoon",
+    "layout_hint": "side_by_side",
+    "visual_type": "diagram"
+  },
+
+  "params": {
+    "name":    {"pool": ["Ella", "Aarav", "Mei", "Kofi", "Liam"]},
+    "N":       {"pool": [12, 15, 23, 31, 42]},
+    "pronoun_subject": {"pool": ["She", "He"]}
+  },
+  "derived": {
+    "N_reversed": "reverse_digits(N)",
+    "N_random": "N + 3",
+    "pronoun_subject_lower": "lowercase(pronoun_subject)"
+  },
+
+  "answer_formula": "mirror(N)",
+  "distractors": [
+    {"formula": "N",            "label": "no_change"},
+    {"formula": "reverse_digits(N)", "label": "digit_reversal"},
+    {"formula": "N + 3",        "label": "random_number"}
+  ],
+
+  "misconceptions": [
+    {
+      "trigger_answer": "N",
+      "diagnosis": "mirror_does_nothing",
+      "feedback_child": "A mirror flips things! Hold up your hand — which hand is the mirror you?",
+      "step_down_path": ["G1-COUNT-080-S1", "G1-COUNT-080-S2"]
+    },
+    {
+      "trigger_answer": "reverse_digits(N)",
+      "diagnosis": "reversed_digits_not_image",
+      "feedback_child": "Good thinking about reversal! But mirrors flip left-right, not the digit order.",
+      "step_down_path": ["G1-COUNT-080-S1", "G1-COUNT-080-S2"]
+    },
+    {
+      "trigger_answer": "N + 3",
+      "diagnosis": "random_guess_mirror",
+      "feedback_child": "Let's think about what mirrors do. Try holding a finger up to a mirror!",
+      "step_down_path": ["G1-COUNT-080-S1", "G1-COUNT-080-S2"]
+    }
+  ],
+
+  "socratic_feedback": {
+    "on_correct": "Brilliant! Mirrors flip things left-to-right. This is called reflection symmetry.",
+    "generic_incorrect": "Hold up a finger and look at it in a mirror. Does it flip? Numbers flip too! Which one looks like a reflection?",
+    "encouragement_after_retry": "Think about writing a number on paper and holding it up to a mirror. What happens?"
+  },
+
+  "curriculum_alignment": {
+    "cambridge_stage": 2,
+    "cambridge_strand": "Geometry and Measure: Symmetry",
+    "kangaroo_level": "Felix",
+    "olympiad_skill": "Spatial Transformation / Invariants",
+    "reference": "Felix 2021 Q5"
+  },
+
+  "tags": ["topic:spatial", "skill:reflection", "level:olympiad_foundation"],
+  "est_time_seconds": 45,
+  "version": 1,
+  "author": "AP",
+  "status": "draft"
+}

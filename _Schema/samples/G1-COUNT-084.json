@@ -1,0 +1,104 @@
+{
+  "id": "G1-COUNT-084",
+  "grade": 1,
+  "topic": "counting_observation",
+  "subtopic": "parity_reasoning",
+  "subskills": [
+    "odd_even_awareness",
+    "invariant_reasoning"
+  ],
+  "difficulty": 5,
+  "tier": "challenge",
+  "source_inspiration": "IMO seed — parity invariants",
+  "pedagogy": "exploration",
+  "stem_template": "{name} starts with {S} sweets. Every day, {name} gets {D} more sweets. Can {name} ever have exactly {target} sweets?",
+  "answer_type": "multiple_choice",
+  "interaction": {
+    "type": "multiple_choice",
+    "fallback_type": "multiple_choice"
+  },
+  "visual": null,
+  "visual_manifest": {
+    "art_brief": "A number line starting at {S}, with arrows jumping by {D} each time: {S}, then {S}+{D}, then {S}+2×{D}... A circled number {target} with a question mark over it.",
+    "alt_text": "Number line jumping by {D} from {S}. Can we land on {target}?",
+    "style": "warm_cartoon",
+    "layout_hint": "row",
+    "visual_type": "diagram"
+  },
+  "params": {
+    "name": {
+      "pool": [
+        "Aarav",
+        "Mei",
+        "Kofi",
+        "Sofia"
+      ]
+    },
+    "S": {
+      "pool": [
+        1
+      ]
+    },
+    "D": {
+      "pool": [
+        2
+      ]
+    },
+    "target": {
+      "pool": [
+        8
+      ]
+    }
+  },
+  "derived": {},
+  "answer_formula": "'No'",
+  "distractors": [
+    {
+      "formula": "'Yes'",
+      "label": "ignored_parity"
+    },
+    {
+      "formula": "'Maybe'",
+      "label": "unsure"
+    }
+  ],
+  "misconceptions": [
+    {
+      "trigger_answer": "'Yes'",
+      "diagnosis": "ignored_parity_constraint",
+      "feedback_child": "List the numbers: 1, 3, 5, 7, 9... Always odd! 8 is even.",
+      "step_down_path": [
+        "G1-COUNT-084-S1",
+        "G1-COUNT-084-S2"
+      ]
+    },
+    {
+      "trigger_answer": "'Maybe'",
+      "diagnosis": "uncertain_no_reasoning",
+      "feedback_child": "Let's check! 1, 3, 5, 7, 9, 11... Do you ever see 8?",
+      "step_down_path": [
+        "G1-COUNT-084-S1"
+      ]
+    }
+  ],
+  "socratic_feedback": {
+    "on_correct": "No! Starting odd and adding 2 keeps it odd forever. 8 is even, so it's impossible!",
+    "generic_incorrect": "Write the sequence: 1, 3, 5, 7, 9... What do you notice about these numbers?",
+    "encouragement_after_retry": "Odd + even = odd. So starting at 1 and adding 2 always stays odd!"
+  },
+  "curriculum_alignment": {
+    "cambridge_stage": 2,
+    "kangaroo_level": "Felix",
+    "olympiad_skill": "Parity / Invariant Reasoning",
+    "reference": "IMO number theory seed"
+  },
+  "tags": [
+    "topic:counting",
+    "skill:parity",
+    "level:olympiad_foundation"
+  ],
+  "est_time_seconds": 45,
+  "version": 1,
+  "author": "AP",
+  "status": "draft"
+}

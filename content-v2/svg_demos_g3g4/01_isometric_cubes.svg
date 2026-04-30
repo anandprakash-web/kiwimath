@@ -1,0 +1,34 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <polygon points="200.0,235.0 221.65,247.5 200.0,260.0 178.35,247.5" fill="#4ECDC4" stroke="#2C3E50" stroke-width="1.5"/>
+  <polygon points="178.35,247.5 200.0,260.0 200.0,285.0 178.35,272.5" fill="#2da198" stroke="#2C3E50" stroke-width="1.5"/>
+  <polygon points="200.0,260.0 221.65,247.5 221.65,272.5 200.0,285.0" fill="#35bcb3" stroke="#2C3E50" stroke-width="1.5"/>
+  <polygon points="221.65,222.5 243.3,235.0 221.65,247.5 200.0,235.0" fill="#4ECDC4" stroke="#2C3E50" stroke-width="1.5"/>
+  <polygon points="200.0,235.0 221.65,247.5 221.65,272.5 200.0,260.0" fill="#2da198" stroke="#2C3E50" stroke-width="1.5"/>
+  <polygon points="221.65,247.5 243.3,235.0 243.3,260.0 221.65,272.5" fill="#35bcb3" stroke="#2C3E50" stroke-width="1.5"/>
+  <polygon points="243.3,210.0 264.95,222.5 243.3,235.0 221.65,222.5" fill="#4ECDC4" stroke="#2C3E50" stroke-width="1.5"/>
+  <polygon points="221.65,222.5 243.3,235.0 243.3,260.0 221.65,247.5" fill="#2da198" stroke="#2C3E50" stroke-width="1.5"/>
+  <polygon points="243.3,235.0 264.95,222.5 264.95,247.5 243.3,260.0" fill="#35bcb3" stroke="#2C3E50" stroke-width="1.5"/>
+  <polygon points="178.35,222.5 200.0,235.0 178.35,247.5 156.7,235.0" fill="#4ECDC4" stroke="#2C3E50" stroke-width="1.5"/>
+  <polygon points="156.7,235.0 178.35,247.5 178.35,272.5 156.7,260.0" fill="#2da198" stroke="#2C3E50" stroke-width="1.5"/>
+  <polygon points="178.35,247.5 200.0,235.0 200.0,260.0 178.35,272.5" fill="#35bcb3" stroke="#2C3E50" stroke-width="1.5"/>
+  <polygon points="200.0,210.0 221.65,222.5 200.0,235.0 178.35,222.5" fill="#4ECDC4" stroke="#2C3E50" stroke-width="1.5"/>
+  <polygon points="178.35,222.5 200.0,235.0 200.0,260.0 178.35,247.5" fill="#2da198" stroke="#2C3E50" stroke-width="1.5"/>
+  <polygon points="200.0,235.0 221.65,222.5 221.65,247.5 200.0,260.0" fill="#35bcb3" stroke="#2C3E50" stroke-width="1.5"/>
+  <polygon points="156.7,210.0 178.35,222.5 156.7,235.0 135.04999999999998,222.5" fill="#4ECDC4" stroke="#2C3E50" stroke-width="1.5"/>
+  <polygon points="135.04999999999998,222.5 156.7,235.0 156.7,260.0 135.04999999999998,247.5" fill="#2da198" stroke="#2C3E50" stroke-width="1.5"/>
+  <polygon points="156.7,235.0 178.35,222.5 178.35,247.5 156.7,260.0" fill="#35bcb3" stroke="#2C3E50" stroke-width="1.5"/>
+  <polygon points="200.0,210.0 221.65,222.5 200.0,235.0 178.35,222.5" fill="#4ECDC4" stroke="#2C3E50" stroke-width="1.5"/>
+  <polygon points="178.35,222.5 200.0,235.0 200.0,260.0 178.35,247.5" fill="#2da198" stroke="#2C3E50" stroke-width="1.5"/>
+  <polygon points="200.0,235.0 221.65,222.5 221.65,247.5 200.0,260.0" fill="#35bcb3" stroke="#2C3E50" stroke-width="1.5"/>
+  <polygon points="221.65,197.5 243.3,210.0 221.65,222.5 200.0,210.0" fill="#4ECDC4" stroke="#2C3E50" stroke-width="1.5"/>
+  <polygon points="200.0,210.0 221.65,222.5 221.65,247.5 200.0,235.0" fill="#2da198" stroke="#2C3E50" stroke-width="1.5"/>
+  <polygon points="221.65,222.5 243.3,210.0 243.3,235.0 221.65,247.5" fill="#35bcb3" stroke="#2C3E50" stroke-width="1.5"/>
+  <polygon points="178.35,197.5 200.0,210.0 178.35,222.5 156.7,210.0" fill="#4ECDC4" stroke="#2C3E50" stroke-width="1.5"/>
+  <polygon points="156.7,210.0 178.35,222.5 178.35,247.5 156.7,235.0" fill="#2da198" stroke="#2C3E50" stroke-width="1.5"/>
+  <polygon points="178.35,222.5 200.0,210.0 200.0,235.0 178.35,247.5" fill="#35bcb3" stroke="#2C3E50" stroke-width="1.5"/>
+  <polygon points="200.0,185.0 221.65,197.5 200.0,210.0 178.35,197.5" fill="#FF6B6B" stroke="#2C3E50" stroke-width="1.5"/>
+  <polygon points="178.35,197.5 200.0,210.0 200.0,235.0 178.35,222.5" fill="#ff1e1e" stroke="#2C3E50" stroke-width="1.5"/>
+  <polygon points="200.0,210.0 221.65,197.5 221.65,222.5 200.0,235.0" fill="#ff4242" stroke="#2C3E50" stroke-width="1.5"/>
+  <text x="370" y="25" text-anchor="end" font-family="system-ui" font-size="16" fill="#333" font-weight="bold">= ?</text>
+
+</svg>

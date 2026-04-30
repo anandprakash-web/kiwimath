@@ -1,0 +1,124 @@
+<svg viewBox="0 0 400 106" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="28" cy="24" r="14" fill="#4caf50" stroke="white" stroke-width="1.5"/>
+<circle cx="24" cy="21" r="2" fill="white"/>
+<circle cx="32" cy="21" r="2" fill="white"/>
+<circle cx="24" cy="21" r="1" fill="#333"/>
+<circle cx="32" cy="21" r="1" fill="#333"/>
+<path d="M25,27 Q28,31 31,27" fill="none" stroke="white" stroke-width="1"/>
+<circle cx="66" cy="24" r="14" fill="#4caf50" stroke="white" stroke-width="1.5"/>
+<circle cx="62" cy="21" r="2" fill="white"/>
+<circle cx="70" cy="21" r="2" fill="white"/>
+<circle cx="62" cy="21" r="1" fill="#333"/>
+<circle cx="70" cy="21" r="1" fill="#333"/>
+<path d="M63,27 Q66,31 69,27" fill="none" stroke="white" stroke-width="1"/>
+<circle cx="104" cy="24" r="14" fill="#4caf50" stroke="white" stroke-width="1.5"/>
+<circle cx="100" cy="21" r="2" fill="white"/>
+<circle cx="108" cy="21" r="2" fill="white"/>
+<circle cx="100" cy="21" r="1" fill="#333"/>
+<circle cx="108" cy="21" r="1" fill="#333"/>
+<path d="M101,27 Q104,31 107,27" fill="none" stroke="white" stroke-width="1"/>
+<circle cx="142" cy="24" r="14" fill="#4caf50" stroke="white" stroke-width="1.5"/>
+<circle cx="138" cy="21" r="2" fill="white"/>
+<circle cx="146" cy="21" r="2" fill="white"/>
+<circle cx="138" cy="21" r="1" fill="#333"/>
+<circle cx="146" cy="21" r="1" fill="#333"/>
+<path d="M139,27 Q142,31 145,27" fill="none" stroke="white" stroke-width="1"/>
+<circle cx="180" cy="24" r="14" fill="#4caf50" stroke="white" stroke-width="1.5"/>
+<circle cx="176" cy="21" r="2" fill="white"/>
+<circle cx="184" cy="21" r="2" fill="white"/>
+<circle cx="176" cy="21" r="1" fill="#333"/>
+<circle cx="184" cy="21" r="1" fill="#333"/>
+<path d="M177,27 Q180,31 183,27" fill="none" stroke="white" stroke-width="1"/>
+<circle cx="218" cy="24" r="14" fill="#4caf50" stroke="white" stroke-width="1.5"/>
+<circle cx="214" cy="21" r="2" fill="white"/>
+<circle cx="222" cy="21" r="2" fill="white"/>
+<circle cx="214" cy="21" r="1" fill="#333"/>
+<circle cx="222" cy="21" r="1" fill="#333"/>
+<path d="M215,27 Q218,31 221,27" fill="none" stroke="white" stroke-width="1"/>
+<circle cx="256" cy="24" r="14" fill="#4caf50" stroke="white" stroke-width="1.5"/>
+<circle cx="252" cy="21" r="2" fill="white"/>
+<circle cx="260" cy="21" r="2" fill="white"/>
+<circle cx="252" cy="21" r="1" fill="#333"/>
+<circle cx="260" cy="21" r="1" fill="#333"/>
+<path d="M253,27 Q256,31 259,27" fill="none" stroke="white" stroke-width="1"/>
+<circle cx="294" cy="24" r="14" fill="#4caf50" stroke="white" stroke-width="1.5"/>
+<circle cx="290" cy="21" r="2" fill="white"/>
+<circle cx="298" cy="21" r="2" fill="white"/>
+<circle cx="290" cy="21" r="1" fill="#333"/>
+<circle cx="298" cy="21" r="1" fill="#333"/>
+<path d="M291,27 Q294,31 297,27" fill="none" stroke="white" stroke-width="1"/>
+<circle cx="332" cy="24" r="14" fill="#4caf50" stroke="white" stroke-width="1.5"/>
+<circle cx="328" cy="21" r="2" fill="white"/>
+<circle cx="336" cy="21" r="2" fill="white"/>
+<circle cx="328" cy="21" r="1" fill="#333"/>
+<circle cx="336" cy="21" r="1" fill="#333"/>
+<path d="M329,27 Q332,31 335,27" fill="none" stroke="white" stroke-width="1"/>
+<circle cx="370" cy="24" r="14" fill="#4caf50" stroke="white" stroke-width="1.5"/>
+<circle cx="366" cy="21" r="2" fill="white"/>
+<circle cx="374" cy="21" r="2" fill="white"/>
+<circle cx="366" cy="21" r="1" fill="#333"/>
+<circle cx="374" cy="21" r="1" fill="#333"/>
+<path d="M367,27 Q370,31 373,27" fill="none" stroke="white" stroke-width="1"/>
+<circle cx="28" cy="62" r="14" fill="#4caf50" stroke="white" stroke-width="1.5"/>
+<circle cx="24" cy="59" r="2" fill="white"/>
+<circle cx="32" cy="59" r="2" fill="white"/>
+<circle cx="24" cy="59" r="1" fill="#333"/>
+<circle cx="32" cy="59" r="1" fill="#333"/>
+<path d="M25,65 Q28,69 31,65" fill="none" stroke="white" stroke-width="1"/>
+<circle cx="66" cy="62" r="14" fill="#4caf50" stroke="white" stroke-width="1.5"/>
+<circle cx="62" cy="59" r="2" fill="white"/>
+<circle cx="70" cy="59" r="2" fill="white"/>
+<circle cx="62" cy="59" r="1" fill="#333"/>
+<circle cx="70" cy="59" r="1" fill="#333"/>
+<path d="M63,65 Q66,69 69,65" fill="none" stroke="white" stroke-width="1"/>
+<circle cx="104" cy="62" r="14" fill="#4caf50" stroke="white" stroke-width="1.5"/>
+<circle cx="100" cy="59" r="2" fill="white"/>
+<circle cx="108" cy="59" r="2" fill="white"/>
+<circle cx="100" cy="59" r="1" fill="#333"/>
+<circle cx="108" cy="59" r="1" fill="#333"/>
+<path d="M101,65 Q104,69 107,65" fill="none" stroke="white" stroke-width="1"/>
+<circle cx="142" cy="62" r="14" fill="#4caf50" stroke="white" stroke-width="1.5"/>
+<circle cx="138" cy="59" r="2" fill="white"/>
+<circle cx="146" cy="59" r="2" fill="white"/>
+<circle cx="138" cy="59" r="1" fill="#333"/>
+<circle cx="146" cy="59" r="1" fill="#333"/>
+<path d="M139,65 Q142,69 145,65" fill="none" stroke="white" stroke-width="1"/>
+<circle cx="180" cy="62" r="14" fill="#4caf50" stroke="white" stroke-width="1.5"/>
+<circle cx="176" cy="59" r="2" fill="white"/>
+<circle cx="184" cy="59" r="2" fill="white"/>
+<circle cx="176" cy="59" r="1" fill="#333"/>
+<circle cx="184" cy="59" r="1" fill="#333"/>
+<path d="M177,65 Q180,69 183,65" fill="none" stroke="white" stroke-width="1"/>
+<circle cx="218" cy="62" r="14" fill="#4caf50" stroke="white" stroke-width="1.5"/>
+<circle cx="214" cy="59" r="2" fill="white"/>
+<circle cx="222" cy="59" r="2" fill="white"/>
+<circle cx="214" cy="59" r="1" fill="#333"/>
+<circle cx="222" cy="59" r="1" fill="#333"/>
+<path d="M215,65 Q218,69 221,65" fill="none" stroke="white" stroke-width="1"/>
+<circle cx="256" cy="62" r="14" fill="#4caf50" stroke="white" stroke-width="1.5"/>
+<circle cx="252" cy="59" r="2" fill="white"/>
+<circle cx="260" cy="59" r="2" fill="white"/>
+<circle cx="252" cy="59" r="1" fill="#333"/>
+<circle cx="260" cy="59" r="1" fill="#333"/>
+<path d="M253,65 Q256,69 259,65" fill="none" stroke="white" stroke-width="1"/>
+<circle cx="294" cy="62" r="14" fill="#4caf50" stroke="white" stroke-width="1.5"/>
+<circle cx="290" cy="59" r="2" fill="white"/>
+<circle cx="298" cy="59" r="2" fill="white"/>
+<circle cx="290" cy="59" r="1" fill="#333"/>
+<circle cx="298" cy="59" r="1" fill="#333"/>
+<path d="M291,65 Q294,69 297,65" fill="none" stroke="white" stroke-width="1"/>
+<circle cx="332" cy="62" r="14" fill="#4caf50" stroke="white" stroke-width="1.5"/>
+<circle cx="328" cy="59" r="2" fill="white"/>
+<circle cx="336" cy="59" r="2" fill="white"/>
+<circle cx="328" cy="59" r="1" fill="#333"/>
+<circle cx="336" cy="59" r="1" fill="#333"/>
+<path d="M329,65 Q332,69 335,65" fill="none" stroke="white" stroke-width="1"/>
+<circle cx="370" cy="62" r="14" fill="#4caf50" stroke="white" stroke-width="1.5"/>
+<circle cx="366" cy="59" r="2" fill="white"/>
+<circle cx="374" cy="59" r="2" fill="white"/>
+<circle cx="366" cy="59" r="1" fill="#333"/>
+<circle cx="374" cy="59" r="1" fill="#333"/>
+<path d="M367,65 Q370,69 373,65" fill="none" stroke="white" stroke-width="1"/>
+
+  <text x="200.0" y="102" text-anchor="middle" font-family="system-ui" font-size="10" fill="#666">Count: birds</text>
+</svg>

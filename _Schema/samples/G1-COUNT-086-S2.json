@@ -1,0 +1,47 @@
+{
+  "id": "G1-COUNT-086-S2",
+  "grade": 1,
+  "topic": "counting_observation",
+  "subtopic": "scaffolded_step_down",
+  "subskills": [
+    "transitive_reasoning"
+  ],
+  "difficulty": 4,
+  "tier": "challenge",
+  "parent_id": "G1-COUNT-086",
+  "step_index": 2,
+  "stem_template": "1 pineapple = {K} oranges. 2 pineapples = how many oranges?",
+  "visual": null,
+  "answer_type": "multiple_choice",
+  "params": {
+    "K": {
+      "range": [
+        2,
+        4
+      ]
+    }
+  },
+  "answer_formula": "2 * K",
+  "distractors": [
+    {
+      "formula": "K",
+      "label": "only_one"
+    },
+    {
+      "formula": "K + 2",
+      "label": "added"
+    },
+    {
+      "formula": "K + 1",
+      "label": "off"
+    }
+  ],
+  "misconceptions": [],
+  "tags": [
+    "step_down"
+  ],
+  "est_time_seconds": 15,
+  "version": 1,
+  "author": "AP",
+  "status": "draft"
+}

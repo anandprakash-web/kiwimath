@@ -1,0 +1,17 @@
+<svg viewBox="0 0 320 85" xmlns="http://www.w3.org/2000/svg" font-family="system-ui">
+<ellipse cx="25" cy="40" rx="18" ry="12" fill="#ccc" stroke="#2C3E50" stroke-width="1.5"/>
+<ellipse cx="25" cy="36" rx="12" ry="5" fill="white" opacity="0.3"/>
+<ellipse cx="75" cy="40" rx="18" ry="12" fill="#ccc" stroke="#2C3E50" stroke-width="1.5"/>
+<ellipse cx="75" cy="36" rx="12" ry="5" fill="white" opacity="0.3"/>
+<ellipse cx="125" cy="40" rx="18" ry="12" fill="#9B59B6" stroke="#2C3E50" stroke-width="1.5"/>
+<ellipse cx="125" cy="36" rx="12" ry="5" fill="white" opacity="0.3"/>
+<ellipse cx="175" cy="40" rx="18" ry="12" fill="#FF6B6B" stroke="#2C3E50" stroke-width="1.5"/>
+<ellipse cx="175" cy="36" rx="12" ry="5" fill="white" opacity="0.3"/>
+<ellipse cx="225" cy="40" rx="18" ry="12" fill="#FF6B6B" stroke="#2C3E50" stroke-width="1.5"/>
+<ellipse cx="225" cy="36" rx="12" ry="5" fill="white" opacity="0.3"/>
+<ellipse cx="275" cy="40" rx="18" ry="12" fill="#FF6B6B" stroke="#2C3E50" stroke-width="1.5"/>
+<ellipse cx="275" cy="36" rx="12" ry="5" fill="white" opacity="0.3"/>
+<text x="25" y="70" font-size="10" fill="#999">eaten</text>
+<text x="125" y="70" font-size="10" fill="#9B59B6">given</text>
+<text x="175" y="70" font-size="10" fill="#FF6B6B">kept</text>
+</svg>

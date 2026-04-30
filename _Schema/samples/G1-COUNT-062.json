@@ -1,0 +1,96 @@
+{
+  "id": "G1-COUNT-062",
+  "grade": 1,
+  "topic": "counting_observation",
+  "subtopic": "backward_counting",
+  "subskills": [
+    "stable_order_counting",
+    "backward_sequence"
+  ],
+  "difficulty": 1,
+  "tier": "warmup",
+  "source_inspiration": "Cambridge Nn1 \u2014 backwards from 20",
+  "pedagogy": "cpa_abstract",
+  "stem_template": "Count backwards! {A}, {B}, {C}, __, {E}. What's the missing number?",
+  "answer_type": "multiple_choice",
+  "interaction": {
+    "type": "multiple_choice",
+    "fallback_type": "multiple_choice"
+  },
+  "visual": null,
+  "visual_manifest": null,
+  "params": {
+    "A": {
+      "range": [
+        5,
+        15
+      ]
+    }
+  },
+  "derived": {
+    "B": "A - 1",
+    "C": "A - 2",
+    "E": "A - 4"
+  },
+  "answer_formula": "A - 3",
+  "distractors": [
+    {
+      "formula": "A - 2",
+      "label": "repeated_c"
+    },
+    {
+      "formula": "A - 4",
+      "label": "gave_e"
+    },
+    {
+      "formula": "A + 1",
+      "label": "counted_forward"
+    }
+  ],
+  "misconceptions": [
+    {
+      "trigger_answer": "A - 2",
+      "diagnosis": "repeated_last_given",
+      "feedback_child": "That's {C}! We already said that. What comes AFTER {C} going DOWN?",
+      "step_down_path": [
+        "G1-COUNT-062-S1"
+      ]
+    },
+    {
+      "trigger_answer": "A + 1",
+      "diagnosis": "counted_wrong_direction",
+      "feedback_child": "We're counting backwards \u2014 numbers get SMALLER, not bigger.",
+      "step_down_path": [
+        "G1-COUNT-062-S1"
+      ]
+    },
+    {
+      "trigger_answer": "A - 4",
+      "diagnosis": "skipped_to_next",
+      "feedback_child": "That's {E}! You skipped one. What goes between {C} and {E}?",
+      "step_down_path": [
+        "G1-COUNT-062-S1"
+      ]
+    }
+  ],
+  "socratic_feedback": {
+    "on_correct": "Great backward counting! The numbers go down one at a time.",
+    "generic_incorrect": "Say it out loud: {A}, {B}, {C}... now keep going down.",
+    "encouragement_after_retry": "Hold up fingers and fold one down each time you count backwards!"
+  },
+  "curriculum_alignment": {
+    "common_core": "K.CC.A.1",
+    "cambridge_stage": 1,
+    "cambridge_strand": "Number: Counting",
+    "singapore_strand": "Whole Numbers"
+  },
+  "tags": [
+    "topic:counting",
+    "skill:backward_count",
+    "cpa:abstract"
+  ],
+  "est_time_seconds": 20,
+  "version": 1,
+  "author": "AP",
+  "status": "draft"
+}

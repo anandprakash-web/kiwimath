@@ -1,0 +1,20 @@
+<svg viewBox="0 0 240 60" xmlns="http://www.w3.org/2000/svg"><rect width="240" height="60" fill="#f0fff0" rx="8"/><rect x="15" y="10" width="40" height="40" fill="white" stroke="#333" stroke-width="2" rx="5"/>
+<circle cx="25" cy="20" r="3.5" fill="#333"/>
+<circle cx="45" cy="20" r="3.5" fill="#333"/>
+<circle cx="25" cy="30" r="3.5" fill="#333"/>
+<circle cx="45" cy="30" r="3.5" fill="#333"/>
+<circle cx="25" cy="40" r="3.5" fill="#333"/>
+<circle cx="45" cy="40" r="3.5" fill="#333"/>
+<rect x="70" y="10" width="40" height="40" fill="white" stroke="#333" stroke-width="2" rx="5"/>
+<circle cx="80" cy="20" r="3.5" fill="#333"/>
+<circle cx="100" cy="40" r="3.5" fill="#333"/>
+<rect x="125" y="10" width="40" height="40" fill="white" stroke="#333" stroke-width="2" rx="5"/>
+<circle cx="135" cy="20" r="3.5" fill="#333"/>
+<circle cx="155" cy="20" r="3.5" fill="#333"/>
+<circle cx="135" cy="30" r="3.5" fill="#333"/>
+<circle cx="155" cy="30" r="3.5" fill="#333"/>
+<circle cx="135" cy="40" r="3.5" fill="#333"/>
+<circle cx="155" cy="40" r="3.5" fill="#333"/>
+<rect x="180" y="10" width="40" height="40" fill="white" stroke="#333" stroke-width="2" rx="5"/>
+<circle cx="190" cy="20" r="3.5" fill="#333"/>
+<circle cx="210" cy="40" r="3.5" fill="#333"/></svg>

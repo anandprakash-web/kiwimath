@@ -5,6 +5,7 @@ import 'package:flutter/foundation.dart';
 import 'package:http/http.dart' as http;
 
 import '../models/question_v2.dart';
+import '../models/student_levels.dart';
 import '../models/user_profile.dart';
 
 /// Kiwimath backend API client (v2-only).
@@ -178,6 +179,130 @@ class ApiClient {
   String visualUrlV2(String questionId) =>
       '$baseUrl/v2/questions/$questionId/visual';
 
+  // ---------------------------------------------------------------------------
+  // Question Feedback API (Task #194)
+  // ---------------------------------------------------------------------------
+
+  /// Submit user feedback on a question (flag/report).
+  ///
+  /// [feedbackType] must be one of: wrong_answer, unclear_stem, bad_visual,
+  /// too_easy, too_hard, other.
+  Future<Map<String, dynamic>> submitQuestionFeedback({
+    required String questionId,
+    required String feedbackType,
+    String? userId,
+    String? comment,
+  }) async {
+    final body = <String, dynamic>{
+      'feedback_type': feedbackType,
+    };
+    if (userId != null) body['user_id'] = userId;
+    if (comment != null && comment.trim().isNotEmpty) {
+      body['comment'] = comment.trim();
+    }
+    final uri = Uri.parse('$baseUrl/v2/questions/$questionId/feedback');
+    final res = await _withRetry(() => http
+        .post(
+          uri,
+          headers: {'Content-Type': 'application/json'},
+          body: jsonEncode(body),
+        )
+        .timeout(const Duration(seconds: 10)));
+    if (res.statusCode != 200) {
+      throw ApiException(
+          'POST /v2/questions/$questionId/feedback failed: ${res.statusCode} ${res.body}');
+    }
+    return jsonDecode(res.body) as Map<String, dynamic>;
+  }
+
+  // ---------------------------------------------------------------------------
+  // Onboarding Benchmark (Task #196)
+  // ---------------------------------------------------------------------------
+
+  /// Fetch a list of benchmark questions for the diagnostic onboarding flow.
+  Future<List<QuestionV2>> getBenchmarkQuestions({
+    required int grade,
+    int count = 10,
+  }) async {
+    final uri = Uri.parse('$baseUrl/v2/onboarding/benchmark/questions')
+        .replace(queryParameters: {
+      'grade': grade.toString(),
+      'count': count.toString(),
+    });
+    final res = await _withRetry(
+        () => http.get(uri).timeout(const Duration(seconds: 20)));
+    if (res.statusCode != 200) {
+      throw ApiException(
+          'GET /v2/onboarding/benchmark/questions failed: ${res.statusCode} ${res.body}');
+    }
+    final list = jsonDecode(res.body) as List<dynamic>;
+    return list
+        .map((e) => QuestionV2.fromJson(e as Map<String, dynamic>))
+        .toList();
+  }
+
+  /// Submit benchmark answers and get an initial ability profile.
+  Future<Map<String, dynamic>> submitBenchmark({
+    required String userId,
+    required int grade,
+    required List<Map<String, dynamic>> answers,
+  }) async {
+    final body = <String, dynamic>{
+      'user_id': userId,
+      'grade': grade,
+      'answers': answers,
+    };
+    final uri = Uri.parse('$baseUrl/v2/onboarding/benchmark');
+    final res = await _withRetry(() => http
+        .post(
+          uri,
+          headers: {'Content-Type': 'application/json'},
+          body: jsonEncode(body),
+        )
+        .timeout(const Duration(seconds: 30)));
+    if (res.statusCode != 200) {
+      throw ApiException(
+          'POST /v2/onboarding/benchmark failed: ${res.statusCode} ${res.body}');
+    }
+    return jsonDecode(res.body) as Map<String, dynamic>;
+  }
+
+  // ---------------------------------------------------------------------------
+  // Parent Dashboard (Task #199)
+  // ---------------------------------------------------------------------------
+
+  /// Fetch parent dashboard summary for a child.
+  Future<Map<String, dynamic>> getParentDashboard({required String userId}) async {
+    final uri = Uri.parse('$baseUrl/v2/parent/dashboard')
+        .replace(queryParameters: {'user_id': userId});
+    final res = await _withRetry(
+        () => http.get(uri).timeout(const Duration(seconds: 20)));
+    if (res.statusCode != 200) {
+      throw ApiException(
+          'GET /v2/parent/dashboard failed: ${res.statusCode} ${res.body}');
+    }
+    return jsonDecode(res.body) as Map<String, dynamic>;
+  }
+
+  // ---------------------------------------------------------------------------
+  // Adaptive Learning Path (Task #197)
+  // ---------------------------------------------------------------------------
+
+  /// Get a personalized topic + difficulty plan for the user.
+  Future<Map<String, dynamic>> getLearningPath({required String userId, int? grade}) async {
+    final params = <String, String>{'user_id': userId};
+    if (grade != null) params['grade'] = grade.toString();
+    final uri = Uri.parse('$baseUrl/v2/learning-path')
+        .replace(queryParameters: params);
+    final res = await _withRetry(
+        () => http.get(uri).timeout(const Duration(seconds: 20)));
+    if (res.statusCode != 200) {
+      throw ApiException(
+          'GET /v2/learning-path failed: ${res.statusCode} ${res.body}');
+    }
+    return jsonDecode(res.body) as Map<String, dynamic>;
+  }
+
   // ── Companion API ─────────────────────────────────────────────────
 
   /// Fetch companion config bundle (once per session).
@@ -244,6 +369,122 @@ class ApiClient {
             'extra': extra,
           }),
         ));
+  }
+
+  // ---------------------------------------------------------------------------
+  // Paywall / Topic Lock API
+  // ---------------------------------------------------------------------------
+
+  /// Get unlock status for all topics.
+  Future<List<Map<String, dynamic>>> getPaywallStatus(String userId) async {
+    final uri = Uri.parse('$baseUrl/v2/paywall/status').replace(
+      queryParameters: {'user_id': userId},
+    );
+    final res = await _withRetry(() => http.get(uri));
+    if (res.statusCode == 200) {
+      return List<Map<String, dynamic>>.from(jsonDecode(res.body));
+    }
+    return [];
+  }
+
+  // ---------------------------------------------------------------------------
+  // Smart Session Engine
+  // ---------------------------------------------------------------------------
+
+  /// Fetch a smart session plan with questions across all topics.
+  Future<Map<String, dynamic>> getSessionPlan(String userId, int grade, {int size = 10}) async {
+    final params = <String, String>{
+      'user_id': userId,
+      'grade': grade.toString(),
+      'size': size.toString(),
+    };
+    final uri = Uri.parse('$baseUrl/v2/session/plan')
+        .replace(queryParameters: params);
+    final res = await _withRetry(
+        () => http.get(uri).timeout(const Duration(seconds: 20)));
+    if (res.statusCode != 200) {
+      throw ApiException(
+          'GET /v2/session/plan failed: ${res.statusCode} ${res.body}');
+    }
+    return jsonDecode(res.body) as Map<String, dynamic>;
+  }
+
+  /// Fetch cluster mastery overview for the home screen.
+  Future<Map<String, dynamic>> getMasteryOverview(String userId, int grade) async {
+    final params = <String, String>{
+      'user_id': userId,
+      'grade': grade.toString(),
+    };
+    final uri = Uri.parse('$baseUrl/v2/mastery/overview')
+        .replace(queryParameters: params);
+    final res = await _withRetry(
+        () => http.get(uri).timeout(const Duration(seconds: 20)));
+    if (res.statusCode != 200) {
+      throw ApiException(
+          'GET /v2/mastery/overview failed: ${res.statusCode} ${res.body}');
+    }
+    return jsonDecode(res.body) as Map<String, dynamic>;
+  }
+
+  // ---------------------------------------------------------------------------
+  // Student Profile & Levels (Task #285)
+  // ---------------------------------------------------------------------------
+
+  /// Save student profile (kid's name, grade, avatar).
+  Future<Map<String, dynamic>> updateStudentProfile({
+    required String userId,
+    String? name,
+    int? grade,
+    String? avatar,
+  }) async {
+    final body = <String, dynamic>{};
+    if (name != null) body['display_name'] = name;
+    if (grade != null) body['grade'] = grade;
+    if (avatar != null) body['avatar'] = avatar;
+    final uri = Uri.parse('$baseUrl/v2/student/profile')
+        .replace(queryParameters: {'user_id': userId});
+    final res = await _withRetry(() => http
+        .post(
+          uri,
+          headers: {'Content-Type': 'application/json'},
+          body: jsonEncode(body),
+        )
+        .timeout(const Duration(seconds: 10)));
+    if (res.statusCode != 200) {
+      throw ApiException(
+          'POST /v2/student/profile failed: ${res.statusCode} ${res.body}');
+    }
+    return jsonDecode(res.body) as Map<String, dynamic>;
+  }
+
+  /// Fetch student level progression (10 micro-levels per topic per grade).
+  Future<StudentLevels> getStudentLevels({
+    required String userId,
+    int? grade,
+  }) async {
+    final params = <String, String>{'user_id': userId};
+    if (grade != null) params['grade'] = grade.toString();
+    final uri = Uri.parse('$baseUrl/v2/student/levels')
+        .replace(queryParameters: params);
+    final res = await _withRetry(
+        () => http.get(uri).timeout(const Duration(seconds: 20)));
+    if (res.statusCode != 200) {
+      throw ApiException(
+          'GET /v2/student/levels failed: ${res.statusCode} ${res.body}');
+    }
+    return StudentLevels.fromJson(
+        jsonDecode(res.body) as Map<String, dynamic>);
+  }
+
+  /// Unlock a topic using Kiwi Coins (500 coins).
+  Future<Map<String, dynamic>> unlockTopic(String userId, String topicId) async {
+    final uri = Uri.parse('$baseUrl/v2/paywall/unlock');
+    final res = await _withRetry(() => http.post(
+      uri,
+      headers: {'Content-Type': 'application/json'},
+      body: jsonEncode({'user_id': userId, 'topic_id': topicId}),
+    ));
+    return Map<String, dynamic>.from(jsonDecode(res.body));
   }
 }
 

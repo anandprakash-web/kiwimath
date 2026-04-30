@@ -1,0 +1,26 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect x="130" y="80" width="35" height="35" fill="#FF6B6B" stroke="#2C3E50" stroke-width="1"/>
+  <rect x="165" y="80" width="35" height="35" fill="#FFFFFF" stroke="#2C3E50" stroke-width="1"/>
+  <rect x="200" y="80" width="35" height="35" fill="#FFFFFF" stroke="#2C3E50" stroke-width="1"/>
+  <rect x="235" y="80" width="35" height="35" fill="#4ECDC4" stroke="#2C3E50" stroke-width="1"/>
+  <rect x="130" y="115" width="35" height="35" fill="#FFFFFF" stroke="#2C3E50" stroke-width="1"/>
+  <rect x="165" y="115" width="35" height="35" fill="#F1C40F" stroke="#2C3E50" stroke-width="1"/>
+  <rect x="200" y="115" width="35" height="35" fill="#9B59B6" stroke="#2C3E50" stroke-width="1"/>
+  <rect x="235" y="115" width="35" height="35" fill="#FFFFFF" stroke="#2C3E50" stroke-width="1"/>
+  <rect x="130" y="150" width="35" height="35" fill="#FFFFFF" stroke="#2C3E50" stroke-width="1"/>
+  <rect x="165" y="150" width="35" height="35" fill="#2ECC71" stroke="#2C3E50" stroke-width="1"/>
+  <rect x="200" y="150" width="35" height="35" fill="#FF6B6B" stroke="#2C3E50" stroke-width="1"/>
+  <rect x="235" y="150" width="35" height="35" fill="#FFFFFF" stroke="#2C3E50" stroke-width="1"/>
+  <rect x="130" y="185" width="35" height="35" fill="#4ECDC4" stroke="#2C3E50" stroke-width="1"/>
+  <rect x="165" y="185" width="35" height="35" fill="#FFFFFF" stroke="#2C3E50" stroke-width="1"/>
+  <rect x="200" y="185" width="35" height="35" fill="#FFFFFF" stroke="#2C3E50" stroke-width="1"/>
+  <rect x="235" y="185" width="35" height="35" fill="#F1C40F" stroke="#2C3E50" stroke-width="1"/>
+  <text x="147" y="75" text-anchor="middle" font-family="system-ui" font-size="10" fill="#999">1</text>
+  <text x="182" y="75" text-anchor="middle" font-family="system-ui" font-size="10" fill="#999">2</text>
+  <text x="217" y="75" text-anchor="middle" font-family="system-ui" font-size="10" fill="#999">3</text>
+  <text x="252" y="75" text-anchor="middle" font-family="system-ui" font-size="10" fill="#999">4</text>
+  <text x="122" y="101" text-anchor="end" font-family="system-ui" font-size="10" fill="#999">1</text>
+  <text x="122" y="136" text-anchor="end" font-family="system-ui" font-size="10" fill="#999">2</text>
+  <text x="122" y="171" text-anchor="end" font-family="system-ui" font-size="10" fill="#999">3</text>
+  <text x="122" y="206" text-anchor="end" font-family="system-ui" font-size="10" fill="#999">4</text>
+</svg>

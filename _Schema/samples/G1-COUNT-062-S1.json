@@ -1,0 +1,47 @@
+{
+  "id": "G1-COUNT-062-S1",
+  "grade": 1,
+  "topic": "counting_observation",
+  "subtopic": "scaffolded_step_down",
+  "subskills": [
+    "guided_counting"
+  ],
+  "difficulty": 1,
+  "tier": "warmup",
+  "parent_id": "G1-COUNT-062",
+  "step_index": 1,
+  "stem_template": "What number comes just before {N}?",
+  "visual": null,
+  "answer_type": "multiple_choice",
+  "params": {
+    "N": {
+      "range": [
+        2,
+        10
+      ]
+    }
+  },
+  "answer_formula": "N - 1",
+  "distractors": [
+    {
+      "formula": "N",
+      "label": "same"
+    },
+    {
+      "formula": "N + 1",
+      "label": "forward"
+    },
+    {
+      "formula": "N - 2",
+      "label": "too_far"
+    }
+  ],
+  "misconceptions": [],
+  "tags": [
+    "step_down"
+  ],
+  "est_time_seconds": 15,
+  "version": 1,
+  "author": "AP",
+  "status": "draft"
+}

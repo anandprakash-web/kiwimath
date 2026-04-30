@@ -1,0 +1,14 @@
+<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <rect x="130" y="130" width="35" height="30" fill="#3498db" stroke="#2c3e50" stroke-width="1.5"/>
+  <polygon points="130,130 138,122 173,122 165,130" fill="#3498db" opacity="0.3" stroke="#2c3e50" stroke-width="0.5"/>
+  <polygon points="165,130 173,122 173,152 165,160" fill="#3498db" opacity="0.2" stroke="#2c3e50" stroke-width="0.5"/>
+  <rect x="165" y="130" width="35" height="30" fill="#3498db" stroke="#2c3e50" stroke-width="1.5"/>
+  <polygon points="165,130 173,122 208,122 200,130" fill="#3498db" opacity="0.3" stroke="#2c3e50" stroke-width="0.5"/>
+  <polygon points="200,130 208,122 208,152 200,160" fill="#3498db" opacity="0.2" stroke="#2c3e50" stroke-width="0.5"/>
+  <rect x="200" y="130" width="35" height="30" fill="#3498db" stroke="#2c3e50" stroke-width="1.5"/>
+  <polygon points="200,130 208,122 243,122 235,130" fill="#3498db" opacity="0.3" stroke="#2c3e50" stroke-width="0.5"/>
+  <polygon points="235,130 243,122 243,152 235,160" fill="#3498db" opacity="0.2" stroke="#2c3e50" stroke-width="0.5"/>
+  <rect x="235" y="130" width="35" height="30" fill="#3498db" stroke="#2c3e50" stroke-width="1.5"/>
+  <polygon points="235,130 243,122 278,122 270,130" fill="#3498db" opacity="0.3" stroke="#2c3e50" stroke-width="0.5"/>
+  <polygon points="270,130 278,122 278,152 270,160" fill="#3498db" opacity="0.2" stroke="#2c3e50" stroke-width="0.5"/>
+</svg>

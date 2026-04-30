@@ -25,8 +25,12 @@ from fastapi.responses import HTMLResponse, JSONResponse
 from app.api.admin import router as admin_router
 from app.api.analytics import router as analytics_router
 from app.api.companion import router as companion_router
+from app.api.learning_path import router as learning_path_router
+from app.api.onboarding import router as onboarding_router
+from app.api.parent import router as parent_router
 from app.api.portal import router as portal_router
 from app.api.gamification import router as gamification_router
+from app.api.paywall import router as paywall_router
 from app.api.questions_v2 import router as questions_v2_router
 from app.api.user import router as user_router
 from app.services.content_store_v2 import bootstrap_v2_from_env, store_v2
@@ -55,7 +59,11 @@ def create_app() -> FastAPI:
 
     # Routers — v2 only.
     app.include_router(questions_v2_router)
+    app.include_router(onboarding_router)
+    app.include_router(parent_router)
+    app.include_router(learning_path_router)
     app.include_router(gamification_router)
+    app.include_router(paywall_router)
     app.include_router(user_router)
     app.include_router(admin_router)
     app.include_router(analytics_router)

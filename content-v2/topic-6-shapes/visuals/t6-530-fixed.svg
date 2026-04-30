@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 100">
+  <rect width="260" height="100" fill="#FFFBF5" rx="12"/>
+  <rect x="13" y="40" width="24" height="24" fill="#66BB6A" rx="2"/>
+  <rect x="43" y="40" width="24" height="24" fill="#66BB6A" rx="2"/>
+  <rect x="73" y="40" width="24" height="24" fill="#66BB6A" rx="2"/>
+  <rect x="103" y="40" width="24" height="24" fill="#66BB6A" rx="2"/>
+  <rect x="133" y="40" width="24" height="24" fill="#66BB6A" rx="2"/>
+  <rect x="163" y="40" width="24" height="24" fill="#66BB6A" rx="2"/>
+  <rect x="193" y="40" width="24" height="24" fill="#66BB6A" rx="2"/>
+  <text x="130" y="90" text-anchor="middle" font-family="Arial" font-size="10" fill="#999">How many shapes?</text>
+</svg>

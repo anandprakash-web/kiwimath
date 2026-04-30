@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <rect width="200" height="200" fill="#f0f4f8" rx="12"/>
+  <text x="100" y="28" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#333">3 Books</text>
+  <rect x="29.333333333333336" y="90.86666666666666" width="34.66666666666667" height="24.26666666666667" fill="#AED6F1" stroke="#333" stroke-width="1.5" rx="2"/>
+  <rect x="82.66666666666669" y="90.86666666666666" width="34.66666666666667" height="24.26666666666667" fill="#45B7D1" stroke="#333" stroke-width="1.5" rx="2"/>
+  <rect x="136.0" y="90.86666666666666" width="34.66666666666667" height="24.26666666666667" fill="#45B7D1" stroke="#333" stroke-width="1.5" rx="2"/>
+</svg>

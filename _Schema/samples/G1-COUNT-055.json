@@ -1,0 +1,112 @@
+{
+  "id": "G1-COUNT-055",
+  "grade": 1,
+  "topic": "counting_observation",
+  "subtopic": "tally_marks",
+  "subskills": [
+    "grouped_counting",
+    "one_to_one_correspondence"
+  ],
+  "difficulty": 1,
+  "tier": "warmup",
+  "source_inspiration": "Cambridge Stage 1 \u2014 data handling tally",
+  "pedagogy": "cpa_pictorial",
+  "stem_template": "Each mark means one {object}. How many {object} does the tally show?",
+  "answer_type": "multiple_choice",
+  "interaction": {
+    "type": "multiple_choice",
+    "fallback_type": "multiple_choice"
+  },
+  "visual": {
+    "type": "svg_generator",
+    "generator": "tally_marks",
+    "params": {
+      "count": "{N}"
+    }
+  },
+  "visual_manifest": {
+    "art_brief": "Tally marks showing {N}. Groups of 5 have a diagonal stroke. The last group may be incomplete.",
+    "alt_text": "Tally marks showing {N}.",
+    "style": "warm_cartoon",
+    "layout_hint": "row",
+    "visual_type": "diagram"
+  },
+  "params": {
+    "N": {
+      "range": [
+        3,
+        9
+      ]
+    },
+    "object": {
+      "pool": [
+        "birds",
+        "butterflies",
+        "fish",
+        "bees"
+      ]
+    }
+  },
+  "derived": {},
+  "answer_formula": "N",
+  "distractors": [
+    {
+      "formula": "N - 1",
+      "label": "missed_one_mark"
+    },
+    {
+      "formula": "N + 1",
+      "label": "over_counted"
+    },
+    {
+      "formula": "5",
+      "label": "counted_one_group"
+    }
+  ],
+  "misconceptions": [
+    {
+      "trigger_answer": "N - 1",
+      "diagnosis": "skipped_diagonal_stroke",
+      "feedback_child": "The diagonal line counts too! It's the 5th mark crossing the others.",
+      "step_down_path": [
+        "G1-COUNT-055-S1"
+      ]
+    },
+    {
+      "trigger_answer": "5",
+      "diagnosis": "stopped_at_first_group",
+      "feedback_child": "That's just the first group! Keep counting the marks after it.",
+      "step_down_path": [
+        "G1-COUNT-055-S1"
+      ]
+    },
+    {
+      "trigger_answer": "N + 1",
+      "diagnosis": "double_counted_diagonal",
+      "feedback_child": "The diagonal is already part of the group of 5. Don't count it twice!",
+      "step_down_path": [
+        "G1-COUNT-055-S1"
+      ]
+    }
+  ],
+  "socratic_feedback": {
+    "on_correct": "That's right! {N} tally marks = {N} {object}. Nice counting!",
+    "generic_incorrect": "A group of 5 looks like four lines with one across. Count the full groups, then the extras.",
+    "encouragement_after_retry": "Point to each mark as you count: 1, 2, 3, 4, 5..."
+  },
+  "curriculum_alignment": {
+    "common_core": "K.CC.B.5",
+    "cambridge_stage": 1,
+    "cambridge_strand": "Statistics: Tally Charts",
+    "singapore_strand": "Whole Numbers"
+  },
+  "tags": [
+    "topic:counting",
+    "skill:tally",
+    "cpa:pictorial"
+  ],
+  "est_time_seconds": 20,
+  "version": 1,
+  "author": "AP",
+  "status": "draft"
+}

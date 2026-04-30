@@ -3,26 +3,20 @@ import 'package:flutter/material.dart';
 import '../models/question_v2.dart';
 import '../theme/kiwi_theme.dart';
 
-/// Premium Socratic hint ladder bar — cheerful, colorful, hi-fi.
+/// Premium 3-level Socratic hint system.
 ///
-/// Progressively reveals 6 levels of Socratic hints:
-///   L0: Pause prompt (gentle nudge)
-///   L1: Attention direction (where to look)
-///   L2: Thinking question (Socratic prompt)
-///   L3: Scaffolded step (break it down)
-///   L4: Guided reveal (almost there)
-///   L5: Teach + retry (explain the concept)
+///   Level 1: Gentle nudge — re-read, look again
+///   Level 2: Think deeper — Socratic question, scaffold
+///   Level 3: Almost the answer — guided reveal, teach
 ///
-/// Philosophy: "Hint = Ask better question, NOT give answer."
-/// Every child should feel: I can think, I can solve, I am improving.
+/// "Hint = Ask better question, NOT give answer."
 class HintLadderBar extends StatefulWidget {
   final HintLadder hintLadder;
 
-  /// Called when the user reveals a new hint level.
-  /// Returns the highest level revealed (0-5).
+  /// Called when the user reveals a new hint level (0-2).
   final ValueChanged<int>? onHintRevealed;
 
-  /// Start with this level already revealed (for retry scenarios).
+  /// Start with this level already revealed (-1 = none, 0-2).
   final int initialLevel;
 
   const HintLadderBar({
@@ -38,7 +32,7 @@ class HintLadderBar extends StatefulWidget {
 
 class _HintLadderBarState extends State<HintLadderBar>
     with TickerProviderStateMixin {
-  /// -1 = no hint shown yet, 0-5 = current level revealed
+  /// -1 = no hint shown yet, 0-2 = current level revealed
   int _currentLevel = -1;
 
   late AnimationController _pulseController;
@@ -46,41 +40,23 @@ class _HintLadderBarState extends State<HintLadderBar>
   late Animation<double> _pulseAnimation;
   late Animation<double> _revealAnimation;
 
-  // Cheerful gradient colors for each hint level
+  // 3-level colors
   static const _levelColors = [
-    [Color(0xFF81D4FA), Color(0xFF4FC3F7)], // L0: sky blue
-    [Color(0xFF80DEEA), Color(0xFF26C6DA)], // L1: teal
-    [Color(0xFFA5D6A7), Color(0xFF66BB6A)], // L2: fresh green
-    [Color(0xFFFFCC80), Color(0xFFFF9800)], // L3: warm amber
-    [Color(0xFFFFAB91), Color(0xFFFF7043)], // L4: coral
-    [Color(0xFFCE93D8), Color(0xFFAB47BC)], // L5: purple
+    [Color(0xFF81D4FA), Color(0xFF039BE5)], // L1: sky blue
+    [Color(0xFFFFCC80), Color(0xFFFF9800)], // L2: warm amber
+    [Color(0xFFCE93D8), Color(0xFFAB47BC)], // L3: purple
   ];
 
-  static const _levelIcons = [
-    Icons.pause_circle_outline,   // L0: pause
-    Icons.visibility,             // L1: look
-    Icons.psychology,             // L2: think
-    Icons.stairs,                 // L3: steps
-    Icons.lightbulb,              // L4: reveal
-    Icons.school,                 // L5: teach
+  static const _levelEmoji = [
+    '\u{1F33F}', // L1: seedling — gentle nudge
+    '\u{1F914}', // L2: thinking — deeper thought
+    '\u{1F4A1}', // L3: lightbulb — guided reveal
   ];
 
   static const _levelLabels = [
     'Take a breath',
-    'Look here',
     'Think about this',
-    'Break it down',
-    'Almost there',
-    'Learn the trick',
-  ];
-
-  static const _levelEmoji = [
-    '\u{1F33F}',  // L0: seedling
-    '\u{1F50D}',  // L1: magnifying glass
-    '\u{1F914}',  // L2: thinking
-    '\u{1F9E9}',  // L3: puzzle piece
-    '\u{1F4A1}',  // L4: lightbulb
-    '\u{2B50}',   // L5: star
+    'Here\'s a big clue',
   ];
 
   @override
@@ -93,7 +69,7 @@ class _HintLadderBarState extends State<HintLadderBar>
       duration: const Duration(milliseconds: 1500),
     )..repeat(reverse: true);
 
-    _pulseAnimation = Tween<double>(begin: 0.85, end: 1.0).animate(
+    _pulseAnimation = Tween<double>(begin: 0.9, end: 1.0).animate(
       CurvedAnimation(parent: _pulseController, curve: Curves.easeInOut),
     );
 
@@ -106,6 +82,11 @@ class _HintLadderBarState extends State<HintLadderBar>
       parent: _revealController,
       curve: Curves.easeOutBack,
     );
+
+    // If resuming from a previously revealed level, show it immediately
+    if (_currentLevel >= 0) {
+      _revealController.value = 1.0;
+    }
   }
 
   @override
@@ -116,7 +97,7 @@ class _HintLadderBarState extends State<HintLadderBar>
   }
 
   void _revealNextHint() {
-    if (_currentLevel >= 5) return;
+    if (_currentLevel >= 2) return; // max 3 levels (0, 1, 2)
 
     setState(() {
       _currentLevel++;
@@ -133,9 +114,9 @@ class _HintLadderBarState extends State<HintLadderBar>
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
-        // Progress dots showing hint level
+        // Progress dots — 3 dots
         _buildProgressDots(),
-        const SizedBox(height: 8),
+        const SizedBox(height: 10),
 
         // Current hint card (or "need a hint?" button)
         if (_currentLevel < 0)
@@ -144,8 +125,8 @@ class _HintLadderBarState extends State<HintLadderBar>
           _buildHintCard(),
 
         // "Next hint" button (if more hints available)
-        if (_currentLevel >= 0 && _currentLevel < 5) ...[
-          const SizedBox(height: 6),
+        if (_currentLevel >= 0 && _currentLevel < 2) ...[
+          const SizedBox(height: 8),
           _buildNextHintButton(),
         ],
       ],
@@ -155,22 +136,22 @@ class _HintLadderBarState extends State<HintLadderBar>
   Widget _buildProgressDots() {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
-      children: List.generate(6, (i) {
+      children: List.generate(3, (i) {
         final isRevealed = i <= _currentLevel;
         final isCurrent = i == _currentLevel;
         final colors = _levelColors[i];
 
         return AnimatedContainer(
           duration: const Duration(milliseconds: 300),
-          margin: const EdgeInsets.symmetric(horizontal: 3),
-          width: isCurrent ? 24 : 10,
-          height: 10,
+          margin: const EdgeInsets.symmetric(horizontal: 4),
+          width: isCurrent ? 28 : 12,
+          height: 12,
           decoration: BoxDecoration(
             gradient: isRevealed
                 ? LinearGradient(colors: colors)
                 : null,
             color: isRevealed ? null : const Color(0xFFE0E0E0),
-            borderRadius: BorderRadius.circular(5),
+            borderRadius: BorderRadius.circular(6),
             boxShadow: isCurrent
                 ? [
                     BoxShadow(
@@ -201,14 +182,14 @@ class _HintLadderBarState extends State<HintLadderBar>
           padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
           decoration: BoxDecoration(
             gradient: const LinearGradient(
-              colors: [Color(0xFF81D4FA), Color(0xFF4FC3F7)],
+              colors: [Color(0xFF81D4FA), Color(0xFF039BE5)],
               begin: Alignment.topLeft,
               end: Alignment.bottomRight,
             ),
             borderRadius: BorderRadius.circular(20),
             boxShadow: [
               BoxShadow(
-                color: const Color(0xFF4FC3F7).withOpacity(0.3),
+                color: const Color(0xFF039BE5).withOpacity(0.3),
                 blurRadius: 10,
                 offset: const Offset(0, 4),
               ),
@@ -217,7 +198,7 @@ class _HintLadderBarState extends State<HintLadderBar>
           child: const Row(
             mainAxisSize: MainAxisSize.min,
             children: [
-              Text('\u{1F95D}', style: TextStyle(fontSize: 20)), // kiwi
+              Text('\u{1F95D}', style: TextStyle(fontSize: 20)),
               SizedBox(width: 8),
               Text(
                 'Need a hint?',
@@ -237,9 +218,9 @@ class _HintLadderBarState extends State<HintLadderBar>
   }
 
   Widget _buildHintCard() {
-    final level = _currentLevel.clamp(0, 5);
+    final level = _currentLevel.clamp(0, 2);
     final colors = _levelColors[level];
-    final hintText = widget.hintLadder.forLevel(level);
+    final hintText = widget.hintLadder.forLevel3(level);
     final emoji = _levelEmoji[level];
     final label = _levelLabels[level];
 
@@ -294,13 +275,12 @@ class _HintLadderBarState extends State<HintLadderBar>
                   child: Text(
                     label,
                     style: TextStyle(
-                      fontSize: 13,
+                      fontSize: 14,
                       fontWeight: FontWeight.w700,
                       color: colors[1],
                     ),
                   ),
                 ),
-                // Level badge
                 Container(
                   padding: const EdgeInsets.symmetric(
                     horizontal: 8,
@@ -311,7 +291,7 @@ class _HintLadderBarState extends State<HintLadderBar>
                     borderRadius: BorderRadius.circular(10),
                   ),
                   child: Text(
-                    'Hint ${level + 1}/6',
+                    'Hint ${level + 1}/3',
                     style: const TextStyle(
                       fontSize: 10,
                       fontWeight: FontWeight.w700,
@@ -325,7 +305,7 @@ class _HintLadderBarState extends State<HintLadderBar>
             // Hint text
             Text(
               hintText,
-              style: TextStyle(
+              style: const TextStyle(
                 fontSize: 14,
                 fontWeight: FontWeight.w500,
                 color: KiwiColors.textDark,
@@ -339,9 +319,9 @@ class _HintLadderBarState extends State<HintLadderBar>
   }
 
   Widget _buildNextHintButton() {
-    final nextLevel = (_currentLevel + 1).clamp(0, 5);
+    final nextLevel = (_currentLevel + 1).clamp(0, 2);
     final nextColors = _levelColors[nextLevel];
-    final remaining = 5 - _currentLevel;
+    final remaining = 2 - _currentLevel;
 
     return GestureDetector(
       onTap: _revealNextHint,
@@ -381,7 +361,7 @@ class _HintLadderBarState extends State<HintLadderBar>
 
 /// Compact hint button to place near the question stem.
 /// Tapping opens the full hint ladder in a bottom sheet.
-class HintButton extends StatelessWidget {
+class HintButton extends StatefulWidget {
   final HintLadder hintLadder;
   final ValueChanged<int>? onHintRevealed;
 
@@ -392,32 +372,46 @@ class HintButton extends StatelessWidget {
   });
 
   @override
+  State<HintButton> createState() => _HintButtonState();
+}
+
+class _HintButtonState extends State<HintButton> {
+  /// Track max revealed level across bottom sheet open/close cycles
+  int _maxRevealedLevel = -1;
+
+  @override
   Widget build(BuildContext context) {
+    final hasRevealed = _maxRevealedLevel >= 0;
+
     return GestureDetector(
       onTap: () => _showHintSheet(context),
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
         decoration: BoxDecoration(
-          gradient: const LinearGradient(
-            colors: [Color(0xFFB3E5FC), Color(0xFF81D4FA)],
+          gradient: LinearGradient(
+            colors: hasRevealed
+                ? [const Color(0xFFE1F5FE), const Color(0xFFB3E5FC)]
+                : [const Color(0xFFB3E5FC), const Color(0xFF81D4FA)],
           ),
           borderRadius: BorderRadius.circular(16),
           boxShadow: [
             BoxShadow(
-              color: const Color(0xFF4FC3F7).withOpacity(0.2),
+              color: const Color(0xFF039BE5).withOpacity(0.2),
               blurRadius: 6,
               offset: const Offset(0, 2),
             ),
           ],
         ),
-        child: const Row(
+        child: Row(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Text('\u{1F95D}', style: TextStyle(fontSize: 14)),
-            SizedBox(width: 4),
+            const Text('\u{1F95D}', style: TextStyle(fontSize: 14)),
+            const SizedBox(width: 4),
             Text(
-              'Hint',
-              style: TextStyle(
+              hasRevealed
+                  ? 'Hint ${_maxRevealedLevel + 1}/3'
+                  : 'Hint',
+              style: const TextStyle(
                 fontSize: 12,
                 fontWeight: FontWeight.w700,
                 color: Color(0xFF0277BD),
@@ -435,34 +429,37 @@ class HintButton extends StatelessWidget {
       isScrollControlled: true,
       backgroundColor: Colors.transparent,
       builder: (ctx) => _HintBottomSheet(
-        hintLadder: hintLadder,
-        onHintRevealed: onHintRevealed,
+        hintLadder: widget.hintLadder,
+        initialLevel: _maxRevealedLevel,
+        onHintRevealed: (level) {
+          if (level > _maxRevealedLevel) {
+            setState(() {
+              _maxRevealedLevel = level;
+            });
+          }
+          widget.onHintRevealed?.call(level);
+        },
       ),
     );
   }
 }
 
-class _HintBottomSheet extends StatefulWidget {
+class _HintBottomSheet extends StatelessWidget {
   final HintLadder hintLadder;
+  final int initialLevel;
   final ValueChanged<int>? onHintRevealed;
 
   const _HintBottomSheet({
     required this.hintLadder,
+    required this.initialLevel,
     this.onHintRevealed,
   });
-
-  @override
-  State<_HintBottomSheet> createState() => _HintBottomSheetState();
-}
-
-class _HintBottomSheetState extends State<_HintBottomSheet> {
-  int _maxRevealedLevel = -1;
 
   @override
   Widget build(BuildContext context) {
     return Container(
       constraints: BoxConstraints(
-        maxHeight: MediaQuery.of(context).size.height * 0.65,
+        maxHeight: MediaQuery.of(context).size.height * 0.55,
       ),
       decoration: const BoxDecoration(
         color: Color(0xFFFAFCFF),
@@ -471,7 +468,7 @@ class _HintBottomSheetState extends State<_HintBottomSheet> {
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          // Handle
+          // Handle bar
           const SizedBox(height: 10),
           Container(
             width: 40,
@@ -503,21 +500,14 @@ class _HintBottomSheetState extends State<_HintBottomSheet> {
           ),
           const SizedBox(height: 12),
 
-          // Hint ladder
+          // Hint ladder — preserves state from previous opens
           Flexible(
             child: SingleChildScrollView(
               padding: const EdgeInsets.symmetric(horizontal: 20),
               child: HintLadderBar(
-                hintLadder: widget.hintLadder,
-                initialLevel: _maxRevealedLevel,
-                onHintRevealed: (level) {
-                  setState(() {
-                    if (level > _maxRevealedLevel) {
-                      _maxRevealedLevel = level;
-                    }
-                  });
-                  widget.onHintRevealed?.call(level);
-                },
+                hintLadder: hintLadder,
+                initialLevel: initialLevel,
+                onHintRevealed: onHintRevealed,
               ),
             ),
           ),

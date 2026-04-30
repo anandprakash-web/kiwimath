@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 265 120">
+  <rect width="265" height="120" fill="#FFFBF5" rx="12"/>
+  <rect x="17" y="35" width="36" height="36" fill="#FF6B6B" rx="6"/>
+  <text x="35" y="60" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="white">2</text>
+  <rect x="62" y="35" width="36" height="36" fill="#42A5F5" rx="6"/>
+  <text x="80" y="60" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="white">6</text>
+  <rect x="107" y="35" width="36" height="36" fill="#66BB6A" rx="6"/>
+  <text x="125" y="60" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="white">10</text>
+  <rect x="152" y="35" width="36" height="36" fill="#FFD54F" rx="6"/>
+  <text x="170" y="60" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="white">14</text>
+  <text x="195" y="58" font-family="Arial" font-size="18" fill="#999">→</text>
+  <rect x="203" y="35" width="36" height="36" fill="#EEE" rx="6" stroke="#999" stroke-dasharray="4,3"/>
+  <text x="221" y="60" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold" fill="#999">?</text>
+  <text x="132" y="112" text-anchor="middle" font-family="Arial" font-size="10" fill="#999">What comes next?</text>
+</svg>

@@ -1,0 +1,8 @@
+<svg viewBox="0 0 160 145" xmlns="http://www.w3.org/2000/svg" font-family="system-ui">
+<polygon points="80,75 120,75 108,103" fill="#4ECDC4" stroke="#2C3E50" stroke-width="1.5"/>
+<polygon points="80,75 80,115 52,103" fill="#4ECDC4" stroke="#2C3E50" stroke-width="1.5"/>
+<polygon points="80,75 40,75 52,47" fill="#4ECDC4" stroke="#2C3E50" stroke-width="1.5"/>
+<polygon points="80,75 80,35 108,47" fill="#4ECDC4" stroke="#2C3E50" stroke-width="1.5"/>
+<circle cx="80" cy="75" r="5" fill="#FF6B6B"/>
+<text x="80" y="135" text-anchor="middle" font-size="10" fill="#333">Looks same after 90° rotation</text>
+</svg>

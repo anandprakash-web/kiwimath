@@ -1,0 +1,51 @@
+{
+  "id": "G1-COUNT-054-S1",
+  "grade": 1,
+  "topic": "counting_observation",
+  "subtopic": "scaffolded_step_down",
+  "subskills": [
+    "guided_counting"
+  ],
+  "difficulty": 1,
+  "tier": "warmup",
+  "parent_id": "G1-COUNT-054",
+  "step_index": 1,
+  "stem_template": "How many fingers are up on this hand?",
+  "visual": null,
+  "answer_type": "multiple_choice",
+  "params": {
+    "N": {
+      "range": [
+        1,
+        5
+      ]
+    }
+  },
+  "answer_formula": "N",
+  "distractors": [
+    {
+      "formula": "N - 1",
+      "label": "under"
+    },
+    {
+      "formula": "N + 1",
+      "label": "over"
+    },
+    {
+      "formula": "5",
+      "label": "all_five"
+    }
+  ],
+  "misconceptions": [],
+  "tags": [
+    "step_down"
+  ],
+  "est_time_seconds": 15,
+  "version": 1,
+  "author": "AP",
+  "status": "draft",
+  "visual_manifest": {
+    "art_brief": "One hand with {N} fingers held up.",
+    "alt_text": "{N} fingers up."
+  }
+}

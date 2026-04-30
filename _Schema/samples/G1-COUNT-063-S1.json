@@ -1,0 +1,44 @@
+{
+  "id": "G1-COUNT-063-S1",
+  "grade": 1,
+  "topic": "counting_observation",
+  "subtopic": "scaffolded_step_down",
+  "subskills": [
+    "guided_counting"
+  ],
+  "difficulty": 1,
+  "tier": "warmup",
+  "parent_id": "G1-COUNT-063",
+  "step_index": 1,
+  "stem_template": "The plate has nothing on it. How many things are on the plate?",
+  "visual": null,
+  "answer_type": "multiple_choice",
+  "params": {},
+  "answer_formula": "0",
+  "distractors": [
+    {
+      "formula": "1",
+      "label": "not_zero"
+    },
+    {
+      "formula": "2",
+      "label": "two"
+    },
+    {
+      "formula": "5",
+      "label": "five"
+    }
+  ],
+  "misconceptions": [],
+  "tags": [
+    "step_down"
+  ],
+  "est_time_seconds": 15,
+  "version": 1,
+  "author": "AP",
+  "status": "draft",
+  "visual_manifest": {
+    "art_brief": "A completely empty plate.",
+    "alt_text": "An empty plate."
+  }
+}

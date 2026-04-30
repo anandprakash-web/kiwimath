@@ -1,0 +1,36 @@
+<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <rect x="100" y="50" width="25" height="25" fill="#FFFFFF" stroke="#BDC3C7" stroke-width="0.8"/>
+  <rect x="125" y="50" width="25" height="25" fill="#4ECDC4" stroke="#BDC3C7" stroke-width="0.8"/>
+  <rect x="150" y="50" width="25" height="25" fill="#FFFFFF" stroke="#BDC3C7" stroke-width="0.8"/>
+  <rect x="175" y="50" width="25" height="25" fill="#FFFFFF" stroke="#BDC3C7" stroke-width="0.8"/>
+  <rect x="200" y="50" width="25" height="25" fill="#FFFFFF" stroke="#BDC3C7" stroke-width="0.8"/>
+  <rect x="225" y="50" width="25" height="25" fill="#FFFFFF" stroke="#BDC3C7" stroke-width="0.8"/>
+  <rect x="250" y="50" width="25" height="25" fill="#FFFFFF" stroke="#BDC3C7" stroke-width="0.8"/>
+  <rect x="275" y="50" width="25" height="25" fill="#FFFFFF" stroke="#BDC3C7" stroke-width="0.8"/>
+  <rect x="100" y="75" width="25" height="25" fill="#4ECDC4" stroke="#BDC3C7" stroke-width="0.8"/>
+  <rect x="125" y="75" width="25" height="25" fill="#4ECDC4" stroke="#BDC3C7" stroke-width="0.8"/>
+  <rect x="150" y="75" width="25" height="25" fill="#4ECDC4" stroke="#BDC3C7" stroke-width="0.8"/>
+  <rect x="175" y="75" width="25" height="25" fill="#FFFFFF" stroke="#BDC3C7" stroke-width="0.8"/>
+  <rect x="200" y="75" width="25" height="25" fill="#FFFFFF" stroke="#BDC3C7" stroke-width="0.8"/>
+  <rect x="225" y="75" width="25" height="25" fill="#FFFFFF" stroke="#BDC3C7" stroke-width="0.8"/>
+  <rect x="250" y="75" width="25" height="25" fill="#FFFFFF" stroke="#BDC3C7" stroke-width="0.8"/>
+  <rect x="275" y="75" width="25" height="25" fill="#FFFFFF" stroke="#BDC3C7" stroke-width="0.8"/>
+  <rect x="100" y="100" width="25" height="25" fill="#FFFFFF" stroke="#BDC3C7" stroke-width="0.8"/>
+  <rect x="125" y="100" width="25" height="25" fill="#4ECDC4" stroke="#BDC3C7" stroke-width="0.8"/>
+  <rect x="150" y="100" width="25" height="25" fill="#FFFFFF" stroke="#BDC3C7" stroke-width="0.8"/>
+  <rect x="175" y="100" width="25" height="25" fill="#FFFFFF" stroke="#BDC3C7" stroke-width="0.8"/>
+  <rect x="200" y="100" width="25" height="25" fill="#FFFFFF" stroke="#BDC3C7" stroke-width="0.8"/>
+  <rect x="225" y="100" width="25" height="25" fill="#FFFFFF" stroke="#BDC3C7" stroke-width="0.8"/>
+  <rect x="250" y="100" width="25" height="25" fill="#FFFFFF" stroke="#BDC3C7" stroke-width="0.8"/>
+  <rect x="275" y="100" width="25" height="25" fill="#FFFFFF" stroke="#BDC3C7" stroke-width="0.8"/>
+  <rect x="100" y="125" width="25" height="25" fill="#4ECDC4" stroke="#BDC3C7" stroke-width="0.8"/>
+  <rect x="125" y="125" width="25" height="25" fill="#FFFFFF" stroke="#BDC3C7" stroke-width="0.8"/>
+  <rect x="150" y="125" width="25" height="25" fill="#4ECDC4" stroke="#BDC3C7" stroke-width="0.8"/>
+  <rect x="175" y="125" width="25" height="25" fill="#FFFFFF" stroke="#BDC3C7" stroke-width="0.8"/>
+  <rect x="200" y="125" width="25" height="25" fill="#FFFFFF" stroke="#BDC3C7" stroke-width="0.8"/>
+  <rect x="225" y="125" width="25" height="25" fill="#FFFFFF" stroke="#BDC3C7" stroke-width="0.8"/>
+  <rect x="250" y="125" width="25" height="25" fill="#FFFFFF" stroke="#BDC3C7" stroke-width="0.8"/>
+  <rect x="275" y="125" width="25" height="25" fill="#FFFFFF" stroke="#BDC3C7" stroke-width="0.8"/>
+  <line x1="200" y1="42" x2="200" y2="158" stroke="#E74C3C" stroke-width="2" stroke-dasharray="6,4"/>
+  <text x="200" y="38" text-anchor="middle" font-family="system-ui" font-size="9" fill="#E74C3C">mirror</text>
+</svg>

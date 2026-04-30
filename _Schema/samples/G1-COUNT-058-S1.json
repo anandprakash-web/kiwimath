@@ -1,0 +1,51 @@
+{
+  "id": "G1-COUNT-058-S1",
+  "grade": 1,
+  "topic": "counting_observation",
+  "subtopic": "scaffolded_step_down",
+  "subskills": [
+    "guided_counting"
+  ],
+  "difficulty": 1,
+  "tier": "warmup",
+  "parent_id": "G1-COUNT-058",
+  "step_index": 1,
+  "stem_template": "There are {N} cookies. We cross out 1. How many are left?",
+  "visual": null,
+  "answer_type": "multiple_choice",
+  "params": {
+    "N": {
+      "range": [
+        3,
+        6
+      ]
+    }
+  },
+  "answer_formula": "N - 1",
+  "distractors": [
+    {
+      "formula": "N",
+      "label": "no_change"
+    },
+    {
+      "formula": "1",
+      "label": "counted_crossed"
+    },
+    {
+      "formula": "N + 1",
+      "label": "added"
+    }
+  ],
+  "misconceptions": [],
+  "tags": [
+    "step_down"
+  ],
+  "est_time_seconds": 15,
+  "version": 1,
+  "author": "AP",
+  "status": "draft",
+  "visual_manifest": {
+    "art_brief": "{N} cookies in a row, one is crossed out.",
+    "alt_text": "{N} cookies, one crossed out."
+  }
+}

@@ -1,0 +1,779 @@
+[
+  {
+    "id": "T1-1201",
+    "stem": "Captain Kiwi made a bar graph of fruits in a basket. The bar for apples reaches 7 and the bar for bananas reaches 4. How many more apples than bananas are there?",
+    "choices": [
+      "2",
+      "3",
+      "4",
+      "11"
+    ],
+    "correct_answer": 1,
+    "difficulty_tier": "medium",
+    "difficulty_score": 25,
+    "visual_svg": null,
+    "visual_alt": null,
+    "diagnostics": {
+      "0": "You subtracted incorrectly. 7 - 4 = 3, not 2.",
+      "2": "4 is the number of bananas, not the difference.",
+      "3": "You added instead of subtracting. Find the difference: 7 - 4."
+    },
+    "tags": [
+      "bar-graphs",
+      "grade-3-4"
+    ],
+    "topic": "counting_observation",
+    "topic_name": "Counting & Observation",
+    "hint": {
+      "level_0": "Compare the two bars.",
+      "level_1": "Use subtraction to find the difference.",
+      "level_2": "Subtract the smaller from the larger.",
+      "level_3": "7 - 4 = ?",
+      "level_4": "7 - 4 = 3 more apples.",
+      "level_5": "Apples (7) - Bananas (4) = 3 more apples."
+    },
+    "concept_cluster": "data/bar_graphs",
+    "visual_context": "A colourful bar graph or pictograph showing the data described in the question.",
+    "interaction_mode": "tap_to_count"
+  },
+  {
+    "id": "T1-1202",
+    "stem": "In Kiwi's pictograph, each star symbol represents 2 books. If the row for 'Mystery' shows 5 stars, how many mystery books are there?",
+    "choices": [
+      "5",
+      "7",
+      "10",
+      "25"
+    ],
+    "correct_answer": 2,
+    "difficulty_tier": "medium",
+    "difficulty_score": 30,
+    "visual_svg": null,
+    "visual_alt": null,
+    "diagnostics": {
+      "0": "You counted the stars, but each star means 2 books. Multiply.",
+      "1": "You added 5 + 2 = 7. Each star represents 2, so multiply 5 x 2.",
+      "3": "You multiplied 5 x 5 = 25. Each star = 2 books, so 5 x 2."
+    },
+    "tags": [
+      "pictographs",
+      "grade-3-4"
+    ],
+    "topic": "counting_observation",
+    "topic_name": "Counting & Observation",
+    "hint": {
+      "level_0": "Each star means more than 1 book.",
+      "level_1": "Multiply stars by the value of each.",
+      "level_2": "Each star = 2 books. Count the stars.",
+      "level_3": "5 stars x 2 books each = ?",
+      "level_4": "5 x 2 = 10 books.",
+      "level_5": "5 stars x 2 books per star = 10 mystery books."
+    },
+    "concept_cluster": "data/pictographs",
+    "visual_context": "A colourful bar graph or pictograph showing the data described in the question.",
+    "interaction_mode": "tap_to_count"
+  },
+  {
+    "id": "T1-1203",
+    "stem": "Captain Kiwi's bar graph shows: Red = 6, Blue = 9, Green = 3. Which colour is the most popular?",
+    "choices": [
+      "Red",
+      "Blue",
+      "Green",
+      "Red and Blue tied"
+    ],
+    "correct_answer": 1,
+    "difficulty_tier": "easy",
+    "difficulty_score": 18,
+    "visual_svg": null,
+    "visual_alt": null,
+    "diagnostics": {
+      "0": "Red has 6, but Blue has 9 which is more.",
+      "2": "Green has only 3 \u2014 the smallest value.",
+      "3": "Red has 6 and Blue has 9. They are not tied."
+    },
+    "tags": [
+      "bar-graphs",
+      "grade-3-4"
+    ],
+    "topic": "counting_observation",
+    "topic_name": "Counting & Observation",
+    "hint": {
+      "level_0": "Find the tallest bar.",
+      "level_1": "Compare the values to find the largest.",
+      "level_2": "Which number is biggest: 6, 9, or 3?",
+      "level_3": "9 is the largest value.",
+      "level_4": "Blue = 9, which is the highest.",
+      "level_5": "Blue has the most at 9. It is most popular."
+    },
+    "concept_cluster": "data/bar_graphs",
+    "visual_context": "A colourful bar graph or pictograph showing the data described in the question.",
+    "interaction_mode": "tap_to_count"
+  },
+  {
+    "id": "T1-1204",
+    "stem": "In Kiwi's pictograph, a smiley face = 5 students. The row for 'Football' has 4 smiley faces. How many students chose football?",
+    "choices": [
+      "4",
+      "9",
+      "15",
+      "20"
+    ],
+    "correct_answer": 3,
+    "difficulty_tier": "medium",
+    "difficulty_score": 28,
+    "visual_svg": null,
+    "visual_alt": null,
+    "diagnostics": {
+      "0": "4 is just the number of symbols. Each symbol = 5 students.",
+      "1": "You added 4 + 5 = 9. You should multiply: 4 x 5.",
+      "2": "You may have used 3 faces instead of 4. 4 x 5 = 20."
+    },
+    "tags": [
+      "pictographs",
+      "grade-3-4"
+    ],
+    "topic": "counting_observation",
+    "topic_name": "Counting & Observation",
+    "hint": {
+      "level_0": "Each symbol stands for 5 students.",
+      "level_1": "Multiply the symbols by their value.",
+      "level_2": "4 symbols x 5 students each.",
+      "level_3": "4 x 5 = ?",
+      "level_4": "4 x 5 = 20 students.",
+      "level_5": "4 smiley faces x 5 students each = 20 students."
+    },
+    "concept_cluster": "data/pictographs",
+    "visual_context": "A colourful bar graph or pictograph showing the data described in the question.",
+    "interaction_mode": "tap_to_count"
+  },
+  {
+    "id": "T1-1205",
+    "stem": "Kiwi's bar graph shows sales: Mon=3, Tue=5, Wed=2, Thu=5, Fri=10. What is the total for the week?",
+    "choices": [
+      "20",
+      "25",
+      "30",
+      "35"
+    ],
+    "correct_answer": 1,
+    "difficulty_tier": "medium",
+    "difficulty_score": 32,
+    "visual_svg": null,
+    "visual_alt": null,
+    "diagnostics": {
+      "0": "Check your addition. 3+5+2+5+10 = 25, not 20.",
+      "2": "You may have double-counted a day. Add carefully: 3+5+2+5+10.",
+      "3": "35 is too high. Re-add: 3+5=8, 8+2=10, 10+5=15, 15+10=25."
+    },
+    "tags": [
+      "bar-graphs",
+      "grade-3-4"
+    ],
+    "topic": "counting_observation",
+    "topic_name": "Counting & Observation",
+    "hint": {
+      "level_0": "Add up all the bars.",
+      "level_1": "Use addition to find the total.",
+      "level_2": "Add each day's value together.",
+      "level_3": "3 + 5 + 2 + 5 + 10 = ?",
+      "level_4": "8 + 2 = 10, 10 + 5 = 15, 15 + 10 = 25.",
+      "level_5": "3 + 5 + 2 + 5 + 10 = 25 total sales."
+    },
+    "concept_cluster": "data/bar_graphs",
+    "visual_context": "A colourful bar graph or pictograph showing the data described in the question.",
+    "interaction_mode": "tap_to_count"
+  },
+  {
+    "id": "T1-1206",
+    "stem": "Captain Kiwi counts pets in the class using a tally chart. He sees: |||| ||| for cats. How many cats is that?",
+    "choices": [
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "correct_answer": 2,
+    "difficulty_tier": "easy",
+    "difficulty_score": 15,
+    "visual_svg": null,
+    "visual_alt": null,
+    "diagnostics": {
+      "0": "Count again. A group of 4 with a line through = 5, plus 3 more.",
+      "1": "Close, but the first bundle is 5 (4 lines + 1 cross), not 4. Then +3.",
+      "3": "You may have counted an extra. 5 + 3 = 8."
+    },
+    "tags": [
+      "tally-charts",
+      "grade-3-4"
+    ],
+    "topic": "counting_observation",
+    "topic_name": "Counting & Observation",
+    "hint": {
+      "level_0": "Count each tally mark carefully.",
+      "level_1": "Group tallies into fives, then add extras.",
+      "level_2": "|||| = 5 (with cross line), then count the rest.",
+      "level_3": "5 + 3 = ?",
+      "level_4": "One group of 5 plus 3 singles = 8.",
+      "level_5": "|||| (5) + ||| (3) = 8 cats."
+    },
+    "concept_cluster": "data/tally_charts",
+    "visual_context": "A tally chart with bundled groups of five marks.",
+    "interaction_mode": "tap_to_count"
+  },
+  {
+    "id": "T1-1207",
+    "stem": "Kiwi's tally chart shows: Dogs = |||| |||| ||, Cats = |||| |||. How many more dogs than cats?",
+    "choices": [
+      "2",
+      "4",
+      "5",
+      "12"
+    ],
+    "correct_answer": 1,
+    "difficulty_tier": "medium",
+    "difficulty_score": 28,
+    "visual_svg": null,
+    "visual_alt": null,
+    "diagnostics": {
+      "0": "Dogs = 12, Cats = 8. The difference is 12 - 8 = 4, not 2.",
+      "2": "You may have miscounted. Dogs = 5+5+2 = 12, Cats = 5+3 = 8. Difference = 4.",
+      "3": "12 is the total dogs, not the difference. Subtract: 12 - 8."
+    },
+    "tags": [
+      "tally-charts",
+      "grade-3-4"
+    ],
+    "topic": "counting_observation",
+    "topic_name": "Counting & Observation",
+    "hint": {
+      "level_0": "Count each tally, then subtract.",
+      "level_1": "Subtract cats from dogs.",
+      "level_2": "Dogs = 5+5+2, Cats = 5+3. Find the difference.",
+      "level_3": "12 - 8 = ?",
+      "level_4": "12 - 8 = 4 more dogs.",
+      "level_5": "Dogs = 12, Cats = 8. 12 - 8 = 4 more dogs."
+    },
+    "concept_cluster": "data/tally_charts",
+    "visual_context": "A tally chart with bundled groups of five marks.",
+    "interaction_mode": "tap_to_count"
+  },
+  {
+    "id": "T1-1208",
+    "stem": "Captain Kiwi recorded 14 apples on a tally chart. How many groups of 5 and how many extra singles does she need?",
+    "choices": [
+      "2 groups and 4 singles",
+      "3 groups and 0 singles",
+      "1 group and 9 singles",
+      "2 groups and 5 singles"
+    ],
+    "correct_answer": 0,
+    "difficulty_tier": "easy",
+    "difficulty_score": 18,
+    "visual_svg": null,
+    "visual_alt": null,
+    "diagnostics": {
+      "1": "3 groups would be 15, not 14.",
+      "2": "1 group of 5 + 9 = 14, but tally groups go by 5s first.",
+      "3": "2 groups + 5 singles = 15. You have one too many."
+    },
+    "tags": [
+      "tally-charts",
+      "grade-3-4"
+    ],
+    "topic": "counting_observation",
+    "topic_name": "Counting & Observation",
+    "hint": {
+      "level_0": "Group into fives, then add singles.",
+      "level_1": "Divide 14 into groups of 5.",
+      "level_2": "14 = 5 + 5 + 4. How many 5s?",
+      "level_3": "Two full bundles of 5, plus 4 more.",
+      "level_4": "Two groups of 5 = 10. 14 - 10 = 4 singles.",
+      "level_5": "14 = two bundles of 5 + four singles."
+    },
+    "concept_cluster": "data/tally_charts",
+    "visual_context": "A tally chart with bundled groups of five marks.",
+    "interaction_mode": "tap_to_count"
+  },
+  {
+    "id": "T1-1209",
+    "stem": "Kiwi recorded shoe colours in a tally chart: Black = |||| |||| |, White = |||| ||, Brown = ||||. What is the total number of shoes recorded?",
+    "choices": [
+      "16",
+      "18",
+      "22",
+      "24"
+    ],
+    "correct_answer": 2,
+    "difficulty_tier": "medium",
+    "difficulty_score": 35,
+    "visual_svg": null,
+    "visual_alt": null,
+    "diagnostics": {
+      "0": "Recount: Black=11, White=7, Brown=5. Total is 11+7+5=23. wait, that's not right either. Black=11, White=7, Brown=4. 11+7+4=22.",
+      "1": "You may have undercounted one group. Black=11, White=7, Brown=4. Total=22.",
+      "3": "24 is too high. Double-check: Black=5+5+1=11, White=5+2=7, Brown=4. Sum=22."
+    },
+    "tags": [
+      "tally-charts",
+      "grade-3-4"
+    ],
+    "topic": "counting_observation",
+    "topic_name": "Counting & Observation",
+    "hint": {
+      "level_0": "Count each colour, then add all together.",
+      "level_1": "Add the totals for all three colours.",
+      "level_2": "Black=11, White=7, Brown=4. Add them.",
+      "level_3": "11 + 7 + 4 = ?",
+      "level_4": "11 + 7 = 18, 18 + 4 = 22.",
+      "level_5": "Black=11, White=7, Brown=4. Total = 22."
+    },
+    "concept_cluster": "data/tally_charts",
+    "visual_context": "A tally chart with bundled groups of five marks.",
+    "interaction_mode": "tap_to_count"
+  },
+  {
+    "id": "T1-1210",
+    "stem": "Captain Kiwi made a tally chart of birds seen: Sparrows |||| ||||, Crows |||| |, Pigeons |||. Which bird was seen the most?",
+    "choices": [
+      "Crows",
+      "Pigeons",
+      "Sparrows",
+      "Crows and Sparrows tied"
+    ],
+    "correct_answer": 2,
+    "difficulty_tier": "easy",
+    "difficulty_score": 16,
+    "visual_svg": null,
+    "visual_alt": null,
+    "diagnostics": {
+      "0": "Crows = 6. Sparrows = 10, which is more.",
+      "1": "Pigeons = 3. That is the fewest, not the most.",
+      "3": "Sparrows = 10 and Crows = 6. They are not tied."
+    },
+    "tags": [
+      "tally-charts",
+      "grade-3-4"
+    ],
+    "topic": "counting_observation",
+    "topic_name": "Counting & Observation",
+    "hint": {
+      "level_0": "Count each bird type and compare.",
+      "level_1": "Find which tally has the most marks.",
+      "level_2": "Sparrows=10, Crows=6, Pigeons=3.",
+      "level_3": "10 is the largest number.",
+      "level_4": "Sparrows have the most at 10.",
+      "level_5": "Sparrows (10) > Crows (6) > Pigeons (3)."
+    },
+    "concept_cluster": "data/tally_charts",
+    "visual_context": "A tally chart with bundled groups of five marks.",
+    "interaction_mode": "tap_to_count"
+  },
+  {
+    "id": "T1-1211",
+    "stem": "Captain Kiwi scored: 8, 5, 6, 9, 7 in five games. What is the mean (average) score?",
+    "choices": [
+      "6",
+      "7",
+      "8",
+      "35"
+    ],
+    "correct_answer": 1,
+    "difficulty_tier": "hard",
+    "difficulty_score": 65,
+    "visual_svg": null,
+    "visual_alt": null,
+    "diagnostics": {
+      "0": "Sum = 35, count = 5. Mean = 35/5 = 7, not 6.",
+      "2": "8 is one of the scores, not the average. 35/5 = 7.",
+      "3": "35 is the total sum. Divide by the number of games (5)."
+    },
+    "tags": [
+      "mean-median-mode",
+      "grade-5-6"
+    ],
+    "topic": "counting_observation",
+    "topic_name": "Counting & Observation",
+    "hint": {
+      "level_0": "Add all scores, then divide.",
+      "level_1": "Use addition and division for the mean.",
+      "level_2": "Mean = sum of values / number of values.",
+      "level_3": "8+5+6+9+7 = 35. Divide by 5.",
+      "level_4": "35 / 5 = 7.",
+      "level_5": "Sum = 35, count = 5. Mean = 35/5 = 7."
+    },
+    "concept_cluster": "data/statistics",
+    "visual_context": "A row of numbers displayed on cards for easy counting and ordering.",
+    "interaction_mode": "multiple_choice"
+  },
+  {
+    "id": "T1-1212",
+    "stem": "Kiwi's test scores are: 3, 5, 5, 7, 10. What is the median?",
+    "choices": [
+      "3",
+      "5",
+      "6",
+      "7"
+    ],
+    "correct_answer": 1,
+    "difficulty_tier": "hard",
+    "difficulty_score": 68,
+    "visual_svg": null,
+    "visual_alt": null,
+    "diagnostics": {
+      "0": "3 is the smallest value, not the middle one.",
+      "2": "6 is the mean (average), not the median. The median is the middle value.",
+      "3": "7 is the fourth value. The middle of 5 values is the 3rd one."
+    },
+    "tags": [
+      "mean-median-mode",
+      "grade-5-6"
+    ],
+    "topic": "counting_observation",
+    "topic_name": "Counting & Observation",
+    "hint": {
+      "level_0": "Arrange in order, find the middle.",
+      "level_1": "Find the middle value in the sorted list.",
+      "level_2": "Median = middle value when data is ordered.",
+      "level_3": "3, 5, 5, 7, 10 \u2014 which is in the middle?",
+      "level_4": "The 3rd value out of 5 is the median.",
+      "level_5": "Sorted: 3,5,5,7,10. Middle (3rd) value = 5."
+    },
+    "concept_cluster": "data/statistics",
+    "visual_context": "A row of numbers displayed on cards for easy counting and ordering.",
+    "interaction_mode": "multiple_choice"
+  },
+  {
+    "id": "T1-1213",
+    "stem": "Captain Kiwi's friends picked favourite colours: Red, blue, blue, green, blue, red. What is the mode?",
+    "choices": [
+      "Red",
+      "Blue",
+      "Green",
+      "Red and Blue"
+    ],
+    "correct_answer": 1,
+    "difficulty_tier": "hard",
+    "difficulty_score": 62,
+    "visual_svg": null,
+    "visual_alt": null,
+    "diagnostics": {
+      "0": "Red appears 2 times. Blue appears 3 times \u2014 more frequent.",
+      "2": "Green appears only once. The mode is the most frequent value.",
+      "3": "Red appears 2 times, Blue appears 3. They are not tied."
+    },
+    "tags": [
+      "mean-median-mode",
+      "grade-5-6"
+    ],
+    "topic": "counting_observation",
+    "topic_name": "Counting & Observation",
+    "hint": {
+      "level_0": "Which colour appears most often?",
+      "level_1": "Count the frequency of each colour.",
+      "level_2": "Mode = the value that appears most often.",
+      "level_3": "Red=2, Blue=3, Green=1.",
+      "level_4": "Blue appears 3 times \u2014 the most.",
+      "level_5": "Blue appears 3 times (most frequent) = mode."
+    },
+    "concept_cluster": "data/statistics",
+    "visual_context": "A row of numbers displayed on cards for easy counting and ordering.",
+    "interaction_mode": "multiple_choice"
+  },
+  {
+    "id": "T1-1214",
+    "stem": "Kiwi measures plant heights: 12 cm, 8 cm, 15 cm, 8 cm, 12 cm, 8 cm. What is the mode?",
+    "choices": [
+      "8 cm",
+      "12 cm",
+      "15 cm",
+      "10 cm"
+    ],
+    "correct_answer": 0,
+    "difficulty_tier": "hard",
+    "difficulty_score": 65,
+    "visual_svg": null,
+    "visual_alt": null,
+    "diagnostics": {
+      "1": "12 cm appears 2 times. 8 cm appears 3 times \u2014 more frequent.",
+      "2": "15 cm appears only once. The mode is the most common value.",
+      "3": "10 cm is not even in the data set. Mode must be a value in the data."
+    },
+    "tags": [
+      "mean-median-mode",
+      "grade-5-6"
+    ],
+    "topic": "counting_observation",
+    "topic_name": "Counting & Observation",
+    "hint": {
+      "level_0": "Which number shows up most often?",
+      "level_1": "Count how many times each value appears.",
+      "level_2": "Mode = most frequent value in the set.",
+      "level_3": "8 appears 3 times, 12 appears 2 times.",
+      "level_4": "8 cm appears the most (3 times).",
+      "level_5": "8 cm appears 3 times \u2014 it is the mode."
+    },
+    "concept_cluster": "data/statistics",
+    "visual_context": "A row of numbers displayed on cards for easy counting and ordering.",
+    "interaction_mode": "multiple_choice"
+  },
+  {
+    "id": "T1-1215",
+    "stem": "Captain Kiwi's data set is: 4, 4, 6, 8, 8. What is the mean?",
+    "choices": [
+      "4",
+      "5",
+      "6",
+      "8"
+    ],
+    "correct_answer": 2,
+    "difficulty_tier": "hard",
+    "difficulty_score": 70,
+    "visual_svg": null,
+    "visual_alt": null,
+    "diagnostics": {
+      "0": "4 is the smallest value. Mean = (4+4+6+8+8)/5 = 30/5 = 6.",
+      "1": "Sum = 30, not 25. 30/5 = 6.",
+      "3": "8 is the largest value, not the average. 30/5 = 6."
+    },
+    "tags": [
+      "mean-median-mode",
+      "grade-5-6"
+    ],
+    "topic": "counting_observation",
+    "topic_name": "Counting & Observation",
+    "hint": {
+      "level_0": "Add all values, then divide by count.",
+      "level_1": "Use addition and division for the mean.",
+      "level_2": "Mean = total sum / number of values.",
+      "level_3": "4+4+6+8+8 = 30. Divide by 5.",
+      "level_4": "30 / 5 = 6.",
+      "level_5": "Sum = 4+4+6+8+8 = 30. Mean = 30/5 = 6."
+    },
+    "concept_cluster": "data/statistics",
+    "visual_context": "A row of numbers displayed on cards for easy counting and ordering.",
+    "interaction_mode": "multiple_choice"
+  },
+  {
+    "id": "T1-1216",
+    "stem": "Captain Kiwi plots a point at (3, 5) on a coordinate plane. How far right from the origin is the point?",
+    "choices": [
+      "2 units",
+      "3 units",
+      "5 units",
+      "8 units"
+    ],
+    "correct_answer": 1,
+    "difficulty_tier": "hard",
+    "difficulty_score": 72,
+    "visual_svg": null,
+    "visual_alt": null,
+    "diagnostics": {
+      "0": "The x-coordinate tells how far right. x = 3, not 2.",
+      "2": "5 is the y-coordinate (how far up), not how far right.",
+      "3": "You added 3 + 5 = 8. The question asks only about the horizontal distance."
+    },
+    "tags": [
+      "coordinate-plane",
+      "grade-5-6"
+    ],
+    "topic": "counting_observation",
+    "topic_name": "Counting & Observation",
+    "hint": {
+      "level_0": "Which number tells left-right position?",
+      "level_1": "Identify the x-coordinate.",
+      "level_2": "In (x, y), x = horizontal distance.",
+      "level_3": "The first number is x = 3.",
+      "level_4": "x = 3 means 3 units to the right.",
+      "level_5": "(3, 5): x=3 means 3 units right of origin."
+    },
+    "concept_cluster": "data/coordinate_plane",
+    "visual_context": "A coordinate grid with x and y axes labeled, point marked with a dot.",
+    "interaction_mode": "grid_plot"
+  },
+  {
+    "id": "T1-1217",
+    "stem": "Kiwi marks point A at (2, 4) and point B at (2, 7). What is the distance between them?",
+    "choices": [
+      "2 units",
+      "3 units",
+      "5 units",
+      "7 units"
+    ],
+    "correct_answer": 1,
+    "difficulty_tier": "hard",
+    "difficulty_score": 78,
+    "visual_svg": null,
+    "visual_alt": null,
+    "diagnostics": {
+      "0": "2 is the x-coordinate (same for both). The distance is the difference in y: 7-4.",
+      "2": "You may have subtracted x from y. Both points have x=2. Distance = 7-4 = 3.",
+      "3": "7 is the y-coordinate of point B, not the distance. Subtract: 7-4 = 3."
+    },
+    "tags": [
+      "coordinate-plane",
+      "grade-5-6"
+    ],
+    "topic": "counting_observation",
+    "topic_name": "Counting & Observation",
+    "hint": {
+      "level_0": "Same x-value means a vertical distance.",
+      "level_1": "Subtract the y-coordinates.",
+      "level_2": "When x is the same, distance = difference in y.",
+      "level_3": "7 - 4 = ?",
+      "level_4": "7 - 4 = 3 units apart.",
+      "level_5": "Same x. Distance = 7 - 4 = 3 units."
+    },
+    "concept_cluster": "data/coordinate_plane",
+    "visual_context": "A coordinate grid with x and y axes labeled, point marked with a dot.",
+    "interaction_mode": "multiple_choice"
+  },
+  {
+    "id": "T1-1218",
+    "stem": "Captain Kiwi starts at the origin (0, 0) and moves 4 units right and 6 units up. What are the new coordinates?",
+    "choices": [
+      "(6, 4)",
+      "(4, 6)",
+      "(10, 0)",
+      "(0, 10)"
+    ],
+    "correct_answer": 1,
+    "difficulty_tier": "advanced",
+    "difficulty_score": 105,
+    "visual_svg": null,
+    "visual_alt": null,
+    "diagnostics": {
+      "0": "You swapped x and y. Right = x-direction, up = y-direction. So (4, 6).",
+      "2": "You added both to x: 4+6=10. Right goes to x, up goes to y separately.",
+      "3": "You added both to y. Right = x-direction (4), up = y-direction (6)."
+    },
+    "tags": [
+      "coordinate-plane",
+      "grade-5-6"
+    ],
+    "topic": "counting_observation",
+    "topic_name": "Counting & Observation",
+    "hint": {
+      "level_0": "Right changes x, up changes y.",
+      "level_1": "Track x and y movements separately.",
+      "level_2": "x = right/left movement, y = up/down movement.",
+      "level_3": "Right 4 = x is 4. Up 6 = y is 6.",
+      "level_4": "New position = (0+4, 0+6) = (4, 6).",
+      "level_5": "Start (0,0), right 4, up 6 = (4, 6)."
+    },
+    "concept_cluster": "data/coordinate_plane",
+    "visual_context": "A coordinate grid with x and y axes labeled, point marked with a dot.",
+    "interaction_mode": "grid_plot"
+  },
+  {
+    "id": "T1-1219",
+    "stem": "Kiwi sees point P at (5, 2) on the grid. In which quadrant is this point?",
+    "choices": [
+      "Quadrant I",
+      "Quadrant II",
+      "Quadrant III",
+      "Quadrant IV"
+    ],
+    "correct_answer": 0,
+    "difficulty_tier": "advanced",
+    "difficulty_score": 110,
+    "visual_svg": null,
+    "visual_alt": null,
+    "diagnostics": {
+      "1": "Quadrant II has negative x and positive y. Here both are positive.",
+      "2": "Quadrant III has both negative. (5,2) has both positive.",
+      "3": "Quadrant IV has positive x and negative y. Here y is positive too."
+    },
+    "tags": [
+      "coordinate-plane",
+      "grade-5-6"
+    ],
+    "topic": "counting_observation",
+    "topic_name": "Counting & Observation",
+    "hint": {
+      "level_0": "Check if x and y are positive or negative.",
+      "level_1": "Use the signs of coordinates to find quadrant.",
+      "level_2": "Quadrant I: both positive. II: x neg, y pos.",
+      "level_3": "x=5 (positive), y=2 (positive).",
+      "level_4": "Both positive = Quadrant I.",
+      "level_5": "(5,2): both positive, so Quadrant I."
+    },
+    "concept_cluster": "data/coordinate_plane",
+    "visual_context": "A coordinate grid with x and y axes labeled, point marked with a dot.",
+    "interaction_mode": "grid_plot"
+  },
+  {
+    "id": "T1-1220",
+    "stem": "Captain Kiwi plots three points: (1,1), (3,3), (5,5). What pattern do these points form?",
+    "choices": [
+      "A circle",
+      "A straight line",
+      "A triangle",
+      "A square"
+    ],
+    "correct_answer": 1,
+    "difficulty_tier": "advanced",
+    "difficulty_score": 115,
+    "visual_svg": null,
+    "visual_alt": null,
+    "diagnostics": {
+      "0": "Three points in a line cannot form a circle.",
+      "2": "A triangle needs three non-collinear points. These points are all on the line y=x.",
+      "3": "A square needs four points. Also, these three are in a straight line."
+    },
+    "tags": [
+      "coordinate-plane",
+      "grade-5-6"
+    ],
+    "topic": "counting_observation",
+    "topic_name": "Counting & Observation",
+    "hint": {
+      "level_0": "Plot the points and look for a pattern.",
+      "level_1": "Check if the points are aligned.",
+      "level_2": "Notice x equals y in each point.",
+      "level_3": "All on the line where y = x.",
+      "level_4": "Points with y=x form a straight diagonal line.",
+      "level_5": "(1,1),(3,3),(5,5) all satisfy y=x \u2014 a straight line."
+    },
+    "concept_cluster": "data/coordinate_plane",
+    "visual_context": "A coordinate grid with x and y axes labeled, point marked with a dot.",
+    "interaction_mode": "grid_plot"
+  },
+  {
+    "id": "T1-1221",
+    "stem": "To find buried treasure, Knight Koko moves to (3, 5) from (0, 0). How many units UP?",
+    "choices": [
+      "0",
+      "3",
+      "5",
+      "8"
+    ],
+    "correct_answer": 2,
+    "difficulty_tier": "advanced",
+    "difficulty_score": 130,
+    "interaction_mode": "grid_plot",
+    "visual_svg": null,
+    "visual_alt": null,
+    "visual_context": "Coordinate grid with knight at (0,0) and treasure at (3,5).",
+    "diagnostics": {
+      "0": "He must move! Look at the second number.",
+      "1": "3 is RIGHT (X). Question asks UP.",
+      "3": "8 is total (3+5). We want vertical only."
+    },
+    "tags": [
+      "coordinate-plane",
+      "grade-5-6"
+    ],
+    "topic": "counting_observation",
+    "topic_name": "Counting & Observation",
+    "hint": {
+      "level_0": "Coordinates = (Over, Up).",
+      "level_1": "First number (3) = left/right.",
+      "level_2": "Second number (5) = up/down.",
+      "level_3": "Y = 5. Move 5 up.",
+      "level_4": "The y-coordinate is 5.",
+      "level_5": "Knight Koko moves 5 units up."
+    },
+    "concept_cluster": "data/coordinate_plane"
+  }
+]

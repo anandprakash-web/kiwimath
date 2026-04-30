@@ -1,0 +1,16 @@
+<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <rect x="20" y="70" width="50" height="40" rx="5" fill="#3498db" stroke="#2c3e50" stroke-width="2"/>
+  <text x="45" y="96" text-anchor="middle" font-family="system-ui" font-size="18" fill="white" font-weight="bold">6</text>
+  <line x1="75" y1="90" x2="105" y2="90" stroke="#333" stroke-width="2" marker-end="url(#arw2)"/>
+  <rect x="110" y="60" width="80" height="60" rx="8" fill="#f39c12" stroke="#e67e22" stroke-width="2"/>
+  <text x="150" y="85" text-anchor="middle" font-family="system-ui" font-size="10" fill="#333">Step 1</text>
+  <text x="150" y="105" text-anchor="middle" font-family="system-ui" font-size="14" fill="#333" font-weight="bold">-2</text>
+  <line x1="195" y1="90" x2="215" y2="90" stroke="#333" stroke-width="2" marker-end="url(#arw2)"/>
+  <rect x="220" y="60" width="80" height="60" rx="8" fill="#e67e22" stroke="#d35400" stroke-width="2"/>
+  <text x="260" y="85" text-anchor="middle" font-family="system-ui" font-size="10" fill="#333">Step 2</text>
+  <text x="260" y="105" text-anchor="middle" font-family="system-ui" font-size="14" fill="#333" font-weight="bold">x3</text>
+  <line x1="305" y1="90" x2="325" y2="90" stroke="#333" stroke-width="2" marker-end="url(#arw2)"/>
+  <rect x="330" y="70" width="50" height="40" rx="5" fill="#2ecc71" stroke="#27ae60" stroke-width="2"/>
+  <text x="355" y="96" text-anchor="middle" font-family="system-ui" font-size="18" fill="white" font-weight="bold">?</text>
+  <defs><marker id="arw2" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#333"/></marker></defs>
+</svg>

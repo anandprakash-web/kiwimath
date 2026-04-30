@@ -1,0 +1,54 @@
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#E8F4FD', 'primaryTextColor': '#1a1a2e', 'lineColor': '#4a90d9', 'fontSize': '14px'}}}%%
+
+graph TD
+    subgraph number_island ["🏝️ Number Island"]
+        A["counting.one_to_one<br/><i>One-to-One Counting</i>"]
+        B["counting.cardinality<br/><i>Cardinality</i>"]
+        C["counting.subitizing<br/><i>Subitizing</i>"]
+        D["counting.ordinal<br/><i>Ordinal Numbers</i>"]
+        E["counting.compare<br/><i>Compare Numbers</i>"]
+        F["addition.within_10<br/><i>Add Within 10</i>"]
+        G["subtraction.within_10<br/><i>Subtract Within 10</i>"]
+        H["addition.within_20<br/><i>Add Within 20</i>"]
+        I["subtraction.within_20<br/><i>Subtract Within 20</i>"]
+    end
+
+    subgraph shape_forest ["🌲 Shape Forest"]
+        J["shapes.2d_basic<br/><i>2D Shapes</i>"]
+        K["spatial.mirror_reflection<br/><i>Mirror Reflection</i>"]
+        L["spatial.perspective<br/><i>Perspective & Views</i>"]
+    end
+
+    subgraph pattern_cave ["🦇 Pattern Cave"]
+        M["patterns.simple<br/><i>Simple Patterns</i>"]
+    end
+
+    subgraph measure_mountain ["⛰️ Measure Mountain"]
+        N["measurement.length_compare<br/><i>Compare Lengths</i>"]
+    end
+
+    %% Edges with prerequisite type annotations
+    A -->|hard| B
+    A -.->|soft| C
+    A -.->|soft| M
+    B -->|hard| D
+    B -->|hard| E
+    B -->|hard| F
+    C -.->|soft| F
+    B -->|hard| G
+    F -->|hard| H
+    G -.->|soft| H
+    G -->|hard| I
+    F -.->|soft| I
+    E -.->|soft| N
+    J -->|hard| K
+    J -->|hard| L
+
+    %% Styling
+    classDef root fill:#FF6B6B,stroke:#c0392b,color:#fff,stroke-width:2px
+    classDef terminal fill:#95E1D3,stroke:#1abc9c,color:#1a1a2e,stroke-width:2px
+    classDef inner fill:#F8E8A0,stroke:#f39c12,color:#1a1a2e,stroke-width:1px
+
+    class A,J root
+    class D,M,H,I,N,K,L terminal
+    class B,C,E,F,G inner

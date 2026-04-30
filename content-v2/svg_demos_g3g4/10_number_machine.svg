@@ -1,0 +1,16 @@
+<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <defs><marker id="m-arw" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto"><polygon points="0 0,10 3.5,0 7" fill="#333"/></marker></defs>
+  <rect x="25" y="82.0" width="50" height="36" rx="5" fill="#3498DB" stroke="#2C3E50" stroke-width="2"/>
+  <text x="50" y="106.0" text-anchor="middle" font-family="system-ui" font-size="16" fill="white" font-weight="bold">7</text>
+  <line x1="130" y1="100" x2="110" y2="100" stroke="#333" stroke-width="2" marker-end="url(#m-arw)"/>
+  <rect x="115" y="70" width="70" height="60" rx="10" fill="#F39C12" stroke="#E67E22" stroke-width="3"/>
+  <text x="150" y="95" text-anchor="middle" font-family="system-ui" font-size="10" fill="#333">MACHINE</text>
+  <text x="150" y="115" text-anchor="middle" font-family="system-ui" font-size="16" fill="#333" font-weight="bold">×3</text>
+  <line x1="230" y1="100" x2="210" y2="100" stroke="#333" stroke-width="2" marker-end="url(#m-arw)"/>
+  <rect x="215" y="70" width="70" height="60" rx="10" fill="#F39C12" stroke="#E67E22" stroke-width="3"/>
+  <text x="250" y="95" text-anchor="middle" font-family="system-ui" font-size="10" fill="#333">MACHINE</text>
+  <text x="250" y="115" text-anchor="middle" font-family="system-ui" font-size="16" fill="#333" font-weight="bold">-4</text>
+  <line x1="290" y1="100" x2="320" y2="100" stroke="#333" stroke-width="2" marker-end="url(#m-arw)"/>
+  <rect x="325" y="82.0" width="50" height="36" rx="5" fill="#FFF3CD" stroke="#27AE60" stroke-width="2"/>
+  <text x="350" y="106.0" text-anchor="middle" font-family="system-ui" font-size="16" fill="#E67E22" font-weight="bold">?</text>
+</svg>

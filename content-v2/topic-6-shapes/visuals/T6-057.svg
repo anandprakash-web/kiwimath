@@ -1,0 +1,11 @@
+<svg viewBox="0 0 260 90" xmlns="http://www.w3.org/2000/svg" font-family="system-ui">
+<circle cx="35" cy="40" r="25" fill="#FFF9C4" stroke="#2C3E50" stroke-width="1.5"/>
+<text x="35" y="78" text-anchor="middle" font-size="9" fill="#333">1. Circle</text>
+<path d="M 95 15 A 25 25 0 0 1 95 65 Z" fill="#FFF9C4" stroke="#2C3E50" stroke-width="1.5"/>
+<text x="100" y="78" text-anchor="middle" font-size="9" fill="#333">2. Half</text>
+<path d="M 155 40 A 25 25 0 0 0 155 15 L 155 40 Z" fill="#FFF9C4" stroke="#2C3E50" stroke-width="1.5"/>
+<text x="160" y="78" text-anchor="middle" font-size="9" fill="#333">3. Quarter</text>
+<path d="M 220 40 A 25 25 0 0 0 220 15 L 220 40 Z" fill="#FFF9C4" stroke="#2C3E50" stroke-width="1.5"/>
+<circle cx="215" cy="25" r="4" fill="white" stroke="#FF6B6B" stroke-width="1"/>
+<text x="220" y="78" text-anchor="middle" font-size="9" fill="#FF6B6B">4. Punch hole</text>
+</svg>

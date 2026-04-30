@@ -587,23 +587,33 @@ class AdaptiveEngineV2:
         topic_id: str,
         available_questions: list,
         exclude_ids: Optional[List[str]] = None,
+        exclude_clusters: Optional[List[str]] = None,
+        seen_clusters: Optional[Dict[str, int]] = None,
+        max_per_cluster: int = 2,
     ) -> Optional[Any]:
-        """Select the optimal next question from available candidates.
+        """Select the optimal next question with cluster-aware deduplication.
 
-        Uses information-theoretic selection: picks the question that maximizes
-        Fisher information (closest to where P(correct) ≈ TARGET_P_CORRECT).
+        Uses information-theoretic selection + concept cluster diversity:
+        - Picks questions closest to P(correct) ≈ TARGET_P_CORRECT
+        - Penalizes questions from clusters already seen in the session
+        - Fully excludes clusters the kid has mastered (answered correctly)
 
         Args:
             user_id: Student identifier
             topic_id: Topic to select from
             available_questions: List of QuestionV2 objects
             exclude_ids: Question IDs to skip
+            exclude_clusters: Clusters to fully skip (mastered patterns)
+            seen_clusters: Dict of cluster -> times_seen for soft limiting
+            max_per_cluster: Max questions from same cluster per session
 
         Returns:
             Best question, or None if no candidates.
         """
         ability = self.get_ability(user_id, topic_id)
         exclude = set(exclude_ids or [])
+        excluded_clusters = set(exclude_clusters or [])
+        cluster_counts = dict(seen_clusters or {})
 
         # Also exclude recently-answered questions from history
         recent_qids = {h["qid"] for h in ability.history[-20:]}
@@ -611,43 +621,60 @@ class AdaptiveEngineV2:
 
         pool = [q for q in available_questions if q.id not in exclude]
         if not pool:
-            # If all excluded, relax the recent-history filter
             pool = [q for q in available_questions if q.id not in set(exclude_ids or [])]
         if not pool:
             return None
 
+        # Partition into preferred (fresh clusters) and over-limit
+        preferred = []
+        over_limit = []
+        for q in pool:
+            cluster = getattr(q, 'concept_cluster', None)
+            if cluster and cluster in excluded_clusters:
+                over_limit.append(q)
+            elif cluster and cluster_counts.get(cluster, 0) >= max_per_cluster:
+                over_limit.append(q)
+            else:
+                preferred.append(q)
+
+        # Use preferred pool if available, otherwise fall back
+        active_pool = preferred if preferred else over_limit if over_limit else pool
+
         # Target difficulty on logit scale
         target_b = self._target_difficulty_theta(ability.theta)
 
-        # Score each question: how close its P(correct) is to TARGET_P_CORRECT
+        # Score each question: IRT fitness + cluster diversity bonus
         scored = []
-        for q in pool:
+        for q in active_pool:
             q_theta = difficulty_to_theta(q.difficulty_score)
             q_p = p_correct(ability.theta, q_theta)
-            # Distance from ideal probability
             p_distance = abs(q_p - TARGET_P_CORRECT)
-            # Fisher information (bonus for informative questions)
             q_info = information(ability.theta, q_theta)
-            # Combined score: lower is better (closer to target + higher info)
+            # Base score: lower is better
             score = p_distance - 0.1 * q_info
+
+            # Cluster diversity bonus: penalize questions from already-seen clusters
+            cluster = getattr(q, 'concept_cluster', None)
+            if cluster:
+                times_seen = cluster_counts.get(cluster, 0)
+                # Each repeat adds 0.15 penalty (significant but not overwhelming)
+                score += times_seen * 0.15
+
             scored.append((score, q))
 
-        # Sort by score (best first) and pick from top candidates with randomness
+        # Sort by score (best first) and pick from top candidates
         scored.sort(key=lambda x: x[0])
         top_n = min(CANDIDATE_POOL_SIZE, len(scored))
         candidates = [q for _, q in scored[:top_n]]
 
         # Weighted random selection: favor better-scored candidates
-        # Use inverse score as weight
         weights = []
         for i in range(len(candidates)):
-            # Exponential decay: first candidate gets weight 4x last
             weights.append(math.exp(-0.5 * i))
 
         total = sum(weights)
         weights = [w / total for w in weights]
 
-        # Weighted random choice
         r = random.random()
         cumsum = 0.0
         for i, w in enumerate(weights):

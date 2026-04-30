@@ -1,0 +1,91 @@
+{
+  "id": "G1-COUNT-051",
+  "grade": 1,
+  "topic": "counting_observation",
+  "subtopic": "ordinal_numbers",
+  "subskills": ["ordinal_position", "left_to_right_order"],
+  "difficulty": 1,
+  "tier": "warmup",
+  "source_inspiration": "Academic cofounder L1 — ducks in a row (ordinal)",
+
+  "pedagogy": "cpa_concrete",
+
+  "stem_template": "The {animal} are moving in a line. Tap the {ordinal} {animal_singular} in the row.",
+  "answer_type": "multiple_choice",
+
+  "interaction": {
+    "type": "multiple_choice_visual",
+    "correct_option_index": null,
+    "fallback_type": "multiple_choice"
+  },
+
+  "visual": {
+    "type": "svg_generator",
+    "generator": "object_row",
+    "params": {"count_from": "{N}", "object": "{animal_singular}"}
+  },
+  "visual_manifest": {
+    "art_brief": "A row of {N} {adjective} {animal} moving from left to right. Each should be tappable and clearly numbered by position.",
+    "alt_text": "A line of {N} {animal}.",
+    "style": "warm_cartoon",
+    "layout_hint": "row",
+    "visual_type": "illustration"
+  },
+
+  "params": {
+    "N":               {"range": [5, 7]},
+    "K":               {"range": [2, 5], "constraint": "K < N"},
+    "animal":          {"pool": ["ducks", "frogs", "penguins", "kittens"]},
+    "animal_singular": {"pool": ["duck", "frog", "penguin", "kitten"]},
+    "adjective":       {"pool": ["yellow", "green", "cute", "tiny"]},
+    "ordinal":         {"pool": ["2nd", "3rd", "4th", "5th"]}
+  },
+  "derived": {},
+
+  "answer_formula": "K",
+  "distractors": [
+    {"formula": "K - 1", "label": "off_by_one_before"},
+    {"formula": "K + 1", "label": "off_by_one_after"},
+    {"formula": "N",     "label": "picked_last"}
+  ],
+
+  "misconceptions": [
+    {
+      "trigger_answer": "K - 1",
+      "diagnosis": "ordinal_off_by_one_left",
+      "feedback_child": "Close! Let's count from the front: 1st, 2nd... which is next?",
+      "step_down_path": ["G1-COUNT-051-S1", "G1-COUNT-051-S2"]
+    },
+    {
+      "trigger_answer": "K + 1",
+      "diagnosis": "ordinal_off_by_one_right",
+      "feedback_child": "Almost! You went one too far. Count again from the start.",
+      "step_down_path": ["G1-COUNT-051-S1", "G1-COUNT-051-S2"]
+    },
+    {
+      "trigger_answer": "N",
+      "diagnosis": "picked_last_instead",
+      "feedback_child": "That's the last one, not the {ordinal}. Let's count from the front.",
+      "step_down_path": ["G1-COUNT-051-S1"]
+    }
+  ],
+
+  "socratic_feedback": {
+    "on_correct": "Exactly! That is the {ordinal} {animal_singular}. Well done!",
+    "incorrect_selection": "That's a cute {animal_singular}! But let's count from the front: 1st, 2nd... which one is next?",
+    "encouragement_after_retry": "Start at the very first one on the left and count slowly."
+  },
+
+  "curriculum_alignment": {
+    "common_core": "K.CC.B.4c",
+    "cambridge_stage": 1,
+    "singapore_strand": "Whole Numbers",
+    "kangaroo_level": "Felix"
+  },
+
+  "tags": ["topic:counting", "skill:ordinal", "cpa:concrete"],
+  "est_time_seconds": 20,
+  "version": 1,
+  "author": "AP",
+  "status": "draft"
+}

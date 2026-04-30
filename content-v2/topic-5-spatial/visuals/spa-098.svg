@@ -1,0 +1,6 @@
+<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <rect x="150" y="60" width="80" height="80" fill="#3498db" stroke="#2c3e50" stroke-width="2"/>
+  <polygon points="150,60 175,35 255,35 230,60" fill="#5dade2" stroke="#2c3e50" stroke-width="1.5"/>
+  <polygon points="230,60 255,35 255,115 230,140" fill="#2980b9" stroke="#2c3e50" stroke-width="1.5"/>
+  <text x="200" y="180" text-anchor="middle" font-family="system-ui" font-size="10" fill="#666">SPA-098</text>
+</svg>

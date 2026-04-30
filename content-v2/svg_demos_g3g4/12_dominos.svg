@@ -1,0 +1,40 @@
+<svg viewBox="0 0 400 150" xmlns="http://www.w3.org/2000/svg">
+  <rect x="97" y="35" width="40" height="80" rx="5" fill="#FDFEFE" stroke="#2C3E50" stroke-width="2"/>
+  <line x1="100" y1="75" x2="134" y2="75" stroke="#2C3E50" stroke-width="1.5"/>
+  <circle cx="110" cy="48" r="3" fill="#2C3E50"/>
+  <circle cx="117" cy="55" r="3" fill="#2C3E50"/>
+  <circle cx="124" cy="62" r="3" fill="#2C3E50"/>
+  <circle cx="110" cy="88" r="3" fill="#2C3E50"/>
+  <circle cx="124" cy="88" r="3" fill="#2C3E50"/>
+  <circle cx="117" cy="95" r="3" fill="#2C3E50"/>
+  <circle cx="110" cy="102" r="3" fill="#2C3E50"/>
+  <circle cx="124" cy="102" r="3" fill="#2C3E50"/>
+  <rect x="152" y="35" width="40" height="80" rx="5" fill="#FDFEFE" stroke="#2C3E50" stroke-width="2"/>
+  <line x1="155" y1="75" x2="189" y2="75" stroke="#2C3E50" stroke-width="1.5"/>
+  <circle cx="165" cy="48" r="3" fill="#2C3E50"/>
+  <circle cx="179" cy="48" r="3" fill="#2C3E50"/>
+  <circle cx="172" cy="55" r="3" fill="#2C3E50"/>
+  <circle cx="165" cy="62" r="3" fill="#2C3E50"/>
+  <circle cx="179" cy="62" r="3" fill="#2C3E50"/>
+  <circle cx="165" cy="88" r="3" fill="#2C3E50"/>
+  <circle cx="179" cy="102" r="3" fill="#2C3E50"/>
+  <rect x="207" y="35" width="40" height="80" rx="5" fill="#FDFEFE" stroke="#2C3E50" stroke-width="2"/>
+  <line x1="210" y1="75" x2="244" y2="75" stroke="#2C3E50" stroke-width="1.5"/>
+  <circle cx="220" cy="48" r="3" fill="#2C3E50"/>
+  <circle cx="234" cy="62" r="3" fill="#2C3E50"/>
+  <circle cx="220" cy="88" r="3" fill="#2C3E50"/>
+  <circle cx="234" cy="88" r="3" fill="#2C3E50"/>
+  <circle cx="220" cy="95" r="3" fill="#2C3E50"/>
+  <circle cx="234" cy="95" r="3" fill="#2C3E50"/>
+  <circle cx="220" cy="102" r="3" fill="#2C3E50"/>
+  <circle cx="234" cy="102" r="3" fill="#2C3E50"/>
+  <rect x="262" y="35" width="40" height="80" rx="5" fill="#FDFEFE" stroke="#2C3E50" stroke-width="2"/>
+  <line x1="265" y1="75" x2="299" y2="75" stroke="#2C3E50" stroke-width="1.5"/>
+  <circle cx="275" cy="48" r="3" fill="#2C3E50"/>
+  <circle cx="289" cy="48" r="3" fill="#2C3E50"/>
+  <circle cx="275" cy="55" r="3" fill="#2C3E50"/>
+  <circle cx="289" cy="55" r="3" fill="#2C3E50"/>
+  <circle cx="275" cy="62" r="3" fill="#2C3E50"/>
+  <circle cx="289" cy="62" r="3" fill="#2C3E50"/>
+  <circle cx="282" cy="95" r="3" fill="#2C3E50"/>
+</svg>

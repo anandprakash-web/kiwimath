@@ -1,0 +1,100 @@
+{
+  "id": "G1-ARITH-003",
+  "grade": 1,
+  "topic": "arithmetic_missing_numbers",
+  "subtopic": "addition_within_10",
+  "subskills": ["addition_basic", "counting_on"],
+  "difficulty": 1,
+  "tier": "warmup",
+  "source_inspiration": "Academic cofounder L1 — add within 10 plate scenario",
+
+  "pedagogy": "cpa_concrete",
+
+  "stem_template": "There are {N} {object} on a plate. {name} puts {K} more. How many {object} on the plate?",
+  "answer_type": "multiple_choice",
+
+  "interaction": {
+    "type": "multiple_choice",
+    "correct_option_index": null,
+    "fallback_type": "multiple_choice"
+  },
+
+  "visual": {
+    "type": "svg_generator",
+    "generator": "plate_objects",
+    "params": {"initial": "{N}", "added": "{K}", "object": "{object}"}
+  },
+  "visual_manifest": {
+    "art_brief": "A plate with {N} {object} already on it and {K} more being placed. Warm cartoon style with a clear plate outline.",
+    "alt_text": "{N} {object} on a plate with {K} more being added.",
+    "style": "warm_cartoon",
+    "layout_hint": "plate_scene",
+    "visual_type": "illustration"
+  },
+
+  "params": {
+    "N":      {"range": [2, 7]},
+    "K":      {"range": [1, 5], "constraint": "N+K<=10"},
+    "name":   {"pool": ["Aarav", "Priya", "Liam", "Sofia"]},
+    "object": {"pool": ["apples", "marbles", "stickers"]}
+  },
+  "derived": {},
+
+  "answer_formula": "N+K",
+  "distractors": [
+    {"formula": "N+K-1", "label": "off_by_one_low"},
+    {"formula": "N",     "label": "ignored_new_items"},
+    {"formula": "K",     "label": "ignored_existing_items"}
+  ],
+
+  "misconceptions": [
+    {
+      "trigger_answer": "N+K-1",
+      "diagnosis": "off_by_one_low",
+      "feedback_child": "Almost! You might have missed one. Count them all again carefully.",
+      "step_down_path": ["G1-ARITH-003-S1", "G1-ARITH-003-S2"]
+    },
+    {
+      "trigger_answer": "N",
+      "diagnosis": "ignored_new_items",
+      "feedback_child": "Don't forget the new {object}! {name} added {K} more to the plate.",
+      "step_down_path": ["G1-ARITH-003-S1", "G1-ARITH-003-S2"]
+    },
+    {
+      "trigger_answer": "K",
+      "diagnosis": "ignored_existing_items",
+      "feedback_child": "There were already {N} {object} on the plate. Count those too!",
+      "step_down_path": ["G1-ARITH-003-S1"]
+    }
+  ],
+
+  "socratic_feedback": {
+    "on_correct": "Great job! {N} + {K} = {N+K}. The plate now has {N+K} {object}!",
+    "on_incorrect": "Let's count together. Start with the {N} on the plate, then add {K} more.",
+    "on_timeout": "No rush! Count the {object} already on the plate first, then the new ones.",
+    "encouragement_after_retry": "Almost there! Point to each {object} as you count."
+  },
+
+  "curriculum_alignment": {
+    "common_core": "1.OA.A.1",
+    "cambridge_stage": 1,
+    "cambridge_strand": "Number: Addition and Subtraction",
+    "singapore_strand": "Whole Numbers"
+  },
+
+  "locale_context": {
+    "IN":     {"objects": ["laddoos", "marbles", "stickers"]},
+    "global": {"objects": ["apples", "marbles", "stickers"]}
+  },
+
+  "mastery_config": {
+    "concept_id": "addition.within_10",
+    "weight": 1.0
+  },
+
+  "tags": ["topic:arithmetic", "skill:addition", "cpa:concrete"],
+  "est_time_seconds": 25,
+  "version": 1,
+  "author": "acad-v2",
+  "status": "approved"
+}

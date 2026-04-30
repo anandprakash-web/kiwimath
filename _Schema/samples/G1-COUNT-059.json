@@ -1,0 +1,104 @@
+{
+  "id": "G1-COUNT-059",
+  "grade": 1,
+  "topic": "counting_observation",
+  "subtopic": "number_word_recognition",
+  "subskills": [
+    "numeral_recognition",
+    "number_word_matching"
+  ],
+  "difficulty": 1,
+  "tier": "warmup",
+  "source_inspiration": "Cambridge Stage 1 Nn2 \u2014 read/write numerals",
+  "pedagogy": "cpa_abstract",
+  "stem_template": "Which number is '{word}'?",
+  "answer_type": "multiple_choice",
+  "interaction": {
+    "type": "multiple_choice",
+    "fallback_type": "multiple_choice"
+  },
+  "visual": null,
+  "visual_manifest": null,
+  "params": {
+    "word": {
+      "pool": [
+        "three",
+        "five",
+        "seven",
+        "eight",
+        "nine"
+      ]
+    },
+    "N": {
+      "pool": [
+        3,
+        5,
+        7,
+        8,
+        9
+      ]
+    }
+  },
+  "derived": {},
+  "answer_formula": "N",
+  "distractors": [
+    {
+      "formula": "N - 1",
+      "label": "one_less"
+    },
+    {
+      "formula": "N + 1",
+      "label": "one_more"
+    },
+    {
+      "formula": "N + 10",
+      "label": "confused_teen"
+    }
+  ],
+  "misconceptions": [
+    {
+      "trigger_answer": "N - 1",
+      "diagnosis": "number_word_off_by_one",
+      "feedback_child": "Close! That's one less. '{word}' means {N}.",
+      "step_down_path": [
+        "G1-COUNT-059-S1"
+      ]
+    },
+    {
+      "trigger_answer": "N + 1",
+      "diagnosis": "number_word_one_more",
+      "feedback_child": "Almost! That's one more. '{word}' means {N}.",
+      "step_down_path": [
+        "G1-COUNT-059-S1"
+      ]
+    },
+    {
+      "trigger_answer": "N + 10",
+      "diagnosis": "confused_teen_number",
+      "feedback_child": "That's a teen number! '{word}' is just {N}, not {N} plus ten.",
+      "step_down_path": [
+        "G1-COUNT-059-S1"
+      ]
+    }
+  ],
+  "socratic_feedback": {
+    "on_correct": "Yes! '{word}' = {N}. You're reading numbers like a pro!",
+    "generic_incorrect": "Say the word slowly and count on your fingers to match it.",
+    "encouragement_after_retry": "Try holding up fingers while saying the number word."
+  },
+  "curriculum_alignment": {
+    "common_core": "K.CC.A.3",
+    "cambridge_stage": 1,
+    "cambridge_strand": "Number: Reading and Writing",
+    "singapore_strand": "Whole Numbers"
+  },
+  "tags": [
+    "topic:counting",
+    "skill:number_words",
+    "cpa:abstract"
+  ],
+  "est_time_seconds": 15,
+  "version": 1,
+  "author": "AP",
+  "status": "draft"
+}

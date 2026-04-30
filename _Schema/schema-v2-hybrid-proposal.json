@@ -1,0 +1,143 @@
+{
+  "$schema_version": "0.2",
+  "$notes": [
+    "Hybrid of v0.1 parametric engine + academic cofounder's pedagogy/visual/feedback model.",
+    "RULE: every v0.1 field is preserved. New fields are OPTIONAL with defaults.",
+    "RULE: existing 480 questions validate unchanged against v0.2."
+  ],
+
+  "example_parent_question": {
+    "id": "G1-COUNT-042",
+    "grade": 1,
+    "topic": "counting_observation",
+    "subtopic": "counting_objects",
+    "subskills": ["one_to_one_correspondence", "cardinality"],
+    "difficulty": 1,
+    "tier": "warmup",
+    "source_inspiration": "Kangaroo Felix — Topic 1",
+
+    "__NEW__ pedagogy": "cpa_concrete",
+    "__NEW__ pedagogy_notes": "// enum: cpa_concrete | cpa_pictorial | cpa_abstract | drill | exploration",
+    "__NEW__ curriculum_alignment": {
+      "__notes": "// Structured tags replacing loose 'tags' list for curriculum mapping",
+      "common_core": "K.CC.B.4",
+      "cambridge_stage": 1,
+      "singapore_strand": "Whole Numbers",
+      "kangaroo_level": "Felix"
+    },
+
+    "stem_template": "Look at the {scene}. How many {adjective} {object} do you see?",
+    "answer_type": "multiple_choice",
+
+    "__NEW__ interaction": {
+      "__notes": "// Replaces answer_type long-term. Backward compat: if missing, infer from answer_type.",
+      "type": "tap_to_count",
+      "target_formula": "N",
+      "tap_targets": "object",
+      "fallback_type": "multiple_choice"
+    },
+
+    "visual": {
+      "type": "svg_generator",
+      "generator": "scattered_objects",
+      "params": {"count_from": "{N}", "object": "{object}"}
+    },
+    "__NEW__ visual_manifest": {
+      "__notes": "// Human-readable brief for illustration pipeline. Used when svg_generator doesn't exist or for AI-generated art.",
+      "art_brief": "A {scene} with {N} bright {adjective} {object} scattered across it. Each {object} should be distinct and easy to tap.",
+      "alt_text": "{N} {adjective} {object} on a {scene}.",
+      "style": "warm_cartoon",
+      "layout_hint": "scattered"
+    },
+
+    "params": {
+      "N":         {"range": [3, 7]},
+      "object":    {"pool": ["apples", "marbles", "stickers", "butterflies"]},
+      "adjective": {"pool": ["red", "shiny", "sparkly", "round"]},
+      "scene":     {"pool": ["picnic blanket", "garden table", "playground bench"]}
+    },
+    "derived": {},
+
+    "answer_formula": "N",
+    "distractors": [
+      {"formula": "N + 1", "label": "over_count"},
+      {"formula": "N - 1", "label": "under_count"},
+      {"formula": "N + 2", "label": "wild_guess"}
+    ],
+
+    "misconceptions": [
+      {
+        "trigger_answer": "N + 1",
+        "diagnosis": "double_counted_one",
+        "feedback_child": "Almost! It looks like one got counted twice. Try pointing to each one just once.",
+        "step_down_path": ["G1-COUNT-042-S1", "G1-COUNT-042-S2"]
+      },
+      {
+        "trigger_answer": "N - 1",
+        "diagnosis": "skipped_one_object",
+        "feedback_child": "So close! Check if you missed one hiding in the corner.",
+        "step_down_path": ["G1-COUNT-042-S1", "G1-COUNT-042-S2"]
+      },
+      {
+        "trigger_answer": "N + 2",
+        "diagnosis": "random_guess",
+        "feedback_child": "Let's slow down and count together, one by one.",
+        "step_down_path": ["G1-COUNT-042-S1", "G1-COUNT-042-S2", "G1-COUNT-042-S3"]
+      }
+    ],
+
+    "__NEW__ socratic_feedback": {
+      "__notes": "// Category-based feedback layer ON TOP of misconceptions. Misconceptions handle specific wrong answers; socratic handles patterns the formula can't predict (tap interactions, partial attempts, etc.)",
+      "on_correct": "Amazing! You counted {N} {object}. Now they're ready for the picnic!",
+      "on_partial": "You're getting there! Keep counting — what number comes after {attempt}?",
+      "on_timeout": "Take your time! Start from the left and point to each {object} one at a time.",
+      "encouragement_after_retry": "You've got this! Remember, touch each one only once."
+    },
+
+    "locale_context": {
+      "IN": {"objects": ["laddoos", "marbles", "stickers"], "adjective": ["sweet", "shiny", "sparkly"]},
+      "global": {"objects": ["apples", "marbles", "stickers"]}
+    },
+
+    "tags": ["topic:counting", "skill:one_to_one", "cpa:concrete"],
+    "est_time_seconds": 20,
+    "version": 1,
+    "author": "AP",
+    "status": "draft"
+  },
+
+  "what_changed_from_v01": {
+    "new_optional_fields": [
+      "pedagogy         — enum, CPA stage or drill/exploration. Default: null (inferred from tier).",
+      "curriculum_alignment — structured object replacing loose tags for framework mapping.",
+      "interaction       — richer interaction spec with type + target_formula + fallback. If missing, infer from answer_type.",
+      "visual_manifest   — human-readable art brief with template vars. Coexists with visual (svg_generator). Renderer prefers svg_generator if available, falls back to visual_manifest for AI-gen or static art.",
+      "socratic_feedback — category-based feedback layer for non-formula-predictable mistakes (partial taps, timeouts, encouragement)."
+    ],
+    "breaking_changes": "NONE. All new fields are Optional with null defaults. Existing 480 questions pass validation unchanged.",
+    "deprecations": [
+      "answer_type — kept but superseded by interaction.type when present. Will remove in v0.3.",
+      "tags — kept but curriculum-specific tags should migrate to curriculum_alignment."
+    ]
+  },
+
+  "rendering_priority": {
+    "__notes": "How the Flutter app decides what to show for visuals",
+    "1_svg_generator": "If visual.type == 'svg_generator' AND generator exists in backend → render SVG inline (fastest, crispest).",
+    "2_visual_manifest": "If svg_generator missing/unknown → use visual_manifest.art_brief to render via AI illustration pipeline or pre-rendered asset lookup.",
+    "3_alt_text_only": "If both missing → show alt_text as accessible fallback, no visual card.",
+    "4_nothing": "If no visual and no visual_manifest → hide visual card entirely (current behavior)."
+  },
+
+  "interaction_types_v02": {
+    "__notes": "Expanded from v0.1's 4-value answer_type enum",
+    "supported_now": ["multiple_choice"],
+    "v02_additions": [
+      "tap_to_count    — child taps objects in visual, app counts taps. Needs visual_manifest or interactive SVG.",
+      "multiple_choice_visual — options are images not text. Needs option visuals.",
+      "drag_to_order   — child drags items into sequence. Replaces 'drag_and_drop' with clearer semantics.",
+      "numeric_keypad  — child types a number. Replaces 'numeric_input' with clearer name."
+    ],
+    "rule": "Frontend must have a renderer for the type before content authors can use it. fallback_type ensures graceful degradation."
+  }
+}

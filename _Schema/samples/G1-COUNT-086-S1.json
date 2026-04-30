@@ -1,0 +1,47 @@
+{
+  "id": "G1-COUNT-086-S1",
+  "grade": 1,
+  "topic": "counting_observation",
+  "subtopic": "scaffolded_step_down",
+  "subskills": [
+    "transitive_reasoning"
+  ],
+  "difficulty": 4,
+  "tier": "challenge",
+  "parent_id": "G1-COUNT-086",
+  "step_index": 1,
+  "stem_template": "1 pineapple = {K} oranges. How many oranges is 1 pineapple worth?",
+  "visual": null,
+  "answer_type": "multiple_choice",
+  "params": {
+    "K": {
+      "range": [
+        2,
+        4
+      ]
+    }
+  },
+  "answer_formula": "K",
+  "distractors": [
+    {
+      "formula": "1",
+      "label": "one"
+    },
+    {
+      "formula": "K + 1",
+      "label": "off_by_one"
+    },
+    {
+      "formula": "2",
+      "label": "two"
+    }
+  ],
+  "misconceptions": [],
+  "tags": [
+    "step_down"
+  ],
+  "est_time_seconds": 15,
+  "version": 1,
+  "author": "AP",
+  "status": "draft"
+}

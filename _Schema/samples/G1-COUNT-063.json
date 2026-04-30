@@ -1,0 +1,116 @@
+{
+  "id": "G1-COUNT-063",
+  "grade": 1,
+  "topic": "counting_observation",
+  "subtopic": "zero_concept",
+  "subskills": [
+    "cardinality",
+    "zero_understanding"
+  ],
+  "difficulty": 1,
+  "tier": "warmup",
+  "source_inspiration": "Cambridge Nn2 \u2014 read and write 0-20",
+  "pedagogy": "cpa_concrete",
+  "stem_template": "{name} looks at the {container}. It is completely empty! How many {object} are in the {container}?",
+  "answer_type": "multiple_choice",
+  "interaction": {
+    "type": "multiple_choice",
+    "fallback_type": "multiple_choice"
+  },
+  "visual": null,
+  "visual_manifest": {
+    "art_brief": "An empty {container} with nothing inside. A child ({name}) looks at it with a surprised expression.",
+    "alt_text": "An empty {container}.",
+    "style": "warm_cartoon",
+    "layout_hint": "centered",
+    "visual_type": "illustration"
+  },
+  "params": {
+    "name": {
+      "pool": [
+        "Aarav",
+        "Mei",
+        "Sofia",
+        "Kofi"
+      ]
+    },
+    "container": {
+      "pool": [
+        "lunchbox",
+        "toy chest",
+        "cookie jar",
+        "basket"
+      ]
+    },
+    "object": {
+      "pool": [
+        "snacks",
+        "toys",
+        "cookies",
+        "fruits"
+      ]
+    }
+  },
+  "derived": {},
+  "answer_formula": "0",
+  "distractors": [
+    {
+      "formula": "1",
+      "label": "cant_be_zero"
+    },
+    {
+      "formula": "2",
+      "label": "guessed_two"
+    },
+    {
+      "formula": "10",
+      "label": "confused_with_o"
+    }
+  ],
+  "misconceptions": [
+    {
+      "trigger_answer": "1",
+      "diagnosis": "doesnt_accept_zero",
+      "feedback_child": "It's empty \u2014 nothing inside! The answer IS zero.",
+      "step_down_path": [
+        "G1-COUNT-063-S1"
+      ]
+    },
+    {
+      "trigger_answer": "2",
+      "diagnosis": "guessed_randomly",
+      "feedback_child": "Look inside \u2014 it's empty! Nothing there means zero.",
+      "step_down_path": [
+        "G1-COUNT-063-S1"
+      ]
+    },
+    {
+      "trigger_answer": "10",
+      "diagnosis": "confused_zero_with_letter_o",
+      "feedback_child": "0 means zero, not ten! An empty {container} has zero {object}.",
+      "step_down_path": [
+        "G1-COUNT-063-S1"
+      ]
+    }
+  ],
+  "socratic_feedback": {
+    "on_correct": "Yes! Zero means nothing's there. Even nothing is a number!",
+    "generic_incorrect": "Open your hands. Is anything there? That's what zero looks like!",
+    "encouragement_after_retry": "Empty means zero. Zero is a number too!"
+  },
+  "curriculum_alignment": {
+    "common_core": "K.CC.A.3",
+    "cambridge_stage": 1,
+    "cambridge_strand": "Number: Reading and Writing",
+    "singapore_strand": "Whole Numbers"
+  },
+  "tags": [
+    "topic:counting",
+    "skill:zero",
+    "cpa:concrete"
+  ],
+  "est_time_seconds": 15,
+  "version": 1,
+  "author": "AP",
+  "status": "draft"
+}

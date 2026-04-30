@@ -1,0 +1,6 @@
+<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <polygon points="200,40 140,140 260,140" fill="#f1c40f" stroke="#2c3e50" stroke-width="2"/>
+  <polygon points="200,40 260,140 280,120" fill="#d4ac0d" stroke="#2c3e50" stroke-width="1.5"/>
+  <line x1="200" y1="40" x2="260" y2="140" stroke="#2c3e50" stroke-width="1.5"/>
+  <text x="200" y="185" text-anchor="middle" font-family="system-ui" font-size="12" fill="#666">pyramid with square base</text>
+</svg>

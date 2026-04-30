@@ -1,0 +1,40 @@
+{
+  "id": "G1-COUNT-081-S1",
+  "grade": 1,
+  "topic": "spatial_reasoning_3d",
+  "subtopic": "scaffolded_step_down",
+  "subskills": [
+    "top_view_projection"
+  ],
+  "difficulty": 4,
+  "tier": "challenge",
+  "parent_id": "G1-COUNT-081",
+  "step_index": 1,
+  "stem_template": "A big plate is on the table. A smaller plate sits on top. You look down from above. How many plates can you see?",
+  "visual": null,
+  "answer_type": "multiple_choice",
+  "params": {},
+  "answer_formula": "2",
+  "distractors": [
+    {
+      "formula": "1",
+      "label": "only_top"
+    },
+    {
+      "formula": "3",
+      "label": "guessed_more"
+    }
+  ],
+  "misconceptions": [],
+  "visual_manifest": {
+    "art_brief": "Side view of 2 plates stacked (big on bottom, small on top). An arrow shows 'look from above'.",
+    "alt_text": "Two stacked plates of different sizes."
+  },
+  "tags": [
+    "step_down"
+  ],
+  "est_time_seconds": 20,
+  "version": 1,
+  "author": "AP",
+  "status": "draft"
+}

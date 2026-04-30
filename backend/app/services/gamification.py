@@ -1212,6 +1212,8 @@ class GamificationState:
     completed_genesis: bool = False        # Whether genesis onboarding is done
     pet_name: str = "Kiwi"                 # Genesis pet name
     days_active: int = 0                   # Total days the child has been active
+    # v4 fields — per-question telemetry
+    question_history: List[Dict[str, Any]] = field(default_factory=list)  # [{qid, topic, correct, difficulty, ts}]
 
     @property
     def accuracy_percent(self) -> float:
@@ -1360,6 +1362,7 @@ class GamificationManager:
         difficulty: int = 0,
         hints_used: int = 0,
         time_taken_seconds: float = 0.0,
+        question_id: str = "",
     ) -> Dict[str, Any]:
         """Record a single answer and return any events triggered.
 
@@ -1374,6 +1377,18 @@ class GamificationManager:
         events: Dict[str, Any] = {}
 
         old_xp = state.xp_total
+
+        # Per-question telemetry
+        if question_id:
+            state.question_history.append({
+                "qid": question_id,
+                "topic": topic_id,
+                "correct": is_correct,
+                "difficulty": difficulty,
+                "hints": hints_used,
+                "time_s": round(time_taken_seconds, 1),
+                "ts": datetime.now(timezone.utc).isoformat(),
+            })
 
         # Update stats
         state.total_attempts += 1

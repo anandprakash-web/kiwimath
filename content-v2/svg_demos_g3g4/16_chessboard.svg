@@ -1,0 +1,32 @@
+<svg viewBox="0 0 300 280" xmlns="http://www.w3.org/2000/svg">
+  <rect x="50" y="40" width="40" height="40" fill="#FFFFFF" stroke="#8B7355" stroke-width="0.5"/>
+  <text x="70" y="66" text-anchor="middle" font-family="system-ui" font-size="18" fill="#333">♔</text>
+  <rect x="90" y="40" width="40" height="40" fill="#D4A574" stroke="#8B7355" stroke-width="0.5"/>
+  <rect x="130" y="40" width="40" height="40" fill="#FFFFFF" stroke="#8B7355" stroke-width="0.5"/>
+  <rect x="170" y="40" width="40" height="40" fill="#D4A574" stroke="#8B7355" stroke-width="0.5"/>
+  <rect x="210" y="40" width="40" height="40" fill="#FFFFFF" stroke="#8B7355" stroke-width="0.5"/>
+  <rect x="50" y="80" width="40" height="40" fill="#D4A574" stroke="#8B7355" stroke-width="0.5"/>
+  <rect x="90" y="80" width="40" height="40" fill="#FFFFFF" stroke="#8B7355" stroke-width="0.5"/>
+  <rect x="130" y="80" width="40" height="40" fill="#D4A574" stroke="#8B7355" stroke-width="0.5"/>
+  <rect x="132" y="82" width="36" height="36" fill="none" stroke="#FF6B6B" stroke-width="2.5" rx="3"/>
+  <rect x="170" y="80" width="40" height="40" fill="#FFFFFF" stroke="#8B7355" stroke-width="0.5"/>
+  <rect x="210" y="80" width="40" height="40" fill="#D4A574" stroke="#8B7355" stroke-width="0.5"/>
+  <rect x="50" y="120" width="40" height="40" fill="#FFFFFF" stroke="#8B7355" stroke-width="0.5"/>
+  <rect x="90" y="120" width="40" height="40" fill="#D4A574" stroke="#8B7355" stroke-width="0.5"/>
+  <rect x="130" y="120" width="40" height="40" fill="#FFFFFF" stroke="#8B7355" stroke-width="0.5"/>
+  <rect x="170" y="120" width="40" height="40" fill="#D4A574" stroke="#8B7355" stroke-width="0.5"/>
+  <rect x="172" y="122" width="36" height="36" fill="none" stroke="#FF6B6B" stroke-width="2.5" rx="3"/>
+  <rect x="210" y="120" width="40" height="40" fill="#FFFFFF" stroke="#8B7355" stroke-width="0.5"/>
+  <rect x="50" y="160" width="40" height="40" fill="#D4A574" stroke="#8B7355" stroke-width="0.5"/>
+  <rect x="90" y="160" width="40" height="40" fill="#FFFFFF" stroke="#8B7355" stroke-width="0.5"/>
+  <rect x="130" y="160" width="40" height="40" fill="#D4A574" stroke="#8B7355" stroke-width="0.5"/>
+  <rect x="170" y="160" width="40" height="40" fill="#FFFFFF" stroke="#8B7355" stroke-width="0.5"/>
+  <rect x="210" y="160" width="40" height="40" fill="#D4A574" stroke="#8B7355" stroke-width="0.5"/>
+  <rect x="50" y="200" width="40" height="40" fill="#FFFFFF" stroke="#8B7355" stroke-width="0.5"/>
+  <rect x="90" y="200" width="40" height="40" fill="#D4A574" stroke="#8B7355" stroke-width="0.5"/>
+  <rect x="130" y="200" width="40" height="40" fill="#FFFFFF" stroke="#8B7355" stroke-width="0.5"/>
+  <rect x="170" y="200" width="40" height="40" fill="#D4A574" stroke="#8B7355" stroke-width="0.5"/>
+  <rect x="210" y="200" width="40" height="40" fill="#FFFFFF" stroke="#8B7355" stroke-width="0.5"/>
+  <text x="230" y="226" text-anchor="middle" font-family="system-ui" font-size="18" fill="#333">♚</text>
+  <rect x="50" y="40" width="200" height="200" fill="none" stroke="#5D4E37" stroke-width="2"/>
+</svg>

@@ -1,0 +1,11 @@
+<svg viewBox="0 0 260 105" xmlns="http://www.w3.org/2000/svg" font-family="system-ui">
+<text x="30" y="50" text-anchor="middle" font-size="30" fill="#2C3E50" font-weight="bold">A</text>
+<text x="30" y="75" text-anchor="middle" font-size="10" fill="#333">A</text>
+<text x="85" y="50" text-anchor="middle" font-size="30" fill="#2C3E50" font-weight="bold">H</text>
+<text x="85" y="75" text-anchor="middle" font-size="10" fill="#333">B</text>
+<text x="140" y="50" text-anchor="middle" font-size="30" fill="#2C3E50" font-weight="bold">X</text>
+<text x="140" y="75" text-anchor="middle" font-size="10" fill="#333">C</text>
+<text x="195" y="50" text-anchor="middle" font-size="30" fill="#2C3E50" font-weight="bold">T</text>
+<text x="195" y="75" text-anchor="middle" font-size="10" fill="#333">D</text>
+<text x="110" y="95" text-anchor="middle" font-size="10" fill="#FF6B6B">Which has exactly 2 lines of symmetry?</text>
+</svg>

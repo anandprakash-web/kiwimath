@@ -1,0 +1,31 @@
+{
+  "id": "G1-SHAPE-001-S2",
+  "grade": 1,
+  "topic": "shapes_folding_symmetry",
+  "subtopic": "scaffolded_step_down",
+  "subskills": ["guided_shape_recognition"],
+  "difficulty": 1,
+  "tier": "warmup",
+  "parent_id": "G1-SHAPE-001",
+  "step_index": 2,
+  "stem_template": "This shape has 3 sides. Is it a triangle or a square?",
+  "visual": null,
+  "answer_type": "multiple_choice",
+  "params": {},
+  "derived": {},
+  "answer_formula": "'Triangle'",
+  "distractors": [
+    {"formula": "'Square'", "label": "wrong_shape"},
+    {"formula": "'Circle'", "label": "wrong_shape_circle"}
+  ],
+  "misconceptions": [],
+  "visual_manifest": {
+    "art_brief": "A large friendly triangle with the number 3 next to it and arrows pointing to each side.",
+    "alt_text": "A triangle with 3 sides labelled."
+  },
+  "tags": ["step_down"],
+  "est_time_seconds": 10,
+  "version": 1,
+  "author": "acad-v2",
+  "status": "approved"
+}

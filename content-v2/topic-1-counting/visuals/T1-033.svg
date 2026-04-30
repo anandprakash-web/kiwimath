@@ -1,0 +1,15 @@
+<svg viewBox="0 0 400 106" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="28" cy="24" r="14" fill="#ff9800" stroke="white" stroke-width="1.5"/>
+<circle cx="66" cy="24" r="14" fill="#ff9800" stroke="white" stroke-width="1.5"/>
+<circle cx="104" cy="24" r="14" fill="#ff9800" stroke="white" stroke-width="1.5"/>
+<circle cx="142" cy="24" r="14" fill="#ff9800" stroke="white" stroke-width="1.5"/>
+<circle cx="180" cy="24" r="14" fill="#ff9800" stroke="white" stroke-width="1.5"/>
+<circle cx="218" cy="24" r="14" fill="#ff9800" stroke="white" stroke-width="1.5"/>
+<circle cx="256" cy="24" r="14" fill="#ff9800" stroke="white" stroke-width="1.5"/>
+<circle cx="294" cy="24" r="14" fill="#ff9800" stroke="white" stroke-width="1.5"/>
+<circle cx="332" cy="24" r="14" fill="#ff9800" stroke="white" stroke-width="1.5"/>
+<circle cx="370" cy="24" r="14" fill="#ff9800" stroke="white" stroke-width="1.5"/>
+<circle cx="28" cy="62" r="14" fill="#ff9800" stroke="white" stroke-width="1.5"/>
+
+  <text x="200.0" y="102" text-anchor="middle" font-family="system-ui" font-size="10" fill="#666">Count: pencils</text>
+</svg>

@@ -1,0 +1,91 @@
+{
+  "id": "G1-SHAPE-001",
+  "grade": 1,
+  "topic": "shapes_folding_symmetry",
+  "subtopic": "identify_2d_shapes",
+  "subskills": ["shape_recognition", "side_counting"],
+  "difficulty": 1,
+  "tier": "warmup",
+  "source_inspiration": "Academic cofounder L1 — identify basic 2D shapes by sides",
+
+  "pedagogy": "cpa_pictorial",
+
+  "stem_template": "Which shape has {N} sides?",
+  "answer_type": "multiple_choice",
+
+  "interaction": {
+    "type": "multiple_choice_visual",
+    "correct_option_index": null,
+    "fallback_type": "multiple_choice"
+  },
+
+  "visual": {
+    "type": "svg_generator",
+    "generator": "shape_options",
+    "params": {"target_sides": "{N}"}
+  },
+  "visual_manifest": {
+    "art_brief": "Four shapes displayed as answer options: a triangle, a square, a circle, and a rectangle. Each shape is colourful and clearly drawn.",
+    "alt_text": "Four shapes: triangle, square, circle, rectangle.",
+    "style": "warm_cartoon",
+    "layout_hint": "grid_2x2",
+    "visual_type": "illustration"
+  },
+
+  "params": {
+    "N": {"pool": [3, 4, 0]}
+  },
+  "derived": {},
+
+  "answer_formula": "'Triangle' if N==3 else ('Square' if N==4 else 'Circle')",
+  "distractors": [
+    {"formula": "'Rectangle'", "label": "confused_quadrilateral"},
+    {"formula": "'Square'",    "label": "confused_shape"},
+    {"formula": "'Circle'",    "label": "guessed_circle"}
+  ],
+
+  "misconceptions": [
+    {
+      "trigger_answer": "'Square'",
+      "diagnosis": "confused_triangle_with_square",
+      "feedback_child": "A square has 4 sides, but we need a shape with {N} sides. Count again!",
+      "step_down_path": ["G1-SHAPE-001-S1", "G1-SHAPE-001-S2"]
+    },
+    {
+      "trigger_answer": "'Rectangle'",
+      "diagnosis": "confused_with_rectangle",
+      "feedback_child": "Close! A rectangle has 4 sides too. But which shape has {N} sides?",
+      "step_down_path": ["G1-SHAPE-001-S1", "G1-SHAPE-001-S2"]
+    }
+  ],
+
+  "socratic_feedback": {
+    "on_correct": "That's right! Great shape detective work!",
+    "on_incorrect": "Not quite. Count the sides of each shape carefully.",
+    "on_timeout": "Take your time! Trace around each shape and count the straight sides.",
+    "encouragement_after_retry": "You can do it! Remember, sides are the straight edges of a shape."
+  },
+
+  "curriculum_alignment": {
+    "common_core": "1.G.A.1",
+    "cambridge_stage": 1,
+    "cambridge_strand": "Geometry: Properties of Shapes",
+    "singapore_strand": "Shapes and Spaces"
+  },
+
+  "locale_context": {
+    "IN":     {},
+    "global": {}
+  },
+
+  "mastery_config": {
+    "concept_id": "shapes.2d_basic",
+    "weight": 1.0
+  },
+
+  "tags": ["topic:shapes", "skill:shape_recognition", "cpa:pictorial"],
+  "est_time_seconds": 20,
+  "version": 1,
+  "author": "acad-v2",
+  "status": "approved"
+}

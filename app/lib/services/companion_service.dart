@@ -10,6 +10,7 @@ library;
 
 import 'dart:async';
 import 'package:flutter/foundation.dart';
+import 'dart:ui' show Color;
 import '../models/companion.dart';
 import 'api_client.dart';
 

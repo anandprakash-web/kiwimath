@@ -1,0 +1,133 @@
+{
+  "id": "G1-COUNT-057",
+  "grade": 1,
+  "topic": "counting_observation",
+  "subtopic": "selective_counting",
+  "subskills": [
+    "one_to_one_correspondence",
+    "attribute_filtering"
+  ],
+  "difficulty": 1,
+  "tier": "warmup",
+  "source_inspiration": "Kangaroo Pre-\u00c9colier \u2014 count by attribute",
+  "pedagogy": "cpa_concrete",
+  "stem_template": "How many {colour} {object} do you see? (Ignore the other colours!)",
+  "answer_type": "multiple_choice",
+  "interaction": {
+    "type": "tap_to_count",
+    "target_formula": "N",
+    "tap_targets": "target_objects",
+    "fallback_type": "multiple_choice"
+  },
+  "visual": null,
+  "visual_manifest": {
+    "art_brief": "A mix of {object} in different colours scattered on a white surface. {N} of them are {colour}. The rest ({D} of them) are {other_colour}. The {colour} ones should be clearly distinguishable.",
+    "alt_text": "{N} {colour} {object} and {D} {other_colour} {object}.",
+    "style": "warm_cartoon",
+    "layout_hint": "scattered",
+    "visual_type": "illustration"
+  },
+  "params": {
+    "N": {
+      "range": [
+        3,
+        6
+      ]
+    },
+    "D": {
+      "range": [
+        3,
+        5
+      ]
+    },
+    "colour": {
+      "pool": [
+        "red",
+        "blue",
+        "green",
+        "yellow"
+      ]
+    },
+    "other_colour": {
+      "pool": [
+        "grey",
+        "white",
+        "brown"
+      ]
+    },
+    "object": {
+      "pool": [
+        "buttons",
+        "beads",
+        "balloons",
+        "blocks"
+      ]
+    }
+  },
+  "derived": {
+    "target_objects": "colour + object"
+  },
+  "answer_formula": "N",
+  "distractors": [
+    {
+      "formula": "N + D",
+      "label": "counted_all"
+    },
+    {
+      "formula": "D",
+      "label": "counted_wrong_colour"
+    },
+    {
+      "formula": "N + 1",
+      "label": "over_count"
+    }
+  ],
+  "misconceptions": [
+    {
+      "trigger_answer": "N + D",
+      "diagnosis": "counted_all_colours",
+      "feedback_child": "You counted ALL the {object}! We only want the {colour} ones.",
+      "step_down_path": [
+        "G1-COUNT-057-S1"
+      ]
+    },
+    {
+      "trigger_answer": "D",
+      "diagnosis": "counted_wrong_colour",
+      "feedback_child": "Those are the {other_colour} ones! Look for the {colour} {object}.",
+      "step_down_path": [
+        "G1-COUNT-057-S1"
+      ]
+    },
+    {
+      "trigger_answer": "N + 1",
+      "diagnosis": "included_one_wrong_colour",
+      "feedback_child": "One of those isn't {colour}! Check each one's colour carefully.",
+      "step_down_path": [
+        "G1-COUNT-057-S1"
+      ]
+    }
+  ],
+  "socratic_feedback": {
+    "on_correct": "You found all {N} {colour} ones! Great at spotting colours!",
+    "on_over_count": "Careful \u2014 some of those aren't {colour}. Only tap the {colour} ones.",
+    "on_under_count": "There might be one more {colour} {object} hiding. Look again!",
+    "encouragement_after_retry": "Look for the {colour} ones first, then count just those."
+  },
+  "curriculum_alignment": {
+    "common_core": "K.CC.B.5",
+    "cambridge_stage": 1,
+    "cambridge_strand": "Thinking and Working Mathematically: Classifying",
+    "singapore_strand": "Whole Numbers",
+    "kangaroo_level": "Felix"
+  },
+  "tags": [
+    "topic:counting",
+    "skill:selective_count",
+    "cpa:concrete"
+  ],
+  "est_time_seconds": 25,
+  "version": 1,
+  "author": "AP",
+  "status": "draft"
+}

@@ -1,0 +1,40 @@
+{
+  "id": "G1-COUNT-080-S1",
+  "grade": 1,
+  "topic": "spatial_reasoning_3d",
+  "subtopic": "scaffolded_step_down",
+  "subskills": [
+    "lateral_inversion"
+  ],
+  "difficulty": 4,
+  "tier": "challenge",
+  "parent_id": "G1-COUNT-080",
+  "step_index": 1,
+  "stem_template": "Raise your left hand. Look in a mirror. Which hand does your reflection raise?",
+  "visual": null,
+  "answer_type": "multiple_choice",
+  "params": {},
+  "answer_formula": "'right'",
+  "distractors": [
+    {
+      "formula": "'left'",
+      "label": "no_flip"
+    },
+    {
+      "formula": "'both'",
+      "label": "confused"
+    }
+  ],
+  "misconceptions": [],
+  "visual_manifest": {
+    "art_brief": "A child raising their left hand, facing a mirror. The reflection shows the opposite hand raised.",
+    "alt_text": "Mirror reflection of a child raising a hand."
+  },
+  "tags": [
+    "step_down"
+  ],
+  "est_time_seconds": 20,
+  "version": 1,
+  "author": "AP",
+  "status": "draft"
+}

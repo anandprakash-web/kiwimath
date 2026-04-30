@@ -1,0 +1,54 @@
+{
+  "id": "G1-COUNT-050-S2",
+  "grade": 1,
+  "topic": "counting_observation",
+  "subtopic": "scaffolded_step_down",
+  "subskills": [
+    "guided_counting"
+  ],
+  "difficulty": 1,
+  "tier": "warmup",
+  "parent_id": "G1-COUNT-050",
+  "step_index": 2,
+  "stem_template": "Point to each {object} as you count. 1... 2... what comes next?",
+  "visual": null,
+  "answer_type": "multiple_choice",
+  "params": {
+    "N": {
+      "range": [
+        3,
+        3
+      ]
+    },
+    "object": {
+      "pool": [
+        "apples",
+        "marbles",
+        "stickers"
+      ]
+    }
+  },
+  "answer_formula": "N",
+  "distractors": [
+    {
+      "formula": "N - 1",
+      "label": "under_count"
+    },
+    {
+      "formula": "N + 1",
+      "label": "over_count"
+    }
+  ],
+  "misconceptions": [],
+  "visual_manifest": {
+    "art_brief": "{N} {object} in a neat row with numbers 1, 2 shown above the first two.",
+    "alt_text": "{N} {object} being counted."
+  },
+  "tags": [
+    "step_down"
+  ],
+  "est_time_seconds": 15,
+  "version": 1,
+  "author": "AP",
+  "status": "draft"
+}

@@ -1,0 +1,102 @@
+{
+  "id": "G1-COUNT-061",
+  "grade": 1,
+  "topic": "counting_observation",
+  "subtopic": "comparing_groups",
+  "subskills": [
+    "comparison_more_fewer",
+    "one_to_one_correspondence"
+  ],
+  "difficulty": 1,
+  "tier": "warmup",
+  "source_inspiration": "Cambridge Nn8 \u2014 compare using more/fewer",
+  "pedagogy": "cpa_concrete",
+  "stem_template": "Which plate has MORE {object}?",
+  "answer_type": "multiple_choice",
+  "interaction": {
+    "type": "multiple_choice_visual",
+    "correct_option_index": 0,
+    "fallback_type": "multiple_choice"
+  },
+  "visual": null,
+  "visual_manifest": {
+    "art_brief": "Two plates side by side. Left plate has {A} {object}. Right plate has {B} {object}. Objects should be clearly countable. The plate with more should be obvious after counting.",
+    "alt_text": "Left plate: {A} {object}. Right plate: {B} {object}.",
+    "style": "warm_cartoon",
+    "layout_hint": "side_by_side",
+    "visual_type": "illustration"
+  },
+  "params": {
+    "A": {
+      "range": [
+        4,
+        8
+      ]
+    },
+    "B": {
+      "range": [
+        2,
+        4
+      ],
+      "constraint": "B < A"
+    },
+    "object": {
+      "pool": [
+        "strawberries",
+        "grapes",
+        "blueberries",
+        "cherries"
+      ]
+    }
+  },
+  "derived": {},
+  "answer_formula": "A",
+  "distractors": [
+    {
+      "formula": "B",
+      "label": "chose_fewer"
+    },
+    {
+      "formula": "A + B",
+      "label": "added_both"
+    }
+  ],
+  "misconceptions": [
+    {
+      "trigger_answer": "B",
+      "diagnosis": "confused_more_fewer",
+      "feedback_child": "That plate has fewer! MORE means the bigger group.",
+      "step_down_path": [
+        "G1-COUNT-061-S1"
+      ]
+    },
+    {
+      "trigger_answer": "A + B",
+      "diagnosis": "added_both_plates",
+      "feedback_child": "We're comparing, not adding! Which plate has the bigger pile?",
+      "step_down_path": [
+        "G1-COUNT-061-S1"
+      ]
+    }
+  ],
+  "socratic_feedback": {
+    "on_correct": "That's the bigger group! {A} is more than {B}.",
+    "incorrect_selection": "Count each plate separately. Which number is bigger?",
+    "encouragement_after_retry": "Line them up in your mind \u2014 which row goes further?"
+  },
+  "curriculum_alignment": {
+    "common_core": "K.CC.C.6",
+    "cambridge_stage": 1,
+    "cambridge_strand": "Number: Comparing",
+    "singapore_strand": "Whole Numbers"
+  },
+  "tags": [
+    "topic:counting",
+    "skill:comparison",
+    "cpa:concrete"
+  ],
+  "est_time_seconds": 20,
+  "version": 1,
+  "author": "AP",
+  "status": "draft"
+}

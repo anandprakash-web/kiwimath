@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 282 100">
+  <rect width="282" height="100" fill="#FFFBF5" rx="12"/>
+  <circle cx="30" cy="35" r="9" fill="#DDD"/>
+  <line x1="21" y1="26" x2="39" y2="44" stroke="#E53935" stroke-width="2"/>
+  <circle cx="52" cy="35" r="9" fill="#DDD"/>
+  <line x1="43" y1="26" x2="61" y2="44" stroke="#E53935" stroke-width="2"/>
+  <circle cx="74" cy="35" r="9" fill="#DDD"/>
+  <line x1="65" y1="26" x2="83" y2="44" stroke="#E53935" stroke-width="2"/>
+  <circle cx="96" cy="35" r="9" fill="#DDD"/>
+  <line x1="87" y1="26" x2="105" y2="44" stroke="#E53935" stroke-width="2"/>
+  <circle cx="118" cy="35" r="9" fill="#DDD"/>
+  <line x1="109" y1="26" x2="127" y2="44" stroke="#E53935" stroke-width="2"/>
+  <circle cx="140" cy="35" r="9" fill="#DDD"/>
+  <line x1="131" y1="26" x2="149" y2="44" stroke="#E53935" stroke-width="2"/>
+  <circle cx="162" cy="35" r="9" fill="#DDD"/>
+  <line x1="153" y1="26" x2="171" y2="44" stroke="#E53935" stroke-width="2"/>
+  <circle cx="184" cy="35" r="9" fill="#DDD"/>
+  <line x1="175" y1="26" x2="193" y2="44" stroke="#E53935" stroke-width="2"/>
+  <circle cx="206" cy="35" r="9" fill="#FF6B6B"/>
+  <circle cx="228" cy="35" r="9" fill="#FF6B6B"/>
+  <circle cx="30" cy="60" r="9" fill="#FF6B6B"/>
+  <text x="141" y="92" text-anchor="middle" font-family="Arial" font-size="11" fill="#666">11 − 8 = ?</text>
+</svg>

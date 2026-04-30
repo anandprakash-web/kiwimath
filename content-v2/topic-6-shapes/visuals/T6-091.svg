@@ -1,0 +1,12 @@
+<svg viewBox="0 0 240 200" xmlns="http://www.w3.org/2000/svg" font-family="system-ui">
+<polygon points="40,70 40,130 100,160 100,100" fill="#4ECDC4" stroke="#2C3E50" stroke-width="2"/>
+<polygon points="40,70 100,40 160,70 100,100" fill="#81E6D9" stroke="#2C3E50" stroke-width="2"/>
+<polygon points="100,100 160,70 160,130 100,160" fill="#38B2AC" stroke="#2C3E50" stroke-width="2"/>
+<text x="70" y="110" text-anchor="middle" font-size="16" fill="#2C3E50" font-weight="bold">A</text>
+<text x="100" y="78" text-anchor="middle" font-size="16" fill="#2C3E50" font-weight="bold">C</text>
+<text x="130" y="110" text-anchor="middle" font-size="16" fill="#2C3E50" font-weight="bold">B</text>
+<line x1="170" y1="130" x2="210" y2="130" stroke="#FF6B6B" stroke-width="2"/>
+<polygon points="210,126 218,130 210,134" fill="#FF6B6B"/>
+<text x="190" y="148" text-anchor="middle" font-size="10" fill="#FF6B6B">roll</text>
+<text x="120" y="185" text-anchor="middle" font-size="11" fill="#333">Cube with A, B, C — roll forward</text>
+</svg>

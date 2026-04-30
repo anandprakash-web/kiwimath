@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 100">
+  <rect width="250" height="100" fill="#FFFBF5" rx="12"/>
+  <circle cx="30" cy="35" r="9" fill="#DDD"/>
+  <line x1="21" y1="26" x2="39" y2="44" stroke="#E53935" stroke-width="2"/>
+  <circle cx="52" cy="35" r="9" fill="#DDD"/>
+  <line x1="43" y1="26" x2="61" y2="44" stroke="#E53935" stroke-width="2"/>
+  <circle cx="74" cy="35" r="9" fill="#DDD"/>
+  <line x1="65" y1="26" x2="83" y2="44" stroke="#E53935" stroke-width="2"/>
+  <circle cx="96" cy="35" r="9" fill="#DDD"/>
+  <line x1="87" y1="26" x2="105" y2="44" stroke="#E53935" stroke-width="2"/>
+  <circle cx="118" cy="35" r="9" fill="#DDD"/>
+  <line x1="109" y1="26" x2="127" y2="44" stroke="#E53935" stroke-width="2"/>
+  <text x="125" y="92" text-anchor="middle" font-family="Arial" font-size="11" fill="#666">5 − 5 = ?</text>
+</svg>

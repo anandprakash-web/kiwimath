@@ -1,0 +1,11 @@
+<svg viewBox="0 0 200 185" xmlns="http://www.w3.org/2000/svg" font-family="system-ui">
+<polygon points="100,15 20,145 180,145" fill="#FFF9C4" stroke="#2C3E50" stroke-width="2"/>
+<line x1="60" y1="80" x2="140" y2="80" stroke="#2C3E50" stroke-width="1.5"/>
+<line x1="60" y1="80" x2="100" y2="145" stroke="#2C3E50" stroke-width="1.5"/>
+<line x1="140" y1="80" x2="100" y2="145" stroke="#2C3E50" stroke-width="1.5"/>
+<text x="100" y="60" text-anchor="middle" font-size="10" fill="#FF6B6B">1</text>
+<text x="70" y="120" text-anchor="middle" font-size="10" fill="#4ECDC4">2</text>
+<text x="100" y="130" text-anchor="middle" font-size="10" fill="#F1C40F">3</text>
+<text x="130" y="120" text-anchor="middle" font-size="10" fill="#9B59B6">4</text>
+<text x="100" y="170" text-anchor="middle" font-size="11" fill="#333">How many triangles can you count?</text>
+</svg>

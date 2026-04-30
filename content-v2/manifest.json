@@ -1,0 +1,229 @@
+{
+  "version": "2.1",
+  "schema": "kiwimath-v2",
+  "grade_range": "1-4",
+  "difficulty_range": [
+    1,
+    200
+  ],
+  "total_questions": 9720,
+  "last_updated": "2026-04-29",
+  "changelog": [
+    "2026-04-29 (pm): added 120 variety arithmetic G3-4 questions (T2-0901..T2-1020) — reduces \"What is N + M?\" template concentration from 80% → 67%.",
+    "2026-04-29: per-topic count refreshed; added difficulty_min/max, advanced/expert/olympiad buckets, and grade_distribution.",
+    "2026-04-28: Grade 3-4 content added (4-digit IDs in grade34_questions.json + 3-digit IDs 601-900 in questions.json).",
+    "2026-04-17: initial manifest for 4800 G1-2 questions."
+  ],
+  "topics": [
+    {
+      "topic_id": "counting_observation",
+      "topic_name": "Counting & Observation",
+      "folder": "topic-1-counting",
+      "files": [
+        "grade34_questions.json",
+        "questions.json"
+      ],
+      "total_questions": 1200,
+      "difficulty_min": 1,
+      "difficulty_max": 200,
+      "difficulty_distribution": {
+        "easy": 233,
+        "medium": 179,
+        "hard": 188,
+        "advanced": 181,
+        "expert": 241,
+        "olympiad": 178
+      },
+      "grade_distribution": {
+        "g1": 300,
+        "g2": 300,
+        "g3": 302,
+        "g4": 298
+      }
+    },
+    {
+      "topic_id": "arithmetic_missing_numbers",
+      "topic_name": "Arithmetic & Missing Numbers",
+      "folder": "topic-2-arithmetic",
+      "files": [
+        "grade34_questions.json",
+        "grade34_variety_questions.json",
+        "questions.json"
+      ],
+      "total_questions": 1320,
+      "difficulty_min": 1,
+      "difficulty_max": 200,
+      "difficulty_distribution": {
+        "easy": 218,
+        "medium": 170,
+        "hard": 212,
+        "advanced": 216,
+        "expert": 294,
+        "olympiad": 210
+      },
+      "grade_distribution": {
+        "g1": 300,
+        "g2": 300,
+        "g3": 363,
+        "g4": 357
+      }
+    },
+    {
+      "topic_id": "patterns_sequences",
+      "topic_name": "Patterns & Sequences",
+      "folder": "topic-3-patterns",
+      "files": [
+        "grade34_questions.json",
+        "questions.json"
+      ],
+      "total_questions": 1200,
+      "difficulty_min": 1,
+      "difficulty_max": 200,
+      "difficulty_distribution": {
+        "easy": 206,
+        "medium": 180,
+        "hard": 214,
+        "advanced": 181,
+        "expert": 241,
+        "olympiad": 178
+      },
+      "grade_distribution": {
+        "g1": 300,
+        "g2": 300,
+        "g3": 302,
+        "g4": 298
+      }
+    },
+    {
+      "topic_id": "logic_ordering",
+      "topic_name": "Logic & Ordering",
+      "folder": "topic-4-logic",
+      "files": [
+        "grade34_questions.json",
+        "questions.json"
+      ],
+      "total_questions": 1200,
+      "difficulty_min": 1,
+      "difficulty_max": 200,
+      "difficulty_distribution": {
+        "easy": 210,
+        "medium": 201,
+        "hard": 189,
+        "advanced": 181,
+        "expert": 241,
+        "olympiad": 178
+      },
+      "grade_distribution": {
+        "g1": 300,
+        "g2": 300,
+        "g3": 302,
+        "g4": 298
+      }
+    },
+    {
+      "topic_id": "spatial_reasoning_3d",
+      "topic_name": "Spatial Reasoning & 3D",
+      "folder": "topic-5-spatial",
+      "files": [
+        "grade34_questions.json",
+        "questions.json"
+      ],
+      "total_questions": 1200,
+      "difficulty_min": 1,
+      "difficulty_max": 200,
+      "difficulty_distribution": {
+        "easy": 118,
+        "medium": 394,
+        "hard": 88,
+        "advanced": 181,
+        "expert": 241,
+        "olympiad": 178
+      },
+      "grade_distribution": {
+        "g1": 300,
+        "g2": 300,
+        "g3": 302,
+        "g4": 298
+      }
+    },
+    {
+      "topic_id": "shapes_folding_symmetry",
+      "topic_name": "Shapes, Folding & Symmetry",
+      "folder": "topic-6-shapes",
+      "files": [
+        "grade34_questions.json",
+        "questions.json"
+      ],
+      "total_questions": 1200,
+      "difficulty_min": 1,
+      "difficulty_max": 200,
+      "difficulty_distribution": {
+        "easy": 171,
+        "medium": 288,
+        "hard": 141,
+        "advanced": 181,
+        "expert": 241,
+        "olympiad": 178
+      },
+      "grade_distribution": {
+        "g1": 300,
+        "g2": 300,
+        "g3": 302,
+        "g4": 298
+      }
+    },
+    {
+      "topic_id": "word_problems_stories",
+      "topic_name": "Word Problems & Stories",
+      "folder": "topic-7-word-problems",
+      "files": [
+        "grade34_questions.json",
+        "questions.json"
+      ],
+      "total_questions": 1200,
+      "difficulty_min": 1,
+      "difficulty_max": 200,
+      "difficulty_distribution": {
+        "easy": 160,
+        "medium": 304,
+        "hard": 136,
+        "advanced": 181,
+        "expert": 241,
+        "olympiad": 178
+      },
+      "grade_distribution": {
+        "g1": 300,
+        "g2": 300,
+        "g3": 302,
+        "g4": 298
+      }
+    },
+    {
+      "topic_id": "number_puzzles_games",
+      "topic_name": "Number Puzzles & Games",
+      "folder": "topic-8-puzzles",
+      "files": [
+        "grade34_questions.json",
+        "questions.json"
+      ],
+      "total_questions": 1200,
+      "difficulty_min": 1,
+      "difficulty_max": 200,
+      "difficulty_distribution": {
+        "easy": 144,
+        "medium": 295,
+        "hard": 161,
+        "advanced": 181,
+        "expert": 241,
+        "olympiad": 178
+      },
+      "grade_distribution": {
+        "g1": 300,
+        "g2": 300,
+        "g3": 302,
+        "g4": 298
+      }
+    }
+  ],
+  "questions": []
+}

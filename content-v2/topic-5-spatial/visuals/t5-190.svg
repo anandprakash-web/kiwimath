@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <rect width="200" height="200" fill="#f0f4f8" rx="12"/>
+  <text x="100" y="28" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#333">Math Challenge</text>
+  <circle cx="30" cy="90" r="16" fill="#85C1E9" stroke="#333" stroke-width="1.5"/>
+  <text x="30" y="95" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" font-weight="bold" fill="#333">+</text>
+  <circle cx="65" cy="90" r="16" fill="#DDA0DD" stroke="#333" stroke-width="1.5"/>
+  <text x="65" y="95" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" font-weight="bold" fill="#333">-</text>
+  <circle cx="100" cy="90" r="16" fill="#DDA0DD" stroke="#333" stroke-width="1.5"/>
+  <text x="100" y="95" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" font-weight="bold" fill="#333">×</text>
+  <circle cx="135" cy="90" r="16" fill="#96CEB4" stroke="#333" stroke-width="1.5"/>
+  <text x="135" y="95" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" font-weight="bold" fill="#333">=</text>
+  <circle cx="170" cy="90" r="16" fill="#D5DBDB" stroke="#333" stroke-width="1.5"/>
+  <text x="170" y="95" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" font-weight="bold" fill="#333">?</text>
+</svg>

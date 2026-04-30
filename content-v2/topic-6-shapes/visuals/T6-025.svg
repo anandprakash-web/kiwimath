@@ -1,0 +1,10 @@
+<svg viewBox="0 -15 280 170" xmlns="http://www.w3.org/2000/svg" font-family="system-ui">
+<polygon points="30,70 30,130 90,160 90,100" fill="#4ECDC4" stroke="#2C3E50" stroke-width="1.5"/>
+<polygon points="30,70 90,40 150,70 90,100" fill="#81E6D9" stroke="#2C3E50" stroke-width="1.5"/>
+<polygon points="90,100 150,70 150,130 90,160" fill="#38B2AC" stroke="#2C3E50" stroke-width="1.5"/>
+<line x1="90" y1="0" x2="90" y2="30" stroke="#FF6B6B" stroke-width="2"/>
+<polygon points="86,30 94,30 90,38" fill="#FF6B6B"/>
+<text x="90" y="-5" text-anchor="middle" font-size="9" fill="#FF6B6B">view from above</text>
+<rect x="190" y="55" width="60" height="60" fill="#81E6D9" stroke="#2C3E50" stroke-width="2"/>
+<text x="220" y="135" text-anchor="middle" font-size="10" fill="#333">Top view = ?</text>
+</svg>
