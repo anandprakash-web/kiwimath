@@ -1,0 +1,5 @@
+<svg viewBox="0 0 260 150" xmlns="http://www.w3.org/2000/svg">
+<rect width="260" height="150" fill="#FFFEF5" rx="8"/>
+<text x="130" y="18" text-anchor="middle" font-size="9" font-weight="bold" fill="#2C3E50">Lines of Symmetry</text>
+<polygon points="130,30 70,120 190,120" fill="#AED6F1" stroke="#2C3E50" stroke-width="2"/>
+<line x1="130" y1="25" x2="130" y2="125" stroke="#E74C3C" stroke-width="1" stroke-dasharray="4"/></svg>

@@ -1,0 +1,10 @@
+<svg viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+  <rect width="200" height="120" fill="#FFF5F5" rx="5"/>
+  <circle cx="100" cy="55" r="40" fill="#FFEAA7" stroke="#333" stroke-width="1.5"/>
+  <line x1="100" y1="15" x2="100" y2="95" stroke="#333" stroke-width="1.5"/>
+  <line x1="60" y1="55" x2="140" y2="55" stroke="#333" stroke-width="1.5"/>
+  <path d="M100,55 L100,15 A40,40 0 0,1 140,55 Z" fill="#96CEB4" opacity="0.4"/>
+  <path d="M100,55 L140,55 A40,40 0 0,1 100,95 Z" fill="#96CEB4" opacity="0.4"/>
+  <path d="M100,55 L100,95 A40,40 0 0,1 60,55 Z" fill="#96CEB4" opacity="0.4"/>
+  <text x="100" y="110" text-anchor="middle" font-size="8" fill="#333">¾ shaded</text>
+</svg>

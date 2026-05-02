@@ -29,6 +29,7 @@ from app.services.adaptive_engine_v2 import engine_v2, theta_to_difficulty, diff
 from app.services.gamification import gamification
 from app.services.cluster_mastery_store import record_cluster_attempt, get_cluster_mastery, get_mastered_clusters
 from app.services.session_planner import plan_session, SessionPlan
+from app.services.mistake_tracker import mistake_tracker
 
 router = APIRouter(prefix="/v2", tags=["v2"])
 
@@ -77,6 +78,13 @@ class TopicOut(BaseModel):
     difficulty_distribution: Dict[str, int]
 
 
+class ChapterOut(BaseModel):
+    id: str
+    name: str
+    question_count: int
+    topics: List[str] = Field(default_factory=list)
+
+
 class HintLadderOut(BaseModel):
     """Socratic 6-level hint ladder."""
     level_0: str
@@ -90,7 +98,7 @@ class HintLadderOut(BaseModel):
 class QuestionOutV2(BaseModel):
     question_id: str
     stem: str
-    choices: List[str]
+    choices: List[str] = Field(default_factory=list)
     difficulty_score: int
     difficulty_tier: str
     visual_svg: Optional[str] = None
@@ -103,11 +111,18 @@ class QuestionOutV2(BaseModel):
     correct_answer: int
     hint: Optional[str] = None
     hint_ladder: Optional[HintLadderOut] = None
+    solution_steps: List[str] = Field(default_factory=list)
+    # Multi-mode interaction
+    interaction_mode: str = "mcq"  # "mcq" | "integer" | "drag_drop"
+    correct_value: Optional[int] = None  # Integer mode answer
+    drag_items: Optional[List[str]] = None  # Drag-drop items (shuffled)
 
 
 class AnswerCheckRequest(BaseModel):
     question_id: str
-    selected_answer: int = Field(..., ge=0, le=3)
+    selected_answer: int = Field(default=0, ge=0, le=3, description="MCQ: selected option index")
+    integer_answer: Optional[int] = Field(default=None, description="Integer mode: typed numeric answer")
+    drag_order: Optional[List[int]] = Field(default=None, description="Drag-drop mode: submitted ordering of items")
     user_id: str = Field(default="anonymous", description="Student ID for adaptive tracking")
     time_taken_ms: int = Field(default=0, ge=0, description="Time taken to answer in ms")
     hints_used: int = Field(default=0, ge=0, le=5, description="Highest hint level viewed (0-2 for 3-level, legacy 0-5 still accepted)")
@@ -172,10 +187,16 @@ def _to_response(q: QuestionV2) -> QuestionOutV2:
             level_5=ladder.level_5,
         )
 
+    # For drag_drop, shuffle items and DON'T send correct_order to client
+    drag_items = None
+    if q.interaction_mode == "drag_drop" and q.drag_items:
+        import random
+        drag_items = q.drag_items[:]  # Send items (frontend shuffles on display)
+
     return QuestionOutV2(
         question_id=q.id,
         stem=q.stem,
-        choices=q.choices,
+        choices=q.choices if q.interaction_mode == "mcq" else [],
         difficulty_score=q.difficulty_score,
         difficulty_tier=q.difficulty_tier,
         visual_svg=f"/v2/questions/{q.id}/visual" if q.visual_svg else None,
@@ -186,6 +207,10 @@ def _to_response(q: QuestionV2) -> QuestionOutV2:
         correct_answer=q.correct_answer,
         hint=q.hint_text,
         hint_ladder=ladder_out,
+        solution_steps=q.solution_steps if hasattr(q, 'solution_steps') else [],
+        interaction_mode=q.interaction_mode or "mcq",
+        correct_value=q.correct_value if q.interaction_mode == "integer" else None,
+        drag_items=drag_items,
     )
 
 
@@ -207,12 +232,17 @@ _GRADE_DIFFICULTY = {
 def list_topics(
     grade: Optional[int] = Query(None, ge=1, le=6, description="Grade filter (1-6)"),
 ):
-    """List all available topics with question counts.
+    """List Olympiad/Kangaroo topics (topic-1 through topic-8) with question counts.
+
+    Only returns the 8 core Kangaroo topics. Curriculum-specific content
+    (NCERT/ICSE/IGCSE) is served via /v2/chapters instead.
 
     When `grade` is provided, total_questions and difficulty_distribution
     are scoped to the grade's difficulty range (G1: 1-50, G2: 51-100).
     """
-    topics = store_v2.topics()
+    all_topics = store_v2.topics()
+    # Filter to only Olympiad topics (topic-1 through topic-8)
+    topics = [t for t in all_topics if t.topic_id.startswith("topic-")]
     if not topics:
         raise HTTPException(status_code=404, detail="No v2 content loaded.")
 
@@ -243,6 +273,30 @@ def list_topics(
     return result
 
 
+@router.get("/chapters", response_model=List[ChapterOut])
+def list_chapters(
+    grade: int = Query(..., ge=1, le=6, description="Grade (1-6)"),
+    curriculum: str = Query(..., description="Curriculum: ncert, icse, igcse"),
+):
+    """List ordered chapters for a curriculum + grade combination.
+
+    Returns chapters with question counts, extracted from loaded content.
+    Use for NCERT/ICSE/IGCSE — Olympiad uses /v2/topics instead.
+    """
+    chapters = store_v2.get_chapters(curriculum, grade)
+    if not chapters:
+        return []
+    return [
+        ChapterOut(
+            id=ch["id"],
+            name=ch["name"],
+            question_count=ch["question_count"],
+            topics=ch["topics"],
+        )
+        for ch in chapters
+    ]
+
+
 @router.get("/questions/next", response_model=QuestionOutV2)
 def next_question(
     topic: Optional[str] = Query(None, description="Topic ID filter"),
@@ -251,6 +305,8 @@ def next_question(
     exclude: Optional[str] = Query(None, description="Comma-separated question IDs to exclude"),
     user_id: Optional[str] = Query(None, description="Student ID for adaptive selection"),
     grade: Optional[int] = Query(None, ge=1, le=6, description="Grade filter (1-6)"),
+    chapter: Optional[str] = Query(None, description="Curriculum chapter filter (e.g. 'Ch1: Numbers 1 to 9')"),
+    curriculum: Optional[str] = Query(None, description="Curriculum filter: ncert, icse, igcse"),
     use_learning_path: bool = Query(
         False,
         description="If true and no topic is given, follows the user's adaptive learning path "
@@ -296,6 +352,26 @@ def next_question(
     seen_clusters, mastered_clusters = {}, set()
     if user_id:
         seen_clusters, mastered_clusters = _get_cluster_state(user_id)
+
+    # ─── IRT for curriculum chapters ───────────────────────────────────
+    # When chapter + curriculum are provided, build the candidate pool from
+    # curriculum questions and run IRT selection over that pool.
+    if user_id and chapter and curriculum and grade:
+        pool = store_v2.get_curriculum_questions(curriculum, grade, chapter)
+        if pool:
+            # Use a stable topic_id for ability tracking: curriculum_g{grade}_{chapter}
+            chapter_topic_id = f"{curriculum.lower()}_g{grade}_{chapter}"
+            q = engine_v2.select_question(
+                user_id=user_id,
+                topic_id=chapter_topic_id,
+                available_questions=pool,
+                exclude_ids=exclude_ids,
+                exclude_clusters=list(mastered_clusters),
+                seen_clusters=seen_clusters,
+            )
+            if q:
+                return _to_response(q)
+            # If IRT couldn't pick (e.g. all excluded), fall through to basic selector
 
     # If we have a user_id and topic, use the smart adaptive selector
     if user_id and eff_topic:
@@ -369,8 +445,18 @@ def check_answer(req: AnswerCheckRequest):
     if q is None:
         raise HTTPException(status_code=404, detail=f"Question {req.question_id} not found")
 
-    is_correct = req.selected_answer == q.correct_answer
-    feedback = q.diagnostics.get(str(req.selected_answer), "Try again!")
+    # Determine correctness based on interaction mode
+    mode = q.interaction_mode or "mcq"
+    if mode == "integer" and req.integer_answer is not None:
+        is_correct = req.integer_answer == q.correct_value
+        feedback = "Try again! Check your calculation." if not is_correct else ""
+    elif mode == "drag_drop" and req.drag_order is not None:
+        is_correct = req.drag_order == q.correct_order
+        feedback = "Not quite — try a different arrangement." if not is_correct else ""
+    else:
+        # MCQ mode (default)
+        is_correct = req.selected_answer == q.correct_answer
+        feedback = q.diagnostics.get(str(req.selected_answer), "Try again!")
 
     if is_correct:
         feedback = "Correct! Well done!"
@@ -395,6 +481,39 @@ def check_answer(req: AnswerCheckRequest):
             is_correct=is_correct,
             time_taken_ms=req.time_taken_ms,
         )
+
+        # Track mistakes for spaced revision
+        if not is_correct:
+            try:
+                mistake_tracker.record_mistake(
+                    student_id=req.user_id,
+                    question_id=q.id,
+                    topic_id=q.topic,
+                    concept_cluster=q.concept_cluster or f"{q.topic}/_default",
+                    tags=q.tags,
+                )
+            except Exception:
+                pass  # Best-effort; never fail the answer check
+
+        # Record revision result for spaced-interval tracking
+        if is_correct and q.concept_cluster:
+            try:
+                mistake_tracker.record_revision_result(
+                    student_id=req.user_id,
+                    concept_cluster=q.concept_cluster,
+                    correct=True,
+                )
+            except Exception:
+                pass
+        elif not is_correct and q.concept_cluster:
+            try:
+                mistake_tracker.record_revision_result(
+                    student_id=req.user_id,
+                    concept_cluster=q.concept_cluster,
+                    correct=False,
+                )
+            except Exception:
+                pass
 
         # Trigger gamification events (with full Kiwi Brain params)
         is_hard = q.difficulty_tier == "hard"
@@ -775,7 +894,7 @@ def _stars_from_accuracy(accuracy: float) -> int:
 @router.get("/student/levels", response_model=StudentLevelsOut)
 def student_levels(
     user_id: str = Query(..., description="Student ID"),
-    grade: int = Query(1, ge=1, le=4, description="Grade (1-4)"),
+    grade: int = Query(1, ge=1, le=6, description="Grade (1-6)"),
 ):
     """Get level progression for all topics for a student.
 
@@ -843,7 +962,7 @@ def student_levels(
             current_level=current_level,
             levels=levels,
             all_mastered=all_mastered,
-            grade_upgrade_available=all_mastered and grade < 4,
+            grade_upgrade_available=all_mastered and grade < 6,
         ))
 
     n_topics = len(topic_levels) or 1
@@ -860,10 +979,11 @@ def student_levels(
 # ---------------------------------------------------------------------------
 
 class ProfileUpdateRequest(BaseModel):
-    """Update student profile (name, grade, avatar)."""
+    """Update student profile (name, grade, avatar, curriculum)."""
     display_name: Optional[str] = Field(None, max_length=30, description="Kid's display name")
-    grade: Optional[int] = Field(None, ge=1, le=4, description="Selected grade")
+    grade: Optional[int] = Field(None, ge=1, le=6, description="Selected grade")
     avatar: Optional[str] = Field(None, description="Avatar ID")
+    curriculum: Optional[str] = Field(None, description="Curriculum: ncert, icse, igcse, olympiad")
 
 
 @router.post("/student/profile")
@@ -883,6 +1003,8 @@ def update_student_profile(
         profile_data["grade"] = req.grade
     if req.avatar is not None:
         profile_data["avatar"] = req.avatar
+    if req.curriculum is not None:
+        profile_data["curriculum"] = req.curriculum
 
     # Save to Firestore — write to 'users' collection (same as GET /user/profile reads)
     try:
@@ -895,6 +1017,8 @@ def update_student_profile(
                 updates["grade"] = req.grade
             if req.avatar is not None:
                 updates["avatar"] = req.avatar
+            if req.curriculum is not None:
+                updates["curriculum"] = req.curriculum
             if updates:
                 update_user_profile(user_id, updates)
     except Exception:
@@ -1040,4 +1164,97 @@ def mastery_overview(
         mastered_count=len(mastered_set),
         clusters=clusters_out,
         topic_mastery=topic_mastery,
+    )
+
+
+# ---------------------------------------------------------------------------
+# Spaced Revision Queue (Task: Spaced Revision System)
+# ---------------------------------------------------------------------------
+
+
+class RevisionItemOut(BaseModel):
+    """A single revision queue item for the student."""
+    concept_cluster: str
+    topic_id: str
+    tags: List[str]
+    question_id: Optional[str] = None
+    question_stem: Optional[str] = None
+    question_choices: Optional[List[str]] = None
+    question_difficulty: Optional[int] = None
+    mistake_count: int
+    last_mistake_date: str
+    times_reviewed: int
+    next_review_date: Optional[str] = None
+    is_due: bool
+    mastery_status: str
+
+
+class RevisionQueueOut(BaseModel):
+    """Full revision queue response."""
+    user_id: str
+    total_pending: int
+    items: List[RevisionItemOut]
+    stats: Dict[str, Any]
+
+
+@router.get("/revision-queue/{user_id}", response_model=RevisionQueueOut)
+def get_revision_queue_endpoint(
+    user_id: str,
+    max_items: int = Query(10, ge=1, le=50, description="Max items to return"),
+    include_upcoming: bool = Query(False, description="Include items not yet due"),
+):
+    """Get the student's pending revision items with question details.
+
+    Returns items due for spaced revision based on past mistakes.
+    Each item includes the original question details so the UI can
+    render revision questions directly.
+    """
+    queue = mistake_tracker.get_revision_queue(
+        student_id=user_id,
+        max_items=max_items,
+        include_not_yet_due=include_upcoming,
+    )
+
+    items_out: List[RevisionItemOut] = []
+    for item in queue:
+        item_dict = item.to_dict()
+        # Enrich with question details from the content store
+        question_id = None
+        question_stem = None
+        question_choices = None
+        question_difficulty = None
+
+        if item.mistake_question_ids:
+            # Pick the most recent mistake question
+            qid = item.mistake_question_ids[-1]
+            q = store_v2.get(qid)
+            if q is not None:
+                question_id = q.id
+                question_stem = q.stem
+                question_choices = q.choices
+                question_difficulty = q.difficulty_score
+
+        items_out.append(RevisionItemOut(
+            concept_cluster=item.concept_cluster,
+            topic_id=item.topic_id,
+            tags=item.tags,
+            question_id=question_id,
+            question_stem=question_stem,
+            question_choices=question_choices,
+            question_difficulty=question_difficulty,
+            mistake_count=item_dict["mistake_count"],
+            last_mistake_date=item_dict["last_mistake_date"],
+            times_reviewed=item_dict["times_reviewed"],
+            next_review_date=item_dict["next_review_date"],
+            is_due=item_dict["is_due"],
+            mastery_status=item_dict["mastery_status"],
+        ))
+
+    stats = mistake_tracker.get_revision_stats(user_id)
+
+    return RevisionQueueOut(
+        user_id=user_id,
+        total_pending=stats.get("due_now", 0),
+        items=items_out,
+        stats=stats,
     )

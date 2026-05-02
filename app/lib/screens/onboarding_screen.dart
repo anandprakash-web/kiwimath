@@ -33,11 +33,13 @@ class OnboardingScreen extends StatefulWidget {
 enum _OnboardingPhase {
   welcome,
   nameInput,
+  curriculumPicker,
   gradePicker,
   loadingQuiz,
   quiz,
   submitting,
   results,
+  plan,
   error,
 }
 
@@ -46,6 +48,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
 
   _OnboardingPhase _phase = _OnboardingPhase.welcome;
   int? _grade;
+  String? _curriculum;   // ncert, icse, igcse, olympiad
   String? _error;
   String _kidName = '';
   final _nameController = TextEditingController();
@@ -56,6 +59,11 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
   int? _selectedAnswer;
   DateTime? _questionStart;
   final List<Map<String, dynamic>> _answers = [];
+
+  // Flagging state (admin diagnostic review)
+  final Set<String> _flaggedQuestions = {};
+  final Map<String, String> _flagReasons = {};
+  final Map<String, String> _flagSeverities = {};
 
   // Result state
   Map<String, dynamic>? _resultJson;
@@ -68,11 +76,21 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
     setState(() => _phase = _OnboardingPhase.nameInput);
   }
 
-  void _toGradePicker() {
+  void _toCurriculumPicker() {
     final name = _nameController.text.trim();
     if (name.isNotEmpty) {
       _kidName = name;
     }
+    setState(() => _phase = _OnboardingPhase.curriculumPicker);
+  }
+
+  void _onCurriculumSelected(String curriculum) {
+    _curriculum = curriculum;
+    setState(() => _phase = _OnboardingPhase.gradePicker);
+  }
+
+  void _toGradePicker() {
+    // Legacy path — kept for any other callers
     setState(() => _phase = _OnboardingPhase.gradePicker);
   }
 
@@ -83,7 +101,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
       _error = null;
     });
     try {
-      final qs = await _api.getBenchmarkQuestions(grade: grade, count: 10);
+      final qs = await _api.getBenchmarkQuestions(grade: grade, count: 10, userId: widget.userId);
       if (!mounted) return;
       if (qs.isEmpty) {
         setState(() {
@@ -147,6 +165,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
             userId: widget.userId,
             name: _kidName,
             grade: _grade ?? 1,
+            curriculum: _curriculum,
           );
         } catch (_) {
           // Non-fatal — profile save can retry later.
@@ -159,6 +178,25 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
         grade: _grade ?? 1,
         answers: _answers,
       );
+
+      // Submit any flagged questions to the backend review queue
+      if (_flaggedQuestions.isNotEmpty) {
+        try {
+          await _api.submitDiagnosticReview(
+            reviewerId: widget.userId,
+            flags: _flaggedQuestions.map((qid) => <String, dynamic>{
+              'question_id': qid,
+              'reason': _flagReasons[qid] ?? 'No reason given',
+              'severity': _flagSeverities[qid] ?? 'medium',
+              'grade': _grade,
+            }).toList(),
+          );
+        } catch (_) {
+          // Non-fatal — flags can be retried later
+          debugPrint('Diagnostic review submission failed, continuing.');
+        }
+      }
+
       if (!mounted) return;
       setState(() {
         _resultJson = result;
@@ -205,6 +243,8 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
         return _buildWelcome();
       case _OnboardingPhase.nameInput:
         return _buildNameInput();
+      case _OnboardingPhase.curriculumPicker:
+        return _buildCurriculumPicker();
       case _OnboardingPhase.gradePicker:
         return _buildGradePicker();
       case _OnboardingPhase.loadingQuiz:
@@ -214,6 +254,8 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
         return _buildQuiz();
       case _OnboardingPhase.results:
         return _buildResults();
+      case _OnboardingPhase.plan:
+        return _buildPlan();
       case _OnboardingPhase.error:
         return _buildError();
     }
@@ -353,13 +395,13 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                 vertical: 18,
               ),
             ),
-            onSubmitted: (_) => _toGradePicker(),
+            onSubmitted: (_) => _toCurriculumPicker(),
           ),
           const Spacer(),
           SizedBox(
             width: double.infinity,
             child: ElevatedButton(
-              onPressed: _toGradePicker,
+              onPressed: _toCurriculumPicker,
               style: ElevatedButton.styleFrom(
                 backgroundColor: KiwiColors.kiwiGreen,
                 foregroundColor: Colors.white,
@@ -377,10 +419,94 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
           ),
           const SizedBox(height: 8),
           TextButton(
-            onPressed: _toGradePicker,
+            onPressed: _toCurriculumPicker,
             child: const Text(
               'Skip for now',
               style: TextStyle(fontSize: 13, color: KiwiColors.textMuted),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  // -------------------------------------------------------------------
+  // Curriculum picker
+  // -------------------------------------------------------------------
+
+  Widget _buildCurriculumPicker() {
+    final displayName = _kidName.isNotEmpty ? _kidName : 'your child';
+    final curricula = [
+      {
+        'id': 'ncert',
+        'label': 'NCERT / CBSE',
+        'icon': Icons.menu_book_rounded,
+        'color': const Color(0xFF2E7D32),
+        'subtitle': 'National curriculum',
+      },
+      {
+        'id': 'icse',
+        'label': 'ICSE',
+        'icon': Icons.school_rounded,
+        'color': const Color(0xFF1565C0),
+        'subtitle': 'CISCE curriculum',
+      },
+      {
+        'id': 'igcse',
+        'label': 'IGCSE',
+        'icon': Icons.public_rounded,
+        'color': const Color(0xFF6A1B9A),
+        'subtitle': 'Cambridge International',
+      },
+      {
+        'id': 'olympiad',
+        'label': 'Olympiad / Kangaroo',
+        'icon': Icons.emoji_events_rounded,
+        'color': const Color(0xFFFF6D00),
+        'subtitle': 'Competitive maths',
+      },
+    ];
+
+    return Padding(
+      key: const ValueKey('curriculum'),
+      padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 32),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          IconButton(
+            onPressed: () =>
+                setState(() => _phase = _OnboardingPhase.nameInput),
+            icon: const Icon(Icons.arrow_back),
+          ),
+          const SizedBox(height: 8),
+          Text(
+            'What does $displayName follow?',
+            style: const TextStyle(
+              fontSize: 24,
+              fontWeight: FontWeight.w800,
+              color: KiwiColors.textDark,
+            ),
+          ),
+          const SizedBox(height: 6),
+          const Text(
+            'Pick the curriculum your child studies.',
+            style: TextStyle(fontSize: 14, color: KiwiColors.textMid),
+          ),
+          const SizedBox(height: 24),
+          Expanded(
+            child: ListView.separated(
+              itemCount: curricula.length,
+              separatorBuilder: (_, __) => const SizedBox(height: 12),
+              itemBuilder: (context, index) {
+                final c = curricula[index];
+                return _CurriculumCard(
+                  label: c['label'] as String,
+                  subtitle: c['subtitle'] as String,
+                  icon: c['icon'] as IconData,
+                  color: c['color'] as Color,
+                  onTap: () => _onCurriculumSelected(c['id'] as String),
+                );
+              },
             ),
           ),
         ],
@@ -401,7 +527,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
         children: [
           IconButton(
             onPressed: () =>
-                setState(() => _phase = _OnboardingPhase.welcome),
+                setState(() => _phase = _OnboardingPhase.curriculumPicker),
             icon: const Icon(Icons.arrow_back),
           ),
           const SizedBox(height: 8),
@@ -443,6 +569,144 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
   // Quiz screen
   // -------------------------------------------------------------------
 
+  void _showFlagDialog(QuestionV2 q) {
+    final reasonController = TextEditingController(
+      text: _flagReasons[q.questionId] ?? '',
+    );
+    String severity = _flagSeverities[q.questionId] ?? 'medium';
+
+    showDialog(
+      context: context,
+      builder: (ctx) {
+        return StatefulBuilder(
+          builder: (ctx, setDialogState) {
+            return AlertDialog(
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(16),
+              ),
+              title: const Text(
+                'Flag this question',
+                style: TextStyle(fontSize: 18, fontWeight: FontWeight.w700),
+              ),
+              content: Column(
+                mainAxisSize: MainAxisSize.min,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    'Q: ${q.stem}',
+                    maxLines: 2,
+                    overflow: TextOverflow.ellipsis,
+                    style: const TextStyle(
+                      fontSize: 12,
+                      color: Colors.grey,
+                    ),
+                  ),
+                  const SizedBox(height: 12),
+                  TextField(
+                    controller: reasonController,
+                    maxLines: 3,
+                    decoration: InputDecoration(
+                      labelText: 'What\'s wrong?',
+                      hintText: 'e.g. Wrong answer, hint reveals answer, too easy...',
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      contentPadding: const EdgeInsets.symmetric(
+                        horizontal: 12,
+                        vertical: 10,
+                      ),
+                    ),
+                  ),
+                  const SizedBox(height: 12),
+                  const Text(
+                    'Severity',
+                    style: TextStyle(
+                      fontSize: 13,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                  const SizedBox(height: 6),
+                  Row(
+                    children: ['low', 'medium', 'high', 'critical'].map((s) {
+                      final isSelected = severity == s;
+                      final color = s == 'critical'
+                          ? Colors.red
+                          : s == 'high'
+                              ? Colors.orange
+                              : s == 'medium'
+                                  ? Colors.amber.shade700
+                                  : Colors.green;
+                      return Padding(
+                        padding: const EdgeInsets.only(right: 6),
+                        child: ChoiceChip(
+                          label: Text(
+                            s[0].toUpperCase() + s.substring(1),
+                            style: TextStyle(
+                              fontSize: 11,
+                              fontWeight: FontWeight.w600,
+                              color: isSelected ? Colors.white : color,
+                            ),
+                          ),
+                          selected: isSelected,
+                          selectedColor: color,
+                          backgroundColor: color.withOpacity(0.1),
+                          onSelected: (_) {
+                            setDialogState(() => severity = s);
+                          },
+                        ),
+                      );
+                    }).toList(),
+                  ),
+                ],
+              ),
+              actions: [
+                if (_flaggedQuestions.contains(q.questionId))
+                  TextButton(
+                    onPressed: () {
+                      setState(() {
+                        _flaggedQuestions.remove(q.questionId);
+                        _flagReasons.remove(q.questionId);
+                        _flagSeverities.remove(q.questionId);
+                      });
+                      Navigator.pop(ctx);
+                    },
+                    child: const Text(
+                      'Unflag',
+                      style: TextStyle(color: Colors.grey),
+                    ),
+                  ),
+                TextButton(
+                  onPressed: () => Navigator.pop(ctx),
+                  child: const Text('Cancel'),
+                ),
+                ElevatedButton(
+                  onPressed: () {
+                    final reason = reasonController.text.trim();
+                    if (reason.isEmpty) return;
+                    setState(() {
+                      _flaggedQuestions.add(q.questionId);
+                      _flagReasons[q.questionId] = reason;
+                      _flagSeverities[q.questionId] = severity;
+                    });
+                    Navigator.pop(ctx);
+                  },
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: const Color(0xFFE53935),
+                    foregroundColor: Colors.white,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                  ),
+                  child: const Text('Flag'),
+                ),
+              ],
+            );
+          },
+        );
+      },
+    );
+  }
+
   Widget _buildQuiz() {
     final q = _questions[_index];
     final progress = (_index + 1) / _questions.length;
@@ -466,13 +730,61 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
             ),
           ),
           const SizedBox(height: 8),
-          Text(
-            'Question ${_index + 1} of ${_questions.length}',
-            style: const TextStyle(
-              fontSize: 12,
-              color: KiwiColors.textMuted,
-              fontWeight: FontWeight.w600,
-            ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Text(
+                'Question ${_index + 1} of ${_questions.length}',
+                style: const TextStyle(
+                  fontSize: 12,
+                  color: KiwiColors.textMuted,
+                  fontWeight: FontWeight.w600,
+                ),
+              ),
+              // Flag button for admin review
+              GestureDetector(
+                onTap: () => _showFlagDialog(q),
+                child: Container(
+                  padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                  decoration: BoxDecoration(
+                    color: _flaggedQuestions.contains(q.questionId)
+                        ? const Color(0xFFFFEBEE)
+                        : const Color(0xFFF5F5F5),
+                    borderRadius: BorderRadius.circular(8),
+                    border: Border.all(
+                      color: _flaggedQuestions.contains(q.questionId)
+                          ? const Color(0xFFE53935)
+                          : Colors.grey.shade300,
+                    ),
+                  ),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Icon(
+                        _flaggedQuestions.contains(q.questionId)
+                            ? Icons.flag
+                            : Icons.flag_outlined,
+                        size: 16,
+                        color: _flaggedQuestions.contains(q.questionId)
+                            ? const Color(0xFFE53935)
+                            : Colors.grey.shade600,
+                      ),
+                      const SizedBox(width: 4),
+                      Text(
+                        _flaggedQuestions.contains(q.questionId) ? 'Flagged' : 'Flag',
+                        style: TextStyle(
+                          fontSize: 11,
+                          fontWeight: FontWeight.w600,
+                          color: _flaggedQuestions.contains(q.questionId)
+                              ? const Color(0xFFE53935)
+                              : Colors.grey.shade600,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ],
           ),
           const SizedBox(height: 16),
           Expanded(
@@ -646,6 +958,240 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
           SizedBox(
             width: double.infinity,
             child: ElevatedButton(
+              onPressed: () => setState(() => _phase = _OnboardingPhase.plan),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: KiwiColors.kiwiGreen,
+                foregroundColor: Colors.white,
+                padding: const EdgeInsets.symmetric(vertical: 18),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(16),
+                ),
+                textStyle: const TextStyle(
+                  fontSize: 17,
+                  fontWeight: FontWeight.w800,
+                ),
+              ),
+              child: const Text('See my plan'),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  // -------------------------------------------------------------------
+  // Plan — curriculum recommendation (Step 5)
+  // -------------------------------------------------------------------
+
+  Widget _buildPlan() {
+    final json = _resultJson ?? {};
+    final perTopic = (json['per_topic'] as List<dynamic>? ?? []);
+    final suggestedTopics = (json['suggested_topics'] as List<dynamic>? ?? [])
+        .map((e) => e.toString())
+        .toList();
+    final strengths = (json['strengths'] as List<dynamic>? ?? [])
+        .map((e) => e.toString())
+        .toSet();
+
+    // Determine if user selected a curriculum (not olympiad)
+    final isCurriculumUser = _curriculum != null &&
+        _curriculum!.isNotEmpty &&
+        _curriculum != 'olympiad';
+
+    // Build the recommended plan: suggested (weakest) first, then strengths
+    final topicNames = <String, String>{};
+    for (final t in perTopic) {
+      if (t is Map<String, dynamic>) {
+        topicNames[t['topic_id'] as String? ?? ''] =
+            t['topic_name'] as String? ?? '';
+      }
+    }
+
+    // Plan items: for curriculum users, show curriculum-based plan;
+    // for olympiad users, show topic-based plan from diagnostic results.
+    final planItems = <_PlanItem>[];
+
+    if (isCurriculumUser) {
+      // Curriculum users: show chapter-based learning plan
+      final curLabel = _curriculum!.toUpperCase();
+      final gradeNum = _grade ?? 1;
+      planItems.add(_PlanItem(
+        topicId: 'chapters',
+        topicName: '$curLabel Grade $gradeNum Chapters',
+        badge: 'Start here',
+        badgeColor: KiwiColors.kiwiGreen,
+        reason: 'Follow your $curLabel curriculum chapter by chapter',
+        isStrength: false,
+      ));
+      planItems.add(_PlanItem(
+        topicId: 'adaptive',
+        topicName: 'Adaptive Practice',
+        badge: 'Daily',
+        badgeColor: const Color(0xFFFF9800),
+        reason: 'Smart practice based on your diagnostic results',
+        isStrength: false,
+      ));
+      planItems.add(_PlanItem(
+        topicId: 'olympiad',
+        topicName: 'Olympiad Challenges',
+        badge: 'Bonus',
+        badgeColor: KiwiColors.indigo,
+        reason: 'Push further with Kangaroo-style puzzles',
+        isStrength: true,
+      ));
+    } else {
+      // Olympiad users: show topic-based plan from diagnostic results
+      for (int i = 0; i < suggestedTopics.length && i < 4; i++) {
+        final tid = suggestedTopics[i];
+        planItems.add(_PlanItem(
+          topicId: tid,
+          topicName: topicNames[tid] ?? _prettyTopic(tid),
+          badge: i == 0 ? 'Start here' : 'Next',
+          badgeColor: i == 0
+              ? KiwiColors.kiwiGreen
+              : const Color(0xFFFF9800),
+          reason: i == 0
+              ? 'Build confidence here first'
+              : 'Practice will boost your score',
+          isStrength: false,
+        ));
+      }
+      for (final tid in strengths.take(2)) {
+        if (!suggestedTopics.contains(tid)) {
+          planItems.add(_PlanItem(
+            topicId: tid,
+            topicName: topicNames[tid] ?? _prettyTopic(tid),
+            badge: 'Strong',
+            badgeColor: KiwiColors.indigo,
+            reason: 'Already doing great — revisit later',
+            isStrength: true,
+          ));
+        }
+      }
+    }
+
+    final nameGreet = _kidName.isNotEmpty ? ', $_kidName' : '';
+
+    return Padding(
+      key: const ValueKey('plan'),
+      padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 32),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          const SizedBox(height: 12),
+          const Text('📋', style: TextStyle(fontSize: 48)),
+          const SizedBox(height: 12),
+          Text(
+            'Your learning plan$nameGreet',
+            style: const TextStyle(
+              fontSize: 22,
+              fontWeight: FontWeight.w900,
+              color: KiwiColors.kiwiGreenDark,
+            ),
+          ),
+          const SizedBox(height: 6),
+          const Text(
+            'Based on your quiz, we recommend this path:',
+            style: TextStyle(fontSize: 14, color: KiwiColors.textMid),
+          ),
+          const SizedBox(height: 20),
+          Expanded(
+            child: ListView.separated(
+              itemCount: planItems.length,
+              separatorBuilder: (_, __) => const SizedBox(height: 10),
+              itemBuilder: (context, index) {
+                final item = planItems[index];
+                return Container(
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 14,
+                    vertical: 12,
+                  ),
+                  decoration: BoxDecoration(
+                    color: item.isStrength
+                        ? Colors.grey.shade50
+                        : Colors.white,
+                    borderRadius: BorderRadius.circular(14),
+                    border: Border.all(
+                      color: item.isStrength
+                          ? Colors.grey.shade200
+                          : item.badgeColor.withOpacity(0.3),
+                      width: 1.5,
+                    ),
+                  ),
+                  child: Row(
+                    children: [
+                      Container(
+                        width: 36,
+                        height: 36,
+                        decoration: BoxDecoration(
+                          color: item.badgeColor.withOpacity(0.12),
+                          shape: BoxShape.circle,
+                        ),
+                        child: Center(
+                          child: Text(
+                            '${index + 1}',
+                            style: TextStyle(
+                              fontSize: 16,
+                              fontWeight: FontWeight.w800,
+                              color: item.badgeColor,
+                            ),
+                          ),
+                        ),
+                      ),
+                      const SizedBox(width: 12),
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              item.topicName,
+                              style: TextStyle(
+                                fontSize: 15,
+                                fontWeight: FontWeight.w700,
+                                color: item.isStrength
+                                    ? KiwiColors.textMid
+                                    : KiwiColors.textDark,
+                              ),
+                            ),
+                            const SizedBox(height: 2),
+                            Text(
+                              item.reason,
+                              style: const TextStyle(
+                                fontSize: 12,
+                                color: KiwiColors.textMuted,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Container(
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: 10,
+                          vertical: 4,
+                        ),
+                        decoration: BoxDecoration(
+                          color: item.badgeColor.withOpacity(0.12),
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                        child: Text(
+                          item.badge,
+                          style: TextStyle(
+                            fontSize: 11,
+                            fontWeight: FontWeight.w700,
+                            color: item.badgeColor,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                );
+              },
+            ),
+          ),
+          const SizedBox(height: 16),
+          SizedBox(
+            width: double.infinity,
+            child: ElevatedButton(
               onPressed: _onFinish,
               style: ElevatedButton.styleFrom(
                 backgroundColor: KiwiColors.kiwiGreen,
@@ -659,7 +1205,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                   fontWeight: FontWeight.w800,
                 ),
               ),
-              child: const Text('Start playing'),
+              child: const Text('Start practicing!'),
             ),
           ),
         ],
@@ -672,6 +1218,16 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
   // -------------------------------------------------------------------
 
   Widget _buildError() {
+    // Sanitize error messages — never show raw API/backend text to kids.
+    String friendlyMsg;
+    final raw = _error ?? '';
+    if (raw.contains('SocketException') || raw.contains('Connection')) {
+      friendlyMsg = "Hmm, can't reach our servers. Check your internet and try again!";
+    } else if (raw.contains('No benchmark')) {
+      friendlyMsg = "We're getting your quiz ready. Try again in a moment!";
+    } else {
+      friendlyMsg = "Oops! Something didn't work. Let's try again!";
+    }
     return Padding(
       key: const ValueKey('error'),
       padding: const EdgeInsets.all(24),
@@ -679,7 +1235,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Icon(Icons.error_outline, size: 56, color: Colors.redAccent),
+            const Text('\u{1F62E}', style: TextStyle(fontSize: 56)),
             const SizedBox(height: 12),
             const Text(
               'Hmm, something went wrong',
@@ -691,14 +1247,25 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
             ),
             const SizedBox(height: 8),
             Text(
-              _error ?? 'Unknown error',
+              friendlyMsg,
               textAlign: TextAlign.center,
-              style: const TextStyle(color: KiwiColors.textMid),
+              style: const TextStyle(
+                color: KiwiColors.textMid,
+                fontSize: 14,
+                height: 1.4,
+              ),
             ),
             const SizedBox(height: 16),
-            TextButton(
+            ElevatedButton(
               onPressed: () =>
                   setState(() => _phase = _OnboardingPhase.welcome),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: KiwiColors.kiwiGreen,
+                foregroundColor: Colors.white,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(12),
+                ),
+              ),
               child: const Text('Try again'),
             ),
           ],
@@ -709,9 +1276,24 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
 
   String _prettyTopic(String topicId) {
     // counting_observation → Counting & Observation
+    const fixups = <String, String>{
+      'counting_observation': 'Counting & Observation',
+      'arithmetic_missing_numbers': 'Arithmetic & Missing Numbers',
+      'patterns_sequences': 'Patterns & Sequences',
+      'logic_ordering': 'Logic & Ordering',
+      'spatial_reasoning_3d': 'Spatial Reasoning & 3D',
+      'shapes_folding_symmetry': 'Shapes, Folding & Symmetry',
+      'word_problems_stories': 'Word Problems & Stories',
+      'number_puzzles_games': 'Number Puzzles & Games',
+    };
+    if (fixups.containsKey(topicId)) return fixups[topicId]!;
     return topicId
         .split('_')
-        .map((w) => w.isEmpty ? w : '${w[0].toUpperCase()}${w.substring(1)}')
+        .map((w) => w.isEmpty
+            ? w
+            : w == '3d'
+                ? '3D'
+                : '${w[0].toUpperCase()}${w.substring(1)}')
         .join(' ');
   }
 }
@@ -778,8 +1360,85 @@ class _GradeCard extends StatelessWidget {
       case 3: return 'ages 8–9';
       case 4: return 'ages 9–10';
       case 5: return 'ages 10–11';
+      case 6: return 'ages 11–12';
       default: return '';
     }
+  }
+}
+
+class _CurriculumCard extends StatelessWidget {
+  final String label;
+  final String subtitle;
+  final IconData icon;
+  final Color color;
+  final VoidCallback onTap;
+
+  const _CurriculumCard({
+    required this.label,
+    required this.subtitle,
+    required this.icon,
+    required this.color,
+    required this.onTap,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: onTap,
+      child: Container(
+        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 18),
+        decoration: BoxDecoration(
+          color: Colors.white,
+          borderRadius: BorderRadius.circular(16),
+          border: Border.all(color: color.withOpacity(0.3), width: 1.5),
+          boxShadow: [
+            BoxShadow(
+              color: color.withOpacity(0.08),
+              blurRadius: 12,
+              offset: const Offset(0, 4),
+            ),
+          ],
+        ),
+        child: Row(
+          children: [
+            Container(
+              width: 48,
+              height: 48,
+              decoration: BoxDecoration(
+                color: color.withOpacity(0.12),
+                borderRadius: BorderRadius.circular(12),
+              ),
+              child: Icon(icon, color: color, size: 26),
+            ),
+            const SizedBox(width: 16),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    label,
+                    style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.w700,
+                      color: color,
+                    ),
+                  ),
+                  const SizedBox(height: 2),
+                  Text(
+                    subtitle,
+                    style: const TextStyle(
+                      fontSize: 12,
+                      color: KiwiColors.textMid,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Icon(Icons.chevron_right_rounded, color: color.withOpacity(0.5)),
+          ],
+        ),
+      ),
+    );
   }
 }
 
@@ -848,6 +1507,28 @@ class _ResultCard extends StatelessWidget {
       ),
     );
   }
+}
+
+// ===========================================================================
+// Plan item model (Step 5 — curriculum recommendation)
+// ===========================================================================
+
+class _PlanItem {
+  final String topicId;
+  final String topicName;
+  final String badge;
+  final Color badgeColor;
+  final String reason;
+  final bool isStrength;
+
+  const _PlanItem({
+    required this.topicId,
+    required this.topicName,
+    required this.badge,
+    required this.badgeColor,
+    required this.reason,
+    required this.isStrength,
+  });
 }
 
 // ===========================================================================

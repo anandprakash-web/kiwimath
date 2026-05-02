@@ -1,0 +1,9 @@
+<svg viewBox="0 0 260 150" xmlns="http://www.w3.org/2000/svg">
+  <rect width="260" height="150" fill="#E8EAF6" rx="8"/>
+  <rect x="20" y="40" width="45" height="28" fill="#C8E6C9" stroke="#2E7D32" stroke-width="1.5" rx="3"/>
+  <text x="42" y="58" font-size="10" fill="#2E7D32" text-anchor="middle" font-weight="bold">₹20</text>
+  <rect x="70" y="40" width="45" height="28" fill="#C8E6C9" stroke="#2E7D32" stroke-width="1.5" rx="3"/>
+  <text x="92" y="58" font-size="10" fill="#2E7D32" text-anchor="middle" font-weight="bold">₹20</text>
+  <rect x="120" y="40" width="45" height="28" fill="#C8E6C9" stroke="#2E7D32" stroke-width="1.5" rx="3"/>
+  <text x="142" y="58" font-size="10" fill="#2E7D32" text-anchor="middle" font-weight="bold">₹10</text>
+</svg>

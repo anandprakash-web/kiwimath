@@ -1,0 +1,11 @@
+<svg viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="120" fill="#FFFEF5" rx="8"/>
+  <circle cx="70.0" cy="60" r="20" fill="#DAA520" stroke="#8B7355" stroke-width="2"/>
+  <circle cx="70.0" cy="60" r="17" fill="none" stroke="#8B7355" stroke-width="0.5"/>
+  <text x="70.0" y="58" text-anchor="middle" font-size="7" fill="#333">₹</text>
+  <text x="70.0" y="68" text-anchor="middle" font-size="9" fill="#333" font-weight="bold">10</text>
+  <circle cx="130.0" cy="60" r="14" fill="#C0C0C0" stroke="#8B7355" stroke-width="2"/>
+  <circle cx="130.0" cy="60" r="11" fill="none" stroke="#8B7355" stroke-width="0.5"/>
+  <text x="130.0" y="58" text-anchor="middle" font-size="7" fill="#333">₹</text>
+  <text x="130.0" y="68" text-anchor="middle" font-size="9" fill="#333" font-weight="bold">1</text>
+</svg>

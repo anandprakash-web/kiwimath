@@ -1,0 +1,7 @@
+<svg viewBox="0 0 260 150" xmlns="http://www.w3.org/2000/svg">
+  <rect x="30" y="20" width="200" height="110" rx="8" fill="#FFF3E0" stroke="#E65100" stroke-width="1.5"/>
+  <text x="130" y="50" text-anchor="middle" font-size="12" font-weight="bold" fill="#E65100">SALE</text>
+  <text x="130" y="75" text-anchor="middle" font-size="10" fill="#333">MRP: &#8377;1500</text>
+  <text x="130" y="95" text-anchor="middle" font-size="11" fill="#D32F2F">5% OFF</text>
+  <text x="130" y="115" text-anchor="middle" font-size="9" fill="#666">Find the selling price</text>
+</svg>

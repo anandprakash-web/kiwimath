@@ -1,0 +1,16 @@
+<svg viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="120" fill="#FFFEF5" rx="8"/>
+  <polygon points="23.846153846153847,48 13.846153846153847,68 33.84615384615385,68" fill="#FFEAA7" stroke="#333" stroke-width="1"/>
+  <rect x="27.692307692307693" y="50" width="20" height="20" fill="#4ECDC4" stroke="#333" stroke-width="1"/>
+  <polygon points="51.53846153846154,48 41.53846153846154,68 61.53846153846154,68" fill="#FFEAA7" stroke="#333" stroke-width="1"/>
+  <rect x="55.38461538461539" y="50" width="20" height="20" fill="#4ECDC4" stroke="#333" stroke-width="1"/>
+  <polygon points="79.23076923076923,48 69.23076923076923,68 89.23076923076923,68" fill="#FFEAA7" stroke="#333" stroke-width="1"/>
+  <rect x="83.07692307692308" y="50" width="20" height="20" fill="#4ECDC4" stroke="#333" stroke-width="1"/>
+  <polygon points="106.92307692307693,48 96.92307692307693,68 116.92307692307693,68" fill="#FFEAA7" stroke="#333" stroke-width="1"/>
+  <rect x="110.76923076923077" y="50" width="20" height="20" fill="#4ECDC4" stroke="#333" stroke-width="1"/>
+  <polygon points="134.6153846153846,48 124.61538461538461,68 144.6153846153846,68" fill="#FFEAA7" stroke="#333" stroke-width="1"/>
+  <rect x="138.46153846153845" y="50" width="20" height="20" fill="#4ECDC4" stroke="#333" stroke-width="1"/>
+  <polygon points="162.30769230769232,48 152.30769230769232,68 172.30769230769232,68" fill="#FFEAA7" stroke="#333" stroke-width="1"/>
+  <rect x="164.15384615384616" y="48" width="24" height="24" fill="none" stroke="#999" stroke-width="2" stroke-dasharray="3"/>
+  <text x="176.15384615384616" y="64" text-anchor="middle" font-size="14" fill="#999">?</text>
+</svg>

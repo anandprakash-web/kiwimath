@@ -1,0 +1,14 @@
+<svg viewBox="0 0 240 140" xmlns="http://www.w3.org/2000/svg">
+<rect width="240" height="140" fill="#FFFEF5" rx="8"/>
+<text x="120" y="12" text-anchor="middle" font-size="8" fill="#2C3E50">Count the shaded squares</text>
+<rect x="102" y="52" width="12" height="12" fill="#AED6F1" stroke="#666" stroke-width="0.5"/>
+<rect x="114" y="52" width="12" height="12" fill="#AED6F1" stroke="#666" stroke-width="0.5"/>
+<rect x="126" y="52" width="12" height="12" fill="#AED6F1" stroke="#666" stroke-width="0.5"/>
+<rect x="102" y="64" width="12" height="12" fill="#AED6F1" stroke="#666" stroke-width="0.5"/>
+<rect x="114" y="64" width="12" height="12" fill="#AED6F1" stroke="#666" stroke-width="0.5"/>
+<rect x="126" y="64" width="12" height="12" fill="#AED6F1" stroke="#666" stroke-width="0.5"/>
+<rect x="102" y="76" width="12" height="12" fill="#AED6F1" stroke="#666" stroke-width="0.5"/>
+<rect x="114" y="76" width="12" height="12" fill="#AED6F1" stroke="#666" stroke-width="0.5"/>
+<rect x="126" y="76" width="12" height="12" fill="#AED6F1" stroke="#666" stroke-width="0.5"/>
+
+</svg>

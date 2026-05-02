@@ -1,0 +1,22 @@
+<svg viewBox="0 0 260 150" xmlns="http://www.w3.org/2000/svg">
+  <text x="130" y="15" text-anchor="middle" font-size="10" font-weight="bold" fill="#333">Dhoni's Scores</text>
+  <line x1="25" y1="120" x2="240" y2="120" stroke="#999" stroke-width="1"/>
+  <rect x="32" y="40" width="30" height="80" fill="#66BB6A" rx="2"/>
+  <text x="47" y="135" text-anchor="middle" font-size="7" fill="#333">M1</text>
+  <text x="47" y="37" text-anchor="middle" font-size="7" fill="#333">90</text>
+  <rect x="64" y="101" width="30" height="19" fill="#66BB6A" rx="2"/>
+  <text x="79" y="135" text-anchor="middle" font-size="7" fill="#333">M2</text>
+  <text x="79" y="98" text-anchor="middle" font-size="7" fill="#333">22</text>
+  <rect x="96" y="59" width="30" height="61" fill="#66BB6A" rx="2"/>
+  <text x="111" y="135" text-anchor="middle" font-size="7" fill="#333">M3</text>
+  <text x="111" y="56" text-anchor="middle" font-size="7" fill="#333">69</text>
+  <rect x="128" y="49" width="30" height="71" fill="#66BB6A" rx="2"/>
+  <text x="143" y="135" text-anchor="middle" font-size="7" fill="#333">M4</text>
+  <text x="143" y="46" text-anchor="middle" font-size="7" fill="#333">80</text>
+  <rect x="160" y="98" width="30" height="22" fill="#66BB6A" rx="2"/>
+  <text x="175" y="135" text-anchor="middle" font-size="7" fill="#333">M5</text>
+  <text x="175" y="95" text-anchor="middle" font-size="7" fill="#333">25</text>
+  <rect x="192" y="59" width="30" height="61" fill="#66BB6A" rx="2"/>
+  <text x="207" y="135" text-anchor="middle" font-size="7" fill="#333">M6</text>
+  <text x="207" y="56" text-anchor="middle" font-size="7" fill="#333">69</text>
+</svg>

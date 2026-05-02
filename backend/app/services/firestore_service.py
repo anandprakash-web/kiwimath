@@ -100,6 +100,9 @@ DEFAULT_USER = {
     "avatar": "kiwi_default",
     "created_at": None,
     "last_active": None,
+    "onboarded_at": None,  # Set when benchmark is completed — prevents repeat onboarding
+    "grade": None,  # Selected grade (1-6)
+    "curriculum": None,  # Selected curriculum: ncert, icse, igcse, olympiad
     "streak_current": 0,
     "streak_longest": 0,
     "streak_last_date": None,

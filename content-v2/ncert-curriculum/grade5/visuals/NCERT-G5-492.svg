@@ -1,0 +1,19 @@
+<svg viewBox="0 0 260 150" xmlns="http://www.w3.org/2000/svg">
+  <text x="130" y="15" text-anchor="middle" font-size="10" font-weight="bold" fill="#333">Books Sold</text>
+  <line x1="25" y1="120" x2="240" y2="120" stroke="#999" stroke-width="1"/>
+  <rect x="38" y="89" width="30" height="31" fill="#42A5F5" rx="2"/>
+  <text x="53" y="135" text-anchor="middle" font-size="7" fill="#333">Mon</text>
+  <text x="53" y="86" text-anchor="middle" font-size="7" fill="#333">19</text>
+  <rect x="76" y="45" width="30" height="75" fill="#42A5F5" rx="2"/>
+  <text x="91" y="135" text-anchor="middle" font-size="7" fill="#333">Tue</text>
+  <text x="91" y="42" text-anchor="middle" font-size="7" fill="#333">45</text>
+  <rect x="114" y="40" width="30" height="80" fill="#42A5F5" rx="2"/>
+  <text x="129" y="135" text-anchor="middle" font-size="7" fill="#333">Wed</text>
+  <text x="129" y="37" text-anchor="middle" font-size="7" fill="#333">48</text>
+  <rect x="152" y="49" width="30" height="71" fill="#42A5F5" rx="2"/>
+  <text x="167" y="135" text-anchor="middle" font-size="7" fill="#333">Thu</text>
+  <text x="167" y="46" text-anchor="middle" font-size="7" fill="#333">43</text>
+  <rect x="190" y="59" width="30" height="61" fill="#42A5F5" rx="2"/>
+  <text x="205" y="135" text-anchor="middle" font-size="7" fill="#333">Fri</text>
+  <text x="205" y="56" text-anchor="middle" font-size="7" fill="#333">37</text>
+</svg>

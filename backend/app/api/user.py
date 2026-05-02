@@ -34,6 +34,7 @@ class UpdateProfileRequest(BaseModel):
     display_name: Optional[str] = None
     avatar: Optional[str] = None
     daily_goal: Optional[int] = Field(default=None, ge=1, le=20)
+    curriculum: Optional[str] = Field(default=None, description="Curriculum: ncert, icse, igcse, olympiad")
 
 
 class ProfileResponse(BaseModel):
@@ -47,6 +48,9 @@ class ProfileResponse(BaseModel):
     daily_goal: int
     daily_progress: int
     daily_date: Optional[str] = None
+    onboarded_at: Optional[str] = None
+    grade: Optional[int] = None
+    curriculum: Optional[str] = None
 
 
 class MasteryResponse(BaseModel):
@@ -79,6 +83,9 @@ def get_profile(user_id: str = Query(..., description="Firebase UID")):
         daily_goal=profile.get("daily_goal", 5),
         daily_progress=profile.get("daily_progress", 0),
         daily_date=profile.get("daily_date"),
+        onboarded_at=profile.get("onboarded_at"),
+        grade=profile.get("grade"),
+        curriculum=profile.get("curriculum"),
     )
 
 
@@ -92,6 +99,8 @@ def update_profile(req: UpdateProfileRequest):
         updates["avatar"] = req.avatar
     if req.daily_goal is not None:
         updates["daily_goal"] = req.daily_goal
+    if req.curriculum is not None:
+        updates["curriculum"] = req.curriculum
 
     profile = update_user_profile(req.user_id, updates)
     return ProfileResponse(
@@ -105,6 +114,9 @@ def update_profile(req: UpdateProfileRequest):
         daily_goal=profile.get("daily_goal", 5),
         daily_progress=profile.get("daily_progress", 0),
         daily_date=profile.get("daily_date"),
+        onboarded_at=profile.get("onboarded_at"),
+        grade=profile.get("grade"),
+        curriculum=profile.get("curriculum"),
     )
 
 

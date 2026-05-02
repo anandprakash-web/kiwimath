@@ -1,0 +1,16 @@
+<svg viewBox="0 0 260 150" xmlns="http://www.w3.org/2000/svg">
+  <text x="130" y="15" text-anchor="middle" font-size="10" font-weight="bold" fill="#333">Virat's Scores</text>
+  <line x1="25" y1="120" x2="240" y2="120" stroke="#999" stroke-width="1"/>
+  <rect x="46" y="80" width="30" height="40" fill="#66BB6A" rx="2"/>
+  <text x="61" y="135" text-anchor="middle" font-size="7" fill="#333">M1</text>
+  <text x="61" y="77" text-anchor="middle" font-size="7" fill="#333">50</text>
+  <rect x="92" y="62" width="30" height="58" fill="#66BB6A" rx="2"/>
+  <text x="107" y="135" text-anchor="middle" font-size="7" fill="#333">M2</text>
+  <text x="107" y="59" text-anchor="middle" font-size="7" fill="#333">73</text>
+  <rect x="138" y="40" width="30" height="80" fill="#66BB6A" rx="2"/>
+  <text x="153" y="135" text-anchor="middle" font-size="7" fill="#333">M3</text>
+  <text x="153" y="37" text-anchor="middle" font-size="7" fill="#333">99</text>
+  <rect x="184" y="57" width="30" height="63" fill="#66BB6A" rx="2"/>
+  <text x="199" y="135" text-anchor="middle" font-size="7" fill="#333">M4</text>
+  <text x="199" y="54" text-anchor="middle" font-size="7" fill="#333">78</text>
+</svg>

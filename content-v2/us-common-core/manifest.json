@@ -1,0 +1,203 @@
+{
+  "curriculum": "US_COMMON_CORE",
+  "curriculum_name": "US Common Core State Standards for Mathematics",
+  "version": "2.0",
+  "generated_date": "2026-05-01",
+  "total_grades": 6,
+  "grade_range": "1-6",
+  "total_questions": 1200,
+  "id_format": "USCC-G{grade}-{number:03d}",
+  "grades": [
+    {
+      "grade": 1,
+      "file": "grade1/uscc_g1_questions.json",
+      "total_questions": 200,
+      "visual_questions": 148,
+      "visual_percentage": 74.0,
+      "domains": {
+        "Operations & Algebraic Thinking": 60,
+        "Number & Operations in Base Ten": 50,
+        "Measurement & Data": 40,
+        "Geometry": 50
+      },
+      "standards_covered": [
+        "1.G.1",
+        "1.G.2",
+        "1.G.3",
+        "1.MD.1",
+        "1.MD.3",
+        "1.MD.4",
+        "1.NBT.1",
+        "1.NBT.2",
+        "1.NBT.3",
+        "1.OA.1",
+        "1.OA.4",
+        "1.OA.8"
+      ]
+    },
+    {
+      "grade": 2,
+      "file": "grade2/uscc_g2_questions.json",
+      "total_questions": 200,
+      "visual_questions": 91,
+      "visual_percentage": 45.5,
+      "domains": {
+        "Operations & Algebraic Thinking": 59,
+        "Number & Operations in Base Ten": 53,
+        "Measurement & Data": 58,
+        "Geometry": 30
+      },
+      "standards_covered": [
+        "2.G.1",
+        "2.G.2",
+        "2.G.3",
+        "2.MD.1",
+        "2.MD.10",
+        "2.MD.3",
+        "2.MD.7",
+        "2.MD.8",
+        "2.NBT.1",
+        "2.NBT.2",
+        "2.NBT.3",
+        "2.NBT.4",
+        "2.NBT.7",
+        "2.NBT.8",
+        "2.OA.1",
+        "2.OA.2",
+        "2.OA.3",
+        "2.OA.4"
+      ]
+    },
+    {
+      "grade": 3,
+      "file": "grade3/uscc_g3_questions.json",
+      "total_questions": 200,
+      "visual_questions": 81,
+      "visual_percentage": 40.5,
+      "domains": {
+        "Operations & Algebraic Thinking": 73,
+        "Number & Operations\u2014Fractions": 41,
+        "Measurement & Data": 66,
+        "Geometry": 20
+      },
+      "standards_covered": [
+        "3.G.1",
+        "3.G.2",
+        "3.MD.1",
+        "3.MD.2",
+        "3.MD.3",
+        "3.MD.7",
+        "3.MD.8",
+        "3.NF.1",
+        "3.NF.2",
+        "3.NF.3",
+        "3.OA.1",
+        "3.OA.2",
+        "3.OA.5",
+        "3.OA.7",
+        "3.OA.8"
+      ]
+    },
+    {
+      "grade": 4,
+      "file": "grade4/uscc_g4_questions.json",
+      "total_questions": 200,
+      "visual_questions": 84,
+      "visual_percentage": 42.0,
+      "domains": {
+        "Operations & Algebraic Thinking": 35,
+        "Number & Operations in Base Ten": 47,
+        "Number & Operations\u2014Fractions": 50,
+        "Measurement & Data": 43,
+        "Geometry": 25
+      },
+      "standards_covered": [
+        "4.G.1",
+        "4.G.2",
+        "4.G.3",
+        "4.MD.1",
+        "4.MD.3",
+        "4.MD.4",
+        "4.MD.5",
+        "4.MD.6",
+        "4.NBT.1",
+        "4.NBT.3",
+        "4.NBT.5",
+        "4.NBT.6",
+        "4.NF.1",
+        "4.NF.2",
+        "4.NF.3",
+        "4.NF.4",
+        "4.NF.6",
+        "4.OA.3",
+        "4.OA.4",
+        "4.OA.5"
+      ]
+    },
+    {
+      "grade": 5,
+      "file": "grade5/uscc_g5_questions.json",
+      "total_questions": 200,
+      "visual_questions": 84,
+      "visual_percentage": 42.0,
+      "domains": {
+        "Operations & Algebraic Thinking": 30,
+        "Number & Operations in Base Ten": 51,
+        "Number & Operations\u2014Fractions": 50,
+        "Measurement & Data": 34,
+        "Geometry": 35
+      },
+      "standards_covered": [
+        "5.G.1",
+        "5.G.3",
+        "5.G.4",
+        "5.MD.1",
+        "5.MD.3",
+        "5.MD.5",
+        "5.NBT.1",
+        "5.NBT.2",
+        "5.NBT.6",
+        "5.NBT.7",
+        "5.NF.1",
+        "5.NF.4",
+        "5.NF.6",
+        "5.NF.7",
+        "5.OA.1"
+      ]
+    },
+    {
+      "grade": 6,
+      "file": "grade6/uscc_g6_questions.json",
+      "total_questions": 200,
+      "visual_questions": 84,
+      "visual_percentage": 42.0,
+      "domains": {
+        "Ratios & Proportional Relationships": 41,
+        "The Number System": 51,
+        "Expressions & Equations": 41,
+        "Geometry": 37,
+        "Statistics & Probability": 30
+      },
+      "standards_covered": [
+        "6.EE.2",
+        "6.EE.7",
+        "6.EE.8",
+        "6.G.1",
+        "6.G.2",
+        "6.G.3",
+        "6.G.4",
+        "6.NS.1",
+        "6.NS.3",
+        "6.NS.4",
+        "6.NS.5",
+        "6.NS.7",
+        "6.RP.1",
+        "6.RP.2",
+        "6.RP.3",
+        "6.SP.1",
+        "6.SP.3",
+        "6.SP.5"
+      ]
+    }
+  ]
+}

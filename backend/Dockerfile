@@ -18,8 +18,13 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy application code.
 COPY . .
 
-# v2 content (flat JSON/SVG — olympiad-style questions).
+# Content directories — all curricula bundled at build time.
 ENV KIWIMATH_V2_CONTENT_DIR=/content-v2
+ENV NCERT_CONTENT_DIR=/content-v2/ncert-curriculum
+ENV SINGAPORE_CONTENT_DIR=/content-v2/singapore-curriculum
+ENV USCC_CONTENT_DIR=/content-v2/us-common-core
+ENV ICSE_CONTENT_DIR=/content-v2/icse-curriculum
+ENV IGCSE_CONTENT_DIR=/content-v2/igcse-curriculum
 ENV PORT=8000
 
 EXPOSE 8000

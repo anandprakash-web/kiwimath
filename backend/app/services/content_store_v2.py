@@ -39,27 +39,39 @@ class HintLadder(BaseModel):
 # v2 Question model (flat, no templates)
 # ---------------------------------------------------------------------------
 
-# Allow 3- or 4-digit numeric IDs so Grade 3-4 content (T1-601 onwards) can
-# coexist with the original Grade 1-2 set (T1-001 to T1-600).
-_QUESTION_ID_RE = re.compile(r"^T[1-8]-\d{3,4}$")
+# Accept T[1-8]-NNN topic IDs *and* curriculum IDs: NCERT-G3-001, SING-G1-001,
+# USCC-G2-005, ICSE-G4-100.  The expanded pattern keeps backward compat with
+# the original Grade 1-6 content while also allowing the four curriculum
+# question banks (NCERT, Singapore/SING, USCC, ICSE) to be loaded into the
+# same unified store.
+_QUESTION_ID_RE = re.compile(
+    r"^(?:T[1-8]-\d{3,4}|(?:NCERT|SING|USCC|ICSE|IGCSE)-G[1-6]-\d{3,4})$"
+)
 
 
 class QuestionV2(BaseModel):
     id: str
     stem: str
     original_stem: Optional[str] = None
-    choices: List[str]
-    correct_answer: int = Field(..., ge=0, le=3)
+    choices: List[str] = Field(default_factory=list)
+    correct_answer: int = Field(default=0, ge=0, le=3)
     difficulty_tier: str  # easy, medium, hard, advanced, expert
     difficulty_score: int = Field(..., ge=1, le=500)
     visual_svg: Optional[str] = None
     visual_alt: Optional[str] = None
     diagnostics: Dict[str, str] = Field(default_factory=dict)
     topic: str
-    topic_name: str
+    topic_name: str = ""
+    chapter: Optional[str] = None  # Curriculum chapter name (e.g. "Ch1: Numbers 1 to 9")
     tags: List[str] = Field(default_factory=list)
     concept_cluster: Optional[str] = None
     hint: Optional[Union[str, Dict[str, str]]] = None
+    solution_steps: List[str] = Field(default_factory=list)
+    # Multi-mode interaction support
+    interaction_mode: str = "mcq"  # "mcq" | "integer" | "drag_drop"
+    correct_value: Optional[int] = None  # For integer mode: the correct numeric answer
+    correct_order: Optional[List[int]] = None  # For drag_drop: correct ordering of items
+    drag_items: Optional[List[str]] = None  # For drag_drop: the items to be arranged
 
     @field_validator("id")
     @classmethod
@@ -366,6 +378,90 @@ class ContentStoreV2:
         """List all loaded topics."""
         return list(self._topics)
 
+    def get_chapters(self, curriculum: str, grade: int) -> List[Dict[str, Any]]:
+        """Get ordered chapter list for a curriculum + grade.
+
+        Scans all loaded questions for matching curriculum prefix and grade,
+        groups by chapter field, and returns ordered chapters with question counts.
+
+        Args:
+            curriculum: "ncert", "icse", or "igcse"
+            grade: 1-6
+
+        Returns:
+            List of dicts: [{id, name, question_count, topics}]
+        """
+        prefix_map = {
+            "ncert": "NCERT",
+            "icse": "ICSE",
+            "igcse": "IGCSE",
+        }
+        prefix = prefix_map.get(curriculum.lower())
+        if not prefix:
+            return []
+
+        id_prefix = f"{prefix}-G{grade}-"
+        chapters: Dict[str, Dict[str, Any]] = {}
+
+        for qid, q in self._questions.items():
+            if not qid.startswith(id_prefix):
+                continue
+            ch = q.chapter or q.topic or "Unknown"
+            if ch not in chapters:
+                chapters[ch] = {
+                    "id": ch,
+                    "name": ch,
+                    "question_count": 0,
+                    "topics": set(),
+                }
+            chapters[ch]["question_count"] += 1
+            chapters[ch]["topics"].add(q.topic)
+
+        # Sort by chapter number if available (e.g. "Ch1: ..." < "Ch2: ...")
+        def chapter_sort_key(ch_name: str) -> tuple:
+            import re as _re
+            m = _re.match(r"Ch(\d+)", ch_name)
+            return (int(m.group(1)),) if m else (999, ch_name)
+
+        result = []
+        for ch_name in sorted(chapters.keys(), key=chapter_sort_key):
+            ch = chapters[ch_name]
+            ch["topics"] = sorted(ch["topics"])
+            result.append(ch)
+
+        return result
+
+    def get_curriculum_questions(
+        self, curriculum: str, grade: int, chapter: Optional[str] = None
+    ) -> List[QuestionV2]:
+        """Get questions for a specific curriculum, grade, and optionally chapter.
+
+        Args:
+            curriculum: "ncert", "icse", "igcse"
+            grade: 1-6
+            chapter: optional chapter filter (e.g. "Ch1: Numbers 1 to 9")
+
+        Returns:
+            List of QuestionV2 sorted by difficulty_score
+        """
+        prefix_map = {
+            "ncert": "NCERT",
+            "icse": "ICSE",
+            "igcse": "IGCSE",
+        }
+        prefix = prefix_map.get(curriculum.lower())
+        if not prefix:
+            return []
+
+        id_prefix = f"{prefix}-G{grade}-"
+        questions = [
+            q for qid, q in self._questions.items()
+            if qid.startswith(id_prefix)
+            and (chapter is None or q.chapter == chapter)
+        ]
+        questions.sort(key=lambda q: q.difficulty_score)
+        return questions
+
     def stats(self) -> Dict:
         return {
             "total_questions": len(self._questions),
@@ -383,6 +479,125 @@ class ContentStoreV2:
 store_v2 = ContentStoreV2()
 
 
+def _load_curriculum_folder(curriculum_dir: Path, curriculum_name: str) -> int:
+    """Load a curriculum folder (e.g. ncert-curriculum/) into store_v2.
+
+    Curriculum folders have a different layout than topic folders:
+        ncert-curriculum/
+            grade3/ncert_g3_questions.json
+            grade4/ncert_g4_questions.json
+            ...
+
+    Each JSON file has {"questions": [...], "topic_name": "...", ...}.
+    Questions may lack `topic_name` on individual items, so we inject it from
+    the file-level metadata or derive it from the `topic` field.
+    """
+    if not curriculum_dir.exists():
+        return 0
+
+    count = 0
+    for grade_dir in sorted(curriculum_dir.iterdir()):
+        if not grade_dir.is_dir() or grade_dir.name.startswith("."):
+            continue
+
+        for json_file in sorted(grade_dir.glob("*.json")):
+            try:
+                data = json.loads(json_file.read_text())
+            except (json.JSONDecodeError, OSError) as e:
+                print(f"[content_store_v2] skipping {json_file}: {e}")
+                continue
+
+            if isinstance(data, list):
+                question_list = data
+                file_topic_name = curriculum_name
+            else:
+                question_list = data.get("questions", [])
+                file_topic_name = data.get("topic_name", curriculum_name)
+
+            topic_id = None
+            topic_questions: list[QuestionV2] = []
+
+            for qd in question_list:
+                # Inject topic_name if missing from individual question
+                if "topic_name" not in qd or not qd["topic_name"]:
+                    qd["topic_name"] = file_topic_name
+                # Some curricula use 'chapter' instead of 'topic'
+                if "topic" not in qd:
+                    qd["topic"] = qd.get("chapter", f"{curriculum_name}_{grade_dir.name}")
+                # Derive difficulty_tier from score if missing
+                if "difficulty_tier" not in qd:
+                    score = qd.get("difficulty_score", 50)
+                    if score <= 20:
+                        qd["difficulty_tier"] = "easy"
+                    elif score <= 40:
+                        qd["difficulty_tier"] = "medium"
+                    elif score <= 60:
+                        qd["difficulty_tier"] = "hard"
+                    elif score <= 80:
+                        qd["difficulty_tier"] = "advanced"
+                    else:
+                        qd["difficulty_tier"] = "expert"
+                # Fix diagnostics: convert list values to comma-joined strings
+                diag = qd.get("diagnostics")
+                if isinstance(diag, dict):
+                    fixed_diag: dict[str, str] = {}
+                    for dk, dv in diag.items():
+                        if isinstance(dv, list):
+                            # Join list items; handle both strings and dicts
+                            parts = []
+                            for item in dv:
+                                if isinstance(item, dict):
+                                    parts.append(
+                                        item.get("misconception", str(item))
+                                    )
+                                else:
+                                    parts.append(str(item))
+                            fixed_diag[dk] = "; ".join(parts)
+                        else:
+                            fixed_diag[dk] = str(dv)
+                    qd["diagnostics"] = fixed_diag
+                try:
+                    q = QuestionV2(**qd)
+                    store_v2._questions[q.id] = q
+                    topic_questions.append(q)
+                    count += 1
+                    if topic_id is None:
+                        topic_id = q.topic
+                    if q.concept_cluster:
+                        store_v2._cluster_index.setdefault(
+                            q.concept_cluster, []
+                        ).append(q.id)
+                except Exception as e:
+                    print(f"[content_store_v2] skipping curriculum Q: {e}")
+                    continue
+
+            if topic_questions and topic_id:
+                topic_questions.sort(key=lambda q: q.difficulty_score)
+                existing = store_v2._by_topic.get(topic_id, [])
+                store_v2._by_topic[topic_id] = existing + topic_questions
+
+                # Add topic metadata if not already present
+                existing_ids = {t.topic_id for t in store_v2._topics}
+                if topic_id not in existing_ids:
+                    dist: dict[str, int] = {}
+                    for q in topic_questions:
+                        dist[q.difficulty_tier] = dist.get(q.difficulty_tier, 0) + 1
+                    store_v2._topics.append(TopicV2(
+                        topic_id=topic_id,
+                        topic_name=file_topic_name,
+                        total_questions=len(topic_questions),
+                        difficulty_distribution=dist,
+                    ))
+
+            if topic_questions:
+                print(
+                    f"[content_store_v2] loaded {curriculum_name}/{grade_dir.name}: "
+                    f"{len(topic_questions)} questions from {json_file.name}"
+                )
+
+    return count
+
+
 def bootstrap_v2_from_env() -> None:
     """Called at app startup. Reads KIWIMATH_V2_CONTENT_DIR env var."""
     content_dir = os.environ.get("KIWIMATH_V2_CONTENT_DIR")
@@ -395,6 +610,25 @@ def bootstrap_v2_from_env() -> None:
         print(f"[content_store_v2] WARNING: {root} does not exist")
         return
 
+    # Load core topic content (T1-T8)
     n = store_v2.load_folder(root)
+    print(f"[content_store_v2] loaded {n} core topic questions")
+
+    # Load all curriculum content into the same store
+    curricula = {
+        "ncert-curriculum": "NCERT",
+        "singapore-curriculum": "Singapore Math",
+        "us-common-core": "US Common Core",
+        "icse-curriculum": "ICSE",
+        "igcse-curriculum": "IGCSE",
+    }
+    curriculum_total = 0
+    for folder_name, display_name in curricula.items():
+        curr_dir = root / folder_name
+        loaded = _load_curriculum_folder(curr_dir, display_name)
+        curriculum_total += loaded
+        if loaded:
+            print(f"[content_store_v2] {display_name}: {loaded} questions merged into v2 store")
+
     stats = store_v2.stats()
-    print(f"[content_store_v2] loaded {n} v2 questions: {stats}")
+    print(f"[content_store_v2] TOTAL: {n + curriculum_total} questions ({n} core + {curriculum_total} curriculum): {stats}")

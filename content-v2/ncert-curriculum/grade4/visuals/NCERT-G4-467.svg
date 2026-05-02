@@ -1,0 +1,21 @@
+<svg viewBox="0 0 260 150" xmlns="http://www.w3.org/2000/svg">
+<rect width="260" height="150" fill="#FFFEF5" rx="8"/>
+<text x="130" y="15" text-anchor="middle" font-size="9" font-weight="bold" fill="#2C3E50">Ayaan's pages read</text>
+<line x1="40" y1="125" x2="240" y2="125" stroke="#333" stroke-width="1.5"/>
+<line x1="40" y1="25" x2="40" y2="125" stroke="#333" stroke-width="1.5"/>
+<rect x="50" y="35" width="30" height="90" fill="#E74C3C"/>
+<text x="65" y="137" text-anchor="middle" font-size="7" fill="#333">Mon</text>
+<text x="65" y="32" text-anchor="middle" font-size="7" fill="#333">10</text>
+<rect x="86" y="53" width="30" height="72" fill="#3498DB"/>
+<text x="101" y="137" text-anchor="middle" font-size="7" fill="#333">Tue</text>
+<text x="101" y="50" text-anchor="middle" font-size="7" fill="#333">8</text>
+<rect x="122" y="62" width="30" height="63" fill="#2ECC71"/>
+<text x="137" y="137" text-anchor="middle" font-size="7" fill="#333">Wed</text>
+<text x="137" y="59" text-anchor="middle" font-size="7" fill="#333">7</text>
+<rect x="158" y="44" width="30" height="81" fill="#F39C12"/>
+<text x="173" y="137" text-anchor="middle" font-size="7" fill="#333">Thu</text>
+<text x="173" y="41" text-anchor="middle" font-size="7" fill="#333">9</text>
+<rect x="194" y="98" width="30" height="27" fill="#9B59B6"/>
+<text x="209" y="137" text-anchor="middle" font-size="7" fill="#333">Fri</text>
+<text x="209" y="95" text-anchor="middle" font-size="7" fill="#333">3</text>
+</svg>

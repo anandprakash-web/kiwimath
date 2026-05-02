@@ -1,0 +1,7 @@
+<svg viewBox="0 0 260 150" xmlns="http://www.w3.org/2000/svg">
+  <text x="130" y="15" text-anchor="middle" font-size="11" font-family="Arial">Place Value Discs</text>
+  <circle cx="40" cy="75" r="12" fill="#42A5F5" stroke="#1565C0" stroke-width="1"/>
+  <text x="40" y="79" text-anchor="middle" font-size="9" font-family="Arial" fill="white">10</text>
+  <circle cx="70" cy="75" r="12" fill="#42A5F5" stroke="#1565C0" stroke-width="1"/>
+  <text x="70" y="79" text-anchor="middle" font-size="9" font-family="Arial" fill="white">10</text>
+</svg>

@@ -31,7 +31,20 @@
     },
     "concept_cluster": "systematic-counting",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.15,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.15,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-0902",
@@ -65,7 +78,20 @@
     },
     "concept_cluster": "combinatorics-basic",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.17,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.17,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify the numbers: 3, 4",
+      "Determine the operation needed",
+      "Calculate step by step to find the answer"
+    ]
   },
   {
     "id": "T1-0903",
@@ -99,7 +125,20 @@
     },
     "concept_cluster": "counting-shapes",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.18,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.18,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify the angle type (acute/right/obtuse)",
+      "Right angle = 90°, straight = 180°",
+      "Compare or calculate the angle asked"
+    ]
   },
   {
     "id": "T1-0904",
@@ -133,7 +172,20 @@
     },
     "concept_cluster": "permutations-intro",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.2,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.2,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-0905",
@@ -167,7 +219,20 @@
     },
     "concept_cluster": "inclusion-exclusion",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.22,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.22,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what you need to count",
+      "Count systematically one by one",
+      "The total is your answer"
+    ]
   },
   {
     "id": "T1-0906",
@@ -201,7 +266,20 @@
     },
     "concept_cluster": "counting-shapes",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.23,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.23,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-0907",
@@ -235,7 +313,20 @@
     },
     "concept_cluster": "counting-paths",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.25,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.25,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-0908",
@@ -269,7 +360,20 @@
     },
     "concept_cluster": "combinatorics-basic",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.27,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.27,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-0909",
@@ -303,7 +407,20 @@
     },
     "concept_cluster": "systematic-counting",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.28,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.28,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-0910",
@@ -337,7 +454,20 @@
     },
     "concept_cluster": "systematic-counting",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.3,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.3,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what you need to count",
+      "Count systematically one by one",
+      "The total is your answer"
+    ]
   },
   {
     "id": "T1-0911",
@@ -371,7 +501,20 @@
     },
     "concept_cluster": "systematic-counting",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.32,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.32,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-0912",
@@ -405,7 +548,20 @@
     },
     "concept_cluster": "combinatorics-basic",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.33,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.33,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify the numbers: 3, 2",
+      "Determine the operation needed",
+      "Calculate step by step to find the answer"
+    ]
   },
   {
     "id": "T1-0913",
@@ -439,7 +595,20 @@
     },
     "concept_cluster": "counting-shapes",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.35,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.35,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-0914",
@@ -473,7 +642,20 @@
     },
     "concept_cluster": "permutations-intro",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.37,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.37,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what you need to count",
+      "Count systematically one by one",
+      "The total is your answer"
+    ]
   },
   {
     "id": "T1-0915",
@@ -508,7 +690,20 @@
     },
     "concept_cluster": "pigeonhole-principle",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.38,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.38,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what you need to count",
+      "Count systematically one by one",
+      "The total is your answer"
+    ]
   },
   {
     "id": "T1-0916",
@@ -542,7 +737,20 @@
     },
     "concept_cluster": "digit-counting",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.4,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.4,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-0917",
@@ -576,7 +784,20 @@
     },
     "concept_cluster": "permutations-intro",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.42,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.42,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what you need to count",
+      "Count systematically one by one",
+      "The total is your answer"
+    ]
   },
   {
     "id": "T1-0918",
@@ -610,7 +831,20 @@
     },
     "concept_cluster": "inclusion-exclusion",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.43,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.43,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-0919",
@@ -644,7 +878,20 @@
     },
     "concept_cluster": "factor-counting",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.45,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.45,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-0920",
@@ -678,7 +925,20 @@
     },
     "concept_cluster": "combinatorics-basic",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.47,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.47,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-0921",
@@ -712,7 +972,20 @@
     },
     "concept_cluster": "combinatorics-basic",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.15,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.15,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-0922",
@@ -746,7 +1019,20 @@
     },
     "concept_cluster": "digit-counting",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.17,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.17,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what you need to count",
+      "Count systematically one by one",
+      "The total is your answer"
+    ]
   },
   {
     "id": "T1-0923",
@@ -780,7 +1066,20 @@
     },
     "concept_cluster": "counting-paths",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.18,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.18,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-0924",
@@ -814,7 +1113,20 @@
     },
     "concept_cluster": "permutations-intro",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.2,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.2,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-0925",
@@ -848,7 +1160,20 @@
     },
     "concept_cluster": "factor-counting",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.22,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.22,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-0926",
@@ -882,7 +1207,20 @@
     },
     "concept_cluster": "combinatorics-basic",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.23,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.23,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-0927",
@@ -916,7 +1254,20 @@
     },
     "concept_cluster": "counting-shapes",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.25,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.25,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-0928",
@@ -950,7 +1301,20 @@
     },
     "concept_cluster": "pigeonhole-principle",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.27,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.27,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what you need to count",
+      "Count systematically one by one",
+      "The total is your answer"
+    ]
   },
   {
     "id": "T1-0929",
@@ -984,7 +1348,20 @@
     },
     "concept_cluster": "systematic-counting",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.28,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.28,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-0930",
@@ -1018,7 +1395,20 @@
     },
     "concept_cluster": "systematic-counting",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.3,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.3,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what you need to count",
+      "Count systematically one by one",
+      "The total is your answer"
+    ]
   },
   {
     "id": "T1-0931",
@@ -1052,7 +1442,20 @@
     },
     "concept_cluster": "systematic-counting",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.32,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.32,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what you need to count",
+      "Count systematically one by one",
+      "The total is your answer"
+    ]
   },
   {
     "id": "T1-0932",
@@ -1086,7 +1489,20 @@
     },
     "concept_cluster": "combinatorics-basic",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.33,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.33,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-0933",
@@ -1120,7 +1536,20 @@
     },
     "concept_cluster": "digit-counting",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.35,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.35,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-0934",
@@ -1154,7 +1583,20 @@
     },
     "concept_cluster": "permutations-intro",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.37,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.37,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-0935",
@@ -1188,7 +1630,20 @@
     },
     "concept_cluster": "pigeonhole-principle",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.38,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.38,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-0936",
@@ -1222,7 +1677,20 @@
     },
     "concept_cluster": "inclusion-exclusion",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.4,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.4,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-0937",
@@ -1256,7 +1724,20 @@
     },
     "concept_cluster": "counting-shapes",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.42,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.42,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-0938",
@@ -1290,7 +1771,20 @@
     },
     "concept_cluster": "permutations-intro",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.43,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.43,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-0939",
@@ -1324,7 +1818,20 @@
     },
     "concept_cluster": "factor-counting",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.45,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.45,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-0940",
@@ -1358,7 +1865,20 @@
     },
     "concept_cluster": "counting-shapes",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.47,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.47,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify the angle type (acute/right/obtuse)",
+      "Right angle = 90°, straight = 180°",
+      "Compare or calculate the angle asked"
+    ]
   },
   {
     "id": "T1-0941",
@@ -1392,7 +1912,20 @@
     },
     "concept_cluster": "factor-counting",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.15,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.15,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-0942",
@@ -1426,7 +1959,20 @@
     },
     "concept_cluster": "permutations-intro",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.17,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.17,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-0943",
@@ -1460,7 +2006,20 @@
     },
     "concept_cluster": "digit-counting",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.18,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.18,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-0944",
@@ -1494,7 +2053,20 @@
     },
     "concept_cluster": "counting-paths",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.2,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.2,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-0945",
@@ -1528,7 +2100,20 @@
     },
     "concept_cluster": "combinatorics-basic",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.22,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.22,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-0946",
@@ -1562,7 +2147,20 @@
     },
     "concept_cluster": "digit-counting",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.23,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.23,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-0947",
@@ -1596,7 +2194,20 @@
     },
     "concept_cluster": "pigeonhole-principle",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.25,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.25,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what you need to count",
+      "Count systematically one by one",
+      "The total is your answer"
+    ]
   },
   {
     "id": "T1-0948",
@@ -1630,7 +2241,20 @@
     },
     "concept_cluster": "inclusion-exclusion",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.27,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.27,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-0949",
@@ -1664,7 +2288,20 @@
     },
     "concept_cluster": "permutations-intro",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.28,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.28,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-0950",
@@ -1698,7 +2335,20 @@
     },
     "concept_cluster": "combinatorics-basic",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.3,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.3,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-0951",
@@ -1732,7 +2382,20 @@
     },
     "concept_cluster": "digit-counting",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.32,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.32,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-0952",
@@ -1766,7 +2429,20 @@
     },
     "concept_cluster": "counting-shapes",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.33,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.33,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify the angle type (acute/right/obtuse)",
+      "Right angle = 90°, straight = 180°",
+      "Compare or calculate the angle asked"
+    ]
   },
   {
     "id": "T1-0953",
@@ -1800,7 +2476,21 @@
     },
     "concept_cluster": "permutations-intro",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.35,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.35,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Read the values from the graph carefully",
+      "Identify the numbers for each item mentioned",
+      "Use the right operation on those numbers",
+      "Check your answer matches the question"
+    ]
   },
   {
     "id": "T1-0954",
@@ -1834,7 +2524,20 @@
     },
     "concept_cluster": "combinatorics-basic",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.37,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.37,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-0955",
@@ -1868,7 +2571,20 @@
     },
     "concept_cluster": "factor-counting",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.38,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.38,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-0956",
@@ -1902,7 +2618,20 @@
     },
     "concept_cluster": "combinatorics-basic",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.4,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.4,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-0957",
@@ -1936,7 +2665,20 @@
     },
     "concept_cluster": "systematic-counting",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.42,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.42,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-0958",
@@ -1970,7 +2712,20 @@
     },
     "concept_cluster": "counting-shapes",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.43,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.43,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-0959",
@@ -2004,7 +2759,20 @@
     },
     "concept_cluster": "permutations-intro",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.45,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.45,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-0960",
@@ -2038,7 +2806,20 @@
     },
     "concept_cluster": "systematic-counting",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.47,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.47,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-0961",
@@ -2072,7 +2853,20 @@
     },
     "concept_cluster": "counting-shapes",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 1.48,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 1.48,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-0962",
@@ -2106,7 +2900,20 @@
     },
     "concept_cluster": "inclusion-exclusion",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 1.5,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 1.5,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-0963",
@@ -2141,7 +2948,20 @@
     },
     "concept_cluster": "permutations-intro",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 1.52,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 1.52,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-0964",
@@ -2174,7 +2994,20 @@
     },
     "concept_cluster": "counting-paths",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 1.53,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 1.53,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-0965",
@@ -2207,7 +3040,20 @@
     },
     "concept_cluster": "factor-counting",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 1.55,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 1.55,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-0966",
@@ -2241,7 +3087,20 @@
     },
     "concept_cluster": "combinatorics-basic",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 1.57,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 1.57,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify the angle type (acute/right/obtuse)",
+      "Right angle = 90°, straight = 180°",
+      "Compare or calculate the angle asked"
+    ]
   },
   {
     "id": "T1-0967",
@@ -2275,7 +3134,20 @@
     },
     "concept_cluster": "counting-paths",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 1.58,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 1.58,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-0968",
@@ -2309,7 +3181,20 @@
     },
     "concept_cluster": "digit-counting",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 1.6,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 1.6,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-0969",
@@ -2343,7 +3228,20 @@
     },
     "concept_cluster": "inclusion-exclusion",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 1.62,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 1.62,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-0970",
@@ -2377,7 +3275,20 @@
     },
     "concept_cluster": "systematic-counting",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 1.63,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 1.63,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what you need to count",
+      "Count systematically one by one",
+      "The total is your answer"
+    ]
   },
   {
     "id": "T1-0971",
@@ -2411,7 +3322,20 @@
     },
     "concept_cluster": "combinatorics-basic",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 1.65,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 1.65,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-0972",
@@ -2445,7 +3369,20 @@
     },
     "concept_cluster": "permutations-intro",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 1.67,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 1.67,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-0973",
@@ -2479,7 +3416,20 @@
     },
     "concept_cluster": "combinatorics-basic",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 1.68,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 1.68,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-0974",
@@ -2513,7 +3463,20 @@
     },
     "concept_cluster": "digit-counting",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 1.7,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 1.7,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-0975",
@@ -2547,7 +3510,20 @@
     },
     "concept_cluster": "pigeonhole-principle",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 1.72,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 1.72,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what you need to count",
+      "Count systematically one by one",
+      "The total is your answer"
+    ]
   },
   {
     "id": "T1-0976",
@@ -2580,7 +3556,20 @@
     },
     "concept_cluster": "factor-counting",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 1.73,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 1.73,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-0977",
@@ -2614,7 +3603,20 @@
     },
     "concept_cluster": "counting-shapes",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 1.75,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 1.75,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify the angle type (acute/right/obtuse)",
+      "Right angle = 90°, straight = 180°",
+      "Compare or calculate the angle asked"
+    ]
   },
   {
     "id": "T1-0978",
@@ -2647,7 +3649,20 @@
     },
     "concept_cluster": "factor-counting",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 1.77,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 1.77,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-0979",
@@ -2681,7 +3696,20 @@
     },
     "concept_cluster": "systematic-counting",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 1.78,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 1.78,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-0980",
@@ -2698,7 +3726,7 @@
     "visual_svg": null,
     "visual_alt": null,
     "diagnostics": {
-      "0": "2916 = 4\u00d79\u00b3 overcounts by not restricting the thousands digit (can't be 0 when 5 is elsewhere).",
+      "0": "2916 = 4×9³ overcounts by not restricting the thousands digit (can't be 0 when 5 is elsewhere).",
       "1": "3000 is a rough estimate, not the precise count.",
       "3": "3240 over-corrects and adds cases that shouldn't be counted."
     },
@@ -2715,7 +3743,20 @@
     },
     "concept_cluster": "digit-counting",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 1.8,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 1.8,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-0981",
@@ -2749,7 +3790,20 @@
     },
     "concept_cluster": "counting-paths",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 1.48,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 1.48,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-0982",
@@ -2783,7 +3837,20 @@
     },
     "concept_cluster": "systematic-counting",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 1.5,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 1.5,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-0983",
@@ -2817,7 +3884,20 @@
     },
     "concept_cluster": "inclusion-exclusion",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 1.52,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 1.52,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-0984",
@@ -2851,7 +3931,20 @@
     },
     "concept_cluster": "combinatorics-basic",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 1.53,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 1.53,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-0985",
@@ -2885,7 +3978,20 @@
     },
     "concept_cluster": "inclusion-exclusion",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 1.55,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 1.55,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-0986",
@@ -2919,7 +4025,20 @@
     },
     "concept_cluster": "systematic-enumeration",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 1.57,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 1.57,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-0987",
@@ -2952,7 +4071,20 @@
     },
     "concept_cluster": "counting-shapes",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 1.58,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 1.58,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-0988",
@@ -2986,7 +4118,20 @@
     },
     "concept_cluster": "permutations-intro",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 1.6,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 1.6,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-0989",
@@ -3019,7 +4164,20 @@
     },
     "concept_cluster": "counting-paths",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 1.62,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 1.62,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-0990",
@@ -3053,7 +4211,20 @@
     },
     "concept_cluster": "systematic-enumeration",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 1.63,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 1.63,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-0991",
@@ -3087,7 +4258,20 @@
     },
     "concept_cluster": "pigeonhole-principle",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 1.65,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 1.65,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-0992",
@@ -3121,7 +4305,20 @@
     },
     "concept_cluster": "digit-counting",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 1.67,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 1.67,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-0993",
@@ -3155,7 +4352,20 @@
     },
     "concept_cluster": "permutations-intro",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 1.68,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 1.68,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-0994",
@@ -3189,7 +4399,20 @@
     },
     "concept_cluster": "combinatorics-basic",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 1.7,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 1.7,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify the angle type (acute/right/obtuse)",
+      "Right angle = 90°, straight = 180°",
+      "Compare or calculate the angle asked"
+    ]
   },
   {
     "id": "T1-0995",
@@ -3223,7 +4446,20 @@
     },
     "concept_cluster": "systematic-enumeration",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 1.72,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 1.72,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-0996",
@@ -3256,7 +4492,20 @@
     },
     "concept_cluster": "digit-counting",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 1.73,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 1.73,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-0997",
@@ -3290,7 +4539,20 @@
     },
     "concept_cluster": "combinatorics-basic",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 1.75,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 1.75,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-0998",
@@ -3324,7 +4586,20 @@
     },
     "concept_cluster": "counting-shapes",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 1.77,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 1.77,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify the angle type (acute/right/obtuse)",
+      "Right angle = 90°, straight = 180°",
+      "Compare or calculate the angle asked"
+    ]
   },
   {
     "id": "T1-0999",
@@ -3358,7 +4633,20 @@
     },
     "concept_cluster": "combinatorics-basic",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 1.78,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 1.78,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1000",
@@ -3392,7 +4680,20 @@
     },
     "concept_cluster": "permutations-intro",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 1.8,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 1.8,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1001",
@@ -3426,7 +4727,20 @@
     },
     "concept_cluster": "inclusion-exclusion",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 1.48,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 1.48,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1002",
@@ -3460,7 +4774,20 @@
     },
     "concept_cluster": "combinatorics-basic",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 1.5,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 1.5,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1003",
@@ -3494,7 +4821,20 @@
     },
     "concept_cluster": "permutations-intro",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 1.52,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 1.52,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify the properties to look for",
+      "Compare with the given options",
+      "Match the property to the correct shape"
+    ]
   },
   {
     "id": "T1-1004",
@@ -3528,7 +4868,20 @@
     },
     "concept_cluster": "counting-paths",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 1.53,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 1.53,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1005",
@@ -3562,7 +4915,20 @@
     },
     "concept_cluster": "inclusion-exclusion",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 1.55,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 1.55,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1006",
@@ -3595,7 +4961,20 @@
     },
     "concept_cluster": "permutations-intro",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 1.57,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 1.57,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1007",
@@ -3629,7 +5008,20 @@
     },
     "concept_cluster": "pigeonhole-principle",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 1.58,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 1.58,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what you need to count",
+      "Count systematically one by one",
+      "The total is your answer"
+    ]
   },
   {
     "id": "T1-1008",
@@ -3663,7 +5055,20 @@
     },
     "concept_cluster": "counting-shapes",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 1.6,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 1.6,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify the angle type (acute/right/obtuse)",
+      "Right angle = 90°, straight = 180°",
+      "Compare or calculate the angle asked"
+    ]
   },
   {
     "id": "T1-1009",
@@ -3696,7 +5101,20 @@
     },
     "concept_cluster": "systematic-enumeration",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 1.62,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 1.62,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1010",
@@ -3729,7 +5147,20 @@
     },
     "concept_cluster": "factor-counting",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 1.63,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 1.63,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1011",
@@ -3763,7 +5194,20 @@
     },
     "concept_cluster": "permutations-intro",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 1.65,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 1.65,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1012",
@@ -3796,7 +5240,20 @@
     },
     "concept_cluster": "systematic-counting",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 1.67,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 1.67,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1013",
@@ -3830,7 +5287,20 @@
     },
     "concept_cluster": "inclusion-exclusion",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 1.68,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 1.68,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1014",
@@ -3864,7 +5334,20 @@
     },
     "concept_cluster": "systematic-enumeration",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 1.7,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 1.7,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1015",
@@ -3897,7 +5380,20 @@
     },
     "concept_cluster": "combinatorics-basic",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 1.72,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 1.72,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1016",
@@ -3931,7 +5427,20 @@
     },
     "concept_cluster": "digit-counting",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 1.73,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 1.73,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1017",
@@ -3965,7 +5474,20 @@
     },
     "concept_cluster": "combinatorics-basic",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 1.75,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 1.75,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1018",
@@ -3999,7 +5521,20 @@
     },
     "concept_cluster": "systematic-counting",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 1.77,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 1.77,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1019",
@@ -4033,7 +5568,20 @@
     },
     "concept_cluster": "combinatorics-basic",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 1.78,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 1.78,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1020",
@@ -4067,7 +5615,20 @@
     },
     "concept_cluster": "digit-counting",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 1.8,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 1.8,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1021",
@@ -4101,11 +5662,24 @@
     },
     "concept_cluster": "counting-paths",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 1.82,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 1.82,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1022",
-    "stem": "A square is divided into 16 small squares arranged in a 4\u00d74 grid. How many rectangles (including squares) of all sizes can you count?",
+    "stem": "A square is divided into 16 small squares arranged in a 4×4 grid. How many rectangles (including squares) of all sizes can you count?",
     "choices": [
       "36",
       "50",
@@ -4134,7 +5708,20 @@
     },
     "concept_cluster": "counting-shapes",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 1.83,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 1.83,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify the angle type (acute/right/obtuse)",
+      "Right angle = 90°, straight = 180°",
+      "Compare or calculate the angle asked"
+    ]
   },
   {
     "id": "T1-1023",
@@ -4167,7 +5754,21 @@
     },
     "concept_cluster": "permutations-intro",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 1.85,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 1.85,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Read the values from the graph carefully",
+      "Identify the numbers for each item mentioned",
+      "Use the right operation on those numbers",
+      "Check your answer matches the question"
+    ]
   },
   {
     "id": "T1-1024",
@@ -4201,7 +5802,20 @@
     },
     "concept_cluster": "combinatorics-basic",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 1.87,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 1.87,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1025",
@@ -4234,7 +5848,20 @@
     },
     "concept_cluster": "inclusion-exclusion",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 1.88,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 1.88,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1026",
@@ -4267,7 +5894,20 @@
     },
     "concept_cluster": "counting-paths",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 1.9,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 1.9,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1027",
@@ -4300,7 +5940,20 @@
     },
     "concept_cluster": "digit-counting",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 1.92,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 1.92,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1028",
@@ -4334,7 +5987,20 @@
     },
     "concept_cluster": "pigeonhole-principle",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 1.93,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 1.93,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1029",
@@ -4367,7 +6033,20 @@
     },
     "concept_cluster": "counting-shapes",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 1.95,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 1.95,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify the angle type (acute/right/obtuse)",
+      "Right angle = 90°, straight = 180°",
+      "Compare or calculate the angle asked"
+    ]
   },
   {
     "id": "T1-1030",
@@ -4400,7 +6079,20 @@
     },
     "concept_cluster": "inclusion-exclusion",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 1.97,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 1.97,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1031",
@@ -4434,7 +6126,20 @@
     },
     "concept_cluster": "permutations-intro",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 1.98,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 1.98,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what you need to count",
+      "Count systematically one by one",
+      "The total is your answer"
+    ]
   },
   {
     "id": "T1-1032",
@@ -4468,7 +6173,20 @@
     },
     "concept_cluster": "combinatorics-basic",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 2.0,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 2.0,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1033",
@@ -4502,7 +6220,20 @@
     },
     "concept_cluster": "factor-counting",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 2.02,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 2.02,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1034",
@@ -4536,7 +6267,20 @@
     },
     "concept_cluster": "permutations-intro",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 2.03,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 2.03,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1035",
@@ -4570,7 +6314,20 @@
     },
     "concept_cluster": "combinatorics-basic",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 2.05,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 2.05,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify the angle type (acute/right/obtuse)",
+      "Right angle = 90°, straight = 180°",
+      "Compare or calculate the angle asked"
+    ]
   },
   {
     "id": "T1-1036",
@@ -4603,7 +6360,20 @@
     },
     "concept_cluster": "digit-counting",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 2.07,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 2.07,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1037",
@@ -4637,7 +6407,20 @@
     },
     "concept_cluster": "counting-paths",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 2.08,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 2.08,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1038",
@@ -4671,7 +6454,20 @@
     },
     "concept_cluster": "inclusion-exclusion",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 2.1,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 2.1,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1039",
@@ -4704,7 +6500,20 @@
     },
     "concept_cluster": "counting-shapes",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 2.12,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 2.12,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify the angle type (acute/right/obtuse)",
+      "Right angle = 90°, straight = 180°",
+      "Compare or calculate the angle asked"
+    ]
   },
   {
     "id": "T1-1040",
@@ -4737,7 +6546,20 @@
     },
     "concept_cluster": "factor-counting",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 2.13,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 2.13,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1041",
@@ -4771,7 +6593,20 @@
     },
     "concept_cluster": "pigeonhole-principle",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 1.82,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 1.82,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1042",
@@ -4805,7 +6640,20 @@
     },
     "concept_cluster": "permutations-intro",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 1.83,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 1.83,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1043",
@@ -4839,7 +6687,20 @@
     },
     "concept_cluster": "inclusion-exclusion",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 1.85,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 1.85,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1044",
@@ -4873,7 +6734,20 @@
     },
     "concept_cluster": "combinatorics-basic",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 1.87,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 1.87,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1045",
@@ -4907,7 +6781,20 @@
     },
     "concept_cluster": "digit-counting",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 1.88,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 1.88,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1046",
@@ -4941,7 +6828,20 @@
     },
     "concept_cluster": "counting-paths",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 1.9,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 1.9,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1047",
@@ -4975,7 +6875,20 @@
     },
     "concept_cluster": "combinatorics-basic",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 1.92,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 1.92,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1048",
@@ -5008,7 +6921,20 @@
     },
     "concept_cluster": "combinatorics-basic",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 1.93,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 1.93,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1049",
@@ -5041,7 +6967,20 @@
     },
     "concept_cluster": "factor-counting",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 1.95,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 1.95,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Find the two quantities to compare",
+      "Subtract the smaller from the larger",
+      "The difference is your answer"
+    ]
   },
   {
     "id": "T1-1050",
@@ -5075,7 +7014,20 @@
     },
     "concept_cluster": "pigeonhole-principle",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 1.97,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 1.97,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what you need to count",
+      "Count systematically one by one",
+      "The total is your answer"
+    ]
   },
   {
     "id": "T1-1051",
@@ -5109,7 +7061,20 @@
     },
     "concept_cluster": "permutations-intro",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 1.98,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 1.98,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1052",
@@ -5143,7 +7108,20 @@
     },
     "concept_cluster": "inclusion-exclusion",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 2.0,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 2.0,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1053",
@@ -5176,7 +7154,20 @@
     },
     "concept_cluster": "digit-counting",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 2.02,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 2.02,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1054",
@@ -5209,7 +7200,20 @@
     },
     "concept_cluster": "counting-paths",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 2.03,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 2.03,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1055",
@@ -5243,7 +7247,20 @@
     },
     "concept_cluster": "combinatorics-basic",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 2.05,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 2.05,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1056",
@@ -5277,7 +7294,20 @@
     },
     "concept_cluster": "factor-counting",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 2.07,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 2.07,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1057",
@@ -5310,7 +7340,20 @@
     },
     "concept_cluster": "systematic-enumeration",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 2.08,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 2.08,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1058",
@@ -5343,7 +7386,20 @@
     },
     "concept_cluster": "permutations-intro",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 2.1,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 2.1,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what you need to count",
+      "Count systematically one by one",
+      "The total is your answer"
+    ]
   },
   {
     "id": "T1-1059",
@@ -5376,7 +7432,20 @@
     },
     "concept_cluster": "factor-counting",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 2.12,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 2.12,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1060",
@@ -5409,7 +7478,20 @@
     },
     "concept_cluster": "counting-paths",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 2.13,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 2.13,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1061",
@@ -5442,7 +7524,20 @@
     },
     "concept_cluster": "combinatorics-basic",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 1.82,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 1.82,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1062",
@@ -5475,7 +7570,20 @@
     },
     "concept_cluster": "combinatorics-basic",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 1.83,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 1.83,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1063",
@@ -5509,7 +7617,20 @@
     },
     "concept_cluster": "permutations-intro",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 1.85,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 1.85,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1064",
@@ -5542,7 +7663,20 @@
     },
     "concept_cluster": "inclusion-exclusion",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 1.87,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 1.87,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1065",
@@ -5575,7 +7709,20 @@
     },
     "concept_cluster": "systematic-counting",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 1.88,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 1.88,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1066",
@@ -5609,7 +7756,20 @@
     },
     "concept_cluster": "counting-paths",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 1.9,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 1.9,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what you need to count",
+      "Count systematically one by one",
+      "The total is your answer"
+    ]
   },
   {
     "id": "T1-1067",
@@ -5642,7 +7802,20 @@
     },
     "concept_cluster": "factor-counting",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 1.92,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 1.92,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1068",
@@ -5676,7 +7849,20 @@
     },
     "concept_cluster": "combinatorics-basic",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 1.93,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 1.93,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1069",
@@ -5710,7 +7896,20 @@
     },
     "concept_cluster": "permutations-intro",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 1.95,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 1.95,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1070",
@@ -5743,7 +7942,20 @@
     },
     "concept_cluster": "counting-shapes",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 1.97,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 1.97,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1071",
@@ -5777,7 +7989,20 @@
     },
     "concept_cluster": "combinatorics-basic",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 1.98,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 1.98,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1072",
@@ -5810,7 +8035,20 @@
     },
     "concept_cluster": "systematic-enumeration",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 2.0,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 2.0,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1073",
@@ -5843,7 +8081,20 @@
     },
     "concept_cluster": "permutations-intro",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 2.02,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 2.02,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1074",
@@ -5876,7 +8127,20 @@
     },
     "concept_cluster": "systematic-counting",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 2.03,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 2.03,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what you need to count",
+      "Count systematically one by one",
+      "The total is your answer"
+    ]
   },
   {
     "id": "T1-1075",
@@ -5909,7 +8173,20 @@
     },
     "concept_cluster": "factor-counting",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 2.05,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 2.05,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1076",
@@ -5942,7 +8219,20 @@
     },
     "concept_cluster": "counting-paths",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 2.07,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 2.07,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1077",
@@ -5976,7 +8266,20 @@
     },
     "concept_cluster": "counting-shapes",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 2.08,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 2.08,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify the angle type (acute/right/obtuse)",
+      "Right angle = 90°, straight = 180°",
+      "Compare or calculate the angle asked"
+    ]
   },
   {
     "id": "T1-1078",
@@ -6010,7 +8313,20 @@
     },
     "concept_cluster": "permutations-intro",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 2.1,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 2.1,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1079",
@@ -6043,7 +8359,20 @@
     },
     "concept_cluster": "systematic-enumeration",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 2.12,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 2.12,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1080",
@@ -6076,7 +8405,20 @@
     },
     "concept_cluster": "digit-counting",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 2.13,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 2.13,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1081",
@@ -6110,7 +8452,20 @@
     },
     "concept_cluster": "counting-paths",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.3,
+      "b": 2.15,
+      "c": 0.25
+    },
+    "irt_a": 1.3,
+    "irt_b": 2.15,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1082",
@@ -6143,7 +8498,20 @@
     },
     "concept_cluster": "inclusion-exclusion",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.3,
+      "b": 2.17,
+      "c": 0.25
+    },
+    "irt_a": 1.3,
+    "irt_b": 2.17,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1083",
@@ -6176,7 +8544,20 @@
     },
     "concept_cluster": "factor-counting",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.3,
+      "b": 2.18,
+      "c": 0.25
+    },
+    "irt_a": 1.3,
+    "irt_b": 2.18,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what you need to count",
+      "Count systematically one by one",
+      "The total is your answer"
+    ]
   },
   {
     "id": "T1-1084",
@@ -6210,7 +8591,20 @@
     },
     "concept_cluster": "pigeonhole-principle",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.3,
+      "b": 2.2,
+      "c": 0.25
+    },
+    "irt_a": 1.3,
+    "irt_b": 2.2,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1085",
@@ -6243,7 +8637,20 @@
     },
     "concept_cluster": "counting-shapes",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.3,
+      "b": 2.22,
+      "c": 0.25
+    },
+    "irt_a": 1.3,
+    "irt_b": 2.22,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify the angle type (acute/right/obtuse)",
+      "Right angle = 90°, straight = 180°",
+      "Compare or calculate the angle asked"
+    ]
   },
   {
     "id": "T1-1086",
@@ -6277,7 +8684,20 @@
     },
     "concept_cluster": "combinatorics-basic",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.3,
+      "b": 2.23,
+      "c": 0.25
+    },
+    "irt_a": 1.3,
+    "irt_b": 2.23,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1087",
@@ -6311,7 +8731,20 @@
     },
     "concept_cluster": "digit-counting",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.3,
+      "b": 2.25,
+      "c": 0.25
+    },
+    "irt_a": 1.3,
+    "irt_b": 2.25,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1088",
@@ -6345,7 +8778,20 @@
     },
     "concept_cluster": "counting-shapes",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.3,
+      "b": 2.27,
+      "c": 0.25
+    },
+    "irt_a": 1.3,
+    "irt_b": 2.27,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1089",
@@ -6378,7 +8824,21 @@
     },
     "concept_cluster": "permutations-intro",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.3,
+      "b": 2.28,
+      "c": 0.25
+    },
+    "irt_a": 1.3,
+    "irt_b": 2.28,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Read the values from the graph carefully",
+      "Identify the numbers for each item mentioned",
+      "Use the right operation on those numbers",
+      "Check your answer matches the question"
+    ]
   },
   {
     "id": "T1-1090",
@@ -6412,7 +8872,20 @@
     },
     "concept_cluster": "inclusion-exclusion",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.3,
+      "b": 2.3,
+      "c": 0.25
+    },
+    "irt_a": 1.3,
+    "irt_b": 2.3,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1091",
@@ -6446,7 +8919,20 @@
     },
     "concept_cluster": "systematic-enumeration",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.3,
+      "b": 2.32,
+      "c": 0.25
+    },
+    "irt_a": 1.3,
+    "irt_b": 2.32,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1092",
@@ -6480,7 +8966,20 @@
     },
     "concept_cluster": "digit-counting",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.3,
+      "b": 2.33,
+      "c": 0.25
+    },
+    "irt_a": 1.3,
+    "irt_b": 2.33,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1093",
@@ -6513,7 +9012,20 @@
     },
     "concept_cluster": "counting-shapes",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.3,
+      "b": 2.35,
+      "c": 0.25
+    },
+    "irt_a": 1.3,
+    "irt_b": 2.35,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1094",
@@ -6546,7 +9058,20 @@
     },
     "concept_cluster": "combinatorics-basic",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.3,
+      "b": 2.37,
+      "c": 0.25
+    },
+    "irt_a": 1.3,
+    "irt_b": 2.37,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1095",
@@ -6579,7 +9104,20 @@
     },
     "concept_cluster": "factor-counting",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.3,
+      "b": 2.38,
+      "c": 0.25
+    },
+    "irt_a": 1.3,
+    "irt_b": 2.38,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1096",
@@ -6612,7 +9150,20 @@
     },
     "concept_cluster": "counting-paths",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.3,
+      "b": 2.4,
+      "c": 0.25
+    },
+    "irt_a": 1.3,
+    "irt_b": 2.4,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1097",
@@ -6645,7 +9196,20 @@
     },
     "concept_cluster": "digit-counting",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.3,
+      "b": 2.42,
+      "c": 0.25
+    },
+    "irt_a": 1.3,
+    "irt_b": 2.42,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1098",
@@ -6678,7 +9242,20 @@
     },
     "concept_cluster": "combinatorics-basic",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.3,
+      "b": 2.43,
+      "c": 0.25
+    },
+    "irt_a": 1.3,
+    "irt_b": 2.43,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1099",
@@ -6711,7 +9288,20 @@
     },
     "concept_cluster": "systematic-enumeration",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.3,
+      "b": 2.45,
+      "c": 0.25
+    },
+    "irt_a": 1.3,
+    "irt_b": 2.45,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1100",
@@ -6728,7 +9318,7 @@
     "visual_svg": null,
     "visual_alt": null,
     "diagnostics": {
-      "1": "60 = 5\u00d74\u00d73 counts arrangements WITHOUT repetition.",
+      "1": "60 = 5×4×3 counts arrangements WITHOUT repetition.",
       "2": "150 adds an extra factor incorrectly.",
       "3": "120 = 5! counts all permutations of 5 letters, not 3-letter codes."
     },
@@ -6740,11 +9330,24 @@
     "hint": {
       "level_0": "Each position in the code can be any of the 5 letters.",
       "level_1": "Since repetition is allowed, each of the 3 positions has 5 choices independently.",
-      "level_2": "5 \u00d7 5 \u00d7 5 = 125."
+      "level_2": "5 × 5 × 5 = 125."
     },
     "concept_cluster": "permutations-intro",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.3,
+      "b": 2.22,
+      "c": 0.25
+    },
+    "irt_a": 1.3,
+    "irt_b": 2.22,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1101",
@@ -6777,7 +9380,20 @@
     },
     "concept_cluster": "combinatorics-basic",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.3,
+      "b": 2.15,
+      "c": 0.25
+    },
+    "irt_a": 1.3,
+    "irt_b": 2.15,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1102",
@@ -6810,7 +9426,20 @@
     },
     "concept_cluster": "factor-counting",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.3,
+      "b": 2.17,
+      "c": 0.25
+    },
+    "irt_a": 1.3,
+    "irt_b": 2.17,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1103",
@@ -6843,7 +9472,20 @@
     },
     "concept_cluster": "combinatorics-basic",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.3,
+      "b": 2.18,
+      "c": 0.25
+    },
+    "irt_a": 1.3,
+    "irt_b": 2.18,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1104",
@@ -6876,7 +9518,20 @@
     },
     "concept_cluster": "combinatorics-basic",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.3,
+      "b": 2.2,
+      "c": 0.25
+    },
+    "irt_a": 1.3,
+    "irt_b": 2.2,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1105",
@@ -6909,7 +9564,20 @@
     },
     "concept_cluster": "digit-counting",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.3,
+      "b": 2.22,
+      "c": 0.25
+    },
+    "irt_a": 1.3,
+    "irt_b": 2.22,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1106",
@@ -6942,7 +9610,20 @@
     },
     "concept_cluster": "counting-paths",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.3,
+      "b": 2.23,
+      "c": 0.25
+    },
+    "irt_a": 1.3,
+    "irt_b": 2.23,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1107",
@@ -6975,7 +9656,20 @@
     },
     "concept_cluster": "combinatorics-basic",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.3,
+      "b": 2.25,
+      "c": 0.25
+    },
+    "irt_a": 1.3,
+    "irt_b": 2.25,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1108",
@@ -7008,7 +9702,20 @@
     },
     "concept_cluster": "digit-counting",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.3,
+      "b": 2.27,
+      "c": 0.25
+    },
+    "irt_a": 1.3,
+    "irt_b": 2.27,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1109",
@@ -7042,7 +9749,20 @@
     },
     "concept_cluster": "counting-paths",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.3,
+      "b": 2.28,
+      "c": 0.25
+    },
+    "irt_a": 1.3,
+    "irt_b": 2.28,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1110",
@@ -7075,7 +9795,20 @@
     },
     "concept_cluster": "factor-counting",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.3,
+      "b": 2.3,
+      "c": 0.25
+    },
+    "irt_a": 1.3,
+    "irt_b": 2.3,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Find the two quantities to compare",
+      "Subtract the smaller from the larger",
+      "The difference is your answer"
+    ]
   },
   {
     "id": "T1-1111",
@@ -7109,7 +9842,20 @@
     },
     "concept_cluster": "combinatorics-basic",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.3,
+      "b": 2.32,
+      "c": 0.25
+    },
+    "irt_a": 1.3,
+    "irt_b": 2.32,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1112",
@@ -7143,7 +9889,20 @@
     },
     "concept_cluster": "combinatorics-basic",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.3,
+      "b": 2.33,
+      "c": 0.25
+    },
+    "irt_a": 1.3,
+    "irt_b": 2.33,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1113",
@@ -7176,7 +9935,20 @@
     },
     "concept_cluster": "inclusion-exclusion",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.3,
+      "b": 2.35,
+      "c": 0.25
+    },
+    "irt_a": 1.3,
+    "irt_b": 2.35,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1114",
@@ -7209,7 +9981,20 @@
     },
     "concept_cluster": "counting-paths",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.3,
+      "b": 2.37,
+      "c": 0.25
+    },
+    "irt_a": 1.3,
+    "irt_b": 2.37,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1115",
@@ -7243,7 +10028,20 @@
     },
     "concept_cluster": "permutations-intro",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.3,
+      "b": 2.38,
+      "c": 0.25
+    },
+    "irt_a": 1.3,
+    "irt_b": 2.38,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1116",
@@ -7276,7 +10074,20 @@
     },
     "concept_cluster": "digit-counting",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.3,
+      "b": 2.4,
+      "c": 0.25
+    },
+    "irt_a": 1.3,
+    "irt_b": 2.4,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T1-1117",
@@ -7310,7 +10121,20 @@
     },
     "concept_cluster": "combinatorics-basic",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.3,
+      "b": 2.42,
+      "c": 0.25
+    },
+    "irt_a": 1.3,
+    "irt_b": 2.42,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1118",
@@ -7344,7 +10168,20 @@
     },
     "concept_cluster": "permutations-intro",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.3,
+      "b": 2.43,
+      "c": 0.25
+    },
+    "irt_a": 1.3,
+    "irt_b": 2.43,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1119",
@@ -7377,7 +10214,20 @@
     },
     "concept_cluster": "factor-counting",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.3,
+      "b": 2.45,
+      "c": 0.25
+    },
+    "irt_a": 1.3,
+    "irt_b": 2.45,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1120",
@@ -7411,7 +10261,20 @@
     },
     "concept_cluster": "systematic-enumeration",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.3,
+      "b": 2.47,
+      "c": 0.25
+    },
+    "irt_a": 1.3,
+    "irt_b": 2.47,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1121",
@@ -7444,7 +10307,20 @@
     },
     "concept_cluster": "counting-shapes",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.3,
+      "b": 2.15,
+      "c": 0.25
+    },
+    "irt_a": 1.3,
+    "irt_b": 2.15,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify the angle type (acute/right/obtuse)",
+      "Right angle = 90°, straight = 180°",
+      "Compare or calculate the angle asked"
+    ]
   },
   {
     "id": "T1-1122",
@@ -7477,7 +10353,20 @@
     },
     "concept_cluster": "systematic-counting",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.3,
+      "b": 2.17,
+      "c": 0.25
+    },
+    "irt_a": 1.3,
+    "irt_b": 2.17,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1123",
@@ -7510,7 +10399,20 @@
     },
     "concept_cluster": "counting-paths",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.3,
+      "b": 2.18,
+      "c": 0.25
+    },
+    "irt_a": 1.3,
+    "irt_b": 2.18,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1124",
@@ -7543,7 +10445,20 @@
     },
     "concept_cluster": "factor-counting",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.3,
+      "b": 2.2,
+      "c": 0.25
+    },
+    "irt_a": 1.3,
+    "irt_b": 2.2,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1125",
@@ -7577,7 +10492,20 @@
     },
     "concept_cluster": "combinatorics-basic",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.3,
+      "b": 2.22,
+      "c": 0.25
+    },
+    "irt_a": 1.3,
+    "irt_b": 2.22,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1126",
@@ -7610,7 +10538,20 @@
     },
     "concept_cluster": "digit-counting",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.3,
+      "b": 2.23,
+      "c": 0.25
+    },
+    "irt_a": 1.3,
+    "irt_b": 2.23,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1127",
@@ -7643,7 +10584,20 @@
     },
     "concept_cluster": "counting-paths",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.3,
+      "b": 2.25,
+      "c": 0.25
+    },
+    "irt_a": 1.3,
+    "irt_b": 2.25,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what you need to count",
+      "Count systematically one by one",
+      "The total is your answer"
+    ]
   },
   {
     "id": "T1-1128",
@@ -7676,7 +10630,20 @@
     },
     "concept_cluster": "combinatorics-basic",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.3,
+      "b": 2.27,
+      "c": 0.25
+    },
+    "irt_a": 1.3,
+    "irt_b": 2.27,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1129",
@@ -7709,7 +10676,20 @@
     },
     "concept_cluster": "combinatorics-basic",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.3,
+      "b": 2.28,
+      "c": 0.25
+    },
+    "irt_a": 1.3,
+    "irt_b": 2.28,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1130",
@@ -7742,7 +10722,20 @@
     },
     "concept_cluster": "inclusion-exclusion",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.3,
+      "b": 2.3,
+      "c": 0.25
+    },
+    "irt_a": 1.3,
+    "irt_b": 2.3,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1131",
@@ -7775,7 +10768,20 @@
     },
     "concept_cluster": "counting-shapes",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.3,
+      "b": 2.32,
+      "c": 0.25
+    },
+    "irt_a": 1.3,
+    "irt_b": 2.32,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify the angle type (acute/right/obtuse)",
+      "Right angle = 90°, straight = 180°",
+      "Compare or calculate the angle asked"
+    ]
   },
   {
     "id": "T1-1132",
@@ -7808,7 +10814,20 @@
     },
     "concept_cluster": "combinatorics-basic",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.3,
+      "b": 2.33,
+      "c": 0.25
+    },
+    "irt_a": 1.3,
+    "irt_b": 2.33,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1133",
@@ -7842,7 +10861,20 @@
     },
     "concept_cluster": "permutations-intro",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.3,
+      "b": 2.35,
+      "c": 0.25
+    },
+    "irt_a": 1.3,
+    "irt_b": 2.35,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what you need to count",
+      "Count systematically one by one",
+      "The total is your answer"
+    ]
   },
   {
     "id": "T1-1134",
@@ -7875,7 +10907,20 @@
     },
     "concept_cluster": "combinatorics-basic",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.3,
+      "b": 2.37,
+      "c": 0.25
+    },
+    "irt_a": 1.3,
+    "irt_b": 2.37,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1135",
@@ -7908,7 +10953,20 @@
     },
     "concept_cluster": "systematic-enumeration",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.3,
+      "b": 2.38,
+      "c": 0.25
+    },
+    "irt_a": 1.3,
+    "irt_b": 2.38,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Find the two quantities to compare",
+      "Subtract the smaller from the larger",
+      "The difference is your answer"
+    ]
   },
   {
     "id": "T1-1136",
@@ -7941,7 +10999,20 @@
     },
     "concept_cluster": "digit-counting",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.3,
+      "b": 2.4,
+      "c": 0.25
+    },
+    "irt_a": 1.3,
+    "irt_b": 2.4,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Find the two quantities to compare",
+      "Subtract the smaller from the larger",
+      "The difference is your answer"
+    ]
   },
   {
     "id": "T1-1137",
@@ -7974,7 +11045,20 @@
     },
     "concept_cluster": "counting-shapes",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.3,
+      "b": 2.42,
+      "c": 0.25
+    },
+    "irt_a": 1.3,
+    "irt_b": 2.42,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what you need to count",
+      "Count systematically one by one",
+      "The total is your answer"
+    ]
   },
   {
     "id": "T1-1138",
@@ -8007,7 +11091,20 @@
     },
     "concept_cluster": "permutations-intro",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.3,
+      "b": 2.43,
+      "c": 0.25
+    },
+    "irt_a": 1.3,
+    "irt_b": 2.43,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1139",
@@ -8041,7 +11138,20 @@
     },
     "concept_cluster": "combinatorics-basic",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.3,
+      "b": 2.45,
+      "c": 0.25
+    },
+    "irt_a": 1.3,
+    "irt_b": 2.45,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1140",
@@ -8074,7 +11184,20 @@
     },
     "concept_cluster": "factor-counting",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.3,
+      "b": 2.47,
+      "c": 0.25
+    },
+    "irt_a": 1.3,
+    "irt_b": 2.47,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1141",
@@ -8108,7 +11231,20 @@
     },
     "concept_cluster": "combinatorics-basic",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.35,
+      "b": 2.48,
+      "c": 0.25
+    },
+    "irt_a": 1.35,
+    "irt_b": 2.48,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1142",
@@ -8142,7 +11278,20 @@
     },
     "concept_cluster": "counting-paths",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.35,
+      "b": 2.5,
+      "c": 0.25
+    },
+    "irt_a": 1.35,
+    "irt_b": 2.5,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1143",
@@ -8175,7 +11324,20 @@
     },
     "concept_cluster": "digit-counting",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.35,
+      "b": 2.52,
+      "c": 0.25
+    },
+    "irt_a": 1.35,
+    "irt_b": 2.52,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1144",
@@ -8208,7 +11370,20 @@
     },
     "concept_cluster": "combinatorics-basic",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.35,
+      "b": 2.53,
+      "c": 0.25
+    },
+    "irt_a": 1.35,
+    "irt_b": 2.53,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1145",
@@ -8241,7 +11416,20 @@
     },
     "concept_cluster": "systematic-counting",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.35,
+      "b": 2.55,
+      "c": 0.25
+    },
+    "irt_a": 1.35,
+    "irt_b": 2.55,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1146",
@@ -8274,7 +11462,20 @@
     },
     "concept_cluster": "combinatorics-basic",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.35,
+      "b": 2.57,
+      "c": 0.25
+    },
+    "irt_a": 1.35,
+    "irt_b": 2.57,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1147",
@@ -8307,7 +11508,20 @@
     },
     "concept_cluster": "counting-paths",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.35,
+      "b": 2.58,
+      "c": 0.25
+    },
+    "irt_a": 1.35,
+    "irt_b": 2.58,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1148",
@@ -8341,7 +11555,20 @@
     },
     "concept_cluster": "factor-counting",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.35,
+      "b": 2.6,
+      "c": 0.25
+    },
+    "irt_a": 1.35,
+    "irt_b": 2.6,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1149",
@@ -8374,7 +11601,20 @@
     },
     "concept_cluster": "permutations-intro",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.35,
+      "b": 2.62,
+      "c": 0.25
+    },
+    "irt_a": 1.35,
+    "irt_b": 2.62,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what you need to count",
+      "Count systematically one by one",
+      "The total is your answer"
+    ]
   },
   {
     "id": "T1-1150",
@@ -8407,7 +11647,20 @@
     },
     "concept_cluster": "inclusion-exclusion",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.35,
+      "b": 2.55,
+      "c": 0.25
+    },
+    "irt_a": 1.35,
+    "irt_b": 2.55,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1151",
@@ -8440,7 +11693,20 @@
     },
     "concept_cluster": "inclusion-exclusion",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.35,
+      "b": 2.65,
+      "c": 0.25
+    },
+    "irt_a": 1.35,
+    "irt_b": 2.65,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1152",
@@ -8473,7 +11739,20 @@
     },
     "concept_cluster": "counting-shapes",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.35,
+      "b": 2.67,
+      "c": 0.25
+    },
+    "irt_a": 1.35,
+    "irt_b": 2.67,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify the angle type (acute/right/obtuse)",
+      "Right angle = 90°, straight = 180°",
+      "Compare or calculate the angle asked"
+    ]
   },
   {
     "id": "T1-1153",
@@ -8506,7 +11785,20 @@
     },
     "concept_cluster": "permutations-intro",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.35,
+      "b": 2.68,
+      "c": 0.25
+    },
+    "irt_a": 1.35,
+    "irt_b": 2.68,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1154",
@@ -8539,7 +11831,20 @@
     },
     "concept_cluster": "combinatorics-basic",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.35,
+      "b": 2.7,
+      "c": 0.25
+    },
+    "irt_a": 1.35,
+    "irt_b": 2.7,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Find the two quantities to compare",
+      "Subtract the smaller from the larger",
+      "The difference is your answer"
+    ]
   },
   {
     "id": "T1-1155",
@@ -8572,7 +11877,20 @@
     },
     "concept_cluster": "factor-counting",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.35,
+      "b": 2.72,
+      "c": 0.25
+    },
+    "irt_a": 1.35,
+    "irt_b": 2.72,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1156",
@@ -8605,7 +11923,20 @@
     },
     "concept_cluster": "combinatorics-basic",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.35,
+      "b": 2.73,
+      "c": 0.25
+    },
+    "irt_a": 1.35,
+    "irt_b": 2.73,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1157",
@@ -8638,7 +11969,21 @@
     },
     "concept_cluster": "permutations-intro",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.35,
+      "b": 2.75,
+      "c": 0.25
+    },
+    "irt_a": 1.35,
+    "irt_b": 2.75,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Read the values from the graph carefully",
+      "Identify the numbers for each item mentioned",
+      "Use the right operation on those numbers",
+      "Check your answer matches the question"
+    ]
   },
   {
     "id": "T1-1158",
@@ -8671,7 +12016,20 @@
     },
     "concept_cluster": "combinatorics-basic",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.35,
+      "b": 2.77,
+      "c": 0.25
+    },
+    "irt_a": 1.35,
+    "irt_b": 2.77,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1159",
@@ -8704,7 +12062,20 @@
     },
     "concept_cluster": "combinatorics-basic",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.35,
+      "b": 2.78,
+      "c": 0.25
+    },
+    "irt_a": 1.35,
+    "irt_b": 2.78,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1160",
@@ -8737,7 +12108,20 @@
     },
     "concept_cluster": "counting-shapes",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.35,
+      "b": 2.8,
+      "c": 0.25
+    },
+    "irt_a": 1.35,
+    "irt_b": 2.8,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what you need to count",
+      "Count systematically one by one",
+      "The total is your answer"
+    ]
   },
   {
     "id": "T1-1161",
@@ -8770,7 +12154,20 @@
     },
     "concept_cluster": "factor-counting",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.35,
+      "b": 2.48,
+      "c": 0.25
+    },
+    "irt_a": 1.35,
+    "irt_b": 2.48,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1162",
@@ -8803,7 +12200,20 @@
     },
     "concept_cluster": "combinatorics-basic",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.35,
+      "b": 2.5,
+      "c": 0.25
+    },
+    "irt_a": 1.35,
+    "irt_b": 2.5,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1163",
@@ -8836,7 +12246,20 @@
     },
     "concept_cluster": "systematic-enumeration",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.35,
+      "b": 2.52,
+      "c": 0.25
+    },
+    "irt_a": 1.35,
+    "irt_b": 2.52,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1164",
@@ -8869,7 +12292,20 @@
     },
     "concept_cluster": "counting-paths",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.35,
+      "b": 2.53,
+      "c": 0.25
+    },
+    "irt_a": 1.35,
+    "irt_b": 2.53,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1165",
@@ -8902,7 +12338,20 @@
     },
     "concept_cluster": "digit-counting",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.35,
+      "b": 2.55,
+      "c": 0.25
+    },
+    "irt_a": 1.35,
+    "irt_b": 2.55,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1166",
@@ -8935,7 +12384,20 @@
     },
     "concept_cluster": "combinatorics-basic",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.35,
+      "b": 2.57,
+      "c": 0.25
+    },
+    "irt_a": 1.35,
+    "irt_b": 2.57,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1167",
@@ -8968,7 +12430,20 @@
     },
     "concept_cluster": "factor-counting",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.35,
+      "b": 2.58,
+      "c": 0.25
+    },
+    "irt_a": 1.35,
+    "irt_b": 2.58,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1168",
@@ -9001,7 +12476,20 @@
     },
     "concept_cluster": "permutations-intro",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.35,
+      "b": 2.6,
+      "c": 0.25
+    },
+    "irt_a": 1.35,
+    "irt_b": 2.6,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1169",
@@ -9034,7 +12522,20 @@
     },
     "concept_cluster": "systematic-enumeration",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.35,
+      "b": 2.62,
+      "c": 0.25
+    },
+    "irt_a": 1.35,
+    "irt_b": 2.62,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1170",
@@ -9067,7 +12568,20 @@
     },
     "concept_cluster": "digit-counting",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.35,
+      "b": 2.5,
+      "c": 0.25
+    },
+    "irt_a": 1.35,
+    "irt_b": 2.5,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what you need to count",
+      "Count systematically one by one",
+      "The total is your answer"
+    ]
   },
   {
     "id": "T1-1171",
@@ -9100,7 +12614,20 @@
     },
     "concept_cluster": "combinatorics-basic",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.35,
+      "b": 2.65,
+      "c": 0.25
+    },
+    "irt_a": 1.35,
+    "irt_b": 2.65,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1172",
@@ -9133,7 +12660,20 @@
     },
     "concept_cluster": "combinatorics-basic",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.35,
+      "b": 2.67,
+      "c": 0.25
+    },
+    "irt_a": 1.35,
+    "irt_b": 2.67,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1173",
@@ -9166,7 +12706,20 @@
     },
     "concept_cluster": "factor-counting",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.35,
+      "b": 2.68,
+      "c": 0.25
+    },
+    "irt_a": 1.35,
+    "irt_b": 2.68,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1174",
@@ -9199,7 +12752,20 @@
     },
     "concept_cluster": "counting-paths",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.35,
+      "b": 2.7,
+      "c": 0.25
+    },
+    "irt_a": 1.35,
+    "irt_b": 2.7,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1175",
@@ -9232,7 +12798,20 @@
     },
     "concept_cluster": "systematic-enumeration",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.35,
+      "b": 2.72,
+      "c": 0.25
+    },
+    "irt_a": 1.35,
+    "irt_b": 2.72,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what you need to count",
+      "Count systematically one by one",
+      "The total is your answer"
+    ]
   },
   {
     "id": "T1-1176",
@@ -9265,7 +12844,20 @@
     },
     "concept_cluster": "counting-paths",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.35,
+      "b": 2.73,
+      "c": 0.25
+    },
+    "irt_a": 1.35,
+    "irt_b": 2.73,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1177",
@@ -9298,7 +12890,20 @@
     },
     "concept_cluster": "counting-shapes",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.35,
+      "b": 2.75,
+      "c": 0.25
+    },
+    "irt_a": 1.35,
+    "irt_b": 2.75,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1178",
@@ -9331,7 +12936,20 @@
     },
     "concept_cluster": "permutations-intro",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.35,
+      "b": 2.77,
+      "c": 0.25
+    },
+    "irt_a": 1.35,
+    "irt_b": 2.77,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1179",
@@ -9364,7 +12982,20 @@
     },
     "concept_cluster": "digit-counting",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.35,
+      "b": 2.78,
+      "c": 0.25
+    },
+    "irt_a": 1.35,
+    "irt_b": 2.78,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1180",
@@ -9397,7 +13028,20 @@
     },
     "concept_cluster": "combinatorics-basic",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.35,
+      "b": 2.8,
+      "c": 0.25
+    },
+    "irt_a": 1.35,
+    "irt_b": 2.8,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1181",
@@ -9430,7 +13074,20 @@
     },
     "concept_cluster": "factor-counting",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.35,
+      "b": 2.48,
+      "c": 0.25
+    },
+    "irt_a": 1.35,
+    "irt_b": 2.48,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1182",
@@ -9463,7 +13120,20 @@
     },
     "concept_cluster": "combinatorics-basic",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.35,
+      "b": 2.5,
+      "c": 0.25
+    },
+    "irt_a": 1.35,
+    "irt_b": 2.5,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1183",
@@ -9496,7 +13166,20 @@
     },
     "concept_cluster": "combinatorics-basic",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.35,
+      "b": 2.52,
+      "c": 0.25
+    },
+    "irt_a": 1.35,
+    "irt_b": 2.52,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1184",
@@ -9529,7 +13212,20 @@
     },
     "concept_cluster": "inclusion-exclusion",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.35,
+      "b": 2.53,
+      "c": 0.25
+    },
+    "irt_a": 1.35,
+    "irt_b": 2.53,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1185",
@@ -9562,7 +13258,20 @@
     },
     "concept_cluster": "permutations-intro",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.35,
+      "b": 2.55,
+      "c": 0.25
+    },
+    "irt_a": 1.35,
+    "irt_b": 2.55,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1186",
@@ -9595,7 +13304,20 @@
     },
     "concept_cluster": "systematic-enumeration",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.35,
+      "b": 2.57,
+      "c": 0.25
+    },
+    "irt_a": 1.35,
+    "irt_b": 2.57,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1187",
@@ -9628,7 +13350,20 @@
     },
     "concept_cluster": "counting-paths",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.35,
+      "b": 2.58,
+      "c": 0.25
+    },
+    "irt_a": 1.35,
+    "irt_b": 2.58,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1188",
@@ -9661,7 +13396,20 @@
     },
     "concept_cluster": "systematic-enumeration",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.35,
+      "b": 2.6,
+      "c": 0.25
+    },
+    "irt_a": 1.35,
+    "irt_b": 2.6,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1189",
@@ -9694,7 +13442,20 @@
     },
     "concept_cluster": "systematic-enumeration",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.35,
+      "b": 2.62,
+      "c": 0.25
+    },
+    "irt_a": 1.35,
+    "irt_b": 2.62,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1190",
@@ -9727,7 +13488,20 @@
     },
     "concept_cluster": "counting-paths",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.35,
+      "b": 2.63,
+      "c": 0.25
+    },
+    "irt_a": 1.35,
+    "irt_b": 2.63,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1191",
@@ -9760,7 +13534,20 @@
     },
     "concept_cluster": "permutations-intro",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.35,
+      "b": 2.65,
+      "c": 0.25
+    },
+    "irt_a": 1.35,
+    "irt_b": 2.65,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1192",
@@ -9793,7 +13580,20 @@
     },
     "concept_cluster": "combinatorics-basic",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.35,
+      "b": 2.67,
+      "c": 0.25
+    },
+    "irt_a": 1.35,
+    "irt_b": 2.67,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1193",
@@ -9826,7 +13626,20 @@
     },
     "concept_cluster": "factor-counting",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.35,
+      "b": 2.68,
+      "c": 0.25
+    },
+    "irt_a": 1.35,
+    "irt_b": 2.68,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1194",
@@ -9859,7 +13672,20 @@
     },
     "concept_cluster": "inclusion-exclusion",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.35,
+      "b": 2.7,
+      "c": 0.25
+    },
+    "irt_a": 1.35,
+    "irt_b": 2.7,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1195",
@@ -9893,7 +13719,20 @@
     },
     "concept_cluster": "counting-paths",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.35,
+      "b": 2.72,
+      "c": 0.25
+    },
+    "irt_a": 1.35,
+    "irt_b": 2.72,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1196",
@@ -9926,7 +13765,20 @@
     },
     "concept_cluster": "digit-counting",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.35,
+      "b": 2.73,
+      "c": 0.25
+    },
+    "irt_a": 1.35,
+    "irt_b": 2.73,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1197",
@@ -9959,7 +13811,20 @@
     },
     "concept_cluster": "systematic-enumeration",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.35,
+      "b": 2.75,
+      "c": 0.25
+    },
+    "irt_a": 1.35,
+    "irt_b": 2.75,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1198",
@@ -9992,7 +13857,20 @@
     },
     "concept_cluster": "factor-counting",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.35,
+      "b": 2.77,
+      "c": 0.25
+    },
+    "irt_a": 1.35,
+    "irt_b": 2.77,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1199",
@@ -10025,7 +13903,20 @@
     },
     "concept_cluster": "combinatorics-basic",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.35,
+      "b": 2.78,
+      "c": 0.25
+    },
+    "irt_a": 1.35,
+    "irt_b": 2.78,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   },
   {
     "id": "T1-1200",
@@ -10058,6 +13949,19 @@
     },
     "concept_cluster": "factor-counting",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.35,
+      "b": 2.8,
+      "c": 0.25
+    },
+    "irt_a": 1.35,
+    "irt_b": 2.8,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify what you need to count",
+      "Count systematically, left to right",
+      "The total count is your answer"
+    ]
   }
 ]

@@ -1,0 +1,28 @@
+<svg viewBox="0 0 260 150" xmlns="http://www.w3.org/2000/svg">
+  <rect width="260" height="150" fill="#FBE9E7" rx="8"/>
+  <rect x="10" y="20" width="43" height="110" fill="none" stroke="#BF360C" stroke-width="1" stroke-dasharray="3" rx="5"/>
+  <circle cx="22" cy="40" r="8" fill="#98D8C8" stroke="#333" stroke-width="1"/>
+  <circle cx="42" cy="40" r="8" fill="#98D8C8" stroke="#333" stroke-width="1"/>
+  <circle cx="22" cy="62" r="8" fill="#98D8C8" stroke="#333" stroke-width="1"/>
+  <circle cx="42" cy="62" r="8" fill="#98D8C8" stroke="#333" stroke-width="1"/>
+  <rect x="58" y="20" width="43" height="110" fill="none" stroke="#BF360C" stroke-width="1" stroke-dasharray="3" rx="5"/>
+  <circle cx="70" cy="40" r="8" fill="#98D8C8" stroke="#333" stroke-width="1"/>
+  <circle cx="90" cy="40" r="8" fill="#98D8C8" stroke="#333" stroke-width="1"/>
+  <circle cx="70" cy="62" r="8" fill="#98D8C8" stroke="#333" stroke-width="1"/>
+  <circle cx="90" cy="62" r="8" fill="#98D8C8" stroke="#333" stroke-width="1"/>
+  <rect x="106" y="20" width="43" height="110" fill="none" stroke="#BF360C" stroke-width="1" stroke-dasharray="3" rx="5"/>
+  <circle cx="118" cy="40" r="8" fill="#98D8C8" stroke="#333" stroke-width="1"/>
+  <circle cx="138" cy="40" r="8" fill="#98D8C8" stroke="#333" stroke-width="1"/>
+  <circle cx="118" cy="62" r="8" fill="#98D8C8" stroke="#333" stroke-width="1"/>
+  <circle cx="138" cy="62" r="8" fill="#98D8C8" stroke="#333" stroke-width="1"/>
+  <rect x="154" y="20" width="43" height="110" fill="none" stroke="#BF360C" stroke-width="1" stroke-dasharray="3" rx="5"/>
+  <circle cx="166" cy="40" r="8" fill="#98D8C8" stroke="#333" stroke-width="1"/>
+  <circle cx="186" cy="40" r="8" fill="#98D8C8" stroke="#333" stroke-width="1"/>
+  <circle cx="166" cy="62" r="8" fill="#98D8C8" stroke="#333" stroke-width="1"/>
+  <circle cx="186" cy="62" r="8" fill="#98D8C8" stroke="#333" stroke-width="1"/>
+  <rect x="202" y="20" width="43" height="110" fill="none" stroke="#BF360C" stroke-width="1" stroke-dasharray="3" rx="5"/>
+  <circle cx="214" cy="40" r="8" fill="#98D8C8" stroke="#333" stroke-width="1"/>
+  <circle cx="234" cy="40" r="8" fill="#98D8C8" stroke="#333" stroke-width="1"/>
+  <circle cx="214" cy="62" r="8" fill="#98D8C8" stroke="#333" stroke-width="1"/>
+  <circle cx="234" cy="62" r="8" fill="#98D8C8" stroke="#333" stroke-width="1"/>
+</svg>

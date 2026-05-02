@@ -1,0 +1,29 @@
+<svg viewBox="0 0 260 150" xmlns="http://www.w3.org/2000/svg">
+<rect width="260" height="150" fill="#FFFEF5" rx="8"/>
+<text x="130" y="18" text-anchor="middle" font-size="9" font-weight="bold" fill="#2C3E50">Indian Place Value Chart</text>
+<rect x="30" y="30" width="35" height="25" fill="#EAF2F8" stroke="#2C3E50" stroke-width="1"/>
+<text x="47" y="47" text-anchor="middle" font-size="8" font-weight="bold" fill="#2C3E50">L</text>
+<rect x="30" y="55" width="35" height="30" fill="#FFF" stroke="#2C3E50" stroke-width="1"/>
+<text x="47" y="75" text-anchor="middle" font-size="12" font-weight="bold" fill="#E74C3C">9</text>
+<rect x="68" y="30" width="35" height="25" fill="#EAF2F8" stroke="#2C3E50" stroke-width="1"/>
+<text x="85" y="47" text-anchor="middle" font-size="8" font-weight="bold" fill="#2C3E50">TTh</text>
+<rect x="68" y="55" width="35" height="30" fill="#FFF" stroke="#2C3E50" stroke-width="1"/>
+<text x="85" y="75" text-anchor="middle" font-size="12" font-weight="bold" fill="#E74C3C">6</text>
+<rect x="106" y="30" width="35" height="25" fill="#EAF2F8" stroke="#2C3E50" stroke-width="1"/>
+<text x="123" y="47" text-anchor="middle" font-size="8" font-weight="bold" fill="#2C3E50">Th</text>
+<rect x="106" y="55" width="35" height="30" fill="#FFF" stroke="#2C3E50" stroke-width="1"/>
+<text x="123" y="75" text-anchor="middle" font-size="12" font-weight="bold" fill="#E74C3C">5</text>
+<rect x="144" y="30" width="35" height="25" fill="#EAF2F8" stroke="#2C3E50" stroke-width="1"/>
+<text x="161" y="47" text-anchor="middle" font-size="8" font-weight="bold" fill="#2C3E50">H</text>
+<rect x="144" y="55" width="35" height="30" fill="#FFF" stroke="#2C3E50" stroke-width="1"/>
+<text x="161" y="75" text-anchor="middle" font-size="12" font-weight="bold" fill="#E74C3C">4</text>
+<rect x="182" y="30" width="35" height="25" fill="#EAF2F8" stroke="#2C3E50" stroke-width="1"/>
+<text x="199" y="47" text-anchor="middle" font-size="8" font-weight="bold" fill="#2C3E50">T</text>
+<rect x="182" y="55" width="35" height="30" fill="#FFF" stroke="#2C3E50" stroke-width="1"/>
+<text x="199" y="75" text-anchor="middle" font-size="12" font-weight="bold" fill="#E74C3C">0</text>
+<rect x="220" y="30" width="35" height="25" fill="#EAF2F8" stroke="#2C3E50" stroke-width="1"/>
+<text x="237" y="47" text-anchor="middle" font-size="8" font-weight="bold" fill="#2C3E50">O</text>
+<rect x="220" y="55" width="35" height="30" fill="#FFF" stroke="#2C3E50" stroke-width="1"/>
+<text x="237" y="75" text-anchor="middle" font-size="12" font-weight="bold" fill="#E74C3C">1</text>
+<text x="105" y="105" text-anchor="middle" font-size="8" fill="#666">Indian: L,TTh,Th,H T O</text>
+</svg>

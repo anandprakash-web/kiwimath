@@ -1,0 +1,20 @@
+<svg viewBox="0 0 240 140" xmlns="http://www.w3.org/2000/svg">
+<rect width="240" height="140" fill="#FFFEF5" rx="8"/>
+<text x="120" y="16" text-anchor="middle" font-size="9" font-weight="bold" fill="#2C3E50">Temperature This Week (°C)</text>
+<rect x="-5" y="30" width="35" height="80" fill="#FF6B6B" rx="3"/>
+<text x="12" y="125" text-anchor="middle" font-size="8" fill="#333">Mon</text>
+<text x="12" y="26" text-anchor="middle" font-size="7" fill="#333">38</text>
+<rect x="45" y="30" width="35" height="80" fill="#4ECDC4" rx="3"/>
+<text x="62" y="125" text-anchor="middle" font-size="8" fill="#333">Tue</text>
+<text x="62" y="26" text-anchor="middle" font-size="7" fill="#333">38</text>
+<rect x="95" y="35" width="35" height="75" fill="#45B7D1" rx="3"/>
+<text x="112" y="125" text-anchor="middle" font-size="8" fill="#333">Wed</text>
+<text x="112" y="31" text-anchor="middle" font-size="7" fill="#333">36</text>
+<rect x="145" y="56" width="35" height="54" fill="#96CEB4" rx="3"/>
+<text x="162" y="125" text-anchor="middle" font-size="8" fill="#333">Thu</text>
+<text x="162" y="52" text-anchor="middle" font-size="7" fill="#333">26</text>
+<rect x="195" y="30" width="35" height="80" fill="#FFEAA7" rx="3"/>
+<text x="212" y="125" text-anchor="middle" font-size="8" fill="#333">Fri</text>
+<text x="212" y="26" text-anchor="middle" font-size="7" fill="#333">38</text>
+
+</svg>

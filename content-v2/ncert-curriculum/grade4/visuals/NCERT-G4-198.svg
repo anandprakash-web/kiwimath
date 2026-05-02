@@ -1,0 +1,16 @@
+<svg viewBox="0 0 240 140" xmlns="http://www.w3.org/2000/svg">
+<rect width="240" height="140" fill="#FFFEF5" rx="8"/>
+<text x="120" y="20" text-anchor="middle" font-size="9" font-weight="bold" fill="#2C3E50">Find the missing number</text>
+<circle cx="40" cy="70" r="18" fill="#AED6F1" stroke="#2C3E50" stroke-width="1.5"/>
+<text x="40" y="74" text-anchor="middle" font-size="10" font-weight="bold" fill="#2C3E50">3</text>
+<circle cx="80" cy="70" r="18" fill="#AED6F1" stroke="#2C3E50" stroke-width="1.5"/>
+<text x="80" y="74" text-anchor="middle" font-size="10" font-weight="bold" fill="#2C3E50">6</text>
+<circle cx="120" cy="70" r="18" fill="#AED6F1" stroke="#2C3E50" stroke-width="1.5"/>
+<text x="120" y="74" text-anchor="middle" font-size="10" font-weight="bold" fill="#2C3E50">12</text>
+<circle cx="160" cy="70" r="18" fill="#AED6F1" stroke="#2C3E50" stroke-width="1.5"/>
+<text x="160" y="74" text-anchor="middle" font-size="10" font-weight="bold" fill="#2C3E50">24</text>
+<circle cx="200" cy="70" r="18" fill="#AED6F1" stroke="#2C3E50" stroke-width="1.5"/>
+<text x="200" y="74" text-anchor="middle" font-size="10" font-weight="bold" fill="#E74C3C">?</text>
+
+<text x="120" y="120" text-anchor="middle" font-size="8" fill="#555">What comes next in the pattern?</text>
+</svg>

@@ -1,0 +1,12 @@
+<svg viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="120" fill="#FFFEF5" rx="8"/>
+  <line x1="100" y1="5" x2="100" y2="115" stroke="#CCC" stroke-width="1" stroke-dasharray="4"/>
+  <text x="50" y="12" text-anchor="middle" font-size="8" fill="#666">Group A</text>
+  <text x="150" y="12" text-anchor="middle" font-size="8" fill="#666">Group B</text>
+  <circle cx="27" cy="32" r="10" fill="#85C1E9" stroke="#333" stroke-width="1"/>
+  <circle cx="55" cy="32" r="10" fill="#85C1E9" stroke="#333" stroke-width="1"/>
+  <circle cx="83" cy="32" r="10" fill="#85C1E9" stroke="#333" stroke-width="1"/>
+  <circle cx="122" cy="32" r="10" fill="#4ECDC4" stroke="#333" stroke-width="1"/>
+  <circle cx="150" cy="32" r="10" fill="#4ECDC4" stroke="#333" stroke-width="1"/>
+  <circle cx="178" cy="32" r="10" fill="#4ECDC4" stroke="#333" stroke-width="1"/>
+</svg>

@@ -101,6 +101,27 @@ class ApiClient {
         .toList();
   }
 
+  /// Fetch chapters for a curriculum + grade (e.g. NCERT Grade 1 → Ch1..Ch13).
+  Future<List<Map<String, dynamic>>> getChapters({
+    required String curriculum,
+    required int grade,
+  }) async {
+    final params = <String, String>{
+      'curriculum': curriculum,
+      'grade': grade.toString(),
+    };
+    final uri = Uri.parse('$baseUrl/v2/chapters')
+        .replace(queryParameters: params);
+    final res = await _withRetry(
+        () => http.get(uri).timeout(const Duration(seconds: 20)));
+    if (res.statusCode != 200) {
+      throw ApiException(
+          'GET /v2/chapters failed: ${res.statusCode} ${res.body}');
+    }
+    final list = jsonDecode(res.body) as List<dynamic>;
+    return list.cast<Map<String, dynamic>>();
+  }
+
   /// Fetch the next question for a topic with adaptive difficulty.
   Future<QuestionV2> nextQuestionV2({
     String? topic,
@@ -109,6 +130,8 @@ class ApiClient {
     List<String>? exclude,
     String? userId,
     int? grade,
+    String? chapter,
+    String? curriculum,
   }) async {
     final params = <String, String>{};
     if (topic != null) params['topic'] = topic;
@@ -119,6 +142,8 @@ class ApiClient {
     }
     if (userId != null) params['user_id'] = userId;
     if (grade != null) params['grade'] = grade.toString();
+    if (chapter != null) params['chapter'] = chapter;
+    if (curriculum != null) params['curriculum'] = curriculum;
     final uri = Uri.parse('$baseUrl/v2/questions/next')
         .replace(queryParameters: params);
     final res = await _withRetry(
@@ -148,6 +173,8 @@ class ApiClient {
   Future<AnswerCheckResponse> checkAnswerV2({
     required String questionId,
     required int selectedAnswer,
+    int? integerAnswer,
+    List<int>? dragOrder,
     String? userId,
     int timeTakenMs = 0,
     int hintsUsed = 0,
@@ -156,6 +183,8 @@ class ApiClient {
       'question_id': questionId,
       'selected_answer': selectedAnswer,
     };
+    if (integerAnswer != null) body['integer_answer'] = integerAnswer;
+    if (dragOrder != null) body['drag_order'] = dragOrder;
     if (userId != null) body['user_id'] = userId;
     if (timeTakenMs > 0) body['time_taken_ms'] = timeTakenMs;
     if (hintsUsed > 0) body['hints_used'] = hintsUsed;
@@ -223,12 +252,15 @@ class ApiClient {
   Future<List<QuestionV2>> getBenchmarkQuestions({
     required int grade,
     int count = 10,
+    String? userId,
   }) async {
-    final uri = Uri.parse('$baseUrl/v2/onboarding/benchmark/questions')
-        .replace(queryParameters: {
+    final params = <String, String>{
       'grade': grade.toString(),
       'count': count.toString(),
-    });
+    };
+    if (userId != null) params['user_id'] = userId;
+    final uri = Uri.parse('$baseUrl/v2/onboarding/benchmark/questions')
+        .replace(queryParameters: params);
     final res = await _withRetry(
         () => http.get(uri).timeout(const Duration(seconds: 20)));
     if (res.statusCode != 200) {
@@ -272,9 +304,16 @@ class ApiClient {
   // ---------------------------------------------------------------------------
 
   /// Fetch parent dashboard summary for a child.
-  Future<Map<String, dynamic>> getParentDashboard({required String userId}) async {
+  Future<Map<String, dynamic>> getParentDashboard({
+    required String userId,
+    String? curriculum,
+  }) async {
+    final params = <String, String>{'user_id': userId};
+    if (curriculum != null && curriculum.isNotEmpty) {
+      params['curriculum'] = curriculum;
+    }
     final uri = Uri.parse('$baseUrl/v2/parent/dashboard')
-        .replace(queryParameters: {'user_id': userId});
+        .replace(queryParameters: params);
     final res = await _withRetry(
         () => http.get(uri).timeout(const Duration(seconds: 20)));
     if (res.statusCode != 200) {
@@ -436,11 +475,13 @@ class ApiClient {
     String? name,
     int? grade,
     String? avatar,
+    String? curriculum,
   }) async {
     final body = <String, dynamic>{};
     if (name != null) body['display_name'] = name;
     if (grade != null) body['grade'] = grade;
     if (avatar != null) body['avatar'] = avatar;
+    if (curriculum != null) body['curriculum'] = curriculum;
     final uri = Uri.parse('$baseUrl/v2/student/profile')
         .replace(queryParameters: {'user_id': userId});
     final res = await _withRetry(() => http
@@ -474,6 +515,83 @@ class ApiClient {
     }
     return StudentLevels.fromJson(
         jsonDecode(res.body) as Map<String, dynamic>);
+  }
+
+  // ---------------------------------------------------------------------------
+  // Question Flagging API (closed-loop quality system)
+  // ---------------------------------------------------------------------------
+
+  /// Flag a problematic question for quality review.
+  ///
+  /// [flagType] must be one of: answer_error, hint_not_good, visual_missing,
+  /// visual_mismatch, question_error, other.
+  Future<Map<String, dynamic>> flagQuestion({
+    required String questionId,
+    required String studentId,
+    required String flagType,
+    String? comment,
+    String? sessionId,
+  }) async {
+    final body = <String, dynamic>{
+      'question_id': questionId,
+      'student_id': studentId,
+      'flag_type': flagType,
+    };
+    if (comment != null && comment.trim().isNotEmpty) {
+      body['comment'] = comment.trim();
+    }
+    if (sessionId != null) body['session_id'] = sessionId;
+    final uri = Uri.parse('$baseUrl/flag/submit');
+    final res = await _withRetry(() => http
+        .post(
+          uri,
+          headers: {'Content-Type': 'application/json'},
+          body: jsonEncode(body),
+        )
+        .timeout(const Duration(seconds: 10)));
+    if (res.statusCode != 200) {
+      throw ApiException(
+          'POST /flag/submit failed: ${res.statusCode} ${res.body}');
+    }
+    return jsonDecode(res.body) as Map<String, dynamic>;
+  }
+
+  /// Submit a batch of diagnostic review flags with reasons.
+  ///
+  /// Used by admin (Anand) to flag questions during diagnostic test review.
+  /// Each flag item includes question_id, reason, severity, and optional grade.
+  Future<Map<String, dynamic>> submitDiagnosticReview({
+    required String reviewerId,
+    required List<Map<String, dynamic>> flags,
+    String? sessionNotes,
+  }) async {
+    final items = flags.map((f) => <String, dynamic>{
+      'question_id': f['question_id'],
+      'flag_type': 'diagnostic_review',
+      'reason': f['reason'] ?? '',
+      'severity': f['severity'] ?? 'medium',
+      if (f['grade'] != null) 'grade': f['grade'],
+    }).toList();
+
+    final body = <String, dynamic>{
+      'reviewer_id': reviewerId,
+      'items': items,
+    };
+    if (sessionNotes != null) body['session_notes'] = sessionNotes;
+
+    final uri = Uri.parse('$baseUrl/flag/diagnostic-review');
+    final res = await _withRetry(() => http
+        .post(
+          uri,
+          headers: {'Content-Type': 'application/json'},
+          body: jsonEncode(body),
+        )
+        .timeout(const Duration(seconds: 15)));
+    if (res.statusCode != 200) {
+      throw ApiException(
+          'POST /flag/diagnostic-review failed: ${res.statusCode} ${res.body}');
+    }
+    return jsonDecode(res.body) as Map<String, dynamic>;
   }
 
   /// Unlock a topic using Kiwi Coins (500 coins).

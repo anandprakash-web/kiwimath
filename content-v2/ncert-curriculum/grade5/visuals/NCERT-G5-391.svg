@@ -1,0 +1,9 @@
+<svg viewBox="0 0 260 150" xmlns="http://www.w3.org/2000/svg">
+  <line x1="30" y1="80" x2="230" y2="80" stroke="#666" stroke-width="2" stroke-dasharray="5,3"/>
+  <circle cx="40" cy="80" r="8" fill="#4CAF50"/>
+  <circle cx="220" cy="80" r="8" fill="#F44336"/>
+  <text x="40" y="105" text-anchor="middle" font-size="9" fill="#333">Lucknow</text>
+  <text x="220" y="105" text-anchor="middle" font-size="9" fill="#333">Varanasi</text>
+  <text x="130" y="70" text-anchor="middle" font-size="10" fill="#1565C0">300 km</text>
+  <polygon points="120,80 130,75 130,85" fill="#FF9800"/>
+</svg>

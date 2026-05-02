@@ -1,0 +1,6 @@
+<svg viewBox="0 0 260 150" xmlns="http://www.w3.org/2000/svg">
+<rect width="260" height="150" fill="#FFFEF5" rx="8"/>
+<text x="130" y="18" text-anchor="middle" font-size="9" font-weight="bold" fill="#2C3E50">Lines of Symmetry</text>
+<rect x="80" y="35" width="100" height="100" fill="#AED6F1" stroke="#2C3E50" stroke-width="2"/>
+<line x1="130" y1="30" x2="130" y2="140" stroke="#E74C3C" stroke-width="1" stroke-dasharray="4"/>
+<line x1="75" y1="85" x2="185" y2="85" stroke="#E74C3C" stroke-width="1" stroke-dasharray="4"/></svg>

@@ -1,0 +1,7 @@
+<svg viewBox="0 0 260 150" xmlns="http://www.w3.org/2000/svg">
+<rect width="260" height="150" fill="#FFFEF5" rx="8"/>
+<text x="130" y="18" text-anchor="middle" font-size="9" font-weight="bold" fill="#2C3E50">Identify the Triangle</text>
+<polygon points="130,30 70,120 190,120" fill="#AED6F1" stroke="#2C3E50" stroke-width="2"/>
+<text x="95" y="70" font-size="7" fill="#E74C3C">5 cm</text>
+<text x="155" y="70" font-size="7" fill="#E74C3C">5 cm</text>
+<text x="130" y="135" text-anchor="middle" font-size="7" fill="#E74C3C">5 cm</text></svg>

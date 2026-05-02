@@ -30,7 +30,20 @@
     },
     "concept_cluster": "number-sequences",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.05,
+      "b": 1.15,
+      "c": 0.25
+    },
+    "irt_a": 1.05,
+    "irt_b": 1.15,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at the differences: 4-2=2",
+      "The pattern adds 2 each time",
+      "Add 2 to the last number to find next"
+    ]
   },
   {
     "id": "T3-0902",
@@ -63,7 +76,20 @@
     },
     "concept_cluster": "number-sequences",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.05,
+      "b": 1.17,
+      "c": 0.25
+    },
+    "irt_a": 1.05,
+    "irt_b": 1.17,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at the differences: 10-5=5",
+      "The pattern adds 5 each time",
+      "Add 5 to the last number to find next"
+    ]
   },
   {
     "id": "T3-0903",
@@ -96,7 +122,20 @@
     },
     "concept_cluster": "number-sequences",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.05,
+      "b": 1.18,
+      "c": 0.25
+    },
+    "irt_a": 1.05,
+    "irt_b": 1.18,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at the differences: 6-3=3",
+      "The pattern adds 3 each time",
+      "Add 3 to the last number to find next"
+    ]
   },
   {
     "id": "T3-0904",
@@ -129,7 +168,20 @@
     },
     "concept_cluster": "number-sequences",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.05,
+      "b": 1.2,
+      "c": 0.25
+    },
+    "irt_a": 1.05,
+    "irt_b": 1.2,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at the differences: 20-10=10",
+      "The pattern adds 10 each time",
+      "Add 10 to the last number to find next"
+    ]
   },
   {
     "id": "T3-0905",
@@ -162,7 +214,20 @@
     },
     "concept_cluster": "number-sequences",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.05,
+      "b": 1.22,
+      "c": 0.25
+    },
+    "irt_a": 1.05,
+    "irt_b": 1.22,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at the differences: 3-1=2",
+      "The pattern adds 2 each time",
+      "Add 2 to the last number to find next"
+    ]
   },
   {
     "id": "T3-0906",
@@ -195,7 +260,20 @@
     },
     "concept_cluster": "number-sequences",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.05,
+      "b": 1.23,
+      "c": 0.25
+    },
+    "irt_a": 1.05,
+    "irt_b": 1.23,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-0907",
@@ -228,7 +306,20 @@
     },
     "concept_cluster": "number-sequences",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.05,
+      "b": 1.25,
+      "c": 0.25
+    },
+    "irt_a": 1.05,
+    "irt_b": 1.25,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at the differences: 90-100=-10",
+      "The pattern adds -10 each time",
+      "Add -10 to the last number to find next"
+    ]
   },
   {
     "id": "T3-0908",
@@ -261,7 +352,20 @@
     },
     "concept_cluster": "number-sequences",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.05,
+      "b": 1.27,
+      "c": 0.25
+    },
+    "irt_a": 1.05,
+    "irt_b": 1.27,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at the differences: 14-7=7",
+      "The pattern adds 7 each time",
+      "Add 7 to the last number to find next"
+    ]
   },
   {
     "id": "T3-0909",
@@ -294,7 +398,20 @@
     },
     "concept_cluster": "number-sequences",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.05,
+      "b": 1.28,
+      "c": 0.25
+    },
+    "irt_a": 1.05,
+    "irt_b": 1.28,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at the differences: 5-2=3",
+      "The pattern adds 3 each time",
+      "Add 3 to the last number to find next"
+    ]
   },
   {
     "id": "T3-0910",
@@ -327,7 +444,20 @@
     },
     "concept_cluster": "number-sequences",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.05,
+      "b": 1.3,
+      "c": 0.25
+    },
+    "irt_a": 1.05,
+    "irt_b": 1.3,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at the differences: 45-50=-5",
+      "The pattern adds -5 each time",
+      "Add -5 to the last number to find next"
+    ]
   },
   {
     "id": "T3-0911",
@@ -360,7 +490,20 @@
     },
     "concept_cluster": "pattern-rules",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.05,
+      "b": 1.32,
+      "c": 0.25
+    },
+    "irt_a": 1.05,
+    "irt_b": 1.32,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at the differences: 4-3=1",
+      "The pattern adds 1 each time",
+      "Add 1 to the last number to find next"
+    ]
   },
   {
     "id": "T3-0912",
@@ -393,7 +536,20 @@
     },
     "concept_cluster": "pattern-rules",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.05,
+      "b": 1.33,
+      "c": 0.25
+    },
+    "irt_a": 1.05,
+    "irt_b": 1.33,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-0913",
@@ -426,7 +582,20 @@
     },
     "concept_cluster": "pattern-rules",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.05,
+      "b": 1.35,
+      "c": 0.25
+    },
+    "irt_a": 1.05,
+    "irt_b": 1.35,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-0914",
@@ -459,7 +628,20 @@
     },
     "concept_cluster": "pattern-rules",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.05,
+      "b": 1.37,
+      "c": 0.25
+    },
+    "irt_a": 1.05,
+    "irt_b": 1.37,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-0915",
@@ -492,7 +674,20 @@
     },
     "concept_cluster": "pattern-rules",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.05,
+      "b": 1.38,
+      "c": 0.25
+    },
+    "irt_a": 1.05,
+    "irt_b": 1.38,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at the differences: 4-1=3",
+      "The pattern adds 3 each time",
+      "Add 3 to the last number to find next"
+    ]
   },
   {
     "id": "T3-0916",
@@ -526,7 +721,20 @@
     },
     "concept_cluster": "pattern-rules",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.05,
+      "b": 1.4,
+      "c": 0.25
+    },
+    "irt_a": 1.05,
+    "irt_b": 1.4,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-0917",
@@ -559,7 +767,20 @@
     },
     "concept_cluster": "growing-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.05,
+      "b": 1.15,
+      "c": 0.25
+    },
+    "irt_a": 1.05,
+    "irt_b": 1.15,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-0918",
@@ -593,7 +814,20 @@
     },
     "concept_cluster": "growing-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.05,
+      "b": 1.17,
+      "c": 0.25
+    },
+    "irt_a": 1.05,
+    "irt_b": 1.17,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-0919",
@@ -627,7 +861,20 @@
     },
     "concept_cluster": "growing-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.05,
+      "b": 1.18,
+      "c": 0.25
+    },
+    "irt_a": 1.05,
+    "irt_b": 1.18,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-0920",
@@ -660,7 +907,20 @@
     },
     "concept_cluster": "growing-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.05,
+      "b": 1.2,
+      "c": 0.25
+    },
+    "irt_a": 1.05,
+    "irt_b": 1.2,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-0921",
@@ -693,7 +953,20 @@
     },
     "concept_cluster": "growing-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.05,
+      "b": 1.22,
+      "c": 0.25
+    },
+    "irt_a": 1.05,
+    "irt_b": 1.22,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-0922",
@@ -726,7 +999,20 @@
     },
     "concept_cluster": "growing-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.05,
+      "b": 1.23,
+      "c": 0.25
+    },
+    "irt_a": 1.05,
+    "irt_b": 1.23,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-0923",
@@ -759,7 +1045,20 @@
     },
     "concept_cluster": "function-tables",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.05,
+      "b": 1.25,
+      "c": 0.25
+    },
+    "irt_a": 1.05,
+    "irt_b": 1.25,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-0924",
@@ -792,7 +1091,20 @@
     },
     "concept_cluster": "function-tables",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.05,
+      "b": 1.27,
+      "c": 0.25
+    },
+    "irt_a": 1.05,
+    "irt_b": 1.27,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what changes between items",
+      "Find the rule (adding, subtracting, repeating?)",
+      "Apply the rule to find what comes next"
+    ]
   },
   {
     "id": "T3-0925",
@@ -825,7 +1137,20 @@
     },
     "concept_cluster": "function-tables",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.05,
+      "b": 1.28,
+      "c": 0.25
+    },
+    "irt_a": 1.05,
+    "irt_b": 1.28,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-0926",
@@ -858,7 +1183,20 @@
     },
     "concept_cluster": "function-tables",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.05,
+      "b": 1.3,
+      "c": 0.25
+    },
+    "irt_a": 1.05,
+    "irt_b": 1.3,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-0927",
@@ -891,7 +1229,20 @@
     },
     "concept_cluster": "function-tables",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.05,
+      "b": 1.32,
+      "c": 0.25
+    },
+    "irt_a": 1.05,
+    "irt_b": 1.32,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what changes between items",
+      "Find the rule (adding, subtracting, repeating?)",
+      "Apply the rule to find what comes next"
+    ]
   },
   {
     "id": "T3-0928",
@@ -924,7 +1275,20 @@
     },
     "concept_cluster": "function-tables",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.05,
+      "b": 1.33,
+      "c": 0.25
+    },
+    "irt_a": 1.05,
+    "irt_b": 1.33,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what changes between items",
+      "Find the rule (adding, subtracting, repeating?)",
+      "Apply the rule to find what comes next"
+    ]
   },
   {
     "id": "T3-0929",
@@ -958,7 +1322,20 @@
     },
     "concept_cluster": "modular-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.05,
+      "b": 1.35,
+      "c": 0.25
+    },
+    "irt_a": 1.05,
+    "irt_b": 1.35,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify the repeating group of items",
+      "Count position to find where in the cycle",
+      "Match the position to the repeating unit"
+    ]
   },
   {
     "id": "T3-0930",
@@ -992,7 +1369,20 @@
     },
     "concept_cluster": "modular-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.05,
+      "b": 1.37,
+      "c": 0.25
+    },
+    "irt_a": 1.05,
+    "irt_b": 1.37,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what changes between items",
+      "Find the rule (adding, subtracting, repeating?)",
+      "Apply the rule to find what comes next"
+    ]
   },
   {
     "id": "T3-0931",
@@ -1026,7 +1416,20 @@
     },
     "concept_cluster": "modular-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.05,
+      "b": 1.38,
+      "c": 0.25
+    },
+    "irt_a": 1.05,
+    "irt_b": 1.38,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify the repeating group of items",
+      "Count position to find where in the cycle",
+      "Match the position to the repeating unit"
+    ]
   },
   {
     "id": "T3-0932",
@@ -1060,7 +1463,20 @@
     },
     "concept_cluster": "modular-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.05,
+      "b": 1.4,
+      "c": 0.25
+    },
+    "irt_a": 1.05,
+    "irt_b": 1.4,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what changes between items",
+      "Find the rule (adding, subtracting, repeating?)",
+      "Apply the rule to find what comes next"
+    ]
   },
   {
     "id": "T3-0933",
@@ -1093,7 +1509,20 @@
     },
     "concept_cluster": "modular-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.05,
+      "b": 1.42,
+      "c": 0.25
+    },
+    "irt_a": 1.05,
+    "irt_b": 1.42,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify the repeating group of items",
+      "Count position to find where in the cycle",
+      "Match the position to the repeating unit"
+    ]
   },
   {
     "id": "T3-0934",
@@ -1127,7 +1556,20 @@
     },
     "concept_cluster": "modular-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.05,
+      "b": 1.43,
+      "c": 0.25
+    },
+    "irt_a": 1.05,
+    "irt_b": 1.43,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify the repeating group of items",
+      "Count position to find where in the cycle",
+      "Match the position to the repeating unit"
+    ]
   },
   {
     "id": "T3-0935",
@@ -1160,7 +1602,20 @@
     },
     "concept_cluster": "digit-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.05,
+      "b": 1.15,
+      "c": 0.25
+    },
+    "irt_a": 1.05,
+    "irt_b": 1.15,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at the differences: 4-2=2",
+      "The pattern adds 2 each time",
+      "Add 2 to the last number to find next"
+    ]
   },
   {
     "id": "T3-0936",
@@ -1194,7 +1649,20 @@
     },
     "concept_cluster": "digit-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.05,
+      "b": 1.17,
+      "c": 0.25
+    },
+    "irt_a": 1.05,
+    "irt_b": 1.17,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-0937",
@@ -1228,7 +1696,20 @@
     },
     "concept_cluster": "digit-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.05,
+      "b": 1.18,
+      "c": 0.25
+    },
+    "irt_a": 1.05,
+    "irt_b": 1.18,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what changes between items",
+      "Find the rule (adding, subtracting, repeating?)",
+      "Apply the rule to find what comes next"
+    ]
   },
   {
     "id": "T3-0938",
@@ -1261,7 +1742,20 @@
     },
     "concept_cluster": "digit-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.05,
+      "b": 1.2,
+      "c": 0.25
+    },
+    "irt_a": 1.05,
+    "irt_b": 1.2,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what changes between items",
+      "Find the rule (adding, subtracting, repeating?)",
+      "Apply the rule to find what comes next"
+    ]
   },
   {
     "id": "T3-0939",
@@ -1295,7 +1789,20 @@
     },
     "concept_cluster": "digit-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.05,
+      "b": 1.22,
+      "c": 0.25
+    },
+    "irt_a": 1.05,
+    "irt_b": 1.22,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what changes between items",
+      "Find the rule (adding, subtracting, repeating?)",
+      "Apply the rule to find what comes next"
+    ]
   },
   {
     "id": "T3-0940",
@@ -1329,7 +1836,20 @@
     },
     "concept_cluster": "digit-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.05,
+      "b": 1.23,
+      "c": 0.25
+    },
+    "irt_a": 1.05,
+    "irt_b": 1.23,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at the differences: 6-6=0",
+      "The pattern adds 0 each time",
+      "Add 0 to the last number to find next"
+    ]
   },
   {
     "id": "T3-0941",
@@ -1362,7 +1882,20 @@
     },
     "concept_cluster": "algebraic-expressions",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.05,
+      "b": 1.25,
+      "c": 0.25
+    },
+    "irt_a": 1.05,
+    "irt_b": 1.25,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at the differences: 2-3=-1",
+      "The pattern adds -1 each time",
+      "Add -1 to the last number to find next"
+    ]
   },
   {
     "id": "T3-0942",
@@ -1395,7 +1928,20 @@
     },
     "concept_cluster": "algebraic-expressions",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.05,
+      "b": 1.27,
+      "c": 0.25
+    },
+    "irt_a": 1.05,
+    "irt_b": 1.27,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what changes between items",
+      "Find the rule (adding, subtracting, repeating?)",
+      "Apply the rule to find what comes next"
+    ]
   },
   {
     "id": "T3-0943",
@@ -1428,7 +1974,20 @@
     },
     "concept_cluster": "algebraic-expressions",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.05,
+      "b": 1.28,
+      "c": 0.25
+    },
+    "irt_a": 1.05,
+    "irt_b": 1.28,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what changes between items",
+      "Find the rule (adding, subtracting, repeating?)",
+      "Apply the rule to find what comes next"
+    ]
   },
   {
     "id": "T3-0944",
@@ -1462,7 +2021,20 @@
     },
     "concept_cluster": "algebraic-expressions",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.05,
+      "b": 1.3,
+      "c": 0.25
+    },
+    "irt_a": 1.05,
+    "irt_b": 1.3,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what changes between items",
+      "Find the rule (adding, subtracting, repeating?)",
+      "Apply the rule to find what comes next"
+    ]
   },
   {
     "id": "T3-0945",
@@ -1495,7 +2067,20 @@
     },
     "concept_cluster": "algebraic-expressions",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.05,
+      "b": 1.32,
+      "c": 0.25
+    },
+    "irt_a": 1.05,
+    "irt_b": 1.32,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-0946",
@@ -1528,7 +2113,20 @@
     },
     "concept_cluster": "algebraic-expressions",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.05,
+      "b": 1.33,
+      "c": 0.25
+    },
+    "irt_a": 1.05,
+    "irt_b": 1.33,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-0947",
@@ -1561,7 +2159,20 @@
     },
     "concept_cluster": "sequence-sums",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.05,
+      "b": 1.35,
+      "c": 0.25
+    },
+    "irt_a": 1.05,
+    "irt_b": 1.35,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at the differences: 2-1=1",
+      "The pattern adds 1 each time",
+      "Add 1 to the last number to find next"
+    ]
   },
   {
     "id": "T3-0948",
@@ -1594,7 +2205,20 @@
     },
     "concept_cluster": "sequence-sums",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.05,
+      "b": 1.37,
+      "c": 0.25
+    },
+    "irt_a": 1.05,
+    "irt_b": 1.37,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-0949",
@@ -1627,7 +2251,20 @@
     },
     "concept_cluster": "sequence-sums",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.05,
+      "b": 1.38,
+      "c": 0.25
+    },
+    "irt_a": 1.05,
+    "irt_b": 1.38,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at the differences: 20-10=10",
+      "The pattern adds 10 each time",
+      "Add 10 to the last number to find next"
+    ]
   },
   {
     "id": "T3-0950",
@@ -1661,7 +2298,20 @@
     },
     "concept_cluster": "sequence-sums",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.05,
+      "b": 1.4,
+      "c": 0.25
+    },
+    "irt_a": 1.05,
+    "irt_b": 1.4,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-0951",
@@ -1694,7 +2344,20 @@
     },
     "concept_cluster": "sequence-sums",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.05,
+      "b": 1.42,
+      "c": 0.25
+    },
+    "irt_a": 1.05,
+    "irt_b": 1.42,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at the differences: 10-5=5",
+      "The pattern adds 5 each time",
+      "Add 5 to the last number to find next"
+    ]
   },
   {
     "id": "T3-0952",
@@ -1727,7 +2390,20 @@
     },
     "concept_cluster": "sequence-sums",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.05,
+      "b": 1.43,
+      "c": 0.25
+    },
+    "irt_a": 1.05,
+    "irt_b": 1.43,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-0953",
@@ -1760,7 +2436,20 @@
     },
     "concept_cluster": "fibonacci-like",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.05,
+      "b": 1.45,
+      "c": 0.25
+    },
+    "irt_a": 1.05,
+    "irt_b": 1.45,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-0954",
@@ -1793,7 +2482,20 @@
     },
     "concept_cluster": "fibonacci-like",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.05,
+      "b": 1.47,
+      "c": 0.25
+    },
+    "irt_a": 1.05,
+    "irt_b": 1.47,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-0955",
@@ -1826,7 +2528,20 @@
     },
     "concept_cluster": "fibonacci-like",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.05,
+      "b": 1.45,
+      "c": 0.25
+    },
+    "irt_a": 1.05,
+    "irt_b": 1.45,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-0956",
@@ -1860,7 +2575,20 @@
     },
     "concept_cluster": "fibonacci-like",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.05,
+      "b": 1.47,
+      "c": 0.25
+    },
+    "irt_a": 1.05,
+    "irt_b": 1.47,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-0957",
@@ -1894,7 +2622,20 @@
     },
     "concept_cluster": "spatial-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.05,
+      "b": 1.15,
+      "c": 0.25
+    },
+    "irt_a": 1.05,
+    "irt_b": 1.15,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what changes between items",
+      "Find the rule (adding, subtracting, repeating?)",
+      "Apply the rule to find what comes next"
+    ]
   },
   {
     "id": "T3-0958",
@@ -1928,7 +2669,20 @@
     },
     "concept_cluster": "spatial-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.05,
+      "b": 1.17,
+      "c": 0.25
+    },
+    "irt_a": 1.05,
+    "irt_b": 1.17,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what changes between items",
+      "Find the rule (adding, subtracting, repeating?)",
+      "Apply the rule to find what comes next"
+    ]
   },
   {
     "id": "T3-0959",
@@ -1962,7 +2716,20 @@
     },
     "concept_cluster": "spatial-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.05,
+      "b": 1.18,
+      "c": 0.25
+    },
+    "irt_a": 1.05,
+    "irt_b": 1.18,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what changes between items",
+      "Find the rule (adding, subtracting, repeating?)",
+      "Apply the rule to find what comes next"
+    ]
   },
   {
     "id": "T3-0960",
@@ -1996,7 +2763,20 @@
     },
     "concept_cluster": "spatial-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.05,
+      "b": 1.2,
+      "c": 0.25
+    },
+    "irt_a": 1.05,
+    "irt_b": 1.2,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what changes between items",
+      "Find the rule (adding, subtracting, repeating?)",
+      "Apply the rule to find what comes next"
+    ]
   },
   {
     "id": "T3-0961",
@@ -2029,7 +2809,20 @@
     },
     "concept_cluster": "number-sequences",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.48,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.48,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-0962",
@@ -2062,7 +2855,20 @@
     },
     "concept_cluster": "number-sequences",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.5,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.5,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-0963",
@@ -2095,7 +2901,20 @@
     },
     "concept_cluster": "number-sequences",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.52,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.52,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-0964",
@@ -2128,7 +2947,20 @@
     },
     "concept_cluster": "number-sequences",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.53,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.53,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-0965",
@@ -2162,7 +2994,20 @@
     },
     "concept_cluster": "number-sequences",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.55,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.55,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-0966",
@@ -2195,7 +3040,20 @@
     },
     "concept_cluster": "number-sequences",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.57,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.57,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-0967",
@@ -2228,7 +3086,20 @@
     },
     "concept_cluster": "number-sequences",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.58,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.58,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-0968",
@@ -2261,7 +3132,20 @@
     },
     "concept_cluster": "number-sequences",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.6,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.6,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-0969",
@@ -2294,7 +3178,20 @@
     },
     "concept_cluster": "number-sequences",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.62,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.62,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-0970",
@@ -2327,7 +3224,20 @@
     },
     "concept_cluster": "number-sequences",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.63,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.63,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-0971",
@@ -2360,7 +3270,20 @@
     },
     "concept_cluster": "pattern-rules",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.65,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.65,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-0972",
@@ -2393,7 +3316,20 @@
     },
     "concept_cluster": "pattern-rules",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.67,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.67,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-0973",
@@ -2426,7 +3362,20 @@
     },
     "concept_cluster": "pattern-rules",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.68,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.68,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-0974",
@@ -2460,7 +3409,20 @@
     },
     "concept_cluster": "pattern-rules",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.7,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.7,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-0975",
@@ -2494,7 +3456,20 @@
     },
     "concept_cluster": "pattern-rules",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.72,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.72,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what changes between items",
+      "Find the rule (adding, subtracting, repeating?)",
+      "Apply the rule to find what comes next"
+    ]
   },
   {
     "id": "T3-0976",
@@ -2527,7 +3502,20 @@
     },
     "concept_cluster": "pattern-rules",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.73,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.73,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at the differences: 2-3=-1",
+      "The pattern adds -1 each time",
+      "Add -1 to the last number to find next"
+    ]
   },
   {
     "id": "T3-0977",
@@ -2560,7 +3548,20 @@
     },
     "concept_cluster": "growing-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.48,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.48,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-0978",
@@ -2594,7 +3595,20 @@
     },
     "concept_cluster": "growing-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.5,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.5,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-0979",
@@ -2628,7 +3642,20 @@
     },
     "concept_cluster": "growing-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.52,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.52,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what changes between items",
+      "Find the rule (adding, subtracting, repeating?)",
+      "Apply the rule to find what comes next"
+    ]
   },
   {
     "id": "T3-0980",
@@ -2662,7 +3689,20 @@
     },
     "concept_cluster": "growing-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.53,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.53,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-0981",
@@ -2696,7 +3736,20 @@
     },
     "concept_cluster": "growing-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.55,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.55,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-0982",
@@ -2729,7 +3782,20 @@
     },
     "concept_cluster": "growing-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.57,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.57,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-0983",
@@ -2762,7 +3828,20 @@
     },
     "concept_cluster": "function-tables",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.58,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.58,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-0984",
@@ -2796,7 +3875,20 @@
     },
     "concept_cluster": "function-tables",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.6,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.6,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-0985",
@@ -2830,7 +3922,20 @@
     },
     "concept_cluster": "function-tables",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.62,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.62,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-0986",
@@ -2864,7 +3969,20 @@
     },
     "concept_cluster": "function-tables",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.63,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.63,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what changes between items",
+      "Find the rule (adding, subtracting, repeating?)",
+      "Apply the rule to find what comes next"
+    ]
   },
   {
     "id": "T3-0987",
@@ -2897,7 +4015,20 @@
     },
     "concept_cluster": "function-tables",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.65,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.65,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-0988",
@@ -2931,7 +4062,20 @@
     },
     "concept_cluster": "function-tables",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.67,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.67,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-0989",
@@ -2965,7 +4109,20 @@
     },
     "concept_cluster": "algebraic-expressions",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.68,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.68,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-0990",
@@ -2998,7 +4155,20 @@
     },
     "concept_cluster": "algebraic-expressions",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.7,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.7,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-0991",
@@ -3032,7 +4202,20 @@
     },
     "concept_cluster": "algebraic-expressions",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.72,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.72,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-0992",
@@ -3066,7 +4249,20 @@
     },
     "concept_cluster": "algebraic-expressions",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.73,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.73,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-0993",
@@ -3099,7 +4295,20 @@
     },
     "concept_cluster": "algebraic-expressions",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.75,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.75,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what changes between items",
+      "Find the rule (adding, subtracting, repeating?)",
+      "Apply the rule to find what comes next"
+    ]
   },
   {
     "id": "T3-0994",
@@ -3133,7 +4342,20 @@
     },
     "concept_cluster": "algebraic-expressions",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.77,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.77,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-0995",
@@ -3167,7 +4389,20 @@
     },
     "concept_cluster": "modular-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.48,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.48,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what changes between items",
+      "Find the rule (adding, subtracting, repeating?)",
+      "Apply the rule to find what comes next"
+    ]
   },
   {
     "id": "T3-0996",
@@ -3201,7 +4436,20 @@
     },
     "concept_cluster": "modular-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.5,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.5,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify the repeating group of items",
+      "Count position to find where in the cycle",
+      "Match the position to the repeating unit"
+    ]
   },
   {
     "id": "T3-0997",
@@ -3235,7 +4483,20 @@
     },
     "concept_cluster": "modular-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.52,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.52,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-0998",
@@ -3269,7 +4530,20 @@
     },
     "concept_cluster": "modular-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 1.53,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 1.53,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what changes between items",
+      "Find the rule (adding, subtracting, repeating?)",
+      "Apply the rule to find what comes next"
+    ]
   },
   {
     "id": "T3-0999",
@@ -3302,7 +4576,20 @@
     },
     "concept_cluster": "modular-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.55,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.55,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1000",
@@ -3336,7 +4623,20 @@
     },
     "concept_cluster": "modular-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.57,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.57,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what changes between items",
+      "Find the rule (adding, subtracting, repeating?)",
+      "Apply the rule to find what comes next"
+    ]
   },
   {
     "id": "T3-1001",
@@ -3370,7 +4670,20 @@
     },
     "concept_cluster": "digit-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.58,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.58,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what changes between items",
+      "Find the rule (adding, subtracting, repeating?)",
+      "Apply the rule to find what comes next"
+    ]
   },
   {
     "id": "T3-1002",
@@ -3404,7 +4717,20 @@
     },
     "concept_cluster": "digit-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.6,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.6,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1003",
@@ -3438,7 +4764,20 @@
     },
     "concept_cluster": "digit-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.62,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.62,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1004",
@@ -3471,7 +4810,20 @@
     },
     "concept_cluster": "digit-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.63,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.63,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what changes between items",
+      "Find the rule (adding, subtracting, repeating?)",
+      "Apply the rule to find what comes next"
+    ]
   },
   {
     "id": "T3-1005",
@@ -3505,7 +4857,20 @@
     },
     "concept_cluster": "digit-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.65,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.65,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1006",
@@ -3538,7 +4903,20 @@
     },
     "concept_cluster": "digit-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.67,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.67,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1007",
@@ -3571,7 +4949,20 @@
     },
     "concept_cluster": "fibonacci-like",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.68,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.68,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1008",
@@ -3604,7 +4995,20 @@
     },
     "concept_cluster": "fibonacci-like",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.7,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.7,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at the differences: 1-1=0",
+      "The pattern adds 0 each time",
+      "Add 0 to the last number to find next"
+    ]
   },
   {
     "id": "T3-1009",
@@ -3637,7 +5041,20 @@
     },
     "concept_cluster": "fibonacci-like",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.72,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.72,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1010",
@@ -3671,7 +5088,20 @@
     },
     "concept_cluster": "fibonacci-like",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.73,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.73,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1011",
@@ -3705,7 +5135,20 @@
     },
     "concept_cluster": "spatial-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.75,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.75,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what changes between items",
+      "Find the rule (adding, subtracting, repeating?)",
+      "Apply the rule to find what comes next"
+    ]
   },
   {
     "id": "T3-1012",
@@ -3739,7 +5182,20 @@
     },
     "concept_cluster": "spatial-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.77,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.77,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what changes between items",
+      "Find the rule (adding, subtracting, repeating?)",
+      "Apply the rule to find what comes next"
+    ]
   },
   {
     "id": "T3-1013",
@@ -3773,7 +5229,20 @@
     },
     "concept_cluster": "spatial-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.78,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.78,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what changes between items",
+      "Find the rule (adding, subtracting, repeating?)",
+      "Apply the rule to find what comes next"
+    ]
   },
   {
     "id": "T3-1014",
@@ -3807,7 +5276,20 @@
     },
     "concept_cluster": "spatial-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.8,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.8,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1015",
@@ -3841,7 +5323,20 @@
     },
     "concept_cluster": "sequence-sums",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.48,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.48,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what changes between items",
+      "Find the rule (adding, subtracting, repeating?)",
+      "Apply the rule to find what comes next"
+    ]
   },
   {
     "id": "T3-1016",
@@ -3875,7 +5370,20 @@
     },
     "concept_cluster": "sequence-sums",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.5,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.5,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1017",
@@ -3908,7 +5416,20 @@
     },
     "concept_cluster": "sequence-sums",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.52,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.52,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1018",
@@ -3942,7 +5463,20 @@
     },
     "concept_cluster": "sequence-sums",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.53,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.53,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at the differences: 4-2=2",
+      "The pattern adds 2 each time",
+      "Add 2 to the last number to find next"
+    ]
   },
   {
     "id": "T3-1019",
@@ -3976,7 +5510,20 @@
     },
     "concept_cluster": "sequence-sums",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.55,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.55,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at the differences: 3-1=2",
+      "The pattern adds 2 each time",
+      "Add 2 to the last number to find next"
+    ]
   },
   {
     "id": "T3-1020",
@@ -4010,7 +5557,20 @@
     },
     "concept_cluster": "sequence-sums",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.57,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.57,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1021",
@@ -4043,7 +5603,20 @@
     },
     "concept_cluster": "number-sequences",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.82,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.82,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1022",
@@ -4076,7 +5649,20 @@
     },
     "concept_cluster": "number-sequences",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.83,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.83,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1023",
@@ -4109,7 +5695,20 @@
     },
     "concept_cluster": "number-sequences",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.85,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.85,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what changes between items",
+      "Find the rule (adding, subtracting, repeating?)",
+      "Apply the rule to find what comes next"
+    ]
   },
   {
     "id": "T3-1024",
@@ -4142,7 +5741,20 @@
     },
     "concept_cluster": "number-sequences",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.87,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.87,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1025",
@@ -4176,7 +5788,20 @@
     },
     "concept_cluster": "number-sequences",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.88,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.88,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1026",
@@ -4209,7 +5834,20 @@
     },
     "concept_cluster": "number-sequences",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.9,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.9,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1027",
@@ -4242,7 +5880,20 @@
     },
     "concept_cluster": "number-sequences",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.92,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.92,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1028",
@@ -4276,7 +5927,20 @@
     },
     "concept_cluster": "number-sequences",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.93,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.93,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1029",
@@ -4309,7 +5973,20 @@
     },
     "concept_cluster": "pattern-rules",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.95,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.95,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1030",
@@ -4343,7 +6020,20 @@
     },
     "concept_cluster": "pattern-rules",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.97,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.97,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1031",
@@ -4376,7 +6066,20 @@
     },
     "concept_cluster": "pattern-rules",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.82,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.82,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1032",
@@ -4409,7 +6112,20 @@
     },
     "concept_cluster": "pattern-rules",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 2.0,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 2.0,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1033",
@@ -4443,7 +6159,20 @@
     },
     "concept_cluster": "pattern-rules",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 2.02,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 2.02,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1034",
@@ -4477,7 +6206,20 @@
     },
     "concept_cluster": "pattern-rules",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 2.03,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 2.03,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1035",
@@ -4511,7 +6253,20 @@
     },
     "concept_cluster": "growing-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 2.05,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 2.05,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1036",
@@ -4545,7 +6300,20 @@
     },
     "concept_cluster": "growing-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 2.07,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 2.07,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1037",
@@ -4579,7 +6347,20 @@
     },
     "concept_cluster": "growing-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 2.08,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 2.08,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at the differences: 1-1=0",
+      "The pattern adds 0 each time",
+      "Add 0 to the last number to find next"
+    ]
   },
   {
     "id": "T3-1038",
@@ -4613,7 +6394,20 @@
     },
     "concept_cluster": "growing-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 2.1,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 2.1,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1039",
@@ -4647,7 +6441,20 @@
     },
     "concept_cluster": "growing-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 2.12,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 2.12,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1040",
@@ -4681,7 +6488,20 @@
     },
     "concept_cluster": "growing-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 2.13,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 2.13,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1041",
@@ -4715,7 +6535,20 @@
     },
     "concept_cluster": "function-tables",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.82,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.82,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1042",
@@ -4749,7 +6582,20 @@
     },
     "concept_cluster": "function-tables",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.83,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.83,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1043",
@@ -4783,7 +6629,20 @@
     },
     "concept_cluster": "function-tables",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.85,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.85,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1044",
@@ -4817,7 +6676,20 @@
     },
     "concept_cluster": "function-tables",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.87,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.87,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1045",
@@ -4851,7 +6723,20 @@
     },
     "concept_cluster": "function-tables",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.88,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.88,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1046",
@@ -4885,7 +6770,20 @@
     },
     "concept_cluster": "function-tables",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.9,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.9,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1047",
@@ -4919,7 +6817,20 @@
     },
     "concept_cluster": "algebraic-expressions",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.92,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.92,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at the differences: 3-2=1",
+      "The pattern adds 1 each time",
+      "Add 1 to the last number to find next"
+    ]
   },
   {
     "id": "T3-1048",
@@ -4952,7 +6863,20 @@
     },
     "concept_cluster": "algebraic-expressions",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.93,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.93,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1049",
@@ -4986,7 +6910,20 @@
     },
     "concept_cluster": "algebraic-expressions",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.95,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.95,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1050",
@@ -5020,7 +6957,20 @@
     },
     "concept_cluster": "algebraic-expressions",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.97,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.97,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1051",
@@ -5050,11 +7000,24 @@
     "hint": {
       "level_0": "Row 1 = 3, Row 2 = 5, Row 3 = 7, ...",
       "level_1": "This is an arithmetic series: first term 3, common difference 2, 10 terms.",
-      "level_2": "Sum = 10/2 \u00d7 (3 + 21) = 5 \u00d7 24 = 120."
+      "level_2": "Sum = 10/2 × (3 + 21) = 5 × 24 = 120."
     },
     "concept_cluster": "algebraic-expressions",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.98,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.98,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1052",
@@ -5088,7 +7051,20 @@
     },
     "concept_cluster": "algebraic-expressions",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 2.0,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 2.0,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1053",
@@ -5122,7 +7098,20 @@
     },
     "concept_cluster": "modular-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 2.02,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 2.02,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1054",
@@ -5156,7 +7145,20 @@
     },
     "concept_cluster": "modular-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 2.03,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 2.03,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what changes between items",
+      "Find the rule (adding, subtracting, repeating?)",
+      "Apply the rule to find what comes next"
+    ]
   },
   {
     "id": "T3-1055",
@@ -5190,7 +7192,20 @@
     },
     "concept_cluster": "modular-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 2.05,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 2.05,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify the repeating group of items",
+      "Count position to find where in the cycle",
+      "Match the position to the repeating unit"
+    ]
   },
   {
     "id": "T3-1056",
@@ -5224,7 +7239,20 @@
     },
     "concept_cluster": "modular-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 2.07,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 2.07,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1057",
@@ -5258,7 +7286,20 @@
     },
     "concept_cluster": "modular-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 2.08,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 2.08,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what changes between items",
+      "Find the rule (adding, subtracting, repeating?)",
+      "Apply the rule to find what comes next"
+    ]
   },
   {
     "id": "T3-1058",
@@ -5292,7 +7333,20 @@
     },
     "concept_cluster": "modular-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 2.1,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 2.1,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what changes between items",
+      "Find the rule (adding, subtracting, repeating?)",
+      "Apply the rule to find what comes next"
+    ]
   },
   {
     "id": "T3-1059",
@@ -5326,7 +7380,20 @@
     },
     "concept_cluster": "digit-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 2.12,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 2.12,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1060",
@@ -5360,7 +7427,20 @@
     },
     "concept_cluster": "digit-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 2.13,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 2.13,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1061",
@@ -5394,7 +7474,20 @@
     },
     "concept_cluster": "digit-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.82,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.82,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1062",
@@ -5428,7 +7521,20 @@
     },
     "concept_cluster": "digit-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.83,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.83,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what changes between items",
+      "Find the rule (adding, subtracting, repeating?)",
+      "Apply the rule to find what comes next"
+    ]
   },
   {
     "id": "T3-1063",
@@ -5461,7 +7567,20 @@
     },
     "concept_cluster": "fibonacci-like",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.85,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.85,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1064",
@@ -5495,7 +7614,20 @@
     },
     "concept_cluster": "fibonacci-like",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.87,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.87,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1065",
@@ -5529,7 +7661,20 @@
     },
     "concept_cluster": "fibonacci-like",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.88,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.88,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at the differences: 1-1=0",
+      "The pattern adds 0 each time",
+      "Add 0 to the last number to find next"
+    ]
   },
   {
     "id": "T3-1066",
@@ -5563,7 +7708,20 @@
     },
     "concept_cluster": "fibonacci-like",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.9,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.9,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1067",
@@ -5597,7 +7755,20 @@
     },
     "concept_cluster": "spatial-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.92,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.92,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what changes between items",
+      "Find the rule (adding, subtracting, repeating?)",
+      "Apply the rule to find what comes next"
+    ]
   },
   {
     "id": "T3-1068",
@@ -5631,7 +7802,20 @@
     },
     "concept_cluster": "spatial-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.93,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.93,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1069",
@@ -5665,7 +7849,20 @@
     },
     "concept_cluster": "spatial-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.95,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.95,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what changes between items",
+      "Find the rule (adding, subtracting, repeating?)",
+      "Apply the rule to find what comes next"
+    ]
   },
   {
     "id": "T3-1070",
@@ -5699,7 +7896,20 @@
     },
     "concept_cluster": "sequence-sums",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.97,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.97,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what changes between items",
+      "Find the rule (adding, subtracting, repeating?)",
+      "Apply the rule to find what comes next"
+    ]
   },
   {
     "id": "T3-1071",
@@ -5733,7 +7943,20 @@
     },
     "concept_cluster": "sequence-sums",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 1.98,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 1.98,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what changes between items",
+      "Find the rule (adding, subtracting, repeating?)",
+      "Apply the rule to find what comes next"
+    ]
   },
   {
     "id": "T3-1072",
@@ -5767,7 +7990,20 @@
     },
     "concept_cluster": "sequence-sums",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 2.0,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 2.0,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at the differences: 2-1=1",
+      "The pattern adds 1 each time",
+      "Add 1 to the last number to find next"
+    ]
   },
   {
     "id": "T3-1073",
@@ -5800,7 +8036,20 @@
     },
     "concept_cluster": "sequence-sums",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 2.02,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 2.02,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1074",
@@ -5834,7 +8083,20 @@
     },
     "concept_cluster": "sequence-sums",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 2.03,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 2.03,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what changes between items",
+      "Find the rule (adding, subtracting, repeating?)",
+      "Apply the rule to find what comes next"
+    ]
   },
   {
     "id": "T3-1075",
@@ -5868,7 +8130,20 @@
     },
     "concept_cluster": "sequence-sums",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 2.05,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 2.05,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1076",
@@ -5902,7 +8177,20 @@
     },
     "concept_cluster": "sequence-sums",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 2.07,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 2.07,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what changes between items",
+      "Find the rule (adding, subtracting, repeating?)",
+      "Apply the rule to find what comes next"
+    ]
   },
   {
     "id": "T3-1077",
@@ -5935,7 +8223,20 @@
     },
     "concept_cluster": "sequence-sums",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 2.08,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 2.08,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at the differences: 10-5=5",
+      "The pattern adds 5 each time",
+      "Add 5 to the last number to find next"
+    ]
   },
   {
     "id": "T3-1078",
@@ -5969,7 +8270,20 @@
     },
     "concept_cluster": "sequence-sums",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 2.1,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 2.1,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1079",
@@ -6002,7 +8316,20 @@
     },
     "concept_cluster": "sequence-sums",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 2.12,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 2.12,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what changes between items",
+      "Find the rule (adding, subtracting, repeating?)",
+      "Apply the rule to find what comes next"
+    ]
   },
   {
     "id": "T3-1080",
@@ -6036,7 +8363,20 @@
     },
     "concept_cluster": "sequence-sums",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.15,
+      "b": 2.13,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 2.13,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1081",
@@ -6069,7 +8409,20 @@
     },
     "concept_cluster": "number-sequences",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 2.15,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 2.15,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1082",
@@ -6102,7 +8455,20 @@
     },
     "concept_cluster": "number-sequences",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 2.17,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 2.17,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1083",
@@ -6135,7 +8501,20 @@
     },
     "concept_cluster": "number-sequences",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 2.18,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 2.18,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1084",
@@ -6168,7 +8547,20 @@
     },
     "concept_cluster": "number-sequences",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 2.2,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 2.2,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1085",
@@ -6201,7 +8593,20 @@
     },
     "concept_cluster": "number-sequences",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 2.22,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 2.22,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1086",
@@ -6234,7 +8639,20 @@
     },
     "concept_cluster": "number-sequences",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 2.23,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 2.23,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1087",
@@ -6267,7 +8685,20 @@
     },
     "concept_cluster": "number-sequences",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 2.25,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 2.25,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1088",
@@ -6300,7 +8731,20 @@
     },
     "concept_cluster": "number-sequences",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 2.27,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 2.27,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1089",
@@ -6334,7 +8778,20 @@
     },
     "concept_cluster": "pattern-rules",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 2.28,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 2.28,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at the differences: 11-1=10",
+      "The pattern adds 10 each time",
+      "Add 10 to the last number to find next"
+    ]
   },
   {
     "id": "T3-1090",
@@ -6367,7 +8824,20 @@
     },
     "concept_cluster": "pattern-rules",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 2.3,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 2.3,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at the differences: 5-3=2",
+      "The pattern adds 2 each time",
+      "Add 2 to the last number to find next"
+    ]
   },
   {
     "id": "T3-1091",
@@ -6401,7 +8871,20 @@
     },
     "concept_cluster": "pattern-rules",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 2.32,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 2.32,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at the differences: 1-1=0",
+      "The pattern adds 0 each time",
+      "Add 0 to the last number to find next"
+    ]
   },
   {
     "id": "T3-1092",
@@ -6435,7 +8918,20 @@
     },
     "concept_cluster": "pattern-rules",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 2.33,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 2.33,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1093",
@@ -6469,7 +8965,20 @@
     },
     "concept_cluster": "pattern-rules",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 2.35,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 2.35,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1094",
@@ -6504,7 +9013,20 @@
     },
     "concept_cluster": "pattern-rules",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 2.37,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 2.37,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1095",
@@ -6538,7 +9060,20 @@
     },
     "concept_cluster": "growing-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 2.38,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 2.38,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what changes between items",
+      "Find the rule (adding, subtracting, repeating?)",
+      "Apply the rule to find what comes next"
+    ]
   },
   {
     "id": "T3-1096",
@@ -6572,7 +9107,20 @@
     },
     "concept_cluster": "growing-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 2.4,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 2.4,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1097",
@@ -6606,7 +9154,20 @@
     },
     "concept_cluster": "growing-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 2.42,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 2.42,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1098",
@@ -6640,7 +9201,20 @@
     },
     "concept_cluster": "growing-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 2.15,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 2.15,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1099",
@@ -6674,7 +9248,20 @@
     },
     "concept_cluster": "growing-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 2.17,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 2.17,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1100",
@@ -6708,7 +9295,20 @@
     },
     "concept_cluster": "growing-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 2.18,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 2.18,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at the differences: 4-4=0",
+      "The pattern adds 0 each time",
+      "Add 0 to the last number to find next"
+    ]
   },
   {
     "id": "T3-1101",
@@ -6743,7 +9343,20 @@
     },
     "concept_cluster": "function-tables",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 2.2,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 2.2,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1102",
@@ -6777,7 +9390,20 @@
     },
     "concept_cluster": "function-tables",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 2.22,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 2.22,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1103",
@@ -6811,7 +9437,20 @@
     },
     "concept_cluster": "function-tables",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 2.23,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 2.23,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1104",
@@ -6845,7 +9484,20 @@
     },
     "concept_cluster": "function-tables",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 2.25,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 2.25,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at the differences: 1-1=0",
+      "The pattern adds 0 each time",
+      "Add 0 to the last number to find next"
+    ]
   },
   {
     "id": "T3-1105",
@@ -6879,7 +9531,20 @@
     },
     "concept_cluster": "function-tables",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 2.27,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 2.27,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1106",
@@ -6913,7 +9578,20 @@
     },
     "concept_cluster": "function-tables",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 2.28,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 2.28,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1107",
@@ -6947,7 +9625,20 @@
     },
     "concept_cluster": "algebraic-expressions",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 2.3,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 2.3,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at the differences: 7-2=5",
+      "The pattern adds 5 each time",
+      "Add 5 to the last number to find next"
+    ]
   },
   {
     "id": "T3-1108",
@@ -6981,7 +9672,20 @@
     },
     "concept_cluster": "algebraic-expressions",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 2.32,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 2.32,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1109",
@@ -7015,7 +9719,20 @@
     },
     "concept_cluster": "algebraic-expressions",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 2.33,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 2.33,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1110",
@@ -7049,7 +9766,20 @@
     },
     "concept_cluster": "algebraic-expressions",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 2.35,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 2.35,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what changes between items",
+      "Find the rule (adding, subtracting, repeating?)",
+      "Apply the rule to find what comes next"
+    ]
   },
   {
     "id": "T3-1111",
@@ -7083,7 +9813,20 @@
     },
     "concept_cluster": "algebraic-expressions",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 2.37,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 2.37,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1112",
@@ -7117,7 +9860,20 @@
     },
     "concept_cluster": "algebraic-expressions",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 2.38,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 2.38,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what changes between items",
+      "Find the rule (adding, subtracting, repeating?)",
+      "Apply the rule to find what comes next"
+    ]
   },
   {
     "id": "T3-1113",
@@ -7151,7 +9907,20 @@
     },
     "concept_cluster": "modular-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 2.4,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 2.4,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1114",
@@ -7185,7 +9954,20 @@
     },
     "concept_cluster": "modular-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 2.42,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 2.42,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1115",
@@ -7219,7 +10001,20 @@
     },
     "concept_cluster": "modular-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 2.43,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 2.43,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1116",
@@ -7253,7 +10048,20 @@
     },
     "concept_cluster": "modular-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 2.45,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 2.45,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what changes between items",
+      "Find the rule (adding, subtracting, repeating?)",
+      "Apply the rule to find what comes next"
+    ]
   },
   {
     "id": "T3-1117",
@@ -7287,7 +10095,20 @@
     },
     "concept_cluster": "modular-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 2.47,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 2.47,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1118",
@@ -7321,7 +10142,20 @@
     },
     "concept_cluster": "modular-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 2.15,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 2.15,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1119",
@@ -7355,7 +10189,20 @@
     },
     "concept_cluster": "digit-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 2.17,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 2.17,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what changes between items",
+      "Find the rule (adding, subtracting, repeating?)",
+      "Apply the rule to find what comes next"
+    ]
   },
   {
     "id": "T3-1120",
@@ -7390,7 +10237,20 @@
     },
     "concept_cluster": "digit-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 2.18,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 2.18,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1121",
@@ -7424,7 +10284,20 @@
     },
     "concept_cluster": "digit-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 2.2,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 2.2,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1122",
@@ -7458,7 +10331,20 @@
     },
     "concept_cluster": "digit-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 2.22,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 2.22,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1123",
@@ -7492,7 +10378,20 @@
     },
     "concept_cluster": "fibonacci-like",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 2.23,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 2.23,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what changes between items",
+      "Find the rule (adding, subtracting, repeating?)",
+      "Apply the rule to find what comes next"
+    ]
   },
   {
     "id": "T3-1124",
@@ -7525,7 +10424,20 @@
     },
     "concept_cluster": "fibonacci-like",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 2.25,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 2.25,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1125",
@@ -7558,7 +10470,20 @@
     },
     "concept_cluster": "fibonacci-like",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 2.27,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 2.27,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1126",
@@ -7591,7 +10516,20 @@
     },
     "concept_cluster": "fibonacci-like",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 2.28,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 2.28,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at the differences: 1-1=0",
+      "The pattern adds 0 each time",
+      "Add 0 to the last number to find next"
+    ]
   },
   {
     "id": "T3-1127",
@@ -7625,7 +10563,20 @@
     },
     "concept_cluster": "spatial-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 2.3,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 2.3,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what changes between items",
+      "Find the rule (adding, subtracting, repeating?)",
+      "Apply the rule to find what comes next"
+    ]
   },
   {
     "id": "T3-1128",
@@ -7659,7 +10610,20 @@
     },
     "concept_cluster": "spatial-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 2.32,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 2.32,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at the differences: 3-3=0",
+      "The pattern adds 0 each time",
+      "Add 0 to the last number to find next"
+    ]
   },
   {
     "id": "T3-1129",
@@ -7693,7 +10657,20 @@
     },
     "concept_cluster": "spatial-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 2.33,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 2.33,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what changes between items",
+      "Find the rule (adding, subtracting, repeating?)",
+      "Apply the rule to find what comes next"
+    ]
   },
   {
     "id": "T3-1130",
@@ -7727,7 +10704,20 @@
     },
     "concept_cluster": "spatial-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 2.35,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 2.35,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what changes between items",
+      "Find the rule (adding, subtracting, repeating?)",
+      "Apply the rule to find what comes next"
+    ]
   },
   {
     "id": "T3-1131",
@@ -7761,7 +10751,20 @@
     },
     "concept_cluster": "spatial-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 2.37,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 2.37,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1132",
@@ -7795,7 +10798,20 @@
     },
     "concept_cluster": "spatial-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 2.38,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 2.38,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what changes between items",
+      "Find the rule (adding, subtracting, repeating?)",
+      "Apply the rule to find what comes next"
+    ]
   },
   {
     "id": "T3-1133",
@@ -7829,7 +10845,20 @@
     },
     "concept_cluster": "sequence-sums",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 2.4,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 2.4,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1134",
@@ -7863,7 +10892,20 @@
     },
     "concept_cluster": "sequence-sums",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 2.42,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 2.42,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what changes between items",
+      "Find the rule (adding, subtracting, repeating?)",
+      "Apply the rule to find what comes next"
+    ]
   },
   {
     "id": "T3-1135",
@@ -7897,7 +10939,20 @@
     },
     "concept_cluster": "sequence-sums",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 2.43,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 2.43,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1136",
@@ -7931,7 +10986,20 @@
     },
     "concept_cluster": "sequence-sums",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 2.45,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 2.45,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1137",
@@ -7965,7 +11033,20 @@
     },
     "concept_cluster": "sequence-sums",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 2.47,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 2.47,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what changes between items",
+      "Find the rule (adding, subtracting, repeating?)",
+      "Apply the rule to find what comes next"
+    ]
   },
   {
     "id": "T3-1138",
@@ -7999,7 +11080,20 @@
     },
     "concept_cluster": "sequence-sums",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 2.15,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 2.15,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what changes between items",
+      "Find the rule (adding, subtracting, repeating?)",
+      "Apply the rule to find what comes next"
+    ]
   },
   {
     "id": "T3-1139",
@@ -8033,7 +11127,20 @@
     },
     "concept_cluster": "sequence-sums",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 2.17,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 2.17,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1140",
@@ -8067,7 +11174,20 @@
     },
     "concept_cluster": "sequence-sums",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.2,
+      "b": 2.18,
+      "c": 0.25
+    },
+    "irt_a": 1.2,
+    "irt_b": 2.18,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1141",
@@ -8100,7 +11220,20 @@
     },
     "concept_cluster": "number-sequences",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 2.48,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 2.48,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1142",
@@ -8133,7 +11266,20 @@
     },
     "concept_cluster": "number-sequences",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 2.5,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 2.5,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1143",
@@ -8166,7 +11312,20 @@
     },
     "concept_cluster": "number-sequences",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 2.52,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 2.52,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1144",
@@ -8199,7 +11358,20 @@
     },
     "concept_cluster": "number-sequences",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 2.53,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 2.53,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1145",
@@ -8232,7 +11404,20 @@
     },
     "concept_cluster": "number-sequences",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 2.55,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 2.55,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at the differences: 1-1=0",
+      "The pattern adds 0 each time",
+      "Add 0 to the last number to find next"
+    ]
   },
   {
     "id": "T3-1146",
@@ -8266,7 +11451,20 @@
     },
     "concept_cluster": "number-sequences",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 2.57,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 2.57,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at the differences: 8-5=3",
+      "The pattern adds 3 each time",
+      "Add 3 to the last number to find next"
+    ]
   },
   {
     "id": "T3-1147",
@@ -8300,7 +11498,20 @@
     },
     "concept_cluster": "number-sequences",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 2.58,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 2.58,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1148",
@@ -8333,7 +11544,20 @@
     },
     "concept_cluster": "number-sequences",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 2.6,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 2.6,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what changes between items",
+      "Find the rule (adding, subtracting, repeating?)",
+      "Apply the rule to find what comes next"
+    ]
   },
   {
     "id": "T3-1149",
@@ -8367,7 +11591,20 @@
     },
     "concept_cluster": "pattern-rules",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 2.62,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 2.62,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1150",
@@ -8400,7 +11637,20 @@
     },
     "concept_cluster": "pattern-rules",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 2.63,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 2.63,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1151",
@@ -8434,7 +11684,20 @@
     },
     "concept_cluster": "pattern-rules",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 2.65,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 2.65,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1152",
@@ -8468,7 +11731,20 @@
     },
     "concept_cluster": "pattern-rules",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.35,
+      "b": 2.67,
+      "c": 0.25
+    },
+    "irt_a": 1.35,
+    "irt_b": 2.67,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1153",
@@ -8502,7 +11778,20 @@
     },
     "concept_cluster": "pattern-rules",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 2.68,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 2.68,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1154",
@@ -8536,7 +11825,20 @@
     },
     "concept_cluster": "pattern-rules",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 2.7,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 2.7,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1155",
@@ -8570,7 +11872,20 @@
     },
     "concept_cluster": "growing-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 2.48,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 2.48,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1156",
@@ -8605,7 +11920,20 @@
     },
     "concept_cluster": "growing-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 2.5,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 2.5,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1157",
@@ -8639,7 +11967,20 @@
     },
     "concept_cluster": "growing-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 2.52,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 2.52,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what changes between items",
+      "Find the rule (adding, subtracting, repeating?)",
+      "Apply the rule to find what comes next"
+    ]
   },
   {
     "id": "T3-1158",
@@ -8673,7 +12014,20 @@
     },
     "concept_cluster": "growing-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 2.53,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 2.53,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what changes between items",
+      "Find the rule (adding, subtracting, repeating?)",
+      "Apply the rule to find what comes next"
+    ]
   },
   {
     "id": "T3-1159",
@@ -8707,7 +12061,20 @@
     },
     "concept_cluster": "growing-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 2.55,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 2.55,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1160",
@@ -8741,7 +12108,20 @@
     },
     "concept_cluster": "growing-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 2.57,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 2.57,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1161",
@@ -8775,7 +12155,20 @@
     },
     "concept_cluster": "function-tables",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 2.58,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 2.58,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1162",
@@ -8810,7 +12203,20 @@
     },
     "concept_cluster": "function-tables",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 2.6,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 2.6,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1163",
@@ -8844,7 +12250,20 @@
     },
     "concept_cluster": "function-tables",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 2.62,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 2.62,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1164",
@@ -8878,7 +12297,20 @@
     },
     "concept_cluster": "function-tables",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 2.63,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 2.63,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what changes between items",
+      "Find the rule (adding, subtracting, repeating?)",
+      "Apply the rule to find what comes next"
+    ]
   },
   {
     "id": "T3-1165",
@@ -8912,7 +12344,20 @@
     },
     "concept_cluster": "function-tables",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 2.65,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 2.65,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what changes between items",
+      "Find the rule (adding, subtracting, repeating?)",
+      "Apply the rule to find what comes next"
+    ]
   },
   {
     "id": "T3-1166",
@@ -8946,7 +12391,20 @@
     },
     "concept_cluster": "function-tables",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 2.67,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 2.67,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1167",
@@ -8980,7 +12438,20 @@
     },
     "concept_cluster": "algebraic-expressions",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 2.68,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 2.68,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what changes between items",
+      "Find the rule (adding, subtracting, repeating?)",
+      "Apply the rule to find what comes next"
+    ]
   },
   {
     "id": "T3-1168",
@@ -9014,7 +12485,20 @@
     },
     "concept_cluster": "algebraic-expressions",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 2.7,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 2.7,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1169",
@@ -9048,7 +12532,20 @@
     },
     "concept_cluster": "algebraic-expressions",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 2.72,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 2.72,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1170",
@@ -9082,7 +12579,20 @@
     },
     "concept_cluster": "algebraic-expressions",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 2.73,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 2.73,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1171",
@@ -9116,7 +12626,20 @@
     },
     "concept_cluster": "algebraic-expressions",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 2.48,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 2.48,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1172",
@@ -9151,7 +12674,20 @@
     },
     "concept_cluster": "algebraic-expressions",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 2.5,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 2.5,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1173",
@@ -9185,7 +12721,20 @@
     },
     "concept_cluster": "modular-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 2.52,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 2.52,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1174",
@@ -9220,7 +12769,20 @@
     },
     "concept_cluster": "modular-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 2.53,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 2.53,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1175",
@@ -9254,7 +12816,20 @@
     },
     "concept_cluster": "modular-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 2.55,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 2.55,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1176",
@@ -9288,7 +12863,20 @@
     },
     "concept_cluster": "modular-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 2.57,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 2.57,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1177",
@@ -9322,7 +12910,20 @@
     },
     "concept_cluster": "modular-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 2.58,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 2.58,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1178",
@@ -9356,7 +12957,20 @@
     },
     "concept_cluster": "modular-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 2.6,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 2.6,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1179",
@@ -9390,7 +13004,20 @@
     },
     "concept_cluster": "digit-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 2.62,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 2.62,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what changes between items",
+      "Find the rule (adding, subtracting, repeating?)",
+      "Apply the rule to find what comes next"
+    ]
   },
   {
     "id": "T3-1180",
@@ -9424,7 +13051,20 @@
     },
     "concept_cluster": "digit-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 2.63,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 2.63,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what changes between items",
+      "Find the rule (adding, subtracting, repeating?)",
+      "Apply the rule to find what comes next"
+    ]
   },
   {
     "id": "T3-1181",
@@ -9458,7 +13098,20 @@
     },
     "concept_cluster": "digit-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 2.65,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 2.65,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what changes between items",
+      "Find the rule (adding, subtracting, repeating?)",
+      "Apply the rule to find what comes next"
+    ]
   },
   {
     "id": "T3-1182",
@@ -9492,7 +13145,20 @@
     },
     "concept_cluster": "digit-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 2.67,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 2.67,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what changes between items",
+      "Find the rule (adding, subtracting, repeating?)",
+      "Apply the rule to find what comes next"
+    ]
   },
   {
     "id": "T3-1183",
@@ -9526,7 +13192,20 @@
     },
     "concept_cluster": "digit-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 2.68,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 2.68,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1184",
@@ -9560,7 +13239,20 @@
     },
     "concept_cluster": "digit-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 2.7,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 2.7,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what changes between items",
+      "Find the rule (adding, subtracting, repeating?)",
+      "Apply the rule to find what comes next"
+    ]
   },
   {
     "id": "T3-1185",
@@ -9594,7 +13286,20 @@
     },
     "concept_cluster": "fibonacci-like",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 2.72,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 2.72,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1186",
@@ -9628,7 +13333,20 @@
     },
     "concept_cluster": "fibonacci-like",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 2.73,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 2.73,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1187",
@@ -9662,7 +13380,20 @@
     },
     "concept_cluster": "fibonacci-like",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 2.75,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 2.75,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1188",
@@ -9696,7 +13427,20 @@
     },
     "concept_cluster": "fibonacci-like",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 2.77,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 2.77,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what changes between items",
+      "Find the rule (adding, subtracting, repeating?)",
+      "Apply the rule to find what comes next"
+    ]
   },
   {
     "id": "T3-1189",
@@ -9730,7 +13474,20 @@
     },
     "concept_cluster": "fibonacci-like",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 2.78,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 2.78,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1190",
@@ -9764,7 +13521,20 @@
     },
     "concept_cluster": "fibonacci-like",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 2.8,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 2.8,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1191",
@@ -9798,7 +13568,20 @@
     },
     "concept_cluster": "spatial-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 2.48,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 2.48,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what changes between items",
+      "Find the rule (adding, subtracting, repeating?)",
+      "Apply the rule to find what comes next"
+    ]
   },
   {
     "id": "T3-1192",
@@ -9833,7 +13616,20 @@
     },
     "concept_cluster": "spatial-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 2.5,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 2.5,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at the differences: 4-4=0",
+      "The pattern adds 0 each time",
+      "Add 0 to the last number to find next"
+    ]
   },
   {
     "id": "T3-1193",
@@ -9867,7 +13663,20 @@
     },
     "concept_cluster": "spatial-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 2.52,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 2.52,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what changes between items",
+      "Find the rule (adding, subtracting, repeating?)",
+      "Apply the rule to find what comes next"
+    ]
   },
   {
     "id": "T3-1194",
@@ -9901,7 +13710,20 @@
     },
     "concept_cluster": "spatial-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 2.53,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 2.53,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at what changes between items",
+      "Find the rule (adding, subtracting, repeating?)",
+      "Apply the rule to find what comes next"
+    ]
   },
   {
     "id": "T3-1195",
@@ -9935,7 +13757,20 @@
     },
     "concept_cluster": "spatial-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 2.55,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 2.55,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at the differences: 10-0=10",
+      "The pattern adds 10 each time",
+      "Add 10 to the last number to find next"
+    ]
   },
   {
     "id": "T3-1196",
@@ -9969,7 +13804,20 @@
     },
     "concept_cluster": "spatial-patterns",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 2.57,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 2.57,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at the differences: 3-3=0",
+      "The pattern adds 0 each time",
+      "Add 0 to the last number to find next"
+    ]
   },
   {
     "id": "T3-1197",
@@ -10003,7 +13851,20 @@
     },
     "concept_cluster": "sequence-sums",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 2.58,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 2.58,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1198",
@@ -10036,7 +13897,20 @@
     },
     "concept_cluster": "sequence-sums",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 2.6,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 2.6,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1199",
@@ -10070,7 +13944,20 @@
     },
     "concept_cluster": "sequence-sums",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 2.62,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 2.62,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   },
   {
     "id": "T3-1200",
@@ -10105,6 +13992,19 @@
     },
     "concept_cluster": "sequence-sums",
     "interaction_mode": "multiple_choice",
-    "visual_context": null
+    "visual_context": null,
+    "irt_params": {
+      "a": 1.25,
+      "b": 2.63,
+      "c": 0.25
+    },
+    "irt_a": 1.25,
+    "irt_b": 2.63,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Look at how the numbers change each step",
+      "Find the rule connecting consecutive numbers",
+      "Apply the rule to find the missing number"
+    ]
   }
 ]

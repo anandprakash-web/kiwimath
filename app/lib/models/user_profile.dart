@@ -16,6 +16,9 @@ class UserProfile {
   final int dailyGoal;
   final int dailyProgress;
   final String? dailyDate;
+  final String? onboardedAt;   // ISO timestamp — null means never onboarded
+  final int? grade;            // Selected grade (1-6)
+  final String? curriculum;    // Selected curriculum: ncert, icse, igcse, olympiad
   final String learnerPersona;  // steady_learner, power_learner, mastery_learner, comeback_learner
   final String? personaName;    // "The Guardian of the Streak" etc.
   final String? personaEmoji;
@@ -33,11 +36,17 @@ class UserProfile {
     this.dailyGoal = 5,
     this.dailyProgress = 0,
     this.dailyDate,
+    this.onboardedAt,
+    this.grade,
+    this.curriculum,
     this.learnerPersona = 'steady_learner',
     this.personaName,
     this.personaEmoji,
     this.topicsMastered = 0,
   });
+
+  /// Whether this user has completed onboarding (benchmark test).
+  bool get hasOnboarded => onboardedAt != null;
 
   /// Backward-compatible factory: reads both old (gems) and new (kiwi_coins) fields.
   factory UserProfile.fromJson(Map<String, dynamic> json) {
@@ -54,6 +63,9 @@ class UserProfile {
       dailyGoal: json['daily_goal'] as int? ?? 5,
       dailyProgress: json['daily_progress'] as int? ?? 0,
       dailyDate: json['daily_date'] as String?,
+      onboardedAt: json['onboarded_at'] as String?,
+      grade: json['grade'] as int?,
+      curriculum: json['curriculum'] as String?,
       learnerPersona: json['learner_persona'] as String? ?? 'steady_learner',
       personaName: personaInfo?['name'] as String? ?? json['persona_name'] as String?,
       personaEmoji: personaInfo?['emoji'] as String?,
@@ -63,6 +75,12 @@ class UserProfile {
 
   static const empty = UserProfile(userId: '');
 
+  /// Whether this user follows a curriculum (NCERT/ICSE/IGCSE) vs Olympiad.
+  bool get hasCurriculum =>
+      curriculum != null &&
+      curriculum!.isNotEmpty &&
+      curriculum != 'olympiad';
+
   UserProfile copyWith({
     int? streakCurrent,
     int? xpTotal,
@@ -71,6 +89,7 @@ class UserProfile {
     int? dailyProgress,
     String? learnerPersona,
     int? topicsMastered,
+    String? curriculum,
   }) {
     return UserProfile(
       userId: userId,
@@ -84,6 +103,9 @@ class UserProfile {
       dailyGoal: dailyGoal,
       dailyProgress: dailyProgress ?? this.dailyProgress,
       dailyDate: dailyDate,
+      onboardedAt: onboardedAt,
+      grade: grade,
+      curriculum: curriculum ?? this.curriculum,
       learnerPersona: learnerPersona ?? this.learnerPersona,
       personaName: personaName,
       personaEmoji: personaEmoji,

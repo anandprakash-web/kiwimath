@@ -1,0 +1,7 @@
+<svg viewBox="0 0 240 140" xmlns="http://www.w3.org/2000/svg">
+<rect width="240" height="140" fill="#FFFEF5" rx="8"/>
+<rect x="60" y="30" width="120" height="80" fill="#AED6F1" stroke="#2C3E50" stroke-width="2" rx="2"/>
+<text x="120" y="75" text-anchor="middle" font-size="10" fill="#2C3E50">4 cm x 6 cm</text>
+<text x="120" y="23" text-anchor="middle" font-size="9" fill="#555">4 cm</text>
+<text x="45" y="72" text-anchor="middle" font-size="9" fill="#555">6 cm</text>
+</svg>

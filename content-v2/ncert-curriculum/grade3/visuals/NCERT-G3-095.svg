@@ -1,0 +1,11 @@
+<svg viewBox="0 0 240 140" xmlns="http://www.w3.org/2000/svg">
+<rect width="240" height="140" fill="#FFFEF5" rx="8"/>
+<text x="120" y="16" text-anchor="middle" font-size="10" font-weight="bold" fill="#2C3E50">4/6 shaded</text>
+<path d="M120,70 L120.0,25.0 A45,45 0 0,1 159.0,47.5 Z" fill="#FF6B6B" stroke="#333" stroke-width="1"/>
+<path d="M120,70 L159.0,47.5 A45,45 0 0,1 159.0,92.5 Z" fill="#FF6B6B" stroke="#333" stroke-width="1"/>
+<path d="M120,70 L159.0,92.5 A45,45 0 0,1 120.0,115.0 Z" fill="#FF6B6B" stroke="#333" stroke-width="1"/>
+<path d="M120,70 L120.0,115.0 A45,45 0 0,1 81.0,92.5 Z" fill="#FF6B6B" stroke="#333" stroke-width="1"/>
+<path d="M120,70 L81.0,92.5 A45,45 0 0,1 81.0,47.5 Z" fill="#F0F0F0" stroke="#333" stroke-width="1"/>
+<path d="M120,70 L81.0,47.5 A45,45 0 0,1 120.0,25.0 Z" fill="#F0F0F0" stroke="#333" stroke-width="1"/>
+
+</svg>

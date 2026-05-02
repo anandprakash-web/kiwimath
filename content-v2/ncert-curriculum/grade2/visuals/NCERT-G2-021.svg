@@ -1,0 +1,17 @@
+<svg viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+  <rect width="200" height="120" fill="#FFF0F5" rx="5"/>
+  <text x="100" y="15" text-anchor="middle" font-size="9" fill="#333">Grouping into tens</text>
+  <rect x="12" y="25" width="40" height="30" fill="#96CEB4" rx="3" stroke="#333" stroke-width="0.5"/>
+  <text x="32" y="43" text-anchor="middle" font-size="8" fill="#333">10</text>
+  <rect x="60" y="25" width="40" height="30" fill="#96CEB4" rx="3" stroke="#333" stroke-width="0.5"/>
+  <text x="80" y="43" text-anchor="middle" font-size="8" fill="#333">10</text>
+  <rect x="108" y="25" width="40" height="30" fill="#96CEB4" rx="3" stroke="#333" stroke-width="0.5"/>
+  <text x="128" y="43" text-anchor="middle" font-size="8" fill="#333">10</text>
+  <rect x="156" y="25" width="40" height="30" fill="#96CEB4" rx="3" stroke="#333" stroke-width="0.5"/>
+  <text x="176" y="43" text-anchor="middle" font-size="8" fill="#333">10</text>
+  <rect x="12" y="65" width="40" height="30" fill="#96CEB4" rx="3" stroke="#333" stroke-width="0.5"/>
+  <text x="32" y="83" text-anchor="middle" font-size="8" fill="#333">10</text>
+  <rect x="60" y="65" width="40" height="30" fill="#96CEB4" rx="3" stroke="#333" stroke-width="0.5"/>
+  <text x="80" y="83" text-anchor="middle" font-size="8" fill="#333">10</text>
+  <text x="100" y="110" text-anchor="middle" font-size="9" fill="#FF6B6B">+ 6 extra</text>
+</svg>

@@ -1,0 +1,7 @@
+<svg viewBox="0 0 260 150" xmlns="http://www.w3.org/2000/svg">
+  <rect x="15" y="15" width="230" height="120" rx="8" fill="#E8EAF6" stroke="#3F51B5" stroke-width="1.5"/>
+  <text x="130" y="35" text-anchor="middle" font-size="11" font-weight="bold" fill="#3F51B5">GST Calculation</text>
+  <text x="130" y="55" text-anchor="middle" font-size="9" fill="#333">Bill: ₹200</text>
+  <text x="130" y="69" text-anchor="middle" font-size="9" fill="#333">GST: 8%</text>
+  <text x="130" y="83" text-anchor="middle" font-size="9" fill="#333">Find total</text>
+</svg>

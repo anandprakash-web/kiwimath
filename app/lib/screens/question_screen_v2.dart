@@ -7,7 +7,9 @@ import '../services/api_client.dart';
 import '../services/companion_service.dart';
 import '../theme/kiwi_theme.dart';
 import '../widgets/companion_view.dart';
-import '../widgets/hint_ladder_bar.dart';
+import '../widgets/drag_drop_tiles.dart';
+import '../widgets/inline_hint_steps.dart';
+import '../widgets/integer_input.dart';
 import '../widgets/option_card.dart';
 import 'celebration_screen.dart';
 
@@ -31,6 +33,13 @@ class QuestionScreenV2 extends StatefulWidget {
   /// instead of calling /v2/questions/next one at a time.
   final List<Map<String, dynamic>>? sessionPlan;
 
+  /// Curriculum chapter name for IRT-powered chapter practice.
+  /// When set, the backend uses get_curriculum_questions() for the candidate pool.
+  final String? chapter;
+
+  /// Curriculum identifier (ncert, icse, igcse) for chapter-based IRT.
+  final String? curriculum;
+
   const QuestionScreenV2({
     super.key,
     required this.topicId,
@@ -40,6 +49,8 @@ class QuestionScreenV2 extends StatefulWidget {
     this.onBackToHome,
     this.companionService,
     this.sessionPlan,
+    this.chapter,
+    this.curriculum,
   });
 
   @override
@@ -149,7 +160,7 @@ class _QuestionScreenV2State extends State<QuestionScreenV2> {
         question = await _api.getQuestionV2(questionId);
         _planIndex++;
       } else {
-        // Default topic-locked mode
+        // Default topic-locked mode (with IRT for chapters when curriculum is set)
         question = await _api.nextQuestionV2(
           topic: widget.topicId,
           difficulty: _currentDifficulty,
@@ -157,6 +168,8 @@ class _QuestionScreenV2State extends State<QuestionScreenV2> {
           exclude: _excludeIds.isNotEmpty ? _excludeIds : null,
           userId: widget.userId,
           grade: widget.grade,
+          chapter: widget.chapter,
+          curriculum: widget.curriculum,
         );
       }
 
@@ -243,6 +256,101 @@ class _QuestionScreenV2State extends State<QuestionScreenV2> {
         ),
       );
     }
+  }
+
+  Future<void> _onIntegerSubmit(int value) async {
+    final q = _question;
+    if (q == null) return;
+
+    setState(() => _phase = _PhaseV2.submitting);
+
+    final timeTakenMs = _questionStartTime != null
+        ? DateTime.now().difference(_questionStartTime!).inMilliseconds
+        : 0;
+
+    try {
+      final result = await _api.checkAnswerV2(
+        questionId: q.questionId,
+        selectedAnswer: 0,
+        integerAnswer: value,
+        userId: widget.userId,
+        timeTakenMs: timeTakenMs,
+        hintsUsed: _maxHintLevel >= 0 ? _maxHintLevel : 0,
+      );
+      if (!mounted) return;
+      _handleResult(q, result);
+    } catch (e) {
+      if (!mounted) return;
+      setState(() => _phase = _PhaseV2.answering);
+      _showNetworkError();
+    }
+  }
+
+  Future<void> _onDragDropSubmit(List<int> order) async {
+    final q = _question;
+    if (q == null) return;
+
+    setState(() => _phase = _PhaseV2.submitting);
+
+    final timeTakenMs = _questionStartTime != null
+        ? DateTime.now().difference(_questionStartTime!).inMilliseconds
+        : 0;
+
+    try {
+      final result = await _api.checkAnswerV2(
+        questionId: q.questionId,
+        selectedAnswer: 0,
+        dragOrder: order,
+        userId: widget.userId,
+        timeTakenMs: timeTakenMs,
+        hintsUsed: _maxHintLevel >= 0 ? _maxHintLevel : 0,
+      );
+      if (!mounted) return;
+      _handleResult(q, result);
+    } catch (e) {
+      if (!mounted) return;
+      setState(() => _phase = _PhaseV2.answering);
+      _showNetworkError();
+    }
+  }
+
+  void _handleResult(QuestionV2 q, AnswerCheckResponse result) {
+    _lastResult = result;
+    _questionsAnswered++;
+    _excludeIds.add(q.questionId);
+
+    _xp += result.xpEarned;
+    _coins += result.coinsEarned;
+    _gems += result.gemsEarned;
+    _currentDifficulty = (result.nextDifficulty).clamp(1, 100);
+
+    if (result.correct) {
+      _correctCount++;
+      _streak++;
+      setState(() => _phase = _PhaseV2.correct);
+      _companionKey.currentState?.playCelebration();
+    } else {
+      _streak = 0;
+      setState(() => _phase = _PhaseV2.wrong);
+    }
+
+    _showGamificationEvents(result);
+  }
+
+  void _showNetworkError() {
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(
+        content: const Text(
+          'Oops! Could not reach the server. Please try again.',
+          style: TextStyle(fontSize: 13),
+        ),
+        backgroundColor: const Color(0xFFE65100),
+        behavior: SnackBarBehavior.floating,
+        margin: const EdgeInsets.fromLTRB(16, 0, 16, 80),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+        duration: const Duration(seconds: 4),
+      ),
+    );
   }
 
   // -------------------------------------------------------------------
@@ -810,123 +918,50 @@ class _QuestionScreenV2State extends State<QuestionScreenV2> {
             ),
           ),
 
-          // Hint button — between stem and options (always visible)
-          if (q.hintLadder != null &&
+          // Inline hint steps — Khan Academy style (between stem and options)
+          if ((q.solutionSteps.isNotEmpty || q.hintLadder != null) &&
               (_phase == _PhaseV2.answering || _phase == _PhaseV2.selected))
             Padding(
               padding: const EdgeInsets.only(top: 10, bottom: 12),
-              child: Align(
-                alignment: Alignment.centerRight,
-                child: HintButton(
-                  hintLadder: q.hintLadder!,
-                  onHintRevealed: (level) {
-                    _maxHintLevel = level > _maxHintLevel ? level : _maxHintLevel;
-                  },
-                ),
-              ),
-            )
-          // Fallback: simple hint text between stem and options
-          else if (q.hint != null &&
-              (_phase == _PhaseV2.answering || _phase == _PhaseV2.selected))
-            Padding(
-              padding: const EdgeInsets.only(top: 8, bottom: 12),
-              child: Align(
-                alignment: Alignment.centerRight,
-                child: GestureDetector(
-                  onTap: () {
-                    showModalBottomSheet(
-                      context: context,
-                      backgroundColor: Colors.transparent,
-                      builder: (ctx) => Container(
-                        padding: const EdgeInsets.all(20),
-                        decoration: const BoxDecoration(
-                          color: Color(0xFFFAFCFF),
-                          borderRadius: BorderRadius.vertical(top: Radius.circular(24)),
-                        ),
-                        child: Column(
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            Container(
-                              width: 40, height: 4,
-                              decoration: BoxDecoration(
-                                color: const Color(0xFFBDBDBD),
-                                borderRadius: BorderRadius.circular(2),
-                              ),
-                            ),
-                            const SizedBox(height: 16),
-                            const Row(
-                              children: [
-                                Text('\u{1F95D}', style: TextStyle(fontSize: 20)),
-                                SizedBox(width: 8),
-                                Text(
-                                  'Hint',
-                                  style: TextStyle(
-                                    fontSize: 16,
-                                    fontWeight: FontWeight.w700,
-                                    color: KiwiColors.textDark,
-                                  ),
-                                ),
-                              ],
-                            ),
-                            const SizedBox(height: 12),
-                            Text(
-                              q.hint!,
-                              style: const TextStyle(
-                                fontSize: 14,
-                                color: Color(0xFF1976D2),
-                                height: 1.4,
-                              ),
-                            ),
-                            const SizedBox(height: 20),
-                          ],
-                        ),
-                      ),
-                    );
-                  },
-                  child: Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
-                    decoration: BoxDecoration(
-                      gradient: const LinearGradient(
-                        colors: [Color(0xFFB3E5FC), Color(0xFF81D4FA)],
-                      ),
-                      borderRadius: BorderRadius.circular(16),
-                      boxShadow: [
-                        BoxShadow(
-                          color: const Color(0xFF039BE5).withOpacity(0.2),
-                          blurRadius: 6,
-                          offset: const Offset(0, 2),
-                        ),
-                      ],
-                    ),
-                    child: const Row(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        Text('\u{1F95D}', style: TextStyle(fontSize: 14)),
-                        SizedBox(width: 4),
-                        Text(
-                          'Hint',
-                          style: TextStyle(
-                            fontSize: 12,
-                            fontWeight: FontWeight.w700,
-                            color: Color(0xFF0277BD),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
+              child: InlineHintSteps(
+                solutionSteps: q.solutionSteps,
+                hintLadder: q.hintLadder,
+                onStepRevealed: (step) {
+                  _maxHintLevel = step > _maxHintLevel ? step : _maxHintLevel;
+                },
               ),
             )
           else
             const SizedBox(height: 16),
 
-          // 2x2 Grid Options
-          _buildOptionsGrid(q),
+          // Interaction-mode-specific input
+          _buildInteractionWidget(q),
 
           const SizedBox(height: 16),
         ],
       ),
     );
+  }
+
+  /// Dispatch to the correct interaction widget based on question mode.
+  Widget _buildInteractionWidget(QuestionV2 q) {
+    switch (q.interactionMode) {
+      case 'integer':
+        return IntegerInput(
+          allowNegative: widget.grade >= 4,
+          onSubmit: _onIntegerSubmit,
+        );
+      case 'drag_drop':
+        if (q.dragItems != null && q.dragItems!.isNotEmpty) {
+          return DragDropTiles(
+            items: q.dragItems!,
+            onSubmit: _onDragDropSubmit,
+          );
+        }
+        return _buildOptionsGrid(q);
+      default:
+        return _buildOptionsGrid(q);
+    }
   }
 
   /// 2x2 grid of answer options
@@ -1024,18 +1059,22 @@ class _QuestionScreenV2State extends State<QuestionScreenV2> {
       );
     }
 
-    // Check answer button
-    if (_phase == _PhaseV2.selected) {
+    // For integer and drag_drop modes, the check button is inside the widget.
+    final isNonMcq = _question?.interactionMode == 'integer' ||
+        _question?.interactionMode == 'drag_drop';
+
+    // Check answer button (MCQ only)
+    if (_phase == _PhaseV2.selected && !isNonMcq) {
       return _buildCheckButton();
     }
 
     // Submitting
-    if (_phase == _PhaseV2.submitting) {
+    if (_phase == _PhaseV2.submitting && !isNonMcq) {
       return _buildCheckButton(disabled: true, isLoading: true);
     }
 
-    // Answering — disabled check
-    if (_phase == _PhaseV2.answering) {
+    // Answering — disabled check (MCQ only)
+    if (_phase == _PhaseV2.answering && !isNonMcq) {
       return _buildCheckButton(disabled: true);
     }
 
@@ -1596,13 +1635,13 @@ class _ReportQuestionSheetState extends State<_ReportQuestionSheet> {
   bool _submitting = false;
   bool _submitted = false;
 
-  // Display label, internal feedback_type code
+  // Display label, internal flag_type code, emoji
   static const List<List<String>> _options = [
-    ['Wrong answer', 'wrong_answer', '⚠️'],
-    ['Question is unclear', 'unclear_stem', '❓'],
-    ['Bad picture / visual', 'bad_visual', '🖼️'],
-    ['Too easy', 'too_easy', '😴'],
-    ['Too hard', 'too_hard', '😵'],
+    ['Wrong answer', 'answer_error', '⚠️'],
+    ['Hint not helpful', 'hint_not_good', '💡'],
+    ['Visual missing', 'visual_missing', '🖼️'],
+    ["Visual doesn't match", 'visual_mismatch', '🔀'],
+    ['Question has an error', 'question_error', '❓'],
     ['Something else', 'other', '💬'],
   ];
 
@@ -1617,10 +1656,11 @@ class _ReportQuestionSheetState extends State<_ReportQuestionSheet> {
     if (type == null) return;
     setState(() => _submitting = true);
     try {
-      await widget.api.submitQuestionFeedback(
+      // Submit to the new flag/submit endpoint for quality tracking.
+      await widget.api.flagQuestion(
         questionId: widget.questionId,
-        feedbackType: type,
-        userId: widget.userId,
+        studentId: widget.userId ?? 'anonymous',
+        flagType: type,
         comment: _commentController.text,
       );
       if (!mounted) return;
@@ -1628,7 +1668,21 @@ class _ReportQuestionSheetState extends State<_ReportQuestionSheet> {
         _submitting = false;
         _submitted = true;
       });
-      // Auto-dismiss after a beat so the kid sees the thank-you message.
+      // Show a friendly snackbar and auto-dismiss.
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: const Text(
+            'Thanks! We\'ll look into it \u{1F64F}',
+            style: TextStyle(fontSize: 14, fontWeight: FontWeight.w600),
+            textAlign: TextAlign.center,
+          ),
+          backgroundColor: KiwiColors.kiwiGreen,
+          behavior: SnackBarBehavior.floating,
+          margin: const EdgeInsets.fromLTRB(40, 0, 40, 100),
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+          duration: const Duration(seconds: 2),
+        ),
+      );
       Future.delayed(const Duration(milliseconds: 1100), () {
         if (mounted) Navigator.of(context).maybePop();
       });
@@ -1637,7 +1691,7 @@ class _ReportQuestionSheetState extends State<_ReportQuestionSheet> {
       setState(() => _submitting = false);
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
-          content: Text("Couldn't send report — please try again."),
+          content: Text("Couldn't send report \u{2014} please try again."),
           duration: Duration(seconds: 2),
         ),
       );
@@ -1667,7 +1721,7 @@ class _ReportQuestionSheetState extends State<_ReportQuestionSheet> {
                       Icon(Icons.check_circle, size: 48, color: KiwiColors.kiwiGreen),
                       SizedBox(height: 10),
                       Text(
-                        'Thanks for letting us know!',
+                        'Thanks! We\'ll look into it \u{1F64F}',
                         style: TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.w700,

@@ -2,7 +2,7 @@
   "questions": [
     {
       "id": "T2-0901",
-      "stem": "Kabir pays \u20b9106 for a board game that costs \u20b965. How much change does Kabir get back?",
+      "stem": "Kabir pays ₹106 for a board game that costs ₹65. How much change does Kabir get back?",
       "choices": [
         "44",
         "46",
@@ -30,17 +30,30 @@
       ],
       "topic": "arithmetic_missing_numbers",
       "topic_name": "Arithmetic & Missing Numbers",
-      "original_stem": "Kabir pays \u20b9106 for a board game that costs \u20b965. How much change does Kabir get back?",
+      "original_stem": "Kabir pays ₹106 for a board game that costs ₹65. How much change does Kabir get back?",
       "hint": {
         "level_0": "This is a subtraction problem.",
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "multiple_choice",
-      "visual_context": "Items with price tags and coins/notes for calculation."
+      "visual_context": "Items with price tags and coins/notes for calculation.",
+      "irt_params": {
+        "a": 1.4,
+        "b": 0.09,
+        "c": 0.25
+      },
+      "irt_a": 1.4,
+      "irt_b": 0.09,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify the numbers: 106, 65",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ]
     },
     {
       "id": "T2-0902",
@@ -58,10 +71,10 @@
       "visual_alt": null,
       "diagnostics": {
         "minutes_overflow": "60 minutes makes a new hour. Carry the extra into the hour.",
-        "wrong_direction": "We are adding minutes \u2014 so move forward.",
-        "0": "Not 3:15 \u2014 think about why 3:00 is the right answer.",
-        "1": "Not 2:45 \u2014 think about why 3:00 is the right answer.",
-        "3": "Not 2:30 \u2014 think about why 3:00 is the right answer."
+        "wrong_direction": "We are adding minutes — so move forward.",
+        "0": "Not 3:15 — think about why 3:00 is the right answer.",
+        "1": "Not 2:45 — think about why 3:00 is the right answer.",
+        "3": "Not 2:30 — think about why 3:00 is the right answer."
       },
       "tags": [
         "time",
@@ -78,11 +91,24 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "multiple_choice",
-      "visual_context": "An analog clock face showing the time from the problem."
+      "visual_context": "An analog clock face showing the time from the problem.",
+      "irt_params": {
+        "a": 1.4,
+        "b": 0.09,
+        "c": 0.25
+      },
+      "irt_a": 1.4,
+      "irt_b": 0.09,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify the numbers: 1, 00, 120",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ]
     },
     {
       "id": "T2-0903",
@@ -99,7 +125,7 @@
       "visual_svg": null,
       "visual_alt": null,
       "diagnostics": {
-        "wrong_op": "'How many more' means subtract \u2014 bigger minus smaller.",
+        "wrong_op": "'How many more' means subtract — bigger minus smaller.",
         "swapped": "Be careful which day had more.",
         "0": "319 is too low. Try working through the problem step by step.",
         "1": "321 is too high. Try working through the problem step by step.",
@@ -120,11 +146,24 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "tap_to_count",
-      "visual_context": "A visual representation of the problem."
+      "visual_context": "A visual representation of the problem.",
+      "irt_params": {
+        "a": 1.4,
+        "b": 0.12,
+        "c": 0.25
+      },
+      "irt_a": 1.4,
+      "irt_b": 0.12,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify the numbers: 513, 193",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ]
     },
     {
       "id": "T2-0904",
@@ -162,11 +201,24 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "multiple_choice",
-      "visual_context": "A visual representation of the problem."
+      "visual_context": "A visual representation of the problem.",
+      "irt_params": {
+        "a": 1.5,
+        "b": 0.14,
+        "c": 0.25
+      },
+      "irt_a": 1.5,
+      "irt_b": 0.14,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Break into parts: (290+60) and (7+7)",
+        "Add tens: 290+60=350",
+        "Now add the ones part and combine"
+      ]
     },
     {
       "id": "T2-0905",
@@ -203,11 +255,24 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "multiple_choice",
-      "visual_context": "A visual representation of the problem."
+      "visual_context": "A visual representation of the problem.",
+      "irt_params": {
+        "a": 1.3,
+        "b": 0.17,
+        "c": 0.25
+      },
+      "irt_a": 1.3,
+      "irt_b": 0.17,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Start at 225 on the number line",
+        "Count back 214 steps",
+        "The number you land on is your answer"
+      ]
     },
     {
       "id": "T2-0906",
@@ -224,7 +289,7 @@
       "visual_svg": null,
       "visual_alt": null,
       "diagnostics": {
-        "wrong_op": "Double = \u00d72. Half = \u00f72.",
+        "wrong_op": "Double = ×2. Half = ÷2.",
         "0": "73 is too low. Try working through the problem step by step.",
         "2": "75 is too low. Try working through the problem step by step.",
         "3": "77 is too high. Try working through the problem step by step."
@@ -243,11 +308,24 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "multiple_choice",
-      "visual_context": "A visual representation of the problem."
+      "visual_context": "A visual representation of the problem.",
+      "irt_params": {
+        "a": 1.3,
+        "b": 0.17,
+        "c": 0.25
+      },
+      "irt_a": 1.3,
+      "irt_b": 0.17,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify the numbers: 38",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ]
     },
     {
       "id": "T2-0907",
@@ -284,15 +362,28 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "tap_to_count",
-      "visual_context": "Objects being shared equally among groups."
+      "visual_context": "Objects being shared equally among groups.",
+      "irt_params": {
+        "a": 1.4,
+        "b": 0.19,
+        "c": 0.25
+      },
+      "irt_a": 1.4,
+      "irt_b": 0.19,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify the numbers: 21, 3",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ]
     },
     {
       "id": "T2-0908",
-      "stem": "Theo pays \u20b9386 for a soft toy that costs \u20b9146. How much change does Theo get back?",
+      "stem": "Theo pays ₹386 for a soft toy that costs ₹146. How much change does Theo get back?",
       "choices": [
         "243",
         "237",
@@ -320,17 +411,30 @@
       ],
       "topic": "arithmetic_missing_numbers",
       "topic_name": "Arithmetic & Missing Numbers",
-      "original_stem": "Theo pays \u20b9386 for a soft toy that costs \u20b9146. How much change does Theo get back?",
+      "original_stem": "Theo pays ₹386 for a soft toy that costs ₹146. How much change does Theo get back?",
       "hint": {
         "level_0": "This is a subtraction problem.",
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "multiple_choice",
-      "visual_context": "Items with price tags and coins/notes for calculation."
+      "visual_context": "Items with price tags and coins/notes for calculation.",
+      "irt_params": {
+        "a": 1.4,
+        "b": 0.22,
+        "c": 0.25
+      },
+      "irt_a": 1.4,
+      "irt_b": 0.22,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify the numbers: 386, 146",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ]
     },
     {
       "id": "T2-0909",
@@ -348,10 +452,10 @@
       "visual_alt": null,
       "diagnostics": {
         "minutes_overflow": "60 minutes makes a new hour. Carry the extra into the hour.",
-        "wrong_direction": "We are adding minutes \u2014 so move forward.",
-        "0": "Not 7:15 \u2014 think about why 7:00 is the right answer.",
-        "2": "Not 6:30 \u2014 think about why 7:00 is the right answer.",
-        "3": "Not 6:45 \u2014 think about why 7:00 is the right answer."
+        "wrong_direction": "We are adding minutes — so move forward.",
+        "0": "Not 7:15 — think about why 7:00 is the right answer.",
+        "2": "Not 6:30 — think about why 7:00 is the right answer.",
+        "3": "Not 6:45 — think about why 7:00 is the right answer."
       },
       "tags": [
         "time",
@@ -368,11 +472,24 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "multiple_choice",
-      "visual_context": "An analog clock face showing the time from the problem."
+      "visual_context": "An analog clock face showing the time from the problem.",
+      "irt_params": {
+        "a": 1.4,
+        "b": 0.25,
+        "c": 0.25
+      },
+      "irt_a": 1.4,
+      "irt_b": 0.25,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify the numbers: 6, 45, 15",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ]
     },
     {
       "id": "T2-0910",
@@ -389,7 +506,7 @@
       "visual_svg": null,
       "visual_alt": null,
       "diagnostics": {
-        "wrong_op": "'How many more' means subtract \u2014 bigger minus smaller.",
+        "wrong_op": "'How many more' means subtract — bigger minus smaller.",
         "swapped": "Be careful which day had more.",
         "0": "36 is too low. Try working through the problem step by step.",
         "1": "35 is too low. Try working through the problem step by step.",
@@ -410,11 +527,24 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "tap_to_count",
-      "visual_context": "A visual representation of the problem."
+      "visual_context": "A visual representation of the problem.",
+      "irt_params": {
+        "a": 1.4,
+        "b": 0.25,
+        "c": 0.25
+      },
+      "irt_a": 1.4,
+      "irt_b": 0.25,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify the numbers: 619, 582",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ]
     },
     {
       "id": "T2-0911",
@@ -452,11 +582,24 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "multiple_choice",
-      "visual_context": "A visual representation of the problem."
+      "visual_context": "A visual representation of the problem.",
+      "irt_params": {
+        "a": 1.5,
+        "b": 0.27,
+        "c": 0.25
+      },
+      "irt_a": 1.5,
+      "irt_b": 0.27,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Break into parts: (30+40) and (9+2)",
+        "Add tens: 30+40=70",
+        "Now add the ones part and combine"
+      ]
     },
     {
       "id": "T2-0912",
@@ -493,11 +636,24 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "multiple_choice",
-      "visual_context": "A visual representation of the problem."
+      "visual_context": "A visual representation of the problem.",
+      "irt_params": {
+        "a": 1.3,
+        "b": 0.3,
+        "c": 0.25
+      },
+      "irt_a": 1.3,
+      "irt_b": 0.3,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Break into parts: (230+240) and (3+0)",
+        "Add tens: 230+240=470",
+        "Now add the ones part and combine"
+      ]
     },
     {
       "id": "T2-0913",
@@ -514,7 +670,7 @@
       "visual_svg": null,
       "visual_alt": null,
       "diagnostics": {
-        "wrong_op": "Double = \u00d72. Half = \u00f72.",
+        "wrong_op": "Double = ×2. Half = ÷2.",
         "1": "99 is too high. Try working through the problem step by step.",
         "2": "100 is too high. Try working through the problem step by step.",
         "3": "95 is too low. Try working through the problem step by step."
@@ -533,11 +689,24 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "multiple_choice",
-      "visual_context": "A visual representation of the problem."
+      "visual_context": "A visual representation of the problem.",
+      "irt_params": {
+        "a": 1.3,
+        "b": 0.32,
+        "c": 0.25
+      },
+      "irt_a": 1.3,
+      "irt_b": 0.32,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify the numbers: 49",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ]
     },
     {
       "id": "T2-0914",
@@ -574,15 +743,28 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "tap_to_count",
-      "visual_context": "Objects being shared equally among groups."
+      "visual_context": "Objects being shared equally among groups.",
+      "irt_params": {
+        "a": 1.4,
+        "b": 0.32,
+        "c": 0.25
+      },
+      "irt_a": 1.4,
+      "irt_b": 0.32,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify the numbers: 36, 4",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ]
     },
     {
       "id": "T2-0915",
-      "stem": "Help Vanya calculate: Sage pays \u20b9500 for a pencil case that costs \u20b9170. How much change does Sage get back?",
+      "stem": "Help Vanya calculate: Sage pays ₹500 for a pencil case that costs ₹170. How much change does Sage get back?",
       "choices": [
         "327",
         "332",
@@ -610,17 +792,30 @@
       ],
       "topic": "arithmetic_missing_numbers",
       "topic_name": "Arithmetic & Missing Numbers",
-      "original_stem": "Sage pays \u20b9500 for a pencil case that costs \u20b9170. How much change does Sage get back?",
+      "original_stem": "Sage pays ₹500 for a pencil case that costs ₹170. How much change does Sage get back?",
       "hint": {
         "level_0": "This is a subtraction problem.",
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "multiple_choice",
-      "visual_context": "Items with price tags and coins/notes for calculation."
+      "visual_context": "Items with price tags and coins/notes for calculation.",
+      "irt_params": {
+        "a": 1.4,
+        "b": 0.35,
+        "c": 0.25
+      },
+      "irt_a": 1.4,
+      "irt_b": 0.35,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify the numbers: 500, 170",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ]
     },
     {
       "id": "T2-0916",
@@ -638,10 +833,10 @@
       "visual_alt": null,
       "diagnostics": {
         "minutes_overflow": "60 minutes makes a new hour. Carry the extra into the hour.",
-        "wrong_direction": "We are adding minutes \u2014 so move forward.",
-        "0": "Not 2:30 \u2014 think about why 2:45 is the right answer.",
-        "2": "Not 3:00 \u2014 think about why 2:45 is the right answer.",
-        "3": "Not 2:15 \u2014 think about why 2:45 is the right answer."
+        "wrong_direction": "We are adding minutes — so move forward.",
+        "0": "Not 2:30 — think about why 2:45 is the right answer.",
+        "2": "Not 3:00 — think about why 2:45 is the right answer.",
+        "3": "Not 2:15 — think about why 2:45 is the right answer."
       },
       "tags": [
         "time",
@@ -658,11 +853,24 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "multiple_choice",
-      "visual_context": "An analog clock face showing the time from the problem."
+      "visual_context": "An analog clock face showing the time from the problem.",
+      "irt_params": {
+        "a": 1.4,
+        "b": 0.37,
+        "c": 0.25
+      },
+      "irt_a": 1.4,
+      "irt_b": 0.37,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify the numbers: 1, 45, 60",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ]
     },
     {
       "id": "T2-0917",
@@ -679,7 +887,7 @@
       "visual_svg": null,
       "visual_alt": null,
       "diagnostics": {
-        "wrong_op": "'How many more' means subtract \u2014 bigger minus smaller.",
+        "wrong_op": "'How many more' means subtract — bigger minus smaller.",
         "swapped": "Be careful which day had more.",
         "0": "31 is too low. Try working through the problem step by step.",
         "1": "22 is too low. Try working through the problem step by step.",
@@ -700,11 +908,24 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "tap_to_count",
-      "visual_context": "A visual representation of the problem."
+      "visual_context": "A visual representation of the problem.",
+      "irt_params": {
+        "a": 1.4,
+        "b": 0.4,
+        "c": 0.25
+      },
+      "irt_a": 1.4,
+      "irt_b": 0.4,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify the numbers: 316, 284",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ]
     },
     {
       "id": "T2-0918",
@@ -742,11 +963,24 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "multiple_choice",
-      "visual_context": "A visual representation of the problem."
+      "visual_context": "A visual representation of the problem.",
+      "irt_params": {
+        "a": 1.5,
+        "b": 0.4,
+        "c": 0.25
+      },
+      "irt_a": 1.5,
+      "irt_b": 0.4,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Break into parts: (40+20) and (9+7)",
+        "Add tens: 40+20=60",
+        "Now add the ones part and combine"
+      ]
     },
     {
       "id": "T2-0919",
@@ -783,11 +1017,24 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "multiple_choice",
-      "visual_context": "A visual representation of the problem."
+      "visual_context": "A visual representation of the problem.",
+      "irt_params": {
+        "a": 1.3,
+        "b": 0.43,
+        "c": 0.25
+      },
+      "irt_a": 1.3,
+      "irt_b": 0.43,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Break into parts: (60+110) and (9+1)",
+        "Add tens: 60+110=170",
+        "Now add the ones part and combine"
+      ]
     },
     {
       "id": "T2-0920",
@@ -804,7 +1051,7 @@
       "visual_svg": null,
       "visual_alt": null,
       "diagnostics": {
-        "wrong_op": "Double = \u00d72. Half = \u00f72.",
+        "wrong_op": "Double = ×2. Half = ÷2.",
         "0": "126 is too high. Try working through the problem step by step.",
         "1": "121 is too low. Try working through the problem step by step.",
         "2": "125 is too high. Try working through the problem step by step."
@@ -823,11 +1070,24 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "multiple_choice",
-      "visual_context": "A visual representation of the problem."
+      "visual_context": "A visual representation of the problem.",
+      "irt_params": {
+        "a": 1.3,
+        "b": 0.45,
+        "c": 0.25
+      },
+      "irt_a": 1.3,
+      "irt_b": 0.45,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify the numbers: 62",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ]
     },
     {
       "id": "T2-0921",
@@ -864,15 +1124,28 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "tap_to_count",
-      "visual_context": "Objects being shared equally among groups."
+      "visual_context": "Objects being shared equally among groups.",
+      "irt_params": {
+        "a": 1.4,
+        "b": 0.48,
+        "c": 0.25
+      },
+      "irt_a": 1.4,
+      "irt_b": 0.48,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify the numbers: 24, 3",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ]
     },
     {
       "id": "T2-0922",
-      "stem": "Riya pays \u20b995 for a comic book that costs \u20b974. How much change does Riya get back?",
+      "stem": "Riya pays ₹95 for a comic book that costs ₹74. How much change does Riya get back?",
       "choices": [
         "24",
         "25",
@@ -900,17 +1173,30 @@
       ],
       "topic": "arithmetic_missing_numbers",
       "topic_name": "Arithmetic & Missing Numbers",
-      "original_stem": "Riya pays \u20b995 for a comic book that costs \u20b974. How much change does Riya get back?",
+      "original_stem": "Riya pays ₹95 for a comic book that costs ₹74. How much change does Riya get back?",
       "hint": {
         "level_0": "This is a subtraction problem.",
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "multiple_choice",
-      "visual_context": "Items with price tags and coins/notes for calculation."
+      "visual_context": "Items with price tags and coins/notes for calculation.",
+      "irt_params": {
+        "a": 1.4,
+        "b": 0.48,
+        "c": 0.25
+      },
+      "irt_a": 1.4,
+      "irt_b": 0.48,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify the numbers: 95, 74",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ]
     },
     {
       "id": "T2-0923",
@@ -928,10 +1214,10 @@
       "visual_alt": null,
       "diagnostics": {
         "minutes_overflow": "60 minutes makes a new hour. Carry the extra into the hour.",
-        "wrong_direction": "We are adding minutes \u2014 so move forward.",
-        "0": "Not 8:00 \u2014 think about why 8:15 is the right answer.",
-        "1": "Not 7:45 \u2014 think about why 8:15 is the right answer.",
-        "3": "Not 8:30 \u2014 think about why 8:15 is the right answer."
+        "wrong_direction": "We are adding minutes — so move forward.",
+        "0": "Not 8:00 — think about why 8:15 is the right answer.",
+        "1": "Not 7:45 — think about why 8:15 is the right answer.",
+        "3": "Not 8:30 — think about why 8:15 is the right answer."
       },
       "tags": [
         "time",
@@ -948,11 +1234,24 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "multiple_choice",
-      "visual_context": "An analog clock face showing the time from the problem."
+      "visual_context": "An analog clock face showing the time from the problem.",
+      "irt_params": {
+        "a": 1.4,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "irt_a": 1.4,
+      "irt_b": 0.5,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify the numbers: 7, 45, 30",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ]
     },
     {
       "id": "T2-0924",
@@ -969,7 +1268,7 @@
       "visual_svg": null,
       "visual_alt": null,
       "diagnostics": {
-        "wrong_op": "'How many more' means subtract \u2014 bigger minus smaller.",
+        "wrong_op": "'How many more' means subtract — bigger minus smaller.",
         "swapped": "Be careful which day had more.",
         "1": "92 is too low. Try working through the problem step by step.",
         "2": "93 is too low. Try working through the problem step by step.",
@@ -990,11 +1289,24 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "tap_to_count",
-      "visual_context": "A visual representation of the problem."
+      "visual_context": "A visual representation of the problem.",
+      "irt_params": {
+        "a": 1.4,
+        "b": 0.53,
+        "c": 0.25
+      },
+      "irt_a": 1.4,
+      "irt_b": 0.53,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify the numbers: 563, 469",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ]
     },
     {
       "id": "T2-0925",
@@ -1032,11 +1344,24 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "multiple_choice",
-      "visual_context": "A visual representation of the problem."
+      "visual_context": "A visual representation of the problem.",
+      "irt_params": {
+        "a": 1.5,
+        "b": 0.55,
+        "c": 0.25
+      },
+      "irt_a": 1.5,
+      "irt_b": 0.55,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Break into parts: (20+10) and (9+8)",
+        "Add tens: 20+10=30",
+        "Now add the ones part and combine"
+      ]
     },
     {
       "id": "T2-0926",
@@ -1073,11 +1398,24 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "multiple_choice",
-      "visual_context": "A visual representation of the problem."
+      "visual_context": "A visual representation of the problem.",
+      "irt_params": {
+        "a": 1.3,
+        "b": 0.55,
+        "c": 0.25
+      },
+      "irt_a": 1.3,
+      "irt_b": 0.55,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Start at 221 on the number line",
+        "Count back 78 steps",
+        "The number you land on is your answer"
+      ]
     },
     {
       "id": "T2-0927",
@@ -1094,7 +1432,7 @@
       "visual_svg": null,
       "visual_alt": null,
       "diagnostics": {
-        "wrong_op": "Double = \u00d72. Half = \u00f72.",
+        "wrong_op": "Double = ×2. Half = ÷2.",
         "0": "25 is too high. Try working through the problem step by step.",
         "1": "22 is too high. Try working through the problem step by step.",
         "2": "21 is too high. Try working through the problem step by step."
@@ -1113,11 +1451,24 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "multiple_choice",
-      "visual_context": "A shape divided into equal parts with some shaded."
+      "visual_context": "A shape divided into equal parts with some shaded.",
+      "irt_params": {
+        "a": 1.3,
+        "b": 0.58,
+        "c": 0.25
+      },
+      "irt_a": 1.3,
+      "irt_b": 0.58,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify the numbers: 40",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ]
     },
     {
       "id": "T2-0928",
@@ -1154,15 +1505,28 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "tap_to_count",
-      "visual_context": "Objects being shared equally among groups."
+      "visual_context": "Objects being shared equally among groups.",
+      "irt_params": {
+        "a": 1.4,
+        "b": 0.61,
+        "c": 0.25
+      },
+      "irt_a": 1.4,
+      "irt_b": 0.61,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify the numbers: 88, 4",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ]
     },
     {
       "id": "T2-0929",
-      "stem": "Aarav pays \u20b9275 for a comic book that costs \u20b949. How much change does Aarav get back?",
+      "stem": "Aarav pays ₹275 for a comic book that costs ₹49. How much change does Aarav get back?",
       "choices": [
         "226",
         "224",
@@ -1190,17 +1554,30 @@
       ],
       "topic": "arithmetic_missing_numbers",
       "topic_name": "Arithmetic & Missing Numbers",
-      "original_stem": "Aarav pays \u20b9275 for a comic book that costs \u20b949. How much change does Aarav get back?",
+      "original_stem": "Aarav pays ₹275 for a comic book that costs ₹49. How much change does Aarav get back?",
       "hint": {
         "level_0": "This is a subtraction problem.",
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "multiple_choice",
-      "visual_context": "Items with price tags and coins/notes for calculation."
+      "visual_context": "Items with price tags and coins/notes for calculation.",
+      "irt_params": {
+        "a": 1.4,
+        "b": 0.63,
+        "c": 0.25
+      },
+      "irt_a": 1.4,
+      "irt_b": 0.63,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify the numbers: 275, 49",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ]
     },
     {
       "id": "T2-0930",
@@ -1218,10 +1595,10 @@
       "visual_alt": null,
       "diagnostics": {
         "minutes_overflow": "60 minutes makes a new hour. Carry the extra into the hour.",
-        "wrong_direction": "We are adding minutes \u2014 so move forward.",
-        "0": "Not 8:00 \u2014 think about why 8:15 is the right answer.",
-        "1": "Not 8:30 \u2014 think about why 8:15 is the right answer.",
-        "2": "Not 7:45 \u2014 think about why 8:15 is the right answer."
+        "wrong_direction": "We are adding minutes — so move forward.",
+        "0": "Not 8:00 — think about why 8:15 is the right answer.",
+        "1": "Not 8:30 — think about why 8:15 is the right answer.",
+        "2": "Not 7:45 — think about why 8:15 is the right answer."
       },
       "tags": [
         "time",
@@ -1238,11 +1615,24 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "multiple_choice",
-      "visual_context": "An analog clock face showing the time from the problem."
+      "visual_context": "An analog clock face showing the time from the problem.",
+      "irt_params": {
+        "a": 1.4,
+        "b": 0.63,
+        "c": 0.25
+      },
+      "irt_a": 1.4,
+      "irt_b": 0.63,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify the numbers: 8, 00, 15",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ]
     },
     {
       "id": "T2-0931",
@@ -1259,7 +1649,7 @@
       "visual_svg": null,
       "visual_alt": null,
       "diagnostics": {
-        "wrong_op": "'How many more' means subtract \u2014 bigger minus smaller.",
+        "wrong_op": "'How many more' means subtract — bigger minus smaller.",
         "swapped": "Be careful which day had more.",
         "1": "45 is too high. Try working through the problem step by step.",
         "2": "43 is too low. Try working through the problem step by step.",
@@ -1280,11 +1670,24 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "tap_to_count",
-      "visual_context": "A visual representation of the problem."
+      "visual_context": "A visual representation of the problem.",
+      "irt_params": {
+        "a": 1.4,
+        "b": 0.66,
+        "c": 0.25
+      },
+      "irt_a": 1.4,
+      "irt_b": 0.66,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify the numbers: 923, 879",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ]
     },
     {
       "id": "T2-0932",
@@ -1322,11 +1725,24 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "multiple_choice",
-      "visual_context": "A visual representation of the problem."
+      "visual_context": "A visual representation of the problem.",
+      "irt_params": {
+        "a": 1.5,
+        "b": 0.68,
+        "c": 0.25
+      },
+      "irt_a": 1.5,
+      "irt_b": 0.68,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Break into parts: (290+20) and (7+3)",
+        "Add tens: 290+20=310",
+        "Now add the ones part and combine"
+      ]
     },
     {
       "id": "T2-0933",
@@ -1363,11 +1779,24 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "multiple_choice",
-      "visual_context": "A visual representation of the problem."
+      "visual_context": "A visual representation of the problem.",
+      "irt_params": {
+        "a": 1.3,
+        "b": 0.71,
+        "c": 0.25
+      },
+      "irt_a": 1.3,
+      "irt_b": 0.71,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Break into parts: (30+80) and (1+6)",
+        "Add tens: 30+80=110",
+        "Now add the ones part and combine"
+      ]
     },
     {
       "id": "T2-0934",
@@ -1384,7 +1813,7 @@
       "visual_svg": null,
       "visual_alt": null,
       "diagnostics": {
-        "wrong_op": "Double = \u00d72. Half = \u00f72.",
+        "wrong_op": "Double = ×2. Half = ÷2.",
         "0": "28 is too low. Try working through the problem step by step.",
         "1": "34 is too high. Try working through the problem step by step.",
         "3": "31 is too high. Try working through the problem step by step."
@@ -1403,11 +1832,24 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "multiple_choice",
-      "visual_context": "A shape divided into equal parts with some shaded."
+      "visual_context": "A shape divided into equal parts with some shaded.",
+      "irt_params": {
+        "a": 1.3,
+        "b": 0.71,
+        "c": 0.25
+      },
+      "irt_a": 1.3,
+      "irt_b": 0.71,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify the numbers: 58",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ]
     },
     {
       "id": "T2-0935",
@@ -1444,15 +1886,28 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "tap_to_count",
-      "visual_context": "Colourful marbles arranged in groups for easy counting."
+      "visual_context": "Colourful marbles arranged in groups for easy counting.",
+      "irt_params": {
+        "a": 1.4,
+        "b": 0.73,
+        "c": 0.25
+      },
+      "irt_a": 1.4,
+      "irt_b": 0.73,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify the numbers: 24, 4",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ]
     },
     {
       "id": "T2-0936",
-      "stem": "Help Professor Plum calculate: Amara pays \u20b9467 for stickers that costs \u20b9405. How much change does Amara get back?",
+      "stem": "Help Professor Plum calculate: Amara pays ₹467 for stickers that costs ₹405. How much change does Amara get back?",
       "choices": [
         "67",
         "62",
@@ -1480,17 +1935,30 @@
       ],
       "topic": "arithmetic_missing_numbers",
       "topic_name": "Arithmetic & Missing Numbers",
-      "original_stem": "Amara pays \u20b9467 for stickers that costs \u20b9405. How much change does Amara get back?",
+      "original_stem": "Amara pays ₹467 for stickers that costs ₹405. How much change does Amara get back?",
       "hint": {
         "level_0": "This is a subtraction problem.",
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "multiple_choice",
-      "visual_context": "Colourful stickers arranged in groups for easy counting."
+      "visual_context": "Colourful stickers arranged in groups for easy counting.",
+      "irt_params": {
+        "a": 1.45,
+        "b": 0.76,
+        "c": 0.25
+      },
+      "irt_a": 1.45,
+      "irt_b": 0.76,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify the numbers: 467, 405",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ]
     },
     {
       "id": "T2-0937",
@@ -1508,10 +1976,10 @@
       "visual_alt": null,
       "diagnostics": {
         "minutes_overflow": "60 minutes makes a new hour. Carry the extra into the hour.",
-        "wrong_direction": "We are adding minutes \u2014 so move forward.",
-        "1": "Not 11:30 \u2014 think about why 11:45 is the right answer.",
-        "2": "Not 11:15 \u2014 think about why 11:45 is the right answer.",
-        "3": "Not 12:00 \u2014 think about why 11:45 is the right answer."
+        "wrong_direction": "We are adding minutes — so move forward.",
+        "1": "Not 11:30 — think about why 11:45 is the right answer.",
+        "2": "Not 11:15 — think about why 11:45 is the right answer.",
+        "3": "Not 12:00 — think about why 11:45 is the right answer."
       },
       "tags": [
         "time",
@@ -1528,11 +1996,24 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "multiple_choice",
-      "visual_context": "An analog clock face showing the time from the problem."
+      "visual_context": "An analog clock face showing the time from the problem.",
+      "irt_params": {
+        "a": 1.45,
+        "b": 0.78,
+        "c": 0.25
+      },
+      "irt_a": 1.45,
+      "irt_b": 0.78,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify the numbers: 10, 15, 90",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ]
     },
     {
       "id": "T2-0938",
@@ -1549,7 +2030,7 @@
       "visual_svg": null,
       "visual_alt": null,
       "diagnostics": {
-        "wrong_op": "'How many more' means subtract \u2014 bigger minus smaller.",
+        "wrong_op": "'How many more' means subtract — bigger minus smaller.",
         "swapped": "Be careful which day had more.",
         "0": "208 is too low. Try working through the problem step by step.",
         "1": "216 is too low. Try working through the problem step by step.",
@@ -1570,11 +2051,24 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "tap_to_count",
-      "visual_context": "A visual representation of the problem."
+      "visual_context": "A visual representation of the problem.",
+      "irt_params": {
+        "a": 1.45,
+        "b": 0.78,
+        "c": 0.25
+      },
+      "irt_a": 1.45,
+      "irt_b": 0.78,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify the numbers: 849, 631",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ]
     },
     {
       "id": "T2-0939",
@@ -1612,11 +2106,24 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "multiple_choice",
-      "visual_context": "A visual representation of the problem."
+      "visual_context": "A visual representation of the problem.",
+      "irt_params": {
+        "a": 1.55,
+        "b": 0.81,
+        "c": 0.25
+      },
+      "irt_a": 1.55,
+      "irt_b": 0.81,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Break into parts: (90+80) and (8+3)",
+        "Add tens: 90+80=170",
+        "Now add the ones part and combine"
+      ]
     },
     {
       "id": "T2-0940",
@@ -1653,11 +2160,24 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "multiple_choice",
-      "visual_context": "A visual representation of the problem."
+      "visual_context": "A visual representation of the problem.",
+      "irt_params": {
+        "a": 1.35,
+        "b": 0.84,
+        "c": 0.25
+      },
+      "irt_a": 1.35,
+      "irt_b": 0.84,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Start at 252 on the number line",
+        "Count back 215 steps",
+        "The number you land on is your answer"
+      ]
     },
     {
       "id": "T2-0941",
@@ -1674,7 +2194,7 @@
       "visual_svg": null,
       "visual_alt": null,
       "diagnostics": {
-        "wrong_op": "Double = \u00d72. Half = \u00f72.",
+        "wrong_op": "Double = ×2. Half = ÷2.",
         "0": "90 is too high. Try working through the problem step by step.",
         "2": "85 is too low. Try working through the problem step by step.",
         "3": "89 is too high. Try working through the problem step by step."
@@ -1693,11 +2213,24 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "multiple_choice",
-      "visual_context": "A visual representation of the problem."
+      "visual_context": "A visual representation of the problem.",
+      "irt_params": {
+        "a": 1.35,
+        "b": 0.86,
+        "c": 0.25
+      },
+      "irt_a": 1.35,
+      "irt_b": 0.86,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify the numbers: 44",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ]
     },
     {
       "id": "T2-0942",
@@ -1734,15 +2267,28 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "tap_to_count",
-      "visual_context": "Objects being shared equally among groups."
+      "visual_context": "Objects being shared equally among groups.",
+      "irt_params": {
+        "a": 1.45,
+        "b": 0.89,
+        "c": 0.25
+      },
+      "irt_a": 1.45,
+      "irt_b": 0.89,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify the numbers: 65, 5",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ]
     },
     {
       "id": "T2-0943",
-      "stem": "Help Pirate Papaya calculate: Anika pays \u20b9369 for stickers that costs \u20b9141. How much change does Anika get back?",
+      "stem": "Help Pirate Papaya calculate: Anika pays ₹369 for stickers that costs ₹141. How much change does Anika get back?",
       "choices": [
         "226",
         "228",
@@ -1770,17 +2316,30 @@
       ],
       "topic": "arithmetic_missing_numbers",
       "topic_name": "Arithmetic & Missing Numbers",
-      "original_stem": "Anika pays \u20b9369 for stickers that costs \u20b9141. How much change does Anika get back?",
+      "original_stem": "Anika pays ₹369 for stickers that costs ₹141. How much change does Anika get back?",
       "hint": {
         "level_0": "This is a subtraction problem.",
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "multiple_choice",
-      "visual_context": "Colourful stickers arranged in groups for easy counting."
+      "visual_context": "Colourful stickers arranged in groups for easy counting.",
+      "irt_params": {
+        "a": 1.45,
+        "b": 0.89,
+        "c": 0.25
+      },
+      "irt_a": 1.45,
+      "irt_b": 0.89,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify the numbers: 369, 141",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ]
     },
     {
       "id": "T2-0944",
@@ -1798,10 +2357,10 @@
       "visual_alt": null,
       "diagnostics": {
         "minutes_overflow": "60 minutes makes a new hour. Carry the extra into the hour.",
-        "wrong_direction": "We are adding minutes \u2014 so move forward.",
-        "0": "Not 5:30 \u2014 think about why 5:15 is the right answer.",
-        "2": "Not 5:00 \u2014 think about why 5:15 is the right answer.",
-        "3": "Not 4:45 \u2014 think about why 5:15 is the right answer."
+        "wrong_direction": "We are adding minutes — so move forward.",
+        "0": "Not 5:30 — think about why 5:15 is the right answer.",
+        "2": "Not 5:00 — think about why 5:15 is the right answer.",
+        "3": "Not 4:45 — think about why 5:15 is the right answer."
       },
       "tags": [
         "time",
@@ -1818,11 +2377,24 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "multiple_choice",
-      "visual_context": "An analog clock face showing the time from the problem."
+      "visual_context": "An analog clock face showing the time from the problem.",
+      "irt_params": {
+        "a": 1.45,
+        "b": 0.91,
+        "c": 0.25
+      },
+      "irt_a": 1.45,
+      "irt_b": 0.91,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify the numbers: 4, 00, 75",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ]
     },
     {
       "id": "T2-0945",
@@ -1839,7 +2411,7 @@
       "visual_svg": null,
       "visual_alt": null,
       "diagnostics": {
-        "wrong_op": "'How many more' means subtract \u2014 bigger minus smaller.",
+        "wrong_op": "'How many more' means subtract — bigger minus smaller.",
         "swapped": "Be careful which day had more.",
         "0": "167 is too low. Try working through the problem step by step.",
         "1": "168 is too low. Try working through the problem step by step.",
@@ -1860,11 +2432,24 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "tap_to_count",
-      "visual_context": "A visual representation of the problem."
+      "visual_context": "A visual representation of the problem.",
+      "irt_params": {
+        "a": 1.45,
+        "b": 0.94,
+        "c": 0.25
+      },
+      "irt_a": 1.45,
+      "irt_b": 0.94,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify the numbers: 970, 801",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ]
     },
     {
       "id": "T2-0946",
@@ -1902,11 +2487,24 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "multiple_choice",
-      "visual_context": "A visual representation of the problem."
+      "visual_context": "A visual representation of the problem.",
+      "irt_params": {
+        "a": 1.55,
+        "b": 0.96,
+        "c": 0.25
+      },
+      "irt_a": 1.55,
+      "irt_b": 0.96,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Break into parts: (40+40) and (9+1)",
+        "Add tens: 40+40=80",
+        "Now add the ones part and combine"
+      ]
     },
     {
       "id": "T2-0947",
@@ -1943,11 +2541,24 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "multiple_choice",
-      "visual_context": "A visual representation of the problem."
+      "visual_context": "A visual representation of the problem.",
+      "irt_params": {
+        "a": 1.35,
+        "b": 0.96,
+        "c": 0.25
+      },
+      "irt_a": 1.35,
+      "irt_b": 0.96,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Break into parts: (10+60) and (3+5)",
+        "Add tens: 10+60=70",
+        "Now add the ones part and combine"
+      ]
     },
     {
       "id": "T2-0948",
@@ -1964,7 +2575,7 @@
       "visual_svg": null,
       "visual_alt": null,
       "diagnostics": {
-        "wrong_op": "Double = \u00d72. Half = \u00f72.",
+        "wrong_op": "Double = ×2. Half = ÷2.",
         "0": "27 is too low. Try working through the problem step by step.",
         "1": "29 is too high. Try working through the problem step by step.",
         "3": "25 is too low. Try working through the problem step by step."
@@ -1983,11 +2594,24 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "multiple_choice",
-      "visual_context": "A shape divided into equal parts with some shaded."
+      "visual_context": "A shape divided into equal parts with some shaded.",
+      "irt_params": {
+        "a": 1.35,
+        "b": 0.99,
+        "c": 0.25
+      },
+      "irt_a": 1.35,
+      "irt_b": 0.99,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify the numbers: 56",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ]
     },
     {
       "id": "T2-0949",
@@ -2024,15 +2648,28 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "tap_to_count",
-      "visual_context": "Objects being shared equally among groups."
+      "visual_context": "Objects being shared equally among groups.",
+      "irt_params": {
+        "a": 1.45,
+        "b": 1.02,
+        "c": 0.25
+      },
+      "irt_a": 1.45,
+      "irt_b": 1.02,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify the numbers: 45, 3",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ]
     },
     {
       "id": "T2-0950",
-      "stem": "Help Ranger Roo calculate: Iris pays \u20b9419 for a comic book that costs \u20b9277. How much change does Iris get back?",
+      "stem": "Help Ranger Roo calculate: Iris pays ₹419 for a comic book that costs ₹277. How much change does Iris get back?",
       "choices": [
         "139",
         "140",
@@ -2060,17 +2697,30 @@
       ],
       "topic": "arithmetic_missing_numbers",
       "topic_name": "Arithmetic & Missing Numbers",
-      "original_stem": "Iris pays \u20b9419 for a comic book that costs \u20b9277. How much change does Iris get back?",
+      "original_stem": "Iris pays ₹419 for a comic book that costs ₹277. How much change does Iris get back?",
       "hint": {
         "level_0": "This is a subtraction problem.",
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "multiple_choice",
-      "visual_context": "Items with price tags and coins/notes for calculation."
+      "visual_context": "Items with price tags and coins/notes for calculation.",
+      "irt_params": {
+        "a": 1.45,
+        "b": 1.04,
+        "c": 0.25
+      },
+      "irt_a": 1.45,
+      "irt_b": 1.04,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify the numbers: 419, 277",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ]
     },
     {
       "id": "T2-0951",
@@ -2088,10 +2738,10 @@
       "visual_alt": null,
       "diagnostics": {
         "minutes_overflow": "60 minutes makes a new hour. Carry the extra into the hour.",
-        "wrong_direction": "We are adding minutes \u2014 so move forward.",
-        "1": "Not 5:30 \u2014 think about why 6:00 is the right answer.",
-        "2": "Not 6:15 \u2014 think about why 6:00 is the right answer.",
-        "3": "Not 5:45 \u2014 think about why 6:00 is the right answer."
+        "wrong_direction": "We are adding minutes — so move forward.",
+        "1": "Not 5:30 — think about why 6:00 is the right answer.",
+        "2": "Not 6:15 — think about why 6:00 is the right answer.",
+        "3": "Not 5:45 — think about why 6:00 is the right answer."
       },
       "tags": [
         "time",
@@ -2108,11 +2758,24 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "multiple_choice",
-      "visual_context": "An analog clock face showing the time from the problem."
+      "visual_context": "An analog clock face showing the time from the problem.",
+      "irt_params": {
+        "a": 1.45,
+        "b": 1.04,
+        "c": 0.25
+      },
+      "irt_a": 1.45,
+      "irt_b": 1.04,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify the numbers: 4, 30, 90",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ]
     },
     {
       "id": "T2-0952",
@@ -2129,7 +2792,7 @@
       "visual_svg": null,
       "visual_alt": null,
       "diagnostics": {
-        "wrong_op": "'How many more' means subtract \u2014 bigger minus smaller.",
+        "wrong_op": "'How many more' means subtract — bigger minus smaller.",
         "swapped": "Be careful which day had more.",
         "0": "267 is too low. Try working through the problem step by step.",
         "1": "276 is too low. Try working through the problem step by step.",
@@ -2150,11 +2813,24 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "tap_to_count",
-      "visual_context": "A visual representation of the problem."
+      "visual_context": "A visual representation of the problem.",
+      "irt_params": {
+        "a": 1.45,
+        "b": 1.07,
+        "c": 0.25
+      },
+      "irt_a": 1.45,
+      "irt_b": 1.07,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify the numbers: 813, 536",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ]
     },
     {
       "id": "T2-0953",
@@ -2192,11 +2868,24 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "multiple_choice",
-      "visual_context": "A visual representation of the problem."
+      "visual_context": "A visual representation of the problem.",
+      "irt_params": {
+        "a": 1.55,
+        "b": 1.09,
+        "c": 0.25
+      },
+      "irt_a": 1.55,
+      "irt_b": 1.09,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Break into parts: (290+60) and (7+8)",
+        "Add tens: 290+60=350",
+        "Now add the ones part and combine"
+      ]
     },
     {
       "id": "T2-0954",
@@ -2233,11 +2922,24 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "multiple_choice",
-      "visual_context": "A visual representation of the problem."
+      "visual_context": "A visual representation of the problem.",
+      "irt_params": {
+        "a": 1.35,
+        "b": 1.12,
+        "c": 0.25
+      },
+      "irt_a": 1.35,
+      "irt_b": 1.12,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Break into parts: (60+230) and (5+5)",
+        "Add tens: 60+230=290",
+        "Now add the ones part and combine"
+      ]
     },
     {
       "id": "T2-0955",
@@ -2254,7 +2956,7 @@
       "visual_svg": null,
       "visual_alt": null,
       "diagnostics": {
-        "wrong_op": "Double = \u00d72. Half = \u00f72.",
+        "wrong_op": "Double = ×2. Half = ÷2.",
         "0": "18 is too low. Try working through the problem step by step.",
         "1": "23 is too high. Try working through the problem step by step.",
         "3": "22 is too high. Try working through the problem step by step."
@@ -2273,11 +2975,24 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "multiple_choice",
-      "visual_context": "A shape divided into equal parts with some shaded."
+      "visual_context": "A shape divided into equal parts with some shaded.",
+      "irt_params": {
+        "a": 1.35,
+        "b": 1.12,
+        "c": 0.25
+      },
+      "irt_a": 1.35,
+      "irt_b": 1.12,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify the numbers: 42",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ]
     },
     {
       "id": "T2-0956",
@@ -2314,15 +3029,28 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "tap_to_count",
-      "visual_context": "Objects being shared equally among groups."
+      "visual_context": "Objects being shared equally among groups.",
+      "irt_params": {
+        "a": 1.45,
+        "b": 1.14,
+        "c": 0.25
+      },
+      "irt_a": 1.45,
+      "irt_b": 1.14,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify the numbers: 66, 3",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ]
     },
     {
       "id": "T2-0957",
-      "stem": "Captain Kiwi is solving a number puzzle: Zayn pays \u20b966 for a comic book that costs \u20b935. How much change does Zayn get back?",
+      "stem": "Captain Kiwi is solving a number puzzle: Zayn pays ₹66 for a comic book that costs ₹35. How much change does Zayn get back?",
       "choices": [
         "31",
         "28",
@@ -2350,17 +3078,30 @@
       ],
       "topic": "arithmetic_missing_numbers",
       "topic_name": "Arithmetic & Missing Numbers",
-      "original_stem": "Zayn pays \u20b966 for a comic book that costs \u20b935. How much change does Zayn get back?",
+      "original_stem": "Zayn pays ₹66 for a comic book that costs ₹35. How much change does Zayn get back?",
       "hint": {
         "level_0": "This is a subtraction problem.",
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "multiple_choice",
-      "visual_context": "Items with price tags and coins/notes for calculation."
+      "visual_context": "Items with price tags and coins/notes for calculation.",
+      "irt_params": {
+        "a": 1.45,
+        "b": 1.17,
+        "c": 0.25
+      },
+      "irt_a": 1.45,
+      "irt_b": 1.17,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify the numbers: 66, 35",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ]
     },
     {
       "id": "T2-0958",
@@ -2378,10 +3119,10 @@
       "visual_alt": null,
       "diagnostics": {
         "minutes_overflow": "60 minutes makes a new hour. Carry the extra into the hour.",
-        "wrong_direction": "We are adding minutes \u2014 so move forward.",
-        "0": "Not 6:15 \u2014 think about why 6:45 is the right answer.",
-        "2": "Not 6:30 \u2014 think about why 6:45 is the right answer.",
-        "3": "Not 7:00 \u2014 think about why 6:45 is the right answer."
+        "wrong_direction": "We are adding minutes — so move forward.",
+        "0": "Not 6:15 — think about why 6:45 is the right answer.",
+        "2": "Not 6:30 — think about why 6:45 is the right answer.",
+        "3": "Not 7:00 — think about why 6:45 is the right answer."
       },
       "tags": [
         "time",
@@ -2398,11 +3139,24 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "multiple_choice",
-      "visual_context": "An analog clock face showing the time from the problem."
+      "visual_context": "An analog clock face showing the time from the problem.",
+      "irt_params": {
+        "a": 1.45,
+        "b": 1.19,
+        "c": 0.25
+      },
+      "irt_a": 1.45,
+      "irt_b": 1.19,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify the numbers: 5, 30, 75",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ]
     },
     {
       "id": "T2-0959",
@@ -2419,7 +3173,7 @@
       "visual_svg": null,
       "visual_alt": null,
       "diagnostics": {
-        "wrong_op": "'How many more' means subtract \u2014 bigger minus smaller.",
+        "wrong_op": "'How many more' means subtract — bigger minus smaller.",
         "swapped": "Be careful which day had more.",
         "0": "290 is too low. Try working through the problem step by step.",
         "2": "291 is too low. Try working through the problem step by step.",
@@ -2440,11 +3194,24 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "tap_to_count",
-      "visual_context": "A visual representation of the problem."
+      "visual_context": "A visual representation of the problem.",
+      "irt_params": {
+        "a": 1.45,
+        "b": 1.19,
+        "c": 0.25
+      },
+      "irt_a": 1.45,
+      "irt_b": 1.19,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify the numbers: 784, 492",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ]
     },
     {
       "id": "T2-0960",
@@ -2482,11 +3249,24 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "multiple_choice",
-      "visual_context": "A visual representation of the problem."
+      "visual_context": "A visual representation of the problem.",
+      "irt_params": {
+        "a": 1.55,
+        "b": 1.22,
+        "c": 0.25
+      },
+      "irt_a": 1.55,
+      "irt_b": 1.22,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Break into parts: (10+50) and (9+7)",
+        "Add tens: 10+50=60",
+        "Now add the ones part and combine"
+      ]
     },
     {
       "id": "T2-0961",
@@ -2523,11 +3303,24 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "multiple_choice",
-      "visual_context": "A visual representation of the problem."
+      "visual_context": "A visual representation of the problem.",
+      "irt_params": {
+        "a": 1.35,
+        "b": 1.25,
+        "c": 0.25
+      },
+      "irt_a": 1.35,
+      "irt_b": 1.25,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Break into parts: (110+140) and (6+3)",
+        "Add tens: 110+140=250",
+        "Now add the ones part and combine"
+      ]
     },
     {
       "id": "T2-0962",
@@ -2544,7 +3337,7 @@
       "visual_svg": null,
       "visual_alt": null,
       "diagnostics": {
-        "wrong_op": "Double = \u00d72. Half = \u00f72.",
+        "wrong_op": "Double = ×2. Half = ÷2.",
         "0": "23 is too low. Try working through the problem step by step.",
         "1": "21 is too low. Try working through the problem step by step.",
         "3": "25 is too high. Try working through the problem step by step."
@@ -2563,11 +3356,24 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "multiple_choice",
-      "visual_context": "A shape divided into equal parts with some shaded."
+      "visual_context": "A shape divided into equal parts with some shaded.",
+      "irt_params": {
+        "a": 1.35,
+        "b": 1.27,
+        "c": 0.25
+      },
+      "irt_a": 1.35,
+      "irt_b": 1.27,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify the numbers: 48",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ]
     },
     {
       "id": "T2-0963",
@@ -2604,15 +3410,28 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "tap_to_count",
-      "visual_context": "Objects being shared equally among groups."
+      "visual_context": "Objects being shared equally among groups.",
+      "irt_params": {
+        "a": 1.45,
+        "b": 1.27,
+        "c": 0.25
+      },
+      "irt_a": 1.45,
+      "irt_b": 1.27,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify the numbers: 56, 4",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ]
     },
     {
       "id": "T2-0964",
-      "stem": "Help Aarohi calculate: Yara pays \u20b9379 for a pencil case that costs \u20b9301. How much change does Yara get back?",
+      "stem": "Help Aarohi calculate: Yara pays ₹379 for a pencil case that costs ₹301. How much change does Yara get back?",
       "choices": [
         "81",
         "78",
@@ -2640,17 +3459,30 @@
       ],
       "topic": "arithmetic_missing_numbers",
       "topic_name": "Arithmetic & Missing Numbers",
-      "original_stem": "Yara pays \u20b9379 for a pencil case that costs \u20b9301. How much change does Yara get back?",
+      "original_stem": "Yara pays ₹379 for a pencil case that costs ₹301. How much change does Yara get back?",
       "hint": {
         "level_0": "This is a subtraction problem.",
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "multiple_choice",
-      "visual_context": "Items with price tags and coins/notes for calculation."
+      "visual_context": "Items with price tags and coins/notes for calculation.",
+      "irt_params": {
+        "a": 1.45,
+        "b": 1.3,
+        "c": 0.25
+      },
+      "irt_a": 1.45,
+      "irt_b": 1.3,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify the numbers: 379, 301",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ]
     },
     {
       "id": "T2-0965",
@@ -2668,10 +3500,10 @@
       "visual_alt": null,
       "diagnostics": {
         "minutes_overflow": "60 minutes makes a new hour. Carry the extra into the hour.",
-        "wrong_direction": "We are adding minutes \u2014 so move forward.",
-        "0": "Not 4:45 \u2014 think about why 4:30 is the right answer.",
-        "1": "Not 4:15 \u2014 think about why 4:30 is the right answer.",
-        "2": "Not 4:00 \u2014 think about why 4:30 is the right answer."
+        "wrong_direction": "We are adding minutes — so move forward.",
+        "0": "Not 4:45 — think about why 4:30 is the right answer.",
+        "1": "Not 4:15 — think about why 4:30 is the right answer.",
+        "2": "Not 4:00 — think about why 4:30 is the right answer."
       },
       "tags": [
         "time",
@@ -2688,11 +3520,24 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "multiple_choice",
-      "visual_context": "An analog clock face showing the time from the problem."
+      "visual_context": "An analog clock face showing the time from the problem.",
+      "irt_params": {
+        "a": 1.45,
+        "b": 1.32,
+        "c": 0.25
+      },
+      "irt_a": 1.45,
+      "irt_b": 1.32,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify the numbers: 3, 15, 75",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ]
     },
     {
       "id": "T2-0966",
@@ -2709,7 +3554,7 @@
       "visual_svg": null,
       "visual_alt": null,
       "diagnostics": {
-        "wrong_op": "'How many more' means subtract \u2014 bigger minus smaller.",
+        "wrong_op": "'How many more' means subtract — bigger minus smaller.",
         "swapped": "Be careful which day had more.",
         "0": "96 is too low. Try working through the problem step by step.",
         "1": "104 is too low. Try working through the problem step by step.",
@@ -2730,11 +3575,24 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "tap_to_count",
-      "visual_context": "A visual representation of the problem."
+      "visual_context": "A visual representation of the problem.",
+      "irt_params": {
+        "a": 1.45,
+        "b": 1.35,
+        "c": 0.25
+      },
+      "irt_a": 1.45,
+      "irt_b": 1.35,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify the numbers: 829, 723",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ]
     },
     {
       "id": "T2-0967",
@@ -2772,11 +3630,24 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "multiple_choice",
-      "visual_context": "A visual representation of the problem."
+      "visual_context": "A visual representation of the problem.",
+      "irt_params": {
+        "a": 1.55,
+        "b": 1.35,
+        "c": 0.25
+      },
+      "irt_a": 1.55,
+      "irt_b": 1.35,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Break into parts: (20+10) and (9+9)",
+        "Add tens: 20+10=30",
+        "Now add the ones part and combine"
+      ]
     },
     {
       "id": "T2-0968",
@@ -2813,11 +3684,24 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "multiple_choice",
-      "visual_context": "A visual representation of the problem."
+      "visual_context": "A visual representation of the problem.",
+      "irt_params": {
+        "a": 1.35,
+        "b": 1.37,
+        "c": 0.25
+      },
+      "irt_a": 1.35,
+      "irt_b": 1.37,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Break into parts: (50+220) and (2+4)",
+        "Add tens: 50+220=270",
+        "Now add the ones part and combine"
+      ]
     },
     {
       "id": "T2-0969",
@@ -2834,7 +3718,7 @@
       "visual_svg": null,
       "visual_alt": null,
       "diagnostics": {
-        "wrong_op": "Double = \u00d72. Half = \u00f72.",
+        "wrong_op": "Double = ×2. Half = ÷2.",
         "0": "21 is too low. Try working through the problem step by step.",
         "2": "19 is too low. Try working through the problem step by step.",
         "3": "23 is too high. Try working through the problem step by step."
@@ -2853,11 +3737,24 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "multiple_choice",
-      "visual_context": "A shape divided into equal parts with some shaded."
+      "visual_context": "A shape divided into equal parts with some shaded.",
+      "irt_params": {
+        "a": 1.35,
+        "b": 1.4,
+        "c": 0.25
+      },
+      "irt_a": 1.35,
+      "irt_b": 1.4,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify the numbers: 44",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ]
     },
     {
       "id": "T2-0970",
@@ -2894,15 +3791,28 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "tap_to_count",
-      "visual_context": "Colourful stickers arranged in groups for easy counting."
+      "visual_context": "Colourful stickers arranged in groups for easy counting.",
+      "irt_params": {
+        "a": 1.45,
+        "b": 1.43,
+        "c": 0.25
+      },
+      "irt_a": 1.45,
+      "irt_b": 1.43,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify the numbers: 46, 2",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ]
     },
     {
       "id": "T2-0971",
-      "stem": "Aarav pays \u20b9114 for a board game that costs \u20b981. How much change does Aarav get back?",
+      "stem": "Aarav pays ₹114 for a board game that costs ₹81. How much change does Aarav get back?",
       "choices": [
         "35",
         "36",
@@ -2930,17 +3840,30 @@
       ],
       "topic": "arithmetic_missing_numbers",
       "topic_name": "Arithmetic & Missing Numbers",
-      "original_stem": "Aarav pays \u20b9114 for a board game that costs \u20b981. How much change does Aarav get back?",
+      "original_stem": "Aarav pays ₹114 for a board game that costs ₹81. How much change does Aarav get back?",
       "hint": {
         "level_0": "This is a subtraction problem.",
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "multiple_choice",
-      "visual_context": "Items with price tags and coins/notes for calculation."
+      "visual_context": "Items with price tags and coins/notes for calculation.",
+      "irt_params": {
+        "a": 1.45,
+        "b": 1.43,
+        "c": 0.25
+      },
+      "irt_a": 1.45,
+      "irt_b": 1.43,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify the numbers: 114, 81",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ]
     },
     {
       "id": "T2-0972",
@@ -2958,10 +3881,10 @@
       "visual_alt": null,
       "diagnostics": {
         "minutes_overflow": "60 minutes makes a new hour. Carry the extra into the hour.",
-        "wrong_direction": "We are adding minutes \u2014 so move forward.",
-        "0": "Not 6:00 \u2014 think about why 6:15 is the right answer.",
-        "1": "Not 5:45 \u2014 think about why 6:15 is the right answer.",
-        "3": "Not 6:30 \u2014 think about why 6:15 is the right answer."
+        "wrong_direction": "We are adding minutes — so move forward.",
+        "0": "Not 6:00 — think about why 6:15 is the right answer.",
+        "1": "Not 5:45 — think about why 6:15 is the right answer.",
+        "3": "Not 6:30 — think about why 6:15 is the right answer."
       },
       "tags": [
         "time",
@@ -2978,11 +3901,24 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "multiple_choice",
-      "visual_context": "An analog clock face showing the time from the problem."
+      "visual_context": "An analog clock face showing the time from the problem.",
+      "irt_params": {
+        "a": 1.45,
+        "b": 1.45,
+        "c": 0.25
+      },
+      "irt_a": 1.45,
+      "irt_b": 1.45,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify the numbers: 5, 00, 75",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ]
     },
     {
       "id": "T2-0973",
@@ -2999,7 +3935,7 @@
       "visual_svg": null,
       "visual_alt": null,
       "diagnostics": {
-        "wrong_op": "'How many more' means subtract \u2014 bigger minus smaller.",
+        "wrong_op": "'How many more' means subtract — bigger minus smaller.",
         "swapped": "Be careful which day had more.",
         "0": "340 is too low. Try working through the problem step by step.",
         "1": "348 is too low. Try working through the problem step by step.",
@@ -3020,11 +3956,24 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "tap_to_count",
-      "visual_context": "A visual representation of the problem."
+      "visual_context": "A visual representation of the problem.",
+      "irt_params": {
+        "a": 1.45,
+        "b": 1.48,
+        "c": 0.25
+      },
+      "irt_a": 1.45,
+      "irt_b": 1.48,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify the numbers: 811, 461",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ]
     },
     {
       "id": "T2-0974",
@@ -3062,11 +4011,24 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "multiple_choice",
-      "visual_context": "A visual representation of the problem."
+      "visual_context": "A visual representation of the problem.",
+      "irt_params": {
+        "a": 1.55,
+        "b": 1.5,
+        "c": 0.25
+      },
+      "irt_a": 1.55,
+      "irt_b": 1.5,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Break into parts: (80+30) and (9+3)",
+        "Add tens: 80+30=110",
+        "Now add the ones part and combine"
+      ]
     },
     {
       "id": "T2-0975",
@@ -3103,11 +4065,24 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "multiple_choice",
-      "visual_context": "A visual representation of the problem."
+      "visual_context": "A visual representation of the problem.",
+      "irt_params": {
+        "a": 1.35,
+        "b": 1.5,
+        "c": 0.25
+      },
+      "irt_a": 1.35,
+      "irt_b": 1.5,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Start at 231 on the number line",
+        "Count back 168 steps",
+        "The number you land on is your answer"
+      ]
     },
     {
       "id": "T2-0976",
@@ -3124,7 +4099,7 @@
       "visual_svg": null,
       "visual_alt": null,
       "diagnostics": {
-        "wrong_op": "Double = \u00d72. Half = \u00f72.",
+        "wrong_op": "Double = ×2. Half = ÷2.",
         "0": "19 is too low. Try working through the problem step by step.",
         "2": "23 is too high. Try working through the problem step by step.",
         "3": "24 is too high. Try working through the problem step by step."
@@ -3143,11 +4118,24 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "multiple_choice",
-      "visual_context": "A shape divided into equal parts with some shaded."
+      "visual_context": "A shape divided into equal parts with some shaded.",
+      "irt_params": {
+        "a": 1.35,
+        "b": 1.53,
+        "c": 0.25
+      },
+      "irt_a": 1.35,
+      "irt_b": 1.53,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify the numbers: 44",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ]
     },
     {
       "id": "T2-0977",
@@ -3184,15 +4172,28 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "tap_to_count",
-      "visual_context": "Objects being shared equally among groups."
+      "visual_context": "Objects being shared equally among groups.",
+      "irt_params": {
+        "a": 1.45,
+        "b": 1.55,
+        "c": 0.25
+      },
+      "irt_a": 1.45,
+      "irt_b": 1.55,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify the numbers: 50, 5",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ]
     },
     {
       "id": "T2-0978",
-      "stem": "Vanya is solving a number puzzle: Diya pays \u20b9426 for a board game that costs \u20b9216. How much change does Diya get back?",
+      "stem": "Vanya is solving a number puzzle: Diya pays ₹426 for a board game that costs ₹216. How much change does Diya get back?",
       "choices": [
         "212",
         "208",
@@ -3220,17 +4221,30 @@
       ],
       "topic": "arithmetic_missing_numbers",
       "topic_name": "Arithmetic & Missing Numbers",
-      "original_stem": "Diya pays \u20b9426 for a board game that costs \u20b9216. How much change does Diya get back?",
+      "original_stem": "Diya pays ₹426 for a board game that costs ₹216. How much change does Diya get back?",
       "hint": {
         "level_0": "This is a subtraction problem.",
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "multiple_choice",
-      "visual_context": "Items with price tags and coins/notes for calculation."
+      "visual_context": "Items with price tags and coins/notes for calculation.",
+      "irt_params": {
+        "a": 1.45,
+        "b": 1.58,
+        "c": 0.25
+      },
+      "irt_a": 1.45,
+      "irt_b": 1.58,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify the numbers: 426, 216",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ]
     },
     {
       "id": "T2-0979",
@@ -3248,10 +4262,10 @@
       "visual_alt": null,
       "diagnostics": {
         "minutes_overflow": "60 minutes makes a new hour. Carry the extra into the hour.",
-        "wrong_direction": "We are adding minutes \u2014 so move forward.",
-        "1": "Not 12:00 \u2014 think about why 11:45 is the right answer.",
-        "2": "Not 11:30 \u2014 think about why 11:45 is the right answer.",
-        "3": "Not 11:15 \u2014 think about why 11:45 is the right answer."
+        "wrong_direction": "We are adding minutes — so move forward.",
+        "1": "Not 12:00 — think about why 11:45 is the right answer.",
+        "2": "Not 11:30 — think about why 11:45 is the right answer.",
+        "3": "Not 11:15 — think about why 11:45 is the right answer."
       },
       "tags": [
         "time",
@@ -3268,11 +4282,24 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "multiple_choice",
-      "visual_context": "An analog clock face showing the time from the problem."
+      "visual_context": "An analog clock face showing the time from the problem.",
+      "irt_params": {
+        "a": 1.45,
+        "b": 1.58,
+        "c": 0.25
+      },
+      "irt_a": 1.45,
+      "irt_b": 1.58,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify the numbers: 11, 15, 30",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ]
     },
     {
       "id": "T2-0980",
@@ -3289,7 +4316,7 @@
       "visual_svg": null,
       "visual_alt": null,
       "diagnostics": {
-        "wrong_op": "'How many more' means subtract \u2014 bigger minus smaller.",
+        "wrong_op": "'How many more' means subtract — bigger minus smaller.",
         "swapped": "Be careful which day had more.",
         "0": "153 is too low. Try working through the problem step by step.",
         "1": "154 is too low. Try working through the problem step by step.",
@@ -3310,11 +4337,24 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "tap_to_count",
-      "visual_context": "A visual representation of the problem."
+      "visual_context": "A visual representation of the problem.",
+      "irt_params": {
+        "a": 1.45,
+        "b": 1.61,
+        "c": 0.25
+      },
+      "irt_a": 1.45,
+      "irt_b": 1.61,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify the numbers: 751, 596",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ]
     },
     {
       "id": "T2-0981",
@@ -3352,11 +4392,24 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "multiple_choice",
-      "visual_context": "A visual representation of the problem."
+      "visual_context": "A visual representation of the problem.",
+      "irt_params": {
+        "a": 1.55,
+        "b": 1.63,
+        "c": 0.25
+      },
+      "irt_a": 1.55,
+      "irt_b": 1.63,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Break into parts: (20+60) and (9+7)",
+        "Add tens: 20+60=80",
+        "Now add the ones part and combine"
+      ]
     },
     {
       "id": "T2-0982",
@@ -3393,11 +4446,24 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "multiple_choice",
-      "visual_context": "A visual representation of the problem."
+      "visual_context": "A visual representation of the problem.",
+      "irt_params": {
+        "a": 1.35,
+        "b": 1.66,
+        "c": 0.25
+      },
+      "irt_a": 1.35,
+      "irt_b": 1.66,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Start at 255 on the number line",
+        "Count back 189 steps",
+        "The number you land on is your answer"
+      ]
     },
     {
       "id": "T2-0983",
@@ -3414,7 +4480,7 @@
       "visual_svg": null,
       "visual_alt": null,
       "diagnostics": {
-        "wrong_op": "Double = \u00d72. Half = \u00f72.",
+        "wrong_op": "Double = ×2. Half = ÷2.",
         "0": "30 is too high. Try working through the problem step by step.",
         "1": "26 is too low. Try working through the problem step by step.",
         "2": "28 is too low. Try working through the problem step by step."
@@ -3433,11 +4499,24 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "multiple_choice",
-      "visual_context": "A shape divided into equal parts with some shaded."
+      "visual_context": "A shape divided into equal parts with some shaded.",
+      "irt_params": {
+        "a": 1.35,
+        "b": 1.68,
+        "c": 0.25
+      },
+      "irt_a": 1.35,
+      "irt_b": 1.68,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify the numbers: 58",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ]
     },
     {
       "id": "T2-0984",
@@ -3474,15 +4553,28 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "tap_to_count",
-      "visual_context": "Objects being shared equally among groups."
+      "visual_context": "Objects being shared equally among groups.",
+      "irt_params": {
+        "a": 1.45,
+        "b": 1.68,
+        "c": 0.25
+      },
+      "irt_a": 1.45,
+      "irt_b": 1.68,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify the numbers: 40, 2",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ]
     },
     {
       "id": "T2-0985",
-      "stem": "Help Pirate Papaya calculate: Cyrus pays \u20b9141 for a board game that costs \u20b9110. How much change does Cyrus get back?",
+      "stem": "Help Pirate Papaya calculate: Cyrus pays ₹141 for a board game that costs ₹110. How much change does Cyrus get back?",
       "choices": [
         "29",
         "36",
@@ -3510,17 +4602,30 @@
       ],
       "topic": "arithmetic_missing_numbers",
       "topic_name": "Arithmetic & Missing Numbers",
-      "original_stem": "Cyrus pays \u20b9141 for a board game that costs \u20b9110. How much change does Cyrus get back?",
+      "original_stem": "Cyrus pays ₹141 for a board game that costs ₹110. How much change does Cyrus get back?",
       "hint": {
         "level_0": "This is a subtraction problem.",
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "multiple_choice",
-      "visual_context": "Items with price tags and coins/notes for calculation."
+      "visual_context": "Items with price tags and coins/notes for calculation.",
+      "irt_params": {
+        "a": 1.45,
+        "b": 1.71,
+        "c": 0.25
+      },
+      "irt_a": 1.45,
+      "irt_b": 1.71,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify the numbers: 141, 110",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ]
     },
     {
       "id": "T2-0986",
@@ -3538,10 +4643,10 @@
       "visual_alt": null,
       "diagnostics": {
         "minutes_overflow": "60 minutes makes a new hour. Carry the extra into the hour.",
-        "wrong_direction": "We are adding minutes \u2014 so move forward.",
-        "0": "Not 3:45 \u2014 think about why 3:30 is the right answer.",
-        "2": "Not 3:15 \u2014 think about why 3:30 is the right answer.",
-        "3": "Not 3:00 \u2014 think about why 3:30 is the right answer."
+        "wrong_direction": "We are adding minutes — so move forward.",
+        "0": "Not 3:45 — think about why 3:30 is the right answer.",
+        "2": "Not 3:15 — think about why 3:30 is the right answer.",
+        "3": "Not 3:00 — think about why 3:30 is the right answer."
       },
       "tags": [
         "time",
@@ -3558,11 +4663,24 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "multiple_choice",
-      "visual_context": "An analog clock face showing the time from the problem."
+      "visual_context": "An analog clock face showing the time from the problem.",
+      "irt_params": {
+        "a": 1.45,
+        "b": 1.73,
+        "c": 0.25
+      },
+      "irt_a": 1.45,
+      "irt_b": 1.73,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify the numbers: 2, 30, 60",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ]
     },
     {
       "id": "T2-0987",
@@ -3579,7 +4697,7 @@
       "visual_svg": null,
       "visual_alt": null,
       "diagnostics": {
-        "wrong_op": "'How many more' means subtract \u2014 bigger minus smaller.",
+        "wrong_op": "'How many more' means subtract — bigger minus smaller.",
         "swapped": "Be careful which day had more.",
         "0": "297 is too low. Try working through the problem step by step.",
         "1": "296 is too low. Try working through the problem step by step.",
@@ -3600,11 +4718,24 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "tap_to_count",
-      "visual_context": "A visual representation of the problem."
+      "visual_context": "A visual representation of the problem.",
+      "irt_params": {
+        "a": 1.45,
+        "b": 1.76,
+        "c": 0.25
+      },
+      "irt_a": 1.45,
+      "irt_b": 1.76,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify the numbers: 392, 94",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ]
     },
     {
       "id": "T2-0988",
@@ -3642,11 +4773,24 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "multiple_choice",
-      "visual_context": "A visual representation of the problem."
+      "visual_context": "A visual representation of the problem.",
+      "irt_params": {
+        "a": 1.55,
+        "b": 1.76,
+        "c": 0.25
+      },
+      "irt_a": 1.55,
+      "irt_b": 1.76,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Break into parts: (10+60) and (9+3)",
+        "Add tens: 10+60=70",
+        "Now add the ones part and combine"
+      ]
     },
     {
       "id": "T2-0989",
@@ -3683,11 +4827,24 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "multiple_choice",
-      "visual_context": "A visual representation of the problem."
+      "visual_context": "A visual representation of the problem.",
+      "irt_params": {
+        "a": 1.4,
+        "b": 1.78,
+        "c": 0.25
+      },
+      "irt_a": 1.4,
+      "irt_b": 1.78,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Start at 403 on the number line",
+        "Count back 230 steps",
+        "The number you land on is your answer"
+      ]
     },
     {
       "id": "T2-0990",
@@ -3704,7 +4861,7 @@
       "visual_svg": null,
       "visual_alt": null,
       "diagnostics": {
-        "wrong_op": "Double = \u00d72. Half = \u00f72.",
+        "wrong_op": "Double = ×2. Half = ÷2.",
         "0": "54 is too low. Try working through the problem step by step.",
         "2": "56 is too low. Try working through the problem step by step.",
         "3": "58 is too high. Try working through the problem step by step."
@@ -3723,11 +4880,24 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "multiple_choice",
-      "visual_context": "A shape divided into equal parts with some shaded."
+      "visual_context": "A shape divided into equal parts with some shaded.",
+      "irt_params": {
+        "a": 1.4,
+        "b": 1.81,
+        "c": 0.25
+      },
+      "irt_a": 1.4,
+      "irt_b": 1.81,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify the numbers: 114",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ]
     },
     {
       "id": "T2-0991",
@@ -3764,15 +4934,28 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "tap_to_count",
-      "visual_context": "Objects being shared equally among groups."
+      "visual_context": "Objects being shared equally among groups.",
+      "irt_params": {
+        "a": 1.5,
+        "b": 1.84,
+        "c": 0.25
+      },
+      "irt_a": 1.5,
+      "irt_b": 1.84,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify the numbers: 35, 5",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ]
     },
     {
       "id": "T2-0992",
-      "stem": "Builder Bee needs to work out: Sage pays \u20b9266 for stickers that costs \u20b920. How much change does Sage get back?",
+      "stem": "Builder Bee needs to work out: Sage pays ₹266 for stickers that costs ₹20. How much change does Sage get back?",
       "choices": [
         "246",
         "251",
@@ -3800,17 +4983,30 @@
       ],
       "topic": "arithmetic_missing_numbers",
       "topic_name": "Arithmetic & Missing Numbers",
-      "original_stem": "Sage pays \u20b9266 for stickers that costs \u20b920. How much change does Sage get back?",
+      "original_stem": "Sage pays ₹266 for stickers that costs ₹20. How much change does Sage get back?",
       "hint": {
         "level_0": "This is a subtraction problem.",
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "multiple_choice",
-      "visual_context": "Colourful stickers arranged in groups for easy counting."
+      "visual_context": "Colourful stickers arranged in groups for easy counting.",
+      "irt_params": {
+        "a": 1.5,
+        "b": 1.84,
+        "c": 0.25
+      },
+      "irt_a": 1.5,
+      "irt_b": 1.84,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify the numbers: 266, 20",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ]
     },
     {
       "id": "T2-0993",
@@ -3828,10 +5024,10 @@
       "visual_alt": null,
       "diagnostics": {
         "minutes_overflow": "60 minutes makes a new hour. Carry the extra into the hour.",
-        "wrong_direction": "We are adding minutes \u2014 so move forward.",
-        "1": "Not 5:15 \u2014 think about why 5:00 is the right answer.",
-        "2": "Not 4:45 \u2014 think about why 5:00 is the right answer.",
-        "3": "Not 4:30 \u2014 think about why 5:00 is the right answer."
+        "wrong_direction": "We are adding minutes — so move forward.",
+        "1": "Not 5:15 — think about why 5:00 is the right answer.",
+        "2": "Not 4:45 — think about why 5:00 is the right answer.",
+        "3": "Not 4:30 — think about why 5:00 is the right answer."
       },
       "tags": [
         "time",
@@ -3848,11 +5044,24 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "multiple_choice",
-      "visual_context": "An analog clock face showing the time from the problem."
+      "visual_context": "An analog clock face showing the time from the problem.",
+      "irt_params": {
+        "a": 1.5,
+        "b": 1.86,
+        "c": 0.25
+      },
+      "irt_a": 1.5,
+      "irt_b": 1.86,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify the numbers: 3, 30, 90",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ]
     },
     {
       "id": "T2-0994",
@@ -3869,7 +5078,7 @@
       "visual_svg": null,
       "visual_alt": null,
       "diagnostics": {
-        "wrong_op": "'How many more' means subtract \u2014 bigger minus smaller.",
+        "wrong_op": "'How many more' means subtract — bigger minus smaller.",
         "swapped": "Be careful which day had more.",
         "1": "494 is too low. Try working through the problem step by step.",
         "2": "506 is too high. Try working through the problem step by step.",
@@ -3890,11 +5099,24 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "tap_to_count",
-      "visual_context": "A visual representation of the problem."
+      "visual_context": "A visual representation of the problem.",
+      "irt_params": {
+        "a": 1.5,
+        "b": 1.89,
+        "c": 0.25
+      },
+      "irt_a": 1.5,
+      "irt_b": 1.89,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify the numbers: 559, 55",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ]
     },
     {
       "id": "T2-0995",
@@ -3932,11 +5154,24 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "multiple_choice",
-      "visual_context": "A visual representation of the problem."
+      "visual_context": "A visual representation of the problem.",
+      "irt_params": {
+        "a": 1.6,
+        "b": 1.91,
+        "c": 0.25
+      },
+      "irt_a": 1.6,
+      "irt_b": 1.91,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Break into parts: (10+50) and (9+9)",
+        "Add tens: 10+50=60",
+        "Now add the ones part and combine"
+      ]
     },
     {
       "id": "T2-0996",
@@ -3973,11 +5208,24 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "multiple_choice",
-      "visual_context": "A visual representation of the problem."
+      "visual_context": "A visual representation of the problem.",
+      "irt_params": {
+        "a": 1.4,
+        "b": 1.91,
+        "c": 0.25
+      },
+      "irt_a": 1.4,
+      "irt_b": 1.91,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Break into parts: (30+40) and (0+5)",
+        "Add tens: 30+40=70",
+        "Now add the ones part and combine"
+      ]
     },
     {
       "id": "T2-0997",
@@ -3994,7 +5242,7 @@
       "visual_svg": null,
       "visual_alt": null,
       "diagnostics": {
-        "wrong_op": "Double = \u00d72. Half = \u00f72.",
+        "wrong_op": "Double = ×2. Half = ÷2.",
         "0": "67 is too high. Try working through the problem step by step.",
         "1": "63 is too low. Try working through the problem step by step.",
         "3": "68 is too high. Try working through the problem step by step."
@@ -4013,11 +5261,24 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "multiple_choice",
-      "visual_context": "A visual representation of the problem."
+      "visual_context": "A visual representation of the problem.",
+      "irt_params": {
+        "a": 1.4,
+        "b": 1.94,
+        "c": 0.25
+      },
+      "irt_a": 1.4,
+      "irt_b": 1.94,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify the numbers: 33",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ]
     },
     {
       "id": "T2-0998",
@@ -4054,15 +5315,28 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "tap_to_count",
-      "visual_context": "Objects being shared equally among groups."
+      "visual_context": "Objects being shared equally among groups.",
+      "irt_params": {
+        "a": 1.5,
+        "b": 1.96,
+        "c": 0.25
+      },
+      "irt_a": 1.5,
+      "irt_b": 1.96,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify the numbers: 30, 5",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ]
     },
     {
       "id": "T2-0999",
-      "stem": "Detective Dodo is solving a number puzzle: Saanvi pays \u20b9438 for a soft toy that costs \u20b932. How much change does Saanvi get back?",
+      "stem": "Detective Dodo is solving a number puzzle: Saanvi pays ₹438 for a soft toy that costs ₹32. How much change does Saanvi get back?",
       "choices": [
         "411",
         "408",
@@ -4090,17 +5364,30 @@
       ],
       "topic": "arithmetic_missing_numbers",
       "topic_name": "Arithmetic & Missing Numbers",
-      "original_stem": "Saanvi pays \u20b9438 for a soft toy that costs \u20b932. How much change does Saanvi get back?",
+      "original_stem": "Saanvi pays ₹438 for a soft toy that costs ₹32. How much change does Saanvi get back?",
       "hint": {
         "level_0": "This is a subtraction problem.",
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "multiple_choice",
-      "visual_context": "Items with price tags and coins/notes for calculation."
+      "visual_context": "Items with price tags and coins/notes for calculation.",
+      "irt_params": {
+        "a": 1.5,
+        "b": 1.99,
+        "c": 0.25
+      },
+      "irt_a": 1.5,
+      "irt_b": 1.99,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify the numbers: 438, 32",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ]
     },
     {
       "id": "T2-1201",
@@ -4118,10 +5405,10 @@
       "visual_alt": null,
       "diagnostics": {
         "minutes_overflow": "60 minutes makes a new hour. Carry the extra into the hour.",
-        "wrong_direction": "We are adding minutes \u2014 so move forward.",
-        "1": "Not 4:15 \u2014 think about why 4:45 is the right answer.",
-        "2": "Not 4:30 \u2014 think about why 4:45 is the right answer.",
-        "3": "Not 5:00 \u2014 think about why 4:45 is the right answer."
+        "wrong_direction": "We are adding minutes — so move forward.",
+        "1": "Not 4:15 — think about why 4:45 is the right answer.",
+        "2": "Not 4:30 — think about why 4:45 is the right answer.",
+        "3": "Not 5:00 — think about why 4:45 is the right answer."
       },
       "tags": [
         "time",
@@ -4138,11 +5425,24 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "multiple_choice",
-      "visual_context": "An analog clock face showing the time from the problem."
+      "visual_context": "An analog clock face showing the time from the problem.",
+      "irt_params": {
+        "a": 1.5,
+        "b": 1.99,
+        "c": 0.25
+      },
+      "irt_a": 1.5,
+      "irt_b": 1.99,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify the numbers: 4, 15, 30",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ]
     },
     {
       "id": "T2-1202",
@@ -4159,7 +5459,7 @@
       "visual_svg": null,
       "visual_alt": null,
       "diagnostics": {
-        "wrong_op": "'How many more' means subtract \u2014 bigger minus smaller.",
+        "wrong_op": "'How many more' means subtract — bigger minus smaller.",
         "swapped": "Be careful which day had more.",
         "0": "94 is too low. Try working through the problem step by step.",
         "1": "102 is too low. Try working through the problem step by step.",
@@ -4180,11 +5480,24 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "tap_to_count",
-      "visual_context": "A visual representation of the problem."
+      "visual_context": "A visual representation of the problem.",
+      "irt_params": {
+        "a": 1.5,
+        "b": 2.02,
+        "c": 0.25
+      },
+      "irt_a": 1.5,
+      "irt_b": 2.02,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify the numbers: 545, 441",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ]
     },
     {
       "id": "T2-1203",
@@ -4222,11 +5535,24 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "multiple_choice",
-      "visual_context": "A visual representation of the problem."
+      "visual_context": "A visual representation of the problem.",
+      "irt_params": {
+        "a": 1.6,
+        "b": 2.04,
+        "c": 0.25
+      },
+      "irt_a": 1.6,
+      "irt_b": 2.04,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Break into parts: (20+10) and (9+4)",
+        "Add tens: 20+10=30",
+        "Now add the ones part and combine"
+      ]
     },
     {
       "id": "T2-1204",
@@ -4263,11 +5589,24 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "multiple_choice",
-      "visual_context": "A visual representation of the problem."
+      "visual_context": "A visual representation of the problem.",
+      "irt_params": {
+        "a": 1.4,
+        "b": 2.07,
+        "c": 0.25
+      },
+      "irt_a": 1.4,
+      "irt_b": 2.07,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Start at 232 on the number line",
+        "Count back 134 steps",
+        "The number you land on is your answer"
+      ]
     },
     {
       "id": "T2-1205",
@@ -4284,7 +5623,7 @@
       "visual_svg": null,
       "visual_alt": null,
       "diagnostics": {
-        "wrong_op": "Double = \u00d72. Half = \u00f72.",
+        "wrong_op": "Double = ×2. Half = ÷2.",
         "1": "141 is too high. Try working through the problem step by step.",
         "2": "145 is too high. Try working through the problem step by step.",
         "3": "137 is too low. Try working through the problem step by step."
@@ -4303,11 +5642,24 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "multiple_choice",
-      "visual_context": "A visual representation of the problem."
+      "visual_context": "A visual representation of the problem.",
+      "irt_params": {
+        "a": 1.4,
+        "b": 2.07,
+        "c": 0.25
+      },
+      "irt_a": 1.4,
+      "irt_b": 2.07,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify the numbers: 70",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ]
     },
     {
       "id": "T2-1206",
@@ -4344,15 +5696,28 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "tap_to_count",
-      "visual_context": "Objects being shared equally among groups."
+      "visual_context": "Objects being shared equally among groups.",
+      "irt_params": {
+        "a": 1.5,
+        "b": 2.09,
+        "c": 0.25
+      },
+      "irt_a": 1.5,
+      "irt_b": 2.09,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify the numbers: 42, 2",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ]
     },
     {
       "id": "T2-1207",
-      "stem": "Chef Cheetah needs to work out: Mira pays \u20b9233 for a board game that costs \u20b924. How much change does Mira get back?",
+      "stem": "Chef Cheetah needs to work out: Mira pays ₹233 for a board game that costs ₹24. How much change does Mira get back?",
       "choices": [
         "214",
         "215",
@@ -4380,17 +5745,30 @@
       ],
       "topic": "arithmetic_missing_numbers",
       "topic_name": "Arithmetic & Missing Numbers",
-      "original_stem": "Mira pays \u20b9233 for a board game that costs \u20b924. How much change does Mira get back?",
+      "original_stem": "Mira pays ₹233 for a board game that costs ₹24. How much change does Mira get back?",
       "hint": {
         "level_0": "This is a subtraction problem.",
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "multiple_choice",
-      "visual_context": "Items with price tags and coins/notes for calculation."
+      "visual_context": "Items with price tags and coins/notes for calculation.",
+      "irt_params": {
+        "a": 1.5,
+        "b": 2.12,
+        "c": 0.25
+      },
+      "irt_a": 1.5,
+      "irt_b": 2.12,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify the numbers: 233, 24",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ]
     },
     {
       "id": "T2-1208",
@@ -4408,10 +5786,10 @@
       "visual_alt": null,
       "diagnostics": {
         "minutes_overflow": "60 minutes makes a new hour. Carry the extra into the hour.",
-        "wrong_direction": "We are adding minutes \u2014 so move forward.",
-        "0": "Not 4:45 \u2014 think about why 5:00 is the right answer.",
-        "1": "Not 4:30 \u2014 think about why 5:00 is the right answer.",
-        "2": "Not 5:15 \u2014 think about why 5:00 is the right answer."
+        "wrong_direction": "We are adding minutes — so move forward.",
+        "0": "Not 4:45 — think about why 5:00 is the right answer.",
+        "1": "Not 4:30 — think about why 5:00 is the right answer.",
+        "2": "Not 5:15 — think about why 5:00 is the right answer."
       },
       "tags": [
         "time",
@@ -4428,11 +5806,24 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "multiple_choice",
-      "visual_context": "An analog clock face showing the time from the problem."
+      "visual_context": "An analog clock face showing the time from the problem.",
+      "irt_params": {
+        "a": 1.5,
+        "b": 2.14,
+        "c": 0.25
+      },
+      "irt_a": 1.5,
+      "irt_b": 2.14,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify the numbers: 4, 15, 45",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ]
     },
     {
       "id": "T2-1209",
@@ -4449,7 +5840,7 @@
       "visual_svg": null,
       "visual_alt": null,
       "diagnostics": {
-        "wrong_op": "'How many more' means subtract \u2014 bigger minus smaller.",
+        "wrong_op": "'How many more' means subtract — bigger minus smaller.",
         "swapped": "Be careful which day had more.",
         "0": "75 is too low. Try working through the problem step by step.",
         "1": "74 is too low. Try working through the problem step by step.",
@@ -4470,11 +5861,24 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "tap_to_count",
-      "visual_context": "A visual representation of the problem."
+      "visual_context": "A visual representation of the problem.",
+      "irt_params": {
+        "a": 1.5,
+        "b": 2.14,
+        "c": 0.25
+      },
+      "irt_a": 1.5,
+      "irt_b": 2.14,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify the numbers: 947, 871",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ]
     },
     {
       "id": "T2-1210",
@@ -4512,11 +5916,24 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "multiple_choice",
-      "visual_context": "A visual representation of the problem."
+      "visual_context": "A visual representation of the problem.",
+      "irt_params": {
+        "a": 1.6,
+        "b": 2.17,
+        "c": 0.25
+      },
+      "irt_a": 1.6,
+      "irt_b": 2.17,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Break into parts: (20+70) and (9+3)",
+        "Add tens: 20+70=90",
+        "Now add the ones part and combine"
+      ]
     },
     {
       "id": "T2-1211",
@@ -4553,11 +5970,24 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "multiple_choice",
-      "visual_context": "A visual representation of the problem."
+      "visual_context": "A visual representation of the problem.",
+      "irt_params": {
+        "a": 1.4,
+        "b": 2.19,
+        "c": 0.25
+      },
+      "irt_a": 1.4,
+      "irt_b": 2.19,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Break into parts: (30+60) and (8+9)",
+        "Add tens: 30+60=90",
+        "Now add the ones part and combine"
+      ]
     },
     {
       "id": "T2-1212",
@@ -4574,7 +6004,7 @@
       "visual_svg": null,
       "visual_alt": null,
       "diagnostics": {
-        "wrong_op": "Double = \u00d72. Half = \u00f72.",
+        "wrong_op": "Double = ×2. Half = ÷2.",
         "0": "123 is too high. Try working through the problem step by step.",
         "1": "117 is too low. Try working through the problem step by step.",
         "2": "115 is too low. Try working through the problem step by step."
@@ -4593,11 +6023,24 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "multiple_choice",
-      "visual_context": "A visual representation of the problem."
+      "visual_context": "A visual representation of the problem.",
+      "irt_params": {
+        "a": 1.4,
+        "b": 2.22,
+        "c": 0.25
+      },
+      "irt_a": 1.4,
+      "irt_b": 2.22,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify the numbers: 59",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ]
     },
     {
       "id": "T2-1213",
@@ -4634,15 +6077,28 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "tap_to_count",
-      "visual_context": "Objects being shared equally among groups."
+      "visual_context": "Objects being shared equally among groups.",
+      "irt_params": {
+        "a": 1.5,
+        "b": 2.22,
+        "c": 0.25
+      },
+      "irt_a": 1.5,
+      "irt_b": 2.22,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify the numbers: 20, 4",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ]
     },
     {
       "id": "T2-1214",
-      "stem": "Riya pays \u20b9441 for a comic book that costs \u20b9119. How much change does Riya get back?",
+      "stem": "Riya pays ₹441 for a comic book that costs ₹119. How much change does Riya get back?",
       "choices": [
         "327",
         "319",
@@ -4670,17 +6126,30 @@
       ],
       "topic": "arithmetic_missing_numbers",
       "topic_name": "Arithmetic & Missing Numbers",
-      "original_stem": "Riya pays \u20b9441 for a comic book that costs \u20b9119. How much change does Riya get back?",
+      "original_stem": "Riya pays ₹441 for a comic book that costs ₹119. How much change does Riya get back?",
       "hint": {
         "level_0": "This is a subtraction problem.",
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "multiple_choice",
-      "visual_context": "Items with price tags and coins/notes for calculation."
+      "visual_context": "Items with price tags and coins/notes for calculation.",
+      "irt_params": {
+        "a": 1.5,
+        "b": 2.25,
+        "c": 0.25
+      },
+      "irt_a": 1.5,
+      "irt_b": 2.25,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify the numbers: 441, 119",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ]
     },
     {
       "id": "T2-1215",
@@ -4698,10 +6167,10 @@
       "visual_alt": null,
       "diagnostics": {
         "minutes_overflow": "60 minutes makes a new hour. Carry the extra into the hour.",
-        "wrong_direction": "We are adding minutes \u2014 so move forward.",
-        "1": "Not 8:30 \u2014 think about why 9:00 is the right answer.",
-        "2": "Not 8:45 \u2014 think about why 9:00 is the right answer.",
-        "3": "Not 9:15 \u2014 think about why 9:00 is the right answer."
+        "wrong_direction": "We are adding minutes — so move forward.",
+        "1": "Not 8:30 — think about why 9:00 is the right answer.",
+        "2": "Not 8:45 — think about why 9:00 is the right answer.",
+        "3": "Not 9:15 — think about why 9:00 is the right answer."
       },
       "tags": [
         "time",
@@ -4718,11 +6187,24 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "multiple_choice",
-      "visual_context": "An analog clock face showing the time from the problem."
+      "visual_context": "An analog clock face showing the time from the problem.",
+      "irt_params": {
+        "a": 1.5,
+        "b": 2.27,
+        "c": 0.25
+      },
+      "irt_a": 1.5,
+      "irt_b": 2.27,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify the numbers: 8, 30, 30",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ]
     },
     {
       "id": "T2-1216",
@@ -4739,7 +6221,7 @@
       "visual_svg": null,
       "visual_alt": null,
       "diagnostics": {
-        "wrong_op": "'How many more' means subtract \u2014 bigger minus smaller.",
+        "wrong_op": "'How many more' means subtract — bigger minus smaller.",
         "swapped": "Be careful which day had more.",
         "1": "489 is too low. Try working through the problem step by step.",
         "2": "481 is too low. Try working through the problem step by step.",
@@ -4760,11 +6242,24 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "tap_to_count",
-      "visual_context": "A visual representation of the problem."
+      "visual_context": "A visual representation of the problem.",
+      "irt_params": {
+        "a": 1.5,
+        "b": 2.3,
+        "c": 0.25
+      },
+      "irt_a": 1.5,
+      "irt_b": 2.3,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify the numbers: 799, 308",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ]
     },
     {
       "id": "T2-1217",
@@ -4802,11 +6297,24 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "multiple_choice",
-      "visual_context": "A visual representation of the problem."
+      "visual_context": "A visual representation of the problem.",
+      "irt_params": {
+        "a": 1.6,
+        "b": 2.3,
+        "c": 0.25
+      },
+      "irt_a": 1.6,
+      "irt_b": 2.3,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Break into parts: (20+70) and (9+9)",
+        "Add tens: 20+70=90",
+        "Now add the ones part and combine"
+      ]
     },
     {
       "id": "T2-1218",
@@ -4843,11 +6351,24 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "multiple_choice",
-      "visual_context": "A visual representation of the problem."
+      "visual_context": "A visual representation of the problem.",
+      "irt_params": {
+        "a": 1.4,
+        "b": 2.32,
+        "c": 0.25
+      },
+      "irt_a": 1.4,
+      "irt_b": 2.32,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Break into parts: (30+190) and (1+9)",
+        "Add tens: 30+190=220",
+        "Now add the ones part and combine"
+      ]
     },
     {
       "id": "T2-1219",
@@ -4864,7 +6385,7 @@
       "visual_svg": null,
       "visual_alt": null,
       "diagnostics": {
-        "wrong_op": "Double = \u00d72. Half = \u00f72.",
+        "wrong_op": "Double = ×2. Half = ÷2.",
         "0": "115 is too high. Try working through the problem step by step.",
         "2": "111 is too high. Try working through the problem step by step.",
         "3": "Try working through the problem step by step to check each answer."
@@ -4883,11 +6404,24 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "multiple_choice",
-      "visual_context": "A visual representation of the problem."
+      "visual_context": "A visual representation of the problem.",
+      "irt_params": {
+        "a": 1.4,
+        "b": 2.35,
+        "c": 0.25
+      },
+      "irt_a": 1.4,
+      "irt_b": 2.35,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify the numbers: 55",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ]
     },
     {
       "id": "T2-1220",
@@ -4924,15 +6458,28 @@
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "tap_to_count",
-      "visual_context": "Colourful stickers arranged in groups for easy counting."
+      "visual_context": "Colourful stickers arranged in groups for easy counting.",
+      "irt_params": {
+        "a": 1.5,
+        "b": 2.37,
+        "c": 0.25
+      },
+      "irt_a": 1.5,
+      "irt_b": 2.37,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify the numbers: 66, 3",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ]
     },
     {
       "id": "T2-1221",
-      "stem": "Theo pays \u20b9403 for a board game that costs \u20b955. How much change does Theo get back?",
+      "stem": "Theo pays ₹403 for a board game that costs ₹55. How much change does Theo get back?",
       "choices": [
         "348",
         "353",
@@ -4960,17 +6507,30 @@
       ],
       "topic": "arithmetic_missing_numbers",
       "topic_name": "Arithmetic & Missing Numbers",
-      "original_stem": "Theo pays \u20b9403 for a board game that costs \u20b955. How much change does Theo get back?",
+      "original_stem": "Theo pays ₹403 for a board game that costs ₹55. How much change does Theo get back?",
       "hint": {
         "level_0": "This is a subtraction problem.",
         "level_1": "What information do you have? What do you need to find?",
         "level_2": "Pick the right operation: add, subtract, multiply, or divide?",
         "level_3": "Write the numbers down and line them up by place value.",
-        "level_4": "Do the operation step by step \u2014 don't try to do it all in your head.",
+        "level_4": "Do the operation step by step — don't try to do it all in your head.",
         "level_5": "Check your answer by plugging it back into the problem."
       },
       "interaction_mode": "multiple_choice",
-      "visual_context": "Items with price tags and coins/notes for calculation."
+      "visual_context": "Items with price tags and coins/notes for calculation.",
+      "irt_params": {
+        "a": 1.5,
+        "b": 2.4,
+        "c": 0.25
+      },
+      "irt_a": 1.5,
+      "irt_b": 2.4,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify the numbers: 403, 55",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ]
     }
   ]
 }

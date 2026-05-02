@@ -16,6 +16,8 @@ After submission, results are pushed through the adaptive engine so subsequent
 from __future__ import annotations
 
 import random
+import time
+from datetime import datetime, timezone
 from typing import Any, Dict, List, Optional
 
 from fastapi import APIRouter, HTTPException, Query
@@ -31,6 +33,8 @@ from app.services.adaptive_engine_v2 import (
     theta_to_difficulty,
 )
 from app.services.content_store_v2 import _QUESTION_ID_RE, store_v2
+from app.services.firestore_service import update_user_profile
+from app.services.question_history import question_history
 
 router = APIRouter(prefix="/v2/onboarding", tags=["v2-onboarding"])
 
@@ -55,7 +59,7 @@ class BenchmarkAnswer(BaseModel):
 
 class BenchmarkSubmitRequest(BaseModel):
     user_id: str = Field(..., min_length=1)
-    grade: int = Field(..., ge=1, le=5)
+    grade: int = Field(..., ge=1, le=6)
     answers: List[BenchmarkAnswer] = Field(..., min_length=1, max_length=20)
 
 
@@ -92,6 +96,7 @@ _BENCHMARK_BAND = {
     3: (50, 150),    # extends into Grade 3-4 content (Task #191)
     4: (75, 175),
     5: (100, 200),
+    6: (150, 250),
 }
 
 
@@ -105,16 +110,20 @@ def _band_for_grade(grade: int) -> tuple[int, int]:
 
 @router.get("/benchmark/questions")
 def benchmark_questions(
-    grade: int = Query(..., ge=1, le=5),
+    grade: int = Query(..., ge=1, le=6),
     count: int = Query(10, ge=4, le=20),
+    user_id: Optional[str] = Query(None, description="Student ID — required for retest exclusion"),
 ):
     """Generate a balanced diagnostic question set.
 
     Strategy:
-      • Round-robin across all 8 topics so every topic is represented.
-      • Within each topic, sample one easy, one medium, one hard wherever
+      - Round-robin across all 8 topics so every topic is represented.
+      - Within each topic, sample one easy, one medium, one hard wherever
         possible across the grade-appropriate difficulty band.
-      • Return as plain dicts (same shape as QuestionOutV2 minus the visual url).
+      - On retests (when ``user_id`` is provided and the student has prior
+        diagnostic history), previously seen questions are excluded so the
+        student cannot memorize answers.
+      - Return as plain dicts (same shape as QuestionOutV2 minus the visual url).
     """
     topics = store_v2.topics()
     if not topics:
@@ -130,7 +139,32 @@ def benchmark_questions(
         (band_min + 2 * third, band_max),
     ]
 
+    # --- Retest exclusion: load question history for this student -----------
+    history_exclude: set[str] = set()
+    is_retest = False
+    if user_id:
+        # Count total available questions across all topics for the safety valve.
+        total_available = sum(
+            len(store_v2.by_topic(t.topic_id)) for t in topics
+        )
+        history_exclude = question_history.get_exclusion_set(
+            user_id, total_available=total_available,
+        )
+        is_retest = question_history.is_retest(user_id)
+        if is_retest:
+            import logging
+            logging.getLogger("kiwimath.onboarding").info(
+                "Retest for student=%s: excluding %d previously seen questions",
+                user_id,
+                len(history_exclude),
+            )
+        # Start a new diagnostic session for tracking.
+        question_history.start_diagnostic_session(user_id)
+
     rng = random.Random(f"benchmark-{grade}-{count}")
+    # Use a time-based seed on retests so the student gets a different set.
+    if is_retest:
+        rng = random.Random(f"benchmark-{grade}-{count}-{int(time.time())}")
 
     picked: List[Any] = []
     seen_ids: set[str] = set()
@@ -140,7 +174,7 @@ def benchmark_questions(
         if len(picked) >= count:
             break
         pool = store_v2.by_difficulty_range(topic.topic_id, buckets[1][0], buckets[1][1])
-        pool = [q for q in pool if q.id not in seen_ids]
+        pool = [q for q in pool if q.id not in seen_ids and q.id not in history_exclude]
         if pool:
             q = rng.choice(pool)
             picked.append(q)
@@ -155,7 +189,7 @@ def benchmark_questions(
         topic = topic_cycle[len(picked) % len(topic_cycle)]
         b_min, b_max = buckets[bucket_indices[bi % len(bucket_indices)]]
         pool = store_v2.by_difficulty_range(topic.topic_id, b_min, b_max)
-        pool = [q for q in pool if q.id not in seen_ids]
+        pool = [q for q in pool if q.id not in seen_ids and q.id not in history_exclude]
         if pool:
             q = rng.choice(pool)
             picked.append(q)
@@ -164,12 +198,20 @@ def benchmark_questions(
         # Bail out if we keep missing — pull from any remaining unseen pool
         if bi > 50:
             for topic in topics:
-                pool = [q for q in store_v2.by_topic(topic.topic_id) if q.id not in seen_ids]
+                pool = [
+                    q for q in store_v2.by_topic(topic.topic_id)
+                    if q.id not in seen_ids and q.id not in history_exclude
+                ]
                 if pool and len(picked) < count:
                     q = rng.choice(pool)
                     picked.append(q)
                     seen_ids.add(q.id)
             break
+
+    # Record all picked questions in the history tracker.
+    if user_id:
+        for q in picked:
+            question_history.record_diagnostic_question(user_id, q.id, "diagnostic")
 
     # Sort easiest → hardest for a gentle ramp.
     picked.sort(key=lambda q: q.difficulty_score)
@@ -282,6 +324,18 @@ def submit_benchmark(req: BenchmarkSubmitRequest):
         for t in attempted
         if t.attempts > 0 and t.correct == t.attempts
     ]
+
+    # Finalise the diagnostic session so future retests exclude these questions.
+    question_history.end_diagnostic_session(req.user_id)
+
+    # Mark user as onboarded — prevents repeat onboarding on next login.
+    try:
+        update_user_profile(req.user_id, {
+            "onboarded_at": datetime.now(timezone.utc).isoformat(),
+            "grade": req.grade,
+        })
+    except Exception:
+        pass  # Non-fatal — profile write can retry later.
 
     return BenchmarkResult(
         user_id=req.user_id,

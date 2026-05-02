@@ -1,0 +1,6 @@
+<svg viewBox="0 0 260 150" xmlns="http://www.w3.org/2000/svg">
+  <rect x="15" y="15" width="230" height="120" rx="8" fill="#F3E5F5" stroke="#7B1FA2" stroke-width="1.5"/>
+  <text x="130" y="35" text-anchor="middle" font-size="11" font-weight="bold" fill="#7B1FA2">Number Play</text>
+  <text x="130" y="55" text-anchor="middle" font-size="9" fill="#333">Explore: Kaprekar</text>
+  <text x="130" y="69" text-anchor="middle" font-size="9" fill="#333">Number: 2143</text>
+</svg>

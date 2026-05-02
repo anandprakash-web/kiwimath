@@ -1,0 +1,25 @@
+<svg viewBox="0 0 240 140" xmlns="http://www.w3.org/2000/svg">
+<rect width="240" height="140" fill="#FFFEF5" rx="8"/>
+<text x="120" y="12" text-anchor="middle" font-size="8" fill="#2C3E50">Count the shaded squares</text>
+<rect x="90" y="46" width="12" height="12" fill="#AED6F1" stroke="#666" stroke-width="0.5"/>
+<rect x="102" y="46" width="12" height="12" fill="#AED6F1" stroke="#666" stroke-width="0.5"/>
+<rect x="114" y="46" width="12" height="12" fill="#AED6F1" stroke="#666" stroke-width="0.5"/>
+<rect x="126" y="46" width="12" height="12" fill="#AED6F1" stroke="#666" stroke-width="0.5"/>
+<rect x="138" y="46" width="12" height="12" fill="#AED6F1" stroke="#666" stroke-width="0.5"/>
+<rect x="90" y="58" width="12" height="12" fill="#AED6F1" stroke="#666" stroke-width="0.5"/>
+<rect x="102" y="58" width="12" height="12" fill="#AED6F1" stroke="#666" stroke-width="0.5"/>
+<rect x="114" y="58" width="12" height="12" fill="#AED6F1" stroke="#666" stroke-width="0.5"/>
+<rect x="126" y="58" width="12" height="12" fill="#AED6F1" stroke="#666" stroke-width="0.5"/>
+<rect x="138" y="58" width="12" height="12" fill="#AED6F1" stroke="#666" stroke-width="0.5"/>
+<rect x="90" y="70" width="12" height="12" fill="#AED6F1" stroke="#666" stroke-width="0.5"/>
+<rect x="102" y="70" width="12" height="12" fill="#AED6F1" stroke="#666" stroke-width="0.5"/>
+<rect x="114" y="70" width="12" height="12" fill="#AED6F1" stroke="#666" stroke-width="0.5"/>
+<rect x="126" y="70" width="12" height="12" fill="#AED6F1" stroke="#666" stroke-width="0.5"/>
+<rect x="138" y="70" width="12" height="12" fill="#AED6F1" stroke="#666" stroke-width="0.5"/>
+<rect x="90" y="82" width="12" height="12" fill="#AED6F1" stroke="#666" stroke-width="0.5"/>
+<rect x="102" y="82" width="12" height="12" fill="#AED6F1" stroke="#666" stroke-width="0.5"/>
+<rect x="114" y="82" width="12" height="12" fill="#AED6F1" stroke="#666" stroke-width="0.5"/>
+<rect x="126" y="82" width="12" height="12" fill="#F0F0F0" stroke="#666" stroke-width="0.5"/>
+<rect x="138" y="82" width="12" height="12" fill="#F0F0F0" stroke="#666" stroke-width="0.5"/>
+
+</svg>

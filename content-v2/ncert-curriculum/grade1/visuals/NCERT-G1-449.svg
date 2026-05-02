@@ -1,0 +1,13 @@
+<svg viewBox="0 0 260 150" xmlns="http://www.w3.org/2000/svg">
+  <rect width="260" height="150" fill="#E8F5E9" rx="8"/>
+  <rect x="20" y="40" width="220" height="25" fill="#8D6E63" stroke="#333" stroke-width="1" rx="3"/>
+  <text x="130" y="90" font-size="11" fill="#333" text-anchor="middle">Measured using crayons:</text>
+  <rect x="20" y="100" width="25" height="20" fill="#FFCC80" stroke="#333" stroke-width="1"/>
+  <rect x="47" y="100" width="25" height="20" fill="#FFCC80" stroke="#333" stroke-width="1"/>
+  <rect x="74" y="100" width="25" height="20" fill="#FFCC80" stroke="#333" stroke-width="1"/>
+  <rect x="101" y="100" width="25" height="20" fill="#FFCC80" stroke="#333" stroke-width="1"/>
+  <rect x="128" y="100" width="25" height="20" fill="#FFCC80" stroke="#333" stroke-width="1"/>
+  <rect x="155" y="100" width="25" height="20" fill="#FFCC80" stroke="#333" stroke-width="1"/>
+  <rect x="182" y="100" width="25" height="20" fill="#FFCC80" stroke="#333" stroke-width="1"/>
+  <rect x="209" y="100" width="25" height="20" fill="#FFCC80" stroke="#333" stroke-width="1"/>
+</svg>

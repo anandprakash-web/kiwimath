@@ -1,0 +1,9 @@
+<svg viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+  <rect width="200" height="120" fill="#FFF5EE" rx="5"/>
+  <text x="100" y="15" text-anchor="middle" font-size="10" fill="#333" font-weight="bold">Subtract</text>
+  <text x="130" y="40" text-anchor="end" font-size="14" fill="#45B7D1">55</text>
+  <text x="90" y="60" text-anchor="end" font-size="14" fill="#333">−</text>
+  <text x="130" y="60" text-anchor="end" font-size="14" fill="#FF6B6B">27</text>
+  <line x1="85" y1="67" x2="135" y2="67" stroke="#333" stroke-width="1.5"/>
+  <text x="130" y="85" text-anchor="end" font-size="14" fill="#96CEB4">?</text>
+</svg>

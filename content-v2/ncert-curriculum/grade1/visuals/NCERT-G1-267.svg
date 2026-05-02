@@ -1,0 +1,22 @@
+<svg viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="120" fill="#FFFEF5" rx="8"/>
+  <circle cx="25" cy="20" r="7" fill="#FF6B6B" stroke="#333" stroke-width="0.5"/>
+  <circle cx="25" cy="38" r="7" fill="#FF6B6B" stroke="#333" stroke-width="0.5"/>
+  <circle cx="25" cy="56" r="7" fill="#FF6B6B" stroke="#333" stroke-width="0.5"/>
+  <circle cx="25" cy="74" r="7" fill="#FF6B6B" stroke="#333" stroke-width="0.5"/>
+  <text x="25" y="115" text-anchor="middle" font-size="7" fill="#FF6B6B">red</text>
+  <circle cx="85" cy="20" r="7" fill="#5DADE2" stroke="#333" stroke-width="0.5"/>
+  <circle cx="85" cy="38" r="7" fill="#5DADE2" stroke="#333" stroke-width="0.5"/>
+  <circle cx="85" cy="56" r="7" fill="#5DADE2" stroke="#333" stroke-width="0.5"/>
+  <circle cx="85" cy="74" r="7" fill="#5DADE2" stroke="#333" stroke-width="0.5"/>
+  <circle cx="85" cy="92" r="7" fill="#5DADE2" stroke="#333" stroke-width="0.5"/>
+  <circle cx="85" cy="110" r="7" fill="#5DADE2" stroke="#333" stroke-width="0.5"/>
+  <text x="85" y="115" text-anchor="middle" font-size="7" fill="#5DADE2">blue</text>
+  <circle cx="145" cy="20" r="7" fill="#58D68D" stroke="#333" stroke-width="0.5"/>
+  <circle cx="145" cy="38" r="7" fill="#58D68D" stroke="#333" stroke-width="0.5"/>
+  <circle cx="145" cy="56" r="7" fill="#58D68D" stroke="#333" stroke-width="0.5"/>
+  <circle cx="145" cy="74" r="7" fill="#58D68D" stroke="#333" stroke-width="0.5"/>
+  <circle cx="145" cy="92" r="7" fill="#58D68D" stroke="#333" stroke-width="0.5"/>
+  <circle cx="145" cy="110" r="7" fill="#58D68D" stroke="#333" stroke-width="0.5"/>
+  <text x="145" y="115" text-anchor="middle" font-size="7" fill="#58D68D">green</text>
+</svg>

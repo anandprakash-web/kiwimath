@@ -1,0 +1,6 @@
+<svg viewBox="0 0 240 140" xmlns="http://www.w3.org/2000/svg">
+<rect width="240" height="140" fill="#FFFEF5" rx="8"/>
+<text x="120" y="135" text-anchor="middle" font-size="8" fill="#555">Line of symmetry shown in red</text>
+<line x1="120" y1="20" x2="120" y2="120" stroke="#E74C3C" stroke-width="1.5" stroke-dasharray="4,2"/>
+<polygon points="120,30 80,110 160,110" fill="#ABEBC6" stroke="#333" stroke-width="1.5"/>
+</svg>

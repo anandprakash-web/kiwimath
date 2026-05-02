@@ -10,7 +10,7 @@ student based on their per-topic ability and recent activity:
   • Topics with the lowest ability go first (build foundations)
   • Mastered topics are scheduled for spaced-repetition review
   • Difficulty range targets the student's flow zone (P(correct) ≈ 0.72)
-  • Grade filter (1-4) clamps the recommended difficulty band
+  • Grade filter (1-6) clamps the recommended difficulty band
 """
 
 from __future__ import annotations
@@ -36,6 +36,8 @@ _GRADE_BANDS = {
     2: (51, 100),
     3: (101, 150),
     4: (151, 200),
+    5: (201, 250),
+    6: (251, 300),
 }
 
 
@@ -111,10 +113,14 @@ def _clamp(val: int, lo: int, hi: int) -> int:
 @router.get("/learning-path", response_model=LearningPathResponse)
 def get_learning_path(
     user_id: str = Query(..., min_length=1),
-    grade: Optional[int] = Query(None, ge=1, le=4, description="Grade band 1-4"),
+    grade: Optional[int] = Query(None, ge=1, le=6, description="Grade band 1-6"),
 ):
     """Generate a personalised topic ordering + difficulty plan."""
-    topics = store_v2.topics()
+    # Only include the 8 Kangaroo/Olympiad topics (topic-1 through topic-8).
+    # Curriculum-specific topics (NCERT, ICSE, IGCSE, Singapore, US Common Core)
+    # are served via the /v2/chapters endpoint instead.
+    all_topics = store_v2.topics()
+    topics = [t for t in all_topics if t.topic_id.startswith("topic-")]
     if not topics:
         raise HTTPException(status_code=404, detail="No v2 content loaded.")
 

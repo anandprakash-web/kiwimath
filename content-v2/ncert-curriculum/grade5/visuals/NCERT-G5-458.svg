@@ -1,0 +1,8 @@
+<svg viewBox="0 0 260 150" xmlns="http://www.w3.org/2000/svg">
+  <rect x="20" y="20" width="220" height="100" rx="5" fill="#E8F5E9" stroke="#388E3C" stroke-width="1"/>
+  <line x1="50" y1="75" x2="210" y2="75" stroke="#333" stroke-width="2"/>
+  <line x1="50" y1="70" x2="50" y2="80" stroke="#333" stroke-width="2"/>
+  <line x1="210" y1="70" x2="210" y2="80" stroke="#333" stroke-width="2"/>
+  <text x="130" y="65" text-anchor="middle" font-size="10" fill="#333">9 cm on map</text>
+  <text x="130" y="105" text-anchor="middle" font-size="9" fill="#666">Scale: 1 cm = 100 km</text>
+</svg>

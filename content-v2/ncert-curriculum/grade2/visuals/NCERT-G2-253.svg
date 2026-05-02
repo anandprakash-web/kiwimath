@@ -1,0 +1,18 @@
+<svg viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+  <rect width="200" height="120" fill="#FAFAFA" rx="5"/>
+  <text x="100" y="12" text-anchor="middle" font-size="7" fill="#333">Favourite Things Chart</text>
+  <line x1="35" y1="15" x2="35" y2="95" stroke="#333" stroke-width="0.5"/>
+  <line x1="35" y1="95" x2="195" y2="95" stroke="#333" stroke-width="0.5"/>
+  <rect x="45" y="30" width="28" height="65" fill="#FF6B6B" stroke="#333" stroke-width="0.3"/>
+  <text x="59" y="27" text-anchor="middle" font-size="7" fill="#333">6</text>
+  <text x="59" y="108" text-anchor="middle" font-size="5" fill="#333">Mango</text>
+  <rect x="83" y="41" width="28" height="54" fill="#45B7D1" stroke="#333" stroke-width="0.3"/>
+  <text x="97" y="38" text-anchor="middle" font-size="7" fill="#333">5</text>
+  <text x="97" y="108" text-anchor="middle" font-size="5" fill="#333">Banan</text>
+  <rect x="121" y="30" width="28" height="65" fill="#96CEB4" stroke="#333" stroke-width="0.3"/>
+  <text x="135" y="27" text-anchor="middle" font-size="7" fill="#333">6</text>
+  <text x="135" y="108" text-anchor="middle" font-size="5" fill="#333">Apple</text>
+  <rect x="159" y="52" width="28" height="43" fill="#FFEAA7" stroke="#333" stroke-width="0.3"/>
+  <text x="173" y="49" text-anchor="middle" font-size="7" fill="#333">4</text>
+  <text x="173" y="108" text-anchor="middle" font-size="5" fill="#333">Orang</text>
+</svg>

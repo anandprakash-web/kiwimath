@@ -5,7 +5,7 @@
   "packages": [
     {
       "name": "kiwimath_app",
-      "version": "1.1.0+3",
+      "version": "1.2.0+4",
       "dependencies": [
         "cupertino_icons",
         "firebase_auth",

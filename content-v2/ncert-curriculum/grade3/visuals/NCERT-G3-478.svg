@@ -1,0 +1,7 @@
+<svg viewBox="0 0 260 150" xmlns="http://www.w3.org/2000/svg">
+<rect width="260" height="150" fill="#FFFEF5" rx="8"/>
+<text x="130" y="18" text-anchor="middle" font-size="9" font-weight="bold" fill="#2C3E50">Find the Perimeter</text>
+<polygon points="130,30 60,120 200,120" fill="none" stroke="#2C3E50" stroke-width="2"/>
+<text x="90" y="70" font-size="8" fill="#E74C3C">11 cm</text>
+<text x="170" y="70" font-size="8" fill="#E74C3C">12 cm</text>
+<text x="130" y="135" text-anchor="middle" font-size="8" fill="#E74C3C">6 cm</text></svg>

@@ -1,0 +1,20 @@
+<svg viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+  <rect width="200" height="120" fill="#FFFFF0" rx="5"/>
+  <text x="100" y="12" text-anchor="middle" font-size="8" fill="#333">5 groups of 2</text>
+  <ellipse cx="35" cy="50" rx="16" ry="14" fill="none" stroke="#DDA0DD" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <circle cx="25" cy="43" r="3" fill="#98D8C8"/>
+  <circle cx="35" cy="43" r="3" fill="#FF8C42"/>
+  <ellipse cx="73" cy="50" rx="16" ry="14" fill="none" stroke="#DDA0DD" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <circle cx="63" cy="43" r="3" fill="#FF8C42"/>
+  <circle cx="73" cy="43" r="3" fill="#82E0AA"/>
+  <ellipse cx="111" cy="50" rx="16" ry="14" fill="none" stroke="#DDA0DD" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <circle cx="101" cy="43" r="3" fill="#4ECDC4"/>
+  <circle cx="111" cy="43" r="3" fill="#DDA0DD"/>
+  <ellipse cx="149" cy="50" rx="16" ry="14" fill="none" stroke="#DDA0DD" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <circle cx="139" cy="43" r="3" fill="#FF8C42"/>
+  <circle cx="149" cy="43" r="3" fill="#DDA0DD"/>
+  <ellipse cx="187" cy="50" rx="16" ry="14" fill="none" stroke="#DDA0DD" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <circle cx="177" cy="43" r="3" fill="#F1948A"/>
+  <circle cx="187" cy="43" r="3" fill="#FFEAA7"/>
+  <text x="100" y="112" text-anchor="middle" font-size="8" fill="#333">5 × 2 = ?</text>
+</svg>

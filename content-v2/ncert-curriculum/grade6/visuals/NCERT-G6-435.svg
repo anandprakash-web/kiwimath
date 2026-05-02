@@ -1,0 +1,6 @@
+<svg viewBox="0 0 260 150" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="130" cy="75" r="50" fill="none" stroke="#1565C0" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <circle cx="130" cy="75" r="2" fill="#333"/>
+  <line x1="130" y1="75" x2="180" y2="75" stroke="#333" stroke-width="1"/>
+  <text x="130" y="140" text-anchor="middle" font-size="9" fill="#333">Hexagon</text>
+</svg>

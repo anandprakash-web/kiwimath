@@ -1,0 +1,6 @@
+<svg viewBox="0 0 240 140" xmlns="http://www.w3.org/2000/svg">
+<rect width="240" height="140" fill="#FFFEF5" rx="8"/>
+<rect x="70" y="30" width="100" height="100" fill="#ABEBC6" stroke="#2C3E50" stroke-width="2" rx="2"/>
+<text x="120" y="83" text-anchor="middle" font-size="10" fill="#2C3E50">12 cm</text>
+<text x="120" y="23" text-anchor="middle" font-size="9" fill="#555">12 cm</text>
+</svg>

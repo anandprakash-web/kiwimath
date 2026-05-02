@@ -18,7 +18,15 @@
       "0": "7 is too high. The correct answer is 3.",
       "2": "1 is too low. The correct answer is 3.",
       "3": "8 is too high. The correct answer is 3."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.95,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.95,
+    "irt_c": 0.25
   },
   {
     "id": "T1-103",
@@ -39,7 +47,15 @@
       "0": "20 is too high. The correct answer is 16.",
       "1": "14 is too low. The correct answer is 16.",
       "3": "21 is too high. The correct answer is 16."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.9,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.9,
+    "irt_c": 0.25
   },
   {
     "id": "T1-104",
@@ -60,7 +76,15 @@
       "0": "11 is too high. The correct answer is 9.",
       "2": "8 is too low. The correct answer is 9.",
       "3": "7 is too low. The correct answer is 9."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.55,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.55,
+    "irt_c": 0.25
   },
   {
     "id": "T1-116",
@@ -81,7 +105,15 @@
       "0": "7 is too high. The correct answer is 2.",
       "1": "3 is too high. The correct answer is 2.",
       "2": "5 is too high. The correct answer is 2."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.65,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.65,
+    "irt_c": 0.25
   },
   {
     "id": "T1-132",
@@ -102,7 +134,15 @@
       "1": "2 is too low. The correct answer is 3.",
       "2": "5 is too high. The correct answer is 3.",
       "3": "7 is too high. The correct answer is 3."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.6,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.6,
+    "irt_c": 0.25
   },
   {
     "id": "T1-133",
@@ -123,7 +163,15 @@
       "0": "6 is too low. The correct answer is 8.",
       "1": "9 is too high. The correct answer is 8.",
       "2": "11 is too high. The correct answer is 8."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.65,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.65,
+    "irt_c": 0.25
   },
   {
     "id": "T1-134",
@@ -144,7 +192,15 @@
       "0": "1 is too low. The correct answer is 4.",
       "2": "3 is too low. The correct answer is 4.",
       "3": "7 is too high. The correct answer is 4."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.6,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.6,
+    "irt_c": 0.25
   },
   {
     "id": "T1-135",
@@ -165,7 +221,15 @@
       "1": "3 is too low. The correct answer is 8.",
       "2": "4 is too low. The correct answer is 8.",
       "3": "5 is too low. The correct answer is 8."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.9,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.9,
+    "irt_c": 0.25
   },
   {
     "id": "T1-137",
@@ -186,7 +250,15 @@
       "1": "17 is too low. The correct answer is 18.",
       "2": "19 is too high. The correct answer is 18.",
       "3": "14 is too low. The correct answer is 18."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.8,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.8,
+    "irt_c": 0.25
   },
   {
     "id": "T1-145",
@@ -207,7 +279,15 @@
       "0": "6 is too high. The correct answer is 4.",
       "2": "0 is too low. The correct answer is 4.",
       "3": "5 is too high. The correct answer is 4."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.9,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.9,
+    "irt_c": 0.25
   },
   {
     "id": "T1-146",
@@ -228,7 +308,15 @@
       "0": "6 is too low. The correct answer is 10.",
       "2": "14 is too high. The correct answer is 10.",
       "3": "7 is too low. The correct answer is 10."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.25,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.25,
+    "irt_c": 0.25
   },
   {
     "id": "T1-147",
@@ -249,7 +337,15 @@
       "1": "15 is too high. The correct answer is 12.",
       "2": "8 is too low. The correct answer is 12.",
       "3": "17 is too high. The correct answer is 12."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.5,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.5,
+    "irt_c": 0.25
   },
   {
     "id": "T1-148",
@@ -270,7 +366,15 @@
       "1": "16 is too low. The correct answer is 20.",
       "2": "21 is too high. The correct answer is 20.",
       "3": "23 is too high. The correct answer is 20."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.45,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.45,
+    "irt_c": 0.25
   },
   {
     "id": "T1-149",
@@ -291,7 +395,15 @@
       "1": "18 is too high. The correct answer is 14.",
       "2": "9 is too low. The correct answer is 14.",
       "3": "11 is too low. The correct answer is 14."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.05,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.05,
+    "irt_c": 0.25
   },
   {
     "id": "T1-151",
@@ -312,7 +424,15 @@
       "0": "15 is too low. The correct answer is 16.",
       "1": "11 is too low. The correct answer is 16.",
       "2": "13 is too low. The correct answer is 16."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.1,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.1,
+    "irt_c": 0.25
   },
   {
     "id": "T1-152",
@@ -333,7 +453,15 @@
       "0": "17 is too high. The correct answer is 15.",
       "1": "14 is too low. The correct answer is 15.",
       "2": "10 is too low. The correct answer is 15."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.25,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.25,
+    "irt_c": 0.25
   },
   {
     "id": "T1-153",
@@ -354,7 +482,15 @@
       "1": "5 is too low. The correct answer is 8.",
       "2": "10 is too high. The correct answer is 8.",
       "3": "12 is too high. The correct answer is 8."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.5,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.5,
+    "irt_c": 0.25
   },
   {
     "id": "T1-155",
@@ -375,7 +511,15 @@
       "1": "26 is too high. The correct answer is 25.",
       "2": "28 is too high. The correct answer is 25.",
       "3": "21 is too low. The correct answer is 25."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.45,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.45,
+    "irt_c": 0.25
   },
   {
     "id": "T1-157",
@@ -396,7 +540,15 @@
       "0": "35 is too low. The correct answer is 40.",
       "2": "41 is too high. The correct answer is 40.",
       "3": "42 is too high. The correct answer is 40."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.0,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.0,
+    "irt_c": 0.25
   },
   {
     "id": "T1-158",
@@ -417,7 +569,15 @@
       "1": "25 is too low. The correct answer is 30.",
       "2": "31 is too high. The correct answer is 30.",
       "3": "32 is too high. The correct answer is 30."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.1,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.1,
+    "irt_c": 0.25
   },
   {
     "id": "T1-177",
@@ -438,7 +598,15 @@
       "0": "Not rose — think about why sunflower is the right answer.",
       "1": "Not tulip — think about why sunflower is the right answer.",
       "3": "Not daisy — think about why sunflower is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.15,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.15,
+    "irt_c": 0.25
   },
   {
     "id": "T1-178",
@@ -459,7 +627,15 @@
       "1": "Not banana — think about why apple is the right answer.",
       "2": "Not cherry — think about why apple is the right answer.",
       "3": "Not grape — think about why apple is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.4,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.4,
+    "irt_c": 0.25
   },
   {
     "id": "T1-182",
@@ -480,7 +656,15 @@
       "0": "Not parrot — think about why crow is the right answer.",
       "1": "Not eagle — think about why crow is the right answer.",
       "2": "Not sparrow — think about why crow is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.15,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.15,
+    "irt_c": 0.25
   },
   {
     "id": "T1-183",
@@ -501,7 +685,15 @@
       "1": "Not vanilla — think about why lemon is the right answer.",
       "2": "Not chocolate — think about why lemon is the right answer.",
       "3": "Not strawberry — think about why lemon is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.3,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.3,
+    "irt_c": 0.25
   },
   {
     "id": "T1-184",
@@ -522,7 +714,15 @@
       "1": "Not green — think about why red is the right answer.",
       "2": "Not yellow — think about why red is the right answer.",
       "3": "Not blue — think about why red is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.35,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.35,
+    "irt_c": 0.25
   },
   {
     "id": "T1-185",
@@ -543,7 +743,15 @@
       "0": "Not fedora — think about why top hat is the right answer.",
       "1": "Not beret — think about why top hat is the right answer.",
       "3": "Not cap — think about why top hat is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.45,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.45,
+    "irt_c": 0.25
   },
   {
     "id": "T1-186",
@@ -564,7 +772,15 @@
       "1": "Not goldfish — think about why clownfish is the right answer.",
       "2": "Not guppy — think about why clownfish is the right answer.",
       "3": "Not angelfish — think about why clownfish is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.5,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.5,
+    "irt_c": 0.25
   },
   {
     "id": "T1-187",
@@ -585,7 +801,15 @@
       "0": "Not corn — think about why potato is the right answer.",
       "2": "Not carrot — think about why potato is the right answer.",
       "3": "Not pea — think about why potato is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.25,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.25,
+    "irt_c": 0.25
   },
   {
     "id": "T1-189",
@@ -606,7 +830,15 @@
       "0": "9 is too low. The correct answer is 12.",
       "1": "14 is too high. The correct answer is 12.",
       "2": "16 is too high. The correct answer is 12."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.35,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.35,
+    "irt_c": 0.25
   },
   {
     "id": "T1-190",
@@ -627,7 +859,15 @@
       "0": "12 is too low. The correct answer is 13.",
       "1": "16 is too high. The correct answer is 13.",
       "2": "17 is too high. The correct answer is 13."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.4,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.4,
+    "irt_c": 0.25
   },
   {
     "id": "T1-191",
@@ -648,7 +888,15 @@
       "0": "8 is too low. The correct answer is 10.",
       "1": "5 is too low. The correct answer is 10.",
       "3": "7 is too low. The correct answer is 10."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.15,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.15,
+    "irt_c": 0.25
   },
   {
     "id": "T1-192",
@@ -669,7 +917,15 @@
       "0": "15 is too high. The correct answer is 13.",
       "1": "11 is too low. The correct answer is 13.",
       "3": "17 is too high. The correct answer is 13."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.45,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.45,
+    "irt_c": 0.25
   },
   {
     "id": "T1-193",
@@ -690,7 +946,15 @@
       "0": "7 is too low. The correct answer is 10.",
       "1": "14 is too high. The correct answer is 10.",
       "2": "12 is too high. The correct answer is 10."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.5,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.5,
+    "irt_c": 0.25
   },
   {
     "id": "T1-194",
@@ -711,7 +975,15 @@
       "0": "14 is too high. The correct answer is 13.",
       "1": "12 is too low. The correct answer is 13.",
       "3": "8 is too low. The correct answer is 13."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.25,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.25,
+    "irt_c": 0.25
   },
   {
     "id": "T1-195",
@@ -732,7 +1004,15 @@
       "0": "11 is too low. The correct answer is 12.",
       "1": "17 is too high. The correct answer is 12.",
       "3": "10 is too low. The correct answer is 12."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.3,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.3,
+    "irt_c": 0.25
   },
   {
     "id": "T1-196",
@@ -753,7 +1033,15 @@
       "0": "6 is too high. The correct answer is 1.",
       "1": "5 is too high. The correct answer is 1.",
       "3": "4 is too high. The correct answer is 1."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.35,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.35,
+    "irt_c": 0.25
   },
   {
     "id": "T1-198",
@@ -774,7 +1062,15 @@
       "0": "7 is too high. The correct answer is 2.",
       "1": "5 is too high. The correct answer is 2.",
       "2": "6 is too high. The correct answer is 2."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.05,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.05,
+    "irt_c": 0.25
   },
   {
     "id": "T1-199",
@@ -795,7 +1091,15 @@
       "0": "5 is too high. The correct answer is 2.",
       "1": "7 is too high. The correct answer is 2.",
       "2": "3 is too high. The correct answer is 2."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.6,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.6,
+    "irt_c": 0.25
   },
   {
     "id": "T1-200",
@@ -816,7 +1120,15 @@
       "0": "6 is too high. The correct answer is 3.",
       "1": "1 is too low. The correct answer is 3.",
       "3": "8 is too high. The correct answer is 3."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.0,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.0,
+    "irt_c": 0.25
   },
   {
     "id": "T1-201",
@@ -837,7 +1149,15 @@
       "1": "4 is too high. The correct answer is 1.",
       "2": "5 is too high. The correct answer is 1.",
       "3": "3 is too high. The correct answer is 1."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.2,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.2,
+    "irt_c": 0.25
   },
   {
     "id": "T1-202",
@@ -858,7 +1178,15 @@
       "1": "5 is too high. The correct answer is 2.",
       "2": "1 is too low. The correct answer is 2.",
       "3": "6 is too high. The correct answer is 2."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.3,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.3,
+    "irt_c": 0.25
   },
   {
     "id": "T1-203",
@@ -879,7 +1207,15 @@
       "0": "7 is too high. The correct answer is 5.",
       "2": "1 is too low. The correct answer is 5.",
       "3": "3 is too low. The correct answer is 5."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.95,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.95,
+    "irt_c": 0.25
   },
   {
     "id": "T1-206",
@@ -900,7 +1236,15 @@
       "0": "15 is too high. The correct answer is 12.",
       "2": "11 is too low. The correct answer is 12.",
       "3": "7 is too low. The correct answer is 12."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.9,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.9,
+    "irt_c": 0.25
   },
   {
     "id": "T1-208",
@@ -921,7 +1265,15 @@
       "0": "27 is too high. The correct answer is 25.",
       "1": "20 is too low. The correct answer is 25.",
       "2": "28 is too high. The correct answer is 25."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.3,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.3,
+    "irt_c": 0.25
   },
   {
     "id": "T1-211",
@@ -942,7 +1294,15 @@
       "0": "4 is too high. The correct answer is 2.",
       "1": "6 is too high. The correct answer is 2.",
       "2": "0 is too low. The correct answer is 2."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.15,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.15,
+    "irt_c": 0.25
   },
   {
     "id": "T1-212",
@@ -963,7 +1323,15 @@
       "1": "11 is too high. The correct answer is 8.",
       "2": "12 is too high. The correct answer is 8.",
       "3": "13 is too high. The correct answer is 8."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.95,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.95,
+    "irt_c": 0.25
   },
   {
     "id": "T1-328",
@@ -984,7 +1352,15 @@
       "0": "2 is too high. The correct answer is 1.",
       "2": "5 is too high. The correct answer is 1.",
       "3": "4 is too high. The correct answer is 1."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.65,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.65,
+    "irt_c": 0.25
   },
   {
     "id": "T1-329",
@@ -1005,7 +1381,15 @@
       "0": "12 is too low. The correct answer is 13.",
       "2": "16 is too high. The correct answer is 13.",
       "3": "17 is too high. The correct answer is 13."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.75,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.75,
+    "irt_c": 0.25
   },
   {
     "id": "T1-335",
@@ -1026,7 +1410,15 @@
       "0": "4 is too low. The correct answer is 6.",
       "2": "3 is too low. The correct answer is 6.",
       "3": "1 is too low. The correct answer is 6."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.55,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.55,
+    "irt_c": 0.25
   },
   {
     "id": "T1-337",
@@ -1047,7 +1439,15 @@
       "0": "4 is too high. The correct answer is 1.",
       "1": "3 is too high. The correct answer is 1.",
       "3": "5 is too high. The correct answer is 1."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.65,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.65,
+    "irt_c": 0.25
   },
   {
     "id": "T1-338",
@@ -1068,7 +1468,15 @@
       "1": "9 is too low. The correct answer is 10.",
       "2": "11 is too high. The correct answer is 10.",
       "3": "8 is too low. The correct answer is 10."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.7,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.7,
+    "irt_c": 0.25
   },
   {
     "id": "T1-389",
@@ -1089,7 +1497,15 @@
       "0": "27 is too low. The correct answer is 30.",
       "2": "28 is too low. The correct answer is 30.",
       "3": "31 is too high. The correct answer is 30."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 0.05,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 0.05,
+    "irt_c": 0.25
   },
   {
     "id": "T1-391",
@@ -1110,7 +1526,15 @@
       "0": "31 is too high. The correct answer is 30.",
       "1": "25 is too low. The correct answer is 30.",
       "2": "35 is too high. The correct answer is 30."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 0.5,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 0.5,
+    "irt_c": 0.25
   },
   {
     "id": "T1-479",
@@ -1131,7 +1555,15 @@
       "1": "75 is too high. The correct answer is 74.",
       "2": "69 is too low. The correct answer is 74.",
       "3": "76 is too high. The correct answer is 74."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 0.3,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 0.3,
+    "irt_c": 0.25
   },
   {
     "id": "T1-480",
@@ -1152,7 +1584,15 @@
       "1": "95 is too high. The correct answer is 92.",
       "2": "93 is too high. The correct answer is 92.",
       "3": "94 is too high. The correct answer is 92."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 0.55,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 0.55,
+    "irt_c": 0.25
   },
   {
     "id": "T1-481",
@@ -1173,7 +1613,15 @@
       "1": "59 is too low. The correct answer is 62.",
       "2": "63 is too high. The correct answer is 62.",
       "3": "60 is too low. The correct answer is 62."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 0.75,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 0.75,
+    "irt_c": 0.25
   },
   {
     "id": "T1-482",
@@ -1194,7 +1642,15 @@
       "1": "103 is too low. The correct answer is 106.",
       "2": "111 is too high. The correct answer is 106.",
       "3": "107 is too high. The correct answer is 106."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 0.65,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 0.65,
+    "irt_c": 0.25
   },
   {
     "id": "T1-483",
@@ -1215,7 +1671,15 @@
       "0": "91 is too high. The correct answer is 88.",
       "2": "93 is too high. The correct answer is 88.",
       "3": "85 is too low. The correct answer is 88."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 0.45,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 0.45,
+    "irt_c": 0.25
   },
   {
     "id": "T1-484",
@@ -1236,7 +1700,15 @@
       "0": "29 is too high. The correct answer is 28.",
       "1": "33 is too high. The correct answer is 28.",
       "3": "26 is too low. The correct answer is 28."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 0.0,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 0.0,
+    "irt_c": 0.25
   },
   {
     "id": "T1-485",
@@ -1257,7 +1729,15 @@
       "0": "16 is too low. The correct answer is 21.",
       "2": "25 is too high. The correct answer is 21.",
       "3": "23 is too high. The correct answer is 21."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 0.35,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 0.35,
+    "irt_c": 0.25
   },
   {
     "id": "T1-486",
@@ -1278,7 +1758,15 @@
       "0": "32 is too low. The correct answer is 37.",
       "2": "42 is too high. The correct answer is 37.",
       "3": "39 is too high. The correct answer is 37."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 0.15,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 0.15,
+    "irt_c": 0.25
   },
   {
     "id": "T1-487",
@@ -1299,7 +1787,15 @@
       "0": "40 is too low. The correct answer is 42.",
       "1": "39 is too low. The correct answer is 42.",
       "2": "38 is too low. The correct answer is 42."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 0.4,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 0.4,
+    "irt_c": 0.25
   },
   {
     "id": "T1-488",
@@ -1320,7 +1816,15 @@
       "0": "30 is too low. The correct answer is 35.",
       "1": "38 is too high. The correct answer is 35.",
       "2": "33 is too low. The correct answer is 35."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 0.5,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 0.5,
+    "irt_c": 0.25
   },
   {
     "id": "T1-490",
@@ -1341,7 +1845,15 @@
       "0": "87 is too low. The correct answer is 90.",
       "1": "88 is too low. The correct answer is 90.",
       "3": "85 is too low. The correct answer is 90."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 0.5,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 0.5,
+    "irt_c": 0.25
   },
   {
     "id": "T1-547",
@@ -1362,7 +1874,15 @@
       "0": "18 is too high. The correct answer is 15.",
       "1": "10 is too low. The correct answer is 15.",
       "2": "14 is too low. The correct answer is 15."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.65,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.65,
+    "irt_c": 0.25
   },
   {
     "id": "T1-548",
@@ -1383,7 +1903,15 @@
       "0": "10 is too high. The correct answer is 6.",
       "1": "3 is too low. The correct answer is 6.",
       "3": "8 is too high. The correct answer is 6."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.65,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.65,
+    "irt_c": 0.25
   },
   {
     "id": "T1-549",
@@ -1404,7 +1932,15 @@
       "1": "33 is too low. The correct answer is 36.",
       "2": "35 is too low. The correct answer is 36.",
       "3": "32 is too low. The correct answer is 36."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.75,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.75,
+    "irt_c": 0.25
   },
   {
     "id": "T1-550",
@@ -1425,7 +1961,15 @@
       "1": "25 is too low. The correct answer is 28.",
       "2": "23 is too low. The correct answer is 28.",
       "3": "24 is too low. The correct answer is 28."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.4,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.4,
+    "irt_c": 0.25
   },
   {
     "id": "T1-555",
@@ -1446,7 +1990,15 @@
       "0": "5 is too low. The correct answer is 10.",
       "2": "7 is too low. The correct answer is 10.",
       "3": "9 is too low. The correct answer is 10."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.65,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.65,
+    "irt_c": 0.25
   },
   {
     "id": "T1-556",
@@ -1467,7 +2019,15 @@
       "1": "32 is too low. The correct answer is 36.",
       "2": "31 is too low. The correct answer is 36.",
       "3": "35 is too low. The correct answer is 36."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.7,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.7,
+    "irt_c": 0.25
   },
   {
     "id": "T2-021",
@@ -1488,7 +2048,15 @@
       "0": "8 is too high. The correct answer is 7.",
       "1": "6 is too low. The correct answer is 7.",
       "2": "9 is too high. The correct answer is 7."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.95,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.95,
+    "irt_c": 0.25
   },
   {
     "id": "T2-022",
@@ -1509,7 +2077,15 @@
       "0": "6 is too low. The correct answer is 7.",
       "1": "9 is too high. The correct answer is 7.",
       "2": "8 is too high. The correct answer is 7."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.9,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.9,
+    "irt_c": 0.25
   },
   {
     "id": "T2-023",
@@ -1530,7 +2106,15 @@
       "0": "6 is too low. The correct answer is 7.",
       "1": "5 is too low. The correct answer is 7.",
       "3": "8 is too high. The correct answer is 7."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.85,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.85,
+    "irt_c": 0.25
   },
   {
     "id": "T2-024",
@@ -1551,7 +2135,15 @@
       "0": "8 is too low. The correct answer is 9.",
       "1": "10 is too high. The correct answer is 9.",
       "2": "7 is too low. The correct answer is 9."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.8,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.8,
+    "irt_c": 0.25
   },
   {
     "id": "T2-025",
@@ -1572,7 +2164,15 @@
       "0": "6 is too high. The correct answer is 5.",
       "2": "4 is too low. The correct answer is 5.",
       "3": "7 is too high. The correct answer is 5."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.75,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.75,
+    "irt_c": 0.25
   },
   {
     "id": "T2-079",
@@ -1593,7 +2193,15 @@
       "0": "5 is too high. The correct answer is 4.",
       "1": "3 is too low. The correct answer is 4.",
       "3": "6 is too high. The correct answer is 4."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 0.95,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 0.95,
+    "irt_c": 0.25
   },
   {
     "id": "T2-081",
@@ -1614,7 +2222,15 @@
       "0": "Not 8 kg — think about why 10 kg is the right answer.",
       "1": "Not 14 kg — think about why 10 kg is the right answer.",
       "3": "Not 12 kg — think about why 10 kg is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.05,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.05,
+    "irt_c": 0.25
   },
   {
     "id": "T2-082",
@@ -1635,7 +2251,15 @@
       "0": "Not 5 kg — think about why 6 kg is the right answer.",
       "1": "Not 4 kg — think about why 6 kg is the right answer.",
       "3": "Not 8 kg — think about why 6 kg is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.1,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.1,
+    "irt_c": 0.25
   },
   {
     "id": "T2-101",
@@ -1656,7 +2280,15 @@
       "1": "5 is too high. The correct answer is 2.",
       "2": "4 is too high. The correct answer is 2.",
       "3": "1 is too low. The correct answer is 2."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.95,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.95,
+    "irt_c": 0.25
   },
   {
     "id": "T2-102",
@@ -1677,7 +2309,15 @@
       "1": "6 is too high. The correct answer is 3.",
       "2": "5 is too high. The correct answer is 3.",
       "3": "1 is too low. The correct answer is 3."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.95,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.95,
+    "irt_c": 0.25
   },
   {
     "id": "T2-104",
@@ -1698,7 +2338,15 @@
       "1": "4 is too low. The correct answer is 5.",
       "2": "3 is too low. The correct answer is 5.",
       "3": "2 is too low. The correct answer is 5."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.95,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.95,
+    "irt_c": 0.25
   },
   {
     "id": "T2-106",
@@ -1719,7 +2367,15 @@
       "1": "4 is too low. The correct answer is 7.",
       "2": "9 is too high. The correct answer is 7.",
       "3": "5 is too low. The correct answer is 7."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.9,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.9,
+    "irt_c": 0.25
   },
   {
     "id": "T2-109",
@@ -1740,7 +2396,15 @@
       "0": "13 is too high. The correct answer is 10.",
       "2": "9 is too low. The correct answer is 10.",
       "3": "7 is too low. The correct answer is 10."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.9,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.9,
+    "irt_c": 0.25
   },
   {
     "id": "T2-117",
@@ -1761,7 +2425,15 @@
       "1": "9 is too low. The correct answer is 10.",
       "2": "13 is too high. The correct answer is 10.",
       "3": "8 is too low. The correct answer is 10."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.8,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.8,
+    "irt_c": 0.25
   },
   {
     "id": "T2-118",
@@ -1782,7 +2454,15 @@
       "1": "12 is too high. The correct answer is 11.",
       "2": "9 is too low. The correct answer is 11.",
       "3": "14 is too high. The correct answer is 11."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.8,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.8,
+    "irt_c": 0.25
   },
   {
     "id": "T2-121",
@@ -1803,7 +2483,15 @@
       "0": "4 is too low. The correct answer is 6.",
       "1": "5 is too low. The correct answer is 6.",
       "2": "3 is too low. The correct answer is 6."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.75,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.75,
+    "irt_c": 0.25
   },
   {
     "id": "T2-122",
@@ -1824,7 +2512,15 @@
       "0": "9 is too high. The correct answer is 7.",
       "2": "8 is too high. The correct answer is 7.",
       "3": "5 is too low. The correct answer is 7."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.75,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.75,
+    "irt_c": 0.25
   },
   {
     "id": "T2-123",
@@ -1845,7 +2541,15 @@
       "1": "10 is too high. The correct answer is 8.",
       "2": "5 is too low. The correct answer is 8.",
       "3": "9 is too high. The correct answer is 8."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.75,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.75,
+    "irt_c": 0.25
   },
   {
     "id": "T2-124",
@@ -1866,7 +2570,15 @@
       "0": "10 is too high. The correct answer is 9.",
       "1": "12 is too high. The correct answer is 9.",
       "2": "7 is too low. The correct answer is 9."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.75,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.75,
+    "irt_c": 0.25
   },
   {
     "id": "T2-127",
@@ -1887,7 +2599,15 @@
       "0": "11 is too low. The correct answer is 12.",
       "1": "15 is too high. The correct answer is 12.",
       "3": "10 is too low. The correct answer is 12."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.7,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.7,
+    "irt_c": 0.25
   },
   {
     "id": "T2-131",
@@ -1908,7 +2628,15 @@
       "1": "7 is too low. The correct answer is 8.",
       "2": "9 is too high. The correct answer is 8.",
       "3": "6 is too low. The correct answer is 8."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.65,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.65,
+    "irt_c": 0.25
   },
   {
     "id": "T2-134",
@@ -1929,7 +2657,15 @@
       "0": "9 is too low. The correct answer is 11.",
       "1": "14 is too high. The correct answer is 11.",
       "3": "8 is too low. The correct answer is 11."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.65,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.65,
+    "irt_c": 0.25
   },
   {
     "id": "T2-136",
@@ -1950,7 +2686,15 @@
       "0": "16 is too high. The correct answer is 13.",
       "2": "12 is too low. The correct answer is 13.",
       "3": "14 is too high. The correct answer is 13."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.6,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.6,
+    "irt_c": 0.25
   },
   {
     "id": "T2-137",
@@ -1971,7 +2715,15 @@
       "0": "8 is too high. The correct answer is 6.",
       "1": "3 is too low. The correct answer is 6.",
       "2": "7 is too high. The correct answer is 6."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.6,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.6,
+    "irt_c": 0.25
   },
   {
     "id": "T2-138",
@@ -1992,7 +2744,15 @@
       "1": "8 is too high. The correct answer is 7.",
       "2": "5 is too low. The correct answer is 7.",
       "3": "4 is too low. The correct answer is 7."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.6,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.6,
+    "irt_c": 0.25
   },
   {
     "id": "T2-141",
@@ -2013,7 +2773,15 @@
       "0": "7 is too low. The correct answer is 10.",
       "1": "11 is too high. The correct answer is 10.",
       "3": "13 is too high. The correct answer is 10."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.55,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.55,
+    "irt_c": 0.25
   },
   {
     "id": "T2-142",
@@ -2034,7 +2802,15 @@
       "0": "12 is too high. The correct answer is 11.",
       "2": "9 is too low. The correct answer is 11.",
       "3": "8 is too low. The correct answer is 11."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.55,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.55,
+    "irt_c": 0.25
   },
   {
     "id": "T2-144",
@@ -2055,7 +2831,15 @@
       "0": "15 is too high. The correct answer is 13.",
       "1": "10 is too low. The correct answer is 13.",
       "3": "14 is too high. The correct answer is 13."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.55,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.55,
+    "irt_c": 0.25
   },
   {
     "id": "T2-145",
@@ -2076,7 +2860,15 @@
       "0": "11 is too low. The correct answer is 14.",
       "2": "15 is too high. The correct answer is 14.",
       "3": "13 is too low. The correct answer is 14."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.55,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.55,
+    "irt_c": 0.25
   },
   {
     "id": "T2-147",
@@ -2097,7 +2889,15 @@
       "0": "7 is too low. The correct answer is 8.",
       "1": "6 is too low. The correct answer is 8.",
       "3": "9 is too high. The correct answer is 8."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.5,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.5,
+    "irt_c": 0.25
   },
   {
     "id": "T2-148",
@@ -2118,7 +2918,15 @@
       "0": "6 is too low. The correct answer is 9.",
       "1": "10 is too high. The correct answer is 9.",
       "2": "11 is too high. The correct answer is 9."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.5,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.5,
+    "irt_c": 0.25
   },
   {
     "id": "T2-150",
@@ -2139,7 +2947,15 @@
       "1": "10 is too low. The correct answer is 11.",
       "2": "8 is too low. The correct answer is 11.",
       "3": "9 is too low. The correct answer is 11."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.5,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.5,
+    "irt_c": 0.25
   },
   {
     "id": "T2-154",
@@ -2160,7 +2976,15 @@
       "0": "13 is too low. The correct answer is 15.",
       "1": "17 is too high. The correct answer is 15.",
       "2": "16 is too high. The correct answer is 15."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.45,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.45,
+    "irt_c": 0.25
   },
   {
     "id": "T2-158",
@@ -2181,7 +3005,15 @@
       "1": "14 is too high. The correct answer is 11.",
       "2": "12 is too high. The correct answer is 11.",
       "3": "13 is too high. The correct answer is 11."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.4,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.4,
+    "irt_c": 0.25
   },
   {
     "id": "T2-161",
@@ -2202,7 +3034,15 @@
       "0": "15 is too high. The correct answer is 14.",
       "1": "12 is too low. The correct answer is 14.",
       "3": "17 is too high. The correct answer is 14."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.35,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.35,
+    "irt_c": 0.25
   },
   {
     "id": "T2-162",
@@ -2223,7 +3063,15 @@
       "0": "16 is too high. The correct answer is 15.",
       "1": "18 is too high. The correct answer is 15.",
       "3": "14 is too low. The correct answer is 15."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.35,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.35,
+    "irt_c": 0.25
   },
   {
     "id": "T2-169",
@@ -2244,7 +3092,15 @@
       "0": "12 is too low. The correct answer is 14.",
       "2": "17 is too high. The correct answer is 14.",
       "3": "15 is too high. The correct answer is 14."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.3,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.3,
+    "irt_c": 0.25
   },
   {
     "id": "T2-170",
@@ -2265,7 +3121,15 @@
       "0": "14 is too low. The correct answer is 15.",
       "1": "13 is too low. The correct answer is 15.",
       "2": "12 is too low. The correct answer is 15."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.3,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.3,
+    "irt_c": 0.25
   },
   {
     "id": "T2-175",
@@ -2286,7 +3150,15 @@
       "0": "15 is too high. The correct answer is 12.",
       "1": "13 is too high. The correct answer is 12.",
       "2": "11 is too low. The correct answer is 12."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.25,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.25,
+    "irt_c": 0.25
   },
   {
     "id": "T2-176",
@@ -2307,7 +3179,15 @@
       "1": "16 is too high. The correct answer is 13.",
       "2": "11 is too low. The correct answer is 13.",
       "3": "14 is too high. The correct answer is 13."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.2,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.2,
+    "irt_c": 0.25
   },
   {
     "id": "T2-178",
@@ -2328,7 +3208,15 @@
       "0": "18 is too high. The correct answer is 15.",
       "2": "16 is too high. The correct answer is 15.",
       "3": "13 is too low. The correct answer is 15."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.2,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.2,
+    "irt_c": 0.25
   },
   {
     "id": "T2-179",
@@ -2349,7 +3237,15 @@
       "0": "14 is too low. The correct answer is 16.",
       "1": "15 is too low. The correct answer is 16.",
       "2": "13 is too low. The correct answer is 16."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.2,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.2,
+    "irt_c": 0.25
   },
   {
     "id": "T2-180",
@@ -2370,7 +3266,15 @@
       "0": "15 is too low. The correct answer is 17.",
       "1": "19 is too high. The correct answer is 17.",
       "2": "14 is too low. The correct answer is 17."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.2,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.2,
+    "irt_c": 0.25
   },
   {
     "id": "T2-184",
@@ -2391,7 +3295,15 @@
       "0": "0 is too low. The correct answer is 3.",
       "1": "2 is too low. The correct answer is 3.",
       "2": "4 is too high. The correct answer is 3."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.15,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.15,
+    "irt_c": 0.25
   },
   {
     "id": "T2-185",
@@ -2412,7 +3324,15 @@
       "0": "4 is too high. The correct answer is 2.",
       "1": "1 is too low. The correct answer is 2.",
       "2": "3 is too high. The correct answer is 2."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.15,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.15,
+    "irt_c": 0.25
   },
   {
     "id": "T2-188",
@@ -2433,7 +3353,15 @@
       "0": "6 is too high. The correct answer is 3.",
       "1": "2 is too low. The correct answer is 3.",
       "2": "5 is too high. The correct answer is 3."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.1,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.1,
+    "irt_c": 0.25
   },
   {
     "id": "T2-190",
@@ -2454,7 +3382,15 @@
       "0": "4 is too high. The correct answer is 1.",
       "1": "0 is too low. The correct answer is 1.",
       "3": "2 is too high. The correct answer is 1."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.1,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.1,
+    "irt_c": 0.25
   },
   {
     "id": "T2-197",
@@ -2475,7 +3411,15 @@
       "0": "6 is too high. The correct answer is 5.",
       "1": "7 is too high. The correct answer is 5.",
       "2": "3 is too low. The correct answer is 5."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.0,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.0,
+    "irt_c": 0.25
   },
   {
     "id": "T2-198",
@@ -2496,7 +3440,15 @@
       "0": "1 is too low. The correct answer is 4.",
       "1": "3 is too low. The correct answer is 4.",
       "2": "6 is too high. The correct answer is 4."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.0,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.0,
+    "irt_c": 0.25
   },
   {
     "id": "T2-199",
@@ -2517,7 +3469,15 @@
       "0": "2 is too low. The correct answer is 3.",
       "1": "4 is too high. The correct answer is 3.",
       "3": "5 is too high. The correct answer is 3."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.0,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.0,
+    "irt_c": 0.25
   },
   {
     "id": "T2-202",
@@ -2538,7 +3498,15 @@
       "0": "8 is too high. The correct answer is 7.",
       "1": "4 is too low. The correct answer is 7.",
       "2": "9 is too high. The correct answer is 7."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.95,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.95,
+    "irt_c": 0.25
   },
   {
     "id": "T2-206",
@@ -2559,7 +3527,15 @@
       "1": "2 is too low. The correct answer is 3.",
       "2": "4 is too high. The correct answer is 3.",
       "3": "6 is too high. The correct answer is 3."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.9,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.9,
+    "irt_c": 0.25
   },
   {
     "id": "T2-216",
@@ -2580,7 +3556,15 @@
       "0": "4 is too high. The correct answer is 1.",
       "1": "2 is too high. The correct answer is 1.",
       "3": "0 is too low. The correct answer is 1."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.8,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.8,
+    "irt_c": 0.25
   },
   {
     "id": "T2-219",
@@ -2601,7 +3585,15 @@
       "0": "5 is too low. The correct answer is 7.",
       "2": "4 is too low. The correct answer is 7.",
       "3": "9 is too high. The correct answer is 7."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.8,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.8,
+    "irt_c": 0.25
   },
   {
     "id": "T2-223",
@@ -2622,7 +3614,15 @@
       "0": "4 is too high. The correct answer is 3.",
       "1": "0 is too low. The correct answer is 3.",
       "3": "1 is too low. The correct answer is 3."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.75,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.75,
+    "irt_c": 0.25
   },
   {
     "id": "T2-225",
@@ -2643,7 +3643,15 @@
       "0": "2 is too high. The correct answer is 1.",
       "1": "3 is too high. The correct answer is 1.",
       "2": "0 is too low. The correct answer is 1."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.75,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.75,
+    "irt_c": 0.25
   },
   {
     "id": "T2-226",
@@ -2664,7 +3672,15 @@
       "0": "7 is too low. The correct answer is 10.",
       "1": "13 is too high. The correct answer is 10.",
       "3": "8 is too low. The correct answer is 10."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.7,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.7,
+    "irt_c": 0.25
   },
   {
     "id": "T2-230",
@@ -2685,7 +3701,15 @@
       "0": "3 is too low. The correct answer is 6.",
       "1": "8 is too high. The correct answer is 6.",
       "2": "4 is too low. The correct answer is 6."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.7,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.7,
+    "irt_c": 0.25
   },
   {
     "id": "T2-233",
@@ -2706,7 +3730,15 @@
       "1": "2 is too low. The correct answer is 3.",
       "2": "4 is too high. The correct answer is 3.",
       "3": "1 is too low. The correct answer is 3."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.65,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.65,
+    "irt_c": 0.25
   },
   {
     "id": "T2-234",
@@ -2727,7 +3759,15 @@
       "1": "1 is too low. The correct answer is 2.",
       "2": "5 is too high. The correct answer is 2.",
       "3": "3 is too high. The correct answer is 2."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.65,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.65,
+    "irt_c": 0.25
   },
   {
     "id": "T2-238",
@@ -2748,7 +3788,15 @@
       "0": "6 is too low. The correct answer is 9.",
       "1": "12 is too high. The correct answer is 9.",
       "3": "8 is too low. The correct answer is 9."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.6,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.6,
+    "irt_c": 0.25
   },
   {
     "id": "T2-244",
@@ -2769,7 +3817,15 @@
       "0": "2 is too low. The correct answer is 3.",
       "2": "5 is too high. The correct answer is 3.",
       "3": "6 is too high. The correct answer is 3."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.55,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.55,
+    "irt_c": 0.25
   },
   {
     "id": "T2-260",
@@ -2790,7 +3846,15 @@
       "0": "15 is too high. The correct answer is 12.",
       "1": "13 is too high. The correct answer is 12.",
       "3": "11 is too low. The correct answer is 12."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.4,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.4,
+    "irt_c": 0.25
   },
   {
     "id": "T2-268",
@@ -2811,7 +3875,15 @@
       "0": "3 is too low. The correct answer is 4.",
       "1": "1 is too low. The correct answer is 4.",
       "3": "2 is too low. The correct answer is 4."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.3,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.3,
+    "irt_c": 0.25
   },
   {
     "id": "T2-269",
@@ -2832,7 +3904,15 @@
       "0": "4 is too high. The correct answer is 3.",
       "1": "2 is too low. The correct answer is 3.",
       "2": "0 is too low. The correct answer is 3."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.3,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.3,
+    "irt_c": 0.25
   },
   {
     "id": "T2-272",
@@ -2853,7 +3933,15 @@
       "1": "10 is too low. The correct answer is 12.",
       "2": "15 is too high. The correct answer is 12.",
       "3": "8 is too low. The correct answer is 12."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.65,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.65,
+    "irt_c": 0.25
   },
   {
     "id": "T2-273",
@@ -2874,7 +3962,15 @@
       "0": "8 is too low. The correct answer is 12.",
       "1": "13 is too high. The correct answer is 12.",
       "2": "14 is too high. The correct answer is 12."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.1,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.1,
+    "irt_c": 0.25
   },
   {
     "id": "T2-275",
@@ -2895,7 +3991,15 @@
       "0": "18 is too high. The correct answer is 16.",
       "1": "20 is too high. The correct answer is 16.",
       "3": "14 is too low. The correct answer is 16."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.0,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.0,
+    "irt_c": 0.25
   },
   {
     "id": "T2-278",
@@ -2916,7 +4020,15 @@
       "0": "28 is too high. The correct answer is 25.",
       "2": "27 is too high. The correct answer is 25.",
       "3": "21 is too low. The correct answer is 25."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.7,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.7,
+    "irt_c": 0.25
   },
   {
     "id": "T2-280",
@@ -2937,7 +4049,15 @@
       "0": "9 is too low. The correct answer is 11.",
       "2": "15 is too high. The correct answer is 11.",
       "3": "12 is too high. The correct answer is 11."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.5,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.5,
+    "irt_c": 0.25
   },
   {
     "id": "T2-283",
@@ -2958,7 +4078,15 @@
       "0": "4 is too low. The correct answer is 6.",
       "1": "8 is too high. The correct answer is 6.",
       "3": "5 is too low. The correct answer is 6."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.1,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.1,
+    "irt_c": 0.25
   },
   {
     "id": "T2-284",
@@ -2979,7 +4107,15 @@
       "1": "24 is too high. The correct answer is 20.",
       "2": "18 is too low. The correct answer is 20.",
       "3": "21 is too high. The correct answer is 20."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.4,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.4,
+    "irt_c": 0.25
   },
   {
     "id": "T2-285",
@@ -3000,7 +4136,15 @@
       "0": "9 is too low. The correct answer is 12.",
       "1": "10 is too low. The correct answer is 12.",
       "2": "15 is too high. The correct answer is 12."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.3,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.3,
+    "irt_c": 0.25
   },
   {
     "id": "T2-287",
@@ -3021,7 +4165,15 @@
       "1": "18 is too low. The correct answer is 20.",
       "2": "23 is too high. The correct answer is 20.",
       "3": "22 is too high. The correct answer is 20."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.0,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.0,
+    "irt_c": 0.25
   },
   {
     "id": "T2-291",
@@ -3042,7 +4194,15 @@
       "0": "18 is too high. The correct answer is 14.",
       "2": "12 is too low. The correct answer is 14.",
       "3": "16 is too high. The correct answer is 14."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.65,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.65,
+    "irt_c": 0.25
   },
   {
     "id": "T2-293",
@@ -3063,7 +4223,15 @@
       "0": "6 is too low. The correct answer is 10.",
       "1": "12 is too high. The correct answer is 10.",
       "3": "7 is too low. The correct answer is 10."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.1,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.1,
+    "irt_c": 0.25
   },
   {
     "id": "T2-294",
@@ -3084,7 +4252,15 @@
       "0": "17 is too low. The correct answer is 18.",
       "1": "19 is too high. The correct answer is 18.",
       "3": "15 is too low. The correct answer is 18."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.4,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.4,
+    "irt_c": 0.25
   },
   {
     "id": "T2-295",
@@ -3105,7 +4281,15 @@
       "0": "16 is too low. The correct answer is 18.",
       "1": "17 is too low. The correct answer is 18.",
       "2": "19 is too high. The correct answer is 18."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.8,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.8,
+    "irt_c": 0.25
   },
   {
     "id": "T2-296",
@@ -3126,7 +4310,15 @@
       "0": "14 is too low. The correct answer is 16.",
       "2": "13 is too low. The correct answer is 16.",
       "3": "20 is too high. The correct answer is 16."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.3,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.3,
+    "irt_c": 0.25
   },
   {
     "id": "T2-306",
@@ -3147,7 +4339,15 @@
       "0": "2 is too low. The correct answer is 5.",
       "2": "6 is too high. The correct answer is 5.",
       "3": "4 is too low. The correct answer is 5."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.65,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.65,
+    "irt_c": 0.25
   },
   {
     "id": "T2-311",
@@ -3168,7 +4368,15 @@
       "0": "12 is too low. The correct answer is 15.",
       "2": "13 is too low. The correct answer is 15.",
       "3": "17 is too high. The correct answer is 15."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.8,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.8,
+    "irt_c": 0.25
   },
   {
     "id": "T2-314",
@@ -3189,7 +4397,15 @@
       "1": "3 is too low. The correct answer is 4.",
       "2": "1 is too low. The correct answer is 4.",
       "3": "6 is too high. The correct answer is 4."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.7,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.7,
+    "irt_c": 0.25
   },
   {
     "id": "T2-316",
@@ -3210,7 +4426,15 @@
       "0": "12 is too low. The correct answer is 16.",
       "2": "18 is too high. The correct answer is 16.",
       "3": "15 is too low. The correct answer is 16."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.9,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.9,
+    "irt_c": 0.25
   },
   {
     "id": "T2-317",
@@ -3231,7 +4455,15 @@
       "0": "20 is too high. The correct answer is 16.",
       "1": "19 is too high. The correct answer is 16.",
       "3": "14 is too low. The correct answer is 16."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.7,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.7,
+    "irt_c": 0.25
   },
   {
     "id": "T2-320",
@@ -3252,7 +4484,15 @@
       "0": "13 is too high. The correct answer is 11.",
       "1": "7 is too low. The correct answer is 11.",
       "2": "12 is too high. The correct answer is 11."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.9,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.9,
+    "irt_c": 0.25
   },
   {
     "id": "T2-321",
@@ -3273,7 +4513,15 @@
       "0": "18 is too high. The correct answer is 17.",
       "2": "16 is too low. The correct answer is 17.",
       "3": "19 is too high. The correct answer is 17."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.6,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.6,
+    "irt_c": 0.25
   },
   {
     "id": "T2-324",
@@ -3294,7 +4542,15 @@
       "1": "12 is too high. The correct answer is 9.",
       "2": "11 is too high. The correct answer is 9.",
       "3": "10 is too high. The correct answer is 9."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.65,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.65,
+    "irt_c": 0.25
   },
   {
     "id": "T2-326",
@@ -3315,7 +4571,15 @@
       "0": "3 is too low. The correct answer is 4.",
       "1": "2 is too low. The correct answer is 4.",
       "3": "7 is too high. The correct answer is 4."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.9,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.9,
+    "irt_c": 0.25
   },
   {
     "id": "T2-327",
@@ -3336,7 +4600,15 @@
       "0": "15 is too high. The correct answer is 11.",
       "1": "13 is too high. The correct answer is 11.",
       "2": "12 is too high. The correct answer is 11."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.95,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.95,
+    "irt_c": 0.25
   },
   {
     "id": "T2-328",
@@ -3357,7 +4629,15 @@
       "0": "12 is too high. The correct answer is 10.",
       "2": "7 is too low. The correct answer is 10.",
       "3": "11 is too high. The correct answer is 10."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.5,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.5,
+    "irt_c": 0.25
   },
   {
     "id": "T2-335",
@@ -3378,7 +4658,15 @@
       "0": "5 is too high. The correct answer is 2.",
       "1": "1 is too low. The correct answer is 2.",
       "2": "3 is too high. The correct answer is 2."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.65,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.65,
+    "irt_c": 0.25
   },
   {
     "id": "T2-336",
@@ -3399,7 +4687,15 @@
       "0": "6 is too low. The correct answer is 8.",
       "2": "10 is too high. The correct answer is 8.",
       "3": "7 is too low. The correct answer is 8."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.7,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.7,
+    "irt_c": 0.25
   },
   {
     "id": "T2-339",
@@ -3420,7 +4716,15 @@
       "0": "2 is too high. The correct answer is 1.",
       "1": "3 is too high. The correct answer is 1.",
       "3": "4 is too high. The correct answer is 1."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.95,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.95,
+    "irt_c": 0.25
   },
   {
     "id": "T2-340",
@@ -3441,7 +4745,15 @@
       "0": "5 is too low. The correct answer is 8.",
       "1": "11 is too high. The correct answer is 8.",
       "2": "6 is too low. The correct answer is 8."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.8,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.8,
+    "irt_c": 0.25
   },
   {
     "id": "T2-342",
@@ -3462,7 +4774,15 @@
       "0": "7 is too low. The correct answer is 10.",
       "2": "11 is too high. The correct answer is 10.",
       "3": "12 is too high. The correct answer is 10."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.85,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.85,
+    "irt_c": 0.25
   },
   {
     "id": "T2-343",
@@ -3483,7 +4803,15 @@
       "0": "7 is too high. The correct answer is 5.",
       "2": "6 is too high. The correct answer is 5.",
       "3": "3 is too low. The correct answer is 5."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.75,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.75,
+    "irt_c": 0.25
   },
   {
     "id": "T2-344",
@@ -3504,7 +4832,15 @@
       "0": "3 is too low. The correct answer is 5.",
       "1": "7 is too high. The correct answer is 5.",
       "2": "6 is too high. The correct answer is 5."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.9,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.9,
+    "irt_c": 0.25
   },
   {
     "id": "T2-346",
@@ -3525,7 +4861,15 @@
       "1": "9 is too low. The correct answer is 10.",
       "2": "8 is too low. The correct answer is 10.",
       "3": "11 is too high. The correct answer is 10."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.65,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.65,
+    "irt_c": 0.25
   },
   {
     "id": "T2-348",
@@ -3546,7 +4890,15 @@
       "0": "4 is too low. The correct answer is 7.",
       "1": "5 is too low. The correct answer is 7.",
       "2": "6 is too low. The correct answer is 7."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.9,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.9,
+    "irt_c": 0.25
   },
   {
     "id": "T2-349",
@@ -3567,7 +4919,15 @@
       "1": "7 is too low. The correct answer is 10.",
       "2": "9 is too low. The correct answer is 10.",
       "3": "12 is too high. The correct answer is 10."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.65,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.65,
+    "irt_c": 0.25
   },
   {
     "id": "T2-350",
@@ -3588,7 +4948,15 @@
       "0": "16 is too high. The correct answer is 12.",
       "2": "9 is too low. The correct answer is 12.",
       "3": "10 is too low. The correct answer is 12."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.75,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.75,
+    "irt_c": 0.25
   },
   {
     "id": "T2-351",
@@ -3609,7 +4977,15 @@
       "1": "Not ÷ — think about why + is the right answer.",
       "2": "Not × — think about why + is the right answer.",
       "3": "Not - — think about why + is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 0.1,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 0.1,
+    "irt_c": 0.25
   },
   {
     "id": "T2-355",
@@ -3630,7 +5006,15 @@
       "0": "3 is too low. The correct answer is 4.",
       "1": "0 is too low. The correct answer is 4.",
       "2": "6 is too high. The correct answer is 4."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 0.65,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 0.65,
+    "irt_c": 0.25
   },
   {
     "id": "T2-356",
@@ -3651,7 +5035,15 @@
       "0": "Not + — think about why - is the right answer.",
       "1": "Not ÷ — think about why - is the right answer.",
       "2": "Not × — think about why - is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.1,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.1,
+    "irt_c": 0.25
   },
   {
     "id": "T2-358",
@@ -3672,7 +5064,15 @@
       "0": "26 is too high. The correct answer is 23.",
       "2": "25 is too high. The correct answer is 23.",
       "3": "22 is too low. The correct answer is 23."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 0.1,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 0.1,
+    "irt_c": 0.25
   },
   {
     "id": "T2-361",
@@ -3693,7 +5093,15 @@
       "0": "Not × — think about why + is the right answer.",
       "1": "Not - — think about why + is the right answer.",
       "3": "Not ÷ — think about why + is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 0.1,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 0.1,
+    "irt_c": 0.25
   },
   {
     "id": "T2-366",
@@ -3714,7 +5122,15 @@
       "0": "15 is too high. The correct answer is 12.",
       "1": "11 is too low. The correct answer is 12.",
       "3": "13 is too high. The correct answer is 12."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 0.45,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 0.45,
+    "irt_c": 0.25
   },
   {
     "id": "T2-369",
@@ -3735,7 +5151,15 @@
       "0": "Not ÷ — think about why - is the right answer.",
       "2": "Not + — think about why - is the right answer.",
       "3": "Not × — think about why - is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 0.5,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 0.5,
+    "irt_c": 0.25
   },
   {
     "id": "T2-373",
@@ -3756,7 +5180,15 @@
       "0": "12 is too low. The correct answer is 13.",
       "2": "11 is too low. The correct answer is 13.",
       "3": "9 is too low. The correct answer is 13."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 0.25,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 0.25,
+    "irt_c": 0.25
   },
   {
     "id": "T2-380",
@@ -3777,7 +5209,15 @@
       "1": "18 is too high. The correct answer is 16.",
       "2": "12 is too low. The correct answer is 16.",
       "3": "20 is too high. The correct answer is 16."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.4,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.4,
+    "irt_c": 0.25
   },
   {
     "id": "T2-385",
@@ -3798,7 +5238,15 @@
       "1": "18 is too high. The correct answer is 15.",
       "2": "17 is too high. The correct answer is 15.",
       "3": "13 is too low. The correct answer is 15."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.25,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.25,
+    "irt_c": 0.25
   },
   {
     "id": "T2-406",
@@ -3819,7 +5267,15 @@
       "0": "Not + — think about why - is the right answer.",
       "2": "Not × — think about why - is the right answer.",
       "3": "Not ÷ — think about why - is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 0.9,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 0.9,
+    "irt_c": 0.25
   },
   {
     "id": "T2-408",
@@ -3840,7 +5296,15 @@
       "0": "10 is too low. The correct answer is 11.",
       "2": "15 is too high. The correct answer is 11.",
       "3": "9 is too low. The correct answer is 11."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 0.25,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 0.25,
+    "irt_c": 0.25
   },
   {
     "id": "T2-412",
@@ -3861,7 +5325,15 @@
       "0": "1 is too low. The correct answer is 2.",
       "1": "4 is too high. The correct answer is 2.",
       "2": "0 is too low. The correct answer is 2."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 0.8,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 0.8,
+    "irt_c": 0.25
   },
   {
     "id": "T2-419",
@@ -3882,7 +5354,15 @@
       "0": "5 is too low. The correct answer is 6.",
       "2": "2 is too low. The correct answer is 6.",
       "3": "4 is too low. The correct answer is 6."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.35,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.35,
+    "irt_c": 0.25
   },
   {
     "id": "T2-431",
@@ -3903,7 +5383,15 @@
       "0": "18 is too high. The correct answer is 14.",
       "2": "11 is too low. The correct answer is 14.",
       "3": "10 is too low. The correct answer is 14."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 0.1,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 0.1,
+    "irt_c": 0.25
   },
   {
     "id": "T2-450",
@@ -3924,7 +5412,15 @@
       "1": "8 is too high. The correct answer is 6.",
       "2": "7 is too high. The correct answer is 6.",
       "3": "9 is too high. The correct answer is 6."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 0.55,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 0.55,
+    "irt_c": 0.25
   },
   {
     "id": "T2-452",
@@ -3945,7 +5441,15 @@
       "1": "19 is too high. The correct answer is 17.",
       "2": "15 is too low. The correct answer is 17.",
       "3": "18 is too high. The correct answer is 17."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 0.9,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 0.9,
+    "irt_c": 0.25
   },
   {
     "id": "T2-453",
@@ -3966,7 +5470,15 @@
       "0": "17 is too high. The correct answer is 14.",
       "2": "16 is too high. The correct answer is 14.",
       "3": "12 is too low. The correct answer is 14."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 0.6,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 0.6,
+    "irt_c": 0.25
   },
   {
     "id": "T2-476",
@@ -3987,7 +5499,15 @@
       "0": "18 is too low. The correct answer is 19.",
       "1": "22 is too high. The correct answer is 19.",
       "2": "16 is too low. The correct answer is 19."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.4,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.4,
+    "irt_c": 0.25
   },
   {
     "id": "T2-482",
@@ -4008,7 +5528,15 @@
       "0": "11 is too high. The correct answer is 9.",
       "1": "13 is too high. The correct answer is 9.",
       "2": "8 is too low. The correct answer is 9."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.3,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.3,
+    "irt_c": 0.25
   },
   {
     "id": "T2-490",
@@ -4029,7 +5557,15 @@
       "0": "13 is too high. The correct answer is 12.",
       "2": "15 is too high. The correct answer is 12.",
       "3": "11 is too low. The correct answer is 12."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 0.8,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 0.8,
+    "irt_c": 0.25
   },
   {
     "id": "T2-495",
@@ -4050,7 +5586,15 @@
       "0": "1 is too low. The correct answer is 4.",
       "2": "0 is too low. The correct answer is 4.",
       "3": "3 is too low. The correct answer is 4."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 0.2,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 0.2,
+    "irt_c": 0.25
   },
   {
     "id": "T2-496",
@@ -4071,7 +5615,15 @@
       "1": "4 is too low. The correct answer is 7.",
       "2": "11 is too high. The correct answer is 7.",
       "3": "9 is too high. The correct answer is 7."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.4,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.4,
+    "irt_c": 0.25
   },
   {
     "id": "T2-508",
@@ -4092,7 +5644,15 @@
       "0": "20 is too high. The correct answer is 15.",
       "1": "14 is too low. The correct answer is 15.",
       "3": "13 is too low. The correct answer is 15."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.2,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.2,
+    "irt_c": 0.25
   },
   {
     "id": "T2-509",
@@ -4113,7 +5673,15 @@
       "1": "15 is too high. The correct answer is 12.",
       "2": "8 is too low. The correct answer is 12.",
       "3": "10 is too low. The correct answer is 12."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.55,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.55,
+    "irt_c": 0.25
   },
   {
     "id": "T2-510",
@@ -4134,7 +5702,15 @@
       "0": "19 is too low. The correct answer is 20.",
       "1": "23 is too high. The correct answer is 20.",
       "3": "21 is too high. The correct answer is 20."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.95,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.95,
+    "irt_c": 0.25
   },
   {
     "id": "T2-513",
@@ -4155,7 +5731,15 @@
       "0": "37 is too high. The correct answer is 33.",
       "2": "35 is too high. The correct answer is 33.",
       "3": "28 is too low. The correct answer is 33."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.95,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.95,
+    "irt_c": 0.25
   },
   {
     "id": "T2-516",
@@ -4176,7 +5760,15 @@
       "0": "25 is too high. The correct answer is 24.",
       "1": "19 is too low. The correct answer is 24.",
       "2": "22 is too low. The correct answer is 24."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.8,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.8,
+    "irt_c": 0.25
   },
   {
     "id": "T2-527",
@@ -4197,7 +5789,15 @@
       "0": "26 is too high. The correct answer is 24.",
       "1": "29 is too high. The correct answer is 24.",
       "2": "20 is too low. The correct answer is 24."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.25,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.25,
+    "irt_c": 0.25
   },
   {
     "id": "T2-533",
@@ -4218,7 +5818,15 @@
       "1": "31 is too high. The correct answer is 26.",
       "2": "24 is too low. The correct answer is 26.",
       "3": "21 is too low. The correct answer is 26."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 2.0,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 2.0,
+    "irt_c": 0.25
   },
   {
     "id": "T2-536",
@@ -4239,7 +5847,15 @@
       "0": "20 is too high. The correct answer is 15.",
       "2": "19 is too high. The correct answer is 15.",
       "3": "11 is too low. The correct answer is 15."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.85,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.85,
+    "irt_c": 0.25
   },
   {
     "id": "T2-540",
@@ -4260,7 +5876,15 @@
       "0": "38 is too high. The correct answer is 34.",
       "1": "39 is too high. The correct answer is 34.",
       "2": "32 is too low. The correct answer is 34."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.45,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.45,
+    "irt_c": 0.25
   },
   {
     "id": "T2-557",
@@ -4281,7 +5905,15 @@
       "0": "34 is too high. The correct answer is 30.",
       "1": "27 is too low. The correct answer is 30.",
       "3": "25 is too low. The correct answer is 30."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.6,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.6,
+    "irt_c": 0.25
   },
   {
     "id": "T2-560",
@@ -4302,7 +5934,15 @@
       "0": "36 is too low. The correct answer is 40.",
       "1": "37 is too low. The correct answer is 40.",
       "3": "44 is too high. The correct answer is 40."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.5,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.5,
+    "irt_c": 0.25
   },
   {
     "id": "T2-564",
@@ -4323,7 +5963,15 @@
       "1": "14 is too low. The correct answer is 16.",
       "2": "18 is too high. The correct answer is 16.",
       "3": "12 is too low. The correct answer is 16."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.75,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.75,
+    "irt_c": 0.25
   },
   {
     "id": "T2-566",
@@ -4344,7 +5992,15 @@
       "1": "27 is too low. The correct answer is 31.",
       "2": "36 is too high. The correct answer is 31.",
       "3": "29 is too low. The correct answer is 31."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.7,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.7,
+    "irt_c": 0.25
   },
   {
     "id": "T2-569",
@@ -4365,7 +6021,15 @@
       "1": "43 is too low. The correct answer is 46.",
       "2": "44 is too low. The correct answer is 46.",
       "3": "49 is too high. The correct answer is 46."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.9,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.9,
+    "irt_c": 0.25
   },
   {
     "id": "T2-580",
@@ -4386,7 +6050,15 @@
       "0": "70 is too high. The correct answer is 65.",
       "1": "64 is too low. The correct answer is 65.",
       "2": "60 is too low. The correct answer is 65."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.85,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.85,
+    "irt_c": 0.25
   },
   {
     "id": "T2-581",
@@ -4407,7 +6079,15 @@
       "1": "23 is too high. The correct answer is 18.",
       "2": "15 is too low. The correct answer is 18.",
       "3": "22 is too high. The correct answer is 18."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.2,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.2,
+    "irt_c": 0.25
   },
   {
     "id": "T2-589",
@@ -4428,7 +6108,15 @@
       "0": "18 is too high. The correct answer is 14.",
       "2": "9 is too low. The correct answer is 14.",
       "3": "16 is too high. The correct answer is 14."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.45,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.45,
+    "irt_c": 0.25
   },
   {
     "id": "T2-591",
@@ -4449,7 +6137,15 @@
       "1": "15 is too low. The correct answer is 19.",
       "2": "22 is too high. The correct answer is 19.",
       "3": "23 is too high. The correct answer is 19."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.3,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.3,
+    "irt_c": 0.25
   },
   {
     "id": "T2-594",
@@ -4470,7 +6166,15 @@
       "1": "24 is too low. The correct answer is 27.",
       "2": "32 is too high. The correct answer is 27.",
       "3": "25 is too low. The correct answer is 27."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.25,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.25,
+    "irt_c": 0.25
   },
   {
     "id": "T2-595",
@@ -4491,7 +6195,15 @@
       "0": "25 is too high. The correct answer is 20.",
       "1": "16 is too low. The correct answer is 20.",
       "2": "24 is too high. The correct answer is 20."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.3,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.3,
+    "irt_c": 0.25
   },
   {
     "id": "T2-596",
@@ -4512,7 +6224,15 @@
       "1": "57 is too low. The correct answer is 59.",
       "2": "58 is too low. The correct answer is 59.",
       "3": "56 is too low. The correct answer is 59."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.2,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.2,
+    "irt_c": 0.25
   },
   {
     "id": "PAT-025",
@@ -4533,7 +6253,15 @@
       "0": "21 is too high. The correct answer is 20.",
       "2": "19 is too low. The correct answer is 20.",
       "3": "22 is too high. The correct answer is 20."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.75,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.75,
+    "irt_c": 0.25
   },
   {
     "id": "PAT-026",
@@ -4554,7 +6282,15 @@
       "1": "Not Blue — think about why Red is the right answer.",
       "2": "Not White — think about why Red is the right answer.",
       "3": "Not Black — think about why Red is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.7,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.7,
+    "irt_c": 0.25
   },
   {
     "id": "PAT-027",
@@ -4575,7 +6311,15 @@
       "0": "Not Yellow — think about why Green is the right answer.",
       "1": "Not White — think about why Green is the right answer.",
       "3": "Not Black — think about why Green is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.65,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.65,
+    "irt_c": 0.25
   },
   {
     "id": "PAT-028",
@@ -4596,7 +6340,15 @@
       "0": "Not Black — think about why Purple is the right answer.",
       "1": "Not Orange — think about why Purple is the right answer.",
       "3": "Not White — think about why Purple is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.6,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.6,
+    "irt_c": 0.25
   },
   {
     "id": "PAT-029",
@@ -4617,7 +6369,15 @@
       "1": "Not White — think about why Blue is the right answer.",
       "2": "Not Black — think about why Blue is the right answer.",
       "3": "Not Pink — think about why Blue is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.55,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.55,
+    "irt_c": 0.25
   },
   {
     "id": "PAT-030",
@@ -4638,7 +6398,15 @@
       "1": "Not Green — think about why Red is the right answer.",
       "2": "Not White — think about why Red is the right answer.",
       "3": "Not Black — think about why Red is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.5,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.5,
+    "irt_c": 0.25
   },
   {
     "id": "PAT-031",
@@ -4659,7 +6427,15 @@
       "1": "Not Big — think about why Small is the right answer.",
       "2": "Not Medium — think about why Small is the right answer.",
       "3": "Not Tiny — think about why Small is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.45,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.45,
+    "irt_c": 0.25
   },
   {
     "id": "PAT-032",
@@ -4680,7 +6456,15 @@
       "1": "Not Big — think about why Small is the right answer.",
       "2": "Not Tiny — think about why Small is the right answer.",
       "3": "Not Medium — think about why Small is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.4,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.4,
+    "irt_c": 0.25
   },
   {
     "id": "PAT-033",
@@ -4701,7 +6485,15 @@
       "1": "Not Tiny — think about why Small is the right answer.",
       "2": "Not Big — think about why Small is the right answer.",
       "3": "Not Medium — think about why Small is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.35,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.35,
+    "irt_c": 0.25
   },
   {
     "id": "PAT-034",
@@ -4722,7 +6514,15 @@
       "0": "Not Tiny — think about why Small is the right answer.",
       "1": "Not Medium — think about why Small is the right answer.",
       "3": "Not Big — think about why Small is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.3,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.3,
+    "irt_c": 0.25
   },
   {
     "id": "PAT-035",
@@ -4743,7 +6543,15 @@
       "0": "Not Big — think about why Small is the right answer.",
       "1": "Not Tiny — think about why Small is the right answer.",
       "3": "Not Medium — think about why Small is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.25,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.25,
+    "irt_c": 0.25
   },
   {
     "id": "T3-383",
@@ -4764,7 +6572,15 @@
       "0": "62 is too low. The correct answer is 64.",
       "1": "59 is too low. The correct answer is 64.",
       "3": "58 is too low. The correct answer is 64."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.6,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.6,
+    "irt_c": 0.25
   },
   {
     "id": "T3-384",
@@ -4785,7 +6601,15 @@
       "1": "33 is too high. The correct answer is 28.",
       "2": "36 is too high. The correct answer is 28.",
       "3": "32 is too high. The correct answer is 28."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.05,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.05,
+    "irt_c": 0.25
   },
   {
     "id": "T3-388",
@@ -4806,7 +6630,15 @@
       "0": "40 is too high. The correct answer is 32.",
       "1": "34 is too high. The correct answer is 32.",
       "3": "29 is too low. The correct answer is 32."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.9,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.9,
+    "irt_c": 0.25
   },
   {
     "id": "T3-393",
@@ -4827,7 +6659,15 @@
       "0": "11 is too low. The correct answer is 17.",
       "1": "23 is too high. The correct answer is 17.",
       "2": "21 is too high. The correct answer is 17."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.05,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.05,
+    "irt_c": 0.25
   },
   {
     "id": "T3-399",
@@ -4848,7 +6688,15 @@
       "0": "44 is too low. The correct answer is 45.",
       "1": "53 is too high. The correct answer is 45.",
       "3": "38 is too low. The correct answer is 45."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.25,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.25,
+    "irt_c": 0.25
   },
   {
     "id": "T3-400",
@@ -4869,7 +6717,15 @@
       "1": "190 is too low. The correct answer is 192.",
       "2": "191 is too low. The correct answer is 192.",
       "3": "199 is too high. The correct answer is 192."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.75,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.75,
+    "irt_c": 0.25
   },
   {
     "id": "T3-404",
@@ -4890,7 +6746,15 @@
       "0": "40 is too high. The correct answer is 32.",
       "1": "38 is too high. The correct answer is 32.",
       "2": "35 is too high. The correct answer is 32."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.25,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.25,
+    "irt_c": 0.25
   },
   {
     "id": "T3-406",
@@ -4911,7 +6775,15 @@
       "0": "70 is too high. The correct answer is 64.",
       "2": "69 is too high. The correct answer is 64.",
       "3": "63 is too low. The correct answer is 64."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.9,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.9,
+    "irt_c": 0.25
   },
   {
     "id": "T3-408",
@@ -4932,7 +6804,15 @@
       "0": "58 is too low. The correct answer is 64.",
       "1": "56 is too low. The correct answer is 64.",
       "2": "69 is too high. The correct answer is 64."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.55,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.55,
+    "irt_c": 0.25
   },
   {
     "id": "T3-414",
@@ -4953,7 +6833,15 @@
       "0": "58 is too low. The correct answer is 64.",
       "1": "56 is too low. The correct answer is 64.",
       "2": "61 is too low. The correct answer is 64."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.4,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.4,
+    "irt_c": 0.25
   },
   {
     "id": "T3-415",
@@ -4974,7 +6862,15 @@
       "0": "4 is too low. The correct answer is 12.",
       "1": "18 is too high. The correct answer is 12.",
       "3": "20 is too high. The correct answer is 12."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 0.45,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 0.45,
+    "irt_c": 0.25
   },
   {
     "id": "T3-419",
@@ -4995,7 +6891,15 @@
       "0": "56 is too low. The correct answer is 64.",
       "1": "65 is too high. The correct answer is 64.",
       "2": "67 is too high. The correct answer is 64."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.35,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.35,
+    "irt_c": 0.25
   },
   {
     "id": "T3-420",
@@ -5016,7 +6920,15 @@
       "0": "71 is too high. The correct answer is 64.",
       "1": "65 is too high. The correct answer is 64.",
       "3": "70 is too high. The correct answer is 64."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.8,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.8,
+    "irt_c": 0.25
   },
   {
     "id": "T3-426",
@@ -5037,7 +6949,15 @@
       "0": "238 is too low. The correct answer is 243.",
       "2": "237 is too low. The correct answer is 243.",
       "3": "248 is too high. The correct answer is 243."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.7,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.7,
+    "irt_c": 0.25
   },
   {
     "id": "T3-427",
@@ -5058,7 +6978,15 @@
       "0": "27 is too low. The correct answer is 28.",
       "1": "20 is too low. The correct answer is 28.",
       "2": "24 is too low. The correct answer is 28."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.2,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.2,
+    "irt_c": 0.25
   },
   {
     "id": "T3-433",
@@ -5079,7 +7007,15 @@
       "0": "184 is too low. The correct answer is 192.",
       "1": "185 is too low. The correct answer is 192.",
       "3": "196 is too high. The correct answer is 192."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.0,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.0,
+    "irt_c": 0.25
   },
   {
     "id": "T3-435",
@@ -5100,7 +7036,15 @@
       "0": "108 is too high. The correct answer is 100.",
       "1": "93 is too low. The correct answer is 100.",
       "2": "103 is too high. The correct answer is 100."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.0,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.0,
+    "irt_c": 0.25
   },
   {
     "id": "T3-444",
@@ -5121,7 +7065,15 @@
       "0": "186 is too low. The correct answer is 192.",
       "1": "194 is too high. The correct answer is 192.",
       "3": "198 is too high. The correct answer is 192."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.2,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.2,
+    "irt_c": 0.25
   },
   {
     "id": "T3-451",
@@ -5142,7 +7094,15 @@
       "0": "20 is too high. The correct answer is 17.",
       "1": "22 is too high. The correct answer is 17.",
       "2": "9 is too low. The correct answer is 17."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.05,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.05,
+    "irt_c": 0.25
   },
   {
     "id": "T3-454",
@@ -5163,7 +7123,15 @@
       "0": "97 is too low. The correct answer is 100.",
       "1": "101 is too high. The correct answer is 100.",
       "3": "102 is too high. The correct answer is 100."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.15,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.15,
+    "irt_c": 0.25
   },
   {
     "id": "T3-459",
@@ -5184,7 +7152,15 @@
       "0": "13 is too high. The correct answer is 12.",
       "1": "4 is too low. The correct answer is 12.",
       "2": "15 is too high. The correct answer is 12."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 0.45,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 0.45,
+    "irt_c": 0.25
   },
   {
     "id": "T3-462",
@@ -5205,7 +7181,15 @@
       "1": "7 is too low. The correct answer is 12.",
       "2": "14 is too high. The correct answer is 12.",
       "3": "10 is too low. The correct answer is 12."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 2.0,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 2.0,
+    "irt_c": 0.25
   },
   {
     "id": "T3-464",
@@ -5226,7 +7210,15 @@
       "0": "35 is too high. The correct answer is 28.",
       "2": "32 is too high. The correct answer is 28.",
       "3": "30 is too high. The correct answer is 28."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 0.9,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 0.9,
+    "irt_c": 0.25
   },
   {
     "id": "T3-468",
@@ -5247,7 +7239,15 @@
       "0": "13 is too low. The correct answer is 17.",
       "1": "12 is too low. The correct answer is 17.",
       "3": "9 is too low. The correct answer is 17."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.6,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.6,
+    "irt_c": 0.25
   },
   {
     "id": "T3-478",
@@ -5268,7 +7268,15 @@
       "0": "14 is too high. The correct answer is 12.",
       "2": "5 is too low. The correct answer is 12.",
       "3": "4 is too low. The correct answer is 12."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.95,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.95,
+    "irt_c": 0.25
   },
   {
     "id": "T3-483",
@@ -5289,7 +7297,15 @@
       "0": "70 is too high. The correct answer is 64.",
       "1": "72 is too high. The correct answer is 64.",
       "3": "68 is too high. The correct answer is 64."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.65,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.65,
+    "irt_c": 0.25
   },
   {
     "id": "T3-485",
@@ -5310,7 +7326,15 @@
       "0": "53 is too high. The correct answer is 45.",
       "2": "46 is too high. The correct answer is 45.",
       "3": "37 is too low. The correct answer is 45."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.6,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.6,
+    "irt_c": 0.25
   },
   {
     "id": "T3-488",
@@ -5331,7 +7355,15 @@
       "0": "11 is too low. The correct answer is 17.",
       "2": "23 is too high. The correct answer is 17.",
       "3": "20 is too high. The correct answer is 17."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.05,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.05,
+    "irt_c": 0.25
   },
   {
     "id": "T3-506",
@@ -5352,7 +7384,15 @@
       "0": "240 is too low. The correct answer is 243.",
       "1": "251 is too high. The correct answer is 243.",
       "2": "245 is too high. The correct answer is 243."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.15,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.15,
+    "irt_c": 0.25
   },
   {
     "id": "T3-513",
@@ -5373,7 +7413,15 @@
       "0": "21 is too low. The correct answer is 28.",
       "1": "33 is too high. The correct answer is 28.",
       "3": "29 is too high. The correct answer is 28."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.95,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.95,
+    "irt_c": 0.25
   },
   {
     "id": "T3-524",
@@ -5394,7 +7442,15 @@
       "0": "46 is too high. The correct answer is 45.",
       "1": "49 is too high. The correct answer is 45.",
       "3": "52 is too high. The correct answer is 45."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.25,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.25,
+    "irt_c": 0.25
   },
   {
     "id": "T3-525",
@@ -5415,7 +7471,15 @@
       "1": "39 is too low. The correct answer is 45.",
       "2": "41 is too low. The correct answer is 45.",
       "3": "49 is too high. The correct answer is 45."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.6,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.6,
+    "irt_c": 0.25
   },
   {
     "id": "T3-526",
@@ -5436,7 +7500,15 @@
       "0": "196 is too high. The correct answer is 192.",
       "2": "195 is too high. The correct answer is 192.",
       "3": "191 is too low. The correct answer is 192."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.6,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.6,
+    "irt_c": 0.25
   },
   {
     "id": "T3-533",
@@ -5457,7 +7529,15 @@
       "1": "66 is too high. The correct answer is 64.",
       "2": "72 is too high. The correct answer is 64.",
       "3": "65 is too high. The correct answer is 64."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 0.3,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 0.3,
+    "irt_c": 0.25
   },
   {
     "id": "T3-540",
@@ -5478,7 +7558,15 @@
       "0": "236 is too low. The correct answer is 243.",
       "1": "250 is too high. The correct answer is 243.",
       "2": "248 is too high. The correct answer is 243."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.7,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.7,
+    "irt_c": 0.25
   },
   {
     "id": "T3-544",
@@ -5499,7 +7587,15 @@
       "0": "8 is too low. The correct answer is 12.",
       "2": "10 is too low. The correct answer is 12.",
       "3": "7 is too low. The correct answer is 12."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.85,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.85,
+    "irt_c": 0.25
   },
   {
     "id": "T3-552",
@@ -5520,7 +7616,15 @@
       "0": "92 is too low. The correct answer is 100.",
       "2": "94 is too low. The correct answer is 100.",
       "3": "102 is too high. The correct answer is 100."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.95,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.95,
+    "irt_c": 0.25
   },
   {
     "id": "T3-556",
@@ -5541,7 +7645,15 @@
       "0": "15 is too low. The correct answer is 17.",
       "1": "18 is too high. The correct answer is 17.",
       "3": "11 is too low. The correct answer is 17."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.85,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.85,
+    "irt_c": 0.25
   },
   {
     "id": "T3-557",
@@ -5562,7 +7674,15 @@
       "0": "39 is too high. The correct answer is 32.",
       "1": "34 is too high. The correct answer is 32.",
       "2": "28 is too low. The correct answer is 32."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.45,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.45,
+    "irt_c": 0.25
   },
   {
     "id": "T3-568",
@@ -5583,7 +7703,15 @@
       "1": "33 is too high. The correct answer is 32.",
       "2": "36 is too high. The correct answer is 32.",
       "3": "31 is too low. The correct answer is 32."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.3,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.3,
+    "irt_c": 0.25
   },
   {
     "id": "T3-570",
@@ -5604,7 +7732,15 @@
       "0": "42 is too low. The correct answer is 45.",
       "1": "38 is too low. The correct answer is 45.",
       "2": "53 is too high. The correct answer is 45."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 0.7,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 0.7,
+    "irt_c": 0.25
   },
   {
     "id": "T3-575",
@@ -5625,7 +7761,15 @@
       "0": "32 is too high. The correct answer is 28.",
       "2": "22 is too low. The correct answer is 28.",
       "3": "20 is too low. The correct answer is 28."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 0.15,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 0.15,
+    "irt_c": 0.25
   },
   {
     "id": "T3-577",
@@ -5646,7 +7790,15 @@
       "0": "95 is too low. The correct answer is 100.",
       "1": "92 is too low. The correct answer is 100.",
       "3": "105 is too high. The correct answer is 100."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.95,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.95,
+    "irt_c": 0.25
   },
   {
     "id": "T3-579",
@@ -5667,7 +7819,15 @@
       "0": "235 is too low. The correct answer is 243.",
       "1": "244 is too high. The correct answer is 243.",
       "3": "237 is too low. The correct answer is 243."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.85,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.85,
+    "irt_c": 0.25
   },
   {
     "id": "T3-580",
@@ -5688,7 +7848,15 @@
       "0": "25 is too low. The correct answer is 32.",
       "1": "38 is too high. The correct answer is 32.",
       "2": "28 is too low. The correct answer is 32."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.35,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.35,
+    "irt_c": 0.25
   },
   {
     "id": "T3-602",
@@ -5709,7 +7877,15 @@
       "0": "33 is too high. The correct answer is 32.",
       "2": "26 is too low. The correct answer is 32.",
       "3": "27 is too low. The correct answer is 32."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.85,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.85,
+    "irt_c": 0.25
   },
   {
     "id": "T4-029",
@@ -5730,7 +7906,15 @@
       "0": "Not 7 steps — think about why 3 steps is the right answer.",
       "2": "Not 5 steps — think about why 3 steps is the right answer.",
       "3": "Not 2 steps — think about why 3 steps is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.55,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.55,
+    "irt_c": 0.25
   },
   {
     "id": "T4-034",
@@ -5751,7 +7935,15 @@
       "0": "Not Either one — think about why Neither Aditi nor Vikram is the right answer.",
       "2": "Not Only Vikram — think about why Neither Aditi nor Vikram is the right answer.",
       "3": "Not Only Aditi — think about why Neither Aditi nor Vikram is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.3,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.3,
+    "irt_c": 0.25
   },
   {
     "id": "T4-041",
@@ -5772,7 +7964,15 @@
       "0": "Not Guitar — think about why Piano is the right answer.",
       "1": "Not None of these — think about why Piano is the right answer.",
       "3": "Not Drums — think about why Piano is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.95,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.95,
+    "irt_c": 0.25
   },
   {
     "id": "T4-042",
@@ -5793,7 +7993,15 @@
       "0": "Not Chin — think about why Dev is the right answer.",
       "1": "Not Anu — think about why Dev is the right answer.",
       "2": "Not Bo — think about why Dev is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.9,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.9,
+    "irt_c": 0.25
   },
   {
     "id": "T4-046",
@@ -5814,7 +8022,15 @@
       "1": "3 is too low. The correct answer is 6.",
       "2": "4 is too low. The correct answer is 6.",
       "3": "5 is too low. The correct answer is 6."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.7,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.7,
+    "irt_c": 0.25
   },
   {
     "id": "T4-047",
@@ -5835,7 +8051,15 @@
       "1": "Not 1 cat — think about why 3 rabbits is the right answer.",
       "2": "Not Cannot tell — think about why 3 rabbits is the right answer.",
       "3": "Not They are equal — think about why 3 rabbits is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.65,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.65,
+    "irt_c": 0.25
   },
   {
     "id": "T4-048",
@@ -5856,7 +8080,15 @@
       "0": "9 is too high. The correct answer is 6.",
       "2": "5 is too low. The correct answer is 6.",
       "3": "4 is too low. The correct answer is 6."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.6,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.6,
+    "irt_c": 0.25
   },
   {
     "id": "T4-049",
@@ -5877,7 +8109,15 @@
       "1": "3 is too high. The correct answer is 2.",
       "2": "1 is too low. The correct answer is 2.",
       "3": "4 is too high. The correct answer is 2."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.55,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.55,
+    "irt_c": 0.25
   },
   {
     "id": "T4-050",
@@ -5898,7 +8138,15 @@
       "0": "3 is too low. The correct answer is 6.",
       "2": "5 is too low. The correct answer is 6.",
       "3": "4 is too low. The correct answer is 6."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.5,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.5,
+    "irt_c": 0.25
   },
   {
     "id": "T4-052",
@@ -5919,7 +8167,15 @@
       "0": "3 is too low. The correct answer is 6.",
       "1": "5 is too low. The correct answer is 6.",
       "2": "4 is too low. The correct answer is 6."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.4,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.4,
+    "irt_c": 0.25
   },
   {
     "id": "T4-056",
@@ -5940,7 +8196,15 @@
       "1": "6 is too high. The correct answer is 4.",
       "2": "3 is too low. The correct answer is 4.",
       "3": "2 is too low. The correct answer is 4."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.2,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.2,
+    "irt_c": 0.25
   },
   {
     "id": "T4-061",
@@ -5961,7 +8225,15 @@
       "0": "Not Date — think about why Cherry is the right answer.",
       "1": "Not Apple — think about why Cherry is the right answer.",
       "3": "Not Banana — think about why Cherry is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 0.05,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 0.05,
+    "irt_c": 0.25
   },
   {
     "id": "T4-063",
@@ -5982,7 +8254,15 @@
       "1": "Not Fish — think about why Dog is the right answer.",
       "2": "Not Cat — think about why Dog is the right answer.",
       "3": "Not None of these — think about why Dog is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 0.15,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 0.15,
+    "irt_c": 0.25
   },
   {
     "id": "T4-072",
@@ -6003,7 +8283,15 @@
       "0": "Not Anu — think about why Dev is the right answer.",
       "2": "Not Cannot tell — think about why Dev is the right answer.",
       "3": "Not Bo — think about why Dev is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 0.6,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 0.6,
+    "irt_c": 0.25
   },
   {
     "id": "T4-085",
@@ -6024,7 +8312,15 @@
       "0": "Not Dog — think about why Fish is the right answer.",
       "2": "Not None of these — think about why Fish is the right answer.",
       "3": "Not Cat — think about why Fish is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.25,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.25,
+    "irt_c": 0.25
   },
   {
     "id": "T4-099",
@@ -6045,7 +8341,15 @@
       "0": "1 is too low. The correct answer is 2.",
       "2": "4 is too high. The correct answer is 2.",
       "3": "3 is too high. The correct answer is 2."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.95,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.95,
+    "irt_c": 0.25
   },
   {
     "id": "T4-509",
@@ -6066,7 +8370,15 @@
       "1": "4 is too low. The correct answer is 5.",
       "2": "8 is too high. The correct answer is 5.",
       "3": "6 is too high. The correct answer is 5."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.7,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.7,
+    "irt_c": 0.25
   },
   {
     "id": "T4-513",
@@ -6087,7 +8399,15 @@
       "1": "2 is too low. The correct answer is 3.",
       "2": "6 is too high. The correct answer is 3.",
       "3": "7 is too high. The correct answer is 3."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.85,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.85,
+    "irt_c": 0.25
   },
   {
     "id": "T4-514",
@@ -6108,7 +8428,15 @@
       "1": "0 is too low. The correct answer is 2.",
       "2": "4 is too high. The correct answer is 2.",
       "3": "5 is too high. The correct answer is 2."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.25,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.25,
+    "irt_c": 0.25
   },
   {
     "id": "T4-515",
@@ -6129,7 +8457,15 @@
       "1": "10 is too low. The correct answer is 12.",
       "2": "8 is too low. The correct answer is 12.",
       "3": "13 is too high. The correct answer is 12."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.85,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.85,
+    "irt_c": 0.25
   },
   {
     "id": "T4-516",
@@ -6150,7 +8486,15 @@
       "0": "11 is too high. The correct answer is 10.",
       "1": "13 is too high. The correct answer is 10.",
       "2": "14 is too high. The correct answer is 10."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.5,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.5,
+    "irt_c": 0.25
   },
   {
     "id": "T4-518",
@@ -6171,7 +8515,15 @@
       "1": "6 is too high. The correct answer is 4.",
       "2": "8 is too high. The correct answer is 4.",
       "3": "5 is too high. The correct answer is 4."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.55,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.55,
+    "irt_c": 0.25
   },
   {
     "id": "T4-521",
@@ -6192,7 +8544,15 @@
       "0": "15 is too high. The correct answer is 11.",
       "1": "13 is too high. The correct answer is 11.",
       "3": "9 is too low. The correct answer is 11."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.25,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.25,
+    "irt_c": 0.25
   },
   {
     "id": "T4-522",
@@ -6213,7 +8573,15 @@
       "0": "2 is too low. The correct answer is 6.",
       "1": "7 is too high. The correct answer is 6.",
       "2": "5 is too low. The correct answer is 6."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.75,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.75,
+    "irt_c": 0.25
   },
   {
     "id": "T4-523",
@@ -6234,7 +8602,15 @@
       "1": "9 is too high. The correct answer is 8.",
       "2": "10 is too high. The correct answer is 8.",
       "3": "4 is too low. The correct answer is 8."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.25,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.25,
+    "irt_c": 0.25
   },
   {
     "id": "T4-525",
@@ -6255,7 +8631,15 @@
       "0": "12 is too high. The correct answer is 9.",
       "1": "11 is too high. The correct answer is 9.",
       "3": "13 is too high. The correct answer is 9."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.45,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.45,
+    "irt_c": 0.25
   },
   {
     "id": "T4-526",
@@ -6276,7 +8660,15 @@
       "0": "20 is too high. The correct answer is 17.",
       "2": "16 is too low. The correct answer is 17.",
       "3": "14 is too low. The correct answer is 17."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.3,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.3,
+    "irt_c": 0.25
   },
   {
     "id": "T4-527",
@@ -6297,7 +8689,15 @@
       "0": "3 is too low. The correct answer is 5.",
       "1": "8 is too high. The correct answer is 5.",
       "3": "7 is too high. The correct answer is 5."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.45,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.45,
+    "irt_c": 0.25
   },
   {
     "id": "T4-529",
@@ -6318,7 +8718,15 @@
       "0": "8 is too high. The correct answer is 6.",
       "1": "10 is too high. The correct answer is 6.",
       "3": "3 is too low. The correct answer is 6."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.85,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.85,
+    "irt_c": 0.25
   },
   {
     "id": "T4-531",
@@ -6339,7 +8747,15 @@
       "0": "11 is too high. The correct answer is 9.",
       "1": "10 is too high. The correct answer is 9.",
       "2": "6 is too low. The correct answer is 9."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.8,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.8,
+    "irt_c": 0.25
   },
   {
     "id": "T4-532",
@@ -6360,7 +8776,15 @@
       "0": "8 is too high. The correct answer is 7.",
       "1": "10 is too high. The correct answer is 7.",
       "3": "4 is too low. The correct answer is 7."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.25,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.25,
+    "irt_c": 0.25
   },
   {
     "id": "T4-533",
@@ -6381,7 +8805,15 @@
       "0": "14 is too low. The correct answer is 15.",
       "1": "11 is too low. The correct answer is 15.",
       "3": "13 is too low. The correct answer is 15."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.65,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.65,
+    "irt_c": 0.25
   },
   {
     "id": "T4-536",
@@ -6402,7 +8834,15 @@
       "0": "22 is too high. The correct answer is 18.",
       "2": "15 is too low. The correct answer is 18.",
       "3": "17 is too low. The correct answer is 18."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.95,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.95,
+    "irt_c": 0.25
   },
   {
     "id": "SPA-001",
@@ -6423,7 +8863,15 @@
       "1": "Not Right — think about why Left is the right answer.",
       "2": "Not Both — think about why Left is the right answer.",
       "3": "Not Neither — think about why Left is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.95,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.95,
+    "irt_c": 0.25
   },
   {
     "id": "SPA-002",
@@ -6444,7 +8892,15 @@
       "0": "Not Left of the tree — think about why Right of the tree is the right answer.",
       "1": "Not Behind the tree — think about why Right of the tree is the right answer.",
       "2": "Not On top of the tree — think about why Right of the tree is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.9,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.9,
+    "irt_c": 0.25
   },
   {
     "id": "SPA-003",
@@ -6465,7 +8921,15 @@
       "1": "Not Above you — think about why Right side is the right answer.",
       "2": "Not Below you — think about why Right side is the right answer.",
       "3": "Not Left side — think about why Right side is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.85,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.85,
+    "irt_c": 0.25
   },
   {
     "id": "SPA-004",
@@ -6486,7 +8950,15 @@
       "1": "Not Above — think about why To the right is the right answer.",
       "2": "Not Below — think about why To the right is the right answer.",
       "3": "Not To the left — think about why To the right is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.8,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.8,
+    "irt_c": 0.25
   },
   {
     "id": "SPA-005",
@@ -6507,7 +8979,15 @@
       "1": "Not Above — think about why On the right is the right answer.",
       "2": "Not On the left — think about why On the right is the right answer.",
       "3": "Not Behind — think about why On the right is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.75,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.75,
+    "irt_c": 0.25
   },
   {
     "id": "SPA-008",
@@ -6528,7 +9008,15 @@
       "0": "Not Behind the house — think about why Above the house is the right answer.",
       "1": "Not Below the house — think about why Above the house is the right answer.",
       "3": "Not Inside the house — think about why Above the house is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.6,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.6,
+    "irt_c": 0.25
   },
   {
     "id": "SPA-010",
@@ -6549,7 +9037,15 @@
       "0": "Not The puddle — think about why Captain Kiwi is the right answer.",
       "1": "Not Nothing — think about why Captain Kiwi is the right answer.",
       "2": "Not The sun — think about why Captain Kiwi is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.5,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.5,
+    "irt_c": 0.25
   },
   {
     "id": "SPA-016",
@@ -6570,7 +9066,15 @@
       "1": "Not Rotated 90 degrees — think about why The red shape shown is the right answer.",
       "2": "Not Upside down — think about why The red shape shown is the right answer.",
       "3": "Not Same as original — think about why The red shape shown is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.2,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.2,
+    "irt_c": 0.25
   },
   {
     "id": "SPA-017",
@@ -6591,7 +9095,15 @@
       "0": "Not Upside down — think about why The red shape shown is the right answer.",
       "1": "Not Rotated 90 degrees — think about why The red shape shown is the right answer.",
       "3": "Not Same as original — think about why The red shape shown is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.15,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.15,
+    "irt_c": 0.25
   },
   {
     "id": "SPA-018",
@@ -6612,7 +9124,15 @@
       "0": "Not Rotated 90 degrees — think about why The red shape shown is the right answer.",
       "1": "Not Same as original — think about why The red shape shown is the right answer.",
       "3": "Not Upside down — think about why The red shape shown is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.1,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.1,
+    "irt_c": 0.25
   },
   {
     "id": "SPA-019",
@@ -6633,7 +9153,15 @@
       "0": "Not Upside down — think about why The red shape shown is the right answer.",
       "2": "Not Rotated 90 degrees — think about why The red shape shown is the right answer.",
       "3": "Not Same as original — think about why The red shape shown is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.05,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.05,
+    "irt_c": 0.25
   },
   {
     "id": "SPA-020",
@@ -6654,7 +9182,15 @@
       "0": "Not Same as original — think about why The red shape shown is the right answer.",
       "1": "Not Rotated 90 degrees — think about why The red shape shown is the right answer.",
       "3": "Not Upside down — think about why The red shape shown is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.0,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.0,
+    "irt_c": 0.25
   },
   {
     "id": "SPA-041",
@@ -6675,7 +9211,15 @@
       "0": "3 is too low. The correct answer is 5.",
       "1": "6 is too high. The correct answer is 5.",
       "2": "4 is too low. The correct answer is 5."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.95,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.95,
+    "irt_c": 0.25
   },
   {
     "id": "SPA-042",
@@ -6696,7 +9240,15 @@
       "0": "6 is too high. The correct answer is 5.",
       "1": "3 is too low. The correct answer is 5.",
       "3": "4 is too low. The correct answer is 5."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.9,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.9,
+    "irt_c": 0.25
   },
   {
     "id": "SPA-043",
@@ -6717,7 +9269,15 @@
       "1": "Not Cannot tell — think about why Yes, shorter is the right answer.",
       "2": "Not No, longer — think about why Yes, shorter is the right answer.",
       "3": "Not No, same distance — think about why Yes, shorter is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.85,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.85,
+    "irt_c": 0.25
   },
   {
     "id": "SPA-044",
@@ -6738,7 +9298,15 @@
       "0": "7 is too low. The correct answer is 8.",
       "1": "10 is too high. The correct answer is 8.",
       "2": "5 is too low. The correct answer is 8."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.8,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.8,
+    "irt_c": 0.25
   },
   {
     "id": "SPA-045",
@@ -6759,7 +9327,15 @@
       "0": "1 is too low. The correct answer is 2.",
       "1": "3 is too high. The correct answer is 2.",
       "3": "4 is too high. The correct answer is 2."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.75,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.75,
+    "irt_c": 0.25
   },
   {
     "id": "SPA-046",
@@ -6780,7 +9356,15 @@
       "0": "5 is too high. The correct answer is 3.",
       "1": "2 is too low. The correct answer is 3.",
       "2": "4 is too high. The correct answer is 3."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.7,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.7,
+    "irt_c": 0.25
   },
   {
     "id": "SPA-047",
@@ -6801,7 +9385,15 @@
       "1": "2 is too low. The correct answer is 4.",
       "2": "6 is too high. The correct answer is 4.",
       "3": "8 is too high. The correct answer is 4."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.65,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.65,
+    "irt_c": 0.25
   },
   {
     "id": "SPA-048",
@@ -6822,7 +9414,15 @@
       "0": "0 is too low. The correct answer is 3.",
       "1": "5 is too high. The correct answer is 3.",
       "3": "8 is too high. The correct answer is 3."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.6,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.6,
+    "irt_c": 0.25
   },
   {
     "id": "SPA-049",
@@ -6843,7 +9443,15 @@
       "0": "Not p — think about why d is the right answer.",
       "1": "Not q — think about why d is the right answer.",
       "2": "Not b — think about why d is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.55,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.55,
+    "irt_c": 0.25
   },
   {
     "id": "SPA-050",
@@ -6864,7 +9472,15 @@
       "1": "Not p — think about why q is the right answer.",
       "2": "Not b — think about why q is the right answer.",
       "3": "Not d — think about why q is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.5,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.5,
+    "irt_c": 0.25
   },
   {
     "id": "SPA-051",
@@ -6885,7 +9501,15 @@
       "0": "Not 6:00 — think about why 9:00 is the right answer.",
       "1": "Not 12:00 — think about why 9:00 is the right answer.",
       "2": "Not 3:00 — think about why 9:00 is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.45,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.45,
+    "irt_c": 0.25
   },
   {
     "id": "SPA-052",
@@ -6906,7 +9530,15 @@
       "1": "Not Foot — think about why Left hand is the right answer.",
       "2": "Not Head — think about why Left hand is the right answer.",
       "3": "Not Right hand — think about why Left hand is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.4,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.4,
+    "irt_c": 0.25
   },
   {
     "id": "SPA-053",
@@ -6927,7 +9559,15 @@
       "0": "Not BIG — think about why WOW is the right answer.",
       "1": "Not CAT — think about why WOW is the right answer.",
       "2": "Not DOG — think about why WOW is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.35,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.35,
+    "irt_c": 0.25
   },
   {
     "id": "SPA-054",
@@ -6948,7 +9588,15 @@
       "0": "Not Down — think about why Right (same) is the right answer.",
       "1": "Not Left — think about why Right (same) is the right answer.",
       "3": "Not Up — think about why Right (same) is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.3,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.3,
+    "irt_c": 0.25
   },
   {
     "id": "SPA-055",
@@ -6969,7 +9617,15 @@
       "0": "Not Different pattern — think about why Mirror image of left wing is the right answer.",
       "1": "Not Blank — think about why Mirror image of left wing is the right answer.",
       "3": "Not Same as left wing — think about why Mirror image of left wing is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.25,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.25,
+    "irt_c": 0.25
   },
   {
     "id": "SPA-056",
@@ -6990,7 +9646,15 @@
       "1": "Not Both hands — think about why Left hand is the right answer.",
       "2": "Not Neither hand — think about why Left hand is the right answer.",
       "3": "Not Right hand — think about why Left hand is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.2,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.2,
+    "irt_c": 0.25
   },
   {
     "id": "SPA-073",
@@ -7011,7 +9675,15 @@
       "0": "Not Red — think about why Cannot tell from this view is the right answer.",
       "1": "Not Green — think about why Cannot tell from this view is the right answer.",
       "3": "Not Blue — think about why Cannot tell from this view is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 0.65,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 0.65,
+    "irt_c": 0.25
   },
   {
     "id": "SPA-074",
@@ -7032,7 +9704,15 @@
       "0": "2 is too low. The correct answer is 3.",
       "1": "6 is too high. The correct answer is 3.",
       "2": "1 is too low. The correct answer is 3."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 0.7,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 0.7,
+    "irt_c": 0.25
   },
   {
     "id": "SPA-077",
@@ -7053,7 +9733,15 @@
       "1": "6 is too high. The correct answer is 1.",
       "2": "2 is too high. The correct answer is 1.",
       "3": "3 is too high. The correct answer is 1."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 0.85,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 0.85,
+    "irt_c": 0.25
   },
   {
     "id": "SPA-078",
@@ -7074,7 +9762,15 @@
       "1": "6 is too low. The correct answer is 8.",
       "2": "4 is too low. The correct answer is 8.",
       "3": "0 is too low. The correct answer is 8."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 0.9,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 0.9,
+    "irt_c": 0.25
   },
   {
     "id": "SPA-079",
@@ -7095,7 +9791,15 @@
       "0": "Not Triangle — think about why Square is the right answer.",
       "1": "Not Circle — think about why Square is the right answer.",
       "2": "Not Rectangle — think about why Square is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 0.95,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 0.95,
+    "irt_c": 0.25
   },
   {
     "id": "SPA-081",
@@ -7116,7 +9820,15 @@
       "1": "6 is too low. The correct answer is 12.",
       "2": "8 is too low. The correct answer is 12.",
       "3": "16 is too high. The correct answer is 12."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.05,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.05,
+    "irt_c": 0.25
   },
   {
     "id": "SPA-082",
@@ -7137,7 +9849,15 @@
       "0": "12 is too high. The correct answer is 6.",
       "2": "1 is too low. The correct answer is 6.",
       "3": "8 is too high. The correct answer is 6."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.1,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.1,
+    "irt_c": 0.25
   },
   {
     "id": "SPA-083",
@@ -7158,7 +9878,15 @@
       "1": "6 is too high. The correct answer is 1.",
       "2": "8 is too high. The correct answer is 1.",
       "3": "0 is too low. The correct answer is 1."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.15,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.15,
+    "irt_c": 0.25
   },
   {
     "id": "SPA-084",
@@ -7179,7 +9907,15 @@
       "0": "4 is too low. The correct answer is 8.",
       "1": "6 is too low. The correct answer is 8.",
       "3": "12 is too high. The correct answer is 8."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.2,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.2,
+    "irt_c": 0.25
   },
   {
     "id": "SPA-085",
@@ -7200,7 +9936,15 @@
       "1": "Not Circle — think about why Isosceles triangle is the right answer.",
       "2": "Not Equilateral triangle — think about why Isosceles triangle is the right answer.",
       "3": "Not Square — think about why Isosceles triangle is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.25,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.25,
+    "irt_c": 0.25
   },
   {
     "id": "SPA-086",
@@ -7221,7 +9965,15 @@
       "0": "3 is too low. The correct answer is 6.",
       "1": "8 is too high. The correct answer is 6.",
       "3": "4 is too low. The correct answer is 6."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.3,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.3,
+    "irt_c": 0.25
   },
   {
     "id": "SPA-087",
@@ -7242,7 +9994,15 @@
       "1": "1 is too low. The correct answer is 4.",
       "2": "2 is too low. The correct answer is 4.",
       "3": "8 is too high. The correct answer is 4."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.35,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.35,
+    "irt_c": 0.25
   },
   {
     "id": "SPA-089",
@@ -7263,7 +10023,15 @@
       "0": "9 is too low. The correct answer is 18.",
       "1": "26 is too high. The correct answer is 18.",
       "3": "0 is too low. The correct answer is 18."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.45,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.45,
+    "irt_c": 0.25
   },
   {
     "id": "SPA-090",
@@ -7284,7 +10052,15 @@
       "0": "Not Center cells only — think about why Bottom-left and bottom-right is the right answer.",
       "1": "Not All corners and center — think about why Bottom-left and bottom-right is the right answer.",
       "3": "Not Only the middle row — think about why Bottom-left and bottom-right is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.5,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.5,
+    "irt_c": 0.25
   },
   {
     "id": "SPA-093",
@@ -7305,7 +10081,15 @@
       "0": "12 is too high. The correct answer is 10.",
       "2": "11 is too high. The correct answer is 10.",
       "3": "8 is too low. The correct answer is 10."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.65,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.65,
+    "irt_c": 0.25
   },
   {
     "id": "SPA-094",
@@ -7326,7 +10110,15 @@
       "0": "18 is too high. The correct answer is 14.",
       "1": "12 is too low. The correct answer is 14.",
       "3": "16 is too high. The correct answer is 14."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.7,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.7,
+    "irt_c": 0.25
   },
   {
     "id": "SPA-096",
@@ -7347,7 +10139,15 @@
       "0": "20 is too low. The correct answer is 26.",
       "1": "27 is too high. The correct answer is 26.",
       "3": "24 is too low. The correct answer is 26."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.8,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.8,
+    "irt_c": 0.25
   },
   {
     "id": "SPA-097",
@@ -7368,7 +10168,15 @@
       "0": "5 is too low. The correct answer is 12.",
       "2": "18 is too high. The correct answer is 12.",
       "3": "8 is too low. The correct answer is 12."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.85,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.85,
+    "irt_c": 0.25
   },
   {
     "id": "SPA-099",
@@ -7389,7 +10197,15 @@
       "0": "1 is too low. The correct answer is 4.",
       "1": "5 is too high. The correct answer is 4.",
       "3": "6 is too high. The correct answer is 4."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.95,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.95,
+    "irt_c": 0.25
   },
   {
     "id": "SPA-100",
@@ -7410,7 +10226,15 @@
       "0": "6 is too high. The correct answer is 3.",
       "2": "2 is too low. The correct answer is 3.",
       "3": "4 is too high. The correct answer is 3."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 2.0,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 2.0,
+    "irt_c": 0.25
   },
   {
     "id": "T6-105",
@@ -7431,7 +10255,15 @@
       "0": "Not triangle — think about why hexagon is the right answer.",
       "1": "Not rectangle — think about why hexagon is the right answer.",
       "3": "Not circle — think about why hexagon is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.9,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.9,
+    "irt_c": 0.25
   },
   {
     "id": "T6-108",
@@ -7452,7 +10284,15 @@
       "0": "8 is too high. The correct answer is 4.",
       "1": "3 is too low. The correct answer is 4.",
       "3": "6 is too high. The correct answer is 4."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 0.05,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 0.05,
+    "irt_c": 0.25
   },
   {
     "id": "T6-111",
@@ -7473,7 +10313,15 @@
       "1": "Not rectangle — think about why square is the right answer.",
       "2": "Not triangle — think about why square is the right answer.",
       "3": "Not pentagon — think about why square is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.5,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.5,
+    "irt_c": 0.25
   },
   {
     "id": "T6-113",
@@ -7494,7 +10342,15 @@
       "1": "4 is too low. The correct answer is 8.",
       "2": "2 is too low. The correct answer is 8.",
       "3": "1 is too low. The correct answer is 8."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.15,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.15,
+    "irt_c": 0.25
   },
   {
     "id": "T6-116",
@@ -7515,7 +10371,15 @@
       "0": "Not 25 cm — think about why 30 cm is the right answer.",
       "1": "Not 28 cm — think about why 30 cm is the right answer.",
       "3": "Not 38 cm — think about why 30 cm is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.5,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.5,
+    "irt_c": 0.25
   },
   {
     "id": "T6-120",
@@ -7536,7 +10400,15 @@
       "0": "Not square — think about why triangle is the right answer.",
       "1": "Not octagon — think about why triangle is the right answer.",
       "3": "Not pentagon — think about why triangle is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.3,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.3,
+    "irt_c": 0.25
   },
   {
     "id": "T6-123",
@@ -7557,7 +10429,15 @@
       "0": "Not 68 cm — think about why 60 cm is the right answer.",
       "1": "Not 56 cm — think about why 60 cm is the right answer.",
       "3": "Not 67 cm — think about why 60 cm is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.15,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.15,
+    "irt_c": 0.25
   },
   {
     "id": "T6-125",
@@ -7578,7 +10458,15 @@
       "1": "Not 4 cm — think about why 12 cm is the right answer.",
       "2": "Not 7 cm — think about why 12 cm is the right answer.",
       "3": "Not 14 cm — think about why 12 cm is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.6,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.6,
+    "irt_c": 0.25
   },
   {
     "id": "T6-127",
@@ -7599,7 +10487,15 @@
       "0": "Not 24 cm — think about why 18 cm is the right answer.",
       "2": "Not 17 cm — think about why 18 cm is the right answer.",
       "3": "Not 19 cm — think about why 18 cm is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.7,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.7,
+    "irt_c": 0.25
   },
   {
     "id": "T6-128",
@@ -7620,7 +10516,15 @@
       "0": "Not 21 cm — think about why 15 cm is the right answer.",
       "1": "Not 17 cm — think about why 15 cm is the right answer.",
       "3": "Not 13 cm — think about why 15 cm is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.85,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.85,
+    "irt_c": 0.25
   },
   {
     "id": "T6-139",
@@ -7641,7 +10545,15 @@
       "0": "Not hexagon — think about why pentagon is the right answer.",
       "2": "Not square — think about why pentagon is the right answer.",
       "3": "Not rectangle — think about why pentagon is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.5,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.5,
+    "irt_c": 0.25
   },
   {
     "id": "T6-142",
@@ -7662,7 +10574,15 @@
       "0": "Not 5 cm — think about why 6 cm is the right answer.",
       "1": "Not 11 cm — think about why 6 cm is the right answer.",
       "3": "Not 8 cm — think about why 6 cm is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.05,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.05,
+    "irt_c": 0.25
   },
   {
     "id": "T6-145",
@@ -7683,7 +10603,15 @@
       "0": "Not 23 sq cm — think about why 24 sq cm is the right answer.",
       "1": "Not 25 sq cm — think about why 24 sq cm is the right answer.",
       "2": "Not 20 sq cm — think about why 24 sq cm is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.05,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.05,
+    "irt_c": 0.25
   },
   {
     "id": "T6-157",
@@ -7704,7 +10632,15 @@
       "1": "Not 31 cm — think about why 24 cm is the right answer.",
       "2": "Not 30 cm — think about why 24 cm is the right answer.",
       "3": "Not 25 cm — think about why 24 cm is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.55,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.55,
+    "irt_c": 0.25
   },
   {
     "id": "T6-162",
@@ -7725,7 +10661,15 @@
       "1": "Not 12 sq cm — think about why 16 sq cm is the right answer.",
       "2": "Not 14 sq cm — think about why 16 sq cm is the right answer.",
       "3": "Not 19 sq cm — think about why 16 sq cm is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.8,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.8,
+    "irt_c": 0.25
   },
   {
     "id": "T6-163",
@@ -7746,7 +10690,15 @@
       "0": "Not 15 cm — think about why 18 cm is the right answer.",
       "1": "Not 20 cm — think about why 18 cm is the right answer.",
       "2": "Not 25 cm — think about why 18 cm is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.7,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.7,
+    "irt_c": 0.25
   },
   {
     "id": "T6-172",
@@ -7767,7 +10719,15 @@
       "0": "Not 9 cm — think about why 15 cm is the right answer.",
       "1": "Not 14 cm — think about why 15 cm is the right answer.",
       "2": "Not 18 cm — think about why 15 cm is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.2,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.2,
+    "irt_c": 0.25
   },
   {
     "id": "T6-177",
@@ -7788,7 +10748,15 @@
       "0": "Not 67 cm — think about why 66 cm is the right answer.",
       "1": "Not 72 cm — think about why 66 cm is the right answer.",
       "2": "Not 74 cm — think about why 66 cm is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.0,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.0,
+    "irt_c": 0.25
   },
   {
     "id": "T6-183",
@@ -7809,7 +10777,15 @@
       "0": "Not 52 cm — think about why 60 cm is the right answer.",
       "1": "Not 67 cm — think about why 60 cm is the right answer.",
       "3": "Not 68 cm — think about why 60 cm is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 0.0,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 0.0,
+    "irt_c": 0.25
   },
   {
     "id": "T6-184",
@@ -7830,7 +10806,15 @@
       "1": "Not 33 cm — think about why 27 cm is the right answer.",
       "2": "Not 24 cm — think about why 27 cm is the right answer.",
       "3": "Not 31 cm — think about why 27 cm is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.15,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.15,
+    "irt_c": 0.25
   },
   {
     "id": "T6-189",
@@ -7851,7 +10835,15 @@
       "0": "Not 29 cm — think about why 24 cm is the right answer.",
       "1": "Not 30 cm — think about why 24 cm is the right answer.",
       "2": "Not 26 cm — think about why 24 cm is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.55,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.55,
+    "irt_c": 0.25
   },
   {
     "id": "T6-190",
@@ -7872,7 +10864,15 @@
       "0": "Not 12 cm — think about why 16 cm is the right answer.",
       "1": "Not 24 cm — think about why 16 cm is the right answer.",
       "3": "Not 8 cm — think about why 16 cm is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.4,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.4,
+    "irt_c": 0.25
   },
   {
     "id": "T6-191",
@@ -7893,7 +10893,15 @@
       "1": "Not 40 cm — think about why 36 cm is the right answer.",
       "2": "Not 41 cm — think about why 36 cm is the right answer.",
       "3": "Not 37 cm — think about why 36 cm is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.4,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.4,
+    "irt_c": 0.25
   },
   {
     "id": "T6-192",
@@ -7914,7 +10922,15 @@
       "1": "Not 13 cm — think about why 12 cm is the right answer.",
       "2": "Not 6 cm — think about why 12 cm is the right answer.",
       "3": "Not 5 cm — think about why 12 cm is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.3,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.3,
+    "irt_c": 0.25
   },
   {
     "id": "T6-193",
@@ -7935,7 +10951,15 @@
       "0": "Not 20 cm — think about why 24 cm is the right answer.",
       "1": "Not 28 cm — think about why 24 cm is the right answer.",
       "2": "Not 21 cm — think about why 24 cm is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.0,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.0,
+    "irt_c": 0.25
   },
   {
     "id": "T6-194",
@@ -7956,7 +10980,15 @@
       "1": "Not 47 sq cm — think about why 48 sq cm is the right answer.",
       "2": "Not 49 sq cm — think about why 48 sq cm is the right answer.",
       "3": "Not 53 sq cm — think about why 48 sq cm is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 0.1,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 0.1,
+    "irt_c": 0.25
   },
   {
     "id": "T6-199",
@@ -7977,7 +11009,15 @@
       "0": "Not 32 cm — think about why 25 cm is the right answer.",
       "2": "Not 19 cm — think about why 25 cm is the right answer.",
       "3": "Not 31 cm — think about why 25 cm is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.15,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.15,
+    "irt_c": 0.25
   },
   {
     "id": "T6-204",
@@ -7998,7 +11038,15 @@
       "0": "Not 16 cm — think about why 12 cm is the right answer.",
       "1": "Not 13 cm — think about why 12 cm is the right answer.",
       "3": "Not 20 cm — think about why 12 cm is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.75,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.75,
+    "irt_c": 0.25
   },
   {
     "id": "T6-205",
@@ -8019,7 +11067,15 @@
       "0": "Not 24 cm — think about why 20 cm is the right answer.",
       "1": "Not 12 cm — think about why 20 cm is the right answer.",
       "3": "Not 28 cm — think about why 20 cm is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.65,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.65,
+    "irt_c": 0.25
   },
   {
     "id": "T6-213",
@@ -8040,7 +11096,15 @@
       "0": "Not 41 cm — think about why 36 cm is the right answer.",
       "1": "Not 33 cm — think about why 36 cm is the right answer.",
       "2": "Not 38 cm — think about why 36 cm is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.85,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.85,
+    "irt_c": 0.25
   },
   {
     "id": "T6-214",
@@ -8061,7 +11125,15 @@
       "0": "Not 47 cm — think about why 54 cm is the right answer.",
       "1": "Not 51 cm — think about why 54 cm is the right answer.",
       "2": "Not 59 cm — think about why 54 cm is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.4,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.4,
+    "irt_c": 0.25
   },
   {
     "id": "T6-217",
@@ -8082,7 +11154,15 @@
       "0": "Not 12 cm — think about why 10 cm is the right answer.",
       "1": "Not 9 cm — think about why 10 cm is the right answer.",
       "3": "Not 15 cm — think about why 10 cm is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.45,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.45,
+    "irt_c": 0.25
   },
   {
     "id": "T6-218",
@@ -8103,7 +11183,15 @@
       "0": "Not 52 cm — think about why 48 cm is the right answer.",
       "1": "Not 49 cm — think about why 48 cm is the right answer.",
       "2": "Not 55 cm — think about why 48 cm is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.2,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.2,
+    "irt_c": 0.25
   },
   {
     "id": "T6-220",
@@ -8124,7 +11212,15 @@
       "1": "Not 53 cm — think about why 55 cm is the right answer.",
       "2": "Not 59 cm — think about why 55 cm is the right answer.",
       "3": "Not 47 cm — think about why 55 cm is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.1,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.1,
+    "irt_c": 0.25
   },
   {
     "id": "T6-222",
@@ -8145,7 +11241,15 @@
       "0": "Not 3 sq cm — think about why 9 sq cm is the right answer.",
       "1": "Not 7 sq cm — think about why 9 sq cm is the right answer.",
       "3": "Not 10 sq cm — think about why 9 sq cm is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.15,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.15,
+    "irt_c": 0.25
   },
   {
     "id": "T6-227",
@@ -8166,7 +11270,15 @@
       "1": "Not 23 sq cm — think about why 28 sq cm is the right answer.",
       "2": "Not 24 sq cm — think about why 28 sq cm is the right answer.",
       "3": "Not 22 sq cm — think about why 28 sq cm is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.2,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.2,
+    "irt_c": 0.25
   },
   {
     "id": "T6-228",
@@ -8187,7 +11299,15 @@
       "0": "Not 40 cm — think about why 33 cm is the right answer.",
       "1": "Not 39 cm — think about why 33 cm is the right answer.",
       "2": "Not 27 cm — think about why 33 cm is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.75,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.75,
+    "irt_c": 0.25
   },
   {
     "id": "T6-230",
@@ -8208,7 +11328,15 @@
       "1": "Not 51 cm — think about why 50 cm is the right answer.",
       "2": "Not 58 cm — think about why 50 cm is the right answer.",
       "3": "Not 44 cm — think about why 50 cm is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.3,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.3,
+    "irt_c": 0.25
   },
   {
     "id": "T6-232",
@@ -8229,7 +11357,15 @@
       "1": "Not 22 cm — think about why 30 cm is the right answer.",
       "2": "Not 24 cm — think about why 30 cm is the right answer.",
       "3": "Not 31 cm — think about why 30 cm is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.0,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.0,
+    "irt_c": 0.25
   },
   {
     "id": "T6-237",
@@ -8250,7 +11386,15 @@
       "0": "Not 7 sq cm — think about why 12 sq cm is the right answer.",
       "1": "Not 11 sq cm — think about why 12 sq cm is the right answer.",
       "2": "Not 17 sq cm — think about why 12 sq cm is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.35,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.35,
+    "irt_c": 0.25
   },
   {
     "id": "T6-238",
@@ -8271,7 +11415,15 @@
       "1": "Not 36 cm — think about why 32 cm is the right answer.",
       "2": "Not 39 cm — think about why 32 cm is the right answer.",
       "3": "Not 34 cm — think about why 32 cm is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.65,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.65,
+    "irt_c": 0.25
   },
   {
     "id": "T6-245",
@@ -8292,7 +11444,15 @@
       "0": "Not 31 cm — think about why 30 cm is the right answer.",
       "1": "Not 28 cm — think about why 30 cm is the right answer.",
       "2": "Not 27 cm — think about why 30 cm is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.45,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.45,
+    "irt_c": 0.25
   },
   {
     "id": "T6-250",
@@ -8313,7 +11473,15 @@
       "1": "Not 69 cm — think about why 72 cm is the right answer.",
       "2": "Not 64 cm — think about why 72 cm is the right answer.",
       "3": "Not 68 cm — think about why 72 cm is the right answer."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.05,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.05,
+    "irt_c": 0.25
   },
   {
     "id": "T7-112",
@@ -8334,7 +11502,15 @@
       "1": "0 is too low. The correct answer is 4.",
       "2": "1 is too low. The correct answer is 4.",
       "3": "3 is too low. The correct answer is 4."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.95,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.95,
+    "irt_c": 0.25
   },
   {
     "id": "T7-118",
@@ -8355,7 +11531,15 @@
       "0": "10 is too low. The correct answer is 14.",
       "1": "18 is too high. The correct answer is 14.",
       "3": "17 is too high. The correct answer is 14."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.1,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.1,
+    "irt_c": 0.25
   },
   {
     "id": "T7-120",
@@ -8376,7 +11560,15 @@
       "0": "7 is too low. The correct answer is 8.",
       "1": "11 is too high. The correct answer is 8.",
       "3": "4 is too low. The correct answer is 8."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 0.0,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 0.0,
+    "irt_c": 0.25
   },
   {
     "id": "T7-133",
@@ -8397,7 +11589,15 @@
       "0": "11 is too high. The correct answer is 9.",
       "2": "12 is too high. The correct answer is 9.",
       "3": "5 is too low. The correct answer is 9."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 0.25,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 0.25,
+    "irt_c": 0.25
   },
   {
     "id": "T7-147",
@@ -8418,7 +11618,15 @@
       "0": "0 is too low. The correct answer is 2.",
       "1": "6 is too high. The correct answer is 2.",
       "2": "4 is too high. The correct answer is 2."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.55,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.55,
+    "irt_c": 0.25
   },
   {
     "id": "T7-152",
@@ -8439,7 +11647,15 @@
       "0": "2 is too high. The correct answer is 1.",
       "2": "3 is too high. The correct answer is 1.",
       "3": "4 is too high. The correct answer is 1."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.55,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.55,
+    "irt_c": 0.25
   },
   {
     "id": "T7-170",
@@ -8460,7 +11676,15 @@
       "0": "4 is too high. The correct answer is 1.",
       "2": "2 is too high. The correct answer is 1.",
       "3": "3 is too high. The correct answer is 1."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.55,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.55,
+    "irt_c": 0.25
   },
   {
     "id": "T7-182",
@@ -8481,7 +11705,15 @@
       "0": "2 is too low. The correct answer is 4.",
       "1": "1 is too low. The correct answer is 4.",
       "3": "8 is too high. The correct answer is 4."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.4,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.4,
+    "irt_c": 0.25
   },
   {
     "id": "T7-190",
@@ -8502,7 +11734,15 @@
       "0": "2 is too low. The correct answer is 3.",
       "2": "5 is too high. The correct answer is 3.",
       "3": "1 is too low. The correct answer is 3."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.5,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.5,
+    "irt_c": 0.25
   },
   {
     "id": "T7-243",
@@ -8523,7 +11763,15 @@
       "0": "9 is too low. The correct answer is 10.",
       "1": "8 is too low. The correct answer is 10.",
       "3": "11 is too high. The correct answer is 10."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.5,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.5,
+    "irt_c": 0.25
   },
   {
     "id": "T7-254",
@@ -8544,7 +11792,15 @@
       "1": "4 is too high. The correct answer is 2.",
       "2": "3 is too high. The correct answer is 2.",
       "3": "5 is too high. The correct answer is 2."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.75,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.75,
+    "irt_c": 0.25
   },
   {
     "id": "T7-265",
@@ -8565,7 +11821,15 @@
       "1": "5 is too high. The correct answer is 1.",
       "2": "2 is too high. The correct answer is 1.",
       "3": "4 is too high. The correct answer is 1."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.9,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.9,
+    "irt_c": 0.25
   },
   {
     "id": "T7-268",
@@ -8586,7 +11850,15 @@
       "0": "27 is too low. The correct answer is 28.",
       "2": "30 is too high. The correct answer is 28.",
       "3": "31 is too high. The correct answer is 28."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.15,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.15,
+    "irt_c": 0.25
   },
   {
     "id": "T7-303",
@@ -8607,7 +11879,15 @@
       "0": "3 is too low. The correct answer is 6.",
       "1": "5 is too low. The correct answer is 6.",
       "2": "8 is too high. The correct answer is 6."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.35,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.35,
+    "irt_c": 0.25
   },
   {
     "id": "T7-306",
@@ -8628,7 +11908,15 @@
       "0": "10 is too high. The correct answer is 9.",
       "1": "12 is too high. The correct answer is 9.",
       "3": "7 is too low. The correct answer is 9."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.25,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.25,
+    "irt_c": 0.25
   },
   {
     "id": "T7-308",
@@ -8649,7 +11937,15 @@
       "0": "13 is too high. The correct answer is 10.",
       "1": "9 is too low. The correct answer is 10.",
       "2": "14 is too high. The correct answer is 10."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.6,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.6,
+    "irt_c": 0.25
   },
   {
     "id": "T7-310",
@@ -8670,7 +11966,15 @@
       "0": "5 is too high. The correct answer is 4.",
       "2": "2 is too low. The correct answer is 4.",
       "3": "0 is too low. The correct answer is 4."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.6,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.6,
+    "irt_c": 0.25
   },
   {
     "id": "T7-317",
@@ -8691,7 +11995,15 @@
       "0": "8 is too high. The correct answer is 6.",
       "1": "5 is too low. The correct answer is 6.",
       "3": "9 is too high. The correct answer is 6."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 0.1,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 0.1,
+    "irt_c": 0.25
   },
   {
     "id": "T7-343",
@@ -8712,7 +12024,15 @@
       "0": "0 is too low. The correct answer is 3.",
       "1": "7 is too high. The correct answer is 3.",
       "2": "6 is too high. The correct answer is 3."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.45,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.45,
+    "irt_c": 0.25
   },
   {
     "id": "T7-344",
@@ -8733,7 +12053,15 @@
       "0": "51 is too high. The correct answer is 48.",
       "2": "44 is too low. The correct answer is 48.",
       "3": "45 is too low. The correct answer is 48."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 0.0,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 0.0,
+    "irt_c": 0.25
   },
   {
     "id": "T7-350",
@@ -8754,7 +12082,15 @@
       "1": "8 is too high. The correct answer is 5.",
       "2": "6 is too high. The correct answer is 5.",
       "3": "7 is too high. The correct answer is 5."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.35,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.35,
+    "irt_c": 0.25
   },
   {
     "id": "T7-357",
@@ -8775,7 +12111,15 @@
       "0": "14 is too low. The correct answer is 16.",
       "1": "15 is too low. The correct answer is 16.",
       "2": "18 is too high. The correct answer is 16."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 0.2,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 0.2,
+    "irt_c": 0.25
   },
   {
     "id": "T7-382",
@@ -8796,7 +12140,15 @@
       "0": "9 is too high. The correct answer is 5.",
       "1": "8 is too high. The correct answer is 5.",
       "2": "3 is too low. The correct answer is 5."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.85,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.85,
+    "irt_c": 0.25
   },
   {
     "id": "T7-389",
@@ -8817,7 +12169,15 @@
       "0": "9 is too high. The correct answer is 6.",
       "2": "8 is too high. The correct answer is 6.",
       "3": "2 is too low. The correct answer is 6."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.95,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.95,
+    "irt_c": 0.25
   },
   {
     "id": "T7-392",
@@ -8838,7 +12198,15 @@
       "0": "4 is too high. The correct answer is 1.",
       "2": "3 is too high. The correct answer is 1.",
       "3": "2 is too high. The correct answer is 1."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.85,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.85,
+    "irt_c": 0.25
   },
   {
     "id": "T7-403",
@@ -8859,7 +12227,15 @@
       "0": "6 is too high. The correct answer is 4.",
       "1": "8 is too high. The correct answer is 4.",
       "2": "2 is too low. The correct answer is 4."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.0,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.0,
+    "irt_c": 0.25
   },
   {
     "id": "T7-411",
@@ -8880,7 +12256,15 @@
       "0": "7 is too high. The correct answer is 4.",
       "2": "2 is too low. The correct answer is 4.",
       "3": "5 is too high. The correct answer is 4."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.65,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.65,
+    "irt_c": 0.25
   },
   {
     "id": "T7-434",
@@ -8901,7 +12285,15 @@
       "0": "9 is too high. The correct answer is 7.",
       "1": "3 is too low. The correct answer is 7.",
       "2": "10 is too high. The correct answer is 7."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.9,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.9,
+    "irt_c": 0.25
   },
   {
     "id": "T7-461",
@@ -8922,7 +12314,15 @@
       "0": "6 is too high. The correct answer is 3.",
       "1": "1 is too low. The correct answer is 3.",
       "3": "4 is too high. The correct answer is 3."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.6,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.6,
+    "irt_c": 0.25
   },
   {
     "id": "T7-469",
@@ -8943,7 +12343,15 @@
       "0": "20 is too high. The correct answer is 16.",
       "2": "13 is too low. The correct answer is 16.",
       "3": "19 is too high. The correct answer is 16."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 0.45,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 0.45,
+    "irt_c": 0.25
   },
   {
     "id": "T7-495",
@@ -8964,7 +12372,15 @@
       "1": "9 is too high. The correct answer is 5.",
       "2": "7 is too high. The correct answer is 5.",
       "3": "1 is too low. The correct answer is 5."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.25,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.25,
+    "irt_c": 0.25
   },
   {
     "id": "T7-510",
@@ -8985,7 +12401,15 @@
       "0": "12 is too high. The correct answer is 9.",
       "1": "5 is too low. The correct answer is 9.",
       "3": "11 is too high. The correct answer is 9."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 0.15,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 0.15,
+    "irt_c": 0.25
   },
   {
     "id": "T7-521",
@@ -9006,7 +12430,15 @@
       "0": "4 is too low. The correct answer is 6.",
       "1": "5 is too low. The correct answer is 6.",
       "2": "2 is too low. The correct answer is 6."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.4,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.4,
+    "irt_c": 0.25
   },
   {
     "id": "T7-528",
@@ -9027,7 +12459,15 @@
       "1": "4 is too high. The correct answer is 2.",
       "2": "5 is too high. The correct answer is 2.",
       "3": "0 is too low. The correct answer is 2."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.5,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.5,
+    "irt_c": 0.25
   },
   {
     "id": "T7-536",
@@ -9048,7 +12488,15 @@
       "0": "11 is too high. The correct answer is 9.",
       "1": "13 is too high. The correct answer is 9.",
       "2": "7 is too low. The correct answer is 9."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.05,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.05,
+    "irt_c": 0.25
   },
   {
     "id": "T7-542",
@@ -9069,7 +12517,15 @@
       "1": "6 is too low. The correct answer is 8.",
       "2": "7 is too low. The correct answer is 8.",
       "3": "12 is too high. The correct answer is 8."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 0.9,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 0.9,
+    "irt_c": 0.25
   },
   {
     "id": "T7-552",
@@ -9090,7 +12546,15 @@
       "0": "11 is too high. The correct answer is 7.",
       "2": "3 is too low. The correct answer is 7.",
       "3": "6 is too low. The correct answer is 7."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.9,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.9,
+    "irt_c": 0.25
   },
   {
     "id": "T7-555",
@@ -9111,7 +12575,15 @@
       "1": "8 is too high. The correct answer is 5.",
       "2": "2 is too low. The correct answer is 5.",
       "3": "1 is too low. The correct answer is 5."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.15,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.15,
+    "irt_c": 0.25
   },
   {
     "id": "T7-565",
@@ -9132,7 +12604,15 @@
       "0": "7 is too low. The correct answer is 10.",
       "2": "11 is too high. The correct answer is 10.",
       "3": "9 is too low. The correct answer is 10."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.2,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.2,
+    "irt_c": 0.25
   },
   {
     "id": "T7-581",
@@ -9153,7 +12633,15 @@
       "0": "5 is too high. The correct answer is 3.",
       "2": "0 is too low. The correct answer is 3.",
       "3": "1 is too low. The correct answer is 3."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.4,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.4,
+    "irt_c": 0.25
   },
   {
     "id": "T7-587",
@@ -9174,7 +12662,15 @@
       "1": "5 is too low. The correct answer is 6.",
       "2": "9 is too high. The correct answer is 6.",
       "3": "8 is too high. The correct answer is 6."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 0.1,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 0.1,
+    "irt_c": 0.25
   },
   {
     "id": "T7-592",
@@ -9195,7 +12691,15 @@
       "1": "4 is too high. The correct answer is 2.",
       "2": "5 is too high. The correct answer is 2.",
       "3": "6 is too high. The correct answer is 2."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 0.75,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 0.75,
+    "irt_c": 0.25
   },
   {
     "id": "T7-599",
@@ -9216,7 +12720,15 @@
       "0": "6 is too high. The correct answer is 5.",
       "2": "7 is too high. The correct answer is 5.",
       "3": "1 is too low. The correct answer is 5."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.9,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.9,
+    "irt_c": 0.25
   },
   {
     "id": "WOR-002",
@@ -9237,7 +12749,15 @@
       "1": "5 is too low. The correct answer is 7.",
       "2": "8 is too high. The correct answer is 7.",
       "3": "6 is too low. The correct answer is 7."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.9,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.9,
+    "irt_c": 0.25
   },
   {
     "id": "WOR-011",
@@ -9258,7 +12778,15 @@
       "0": "3 is too low. The correct answer is 5.",
       "2": "4 is too low. The correct answer is 5.",
       "3": "6 is too high. The correct answer is 5."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.45,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.45,
+    "irt_c": 0.25
   },
   {
     "id": "WOR-016",
@@ -9279,7 +12807,15 @@
       "0": "7 is too low. The correct answer is 9.",
       "1": "10 is too high. The correct answer is 9.",
       "2": "8 is too low. The correct answer is 9."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.2,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.2,
+    "irt_c": 0.25
   },
   {
     "id": "WOR-017",
@@ -9300,7 +12836,15 @@
       "0": "2 is too low. The correct answer is 3.",
       "1": "4 is too high. The correct answer is 3.",
       "3": "11 is too high. The correct answer is 3."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.15,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.15,
+    "irt_c": 0.25
   },
   {
     "id": "WOR-030",
@@ -9321,7 +12865,15 @@
       "0": "3 is too low. The correct answer is 4.",
       "1": "5 is too high. The correct answer is 4.",
       "3": "8 is too high. The correct answer is 4."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.5,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.5,
+    "irt_c": 0.25
   },
   {
     "id": "WOR-041",
@@ -9342,7 +12894,15 @@
       "1": "15 is too low. The correct answer is 18.",
       "2": "17 is too low. The correct answer is 18.",
       "3": "19 is too high. The correct answer is 18."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.95,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.95,
+    "irt_c": 0.25
   },
   {
     "id": "WOR-042",
@@ -9363,7 +12923,15 @@
       "1": "2 is too low. The correct answer is 4.",
       "2": "12 is too high. The correct answer is 4.",
       "3": "6 is too high. The correct answer is 4."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.9,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.9,
+    "irt_c": 0.25
   },
   {
     "id": "WOR-043",
@@ -9384,7 +12952,15 @@
       "1": "3 is too high. The correct answer is 2.",
       "2": "5 is too high. The correct answer is 2.",
       "3": "4 is too high. The correct answer is 2."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.85,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.85,
+    "irt_c": 0.25
   },
   {
     "id": "WOR-044",
@@ -9405,7 +12981,15 @@
       "0": "6 is too high. The correct answer is 4.",
       "2": "3 is too low. The correct answer is 4.",
       "3": "5 is too high. The correct answer is 4."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.8,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.8,
+    "irt_c": 0.25
   },
   {
     "id": "WOR-045",
@@ -9426,7 +13010,15 @@
       "0": "4 is too low. The correct answer is 6.",
       "2": "8 is too high. The correct answer is 6.",
       "3": "12 is too high. The correct answer is 6."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.75,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.75,
+    "irt_c": 0.25
   },
   {
     "id": "WOR-046",
@@ -9447,7 +13039,15 @@
       "1": "11 is too low. The correct answer is 13.",
       "2": "15 is too high. The correct answer is 13.",
       "3": "12 is too low. The correct answer is 13."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.7,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.7,
+    "irt_c": 0.25
   },
   {
     "id": "WOR-047",
@@ -9468,7 +13068,15 @@
       "0": "5 is too low. The correct answer is 10.",
       "1": "7 is too low. The correct answer is 10.",
       "2": "12 is too high. The correct answer is 10."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.65,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.65,
+    "irt_c": 0.25
   },
   {
     "id": "WOR-048",
@@ -9489,7 +13097,15 @@
       "0": "7 is too low. The correct answer is 12.",
       "2": "14 is too high. The correct answer is 12.",
       "3": "10 is too low. The correct answer is 12."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.6,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.6,
+    "irt_c": 0.25
   },
   {
     "id": "WOR-049",
@@ -9510,7 +13126,15 @@
       "0": "8 is too low. The correct answer is 14.",
       "1": "10 is too low. The correct answer is 14.",
       "2": "12 is too low. The correct answer is 14."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.55,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.55,
+    "irt_c": 0.25
   },
   {
     "id": "WOR-050",
@@ -9531,7 +13155,15 @@
       "1": "12 is too high. The correct answer is 7.",
       "2": "8 is too high. The correct answer is 7.",
       "3": "6 is too low. The correct answer is 7."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.5,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.5,
+    "irt_c": 0.25
   },
   {
     "id": "WOR-056",
@@ -9552,7 +13184,15 @@
       "1": "9 is too low. The correct answer is 20.",
       "2": "24 is too high. The correct answer is 20.",
       "3": "16 is too low. The correct answer is 20."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.2,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.2,
+    "irt_c": 0.25
   },
   {
     "id": "WOR-057",
@@ -9573,7 +13213,15 @@
       "0": "4 is too low. The correct answer is 5.",
       "1": "10 is too high. The correct answer is 5.",
       "2": "6 is too high. The correct answer is 5."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.15,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.15,
+    "irt_c": 0.25
   },
   {
     "id": "WOR-058",
@@ -9594,7 +13242,15 @@
       "1": "27 is too high. The correct answer is 24.",
       "2": "21 is too low. The correct answer is 24.",
       "3": "11 is too low. The correct answer is 24."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.1,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.1,
+    "irt_c": 0.25
   },
   {
     "id": "WOR-059",
@@ -9615,7 +13271,15 @@
       "1": "6 is too high. The correct answer is 5.",
       "2": "4 is too low. The correct answer is 5.",
       "3": "10 is too high. The correct answer is 5."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.05,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.05,
+    "irt_c": 0.25
   },
   {
     "id": "WOR-060",
@@ -9636,7 +13300,15 @@
       "0": "30 is too high. The correct answer is 10.",
       "1": "8 is too low. The correct answer is 10.",
       "3": "12 is too high. The correct answer is 10."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 0.0,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 0.0,
+    "irt_c": 0.25
   },
   {
     "id": "WOR-061",
@@ -9657,7 +13329,15 @@
       "1": "7 is too low. The correct answer is 28.",
       "2": "32 is too high. The correct answer is 28.",
       "3": "24 is too low. The correct answer is 28."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 0.05,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 0.05,
+    "irt_c": 0.25
   },
   {
     "id": "WOR-062",
@@ -9678,7 +13358,15 @@
       "1": "5 is too low. The correct answer is 10.",
       "2": "7 is too low. The correct answer is 10.",
       "3": "8 is too low. The correct answer is 10."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 0.1,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 0.1,
+    "irt_c": 0.25
   },
   {
     "id": "WOR-063",
@@ -9699,7 +13387,15 @@
       "0": "24 is too high. The correct answer is 18.",
       "1": "12 is too low. The correct answer is 18.",
       "3": "9 is too low. The correct answer is 18."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 0.15,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 0.15,
+    "irt_c": 0.25
   },
   {
     "id": "WOR-064",
@@ -9720,7 +13416,15 @@
       "0": "10 is too high. The correct answer is 8.",
       "1": "6 is too low. The correct answer is 8.",
       "3": "2 is too low. The correct answer is 8."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 0.2,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 0.2,
+    "irt_c": 0.25
   },
   {
     "id": "WOR-065",
@@ -9741,7 +13445,15 @@
       "0": "13 is too high. The correct answer is 9.",
       "2": "7 is too low. The correct answer is 9.",
       "3": "11 is too high. The correct answer is 9."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 0.25,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 0.25,
+    "irt_c": 0.25
   },
   {
     "id": "PUZ-037",
@@ -9762,7 +13474,15 @@
       "1": "4 is too low. The correct answer is 5.",
       "2": "6 is too high. The correct answer is 5.",
       "3": "3 is too low. The correct answer is 5."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.15,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.15,
+    "irt_c": 0.25
   },
   {
     "id": "PUZ-038",
@@ -9783,7 +13503,15 @@
       "0": "4 is too high. The correct answer is 3.",
       "1": "2 is too low. The correct answer is 3.",
       "3": "5 is too high. The correct answer is 3."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.1,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.1,
+    "irt_c": 0.25
   },
   {
     "id": "PUZ-039",
@@ -9804,7 +13532,15 @@
       "0": "3 is too high. The correct answer is 2.",
       "2": "1 is too low. The correct answer is 2.",
       "3": "4 is too high. The correct answer is 2."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.05,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.05,
+    "irt_c": 0.25
   },
   {
     "id": "PUZ-040",
@@ -9825,7 +13561,15 @@
       "0": "2 is too low. The correct answer is 3.",
       "1": "5 is too high. The correct answer is 3.",
       "3": "4 is too high. The correct answer is 3."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.0,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.0,
+    "irt_c": 0.25
   },
   {
     "id": "PUZ-085",
@@ -9846,7 +13590,15 @@
       "0": "8 is too high. The correct answer is 6.",
       "1": "3 is too low. The correct answer is 6.",
       "3": "4 is too low. The correct answer is 6."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.25,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.25,
+    "irt_c": 0.25
   },
   {
     "id": "PUZ-086",
@@ -9867,7 +13619,15 @@
       "0": "3 is too low. The correct answer is 4.",
       "2": "1 is too low. The correct answer is 4.",
       "3": "7 is too high. The correct answer is 4."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.3,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.3,
+    "irt_c": 0.25
   },
   {
     "id": "PUZ-087",
@@ -9888,7 +13648,15 @@
       "0": "4 is too low. The correct answer is 5.",
       "1": "3 is too low. The correct answer is 5.",
       "2": "7 is too high. The correct answer is 5."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.35,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.35,
+    "irt_c": 0.25
   },
   {
     "id": "PUZ-088",
@@ -9909,7 +13677,15 @@
       "0": "4 is too high. The correct answer is 2.",
       "1": "5 is too high. The correct answer is 2.",
       "2": "3 is too high. The correct answer is 2."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.4,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.4,
+    "irt_c": 0.25
   },
   {
     "id": "PUZ-089",
@@ -9930,7 +13706,15 @@
       "0": "2 is too low. The correct answer is 3.",
       "1": "4 is too high. The correct answer is 3.",
       "3": "1 is too low. The correct answer is 3."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.45,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.45,
+    "irt_c": 0.25
   },
   {
     "id": "T8-101",
@@ -9951,7 +13735,15 @@
       "1": "6 is too low. The correct answer is 9.",
       "2": "10 is too high. The correct answer is 9.",
       "3": "8 is too low. The correct answer is 9."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.7,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.7,
+    "irt_c": 0.25
   },
   {
     "id": "T8-107",
@@ -9972,7 +13764,15 @@
       "0": "12 is too low. The correct answer is 15.",
       "1": "18 is too high. The correct answer is 15.",
       "2": "16 is too high. The correct answer is 15."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.05,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.05,
+    "irt_c": 0.25
   },
   {
     "id": "T8-117",
@@ -9993,7 +13793,15 @@
       "0": "11 is too high. The correct answer is 10.",
       "1": "12 is too high. The correct answer is 10.",
       "2": "9 is too low. The correct answer is 10."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.4,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.4,
+    "irt_c": 0.25
   },
   {
     "id": "T8-130",
@@ -10014,7 +13822,15 @@
       "0": "2 is too low. The correct answer is 5.",
       "1": "7 is too high. The correct answer is 5.",
       "3": "8 is too high. The correct answer is 5."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.1,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.1,
+    "irt_c": 0.25
   },
   {
     "id": "T8-149",
@@ -10035,7 +13851,15 @@
       "0": "1 is too low. The correct answer is 3.",
       "2": "2 is too low. The correct answer is 3.",
       "3": "5 is too high. The correct answer is 3."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.85,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.85,
+    "irt_c": 0.25
   },
   {
     "id": "T8-151",
@@ -10056,7 +13880,15 @@
       "0": "3 is too high. The correct answer is 2.",
       "1": "4 is too high. The correct answer is 2.",
       "2": "1 is too low. The correct answer is 2."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.6,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.6,
+    "irt_c": 0.25
   },
   {
     "id": "T8-159",
@@ -10077,7 +13909,15 @@
       "0": "2 is too low. The correct answer is 3.",
       "1": "6 is too high. The correct answer is 3.",
       "2": "1 is too low. The correct answer is 3."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.65,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.65,
+    "irt_c": 0.25
   },
   {
     "id": "T8-166",
@@ -10098,7 +13938,15 @@
       "1": "0 is too low. The correct answer is 2.",
       "2": "3 is too high. The correct answer is 2.",
       "3": "4 is too high. The correct answer is 2."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.6,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.6,
+    "irt_c": 0.25
   },
   {
     "id": "T8-212",
@@ -10119,7 +13967,15 @@
       "1": "17 is too low. The correct answer is 18.",
       "2": "21 is too high. The correct answer is 18.",
       "3": "20 is too high. The correct answer is 18."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.95,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.95,
+    "irt_c": 0.25
   },
   {
     "id": "T8-222",
@@ -10140,7 +13996,15 @@
       "0": "1 is too low. The correct answer is 2.",
       "1": "0 is too low. The correct answer is 2.",
       "2": "5 is too high. The correct answer is 2."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.45,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.45,
+    "irt_c": 0.25
   },
   {
     "id": "T8-253",
@@ -10161,7 +14025,15 @@
       "0": "8 is too low. The correct answer is 12.",
       "2": "9 is too low. The correct answer is 12.",
       "3": "10 is too low. The correct answer is 12."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 0.2,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 0.2,
+    "irt_c": 0.25
   },
   {
     "id": "T8-279",
@@ -10182,7 +14054,15 @@
       "0": "4 is too high. The correct answer is 2.",
       "2": "3 is too high. The correct answer is 2.",
       "3": "1 is too low. The correct answer is 2."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.45,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.45,
+    "irt_c": 0.25
   },
   {
     "id": "T8-294",
@@ -10203,7 +14083,15 @@
       "0": "21 is too high. The correct answer is 18.",
       "1": "20 is too high. The correct answer is 18.",
       "2": "19 is too high. The correct answer is 18."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.9,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.9,
+    "irt_c": 0.25
   },
   {
     "id": "T8-306",
@@ -10224,7 +14112,15 @@
       "1": "4 is too high. The correct answer is 3.",
       "2": "0 is too low. The correct answer is 3.",
       "3": "2 is too low. The correct answer is 3."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.85,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.85,
+    "irt_c": 0.25
   },
   {
     "id": "T8-338",
@@ -10245,7 +14141,15 @@
       "0": "4 is too high. The correct answer is 1.",
       "2": "2 is too high. The correct answer is 1.",
       "3": "3 is too high. The correct answer is 1."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.2,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.2,
+    "irt_c": 0.25
   },
   {
     "id": "T8-353",
@@ -10266,7 +14170,15 @@
       "1": "9 is too high. The correct answer is 6.",
       "2": "5 is too low. The correct answer is 6.",
       "3": "8 is too high. The correct answer is 6."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.05,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.05,
+    "irt_c": 0.25
   },
   {
     "id": "T8-401",
@@ -10287,7 +14199,15 @@
       "0": "26 is too high. The correct answer is 23.",
       "1": "24 is too high. The correct answer is 23.",
       "2": "22 is too low. The correct answer is 23."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 0.05,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 0.05,
+    "irt_c": 0.25
   },
   {
     "id": "T8-440",
@@ -10308,7 +14228,15 @@
       "0": "12 is too high. The correct answer is 9.",
       "2": "6 is too low. The correct answer is 9.",
       "3": "8 is too low. The correct answer is 9."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.9,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.9,
+    "irt_c": 0.25
   },
   {
     "id": "T8-458",
@@ -10329,7 +14257,15 @@
       "1": "5 is too high. The correct answer is 3.",
       "2": "1 is too low. The correct answer is 3.",
       "3": "0 is too low. The correct answer is 3."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -1.45,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -1.45,
+    "irt_c": 0.25
   },
   {
     "id": "T8-476",
@@ -10350,7 +14286,15 @@
       "0": "13 is too high. The correct answer is 12.",
       "1": "11 is too low. The correct answer is 12.",
       "3": "8 is too low. The correct answer is 12."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 0.05,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 0.05,
+    "irt_c": 0.25
   },
   {
     "id": "T8-484",
@@ -10371,7 +14315,15 @@
       "0": "5 is too high. The correct answer is 4.",
       "1": "3 is too low. The correct answer is 4.",
       "3": "2 is too low. The correct answer is 4."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.85,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.85,
+    "irt_c": 0.25
   },
   {
     "id": "T8-508",
@@ -10392,7 +14344,15 @@
       "0": "19 is too high. The correct answer is 16.",
       "1": "20 is too high. The correct answer is 16.",
       "3": "18 is too high. The correct answer is 16."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": 1.5,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 1.5,
+    "irt_c": 0.25
   },
   {
     "id": "T8-562",
@@ -10413,6 +14373,14 @@
       "0": "5 is too high. The correct answer is 4.",
       "1": "7 is too high. The correct answer is 4.",
       "2": "1 is too low. The correct answer is 4."
-    }
+    },
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.4,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.4,
+    "irt_c": 0.25
   }
 ]

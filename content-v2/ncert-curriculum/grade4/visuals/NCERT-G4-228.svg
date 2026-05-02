@@ -1,0 +1,17 @@
+<svg viewBox="0 0 240 140" xmlns="http://www.w3.org/2000/svg">
+<rect width="240" height="140" fill="#FFFEF5" rx="8"/>
+<text x="120" y="16" text-anchor="middle" font-size="9" font-weight="bold" fill="#2C3E50">Population (in thousands)</text>
+<rect x="20" y="41" width="35" height="69" fill="#FF6B6B" rx="3"/>
+<text x="37" y="125" text-anchor="middle" font-size="8" fill="#333">Delhi</text>
+<text x="37" y="37" text-anchor="middle" font-size="7" fill="#333">3803</text>
+<rect x="70" y="61" width="35" height="49" fill="#4ECDC4" rx="3"/>
+<text x="87" y="125" text-anchor="middle" font-size="8" fill="#333">Mumbai</text>
+<text x="87" y="57" text-anchor="middle" font-size="7" fill="#333">2719</text>
+<rect x="120" y="30" width="35" height="80" fill="#45B7D1" rx="3"/>
+<text x="137" y="125" text-anchor="middle" font-size="8" fill="#333">Kolkata</text>
+<text x="137" y="26" text-anchor="middle" font-size="7" fill="#333">4385</text>
+<rect x="170" y="81" width="35" height="29" fill="#96CEB4" rx="3"/>
+<text x="187" y="125" text-anchor="middle" font-size="8" fill="#333">Jaipur</text>
+<text x="187" y="77" text-anchor="middle" font-size="7" fill="#333">1612</text>
+
+</svg>

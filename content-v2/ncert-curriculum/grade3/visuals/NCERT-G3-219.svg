@@ -1,0 +1,17 @@
+<svg viewBox="0 0 240 140" xmlns="http://www.w3.org/2000/svg">
+<rect width="240" height="140" fill="#FFFEF5" rx="8"/>
+<text x="120" y="16" text-anchor="middle" font-size="9" font-weight="bold" fill="#2C3E50">Favourite Fruits Survey</text>
+<rect x="20" y="54" width="35" height="56" fill="#FF6B6B" rx="3"/>
+<text x="37" y="125" text-anchor="middle" font-size="8" fill="#333">Apple</text>
+<text x="37" y="50" text-anchor="middle" font-size="7" fill="#333">17</text>
+<rect x="70" y="30" width="35" height="80" fill="#4ECDC4" rx="3"/>
+<text x="87" y="125" text-anchor="middle" font-size="8" fill="#333">Mango</text>
+<text x="87" y="26" text-anchor="middle" font-size="7" fill="#333">24</text>
+<rect x="120" y="50" width="35" height="60" fill="#45B7D1" rx="3"/>
+<text x="137" y="125" text-anchor="middle" font-size="8" fill="#333">Guava</text>
+<text x="137" y="46" text-anchor="middle" font-size="7" fill="#333">18</text>
+<rect x="170" y="70" width="35" height="40" fill="#96CEB4" rx="3"/>
+<text x="187" y="125" text-anchor="middle" font-size="8" fill="#333">Orange</text>
+<text x="187" y="66" text-anchor="middle" font-size="7" fill="#333">12</text>
+
+</svg>

@@ -14,8 +14,10 @@ import 'screens/question_screen_v2.dart';
 import 'screens/sign_in_screen.dart';
 import 'services/api_client.dart';
 import 'services/auth_service.dart';
+import 'models/companion.dart';
 import 'services/companion_service.dart';
 import 'theme/kiwi_theme.dart';
+import 'widgets/companion_view.dart';
 import 'widgets/parental_gate.dart';
 
 Future<void> main() async {
@@ -83,6 +85,12 @@ class _AppShellState extends State<_AppShell> {
   bool _loading = true;
   String? _error;
 
+  // Bottom nav tab index: 0=Home, 1=Learning Path, 2=Parent
+  int _selectedTab = 0;
+
+  // Whether the parental gate has been passed this session (for Parent tab).
+  bool _parentGatePassed = false;
+
   // Multi-grade support.
   int _selectedGrade = 1;
 
@@ -92,6 +100,10 @@ class _AppShellState extends State<_AppShell> {
   // v2 topics.
   List<TopicV2>? _topicsV2;
   bool _topicsV2Loading = false;
+
+  // Curriculum chapters (for home screen + path screen).
+  List<Map<String, dynamic>>? _chapters;
+  bool _chaptersLoading = false;
 
   // Student level progression.
   StudentLevels? _studentLevels;
@@ -134,13 +146,21 @@ class _AppShellState extends State<_AppShell> {
         _profile = profile;
         _loading = false;
         // Use saved display name if we don't already have one from onboarding.
+        // Reject names that look like truncated email prefixes or junk
+        // (too short, all lowercase, matches email-like patterns).
         if (_studentName.isEmpty &&
             profile.displayName.isNotEmpty &&
-            profile.displayName != 'Kiwi Learner') {
+            profile.displayName != 'Kiwi Learner' &&
+            profile.displayName.length >= 3) {
           _studentName = profile.displayName;
         }
       });
       _maybeShowOnboarding();
+      // Always reload chapters after profile is ready (fixes race condition
+      // where _loadChapters() was called before profile had curriculum set).
+      if (_profile.hasCurriculum) {
+        _loadChapters();
+      }
     } catch (e) {
       debugPrint('Failed to load profile: $e');
       setState(() {
@@ -153,17 +173,25 @@ class _AppShellState extends State<_AppShell> {
 
   /// Detects a first-launch and pushes the onboarding flow.
   ///
-  /// Heuristic: if the loaded profile has zero XP, zero streak, and zero
-  /// daily progress, treat it as a brand-new user. After onboarding completes
-  /// (which submits 10 answers and seeds the adaptive engine), the next
-  /// profile load will have non-zero XP and we'll skip this branch.
+  /// Uses the persistent `onboarded_at` flag from Firestore — not a fragile
+  /// heuristic based on stats being zero. If the profile fetch failed (network
+  /// error), we do NOT trigger onboarding — show offline mode instead.
   void _maybeShowOnboarding() {
     if (_onboardingHandled) return;
-    final isFresh = _profile.xpTotal == 0 &&
-        _profile.streakCurrent == 0 &&
-        _profile.dailyProgress == 0 &&
-        _profile.kiwiCoins == 0;
-    if (!isFresh) {
+    // If we have a valid onboarded_at timestamp, user is not new.
+    if (_profile.hasOnboarded) {
+      _onboardingHandled = true;
+      // Also restore saved grade from profile if available.
+      if (_profile.grade != null && _profile.grade != _selectedGrade) {
+        setState(() => _selectedGrade = _profile.grade!);
+        _loadTopicsV2();
+      }
+      // Load chapters for curriculum-based users.
+      _loadChapters();
+      return;
+    }
+    // If profile has errors (userId empty = fetch failed), don't trigger onboarding.
+    if (_error != null) {
       _onboardingHandled = true;
       return;
     }
@@ -182,46 +210,19 @@ class _AppShellState extends State<_AppShell> {
                 setState(() => _studentName = result.kidName);
               }
               // Switch the home view to the recommended grade and refresh.
-              final newGrade = result.grade.clamp(1, 5);
+              final newGrade = result.grade.clamp(1, 6);
               if (newGrade != _selectedGrade) {
                 setState(() => _selectedGrade = newGrade);
                 _loadTopicsV2();
               }
               Navigator.of(context).pop();
               _loadProfile();
+              _loadChapters();
             },
           ),
         ),
       );
     });
-  }
-
-  Future<void> _openParentDashboard() async {
-    // Parental gate — multiplication problem a kid can't solve.
-    final verified = await ParentalGate.show(context);
-    if (!verified || !mounted) return;
-    Navigator.of(context).push(
-      MaterialPageRoute(
-        builder: (_) => ParentDashboardScreen(
-          userId: widget.userId,
-          childName: _profile.displayName == 'Kiwi Learner'
-              ? null
-              : _profile.displayName,
-        ),
-      ),
-    );
-  }
-
-  void _openLearningPath() {
-    Navigator.of(context).push(
-      MaterialPageRoute(
-        builder: (_) => LearningPathScreen(
-          userId: widget.userId,
-          grade: _selectedGrade,
-          companionService: _companionService,
-        ),
-      ),
-    );
   }
 
   void _restartOnboarding() {
@@ -234,13 +235,14 @@ class _AppShellState extends State<_AppShell> {
             if (result.kidName.isNotEmpty) {
               setState(() => _studentName = result.kidName);
             }
-            final newGrade = result.grade.clamp(1, 5);
+            final newGrade = result.grade.clamp(1, 6);
             if (newGrade != _selectedGrade) {
               setState(() => _selectedGrade = newGrade);
               _loadTopicsV2();
             }
             Navigator.of(context).pop();
             _loadProfile();
+            _loadChapters();
           },
         ),
       ),
@@ -260,6 +262,29 @@ class _AppShellState extends State<_AppShell> {
       setState(() {
         _topicsV2 = null;
         _topicsV2Loading = false;
+      });
+    }
+  }
+
+  Future<void> _loadChapters() async {
+    // Only load chapters if user has a curriculum-based selection (not olympiad).
+    final cur = _profile.curriculum;
+    if (cur == null || cur.isEmpty || cur == 'olympiad') return;
+    setState(() => _chaptersLoading = true);
+    try {
+      final chapters = await _api.getChapters(
+        curriculum: cur,
+        grade: _selectedGrade,
+      );
+      setState(() {
+        _chapters = chapters;
+        _chaptersLoading = false;
+      });
+    } catch (e) {
+      debugPrint('Failed to load chapters: $e');
+      setState(() {
+        _chapters = null;
+        _chaptersLoading = false;
       });
     }
   }
@@ -351,12 +376,117 @@ class _AppShellState extends State<_AppShell> {
     if (grade == _selectedGrade) return;
     setState(() => _selectedGrade = grade);
     _loadTopicsV2();
+    _loadChapters();
     _loadStudentLevels();
     _loadMasteryOverview();
   }
 
   Future<void> _signOut() async {
     await AuthService().signOut();
+  }
+
+  void _onTabTapped(int index) async {
+    // Tab 2 = Parent Dashboard — requires parental gate
+    if (index == 2 && !_parentGatePassed) {
+      final verified = await ParentalGate.show(context);
+      if (!verified || !mounted) return;
+      setState(() => _parentGatePassed = true);
+    }
+    setState(() => _selectedTab = index);
+  }
+
+  void _showProfileSheet() {
+    final tier = KiwiTier.forGrade(_selectedGrade);
+    final name = _studentName.isNotEmpty ? _studentName : _profile.displayName;
+    showModalBottomSheet(
+      context: context,
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
+      ),
+      builder: (ctx) => SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 20),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              // Handle
+              Container(
+                width: 36, height: 4,
+                decoration: BoxDecoration(
+                  color: Colors.grey.shade300,
+                  borderRadius: BorderRadius.circular(2),
+                ),
+              ),
+              const SizedBox(height: 16),
+              // Avatar + name
+              Container(
+                width: 56, height: 56,
+                decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                    colors: [tier.colors.primary, tier.colors.primaryDark],
+                    begin: Alignment.topLeft,
+                    end: Alignment.bottomRight,
+                  ),
+                  shape: BoxShape.circle,
+                ),
+                child: Center(
+                  child: Text(
+                    name.isNotEmpty ? name[0].toUpperCase() : 'K',
+                    style: const TextStyle(fontSize: 22, fontWeight: FontWeight.w800, color: Colors.white),
+                  ),
+                ),
+              ),
+              const SizedBox(height: 10),
+              Text(name, style: TextStyle(fontSize: 18, fontWeight: FontWeight.w800, color: tier.colors.textPrimary)),
+              Text('Grade $_selectedGrade', style: TextStyle(fontSize: 13, color: tier.colors.textMuted)),
+              const SizedBox(height: 6),
+              // Stats
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  _buildStatChip('\u{1F525}', '${_profile.streakCurrent}', tier),
+                  const SizedBox(width: 8),
+                  _buildStatChip('\u{2B50}', '${_profile.xpTotal} XP', tier),
+                  const SizedBox(width: 8),
+                  _buildStatChip('\u{1FA99}', '${_profile.kiwiCoins}', tier),
+                ],
+              ),
+              const SizedBox(height: 20),
+              // Actions
+              ListTile(
+                leading: Icon(Icons.refresh_rounded, color: tier.colors.primary),
+                title: const Text('Retake Diagnostic Test'),
+                onTap: () { Navigator.pop(ctx); _restartOnboarding(); },
+              ),
+              ListTile(
+                leading: Icon(Icons.logout_rounded, color: Colors.red.shade400),
+                title: const Text('Sign Out'),
+                onTap: () { Navigator.pop(ctx); _signOut(); },
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _buildStatChip(String emoji, String label, KiwiTier tier) {
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+      decoration: BoxDecoration(
+        color: tier.colors.cardBg,
+        borderRadius: BorderRadius.circular(12),
+        border: Border.all(color: tier.colors.primary.withOpacity(0.12)),
+      ),
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Text(emoji, style: const TextStyle(fontSize: 13)),
+          const SizedBox(width: 4),
+          Text(label, style: TextStyle(fontSize: 12, fontWeight: FontWeight.w700, color: tier.colors.textPrimary)),
+        ],
+      ),
+    );
   }
 
   @override
@@ -367,76 +497,172 @@ class _AppShellState extends State<_AppShell> {
       );
     }
 
-    final homeScreen = HomeScreen(
-      studentName: _studentName.isNotEmpty ? _studentName : _profile.displayName,
-      streak: _profile.streakCurrent,
-      kiwiCoins: _profile.kiwiCoins,
-      masteryGems: _profile.masteryGems,
-      xp: _profile.xpTotal,
-      dailyProgress: _profile.dailyProgress,
-      dailyGoal: _profile.dailyGoal,
-      onTopicTap: (topicId, topicName) => _navigateToQuestions(
-        topicId: topicId,
-        topicName: topicName,
-      ),
-      onSignOut: _signOut,
-      selectedGrade: _selectedGrade,
-      onGradeChanged: _onGradeChanged,
-      topicsV2: _topicsV2,
-      topicsV2Loading: _topicsV2Loading,
-      companionService: _companionService,
-      studentLevels: _studentLevels,
-      onOpenLearningPath: _openLearningPath,
-      onOpenParentDashboard: _openParentDashboard,
-      onRestartOnboarding: _restartOnboarding,
-      masteryOverview: _masteryOverview,
-      onSmartSession: _navigateToSmartSession,
-    );
+    final tier = KiwiTier.forGrade(_selectedGrade);
 
-    // Show offline banner if initial profile load failed.
-    if (_error != null) {
-      return Stack(
+    // Use IndexedStack to preserve tab state — avoids re-creating
+    // LearningPathScreen (and re-fetching from the backend) on every tab tap.
+    final shell = Scaffold(
+      body: Stack(
         children: [
-          homeScreen,
-          Positioned(
-            top: 0,
-            left: 0,
-            right: 0,
-            child: SafeArea(
-              child: Container(
-                margin: const EdgeInsets.symmetric(horizontal: 14, vertical: 6),
-                padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
-                decoration: BoxDecoration(
-                  color: const Color(0xFFFFF3E0),
-                  borderRadius: BorderRadius.circular(10),
-                  border: Border.all(color: const Color(0xFFFFCC80)),
+          IndexedStack(
+            index: _selectedTab,
+            children: [
+              // Tab 0 — Home
+              HomeScreen(
+                studentName: _studentName.isNotEmpty ? _studentName : _profile.displayName,
+                streak: _profile.streakCurrent,
+                kiwiCoins: _profile.kiwiCoins,
+                masteryGems: _profile.masteryGems,
+                xp: _profile.xpTotal,
+                dailyProgress: _profile.dailyProgress,
+                dailyGoal: _profile.dailyGoal,
+                onTopicTap: (topicId, topicName) => _navigateToQuestions(
+                  topicId: topicId,
+                  topicName: topicName,
                 ),
-                child: Row(
-                  children: [
-                    const Icon(Icons.cloud_off, size: 16, color: Color(0xFFE65100)),
-                    const SizedBox(width: 8),
-                    Expanded(
-                      child: Text(
-                        _error!,
-                        style: const TextStyle(fontSize: 12, color: Color(0xFFE65100)),
+                onSignOut: _signOut,
+                selectedGrade: _selectedGrade,
+                onGradeChanged: _onGradeChanged,
+                topicsV2: _topicsV2,
+                topicsV2Loading: _topicsV2Loading,
+                companionService: _companionService,
+                studentLevels: _studentLevels,
+                onOpenLearningPath: () => _onTabTapped(1),
+                onOpenParentDashboard: () => _onTabTapped(2),
+                onRestartOnboarding: _restartOnboarding,
+                masteryOverview: _masteryOverview,
+                onSmartSession: _navigateToSmartSession,
+                onAvatarTap: _showProfileSheet,
+                curriculum: _profile.curriculum,
+                chapters: _chapters,
+                chaptersLoading: _chaptersLoading,
+              ),
+              // Tab 1 — Learning Path
+              LearningPathScreen(
+                userId: widget.userId,
+                grade: _selectedGrade,
+                companionService: _companionService,
+                studentLevels: _studentLevels,
+                embedded: true,
+                curriculum: _profile.curriculum,
+              ),
+              // Tab 2 — Parent Dashboard
+              _parentGatePassed
+                  ? ParentDashboardScreen(
+                      userId: widget.userId,
+                      childName: _studentName.isNotEmpty
+                          ? _studentName
+                          : (_profile.displayName != 'Kiwi Learner' ? _profile.displayName : null),
+                      embedded: true,
+                      curriculum: _profile.curriculum,
+                    )
+                  : const Scaffold(body: Center(child: CircularProgressIndicator())),
+            ],
+          ),
+          // Show offline banner if initial profile load failed
+          if (_error != null)
+            Positioned(
+              top: 0,
+              left: 0,
+              right: 0,
+              child: SafeArea(
+                child: Container(
+                  margin: const EdgeInsets.symmetric(horizontal: 14, vertical: 6),
+                  padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
+                  decoration: BoxDecoration(
+                    color: const Color(0xFFFFF3E0),
+                    borderRadius: BorderRadius.circular(10),
+                    border: Border.all(color: const Color(0xFFFFCC80)),
+                  ),
+                  child: Row(
+                    children: [
+                      const Icon(Icons.cloud_off, size: 16, color: Color(0xFFE65100)),
+                      const SizedBox(width: 8),
+                      Expanded(
+                        child: Text(
+                          _error!,
+                          style: const TextStyle(fontSize: 12, color: Color(0xFFE65100)),
+                        ),
                       ),
-                    ),
-                    GestureDetector(
-                      onTap: _loadProfile,
-                      child: const Padding(
-                        padding: EdgeInsets.only(left: 8),
-                        child: Icon(Icons.refresh, size: 18, color: Color(0xFFE65100)),
+                      GestureDetector(
+                        onTap: _loadProfile,
+                        child: const Padding(
+                          padding: EdgeInsets.only(left: 8),
+                          child: Icon(Icons.refresh, size: 18, color: Color(0xFFE65100)),
+                        ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ),
             ),
-          ),
         ],
-      );
-    }
+      ),
+      bottomNavigationBar: Container(
+        decoration: BoxDecoration(
+          color: tier.colors.cardBg,
+          boxShadow: [
+            BoxShadow(
+              color: Colors.black.withOpacity(0.06),
+              blurRadius: 12,
+              offset: const Offset(0, -2),
+            ),
+          ],
+        ),
+        child: SafeArea(
+          top: false,
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 6),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                _buildNavItem(0, Icons.home_rounded, 'Home', tier),
+                _buildNavItem(1, Icons.alt_route_rounded, 'Path', tier),
+                _buildNavItem(2, Icons.family_restroom_rounded, 'Parent', tier),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
 
-    return homeScreen;
+    return shell;
+  }
+
+  Widget _buildNavItem(int index, IconData icon, String label, KiwiTier tier) {
+    final isSelected = _selectedTab == index;
+    return GestureDetector(
+      onTap: () => _onTabTapped(index),
+      behavior: HitTestBehavior.opaque,
+      child: AnimatedContainer(
+        duration: const Duration(milliseconds: 200),
+        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+        decoration: isSelected
+            ? BoxDecoration(
+                color: tier.colors.primary.withOpacity(0.1),
+                borderRadius: BorderRadius.circular(14),
+              )
+            : null,
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Icon(
+              icon,
+              size: 24,
+              color: isSelected ? tier.colors.primary : tier.colors.textMuted,
+            ),
+            const SizedBox(height: 2),
+            Text(
+              label,
+              style: TextStyle(
+                fontSize: 11,
+                fontWeight: isSelected ? FontWeight.w700 : FontWeight.w500,
+                color: isSelected ? tier.colors.primary : tier.colors.textMuted,
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
   }
 }

@@ -1,0 +1,18 @@
+<svg viewBox="0 0 260 150" xmlns="http://www.w3.org/2000/svg">
+<rect width="260" height="150" fill="#FFFEF5" rx="8"/>
+<text x="130" y="15" text-anchor="middle" font-size="9" font-weight="bold" fill="#2C3E50">Favourite Colours</text>
+<line x1="40" y1="125" x2="240" y2="125" stroke="#333" stroke-width="1.5"/>
+<line x1="40" y1="25" x2="40" y2="125" stroke="#333" stroke-width="1.5"/>
+<rect x="50" y="68" width="30" height="57" fill="#E74C3C"/>
+<text x="65" y="137" text-anchor="middle" font-size="7" fill="#333">Red</text>
+<text x="65" y="65" text-anchor="middle" font-size="7" fill="#333">9</text>
+<rect x="95" y="93" width="30" height="32" fill="#3498DB"/>
+<text x="110" y="137" text-anchor="middle" font-size="7" fill="#333">Blue</text>
+<text x="110" y="90" text-anchor="middle" font-size="7" fill="#333">5</text>
+<rect x="140" y="48" width="30" height="77" fill="#2ECC71"/>
+<text x="155" y="137" text-anchor="middle" font-size="7" fill="#333">Green</text>
+<text x="155" y="45" text-anchor="middle" font-size="7" fill="#333">12</text>
+<rect x="185" y="35" width="30" height="90" fill="#F39C12"/>
+<text x="200" y="137" text-anchor="middle" font-size="7" fill="#333">Yellow</text>
+<text x="200" y="32" text-anchor="middle" font-size="7" fill="#333">14</text>
+</svg>

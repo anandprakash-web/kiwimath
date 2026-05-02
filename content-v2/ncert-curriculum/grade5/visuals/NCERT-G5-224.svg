@@ -1,0 +1,8 @@
+<svg viewBox="0 0 260 150" xmlns="http://www.w3.org/2000/svg">
+  <polygon points="60,50 180,50 180,120 60,120" fill="none" stroke="#2196F3" stroke-width="2"/>
+  <polygon points="60,50 90,30 210,30 180,50" fill="none" stroke="#2196F3" stroke-width="2"/>
+  <polygon points="180,50 210,30 210,100 180,120" fill="none" stroke="#2196F3" stroke-width="2"/>
+  <text x="120" y="135" font-size="10" fill="#333">l</text>
+  <text x="195" y="75" font-size="10" fill="#333">h</text>
+  <text x="195" y="25" font-size="10" fill="#333">w</text>
+</svg>

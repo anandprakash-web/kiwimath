@@ -1,0 +1,11 @@
+<svg viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+  <rect width="200" height="120" fill="#FFF9E6" rx="5"/>
+  <text x="100" y="15" text-anchor="middle" font-size="10" fill="#333">Number: 33</text>
+  <rect x="10" y="22" width="12" height="60" fill="#45B7D1" rx="2" stroke="#333" stroke-width="0.5"/>
+  <rect x="28" y="22" width="12" height="60" fill="#45B7D1" rx="2" stroke="#333" stroke-width="0.5"/>
+  <rect x="46" y="22" width="12" height="60" fill="#45B7D1" rx="2" stroke="#333" stroke-width="0.5"/>
+  <rect x="10" y="90" width="10" height="10" fill="#FF6B6B" rx="1" stroke="#333" stroke-width="0.5"/>
+  <rect x="24" y="90" width="10" height="10" fill="#FF6B6B" rx="1" stroke="#333" stroke-width="0.5"/>
+  <rect x="38" y="90" width="10" height="10" fill="#FF6B6B" rx="1" stroke="#333" stroke-width="0.5"/>
+  <text x="100" y="115" text-anchor="middle" font-size="8" fill="#666">Tens (blue) | Ones (red)</text>
+</svg>

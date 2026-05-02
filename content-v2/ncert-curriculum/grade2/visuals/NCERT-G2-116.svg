@@ -1,0 +1,17 @@
+<svg viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+  <rect width="200" height="120" fill="#FFFFF0" rx="5"/>
+  <text x="100" y="12" text-anchor="middle" font-size="8" fill="#333">4 groups of 2</text>
+  <ellipse cx="35" cy="50" rx="16" ry="14" fill="none" stroke="#DDA0DD" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <circle cx="25" cy="43" r="3" fill="#F1948A"/>
+  <circle cx="35" cy="43" r="3" fill="#FF6B6B"/>
+  <ellipse cx="73" cy="50" rx="16" ry="14" fill="none" stroke="#DDA0DD" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <circle cx="63" cy="43" r="3" fill="#45B7D1"/>
+  <circle cx="73" cy="43" r="3" fill="#FF6B6B"/>
+  <ellipse cx="111" cy="50" rx="16" ry="14" fill="none" stroke="#DDA0DD" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <circle cx="101" cy="43" r="3" fill="#DDA0DD"/>
+  <circle cx="111" cy="43" r="3" fill="#96CEB4"/>
+  <ellipse cx="149" cy="50" rx="16" ry="14" fill="none" stroke="#DDA0DD" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <circle cx="139" cy="43" r="3" fill="#85C1E9"/>
+  <circle cx="149" cy="43" r="3" fill="#DDA0DD"/>
+  <text x="100" y="112" text-anchor="middle" font-size="8" fill="#333">4 × 2 = ?</text>
+</svg>

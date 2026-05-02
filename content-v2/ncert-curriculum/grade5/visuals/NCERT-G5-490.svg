@@ -1,0 +1,16 @@
+<svg viewBox="0 0 260 150" xmlns="http://www.w3.org/2000/svg">
+  <text x="130" y="15" text-anchor="middle" font-size="10" font-weight="bold" fill="#333">Rohit's Scores</text>
+  <line x1="25" y1="120" x2="240" y2="120" stroke="#999" stroke-width="1"/>
+  <rect x="46" y="91" width="30" height="29" fill="#66BB6A" rx="2"/>
+  <text x="61" y="135" text-anchor="middle" font-size="7" fill="#333">M1</text>
+  <text x="61" y="88" text-anchor="middle" font-size="7" fill="#333">23</text>
+  <rect x="92" y="43" width="30" height="77" fill="#66BB6A" rx="2"/>
+  <text x="107" y="135" text-anchor="middle" font-size="7" fill="#333">M2</text>
+  <text x="107" y="40" text-anchor="middle" font-size="7" fill="#333">60</text>
+  <rect x="138" y="79" width="30" height="41" fill="#66BB6A" rx="2"/>
+  <text x="153" y="135" text-anchor="middle" font-size="7" fill="#333">M3</text>
+  <text x="153" y="76" text-anchor="middle" font-size="7" fill="#333">32</text>
+  <rect x="184" y="40" width="30" height="80" fill="#66BB6A" rx="2"/>
+  <text x="199" y="135" text-anchor="middle" font-size="7" fill="#333">M4</text>
+  <text x="199" y="37" text-anchor="middle" font-size="7" fill="#333">62</text>
+</svg>

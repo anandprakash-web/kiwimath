@@ -46,8 +46,10 @@ class TopicProgress(BaseModel):
 class RecentActivity(BaseModel):
     question_id: str
     topic_id: str
+    topic_name: str = ""
     correct: bool
     difficulty: int
+    difficulty_label: str = "Medium"  # Easy / Medium / Hard / Challenge
     timestamp: str
 
 
@@ -79,6 +81,17 @@ class ParentDashboardResponse(BaseModel):
 # Helpers
 # ---------------------------------------------------------------------------
 
+def _difficulty_label(difficulty: int) -> str:
+    """Human-friendly difficulty band for parent-facing display."""
+    if difficulty <= 50:
+        return "Easy"
+    if difficulty <= 150:
+        return "Medium"
+    if difficulty <= 250:
+        return "Hard"
+    return "Challenge"
+
+
 def _mastery_label(accuracy: float, attempts: int) -> str:
     """Coarse mastery bucket for a topic."""
     if attempts < 3:
@@ -90,8 +103,16 @@ def _mastery_label(accuracy: float, attempts: int) -> str:
     return "learning"
 
 
-def _build_recommendations(topics: List[TopicProgress]) -> List[str]:
-    """Generate up to 3 plain-language recommendations for the parent."""
+def _build_recommendations(
+    topics: List[TopicProgress],
+    daily_streak: int = 0,
+) -> List[str]:
+    """Generate up to 3 plain-language recommendations for the parent.
+
+    Args:
+        topics: per-topic progress data
+        daily_streak: gamification daily streak (consecutive days active)
+    """
     recs: List[str] = []
     if not topics:
         return ["Welcome! Have your child do their first session to unlock personalized guidance."]
@@ -119,11 +140,18 @@ def _build_recommendations(topics: List[TopicProgress]) -> List[str]:
             f"({round(weakest.accuracy)}% accuracy). Short, frequent sessions help most."
         )
 
-    # Streak / consistency nudge
-    if topics and max(t.streak for t in topics) >= 5:
-        recs.append("Nice momentum — those streaks build long-term retention.")
-    elif sum(t.attempts for t in topics) < 20:
+    # Streak / consistency nudge — only praise streaks when the daily streak
+    # is genuinely above 2 (so the parent doesn't see "Nice momentum" when
+    # the dashboard shows 0 days streak).
+    total_attempts = sum(t.attempts for t in topics)
+    if daily_streak >= 3:
+        recs.append(
+            f"{daily_streak}-day streak! Consistency like this builds long-term retention."
+        )
+    elif total_attempts < 20:
         recs.append("Aim for ~10 questions a day. Consistency beats long sessions.")
+    elif daily_streak == 0 and total_attempts >= 20:
+        recs.append("Your child has been making progress — a short session today would keep the momentum going.")
 
     return recs[:3]
 
@@ -135,16 +163,33 @@ def _build_recommendations(topics: List[TopicProgress]) -> List[str]:
 @router.get("/dashboard", response_model=ParentDashboardResponse)
 def get_parent_dashboard(
     user_id: str = Query(..., min_length=1, description="Child's user ID"),
+    curriculum: Optional[str] = Query(None, description="Child's curriculum: ncert, icse, igcse, olympiad"),
 ):
     """Parent-facing summary of the child's learning state.
 
     Combines adaptive engine ability data with gamification stats and produces
     plain-language recommendations.
+
+    Only shows topics relevant to the child's selected curriculum:
+    - Olympiad users: 8 Kangaroo topics (topic-1 through topic-8)
+    - Curriculum users (NCERT/ICSE/IGCSE): Kangaroo topics + their curriculum topics
     """
-    # ── Per-topic progress ────────────────────────────────────────────
+    # ── Filter topics based on child's curriculum ─────────────────────
+    all_topics = store_v2.topics()
+    if curriculum and curriculum != 'olympiad':
+        # Show only the 8 Kangaroo topics — curriculum progress is shown via chapters
+        relevant_topics = [t for t in all_topics if t.topic_id.startswith("topic-")]
+    else:
+        # Olympiad users: show only the 8 Kangaroo topics
+        relevant_topics = [t for t in all_topics if t.topic_id.startswith("topic-")]
+
+    # ── Per-topic progress (only topics the child has actually attempted) ──
     topic_progress: List[TopicProgress] = []
-    for topic in store_v2.topics():
+    for topic in relevant_topics:
         ability = engine_v2.get_ability(user_id, topic.topic_id)
+        # Only include topics where the child has actually practiced
+        if ability.attempts == 0:
+            continue
         accuracy_pct = (ability.correct / max(1, ability.attempts)) * 100.0
 
         last_ts: Optional[str] = None
@@ -201,18 +246,22 @@ def get_parent_dashboard(
     strengths = [t.topic_id for t in practised_sorted if t.accuracy >= 75][:3]
     needs_practice = [t.topic_id for t in sorted(practised, key=lambda t: t.accuracy) if t.accuracy < 60][:3]
 
-    # ── Recent activity (across topics, latest 10) ────────────────────
+    # ── Recent activity (across topics, latest 10, sorted by recency) ─
     recent: List[RecentActivity] = []
-    for topic in store_v2.topics():
+    for topic in relevant_topics:
         ability = engine_v2.get_ability(user_id, topic.topic_id)
         for h in ability.history:
+            diff = int(h.get("difficulty", 0) or 0)
             recent.append(RecentActivity(
                 question_id=h.get("qid", ""),
                 topic_id=topic.topic_id,
+                topic_name=topic.topic_name,
                 correct=bool(h.get("correct", False)),
-                difficulty=int(h.get("difficulty", 0) or 0),
+                difficulty=diff,
+                difficulty_label=_difficulty_label(diff),
                 timestamp=h.get("ts", ""),
             ))
+    # Sort by timestamp descending — parents want "what did my kid do today"
     recent.sort(key=lambda r: r.timestamp, reverse=True)
     recent = recent[:10]
 
@@ -232,6 +281,6 @@ def get_parent_dashboard(
         topics=topic_progress,
         strengths=strengths,
         needs_practice=needs_practice,
-        recommendations=_build_recommendations(topic_progress),
+        recommendations=_build_recommendations(topic_progress, daily_streak=current_streak),
         recent_activity=recent,
     )

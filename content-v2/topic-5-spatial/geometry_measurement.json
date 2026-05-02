@@ -30,11 +30,23 @@
       "level_2": "Does it have any flat faces?",
       "level_3": "A ball is round everywhere.",
       "level_4": "No flat faces, no edges, no corners.",
-      "level_5": "A ball is round all over \u2014 sphere."
+      "level_5": "A ball is round all over — sphere."
     },
     "concept_cluster": "geometry/3d_shapes",
     "visual_context": "A ball next to labeled 3D shapes: cube, sphere, cylinder, cone.",
-    "interaction_mode": "tap_to_reveal"
+    "interaction_mode": "tap_to_reveal",
+    "irt_params": {
+      "a": 1.05,
+      "b": -2.22,
+      "c": 0.25
+    },
+    "irt_a": 1.05,
+    "irt_b": -2.22,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify the properties to look for",
+      "Compare with the given options"
+    ]
   },
   {
     "id": "T5-1202",
@@ -51,7 +63,7 @@
     "visual_svg": null,
     "visual_alt": null,
     "diagnostics": {
-      "0": "You may be thinking of a square (4 sides). A cube is 3D \u2014 count top, bottom, front, back, left, right.",
+      "0": "You may be thinking of a square (4 sides). A cube is 3D — count top, bottom, front, back, left, right.",
       "1": "You missed one face. Don't forget the bottom!",
       "3": "8 is the number of corners on a cube, not faces."
     },
@@ -71,7 +83,19 @@
     },
     "concept_cluster": "geometry/3d_shapes",
     "visual_context": "A stack of boxes showing flat square faces.",
-    "interaction_mode": "tap_to_reveal"
+    "interaction_mode": "tap_to_reveal",
+    "irt_params": {
+      "a": 1.05,
+      "b": -1.98,
+      "c": 0.25
+    },
+    "irt_a": 1.05,
+    "irt_b": -1.98,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify the properties to look for",
+      "Compare with the given options"
+    ]
   },
   {
     "id": "T5-1203",
@@ -108,7 +132,19 @@
     },
     "concept_cluster": "geometry/3d_shapes",
     "visual_context": "A rolling pin shown beside labeled 3D shapes: sphere, cylinder, cone, cube.",
-    "interaction_mode": "tap_to_reveal"
+    "interaction_mode": "tap_to_reveal",
+    "irt_params": {
+      "a": 1.05,
+      "b": -2.14,
+      "c": 0.25
+    },
+    "irt_a": 1.05,
+    "irt_b": -2.14,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify the properties to look for",
+      "Compare with the given options"
+    ]
   },
   {
     "id": "T5-1204",
@@ -141,11 +177,23 @@
       "level_2": "Flat circles on top and bottom, curved side.",
       "level_3": "It rolls but has two flat ends.",
       "level_4": "Two circle faces + curved surface = ?",
-      "level_5": "A can has two circles and curves \u2014 cylinder."
+      "level_5": "A can has two circles and curves — cylinder."
     },
     "concept_cluster": "geometry/3d_shapes",
     "visual_context": "A pointed party hat next to labeled 3D shapes.",
-    "interaction_mode": "tap_to_reveal"
+    "interaction_mode": "tap_to_reveal",
+    "irt_params": {
+      "a": 1.05,
+      "b": -2.06,
+      "c": 0.25
+    },
+    "irt_a": 1.05,
+    "irt_b": -2.06,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify the properties to look for",
+      "Compare with the given options"
+    ]
   },
   {
     "id": "T5-1205",
@@ -163,7 +211,7 @@
     "visual_alt": null,
     "diagnostics": {
       "0": "A cube can only slide. It has no curved surface to roll.",
-      "1": "A sphere can roll but cannot slide \u2014 it has no flat face.",
+      "1": "A sphere can roll but cannot slide — it has no flat face.",
       "3": "A cone can roll in a circle and slide, but a cylinder does both more clearly with its flat ends and curved side."
     },
     "tags": [
@@ -178,11 +226,23 @@
       "level_2": "Rolling needs curves, sliding needs flat.",
       "level_3": "It has flat circles and a curved side.",
       "level_4": "Curved side rolls, flat end slides.",
-      "level_5": "A cylinder has flat + curved \u2014 rolls and slides."
+      "level_5": "A cylinder has flat + curved — rolls and slides."
     },
     "concept_cluster": "geometry/3d_shapes",
     "visual_context": "A tin can shown with circular top and bottom faces.",
-    "interaction_mode": "tap_to_reveal"
+    "interaction_mode": "tap_to_reveal",
+    "irt_params": {
+      "a": 1.05,
+      "b": -1.68,
+      "c": 0.25
+    },
+    "irt_a": 1.05,
+    "irt_b": -1.68,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify the properties to look for",
+      "Compare with the given options"
+    ]
   },
   {
     "id": "T5-1206",
@@ -219,7 +279,19 @@
     },
     "concept_cluster": "measurement/comparison",
     "visual_context": "The two objects shown side by side for comparison.",
-    "interaction_mode": "drag_and_drop"
+    "interaction_mode": "drag_and_drop",
+    "irt_params": {
+      "a": 1.05,
+      "b": -2.37,
+      "c": 0.25
+    },
+    "irt_a": 1.05,
+    "irt_b": -2.37,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Read the clues or conditions carefully",
+      "Eliminate options that don't fit"
+    ]
   },
   {
     "id": "T5-1207",
@@ -237,7 +309,7 @@
     "visual_alt": null,
     "diagnostics": {
       "0": "Dogs are much shorter than giraffes.",
-      "1": "Giraffes are the tallest land animals \u2014 much taller than dogs.",
+      "1": "Giraffes are the tallest land animals — much taller than dogs.",
       "3": "We know from common sense that giraffes are taller."
     },
     "tags": [
@@ -256,7 +328,19 @@
     },
     "concept_cluster": "measurement/comparison",
     "visual_context": "The objects shown standing next to each other for height comparison.",
-    "interaction_mode": "drag_and_drop"
+    "interaction_mode": "drag_and_drop",
+    "irt_params": {
+      "a": 1.05,
+      "b": -2.45,
+      "c": 0.25
+    },
+    "irt_a": 1.05,
+    "irt_b": -2.45,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Read the clues or conditions carefully",
+      "Eliminate options that don't fit"
+    ]
   },
   {
     "id": "T5-1208",
@@ -293,7 +377,19 @@
     },
     "concept_cluster": "measurement/comparison",
     "visual_context": "The objects shown standing next to each other for height comparison.",
-    "interaction_mode": "drag_and_drop"
+    "interaction_mode": "drag_and_drop",
+    "irt_params": {
+      "a": 1.05,
+      "b": -1.52,
+      "c": 0.25
+    },
+    "irt_a": 1.05,
+    "irt_b": -1.52,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Read the clues or conditions carefully",
+      "Eliminate options that don't fit"
+    ]
   },
   {
     "id": "T5-1209",
@@ -330,7 +426,19 @@
     },
     "concept_cluster": "measurement/comparison",
     "visual_context": "The two objects shown side by side for comparison.",
-    "interaction_mode": "drag_and_drop"
+    "interaction_mode": "drag_and_drop",
+    "irt_params": {
+      "a": 1.05,
+      "b": -2.37,
+      "c": 0.25
+    },
+    "irt_a": 1.05,
+    "irt_b": -2.37,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Read the clues or conditions carefully",
+      "Eliminate options that don't fit"
+    ]
   },
   {
     "id": "T5-1210",
@@ -348,7 +456,7 @@
     "visual_alt": null,
     "diagnostics": {
       "1": "Glass B is only half full, so it has less water.",
-      "2": "One is full and one is half full \u2014 they differ.",
+      "2": "One is full and one is half full — they differ.",
       "3": "The glasses are the same size, so the full one has more."
     },
     "tags": [
@@ -363,11 +471,23 @@
       "level_2": "Full means more water than half full.",
       "level_3": "Same glass size, different fill level.",
       "level_4": "Full glass has twice the water of half-full.",
-      "level_5": "Glass A is full, Glass B is half \u2014 A has more."
+      "level_5": "Glass A is full, Glass B is half — A has more."
     },
     "concept_cluster": "measurement/comparison",
     "interaction_mode": "multiple_choice",
-    "visual_context": "A shape divided into equal parts with some shaded."
+    "visual_context": "A shape divided into equal parts with some shaded.",
+    "irt_params": {
+      "a": 1.05,
+      "b": -1.83,
+      "c": 0.25
+    },
+    "irt_a": 1.05,
+    "irt_b": -1.83,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Read the clues or conditions carefully",
+      "Eliminate options that don't fit"
+    ]
   },
   {
     "id": "T5-1211",
@@ -404,7 +524,20 @@
     },
     "concept_cluster": "geometry/perimeter_area",
     "visual_context": "A rectangle labeled 5 cm on the long side and 3 cm on the short side.",
-    "interaction_mode": "multiple_choice"
+    "interaction_mode": "multiple_choice",
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.29,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.29,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify the properties to look for",
+      "Compare with the given options",
+      "Match the property to the correct shape"
+    ]
   },
   {
     "id": "T5-1212",
@@ -441,7 +574,20 @@
     },
     "concept_cluster": "geometry/perimeter_area",
     "visual_context": "A square garden divided into a 6x6 grid of unit squares, one side labeled '6m'.",
-    "interaction_mode": "multiple_choice"
+    "interaction_mode": "multiple_choice",
+    "irt_params": {
+      "a": 1.1,
+      "b": 0.09,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 0.09,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify the properties of the named shape",
+      "Compare sides, angles, or other features",
+      "Match the property to the correct option"
+    ]
   },
   {
     "id": "T5-1213",
@@ -478,7 +624,20 @@
     },
     "concept_cluster": "geometry/perimeter_area",
     "visual_context": "A rectangle filled with a grid of 4 rows and 8 columns of tiles.",
-    "interaction_mode": "tap_to_count"
+    "interaction_mode": "tap_to_count",
+    "irt_params": {
+      "a": 1.1,
+      "b": 0.32,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 0.32,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify the properties of the named shape",
+      "Compare sides, angles, or other features",
+      "Match the property to the correct option"
+    ]
   },
   {
     "id": "T5-1214",
@@ -515,7 +674,20 @@
     },
     "concept_cluster": "geometry/perimeter_area",
     "visual_context": "A rectangular park with a dotted line showing the walking path around the edge, labeled 10m and 7m.",
-    "interaction_mode": "multiple_choice"
+    "interaction_mode": "multiple_choice",
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.14,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.14,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify the properties to look for",
+      "Compare with the given options",
+      "Match the property to the correct shape"
+    ]
   },
   {
     "id": "T5-1215",
@@ -552,7 +724,20 @@
     },
     "concept_cluster": "geometry/perimeter_area",
     "visual_context": "A square napkin with a ribbon around its edge, total marked as 20 cm.",
-    "interaction_mode": "multiple_choice"
+    "interaction_mode": "multiple_choice",
+    "irt_params": {
+      "a": 1.1,
+      "b": 0.63,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 0.63,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify the properties of the named shape",
+      "Compare sides, angles, or other features",
+      "Match the property to the correct option"
+    ]
   },
   {
     "id": "T5-1216",
@@ -569,9 +754,9 @@
     "visual_svg": null,
     "visual_alt": null,
     "diagnostics": {
-      "0": "An acute angle is less than 90 degrees \u2014 that is less than halfway open.",
-      "2": "An obtuse angle is more than 90 degrees \u2014 the door would be more than halfway.",
-      "3": "A straight angle is 180 degrees \u2014 the door would be flat against the wall."
+      "0": "An acute angle is less than 90 degrees — that is less than halfway open.",
+      "2": "An obtuse angle is more than 90 degrees — the door would be more than halfway.",
+      "3": "A straight angle is 180 degrees — the door would be flat against the wall."
     },
     "tags": [
       "angles",
@@ -589,7 +774,20 @@
     },
     "concept_cluster": "geometry/angles",
     "visual_context": "An angle drawn with two rays from a common point, with an arc marking the angle.",
-    "interaction_mode": "tap_to_reveal"
+    "interaction_mode": "tap_to_reveal",
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.45,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.45,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify the angle type (acute/right/obtuse)",
+      "Right angle = 90°, straight = 180°",
+      "Compare or calculate the angle asked"
+    ]
   },
   {
     "id": "T5-1217",
@@ -608,7 +806,7 @@
     "diagnostics": {
       "0": "An obtuse angle is BIGGER than a right angle, not smaller.",
       "2": "A right angle is exactly 90 degrees, not smaller.",
-      "3": "A reflex angle is greater than 180 degrees \u2014 much bigger."
+      "3": "A reflex angle is greater than 180 degrees — much bigger."
     },
     "tags": [
       "angles",
@@ -617,7 +815,7 @@
     "topic": "spatial_thinking",
     "topic_name": "Spatial Thinking",
     "hint": {
-      "level_0": "Smaller than 90 degrees \u2014 what is it?",
+      "level_0": "Smaller than 90 degrees — what is it?",
       "level_1": "Classify the angle by its size.",
       "level_2": "Less than 90 degrees has a special name.",
       "level_3": "Think: a-cute little angle.",
@@ -626,7 +824,20 @@
     },
     "concept_cluster": "geometry/angles",
     "visual_context": "An angle drawn with two rays from a common point, with an arc marking the angle.",
-    "interaction_mode": "tap_to_reveal"
+    "interaction_mode": "tap_to_reveal",
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.68,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.68,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify the angle type (acute/right/obtuse)",
+      "Right angle = 90°, straight = 180°",
+      "Compare or calculate the angle asked"
+    ]
   },
   {
     "id": "T5-1218",
@@ -663,7 +874,20 @@
     },
     "concept_cluster": "geometry/angles",
     "visual_context": "An angle drawn with two rays from a common point, with an arc marking the angle.",
-    "interaction_mode": "tap_to_reveal"
+    "interaction_mode": "tap_to_reveal",
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.29,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.29,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify the angle type (acute/right/obtuse)",
+      "Right angle = 90°, straight = 180°",
+      "Compare or calculate the angle asked"
+    ]
   },
   {
     "id": "T5-1219",
@@ -700,7 +924,20 @@
     },
     "concept_cluster": "geometry/angles",
     "visual_context": "An angle drawn with two rays from a common point, with an arc marking the angle.",
-    "interaction_mode": "tap_to_reveal"
+    "interaction_mode": "tap_to_reveal",
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.6,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.6,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify the angle type (acute/right/obtuse)",
+      "Right angle = 90°, straight = 180°",
+      "Compare or calculate the angle asked"
+    ]
   },
   {
     "id": "T5-1220",
@@ -717,8 +954,8 @@
     "visual_svg": null,
     "visual_alt": null,
     "diagnostics": {
-      "0": "45 degrees is half of a right angle \u2014 too narrow for a book corner.",
-      "1": "60 degrees is less than a right angle \u2014 not a square corner.",
+      "0": "45 degrees is half of a right angle — too narrow for a book corner.",
+      "1": "60 degrees is less than a right angle — not a square corner.",
       "3": "180 degrees is a straight line, not a corner."
     },
     "tags": [
@@ -737,7 +974,20 @@
     },
     "concept_cluster": "geometry/angles",
     "visual_context": "An angle drawn with two rays from a common point, with an arc marking the angle.",
-    "interaction_mode": "tap_to_reveal"
+    "interaction_mode": "tap_to_reveal",
+    "irt_params": {
+      "a": 1.1,
+      "b": -0.91,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": -0.91,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify the angle type (acute/right/obtuse)",
+      "Right angle = 90°, straight = 180°",
+      "Compare or calculate the angle asked"
+    ]
   },
   {
     "id": "T5-1221",
@@ -772,10 +1022,23 @@
       "level_2": "The fence goes around all 4 sides.",
       "level_3": "Add the length of all four sides.",
       "level_4": "6 + 6 + 6 + 6 = ?",
-      "level_5": "Perimeter = 4 \u00d7 6 = 24 metres."
+      "level_5": "Perimeter = 4 × 6 = 24 metres."
     },
     "concept_cluster": "geometry/perimeter",
-    "interaction_mode": "tap_to_count"
+    "interaction_mode": "tap_to_count",
+    "irt_params": {
+      "a": 1.1,
+      "b": 0.86,
+      "c": 0.25
+    },
+    "irt_a": 1.1,
+    "irt_b": 0.86,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify the properties of the named shape",
+      "Compare sides, angles, or other features",
+      "Match the property to the correct option"
+    ]
   },
   {
     "id": "T5-1222",
@@ -795,7 +1058,7 @@
     "diagnostics": {
       "0": "You added 5 + 8. To find coverage, multiply!",
       "1": "26 is the Perimeter. We want the space inside.",
-      "3": "Check your multiplication: 5 \u00d7 8 is not 45."
+      "3": "Check your multiplication: 5 × 8 is not 45."
     },
     "tags": [
       "area",
@@ -809,10 +1072,23 @@
       "level_1": "Count how many squares in each row.",
       "level_2": "There are 5 rows, each with 8 squares.",
       "level_3": "Multiply length times width.",
-      "level_4": "Calculate 8 \u00d7 5.",
-      "level_5": "Area = 8 \u00d7 5 = 40 square units."
+      "level_4": "Calculate 8 × 5.",
+      "level_5": "Area = 8 × 5 = 40 square units."
     },
     "concept_cluster": "geometry/area",
-    "interaction_mode": "multiple_choice"
+    "interaction_mode": "multiple_choice",
+    "irt_params": {
+      "a": 1.15,
+      "b": 2.4,
+      "c": 0.25
+    },
+    "irt_a": 1.15,
+    "irt_b": 2.4,
+    "irt_c": 0.25,
+    "solution_steps": [
+      "Identify the properties of the named shape",
+      "Compare sides, angles, or other features",
+      "Match the property to the correct option"
+    ]
   }
 ]

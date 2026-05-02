@@ -1,0 +1,16 @@
+<svg viewBox="0 0 260 150" xmlns="http://www.w3.org/2000/svg">
+<rect width="260" height="150" fill="#FFFEF5" rx="8"/>
+<text x="130" y="15" text-anchor="middle" font-size="9" font-weight="bold" fill="#2C3E50">Sports Preference</text>
+<path d="M100,85 L100.0,40.0 A45,45 0 0,1 105.9,129.6 Z" fill="#E74C3C"/>
+<path d="M100,85 L105.9,129.6 A45,45 0 0,1 68.2,116.8 Z" fill="#3498DB"/>
+<path d="M100,85 L68.2,116.8 A45,45 0 0,1 55.4,90.9 Z" fill="#2ECC71"/>
+<path d="M100,85 L55.4,90.9 A45,45 0 0,1 100.0,40.0 Z" fill="#F39C12"/>
+<rect x="165" y="35" width="10" height="10" fill="#E74C3C"/>
+<text x="180" y="44" font-size="7" fill="#333">Cricket (23)</text>
+<rect x="165" y="49" width="10" height="10" fill="#3498DB"/>
+<text x="180" y="58" font-size="7" fill="#333">Football (7)</text>
+<rect x="165" y="63" width="10" height="10" fill="#2ECC71"/>
+<text x="180" y="72" font-size="7" fill="#333">Badminton (5)</text>
+<rect x="165" y="77" width="10" height="10" fill="#F39C12"/>
+<text x="180" y="86" font-size="7" fill="#333">Kabaddi (13)</text>
+</svg>

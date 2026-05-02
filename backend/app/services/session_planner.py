@@ -21,6 +21,7 @@ from app.services.cluster_mastery_store import (
 )
 from app.services.content_store_v2 import QuestionV2, store_v2
 from app.services.adaptive_engine_v2 import engine_v2, theta_to_difficulty
+from app.services.mistake_tracker import mistake_tracker
 
 GRADE_DIFFICULTY = {
     1: (1, 50),
@@ -236,6 +237,54 @@ def plan_session(
             remaining = MAX_PER_CLUSTER - cluster_counts[entry.cluster_name]
             if remaining > 0:
                 _try_add_from_cluster(entry, remaining)
+
+    # ------------------------------------------------------------------
+    # Mix in revision questions from the mistake tracker
+    # Target: 2-3 revision questions per 10-question session
+    # ------------------------------------------------------------------
+    revision_target = max(1, session_size * 3 // 10)  # ~30% revision slots
+    revision_candidates = mistake_tracker.get_revision_question_ids(
+        student_id=user_id,
+        max_items=revision_target,
+    )
+
+    revision_added = 0
+    for rc in revision_candidates:
+        qid = rc["question_id"]
+        if qid in used_ids:
+            continue
+        # Verify the question still exists in the content store
+        q = store_v2.get(qid)
+        if q is None:
+            continue
+        # Check if it's within the grade difficulty range
+        if not (min_d <= q.difficulty_score <= max_d):
+            continue
+
+        # If we're at capacity, replace the last non-revision question
+        if len(planned) >= session_size:
+            # Find a non-revision question to replace (from the end)
+            replaced = False
+            for idx in range(len(planned) - 1, -1, -1):
+                if planned[idx].priority_reason != "revision":
+                    planned.pop(idx)
+                    replaced = True
+                    break
+            if not replaced:
+                break  # All slots are already revision — stop
+
+        planned.append(PlannedQuestion(
+            question_id=qid,
+            topic_id=rc["topic_id"],
+            topic_name=q.topic_name,
+            concept_cluster=rc["concept_cluster"],
+            difficulty_score=q.difficulty_score,
+            priority_reason="revision",
+        ))
+        used_ids.add(qid)
+        cluster_counts[rc["concept_cluster"]] = cluster_counts.get(rc["concept_cluster"], 0) + 1
+        topic_counts[rc["topic_id"]] = topic_counts.get(rc["topic_id"], 0) + 1
+        revision_added += 1
 
     planned = _order_questions(planned)
 

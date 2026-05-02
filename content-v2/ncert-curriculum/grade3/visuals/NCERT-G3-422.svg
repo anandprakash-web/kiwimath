@@ -1,0 +1,12 @@
+<svg viewBox="0 0 260 150" xmlns="http://www.w3.org/2000/svg">
+<rect width="260" height="150" fill="#FFFEF5" rx="8"/>
+<text x="130" y="18" text-anchor="middle" font-size="9" font-weight="bold" fill="#2C3E50">Count the Money</text>
+<rect x="20" y="30" width="50" height="25" fill="#90EE90" stroke="#006400" rx="3"/>
+<text x="45" y="47" text-anchor="middle" font-size="8" font-weight="bold" fill="#006400">₹50</text>
+<circle cx="35" cy="90" r="14" fill="#FFD700" stroke="#B8860B" stroke-width="1.5"/>
+<text x="35" y="94" text-anchor="middle" font-size="7" font-weight="bold" fill="#8B4513">₹5</text>
+<circle cx="70" cy="90" r="14" fill="#FFD700" stroke="#B8860B" stroke-width="1.5"/>
+<text x="70" y="94" text-anchor="middle" font-size="7" font-weight="bold" fill="#8B4513">₹2</text>
+<circle cx="105" cy="90" r="14" fill="#FFD700" stroke="#B8860B" stroke-width="1.5"/>
+<text x="105" y="94" text-anchor="middle" font-size="7" font-weight="bold" fill="#8B4513">₹1</text>
+</svg>

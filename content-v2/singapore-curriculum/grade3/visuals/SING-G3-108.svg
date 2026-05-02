@@ -1,0 +1,10 @@
+<svg viewBox="0 0 260 150" xmlns="http://www.w3.org/2000/svg">
+  <text x="130" y="30" text-anchor="middle" font-size="14" font-family="Arial">2/6</text>
+  <rect x="30" y="50" width="32" height="40" fill="#42A5F5" stroke="#333" stroke-width="1"/>
+  <rect x="63" y="50" width="32" height="40" fill="#42A5F5" stroke="#333" stroke-width="1"/>
+  <rect x="96" y="50" width="32" height="40" fill="#E0E0E0" stroke="#333" stroke-width="1"/>
+  <rect x="129" y="50" width="32" height="40" fill="#E0E0E0" stroke="#333" stroke-width="1"/>
+  <rect x="162" y="50" width="32" height="40" fill="#E0E0E0" stroke="#333" stroke-width="1"/>
+  <rect x="195" y="50" width="32" height="40" fill="#E0E0E0" stroke="#333" stroke-width="1"/>
+  <text x="130" y="120" text-anchor="middle" font-size="11" font-family="Arial">2 out of 6 parts shaded</text>
+</svg>

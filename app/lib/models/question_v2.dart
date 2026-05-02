@@ -102,6 +102,16 @@ class QuestionV2 {
   final int correctAnswer;
   final String? hint;
   final HintLadder? hintLadder;
+  final List<String> solutionSteps;
+
+  /// Interaction mode: "mcq" (default), "integer", or "drag_drop".
+  final String interactionMode;
+
+  /// The correct integer value (for integer mode).
+  final int? correctValue;
+
+  /// Items to arrange in order (for drag_drop mode).
+  final List<String>? dragItems;
 
   QuestionV2({
     required this.questionId,
@@ -117,12 +127,18 @@ class QuestionV2 {
     required this.correctAnswer,
     this.hint,
     this.hintLadder,
+    this.solutionSteps = const [],
+    this.interactionMode = 'mcq',
+    this.correctValue,
+    this.dragItems,
   });
 
   factory QuestionV2.fromJson(Map<String, dynamic> json) {
     final choicesJson = json['choices'] as List<dynamic>;
     final tagsJson = (json['tags'] as List<dynamic>?) ?? [];
     final ladderJson = json['hint_ladder'] as Map<String, dynamic>?;
+    final stepsJson = (json['solution_steps'] as List<dynamic>?) ?? [];
+    final dragItemsJson = json['drag_items'] as List<dynamic>?;
     return QuestionV2(
       questionId: json['question_id'] as String,
       stem: json['stem'] as String,
@@ -137,6 +153,10 @@ class QuestionV2 {
       correctAnswer: json['correct_answer'] as int,
       hint: json['hint'] as String?,
       hintLadder: ladderJson != null ? HintLadder.fromJson(ladderJson) : null,
+      solutionSteps: stepsJson.map((e) => e as String).toList(),
+      interactionMode: json['interaction_mode'] as String? ?? 'mcq',
+      correctValue: json['correct_value'] as int?,
+      dragItems: dragItemsJson?.map((e) => e as String).toList(),
     );
   }
 }

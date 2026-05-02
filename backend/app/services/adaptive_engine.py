@@ -340,16 +340,32 @@ def _pick_from_band(
     questions: List[Question],
     low: int,
     high: int,
+    exclude_ids: Optional[set] = None,
 ) -> Optional[Question]:
     """Choose a random question whose difficulty falls in [low, high].
 
     If no questions match the preferred band, fall back to the full list so
     the session can continue rather than ending prematurely.
 
+    Parameters
+    ----------
+    questions:
+        Pool of candidate questions (already filtered for session-seen).
+    low, high:
+        Inclusive difficulty range.
+    exclude_ids:
+        Additional question IDs to exclude (e.g. from prior diagnostics).
+
     Returns the chosen ``Question`` or ``None`` if the list is empty.
     """
     if not questions:
         return None
+
+    # Apply external exclusion set if provided.
+    if exclude_ids:
+        questions = [q for q in questions if q.id not in exclude_ids]
+        if not questions:
+            return None
 
     in_band = [q for q in questions if low <= getattr(q, "difficulty", 1) <= high]
     pool = in_band if in_band else questions
@@ -467,6 +483,7 @@ class AdaptiveEngine:
         session: SessionState,
         preferred_concept: Optional[str] = None,
         seed: Optional[int] = None,
+        exclude_ids: Optional[set] = None,
     ) -> AttemptResult:
         """Pick and render the next question for the student.
 
@@ -519,12 +536,12 @@ class AdaptiveEngine:
             )
 
         # 3. Parent question selection.
-        question = self._pick_question(session, concept_id)
+        question = self._pick_question(session, concept_id, exclude_ids=exclude_ids)
         if question is None:
             # No questions for this concept — try another concept.
             alt_concept = self._pick_concept(session, exclude=[concept_id])
             if alt_concept:
-                question = self._pick_question(session, alt_concept)
+                question = self._pick_question(session, alt_concept, exclude_ids=exclude_ids)
                 concept_id = alt_concept
             if question is None:
                 logger.info(
@@ -1516,11 +1533,22 @@ class AdaptiveEngine:
         self,
         session: SessionState,
         concept_id: str,
+        exclude_ids: Optional[set] = None,
     ) -> Optional[Question]:
         """Pick a question for the given concept.
 
         Filters to questions not yet served this session, then selects from
         the appropriate difficulty band based on mastery.
+
+        Parameters
+        ----------
+        session:
+            Current session state.
+        concept_id:
+            Concept to select questions from.
+        exclude_ids:
+            Additional question IDs to exclude (e.g. from prior diagnostics
+            to prevent repetition on retests).
         """
         all_questions = self._get_questions_for_concept(concept_id)
         if not all_questions:
@@ -1539,7 +1567,7 @@ class AdaptiveEngine:
 
         mastery = session.get_mastery(concept_id)
         low, high = _difficulty_band(mastery)
-        return _pick_from_band(candidates, low, high)
+        return _pick_from_band(candidates, low, high, exclude_ids=exclude_ids)
 
     def _get_questions_for_concept(self, concept_id: str) -> List[Question]:
         """Find all parent questions mapped to a concept.

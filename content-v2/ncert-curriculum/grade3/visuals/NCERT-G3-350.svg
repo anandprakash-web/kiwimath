@@ -1,0 +1,16 @@
+<svg viewBox="0 0 260 150" xmlns="http://www.w3.org/2000/svg">
+<rect width="260" height="150" fill="#FFFEF5" rx="8"/>
+<text x="130" y="20" text-anchor="middle" font-size="10" font-weight="bold" fill="#2C3E50">Fraction: 1/10</text>
+<circle cx="130" cy="85" r="50" fill="none" stroke="#333" stroke-width="2"/>
+<line x1="130" y1="85" x2="130.0" y2="35.0" stroke="#333" stroke-width="1.5"/>
+<line x1="130" y1="85" x2="159.4" y2="44.5" stroke="#333" stroke-width="1.5"/>
+<line x1="130" y1="85" x2="177.6" y2="69.5" stroke="#333" stroke-width="1.5"/>
+<line x1="130" y1="85" x2="177.6" y2="100.5" stroke="#333" stroke-width="1.5"/>
+<line x1="130" y1="85" x2="159.4" y2="125.5" stroke="#333" stroke-width="1.5"/>
+<line x1="130" y1="85" x2="130.0" y2="135.0" stroke="#333" stroke-width="1.5"/>
+<line x1="130" y1="85" x2="100.6" y2="125.5" stroke="#333" stroke-width="1.5"/>
+<line x1="130" y1="85" x2="82.4" y2="100.5" stroke="#333" stroke-width="1.5"/>
+<line x1="130" y1="85" x2="82.4" y2="69.5" stroke="#333" stroke-width="1.5"/>
+<line x1="130" y1="85" x2="100.6" y2="44.5" stroke="#333" stroke-width="1.5"/>
+<circle cx="137.7" cy="61.2" r="8" fill="#3498DB" opacity="0.4"/>
+</svg>

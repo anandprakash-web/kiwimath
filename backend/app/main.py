@@ -15,15 +15,19 @@ Then visit:
 """
 
 import logging
+import os
 import time
 from pathlib import Path
 
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import HTMLResponse, JSONResponse
+from fastapi.staticfiles import StaticFiles
 
 from app.api.admin import router as admin_router
 from app.api.analytics import router as analytics_router
+from app.api.assessment import router as assessment_router
+from app.api.flag import router as flag_router
 from app.api.companion import router as companion_router
 from app.api.learning_path import router as learning_path_router
 from app.api.onboarding import router as onboarding_router
@@ -35,6 +39,10 @@ from app.api.questions_v2 import router as questions_v2_router
 from app.api.user import router as user_router
 from app.services.content_store_v2 import bootstrap_v2_from_env, store_v2
 from app.services.firestore_service import is_firestore_available
+from app.services.ncert_content_store import init_ncert_store, ncert_store
+from app.services.singapore_content_store import init_singapore_store, singapore_store
+from app.services.uscc_content_store import init_uscc_store, uscc_store
+from app.services.icse_content_store import init_icse_store, icse_store
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(name)s %(levelname)s %(message)s")
 logger = logging.getLogger("kiwimath")
@@ -69,13 +77,67 @@ def create_app() -> FastAPI:
     app.include_router(analytics_router)
     app.include_router(companion_router)
     app.include_router(portal_router)
+    app.include_router(assessment_router)
+    app.include_router(flag_router)
 
     # -----------------------------------------------------------------------
     # Startup
     # -----------------------------------------------------------------------
+    # -----------------------------------------------------------------------
+    # Static files — serve NCERT SVG visuals for Flutter
+    # -----------------------------------------------------------------------
+    ncert_content_dir = Path(os.environ.get(
+        "NCERT_CONTENT_DIR",
+        str(Path(__file__).resolve().parent.parent.parent / "content-v2" / "ncert-curriculum"),
+    ))
+    if ncert_content_dir.exists():
+        app.mount("/static/ncert", StaticFiles(directory=str(ncert_content_dir)), name="ncert_static")
+        logger.info(f"Mounted NCERT static files from {ncert_content_dir}")
+
+    # -----------------------------------------------------------------------
+    # Static files — serve Singapore SVG visuals for Flutter
+    # -----------------------------------------------------------------------
+    singapore_content_dir = Path(os.environ.get(
+        "SINGAPORE_CONTENT_DIR",
+        str(Path(__file__).resolve().parent.parent.parent / "content-v2" / "singapore-curriculum"),
+    ))
+    if singapore_content_dir.exists():
+        app.mount("/static/singapore", StaticFiles(directory=str(singapore_content_dir)), name="singapore_static")
+        logger.info(f"Mounted Singapore static files from {singapore_content_dir}")
+
+    # -----------------------------------------------------------------------
+    # Static files — serve US Common Core SVG visuals for Flutter
+    # -----------------------------------------------------------------------
+    uscc_content_dir = Path(os.environ.get(
+        "USCC_CONTENT_DIR",
+        str(Path(__file__).resolve().parent.parent.parent / "content-v2" / "us-common-core"),
+    ))
+    if uscc_content_dir.exists():
+        app.mount("/static/uscc", StaticFiles(directory=str(uscc_content_dir)), name="uscc_static")
+        logger.info(f"Mounted USCC static files from {uscc_content_dir}")
+
+    # -----------------------------------------------------------------------
+    # Static files — serve ICSE SVG visuals for Flutter
+    # -----------------------------------------------------------------------
+    icse_content_dir = Path(os.environ.get(
+        "ICSE_CONTENT_DIR",
+        str(Path(__file__).resolve().parent.parent.parent / "content-v2" / "icse-curriculum"),
+    ))
+    if icse_content_dir.exists():
+        app.mount("/static/icse", StaticFiles(directory=str(icse_content_dir)), name="icse_static")
+        logger.info(f"Mounted ICSE static files from {icse_content_dir}")
+
     @app.on_event("startup")
     def _startup():
         bootstrap_v2_from_env()
+        init_ncert_store()
+        logger.info(f"NCERT content: {ncert_store.total_questions} questions loaded")
+        init_singapore_store()
+        logger.info(f"Singapore content: {singapore_store.total_questions} questions loaded")
+        init_uscc_store()
+        logger.info(f"USCC content: {uscc_store.total_questions} questions loaded")
+        init_icse_store()
+        logger.info(f"ICSE content: {icse_store.total_questions} questions loaded")
         logger.info(f"Firestore: {'connected' if is_firestore_available() else 'unavailable (in-memory mode)'}")
 
     # -----------------------------------------------------------------------

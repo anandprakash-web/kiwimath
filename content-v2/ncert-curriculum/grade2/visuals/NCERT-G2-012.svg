@@ -1,0 +1,15 @@
+<svg viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+  <rect width="200" height="120" fill="#F0FFF0" rx="5"/>
+  <line x1="10" y1="60" x2="190" y2="60" stroke="#333" stroke-width="1.5"/>
+  <circle cx="20" cy="60" r="12" fill="#45B7D1" stroke="#333" stroke-width="0.5"/>
+  <text x="20" y="64" text-anchor="middle" font-size="9" fill="white" font-weight="bold">40</text>
+  <circle cx="60" cy="60" r="12" fill="#FF6B6B" stroke="#333" stroke-width="0.5"/>
+  <text x="60" y="64" text-anchor="middle" font-size="9" fill="white" font-weight="bold">?</text>
+  <circle cx="100" cy="60" r="12" fill="#45B7D1" stroke="#333" stroke-width="0.5"/>
+  <text x="100" y="64" text-anchor="middle" font-size="9" fill="white" font-weight="bold">50</text>
+  <circle cx="140" cy="60" r="12" fill="#45B7D1" stroke="#333" stroke-width="0.5"/>
+  <text x="140" y="64" text-anchor="middle" font-size="9" fill="white" font-weight="bold">55</text>
+  <circle cx="180" cy="60" r="12" fill="#45B7D1" stroke="#333" stroke-width="0.5"/>
+  <text x="180" y="64" text-anchor="middle" font-size="9" fill="white" font-weight="bold">60</text>
+  <text x="100" y="100" text-anchor="middle" font-size="9" fill="#666">Skip counting by 5s</text>
+</svg>

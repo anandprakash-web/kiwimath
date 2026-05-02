@@ -1,0 +1,14 @@
+<svg viewBox="0 0 260 150" xmlns="http://www.w3.org/2000/svg">
+<rect width="260" height="150" fill="#FFFEF5" rx="8"/>
+<text x="130" y="20" text-anchor="middle" font-size="9" font-weight="bold" fill="#2C3E50">Find the Pattern</text>
+<circle cx="66" cy="75" r="18" fill="#3498DB" opacity="0.2" stroke="#3498DB" stroke-width="1.5"/>
+<text x="66" y="80" text-anchor="middle" font-size="10" font-weight="bold" fill="#2C3E50">5</text>
+<circle cx="102" cy="75" r="18" fill="#3498DB" opacity="0.2" stroke="#3498DB" stroke-width="1.5"/>
+<text x="102" y="80" text-anchor="middle" font-size="10" font-weight="bold" fill="#2C3E50">10</text>
+<circle cx="138" cy="75" r="18" fill="#3498DB" opacity="0.2" stroke="#3498DB" stroke-width="1.5"/>
+<text x="138" y="80" text-anchor="middle" font-size="10" font-weight="bold" fill="#2C3E50">20</text>
+<circle cx="174" cy="75" r="18" fill="#3498DB" opacity="0.2" stroke="#3498DB" stroke-width="1.5"/>
+<text x="174" y="80" text-anchor="middle" font-size="10" font-weight="bold" fill="#2C3E50">40</text>
+<circle cx="210" cy="75" r="18" fill="#3498DB" opacity="0.2" stroke="#3498DB" stroke-width="1.5"/>
+<text x="210" y="80" text-anchor="middle" font-size="10" font-weight="bold" fill="#E74C3C">?</text>
+</svg>

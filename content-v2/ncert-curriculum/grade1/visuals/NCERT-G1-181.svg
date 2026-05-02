@@ -1,0 +1,11 @@
+<svg viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="120" fill="#FFFEF5" rx="8"/>
+  <rect x="19" y="44" width="32" height="32" fill="#4ECDC4" stroke="#333" stroke-width="1.5"/>
+  <text x="35" y="95" text-anchor="middle" font-size="10" fill="#333">A</text>
+  <polygon points="85,42 69,74 101,74" fill="#FFEAA7" stroke="#333" stroke-width="1.5"/>
+  <text x="85" y="95" text-anchor="middle" font-size="10" fill="#333">B</text>
+  <rect x="119" y="44" width="32" height="32" fill="#4ECDC4" stroke="#333" stroke-width="1.5"/>
+  <text x="135" y="95" text-anchor="middle" font-size="10" fill="#333">C</text>
+  <rect x="159" y="44" width="32" height="32" fill="#4ECDC4" stroke="#333" stroke-width="1.5"/>
+  <text x="175" y="95" text-anchor="middle" font-size="10" fill="#333">D</text>
+</svg>

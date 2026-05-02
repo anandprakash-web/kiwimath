@@ -1,0 +1,6 @@
+<svg viewBox="0 0 260 150" xmlns="http://www.w3.org/2000/svg">
+  <rect x="15" y="15" width="230" height="120" rx="8" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1.5"/>
+  <text x="130" y="35" text-anchor="middle" font-size="11" font-weight="bold" fill="#2E7D32">Prime Exploration</text>
+  <text x="130" y="55" text-anchor="middle" font-size="9" fill="#333">Twin Primes</text>
+  <text x="130" y="69" text-anchor="middle" font-size="9" fill="#333">Number: (71, 73)</text>
+</svg>

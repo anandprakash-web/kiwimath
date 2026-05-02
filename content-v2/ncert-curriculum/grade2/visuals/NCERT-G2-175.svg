@@ -1,0 +1,7 @@
+<svg viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+  <rect width="200" height="120" fill="#FFF8DC" rx="5"/>
+  <polygon points="100,20 60,90 140,90" fill="none" stroke="#333" stroke-width="1.5"/>
+  <line x1="60" y1="90" x2="140" y2="90" stroke="#333" stroke-width="2"/>
+  <circle cx="100" cy="90" r="3" fill="#FF6B6B"/>
+  <text x="100" y="110" text-anchor="middle" font-size="8" fill="#333">Weighing scale</text>
+</svg>
