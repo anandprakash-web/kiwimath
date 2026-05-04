@@ -196,7 +196,7 @@ def _to_response(q: QuestionV2) -> QuestionOutV2:
     return QuestionOutV2(
         question_id=q.id,
         stem=q.stem,
-        choices=q.choices if q.interaction_mode == "mcq" else [],
+        choices=q.choices if q.choices else [],
         difficulty_score=q.difficulty_score,
         difficulty_tier=q.difficulty_tier,
         visual_svg=f"/v2/questions/{q.id}/visual" if q.visual_svg else None,
@@ -241,8 +241,14 @@ def list_topics(
     are scoped to the grade's difficulty range (G1: 1-50, G2: 51-100).
     """
     all_topics = store_v2.topics()
-    # Filter to only Olympiad topics (topic-1 through topic-8)
-    topics = [t for t in all_topics if t.topic_id.startswith("topic-")]
+    # Filter to only Olympiad topics (exclude curriculum-specific topics)
+    _CURRICULUM_PREFIXES = ("ncert_", "icse_", "igcse_")
+    topics = [
+        t for t in all_topics
+        if not t.topic_id.startswith(_CURRICULUM_PREFIXES)
+        and ":" not in t.topic_id
+        and "&" not in t.topic_id
+    ]
     if not topics:
         raise HTTPException(status_code=404, detail="No v2 content loaded.")
 
@@ -326,7 +332,14 @@ def next_question(
     queries the per-user learning path and uses the first stop's topic
     + difficulty range for selection.
     """
-    exclude_ids = exclude.split(",") if exclude else None
+    exclude_ids = exclude.split(",") if exclude else []
+
+    # Add recently seen questions from history to prevent cross-session repetition
+    if user_id:
+        recently_seen = skill_ability_store.get_recent_question_ids(user_id)
+        exclude_ids = list(set(exclude_ids) | recently_seen)
+
+    exclude_ids = exclude_ids if exclude_ids else None
 
     # Apply grade-based difficulty filter
     grade_min, grade_max = None, None
@@ -529,6 +542,36 @@ def check_answer(req: AnswerCheckRequest):
             question_id=q.id,
         )
 
+        # Log response for IRT calibration
+        approx_theta = result.new_difficulty / 33.33 - 1.5
+        response_logger.log_response(
+            user_id=req.user_id,
+            question_id=q.id,
+            correct=is_correct,
+            response_time_ms=req.time_taken_ms,
+            user_theta=approx_theta,
+            skill_id="",
+            question_difficulty=q.difficulty_score,
+            question_irt_a=q.irt_a,
+            question_irt_b=q.irt_b,
+            question_irt_c=q.irt_c,
+            grade=0,
+        )
+
+        # Update proficiency tracking (competency + scale scores)
+        competency = getattr(q, 'competency_level', None) or 'K'
+        try:
+            proficiency_store.update_proficiency(
+                user_id=req.user_id,
+                theta=approx_theta,
+                grade=0,
+                competency=competency,
+                correct=is_correct,
+                topic_id=q.topic,
+            )
+        except Exception:
+            pass  # Best-effort
+
         # Apply reward multiplier to XP
         base_xp = gam_events.get("xp_earned", 0)
         boosted_xp = int(base_xp * result.reward_multiplier)
@@ -575,6 +618,193 @@ def check_answer(req: AnswerCheckRequest):
         difficulty_score=q.difficulty_score,
         next_difficulty=next_diff,
     )
+
+
+@router.get("/irt/stats")
+def irt_data_stats():
+    """Check how much response data has been collected for IRT calibration."""
+    return {
+        "total_responses_buffered": response_logger.get_response_count(),
+        "daily_stats": response_logger.get_daily_stats(),
+        "message": "Once you have 30+ responses per question, run: python scripts/irt_calibrator.py",
+    }
+
+
+# ---------------------------------------------------------------------------
+# Proficiency & Growth Endpoints
+# ---------------------------------------------------------------------------
+
+@router.get("/proficiency")
+def get_proficiency(
+    user_id: str = Query(..., description="Student ID"),
+    grade: int = Query(0, description="Student grade (1-6)"),
+):
+    """Get student's proficiency level, scale score, and competency breakdown."""
+    # Get overall theta from adaptive engine
+    from app.services.adaptive_engine_v2 import engine_v2
+    topics = store_v2.topics()
+    total_attempts = 0
+    total_correct = 0
+    weighted_theta = 0.0
+    topic_count = 0
+
+    for topic in topics:
+        ability = engine_v2.get_ability(user_id, topic.topic_id)
+        if ability.attempts > 0:
+            # Approximate theta from difficulty score
+            theta = ability.difficulty_score / 33.33 - 1.5
+            weighted_theta += theta * ability.attempts
+            total_attempts += ability.attempts
+            total_correct += ability.correct
+            topic_count += 1
+
+    avg_theta = weighted_theta / max(1, total_attempts)
+    overall_accuracy = total_correct / max(1, total_attempts)
+
+    proficiency = get_proficiency_for_display(avg_theta, grade)
+
+    # Get competency profile from Firestore
+    prof_data = proficiency_store.get_proficiency(user_id, grade)
+    competency = prof_data.get("competency_profile", CompetencyProfile().to_dict())
+
+    # Get growth data
+    growth = proficiency_store.get_growth_data(user_id)
+
+    return {
+        "user_id": user_id,
+        "proficiency": proficiency,
+        "competency_profile": competency,
+        "growth": growth,
+        "stats": {
+            "total_questions": total_attempts,
+            "total_correct": total_correct,
+            "overall_accuracy": round(overall_accuracy * 100, 1),
+            "topics_practiced": topic_count,
+        },
+    }
+
+
+@router.get("/proficiency/levels")
+def list_proficiency_levels():
+    """List all proficiency levels with descriptions."""
+    from app.services.proficiency_levels import PROFICIENCY_LEVELS
+    return {
+        "levels": [
+            {
+                "level": pl.level,
+                "name": pl.name,
+                "emoji": pl.emoji,
+                "color": pl.color,
+                "theta_range": [pl.theta_min, pl.theta_max],
+                "scale_range": [pl.scale_min, pl.scale_max],
+                "can_do": pl.can_do,
+                "next_steps": pl.next_steps,
+            }
+            for pl in PROFICIENCY_LEVELS
+        ]
+    }
+
+
+# ---------------------------------------------------------------------------
+# Benchmark Test Endpoints
+# ---------------------------------------------------------------------------
+
+@router.post("/benchmark/create")
+def create_benchmark_test(
+    user_id: str = Query(...),
+    grade: int = Query(1),
+    benchmark_type: str = Query("diagnostic", regex="^(baseline|midline|endline|diagnostic)$"),
+):
+    """Create a structured benchmark test for the student."""
+    all_questions = [q.__dict__ if hasattr(q, '__dict__') else q
+                     for q in store_v2.all_questions()]
+
+    # Get previously seen question IDs to exclude
+    from app.services.skill_ability_store import skill_ability_store
+    seen_ids = set(skill_ability_store.get_recent_question_ids(user_id))
+
+    test = benchmark_service.create_benchmark_test(
+        user_id=user_id,
+        grade=grade,
+        benchmark_type=benchmark_type,
+        all_questions=all_questions,
+        exclude_ids=seen_ids,
+    )
+
+    if not test:
+        raise HTTPException(status_code=400, detail="Not enough questions to create benchmark test")
+
+    # Return the questions for the test
+    questions = []
+    for qid in test.question_ids:
+        q = store_v2.get(qid)
+        if q:
+            questions.append(_to_response(q))
+
+    return {
+        "benchmark_id": test.benchmark_id,
+        "benchmark_type": test.benchmark_type,
+        "total_questions": len(questions),
+        "time_limit_seconds": len(questions) * 90,
+        "questions": questions,
+    }
+
+
+@router.post("/benchmark/submit")
+def submit_benchmark(
+    benchmark_id: str = Query(...),
+    user_id: str = Query(...),
+    grade: int = Query(1),
+    responses: List[Dict] = [],
+):
+    """Submit completed benchmark test responses for scoring."""
+    from pydantic import BaseModel
+
+    all_questions = [q.__dict__ if hasattr(q, '__dict__') else q
+                     for q in store_v2.all_questions()]
+
+    result = benchmark_service.score_benchmark(
+        user_id=user_id,
+        benchmark_id=benchmark_id,
+        responses=responses,
+        all_questions=all_questions,
+        grade=grade,
+    )
+
+    if not result:
+        raise HTTPException(status_code=400, detail="Could not score benchmark test")
+
+    # Record growth snapshot
+    proficiency_store.record_growth_snapshot(
+        user_id=user_id,
+        theta=result.theta,
+        total_questions=result.total_questions,
+        accuracy=result.accuracy,
+    )
+
+    return result.to_dict()
+
+
+@router.get("/benchmark/history")
+def benchmark_history(user_id: str = Query(...)):
+    """Get all benchmark test results for a student."""
+    history = benchmark_service.get_benchmark_history(user_id)
+    growth = benchmark_service.get_growth_comparison(user_id)
+    return {
+        "user_id": user_id,
+        "benchmarks": history,
+        "growth_comparison": growth,
+    }
+
+
+# ---------------------------------------------------------------------------
+# Remedial Endpoints
+# ---------------------------------------------------------------------------
+
+@router.get("/remedial/stats")
+def remedial_stats(user_id: str = Query(...)):
+    """Get remedial effectiveness stats for a student."""
+    return remedial_engine.get_remedial_stats(user_id)
 
 
 @router.get("/questions/{question_id}/visual")
@@ -1258,3 +1488,291 @@ def get_revision_queue_endpoint(
         items=items_out,
         stats=stats,
     )
+
+
+# ---------------------------------------------------------------------------
+# Unified Cross-Curriculum Session (THE MOAT)
+# ---------------------------------------------------------------------------
+
+from app.services.unified_session_planner import (
+    plan_unified_session,
+    generate_session_summary,
+    generate_weekly_report,
+    adjust_remaining_session,
+    detect_learning_rate,
+    UnifiedSessionPlan,
+    UnifiedPlannedQuestion,
+    ParentSessionSummary,
+)
+from app.services.skill_ability_store import skill_ability_store
+from app.services.response_logger import response_logger
+from app.services.spaced_review_engine import spaced_review_store
+from app.services.proficiency_levels import (
+    proficiency_store, get_proficiency_for_display, theta_to_scale_score,
+    CompetencyProfile,
+)
+from app.services.remedial_engine import remedial_engine
+from app.services.benchmark_test import benchmark_service
+
+
+class UnifiedQuestionOut(BaseModel):
+    question_id: str
+    skill_id: str
+    skill_name: str
+    difficulty_score: int
+    slot_type: str
+    source_curriculum: str
+
+
+class UnifiedSessionOut(BaseModel):
+    user_id: str
+    grade: int
+    questions: List[UnifiedQuestionOut]
+    focus_skills: List[str]
+    skill_breakdown: Dict[str, int]
+    curriculum_mix: Dict[str, int]
+    session_message: str
+    mastery_transitions: List[str]
+
+
+@router.get("/session/unified", response_model=UnifiedSessionOut)
+def get_unified_session(
+    user_id: str = Query(..., description="Student ID"),
+    grade: int = Query(1, ge=1, le=6, description="Grade (1-6)"),
+    size: int = Query(10, ge=5, le=20, description="Session size"),
+):
+    """Build a cross-curriculum adaptive session pulling from ALL curricula.
+
+    This is the primary session endpoint — replaces /session/plan.
+    Questions are selected from the unified pool of 21,330 across
+    Olympiad + NCERT + ICSE + Singapore + USCC, routed through the
+    37-node prerequisite skill graph.
+
+    Session structure: [warmup] → [core skill practice] → [stretch] → [review]
+    """
+    # Load recently seen question IDs to prevent cross-session repetition
+    recently_seen = skill_ability_store.get_recent_question_ids(user_id)
+
+    plan = plan_unified_session(
+        user_id=user_id,
+        grade=grade,
+        session_size=size,
+        previously_seen_ids=recently_seen,
+    )
+
+    # Cache the plan for session completion
+    _unified_plans[f"{user_id}_{grade}"] = plan
+
+    return UnifiedSessionOut(
+        user_id=plan.user_id,
+        grade=plan.grade,
+        questions=[
+            UnifiedQuestionOut(
+                question_id=q.question_id,
+                skill_id=q.skill_id,
+                skill_name=q.skill_name,
+                difficulty_score=q.difficulty_score,
+                slot_type=q.slot_type,
+                source_curriculum=q.source_curriculum,
+            )
+            for q in plan.questions
+        ],
+        focus_skills=plan.focus_skills,
+        skill_breakdown=plan.skill_breakdown,
+        curriculum_mix=plan.curriculum_mix,
+        session_message=plan.session_message,
+        mastery_transitions=plan.mastery_transitions,
+    )
+
+
+# In-memory cache for active unified session plans
+_unified_plans: Dict[str, UnifiedSessionPlan] = {}
+
+
+class SessionResultIn(BaseModel):
+    """Submitted when a unified session completes."""
+    user_id: str
+    grade: int
+    results: List[Dict[str, Any]]  # [{question_id, correct, time_ms, skill_id}, ...]
+
+
+class ParentSummaryOut(BaseModel):
+    session_id: str
+    accuracy: float
+    questions_correct: int
+    questions_total: int
+    skills_practiced: List[str]
+    new_masteries: List[str]
+    progress_message: str
+    next_focus: str
+    weekly_trend: str
+
+
+@router.post("/session/unified/complete", response_model=ParentSummaryOut)
+def complete_unified_session(body: SessionResultIn):
+    """Submit results for a completed unified session.
+
+    Updates per-skill thetas, checks mastery, schedules FSRS reviews,
+    and returns a parent-facing summary message.
+    """
+    plan_key = f"{body.user_id}_{body.grade}"
+    plan = _unified_plans.get(plan_key)
+
+    if not plan:
+        # Reconstruct a minimal plan from results
+        plan = plan_unified_session(
+            user_id=body.user_id, grade=body.grade, session_size=len(body.results)
+        )
+
+    summary = generate_session_summary(
+        user_id=body.user_id,
+        grade=body.grade,
+        session_plan=plan,
+        results=body.results,
+    )
+
+    # Record served question IDs so they won't repeat in next session
+    served_ids = [r.question_id for r in body.results]
+    skill_ability_store.record_served_questions(body.user_id, served_ids)
+
+    # Log responses for IRT calibration
+    all_abilities = skill_ability_store.get_all_abilities(body.user_id)
+    for r in body.results:
+        q = store_v2.get(r.question_id)
+        skill_id = r.skill_id if hasattr(r, 'skill_id') and r.skill_id else ""
+        ability = all_abilities.get(skill_id)
+        user_theta = ability.theta if ability else -1.5
+        response_logger.log_response(
+            user_id=body.user_id,
+            question_id=r.question_id,
+            correct=r.correct,
+            response_time_ms=r.time_ms if hasattr(r, 'time_ms') else 0,
+            user_theta=user_theta,
+            skill_id=skill_id,
+            question_difficulty=q.difficulty_score if q else 0,
+            question_irt_a=q.irt_a if q else 1.0,
+            question_irt_b=q.irt_b if q else 0.0,
+            question_irt_c=q.irt_c if q else 0.25,
+            session_id=summary.session_id,
+            grade=body.grade,
+        )
+    response_logger.flush()
+
+    # Clean up cached plan
+    _unified_plans.pop(plan_key, None)
+
+    return ParentSummaryOut(
+        session_id=summary.session_id,
+        accuracy=summary.accuracy,
+        questions_correct=summary.questions_correct,
+        questions_total=summary.questions_total,
+        skills_practiced=summary.skills_practiced,
+        new_masteries=summary.new_masteries,
+        progress_message=summary.progress_message,
+        next_focus=summary.next_focus,
+        weekly_trend=summary.weekly_trend,
+    )
+
+
+class SkillProgressOut(BaseModel):
+    user_id: str
+    grade: int
+    mastered_skills: int
+    total_skills: int
+    mastery_percentage: float
+    skills: List[Dict[str, Any]]
+
+
+@router.get("/skills/progress", response_model=SkillProgressOut)
+def get_skill_progress(
+    user_id: str = Query(..., description="Student ID"),
+    grade: int = Query(1, ge=1, le=6, description="Grade (1-6)"),
+):
+    """Get comprehensive skill-level progress for a student.
+
+    Returns all 37 skills with: theta, accuracy, mastery status,
+    grade-level gap. Used by the parent dashboard and learning path.
+    """
+    progress = skill_ability_store.get_skill_progress(user_id, grade)
+    return SkillProgressOut(**progress)
+
+
+class ReviewSummaryOut(BaseModel):
+    total_mastered_skills: int
+    due_for_review: int
+    average_recall: float
+    upcoming_7_days: int
+    skills_due: List[Dict[str, Any]]
+
+
+@router.get("/skills/review-status", response_model=ReviewSummaryOut)
+def get_review_status(
+    user_id: str = Query(..., description="Student ID"),
+):
+    """Get FSRS-based review status for mastered skills.
+
+    Shows which mastered skills are due for refresh and estimated recall.
+    """
+    summary = spaced_review_store.get_review_summary(user_id)
+    return ReviewSummaryOut(**summary)
+
+
+class WeeklyReportOut(BaseModel):
+    report: str
+    mastered_skills: int
+    total_skills: int
+
+
+@router.get("/parent/weekly-report", response_model=WeeklyReportOut)
+def get_weekly_report(
+    user_id: str = Query(..., description="Student ID"),
+    grade: int = Query(1, ge=1, le=6, description="Grade"),
+    child_name: str = Query("Your child", description="Child's name"),
+):
+    """Generate a weekly parent report.
+
+    Summarizes: mastered skills, skills in progress, weak areas,
+    review status, and actionable recommendations.
+    """
+    report = generate_weekly_report(user_id=user_id, grade=grade, child_name=child_name)
+    progress = skill_ability_store.get_skill_progress(user_id, grade)
+    return WeeklyReportOut(
+        report=report,
+        mastered_skills=progress["mastered_skills"],
+        total_skills=progress["total_skills"],
+    )
+
+
+class MidSessionAdjustIn(BaseModel):
+    """Request to adjust remaining session based on real-time performance."""
+    user_id: str
+    grade: int
+    results_so_far: List[Dict[str, Any]]
+    current_index: int
+
+
+class LearningRateOut(BaseModel):
+    adjustments: Dict[str, Any]  # {skill_id: {trend, difficulty_adjustment}}
+
+
+@router.post("/session/unified/adjust", response_model=LearningRateOut)
+def adjust_session_mid_flight(body: MidSessionAdjustIn):
+    """Mid-session difficulty adjustment based on within-session learning rate.
+
+    Called after each answer to detect if the student is accelerating
+    or struggling, and adjust remaining question difficulty accordingly.
+    """
+    plan_key = f"{body.user_id}_{body.grade}"
+    plan = _unified_plans.get(plan_key)
+
+    adjustments = {}
+    if plan:
+        for skill_id in plan.focus_skills:
+            rate = detect_learning_rate(body.results_so_far, skill_id)
+            if rate["difficulty_adjustment"] != 0:
+                adjustments[skill_id] = rate
+
+        # Apply adjustments to cached plan
+        adjust_remaining_session(plan, body.results_so_far, body.current_index)
+
+    return LearningRateOut(adjustments=adjustments)

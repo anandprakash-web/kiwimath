@@ -3,17 +3,24 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
 import 'firebase_options.dart';
+import 'models/clan.dart';
 import 'models/question_v2.dart';
 import 'models/student_levels.dart';
 import 'models/user_profile.dart';
+import 'screens/clan_create_screen.dart';
+import 'screens/clan_hub_screen.dart';
+import 'screens/clan_join_screen.dart';
+import 'screens/clan_leaderboard_screen.dart';
 import 'screens/home_screen.dart';
 import 'screens/learning_path_screen.dart';
 import 'screens/onboarding_screen.dart';
 import 'screens/parent_dashboard_screen.dart';
+import 'screens/picture_challenge_screen.dart';
 import 'screens/question_screen_v2.dart';
 import 'screens/sign_in_screen.dart';
 import 'services/api_client.dart';
 import 'services/auth_service.dart';
+import 'services/clan_service.dart';
 import 'models/companion.dart';
 import 'services/companion_service.dart';
 import 'theme/kiwi_theme.dart';
@@ -42,8 +49,7 @@ class KiwimathApp extends StatelessWidget {
   }
 }
 
-/// Listens to auth state and shows either the sign-in screen (when signed out)
-/// or the main app shell (when signed in).
+/// Auth state listener — sign-in or main app shell.
 class _AuthWrapper extends StatelessWidget {
   const _AuthWrapper();
 
@@ -68,9 +74,13 @@ class _AuthWrapper extends StatelessWidget {
   }
 }
 
-/// v2 app shell — unified on the v2 adaptive engine.
-/// All topics (both curriculum and olympiad) route through QuestionScreenV2.
-/// Profile (streak, gems, XP) refreshes on app start and after each session.
+/// v5 app shell — pure adaptive engine, ground-up rebuild.
+///
+/// Key architecture changes from v4:
+///   - Adaptive practice is THE primary experience
+///   - No curriculum gating on home screen
+///   - Bottom nav: "Home" / "School" / "Parent"
+///   - Chapters load only for syllabus tab (not home)
 class _AppShell extends StatefulWidget {
   final String userId;
   const _AppShell({required this.userId});
@@ -85,37 +95,41 @@ class _AppShellState extends State<_AppShell> {
   bool _loading = true;
   String? _error;
 
-  // Bottom nav tab index: 0=Home, 1=Learning Path, 2=Parent
+  // Bottom nav: 0=Home, 1=School, 2=Clan, 3=Parent
   int _selectedTab = 0;
 
-  // Whether the parental gate has been passed this session (for Parent tab).
+  // Parental gate
   bool _parentGatePassed = false;
 
-  // Multi-grade support.
+  // Grade
   int _selectedGrade = 1;
 
-  // Kid's display name (from onboarding or profile).
+  // Student name
   String _studentName = '';
 
-  // v2 topics.
+  // v2 adaptive topics (ALWAYS loaded — the primary content)
   List<TopicV2>? _topicsV2;
   bool _topicsV2Loading = false;
 
-  // Curriculum chapters (for home screen + path screen).
-  List<Map<String, dynamic>>? _chapters;
-  bool _chaptersLoading = false;
-
-  // Student level progression.
+  // Student levels
   StudentLevels? _studentLevels;
 
-  // Mastery overview for home screen badges.
+  // Mastery overview
   Map<String, dynamic>? _masteryOverview;
 
-  // Companion system.
+  // Companion
   final CompanionService _companionService = CompanionService();
 
-  // First-launch onboarding routing — guard so we only push the screen once
-  // per signed-in session even if the profile reloads.
+  // Clan
+  final ClanService _clanService = ClanService.instance;
+  Clan? _clan;
+  ChallengeInfo? _activeChallenge;
+  ChallengeProgress? _challengeProgress;
+  List<GuessEntry> _guesses = [];
+  List<LeaderboardEntry> _leaderboardEntries = [];
+  bool _clanLoading = false;
+
+  // Onboarding guard
   bool _onboardingHandled = false;
 
   @override
@@ -126,6 +140,7 @@ class _AppShellState extends State<_AppShell> {
     _loadStudentLevels();
     _loadMasteryOverview();
     _companionService.initialize();
+    _loadClan();
   }
 
   @override
@@ -145,9 +160,6 @@ class _AppShellState extends State<_AppShell> {
       setState(() {
         _profile = profile;
         _loading = false;
-        // Use saved display name if we don't already have one from onboarding.
-        // Reject names that look like truncated email prefixes or junk
-        // (too short, all lowercase, matches email-like patterns).
         if (_studentName.isEmpty &&
             profile.displayName.isNotEmpty &&
             profile.displayName != 'Kiwi Learner' &&
@@ -156,47 +168,31 @@ class _AppShellState extends State<_AppShell> {
         }
       });
       _maybeShowOnboarding();
-      // Always reload chapters after profile is ready (fixes race condition
-      // where _loadChapters() was called before profile had curriculum set).
-      if (_profile.hasCurriculum) {
-        _loadChapters();
-      }
     } catch (e) {
       debugPrint('Failed to load profile: $e');
       setState(() {
         _profile = UserProfile(userId: widget.userId);
         _loading = false;
-        _error = 'Offline mode \u2014 data will sync when connected';
+        _error = 'Offline mode — data will sync when connected';
       });
     }
   }
 
-  /// Detects a first-launch and pushes the onboarding flow.
-  ///
-  /// Uses the persistent `onboarded_at` flag from Firestore — not a fragile
-  /// heuristic based on stats being zero. If the profile fetch failed (network
-  /// error), we do NOT trigger onboarding — show offline mode instead.
   void _maybeShowOnboarding() {
     if (_onboardingHandled) return;
-    // If we have a valid onboarded_at timestamp, user is not new.
     if (_profile.hasOnboarded) {
       _onboardingHandled = true;
-      // Also restore saved grade from profile if available.
       if (_profile.grade != null && _profile.grade != _selectedGrade) {
         setState(() => _selectedGrade = _profile.grade!);
         _loadTopicsV2();
       }
-      // Load chapters for curriculum-based users.
-      _loadChapters();
       return;
     }
-    // If profile has errors (userId empty = fetch failed), don't trigger onboarding.
     if (_error != null) {
       _onboardingHandled = true;
       return;
     }
     _onboardingHandled = true;
-    // Defer to next frame so we have a valid Navigator context.
     WidgetsBinding.instance.addPostFrameCallback((_) {
       if (!mounted) return;
       Navigator.of(context).push(
@@ -205,11 +201,9 @@ class _AppShellState extends State<_AppShell> {
           builder: (_) => OnboardingScreen(
             userId: widget.userId,
             onComplete: (result) {
-              // Capture kid's name from onboarding.
               if (result.kidName.isNotEmpty) {
                 setState(() => _studentName = result.kidName);
               }
-              // Switch the home view to the recommended grade and refresh.
               final newGrade = result.grade.clamp(1, 6);
               if (newGrade != _selectedGrade) {
                 setState(() => _selectedGrade = newGrade);
@@ -217,7 +211,6 @@ class _AppShellState extends State<_AppShell> {
               }
               Navigator.of(context).pop();
               _loadProfile();
-              _loadChapters();
             },
           ),
         ),
@@ -242,7 +235,6 @@ class _AppShellState extends State<_AppShell> {
             }
             Navigator.of(context).pop();
             _loadProfile();
-            _loadChapters();
           },
         ),
       ),
@@ -262,29 +254,6 @@ class _AppShellState extends State<_AppShell> {
       setState(() {
         _topicsV2 = null;
         _topicsV2Loading = false;
-      });
-    }
-  }
-
-  Future<void> _loadChapters() async {
-    // Only load chapters if user has a curriculum-based selection (not olympiad).
-    final cur = _profile.curriculum;
-    if (cur == null || cur.isEmpty || cur == 'olympiad') return;
-    setState(() => _chaptersLoading = true);
-    try {
-      final chapters = await _api.getChapters(
-        curriculum: cur,
-        grade: _selectedGrade,
-      );
-      setState(() {
-        _chapters = chapters;
-        _chaptersLoading = false;
-      });
-    } catch (e) {
-      debugPrint('Failed to load chapters: $e');
-      setState(() {
-        _chapters = null;
-        _chaptersLoading = false;
       });
     }
   }
@@ -310,9 +279,337 @@ class _AppShellState extends State<_AppShell> {
     }
   }
 
+  // ---------------------------------------------------------------------------
+  // Clan loading
+  // ---------------------------------------------------------------------------
+
+  Future<void> _loadClan() async {
+    setState(() => _clanLoading = true);
+    try {
+      // Check if user belongs to a clan
+      final myClan = await _clanService.getMyClan(userUid: widget.userId);
+      setState(() => _clan = myClan);
+
+      if (myClan != null) {
+        // Load active challenge
+        final challenge = await _clanService.getActiveChallenge(grade: _selectedGrade);
+        setState(() => _activeChallenge = challenge);
+
+        // Load challenge progress if there's an active challenge
+        if (challenge != null) {
+          _loadChallengeProgress();
+        }
+      } else {
+        setState(() {
+          _activeChallenge = null;
+          _challengeProgress = null;
+        });
+      }
+    } catch (e) {
+      debugPrint('Failed to load clan data: $e');
+    } finally {
+      setState(() => _clanLoading = false);
+    }
+  }
+
+  Future<void> _loadChallengeProgress() async {
+    if (_clan == null || _activeChallenge == null) return;
+    try {
+      final progress = await _clanService.getChallengeProgress(
+        challengeId: _activeChallenge!.challengeId,
+        clanId: _clan!.clanId,
+      );
+      final guesses = await _clanService.getGuessBoard(
+        challengeId: _activeChallenge!.challengeId,
+        clanId: _clan!.clanId,
+      );
+      setState(() {
+        _challengeProgress = progress;
+        _guesses = guesses;
+      });
+    } catch (e) {
+      debugPrint('Failed to load challenge progress: $e');
+    }
+  }
+
+  Future<void> _loadLeaderboard() async {
+    try {
+      final entries = await _clanService.getLeaderboard(grade: _selectedGrade);
+      setState(() => _leaderboardEntries = entries);
+    } catch (e) {
+      debugPrint('Failed to load leaderboard: $e');
+    }
+  }
+
+  Future<void> _handleCreateClan(String name, String crestShape, String crestColor) async {
+    try {
+      final clan = await _clanService.createClan(
+        name: name,
+        grade: _selectedGrade,
+        leaderUid: widget.userId,
+        parentUid: widget.userId,
+        crestShape: crestShape,
+        crestColor: crestColor,
+      );
+      setState(() => _clan = clan);
+      if (mounted) Navigator.of(context).pop();
+      _loadClan();
+    } catch (e) {
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text('Could not create clan: $e')),
+        );
+      }
+    }
+  }
+
+  Future<void> _handleJoinClan(String inviteCode) async {
+    try {
+      final clan = await _clanService.joinClan(
+        inviteCode: inviteCode,
+        userUid: widget.userId,
+        parentUid: widget.userId,
+        userGrade: _selectedGrade,
+      );
+      setState(() => _clan = clan);
+      if (mounted) Navigator.of(context).pop();
+      _loadClan();
+    } catch (e) {
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text('Could not join clan: $e')),
+        );
+      }
+    }
+  }
+
+  void _navigateToCreateClan() {
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (_) => ClanCreateScreen(
+          grade: _selectedGrade,
+          leaderUid: widget.userId,
+          onCreate: _handleCreateClan,
+          onBack: () => Navigator.of(context).pop(),
+        ),
+      ),
+    );
+  }
+
+  void _navigateToJoinClan() {
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (_) => ClanJoinScreen(
+          userGrade: _selectedGrade,
+          userUid: widget.userId,
+          onJoin: _handleJoinClan,
+          onBack: () => Navigator.of(context).pop(),
+          onCreateInstead: () {
+            Navigator.of(context).pop();
+            _navigateToCreateClan();
+          },
+        ),
+      ),
+    );
+  }
+
+  void _navigateToChallenge() {
+    if (_activeChallenge == null || _challengeProgress == null) return;
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (_) => PictureChallengeScreen(
+          challenge: _activeChallenge!,
+          progress: _challengeProgress!,
+          guesses: _guesses,
+          isLeader: _clan?.leaderUid == widget.userId,
+          userUid: widget.userId,
+          onSubmitAnswer: (answer) async {
+            try {
+              await _clanService.submitAnswer(
+                challengeId: _activeChallenge!.challengeId,
+                clanId: _clan!.clanId,
+                leaderUid: widget.userId,
+                answerText: answer,
+              );
+              _loadChallengeProgress();
+            } catch (e) {
+              if (mounted) {
+                ScaffoldMessenger.of(context).showSnackBar(
+                  SnackBar(content: Text('Could not submit answer: $e')),
+                );
+              }
+            }
+          },
+          onSubmitGuess: (guess) async {
+            try {
+              await _clanService.submitGuess(
+                challengeId: _activeChallenge!.challengeId,
+                clanId: _clan!.clanId,
+                userUid: widget.userId,
+                guessText: guess,
+              );
+              _loadChallengeProgress();
+            } catch (e) {
+              if (mounted) {
+                ScaffoldMessenger.of(context).showSnackBar(
+                  SnackBar(content: Text('Could not submit guess: $e')),
+                );
+              }
+            }
+          },
+          onBack: () {
+            Navigator.of(context).pop();
+            _loadChallengeProgress();
+          },
+        ),
+      ),
+    );
+  }
+
+  void _navigateToLeaderboard() {
+    _loadLeaderboard();
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (_) => ClanLeaderboardScreen(
+          entries: _leaderboardEntries,
+          currentClanId: _clan?.clanId,
+          selectedGrade: _selectedGrade,
+          onGradeChanged: (grade) {},
+          onBack: () => Navigator.of(context).pop(),
+        ),
+      ),
+    );
+  }
+
+  Future<void> _handleLeaveClan() async {
+    if (_clan == null) return;
+    try {
+      await _clanService.removeMember(
+        clanId: _clan!.clanId,
+        userUid: widget.userId,
+      );
+      setState(() {
+        _clan = null;
+        _challengeProgress = null;
+        _guesses = [];
+      });
+    } catch (e) {
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text('Could not leave clan: $e')),
+        );
+      }
+    }
+  }
+
+  void _copyInviteCode() {
+    if (_clan?.inviteCode != null) {
+      // Use Clipboard.setData in the hub screen's callback
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('Invite code copied: ${_clan!.inviteCode}')),
+      );
+    }
+  }
+
+  // ---------------------------------------------------------------------------
+  // Clan landing widget (no-clan state)
+  // ---------------------------------------------------------------------------
+
+  Widget _buildClanLanding(KiwiTier tier) {
+    return Scaffold(
+      backgroundColor: KiwiColors.cream,
+      body: SafeArea(
+        child: Center(
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 32),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                const Text('⚔️', style: TextStyle(fontSize: 64)),
+                const SizedBox(height: 16),
+                Text(
+                  'Join a Clan!',
+                  style: TextStyle(
+                    fontSize: 28,
+                    fontWeight: FontWeight.w800,
+                    color: tier.colors.textPrimary,
+                  ),
+                ),
+                const SizedBox(height: 8),
+                Text(
+                  'Team up with friends, solve puzzles together, and compete on the leaderboard!',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontSize: 15,
+                    color: tier.colors.textSecondary,
+                  ),
+                ),
+                const SizedBox(height: 32),
+                // Create clan button
+                SizedBox(
+                  width: double.infinity,
+                  child: Container(
+                    decoration: BoxDecoration(
+                      gradient: LinearGradient(
+                        colors: [tier.colors.primary, tier.colors.primaryDark],
+                      ),
+                      borderRadius: BorderRadius.circular(14),
+                    ),
+                    child: ElevatedButton(
+                      onPressed: _navigateToCreateClan,
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.transparent,
+                        shadowColor: Colors.transparent,
+                        padding: const EdgeInsets.symmetric(vertical: 14),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(14),
+                        ),
+                      ),
+                      child: const Text(
+                        'Create a Clan',
+                        style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.w700,
+                          color: Colors.white,
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+                const SizedBox(height: 12),
+                // Join clan button
+                SizedBox(
+                  width: double.infinity,
+                  child: OutlinedButton(
+                    onPressed: _navigateToJoinClan,
+                    style: OutlinedButton.styleFrom(
+                      padding: const EdgeInsets.symmetric(vertical: 14),
+                      side: BorderSide(color: tier.colors.primary, width: 2),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(14),
+                      ),
+                    ),
+                    child: Text(
+                      'Join with Invite Code',
+                      style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.w700,
+                        color: tier.colors.primary,
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+
   Future<void> _navigateToSmartSession() async {
     try {
-      final plan = await _api.getSessionPlan(widget.userId, _selectedGrade);
+      final plan = await _api.getUnifiedSession(widget.userId, _selectedGrade);
       if (!mounted) return;
       final questions = plan['questions'] as List<dynamic>?;
       if (questions == null || questions.isEmpty) {
@@ -325,7 +622,7 @@ class _AppShellState extends State<_AppShell> {
         MaterialPageRoute(
           builder: (_) => QuestionScreenV2(
             topicId: 'smart-session',
-            topicName: 'Smart Practice',
+            topicName: plan['session_message'] as String? ?? 'Smart Practice',
             userId: widget.userId,
             grade: _selectedGrade,
             companionService: _companionService,
@@ -340,7 +637,7 @@ class _AppShellState extends State<_AppShell> {
         ),
       );
     } catch (e) {
-      debugPrint('Failed to load session plan: $e');
+      debugPrint('Failed to load unified session: $e');
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           const SnackBar(content: Text('Could not load smart session. Try again.')),
@@ -376,7 +673,6 @@ class _AppShellState extends State<_AppShell> {
     if (grade == _selectedGrade) return;
     setState(() => _selectedGrade = grade);
     _loadTopicsV2();
-    _loadChapters();
     _loadStudentLevels();
     _loadMasteryOverview();
   }
@@ -386,8 +682,7 @@ class _AppShellState extends State<_AppShell> {
   }
 
   void _onTabTapped(int index) async {
-    // Tab 2 = Parent Dashboard — requires parental gate
-    if (index == 2 && !_parentGatePassed) {
+    if (index == 3 && !_parentGatePassed) {
       final verified = await ParentalGate.show(context);
       if (!verified || !mounted) return;
       setState(() => _parentGatePassed = true);
@@ -409,7 +704,6 @@ class _AppShellState extends State<_AppShell> {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              // Handle
               Container(
                 width: 36, height: 4,
                 decoration: BoxDecoration(
@@ -418,7 +712,7 @@ class _AppShellState extends State<_AppShell> {
                 ),
               ),
               const SizedBox(height: 16),
-              // Avatar + name
+              // Avatar — Kiwimath orange gradient
               Container(
                 width: 56, height: 56,
                 decoration: BoxDecoration(
@@ -440,19 +734,17 @@ class _AppShellState extends State<_AppShell> {
               Text(name, style: TextStyle(fontSize: 18, fontWeight: FontWeight.w800, color: tier.colors.textPrimary)),
               Text('Grade $_selectedGrade', style: TextStyle(fontSize: 13, color: tier.colors.textMuted)),
               const SizedBox(height: 6),
-              // Stats
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   _buildStatChip('\u{1F525}', '${_profile.streakCurrent}', tier),
                   const SizedBox(width: 8),
-                  _buildStatChip('\u{2B50}', '${_profile.xpTotal} XP', tier),
+                  _buildStatChip('\u{26A1}', '${_profile.xpTotal} XP', tier),
                   const SizedBox(width: 8),
                   _buildStatChip('\u{1FA99}', '${_profile.kiwiCoins}', tier),
                 ],
               ),
               const SizedBox(height: 20),
-              // Actions
               ListTile(
                 leading: Icon(Icons.refresh_rounded, color: tier.colors.primary),
                 title: const Text('Retake Diagnostic Test'),
@@ -499,15 +791,13 @@ class _AppShellState extends State<_AppShell> {
 
     final tier = KiwiTier.forGrade(_selectedGrade);
 
-    // Use IndexedStack to preserve tab state — avoids re-creating
-    // LearningPathScreen (and re-fetching from the backend) on every tab tap.
     final shell = Scaffold(
       body: Stack(
         children: [
           IndexedStack(
             index: _selectedTab,
             children: [
-              // Tab 0 — Home
+              // Tab 0 — Home (adaptive-first, no curriculum gating)
               HomeScreen(
                 studentName: _studentName.isNotEmpty ? _studentName : _profile.displayName,
                 streak: _profile.streakCurrent,
@@ -528,16 +818,13 @@ class _AppShellState extends State<_AppShell> {
                 companionService: _companionService,
                 studentLevels: _studentLevels,
                 onOpenLearningPath: () => _onTabTapped(1),
-                onOpenParentDashboard: () => _onTabTapped(2),
+                onOpenParentDashboard: () => _onTabTapped(3),
                 onRestartOnboarding: _restartOnboarding,
                 masteryOverview: _masteryOverview,
                 onSmartSession: _navigateToSmartSession,
                 onAvatarTap: _showProfileSheet,
-                curriculum: _profile.curriculum,
-                chapters: _chapters,
-                chaptersLoading: _chaptersLoading,
               ),
-              // Tab 1 — Learning Path
+              // Tab 1 — School (curriculum chapters)
               LearningPathScreen(
                 userId: widget.userId,
                 grade: _selectedGrade,
@@ -546,7 +833,19 @@ class _AppShellState extends State<_AppShell> {
                 embedded: true,
                 curriculum: _profile.curriculum,
               ),
-              // Tab 2 — Parent Dashboard
+              // Tab 2 — Clan
+              _clan != null
+                  ? ClanHubScreen(
+                      clan: _clan!,
+                      activeChallenge: _activeChallenge,
+                      challengeProgress: _challengeProgress,
+                      onOpenChallenge: _navigateToChallenge,
+                      onOpenLeaderboard: _navigateToLeaderboard,
+                      onLeaveClan: _handleLeaveClan,
+                      onCopyInviteCode: _copyInviteCode,
+                    )
+                  : _buildClanLanding(tier),
+              // Tab 3 — Parent Dashboard
               _parentGatePassed
                   ? ParentDashboardScreen(
                       userId: widget.userId,
@@ -559,7 +858,7 @@ class _AppShellState extends State<_AppShell> {
                   : const Scaffold(body: Center(child: CircularProgressIndicator())),
             ],
           ),
-          // Show offline banner if initial profile load failed
+          // Offline banner
           if (_error != null)
             Positioned(
               top: 0,
@@ -598,6 +897,7 @@ class _AppShellState extends State<_AppShell> {
             ),
         ],
       ),
+      // Bottom nav: Home / School / Parent
       bottomNavigationBar: Container(
         decoration: BoxDecoration(
           color: tier.colors.cardBg,
@@ -617,8 +917,9 @@ class _AppShellState extends State<_AppShell> {
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 _buildNavItem(0, Icons.home_rounded, 'Home', tier),
-                _buildNavItem(1, Icons.alt_route_rounded, 'Path', tier),
-                _buildNavItem(2, Icons.family_restroom_rounded, 'Parent', tier),
+                _buildNavItem(1, Icons.school_rounded, 'School', tier),
+                _buildNavItem(2, Icons.groups_rounded, 'Clan', tier),
+                _buildNavItem(3, Icons.family_restroom_rounded, 'Parent', tier),
               ],
             ),
           ),

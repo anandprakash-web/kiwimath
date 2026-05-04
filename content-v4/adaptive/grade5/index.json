@@ -1,0 +1,232 @@
+{
+  "grade": 5,
+  "total_topics": 10,
+  "total_questions": 5104,
+  "topics": [
+    {
+      "id": "g5-algebra",
+      "name": "Algebra & Equations",
+      "emoji": "📝",
+      "domain": "algebra",
+      "skills": [
+        "number_patterns",
+        "order_of_ops"
+      ],
+      "total_questions": 60,
+      "difficulty_range": {
+        "min_irt_b": -0.68,
+        "max_irt_b": 2.12
+      },
+      "source_breakdown": {
+        "singapore": 30,
+        "us-common-core": 30
+      }
+    },
+    {
+      "id": "g5-arithmetic",
+      "name": "Arithmetic Operations",
+      "emoji": "➕",
+      "domain": "arithmetic",
+      "skills": [
+        "addition_2digit",
+        "subtraction_2digit",
+        "multiplication_facts",
+        "division_basic",
+        "multi_step",
+        "order_of_ops"
+      ],
+      "total_questions": 1185,
+      "difficulty_range": {
+        "min_irt_b": -1.36,
+        "max_irt_b": 3.0
+      },
+      "source_breakdown": {
+        "igcse": 113,
+        "singapore": 56,
+        "ncert": 123,
+        "us-common-core": 55,
+        "icse": 65,
+        "olympiad": 340
+      }
+    },
+    {
+      "id": "g5-data",
+      "name": "Data Handling & Statistics",
+      "emoji": "📈",
+      "domain": "data",
+      "skills": [
+        "data_handling"
+      ],
+      "total_questions": 160,
+      "difficulty_range": {
+        "min_irt_b": -2.94,
+        "max_irt_b": 3.0
+      },
+      "source_breakdown": {
+        "igcse": 50,
+        "icse": 50,
+        "ncert": 60
+      }
+    },
+    {
+      "id": "g5-fractions",
+      "name": "Fractions & Decimals",
+      "emoji": "🍔",
+      "domain": "fractions",
+      "skills": [
+        "fraction_concept",
+        "fraction_compare",
+        "fraction_add",
+        "fraction_multiply"
+      ],
+      "total_questions": 298,
+      "difficulty_range": {
+        "min_irt_b": -2.94,
+        "max_irt_b": 3.0
+      },
+      "source_breakdown": {
+        "igcse": 83,
+        "olympiad": 12,
+        "ncert": 88,
+        "icse": 30,
+        "singapore": 35,
+        "us-common-core": 50
+      }
+    },
+    {
+      "id": "g5-geometry",
+      "name": "Geometry & Angles",
+      "emoji": "📐",
+      "domain": "geometry",
+      "skills": [
+        "shapes_2d",
+        "shapes_3d",
+        "symmetry",
+        "perimeter",
+        "area",
+        "angles"
+      ],
+      "total_questions": 779,
+      "difficulty_range": {
+        "min_irt_b": -2.95,
+        "max_irt_b": 2.2
+      },
+      "source_breakdown": {
+        "olympiad": 576,
+        "ncert": 134,
+        "icse": 42,
+        "igcse": 27
+      }
+    },
+    {
+      "id": "g5-measurement",
+      "name": "Measurement & Conversion",
+      "emoji": "📏",
+      "domain": "measurement",
+      "skills": [
+        "length",
+        "weight",
+        "capacity",
+        "unit_conversion"
+      ],
+      "total_questions": 544,
+      "difficulty_range": {
+        "min_irt_b": -1.5,
+        "max_irt_b": 2.65
+      },
+      "source_breakdown": {
+        "icse": 120,
+        "igcse": 34,
+        "ncert": 186,
+        "singapore": 20,
+        "us-common-core": 34,
+        "olympiad": 150
+      }
+    },
+    {
+      "id": "g5-numbers",
+      "name": "Numbers & Number Systems",
+      "emoji": "🔢",
+      "domain": "numbers",
+      "skills": [
+        "place_value_4",
+        "comparison",
+        "rounding"
+      ],
+      "total_questions": 915,
+      "difficulty_range": {
+        "min_irt_b": -2.94,
+        "max_irt_b": 2.2
+      },
+      "source_breakdown": {
+        "igcse": 120,
+        "ncert": 180,
+        "icse": 25,
+        "singapore": 39,
+        "us-common-core": 31,
+        "olympiad": 520
+      }
+    },
+    {
+      "id": "g5-patterns",
+      "name": "Patterns & Logic",
+      "emoji": "🧩",
+      "domain": "numbers",
+      "skills": [
+        "number_patterns"
+      ],
+      "total_questions": 645,
+      "difficulty_range": {
+        "min_irt_b": -1.49,
+        "max_irt_b": 2.2
+      },
+      "source_breakdown": {
+        "ncert": 49,
+        "olympiad": 596
+      }
+    },
+    {
+      "id": "g5-percent",
+      "name": "Percentage & Ratio",
+      "emoji": "📊",
+      "domain": "ratio",
+      "skills": [
+        "percentage_basic",
+        "ratio_basic",
+        "pct_fraction",
+        "percentage_word"
+      ],
+      "total_questions": 120,
+      "difficulty_range": {
+        "min_irt_b": -0.95,
+        "max_irt_b": 2.5
+      },
+      "source_breakdown": {
+        "generated": 120
+      }
+    },
+    {
+      "id": "g5-word-problems",
+      "name": "Word Problems",
+      "emoji": "📖",
+      "domain": "arithmetic",
+      "skills": [
+        "multi_step"
+      ],
+      "total_questions": 398,
+      "difficulty_range": {
+        "min_irt_b": -1.5,
+        "max_irt_b": 2.8
+      },
+      "source_breakdown": {
+        "ncert": 272,
+        "igcse": 173,
+        "icse": 68,
+        "olympiad": 298,
+        "singapore": 20
+      }
+    }
+  ],
+  "schema_version": "4.1",
+  "generated_at": "2026-05-03T10:02:31.332162"
+}

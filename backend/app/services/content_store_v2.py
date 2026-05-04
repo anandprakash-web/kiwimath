@@ -1,13 +1,17 @@
 """
-v2 Content Store — loads the new flat JSON/SVG content from content-v2/.
+v2/v3 Content Store — loads flat JSON/SVG content from content-v2/ or content-v3/.
 
-Each topic folder contains:
-  - questions.json  (all 100 questions, ordered by difficulty 1-100)
-  - visuals/        (SVG files referenced by question.visual_svg)
+content-v3/ contains the same structure as content-v2/ but with Grand Unified
+Schema fields (level, universal_skill_id, maturity_bucket, etc.) added by
+migrate_to_v3.py.  The store loads whichever version is configured — all v3
+fields are optional so v2 content continues to work.
 
 Usage:
+    # Preferred: point at enriched content
+    export KIWIMATH_V3_CONTENT_DIR=~/kiwimath/content-v3
+
+    # Legacy: still works, v3 fields will be None
     export KIWIMATH_V2_CONTENT_DIR=~/kiwimath/content-v2
-    # Or point to the content-v2 folder at startup
 """
 
 from __future__ import annotations
@@ -18,7 +22,7 @@ import re
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Union
 
-from pydantic import BaseModel, Field, field_validator
+from pydantic import BaseModel, ConfigDict, Field, field_validator
 
 
 # ---------------------------------------------------------------------------
@@ -45,11 +49,18 @@ class HintLadder(BaseModel):
 # question banks (NCERT, Singapore/SING, USCC, ICSE) to be loaded into the
 # same unified store.
 _QUESTION_ID_RE = re.compile(
-    r"^(?:T[1-8]-\d{3,4}|(?:NCERT|SING|USCC|ICSE|IGCSE)-G[1-6]-\d{3,4})$"
+    r"^(?:"
+    r"T[1-8]-\d{3,4}(?:-G\d(?:-L\d)?)?"         # Olympiad (original + grade-suffixed copies)
+    r"|(?:NCERT|SING|USCC|ICSE|IGCSE)-G[1-6]-\d{3,4}(?:-G\d)?"  # Curriculum (+ grade copies)
+    r"|GEN-G\d[MD]-\d{3}"                         # Generated multiplication/division
+    r"|PCT-G5-\d{3}"                              # Generated percentage/ratio
+    r")$"
 )
 
 
 class QuestionV2(BaseModel):
+    model_config = ConfigDict(extra="ignore")  # v3 may add fields we don't model yet
+
     id: str
     stem: str
     original_stem: Optional[str] = None
@@ -59,6 +70,14 @@ class QuestionV2(BaseModel):
     difficulty_score: int = Field(..., ge=1, le=500)
     visual_svg: Optional[str] = None
     visual_alt: Optional[str] = None
+
+    @field_validator("visual_svg", mode="before")
+    @classmethod
+    def normalize_visual_svg(cls, v: Any) -> Any:
+        """Nullify filename references (e.g. 't2-101.svg') — only keep inline SVG."""
+        if isinstance(v, str) and v.strip() and not v.strip().startswith("<"):
+            return None
+        return v
     diagnostics: Dict[str, str] = Field(default_factory=dict)
     topic: str
     topic_name: str = ""
@@ -72,6 +91,47 @@ class QuestionV2(BaseModel):
     correct_value: Optional[int] = None  # For integer mode: the correct numeric answer
     correct_order: Optional[List[int]] = None  # For drag_drop: correct ordering of items
     drag_items: Optional[List[str]] = None  # For drag_drop: the items to be arranged
+
+    @field_validator("drag_items", mode="before")
+    @classmethod
+    def coerce_drag_items_to_str(cls, v: Any) -> Any:
+        if isinstance(v, list):
+            return [str(item) for item in v]
+        return v
+
+    # --- v3 Grand Unified Schema fields (all optional for backward compat) ---
+    level: Optional[int] = None  # Kiwimath level 1-6 (replaces grade in core product)
+    level_name: Optional[str] = None  # Explorer/Builder/Thinker/Solver/Strategist/Master
+    universal_skill_id: Optional[str] = None  # e.g. FRAC_ADD_4
+    skill_id: Optional[str] = None  # e.g. fraction_add (maps to prereq graph)
+    skill_domain: Optional[str] = None  # numbers/arithmetic/fractions/geometry/measurement/data
+    maturity_bucket: str = "calibrating"  # experimental/calibrating/production
+    visual_requirement: Optional[str] = None  # essential/optional/none
+    visual_type: Optional[str] = None  # 2d/3d_rotatable/number_line/chart/lottie/none
+    visual_ai_verified: bool = False  # LLM recheck passed
+    media_id: Optional[str] = None  # CDN asset reference
+    media_hash: Optional[str] = None  # SHA256 integrity hash
+    misconception_ids: List[str] = Field(default_factory=list)  # e.g. ["ADD_INSTEAD_SUB"]
+    why_quality: Optional[str] = None  # human_authored/ai_generated/structured/minimal/none
+    why_framework: Optional[str] = None  # 3R/pending
+    hint_quality: Optional[Dict[str, Any]] = None  # {layers, quality, has_3_layers}
+    country_context: Optional[Dict[str, Any]] = None  # localization contexts
+    curriculum_source: Optional[str] = None  # ncert/icse/singapore/uscc/olympiad
+    curriculum_map: Optional[Dict[str, str]] = None  # cross-curriculum references
+    school_grade: Optional[int] = None  # preserved for curriculum tab only
+    avg_time_to_solve_ms: Optional[int] = None  # behavioral (populated by live data)
+    times_served: int = 0  # behavioral
+    flag_count: int = 0  # behavioral
+    schema_version: Optional[str] = None  # "3.0"
+
+    # IRT parameters (from content generation / calibration)
+    irt_params: Optional[Dict[str, float]] = None  # {a, b, c}
+    irt_a: Optional[float] = None
+    irt_b: Optional[float] = None
+    irt_c: Optional[float] = None
+
+    # Visual context description (for AI verification pipeline)
+    visual_context: Optional[str] = None
 
     @field_validator("id")
     @classmethod
@@ -395,6 +455,9 @@ class ContentStoreV2:
             "ncert": "NCERT",
             "icse": "ICSE",
             "igcse": "IGCSE",
+            "singapore": "SING",
+            "uscc": "USCC",
+            "cambridge": "IGCSE",  # alias: Cambridge Primary = IGCSE prefix
         }
         prefix = prefix_map.get(curriculum.lower())
         if not prefix:
@@ -448,6 +511,9 @@ class ContentStoreV2:
             "ncert": "NCERT",
             "icse": "ICSE",
             "igcse": "IGCSE",
+            "singapore": "SING",
+            "uscc": "USCC",
+            "cambridge": "IGCSE",  # alias: Cambridge Primary = IGCSE prefix
         }
         prefix = prefix_map.get(curriculum.lower())
         if not prefix:
@@ -462,14 +528,102 @@ class ContentStoreV2:
         questions.sort(key=lambda q: q.difficulty_score)
         return questions
 
+    # -------------------------------------------------------------------
+    # v3 Level / Skill / Maturity queries
+    # -------------------------------------------------------------------
+
+    def by_level(self, level: int) -> List[QuestionV2]:
+        """Get all questions for a Kiwimath Level (1-6)."""
+        return [q for q in self._questions.values() if q.level == level]
+
+    def by_skill(self, universal_skill_id: str) -> List[QuestionV2]:
+        """Get all questions for a Universal Skill ID (e.g. 'FRAC_ADD_4')."""
+        return [
+            q for q in self._questions.values()
+            if q.universal_skill_id == universal_skill_id
+        ]
+
+    def by_skill_domain(self, domain: str) -> List[QuestionV2]:
+        """Get all questions in a skill domain (numbers/arithmetic/fractions/geometry/measurement/data)."""
+        return [q for q in self._questions.values() if q.skill_domain == domain]
+
+    def by_maturity(self, bucket: str) -> List[QuestionV2]:
+        """Get questions by maturity bucket (experimental/calibrating/production)."""
+        return [q for q in self._questions.values() if q.maturity_bucket == bucket]
+
+    def production_questions(self) -> List[QuestionV2]:
+        """Get only production-grade questions (suitable for AH benchmarking)."""
+        return self.by_maturity("production")
+
+    def level_stats(self) -> Dict[int, int]:
+        """Return level → question count mapping."""
+        counts: Dict[int, int] = {}
+        for q in self._questions.values():
+            if q.level is not None:
+                counts[q.level] = counts.get(q.level, 0) + 1
+        return counts
+
+    def skill_stats(self) -> Dict[str, int]:
+        """Return universal_skill_id → question count mapping."""
+        counts: Dict[str, int] = {}
+        for q in self._questions.values():
+            if q.universal_skill_id:
+                counts[q.universal_skill_id] = counts.get(q.universal_skill_id, 0) + 1
+        return counts
+
+    def next_question_v3(
+        self,
+        level: int,
+        skill_domain: Optional[str] = None,
+        exclude_ids: Optional[List[str]] = None,
+        maturity_filter: Optional[str] = None,
+        difficulty: Optional[int] = None,
+        window: int = 20,
+    ) -> Optional[QuestionV2]:
+        """Level-aware question selection (v3 schema).
+
+        Selects from the level pool, optionally filtered by skill domain
+        and maturity bucket. Falls back to the legacy next_question()
+        if no v3 fields are populated.
+        """
+        import random
+
+        pool = self.by_level(level)
+        if skill_domain:
+            pool = [q for q in pool if q.skill_domain == skill_domain]
+        if maturity_filter:
+            pool = [q for q in pool if q.maturity_bucket == maturity_filter]
+
+        exclude = set(exclude_ids or [])
+        pool = [q for q in pool if q.id not in exclude]
+
+        if not pool:
+            return None
+
+        if difficulty is not None:
+            candidates = [q for q in pool if abs(q.difficulty_score - difficulty) <= window]
+            if candidates:
+                return random.choice(candidates)
+
+        return random.choice(pool)
+
     def stats(self) -> Dict:
-        return {
+        base = {
             "total_questions": len(self._questions),
             "topics": len(self._topics),
             "questions_per_topic": {
                 t.topic_id: t.total_questions for t in self._topics
             },
         }
+        # Add v3 stats if available
+        ls = self.level_stats()
+        if ls:
+            base["levels"] = ls
+            base["maturity"] = {
+                bucket: len(self.by_maturity(bucket))
+                for bucket in ("experimental", "calibrating", "production")
+            }
+        return base
 
 
 # ---------------------------------------------------------------------------
@@ -599,10 +753,17 @@ def _load_curriculum_folder(curriculum_dir: Path, curriculum_name: str) -> int:
 
 
 def bootstrap_v2_from_env() -> None:
-    """Called at app startup. Reads KIWIMATH_V2_CONTENT_DIR env var."""
-    content_dir = os.environ.get("KIWIMATH_V2_CONTENT_DIR")
+    """Called at app startup.
+
+    Prefers KIWIMATH_V3_CONTENT_DIR (enriched Grand Unified Schema data).
+    Falls back to KIWIMATH_V2_CONTENT_DIR for legacy content.
+    """
+    # Prefer v3 (Grand Unified Schema) over v2
+    content_dir = os.environ.get("KIWIMATH_V3_CONTENT_DIR") or os.environ.get(
+        "KIWIMATH_V2_CONTENT_DIR"
+    )
     if not content_dir:
-        print("[content_store_v2] KIWIMATH_V2_CONTENT_DIR not set; v2 store empty.")
+        print("[content_store_v2] No content dir set (KIWIMATH_V3_CONTENT_DIR / KIWIMATH_V2_CONTENT_DIR); store empty.")
         return
 
     root = Path(content_dir).expanduser().resolve()
@@ -610,9 +771,12 @@ def bootstrap_v2_from_env() -> None:
         print(f"[content_store_v2] WARNING: {root} does not exist")
         return
 
+    schema_version = "v3" if "v3" in str(root) else "v2"
+    print(f"[content_store_v2] loading {schema_version} content from {root}")
+
     # Load core topic content (T1-T8)
     n = store_v2.load_folder(root)
-    print(f"[content_store_v2] loaded {n} core topic questions")
+    print(f"[content_store_v2] loaded {n} core topic questions ({schema_version})")
 
     # Load all curriculum content into the same store
     curricula = {

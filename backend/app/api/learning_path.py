@@ -116,11 +116,17 @@ def get_learning_path(
     grade: Optional[int] = Query(None, ge=1, le=6, description="Grade band 1-6"),
 ):
     """Generate a personalised topic ordering + difficulty plan."""
-    # Only include the 8 Kangaroo/Olympiad topics (topic-1 through topic-8).
+    # Only include the 8 Kangaroo/Olympiad topics.
     # Curriculum-specific topics (NCERT, ICSE, IGCSE, Singapore, US Common Core)
     # are served via the /v2/chapters endpoint instead.
+    _CURRICULUM_PREFIXES = ("ncert_", "icse_", "igcse_")
     all_topics = store_v2.topics()
-    topics = [t for t in all_topics if t.topic_id.startswith("topic-")]
+    topics = [
+        t for t in all_topics
+        if not t.topic_id.startswith(_CURRICULUM_PREFIXES)
+        and ":" not in t.topic_id
+        and "&" not in t.topic_id
+    ]
     if not topics:
         raise HTTPException(status_code=404, detail="No v2 content loaded.")
 

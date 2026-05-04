@@ -83,6 +83,10 @@ class BenchmarkResult(BaseModel):
     suggested_topics: List[str]            # topic_ids ordered: weakest first
     strengths: List[str]                   # topic_ids where student excelled
     per_topic: List[TopicAbility]
+    parent_summary: str = ""               # human-readable summary for parents
+    level_label: str = ""                  # "on track" / "ahead" / "needs support"
+    focus_area: str = ""                   # plain-English weakest area
+    next_step: str = ""                    # what the app will do next
 
 
 # ---------------------------------------------------------------------------
@@ -102,6 +106,133 @@ _BENCHMARK_BAND = {
 
 def _band_for_grade(grade: int) -> tuple[int, int]:
     return _BENCHMARK_BAND.get(grade, (1, 100))
+
+
+# ---------------------------------------------------------------------------
+# Parent-facing summary helpers
+# ---------------------------------------------------------------------------
+
+# Friendly topic names for parent communication.
+_TOPIC_DISPLAY = {
+    "counting": "Counting",
+    "addition": "Addition",
+    "subtraction": "Subtraction",
+    "multiplication": "Multiplication",
+    "division": "Division",
+    "fractions": "Fractions",
+    "geometry": "Shapes & Geometry",
+    "patterns": "Patterns & Sequences",
+    "measurement": "Measurement",
+    "word_problems": "Word Problems",
+    "number_sense": "Number Sense",
+    "data_handling": "Data & Graphs",
+    "logic": "Logical Thinking",
+    "arithmetic": "Arithmetic",
+}
+
+
+def _friendly_topic(topic_id: str) -> str:
+    """Convert a topic_id to a parent-friendly name."""
+    return _TOPIC_DISPLAY.get(topic_id, topic_id.replace("_", " ").title())
+
+
+def _generate_parent_summary(
+    *,
+    grade: int,
+    overall_acc: float,
+    avg_ability: int,
+    per_topic_list: List["TopicAbility"],
+    suggested: List[str],
+    strengths: List[str],
+) -> tuple[str, str, str, str]:
+    """Generate parent-facing summary fields.
+
+    Returns:
+        (parent_summary, level_label, focus_area, next_step)
+    """
+    # --- Level label ---
+    # Grade midpoints on the 1-100 difficulty scale:
+    #   G1≈25, G2≈50, G3≈75, G4≈100, G5≈125, G6≈150
+    grade_midpoint = 25 * grade
+    if avg_ability >= grade_midpoint + 12:
+        level_label = "ahead"
+    elif avg_ability <= grade_midpoint - 12:
+        level_label = "needs support"
+    else:
+        level_label = "on track"
+
+    # --- Focus area (plain-English weakest topic) ---
+    if suggested:
+        focus_area = _friendly_topic(suggested[0])
+    else:
+        focus_area = ""
+
+    # --- Strengths as friendly names ---
+    strength_names = [_friendly_topic(s) for s in strengths[:2]]
+
+    # --- Parent summary ---
+    # Opening line about level
+    if level_label == "ahead":
+        level_sentence = (
+            f"Great news! Your child is performing above Grade {grade} level."
+        )
+    elif level_label == "needs support":
+        level_sentence = (
+            f"Your child could use some extra practice to build Grade {grade} confidence."
+        )
+    else:
+        level_sentence = (
+            f"Your child is right on track for Grade {grade} — nice work!"
+        )
+
+    # Strengths sentence
+    if strength_names:
+        if len(strength_names) == 1:
+            strength_sentence = f"Strongest in {strength_names[0]}."
+        else:
+            strength_sentence = (
+                f"Strongest in {strength_names[0]} and {strength_names[1]}."
+            )
+    else:
+        strength_sentence = ""
+
+    # Focus sentence
+    if focus_area:
+        focus_sentence = f"We'll focus on building {focus_area} skills first."
+    else:
+        focus_sentence = ""
+
+    # Accuracy note (only if notably high or low)
+    if overall_acc >= 90:
+        acc_note = f" They scored {int(overall_acc)}% — excellent!"
+    elif overall_acc <= 40:
+        acc_note = " Don't worry — we'll start easy and build up from there."
+    else:
+        acc_note = ""
+
+    parent_summary = " ".join(
+        part for part in [level_sentence, strength_sentence, focus_sentence + acc_note]
+        if part
+    ).strip()
+
+    # --- Next step ---
+    if level_label == "needs support":
+        next_step = (
+            "KiwiMath will start with confidence-building questions and "
+            "gradually increase difficulty as your child improves."
+        )
+    elif level_label == "ahead":
+        next_step = (
+            "KiwiMath will challenge your child with advanced problems "
+            "to keep them engaged and growing."
+        )
+    else:
+        next_step = (
+            "KiwiMath will serve questions matched to your child's level, "
+            "getting harder as they master each topic."
+        )
+
+    return parent_summary, level_label, focus_area, next_step
 
 
 # ---------------------------------------------------------------------------
@@ -125,7 +256,17 @@ def benchmark_questions(
         student cannot memorize answers.
       - Return as plain dicts (same shape as QuestionOutV2 minus the visual url).
     """
-    topics = store_v2.topics()
+    # Only use the 8 Olympiad topics for the diagnostic benchmark.
+    # Curriculum-specific topics (NCERT, ICSE, IGCSE, Singapore, US Common Core)
+    # are NOT included — they are served via /v2/chapters instead.
+    _CURRICULUM_PREFIXES = ("ncert_", "icse_", "igcse_")
+    all_topics = store_v2.topics()
+    topics = [
+        t for t in all_topics
+        if not t.topic_id.startswith(_CURRICULUM_PREFIXES)
+        and ":" not in t.topic_id
+        and "&" not in t.topic_id
+    ]
     if not topics:
         raise HTTPException(status_code=404, detail="No v2 content loaded.")
 
@@ -284,9 +425,14 @@ def submit_benchmark(req: BenchmarkSubmitRequest):
     total_q = len(req.answers)
     overall_acc = (total_correct / total_q) * 100.0 if total_q else 0.0
 
-    # Build per-topic ability list using the engine's view of the world.
+    # Build per-topic ability list — only Olympiad topics (not curriculum).
+    _CURRICULUM_PREFIXES = ("ncert_", "icse_", "igcse_")
     per_topic_list: List[TopicAbility] = []
     for topic in store_v2.topics():
+        if topic.topic_id.startswith(_CURRICULUM_PREFIXES):
+            continue
+        if ":" in topic.topic_id or "&" in topic.topic_id:
+            continue
         ability = engine_v2.get_ability(req.user_id, topic.topic_id)
         bucket = per_topic_acc.get(topic.topic_id, {"correct": 0, "attempts": 0})
         per_topic_list.append(
@@ -337,6 +483,16 @@ def submit_benchmark(req: BenchmarkSubmitRequest):
     except Exception:
         pass  # Non-fatal — profile write can retry later.
 
+    # --- Parent-facing summary generation ---
+    parent_summary, level_label, focus_area, next_step = _generate_parent_summary(
+        grade=req.grade,
+        overall_acc=overall_acc,
+        avg_ability=avg_ability,
+        per_topic_list=per_topic_list,
+        suggested=suggested,
+        strengths=strengths,
+    )
+
     return BenchmarkResult(
         user_id=req.user_id,
         grade=req.grade,
@@ -348,4 +504,8 @@ def submit_benchmark(req: BenchmarkSubmitRequest):
         suggested_topics=suggested,
         strengths=strengths,
         per_topic=per_topic_list,
+        parent_summary=parent_summary,
+        level_label=level_label,
+        focus_area=focus_area,
+        next_step=next_step,
     )

@@ -1,0 +1,341 @@
+{
+  "curriculum": "singapore",
+  "curriculum_name": "Singapore Math",
+  "grade": 1,
+  "total_chapters": 8,
+  "total_questions": 200,
+  "chapters": [
+    {
+      "chapter_name": "1A: Addition Stories",
+      "total_questions": 35,
+      "skill_ids": [
+        "addition_basic"
+      ],
+      "adaptive_topic_ids": [
+        "g1-addition"
+      ],
+      "question_ids": [
+        "SING-G1-031",
+        "SING-G1-042",
+        "SING-G1-043",
+        "SING-G1-051",
+        "SING-G1-064",
+        "SING-G1-065",
+        "SING-G1-066",
+        "SING-G1-067",
+        "SING-G1-070",
+        "SING-G1-072",
+        "SING-G1-073",
+        "SING-G1-074",
+        "SING-G1-095",
+        "SING-G1-101",
+        "SING-G1-108",
+        "SING-G1-116",
+        "SING-G1-117",
+        "SING-G1-124",
+        "SING-G1-125",
+        "SING-G1-127",
+        "SING-G1-128",
+        "SING-G1-139",
+        "SING-G1-147",
+        "SING-G1-151",
+        "SING-G1-157",
+        "SING-G1-158",
+        "SING-G1-161",
+        "SING-G1-162",
+        "SING-G1-165",
+        "SING-G1-166",
+        "SING-G1-169",
+        "SING-G1-171",
+        "SING-G1-184",
+        "SING-G1-187",
+        "SING-G1-192"
+      ],
+      "difficulty_range": {
+        "min": -1.5,
+        "max": 1.21
+      }
+    },
+    {
+      "chapter_name": "1A: Number Bonds",
+      "total_questions": 40,
+      "skill_ids": [
+        "counting_10",
+        "addition_basic"
+      ],
+      "adaptive_topic_ids": [
+        "g1-counting",
+        "g1-addition"
+      ],
+      "question_ids": [
+        "SING-G1-001",
+        "SING-G1-004",
+        "SING-G1-011",
+        "SING-G1-014",
+        "SING-G1-015",
+        "SING-G1-027",
+        "SING-G1-030",
+        "SING-G1-039",
+        "SING-G1-056",
+        "SING-G1-071",
+        "SING-G1-078",
+        "SING-G1-079",
+        "SING-G1-087",
+        "SING-G1-094",
+        "SING-G1-107",
+        "SING-G1-132",
+        "SING-G1-144",
+        "SING-G1-150",
+        "SING-G1-153",
+        "SING-G1-154",
+        "SING-G1-155",
+        "SING-G1-156",
+        "SING-G1-167",
+        "SING-G1-168",
+        "SING-G1-170",
+        "SING-G1-172",
+        "SING-G1-179",
+        "SING-G1-180",
+        "SING-G1-186",
+        "SING-G1-188",
+        "SING-G1-190",
+        "SING-G1-191",
+        "SING-G1-193",
+        "SING-G1-194",
+        "SING-G1-195",
+        "SING-G1-196",
+        "SING-G1-197",
+        "SING-G1-198",
+        "SING-G1-199",
+        "SING-G1-200"
+      ],
+      "difficulty_range": {
+        "min": -2.29,
+        "max": 2.0
+      }
+    },
+    {
+      "chapter_name": "1A: Shapes and Patterns",
+      "total_questions": 25,
+      "skill_ids": [
+        "shapes_2d"
+      ],
+      "adaptive_topic_ids": [
+        "g1-shapes"
+      ],
+      "question_ids": [
+        "SING-G1-002",
+        "SING-G1-005",
+        "SING-G1-006",
+        "SING-G1-007",
+        "SING-G1-009",
+        "SING-G1-012",
+        "SING-G1-017",
+        "SING-G1-023",
+        "SING-G1-032",
+        "SING-G1-035",
+        "SING-G1-046",
+        "SING-G1-047",
+        "SING-G1-053",
+        "SING-G1-054",
+        "SING-G1-058",
+        "SING-G1-059",
+        "SING-G1-069",
+        "SING-G1-076",
+        "SING-G1-082",
+        "SING-G1-104",
+        "SING-G1-133",
+        "SING-G1-134",
+        "SING-G1-145",
+        "SING-G1-148",
+        "SING-G1-159"
+      ],
+      "difficulty_range": {
+        "min": -2.29,
+        "max": 0.14
+      }
+    },
+    {
+      "chapter_name": "1A: Subtraction Stories",
+      "total_questions": 35,
+      "skill_ids": [
+        "subtraction_basic"
+      ],
+      "adaptive_topic_ids": [
+        "g1-subtraction"
+      ],
+      "question_ids": [
+        "SING-G1-016",
+        "SING-G1-020",
+        "SING-G1-021",
+        "SING-G1-022",
+        "SING-G1-040",
+        "SING-G1-044",
+        "SING-G1-045",
+        "SING-G1-052",
+        "SING-G1-057",
+        "SING-G1-068",
+        "SING-G1-075",
+        "SING-G1-080",
+        "SING-G1-081",
+        "SING-G1-088",
+        "SING-G1-089",
+        "SING-G1-090",
+        "SING-G1-096",
+        "SING-G1-097",
+        "SING-G1-102",
+        "SING-G1-103",
+        "SING-G1-109",
+        "SING-G1-114",
+        "SING-G1-118",
+        "SING-G1-119",
+        "SING-G1-120",
+        "SING-G1-129",
+        "SING-G1-163",
+        "SING-G1-173",
+        "SING-G1-174",
+        "SING-G1-175",
+        "SING-G1-176",
+        "SING-G1-177",
+        "SING-G1-181",
+        "SING-G1-185",
+        "SING-G1-189"
+      ],
+      "difficulty_range": {
+        "min": -1.79,
+        "max": 1.0
+      }
+    },
+    {
+      "chapter_name": "1B: Addition and Subtraction to 40",
+      "total_questions": 15,
+      "skill_ids": [
+        "subtraction_basic"
+      ],
+      "adaptive_topic_ids": [
+        "g1-subtraction"
+      ],
+      "question_ids": [
+        "SING-G1-034",
+        "SING-G1-038",
+        "SING-G1-055",
+        "SING-G1-063",
+        "SING-G1-100",
+        "SING-G1-123",
+        "SING-G1-137",
+        "SING-G1-138",
+        "SING-G1-143",
+        "SING-G1-146",
+        "SING-G1-152",
+        "SING-G1-164",
+        "SING-G1-178",
+        "SING-G1-182",
+        "SING-G1-183"
+      ],
+      "difficulty_range": {
+        "min": -1.5,
+        "max": 0.71
+      }
+    },
+    {
+      "chapter_name": "1B: Length and Mass",
+      "total_questions": 20,
+      "skill_ids": [
+        "weight"
+      ],
+      "adaptive_topic_ids": [
+        "g1-measurement"
+      ],
+      "question_ids": [
+        "SING-G1-003",
+        "SING-G1-008",
+        "SING-G1-010",
+        "SING-G1-019",
+        "SING-G1-024",
+        "SING-G1-025",
+        "SING-G1-060",
+        "SING-G1-061",
+        "SING-G1-085",
+        "SING-G1-086",
+        "SING-G1-092",
+        "SING-G1-098",
+        "SING-G1-099",
+        "SING-G1-106",
+        "SING-G1-111",
+        "SING-G1-115",
+        "SING-G1-122",
+        "SING-G1-130",
+        "SING-G1-140",
+        "SING-G1-141"
+      ],
+      "difficulty_range": {
+        "min": -2.21,
+        "max": -0.14
+      }
+    },
+    {
+      "chapter_name": "1B: Ordinal Numbers",
+      "total_questions": 15,
+      "skill_ids": [
+        "counting_10"
+      ],
+      "adaptive_topic_ids": [
+        "g1-counting"
+      ],
+      "question_ids": [
+        "SING-G1-018",
+        "SING-G1-028",
+        "SING-G1-029",
+        "SING-G1-033",
+        "SING-G1-036",
+        "SING-G1-037",
+        "SING-G1-048",
+        "SING-G1-049",
+        "SING-G1-083",
+        "SING-G1-084",
+        "SING-G1-091",
+        "SING-G1-105",
+        "SING-G1-110",
+        "SING-G1-121",
+        "SING-G1-135"
+      ],
+      "difficulty_range": {
+        "min": -1.79,
+        "max": -0.21
+      }
+    },
+    {
+      "chapter_name": "1B: Picture Graphs",
+      "total_questions": 15,
+      "skill_ids": [
+        "counting_10"
+      ],
+      "adaptive_topic_ids": [
+        "g1-counting"
+      ],
+      "question_ids": [
+        "SING-G1-013",
+        "SING-G1-026",
+        "SING-G1-041",
+        "SING-G1-050",
+        "SING-G1-062",
+        "SING-G1-077",
+        "SING-G1-093",
+        "SING-G1-112",
+        "SING-G1-113",
+        "SING-G1-126",
+        "SING-G1-131",
+        "SING-G1-136",
+        "SING-G1-142",
+        "SING-G1-149",
+        "SING-G1-160"
+      ],
+      "difficulty_range": {
+        "min": -1.86,
+        "max": 0.14
+      }
+    }
+  ],
+  "schema_version": "4.0",
+  "generated_at": "2026-05-03T09:32:42.523018"
+}

@@ -448,6 +448,50 @@ class ApiClient {
     return jsonDecode(res.body) as Map<String, dynamic>;
   }
 
+  /// Fetch a unified cross-curriculum adaptive session (the new engine).
+  /// Returns questions drawn from all curricula via the 37-node skill graph.
+  Future<Map<String, dynamic>> getUnifiedSession(String userId, int grade, {int size = 10}) async {
+    final params = <String, String>{
+      'user_id': userId,
+      'grade': grade.toString(),
+      'size': size.toString(),
+    };
+    final uri = Uri.parse('$baseUrl/v2/session/unified')
+        .replace(queryParameters: params);
+    final res = await _withRetry(
+        () => http.get(uri).timeout(const Duration(seconds: 25)));
+    if (res.statusCode != 200) {
+      throw ApiException(
+          'GET /v2/session/unified failed: ${res.statusCode} ${res.body}');
+    }
+    return jsonDecode(res.body) as Map<String, dynamic>;
+  }
+
+  /// Submit results for a completed unified session.
+  /// Returns parent-facing summary with mastery updates.
+  Future<Map<String, dynamic>> completeUnifiedSession({
+    required String userId,
+    required int grade,
+    required List<Map<String, dynamic>> results,
+  }) async {
+    final uri = Uri.parse('$baseUrl/v2/session/unified/complete');
+    final body = {
+      'user_id': userId,
+      'grade': grade,
+      'results': results,
+    };
+    final res = await _withRetry(() => http
+        .post(uri,
+            headers: {'Content-Type': 'application/json'},
+            body: jsonEncode(body))
+        .timeout(const Duration(seconds: 15)));
+    if (res.statusCode != 200) {
+      throw ApiException(
+          'POST /v2/session/unified/complete failed: ${res.statusCode} ${res.body}');
+    }
+    return jsonDecode(res.body) as Map<String, dynamic>;
+  }
+
   /// Fetch cluster mastery overview for the home screen.
   Future<Map<String, dynamic>> getMasteryOverview(String userId, int grade) async {
     final params = <String, String>{
@@ -604,6 +648,188 @@ class ApiClient {
     ));
     return Map<String, dynamic>.from(jsonDecode(res.body));
   }
+
+  // ---------------------------------------------------------------------------
+  // v4 API — grade-topic structured adaptive content
+  // ---------------------------------------------------------------------------
+
+  /// List all grades with topic and question counts.
+  Future<List<Map<String, dynamic>>> getGradesV4() async {
+    final uri = Uri.parse('$baseUrl/v4/grades');
+    final res = await _withRetry(
+        () => http.get(uri).timeout(const Duration(seconds: 10)));
+    if (res.statusCode != 200) {
+      throw ApiException('GET /v4/grades failed: ${res.statusCode}');
+    }
+    return List<Map<String, dynamic>>.from(jsonDecode(res.body));
+  }
+
+  /// List all adaptive topics for a grade.
+  Future<List<Map<String, dynamic>>> getTopicsV4(int grade) async {
+    final uri = Uri.parse('$baseUrl/v4/topics/$grade');
+    final res = await _withRetry(
+        () => http.get(uri).timeout(const Duration(seconds: 10)));
+    if (res.statusCode != 200) {
+      throw ApiException('GET /v4/topics/$grade failed: ${res.statusCode}');
+    }
+    return List<Map<String, dynamic>>.from(jsonDecode(res.body));
+  }
+
+  /// Get the next adaptive question from v4 content.
+  Future<Map<String, dynamic>> nextQuestionV4({
+    required int grade,
+    required String topicId,
+    double theta = 0.0,
+    List<String>? exclude,
+  }) async {
+    final params = <String, String>{
+      'grade': grade.toString(),
+      'topic_id': topicId,
+      'theta': theta.toString(),
+    };
+    if (exclude != null && exclude.isNotEmpty) {
+      params['exclude'] = exclude.join(',');
+    }
+    final uri = Uri.parse('$baseUrl/v4/next')
+        .replace(queryParameters: params);
+    final res = await _withRetry(
+        () => http.get(uri).timeout(const Duration(seconds: 15)));
+    if (res.statusCode != 200) {
+      throw ApiException('GET /v4/next failed: ${res.statusCode}');
+    }
+    return jsonDecode(res.body) as Map<String, dynamic>;
+  }
+
+  /// List school curricula available for a grade.
+  Future<List<String>> getCurriculaV4(int grade) async {
+    final uri = Uri.parse('$baseUrl/v4/school/curricula/$grade');
+    final res = await _withRetry(
+        () => http.get(uri).timeout(const Duration(seconds: 10)));
+    if (res.statusCode != 200) {
+      throw ApiException('GET /v4/school/curricula/$grade failed: ${res.statusCode}');
+    }
+    final data = jsonDecode(res.body) as Map<String, dynamic>;
+    return List<String>.from(data['curricula'] ?? []);
+  }
+
+  /// List chapters for a curriculum + grade from v4.
+  Future<List<Map<String, dynamic>>> getChaptersV4({
+    required String curriculum,
+    required int grade,
+  }) async {
+    final uri = Uri.parse('$baseUrl/v4/school/$curriculum/$grade');
+    final res = await _withRetry(
+        () => http.get(uri).timeout(const Duration(seconds: 10)));
+    if (res.statusCode != 200) {
+      throw ApiException(
+          'GET /v4/school/$curriculum/$grade failed: ${res.statusCode}');
+    }
+    return List<Map<String, dynamic>>.from(jsonDecode(res.body));
+  }
+
+  /// Download an offline question bundle for a topic.
+  Future<Map<String, dynamic>> downloadOfflineBundle({
+    required int grade,
+    required String topicId,
+    double theta = 0.0,
+    int size = 15,
+  }) async {
+    final params = <String, String>{
+      'grade': grade.toString(),
+      'topic_id': topicId,
+      'theta': theta.toString(),
+      'size': size.toString(),
+    };
+    final uri = Uri.parse('$baseUrl/v4/offline/bundle')
+        .replace(queryParameters: params);
+    final res = await _withRetry(
+        () => http.get(uri).timeout(const Duration(seconds: 20)));
+    if (res.statusCode != 200) {
+      throw ApiException('GET /v4/offline/bundle failed: ${res.statusCode}');
+    }
+    return jsonDecode(res.body) as Map<String, dynamic>;
+  }
+
+  /// Sync offline session results back to server.
+  Future<Map<String, dynamic>> syncOfflineResults({
+    required String userId,
+    required int grade,
+    required String topicId,
+    required List<Map<String, dynamic>> results,
+    required double thetaAtDownload,
+    required String downloadedAt,
+  }) async {
+    final uri = Uri.parse('$baseUrl/v4/offline/sync');
+    final body = {
+      'user_id': userId,
+      'grade': grade,
+      'topic_id': topicId,
+      'results': results,
+      'theta_at_download': thetaAtDownload,
+      'downloaded_at': downloadedAt,
+    };
+    final res = await _withRetry(() => http
+        .post(uri,
+            headers: {'Content-Type': 'application/json'},
+            body: jsonEncode(body))
+        .timeout(const Duration(seconds: 15)));
+    if (res.statusCode != 200) {
+      throw ApiException('POST /v4/offline/sync failed: ${res.statusCode}');
+    }
+    return jsonDecode(res.body) as Map<String, dynamic>;
+  }
+
+  /// Acquire a session lock (multi-device protection).
+  Future<Map<String, dynamic>> acquireSessionLock({
+    required String userId,
+    required String deviceId,
+    String? topicId,
+    int? grade,
+  }) async {
+    final uri = Uri.parse('$baseUrl/v4/session/lock');
+    final body = <String, dynamic>{
+      'user_id': userId,
+      'device_id': deviceId,
+    };
+    if (topicId != null) body['topic_id'] = topicId;
+    if (grade != null) body['grade'] = grade;
+    final res = await _withRetry(() => http
+        .post(uri,
+            headers: {'Content-Type': 'application/json'},
+            body: jsonEncode(body))
+        .timeout(const Duration(seconds: 5)));
+    if (res.statusCode == 409) {
+      throw SessionLockException(jsonDecode(res.body)['detail']);
+    }
+    if (res.statusCode != 200) {
+      throw ApiException('POST /v4/session/lock failed: ${res.statusCode}');
+    }
+    return jsonDecode(res.body) as Map<String, dynamic>;
+  }
+
+  /// Send heartbeat to keep session lock alive.
+  Future<void> sessionHeartbeat({
+    required String userId,
+    required String deviceId,
+  }) async {
+    final params = {'user_id': userId, 'device_id': deviceId};
+    final uri = Uri.parse('$baseUrl/v4/session/heartbeat')
+        .replace(queryParameters: params);
+    await _withRetry(() => http.post(uri).timeout(const Duration(seconds: 5)));
+  }
+
+  /// Release session lock when play ends.
+  Future<void> releaseSessionLock({
+    required String userId,
+    required String deviceId,
+  }) async {
+    final uri = Uri.parse('$baseUrl/v4/session/unlock');
+    await _withRetry(() => http
+        .post(uri,
+            headers: {'Content-Type': 'application/json'},
+            body: jsonEncode({'user_id': userId, 'device_id': deviceId}))
+        .timeout(const Duration(seconds: 5)));
+  }
 }
 
 class ApiException implements Exception {
@@ -611,4 +837,113 @@ class ApiException implements Exception {
   ApiException(this.message);
   @override
   String toString() => 'ApiException: $message';
+}
+
+  // ---------------------------------------------------------------------------
+  // Proficiency & Growth (Learning Outcomes)
+  // ---------------------------------------------------------------------------
+
+  /// Get student's proficiency level, scale score, and competency breakdown.
+  Future<Map<String, dynamic>> getProficiency({
+    required String userId,
+    int grade = 0,
+  }) async {
+    final params = <String, String>{
+      'user_id': userId,
+      'grade': grade.toString(),
+    };
+    final uri = Uri.parse('$baseUrl/v2/proficiency')
+        .replace(queryParameters: params);
+    final res = await _withRetry(
+        () => http.get(uri).timeout(const Duration(seconds: 20)));
+    if (res.statusCode != 200) {
+      throw ApiException(
+          'GET /v2/proficiency failed: ${res.statusCode} ${res.body}');
+    }
+    return jsonDecode(res.body) as Map<String, dynamic>;
+  }
+
+  /// Get all proficiency level definitions.
+  Future<Map<String, dynamic>> getProficiencyLevels() async {
+    final uri = Uri.parse('$baseUrl/v2/proficiency/levels');
+    final res = await _withRetry(
+        () => http.get(uri).timeout(const Duration(seconds: 10)));
+    if (res.statusCode != 200) {
+      throw ApiException(
+          'GET /v2/proficiency/levels failed: ${res.statusCode} ${res.body}');
+    }
+    return jsonDecode(res.body) as Map<String, dynamic>;
+  }
+
+  // ---------------------------------------------------------------------------
+  // Benchmark Tests (Learning Outcomes)
+  // ---------------------------------------------------------------------------
+
+  /// Create a structured benchmark/diagnostic test.
+  Future<Map<String, dynamic>> createBenchmarkTest({
+    required String userId,
+    int grade = 1,
+    String benchmarkType = 'diagnostic',
+  }) async {
+    final params = <String, String>{
+      'user_id': userId,
+      'grade': grade.toString(),
+      'benchmark_type': benchmarkType,
+    };
+    final uri = Uri.parse('$baseUrl/v2/benchmark/create')
+        .replace(queryParameters: params);
+    final res = await _withRetry(
+        () => http.post(uri).timeout(const Duration(seconds: 20)));
+    if (res.statusCode != 200) {
+      throw ApiException(
+          'POST /v2/benchmark/create failed: ${res.statusCode} ${res.body}');
+    }
+    return jsonDecode(res.body) as Map<String, dynamic>;
+  }
+
+  /// Submit benchmark test responses and get scored results.
+  Future<Map<String, dynamic>> submitBenchmarkTest({
+    required String userId,
+    required String testId,
+    required List<Map<String, dynamic>> responses,
+  }) async {
+    final uri = Uri.parse('$baseUrl/v2/benchmark/submit');
+    final res = await _withRetry(() => http
+        .post(uri,
+            headers: {'Content-Type': 'application/json'},
+            body: jsonEncode({
+              'user_id': userId,
+              'test_id': testId,
+              'responses': responses,
+            }))
+        .timeout(const Duration(seconds: 30)));
+    if (res.statusCode != 200) {
+      throw ApiException(
+          'POST /v2/benchmark/submit failed: ${res.statusCode} ${res.body}');
+    }
+    return jsonDecode(res.body) as Map<String, dynamic>;
+  }
+
+  /// Get benchmark test history and growth comparison.
+  Future<Map<String, dynamic>> getBenchmarkHistory({
+    required String userId,
+  }) async {
+    final params = <String, String>{'user_id': userId};
+    final uri = Uri.parse('$baseUrl/v2/benchmark/history')
+        .replace(queryParameters: params);
+    final res = await _withRetry(
+        () => http.get(uri).timeout(const Duration(seconds: 20)));
+    if (res.statusCode != 200) {
+      throw ApiException(
+          'GET /v2/benchmark/history failed: ${res.statusCode} ${res.body}');
+    }
+    return jsonDecode(res.body) as Map<String, dynamic>;
+  }
+}
+
+class SessionLockException implements Exception {
+  final Map<String, dynamic> detail;
+  SessionLockException(this.detail);
+  @override
+  String toString() => 'SessionLockException: active on device ${detail['active_device']}';
 }

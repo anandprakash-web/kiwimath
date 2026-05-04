@@ -1,0 +1,23 @@
+# Cloud Scheduler job for daily clan score aggregation
+# Runs at midnight IST (18:30 UTC previous day)
+#
+# Deploy:
+#   gcloud scheduler jobs create http daily-clan-aggregation \
+#     --schedule="30 18 * * *" \
+#     --uri="https://kiwimath-api-deufqab6gq-el.a.run.app/v4/internal/aggregate-daily?api_key=kiwimath_internal_2026" \
+#     --http-method=POST \
+#     --location=asia-south1 \
+#     --time-zone="UTC" \
+#     --description="Aggregate daily clan scores at midnight IST"
+
+name: daily-clan-aggregation
+schedule: "30 18 * * *"
+time_zone: UTC
+description: "Aggregate daily clan scores at midnight IST"
+http_target:
+  uri: "https://kiwimath-api-deufqab6gq-el.a.run.app/v4/internal/aggregate-daily?api_key=kiwimath_internal_2026"
+  http_method: POST
+retry_config:
+  retry_count: 3
+  min_backoff_duration: "30s"
+  max_backoff_duration: "300s"

@@ -1,0 +1,190 @@
+{
+  "grade": 2,
+  "total_topics": 8,
+  "total_questions": 6674,
+  "topics": [
+    {
+      "id": "g2-addition",
+      "name": "Addition",
+      "emoji": "➕",
+      "domain": "arithmetic",
+      "skills": [
+        "addition_basic",
+        "addition_2digit"
+      ],
+      "total_questions": 819,
+      "difficulty_range": {
+        "min_irt_b": -3.18,
+        "max_irt_b": 3.0
+      },
+      "source_breakdown": {
+        "olympiad": 545,
+        "ncert": 76,
+        "igcse": 111,
+        "icse": 35,
+        "us-common-core": 52
+      }
+    },
+    {
+      "id": "g2-counting",
+      "name": "Counting & Numbers",
+      "emoji": "🔢",
+      "domain": "numbers",
+      "skills": [
+        "counting_10",
+        "counting_100",
+        "comparison",
+        "place_value_2"
+      ],
+      "total_questions": 1546,
+      "difficulty_range": {
+        "min_irt_b": -3.18,
+        "max_irt_b": 2.2
+      },
+      "source_breakdown": {
+        "olympiad": 1171,
+        "igcse": 110,
+        "ncert": 97,
+        "icse": 66,
+        "us-common-core": 72,
+        "singapore": 30
+      }
+    },
+    {
+      "id": "g2-measurement",
+      "name": "Measurement",
+      "emoji": "📏",
+      "domain": "measurement",
+      "skills": [
+        "length",
+        "weight",
+        "capacity",
+        "unit_conversion"
+      ],
+      "total_questions": 168,
+      "difficulty_range": {
+        "min_irt_b": -2.94,
+        "max_irt_b": 3.0
+      },
+      "source_breakdown": {
+        "igcse": 50,
+        "ncert": 56,
+        "icse": 50,
+        "us-common-core": 12
+      }
+    },
+    {
+      "id": "g2-patterns",
+      "name": "Patterns & Sequences",
+      "emoji": "🧩",
+      "domain": "numbers",
+      "skills": [
+        "number_patterns"
+      ],
+      "total_questions": 1173,
+      "difficulty_range": {
+        "min_irt_b": -3.18,
+        "max_irt_b": 2.09
+      },
+      "source_breakdown": {
+        "olympiad": 1122,
+        "icse": 45,
+        "ncert": 6
+      }
+    },
+    {
+      "id": "g2-shapes",
+      "name": "Shapes & Geometry",
+      "emoji": "📐",
+      "domain": "geometry",
+      "skills": [
+        "shapes_2d",
+        "shapes_3d",
+        "symmetry"
+      ],
+      "total_questions": 1215,
+      "difficulty_range": {
+        "min_irt_b": -3.18,
+        "max_irt_b": 3.0
+      },
+      "source_breakdown": {
+        "olympiad": 1115,
+        "igcse": 44,
+        "ncert": 46,
+        "us-common-core": 10
+      }
+    },
+    {
+      "id": "g2-subtraction",
+      "name": "Subtraction",
+      "emoji": "➖",
+      "domain": "arithmetic",
+      "skills": [
+        "subtraction_basic",
+        "subtraction_2digit"
+      ],
+      "total_questions": 280,
+      "difficulty_range": {
+        "min_irt_b": -3.05,
+        "max_irt_b": 2.2
+      },
+      "source_breakdown": {
+        "olympiad": 132,
+        "ncert": 36,
+        "singapore": 40,
+        "icse": 19,
+        "igcse": 35,
+        "us-common-core": 18
+      }
+    },
+    {
+      "id": "g2-time-money",
+      "name": "Time & Money",
+      "emoji": "⏰",
+      "domain": "measurement",
+      "skills": [
+        "time",
+        "money"
+      ],
+      "total_questions": 342,
+      "difficulty_range": {
+        "min_irt_b": -2.94,
+        "max_irt_b": 3.0
+      },
+      "source_breakdown": {
+        "igcse": 50,
+        "ncert": 110,
+        "olympiad": 6,
+        "icse": 100,
+        "singapore": 40,
+        "us-common-core": 36
+      }
+    },
+    {
+      "id": "g2-word-problems",
+      "name": "Word Problems",
+      "emoji": "📖",
+      "domain": "arithmetic",
+      "skills": [
+        "multi_step",
+        "data_handling",
+        "multiplication_facts",
+        "division_basic"
+      ],
+      "total_questions": 1131,
+      "difficulty_range": {
+        "min_irt_b": -3.18,
+        "max_irt_b": 3.0
+      },
+      "source_breakdown": {
+        "olympiad": 611,
+        "igcse": 200,
+        "ncert": 145,
+        "singapore": 90,
+        "icse": 85
+      }
+    }
+  ],
+  "schema_version": "4.1",
+  "generated_at": "2026-05-03T10:02:30.926461"
+}

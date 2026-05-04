@@ -35,9 +35,13 @@ from app.api.parent import router as parent_router
 from app.api.portal import router as portal_router
 from app.api.gamification import router as gamification_router
 from app.api.paywall import router as paywall_router
+from app.api.clans import router as clans_router
+from app.api.content_editor import router as content_editor_router
 from app.api.questions_v2 import router as questions_v2_router
+from app.api.questions_v4 import router as questions_v4_router
 from app.api.user import router as user_router
 from app.services.content_store_v2 import bootstrap_v2_from_env, store_v2
+from app.services.content_store_v4 import bootstrap_v4_from_env, store_v4
 from app.services.firestore_service import is_firestore_available
 from app.services.ncert_content_store import init_ncert_store, ncert_store
 from app.services.singapore_content_store import init_singapore_store, singapore_store
@@ -67,6 +71,7 @@ def create_app() -> FastAPI:
 
     # Routers — v2 only.
     app.include_router(questions_v2_router)
+    app.include_router(questions_v4_router)
     app.include_router(onboarding_router)
     app.include_router(parent_router)
     app.include_router(learning_path_router)
@@ -79,6 +84,18 @@ def create_app() -> FastAPI:
     app.include_router(portal_router)
     app.include_router(assessment_router)
     app.include_router(flag_router)
+    app.include_router(clans_router)
+    app.include_router(content_editor_router)
+
+    # -----------------------------------------------------------------------
+    # Question Editor UI — simple web page for content team
+    # -----------------------------------------------------------------------
+    @app.get("/editor", response_class=HTMLResponse)
+    def serve_editor():
+        editor_path = Path(__file__).resolve().parent.parent / "static" / "editor.html"
+        if editor_path.exists():
+            return HTMLResponse(content=editor_path.read_text(), status_code=200)
+        return HTMLResponse(content="<h1>Editor not found</h1>", status_code=404)
 
     # -----------------------------------------------------------------------
     # Startup
@@ -127,18 +144,49 @@ def create_app() -> FastAPI:
         app.mount("/static/icse", StaticFiles(directory=str(icse_content_dir)), name="icse_static")
         logger.info(f"Mounted ICSE static files from {icse_content_dir}")
 
+    # -----------------------------------------------------------------------
+    # Static files — serve puzzle images for Picture Unravel challenges
+    # -----------------------------------------------------------------------
+    puzzles_dir = Path(__file__).resolve().parent.parent / "static" / "puzzles"
+    if puzzles_dir.exists():
+        app.mount("/static/puzzles", StaticFiles(directory=str(puzzles_dir)), name="puzzles_static")
+        logger.info(f"Mounted puzzle images from {puzzles_dir}")
+
     @app.on_event("startup")
     def _startup():
+        import time
+        t0 = time.time()
         bootstrap_v2_from_env()
-        init_ncert_store()
-        logger.info(f"NCERT content: {ncert_store.total_questions} questions loaded")
-        init_singapore_store()
-        logger.info(f"Singapore content: {singapore_store.total_questions} questions loaded")
-        init_uscc_store()
-        logger.info(f"USCC content: {uscc_store.total_questions} questions loaded")
-        init_icse_store()
-        logger.info(f"ICSE content: {icse_store.total_questions} questions loaded")
+        v2_stats = store_v2.stats()
+        logger.info(f"V2 content loaded in {time.time()-t0:.1f}s: {v2_stats['total_questions']} questions, {v2_stats['topics']} topics")
+        try:
+            bootstrap_v4_from_env()
+            v4_stats = store_v4.stats()
+            logger.info(f"V4 content loaded: {v4_stats['total_questions']} questions, {v4_stats['total_topics']} topics")
+        except Exception as e:
+            logger.warning(f"V4 store init failed (non-fatal): {e}")
+        try:
+            init_ncert_store()
+            logger.info(f"NCERT content: {ncert_store.total_questions} questions loaded")
+        except Exception as e:
+            logger.warning(f"NCERT store init failed (non-fatal): {e}")
+        try:
+            init_singapore_store()
+            logger.info(f"Singapore content: {singapore_store.total_questions} questions loaded")
+        except Exception as e:
+            logger.warning(f"Singapore store init failed (non-fatal): {e}")
+        try:
+            init_uscc_store()
+            logger.info(f"USCC content: {uscc_store.total_questions} questions loaded")
+        except Exception as e:
+            logger.warning(f"USCC store init failed (non-fatal): {e}")
+        try:
+            init_icse_store()
+            logger.info(f"ICSE content: {icse_store.total_questions} questions loaded")
+        except Exception as e:
+            logger.warning(f"ICSE store init failed (non-fatal): {e}")
         logger.info(f"Firestore: {'connected' if is_firestore_available() else 'unavailable (in-memory mode)'}")
+        logger.info(f"Startup complete in {time.time()-t0:.1f}s")
 
     # -----------------------------------------------------------------------
     # Request logging middleware
@@ -158,12 +206,45 @@ def create_app() -> FastAPI:
     @app.get("/health")
     def health():
         v2_stats = store_v2.stats()
+        v4_stats = store_v4.stats()
         return {
             "status": "healthy",
             "version": "2.0.0",
-            "content": v2_stats,
+            "content_v2": v2_stats,
+            "content_v4": v4_stats,
             "firestore": "connected" if is_firestore_available() else "in-memory",
         }
+
+    @app.get("/debug/content")
+    def debug_content():
+        """Debug endpoint: shows what content is loaded and filesystem state."""
+        import os
+        content_dir = os.environ.get("KIWIMATH_V2_CONTENT_DIR", "NOT SET")
+        dir_exists = os.path.isdir(content_dir) if content_dir != "NOT SET" else False
+        dir_contents = []
+        if dir_exists:
+            try:
+                dir_contents = sorted(os.listdir(content_dir))
+            except Exception as e:
+                dir_contents = [f"ERROR: {e}"]
+        v2_stats = store_v2.stats()
+        # Sample question IDs
+        sample_ids = list(store_v2._questions.keys())[:20]
+        return {
+            "env_var": content_dir,
+            "dir_exists": dir_exists,
+            "dir_contents": dir_contents,
+            "v2_stats": v2_stats,
+            "sample_question_ids": sample_ids,
+            "memory_mb": _get_memory_mb(),
+        }
+
+    def _get_memory_mb():
+        try:
+            import resource
+            return resource.getrusage(resource.RUSAGE_SELF).ru_maxrss / 1024
+        except Exception:
+            return -1
 
     # -----------------------------------------------------------------------
     # Content stats (for dashboards / admin)

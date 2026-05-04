@@ -1,0 +1,224 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#1a1a3e"/>
+      <stop offset="100%" stop-color="#0a0a1e"/>
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <linearGradient id="river" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0a2a5e"/>
+      <stop offset="30%" stop-color="#1a4a8e"/>
+      <stop offset="50%" stop-color="#2255AA"/>
+      <stop offset="70%" stop-color="#1a4a8e"/>
+      <stop offset="100%" stop-color="#0a2a5e"/>
+    </linearGradient>
+    <linearGradient id="bank" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2a3a1e"/>
+      <stop offset="100%" stop-color="#1a2a0e"/>
+    </linearGradient>
+    <filter id="waterGlow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Night sky background -->
+  <rect width="600" height="400" fill="url(#bg)"/>
+
+  <!-- Stars -->
+  <circle cx="50" cy="20" r="1" fill="#fff" opacity="0.4"/>
+  <circle cx="130" cy="35" r="0.8" fill="#fff" opacity="0.3"/>
+  <circle cx="250" cy="15" r="1.2" fill="#fff" opacity="0.5"/>
+  <circle cx="400" cy="25" r="0.7" fill="#fff" opacity="0.3"/>
+  <circle cx="500" cy="18" r="1" fill="#fff" opacity="0.4"/>
+  <circle cx="550" cy="40" r="0.8" fill="#fff" opacity="0.3"/>
+
+  <!-- Moon -->
+  <circle cx="520" cy="50" r="20" fill="#FFE066" opacity="0.15"/>
+  <circle cx="520" cy="50" r="16" fill="#FFE066" opacity="0.2"/>
+  <circle cx="526" cy="48" r="16" fill="url(#bg)"/>
+
+  <!-- Title -->
+  <text x="300" y="32" text-anchor="middle" fill="#FFD700" font-family="Georgia, serif"
+        font-size="20" font-weight="bold" filter="url(#glow)" opacity="0.9">
+    RIVER CROSSING
+  </text>
+
+  <!-- Left bank (near) -->
+  <path d="M0,120 Q60,110 120,115 L120,340 L0,340 Z" fill="url(#bank)" stroke="#3a5a2e" stroke-width="1" opacity="0.8"/>
+  <text x="60" y="105" text-anchor="middle" fill="#88AA66" font-family="Georgia, serif" font-size="10" opacity="0.6">NEAR BANK</text>
+
+  <!-- Grass tufts left -->
+  <g stroke="#4a7a3e" stroke-width="1.5" opacity="0.4">
+    <line x1="30" y1="120" x2="28" y2="110"/>
+    <line x1="33" y1="120" x2="35" y2="108"/>
+    <line x1="80" y1="118" x2="78" y2="106"/>
+    <line x1="83" y1="118" x2="86" y2="108"/>
+    <line x1="100" y1="116" x2="97" y2="106"/>
+  </g>
+
+  <!-- Right bank (far) -->
+  <path d="M480,120 Q540,110 600,115 L600,340 L480,340 Z" fill="url(#bank)" stroke="#3a5a2e" stroke-width="1" opacity="0.8"/>
+  <text x="540" y="105" text-anchor="middle" fill="#88AA66" font-family="Georgia, serif" font-size="10" opacity="0.6">FAR BANK</text>
+
+  <!-- Grass tufts right -->
+  <g stroke="#4a7a3e" stroke-width="1.5" opacity="0.4">
+    <line x1="500" y1="118" x2="498" y2="108"/>
+    <line x1="503" y1="118" x2="506" y2="106"/>
+    <line x1="550" y1="116" x2="547" y2="106"/>
+    <line x1="553" y1="116" x2="556" y2="108"/>
+  </g>
+
+  <!-- River -->
+  <rect x="120" y="110" width="360" height="230" fill="url(#river)" opacity="0.6"/>
+
+  <!-- Water ripples -->
+  <g stroke="#4488CC" stroke-width="0.8" fill="none" opacity="0.25">
+    <path d="M150,160 Q200,155 250,162 Q300,168 350,160">
+      <animate attributeName="d" values="M150,160 Q200,155 250,162 Q300,168 350,160;M150,162 Q200,168 250,160 Q300,155 350,162;M150,160 Q200,155 250,162 Q300,168 350,160" dur="3s" repeatCount="indefinite"/>
+    </path>
+    <path d="M180,200 Q230,195 280,202 Q330,208 380,200">
+      <animate attributeName="d" values="M180,200 Q230,195 280,202 Q330,208 380,200;M180,202 Q230,208 280,200 Q330,195 380,202;M180,200 Q230,195 280,202 Q330,208 380,200" dur="3.5s" repeatCount="indefinite"/>
+    </path>
+    <path d="M160,250 Q210,245 260,252 Q310,258 360,250">
+      <animate attributeName="d" values="M160,250 Q210,245 260,252 Q310,258 360,250;M160,252 Q210,258 260,250 Q310,245 360,252;M160,250 Q210,245 260,252 Q310,258 360,250" dur="4s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- Boat in the middle -->
+  <g transform="translate(280, 215)">
+    <path d="M-30,0 Q-35,15 -20,18 L20,18 Q35,15 30,0 Z" fill="#5a3a1a" stroke="#8a6a3a" stroke-width="1"/>
+    <line x1="0" y1="0" x2="0" y2="-25" stroke="#8a6a3a" stroke-width="1.5"/>
+    <!-- Small flag -->
+    <path d="M0,-25 L15,-20 L0,-15" fill="#FFD700" opacity="0.5"/>
+    <text x="0" y="12" text-anchor="middle" fill="#AA8844" font-family="monospace" font-size="8">BOAT</text>
+  </g>
+
+  <!-- === LEFT BANK CHARACTERS === -->
+
+  <!-- Farmer (stick figure with hat) -->
+  <g transform="translate(40, 155)">
+    <!-- Hat -->
+    <line x1="-8" y1="-22" x2="8" y2="-22" stroke="#FFD700" stroke-width="2"/>
+    <rect x="-4" y="-30" width="8" height="8" fill="#FFD700" opacity="0.7"/>
+    <!-- Head -->
+    <circle cx="0" cy="-15" r="6" fill="none" stroke="#FFD700" stroke-width="1.5"/>
+    <!-- Body -->
+    <line x1="0" y1="-9" x2="0" y2="15" stroke="#FFD700" stroke-width="1.5"/>
+    <!-- Arms -->
+    <line x1="0" y1="0" x2="-10" y2="10" stroke="#FFD700" stroke-width="1.5"/>
+    <line x1="0" y1="0" x2="10" y2="10" stroke="#FFD700" stroke-width="1.5"/>
+    <!-- Legs -->
+    <line x1="0" y1="15" x2="-7" y2="28" stroke="#FFD700" stroke-width="1.5"/>
+    <line x1="0" y1="15" x2="7" y2="28" stroke="#FFD700" stroke-width="1.5"/>
+    <!-- Label -->
+    <text x="0" y="42" text-anchor="middle" fill="#FFD700" font-family="Georgia, serif" font-size="9" opacity="0.8">Farmer</text>
+  </g>
+
+  <!-- Fox (orange, simple) -->
+  <g transform="translate(75, 220)">
+    <!-- Body -->
+    <ellipse cx="0" cy="0" rx="14" ry="8" fill="#FF6D00" opacity="0.7"/>
+    <!-- Head -->
+    <circle cx="14" cy="-4" r="6" fill="#FF6D00" opacity="0.7"/>
+    <!-- Ears -->
+    <polygon points="10,-10 14,-18 18,-10" fill="#FF6D00" opacity="0.7"/>
+    <!-- Tail -->
+    <path d="M-14,0 Q-22,-5 -18,-12" stroke="#FF6D00" stroke-width="2.5" fill="none" opacity="0.7"/>
+    <!-- Eye -->
+    <circle cx="16" cy="-5" r="1" fill="#FFD700"/>
+    <!-- Legs -->
+    <line x1="-6" y1="8" x2="-6" y2="16" stroke="#FF6D00" stroke-width="2"/>
+    <line x1="6" y1="8" x2="6" y2="16" stroke="#FF6D00" stroke-width="2"/>
+    <!-- Label -->
+    <text x="0" y="30" text-anchor="middle" fill="#FF8833" font-family="Georgia, serif" font-size="9" opacity="0.8">Fox</text>
+  </g>
+
+  <!-- Chicken (yellow) -->
+  <g transform="translate(45, 270)">
+    <!-- Body -->
+    <ellipse cx="0" cy="0" rx="10" ry="8" fill="#FFD700" opacity="0.7"/>
+    <!-- Head -->
+    <circle cx="10" cy="-5" r="5" fill="#FFD700" opacity="0.7"/>
+    <!-- Beak -->
+    <polygon points="15,-5 20,-4 15,-3" fill="#FF8800"/>
+    <!-- Comb -->
+    <path d="M8,-10 L10,-14 L12,-10" fill="#CC3333" opacity="0.7"/>
+    <!-- Eye -->
+    <circle cx="12" cy="-6" r="1" fill="#333"/>
+    <!-- Legs -->
+    <line x1="-3" y1="8" x2="-3" y2="16" stroke="#CC8800" stroke-width="1.5"/>
+    <line x1="3" y1="8" x2="3" y2="16" stroke="#CC8800" stroke-width="1.5"/>
+    <!-- Label -->
+    <text x="0" y="28" text-anchor="middle" fill="#FFD700" font-family="Georgia, serif" font-size="9" opacity="0.8">Chicken</text>
+  </g>
+
+  <!-- Grain bag (brown) -->
+  <g transform="translate(90, 280)">
+    <!-- Bag shape -->
+    <path d="M-10,-12 L-8,-18 Q0,-22 8,-18 L10,-12 L10,8 Q0,12 -10,8 Z" fill="#8B6914" opacity="0.7"/>
+    <!-- Tie -->
+    <ellipse cx="0" cy="-16" rx="5" ry="2" fill="none" stroke="#AA8844" stroke-width="1"/>
+    <!-- Grain dots -->
+    <circle cx="-2" cy="-4" r="1" fill="#CC9933" opacity="0.5"/>
+    <circle cx="3" cy="0" r="1" fill="#CC9933" opacity="0.5"/>
+    <circle cx="-1" cy="4" r="1" fill="#CC9933" opacity="0.5"/>
+    <!-- Label -->
+    <text x="0" y="22" text-anchor="middle" fill="#AA8844" font-family="Georgia, serif" font-size="9" opacity="0.8">Grain</text>
+  </g>
+
+  <!-- Right bank "empty" indicator -->
+  <g transform="translate(540, 200)">
+    <text x="0" y="0" text-anchor="middle" fill="#88AA66" font-family="Georgia, serif" font-size="24" opacity="0.2">?</text>
+    <text x="0" y="18" text-anchor="middle" fill="#88AA66" font-family="Georgia, serif" font-size="9" opacity="0.3">Goal: All here</text>
+  </g>
+
+  <!-- Danger rules panel -->
+  <g transform="translate(300, 55)">
+    <rect x="-120" y="-8" width="240" height="42" rx="5" fill="#1a0a0e" stroke="#CC3333" stroke-width="0.8" opacity="0.6"/>
+    <text x="0" y="6" text-anchor="middle" fill="#FF4444" font-family="monospace" font-size="9" opacity="0.8">RULES</text>
+    <text x="0" y="20" text-anchor="middle" fill="#CC6666" font-family="monospace" font-size="8" opacity="0.7">Boat fits: Farmer + 1 item only</text>
+    <text x="0" y="30" text-anchor="middle" fill="#CC6666" font-family="monospace" font-size="8" opacity="0.7">Farmer must row the boat</text>
+  </g>
+
+  <!-- Danger indicators -->
+  <g transform="translate(180, 320)">
+    <rect x="-70" y="-12" width="140" height="28" rx="4" fill="#1a0a0a" stroke="#FF4444" stroke-width="0.8" opacity="0.5"/>
+    <text x="0" y="-1" text-anchor="middle" fill="#FF4444" font-family="monospace" font-size="8">FOX eats CHICKEN</text>
+    <text x="0" y="11" text-anchor="middle" fill="#FF4444" font-family="monospace" font-size="8">CHICKEN eats GRAIN</text>
+  </g>
+
+  <!-- Question box -->
+  <g transform="translate(440, 325)">
+    <rect x="-80" y="-18" width="160" height="36" rx="5" fill="none" stroke="#FF6D00" stroke-width="1.5">
+      <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="-80" y="-18" width="160" height="36" rx="5" fill="#FF6D00" opacity="0.08">
+      <animate attributeName="opacity" values="0.05;0.12;0.05" dur="2s" repeatCount="indefinite"/>
+    </rect>
+    <text x="0" y="-2" text-anchor="middle" fill="#FF6D00" font-family="'Courier New', monospace" font-size="11" font-weight="bold">Minimum one-way</text>
+    <text x="0" y="12" text-anchor="middle" fill="#FF6D00" font-family="'Courier New', monospace" font-size="11" font-weight="bold">
+      trips = ?
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="2s" repeatCount="indefinite"/>
+    </text>
+  </g>
+
+  <!-- Bottom hint text -->
+  <text x="300" y="378" text-anchor="middle" fill="#6677AA" font-family="Georgia, serif"
+        font-size="11" font-style="italic" opacity="0.7">
+    The fox eats the chicken. The chicken eats the grain. The farmer must be present to prevent this.
+  </text>
+  <text x="300" y="393" text-anchor="middle" fill="#6677AA" font-family="Georgia, serif"
+        font-size="11" font-style="italic" opacity="0.7">
+    How many one-way trips does it take to get everyone across safely?
+  </text>
+</svg>

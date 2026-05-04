@@ -1,0 +1,100 @@
+{
+  "pipeline_version": "1.0",
+  "challenges": [
+    {
+      "challenge_id": "challenge_star_map_01",
+      "title": "The Star Map",
+      "puzzle_type": "pattern_sequence",
+      "difficulty_tier": "explorer",
+      "image_file": "star_map_01.svg",
+      "answer": "23",
+      "answer_type": "numeric",
+      "grid_rows": 20,
+      "grid_cols": 15,
+      "points_per_block": 100,
+      "duration_days": 10,
+      "description": "A constellation of stars, each bearing a number. Multiple patterns weave through the star map — some stars follow Fibonacci, others form prime chains, and the connections hold the key. What number belongs at the mystery star?",
+      "hints_by_reveal_pct": {
+        "30": "Look at how the connected stars relate to each other. Not all connections follow the same rule.",
+        "50": "Stars A, B, D, E, F follow one famous sequence. Stars G, H, I follow another pattern.",
+        "70": "The bottom chain (G→H→I→J) uses prime numbers. What comes after 19?"
+      },
+      "solution_explanation": "The star map contains two interlocking patterns:\n\n1) **Upper constellation** (A→B→D→E→F): Fibonacci sequence — 5, 8, 13, 21, 34, 55\n   Note: C=8 is shared between sequences\n\n2) **Lower chain** (G→H→I→J): Prime numbers — 3, 11, 19, ?\n   These are primes spaced by 8: 3+8=11, 11+8=19, 19+4=23\n   Actually: consecutive primes in an arithmetic-like progression.\n   The next prime after 19 is 23.\n\nAnswer: **23**\n\nThis puzzle requires group collaboration because:\n- Spatial thinkers spot the two separate clusters\n- Number-theory members recognize the Fibonacci connection\n- The lower chain requires knowing prime numbers\n- The shared star C (value 8) is a red herring if you only see one pattern"
+    },
+    {
+      "challenge_id": "challenge_locked_grid_02",
+      "title": "The Locked Grid",
+      "puzzle_type": "magic_square",
+      "difficulty_tier": "challenger",
+      "image_file": "locked_grid_02.svg",
+      "answer": "34",
+      "answer_type": "numeric",
+      "grid_rows": 20,
+      "grid_cols": 15,
+      "points_per_block": 120,
+      "duration_days": 10,
+      "description": "A 4×4 grid with some numbers visible, others locked behind blocks. Every row, column, and diagonal sums to the same magic number. Find the value of the center lock.",
+      "status": "upcoming"
+    },
+    {
+      "challenge_id": "challenge_code_breaker_03",
+      "title": "The Code Breaker",
+      "puzzle_type": "cryptarithmetic",
+      "difficulty_tier": "challenger",
+      "image_file": "code_breaker_03.svg",
+      "answer": "9",
+      "answer_type": "numeric",
+      "grid_rows": 20,
+      "grid_cols": 15,
+      "points_per_block": 130,
+      "duration_days": 10,
+      "description": "SEND + MORE = MONEY. Each letter represents a unique digit. What digit does M represent?",
+      "status": "upcoming"
+    },
+    {
+      "challenge_id": "challenge_river_crossing_04",
+      "title": "River Crossing",
+      "puzzle_type": "logic_grid",
+      "difficulty_tier": "explorer",
+      "image_file": "river_crossing_04.svg",
+      "answer": "7",
+      "answer_type": "numeric",
+      "grid_rows": 20,
+      "grid_cols": 15,
+      "points_per_block": 100,
+      "duration_days": 10,
+      "description": "A farmer, a fox, a chicken, and a bag of grain need to cross a river. The boat fits only the farmer plus one item. What is the minimum number of crossings?",
+      "status": "upcoming"
+    },
+    {
+      "challenge_id": "challenge_spiral_tower_05",
+      "title": "The Spiral Tower",
+      "puzzle_type": "number_theory",
+      "difficulty_tier": "master",
+      "image_file": "spiral_tower_05.svg",
+      "answer": "144",
+      "answer_type": "numeric",
+      "grid_rows": 20,
+      "grid_cols": 15,
+      "points_per_block": 150,
+      "duration_days": 10,
+      "description": "Numbers spiral up a tower, each floor following a rule. Some floors are hidden. What number is on the 12th floor?",
+      "status": "upcoming"
+    },
+    {
+      "challenge_id": "challenge_einstein_garden_06",
+      "title": "Einstein's Garden",
+      "puzzle_type": "logic_grid",
+      "difficulty_tier": "master",
+      "image_file": "einstein_garden_06.svg",
+      "answer": "tulip",
+      "answer_type": "text",
+      "grid_rows": 20,
+      "grid_cols": 15,
+      "points_per_block": 150,
+      "duration_days": 10,
+      "description": "Five houses in a row, each with a different color, pet, drink, flower, and number. Use the 15 clues to figure out: What flower grows in the green house?",
+      "status": "upcoming"
+    }
+  ]
+}

@@ -1,75 +1,81 @@
 import 'package:flutter/material.dart';
 
-/// Kiwimath design tokens — grade-adaptive theming.
+/// Kiwimath design tokens — v7.0 play-first kids' brand.
 ///
-/// K-2 (grades 1-2): Bright, playful, kid-friendly. Big rounded shapes,
-///   warm colors, cute mascot emphasis, larger touch targets.
+/// Primary brand: Kiwimath Orange (#FF6D00) + Warm Cream (#FFF8F0)
+/// Identity: Standalone kids' math app — playful, warm, encouraging.
+/// No parent company branding on user-facing surfaces.
 ///
-/// 3-5 (grades 3-5): Modern, cooler palette, anime-inspired feel.
-///   Deeper colors, sharper corners, more sophisticated layout.
+/// K-2 (grades 1-2): Warm, playful, big rounded shapes, cute Kiwi mascot.
+/// 3-5 (grades 3-5): Modern, sharper, anime-inspired energy.
 
 // ===========================================================================
-// Shared base colors (used across both tiers)
+// Shared base colors
 // ===========================================================================
 class KiwiColors {
-  // Brand — v4.1 warm kiwi green
-  static const Color kiwiGreen = Color(0xFF4CAF50);
-  static const Color kiwiGreenDark = Color(0xFF2E7D32);
-  static const Color kiwiGreenLight = Color(0xFFE8F5E9);
+  // Brand — Kiwimath orange (primary)
+  static const Color kiwiPrimary = Color(0xFFFF6D00);      // Kiwimath orange
+  static const Color kiwiPrimaryDark = Color(0xFFE65100);  // Deep orange
+  static const Color kiwiPrimaryLight = Color(0xFFFFF3E0); // Light orange mist
 
-  // v4.1 palette additions
+  // Brand — warm cream surfaces
+  static const Color cream = Color(0xFFFFF8F0);           // Primary background
+  static const Color creamDark = Color(0xFFF5EFDF);       // Darker cream surface
+
+  // Correct / incorrect feedback (semantic — never used for branding)
+  static const Color kiwiGreen = Color(0xFF4CAF50);       // Correct answer
+  static const Color kiwiGreenDark = Color(0xFF2E7D32);   // Correct text
+  static const Color kiwiGreenLight = Color(0xFFE8F5E9);  // Correct bg
+
+  // Accent palette — world-inspired
   static const Color coral = Color(0xFFFF6B6B);
   static const Color amber = Color(0xFFFFB74D);
   static const Color teal = Color(0xFF26C6DA);
   static const Color indigo = Color(0xFF7C4DFF);
   static const Color sky = Color(0xFF42A5F5);
+  static const Color sunset = Color(0xFFFF8A65);  // Warm accent
 
-  // Functional — v4.1 softer feedback colors
+  // Functional — feedback colors
   static const Color correct = Color(0xFF66BB6A);
   static const Color correctBg = Color(0xFFE8F5E9);
   static const Color wrong = Color(0xFFFF8A65);
   static const Color wrongBg = Color(0xFFFFF3E0);
 
   // Path states
-  static const Color pathDone = Color(0xFF4CAF50);
-  static const Color pathCurrent = Color(0xFFFFB74D);
+  static const Color pathDone = Color(0xFFFF6D00);        // Orange for completed
+  static const Color pathCurrent = Color(0xFFFF9100);     // Bright orange for current
   static const Color pathLocked = Color(0xFFE0E0E0);
 
-  // Legacy functional colors (still used across tiers)
+  // Currency / gamification
   static const Color gemBlue = Color(0xFF448AFF);
   static const Color xpPurple = Color(0xFFAA00FF);
   static const Color gemGold = Color(0xFFFFD600);
-  static const Color streakOrange = Color(0xFFFF6D00);
+  static const Color streakWarm = Color(0xFFFF8A65);   // Gentle, warm streak color
   static const Color leagueBlue = Color(0xFF2979FF);
 
-  // Warm / step-down — richer tones
-  static const Color warmOrange = Color(0xFFFF9100);
-  static const Color warmOrangeDark = Color(0xFFE65100);
-  static const Color warmOrangeBg = Color(0xFFFFF3E0);
-  static const Color warmOrangeBorder = Color(0xFFFFCC80);
-
-  // Surfaces — v4.1 warm cream
-  static const Color background = Color(0xFFFFFBF5);
-  static const Color backgroundDark = Color(0xFFF5F0EA);
+  // Surfaces
+  static const Color background = Color(0xFFFFF8F0);     // Warm cream
+  static const Color backgroundDark = Color(0xFFF5EFDF); // Darker cream
   static const Color cardBg = Color(0xFFFFFFFF);
   static const Color textDark = Color(0xFF1A1A2E);
   static const Color textMid = Color(0xFF4A4A5A);
   static const Color textMuted = Color(0xFF9A9AAA);
 
-  // Visual card backgrounds — brighter
+  // Visual card backgrounds
   static const Color visualYellowBg = Color(0xFFFFFDE7);
   static const Color visualYellowBorder = Color(0xFFFFD54F);
   static const Color visualBlueBg = Color(0xFFE1F5FE);
   static const Color visualBlueBorder = Color(0xFF4FC3F7);
 
   // Candy topic card palette — 12 vivid gradients
+  // Index 0 is Kiwimath orange (brand)
   static const List<List<Color>> topicGradients = [
-    [Color(0xFF00E676), Color(0xFF00C853)], // emerald
+    [Color(0xFFFF6D00), Color(0xFFE65100)], // Kiwimath orange (brand)
     [Color(0xFF448AFF), Color(0xFF2962FF)], // electric blue
-    [Color(0xFFFF6D00), Color(0xFFFF3D00)], // tangerine
-    [Color(0xFFAA00FF), Color(0xFF7C4DFF)], // grape
     [Color(0xFFFF4081), Color(0xFFF50057)], // bubblegum pink
+    [Color(0xFFAA00FF), Color(0xFF7C4DFF)], // grape
     [Color(0xFF00E5FF), Color(0xFF00B8D4)], // aqua
+    [Color(0xFFFF8A65), Color(0xFFFF5722)], // sunset orange
     [Color(0xFFFFD600), Color(0xFFFFC400)], // sunshine
     [Color(0xFF76FF03), Color(0xFF64DD17)], // lime
     [Color(0xFFFF6E40), Color(0xFFFF3D00)], // coral
@@ -80,7 +86,7 @@ class KiwiColors {
 }
 
 // ===========================================================================
-// Grade tier — determines which theme to use
+// Grade tier
 // ===========================================================================
 enum GradeTier { junior, senior }
 
@@ -122,40 +128,40 @@ class KiwiTierColors {
     required this.topicCardBorder,
   });
 
-  /// K-2: v4.1 warm cream palette — friendly, playful, inviting.
+  /// K-2: Warm, playful orange — friendly and inviting.
   static const junior = KiwiTierColors(
-    primary: Color(0xFF4CAF50),        // Kiwi green (v4.1)
-    primaryDark: Color(0xFF2E7D32),
+    primary: Color(0xFFFF6D00),        // Kiwimath orange
+    primaryDark: Color(0xFFE65100),    // Deep orange
     accent: Color(0xFFFFD600),         // Sunshine yellow
-    background: Color(0xFFFFFBF5),     // Warm cream (v4.1)
-    backgroundDark: Color(0xFFF5F0EA), // Warm cream dark (v4.1)
+    background: Color(0xFFFFF8F0),     // Warm cream
+    backgroundDark: Color(0xFFF5EFDF),
     cardBg: Color(0xFFFFFFFF),
-    textPrimary: Color(0xFF1A1A2E),    // v4.1 textDark
-    textSecondary: Color(0xFF4A4A5A),  // v4.1 textMid
-    textMuted: Color(0xFF9A9AAA),      // v4.1 textMuted
-    streakGradientStart: Color(0xFFFF6D00),  // Blazing orange
-    streakGradientEnd: Color(0xFFFF3D00),    // Fire red-orange
-    buttonGradientStart: Color(0xFF4CAF50),  // Kiwi green (v4.1)
-    buttonGradientEnd: Color(0xFF2E7D32),    // Kiwi dark (v4.1)
-    topicCardBorder: Color(0xFFFFD54F),      // Golden border
+    textPrimary: Color(0xFF1A1A2E),
+    textSecondary: Color(0xFF4A4A5A),
+    textMuted: Color(0xFF9A9AAA),
+    streakGradientStart: Color(0xFFFF8A65),
+    streakGradientEnd: Color(0xFFFF5722),
+    buttonGradientStart: Color(0xFFFF6D00),  // Kiwimath orange
+    buttonGradientEnd: Color(0xFFE65100),    // Deep orange
+    topicCardBorder: Color(0xFFFFE0B2),      // Soft orange border
   );
 
-  /// 3-5: Electric, modern, anime-inspired energy.
+  /// 3-5: Deep orange + indigo energy — sharper, more mature.
   static const senior = KiwiTierColors(
-    primary: Color(0xFF536DFE),       // Electric indigo
-    primaryDark: Color(0xFF304FFE),
-    accent: Color(0xFF00E5FF),        // Neon cyan
-    background: Color(0xFFF0F4FF),    // Cool lavender white
-    backgroundDark: Color(0xFFE0E4EE),
+    primary: Color(0xFFE65100),        // Deep orange
+    primaryDark: Color(0xFFBF360C),    // Darkest orange
+    accent: Color(0xFF7C4DFF),         // Purple accent for contrast
+    background: Color(0xFFFFF8F0),     // Warm cream (consistent brand)
+    backgroundDark: Color(0xFFF0E8DD),
     cardBg: Color(0xFFFFFFFF),
-    textPrimary: Color(0xFF1A1A2E),   // Deep navy
-    textSecondary: Color(0xFF7C4DFF), // Vivid purple
+    textPrimary: Color(0xFF1A1A2E),
+    textSecondary: Color(0xFF7C4DFF),  // Purple secondary
     textMuted: Color(0xFF9A9AAA),
-    streakGradientStart: Color(0xFF7C4DFF),  // Purple pop
-    streakGradientEnd: Color(0xFF304FFE),    // Deep indigo
-    buttonGradientStart: Color(0xFF448AFF),  // Bright blue
-    buttonGradientEnd: Color(0xFF2962FF),    // Deep blue
-    topicCardBorder: Color(0xFFB388FF),      // Lavender border
+    streakGradientStart: Color(0xFFFF8A65),
+    streakGradientEnd: Color(0xFFFF5722),
+    buttonGradientStart: Color(0xFFE65100),
+    buttonGradientEnd: Color(0xFFBF360C),
+    topicCardBorder: Color(0xFFFFCC80),
   );
 }
 
@@ -189,7 +195,7 @@ class KiwiTierTypography {
     buttonSize: 17,
     streakNumberSize: 40,
     headlineWeight: FontWeight.w800,
-    fontFamily: 'Nunito',  // Round, friendly
+    fontFamily: 'Nunito',
   );
 
   /// 3-5: More compact, sharper, mature.
@@ -201,7 +207,7 @@ class KiwiTierTypography {
     buttonSize: 15,
     streakNumberSize: 34,
     headlineWeight: FontWeight.w700,
-    fontFamily: 'Poppins',  // Modern, clean
+    fontFamily: 'Poppins',
   );
 }
 
@@ -267,12 +273,8 @@ class KiwiTier {
   bool get isJunior => tier == GradeTier.junior;
   bool get isSenior => tier == GradeTier.senior;
 
-  /// Mascot display style per tier.
-  /// K-2: cute chibi style, emoji-heavy, exclamation marks.
-  /// 3-5: cool anime style, minimal emoji, confident tone.
   String get mascotStyle => isJunior ? 'chibi' : 'anime';
 
-  /// Emoji set per tier (for topic cards, feedback, etc.)
   String feedbackCorrect() => isJunior ? '\u{1F389}\u{1F31F}' : '\u{2705}';
   String feedbackWrong() => isJunior ? '\u{1F914}\u{1F4AD}' : '\u{1F504}';
   String feedbackStreak() => isJunior ? '\u{1F525}\u{2B50}' : '\u{1F525}';

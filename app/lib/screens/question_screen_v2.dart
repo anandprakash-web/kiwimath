@@ -96,6 +96,9 @@ class _QuestionScreenV2State extends State<QuestionScreenV2> {
   // Exclude already-answered question IDs
   final List<String> _excludeIds = [];
 
+  // Unified session results — collected per question for POST at end
+  final List<Map<String, dynamic>> _sessionResults = [];
+
   // Track hint usage per question
   int _maxHintLevel = -1;
 
@@ -175,15 +178,52 @@ class _QuestionScreenV2State extends State<QuestionScreenV2> {
 
       if (!mounted) return;
 
+      // Detect broken questions (no choices for MCQ/default mode)
+      final isBroken = _isQuestionBroken(question);
+
       setState(() {
         _question = question;
         _phase = _PhaseV2.answering;
         _questionStartTime = DateTime.now();
       });
+
+      if (isBroken) {
+        _autoFlagAndSkip(question);
+      }
     } catch (e) {
       if (!mounted) return;
       setState(() => _error = e.toString());
     }
+  }
+
+  /// Check if a question is broken (no choices for MCQ, empty stem, etc.)
+  bool _isQuestionBroken(QuestionV2 q) {
+    final mode = q.interactionMode;
+    if (mode == 'integer' || mode == 'drag_drop') return false;
+    // MCQ/default: must have at least 2 choices
+    if (q.choices.isEmpty) return true;
+    if (q.choices.length < 2) return true;
+    if (q.stem.trim().isEmpty) return true;
+    return false;
+  }
+
+  /// Auto-flag a broken question and skip to next after a brief delay.
+  Future<void> _autoFlagAndSkip(QuestionV2 q) async {
+    // Flag it in the background
+    _api.flagQuestion(
+      questionId: q.questionId,
+      studentId: widget.userId ?? 'anonymous',
+      flagType: 'question_error',
+      comment: 'Auto-flagged: question has no options or is broken',
+    ).catchError((_) {}); // fire and forget
+
+    _excludeIds.add(q.questionId);
+
+    // Show the broken state for 2 seconds so the kid sees something,
+    // then auto-advance
+    await Future.delayed(const Duration(seconds: 2));
+    if (!mounted) return;
+    _fetchNextQuestion();
   }
 
   // -------------------------------------------------------------------
@@ -222,6 +262,17 @@ class _QuestionScreenV2State extends State<QuestionScreenV2> {
       _lastResult = result;
       _questionsAnswered++;
       _excludeIds.add(q.questionId);
+
+      // Collect result for unified session completion
+      if (widget.sessionPlan != null) {
+        final planItem = widget.sessionPlan![_planIndex - 1];
+        _sessionResults.add({
+          'question_id': q.questionId,
+          'correct': result.correct,
+          'time_ms': timeTakenMs,
+          'skill_id': planItem['skill_id'] ?? '',
+        });
+      }
 
       _xp += result.xpEarned;
       _coins += result.coinsEarned;
@@ -315,9 +366,24 @@ class _QuestionScreenV2State extends State<QuestionScreenV2> {
   }
 
   void _handleResult(QuestionV2 q, AnswerCheckResponse result) {
+    final timeTakenMs = _questionStartTime != null
+        ? DateTime.now().difference(_questionStartTime!).inMilliseconds
+        : 0;
+
     _lastResult = result;
     _questionsAnswered++;
     _excludeIds.add(q.questionId);
+
+    // Collect result for unified session completion
+    if (widget.sessionPlan != null) {
+      final planItem = widget.sessionPlan![_planIndex - 1];
+      _sessionResults.add({
+        'question_id': q.questionId,
+        'correct': result.correct,
+        'time_ms': timeTakenMs,
+        'skill_id': planItem['skill_id'] ?? '',
+      });
+    }
 
     _xp += result.xpEarned;
     _coins += result.coinsEarned;
@@ -656,6 +722,23 @@ class _QuestionScreenV2State extends State<QuestionScreenV2> {
   }
 
   void _showSessionComplete() {
+    // POST unified session results to backend (fire and forget for UX speed)
+    if (widget.sessionPlan != null && _sessionResults.isNotEmpty && widget.userId != null) {
+      _api.completeUnifiedSession(
+        userId: widget.userId!,
+        grade: widget.grade,
+        results: _sessionResults,
+      ).then((summary) {
+        debugPrint('Session complete: ${summary['progress_message']}');
+        if (summary['new_masteries'] != null &&
+            (summary['new_masteries'] as List).isNotEmpty) {
+          debugPrint('New masteries: ${summary['new_masteries']}');
+        }
+      }).catchError((e) {
+        debugPrint('Failed to submit session results: $e');
+      });
+    }
+
     Navigator.of(context).push(
       MaterialPageRoute(
         builder: (_) => CelebrationScreen(
@@ -754,7 +837,7 @@ class _QuestionScreenV2State extends State<QuestionScreenV2> {
             _StatBadge(
               icon: Icons.local_fire_department,
               value: '$_streak',
-              color: KiwiColors.streakOrange,
+              color: KiwiColors.streakWarm,
             ),
           ],
         ],
@@ -945,6 +1028,11 @@ class _QuestionScreenV2State extends State<QuestionScreenV2> {
 
   /// Dispatch to the correct interaction widget based on question mode.
   Widget _buildInteractionWidget(QuestionV2 q) {
+    // Show friendly skip message for broken questions
+    if (_isQuestionBroken(q)) {
+      return _buildBrokenQuestionCard();
+    }
+
     switch (q.interactionMode) {
       case 'integer':
         return IntegerInput(
@@ -962,6 +1050,54 @@ class _QuestionScreenV2State extends State<QuestionScreenV2> {
       default:
         return _buildOptionsGrid(q);
     }
+  }
+
+  /// Friendly card shown when a question is broken — auto-skips after 2s.
+  Widget _buildBrokenQuestionCard() {
+    return Container(
+      padding: const EdgeInsets.all(20),
+      decoration: BoxDecoration(
+        color: const Color(0xFFFFF3E0),
+        borderRadius: BorderRadius.circular(16),
+        border: Border.all(color: KiwiColors.kiwiPrimary.withOpacity(0.3)),
+      ),
+      child: Column(
+        children: [
+          const Text(
+            '🔧',
+            style: TextStyle(fontSize: 36),
+          ),
+          const SizedBox(height: 8),
+          const Text(
+            'Oops! This question needs fixing.',
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              fontSize: 16,
+              fontWeight: FontWeight.w600,
+              color: KiwiColors.textDark,
+            ),
+          ),
+          const SizedBox(height: 4),
+          const Text(
+            'Skipping to the next one...',
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              fontSize: 13,
+              color: KiwiColors.textMuted,
+            ),
+          ),
+          const SizedBox(height: 12),
+          SizedBox(
+            width: 24,
+            height: 24,
+            child: CircularProgressIndicator(
+              strokeWidth: 2.5,
+              valueColor: AlwaysStoppedAnimation<Color>(KiwiColors.kiwiPrimary),
+            ),
+          ),
+        ],
+      ),
+    );
   }
 
   /// 2x2 grid of answer options
@@ -1057,6 +1193,11 @@ class _QuestionScreenV2State extends State<QuestionScreenV2> {
         encouragement: _lastResult?.nextAction?['message'] as String?,
         onContinue: _onCorrectContinue,
       );
+    }
+
+    // Hide bottom bar for broken questions (auto-skipping)
+    if (_question != null && _isQuestionBroken(_question!)) {
+      return const SizedBox.shrink();
     }
 
     // For integer and drag_drop modes, the check button is inside the widget.

@@ -1,22 +1,28 @@
 import 'package:flutter/material.dart';
 
+import '../models/clan.dart';
 import '../services/api_client.dart';
 import '../theme/kiwi_theme.dart';
+import '../widgets/proficiency_card.dart';
+import 'benchmark_test_screen.dart';
 
-/// Parent Dashboard v4 — clean redesign focused on what parents care about:
-///   1. Overall score (accuracy %) with trend indicator
-///   2. Weekly goal progress (questions this week vs target)
-///   3. Strengths (green) & needs practice (orange) pills
-///   4. Topic breakdown with progress bars
-///   5. Recommendations in plain language
+/// Parent Dashboard v6 — warm, encouraging, meaningful.
 ///
-/// No AppBar — uses in-body header consistent with home/path screens.
+/// Designed for parents who care about:
+///   1. "Is my child actually learning?" (progress narrative)
+///   2. "What should I encourage?" (strengths + areas to grow)
+///   3. "Is my child practicing enough?" (gentle weekly check)
+///
+/// No clinical stat dumps. Warm Kiwimath orange + cream, encouraging tone.
 class ParentDashboardScreen extends StatefulWidget {
   final String userId;
   final String? childName;
   final bool embedded;
   final int? weeklyGoal;
   final String? curriculum;
+  final Clan? childClan;
+  final ChallengeInfo? activeChallengeInfo;
+  final ChallengeProgress? challengeProgressInfo;
 
   const ParentDashboardScreen({
     super.key,
@@ -25,6 +31,9 @@ class ParentDashboardScreen extends StatefulWidget {
     this.embedded = false,
     this.weeklyGoal,
     this.curriculum,
+    this.childClan,
+    this.activeChallengeInfo,
+    this.challengeProgressInfo,
   });
 
   @override
@@ -36,15 +45,6 @@ class _ParentDashboardScreenState extends State<ParentDashboardScreen> {
   Map<String, dynamic>? _data;
   String? _error;
   bool _loading = true;
-
-  // ---------------------------------------------------------------------------
-  // Constants
-  // ---------------------------------------------------------------------------
-
-  static const _teal = Color(0xFF1D9E75);
-  static const _orange = Color(0xFFFF6D00);
-  static const _coral = Color(0xFFE85D4A);
-  static const _blue = Color(0xFF1976D2);
 
   @override
   void initState() {
@@ -59,35 +59,24 @@ class _ParentDashboardScreenState extends State<ParentDashboardScreen> {
   }
 
   Future<void> _load() async {
-    setState(() {
-      _loading = true;
-      _error = null;
-    });
+    setState(() { _loading = true; _error = null; });
     try {
       final data = await _api.getParentDashboard(
         userId: widget.userId,
         curriculum: widget.curriculum,
       );
       if (!mounted) return;
-      setState(() {
-        _data = data;
-        _loading = false;
-      });
+      setState(() { _data = data; _loading = false; });
     } catch (e) {
       if (!mounted) return;
       String friendlyMsg;
       final raw = e.toString();
       if (raw.contains('SocketException') || raw.contains('Connection')) {
-        friendlyMsg =
-            "Can't reach the server right now. Check your internet and try again.";
+        friendlyMsg = "Can't reach the server right now. Check your internet and try again.";
       } else {
-        friendlyMsg =
-            "Something went wrong loading the dashboard. Give it another try.";
+        friendlyMsg = "Something went wrong loading the dashboard. Give it another try.";
       }
-      setState(() {
-        _error = friendlyMsg;
-        _loading = false;
-      });
+      setState(() { _error = friendlyMsg; _loading = false; });
     }
   }
 
@@ -97,20 +86,19 @@ class _ParentDashboardScreenState extends State<ParentDashboardScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final tier = KiwiTier.forGrade(1); // Parent view uses default tier
     return Scaffold(
-      backgroundColor: tier.colors.background,
+      backgroundColor: KiwiColors.cream,
       body: SafeArea(
         child: _loading
-            ? const Center(child: CircularProgressIndicator())
+            ? Center(child: CircularProgressIndicator(color: KiwiColors.kiwiPrimary))
             : _error != null
-                ? _buildError(tier)
-                : _buildBody(tier),
+                ? _buildError()
+                : _buildBody(),
       ),
     );
   }
 
-  Widget _buildError(KiwiTier tier) {
+  Widget _buildError() {
     return Center(
       child: Padding(
         padding: const EdgeInsets.all(24),
@@ -119,41 +107,32 @@ class _ParentDashboardScreenState extends State<ParentDashboardScreen> {
           children: [
             Icon(Icons.cloud_off_rounded, size: 48, color: Colors.grey.shade300),
             const SizedBox(height: 12),
-            Text(
+            const Text(
               'Could not load the dashboard',
               style: TextStyle(
                 fontSize: 16,
                 fontWeight: FontWeight.w800,
-                color: tier.colors.textPrimary,
+                color: KiwiColors.textDark,
               ),
             ),
             const SizedBox(height: 6),
             Text(
               _error!,
               textAlign: TextAlign.center,
-              style: TextStyle(
-                fontSize: 13,
-                color: tier.colors.textPrimary.withOpacity(0.6),
-                height: 1.4,
-              ),
+              style: const TextStyle(fontSize: 13, color: KiwiColors.textMid, height: 1.4),
             ),
             const SizedBox(height: 18),
             GestureDetector(
               onTap: _load,
               child: Container(
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
                 decoration: BoxDecoration(
-                  color: _teal,
+                  color: KiwiColors.kiwiPrimary,
                   borderRadius: BorderRadius.circular(12),
                 ),
                 child: const Text(
                   'Try again',
-                  style: TextStyle(
-                    fontSize: 14,
-                    fontWeight: FontWeight.w700,
-                    color: Colors.white,
-                  ),
+                  style: TextStyle(fontSize: 14, fontWeight: FontWeight.w700, color: Colors.white),
                 ),
               ),
             ),
@@ -163,66 +142,88 @@ class _ParentDashboardScreenState extends State<ParentDashboardScreen> {
     );
   }
 
-  Widget _buildBody(KiwiTier tier) {
+  Widget _buildBody() {
     final data = _data!;
     final childName = widget.childName ?? 'your child';
 
-    final overallAccuracy =
-        (data['overall_accuracy'] as num?)?.toDouble() ?? 0.0;
+    final overallAccuracy = (data['overall_accuracy'] as num?)?.toDouble() ?? 0.0;
     final totalQuestions = (data['total_questions'] as num?)?.toInt() ?? 0;
     final currentStreak = (data['current_streak'] as num?)?.toInt() ?? 0;
     final topics = (data['topics'] as List<dynamic>? ?? [])
         .map((e) => Map<String, dynamic>.from(e as Map))
         .toList();
     final strengths = (data['strengths'] as List<dynamic>? ?? [])
-        .map((e) => e.toString())
-        .toList();
+        .map((e) => e.toString()).toList();
     final weaknesses = (data['needs_practice'] as List<dynamic>? ?? [])
-        .map((e) => e.toString())
-        .toList();
+        .map((e) => e.toString()).toList();
     final recommendations = (data['recommendations'] as List<dynamic>? ?? [])
-        .map((e) => e.toString())
-        .toList();
+        .map((e) => e.toString()).toList();
 
-    // Weekly goal: default to 35 questions/week (5/day)
     final weeklyGoal = widget.weeklyGoal ?? 35;
     final weeklyDone = (data['weekly_questions'] as num?)?.toInt() ??
         (totalQuestions > weeklyGoal ? weeklyGoal : totalQuestions);
 
+    // Proficiency, competency, and growth data (from Vedantu LO system)
+    final proficiency = data['proficiency'] as Map<String, dynamic>?;
+    final competency = data['competency_breakdown'] as Map<String, dynamic>?;
+    final growth = data['growth'] as Map<String, dynamic>?;
+
     return RefreshIndicator(
+      color: KiwiColors.kiwiPrimary,
       onRefresh: _load,
       child: ListView(
         padding: const EdgeInsets.fromLTRB(18, 14, 18, 28),
         children: [
-          // Header
-          _buildHeader(childName, tier),
+          // Kiwi mascot + greeting
+          _buildGreeting(childName),
           const SizedBox(height: 18),
 
-          // Score card (big accuracy circle)
-          _buildScoreCard(overallAccuracy, currentStreak, totalQuestions, tier),
+          // Progress narrative card (the "story" of how they're doing)
+          _buildProgressStory(overallAccuracy, totalQuestions, currentStreak),
           const SizedBox(height: 14),
 
-          // Weekly goal
-          _buildWeeklyGoal(weeklyDone, weeklyGoal, tier),
+          // Proficiency level card (scale score, competency breakdown, growth)
+          if (proficiency != null && totalQuestions >= 5)
+            Padding(
+              padding: const EdgeInsets.only(bottom: 14),
+              child: ProficiencyCard(
+                proficiency: proficiency,
+                competency: competency,
+                growth: growth,
+              ),
+            ),
+
+          // Diagnostic test button
+          _buildDiagnosticButton(),
+          const SizedBox(height: 14),
+
+          // Weekly practice check
+          _buildWeeklyCheck(weeklyDone, weeklyGoal),
+          const SizedBox(height: 14),
+
+          // Clan activity
+          _buildClanSection(),
           const SizedBox(height: 18),
 
-          // Strengths & weaknesses
+          // What they're great at + where to grow
           if (strengths.isNotEmpty || weaknesses.isNotEmpty) ...[
-            _buildStrengthsWeaknesses(strengths, weaknesses, tier),
+            _buildStrengthsAndGrowth(strengths, weaknesses),
             const SizedBox(height: 18),
           ],
 
-          // Topic breakdown
-          _buildSectionLabel('Topic breakdown', tier),
-          const SizedBox(height: 8),
-          ...topics.map((t) => _buildTopicRow(t, tier)),
+          // Topic progress
+          if (topics.isNotEmpty) ...[
+            _sectionLabel('Topic progress'),
+            const SizedBox(height: 8),
+            ...topics.map((t) => _buildTopicRow(t)),
+          ],
 
-          // Recommendations
+          // Tips
           if (recommendations.isNotEmpty) ...[
             const SizedBox(height: 18),
-            _buildSectionLabel('Tips for you', tier),
+            _sectionLabel('Tips for you'),
             const SizedBox(height: 8),
-            ...recommendations.map((r) => _buildRecommendation(r, tier)),
+            ...recommendations.map((r) => _buildTip(r)),
           ],
         ],
       ),
@@ -233,153 +234,163 @@ class _ParentDashboardScreenState extends State<ParentDashboardScreen> {
   // Widgets
   // ---------------------------------------------------------------------------
 
-  Widget _buildHeader(String childName, KiwiTier tier) {
+  Widget _buildGreeting(String childName) {
     return Row(
       children: [
+        // Kiwi avatar
+        Container(
+          width: 44,
+          height: 44,
+          decoration: const BoxDecoration(
+            color: KiwiColors.kiwiPrimaryLight,
+            shape: BoxShape.circle,
+          ),
+          child: const Center(
+            child: Text('\u{1F95D}', style: TextStyle(fontSize: 22)),
+          ),
+        ),
+        const SizedBox(width: 12),
         Expanded(
-          child: Text(
-            "How $childName is doing",
-            style: TextStyle(
-              fontSize: 20,
-              fontWeight: FontWeight.w800,
-              color: tier.colors.textPrimary,
-            ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                "How $childName is doing",
+                style: const TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.w800,
+                  color: KiwiColors.textDark,
+                ),
+              ),
+              const Text(
+                'Your child\'s learning journey',
+                style: TextStyle(fontSize: 12, color: KiwiColors.textMuted),
+              ),
+            ],
           ),
         ),
         if (_loading)
-          const SizedBox(
-            width: 18,
-            height: 18,
-            child: CircularProgressIndicator(strokeWidth: 2),
+          SizedBox(
+            width: 18, height: 18,
+            child: CircularProgressIndicator(strokeWidth: 2, color: KiwiColors.kiwiPrimary),
           )
         else
           GestureDetector(
             onTap: _load,
-            child: Icon(
-              Icons.refresh_rounded,
-              size: 22,
-              color: tier.colors.textPrimary.withOpacity(0.5),
-            ),
+            child: const Icon(Icons.refresh_rounded, size: 22, color: KiwiColors.textMuted),
           ),
       ],
     );
   }
 
-  Widget _buildScoreCard(
-    double accuracy,
-    int streak,
-    int totalQ,
-    KiwiTier tier,
-  ) {
-    final scoreColor = accuracy >= 70
-        ? _teal
-        : accuracy >= 50
-            ? _orange
-            : _coral;
+  Widget _buildProgressStory(double accuracy, int totalQ, int streak) {
+    // Choose an encouraging narrative based on performance
+    String narrative;
+    String emoji;
+    if (accuracy >= 80) {
+      narrative = 'doing great! Strong understanding across topics.';
+      emoji = '\u{1F31F}';
+    } else if (accuracy >= 60) {
+      narrative = 'making solid progress. Building a good foundation.';
+      emoji = '\u{1F4AA}';
+    } else if (totalQ > 10) {
+      narrative = 'building up. More practice will strengthen understanding.';
+      emoji = '\u{1F331}';
+    } else {
+      narrative = 'just getting started. Every question counts!';
+      emoji = '\u{1F680}';
+    }
 
     return Container(
       padding: const EdgeInsets.all(18),
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(16),
-        border: Border.all(color: Colors.grey.shade200),
+        border: Border.all(color: KiwiColors.kiwiPrimary.withOpacity(0.15)),
       ),
-      child: Row(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          // Big accuracy circle
-          SizedBox(
-            width: 72,
-            height: 72,
-            child: Stack(
-              alignment: Alignment.center,
-              children: [
-                SizedBox(
-                  width: 72,
-                  height: 72,
-                  child: CircularProgressIndicator(
-                    value: (accuracy / 100).clamp(0.0, 1.0),
-                    strokeWidth: 6,
-                    backgroundColor: scoreColor.withOpacity(0.12),
-                    valueColor: AlwaysStoppedAnimation<Color>(scoreColor),
+          // Narrative line
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(emoji, style: const TextStyle(fontSize: 24)),
+              const SizedBox(width: 12),
+              Expanded(
+                child: RichText(
+                  text: TextSpan(
+                    style: const TextStyle(
+                      fontSize: 15,
+                      color: KiwiColors.textDark,
+                      height: 1.4,
+                    ),
+                    children: [
+                      const TextSpan(
+                        text: 'Your child is ',
+                        style: TextStyle(fontWeight: FontWeight.w500),
+                      ),
+                      TextSpan(
+                        text: narrative,
+                        style: const TextStyle(fontWeight: FontWeight.w700),
+                      ),
+                    ],
                   ),
                 ),
-                Column(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    Text(
-                      '${accuracy.round()}%',
-                      style: TextStyle(
-                        fontSize: 20,
-                        fontWeight: FontWeight.w900,
-                        color: scoreColor,
-                      ),
-                    ),
-                    Text(
-                      'accuracy',
-                      style: TextStyle(
-                        fontSize: 10,
-                        color: tier.colors.textPrimary.withOpacity(0.5),
-                      ),
-                    ),
-                  ],
-                ),
-              ],
-            ),
+              ),
+            ],
           ),
-          const SizedBox(width: 18),
-          // Stats column
-          Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                _buildMiniStat(
-                  Icons.local_fire_department_rounded,
-                  '$streak day streak',
-                  _orange,
-                  tier,
-                ),
-                const SizedBox(height: 10),
-                _buildMiniStat(
-                  Icons.quiz_outlined,
-                  '$totalQ questions answered',
-                  _blue,
-                  tier,
-                ),
-              ],
-            ),
+          const SizedBox(height: 16),
+          // Key numbers — simple, not overwhelming
+          Row(
+            children: [
+              _miniStat('${accuracy.round()}%', 'Accuracy',
+                  accuracy >= 70 ? KiwiColors.kiwiPrimary : KiwiColors.sunset),
+              const SizedBox(width: 16),
+              _miniStat('$totalQ', 'Questions', KiwiColors.sky),
+              const SizedBox(width: 16),
+              _miniStat('$streak days', 'This week', KiwiColors.streakWarm),
+            ],
           ),
         ],
       ),
     );
   }
 
-  Widget _buildMiniStat(
-      IconData icon, String label, Color color, KiwiTier tier) {
-    return Row(
-      children: [
-        Container(
-          width: 28,
-          height: 28,
-          decoration: BoxDecoration(
-            color: color.withOpacity(0.1),
-            shape: BoxShape.circle,
-          ),
-          child: Icon(icon, size: 15, color: color),
+  Widget _miniStat(String value, String label, Color color) {
+    return Expanded(
+      child: Container(
+        padding: const EdgeInsets.symmetric(vertical: 10),
+        decoration: BoxDecoration(
+          color: color.withOpacity(0.08),
+          borderRadius: BorderRadius.circular(10),
         ),
-        const SizedBox(width: 8),
-        Text(
-          label,
-          style: TextStyle(
-            fontSize: 13,
-            fontWeight: FontWeight.w600,
-            color: tier.colors.textPrimary,
-          ),
+        child: Column(
+          children: [
+            Text(
+              value,
+              style: TextStyle(
+                fontSize: 16,
+                fontWeight: FontWeight.w800,
+                color: color,
+              ),
+            ),
+            const SizedBox(height: 2),
+            Text(
+              label,
+              style: TextStyle(
+                fontSize: 10,
+                fontWeight: FontWeight.w500,
+                color: color.withOpacity(0.8),
+              ),
+            ),
+          ],
         ),
-      ],
+      ),
     );
   }
 
-  Widget _buildWeeklyGoal(int done, int goal, KiwiTier tier) {
+  Widget _buildWeeklyCheck(int done, int goal) {
     final fraction = goal > 0 ? (done / goal).clamp(0.0, 1.0) : 0.0;
     final isComplete = done >= goal;
 
@@ -398,16 +409,12 @@ class _ParentDashboardScreenState extends State<ParentDashboardScreen> {
               Icon(
                 isComplete ? Icons.check_circle : Icons.flag_rounded,
                 size: 18,
-                color: isComplete ? _teal : _orange,
+                color: isComplete ? KiwiColors.kiwiGreen : KiwiColors.sunset,
               ),
               const SizedBox(width: 8),
-              Text(
-                'Weekly goal',
-                style: TextStyle(
-                  fontSize: 13,
-                  fontWeight: FontWeight.w700,
-                  color: tier.colors.textPrimary,
-                ),
+              const Text(
+                'Weekly practice',
+                style: TextStyle(fontSize: 13, fontWeight: FontWeight.w700, color: KiwiColors.textDark),
               ),
               const Spacer(),
               Text(
@@ -415,7 +422,7 @@ class _ParentDashboardScreenState extends State<ParentDashboardScreen> {
                 style: TextStyle(
                   fontSize: 12,
                   fontWeight: FontWeight.w600,
-                  color: isComplete ? _teal : _orange,
+                  color: isComplete ? KiwiColors.kiwiGreen : KiwiColors.sunset,
                 ),
               ),
             ],
@@ -426,20 +433,16 @@ class _ParentDashboardScreenState extends State<ParentDashboardScreen> {
             child: LinearProgressIndicator(
               value: fraction,
               minHeight: 7,
-              backgroundColor: (isComplete ? _teal : _orange).withOpacity(0.12),
-              valueColor:
-                  AlwaysStoppedAnimation<Color>(isComplete ? _teal : _orange),
+              backgroundColor: (isComplete ? KiwiColors.kiwiGreen : KiwiColors.sunset).withOpacity(0.12),
+              valueColor: AlwaysStoppedAnimation<Color>(
+                  isComplete ? KiwiColors.kiwiGreen : KiwiColors.sunset),
             ),
           ),
           if (isComplete) ...[
             const SizedBox(height: 6),
             Text(
-              'Goal reached! Great job this week.',
-              style: TextStyle(
-                fontSize: 11.5,
-                color: _teal,
-                fontWeight: FontWeight.w500,
-              ),
+              'Great job this week! Consistent practice builds confidence.',
+              style: TextStyle(fontSize: 11.5, color: KiwiColors.kiwiPrimary, fontWeight: FontWeight.w500),
             ),
           ],
         ],
@@ -447,11 +450,251 @@ class _ParentDashboardScreenState extends State<ParentDashboardScreen> {
     );
   }
 
-  Widget _buildStrengthsWeaknesses(
-    List<String> strengths,
-    List<String> weaknesses,
-    KiwiTier tier,
-  ) {
+  Widget _buildDiagnosticButton() {
+    return GestureDetector(
+      onTap: () {
+        Navigator.of(context).push(
+          MaterialPageRoute(
+            builder: (_) => BenchmarkTestScreen(
+              userId: widget.userId,
+              grade: 1,
+              childName: widget.childName,
+              benchmarkType: 'diagnostic',
+              onComplete: _load,
+            ),
+          ),
+        );
+      },
+      child: Container(
+        padding: const EdgeInsets.all(14),
+        decoration: BoxDecoration(
+          color: Colors.white,
+          borderRadius: BorderRadius.circular(14),
+          border: Border.all(color: KiwiColors.sky.withOpacity(0.3)),
+        ),
+        child: Row(
+          children: [
+            Container(
+              width: 36,
+              height: 36,
+              decoration: BoxDecoration(
+                color: KiwiColors.sky.withOpacity(0.1),
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: const Center(
+                child: Icon(Icons.assignment_outlined, size: 18, color: KiwiColors.sky),
+              ),
+            ),
+            const SizedBox(width: 12),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: const [
+                  Text(
+                    'Run a diagnostic test',
+                    style: TextStyle(
+                      fontSize: 13, fontWeight: FontWeight.w700, color: KiwiColors.textDark,
+                    ),
+                  ),
+                  SizedBox(height: 2),
+                  Text(
+                    '20 questions to measure exact proficiency level',
+                    style: TextStyle(fontSize: 11.5, color: KiwiColors.textMuted),
+                  ),
+                ],
+              ),
+            ),
+            const Icon(Icons.chevron_right_rounded, size: 20, color: KiwiColors.textMuted),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildClanSection() {
+    final clan = widget.childClan;
+
+    // Child is not in a clan — show informational card
+    if (clan == null) {
+      return Container(
+        padding: const EdgeInsets.all(14),
+        decoration: BoxDecoration(
+          color: Colors.white,
+          borderRadius: BorderRadius.circular(14),
+          border: Border.all(color: Colors.grey.shade200),
+        ),
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const Icon(Icons.groups_rounded, size: 20, color: KiwiColors.textMuted),
+            const SizedBox(width: 10),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: const [
+                  Text(
+                    'Clan Activity',
+                    style: TextStyle(fontSize: 13, fontWeight: FontWeight.w700, color: KiwiColors.textDark),
+                  ),
+                  SizedBox(height: 4),
+                  Text(
+                    'Your child hasn\'t joined a study clan yet. '
+                    'Clans are moderated groups where kids solve math puzzles together.',
+                    style: TextStyle(fontSize: 12.5, color: KiwiColors.textMid, height: 1.4),
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
+      );
+    }
+
+    // Child is in a clan — show full clan summary
+    final challenge = widget.activeChallengeInfo;
+    final progress = widget.challengeProgressInfo;
+
+    return Container(
+      padding: const EdgeInsets.all(14),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(14),
+        border: Border.all(color: Colors.grey.shade200),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          // Header row: crest emoji + clan name + level
+          Row(
+            children: [
+              const Icon(Icons.groups_rounded, size: 18, color: KiwiColors.kiwiPrimary),
+              const SizedBox(width: 8),
+              const Text(
+                'Clan Activity',
+                style: TextStyle(fontSize: 13, fontWeight: FontWeight.w700, color: KiwiColors.textDark),
+              ),
+            ],
+          ),
+          const SizedBox(height: 12),
+
+          // Clan info row
+          Row(
+            children: [
+              // Crest emoji badge
+              Container(
+                width: 38,
+                height: 38,
+                decoration: BoxDecoration(
+                  color: KiwiColors.kiwiPrimaryLight,
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                child: Center(
+                  child: Text(clan.crest.emoji, style: const TextStyle(fontSize: 20)),
+                ),
+              ),
+              const SizedBox(width: 12),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      clan.name,
+                      style: const TextStyle(
+                        fontSize: 14,
+                        fontWeight: FontWeight.w700,
+                        color: KiwiColors.textDark,
+                      ),
+                    ),
+                    const SizedBox(height: 2),
+                    Text(
+                      '${clan.clanLevel.emoji} Level ${clan.clanLevel.level} ${clan.clanLevel.name}'
+                      '  ·  ${clan.memberCount} members',
+                      style: const TextStyle(
+                        fontSize: 11.5,
+                        fontWeight: FontWeight.w500,
+                        color: KiwiColors.textMid,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
+
+          // Challenge status (if active)
+          if (challenge != null && challenge.status == 'active') ...[
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 10),
+              child: Divider(height: 1, color: Colors.grey.shade200),
+            ),
+            Row(
+              children: [
+                Icon(Icons.extension_rounded, size: 16, color: KiwiColors.sky),
+                const SizedBox(width: 6),
+                Expanded(
+                  child: Text(
+                    challenge.title,
+                    style: const TextStyle(
+                      fontSize: 12.5,
+                      fontWeight: FontWeight.w600,
+                      color: KiwiColors.textDark,
+                    ),
+                  ),
+                ),
+              ],
+            ),
+            const SizedBox(height: 8),
+            Row(
+              children: [
+                _miniStat(
+                  '${(progress?.revealPercentage ?? 0).round()}%',
+                  'Revealed',
+                  KiwiColors.sky,
+                ),
+                const SizedBox(width: 10),
+                _miniStat(
+                  '${challenge.daysRemaining}d',
+                  'Left',
+                  challenge.daysRemaining <= 2 ? KiwiColors.sunset : KiwiColors.kiwiGreen,
+                ),
+              ],
+            ),
+          ],
+
+          // Reassuring message for parents
+          const SizedBox(height: 10),
+          Container(
+            padding: const EdgeInsets.all(10),
+            decoration: BoxDecoration(
+              color: KiwiColors.kiwiPrimaryLight,
+              borderRadius: BorderRadius.circular(10),
+            ),
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: const [
+                Icon(Icons.verified_user_rounded, size: 14, color: KiwiColors.kiwiPrimaryDark),
+                SizedBox(width: 8),
+                Expanded(
+                  child: Text(
+                    'Your child is part of a moderated study group. '
+                    'No chat — just collaborative puzzle-solving!',
+                    style: TextStyle(
+                      fontSize: 11.5,
+                      color: KiwiColors.kiwiPrimaryDark,
+                      height: 1.35,
+                      fontWeight: FontWeight.w500,
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildStrengthsAndGrowth(List<String> strengths, List<String> weaknesses) {
     return Container(
       padding: const EdgeInsets.all(14),
       decoration: BoxDecoration(
@@ -465,15 +708,11 @@ class _ParentDashboardScreenState extends State<ParentDashboardScreen> {
           if (strengths.isNotEmpty) ...[
             Row(
               children: [
-                Icon(Icons.star_rounded, size: 16, color: _teal),
+                const Icon(Icons.star_rounded, size: 16, color: KiwiColors.kiwiGreen),
                 const SizedBox(width: 6),
                 Text(
-                  'Strengths',
-                  style: TextStyle(
-                    fontSize: 12,
-                    fontWeight: FontWeight.w700,
-                    color: tier.colors.textPrimary.withOpacity(0.6),
-                  ),
+                  'Doing well in',
+                  style: TextStyle(fontSize: 12, fontWeight: FontWeight.w700, color: KiwiColors.textMid),
                 ),
               ],
             ),
@@ -481,9 +720,7 @@ class _ParentDashboardScreenState extends State<ParentDashboardScreen> {
             Wrap(
               spacing: 6,
               runSpacing: 6,
-              children: strengths
-                  .map((id) => _buildPill(_prettyTopic(id), _teal))
-                  .toList(),
+              children: strengths.map((id) => _pill(_prettyTopic(id), KiwiColors.kiwiGreen)).toList(),
             ),
           ],
           if (strengths.isNotEmpty && weaknesses.isNotEmpty)
@@ -494,15 +731,11 @@ class _ParentDashboardScreenState extends State<ParentDashboardScreen> {
           if (weaknesses.isNotEmpty) ...[
             Row(
               children: [
-                Icon(Icons.trending_up_rounded, size: 16, color: _orange),
+                Icon(Icons.trending_up_rounded, size: 16, color: KiwiColors.sunset),
                 const SizedBox(width: 6),
                 Text(
-                  'Needs practice',
-                  style: TextStyle(
-                    fontSize: 12,
-                    fontWeight: FontWeight.w700,
-                    color: tier.colors.textPrimary.withOpacity(0.6),
-                  ),
+                  'Room to grow',
+                  style: TextStyle(fontSize: 12, fontWeight: FontWeight.w700, color: KiwiColors.textMid),
                 ),
               ],
             ),
@@ -510,9 +743,7 @@ class _ParentDashboardScreenState extends State<ParentDashboardScreen> {
             Wrap(
               spacing: 6,
               runSpacing: 6,
-              children: weaknesses
-                  .map((id) => _buildPill(_prettyTopic(id), _orange))
-                  .toList(),
+              children: weaknesses.map((id) => _pill(_prettyTopic(id), KiwiColors.sunset)).toList(),
             ),
           ],
         ],
@@ -520,7 +751,7 @@ class _ParentDashboardScreenState extends State<ParentDashboardScreen> {
     );
   }
 
-  Widget _buildPill(String text, Color color) {
+  Widget _pill(String text, Color color) {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
       decoration: BoxDecoration(
@@ -529,36 +760,32 @@ class _ParentDashboardScreenState extends State<ParentDashboardScreen> {
       ),
       child: Text(
         text,
-        style: TextStyle(
-          fontSize: 12,
-          fontWeight: FontWeight.w600,
-          color: color,
-        ),
+        style: TextStyle(fontSize: 12, fontWeight: FontWeight.w600, color: color),
       ),
     );
   }
 
-  Widget _buildSectionLabel(String title, KiwiTier tier) {
+  Widget _sectionLabel(String title) {
     return Text(
       title,
-      style: TextStyle(
+      style: const TextStyle(
         fontSize: 14,
         fontWeight: FontWeight.w800,
-        color: tier.colors.textPrimary.withOpacity(0.6),
+        color: KiwiColors.textMid,
       ),
     );
   }
 
-  Widget _buildTopicRow(Map<String, dynamic> t, KiwiTier tier) {
+  Widget _buildTopicRow(Map<String, dynamic> t) {
     final name = t['topic_name']?.toString() ?? '';
     final accuracy = (t['accuracy'] as num?)?.toDouble() ?? 0.0;
     final mastery = t['mastery']?.toString() ?? 'learning';
 
     final color = mastery == 'mastered'
-        ? _teal
+        ? KiwiColors.kiwiGreen
         : mastery == 'practising'
-            ? _orange
-            : _coral;
+            ? KiwiColors.kiwiPrimary
+            : KiwiColors.sunset;
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 10),
@@ -577,20 +804,12 @@ class _ParentDashboardScreenState extends State<ParentDashboardScreen> {
                 Expanded(
                   child: Text(
                     name,
-                    style: TextStyle(
-                      fontSize: 13,
-                      fontWeight: FontWeight.w600,
-                      color: tier.colors.textPrimary,
-                    ),
+                    style: const TextStyle(fontSize: 13, fontWeight: FontWeight.w600, color: KiwiColors.textDark),
                   ),
                 ),
                 Text(
                   '${accuracy.round()}%',
-                  style: TextStyle(
-                    fontSize: 12,
-                    fontWeight: FontWeight.w700,
-                    color: color,
-                  ),
+                  style: TextStyle(fontSize: 12, fontWeight: FontWeight.w700, color: color),
                 ),
               ],
             ),
@@ -610,28 +829,24 @@ class _ParentDashboardScreenState extends State<ParentDashboardScreen> {
     );
   }
 
-  Widget _buildRecommendation(String text, KiwiTier tier) {
+  Widget _buildTip(String text) {
     return Container(
       margin: const EdgeInsets.only(bottom: 8),
       padding: const EdgeInsets.all(12),
       decoration: BoxDecoration(
-        color: const Color(0xFFE8F5E9),
+        color: KiwiColors.kiwiPrimaryLight,
         borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: _teal.withOpacity(0.2)),
+        border: Border.all(color: KiwiColors.kiwiPrimary.withOpacity(0.15)),
       ),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Icon(Icons.lightbulb_outline_rounded, size: 16, color: _teal),
+          const Icon(Icons.lightbulb_outline_rounded, size: 16, color: KiwiColors.kiwiPrimaryDark),
           const SizedBox(width: 8),
           Expanded(
             child: Text(
               text,
-              style: TextStyle(
-                fontSize: 13,
-                color: tier.colors.textPrimary,
-                height: 1.35,
-              ),
+              style: const TextStyle(fontSize: 13, color: KiwiColors.textDark, height: 1.35),
             ),
           ),
         ],

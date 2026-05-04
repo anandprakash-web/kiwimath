@@ -6,15 +6,17 @@ import '../theme/kiwi_theme.dart';
 import '../widgets/companion_view.dart';
 import '../models/companion.dart';
 
-/// Home Screen v4 — approved redesign.
+/// Home Screen v7.0 — Kiwimath orange + cream, play-first.
+///
+/// Architecture: Pure adaptive engine IS the primary experience.
+/// No curriculum gating. Kiwi brand identity.
 ///
 /// Layout (top → bottom):
-///   1. Compact top bar: avatar · name · grade · streak badge
-///   2. Smart Practice hero (orange gradient, compact row)
-///   3. Badge milestone (next badge progress)
-///   4. Topic list (all 8, compact rows, colored level badges)
-///
-/// Removed: grade selector, journey labels, continue card, region names.
+///   1. Top bar: avatar · name · grade · gentle practice-days
+///   2. SMART PRACTICE HERO — compact, with play button
+///   3. Daily progress (gentle framing)
+///   4. Topic list — always shows adaptive topics
+///   5. Badge milestone
 class HomeScreen extends StatelessWidget {
   final int streak;
   final int kiwiCoins;
@@ -39,9 +41,6 @@ class HomeScreen extends StatelessWidget {
   final VoidCallback? onSmartSession;
   final VoidCallback? onAvatarTap;
   final String studentName;
-  final String? curriculum;
-  final List<Map<String, dynamic>>? chapters;
-  final bool chaptersLoading;
 
   const HomeScreen({
     super.key,
@@ -68,22 +67,19 @@ class HomeScreen extends StatelessWidget {
     this.onSmartSession,
     this.onAvatarTap,
     this.studentName = 'Chikoo',
-    this.curriculum,
-    this.chapters,
-    this.chaptersLoading = false,
   });
 
   // ---------------------------------------------------------------------------
   // Constants
   // ---------------------------------------------------------------------------
 
-  /// Vedantu orange gradient.
-  static const _orangeStart = Color(0xFFFF6D00);
-  static const _orangeEnd = Color(0xFFFF9100);
+  /// Orange gradient — Kiwimath brand.
+  static const _greenStart = Color(0xFFFF6D00);
+  static const _greenEnd = Color(0xFFE65100);
 
   /// Level color tiers.
-  static const _greenBorder = Color(0xFF43A047);
-  static const _greenBg = Color(0xFFE8F5E9);
+  static const _greenBorder = Color(0xFFFF6D00);
+  static const _greenBg = Color(0xFFFFF3E0);
   static const _blueBorder = Color(0xFF1E88E5);
   static const _blueBg = Color(0xFFE3F2FD);
   static const _purpleBorder = Color(0xFF8E24AA);
@@ -99,37 +95,37 @@ class HomeScreen extends StatelessWidget {
     300: 'Grandmaster',
   };
 
-  /// Topic emoji map for the icon squares.
+  /// Topic emoji map.
   static const _topicEmojis = <String, String>{
-    'count': '🔢',
-    'number': '🔢',
-    'arithmetic': '➕',
-    'add': '➕',
-    'subtract': '➕',
-    'pattern': '🔄',
-    'logic': '🧩',
-    'puzzle': '🧩',
-    'shape': '📐',
-    'geo': '📐',
-    'spatial': '🧠',
-    '3d': '🧠',
-    'word': '📖',
-    'story': '📖',
-    'data': '📊',
-    'graph': '📊',
-    'place_value': '🔢',
-    'multipli': '✖️',
-    'times': '✖️',
-    'divis': '➗',
-    'fraction': '🥧',
-    'decimal': '🔢',
-    'time': '🕐',
-    'clock': '🕐',
-    'money': '💰',
-    'measur': '📏',
+    'count': '\u{1F522}',
+    'number': '\u{1F522}',
+    'arithmetic': '\u{2795}',
+    'add': '\u{2795}',
+    'subtract': '\u{2795}',
+    'pattern': '\u{1F504}',
+    'logic': '\u{1F9E9}',
+    'puzzle': '\u{1F9E9}',
+    'shape': '\u{1F4D0}',
+    'geo': '\u{1F4D0}',
+    'spatial': '\u{1F9E0}',
+    '3d': '\u{1F9E0}',
+    'word': '\u{1F4D6}',
+    'story': '\u{1F4D6}',
+    'data': '\u{1F4CA}',
+    'graph': '\u{1F4CA}',
+    'place_value': '\u{1F522}',
+    'multipli': '\u{2716}\u{FE0F}',
+    'times': '\u{2716}\u{FE0F}',
+    'divis': '\u{2797}',
+    'fraction': '\u{1F967}',
+    'decimal': '\u{1F522}',
+    'time': '\u{1F550}',
+    'clock': '\u{1F550}',
+    'money': '\u{1F4B0}',
+    'measur': '\u{1F4CF}',
   };
 
-  /// Topic background colors for the icon squares.
+  /// Topic background colors.
   static const _topicIconBgs = <String, Color>{
     'count': Color(0xFFE3F2FD),
     'number': Color(0xFFE3F2FD),
@@ -154,12 +150,6 @@ class HomeScreen extends StatelessWidget {
   // Helpers
   // ---------------------------------------------------------------------------
 
-  /// Whether the user follows a chapter-based curriculum (not Olympiad).
-  bool get _hasCurriculum =>
-      curriculum != null &&
-      curriculum!.isNotEmpty &&
-      curriculum != 'olympiad';
-
   String _emojiForTopic(TopicV2 topic) {
     final lower = topic.topicName.toLowerCase();
     final cid = topic.topicId.toLowerCase();
@@ -168,7 +158,7 @@ class HomeScreen extends StatelessWidget {
         return entry.value;
       }
     }
-    return '📘';
+    return '\u{1F4D8}';
   }
 
   Color _iconBgForTopic(TopicV2 topic) {
@@ -182,48 +172,29 @@ class HomeScreen extends StatelessWidget {
     return const Color(0xFFF5F5F5);
   }
 
-  /// Returns (borderColor, bgColor) for the level badge.
   (Color, Color) _levelColors(int level) {
     if (level <= 3) return (_greenBorder, _greenBg);
     if (level <= 6) return (_blueBorder, _blueBg);
     return (_purpleBorder, _purpleBg);
   }
 
-  /// Level name from the 10-level system.
   String _levelName(int level) {
     const names = [
-      'Starter',      // 1
-      'Beginner',     // 2
-      'Explorer',     // 3
-      'Adventurer',   // 4
-      'Navigator',    // 5
-      'Trailblazer',  // 6
-      'Champion',     // 7
-      'Master',       // 8
-      'Legend',        // 9
-      'Grandmaster',  // 10
+      'Starter', 'Beginner', 'Explorer', 'Adventurer', 'Navigator',
+      'Trailblazer', 'Champion', 'Master', 'Legend', 'Grandmaster',
     ];
     return names[(level - 1).clamp(0, 9)];
   }
 
-  /// Compute total questions answered (approximation from XP or daily progress).
-  int get _totalQuestionsAnswered {
-    // Use XP as proxy: ~10 XP per question on average.
-    // This is a rough estimate; the backend should provide an exact count.
-    return (xp / 10).round();
-  }
+  int get _totalQuestionsAnswered => (xp / 10).round();
 
-  /// Badge progress: (currentCount, targetCount, badgeName).
   (int, int, String) get _badgeProgress {
     final total = _totalQuestionsAnswered;
-    // Find next milestone.
     for (final entry in _badgeMilestones.entries) {
       if (total < entry.key) {
         return (total, entry.key, entry.value);
       }
     }
-    // Past all milestones.
-    final lastKey = _badgeMilestones.keys.last;
     final nextTarget = ((total ~/ 50) + 1) * 50;
     return (total, nextTarget, 'Grandmaster+');
   }
@@ -245,11 +216,13 @@ class HomeScreen extends StatelessWidget {
             children: [
               const SizedBox(height: 10),
               _buildTopBar(context, tier),
-              const SizedBox(height: 12),
-              _buildSmartPracticeHero(tier),
-              const SizedBox(height: 10),
-              _buildBadgeMilestone(tier),
+              const SizedBox(height: 16),
+              _buildAdaptiveHero(tier),
               const SizedBox(height: 14),
+              _buildDailyProgress(tier),
+              const SizedBox(height: 14),
+              _buildBadgeMilestone(tier),
+              const SizedBox(height: 16),
               _buildTopicSectionHeader(tier),
               const SizedBox(height: 8),
               _buildTopicList(context, tier),
@@ -262,14 +235,13 @@ class HomeScreen extends StatelessWidget {
   }
 
   // ---------------------------------------------------------------------------
-  // 1. TOP BAR — avatar + name + grade + streak
+  // 1. TOP BAR
   // ---------------------------------------------------------------------------
 
   Widget _buildTopBar(BuildContext context, KiwiTier tier) {
     final name = studentName.isNotEmpty ? studentName : 'Kiwi Learner';
     return Row(
       children: [
-        // Avatar (tappable → opens profile sheet)
         GestureDetector(
           onTap: onAvatarTap,
           child: Container(
@@ -277,7 +249,7 @@ class HomeScreen extends StatelessWidget {
             height: 36,
             decoration: const BoxDecoration(
               gradient: LinearGradient(
-                colors: [_orangeStart, _orangeEnd],
+                colors: [_greenStart, _greenEnd],
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
               ),
@@ -298,13 +270,12 @@ class HomeScreen extends StatelessWidget {
                         fontSize: 15,
                         fontWeight: FontWeight.w800,
                         color: Colors.white,
+                      ),
                     ),
                   ),
-                ),
           ),
         ),
         const SizedBox(width: 10),
-        // Name + grade
         Expanded(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -327,25 +298,28 @@ class HomeScreen extends StatelessWidget {
             ],
           ),
         ),
+        // Currency badges
+        _buildCurrencyChip('\u{1FA99}', '$kiwiCoins', tier),
+        const SizedBox(width: 6),
         // Streak badge
         if (streak > 0)
           Container(
             padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
             decoration: BoxDecoration(
-              color: const Color(0xFFFFF3E0),
+              color: KiwiColors.kiwiPrimaryLight,
               borderRadius: BorderRadius.circular(12),
             ),
             child: Row(
               mainAxisSize: MainAxisSize.min,
               children: [
-                const Text('🔥', style: TextStyle(fontSize: 12)),
+                const Text('\u{1F525}', style: TextStyle(fontSize: 12)),
                 const SizedBox(width: 3),
                 Text(
                   '$streak',
                   style: const TextStyle(
                     fontSize: 12,
                     fontWeight: FontWeight.w800,
-                    color: Color(0xFFE65100),
+                    color: KiwiColors.kiwiPrimaryDark,
                   ),
                 ),
               ],
@@ -355,62 +329,108 @@ class HomeScreen extends StatelessWidget {
     );
   }
 
+  Widget _buildCurrencyChip(String emoji, String value, KiwiTier tier) {
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+      decoration: BoxDecoration(
+        color: tier.colors.cardBg,
+        borderRadius: BorderRadius.circular(12),
+        border: Border.all(color: Colors.grey.withOpacity(0.12)),
+      ),
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Text(emoji, style: const TextStyle(fontSize: 11)),
+          const SizedBox(width: 3),
+          Text(
+            value,
+            style: TextStyle(
+              fontSize: 11,
+              fontWeight: FontWeight.w700,
+              color: tier.colors.textPrimary,
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
   // ---------------------------------------------------------------------------
-  // 2. SMART PRACTICE HERO — compact orange gradient row
+  // 2. ADAPTIVE PRACTICE HERO — large, dominant, THE primary CTA
   // ---------------------------------------------------------------------------
 
-  Widget _buildSmartPracticeHero(KiwiTier tier) {
+  Widget _buildAdaptiveHero(KiwiTier tier) {
     return GestureDetector(
       onTap: onSmartSession,
       child: Container(
         width: double.infinity,
-        padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 14),
+        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
         decoration: BoxDecoration(
           gradient: const LinearGradient(
-            colors: [_orangeStart, _orangeEnd],
+            colors: [_greenStart, _greenEnd],
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
           ),
-          borderRadius: BorderRadius.circular(14),
+          borderRadius: BorderRadius.circular(18),
           boxShadow: [
             BoxShadow(
-              color: _orangeStart.withOpacity(0.25),
-              blurRadius: 10,
-              offset: const Offset(0, 4),
+              color: _greenStart.withOpacity(0.3),
+              blurRadius: 16,
+              offset: const Offset(0, 6),
             ),
           ],
         ),
         child: Row(
           children: [
+            // Companion or icon
+            if (companionService != null && companionService!.isLoaded)
+              CompanionView(
+                surface: CompanionSurface.homeAdventure,
+                config: companionService!.config!,
+                size: 52,
+              )
+            else
+              Container(
+                width: 52,
+                height: 52,
+                decoration: BoxDecoration(
+                  color: Colors.white.withOpacity(0.2),
+                  borderRadius: BorderRadius.circular(14),
+                ),
+                child: const Center(
+                  child: Text('\u{1F9E0}', style: TextStyle(fontSize: 28)),
+                ),
+              ),
+            const SizedBox(width: 16),
             // Text
             Expanded(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    'ADAPTIVE',
+                    'SMART PRACTICE',
                     style: TextStyle(
                       fontSize: 10,
-                      fontWeight: FontWeight.w600,
-                      letterSpacing: 0.5,
-                      color: Colors.white.withOpacity(0.75),
+                      fontWeight: FontWeight.w700,
+                      letterSpacing: 1.2,
+                      color: Colors.white.withOpacity(0.8),
                     ),
                   ),
-                  const SizedBox(height: 2),
+                  const SizedBox(height: 4),
                   const Text(
                     'Smart Practice',
                     style: TextStyle(
-                      fontSize: 18,
-                      fontWeight: FontWeight.w800,
+                      fontSize: 20,
+                      fontWeight: FontWeight.w900,
                       color: Colors.white,
                     ),
                   ),
-                  const SizedBox(height: 2),
+                  const SizedBox(height: 4),
                   Text(
-                    'Personalized to your level',
+                    'Adaptive questions at your level',
                     style: TextStyle(
-                      fontSize: 11,
-                      color: Colors.white.withOpacity(0.7),
+                      fontSize: 12,
+                      color: Colors.white.withOpacity(0.75),
                     ),
                   ),
                 ],
@@ -418,19 +438,19 @@ class HomeScreen extends StatelessWidget {
             ),
             // Play button
             Container(
-              width: 44,
-              height: 44,
+              width: 48,
+              height: 48,
               decoration: const BoxDecoration(
                 color: Colors.white,
                 shape: BoxShape.circle,
               ),
               child: const Center(
                 child: Padding(
-                  padding: EdgeInsets.only(left: 2),
+                  padding: EdgeInsets.only(left: 3),
                   child: Icon(
                     Icons.play_arrow_rounded,
-                    size: 26,
-                    color: _orangeStart,
+                    size: 30,
+                    color: _greenStart,
                   ),
                 ),
               ),
@@ -442,7 +462,77 @@ class HomeScreen extends StatelessWidget {
   }
 
   // ---------------------------------------------------------------------------
-  // 3. BADGE MILESTONE — progress toward next badge
+  // 3. DAILY PROGRESS RING
+  // ---------------------------------------------------------------------------
+
+  Widget _buildDailyProgress(KiwiTier tier) {
+    final progress = dailyGoal > 0
+        ? (dailyProgress / dailyGoal).clamp(0.0, 1.0)
+        : 0.0;
+    final remaining = (dailyGoal - dailyProgress).clamp(0, dailyGoal);
+
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
+      decoration: BoxDecoration(
+        color: tier.colors.cardBg,
+        borderRadius: BorderRadius.circular(14),
+        border: Border.all(color: Colors.grey.withOpacity(0.1)),
+      ),
+      child: Row(
+        children: [
+          // Mini progress ring
+          SizedBox(
+            width: 36,
+            height: 36,
+            child: Stack(
+              children: [
+                CircularProgressIndicator(
+                  value: progress,
+                  strokeWidth: 4,
+                  backgroundColor: Colors.grey.shade200,
+                  valueColor: const AlwaysStoppedAnimation<Color>(_greenStart),
+                ),
+                Center(
+                  child: Text(
+                    '\u{1F3AF}',
+                    style: const TextStyle(fontSize: 14),
+                  ),
+                ),
+              ],
+            ),
+          ),
+          const SizedBox(width: 12),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  remaining > 0
+                      ? '$remaining more to hit today\'s goal!'
+                      : 'Daily goal complete!',
+                  style: TextStyle(
+                    fontSize: 12,
+                    fontWeight: FontWeight.w600,
+                    color: tier.colors.textPrimary,
+                  ),
+                ),
+                Text(
+                  '$dailyProgress / $dailyGoal questions',
+                  style: TextStyle(
+                    fontSize: 10,
+                    color: tier.colors.textMuted,
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  // ---------------------------------------------------------------------------
+  // 4. BADGE MILESTONE
   // ---------------------------------------------------------------------------
 
   Widget _buildBadgeMilestone(KiwiTier tier) {
@@ -458,7 +548,6 @@ class HomeScreen extends StatelessWidget {
       ),
       child: Row(
         children: [
-          // Star icon
           Container(
             width: 28,
             height: 28,
@@ -471,11 +560,10 @@ class HomeScreen extends StatelessWidget {
               shape: BoxShape.circle,
             ),
             child: const Center(
-              child: Text('⭐', style: TextStyle(fontSize: 12)),
+              child: Text('\u{2B50}', style: TextStyle(fontSize: 12)),
             ),
           ),
           const SizedBox(width: 10),
-          // Badge name + progress bar
           Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -521,16 +609,14 @@ class HomeScreen extends StatelessWidget {
   }
 
   // ---------------------------------------------------------------------------
-  // 4. TOPIC LIST
+  // 5. TOPIC LIST — always adaptive topics, never chapters
   // ---------------------------------------------------------------------------
 
   Widget _buildTopicSectionHeader(KiwiTier tier) {
-    final isLoading = _hasCurriculum ? chaptersLoading : topicsV2Loading;
-    final label = _hasCurriculum ? 'CHAPTERS' : 'TOPICS';
     return Row(
       children: [
         Text(
-          label,
+          'TOPICS',
           style: TextStyle(
             fontSize: 11,
             fontWeight: FontWeight.w600,
@@ -538,7 +624,7 @@ class HomeScreen extends StatelessWidget {
             color: tier.colors.textMuted,
           ),
         ),
-        if (isLoading) ...[
+        if (topicsV2Loading) ...[
           const SizedBox(width: 8),
           SizedBox(
             width: 12,
@@ -554,130 +640,6 @@ class HomeScreen extends StatelessWidget {
   }
 
   Widget _buildTopicList(BuildContext context, KiwiTier tier) {
-    // Curriculum users see chapters; Olympiad users see topics
-    if (_hasCurriculum) {
-      return _buildChapterList(context, tier);
-    }
-    return _buildOlympiadTopicList(context, tier);
-  }
-
-  Widget _buildChapterList(BuildContext context, KiwiTier tier) {
-    if (chaptersLoading && (chapters == null || chapters!.isEmpty)) {
-      return const Center(
-        child: Padding(
-          padding: EdgeInsets.all(20),
-          child: CircularProgressIndicator(),
-        ),
-      );
-    }
-
-    if (chapters == null || chapters!.isEmpty) {
-      return Container(
-        width: double.infinity,
-        padding: const EdgeInsets.all(16),
-        decoration: BoxDecoration(
-          color: tier.colors.cardBg,
-          borderRadius: BorderRadius.circular(12),
-          border: Border.all(color: Colors.grey.withOpacity(0.15)),
-        ),
-        child: Text(
-          'No chapters available yet for ${curriculum?.toUpperCase() ?? ""} Grade $selectedGrade.',
-          style: TextStyle(fontSize: 12, color: tier.colors.textMuted),
-        ),
-      );
-    }
-
-    final chapterColors = [
-      const Color(0xFF2E7D32),
-      const Color(0xFF1565C0),
-      const Color(0xFF6A1B9A),
-      const Color(0xFFFF6D00),
-      const Color(0xFFC62828),
-      const Color(0xFF00838F),
-      const Color(0xFF4527A0),
-      const Color(0xFF2E7D32),
-      const Color(0xFF1565C0),
-      const Color(0xFF6A1B9A),
-      const Color(0xFFFF6D00),
-      const Color(0xFFC62828),
-      const Color(0xFF00838F),
-    ];
-
-    return Column(
-      children: chapters!.asMap().entries.map((entry) {
-        final idx = entry.key;
-        final ch = entry.value;
-        final name = ch['name'] as String? ?? 'Chapter ${idx + 1}';
-        final questionCount = ch['question_count'] as int? ?? 0;
-        final accent = chapterColors[idx % chapterColors.length];
-
-        return Padding(
-          padding: const EdgeInsets.only(bottom: 6),
-          child: GestureDetector(
-            onTap: () => onTopicTap(ch['id'] as String? ?? '', name),
-            child: Container(
-              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
-              decoration: BoxDecoration(
-                color: tier.colors.cardBg,
-                borderRadius: BorderRadius.circular(12),
-                border: Border.all(color: accent.withOpacity(0.12)),
-              ),
-              child: Row(
-                children: [
-                  // Chapter number badge
-                  Container(
-                    width: 30,
-                    height: 30,
-                    decoration: BoxDecoration(
-                      color: accent.withOpacity(0.1),
-                      borderRadius: BorderRadius.circular(8),
-                    ),
-                    alignment: Alignment.center,
-                    child: Text(
-                      '${idx + 1}',
-                      style: TextStyle(
-                        fontSize: 13,
-                        fontWeight: FontWeight.w800,
-                        color: accent,
-                      ),
-                    ),
-                  ),
-                  const SizedBox(width: 10),
-                  // Chapter name
-                  Expanded(
-                    child: Text(
-                      name,
-                      style: TextStyle(
-                        fontSize: 13,
-                        fontWeight: FontWeight.w600,
-                        color: tier.colors.textPrimary,
-                      ),
-                      maxLines: 1,
-                      overflow: TextOverflow.ellipsis,
-                    ),
-                  ),
-                  // Question count
-                  Text(
-                    '$questionCount Qs',
-                    style: TextStyle(
-                      fontSize: 11,
-                      fontWeight: FontWeight.w500,
-                      color: accent.withOpacity(0.7),
-                    ),
-                  ),
-                  const SizedBox(width: 4),
-                  Icon(Icons.chevron_right_rounded,
-                      size: 18, color: accent.withOpacity(0.4)),
-                ],
-              ),
-            ),
-          ),
-        );
-      }).toList(),
-    );
-  }
-
-  Widget _buildOlympiadTopicList(BuildContext context, KiwiTier tier) {
     if (topicsV2Loading && (topicsV2 == null || topicsV2!.isEmpty)) {
       return const Center(
         child: Padding(
@@ -740,7 +702,6 @@ class HomeScreen extends StatelessWidget {
         ),
         child: Row(
           children: [
-            // Topic icon
             Container(
               width: 30,
               height: 30,
@@ -750,12 +711,11 @@ class HomeScreen extends StatelessWidget {
               ),
               alignment: Alignment.center,
               child: Text(
-                isLocked ? '🔒' : emoji,
+                isLocked ? '\u{1F512}' : emoji,
                 style: const TextStyle(fontSize: 14),
               ),
             ),
             const SizedBox(width: 10),
-            // Topic name + level
             Expanded(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -785,7 +745,6 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
             const SizedBox(width: 8),
-            // Level badge (colored circle)
             if (!isLocked)
               Container(
                 width: 26,

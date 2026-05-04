@@ -1,0 +1,149 @@
+{
+  "audit_date": "2026-05-02",
+  "total_questions": 22467,
+  "hint_audit": {
+    "critical": {
+      "H5_answer_leaked_in_hint": {
+        "count": 11964,
+        "pct": "53.3%",
+        "description": "The correct answer text appears somewhere inside the hint layers. A child (or parent) reading the hint sees the answer directly.",
+        "worst_levels": "Level 1 (63%), Level 2 (61%)",
+        "fix": "Rewrite hints to guide thinking without revealing the exact answer value. Use 'think about what happens when you add the ones column' not '3+4=7'.",
+        "priority": "P0 \u2014 this defeats the purpose of hints entirely"
+      },
+      "H3_explicit_spoiler": {
+        "count": 4001,
+        "pct": "17.8%",
+        "description": "Hint literally says 'The answer is X' \u2014 most egregious spoiler pattern.",
+        "worst_levels": "Level 1 (40%), Level 2 (40%)",
+        "fix": "Delete 'The answer is...' and replace with Socratic guidance. These are the easiest to find-and-fix with a script.",
+        "priority": "P0 \u2014 fix immediately, scriptable"
+      }
+    },
+    "high": {
+      "H10_last_layer_computes_answer": {
+        "count": 2751,
+        "pct": "12.2%",
+        "description": "The final hint layer shows the full computation (e.g., '4 \u00d7 11 = 44 cm'). Per Gate 3, the last hint must leave ONE step for the child to do themselves.",
+        "fix": "Change last layer to show the setup ('4 \u00d7 11 = ?') without the result, or show a visual model.",
+        "priority": "P1"
+      }
+    },
+    "summary": {
+      "total_hint_issues": 18716,
+      "unique_questions_affected": "~15,000 (many questions have multiple hint issues)",
+      "clean_hints": "~7,500 questions have no detected hint issues"
+    }
+  },
+  "why_audit": {
+    "high": {
+      "W9_no_reinforce_micro_question": {
+        "count": 19947,
+        "pct": "88.8%",
+        "description": "The 3-R Framework requires a micro-question (R3: Reinforce) in the 'Why?' explanation \u2014 e.g., 'Can you try again with borrowing?' Only 11.2% of questions have this.",
+        "fix": "Append a micro-question to each diagnostic. Can be templated: 'What do you get if you [operation] [numbers]?'",
+        "priority": "P1 \u2014 most impactful for learning"
+      },
+      "W7_no_recontextualize": {
+        "count": 19394,
+        "pct": "86.3%",
+        "description": "R1 (Re-Contextualize) means stating the error neutrally \u2014 'You chose 36, which would be correct if...' Only 13.7% do this.",
+        "fix": "Prepend option-specific context: 'If you chose [X], you may have [misconception].'",
+        "priority": "P1"
+      },
+      "W8_no_redirect": {
+        "count": 17150,
+        "pct": "76.3%",
+        "description": "R2 (Redirect) offers a mental model \u2014 'Remember, when borrowing...' or 'Think about place value.' 23.7% have this.",
+        "fix": "Add a redirect sentence per misconception. Best done with LLM few-shot generation.",
+        "priority": "P1"
+      }
+    },
+    "medium": {
+      "W10_no_misconception_name": {
+        "count": 16654,
+        "pct": "74.1%",
+        "description": "Diagnostics don't name the specific misconception (e.g., 'subtracted smaller from larger in each column'). Many just say 'Wrong formula' without detail.",
+        "worst_levels": "Level 2 (82%), Level 4 (79%)",
+        "fix": "Map each distractor to a named misconception from the misconception taxonomy.",
+        "priority": "P2"
+      },
+      "W2_incomplete_option_coverage": {
+        "count": 2400,
+        "pct": "10.7%",
+        "description": "Fewer diagnostics than wrong options \u2014 some wrong choices have no 'Why?' explanation at all.",
+        "fix": "Generate missing diagnostics for uncovered options.",
+        "priority": "P2"
+      }
+    },
+    "summary": {
+      "questions_with_zero_3R_compliance": "~17,000 (75%)",
+      "questions_with_partial_3R": "~4,000 (18%)",
+      "questions_with_full_3R": "~1,500 (7%)"
+    }
+  },
+  "remediation_plan": {
+    "phase_1_scriptable_fixes": {
+      "timeline": "1-2 days",
+      "items": [
+        "Remove all 'The answer is X' spoiler patterns from hints (4,001 questions) \u2014 regex find-and-replace",
+        "Remove direct computation from last hint layer (2,751 questions) \u2014 truncate at '=' sign",
+        "Fix answer leaks where hint contains exact correct_answer text \u2014 rewrite hint to use conceptual language"
+      ],
+      "estimated_questions_fixed": 7500
+    },
+    "phase_2_llm_generation": {
+      "timeline": "1-2 weeks",
+      "items": [
+        "Generate 3-R compliant Why? explanations for all 22,467 questions using few-shot LLM pipeline",
+        "Template: R1='You chose {option}. This would be right if {misconception_context}.' R2='Remember: {mental_model}.' R3='Can you try: {micro_question}?'",
+        "Generate named misconception IDs for all 16,654 questions missing them",
+        "Fill missing diagnostic coverage (2,400 questions with incomplete options)"
+      ],
+      "estimated_questions_fixed": 22467
+    },
+    "phase_3_hint_rewrite": {
+      "timeline": "2-3 weeks",
+      "items": [
+        "Rewrite remaining ~11,964 answer-leaking hints to follow 3-Layer Scaffolding protocol",
+        "Layer 1: Cognitive nudge (concept reminder, no numbers)",
+        "Layer 2: Strategic bridge (method hint, one option fades in UI)",
+        "Layer 3: Visual scaffolding or worked example (50/50 in UI), but leave final step to child",
+        "LLM few-shot with quality rubric scoring (\u22654 average across layers)"
+      ],
+      "estimated_questions_fixed": 15000
+    }
+  },
+  "level_breakdown": {
+    "Level_1_Explorer": {
+      "total": 4301,
+      "answer_leaked_pct": "63%",
+      "no_micro_question_pct": "91%"
+    },
+    "Level_2_Builder": {
+      "total": 4385,
+      "answer_leaked_pct": "61%",
+      "no_micro_question_pct": "88%"
+    },
+    "Level_3_Thinker": {
+      "total": 4619,
+      "answer_leaked_pct": "43%",
+      "no_micro_question_pct": "88%"
+    },
+    "Level_4_Solver": {
+      "total": 4527,
+      "answer_leaked_pct": "41%",
+      "no_micro_question_pct": "88%"
+    },
+    "Level_5_Strategist": {
+      "total": 2497,
+      "answer_leaked_pct": "33%",
+      "no_micro_question_pct": "89%"
+    },
+    "Level_6_Master": {
+      "total": 2138,
+      "answer_leaked_pct": "32%",
+      "no_micro_question_pct": "89%"
+    }
+  }
+}

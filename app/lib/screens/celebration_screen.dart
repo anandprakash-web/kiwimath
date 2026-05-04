@@ -4,24 +4,34 @@ import '../services/companion_service.dart';
 import '../theme/kiwi_theme.dart';
 import '../widgets/companion_view.dart';
 
+/// Celebration screen — v7.0 simplified, meaningful.
+///
+/// Shows:
+///   1. Kiwi character reaction (happy/proud based on score)
+///   2. Big score display (e.g. "8/10")
+///   3. One progress insight ("You moved up in Arithmetic!")
+///   4. Gentle practice-days note ("You practiced 3 days this week!")
+///   5. Play-again / back-to-home buttons
+///
+/// Removed: coins, gems, XP, persona badges — too much clutter,
+/// no meaning to kids about their actual progress.
 class CelebrationScreen extends StatefulWidget {
-  final int xpEarned;
-  final int coinsEarned;
-  final int gemsEarned;
-  final int currentStreak;
+  final int xpEarned;          // kept internally for backend, not displayed
+  final int coinsEarned;       // kept internally for backend, not displayed
+  final int gemsEarned;        // kept internally for backend, not displayed
+  final int currentStreak;     // reframed as "practice days this week"
   final int dailyRemaining;
   final bool fromStepDown;
   final VoidCallback onContinue;
   final int? correctCount;
   final int? totalQuestions;
-  // Hero's Formula bonuses
-  final int? comebackBonus;
-  final int? improvementBonus;
-  // Learner persona
-  final String? personaName;
+  final int? comebackBonus;    // kept for backend, not displayed
+  final int? improvementBonus; // kept for backend, not displayed
+  final String? personaName;   // kept for backend, not displayed
   final String? personaEmoji;
-  // Companion
   final CompanionService? companionService;
+  // v6: progress insight message
+  final String? progressInsight;
 
   const CelebrationScreen({
     super.key,
@@ -39,6 +49,7 @@ class CelebrationScreen extends StatefulWidget {
     this.personaName,
     this.personaEmoji,
     this.companionService,
+    this.progressInsight,
   });
 
   @override
@@ -47,67 +58,76 @@ class CelebrationScreen extends StatefulWidget {
 
 class _CelebrationScreenState extends State<CelebrationScreen>
     with SingleTickerProviderStateMixin {
-  bool _showIcon = false;
-  bool _showXP = false;
-  bool _showBonuses = false;
+  bool _showContent = false;
 
-  late final AnimationController _iconController;
-  late final Animation<double> _iconScale;
+  late final AnimationController _bounceCtrl;
+  late final Animation<double> _bounceScale;
 
   @override
   void initState() {
     super.initState();
 
-    _iconController = AnimationController(
+    _bounceCtrl = AnimationController(
       vsync: this,
       duration: const Duration(milliseconds: 600),
     );
-    _iconScale = CurvedAnimation(
-      parent: _iconController,
+    _bounceScale = CurvedAnimation(
+      parent: _bounceCtrl,
       curve: Curves.elasticOut,
     );
 
     Future.microtask(() {
-      setState(() => _showIcon = true);
-      _iconController.forward();
+      _bounceCtrl.forward();
     });
 
-    Future.delayed(const Duration(milliseconds: 300), () {
-      if (mounted) setState(() => _showXP = true);
-    });
-
-    // Show bonuses after the main card
-    Future.delayed(const Duration(milliseconds: 700), () {
-      if (mounted) setState(() => _showBonuses = true);
+    Future.delayed(const Duration(milliseconds: 400), () {
+      if (mounted) setState(() => _showContent = true);
     });
   }
 
   @override
   void dispose() {
-    _iconController.dispose();
+    _bounceCtrl.dispose();
     super.dispose();
   }
 
-  bool get _hasHeroBonus =>
-      (widget.comebackBonus != null && widget.comebackBonus! > 0) ||
-      (widget.improvementBonus != null && widget.improvementBonus! > 0);
+  double get _scoreRatio {
+    if (widget.correctCount == null || widget.totalQuestions == null) return 0.5;
+    if (widget.totalQuestions == 0) return 0.5;
+    return widget.correctCount! / widget.totalQuestions!;
+  }
+
+  String get _kiwiReaction {
+    if (_scoreRatio >= 0.9) return '\u{1F929}';  // star-struck
+    if (_scoreRatio >= 0.7) return '\u{1F60A}';  // happy
+    if (_scoreRatio >= 0.5) return '\u{1F44D}';  // thumbs up
+    return '\u{1F4AA}';                           // flexed bicep (keep trying!)
+  }
+
+  String get _encouragement {
+    if (widget.fromStepDown) return 'You broke it into steps and solved it. That\'s real math thinking!';
+    if (_scoreRatio >= 0.9) return 'Amazing! You\'re on fire!';
+    if (_scoreRatio >= 0.7) return 'Great work! You\'re getting stronger!';
+    if (_scoreRatio >= 0.5) return 'Good effort! Keep practicing!';
+    return 'Every question makes you better. Let\'s keep going!';
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: KiwiColors.cream,
       body: Container(
         width: double.infinity,
         height: double.infinity,
         decoration: const BoxDecoration(
           gradient: LinearGradient(
-            begin: Alignment.topLeft,
-            end: Alignment.bottomRight,
-            stops: [0.0, 0.35, 0.7, 1.0],
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+            stops: [0.0, 0.5, 1.0],
             colors: [
-              Color(0xFFE8F5E9),
-              Color(0xFFB9F6CA),
-              Color(0xFF69F0AE),
-              Color(0xFF00E676),
+              Color(0xFFFFF3E0),  // Warm orange mist
+              Color(0xFFFFF8F0),  // Warm cream
+              Color(0xFFFFF8F0),  // Warm cream
             ],
           ),
         ),
@@ -116,396 +136,206 @@ class _CelebrationScreenState extends State<CelebrationScreen>
             children: [
               const Spacer(flex: 2),
 
-              // 1. Animated icon / companion
+              // 1. Kiwi character or companion
               ScaleTransition(
-                scale: _iconScale,
+                scale: _bounceScale,
                 child: widget.companionService != null &&
                         widget.companionService!.isLoaded
                     ? CompanionView(
                         surface: CompanionSurface.gradeCeremony,
                         config: widget.companionService!.config!,
-                        size: 80,
+                        size: 100,
                       )
-                    : Icon(
-                        widget.fromStepDown ? Icons.star : Icons.celebration,
-                        size: 72,
-                        color: KiwiColors.gemGold,
-                      ),
-              ),
-
-              const SizedBox(height: 20),
-
-              // 2. Title
-              Text(
-                widget.fromStepDown ? 'You figured it out!' : 'Session complete!',
-                textAlign: TextAlign.center,
-                style: const TextStyle(
-                  fontSize: 24,
-                  fontWeight: FontWeight.w800,
-                  color: KiwiColors.kiwiGreenDark,
-                ),
-              ),
-
-              const SizedBox(height: 10),
-
-              // 3. Subtitle
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 36),
-                child: Text(
-                  widget.fromStepDown
-                      ? 'You broke the problem into steps and solved each one. That\'s real mathematical thinking!'
-                      : 'Great effort! Every question makes you stronger.',
-                  textAlign: TextAlign.center,
-                  style: const TextStyle(
-                    fontSize: 14,
-                    color: Color(0xFF558B2F),
-                    height: 1.5,
-                  ),
-                ),
-              ),
-
-              // 3b. Score display
-              if (widget.correctCount != null && widget.totalQuestions != null) ...[
-                const SizedBox(height: 16),
-                Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-                  decoration: BoxDecoration(
-                    color: Colors.white.withOpacity(0.7),
-                    borderRadius: BorderRadius.circular(14),
-                  ),
-                  child: Row(
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      const Icon(Icons.emoji_events, size: 20, color: KiwiColors.gemGold),
-                      const SizedBox(width: 8),
-                      Text(
-                        '${widget.correctCount}/${widget.totalQuestions} correct',
-                        style: const TextStyle(
-                          fontSize: 16,
-                          fontWeight: FontWeight.w700,
-                          color: KiwiColors.kiwiGreenDark,
+                    : Container(
+                        width: 100,
+                        height: 100,
+                        decoration: const BoxDecoration(
+                          color: KiwiColors.kiwiPrimaryLight,
+                          shape: BoxShape.circle,
+                        ),
+                        child: Center(
+                          child: Text(
+                            _kiwiReaction,
+                            style: const TextStyle(fontSize: 52),
+                          ),
                         ),
                       ),
-                    ],
-                  ),
-                ),
-              ],
+              ),
 
-              const SizedBox(height: 20),
+              const SizedBox(height: 24),
 
-              // 4. Rewards Card (animated entrance) — now with dual currency
+              // 2. Big score
               AnimatedOpacity(
-                opacity: _showXP ? 1.0 : 0.0,
+                opacity: _showContent ? 1.0 : 0.0,
                 duration: const Duration(milliseconds: 500),
-                curve: Curves.easeOut,
-                child: AnimatedContainer(
-                  duration: const Duration(milliseconds: 500),
-                  curve: Curves.elasticOut,
-                  transform: Matrix4.translationValues(0, _showXP ? 0 : 30, 0),
-                  margin: const EdgeInsets.symmetric(horizontal: 28),
-                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 22),
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(18),
-                    boxShadow: [
-                      BoxShadow(
-                        color: Colors.black.withValues(alpha: 0.08),
-                        blurRadius: 16,
-                        offset: const Offset(0, 4),
-                      ),
-                    ],
-                  ),
-                  child: Row(
-                    children: [
-                      // Kiwi Coins
-                      Expanded(
-                        child: _StatColumn(
-                          value: '+${widget.coinsEarned}',
-                          valueColor: KiwiColors.gemGold,
-                          label: 'Coins',
-                          icon: '\u{1FA99}',
+                child: Column(
+                  children: [
+                    if (widget.correctCount != null && widget.totalQuestions != null)
+                      Text(
+                        '${widget.correctCount}/${widget.totalQuestions}',
+                        style: const TextStyle(
+                          fontSize: 56,
+                          fontWeight: FontWeight.w900,
+                          color: KiwiColors.kiwiPrimaryDark,
+                          height: 1.0,
                         ),
                       ),
-                      _verticalDivider(),
-                      // Mastery Gems
-                      Expanded(
-                        child: _StatColumn(
-                          value: '+${widget.gemsEarned}',
-                          valueColor: KiwiColors.gemBlue,
-                          label: 'Gems',
-                          icon: '\u{1F48E}',
+                    const SizedBox(height: 6),
+                    Text(
+                      widget.fromStepDown ? 'You figured it out!' : 'Session complete!',
+                      style: const TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.w700,
+                        color: KiwiColors.kiwiPrimaryDark,
+                      ),
+                    ),
+                    const SizedBox(height: 8),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 40),
+                      child: Text(
+                        _encouragement,
+                        textAlign: TextAlign.center,
+                        style: const TextStyle(
+                          fontSize: 14,
+                          color: KiwiColors.textMid,
+                          height: 1.4,
                         ),
                       ),
-                      _verticalDivider(),
-                      // XP
-                      Expanded(
-                        child: _StatColumn(
-                          value: '+${widget.xpEarned}',
-                          valueColor: KiwiColors.xpPurple,
-                          label: 'XP',
-                          icon: '\u26A1',
-                        ),
-                      ),
-                      _verticalDivider(),
-                      // Streak
-                      Expanded(
-                        child: Column(
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            Row(
-                              mainAxisSize: MainAxisSize.min,
-                              children: [
-                                const Icon(
-                                  Icons.local_fire_department,
-                                  size: 22,
-                                  color: KiwiColors.streakOrange,
-                                ),
-                                const SizedBox(width: 2),
-                                Text(
-                                  '${widget.currentStreak}',
-                                  style: const TextStyle(
-                                    fontSize: 22,
-                                    fontWeight: FontWeight.w800,
-                                    color: KiwiColors.streakOrange,
-                                  ),
-                                ),
-                              ],
-                            ),
-                            const SizedBox(height: 4),
-                            Text(
-                              '${widget.currentStreak} days!',
-                              style: const TextStyle(
-                                fontSize: 10,
-                                color: KiwiColors.textMuted,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ],
-                  ),
+                    ),
+                  ],
                 ),
               ),
 
-              // 4b. Hero's Formula bonus callouts
-              if (_hasHeroBonus) ...[
-                const SizedBox(height: 10),
+              const SizedBox(height: 24),
+
+              // 3. One progress insight (if available)
+              if (widget.progressInsight != null)
                 AnimatedOpacity(
-                  opacity: _showBonuses ? 1.0 : 0.0,
-                  duration: const Duration(milliseconds: 400),
-                  child: Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 28),
-                    child: Column(
-                      children: [
-                        if (widget.comebackBonus != null && widget.comebackBonus! > 0)
-                          _bonusPill(
-                            '\u{1F9B8}',
-                            'Comeback Bonus!',
-                            '+${widget.comebackBonus} coins',
-                            const Color(0xFFFF6D00),
-                          ),
-                        if (widget.improvementBonus != null && widget.improvementBonus! > 0)
-                          _bonusPill(
-                            '\u{1F4C8}',
-                            'Improvement Bonus!',
-                            '+${widget.improvementBonus} coins',
-                            const Color(0xFF00C853),
-                          ),
-                      ],
-                    ),
-                  ),
-                ),
-              ],
-
-              // 4c. Learner persona badge
-              if (widget.personaName != null) ...[
-                const SizedBox(height: 10),
-                AnimatedOpacity(
-                  opacity: _showBonuses ? 1.0 : 0.0,
-                  duration: const Duration(milliseconds: 400),
+                  opacity: _showContent ? 1.0 : 0.0,
+                  duration: const Duration(milliseconds: 600),
                   child: Container(
-                    margin: const EdgeInsets.symmetric(horizontal: 28),
-                    padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
-                    decoration: BoxDecoration(
-                      gradient: const LinearGradient(
-                        colors: [Color(0xFFAA00FF), Color(0xFF7C4DFF)],
-                      ),
-                      borderRadius: BorderRadius.circular(20),
-                      boxShadow: [
-                        BoxShadow(
-                          color: const Color(0xFFAA00FF).withOpacity(0.3),
-                          blurRadius: 8,
-                          offset: const Offset(0, 2),
-                        ),
-                      ],
-                    ),
-                    child: Row(
-                      mainAxisSize: MainAxisSize.min,
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Text(
-                          widget.personaEmoji ?? '\u{1F31F}',
-                          style: const TextStyle(fontSize: 16),
-                        ),
-                        const SizedBox(width: 6),
-                        Text(
-                          widget.personaName!,
-                          style: const TextStyle(
-                            fontSize: 12,
-                            fontWeight: FontWeight.w700,
-                            color: Colors.white,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-              ],
-
-              const SizedBox(height: 16),
-
-              // 5. Daily goal nudge
-              if (widget.dailyRemaining > 0)
-                Container(
-                  margin: const EdgeInsets.symmetric(horizontal: 28),
-                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
-                  decoration: BoxDecoration(
-                    color: Colors.white.withValues(alpha: 0.7),
-                    borderRadius: BorderRadius.circular(12),
-                  ),
-                  child: Text(
-                    '\u{1F3C6} ${widget.dailyRemaining} more questions to finish today\'s goal!',
-                    textAlign: TextAlign.center,
-                    style: const TextStyle(
-                      fontSize: 12,
-                      color: Color(0xFF558B2F),
-                    ),
-                  ),
-                ),
-
-              const Spacer(flex: 3),
-
-              // 6. Bottom button
-              Padding(
-                padding: const EdgeInsets.fromLTRB(28, 0, 28, 16),
-                child: GestureDetector(
-                  onTap: widget.onContinue,
-                  child: Container(
-                    width: double.infinity,
-                    padding: const EdgeInsets.symmetric(vertical: 14),
+                    margin: const EdgeInsets.symmetric(horizontal: 32),
+                    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
                     decoration: BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(14),
-                      boxShadow: [
-                        BoxShadow(
-                          color: Colors.black.withValues(alpha: 0.08),
-                          blurRadius: 12,
-                          offset: const Offset(0, 3),
+                      border: Border.all(color: KiwiColors.kiwiPrimary.withOpacity(0.2)),
+                    ),
+                    child: Row(
+                      children: [
+                        const Text('\u{1F4C8}', style: TextStyle(fontSize: 20)),
+                        const SizedBox(width: 10),
+                        Expanded(
+                          child: Text(
+                            widget.progressInsight!,
+                            style: const TextStyle(
+                              fontSize: 13,
+                              fontWeight: FontWeight.w600,
+                              color: KiwiColors.kiwiPrimaryDark,
+                            ),
+                          ),
                         ),
                       ],
                     ),
-                    child: const Text(
-                      'Back to home \u2192',
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        fontSize: 15,
-                        fontWeight: FontWeight.w700,
-                        color: KiwiColors.kiwiGreenDark,
-                      ),
+                  ),
+                ),
+
+              const SizedBox(height: 14),
+
+              // 4. Gentle practice-days note
+              AnimatedOpacity(
+                opacity: _showContent ? 1.0 : 0.0,
+                duration: const Duration(milliseconds: 700),
+                child: Text(
+                  'You practiced ${widget.currentStreak} days this week!',
+                  style: const TextStyle(
+                    fontSize: 12,
+                    color: KiwiColors.textMuted,
+                  ),
+                ),
+              ),
+
+              // 5. Daily goal nudge (gentle)
+              if (widget.dailyRemaining > 0) ...[
+                const SizedBox(height: 6),
+                AnimatedOpacity(
+                  opacity: _showContent ? 1.0 : 0.0,
+                  duration: const Duration(milliseconds: 700),
+                  child: Text(
+                    '${widget.dailyRemaining} more to finish today\'s goal',
+                    style: const TextStyle(
+                      fontSize: 12,
+                      color: KiwiColors.textMuted,
                     ),
                   ),
+                ),
+              ],
+
+              const Spacer(flex: 3),
+
+              // 6. Action buttons
+              Padding(
+                padding: const EdgeInsets.fromLTRB(28, 0, 28, 16),
+                child: Column(
+                  children: [
+                    // Play again (primary — if daily goal not yet done)
+                    if (widget.dailyRemaining > 0)
+                      GestureDetector(
+                        onTap: widget.onContinue,
+                        child: Container(
+                          width: double.infinity,
+                          padding: const EdgeInsets.symmetric(vertical: 16),
+                          decoration: BoxDecoration(
+                            color: KiwiColors.kiwiPrimary,
+                            borderRadius: BorderRadius.circular(14),
+                          ),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              const Icon(Icons.play_arrow_rounded, color: Colors.white, size: 22),
+                              const SizedBox(width: 6),
+                              const Text(
+                                'Keep practicing',
+                                style: TextStyle(
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w700,
+                                  color: Colors.white,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    if (widget.dailyRemaining > 0) const SizedBox(height: 10),
+                    // Back to home (secondary)
+                    GestureDetector(
+                      onTap: widget.onContinue,
+                      child: Container(
+                        width: double.infinity,
+                        padding: const EdgeInsets.symmetric(vertical: 14),
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(14),
+                          border: Border.all(color: Colors.black12),
+                        ),
+                        child: const Text(
+                          'Back to home',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            fontSize: 14,
+                            fontWeight: FontWeight.w600,
+                            color: KiwiColors.kiwiPrimaryDark,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
                 ),
               ),
             ],
           ),
         ),
       ),
-    );
-  }
-
-  Widget _bonusPill(String emoji, String title, String amount, Color color) {
-    return Container(
-      margin: const EdgeInsets.only(bottom: 6),
-      padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
-      decoration: BoxDecoration(
-        color: color.withOpacity(0.12),
-        borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: color.withOpacity(0.3), width: 1),
-      ),
-      child: Row(
-        children: [
-          Text(emoji, style: const TextStyle(fontSize: 18)),
-          const SizedBox(width: 8),
-          Text(
-            title,
-            style: TextStyle(
-              fontSize: 13,
-              fontWeight: FontWeight.w700,
-              color: color,
-            ),
-          ),
-          const Spacer(),
-          Text(
-            amount,
-            style: TextStyle(
-              fontSize: 13,
-              fontWeight: FontWeight.w800,
-              color: color,
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-
-  Widget _verticalDivider() {
-    return Container(
-      width: 1,
-      height: 40,
-      color: Colors.grey.withValues(alpha: 0.2),
-    );
-  }
-}
-
-class _StatColumn extends StatelessWidget {
-  final String value;
-  final Color valueColor;
-  final String label;
-  final String? icon;
-
-  const _StatColumn({
-    required this.value,
-    required this.valueColor,
-    required this.label,
-    this.icon,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      mainAxisSize: MainAxisSize.min,
-      children: [
-        if (icon != null) ...[
-          Text(icon!, style: const TextStyle(fontSize: 16)),
-          const SizedBox(height: 2),
-        ],
-        Text(
-          value,
-          style: TextStyle(
-            fontSize: 20,
-            fontWeight: FontWeight.w800,
-            color: valueColor,
-          ),
-        ),
-        const SizedBox(height: 4),
-        Text(
-          label,
-          style: const TextStyle(
-            fontSize: 10,
-            color: KiwiColors.textMuted,
-          ),
-        ),
-      ],
     );
   }
 }

@@ -1,0 +1,68 @@
+{
+  "india": {
+    "currency": "₹",
+    "currency_name": "rupees",
+    "names": [
+      "Aarav",
+      "Priya",
+      "Arjun",
+      "Diya",
+      "Rohan",
+      "Ananya",
+      "Vihaan",
+      "Isha"
+    ],
+    "objects": [
+      "mangoes",
+      "rotis",
+      "sweets",
+      "bangles",
+      "diyas"
+    ],
+    "units": "km/kg/L"
+  },
+  "singapore": {
+    "currency": "$",
+    "currency_name": "dollars",
+    "names": [
+      "Wei",
+      "Mei",
+      "Jun",
+      "Ling",
+      "Hao",
+      "Xin",
+      "Kai",
+      "Yan"
+    ],
+    "objects": [
+      "durians",
+      "mooncakes",
+      "orchids",
+      "kites",
+      "lanterns"
+    ],
+    "units": "km/kg/L"
+  },
+  "us": {
+    "currency": "$",
+    "currency_name": "dollars",
+    "names": [
+      "Alex",
+      "Emma",
+      "Liam",
+      "Sophia",
+      "Noah",
+      "Olivia",
+      "James",
+      "Mia"
+    ],
+    "objects": [
+      "apples",
+      "cookies",
+      "stickers",
+      "marbles",
+      "crayons"
+    ],
+    "units": "mi/lb/gal"
+  }
+}

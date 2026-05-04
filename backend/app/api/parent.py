@@ -22,6 +22,11 @@ from pydantic import BaseModel, Field
 from app.services.adaptive_engine_v2 import engine_v2
 from app.services.content_store_v2 import store_v2
 from app.services.gamification import gamification
+from app.services.proficiency_levels import (
+    proficiency_store, get_proficiency_for_display, theta_to_scale_score,
+    CompetencyProfile,
+)
+from app.services.benchmark_test import benchmark_service
 
 router = APIRouter(prefix="/v2/parent", tags=["v2-parent"])
 
@@ -53,6 +58,32 @@ class RecentActivity(BaseModel):
     timestamp: str
 
 
+class ProficiencyInfo(BaseModel):
+    level: int
+    name: str
+    emoji: str
+    color: str
+    scale_score: int
+    description: str
+    progress_in_level: int     # 0-100%
+    next_level_name: Optional[str] = None
+    can_do: List[str] = []
+    next_steps: List[str] = []
+
+
+class CompetencyBreakdown(BaseModel):
+    knowing: Dict[str, Any] = {}
+    applying: Dict[str, Any] = {}
+    reasoning: Dict[str, Any] = {}
+
+
+class GrowthInfo(BaseModel):
+    has_growth_data: bool = False
+    scale_score_change: int = 0
+    trajectory: str = "steady"   # improving / steady / declining
+    message: str = ""
+
+
 class ParentDashboardResponse(BaseModel):
     user_id: str
     generated_at: str
@@ -67,6 +98,10 @@ class ParentDashboardResponse(BaseModel):
     xp: int
     kiwi_coins: int
     mastery_gems: int
+    # Proficiency (NEW — from Vedantu LO)
+    proficiency: Optional[ProficiencyInfo] = None
+    competency_breakdown: Optional[CompetencyBreakdown] = None
+    growth: Optional[GrowthInfo] = None
     # Per-topic
     topics: List[TopicProgress]
     strengths: List[str]               # topic ids where child is strongest
@@ -265,6 +300,51 @@ def get_parent_dashboard(
     recent.sort(key=lambda r: r.timestamp, reverse=True)
     recent = recent[:10]
 
+    # ── Proficiency level from IRT theta ────────────────────────────
+    # Compute average theta across practiced topics
+    weighted_theta = 0.0
+    theta_weight = 0
+    for topic in relevant_topics:
+        ability = engine_v2.get_ability(user_id, topic.topic_id)
+        if ability.attempts > 0:
+            approx_theta = ability.difficulty_score / 33.33 - 1.5
+            weighted_theta += approx_theta * ability.attempts
+            theta_weight += ability.attempts
+    avg_theta = weighted_theta / max(1, theta_weight)
+
+    # Get grade from curriculum param (default grade 3)
+    student_grade = 3
+    prof_display = get_proficiency_for_display(avg_theta, student_grade)
+    proficiency_info = ProficiencyInfo(
+        level=prof_display["level"],
+        name=prof_display["name"],
+        emoji=prof_display["emoji"],
+        color=prof_display["color"],
+        scale_score=prof_display["scale_score"],
+        description=prof_display["description"],
+        progress_in_level=prof_display["progress_in_level"],
+        next_level_name=prof_display.get("next_level_name"),
+        can_do=prof_display.get("can_do", []),
+        next_steps=prof_display.get("next_steps", []),
+    )
+
+    # ── Competency breakdown ──────────────────────────────────────────
+    prof_data = proficiency_store.get_proficiency(user_id, student_grade)
+    comp_data = prof_data.get("competency_profile", CompetencyProfile().to_dict())
+    if isinstance(comp_data, dict) and "knowing" in comp_data:
+        competency_breakdown = CompetencyBreakdown(**comp_data)
+    else:
+        competency_breakdown = CompetencyBreakdown()
+
+    # ── Growth tracking ───────────────────────────────────────────────
+    growth_data = proficiency_store.get_growth_data(user_id)
+    growth_info = GrowthInfo(
+        has_growth_data=growth_data.get("has_growth_data", False),
+        scale_score_change=growth_data.get("scale_score_change", 0),
+        trajectory=growth_data.get("trajectory", "steady"),
+        message=growth_data.get("message", ""),
+    )
+
     return ParentDashboardResponse(
         user_id=user_id,
         generated_at=datetime.now(timezone.utc).isoformat(),
@@ -278,6 +358,9 @@ def get_parent_dashboard(
         xp=xp,
         kiwi_coins=coins,
         mastery_gems=gems,
+        proficiency=proficiency_info,
+        competency_breakdown=competency_breakdown,
+        growth=growth_info,
         topics=topic_progress,
         strengths=strengths,
         needs_practice=needs_practice,

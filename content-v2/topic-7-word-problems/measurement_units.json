@@ -14,9 +14,10 @@
     "visual_svg": null,
     "visual_alt": null,
     "diagnostics": {
-      "0": "Both counted correctly. The units are different sizes.",
-      "1": "The desk stayed the same. The measuring units differ in size.",
-      "3": "If crayons were shorter, you'd need MORE crayons, not fewer. Fewer crayons means each crayon is longer."
+      "0": "Read the question carefully. What is it really asking? 'How many left' = subtract. 'How many altogether' = add.",
+      "1": "The problem gives you several numbers. Make sure you're using the right ones for your calculation.",
+      "3": "You did the math correctly, but your answer doesn't match what the question is asking for.",
+      "correct_explanation": "The answer is Paperclips are shorter than crayons. The key is identifying what operation to use, then applying it to the right numbers from the problem."
     },
     "tags": [
       "non-standard-units",
@@ -25,129 +26,32 @@
     "topic": "word_problems",
     "topic_name": "Word Problems",
     "hint": {
-      "level_0": "Think about the size of each unit.",
-      "level_1": "Compare the lengths of the units used.",
-      "level_2": "Fewer units needed means each unit is longer.",
-      "level_3": "8 crayons vs 12 paperclips — crayons are bigger.",
-      "level_4": "Bigger unit = fewer needed to cover same length.",
-      "level_5": "12 paperclips = 8 crayons, so paperclips are shorter."
+      "level_0": "Read the whole problem first. Then ask: what are the important numbers, and what connects them?",
+      "level_1": "Circle the numbers and underline the question. What operation connects them?",
+      "level_2": "Work through the problem step by step using the numbers given: 12, 8.",
+      "level_3": "Here's the solution: The answer is Paperclips are shorter than crayons. Work through each step carefully to see why."
     },
     "concept_cluster": "measurement/non_standard",
     "visual_context": "The object being measured with the non-standard unit shown alongside for scale.",
     "interaction_mode": "multiple_choice",
     "irt_params": {
-      "a": 1.05,
-      "b": -1.35,
-      "c": 0.25
+      "a": 1.3,
+      "b": -2.8,
+      "c": 0.3
     },
-    "irt_a": 1.05,
-    "irt_b": -1.35,
-    "irt_c": 0.25,
+    "irt_a": 1.3,
+    "irt_b": -2.8,
+    "irt_c": 0.3,
     "solution_steps": [
       "Identify what's given: 12, 8",
       "Determine what's being asked"
-    ]
+    ],
+    "competency_level": "R",
+    "competency_confidence": 0.545,
+    "competency_name": "Reasoning"
   },
   {
     "id": "T7-1202",
-    "stem": "Kiwi measures a book using his hand spans. The book is 3 hand spans long. His little sister measures it and gets 4 hand spans. Why?",
-    "choices": [
-      "The book grew",
-      "Kiwi's hands are larger than his sister's",
-      "His sister counted wrong",
-      "Kiwi's hands are smaller than his sister's"
-    ],
-    "correct_answer": 1,
-    "difficulty_tier": "easy",
-    "difficulty_score": 14,
-    "visual_svg": null,
-    "visual_alt": null,
-    "diagnostics": {
-      "0": "Books don't grow. The difference is in the hand sizes.",
-      "2": "Both counted correctly. Different hand sizes give different numbers.",
-      "3": "If Kiwi's hands were smaller, he'd need MORE spans, not fewer."
-    },
-    "tags": [
-      "non-standard-units",
-      "grade-1-2"
-    ],
-    "topic": "word_problems",
-    "topic_name": "Word Problems",
-    "hint": {
-      "level_0": "Think about whose hands are bigger.",
-      "level_1": "Compare unit sizes when counts differ.",
-      "level_2": "Bigger hands = fewer spans needed.",
-      "level_3": "Kiwi needed fewer, so his hands are bigger.",
-      "level_4": "3 big spans = 4 small spans for the same book.",
-      "level_5": "Kiwi uses 3 (bigger hands), sister uses 4 (smaller)."
-    },
-    "concept_cluster": "measurement/non_standard",
-    "visual_context": "The object being measured with the non-standard unit shown alongside for scale.",
-    "interaction_mode": "multiple_choice",
-    "irt_params": {
-      "a": 1.05,
-      "b": -1.14,
-      "c": 0.25
-    },
-    "irt_a": 1.05,
-    "irt_b": -1.14,
-    "irt_c": 0.25,
-    "solution_steps": [
-      "Identify what's given: 3, 4",
-      "Determine what's being asked"
-    ]
-  },
-  {
-    "id": "T7-1203",
-    "stem": "Captain Kiwi lines up paperclips to measure a pencil. He uses 7 paperclips. Each paperclip is about 3 cm. About how long is the pencil?",
-    "choices": [
-      "10 cm",
-      "14 cm",
-      "21 cm",
-      "24 cm"
-    ],
-    "correct_answer": 2,
-    "difficulty_tier": "easy",
-    "difficulty_score": 15,
-    "visual_svg": null,
-    "visual_alt": null,
-    "diagnostics": {
-      "0": "You added 7 + 3 = 10. Multiply instead: 7 x 3.",
-      "1": "You may have used 7 x 2 = 14. Each clip is 3 cm, not 2.",
-      "3": "You may have used 8 x 3 = 24. There are 7 paperclips."
-    },
-    "tags": [
-      "non-standard-units",
-      "grade-1-2"
-    ],
-    "topic": "word_problems",
-    "topic_name": "Word Problems",
-    "hint": {
-      "level_0": "Multiply clips by length of each clip.",
-      "level_1": "Use multiplication: count x size.",
-      "level_2": "7 paperclips, each 3 cm long.",
-      "level_3": "7 x 3 = ?",
-      "level_4": "7 x 3 = 21 cm.",
-      "level_5": "7 paperclips x 3 cm each = 21 cm long."
-    },
-    "concept_cluster": "measurement/non_standard",
-    "visual_context": "The object being measured with the non-standard unit shown alongside for scale.",
-    "interaction_mode": "multiple_choice",
-    "irt_params": {
-      "a": 1.05,
-      "b": -1.04,
-      "c": 0.25
-    },
-    "irt_a": 1.05,
-    "irt_b": -1.04,
-    "irt_c": 0.25,
-    "solution_steps": [
-      "Given: 7 groups of 3 each",
-      "Operation needed: multiplication"
-    ]
-  },
-  {
-    "id": "T7-1204",
     "stem": "Kiwi measures the classroom door with his footsteps and gets 8 footsteps tall. His teacher measures it and gets 5 footsteps. Whose feet are bigger?",
     "choices": [
       "Kiwi's feet",
@@ -161,9 +65,10 @@
     "visual_svg": null,
     "visual_alt": null,
     "diagnostics": {
-      "0": "If Kiwi's feet were bigger, he'd need fewer steps, not more.",
-      "2": "Different counts for the same door means different foot sizes.",
-      "3": "We can tell: fewer steps means bigger feet."
+      "0": "Read the question carefully. What is it really asking? 'How many left' = subtract. 'How many altogether' = add.",
+      "2": "This is a two-step problem. You solved the first step correctly, but there's one more step to finish.",
+      "3": "You did the math correctly, but your answer doesn't match what the question is asking for.",
+      "correct_explanation": "The answer is Teacher's feet. The key is identifying what operation to use, then applying it to the right numbers from the problem."
     },
     "tags": [
       "non-standard-units",
@@ -172,331 +77,134 @@
     "topic": "word_problems",
     "topic_name": "Word Problems",
     "hint": {
-      "level_0": "Fewer steps means bigger feet.",
-      "level_1": "Compare counts to determine unit size.",
-      "level_2": "Same door, fewer steps = each step is longer.",
-      "level_3": "Teacher used fewer steps (5 < 8).",
-      "level_4": "5 steps covers the same door = bigger feet.",
-      "level_5": "Teacher uses only 5 steps, so teacher's feet are bigger."
+      "level_0": "Read the whole problem first. Then ask: what are the important numbers, and what connects them?",
+      "level_1": "Circle the numbers and underline the question. What operation connects them?",
+      "level_2": "Work through the problem step by step using the numbers given: 8, 5.",
+      "level_3": "Here's the solution: The answer is Teacher's feet. Work through each step carefully to see why."
     },
     "concept_cluster": "measurement/non_standard",
     "interaction_mode": "multiple_choice",
     "visual_context": "A scene illustrating the real-world situation described.",
     "irt_params": {
-      "a": 1.05,
-      "b": -1.25,
-      "c": 0.25
+      "a": 1.6,
+      "b": -2.53,
+      "c": 0.3
     },
-    "irt_a": 1.05,
-    "irt_b": -1.25,
-    "irt_c": 0.25,
+    "irt_a": 1.6,
+    "irt_b": -2.53,
+    "irt_c": 0.3,
     "solution_steps": [
       "Given: 8 groups of 5 each",
       "Operation needed: multiplication"
-    ]
+    ],
+    "competency_level": "K",
+    "competency_confidence": 1.0,
+    "competency_name": "Knowing"
+  },
+  {
+    "id": "T7-1203",
+    "stem": "Kiwi measures a book using his hand spans. The book is 3 hand spans long. His little sister measures it and gets 4 hand spans. Why?",
+    "choices": [
+      "The book grew",
+      "Kiwi's hands are larger than his sister's",
+      "His sister counted wrong",
+      "Kiwi's hands are smaller than his sister's"
+    ],
+    "correct_answer": 1,
+    "difficulty_tier": "easy",
+    "difficulty_score": 14,
+    "visual_svg": null,
+    "visual_alt": null,
+    "diagnostics": {
+      "0": "Read the question carefully. What is it really asking? 'How many left' = subtract. 'How many altogether' = add.",
+      "2": "This is a two-step problem. You solved the first step correctly, but there's one more step to finish.",
+      "3": "You did the math correctly, but your answer doesn't match what the question is asking for.",
+      "correct_explanation": "The answer is Kiwi's hands are larger than his sister's. The key is identifying what operation to use, then applying it to the right numbers from the problem."
+    },
+    "tags": [
+      "non-standard-units",
+      "grade-1-2"
+    ],
+    "topic": "word_problems",
+    "topic_name": "Word Problems",
+    "hint": {
+      "level_0": "Read the whole problem first. Then ask: what are the important numbers, and what connects them?",
+      "level_1": "Circle the numbers and underline the question. What operation connects them?",
+      "level_2": "Work through the problem step by step using the numbers given: 3, 4.",
+      "level_3": "Here's the solution: The answer is Kiwi's hands are larger than his sister's. Work through each step carefully to see why."
+    },
+    "concept_cluster": "measurement/non_standard",
+    "visual_context": "The object being measured with the non-standard unit shown alongside for scale.",
+    "interaction_mode": "multiple_choice",
+    "irt_params": {
+      "a": 1.35,
+      "b": -2.7,
+      "c": 0.3
+    },
+    "irt_a": 1.35,
+    "irt_b": -2.7,
+    "irt_c": 0.3,
+    "solution_steps": [
+      "Identify what's given: 3, 4",
+      "Determine what's being asked"
+    ],
+    "competency_level": "R",
+    "competency_confidence": 0.545,
+    "competency_name": "Reasoning"
+  },
+  {
+    "id": "T7-1204",
+    "stem": "Captain Kiwi lines up paperclips to measure a pencil. He uses 7 paperclips. Each paperclip is about 3 cm. About how long is the pencil?",
+    "choices": [
+      "10 cm",
+      "14 cm",
+      "21 cm",
+      "24 cm"
+    ],
+    "correct_answer": 2,
+    "difficulty_tier": "easy",
+    "difficulty_score": 15,
+    "visual_svg": null,
+    "visual_alt": null,
+    "diagnostics": {
+      "0": "Read the question carefully. What is it really asking? 'How many left' = subtract. 'How many altogether' = add.",
+      "1": "The problem gives you several numbers. Make sure you're using the right ones for your calculation.",
+      "3": "You did the math correctly, but your answer doesn't match what the question is asking for.",
+      "correct_explanation": "The answer is 21 cm. The key is identifying what operation to use, then applying it to the right numbers from the problem."
+    },
+    "tags": [
+      "non-standard-units",
+      "grade-1-2"
+    ],
+    "topic": "word_problems",
+    "topic_name": "Word Problems",
+    "hint": {
+      "level_0": "Before calculating, picture the situation in your head. What's happening in this story?",
+      "level_1": "Circle the numbers and underline the question. What operation connects them?",
+      "level_2": "Work through the problem step by step using the numbers given: 7, 3.",
+      "level_3": "Here's the solution: The answer is 21 cm. Work through each step carefully to see why."
+    },
+    "concept_cluster": "measurement/non_standard",
+    "visual_context": "The object being measured with the non-standard unit shown alongside for scale.",
+    "interaction_mode": "multiple_choice",
+    "irt_params": {
+      "a": 1.27,
+      "b": -2.73,
+      "c": 0.3
+    },
+    "irt_a": 1.27,
+    "irt_b": -2.73,
+    "irt_c": 0.3,
+    "solution_steps": [
+      "Given: 7 groups of 3 each",
+      "Operation needed: multiplication"
+    ],
+    "competency_level": "A",
+    "competency_confidence": 0.545,
+    "competency_name": "Applying"
   },
   {
     "id": "T7-1205",
-    "stem": "Captain Kiwi's rope is 350 cm long. How many metres is that?",
-    "choices": [
-      "3.5 m",
-      "35 m",
-      "0.35 m",
-      "350 m"
-    ],
-    "correct_answer": 0,
-    "difficulty_tier": "medium",
-    "difficulty_score": 35,
-    "visual_svg": null,
-    "visual_alt": null,
-    "diagnostics": {
-      "1": "You divided by 10 instead of 100. There are 100 cm in 1 m.",
-      "2": "You divided by 1000. 1 m = 100 cm, so divide by 100.",
-      "3": "You didn't convert at all. 1 m = 100 cm, so divide 350 by 100."
-    },
-    "tags": [
-      "unit-conversion",
-      "grade-3-4"
-    ],
-    "topic": "word_problems",
-    "topic_name": "Word Problems",
-    "hint": {
-      "level_0": "How many cm in one metre?",
-      "level_1": "Divide by the conversion factor.",
-      "level_2": "1 metre = 100 centimetres.",
-      "level_3": "350 / 100 = ?",
-      "level_4": "350 / 100 = 3.5 metres.",
-      "level_5": "350 cm / 100 = 3.5 m."
-    },
-    "concept_cluster": "measurement/unit_conversion",
-    "visual_context": "A measurement scale or ruler showing the conversion between units.",
-    "interaction_mode": "multiple_choice",
-    "irt_params": {
-      "a": 1.1,
-      "b": 1.05,
-      "c": 0.25
-    },
-    "irt_a": 1.1,
-    "irt_b": 1.05,
-    "irt_c": 0.25,
-    "solution_steps": [
-      "Identify what's given and what's asked",
-      "Choose the right operation",
-      "Set up the calculation"
-    ]
-  },
-  {
-    "id": "T7-1206",
-    "stem": "Kiwi's backpack weighs 2500 grams. How many kilograms is that?",
-    "choices": [
-      "0.25 kg",
-      "2.5 kg",
-      "25 kg",
-      "250 kg"
-    ],
-    "correct_answer": 1,
-    "difficulty_tier": "medium",
-    "difficulty_score": 38,
-    "visual_svg": null,
-    "visual_alt": null,
-    "diagnostics": {
-      "0": "You divided by 10000. There are 1000 g in 1 kg.",
-      "2": "You divided by 100. 1 kg = 1000 g, so divide by 1000.",
-      "3": "You divided by 10. 1 kg = 1000 g, so divide 2500 by 1000."
-    },
-    "tags": [
-      "unit-conversion",
-      "grade-3-4"
-    ],
-    "topic": "word_problems",
-    "topic_name": "Word Problems",
-    "hint": {
-      "level_0": "How many grams in one kilogram?",
-      "level_1": "Divide grams by 1000 to get kilograms.",
-      "level_2": "1 kg = 1000 g.",
-      "level_3": "2500 / 1000 = ?",
-      "level_4": "2500 / 1000 = 2.5 kg.",
-      "level_5": "2500 g / 1000 = 2.5 kg."
-    },
-    "concept_cluster": "measurement/unit_conversion",
-    "visual_context": "A measurement scale or ruler showing the conversion between units.",
-    "interaction_mode": "multiple_choice",
-    "irt_params": {
-      "a": 1.1,
-      "b": 1.36,
-      "c": 0.25
-    },
-    "irt_a": 1.1,
-    "irt_b": 1.36,
-    "irt_c": 0.25,
-    "solution_steps": [
-      "Identify what's given and what's asked",
-      "Choose the right operation",
-      "Set up the calculation"
-    ]
-  },
-  {
-    "id": "T7-1207",
-    "stem": "Captain Kiwi runs 3 km. How many metres did he run?",
-    "choices": [
-      "30 m",
-      "300 m",
-      "3000 m",
-      "30000 m"
-    ],
-    "correct_answer": 2,
-    "difficulty_tier": "medium",
-    "difficulty_score": 30,
-    "visual_svg": null,
-    "visual_alt": null,
-    "diagnostics": {
-      "0": "You multiplied by 10. 1 km = 1000 m, so multiply by 1000.",
-      "1": "You multiplied by 100. 1 km = 1000 m.",
-      "3": "You multiplied by 10000. 1 km = 1000 m, so 3 x 1000 = 3000."
-    },
-    "tags": [
-      "unit-conversion",
-      "grade-3-4"
-    ],
-    "topic": "word_problems",
-    "topic_name": "Word Problems",
-    "hint": {
-      "level_0": "How many metres in one kilometre?",
-      "level_1": "Multiply km by 1000 to get metres.",
-      "level_2": "1 km = 1000 m.",
-      "level_3": "3 x 1000 = ?",
-      "level_4": "3 x 1000 = 3000 metres.",
-      "level_5": "3 km x 1000 = 3000 m."
-    },
-    "concept_cluster": "measurement/unit_conversion",
-    "visual_context": "A measurement scale or ruler showing the conversion between units.",
-    "interaction_mode": "multiple_choice",
-    "irt_params": {
-      "a": 1.1,
-      "b": 0.53,
-      "c": 0.25
-    },
-    "irt_a": 1.1,
-    "irt_b": 0.53,
-    "irt_c": 0.25,
-    "solution_steps": [
-      "Identify what's given and what's asked",
-      "Choose the right operation",
-      "Set up the calculation"
-    ]
-  },
-  {
-    "id": "T7-1208",
-    "stem": "Kiwi has 4.2 kg of flour. He uses 1500 g for a cake. How much flour is left in grams?",
-    "choices": [
-      "2700 g",
-      "2800 g",
-      "3700 g",
-      "5700 g"
-    ],
-    "correct_answer": 0,
-    "difficulty_tier": "medium",
-    "difficulty_score": 48,
-    "visual_svg": null,
-    "visual_alt": null,
-    "diagnostics": {
-      "1": "Check your subtraction. 4200 - 1500 = 2700, not 2800.",
-      "2": "You may have subtracted only 500 g. 4200 - 1500 = 2700.",
-      "3": "You added instead of subtracting. 4200 - 1500 = 2700."
-    },
-    "tags": [
-      "unit-conversion",
-      "grade-3-4"
-    ],
-    "topic": "word_problems",
-    "topic_name": "Word Problems",
-    "hint": {
-      "level_0": "Convert kg to g first, then subtract.",
-      "level_1": "Convert to the same unit, then subtract.",
-      "level_2": "4.2 kg = 4200 g. Now subtract 1500.",
-      "level_3": "4200 - 1500 = ?",
-      "level_4": "4200 - 1500 = 2700 g left.",
-      "level_5": "4.2 kg = 4200 g. 4200 - 1500 = 2700 g."
-    },
-    "concept_cluster": "measurement/unit_conversion",
-    "visual_context": "A measurement scale or ruler showing the conversion between units.",
-    "interaction_mode": "multiple_choice",
-    "irt_params": {
-      "a": 1.1,
-      "b": 2.4,
-      "c": 0.25
-    },
-    "irt_a": 1.1,
-    "irt_b": 2.4,
-    "irt_c": 0.25,
-    "solution_steps": [
-      "Given: started with 4, removed 2",
-      "Operation needed: subtraction",
-      "Subtract: 4 - 2"
-    ]
-  },
-  {
-    "id": "T7-1209",
-    "stem": "Captain Kiwi's pencil is 18 cm long. He sharpens it and it becomes 2 cm shorter. How long is it now in mm?",
-    "choices": [
-      "16 mm",
-      "160 mm",
-      "200 mm",
-      "1600 mm"
-    ],
-    "correct_answer": 1,
-    "difficulty_tier": "medium",
-    "difficulty_score": 45,
-    "visual_svg": null,
-    "visual_alt": null,
-    "diagnostics": {
-      "0": "16 is correct in cm, but the question asks for mm. Multiply by 10.",
-      "2": "You may have converted 20 cm. The pencil is 18-2 = 16 cm = 160 mm.",
-      "3": "You multiplied 16 by 100 instead of 10. 1 cm = 10 mm."
-    },
-    "tags": [
-      "unit-conversion",
-      "grade-3-4"
-    ],
-    "topic": "word_problems",
-    "topic_name": "Word Problems",
-    "hint": {
-      "level_0": "First subtract, then convert to mm.",
-      "level_1": "Subtract length lost, then convert units.",
-      "level_2": "18 - 2 = 16 cm. Now convert to mm.",
-      "level_3": "16 cm x 10 = ? mm",
-      "level_4": "16 x 10 = 160 mm.",
-      "level_5": "18 - 2 = 16 cm. 16 x 10 = 160 mm."
-    },
-    "concept_cluster": "measurement/unit_conversion",
-    "visual_context": "A measurement scale or ruler showing the conversion between units.",
-    "interaction_mode": "drag_and_drop",
-    "irt_params": {
-      "a": 1.1,
-      "b": 2.09,
-      "c": 0.25
-    },
-    "irt_a": 1.1,
-    "irt_b": 2.09,
-    "irt_c": 0.25,
-    "solution_steps": [
-      "Identify what's given: 18, 2",
-      "Determine what's being asked",
-      "Choose the right operation"
-    ]
-  },
-  {
-    "id": "T7-1210",
-    "stem": "Kiwi has a 2-litre bottle of juice. He pours out 750 mL. How many mL are left?",
-    "choices": [
-      "1150 mL",
-      "1250 mL",
-      "1350 mL",
-      "1750 mL"
-    ],
-    "correct_answer": 1,
-    "difficulty_tier": "medium",
-    "difficulty_score": 40,
-    "visual_svg": null,
-    "visual_alt": null,
-    "diagnostics": {
-      "0": "Check subtraction: 2000 - 750 = 1250, not 1150.",
-      "2": "You may have subtracted 650 instead of 750. 2000 - 750 = 1250.",
-      "3": "You subtracted only 250. 2 L = 2000 mL. 2000 - 750 = 1250."
-    },
-    "tags": [
-      "unit-conversion",
-      "grade-3-4"
-    ],
-    "topic": "word_problems",
-    "topic_name": "Word Problems",
-    "hint": {
-      "level_0": "Convert litres to mL first.",
-      "level_1": "Convert to mL, then subtract.",
-      "level_2": "2 L = 2000 mL. Subtract 750.",
-      "level_3": "2000 - 750 = ?",
-      "level_4": "2000 - 750 = 1250 mL.",
-      "level_5": "2 L = 2000 mL. 2000 - 750 = 1250 mL left."
-    },
-    "concept_cluster": "measurement/unit_conversion",
-    "interaction_mode": "multiple_choice",
-    "visual_context": "A scene illustrating the real-world situation described.",
-    "irt_params": {
-      "a": 1.1,
-      "b": 1.57,
-      "c": 0.25
-    },
-    "irt_a": 1.1,
-    "irt_b": 1.57,
-    "irt_c": 0.25,
-    "solution_steps": [
-      "Given: started with 2, removed 750",
-      "Operation needed: subtraction",
-      "Subtract: 2 - 750"
-    ]
-  },
-  {
-    "id": "T7-1211",
     "stem": "Captain Kiwi starts reading at 3:15 PM and finishes at 4:00 PM. How long did he read?",
     "choices": [
       "30 minutes",
@@ -510,9 +218,10 @@
     "visual_svg": null,
     "visual_alt": null,
     "diagnostics": {
-      "0": "From 3:15 to 3:45 is 30 minutes, but he read until 4:00.",
-      "2": "You may have subtracted 15 from 60 incorrectly. 60 - 15 = 45.",
-      "3": "You added 3:15 + 1:15. Just find the gap from 3:15 to 4:00."
+      "0": "Read the question carefully. What is it really asking? 'How many left' = subtract. 'How many altogether' = add.",
+      "2": "This is a two-step problem. You solved the first step correctly, but there's one more step to finish.",
+      "3": "You did the math correctly, but your answer doesn't match what the question is asking for.",
+      "correct_explanation": "The answer is 45 minutes. The key is identifying what operation to use, then applying it to the right numbers from the problem."
     },
     "tags": [
       "time-problems",
@@ -521,232 +230,33 @@
     "topic": "word_problems",
     "topic_name": "Word Problems",
     "hint": {
-      "level_0": "Count minutes from start to end.",
-      "level_1": "Find elapsed time between two clock times.",
-      "level_2": "From 3:15 to 4:00, count the minutes.",
-      "level_3": "3:15 to 4:00 = 60 - 15 = ?",
-      "level_4": "From :15 to :00 of the next hour = 45 min.",
-      "level_5": "3:15 to 4:00 = 45 minutes."
+      "level_0": "Before calculating, picture the situation in your head. What's happening in this story?",
+      "level_1": "Circle the numbers and underline the question. What operation connects them?",
+      "level_2": "Work through the problem step by step using the numbers given: 3, 15, 4.",
+      "level_3": "Here's the solution: The answer is 45 minutes. Work through each step carefully to see why."
     },
     "concept_cluster": "measurement/time",
     "interaction_mode": "multiple_choice",
     "visual_context": "A visual representation of the problem.",
     "irt_params": {
-      "a": 1.1,
-      "b": 0.32,
-      "c": 0.25
+      "a": 1.28,
+      "b": -2.18,
+      "c": 0.22
     },
-    "irt_a": 1.1,
-    "irt_b": 0.32,
-    "irt_c": 0.25,
+    "irt_a": 1.28,
+    "irt_b": -2.18,
+    "irt_c": 0.22,
     "solution_steps": [
       "Identify what's given: 3, 15, 4",
       "Determine what's being asked",
       "Choose the right operation"
-    ]
+    ],
+    "competency_level": "A",
+    "competency_confidence": 0.833,
+    "competency_name": "Applying"
   },
   {
-    "id": "T7-1212",
-    "stem": "Kiwi's football practice starts at 2:30 PM and lasts 1 hour 15 minutes. What time does it end?",
-    "choices": [
-      "3:15 PM",
-      "3:30 PM",
-      "3:45 PM",
-      "4:45 PM"
-    ],
-    "correct_answer": 2,
-    "difficulty_tier": "medium",
-    "difficulty_score": 35,
-    "visual_svg": null,
-    "visual_alt": null,
-    "diagnostics": {
-      "0": "You added only 45 minutes (not 1 hour 15 min). 2:30 + 1:15 = 3:45.",
-      "1": "You added only 1 hour but not the extra 15 minutes.",
-      "3": "You may have added 2 hours 15 minutes. Add only 1 hour 15 min to 2:30."
-    },
-    "tags": [
-      "time-problems",
-      "grade-3-4"
-    ],
-    "topic": "word_problems",
-    "topic_name": "Word Problems",
-    "hint": {
-      "level_0": "Add the duration to the start time.",
-      "level_1": "Add hours first, then minutes.",
-      "level_2": "2:30 + 1 hour = 3:30. Then add 15 min.",
-      "level_3": "3:30 + 15 minutes = ?",
-      "level_4": "3:30 + 0:15 = 3:45 PM.",
-      "level_5": "2:30 + 1hr = 3:30, + 15min = 3:45 PM."
-    },
-    "concept_cluster": "measurement/time",
-    "visual_context": "An analog clock face showing the time mentioned in the question.",
-    "interaction_mode": "multiple_choice",
-    "irt_params": {
-      "a": 1.1,
-      "b": 1.05,
-      "c": 0.25
-    },
-    "irt_a": 1.1,
-    "irt_b": 1.05,
-    "irt_c": 0.25,
-    "solution_steps": [
-      "Identify what's given: 2, 30, 1",
-      "Determine what's being asked",
-      "Choose the right operation"
-    ]
-  },
-  {
-    "id": "T7-1213",
-    "stem": "Captain Kiwi takes a bus at 8:50 AM and arrives at school at 9:25 AM. How long was the bus ride?",
-    "choices": [
-      "25 minutes",
-      "30 minutes",
-      "35 minutes",
-      "45 minutes"
-    ],
-    "correct_answer": 2,
-    "difficulty_tier": "medium",
-    "difficulty_score": 32,
-    "visual_svg": null,
-    "visual_alt": null,
-    "diagnostics": {
-      "0": "You may have looked only at the minutes digits: 50 to 25. Count through 9:00.",
-      "1": "From 8:50 to 9:20 is 30 min, but he arrives at 9:25, so add 5 more.",
-      "3": "45 minutes from 8:50 would be 9:35. The correct gap is 35 minutes."
-    },
-    "tags": [
-      "time-problems",
-      "grade-3-4"
-    ],
-    "topic": "word_problems",
-    "topic_name": "Word Problems",
-    "hint": {
-      "level_0": "Count minutes from departure to arrival.",
-      "level_1": "Find elapsed time across the hour.",
-      "level_2": "8:50 to 9:00 = 10 min. Then 9:00 to 9:25.",
-      "level_3": "10 + 25 = ?",
-      "level_4": "10 + 25 = 35 minutes total.",
-      "level_5": "8:50 to 9:00 = 10 min, + 25 min = 35 min."
-    },
-    "concept_cluster": "measurement/time",
-    "interaction_mode": "multiple_choice",
-    "visual_context": "A scene illustrating the real-world situation described.",
-    "irt_params": {
-      "a": 1.1,
-      "b": 0.73,
-      "c": 0.25
-    },
-    "irt_a": 1.1,
-    "irt_b": 0.73,
-    "irt_c": 0.25,
-    "solution_steps": [
-      "Identify what's given: 8, 50, 9",
-      "Determine what's being asked",
-      "Choose the right operation"
-    ]
-  },
-  {
-    "id": "T7-1214",
-    "stem": "Kiwi's movie starts at 5:10 PM and ends at 6:40 PM. How long is the movie?",
-    "choices": [
-      "1 hour 10 minutes",
-      "1 hour 20 minutes",
-      "1 hour 30 minutes",
-      "1 hour 40 minutes"
-    ],
-    "correct_answer": 2,
-    "difficulty_tier": "medium",
-    "difficulty_score": 38,
-    "visual_svg": null,
-    "visual_alt": null,
-    "diagnostics": {
-      "0": "From 5:10 to 6:10 is 1 hour. Then 6:10 to 6:40 is 30 more minutes.",
-      "1": "Check: 5:10 to 6:10 = 1 hour, 6:10 to 6:40 = 30 min. Total = 1h 30min.",
-      "3": "1h 40min from 5:10 would end at 6:50, not 6:40."
-    },
-    "tags": [
-      "time-problems",
-      "grade-3-4"
-    ],
-    "topic": "word_problems",
-    "topic_name": "Word Problems",
-    "hint": {
-      "level_0": "Count the hours, then the extra minutes.",
-      "level_1": "Find elapsed time in hours and minutes.",
-      "level_2": "5:10 to 6:10 = 1 hour. Then count extra.",
-      "level_3": "6:10 to 6:40 = 30 more minutes.",
-      "level_4": "1 hour + 30 minutes = 1h 30min.",
-      "level_5": "5:10 to 6:10 = 1h, to 6:40 = +30min = 1h 30min."
-    },
-    "concept_cluster": "measurement/time",
-    "interaction_mode": "multiple_choice",
-    "visual_context": "A visual representation of the problem.",
-    "irt_params": {
-      "a": 1.1,
-      "b": 1.36,
-      "c": 0.25
-    },
-    "irt_a": 1.1,
-    "irt_b": 1.36,
-    "irt_c": 0.25,
-    "solution_steps": [
-      "Identify what's given: 5, 10, 6",
-      "Determine what's being asked",
-      "Choose the right operation"
-    ]
-  },
-  {
-    "id": "T7-1215",
-    "stem": "Captain Kiwi has dance class every Tuesday and Thursday. Each class is 45 minutes. How many minutes of dance does he have per week?",
-    "choices": [
-      "45 minutes",
-      "80 minutes",
-      "90 minutes",
-      "135 minutes"
-    ],
-    "correct_answer": 2,
-    "difficulty_tier": "medium",
-    "difficulty_score": 30,
-    "visual_svg": null,
-    "visual_alt": null,
-    "diagnostics": {
-      "0": "That is only one class. He has two classes per week.",
-      "1": "You may have added 45 + 35. Each class is 45 min: 45 + 45.",
-      "3": "135 = 45 x 3. He only has 2 classes, not 3."
-    },
-    "tags": [
-      "time-problems",
-      "grade-3-4"
-    ],
-    "topic": "word_problems",
-    "topic_name": "Word Problems",
-    "hint": {
-      "level_0": "How many classes per week?",
-      "level_1": "Multiply classes per week by duration.",
-      "level_2": "2 classes x 45 minutes each.",
-      "level_3": "2 x 45 = ?",
-      "level_4": "2 x 45 = 90 minutes.",
-      "level_5": "2 classes x 45 min = 90 minutes per week."
-    },
-    "concept_cluster": "measurement/time",
-    "visual_context": "An analog clock face showing the time mentioned in the question.",
-    "interaction_mode": "multiple_choice",
-    "irt_params": {
-      "a": 1.1,
-      "b": 0.53,
-      "c": 0.25
-    },
-    "irt_a": 1.1,
-    "irt_b": 0.53,
-    "irt_c": 0.25,
-    "solution_steps": [
-      "Identify the groups and items per group",
-      "Operation needed: multiplication",
-      "Multiply groups by items per group"
-    ]
-  },
-  {
-    "id": "T7-1216",
+    "id": "T7-1206",
     "stem": "Captain Kiwi buys a toy for $4.75 and pays with a $5 note. How much change does he get?",
     "choices": [
       "$0.15",
@@ -760,9 +270,10 @@
     "visual_svg": null,
     "visual_alt": null,
     "diagnostics": {
-      "0": "5.00 - 4.75 = 0.25, not 0.15. Check your subtraction.",
-      "2": "0.75 would mean the toy costs $4.25. The toy is $4.75.",
-      "3": "1.25 would mean the toy costs $3.75. Subtract carefully: $5 - $4.75."
+      "0": "Read the question carefully. What is it really asking? 'How many left' = subtract. 'How many altogether' = add.",
+      "2": "This is a two-step problem. You solved the first step correctly, but there's one more step to finish.",
+      "3": "You did the math correctly, but your answer doesn't match what the question is asking for.",
+      "correct_explanation": "The answer is $0.25. The key is identifying what operation to use, then applying it to the right numbers from the problem."
     },
     "tags": [
       "money-problems",
@@ -771,32 +282,242 @@
     "topic": "word_problems",
     "topic_name": "Word Problems",
     "hint": {
-      "level_0": "Subtract the price from the amount paid.",
-      "level_1": "Use subtraction: paid - cost = change.",
-      "level_2": "$5.00 - $4.75 = ?",
-      "level_3": "Count up from $4.75 to $5.00.",
-      "level_4": "$4.75 + $0.25 = $5.00.",
-      "level_5": "$5.00 - $4.75 = $0.25 change."
+      "level_0": "Read the whole problem first. Then ask: what are the important numbers, and what connects them?",
+      "level_1": "Circle the numbers and underline the question. What operation connects them?",
+      "level_2": "Work through the problem step by step using the numbers given: 4, 75, 5.",
+      "level_3": "Here's the solution: The answer is $0.25. Work through each step carefully to see why."
     },
     "concept_cluster": "measurement/money",
     "visual_context": "Coins and items with price tags shown for the shopping scenario.",
     "interaction_mode": "multiple_choice",
     "irt_params": {
-      "a": 1.1,
-      "b": 0.32,
-      "c": 0.25
+      "a": 1.38,
+      "b": -2.1,
+      "c": 0.22
     },
-    "irt_a": 1.1,
-    "irt_b": 0.32,
-    "irt_c": 0.25,
+    "irt_a": 1.38,
+    "irt_b": -2.1,
+    "irt_c": 0.22,
     "solution_steps": [
       "Identify what's given: 4, 75, 5",
       "Determine what's being asked",
       "Choose the right operation"
-    ]
+    ],
+    "competency_level": "A",
+    "competency_confidence": 0.833,
+    "competency_name": "Applying"
   },
   {
-    "id": "T7-1217",
+    "id": "T7-1207",
+    "stem": "Suki is at the rain gauge showing water levels. How many metres did he run?",
+    "choices": [
+      "30 m",
+      "300 m",
+      "3000 m",
+      "30000 m"
+    ],
+    "correct_answer": 2,
+    "difficulty_tier": "medium",
+    "difficulty_score": 30,
+    "visual_svg": null,
+    "visual_alt": null,
+    "diagnostics": {
+      "0": "Read the question carefully. What is it really asking? 'How many left' = subtract. 'How many altogether' = add.",
+      "1": "The problem gives you several numbers. Make sure you're using the right ones for your calculation.",
+      "3": "You did the math correctly, but your answer doesn't match what the question is asking for.",
+      "correct_explanation": "The answer is 3000 m. The key is identifying what operation to use, then applying it to the right numbers from the problem."
+    },
+    "tags": [
+      "unit-conversion",
+      "grade-3-4"
+    ],
+    "topic": "word_problems",
+    "topic_name": "Word Problems",
+    "hint": {
+      "level_0": "Read the whole problem first. Then ask: what are the important numbers, and what connects them?",
+      "level_1": "Circle the numbers and underline the question. What operation connects them?",
+      "level_2": "Work through the problem step by step using the numbers given: check the problem carefully.",
+      "level_3": "Here's the solution: The answer is 3000 m. Work through each step carefully to see why."
+    },
+    "concept_cluster": "measurement/unit_conversion",
+    "visual_context": "A measurement scale or ruler showing the conversion between units.",
+    "interaction_mode": "multiple_choice",
+    "irt_params": {
+      "a": 1.38,
+      "b": -1.96,
+      "c": 0.22
+    },
+    "irt_a": 1.38,
+    "irt_b": -1.96,
+    "irt_c": 0.22,
+    "solution_steps": [
+      "Identify what's given and what's asked",
+      "Choose the right operation",
+      "Set up the calculation"
+    ],
+    "original_stem": "Captain Kiwi runs 3 km. How many metres did he run?",
+    "competency_level": "A",
+    "competency_confidence": 0.667,
+    "competency_name": "Applying"
+  },
+  {
+    "id": "T7-1208",
+    "stem": "Captain Kiwi has dance class every Tuesday and Thursday. Each class is 45 minutes. How many minutes of dance does he have per week?",
+    "choices": [
+      "45 minutes",
+      "80 minutes",
+      "90 minutes",
+      "135 minutes"
+    ],
+    "correct_answer": 2,
+    "difficulty_tier": "medium",
+    "difficulty_score": 30,
+    "visual_svg": null,
+    "visual_alt": null,
+    "diagnostics": {
+      "0": "Read the question carefully. What is it really asking? 'How many left' = subtract. 'How many altogether' = add.",
+      "1": "The problem gives you several numbers. Make sure you're using the right ones for your calculation.",
+      "3": "You did the math correctly, but your answer doesn't match what the question is asking for.",
+      "correct_explanation": "The answer is 90 minutes. The key is identifying what operation to use, then applying it to the right numbers from the problem."
+    },
+    "tags": [
+      "time-problems",
+      "grade-3-4"
+    ],
+    "topic": "word_problems",
+    "topic_name": "Word Problems",
+    "hint": {
+      "level_0": "Before calculating, picture the situation in your head. What's happening in this story?",
+      "level_1": "Circle the numbers and underline the question. What operation connects them?",
+      "level_2": "Work through the problem step by step using the numbers given: 45.",
+      "level_3": "Here's the solution: The answer is 90 minutes. Work through each step carefully to see why."
+    },
+    "concept_cluster": "measurement/time",
+    "visual_context": "An analog clock face showing the time mentioned in the question.",
+    "interaction_mode": "multiple_choice",
+    "irt_params": {
+      "a": 1.32,
+      "b": -2.0,
+      "c": 0.22
+    },
+    "irt_a": 1.32,
+    "irt_b": -2.0,
+    "irt_c": 0.22,
+    "solution_steps": [
+      "Identify the groups and items per group",
+      "Operation needed: multiplication",
+      "Multiply groups by items per group"
+    ],
+    "competency_level": "A",
+    "competency_confidence": 0.667,
+    "competency_name": "Applying"
+  },
+  {
+    "id": "T7-1209",
+    "stem": "Kiwi earns $2.50 each day doing chores. How much does he earn in 5 days?",
+    "choices": [
+      "$7.50",
+      "$10.00",
+      "$12.50",
+      "$15.00"
+    ],
+    "correct_answer": 2,
+    "difficulty_tier": "medium",
+    "difficulty_score": 30,
+    "visual_svg": null,
+    "visual_alt": null,
+    "diagnostics": {
+      "0": "Read the question carefully. What is it really asking? 'How many left' = subtract. 'How many altogether' = add.",
+      "1": "The problem gives you several numbers. Make sure you're using the right ones for your calculation.",
+      "3": "You did the math correctly, but your answer doesn't match what the question is asking for.",
+      "correct_explanation": "The answer is $12.50. The key is identifying what operation to use, then applying it to the right numbers from the problem."
+    },
+    "tags": [
+      "money-problems",
+      "grade-3-4"
+    ],
+    "topic": "word_problems",
+    "topic_name": "Word Problems",
+    "hint": {
+      "level_0": "Before calculating, picture the situation in your head. What's happening in this story?",
+      "level_1": "Circle the numbers and underline the question. What operation connects them?",
+      "level_2": "Work through the problem step by step using the numbers given: 2, 50, 5.",
+      "level_3": "Here's the solution: The answer is $12.50. Work through each step carefully to see why."
+    },
+    "concept_cluster": "measurement/money",
+    "interaction_mode": "multiple_choice",
+    "visual_context": "A scene illustrating the real-world situation described.",
+    "irt_params": {
+      "a": 1.07,
+      "b": -2.28,
+      "c": 0.22
+    },
+    "irt_a": 1.07,
+    "irt_b": -2.28,
+    "irt_c": 0.22,
+    "solution_steps": [
+      "Given: 2 groups of 50 each",
+      "Operation needed: multiplication",
+      "Multiply: 2 × 50"
+    ],
+    "competency_level": "A",
+    "competency_confidence": 0.667,
+    "competency_name": "Applying"
+  },
+  {
+    "id": "T7-1210",
+    "stem": "Captain Kiwi takes a bus at 8:50 AM and arrives at school at 9:25 AM. How long was the bus ride?",
+    "choices": [
+      "25 minutes",
+      "30 minutes",
+      "35 minutes",
+      "45 minutes"
+    ],
+    "correct_answer": 2,
+    "difficulty_tier": "medium",
+    "difficulty_score": 32,
+    "visual_svg": null,
+    "visual_alt": null,
+    "diagnostics": {
+      "0": "Read the question carefully. What is it really asking? 'How many left' = subtract. 'How many altogether' = add.",
+      "1": "The problem gives you several numbers. Make sure you're using the right ones for your calculation.",
+      "3": "You did the math correctly, but your answer doesn't match what the question is asking for.",
+      "correct_explanation": "The answer is 35 minutes. The key is identifying what operation to use, then applying it to the right numbers from the problem."
+    },
+    "tags": [
+      "time-problems",
+      "grade-3-4"
+    ],
+    "topic": "word_problems",
+    "topic_name": "Word Problems",
+    "hint": {
+      "level_0": "Read the whole problem first. Then ask: what are the important numbers, and what connects them?",
+      "level_1": "Circle the numbers and underline the question. What operation connects them?",
+      "level_2": "Work through the problem step by step using the numbers given: 8, 50, 9.",
+      "level_3": "Here's the solution: The answer is 35 minutes. Work through each step carefully to see why."
+    },
+    "concept_cluster": "measurement/time",
+    "interaction_mode": "multiple_choice",
+    "visual_context": "A scene illustrating the real-world situation described.",
+    "irt_params": {
+      "a": 1.12,
+      "b": -2.18,
+      "c": 0.22
+    },
+    "irt_a": 1.12,
+    "irt_b": -2.18,
+    "irt_c": 0.22,
+    "solution_steps": [
+      "Identify what's given: 8, 50, 9",
+      "Determine what's being asked",
+      "Choose the right operation"
+    ],
+    "competency_level": "A",
+    "competency_confidence": 0.833,
+    "competency_name": "Applying"
+  },
+  {
+    "id": "T7-1211",
     "stem": "Kiwi buys 3 stickers at $0.50 each and a notebook for $2.00. What is the total cost?",
     "choices": [
       "$2.50",
@@ -810,9 +531,10 @@
     "visual_svg": null,
     "visual_alt": null,
     "diagnostics": {
-      "0": "You forgot the notebook. Stickers = $1.50, plus notebook = $2.00.",
-      "1": "You may have counted only 2 stickers. 3 x $0.50 = $1.50, + $2.00 = $3.50.",
-      "3": "You may have multiplied $0.50 x 3 = $1.50, then added $4.00 for the notebook. The notebook is $2.00."
+      "0": "Read the question carefully. What is it really asking? 'How many left' = subtract. 'How many altogether' = add.",
+      "1": "The problem gives you several numbers. Make sure you're using the right ones for your calculation.",
+      "3": "You did the math correctly, but your answer doesn't match what the question is asking for.",
+      "correct_explanation": "The answer is $3.50. The key is identifying what operation to use, then applying it to the right numbers from the problem."
     },
     "tags": [
       "money-problems",
@@ -821,29 +543,344 @@
     "topic": "word_problems",
     "topic_name": "Word Problems",
     "hint": {
-      "level_0": "Find the cost of stickers, then add notebook.",
-      "level_1": "Multiply then add for the total.",
-      "level_2": "3 x $0.50 = stickers cost. Add $2.00.",
-      "level_3": "$1.50 + $2.00 = ?",
-      "level_4": "$1.50 + $2.00 = $3.50.",
-      "level_5": "Stickers: 3 x $0.50 = $1.50. Total: $1.50 + $2.00 = $3.50."
+      "level_0": "Read the whole problem first. Then ask: what are the important numbers, and what connects them?",
+      "level_1": "Circle the numbers and underline the question. What operation connects them?",
+      "level_2": "Work through the problem step by step using the numbers given: 3, 0, 50.",
+      "level_3": "Here's the solution: The answer is $3.50. Work through each step carefully to see why."
     },
     "concept_cluster": "measurement/money",
     "visual_context": "Coins and items with price tags shown for the shopping scenario.",
     "interaction_mode": "multiple_choice",
     "irt_params": {
       "a": 1.1,
-      "b": 0.73,
-      "c": 0.25
+      "b": -2.2,
+      "c": 0.22
     },
     "irt_a": 1.1,
-    "irt_b": 0.73,
-    "irt_c": 0.25,
+    "irt_b": -2.2,
+    "irt_c": 0.22,
     "solution_steps": [
       "Given: 3 and 0 (find total)",
       "Operation needed: addition",
       "Add 3 + 0"
-    ]
+    ],
+    "competency_level": "A",
+    "competency_confidence": 0.833,
+    "competency_name": "Applying"
+  },
+  {
+    "id": "T7-1212",
+    "stem": "Suki is at the butterfly meadow with colorful flowers. How many metres is that?",
+    "choices": [
+      "3.5 m",
+      "35 m",
+      "0.35 m",
+      "350 m"
+    ],
+    "correct_answer": 0,
+    "difficulty_tier": "medium",
+    "difficulty_score": 35,
+    "visual_svg": null,
+    "visual_alt": null,
+    "diagnostics": {
+      "1": "The problem gives you several numbers. Make sure you're using the right ones for your calculation.",
+      "2": "This is a two-step problem. You solved the first step correctly, but there's one more step to finish.",
+      "3": "You did the math correctly, but your answer doesn't match what the question is asking for.",
+      "correct_explanation": "The answer is 3.5 m. The key is identifying what operation to use, then applying it to the right numbers from the problem."
+    },
+    "tags": [
+      "unit-conversion",
+      "grade-3-4"
+    ],
+    "topic": "word_problems",
+    "topic_name": "Word Problems",
+    "hint": {
+      "level_0": "Read the whole problem first. Then ask: what are the important numbers, and what connects them?",
+      "level_1": "Circle the numbers and underline the question. What operation connects them?",
+      "level_2": "Work through the problem step by step using the numbers given: check the problem carefully.",
+      "level_3": "Here's the solution: The answer is 3.5 m. Work through each step carefully to see why."
+    },
+    "concept_cluster": "measurement/unit_conversion",
+    "visual_context": "A measurement scale or ruler showing the conversion between units.",
+    "interaction_mode": "multiple_choice",
+    "irt_params": {
+      "a": 1.27,
+      "b": -1.89,
+      "c": 0.22
+    },
+    "irt_a": 1.27,
+    "irt_b": -1.89,
+    "irt_c": 0.22,
+    "solution_steps": [
+      "Identify what's given and what's asked",
+      "Choose the right operation",
+      "Set up the calculation"
+    ],
+    "original_stem": "Captain Kiwi's rope is 350 cm long. How many metres is that?",
+    "competency_level": "A",
+    "competency_confidence": 0.667,
+    "competency_name": "Applying"
+  },
+  {
+    "id": "T7-1213",
+    "stem": "Kiwi's football practice starts at 2:30 PM and lasts 1 hour 15 minutes. What time does it end?",
+    "choices": [
+      "3:15 PM",
+      "3:30 PM",
+      "3:45 PM",
+      "4:45 PM"
+    ],
+    "correct_answer": 2,
+    "difficulty_tier": "medium",
+    "difficulty_score": 35,
+    "visual_svg": null,
+    "visual_alt": null,
+    "diagnostics": {
+      "0": "Read the question carefully. What is it really asking? 'How many left' = subtract. 'How many altogether' = add.",
+      "1": "The problem gives you several numbers. Make sure you're using the right ones for your calculation.",
+      "3": "You did the math correctly, but your answer doesn't match what the question is asking for.",
+      "correct_explanation": "The answer is 3:45 PM. The key is identifying what operation to use, then applying it to the right numbers from the problem."
+    },
+    "tags": [
+      "time-problems",
+      "grade-3-4"
+    ],
+    "topic": "word_problems",
+    "topic_name": "Word Problems",
+    "hint": {
+      "level_0": "Underline the question it's asking. Now find the numbers and figure out which operation to use.",
+      "level_1": "Circle the numbers and underline the question. What operation connects them?",
+      "level_2": "Work through the problem step by step using the numbers given: 2, 30, 1.",
+      "level_3": "Here's the solution: The answer is 3:45 PM. Work through each step carefully to see why."
+    },
+    "concept_cluster": "measurement/time",
+    "visual_context": "An analog clock face showing the time mentioned in the question.",
+    "interaction_mode": "multiple_choice",
+    "irt_params": {
+      "a": 1.1,
+      "b": -2.11,
+      "c": 0.22
+    },
+    "irt_a": 1.1,
+    "irt_b": -2.11,
+    "irt_c": 0.22,
+    "solution_steps": [
+      "Identify what's given: 2, 30, 1",
+      "Determine what's being asked",
+      "Choose the right operation"
+    ],
+    "competency_level": "A",
+    "competency_confidence": 0.667,
+    "competency_name": "Applying"
+  },
+  {
+    "id": "T7-1214",
+    "stem": "Captain Kiwi and 3 friends share the cost of a $6.00 pizza equally. How much does each person pay?",
+    "choices": [
+      "$1.20",
+      "$1.50",
+      "$2.00",
+      "$3.00"
+    ],
+    "correct_answer": 1,
+    "difficulty_tier": "medium",
+    "difficulty_score": 35,
+    "visual_svg": null,
+    "visual_alt": null,
+    "diagnostics": {
+      "0": "Read the question carefully. What is it really asking? 'How many left' = subtract. 'How many altogether' = add.",
+      "2": "This is a two-step problem. You solved the first step correctly, but there's one more step to finish.",
+      "3": "You did the math correctly, but your answer doesn't match what the question is asking for.",
+      "correct_explanation": "The answer is $1.50. The key is identifying what operation to use, then applying it to the right numbers from the problem."
+    },
+    "tags": [
+      "money-problems",
+      "grade-3-4"
+    ],
+    "topic": "word_problems",
+    "topic_name": "Word Problems",
+    "hint": {
+      "level_0": "Before calculating, picture the situation in your head. What's happening in this story?",
+      "level_1": "Circle the numbers and underline the question. What operation connects them?",
+      "level_2": "Work through the problem step by step using the numbers given: 3, 6, 00.",
+      "level_3": "Here's the solution: The answer is $1.50. Work through each step carefully to see why."
+    },
+    "concept_cluster": "measurement/money",
+    "visual_context": "Coins and items with price tags shown for the shopping scenario.",
+    "interaction_mode": "multiple_choice",
+    "irt_params": {
+      "a": 1.45,
+      "b": -1.83,
+      "c": 0.22
+    },
+    "irt_a": 1.45,
+    "irt_b": -1.83,
+    "irt_c": 0.22,
+    "solution_steps": [
+      "Given: 3 groups of 6 each",
+      "Operation needed: multiplication",
+      "Multiply: 3 × 6"
+    ],
+    "competency_level": "A",
+    "competency_confidence": 0.833,
+    "competency_name": "Applying"
+  },
+  {
+    "id": "T7-1215",
+    "stem": "Mei is at the garden beds arranged in neat rows. How many kilograms is that?",
+    "choices": [
+      "0.25 kg",
+      "2.5 kg",
+      "25 kg",
+      "250 kg"
+    ],
+    "correct_answer": 1,
+    "difficulty_tier": "medium",
+    "difficulty_score": 38,
+    "visual_svg": null,
+    "visual_alt": null,
+    "diagnostics": {
+      "0": "Read the question carefully. What is it really asking? 'How many left' = subtract. 'How many altogether' = add.",
+      "2": "This is a two-step problem. You solved the first step correctly, but there's one more step to finish.",
+      "3": "You did the math correctly, but your answer doesn't match what the question is asking for.",
+      "correct_explanation": "The answer is 2.5 kg. The key is identifying what operation to use, then applying it to the right numbers from the problem."
+    },
+    "tags": [
+      "unit-conversion",
+      "grade-3-4"
+    ],
+    "topic": "word_problems",
+    "topic_name": "Word Problems",
+    "hint": {
+      "level_0": "Underline the question it's asking. Now find the numbers and figure out which operation to use.",
+      "level_1": "Circle the numbers and underline the question. What operation connects them?",
+      "level_2": "Work through the problem step by step using the numbers given: check the problem carefully.",
+      "level_3": "Here's the solution: The answer is 2.5 kg. Work through each step carefully to see why."
+    },
+    "concept_cluster": "measurement/unit_conversion",
+    "visual_context": "A measurement scale or ruler showing the conversion between units.",
+    "interaction_mode": "multiple_choice",
+    "irt_params": {
+      "a": 1.22,
+      "b": -1.84,
+      "c": 0.22
+    },
+    "irt_a": 1.22,
+    "irt_b": -1.84,
+    "irt_c": 0.22,
+    "solution_steps": [
+      "Identify what's given and what's asked",
+      "Choose the right operation",
+      "Set up the calculation"
+    ],
+    "original_stem": "Kiwi's backpack weighs 2500 grams. How many kilograms is that?",
+    "competency_level": "A",
+    "competency_confidence": 0.667,
+    "competency_name": "Applying"
+  },
+  {
+    "id": "T7-1216",
+    "stem": "Kiwi's movie starts at 5:10 PM and ends at 6:40 PM. How long is the movie?",
+    "choices": [
+      "1 hour 10 minutes",
+      "1 hour 20 minutes",
+      "1 hour 30 minutes",
+      "1 hour 40 minutes"
+    ],
+    "correct_answer": 2,
+    "difficulty_tier": "medium",
+    "difficulty_score": 38,
+    "visual_svg": null,
+    "visual_alt": null,
+    "diagnostics": {
+      "0": "Read the question carefully. What is it really asking? 'How many left' = subtract. 'How many altogether' = add.",
+      "1": "The problem gives you several numbers. Make sure you're using the right ones for your calculation.",
+      "3": "You did the math correctly, but your answer doesn't match what the question is asking for.",
+      "correct_explanation": "The answer is 1 hour 30 minutes. The key is identifying what operation to use, then applying it to the right numbers from the problem."
+    },
+    "tags": [
+      "time-problems",
+      "grade-3-4"
+    ],
+    "topic": "word_problems",
+    "topic_name": "Word Problems",
+    "hint": {
+      "level_0": "Before calculating, picture the situation in your head. What's happening in this story?",
+      "level_1": "Circle the numbers and underline the question. What operation connects them?",
+      "level_2": "Work through the problem step by step using the numbers given: 5, 10, 6.",
+      "level_3": "Here's the solution: The answer is 1 hour 30 minutes. Work through each step carefully to see why."
+    },
+    "concept_cluster": "measurement/time",
+    "interaction_mode": "multiple_choice",
+    "visual_context": "A visual representation of the problem.",
+    "irt_params": {
+      "a": 1.45,
+      "b": -1.74,
+      "c": 0.22
+    },
+    "irt_a": 1.45,
+    "irt_b": -1.74,
+    "irt_c": 0.22,
+    "solution_steps": [
+      "Identify what's given: 5, 10, 6",
+      "Determine what's being asked",
+      "Choose the right operation"
+    ],
+    "competency_level": "A",
+    "competency_confidence": 0.833,
+    "competency_name": "Applying"
+  },
+  {
+    "id": "T7-1217",
+    "stem": "Kiwi has a 2-litre bottle of juice. He pours out 750 mL. How many mL are left?",
+    "choices": [
+      "1150 mL",
+      "1250 mL",
+      "1350 mL",
+      "1750 mL"
+    ],
+    "correct_answer": 1,
+    "difficulty_tier": "medium",
+    "difficulty_score": 40,
+    "visual_svg": null,
+    "visual_alt": null,
+    "diagnostics": {
+      "0": "When the top digit is smaller, you need to borrow from the next column.",
+      "2": "Check the problem — words like 'left', 'remaining', or 'gave away' mean subtraction.",
+      "3": "Make sure each digit is in the right column before subtracting.",
+      "correct_explanation": "The answer is 1250 mL. We start with the larger amount and take away the smaller amount, leaving us with 1250 mL."
+    },
+    "tags": [
+      "unit-conversion",
+      "grade-3-4"
+    ],
+    "topic": "word_problems",
+    "topic_name": "Word Problems",
+    "hint": {
+      "level_0": "Something is being taken away or compared here. What started, and what was removed?",
+      "level_1": "Think about what's being taken away. Could you count backwards, or use the relationship between addition and subtraction?",
+      "level_2": "Start with 2. Take away 750. Count backwards 750 steps from 2.",
+      "level_3": "Here's the solution: 2 - 750 = 1250 mL. We started with 2 and took away 750."
+    },
+    "concept_cluster": "measurement/unit_conversion",
+    "interaction_mode": "multiple_choice",
+    "visual_context": "A scene illustrating the real-world situation described.",
+    "irt_params": {
+      "a": 1.2,
+      "b": -1.64,
+      "c": 0.22
+    },
+    "irt_a": 1.2,
+    "irt_b": -1.64,
+    "irt_c": 0.22,
+    "solution_steps": [
+      "Given: started with 2, removed 750",
+      "Operation needed: subtraction",
+      "Subtract: 2 - 750"
+    ],
+    "competency_level": "A",
+    "competency_confidence": 0.833,
+    "competency_name": "Applying"
   },
   {
     "id": "T7-1218",
@@ -860,9 +897,10 @@
     "visual_svg": null,
     "visual_alt": null,
     "diagnostics": {
-      "0": "Total spent = $5.25. Change = $10 - $5.25 = $4.75, not $4.25.",
-      "2": "$5.25 is what he spent, not what he has left.",
-      "3": "You may have subtracted only the sandwich: $10 - $3.75 = $6.25, then forgot the drink."
+      "0": "When the top digit is smaller, you need to borrow from the next column.",
+      "2": "Check the problem — words like 'left', 'remaining', or 'gave away' mean subtraction.",
+      "3": "Make sure each digit is in the right column before subtracting.",
+      "correct_explanation": "The answer is $4.75. We start with the larger amount and take away the smaller amount, leaving us with $4.75."
     },
     "tags": [
       "money-problems",
@@ -871,128 +909,133 @@
     "topic": "word_problems",
     "topic_name": "Word Problems",
     "hint": {
-      "level_0": "Add both costs, then subtract from $10.",
-      "level_1": "Add purchases, then subtract from total money.",
-      "level_2": "$3.75 + $1.50 = total spent. Subtract from $10.",
-      "level_3": "$3.75 + $1.50 = $5.25. $10 - $5.25 = ?",
-      "level_4": "$10.00 - $5.25 = $4.75.",
-      "level_5": "Spent: $3.75+$1.50=$5.25. Left: $10-$5.25=$4.75."
+      "level_0": "Ask yourself: am I finding what's left after removing something, or the difference between two amounts?",
+      "level_1": "Think about what's being taken away. Could you count backwards, or use the relationship between addition and subtraction?",
+      "level_2": "Start with 10. Take away 00. Count backwards 00 steps from 10.",
+      "level_3": "Here's the solution: 10 - 00 = $4.75. We started with 10 and took away 00."
     },
     "concept_cluster": "measurement/money",
     "interaction_mode": "multiple_choice",
     "visual_context": "Items with price tags and coins/notes for calculation.",
     "irt_params": {
-      "a": 1.1,
-      "b": 1.77,
-      "c": 0.25
+      "a": 1.08,
+      "b": -1.76,
+      "c": 0.22
     },
-    "irt_a": 1.1,
-    "irt_b": 1.77,
-    "irt_c": 0.25,
+    "irt_a": 1.08,
+    "irt_b": -1.76,
+    "irt_c": 0.22,
     "solution_steps": [
       "Given: started with 10, removed 00",
       "Operation needed: subtraction",
       "Subtract: 10 - 00"
-    ]
+    ],
+    "competency_level": "A",
+    "competency_confidence": 0.875,
+    "competency_name": "Applying"
   },
   {
     "id": "T7-1219",
-    "stem": "Kiwi earns $2.50 each day doing chores. How much does he earn in 5 days?",
+    "stem": "Captain Kiwi's pencil is 18 cm long. He sharpens it and it becomes 2 cm shorter. How long is it now in mm?",
     "choices": [
-      "$7.50",
-      "$10.00",
-      "$12.50",
-      "$15.00"
-    ],
-    "correct_answer": 2,
-    "difficulty_tier": "medium",
-    "difficulty_score": 30,
-    "visual_svg": null,
-    "visual_alt": null,
-    "diagnostics": {
-      "0": "You multiplied $2.50 x 3 = $7.50. He works 5 days, not 3.",
-      "1": "You multiplied $2.00 x 5 = $10. Don't forget the $0.50: $2.50 x 5.",
-      "3": "You multiplied $3.00 x 5 = $15. The daily rate is $2.50, not $3.00."
-    },
-    "tags": [
-      "money-problems",
-      "grade-3-4"
-    ],
-    "topic": "word_problems",
-    "topic_name": "Word Problems",
-    "hint": {
-      "level_0": "Multiply daily earnings by number of days.",
-      "level_1": "Use multiplication: rate x days.",
-      "level_2": "$2.50 x 5 days.",
-      "level_3": "$2.50 x 5 = ?",
-      "level_4": "$2.50 x 5 = $12.50.",
-      "level_5": "$2.50 x 5 = $12.50 earned in 5 days."
-    },
-    "concept_cluster": "measurement/money",
-    "interaction_mode": "multiple_choice",
-    "visual_context": "A scene illustrating the real-world situation described.",
-    "irt_params": {
-      "a": 1.1,
-      "b": 0.53,
-      "c": 0.25
-    },
-    "irt_a": 1.1,
-    "irt_b": 0.53,
-    "irt_c": 0.25,
-    "solution_steps": [
-      "Given: 2 groups of 50 each",
-      "Operation needed: multiplication",
-      "Multiply: 2 × 50"
-    ]
-  },
-  {
-    "id": "T7-1220",
-    "stem": "Captain Kiwi and 3 friends share the cost of a $6.00 pizza equally. How much does each person pay?",
-    "choices": [
-      "$1.20",
-      "$1.50",
-      "$2.00",
-      "$3.00"
+      "16 mm",
+      "160 mm",
+      "200 mm",
+      "1600 mm"
     ],
     "correct_answer": 1,
     "difficulty_tier": "medium",
-    "difficulty_score": 35,
+    "difficulty_score": 45,
     "visual_svg": null,
     "visual_alt": null,
     "diagnostics": {
-      "0": "You divided by 5 people. Kiwi + 3 friends = 4 people. $6 / 4 = $1.50.",
-      "2": "$2.00 each would be $6/3. But there are 4 people total (Kiwi + 3 friends).",
-      "3": "$3.00 each would only need 2 people. Count all 4 people sharing."
+      "0": "Read the question carefully. What is it really asking? 'How many left' = subtract. 'How many altogether' = add.",
+      "2": "This is a two-step problem. You solved the first step correctly, but there's one more step to finish.",
+      "3": "You did the math correctly, but your answer doesn't match what the question is asking for.",
+      "correct_explanation": "The answer is 160 mm. The key is identifying what operation to use, then applying it to the right numbers from the problem."
     },
     "tags": [
-      "money-problems",
+      "unit-conversion",
       "grade-3-4"
     ],
     "topic": "word_problems",
     "topic_name": "Word Problems",
     "hint": {
-      "level_0": "Count all people sharing, including Kiwi.",
-      "level_1": "Divide total cost by number of people.",
-      "level_2": "Kiwi + 3 friends = 4 people. $6 / 4.",
-      "level_3": "$6.00 / 4 = ?",
-      "level_4": "$6.00 / 4 = $1.50 each.",
-      "level_5": "4 people share $6.00. $6 / 4 = $1.50 each."
+      "level_0": "Before calculating, picture the situation in your head. What's happening in this story?",
+      "level_1": "Circle the numbers and underline the question. What operation connects them?",
+      "level_2": "Work through the problem step by step using the numbers given: 18, 2.",
+      "level_3": "Here's the solution: The answer is 160 mm. Work through each step carefully to see why."
     },
-    "concept_cluster": "measurement/money",
-    "visual_context": "Coins and items with price tags shown for the shopping scenario.",
+    "concept_cluster": "measurement/unit_conversion",
+    "visual_context": "A measurement scale or ruler showing the conversion between units.",
     "interaction_mode": "multiple_choice",
     "irt_params": {
-      "a": 1.1,
-      "b": 1.05,
-      "c": 0.25
+      "a": 1.2,
+      "b": -1.65,
+      "c": 0.22
     },
-    "irt_a": 1.1,
-    "irt_b": 1.05,
-    "irt_c": 0.25,
+    "irt_a": 1.2,
+    "irt_b": -1.65,
+    "irt_c": 0.22,
     "solution_steps": [
-      "Given: 3 groups of 6 each",
-      "Operation needed: multiplication",
-      "Multiply: 3 × 6"
-    ]
+      "Identify what's given: 18, 2",
+      "Determine what's being asked",
+      "Choose the right operation"
+    ],
+    "competency_level": "A",
+    "competency_confidence": 0.833,
+    "competency_name": "Applying"
+  },
+  {
+    "id": "T7-1220",
+    "stem": "Kiwi has 4.2 kg of flour. He uses 1500 g for a cake. How much flour is left in grams?",
+    "choices": [
+      "2700 g",
+      "2800 g",
+      "3700 g",
+      "5700 g"
+    ],
+    "correct_answer": 0,
+    "difficulty_tier": "medium",
+    "difficulty_score": 48,
+    "visual_svg": null,
+    "visual_alt": null,
+    "diagnostics": {
+      "1": "You may have subtracted the wrong way around. The bigger number should be on top.",
+      "2": "Check the problem — words like 'left', 'remaining', or 'gave away' mean subtraction.",
+      "3": "Make sure each digit is in the right column before subtracting.",
+      "correct_explanation": "The answer is 2700 g. We start with the larger amount and take away the smaller amount, leaving us with 2700 g."
+    },
+    "tags": [
+      "unit-conversion",
+      "grade-3-4"
+    ],
+    "topic": "word_problems",
+    "topic_name": "Word Problems",
+    "hint": {
+      "level_0": "Words like 'left', 'remaining', or 'gave away' are clues. What's the bigger number you start with?",
+      "level_1": "Think about what's being taken away. Could you count backwards, or use the relationship between addition and subtraction?",
+      "level_2": "Start with 4. Take away 2. Count backwards 2 steps from 4.",
+      "level_3": "Here's the solution: 4 - 2 = 2700 g. We started with 4 and took away 2."
+    },
+    "concept_cluster": "measurement/unit_conversion",
+    "visual_context": "A measurement scale or ruler showing the conversion between units.",
+    "interaction_mode": "multiple_choice",
+    "irt_params": {
+      "a": 1.18,
+      "b": -1.5,
+      "c": 0.22
+    },
+    "irt_a": 1.18,
+    "irt_b": -1.5,
+    "irt_c": 0.22,
+    "solution_steps": [
+      "Given: started with 4, removed 2",
+      "Operation needed: subtraction",
+      "Subtract: 4 - 2"
+    ],
+    "competency_level": "A",
+    "competency_confidence": 0.833,
+    "competency_name": "Applying"
   }
 ]

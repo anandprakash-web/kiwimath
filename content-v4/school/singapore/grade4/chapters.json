@@ -1,0 +1,325 @@
+{
+  "curriculum": "singapore",
+  "curriculum_name": "Singapore Math",
+  "grade": 4,
+  "total_chapters": 7,
+  "total_questions": 200,
+  "chapters": [
+    {
+      "chapter_name": "4A: Factors and Multiples",
+      "total_questions": 25,
+      "skill_ids": [
+        "counting_10",
+        "addition_basic"
+      ],
+      "adaptive_topic_ids": [
+        "g4-add-sub",
+        "g4-numbers"
+      ],
+      "question_ids": [
+        "SING-G4-023",
+        "SING-G4-024",
+        "SING-G4-027",
+        "SING-G4-029",
+        "SING-G4-030",
+        "SING-G4-031",
+        "SING-G4-036",
+        "SING-G4-037",
+        "SING-G4-044",
+        "SING-G4-050",
+        "SING-G4-056",
+        "SING-G4-062",
+        "SING-G4-077",
+        "SING-G4-085",
+        "SING-G4-092",
+        "SING-G4-099",
+        "SING-G4-107",
+        "SING-G4-109",
+        "SING-G4-110",
+        "SING-G4-118",
+        "SING-G4-128",
+        "SING-G4-146",
+        "SING-G4-148",
+        "SING-G4-149",
+        "SING-G4-155"
+      ],
+      "difficulty_range": {
+        "min": -0.53,
+        "max": 1.54
+      }
+    },
+    {
+      "chapter_name": "4A: Fractions",
+      "total_questions": 35,
+      "skill_ids": [
+        "fraction_concept"
+      ],
+      "adaptive_topic_ids": [
+        "g4-fractions"
+      ],
+      "question_ids": [
+        "SING-G4-046",
+        "SING-G4-057",
+        "SING-G4-066",
+        "SING-G4-078",
+        "SING-G4-079",
+        "SING-G4-082",
+        "SING-G4-083",
+        "SING-G4-086",
+        "SING-G4-087",
+        "SING-G4-093",
+        "SING-G4-111",
+        "SING-G4-112",
+        "SING-G4-119",
+        "SING-G4-122",
+        "SING-G4-129",
+        "SING-G4-130",
+        "SING-G4-131",
+        "SING-G4-132",
+        "SING-G4-136",
+        "SING-G4-141",
+        "SING-G4-142",
+        "SING-G4-145",
+        "SING-G4-147",
+        "SING-G4-150",
+        "SING-G4-156",
+        "SING-G4-157",
+        "SING-G4-163",
+        "SING-G4-164",
+        "SING-G4-165",
+        "SING-G4-168",
+        "SING-G4-172",
+        "SING-G4-175",
+        "SING-G4-176",
+        "SING-G4-178",
+        "SING-G4-179"
+      ],
+      "difficulty_range": {
+        "min": -0.15,
+        "max": 1.91
+      }
+    },
+    {
+      "chapter_name": "4A: Whole Numbers to 100,000",
+      "total_questions": 25,
+      "skill_ids": [
+        "place_value_2"
+      ],
+      "adaptive_topic_ids": [
+        "g4-numbers"
+      ],
+      "question_ids": [
+        "SING-G4-001",
+        "SING-G4-002",
+        "SING-G4-003",
+        "SING-G4-004",
+        "SING-G4-005",
+        "SING-G4-006",
+        "SING-G4-007",
+        "SING-G4-008",
+        "SING-G4-010",
+        "SING-G4-014",
+        "SING-G4-018",
+        "SING-G4-022",
+        "SING-G4-035",
+        "SING-G4-040",
+        "SING-G4-043",
+        "SING-G4-049",
+        "SING-G4-054",
+        "SING-G4-055",
+        "SING-G4-060",
+        "SING-G4-061",
+        "SING-G4-065",
+        "SING-G4-069",
+        "SING-G4-081",
+        "SING-G4-090",
+        "SING-G4-091"
+      ],
+      "difficulty_range": {
+        "min": -1.34,
+        "max": 0.41
+      }
+    },
+    {
+      "chapter_name": "4B: Area of Composite Figures",
+      "total_questions": 25,
+      "skill_ids": [
+        "area"
+      ],
+      "adaptive_topic_ids": [
+        "g4-shapes"
+      ],
+      "question_ids": [
+        "SING-G4-074",
+        "SING-G4-075",
+        "SING-G4-084",
+        "SING-G4-088",
+        "SING-G4-100",
+        "SING-G4-101",
+        "SING-G4-104",
+        "SING-G4-134",
+        "SING-G4-137",
+        "SING-G4-140",
+        "SING-G4-151",
+        "SING-G4-158",
+        "SING-G4-166",
+        "SING-G4-169",
+        "SING-G4-173",
+        "SING-G4-174",
+        "SING-G4-177",
+        "SING-G4-182",
+        "SING-G4-183",
+        "SING-G4-184",
+        "SING-G4-185",
+        "SING-G4-186",
+        "SING-G4-187",
+        "SING-G4-191",
+        "SING-G4-195"
+      ],
+      "difficulty_range": {
+        "min": 0.16,
+        "max": 2.29
+      }
+    },
+    {
+      "chapter_name": "4B: Decimals",
+      "total_questions": 30,
+      "skill_ids": [
+        "subtraction_basic"
+      ],
+      "adaptive_topic_ids": [
+        "g4-add-sub"
+      ],
+      "question_ids": [
+        "SING-G4-011",
+        "SING-G4-012",
+        "SING-G4-013",
+        "SING-G4-015",
+        "SING-G4-016",
+        "SING-G4-019",
+        "SING-G4-025",
+        "SING-G4-026",
+        "SING-G4-028",
+        "SING-G4-032",
+        "SING-G4-033",
+        "SING-G4-034",
+        "SING-G4-038",
+        "SING-G4-041",
+        "SING-G4-045",
+        "SING-G4-047",
+        "SING-G4-051",
+        "SING-G4-052",
+        "SING-G4-058",
+        "SING-G4-067",
+        "SING-G4-070",
+        "SING-G4-071",
+        "SING-G4-072",
+        "SING-G4-073",
+        "SING-G4-094",
+        "SING-G4-113",
+        "SING-G4-123",
+        "SING-G4-124",
+        "SING-G4-133",
+        "SING-G4-139"
+      ],
+      "difficulty_range": {
+        "min": -0.78,
+        "max": 1.04
+      }
+    },
+    {
+      "chapter_name": "4B: Multi-step Word Problems",
+      "total_questions": 35,
+      "skill_ids": [
+        "multi_step"
+      ],
+      "adaptive_topic_ids": [
+        "g4-word-problems"
+      ],
+      "question_ids": [
+        "SING-G4-095",
+        "SING-G4-096",
+        "SING-G4-102",
+        "SING-G4-105",
+        "SING-G4-108",
+        "SING-G4-114",
+        "SING-G4-115",
+        "SING-G4-120",
+        "SING-G4-125",
+        "SING-G4-126",
+        "SING-G4-143",
+        "SING-G4-144",
+        "SING-G4-152",
+        "SING-G4-153",
+        "SING-G4-154",
+        "SING-G4-159",
+        "SING-G4-160",
+        "SING-G4-161",
+        "SING-G4-162",
+        "SING-G4-167",
+        "SING-G4-170",
+        "SING-G4-171",
+        "SING-G4-180",
+        "SING-G4-181",
+        "SING-G4-188",
+        "SING-G4-189",
+        "SING-G4-190",
+        "SING-G4-192",
+        "SING-G4-193",
+        "SING-G4-194",
+        "SING-G4-196",
+        "SING-G4-197",
+        "SING-G4-198",
+        "SING-G4-199",
+        "SING-G4-200"
+      ],
+      "difficulty_range": {
+        "min": 0.47,
+        "max": 2.6
+      }
+    },
+    {
+      "chapter_name": "4B: Symmetry",
+      "total_questions": 25,
+      "skill_ids": [
+        "symmetry"
+      ],
+      "adaptive_topic_ids": [
+        "g4-shapes"
+      ],
+      "question_ids": [
+        "SING-G4-009",
+        "SING-G4-017",
+        "SING-G4-020",
+        "SING-G4-021",
+        "SING-G4-039",
+        "SING-G4-042",
+        "SING-G4-048",
+        "SING-G4-053",
+        "SING-G4-059",
+        "SING-G4-063",
+        "SING-G4-064",
+        "SING-G4-068",
+        "SING-G4-076",
+        "SING-G4-080",
+        "SING-G4-089",
+        "SING-G4-097",
+        "SING-G4-098",
+        "SING-G4-103",
+        "SING-G4-106",
+        "SING-G4-116",
+        "SING-G4-117",
+        "SING-G4-121",
+        "SING-G4-127",
+        "SING-G4-135",
+        "SING-G4-138"
+      ],
+      "difficulty_range": {
+        "min": -0.84,
+        "max": 0.97
+      }
+    }
+  ],
+  "schema_version": "4.0",
+  "generated_at": "2026-05-03T09:32:42.528201"
+}

@@ -7,29 +7,20 @@ import '../services/companion_service.dart';
 import '../theme/kiwi_theme.dart';
 import 'question_screen_v2.dart';
 
-/// Learning Path screen v4 — redesigned with dual-tab layout.
+/// Learning Path v7.0 — "School" tab, curriculum-first.
 ///
-/// Two tabs at the top:
-///   - **Curriculum** (chapters in sequence — NCERT/ICSE flow)
-///   - **Olympiad** (8 Kangaroo topics with level progression)
+/// Two tabs:
+///   - **Chapters** (default) — curriculum chapter tracker (NCERT, ICSE, etc.)
+///   - **Learning Path** — adaptive topic progression
 ///
-/// Default tab = user's onboarded curriculum. For now (pre-curriculum-wiring),
-/// defaults to Olympiad since that's what the backend returns.
-///
-/// Smart nudge: when a student hits level 4+ in their curriculum topics,
-/// show a banner encouraging them to try Olympiad challenges.
+/// Chapters tab shows school-aligned content. Learning Path shows
+/// the adaptive skill progression.
 class LearningPathScreen extends StatefulWidget {
   final String userId;
   final int grade;
   final CompanionService? companionService;
   final StudentLevels? studentLevels;
-
-  /// When true, the screen is embedded inside a bottom-nav shell and should
-  /// not show an AppBar back button.
   final bool embedded;
-
-  /// User's selected curriculum from profile. Determines default tab.
-  /// Values: 'ncert', 'icse', 'olympiad', or null (defaults to olympiad).
   final String? curriculum;
 
   const LearningPathScreen({
@@ -52,13 +43,13 @@ class _LearningPathScreenState extends State<LearningPathScreen> {
   String? _error;
   bool _loading = true;
 
-  // Chapters state (Curriculum tab)
+  // Chapters state (Syllabus tab)
   List<Map<String, dynamic>>? _chapters;
   bool _chaptersLoading = false;
   String? _chaptersError;
 
-  /// 0 = Curriculum (chapters), 1 = Olympiad (topics)
-  late int _activeTab;
+  /// 0 = Chapters (curriculum, default), 1 = Learning Path (adaptive)
+  int _activeTab = 0;
 
   // ---------------------------------------------------------------------------
   // Constants
@@ -71,16 +62,15 @@ class _LearningPathScreenState extends State<LearningPathScreen> {
   @override
   void initState() {
     super.initState();
-    // Default tab: if curriculum is olympiad (or null/unset), show Olympiad first
-    final cur = widget.curriculum ?? 'olympiad';
-    _activeTab = (cur == 'olympiad') ? 1 : 0;
+    // v7: Default to Chapters tab (school-first)
+    _activeTab = 0;
     _load();
     _loadChapters();
   }
 
   Future<void> _loadChapters() async {
     final cur = widget.curriculum;
-    if (cur == null || cur == 'olympiad') return; // No chapters for Olympiad
+    if (cur == null || cur.isEmpty) return;
     setState(() {
       _chaptersLoading = true;
       _chaptersError = null;
@@ -112,9 +102,6 @@ class _LearningPathScreenState extends State<LearningPathScreen> {
       _loadChapters();
     }
     if (widget.curriculum != oldWidget.curriculum) {
-      // Curriculum changed — update default tab + reload chapters
-      final cur = widget.curriculum ?? 'olympiad';
-      _activeTab = (cur == 'olympiad') ? 1 : 0;
       _loadChapters();
     }
   }
@@ -138,19 +125,14 @@ class _LearningPathScreenState extends State<LearningPathScreen> {
       if (!mounted) return;
       String friendlyError;
       final raw = e.toString();
-      if (raw.contains('422') ||
-          raw.contains('less_than_equal') ||
-          raw.contains('validation')) {
+      if (raw.contains('422') || raw.contains('validation')) {
         friendlyError =
             "We're still building the learning path for Grade ${widget.grade}. "
-            "Try Smart Practice for now — it works great!";
-      } else if (raw.contains('SocketException') ||
-          raw.contains('Connection')) {
-        friendlyError =
-            "Hmm, can't reach our servers right now. Check your internet and try again.";
+            "Try Smart Practice for now!";
+      } else if (raw.contains('SocketException') || raw.contains('Connection')) {
+        friendlyError = "Can't reach our servers right now. Check your internet.";
       } else {
-        friendlyError =
-            "Something didn't work quite right. Give it another try!";
+        friendlyError = "Something didn't work. Give it another try!";
       }
       setState(() {
         _error = friendlyError;
@@ -181,22 +163,8 @@ class _LearningPathScreenState extends State<LearningPathScreen> {
     );
   }
 
-  /// Check if any topic has level >= 4 (triggers the olympiad nudge).
-  bool get _showOlympiadNudge {
-    if (_activeTab != 0) return false; // only show on Curriculum tab
-    final levels = widget.studentLevels;
-    if (levels == null) return false;
-    return levels.topics.any((t) => t.currentLevel >= 4);
-  }
-
-  /// Find the highest-level topic name for the nudge text.
-  String get _nudgeTopicName {
-    final levels = widget.studentLevels;
-    if (levels == null) return '';
-    final sorted = [...levels.topics]
-      ..sort((a, b) => b.currentLevel.compareTo(a.currentLevel));
-    return sorted.isNotEmpty ? sorted.first.topicName : '';
-  }
+  bool get _hasSyllabus =>
+      widget.curriculum != null && widget.curriculum!.isNotEmpty;
 
   // ---------------------------------------------------------------------------
   // Build
@@ -225,7 +193,7 @@ class _LearningPathScreenState extends State<LearningPathScreen> {
       child: Row(
         children: [
           Text(
-            'Your path',
+            'School',
             style: TextStyle(
               fontSize: 20,
               fontWeight: FontWeight.w800,
@@ -264,16 +232,8 @@ class _LearningPathScreenState extends State<LearningPathScreen> {
         ),
         child: Row(
           children: [
-            _buildTab(
-              label: 'Chapters',
-              index: 0,
-              tier: tier,
-            ),
-            _buildTab(
-              label: 'Olympiad',
-              index: 1,
-              tier: tier,
-            ),
+            _buildTab(label: 'Chapters', index: 0, tier: tier),
+            _buildTab(label: 'Learning Path', index: 1, tier: tier),
           ],
         ),
       ),
@@ -321,6 +281,15 @@ class _LearningPathScreenState extends State<LearningPathScreen> {
   }
 
   Widget _buildBody(KiwiTier tier) {
+    // Chapters tab (school curriculum) — default
+    if (_activeTab == 0 && _hasSyllabus) {
+      return _buildSyllabusTab(tier);
+    }
+    if (_activeTab == 0 && !_hasSyllabus) {
+      return _buildNoSyllabusPlaceholder(tier);
+    }
+
+    // Learning Path tab (adaptive)
     if (_loading) {
       return const Center(child: CircularProgressIndicator());
     }
@@ -331,7 +300,7 @@ class _LearningPathScreenState extends State<LearningPathScreen> {
     if (data == null) {
       return Center(
         child: Text(
-          'No learning path yet. Try Smart Practice first!',
+          'No learning path yet. Try Smart Practice on the Home tab!',
           style: TextStyle(
             fontSize: 14,
             color: tier.colors.textPrimary.withOpacity(0.5),
@@ -344,13 +313,11 @@ class _LearningPathScreenState extends State<LearningPathScreen> {
         .whereType<Map<String, dynamic>>()
         .toList();
 
-    // First not-yet-mastered stop is the "current" one.
     int currentIdx = path.indexWhere(
       (s) => (s['mastery_label'] as String? ?? '') != 'mastered',
     );
     if (currentIdx < 0) currentIdx = 0;
 
-    // Count mastered
     final masteredCount =
         path.where((s) => s['mastery_label'] == 'mastered').length;
 
@@ -359,32 +326,135 @@ class _LearningPathScreenState extends State<LearningPathScreen> {
       child: ListView(
         padding: const EdgeInsets.fromLTRB(18, 4, 18, 28),
         children: [
-          // Progress bar
           _buildProgressBar(masteredCount, path.length, tier),
           const SizedBox(height: 14),
-          // Olympiad nudge (only on Curriculum tab when kid is doing well)
-          if (_showOlympiadNudge) ...[
-            _buildOlympiadNudge(tier),
-            const SizedBox(height: 14),
-          ],
-          // Curriculum tab — real chapters from /v2/chapters API
-          if (_activeTab == 0) ...[
-            _buildCurriculumChapters(tier),
-          ] else ...[
-            // Olympiad tab — show the path stops
-            for (int i = 0; i < path.length; i++)
-              _PathStopCard(
-                stop: path[i],
-                index: i,
-                isFirst: i == 0,
-                isLast: i == path.length - 1,
-                isCurrent: i == currentIdx,
-                onStart: i == currentIdx ? () => _startStop(path[i]) : null,
-                studentLevels: widget.studentLevels,
-              ),
-          ],
+          for (int i = 0; i < path.length; i++)
+            _PathStopCard(
+              stop: path[i],
+              index: i,
+              isFirst: i == 0,
+              isLast: i == path.length - 1,
+              isCurrent: i == currentIdx,
+              onStart: i == currentIdx ? () => _startStop(path[i]) : null,
+              studentLevels: widget.studentLevels,
+            ),
         ],
       ),
+    );
+  }
+
+  Widget _buildNoSyllabusPlaceholder(KiwiTier tier) {
+    return Center(
+      child: Padding(
+        padding: const EdgeInsets.all(32),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Icon(Icons.school_rounded, size: 48,
+                color: tier.colors.primary.withOpacity(0.4)),
+            const SizedBox(height: 16),
+            Text(
+              'No school board selected',
+              style: TextStyle(
+                fontSize: 16,
+                fontWeight: FontWeight.w700,
+                color: tier.colors.textPrimary,
+              ),
+            ),
+            const SizedBox(height: 8),
+            Text(
+              'Select your curriculum (NCERT, ICSE, etc.) in settings '
+              'to see school chapters here.',
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontSize: 13,
+                color: tier.colors.textPrimary.withOpacity(0.5),
+                height: 1.4,
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildSyllabusTab(KiwiTier tier) {
+    if (_chaptersLoading) {
+      return const Center(child: CircularProgressIndicator());
+    }
+    if (_chaptersError != null) {
+      return _ErrorView(message: _chaptersError!, onRetry: _loadChapters);
+    }
+    final chapters = _chapters;
+    if (chapters == null || chapters.isEmpty) {
+      final curLabel = (widget.curriculum ?? '').toUpperCase();
+      return Center(
+        child: Padding(
+          padding: const EdgeInsets.all(24),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Icon(Icons.menu_book_rounded, size: 40,
+                  color: tier.colors.textPrimary.withOpacity(0.3)),
+              const SizedBox(height: 12),
+              Text(
+                '$curLabel chapters coming soon',
+                style: TextStyle(fontSize: 14, fontWeight: FontWeight.w700,
+                    color: tier.colors.textPrimary.withOpacity(0.7)),
+              ),
+              const SizedBox(height: 6),
+              Text(
+                'Chapter-wise content is being prepared.\nUse Learning Path tab for adaptive learning!',
+                textAlign: TextAlign.center,
+                style: TextStyle(fontSize: 12.5,
+                    color: tier.colors.textPrimary.withOpacity(0.5), height: 1.4),
+              ),
+            ],
+          ),
+        ),
+      );
+    }
+
+    return ListView(
+      padding: const EdgeInsets.fromLTRB(18, 4, 18, 28),
+      children: [
+        // Syllabus info header
+        Container(
+          padding: const EdgeInsets.all(12),
+          margin: const EdgeInsets.only(bottom: 14),
+          decoration: BoxDecoration(
+            color: KiwiColors.kiwiPrimaryLight,
+            borderRadius: BorderRadius.circular(12),
+            border: Border.all(color: KiwiColors.kiwiPrimary.withOpacity(0.2)),
+          ),
+          child: Row(
+            children: [
+              const Icon(Icons.info_outline_rounded, size: 16,
+                  color: KiwiColors.kiwiPrimaryDark),
+              const SizedBox(width: 8),
+              Expanded(
+                child: Text(
+                  'Your ${widget.curriculum?.toUpperCase() ?? ""} school chapters. '
+                  'Practice each chapter to build mastery!',
+                  style: const TextStyle(
+                    fontSize: 11,
+                    color: KiwiColors.kiwiPrimaryDark,
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+        for (int i = 0; i < chapters.length; i++) ...[
+          _ChapterCard(
+            chapter: chapters[i],
+            index: i,
+            tier: tier,
+            onTap: () => _startChapter(chapters[i]),
+          ),
+          if (i < chapters.length - 1) const SizedBox(height: 10),
+        ],
+      ],
     );
   }
 
@@ -409,7 +479,7 @@ class _LearningPathScreenState extends State<LearningPathScreen> {
               style: TextStyle(
                 fontSize: 12,
                 fontWeight: FontWeight.w700,
-                color: _tealDone,
+                color: tier.colors.primary,
               ),
             ),
           ],
@@ -421,131 +491,9 @@ class _LearningPathScreenState extends State<LearningPathScreen> {
             value: fraction,
             minHeight: 6,
             backgroundColor: tier.colors.backgroundDark,
-            valueColor: const AlwaysStoppedAnimation<Color>(_tealDone),
+            valueColor: AlwaysStoppedAnimation<Color>(tier.colors.primary),
           ),
         ),
-      ],
-    );
-  }
-
-  Widget _buildOlympiadNudge(KiwiTier tier) {
-    return GestureDetector(
-      onTap: () => setState(() => _activeTab = 1),
-      child: Container(
-        padding: const EdgeInsets.all(12),
-        decoration: BoxDecoration(
-          gradient: const LinearGradient(
-            colors: [Color(0xFFFFF3E0), Color(0xFFFFFBF5)],
-            begin: Alignment.topLeft,
-            end: Alignment.bottomRight,
-          ),
-          borderRadius: BorderRadius.circular(12),
-          border: Border.all(color: _orangeStart.withOpacity(0.2)),
-        ),
-        child: Row(
-          children: [
-            Container(
-              width: 32,
-              height: 32,
-              decoration: BoxDecoration(
-                color: _orangeStart.withOpacity(0.12),
-                shape: BoxShape.circle,
-              ),
-              child: const Icon(
-                Icons.stars_rounded,
-                size: 18,
-                color: _orangeStart,
-              ),
-            ),
-            const SizedBox(width: 10),
-            Expanded(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    'You\'re crushing $_nudgeTopicName!',
-                    style: TextStyle(
-                      fontSize: 13,
-                      fontWeight: FontWeight.w700,
-                      color: tier.colors.textPrimary,
-                    ),
-                  ),
-                  const SizedBox(height: 2),
-                  Text(
-                    'Try Olympiad-level challenges too',
-                    style: TextStyle(
-                      fontSize: 11.5,
-                      color: tier.colors.textPrimary.withOpacity(0.6),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-            Icon(
-              Icons.arrow_forward_ios_rounded,
-              size: 14,
-              color: _orangeStart,
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-
-  Widget _buildCurriculumChapters(KiwiTier tier) {
-    if (_chaptersLoading) {
-      return const Padding(
-        padding: EdgeInsets.symmetric(vertical: 40),
-        child: Center(child: CircularProgressIndicator()),
-      );
-    }
-    if (_chaptersError != null) {
-      return _ErrorView(message: _chaptersError!, onRetry: _loadChapters);
-    }
-    final chapters = _chapters;
-    if (chapters == null || chapters.isEmpty) {
-      // Fallback for no data / olympiad users who switch to Chapters tab
-      final curLabel = (widget.curriculum ?? 'NCERT').toUpperCase();
-      return Container(
-        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 24),
-        decoration: BoxDecoration(
-          color: tier.colors.backgroundDark,
-          borderRadius: BorderRadius.circular(14),
-        ),
-        child: Column(
-          children: [
-            Icon(Icons.menu_book_rounded, size: 40,
-                color: tier.colors.textPrimary.withOpacity(0.3)),
-            const SizedBox(height: 12),
-            Text(
-              '$curLabel chapters coming soon',
-              style: TextStyle(fontSize: 14, fontWeight: FontWeight.w700,
-                  color: tier.colors.textPrimary.withOpacity(0.7)),
-            ),
-            const SizedBox(height: 6),
-            Text(
-              'We\'re building chapter-wise content for your curriculum.\nTry Olympiad practice in the meantime!',
-              textAlign: TextAlign.center,
-              style: TextStyle(fontSize: 12.5,
-                  color: tier.colors.textPrimary.withOpacity(0.5), height: 1.4),
-            ),
-          ],
-        ),
-      );
-    }
-
-    // Real chapters list
-    return Column(
-      children: [
-        for (int i = 0; i < chapters.length; i++) ...[
-          _ChapterCard(
-            chapter: chapters[i],
-            index: i,
-            tier: tier,
-            onTap: () => _startChapter(chapters[i]),
-          ),
-          if (i < chapters.length - 1) const SizedBox(height: 10),
-        ],
       ],
     );
   }
@@ -554,7 +502,6 @@ class _LearningPathScreenState extends State<LearningPathScreen> {
     final chapterName = chapter['name'] as String? ?? 'Chapter';
     final chapterId = chapter['id'] as String? ?? '';
     final cur = widget.curriculum ?? 'ncert';
-    // Navigate to question screen with chapter + curriculum for IRT-powered practice
     Navigator.of(context).push(
       MaterialPageRoute(
         builder: (_) => QuestionScreenV2(
@@ -577,7 +524,7 @@ class _LearningPathScreenState extends State<LearningPathScreen> {
 }
 
 // =============================================================================
-// Chapter card for curriculum tab
+// Chapter card for school tab — engaging, colorful, progress-aware
 // =============================================================================
 
 class _ChapterCard extends StatelessWidget {
@@ -593,22 +540,43 @@ class _ChapterCard extends StatelessWidget {
     required this.onTap,
   });
 
+  // Topic emojis for visual variety
+  static const _topicEmojis = [
+    '\u{1F522}', // numbers
+    '\u{2795}',  // addition
+    '\u{2796}',  // subtraction
+    '\u{2716}',  // multiplication
+    '\u{2797}',  // division
+    '\u{1F4D0}', // geometry
+    '\u{1F4CF}', // measurement
+    '\u{1F4CA}', // data
+    '\u{1F9E9}', // patterns/puzzles
+    '\u{1F4B0}', // money
+    '\u{23F0}',  // time
+    '\u{1F354}', // fractions
+    '\u{1F4C8}', // charts
+    '\u{1F3AF}', // target/accuracy
+    '\u{2B50}',  // star
+    '\u{1F680}', // rocket
+  ];
+
+  static const _accentColors = [
+    Color(0xFFFF6D00), Color(0xFF1565C0),
+    Color(0xFF6A1B9A), Color(0xFF00897B),
+    Color(0xFFC62828), Color(0xFF00838F),
+    Color(0xFF4527A0), Color(0xFFAD1457),
+  ];
+
   @override
   Widget build(BuildContext context) {
     final name = chapter['name'] as String? ?? 'Chapter ${index + 1}';
     final questionCount = chapter['question_count'] as int? ?? 0;
     final topics = (chapter['topics'] as List<dynamic>?)?.cast<String>() ?? [];
+    final progress = (chapter['progress'] as num?)?.toDouble() ?? 0.0;
+    final isComplete = progress >= 1.0;
 
-    // Chapter number colors cycle through a palette
-    final colors = [
-      const Color(0xFF2E7D32),
-      const Color(0xFF1565C0),
-      const Color(0xFF6A1B9A),
-      const Color(0xFFFF6D00),
-      const Color(0xFFC62828),
-      const Color(0xFF00838F),
-    ];
-    final accentColor = colors[index % colors.length];
+    final accentColor = _accentColors[index % _accentColors.length];
+    final emoji = _topicEmojis[index % _topicEmojis.length];
 
     return GestureDetector(
       onTap: onTap,
@@ -616,8 +584,11 @@ class _ChapterCard extends StatelessWidget {
         padding: const EdgeInsets.all(14),
         decoration: BoxDecoration(
           color: Colors.white,
-          borderRadius: BorderRadius.circular(14),
-          border: Border.all(color: accentColor.withOpacity(0.15)),
+          borderRadius: BorderRadius.circular(16),
+          border: Border.all(
+            color: isComplete ? const Color(0xFF4CAF50).withOpacity(0.3) : accentColor.withOpacity(0.15),
+            width: isComplete ? 1.5 : 1,
+          ),
           boxShadow: [
             BoxShadow(
               color: accentColor.withOpacity(0.06),
@@ -628,30 +599,50 @@ class _ChapterCard extends StatelessWidget {
         ),
         child: Row(
           children: [
-            // Chapter number badge
+            // Emoji icon in colored circle
             Container(
-              width: 40,
-              height: 40,
+              width: 46,
+              height: 46,
               decoration: BoxDecoration(
-                color: accentColor.withOpacity(0.1),
-                borderRadius: BorderRadius.circular(10),
+                gradient: LinearGradient(
+                  colors: [accentColor.withOpacity(0.15), accentColor.withOpacity(0.08)],
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                ),
+                borderRadius: BorderRadius.circular(13),
               ),
               alignment: Alignment.center,
-              child: Text(
-                '${index + 1}',
-                style: TextStyle(
-                  fontSize: 16,
-                  fontWeight: FontWeight.w800,
-                  color: accentColor,
-                ),
-              ),
+              child: Text(emoji, style: const TextStyle(fontSize: 22)),
             ),
             const SizedBox(width: 12),
-            // Chapter info
             Expanded(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
+                  // Chapter number + name
+                  Row(
+                    children: [
+                      Container(
+                        padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 1),
+                        decoration: BoxDecoration(
+                          color: accentColor.withOpacity(0.1),
+                          borderRadius: BorderRadius.circular(6),
+                        ),
+                        child: Text(
+                          'Ch ${index + 1}',
+                          style: TextStyle(
+                            fontSize: 10,
+                            fontWeight: FontWeight.w700,
+                            color: accentColor,
+                          ),
+                        ),
+                      ),
+                      const SizedBox(width: 6),
+                      if (isComplete)
+                        const Icon(Icons.check_circle, size: 14, color: Color(0xFF4CAF50)),
+                    ],
+                  ),
+                  const SizedBox(height: 3),
                   Text(
                     name,
                     style: TextStyle(
@@ -659,39 +650,62 @@ class _ChapterCard extends StatelessWidget {
                       fontWeight: FontWeight.w700,
                       color: tier.colors.textPrimary,
                     ),
+                    maxLines: 2,
+                    overflow: TextOverflow.ellipsis,
                   ),
                   if (topics.isNotEmpty) ...[
                     const SizedBox(height: 3),
                     Text(
-                      topics.take(3).join(', '),
+                      topics.take(3).join(' \u{2022} '),
                       style: TextStyle(
-                        fontSize: 11.5,
-                        color: tier.colors.textPrimary.withOpacity(0.5),
+                        fontSize: 11,
+                        color: tier.colors.textPrimary.withOpacity(0.45),
                       ),
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
                     ),
                   ],
+                  // Progress bar
+                  if (progress > 0 && !isComplete) ...[
+                    const SizedBox(height: 6),
+                    ClipRRect(
+                      borderRadius: BorderRadius.circular(3),
+                      child: LinearProgressIndicator(
+                        value: progress,
+                        minHeight: 4,
+                        backgroundColor: accentColor.withOpacity(0.1),
+                        valueColor: AlwaysStoppedAnimation<Color>(accentColor),
+                      ),
+                    ),
+                  ],
                 ],
               ),
             ),
-            // Question count + chevron
+            const SizedBox(width: 8),
             Column(
-              crossAxisAlignment: CrossAxisAlignment.end,
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  '$questionCount Qs',
+                  '$questionCount',
                   style: TextStyle(
-                    fontSize: 11,
-                    fontWeight: FontWeight.w600,
-                    color: accentColor.withOpacity(0.7),
+                    fontSize: 16,
+                    fontWeight: FontWeight.w800,
+                    color: accentColor,
+                  ),
+                ),
+                Text(
+                  'Qs',
+                  style: TextStyle(
+                    fontSize: 10,
+                    fontWeight: FontWeight.w500,
+                    color: accentColor.withOpacity(0.5),
                   ),
                 ),
               ],
             ),
             const SizedBox(width: 4),
-            Icon(Icons.chevron_right_rounded,
-                size: 20, color: accentColor.withOpacity(0.4)),
+            Icon(Icons.play_circle_filled_rounded,
+                size: 24, color: accentColor.withOpacity(0.6)),
           ],
         ),
       ),
@@ -700,7 +714,7 @@ class _ChapterCard extends StatelessWidget {
 }
 
 // =============================================================================
-// Path stop card with vertical timeline
+// Path stop card — visual timeline with topic icons and progress
 // =============================================================================
 
 class _PathStopCard extends StatelessWidget {
@@ -723,13 +737,35 @@ class _PathStopCard extends StatelessWidget {
   });
 
   static const _orangeStart = Color(0xFFFF6D00);
-  static const _tealDone = Color(0xFF1D9E75);
+  static const _tealDone = Color(0xFF4CAF50);
 
-  /// Level colors consistent with home screen.
+  // Topic-specific emojis for visual identity
+  static const _topicEmojis = {
+    'counting': '\u{1F522}',
+    'arithmetic': '\u{2795}',
+    'patterns': '\u{1F9E9}',
+    'logic': '\u{1F9E0}',
+    'spatial': '\u{1F4D0}',
+    'shapes': '\u{1F4D0}',
+    'word': '\u{1F4D6}',
+    'puzzles': '\u{1F3B2}',
+    'fractions': '\u{1F354}',
+    'geometry': '\u{1F4CF}',
+    'measurement': '\u{1F4CF}',
+    'data': '\u{1F4CA}',
+  };
+
+  String _emojiForTopic(String topicId) {
+    for (final entry in _topicEmojis.entries) {
+      if (topicId.toLowerCase().contains(entry.key)) return entry.value;
+    }
+    return '\u{2B50}'; // default star
+  }
+
   Color _levelBadgeColor(int level) {
-    if (level >= 7) return const Color(0xFF7B1FA2); // purple
-    if (level >= 4) return const Color(0xFF1976D2); // blue
-    return const Color(0xFF388E3C); // green
+    if (level >= 7) return const Color(0xFF7B1FA2);
+    if (level >= 4) return const Color(0xFF1976D2);
+    return const Color(0xFF388E3C);
   }
 
   Color _levelBadgeBg(int level) {
@@ -746,16 +782,15 @@ class _PathStopCard extends StatelessWidget {
     final topicId = (stop['topic_id'] as String?) ?? '';
     final qCount = (stop['questions_to_attempt'] as num?)?.toInt() ?? 5;
 
-    // Get level from StudentLevels if available
     int level = (stop['target_difficulty'] as num?)?.toInt() ?? 1;
     if (studentLevels != null) {
-      final topicLevel = studentLevels!.topics.where(
-        (t) => t.topicId == topicId,
-      );
+      final topicLevel = studentLevels!.topics.where((t) => t.topicId == topicId);
       if (topicLevel.isNotEmpty) {
         level = topicLevel.first.currentLevel;
       }
     }
+
+    final emoji = _emojiForTopic(topicId);
 
     return IntrinsicHeight(
       child: Row(
@@ -763,61 +798,60 @@ class _PathStopCard extends StatelessWidget {
         children: [
           // Timeline rail
           SizedBox(
-            width: 32,
+            width: 36,
             child: Column(
               children: [
-                // Top connector
                 Expanded(
                   flex: 1,
                   child: Container(
-                    width: 2,
-                    color: isFirst
-                        ? Colors.transparent
-                        : isMastered
-                            ? _tealDone
-                            : Colors.grey.shade300,
+                    width: 3,
+                    decoration: BoxDecoration(
+                      gradient: isFirst
+                          ? null
+                          : LinearGradient(
+                              begin: Alignment.topCenter,
+                              end: Alignment.bottomCenter,
+                              colors: isMastered
+                                  ? [_tealDone, _tealDone]
+                                  : [Colors.grey.shade300, Colors.grey.shade300],
+                            ),
+                      color: isFirst ? Colors.transparent : null,
+                    ),
                   ),
                 ),
                 // Node
                 Container(
-                  width: isCurrent ? 28 : 24,
-                  height: isCurrent ? 28 : 24,
+                  width: isCurrent ? 32 : 26,
+                  height: isCurrent ? 32 : 26,
                   decoration: BoxDecoration(
                     color: isMastered
                         ? _tealDone
-                        : isCurrent
-                            ? _orangeStart
-                            : Colors.grey.shade300,
+                        : isCurrent ? _orangeStart : Colors.grey.shade300,
                     shape: BoxShape.circle,
                     boxShadow: isCurrent
-                        ? [
-                            BoxShadow(
-                              color: _orangeStart.withOpacity(0.25),
-                              blurRadius: 8,
-                              spreadRadius: 2,
-                            ),
-                          ]
-                        : null,
+                        ? [BoxShadow(color: _orangeStart.withOpacity(0.3), blurRadius: 10, spreadRadius: 2)]
+                        : isMastered
+                            ? [BoxShadow(color: _tealDone.withOpacity(0.2), blurRadius: 6)]
+                            : null,
                   ),
                   alignment: Alignment.center,
                   child: isMastered
-                      ? const Icon(Icons.check, color: Colors.white, size: 14)
-                      : Text(
-                          '${index + 1}',
-                          style: TextStyle(
-                            fontSize: 11,
-                            fontWeight: FontWeight.w800,
-                            color: isCurrent
-                                ? Colors.white
-                                : Colors.grey.shade600,
-                          ),
-                        ),
+                      ? const Icon(Icons.check_rounded, color: Colors.white, size: 16)
+                      : isCurrent
+                          ? const Icon(Icons.play_arrow_rounded, color: Colors.white, size: 18)
+                          : Text(
+                              '${index + 1}',
+                              style: TextStyle(
+                                fontSize: 11,
+                                fontWeight: FontWeight.w800,
+                                color: Colors.grey.shade600,
+                              ),
+                            ),
                 ),
-                // Bottom connector
                 Expanded(
                   flex: 5,
                   child: Container(
-                    width: 2,
+                    width: 3,
                     color: isLast ? Colors.transparent : Colors.grey.shade300,
                   ),
                 ),
@@ -830,24 +864,28 @@ class _PathStopCard extends StatelessWidget {
             child: Padding(
               padding: const EdgeInsets.only(bottom: 10, top: 2),
               child: Container(
-                padding: const EdgeInsets.all(12),
+                padding: const EdgeInsets.all(14),
                 decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(12),
+                  color: isCurrent ? const Color(0xFFFFF8F0) : Colors.white,
+                  borderRadius: BorderRadius.circular(14),
                   border: Border.all(
-                    color: isCurrent
-                        ? _orangeStart
-                        : Colors.grey.shade200,
+                    color: isCurrent ? _orangeStart.withOpacity(0.5) : Colors.grey.shade200,
                     width: isCurrent ? 1.5 : 1,
                   ),
+                  boxShadow: isCurrent
+                      ? [BoxShadow(color: _orangeStart.withOpacity(0.08), blurRadius: 12, offset: const Offset(0, 3))]
+                      : null,
                 ),
                 child: Opacity(
-                  opacity: (isMastered || isCurrent) ? 1.0 : 0.55,
+                  opacity: (isMastered || isCurrent) ? 1.0 : 0.5,
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Row(
                         children: [
+                          // Topic emoji
+                          Text(emoji, style: const TextStyle(fontSize: 20)),
+                          const SizedBox(width: 8),
                           Expanded(
                             child: Text(
                               topicName,
@@ -860,10 +898,7 @@ class _PathStopCard extends StatelessWidget {
                           ),
                           // Level badge
                           Container(
-                            padding: const EdgeInsets.symmetric(
-                              horizontal: 8,
-                              vertical: 2,
-                            ),
+                            padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
                             decoration: BoxDecoration(
                               color: _levelBadgeBg(level),
                               borderRadius: BorderRadius.circular(10),
@@ -879,45 +914,62 @@ class _PathStopCard extends StatelessWidget {
                           ),
                         ],
                       ),
-                      const SizedBox(height: 4),
-                      Text(
-                        isMastered
-                            ? 'Mastered'
-                            : isCurrent
-                                ? 'Next: $qCount questions recommended'
-                                : 'Up next',
-                        style: TextStyle(
-                          fontSize: 12,
-                          color: isMastered
-                              ? _tealDone
-                              : Colors.grey.shade600,
-                          fontWeight: isMastered
-                              ? FontWeight.w600
-                              : FontWeight.w400,
-                        ),
+                      const SizedBox(height: 6),
+                      // Status text
+                      Row(
+                        children: [
+                          if (isMastered)
+                            Icon(Icons.verified_rounded, size: 14, color: _tealDone),
+                          if (isMastered) const SizedBox(width: 4),
+                          Text(
+                            isMastered
+                                ? 'Mastered!'
+                                : isCurrent
+                                    ? '$qCount questions \u{2022} Let\'s go!'
+                                    : 'Up next',
+                            style: TextStyle(
+                              fontSize: 12,
+                              color: isMastered ? _tealDone : Colors.grey.shade600,
+                              fontWeight: isMastered ? FontWeight.w600 : FontWeight.w400,
+                            ),
+                          ),
+                        ],
                       ),
-                      // "Continue practice" button for current stop
+                      // Start button for current topic
                       if (onStart != null) ...[
-                        const SizedBox(height: 10),
+                        const SizedBox(height: 12),
                         GestureDetector(
                           onTap: onStart,
                           child: Container(
                             width: double.infinity,
-                            padding: const EdgeInsets.symmetric(vertical: 10),
+                            padding: const EdgeInsets.symmetric(vertical: 11),
                             decoration: BoxDecoration(
                               gradient: const LinearGradient(
                                 colors: [_orangeStart, Color(0xFFFF9100)],
                               ),
-                              borderRadius: BorderRadius.circular(10),
+                              borderRadius: BorderRadius.circular(12),
+                              boxShadow: [
+                                BoxShadow(
+                                  color: _orangeStart.withOpacity(0.25),
+                                  blurRadius: 6,
+                                  offset: const Offset(0, 2),
+                                ),
+                              ],
                             ),
-                            alignment: Alignment.center,
-                            child: const Text(
-                              'Continue practice',
-                              style: TextStyle(
-                                fontSize: 13,
-                                fontWeight: FontWeight.w700,
-                                color: Colors.white,
-                              ),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: const [
+                                Icon(Icons.play_arrow_rounded, color: Colors.white, size: 18),
+                                SizedBox(width: 4),
+                                Text(
+                                  'Start practice',
+                                  style: TextStyle(
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.w700,
+                                    color: Colors.white,
+                                  ),
+                                ),
+                              ],
                             ),
                           ),
                         ),
@@ -951,11 +1003,7 @@ class _ErrorView extends StatelessWidget {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Icon(
-              Icons.route_rounded,
-              size: 48,
-              color: Colors.grey.shade300,
-            ),
+            Icon(Icons.route_rounded, size: 48, color: Colors.grey.shade300),
             const SizedBox(height: 12),
             const Text(
               'Path is warming up!',
@@ -969,31 +1017,20 @@ class _ErrorView extends StatelessWidget {
             Text(
               message,
               textAlign: TextAlign.center,
-              style: TextStyle(
-                fontSize: 13,
-                color: Colors.grey.shade600,
-                height: 1.4,
-              ),
+              style: TextStyle(fontSize: 13, color: Colors.grey.shade600, height: 1.4),
             ),
             const SizedBox(height: 18),
             GestureDetector(
               onTap: onRetry,
               child: Container(
-                padding: const EdgeInsets.symmetric(
-                  horizontal: 20,
-                  vertical: 10,
-                ),
+                padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
                 decoration: BoxDecoration(
-                  color: KiwiColors.kiwiGreen,
+                  color: KiwiColors.kiwiPrimary,
                   borderRadius: BorderRadius.circular(12),
                 ),
                 child: const Text(
                   'Try again',
-                  style: TextStyle(
-                    fontSize: 14,
-                    fontWeight: FontWeight.w700,
-                    color: Colors.white,
-                  ),
+                  style: TextStyle(fontSize: 14, fontWeight: FontWeight.w700, color: Colors.white),
                 ),
               ),
             ),

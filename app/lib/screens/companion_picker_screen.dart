@@ -81,7 +81,7 @@ class _CompanionPickerScreenState extends State<CompanionPickerScreen>
           gradient: LinearGradient(
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
-            colors: [Color(0xFFF0FFF0), Color(0xFFE8F5E9), Color(0xFFDCEDC8)],
+            colors: [Color(0xFFFFF8F0), Color(0xFFFFF3E0), Color(0xFFFFE0B2)],
           ),
         ),
         child: SafeArea(
@@ -95,7 +95,7 @@ class _CompanionPickerScreenState extends State<CompanionPickerScreen>
                 style: TextStyle(
                   fontSize: 24,
                   fontWeight: FontWeight.w800,
-                  color: Color(0xFF2E7D32),
+                  color: Color(0xFFE65100),
                 ),
               ),
               const SizedBox(height: 8),

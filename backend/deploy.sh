@@ -78,12 +78,12 @@ gcloud run deploy "$SERVICE_NAME" \
     --region "$GCP_REGION" \
     --platform managed \
     --allow-unauthenticated \
-    --memory 512Mi \
+    --memory 1Gi \
     --cpu 1 \
     --min-instances 1 \
     --max-instances 10 \
     --concurrency 80 \
-    --timeout 60 \
+    --timeout 300 \
     --set-env-vars "KIWIMATH_V2_CONTENT_DIR=/content-v2" \
     --port 8000
 

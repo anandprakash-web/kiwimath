@@ -1,0 +1,652 @@
+{
+  "version": "4.0",
+  "description": "Kiwimath adaptive topic map — grade-specific topics with IRT sequencing",
+  "grades": {
+    "1": {
+      "topic_count": 8,
+      "topics": [
+        {
+          "id": "g1-counting",
+          "name": "Counting & Numbers",
+          "emoji": "🔢",
+          "skills": [
+            "counting_10",
+            "counting_100",
+            "comparison"
+          ],
+          "domain": "numbers"
+        },
+        {
+          "id": "g1-addition",
+          "name": "Addition",
+          "emoji": "➕",
+          "skills": [
+            "addition_basic"
+          ],
+          "domain": "arithmetic"
+        },
+        {
+          "id": "g1-subtraction",
+          "name": "Subtraction",
+          "emoji": "➖",
+          "skills": [
+            "subtraction_basic"
+          ],
+          "domain": "arithmetic"
+        },
+        {
+          "id": "g1-shapes",
+          "name": "Shapes & Geometry",
+          "emoji": "📐",
+          "skills": [
+            "shapes_2d",
+            "shapes_3d",
+            "symmetry"
+          ],
+          "domain": "geometry"
+        },
+        {
+          "id": "g1-patterns",
+          "name": "Patterns & Sequences",
+          "emoji": "🧩",
+          "skills": [
+            "number_patterns"
+          ],
+          "domain": "numbers"
+        },
+        {
+          "id": "g1-measurement",
+          "name": "Measurement",
+          "emoji": "📏",
+          "skills": [
+            "length",
+            "weight",
+            "capacity"
+          ],
+          "domain": "measurement"
+        },
+        {
+          "id": "g1-time-money",
+          "name": "Time & Money",
+          "emoji": "⏰",
+          "skills": [
+            "time",
+            "money"
+          ],
+          "domain": "measurement"
+        },
+        {
+          "id": "g1-word-problems",
+          "name": "Word Problems",
+          "emoji": "📖",
+          "skills": [
+            "multi_step",
+            "data_handling"
+          ],
+          "domain": "arithmetic"
+        }
+      ]
+    },
+    "2": {
+      "topic_count": 8,
+      "topics": [
+        {
+          "id": "g2-counting",
+          "name": "Counting & Numbers",
+          "emoji": "🔢",
+          "skills": [
+            "counting_10",
+            "counting_100",
+            "comparison",
+            "place_value_2"
+          ],
+          "domain": "numbers"
+        },
+        {
+          "id": "g2-addition",
+          "name": "Addition",
+          "emoji": "➕",
+          "skills": [
+            "addition_basic",
+            "addition_2digit"
+          ],
+          "domain": "arithmetic"
+        },
+        {
+          "id": "g2-subtraction",
+          "name": "Subtraction",
+          "emoji": "➖",
+          "skills": [
+            "subtraction_basic",
+            "subtraction_2digit"
+          ],
+          "domain": "arithmetic"
+        },
+        {
+          "id": "g2-shapes",
+          "name": "Shapes & Geometry",
+          "emoji": "📐",
+          "skills": [
+            "shapes_2d",
+            "shapes_3d",
+            "symmetry"
+          ],
+          "domain": "geometry"
+        },
+        {
+          "id": "g2-patterns",
+          "name": "Patterns & Sequences",
+          "emoji": "🧩",
+          "skills": [
+            "number_patterns"
+          ],
+          "domain": "numbers"
+        },
+        {
+          "id": "g2-measurement",
+          "name": "Measurement",
+          "emoji": "📏",
+          "skills": [
+            "length",
+            "weight",
+            "capacity",
+            "unit_conversion"
+          ],
+          "domain": "measurement"
+        },
+        {
+          "id": "g2-time-money",
+          "name": "Time & Money",
+          "emoji": "⏰",
+          "skills": [
+            "time",
+            "money"
+          ],
+          "domain": "measurement"
+        },
+        {
+          "id": "g2-word-problems",
+          "name": "Word Problems",
+          "emoji": "📖",
+          "skills": [
+            "multi_step",
+            "data_handling",
+            "multiplication_facts",
+            "division_basic"
+          ],
+          "domain": "arithmetic"
+        }
+      ]
+    },
+    "3": {
+      "topic_count": 11,
+      "topics": [
+        {
+          "id": "g3-numbers",
+          "name": "Numbers & Place Value",
+          "emoji": "🔢",
+          "skills": [
+            "counting_100",
+            "place_value_2",
+            "place_value_3",
+            "comparison",
+            "rounding"
+          ],
+          "domain": "numbers"
+        },
+        {
+          "id": "g3-add-sub",
+          "name": "Addition & Subtraction",
+          "emoji": "➕",
+          "skills": [
+            "addition_basic",
+            "addition_2digit",
+            "subtraction_basic",
+            "subtraction_2digit"
+          ],
+          "domain": "arithmetic"
+        },
+        {
+          "id": "g3-multiplication",
+          "name": "Multiplication",
+          "emoji": "✖️",
+          "skills": [
+            "multiplication_facts"
+          ],
+          "domain": "arithmetic"
+        },
+        {
+          "id": "g3-division",
+          "name": "Division",
+          "emoji": "➗",
+          "skills": [
+            "division_basic"
+          ],
+          "domain": "arithmetic"
+        },
+        {
+          "id": "g3-fractions",
+          "name": "Fractions",
+          "emoji": "🍔",
+          "skills": [
+            "fraction_concept",
+            "fraction_compare"
+          ],
+          "domain": "fractions"
+        },
+        {
+          "id": "g3-shapes",
+          "name": "Shapes & Geometry",
+          "emoji": "📐",
+          "skills": [
+            "shapes_2d",
+            "shapes_3d",
+            "symmetry",
+            "perimeter"
+          ],
+          "domain": "geometry"
+        },
+        {
+          "id": "g3-patterns",
+          "name": "Patterns & Logic",
+          "emoji": "🧩",
+          "skills": [
+            "number_patterns"
+          ],
+          "domain": "numbers"
+        },
+        {
+          "id": "g3-measurement",
+          "name": "Measurement",
+          "emoji": "📏",
+          "skills": [
+            "length",
+            "weight",
+            "capacity",
+            "unit_conversion"
+          ],
+          "domain": "measurement"
+        },
+        {
+          "id": "g3-time-money",
+          "name": "Time & Money",
+          "emoji": "⏰",
+          "skills": [
+            "time",
+            "money"
+          ],
+          "domain": "measurement"
+        },
+        {
+          "id": "g3-word-problems",
+          "name": "Word Problems & Puzzles",
+          "emoji": "📖",
+          "skills": [
+            "multi_step"
+          ],
+          "domain": "arithmetic"
+        },
+        {
+          "id": "g3-data",
+          "name": "Data Handling",
+          "emoji": "📈",
+          "skills": [
+            "data_handling"
+          ],
+          "domain": "data"
+        }
+      ]
+    },
+    "4": {
+      "topic_count": 11,
+      "topics": [
+        {
+          "id": "g4-numbers",
+          "name": "Numbers & Place Value",
+          "emoji": "🔢",
+          "skills": [
+            "place_value_3",
+            "place_value_4",
+            "comparison",
+            "rounding"
+          ],
+          "domain": "numbers"
+        },
+        {
+          "id": "g4-add-sub",
+          "name": "Addition & Subtraction",
+          "emoji": "➕",
+          "skills": [
+            "addition_2digit",
+            "subtraction_2digit"
+          ],
+          "domain": "arithmetic"
+        },
+        {
+          "id": "g4-multiplication",
+          "name": "Multiplication",
+          "emoji": "✖️",
+          "skills": [
+            "multiplication_facts"
+          ],
+          "domain": "arithmetic"
+        },
+        {
+          "id": "g4-division",
+          "name": "Division",
+          "emoji": "➗",
+          "skills": [
+            "division_basic"
+          ],
+          "domain": "arithmetic"
+        },
+        {
+          "id": "g4-fractions",
+          "name": "Fractions",
+          "emoji": "🍔",
+          "skills": [
+            "fraction_concept",
+            "fraction_compare",
+            "fraction_add"
+          ],
+          "domain": "fractions"
+        },
+        {
+          "id": "g4-shapes",
+          "name": "Shapes & Geometry",
+          "emoji": "📐",
+          "skills": [
+            "shapes_2d",
+            "shapes_3d",
+            "symmetry",
+            "perimeter",
+            "area",
+            "angles"
+          ],
+          "domain": "geometry"
+        },
+        {
+          "id": "g4-patterns",
+          "name": "Patterns & Logic",
+          "emoji": "🧩",
+          "skills": [
+            "number_patterns"
+          ],
+          "domain": "numbers"
+        },
+        {
+          "id": "g4-measurement",
+          "name": "Measurement",
+          "emoji": "📏",
+          "skills": [
+            "length",
+            "weight",
+            "capacity",
+            "unit_conversion"
+          ],
+          "domain": "measurement"
+        },
+        {
+          "id": "g4-time-money",
+          "name": "Time & Money",
+          "emoji": "⏰",
+          "skills": [
+            "time",
+            "money"
+          ],
+          "domain": "measurement"
+        },
+        {
+          "id": "g4-word-problems",
+          "name": "Word Problems & Puzzles",
+          "emoji": "📖",
+          "skills": [
+            "multi_step",
+            "order_of_ops"
+          ],
+          "domain": "arithmetic"
+        },
+        {
+          "id": "g4-data",
+          "name": "Data Handling",
+          "emoji": "📈",
+          "skills": [
+            "data_handling"
+          ],
+          "domain": "data"
+        }
+      ]
+    },
+    "5": {
+      "topic_count": 10,
+      "topics": [
+        {
+          "id": "g5-numbers",
+          "name": "Numbers & Number Systems",
+          "emoji": "🔢",
+          "skills": [
+            "place_value_4",
+            "comparison",
+            "rounding"
+          ],
+          "domain": "numbers"
+        },
+        {
+          "id": "g5-arithmetic",
+          "name": "Arithmetic Operations",
+          "emoji": "➕",
+          "skills": [
+            "addition_2digit",
+            "subtraction_2digit",
+            "multiplication_facts",
+            "division_basic",
+            "multi_step",
+            "order_of_ops"
+          ],
+          "domain": "arithmetic"
+        },
+        {
+          "id": "g5-fractions",
+          "name": "Fractions & Decimals",
+          "emoji": "🍔",
+          "skills": [
+            "fraction_concept",
+            "fraction_compare",
+            "fraction_add",
+            "fraction_multiply"
+          ],
+          "domain": "fractions"
+        },
+        {
+          "id": "g5-percent",
+          "name": "Percentage & Ratio",
+          "emoji": "📊",
+          "skills": [
+            "percentage_basic",
+            "ratio_basic",
+            "pct_fraction",
+            "percentage_word"
+          ],
+          "domain": "ratio"
+        },
+        {
+          "id": "g5-algebra",
+          "name": "Algebra & Equations",
+          "emoji": "📝",
+          "skills": [
+            "number_patterns",
+            "order_of_ops"
+          ],
+          "domain": "numbers"
+        },
+        {
+          "id": "g5-geometry",
+          "name": "Geometry & Angles",
+          "emoji": "📐",
+          "skills": [
+            "shapes_2d",
+            "shapes_3d",
+            "symmetry",
+            "perimeter",
+            "area",
+            "angles"
+          ],
+          "domain": "geometry"
+        },
+        {
+          "id": "g5-measurement",
+          "name": "Measurement & Conversion",
+          "emoji": "📏",
+          "skills": [
+            "length",
+            "weight",
+            "capacity",
+            "unit_conversion"
+          ],
+          "domain": "measurement"
+        },
+        {
+          "id": "g5-data",
+          "name": "Data Handling & Statistics",
+          "emoji": "📈",
+          "skills": [
+            "data_handling"
+          ],
+          "domain": "measurement"
+        },
+        {
+          "id": "g5-patterns",
+          "name": "Patterns & Logic",
+          "emoji": "🧩",
+          "skills": [
+            "number_patterns"
+          ],
+          "domain": "numbers"
+        },
+        {
+          "id": "g5-word-problems",
+          "name": "Word Problems",
+          "emoji": "📖",
+          "skills": [
+            "multi_step"
+          ],
+          "domain": "arithmetic"
+        }
+      ]
+    },
+    "6": {
+      "topic_count": 10,
+      "topics": [
+        {
+          "id": "g6-numbers",
+          "name": "Numbers & Number Systems",
+          "emoji": "🔢",
+          "skills": [
+            "place_value_4",
+            "comparison",
+            "rounding"
+          ],
+          "domain": "numbers"
+        },
+        {
+          "id": "g6-arithmetic",
+          "name": "Arithmetic Operations",
+          "emoji": "➕",
+          "skills": [
+            "addition_2digit",
+            "subtraction_2digit",
+            "multiplication_facts",
+            "division_basic",
+            "multi_step",
+            "order_of_ops"
+          ],
+          "domain": "arithmetic"
+        },
+        {
+          "id": "g6-fractions",
+          "name": "Fractions & Decimals",
+          "emoji": "🍔",
+          "skills": [
+            "fraction_concept",
+            "fraction_compare",
+            "fraction_add",
+            "fraction_multiply"
+          ],
+          "domain": "fractions"
+        },
+        {
+          "id": "g6-percent",
+          "name": "Percentage & Ratio",
+          "emoji": "📊",
+          "skills": [
+            "rounding"
+          ],
+          "domain": "numbers"
+        },
+        {
+          "id": "g6-algebra",
+          "name": "Algebra & Equations",
+          "emoji": "📝",
+          "skills": [
+            "number_patterns",
+            "order_of_ops"
+          ],
+          "domain": "numbers"
+        },
+        {
+          "id": "g6-geometry",
+          "name": "Geometry & Angles",
+          "emoji": "📐",
+          "skills": [
+            "shapes_2d",
+            "shapes_3d",
+            "symmetry",
+            "perimeter",
+            "area",
+            "angles"
+          ],
+          "domain": "geometry"
+        },
+        {
+          "id": "g6-measurement",
+          "name": "Measurement & Conversion",
+          "emoji": "📏",
+          "skills": [
+            "length",
+            "weight",
+            "capacity",
+            "unit_conversion"
+          ],
+          "domain": "measurement"
+        },
+        {
+          "id": "g6-data",
+          "name": "Data Handling & Statistics",
+          "emoji": "📈",
+          "skills": [
+            "data_handling"
+          ],
+          "domain": "measurement"
+        },
+        {
+          "id": "g6-patterns",
+          "name": "Patterns & Logic",
+          "emoji": "🧩",
+          "skills": [
+            "number_patterns"
+          ],
+          "domain": "numbers"
+        },
+        {
+          "id": "g6-word-problems",
+          "name": "Word Problems",
+          "emoji": "📖",
+          "skills": [
+            "multi_step"
+          ],
+          "domain": "arithmetic"
+        }
+      ]
+    }
+  }
+}

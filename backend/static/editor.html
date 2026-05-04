@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kiwimath Question Editor</title>
+<style>
+  :root {
+    --kiwi: #FF6D00;
+    --kiwi-light: #FFF3E0;
+    --kiwi-dark: #E65100;
+    --green: #2E7D32;
+    --red: #C62828;
+    --bg: #FAFAFA;
+    --card: #FFFFFF;
+    --border: #E0E0E0;
+    --text: #212121;
+    --muted: #757575;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); }
+
+  /* Top bar */
+  .topbar { background: var(--kiwi); color: white; padding: 12px 16px; display: flex; align-items: center; gap: 12px; position: sticky; top: 0; z-index: 100; }
+  .topbar h1 { font-size: 18px; font-weight: 700; }
+  .topbar .stats { margin-left: auto; font-size: 13px; opacity: 0.9; }
+
+  /* Filters */
+  .filters { padding: 12px 16px; background: var(--card); border-bottom: 1px solid var(--border); display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+  .filters select, .filters input { padding: 8px 12px; border: 1px solid var(--border); border-radius: 8px; font-size: 14px; background: white; }
+  .filters input[type="text"] { flex: 1; min-width: 150px; }
+  .filters button { padding: 8px 16px; background: var(--kiwi); color: white; border: none; border-radius: 8px; font-size: 14px; cursor: pointer; font-weight: 600; }
+  .filters button:hover { background: var(--kiwi-dark); }
+
+  /* Question list */
+  .list { padding: 8px 16px; }
+  .q-row { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 12px 14px; margin-bottom: 8px; cursor: pointer; transition: border-color 0.2s; }
+  .q-row:hover { border-color: var(--kiwi); }
+  .q-row.flagged { border-left: 4px solid var(--red); }
+  .q-id { font-size: 11px; color: var(--muted); font-weight: 600; }
+  .q-stem { font-size: 14px; margin: 4px 0; line-height: 1.4; }
+  .q-meta { font-size: 11px; color: var(--muted); display: flex; gap: 8px; flex-wrap: wrap; }
+  .q-meta .tag { background: var(--kiwi-light); color: var(--kiwi-dark); padding: 2px 6px; border-radius: 4px; font-weight: 600; }
+
+  /* Pagination */
+  .pagination { display: flex; justify-content: center; gap: 8px; padding: 16px; }
+  .pagination button { padding: 8px 14px; border: 1px solid var(--border); background: var(--card); border-radius: 8px; cursor: pointer; font-size: 13px; }
+  .pagination button.active { background: var(--kiwi); color: white; border-color: var(--kiwi); }
+  .pagination button:disabled { opacity: 0.4; cursor: default; }
+
+  /* Editor panel (slides in from right) */
+  .editor-overlay { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.3); z-index: 200; display: none; }
+  .editor-overlay.open { display: block; }
+  .editor { position: fixed; top: 0; right: 0; bottom: 0; width: 100%; max-width: 520px; background: var(--card); z-index: 201; overflow-y: auto; transform: translateX(100%); transition: transform 0.25s ease; box-shadow: -4px 0 20px rgba(0,0,0,0.15); }
+  .editor-overlay.open .editor { transform: translateX(0); }
+
+  .editor-header { padding: 14px 16px; background: var(--kiwi); color: white; display: flex; align-items: center; gap: 10px; position: sticky; top: 0; z-index: 10; }
+  .editor-header h2 { font-size: 16px; flex: 1; }
+  .editor-header button { background: rgba(255,255,255,0.2); border: none; color: white; padding: 6px 12px; border-radius: 6px; cursor: pointer; font-size: 13px; font-weight: 600; }
+  .editor-header .close-btn { font-size: 20px; padding: 4px 8px; }
+
+  .editor-body { padding: 16px; }
+  .field { margin-bottom: 16px; }
+  .field label { display: block; font-size: 12px; font-weight: 600; color: var(--muted); margin-bottom: 4px; text-transform: uppercase; letter-spacing: 0.5px; }
+  .field input, .field textarea, .field select { width: 100%; padding: 10px 12px; border: 1px solid var(--border); border-radius: 8px; font-size: 14px; font-family: inherit; }
+  .field textarea { min-height: 80px; resize: vertical; }
+  .field input:focus, .field textarea:focus, .field select:focus { outline: none; border-color: var(--kiwi); box-shadow: 0 0 0 3px rgba(255,109,0,0.1); }
+
+  .choices-group { display: flex; flex-direction: column; gap: 8px; }
+  .choice-row { display: flex; align-items: center; gap: 8px; }
+  .choice-row input[type="text"] { flex: 1; }
+  .choice-row input[type="radio"] { width: 18px; height: 18px; accent-color: var(--green); }
+  .choice-row.correct { background: #E8F5E9; border-radius: 8px; padding: 4px 8px; }
+
+  .hint-group { display: flex; flex-direction: column; gap: 6px; }
+  .hint-row label { font-size: 11px; margin-bottom: 0; }
+  .hint-row textarea { min-height: 40px; font-size: 13px; }
+
+  .save-bar { position: sticky; bottom: 0; background: var(--card); padding: 12px 16px; border-top: 1px solid var(--border); display: flex; gap: 8px; }
+  .save-bar button { flex: 1; padding: 12px; border: none; border-radius: 10px; font-size: 15px; font-weight: 700; cursor: pointer; }
+  .save-bar .save-btn { background: var(--green); color: white; }
+  .save-bar .save-btn:hover { background: #1B5E20; }
+  .save-bar .save-btn:disabled { background: #A5D6A7; cursor: default; }
+  .save-bar .delete-btn { background: #FFEBEE; color: var(--red); flex: 0.4; }
+  .save-bar .flag-btn { background: #FFF3E0; color: var(--kiwi-dark); flex: 0.4; }
+
+  /* Toast */
+  .toast { position: fixed; bottom: 80px; left: 50%; transform: translateX(-50%); background: #333; color: white; padding: 10px 20px; border-radius: 8px; font-size: 14px; z-index: 300; display: none; }
+  .toast.show { display: block; animation: fadeIn 0.3s; }
+  @keyframes fadeIn { from { opacity: 0; transform: translateX(-50%) translateY(10px); } to { opacity: 1; transform: translateX(-50%) translateY(0); } }
+
+  /* Loading */
+  .loading { text-align: center; padding: 40px; color: var(--muted); }
+
+  /* Diagnostics section */
+  .diag-group { display: flex; flex-direction: column; gap: 6px; }
+  .diag-row { display: flex; gap: 8px; align-items: start; }
+  .diag-row select { width: 120px; flex-shrink: 0; }
+  .diag-row textarea { flex: 1; min-height: 40px; font-size: 13px; }
+
+  /* Flag indicators */
+  .flag-badge { display: inline-block; background: #FFCDD2; color: var(--red); font-size: 11px; padding: 2px 6px; border-radius: 4px; font-weight: 600; }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <h1>🥝 Question Editor</h1>
+  <span class="stats" id="stats"></span>
+</div>
+
+<div class="filters">
+  <select id="topicFilter" onchange="loadQuestions()">
+    <option value="">All Topics</option>
+  </select>
+  <select id="diffFilter" onchange="loadQuestions()">
+    <option value="">All Difficulty</option>
+    <option value="easy">Easy</option>
+    <option value="medium">Medium</option>
+    <option value="hard">Hard</option>
+    <option value="advanced">Advanced</option>
+    <option value="expert">Expert</option>
+  </select>
+  <input type="text" id="searchBox" placeholder="Search questions..." onkeyup="debounceSearch()">
+  <button onclick="loadQuestions()">Search</button>
+</div>
+
+<div class="list" id="questionList">
+  <div class="loading">Loading questions...</div>
+</div>
+
+<div class="pagination" id="pagination"></div>
+
+<!-- Editor panel -->
+<div class="editor-overlay" id="editorOverlay" onclick="closeEditor(event)">
+  <div class="editor" onclick="event.stopPropagation()">
+    <div class="editor-header">
+      <h2 id="editorTitle">Edit Question</h2>
+      <button onclick="prevQuestion()" title="Previous">←</button>
+      <button onclick="nextQuestion()" title="Next">→</button>
+      <button class="close-btn" onclick="closeEditor()">✕</button>
+    </div>
+    <div class="editor-body" id="editorBody"></div>
+    <div class="save-bar">
+      <button class="flag-btn" onclick="flagQuestion()">🚩 Flag</button>
+      <button class="save-btn" id="saveBtn" onclick="saveQuestion()">Save Changes</button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+const API = window.location.origin;
+let questions = [];
+let currentIndex = -1;
+let currentPage = 0;
+let totalQuestions = 0;
+const PAGE_SIZE = 30;
+let searchTimer = null;
+let topics = [];
+let hasChanges = false;
+
+// --- Init ---
+async function init() {
+  await loadTopics();
+  await loadQuestions();
+  await loadStats();
+}
+
+async function loadTopics() {
+  try {
+    const res = await fetch(`${API}/content-editor/topics`);
+    if (res.ok) {
+      const data = await res.json();
+      topics = data.topics || [];
+      const sel = document.getElementById('topicFilter');
+      topics.forEach(t => {
+        const opt = document.createElement('option');
+        opt.value = t.topic_id;
+        opt.textContent = `${t.topic_name} (${t.total})`;
+        sel.appendChild(opt);
+      });
+    }
+  } catch(e) { console.error('Failed to load topics', e); }
+}
+
+async function loadStats() {
+  try {
+    const res = await fetch(`${API}/content-editor/stats`);
+    if (res.ok) {
+      const data = await res.json();
+      const issues = (data.issues?.no_choices || 0);
+      document.getElementById('stats').textContent = `${data.total_questions} questions` + (issues ? ` · ${issues} broken` : '');
+    }
+  } catch(e) {}
+}
+
+// --- Load Questions ---
+async function loadQuestions() {
+  const topic = document.getElementById('topicFilter').value;
+  const diff = document.getElementById('diffFilter').value;
+  const search = document.getElementById('searchBox').value.trim();
+
+  const params = new URLSearchParams();
+  if (topic) params.set('topic', topic);
+  if (diff) params.set('difficulty', diff);
+  if (search) params.set('search', search);
+  params.set('limit', PAGE_SIZE);
+  params.set('offset', currentPage * PAGE_SIZE);
+
+  document.getElementById('questionList').innerHTML = '<div class="loading">Loading...</div>';
+
+  try {
+    const res = await fetch(`${API}/content-editor/questions?${params}`);
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const data = await res.json();
+    questions = data.questions || [];
+    totalQuestions = data.total || questions.length;
+    renderList();
+    renderPagination();
+  } catch(e) {
+    document.getElementById('questionList').innerHTML = `<div class="loading">Error loading: ${e.message}</div>`;
+  }
+}
+
+function debounceSearch() {
+  clearTimeout(searchTimer);
+  searchTimer = setTimeout(() => { currentPage = 0; loadQuestions(); }, 400);
+}
+
+// --- Render List ---
+function renderList() {
+  const el = document.getElementById('questionList');
+  if (!questions.length) {
+    el.innerHTML = '<div class="loading">No questions found</div>';
+    return;
+  }
+
+  el.innerHTML = questions.map((q, i) => {
+    const flagged = (q.flag_count || 0) > 0;
+    const stem = q.stem || '';
+    const preview = stem.length > 120 ? stem.slice(0, 120) + '...' : stem;
+    const choices = q.choices || [];
+    const correct = choices[q.correct_answer] || '?';
+
+    return `<div class="q-row ${flagged ? 'flagged' : ''}" onclick="openEditor(${i})">
+      <div style="display:flex;justify-content:space-between;align-items:center">
+        <span class="q-id">${q.id}</span>
+        ${flagged ? '<span class="flag-badge">FLAGGED</span>' : ''}
+      </div>
+      <div class="q-stem">${escHtml(preview)}</div>
+      <div class="q-meta">
+        <span class="tag">${q.difficulty_tier || 'easy'}</span>
+        <span>Score: ${q.difficulty_score || 0}</span>
+        <span>Answer: ${escHtml(correct)}</span>
+        <span>${choices.length} choices</span>
+        <span>${q.interaction_mode || 'mcq'}</span>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function renderPagination() {
+  const totalPages = Math.ceil(totalQuestions / PAGE_SIZE);
+  const el = document.getElementById('pagination');
+  if (totalPages <= 1) { el.innerHTML = ''; return; }
+
+  let html = `<button ${currentPage === 0 ? 'disabled' : ''} onclick="goPage(${currentPage - 1})">← Prev</button>`;
+  html += `<button class="active" disabled>Page ${currentPage + 1} of ${totalPages}</button>`;
+  html += `<button ${currentPage >= totalPages - 1 ? 'disabled' : ''} onclick="goPage(${currentPage + 1})">Next →</button>`;
+  el.innerHTML = html;
+}
+
+function goPage(p) {
+  currentPage = p;
+  loadQuestions();
+  window.scrollTo(0, 0);
+}
+
+// --- Editor ---
+function openEditor(index) {
+  currentIndex = index;
+  const q = questions[index];
+  hasChanges = false;
+  document.getElementById('editorTitle').textContent = q.id;
+  renderEditorForm(q);
+  document.getElementById('editorOverlay').classList.add('open');
+}
+
+function closeEditor(event) {
+  if (event && event.target !== document.getElementById('editorOverlay')) return;
+  if (hasChanges && !confirm('You have unsaved changes. Discard?')) return;
+  document.getElementById('editorOverlay').classList.remove('open');
+}
+
+function prevQuestion() {
+  if (currentIndex > 0) {
+    if (hasChanges && !confirm('Discard unsaved changes?')) return;
+    openEditor(currentIndex - 1);
+  }
+}
+
+function nextQuestion() {
+  if (currentIndex < questions.length - 1) {
+    if (hasChanges && !confirm('Discard unsaved changes?')) return;
+    openEditor(currentIndex + 1);
+  }
+}
+
+function renderEditorForm(q) {
+  const choices = q.choices || [];
+  const correctIdx = q.correct_answer || 0;
+  const hint = q.hint || {};
+  const diag = q.diagnostics || {};
+
+  const hintLevels = ['level_0', 'level_1', 'level_2', 'level_3', 'level_4', 'level_5'];
+  const hintLabels = ['Gentle nudge', 'Where to look', 'Thinking question', 'Break it down', 'Almost there', 'Full explanation'];
+  const diagKeys = Object.keys(diag);
+
+  document.getElementById('editorBody').innerHTML = `
+    <div class="field">
+      <label>Question Stem</label>
+      <textarea id="ed_stem" oninput="markChanged()">${escHtml(q.stem || '')}</textarea>
+    </div>
+
+    <div class="field">
+      <label>Choices (select the correct answer)</label>
+      <div class="choices-group">
+        ${[0,1,2,3].map(i => `
+          <div class="choice-row ${i === correctIdx ? 'correct' : ''}">
+            <input type="radio" name="correct" value="${i}" ${i === correctIdx ? 'checked' : ''} onchange="markChanged(); highlightCorrect()">
+            <input type="text" id="ed_choice_${i}" value="${escAttr(choices[i] || '')}" placeholder="Choice ${i+1}" oninput="markChanged()">
+          </div>
+        `).join('')}
+      </div>
+    </div>
+
+    <div class="field" style="display:flex;gap:12px">
+      <div style="flex:1">
+        <label>Difficulty Tier</label>
+        <select id="ed_tier" onchange="markChanged()">
+          ${['easy','medium','hard','advanced','expert'].map(t => `<option value="${t}" ${t === q.difficulty_tier ? 'selected' : ''}>${t}</option>`).join('')}
+        </select>
+      </div>
+      <div style="flex:1">
+        <label>Difficulty Score (1-500)</label>
+        <input type="number" id="ed_score" min="1" max="500" value="${q.difficulty_score || 50}" oninput="markChanged()">
+      </div>
+    </div>
+
+    <div class="field">
+      <label>Interaction Mode</label>
+      <select id="ed_mode" onchange="markChanged()">
+        ${['mcq','integer','drag_drop'].map(m => `<option value="${m}" ${m === q.interaction_mode ? 'selected' : ''}>${m}</option>`).join('')}
+      </select>
+    </div>
+
+    <div class="field">
+      <label>Tags (comma-separated)</label>
+      <input type="text" id="ed_tags" value="${escAttr((q.tags || []).join(', '))}" oninput="markChanged()">
+    </div>
+
+    <div class="field">
+      <label>Hint Ladder (6 levels — leave empty to skip)</label>
+      <div class="hint-group">
+        ${hintLevels.map((lvl, i) => `
+          <div class="hint-row">
+            <label>${hintLabels[i]}</label>
+            <textarea id="ed_hint_${lvl}" oninput="markChanged()">${escHtml(typeof hint === 'object' ? (hint[lvl] || '') : (i === 0 ? hint : ''))}</textarea>
+          </div>
+        `).join('')}
+      </div>
+    </div>
+
+    <div class="field">
+      <label>Diagnostics (wrong answer explanations)</label>
+      <div class="diag-group" id="diagGroup">
+        ${choices.map((c, i) => {
+          if (i === correctIdx) return '';
+          const key = String(i);
+          return `<div class="diag-row">
+            <span style="min-width:80px;font-size:12px;padding-top:10px;color:var(--muted)">Choice ${i+1}:</span>
+            <textarea id="ed_diag_${i}" oninput="markChanged()">${escHtml(diag[key] || diag[c] || '')}</textarea>
+          </div>`;
+        }).join('')}
+      </div>
+    </div>
+
+    <div class="field">
+      <label>Topic</label>
+      <input type="text" value="${escAttr(q.topic_name || q.topic || '')}" disabled style="background:#f5f5f5">
+    </div>
+  `;
+}
+
+function highlightCorrect() {
+  document.querySelectorAll('.choice-row').forEach((row, i) => {
+    const radio = row.querySelector('input[type="radio"]');
+    row.classList.toggle('correct', radio.checked);
+  });
+}
+
+function markChanged() {
+  hasChanges = true;
+  document.getElementById('saveBtn').textContent = '● Save Changes';
+}
+
+// --- Save ---
+async function saveQuestion() {
+  const q = questions[currentIndex];
+  const correctIdx = parseInt(document.querySelector('input[name="correct"]:checked')?.value || '0');
+
+  const choices = [0,1,2,3].map(i => document.getElementById(`ed_choice_${i}`).value.trim());
+
+  // Build hint object
+  const hint = {};
+  let hasHint = false;
+  ['level_0','level_1','level_2','level_3','level_4','level_5'].forEach(lvl => {
+    const val = document.getElementById(`ed_hint_${lvl}`).value.trim();
+    if (val) { hint[lvl] = val; hasHint = true; }
+  });
+
+  // Build diagnostics
+  const diagnostics = {};
+  [0,1,2,3].forEach(i => {
+    if (i === correctIdx) return;
+    const el = document.getElementById(`ed_diag_${i}`);
+    if (el && el.value.trim()) {
+      diagnostics[String(i)] = el.value.trim();
+    }
+  });
+
+  const tags = document.getElementById('ed_tags').value.split(',').map(t => t.trim()).filter(Boolean);
+
+  const body = {
+    stem: document.getElementById('ed_stem').value.trim(),
+    choices: choices,
+    correct_answer: correctIdx,
+    difficulty_tier: document.getElementById('ed_tier').value,
+    difficulty_score: parseInt(document.getElementById('ed_score').value) || 50,
+    tags: tags,
+  };
+
+  if (hasHint) body.hint = hint;
+  if (Object.keys(diagnostics).length) body.diagnostics = diagnostics;
+
+  document.getElementById('saveBtn').disabled = true;
+  document.getElementById('saveBtn').textContent = 'Saving...';
+
+  try {
+    const res = await fetch(`${API}/content-editor/questions/${q.id}`, {
+      method: 'PUT',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(body),
+    });
+
+    if (!res.ok) {
+      const err = await res.text();
+      throw new Error(err);
+    }
+
+    const updated = await res.json();
+    questions[currentIndex] = { ...q, ...body };
+    hasChanges = false;
+    showToast('Saved!');
+    renderList();
+    renderEditorForm(questions[currentIndex]);
+  } catch(e) {
+    showToast('Error: ' + e.message);
+  } finally {
+    document.getElementById('saveBtn').disabled = false;
+    document.getElementById('saveBtn').textContent = 'Save Changes';
+  }
+}
+
+async function flagQuestion() {
+  const q = questions[currentIndex];
+  const reason = prompt('What is wrong with this question?');
+  if (!reason) return;
+
+  try {
+    await fetch(`${API}/flag/submit`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        question_id: q.id,
+        student_id: 'content_team',
+        flag_type: 'question_error',
+        comment: reason,
+      }),
+    });
+    showToast('Flagged for review');
+  } catch(e) {
+    showToast('Error flagging: ' + e.message);
+  }
+}
+
+// --- Helpers ---
+function escHtml(s) { return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+function escAttr(s) { return String(s).replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/'/g,'&#39;'); }
+
+function showToast(msg) {
+  const el = document.getElementById('toast');
+  el.textContent = msg;
+  el.classList.add('show');
+  setTimeout(() => el.classList.remove('show'), 2500);
+}
+
+init();
+</script>
+</body>
+</html>

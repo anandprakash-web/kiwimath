@@ -1,0 +1,250 @@
+{
+  "total_with_svg": 8280,
+  "total_unverified": 8280,
+  "total_essential_missing": 9444,
+  "questions_with_svg": [
+    {
+      "id": "T2-002",
+      "svg": "t2-101.svg",
+      "verified": false,
+      "type": "2d",
+      "requirement": "essential"
+    },
+    {
+      "id": "T2-003",
+      "svg": "t2-102.svg",
+      "verified": false,
+      "type": "2d",
+      "requirement": "essential"
+    },
+    {
+      "id": "T2-005",
+      "svg": "t2-104.svg",
+      "verified": false,
+      "type": "2d",
+      "requirement": "essential"
+    },
+    {
+      "id": "T8-001",
+      "svg": "t8-001.svg",
+      "verified": false,
+      "type": "2d",
+      "requirement": "essential"
+    },
+    {
+      "id": "T2-008",
+      "svg": "t2-106.svg",
+      "verified": false,
+      "type": "2d",
+      "requirement": "essential"
+    },
+    {
+      "id": "T2-011",
+      "svg": "t2-109.svg",
+      "verified": false,
+      "type": "2d",
+      "requirement": "essential"
+    },
+    {
+      "id": "T7-008",
+      "svg": "t7-008.svg",
+      "verified": false,
+      "type": "2d",
+      "requirement": "essential"
+    },
+    {
+      "id": "T8-002",
+      "svg": "t8-002.svg",
+      "verified": false,
+      "type": "2d",
+      "requirement": "essential"
+    },
+    {
+      "id": "T1-009",
+      "svg": "t1-003.svg",
+      "verified": false,
+      "type": "2d",
+      "requirement": "essential"
+    },
+    {
+      "id": "T8-003",
+      "svg": "t8-003.svg",
+      "verified": false,
+      "type": "2d",
+      "requirement": "essential"
+    },
+    {
+      "id": "T1-012",
+      "svg": "t1-004.svg",
+      "verified": false,
+      "type": "2d",
+      "requirement": "essential"
+    },
+    {
+      "id": "T2-021",
+      "svg": "t2-117.svg",
+      "verified": false,
+      "type": "2d",
+      "requirement": "essential"
+    },
+    {
+      "id": "T2-022",
+      "svg": "t2-118.svg",
+      "verified": false,
+      "type": "2d",
+      "requirement": "essential"
+    },
+    {
+      "id": "T8-004",
+      "svg": "t8-004.svg",
+      "verified": false,
+      "type": "2d",
+      "requirement": "essential"
+    },
+    {
+      "id": "T1-017",
+      "svg": "t1-005.svg",
+      "verified": false,
+      "type": "2d",
+      "requirement": "essential"
+    },
+    {
+      "id": "T2-026",
+      "svg": "t2-121-v2.svg",
+      "verified": false,
+      "type": "2d",
+      "requirement": "essential"
+    },
+    {
+      "id": "T2-027",
+      "svg": "t2-122.svg",
+      "verified": false,
+      "type": "2d",
+      "requirement": "essential"
+    },
+    {
+      "id": "T2-028",
+      "svg": "t2-123.svg",
+      "verified": false,
+      "type": "2d",
+      "requirement": "essential"
+    },
+    {
+      "id": "T2-029",
+      "svg": "t2-124.svg",
+      "verified": false,
+      "type": "2d",
+      "requirement": "essential"
+    },
+    {
+      "id": "T8-005",
+      "svg": "t8-005.svg",
+      "verified": false,
+      "type": "2d",
+      "requirement": "essential"
+    }
+  ],
+  "essential_missing_svg": [
+    {
+      "id": "T2-004",
+      "requirement": "essential",
+      "type": "none"
+    },
+    {
+      "id": "T7-005",
+      "requirement": "essential",
+      "type": "none"
+    },
+    {
+      "id": "T2-010",
+      "requirement": "essential",
+      "type": "none"
+    },
+    {
+      "id": "T2-012",
+      "requirement": "essential",
+      "type": "none"
+    },
+    {
+      "id": "T2-014",
+      "requirement": "essential",
+      "type": "none"
+    },
+    {
+      "id": "T2-015",
+      "requirement": "essential",
+      "type": "none"
+    },
+    {
+      "id": "T2-016",
+      "requirement": "essential",
+      "type": "none"
+    },
+    {
+      "id": "T2-018",
+      "requirement": "essential",
+      "type": "none"
+    },
+    {
+      "id": "T7-010",
+      "requirement": "essential",
+      "type": "none"
+    },
+    {
+      "id": "T2-019",
+      "requirement": "essential",
+      "type": "none"
+    },
+    {
+      "id": "T2-020",
+      "requirement": "essential",
+      "type": "none"
+    },
+    {
+      "id": "T2-023",
+      "requirement": "essential",
+      "type": "none"
+    },
+    {
+      "id": "T2-024",
+      "requirement": "essential",
+      "type": "none"
+    },
+    {
+      "id": "T7-012",
+      "requirement": "essential",
+      "type": "none"
+    },
+    {
+      "id": "T7-016",
+      "requirement": "essential",
+      "type": "none"
+    },
+    {
+      "id": "T2-032",
+      "requirement": "essential",
+      "type": "none"
+    },
+    {
+      "id": "T2-036",
+      "requirement": "essential",
+      "type": "none"
+    },
+    {
+      "id": "T7-019",
+      "requirement": "essential",
+      "type": "none"
+    },
+    {
+      "id": "T1-031",
+      "requirement": "essential",
+      "type": "none"
+    },
+    {
+      "id": "T2-037",
+      "requirement": "essential",
+      "type": "none"
+    }
+  ],
+  "generated_at": "2026-05-03T09:39:37.460900"
+}

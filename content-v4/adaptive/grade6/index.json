@@ -1,0 +1,215 @@
+{
+  "grade": 6,
+  "total_topics": 9,
+  "total_questions": 5888,
+  "topics": [
+    {
+      "id": "g6-algebra",
+      "name": "Algebra & Equations",
+      "emoji": "📝",
+      "domain": "algebra",
+      "skills": [
+        "number_patterns",
+        "order_of_ops"
+      ],
+      "total_questions": 418,
+      "difficulty_range": {
+        "min_irt_b": -1.5,
+        "max_irt_b": 1.5
+      },
+      "source_breakdown": {
+        "ncert": 110,
+        "icse": 108,
+        "igcse": 200
+      }
+    },
+    {
+      "id": "g6-arithmetic",
+      "name": "Arithmetic Operations",
+      "emoji": "➕",
+      "domain": "arithmetic",
+      "skills": [
+        "addition_2digit",
+        "subtraction_2digit",
+        "multiplication_facts",
+        "division_basic",
+        "multi_step",
+        "order_of_ops"
+      ],
+      "total_questions": 484,
+      "difficulty_range": {
+        "min_irt_b": -1.47,
+        "max_irt_b": 3.0
+      },
+      "source_breakdown": {
+        "olympiad_clone": 52,
+        "icse": 135,
+        "ncert": 138,
+        "igcse": 80,
+        "singapore": 29,
+        "us-common-core": 50
+      }
+    },
+    {
+      "id": "g6-data",
+      "name": "Data Handling & Statistics",
+      "emoji": "📈",
+      "domain": "data",
+      "skills": [
+        "data_handling"
+      ],
+      "total_questions": 133,
+      "difficulty_range": {
+        "min_irt_b": -2.94,
+        "max_irt_b": 3.0
+      },
+      "source_breakdown": {
+        "igcse": 50,
+        "icse": 50,
+        "ncert": 20,
+        "us-common-core": 13
+      }
+    },
+    {
+      "id": "g6-fractions",
+      "name": "Fractions & Decimals",
+      "emoji": "🍔",
+      "domain": "fractions",
+      "skills": [
+        "fraction_concept",
+        "fraction_compare",
+        "fraction_add",
+        "fraction_multiply"
+      ],
+      "total_questions": 135,
+      "difficulty_range": {
+        "min_irt_b": -1.95,
+        "max_irt_b": 2.93
+      },
+      "source_breakdown": {
+        "olympiad_clone": 12,
+        "igcse": 33,
+        "ncert": 49,
+        "singapore": 6,
+        "icse": 20,
+        "us-common-core": 15
+      }
+    },
+    {
+      "id": "g6-geometry",
+      "name": "Geometry & Angles",
+      "emoji": "📐",
+      "domain": "geometry",
+      "skills": [
+        "shapes_2d",
+        "shapes_3d",
+        "symmetry",
+        "perimeter",
+        "area",
+        "angles"
+      ],
+      "total_questions": 1442,
+      "difficulty_range": {
+        "min_irt_b": -2.45,
+        "max_irt_b": 2.7
+      },
+      "source_breakdown": {
+        "olympiad_clone": 1157,
+        "igcse": 60,
+        "ncert": 133,
+        "icse": 46,
+        "singapore": 25,
+        "us-common-core": 21
+      }
+    },
+    {
+      "id": "g6-measurement",
+      "name": "Measurement & Conversion",
+      "emoji": "📏",
+      "domain": "measurement",
+      "skills": [
+        "length",
+        "weight",
+        "capacity",
+        "unit_conversion"
+      ],
+      "total_questions": 259,
+      "difficulty_range": {
+        "min_irt_b": -2.94,
+        "max_irt_b": 3.0
+      },
+      "source_breakdown": {
+        "igcse": 50,
+        "ncert": 40,
+        "icse": 24,
+        "olympiad_clone": 107,
+        "singapore": 30,
+        "us-common-core": 8
+      }
+    },
+    {
+      "id": "g6-numbers",
+      "name": "Numbers & Number Systems",
+      "emoji": "🔢",
+      "domain": "numbers",
+      "skills": [
+        "place_value_4",
+        "comparison",
+        "rounding"
+      ],
+      "total_questions": 1053,
+      "difficulty_range": {
+        "min_irt_b": -2.94,
+        "max_irt_b": 2.7
+      },
+      "source_breakdown": {
+        "igcse": 120,
+        "olympiad_clone": 601,
+        "ncert": 184,
+        "us-common-core": 93,
+        "singapore": 45,
+        "icse": 10
+      }
+    },
+    {
+      "id": "g6-patterns",
+      "name": "Patterns & Logic",
+      "emoji": "🧩",
+      "domain": "numbers",
+      "skills": [
+        "number_patterns"
+      ],
+      "total_questions": 1283,
+      "difficulty_range": {
+        "min_irt_b": -2.28,
+        "max_irt_b": 2.71
+      },
+      "source_breakdown": {
+        "olympiad_clone": 1221,
+        "ncert": 62
+      }
+    },
+    {
+      "id": "g6-word-problems",
+      "name": "Word Problems",
+      "emoji": "📖",
+      "domain": "arithmetic",
+      "skills": [
+        "multi_step"
+      ],
+      "total_questions": 681,
+      "difficulty_range": {
+        "min_irt_b": -1.49,
+        "max_irt_b": 3.0
+      },
+      "source_breakdown": {
+        "igcse": 7,
+        "icse": 9,
+        "olympiad_clone": 600,
+        "singapore": 65
+      }
+    }
+  ],
+  "schema_version": "4.1",
+  "generated_at": "2026-05-03T10:02:31.452393"
+}

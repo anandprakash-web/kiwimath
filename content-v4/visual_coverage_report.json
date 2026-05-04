@@ -1,0 +1,1293 @@
+{
+  "generated_at": "2026-05-03T09:53:04.419504",
+  "summary": {
+    "total_questions": 36459,
+    "total_with_svg": 8279,
+    "overall_svg_coverage": 22.7,
+    "total_essential_missing": 9440,
+    "total_ai_generated": 8437,
+    "ai_percentage": 23.1,
+    "flagged_topic_count": 54
+  },
+  "flagged_topics": [
+    {
+      "grade": 1,
+      "topic": "Addition",
+      "total": 600,
+      "has_svg": 217,
+      "svg_pct": 36.2,
+      "essential_missing": 131,
+      "ai_generated": 227,
+      "ai_pct": 37.8,
+      "flags": [
+        "essential_missing"
+      ]
+    },
+    {
+      "grade": 1,
+      "topic": "Counting & Numbers",
+      "total": 1100,
+      "has_svg": 427,
+      "svg_pct": 38.8,
+      "essential_missing": 299,
+      "ai_generated": 264,
+      "ai_pct": 24.0,
+      "flags": [
+        "essential_missing"
+      ]
+    },
+    {
+      "grade": 1,
+      "topic": "Measurement",
+      "total": 248,
+      "has_svg": 58,
+      "svg_pct": 23.4,
+      "essential_missing": 8,
+      "ai_generated": 138,
+      "ai_pct": 55.6,
+      "flags": [
+        "high_ai"
+      ]
+    },
+    {
+      "grade": 1,
+      "topic": "Patterns & Sequences",
+      "total": 647,
+      "has_svg": 231,
+      "svg_pct": 35.7,
+      "essential_missing": 27,
+      "ai_generated": 68,
+      "ai_pct": 10.5,
+      "flags": [
+        "essential_missing"
+      ]
+    },
+    {
+      "grade": 1,
+      "topic": "Shapes & Geometry",
+      "total": 687,
+      "has_svg": 488,
+      "svg_pct": 71.0,
+      "essential_missing": 193,
+      "ai_generated": 111,
+      "ai_pct": 16.2,
+      "flags": [
+        "essential_missing"
+      ]
+    },
+    {
+      "grade": 1,
+      "topic": "Subtraction",
+      "total": 324,
+      "has_svg": 125,
+      "svg_pct": 38.6,
+      "essential_missing": 61,
+      "ai_generated": 151,
+      "ai_pct": 46.6,
+      "flags": [
+        "essential_missing",
+        "high_ai"
+      ]
+    },
+    {
+      "grade": 1,
+      "topic": "Time & Money",
+      "total": 312,
+      "has_svg": 58,
+      "svg_pct": 18.6,
+      "essential_missing": 0,
+      "ai_generated": 227,
+      "ai_pct": 72.8,
+      "flags": [
+        "high_ai"
+      ]
+    },
+    {
+      "grade": 1,
+      "topic": "Word Problems",
+      "total": 383,
+      "has_svg": 116,
+      "svg_pct": 30.3,
+      "essential_missing": 238,
+      "ai_generated": 73,
+      "ai_pct": 19.1,
+      "flags": [
+        "essential_missing"
+      ]
+    },
+    {
+      "grade": 2,
+      "topic": "Addition",
+      "total": 819,
+      "has_svg": 308,
+      "svg_pct": 37.6,
+      "essential_missing": 237,
+      "ai_generated": 146,
+      "ai_pct": 17.8,
+      "flags": [
+        "essential_missing"
+      ]
+    },
+    {
+      "grade": 2,
+      "topic": "Counting & Numbers",
+      "total": 1546,
+      "has_svg": 676,
+      "svg_pct": 43.7,
+      "essential_missing": 416,
+      "ai_generated": 219,
+      "ai_pct": 14.2,
+      "flags": [
+        "essential_missing"
+      ]
+    },
+    {
+      "grade": 2,
+      "topic": "Measurement",
+      "total": 168,
+      "has_svg": 47,
+      "svg_pct": 28.0,
+      "essential_missing": 1,
+      "ai_generated": 111,
+      "ai_pct": 66.1,
+      "flags": [
+        "high_ai"
+      ]
+    },
+    {
+      "grade": 2,
+      "topic": "Shapes & Geometry",
+      "total": 1215,
+      "has_svg": 881,
+      "svg_pct": 72.5,
+      "essential_missing": 306,
+      "ai_generated": 117,
+      "ai_pct": 9.6,
+      "flags": [
+        "essential_missing"
+      ]
+    },
+    {
+      "grade": 2,
+      "topic": "Subtraction",
+      "total": 280,
+      "has_svg": 93,
+      "svg_pct": 33.2,
+      "essential_missing": 58,
+      "ai_generated": 104,
+      "ai_pct": 37.1,
+      "flags": [
+        "essential_missing"
+      ]
+    },
+    {
+      "grade": 2,
+      "topic": "Time & Money",
+      "total": 342,
+      "has_svg": 130,
+      "svg_pct": 38.0,
+      "essential_missing": 3,
+      "ai_generated": 229,
+      "ai_pct": 67.0,
+      "flags": [
+        "high_ai"
+      ]
+    },
+    {
+      "grade": 2,
+      "topic": "Word Problems",
+      "total": 1131,
+      "has_svg": 357,
+      "svg_pct": 31.6,
+      "essential_missing": 471,
+      "ai_generated": 344,
+      "ai_pct": 30.4,
+      "flags": [
+        "essential_missing"
+      ]
+    },
+    {
+      "grade": 3,
+      "topic": "Addition & Subtraction",
+      "total": 888,
+      "has_svg": 207,
+      "svg_pct": 23.3,
+      "essential_missing": 198,
+      "ai_generated": 171,
+      "ai_pct": 19.3,
+      "flags": [
+        "essential_missing"
+      ]
+    },
+    {
+      "grade": 3,
+      "topic": "Data Handling",
+      "total": 110,
+      "has_svg": 8,
+      "svg_pct": 7.3,
+      "essential_missing": 102,
+      "ai_generated": 21,
+      "ai_pct": 19.1,
+      "flags": [
+        "low_visual",
+        "essential_missing"
+      ]
+    },
+    {
+      "grade": 3,
+      "topic": "Division",
+      "total": 398,
+      "has_svg": 16,
+      "svg_pct": 4.0,
+      "essential_missing": 39,
+      "ai_generated": 300,
+      "ai_pct": 75.4,
+      "flags": [
+        "low_visual",
+        "essential_missing",
+        "high_ai"
+      ]
+    },
+    {
+      "grade": 3,
+      "topic": "Fractions",
+      "total": 231,
+      "has_svg": 112,
+      "svg_pct": 48.5,
+      "essential_missing": 7,
+      "ai_generated": 129,
+      "ai_pct": 55.8,
+      "flags": [
+        "high_ai"
+      ]
+    },
+    {
+      "grade": 3,
+      "topic": "Measurement",
+      "total": 289,
+      "has_svg": 9,
+      "svg_pct": 3.1,
+      "essential_missing": 0,
+      "ai_generated": 134,
+      "ai_pct": 46.4,
+      "flags": [
+        "low_visual",
+        "high_ai"
+      ]
+    },
+    {
+      "grade": 3,
+      "topic": "Multiplication",
+      "total": 400,
+      "has_svg": 91,
+      "svg_pct": 22.8,
+      "essential_missing": 11,
+      "ai_generated": 270,
+      "ai_pct": 67.5,
+      "flags": [
+        "high_ai"
+      ]
+    },
+    {
+      "grade": 3,
+      "topic": "Numbers & Place Value",
+      "total": 1402,
+      "has_svg": 356,
+      "svg_pct": 25.4,
+      "essential_missing": 412,
+      "ai_generated": 190,
+      "ai_pct": 13.6,
+      "flags": [
+        "essential_missing"
+      ]
+    },
+    {
+      "grade": 3,
+      "topic": "Shapes & Geometry",
+      "total": 1469,
+      "has_svg": 566,
+      "svg_pct": 38.5,
+      "essential_missing": 676,
+      "ai_generated": 176,
+      "ai_pct": 12.0,
+      "flags": [
+        "essential_missing"
+      ]
+    },
+    {
+      "grade": 3,
+      "topic": "Time & Money",
+      "total": 392,
+      "has_svg": 32,
+      "svg_pct": 8.2,
+      "essential_missing": 38,
+      "ai_generated": 183,
+      "ai_pct": 46.7,
+      "flags": [
+        "low_visual",
+        "essential_missing",
+        "high_ai"
+      ]
+    },
+    {
+      "grade": 3,
+      "topic": "Word Problems & Puzzles",
+      "total": 609,
+      "has_svg": 78,
+      "svg_pct": 12.8,
+      "essential_missing": 396,
+      "ai_generated": 51,
+      "ai_pct": 8.4,
+      "flags": [
+        "essential_missing"
+      ]
+    },
+    {
+      "grade": 4,
+      "topic": "Addition & Subtraction",
+      "total": 877,
+      "has_svg": 12,
+      "svg_pct": 1.4,
+      "essential_missing": 75,
+      "ai_generated": 88,
+      "ai_pct": 10.0,
+      "flags": [
+        "low_visual",
+        "essential_missing"
+      ]
+    },
+    {
+      "grade": 4,
+      "topic": "Data Handling",
+      "total": 109,
+      "has_svg": 20,
+      "svg_pct": 18.3,
+      "essential_missing": 89,
+      "ai_generated": 20,
+      "ai_pct": 18.3,
+      "flags": [
+        "essential_missing"
+      ]
+    },
+    {
+      "grade": 4,
+      "topic": "Division",
+      "total": 145,
+      "has_svg": 41,
+      "svg_pct": 28.3,
+      "essential_missing": 17,
+      "ai_generated": 71,
+      "ai_pct": 49.0,
+      "flags": [
+        "high_ai"
+      ]
+    },
+    {
+      "grade": 4,
+      "topic": "Fractions",
+      "total": 209,
+      "has_svg": 107,
+      "svg_pct": 51.2,
+      "essential_missing": 3,
+      "ai_generated": 102,
+      "ai_pct": 48.8,
+      "flags": [
+        "high_ai"
+      ]
+    },
+    {
+      "grade": 4,
+      "topic": "Measurement",
+      "total": 289,
+      "has_svg": 31,
+      "svg_pct": 10.7,
+      "essential_missing": 21,
+      "ai_generated": 138,
+      "ai_pct": 47.8,
+      "flags": [
+        "essential_missing",
+        "high_ai"
+      ]
+    },
+    {
+      "grade": 4,
+      "topic": "Numbers & Place Value",
+      "total": 1413,
+      "has_svg": 87,
+      "svg_pct": 6.2,
+      "essential_missing": 380,
+      "ai_generated": 145,
+      "ai_pct": 10.3,
+      "flags": [
+        "low_visual",
+        "essential_missing"
+      ]
+    },
+    {
+      "grade": 4,
+      "topic": "Patterns & Logic",
+      "total": 1263,
+      "has_svg": 24,
+      "svg_pct": 1.9,
+      "essential_missing": 17,
+      "ai_generated": 32,
+      "ai_pct": 2.5,
+      "flags": [
+        "low_visual"
+      ]
+    },
+    {
+      "grade": 4,
+      "topic": "Shapes & Geometry",
+      "total": 1485,
+      "has_svg": 157,
+      "svg_pct": 10.6,
+      "essential_missing": 874,
+      "ai_generated": 226,
+      "ai_pct": 15.2,
+      "flags": [
+        "essential_missing"
+      ]
+    },
+    {
+      "grade": 4,
+      "topic": "Time & Money",
+      "total": 338,
+      "has_svg": 1,
+      "svg_pct": 0.3,
+      "essential_missing": 66,
+      "ai_generated": 118,
+      "ai_pct": 34.9,
+      "flags": [
+        "low_visual",
+        "essential_missing"
+      ]
+    },
+    {
+      "grade": 4,
+      "topic": "Word Problems & Puzzles",
+      "total": 843,
+      "has_svg": 79,
+      "svg_pct": 9.4,
+      "essential_missing": 475,
+      "ai_generated": 171,
+      "ai_pct": 20.3,
+      "flags": [
+        "low_visual",
+        "essential_missing"
+      ]
+    },
+    {
+      "grade": 5,
+      "topic": "Algebra & Equations",
+      "total": 60,
+      "has_svg": 25,
+      "svg_pct": 41.7,
+      "essential_missing": 0,
+      "ai_generated": 30,
+      "ai_pct": 50.0,
+      "flags": [
+        "high_ai"
+      ]
+    },
+    {
+      "grade": 5,
+      "topic": "Arithmetic Operations",
+      "total": 1185,
+      "has_svg": 156,
+      "svg_pct": 13.2,
+      "essential_missing": 217,
+      "ai_generated": 405,
+      "ai_pct": 34.2,
+      "flags": [
+        "essential_missing"
+      ]
+    },
+    {
+      "grade": 5,
+      "topic": "Data Handling & Statistics",
+      "total": 160,
+      "has_svg": 0,
+      "svg_pct": 0.0,
+      "essential_missing": 160,
+      "ai_generated": 16,
+      "ai_pct": 10.0,
+      "flags": [
+        "low_visual",
+        "essential_missing"
+      ]
+    },
+    {
+      "grade": 5,
+      "topic": "Fractions & Decimals",
+      "total": 298,
+      "has_svg": 79,
+      "svg_pct": 26.5,
+      "essential_missing": 3,
+      "ai_generated": 211,
+      "ai_pct": 70.8,
+      "flags": [
+        "high_ai"
+      ]
+    },
+    {
+      "grade": 5,
+      "topic": "Geometry & Angles",
+      "total": 779,
+      "has_svg": 99,
+      "svg_pct": 12.7,
+      "essential_missing": 458,
+      "ai_generated": 162,
+      "ai_pct": 20.8,
+      "flags": [
+        "essential_missing"
+      ]
+    },
+    {
+      "grade": 5,
+      "topic": "Measurement & Conversion",
+      "total": 544,
+      "has_svg": 76,
+      "svg_pct": 14.0,
+      "essential_missing": 31,
+      "ai_generated": 287,
+      "ai_pct": 52.8,
+      "flags": [
+        "essential_missing",
+        "high_ai"
+      ]
+    },
+    {
+      "grade": 5,
+      "topic": "Numbers & Number Systems",
+      "total": 915,
+      "has_svg": 116,
+      "svg_pct": 12.7,
+      "essential_missing": 196,
+      "ai_generated": 306,
+      "ai_pct": 33.4,
+      "flags": [
+        "essential_missing"
+      ]
+    },
+    {
+      "grade": 5,
+      "topic": "Patterns & Logic",
+      "total": 645,
+      "has_svg": 9,
+      "svg_pct": 1.4,
+      "essential_missing": 17,
+      "ai_generated": 49,
+      "ai_pct": 7.6,
+      "flags": [
+        "low_visual"
+      ]
+    },
+    {
+      "grade": 5,
+      "topic": "Percentage & Ratio",
+      "total": 120,
+      "has_svg": 0,
+      "svg_pct": 0.0,
+      "essential_missing": 0,
+      "ai_generated": 120,
+      "ai_pct": 100.0,
+      "flags": [
+        "low_visual",
+        "high_ai"
+      ]
+    },
+    {
+      "grade": 5,
+      "topic": "Word Problems",
+      "total": 398,
+      "has_svg": 18,
+      "svg_pct": 4.5,
+      "essential_missing": 260,
+      "ai_generated": 100,
+      "ai_pct": 25.1,
+      "flags": [
+        "low_visual",
+        "essential_missing"
+      ]
+    },
+    {
+      "grade": 6,
+      "topic": "Algebra & Equations",
+      "total": 418,
+      "has_svg": 0,
+      "svg_pct": 0.0,
+      "essential_missing": 143,
+      "ai_generated": 308,
+      "ai_pct": 73.7,
+      "flags": [
+        "low_visual",
+        "essential_missing",
+        "high_ai"
+      ]
+    },
+    {
+      "grade": 6,
+      "topic": "Arithmetic Operations",
+      "total": 484,
+      "has_svg": 181,
+      "svg_pct": 37.4,
+      "essential_missing": 61,
+      "ai_generated": 157,
+      "ai_pct": 32.4,
+      "flags": [
+        "essential_missing"
+      ]
+    },
+    {
+      "grade": 6,
+      "topic": "Data Handling & Statistics",
+      "total": 133,
+      "has_svg": 5,
+      "svg_pct": 3.8,
+      "essential_missing": 128,
+      "ai_generated": 0,
+      "ai_pct": 0.0,
+      "flags": [
+        "low_visual",
+        "essential_missing"
+      ]
+    },
+    {
+      "grade": 6,
+      "topic": "Fractions & Decimals",
+      "total": 135,
+      "has_svg": 56,
+      "svg_pct": 41.5,
+      "essential_missing": 3,
+      "ai_generated": 82,
+      "ai_pct": 60.7,
+      "flags": [
+        "high_ai"
+      ]
+    },
+    {
+      "grade": 6,
+      "topic": "Geometry & Angles",
+      "total": 1442,
+      "has_svg": 167,
+      "svg_pct": 11.6,
+      "essential_missing": 841,
+      "ai_generated": 215,
+      "ai_pct": 14.9,
+      "flags": [
+        "essential_missing"
+      ]
+    },
+    {
+      "grade": 6,
+      "topic": "Measurement & Conversion",
+      "total": 259,
+      "has_svg": 26,
+      "svg_pct": 10.0,
+      "essential_missing": 9,
+      "ai_generated": 127,
+      "ai_pct": 49.0,
+      "flags": [
+        "high_ai"
+      ]
+    },
+    {
+      "grade": 6,
+      "topic": "Numbers & Number Systems",
+      "total": 1053,
+      "has_svg": 189,
+      "svg_pct": 17.9,
+      "essential_missing": 34,
+      "ai_generated": 256,
+      "ai_pct": 24.3,
+      "flags": [
+        "essential_missing"
+      ]
+    },
+    {
+      "grade": 6,
+      "topic": "Patterns & Logic",
+      "total": 1283,
+      "has_svg": 27,
+      "svg_pct": 2.1,
+      "essential_missing": 17,
+      "ai_generated": 51,
+      "ai_pct": 4.0,
+      "flags": [
+        "low_visual"
+      ]
+    },
+    {
+      "grade": 6,
+      "topic": "Word Problems",
+      "total": 681,
+      "has_svg": 57,
+      "svg_pct": 8.4,
+      "essential_missing": 476,
+      "ai_generated": 81,
+      "ai_pct": 11.9,
+      "flags": [
+        "low_visual",
+        "essential_missing"
+      ]
+    }
+  ],
+  "by_grade": {
+    "1": {
+      "topics": [
+        {
+          "topic": "Addition",
+          "total": 600,
+          "has_svg": 217,
+          "svg_pct": 36.2,
+          "essential_missing": 131,
+          "ai_generated": 227,
+          "ai_pct": 37.8
+        },
+        {
+          "topic": "Counting & Numbers",
+          "total": 1100,
+          "has_svg": 427,
+          "svg_pct": 38.8,
+          "essential_missing": 299,
+          "ai_generated": 264,
+          "ai_pct": 24.0
+        },
+        {
+          "topic": "Measurement",
+          "total": 248,
+          "has_svg": 58,
+          "svg_pct": 23.4,
+          "essential_missing": 8,
+          "ai_generated": 138,
+          "ai_pct": 55.6
+        },
+        {
+          "topic": "Patterns & Sequences",
+          "total": 647,
+          "has_svg": 231,
+          "svg_pct": 35.7,
+          "essential_missing": 27,
+          "ai_generated": 68,
+          "ai_pct": 10.5
+        },
+        {
+          "topic": "Shapes & Geometry",
+          "total": 687,
+          "has_svg": 488,
+          "svg_pct": 71.0,
+          "essential_missing": 193,
+          "ai_generated": 111,
+          "ai_pct": 16.2
+        },
+        {
+          "topic": "Subtraction",
+          "total": 324,
+          "has_svg": 125,
+          "svg_pct": 38.6,
+          "essential_missing": 61,
+          "ai_generated": 151,
+          "ai_pct": 46.6
+        },
+        {
+          "topic": "Time & Money",
+          "total": 312,
+          "has_svg": 58,
+          "svg_pct": 18.6,
+          "essential_missing": 0,
+          "ai_generated": 227,
+          "ai_pct": 72.8
+        },
+        {
+          "topic": "Word Problems",
+          "total": 383,
+          "has_svg": 116,
+          "svg_pct": 30.3,
+          "essential_missing": 238,
+          "ai_generated": 73,
+          "ai_pct": 19.1
+        }
+      ],
+      "total_questions": 4301,
+      "total_with_svg": 1720,
+      "total_essential_missing": 957
+    },
+    "2": {
+      "topics": [
+        {
+          "topic": "Addition",
+          "total": 819,
+          "has_svg": 308,
+          "svg_pct": 37.6,
+          "essential_missing": 237,
+          "ai_generated": 146,
+          "ai_pct": 17.8
+        },
+        {
+          "topic": "Counting & Numbers",
+          "total": 1546,
+          "has_svg": 676,
+          "svg_pct": 43.7,
+          "essential_missing": 416,
+          "ai_generated": 219,
+          "ai_pct": 14.2
+        },
+        {
+          "topic": "Measurement",
+          "total": 168,
+          "has_svg": 47,
+          "svg_pct": 28.0,
+          "essential_missing": 1,
+          "ai_generated": 111,
+          "ai_pct": 66.1
+        },
+        {
+          "topic": "Patterns & Sequences",
+          "total": 1173,
+          "has_svg": 456,
+          "svg_pct": 38.9,
+          "essential_missing": 17,
+          "ai_generated": 109,
+          "ai_pct": 9.3
+        },
+        {
+          "topic": "Shapes & Geometry",
+          "total": 1215,
+          "has_svg": 881,
+          "svg_pct": 72.5,
+          "essential_missing": 306,
+          "ai_generated": 117,
+          "ai_pct": 9.6
+        },
+        {
+          "topic": "Subtraction",
+          "total": 280,
+          "has_svg": 93,
+          "svg_pct": 33.2,
+          "essential_missing": 58,
+          "ai_generated": 104,
+          "ai_pct": 37.1
+        },
+        {
+          "topic": "Time & Money",
+          "total": 342,
+          "has_svg": 130,
+          "svg_pct": 38.0,
+          "essential_missing": 3,
+          "ai_generated": 229,
+          "ai_pct": 67.0
+        },
+        {
+          "topic": "Word Problems",
+          "total": 1131,
+          "has_svg": 357,
+          "svg_pct": 31.6,
+          "essential_missing": 471,
+          "ai_generated": 344,
+          "ai_pct": 30.4
+        }
+      ],
+      "total_questions": 6674,
+      "total_with_svg": 2948,
+      "total_essential_missing": 1509
+    },
+    "3": {
+      "topics": [
+        {
+          "topic": "Addition & Subtraction",
+          "total": 888,
+          "has_svg": 207,
+          "svg_pct": 23.3,
+          "essential_missing": 198,
+          "ai_generated": 171,
+          "ai_pct": 19.3
+        },
+        {
+          "topic": "Data Handling",
+          "total": 110,
+          "has_svg": 8,
+          "svg_pct": 7.3,
+          "essential_missing": 102,
+          "ai_generated": 21,
+          "ai_pct": 19.1
+        },
+        {
+          "topic": "Division",
+          "total": 398,
+          "has_svg": 16,
+          "svg_pct": 4.0,
+          "essential_missing": 39,
+          "ai_generated": 300,
+          "ai_pct": 75.4
+        },
+        {
+          "topic": "Fractions",
+          "total": 231,
+          "has_svg": 112,
+          "svg_pct": 48.5,
+          "essential_missing": 7,
+          "ai_generated": 129,
+          "ai_pct": 55.8
+        },
+        {
+          "topic": "Measurement",
+          "total": 289,
+          "has_svg": 9,
+          "svg_pct": 3.1,
+          "essential_missing": 0,
+          "ai_generated": 134,
+          "ai_pct": 46.4
+        },
+        {
+          "topic": "Multiplication",
+          "total": 400,
+          "has_svg": 91,
+          "svg_pct": 22.8,
+          "essential_missing": 11,
+          "ai_generated": 270,
+          "ai_pct": 67.5
+        },
+        {
+          "topic": "Numbers & Place Value",
+          "total": 1402,
+          "has_svg": 356,
+          "svg_pct": 25.4,
+          "essential_missing": 412,
+          "ai_generated": 190,
+          "ai_pct": 13.6
+        },
+        {
+          "topic": "Patterns & Logic",
+          "total": 1249,
+          "has_svg": 239,
+          "svg_pct": 19.1,
+          "essential_missing": 13,
+          "ai_generated": 67,
+          "ai_pct": 5.4
+        },
+        {
+          "topic": "Shapes & Geometry",
+          "total": 1469,
+          "has_svg": 566,
+          "svg_pct": 38.5,
+          "essential_missing": 676,
+          "ai_generated": 176,
+          "ai_pct": 12.0
+        },
+        {
+          "topic": "Time & Money",
+          "total": 392,
+          "has_svg": 32,
+          "svg_pct": 8.2,
+          "essential_missing": 38,
+          "ai_generated": 183,
+          "ai_pct": 46.7
+        },
+        {
+          "topic": "Word Problems & Puzzles",
+          "total": 609,
+          "has_svg": 78,
+          "svg_pct": 12.8,
+          "essential_missing": 396,
+          "ai_generated": 51,
+          "ai_pct": 8.4
+        }
+      ],
+      "total_questions": 7437,
+      "total_with_svg": 1714,
+      "total_essential_missing": 1892
+    },
+    "4": {
+      "topics": [
+        {
+          "topic": "Addition & Subtraction",
+          "total": 877,
+          "has_svg": 12,
+          "svg_pct": 1.4,
+          "essential_missing": 75,
+          "ai_generated": 88,
+          "ai_pct": 10.0
+        },
+        {
+          "topic": "Data Handling",
+          "total": 109,
+          "has_svg": 20,
+          "svg_pct": 18.3,
+          "essential_missing": 89,
+          "ai_generated": 20,
+          "ai_pct": 18.3
+        },
+        {
+          "topic": "Division",
+          "total": 145,
+          "has_svg": 41,
+          "svg_pct": 28.3,
+          "essential_missing": 17,
+          "ai_generated": 71,
+          "ai_pct": 49.0
+        },
+        {
+          "topic": "Fractions",
+          "total": 209,
+          "has_svg": 107,
+          "svg_pct": 51.2,
+          "essential_missing": 3,
+          "ai_generated": 102,
+          "ai_pct": 48.8
+        },
+        {
+          "topic": "Measurement",
+          "total": 289,
+          "has_svg": 31,
+          "svg_pct": 10.7,
+          "essential_missing": 21,
+          "ai_generated": 138,
+          "ai_pct": 47.8
+        },
+        {
+          "topic": "Multiplication",
+          "total": 84,
+          "has_svg": 52,
+          "svg_pct": 61.9,
+          "essential_missing": 11,
+          "ai_generated": 33,
+          "ai_pct": 39.3
+        },
+        {
+          "topic": "Numbers & Place Value",
+          "total": 1413,
+          "has_svg": 87,
+          "svg_pct": 6.2,
+          "essential_missing": 380,
+          "ai_generated": 145,
+          "ai_pct": 10.3
+        },
+        {
+          "topic": "Patterns & Logic",
+          "total": 1263,
+          "has_svg": 24,
+          "svg_pct": 1.9,
+          "essential_missing": 17,
+          "ai_generated": 32,
+          "ai_pct": 2.5
+        },
+        {
+          "topic": "Shapes & Geometry",
+          "total": 1485,
+          "has_svg": 157,
+          "svg_pct": 10.6,
+          "essential_missing": 874,
+          "ai_generated": 226,
+          "ai_pct": 15.2
+        },
+        {
+          "topic": "Time & Money",
+          "total": 338,
+          "has_svg": 1,
+          "svg_pct": 0.3,
+          "essential_missing": 66,
+          "ai_generated": 118,
+          "ai_pct": 34.9
+        },
+        {
+          "topic": "Word Problems & Puzzles",
+          "total": 843,
+          "has_svg": 79,
+          "svg_pct": 9.4,
+          "essential_missing": 475,
+          "ai_generated": 171,
+          "ai_pct": 20.3
+        }
+      ],
+      "total_questions": 7055,
+      "total_with_svg": 611,
+      "total_essential_missing": 2028
+    },
+    "5": {
+      "topics": [
+        {
+          "topic": "Algebra & Equations",
+          "total": 60,
+          "has_svg": 25,
+          "svg_pct": 41.7,
+          "essential_missing": 0,
+          "ai_generated": 30,
+          "ai_pct": 50.0
+        },
+        {
+          "topic": "Arithmetic Operations",
+          "total": 1185,
+          "has_svg": 156,
+          "svg_pct": 13.2,
+          "essential_missing": 217,
+          "ai_generated": 405,
+          "ai_pct": 34.2
+        },
+        {
+          "topic": "Data Handling & Statistics",
+          "total": 160,
+          "has_svg": 0,
+          "svg_pct": 0.0,
+          "essential_missing": 160,
+          "ai_generated": 16,
+          "ai_pct": 10.0
+        },
+        {
+          "topic": "Fractions & Decimals",
+          "total": 298,
+          "has_svg": 79,
+          "svg_pct": 26.5,
+          "essential_missing": 3,
+          "ai_generated": 211,
+          "ai_pct": 70.8
+        },
+        {
+          "topic": "Geometry & Angles",
+          "total": 779,
+          "has_svg": 99,
+          "svg_pct": 12.7,
+          "essential_missing": 458,
+          "ai_generated": 162,
+          "ai_pct": 20.8
+        },
+        {
+          "topic": "Measurement & Conversion",
+          "total": 544,
+          "has_svg": 76,
+          "svg_pct": 14.0,
+          "essential_missing": 31,
+          "ai_generated": 287,
+          "ai_pct": 52.8
+        },
+        {
+          "topic": "Numbers & Number Systems",
+          "total": 915,
+          "has_svg": 116,
+          "svg_pct": 12.7,
+          "essential_missing": 196,
+          "ai_generated": 306,
+          "ai_pct": 33.4
+        },
+        {
+          "topic": "Patterns & Logic",
+          "total": 645,
+          "has_svg": 9,
+          "svg_pct": 1.4,
+          "essential_missing": 17,
+          "ai_generated": 49,
+          "ai_pct": 7.6
+        },
+        {
+          "topic": "Percentage & Ratio",
+          "total": 120,
+          "has_svg": 0,
+          "svg_pct": 0.0,
+          "essential_missing": 0,
+          "ai_generated": 120,
+          "ai_pct": 100.0
+        },
+        {
+          "topic": "Word Problems",
+          "total": 398,
+          "has_svg": 18,
+          "svg_pct": 4.5,
+          "essential_missing": 260,
+          "ai_generated": 100,
+          "ai_pct": 25.1
+        }
+      ],
+      "total_questions": 5104,
+      "total_with_svg": 578,
+      "total_essential_missing": 1342
+    },
+    "6": {
+      "topics": [
+        {
+          "topic": "Algebra & Equations",
+          "total": 418,
+          "has_svg": 0,
+          "svg_pct": 0.0,
+          "essential_missing": 143,
+          "ai_generated": 308,
+          "ai_pct": 73.7
+        },
+        {
+          "topic": "Arithmetic Operations",
+          "total": 484,
+          "has_svg": 181,
+          "svg_pct": 37.4,
+          "essential_missing": 61,
+          "ai_generated": 157,
+          "ai_pct": 32.4
+        },
+        {
+          "topic": "Data Handling & Statistics",
+          "total": 133,
+          "has_svg": 5,
+          "svg_pct": 3.8,
+          "essential_missing": 128,
+          "ai_generated": 0,
+          "ai_pct": 0.0
+        },
+        {
+          "topic": "Fractions & Decimals",
+          "total": 135,
+          "has_svg": 56,
+          "svg_pct": 41.5,
+          "essential_missing": 3,
+          "ai_generated": 82,
+          "ai_pct": 60.7
+        },
+        {
+          "topic": "Geometry & Angles",
+          "total": 1442,
+          "has_svg": 167,
+          "svg_pct": 11.6,
+          "essential_missing": 841,
+          "ai_generated": 215,
+          "ai_pct": 14.9
+        },
+        {
+          "topic": "Measurement & Conversion",
+          "total": 259,
+          "has_svg": 26,
+          "svg_pct": 10.0,
+          "essential_missing": 9,
+          "ai_generated": 127,
+          "ai_pct": 49.0
+        },
+        {
+          "topic": "Numbers & Number Systems",
+          "total": 1053,
+          "has_svg": 189,
+          "svg_pct": 17.9,
+          "essential_missing": 34,
+          "ai_generated": 256,
+          "ai_pct": 24.3
+        },
+        {
+          "topic": "Patterns & Logic",
+          "total": 1283,
+          "has_svg": 27,
+          "svg_pct": 2.1,
+          "essential_missing": 17,
+          "ai_generated": 51,
+          "ai_pct": 4.0
+        },
+        {
+          "topic": "Word Problems",
+          "total": 681,
+          "has_svg": 57,
+          "svg_pct": 8.4,
+          "essential_missing": 476,
+          "ai_generated": 81,
+          "ai_pct": 11.9
+        }
+      ],
+      "total_questions": 5888,
+      "total_with_svg": 708,
+      "total_essential_missing": 1712
+    }
+  }
+}

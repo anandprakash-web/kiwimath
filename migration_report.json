@@ -1,0 +1,2007 @@
+{
+  "migration_date": "2026-05-02 19:20:05",
+  "total_questions": 22467,
+  "total_files": 47,
+  "schema_version": "3.0",
+  "summary": {
+    "by_level": {
+      "level_1_Explorer": 4301,
+      "level_2_Builder": 4385,
+      "level_3_Thinker": 4619,
+      "level_4_Solver": 4527,
+      "level_5_Strategist": 2497,
+      "level_6_Master": 2138
+    },
+    "by_maturity": {
+      "experimental": 0,
+      "calibrating": 22467,
+      "production": 0
+    },
+    "by_visual_requirement": {
+      "essential": 9804,
+      "optional": 6280,
+      "none": 6383
+    },
+    "by_why_quality": {
+      "structured": 2400,
+      "ai_generated": 7685,
+      "minimal": 423,
+      "human_authored": 11959
+    },
+    "by_hint_quality": {
+      "good": 16870,
+      "spoiler": 5582,
+      "adequate": 15
+    },
+    "by_universal_skill_id": {
+      "NUM_PATTERN_3": 675,
+      "NUM_PATTERN_1": 647,
+      "NUM_PATTERN_4": 638,
+      "NUM_PATTERN_2": 625,
+      "ADD_BASIC_1": 589,
+      "ARITH_MULTI_4": 541,
+      "ARITH_MULTI_5": 533,
+      "COUNT_10_1": 483,
+      "ADD_BASIC_2": 452,
+      "ADD_BASIC_4": 450,
+      "ORDER_OPS_6": 418,
+      "GEO_SYMMETRY_3": 392,
+      "ADD_BASIC_3": 380,
+      "GEO_SYMMETRY_4": 369,
+      "COUNT_10_6": 365,
+      "ADD_BASIC_6": 364,
+      "NUM_COMPARE_2": 363,
+      "ARITH_MULTI_3": 345,
+      "NUM_COMPARE_3": 325,
+      "SUB_BASIC_1": 324,
+      "ADD_BASIC_5": 323,
+      "NUM_COMPARE_1": 323,
+      "NUM_COMPARE_4": 320,
+      "COUNT_10_5": 317,
+      "SHAPE_2D_1": 282,
+      "ARITH_MULTI_1": 275,
+      "SHAPE_2D_2": 269,
+      "SHAPE_3D_2": 269,
+      "COUNT_100_2": 266,
+      "SHAPE_3D_1": 266,
+      "ARITH_MULTI_2": 264,
+      "SHAPE_3D_3": 259,
+      "SHAPE_3D_4": 246,
+      "MULT_FACTS_2": 234,
+      "COUNT_100_3": 230,
+      "COUNT_100_4": 223,
+      "MEAS_TIME_3": 196,
+      "GEO_AREA_4": 195,
+      "PV_2DIG_1": 190,
+      "MEAS_MONEY_3": 190,
+      "PV_2DIG_2": 188,
+      "MEAS_TIME_2": 188,
+      "MULT_FACTS_3": 173,
+      "DIV_BASIC_3": 170,
+      "MEAS_TIME_1": 165,
+      "GEO_AREA_6": 164,
+      "SUB_BASIC_2": 162,
+      "MEAS_CONVERT_3": 160,
+      "DATA_HANDLE_5": 160,
+      "FRAC_ADD_5": 155,
+      "MEAS_MONEY_2": 154,
+      "MEAS_TIME_4": 152,
+      "FRAC_CONCEPT_3": 151,
+      "MEAS_MONEY_1": 147,
+      "ADD_2DIG_2": 138,
+      "DIV_BASIC_4": 137,
+      "DATA_HANDLE_6": 133,
+      "FRAC_CONCEPT_2": 132,
+      "MEAS_CONVERT_4": 129,
+      "DATA_HANDLE_2": 126,
+      "PV_3DIG_3": 123,
+      "COUNT_10_4": 123,
+      "GEO_PERIMETER_3": 117,
+      "MEAS_CONVERT_5": 117,
+      "FRAC_ADD_4": 116,
+      "PV_2DIG_4": 111,
+      "COUNT_10_2": 110,
+      "DATA_HANDLE_3": 110,
+      "DATA_HANDLE_4": 109,
+      "DATA_HANDLE_1": 107,
+      "MEAS_CAPACITY_5": 103,
+      "MEAS_CONVERT_1": 102,
+      "MEAS_LENGTH_1": 100,
+      "COUNT_100_1": 100,
+      "MEAS_MONEY_4": 94,
+      "FRAC_CONCEPT_4": 93,
+      "PV_4DIG_4": 92,
+      "COUNT_10_3": 91,
+      "DIV_BASIC_2": 88,
+      "MULT_FACTS_4": 84,
+      "ARITH_MULTI_6": 81,
+      "FRAC_MULT_5": 77,
+      "GEO_PERIMETER_5": 74,
+      "PV_4DIG_6": 73,
+      "MEAS_MONEY_5": 70,
+      "GEO_SYMMETRY_2": 70,
+      "GEO_AREA_3": 70,
+      "MEAS_TIME_6": 70,
+      "MEAS_TIME_5": 69,
+      "PV_4DIG_5": 68,
+      "MEAS_CAPACITY_3": 67,
+      "FRAC_ADD_3": 66,
+      "FRAC_CONCEPT_6": 65,
+      "MEAS_CONVERT_2": 64,
+      "ADD_2DIG_3": 64,
+      "NUM_PATTERN_6": 62,
+      "GEO_SYMMETRY_6": 62,
+      "SUB_2DIG_3": 61,
+      "ORDER_OPS_5": 60,
+      "GEO_PERIMETER_1": 58,
+      "MEAS_CAPACITY_4": 58,
+      "MEAS_LENGTH_2": 57,
+      "MEAS_CONVERT_6": 57,
+      "FRAC_CONCEPT_5": 54,
+      "SUB_BASIC_3": 53,
+      "SHAPE_2D_4": 53,
+      "GEO_SYMMETRY_1": 53,
+      "GEO_AREA_2": 53,
+      "FRAC_ADD_6": 52,
+      "MEAS_LENGTH_4": 49,
+      "NUM_PATTERN_5": 49,
+      "GEO_AREA_5": 48,
+      "SHAPE_2D_3": 44,
+      "PV_2DIG_3": 41,
+      "GEO_PERIMETER_4": 41,
+      "PV_3DIG_2": 40,
+      "MEAS_WEIGHT_2": 38,
+      "SUB_2DIG_6": 37,
+      "MULT_FACTS_5": 35,
+      "MEAS_LENGTH_5": 35,
+      "MEAS_LENGTH_3": 34,
+      "SUB_2DIG_4": 31,
+      "GEO_SYMMETRY_5": 30,
+      "SUB_BASIC_4": 30,
+      "GEO_PERIMETER_6": 29,
+      "ADD_2DIG_4": 28,
+      "MEAS_WEIGHT_3": 28,
+      "GEO_AREA_1": 28,
+      "SHAPE_2D_5": 26,
+      "GEO_PERIMETER_2": 26,
+      "MEAS_WEIGHT_1": 25,
+      "GEO_ANGLES_5": 25,
+      "SHAPE_2D_6": 23,
+      "MEAS_CAPACITY_1": 21,
+      "SUB_2DIG_5": 19,
+      "MEAS_LENGTH_6": 17,
+      "MULT_FACTS_6": 15,
+      "SUB_BASIC_6": 14,
+      "ADD_2DIG_5": 14,
+      "NUM_COMPARE_6": 14,
+      "NUM_ROUND_4": 11,
+      "SUB_BASIC_5": 11,
+      "DIV_BASIC_5": 10,
+      "MEAS_CAPACITY_2": 9,
+      "MULT_FACTS_1": 8,
+      "MEAS_CAPACITY_6": 8,
+      "GEO_ANGLES_6": 7,
+      "FRAC_MULT_6": 6,
+      "NUM_ROUND_5": 5,
+      "NUM_COMPARE_5": 5,
+      "PV_2DIG_5": 5,
+      "PV_3DIG_1": 4,
+      "FRAC_COMPARE_3": 4,
+      "MEAS_WEIGHT_4": 4,
+      "DIV_BASIC_1": 3,
+      "ADD_2DIG_6": 2,
+      "FRAC_CONCEPT_1": 1
+    }
+  },
+  "per_file_stats": [
+    {
+      "file": "icse-curriculum/grade1/icse_g1_questions.json",
+      "questions_processed": 370,
+      "levels": {
+        "1": 370
+      },
+      "maturity": {
+        "experimental": 0,
+        "calibrating": 370,
+        "production": 0
+      },
+      "visual_req": {
+        "essential": 175,
+        "optional": 195,
+        "none": 0
+      },
+      "why_quality": {
+        "structured": 200,
+        "ai_generated": 170
+      },
+      "hint_quality": {
+        "good": 283,
+        "spoiler": 87
+      },
+      "skills": {
+        "COUNT_10_1": 43,
+        "ADD_BASIC_1": 42,
+        "SUB_BASIC_1": 30,
+        "SHAPE_2D_1": 33,
+        "NUM_PATTERN_1": 50,
+        "MEAS_LENGTH_1": 15,
+        "MEAS_MONEY_1": 50,
+        "MEAS_TIME_1": 50,
+        "GEO_PERIMETER_1": 12,
+        "MEAS_CONVERT_1": 35,
+        "PV_2DIG_1": 10
+      }
+    },
+    {
+      "file": "icse-curriculum/grade2/icse_g2_questions.json",
+      "questions_processed": 400,
+      "levels": {
+        "2": 400
+      },
+      "maturity": {
+        "experimental": 0,
+        "calibrating": 400,
+        "production": 0
+      },
+      "visual_req": {
+        "essential": 167,
+        "optional": 233,
+        "none": 0
+      },
+      "why_quality": {
+        "structured": 200,
+        "ai_generated": 165,
+        "minimal": 35
+      },
+      "hint_quality": {
+        "spoiler": 70,
+        "good": 330
+      },
+      "skills": {
+        "PV_2DIG_2": 39,
+        "ADD_BASIC_2": 35,
+        "SUB_BASIC_2": 19,
+        "MULT_FACTS_2": 45,
+        "MEAS_LENGTH_2": 20,
+        "MEAS_MONEY_2": 50,
+        "MEAS_TIME_2": 50,
+        "NUM_COMPARE_2": 20,
+        "NUM_PATTERN_2": 45,
+        "COUNT_10_2": 1,
+        "DIV_BASIC_2": 5,
+        "DATA_HANDLE_2": 35,
+        "MEAS_CONVERT_2": 30,
+        "PV_3DIG_2": 6
+      }
+    },
+    {
+      "file": "icse-curriculum/grade3/icse_g3_questions.json",
+      "questions_processed": 450,
+      "levels": {
+        "3": 450
+      },
+      "maturity": {
+        "experimental": 0,
+        "calibrating": 450,
+        "production": 0
+      },
+      "visual_req": {
+        "essential": 132,
+        "optional": 273,
+        "none": 45
+      },
+      "why_quality": {
+        "structured": 200,
+        "ai_generated": 215,
+        "minimal": 35
+      },
+      "hint_quality": {
+        "good": 348,
+        "spoiler": 102
+      },
+      "skills": {
+        "PV_2DIG_3": 25,
+        "ADD_BASIC_3": 19,
+        "SUB_BASIC_3": 10,
+        "MULT_FACTS_3": 31,
+        "DIV_BASIC_3": 10,
+        "FRAC_CONCEPT_3": 35,
+        "MEAS_CONVERT_3": 50,
+        "MEAS_MONEY_3": 50,
+        "MEAS_TIME_3": 50,
+        "COUNT_10_3": 6,
+        "NUM_COMPARE_3": 15,
+        "SUB_2DIG_3": 16,
+        "ADD_2DIG_3": 22,
+        "DATA_HANDLE_3": 35,
+        "FRAC_ADD_3": 15,
+        "GEO_PERIMETER_3": 19,
+        "SHAPE_2D_3": 8,
+        "ARITH_MULTI_3": 9,
+        "PV_3DIG_3": 25
+      }
+    },
+    {
+      "file": "icse-curriculum/grade4/icse_g4_questions.json",
+      "questions_processed": 350,
+      "levels": {
+        "4": 350
+      },
+      "maturity": {
+        "experimental": 0,
+        "calibrating": 350,
+        "production": 0
+      },
+      "visual_req": {
+        "essential": 162,
+        "optional": 161,
+        "none": 27
+      },
+      "why_quality": {
+        "structured": 200,
+        "ai_generated": 115,
+        "minimal": 35
+      },
+      "hint_quality": {
+        "good": 299,
+        "spoiler": 51
+      },
+      "skills": {
+        "PV_2DIG_4": 45,
+        "MULT_FACTS_4": 20,
+        "DIV_BASIC_4": 15,
+        "FRAC_ADD_4": 30,
+        "GEO_AREA_4": 25,
+        "GEO_SYMMETRY_4": 20,
+        "NUM_COMPARE_4": 15,
+        "ADD_BASIC_4": 40,
+        "ADD_2DIG_4": 5,
+        "SUB_2DIG_4": 5,
+        "DATA_HANDLE_4": 35,
+        "GEO_PERIMETER_4": 16,
+        "SHAPE_2D_4": 9,
+        "MEAS_CONVERT_4": 25,
+        "ARITH_MULTI_4": 20,
+        "PV_4DIG_4": 25
+      }
+    },
+    {
+      "file": "icse-curriculum/grade5/icse_g5_questions.json",
+      "questions_processed": 400,
+      "levels": {
+        "5": 400
+      },
+      "maturity": {
+        "experimental": 0,
+        "calibrating": 400,
+        "production": 0
+      },
+      "visual_req": {
+        "essential": 152,
+        "optional": 140,
+        "none": 108
+      },
+      "why_quality": {
+        "structured": 200,
+        "minimal": 35,
+        "ai_generated": 165
+      },
+      "hint_quality": {
+        "good": 352,
+        "spoiler": 48
+      },
+      "skills": {
+        "COUNT_10_5": 20,
+        "ADD_BASIC_5": 65,
+        "FRAC_MULT_5": 25,
+        "MEAS_CAPACITY_5": 15,
+        "GEO_PERIMETER_5": 30,
+        "DATA_HANDLE_5": 50,
+        "MEAS_MONEY_5": 70,
+        "FRAC_ADD_5": 5,
+        "ARITH_MULTI_5": 68,
+        "SHAPE_2D_5": 12,
+        "MEAS_CONVERT_5": 35,
+        "PV_4DIG_5": 5
+      }
+    },
+    {
+      "file": "icse-curriculum/grade6/icse_g6_questions.json",
+      "questions_processed": 402,
+      "levels": {
+        "6": 402
+      },
+      "maturity": {
+        "experimental": 0,
+        "calibrating": 402,
+        "production": 0
+      },
+      "visual_req": {
+        "essential": 156,
+        "optional": 64,
+        "none": 182
+      },
+      "why_quality": {
+        "structured": 200,
+        "ai_generated": 167,
+        "minimal": 35
+      },
+      "hint_quality": {
+        "spoiler": 48,
+        "good": 354
+      },
+      "skills": {
+        "ADD_BASIC_6": 116,
+        "SUB_BASIC_6": 8,
+        "MULT_FACTS_6": 9,
+        "FRAC_CONCEPT_6": 20,
+        "COUNT_10_6": 10,
+        "ADD_2DIG_6": 2,
+        "GEO_AREA_6": 20,
+        "DATA_HANDLE_6": 50,
+        "ORDER_OPS_6": 108,
+        "GEO_PERIMETER_6": 14,
+        "SHAPE_2D_6": 12,
+        "ARITH_MULTI_6": 9,
+        "MEAS_CONVERT_6": 24
+      }
+    },
+    {
+      "file": "igcse-curriculum/grade1/igcse_grade1.json",
+      "questions_processed": 600,
+      "levels": {
+        "1": 600
+      },
+      "maturity": {
+        "experimental": 0,
+        "calibrating": 600,
+        "production": 0
+      },
+      "visual_req": {
+        "essential": 188,
+        "optional": 412,
+        "none": 0
+      },
+      "why_quality": {
+        "human_authored": 68,
+        "ai_generated": 499,
+        "minimal": 33
+      },
+      "hint_quality": {
+        "good": 382,
+        "spoiler": 218
+      },
+      "skills": {
+        "COUNT_10_1": 40,
+        "COUNT_100_1": 8,
+        "PV_2DIG_1": 79,
+        "PV_3DIG_1": 4,
+        "ADD_BASIC_1": 139,
+        "SUB_BASIC_1": 44,
+        "SHAPE_2D_1": 23,
+        "MEAS_LENGTH_1": 16,
+        "MEAS_CAPACITY_1": 17,
+        "MEAS_TIME_1": 50,
+        "MEAS_MONEY_1": 50,
+        "DATA_HANDLE_1": 50,
+        "GEO_PERIMETER_1": 13,
+        "MEAS_CONVERT_1": 67
+      }
+    },
+    {
+      "file": "igcse-curriculum/grade2/igcse_grade2.json",
+      "questions_processed": 600,
+      "levels": {
+        "2": 600
+      },
+      "maturity": {
+        "experimental": 0,
+        "calibrating": 600,
+        "production": 0
+      },
+      "visual_req": {
+        "essential": 190,
+        "optional": 410,
+        "none": 0
+      },
+      "why_quality": {
+        "human_authored": 200,
+        "ai_generated": 366,
+        "minimal": 34
+      },
+      "hint_quality": {
+        "good": 406,
+        "spoiler": 194
+      },
+      "skills": {
+        "COUNT_10_2": 44,
+        "ADD_BASIC_2": 98,
+        "MULT_FACTS_2": 50,
+        "DIV_BASIC_2": 50,
+        "FRAC_CONCEPT_2": 50,
+        "SHAPE_2D_2": 30,
+        "MEAS_LENGTH_2": 16,
+        "MEAS_TIME_2": 50,
+        "DATA_HANDLE_2": 50,
+        "ADD_2DIG_2": 13,
+        "PV_2DIG_2": 40,
+        "PV_3DIG_2": 26,
+        "SUB_BASIC_2": 35,
+        "GEO_PERIMETER_2": 14,
+        "MEAS_CONVERT_2": 34
+      }
+    },
+    {
+      "file": "igcse-curriculum/grade3/igcse_grade3.json",
+      "questions_processed": 600,
+      "levels": {
+        "3": 600
+      },
+      "maturity": {
+        "experimental": 0,
+        "calibrating": 600,
+        "production": 0
+      },
+      "visual_req": {
+        "essential": 240,
+        "optional": 242,
+        "none": 118
+      },
+      "why_quality": {
+        "human_authored": 200,
+        "ai_generated": 366,
+        "minimal": 34
+      },
+      "hint_quality": {
+        "good": 423,
+        "spoiler": 177
+      },
+      "skills": {
+        "COUNT_10_3": 26,
+        "ADD_BASIC_3": 24,
+        "PV_2DIG_3": 13,
+        "PV_3DIG_3": 70,
+        "MULT_FACTS_3": 31,
+        "DIV_BASIC_3": 50,
+        "FRAC_CONCEPT_3": 31,
+        "MEAS_MONEY_3": 50,
+        "MEAS_LENGTH_3": 17,
+        "MEAS_TIME_3": 50,
+        "DATA_HANDLE_3": 50,
+        "GEO_SYMMETRY_3": 50,
+        "GEO_PERIMETER_3": 22,
+        "SHAPE_2D_3": 5,
+        "ADD_2DIG_3": 21,
+        "SUB_2DIG_3": 19,
+        "ARITH_MULTI_3": 19,
+        "FRAC_ADD_3": 19,
+        "MEAS_CONVERT_3": 33
+      }
+    },
+    {
+      "file": "igcse-curriculum/grade4/igcse_grade4.json",
+      "questions_processed": 600,
+      "levels": {
+        "4": 600
+      },
+      "maturity": {
+        "experimental": 0,
+        "calibrating": 600,
+        "production": 0
+      },
+      "visual_req": {
+        "essential": 207,
+        "optional": 139,
+        "none": 254
+      },
+      "why_quality": {
+        "human_authored": 200,
+        "ai_generated": 366,
+        "minimal": 34
+      },
+      "hint_quality": {
+        "good": 373,
+        "spoiler": 227
+      },
+      "skills": {
+        "COUNT_10_4": 61,
+        "ADD_BASIC_4": 56,
+        "MULT_FACTS_4": 23,
+        "DIV_BASIC_4": 50,
+        "MEAS_LENGTH_4": 17,
+        "MEAS_TIME_4": 50,
+        "DATA_HANDLE_4": 50,
+        "SHAPE_2D_4": 13,
+        "GEO_PERIMETER_4": 15,
+        "ARITH_MULTI_4": 67,
+        "PV_4DIG_4": 66,
+        "ADD_2DIG_4": 15,
+        "SUB_2DIG_4": 18,
+        "FRAC_ADD_4": 33,
+        "MEAS_CONVERT_4": 33,
+        "GEO_AREA_4": 33
+      }
+    },
+    {
+      "file": "igcse-curriculum/grade5/igcse_grade5.json",
+      "questions_processed": 600,
+      "levels": {
+        "5": 600
+      },
+      "maturity": {
+        "experimental": 0,
+        "calibrating": 600,
+        "production": 0
+      },
+      "visual_req": {
+        "essential": 190,
+        "optional": 140,
+        "none": 270
+      },
+      "why_quality": {
+        "ai_generated": 566,
+        "minimal": 34
+      },
+      "hint_quality": {
+        "good": 477,
+        "spoiler": 123
+      },
+      "skills": {
+        "COUNT_10_5": 87,
+        "ADD_BASIC_5": 80,
+        "FRAC_CONCEPT_5": 17,
+        "DATA_HANDLE_5": 50,
+        "ARITH_MULTI_5": 173,
+        "PV_4DIG_5": 33,
+        "FRAC_ADD_5": 66,
+        "SUB_2DIG_5": 19,
+        "ADD_2DIG_5": 14,
+        "SHAPE_2D_5": 10,
+        "GEO_PERIMETER_5": 17,
+        "MEAS_CONVERT_5": 34
+      }
+    },
+    {
+      "file": "igcse-curriculum/grade6/igcse_grade6.json",
+      "questions_processed": 600,
+      "levels": {
+        "6": 600
+      },
+      "maturity": {
+        "experimental": 0,
+        "calibrating": 600,
+        "production": 0
+      },
+      "visual_req": {
+        "essential": 224,
+        "optional": 107,
+        "none": 269
+      },
+      "why_quality": {
+        "human_authored": 200,
+        "minimal": 34,
+        "ai_generated": 366
+      },
+      "hint_quality": {
+        "good": 492,
+        "spoiler": 108
+      },
+      "skills": {
+        "COUNT_10_6": 87,
+        "ADD_BASIC_6": 80,
+        "MEAS_LENGTH_6": 17,
+        "DATA_HANDLE_6": 50,
+        "ORDER_OPS_6": 200,
+        "PV_4DIG_6": 33,
+        "FRAC_ADD_6": 33,
+        "SHAPE_2D_6": 11,
+        "ARITH_MULTI_6": 7,
+        "GEO_PERIMETER_6": 15,
+        "MEAS_CONVERT_6": 33,
+        "GEO_AREA_6": 34
+      }
+    },
+    {
+      "file": "ncert-curriculum/grade1/questions.json",
+      "questions_processed": 642,
+      "levels": {
+        "1": 642
+      },
+      "maturity": {
+        "experimental": 0,
+        "calibrating": 642,
+        "production": 0
+      },
+      "visual_req": {
+        "essential": 292,
+        "optional": 350,
+        "none": 0
+      },
+      "why_quality": {
+        "human_authored": 371,
+        "ai_generated": 271
+      },
+      "hint_quality": {
+        "good": 406,
+        "spoiler": 236
+      },
+      "skills": {
+        "COUNT_10_1": 19,
+        "COUNT_100_1": 84,
+        "PV_2DIG_1": 81,
+        "ADD_BASIC_1": 82,
+        "SUB_BASIC_1": 62,
+        "SHAPE_2D_1": 38,
+        "MEAS_LENGTH_1": 54,
+        "MEAS_WEIGHT_1": 5,
+        "MEAS_CAPACITY_1": 4,
+        "MEAS_TIME_1": 50,
+        "MEAS_MONEY_1": 47,
+        "DATA_HANDLE_1": 57,
+        "NUM_PATTERN_1": 49,
+        "NUM_COMPARE_1": 10
+      }
+    },
+    {
+      "file": "ncert-curriculum/grade2/questions.json",
+      "questions_processed": 572,
+      "levels": {
+        "2": 572
+      },
+      "maturity": {
+        "experimental": 0,
+        "calibrating": 572,
+        "production": 0
+      },
+      "visual_req": {
+        "essential": 393,
+        "optional": 179,
+        "none": 0
+      },
+      "why_quality": {
+        "ai_generated": 430,
+        "human_authored": 142
+      },
+      "hint_quality": {
+        "good": 408,
+        "spoiler": 164
+      },
+      "skills": {
+        "PV_2DIG_2": 65,
+        "NUM_COMPARE_2": 13,
+        "ADD_BASIC_2": 51,
+        "SUB_BASIC_2": 36,
+        "COUNT_10_2": 11,
+        "MULT_FACTS_2": 57,
+        "SHAPE_2D_2": 39,
+        "NUM_PATTERN_2": 6,
+        "GEO_SYMMETRY_2": 7,
+        "MEAS_LENGTH_2": 9,
+        "MEAS_WEIGHT_2": 38,
+        "MEAS_CAPACITY_2": 9,
+        "MEAS_TIME_2": 53,
+        "MEAS_MONEY_2": 57,
+        "DATA_HANDLE_2": 41,
+        "FRAC_CONCEPT_2": 47,
+        "ADD_2DIG_2": 25,
+        "PV_3DIG_2": 8
+      }
+    },
+    {
+      "file": "ncert-curriculum/grade3/ncert_g3_questions.json",
+      "questions_processed": 641,
+      "levels": {
+        "3": 641
+      },
+      "maturity": {
+        "experimental": 0,
+        "calibrating": 641,
+        "production": 0
+      },
+      "visual_req": {
+        "essential": 228,
+        "optional": 290,
+        "none": 123
+      },
+      "why_quality": {
+        "ai_generated": 406,
+        "human_authored": 215,
+        "minimal": 20
+      },
+      "hint_quality": {
+        "good": 442,
+        "spoiler": 199
+      },
+      "skills": {
+        "PV_2DIG_3": 3,
+        "COUNT_10_3": 23,
+        "NUM_COMPARE_3": 6,
+        "COUNT_100_3": 1,
+        "ADD_BASIC_3": 17,
+        "SUB_BASIC_3": 8,
+        "MULT_FACTS_3": 35,
+        "DIV_BASIC_3": 50,
+        "FRAC_CONCEPT_3": 34,
+        "FRAC_COMPARE_3": 4,
+        "MEAS_MONEY_3": 46,
+        "MEAS_CONVERT_3": 52,
+        "MEAS_LENGTH_3": 17,
+        "MEAS_TIME_3": 38,
+        "GEO_PERIMETER_3": 56,
+        "SHAPE_2D_3": 7,
+        "NUM_PATTERN_3": 50,
+        "GEO_AREA_3": 24,
+        "MEAS_WEIGHT_3": 20,
+        "MEAS_CAPACITY_3": 18,
+        "GEO_SYMMETRY_3": 34,
+        "ARITH_MULTI_3": 15,
+        "DATA_HANDLE_3": 25,
+        "PV_3DIG_3": 28,
+        "SUB_2DIG_3": 16,
+        "ADD_2DIG_3": 12,
+        "FRAC_ADD_3": 2
+      }
+    },
+    {
+      "file": "ncert-curriculum/grade4/ncert_g4_questions.json",
+      "questions_processed": 685,
+      "levels": {
+        "4": 685
+      },
+      "maturity": {
+        "experimental": 0,
+        "calibrating": 685,
+        "production": 0
+      },
+      "visual_req": {
+        "essential": 227,
+        "optional": 255,
+        "none": 203
+      },
+      "why_quality": {
+        "human_authored": 229,
+        "ai_generated": 456
+      },
+      "hint_quality": {
+        "spoiler": 182,
+        "good": 503
+      },
+      "skills": {
+        "PV_2DIG_4": 34,
+        "COUNT_10_4": 19,
+        "NUM_COMPARE_4": 8,
+        "NUM_ROUND_4": 3,
+        "MULT_FACTS_4": 22,
+        "DIV_BASIC_4": 50,
+        "ARITH_MULTI_4": 106,
+        "FRAC_ADD_4": 26,
+        "FRAC_CONCEPT_4": 28,
+        "MEAS_CONVERT_4": 59,
+        "MEAS_MONEY_4": 54,
+        "ADD_BASIC_4": 19,
+        "MEAS_LENGTH_4": 17,
+        "MEAS_WEIGHT_4": 4,
+        "GEO_PERIMETER_4": 10,
+        "GEO_AREA_4": 104,
+        "SHAPE_2D_4": 5,
+        "NUM_PATTERN_4": 32,
+        "MEAS_TIME_4": 50,
+        "GEO_SYMMETRY_4": 10,
+        "DATA_HANDLE_4": 24,
+        "PV_4DIG_4": 1
+      }
+    },
+    {
+      "file": "ncert-curriculum/grade5/ncert_g5_questions.json",
+      "questions_processed": 1097,
+      "levels": {
+        "5": 1097
+      },
+      "maturity": {
+        "experimental": 0,
+        "calibrating": 1097,
+        "production": 0
+      },
+      "visual_req": {
+        "essential": 340,
+        "optional": 280,
+        "none": 477
+      },
+      "why_quality": {
+        "ai_generated": 664,
+        "human_authored": 433
+      },
+      "hint_quality": {
+        "spoiler": 358,
+        "good": 739
+      },
+      "skills": {
+        "COUNT_10_5": 145,
+        "NUM_ROUND_5": 5,
+        "NUM_COMPARE_5": 5,
+        "ADD_BASIC_5": 113,
+        "FRAC_ADD_5": 72,
+        "FRAC_CONCEPT_5": 16,
+        "MULT_FACTS_5": 5,
+        "MEAS_CONVERT_5": 38,
+        "SUB_BASIC_5": 5,
+        "MEAS_LENGTH_5": 35,
+        "GEO_PERIMETER_5": 27,
+        "GEO_AREA_5": 48,
+        "GEO_ANGLES_5": 25,
+        "NUM_PATTERN_5": 49,
+        "MEAS_CAPACITY_5": 44,
+        "MEAS_TIME_5": 69,
+        "GEO_SYMMETRY_5": 30,
+        "DATA_HANDLE_5": 60,
+        "ARITH_MULTI_5": 272,
+        "PV_4DIG_5": 30,
+        "SHAPE_2D_5": 4
+      }
+    },
+    {
+      "file": "ncert-curriculum/grade6/ncert_g6_questions.json",
+      "questions_processed": 736,
+      "levels": {
+        "6": 736
+      },
+      "maturity": {
+        "experimental": 0,
+        "calibrating": 736,
+        "production": 0
+      },
+      "visual_req": {
+        "essential": 259,
+        "optional": 129,
+        "none": 348
+      },
+      "why_quality": {
+        "ai_generated": 537,
+        "human_authored": 194,
+        "minimal": 5
+      },
+      "hint_quality": {
+        "spoiler": 263,
+        "good": 473
+      },
+      "skills": {
+        "NUM_PATTERN_6": 62,
+        "COUNT_10_6": 144,
+        "ADD_BASIC_6": 89,
+        "FRAC_MULT_6": 6,
+        "FRAC_CONCEPT_6": 24,
+        "GEO_ANGLES_6": 7,
+        "GEO_SYMMETRY_6": 62,
+        "SUB_BASIC_6": 6,
+        "SUB_2DIG_6": 37,
+        "MULT_FACTS_6": 6,
+        "GEO_AREA_6": 64,
+        "ORDER_OPS_6": 110,
+        "PV_4DIG_6": 40,
+        "MEAS_TIME_6": 40,
+        "DATA_HANDLE_6": 20,
+        "FRAC_ADD_6": 19
+      }
+    },
+    {
+      "file": "singapore-curriculum/grade1/singapore_g1.json",
+      "questions_processed": 200,
+      "levels": {
+        "1": 200
+      },
+      "maturity": {
+        "experimental": 0,
+        "calibrating": 200,
+        "production": 0
+      },
+      "visual_req": {
+        "essential": 160,
+        "optional": 40,
+        "none": 0
+      },
+      "why_quality": {
+        "ai_generated": 200
+      },
+      "hint_quality": {
+        "good": 185,
+        "spoiler": 15
+      },
+      "skills": {
+        "COUNT_10_1": 56,
+        "ADD_BASIC_1": 49,
+        "SUB_BASIC_1": 50,
+        "SHAPE_2D_1": 25,
+        "MEAS_WEIGHT_1": 20
+      }
+    },
+    {
+      "file": "singapore-curriculum/grade2/singapore_g2.json",
+      "questions_processed": 200,
+      "levels": {
+        "2": 200
+      },
+      "maturity": {
+        "experimental": 0,
+        "calibrating": 200,
+        "production": 0
+      },
+      "visual_req": {
+        "essential": 152,
+        "optional": 48,
+        "none": 0
+      },
+      "why_quality": {
+        "ai_generated": 200
+      },
+      "hint_quality": {
+        "good": 115,
+        "spoiler": 85
+      },
+      "skills": {
+        "SUB_BASIC_2": 40,
+        "MULT_FACTS_2": 40,
+        "DIV_BASIC_2": 25,
+        "FRAC_CONCEPT_2": 25,
+        "MEAS_MONEY_2": 20,
+        "MEAS_TIME_2": 20,
+        "NUM_COMPARE_2": 30
+      }
+    },
+    {
+      "file": "singapore-curriculum/grade3/singapore_g3.json",
+      "questions_processed": 200,
+      "levels": {
+        "3": 200
+      },
+      "maturity": {
+        "experimental": 0,
+        "calibrating": 200,
+        "production": 0
+      },
+      "visual_req": {
+        "essential": 40,
+        "optional": 145,
+        "none": 15
+      },
+      "why_quality": {
+        "ai_generated": 200
+      },
+      "hint_quality": {
+        "good": 175,
+        "spoiler": 25
+      },
+      "skills": {
+        "SUB_BASIC_3": 35,
+        "MULT_FACTS_3": 30,
+        "DIV_BASIC_3": 25,
+        "FRAC_ADD_3": 30,
+        "MEAS_CONVERT_3": 25,
+        "GEO_AREA_3": 25,
+        "COUNT_10_3": 30
+      }
+    },
+    {
+      "file": "singapore-curriculum/grade4/singapore_g4.json",
+      "questions_processed": 200,
+      "levels": {
+        "4": 200
+      },
+      "maturity": {
+        "experimental": 0,
+        "calibrating": 200,
+        "production": 0
+      },
+      "visual_req": {
+        "essential": 50,
+        "optional": 95,
+        "none": 55
+      },
+      "why_quality": {
+        "ai_generated": 200
+      },
+      "hint_quality": {
+        "spoiler": 80,
+        "good": 120
+      },
+      "skills": {
+        "PV_2DIG_4": 25,
+        "COUNT_10_4": 19,
+        "ADD_BASIC_4": 6,
+        "FRAC_CONCEPT_4": 35,
+        "SUB_BASIC_4": 30,
+        "GEO_AREA_4": 25,
+        "ARITH_MULTI_4": 35,
+        "GEO_SYMMETRY_4": 25
+      }
+    },
+    {
+      "file": "singapore-curriculum/grade5/singapore_g5.json",
+      "questions_processed": 200,
+      "levels": {
+        "5": 200
+      },
+      "maturity": {
+        "experimental": 0,
+        "calibrating": 200,
+        "production": 0
+      },
+      "visual_req": {
+        "essential": 0,
+        "optional": 130,
+        "none": 70
+      },
+      "why_quality": {
+        "ai_generated": 170,
+        "human_authored": 30
+      },
+      "hint_quality": {
+        "good": 90,
+        "spoiler": 110
+      },
+      "skills": {
+        "ORDER_OPS_5": 30,
+        "FRAC_MULT_5": 35,
+        "ADD_BASIC_5": 36,
+        "COUNT_10_5": 39,
+        "MEAS_CAPACITY_5": 20,
+        "MULT_FACTS_5": 20,
+        "ARITH_MULTI_5": 20
+      }
+    },
+    {
+      "file": "singapore-curriculum/grade6/singapore_g6.json",
+      "questions_processed": 200,
+      "levels": {
+        "6": 200
+      },
+      "maturity": {
+        "experimental": 0,
+        "calibrating": 200,
+        "production": 0
+      },
+      "visual_req": {
+        "essential": 25,
+        "optional": 103,
+        "none": 72
+      },
+      "why_quality": {
+        "ai_generated": 200
+      },
+      "hint_quality": {
+        "spoiler": 99,
+        "good": 101
+      },
+      "skills": {
+        "ADD_BASIC_6": 29,
+        "COUNT_10_6": 31,
+        "MEAS_TIME_6": 30,
+        "GEO_AREA_6": 25,
+        "FRAC_CONCEPT_6": 6,
+        "NUM_COMPARE_6": 14,
+        "ARITH_MULTI_6": 65
+      }
+    },
+    {
+      "file": "topic-1-counting/grade34_questions.json",
+      "questions_processed": 300,
+      "levels": {
+        "3": 150,
+        "4": 150
+      },
+      "maturity": {
+        "experimental": 0,
+        "calibrating": 300,
+        "production": 0
+      },
+      "visual_req": {
+        "essential": 224,
+        "optional": 0,
+        "none": 76
+      },
+      "why_quality": {
+        "human_authored": 300
+      },
+      "hint_quality": {
+        "spoiler": 227,
+        "good": 73
+      },
+      "skills": {
+        "COUNT_100_3": 150,
+        "COUNT_100_4": 150
+      }
+    },
+    {
+      "file": "topic-1-counting/questions.json",
+      "questions_processed": 900,
+      "levels": {
+        "1": 299,
+        "3": 153,
+        "2": 300,
+        "4": 148
+      },
+      "maturity": {
+        "experimental": 0,
+        "calibrating": 900,
+        "production": 0
+      },
+      "visual_req": {
+        "essential": 586,
+        "optional": 234,
+        "none": 80
+      },
+      "why_quality": {
+        "human_authored": 899,
+        "ai_generated": 1
+      },
+      "hint_quality": {
+        "good": 816,
+        "spoiler": 84
+      },
+      "skills": {
+        "COUNT_10_1": 261,
+        "ADD_BASIC_1": 12,
+        "COUNT_100_1": 5,
+        "COUNT_100_3": 79,
+        "NUM_COMPARE_1": 5,
+        "SUB_BASIC_1": 3,
+        "COUNT_100_2": 260,
+        "ADD_BASIC_2": 9,
+        "SUB_BASIC_2": 5,
+        "ARITH_MULTI_1": 13,
+        "PV_2DIG_2": 26,
+        "MEAS_TIME_3": 39,
+        "MEAS_MONEY_3": 35,
+        "COUNT_100_4": 73,
+        "MEAS_MONEY_4": 31,
+        "MEAS_TIME_4": 44
+      }
+    },
+    {
+      "file": "topic-2-arithmetic/grade34_questions.json",
+      "questions_processed": 301,
+      "levels": {
+        "3": 150,
+        "4": 150,
+        "2": 1
+      },
+      "maturity": {
+        "experimental": 0,
+        "calibrating": 301,
+        "production": 0
+      },
+      "visual_req": {
+        "essential": 0,
+        "optional": 1,
+        "none": 300
+      },
+      "why_quality": {
+        "human_authored": 301
+      },
+      "hint_quality": {
+        "spoiler": 235,
+        "good": 66
+      },
+      "skills": {
+        "ADD_BASIC_3": 150,
+        "ADD_BASIC_4": 150,
+        "FRAC_CONCEPT_2": 1
+      }
+    },
+    {
+      "file": "topic-2-arithmetic/grade34_variety_questions.json",
+      "questions_processed": 120,
+      "levels": {
+        "3": 61,
+        "4": 59
+      },
+      "maturity": {
+        "experimental": 0,
+        "calibrating": 120,
+        "production": 0
+      },
+      "visual_req": {
+        "essential": 34,
+        "optional": 35,
+        "none": 51
+      },
+      "why_quality": {
+        "human_authored": 120
+      },
+      "hint_quality": {
+        "good": 120
+      },
+      "skills": {
+        "MEAS_MONEY_3": 9,
+        "MEAS_TIME_3": 9,
+        "SUB_2DIG_3": 9,
+        "ADD_2DIG_3": 9,
+        "ADD_BASIC_3": 17,
+        "DIV_BASIC_3": 8,
+        "ADD_BASIC_4": 17,
+        "DIV_BASIC_4": 9,
+        "MEAS_MONEY_4": 9,
+        "MEAS_TIME_4": 8,
+        "SUB_2DIG_4": 8,
+        "ADD_2DIG_4": 8
+      }
+    },
+    {
+      "file": "topic-2-arithmetic/questions.json",
+      "questions_processed": 900,
+      "levels": {
+        "1": 299,
+        "3": 153,
+        "2": 300,
+        "4": 148
+      },
+      "maturity": {
+        "experimental": 0,
+        "calibrating": 900,
+        "production": 0
+      },
+      "visual_req": {
+        "essential": 463,
+        "optional": 136,
+        "none": 301
+      },
+      "why_quality": {
+        "human_authored": 900
+      },
+      "hint_quality": {
+        "good": 900
+      },
+      "skills": {
+        "ADD_BASIC_1": 199,
+        "SUB_BASIC_1": 99,
+        "NUM_COMPARE_1": 1,
+        "SUB_2DIG_3": 1,
+        "SUB_BASIC_2": 6,
+        "ADD_BASIC_2": 194,
+        "ADD_2DIG_2": 100,
+        "ADD_BASIC_3": 152,
+        "ADD_BASIC_4": 148
+      }
+    },
+    {
+      "file": "topic-3-patterns/grade34_questions.json",
+      "questions_processed": 300,
+      "levels": {
+        "3": 150,
+        "4": 150
+      },
+      "maturity": {
+        "experimental": 0,
+        "calibrating": 300,
+        "production": 0
+      },
+      "visual_req": {
+        "essential": 0,
+        "optional": 0,
+        "none": 300
+      },
+      "why_quality": {
+        "human_authored": 300
+      },
+      "hint_quality": {
+        "spoiler": 70,
+        "good": 230
+      },
+      "skills": {
+        "NUM_PATTERN_3": 150,
+        "NUM_PATTERN_4": 150
+      }
+    },
+    {
+      "file": "topic-3-patterns/questions.json",
+      "questions_processed": 900,
+      "levels": {
+        "1": 284,
+        "2": 310,
+        "3": 158,
+        "4": 148
+      },
+      "maturity": {
+        "experimental": 0,
+        "calibrating": 900,
+        "production": 0
+      },
+      "visual_req": {
+        "essential": 109,
+        "optional": 485,
+        "none": 306
+      },
+      "why_quality": {
+        "ai_generated": 42,
+        "human_authored": 858
+      },
+      "hint_quality": {
+        "good": 900
+      },
+      "skills": {
+        "NUM_PATTERN_1": 279,
+        "NUM_PATTERN_2": 276,
+        "SHAPE_2D_1": 5,
+        "NUM_PATTERN_3": 158,
+        "MULT_FACTS_2": 34,
+        "NUM_PATTERN_4": 148
+      }
+    },
+    {
+      "file": "topic-4-logic/grade34_questions.json",
+      "questions_processed": 300,
+      "levels": {
+        "3": 151,
+        "4": 149
+      },
+      "maturity": {
+        "experimental": 0,
+        "calibrating": 300,
+        "production": 0
+      },
+      "visual_req": {
+        "essential": 0,
+        "optional": 0,
+        "none": 300
+      },
+      "why_quality": {
+        "human_authored": 300
+      },
+      "hint_quality": {
+        "good": 300
+      },
+      "skills": {
+        "NUM_COMPARE_3": 151,
+        "NUM_COMPARE_4": 149
+      }
+    },
+    {
+      "file": "topic-4-logic/questions.json",
+      "questions_processed": 901,
+      "levels": {
+        "1": 301,
+        "2": 300,
+        "3": 152,
+        "4": 148
+      },
+      "maturity": {
+        "experimental": 0,
+        "calibrating": 901,
+        "production": 0
+      },
+      "visual_req": {
+        "essential": 405,
+        "optional": 196,
+        "none": 300
+      },
+      "why_quality": {
+        "human_authored": 894,
+        "ai_generated": 7
+      },
+      "hint_quality": {
+        "good": 900,
+        "spoiler": 1
+      },
+      "skills": {
+        "NUM_COMPARE_1": 300,
+        "NUM_COMPARE_2": 300,
+        "NUM_COMPARE_3": 152,
+        "NUM_COMPARE_4": 148,
+        "SUB_BASIC_1": 1
+      }
+    },
+    {
+      "file": "topic-5-spatial/grade34_questions.json",
+      "questions_processed": 300,
+      "levels": {
+        "3": 150,
+        "4": 150
+      },
+      "maturity": {
+        "experimental": 0,
+        "calibrating": 300,
+        "production": 0
+      },
+      "visual_req": {
+        "essential": 300,
+        "optional": 0,
+        "none": 0
+      },
+      "why_quality": {
+        "human_authored": 300
+      },
+      "hint_quality": {
+        "spoiler": 60,
+        "good": 240
+      },
+      "skills": {
+        "SHAPE_3D_3": 150,
+        "SHAPE_3D_4": 150
+      }
+    },
+    {
+      "file": "topic-5-spatial/questions.json",
+      "questions_processed": 900,
+      "levels": {
+        "1": 283,
+        "4": 159,
+        "3": 158,
+        "2": 300
+      },
+      "maturity": {
+        "experimental": 0,
+        "calibrating": 900,
+        "production": 0
+      },
+      "visual_req": {
+        "essential": 782,
+        "optional": 8,
+        "none": 110
+      },
+      "why_quality": {
+        "human_authored": 843,
+        "ai_generated": 57
+      },
+      "hint_quality": {
+        "good": 878,
+        "spoiler": 22
+      },
+      "skills": {
+        "SHAPE_3D_1": 266,
+        "GEO_SYMMETRY_4": 5,
+        "SHAPE_3D_3": 109,
+        "SHAPE_3D_4": 96,
+        "GEO_SYMMETRY_1": 17,
+        "SHAPE_3D_2": 269,
+        "GEO_SYMMETRY_2": 13,
+        "ADD_BASIC_2": 8,
+        "SHAPE_2D_2": 8,
+        "COUNT_100_2": 1,
+        "GEO_PERIMETER_2": 1,
+        "MEAS_CAPACITY_3": 49,
+        "MEAS_CAPACITY_4": 58
+      }
+    },
+    {
+      "file": "topic-6-shapes/grade34_questions.json",
+      "questions_processed": 300,
+      "levels": {
+        "3": 150,
+        "4": 150
+      },
+      "maturity": {
+        "experimental": 0,
+        "calibrating": 300,
+        "production": 0
+      },
+      "visual_req": {
+        "essential": 98,
+        "optional": 0,
+        "none": 202
+      },
+      "why_quality": {
+        "human_authored": 300
+      },
+      "hint_quality": {
+        "good": 98,
+        "spoiler": 202
+      },
+      "skills": {
+        "GEO_SYMMETRY_3": 150,
+        "GEO_SYMMETRY_4": 150
+      }
+    },
+    {
+      "file": "topic-6-shapes/questions.json",
+      "questions_processed": 900,
+      "levels": {
+        "1": 240,
+        "3": 172,
+        "4": 187,
+        "2": 301
+      },
+      "maturity": {
+        "experimental": 0,
+        "calibrating": 900,
+        "production": 0
+      },
+      "visual_req": {
+        "essential": 653,
+        "optional": 13,
+        "none": 234
+      },
+      "why_quality": {
+        "human_authored": 898,
+        "ai_generated": 2
+      },
+      "hint_quality": {
+        "good": 748,
+        "spoiler": 152
+      },
+      "skills": {
+        "GEO_SYMMETRY_1": 36,
+        "SHAPE_2D_1": 143,
+        "GEO_SYMMETRY_3": 158,
+        "SHAPE_2D_4": 26,
+        "GEO_SYMMETRY_4": 149,
+        "GEO_SYMMETRY_2": 50,
+        "SHAPE_2D_2": 182,
+        "GEO_AREA_2": 52,
+        "GEO_PERIMETER_1": 33,
+        "GEO_AREA_1": 28,
+        "GEO_PERIMETER_2": 11,
+        "FRAC_ADD_4": 12,
+        "FRAC_CONCEPT_2": 6,
+        "SHAPE_2D_3": 14
+      }
+    },
+    {
+      "file": "topic-7-word-problems/grade34_questions.json",
+      "questions_processed": 300,
+      "levels": {
+        "3": 150,
+        "4": 150
+      },
+      "maturity": {
+        "experimental": 0,
+        "calibrating": 300,
+        "production": 0
+      },
+      "visual_req": {
+        "essential": 230,
+        "optional": 0,
+        "none": 70
+      },
+      "why_quality": {
+        "human_authored": 300
+      },
+      "hint_quality": {
+        "good": 215,
+        "spoiler": 85
+      },
+      "skills": {
+        "ARITH_MULTI_3": 150,
+        "ARITH_MULTI_4": 150
+      }
+    },
+    {
+      "file": "topic-7-word-problems/questions.json",
+      "questions_processed": 900,
+      "levels": {
+        "1": 299,
+        "3": 153,
+        "2": 300,
+        "4": 148
+      },
+      "maturity": {
+        "experimental": 0,
+        "calibrating": 900,
+        "production": 0
+      },
+      "visual_req": {
+        "essential": 758,
+        "optional": 72,
+        "none": 70
+      },
+      "why_quality": {
+        "human_authored": 813,
+        "ai_generated": 68,
+        "minimal": 19
+      },
+      "hint_quality": {
+        "good": 681,
+        "spoiler": 219
+      },
+      "skills": {
+        "ARITH_MULTI_1": 262,
+        "ADD_BASIC_1": 9,
+        "SUB_BASIC_1": 9,
+        "NUM_COMPARE_1": 7,
+        "NUM_COMPARE_3": 1,
+        "MULT_FACTS_1": 8,
+        "DIV_BASIC_1": 3,
+        "FRAC_CONCEPT_1": 1,
+        "ARITH_MULTI_2": 264,
+        "MEAS_MONEY_2": 6,
+        "MULT_FACTS_2": 8,
+        "DIV_BASIC_2": 8,
+        "ADD_BASIC_2": 3,
+        "SUB_BASIC_2": 3,
+        "FRAC_CONCEPT_2": 3,
+        "COUNT_100_2": 4,
+        "GEO_AREA_2": 1,
+        "ARITH_MULTI_3": 152,
+        "ARITH_MULTI_4": 148
+      }
+    },
+    {
+      "file": "topic-8-puzzles/grade34_questions.json",
+      "questions_processed": 300,
+      "levels": {
+        "3": 150,
+        "4": 150
+      },
+      "maturity": {
+        "experimental": 0,
+        "calibrating": 300,
+        "production": 0
+      },
+      "visual_req": {
+        "essential": 0,
+        "optional": 0,
+        "none": 300
+      },
+      "why_quality": {
+        "human_authored": 300
+      },
+      "hint_quality": {
+        "good": 162,
+        "spoiler": 138
+      },
+      "skills": {
+        "NUM_PATTERN_3": 150,
+        "NUM_PATTERN_4": 150
+      }
+    },
+    {
+      "file": "topic-8-puzzles/questions.json",
+      "questions_processed": 900,
+      "levels": {
+        "1": 284,
+        "2": 301,
+        "3": 167,
+        "4": 148
+      },
+      "maturity": {
+        "experimental": 0,
+        "calibrating": 900,
+        "production": 0
+      },
+      "visual_req": {
+        "essential": 399,
+        "optional": 186,
+        "none": 315
+      },
+      "why_quality": {
+        "ai_generated": 48,
+        "human_authored": 851,
+        "minimal": 1
+      },
+      "hint_quality": {
+        "good": 717,
+        "spoiler": 183
+      },
+      "skills": {
+        "ADD_BASIC_1": 9,
+        "NUM_PATTERN_1": 269,
+        "SUB_BASIC_1": 6,
+        "NUM_PATTERN_2": 298,
+        "NUM_PATTERN_3": 167,
+        "ADD_BASIC_2": 2,
+        "COUNT_100_2": 1,
+        "NUM_PATTERN_4": 148
+      }
+    },
+    {
+      "file": "us-common-core/grade1/uscc_g1_questions.json",
+      "questions_processed": 200,
+      "levels": {
+        "1": 200
+      },
+      "maturity": {
+        "experimental": 0,
+        "calibrating": 200,
+        "production": 0
+      },
+      "visual_req": {
+        "essential": 158,
+        "optional": 42,
+        "none": 0
+      },
+      "why_quality": {
+        "structured": 200
+      },
+      "hint_quality": {
+        "spoiler": 65,
+        "good": 135
+      },
+      "skills": {
+        "ADD_BASIC_1": 48,
+        "SUB_BASIC_1": 20,
+        "COUNT_10_1": 64,
+        "COUNT_100_1": 3,
+        "PV_2DIG_1": 20,
+        "MEAS_LENGTH_1": 15,
+        "MEAS_TIME_1": 15,
+        "SHAPE_2D_1": 15
+      }
+    },
+    {
+      "file": "us-common-core/grade2/uscc_g2_questions.json",
+      "questions_processed": 200,
+      "levels": {
+        "2": 200
+      },
+      "maturity": {
+        "experimental": 0,
+        "calibrating": 200,
+        "production": 0
+      },
+      "visual_req": {
+        "essential": 101,
+        "optional": 99,
+        "none": 0
+      },
+      "why_quality": {
+        "structured": 200
+      },
+      "hint_quality": {
+        "spoiler": 95,
+        "good": 105
+      },
+      "skills": {
+        "ADD_BASIC_2": 52,
+        "SUB_BASIC_2": 18,
+        "COUNT_10_2": 54,
+        "PV_2DIG_2": 18,
+        "MEAS_LENGTH_2": 12,
+        "MEAS_MONEY_2": 21,
+        "MEAS_TIME_2": 15,
+        "SHAPE_2D_2": 10
+      }
+    },
+    {
+      "file": "us-common-core/grade3/uscc_g3_questions.json",
+      "questions_processed": 200,
+      "levels": {
+        "3": 200
+      },
+      "maturity": {
+        "experimental": 0,
+        "calibrating": 200,
+        "production": 0
+      },
+      "visual_req": {
+        "essential": 66,
+        "optional": 46,
+        "none": 88
+      },
+      "why_quality": {
+        "structured": 200
+      },
+      "hint_quality": {
+        "spoiler": 140,
+        "good": 60
+      },
+      "skills": {
+        "MULT_FACTS_3": 46,
+        "DIV_BASIC_3": 27,
+        "FRAC_CONCEPT_3": 51,
+        "GEO_AREA_3": 21,
+        "GEO_PERIMETER_3": 20,
+        "MEAS_TIME_3": 10,
+        "MEAS_WEIGHT_3": 8,
+        "COUNT_10_3": 6,
+        "ADD_BASIC_3": 1,
+        "SHAPE_2D_3": 10
+      }
+    },
+    {
+      "file": "us-common-core/grade4/uscc_g4_questions.json",
+      "questions_processed": 200,
+      "levels": {
+        "4": 200
+      },
+      "maturity": {
+        "experimental": 0,
+        "calibrating": 200,
+        "production": 0
+      },
+      "visual_req": {
+        "essential": 33,
+        "optional": 87,
+        "none": 80
+      },
+      "why_quality": {
+        "structured": 200
+      },
+      "hint_quality": {
+        "spoiler": 107,
+        "good": 78,
+        "adequate": 15
+      },
+      "skills": {
+        "ARITH_MULTI_4": 15,
+        "COUNT_10_4": 24,
+        "ADD_BASIC_4": 14,
+        "NUM_PATTERN_4": 10,
+        "MULT_FACTS_4": 19,
+        "DIV_BASIC_4": 13,
+        "NUM_ROUND_4": 8,
+        "PV_2DIG_4": 7,
+        "FRAC_CONCEPT_4": 30,
+        "FRAC_ADD_4": 15,
+        "MEAS_CONVERT_4": 12,
+        "MEAS_LENGTH_4": 15,
+        "GEO_AREA_4": 8,
+        "GEO_SYMMETRY_4": 10
+      }
+    },
+    {
+      "file": "us-common-core/grade5/uscc_g5_questions.json",
+      "questions_processed": 200,
+      "levels": {
+        "5": 200
+      },
+      "maturity": {
+        "experimental": 0,
+        "calibrating": 200,
+        "production": 0
+      },
+      "visual_req": {
+        "essential": 10,
+        "optional": 65,
+        "none": 125
+      },
+      "why_quality": {
+        "structured": 200
+      },
+      "hint_quality": {
+        "spoiler": 108,
+        "good": 92
+      },
+      "skills": {
+        "ORDER_OPS_5": 30,
+        "ADD_BASIC_5": 29,
+        "SUB_BASIC_5": 6,
+        "MULT_FACTS_5": 10,
+        "COUNT_10_5": 26,
+        "DIV_BASIC_5": 10,
+        "FRAC_ADD_5": 12,
+        "FRAC_MULT_5": 17,
+        "FRAC_CONCEPT_5": 21,
+        "MEAS_CAPACITY_5": 24,
+        "MEAS_CONVERT_5": 10,
+        "PV_2DIG_5": 5
+      }
+    },
+    {
+      "file": "us-common-core/grade6/uscc_g6_questions.json",
+      "questions_processed": 200,
+      "levels": {
+        "6": 200
+      },
+      "maturity": {
+        "experimental": 0,
+        "calibrating": 200,
+        "production": 0
+      },
+      "visual_req": {
+        "essential": 46,
+        "optional": 15,
+        "none": 139
+      },
+      "why_quality": {
+        "structured": 200
+      },
+      "hint_quality": {
+        "spoiler": 120,
+        "good": 80
+      },
+      "skills": {
+        "COUNT_10_6": 93,
+        "ADD_BASIC_6": 50,
+        "FRAC_CONCEPT_6": 15,
+        "GEO_AREA_6": 21,
+        "MEAS_CAPACITY_6": 8,
+        "DATA_HANDLE_6": 13
+      }
+    }
+  ],
+  "gaps_needing_attention": {
+    "no_why_explanation": 423,
+    "generic_hints": 0,
+    "spoiler_hints": 5582,
+    "no_visuals_but_essential": 0,
+    "visual_not_ai_verified": 22467
+  }
+}

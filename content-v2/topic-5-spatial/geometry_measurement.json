@@ -1,251 +1,58 @@
 [
   {
     "id": "T5-1201",
-    "stem": "Captain Kiwi finds a ball in the treasure chest. What 3D shape is a ball?",
+    "stem": "Aarav is working at the butterfly meadow with colorful flowers. Captain Kiwi sees a giraffe and a dog. Which animal is taller?",
     "choices": [
-      "Cube",
-      "Sphere",
-      "Cylinder",
-      "Cone"
+      "The dog",
+      "They are the same height",
+      "The giraffe",
+      "We need a ruler to tell"
     ],
-    "correct_answer": 1,
+    "correct_answer": 2,
     "difficulty_tier": "easy",
-    "difficulty_score": 5,
+    "difficulty_score": 2,
     "visual_svg": null,
     "visual_alt": null,
     "diagnostics": {
-      "0": "A cube has flat square faces. A ball is round all over.",
-      "2": "A cylinder has two flat circles and a curved side, like a can.",
-      "3": "A cone has a point at the top. A ball has no point."
+      "0": "Perimeter is the distance AROUND the shape (add all sides). Area is the space INSIDE (length × width).",
+      "1": "A rectangle has 4 sides, not 2. Did you forget to count the matching sides?",
+      "3": "Perimeter is measured in units (cm, m). Area is measured in SQUARE units (cm², m²).",
+      "correct_explanation": "The answer is The giraffe. Apply the correct formula for this shape using the measurements given in the problem."
     },
     "tags": [
-      "3d-shapes",
+      "comparison-logic",
       "grade-1-2"
     ],
     "topic": "spatial_thinking",
     "topic_name": "Spatial Thinking",
     "hint": {
-      "level_0": "Think about round objects.",
-      "level_1": "Identify the shape by its curves.",
-      "level_2": "Does it have any flat faces?",
-      "level_3": "A ball is round everywhere.",
-      "level_4": "No flat faces, no edges, no corners.",
-      "level_5": "A ball is round all over — sphere."
+      "level_0": "Before using a formula, make sure you know: are you finding perimeter (around) or area (inside)?",
+      "level_1": "Draw the shape if you can. Label what you know — the sides, angles, or measurements given.",
+      "level_2": "Identify the shape and its measurements. Apply the right formula: perimeter = sum of all sides, area = length × width for rectangles.",
+      "level_3": "Here's the solution: The answer is The giraffe. Work through each step carefully to see why."
     },
-    "concept_cluster": "geometry/3d_shapes",
-    "visual_context": "A ball next to labeled 3D shapes: cube, sphere, cylinder, cone.",
-    "interaction_mode": "tap_to_reveal",
+    "concept_cluster": "measurement/comparison",
+    "visual_context": "The objects shown standing next to each other for height comparison.",
+    "interaction_mode": "multiple_choice",
     "irt_params": {
-      "a": 1.05,
-      "b": -2.22,
-      "c": 0.25
+      "a": 1.25,
+      "b": -2.98,
+      "c": 0.3
     },
-    "irt_a": 1.05,
-    "irt_b": -2.22,
-    "irt_c": 0.25,
+    "irt_a": 1.25,
+    "irt_b": -2.98,
+    "irt_c": 0.3,
     "solution_steps": [
-      "Identify the properties to look for",
-      "Compare with the given options"
-    ]
+      "Read the clues or conditions carefully",
+      "Eliminate options that don't fit"
+    ],
+    "original_stem": "Captain Kiwi sees a giraffe and a dog. Which animal is taller?",
+    "competency_level": "K",
+    "competency_confidence": 1.0,
+    "competency_name": "Knowing"
   },
   {
     "id": "T5-1202",
-    "stem": "Builder Bee stacks boxes. Each box is shaped like a ___. What 3D shape has 6 flat faces?",
-    "choices": [
-      "4",
-      "5",
-      "6",
-      "8"
-    ],
-    "correct_answer": 2,
-    "difficulty_tier": "easy",
-    "difficulty_score": 8,
-    "visual_svg": null,
-    "visual_alt": null,
-    "diagnostics": {
-      "0": "You may be thinking of a square (4 sides). A cube is 3D — count top, bottom, front, back, left, right.",
-      "1": "You missed one face. Don't forget the bottom!",
-      "3": "8 is the number of corners on a cube, not faces."
-    },
-    "tags": [
-      "3d-shapes",
-      "grade-1-2"
-    ],
-    "topic": "spatial_thinking",
-    "topic_name": "Spatial Thinking",
-    "hint": {
-      "level_0": "Count every flat side.",
-      "level_1": "Count the faces of the box.",
-      "level_2": "Think top, bottom, and four sides.",
-      "level_3": "Top + bottom = 2, sides = 4.",
-      "level_4": "2 + 4 = 6 faces total.",
-      "level_5": "Top, bottom, front, back, left, right = 6."
-    },
-    "concept_cluster": "geometry/3d_shapes",
-    "visual_context": "A stack of boxes showing flat square faces.",
-    "interaction_mode": "tap_to_reveal",
-    "irt_params": {
-      "a": 1.05,
-      "b": -1.98,
-      "c": 0.25
-    },
-    "irt_a": 1.05,
-    "irt_b": -1.98,
-    "irt_c": 0.25,
-    "solution_steps": [
-      "Identify the properties to look for",
-      "Compare with the given options"
-    ]
-  },
-  {
-    "id": "T5-1203",
-    "stem": "Chef Cheetah rolls out dough with a rolling pin. What 3D shape is the rolling pin?",
-    "choices": [
-      "Sphere",
-      "Cylinder",
-      "Cone",
-      "Cube"
-    ],
-    "correct_answer": 1,
-    "difficulty_tier": "easy",
-    "difficulty_score": 6,
-    "visual_svg": null,
-    "visual_alt": null,
-    "diagnostics": {
-      "0": "A sphere is round like a ball. A rolling pin is long with two flat circle ends.",
-      "2": "A cone has a point at one end. A rolling pin is the same width all the way through.",
-      "3": "A cube has flat square faces. A rolling pin is round and rolls smoothly."
-    },
-    "tags": [
-      "3d-shapes",
-      "grade-1-2"
-    ],
-    "topic": "spatial_thinking",
-    "topic_name": "Spatial Thinking",
-    "hint": {
-      "level_0": "Think about how a rolling pin rolls.",
-      "level_1": "It has two flat circles at each end.",
-      "level_2": "It is long and round, like a can.",
-      "level_3": "A can of soup has the same shape.",
-      "level_4": "Two flat circle faces and one curved surface.",
-      "level_5": "A rolling pin is shaped like a cylinder."
-    },
-    "concept_cluster": "geometry/3d_shapes",
-    "visual_context": "A rolling pin shown beside labeled 3D shapes: sphere, cylinder, cone, cube.",
-    "interaction_mode": "tap_to_reveal",
-    "irt_params": {
-      "a": 1.05,
-      "b": -2.14,
-      "c": 0.25
-    },
-    "irt_a": 1.05,
-    "irt_b": -2.14,
-    "irt_c": 0.25,
-    "solution_steps": [
-      "Identify the properties to look for",
-      "Compare with the given options"
-    ]
-  },
-  {
-    "id": "T5-1204",
-    "stem": "Captain Kiwi wears a party hat. What 3D shape is a party hat?",
-    "choices": [
-      "Sphere",
-      "Cube",
-      "Cylinder",
-      "Cone"
-    ],
-    "correct_answer": 2,
-    "difficulty_tier": "easy",
-    "difficulty_score": 7,
-    "visual_svg": null,
-    "visual_alt": null,
-    "diagnostics": {
-      "0": "A sphere is round like a ball. A can has flat ends.",
-      "1": "A cube has square faces. A can has round ends.",
-      "3": "A cone has a point. A can has two flat circle ends."
-    },
-    "tags": [
-      "3d-shapes",
-      "grade-1-2"
-    ],
-    "topic": "spatial_thinking",
-    "topic_name": "Spatial Thinking",
-    "hint": {
-      "level_0": "Think about the shape of a can.",
-      "level_1": "Identify the shape with two circles.",
-      "level_2": "Flat circles on top and bottom, curved side.",
-      "level_3": "It rolls but has two flat ends.",
-      "level_4": "Two circle faces + curved surface = ?",
-      "level_5": "A can has two circles and curves — cylinder."
-    },
-    "concept_cluster": "geometry/3d_shapes",
-    "visual_context": "A pointed party hat next to labeled 3D shapes.",
-    "interaction_mode": "tap_to_reveal",
-    "irt_params": {
-      "a": 1.05,
-      "b": -2.06,
-      "c": 0.25
-    },
-    "irt_a": 1.05,
-    "irt_b": -2.06,
-    "irt_c": 0.25,
-    "solution_steps": [
-      "Identify the properties to look for",
-      "Compare with the given options"
-    ]
-  },
-  {
-    "id": "T5-1205",
-    "stem": "Ranger Roo finds a tin can in the forest. What 3D shape is a tin can?",
-    "choices": [
-      "Cube",
-      "Sphere",
-      "Cylinder",
-      "Cone"
-    ],
-    "correct_answer": 2,
-    "difficulty_tier": "easy",
-    "difficulty_score": 12,
-    "visual_svg": null,
-    "visual_alt": null,
-    "diagnostics": {
-      "0": "A cube can only slide. It has no curved surface to roll.",
-      "1": "A sphere can roll but cannot slide — it has no flat face.",
-      "3": "A cone can roll in a circle and slide, but a cylinder does both more clearly with its flat ends and curved side."
-    },
-    "tags": [
-      "3d-shapes",
-      "grade-1-2"
-    ],
-    "topic": "spatial_thinking",
-    "topic_name": "Spatial Thinking",
-    "hint": {
-      "level_0": "Think about flat and curved surfaces.",
-      "level_1": "Which shape has both flat and curved?",
-      "level_2": "Rolling needs curves, sliding needs flat.",
-      "level_3": "It has flat circles and a curved side.",
-      "level_4": "Curved side rolls, flat end slides.",
-      "level_5": "A cylinder has flat + curved — rolls and slides."
-    },
-    "concept_cluster": "geometry/3d_shapes",
-    "visual_context": "A tin can shown with circular top and bottom faces.",
-    "interaction_mode": "tap_to_reveal",
-    "irt_params": {
-      "a": 1.05,
-      "b": -1.68,
-      "c": 0.25
-    },
-    "irt_a": 1.05,
-    "irt_b": -1.68,
-    "irt_c": 0.25,
-    "solution_steps": [
-      "Identify the properties to look for",
-      "Compare with the given options"
-    ]
-  },
-  {
-    "id": "T5-1206",
     "stem": "Captain Kiwi holds a watermelon in one hand and a grape in the other. Which is heavier?",
     "choices": [
       "The grape",
@@ -259,9 +66,10 @@
     "visual_svg": null,
     "visual_alt": null,
     "diagnostics": {
-      "0": "A grape is tiny and light. A watermelon is much bigger and heavier.",
-      "2": "A watermelon is many times heavier than a grape.",
-      "3": "We know from everyday experience that watermelons are heavier."
+      "0": "Perimeter is the distance AROUND the shape (add all sides). Area is the space INSIDE (length × width).",
+      "2": "Check which formula matches this shape. Rectangles use length × width, triangles use ½ × base × height.",
+      "3": "Perimeter is measured in units (cm, m). Area is measured in SQUARE units (cm², m²).",
+      "correct_explanation": "The answer is The watermelon. Apply the correct formula for this shape using the measurements given in the problem."
     },
     "tags": [
       "comparison-logic",
@@ -270,130 +78,33 @@
     "topic": "spatial_thinking",
     "topic_name": "Spatial Thinking",
     "hint": {
-      "level_0": "Think about size and weight.",
-      "level_1": "Compare which object is bigger.",
-      "level_2": "Bigger fruits usually weigh more.",
-      "level_3": "A watermelon is much larger.",
-      "level_4": "Watermelons weigh several kilograms; grapes weigh grams.",
-      "level_5": "The watermelon is much heavier than a grape."
+      "level_0": "What shape are you working with? Visualize it — how many sides, what are its measurements?",
+      "level_1": "Draw the shape if you can. Label what you know — the sides, angles, or measurements given.",
+      "level_2": "Identify the shape and its measurements. Apply the right formula: perimeter = sum of all sides, area = length × width for rectangles.",
+      "level_3": "Here's the solution: The answer is The watermelon. Work through each step carefully to see why."
     },
     "concept_cluster": "measurement/comparison",
     "visual_context": "The two objects shown side by side for comparison.",
-    "interaction_mode": "drag_and_drop",
+    "interaction_mode": "multiple_choice",
     "irt_params": {
-      "a": 1.05,
-      "b": -2.37,
-      "c": 0.25
+      "a": 1.18,
+      "b": -3.0,
+      "c": 0.3
     },
-    "irt_a": 1.05,
-    "irt_b": -2.37,
-    "irt_c": 0.25,
+    "irt_a": 1.18,
+    "irt_b": -3.0,
+    "irt_c": 0.3,
     "solution_steps": [
       "Read the clues or conditions carefully",
       "Eliminate options that don't fit"
-    ]
+    ],
+    "competency_level": "K",
+    "competency_confidence": 1.0,
+    "competency_name": "Knowing"
   },
   {
-    "id": "T5-1207",
-    "stem": "Captain Kiwi sees a giraffe and a dog. Which animal is taller?",
-    "choices": [
-      "The dog",
-      "They are the same height",
-      "The giraffe",
-      "We need a ruler to tell"
-    ],
-    "correct_answer": 2,
-    "difficulty_tier": "easy",
-    "difficulty_score": 2,
-    "visual_svg": null,
-    "visual_alt": null,
-    "diagnostics": {
-      "0": "Dogs are much shorter than giraffes.",
-      "1": "Giraffes are the tallest land animals — much taller than dogs.",
-      "3": "We know from common sense that giraffes are taller."
-    },
-    "tags": [
-      "comparison-logic",
-      "grade-1-2"
-    ],
-    "topic": "spatial_thinking",
-    "topic_name": "Spatial Thinking",
-    "hint": {
-      "level_0": "Think about tall animals.",
-      "level_1": "Compare the heights of both animals.",
-      "level_2": "Which animal has a very long neck?",
-      "level_3": "Giraffes have the longest necks.",
-      "level_4": "A giraffe can be 5 metres tall.",
-      "level_5": "The giraffe is much taller than the dog."
-    },
-    "concept_cluster": "measurement/comparison",
-    "visual_context": "The objects shown standing next to each other for height comparison.",
-    "interaction_mode": "drag_and_drop",
-    "irt_params": {
-      "a": 1.05,
-      "b": -2.45,
-      "c": 0.25
-    },
-    "irt_a": 1.05,
-    "irt_b": -2.45,
-    "irt_c": 0.25,
-    "solution_steps": [
-      "Read the clues or conditions carefully",
-      "Eliminate options that don't fit"
-    ]
-  },
-  {
-    "id": "T5-1208",
-    "stem": "Kiwi has 3 pencils of different lengths. The red pencil is shorter than the blue pencil. The blue pencil is shorter than the green pencil. Which pencil is the longest?",
-    "choices": [
-      "Red",
-      "Blue",
-      "Green",
-      "They are all the same"
-    ],
-    "correct_answer": 2,
-    "difficulty_tier": "easy",
-    "difficulty_score": 14,
-    "visual_svg": null,
-    "visual_alt": null,
-    "diagnostics": {
-      "0": "Red is the shortest. Red < Blue < Green.",
-      "1": "Blue is in the middle. Green is longer than blue.",
-      "3": "The problem says they have different lengths."
-    },
-    "tags": [
-      "comparison-logic",
-      "grade-1-2"
-    ],
-    "topic": "spatial_thinking",
-    "topic_name": "Spatial Thinking",
-    "hint": {
-      "level_0": "Put them in order from short to long.",
-      "level_1": "Compare pairs to find the longest.",
-      "level_2": "Red < Blue, Blue < Green. Who is biggest?",
-      "level_3": "Green is longer than both others.",
-      "level_4": "Red < Blue < Green, so green is longest.",
-      "level_5": "Red < Blue < Green. Green is the longest."
-    },
-    "concept_cluster": "measurement/comparison",
-    "visual_context": "The objects shown standing next to each other for height comparison.",
-    "interaction_mode": "drag_and_drop",
-    "irt_params": {
-      "a": 1.05,
-      "b": -1.52,
-      "c": 0.25
-    },
-    "irt_a": 1.05,
-    "irt_b": -1.52,
-    "irt_c": 0.25,
-    "solution_steps": [
-      "Read the clues or conditions carefully",
-      "Eliminate options that don't fit"
-    ]
-  },
-  {
-    "id": "T5-1209",
-    "stem": "Captain Kiwi has a feather and a brick. Which is lighter?",
+    "id": "T5-1203",
+    "stem": "Mei is working at the rain gauge showing water levels. Captain Kiwi has a feather and a brick. Which is lighter?",
     "choices": [
       "The brick",
       "The feather",
@@ -406,9 +117,10 @@
     "visual_svg": null,
     "visual_alt": null,
     "diagnostics": {
-      "0": "A brick is heavy. A feather is very light.",
-      "2": "A feather weighs almost nothing compared to a brick.",
-      "3": "We know feathers are lighter than bricks from experience."
+      "0": "Perimeter is the distance AROUND the shape (add all sides). Area is the space INSIDE (length × width).",
+      "2": "Check which formula matches this shape. Rectangles use length × width, triangles use ½ × base × height.",
+      "3": "Perimeter is measured in units (cm, m). Area is measured in SQUARE units (cm², m²).",
+      "correct_explanation": "The answer is The feather. Apply the correct formula for this shape using the measurements given in the problem."
     },
     "tags": [
       "comparison-logic",
@@ -417,31 +129,239 @@
     "topic": "spatial_thinking",
     "topic_name": "Spatial Thinking",
     "hint": {
-      "level_0": "Think about what feels heavy.",
-      "level_1": "Compare the weights of both objects.",
-      "level_2": "A feather floats; a brick does not.",
-      "level_3": "Feathers are very, very light.",
-      "level_4": "A brick weighs kilograms; a feather weighs grams.",
-      "level_5": "The feather is much lighter than the brick."
+      "level_0": "Before using a formula, make sure you know: are you finding perimeter (around) or area (inside)?",
+      "level_1": "Draw the shape if you can. Label what you know — the sides, angles, or measurements given.",
+      "level_2": "Identify the shape and its measurements. Apply the right formula: perimeter = sum of all sides, area = length × width for rectangles.",
+      "level_3": "Here's the solution: The answer is The feather. Work through each step carefully to see why."
     },
     "concept_cluster": "measurement/comparison",
     "visual_context": "The two objects shown side by side for comparison.",
-    "interaction_mode": "drag_and_drop",
+    "interaction_mode": "multiple_choice",
     "irt_params": {
-      "a": 1.05,
-      "b": -2.37,
-      "c": 0.25
+      "a": 1.23,
+      "b": -2.97,
+      "c": 0.3
     },
-    "irt_a": 1.05,
-    "irt_b": -2.37,
-    "irt_c": 0.25,
+    "irt_a": 1.23,
+    "irt_b": -2.97,
+    "irt_c": 0.3,
     "solution_steps": [
       "Read the clues or conditions carefully",
       "Eliminate options that don't fit"
-    ]
+    ],
+    "original_stem": "Captain Kiwi has a feather and a brick. Which is lighter?",
+    "competency_level": "K",
+    "competency_confidence": 1.0,
+    "competency_name": "Knowing"
   },
   {
-    "id": "T5-1210",
+    "id": "T5-1204",
+    "stem": "Min-jun is working at the harvest basket filling up with vegetables. finds a ball in the treasure chest. What 3D shape is a ball?",
+    "choices": [
+      "Cube",
+      "Sphere",
+      "Cylinder",
+      "Cone"
+    ],
+    "correct_answer": 1,
+    "difficulty_tier": "easy",
+    "difficulty_score": 5,
+    "visual_svg": null,
+    "visual_alt": null,
+    "diagnostics": {
+      "0": "Perimeter is the distance AROUND the shape (add all sides). Area is the space INSIDE (length × width).",
+      "2": "Check which formula matches this shape. Rectangles use length × width, triangles use ½ × base × height.",
+      "3": "Perimeter is measured in units (cm, m). Area is measured in SQUARE units (cm², m²).",
+      "correct_explanation": "The answer is Sphere. Apply the correct formula for this shape using the measurements given in the problem."
+    },
+    "tags": [
+      "3d-shapes",
+      "grade-1-2"
+    ],
+    "topic": "spatial_thinking",
+    "topic_name": "Spatial Thinking",
+    "hint": {
+      "level_0": "What shape are you working with? Visualize it — how many sides, what are its measurements?",
+      "level_1": "Draw the shape if you can. Label what you know — the sides, angles, or measurements given.",
+      "level_2": "Identify the shape and its measurements. Apply the right formula: perimeter = sum of all sides, area = length × width for rectangles.",
+      "level_3": "Here's the solution: The answer is Sphere. Work through each step carefully to see why."
+    },
+    "concept_cluster": "geometry/3d_shapes",
+    "visual_context": "A ball next to labeled 3D shapes: cube, sphere, cylinder, cone.",
+    "interaction_mode": "multiple_choice",
+    "irt_params": {
+      "a": 1.4,
+      "b": -2.77,
+      "c": 0.3
+    },
+    "irt_a": 1.4,
+    "irt_b": -2.77,
+    "irt_c": 0.3,
+    "solution_steps": [
+      "Identify the properties to look for",
+      "Compare with the given options"
+    ],
+    "original_stem": "Captain Kiwi finds a ball in the treasure chest. What 3D shape is a ball?",
+    "competency_level": "K",
+    "competency_confidence": 1.0,
+    "competency_name": "Knowing"
+  },
+  {
+    "id": "T5-1205",
+    "stem": "Chef Cheetah rolls out dough with a rolling pin. What 3D shape is the rolling pin?",
+    "choices": [
+      "Sphere",
+      "Cylinder",
+      "Cone",
+      "Cube"
+    ],
+    "correct_answer": 1,
+    "difficulty_tier": "easy",
+    "difficulty_score": 6,
+    "visual_svg": null,
+    "visual_alt": null,
+    "diagnostics": {
+      "0": "Perimeter is the distance AROUND the shape (add all sides). Area is the space INSIDE (length × width).",
+      "2": "Check which formula matches this shape. Rectangles use length × width, triangles use ½ × base × height.",
+      "3": "Perimeter is measured in units (cm, m). Area is measured in SQUARE units (cm², m²).",
+      "correct_explanation": "The answer is Cylinder. Apply the correct formula for this shape using the measurements given in the problem."
+    },
+    "tags": [
+      "3d-shapes",
+      "grade-1-2"
+    ],
+    "topic": "spatial_thinking",
+    "topic_name": "Spatial Thinking",
+    "hint": {
+      "level_0": "What shape are you working with? Visualize it — how many sides, what are its measurements?",
+      "level_1": "Draw the shape if you can. Label what you know — the sides, angles, or measurements given.",
+      "level_2": "Identify the shape and its measurements. Apply the right formula: perimeter = sum of all sides, area = length × width for rectangles.",
+      "level_3": "Here's the solution: The answer is Cylinder. Work through each step carefully to see why."
+    },
+    "concept_cluster": "geometry/3d_shapes",
+    "visual_context": "A rolling pin shown beside labeled 3D shapes: sphere, cylinder, cone, cube.",
+    "interaction_mode": "multiple_choice",
+    "irt_params": {
+      "a": 1.2,
+      "b": -2.9,
+      "c": 0.3
+    },
+    "irt_a": 1.2,
+    "irt_b": -2.9,
+    "irt_c": 0.3,
+    "solution_steps": [
+      "Identify the properties to look for",
+      "Compare with the given options"
+    ],
+    "competency_level": "K",
+    "competency_confidence": 1.0,
+    "competency_name": "Knowing"
+  },
+  {
+    "id": "T5-1206",
+    "stem": "Suki is working at the garden beds arranged in neat rows. Captain Kiwi wears a party hat. What 3D shape is a party hat?",
+    "choices": [
+      "Sphere",
+      "Cube",
+      "Cylinder",
+      "Cone"
+    ],
+    "correct_answer": 2,
+    "difficulty_tier": "easy",
+    "difficulty_score": 7,
+    "visual_svg": null,
+    "visual_alt": null,
+    "diagnostics": {
+      "0": "Perimeter is the distance AROUND the shape (add all sides). Area is the space INSIDE (length × width).",
+      "1": "A rectangle has 4 sides, not 2. Did you forget to count the matching sides?",
+      "3": "Perimeter is measured in units (cm, m). Area is measured in SQUARE units (cm², m²).",
+      "correct_explanation": "The answer is Cylinder. Apply the correct formula for this shape using the measurements given in the problem."
+    },
+    "tags": [
+      "3d-shapes",
+      "grade-1-2"
+    ],
+    "topic": "spatial_thinking",
+    "topic_name": "Spatial Thinking",
+    "hint": {
+      "level_0": "Before using a formula, make sure you know: are you finding perimeter (around) or area (inside)?",
+      "level_1": "Draw the shape if you can. Label what you know — the sides, angles, or measurements given.",
+      "level_2": "Identify the shape and its measurements. Apply the right formula: perimeter = sum of all sides, area = length × width for rectangles.",
+      "level_3": "Here's the solution: The answer is Cylinder. Work through each step carefully to see why."
+    },
+    "concept_cluster": "geometry/3d_shapes",
+    "visual_context": "A pointed party hat next to labeled 3D shapes.",
+    "interaction_mode": "multiple_choice",
+    "irt_params": {
+      "a": 1.07,
+      "b": -2.97,
+      "c": 0.3
+    },
+    "irt_a": 1.07,
+    "irt_b": -2.97,
+    "irt_c": 0.3,
+    "solution_steps": [
+      "Identify the properties to look for",
+      "Compare with the given options"
+    ],
+    "original_stem": "Captain Kiwi wears a party hat. What 3D shape is a party hat?",
+    "competency_level": "K",
+    "competency_confidence": 1.0,
+    "competency_name": "Knowing"
+  },
+  {
+    "id": "T5-1207",
+    "stem": "Builder Bee stacks boxes. Each box is shaped like a ___. What 3D shape has 6 flat faces?",
+    "choices": [
+      "4",
+      "5",
+      "6",
+      "8"
+    ],
+    "correct_answer": 2,
+    "difficulty_tier": "easy",
+    "difficulty_score": 8,
+    "visual_svg": null,
+    "visual_alt": null,
+    "diagnostics": {
+      "0": "Perimeter is the distance AROUND the shape (add all sides). Area is the space INSIDE (length × width).",
+      "1": "Almost there — you're off by just 1. Carefully re-do the last step.",
+      "3": "Perimeter is measured in units (cm, m). Area is measured in SQUARE units (cm², m²).",
+      "correct_explanation": "The answer is 6. Apply the correct formula for this shape using the measurements given in the problem."
+    },
+    "tags": [
+      "3d-shapes",
+      "grade-1-2"
+    ],
+    "topic": "spatial_thinking",
+    "topic_name": "Spatial Thinking",
+    "hint": {
+      "level_0": "Before using a formula, make sure you know: are you finding perimeter (around) or area (inside)?",
+      "level_1": "Draw the shape if you can. Label what you know — the sides, angles, or measurements given.",
+      "level_2": "Identify the shape and its measurements. Apply the right formula: perimeter = sum of all sides, area = length × width for rectangles.",
+      "level_3": "Here's the solution: The answer is 6. Work through each step carefully to see why."
+    },
+    "concept_cluster": "geometry/3d_shapes",
+    "visual_context": "A stack of boxes showing flat square faces.",
+    "interaction_mode": "multiple_choice",
+    "irt_params": {
+      "a": 1.28,
+      "b": -2.78,
+      "c": 0.3
+    },
+    "irt_a": 1.28,
+    "irt_b": -2.78,
+    "irt_c": 0.3,
+    "solution_steps": [
+      "Identify the properties to look for",
+      "Compare with the given options"
+    ],
+    "competency_level": "K",
+    "competency_confidence": 1.0,
+    "competency_name": "Knowing"
+  },
+  {
+    "id": "T5-1208",
     "stem": "Kiwi pours water into two glasses. Glass A is filled to the top. Glass B is half full. Both glasses are the same size. Which glass holds more water right now?",
     "choices": [
       "Glass A",
@@ -455,9 +375,10 @@
     "visual_svg": null,
     "visual_alt": null,
     "diagnostics": {
-      "1": "Glass B is only half full, so it has less water.",
-      "2": "One is full and one is half full — they differ.",
-      "3": "The glasses are the same size, so the full one has more."
+      "1": "Left and right can be tricky. Point in the direction the problem describes and check again.",
+      "2": "When rotating, keep track of which way you're turning — clockwise or anticlockwise. Use your finger to trace the turn.",
+      "3": "Think about WHO is looking. If the character faces you, their left is YOUR right.",
+      "correct_explanation": "The answer is Glass A. By carefully thinking about position and direction, we can figure out where things are."
     },
     "tags": [
       "comparison-logic",
@@ -466,481 +387,135 @@
     "topic": "spatial_thinking",
     "topic_name": "Spatial Thinking",
     "hint": {
-      "level_0": "Compare how full each glass is.",
-      "level_1": "Compare the water levels.",
-      "level_2": "Full means more water than half full.",
-      "level_3": "Same glass size, different fill level.",
-      "level_4": "Full glass has twice the water of half-full.",
-      "level_5": "Glass A is full, Glass B is half — A has more."
+      "level_0": "Think about direction and position. Which way is left? Which way is right? Point with your finger.",
+      "level_1": "Use your hands or draw a picture to figure out position and direction. Try acting it out!",
+      "level_2": "Point in the direction described. If the problem says 'left', point left. Now look at where the object would be.",
+      "level_3": "Here's the solution: The answer is Glass A. Work through each step carefully to see why."
     },
     "concept_cluster": "measurement/comparison",
     "interaction_mode": "multiple_choice",
     "visual_context": "A shape divided into equal parts with some shaded.",
     "irt_params": {
-      "a": 1.05,
-      "b": -1.83,
-      "c": 0.25
+      "a": 1.32,
+      "b": -2.68,
+      "c": 0.3
     },
-    "irt_a": 1.05,
-    "irt_b": -1.83,
-    "irt_c": 0.25,
+    "irt_a": 1.32,
+    "irt_b": -2.68,
+    "irt_c": 0.3,
     "solution_steps": [
       "Read the clues or conditions carefully",
       "Eliminate options that don't fit"
-    ]
+    ],
+    "competency_level": "K",
+    "competency_confidence": 1.0,
+    "competency_name": "Knowing"
+  },
+  {
+    "id": "T5-1209",
+    "stem": "Suki is working at the butterfly meadow with colorful flowers. finds a tin can in the forest. What 3D shape is a tin can?",
+    "choices": [
+      "Cube",
+      "Sphere",
+      "Cylinder",
+      "Cone"
+    ],
+    "correct_answer": 2,
+    "difficulty_tier": "easy",
+    "difficulty_score": 12,
+    "visual_svg": null,
+    "visual_alt": null,
+    "diagnostics": {
+      "0": "Perimeter is the distance AROUND the shape (add all sides). Area is the space INSIDE (length × width).",
+      "1": "A rectangle has 4 sides, not 2. Did you forget to count the matching sides?",
+      "3": "Perimeter is measured in units (cm, m). Area is measured in SQUARE units (cm², m²).",
+      "correct_explanation": "The answer is Cylinder. Apply the correct formula for this shape using the measurements given in the problem."
+    },
+    "tags": [
+      "3d-shapes",
+      "grade-1-2"
+    ],
+    "topic": "spatial_thinking",
+    "topic_name": "Spatial Thinking",
+    "hint": {
+      "level_0": "What shape are you working with? Visualize it — how many sides, what are its measurements?",
+      "level_1": "Draw the shape if you can. Label what you know — the sides, angles, or measurements given.",
+      "level_2": "Identify the shape and its measurements. Apply the right formula: perimeter = sum of all sides, area = length × width for rectangles.",
+      "level_3": "Here's the solution: The answer is Cylinder. Work through each step carefully to see why."
+    },
+    "concept_cluster": "geometry/3d_shapes",
+    "visual_context": "A tin can shown with circular top and bottom faces.",
+    "interaction_mode": "multiple_choice",
+    "irt_params": {
+      "a": 1.38,
+      "b": -2.58,
+      "c": 0.3
+    },
+    "irt_a": 1.38,
+    "irt_b": -2.58,
+    "irt_c": 0.3,
+    "solution_steps": [
+      "Identify the properties to look for",
+      "Compare with the given options"
+    ],
+    "original_stem": "Ranger Roo finds a tin can in the forest. What 3D shape is a tin can?",
+    "competency_level": "K",
+    "competency_confidence": 1.0,
+    "competency_name": "Knowing"
+  },
+  {
+    "id": "T5-1210",
+    "stem": "Kiwi has 3 pencils of different lengths. The red pencil is shorter than the blue pencil. The blue pencil is shorter than the green pencil. Which pencil is the longest?",
+    "choices": [
+      "Red",
+      "Blue",
+      "Green",
+      "They are all the same"
+    ],
+    "correct_answer": 2,
+    "difficulty_tier": "easy",
+    "difficulty_score": 14,
+    "visual_svg": null,
+    "visual_alt": null,
+    "diagnostics": {
+      "0": "Perimeter is the distance AROUND the shape (add all sides). Area is the space INSIDE (length × width).",
+      "1": "A rectangle has 4 sides, not 2. Did you forget to count the matching sides?",
+      "3": "Perimeter is measured in units (cm, m). Area is measured in SQUARE units (cm², m²).",
+      "correct_explanation": "The answer is Green. Apply the correct formula for this shape using the measurements given in the problem."
+    },
+    "tags": [
+      "comparison-logic",
+      "grade-1-2"
+    ],
+    "topic": "spatial_thinking",
+    "topic_name": "Spatial Thinking",
+    "hint": {
+      "level_0": "What shape are you working with? Visualize it — how many sides, what are its measurements?",
+      "level_1": "Draw the shape if you can. Label what you know — the sides, angles, or measurements given.",
+      "level_2": "Identify the shape and its measurements. Apply the right formula: perimeter = sum of all sides, area = length × width for rectangles.",
+      "level_3": "Here's the solution: The answer is Green. Work through each step carefully to see why."
+    },
+    "concept_cluster": "measurement/comparison",
+    "visual_context": "The objects shown standing next to each other for height comparison.",
+    "interaction_mode": "multiple_choice",
+    "irt_params": {
+      "a": 1.12,
+      "b": -2.72,
+      "c": 0.3
+    },
+    "irt_a": 1.12,
+    "irt_b": -2.72,
+    "irt_c": 0.3,
+    "solution_steps": [
+      "Read the clues or conditions carefully",
+      "Eliminate options that don't fit"
+    ],
+    "competency_level": "K",
+    "competency_confidence": 1.0,
+    "competency_name": "Knowing"
   },
   {
     "id": "T5-1211",
-    "stem": "Builder Bee is putting a border around a rectangular poster. The poster is 5 cm long and 3 cm wide. How much border tape does Builder Bee need?",
-    "choices": [
-      "8 cm",
-      "15 cm",
-      "16 cm",
-      "20 cm"
-    ],
-    "correct_answer": 2,
-    "difficulty_tier": "medium",
-    "difficulty_score": 30,
-    "visual_svg": null,
-    "visual_alt": null,
-    "diagnostics": {
-      "0": "You added 5 + 3 = 8. Perimeter adds ALL four sides, not just two.",
-      "1": "You found the area (5 x 3 = 15). Perimeter is the distance around.",
-      "3": "You may have used 5 x 4 = 20. Use 2 x (length + width)."
-    },
-    "tags": [
-      "perimeter-area",
-      "grade-3-4"
-    ],
-    "topic": "spatial_thinking",
-    "topic_name": "Spatial Thinking",
-    "hint": {
-      "level_0": "Perimeter means the distance around.",
-      "level_1": "Use addition for all four sides.",
-      "level_2": "Perimeter = 2 x (length + width).",
-      "level_3": "2 x (5 + 3) = ?",
-      "level_4": "2 x 8 = 16 cm.",
-      "level_5": "P = 2 x (5 + 3) = 2 x 8 = 16 cm."
-    },
-    "concept_cluster": "geometry/perimeter_area",
-    "visual_context": "A rectangle labeled 5 cm on the long side and 3 cm on the short side.",
-    "interaction_mode": "multiple_choice",
-    "irt_params": {
-      "a": 1.1,
-      "b": -0.29,
-      "c": 0.25
-    },
-    "irt_a": 1.1,
-    "irt_b": -0.29,
-    "irt_c": 0.25,
-    "solution_steps": [
-      "Identify the properties to look for",
-      "Compare with the given options",
-      "Match the property to the correct shape"
-    ]
-  },
-  {
-    "id": "T5-1212",
-    "stem": "Captain Kiwi is planting grass in a square garden. Each side is 6 metres long. How many square metres of grass does she need?",
-    "choices": [
-      "12 sq m",
-      "24 sq m",
-      "36 sq m",
-      "48 sq m"
-    ],
-    "correct_answer": 2,
-    "difficulty_tier": "medium",
-    "difficulty_score": 35,
-    "visual_svg": null,
-    "visual_alt": null,
-    "diagnostics": {
-      "0": "You found 6 + 6 = 12. Area uses multiplication, not addition.",
-      "1": "You found 6 x 4 = 24. That is the perimeter, not the area.",
-      "3": "You may have used 6 x 8 = 48. For a square, area = side x side."
-    },
-    "tags": [
-      "perimeter-area",
-      "grade-3-4"
-    ],
-    "topic": "spatial_thinking",
-    "topic_name": "Spatial Thinking",
-    "hint": {
-      "level_0": "Area is the space inside the shape.",
-      "level_1": "Use multiplication to find the area.",
-      "level_2": "Area of a square = side x side.",
-      "level_3": "6 x 6 = ?",
-      "level_4": "6 x 6 = 36 square metres.",
-      "level_5": "Area = 6 x 6 = 36 sq m."
-    },
-    "concept_cluster": "geometry/perimeter_area",
-    "visual_context": "A square garden divided into a 6x6 grid of unit squares, one side labeled '6m'.",
-    "interaction_mode": "multiple_choice",
-    "irt_params": {
-      "a": 1.1,
-      "b": 0.09,
-      "c": 0.25
-    },
-    "irt_a": 1.1,
-    "irt_b": 0.09,
-    "irt_c": 0.25,
-    "solution_steps": [
-      "Identify the properties of the named shape",
-      "Compare sides, angles, or other features",
-      "Match the property to the correct option"
-    ]
-  },
-  {
-    "id": "T5-1213",
-    "stem": "Builder Bee is tiling a rectangular kitchen floor that is 8 m long and 4 m wide. How many square metre tiles does he need?",
-    "choices": [
-      "12 sq m",
-      "24 sq m",
-      "32 sq m",
-      "64 sq m"
-    ],
-    "correct_answer": 2,
-    "difficulty_tier": "medium",
-    "difficulty_score": 38,
-    "visual_svg": null,
-    "visual_alt": null,
-    "diagnostics": {
-      "0": "You added 8 + 4 = 12. Area requires multiplication.",
-      "1": "You found the perimeter (2 x (8+4) = 24). Area = length x width.",
-      "3": "You may have used 8 x 8 = 64. Use length x width, not length x length."
-    },
-    "tags": [
-      "perimeter-area",
-      "grade-3-4"
-    ],
-    "topic": "spatial_thinking",
-    "topic_name": "Spatial Thinking",
-    "hint": {
-      "level_0": "Multiply the two measurements.",
-      "level_1": "Use multiplication for area.",
-      "level_2": "Area = length x width.",
-      "level_3": "8 x 4 = ?",
-      "level_4": "8 x 4 = 32 square metres.",
-      "level_5": "Area = 8 x 4 = 32 sq m."
-    },
-    "concept_cluster": "geometry/perimeter_area",
-    "visual_context": "A rectangle filled with a grid of 4 rows and 8 columns of tiles.",
-    "interaction_mode": "tap_to_count",
-    "irt_params": {
-      "a": 1.1,
-      "b": 0.32,
-      "c": 0.25
-    },
-    "irt_a": 1.1,
-    "irt_b": 0.32,
-    "irt_c": 0.25,
-    "solution_steps": [
-      "Identify the properties of the named shape",
-      "Compare sides, angles, or other features",
-      "Match the property to the correct option"
-    ]
-  },
-  {
-    "id": "T5-1214",
-    "stem": "Ranger Roo walks all the way around a rectangular park that is 10 m long and 7 m wide. How far does Ranger Roo walk?",
-    "choices": [
-      "17 m",
-      "34 m",
-      "70 m",
-      "140 m"
-    ],
-    "correct_answer": 1,
-    "difficulty_tier": "medium",
-    "difficulty_score": 32,
-    "visual_svg": null,
-    "visual_alt": null,
-    "diagnostics": {
-      "0": "You added only two sides (10 + 7 = 17). A rectangle has four sides.",
-      "2": "You found the area (10 x 7 = 70). Fencing needs perimeter.",
-      "3": "You doubled the area. Perimeter = 2 x (length + width)."
-    },
-    "tags": [
-      "perimeter-area",
-      "grade-3-4"
-    ],
-    "topic": "spatial_thinking",
-    "topic_name": "Spatial Thinking",
-    "hint": {
-      "level_0": "Fencing goes around the outside.",
-      "level_1": "Use addition to find the perimeter.",
-      "level_2": "Perimeter = 2 x (length + width).",
-      "level_3": "2 x (10 + 7) = ?",
-      "level_4": "2 x 17 = 34 metres.",
-      "level_5": "P = 2 x (10 + 7) = 2 x 17 = 34 m."
-    },
-    "concept_cluster": "geometry/perimeter_area",
-    "visual_context": "A rectangular park with a dotted line showing the walking path around the edge, labeled 10m and 7m.",
-    "interaction_mode": "multiple_choice",
-    "irt_params": {
-      "a": 1.1,
-      "b": -0.14,
-      "c": 0.25
-    },
-    "irt_a": 1.1,
-    "irt_b": -0.14,
-    "irt_c": 0.25,
-    "solution_steps": [
-      "Identify the properties to look for",
-      "Compare with the given options",
-      "Match the property to the correct shape"
-    ]
-  },
-  {
-    "id": "T5-1215",
-    "stem": "Chef Cheetah cuts a square napkin. The total distance around the napkin is 20 cm. How long is each side?",
-    "choices": [
-      "4 cm",
-      "5 cm",
-      "10 cm",
-      "20 cm"
-    ],
-    "correct_answer": 1,
-    "difficulty_tier": "medium",
-    "difficulty_score": 42,
-    "visual_svg": null,
-    "visual_alt": null,
-    "diagnostics": {
-      "0": "4 x 4 = 16, not 20. Divide perimeter by 4.",
-      "2": "If each side were 10, perimeter would be 40. Divide 20 by 4.",
-      "3": "20 is the total perimeter, not one side. A square has 4 equal sides."
-    },
-    "tags": [
-      "perimeter-area",
-      "grade-3-4"
-    ],
-    "topic": "spatial_thinking",
-    "topic_name": "Spatial Thinking",
-    "hint": {
-      "level_0": "A square has 4 equal sides.",
-      "level_1": "Use division to find one side.",
-      "level_2": "Side = perimeter / 4.",
-      "level_3": "20 / 4 = ?",
-      "level_4": "20 / 4 = 5 cm per side.",
-      "level_5": "Side = 20 / 4 = 5 cm."
-    },
-    "concept_cluster": "geometry/perimeter_area",
-    "visual_context": "A square napkin with a ribbon around its edge, total marked as 20 cm.",
-    "interaction_mode": "multiple_choice",
-    "irt_params": {
-      "a": 1.1,
-      "b": 0.63,
-      "c": 0.25
-    },
-    "irt_a": 1.1,
-    "irt_b": 0.63,
-    "irt_c": 0.25,
-    "solution_steps": [
-      "Identify the properties of the named shape",
-      "Compare sides, angles, or other features",
-      "Match the property to the correct option"
-    ]
-  },
-  {
-    "id": "T5-1216",
-    "stem": "Captain Kiwi opens a door halfway. What type of angle does the door make with the wall?",
-    "choices": [
-      "Acute angle",
-      "Right angle",
-      "Obtuse angle",
-      "Straight angle"
-    ],
-    "correct_answer": 1,
-    "difficulty_tier": "medium",
-    "difficulty_score": 28,
-    "visual_svg": null,
-    "visual_alt": null,
-    "diagnostics": {
-      "0": "An acute angle is less than 90 degrees — that is less than halfway open.",
-      "2": "An obtuse angle is more than 90 degrees — the door would be more than halfway.",
-      "3": "A straight angle is 180 degrees — the door would be flat against the wall."
-    },
-    "tags": [
-      "angles",
-      "grade-3-4"
-    ],
-    "topic": "spatial_thinking",
-    "topic_name": "Spatial Thinking",
-    "hint": {
-      "level_0": "Halfway open makes a square corner.",
-      "level_1": "Identify the angle type at 90 degrees.",
-      "level_2": "A square corner is a special angle.",
-      "level_3": "90 degrees = a right angle.",
-      "level_4": "A door halfway open = 90 degrees = right angle.",
-      "level_5": "Halfway open = 90 degrees, which is a right angle."
-    },
-    "concept_cluster": "geometry/angles",
-    "visual_context": "An angle drawn with two rays from a common point, with an arc marking the angle.",
-    "interaction_mode": "tap_to_reveal",
-    "irt_params": {
-      "a": 1.1,
-      "b": -0.45,
-      "c": 0.25
-    },
-    "irt_a": 1.1,
-    "irt_b": -0.45,
-    "irt_c": 0.25,
-    "solution_steps": [
-      "Identify the angle type (acute/right/obtuse)",
-      "Right angle = 90°, straight = 180°",
-      "Compare or calculate the angle asked"
-    ]
-  },
-  {
-    "id": "T5-1217",
-    "stem": "Kiwi draws an angle that is smaller than a right angle. What type of angle is it?",
-    "choices": [
-      "Obtuse angle",
-      "Acute angle",
-      "Right angle",
-      "Reflex angle"
-    ],
-    "correct_answer": 1,
-    "difficulty_tier": "medium",
-    "difficulty_score": 25,
-    "visual_svg": null,
-    "visual_alt": null,
-    "diagnostics": {
-      "0": "An obtuse angle is BIGGER than a right angle, not smaller.",
-      "2": "A right angle is exactly 90 degrees, not smaller.",
-      "3": "A reflex angle is greater than 180 degrees — much bigger."
-    },
-    "tags": [
-      "angles",
-      "grade-3-4"
-    ],
-    "topic": "spatial_thinking",
-    "topic_name": "Spatial Thinking",
-    "hint": {
-      "level_0": "Smaller than 90 degrees — what is it?",
-      "level_1": "Classify the angle by its size.",
-      "level_2": "Less than 90 degrees has a special name.",
-      "level_3": "Think: a-cute little angle.",
-      "level_4": "Acute means less than 90 degrees.",
-      "level_5": "Less than 90 degrees = acute angle."
-    },
-    "concept_cluster": "geometry/angles",
-    "visual_context": "An angle drawn with two rays from a common point, with an arc marking the angle.",
-    "interaction_mode": "tap_to_reveal",
-    "irt_params": {
-      "a": 1.1,
-      "b": -0.68,
-      "c": 0.25
-    },
-    "irt_a": 1.1,
-    "irt_b": -0.68,
-    "irt_c": 0.25,
-    "solution_steps": [
-      "Identify the angle type (acute/right/obtuse)",
-      "Right angle = 90°, straight = 180°",
-      "Compare or calculate the angle asked"
-    ]
-  },
-  {
-    "id": "T5-1218",
-    "stem": "Captain Kiwi measures an angle of 120 degrees. What type of angle is this?",
-    "choices": [
-      "Acute angle",
-      "Right angle",
-      "Obtuse angle",
-      "Straight angle"
-    ],
-    "correct_answer": 2,
-    "difficulty_tier": "medium",
-    "difficulty_score": 30,
-    "visual_svg": null,
-    "visual_alt": null,
-    "diagnostics": {
-      "0": "Acute angles are less than 90 degrees. 120 is greater than 90.",
-      "1": "A right angle is exactly 90 degrees, not 120.",
-      "3": "A straight angle is exactly 180 degrees, not 120."
-    },
-    "tags": [
-      "angles",
-      "grade-3-4"
-    ],
-    "topic": "spatial_thinking",
-    "topic_name": "Spatial Thinking",
-    "hint": {
-      "level_0": "Is 120 more or less than 90?",
-      "level_1": "Classify angles: compare to 90 and 180.",
-      "level_2": "Between 90 and 180 degrees is a specific type.",
-      "level_3": "90 < 120 < 180.",
-      "level_4": "Angles between 90 and 180 are obtuse.",
-      "level_5": "120 is between 90 and 180, so it is obtuse."
-    },
-    "concept_cluster": "geometry/angles",
-    "visual_context": "An angle drawn with two rays from a common point, with an arc marking the angle.",
-    "interaction_mode": "tap_to_reveal",
-    "irt_params": {
-      "a": 1.1,
-      "b": -0.29,
-      "c": 0.25
-    },
-    "irt_a": 1.1,
-    "irt_b": -0.29,
-    "irt_c": 0.25,
-    "solution_steps": [
-      "Identify the angle type (acute/right/obtuse)",
-      "Right angle = 90°, straight = 180°",
-      "Compare or calculate the angle asked"
-    ]
-  },
-  {
-    "id": "T5-1219",
-    "stem": "Pirate Papaya is measuring and building: How many right angles does a rectangle have?",
-    "choices": [
-      "1",
-      "2",
-      "3",
-      "4"
-    ],
-    "correct_answer": 3,
-    "difficulty_tier": "medium",
-    "difficulty_score": 26,
-    "visual_svg": null,
-    "visual_alt": null,
-    "diagnostics": {
-      "0": "A rectangle has more than 1 right angle. Check every corner.",
-      "1": "You may be thinking of only the top corners. Count all four.",
-      "2": "Close! But don't forget the fourth corner."
-    },
-    "tags": [
-      "angles",
-      "grade-3-4"
-    ],
-    "topic": "spatial_thinking",
-    "topic_name": "Spatial Thinking",
-    "hint": {
-      "level_0": "Count every corner of the rectangle.",
-      "level_1": "Count the right angles at each corner.",
-      "level_2": "Each corner of a rectangle is 90 degrees.",
-      "level_3": "All corners are right angles.",
-      "level_4": "4 corners, each 90 degrees = 4 right angles.",
-      "level_5": "A rectangle has 4 corners, all 90 degrees = 4."
-    },
-    "concept_cluster": "geometry/angles",
-    "visual_context": "An angle drawn with two rays from a common point, with an arc marking the angle.",
-    "interaction_mode": "tap_to_reveal",
-    "irt_params": {
-      "a": 1.1,
-      "b": -0.6,
-      "c": 0.25
-    },
-    "irt_a": 1.1,
-    "irt_b": -0.6,
-    "irt_c": 0.25,
-    "solution_steps": [
-      "Identify the angle type (acute/right/obtuse)",
-      "Right angle = 90°, straight = 180°",
-      "Compare or calculate the angle asked"
-    ]
-  },
-  {
-    "id": "T5-1220",
     "stem": "Captain Kiwi says: 'I see an angle that looks like the corner of a book.' What angle is that?",
     "choices": [
       "45 degrees",
@@ -954,9 +529,10 @@
     "visual_svg": null,
     "visual_alt": null,
     "diagnostics": {
-      "0": "45 degrees is half of a right angle — too narrow for a book corner.",
-      "1": "60 degrees is less than a right angle — not a square corner.",
-      "3": "180 degrees is a straight line, not a corner."
+      "0": "Perimeter is the distance AROUND the shape (add all sides). Area is the space INSIDE (length × width).",
+      "1": "A rectangle has 4 sides, not 2. Did you forget to count the matching sides?",
+      "3": "Perimeter is measured in units (cm, m). Area is measured in SQUARE units (cm², m²).",
+      "correct_explanation": "The answer is 90 degrees. Apply the correct formula for this shape using the measurements given in the problem."
     },
     "tags": [
       "angles",
@@ -965,29 +541,499 @@
     "topic": "spatial_thinking",
     "topic_name": "Spatial Thinking",
     "hint": {
-      "level_0": "A book corner is a square corner.",
-      "level_1": "Identify the angle at a square corner.",
-      "level_2": "Square corners have a special degree measure.",
-      "level_3": "A square corner = a right angle.",
-      "level_4": "A right angle = 90 degrees.",
-      "level_5": "A book corner is a right angle = 90 degrees."
+      "level_0": "What shape are you working with? Visualize it — how many sides, what are its measurements?",
+      "level_1": "Draw the shape if you can. Label what you know — the sides, angles, or measurements given.",
+      "level_2": "Identify the shape and its measurements. Apply the right formula: perimeter = sum of all sides, area = length × width for rectangles.",
+      "level_3": "Here's the solution: The answer is 90 degrees. Work through each step carefully to see why."
     },
     "concept_cluster": "geometry/angles",
     "visual_context": "An angle drawn with two rays from a common point, with an arc marking the angle.",
-    "interaction_mode": "tap_to_reveal",
+    "interaction_mode": "multiple_choice",
     "irt_params": {
-      "a": 1.1,
-      "b": -0.91,
-      "c": 0.25
+      "a": 1.18,
+      "b": -2.2,
+      "c": 0.22
     },
-    "irt_a": 1.1,
-    "irt_b": -0.91,
-    "irt_c": 0.25,
+    "irt_a": 1.18,
+    "irt_b": -2.2,
+    "irt_c": 0.22,
     "solution_steps": [
       "Identify the angle type (acute/right/obtuse)",
       "Right angle = 90°, straight = 180°",
       "Compare or calculate the angle asked"
-    ]
+    ],
+    "competency_level": "A",
+    "competency_confidence": 0.667,
+    "competency_name": "Applying"
+  },
+  {
+    "id": "T5-1212",
+    "stem": "Kiwi draws an angle that is smaller than a right angle. What type of angle is it?",
+    "choices": [
+      "Obtuse angle",
+      "Acute angle",
+      "Right angle",
+      "Reflex angle"
+    ],
+    "correct_answer": 1,
+    "difficulty_tier": "medium",
+    "difficulty_score": 25,
+    "visual_svg": null,
+    "visual_alt": null,
+    "diagnostics": {
+      "0": "When something is mirrored, left and right swap. Try holding your hands up and imagining the mirror.",
+      "2": "When rotating, keep track of which way you're turning — clockwise or anticlockwise. Use your finger to trace the turn.",
+      "3": "Think about WHO is looking. If the character faces you, their left is YOUR right.",
+      "correct_explanation": "The answer is Acute angle. By carefully thinking about position and direction, we can figure out where things are."
+    },
+    "tags": [
+      "angles",
+      "grade-3-4"
+    ],
+    "topic": "spatial_thinking",
+    "topic_name": "Spatial Thinking",
+    "hint": {
+      "level_0": "Think about direction and position. Which way is left? Which way is right? Point with your finger.",
+      "level_1": "Use your hands or draw a picture to figure out position and direction. Try acting it out!",
+      "level_2": "Point in the direction described. If the problem says 'left', point left. Now look at where the object would be.",
+      "level_3": "Here's the solution: The answer is Acute angle. Work through each step carefully to see why."
+    },
+    "concept_cluster": "geometry/angles",
+    "visual_context": "An angle drawn with two rays from a common point, with an arc marking the angle.",
+    "interaction_mode": "multiple_choice",
+    "irt_params": {
+      "a": 0.85,
+      "b": -2.37,
+      "c": 0.22
+    },
+    "irt_a": 0.85,
+    "irt_b": -2.37,
+    "irt_c": 0.22,
+    "solution_steps": [
+      "Identify the angle type (acute/right/obtuse)",
+      "Right angle = 90°, straight = 180°",
+      "Compare or calculate the angle asked"
+    ],
+    "competency_level": "A",
+    "competency_confidence": 0.667,
+    "competency_name": "Applying"
+  },
+  {
+    "id": "T5-1213",
+    "stem": "Pirate Papaya is measuring and building: How many right angles does a rectangle have?",
+    "choices": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correct_answer": 3,
+    "difficulty_tier": "medium",
+    "difficulty_score": 26,
+    "visual_svg": null,
+    "visual_alt": null,
+    "diagnostics": {
+      "0": "When something is mirrored, left and right swap. Try holding your hands up and imagining the mirror.",
+      "1": "Left and right can be tricky. Point in the direction the problem describes and check again.",
+      "2": "Almost there — you're off by just 1. Carefully re-do the last step.",
+      "correct_explanation": "The answer is 4. By carefully thinking about position and direction, we can figure out where things are."
+    },
+    "tags": [
+      "angles",
+      "grade-3-4"
+    ],
+    "topic": "spatial_thinking",
+    "topic_name": "Spatial Thinking",
+    "hint": {
+      "level_0": "Picture yourself in the scene. Where are you standing? Where are the objects?",
+      "level_1": "Use your hands or draw a picture to figure out position and direction. Try acting it out!",
+      "level_2": "Point in the direction described. If the problem says 'left', point left. Now look at where the object would be.",
+      "level_3": "Here's the solution: The answer is 4. Work through each step carefully to see why."
+    },
+    "concept_cluster": "geometry/angles",
+    "visual_context": "An angle drawn with two rays from a common point, with an arc marking the angle.",
+    "interaction_mode": "multiple_choice",
+    "irt_params": {
+      "a": 0.88,
+      "b": -2.32,
+      "c": 0.22
+    },
+    "irt_a": 0.88,
+    "irt_b": -2.32,
+    "irt_c": 0.22,
+    "solution_steps": [
+      "Identify the angle type (acute/right/obtuse)",
+      "Right angle = 90°, straight = 180°",
+      "Compare or calculate the angle asked"
+    ],
+    "competency_level": "A",
+    "competency_confidence": 0.667,
+    "competency_name": "Applying"
+  },
+  {
+    "id": "T5-1214",
+    "stem": "Captain Kiwi opens a door halfway. What type of angle does the door make with the wall?",
+    "choices": [
+      "Acute angle",
+      "Right angle",
+      "Obtuse angle",
+      "Straight angle"
+    ],
+    "correct_answer": 1,
+    "difficulty_tier": "medium",
+    "difficulty_score": 28,
+    "visual_svg": null,
+    "visual_alt": null,
+    "diagnostics": {
+      "0": "Perimeter is the distance AROUND the shape (add all sides). Area is the space INSIDE (length × width).",
+      "2": "Check which formula matches this shape. Rectangles use length × width, triangles use ½ × base × height.",
+      "3": "Perimeter is measured in units (cm, m). Area is measured in SQUARE units (cm², m²).",
+      "correct_explanation": "The answer is Right angle. Apply the correct formula for this shape using the measurements given in the problem."
+    },
+    "tags": [
+      "angles",
+      "grade-3-4"
+    ],
+    "topic": "spatial_thinking",
+    "topic_name": "Spatial Thinking",
+    "hint": {
+      "level_0": "Picture the shape. Label what you know. What measurement is the question asking for?",
+      "level_1": "Draw the shape if you can. Label what you know — the sides, angles, or measurements given.",
+      "level_2": "Identify the shape and its measurements. Apply the right formula: perimeter = sum of all sides, area = length × width for rectangles.",
+      "level_3": "Here's the solution: The answer is Right angle. Work through each step carefully to see why."
+    },
+    "concept_cluster": "geometry/angles",
+    "visual_context": "An angle drawn with two rays from a common point, with an arc marking the angle.",
+    "interaction_mode": "multiple_choice",
+    "irt_params": {
+      "a": 0.82,
+      "b": -2.3,
+      "c": 0.22
+    },
+    "irt_a": 0.82,
+    "irt_b": -2.3,
+    "irt_c": 0.22,
+    "solution_steps": [
+      "Identify the angle type (acute/right/obtuse)",
+      "Right angle = 90°, straight = 180°",
+      "Compare or calculate the angle asked"
+    ],
+    "competency_level": "A",
+    "competency_confidence": 0.667,
+    "competency_name": "Applying"
+  },
+  {
+    "id": "T5-1215",
+    "stem": "Builder Bee is putting a border around a rectangular poster. The poster is 5 cm long and 3 cm wide. How much border tape does Builder Bee need?",
+    "choices": [
+      "8 cm",
+      "15 cm",
+      "16 cm",
+      "20 cm"
+    ],
+    "correct_answer": 2,
+    "difficulty_tier": "medium",
+    "difficulty_score": 30,
+    "visual_svg": null,
+    "visual_alt": null,
+    "diagnostics": {
+      "0": "Perimeter is the distance AROUND the shape (add all sides). Area is the space INSIDE (length × width).",
+      "1": "A rectangle has 4 sides, not 2. Did you forget to count the matching sides?",
+      "3": "Perimeter is measured in units (cm, m). Area is measured in SQUARE units (cm², m²).",
+      "correct_explanation": "The answer is 16 cm. Apply the correct formula for this shape using the measurements given in the problem."
+    },
+    "tags": [
+      "perimeter-area",
+      "grade-3-4"
+    ],
+    "topic": "spatial_thinking",
+    "topic_name": "Spatial Thinking",
+    "hint": {
+      "level_0": "What shape are you working with? Visualize it — how many sides, what are its measurements?",
+      "level_1": "Draw the shape if you can. Label what you know — the sides, angles, or measurements given.",
+      "level_2": "Identify the shape and its measurements. Apply the right formula: perimeter = sum of all sides, area = length × width for rectangles.",
+      "level_3": "Here's the solution: The answer is 16 cm. Work through each step carefully to see why."
+    },
+    "concept_cluster": "geometry/perimeter_area",
+    "visual_context": "A rectangle labeled 5 cm on the long side and 3 cm on the short side.",
+    "interaction_mode": "multiple_choice",
+    "irt_params": {
+      "a": 0.78,
+      "b": -2.28,
+      "c": 0.22
+    },
+    "irt_a": 0.78,
+    "irt_b": -2.28,
+    "irt_c": 0.22,
+    "solution_steps": [
+      "Identify the properties to look for",
+      "Compare with the given options",
+      "Match the property to the correct shape"
+    ],
+    "competency_level": "A",
+    "competency_confidence": 0.667,
+    "competency_name": "Applying"
+  },
+  {
+    "id": "T5-1216",
+    "stem": "Suki is at the rain gauge showing water levels. Captain Kiwi measures an angle of 120 degrees. What type of angle is this?",
+    "choices": [
+      "Acute angle",
+      "Right angle",
+      "Obtuse angle",
+      "Straight angle"
+    ],
+    "correct_answer": 2,
+    "difficulty_tier": "medium",
+    "difficulty_score": 30,
+    "visual_svg": null,
+    "visual_alt": null,
+    "diagnostics": {
+      "0": "Perimeter is the distance AROUND the shape (add all sides). Area is the space INSIDE (length × width).",
+      "1": "A rectangle has 4 sides, not 2. Did you forget to count the matching sides?",
+      "3": "Perimeter is measured in units (cm, m). Area is measured in SQUARE units (cm², m²).",
+      "correct_explanation": "The answer is Obtuse angle. Apply the correct formula for this shape using the measurements given in the problem."
+    },
+    "tags": [
+      "angles",
+      "grade-3-4"
+    ],
+    "topic": "spatial_thinking",
+    "topic_name": "Spatial Thinking",
+    "hint": {
+      "level_0": "Before using a formula, make sure you know: are you finding perimeter (around) or area (inside)?",
+      "level_1": "Draw the shape if you can. Label what you know — the sides, angles, or measurements given.",
+      "level_2": "Identify the shape and its measurements. Apply the right formula: perimeter = sum of all sides, area = length × width for rectangles.",
+      "level_3": "Here's the solution: The answer is Obtuse angle. Work through each step carefully to see why."
+    },
+    "concept_cluster": "geometry/angles",
+    "visual_context": "An angle drawn with two rays from a common point, with an arc marking the angle.",
+    "interaction_mode": "multiple_choice",
+    "irt_params": {
+      "a": 1.18,
+      "b": -1.96,
+      "c": 0.22
+    },
+    "irt_a": 1.18,
+    "irt_b": -1.96,
+    "irt_c": 0.22,
+    "solution_steps": [
+      "Identify the angle type (acute/right/obtuse)",
+      "Right angle = 90°, straight = 180°",
+      "Compare or calculate the angle asked"
+    ],
+    "original_stem": "Captain Kiwi measures an angle of 120 degrees. What type of angle is this?",
+    "competency_level": "A",
+    "competency_confidence": 0.667,
+    "competency_name": "Applying"
+  },
+  {
+    "id": "T5-1217",
+    "stem": "Ranger Roo walks all the way around a rectangular park that is 10 m long and 7 m wide. How far does Ranger Roo walk?",
+    "choices": [
+      "17 m",
+      "34 m",
+      "70 m",
+      "140 m"
+    ],
+    "correct_answer": 1,
+    "difficulty_tier": "medium",
+    "difficulty_score": 32,
+    "visual_svg": null,
+    "visual_alt": null,
+    "diagnostics": {
+      "0": "Perimeter is the distance AROUND the shape (add all sides). Area is the space INSIDE (length × width).",
+      "2": "Check which formula matches this shape. Rectangles use length × width, triangles use ½ × base × height.",
+      "3": "Perimeter is measured in units (cm, m). Area is measured in SQUARE units (cm², m²).",
+      "correct_explanation": "The answer is 34 m. Apply the correct formula for this shape using the measurements given in the problem."
+    },
+    "tags": [
+      "perimeter-area",
+      "grade-3-4"
+    ],
+    "topic": "spatial_thinking",
+    "topic_name": "Spatial Thinking",
+    "hint": {
+      "level_0": "Picture the shape. Label what you know. What measurement is the question asking for?",
+      "level_1": "Draw the shape if you can. Label what you know — the sides, angles, or measurements given.",
+      "level_2": "Identify the shape and its measurements. Apply the right formula: perimeter = sum of all sides, area = length × width for rectangles.",
+      "level_3": "Here's the solution: The answer is 34 m. Work through each step carefully to see why."
+    },
+    "concept_cluster": "geometry/perimeter_area",
+    "visual_context": "A rectangular park with a dotted line showing the walking path around the edge, labeled 10m and 7m.",
+    "interaction_mode": "multiple_choice",
+    "irt_params": {
+      "a": 0.97,
+      "b": -2.06,
+      "c": 0.22
+    },
+    "irt_a": 0.97,
+    "irt_b": -2.06,
+    "irt_c": 0.22,
+    "solution_steps": [
+      "Identify the properties to look for",
+      "Compare with the given options",
+      "Match the property to the correct shape"
+    ],
+    "competency_level": "A",
+    "competency_confidence": 0.833,
+    "competency_name": "Applying"
+  },
+  {
+    "id": "T5-1218",
+    "stem": "Captain Kiwi is planting grass in a square garden. Each side is 6 metres long. How many square metres of grass does she need?",
+    "choices": [
+      "12 sq m",
+      "24 sq m",
+      "36 sq m",
+      "48 sq m"
+    ],
+    "correct_answer": 2,
+    "difficulty_tier": "medium",
+    "difficulty_score": 35,
+    "visual_svg": null,
+    "visual_alt": null,
+    "diagnostics": {
+      "0": "Perimeter is the distance AROUND the shape (add all sides). Area is the space INSIDE (length × width).",
+      "1": "A rectangle has 4 sides, not 2. Did you forget to count the matching sides?",
+      "3": "Perimeter is measured in units (cm, m). Area is measured in SQUARE units (cm², m²).",
+      "correct_explanation": "The answer is 36 sq m. Apply the correct formula for this shape using the measurements given in the problem."
+    },
+    "tags": [
+      "perimeter-area",
+      "grade-3-4"
+    ],
+    "topic": "spatial_thinking",
+    "topic_name": "Spatial Thinking",
+    "hint": {
+      "level_0": "Picture the shape. Label what you know. What measurement is the question asking for?",
+      "level_1": "Draw the shape if you can. Label what you know — the sides, angles, or measurements given.",
+      "level_2": "Identify the shape and its measurements. Apply the right formula: perimeter = sum of all sides, area = length × width for rectangles.",
+      "level_3": "Here's the solution: The answer is 36 sq m. Work through each step carefully to see why."
+    },
+    "concept_cluster": "geometry/perimeter_area",
+    "visual_context": "A square garden divided into a 6x6 grid of unit squares, one side labeled '6m'.",
+    "interaction_mode": "multiple_choice",
+    "irt_params": {
+      "a": 1.0,
+      "b": -1.95,
+      "c": 0.22
+    },
+    "irt_a": 1.0,
+    "irt_b": -1.95,
+    "irt_c": 0.22,
+    "solution_steps": [
+      "Identify the properties of the named shape",
+      "Compare sides, angles, or other features",
+      "Match the property to the correct option"
+    ],
+    "competency_level": "A",
+    "competency_confidence": 0.667,
+    "competency_name": "Applying"
+  },
+  {
+    "id": "T5-1219",
+    "stem": "Builder Bee is tiling a rectangular kitchen floor that is 8 m long and 4 m wide. How many square metre tiles does he need?",
+    "choices": [
+      "12 sq m",
+      "24 sq m",
+      "32 sq m",
+      "64 sq m"
+    ],
+    "correct_answer": 2,
+    "difficulty_tier": "medium",
+    "difficulty_score": 38,
+    "visual_svg": null,
+    "visual_alt": null,
+    "diagnostics": {
+      "0": "Perimeter is the distance AROUND the shape (add all sides). Area is the space INSIDE (length × width).",
+      "1": "A rectangle has 4 sides, not 2. Did you forget to count the matching sides?",
+      "3": "Perimeter is measured in units (cm, m). Area is measured in SQUARE units (cm², m²).",
+      "correct_explanation": "The answer is 32 sq m. Apply the correct formula for this shape using the measurements given in the problem."
+    },
+    "tags": [
+      "perimeter-area",
+      "grade-3-4"
+    ],
+    "topic": "spatial_thinking",
+    "topic_name": "Spatial Thinking",
+    "hint": {
+      "level_0": "Picture the shape. Label what you know. What measurement is the question asking for?",
+      "level_1": "Draw the shape if you can. Label what you know — the sides, angles, or measurements given.",
+      "level_2": "Identify the shape and its measurements. Apply the right formula: perimeter = sum of all sides, area = length × width for rectangles.",
+      "level_3": "Here's the solution: The answer is 32 sq m. Work through each step carefully to see why."
+    },
+    "concept_cluster": "geometry/perimeter_area",
+    "visual_context": "A rectangle filled with a grid of 4 rows and 8 columns of tiles.",
+    "interaction_mode": "multiple_choice",
+    "irt_params": {
+      "a": 1.12,
+      "b": -1.76,
+      "c": 0.22
+    },
+    "irt_a": 1.12,
+    "irt_b": -1.76,
+    "irt_c": 0.22,
+    "solution_steps": [
+      "Identify the properties of the named shape",
+      "Compare sides, angles, or other features",
+      "Match the property to the correct option"
+    ],
+    "competency_level": "A",
+    "competency_confidence": 0.667,
+    "competency_name": "Applying"
+  },
+  {
+    "id": "T5-1220",
+    "stem": "Chef Cheetah cuts a square napkin. The total distance around the napkin is 20 cm. How long is each side?",
+    "choices": [
+      "4 cm",
+      "5 cm",
+      "10 cm",
+      "20 cm"
+    ],
+    "correct_answer": 1,
+    "difficulty_tier": "medium",
+    "difficulty_score": 42,
+    "visual_svg": null,
+    "visual_alt": null,
+    "diagnostics": {
+      "0": "Perimeter is the distance AROUND the shape (add all sides). Area is the space INSIDE (length × width).",
+      "2": "Check which formula matches this shape. Rectangles use length × width, triangles use ½ × base × height.",
+      "3": "Perimeter is measured in units (cm, m). Area is measured in SQUARE units (cm², m²).",
+      "correct_explanation": "The answer is 5 cm. Apply the correct formula for this shape using the measurements given in the problem."
+    },
+    "tags": [
+      "perimeter-area",
+      "grade-3-4"
+    ],
+    "topic": "spatial_thinking",
+    "topic_name": "Spatial Thinking",
+    "hint": {
+      "level_0": "Picture the shape. Label what you know. What measurement is the question asking for?",
+      "level_1": "Draw the shape if you can. Label what you know — the sides, angles, or measurements given.",
+      "level_2": "Identify the shape and its measurements. Apply the right formula: perimeter = sum of all sides, area = length × width for rectangles.",
+      "level_3": "Here's the solution: The answer is 5 cm. Work through each step carefully to see why."
+    },
+    "concept_cluster": "geometry/perimeter_area",
+    "visual_context": "A square napkin with a ribbon around its edge, total marked as 20 cm.",
+    "interaction_mode": "multiple_choice",
+    "irt_params": {
+      "a": 0.75,
+      "b": -1.94,
+      "c": 0.22
+    },
+    "irt_a": 0.75,
+    "irt_b": -1.94,
+    "irt_c": 0.22,
+    "solution_steps": [
+      "Identify the properties of the named shape",
+      "Compare sides, angles, or other features",
+      "Match the property to the correct option"
+    ],
+    "competency_level": "A",
+    "competency_confidence": 0.833,
+    "competency_name": "Applying"
   },
   {
     "id": "T5-1221",
@@ -1005,9 +1051,10 @@
     "visual_alt": null,
     "visual_context": "A square garden with one side labeled '6m'.",
     "diagnostics": {
-      "0": "That's only two sides! A square has four sides.",
-      "2": "36 is the Area (6 x 6), but we need the fence around the outside!",
-      "3": "That's only three sides. Builder Bee needs to close the fence!"
+      "0": "Perimeter is the distance AROUND the shape (add all sides). Area is the space INSIDE (length × width).",
+      "2": "Perimeter is the distance AROUND the shape (add all sides). Area is the space INSIDE (length × width).",
+      "3": "Perimeter is measured in units (cm, m). Area is measured in SQUARE units (cm², m²).",
+      "correct_explanation": "The answer is 24. Apply the correct formula for this shape using the measurements given in the problem."
     },
     "tags": [
       "perimeter",
@@ -1017,28 +1064,29 @@
     "topic": "spatial_thinking",
     "topic_name": "Spatial Thinking",
     "hint": {
-      "level_0": "What is the shape of the garden?",
-      "level_1": "A square has 4 equal sides.",
-      "level_2": "The fence goes around all 4 sides.",
-      "level_3": "Add the length of all four sides.",
-      "level_4": "6 + 6 + 6 + 6 = ?",
-      "level_5": "Perimeter = 4 × 6 = 24 metres."
+      "level_0": "Picture the shape. Label what you know. What measurement is the question asking for?",
+      "level_1": "Draw the shape if you can. Label what you know — the sides, angles, or measurements given.",
+      "level_2": "Identify the shape and its measurements. Apply the right formula: perimeter = sum of all sides, area = length × width for rectangles.",
+      "level_3": "Here's the solution: The answer is 24. Work through each step carefully to see why."
     },
     "concept_cluster": "geometry/perimeter",
-    "interaction_mode": "tap_to_count",
+    "interaction_mode": "multiple_choice",
     "irt_params": {
       "a": 1.1,
-      "b": 0.86,
-      "c": 0.25
+      "b": -1.81,
+      "c": 0.22
     },
     "irt_a": 1.1,
-    "irt_b": 0.86,
-    "irt_c": 0.25,
+    "irt_b": -1.81,
+    "irt_c": 0.22,
     "solution_steps": [
       "Identify the properties of the named shape",
       "Compare sides, angles, or other features",
       "Match the property to the correct option"
-    ]
+    ],
+    "competency_level": "K",
+    "competency_confidence": 0.5,
+    "competency_name": "Knowing"
   },
   {
     "id": "T5-1222",
@@ -1056,9 +1104,10 @@
     "visual_alt": null,
     "visual_context": "A rectangle filled with a grid of 5 rows and 8 columns.",
     "diagnostics": {
-      "0": "You added 5 + 8. To find coverage, multiply!",
-      "1": "26 is the Perimeter. We want the space inside.",
-      "3": "Check your multiplication: 5 × 8 is not 45."
+      "0": "Perimeter is the distance AROUND the shape (add all sides). Area is the space INSIDE (length × width).",
+      "1": "Perimeter is the distance AROUND the shape (add all sides). Area is the space INSIDE (length × width).",
+      "3": "Perimeter is measured in units (cm, m). Area is measured in SQUARE units (cm², m²).",
+      "correct_explanation": "The answer is 40. Apply the correct formula for this shape using the measurements given in the problem."
     },
     "tags": [
       "area",
@@ -1068,27 +1117,28 @@
     "topic": "spatial_thinking",
     "topic_name": "Spatial Thinking",
     "hint": {
-      "level_0": "Imagine the rug is made of tiny squares.",
-      "level_1": "Count how many squares in each row.",
-      "level_2": "There are 5 rows, each with 8 squares.",
-      "level_3": "Multiply length times width.",
-      "level_4": "Calculate 8 × 5.",
-      "level_5": "Area = 8 × 5 = 40 square units."
+      "level_0": "Before using a formula, make sure you know: are you finding perimeter (around) or area (inside)?",
+      "level_1": "Draw the shape if you can. Label what you know — the sides, angles, or measurements given.",
+      "level_2": "Identify the shape and its measurements. Apply the right formula: perimeter = sum of all sides, area = length × width for rectangles.",
+      "level_3": "Here's the solution: The answer is 40. Work through each step carefully to see why."
     },
     "concept_cluster": "geometry/area",
     "interaction_mode": "multiple_choice",
     "irt_params": {
-      "a": 1.15,
-      "b": 2.4,
-      "c": 0.25
+      "a": 1.43,
+      "b": -0.95,
+      "c": 0.22
     },
-    "irt_a": 1.15,
-    "irt_b": 2.4,
-    "irt_c": 0.25,
+    "irt_a": 1.43,
+    "irt_b": -0.95,
+    "irt_c": 0.22,
     "solution_steps": [
       "Identify the properties of the named shape",
       "Compare sides, angles, or other features",
       "Match the property to the correct option"
-    ]
+    ],
+    "competency_level": "A",
+    "competency_confidence": 0.8,
+    "competency_name": "Applying"
   }
 ]
