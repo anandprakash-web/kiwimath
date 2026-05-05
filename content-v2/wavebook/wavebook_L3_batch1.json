@@ -1,0 +1,1155 @@
+{
+  "level": 3,
+  "batch": 1,
+  "grade_band": "3-4",
+  "total_questions": 67,
+  "questions": [
+    {
+      "id": "wb_L3_s01_q01",
+      "stem": "The difference between the place value of 8 and 9 in the number 8964 is",
+      "interaction_mode": "mcq",
+      "topic": "Knowing about numbers",
+      "difficulty_tier": "warmup",
+      "question_number": 1,
+      "choices": [
+        "7000",
+        "7100",
+        "6900",
+        "7150"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S1"
+    },
+    {
+      "id": "wb_L3_s01_q02",
+      "stem": "How many of the given numbers has digit 3 at the hundreds place? 7034, 2637, 2306, 3108, 2304, 8013, 6430, 7838, 5357, 9402, 2337, 5121",
+      "interaction_mode": "mcq",
+      "topic": "Knowing about numbers",
+      "difficulty_tier": "warmup",
+      "question_number": 2,
+      "choices": [
+        "5",
+        "4",
+        "3",
+        "8"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S1"
+    },
+    {
+      "id": "wb_L3_s01_q03",
+      "stem": "Arrange the following from the smallest to the greatest",
+      "interaction_mode": "mcq",
+      "topic": "Knowing about numbers",
+      "difficulty_tier": "warmup",
+      "question_number": 3,
+      "choices": [
+        "P, Q, R, S",
+        "P, R, S, Q",
+        "P, R, Q, S",
+        "P, Q, S, R"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S1"
+    },
+    {
+      "id": "wb_L3_s01_q04",
+      "stem": "Which of the following is the correct arrangement of numbers in the ascending order?",
+      "interaction_mode": "mcq",
+      "topic": "Knowing about numbers",
+      "difficulty_tier": "warmup",
+      "question_number": 4,
+      "choices": [
+        "4890 > 5569 > 5728 > 6129 > 9888",
+        "8768 < 6139 < 5718 < 5169 < 4110",
+        "4220 < 5265 < 5456 < 6239 < 9658",
+        "None of these"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S1"
+    },
+    {
+      "id": "wb_L3_s01_q05",
+      "stem": "Find the addition of all the odd numbers from the boxes given below",
+      "interaction_mode": "mcq",
+      "topic": "Knowing about numbers",
+      "difficulty_tier": "warmup",
+      "question_number": 5,
+      "choices": [
+        "234",
+        "463",
+        "453",
+        "473"
+      ],
+      "correct_answer": 3,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S1"
+    },
+    {
+      "id": "wb_L3_s01_q06",
+      "stem": "The difference between the place value of 6 and 9 in the number 6593 is",
+      "interaction_mode": "mcq",
+      "topic": "Knowing about numbers",
+      "difficulty_tier": "practice",
+      "question_number": 6,
+      "choices": [
+        "5108",
+        "5901",
+        "5910",
+        "9510"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S1"
+    },
+    {
+      "id": "wb_L3_s01_q07",
+      "stem": "Which of the following has the same value as 9632?",
+      "interaction_mode": "mcq",
+      "topic": "Knowing about numbers",
+      "difficulty_tier": "practice",
+      "question_number": 7,
+      "choices": [
+        "900 + 600 + 30 + 2",
+        "9000 + 60 + 300 + 2",
+        "90 + 600 + 30 + 20",
+        "9000 + 600 + 30 + 2"
+      ],
+      "correct_answer": 3,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S1"
+    },
+    {
+      "id": "wb_L3_s01_q08",
+      "stem": "Arrange the following in the ascending order: 123, 23, 133, 33, 1133, 1311, 2311, 2633",
+      "interaction_mode": "mcq",
+      "topic": "Knowing about numbers",
+      "difficulty_tier": "practice",
+      "question_number": 8,
+      "choices": [
+        "23, 33, 123, 133, 1133, 1311, 2311, 2633",
+        "2633, 2311, 1311, 1133, 133, 123, 33, 23",
+        "33, 23, 133, 123, 1133, 1311, 2311, 2633",
+        "None of these"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S1"
+    },
+    {
+      "id": "wb_L3_s01_q09",
+      "stem": "Find the number name of the largest four digit number that can be formed using the given digits: 5 2 1 8",
+      "interaction_mode": "mcq",
+      "topic": "Knowing about numbers",
+      "difficulty_tier": "practice",
+      "question_number": 9,
+      "choices": [
+        "Eight thousand five hundred and twenty one",
+        "Eight thousand five hundred and twelve",
+        "Eight thousand two hundred and fifty one",
+        "Eight thousand two hundred and fifteen"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S1"
+    },
+    {
+      "id": "wb_L3_s01_q10",
+      "stem": "Find the product of the face value of 9 and place value of 7 in the number 9657",
+      "interaction_mode": "mcq",
+      "topic": "Knowing about numbers",
+      "difficulty_tier": "practice",
+      "question_number": 10,
+      "choices": [
+        "60",
+        "55",
+        "61",
+        "63"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S1"
+    },
+    {
+      "id": "wb_L3_s01_q11",
+      "stem": "Find the mystery number: It is less than 999. Its hundreds digit is the smallest even number. Its Tens digit is 3 more than the hundreds digit. The sum of its digits is 9",
+      "interaction_mode": "mcq",
+      "topic": "Knowing about numbers",
+      "difficulty_tier": "challenge",
+      "question_number": 11,
+      "choices": [
+        "152",
+        "250",
+        "256",
+        "252"
+      ],
+      "correct_answer": 3,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S1"
+    },
+    {
+      "id": "wb_L3_s01_q12",
+      "stem": "Which of the following is the product of three digit largest number and one digit largest number?",
+      "interaction_mode": "mcq",
+      "topic": "Knowing about numbers",
+      "difficulty_tier": "challenge",
+      "question_number": 12,
+      "choices": [
+        "8900",
+        "8990",
+        "8991",
+        "8910"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S1"
+    },
+    {
+      "id": "wb_L3_s01_q13",
+      "stem": "Find the difference between the greatest and smallest four digit number formed by the following digits, using each digit only once: 8 6 5 9",
+      "interaction_mode": "mcq",
+      "topic": "Knowing about numbers",
+      "difficulty_tier": "challenge",
+      "question_number": 13,
+      "choices": [
+        "4176",
+        "4215",
+        "4312",
+        "4200"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S1"
+    },
+    {
+      "id": "wb_L3_s01_q14",
+      "stem": "How many times does the digit 0 appear between 1 and 100?",
+      "interaction_mode": "mcq",
+      "topic": "Knowing about numbers",
+      "difficulty_tier": "challenge",
+      "question_number": 14,
+      "choices": [
+        "9",
+        "10",
+        "11",
+        "12"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S1"
+    },
+    {
+      "id": "wb_L3_s01_q15",
+      "stem": "A number multiplied by 5 and then added to 209, become 364. Three times of the number is ___. Statement 1: Greater than 85 and less than 95. Statement 2: Number is multiple of 3",
+      "interaction_mode": "mcq",
+      "topic": "Knowing about numbers",
+      "difficulty_tier": "challenge",
+      "question_number": 15,
+      "choices": [
+        "Only statement 1 is true",
+        "Only statement 2 is true",
+        "Both statements 1 and 2 are true",
+        "Neither statement 1 nor 2 is true"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S1"
+    },
+    {
+      "id": "wb_L3_s04_q01",
+      "stem": "Which of the following expressions is NOT true?",
+      "interaction_mode": "mcq",
+      "topic": "Multiplication and Division",
+      "difficulty_tier": "warmup",
+      "question_number": 1,
+      "choices": [
+        "12 x 89 = 89 x 12",
+        "12 x 89 = 12 x (80 + 9)",
+        "12 x 89 = (10 + 2) x 89",
+        "12 x 89 = (12 x 8) + (12 x 9)"
+      ],
+      "correct_answer": 3,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S4"
+    },
+    {
+      "id": "wb_L3_s04_q02",
+      "stem": "Shiva arranged some tiles in the pattern shown here. Which number sentence best represents his arrangement of tiles?",
+      "interaction_mode": "mcq",
+      "topic": "Multiplication and Division",
+      "difficulty_tier": "warmup",
+      "question_number": 2,
+      "choices": [
+        "7 + 4 = 11",
+        "7 x 4 = 28",
+        "7 x 7 = 49",
+        "28 - 4 = 18"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S4"
+    },
+    {
+      "id": "wb_L3_s04_q03",
+      "stem": "Samrath has a ball of string 6 yards long. He needs 20 feet string for a project. What should Samrath do first to find out length of string he require? (1 yard = 3 feet)",
+      "interaction_mode": "mcq",
+      "topic": "Multiplication and Division",
+      "difficulty_tier": "warmup",
+      "question_number": 3,
+      "choices": [
+        "Multiply 20 by 3",
+        "Multiply 20 by 6",
+        "Multiply 6 by 3",
+        "Multiply 6 by 12"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S4"
+    },
+    {
+      "id": "wb_L3_s04_q04",
+      "stem": "Which of the following shows the common factors of 12 and 15?",
+      "interaction_mode": "mcq",
+      "topic": "Multiplication and Division",
+      "difficulty_tier": "warmup",
+      "question_number": 4,
+      "choices": [
+        "1 and 2",
+        "2 and 3",
+        "1 and 3",
+        "3 and 4"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S4"
+    },
+    {
+      "id": "wb_L3_s04_q05",
+      "stem": "Find the missing number",
+      "interaction_mode": "mcq",
+      "topic": "Multiplication and Division",
+      "difficulty_tier": "warmup",
+      "question_number": 5,
+      "choices": [
+        "2",
+        "3",
+        "6",
+        "4"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S4"
+    },
+    {
+      "id": "wb_L3_s04_q06",
+      "stem": "Shubham bought 8 bags of blue balls and 6 bags of white balls. Each bag of balls had 9 pieces in it. Which expression could he use to find the total number of balls he bought?",
+      "interaction_mode": "mcq",
+      "topic": "Multiplication and Division",
+      "difficulty_tier": "practice",
+      "question_number": 6,
+      "choices": [
+        "(9 x 8) + 6",
+        "(9 x 6) + 8",
+        "9 x (8 + 6)",
+        "9 + (8 x 6)"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S4"
+    },
+    {
+      "id": "wb_L3_s04_q07",
+      "stem": "What is the missing digit which makes the number 9724* exactly divisible by 6?",
+      "interaction_mode": "mcq",
+      "topic": "Multiplication and Division",
+      "difficulty_tier": "practice",
+      "question_number": 7,
+      "choices": [
+        "2",
+        "4",
+        "6",
+        "5"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S4"
+    },
+    {
+      "id": "wb_L3_s04_q08",
+      "stem": "Find the least value of '*' so that the number 37*124 is divisible by 9?",
+      "interaction_mode": "mcq",
+      "topic": "Multiplication and Division",
+      "difficulty_tier": "practice",
+      "question_number": 8,
+      "choices": [
+        "2",
+        "1",
+        "5",
+        "6"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S4"
+    },
+    {
+      "id": "wb_L3_s04_q09",
+      "stem": "Multiply 3212 x 11",
+      "interaction_mode": "mcq",
+      "topic": "Multiplication and Division",
+      "difficulty_tier": "practice",
+      "question_number": 9,
+      "choices": [
+        "35332",
+        "38332",
+        "37332",
+        "36332"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S4"
+    },
+    {
+      "id": "wb_L3_s04_q10",
+      "stem": "A number is always divisible by 90 if",
+      "interaction_mode": "mcq",
+      "topic": "Multiplication and Division",
+      "difficulty_tier": "practice",
+      "question_number": 10,
+      "choices": [
+        "it is divisible by both 2 and 45",
+        "it is divisible by both 5 and 18",
+        "it is divisible by both 9 and 10",
+        "All the above"
+      ],
+      "correct_answer": 3,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S4"
+    },
+    {
+      "id": "wb_L3_s04_q11",
+      "stem": "David has a stove with two hobs. The dishes need 40 min, 15 min, 35 min, 10 min and 45 min. How long does he need for the preparation?",
+      "interaction_mode": "mcq",
+      "topic": "Multiplication and Division",
+      "difficulty_tier": "challenge",
+      "question_number": 11,
+      "choices": [
+        "60 min",
+        "70 min",
+        "75 min",
+        "80 min",
+        "85 min"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S4"
+    },
+    {
+      "id": "wb_L3_s04_q12",
+      "stem": "Which number must be written into the circle with the question mark so that the calculation is correct?",
+      "interaction_mode": "mcq",
+      "topic": "Multiplication and Division",
+      "difficulty_tier": "challenge",
+      "question_number": 12,
+      "choices": [
+        "8",
+        "9",
+        "10",
+        "11",
+        "12"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S4"
+    },
+    {
+      "id": "wb_L3_s04_q13",
+      "stem": "Benjamin writes a number into the first circle. How many of the six numbers are divisible by 3?",
+      "interaction_mode": "mcq",
+      "topic": "Multiplication and Division",
+      "difficulty_tier": "challenge",
+      "question_number": 13,
+      "choices": [
+        "1",
+        "2",
+        "1 or 2",
+        "2 or 3",
+        "3 or 4"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S4"
+    },
+    {
+      "id": "wb_L3_s04_q14",
+      "stem": "In a witch's garden there are 30 animals: dogs, cats and mice. The witch changes 6 dogs into 6 cats and then 5 cats into 5 mice. Now there is an equal number. How many cats were there to start with?",
+      "interaction_mode": "mcq",
+      "topic": "Multiplication and Division",
+      "difficulty_tier": "challenge",
+      "question_number": 14,
+      "choices": [
+        "4",
+        "5",
+        "9",
+        "10",
+        "11"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S4"
+    },
+    {
+      "id": "wb_L3_s04_q15",
+      "stem": "Which of the following numbers is divisible by 11?",
+      "interaction_mode": "mcq",
+      "topic": "Multiplication and Division",
+      "difficulty_tier": "challenge",
+      "question_number": 15,
+      "choices": [
+        "3,116,365",
+        "901,351",
+        "8,790,322",
+        "311,136"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S4"
+    },
+    {
+      "id": "wb_L3_s06_q01",
+      "stem": "Statement-I: 1 is a factor of every number. Statement-II: 2 is the first prime number. Which is correct?",
+      "interaction_mode": "mcq",
+      "topic": "Factors and multiples",
+      "difficulty_tier": "warmup",
+      "question_number": 1,
+      "choices": [
+        "I only",
+        "II only",
+        "Both I and II",
+        "Neither I nor II"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S6"
+    },
+    {
+      "id": "wb_L3_s06_q02",
+      "stem": "Find the H.C.F. of 27 and 45",
+      "interaction_mode": "mcq",
+      "topic": "Factors and multiples",
+      "difficulty_tier": "warmup",
+      "question_number": 2,
+      "choices": [
+        "3",
+        "6",
+        "9",
+        "15"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S6"
+    },
+    {
+      "id": "wb_L3_s06_q03",
+      "stem": "What is the greatest number that divides 37, 50 and 123 leaving remainders 1, 2 and 3 respectively?",
+      "interaction_mode": "mcq",
+      "topic": "Factors and multiples",
+      "difficulty_tier": "warmup",
+      "question_number": 3,
+      "choices": [
+        "9",
+        "10",
+        "15",
+        "12"
+      ],
+      "correct_answer": 3,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S6"
+    },
+    {
+      "id": "wb_L3_s06_q04",
+      "stem": "The common factor between the numerator and denominator of 6/15 is",
+      "interaction_mode": "mcq",
+      "topic": "Factors and multiples",
+      "difficulty_tier": "warmup",
+      "question_number": 4,
+      "choices": [
+        "3",
+        "2",
+        "5",
+        "4"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S6"
+    },
+    {
+      "id": "wb_L3_s06_q05",
+      "stem": "David has a stove with two hobs. Dishes need 40, 15, 35, 10 and 45 min. How long for preparation?",
+      "interaction_mode": "mcq",
+      "topic": "Factors and multiples",
+      "difficulty_tier": "warmup",
+      "question_number": 5,
+      "choices": [
+        "60 min",
+        "70 min",
+        "75 min",
+        "80 min",
+        "85 min"
+      ],
+      "correct_answer": 4,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S6"
+    },
+    {
+      "id": "wb_L3_s06_q06",
+      "stem": "The L.C.M. of 4, 8, and 16 is",
+      "interaction_mode": "mcq",
+      "topic": "Factors and multiples",
+      "difficulty_tier": "practice",
+      "question_number": 6,
+      "choices": [
+        "2",
+        "4",
+        "1",
+        "16"
+      ],
+      "correct_answer": 3,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S6"
+    },
+    {
+      "id": "wb_L3_s06_q07",
+      "stem": "The LCM of two numbers is 30 and their HCF is 15. If one number is 30, then what is the other?",
+      "interaction_mode": "mcq",
+      "topic": "Factors and multiples",
+      "difficulty_tier": "practice",
+      "question_number": 7,
+      "choices": [
+        "30",
+        "25",
+        "15",
+        "20"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S6"
+    },
+    {
+      "id": "wb_L3_s06_q08",
+      "stem": "The L.C.M. of 5, 10, and 18 is",
+      "interaction_mode": "mcq",
+      "topic": "Factors and multiples",
+      "difficulty_tier": "practice",
+      "question_number": 8,
+      "choices": [
+        "80",
+        "85",
+        "90",
+        "180"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S6"
+    },
+    {
+      "id": "wb_L3_s06_q09",
+      "stem": "The L.C.M. of two co-prime numbers is 117. What is the sum of squares of the numbers?",
+      "interaction_mode": "mcq",
+      "topic": "Factors and multiples",
+      "difficulty_tier": "practice",
+      "question_number": 9,
+      "choices": [
+        "220",
+        "1530",
+        "250",
+        "22"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S6"
+    },
+    {
+      "id": "wb_L3_s06_q10",
+      "stem": "Four bells ring at intervals of 6, 7, 8 and 9 seconds. After how many seconds do all ring together?",
+      "interaction_mode": "mcq",
+      "topic": "Factors and multiples",
+      "difficulty_tier": "practice",
+      "question_number": 10,
+      "choices": [
+        "504",
+        "516",
+        "508",
+        "512"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S6"
+    },
+    {
+      "id": "wb_L3_s06_q11",
+      "stem": "HCF of two numbers is 11 and their LCM is 385. If numbers don't differ by more than 50, what is their sum?",
+      "interaction_mode": "mcq",
+      "topic": "Factors and multiples",
+      "difficulty_tier": "challenge",
+      "question_number": 11,
+      "choices": [
+        "132",
+        "35",
+        "12",
+        "36"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S6"
+    },
+    {
+      "id": "wb_L3_s06_q12",
+      "stem": "What is the least number which when divided by 4, 5, 6 and 7 leaves remainder 3, but when divided by 9 leaves no remainder?",
+      "interaction_mode": "mcq",
+      "topic": "Factors and multiples",
+      "difficulty_tier": "challenge",
+      "question_number": 12,
+      "choices": [
+        "1683",
+        "1263",
+        "843",
+        "423"
+      ],
+      "correct_answer": 3,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S6"
+    },
+    {
+      "id": "wb_L3_s06_q13",
+      "stem": "What is the greatest 4-digit number exactly divisible by 12, 15, 20 and 35?",
+      "interaction_mode": "mcq",
+      "topic": "Factors and multiples",
+      "difficulty_tier": "challenge",
+      "question_number": 13,
+      "choices": [
+        "9999",
+        "9660",
+        "9832",
+        "9860"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S6"
+    },
+    {
+      "id": "wb_L3_s06_q14",
+      "stem": "What is the smallest number which when divided by 20, 25, 35 and 40 leaves remainders 14, 19, 29 and 34?",
+      "interaction_mode": "mcq",
+      "topic": "Factors and multiples",
+      "difficulty_tier": "challenge",
+      "question_number": 14,
+      "choices": [
+        "1394",
+        "1404",
+        "1664",
+        "1406"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S6"
+    },
+    {
+      "id": "wb_L3_s06_q15",
+      "stem": "The greatest number which on dividing 1657 and 2037 leaves remainders 6 and 5 respectively",
+      "interaction_mode": "mcq",
+      "topic": "Factors and multiples",
+      "difficulty_tier": "challenge",
+      "question_number": 15,
+      "choices": [
+        "123",
+        "127",
+        "235",
+        "305"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S6"
+    },
+    {
+      "id": "wb_L3_s10_q01",
+      "stem": "0.7 + 0.03 + 0.009 = ?",
+      "interaction_mode": "mcq",
+      "topic": "Decimals Part 2",
+      "difficulty_tier": "warmup",
+      "question_number": 1,
+      "choices": [
+        "0.739",
+        "0.0739",
+        "7.39",
+        "73.9"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S10"
+    },
+    {
+      "id": "wb_L3_s10_q02",
+      "stem": "What is 3.56 rounded to the nearest tenth?",
+      "interaction_mode": "mcq",
+      "topic": "Decimals Part 2",
+      "difficulty_tier": "warmup",
+      "question_number": 2,
+      "choices": [
+        "3.5",
+        "3.6",
+        "4.0",
+        "3.56"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S10"
+    },
+    {
+      "id": "wb_L3_s10_q03",
+      "stem": "Convert 3/8 to a decimal.",
+      "interaction_mode": "mcq",
+      "topic": "Decimals Part 2",
+      "difficulty_tier": "warmup",
+      "question_number": 3,
+      "choices": [
+        "0.375",
+        "0.38",
+        "0.35",
+        "0.325"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S10"
+    },
+    {
+      "id": "wb_L3_s10_q04",
+      "stem": "5.6 - 2.38 = ?",
+      "interaction_mode": "mcq",
+      "topic": "Decimals Part 2",
+      "difficulty_tier": "warmup",
+      "question_number": 4,
+      "choices": [
+        "3.28",
+        "3.22",
+        "3.32",
+        "2.22"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S10"
+    },
+    {
+      "id": "wb_L3_s10_q05",
+      "stem": "Which decimal is equivalent to 7/20?",
+      "interaction_mode": "mcq",
+      "topic": "Decimals Part 2",
+      "difficulty_tier": "warmup",
+      "question_number": 5,
+      "choices": [
+        "0.35",
+        "0.7",
+        "3.5",
+        "0.45"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S10"
+    },
+    {
+      "id": "wb_L3_s10_q06",
+      "stem": "4.25 x 3 = ?",
+      "interaction_mode": "mcq",
+      "topic": "Decimals Part 2",
+      "difficulty_tier": "practice",
+      "question_number": 6,
+      "choices": [
+        "12.75",
+        "12.25",
+        "12.50",
+        "13.75"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S10"
+    },
+    {
+      "id": "wb_L3_s10_q07",
+      "stem": "Arrange in ascending order: 0.5, 0.05, 0.55, 0.505",
+      "interaction_mode": "mcq",
+      "topic": "Decimals Part 2",
+      "difficulty_tier": "practice",
+      "question_number": 7,
+      "choices": [
+        "0.05, 0.5, 0.505, 0.55",
+        "0.5, 0.05, 0.55, 0.505",
+        "0.05, 0.505, 0.5, 0.55",
+        "0.55, 0.505, 0.5, 0.05"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S10"
+    },
+    {
+      "id": "wb_L3_s10_q08",
+      "stem": "12.6 divided by 4 = ?",
+      "interaction_mode": "mcq",
+      "topic": "Decimals Part 2",
+      "difficulty_tier": "practice",
+      "question_number": 8,
+      "choices": [
+        "3.05",
+        "3.15",
+        "3.25",
+        "3.50"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S10"
+    },
+    {
+      "id": "wb_L3_s10_q09",
+      "stem": "The decimal form of 2 and 3/4 is",
+      "interaction_mode": "mcq",
+      "topic": "Decimals Part 2",
+      "difficulty_tier": "practice",
+      "question_number": 9,
+      "choices": [
+        "2.75",
+        "2.34",
+        "2.25",
+        "2.50"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S10"
+    },
+    {
+      "id": "wb_L3_s10_q10",
+      "stem": "What is the place value of 6 in 45.362?",
+      "interaction_mode": "mcq",
+      "topic": "Decimals Part 2",
+      "difficulty_tier": "practice",
+      "question_number": 10,
+      "choices": [
+        "6/10",
+        "6/100",
+        "6/1000",
+        "60"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S10"
+    },
+    {
+      "id": "wb_L3_s10_q11",
+      "stem": "If a ribbon is 2.45 m long and another is 1.8 m long, what is the total length?",
+      "interaction_mode": "mcq",
+      "topic": "Decimals Part 2",
+      "difficulty_tier": "challenge",
+      "question_number": 11,
+      "choices": [
+        "4.25 m",
+        "4.05 m",
+        "3.25 m",
+        "4.35 m"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S10"
+    },
+    {
+      "id": "wb_L3_s10_q12",
+      "stem": "0.08 x 100 = ?",
+      "interaction_mode": "mcq",
+      "topic": "Decimals Part 2",
+      "difficulty_tier": "challenge",
+      "question_number": 12,
+      "choices": [
+        "0.8",
+        "8",
+        "80",
+        "800"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S10"
+    },
+    {
+      "id": "wb_L3_s10_q13",
+      "stem": "Which is greater: 0.45 or 0.405?",
+      "interaction_mode": "mcq",
+      "topic": "Decimals Part 2",
+      "difficulty_tier": "challenge",
+      "question_number": 13,
+      "choices": [
+        "0.45",
+        "0.405",
+        "Both are equal",
+        "Cannot be determined"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S10"
+    },
+    {
+      "id": "wb_L3_s10_q14",
+      "stem": "Rohan spent Rs 45.75 on a pen and Rs 23.50 on a notebook. How much did he spend in total?",
+      "interaction_mode": "mcq",
+      "topic": "Decimals Part 2",
+      "difficulty_tier": "challenge",
+      "question_number": 14,
+      "choices": [
+        "Rs 69.25",
+        "Rs 68.25",
+        "Rs 69.50",
+        "Rs 70.25"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S10"
+    },
+    {
+      "id": "wb_L3_s10_q15",
+      "stem": "The product of 2.5 and 0.4 is",
+      "interaction_mode": "mcq",
+      "topic": "Decimals Part 2",
+      "difficulty_tier": "challenge",
+      "question_number": 15,
+      "choices": [
+        "1.0",
+        "10.0",
+        "0.1",
+        "0.01"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S10"
+    },
+    {
+      "id": "wb_L3_s11_q01",
+      "stem": "Calculate the area of rectangle if one square represents an area of 1 cm\u00b2 (6 columns, 4 rows)",
+      "interaction_mode": "mcq",
+      "topic": "Area",
+      "difficulty_tier": "warmup",
+      "question_number": 1,
+      "choices": [
+        "2 cm\u00b2",
+        "9 cm\u00b2",
+        "50 cm\u00b2",
+        "24 cm\u00b2"
+      ],
+      "correct_answer": 3,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S11",
+      "svg": "svg/wb_L3_s11_q01.svg"
+    },
+    {
+      "id": "wb_L3_s11_q02",
+      "stem": "Each side of square is of 10m. What will be the area of the square?",
+      "interaction_mode": "mcq",
+      "topic": "Area",
+      "difficulty_tier": "warmup",
+      "question_number": 2,
+      "choices": [
+        "100 m\u00b2",
+        "90 m\u00b2",
+        "34 m\u00b2",
+        "115 m\u00b2"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S11"
+    },
+    {
+      "id": "wb_L3_s11_q04",
+      "stem": "The length and breadth of a rectangle are (3a + 2) and (2a - 1). Which represents its perimeter?",
+      "interaction_mode": "mcq",
+      "topic": "Area",
+      "difficulty_tier": "warmup",
+      "question_number": 4,
+      "choices": [
+        "2(5a - 1)",
+        "(5a + 1)",
+        "(5a - 1)",
+        "2(5a + 1)"
+      ],
+      "correct_answer": 3,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S11"
+    },
+    {
+      "id": "wb_L3_s11_q06",
+      "stem": "Find the area of shaded region. (Each square = 1 m\u00b2, 21 squares shaded in L-pattern)",
+      "interaction_mode": "mcq",
+      "topic": "Area",
+      "difficulty_tier": "practice",
+      "question_number": 6,
+      "choices": [
+        "21 m\u00b2",
+        "35 m\u00b2",
+        "34 m\u00b2",
+        "13 m\u00b2"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S11",
+      "svg": "svg/wb_L3_s11_q06.svg"
+    },
+    {
+      "id": "wb_L3_s11_q08",
+      "stem": "Rohit's family is building a concrete basketball court (7m x 5m) in their backyard (11m x 6m). How many square metres will be left for grass?",
+      "interaction_mode": "mcq",
+      "topic": "Area",
+      "difficulty_tier": "practice",
+      "question_number": 8,
+      "choices": [
+        "60 sq.m",
+        "35 sq.m",
+        "31 sq.m",
+        "24 sq.m"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S11",
+      "svg": "svg/wb_L3_s11_q08.svg"
+    },
+    {
+      "id": "wb_L3_s11_q12",
+      "stem": "The area of a square is 100 sq.cm. If the sides are increased by 10%, what will be the area of the new square?",
+      "interaction_mode": "mcq",
+      "topic": "Area",
+      "difficulty_tier": "challenge",
+      "question_number": 12,
+      "choices": [
+        "121 sq.cm",
+        "101 sq.cm",
+        "81 sq.cm",
+        "169 sq.cm"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S11"
+    },
+    {
+      "id": "wb_L3_s11_q15",
+      "stem": "Find the total shaded area of the figure made up of identical squares (each square 4cm side, 6 shaded)",
+      "interaction_mode": "mcq",
+      "topic": "Area",
+      "difficulty_tier": "challenge",
+      "question_number": 15,
+      "choices": [
+        "48 sq.cm",
+        "80 sq.cm",
+        "96 sq.cm",
+        "85 sq.cm"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S11"
+    }
+  ]
+}

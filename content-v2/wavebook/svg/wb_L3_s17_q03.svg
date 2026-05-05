@@ -1,0 +1,14 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect x="60" y="70" width="280" height="160" fill="none" stroke="black" stroke-width="2"/>
+  <text x="200" y="60" text-anchor="middle" font-family="Arial" font-size="14" fill="blue">15 m</text>
+  <text x="200" y="250" text-anchor="middle" font-family="Arial" font-size="14" fill="blue">15 m</text>
+  <text x="45" y="155" text-anchor="middle" font-family="Arial" font-size="14" fill="blue" transform="rotate(-90 45 155)">8 m</text>
+  <text x="355" y="155" text-anchor="middle" font-family="Arial" font-size="14" fill="blue" transform="rotate(90 355 155)">8 m</text>
+  <!-- Fence icon in top-left corner -->
+  <line x1="60" y1="70" x2="60" y2="85" stroke="#8B4513" stroke-width="3"/>
+  <line x1="70" y1="70" x2="70" y2="85" stroke="#8B4513" stroke-width="3"/>
+  <line x1="80" y1="70" x2="80" y2="85" stroke="#8B4513" stroke-width="3"/>
+  <line x1="57" y1="75" x2="83" y2="75" stroke="#8B4513" stroke-width="2"/>
+  <line x1="57" y1="82" x2="83" y2="82" stroke="#8B4513" stroke-width="2"/>
+  <text x="70" y="100" text-anchor="middle" font-family="Arial" font-size="10" fill="#8B4513">fence</text>
+</svg>

@@ -1,0 +1,19 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Rectangle ABCD -->
+  <rect x="70" y="70" width="260" height="160" fill="none" stroke="black" stroke-width="2"/>
+  <!-- Vertex labels -->
+  <text x="60" y="65" text-anchor="middle" font-family="Arial" font-size="14" fill="black" font-weight="bold">A</text>
+  <text x="340" y="65" text-anchor="middle" font-family="Arial" font-size="14" fill="black" font-weight="bold">B</text>
+  <text x="340" y="245" text-anchor="middle" font-family="Arial" font-size="14" fill="black" font-weight="bold">C</text>
+  <text x="60" y="245" text-anchor="middle" font-family="Arial" font-size="14" fill="black" font-weight="bold">D</text>
+  <!-- Length label (top) -->
+  <text x="200" y="55" text-anchor="middle" font-family="Arial" font-size="14" fill="blue">(4a - 3b)</text>
+  <!-- Width label (right side) -->
+  <text x="370" y="155" text-anchor="middle" font-family="Arial" font-size="14" fill="blue" transform="rotate(90 370 155)">(5a + 4b)</text>
+  <!-- Bottom label -->
+  <text x="200" y="255" text-anchor="middle" font-family="Arial" font-size="14" fill="blue">(4a - 3b)</text>
+  <!-- Left label -->
+  <text x="45" y="155" text-anchor="middle" font-family="Arial" font-size="14" fill="blue" transform="rotate(-90 45 155)">(5a + 4b)</text>
+  <!-- Title -->
+  <text x="200" y="285" text-anchor="middle" font-family="Arial" font-size="13" fill="black">Rectangle ABCD</text>
+</svg>

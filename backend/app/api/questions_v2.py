@@ -14,6 +14,7 @@ Endpoints:
 
 from __future__ import annotations
 
+import random
 import re
 import uuid
 from collections import defaultdict
@@ -340,6 +341,45 @@ def next_question(
         exclude_ids = list(set(exclude_ids) | recently_seen)
 
     exclude_ids = exclude_ids if exclude_ids else None
+
+    # Virtual topic: "olympiad-kangaroo-gN" → pool ALL 8 Kangaroo topics for grade N
+    _KANGAROO_TOPICS = [
+        "counting_observation", "arithmetic_missing_numbers",
+        "patterns_sequences", "logic_ordering",
+        "spatial_reasoning_3d", "shapes_folding_symmetry",
+        "word_problems_stories", "number_puzzles_games",
+    ]
+    _kangaroo_match = re.match(r"olympiad-kangaroo-g(\d)", topic or "")
+    if _kangaroo_match:
+        kangaroo_grade = int(_kangaroo_match.group(1))
+        if grade is None:
+            grade = kangaroo_grade
+        # Pool questions from all 8 Kangaroo topics
+        pool = []
+        for kt in _KANGAROO_TOPICS:
+            pool.extend(store_v2.by_topic(kt))
+        # Filter by grade difficulty range
+        g_min, g_max = _GRADE_DIFFICULTY.get(kangaroo_grade, (1, 200))
+        pool = [q for q in pool if g_min <= q.difficulty_score <= g_max]
+        if pool:
+            if user_id:
+                seen_clusters, mastered_clusters = _get_cluster_state(user_id)
+                q = engine_v2.select_question(
+                    user_id=user_id,
+                    topic_id=topic,
+                    available_questions=pool,
+                    exclude_ids=exclude_ids,
+                    exclude_clusters=list(mastered_clusters),
+                    seen_clusters=seen_clusters,
+                )
+                if q:
+                    return _to_response(q)
+            # Fallback: random from pool
+            if exclude_ids:
+                pool = [q for q in pool if q.id not in set(exclude_ids)]
+            if pool:
+                return _to_response(random.choice(pool))
+        raise HTTPException(status_code=404, detail=f"No Kangaroo questions for grade {kangaroo_grade}")
 
     # Apply grade-based difficulty filter
     grade_min, grade_max = None, None

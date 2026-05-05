@@ -4,6 +4,7 @@ import 'dart:io' show Platform;
 import 'package:flutter/foundation.dart';
 import 'package:http/http.dart' as http;
 
+import '../models/olympiad_worksheet.dart';
 import '../models/question_v2.dart';
 import '../models/student_levels.dart';
 import '../models/user_profile.dart';
@@ -830,14 +831,6 @@ class ApiClient {
             body: jsonEncode({'user_id': userId, 'device_id': deviceId}))
         .timeout(const Duration(seconds: 5)));
   }
-}
-
-class ApiException implements Exception {
-  final String message;
-  ApiException(this.message);
-  @override
-  String toString() => 'ApiException: $message';
-}
 
   // ---------------------------------------------------------------------------
   // Proficiency & Growth (Learning Outcomes)
@@ -939,6 +932,122 @@ class ApiException implements Exception {
     }
     return jsonDecode(res.body) as Map<String, dynamic>;
   }
+
+  // ---------------------------------------------------------------------------
+  // Olympiad Worksheet API
+  // ---------------------------------------------------------------------------
+
+  /// Fetch a single olympiad worksheet for a grade and day.
+  Future<OlympiadWorksheet> getOlympiadWorksheet(int grade, int day) async {
+    final uri = Uri.parse('$baseUrl/olympiad/worksheets')
+        .replace(queryParameters: {'grade': '$grade', 'day': '$day'});
+    final res = await _withRetry(
+        () => http.get(uri).timeout(const Duration(seconds: 20)));
+    if (res.statusCode != 200) {
+      throw ApiException(
+          'GET /olympiad/worksheets failed: ${res.statusCode} ${res.body}');
+    }
+    return OlympiadWorksheet.fromJson(
+        jsonDecode(res.body) as Map<String, dynamic>);
+  }
+
+  /// List all available worksheet days for a grade (legacy — returns day numbers only).
+  Future<List<int>> getOlympiadWorksheetDays(int grade) async {
+    final uri = Uri.parse('$baseUrl/olympiad/worksheets/list')
+        .replace(queryParameters: {'grade': '$grade'});
+    final res = await _withRetry(
+        () => http.get(uri).timeout(const Duration(seconds: 20)));
+    if (res.statusCode != 200) {
+      throw ApiException(
+          'GET /olympiad/worksheets/list failed: ${res.statusCode} ${res.body}');
+    }
+    final data = jsonDecode(res.body) as Map<String, dynamic>;
+    final days = data['days'] as List<dynamic>;
+    return days.map((d) => d as int).toList();
+  }
+
+  /// List all worksheets with rich metadata for a grade.
+  Future<List<WorksheetMeta>> getOlympiadWorksheetList(int grade) async {
+    final uri = Uri.parse('$baseUrl/olympiad/worksheets/list')
+        .replace(queryParameters: {'grade': '$grade'});
+    final res = await _withRetry(
+        () => http.get(uri).timeout(const Duration(seconds: 20)));
+    if (res.statusCode != 200) {
+      throw ApiException(
+          'GET /olympiad/worksheets/list failed: ${res.statusCode} ${res.body}');
+    }
+    final data = jsonDecode(res.body) as Map<String, dynamic>;
+    final worksheets = data['worksheets'] as List<dynamic>? ?? [];
+    return worksheets
+        .map((w) => WorksheetMeta.fromJson(w as Map<String, dynamic>))
+        .toList();
+  }
+
+  /// Get SVG visual URL for an olympiad question.
+  String olympiadVisualUrl(String questionId) =>
+      '$baseUrl/olympiad/questions/$questionId/visual';
+
+  /// Get olympiad stats for a grade (or all grades if null).
+  Future<Map<String, dynamic>> getOlympiadStats({int? grade}) async {
+    final params = <String, String>{};
+    if (grade != null) params['grade'] = '$grade';
+    final uri = Uri.parse('$baseUrl/olympiad/stats')
+        .replace(queryParameters: params.isNotEmpty ? params : null);
+    final res = await _withRetry(
+        () => http.get(uri).timeout(const Duration(seconds: 20)));
+    if (res.statusCode != 200) {
+      throw ApiException(
+          'GET /olympiad/stats failed: ${res.statusCode} ${res.body}');
+    }
+    return jsonDecode(res.body) as Map<String, dynamic>;
+  }
+  // ─── Wavebook (live class worksheet MCQs) ──────────────
+
+  /// Get wavebook topics for a grade (G3-6 only).
+  Future<Map<String, dynamic>> getWavebookTopics(int grade) async {
+    final uri = Uri.parse('$baseUrl/wavebook/topics')
+        .replace(queryParameters: {'grade': '$grade'});
+    final res = await _withRetry(
+        () => http.get(uri).timeout(const Duration(seconds: 20)));
+    if (res.statusCode != 200) {
+      throw ApiException(
+          'GET /wavebook/topics failed: ${res.statusCode} ${res.body}');
+    }
+    return jsonDecode(res.body) as Map<String, dynamic>;
+  }
+
+  /// Get wavebook questions for a specific topic.
+  Future<Map<String, dynamic>> getWavebookQuestions(int grade, String topic) async {
+    final uri = Uri.parse('$baseUrl/wavebook/questions')
+        .replace(queryParameters: {'grade': '$grade', 'topic': topic});
+    final res = await _withRetry(
+        () => http.get(uri).timeout(const Duration(seconds: 20)));
+    if (res.statusCode != 200) {
+      throw ApiException(
+          'GET /wavebook/questions failed: ${res.statusCode} ${res.body}');
+    }
+    return jsonDecode(res.body) as Map<String, dynamic>;
+  }
+
+  /// Download wavebook topic as JSON file content.
+  Future<String> downloadWavebookTopic(int grade, String topic) async {
+    final uri = Uri.parse('$baseUrl/wavebook/download')
+        .replace(queryParameters: {'grade': '$grade', 'topic': topic});
+    final res = await _withRetry(
+        () => http.get(uri).timeout(const Duration(seconds: 30)));
+    if (res.statusCode != 200) {
+      throw ApiException(
+          'GET /wavebook/download failed: ${res.statusCode} ${res.body}');
+    }
+    return res.body;
+  }
+}
+
+class ApiException implements Exception {
+  final String message;
+  ApiException(this.message);
+  @override
+  String toString() => 'ApiException: $message';
 }
 
 class SessionLockException implements Exception {

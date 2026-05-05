@@ -1,0 +1,1803 @@
+{
+  "level": 4,
+  "batch": 4,
+  "grade_band": "5-6",
+  "total_questions": 105,
+  "questions": [
+    {
+      "id": "wb_L4_s28_q01",
+      "stem": "If APPLE is coded as 50, then MANGO is coded as:",
+      "interaction_mode": "mcq",
+      "topic": "Mental Ability",
+      "difficulty_tier": "warmup",
+      "question_number": 1,
+      "choices": [
+        "55",
+        "60",
+        "65",
+        "57"
+      ],
+      "correct_answer": 3,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S28"
+    },
+    {
+      "id": "wb_L4_s28_q02",
+      "stem": "Find the odd one out: 2, 5, 10, 17, 26, __(37)__, 50",
+      "interaction_mode": "mcq",
+      "topic": "Mental Ability",
+      "difficulty_tier": "warmup",
+      "question_number": 2,
+      "choices": [
+        "37",
+        "35",
+        "28",
+        "40"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S28"
+    },
+    {
+      "id": "wb_L4_s28_q03",
+      "stem": "If 'FRIEND' is written as 'GSJFOE' (each letter shifted by +1), then 'CANDLE' is written as:",
+      "interaction_mode": "mcq",
+      "topic": "Mental Ability",
+      "difficulty_tier": "warmup",
+      "question_number": 3,
+      "choices": [
+        "DBOEMF",
+        "DBOEM",
+        "CBOEM",
+        "DBOEMG"
+      ],
+      "correct_answer": 0,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S28"
+    },
+    {
+      "id": "wb_L4_s28_q04",
+      "stem": "In a certain code, TIGER is written as UJHFS. How is HORSE written in that code?",
+      "interaction_mode": "mcq",
+      "topic": "Mental Ability",
+      "difficulty_tier": "warmup",
+      "question_number": 4,
+      "choices": [
+        "IPSFT",
+        "GNQRD",
+        "IPSF",
+        "IPSTF"
+      ],
+      "correct_answer": 3,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S28"
+    },
+    {
+      "id": "wb_L4_s28_q05",
+      "stem": "Find the missing number in the series: 3, 6, 11, 18, 27, ?",
+      "interaction_mode": "mcq",
+      "topic": "Mental Ability",
+      "difficulty_tier": "warmup",
+      "question_number": 5,
+      "choices": [
+        "36",
+        "38",
+        "37",
+        "35"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S28"
+    },
+    {
+      "id": "wb_L4_s28_q06",
+      "stem": "Book is to Reading as Fork is to:",
+      "interaction_mode": "mcq",
+      "topic": "Mental Ability",
+      "difficulty_tier": "practice",
+      "question_number": 6,
+      "choices": [
+        "Eating",
+        "Writing",
+        "Cooking",
+        "Cutting"
+      ],
+      "correct_answer": 0,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S28"
+    },
+    {
+      "id": "wb_L4_s28_q07",
+      "stem": "Find the odd one out: Rose, Lily, Jasmine, Carrot, Lotus",
+      "interaction_mode": "mcq",
+      "topic": "Mental Ability",
+      "difficulty_tier": "practice",
+      "question_number": 7,
+      "choices": [
+        "Rose",
+        "Carrot",
+        "Lily",
+        "Lotus"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S28"
+    },
+    {
+      "id": "wb_L4_s28_q08",
+      "stem": "If A = 1, B = 2, ... Z = 26, what is the sum of the letters in 'CAT'?",
+      "interaction_mode": "mcq",
+      "topic": "Mental Ability",
+      "difficulty_tier": "practice",
+      "question_number": 8,
+      "choices": [
+        "21",
+        "24",
+        "22",
+        "23"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S28"
+    },
+    {
+      "id": "wb_L4_s28_q09",
+      "stem": "Complete the pattern: AZ, BY, CX, DW, ?",
+      "interaction_mode": "mcq",
+      "topic": "Mental Ability",
+      "difficulty_tier": "practice",
+      "question_number": 9,
+      "choices": [
+        "EU",
+        "EX",
+        "FV",
+        "EV"
+      ],
+      "correct_answer": 3,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S28"
+    },
+    {
+      "id": "wb_L4_s28_q10",
+      "stem": "If 2 * 3 = 13, 3 * 4 = 25, then 4 * 5 = ?",
+      "interaction_mode": "mcq",
+      "topic": "Mental Ability",
+      "difficulty_tier": "practice",
+      "question_number": 10,
+      "choices": [
+        "35",
+        "36",
+        "40",
+        "41"
+      ],
+      "correct_answer": 3,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S28"
+    },
+    {
+      "id": "wb_L4_s28_q11",
+      "stem": "Find the next number: 1, 4, 9, 16, 25, ?",
+      "interaction_mode": "mcq",
+      "topic": "Mental Ability",
+      "difficulty_tier": "challenge",
+      "question_number": 11,
+      "choices": [
+        "30",
+        "35",
+        "36",
+        "49"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S28"
+    },
+    {
+      "id": "wb_L4_s28_q12",
+      "stem": "Pointing to a man, Sita said, 'He is the son of my mother's only daughter.' How is the man related to Sita?",
+      "interaction_mode": "mcq",
+      "topic": "Mental Ability",
+      "difficulty_tier": "challenge",
+      "question_number": 12,
+      "choices": [
+        "Brother",
+        "Son",
+        "Nephew",
+        "Father"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S28"
+    },
+    {
+      "id": "wb_L4_s28_q13",
+      "stem": "If Monday = 1, Tuesday = 2, ... Sunday = 7, what day is represented by (3 + 5) mod 7?",
+      "interaction_mode": "mcq",
+      "topic": "Mental Ability",
+      "difficulty_tier": "challenge",
+      "question_number": 13,
+      "choices": [
+        "Monday",
+        "Wednesday",
+        "Thursday",
+        "Saturday"
+      ],
+      "correct_answer": 0,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S28"
+    },
+    {
+      "id": "wb_L4_s28_q14",
+      "stem": "Find the missing number: 2, 6, 12, 20, 30, ?",
+      "interaction_mode": "mcq",
+      "topic": "Mental Ability",
+      "difficulty_tier": "challenge",
+      "question_number": 14,
+      "choices": [
+        "40",
+        "38",
+        "36",
+        "42"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S28"
+    },
+    {
+      "id": "wb_L4_s28_q15",
+      "stem": "In a row of students, Rahul is 7th from the left and 12th from the right. How many students are in the row?",
+      "interaction_mode": "mcq",
+      "topic": "Mental Ability",
+      "difficulty_tier": "challenge",
+      "question_number": 15,
+      "choices": [
+        "17",
+        "19",
+        "18",
+        "20"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S28"
+    },
+    {
+      "id": "wb_L4_s29_q01",
+      "stem": "The mirror image of the word 'AMBULANCE' as seen in a rear-view mirror reads as:",
+      "interaction_mode": "mcq",
+      "topic": "Mirror Images and Relationships",
+      "difficulty_tier": "warmup",
+      "question_number": 1,
+      "choices": [
+        "ECNALUBMA",
+        "AMBULANCE reversed",
+        "AMBULANCE (correctly)",
+        "ECNALUBM"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S29"
+    },
+    {
+      "id": "wb_L4_s29_q02",
+      "stem": "What is the mirror image of the time 3:15 as seen in a mirror?",
+      "interaction_mode": "mcq",
+      "topic": "Mirror Images and Relationships",
+      "difficulty_tier": "warmup",
+      "question_number": 2,
+      "choices": [
+        "9:45",
+        "8:45",
+        "3:15",
+        "12:45"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S29"
+    },
+    {
+      "id": "wb_L4_s29_q03",
+      "stem": "If you face a mirror, your right hand appears to be on:",
+      "interaction_mode": "mcq",
+      "topic": "Mirror Images and Relationships",
+      "difficulty_tier": "warmup",
+      "question_number": 3,
+      "choices": [
+        "Your left side in the mirror",
+        "Your right side in the mirror",
+        "Above your head",
+        "Behind you"
+      ],
+      "correct_answer": 0,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S29"
+    },
+    {
+      "id": "wb_L4_s29_q04",
+      "stem": "The mirror image of the digit 5 looks like:",
+      "interaction_mode": "mcq",
+      "topic": "Mirror Images and Relationships",
+      "difficulty_tier": "warmup",
+      "question_number": 4,
+      "choices": [
+        "2",
+        "5",
+        "S",
+        "A reversed 5"
+      ],
+      "correct_answer": 3,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S29",
+      "svg": "svg/wb_L4_s29_q04.svg"
+    },
+    {
+      "id": "wb_L4_s29_q05",
+      "stem": "Doctor : Patient :: Lawyer : ?",
+      "interaction_mode": "mcq",
+      "topic": "Mirror Images and Relationships",
+      "difficulty_tier": "warmup",
+      "question_number": 5,
+      "choices": [
+        "Judge",
+        "Court",
+        "Crime",
+        "Client"
+      ],
+      "correct_answer": 3,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S29"
+    },
+    {
+      "id": "wb_L4_s29_q06",
+      "stem": "Pen : Writer :: Brush : ?",
+      "interaction_mode": "mcq",
+      "topic": "Mirror Images and Relationships",
+      "difficulty_tier": "practice",
+      "question_number": 6,
+      "choices": [
+        "Teacher",
+        "Canvas",
+        "Painter",
+        "Color"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S29"
+    },
+    {
+      "id": "wb_L4_s29_q07",
+      "stem": "Eye : See :: Ear : ?",
+      "interaction_mode": "mcq",
+      "topic": "Mirror Images and Relationships",
+      "difficulty_tier": "practice",
+      "question_number": 7,
+      "choices": [
+        "Nose",
+        "Hear",
+        "Sound",
+        "Music"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S29"
+    },
+    {
+      "id": "wb_L4_s29_q08",
+      "stem": "Cow : Calf :: Horse : ?",
+      "interaction_mode": "mcq",
+      "topic": "Mirror Images and Relationships",
+      "difficulty_tier": "practice",
+      "question_number": 8,
+      "choices": [
+        "Puppy",
+        "Foal",
+        "Kitten",
+        "Cub"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S29"
+    },
+    {
+      "id": "wb_L4_s29_q09",
+      "stem": "Fish : Water :: Bird : ?",
+      "interaction_mode": "mcq",
+      "topic": "Mirror Images and Relationships",
+      "difficulty_tier": "practice",
+      "question_number": 9,
+      "choices": [
+        "Sky",
+        "Nest",
+        "Tree",
+        "Wings"
+      ],
+      "correct_answer": 0,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S29"
+    },
+    {
+      "id": "wb_L4_s29_q10",
+      "stem": "If the clock shows 2:30 and you see it in a mirror, what time does the mirror show?",
+      "interaction_mode": "mcq",
+      "topic": "Mirror Images and Relationships",
+      "difficulty_tier": "practice",
+      "question_number": 10,
+      "choices": [
+        "8:30",
+        "10:30",
+        "9:30",
+        "7:30"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S29"
+    },
+    {
+      "id": "wb_L4_s29_q11",
+      "stem": "School : Teacher :: Hospital : ?",
+      "interaction_mode": "mcq",
+      "topic": "Mirror Images and Relationships",
+      "difficulty_tier": "challenge",
+      "question_number": 11,
+      "choices": [
+        "Patient",
+        "Medicine",
+        "Nurse",
+        "Doctor"
+      ],
+      "correct_answer": 3,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S29"
+    },
+    {
+      "id": "wb_L4_s29_q12",
+      "stem": "Sun : Day :: Moon : ?",
+      "interaction_mode": "mcq",
+      "topic": "Mirror Images and Relationships",
+      "difficulty_tier": "challenge",
+      "question_number": 12,
+      "choices": [
+        "Night",
+        "Star",
+        "Light",
+        "Sky"
+      ],
+      "correct_answer": 0,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S29"
+    },
+    {
+      "id": "wb_L4_s29_q13",
+      "stem": "Pencil : Write :: Knife : ?",
+      "interaction_mode": "mcq",
+      "topic": "Mirror Images and Relationships",
+      "difficulty_tier": "challenge",
+      "question_number": 13,
+      "choices": [
+        "Sharp",
+        "Blade",
+        "Cut",
+        "Steel"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S29"
+    },
+    {
+      "id": "wb_L4_s29_q14",
+      "stem": "Milk : White :: Blood : ?",
+      "interaction_mode": "mcq",
+      "topic": "Mirror Images and Relationships",
+      "difficulty_tier": "challenge",
+      "question_number": 14,
+      "choices": [
+        "Red",
+        "Blue",
+        "Green",
+        "Brown"
+      ],
+      "correct_answer": 0,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S29"
+    },
+    {
+      "id": "wb_L4_s29_q15",
+      "stem": "If the mirror image of a clock shows 4:20, what is the actual time?",
+      "interaction_mode": "mcq",
+      "topic": "Mirror Images and Relationships",
+      "difficulty_tier": "challenge",
+      "question_number": 15,
+      "choices": [
+        "7:20",
+        "8:40",
+        "7:40",
+        "8:20"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S29"
+    },
+    {
+      "id": "wb_L4_s30_q01",
+      "stem": "What is the angle between the minute hand and hour hand at 6:00?",
+      "interaction_mode": "mcq",
+      "topic": "Clock and Calendar",
+      "difficulty_tier": "warmup",
+      "question_number": 1,
+      "choices": [
+        "180\u00b0",
+        "90\u00b0",
+        "120\u00b0",
+        "150\u00b0"
+      ],
+      "correct_answer": 0,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S30"
+    },
+    {
+      "id": "wb_L4_s30_q02",
+      "stem": "How many times do the hands of a clock form a right angle in 12 hours?",
+      "interaction_mode": "mcq",
+      "topic": "Clock and Calendar",
+      "difficulty_tier": "warmup",
+      "question_number": 2,
+      "choices": [
+        "12",
+        "20",
+        "22",
+        "24"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S30"
+    },
+    {
+      "id": "wb_L4_s30_q03",
+      "stem": "If January 1 of a year is Monday, what day is March 1 of the same (non-leap) year?",
+      "interaction_mode": "mcq",
+      "topic": "Clock and Calendar",
+      "difficulty_tier": "warmup",
+      "question_number": 3,
+      "choices": [
+        "Thursday",
+        "Wednesday",
+        "Friday",
+        "Saturday"
+      ],
+      "correct_answer": 0,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S30"
+    },
+    {
+      "id": "wb_L4_s30_q04",
+      "stem": "The minute hand of a clock moves through how many degrees in 15 minutes?",
+      "interaction_mode": "mcq",
+      "topic": "Clock and Calendar",
+      "difficulty_tier": "warmup",
+      "question_number": 4,
+      "choices": [
+        "90\u00b0",
+        "60\u00b0",
+        "45\u00b0",
+        "30\u00b0"
+      ],
+      "correct_answer": 0,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S30"
+    },
+    {
+      "id": "wb_L4_s30_q05",
+      "stem": "How many odd days are there in a leap year?",
+      "interaction_mode": "mcq",
+      "topic": "Clock and Calendar",
+      "difficulty_tier": "warmup",
+      "question_number": 5,
+      "choices": [
+        "0",
+        "1",
+        "3",
+        "2"
+      ],
+      "correct_answer": 3,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S30"
+    },
+    {
+      "id": "wb_L4_s30_q06",
+      "stem": "If today is Wednesday, what day of the week will it be after 100 days?",
+      "interaction_mode": "mcq",
+      "topic": "Clock and Calendar",
+      "difficulty_tier": "practice",
+      "question_number": 6,
+      "choices": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Friday"
+      ],
+      "correct_answer": 3,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S30"
+    },
+    {
+      "id": "wb_L4_s30_q07",
+      "stem": "At what time between 2 and 3 o'clock are the hands of a clock together?",
+      "interaction_mode": "mcq",
+      "topic": "Clock and Calendar",
+      "difficulty_tier": "practice",
+      "question_number": 7,
+      "choices": [
+        "2:05",
+        "2:08",
+        "2:12",
+        "2:10 10/11"
+      ],
+      "correct_answer": 3,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S30"
+    },
+    {
+      "id": "wb_L4_s30_q08",
+      "stem": "The angle traced by the hour hand in 2 hours is:",
+      "interaction_mode": "mcq",
+      "topic": "Clock and Calendar",
+      "difficulty_tier": "practice",
+      "question_number": 8,
+      "choices": [
+        "30\u00b0",
+        "60\u00b0",
+        "90\u00b0",
+        "120\u00b0"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S30"
+    },
+    {
+      "id": "wb_L4_s30_q09",
+      "stem": "How many days are there from 15th March to 20th June (same year, not a leap year)?",
+      "interaction_mode": "mcq",
+      "topic": "Clock and Calendar",
+      "difficulty_tier": "practice",
+      "question_number": 9,
+      "choices": [
+        "96",
+        "97",
+        "98",
+        "100"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S30"
+    },
+    {
+      "id": "wb_L4_s30_q10",
+      "stem": "The hour hand moves through how many degrees in 1 hour?",
+      "interaction_mode": "mcq",
+      "topic": "Clock and Calendar",
+      "difficulty_tier": "practice",
+      "question_number": 10,
+      "choices": [
+        "15\u00b0",
+        "20\u00b0",
+        "25\u00b0",
+        "30\u00b0"
+      ],
+      "correct_answer": 3,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S30"
+    },
+    {
+      "id": "wb_L4_s30_q11",
+      "stem": "What is the angle between the hands of a clock at 9:30?",
+      "interaction_mode": "mcq",
+      "topic": "Clock and Calendar",
+      "difficulty_tier": "challenge",
+      "question_number": 11,
+      "choices": [
+        "90\u00b0",
+        "105\u00b0",
+        "120\u00b0",
+        "135\u00b0"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S30"
+    },
+    {
+      "id": "wb_L4_s30_q12",
+      "stem": "A century year is a leap year only if it is divisible by:",
+      "interaction_mode": "mcq",
+      "topic": "Clock and Calendar",
+      "difficulty_tier": "challenge",
+      "question_number": 12,
+      "choices": [
+        "4",
+        "100",
+        "400",
+        "1000"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S30"
+    },
+    {
+      "id": "wb_L4_s30_q13",
+      "stem": "If July 4 is a Tuesday, what day is August 4 of the same year?",
+      "interaction_mode": "mcq",
+      "topic": "Clock and Calendar",
+      "difficulty_tier": "challenge",
+      "question_number": 13,
+      "choices": [
+        "Tuesday",
+        "Wednesday",
+        "Friday",
+        "Thursday"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S30"
+    },
+    {
+      "id": "wb_L4_s30_q14",
+      "stem": "The minute hand and hour hand overlap how many times in a day (24 hours)?",
+      "interaction_mode": "mcq",
+      "topic": "Clock and Calendar",
+      "difficulty_tier": "challenge",
+      "question_number": 14,
+      "choices": [
+        "24",
+        "12",
+        "22",
+        "20"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S30"
+    },
+    {
+      "id": "wb_L4_s30_q15",
+      "stem": "What is the angle between the hands at 4:30?",
+      "interaction_mode": "mcq",
+      "topic": "Clock and Calendar",
+      "difficulty_tier": "challenge",
+      "question_number": 15,
+      "choices": [
+        "30\u00b0",
+        "35\u00b0",
+        "40\u00b0",
+        "45\u00b0"
+      ],
+      "correct_answer": 3,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S30"
+    },
+    {
+      "id": "wb_L4_s31_q01",
+      "stem": "A cube has how many faces?",
+      "interaction_mode": "mcq",
+      "topic": "Cubes and Dice",
+      "difficulty_tier": "warmup",
+      "question_number": 1,
+      "choices": [
+        "4",
+        "8",
+        "12",
+        "6"
+      ],
+      "correct_answer": 3,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S31"
+    },
+    {
+      "id": "wb_L4_s31_q02",
+      "stem": "The number of edges in a cube is:",
+      "interaction_mode": "mcq",
+      "topic": "Cubes and Dice",
+      "difficulty_tier": "warmup",
+      "question_number": 2,
+      "choices": [
+        "12",
+        "8",
+        "6",
+        "10"
+      ],
+      "correct_answer": 0,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S31"
+    },
+    {
+      "id": "wb_L4_s31_q03",
+      "stem": "On a standard die, the sum of opposite faces is always:",
+      "interaction_mode": "mcq",
+      "topic": "Cubes and Dice",
+      "difficulty_tier": "warmup",
+      "question_number": 3,
+      "choices": [
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S31"
+    },
+    {
+      "id": "wb_L4_s31_q04",
+      "stem": "How many vertices does a cube have?",
+      "interaction_mode": "mcq",
+      "topic": "Cubes and Dice",
+      "difficulty_tier": "warmup",
+      "question_number": 4,
+      "choices": [
+        "8",
+        "6",
+        "12",
+        "4"
+      ],
+      "correct_answer": 0,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S31"
+    },
+    {
+      "id": "wb_L4_s31_q05",
+      "stem": "If a cube is painted on all faces and then cut into 27 smaller cubes, how many small cubes have exactly 3 painted faces?",
+      "interaction_mode": "mcq",
+      "topic": "Cubes and Dice",
+      "difficulty_tier": "warmup",
+      "question_number": 5,
+      "choices": [
+        "6",
+        "12",
+        "1",
+        "8"
+      ],
+      "correct_answer": 3,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S31",
+      "svg": "svg/wb_L4_s31_q05.svg"
+    },
+    {
+      "id": "wb_L4_s31_q06",
+      "stem": "In the above scenario, how many small cubes have exactly 2 painted faces?",
+      "interaction_mode": "mcq",
+      "topic": "Cubes and Dice",
+      "difficulty_tier": "practice",
+      "question_number": 6,
+      "choices": [
+        "6",
+        "12",
+        "8",
+        "1"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S31",
+      "svg": "svg/wb_L4_s31_q06.svg"
+    },
+    {
+      "id": "wb_L4_s31_q07",
+      "stem": "In the above scenario, how many small cubes have no painted face?",
+      "interaction_mode": "mcq",
+      "topic": "Cubes and Dice",
+      "difficulty_tier": "practice",
+      "question_number": 7,
+      "choices": [
+        "0",
+        "6",
+        "8",
+        "1"
+      ],
+      "correct_answer": 3,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S31",
+      "svg": "svg/wb_L4_s31_q07.svg"
+    },
+    {
+      "id": "wb_L4_s31_q08",
+      "stem": "On a die, if 1 is on top and 2 faces you, what number is at the bottom?",
+      "interaction_mode": "mcq",
+      "topic": "Cubes and Dice",
+      "difficulty_tier": "practice",
+      "question_number": 8,
+      "choices": [
+        "3",
+        "4",
+        "6",
+        "5"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S31",
+      "svg": "svg/wb_L4_s31_q08.svg"
+    },
+    {
+      "id": "wb_L4_s31_q09",
+      "stem": "Two dice are thrown. What is the maximum possible sum of the top faces?",
+      "interaction_mode": "mcq",
+      "topic": "Cubes and Dice",
+      "difficulty_tier": "practice",
+      "question_number": 9,
+      "choices": [
+        "6",
+        "10",
+        "12",
+        "7"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S31"
+    },
+    {
+      "id": "wb_L4_s31_q10",
+      "stem": "A cube is painted red on all faces, then cut into 64 smaller cubes. How many small cubes have exactly one face painted?",
+      "interaction_mode": "mcq",
+      "topic": "Cubes and Dice",
+      "difficulty_tier": "practice",
+      "question_number": 10,
+      "choices": [
+        "8",
+        "12",
+        "16",
+        "24"
+      ],
+      "correct_answer": 3,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S31",
+      "svg": "svg/wb_L4_s31_q10.svg"
+    },
+    {
+      "id": "wb_L4_s31_q11",
+      "stem": "In the above (64 cubes), how many small cubes have no face painted?",
+      "interaction_mode": "mcq",
+      "topic": "Cubes and Dice",
+      "difficulty_tier": "challenge",
+      "question_number": 11,
+      "choices": [
+        "4",
+        "6",
+        "8",
+        "16"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S31",
+      "svg": "svg/wb_L4_s31_q11.svg"
+    },
+    {
+      "id": "wb_L4_s31_q12",
+      "stem": "Which of the following is a net of a cube?",
+      "interaction_mode": "mcq",
+      "topic": "Cubes and Dice",
+      "difficulty_tier": "challenge",
+      "question_number": 12,
+      "choices": [
+        "A cross shape of 6 squares",
+        "5 squares in a row",
+        "A T-shape of 6 squares",
+        "Both (a) and (c)"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S31",
+      "svg": "svg/wb_L4_s31_q12.svg"
+    },
+    {
+      "id": "wb_L4_s31_q13",
+      "stem": "If the faces of a die are numbered 1-6, and 5 is on top, which number is on the bottom?",
+      "interaction_mode": "mcq",
+      "topic": "Cubes and Dice",
+      "difficulty_tier": "challenge",
+      "question_number": 13,
+      "choices": [
+        "1",
+        "6",
+        "3",
+        "2"
+      ],
+      "correct_answer": 3,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S31"
+    },
+    {
+      "id": "wb_L4_s31_q14",
+      "stem": "A 3\u00d73\u00d73 cube is painted and cut into unit cubes. How many unit cubes have exactly one face painted?",
+      "interaction_mode": "mcq",
+      "topic": "Cubes and Dice",
+      "difficulty_tier": "challenge",
+      "question_number": 14,
+      "choices": [
+        "8",
+        "12",
+        "1",
+        "6"
+      ],
+      "correct_answer": 3,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S31",
+      "svg": "svg/wb_L4_s31_q14.svg"
+    },
+    {
+      "id": "wb_L4_s31_q15",
+      "stem": "A die is rolled. What is the probability of getting a number greater than 4?",
+      "interaction_mode": "mcq",
+      "topic": "Cubes and Dice",
+      "difficulty_tier": "challenge",
+      "question_number": 15,
+      "choices": [
+        "1/6",
+        "1/3",
+        "1/2",
+        "2/3"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S31"
+    },
+    {
+      "id": "wb_L4_s32_q01",
+      "stem": "A man walks 5 km North, then turns right and walks 3 km. In which direction is he from his starting point?",
+      "interaction_mode": "mcq",
+      "topic": "Direction Sense",
+      "difficulty_tier": "warmup",
+      "question_number": 1,
+      "choices": [
+        "North-West",
+        "South-East",
+        "North-East",
+        "North-East"
+      ],
+      "correct_answer": 3,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S32"
+    },
+    {
+      "id": "wb_L4_s32_q02",
+      "stem": "If you face East and turn 270\u00b0 clockwise, which direction do you face?",
+      "interaction_mode": "mcq",
+      "topic": "Direction Sense",
+      "difficulty_tier": "warmup",
+      "question_number": 2,
+      "choices": [
+        "South",
+        "West",
+        "East",
+        "North"
+      ],
+      "correct_answer": 3,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S32"
+    },
+    {
+      "id": "wb_L4_s32_q03",
+      "stem": "Ravi walks 10m South, turns left and walks 5m. He then turns left again and walks 10m. In which direction is he from the start?",
+      "interaction_mode": "mcq",
+      "topic": "Direction Sense",
+      "difficulty_tier": "warmup",
+      "question_number": 3,
+      "choices": [
+        "East",
+        "North",
+        "South",
+        "West"
+      ],
+      "correct_answer": 0,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S32"
+    },
+    {
+      "id": "wb_L4_s32_q04",
+      "stem": "If South-East becomes North, what does North-West become?",
+      "interaction_mode": "mcq",
+      "topic": "Direction Sense",
+      "difficulty_tier": "warmup",
+      "question_number": 4,
+      "choices": [
+        "East",
+        "West",
+        "South",
+        "North"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S32"
+    },
+    {
+      "id": "wb_L4_s32_q05",
+      "stem": "A boy walks 4 km West, turns left, walks 3 km. How far is he from the starting point?",
+      "interaction_mode": "mcq",
+      "topic": "Direction Sense",
+      "difficulty_tier": "warmup",
+      "question_number": 5,
+      "choices": [
+        "7 km",
+        "1 km",
+        "5 km",
+        "4 km"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S32"
+    },
+    {
+      "id": "wb_L4_s32_q06",
+      "stem": "Facing North, Manu turns 90\u00b0 clockwise, then 180\u00b0 anticlockwise. Which direction is he facing?",
+      "interaction_mode": "mcq",
+      "topic": "Direction Sense",
+      "difficulty_tier": "practice",
+      "question_number": 6,
+      "choices": [
+        "North",
+        "South",
+        "West",
+        "East"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S32"
+    },
+    {
+      "id": "wb_L4_s32_q07",
+      "stem": "The direction exactly opposite to North-East is:",
+      "interaction_mode": "mcq",
+      "topic": "Direction Sense",
+      "difficulty_tier": "practice",
+      "question_number": 7,
+      "choices": [
+        "South-West",
+        "North-West",
+        "South-East",
+        "East"
+      ],
+      "correct_answer": 0,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S32"
+    },
+    {
+      "id": "wb_L4_s32_q08",
+      "stem": "If it is 4 PM and the sun is in the West, where is your shadow?",
+      "interaction_mode": "mcq",
+      "topic": "Direction Sense",
+      "difficulty_tier": "practice",
+      "question_number": 8,
+      "choices": [
+        "West",
+        "East",
+        "North",
+        "No shadow"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S32"
+    },
+    {
+      "id": "wb_L4_s32_q09",
+      "stem": "A man facing West turns 45\u00b0 anticlockwise. Which direction is he facing now?",
+      "interaction_mode": "mcq",
+      "topic": "Direction Sense",
+      "difficulty_tier": "practice",
+      "question_number": 9,
+      "choices": [
+        "South-West",
+        "North-East",
+        "North-West",
+        "South-East"
+      ],
+      "correct_answer": 0,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S32"
+    },
+    {
+      "id": "wb_L4_s32_q10",
+      "stem": "Priya walks 6 km North, 4 km East, 6 km South. How far is she from the start?",
+      "interaction_mode": "mcq",
+      "topic": "Direction Sense",
+      "difficulty_tier": "practice",
+      "question_number": 10,
+      "choices": [
+        "6 km",
+        "2 km",
+        "10 km",
+        "4 km"
+      ],
+      "correct_answer": 3,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S32"
+    },
+    {
+      "id": "wb_L4_s32_q11",
+      "stem": "If you face South and turn 135\u00b0 clockwise, which direction do you face?",
+      "interaction_mode": "mcq",
+      "topic": "Direction Sense",
+      "difficulty_tier": "challenge",
+      "question_number": 11,
+      "choices": [
+        "North-East",
+        "North-West",
+        "West",
+        "South-West"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S32"
+    },
+    {
+      "id": "wb_L4_s32_q12",
+      "stem": "The sun rises in the East. If you face the sunrise, your left hand points towards:",
+      "interaction_mode": "mcq",
+      "topic": "Direction Sense",
+      "difficulty_tier": "challenge",
+      "question_number": 12,
+      "choices": [
+        "South",
+        "West",
+        "East",
+        "North"
+      ],
+      "correct_answer": 3,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S32"
+    },
+    {
+      "id": "wb_L4_s32_q13",
+      "stem": "A person walks 3 km East, 4 km North, 3 km West. How far and in which direction is he from start?",
+      "interaction_mode": "mcq",
+      "topic": "Direction Sense",
+      "difficulty_tier": "challenge",
+      "question_number": 13,
+      "choices": [
+        "4 km East",
+        "3 km West",
+        "4 km North",
+        "5 km North-East"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S32"
+    },
+    {
+      "id": "wb_L4_s32_q14",
+      "stem": "If Monday's sunrise direction is considered 'A' and sunset direction is 'B', what is the angle between A and B?",
+      "interaction_mode": "mcq",
+      "topic": "Direction Sense",
+      "difficulty_tier": "challenge",
+      "question_number": 14,
+      "choices": [
+        "90\u00b0",
+        "270\u00b0",
+        "180\u00b0",
+        "360\u00b0"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S32"
+    },
+    {
+      "id": "wb_L4_s32_q15",
+      "stem": "Facing North, you turn right, then take two consecutive left turns. Which direction are you facing?",
+      "interaction_mode": "mcq",
+      "topic": "Direction Sense",
+      "difficulty_tier": "challenge",
+      "question_number": 15,
+      "choices": [
+        "North",
+        "South",
+        "East",
+        "West"
+      ],
+      "correct_answer": 3,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S32"
+    },
+    {
+      "id": "wb_L4_s37_q05",
+      "stem": "The area of a triangle with base 12 cm and height 8 cm is:",
+      "interaction_mode": "mcq",
+      "topic": "Area of Plane Figures",
+      "difficulty_tier": "warmup",
+      "question_number": 5,
+      "choices": [
+        "96 cm\u00b2",
+        "48 cm\u00b2",
+        "24 cm\u00b2",
+        "48 cm\u00b2"
+      ],
+      "correct_answer": 3,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S37"
+    },
+    {
+      "id": "wb_L4_s37_q06",
+      "stem": "The area of a rectangle with length 15 cm and breadth 8 cm is:",
+      "interaction_mode": "mcq",
+      "topic": "Area of Plane Figures",
+      "difficulty_tier": "practice",
+      "question_number": 6,
+      "choices": [
+        "46 cm\u00b2",
+        "120 cm\u00b2",
+        "23 cm\u00b2",
+        "60 cm\u00b2"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S37"
+    },
+    {
+      "id": "wb_L4_s37_q07",
+      "stem": "The area of a parallelogram with base 10 cm and height 6 cm is:",
+      "interaction_mode": "mcq",
+      "topic": "Area of Plane Figures",
+      "difficulty_tier": "practice",
+      "question_number": 7,
+      "choices": [
+        "16 cm\u00b2",
+        "30 cm\u00b2",
+        "60 cm\u00b2",
+        "80 cm\u00b2"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S37"
+    },
+    {
+      "id": "wb_L4_s37_q08",
+      "stem": "The area of a square with side 9 cm is:",
+      "interaction_mode": "mcq",
+      "topic": "Area of Plane Figures",
+      "difficulty_tier": "practice",
+      "question_number": 8,
+      "choices": [
+        "18 cm\u00b2",
+        "36 cm\u00b2",
+        "81 cm\u00b2",
+        "72 cm\u00b2"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S37"
+    },
+    {
+      "id": "wb_L4_s37_q10",
+      "stem": "If the area of a rectangle is 72 cm\u00b2 and its length is 12 cm, what is the breadth?",
+      "interaction_mode": "mcq",
+      "topic": "Area of Plane Figures",
+      "difficulty_tier": "practice",
+      "question_number": 10,
+      "choices": [
+        "8 cm",
+        "6 cm",
+        "7 cm",
+        "9 cm"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S37"
+    },
+    {
+      "id": "wb_L4_s37_q12",
+      "stem": "The area of a rhombus with diagonals 10 cm and 8 cm is:",
+      "interaction_mode": "mcq",
+      "topic": "Area of Plane Figures",
+      "difficulty_tier": "challenge",
+      "question_number": 12,
+      "choices": [
+        "80 cm\u00b2",
+        "18 cm\u00b2",
+        "40 cm\u00b2",
+        "36 cm\u00b2"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S37"
+    },
+    {
+      "id": "wb_L4_s37_q14",
+      "stem": "The area of a trapezium with parallel sides 8 cm and 12 cm and height 5 cm is:",
+      "interaction_mode": "mcq",
+      "topic": "Area of Plane Figures",
+      "difficulty_tier": "challenge",
+      "question_number": 14,
+      "choices": [
+        "60 cm\u00b2",
+        "100 cm\u00b2",
+        "40 cm\u00b2",
+        "50 cm\u00b2"
+      ],
+      "correct_answer": 3,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S37"
+    },
+    {
+      "id": "wb_L4_s37_q15",
+      "stem": "The area of an equilateral triangle with side 6 cm is:",
+      "interaction_mode": "mcq",
+      "topic": "Area of Plane Figures",
+      "difficulty_tier": "challenge",
+      "question_number": 15,
+      "choices": [
+        "9\u221a3 cm\u00b2",
+        "18 cm\u00b2",
+        "12\u221a3 cm\u00b2",
+        "36 cm\u00b2"
+      ],
+      "correct_answer": 0,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S37"
+    },
+    {
+      "id": "wb_L4_s38_q06",
+      "stem": "The perimeter of a rectangle with length 12 cm and breadth 7 cm is:",
+      "interaction_mode": "mcq",
+      "topic": "Perimeter of Plane Figures",
+      "difficulty_tier": "practice",
+      "question_number": 6,
+      "choices": [
+        "19 cm",
+        "38 cm",
+        "84 cm",
+        "44 cm"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S38"
+    },
+    {
+      "id": "wb_L4_s38_q07",
+      "stem": "The perimeter of a square with side 15 cm is:",
+      "interaction_mode": "mcq",
+      "topic": "Perimeter of Plane Figures",
+      "difficulty_tier": "practice",
+      "question_number": 7,
+      "choices": [
+        "30 cm",
+        "45 cm",
+        "225 cm\u00b2",
+        "60 cm"
+      ],
+      "correct_answer": 3,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S38"
+    },
+    {
+      "id": "wb_L4_s38_q08",
+      "stem": "The perimeter of an equilateral triangle with side 10 cm is:",
+      "interaction_mode": "mcq",
+      "topic": "Perimeter of Plane Figures",
+      "difficulty_tier": "practice",
+      "question_number": 8,
+      "choices": [
+        "20 cm",
+        "40 cm",
+        "50 cm",
+        "25 cm",
+        "30 cm"
+      ],
+      "correct_answer": 4,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S38"
+    },
+    {
+      "id": "wb_L4_s38_q11",
+      "stem": "If the perimeter of a square is 48 cm, what is its side?",
+      "interaction_mode": "mcq",
+      "topic": "Perimeter of Plane Figures",
+      "difficulty_tier": "challenge",
+      "question_number": 11,
+      "choices": [
+        "24 cm",
+        "16 cm",
+        "12 cm",
+        "8 cm"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S38"
+    },
+    {
+      "id": "wb_L4_s38_q13",
+      "stem": "The circumference of a circle with radius 7 cm is (\u03c0 = 22/7):",
+      "interaction_mode": "mcq",
+      "topic": "Perimeter of Plane Figures",
+      "difficulty_tier": "challenge",
+      "question_number": 13,
+      "choices": [
+        "22 cm",
+        "154 cm",
+        "44 cm",
+        "88 cm"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S38"
+    },
+    {
+      "id": "wb_L4_s38_q14",
+      "stem": "The perimeter of a regular hexagon with side 5 cm is:",
+      "interaction_mode": "mcq",
+      "topic": "Perimeter of Plane Figures",
+      "difficulty_tier": "challenge",
+      "question_number": 14,
+      "choices": [
+        "25 cm",
+        "35 cm",
+        "20 cm",
+        "30 cm"
+      ],
+      "correct_answer": 3,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S38"
+    },
+    {
+      "id": "wb_L4_s38_q15",
+      "stem": "If the perimeter of a rectangle is 50 cm and its length is 15 cm, what is its breadth?",
+      "interaction_mode": "mcq",
+      "topic": "Perimeter of Plane Figures",
+      "difficulty_tier": "challenge",
+      "question_number": 15,
+      "choices": [
+        "20 cm",
+        "10 cm",
+        "35 cm",
+        "25 cm"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S38"
+    },
+    {
+      "id": "wb_L4_s40_q01",
+      "stem": "All roses are flowers. Some flowers are red. Which conclusion is definitely true?",
+      "interaction_mode": "mcq",
+      "topic": "Logical Reasoning",
+      "difficulty_tier": "warmup",
+      "question_number": 1,
+      "choices": [
+        "All roses are red",
+        "Some roses are flowers",
+        "No roses are red",
+        "Some red things are roses"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S40"
+    },
+    {
+      "id": "wb_L4_s40_q02",
+      "stem": "If all cats are animals and all animals have legs, then:",
+      "interaction_mode": "mcq",
+      "topic": "Logical Reasoning",
+      "difficulty_tier": "warmup",
+      "question_number": 2,
+      "choices": [
+        "All legs belong to cats",
+        "Some cats don't have legs",
+        "All animals are cats",
+        "All cats have legs"
+      ],
+      "correct_answer": 3,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S40"
+    },
+    {
+      "id": "wb_L4_s40_q03",
+      "stem": "Statement: All students in this class passed. Conclusion I: There are no failures in this class. Conclusion II: Some students failed.",
+      "interaction_mode": "mcq",
+      "topic": "Logical Reasoning",
+      "difficulty_tier": "warmup",
+      "question_number": 3,
+      "choices": [
+        "Only I follows",
+        "Only II follows",
+        "Only I follows",
+        "Neither follows"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S40"
+    },
+    {
+      "id": "wb_L4_s40_q04",
+      "stem": "If A > B, B > C, then which is definitely true?",
+      "interaction_mode": "mcq",
+      "topic": "Logical Reasoning",
+      "difficulty_tier": "warmup",
+      "question_number": 4,
+      "choices": [
+        "A = C",
+        "A > C",
+        "C > A",
+        "A < C"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S40"
+    },
+    {
+      "id": "wb_L4_s40_q05",
+      "stem": "In a family of 5, A is father of B, C is mother of B, D is brother of A. What is D to B?",
+      "interaction_mode": "mcq",
+      "topic": "Logical Reasoning",
+      "difficulty_tier": "warmup",
+      "question_number": 5,
+      "choices": [
+        "Uncle",
+        "Father",
+        "Grandfather",
+        "Brother"
+      ],
+      "correct_answer": 0,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S40"
+    },
+    {
+      "id": "wb_L4_s40_q06",
+      "stem": "If ABCD : ZYXW, then EFGH : ?",
+      "interaction_mode": "mcq",
+      "topic": "Logical Reasoning",
+      "difficulty_tier": "practice",
+      "question_number": 6,
+      "choices": [
+        "VUTR",
+        "VUTS",
+        "FEDC",
+        "STVU"
+      ],
+      "correct_answer": 0,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S40"
+    },
+    {
+      "id": "wb_L4_s40_q07",
+      "stem": "Find the next in the series: 2, 6, 12, 20, 30, ?",
+      "interaction_mode": "mcq",
+      "topic": "Logical Reasoning",
+      "difficulty_tier": "practice",
+      "question_number": 7,
+      "choices": [
+        "40",
+        "36",
+        "38",
+        "42"
+      ],
+      "correct_answer": 3,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S40"
+    },
+    {
+      "id": "wb_L4_s40_q08",
+      "stem": "If 'P + Q' means P is the father of Q, and 'P - Q' means P is the mother of Q, what does 'A + B - C' mean?",
+      "interaction_mode": "mcq",
+      "topic": "Logical Reasoning",
+      "difficulty_tier": "practice",
+      "question_number": 8,
+      "choices": [
+        "A is the grandfather of C",
+        "A is the father of C",
+        "C is the daughter of A",
+        "A is the mother of C"
+      ],
+      "correct_answer": 0,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S40"
+    },
+    {
+      "id": "wb_L4_s40_q09",
+      "stem": "Statements: Some apples are oranges. All oranges are fruits. Conclusion: Some apples are fruits.",
+      "interaction_mode": "mcq",
+      "topic": "Logical Reasoning",
+      "difficulty_tier": "practice",
+      "question_number": 9,
+      "choices": [
+        "True",
+        "False",
+        "Follows from the statements",
+        "Cannot be determined"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S40"
+    },
+    {
+      "id": "wb_L4_s40_q10",
+      "stem": "If the day before yesterday was Thursday, what day will it be the day after tomorrow?",
+      "interaction_mode": "mcq",
+      "topic": "Logical Reasoning",
+      "difficulty_tier": "practice",
+      "question_number": 10,
+      "choices": [
+        "Sunday",
+        "Saturday",
+        "Monday",
+        "Tuesday"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S40"
+    },
+    {
+      "id": "wb_L4_s40_q11",
+      "stem": "Pointing to a photo, Ram says 'She is the daughter of my grandfather's only son.' How is the person in the photo related to Ram?",
+      "interaction_mode": "mcq",
+      "topic": "Logical Reasoning",
+      "difficulty_tier": "challenge",
+      "question_number": 11,
+      "choices": [
+        "Sister",
+        "Mother",
+        "Daughter",
+        "Aunt"
+      ],
+      "correct_answer": 0,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S40"
+    },
+    {
+      "id": "wb_L4_s40_q12",
+      "stem": "Find the wrong number in the series: 1, 2, 4, 8, 16, 32, 48",
+      "interaction_mode": "mcq",
+      "topic": "Logical Reasoning",
+      "difficulty_tier": "challenge",
+      "question_number": 12,
+      "choices": [
+        "16",
+        "48",
+        "32",
+        "8"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S40"
+    },
+    {
+      "id": "wb_L4_s40_q13",
+      "stem": "If in a certain language, 'RAMAN' is coded as 'NAMAN', what is the code for 'KARMA'?",
+      "interaction_mode": "mcq",
+      "topic": "Logical Reasoning",
+      "difficulty_tier": "challenge",
+      "question_number": 13,
+      "choices": [
+        "KAMRA",
+        "KARMA",
+        "MAKRA",
+        "AMRAK"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S40"
+    },
+    {
+      "id": "wb_L4_s40_q14",
+      "stem": "All books have pages. Some pages have pictures. Which statement is true?",
+      "interaction_mode": "mcq",
+      "topic": "Logical Reasoning",
+      "difficulty_tier": "challenge",
+      "question_number": 14,
+      "choices": [
+        "All books have pictures",
+        "Some books may have pictures",
+        "No book has pictures",
+        "All pages have pictures"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S40"
+    },
+    {
+      "id": "wb_L4_s40_q15",
+      "stem": "Five people A, B, C, D, E sit in a row. A is to the right of B and left of C. D is at the extreme left. E is between D and B. What is the seating order from left to right?",
+      "interaction_mode": "mcq",
+      "topic": "Logical Reasoning",
+      "difficulty_tier": "challenge",
+      "question_number": 15,
+      "choices": [
+        "D, B, E, A, C",
+        "D, E, A, B, C",
+        "E, D, B, A, C",
+        "D, E, B, A, C"
+      ],
+      "correct_answer": 3,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S40"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Backyard -->
+  <rect x="50" y="40" width="300" height="220" fill="#f0f8e0" stroke="black" stroke-width="2"/>
+  <text x="200" y="30" text-anchor="middle" font-family="Arial" font-size="14" fill="black">Backyard</text>
+  <!-- Dimensions of backyard -->
+  <text x="200" y="275" text-anchor="middle" font-family="Arial" font-size="13" fill="blue">11 m</text>
+  <text x="37" y="155" text-anchor="middle" font-family="Arial" font-size="13" fill="blue" transform="rotate(-90 37 155)">6 m</text>
+  <!-- Basketball court -->
+  <rect x="100" y="75" width="200" height="150" fill="#ffe0b2" stroke="black" stroke-width="1.5"/>
+  <text x="200" y="155" text-anchor="middle" font-family="Arial" font-size="13" fill="black">Basketball Court</text>
+  <!-- Court dimensions -->
+  <text x="200" y="240" text-anchor="middle" font-family="Arial" font-size="13" fill="blue">7 m</text>
+  <text x="315" y="155" text-anchor="middle" font-family="Arial" font-size="13" fill="blue" transform="rotate(90 315 155)">5 m</text>
+  <!-- Dimension arrows for court -->
+  <line x1="100" y1="235" x2="300" y2="235" stroke="blue" stroke-width="1"/>
+  <line x1="100" y1="232" x2="100" y2="238" stroke="blue" stroke-width="1"/>
+  <line x1="300" y1="232" x2="300" y2="238" stroke="blue" stroke-width="1"/>
+</svg>

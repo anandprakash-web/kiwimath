@@ -1,0 +1,15 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Right triangle -->
+  <polygon points="30,250 30,110 150,250" fill="none" stroke="black" stroke-width="2"/>
+  <!-- Right angle marker -->
+  <rect x="30" y="230" width="20" height="20" fill="none" stroke="black" stroke-width="1"/>
+  <!-- Labels -->
+  <text x="18" y="185" text-anchor="middle" font-family="Arial" font-size="13" fill="blue" transform="rotate(-90 18 185)">5 units</text>
+  <text x="90" y="268" text-anchor="middle" font-family="Arial" font-size="13" fill="blue">12 units</text>
+  <text x="105" y="170" text-anchor="middle" font-family="Arial" font-size="13" fill="blue" transform="rotate(-45 105 170)">13 units</text>
+  <!-- Rectangle beside -->
+  <rect x="220" y="140" width="150" height="80" fill="none" stroke="black" stroke-width="2"/>
+  <text x="295" y="135" text-anchor="middle" font-family="Arial" font-size="13" fill="blue">width = 10 units</text>
+  <!-- Arrow pointing to width -->
+  <line x1="245" y1="140" x2="245" y2="220" stroke="blue" stroke-width="1" stroke-dasharray="3,3"/>
+</svg>

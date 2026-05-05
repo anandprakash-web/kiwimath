@@ -90,11 +90,12 @@ class UserProfile {
     String? learnerPersona,
     int? topicsMastered,
     String? curriculum,
+    String? avatar,
   }) {
     return UserProfile(
       userId: userId,
       displayName: displayName,
-      avatar: avatar,
+      avatar: avatar ?? this.avatar,
       streakCurrent: streakCurrent ?? this.streakCurrent,
       streakLongest: streakLongest,
       xpTotal: xpTotal ?? this.xpTotal,

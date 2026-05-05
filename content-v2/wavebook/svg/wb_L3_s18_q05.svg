@@ -1,0 +1,36 @@
+<svg viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- (a) 6x3 rectangle -->
+  <rect x="20" y="40" width="90" height="45" fill="none" stroke="black" stroke-width="2"/>
+  <text x="65" y="30" text-anchor="middle" font-family="Arial" font-size="12" fill="blue">6</text>
+  <text x="10" y="67" text-anchor="middle" font-family="Arial" font-size="12" fill="blue">3</text>
+  <text x="65" y="105" text-anchor="middle" font-family="Arial" font-size="14" fill="black">(a)</text>
+
+  <!-- (b) 9x2 rectangle -->
+  <rect x="140" y="47" width="135" height="30" fill="none" stroke="black" stroke-width="2"/>
+  <text x="207" y="37" text-anchor="middle" font-family="Arial" font-size="12" fill="blue">9</text>
+  <text x="130" y="67" text-anchor="middle" font-family="Arial" font-size="12" fill="blue">2</text>
+  <text x="207" y="105" text-anchor="middle" font-family="Arial" font-size="14" fill="black">(b)</text>
+
+  <!-- (c) 8x2 rectangle -->
+  <rect x="20" y="150" width="120" height="30" fill="none" stroke="black" stroke-width="2"/>
+  <text x="80" y="140" text-anchor="middle" font-family="Arial" font-size="12" fill="blue">8</text>
+  <text x="10" y="170" text-anchor="middle" font-family="Arial" font-size="12" fill="blue">2</text>
+  <text x="80" y="205" text-anchor="middle" font-family="Arial" font-size="14" fill="black">(c)</text>
+
+  <!-- (d) 5x4 rectangle -->
+  <rect x="180" y="140" width="75" height="60" fill="none" stroke="black" stroke-width="2"/>
+  <text x="217" y="130" text-anchor="middle" font-family="Arial" font-size="12" fill="blue">5</text>
+  <text x="168" y="175" text-anchor="middle" font-family="Arial" font-size="12" fill="blue">4</text>
+  <text x="217" y="225" text-anchor="middle" font-family="Arial" font-size="14" fill="black">(d)</text>
+
+  <!-- Grid lines for each -->
+  <!-- (a) grid 6x3 -->
+  <g stroke="#ddd" stroke-width="0.5">
+    <line x1="35" y1="40" x2="35" y2="85"/><line x1="50" y1="40" x2="50" y2="85"/>
+    <line x1="65" y1="40" x2="65" y2="85"/><line x1="80" y1="40" x2="80" y2="85"/>
+    <line x1="95" y1="40" x2="95" y2="85"/>
+    <line x1="20" y1="55" x2="110" y2="55"/><line x1="20" y1="70" x2="110" y2="70"/>
+  </g>
+
+  <text x="250" y="280" text-anchor="middle" font-family="Arial" font-size="13" fill="black">Each small square = 1 unit²</text>
+</svg>

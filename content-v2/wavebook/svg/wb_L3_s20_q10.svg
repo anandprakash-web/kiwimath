@@ -1,0 +1,20 @@
+<svg viewBox="0 0 500 220" xmlns="http://www.w3.org/2000/svg">
+  <!-- (a) Arrow shape -->
+  <polygon points="30,100 70,60 70,80 120,80 120,120 70,120 70,140" fill="none" stroke="black" stroke-width="2"/>
+  <text x="75" y="170" text-anchor="middle" font-family="Arial" font-size="13" fill="black">(a) Arrow</text>
+
+  <!-- (b) Regular hexagon -->
+  <polygon points="200,65 235,80 235,120 200,135 165,120 165,80" fill="none" stroke="black" stroke-width="2"/>
+  <text x="200" y="170" text-anchor="middle" font-family="Arial" font-size="13" fill="black">(b) Hexagon</text>
+
+  <!-- (c) Letter L -->
+  <polygon points="290,60 320,60 320,120 350,120 350,145 290,145" fill="none" stroke="black" stroke-width="2"/>
+  <text x="320" y="170" text-anchor="middle" font-family="Arial" font-size="13" fill="black">(c) Letter L</text>
+
+  <!-- (d) Right triangle -->
+  <polygon points="400,60 400,145 470,145" fill="none" stroke="black" stroke-width="2"/>
+  <rect x="400" y="131" width="14" height="14" fill="none" stroke="black" stroke-width="1"/>
+  <text x="435" y="170" text-anchor="middle" font-family="Arial" font-size="13" fill="black">(d) Right Triangle</text>
+
+  <text x="250" y="200" text-anchor="middle" font-family="Arial" font-size="14" fill="black">Which shape has more than 1 line of symmetry?</text>
+</svg>

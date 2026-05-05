@@ -1,0 +1,1216 @@
+{
+  "level": 4,
+  "batch": 1,
+  "grade_band": "5-6",
+  "total_questions": 71,
+  "questions": [
+    {
+      "id": "wb_L4_s01_q01",
+      "stem": "Which of the following numbers in Roman numerals is incorrect?",
+      "interaction_mode": "mcq",
+      "topic": "Knowing your numbers",
+      "difficulty_tier": "warmup",
+      "question_number": 1,
+      "choices": [
+        "LXXX",
+        "LXX",
+        "LX",
+        "LLX"
+      ],
+      "correct_answer": 3,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S1"
+    },
+    {
+      "id": "wb_L4_s01_q02",
+      "stem": "The numbers (11, 13) are ___ numbers",
+      "interaction_mode": "mcq",
+      "topic": "Knowing your numbers",
+      "difficulty_tier": "warmup",
+      "question_number": 2,
+      "choices": [
+        "Co-prime",
+        "Prime",
+        "Both prime and co-prime",
+        "None of these"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S1"
+    },
+    {
+      "id": "wb_L4_s01_q03",
+      "stem": "Every natural number is the successor of",
+      "interaction_mode": "mcq",
+      "topic": "Knowing your numbers",
+      "difficulty_tier": "warmup",
+      "question_number": 3,
+      "choices": [
+        "Whole number",
+        "Natural number",
+        "Integer",
+        "None of these"
+      ],
+      "correct_answer": 0,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S1"
+    },
+    {
+      "id": "wb_L4_s01_q04",
+      "stem": "The only even prime number is",
+      "interaction_mode": "mcq",
+      "topic": "Knowing your numbers",
+      "difficulty_tier": "warmup",
+      "question_number": 4,
+      "choices": [
+        "0",
+        "2",
+        "4",
+        "6"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S1"
+    },
+    {
+      "id": "wb_L4_s01_q05",
+      "stem": "Zero is ___ every negative integer",
+      "interaction_mode": "mcq",
+      "topic": "Knowing your numbers",
+      "difficulty_tier": "warmup",
+      "question_number": 5,
+      "choices": [
+        "smaller than",
+        "equal to",
+        "greater than",
+        "None of these"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S1"
+    },
+    {
+      "id": "wb_L4_s01_q06",
+      "stem": "Which statement is NOT true?",
+      "interaction_mode": "mcq",
+      "topic": "Knowing your numbers",
+      "difficulty_tier": "practice",
+      "question_number": 6,
+      "choices": [
+        "Every whole number has a successor",
+        "Every whole number has a predecessor",
+        "0 is the least whole number",
+        "Every natural number is a whole number"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S1"
+    },
+    {
+      "id": "wb_L4_s01_q09",
+      "stem": "15 hundred multiplied by fifteen tenths multiplied by three fifteenths divided by forty five thousandths is equal to the successor of",
+      "interaction_mode": "mcq",
+      "topic": "Knowing your numbers",
+      "difficulty_tier": "practice",
+      "question_number": 9,
+      "choices": [
+        "999",
+        "9999",
+        "99999",
+        "14999"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S1"
+    },
+    {
+      "id": "wb_L4_s01_q10",
+      "stem": "The Indo Arabic numeral for CMLXXXII is",
+      "interaction_mode": "mcq",
+      "topic": "Knowing your numbers",
+      "difficulty_tier": "practice",
+      "question_number": 10,
+      "choices": [
+        "482",
+        "532",
+        "982",
+        "1532"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S1"
+    },
+    {
+      "id": "wb_L4_s01_q11",
+      "stem": "Identify the least Roman numeral from: MDCCCLXXXIX, MCMLXXXI, MCMXVIII, MDLXVII, MCDXCIX",
+      "interaction_mode": "mcq",
+      "topic": "Knowing your numbers",
+      "difficulty_tier": "challenge",
+      "question_number": 11,
+      "choices": [
+        "MDCCCLXXXIX",
+        "MCDXCIX",
+        "MDLXVII",
+        "MCMXVIII"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S1"
+    },
+    {
+      "id": "wb_L4_s01_q12",
+      "stem": "Raghu is 21 years old, and Karishma is 72 years old. The sum of their ages is",
+      "interaction_mode": "mcq",
+      "topic": "Knowing your numbers",
+      "difficulty_tier": "challenge",
+      "question_number": 12,
+      "choices": [
+        "XXXIII",
+        "XCIII",
+        "CXIII",
+        "LXXXXIII"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S1"
+    },
+    {
+      "id": "wb_L4_s01_q13",
+      "stem": "Digit 1 is occurring 136 times on writing all page numbers of a book. What will be the number of pages?",
+      "interaction_mode": "mcq",
+      "topic": "Knowing your numbers",
+      "difficulty_tier": "challenge",
+      "question_number": 13,
+      "choices": [
+        "194",
+        "195",
+        "200",
+        "295"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S1"
+    },
+    {
+      "id": "wb_L4_s01_q14",
+      "stem": "Roshan wanted to type the first 190 whole numbers. Find the number of times he pressed numbered keys",
+      "interaction_mode": "mcq",
+      "topic": "Knowing your numbers",
+      "difficulty_tier": "challenge",
+      "question_number": 14,
+      "choices": [
+        "461",
+        "462",
+        "463",
+        "464"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S1"
+    },
+    {
+      "id": "wb_L4_s01_q15",
+      "stem": "How many times does digit 3 appear in numbers from 1 to 100?",
+      "interaction_mode": "mcq",
+      "topic": "Knowing your numbers",
+      "difficulty_tier": "challenge",
+      "question_number": 15,
+      "choices": [
+        "18",
+        "19",
+        "20",
+        "21"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S1"
+    },
+    {
+      "id": "wb_L4_s02_q01",
+      "stem": "A number is divisible by 5 when its unit place must be",
+      "interaction_mode": "mcq",
+      "topic": "Test of divisibility",
+      "difficulty_tier": "warmup",
+      "question_number": 1,
+      "choices": [
+        "0 or 2",
+        "5 or 8",
+        "0 or 5",
+        "zero only"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S2"
+    },
+    {
+      "id": "wb_L4_s02_q02",
+      "stem": "What is the missing digit which makes the number 9724* exactly divisible by 6?",
+      "interaction_mode": "mcq",
+      "topic": "Test of divisibility",
+      "difficulty_tier": "warmup",
+      "question_number": 2,
+      "choices": [
+        "2",
+        "4",
+        "5",
+        "6"
+      ],
+      "correct_answer": 0,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S2"
+    },
+    {
+      "id": "wb_L4_s02_q03",
+      "stem": "What least value must be assigned to * so that 197*5462 is divisible by 9?",
+      "interaction_mode": "mcq",
+      "topic": "Test of divisibility",
+      "difficulty_tier": "warmup",
+      "question_number": 3,
+      "choices": [
+        "2",
+        "3",
+        "1",
+        "4"
+      ],
+      "correct_answer": 0,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S2"
+    },
+    {
+      "id": "wb_L4_s02_q04",
+      "stem": "For a number to be divisible by 88 it should be",
+      "interaction_mode": "mcq",
+      "topic": "Test of divisibility",
+      "difficulty_tier": "warmup",
+      "question_number": 4,
+      "choices": [
+        "Divisible by 8",
+        "Divisible by 9 and 22",
+        "Divisible by 8 and 11",
+        "Divisible by 4 and 22"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S2"
+    },
+    {
+      "id": "wb_L4_s02_q05",
+      "stem": "Find the least value of '*' so that 37*124 is divisible by 9",
+      "interaction_mode": "mcq",
+      "topic": "Test of divisibility",
+      "difficulty_tier": "warmup",
+      "question_number": 5,
+      "choices": [
+        "1",
+        "10",
+        "2",
+        "3"
+      ],
+      "correct_answer": 0,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S2"
+    },
+    {
+      "id": "wb_L4_s02_q06",
+      "stem": "Find the least value of 'x' so that 73818*4 is divisible by 8",
+      "interaction_mode": "mcq",
+      "topic": "Test of divisibility",
+      "difficulty_tier": "practice",
+      "question_number": 6,
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S2"
+    },
+    {
+      "id": "wb_L4_s02_q07",
+      "stem": "4950 is divisible by",
+      "interaction_mode": "mcq",
+      "topic": "Test of divisibility",
+      "difficulty_tier": "practice",
+      "question_number": 7,
+      "choices": [
+        "6",
+        "7",
+        "19",
+        "24"
+      ],
+      "correct_answer": 0,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S2"
+    },
+    {
+      "id": "wb_L4_s02_q08",
+      "stem": "7225 is divisible by",
+      "interaction_mode": "mcq",
+      "topic": "Test of divisibility",
+      "difficulty_tier": "practice",
+      "question_number": 8,
+      "choices": [
+        "52",
+        "68",
+        "92",
+        "85"
+      ],
+      "correct_answer": 3,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S2"
+    },
+    {
+      "id": "wb_L4_s02_q09",
+      "stem": "Which natural number is nearest to 8485 that is completely divisible by 75?",
+      "interaction_mode": "mcq",
+      "topic": "Test of divisibility",
+      "difficulty_tier": "practice",
+      "question_number": 9,
+      "choices": [
+        "8475",
+        "8500",
+        "8550",
+        "8525"
+      ],
+      "correct_answer": 0,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S2"
+    },
+    {
+      "id": "wb_L4_s02_q10",
+      "stem": "7242595 is divisible by",
+      "interaction_mode": "mcq",
+      "topic": "Test of divisibility",
+      "difficulty_tier": "practice",
+      "question_number": 10,
+      "choices": [
+        "2",
+        "5",
+        "6",
+        "8"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S2"
+    },
+    {
+      "id": "wb_L4_s02_q11",
+      "stem": "What is the smallest number which must be added to 8261955 so as to obtain a sum divisible by 11?",
+      "interaction_mode": "mcq",
+      "topic": "Test of divisibility",
+      "difficulty_tier": "challenge",
+      "question_number": 11,
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S2"
+    },
+    {
+      "id": "wb_L4_s02_q12",
+      "stem": "If the number 42573* is exactly divisible by 72, then the minimum value of * is",
+      "interaction_mode": "mcq",
+      "topic": "Test of divisibility",
+      "difficulty_tier": "challenge",
+      "question_number": 12,
+      "choices": [
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S2"
+    },
+    {
+      "id": "wb_L4_s02_q13",
+      "stem": "Which digit should come in place of * and # if 62684*# is divisible by both 8 and 5?",
+      "interaction_mode": "mcq",
+      "topic": "Test of divisibility",
+      "difficulty_tier": "challenge",
+      "question_number": 13,
+      "choices": [
+        "4 and 0",
+        "0 and 5",
+        "5 and 0",
+        "2 and 0"
+      ],
+      "correct_answer": 0,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S2"
+    },
+    {
+      "id": "wb_L4_s02_q14",
+      "stem": "What smallest number should be added to 4456 so that the sum is completely divisible by 6?",
+      "interaction_mode": "mcq",
+      "topic": "Test of divisibility",
+      "difficulty_tier": "challenge",
+      "question_number": 14,
+      "choices": [
+        "4",
+        "3",
+        "2",
+        "1"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S2"
+    },
+    {
+      "id": "wb_L4_s02_q15",
+      "stem": "What least number must be subtracted from 13601 so that remainder is divisible by 87?",
+      "interaction_mode": "mcq",
+      "topic": "Test of divisibility",
+      "difficulty_tier": "challenge",
+      "question_number": 15,
+      "choices": [
+        "23",
+        "31",
+        "29",
+        "37"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S2"
+    },
+    {
+      "id": "wb_L4_s03_q01",
+      "stem": "The HCF of the denominator and numerator of a fraction in its lowest form is",
+      "interaction_mode": "mcq",
+      "topic": "Factors and multiples",
+      "difficulty_tier": "warmup",
+      "question_number": 1,
+      "choices": [
+        "1",
+        "0",
+        "Can't be determined",
+        "Always even"
+      ],
+      "correct_answer": 0,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S3"
+    },
+    {
+      "id": "wb_L4_s03_q02",
+      "stem": "Find the smallest 3-digit number that is a multiple of 6, 8 and 12",
+      "interaction_mode": "mcq",
+      "topic": "Factors and multiples",
+      "difficulty_tier": "warmup",
+      "question_number": 2,
+      "choices": [
+        "96",
+        "144",
+        "120",
+        "136"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S3"
+    },
+    {
+      "id": "wb_L4_s03_q03",
+      "stem": "What is the smallest number which divided by 20, 25, 35, 40 leaves remainders 14, 19, 29, 34?",
+      "interaction_mode": "mcq",
+      "topic": "Factors and multiples",
+      "difficulty_tier": "warmup",
+      "question_number": 3,
+      "choices": [
+        "1394",
+        "1404",
+        "1604",
+        "1406"
+      ],
+      "correct_answer": 0,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S3"
+    },
+    {
+      "id": "wb_L4_s03_q04",
+      "stem": "A number is always divisible by 90 if",
+      "interaction_mode": "mcq",
+      "topic": "Factors and multiples",
+      "difficulty_tier": "warmup",
+      "question_number": 4,
+      "choices": [
+        "Divisible by both 2 and 45",
+        "Divisible by both 5 and 18",
+        "Divisible by both 9 and 10",
+        "All of these"
+      ],
+      "correct_answer": 3,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S3"
+    },
+    {
+      "id": "wb_L4_s03_q05",
+      "stem": "The HCF of two numbers is 28 and LCM is 336. If one number is 112, the other is",
+      "interaction_mode": "mcq",
+      "topic": "Factors and multiples",
+      "difficulty_tier": "warmup",
+      "question_number": 5,
+      "choices": [
+        "64",
+        "84",
+        "34",
+        "92"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S3"
+    },
+    {
+      "id": "wb_L4_s03_q06",
+      "stem": "The greatest 4-digit number divisible by 15, 25, 40 and 75 is",
+      "interaction_mode": "mcq",
+      "topic": "Factors and multiples",
+      "difficulty_tier": "practice",
+      "question_number": 6,
+      "choices": [
+        "9000",
+        "9400",
+        "9600",
+        "9800"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S3"
+    },
+    {
+      "id": "wb_L4_s03_q07",
+      "stem": "Three numbers in ratio 3:4:5 with LCM 2400. Their HCF is",
+      "interaction_mode": "mcq",
+      "topic": "Factors and multiples",
+      "difficulty_tier": "practice",
+      "question_number": 7,
+      "choices": [
+        "40",
+        "80",
+        "120",
+        "200"
+      ],
+      "correct_answer": 0,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S3"
+    },
+    {
+      "id": "wb_L4_s03_q08",
+      "stem": "Three co-prime numbers: product of first two is 551, last two is 1073. Sum of three is",
+      "interaction_mode": "mcq",
+      "topic": "Factors and multiples",
+      "difficulty_tier": "practice",
+      "question_number": 8,
+      "choices": [
+        "75",
+        "81",
+        "85",
+        "89"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S3"
+    },
+    {
+      "id": "wb_L4_s03_q09",
+      "stem": "Least number of square tiles to pave a 225m by 30m plot",
+      "interaction_mode": "mcq",
+      "topic": "Factors and multiples",
+      "difficulty_tier": "practice",
+      "question_number": 9,
+      "choices": [
+        "30 tiles",
+        "15 tiles",
+        "25 tiles",
+        "45 tiles"
+      ],
+      "correct_answer": 0,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S3"
+    },
+    {
+      "id": "wb_L4_s03_q10",
+      "stem": "The G.C.D. of 1.08, 0.36 and 0.9 is",
+      "interaction_mode": "mcq",
+      "topic": "Factors and multiples",
+      "difficulty_tier": "practice",
+      "question_number": 10,
+      "choices": [
+        "0.03",
+        "0.9",
+        "0.18",
+        "0.108"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S3"
+    },
+    {
+      "id": "wb_L4_s03_q11",
+      "stem": "The HCF of 9/10, 12/25, 18/35 and 21/40 is",
+      "interaction_mode": "mcq",
+      "topic": "Factors and multiples",
+      "difficulty_tier": "challenge",
+      "question_number": 11,
+      "choices": [
+        "3/5",
+        "25/25",
+        "3/1400",
+        "63/700"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S3"
+    },
+    {
+      "id": "wb_L4_s03_q12",
+      "stem": "A dealer has 24kg, 120kg and 72kg of coffee. Capacity of largest box?",
+      "interaction_mode": "mcq",
+      "topic": "Factors and multiples",
+      "difficulty_tier": "challenge",
+      "question_number": 12,
+      "choices": [
+        "50",
+        "36",
+        "24",
+        "12"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S3"
+    },
+    {
+      "id": "wb_L4_s03_q13",
+      "stem": "Least number divided by 6, 12, 16, 125 leaves remainder 7, but divided by 11 leaves no remainder",
+      "interaction_mode": "mcq",
+      "topic": "Factors and multiples",
+      "difficulty_tier": "challenge",
+      "question_number": 13,
+      "choices": [
+        "8007",
+        "13007",
+        "18017",
+        "18007"
+      ],
+      "correct_answer": 3,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S3"
+    },
+    {
+      "id": "wb_L4_s03_q14",
+      "stem": "Greatest number dividing 989, 1258, 1359 leaving remainders 66, 51, 10",
+      "interaction_mode": "mcq",
+      "topic": "Factors and multiples",
+      "difficulty_tier": "challenge",
+      "question_number": 14,
+      "choices": [
+        "71",
+        "81",
+        "68",
+        "73"
+      ],
+      "correct_answer": 0,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S3"
+    },
+    {
+      "id": "wb_L4_s03_q15",
+      "stem": "Coffee dealer 24kg, 120kg, 72kg - largest box capacity",
+      "interaction_mode": "mcq",
+      "topic": "Factors and multiples",
+      "difficulty_tier": "challenge",
+      "question_number": 15,
+      "choices": [
+        "50",
+        "36",
+        "24",
+        "12"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S3"
+    },
+    {
+      "id": "wb_L4_s04_q01",
+      "stem": "Which of the following represents fractions in descending order?",
+      "interaction_mode": "mcq",
+      "topic": "Integers and Fractions",
+      "difficulty_tier": "warmup",
+      "question_number": 1,
+      "choices": [
+        "1/2, 3/4, 5/6, 7/8",
+        "7/8, 5/6, 3/4, 1/2",
+        "3/4, 1/2, 7/8, 5/6",
+        "7/8, 5/6, 1/2, 3/4"
+      ],
+      "correct_answer": 3,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S4"
+    },
+    {
+      "id": "wb_L4_s04_q03",
+      "stem": "What is the simplest form of 0.44?",
+      "interaction_mode": "mcq",
+      "topic": "Integers and Fractions",
+      "difficulty_tier": "warmup",
+      "question_number": 3,
+      "choices": [
+        "11/25",
+        "22/50",
+        "44/100",
+        "4/9"
+      ],
+      "correct_answer": 0,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S4"
+    },
+    {
+      "id": "wb_L4_s04_q04",
+      "stem": "Which integer lies on the extreme left on the number line among -3, 5, -7, 2?",
+      "interaction_mode": "mcq",
+      "topic": "Integers and Fractions",
+      "difficulty_tier": "warmup",
+      "question_number": 4,
+      "choices": [
+        "-3",
+        "5",
+        "-7",
+        "2"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S4"
+    },
+    {
+      "id": "wb_L4_s04_q05",
+      "stem": "What is the next number in the pattern: -62, -37, -12, ...?",
+      "interaction_mode": "mcq",
+      "topic": "Integers and Fractions",
+      "difficulty_tier": "warmup",
+      "question_number": 5,
+      "choices": [
+        "-13",
+        "0",
+        "13",
+        "25"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S4"
+    },
+    {
+      "id": "wb_L4_s04_q06",
+      "stem": "What integer should be subtracted from -5 to get -12?",
+      "interaction_mode": "mcq",
+      "topic": "Integers and Fractions",
+      "difficulty_tier": "practice",
+      "question_number": 6,
+      "choices": [
+        "7",
+        "-7",
+        "12",
+        "-12"
+      ],
+      "correct_answer": 0,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S4"
+    },
+    {
+      "id": "wb_L4_s04_q09",
+      "stem": "Which of the following statements about integers is incorrect?",
+      "interaction_mode": "mcq",
+      "topic": "Integers and Fractions",
+      "difficulty_tier": "practice",
+      "question_number": 9,
+      "choices": [
+        "The sum of two positive integers is always positive",
+        "The sum of two negative integers is always negative",
+        "The sum of a positive and negative integer is always negative",
+        "The product of two negative integers is positive"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S4"
+    },
+    {
+      "id": "wb_L4_s04_q10",
+      "stem": "Which of the following statements about integers is correct?",
+      "interaction_mode": "mcq",
+      "topic": "Integers and Fractions",
+      "difficulty_tier": "practice",
+      "question_number": 10,
+      "choices": [
+        "Every integer is a whole number",
+        "Every whole number is a natural number",
+        "Zero is a positive integer",
+        "Every whole number is an integer"
+      ],
+      "correct_answer": 3,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S4"
+    },
+    {
+      "id": "wb_L4_s04_q11",
+      "stem": "In a magic square where each row, column and diagonal add up to the same sum, if A and B are missing values, find A and B.",
+      "interaction_mode": "mcq",
+      "topic": "Integers and Fractions",
+      "difficulty_tier": "challenge",
+      "question_number": 11,
+      "choices": [
+        "A = -3, B = -5",
+        "A = -4, B = -7",
+        "A = -2, B = -6",
+        "A = -5, B = -8"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S4"
+    },
+    {
+      "id": "wb_L4_s04_q12",
+      "stem": "In a survey of 240 students, the ratio of students who like hockey to cricket is 3:1. How many students like hockey and how many like cricket?",
+      "interaction_mode": "mcq",
+      "topic": "Integers and Fractions",
+      "difficulty_tier": "challenge",
+      "question_number": 12,
+      "choices": [
+        "180, 30",
+        "120, 40",
+        "200, 40",
+        "160, 80"
+      ],
+      "correct_answer": 0,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S4"
+    },
+    {
+      "id": "wb_L4_s04_q13",
+      "stem": "From the above survey, if 30 students like both, how many like neither hockey nor cricket?",
+      "interaction_mode": "mcq",
+      "topic": "Integers and Fractions",
+      "difficulty_tier": "challenge",
+      "question_number": 13,
+      "choices": [
+        "20",
+        "40",
+        "10",
+        "30"
+      ],
+      "correct_answer": 3,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S4"
+    },
+    {
+      "id": "wb_L4_s04_q14",
+      "stem": "Which fraction lies between 3/4 and 5/6?",
+      "interaction_mode": "mcq",
+      "topic": "Integers and Fractions",
+      "difficulty_tier": "challenge",
+      "question_number": 14,
+      "choices": [
+        "2/3",
+        "7/8",
+        "4/5",
+        "1/2"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S4"
+    },
+    {
+      "id": "wb_L4_s04_q15",
+      "stem": "What is the value of (-1) \u00d7 (-1) \u00d7 (-1) \u00d7 ... (2023 times) + (-1) \u00d7 (-1) \u00d7 (-1) \u00d7 ... (2024 times)?",
+      "interaction_mode": "mcq",
+      "topic": "Integers and Fractions",
+      "difficulty_tier": "challenge",
+      "question_number": 15,
+      "choices": [
+        "2",
+        "-2",
+        "1",
+        "0"
+      ],
+      "correct_answer": 3,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S4"
+    },
+    {
+      "id": "wb_L4_s07_q01",
+      "stem": "What is the sum of the first 10 odd numbers?",
+      "interaction_mode": "mcq",
+      "topic": "Addition and Subtraction",
+      "difficulty_tier": "warmup",
+      "question_number": 1,
+      "choices": [
+        "90",
+        "100",
+        "110",
+        "120"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S7"
+    },
+    {
+      "id": "wb_L4_s07_q02",
+      "stem": "If a + b = 15 and a - b = 5, what is the value of a?",
+      "interaction_mode": "mcq",
+      "topic": "Addition and Subtraction",
+      "difficulty_tier": "warmup",
+      "question_number": 2,
+      "choices": [
+        "10",
+        "5",
+        "15",
+        "20"
+      ],
+      "correct_answer": 0,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S7"
+    },
+    {
+      "id": "wb_L4_s07_q04",
+      "stem": "The sum of two consecutive even numbers is 54. What is the smaller number?",
+      "interaction_mode": "mcq",
+      "topic": "Addition and Subtraction",
+      "difficulty_tier": "warmup",
+      "question_number": 4,
+      "choices": [
+        "26",
+        "28",
+        "24",
+        "22"
+      ],
+      "correct_answer": 0,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S7"
+    },
+    {
+      "id": "wb_L4_s07_q07",
+      "stem": "What should be added to 367 to get 1000?",
+      "interaction_mode": "mcq",
+      "topic": "Addition and Subtraction",
+      "difficulty_tier": "practice",
+      "question_number": 7,
+      "choices": [
+        "633",
+        "643",
+        "733",
+        "533"
+      ],
+      "correct_answer": 0,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S7"
+    },
+    {
+      "id": "wb_L4_s07_q08",
+      "stem": "The difference between two numbers is 256. If the smaller number is 389, what is the larger number?",
+      "interaction_mode": "mcq",
+      "topic": "Addition and Subtraction",
+      "difficulty_tier": "practice",
+      "question_number": 8,
+      "choices": [
+        "133",
+        "256",
+        "645",
+        "745"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S7"
+    },
+    {
+      "id": "wb_L4_s07_q09",
+      "stem": "What is 9999 + 999 + 99 + 9?",
+      "interaction_mode": "mcq",
+      "topic": "Addition and Subtraction",
+      "difficulty_tier": "practice",
+      "question_number": 9,
+      "choices": [
+        "10000",
+        "11016",
+        "11106",
+        "11106"
+      ],
+      "correct_answer": 3,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S7"
+    },
+    {
+      "id": "wb_L4_s07_q11",
+      "stem": "A shopkeeper had 5000 items. He sold 2367 on Monday and 1589 on Tuesday. How many items are left?",
+      "interaction_mode": "mcq",
+      "topic": "Addition and Subtraction",
+      "difficulty_tier": "challenge",
+      "question_number": 11,
+      "choices": [
+        "1034",
+        "1044",
+        "1144",
+        "1044"
+      ],
+      "correct_answer": 3,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S7"
+    },
+    {
+      "id": "wb_L4_s07_q13",
+      "stem": "The sum of three consecutive numbers is 96. What is the middle number?",
+      "interaction_mode": "mcq",
+      "topic": "Addition and Subtraction",
+      "difficulty_tier": "challenge",
+      "question_number": 13,
+      "choices": [
+        "31",
+        "32",
+        "33",
+        "34"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S7"
+    },
+    {
+      "id": "wb_L4_s07_q15",
+      "stem": "What is the value of 1 - 2 + 3 - 4 + 5 - 6 + ... + 99 - 100?",
+      "interaction_mode": "mcq",
+      "topic": "Addition and Subtraction",
+      "difficulty_tier": "challenge",
+      "question_number": 15,
+      "choices": [
+        "-50",
+        "50",
+        "-100",
+        "0"
+      ],
+      "correct_answer": 0,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S7"
+    },
+    {
+      "id": "wb_L4_s08_q05",
+      "stem": "Express 1.14 as a percent of 1.9",
+      "interaction_mode": "mcq",
+      "topic": "Percentage",
+      "difficulty_tier": "warmup",
+      "question_number": 5,
+      "choices": [
+        "6%",
+        "10%",
+        "60%",
+        "90%"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S8"
+    },
+    {
+      "id": "wb_L4_s08_q07",
+      "stem": "Two numbers A and B: sum of 5% of A and 4% of B is two-third of sum of 6% of A and 8% of B. Ratio A:B?",
+      "interaction_mode": "mcq",
+      "topic": "Percentage",
+      "difficulty_tier": "practice",
+      "question_number": 7,
+      "choices": [
+        "2:3",
+        "1:1",
+        "3:4",
+        "4:3"
+      ],
+      "correct_answer": 3,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S8"
+    },
+    {
+      "id": "wb_L4_s08_q08",
+      "stem": "School: 20% below 8 years. Students above 8 is 2/3 of students at 8 years (48). Total?",
+      "interaction_mode": "mcq",
+      "topic": "Percentage",
+      "difficulty_tier": "practice",
+      "question_number": 8,
+      "choices": [
+        "72",
+        "80",
+        "120",
+        "150",
+        "100"
+      ],
+      "correct_answer": 4,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S8"
+    },
+    {
+      "id": "wb_L4_s08_q10",
+      "stem": "What percentage of numbers from 1 to 70 have 1 or 9 in unit's digit?",
+      "interaction_mode": "mcq",
+      "topic": "Percentage",
+      "difficulty_tier": "practice",
+      "question_number": 10,
+      "choices": [
+        "1",
+        "14",
+        "20",
+        "21"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S8"
+    },
+    {
+      "id": "wb_L4_s08_q11",
+      "stem": "Two students: one secured 9 marks more, his marks 56% of sum. Marks obtained?",
+      "interaction_mode": "mcq",
+      "topic": "Percentage",
+      "difficulty_tier": "challenge",
+      "question_number": 11,
+      "choices": [
+        "39, 30",
+        "41, 32",
+        "42, 33",
+        "43, 34"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S8"
+    },
+    {
+      "id": "wb_L4_s08_q12",
+      "stem": "Batsman scored 110: 3 boundaries and 8 sixes. Percent by running?",
+      "interaction_mode": "mcq",
+      "topic": "Percentage",
+      "difficulty_tier": "challenge",
+      "question_number": 12,
+      "choices": [
+        "45%",
+        "45 5/11%",
+        "54 6/11%",
+        "55%"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S8"
+    },
+    {
+      "id": "wb_L4_s08_q13",
+      "stem": "Photocopy costs Rs 1. 2% discount after 1000 sheets. Cost for 5000?",
+      "interaction_mode": "mcq",
+      "topic": "Percentage",
+      "difficulty_tier": "challenge",
+      "question_number": 13,
+      "choices": [
+        "Rs 3920",
+        "Rs 3980",
+        "Rs 4900",
+        "Rs 4920"
+      ],
+      "correct_answer": 3,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S8"
+    }
+  ]
+}

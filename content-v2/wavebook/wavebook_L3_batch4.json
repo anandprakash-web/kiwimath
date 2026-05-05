@@ -1,0 +1,1541 @@
+{
+  "level": 3,
+  "batch": 4,
+  "grade_band": "3-4",
+  "total_questions": 90,
+  "questions": [
+    {
+      "id": "wb_L3_s25_q01",
+      "stem": "How many days are there in a leap year?",
+      "interaction_mode": "mcq",
+      "topic": "Days months dates",
+      "difficulty_tier": "warmup",
+      "question_number": 1,
+      "choices": [
+        "364",
+        "365",
+        "366",
+        "367"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S25"
+    },
+    {
+      "id": "wb_L3_s25_q02",
+      "stem": "Which of the following is a leap year?",
+      "interaction_mode": "mcq",
+      "topic": "Days months dates",
+      "difficulty_tier": "warmup",
+      "question_number": 2,
+      "choices": [
+        "2100",
+        "2200",
+        "2300",
+        "2400"
+      ],
+      "correct_answer": 3,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S25"
+    },
+    {
+      "id": "wb_L3_s25_q03",
+      "stem": "If January 1 is a Monday, what day is January 31?",
+      "interaction_mode": "mcq",
+      "topic": "Days months dates",
+      "difficulty_tier": "warmup",
+      "question_number": 3,
+      "choices": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S25"
+    },
+    {
+      "id": "wb_L3_s25_q04",
+      "stem": "How many months have 31 days?",
+      "interaction_mode": "mcq",
+      "topic": "Days months dates",
+      "difficulty_tier": "warmup",
+      "question_number": 4,
+      "choices": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S25"
+    },
+    {
+      "id": "wb_L3_s25_q05",
+      "stem": "What is the day after 28th February in a non-leap year?",
+      "interaction_mode": "mcq",
+      "topic": "Days months dates",
+      "difficulty_tier": "warmup",
+      "question_number": 5,
+      "choices": [
+        "28th February",
+        "29th February",
+        "1st March",
+        "2nd March"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S25"
+    },
+    {
+      "id": "wb_L3_s25_q06",
+      "stem": "If today is Wednesday, what day will it be after 45 days?",
+      "interaction_mode": "mcq",
+      "topic": "Days months dates",
+      "difficulty_tier": "practice",
+      "question_number": 6,
+      "choices": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday"
+      ],
+      "correct_answer": 3,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S25"
+    },
+    {
+      "id": "wb_L3_s25_q07",
+      "stem": "How many days are there from March 5 to April 15 (both included)?",
+      "interaction_mode": "mcq",
+      "topic": "Days months dates",
+      "difficulty_tier": "practice",
+      "question_number": 7,
+      "choices": [
+        "41",
+        "42",
+        "40",
+        "43"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S25"
+    },
+    {
+      "id": "wb_L3_s25_q08",
+      "stem": "The year 1900 is",
+      "interaction_mode": "mcq",
+      "topic": "Days months dates",
+      "difficulty_tier": "practice",
+      "question_number": 8,
+      "choices": [
+        "A leap year",
+        "Not a leap year",
+        "Has 364 days",
+        "None of these"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S25"
+    },
+    {
+      "id": "wb_L3_s25_q09",
+      "stem": "If 15th August falls on a Thursday, what day is 26th January of the next year?",
+      "interaction_mode": "mcq",
+      "topic": "Days months dates",
+      "difficulty_tier": "practice",
+      "question_number": 9,
+      "choices": [
+        "Sunday",
+        "Monday",
+        "Saturday",
+        "Friday"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S25"
+    },
+    {
+      "id": "wb_L3_s25_q10",
+      "stem": "How many odd days are in 100 years?",
+      "interaction_mode": "mcq",
+      "topic": "Days months dates",
+      "difficulty_tier": "practice",
+      "question_number": 10,
+      "choices": [
+        "5",
+        "4",
+        "3",
+        "2"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S25"
+    },
+    {
+      "id": "wb_L3_s25_q11",
+      "stem": "A man was born on March 5, 2010. What day of the week was it if March 1, 2010 was a Monday?",
+      "interaction_mode": "mcq",
+      "topic": "Days months dates",
+      "difficulty_tier": "challenge",
+      "question_number": 11,
+      "choices": [
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Wednesday"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S25"
+    },
+    {
+      "id": "wb_L3_s25_q12",
+      "stem": "How many Sundays are in a year that begins on a Sunday and is not a leap year?",
+      "interaction_mode": "mcq",
+      "topic": "Days months dates",
+      "difficulty_tier": "challenge",
+      "question_number": 12,
+      "choices": [
+        "52",
+        "53",
+        "54",
+        "51"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S25"
+    },
+    {
+      "id": "wb_L3_s25_q13",
+      "stem": "If December 25 is a Tuesday, what day is January 1 of the next year?",
+      "interaction_mode": "mcq",
+      "topic": "Days months dates",
+      "difficulty_tier": "challenge",
+      "question_number": 13,
+      "choices": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S25"
+    },
+    {
+      "id": "wb_L3_s25_q14",
+      "stem": "The number of days from July 4 to September 3 (not including start date) is",
+      "interaction_mode": "mcq",
+      "topic": "Days months dates",
+      "difficulty_tier": "challenge",
+      "question_number": 14,
+      "choices": [
+        "60",
+        "61",
+        "62",
+        "58"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S25"
+    },
+    {
+      "id": "wb_L3_s25_q15",
+      "stem": "Which century year is a leap year?",
+      "interaction_mode": "mcq",
+      "topic": "Days months dates",
+      "difficulty_tier": "challenge",
+      "question_number": 15,
+      "choices": [
+        "1700",
+        "1800",
+        "1900",
+        "2000"
+      ],
+      "correct_answer": 3,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S25"
+    },
+    {
+      "id": "wb_L3_s29_q01",
+      "stem": "Pointing to a man, a woman said, \"His mother is the only daughter of my mother.\" How is the woman related to the man?",
+      "interaction_mode": "mcq",
+      "topic": "Blood Relation",
+      "difficulty_tier": "warmup",
+      "question_number": 1,
+      "choices": [
+        "Mother",
+        "Grandmother",
+        "Sister",
+        "Aunt"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S29"
+    },
+    {
+      "id": "wb_L3_s29_q02",
+      "stem": "If A is the brother of B, B is the sister of C, and C is the father of D, how is A related to D?",
+      "interaction_mode": "mcq",
+      "topic": "Blood Relation",
+      "difficulty_tier": "warmup",
+      "question_number": 2,
+      "choices": [
+        "Uncle",
+        "Father",
+        "Grandfather",
+        "Brother"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S29"
+    },
+    {
+      "id": "wb_L3_s29_q03",
+      "stem": "Ravi said, \"This girl is the wife of the grandson of my mother.\" Who is Ravi to the girl?",
+      "interaction_mode": "mcq",
+      "topic": "Blood Relation",
+      "difficulty_tier": "warmup",
+      "question_number": 3,
+      "choices": [
+        "Father",
+        "Grandfather",
+        "Husband",
+        "Father-in-law"
+      ],
+      "correct_answer": 3,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S29"
+    },
+    {
+      "id": "wb_L3_s29_q04",
+      "stem": "If P + Q means P is the father of Q, P - Q means P is the sister of Q, and P x Q means P is the mother of Q, what does A + B - C mean?",
+      "interaction_mode": "mcq",
+      "topic": "Blood Relation",
+      "difficulty_tier": "warmup",
+      "question_number": 4,
+      "choices": [
+        "A is the uncle of C",
+        "A is the father of C",
+        "A is the grandfather of C",
+        "C is the aunt of A"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S29"
+    },
+    {
+      "id": "wb_L3_s29_q05",
+      "stem": "Pointing to a photograph, Ramesh said, \"She is the daughter of my grandfather's only son.\" How is the girl in the photo related to Ramesh?",
+      "interaction_mode": "mcq",
+      "topic": "Blood Relation",
+      "difficulty_tier": "warmup",
+      "question_number": 5,
+      "choices": [
+        "Sister",
+        "Mother",
+        "Cousin",
+        "Daughter"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S29"
+    },
+    {
+      "id": "wb_L3_s29_q06",
+      "stem": "A is B's sister. C is B's mother. D is C's father. E is D's mother. How is A related to D?",
+      "interaction_mode": "mcq",
+      "topic": "Blood Relation",
+      "difficulty_tier": "practice",
+      "question_number": 6,
+      "choices": [
+        "Grandmother",
+        "Grandfather",
+        "Granddaughter",
+        "Daughter"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S29"
+    },
+    {
+      "id": "wb_L3_s29_q07",
+      "stem": "If X is the husband of Y, Y is the sister of Z, and Z is the son of W, how is X related to W?",
+      "interaction_mode": "mcq",
+      "topic": "Blood Relation",
+      "difficulty_tier": "practice",
+      "question_number": 7,
+      "choices": [
+        "Son",
+        "Brother",
+        "Son-in-law",
+        "Father"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S29"
+    },
+    {
+      "id": "wb_L3_s29_q08",
+      "stem": "Meena said, \"Ravi's mother is the only daughter of my mother.\" How is Meena related to Ravi?",
+      "interaction_mode": "mcq",
+      "topic": "Blood Relation",
+      "difficulty_tier": "practice",
+      "question_number": 8,
+      "choices": [
+        "Aunt",
+        "Mother",
+        "Sister",
+        "Grandmother"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S29"
+    },
+    {
+      "id": "wb_L3_s29_q09",
+      "stem": "In a family, there are 6 members A, B, C, D, E, and F. B is the son of C. A and C are married. D is the brother of A. E is the daughter of A. F is the brother of B. How many male members are there?",
+      "interaction_mode": "mcq",
+      "topic": "Blood Relation",
+      "difficulty_tier": "practice",
+      "question_number": 9,
+      "choices": [
+        "3",
+        "4",
+        "2",
+        "5"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S29"
+    },
+    {
+      "id": "wb_L3_s29_q10",
+      "stem": "If \"A $ B\" means A is the mother of B, \"A # B\" means A is the father of B, what does \"P # Q $ R\" mean?",
+      "interaction_mode": "mcq",
+      "topic": "Blood Relation",
+      "difficulty_tier": "practice",
+      "question_number": 10,
+      "choices": [
+        "P is the maternal grandfather of R",
+        "P is the paternal grandfather of R",
+        "P is the father of R",
+        "R is the son of P"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S29"
+    },
+    {
+      "id": "wb_L3_s29_q11",
+      "stem": "Pointing to a lady, a man said, \"The son of her only brother is the brother of my wife.\" How is the lady related to the man?",
+      "interaction_mode": "mcq",
+      "topic": "Blood Relation",
+      "difficulty_tier": "challenge",
+      "question_number": 11,
+      "choices": [
+        "Mother-in-law",
+        "Aunt",
+        "Sister of father-in-law",
+        "Grandmother"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S29"
+    },
+    {
+      "id": "wb_L3_s29_q12",
+      "stem": "Rajan has a brother Manan. Rajan is the son of Poonam. Tarun is Poonam's father. How is Manan related to Tarun?",
+      "interaction_mode": "mcq",
+      "topic": "Blood Relation",
+      "difficulty_tier": "challenge",
+      "question_number": 12,
+      "choices": [
+        "Son",
+        "Grandson",
+        "Grandfather",
+        "Father"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S29"
+    },
+    {
+      "id": "wb_L3_s29_q13",
+      "stem": "A is the father of C. B is the daughter of A. C is married to D. E is the son of C and D. How is B related to E?",
+      "interaction_mode": "mcq",
+      "topic": "Blood Relation",
+      "difficulty_tier": "challenge",
+      "question_number": 13,
+      "choices": [
+        "Mother",
+        "Sister",
+        "Aunt",
+        "Grandmother"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S29"
+    },
+    {
+      "id": "wb_L3_s29_q14",
+      "stem": "If M is brother of N, B is brother of N, and M is brother of D, how is N related to D?",
+      "interaction_mode": "mcq",
+      "topic": "Blood Relation",
+      "difficulty_tier": "challenge",
+      "question_number": 14,
+      "choices": [
+        "Brother",
+        "Sister",
+        "Sibling",
+        "Cannot be determined"
+      ],
+      "correct_answer": 3,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S29"
+    },
+    {
+      "id": "wb_L3_s29_q15",
+      "stem": "Pointing to a man in a photo, Sunita said, \"His mother's brother is the father of my son.\" How is Sunita related to the man?",
+      "interaction_mode": "mcq",
+      "topic": "Blood Relation",
+      "difficulty_tier": "challenge",
+      "question_number": 15,
+      "choices": [
+        "Aunt",
+        "Sister",
+        "Mother",
+        "Daughter-in-law"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S29"
+    },
+    {
+      "id": "wb_L3_s30_q01",
+      "stem": "A square paper is folded once along its diagonal and a cut is made. When unfolded, the resulting shape is",
+      "interaction_mode": "mcq",
+      "topic": "Paper Folding",
+      "difficulty_tier": "warmup",
+      "question_number": 1,
+      "choices": [
+        "Triangle",
+        "Rectangle",
+        "Rhombus",
+        "Pentagon"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S30"
+    },
+    {
+      "id": "wb_L3_s30_q02",
+      "stem": "A circular paper is folded in half and then in half again. A small triangle is cut from the folded corner. How many holes appear when unfolded?",
+      "interaction_mode": "mcq",
+      "topic": "Paper Folding",
+      "difficulty_tier": "warmup",
+      "question_number": 2,
+      "choices": [
+        "1",
+        "2",
+        "4",
+        "8"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S30"
+    },
+    {
+      "id": "wb_L3_s30_q03",
+      "stem": "A rectangular paper is folded along its length. A semicircle is cut on the folded edge. When opened, it becomes",
+      "interaction_mode": "mcq",
+      "topic": "Paper Folding",
+      "difficulty_tier": "warmup",
+      "question_number": 3,
+      "choices": [
+        "A circle",
+        "A semicircle",
+        "An oval",
+        "Two semicircles"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S30"
+    },
+    {
+      "id": "wb_L3_s30_q04",
+      "stem": "A paper is folded twice (into quarters). A corner is cut off. How many corners are removed when unfolded?",
+      "interaction_mode": "mcq",
+      "topic": "Paper Folding",
+      "difficulty_tier": "warmup",
+      "question_number": 4,
+      "choices": [
+        "1",
+        "2",
+        "4",
+        "8"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S30"
+    },
+    {
+      "id": "wb_L3_s30_q05",
+      "stem": "When a square paper is folded along both diagonals and a small square is cut at the center, the unfolded paper shows",
+      "interaction_mode": "mcq",
+      "topic": "Paper Folding",
+      "difficulty_tier": "warmup",
+      "question_number": 5,
+      "choices": [
+        "1 square hole",
+        "2 square holes",
+        "4 square holes",
+        "A diamond shape"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S30"
+    },
+    {
+      "id": "wb_L3_s30_q06",
+      "stem": "A rectangular paper is folded in half widthwise. Two small squares are cut on the folded side. When opened, how many square holes appear?",
+      "interaction_mode": "mcq",
+      "topic": "Paper Folding",
+      "difficulty_tier": "practice",
+      "question_number": 6,
+      "choices": [
+        "2",
+        "4",
+        "6",
+        "8"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S30"
+    },
+    {
+      "id": "wb_L3_s30_q07",
+      "stem": "A paper folded into a triangle (2 folds from square) has a semicircle cut at the base. The unfolded shape of the cut is",
+      "interaction_mode": "mcq",
+      "topic": "Paper Folding",
+      "difficulty_tier": "practice",
+      "question_number": 7,
+      "choices": [
+        "Full circle",
+        "Two semicircles",
+        "Half circle",
+        "Quarter circle"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S30"
+    },
+    {
+      "id": "wb_L3_s30_q08",
+      "stem": "A square paper is folded in half. A right triangle is cut from the open edge corner. When unfolded, the result is",
+      "interaction_mode": "mcq",
+      "topic": "Paper Folding",
+      "difficulty_tier": "practice",
+      "question_number": 8,
+      "choices": [
+        "A triangle removed",
+        "A rectangle removed",
+        "A diamond removed",
+        "Two triangles removed"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S30"
+    },
+    {
+      "id": "wb_L3_s30_q09",
+      "stem": "A paper is folded 3 times and a single hole is punched. How many holes appear when fully unfolded?",
+      "interaction_mode": "mcq",
+      "topic": "Paper Folding",
+      "difficulty_tier": "practice",
+      "question_number": 9,
+      "choices": [
+        "3",
+        "6",
+        "8",
+        "4"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S30"
+    },
+    {
+      "id": "wb_L3_s30_q10",
+      "stem": "A square paper is folded along its vertical axis. An L-shaped cut is made. When unfolded, the shape is",
+      "interaction_mode": "mcq",
+      "topic": "Paper Folding",
+      "difficulty_tier": "practice",
+      "question_number": 10,
+      "choices": [
+        "L-shape",
+        "T-shape",
+        "U-shape",
+        "Plus sign"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S30"
+    },
+    {
+      "id": "wb_L3_s30_q11",
+      "stem": "A paper is folded twice diagonally and a piece is cut. The resulting pattern has",
+      "interaction_mode": "mcq",
+      "topic": "Paper Folding",
+      "difficulty_tier": "challenge",
+      "question_number": 11,
+      "choices": [
+        "2-fold symmetry",
+        "4-fold symmetry",
+        "No symmetry",
+        "8-fold symmetry"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S30"
+    },
+    {
+      "id": "wb_L3_s30_q12",
+      "stem": "A circular paper is folded into thirds and a notch is cut at the edge. When unfolded, how many notches appear?",
+      "interaction_mode": "mcq",
+      "topic": "Paper Folding",
+      "difficulty_tier": "challenge",
+      "question_number": 12,
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "6"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S30"
+    },
+    {
+      "id": "wb_L3_s30_q13",
+      "stem": "A square paper folded once (top to bottom). A triangle is cut from the right side of the fold. The unfolded shape shows",
+      "interaction_mode": "mcq",
+      "topic": "Paper Folding",
+      "difficulty_tier": "challenge",
+      "question_number": 13,
+      "choices": [
+        "One triangle cutout",
+        "A diamond cutout",
+        "Two separate triangles",
+        "A rectangle"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S30"
+    },
+    {
+      "id": "wb_L3_s30_q14",
+      "stem": "If a paper is folded 4 times and one hole is punched, maximum how many holes can appear?",
+      "interaction_mode": "mcq",
+      "topic": "Paper Folding",
+      "difficulty_tier": "challenge",
+      "question_number": 14,
+      "choices": [
+        "4",
+        "8",
+        "16",
+        "12"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S30"
+    },
+    {
+      "id": "wb_L3_s30_q15",
+      "stem": "A paper is folded in half, then in half again perpendicular to the first fold. A circle is cut at the corner where all folds meet. The unfolded paper shows",
+      "interaction_mode": "mcq",
+      "topic": "Paper Folding",
+      "difficulty_tier": "challenge",
+      "question_number": 15,
+      "choices": [
+        "1 circle",
+        "2 circles",
+        "4 circles",
+        "1 large circle"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S30"
+    },
+    {
+      "id": "wb_L3_s32_q01",
+      "stem": "Statement: All squares are rectangles. Which is correct?",
+      "interaction_mode": "mcq",
+      "topic": "Pattern of shapes",
+      "difficulty_tier": "warmup",
+      "question_number": 1,
+      "choices": [
+        "True",
+        "False",
+        "Partially true",
+        "Cannot say"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S32"
+    },
+    {
+      "id": "wb_L3_s32_q02",
+      "stem": "Assertion: A triangle has 3 sides. Reason: The sum of angles in a triangle is 360 degrees.",
+      "interaction_mode": "mcq",
+      "topic": "Pattern of shapes",
+      "difficulty_tier": "warmup",
+      "question_number": 2,
+      "choices": [
+        "Both A and R are true, R is correct explanation",
+        "Both A and R are true, R is not correct explanation",
+        "A is true, R is false",
+        "A is false, R is true"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S32"
+    },
+    {
+      "id": "wb_L3_s32_q03",
+      "stem": "Statement I: A square has 4 lines of symmetry. Statement II: A rectangle has 2 lines of symmetry. Which is correct?",
+      "interaction_mode": "mcq",
+      "topic": "Pattern of shapes",
+      "difficulty_tier": "warmup",
+      "question_number": 3,
+      "choices": [
+        "Only I",
+        "Only II",
+        "Both I and II",
+        "Neither I nor II"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S32"
+    },
+    {
+      "id": "wb_L3_s32_q04",
+      "stem": "Assertion: The number 12 is divisible by 3. Reason: 1 + 2 = 3, which is divisible by 3.",
+      "interaction_mode": "mcq",
+      "topic": "Pattern of shapes",
+      "difficulty_tier": "warmup",
+      "question_number": 4,
+      "choices": [
+        "Both A and R are true, R is correct explanation",
+        "Both A and R are true, R is not correct explanation",
+        "A is true, R is false",
+        "A is false, R is true"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S32"
+    },
+    {
+      "id": "wb_L3_s32_q05",
+      "stem": "Statement: All prime numbers are odd. Which is correct?",
+      "interaction_mode": "mcq",
+      "topic": "Pattern of shapes",
+      "difficulty_tier": "warmup",
+      "question_number": 5,
+      "choices": [
+        "True",
+        "False",
+        "True only for numbers > 2",
+        "Cannot determine"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S32"
+    },
+    {
+      "id": "wb_L3_s32_q06",
+      "stem": "Assertion: 0 is a natural number. Reason: Natural numbers start from 1.",
+      "interaction_mode": "mcq",
+      "topic": "Pattern of shapes",
+      "difficulty_tier": "practice",
+      "question_number": 6,
+      "choices": [
+        "Both A and R are true, R is correct explanation",
+        "A is false, R is true",
+        "A is true, R is false",
+        "Both are false"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S32"
+    },
+    {
+      "id": "wb_L3_s32_q07",
+      "stem": "Statement I: A rhombus has all sides equal. Statement II: A rhombus has all angles equal. Which is correct?",
+      "interaction_mode": "mcq",
+      "topic": "Pattern of shapes",
+      "difficulty_tier": "practice",
+      "question_number": 7,
+      "choices": [
+        "Only I",
+        "Only II",
+        "Both I and II",
+        "Neither"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S32"
+    },
+    {
+      "id": "wb_L3_s32_q08",
+      "stem": "Assertion: The area of a rectangle with length 5 and breadth 3 is 15. Reason: Area of rectangle = length + breadth.",
+      "interaction_mode": "mcq",
+      "topic": "Pattern of shapes",
+      "difficulty_tier": "practice",
+      "question_number": 8,
+      "choices": [
+        "Both A and R are true, R is correct explanation",
+        "A is true, R is false",
+        "A is false, R is true",
+        "Both are false"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S32"
+    },
+    {
+      "id": "wb_L3_s32_q09",
+      "stem": "Statement: A circle has infinite lines of symmetry.",
+      "interaction_mode": "mcq",
+      "topic": "Pattern of shapes",
+      "difficulty_tier": "practice",
+      "question_number": 9,
+      "choices": [
+        "True",
+        "False",
+        "It has only 4",
+        "It has only 2"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S32"
+    },
+    {
+      "id": "wb_L3_s32_q10",
+      "stem": "Assertion: 7 x 8 = 54. Reason: Multiplication is repeated addition.",
+      "interaction_mode": "mcq",
+      "topic": "Pattern of shapes",
+      "difficulty_tier": "practice",
+      "question_number": 10,
+      "choices": [
+        "Both A and R are true, R is correct explanation",
+        "Both A and R are true, R is not correct explanation",
+        "A is false, R is true",
+        "Both are false"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S32"
+    },
+    {
+      "id": "wb_L3_s32_q11",
+      "stem": "Statement I: The perimeter of a square with side 5 cm is 20 cm. Statement II: The area of the same square is 20 sq cm.",
+      "interaction_mode": "mcq",
+      "topic": "Pattern of shapes",
+      "difficulty_tier": "challenge",
+      "question_number": 11,
+      "choices": [
+        "Only I is true",
+        "Only II is true",
+        "Both are true",
+        "Neither is true"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S32"
+    },
+    {
+      "id": "wb_L3_s32_q12",
+      "stem": "Assertion: February has 29 days in a leap year. Reason: A leap year is divisible by 4 but not by 100, unless also divisible by 400.",
+      "interaction_mode": "mcq",
+      "topic": "Pattern of shapes",
+      "difficulty_tier": "challenge",
+      "question_number": 12,
+      "choices": [
+        "Both A and R are true, R is correct explanation",
+        "Both A and R are true, R is not correct explanation",
+        "A is true, R is false",
+        "A is false, R is true"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S32"
+    },
+    {
+      "id": "wb_L3_s32_q13",
+      "stem": "Statement: The smallest 3-digit number is 100.",
+      "interaction_mode": "mcq",
+      "topic": "Pattern of shapes",
+      "difficulty_tier": "challenge",
+      "question_number": 13,
+      "choices": [
+        "True",
+        "False",
+        "It is 101",
+        "It is 001"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S32"
+    },
+    {
+      "id": "wb_L3_s32_q14",
+      "stem": "Assertion: A cube has 8 faces. Reason: A cube is a 3D shape with all sides equal.",
+      "interaction_mode": "mcq",
+      "topic": "Pattern of shapes",
+      "difficulty_tier": "challenge",
+      "question_number": 14,
+      "choices": [
+        "Both A and R are true, R is correct explanation",
+        "A is false, R is true",
+        "Both are true, R is not correct explanation",
+        "Both are false"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S32"
+    },
+    {
+      "id": "wb_L3_s32_q15",
+      "stem": "Statement I: HCF of 12 and 18 is 6. Statement II: LCM of 12 and 18 is 36.",
+      "interaction_mode": "mcq",
+      "topic": "Pattern of shapes",
+      "difficulty_tier": "challenge",
+      "question_number": 15,
+      "choices": [
+        "Only I is true",
+        "Only II is true",
+        "Both are true",
+        "Neither is true"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S32"
+    },
+    {
+      "id": "wb_L3_s38_q01",
+      "stem": "The graph shows people who signed up for games during Family Fun Day. In which game is there twice as many adults as children?",
+      "interaction_mode": "mcq",
+      "topic": "Data Handling",
+      "difficulty_tier": "warmup",
+      "question_number": 1,
+      "choices": [
+        "Volleyball",
+        "Basketball",
+        "Table tennis",
+        "Badminton"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S38",
+      "svg": "svg/wb_L3_s38_q01.svg"
+    },
+    {
+      "id": "wb_L3_s38_q02",
+      "stem": "The graph shows weight of 5 children. What is the difference in weights of the heaviest and lightest child?",
+      "interaction_mode": "mcq",
+      "topic": "Data Handling",
+      "difficulty_tier": "warmup",
+      "question_number": 2,
+      "choices": [
+        "20 kg",
+        "15 kg",
+        "5 kg",
+        "10 kg"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S38",
+      "svg": "svg/wb_L3_s38_q02.svg"
+    },
+    {
+      "id": "wb_L3_s38_q03",
+      "stem": "If Naina's weight increases by 5 kg, then what is the total weight of the five children?",
+      "interaction_mode": "mcq",
+      "topic": "Data Handling",
+      "difficulty_tier": "warmup",
+      "question_number": 3,
+      "choices": [
+        "135 kg",
+        "140 kg",
+        "145 kg",
+        "155 kg"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S38",
+      "svg": "svg/wb_L3_s38_q02.svg"
+    },
+    {
+      "id": "wb_L3_s38_q04",
+      "stem": "The bar graph shows juice consumed by two schools over 5 days. How much more juice is consumed by school X than School Y?",
+      "interaction_mode": "mcq",
+      "topic": "Data Handling",
+      "difficulty_tier": "warmup",
+      "question_number": 4,
+      "choices": [
+        "35 L",
+        "85 L",
+        "70 L",
+        "50 L"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S38"
+    },
+    {
+      "id": "wb_L3_s38_q05",
+      "stem": "In a pictograph, a half symbol represents",
+      "interaction_mode": "mcq",
+      "topic": "Pie graph and pictograph",
+      "difficulty_tier": "warmup",
+      "question_number": 5,
+      "choices": [
+        "Full value",
+        "Double value",
+        "Half the value of one symbol",
+        "Zero"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S38"
+    },
+    {
+      "id": "wb_L3_s38_q06",
+      "stem": "A pie chart shows expenses: Food 120 degrees, Rent 90 degrees, Transport 60 degrees, Others 90 degrees. What percentage is spent on food?",
+      "interaction_mode": "mcq",
+      "topic": "Pie graph and pictograph",
+      "difficulty_tier": "practice",
+      "question_number": 6,
+      "choices": [
+        "25%",
+        "33.3%",
+        "40%",
+        "50%"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S38"
+    },
+    {
+      "id": "wb_L3_s38_q07",
+      "stem": "In a pictograph where each picture = 20 students, how many pictures represent 70 students?",
+      "interaction_mode": "mcq",
+      "topic": "Pie graph and pictograph",
+      "difficulty_tier": "practice",
+      "question_number": 7,
+      "choices": [
+        "3",
+        "3.5",
+        "4",
+        "7"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S38"
+    },
+    {
+      "id": "wb_L3_s38_q08",
+      "stem": "A bar graph shows: Monday 30, Tuesday 45, Wednesday 25, Thursday 50, Friday 40. Which day had the least sales?",
+      "interaction_mode": "mcq",
+      "topic": "Pie graph and pictograph",
+      "difficulty_tier": "practice",
+      "question_number": 8,
+      "choices": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Friday"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S38"
+    },
+    {
+      "id": "wb_L3_s38_q09",
+      "stem": "In a pie chart, if Science = 72 degrees out of 360 degrees total, what percentage of students like Science?",
+      "interaction_mode": "mcq",
+      "topic": "Pie graph and pictograph",
+      "difficulty_tier": "practice",
+      "question_number": 9,
+      "choices": [
+        "72%",
+        "20%",
+        "36%",
+        "15%"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S38"
+    },
+    {
+      "id": "wb_L3_s38_q10",
+      "stem": "A pictograph uses smiley faces. If 3 full faces and 1 half face are shown, and each face = 8 children, how many children are represented?",
+      "interaction_mode": "mcq",
+      "topic": "Pie graph and pictograph",
+      "difficulty_tier": "practice",
+      "question_number": 10,
+      "choices": [
+        "24",
+        "28",
+        "32",
+        "30"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S38"
+    },
+    {
+      "id": "wb_L3_s38_q11",
+      "stem": "In a bar graph, if the y-axis scale starts at 0 and goes to 100 with intervals of 20, a bar reaching the 60 mark represents",
+      "interaction_mode": "mcq",
+      "topic": "Pie graph and pictograph",
+      "difficulty_tier": "challenge",
+      "question_number": 11,
+      "choices": [
+        "3 units",
+        "60 units",
+        "6 units",
+        "30 units"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S38"
+    },
+    {
+      "id": "wb_L3_s38_q12",
+      "stem": "A pie chart for 600 students shows Cricket at 120 degrees. How many students prefer Cricket?",
+      "interaction_mode": "mcq",
+      "topic": "Pie graph and pictograph",
+      "difficulty_tier": "challenge",
+      "question_number": 12,
+      "choices": [
+        "120",
+        "200",
+        "300",
+        "180"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S38"
+    },
+    {
+      "id": "wb_L3_s38_q13",
+      "stem": "In a pictograph, if each tree symbol = 50 trees and a region shows 4 full symbols and 1 half symbol, the total trees are",
+      "interaction_mode": "mcq",
+      "topic": "Pie graph and pictograph",
+      "difficulty_tier": "challenge",
+      "question_number": 13,
+      "choices": [
+        "200",
+        "225",
+        "250",
+        "175"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S38"
+    },
+    {
+      "id": "wb_L3_s38_q14",
+      "stem": "The difference between the highest and lowest bars in a bar graph is called",
+      "interaction_mode": "mcq",
+      "topic": "Pie graph and pictograph",
+      "difficulty_tier": "challenge",
+      "question_number": 14,
+      "choices": [
+        "Mean",
+        "Range",
+        "Mode",
+        "Median"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S38"
+    },
+    {
+      "id": "wb_L3_s38_q15",
+      "stem": "A pie chart has 5 equal sections. The angle of each section is",
+      "interaction_mode": "mcq",
+      "topic": "Pie graph and pictograph",
+      "difficulty_tier": "challenge",
+      "question_number": 15,
+      "choices": [
+        "36 degrees",
+        "72 degrees",
+        "60 degrees",
+        "45 degrees"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S38"
+    },
+    {
+      "id": "wb_L3_s40_q01",
+      "stem": "If BALL is coded as CBMM, then GAME is coded as",
+      "interaction_mode": "mcq",
+      "topic": "Mental Ability",
+      "difficulty_tier": "warmup",
+      "question_number": 1,
+      "choices": [
+        "HBNF",
+        "HBNE",
+        "GBNF",
+        "HCNF"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S40"
+    },
+    {
+      "id": "wb_L3_s40_q02",
+      "stem": "What is the mirror image of the number 3?",
+      "interaction_mode": "mcq",
+      "topic": "Mental Ability",
+      "difficulty_tier": "warmup",
+      "question_number": 2,
+      "choices": [
+        "3",
+        "E",
+        "Reversed 3",
+        "8"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S40"
+    },
+    {
+      "id": "wb_L3_s40_q03",
+      "stem": "Find the next in the pattern: 2, 6, 12, 20, 30, ?",
+      "interaction_mode": "mcq",
+      "topic": "Mental Ability",
+      "difficulty_tier": "warmup",
+      "question_number": 3,
+      "choices": [
+        "36",
+        "40",
+        "42",
+        "48"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S40"
+    },
+    {
+      "id": "wb_L3_s40_q04",
+      "stem": "If in a code, CAT = 24, DOG = 26, then BAT = ?",
+      "interaction_mode": "mcq",
+      "topic": "Mental Ability",
+      "difficulty_tier": "warmup",
+      "question_number": 4,
+      "choices": [
+        "23",
+        "22",
+        "25",
+        "21"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S40"
+    },
+    {
+      "id": "wb_L3_s40_q05",
+      "stem": "What comes next: A, C, F, J, ?",
+      "interaction_mode": "mcq",
+      "topic": "Mental Ability",
+      "difficulty_tier": "warmup",
+      "question_number": 5,
+      "choices": [
+        "N",
+        "O",
+        "M",
+        "P"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S40"
+    },
+    {
+      "id": "wb_L3_s40_q06",
+      "stem": "If TREE is coded as 20-18-5-5, then PLANT is coded as",
+      "interaction_mode": "mcq",
+      "topic": "Mental Ability",
+      "difficulty_tier": "practice",
+      "question_number": 6,
+      "choices": [
+        "16-12-1-14-20",
+        "15-11-1-13-19",
+        "16-12-2-14-20",
+        "17-12-1-14-20"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S40"
+    },
+    {
+      "id": "wb_L3_s40_q07",
+      "stem": "The mirror image of the word BED looks like",
+      "interaction_mode": "mcq",
+      "topic": "Mental Ability",
+      "difficulty_tier": "practice",
+      "question_number": 7,
+      "choices": [
+        "BED",
+        "DEb",
+        "BEb",
+        "dEB"
+      ],
+      "correct_answer": 3,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S40"
+    },
+    {
+      "id": "wb_L3_s40_q08",
+      "stem": "Find the missing number: 3, 9, 27, 81, ?",
+      "interaction_mode": "mcq",
+      "topic": "Mental Ability",
+      "difficulty_tier": "practice",
+      "question_number": 8,
+      "choices": [
+        "162",
+        "243",
+        "324",
+        "108"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S40"
+    },
+    {
+      "id": "wb_L3_s40_q09",
+      "stem": "If A=1, B=2, ..., Z=26, what is the sum of the letters in the word SUM?",
+      "interaction_mode": "mcq",
+      "topic": "Mental Ability",
+      "difficulty_tier": "practice",
+      "question_number": 9,
+      "choices": [
+        "52",
+        "53",
+        "55",
+        "50"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S40"
+    },
+    {
+      "id": "wb_L3_s40_q10",
+      "stem": "Which figure comes next in the pattern: Circle, Square, Triangle, Circle, Square, ?",
+      "interaction_mode": "mcq",
+      "topic": "Mental Ability",
+      "difficulty_tier": "practice",
+      "question_number": 10,
+      "choices": [
+        "Circle",
+        "Square",
+        "Triangle",
+        "Rectangle"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S40"
+    },
+    {
+      "id": "wb_L3_s40_q11",
+      "stem": "In a mirror, AMBULANCE reads correctly because it is written",
+      "interaction_mode": "mcq",
+      "topic": "Mental Ability",
+      "difficulty_tier": "challenge",
+      "question_number": 11,
+      "choices": [
+        "Upside down",
+        "In reverse",
+        "In bold",
+        "In small letters"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S40"
+    },
+    {
+      "id": "wb_L3_s40_q12",
+      "stem": "If PEN = 35, then PENCIL = ?",
+      "interaction_mode": "mcq",
+      "topic": "Mental Ability",
+      "difficulty_tier": "challenge",
+      "question_number": 12,
+      "choices": [
+        "50",
+        "55",
+        "60",
+        "52"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S40"
+    },
+    {
+      "id": "wb_L3_s40_q13",
+      "stem": "Complete the series: 1, 1, 2, 3, 5, 8, ?",
+      "interaction_mode": "mcq",
+      "topic": "Mental Ability",
+      "difficulty_tier": "challenge",
+      "question_number": 13,
+      "choices": [
+        "11",
+        "12",
+        "13",
+        "10"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S40"
+    },
+    {
+      "id": "wb_L3_s40_q14",
+      "stem": "If in a certain code, MANGO is written as OCPIQ, then APPLE is written as",
+      "interaction_mode": "mcq",
+      "topic": "Mental Ability",
+      "difficulty_tier": "challenge",
+      "question_number": 14,
+      "choices": [
+        "CRRNG",
+        "CRRNE",
+        "CRRNG",
+        "BQQMF"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S40"
+    },
+    {
+      "id": "wb_L3_s40_q15",
+      "stem": "What is the water image (reflection in water) of the letter M?",
+      "interaction_mode": "mcq",
+      "topic": "Mental Ability",
+      "difficulty_tier": "challenge",
+      "question_number": 15,
+      "choices": [
+        "M",
+        "W",
+        "Inverted M",
+        "N"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S40"
+    }
+  ]
+}

@@ -211,10 +211,4 @@ def resolve_flag(flag_id: str, resolution: str = "fixed"):
 
     Removes it from the active queue. Logs the resolution.
     """
-    with flag_store._lock:
-        for i, f in enumerate(flag_store._flags):
-            if f["flag_id"] == flag_id:
-                f["resolved"] = True
-                f["resolution"] = resolution
-                return {"status": "resolved", "flag_id": flag_id}
-    return {"status": "not_found", "flag_id": flag_id}
+    return flag_store.resolve_flag(flag_id, resolution)

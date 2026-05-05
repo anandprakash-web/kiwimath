@@ -91,7 +91,7 @@ class _BenchmarkTestScreenState extends State<BenchmarkTestScreen> {
     Future.delayed(const Duration(milliseconds: 600), () {
       if (!mounted) return;
       final q = _questions[_currentIndex];
-      final options = (q['options'] as List<dynamic>? ?? []);
+      final options = (q['choices'] as List<dynamic>? ?? []);
       final selectedText = index < options.length ? options[index].toString() : '';
 
       _responses.add({
@@ -109,6 +109,25 @@ class _BenchmarkTestScreenState extends State<BenchmarkTestScreen> {
         _submitTest();
       }
     });
+  }
+
+  void _skipQuestion() {
+    final q = _questions[_currentIndex];
+    _responses.add({
+      'question_id': q['question_id'] ?? q['id'] ?? '',
+      'selected_option': -1,
+      'selected_text': '',
+      'skipped': true,
+    });
+
+    if (_currentIndex + 1 < _questions.length) {
+      setState(() {
+        _currentIndex++;
+        _selectedOption = null;
+      });
+    } else {
+      _submitTest();
+    }
   }
 
   Future<void> _submitTest() async {
@@ -316,11 +335,11 @@ class _BenchmarkTestScreenState extends State<BenchmarkTestScreen> {
   Widget _buildQuestion() {
     final q = _questions[_currentIndex];
     final stem = q['stem']?.toString() ?? q['question']?.toString() ?? '';
-    final options = (q['options'] as List<dynamic>? ?? [])
+    final options = (q['choices'] as List<dynamic>? ?? [])
         .map((e) => e.toString())
         .toList();
     final progress = (_currentIndex + 1) / _questions.length;
-    final correctIndex = q['correct_option'] as int?;
+    final correctIndex = q['correct_answer'] as int?;
 
     return Padding(
       padding: const EdgeInsets.fromLTRB(18, 12, 18, 18),
@@ -411,6 +430,40 @@ class _BenchmarkTestScreenState extends State<BenchmarkTestScreen> {
                       ),
                     );
                   }),
+
+                  // Skip button — lets user advance even without selecting
+                  if (_selectedOption == null)
+                    Padding(
+                      padding: const EdgeInsets.only(top: 12),
+                      child: Center(
+                        child: GestureDetector(
+                          onTap: _skipQuestion,
+                          child: Container(
+                            padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+                            decoration: BoxDecoration(
+                              color: Colors.grey.shade100,
+                              borderRadius: BorderRadius.circular(20),
+                              border: Border.all(color: Colors.grey.shade300),
+                            ),
+                            child: Row(
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                Icon(Icons.skip_next_rounded, size: 18, color: Colors.grey.shade600),
+                                const SizedBox(width: 6),
+                                Text(
+                                  'Skip',
+                                  style: TextStyle(
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.w600,
+                                    color: Colors.grey.shade600,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
                 ],
               ),
             ),

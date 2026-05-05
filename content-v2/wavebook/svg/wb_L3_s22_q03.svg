@@ -1,0 +1,11 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Large circle: Animals -->
+  <circle cx="200" cy="160" r="130" fill="none" stroke="black" stroke-width="2"/>
+  <text x="200" y="45" text-anchor="middle" font-family="Arial" font-size="16" fill="black" font-weight="bold">Animals</text>
+  <!-- Tiger circle (non-overlapping) -->
+  <circle cx="140" cy="180" r="55" fill="none" stroke="blue" stroke-width="2"/>
+  <text x="140" y="185" text-anchor="middle" font-family="Arial" font-size="14" fill="blue">Tiger</text>
+  <!-- Elephant circle (non-overlapping) -->
+  <circle cx="265" cy="180" r="55" fill="none" stroke="blue" stroke-width="2"/>
+  <text x="265" y="185" text-anchor="middle" font-family="Arial" font-size="14" fill="blue">Elephant</text>
+</svg>

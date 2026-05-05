@@ -1,0 +1,14 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Large square 8cm -->
+  <rect x="50" y="60" width="160" height="160" fill="none" stroke="black" stroke-width="2"/>
+  <!-- Small square 6cm joined on right, sharing edge -->
+  <rect x="210" y="100" width="120" height="120" fill="none" stroke="black" stroke-width="2"/>
+  <!-- Perimeter highlight -->
+  <polyline points="50,60 210,60 210,100 330,100 330,220 210,220 210,220 50,220 50,60" fill="none" stroke="orange" stroke-width="3" stroke-dasharray="8,4"/>
+  <!-- Labels -->
+  <text x="130" y="50" text-anchor="middle" font-family="Arial" font-size="13" fill="blue">8 cm</text>
+  <text x="35" y="145" text-anchor="middle" font-family="Arial" font-size="13" fill="blue" transform="rotate(-90 35 145)">8 cm</text>
+  <text x="270" y="93" text-anchor="middle" font-family="Arial" font-size="13" fill="blue">6 cm</text>
+  <text x="345" y="165" text-anchor="middle" font-family="Arial" font-size="13" fill="blue" transform="rotate(90 345 165)">6 cm</text>
+  <text x="200" y="285" text-anchor="middle" font-family="Arial" font-size="12" fill="black">Perimeter path shown in orange</text>
+</svg>

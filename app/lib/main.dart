@@ -4,28 +4,33 @@ import 'package:flutter/material.dart';
 
 import 'firebase_options.dart';
 import 'models/clan.dart';
-import 'models/question_v2.dart';
-import 'models/student_levels.dart';
+import 'models/engagement.dart';
 import 'models/user_profile.dart';
 import 'screens/clan_create_screen.dart';
 import 'screens/clan_hub_screen.dart';
 import 'screens/clan_join_screen.dart';
 import 'screens/clan_leaderboard_screen.dart';
-import 'screens/home_screen.dart';
-import 'screens/learning_path_screen.dart';
+import 'screens/curriculum_screen.dart';
+import 'screens/daily_puzzle_screen.dart';
+import 'screens/benchmark_test_screen.dart';
+import 'screens/growth_tab_screen.dart';
+import 'screens/olympiad_screen.dart';
+import 'screens/olympiad_tab_screen.dart';
 import 'screens/onboarding_screen.dart';
 import 'screens/parent_dashboard_screen.dart';
 import 'screens/picture_challenge_screen.dart';
+import 'screens/profile_screen.dart';
 import 'screens/question_screen_v2.dart';
+import 'screens/rewards_screen.dart';
 import 'screens/sign_in_screen.dart';
 import 'services/api_client.dart';
 import 'services/auth_service.dart';
 import 'services/clan_service.dart';
-import 'models/companion.dart';
 import 'services/companion_service.dart';
+import 'services/engagement_service.dart';
+import 'services/growth_service.dart';
 import 'theme/kiwi_theme.dart';
-import 'widgets/companion_view.dart';
-import 'widgets/parental_gate.dart';
+import 'widgets/pin_gate.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -74,13 +79,15 @@ class _AuthWrapper extends StatelessWidget {
   }
 }
 
-/// v5 app shell — pure adaptive engine, ground-up rebuild.
+/// v8 app shell — 6-tab navigation.
 ///
-/// Key architecture changes from v4:
-///   - Adaptive practice is THE primary experience
-///   - No curriculum gating on home screen
-///   - Bottom nav: "Home" / "School" / "Parent"
-///   - Chapters load only for syllabus tab (not home)
+/// Bottom nav: Olympiad / School / Growth / Clan / Parent / Profile
+///   - Olympiad: Smart practice with progressive topic unlocking
+///   - School: Multi-curriculum chapter browser (Cambridge, NCERT, Singapore, ICSE)
+///   - Growth: Diagnostic test → improvement journey with mountain climb
+///   - Clan: Team-based puzzle challenges + daily challenge
+///   - Parent: PIN-protected dashboard
+///   - Profile: Stats, invite, quote, sign out
 class _AppShell extends StatefulWidget {
   final String userId;
   const _AppShell({required this.userId});
@@ -95,27 +102,17 @@ class _AppShellState extends State<_AppShell> {
   bool _loading = true;
   String? _error;
 
-  // Bottom nav: 0=Home, 1=School, 2=Clan, 3=Parent
+  // Bottom nav: 0=Olympiad, 1=School, 2=Growth, 3=Clan, 4=Parent, 5=Profile
   int _selectedTab = 0;
 
-  // Parental gate
-  bool _parentGatePassed = false;
+  // Parent PIN gate
+  bool _parentPinVerified = false;
 
   // Grade
   int _selectedGrade = 1;
 
   // Student name
   String _studentName = '';
-
-  // v2 adaptive topics (ALWAYS loaded — the primary content)
-  List<TopicV2>? _topicsV2;
-  bool _topicsV2Loading = false;
-
-  // Student levels
-  StudentLevels? _studentLevels;
-
-  // Mastery overview
-  Map<String, dynamic>? _masteryOverview;
 
   // Companion
   final CompanionService _companionService = CompanionService();
@@ -129,6 +126,15 @@ class _AppShellState extends State<_AppShell> {
   List<LeaderboardEntry> _leaderboardEntries = [];
   bool _clanLoading = false;
 
+  // Engagement
+  final EngagementService _engagementService = EngagementService.instance;
+  DailyPuzzle? _dailyPuzzle;
+  StreakData? _streakData;
+  LeagueStatus? _leagueStatus;
+  ClanWar? _clanWar;
+  RewardData? _rewardData;
+  Pledge? _activePledge;
+
   // Onboarding guard
   bool _onboardingHandled = false;
 
@@ -136,9 +142,6 @@ class _AppShellState extends State<_AppShell> {
   void initState() {
     super.initState();
     _loadProfile();
-    _loadTopicsV2();
-    _loadStudentLevels();
-    _loadMasteryOverview();
     _companionService.initialize();
     _loadClan();
   }
@@ -184,7 +187,6 @@ class _AppShellState extends State<_AppShell> {
       _onboardingHandled = true;
       if (_profile.grade != null && _profile.grade != _selectedGrade) {
         setState(() => _selectedGrade = _profile.grade!);
-        _loadTopicsV2();
       }
       return;
     }
@@ -207,7 +209,6 @@ class _AppShellState extends State<_AppShell> {
               final newGrade = result.grade.clamp(1, 6);
               if (newGrade != _selectedGrade) {
                 setState(() => _selectedGrade = newGrade);
-                _loadTopicsV2();
               }
               Navigator.of(context).pop();
               _loadProfile();
@@ -231,7 +232,6 @@ class _AppShellState extends State<_AppShell> {
             final newGrade = result.grade.clamp(1, 6);
             if (newGrade != _selectedGrade) {
               setState(() => _selectedGrade = newGrade);
-              _loadTopicsV2();
             }
             Navigator.of(context).pop();
             _loadProfile();
@@ -241,42 +241,20 @@ class _AppShellState extends State<_AppShell> {
     );
   }
 
-  Future<void> _loadTopicsV2() async {
-    setState(() => _topicsV2Loading = true);
-    try {
-      final topics = await _api.getTopicsV2(grade: _selectedGrade);
-      setState(() {
-        _topicsV2 = topics;
-        _topicsV2Loading = false;
-      });
-    } catch (e) {
-      debugPrint('Failed to load v2 topics: $e');
-      setState(() {
-        _topicsV2 = null;
-        _topicsV2Loading = false;
-      });
-    }
-  }
+  // ---------------------------------------------------------------------------
+  // Avatar change — save to backend
+  // ---------------------------------------------------------------------------
 
-  Future<void> _loadStudentLevels() async {
-    try {
-      final levels = await _api.getStudentLevels(
-        userId: widget.userId,
-        grade: _selectedGrade,
-      );
-      setState(() => _studentLevels = levels);
-    } catch (e) {
-      debugPrint('Failed to load student levels: $e');
-    }
-  }
-
-  Future<void> _loadMasteryOverview() async {
-    try {
-      final overview = await _api.getMasteryOverview(widget.userId, _selectedGrade);
-      setState(() => _masteryOverview = overview);
-    } catch (e) {
-      debugPrint('Failed to load mastery overview: $e');
-    }
+  void _onAvatarChanged(String emoji) {
+    setState(() {
+      _profile = _profile.copyWith();
+    });
+    // Save to backend (fire-and-forget)
+    _api.updateStudentProfile(userId: widget.userId, avatar: emoji).then((_) {
+      _loadProfile(); // Reload to get the updated avatar
+    }).catchError((_) {
+      // Silently ignore — the avatar will reload on next app start
+    });
   }
 
   // ---------------------------------------------------------------------------
@@ -289,6 +267,10 @@ class _AppShellState extends State<_AppShell> {
       // Check if user belongs to a clan
       final myClan = await _clanService.getMyClan(userUid: widget.userId);
       setState(() => _clan = myClan);
+
+      // Always load engagement data (daily puzzle, streaks, etc.)
+      // even without a clan — the Clan landing page shows daily challenge.
+      _loadEngagementData();
 
       if (myClan != null) {
         // Load active challenge
@@ -309,6 +291,33 @@ class _AppShellState extends State<_AppShell> {
       debugPrint('Failed to load clan data: $e');
     } finally {
       setState(() => _clanLoading = false);
+    }
+  }
+
+  Future<void> _loadEngagementData() async {
+    try {
+      final futures = await Future.wait([
+        _engagementService.getDailyPuzzle(grade: _selectedGrade),
+        _engagementService.getStreak(uid: widget.userId),
+        _engagementService.getLeagueStatus(uid: widget.userId),
+        _engagementService.getRewards(uid: widget.userId),
+        if (_clan != null) _engagementService.getCurrentWar(clanId: _clan!.clanId),
+        if (_clan != null) _engagementService.getClanPledges(clanId: _clan!.clanId),
+      ]);
+
+      setState(() {
+        _dailyPuzzle = futures[0] as DailyPuzzle?;
+        _streakData = futures[1] as StreakData?;
+        _leagueStatus = futures[2] as LeagueStatus?;
+        _rewardData = futures[3] as RewardData?;
+        if (futures.length > 4) _clanWar = futures[4] as ClanWar?;
+        if (futures.length > 5) {
+          final pledges = futures[5] as List<Pledge>?;
+          _activePledge = pledges?.where((p) => p.uid == widget.userId && p.active).firstOrNull;
+        }
+      });
+    } catch (e) {
+      debugPrint('Failed to load engagement data: $e');
     }
   }
 
@@ -512,6 +521,111 @@ class _AppShellState extends State<_AppShell> {
   }
 
   // ---------------------------------------------------------------------------
+  // Engagement navigation callbacks
+  // ---------------------------------------------------------------------------
+
+  void _navigateToDailyPuzzle() {
+    if (_dailyPuzzle == null) return;
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (_) => DailyPuzzleScreen(
+          puzzle: _dailyPuzzle!,
+          currentStreak: _streakData?.currentStreak ?? 0,
+          gemsBalance: _rewardData?.totalGems ?? 0,
+          onSubmit: (selectedIndex) async {
+            try {
+              final options = _dailyPuzzle!.options;
+              final answerText = selectedIndex < options.length
+                  ? options[selectedIndex]
+                  : '$selectedIndex';
+              await _engagementService.submitPuzzleAnswer(
+                uid: widget.userId,
+                puzzleId: _dailyPuzzle!.puzzleId,
+                answer: answerText,
+                timeTakenSeconds: 0, // DailyPuzzleScreen tracks internally
+              );
+              _loadEngagementData();
+            } catch (e) {
+              debugPrint('Failed to submit puzzle answer: $e');
+            }
+          },
+          onClose: () {
+            Navigator.of(context).pop();
+            _loadEngagementData();
+          },
+        ),
+      ),
+    );
+  }
+
+  void _navigateToRewards() {
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (_) => RewardsScreen(
+          grade: _selectedGrade,
+          stickers: _rewardData?.stickersCollected ?? [],
+          stickerProgress: _rewardData?.stickerAlbumProgress ?? 0.0,
+          badges: _rewardData?.badges ?? [],
+          mysteryBoxesAvailable: _rewardData?.mysteryBoxesAvailable ?? 0,
+          onOpenMysteryBox: () async {
+            try {
+              await _engagementService.openMysteryBox(uid: widget.userId);
+              _loadEngagementData();
+            } catch (e) {
+              debugPrint('Failed to open mystery box: $e');
+            }
+          },
+          onClose: () {
+            Navigator.of(context).pop();
+            _loadEngagementData();
+          },
+        ),
+      ),
+    );
+  }
+
+  Future<void> _handleClaimDailyReward() async {
+    try {
+      await _engagementService.claimDailyReward(uid: widget.userId);
+      _loadEngagementData();
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(content: Text('Daily reward claimed!')),
+        );
+      }
+    } catch (e) {
+      debugPrint('Failed to claim daily reward: $e');
+    }
+  }
+
+  Future<void> _handleOpenMysteryBox() async {
+    try {
+      await _engagementService.openMysteryBox(uid: widget.userId);
+      _loadEngagementData();
+    } catch (e) {
+      debugPrint('Failed to open mystery box: $e');
+    }
+  }
+
+  Future<void> _handleMakePledge() async {
+    if (_clan == null) return;
+    try {
+      await _engagementService.createPledge(
+        uid: widget.userId,
+        targetPuzzles: 5,
+      );
+      _loadEngagementData();
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(content: Text('Pledge made! Your clan is counting on you.')),
+        );
+      }
+    } catch (e) {
+      debugPrint('Failed to make pledge: $e');
+    }
+  }
+
+  // ---------------------------------------------------------------------------
   // Clan landing widget (no-clan state)
   // ---------------------------------------------------------------------------
 
@@ -519,136 +633,298 @@ class _AppShellState extends State<_AppShell> {
     return Scaffold(
       backgroundColor: KiwiColors.cream,
       body: SafeArea(
-        child: Center(
-          child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 32),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                const Text('⚔️', style: TextStyle(fontSize: 64)),
-                const SizedBox(height: 16),
-                Text(
-                  'Join a Clan!',
-                  style: TextStyle(
-                    fontSize: 28,
-                    fontWeight: FontWeight.w800,
-                    color: tier.colors.textPrimary,
-                  ),
+        child: SingleChildScrollView(
+          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              // ── Header ──────────────────────────────────────────────
+              Text(
+                'Clan',
+                style: TextStyle(
+                  fontSize: tier.typography.headlineSize + 2,
+                  fontWeight: FontWeight.w800,
+                  color: tier.colors.textPrimary,
+                  fontFamily: tier.typography.fontFamily,
                 ),
-                const SizedBox(height: 8),
-                Text(
-                  'Team up with friends, solve puzzles together, and compete on the leaderboard!',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontSize: 15,
-                    color: tier.colors.textSecondary,
-                  ),
+              ),
+              const SizedBox(height: 4),
+              Text(
+                'Team up, challenge, compete!',
+                style: TextStyle(
+                  fontSize: tier.typography.bodySize,
+                  color: tier.colors.textSecondary,
+                  fontFamily: tier.typography.fontFamily,
                 ),
-                const SizedBox(height: 32),
-                // Create clan button
-                SizedBox(
+              ),
+              const SizedBox(height: 20),
+
+              // ── Daily Challenge card (shown even without a clan) ───
+              if (_dailyPuzzle != null)
+                _buildDailyPuzzlePreview(tier),
+              if (_dailyPuzzle != null) const SizedBox(height: 16),
+
+              // ── Streak info ─────────────────────────────────────────
+              if (_streakData != null)
+                Container(
                   width: double.infinity,
-                  child: Container(
-                    decoration: BoxDecoration(
-                      gradient: LinearGradient(
-                        colors: [tier.colors.primary, tier.colors.primaryDark],
+                  padding: const EdgeInsets.all(16),
+                  decoration: BoxDecoration(
+                    color: tier.colors.cardBg,
+                    borderRadius: BorderRadius.circular(tier.shape.cardRadius),
+                    border: Border.all(color: tier.colors.topicCardBorder),
+                  ),
+                  child: Row(
+                    children: [
+                      const Text('\u{1F525}', style: TextStyle(fontSize: 28)),
+                      const SizedBox(width: 12),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            '${_streakData!.currentStreak} day streak',
+                            style: TextStyle(
+                              fontSize: 16,
+                              fontWeight: FontWeight.w700,
+                              color: tier.colors.textPrimary,
+                            ),
+                          ),
+                          Text(
+                            'Keep solving puzzles daily!',
+                            style: TextStyle(
+                              fontSize: 13,
+                              color: tier.colors.textMuted,
+                            ),
+                          ),
+                        ],
                       ),
-                      borderRadius: BorderRadius.circular(14),
-                    ),
-                    child: ElevatedButton(
-                      onPressed: _navigateToCreateClan,
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.transparent,
-                        shadowColor: Colors.transparent,
-                        padding: const EdgeInsets.symmetric(vertical: 14),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(14),
-                        ),
-                      ),
-                      child: const Text(
-                        'Create a Clan',
-                        style: TextStyle(
-                          fontSize: 16,
-                          fontWeight: FontWeight.w700,
-                          color: Colors.white,
-                        ),
-                      ),
-                    ),
+                    ],
                   ),
                 ),
-                const SizedBox(height: 12),
-                // Join clan button
-                SizedBox(
-                  width: double.infinity,
-                  child: OutlinedButton(
-                    onPressed: _navigateToJoinClan,
-                    style: OutlinedButton.styleFrom(
+              if (_streakData != null) const SizedBox(height: 20),
+
+              // ── Clan promo ──────────────────────────────────────────
+              Container(
+                width: double.infinity,
+                padding: const EdgeInsets.all(20),
+                decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                    colors: [
+                      tier.colors.primary.withOpacity(0.08),
+                      tier.colors.primary.withOpacity(0.03),
+                    ],
+                    begin: Alignment.topLeft,
+                    end: Alignment.bottomRight,
+                  ),
+                  borderRadius: BorderRadius.circular(tier.shape.cardRadius),
+                  border: Border.all(
+                    color: tier.colors.primary.withOpacity(0.2),
+                  ),
+                ),
+                child: Column(
+                  children: [
+                    const Text('⚔️', style: TextStyle(fontSize: 48)),
+                    const SizedBox(height: 12),
+                    Text(
+                      'Join a Clan!',
+                      style: TextStyle(
+                        fontSize: 22,
+                        fontWeight: FontWeight.w800,
+                        color: tier.colors.textPrimary,
+                      ),
+                    ),
+                    const SizedBox(height: 6),
+                    Text(
+                      'Team up with friends, solve puzzles together, '
+                      'and compete on the leaderboard!',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontSize: 14,
+                        color: tier.colors.textSecondary,
+                        height: 1.4,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              const SizedBox(height: 20),
+
+              // ── Create / Join buttons (at bottom) ───────────────────
+              SizedBox(
+                width: double.infinity,
+                child: Container(
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                      colors: [tier.colors.primary, tier.colors.primaryDark],
+                    ),
+                    borderRadius: BorderRadius.circular(14),
+                  ),
+                  child: ElevatedButton(
+                    onPressed: _navigateToCreateClan,
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.transparent,
+                      shadowColor: Colors.transparent,
                       padding: const EdgeInsets.symmetric(vertical: 14),
-                      side: BorderSide(color: tier.colors.primary, width: 2),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(14),
                       ),
                     ),
-                    child: Text(
-                      'Join with Invite Code',
+                    child: const Text(
+                      'Create a Clan',
                       style: TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.w700,
-                        color: tier.colors.primary,
+                        color: Colors.white,
                       ),
                     ),
                   ),
                 ),
-              ],
-            ),
+              ),
+              const SizedBox(height: 12),
+              SizedBox(
+                width: double.infinity,
+                child: OutlinedButton(
+                  onPressed: _navigateToJoinClan,
+                  style: OutlinedButton.styleFrom(
+                    padding: const EdgeInsets.symmetric(vertical: 14),
+                    side: BorderSide(color: tier.colors.primary, width: 2),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(14),
+                    ),
+                  ),
+                  child: Text(
+                    'Join with Invite Code',
+                    style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.w700,
+                      color: tier.colors.primary,
+                    ),
+                  ),
+                ),
+              ),
+              const SizedBox(height: 24),
+            ],
           ),
         ),
       ),
     );
   }
 
-  Future<void> _navigateToSmartSession() async {
-    try {
-      final plan = await _api.getUnifiedSession(widget.userId, _selectedGrade);
-      if (!mounted) return;
-      final questions = plan['questions'] as List<dynamic>?;
-      if (questions == null || questions.isEmpty) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(content: Text('No questions available for smart session')),
-        );
-        return;
-      }
-      Navigator.of(context).push(
-        MaterialPageRoute(
-          builder: (_) => QuestionScreenV2(
-            topicId: 'smart-session',
-            topicName: plan['session_message'] as String? ?? 'Smart Practice',
-            userId: widget.userId,
-            grade: _selectedGrade,
-            companionService: _companionService,
-            sessionPlan: questions.cast<Map<String, dynamic>>(),
-            onBackToHome: () {
-              Navigator.of(context).pop();
-              _loadProfile();
-              _loadStudentLevels();
-              _loadMasteryOverview();
-            },
+  /// Daily puzzle preview card for the no-clan landing page.
+  Widget _buildDailyPuzzlePreview(KiwiTier tier) {
+    final puzzle = _dailyPuzzle!;
+    return GestureDetector(
+      onTap: _navigateToDailyPuzzle,
+      child: Container(
+        width: double.infinity,
+        padding: const EdgeInsets.all(16),
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            colors: [
+              const Color(0xFF1A1A2E),
+              const Color(0xFF16213E),
+            ],
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
           ),
+          borderRadius: BorderRadius.circular(tier.shape.cardRadius),
+          boxShadow: [
+            BoxShadow(
+              color: const Color(0xFF1A1A2E).withOpacity(0.2),
+              blurRadius: 10,
+              offset: const Offset(0, 4),
+            ),
+          ],
         ),
-      );
-    } catch (e) {
-      debugPrint('Failed to load unified session: $e');
-      if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(content: Text('Could not load smart session. Try again.')),
-        );
-      }
-    }
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Row(
+              children: [
+                const Text('\u{1F9E9}', style: TextStyle(fontSize: 22)),
+                const SizedBox(width: 8),
+                Expanded(
+                  child: Text(
+                    'Daily Challenge',
+                    style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.w700,
+                      color: Colors.white,
+                      fontFamily: tier.typography.fontFamily,
+                    ),
+                  ),
+                ),
+                Container(
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+                  decoration: BoxDecoration(
+                    color: KiwiColors.gemGold.withOpacity(0.2),
+                    borderRadius: BorderRadius.circular(8),
+                  ),
+                  child: Text(
+                    'Grade $_selectedGrade',
+                    style: TextStyle(
+                      fontSize: 12,
+                      fontWeight: FontWeight.w600,
+                      color: KiwiColors.gemGold,
+                      fontFamily: tier.typography.fontFamily,
+                    ),
+                  ),
+                ),
+              ],
+            ),
+            const SizedBox(height: 10),
+            Text(
+              puzzle.title,
+              style: TextStyle(
+                fontSize: 15,
+                fontWeight: FontWeight.w600,
+                color: Colors.white.withOpacity(0.9),
+                fontFamily: tier.typography.fontFamily,
+              ),
+            ),
+            const SizedBox(height: 4),
+            Text(
+              puzzle.storyNarrative.length > 80
+                  ? '${puzzle.storyNarrative.substring(0, 80)}...'
+                  : puzzle.storyNarrative,
+              style: TextStyle(
+                fontSize: 13,
+                color: Colors.white.withOpacity(0.6),
+                fontFamily: tier.typography.fontFamily,
+                height: 1.4,
+              ),
+            ),
+            const SizedBox(height: 12),
+            Container(
+              width: double.infinity,
+              padding: const EdgeInsets.symmetric(vertical: 10),
+              decoration: BoxDecoration(
+                color: KiwiColors.gemGold.withOpacity(0.15),
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: const Center(
+                child: Text(
+                  'Tap to Solve \u{2728}',
+                  style: TextStyle(
+                    fontSize: 14,
+                    fontWeight: FontWeight.w700,
+                    color: KiwiColors.gemGold,
+                  ),
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
   }
 
   void _navigateToQuestions({
     required String topicId,
     required String topicName,
+    String? curriculum,
+    String? chapter,
   }) {
     Navigator.of(context).push(
       MaterialPageRoute(
@@ -657,12 +933,30 @@ class _AppShellState extends State<_AppShell> {
           topicName: topicName,
           userId: widget.userId,
           grade: _selectedGrade,
+          curriculum: curriculum,
+          chapter: chapter,
           companionService: _companionService,
           onBackToHome: () {
             Navigator.of(context).pop();
             _loadProfile();
-            _loadStudentLevels();
-            _loadMasteryOverview();
+          },
+        ),
+      ),
+    );
+  }
+
+  void _navigateToDiagnostic() {
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (_) => BenchmarkTestScreen(
+          userId: widget.userId,
+          grade: _selectedGrade,
+          childName: _studentName.isNotEmpty ? _studentName : null,
+          benchmarkType: 'diagnostic',
+          onComplete: () {
+            Navigator.of(context).pop();
+            // Refresh growth data after diagnostic
+            setState(() {});
           },
         ),
       ),
@@ -672,9 +966,6 @@ class _AppShellState extends State<_AppShell> {
   void _onGradeChanged(int grade) {
     if (grade == _selectedGrade) return;
     setState(() => _selectedGrade = grade);
-    _loadTopicsV2();
-    _loadStudentLevels();
-    _loadMasteryOverview();
   }
 
   Future<void> _signOut() async {
@@ -682,103 +973,12 @@ class _AppShellState extends State<_AppShell> {
   }
 
   void _onTabTapped(int index) async {
-    if (index == 3 && !_parentGatePassed) {
-      final verified = await ParentalGate.show(context);
+    if (index == 4 && !_parentPinVerified) {
+      final verified = await PinGate.show(context);
       if (!verified || !mounted) return;
-      setState(() => _parentGatePassed = true);
+      setState(() => _parentPinVerified = true);
     }
     setState(() => _selectedTab = index);
-  }
-
-  void _showProfileSheet() {
-    final tier = KiwiTier.forGrade(_selectedGrade);
-    final name = _studentName.isNotEmpty ? _studentName : _profile.displayName;
-    showModalBottomSheet(
-      context: context,
-      shape: const RoundedRectangleBorder(
-        borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
-      ),
-      builder: (ctx) => SafeArea(
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 20),
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              Container(
-                width: 36, height: 4,
-                decoration: BoxDecoration(
-                  color: Colors.grey.shade300,
-                  borderRadius: BorderRadius.circular(2),
-                ),
-              ),
-              const SizedBox(height: 16),
-              // Avatar — Kiwimath orange gradient
-              Container(
-                width: 56, height: 56,
-                decoration: BoxDecoration(
-                  gradient: LinearGradient(
-                    colors: [tier.colors.primary, tier.colors.primaryDark],
-                    begin: Alignment.topLeft,
-                    end: Alignment.bottomRight,
-                  ),
-                  shape: BoxShape.circle,
-                ),
-                child: Center(
-                  child: Text(
-                    name.isNotEmpty ? name[0].toUpperCase() : 'K',
-                    style: const TextStyle(fontSize: 22, fontWeight: FontWeight.w800, color: Colors.white),
-                  ),
-                ),
-              ),
-              const SizedBox(height: 10),
-              Text(name, style: TextStyle(fontSize: 18, fontWeight: FontWeight.w800, color: tier.colors.textPrimary)),
-              Text('Grade $_selectedGrade', style: TextStyle(fontSize: 13, color: tier.colors.textMuted)),
-              const SizedBox(height: 6),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  _buildStatChip('\u{1F525}', '${_profile.streakCurrent}', tier),
-                  const SizedBox(width: 8),
-                  _buildStatChip('\u{26A1}', '${_profile.xpTotal} XP', tier),
-                  const SizedBox(width: 8),
-                  _buildStatChip('\u{1FA99}', '${_profile.kiwiCoins}', tier),
-                ],
-              ),
-              const SizedBox(height: 20),
-              ListTile(
-                leading: Icon(Icons.refresh_rounded, color: tier.colors.primary),
-                title: const Text('Retake Diagnostic Test'),
-                onTap: () { Navigator.pop(ctx); _restartOnboarding(); },
-              ),
-              ListTile(
-                leading: Icon(Icons.logout_rounded, color: Colors.red.shade400),
-                title: const Text('Sign Out'),
-                onTap: () { Navigator.pop(ctx); _signOut(); },
-              ),
-            ],
-          ),
-        ),
-      ),
-    );
-  }
-
-  Widget _buildStatChip(String emoji, String label, KiwiTier tier) {
-    return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
-      decoration: BoxDecoration(
-        color: tier.colors.cardBg,
-        borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: tier.colors.primary.withOpacity(0.12)),
-      ),
-      child: Row(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Text(emoji, style: const TextStyle(fontSize: 13)),
-          const SizedBox(width: 4),
-          Text(label, style: TextStyle(fontSize: 12, fontWeight: FontWeight.w700, color: tier.colors.textPrimary)),
-        ],
-      ),
-    );
   }
 
   @override
@@ -797,56 +997,67 @@ class _AppShellState extends State<_AppShell> {
           IndexedStack(
             index: _selectedTab,
             children: [
-              // Tab 0 — Home (adaptive-first, no curriculum gating)
-              HomeScreen(
-                studentName: _studentName.isNotEmpty ? _studentName : _profile.displayName,
-                streak: _profile.streakCurrent,
-                kiwiCoins: _profile.kiwiCoins,
-                masteryGems: _profile.masteryGems,
-                xp: _profile.xpTotal,
-                dailyProgress: _profile.dailyProgress,
-                dailyGoal: _profile.dailyGoal,
-                onTopicTap: (topicId, topicName) => _navigateToQuestions(
+              // Tab 0 — Olympiad (smart practice + daily worksheets)
+              OlympiadTabScreen(
+                selectedGrade: _selectedGrade,
+                onGradeChanged: _onGradeChanged,
+                onStartPractice: (topicId, topicName) => _navigateToQuestions(
                   topicId: topicId,
                   topicName: topicName,
                 ),
-                onSignOut: _signOut,
+              ),
+              // Tab 1 — School (multi-curriculum chapter browser)
+              CurriculumScreen(
+                userId: widget.userId,
                 selectedGrade: _selectedGrade,
                 onGradeChanged: _onGradeChanged,
-                topicsV2: _topicsV2,
-                topicsV2Loading: _topicsV2Loading,
+                onChapterTap: (topicId, topicName, {String? curriculum}) =>
+                    _navigateToQuestions(
+                  topicId: topicId,
+                  topicName: topicName,
+                  curriculum: curriculum,
+                  chapter: topicName,
+                ),
                 companionService: _companionService,
-                studentLevels: _studentLevels,
-                onOpenLearningPath: () => _onTabTapped(1),
-                onOpenParentDashboard: () => _onTabTapped(3),
-                onRestartOnboarding: _restartOnboarding,
-                masteryOverview: _masteryOverview,
-                onSmartSession: _navigateToSmartSession,
-                onAvatarTap: _showProfileSheet,
               ),
-              // Tab 1 — School (curriculum chapters)
-              LearningPathScreen(
+              // Tab 2 — Growth (diagnostic + improvement journey)
+              GrowthTabScreen(
+                selectedGrade: _selectedGrade,
+                onGradeChanged: _onGradeChanged,
                 userId: widget.userId,
-                grade: _selectedGrade,
-                companionService: _companionService,
-                studentLevels: _studentLevels,
-                embedded: true,
-                curriculum: _profile.curriculum,
+                onStartDiagnostic: () => _navigateToDiagnostic(),
+                onStartPractice: (topicId, topicName) => _navigateToQuestions(
+                  topicId: topicId,
+                  topicName: topicName,
+                ),
               ),
-              // Tab 2 — Clan
+              // Tab 3 — Clan
               _clan != null
                   ? ClanHubScreen(
                       clan: _clan!,
                       activeChallenge: _activeChallenge,
                       challengeProgress: _challengeProgress,
+                      // Engagement data
+                      dailyPuzzle: _dailyPuzzle,
+                      streakData: _streakData,
+                      leagueStatus: _leagueStatus,
+                      clanWar: _clanWar,
+                      rewardData: _rewardData,
+                      activePledge: _activePledge,
+                      // Callbacks
                       onOpenChallenge: _navigateToChallenge,
                       onOpenLeaderboard: _navigateToLeaderboard,
                       onLeaveClan: _handleLeaveClan,
                       onCopyInviteCode: _copyInviteCode,
+                      onSolveDailyPuzzle: _navigateToDailyPuzzle,
+                      onClaimDailyReward: _handleClaimDailyReward,
+                      onOpenMysteryBox: _handleOpenMysteryBox,
+                      onOpenRewards: _navigateToRewards,
+                      onMakePledge: _handleMakePledge,
                     )
                   : _buildClanLanding(tier),
-              // Tab 3 — Parent Dashboard
-              _parentGatePassed
+              // Tab 4 — Parent Dashboard (PIN-protected)
+              _parentPinVerified
                   ? ParentDashboardScreen(
                       userId: widget.userId,
                       childName: _studentName.isNotEmpty
@@ -856,6 +1067,26 @@ class _AppShellState extends State<_AppShell> {
                       curriculum: _profile.curriculum,
                     )
                   : const Scaffold(body: Center(child: CircularProgressIndicator())),
+              // Tab 5 — Profile (stats, invite, sign out)
+              ProfileScreen(
+                userId: widget.userId,
+                studentName: _studentName.isNotEmpty
+                    ? _studentName
+                    : (_profile.displayName != 'Kiwi Learner'
+                        ? _profile.displayName
+                        : ''),
+                grade: _selectedGrade,
+                xpTotal: _profile.xpTotal,
+                topicsMastered: _profile.topicsMastered,
+                currentStreak: _streakData?.currentStreak ?? 0,
+                totalGems: _rewardData?.totalGems ?? 0,
+                kiwiCoins: _profile.kiwiCoins,
+                masteryGems: _profile.masteryGems,
+                avatar: _profile.avatar,
+                onSignOut: _signOut,
+                onRestartOnboarding: _restartOnboarding,
+                onAvatarChanged: _onAvatarChanged,
+              ),
             ],
           ),
           // Offline banner
@@ -897,7 +1128,7 @@ class _AppShellState extends State<_AppShell> {
             ),
         ],
       ),
-      // Bottom nav: Home / School / Parent
+      // Bottom nav: Olympiad / School / Growth / Clan / Parent / Profile
       bottomNavigationBar: Container(
         decoration: BoxDecoration(
           color: tier.colors.cardBg,
@@ -916,10 +1147,12 @@ class _AppShellState extends State<_AppShell> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                _buildNavItem(0, Icons.home_rounded, 'Home', tier),
+                _buildNavItem(0, Icons.emoji_events_rounded, 'Olympiad', tier),
                 _buildNavItem(1, Icons.school_rounded, 'School', tier),
-                _buildNavItem(2, Icons.groups_rounded, 'Clan', tier),
-                _buildNavItem(3, Icons.family_restroom_rounded, 'Parent', tier),
+                _buildNavItem(2, Icons.trending_up_rounded, 'Growth', tier),
+                _buildNavItem(3, Icons.groups_rounded, 'Clan', tier),
+                _buildNavItem(4, Icons.family_restroom_rounded, 'Parent', tier),
+                _buildNavItem(5, Icons.person_rounded, 'Profile', tier),
               ],
             ),
           ),
@@ -937,11 +1170,11 @@ class _AppShellState extends State<_AppShell> {
       behavior: HitTestBehavior.opaque,
       child: AnimatedContainer(
         duration: const Duration(milliseconds: 200),
-        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+        padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 6),
         decoration: isSelected
             ? BoxDecoration(
                 color: tier.colors.primary.withOpacity(0.1),
-                borderRadius: BorderRadius.circular(14),
+                borderRadius: BorderRadius.circular(12),
               )
             : null,
         child: Column(
@@ -949,14 +1182,14 @@ class _AppShellState extends State<_AppShell> {
           children: [
             Icon(
               icon,
-              size: 24,
+              size: 22,
               color: isSelected ? tier.colors.primary : tier.colors.textMuted,
             ),
             const SizedBox(height: 2),
             Text(
               label,
               style: TextStyle(
-                fontSize: 11,
+                fontSize: 10,
                 fontWeight: isSelected ? FontWeight.w700 : FontWeight.w500,
                 color: isSelected ? tier.colors.primary : tier.colors.textMuted,
               ),

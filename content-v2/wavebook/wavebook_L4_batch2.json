@@ -1,0 +1,1181 @@
+{
+  "level": 4,
+  "batch": 2,
+  "grade_band": "5-6",
+  "total_questions": 68,
+  "questions": [
+    {
+      "id": "wb_L4_s09_q05",
+      "stem": "Scooter Rs 4700 + Rs 800 repairs, sold Rs 5800. Gain%?",
+      "interaction_mode": "mcq",
+      "topic": "Profit and Loss",
+      "difficulty_tier": "warmup",
+      "question_number": 5,
+      "choices": [
+        "4 4/7%",
+        "5 5/11%",
+        "10%",
+        "12%"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S9"
+    },
+    {
+      "id": "wb_L4_s09_q06",
+      "stem": "CP of 20 articles = SP of x articles. Profit 25%. x=?",
+      "interaction_mode": "mcq",
+      "topic": "Profit and Loss",
+      "difficulty_tier": "practice",
+      "question_number": 6,
+      "choices": [
+        "15",
+        "16",
+        "18",
+        "25"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S9"
+    },
+    {
+      "id": "wb_L4_s09_q07",
+      "stem": "If selling price doubled, profit triples. Profit percent?",
+      "interaction_mode": "mcq",
+      "topic": "Profit and Loss",
+      "difficulty_tier": "practice",
+      "question_number": 7,
+      "choices": [
+        "66 2/3",
+        "100",
+        "105 1/3",
+        "120"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S9"
+    },
+    {
+      "id": "wb_L4_s09_q08",
+      "stem": "Toffees bought at 6 for a rupee. How many for a rupee to gain 20%?",
+      "interaction_mode": "mcq",
+      "topic": "Profit and Loss",
+      "difficulty_tier": "practice",
+      "question_number": 8,
+      "choices": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S9"
+    },
+    {
+      "id": "wb_L4_s09_q09",
+      "stem": "Cycle Rs 1400, sold at 15% loss. SP?",
+      "interaction_mode": "mcq",
+      "topic": "Profit and Loss",
+      "difficulty_tier": "practice",
+      "question_number": 9,
+      "choices": [
+        "Rs 1090",
+        "Rs 1160",
+        "Rs 1190",
+        "Rs 1202"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S9"
+    },
+    {
+      "id": "wb_L4_s09_q10",
+      "stem": "100 oranges bought at Rs 350, sold at Rs 48/dozen. Profit/loss%?",
+      "interaction_mode": "mcq",
+      "topic": "Profit and Loss",
+      "difficulty_tier": "practice",
+      "question_number": 10,
+      "choices": [
+        "14 2/7% gain",
+        "15% gain",
+        "14 2/7% loss",
+        "15% loss"
+      ],
+      "correct_answer": 0,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S9"
+    },
+    {
+      "id": "wb_L4_s09_q11",
+      "stem": "Trader mixes 26kg at Rs 20 with 30kg at Rs 36, sells at Rs 30/kg. Profit%?",
+      "interaction_mode": "mcq",
+      "topic": "Profit and Loss",
+      "difficulty_tier": "challenge",
+      "question_number": 11,
+      "choices": [
+        "No profit no loss",
+        "5%",
+        "8%",
+        "10%",
+        "None"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S9"
+    },
+    {
+      "id": "wb_L4_s09_q12",
+      "stem": "Shopkeeper 10% discount, still gains 20%. Marked price if CP Rs 450?",
+      "interaction_mode": "mcq",
+      "topic": "Profit and Loss",
+      "difficulty_tier": "challenge",
+      "question_number": 12,
+      "choices": [
+        "Rs 800",
+        "Rs 400",
+        "Rs 600",
+        "Rs 379"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S9"
+    },
+    {
+      "id": "wb_L4_s09_q13",
+      "stem": "Article sold at 10% loss. If bought 20% less and sold Rs 44 more, would gain 40%. CP?",
+      "interaction_mode": "mcq",
+      "topic": "Profit and Loss",
+      "difficulty_tier": "challenge",
+      "question_number": 13,
+      "choices": [
+        "150",
+        "200",
+        "250",
+        "400"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S9"
+    },
+    {
+      "id": "wb_L4_s09_q15",
+      "stem": "TV sold Rs 1540, 30% loss. SP for 30% profit?",
+      "interaction_mode": "mcq",
+      "topic": "Profit and Loss",
+      "difficulty_tier": "challenge",
+      "question_number": 15,
+      "choices": [
+        "Rs 2920",
+        "Rs 2480",
+        "Rs 2680",
+        "Rs 2860"
+      ],
+      "correct_answer": 3,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S9"
+    },
+    {
+      "id": "wb_L4_s10_q01",
+      "stem": "Find the missing number in the pattern.",
+      "interaction_mode": "mcq",
+      "topic": "Puzzles and Patterns",
+      "difficulty_tier": "warmup",
+      "question_number": 1,
+      "choices": [
+        "12",
+        "15",
+        "18",
+        "20"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S10",
+      "svg": "svg/wb_L4_s10_q01.svg"
+    },
+    {
+      "id": "wb_L4_s10_q02",
+      "stem": "What comes next in the sequence?",
+      "interaction_mode": "mcq",
+      "topic": "Puzzles and Patterns",
+      "difficulty_tier": "warmup",
+      "question_number": 2,
+      "choices": [
+        "24",
+        "28",
+        "30",
+        "32"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S10",
+      "svg": "svg/wb_L4_s10_q02.svg"
+    },
+    {
+      "id": "wb_L4_s10_q03",
+      "stem": "Find the missing number in the figure.",
+      "interaction_mode": "mcq",
+      "topic": "Puzzles and Patterns",
+      "difficulty_tier": "warmup",
+      "question_number": 3,
+      "choices": [
+        "6",
+        "8",
+        "10",
+        "12"
+      ],
+      "correct_answer": 0,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S10",
+      "svg": "svg/wb_L4_s10_q03.svg"
+    },
+    {
+      "id": "wb_L4_s10_q04",
+      "stem": "What is the next figure in the pattern?",
+      "interaction_mode": "mcq",
+      "topic": "Puzzles and Patterns",
+      "difficulty_tier": "warmup",
+      "question_number": 4,
+      "choices": [
+        "Figure A",
+        "Figure B",
+        "Figure C",
+        "Figure D"
+      ],
+      "correct_answer": 3,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S10",
+      "svg": "svg/wb_L4_s10_q04.svg"
+    },
+    {
+      "id": "wb_L4_s10_q05",
+      "stem": "Find the missing value in the number puzzle.",
+      "interaction_mode": "mcq",
+      "topic": "Puzzles and Patterns",
+      "difficulty_tier": "warmup",
+      "question_number": 5,
+      "choices": [
+        "35",
+        "40",
+        "45",
+        "50"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S10",
+      "svg": "svg/wb_L4_s10_q05.svg"
+    },
+    {
+      "id": "wb_L4_s10_q06",
+      "stem": "Complete the pattern shown in the figure.",
+      "interaction_mode": "mcq",
+      "topic": "Puzzles and Patterns",
+      "difficulty_tier": "practice",
+      "question_number": 6,
+      "choices": [
+        "7",
+        "9",
+        "11",
+        "13"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S10",
+      "svg": "svg/wb_L4_s10_q06.svg"
+    },
+    {
+      "id": "wb_L4_s10_q07",
+      "stem": "Find the rule and the missing number.",
+      "interaction_mode": "mcq",
+      "topic": "Puzzles and Patterns",
+      "difficulty_tier": "practice",
+      "question_number": 7,
+      "choices": [
+        "16",
+        "18",
+        "20",
+        "22"
+      ],
+      "correct_answer": 0,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S10",
+      "svg": "svg/wb_L4_s10_q07.svg"
+    },
+    {
+      "id": "wb_L4_s10_q08",
+      "stem": "What number replaces the question mark in the pattern?",
+      "interaction_mode": "mcq",
+      "topic": "Puzzles and Patterns",
+      "difficulty_tier": "practice",
+      "question_number": 8,
+      "choices": [
+        "25",
+        "30",
+        "35",
+        "40"
+      ],
+      "correct_answer": 3,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S10",
+      "svg": "svg/wb_L4_s10_q08.svg"
+    },
+    {
+      "id": "wb_L4_s10_q09",
+      "stem": "Find the next term in the given sequence of figures.",
+      "interaction_mode": "mcq",
+      "topic": "Puzzles and Patterns",
+      "difficulty_tier": "practice",
+      "question_number": 9,
+      "choices": [
+        "Pattern A",
+        "Pattern B",
+        "Pattern C",
+        "Pattern D"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S10",
+      "svg": "svg/wb_L4_s10_q09.svg"
+    },
+    {
+      "id": "wb_L4_s10_q10",
+      "stem": "What is the missing number?",
+      "interaction_mode": "mcq",
+      "topic": "Puzzles and Patterns",
+      "difficulty_tier": "practice",
+      "question_number": 10,
+      "choices": [
+        "42",
+        "44",
+        "48",
+        "52"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S10",
+      "svg": "svg/wb_L4_s10_q10.svg"
+    },
+    {
+      "id": "wb_L4_s13_q04",
+      "stem": "In a 3\u00d73 magic square with magic constant 15, if the center is 5, what is the corner value opposite to 2?",
+      "interaction_mode": "mcq",
+      "topic": "Magic Squares and Money",
+      "difficulty_tier": "warmup",
+      "question_number": 4,
+      "choices": [
+        "8",
+        "6",
+        "4",
+        "9"
+      ],
+      "correct_answer": 0,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S13"
+    },
+    {
+      "id": "wb_L4_s13_q05",
+      "stem": "How many 50-paise coins make Rs. 50?",
+      "interaction_mode": "mcq",
+      "topic": "Magic Squares and Money",
+      "difficulty_tier": "warmup",
+      "question_number": 5,
+      "choices": [
+        "50",
+        "25",
+        "500",
+        "100"
+      ],
+      "correct_answer": 3,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S13"
+    },
+    {
+      "id": "wb_L4_s13_q06",
+      "stem": "Ravi has Rs. 5.75 in 25-paise and 50-paise coins. If he has 10 coins of 50-paise, how many 25-paise coins does he have?",
+      "interaction_mode": "mcq",
+      "topic": "Magic Squares and Money",
+      "difficulty_tier": "practice",
+      "question_number": 6,
+      "choices": [
+        "2",
+        "3",
+        "5",
+        "4"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S13"
+    },
+    {
+      "id": "wb_L4_s13_q07",
+      "stem": "In a 3\u00d73 magic square with numbers 1-9, if the magic constant is 15, what number is in the center?",
+      "interaction_mode": "mcq",
+      "topic": "Magic Squares and Money",
+      "difficulty_tier": "practice",
+      "question_number": 7,
+      "choices": [
+        "5",
+        "6",
+        "4",
+        "9"
+      ],
+      "correct_answer": 0,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S13"
+    },
+    {
+      "id": "wb_L4_s13_q08",
+      "stem": "A man has Rs. 4.50 in coins of 10 paise and 25 paise. If he has 10 coins of 25 paise, how many 10-paise coins does he have?",
+      "interaction_mode": "mcq",
+      "topic": "Magic Squares and Money",
+      "difficulty_tier": "practice",
+      "question_number": 8,
+      "choices": [
+        "10",
+        "15",
+        "20",
+        "25"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S13"
+    },
+    {
+      "id": "wb_L4_s13_q09",
+      "stem": "The cost of 3 pencils and 2 erasers is Rs. 18. If each pencil costs Rs. 4, what is the cost of each eraser?",
+      "interaction_mode": "mcq",
+      "topic": "Magic Squares and Money",
+      "difficulty_tier": "practice",
+      "question_number": 9,
+      "choices": [
+        "Rs. 2",
+        "Rs. 2.50",
+        "Rs. 3",
+        "Rs. 4"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S13"
+    },
+    {
+      "id": "wb_L4_s13_q10",
+      "stem": "In a 4\u00d74 magic square, if the magic constant is 34, what is the sum of all numbers used?",
+      "interaction_mode": "mcq",
+      "topic": "Magic Squares and Money",
+      "difficulty_tier": "practice",
+      "question_number": 10,
+      "choices": [
+        "68",
+        "102",
+        "136",
+        "170"
+      ],
+      "correct_answer": 3,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S13"
+    },
+    {
+      "id": "wb_L4_s13_q11",
+      "stem": "Seema bought 5 notebooks at Rs. 12 each and 3 pens at Rs. 15 each. How much change does she get from Rs. 200?",
+      "interaction_mode": "mcq",
+      "topic": "Magic Squares and Money",
+      "difficulty_tier": "challenge",
+      "question_number": 11,
+      "choices": [
+        "Rs. 85",
+        "Rs. 95",
+        "Rs. 95",
+        "Rs. 105"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S13"
+    },
+    {
+      "id": "wb_L4_s13_q14",
+      "stem": "If the magic constant of a 3\u00d73 magic square is 21, what is the middle element?",
+      "interaction_mode": "mcq",
+      "topic": "Magic Squares and Money",
+      "difficulty_tier": "challenge",
+      "question_number": 14,
+      "choices": [
+        "7",
+        "9",
+        "6",
+        "8"
+      ],
+      "correct_answer": 0,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S13"
+    },
+    {
+      "id": "wb_L4_s13_q15",
+      "stem": "A piggy bank contains Rs. 12.50 in 50-paise and Rs. 1 coins. If there are 8 one-rupee coins, how many 50-paise coins are there?",
+      "interaction_mode": "mcq",
+      "topic": "Magic Squares and Money",
+      "difficulty_tier": "challenge",
+      "question_number": 15,
+      "choices": [
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S13"
+    },
+    {
+      "id": "wb_L4_s15_q01",
+      "stem": "An angle that measures more than 180\u00b0 but less than 360\u00b0 is called a:",
+      "interaction_mode": "mcq",
+      "topic": "Geometry - Angles and Lines",
+      "difficulty_tier": "warmup",
+      "question_number": 1,
+      "choices": [
+        "Straight angle",
+        "Right angle",
+        "Obtuse angle",
+        "Reflex angle"
+      ],
+      "correct_answer": 3,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S15"
+    },
+    {
+      "id": "wb_L4_s15_q02",
+      "stem": "The complement of 35\u00b0 is:",
+      "interaction_mode": "mcq",
+      "topic": "Geometry - Angles and Lines",
+      "difficulty_tier": "warmup",
+      "question_number": 2,
+      "choices": [
+        "55\u00b0",
+        "145\u00b0",
+        "65\u00b0",
+        "125\u00b0"
+      ],
+      "correct_answer": 0,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S15"
+    },
+    {
+      "id": "wb_L4_s15_q03",
+      "stem": "Two angles are supplementary. If one angle is 110\u00b0, what is the other?",
+      "interaction_mode": "mcq",
+      "topic": "Geometry - Angles and Lines",
+      "difficulty_tier": "warmup",
+      "question_number": 3,
+      "choices": [
+        "70\u00b0",
+        "80\u00b0",
+        "90\u00b0",
+        "60\u00b0"
+      ],
+      "correct_answer": 0,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S15"
+    },
+    {
+      "id": "wb_L4_s15_q04",
+      "stem": "If two lines intersect, the vertically opposite angles are:",
+      "interaction_mode": "mcq",
+      "topic": "Geometry - Angles and Lines",
+      "difficulty_tier": "warmup",
+      "question_number": 4,
+      "choices": [
+        "Complementary",
+        "Equal",
+        "Supplementary",
+        "None of these"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S15"
+    },
+    {
+      "id": "wb_L4_s15_q05",
+      "stem": "The angle between the hands of a clock at 3:00 is:",
+      "interaction_mode": "mcq",
+      "topic": "Geometry - Angles and Lines",
+      "difficulty_tier": "warmup",
+      "question_number": 5,
+      "choices": [
+        "60\u00b0",
+        "120\u00b0",
+        "90\u00b0",
+        "180\u00b0"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S15"
+    },
+    {
+      "id": "wb_L4_s15_q06",
+      "stem": "An angle is 20\u00b0 more than its complement. The angle is:",
+      "interaction_mode": "mcq",
+      "topic": "Geometry - Angles and Lines",
+      "difficulty_tier": "practice",
+      "question_number": 6,
+      "choices": [
+        "35\u00b0",
+        "45\u00b0",
+        "55\u00b0",
+        "65\u00b0"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S15"
+    },
+    {
+      "id": "wb_L4_s15_q07",
+      "stem": "The supplement of a right angle is:",
+      "interaction_mode": "mcq",
+      "topic": "Geometry - Angles and Lines",
+      "difficulty_tier": "practice",
+      "question_number": 7,
+      "choices": [
+        "45\u00b0",
+        "60\u00b0",
+        "90\u00b0",
+        "180\u00b0"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S15"
+    },
+    {
+      "id": "wb_L4_s15_q08",
+      "stem": "If two parallel lines are cut by a transversal, co-interior (same-side interior) angles are:",
+      "interaction_mode": "mcq",
+      "topic": "Geometry - Angles and Lines",
+      "difficulty_tier": "practice",
+      "question_number": 8,
+      "choices": [
+        "Equal",
+        "Complementary",
+        "Both acute",
+        "Supplementary"
+      ],
+      "correct_answer": 3,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S15"
+    },
+    {
+      "id": "wb_L4_s15_q09",
+      "stem": "An angle which is equal to its supplement is:",
+      "interaction_mode": "mcq",
+      "topic": "Geometry - Angles and Lines",
+      "difficulty_tier": "practice",
+      "question_number": 9,
+      "choices": [
+        "45\u00b0",
+        "90\u00b0",
+        "135\u00b0",
+        "180\u00b0"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S15"
+    },
+    {
+      "id": "wb_L4_s15_q10",
+      "stem": "The measure of an angle is twice the measure of its supplementary angle. The angle is:",
+      "interaction_mode": "mcq",
+      "topic": "Geometry - Angles and Lines",
+      "difficulty_tier": "practice",
+      "question_number": 10,
+      "choices": [
+        "60\u00b0",
+        "90\u00b0",
+        "105\u00b0",
+        "120\u00b0"
+      ],
+      "correct_answer": 3,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S15"
+    },
+    {
+      "id": "wb_L4_s15_q11",
+      "stem": "If two angles are both supplementary and equal, each angle measures:",
+      "interaction_mode": "mcq",
+      "topic": "Geometry - Angles and Lines",
+      "difficulty_tier": "challenge",
+      "question_number": 11,
+      "choices": [
+        "45\u00b0",
+        "60\u00b0",
+        "80\u00b0",
+        "90\u00b0"
+      ],
+      "correct_answer": 3,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S15"
+    },
+    {
+      "id": "wb_L4_s15_q12",
+      "stem": "Alternate interior angles formed by a transversal cutting parallel lines are:",
+      "interaction_mode": "mcq",
+      "topic": "Geometry - Angles and Lines",
+      "difficulty_tier": "challenge",
+      "question_number": 12,
+      "choices": [
+        "Supplementary",
+        "Complementary",
+        "Equal",
+        "None of these"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S15"
+    },
+    {
+      "id": "wb_L4_s15_q13",
+      "stem": "The angle between North and East directions is:",
+      "interaction_mode": "mcq",
+      "topic": "Geometry - Angles and Lines",
+      "difficulty_tier": "challenge",
+      "question_number": 13,
+      "choices": [
+        "90\u00b0",
+        "180\u00b0",
+        "270\u00b0",
+        "360\u00b0"
+      ],
+      "correct_answer": 0,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S15"
+    },
+    {
+      "id": "wb_L4_s15_q14",
+      "stem": "If one angle of a linear pair is 65\u00b0, the other angle is:",
+      "interaction_mode": "mcq",
+      "topic": "Geometry - Angles and Lines",
+      "difficulty_tier": "challenge",
+      "question_number": 14,
+      "choices": [
+        "65\u00b0",
+        "115\u00b0",
+        "125\u00b0",
+        "135\u00b0"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S15"
+    },
+    {
+      "id": "wb_L4_s15_q15",
+      "stem": "The sum of all angles at a point is:",
+      "interaction_mode": "mcq",
+      "topic": "Geometry - Angles and Lines",
+      "difficulty_tier": "challenge",
+      "question_number": 15,
+      "choices": [
+        "90\u00b0",
+        "180\u00b0",
+        "270\u00b0",
+        "360\u00b0"
+      ],
+      "correct_answer": 3,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S15"
+    },
+    {
+      "id": "wb_L4_s16_q01",
+      "stem": "Value of m if 3, 18, m, 42 are in proportion",
+      "interaction_mode": "mcq",
+      "topic": "Ratio and Proportion",
+      "difficulty_tier": "warmup",
+      "question_number": 1,
+      "choices": [
+        "6",
+        "54",
+        "7",
+        "none"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S16"
+    },
+    {
+      "id": "wb_L4_s16_q04",
+      "stem": "7:12 is equivalent to",
+      "interaction_mode": "mcq",
+      "topic": "Ratio and Proportion",
+      "difficulty_tier": "warmup",
+      "question_number": 4,
+      "choices": [
+        "28:40",
+        "42:71",
+        "72:42",
+        "42:72"
+      ],
+      "correct_answer": 3,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S16"
+    },
+    {
+      "id": "wb_L4_s16_q10",
+      "stem": "Bag has equal 5, 10, 2 rupee coins totaling Rs 646. Coins of each?",
+      "interaction_mode": "mcq",
+      "topic": "Ratio and Proportion",
+      "difficulty_tier": "practice",
+      "question_number": 10,
+      "choices": [
+        "38",
+        "30",
+        "36",
+        "More than one",
+        "None"
+      ],
+      "correct_answer": 0,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S16"
+    },
+    {
+      "id": "wb_L4_s16_q11",
+      "stem": "Two numbers 20% and 50% more than a third. Their ratio?",
+      "interaction_mode": "mcq",
+      "topic": "Ratio and Proportion",
+      "difficulty_tier": "challenge",
+      "question_number": 11,
+      "choices": [
+        "2:5",
+        "3:5",
+        "4:5",
+        "6:7"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S16"
+    },
+    {
+      "id": "wb_L4_s16_q12",
+      "stem": "Sum distributed A:B:C:D = 5:2:4:3. C gets Rs 1000 more than D. B's share?",
+      "interaction_mode": "mcq",
+      "topic": "Ratio and Proportion",
+      "difficulty_tier": "challenge",
+      "question_number": 12,
+      "choices": [
+        "Rs 500",
+        "Rs 1500",
+        "Rs 2000",
+        "None"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S16"
+    },
+    {
+      "id": "wb_L4_s16_q13",
+      "stem": "60 liters milk:water 2:1. To make 1:2, water to add?",
+      "interaction_mode": "mcq",
+      "topic": "Ratio and Proportion",
+      "difficulty_tier": "challenge",
+      "question_number": 13,
+      "choices": [
+        "20 liters",
+        "30 liters",
+        "40 liters",
+        "60 liters"
+      ],
+      "correct_answer": 3,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S16"
+    },
+    {
+      "id": "wb_L4_s16_q14",
+      "stem": "Rs 782 divided proportional to 1/2:2/3:3/4. First part?",
+      "interaction_mode": "mcq",
+      "topic": "Ratio and Proportion",
+      "difficulty_tier": "challenge",
+      "question_number": 14,
+      "choices": [
+        "Rs 182",
+        "Rs 190",
+        "Rs 196",
+        "Rs 204"
+      ],
+      "correct_answer": 3,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S16"
+    },
+    {
+      "id": "wb_L4_s16_q15",
+      "stem": "Two numbers ratio 3:5. If 9 subtracted, new ratio 12:23. Smaller number?",
+      "interaction_mode": "mcq",
+      "topic": "Ratio and Proportion",
+      "difficulty_tier": "challenge",
+      "question_number": 15,
+      "choices": [
+        "27",
+        "33",
+        "49",
+        "55"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S16"
+    },
+    {
+      "id": "wb_L4_s17_q01",
+      "stem": "A simple closed curve made up of only line segments is called a ______",
+      "interaction_mode": "mcq",
+      "topic": "Quadrilaterals and Polygons",
+      "difficulty_tier": "warmup",
+      "question_number": 1,
+      "choices": [
+        "Circle",
+        "Polygon",
+        "Line segment",
+        "None of them"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S17"
+    },
+    {
+      "id": "wb_L4_s17_q02",
+      "stem": "The sum of the measures of the exterior angles of any polygon is",
+      "interaction_mode": "mcq",
+      "topic": "Quadrilaterals and Polygons",
+      "difficulty_tier": "warmup",
+      "question_number": 2,
+      "choices": [
+        "180\u00b0",
+        "360\u00b0",
+        "270\u00b0",
+        "540\u00b0"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S17"
+    },
+    {
+      "id": "wb_L4_s17_q03",
+      "stem": "Find x in the given figure, if it is a regular pentagon",
+      "interaction_mode": "mcq",
+      "topic": "Quadrilaterals and Polygons",
+      "difficulty_tier": "warmup",
+      "question_number": 3,
+      "choices": [
+        "110\u00b0",
+        "108\u00b0",
+        "105\u00b0",
+        "100\u00b0"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S17",
+      "svg": "svg/wb_L4_s17_q03.svg"
+    },
+    {
+      "id": "wb_L4_s17_q04",
+      "stem": "One angle of a quadrilateral is 150\u00b0 and other three angles are equal. What is the measure of each of these equal angles?",
+      "interaction_mode": "mcq",
+      "topic": "Quadrilaterals and Polygons",
+      "difficulty_tier": "warmup",
+      "question_number": 4,
+      "choices": [
+        "75\u00b0",
+        "85\u00b0",
+        "95\u00b0",
+        "70\u00b0"
+      ],
+      "correct_answer": 3,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S17"
+    },
+    {
+      "id": "wb_L4_s17_q05",
+      "stem": "Which of the following figures are NOT polygons?",
+      "interaction_mode": "mcq",
+      "topic": "Quadrilaterals and Polygons",
+      "difficulty_tier": "warmup",
+      "question_number": 5,
+      "choices": [
+        "(i), (ii) and (v)",
+        "(i), (ii) and (iii)",
+        "(i), (iii), (iv) and (v)",
+        "(i), (ii), (iii) and (iv)"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S17",
+      "svg": "svg/wb_L4_s17_q05.svg"
+    },
+    {
+      "id": "wb_L4_s17_q06",
+      "stem": "Five angles of a hexagon are 150\u00b0, 95\u00b0, 80\u00b0, 135\u00b0 and 125\u00b0. Find the sixth angle",
+      "interaction_mode": "mcq",
+      "topic": "Quadrilaterals and Polygons",
+      "difficulty_tier": "practice",
+      "question_number": 6,
+      "choices": [
+        "130\u00b0",
+        "135\u00b0",
+        "140\u00b0",
+        "125\u00b0"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S17"
+    },
+    {
+      "id": "wb_L4_s17_q07",
+      "stem": "How many diagonals are there in a hexagon?",
+      "interaction_mode": "mcq",
+      "topic": "Quadrilaterals and Polygons",
+      "difficulty_tier": "practice",
+      "question_number": 7,
+      "choices": [
+        "6",
+        "8",
+        "9",
+        "12"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S17"
+    },
+    {
+      "id": "wb_L4_s17_q08",
+      "stem": "Find the measure of each interior angle of a regular hexagon",
+      "interaction_mode": "mcq",
+      "topic": "Quadrilaterals and Polygons",
+      "difficulty_tier": "practice",
+      "question_number": 8,
+      "choices": [
+        "100\u00b0",
+        "110\u00b0",
+        "120\u00b0",
+        "130\u00b0"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S17"
+    },
+    {
+      "id": "wb_L4_s17_q09",
+      "stem": "One angle of a parallelogram is 60\u00b0. Find its opposite angle and the adjacent angle",
+      "interaction_mode": "mcq",
+      "topic": "Quadrilaterals and Polygons",
+      "difficulty_tier": "practice",
+      "question_number": 9,
+      "choices": [
+        "60\u00b0 and 120\u00b0",
+        "60\u00b0 and 130\u00b0",
+        "120\u00b0 and 60\u00b0",
+        "120\u00b0 and 120\u00b0"
+      ],
+      "correct_answer": 0,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S17"
+    },
+    {
+      "id": "wb_L4_s17_q10",
+      "stem": "ABCD is a trapezium with AB || DC. If \u2220A = 50\u00b0, find \u2220D",
+      "interaction_mode": "mcq",
+      "topic": "Quadrilaterals and Polygons",
+      "difficulty_tier": "practice",
+      "question_number": 10,
+      "choices": [
+        "50\u00b0",
+        "100\u00b0",
+        "130\u00b0",
+        "150\u00b0"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S17",
+      "svg": "svg/wb_L4_s17_q10.svg"
+    },
+    {
+      "id": "wb_L4_s17_q11",
+      "stem": "In the given figure, ABCD is a rectangle and its diagonals meet at O. Find x, if OA = (2x + 4) and OD = (3x + 1). Also find BD",
+      "interaction_mode": "mcq",
+      "topic": "Quadrilaterals and Polygons",
+      "difficulty_tier": "challenge",
+      "question_number": 11,
+      "choices": [
+        "x = 3, BD = 20",
+        "x = 5, BD = 32",
+        "x = 4, BD = 26",
+        "x = 2, BD = 14"
+      ],
+      "correct_answer": 0,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S17",
+      "svg": "svg/wb_L4_s17_q11.svg"
+    },
+    {
+      "id": "wb_L4_s17_q12",
+      "stem": "Two adjacent angles of a parallelogram are (3x \u2013 4)\u00b0 and (3x + 10)\u00b0. Find the angles of the parallelogram",
+      "interaction_mode": "mcq",
+      "topic": "Quadrilaterals and Polygons",
+      "difficulty_tier": "challenge",
+      "question_number": 12,
+      "choices": [
+        "83\u00b0 and 97\u00b0",
+        "80\u00b0 and 100\u00b0",
+        "85\u00b0 and 95\u00b0",
+        "75\u00b0 and 105\u00b0"
+      ],
+      "correct_answer": 0,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S17"
+    },
+    {
+      "id": "wb_L4_s17_q13",
+      "stem": "Three angles of a quadrilateral are in the ratio 4 : 6 : 3. If the fourth angle is 100\u00b0, find the three angles of the quadrilateral",
+      "interaction_mode": "mcq",
+      "topic": "Quadrilaterals and Polygons",
+      "difficulty_tier": "challenge",
+      "question_number": 13,
+      "choices": [
+        "80\u00b0, 120\u00b0, 60\u00b0",
+        "60\u00b0, 90\u00b0, 45\u00b0",
+        "100\u00b0, 150\u00b0, 75\u00b0",
+        "40\u00b0, 60\u00b0, 30\u00b0"
+      ],
+      "correct_answer": 0,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S17"
+    },
+    {
+      "id": "wb_L4_s17_q14",
+      "stem": "Classify the following into open and closed curves",
+      "interaction_mode": "mcq",
+      "topic": "Quadrilaterals and Polygons",
+      "difficulty_tier": "challenge",
+      "question_number": 14,
+      "choices": [
+        "Open \u2013 (b, p, r), Closed \u2013 (a, c, q)",
+        "Open \u2013 (b, q, c), Closed \u2013 (a, p, r)",
+        "Open \u2013 (p, q, a), Closed \u2013 (r, c, b)",
+        "Open \u2013 (r, b, a), Closed \u2013 (p, q, c)"
+      ],
+      "correct_answer": 0,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S17",
+      "svg": "svg/wb_L4_s17_q14.svg"
+    },
+    {
+      "id": "wb_L4_s17_q15",
+      "stem": "Two adjacent sides AB and BC of a parallelogram ABCD are in the ratio 5 : 3. If the perimeter is 200 cm, what is the length of AB and BC?",
+      "interaction_mode": "mcq",
+      "topic": "Quadrilaterals and Polygons",
+      "difficulty_tier": "challenge",
+      "question_number": 15,
+      "choices": [
+        "25 cm & 50 cm",
+        "40 cm & 37.5 cm",
+        "62.5 cm & 37.5 cm",
+        "60 cm & 62.5 cm"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S17"
+    }
+  ]
+}

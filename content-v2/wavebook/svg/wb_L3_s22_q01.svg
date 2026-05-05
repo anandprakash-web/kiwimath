@@ -1,0 +1,25 @@
+<svg viewBox="0 0 450 350" xmlns="http://www.w3.org/2000/svg">
+  <!-- Three overlapping circles -->
+  <circle cx="175" cy="150" r="100" fill="none" stroke="black" stroke-width="2"/>
+  <circle cx="275" cy="150" r="100" fill="none" stroke="black" stroke-width="2"/>
+  <circle cx="225" cy="240" r="100" fill="none" stroke="black" stroke-width="2"/>
+  <!-- Labels -->
+  <text x="120" y="80" text-anchor="middle" font-family="Arial" font-size="14" fill="black" font-weight="bold">Doctors</text>
+  <text x="330" y="80" text-anchor="middle" font-family="Arial" font-size="14" fill="black" font-weight="bold">Artists</text>
+  <text x="225" y="340" text-anchor="middle" font-family="Arial" font-size="14" fill="black" font-weight="bold">Players</text>
+  <!-- Numbers -->
+  <!-- Doctors only -->
+  <text x="130" y="155" text-anchor="middle" font-family="Arial" font-size="16" fill="blue" font-weight="bold">17</text>
+  <!-- Artists only -->
+  <text x="320" y="155" text-anchor="middle" font-family="Arial" font-size="16" fill="blue" font-weight="bold">10</text>
+  <!-- Players only -->
+  <text x="225" y="285" text-anchor="middle" font-family="Arial" font-size="16" fill="blue" font-weight="bold">15</text>
+  <!-- D ∩ A -->
+  <text x="225" y="120" text-anchor="middle" font-family="Arial" font-size="16" fill="blue" font-weight="bold">5</text>
+  <!-- D ∩ P -->
+  <text x="170" y="225" text-anchor="middle" font-family="Arial" font-size="16" fill="blue" font-weight="bold">8</text>
+  <!-- A ∩ P -->
+  <text x="280" y="225" text-anchor="middle" font-family="Arial" font-size="16" fill="blue" font-weight="bold">22</text>
+  <!-- D ∩ A ∩ P -->
+  <text x="225" y="185" text-anchor="middle" font-family="Arial" font-size="16" fill="red" font-weight="bold">3</text>
+</svg>

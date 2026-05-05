@@ -1,0 +1,26 @@
+<svg viewBox="0 0 400 350" xmlns="http://www.w3.org/2000/svg">
+  <!-- Clock face -->
+  <circle cx="200" cy="170" r="120" fill="none" stroke="black" stroke-width="3"/>
+  <circle cx="200" cy="170" r="5" fill="black"/>
+  <!-- Hour markers -->
+  <text x="200" y="70" text-anchor="middle" font-family="Arial" font-size="16" fill="black" font-weight="bold">12</text>
+  <text x="260" y="95" text-anchor="middle" font-family="Arial" font-size="14" fill="black">1</text>
+  <text x="295" y="130" text-anchor="middle" font-family="Arial" font-size="14" fill="black">2</text>
+  <text x="308" y="175" text-anchor="middle" font-family="Arial" font-size="14" fill="black">3</text>
+  <text x="295" y="218" text-anchor="middle" font-family="Arial" font-size="14" fill="black">4</text>
+  <text x="260" y="250" text-anchor="middle" font-family="Arial" font-size="14" fill="black">5</text>
+  <text x="200" y="275" text-anchor="middle" font-family="Arial" font-size="14" fill="black">6</text>
+  <text x="140" y="250" text-anchor="middle" font-family="Arial" font-size="14" fill="black">7</text>
+  <text x="107" y="218" text-anchor="middle" font-family="Arial" font-size="14" fill="black">8</text>
+  <text x="93" y="175" text-anchor="middle" font-family="Arial" font-size="14" fill="black">9</text>
+  <text x="107" y="130" text-anchor="middle" font-family="Arial" font-size="14" fill="black">10</text>
+  <text x="140" y="95" text-anchor="middle" font-family="Arial" font-size="14" fill="black">11</text>
+  <!-- Both hands pointing to 12 (overlapping) -->
+  <line x1="200" y1="170" x2="200" y2="85" stroke="black" stroke-width="4" stroke-linecap="round"/>
+  <line x1="200" y1="170" x2="200" y2="100" stroke="blue" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Question -->
+  <text x="200" y="320" text-anchor="middle" font-family="Arial" font-size="14" fill="black">How many times do the hands overlap</text>
+  <text x="200" y="340" text-anchor="middle" font-family="Arial" font-size="14" fill="black">in 24 hours?</text>
+  <!-- Question mark -->
+  <text x="350" y="100" text-anchor="middle" font-family="Arial" font-size="30" fill="red" font-weight="bold">?</text>
+</svg>

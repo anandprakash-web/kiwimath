@@ -1,0 +1,15 @@
+<svg viewBox="0 0 500 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- (a) Circle -->
+  <circle cx="70" cy="100" r="45" fill="none" stroke="black" stroke-width="2"/>
+  <text x="70" y="165" text-anchor="middle" font-family="Arial" font-size="14" fill="black">(a) Circle</text>
+  <!-- (b) Equilateral triangle -->
+  <polygon points="195,55 150,130 240,130" fill="none" stroke="black" stroke-width="2"/>
+  <text x="195" y="165" text-anchor="middle" font-family="Arial" font-size="14" fill="black">(b) Equilateral</text>
+  <text x="195" y="180" text-anchor="middle" font-family="Arial" font-size="12" fill="black">Triangle</text>
+  <!-- (c) Square -->
+  <rect x="285" y="60" width="80" height="80" fill="none" stroke="black" stroke-width="2"/>
+  <text x="325" y="165" text-anchor="middle" font-family="Arial" font-size="14" fill="black">(c) Square</text>
+  <!-- (d) Parallelogram -->
+  <polygon points="410,60 480,60 460,140 390,140" fill="none" stroke="black" stroke-width="2"/>
+  <text x="435" y="165" text-anchor="middle" font-family="Arial" font-size="14" fill="black">(d) Parallelogram</text>
+</svg>

@@ -36,7 +36,12 @@ from app.api.portal import router as portal_router
 from app.api.gamification import router as gamification_router
 from app.api.paywall import router as paywall_router
 from app.api.clans import router as clans_router
+from app.api.daily_puzzle import router as daily_puzzle_router
+from app.api.engagement import router as engagement_router
+from app.api.growth import router as growth_router
 from app.api.content_editor import router as content_editor_router
+from app.api.olympiad import router as olympiad_router
+from app.api.wavebook import router as wavebook_router
 from app.api.questions_v2 import router as questions_v2_router
 from app.api.questions_v4 import router as questions_v4_router
 from app.api.user import router as user_router
@@ -85,7 +90,12 @@ def create_app() -> FastAPI:
     app.include_router(assessment_router)
     app.include_router(flag_router)
     app.include_router(clans_router)
+    app.include_router(daily_puzzle_router)
+    app.include_router(engagement_router)
+    app.include_router(growth_router)
     app.include_router(content_editor_router)
+    app.include_router(olympiad_router)
+    app.include_router(wavebook_router)
 
     # -----------------------------------------------------------------------
     # Question Editor UI — simple web page for content team
@@ -143,6 +153,17 @@ def create_app() -> FastAPI:
     if icse_content_dir.exists():
         app.mount("/static/icse", StaticFiles(directory=str(icse_content_dir)), name="icse_static")
         logger.info(f"Mounted ICSE static files from {icse_content_dir}")
+
+    # -----------------------------------------------------------------------
+    # Static files — serve Wavebook SVG visuals
+    # -----------------------------------------------------------------------
+    wavebook_svg_dir = Path(os.environ.get(
+        "KIWIMATH_V2_CONTENT_DIR",
+        str(Path(__file__).resolve().parent.parent.parent / "content-v2"),
+    )) / "wavebook" / "svg"
+    if wavebook_svg_dir.exists():
+        app.mount("/static/wavebook", StaticFiles(directory=str(wavebook_svg_dir)), name="wavebook_static")
+        logger.info(f"Mounted Wavebook SVGs from {wavebook_svg_dir}")
 
     # -----------------------------------------------------------------------
     # Static files — serve puzzle images for Picture Unravel challenges

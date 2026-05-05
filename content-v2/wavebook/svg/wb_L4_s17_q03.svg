@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Regular pentagon with angle x marked -->
+  <polygon points="100,20 180,78 149,168 51,168 20,78" fill="none" stroke="#333" stroke-width="2"/>
+  <!-- Mark one interior angle -->
+  <path d="M 51,168 Q 60,155 70,160" fill="none" stroke="#e63946" stroke-width="1.5"/>
+  <text x="65" y="152" font-size="14" fill="#e63946" font-family="Arial">x</text>
+  <!-- Vertex labels -->
+  <text x="96" y="14" font-size="11" fill="#333" font-family="Arial">A</text>
+  <text x="183" y="80" font-size="11" fill="#333" font-family="Arial">B</text>
+  <text x="152" y="180" font-size="11" fill="#333" font-family="Arial">C</text>
+  <text x="38" y="180" font-size="11" fill="#333" font-family="Arial">D</text>
+  <text x="8" y="80" font-size="11" fill="#333" font-family="Arial">E</text>
+</svg>

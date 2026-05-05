@@ -1,0 +1,35 @@
+<svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+  <!-- Proportion display -->
+  <text x="200" y="40" text-anchor="middle" font-family="Arial" font-size="16" fill="black" font-weight="bold">Solve the Proportion</text>
+
+  <!-- Fraction style: 3/18 = m/42 -->
+  <!-- Left fraction -->
+  <text x="110" y="100" text-anchor="middle" font-family="Arial" font-size="22" fill="blue" font-weight="bold">3</text>
+  <line x1="85" y1="110" x2="135" y2="110" stroke="black" stroke-width="2"/>
+  <text x="110" y="140" text-anchor="middle" font-family="Arial" font-size="22" fill="blue" font-weight="bold">18</text>
+
+  <!-- Equals sign -->
+  <text x="180" y="120" text-anchor="middle" font-family="Arial" font-size="24" fill="black">=</text>
+
+  <!-- Right fraction -->
+  <text x="250" y="100" text-anchor="middle" font-family="Arial" font-size="22" fill="red" font-weight="bold">m</text>
+  <line x1="225" y1="110" x2="275" y2="110" stroke="black" stroke-width="2"/>
+  <text x="250" y="140" text-anchor="middle" font-family="Arial" font-size="22" fill="blue" font-weight="bold">42</text>
+
+  <!-- Cross multiplication arrows -->
+  <defs>
+    <marker id="arw" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="green"/>
+    </marker>
+  </defs>
+  <!-- Arrow from 3 to 42 -->
+  <path d="M 120,95 Q 180,60 240,135" fill="none" stroke="green" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arw)"/>
+  <text x="195" y="60" text-anchor="middle" font-family="Arial" font-size="12" fill="green">3 x 42</text>
+
+  <!-- Arrow from 18 to m -->
+  <path d="M 120,145 Q 180,185 240,105" fill="none" stroke="orange" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arw)"/>
+  <text x="195" y="190" text-anchor="middle" font-family="Arial" font-size="12" fill="orange">18 x m</text>
+
+  <!-- Result -->
+  <text x="200" y="230" text-anchor="middle" font-family="Arial" font-size="14" fill="black">Cross multiply: 3 x 42 = 18 x m</text>
+</svg>

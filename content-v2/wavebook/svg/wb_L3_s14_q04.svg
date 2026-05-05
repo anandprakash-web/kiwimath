@@ -1,0 +1,39 @@
+<svg viewBox="0 0 500 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arr" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="green"/>
+    </marker>
+  </defs>
+  <!-- Title -->
+  <text x="250" y="30" text-anchor="middle" font-family="Arial" font-size="14" fill="black" font-weight="bold">Find the Next Number</text>
+  <!-- Numbers in boxes -->
+  <rect x="30" y="70" width="60" height="50" fill="none" stroke="black" stroke-width="1.5"/>
+  <text x="60" y="102" text-anchor="middle" font-family="Arial" font-size="18" fill="blue" font-weight="bold">89</text>
+
+  <rect x="120" y="70" width="60" height="50" fill="none" stroke="black" stroke-width="1.5"/>
+  <text x="150" y="102" text-anchor="middle" font-family="Arial" font-size="18" fill="blue" font-weight="bold">82</text>
+
+  <rect x="210" y="70" width="60" height="50" fill="none" stroke="black" stroke-width="1.5"/>
+  <text x="240" y="102" text-anchor="middle" font-family="Arial" font-size="18" fill="blue" font-weight="bold">75</text>
+
+  <rect x="300" y="70" width="60" height="50" fill="none" stroke="black" stroke-width="1.5"/>
+  <text x="330" y="102" text-anchor="middle" font-family="Arial" font-size="18" fill="blue" font-weight="bold">68</text>
+
+  <rect x="390" y="70" width="60" height="50" fill="#fff8dc" stroke="black" stroke-width="1.5"/>
+  <text x="420" y="102" text-anchor="middle" font-family="Arial" font-size="20" fill="red" font-weight="bold">?</text>
+
+  <!-- Arrows showing -7 -->
+  <path d="M 90,65 Q 105,45 120,65" fill="none" stroke="green" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="105" y="42" text-anchor="middle" font-family="Arial" font-size="12" fill="green" font-weight="bold">-7</text>
+
+  <path d="M 180,65 Q 195,45 210,65" fill="none" stroke="green" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="195" y="42" text-anchor="middle" font-family="Arial" font-size="12" fill="green" font-weight="bold">-7</text>
+
+  <path d="M 270,65 Q 285,45 300,65" fill="none" stroke="green" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="285" y="42" text-anchor="middle" font-family="Arial" font-size="12" fill="green" font-weight="bold">-7</text>
+
+  <path d="M 360,65 Q 375,45 390,65" fill="none" stroke="green" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="375" y="42" text-anchor="middle" font-family="Arial" font-size="12" fill="green" font-weight="bold">-7</text>
+
+  <text x="250" y="170" text-anchor="middle" font-family="Arial" font-size="13" fill="black">Pattern: subtract 7 each time</text>
+</svg>

@@ -1,0 +1,729 @@
+{
+  "level": 3,
+  "batch": 2,
+  "grade_band": "3-4",
+  "total_questions": 42,
+  "questions": [
+    {
+      "id": "wb_L3_s12_q01",
+      "stem": "How many minutes are there in 2 hours 15 minutes?",
+      "interaction_mode": "mcq",
+      "topic": "Metric Conversion time money volume",
+      "difficulty_tier": "warmup",
+      "question_number": 1,
+      "choices": [
+        "215",
+        "135",
+        "125",
+        "145"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S12"
+    },
+    {
+      "id": "wb_L3_s12_q02",
+      "stem": "Convert 3500 mL to litres.",
+      "interaction_mode": "mcq",
+      "topic": "Metric Conversion time money volume",
+      "difficulty_tier": "warmup",
+      "question_number": 2,
+      "choices": [
+        "35 L",
+        "3.5 L",
+        "0.35 L",
+        "350 L"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S12"
+    },
+    {
+      "id": "wb_L3_s12_q03",
+      "stem": "Rs 5 and 75 paise = ? paise",
+      "interaction_mode": "mcq",
+      "topic": "Metric Conversion time money volume",
+      "difficulty_tier": "warmup",
+      "question_number": 3,
+      "choices": [
+        "575",
+        "5075",
+        "5750",
+        "57.5"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S12"
+    },
+    {
+      "id": "wb_L3_s12_q04",
+      "stem": "2 km 350 m = ? m",
+      "interaction_mode": "mcq",
+      "topic": "Metric Conversion time money volume",
+      "difficulty_tier": "warmup",
+      "question_number": 4,
+      "choices": [
+        "2350",
+        "23500",
+        "235",
+        "2035"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S12"
+    },
+    {
+      "id": "wb_L3_s12_q05",
+      "stem": "How many seconds are in 5 minutes?",
+      "interaction_mode": "mcq",
+      "topic": "Metric Conversion time money volume",
+      "difficulty_tier": "warmup",
+      "question_number": 5,
+      "choices": [
+        "500",
+        "50",
+        "300",
+        "350"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S12"
+    },
+    {
+      "id": "wb_L3_s12_q06",
+      "stem": "A bottle contains 1.5 litres of water. How many mL is that?",
+      "interaction_mode": "mcq",
+      "topic": "Metric Conversion time money volume",
+      "difficulty_tier": "practice",
+      "question_number": 6,
+      "choices": [
+        "15 mL",
+        "150 mL",
+        "1500 mL",
+        "15000 mL"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S12"
+    },
+    {
+      "id": "wb_L3_s12_q07",
+      "stem": "Priya left home at 8:45 AM and reached school at 9:20 AM. How long did the journey take?",
+      "interaction_mode": "mcq",
+      "topic": "Metric Conversion time money volume",
+      "difficulty_tier": "practice",
+      "question_number": 7,
+      "choices": [
+        "25 minutes",
+        "35 minutes",
+        "45 minutes",
+        "30 minutes"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S12"
+    },
+    {
+      "id": "wb_L3_s12_q08",
+      "stem": "4 kg 250 g = ? g",
+      "interaction_mode": "mcq",
+      "topic": "Metric Conversion time money volume",
+      "difficulty_tier": "practice",
+      "question_number": 8,
+      "choices": [
+        "4250",
+        "42500",
+        "425",
+        "4025"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S12"
+    },
+    {
+      "id": "wb_L3_s12_q09",
+      "stem": "If 1 dozen bananas cost Rs 48, what is the cost of one banana?",
+      "interaction_mode": "mcq",
+      "topic": "Metric Conversion time money volume",
+      "difficulty_tier": "practice",
+      "question_number": 9,
+      "choices": [
+        "Rs 3",
+        "Rs 4",
+        "Rs 5",
+        "Rs 6"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S12"
+    },
+    {
+      "id": "wb_L3_s12_q10",
+      "stem": "Convert 180 minutes to hours.",
+      "interaction_mode": "mcq",
+      "topic": "Metric Conversion time money volume",
+      "difficulty_tier": "practice",
+      "question_number": 10,
+      "choices": [
+        "2 hours",
+        "2.5 hours",
+        "3 hours",
+        "1.8 hours"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S12"
+    },
+    {
+      "id": "wb_L3_s12_q11",
+      "stem": "A tank holds 25 litres of water. If 8 litres 500 mL is used, how much remains?",
+      "interaction_mode": "mcq",
+      "topic": "Metric Conversion time money volume",
+      "difficulty_tier": "challenge",
+      "question_number": 11,
+      "choices": [
+        "16 L 500 mL",
+        "17 L 500 mL",
+        "16 L",
+        "15 L 500 mL"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S12"
+    },
+    {
+      "id": "wb_L3_s12_q12",
+      "stem": "Rs 72.50 x 4 = ?",
+      "interaction_mode": "mcq",
+      "topic": "Metric Conversion time money volume",
+      "difficulty_tier": "challenge",
+      "question_number": 12,
+      "choices": [
+        "Rs 280",
+        "Rs 290",
+        "Rs 288",
+        "Rs 292"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S12"
+    },
+    {
+      "id": "wb_L3_s12_q13",
+      "stem": "A movie starts at 3:45 PM and ends at 6:10 PM. What is the duration?",
+      "interaction_mode": "mcq",
+      "topic": "Metric Conversion time money volume",
+      "difficulty_tier": "challenge",
+      "question_number": 13,
+      "choices": [
+        "2 hours 15 minutes",
+        "2 hours 25 minutes",
+        "2 hours 35 minutes",
+        "3 hours 25 minutes"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S12"
+    },
+    {
+      "id": "wb_L3_s12_q14",
+      "stem": "7500 g = ? kg ? g",
+      "interaction_mode": "mcq",
+      "topic": "Metric Conversion time money volume",
+      "difficulty_tier": "challenge",
+      "question_number": 14,
+      "choices": [
+        "7 kg 500 g",
+        "75 kg 0 g",
+        "750 kg",
+        "7 kg 50 g"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S12"
+    },
+    {
+      "id": "wb_L3_s12_q15",
+      "stem": "Ravi bought 3 notebooks at Rs 35.50 each and 2 pens at Rs 12.25 each. What is the total cost?",
+      "interaction_mode": "mcq",
+      "topic": "Metric Conversion time money volume",
+      "difficulty_tier": "challenge",
+      "question_number": 15,
+      "choices": [
+        "Rs 131.00",
+        "Rs 130.50",
+        "Rs 131.25",
+        "Rs 130.00"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S12"
+    },
+    {
+      "id": "wb_L3_s14_q03",
+      "stem": "Which number will complete the given number pattern? 8, 17, 26, ?",
+      "interaction_mode": "mcq",
+      "topic": "Patterns",
+      "difficulty_tier": "warmup",
+      "question_number": 3,
+      "choices": [
+        "35",
+        "36",
+        "37",
+        "34"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S14",
+      "svg": "svg/wb_L3_s14_q03.svg"
+    },
+    {
+      "id": "wb_L3_s14_q04",
+      "stem": "Complete the given number pattern: 89, 82, 75, 68, ?",
+      "interaction_mode": "mcq",
+      "topic": "Patterns",
+      "difficulty_tier": "warmup",
+      "question_number": 4,
+      "choices": [
+        "57",
+        "61",
+        "58",
+        "67"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S14",
+      "svg": "svg/wb_L3_s14_q04.svg"
+    },
+    {
+      "id": "wb_L3_s14_q08",
+      "stem": "FB is to GD as PM is to?",
+      "interaction_mode": "mcq",
+      "topic": "Patterns",
+      "difficulty_tier": "practice",
+      "question_number": 8,
+      "choices": [
+        "RO",
+        "SP",
+        "RN",
+        "QO"
+      ],
+      "correct_answer": 3,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S14"
+    },
+    {
+      "id": "wb_L3_s14_q09",
+      "stem": "NA is to LF as XN is to?",
+      "interaction_mode": "mcq",
+      "topic": "Patterns",
+      "difficulty_tier": "practice",
+      "question_number": 9,
+      "choices": [
+        "YS",
+        "VS",
+        "YM",
+        "WM"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S14"
+    },
+    {
+      "id": "wb_L3_s14_q12",
+      "stem": "What will come next in the alphabetical series? ABE, FHI, KNM, PTQ, ?",
+      "interaction_mode": "mcq",
+      "topic": "Patterns",
+      "difficulty_tier": "challenge",
+      "question_number": 12,
+      "choices": [
+        "UVY",
+        "UZU",
+        "UFR",
+        "LGQ"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S14"
+    },
+    {
+      "id": "wb_L3_s15_q01",
+      "stem": "In a group of 50 people, 30 are doctors and 25 are artists. If 10 are both doctors and artists, how many are neither?",
+      "interaction_mode": "mcq",
+      "topic": "Sets and its operations",
+      "difficulty_tier": "warmup",
+      "question_number": 1,
+      "choices": [
+        "5",
+        "10",
+        "15",
+        "20"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S15"
+    },
+    {
+      "id": "wb_L3_s15_q02",
+      "stem": "In a Venn diagram, the overlapping region represents",
+      "interaction_mode": "mcq",
+      "topic": "Sets and its operations",
+      "difficulty_tier": "warmup",
+      "question_number": 2,
+      "choices": [
+        "Union",
+        "Intersection",
+        "Complement",
+        "Difference"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S15"
+    },
+    {
+      "id": "wb_L3_s15_q03",
+      "stem": "If set A = {Tiger, Lion, Elephant} and set B = {Elephant, Horse, Dog}, then A intersection B = ?",
+      "interaction_mode": "mcq",
+      "topic": "Sets and its operations",
+      "difficulty_tier": "warmup",
+      "question_number": 3,
+      "choices": [
+        "{Tiger, Lion}",
+        "{Elephant}",
+        "{Horse, Dog}",
+        "{Tiger, Lion, Elephant, Horse, Dog}"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S15"
+    },
+    {
+      "id": "wb_L3_s15_q04",
+      "stem": "In a class of 40 students, 25 play cricket and 20 play football. If 10 play both, how many play only cricket?",
+      "interaction_mode": "mcq",
+      "topic": "Sets and its operations",
+      "difficulty_tier": "warmup",
+      "question_number": 4,
+      "choices": [
+        "15",
+        "25",
+        "10",
+        "20"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S15"
+    },
+    {
+      "id": "wb_L3_s15_q05",
+      "stem": "The universal set is represented by",
+      "interaction_mode": "mcq",
+      "topic": "Sets and its operations",
+      "difficulty_tier": "warmup",
+      "question_number": 5,
+      "choices": [
+        "A circle",
+        "A rectangle",
+        "A triangle",
+        "An oval"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S15"
+    },
+    {
+      "id": "wb_L3_s15_q06",
+      "stem": "If n(A) = 15, n(B) = 12, and n(A intersection B) = 5, then n(A union B) = ?",
+      "interaction_mode": "mcq",
+      "topic": "Sets and its operations",
+      "difficulty_tier": "practice",
+      "question_number": 6,
+      "choices": [
+        "22",
+        "27",
+        "32",
+        "20"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S15"
+    },
+    {
+      "id": "wb_L3_s15_q07",
+      "stem": "In a survey, 80 people like tea, 60 like coffee, and 30 like both. How many like only tea?",
+      "interaction_mode": "mcq",
+      "topic": "Sets and its operations",
+      "difficulty_tier": "practice",
+      "question_number": 7,
+      "choices": [
+        "50",
+        "80",
+        "30",
+        "110"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S15"
+    },
+    {
+      "id": "wb_L3_s15_q08",
+      "stem": "Which of the following is true for disjoint sets?",
+      "interaction_mode": "mcq",
+      "topic": "Sets and its operations",
+      "difficulty_tier": "practice",
+      "question_number": 8,
+      "choices": [
+        "A intersection B = A",
+        "A intersection B = B",
+        "A intersection B = empty set",
+        "A union B = empty set"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S15"
+    },
+    {
+      "id": "wb_L3_s15_q09",
+      "stem": "Set A has 4 elements and Set B has 6 elements. The minimum number of elements in A union B is",
+      "interaction_mode": "mcq",
+      "topic": "Sets and its operations",
+      "difficulty_tier": "practice",
+      "question_number": 9,
+      "choices": [
+        "4",
+        "6",
+        "10",
+        "2"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S15"
+    },
+    {
+      "id": "wb_L3_s15_q10",
+      "stem": "In a group of 100 animals: 40 are in Tiger category, 35 in Elephant category, and 50 in Animals category. If 10 are in all three, how many are in at least one category?",
+      "interaction_mode": "mcq",
+      "topic": "Sets and its operations",
+      "difficulty_tier": "practice",
+      "question_number": 10,
+      "choices": [
+        "125",
+        "100",
+        "85",
+        "115"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S15"
+    },
+    {
+      "id": "wb_L3_s15_q11",
+      "stem": "If A = {1, 2, 3, 4, 5} and B = {3, 4, 5, 6, 7}, then A - B = ?",
+      "interaction_mode": "mcq",
+      "topic": "Sets and its operations",
+      "difficulty_tier": "challenge",
+      "question_number": 11,
+      "choices": [
+        "{1, 2}",
+        "{6, 7}",
+        "{3, 4, 5}",
+        "{1, 2, 3, 4, 5, 6, 7}"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S15"
+    },
+    {
+      "id": "wb_L3_s15_q12",
+      "stem": "In a school, 60 students like maths, 45 like science, and 20 like both. How many like at least one subject?",
+      "interaction_mode": "mcq",
+      "topic": "Sets and its operations",
+      "difficulty_tier": "challenge",
+      "question_number": 12,
+      "choices": [
+        "85",
+        "105",
+        "125",
+        "65"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S15"
+    },
+    {
+      "id": "wb_L3_s15_q13",
+      "stem": "The complement of set A (denoted A') contains",
+      "interaction_mode": "mcq",
+      "topic": "Sets and its operations",
+      "difficulty_tier": "challenge",
+      "question_number": 13,
+      "choices": [
+        "All elements in A",
+        "All elements not in A",
+        "All elements in A and B",
+        "No elements"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S15"
+    },
+    {
+      "id": "wb_L3_s15_q14",
+      "stem": "35 children like dogs, 28 like cats. If 12 like both, how many like only cats?",
+      "interaction_mode": "mcq",
+      "topic": "Sets and its operations",
+      "difficulty_tier": "challenge",
+      "question_number": 14,
+      "choices": [
+        "16",
+        "28",
+        "12",
+        "23"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S15"
+    },
+    {
+      "id": "wb_L3_s15_q15",
+      "stem": "If n(A union B) = 50, n(A) = 30, n(B) = 35, then n(A intersection B) = ?",
+      "interaction_mode": "mcq",
+      "topic": "Sets and its operations",
+      "difficulty_tier": "challenge",
+      "question_number": 15,
+      "choices": [
+        "15",
+        "10",
+        "20",
+        "25"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S15"
+    },
+    {
+      "id": "wb_L3_s17_q01",
+      "stem": "The perimeter of a square of 13 cm is equal to",
+      "interaction_mode": "mcq",
+      "topic": "Perimeter",
+      "difficulty_tier": "warmup",
+      "question_number": 1,
+      "choices": [
+        "169 cm",
+        "52 cm",
+        "26 cm",
+        "None of these"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S17",
+      "svg": "svg/wb_L3_s17_q01.svg"
+    },
+    {
+      "id": "wb_L3_s17_q02",
+      "stem": "The length of a rectangular plot is 20 meters more than its breadth. If the cost of fencing at Rs. 26.50 per meter is Rs. 5300. What is the length of the plot?",
+      "interaction_mode": "mcq",
+      "topic": "Perimeter",
+      "difficulty_tier": "warmup",
+      "question_number": 2,
+      "choices": [
+        "40",
+        "120",
+        "50",
+        "None of these"
+      ],
+      "correct_answer": 3,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S17"
+    },
+    {
+      "id": "wb_L3_s17_q03",
+      "stem": "A man wants to fence his rectangular garden which is 15m long and 8m wide. Find the minimum length of fencing he needs to buy.",
+      "interaction_mode": "mcq",
+      "topic": "Perimeter",
+      "difficulty_tier": "warmup",
+      "question_number": 3,
+      "choices": [
+        "46 m",
+        "30 m",
+        "23 m",
+        "120 m"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S17",
+      "svg": "svg/wb_L3_s17_q03.svg"
+    },
+    {
+      "id": "wb_L3_s17_q06",
+      "stem": "The sides of a triangle are 5, 12 and 13 units. A rectangle of width 10 units is constructed equal in area to the area of the triangle. Then, the perimeter of the rectangle is",
+      "interaction_mode": "mcq",
+      "topic": "Perimeter",
+      "difficulty_tier": "practice",
+      "question_number": 6,
+      "choices": [
+        "30 units",
+        "26 units",
+        "13 units",
+        "15 units"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S17",
+      "svg": "svg/wb_L3_s17_q06.svg"
+    },
+    {
+      "id": "wb_L3_s17_q09",
+      "stem": "Which expression can be used to represent the perimeter of the given rectangle ABCD? (Length = 4a - 3b, Width = 5a + 4b)",
+      "interaction_mode": "mcq",
+      "topic": "Perimeter",
+      "difficulty_tier": "practice",
+      "question_number": 9,
+      "choices": [
+        "9a + 7b",
+        "18a + 2b",
+        "20a - 2b",
+        "18a + b"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S17",
+      "svg": "svg/wb_L3_s17_q09.svg"
+    },
+    {
+      "id": "wb_L3_s17_q10",
+      "stem": "The figure given consists of two squares of sides 8cm and 6cm. What is the perimeter of the figure?",
+      "interaction_mode": "mcq",
+      "topic": "Perimeter",
+      "difficulty_tier": "practice",
+      "question_number": 10,
+      "choices": [
+        "44 cm",
+        "42 cm",
+        "50 cm",
+        "58 cm"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S17",
+      "svg": "svg/wb_L3_s17_q10.svg"
+    },
+    {
+      "id": "wb_L3_s17_q11",
+      "stem": "The area of an equilateral triangle is 64\u221a3 sq.cm. Find its perimeter.",
+      "interaction_mode": "mcq",
+      "topic": "Perimeter",
+      "difficulty_tier": "challenge",
+      "question_number": 11,
+      "choices": [
+        "32 cm",
+        "48 cm",
+        "64 cm",
+        "72 cm"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S17"
+    }
+  ]
+}
