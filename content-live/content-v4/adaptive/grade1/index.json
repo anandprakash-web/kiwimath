@@ -1,0 +1,129 @@
+{
+  "grade": 1,
+  "total_topics": 8,
+  "total_questions": 3820,
+  "topics": [
+    {
+      "id": "g1-addition",
+      "name": "Addition",
+      "emoji": "➕",
+      "domain": "arithmetic",
+      "skills": [
+        "addition_basic"
+      ],
+      "total_questions": 579,
+      "difficulty_range": {
+        "min_irt_b": -2.98,
+        "max_irt_b": 3.0
+      }
+    },
+    {
+      "id": "g1-counting",
+      "name": "Counting & Numbers",
+      "emoji": "🔢",
+      "domain": "numbers",
+      "skills": [
+        "counting_10",
+        "counting_100",
+        "comparison"
+      ],
+      "total_questions": 902,
+      "difficulty_range": {
+        "min_irt_b": -2.98,
+        "max_irt_b": 3.0
+      }
+    },
+    {
+      "id": "g1-measurement",
+      "name": "Measurement",
+      "emoji": "📏",
+      "domain": "measurement",
+      "skills": [
+        "length",
+        "weight",
+        "capacity"
+      ],
+      "total_questions": 190,
+      "difficulty_range": {
+        "min_irt_b": -2.94,
+        "max_irt_b": 3.0
+      }
+    },
+    {
+      "id": "g1-patterns",
+      "name": "Patterns & Sequences",
+      "emoji": "🧩",
+      "domain": "numbers",
+      "skills": [
+        "number_patterns"
+      ],
+      "total_questions": 633,
+      "difficulty_range": {
+        "min_irt_b": -2.98,
+        "max_irt_b": 2.0
+      }
+    },
+    {
+      "id": "g1-shapes",
+      "name": "Shapes & Geometry",
+      "emoji": "📐",
+      "domain": "geometry",
+      "skills": [
+        "shapes_2d",
+        "shapes_3d",
+        "symmetry"
+      ],
+      "total_questions": 587,
+      "difficulty_range": {
+        "min_irt_b": -2.98,
+        "max_irt_b": 2.16
+      }
+    },
+    {
+      "id": "g1-subtraction",
+      "name": "Subtraction",
+      "emoji": "➖",
+      "domain": "arithmetic",
+      "skills": [
+        "subtraction_basic"
+      ],
+      "total_questions": 318,
+      "difficulty_range": {
+        "min_irt_b": -2.94,
+        "max_irt_b": 3.0
+      }
+    },
+    {
+      "id": "g1-time-money",
+      "name": "Time & Money",
+      "emoji": "⏰",
+      "domain": "measurement",
+      "skills": [
+        "time",
+        "money"
+      ],
+      "total_questions": 268,
+      "difficulty_range": {
+        "min_irt_b": -2.94,
+        "max_irt_b": 3.0
+      }
+    },
+    {
+      "id": "g1-word-problems",
+      "name": "Word Problems",
+      "emoji": "📖",
+      "domain": "arithmetic",
+      "skills": [
+        "multi_step",
+        "data_handling"
+      ],
+      "total_questions": 343,
+      "difficulty_range": {
+        "min_irt_b": -2.98,
+        "max_irt_b": 3.0
+      }
+    }
+  ],
+  "schema_version": "4.2",
+  "generated_at": "2026-06-09T22:19:53.012284"
+}

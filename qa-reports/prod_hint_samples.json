@@ -1,0 +1,332 @@
+[
+ {
+  "file": "grade3/wavebook-area.json",
+  "id": "wb_L3_s11_q01",
+  "topic": "Area",
+  "stem": "Calculate the area of rectangle if one square represents an area of 1 cm² (6 columns, 4 rows)",
+  "hint": {
+   "level_0": "Each small square of the grid counts as one unit of area. What is being asked — the total covered?",
+   "level_1": "You don't need a formula here: count the unit squares the region covers, row by row.",
+   "level_2": "Number of covered squares × area of one square = ?"
+  }
+ },
+ {
+  "file": "grade3/wavebook-area.json",
+  "id": "wb_L3_s11_q02",
+  "topic": "Area",
+  "stem": "Each side of square is of 10m. What will be the area of the square?",
+  "hint": {
+   "level_0": "Each side of the square is 10. What is the area — the space the square covers?",
+   "level_1": "A square's length and width are the same, both 10.",
+   "level_2": "Area = side × side = 10 × 10 = ?"
+  }
+ },
+ {
+  "file": "grade3/wavebook-area.json",
+  "id": "wb_L3_s11_q04",
+  "topic": "Area",
+  "stem": "The length and breadth of a rectangle are (3a + 2) and (2a - 1). Which represents its perimeter?",
+  "hint": {
+   "level_0": "The sides are algebraic expressions. Perimeter still means: add ALL the sides around the shape.",
+   "level_1": "A rectangle has two lengths and two breadths, so each expression is used twice.",
+   "level_2": "Perimeter = 2 × (length + breadth) — add the two expressions inside the bracket first, then double = ?"
+  }
+ },
+ {
+  "file": "grade3/wavebook-area.json",
+  "id": "wb_L3_s11_q06",
+  "topic": "Area",
+  "stem": "Find the area of shaded region. (Each square = 1 m², 21 squares shaded in L-pattern)",
+  "hint": {
+   "level_0": "Each small square of the grid counts as one unit of area. What is being asked — the total covered?",
+   "level_1": "You don't need a formula here: count the unit squares the region covers, row by row.",
+   "level_2": "Number of covered squares × area of one square = ?"
+  }
+ },
+ {
+  "file": "grade3/wavebook-area.json",
+  "id": "wb_L3_s11_q08",
+  "topic": "Area",
+  "stem": "Rohit's family is building a concrete basketball court (7m x 5m) in their backyard (11m x 6m). How many square metres will be left for grass?",
+  "hint": {
+   "level_0": "What is known (7, 5, 11, 6) and what exactly is asked? Say it in your own words.",
+   "level_1": "Choose the operation the story needs (add, subtract, multiply, divide) and set it up with 7, 5, 11.",
+   "level_2": "Write the calculation out and solve it step by step: ... = ?"
+  }
+ },
+ {
+  "file": "grade3/wavebook-area.json",
+  "id": "wb_L3_s11_q12",
+  "topic": "Area",
+  "stem": "The area of a square is 100 sq.cm. If the sides are increased by 10%, what will be the area of the new square?",
+  "hint": {
+   "level_0": "The sides grow by 10%. What happens to each side length first, before the area?",
+   "level_1": "New side = old side + 10% of it. Find the new side first.",
+   "level_2": "Then: new area = new side × new side = ?"
+  }
+ },
+ {
+  "file": "grade3/wavebook-area.json",
+  "id": "wb_L3_s11_q15",
+  "topic": "Area",
+  "stem": "Find the total shaded area of the figure made up of identical squares (each square 4cm side, 6 shaded)",
+  "hint": {
+   "level_0": "Each small square of the grid counts as one unit of area. What is being asked — the total covered?",
+   "level_1": "You don't need a formula here: count the unit squares the region covers, row by row.",
+   "level_2": "Number of covered squares × area of one square = ?"
+  }
+ },
+ {
+  "file": "grade3/wavebook-blood-relation.json",
+  "id": "wb_L3_s29_q01",
+  "topic": "Blood Relation",
+  "stem": "Pointing to a man, a woman said, \"His mother is the only daughter of my mother.\" How is the woman related to the man?",
+  "hint": {
+   "level_0": "Whose relationship to whom is asked? Underline the two people before anything else.",
+   "level_1": "Work from the END of the sentence backwards, drawing a mini family tree node by node.",
+   "level_2": "Label each person (M/F, generation up or down) on your tree, then read off the relationship = ?"
+  }
+ },
+ {
+  "file": "grade3/wavebook-blood-relation.json",
+  "id": "wb_L3_s29_q02",
+  "topic": "Blood Relation",
+  "stem": "If A is the brother of B, B is the sister of C, and C is the father of D, how is A related to D?",
+  "hint": {
+   "level_0": "Whose relationship to whom is asked? Underline the two people before anything else.",
+   "level_1": "Work from the END of the sentence backwards, drawing a mini family tree node by node.",
+   "level_2": "Label each person (M/F, generation up or down) on your tree, then read off the relationship = ?"
+  }
+ },
+ {
+  "file": "grade3/wavebook-blood-relation.json",
+  "id": "wb_L3_s29_q03",
+  "topic": "Blood Relation",
+  "stem": "Ravi said, \"This girl is the wife of the grandson of my mother.\" Who is Ravi to the girl?",
+  "hint": {
+   "level_0": "Whose relationship to whom is asked? Underline the two people before anything else.",
+   "level_1": "Work from the END of the sentence backwards, drawing a mini family tree node by node.",
+   "level_2": "Label each person (M/F, generation up or down) on your tree, then read off the relationship = ?"
+  }
+ },
+ {
+  "file": "grade3/wavebook-blood-relation.json",
+  "id": "wb_L3_s29_q04",
+  "topic": "Blood Relation",
+  "stem": "If P + Q means P is the father of Q, P - Q means P is the sister of Q, and P x Q means P is the mother of Q, what does A + B - C mean?",
+  "hint": {
+   "level_0": "Whose relationship to whom is asked? Underline the two people before anything else.",
+   "level_1": "Work from the END of the sentence backwards, drawing a mini family tree node by node.",
+   "level_2": "Label each person (M/F, generation up or down) on your tree, then read off the relationship = ?"
+  }
+ },
+ {
+  "file": "grade3/wavebook-blood-relation.json",
+  "id": "wb_L3_s29_q05",
+  "topic": "Blood Relation",
+  "stem": "Pointing to a photograph, Ramesh said, \"She is the daughter of my grandfather's only son.\" How is the girl in the photo related to Ramesh?",
+  "hint": {
+   "level_0": "Whose relationship to whom is asked? Underline the two people before anything else.",
+   "level_1": "Work from the END of the sentence backwards, drawing a mini family tree node by node.",
+   "level_2": "Label each person (M/F, generation up or down) on your tree, then read off the relationship = ?"
+  }
+ },
+ {
+  "file": "grade3/wavebook-blood-relation.json",
+  "id": "wb_L3_s29_q06",
+  "topic": "Blood Relation",
+  "stem": "A is B's sister. C is B's mother. D is C's father. E is D's mother. How is A related to D?",
+  "hint": {
+   "level_0": "Whose relationship to whom is asked? Underline the two people before anything else.",
+   "level_1": "Work from the END of the sentence backwards, drawing a mini family tree node by node.",
+   "level_2": "Label each person (M/F, generation up or down) on your tree, then read off the relationship = ?"
+  }
+ },
+ {
+  "file": "grade3/wavebook-blood-relation.json",
+  "id": "wb_L3_s29_q07",
+  "topic": "Blood Relation",
+  "stem": "If X is the husband of Y, Y is the sister of Z, and Z is the son of W, how is X related to W?",
+  "hint": {
+   "level_0": "Whose relationship to whom is asked? Underline the two people before anything else.",
+   "level_1": "Work from the END of the sentence backwards, drawing a mini family tree node by node.",
+   "level_2": "Label each person (M/F, generation up or down) on your tree, then read off the relationship = ?"
+  }
+ },
+ {
+  "file": "grade3/wavebook-blood-relation.json",
+  "id": "wb_L3_s29_q08",
+  "topic": "Blood Relation",
+  "stem": "Meena said, \"Ravi's mother is the only daughter of my mother.\" How is Meena related to Ravi?",
+  "hint": {
+   "level_0": "Whose relationship to whom is asked? Underline the two people before anything else.",
+   "level_1": "Work from the END of the sentence backwards, drawing a mini family tree node by node.",
+   "level_2": "Label each person (M/F, generation up or down) on your tree, then read off the relationship = ?"
+  }
+ },
+ {
+  "file": "grade3/wavebook-blood-relation.json",
+  "id": "wb_L3_s29_q09",
+  "topic": "Blood Relation",
+  "stem": "In a family, there are 6 members A, B, C, D, E, and F. B is the son of C. A and C are married. D is the brother of A. E is the daughter of A. F is the brother o",
+  "hint": {
+   "level_0": "Whose relationship to whom is asked? Underline the two people before anything else.",
+   "level_1": "Work from the END of the sentence backwards, drawing a mini family tree node by node.",
+   "level_2": "Label each person (M/F, generation up or down) on your tree, then read off the relationship = ?"
+  }
+ },
+ {
+  "file": "grade3/wavebook-blood-relation.json",
+  "id": "wb_L3_s29_q10",
+  "topic": "Blood Relation",
+  "stem": "If \"A $ B\" means A is the mother of B, \"A # B\" means A is the father of B, what does \"P # Q $ R\" mean?",
+  "hint": {
+   "level_0": "Whose relationship to whom is asked? Underline the two people before anything else.",
+   "level_1": "Work from the END of the sentence backwards, drawing a mini family tree node by node.",
+   "level_2": "Label each person (M/F, generation up or down) on your tree, then read off the relationship = ?"
+  }
+ },
+ {
+  "file": "grade3/wavebook-blood-relation.json",
+  "id": "wb_L3_s29_q11",
+  "topic": "Blood Relation",
+  "stem": "Pointing to a lady, a man said, \"The son of her only brother is the brother of my wife.\" How is the lady related to the man?",
+  "hint": {
+   "level_0": "Whose relationship to whom is asked? Underline the two people before anything else.",
+   "level_1": "Work from the END of the sentence backwards, drawing a mini family tree node by node.",
+   "level_2": "Label each person (M/F, generation up or down) on your tree, then read off the relationship = ?"
+  }
+ },
+ {
+  "file": "grade3/wavebook-blood-relation.json",
+  "id": "wb_L3_s29_q12",
+  "topic": "Blood Relation",
+  "stem": "Rajan has a brother Manan. Rajan is the son of Poonam. Tarun is Poonam's father. How is Manan related to Tarun?",
+  "hint": {
+   "level_0": "Whose relationship to whom is asked? Underline the two people before anything else.",
+   "level_1": "Work from the END of the sentence backwards, drawing a mini family tree node by node.",
+   "level_2": "Label each person (M/F, generation up or down) on your tree, then read off the relationship = ?"
+  }
+ },
+ {
+  "file": "grade3/wavebook-blood-relation.json",
+  "id": "wb_L3_s29_q13",
+  "topic": "Blood Relation",
+  "stem": "A is the father of C. B is the daughter of A. C is married to D. E is the son of C and D. How is B related to E?",
+  "hint": {
+   "level_0": "Whose relationship to whom is asked? Underline the two people before anything else.",
+   "level_1": "Work from the END of the sentence backwards, drawing a mini family tree node by node.",
+   "level_2": "Label each person (M/F, generation up or down) on your tree, then read off the relationship = ?"
+  }
+ },
+ {
+  "file": "grade3/wavebook-blood-relation.json",
+  "id": "wb_L3_s29_q14",
+  "topic": "Blood Relation",
+  "stem": "If M is brother of N, B is brother of N, and M is brother of D, how is N related to D?",
+  "hint": {
+   "level_0": "Whose relationship to whom is asked? Underline the two people before anything else.",
+   "level_1": "Work from the END of the sentence backwards, drawing a mini family tree node by node.",
+   "level_2": "Label each person (M/F, generation up or down) on your tree, then read off the relationship = ?"
+  }
+ },
+ {
+  "file": "grade3/wavebook-blood-relation.json",
+  "id": "wb_L3_s29_q15",
+  "topic": "Blood Relation",
+  "stem": "Pointing to a man in a photo, Sunita said, \"His mother's brother is the father of my son.\" How is Sunita related to the man?",
+  "hint": {
+   "level_0": "Whose relationship to whom is asked? Underline the two people before anything else.",
+   "level_1": "Work from the END of the sentence backwards, drawing a mini family tree node by node.",
+   "level_2": "Label each person (M/F, generation up or down) on your tree, then read off the relationship = ?"
+  }
+ },
+ {
+  "file": "grade3/wavebook-clocks-and-time.json",
+  "id": "wb_L3_s23_q01",
+  "topic": "Clocks and Time",
+  "stem": "Meena takes 7 minutes 20 seconds to sew 8 buttons. How long does she take to sew one button?",
+  "hint": {
+   "level_0": "What is known (7, 20, 8) and what is asked? Say it in your own words.",
+   "level_1": "Convert everything to the SAME unit first (seconds or minutes). 1 minute = 60 seconds.",
+   "level_2": "Total time ÷ number of items = time for one item = ?"
+  }
+ },
+ {
+  "file": "grade3/wavebook-clocks-and-time.json",
+  "id": "wb_L3_s23_q04",
+  "topic": "Clocks and Time",
+  "stem": "Which of these years was a leap year?",
+  "hint": {
+   "level_0": "What makes a year a leap year? Recall the rule before checking the choices.",
+   "level_1": "Rule: the year must divide exactly by 4. BUT century years (ending 00) must divide by 400.",
+   "level_2": "Test each choice: divide by 4 (and by 400 if it ends in 00). Which one passes? = ?"
+  }
+ },
+ {
+  "file": "grade3/wavebook-clocks-and-time.json",
+  "id": "wb_L3_s23_q07",
+  "topic": "Clocks and Time",
+  "stem": "How many times do the hands of a clock coincide in a day?",
+  "hint": {
+   "level_0": "Read the question again slowly — what is given, and what is asked?",
+   "level_1": "Recall the key fact or rule for this topic, then test each choice against it.",
+   "level_2": "Eliminate the choices that break the rule; check the one that remains = ?"
+  }
+ },
+ {
+  "file": "grade3/wavebook-clocks-and-time.json",
+  "id": "wb_L3_s23_q09",
+  "topic": "Clocks and Time",
+  "stem": "If A and B together can complete a piece of work in 15 days and B alone in 20 days, in how many days can A alone complete the work?",
+  "hint": {
+   "level_0": "What is known (15, 20) and what is asked? Say it in your own words.",
+   "level_1": "Convert everything to the SAME unit first (seconds or minutes). 1 minute = 60 seconds.",
+   "level_2": "Total time ÷ number of items = time for one item = ?"
+  }
+ },
+ {
+  "file": "grade3/wavebook-clocks-and-time.json",
+  "id": "wb_L3_s23_q14",
+  "topic": "Clocks and Time",
+  "stem": "In a haunted house the ghost disappears at 6:15. A strange clock runs backwards from then. At 19:30 real time, the ghost reappears. What does the odd clock show",
+  "hint": {
+   "level_0": "What is known (6, 15, 19) and what is asked? Say it in your own words.",
+   "level_1": "Convert everything to the SAME unit first (seconds or minutes). 1 minute = 60 seconds.",
+   "level_2": "Total time ÷ number of items = time for one item = ?"
+  }
+ },
+ {
+  "file": "grade3/wavebook-days-months-dates.json",
+  "id": "wb_L3_s25_q01",
+  "topic": "Days months dates",
+  "stem": "How many days are there in a leap year?",
+  "hint": {
+   "level_0": "An ordinary year and a leap year differ by exactly one day. Which one is asked about?",
+   "level_1": "An ordinary year has 365 days. In a leap year, February gets one extra day.",
+   "level_2": "Days in a leap year = 365 + 1 = ?"
+  }
+ },
+ {
+  "file": "grade3/wavebook-days-months-dates.json",
+  "id": "wb_L3_s25_q02",
+  "topic": "Days months dates",
+  "stem": "Which of the following is a leap year?",
+  "hint": {
+   "level_0": "What makes a year a leap year? Recall the rule before checking the choices.",
+   "level_1": "Rule: the year must divide exactly by 4. BUT century years (ending 00) must divide by 400.",
+   "level_2": "Test each choice: divide by 4 (and by 400 if it ends in 00). Which one passes? = ?"
+  }
+ },
+ {
+  "file": "grade3/wavebook-days-months-dates.json",
+  "id": "wb_L3_s25_q03",
+  "topic": "Days months dates",
+  "stem": "If January 1 is a Monday, what day is January 31?",
+  "hint": {
+   "level_0": "We know January 1 is a Monday, and we want the weekday of January 31.",
+   "level_1": "Weekdays repeat every 7 days. Count how many days lie between January 1 and January 31, then find the remainder after dividing by 7.",
+   "level_2": "Move that remainder of days forward from Monday: Monday + remainder days = ?"
+  }
+ }
+]

@@ -1,0 +1,130 @@
+{
+  "topic_id": "wavebook-algebra---expressions",
+  "topic_name": "Wavebook: Algebra - Expressions",
+  "topic_emoji": "\ud83d\udcd8",
+  "grade": 6,
+  "domain": "wavebook",
+  "source": "wavebook",
+  "total_questions": 5,
+  "difficulty_range": {
+    "min": 0,
+    "max": 0
+  },
+  "questions": [
+    {
+      "id": "wb_L4_s23_q01",
+      "stem": "The number of terms in the expression 3x\u00b2 + 5xy - 4y + 7 is:",
+      "interaction_mode": "mcq",
+      "topic": "Algebra - Expressions",
+      "difficulty_tier": "warmup",
+      "question_number": 1,
+      "choices": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S23",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "Terms are the chunks separated by + and \u2212 signs.",
+        "level_1": "Underline each chunk between the + / \u2212 signs, including the lone constant at the end.",
+        "level_2": "Count the underlined chunks = ?"
+      }
+    },
+    {
+      "id": "wb_L4_s23_q02",
+      "stem": "Like terms in algebra are terms that have:",
+      "interaction_mode": "mcq",
+      "topic": "Algebra - Expressions",
+      "difficulty_tier": "warmup",
+      "question_number": 2,
+      "choices": [
+        "Same variables with same powers",
+        "Same coefficients",
+        "Same constant terms",
+        "Same number of terms"
+      ],
+      "correct_answer": 0,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S23",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "Terms are the chunks separated by + and \u2212 signs.",
+        "level_1": "Underline each chunk between the + / \u2212 signs, including the lone constant at the end.",
+        "level_2": "Count the underlined chunks = ?"
+      }
+    },
+    {
+      "id": "wb_L4_s23_q03",
+      "stem": "The sum of 3x + 5 and 2x - 3 is:",
+      "interaction_mode": "mcq",
+      "topic": "Algebra - Expressions",
+      "difficulty_tier": "warmup",
+      "question_number": 3,
+      "choices": [
+        "5x - 2",
+        "x + 2",
+        "5x + 2",
+        "5x + 8"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S23",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "What is known (3, 5, 2, 3) and what exactly is asked? Say it in your own words.",
+        "level_1": "Choose the operation the story needs (add, subtract, multiply, divide) and set it up with 3, 5, 2.",
+        "level_2": "Write the calculation out and solve it step by step: ... = ?"
+      }
+    },
+    {
+      "id": "wb_L4_s23_q05",
+      "stem": "What is the value of 3a\u00b2 - 2a + 1 when a = 2?",
+      "interaction_mode": "mcq",
+      "topic": "Algebra - Expressions",
+      "difficulty_tier": "warmup",
+      "question_number": 5,
+      "choices": [
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S23",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "We know a = 2. The expression asks us to use that value.",
+        "level_1": "Replace every a in the expression with 2, keeping the other numbers as they are (remember a\u00b2 means 2 \u00d7 2).",
+        "level_2": "Now compute, powers and multiplication before addition/subtraction: ... = ?"
+      }
+    },
+    {
+      "id": "wb_L4_s23_q15",
+      "stem": "If the perimeter of a rectangle is 2(l + b) and l = 3x + 2, b = x - 1, what is the perimeter?",
+      "interaction_mode": "mcq",
+      "topic": "Algebra - Expressions",
+      "difficulty_tier": "challenge",
+      "question_number": 15,
+      "choices": [
+        "4x + 1",
+        "6x + 2",
+        "8x + 1",
+        "8x + 2"
+      ],
+      "correct_answer": 3,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S23",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "The sides are algebraic expressions. Perimeter still means: add ALL the sides around the shape.",
+        "level_1": "A rectangle has two lengths and two breadths, so each expression is used twice.",
+        "level_2": "Perimeter = 2 \u00d7 (length + breadth) \u2014 add the two expressions inside the bracket first, then double = ?"
+      }
+    }
+  ]
+}

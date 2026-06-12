@@ -1,0 +1,3903 @@
+[
+ {
+  "file": "grade1/g1-counting.json",
+  "id": "A1-CNT-0373",
+  "reason": "missing_visual_unanswerable",
+  "question": {
+   "id": "A1-CNT-0373",
+   "stem": "Amit sees some mangoes in the picture. How many mangoes are there?",
+   "choices": [],
+   "correct_answer": 0,
+   "difficulty_tier": "medium-easy",
+   "difficulty_score": 11,
+   "visual_svg": null,
+   "visual_alt": null,
+   "diagnostics": {
+    "0": "Try counting each object one by one, pointing to each as you count.",
+    "1": "Be careful not to skip any objects. Count slowly.",
+    "2": "You're off by one. Recount carefully — did you include the starting number?"
+   },
+   "tags": [
+    "counting",
+    "numbers_1_9",
+    "visual_counting"
+   ],
+   "topic": "ncert_g1_numbers",
+   "chapter": "Ch1: Numbers 1 to 9",
+   "hint": {
+    "level_0": "Count means telling how many things are there.",
+    "level_1": "Touch each object and say the number aloud: 1, 2, 3...",
+    "level_2": "Point to each mangoe one by one and count. The last number you say is the answer."
+   },
+   "curriculum_tags": [
+    "NCERT_1_1"
+   ],
+   "irt_params": {
+    "a": 1.15,
+    "b": -2.39,
+    "c": 0.25
+   },
+   "irt_a": 1.15,
+   "irt_b": -2.39,
+   "irt_c": 0.25,
+   "solution_steps": [
+    "Look at the picture carefully",
+    "Count each object one by one"
+   ],
+   "interaction_mode": "integer",
+   "correct_value": 2,
+   "level": 1,
+   "level_name": "Explorer",
+   "universal_skill_id": "COUNT_10_1",
+   "skill_id": "counting_10",
+   "skill_domain": "numbers",
+   "maturity_bucket": "calibrating",
+   "visual_requirement": "pending_manual",
+   "visual_type": "none",
+   "visual_ai_verified": false,
+   "media_id": "NCERT-G1-001.svg",
+   "media_hash": "sha256:9e8f6657864d6a11",
+   "misconception_ids": [
+    "COUNT_ERR"
+   ],
+   "why_quality": "human_authored",
+   "why_framework": "3R",
+   "hint_quality": {
+    "layers": 3,
+    "quality": "good",
+    "has_3_layers": true
+   },
+   "curriculum_source": "ncert",
+   "curriculum_map": {
+    "cbse": "Ch1: Numbers",
+    "icse": "Ch1: Numbers",
+    "cambridge": "1Nn - Numbers",
+    "singapore": "Whole Numbers",
+    "common_core": "K.CC / 1.NBT"
+   },
+   "school_grade": 1,
+   "avg_time_to_solve_ms": null,
+   "times_served": 0,
+   "flag_count": 0,
+   "schema_version": "3.0",
+   "adaptive_topic_id": "g1-counting",
+   "adaptive_topic_name": "Counting & Numbers",
+   "adaptive_topic_emoji": "🔢",
+   "adaptive_grade": 1,
+   "dual_tagged": true,
+   "content_source": "ncert",
+   "sequence_id": 373,
+   "difficulty_tier_in_topic": "practice",
+   "locale_ids": [
+    "india",
+    "singapore",
+    "us",
+    "global"
+   ],
+   "original_id": "NCERT-G1-044"
+  }
+ },
+ {
+  "file": "grade1/g1-counting.json",
+  "id": "A1-CNT-0459",
+  "reason": "missing_visual_unanswerable",
+  "question": {
+   "id": "A1-CNT-0459",
+   "stem": "Ananya sees some balloons in the picture. How many balloons are there?",
+   "choices": [],
+   "correct_answer": 0,
+   "difficulty_tier": "medium",
+   "difficulty_score": 15,
+   "visual_svg": null,
+   "visual_alt": null,
+   "diagnostics": {
+    "2": "Try counting each object one by one, pointing to each as you count.",
+    "3": "Be careful not to skip any objects. Count slowly.",
+    "0": "Count each object one by one. Make sure you don't skip any or count one twice."
+   },
+   "tags": [
+    "counting",
+    "numbers_1_9",
+    "visual_counting"
+   ],
+   "topic": "ncert_g1_numbers",
+   "chapter": "Ch1: Numbers 1 to 9",
+   "hint": {
+    "level_0": "Count means telling how many things are there.",
+    "level_1": "Touch each object and say the number aloud: 1, 2, 3...",
+    "level_2": "Point to each balloon one by one and count. The last number you say is the answer."
+   },
+   "curriculum_tags": [
+    "NCERT_1_1"
+   ],
+   "irt_params": {
+    "a": 1.15,
+    "b": -2.17,
+    "c": 0.25
+   },
+   "irt_a": 1.15,
+   "irt_b": -2.17,
+   "irt_c": 0.25,
+   "solution_steps": [
+    "Look at the picture carefully",
+    "Count each object one by one"
+   ],
+   "interaction_mode": "integer",
+   "correct_value": 1,
+   "level": 1,
+   "level_name": "Explorer",
+   "universal_skill_id": "COUNT_10_1",
+   "skill_id": "counting_10",
+   "skill_domain": "numbers",
+   "maturity_bucket": "calibrating",
+   "visual_requirement": "pending_manual",
+   "visual_type": "none",
+   "visual_ai_verified": false,
+   "media_id": "NCERT-G1-300.svg",
+   "media_hash": "sha256:c4c255547920fffb",
+   "misconception_ids": [
+    "COUNT_ERR"
+   ],
+   "why_quality": "human_authored",
+   "why_framework": "3R",
+   "hint_quality": {
+    "layers": 3,
+    "quality": "good",
+    "has_3_layers": true
+   },
+   "curriculum_source": "ncert",
+   "curriculum_map": {
+    "cbse": "Ch1: Numbers",
+    "icse": "Ch1: Numbers",
+    "cambridge": "1Nn - Numbers",
+    "singapore": "Whole Numbers",
+    "common_core": "K.CC / 1.NBT"
+   },
+   "school_grade": 1,
+   "avg_time_to_solve_ms": null,
+   "times_served": 0,
+   "flag_count": 0,
+   "schema_version": "3.0",
+   "adaptive_topic_id": "g1-counting",
+   "adaptive_topic_name": "Counting & Numbers",
+   "adaptive_topic_emoji": "🔢",
+   "adaptive_grade": 1,
+   "dual_tagged": true,
+   "content_source": "ncert",
+   "sequence_id": 461,
+   "difficulty_tier_in_topic": "practice",
+   "locale_ids": [
+    "india",
+    "singapore",
+    "us",
+    "global"
+   ],
+   "original_id": "NCERT-G1-077"
+  }
+ },
+ {
+  "file": "grade1/g1-counting.json",
+  "id": "A1-CNT-0583",
+  "reason": "missing_visual_unanswerable",
+  "question": {
+   "id": "A1-CNT-0583",
+   "stem": "Look at the picture graph. How many children chose Bananas?",
+   "choices": [
+    "5",
+    "7",
+    "8",
+    "6"
+   ],
+   "correct_answer": 3,
+   "difficulty_tier": "medium",
+   "difficulty_score": 16,
+   "visual_svg": null,
+   "visual_alt": null,
+   "diagnostics": {
+    "1": "Misreads the graph",
+    "2": "Confuses most with least",
+    "3": "Counting error from the graph",
+    "0": "That's 1 too few. Try again - make sure you count everything!"
+   },
+   "tags": [
+    "picture_graph",
+    "data",
+    "CPA_pictorial"
+   ],
+   "chapter": "1B: Picture Graphs",
+   "hint": {
+    "level_0": "Count the symbols carefully in each row.",
+    "level_1": "Each symbol represents 1.",
+    "level_2": "Compare the lengths of the rows."
+   },
+   "curriculum_tags": [
+    "SING_1B_9"
+   ],
+   "irt_params": {
+    "a": 1.05,
+    "b": -1.86,
+    "c": 0.25
+   },
+   "irt_a": 1.05,
+   "irt_b": -1.86,
+   "irt_c": 0.25,
+   "solution_steps": [
+    "Read the values from the graph carefully",
+    "Identify the numbers for each item mentioned"
+   ],
+   "level": 1,
+   "level_name": "Explorer",
+   "universal_skill_id": "COUNT_10_1",
+   "skill_id": "counting_10",
+   "skill_domain": "numbers",
+   "maturity_bucket": "calibrating",
+   "visual_requirement": "pending_manual",
+   "visual_type": "none",
+   "visual_ai_verified": false,
+   "media_id": "SING-G1-177.svg",
+   "media_hash": "sha256:9779b5441ee79275",
+   "misconception_ids": [
+    "MISC_1",
+    "MISC_2",
+    "COUNT_ERR"
+   ],
+   "why_quality": "ai_generated",
+   "why_framework": "pending",
+   "hint_quality": {
+    "layers": 3,
+    "quality": "good",
+    "has_3_layers": true
+   },
+   "curriculum_source": "singapore",
+   "curriculum_map": {},
+   "school_grade": 1,
+   "avg_time_to_solve_ms": null,
+   "times_served": 0,
+   "flag_count": 0,
+   "schema_version": "3.0",
+   "adaptive_topic_id": "g1-counting",
+   "adaptive_topic_name": "Counting & Numbers",
+   "adaptive_topic_emoji": "🔢",
+   "adaptive_grade": 1,
+   "dual_tagged": true,
+   "content_source": "singapore",
+   "sequence_id": 587,
+   "difficulty_tier_in_topic": "challenge",
+   "locale_ids": [
+    "india",
+    "singapore",
+    "us",
+    "global"
+   ],
+   "topic": "g1-counting",
+   "original_id": "SING-G1-013"
+  }
+ },
+ {
+  "file": "grade1/g1-counting.json",
+  "id": "A1-CNT-0525",
+  "reason": "missing_visual_unanswerable",
+  "question": {
+   "id": "A1-CNT-0525",
+   "stem": "Vivaan went to the market and bought some guavas. Count them in the picture.",
+   "choices": [
+    "4",
+    "8",
+    "7",
+    "1"
+   ],
+   "correct_answer": 1,
+   "difficulty_tier": "medium",
+   "difficulty_score": 18,
+   "visual_svg": null,
+   "visual_alt": null,
+   "diagnostics": {
+    "2": "Count carefully, one by one.",
+    "3": "Touch each one as you count to not miss any.",
+    "0": "Start from the top-left and count row by row."
+   },
+   "tags": [
+    "counting",
+    "numbers_1_9",
+    "word_problem"
+   ],
+   "topic": "ncert_g1_numbers",
+   "chapter": "Ch1: Numbers 1 to 9",
+   "hint": {
+    "level_0": "Look at the picture carefully and count each item.",
+    "level_1": "Point to each item as you count: 1, 2, 3...",
+    "level_2": "Count each guava in the picture from left to right."
+   },
+   "curriculum_tags": [
+    "NCERT_1_1"
+   ],
+   "irt_params": {
+    "a": 1.15,
+    "b": -2.0,
+    "c": 0.25
+   },
+   "irt_a": 1.15,
+   "irt_b": -2.0,
+   "irt_c": 0.25,
+   "solution_steps": [
+    "Look at the picture carefully",
+    "Count each object one by one"
+   ],
+   "interaction_mode": "mcq",
+   "level": 1,
+   "level_name": "Explorer",
+   "universal_skill_id": "COUNT_10_1",
+   "skill_id": "counting_10",
+   "skill_domain": "numbers",
+   "maturity_bucket": "calibrating",
+   "visual_requirement": "pending_manual",
+   "visual_type": "none",
+   "visual_ai_verified": false,
+   "media_id": "NCERT-G1-021.svg",
+   "media_hash": "sha256:bfa9e5bf2b099f09",
+   "misconception_ids": [
+    "COUNT_ERR"
+   ],
+   "why_quality": "ai_generated",
+   "why_framework": "pending",
+   "hint_quality": {
+    "layers": 3,
+    "quality": "good",
+    "has_3_layers": true
+   },
+   "curriculum_source": "ncert",
+   "curriculum_map": {
+    "cbse": "Ch1: Numbers",
+    "icse": "Ch1: Numbers",
+    "cambridge": "1Nn - Numbers",
+    "singapore": "Whole Numbers",
+    "common_core": "K.CC / 1.NBT"
+   },
+   "school_grade": 1,
+   "avg_time_to_solve_ms": null,
+   "times_served": 0,
+   "flag_count": 0,
+   "schema_version": "3.0",
+   "adaptive_topic_id": "g1-counting",
+   "adaptive_topic_name": "Counting & Numbers",
+   "adaptive_topic_emoji": "🔢",
+   "adaptive_grade": 1,
+   "dual_tagged": true,
+   "content_source": "ncert",
+   "sequence_id": 527,
+   "difficulty_tier_in_topic": "practice",
+   "locale_ids": [
+    "india",
+    "singapore",
+    "us",
+    "global"
+   ],
+   "original_id": "NCERT-G1-093"
+  }
+ },
+ {
+  "file": "grade1/g1-counting.json",
+  "id": "A1-CNT-0637",
+  "reason": "missing_visual_unanswerable",
+  "question": {
+   "id": "A1-CNT-0637",
+   "stem": "Look at the picture graph. Which fruit is the least popular?",
+   "choices": [
+    "Apples",
+    "Pears",
+    "Bananas",
+    "Grapes"
+   ],
+   "correct_answer": 2,
+   "difficulty_tier": "medium",
+   "difficulty_score": 19,
+   "visual_svg": null,
+   "visual_alt": null,
+   "diagnostics": {
+    "1": "Misreads the graph",
+    "2": "Confuses most with least",
+    "3": "Counting error from the graph",
+    "0": "Not quite! Read the question again and try once more."
+   },
+   "tags": [
+    "picture_graph",
+    "data",
+    "CPA_pictorial"
+   ],
+   "chapter": "1B: Picture Graphs",
+   "hint": {
+    "level_0": "Count the symbols carefully in each row.",
+    "level_1": "Each symbol represents 1.",
+    "level_2": "Compare the lengths of the rows."
+   },
+   "curriculum_tags": [
+    "SING_1B_9"
+   ],
+   "irt_params": {
+    "a": 1.05,
+    "b": -1.64,
+    "c": 0.25
+   },
+   "irt_a": 1.05,
+   "irt_b": -1.64,
+   "irt_c": 0.25,
+   "solution_steps": [
+    "Read the problem and find the numbers",
+    "Identify which operation to use"
+   ],
+   "level": 1,
+   "level_name": "Explorer",
+   "universal_skill_id": "COUNT_10_1",
+   "skill_id": "counting_10",
+   "skill_domain": "numbers",
+   "maturity_bucket": "calibrating",
+   "visual_requirement": "pending_manual",
+   "visual_type": "none",
+   "visual_ai_verified": false,
+   "media_id": "SING-G1-171.svg",
+   "media_hash": "sha256:0748e493523d7f3b",
+   "misconception_ids": [
+    "MISC_1",
+    "MISC_2",
+    "COUNT_ERR"
+   ],
+   "why_quality": "ai_generated",
+   "why_framework": "pending",
+   "hint_quality": {
+    "layers": 3,
+    "quality": "good",
+    "has_3_layers": true
+   },
+   "curriculum_source": "singapore",
+   "curriculum_map": {},
+   "school_grade": 1,
+   "avg_time_to_solve_ms": null,
+   "times_served": 0,
+   "flag_count": 0,
+   "schema_version": "3.0",
+   "adaptive_topic_id": "g1-counting",
+   "adaptive_topic_name": "Counting & Numbers",
+   "adaptive_topic_emoji": "🔢",
+   "adaptive_grade": 1,
+   "dual_tagged": true,
+   "content_source": "singapore",
+   "sequence_id": 642,
+   "difficulty_tier_in_topic": "challenge",
+   "locale_ids": [
+    "india",
+    "singapore",
+    "us",
+    "global"
+   ],
+   "topic": "g1-counting",
+   "interaction_mode": "drag_drop",
+   "original_id": "SING-G1-026"
+  }
+ },
+ {
+  "file": "grade1/g1-counting.json",
+  "id": "A1-CNT-0669",
+  "reason": "missing_visual_unanswerable",
+  "question": {
+   "id": "A1-CNT-0669",
+   "stem": "Look at the picture graph. How many children chose Oranges?",
+   "choices": [
+    "2",
+    "3",
+    "1",
+    "4"
+   ],
+   "correct_answer": 0,
+   "difficulty_tier": "medium-hard",
+   "difficulty_score": 23,
+   "visual_svg": null,
+   "visual_alt": null,
+   "diagnostics": {
+    "1": "Misreads the graph",
+    "2": "Confuses most with least",
+    "3": "Counting error from the graph"
+   },
+   "tags": [
+    "picture_graph",
+    "data",
+    "CPA_pictorial"
+   ],
+   "chapter": "1B: Picture Graphs",
+   "hint": {
+    "level_0": "Count the symbols carefully in each row.",
+    "level_1": "Each symbol represents 1.",
+    "level_2": "Compare the lengths of the rows."
+   },
+   "curriculum_tags": [
+    "SING_1B_9"
+   ],
+   "irt_params": {
+    "a": 1.05,
+    "b": -1.36,
+    "c": 0.25
+   },
+   "irt_a": 1.05,
+   "irt_b": -1.36,
+   "irt_c": 0.25,
+   "solution_steps": [
+    "Read the values from the graph carefully",
+    "Identify the numbers for each item mentioned",
+    "Use the right operation on those numbers"
+   ],
+   "level": 1,
+   "level_name": "Explorer",
+   "universal_skill_id": "COUNT_10_1",
+   "skill_id": "counting_10",
+   "skill_domain": "numbers",
+   "maturity_bucket": "calibrating",
+   "visual_requirement": "pending_manual",
+   "visual_type": "none",
+   "visual_ai_verified": false,
+   "media_id": "SING-G1-173.svg",
+   "media_hash": "sha256:7fade9d754f8e73a",
+   "misconception_ids": [
+    "MISC_1",
+    "MISC_2",
+    "COUNT_ERR"
+   ],
+   "why_quality": "ai_generated",
+   "why_framework": "pending",
+   "hint_quality": {
+    "layers": 3,
+    "quality": "good",
+    "has_3_layers": true
+   },
+   "curriculum_source": "singapore",
+   "curriculum_map": {},
+   "school_grade": 1,
+   "avg_time_to_solve_ms": null,
+   "times_served": 0,
+   "flag_count": 0,
+   "schema_version": "3.0",
+   "adaptive_topic_id": "g1-counting",
+   "adaptive_topic_name": "Counting & Numbers",
+   "adaptive_topic_emoji": "🔢",
+   "adaptive_grade": 1,
+   "dual_tagged": true,
+   "content_source": "singapore",
+   "sequence_id": 679,
+   "difficulty_tier_in_topic": "challenge",
+   "locale_ids": [
+    "india",
+    "singapore",
+    "us",
+    "global"
+   ],
+   "topic": "g1-counting",
+   "original_id": "SING-G1-041"
+  }
+ },
+ {
+  "file": "grade1/g1-counting.json",
+  "id": "A1-CNT-0680",
+  "reason": "missing_visual_unanswerable",
+  "question": {
+   "id": "A1-CNT-0680",
+   "stem": "Look at the picture graph. Which fruit is the most popular?",
+   "choices": [
+    "Grapes",
+    "Bananas",
+    "Apples",
+    "Pears"
+   ],
+   "correct_answer": 3,
+   "difficulty_tier": "medium-hard",
+   "difficulty_score": 24,
+   "visual_svg": null,
+   "visual_alt": null,
+   "diagnostics": {
+    "1": "Misreads the graph",
+    "2": "Confuses most with least",
+    "3": "Counting error from the graph",
+    "0": "Not quite! Read the question again and try once more."
+   },
+   "tags": [
+    "picture_graph",
+    "data",
+    "CPA_pictorial"
+   ],
+   "chapter": "1B: Picture Graphs",
+   "hint": {
+    "level_0": "Count the symbols carefully in each row.",
+    "level_1": "Each symbol represents 1.",
+    "level_2": "Compare the lengths of the rows."
+   },
+   "curriculum_tags": [
+    "SING_1B_9"
+   ],
+   "irt_params": {
+    "a": 1.05,
+    "b": -1.29,
+    "c": 0.25
+   },
+   "irt_a": 1.05,
+   "irt_b": -1.29,
+   "irt_c": 0.25,
+   "solution_steps": [
+    "Read the problem and find the numbers",
+    "Identify which operation to use",
+    "Calculate to find the answer"
+   ],
+   "level": 1,
+   "level_name": "Explorer",
+   "universal_skill_id": "COUNT_10_1",
+   "skill_id": "counting_10",
+   "skill_domain": "numbers",
+   "maturity_bucket": "calibrating",
+   "visual_requirement": "pending_manual",
+   "visual_type": "none",
+   "visual_ai_verified": false,
+   "media_id": "SING-G1-184.svg",
+   "media_hash": "sha256:aea78ead0220e964",
+   "misconception_ids": [
+    "MISC_1",
+    "MISC_2",
+    "COUNT_ERR"
+   ],
+   "why_quality": "ai_generated",
+   "why_framework": "pending",
+   "hint_quality": {
+    "layers": 3,
+    "quality": "good",
+    "has_3_layers": true
+   },
+   "curriculum_source": "singapore",
+   "curriculum_map": {},
+   "school_grade": 1,
+   "avg_time_to_solve_ms": null,
+   "times_served": 0,
+   "flag_count": 0,
+   "schema_version": "3.0",
+   "adaptive_topic_id": "g1-counting",
+   "adaptive_topic_name": "Counting & Numbers",
+   "adaptive_topic_emoji": "🔢",
+   "adaptive_grade": 1,
+   "dual_tagged": true,
+   "content_source": "singapore",
+   "sequence_id": 691,
+   "difficulty_tier_in_topic": "challenge",
+   "locale_ids": [
+    "india",
+    "singapore",
+    "us",
+    "global"
+   ],
+   "topic": "g1-counting",
+   "interaction_mode": "drag_drop",
+   "original_id": "SING-G1-050"
+  }
+ },
+ {
+  "file": "grade1/g1-counting.json",
+  "id": "A1-CNT-0705",
+  "reason": "missing_visual_unanswerable",
+  "question": {
+   "id": "A1-CNT-0705",
+   "stem": "Look at the picture graph. How many children chose Apples?",
+   "choices": [
+    "2",
+    "4",
+    "3",
+    "5"
+   ],
+   "correct_answer": 2,
+   "difficulty_tier": "medium-hard",
+   "difficulty_score": 26,
+   "visual_svg": null,
+   "visual_alt": null,
+   "diagnostics": {
+    "1": "Misreads the graph",
+    "2": "Confuses most with least",
+    "3": "Counting error from the graph",
+    "0": "That's 1 too few. Try again - make sure you count everything!"
+   },
+   "tags": [
+    "picture_graph",
+    "data",
+    "CPA_pictorial"
+   ],
+   "chapter": "1B: Picture Graphs",
+   "hint": {
+    "level_0": "Count the symbols carefully in each row.",
+    "level_1": "Each symbol represents 1.",
+    "level_2": "Compare the lengths of the rows."
+   },
+   "curriculum_tags": [
+    "SING_1B_9"
+   ],
+   "irt_params": {
+    "a": 1.1,
+    "b": -1.14,
+    "c": 0.25
+   },
+   "irt_a": 1.1,
+   "irt_b": -1.14,
+   "irt_c": 0.25,
+   "solution_steps": [
+    "Read the values from the graph carefully",
+    "Identify the numbers for each item mentioned",
+    "Use the right operation on those numbers"
+   ],
+   "level": 1,
+   "level_name": "Explorer",
+   "universal_skill_id": "COUNT_10_1",
+   "skill_id": "counting_10",
+   "skill_domain": "numbers",
+   "maturity_bucket": "calibrating",
+   "visual_requirement": "pending_manual",
+   "visual_type": "none",
+   "visual_ai_verified": false,
+   "media_id": "SING-G1-176.svg",
+   "media_hash": "sha256:22cf95471299d314",
+   "misconception_ids": [
+    "MISC_1",
+    "MISC_2",
+    "COUNT_ERR"
+   ],
+   "why_quality": "ai_generated",
+   "why_framework": "pending",
+   "hint_quality": {
+    "layers": 3,
+    "quality": "good",
+    "has_3_layers": true
+   },
+   "curriculum_source": "singapore",
+   "curriculum_map": {},
+   "school_grade": 1,
+   "avg_time_to_solve_ms": null,
+   "times_served": 0,
+   "flag_count": 0,
+   "schema_version": "3.0",
+   "adaptive_topic_id": "g1-counting",
+   "adaptive_topic_name": "Counting & Numbers",
+   "adaptive_topic_emoji": "🔢",
+   "adaptive_grade": 1,
+   "dual_tagged": true,
+   "content_source": "singapore",
+   "sequence_id": 720,
+   "difficulty_tier_in_topic": "challenge",
+   "locale_ids": [
+    "india",
+    "singapore",
+    "us",
+    "global"
+   ],
+   "topic": "g1-counting",
+   "original_id": "SING-G1-062"
+  }
+ },
+ {
+  "file": "grade1/g1-counting.json",
+  "id": "A1-CNT-0672",
+  "reason": "missing_visual_unanswerable",
+  "question": {
+   "id": "A1-CNT-0672",
+   "stem": "Siddharth sees some diyas in the picture. How many diyas are there?",
+   "choices": [],
+   "correct_answer": 0,
+   "difficulty_tier": "medium-hard",
+   "difficulty_score": 30,
+   "visual_svg": null,
+   "visual_alt": null,
+   "diagnostics": {
+    "1": "Try counting each object one by one, pointing to each as you count.",
+    "2": "Be careful not to skip any objects. Count slowly.",
+    "3": "Your answer is double the correct value. Did you multiply when you should have added, or count something twice?"
+   },
+   "tags": [
+    "counting",
+    "numbers_1_9",
+    "visual_counting"
+   ],
+   "topic": "ncert_g1_numbers",
+   "chapter": "Ch1: Numbers 1 to 9",
+   "hint": {
+    "level_0": "Count means telling how many things are there.",
+    "level_1": "Touch each object and say the number aloud: 1, 2, 3...",
+    "level_2": "Point to each diya one by one and count. The last number you say is the answer."
+   },
+   "curriculum_tags": [
+    "NCERT_1_1"
+   ],
+   "irt_params": {
+    "a": 1.15,
+    "b": -1.33,
+    "c": 0.25
+   },
+   "irt_a": 1.15,
+   "irt_b": -1.33,
+   "irt_c": 0.25,
+   "solution_steps": [
+    "Look at the picture carefully",
+    "Count each object one by one",
+    "The last number you say is the total"
+   ],
+   "interaction_mode": "integer",
+   "correct_value": 2,
+   "level": 1,
+   "level_name": "Explorer",
+   "universal_skill_id": "COUNT_10_1",
+   "skill_id": "counting_10",
+   "skill_domain": "numbers",
+   "maturity_bucket": "calibrating",
+   "visual_requirement": "pending_manual",
+   "visual_type": "none",
+   "visual_ai_verified": false,
+   "media_id": "NCERT-G1-006.svg",
+   "media_hash": "sha256:62072a13d666ba12",
+   "misconception_ids": [
+    "COUNT_ERR"
+   ],
+   "why_quality": "human_authored",
+   "why_framework": "3R",
+   "hint_quality": {
+    "layers": 3,
+    "quality": "good",
+    "has_3_layers": true
+   },
+   "curriculum_source": "ncert",
+   "curriculum_map": {
+    "cbse": "Ch1: Numbers",
+    "icse": "Ch1: Numbers",
+    "cambridge": "1Nn - Numbers",
+    "singapore": "Whole Numbers",
+    "common_core": "K.CC / 1.NBT"
+   },
+   "school_grade": 1,
+   "avg_time_to_solve_ms": null,
+   "times_served": 0,
+   "flag_count": 0,
+   "schema_version": "3.0",
+   "adaptive_topic_id": "g1-counting",
+   "adaptive_topic_name": "Counting & Numbers",
+   "adaptive_topic_emoji": "🔢",
+   "adaptive_grade": 1,
+   "dual_tagged": true,
+   "content_source": "ncert",
+   "sequence_id": 682,
+   "difficulty_tier_in_topic": "challenge",
+   "locale_ids": [
+    "india",
+    "singapore",
+    "us",
+    "global"
+   ],
+   "original_id": "NCERT-G1-204"
+  }
+ },
+ {
+  "file": "grade1/g1-counting.json",
+  "id": "A1-CNT-0681",
+  "reason": "missing_visual_unanswerable",
+  "question": {
+   "id": "A1-CNT-0681",
+   "stem": "Arjun sees some mangoes in the picture. How many mangoes are there?",
+   "choices": [],
+   "correct_answer": 0,
+   "difficulty_tier": "medium-hard",
+   "difficulty_score": 31,
+   "visual_svg": null,
+   "visual_alt": null,
+   "diagnostics": {
+    "2": "Try counting each object one by one, pointing to each as you count.",
+    "3": "Be careful not to skip any objects. Count slowly.",
+    "0": "Count each object one by one. Make sure you don't skip any or count one twice."
+   },
+   "tags": [
+    "counting",
+    "numbers_1_9",
+    "visual_counting"
+   ],
+   "topic": "ncert_g1_numbers",
+   "chapter": "Ch1: Numbers 1 to 9",
+   "hint": {
+    "level_0": "Count means telling how many things are there.",
+    "level_1": "Touch each object and say the number aloud: 1, 2, 3...",
+    "level_2": "Point to each mangoe one by one and count. The last number you say is the answer."
+   },
+   "curriculum_tags": [
+    "NCERT_1_1"
+   ],
+   "irt_params": {
+    "a": 1.15,
+    "b": -1.28,
+    "c": 0.25
+   },
+   "irt_a": 1.15,
+   "irt_b": -1.28,
+   "irt_c": 0.25,
+   "solution_steps": [
+    "Look at the picture carefully",
+    "Count each object one by one",
+    "The last number you say is the total"
+   ],
+   "interaction_mode": "integer",
+   "correct_value": 4,
+   "level": 1,
+   "level_name": "Explorer",
+   "universal_skill_id": "COUNT_10_1",
+   "skill_id": "counting_10",
+   "skill_domain": "numbers",
+   "maturity_bucket": "calibrating",
+   "visual_requirement": "pending_manual",
+   "visual_type": "none",
+   "visual_ai_verified": false,
+   "media_id": "NCERT-G1-005.svg",
+   "media_hash": "sha256:c4c255547920fffb",
+   "misconception_ids": [
+    "COUNT_ERR"
+   ],
+   "why_quality": "human_authored",
+   "why_framework": "3R",
+   "hint_quality": {
+    "layers": 3,
+    "quality": "good",
+    "has_3_layers": true
+   },
+   "curriculum_source": "ncert",
+   "curriculum_map": {
+    "cbse": "Ch1: Numbers",
+    "icse": "Ch1: Numbers",
+    "cambridge": "1Nn - Numbers",
+    "singapore": "Whole Numbers",
+    "common_core": "K.CC / 1.NBT"
+   },
+   "school_grade": 1,
+   "avg_time_to_solve_ms": null,
+   "times_served": 0,
+   "flag_count": 0,
+   "schema_version": "3.0",
+   "adaptive_topic_id": "g1-counting",
+   "adaptive_topic_name": "Counting & Numbers",
+   "adaptive_topic_emoji": "🔢",
+   "adaptive_grade": 1,
+   "dual_tagged": true,
+   "content_source": "ncert",
+   "sequence_id": 692,
+   "difficulty_tier_in_topic": "challenge",
+   "locale_ids": [
+    "india",
+    "singapore",
+    "us",
+    "global"
+   ],
+   "original_id": "NCERT-G1-212"
+  }
+ },
+ {
+  "file": "grade1/g1-counting.json",
+  "id": "A1-CNT-0695",
+  "reason": "missing_visual_unanswerable",
+  "question": {
+   "id": "A1-CNT-0695",
+   "stem": "Ria sees some diyas in the picture. How many diyas are there?",
+   "choices": [],
+   "correct_answer": 0,
+   "difficulty_tier": "medium-hard",
+   "difficulty_score": 32,
+   "visual_svg": null,
+   "visual_alt": null,
+   "diagnostics": {
+    "3": "Try counting each object one by one, pointing to each as you count.",
+    "0": "Be careful not to skip any objects. Count slowly.",
+    "1": "Count each object one by one. Make sure you don't skip any or count one twice."
+   },
+   "tags": [
+    "counting",
+    "numbers_1_9",
+    "visual_counting"
+   ],
+   "topic": "ncert_g1_numbers",
+   "chapter": "Ch1: Numbers 1 to 9",
+   "hint": {
+    "level_0": "Count means telling how many things are there.",
+    "level_1": "Touch each object and say the number aloud: 1, 2, 3...",
+    "level_2": "Point to each diya one by one and count. The last number you say is the answer."
+   },
+   "curriculum_tags": [
+    "NCERT_1_1"
+   ],
+   "irt_params": {
+    "a": 1.15,
+    "b": -1.22,
+    "c": 0.25
+   },
+   "irt_a": 1.15,
+   "irt_b": -1.22,
+   "irt_c": 0.25,
+   "solution_steps": [
+    "Look at the picture carefully",
+    "Count each object one by one",
+    "The last number you say is the total"
+   ],
+   "interaction_mode": "integer",
+   "correct_value": 9,
+   "level": 1,
+   "level_name": "Explorer",
+   "universal_skill_id": "COUNT_10_1",
+   "skill_id": "counting_10",
+   "skill_domain": "numbers",
+   "maturity_bucket": "calibrating",
+   "visual_requirement": "pending_manual",
+   "visual_type": "none",
+   "visual_ai_verified": false,
+   "media_id": "NCERT-G1-002.svg",
+   "media_hash": "sha256:03f732331c7b5313",
+   "misconception_ids": [
+    "COUNT_ERR"
+   ],
+   "why_quality": "human_authored",
+   "why_framework": "3R",
+   "hint_quality": {
+    "layers": 3,
+    "quality": "good",
+    "has_3_layers": true
+   },
+   "curriculum_source": "ncert",
+   "curriculum_map": {
+    "cbse": "Ch1: Numbers",
+    "icse": "Ch1: Numbers",
+    "cambridge": "1Nn - Numbers",
+    "singapore": "Whole Numbers",
+    "common_core": "K.CC / 1.NBT"
+   },
+   "school_grade": 1,
+   "avg_time_to_solve_ms": null,
+   "times_served": 0,
+   "flag_count": 0,
+   "schema_version": "3.0",
+   "adaptive_topic_id": "g1-counting",
+   "adaptive_topic_name": "Counting & Numbers",
+   "adaptive_topic_emoji": "🔢",
+   "adaptive_grade": 1,
+   "dual_tagged": true,
+   "content_source": "ncert",
+   "sequence_id": 706,
+   "difficulty_tier_in_topic": "challenge",
+   "locale_ids": [
+    "india",
+    "singapore",
+    "us",
+    "global"
+   ],
+   "original_id": "NCERT-G1-222"
+  }
+ },
+ {
+  "file": "grade1/g1-counting.json",
+  "id": "A1-CNT-0709",
+  "reason": "missing_visual_unanswerable",
+  "question": {
+   "id": "A1-CNT-0709",
+   "stem": "Ananya sees some stars in the picture. How many stars are there?",
+   "choices": [],
+   "correct_answer": 0,
+   "difficulty_tier": "medium-hard",
+   "difficulty_score": 34,
+   "visual_svg": null,
+   "visual_alt": null,
+   "diagnostics": {
+    "0": "Try counting each object one by one, pointing to each as you count.",
+    "1": "Be careful not to skip any objects. Count slowly.",
+    "2": "Count each object one by one. Make sure you don't skip any or count one twice."
+   },
+   "tags": [
+    "counting",
+    "numbers_1_9",
+    "visual_counting"
+   ],
+   "topic": "ncert_g1_numbers",
+   "chapter": "Ch1: Numbers 1 to 9",
+   "hint": {
+    "level_0": "Count means telling how many things are there.",
+    "level_1": "Touch each object and say the number aloud: 1, 2, 3...",
+    "level_2": "Point to each star one by one and count. The last number you say is the answer."
+   },
+   "curriculum_tags": [
+    "NCERT_1_1"
+   ],
+   "irt_params": {
+    "a": 1.15,
+    "b": -1.11,
+    "c": 0.25
+   },
+   "irt_a": 1.15,
+   "irt_b": -1.11,
+   "irt_c": 0.25,
+   "solution_steps": [
+    "Look at the picture carefully",
+    "Count each object one by one",
+    "The last number you say is the total"
+   ],
+   "interaction_mode": "integer",
+   "correct_value": 2,
+   "level": 1,
+   "level_name": "Explorer",
+   "universal_skill_id": "COUNT_10_1",
+   "skill_id": "counting_10",
+   "skill_domain": "numbers",
+   "maturity_bucket": "calibrating",
+   "visual_requirement": "pending_manual",
+   "visual_type": "none",
+   "visual_ai_verified": false,
+   "media_id": "NCERT-G1-004.svg",
+   "media_hash": "sha256:1e2871bbdb58c1c1",
+   "misconception_ids": [
+    "COUNT_ERR"
+   ],
+   "why_quality": "human_authored",
+   "why_framework": "3R",
+   "hint_quality": {
+    "layers": 3,
+    "quality": "good",
+    "has_3_layers": true
+   },
+   "curriculum_source": "ncert",
+   "curriculum_map": {
+    "cbse": "Ch1: Numbers",
+    "icse": "Ch1: Numbers",
+    "cambridge": "1Nn - Numbers",
+    "singapore": "Whole Numbers",
+    "common_core": "K.CC / 1.NBT"
+   },
+   "school_grade": 1,
+   "avg_time_to_solve_ms": null,
+   "times_served": 0,
+   "flag_count": 0,
+   "schema_version": "3.0",
+   "adaptive_topic_id": "g1-counting",
+   "adaptive_topic_name": "Counting & Numbers",
+   "adaptive_topic_emoji": "🔢",
+   "adaptive_grade": 1,
+   "dual_tagged": true,
+   "content_source": "ncert",
+   "sequence_id": 725,
+   "difficulty_tier_in_topic": "challenge",
+   "locale_ids": [
+    "india",
+    "singapore",
+    "us",
+    "global"
+   ],
+   "original_id": "NCERT-G1-246"
+  }
+ },
+ {
+  "file": "grade1/g1-counting.json",
+  "id": "A1-CNT-0714",
+  "reason": "missing_visual_unanswerable",
+  "question": {
+   "id": "A1-CNT-0714",
+   "stem": "Meera sees some balloons in the picture. How many balloons are there?",
+   "choices": [],
+   "correct_answer": 0,
+   "difficulty_tier": "medium-hard",
+   "difficulty_score": 35,
+   "visual_svg": null,
+   "visual_alt": null,
+   "diagnostics": {
+    "1": "Try counting each object one by one, pointing to each as you count.",
+    "2": "Be careful not to skip any objects. Count slowly.",
+    "3": "Count each object one by one. Make sure you don't skip any or count one twice."
+   },
+   "tags": [
+    "counting",
+    "numbers_1_9",
+    "visual_counting"
+   ],
+   "topic": "ncert_g1_numbers",
+   "chapter": "Ch1: Numbers 1 to 9",
+   "hint": {
+    "level_0": "Count means telling how many things are there.",
+    "level_1": "Touch each object and say the number aloud: 1, 2, 3...",
+    "level_2": "Point to each balloon one by one and count. The last number you say is the answer."
+   },
+   "curriculum_tags": [
+    "NCERT_1_1"
+   ],
+   "irt_params": {
+    "a": 1.15,
+    "b": -1.06,
+    "c": 0.25
+   },
+   "irt_a": 1.15,
+   "irt_b": -1.06,
+   "irt_c": 0.25,
+   "solution_steps": [
+    "Look at the picture carefully",
+    "Count each object one by one",
+    "The last number you say is the total"
+   ],
+   "interaction_mode": "integer",
+   "correct_value": 4,
+   "level": 1,
+   "level_name": "Explorer",
+   "universal_skill_id": "COUNT_10_1",
+   "skill_id": "counting_10",
+   "skill_domain": "numbers",
+   "maturity_bucket": "calibrating",
+   "visual_requirement": "pending_manual",
+   "visual_type": "none",
+   "visual_ai_verified": false,
+   "media_id": "NCERT-G1-003.svg",
+   "media_hash": "sha256:e66741d6e0d25ff1",
+   "misconception_ids": [
+    "COUNT_ERR"
+   ],
+   "why_quality": "human_authored",
+   "why_framework": "3R",
+   "hint_quality": {
+    "layers": 3,
+    "quality": "good",
+    "has_3_layers": true
+   },
+   "curriculum_source": "ncert",
+   "curriculum_map": {
+    "cbse": "Ch1: Numbers",
+    "icse": "Ch1: Numbers",
+    "cambridge": "1Nn - Numbers",
+    "singapore": "Whole Numbers",
+    "common_core": "K.CC / 1.NBT"
+   },
+   "school_grade": 1,
+   "avg_time_to_solve_ms": null,
+   "times_served": 0,
+   "flag_count": 0,
+   "schema_version": "3.0",
+   "adaptive_topic_id": "g1-counting",
+   "adaptive_topic_name": "Counting & Numbers",
+   "adaptive_topic_emoji": "🔢",
+   "adaptive_grade": 1,
+   "dual_tagged": true,
+   "content_source": "ncert",
+   "sequence_id": 730,
+   "difficulty_tier_in_topic": "challenge",
+   "locale_ids": [
+    "india",
+    "singapore",
+    "us",
+    "global"
+   ],
+   "original_id": "NCERT-G1-259"
+  }
+ },
+ {
+  "file": "grade1/g1-counting.json",
+  "id": "A1-CNT-0810",
+  "reason": "missing_visual_unanswerable",
+  "question": {
+   "id": "A1-CNT-0810",
+   "stem": "Look at the picture graph. How many children were asked in total?",
+   "choices": [
+    "27",
+    "22",
+    "24",
+    "25"
+   ],
+   "correct_answer": 2,
+   "difficulty_tier": "medium-hard",
+   "difficulty_score": 37,
+   "visual_svg": null,
+   "visual_alt": null,
+   "diagnostics": {
+    "1": "Misreads the graph",
+    "2": "Confuses most with least",
+    "3": "Counting error from the graph",
+    "0": "That's 3 too many. Try again - count more carefully!"
+   },
+   "tags": [
+    "picture_graph",
+    "data",
+    "CPA_pictorial"
+   ],
+   "chapter": "1B: Picture Graphs",
+   "hint": {
+    "level_0": "Count the symbols carefully in each row.",
+    "level_1": "Each symbol represents 1.",
+    "level_2": "Compare the lengths of the rows."
+   },
+   "curriculum_tags": [
+    "SING_1B_9"
+   ],
+   "irt_params": {
+    "a": 1.1,
+    "b": -0.36,
+    "c": 0.25
+   },
+   "irt_a": 1.1,
+   "irt_b": -0.36,
+   "irt_c": 0.25,
+   "solution_steps": [
+    "Read the values from the graph carefully",
+    "Identify the numbers for each item mentioned",
+    "Use the right operation on those numbers"
+   ],
+   "level": 1,
+   "level_name": "Explorer",
+   "universal_skill_id": "COUNT_10_1",
+   "skill_id": "counting_10",
+   "skill_domain": "numbers",
+   "maturity_bucket": "calibrating",
+   "visual_requirement": "pending_manual",
+   "visual_type": "none",
+   "visual_ai_verified": false,
+   "media_id": "SING-G1-172.svg",
+   "media_hash": "sha256:8aef756e7bc7593e",
+   "misconception_ids": [
+    "MISC_1",
+    "MISC_2",
+    "COUNT_ERR"
+   ],
+   "why_quality": "ai_generated",
+   "why_framework": "pending",
+   "hint_quality": {
+    "layers": 3,
+    "quality": "good",
+    "has_3_layers": true
+   },
+   "curriculum_source": "singapore",
+   "curriculum_map": {},
+   "school_grade": 1,
+   "avg_time_to_solve_ms": null,
+   "times_served": 0,
+   "flag_count": 0,
+   "schema_version": "3.0",
+   "adaptive_topic_id": "g1-counting",
+   "adaptive_topic_name": "Counting & Numbers",
+   "adaptive_topic_emoji": "🔢",
+   "adaptive_grade": 1,
+   "dual_tagged": true,
+   "content_source": "singapore",
+   "sequence_id": 861,
+   "difficulty_tier_in_topic": "challenge",
+   "locale_ids": [
+    "india",
+    "singapore",
+    "us",
+    "global"
+   ],
+   "topic": "g1-counting",
+   "original_id": "SING-G1-126"
+  }
+ },
+ {
+  "file": "grade1/g1-counting.json",
+  "id": "A1-CNT-0765",
+  "reason": "missing_visual_unanswerable",
+  "question": {
+   "id": "A1-CNT-0765",
+   "stem": "Meera decorated the classroom with flowers. Count the flowers in the picture.",
+   "choices": [
+    "12",
+    "14",
+    "19",
+    "18"
+   ],
+   "correct_answer": 0,
+   "difficulty_tier": "medium-hard",
+   "difficulty_score": 42,
+   "visual_svg": null,
+   "visual_alt": null,
+   "diagnostics": {
+    "1": "Try counting in groups of 5 to make it easier.",
+    "2": "Count each row carefully, then add the rows together.",
+    "3": "With bigger numbers, count row by row: 5, 10, 15..."
+   },
+   "tags": [
+    "counting",
+    "numbers_10_20",
+    "visual_counting"
+   ],
+   "topic": "ncert_g1_numbers",
+   "chapter": "Ch2: Numbers 10 to 20",
+   "hint": {
+    "level_0": "For bigger numbers, try grouping into tens and ones.",
+    "level_1": "Count the first row (5), then continue from there.",
+    "level_2": "Count row by row. Each full row has 5. Count all rows and any extra ones."
+   },
+   "curriculum_tags": [
+    "NCERT_1_2"
+   ],
+   "irt_params": {
+    "a": 1.2,
+    "b": -0.67,
+    "c": 0.25
+   },
+   "irt_a": 1.2,
+   "irt_b": -0.67,
+   "irt_c": 0.25,
+   "solution_steps": [
+    "Look at the picture carefully",
+    "Count each object one by one",
+    "The last number you say is the total"
+   ],
+   "interaction_mode": "mcq",
+   "level": 1,
+   "level_name": "Explorer",
+   "universal_skill_id": "COUNT_10_1",
+   "skill_id": "counting_10",
+   "skill_domain": "numbers",
+   "maturity_bucket": "calibrating",
+   "visual_requirement": "pending_manual",
+   "visual_type": "none",
+   "visual_ai_verified": false,
+   "media_id": "NCERT-G1-027.svg",
+   "media_hash": "sha256:87ad7a3cb2fd0652",
+   "misconception_ids": [
+    "COUNT_ERR"
+   ],
+   "why_quality": "human_authored",
+   "why_framework": "3R",
+   "hint_quality": {
+    "layers": 3,
+    "quality": "good",
+    "has_3_layers": true
+   },
+   "curriculum_source": "ncert",
+   "curriculum_map": {
+    "cbse": "Ch1: Numbers",
+    "icse": "Ch1: Numbers",
+    "cambridge": "1Nn - Numbers",
+    "singapore": "Whole Numbers",
+    "common_core": "K.CC / 1.NBT"
+   },
+   "school_grade": 1,
+   "avg_time_to_solve_ms": null,
+   "times_served": 0,
+   "flag_count": 0,
+   "schema_version": "3.0",
+   "adaptive_topic_id": "g1-counting",
+   "adaptive_topic_name": "Counting & Numbers",
+   "adaptive_topic_emoji": "🔢",
+   "adaptive_grade": 1,
+   "dual_tagged": true,
+   "content_source": "ncert",
+   "sequence_id": 802,
+   "difficulty_tier_in_topic": "challenge",
+   "locale_ids": [
+    "india",
+    "singapore",
+    "us",
+    "global"
+   ],
+   "original_id": "NCERT-G1-346"
+  }
+ },
+ {
+  "file": "grade1/g1-counting.json",
+  "id": "A1-CNT-0797",
+  "reason": "missing_visual_unanswerable",
+  "question": {
+   "id": "A1-CNT-0797",
+   "stem": "Saanvi decorated the classroom with diyas. Count the diyas in the picture.",
+   "choices": [
+    "16",
+    "20",
+    "18",
+    "11"
+   ],
+   "correct_answer": 2,
+   "difficulty_tier": "medium-hard",
+   "difficulty_score": 46,
+   "visual_svg": null,
+   "visual_alt": null,
+   "diagnostics": {
+    "3": "Try counting in groups of 5 to make it easier.",
+    "0": "Count each row carefully, then add the rows together.",
+    "1": "With bigger numbers, count row by row: 5, 10, 15..."
+   },
+   "tags": [
+    "counting",
+    "numbers_10_20",
+    "visual_counting"
+   ],
+   "topic": "ncert_g1_numbers",
+   "chapter": "Ch2: Numbers 10 to 20",
+   "hint": {
+    "level_0": "For bigger numbers, try grouping into tens and ones.",
+    "level_1": "Count the first row (5), then continue from there.",
+    "level_2": "Count row by row. Each full row has 5. Count all rows and any extra ones."
+   },
+   "curriculum_tags": [
+    "NCERT_1_2"
+   ],
+   "irt_params": {
+    "a": 1.2,
+    "b": -0.44,
+    "c": 0.25
+   },
+   "irt_a": 1.2,
+   "irt_b": -0.44,
+   "irt_c": 0.25,
+   "solution_steps": [
+    "Look at the picture carefully",
+    "Count each object one by one",
+    "The last number you say is the total"
+   ],
+   "interaction_mode": "mcq",
+   "level": 1,
+   "level_name": "Explorer",
+   "universal_skill_id": "COUNT_10_1",
+   "skill_id": "counting_10",
+   "skill_domain": "numbers",
+   "maturity_bucket": "calibrating",
+   "visual_requirement": "pending_manual",
+   "visual_type": "none",
+   "visual_ai_verified": false,
+   "media_id": "NCERT-G1-028.svg",
+   "media_hash": "sha256:3ab22449ccaf47dc",
+   "misconception_ids": [
+    "COUNT_ERR"
+   ],
+   "why_quality": "human_authored",
+   "why_framework": "3R",
+   "hint_quality": {
+    "layers": 3,
+    "quality": "good",
+    "has_3_layers": true
+   },
+   "curriculum_source": "ncert",
+   "curriculum_map": {
+    "cbse": "Ch1: Numbers",
+    "icse": "Ch1: Numbers",
+    "cambridge": "1Nn - Numbers",
+    "singapore": "Whole Numbers",
+    "common_core": "K.CC / 1.NBT"
+   },
+   "school_grade": 1,
+   "avg_time_to_solve_ms": null,
+   "times_served": 0,
+   "flag_count": 0,
+   "schema_version": "3.0",
+   "adaptive_topic_id": "g1-counting",
+   "adaptive_topic_name": "Counting & Numbers",
+   "adaptive_topic_emoji": "🔢",
+   "adaptive_grade": 1,
+   "dual_tagged": true,
+   "content_source": "ncert",
+   "sequence_id": 843,
+   "difficulty_tier_in_topic": "challenge",
+   "locale_ids": [
+    "india",
+    "singapore",
+    "us",
+    "global"
+   ],
+   "original_id": "NCERT-G1-405"
+  }
+ },
+ {
+  "file": "grade1/g1-counting.json",
+  "id": "A1-CNT-0823",
+  "reason": "missing_visual_unanswerable",
+  "question": {
+   "id": "A1-CNT-0823",
+   "stem": "Saanvi decorated the classroom with flowers. Count the flowers in the picture.",
+   "choices": [
+    "14",
+    "13",
+    "20",
+    "15"
+   ],
+   "correct_answer": 2,
+   "difficulty_tier": "hard",
+   "difficulty_score": 50,
+   "visual_svg": null,
+   "visual_alt": null,
+   "diagnostics": {
+    "3": "Try counting in groups of 5 to make it easier.",
+    "0": "Count each row carefully, then add the rows together.",
+    "1": "With bigger numbers, count row by row: 5, 10, 15..."
+   },
+   "tags": [
+    "counting",
+    "numbers_10_20",
+    "visual_counting"
+   ],
+   "topic": "ncert_g1_numbers",
+   "chapter": "Ch2: Numbers 10 to 20",
+   "hint": {
+    "level_0": "For bigger numbers, try grouping into tens and ones.",
+    "level_1": "Count the first row (5), then continue from there.",
+    "level_2": "Count row by row. Each full row has 5. Count all rows and any extra ones."
+   },
+   "curriculum_tags": [
+    "NCERT_1_2"
+   ],
+   "irt_params": {
+    "a": 1.2,
+    "b": -0.22,
+    "c": 0.25
+   },
+   "irt_a": 1.2,
+   "irt_b": -0.22,
+   "irt_c": 0.25,
+   "solution_steps": [
+    "Look at the picture carefully",
+    "Count each object one by one",
+    "The last number you say is the total"
+   ],
+   "interaction_mode": "mcq",
+   "level": 1,
+   "level_name": "Explorer",
+   "universal_skill_id": "COUNT_10_1",
+   "skill_id": "counting_10",
+   "skill_domain": "numbers",
+   "maturity_bucket": "calibrating",
+   "visual_requirement": "pending_manual",
+   "visual_type": "none",
+   "visual_ai_verified": false,
+   "media_id": "NCERT-G1-024.svg",
+   "media_hash": "sha256:3d07a76f5755fa3e",
+   "misconception_ids": [
+    "COUNT_ERR"
+   ],
+   "why_quality": "human_authored",
+   "why_framework": "3R",
+   "hint_quality": {
+    "layers": 3,
+    "quality": "good",
+    "has_3_layers": true
+   },
+   "curriculum_source": "ncert",
+   "curriculum_map": {
+    "cbse": "Ch1: Numbers",
+    "icse": "Ch1: Numbers",
+    "cambridge": "1Nn - Numbers",
+    "singapore": "Whole Numbers",
+    "common_core": "K.CC / 1.NBT"
+   },
+   "school_grade": 1,
+   "avg_time_to_solve_ms": null,
+   "times_served": 0,
+   "flag_count": 0,
+   "schema_version": "3.0",
+   "adaptive_topic_id": "g1-counting",
+   "adaptive_topic_name": "Counting & Numbers",
+   "adaptive_topic_emoji": "🔢",
+   "adaptive_grade": 1,
+   "dual_tagged": true,
+   "content_source": "ncert",
+   "sequence_id": 881,
+   "difficulty_tier_in_topic": "mastery",
+   "locale_ids": [
+    "india",
+    "singapore",
+    "us",
+    "global"
+   ],
+   "original_id": "NCERT-G1-453"
+  }
+ },
+ {
+  "file": "grade1/g1-counting.json",
+  "id": "A1-CNT-0899",
+  "reason": "missing_visual_unanswerable",
+  "question": {
+   "id": "A1-CNT-0899",
+   "stem": "Aarav decorated the classroom with balloons. Count the balloons in the picture.",
+   "choices": [
+    "13",
+    "18",
+    "11",
+    "19"
+   ],
+   "correct_answer": 2,
+   "difficulty_tier": "hard",
+   "difficulty_score": 64,
+   "visual_svg": null,
+   "visual_alt": null,
+   "diagnostics": {
+    "3": "Try counting in groups of 5 to make it easier.",
+    "0": "Count each row carefully, then add the rows together.",
+    "1": "With bigger numbers, count row by row: 5, 10, 15..."
+   },
+   "tags": [
+    "counting",
+    "numbers_10_20",
+    "visual_counting"
+   ],
+   "topic": "ncert_g1_numbers",
+   "chapter": "Ch2: Numbers 10 to 20",
+   "hint": {
+    "level_0": "For bigger numbers, try grouping into tens and ones.",
+    "level_1": "Count the first row (5), then continue from there.",
+    "level_2": "Count row by row. Each full row has 5. Count all rows and any extra ones."
+   },
+   "curriculum_tags": [
+    "NCERT_1_2"
+   ],
+   "irt_params": {
+    "a": 1.2,
+    "b": 0.56,
+    "c": 0.25
+   },
+   "irt_a": 1.2,
+   "irt_b": 0.56,
+   "irt_c": 0.25,
+   "solution_steps": [
+    "Look at the picture carefully",
+    "Count each object one by one",
+    "The last number you say is the total"
+   ],
+   "interaction_mode": "mcq",
+   "level": 1,
+   "level_name": "Explorer",
+   "universal_skill_id": "COUNT_100_1",
+   "skill_id": "counting_100",
+   "skill_domain": "numbers",
+   "maturity_bucket": "calibrating",
+   "visual_requirement": "pending_manual",
+   "visual_type": "none",
+   "visual_ai_verified": false,
+   "media_id": "NCERT-G1-025.svg",
+   "media_hash": "sha256:85d3f5eba628ccbd",
+   "misconception_ids": [
+    "COUNT_ERR"
+   ],
+   "why_quality": "human_authored",
+   "why_framework": "3R",
+   "hint_quality": {
+    "layers": 3,
+    "quality": "good",
+    "has_3_layers": true
+   },
+   "curriculum_source": "ncert",
+   "curriculum_map": {
+    "cbse": "Ch1: Numbers",
+    "icse": "Ch1: Numbers",
+    "cambridge": "1Nn - Numbers",
+    "singapore": "Whole Numbers",
+    "common_core": "K.CC / 1.NBT"
+   },
+   "school_grade": 1,
+   "avg_time_to_solve_ms": null,
+   "times_served": 0,
+   "flag_count": 0,
+   "schema_version": "3.0",
+   "adaptive_topic_id": "g1-counting",
+   "adaptive_topic_name": "Counting & Numbers",
+   "adaptive_topic_emoji": "🔢",
+   "adaptive_grade": 1,
+   "dual_tagged": true,
+   "content_source": "ncert",
+   "sequence_id": 1006,
+   "difficulty_tier_in_topic": "mastery",
+   "locale_ids": [
+    "india",
+    "singapore",
+    "us",
+    "global"
+   ],
+   "original_id": "NCERT-G1-584"
+  }
+ },
+ {
+  "file": "grade1/g1-counting.json",
+  "id": "A1-CNT-0906",
+  "reason": "missing_visual_unanswerable",
+  "question": {
+   "id": "A1-CNT-0906",
+   "stem": "Aarav decorated the classroom with stars. Count the stars in the picture.",
+   "choices": [
+    "20",
+    "18",
+    "19",
+    "14"
+   ],
+   "correct_answer": 3,
+   "difficulty_tier": "hard",
+   "difficulty_score": 65,
+   "visual_svg": null,
+   "visual_alt": null,
+   "diagnostics": {
+    "0": "Try counting in groups of 5 to make it easier.",
+    "1": "Count each row carefully, then add the rows together.",
+    "2": "With bigger numbers, count row by row: 5, 10, 15..."
+   },
+   "tags": [
+    "counting",
+    "numbers_10_20",
+    "visual_counting"
+   ],
+   "topic": "ncert_g1_numbers",
+   "chapter": "Ch2: Numbers 10 to 20",
+   "hint": {
+    "level_0": "For bigger numbers, try grouping into tens and ones.",
+    "level_1": "Count the first row (5), then continue from there.",
+    "level_2": "Count row by row. Each full row has 5. Count all rows and any extra ones."
+   },
+   "curriculum_tags": [
+    "NCERT_1_2"
+   ],
+   "irt_params": {
+    "a": 1.2,
+    "b": 0.61,
+    "c": 0.25
+   },
+   "irt_a": 1.2,
+   "irt_b": 0.61,
+   "irt_c": 0.25,
+   "solution_steps": [
+    "Look at the picture carefully",
+    "Count each object one by one",
+    "The last number you say is the total"
+   ],
+   "interaction_mode": "mcq",
+   "level": 1,
+   "level_name": "Explorer",
+   "universal_skill_id": "COUNT_100_1",
+   "skill_id": "counting_100",
+   "skill_domain": "numbers",
+   "maturity_bucket": "calibrating",
+   "visual_requirement": "pending_manual",
+   "visual_type": "none",
+   "visual_ai_verified": false,
+   "media_id": "NCERT-G1-026.svg",
+   "media_hash": "sha256:853799951f59ee38",
+   "misconception_ids": [
+    "COUNT_ERR"
+   ],
+   "why_quality": "human_authored",
+   "why_framework": "3R",
+   "hint_quality": {
+    "layers": 3,
+    "quality": "good",
+    "has_3_layers": true
+   },
+   "curriculum_source": "ncert",
+   "curriculum_map": {
+    "cbse": "Ch1: Numbers",
+    "icse": "Ch1: Numbers",
+    "cambridge": "1Nn - Numbers",
+    "singapore": "Whole Numbers",
+    "common_core": "K.CC / 1.NBT"
+   },
+   "school_grade": 1,
+   "avg_time_to_solve_ms": null,
+   "times_served": 0,
+   "flag_count": 0,
+   "schema_version": "3.0",
+   "adaptive_topic_id": "g1-counting",
+   "adaptive_topic_name": "Counting & Numbers",
+   "adaptive_topic_emoji": "🔢",
+   "adaptive_grade": 1,
+   "dual_tagged": true,
+   "content_source": "ncert",
+   "sequence_id": 1017,
+   "difficulty_tier_in_topic": "mastery",
+   "locale_ids": [
+    "india",
+    "singapore",
+    "us",
+    "global"
+   ],
+   "original_id": "NCERT-G1-590"
+  }
+ },
+ {
+  "file": "grade1/g1-measurement.json",
+  "id": "A1-MSR-0005",
+  "reason": "missing_visual_unanswerable",
+  "question": {
+   "id": "A1-MSR-0005",
+   "stem": "Look at the picture. A is a pencil and B is a crayon. Which is shorter?",
+   "choices": [
+    "A (pencil)",
+    "Cannot tell",
+    "Both are the same",
+    "B (crayon)"
+   ],
+   "correct_answer": 3,
+   "difficulty_tier": "easy",
+   "difficulty_score": 10,
+   "visual_svg": null,
+   "visual_alt": null,
+   "diagnostics": {
+    "0": "Compare the lengths by looking at both items side by side.",
+    "1": "'shorter' means the one that takes less space.",
+    "2": "Look at where each item ends — the one that stretches further is longer."
+   },
+   "tags": [
+    "measurement",
+    "length",
+    "comparison"
+   ],
+   "topic": "ncert_g1_measurement",
+   "chapter": "Ch9: Measurement",
+   "hint": {
+    "level_0": "'Shorter' means stretches less.",
+    "level_1": "Compare where the two items start and end.",
+    "level_2": "The pencil is longer; the other is shorter."
+   },
+   "curriculum_tags": [
+    "NCERT_1_9"
+   ],
+   "irt_params": {
+    "a": 1.15,
+    "b": -2.44,
+    "c": 0.25
+   },
+   "irt_a": 1.15,
+   "irt_b": -2.44,
+   "irt_c": 0.25,
+   "solution_steps": [
+    "Read the problem and find the numbers",
+    "Identify which operation to use"
+   ],
+   "interaction_mode": "drag_drop",
+   "level": 1,
+   "level_name": "Explorer",
+   "universal_skill_id": "MEAS_LENGTH_1",
+   "skill_id": "length",
+   "skill_domain": "measurement",
+   "maturity_bucket": "calibrating",
+   "visual_requirement": "pending_manual",
+   "visual_type": "none",
+   "visual_ai_verified": false,
+   "media_id": "NCERT-G1-185.svg",
+   "media_hash": "sha256:38307f3476c0e8a5",
+   "misconception_ids": [
+    "MISC_1",
+    "MISC_0",
+    "MISC_2"
+   ],
+   "why_quality": "human_authored",
+   "why_framework": "3R",
+   "hint_quality": {
+    "layers": 3,
+    "quality": "good",
+    "has_3_layers": true
+   },
+   "curriculum_source": "ncert",
+   "curriculum_map": {
+    "cbse": "Ch6: Measurement",
+    "icse": "Ch9: Measurement",
+    "cambridge": "Gm - Measure",
+    "singapore": "Measurement",
+    "common_core": "MD - Measurement & Data"
+   },
+   "school_grade": 1,
+   "avg_time_to_solve_ms": null,
+   "times_served": 0,
+   "flag_count": 0,
+   "schema_version": "3.0",
+   "adaptive_topic_id": "g1-measurement",
+   "adaptive_topic_name": "Measurement",
+   "adaptive_topic_emoji": "📏",
+   "adaptive_grade": 1,
+   "dual_tagged": true,
+   "content_source": "ncert",
+   "sequence_id": 5,
+   "difficulty_tier_in_topic": "intro",
+   "locale_ids": [
+    "india",
+    "singapore",
+    "us",
+    "global"
+   ],
+   "original_id": "NCERT-G1-037"
+  }
+ },
+ {
+  "file": "grade1/g1-measurement.json",
+  "id": "A1-MSR-0017",
+  "reason": "missing_visual_unanswerable",
+  "question": {
+   "id": "A1-MSR-0017",
+   "stem": "Look at the picture. A is a rope and B is a string. Which is longer?",
+   "choices": [
+    "B (string)",
+    "Both are the same",
+    "A (rope)",
+    "Cannot tell"
+   ],
+   "correct_answer": 2,
+   "difficulty_tier": "easy",
+   "difficulty_score": 22,
+   "visual_svg": null,
+   "visual_alt": null,
+   "diagnostics": {
+    "3": "Compare the lengths by looking at both items side by side.",
+    "0": "'longer' means the one that takes more space.",
+    "1": "Look at where each item ends — the one that stretches further is longer."
+   },
+   "tags": [
+    "measurement",
+    "length",
+    "comparison"
+   ],
+   "topic": "ncert_g1_measurement",
+   "chapter": "Ch9: Measurement",
+   "hint": {
+    "level_0": "'Longer' means stretches more.",
+    "level_1": "Compare where the two items start and end.",
+    "level_2": "The rope is longer; the other is shorter."
+   },
+   "curriculum_tags": [
+    "NCERT_1_9"
+   ],
+   "irt_params": {
+    "a": 1.15,
+    "b": -1.78,
+    "c": 0.25
+   },
+   "irt_a": 1.15,
+   "irt_b": -1.78,
+   "irt_c": 0.25,
+   "solution_steps": [
+    "Read the problem and find the numbers",
+    "Identify which operation to use",
+    "Calculate to find the answer"
+   ],
+   "interaction_mode": "drag_drop",
+   "level": 1,
+   "level_name": "Explorer",
+   "universal_skill_id": "MEAS_LENGTH_1",
+   "skill_id": "length",
+   "skill_domain": "measurement",
+   "maturity_bucket": "calibrating",
+   "visual_requirement": "pending_manual",
+   "visual_type": "none",
+   "visual_ai_verified": false,
+   "media_id": "NCERT-G1-188.svg",
+   "media_hash": "sha256:c9b12c5565bdb796",
+   "misconception_ids": [
+    "MISC_1",
+    "MISC_0",
+    "MISC_3"
+   ],
+   "why_quality": "human_authored",
+   "why_framework": "3R",
+   "hint_quality": {
+    "layers": 3,
+    "quality": "good",
+    "has_3_layers": true
+   },
+   "curriculum_source": "ncert",
+   "curriculum_map": {
+    "cbse": "Ch6: Measurement",
+    "icse": "Ch9: Measurement",
+    "cambridge": "Gm - Measure",
+    "singapore": "Measurement",
+    "common_core": "MD - Measurement & Data"
+   },
+   "school_grade": 1,
+   "avg_time_to_solve_ms": null,
+   "times_served": 0,
+   "flag_count": 0,
+   "schema_version": "3.0",
+   "adaptive_topic_id": "g1-measurement",
+   "adaptive_topic_name": "Measurement",
+   "adaptive_topic_emoji": "📏",
+   "adaptive_grade": 1,
+   "dual_tagged": true,
+   "content_source": "ncert",
+   "sequence_id": 18,
+   "difficulty_tier_in_topic": "intro",
+   "locale_ids": [
+    "india",
+    "singapore",
+    "us",
+    "global"
+   ],
+   "original_id": "NCERT-G1-124"
+  }
+ },
+ {
+  "file": "grade1/g1-measurement.json",
+  "id": "A1-MSR-0025",
+  "reason": "missing_visual_unanswerable",
+  "question": {
+   "id": "A1-MSR-0025",
+   "stem": "Look at the picture. A is a stick and B is a twig. Which is longer?",
+   "choices": [
+    "B (twig)",
+    "Cannot tell",
+    "Both are the same",
+    "A (stick)"
+   ],
+   "correct_answer": 3,
+   "difficulty_tier": "easy",
+   "difficulty_score": 27,
+   "visual_svg": null,
+   "visual_alt": null,
+   "diagnostics": {
+    "0": "Compare the lengths by looking at both items side by side.",
+    "1": "'longer' means the one that takes more space.",
+    "2": "Look at where each item ends — the one that stretches further is longer."
+   },
+   "tags": [
+    "measurement",
+    "length",
+    "comparison"
+   ],
+   "topic": "ncert_g1_measurement",
+   "chapter": "Ch9: Measurement",
+   "hint": {
+    "level_0": "'Longer' means stretches more.",
+    "level_1": "Compare where the two items start and end.",
+    "level_2": "The stick is longer; the other is shorter."
+   },
+   "curriculum_tags": [
+    "NCERT_1_9"
+   ],
+   "irt_params": {
+    "a": 1.15,
+    "b": -1.5,
+    "c": 0.25
+   },
+   "irt_a": 1.15,
+   "irt_b": -1.5,
+   "irt_c": 0.25,
+   "solution_steps": [
+    "Read the problem and find the numbers",
+    "Identify which operation to use",
+    "Calculate to find the answer"
+   ],
+   "interaction_mode": "drag_drop",
+   "level": 1,
+   "level_name": "Explorer",
+   "universal_skill_id": "MEAS_LENGTH_1",
+   "skill_id": "length",
+   "skill_domain": "measurement",
+   "maturity_bucket": "calibrating",
+   "visual_requirement": "pending_manual",
+   "visual_type": "none",
+   "visual_ai_verified": false,
+   "media_id": "NCERT-G1-187.svg",
+   "media_hash": "sha256:40d1a2c4d4bcc06f",
+   "misconception_ids": [
+    "MISC_1",
+    "MISC_0",
+    "MISC_2"
+   ],
+   "why_quality": "human_authored",
+   "why_framework": "3R",
+   "hint_quality": {
+    "layers": 3,
+    "quality": "good",
+    "has_3_layers": true
+   },
+   "curriculum_source": "ncert",
+   "curriculum_map": {
+    "cbse": "Ch6: Measurement",
+    "icse": "Ch9: Measurement",
+    "cambridge": "Gm - Measure",
+    "singapore": "Measurement",
+    "common_core": "MD - Measurement & Data"
+   },
+   "school_grade": 1,
+   "avg_time_to_solve_ms": null,
+   "times_served": 0,
+   "flag_count": 0,
+   "schema_version": "3.0",
+   "adaptive_topic_id": "g1-measurement",
+   "adaptive_topic_name": "Measurement",
+   "adaptive_topic_emoji": "📏",
+   "adaptive_grade": 1,
+   "dual_tagged": true,
+   "content_source": "ncert",
+   "sequence_id": 26,
+   "difficulty_tier_in_topic": "intro",
+   "locale_ids": [
+    "india",
+    "singapore",
+    "us",
+    "global"
+   ],
+   "original_id": "NCERT-G1-173"
+  }
+ },
+ {
+  "file": "grade1/g1-measurement.json",
+  "id": "A1-MSR-0028",
+  "reason": "missing_visual_unanswerable",
+  "question": {
+   "id": "A1-MSR-0028",
+   "stem": "Look at the picture. A is a banana and B is a chilli. Which is shorter?",
+   "choices": [
+    "Both are the same",
+    "A (banana)",
+    "Cannot tell",
+    "B (chilli)"
+   ],
+   "correct_answer": 3,
+   "difficulty_tier": "easy",
+   "difficulty_score": 28,
+   "visual_svg": null,
+   "visual_alt": null,
+   "diagnostics": {
+    "0": "Compare the lengths by looking at both items side by side.",
+    "1": "'shorter' means the one that takes less space.",
+    "2": "Look at where each item ends — the one that stretches further is longer."
+   },
+   "tags": [
+    "measurement",
+    "length",
+    "comparison"
+   ],
+   "topic": "ncert_g1_measurement",
+   "chapter": "Ch9: Measurement",
+   "hint": {
+    "level_0": "'Shorter' means stretches less.",
+    "level_1": "Compare where the two items start and end.",
+    "level_2": "The banana is longer; the other is shorter."
+   },
+   "curriculum_tags": [
+    "NCERT_1_9"
+   ],
+   "irt_params": {
+    "a": 1.15,
+    "b": -1.44,
+    "c": 0.25
+   },
+   "irt_a": 1.15,
+   "irt_b": -1.44,
+   "irt_c": 0.25,
+   "solution_steps": [
+    "Read the problem and find the numbers",
+    "Identify which operation to use",
+    "Calculate to find the answer"
+   ],
+   "interaction_mode": "drag_drop",
+   "level": 1,
+   "level_name": "Explorer",
+   "universal_skill_id": "MEAS_LENGTH_1",
+   "skill_id": "length",
+   "skill_domain": "measurement",
+   "maturity_bucket": "calibrating",
+   "visual_requirement": "pending_manual",
+   "visual_type": "none",
+   "visual_ai_verified": false,
+   "media_id": "NCERT-G1-189.svg",
+   "media_hash": "sha256:c8a568730184a9e3",
+   "misconception_ids": [
+    "MISC_1",
+    "MISC_0",
+    "MISC_2"
+   ],
+   "why_quality": "human_authored",
+   "why_framework": "3R",
+   "hint_quality": {
+    "layers": 3,
+    "quality": "good",
+    "has_3_layers": true
+   },
+   "curriculum_source": "ncert",
+   "curriculum_map": {
+    "cbse": "Ch6: Measurement",
+    "icse": "Ch9: Measurement",
+    "cambridge": "Gm - Measure",
+    "singapore": "Measurement",
+    "common_core": "MD - Measurement & Data"
+   },
+   "school_grade": 1,
+   "avg_time_to_solve_ms": null,
+   "times_served": 0,
+   "flag_count": 0,
+   "schema_version": "3.0",
+   "adaptive_topic_id": "g1-measurement",
+   "adaptive_topic_name": "Measurement",
+   "adaptive_topic_emoji": "📏",
+   "adaptive_grade": 1,
+   "dual_tagged": true,
+   "content_source": "ncert",
+   "sequence_id": 29,
+   "difficulty_tier_in_topic": "intro",
+   "locale_ids": [
+    "india",
+    "singapore",
+    "us",
+    "global"
+   ],
+   "original_id": "NCERT-G1-188"
+  }
+ },
+ {
+  "file": "grade1/g1-measurement.json",
+  "id": "A1-MSR-0052",
+  "reason": "missing_visual_unanswerable",
+  "question": {
+   "id": "A1-MSR-0052",
+   "stem": "Look at the picture. A is a ribbon and B is a thread. Which is shorter?",
+   "choices": [
+    "Both are the same",
+    "B (thread)",
+    "A (ribbon)",
+    "Cannot tell"
+   ],
+   "correct_answer": 1,
+   "difficulty_tier": "medium-easy",
+   "difficulty_score": 34,
+   "visual_svg": null,
+   "visual_alt": null,
+   "diagnostics": {
+    "2": "Compare the lengths by looking at both items side by side.",
+    "3": "'shorter' means the one that takes less space.",
+    "0": "Look at where each item ends — the one that stretches further is longer."
+   },
+   "tags": [
+    "measurement",
+    "length",
+    "comparison"
+   ],
+   "topic": "ncert_g1_measurement",
+   "chapter": "Ch9: Measurement",
+   "hint": {
+    "level_0": "'Shorter' means stretches less.",
+    "level_1": "Compare where the two items start and end.",
+    "level_2": "The ribbon is longer; the other is shorter."
+   },
+   "curriculum_tags": [
+    "NCERT_1_9"
+   ],
+   "irt_params": {
+    "a": 1.15,
+    "b": -1.11,
+    "c": 0.25
+   },
+   "irt_a": 1.15,
+   "irt_b": -1.11,
+   "irt_c": 0.25,
+   "solution_steps": [
+    "Read the problem and find the numbers",
+    "Identify which operation to use",
+    "Calculate to find the answer"
+   ],
+   "interaction_mode": "drag_drop",
+   "level": 1,
+   "level_name": "Explorer",
+   "universal_skill_id": "MEAS_LENGTH_1",
+   "skill_id": "length",
+   "skill_domain": "measurement",
+   "maturity_bucket": "calibrating",
+   "visual_requirement": "pending_manual",
+   "visual_type": "none",
+   "visual_ai_verified": false,
+   "media_id": "NCERT-G1-186.svg",
+   "media_hash": "sha256:c03cc05bc438c12d",
+   "misconception_ids": [
+    "MISC_3",
+    "MISC_0",
+    "MISC_2"
+   ],
+   "why_quality": "human_authored",
+   "why_framework": "3R",
+   "hint_quality": {
+    "layers": 3,
+    "quality": "good",
+    "has_3_layers": true
+   },
+   "curriculum_source": "ncert",
+   "curriculum_map": {
+    "cbse": "Ch6: Measurement",
+    "icse": "Ch9: Measurement",
+    "cambridge": "Gm - Measure",
+    "singapore": "Measurement",
+    "common_core": "MD - Measurement & Data"
+   },
+   "school_grade": 1,
+   "avg_time_to_solve_ms": null,
+   "times_served": 0,
+   "flag_count": 0,
+   "schema_version": "3.0",
+   "adaptive_topic_id": "g1-measurement",
+   "adaptive_topic_name": "Measurement",
+   "adaptive_topic_emoji": "📏",
+   "adaptive_grade": 1,
+   "dual_tagged": true,
+   "content_source": "ncert",
+   "sequence_id": 55,
+   "difficulty_tier_in_topic": "practice",
+   "locale_ids": [
+    "india",
+    "singapore",
+    "us",
+    "global"
+   ],
+   "original_id": "NCERT-G1-248"
+  }
+ },
+ {
+  "file": "grade1/g1-shapes.json",
+  "id": "A1-SHP-0536",
+  "reason": "missing_visual_unanswerable",
+  "question": {
+   "id": "A1-SHP-0536",
+   "stem": "What shape do you see in the picture?",
+   "choices": [
+    "Circle",
+    "Triangle",
+    "Square",
+    "Rectangle"
+   ],
+   "correct_answer": 0,
+   "difficulty_tier": "hard",
+   "difficulty_score": 25,
+   "visual_svg": null,
+   "visual_alt": null,
+   "diagnostics": {
+    "1": "Look at the number of sides and corners.",
+    "2": "A circle is round. A triangle has 3 sides. A square has 4 equal sides.",
+    "3": "Count the corners of the shape."
+   },
+   "tags": [
+    "shapes",
+    "identification",
+    "geometry"
+   ],
+   "topic": "ncert_g1_shapes",
+   "chapter": "Ch8: Shapes",
+   "hint": {
+    "level_0": "Look carefully at the shape — is it round? Does it have corners?",
+    "level_1": "This shape is round with no corners.",
+    "level_2": "It is a circle."
+   },
+   "curriculum_tags": [
+    "NCERT_1_8"
+   ],
+   "irt_params": {
+    "a": 1.05,
+    "b": -1.61,
+    "c": 0.25
+   },
+   "irt_a": 1.05,
+   "irt_b": -1.61,
+   "irt_c": 0.25,
+   "solution_steps": [
+    "Identify the properties to look for",
+    "Compare with the given options",
+    "Match the property to the correct shape"
+   ],
+   "interaction_mode": "mcq",
+   "level": 1,
+   "level_name": "Explorer",
+   "universal_skill_id": "SHAPE_2D_1",
+   "skill_id": "shapes_2d",
+   "skill_domain": "geometry",
+   "maturity_bucket": "calibrating",
+   "visual_requirement": "pending_manual",
+   "visual_type": "none",
+   "visual_ai_verified": false,
+   "media_id": "NCERT-G1-162.svg",
+   "media_hash": "sha256:5c02cacef3efb37c",
+   "misconception_ids": [
+    "MISC_1",
+    "MISC_2",
+    "COUNT_ERR"
+   ],
+   "why_quality": "human_authored",
+   "why_framework": "3R",
+   "hint_quality": {
+    "layers": 3,
+    "quality": "good",
+    "has_3_layers": true
+   },
+   "curriculum_source": "ncert",
+   "curriculum_map": {
+    "cbse": "Ch5: Shapes & Spatial Understanding",
+    "icse": "Ch8: Geometry",
+    "cambridge": "Gg - Geometry",
+    "singapore": "Shapes & Space",
+    "common_core": "G - Geometry"
+   },
+   "school_grade": 1,
+   "avg_time_to_solve_ms": null,
+   "times_served": 0,
+   "flag_count": 0,
+   "schema_version": "3.0",
+   "adaptive_topic_id": "g1-shapes",
+   "adaptive_topic_name": "Shapes & Geometry",
+   "adaptive_topic_emoji": "📐",
+   "adaptive_grade": 1,
+   "dual_tagged": true,
+   "content_source": "ncert",
+   "sequence_id": 550,
+   "difficulty_tier_in_topic": "mastery",
+   "locale_ids": [
+    "india",
+    "singapore",
+    "us",
+    "global"
+   ],
+   "original_id": "NCERT-G1-153"
+  }
+ },
+ {
+  "file": "grade1/g1-word-problems.json",
+  "id": "A1-WPR-0266",
+  "reason": "missing_visual_unanswerable",
+  "question": {
+   "id": "A1-WPR-0266",
+   "stem": "Look at the picture. How many red balls are there?",
+   "choices": [],
+   "correct_answer": 0,
+   "difficulty_tier": "medium-hard",
+   "difficulty_score": 22,
+   "visual_svg": null,
+   "visual_alt": null,
+   "diagnostics": {
+    "1": "Count only the red ones.",
+    "2": "Look at the correct color column and count.",
+    "3": "Be careful to count only the asked color, not all."
+   },
+   "tags": [
+    "data_handling",
+    "counting_groups",
+    "visual"
+   ],
+   "topic": "ncert_g1_data",
+   "chapter": "Ch12: Data Handling",
+   "hint": {
+    "level_0": "Look only at the red column.",
+    "level_1": "Count the red circles in the picture.",
+    "level_2": "There are 3 red balls."
+   },
+   "curriculum_tags": [
+    "NCERT_1_12"
+   ],
+   "irt_params": {
+    "a": 1.05,
+    "b": -1.78,
+    "c": 0.25
+   },
+   "irt_a": 1.05,
+   "irt_b": -1.78,
+   "irt_c": 0.25,
+   "solution_steps": [
+    "Look at the picture carefully",
+    "Count each object one by one",
+    "The last number you say is the total"
+   ],
+   "interaction_mode": "integer",
+   "correct_value": 3,
+   "level": 1,
+   "level_name": "Explorer",
+   "universal_skill_id": "DATA_HANDLE_1",
+   "skill_id": "data_handling",
+   "skill_domain": "data",
+   "maturity_bucket": "calibrating",
+   "visual_requirement": "pending_manual",
+   "visual_type": "none",
+   "visual_ai_verified": false,
+   "media_id": "NCERT-G1-264.svg",
+   "media_hash": "sha256:3d1441767568a9d0",
+   "misconception_ids": [
+    "COUNT_ERR"
+   ],
+   "why_quality": "ai_generated",
+   "why_framework": "pending",
+   "hint_quality": {
+    "layers": 3,
+    "quality": "good",
+    "has_3_layers": true
+   },
+   "curriculum_source": "ncert",
+   "curriculum_map": {
+    "cbse": "Ch9: Data Handling",
+    "icse": "Ch10: Data Handling",
+    "cambridge": "Gs - Statistics",
+    "singapore": "Data Analysis",
+    "common_core": "MD - Measurement & Data"
+   },
+   "school_grade": 1,
+   "avg_time_to_solve_ms": null,
+   "times_served": 0,
+   "flag_count": 0,
+   "schema_version": "3.0",
+   "adaptive_topic_id": "g1-word-problems",
+   "adaptive_topic_name": "Word Problems",
+   "adaptive_topic_emoji": "📖",
+   "adaptive_grade": 1,
+   "dual_tagged": true,
+   "content_source": "ncert",
+   "sequence_id": 266,
+   "difficulty_tier_in_topic": "challenge",
+   "locale_ids": [
+    "india",
+    "singapore",
+    "us",
+    "global"
+   ],
+   "original_id": "NCERT-G1-126"
+  }
+ },
+ {
+  "file": "grade1/g1-word-problems.json",
+  "id": "A1-WPR-0284",
+  "reason": "missing_visual_unanswerable",
+  "question": {
+   "id": "A1-WPR-0284",
+   "stem": "Look at the picture. How many green balloons are there?",
+   "choices": [],
+   "correct_answer": 0,
+   "difficulty_tier": "medium-hard",
+   "difficulty_score": 25,
+   "visual_svg": null,
+   "visual_alt": null,
+   "diagnostics": {
+    "2": "Count only the green ones.",
+    "3": "Look at the correct color column and count.",
+    "0": "Be careful to count only the asked color, not all."
+   },
+   "tags": [
+    "data_handling",
+    "counting_groups",
+    "visual"
+   ],
+   "topic": "ncert_g1_data",
+   "chapter": "Ch12: Data Handling",
+   "hint": {
+    "level_0": "Look only at the green column.",
+    "level_1": "Count the green circles in the picture.",
+    "level_2": "There are 4 green balloons."
+   },
+   "curriculum_tags": [
+    "NCERT_1_12"
+   ],
+   "irt_params": {
+    "a": 1.05,
+    "b": -1.61,
+    "c": 0.25
+   },
+   "irt_a": 1.05,
+   "irt_b": -1.61,
+   "irt_c": 0.25,
+   "solution_steps": [
+    "Look at the picture carefully",
+    "Count each object one by one",
+    "The last number you say is the total"
+   ],
+   "interaction_mode": "integer",
+   "correct_value": 4,
+   "level": 1,
+   "level_name": "Explorer",
+   "universal_skill_id": "DATA_HANDLE_1",
+   "skill_id": "data_handling",
+   "skill_domain": "data",
+   "maturity_bucket": "calibrating",
+   "visual_requirement": "pending_manual",
+   "visual_type": "none",
+   "visual_ai_verified": false,
+   "media_id": "NCERT-G1-266.svg",
+   "media_hash": "sha256:33653bbb6acef185",
+   "misconception_ids": [
+    "COUNT_ERR"
+   ],
+   "why_quality": "ai_generated",
+   "why_framework": "pending",
+   "hint_quality": {
+    "layers": 3,
+    "quality": "good",
+    "has_3_layers": true
+   },
+   "curriculum_source": "ncert",
+   "curriculum_map": {
+    "cbse": "Ch9: Data Handling",
+    "icse": "Ch10: Data Handling",
+    "cambridge": "Gs - Statistics",
+    "singapore": "Data Analysis",
+    "common_core": "MD - Measurement & Data"
+   },
+   "school_grade": 1,
+   "avg_time_to_solve_ms": null,
+   "times_served": 0,
+   "flag_count": 0,
+   "schema_version": "3.0",
+   "adaptive_topic_id": "g1-word-problems",
+   "adaptive_topic_name": "Word Problems",
+   "adaptive_topic_emoji": "📖",
+   "adaptive_grade": 1,
+   "dual_tagged": true,
+   "content_source": "ncert",
+   "sequence_id": 284,
+   "difficulty_tier_in_topic": "challenge",
+   "locale_ids": [
+    "india",
+    "singapore",
+    "us",
+    "global"
+   ],
+   "original_id": "NCERT-G1-155"
+  }
+ },
+ {
+  "file": "grade1/g1-word-problems.json",
+  "id": "A1-WPR-0290",
+  "reason": "missing_visual_unanswerable",
+  "question": {
+   "id": "A1-WPR-0290",
+   "stem": "Look at the picture. How many green balls are there?",
+   "choices": [],
+   "correct_answer": 0,
+   "difficulty_tier": "medium-hard",
+   "difficulty_score": 28,
+   "visual_svg": null,
+   "visual_alt": null,
+   "diagnostics": {
+    "1": "Count only the green ones.",
+    "2": "Look at the correct color column and count.",
+    "3": "Be careful to count only the asked color, not all."
+   },
+   "tags": [
+    "data_handling",
+    "counting_groups",
+    "visual"
+   ],
+   "topic": "ncert_g1_data",
+   "chapter": "Ch12: Data Handling",
+   "hint": {
+    "level_0": "Look only at the green column.",
+    "level_1": "Count the green circles in the picture.",
+    "level_2": "There are 6 green balls."
+   },
+   "curriculum_tags": [
+    "NCERT_1_12"
+   ],
+   "irt_params": {
+    "a": 1.05,
+    "b": -1.44,
+    "c": 0.25
+   },
+   "irt_a": 1.05,
+   "irt_b": -1.44,
+   "irt_c": 0.25,
+   "solution_steps": [
+    "Look at the picture carefully",
+    "Count each object one by one",
+    "The last number you say is the total"
+   ],
+   "interaction_mode": "integer",
+   "correct_value": 6,
+   "level": 1,
+   "level_name": "Explorer",
+   "universal_skill_id": "DATA_HANDLE_1",
+   "skill_id": "data_handling",
+   "skill_domain": "data",
+   "maturity_bucket": "calibrating",
+   "visual_requirement": "pending_manual",
+   "visual_type": "none",
+   "visual_ai_verified": false,
+   "media_id": "NCERT-G1-265.svg",
+   "media_hash": "sha256:642e12e76bdae2ec",
+   "misconception_ids": [
+    "COUNT_ERR"
+   ],
+   "why_quality": "ai_generated",
+   "why_framework": "pending",
+   "hint_quality": {
+    "layers": 3,
+    "quality": "good",
+    "has_3_layers": true
+   },
+   "curriculum_source": "ncert",
+   "curriculum_map": {
+    "cbse": "Ch9: Data Handling",
+    "icse": "Ch10: Data Handling",
+    "cambridge": "Gs - Statistics",
+    "singapore": "Data Analysis",
+    "common_core": "MD - Measurement & Data"
+   },
+   "school_grade": 1,
+   "avg_time_to_solve_ms": null,
+   "times_served": 0,
+   "flag_count": 0,
+   "schema_version": "3.0",
+   "adaptive_topic_id": "g1-word-problems",
+   "adaptive_topic_name": "Word Problems",
+   "adaptive_topic_emoji": "📖",
+   "adaptive_grade": 1,
+   "dual_tagged": true,
+   "content_source": "ncert",
+   "sequence_id": 290,
+   "difficulty_tier_in_topic": "challenge",
+   "locale_ids": [
+    "india",
+    "singapore",
+    "us",
+    "global"
+   ],
+   "original_id": "NCERT-G1-189"
+  }
+ },
+ {
+  "file": "grade1/g1-word-problems.json",
+  "id": "A1-WPR-0293",
+  "reason": "missing_visual_unanswerable",
+  "question": {
+   "id": "A1-WPR-0293",
+   "stem": "Look at the picture. How many green flowers are there?",
+   "choices": [],
+   "correct_answer": 0,
+   "difficulty_tier": "medium-hard",
+   "difficulty_score": 30,
+   "visual_svg": null,
+   "visual_alt": null,
+   "diagnostics": {
+    "3": "Count only the green ones.",
+    "0": "Look at the correct color column and count.",
+    "1": "Be careful to count only the asked color, not all."
+   },
+   "tags": [
+    "data_handling",
+    "counting_groups",
+    "visual"
+   ],
+   "topic": "ncert_g1_data",
+   "chapter": "Ch12: Data Handling",
+   "hint": {
+    "level_0": "Look only at the green column.",
+    "level_1": "Count the green circles in the picture.",
+    "level_2": "There are 6 green flowers."
+   },
+   "curriculum_tags": [
+    "NCERT_1_12"
+   ],
+   "irt_params": {
+    "a": 1.05,
+    "b": -1.33,
+    "c": 0.25
+   },
+   "irt_a": 1.05,
+   "irt_b": -1.33,
+   "irt_c": 0.25,
+   "solution_steps": [
+    "Look at the picture carefully",
+    "Count each object one by one",
+    "The last number you say is the total"
+   ],
+   "interaction_mode": "integer",
+   "correct_value": 6,
+   "level": 1,
+   "level_name": "Explorer",
+   "universal_skill_id": "DATA_HANDLE_1",
+   "skill_id": "data_handling",
+   "skill_domain": "data",
+   "maturity_bucket": "calibrating",
+   "visual_requirement": "pending_manual",
+   "visual_type": "none",
+   "visual_ai_verified": false,
+   "media_id": "NCERT-G1-267.svg",
+   "media_hash": "sha256:40697d0542142ae3",
+   "misconception_ids": [
+    "COUNT_ERR"
+   ],
+   "why_quality": "ai_generated",
+   "why_framework": "pending",
+   "hint_quality": {
+    "layers": 3,
+    "quality": "good",
+    "has_3_layers": true
+   },
+   "curriculum_source": "ncert",
+   "curriculum_map": {
+    "cbse": "Ch9: Data Handling",
+    "icse": "Ch10: Data Handling",
+    "cambridge": "Gs - Statistics",
+    "singapore": "Data Analysis",
+    "common_core": "MD - Measurement & Data"
+   },
+   "school_grade": 1,
+   "avg_time_to_solve_ms": null,
+   "times_served": 0,
+   "flag_count": 0,
+   "schema_version": "3.0",
+   "adaptive_topic_id": "g1-word-problems",
+   "adaptive_topic_name": "Word Problems",
+   "adaptive_topic_emoji": "📖",
+   "adaptive_grade": 1,
+   "dual_tagged": true,
+   "content_source": "ncert",
+   "sequence_id": 293,
+   "difficulty_tier_in_topic": "challenge",
+   "locale_ids": [
+    "india",
+    "singapore",
+    "us",
+    "global"
+   ],
+   "original_id": "NCERT-G1-206"
+  }
+ },
+ {
+  "file": "grade1/g1-word-problems.json",
+  "id": "A1-WPR-0294",
+  "reason": "missing_visual_unanswerable",
+  "question": {
+   "id": "A1-WPR-0294",
+   "stem": "Look at the picture. How many red stars are there?",
+   "choices": [],
+   "correct_answer": 0,
+   "difficulty_tier": "medium-hard",
+   "difficulty_score": 30,
+   "visual_svg": null,
+   "visual_alt": null,
+   "diagnostics": {
+    "2": "Count only the red ones.",
+    "3": "Look at the correct color column and count.",
+    "0": "Be careful to count only the asked color, not all."
+   },
+   "tags": [
+    "data_handling",
+    "counting_groups",
+    "visual"
+   ],
+   "topic": "ncert_g1_data",
+   "chapter": "Ch12: Data Handling",
+   "hint": {
+    "level_0": "Look only at the red column.",
+    "level_1": "Count the red circles in the picture.",
+    "level_2": "There are 2 red stars."
+   },
+   "curriculum_tags": [
+    "NCERT_1_12"
+   ],
+   "irt_params": {
+    "a": 1.05,
+    "b": -1.33,
+    "c": 0.25
+   },
+   "irt_a": 1.05,
+   "irt_b": -1.33,
+   "irt_c": 0.25,
+   "solution_steps": [
+    "Look at the picture carefully",
+    "Count each object one by one",
+    "The last number you say is the total"
+   ],
+   "interaction_mode": "integer",
+   "correct_value": 2,
+   "level": 1,
+   "level_name": "Explorer",
+   "universal_skill_id": "DATA_HANDLE_1",
+   "skill_id": "data_handling",
+   "skill_domain": "data",
+   "maturity_bucket": "calibrating",
+   "visual_requirement": "pending_manual",
+   "visual_type": "none",
+   "visual_ai_verified": false,
+   "media_id": "NCERT-G1-268.svg",
+   "media_hash": "sha256:91cbd0c22d906e59",
+   "misconception_ids": [
+    "COUNT_ERR"
+   ],
+   "why_quality": "ai_generated",
+   "why_framework": "pending",
+   "hint_quality": {
+    "layers": 3,
+    "quality": "good",
+    "has_3_layers": true
+   },
+   "curriculum_source": "ncert",
+   "curriculum_map": {
+    "cbse": "Ch9: Data Handling",
+    "icse": "Ch10: Data Handling",
+    "cambridge": "Gs - Statistics",
+    "singapore": "Data Analysis",
+    "common_core": "MD - Measurement & Data"
+   },
+   "school_grade": 1,
+   "avg_time_to_solve_ms": null,
+   "times_served": 0,
+   "flag_count": 0,
+   "schema_version": "3.0",
+   "adaptive_topic_id": "g1-word-problems",
+   "adaptive_topic_name": "Word Problems",
+   "adaptive_topic_emoji": "📖",
+   "adaptive_grade": 1,
+   "dual_tagged": true,
+   "content_source": "ncert",
+   "sequence_id": 294,
+   "difficulty_tier_in_topic": "challenge",
+   "locale_ids": [
+    "india",
+    "singapore",
+    "us",
+    "global"
+   ],
+   "original_id": "NCERT-G1-207"
+  }
+ },
+ {
+  "file": "grade1/olympiad-topic-2-arithmetic.json",
+  "id": "T2-1007v",
+  "reason": "broken_name_unrepairable",
+  "question": {
+   "id": "T2-1007v",
+   "stem": "At the championship, Ved tackles the final calculation. Has 4 buttons ready. 15 more arrive. How many buttons are there now?",
+   "choices": [
+    "4:45",
+    "4:30",
+    "5:15",
+    "5:00"
+   ],
+   "correct_answer": 3,
+   "difficulty_tier": "easy",
+   "difficulty_score": 3,
+   "visual_svg": null,
+   "visual_alt": null,
+   "diagnostics": {
+    "0": "When the digits add up to 10 or more, remember to carry the 1 to the next column.",
+    "1": "Check the problem again — are you sure you need to subtract? The word 'more' or 'total' usually means addition.",
+    "2": "Make sure you're lining up the ones, tens, and hundreds columns correctly.",
+    "correct_explanation": "The answer is 5:00. When we add the numbers together (4 + 15), the total is 5:00."
+   },
+   "tags": [
+    "time",
+    "addition",
+    "carrying",
+    "g3-4",
+    "variety_pack"
+   ],
+   "topic": "arithmetic_missing_numbers",
+   "topic_name": "Arithmetic & Missing Numbers",
+   "original_stem": "It is 4:15. What time will it be after 45 minutes?",
+   "hint": {
+    "level_0": "Think: what does 'altogether' or 'total' or 'in all' really mean here?",
+    "level_1": "Think about what you're putting together. Could you draw it, use a number line, or break the numbers into tens and ones? Start with 4. Now add 15 to it.  What do you get?",
+    "level_2": "Here's the solution: 4 + 15 = 5:00. We combined the two amounts to get the total."
+   },
+   "interaction_mode": "mcq",
+   "visual_context": null,
+   "irt_params": {
+    "a": 1.05,
+    "b": 1.5,
+    "c": 0.15
+   },
+   "irt_a": 1.05,
+   "irt_b": 1.5,
+   "irt_c": 0.15,
+   "solution_steps": [
+    "Identify the numbers: 4, 15, 45",
+    "Determine the operation needed",
+    "Calculate step by step to find the answer"
+   ],
+   "competency_level": "K",
+   "competency_confidence": 0.833,
+   "competency_name": "Knowing",
+   "story_theme": "The Racing Garage",
+   "story_chapter": 8
+  }
+ },
+ {
+  "file": "grade1/olympiad-topic-2-arithmetic.json",
+  "id": "T2-941",
+  "reason": "broken_name_unrepairable",
+  "question": {
+   "id": "T2-941",
+   "stem": "Kiwi calculates the figures for the race car. Has 4 toy parts ready. 3 more arrive. How many toy parts are there now?",
+   "choices": [
+    "They are equal",
+    "Cannot determine",
+    "3^4",
+    "4^3"
+   ],
+   "correct_answer": 2,
+   "difficulty_tier": "easy",
+   "difficulty_score": 29,
+   "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 350 80\" width=\"350\" height=\"80\" style=\"font-family:Arial,sans-serif\"><line x1=\"40\" y1=\"40\" x2=\"310\" y2=\"40\" stroke=\"#333\" stroke-width=\"2\"/><polygon points=\"35,40 45,35 45,45\" fill=\"#333\"/><polygon points=\"315,40 305,35 305,45\" fill=\"#333\"/><line x1=\"50.0\" y1=\"34\" x2=\"50.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"50.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">0</text><line x1=\"75.0\" y1=\"34\" x2=\"75.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"75.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">1</text><line x1=\"100.0\" y1=\"34\" x2=\"100.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"100.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">2</text><line x1=\"125.0\" y1=\"34\" x2=\"125.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"125.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">3</text><line x1=\"150.0\" y1=\"34\" x2=\"150.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"150.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">4</text><line x1=\"175.0\" y1=\"34\" x2=\"175.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"175.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">5</text><line x1=\"200.0\" y1=\"34\" x2=\"200.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"200.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">6</text><line x1=\"225.0\" y1=\"34\" x2=\"225.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"225.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">7</text><line x1=\"250.0\" y1=\"34\" x2=\"250.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"250.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">8</text><line x1=\"275.0\" y1=\"34\" x2=\"275.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"275.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">9</text><line x1=\"300.0\" y1=\"34\" x2=\"300.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"300.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">10</text></svg>",
+   "visual_alt": null,
+   "diagnostics": {
+    "0": "When the digits add up to 10 or more, remember to carry the 1 to the next column.",
+    "1": "Check the problem again — are you sure you need to subtract? The word 'more' or 'total' usually means addition.",
+    "3": "Double-check which numbers the problem is asking you to add together.",
+    "correct_explanation": "The answer is 3^4. When we add the numbers together (4 + 3), the total is 3^4."
+   },
+   "tags": [
+    "exponents",
+    "comparing-powers",
+    "grade-5-6"
+   ],
+   "topic": "arithmetic_missing_numbers",
+   "topic_name": "Arithmetic & Missing Numbers",
+   "hint": {
+    "level_0": "This problem is asking you to combine amounts. What two (or more) things are being put together?",
+    "level_1": "Think about what you're putting together. Could you draw it, use a number line, or break the numbers into tens and ones? Start with 4. Now add 3 to it.  What do you get?",
+    "level_2": "Here's the solution: 4 + 3 = 3^4. We combined the two amounts to get the total."
+   },
+   "interaction_mode": "mcq",
+   "visual_context": "A visual representation of the problem.",
+   "irt_params": {
+    "a": 1.2,
+    "b": 1.2,
+    "c": 0.15
+   },
+   "irt_a": 1.2,
+   "irt_b": 1.2,
+   "irt_c": 0.15,
+   "solution_steps": [
+    "Identify the numbers: 4, 3, 3",
+    "Determine the operation needed",
+    "Calculate step by step to find the answer"
+   ],
+   "original_stem": "Vanya needs to work out: Dragon Dash challenges you: Which is larger: 4^3 or 3^4?",
+   "competency_level": "K",
+   "competency_confidence": 0.75,
+   "competency_name": "Knowing",
+   "story_theme": "The Racing Garage",
+   "story_chapter": 2
+  }
+ },
+ {
+  "file": "grade1/olympiad-topic-2-arithmetic.json",
+  "id": "T2-934",
+  "reason": "broken_name_unrepairable",
+  "question": {
+   "id": "T2-934",
+   "stem": "In the racing garage, Google works on the numbers. Has 4 wheels ready. 4 more arrive. How many wheels are there now?",
+   "choices": [
+    "256",
+    "128",
+    "512",
+    "64"
+   ],
+   "correct_answer": 0,
+   "difficulty_tier": "easy",
+   "difficulty_score": 32,
+   "visual_svg": null,
+   "visual_alt": null,
+   "diagnostics": {
+    "1": "Check the problem again — are you sure you need to subtract? The word 'more' or 'total' usually means addition.",
+    "2": "Make sure you're lining up the ones, tens, and hundreds columns correctly.",
+    "3": "Double-check which numbers the problem is asking you to add together.",
+    "correct_explanation": "The answer is 256. When we add the numbers together (4 + 4), the total is 256."
+   },
+   "tags": [
+    "exponents",
+    "powers",
+    "grade-5-6"
+   ],
+   "topic": "arithmetic_missing_numbers",
+   "topic_name": "Arithmetic & Missing Numbers",
+   "hint": {
+    "level_0": "Think: what does 'altogether' or 'total' or 'in all' really mean here?",
+    "level_1": "Think about what you're putting together. Could you draw it, use a number line, or break the numbers into tens and ones? Start with 4. Now add 4 to it.  What do you get?",
+    "level_2": "Here's the solution: 4 + 4 = 256. We combined the two amounts to get the total."
+   },
+   "interaction_mode": "mcq",
+   "visual_context": "A visual representation of the problem.",
+   "irt_params": {
+    "a": 1.3,
+    "b": 1.22,
+    "c": 0.15
+   },
+   "irt_a": 1.3,
+   "irt_b": 1.22,
+   "irt_c": 0.15,
+   "solution_steps": [
+    "Identify the numbers: 4, 4",
+    "Determine the operation needed",
+    "Calculate step by step to find the answer"
+   ],
+   "original_stem": "Aarohi is solving a number puzzle: What is 4^4?",
+   "competency_level": "K",
+   "competency_confidence": 0.75,
+   "competency_name": "Knowing",
+   "story_theme": "The Racing Garage",
+   "story_chapter": 1
+  }
+ },
+ {
+  "file": "grade1/olympiad-topic-2-arithmetic.json",
+  "id": "T2-932",
+  "reason": "broken_name_unrepairable",
+  "question": {
+   "id": "T2-932",
+   "stem": "In the racing garage, Ved works on the numbers. Has 3 building blocks ready. 5 more arrive. How many building blocks are there now?",
+   "choices": [
+    "245",
+    "225",
+    "235",
+    "243"
+   ],
+   "correct_answer": 3,
+   "difficulty_tier": "easy",
+   "difficulty_score": 45,
+   "visual_svg": null,
+   "visual_alt": null,
+   "diagnostics": {
+    "0": "When the digits add up to 10 or more, remember to carry the 1 to the next column.",
+    "1": "Check the problem again — are you sure you need to subtract? The word 'more' or 'total' usually means addition.",
+    "2": "Make sure you're lining up the ones, tens, and hundreds columns correctly.",
+    "correct_explanation": "The answer is 243. When we add the numbers together (3 + 5), the total is 243."
+   },
+   "tags": [
+    "exponents",
+    "powers",
+    "grade-5-6"
+   ],
+   "topic": "arithmetic_missing_numbers",
+   "topic_name": "Arithmetic & Missing Numbers",
+   "hint": {
+    "level_0": "This problem is asking you to combine amounts. What two (or more) things are being put together?",
+    "level_1": "Think about what you're putting together. Could you draw it, use a number line, or break the numbers into tens and ones? Start with 3. Now add 5 to it.  What do you get?",
+    "level_2": "Here's the solution: 3 + 5 = 243. We combined the two amounts to get the total."
+   },
+   "interaction_mode": "mcq",
+   "visual_context": "A visual representation of the problem.",
+   "irt_params": {
+    "a": 1.4,
+    "b": 1.3,
+    "c": 0.15
+   },
+   "irt_a": 1.4,
+   "irt_b": 1.3,
+   "irt_c": 0.15,
+   "solution_steps": [
+    "Identify the numbers: 3, 5",
+    "Determine the operation needed",
+    "Calculate step by step to find the answer"
+   ],
+   "original_stem": "Chikoo is solving a number puzzle: What is 3^5?",
+   "competency_level": "K",
+   "competency_confidence": 0.75,
+   "competency_name": "Knowing",
+   "story_theme": "The Racing Garage",
+   "story_chapter": 1
+  }
+ },
+ {
+  "file": "grade1/olympiad-topic-3-patterns.json",
+  "id": "T3-151",
+  "reason": "missing_visual_unanswerable",
+  "question": {
+   "id": "T3-151",
+   "stem": "The cloud bridge needs a pattern answer from Aarohi to form. What comes next?",
+   "choices": [
+    "Yellow",
+    "White",
+    "Green",
+    "Black"
+   ],
+   "correct_answer": 2,
+   "difficulty_tier": "easy",
+   "difficulty_score": 27,
+   "visual_svg": null,
+   "visual_alt": "AABB pattern with green and yellow",
+   "diagnostics": {
+    "0": "Look at how EACH number changes to get the next one. Is it adding, multiplying, or something else?",
+    "1": "You found the right pattern rule, but applied it incorrectly to find the answer. Try again carefully.",
+    "3": "You found the right pattern, but made a calculation error when finding the next number.",
+    "correct_explanation": "The answer is Green. By finding the rule that connects each term to the next, we can predict what comes next in the sequence."
+   },
+   "topic": "patterns_sequences",
+   "topic_name": "Patterns & Sequences",
+   "tags": [
+    "repeating-pattern",
+    "AABB"
+   ],
+   "hint": {
+    "level_0": "A pattern has a rule. Find the rule first, then use it to predict the next term.",
+    "level_1": "Look at how each number or item changes to get the next one. Write down the differences between consecutive terms. Work through the problem step by step using the numbers given: check the problem carefully.",
+    "level_2": "Here's the solution: Following the pattern rule gives us Green. Each step follows the same rule to get the next number."
+   },
+   "concept_cluster": "sequence/next-easy",
+   "interaction_mode": "mcq",
+   "visual_context": "A visual representation of the problem.",
+   "irt_params": {
+    "a": 1.25,
+    "b": -2.23,
+    "c": 0.22
+   },
+   "irt_a": 1.25,
+   "irt_b": -2.23,
+   "irt_c": 0.22,
+   "solution_steps": [
+    "Look at what changes between items",
+    "Find the rule (adding, subtracting, repeating?)",
+    "Apply the rule to find what comes next"
+   ],
+   "competency_level": "K",
+   "competency_confidence": 0.846,
+   "competency_name": "Knowing",
+   "original_stem": "Captain Kiwi sees: Green, Green, Yellow, Yellow, Green, Green, Yellow, Yellow, Green, ___. What comes next?",
+   "story_chapter": 2,
+   "story_theme": "The Music Festival"
+  }
+ },
+ {
+  "file": "grade1/olympiad-topic-3-patterns.json",
+  "id": "T3-171",
+  "reason": "missing_visual_unanswerable",
+  "question": {
+   "id": "T3-171",
+   "stem": "The Cloud Station controller shows Aarohi a number pattern. What comes next?",
+   "choices": [
+    "Blue",
+    "White",
+    "Black",
+    "Pink"
+   ],
+   "correct_answer": 0,
+   "difficulty_tier": "easy",
+   "difficulty_score": 29,
+   "visual_svg": null,
+   "visual_alt": "AABB pattern with blue and pink",
+   "diagnostics": {
+    "1": "You found the right pattern rule, but applied it incorrectly to find the answer. Try again carefully.",
+    "2": "Check more than just the first two numbers — the pattern might change or have two steps.",
+    "3": "You found the right pattern, but made a calculation error when finding the next number.",
+    "correct_explanation": "The answer is Blue. By finding the rule that connects each term to the next, we can predict what comes next in the sequence."
+   },
+   "topic": "patterns_sequences",
+   "topic_name": "Patterns & Sequences",
+   "tags": [
+    "repeating-pattern",
+    "AABB"
+   ],
+   "hint": {
+    "level_0": "Before guessing, write down what happens from one term to the next. Addition? Multiplication? Something else?",
+    "level_1": "Look at how each number or item changes to get the next one. Write down the differences between consecutive terms. Work through the problem step by step using the numbers given: check the problem carefully.",
+    "level_2": "Here's the solution: Following the pattern rule gives us Blue. Each step follows the same rule to get the next number."
+   },
+   "concept_cluster": "sequence/next-easy",
+   "interaction_mode": "mcq",
+   "visual_context": "A visual representation of the problem.",
+   "irt_params": {
+    "a": 1.05,
+    "b": -2.33,
+    "c": 0.22
+   },
+   "irt_a": 1.05,
+   "irt_b": -2.33,
+   "irt_c": 0.22,
+   "solution_steps": [
+    "Look at what changes between items",
+    "Find the rule (adding, subtracting, repeating?)",
+    "Apply the rule to find what comes next"
+   ],
+   "competency_level": "K",
+   "competency_confidence": 0.846,
+   "competency_name": "Knowing",
+   "original_stem": "Captain Kiwi sees: Blue, Blue, Pink, Pink, Blue, Blue, Pink, Pink, Blue, ___. What comes next?",
+   "story_chapter": 2,
+   "story_theme": "The Music Festival"
+  }
+ },
+ {
+  "file": "grade1/olympiad-topic-3-patterns.json",
+  "id": "T3-176",
+  "reason": "missing_visual_unanswerable",
+  "question": {
+   "id": "T3-176",
+   "stem": "The train reaches Cloud Station! Aarohi sees numbers floating in the clouds. What comes next?",
+   "choices": [
+    "Red",
+    "Green",
+    "White",
+    "Black"
+   ],
+   "correct_answer": 0,
+   "difficulty_tier": "easy",
+   "difficulty_score": 30,
+   "visual_svg": null,
+   "visual_alt": "AABB pattern with red and green",
+   "diagnostics": {
+    "1": "You found the right pattern rule, but applied it incorrectly to find the answer. Try again carefully.",
+    "2": "Check more than just the first two numbers — the pattern might change or have two steps.",
+    "3": "You found the right pattern, but made a calculation error when finding the next number.",
+    "correct_explanation": "The answer is Red. By finding the rule that connects each term to the next, we can predict what comes next in the sequence."
+   },
+   "topic": "patterns_sequences",
+   "topic_name": "Patterns & Sequences",
+   "tags": [
+    "repeating-pattern",
+    "AABB"
+   ],
+   "hint": {
+    "level_0": "Before guessing, write down what happens from one term to the next. Addition? Multiplication? Something else?",
+    "level_1": "Look at how each number or item changes to get the next one. Write down the differences between consecutive terms. Work through the problem step by step using the numbers given: check the problem carefully.",
+    "level_2": "Here's the solution: Following the pattern rule gives us Red. Each step follows the same rule to get the next number."
+   },
+   "concept_cluster": "sequence/next-easy",
+   "interaction_mode": "mcq",
+   "visual_context": "A visual representation of the problem.",
+   "irt_params": {
+    "a": 1.25,
+    "b": -2.14,
+    "c": 0.22
+   },
+   "irt_a": 1.25,
+   "irt_b": -2.14,
+   "irt_c": 0.22,
+   "solution_steps": [
+    "Look at what changes between items",
+    "Find the rule (adding, subtracting, repeating?)",
+    "Apply the rule to find what comes next"
+   ],
+   "competency_level": "K",
+   "competency_confidence": 0.846,
+   "competency_name": "Knowing",
+   "original_stem": "Captain Kiwi sees: Red, Red, Green, Green, Red, Red, Green, Green, Red, ___. What comes next?",
+   "story_chapter": 2,
+   "story_theme": "The Music Festival"
+  }
+ },
+ {
+  "file": "grade2/g2-word-problems.json",
+  "id": "A2-WPR-0218",
+  "reason": "missing_visual_unanswerable",
+  "question": {
+   "id": "A2-WPR-0218",
+   "stem": "Look at the chart. Which item is most popular?",
+   "choices": [
+    "Parrot",
+    "Dog",
+    "Cat",
+    "Rabbit"
+   ],
+   "correct_answer": 0,
+   "difficulty_tier": "easy",
+   "difficulty_score": 38,
+   "visual_svg": null,
+   "visual_alt": null,
+   "diagnostics": {
+    "1": "The tallest bar or most symbols = most popular.",
+    "2": "The shortest bar or fewest symbols = least popular.",
+    "3": "Compare the numbers for each item."
+   },
+   "tags": [
+    "data_handling",
+    "comparison",
+    "bar_chart"
+   ],
+   "topic": "ncert_g2_data",
+   "chapter": "Ch10: Data Handling",
+   "hint": {
+    "level_0": "Read the chart carefully — count symbols or bar height.",
+    "level_1": "Each picture/bar represents a number. Compare them.",
+    "level_2": "For total, add all. For difference, subtract smaller from larger."
+   },
+   "curriculum_tags": [
+    "NCERT_2_10"
+   ],
+   "irt_params": {
+    "a": 1.1,
+    "b": -0.8,
+    "c": 0.25
+   },
+   "irt_a": 1.1,
+   "irt_b": -0.8,
+   "irt_c": 0.25,
+   "solution_steps": [
+    "Read the values from the graph carefully",
+    "Identify the numbers for each item mentioned",
+    "Use the right operation on those numbers"
+   ],
+   "interaction_mode": "mcq",
+   "level": 2,
+   "level_name": "Builder",
+   "universal_skill_id": "DATA_HANDLE_2",
+   "skill_id": "data_handling",
+   "skill_domain": "data",
+   "maturity_bucket": "calibrating",
+   "visual_requirement": "pending_manual",
+   "visual_type": "none",
+   "visual_ai_verified": false,
+   "media_id": "NCERT-G2-257.svg",
+   "media_hash": "sha256:4d3c9863f53ef718",
+   "misconception_ids": [
+    "MISC_1",
+    "MISC_3",
+    "MISC_2"
+   ],
+   "why_quality": "human_authored",
+   "why_framework": "3R",
+   "hint_quality": {
+    "layers": 3,
+    "quality": "good",
+    "has_3_layers": true
+   },
+   "curriculum_source": "ncert",
+   "curriculum_map": {
+    "cbse": "Ch9: Data Handling",
+    "icse": "Ch10: Data Handling",
+    "cambridge": "Gs - Statistics",
+    "singapore": "Data Analysis",
+    "common_core": "MD - Measurement & Data"
+   },
+   "school_grade": 2,
+   "avg_time_to_solve_ms": null,
+   "times_served": 0,
+   "flag_count": 0,
+   "schema_version": "3.0",
+   "adaptive_topic_id": "g2-word-problems",
+   "adaptive_topic_name": "Word Problems",
+   "adaptive_topic_emoji": "📖",
+   "adaptive_grade": 2,
+   "dual_tagged": true,
+   "content_source": "ncert",
+   "sequence_id": 728,
+   "difficulty_tier_in_topic": "challenge",
+   "locale_ids": [
+    "india",
+    "singapore",
+    "us",
+    "global"
+   ],
+   "original_id": "NCERT-G2-146"
+  }
+ },
+ {
+  "file": "grade2/olympiad-topic-2-arithmetic.json",
+  "id": "T2-967",
+  "reason": "broken_name_unrepairable",
+  "question": {
+   "id": "T2-967",
+   "stem": "Ved calculates the figures for the race car. Has 15 buttons ready. 20 more arrive. How many buttons are there now?",
+   "choices": [
+    "60",
+    "120",
+    "30",
+    "45"
+   ],
+   "correct_answer": 0,
+   "difficulty_tier": "medium",
+   "difficulty_score": 82,
+   "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 350 80\" width=\"350\" height=\"80\" style=\"font-family:Arial,sans-serif\"><line x1=\"40\" y1=\"40\" x2=\"310\" y2=\"40\" stroke=\"#333\" stroke-width=\"2\"/><polygon points=\"35,40 45,35 45,45\" fill=\"#333\"/><polygon points=\"315,40 305,35 305,45\" fill=\"#333\"/><line x1=\"50.0\" y1=\"34\" x2=\"50.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"50.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">0</text><line x1=\"75.0\" y1=\"34\" x2=\"75.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"75.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">1</text><line x1=\"100.0\" y1=\"34\" x2=\"100.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"100.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">2</text><line x1=\"125.0\" y1=\"34\" x2=\"125.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"125.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">3</text><line x1=\"150.0\" y1=\"34\" x2=\"150.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"150.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">4</text><line x1=\"175.0\" y1=\"34\" x2=\"175.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"175.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">5</text><line x1=\"200.0\" y1=\"34\" x2=\"200.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"200.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">6</text><line x1=\"225.0\" y1=\"34\" x2=\"225.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"225.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">7</text><line x1=\"250.0\" y1=\"34\" x2=\"250.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"250.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">8</text><line x1=\"275.0\" y1=\"34\" x2=\"275.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"275.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">9</text><line x1=\"300.0\" y1=\"34\" x2=\"300.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"300.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">10</text></svg>",
+   "visual_alt": null,
+   "diagnostics": {
+    "1": "Check the problem again — are you sure you need to subtract? The word 'more' or 'total' usually means addition.",
+    "2": "Make sure you're lining up the ones, tens, and hundreds columns correctly.",
+    "3": "Double-check which numbers the problem is asking you to add together.",
+    "correct_explanation": "The answer is 60. When we add the numbers together (15 + 20), the total is 60."
+   },
+   "tags": [
+    "LCM",
+    "multiples",
+    "divisibility",
+    "grade-5-6"
+   ],
+   "topic": "arithmetic_missing_numbers",
+   "topic_name": "Arithmetic & Missing Numbers",
+   "hint": {
+    "level_0": "This problem is asking you to combine amounts. What two (or more) things are being put together?",
+    "level_1": "Think about what you're putting together. Could you draw it, use a number line, or break the numbers into tens and ones? Start with 15. Now add 20 to it.  What do you get?",
+    "level_2": "Here's the solution: 15 + 20 = 60. We combined the two amounts to get the total."
+   },
+   "interaction_mode": "mcq",
+   "visual_context": "A visual representation of the problem.",
+   "irt_params": {
+    "a": 1.5,
+    "b": 1.6,
+    "c": 0.15
+   },
+   "irt_a": 1.5,
+   "irt_b": 1.6,
+   "irt_c": 0.15,
+   "solution_steps": [
+    "Identify the numbers: 15, 20",
+    "Determine the operation needed",
+    "Calculate step by step to find the answer"
+   ],
+   "original_stem": "Vanya needs to work out: What is the least common multiple of 15 and 20?",
+   "competency_level": "K",
+   "competency_confidence": 0.545,
+   "competency_name": "Knowing",
+   "story_theme": "The Racing Garage",
+   "story_chapter": 2
+  }
+ },
+ {
+  "file": "grade2/olympiad-topic-2-arithmetic.json",
+  "id": "T2-979",
+  "reason": "broken_name_unrepairable",
+  "question": {
+   "id": "T2-979",
+   "stem": "At the test track, Google does the math. Has 4 building blocks ready. 9 more arrive. How many building blocks are there now?",
+   "choices": [
+    "98",
+    "108",
+    "102",
+    "114"
+   ],
+   "correct_answer": 1,
+   "difficulty_tier": "medium",
+   "difficulty_score": 83,
+   "visual_svg": null,
+   "visual_alt": null,
+   "diagnostics": {
+    "0": "Make sure you're lining up the ones, tens, and hundreds columns correctly.",
+    "2": "Make sure you're lining up the ones, tens, and hundreds columns correctly.",
+    "3": "Double-check which numbers the problem is asking you to add together.",
+    "correct_explanation": "The answer is 108. When we add the numbers together (4 + 9), the total is 108."
+   },
+   "tags": [
+    "factors",
+    "divisibility-rules",
+    "grade-5-6"
+   ],
+   "topic": "arithmetic_missing_numbers",
+   "topic_name": "Arithmetic & Missing Numbers",
+   "hint": {
+    "level_0": "Read it again — what are the quantities, and why are they being joined?",
+    "level_1": "Think about what you're putting together. Could you draw it, use a number line, or break the numbers into tens and ones? Start with 4. Now add 9 to it.  What do you get?",
+    "level_2": "Here's the solution: 4 + 9 = 108. We combined the two amounts to get the total."
+   },
+   "interaction_mode": "mcq",
+   "visual_context": "A visual representation of the problem.",
+   "irt_params": {
+    "a": 1.4,
+    "b": 1.6,
+    "c": 0.15
+   },
+   "irt_a": 1.4,
+   "irt_b": 1.6,
+   "irt_c": 0.15,
+   "solution_steps": [
+    "Identify the numbers: 4, 9",
+    "Determine the operation needed",
+    "Calculate step by step to find the answer"
+   ],
+   "original_stem": "Kiwi needs to work out: Which number is divisible by both 4 and 9?",
+   "competency_level": "K",
+   "competency_confidence": 0.545,
+   "competency_name": "Knowing",
+   "story_theme": "The Racing Garage",
+   "story_chapter": 3
+  }
+ },
+ {
+  "file": "grade2/olympiad-topic-2-arithmetic.json",
+  "id": "T2-974",
+  "reason": "broken_name_unrepairable",
+  "question": {
+   "id": "T2-974",
+   "stem": "Google calculates the figures for the race car. Has 48 building blocks ready. 72 more arrive. How many building blocks are there now?",
+   "choices": [
+    "72",
+    "144",
+    "288",
+    "96"
+   ],
+   "correct_answer": 1,
+   "difficulty_tier": "medium",
+   "difficulty_score": 87,
+   "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 350 80\" width=\"350\" height=\"80\" style=\"font-family:Arial,sans-serif\"><line x1=\"40\" y1=\"40\" x2=\"310\" y2=\"40\" stroke=\"#333\" stroke-width=\"2\"/><polygon points=\"35,40 45,35 45,45\" fill=\"#333\"/><polygon points=\"315,40 305,35 305,45\" fill=\"#333\"/><line x1=\"50.0\" y1=\"34\" x2=\"50.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"50.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">0</text><line x1=\"75.0\" y1=\"34\" x2=\"75.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"75.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">1</text><line x1=\"100.0\" y1=\"34\" x2=\"100.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"100.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">2</text><line x1=\"125.0\" y1=\"34\" x2=\"125.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"125.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">3</text><line x1=\"150.0\" y1=\"34\" x2=\"150.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"150.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">4</text><line x1=\"175.0\" y1=\"34\" x2=\"175.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"175.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">5</text><line x1=\"200.0\" y1=\"34\" x2=\"200.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"200.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">6</text><line x1=\"225.0\" y1=\"34\" x2=\"225.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"225.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">7</text><line x1=\"250.0\" y1=\"34\" x2=\"250.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"250.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">8</text><line x1=\"275.0\" y1=\"34\" x2=\"275.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"275.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">9</text><line x1=\"300.0\" y1=\"34\" x2=\"300.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"300.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">10</text></svg>",
+   "visual_alt": null,
+   "diagnostics": {
+    "0": "When the digits add up to 10 or more, remember to carry the 1 to the next column.",
+    "2": "Make sure you're lining up the ones, tens, and hundreds columns correctly.",
+    "3": "Double-check which numbers the problem is asking you to add together.",
+    "correct_explanation": "The answer is 144. When we add the numbers together (48 + 72), the total is 144."
+   },
+   "tags": [
+    "LCM",
+    "multiples",
+    "divisibility",
+    "grade-5-6"
+   ],
+   "topic": "arithmetic_missing_numbers",
+   "topic_name": "Arithmetic & Missing Numbers",
+   "hint": {
+    "level_0": "Think: what does 'altogether' or 'total' or 'in all' really mean here?",
+    "level_1": "Think about what you're putting together. Could you draw it, use a number line, or break the numbers into tens and ones? Start with 48. Now add 72 to it.  What do you get?",
+    "level_2": "Here's the solution: 48 + 72 = 144. We combined the two amounts to get the total."
+   },
+   "interaction_mode": "mcq",
+   "visual_context": "A visual representation of the problem.",
+   "irt_params": {
+    "a": 1.5,
+    "b": 1.66,
+    "c": 0.15
+   },
+   "irt_a": 1.5,
+   "irt_b": 1.66,
+   "irt_c": 0.15,
+   "solution_steps": [
+    "Identify the numbers: 48, 72",
+    "Determine the operation needed",
+    "Calculate step by step to find the answer"
+   ],
+   "original_stem": "Vanya needs to work out: What is the least common multiple of 48 and 72?",
+   "competency_level": "K",
+   "competency_confidence": 0.545,
+   "competency_name": "Knowing",
+   "story_theme": "The Racing Garage",
+   "story_chapter": 2
+  }
+ },
+ {
+  "file": "grade2/olympiad-topic-3-patterns.json",
+  "id": "T3-0958",
+  "reason": "missing_visual_unanswerable",
+  "question": {
+   "id": "T3-0958",
+   "stem": "Nuha analyzes the cipher for patterns. What comes next?",
+   "choices": [
+    "12",
+    "14",
+    "16",
+    "18"
+   ],
+   "correct_answer": 2,
+   "difficulty_tier": "easy",
+   "difficulty_score": 72,
+   "visual_svg": null,
+   "visual_alt": null,
+   "diagnostics": {
+    "0": "Look at how EACH number changes to get the next one. Is it adding, multiplying, or something else?",
+    "1": "You found the right pattern rule, but applied it incorrectly to find the answer. Try again carefully.",
+    "3": "You found the right pattern, but made a calculation error when finding the next number.",
+    "correct_explanation": "The answer is 16. By finding the rule that connects each term to the next, we can predict what comes next in the sequence."
+   },
+   "tags": [
+    "fibonacci"
+   ],
+   "topic": "patterns_sequences",
+   "topic_name": "Patterns & Sequences",
+   "hint": {
+    "level_0": "Look at consecutive terms. What changes each time? Is it adding, multiplying, or something else?",
+    "level_1": "Write the differences between consecutive terms in the sequence the values given. The sequence is: the values given. Find the rule: what do you do to one term to get the next?",
+    "level_2": "Following the pattern rule with the values given gives this."
+   },
+   "concept_cluster": "fibonacci-like",
+   "interaction_mode": "mcq",
+   "visual_context": null,
+   "irt_params": {
+    "a": 1.22,
+    "b": 1.44,
+    "c": 0.15
+   },
+   "irt_a": 1.22,
+   "irt_b": 1.44,
+   "irt_c": 0.15,
+   "solution_steps": [
+    "Look at how the numbers change each step",
+    "Find the rule connecting consecutive numbers",
+    "Apply the rule to find the missing number"
+   ],
+   "original_stem": "A sequence starts 2,2,4,6,10,... (sum of two before). What comes next?",
+   "competency_level": "K",
+   "competency_confidence": 0.75,
+   "competency_name": "Knowing",
+   "story_theme": "The Code Breakers",
+   "story_chapter": 2
+  }
+ },
+ {
+  "file": "grade4/olympiad-topic-2-arithmetic.json",
+  "id": "T2-1100",
+  "reason": "broken_name_unrepairable",
+  "question": {
+   "id": "T2-1100",
+   "stem": "Veronica computes the numbers for the mountain circuit. Has 8 wheels ready. 12 more arrive. How many wheels are there now?",
+   "choices": [
+    "−2",
+    "10 or −2",
+    "2 or 10",
+    "10"
+   ],
+   "correct_answer": 1,
+   "difficulty_tier": "hard",
+   "difficulty_score": 200,
+   "visual_svg": null,
+   "visual_alt": null,
+   "diagnostics": {
+    "0": "When the digits add up to 10 or more, remember to carry the 1 to the next column.",
+    "2": "Make sure you're lining up the ones, tens, and hundreds columns correctly.",
+    "3": "Double-check which numbers the problem is asking you to add together.",
+    "correct_explanation": "The answer is 10 or −2. When we add the numbers together (8 + 12), the total is 10 or −2."
+   },
+   "tags": [
+    "algebraic-thinking",
+    "equations",
+    "missing-number",
+    "grade-5-6"
+   ],
+   "topic": "arithmetic_missing_numbers",
+   "topic_name": "Arithmetic & Missing Numbers",
+   "hint": {
+    "level_0": "Think: what does 'altogether' or 'total' or 'in all' really mean here?",
+    "level_1": "Think about what you're putting together. Could you draw it, use a number line, or break the numbers into tens and ones? Start with 8. Now add 12 to it.  What do you get?",
+    "level_2": "Here's the solution: 8 + 12 = 10 or −2. We combined the two amounts to get the total."
+   },
+   "interaction_mode": "mcq",
+   "visual_context": "A visual representation of the problem.",
+   "irt_params": {
+    "a": 1.5,
+    "b": 2.48,
+    "c": 0.15
+   },
+   "irt_a": 1.5,
+   "irt_b": 2.48,
+   "irt_c": 0.15,
+   "solution_steps": [
+    "Identify the numbers: 2, 8, 12",
+    "Determine the operation needed",
+    "Calculate step by step to find the answer"
+   ],
+   "original_stem": "Pirate Papaya is practising math: Wizard Wally challenges: Solve: |2x − 8| = 12",
+   "competency_level": "A",
+   "competency_confidence": 0.438,
+   "competency_name": "Applying",
+   "story_theme": "The Racing Garage",
+   "story_chapter": 6
+  }
+ },
+ {
+  "file": "grade5/olympiad-topic-2-arithmetic.json",
+  "id": "T2-1197",
+  "reason": "missing_visual_unanswerable",
+  "question": {
+   "id": "T2-1197",
+   "stem": "At the championship, Ved tackles the final calculation. What is the next term?",
+   "choices": [
+    "35",
+    "29",
+    "38",
+    "32"
+   ],
+   "correct_answer": 0,
+   "difficulty_tier": "olympiad",
+   "difficulty_score": 276,
+   "visual_svg": null,
+   "visual_alt": null,
+   "diagnostics": {
+    "1": "Check the problem again — are you sure you need to subtract? The word 'more' or 'total' usually means addition.",
+    "2": "Make sure you're lining up the ones, tens, and hundreds columns correctly.",
+    "3": "Double-check which numbers the problem is asking you to add together.",
+    "correct_explanation": "The answer is 35. When we add the numbers together (5 + 3 + 5), the total is 35."
+   },
+   "tags": [
+    "word-problems",
+    "multi-step",
+    "arithmetic",
+    "grade-5-6"
+   ],
+   "topic": "arithmetic_missing_numbers",
+   "topic_name": "Arithmetic & Missing Numbers",
+   "hint": {
+    "level_0": "Think: what does 'altogether' or 'total' or 'in all' really mean here?",
+    "level_1": "Think about what you're putting together. Could you draw it, use a number line, or break the numbers into tens and ones? Start with 5. Now add 3 to it. Then add 5. What do you get?",
+    "level_2": "Here's the solution: 5 + 3 + 5 = 35. Add each number one at a time: 5 + 3 = 8, then add 5."
+   },
+   "interaction_mode": "mcq",
+   "visual_context": "A sequence of elements with the missing piece highlighted.",
+   "irt_params": {
+    "a": 1.53,
+    "b": 3.0,
+    "c": 0.15
+   },
+   "irt_a": 1.53,
+   "irt_b": 3.0,
+   "irt_c": 0.15,
+   "solution_steps": [
+    "Start with 5 and count up 3 more",
+    "Use fingers or a number line",
+    "The number you land on is your answer"
+   ],
+   "competency_level": "R",
+   "competency_confidence": 0.562,
+   "competency_name": "Reasoning",
+   "story_theme": "The Racing Garage",
+   "story_chapter": 8
+  }
+ }
+]

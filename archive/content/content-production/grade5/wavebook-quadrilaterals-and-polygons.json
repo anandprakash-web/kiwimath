@@ -1,0 +1,368 @@
+{
+ "topic_id": "wavebook-quadrilaterals-and-polygons",
+ "topic_name": "Wavebook: Quadrilaterals and Polygons",
+ "topic_emoji": "📘",
+ "grade": 5,
+ "domain": "wavebook",
+ "source": "wavebook",
+ "total_questions": 15,
+ "difficulty_range": {
+  "min": 0,
+  "max": 0
+ },
+ "questions": [
+  {
+   "id": "wb_L4_s17_q01",
+   "stem": "A simple closed curve made up of only line segments is called a ______",
+   "interaction_mode": "mcq",
+   "topic": "Quadrilaterals and Polygons",
+   "difficulty_tier": "warmup",
+   "question_number": 1,
+   "choices": [
+    "Circle",
+    "Polygon",
+    "Line segment",
+    "None of them"
+   ],
+   "correct_answer": 1,
+   "grade_band": "5-6",
+   "source": "Wavebook L4 S17",
+   "diagnostics": {},
+   "hint": {
+    "level_0": "Read the question again slowly — what is given, and what is asked?",
+    "level_1": "Recall the key fact or rule for this topic, then test each choice against it.",
+    "level_2": "Eliminate the choices that break the rule; check the one that remains = ?"
+   }
+  },
+  {
+   "id": "wb_L4_s17_q02",
+   "stem": "The sum of the measures of the exterior angles of any polygon is",
+   "interaction_mode": "mcq",
+   "topic": "Quadrilaterals and Polygons",
+   "difficulty_tier": "warmup",
+   "question_number": 2,
+   "choices": [
+    "180°",
+    "360°",
+    "270°",
+    "540°"
+   ],
+   "correct_answer": 1,
+   "grade_band": "5-6",
+   "source": "Wavebook L4 S17",
+   "diagnostics": {},
+   "hint": {
+    "level_0": "What property of the polygon is asked — sides, angles, or a name?",
+    "level_1": "Useful facts: exterior angles of ANY polygon total 360°; a quadrilateral's interior angles total 360°; a triangle's total 180°.",
+    "level_2": "Pick the fact that matches the question and apply it = ?"
+   }
+  },
+  {
+   "id": "wb_L4_s17_q03",
+   "stem": "Find x in the given figure, if it is a regular pentagon",
+   "interaction_mode": "mcq",
+   "topic": "Quadrilaterals and Polygons",
+   "difficulty_tier": "warmup",
+   "question_number": 3,
+   "choices": [
+    "110°",
+    "108°",
+    "105°",
+    "100°"
+   ],
+   "correct_answer": 1,
+   "grade_band": "5-6",
+   "source": "Wavebook L4 S17",
+   "svg": "svg/wb_L4_s17_q03.svg",
+   "diagnostics": {},
+   "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 200\" width=\"300\" height=\"200\" style=\"font-family:Arial,sans-serif\"><polygon points=\"150.0,30.0 216.6,78.4 191.1,156.6 108.9,156.6 83.4,78.4\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2.5\"/></svg>",
+   "hint": {
+    "level_0": "Read the question again slowly — what is given, and what is asked?",
+    "level_1": "Recall the key fact or rule for this topic, then test each choice against it.",
+    "level_2": "Eliminate the choices that break the rule; check the one that remains = ?"
+   }
+  },
+  {
+   "id": "wb_L4_s17_q04",
+   "stem": "One angle of a quadrilateral is 150° and other three angles are equal. What is the measure of each of these equal angles?",
+   "interaction_mode": "mcq",
+   "topic": "Quadrilaterals and Polygons",
+   "difficulty_tier": "warmup",
+   "question_number": 4,
+   "choices": [
+    "75°",
+    "85°",
+    "95°",
+    "70°"
+   ],
+   "correct_answer": 3,
+   "grade_band": "5-6",
+   "source": "Wavebook L4 S17",
+   "diagnostics": {},
+   "hint": {
+    "level_0": "Angle families: acute < 90°, right = 90°, obtuse between 90° and 180°, straight = 180°, reflex > 180°.",
+    "level_1": "Place the angle from the question on that scale.",
+    "level_2": "Which family's range does it fall into? = ?"
+   }
+  },
+  {
+   "id": "wb_L4_s17_q05",
+   "stem": "Which of the following figures are NOT polygons?",
+   "interaction_mode": "mcq",
+   "topic": "Quadrilaterals and Polygons",
+   "difficulty_tier": "warmup",
+   "question_number": 5,
+   "choices": [
+    "(i), (ii) and (v)",
+    "(i), (ii) and (iii)",
+    "(i), (iii), (iv) and (v)",
+    "(i), (ii), (iii) and (iv)"
+   ],
+   "correct_answer": 2,
+   "grade_band": "5-6",
+   "source": "Wavebook L4 S17",
+   "svg": "svg/wb_L4_s17_q05.svg",
+   "diagnostics": {},
+   "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 200\" width=\"300\" height=\"200\" style=\"font-family:Arial,sans-serif\"><polygon points=\"150.0,30.0 210.6,65.0 210.6,135.0 150.0,170.0 89.4,135.0 89.4,65.0\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2.5\"/></svg>",
+   "hint": {
+    "level_0": "What property of the polygon is asked — sides, angles, or a name?",
+    "level_1": "Useful facts: exterior angles of ANY polygon total 360°; a quadrilateral's interior angles total 360°; a triangle's total 180°.",
+    "level_2": "Pick the fact that matches the question and apply it = ?"
+   }
+  },
+  {
+   "id": "wb_L4_s17_q06",
+   "stem": "Five angles of a hexagon are 150°, 95°, 80°, 135° and 125°. Find the sixth angle",
+   "interaction_mode": "mcq",
+   "topic": "Quadrilaterals and Polygons",
+   "difficulty_tier": "practice",
+   "question_number": 6,
+   "choices": [
+    "130°",
+    "135°",
+    "140°",
+    "125°"
+   ],
+   "correct_answer": 1,
+   "grade_band": "5-6",
+   "source": "Wavebook L4 S17",
+   "diagnostics": {},
+   "hint": {
+    "level_0": "Angle families: acute < 90°, right = 90°, obtuse between 90° and 180°, straight = 180°, reflex > 180°.",
+    "level_1": "Place the angle from the question on that scale.",
+    "level_2": "Which family's range does it fall into? = ?"
+   }
+  },
+  {
+   "id": "wb_L4_s17_q07",
+   "stem": "How many diagonals are there in a hexagon?",
+   "interaction_mode": "mcq",
+   "topic": "Quadrilaterals and Polygons",
+   "difficulty_tier": "practice",
+   "question_number": 7,
+   "choices": [
+    "6",
+    "8",
+    "9",
+    "12"
+   ],
+   "correct_answer": 2,
+   "grade_band": "5-6",
+   "source": "Wavebook L4 S17",
+   "diagnostics": {},
+   "hint": {
+    "level_0": "Read the question again slowly — what is given, and what is asked?",
+    "level_1": "Recall the key fact or rule for this topic, then test each choice against it.",
+    "level_2": "Eliminate the choices that break the rule; check the one that remains = ?"
+   }
+  },
+  {
+   "id": "wb_L4_s17_q08",
+   "stem": "Find the measure of each interior angle of a regular hexagon",
+   "interaction_mode": "mcq",
+   "topic": "Quadrilaterals and Polygons",
+   "difficulty_tier": "practice",
+   "question_number": 8,
+   "choices": [
+    "100°",
+    "110°",
+    "120°",
+    "130°"
+   ],
+   "correct_answer": 2,
+   "grade_band": "5-6",
+   "source": "Wavebook L4 S17",
+   "diagnostics": {},
+   "hint": {
+    "level_0": "Read the question again slowly — what is given, and what is asked?",
+    "level_1": "Recall the key fact or rule for this topic, then test each choice against it.",
+    "level_2": "Eliminate the choices that break the rule; check the one that remains = ?"
+   }
+  },
+  {
+   "id": "wb_L4_s17_q09",
+   "stem": "One angle of a parallelogram is 60°. Find its opposite angle and the adjacent angle",
+   "interaction_mode": "mcq",
+   "topic": "Quadrilaterals and Polygons",
+   "difficulty_tier": "practice",
+   "question_number": 9,
+   "choices": [
+    "60° and 120°",
+    "60° and 130°",
+    "120° and 60°",
+    "120° and 120°"
+   ],
+   "correct_answer": 0,
+   "grade_band": "5-6",
+   "source": "Wavebook L4 S17",
+   "diagnostics": {},
+   "hint": {
+    "level_0": "Angle families: acute < 90°, right = 90°, obtuse between 90° and 180°, straight = 180°, reflex > 180°.",
+    "level_1": "Place the angle from the question on that scale.",
+    "level_2": "Which family's range does it fall into? = ?"
+   }
+  },
+  {
+   "id": "wb_L4_s17_q10",
+   "stem": "ABCD is a trapezium with AB || DC. If ∠A = 50°, find ∠D",
+   "interaction_mode": "mcq",
+   "topic": "Quadrilaterals and Polygons",
+   "difficulty_tier": "practice",
+   "question_number": 10,
+   "choices": [
+    "50°",
+    "100°",
+    "130°",
+    "150°"
+   ],
+   "correct_answer": 2,
+   "grade_band": "5-6",
+   "source": "Wavebook L4 S17",
+   "svg": "svg/wb_L4_s17_q10.svg",
+   "diagnostics": {},
+   "hint": {
+    "level_0": "What is known (50) and what exactly is asked? Say it in your own words.",
+    "level_1": "Choose the operation the story needs (add, subtract, multiply, divide) and set it up with 50.",
+    "level_2": "Write the calculation out and solve it step by step: ... = ?"
+   }
+  },
+  {
+   "id": "wb_L4_s17_q11",
+   "stem": "In the given figure, ABCD is a rectangle and its diagonals meet at O. Find x, if OA = (2x + 4) and OD = (3x + 1). Also find BD",
+   "interaction_mode": "mcq",
+   "topic": "Quadrilaterals and Polygons",
+   "difficulty_tier": "challenge",
+   "question_number": 11,
+   "choices": [
+    "x = 3, BD = 20",
+    "x = 5, BD = 32",
+    "x = 4, BD = 26",
+    "x = 2, BD = 14"
+   ],
+   "correct_answer": 0,
+   "grade_band": "5-6",
+   "source": "Wavebook L4 S17",
+   "svg": "svg/wb_L4_s17_q11.svg",
+   "diagnostics": {},
+   "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 180\" width=\"300\" height=\"180\" style=\"font-family:Arial,sans-serif\"><rect x=\"50\" y=\"30\" width=\"200\" height=\"120\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2.5\" rx=\"2\"/></svg>",
+   "hint": {
+    "level_0": "What is known (2, 4, 3, 1) and what exactly is asked? Say it in your own words.",
+    "level_1": "Choose the operation the story needs (add, subtract, multiply, divide) and set it up with 2, 4, 3.",
+    "level_2": "Write the calculation out and solve it step by step: ... = ?"
+   }
+  },
+  {
+   "id": "wb_L4_s17_q12",
+   "stem": "Two adjacent angles of a parallelogram are (3x – 4)° and (3x + 10)°. Find the angles of the parallelogram",
+   "interaction_mode": "mcq",
+   "topic": "Quadrilaterals and Polygons",
+   "difficulty_tier": "challenge",
+   "question_number": 12,
+   "choices": [
+    "83° and 97°",
+    "80° and 100°",
+    "85° and 95°",
+    "75° and 105°"
+   ],
+   "correct_answer": 0,
+   "grade_band": "5-6",
+   "source": "Wavebook L4 S17",
+   "diagnostics": {},
+   "hint": {
+    "level_0": "Angle families: acute < 90°, right = 90°, obtuse between 90° and 180°, straight = 180°, reflex > 180°.",
+    "level_1": "Place the angle from the question on that scale.",
+    "level_2": "Which family's range does it fall into? = ?"
+   }
+  },
+  {
+   "id": "wb_L4_s17_q13",
+   "stem": "Three angles of a quadrilateral are in the ratio 4: 6: 3. If the fourth angle is 100°, find the three angles of the quadrilateral",
+   "interaction_mode": "mcq",
+   "topic": "Quadrilaterals and Polygons",
+   "difficulty_tier": "challenge",
+   "question_number": 13,
+   "choices": [
+    "80°, 120°, 60°",
+    "60°, 90°, 45°",
+    "100°, 150°, 75°",
+    "40°, 60°, 30°"
+   ],
+   "correct_answer": 0,
+   "grade_band": "5-6",
+   "source": "Wavebook L4 S17",
+   "diagnostics": {},
+   "hint": {
+    "level_0": "The ratio is 4 : 6. An equivalent ratio multiplies (or divides) BOTH parts by the same number.",
+    "level_1": "Try a multiplier: 4 × k and 6 × k. Which choice keeps the two parts in that exact relationship?",
+    "level_2": "Check each choice: divide its two parts — do you get back to 4 : 6? = ?"
+   }
+  },
+  {
+   "id": "wb_L4_s17_q14",
+   "stem": "Classify the following into open and closed curves",
+   "interaction_mode": "mcq",
+   "topic": "Quadrilaterals and Polygons",
+   "difficulty_tier": "challenge",
+   "question_number": 14,
+   "choices": [
+    "Open – (b, p, r), Closed – (a, c, q)",
+    "Open – (b, q, c), Closed – (a, p, r)",
+    "Open – (p, q, a), Closed – (r, c, b)",
+    "Open – (r, b, a), Closed – (p, q, c)"
+   ],
+   "correct_answer": 0,
+   "grade_band": "5-6",
+   "source": "Wavebook L4 S17",
+   "svg": "svg/wb_L4_s17_q14.svg",
+   "diagnostics": {},
+   "hint": {
+    "level_0": "Read the question again slowly — what is given, and what is asked?",
+    "level_1": "Recall the key fact or rule for this topic, then test each choice against it.",
+    "level_2": "Eliminate the choices that break the rule; check the one that remains = ?"
+   }
+  },
+  {
+   "id": "wb_L4_s17_q15",
+   "stem": "Two adjacent sides AB and BC of a parallelogram ABCD are in the ratio 5: 3. If the perimeter is 200 cm, what is the length of AB and BC?",
+   "interaction_mode": "mcq",
+   "topic": "Quadrilaterals and Polygons",
+   "difficulty_tier": "challenge",
+   "question_number": 15,
+   "choices": [
+    "25 cm & 50 cm",
+    "40 cm & 37.5 cm",
+    "62.5 cm & 37.5 cm",
+    "60 cm & 62.5 cm"
+   ],
+   "correct_answer": 2,
+   "grade_band": "5-6",
+   "source": "Wavebook L4 S17",
+   "diagnostics": {},
+   "hint": {
+    "level_0": "Perimeter means the total distance around the outside of the shape. Which side lengths do you know?",
+    "level_1": "Walk around the shape edge by edge and add every side length once. The numbers given are: 5, 3, 200.",
+    "level_2": "Add ALL the side lengths together: side + side + ... = ?"
+   }
+  }
+ ]
+}

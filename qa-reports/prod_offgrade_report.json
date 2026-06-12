@@ -1,0 +1,134 @@
+[
+ {
+  "file": "grade1/g1-addition.json",
+  "id": "A1-ADD-0257",
+  "issue": "multiplication 27x11 beyond G1 scope",
+  "stem": "A garden has 27 rows of plants with 11 plants in each row. How many plants in all?"
+ },
+ {
+  "file": "grade1/g1-addition.json",
+  "id": "A1-ADD-0355",
+  "issue": "multiplication 14x12 beyond G1 scope",
+  "stem": "find: 14 × 12 =?"
+ },
+ {
+  "file": "grade1/g1-addition.json",
+  "id": "A1-ADD-0295",
+  "issue": "speed/rate problem in Grade 1",
+  "stem": "A car travels 20 km per hour. How far does it go in 24 hours?"
+ },
+ {
+  "file": "grade1/g1-addition.json",
+  "id": "A1-ADD-0308",
+  "issue": "multiplication 30x19 beyond G1 scope",
+  "stem": "find: 30 × 19 =?"
+ },
+ {
+  "file": "grade1/g1-addition.json",
+  "id": "A1-ADD-0328",
+  "issue": "multiplication 11x15 beyond G1 scope",
+  "stem": "find: 11 × 15 =?"
+ },
+ {
+  "file": "grade1/g1-addition.json",
+  "id": "A1-ADD-0290",
+  "issue": "multiplication 29x19 beyond G1 scope",
+  "stem": "find: 29 × 19 =?"
+ },
+ {
+  "file": "grade1/g1-addition.json",
+  "id": "A1-ADD-0358",
+  "issue": "speed/rate problem in Grade 1",
+  "stem": "A car travels 19 km per hour. How far does it go in 12 hours?"
+ },
+ {
+  "file": "grade1/g1-addition.json",
+  "id": "A1-ADD-0387",
+  "issue": "speed/rate problem in Grade 1",
+  "stem": "A car travels 14 km per hour. How far does it go in 5 hours?"
+ },
+ {
+  "file": "grade1/g1-addition.json",
+  "id": "A1-ADD-0366",
+  "issue": "multiplication 9x9 beyond G1 scope",
+  "stem": "A garden has 9 rows of plants with 9 plants in each row. How many plants in all?"
+ },
+ {
+  "file": "grade1/g1-addition.json",
+  "id": "A1-ADD-0420",
+  "issue": "multiplication 17x12 beyond G1 scope",
+  "stem": "find: 17 × 12 =?"
+ },
+ {
+  "file": "grade1/g1-addition.json",
+  "id": "A1-ADD-0493",
+  "issue": "multiplication 4x11 beyond G1 scope",
+  "stem": "find: 4 × 11 =?"
+ },
+ {
+  "file": "grade1/g1-addition.json",
+  "id": "A1-ADD-0465",
+  "issue": "speed/rate problem in Grade 1",
+  "stem": "A car travels 12 km per hour. How far does it go in 7 hours?"
+ },
+ {
+  "file": "grade1/g1-addition.json",
+  "id": "A1-ADD-0477",
+  "issue": "multiplication 14x19 beyond G1 scope",
+  "stem": "find: 14 × 19 =?"
+ },
+ {
+  "file": "grade1/g1-addition.json",
+  "id": "A1-ADD-0548",
+  "issue": "multiplication 30x6 beyond G1 scope",
+  "stem": "find: 30 × 6 =?"
+ },
+ {
+  "file": "grade1/g1-addition.json",
+  "id": "A1-ADD-0514",
+  "issue": "multiplication 14x6 beyond G1 scope",
+  "stem": "find: 14 × 6 =?"
+ },
+ {
+  "file": "grade1/g1-addition.json",
+  "id": "A1-ADD-0515",
+  "issue": "multiplication 11x20 beyond G1 scope",
+  "stem": "A garden has 11 rows of plants with 20 plants in each row. How many plants in all?"
+ },
+ {
+  "file": "grade1/g1-addition.json",
+  "id": "A1-ADD-0495",
+  "issue": "multiplication 25x15 beyond G1 scope",
+  "stem": "find: 25 × 15 =?"
+ },
+ {
+  "file": "grade1/g1-addition.json",
+  "id": "A1-ADD-0473",
+  "issue": "multiplication 19x2 beyond G1 scope",
+  "stem": "find: 19 × 2 =?"
+ },
+ {
+  "file": "grade1/olympiad-topic-2-arithmetic.json",
+  "id": "T2-907",
+  "issue": "multiplication 7x8 beyond G1 scope",
+  "stem": "In the racing garage, Ved works on the numbers. Evaluate: (7 × 8 - 6) ÷ (2 + 3)"
+ },
+ {
+  "file": "grade1/olympiad-topic-2-arithmetic.json",
+  "id": "T2-909",
+  "issue": "multiplication 6x9 beyond G1 scope",
+  "stem": "In the racing garage, Google works on the numbers. Evaluate: (6 × 9) - [(4 + 8) ÷ 3]"
+ },
+ {
+  "file": "grade1/olympiad-topic-7-word-problems.json",
+  "id": "T7-0907",
+  "issue": "multiplication 4x9 beyond G1 scope",
+  "stem": "On the world tour, Ved runs the numbers. There are 4 rows of chairs with 9 chairs in each row. How many chairs are there"
+ },
+ {
+  "file": "grade1/olympiad-topic-7-word-problems.json",
+  "id": "T7-0901",
+  "issue": "speed/rate problem in Grade 1",
+  "stem": "On the world tour, Kiwi runs the numbers. A train travels at 60 km/h for 2 hours, then at 80 km/h for 1.5 hours. What is"
+ }
+]

@@ -1,0 +1,371 @@
+{
+ "topic_id": "wavebook-mirror-images-and-relationships",
+ "topic_name": "Wavebook: Mirror Images and Relationships",
+ "topic_emoji": "📘",
+ "grade": 5,
+ "domain": "wavebook",
+ "source": "wavebook",
+ "total_questions": 15,
+ "difficulty_range": {
+  "min": 0,
+  "max": 0
+ },
+ "questions": [
+  {
+   "id": "wb_L4_s29_q01",
+   "stem": "The mirror image of the word 'AMBULANCE' as seen in a rear-view mirror reads as:",
+   "interaction_mode": "mcq",
+   "topic": "Mirror Images and Relationships",
+   "difficulty_tier": "warmup",
+   "question_number": 1,
+   "choices": [
+    "ECNALUBMA",
+    "AMBULANCE reversed",
+    "AMBULANCE (correctly)",
+    "ECNALUBM"
+   ],
+   "correct_answer": 2,
+   "grade_band": "5-6",
+   "source": "Wavebook L4 S29",
+   "svg": "wb_L4_s29_q01.svg",
+   "diagnostics": {},
+   "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 210\" width=\"300\" height=\"210\" style=\"font-family:Arial,sans-serif\"><line x1=\"150\" y1=\"10\" x2=\"150\" y2=\"190\" stroke=\"#E57373\" stroke-width=\"2\" stroke-dasharray=\"6,4\"/><path d=\"M150,60 Q100,30 80,80 Q70,130 150,140 Q230,130 220,80 Q200,30 150,60Z\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2\"/><text x=\"150\" y=\"195\" text-anchor=\"middle\" font-size=\"11\" fill=\"#E57373\">Line of Symmetry</text></svg>",
+   "hint": {
+    "level_0": "A mirror flips things LEFT-RIGHT (a rear-view mirror too).",
+    "level_1": "Imagine the object pressed against the mirror — the left side appears on the right.",
+    "level_2": "Flip the figure/word/number left-to-right in your head (or on paper) — what do you see? = ?"
+   }
+  },
+  {
+   "id": "wb_L4_s29_q02",
+   "stem": "What is the mirror image of the time 3:15 as seen in a mirror?",
+   "interaction_mode": "mcq",
+   "topic": "Mirror Images and Relationships",
+   "difficulty_tier": "warmup",
+   "question_number": 2,
+   "choices": [
+    "9:45",
+    "8:45",
+    "3:15",
+    "12:45"
+   ],
+   "correct_answer": 1,
+   "grade_band": "5-6",
+   "source": "Wavebook L4 S29",
+   "svg": "wb_L4_s29_q02.svg",
+   "diagnostics": {},
+   "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 210\" width=\"300\" height=\"210\" style=\"font-family:Arial,sans-serif\"><line x1=\"150\" y1=\"10\" x2=\"150\" y2=\"190\" stroke=\"#E57373\" stroke-width=\"2\" stroke-dasharray=\"6,4\"/><path d=\"M150,60 Q100,30 80,80 Q70,130 150,140 Q230,130 220,80 Q200,30 150,60Z\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2\"/><text x=\"150\" y=\"195\" text-anchor=\"middle\" font-size=\"11\" fill=\"#E57373\">Line of Symmetry</text></svg>",
+   "hint": {
+    "level_0": "A mirror swaps left and right. Where would the hands of 3:15 appear in the mirror?",
+    "level_1": "Mirror-time trick: subtract the time from 12:00 (use 11:60 if you need to borrow minutes).",
+    "level_2": "11:60 − 3:15 = ?"
+   }
+  },
+  {
+   "id": "wb_L4_s29_q03",
+   "stem": "If you face a mirror, your right hand appears to be on:",
+   "interaction_mode": "mcq",
+   "topic": "Mirror Images and Relationships",
+   "difficulty_tier": "warmup",
+   "question_number": 3,
+   "choices": [
+    "Your left side in the mirror",
+    "Your right side in the mirror",
+    "Above your head",
+    "Behind you"
+   ],
+   "correct_answer": 0,
+   "grade_band": "5-6",
+   "source": "Wavebook L4 S29",
+   "svg": "wb_L4_s29_q03.svg",
+   "diagnostics": {},
+   "hint": {
+    "level_0": "A mirror flips things LEFT-RIGHT (a rear-view mirror too).",
+    "level_1": "Imagine the object pressed against the mirror — the left side appears on the right.",
+    "level_2": "Flip the figure/word/number left-to-right in your head (or on paper) — what do you see? = ?"
+   }
+  },
+  {
+   "id": "wb_L4_s29_q04",
+   "stem": "The mirror image of the digit 5 looks like:",
+   "interaction_mode": "mcq",
+   "topic": "Mirror Images and Relationships",
+   "difficulty_tier": "warmup",
+   "question_number": 4,
+   "choices": [
+    "2",
+    "5",
+    "S",
+    "A reversed 5"
+   ],
+   "correct_answer": 3,
+   "grade_band": "5-6",
+   "source": "Wavebook L4 S29",
+   "svg": "svg/wb_L4_s29_q04.svg",
+   "diagnostics": {},
+   "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 210\" width=\"300\" height=\"210\" style=\"font-family:Arial,sans-serif\"><line x1=\"150\" y1=\"10\" x2=\"150\" y2=\"190\" stroke=\"#E57373\" stroke-width=\"2\" stroke-dasharray=\"6,4\"/><path d=\"M150,60 Q100,30 80,80 Q70,130 150,140 Q230,130 220,80 Q200,30 150,60Z\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2\"/><text x=\"150\" y=\"195\" text-anchor=\"middle\" font-size=\"11\" fill=\"#E57373\">Line of Symmetry</text></svg>",
+   "hint": {
+    "level_0": "A mirror flips things LEFT-RIGHT (a rear-view mirror too).",
+    "level_1": "Imagine the object pressed against the mirror — the left side appears on the right.",
+    "level_2": "Flip the figure/word/number left-to-right in your head (or on paper) — what do you see? = ?"
+   }
+  },
+  {
+   "id": "wb_L4_s29_q05",
+   "stem": "Doctor: Patient:: Lawyer:?",
+   "interaction_mode": "mcq",
+   "topic": "Mirror Images and Relationships",
+   "difficulty_tier": "warmup",
+   "question_number": 5,
+   "choices": [
+    "Judge",
+    "Court",
+    "Crime",
+    "Client"
+   ],
+   "correct_answer": 3,
+   "grade_band": "5-6",
+   "source": "Wavebook L4 S29",
+   "diagnostics": {},
+   "hint": {
+    "level_0": "Read the question again slowly — what is given, and what is asked?",
+    "level_1": "Recall the key fact or rule for this topic, then test each choice against it.",
+    "level_2": "Eliminate the choices that break the rule; check the one that remains = ?"
+   }
+  },
+  {
+   "id": "wb_L4_s29_q06",
+   "stem": "Pen: Writer:: Brush:?",
+   "interaction_mode": "mcq",
+   "topic": "Mirror Images and Relationships",
+   "difficulty_tier": "practice",
+   "question_number": 6,
+   "choices": [
+    "Teacher",
+    "Canvas",
+    "Painter",
+    "Color"
+   ],
+   "correct_answer": 2,
+   "grade_band": "5-6",
+   "source": "Wavebook L4 S29",
+   "diagnostics": {},
+   "hint": {
+    "level_0": "Read the question again slowly — what is given, and what is asked?",
+    "level_1": "Recall the key fact or rule for this topic, then test each choice against it.",
+    "level_2": "Eliminate the choices that break the rule; check the one that remains = ?"
+   }
+  },
+  {
+   "id": "wb_L4_s29_q07",
+   "stem": "Eye: See:: Ear:?",
+   "interaction_mode": "mcq",
+   "topic": "Mirror Images and Relationships",
+   "difficulty_tier": "practice",
+   "question_number": 7,
+   "choices": [
+    "Nose",
+    "Hear",
+    "Sound",
+    "Music"
+   ],
+   "correct_answer": 1,
+   "grade_band": "5-6",
+   "source": "Wavebook L4 S29",
+   "diagnostics": {},
+   "hint": {
+    "level_0": "Read the question again slowly — what is given, and what is asked?",
+    "level_1": "Recall the key fact or rule for this topic, then test each choice against it.",
+    "level_2": "Eliminate the choices that break the rule; check the one that remains = ?"
+   }
+  },
+  {
+   "id": "wb_L4_s29_q08",
+   "stem": "Cow: Calf:: Horse:?",
+   "interaction_mode": "mcq",
+   "topic": "Mirror Images and Relationships",
+   "difficulty_tier": "practice",
+   "question_number": 8,
+   "choices": [
+    "Puppy",
+    "Foal",
+    "Kitten",
+    "Cub"
+   ],
+   "correct_answer": 1,
+   "grade_band": "5-6",
+   "source": "Wavebook L4 S29",
+   "diagnostics": {},
+   "hint": {
+    "level_0": "Read the question again slowly — what is given, and what is asked?",
+    "level_1": "Recall the key fact or rule for this topic, then test each choice against it.",
+    "level_2": "Eliminate the choices that break the rule; check the one that remains = ?"
+   }
+  },
+  {
+   "id": "wb_L4_s29_q09",
+   "stem": "Fish: Water:: Bird:?",
+   "interaction_mode": "mcq",
+   "topic": "Mirror Images and Relationships",
+   "difficulty_tier": "practice",
+   "question_number": 9,
+   "choices": [
+    "Sky",
+    "Nest",
+    "Tree",
+    "Wings"
+   ],
+   "correct_answer": 0,
+   "grade_band": "5-6",
+   "source": "Wavebook L4 S29",
+   "diagnostics": {},
+   "hint": {
+    "level_0": "Read the question again slowly — what is given, and what is asked?",
+    "level_1": "Recall the key fact or rule for this topic, then test each choice against it.",
+    "level_2": "Eliminate the choices that break the rule; check the one that remains = ?"
+   }
+  },
+  {
+   "id": "wb_L4_s29_q10",
+   "stem": "If the clock shows 2:30 and you see it in a mirror, what time does the mirror show?",
+   "interaction_mode": "mcq",
+   "topic": "Mirror Images and Relationships",
+   "difficulty_tier": "practice",
+   "question_number": 10,
+   "choices": [
+    "8:30",
+    "10:30",
+    "9:30",
+    "7:30"
+   ],
+   "correct_answer": 2,
+   "grade_band": "5-6",
+   "source": "Wavebook L4 S29",
+   "svg": "wb_L4_s29_q10.svg",
+   "diagnostics": {},
+   "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 200 200\" width=\"200\" height=\"200\" style=\"font-family:Arial,sans-serif\"><circle cx=\"100\" cy=\"100\" r=\"80\" fill=\"white\" stroke=\"#333\" stroke-width=\"3\"/><line x1=\"100.0\" y1=\"30.0\" x2=\"100.0\" y2=\"22.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"100.0\" y=\"42.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">12</text><line x1=\"135.0\" y1=\"39.4\" x2=\"139.0\" y2=\"32.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"129.0\" y=\"49.8\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">1</text><line x1=\"160.6\" y1=\"65.0\" x2=\"167.5\" y2=\"61.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"150.2\" y=\"71.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">2</text><line x1=\"170.0\" y1=\"100.0\" x2=\"178.0\" y2=\"100.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"158.0\" y=\"100.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">3</text><line x1=\"160.6\" y1=\"135.0\" x2=\"167.5\" y2=\"139.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"150.2\" y=\"129.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">4</text><line x1=\"135.0\" y1=\"160.6\" x2=\"139.0\" y2=\"167.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"129.0\" y=\"150.2\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">5</text><line x1=\"100.0\" y1=\"170.0\" x2=\"100.0\" y2=\"178.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"100.0\" y=\"158.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">6</text><line x1=\"65.0\" y1=\"160.6\" x2=\"61.0\" y2=\"167.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"71.0\" y=\"150.2\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">7</text><line x1=\"39.4\" y1=\"135.0\" x2=\"32.5\" y2=\"139.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"49.8\" y=\"129.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">8</text><line x1=\"30.0\" y1=\"100.0\" x2=\"22.0\" y2=\"100.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"42.0\" y=\"100.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">9</text><line x1=\"39.4\" y1=\"65.0\" x2=\"32.5\" y2=\"61.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"49.8\" y=\"71.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">10</text><line x1=\"65.0\" y1=\"39.4\" x2=\"61.0\" y2=\"32.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"71.0\" y=\"49.8\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">11</text><line x1=\"100\" y1=\"100\" x2=\"143.5\" y2=\"88.4\" stroke=\"#333\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"100\" y1=\"100\" x2=\"100.0\" y2=\"165.0\" stroke=\"#555\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><circle cx=\"100\" cy=\"100\" r=\"4\" fill=\"#333\"/></svg>",
+   "hint": {
+    "level_0": "A mirror swaps left and right. Where would the hands of 2:30 appear in the mirror?",
+    "level_1": "Mirror-time trick: subtract the time from 12:00 (use 11:60 if you need to borrow minutes).",
+    "level_2": "11:60 − 2:30 = ?"
+   }
+  },
+  {
+   "id": "wb_L4_s29_q11",
+   "stem": "School: Teacher:: Hospital:?",
+   "interaction_mode": "mcq",
+   "topic": "Mirror Images and Relationships",
+   "difficulty_tier": "challenge",
+   "question_number": 11,
+   "choices": [
+    "Patient",
+    "Medicine",
+    "Nurse",
+    "Doctor"
+   ],
+   "correct_answer": 3,
+   "grade_band": "5-6",
+   "source": "Wavebook L4 S29",
+   "diagnostics": {},
+   "hint": {
+    "level_0": "Read the question again slowly — what is given, and what is asked?",
+    "level_1": "Recall the key fact or rule for this topic, then test each choice against it.",
+    "level_2": "Eliminate the choices that break the rule; check the one that remains = ?"
+   }
+  },
+  {
+   "id": "wb_L4_s29_q12",
+   "stem": "Sun: Day:: Moon:?",
+   "interaction_mode": "mcq",
+   "topic": "Mirror Images and Relationships",
+   "difficulty_tier": "challenge",
+   "question_number": 12,
+   "choices": [
+    "Night",
+    "Star",
+    "Light",
+    "Sky"
+   ],
+   "correct_answer": 0,
+   "grade_band": "5-6",
+   "source": "Wavebook L4 S29",
+   "diagnostics": {},
+   "hint": {
+    "level_0": "Read the question again slowly — what is given, and what is asked?",
+    "level_1": "Recall the key fact or rule for this topic, then test each choice against it.",
+    "level_2": "Eliminate the choices that break the rule; check the one that remains = ?"
+   }
+  },
+  {
+   "id": "wb_L4_s29_q13",
+   "stem": "Pencil: Write:: Knife:?",
+   "interaction_mode": "mcq",
+   "topic": "Mirror Images and Relationships",
+   "difficulty_tier": "challenge",
+   "question_number": 13,
+   "choices": [
+    "Sharp",
+    "Blade",
+    "Cut",
+    "Steel"
+   ],
+   "correct_answer": 2,
+   "grade_band": "5-6",
+   "source": "Wavebook L4 S29",
+   "diagnostics": {},
+   "hint": {
+    "level_0": "Read the question again slowly — what is given, and what is asked?",
+    "level_1": "Recall the key fact or rule for this topic, then test each choice against it.",
+    "level_2": "Eliminate the choices that break the rule; check the one that remains = ?"
+   }
+  },
+  {
+   "id": "wb_L4_s29_q14",
+   "stem": "Milk: White:: Blood:?",
+   "interaction_mode": "mcq",
+   "topic": "Mirror Images and Relationships",
+   "difficulty_tier": "challenge",
+   "question_number": 14,
+   "choices": [
+    "Red",
+    "Blue",
+    "Green",
+    "Brown"
+   ],
+   "correct_answer": 0,
+   "grade_band": "5-6",
+   "source": "Wavebook L4 S29",
+   "diagnostics": {},
+   "hint": {
+    "level_0": "Read the question again slowly — what is given, and what is asked?",
+    "level_1": "Recall the key fact or rule for this topic, then test each choice against it.",
+    "level_2": "Eliminate the choices that break the rule; check the one that remains = ?"
+   }
+  },
+  {
+   "id": "wb_L4_s29_q15",
+   "stem": "If the mirror image of a clock shows 4:20, what is the actual time?",
+   "interaction_mode": "mcq",
+   "topic": "Mirror Images and Relationships",
+   "difficulty_tier": "challenge",
+   "question_number": 15,
+   "choices": [
+    "7:20",
+    "8:40",
+    "7:40",
+    "8:20"
+   ],
+   "correct_answer": 2,
+   "grade_band": "5-6",
+   "source": "Wavebook L4 S29",
+   "svg": "wb_L4_s29_q15.svg",
+   "diagnostics": {},
+   "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 200 200\" width=\"200\" height=\"200\" style=\"font-family:Arial,sans-serif\"><circle cx=\"100\" cy=\"100\" r=\"80\" fill=\"white\" stroke=\"#333\" stroke-width=\"3\"/><line x1=\"100.0\" y1=\"30.0\" x2=\"100.0\" y2=\"22.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"100.0\" y=\"42.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">12</text><line x1=\"135.0\" y1=\"39.4\" x2=\"139.0\" y2=\"32.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"129.0\" y=\"49.8\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">1</text><line x1=\"160.6\" y1=\"65.0\" x2=\"167.5\" y2=\"61.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"150.2\" y=\"71.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">2</text><line x1=\"170.0\" y1=\"100.0\" x2=\"178.0\" y2=\"100.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"158.0\" y=\"100.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">3</text><line x1=\"160.6\" y1=\"135.0\" x2=\"167.5\" y2=\"139.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"150.2\" y=\"129.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">4</text><line x1=\"135.0\" y1=\"160.6\" x2=\"139.0\" y2=\"167.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"129.0\" y=\"150.2\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">5</text><line x1=\"100.0\" y1=\"170.0\" x2=\"100.0\" y2=\"178.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"100.0\" y=\"158.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">6</text><line x1=\"65.0\" y1=\"160.6\" x2=\"61.0\" y2=\"167.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"71.0\" y=\"150.2\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">7</text><line x1=\"39.4\" y1=\"135.0\" x2=\"32.5\" y2=\"139.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"49.8\" y=\"129.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">8</text><line x1=\"30.0\" y1=\"100.0\" x2=\"22.0\" y2=\"100.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"42.0\" y=\"100.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">9</text><line x1=\"39.4\" y1=\"65.0\" x2=\"32.5\" y2=\"61.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"49.8\" y=\"71.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">10</text><line x1=\"65.0\" y1=\"39.4\" x2=\"61.0\" y2=\"32.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"71.0\" y=\"49.8\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">11</text><line x1=\"100\" y1=\"100\" x2=\"134.5\" y2=\"128.9\" stroke=\"#333\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"100\" y1=\"100\" x2=\"156.3\" y2=\"132.5\" stroke=\"#555\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><circle cx=\"100\" cy=\"100\" r=\"4\" fill=\"#333\"/></svg>",
+   "hint": {
+    "level_0": "A mirror swaps left and right. Where would the hands of 4:20 appear in the mirror?",
+    "level_1": "Mirror-time trick: subtract the time from 12:00 (use 11:60 if you need to borrow minutes).",
+    "level_2": "11:60 − 4:20 = ?"
+   }
+  }
+ ]
+}

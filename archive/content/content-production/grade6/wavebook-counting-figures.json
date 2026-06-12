@@ -1,0 +1,340 @@
+{
+  "topic_id": "wavebook-counting-figures",
+  "topic_name": "Wavebook: Counting Figures",
+  "topic_emoji": "\ud83d\udcd8",
+  "grade": 6,
+  "domain": "wavebook",
+  "source": "wavebook",
+  "total_questions": 13,
+  "difficulty_range": {
+    "min": 0,
+    "max": 0
+  },
+  "questions": [
+    {
+      "id": "wb_L4_s26_q01",
+      "stem": "How many triangles are there in the given figure?",
+      "interaction_mode": "mcq",
+      "topic": "Counting Figures",
+      "difficulty_tier": "warmup",
+      "question_number": 1,
+      "choices": [
+        "8",
+        "10",
+        "12",
+        "13"
+      ],
+      "correct_answer": 3,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S26",
+      "svg": "svg/wb_L4_s26_q01.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 200\" width=\"300\" height=\"200\" style=\"font-family:Arial,sans-serif\"><polygon points=\"150,20 50,170 250,170\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2.5\"/></svg>",
+      "hint": {
+        "level_0": "Don't count at random \u2014 you'll miss some. What sizes of shapes could be hiding in the figure?",
+        "level_1": "Count by size: first all the smallest ones, then the ones made of 2 pieces, then bigger combinations.",
+        "level_2": "Add up your counts: smallest + medium + largest = ?"
+      }
+    },
+    {
+      "id": "wb_L4_s26_q02",
+      "stem": "Count the number of squares in the given figure.",
+      "interaction_mode": "mcq",
+      "topic": "Counting Figures",
+      "difficulty_tier": "warmup",
+      "question_number": 2,
+      "choices": [
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "correct_answer": 3,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S26",
+      "svg": "svg/wb_L4_s26_q02.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 180\" width=\"300\" height=\"180\" style=\"font-family:Arial,sans-serif\"><rect x=\"50\" y=\"30\" width=\"200\" height=\"120\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2.5\" rx=\"2\"/></svg>",
+      "hint": {
+        "level_0": "Don't count at random \u2014 you'll miss some. What sizes of shapes could be hiding in the figure?",
+        "level_1": "Count by size: first all the smallest ones, then the ones made of 2 pieces, then bigger combinations.",
+        "level_2": "Add up your counts: smallest + medium + largest = ?"
+      }
+    },
+    {
+      "id": "wb_L4_s26_q03",
+      "stem": "How many rectangles are there in the given figure?",
+      "interaction_mode": "mcq",
+      "topic": "Counting Figures",
+      "difficulty_tier": "warmup",
+      "question_number": 3,
+      "choices": [
+        "12",
+        "10",
+        "8",
+        "6"
+      ],
+      "correct_answer": 0,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S26",
+      "svg": "svg/wb_L4_s26_q03.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 180\" width=\"300\" height=\"180\" style=\"font-family:Arial,sans-serif\"><rect x=\"50\" y=\"30\" width=\"200\" height=\"120\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2.5\" rx=\"2\"/></svg>",
+      "hint": {
+        "level_0": "Don't count at random \u2014 you'll miss some. What sizes of shapes could be hiding in the figure?",
+        "level_1": "Count by size: first all the smallest ones, then the ones made of 2 pieces, then bigger combinations.",
+        "level_2": "Add up your counts: smallest + medium + largest = ?"
+      }
+    },
+    {
+      "id": "wb_L4_s26_q04",
+      "stem": "Count the number of triangles in the given figure.",
+      "interaction_mode": "mcq",
+      "topic": "Counting Figures",
+      "difficulty_tier": "warmup",
+      "question_number": 4,
+      "choices": [
+        "6",
+        "8",
+        "10",
+        "12"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S26",
+      "svg": "svg/wb_L4_s26_q04.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 200\" width=\"300\" height=\"200\" style=\"font-family:Arial,sans-serif\"><polygon points=\"150,20 50,170 250,170\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2.5\"/></svg>",
+      "hint": {
+        "level_0": "Don't count at random \u2014 you'll miss some. What sizes of shapes could be hiding in the figure?",
+        "level_1": "Count by size: first all the smallest ones, then the ones made of 2 pieces, then bigger combinations.",
+        "level_2": "Add up your counts: smallest + medium + largest = ?"
+      }
+    },
+    {
+      "id": "wb_L4_s26_q05",
+      "stem": "How many straight lines are there in the given figure?",
+      "interaction_mode": "mcq",
+      "topic": "Counting Figures",
+      "difficulty_tier": "warmup",
+      "question_number": 5,
+      "choices": [
+        "4",
+        "5",
+        "6",
+        "8"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S26",
+      "svg": "svg/wb_L4_s26_q05.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 200\" width=\"300\" height=\"200\" style=\"font-family:Arial,sans-serif\"><line x1=\"50\" y1=\"50\" x2=\"250\" y2=\"150\" stroke=\"#333\" stroke-width=\"2\"/><line x1=\"50\" y1=\"150\" x2=\"250\" y2=\"50\" stroke=\"#333\" stroke-width=\"2\"/><line x1=\"150\" y1=\"30\" x2=\"150\" y2=\"170\" stroke=\"#333\" stroke-width=\"2\"/><circle cx=\"150\" cy=\"100\" r=\"3\" fill=\"#E57373\"/></svg>",
+      "hint": {
+        "level_0": "Don't count at random \u2014 you'll miss some. What sizes of shapes could be hiding in the figure?",
+        "level_1": "Count by size: first all the smallest ones, then the ones made of 2 pieces, then bigger combinations.",
+        "level_2": "Add up your counts: smallest + medium + largest = ?"
+      }
+    },
+    {
+      "id": "wb_L4_s26_q06",
+      "stem": "Count the total number of triangles in the given figure.",
+      "interaction_mode": "mcq",
+      "topic": "Counting Figures",
+      "difficulty_tier": "practice",
+      "question_number": 6,
+      "choices": [
+        "10",
+        "12",
+        "14",
+        "16"
+      ],
+      "correct_answer": 3,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S26",
+      "svg": "svg/wb_L4_s26_q06.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 200\" width=\"300\" height=\"200\" style=\"font-family:Arial,sans-serif\"><polygon points=\"150,20 50,170 250,170\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2.5\"/></svg>",
+      "hint": {
+        "level_0": "Don't count at random \u2014 you'll miss some. What sizes of shapes could be hiding in the figure?",
+        "level_1": "Count by size: first all the smallest ones, then the ones made of 2 pieces, then bigger combinations.",
+        "level_2": "Add up your counts: smallest + medium + largest = ?"
+      }
+    },
+    {
+      "id": "wb_L4_s26_q07",
+      "stem": "How many squares can be found in the given figure?",
+      "interaction_mode": "mcq",
+      "topic": "Counting Figures",
+      "difficulty_tier": "practice",
+      "question_number": 7,
+      "choices": [
+        "12",
+        "14",
+        "16",
+        "18"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S26",
+      "svg": "svg/wb_L4_s26_q07.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 180\" width=\"300\" height=\"180\" style=\"font-family:Arial,sans-serif\"><rect x=\"50\" y=\"30\" width=\"200\" height=\"120\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2.5\" rx=\"2\"/></svg>",
+      "hint": {
+        "level_0": "Don't count at random \u2014 you'll miss some. What sizes of shapes could be hiding in the figure?",
+        "level_1": "Count by size: first all the smallest ones, then the ones made of 2 pieces, then bigger combinations.",
+        "level_2": "Add up your counts: smallest + medium + largest = ?"
+      }
+    },
+    {
+      "id": "wb_L4_s26_q08",
+      "stem": "Count the number of rectangles (including squares) in the given figure.",
+      "interaction_mode": "mcq",
+      "topic": "Counting Figures",
+      "difficulty_tier": "practice",
+      "question_number": 8,
+      "choices": [
+        "15",
+        "18",
+        "20",
+        "22"
+      ],
+      "correct_answer": 3,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S26",
+      "svg": "svg/wb_L4_s26_q08.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 180\" width=\"300\" height=\"180\" style=\"font-family:Arial,sans-serif\"><rect x=\"50\" y=\"30\" width=\"200\" height=\"120\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2.5\" rx=\"2\"/></svg>",
+      "hint": {
+        "level_0": "Don't count at random \u2014 you'll miss some. What sizes of shapes could be hiding in the figure?",
+        "level_1": "Count by size: first all the smallest ones, then the ones made of 2 pieces, then bigger combinations.",
+        "level_2": "Add up your counts: smallest + medium + largest = ?"
+      }
+    },
+    {
+      "id": "wb_L4_s26_q10",
+      "stem": "Count the number of parallelograms in the given figure.",
+      "interaction_mode": "mcq",
+      "topic": "Counting Figures",
+      "difficulty_tier": "practice",
+      "question_number": 10,
+      "choices": [
+        "6",
+        "8",
+        "10",
+        "12"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S26",
+      "svg": "svg/wb_L4_s26_q10.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 200\" width=\"300\" height=\"200\" style=\"font-family:Arial,sans-serif\"><polygon points=\"80,140 180,140 220,60 120,60\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2.5\"/></svg>",
+      "hint": {
+        "level_0": "Don't count at random \u2014 you'll miss some. What sizes of shapes could be hiding in the figure?",
+        "level_1": "Count by size: first all the smallest ones, then the ones made of 2 pieces, then bigger combinations.",
+        "level_2": "Add up your counts: smallest + medium + largest = ?"
+      }
+    },
+    {
+      "id": "wb_L4_s26_q12",
+      "stem": "Count the total number of squares in a 4\u00d74 grid.",
+      "interaction_mode": "mcq",
+      "topic": "Counting Figures",
+      "difficulty_tier": "challenge",
+      "question_number": 12,
+      "choices": [
+        "30",
+        "20",
+        "16",
+        "25"
+      ],
+      "correct_answer": 0,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S26",
+      "svg": "svg/wb_L4_s26_q12.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 180\" width=\"300\" height=\"180\" style=\"font-family:Arial,sans-serif\"><rect x=\"50\" y=\"30\" width=\"200\" height=\"120\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2.5\" rx=\"2\"/></svg>",
+      "hint": {
+        "level_0": "Don't count at random \u2014 you'll miss some. What sizes of shapes could be hiding in the figure?",
+        "level_1": "Count by size: first all the smallest ones, then the ones made of 2 pieces, then bigger combinations.",
+        "level_2": "Add up your counts: smallest + medium + largest = ?"
+      }
+    },
+    {
+      "id": "wb_L4_s26_q13",
+      "stem": "How many triangles are in the given figure?",
+      "interaction_mode": "mcq",
+      "topic": "Counting Figures",
+      "difficulty_tier": "challenge",
+      "question_number": 13,
+      "choices": [
+        "16",
+        "18",
+        "20",
+        "22"
+      ],
+      "correct_answer": 3,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S26",
+      "svg": "svg/wb_L4_s26_q13.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 200\" width=\"300\" height=\"200\" style=\"font-family:Arial,sans-serif\"><polygon points=\"150,20 50,170 250,170\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2.5\"/></svg>",
+      "hint": {
+        "level_0": "Don't count at random \u2014 you'll miss some. What sizes of shapes could be hiding in the figure?",
+        "level_1": "Count by size: first all the smallest ones, then the ones made of 2 pieces, then bigger combinations.",
+        "level_2": "Add up your counts: smallest + medium + largest = ?"
+      }
+    },
+    {
+      "id": "wb_L4_s26_q14",
+      "stem": "Count the number of rectangles in the given figure.",
+      "interaction_mode": "mcq",
+      "topic": "Counting Figures",
+      "difficulty_tier": "challenge",
+      "question_number": 14,
+      "choices": [
+        "18",
+        "15",
+        "12",
+        "20"
+      ],
+      "correct_answer": 0,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S26",
+      "svg": "svg/wb_L4_s26_q14.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 180\" width=\"300\" height=\"180\" style=\"font-family:Arial,sans-serif\"><rect x=\"50\" y=\"30\" width=\"200\" height=\"120\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2.5\" rx=\"2\"/></svg>",
+      "hint": {
+        "level_0": "Don't count at random \u2014 you'll miss some. What sizes of shapes could be hiding in the figure?",
+        "level_1": "Count by size: first all the smallest ones, then the ones made of 2 pieces, then bigger combinations.",
+        "level_2": "Add up your counts: smallest + medium + largest = ?"
+      }
+    },
+    {
+      "id": "wb_L4_s26_q15",
+      "stem": "How many line segments are there in the given figure?",
+      "interaction_mode": "mcq",
+      "topic": "Counting Figures",
+      "difficulty_tier": "challenge",
+      "question_number": 15,
+      "choices": [
+        "10",
+        "8",
+        "12",
+        "14"
+      ],
+      "correct_answer": 0,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S26",
+      "svg": "svg/wb_L4_s26_q15.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 200\" width=\"300\" height=\"200\" style=\"font-family:Arial,sans-serif\"><line x1=\"50\" y1=\"50\" x2=\"250\" y2=\"150\" stroke=\"#333\" stroke-width=\"2\"/><line x1=\"50\" y1=\"150\" x2=\"250\" y2=\"50\" stroke=\"#333\" stroke-width=\"2\"/><line x1=\"150\" y1=\"30\" x2=\"150\" y2=\"170\" stroke=\"#333\" stroke-width=\"2\"/><circle cx=\"150\" cy=\"100\" r=\"3\" fill=\"#E57373\"/></svg>",
+      "hint": {
+        "level_0": "Don't count at random \u2014 you'll miss some. What sizes of shapes could be hiding in the figure?",
+        "level_1": "Count by size: first all the smallest ones, then the ones made of 2 pieces, then bigger combinations.",
+        "level_2": "Add up your counts: smallest + medium + largest = ?"
+      }
+    }
+  ]
+}

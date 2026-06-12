@@ -45,7 +45,7 @@ cp -r . "$TMPDIR/backend"
 
 # Copy v2 content (flat JSON/SVG questions).
 V2_FOUND=false
-for v2_path in "../content-v2" "../../content-v2" "../Kiwimath_Content_v2"; do
+for v2_path in "../content-live/content-v2" "../content-v2" "../../content-v2"; do
     if [ -d "$v2_path" ]; then
         cp -r "$v2_path" "$TMPDIR/backend/content-v2"
         echo "    (v2 content baked from $v2_path)"
@@ -61,7 +61,7 @@ fi
 
 # Copy v4 content (adaptive questions — ~32K questions across all grades).
 V4_FOUND=false
-for v4_path in "../content-v4" "../../content-v4"; do
+for v4_path in "../content-live/content-v4" "../content-v4" "../../content-v4"; do
     if [ -d "$v4_path" ]; then
         cp -r "$v4_path" "$TMPDIR/backend/content-v4"
         echo "    (v4 content baked from $v4_path)"

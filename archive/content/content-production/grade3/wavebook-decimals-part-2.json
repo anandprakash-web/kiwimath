@@ -1,0 +1,361 @@
+{
+ "topic_id": "wavebook-decimals-part-2",
+ "topic_name": "Wavebook: Decimals Part 2",
+ "topic_emoji": "📘",
+ "grade": 3,
+ "domain": "wavebook",
+ "source": "wavebook",
+ "total_questions": 15,
+ "difficulty_range": {
+  "min": 0,
+  "max": 0
+ },
+ "questions": [
+  {
+   "id": "wb_L3_s10_q01",
+   "stem": "0.7 + 0.03 + 0.009 =?",
+   "interaction_mode": "mcq",
+   "topic": "Decimals Part 2",
+   "difficulty_tier": "warmup",
+   "question_number": 1,
+   "choices": [
+    "0.739",
+    "0.0739",
+    "7.39",
+    "73.9"
+   ],
+   "correct_answer": 0,
+   "grade_band": "3-4",
+   "source": "Wavebook L3 S10",
+   "diagnostics": {},
+   "hint": {
+    "level_0": "We are combining the decimals 0.7, 0.03, 0.009. Line them up before adding.",
+    "level_1": "Stack them with the decimal POINTS in a straight column; fill empty places with zeros.",
+    "level_2": "Add column by column from the right: 0.7 + 0.03 + 0.009 = ?"
+   }
+  },
+  {
+   "id": "wb_L3_s10_q02",
+   "stem": "What is 3.56 rounded to the nearest tenth?",
+   "interaction_mode": "mcq",
+   "topic": "Decimals Part 2",
+   "difficulty_tier": "warmup",
+   "question_number": 2,
+   "choices": [
+    "3.5",
+    "3.6",
+    "4.0",
+    "3.56"
+   ],
+   "correct_answer": 1,
+   "grade_band": "3-4",
+   "source": "Wavebook L3 S10",
+   "diagnostics": {},
+   "hint": {
+    "level_0": "We must round 3.56 to the nearest tenth.",
+    "level_1": "Find the tenth digit in 3.56, then look at the digit just AFTER it: 5 or more rounds up, less than 5 keeps it.",
+    "level_2": "Apply the rule to 3.56 = ?"
+   }
+  },
+  {
+   "id": "wb_L3_s10_q03",
+   "stem": "Convert 3/8 to a decimal.",
+   "interaction_mode": "mcq",
+   "topic": "Decimals Part 2",
+   "difficulty_tier": "warmup",
+   "question_number": 3,
+   "choices": [
+    "0.375",
+    "0.38",
+    "0.35",
+    "0.325"
+   ],
+   "correct_answer": 0,
+   "grade_band": "3-4",
+   "source": "Wavebook L3 S10",
+   "diagnostics": {},
+   "hint": {
+    "level_0": "What is known (3, 8) and what exactly is asked? Say it in your own words.",
+    "level_1": "Choose the operation the story needs (add, subtract, multiply, divide) and set it up with 3, 8.",
+    "level_2": "Write the calculation out and solve it step by step: ... = ?"
+   }
+  },
+  {
+   "id": "wb_L3_s10_q04",
+   "stem": "5.6 - 2.38 =?",
+   "interaction_mode": "mcq",
+   "topic": "Decimals Part 2",
+   "difficulty_tier": "warmup",
+   "question_number": 4,
+   "choices": [
+    "3.28",
+    "3.22",
+    "3.32",
+    "2.22"
+   ],
+   "correct_answer": 1,
+   "grade_band": "3-4",
+   "source": "Wavebook L3 S10",
+   "diagnostics": {},
+   "hint": {
+    "level_0": "We are combining the decimals 5.6, 2.38. Line them up before adding.",
+    "level_1": "Stack them with the decimal POINTS in a straight column; fill empty places with zeros.",
+    "level_2": "Add column by column from the right: 5.6 + 2.38 = ?"
+   }
+  },
+  {
+   "id": "wb_L3_s10_q05",
+   "stem": "Which decimal is equivalent to 7/20?",
+   "interaction_mode": "mcq",
+   "topic": "Decimals Part 2",
+   "difficulty_tier": "warmup",
+   "question_number": 5,
+   "choices": [
+    "0.35",
+    "0.7",
+    "3.5",
+    "0.45"
+   ],
+   "correct_answer": 0,
+   "grade_band": "3-4",
+   "source": "Wavebook L3 S10",
+   "diagnostics": {},
+   "hint": {
+    "level_0": "What is known (7, 20) and what exactly is asked? Say it in your own words.",
+    "level_1": "Choose the operation the story needs (add, subtract, multiply, divide) and set it up with 7, 20.",
+    "level_2": "Write the calculation out and solve it step by step: ... = ?"
+   }
+  },
+  {
+   "id": "wb_L3_s10_q06",
+   "stem": "4.25 x 3 =?",
+   "interaction_mode": "mcq",
+   "topic": "Decimals Part 2",
+   "difficulty_tier": "practice",
+   "question_number": 6,
+   "choices": [
+    "12.75",
+    "12.25",
+    "12.50",
+    "13.75"
+   ],
+   "correct_answer": 0,
+   "grade_band": "3-4",
+   "source": "Wavebook L3 S10",
+   "diagnostics": {},
+   "hint": {
+    "level_0": "What is known (4.25, 3) and what exactly is asked? Say it in your own words.",
+    "level_1": "Choose the operation the story needs (add, subtract, multiply, divide) and set it up with 4.25, 3.",
+    "level_2": "Write the calculation out and solve it step by step: ... = ?"
+   }
+  },
+  {
+   "id": "wb_L3_s10_q07",
+   "stem": "Arrange in ascending order: 0.5, 0.05, 0.55, 0.505",
+   "interaction_mode": "mcq",
+   "topic": "Decimals Part 2",
+   "difficulty_tier": "practice",
+   "question_number": 7,
+   "choices": [
+    "0.05, 0.5, 0.505, 0.55",
+    "0.5, 0.05, 0.55, 0.505",
+    "0.05, 0.505, 0.5, 0.55",
+    "0.55, 0.505, 0.5, 0.05"
+   ],
+   "correct_answer": 0,
+   "grade_band": "3-4",
+   "source": "Wavebook L3 S10",
+   "svg": "wb_L3_s10_q07.svg",
+   "diagnostics": {},
+   "hint": {
+    "level_0": "The data is 0.5, 0.05, 0.55, 0.505. The range measures how spread out it is.",
+    "level_1": "Find the largest value and the smallest value in the list.",
+    "level_2": "Range = largest − smallest = ?"
+   }
+  },
+  {
+   "id": "wb_L3_s10_q08",
+   "stem": "12.6 divided by 4 =?",
+   "interaction_mode": "mcq",
+   "topic": "Decimals Part 2",
+   "difficulty_tier": "practice",
+   "question_number": 8,
+   "choices": [
+    "3.05",
+    "3.15",
+    "3.25",
+    "3.50"
+   ],
+   "correct_answer": 1,
+   "grade_band": "3-4",
+   "source": "Wavebook L3 S10",
+   "diagnostics": {},
+   "hint": {
+    "level_0": "What is known (12.6, 4) and what exactly is asked? Say it in your own words.",
+    "level_1": "Choose the operation the story needs (add, subtract, multiply, divide) and set it up with 12.6, 4.",
+    "level_2": "Write the calculation out and solve it step by step: ... = ?"
+   }
+  },
+  {
+   "id": "wb_L3_s10_q09",
+   "stem": "The decimal form of 2 and 3/4 is",
+   "interaction_mode": "mcq",
+   "topic": "Decimals Part 2",
+   "difficulty_tier": "practice",
+   "question_number": 9,
+   "choices": [
+    "2.75",
+    "2.34",
+    "2.25",
+    "2.50"
+   ],
+   "correct_answer": 0,
+   "grade_band": "3-4",
+   "source": "Wavebook L3 S10",
+   "diagnostics": {},
+   "hint": {
+    "level_0": "What is known (2, 3, 4) and what exactly is asked? Say it in your own words.",
+    "level_1": "Choose the operation the story needs (add, subtract, multiply, divide) and set it up with 2, 3, 4.",
+    "level_2": "Write the calculation out and solve it step by step: ... = ?"
+   }
+  },
+  {
+   "id": "wb_L3_s10_q10",
+   "stem": "What is the place value of 6 in 45.362?",
+   "interaction_mode": "mcq",
+   "topic": "Decimals Part 2",
+   "difficulty_tier": "practice",
+   "question_number": 10,
+   "choices": [
+    "6/10",
+    "6/100",
+    "6/1000",
+    "60"
+   ],
+   "correct_answer": 1,
+   "grade_band": "3-4",
+   "source": "Wavebook L3 S10",
+   "diagnostics": {},
+   "hint": {
+    "level_0": "Each digit's value depends on its POSITION: ones, tens, hundreds, thousands...",
+    "level_1": "Write the number with each digit under its place name. Find the position the question asks about.",
+    "level_2": "Place value = digit × value of its position (1, 10, 100, 1000, ...) = ?"
+   }
+  },
+  {
+   "id": "wb_L3_s10_q11",
+   "stem": "If a ribbon is 2.45 m long and another is 1.8 m long, what is the total length?",
+   "interaction_mode": "mcq",
+   "topic": "Decimals Part 2",
+   "difficulty_tier": "challenge",
+   "question_number": 11,
+   "choices": [
+    "4.25 m",
+    "4.05 m",
+    "3.25 m",
+    "4.35 m"
+   ],
+   "correct_answer": 0,
+   "grade_band": "3-4",
+   "source": "Wavebook L3 S10",
+   "diagnostics": {},
+   "hint": {
+    "level_0": "What is known (2.45, 1.8) and what exactly is asked? Say it in your own words.",
+    "level_1": "Choose the operation the story needs (add, subtract, multiply, divide) and set it up with 2.45, 1.8.",
+    "level_2": "Write the calculation out and solve it step by step: ... = ?"
+   }
+  },
+  {
+   "id": "wb_L3_s10_q12",
+   "stem": "0.08 x 100 =?",
+   "interaction_mode": "mcq",
+   "topic": "Decimals Part 2",
+   "difficulty_tier": "challenge",
+   "question_number": 12,
+   "choices": [
+    "0.8",
+    "8",
+    "80",
+    "800"
+   ],
+   "correct_answer": 1,
+   "grade_band": "3-4",
+   "source": "Wavebook L3 S10",
+   "diagnostics": {},
+   "hint": {
+    "level_0": "What is known (0.08, 100) and what exactly is asked? Say it in your own words.",
+    "level_1": "Choose the operation the story needs (add, subtract, multiply, divide) and set it up with 0.08, 100.",
+    "level_2": "Write the calculation out and solve it step by step: ... = ?"
+   }
+  },
+  {
+   "id": "wb_L3_s10_q13",
+   "stem": "Which is greater: 0.45 or 0.405?",
+   "interaction_mode": "mcq",
+   "topic": "Decimals Part 2",
+   "difficulty_tier": "challenge",
+   "question_number": 13,
+   "choices": [
+    "0.45",
+    "0.405",
+    "Both are equal",
+    "Cannot be determined"
+   ],
+   "correct_answer": 0,
+   "grade_band": "3-4",
+   "source": "Wavebook L3 S10",
+   "diagnostics": {},
+   "hint": {
+    "level_0": "What is known (0.45, 0.405) and what exactly is asked? Say it in your own words.",
+    "level_1": "Choose the operation the story needs (add, subtract, multiply, divide) and set it up with 0.45, 0.405.",
+    "level_2": "Write the calculation out and solve it step by step: ... = ?"
+   }
+  },
+  {
+   "id": "wb_L3_s10_q14",
+   "stem": "Rohan spent Rs 45.75 on a pen and Rs 23.50 on a notebook. How much did he spend in total?",
+   "interaction_mode": "mcq",
+   "topic": "Decimals Part 2",
+   "difficulty_tier": "challenge",
+   "question_number": 14,
+   "choices": [
+    "Rs 69.25",
+    "Rs 68.25",
+    "Rs 69.50",
+    "Rs 70.25"
+   ],
+   "correct_answer": 0,
+   "grade_band": "3-4",
+   "source": "Wavebook L3 S10",
+   "diagnostics": {},
+   "hint": {
+    "level_0": "What is known (45.75, 23.50) and what exactly is asked? Say it in your own words.",
+    "level_1": "Choose the operation the story needs (add, subtract, multiply, divide) and set it up with 45.75, 23.50.",
+    "level_2": "Write the calculation out and solve it step by step: ... = ?"
+   }
+  },
+  {
+   "id": "wb_L3_s10_q15",
+   "stem": "The product of 2.5 and 0.4 is",
+   "interaction_mode": "mcq",
+   "topic": "Decimals Part 2",
+   "difficulty_tier": "challenge",
+   "question_number": 15,
+   "choices": [
+    "1.0",
+    "10.0",
+    "0.1",
+    "0.01"
+   ],
+   "correct_answer": 0,
+   "grade_band": "3-4",
+   "source": "Wavebook L3 S10",
+   "diagnostics": {},
+   "hint": {
+    "level_0": "What is known (2.5, 0.4) and what exactly is asked? Say it in your own words.",
+    "level_1": "Choose the operation the story needs (add, subtract, multiply, divide) and set it up with 2.5, 0.4.",
+    "level_2": "Write the calculation out and solve it step by step: ... = ?"
+   }
+  }
+ ]
+}

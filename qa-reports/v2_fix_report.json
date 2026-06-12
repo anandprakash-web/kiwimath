@@ -1,0 +1,140 @@
+{
+ "counts": {
+  "class4-fixed": 24,
+  "deleted": 28,
+  "deleted::class4": 5,
+  "class2-fixed": 123,
+  "class2::restored-original": 48,
+  "deleted::class2": 2,
+  "class2::story-rewrite": 75,
+  "class3-fixed": 145,
+  "deleted::class3": 1,
+  "class8-fixed": 8,
+  "deleted::class8": 20,
+  "class7-fixed": 1,
+  "class11-fixed": 6,
+  "class10-fixed": 133,
+  "class10-left": 89,
+  "class5-hints-fixed": 888,
+  "class6-leaks-fixed": 97
+ },
+ "files_written": [
+  "singapore-curriculum/grade1/singapore_g1_smc.json",
+  "singapore-curriculum/grade2/singapore_g2_smc.json",
+  "singapore-curriculum/grade3/singapore_g3_smc.json",
+  "singapore-curriculum/grade4/singapore_g4_smc.json",
+  "singapore-curriculum/grade5/singapore_g5_smc.json",
+  "singapore-curriculum/grade6/singapore_g6_smc.json",
+  "topic-1-counting/g56_questions.json",
+  "topic-1-counting/grade34_questions.json",
+  "topic-1-counting/questions.json",
+  "topic-2-arithmetic/g56_questions.json",
+  "topic-2-arithmetic/grade34_questions.json",
+  "topic-2-arithmetic/grade34_variety_questions.json",
+  "topic-2-arithmetic/questions.json",
+  "topic-3-patterns/g56_questions.json",
+  "topic-3-patterns/questions.json",
+  "topic-4-logic/grade34_questions.json",
+  "topic-4-logic/questions.json",
+  "topic-5-spatial/g56_questions.json",
+  "topic-5-spatial/grade34_questions.json",
+  "topic-5-spatial/questions.json",
+  "topic-6-shapes/grade34_questions.json",
+  "topic-6-shapes/questions.json",
+  "topic-7-word-problems/g56_questions.json",
+  "topic-7-word-problems/grade34_questions.json",
+  "topic-7-word-problems/measurement_units.json",
+  "topic-7-word-problems/questions.json",
+  "topic-8-puzzles/grade34_questions.json",
+  "topic-8-puzzles/questions.json"
+ ],
+ "questions_before": 9252,
+ "questions_after": 9224,
+ "deleted_total": 28,
+ "examples": {
+  "class2": [
+   {
+    "id": "T2-901",
+    "before": "In the racing garage, Kiwi works on the numbers. Arranges gears in 12 rows with 8 in each row. How many gears are there in total?",
+    "after": "In the racing garage, Kiwi works on the numbers. Evaluate: (12 + 8) × (15 - 9)"
+   },
+   {
+    "id": "T2-934",
+    "before": "In the racing garage, Google works on the numbers. Has 4 wheels ready. 4 more arrive. How many wheels are there now?",
+    "after": "In the racing garage, Google works on the numbers. What is 4^4?"
+   },
+   {
+    "id": "T2-932",
+    "before": "In the racing garage, Ved works on the numbers. Has 3 building blocks ready. 5 more arrive. How many building blocks are there now?",
+    "after": "In the racing garage, Ved works on the numbers. What is 3^5?"
+   },
+   {
+    "id": "T2-967",
+    "before": "Ved calculates the figures for the race car. Has 15 buttons ready. 20 more arrive. How many buttons are there now?",
+    "after": "Ved calculates the figures for the race car. What is the least common multiple of 15 and 20?"
+   },
+   {
+    "id": "T2-979",
+    "before": "At the test track, Google does the math. Has 4 building blocks ready. 9 more arrive. How many building blocks are there now?",
+    "after": "At the test track, Google does the math. Which number is divisible by both 4 and 9?"
+   },
+   {
+    "id": "T2-974",
+    "before": "Google calculates the figures for the race car. Has 48 building blocks ready. 72 more arrive. How many building blocks are there now?",
+    "after": "Google calculates the figures for the race car. What is the least common multiple of 48 and 72?"
+   },
+   {
+    "id": "T2-1056",
+    "before": "For the desert rally, Kiwi runs the calculation. Arranges blocks in 11 rows with 11 in each row. How many blocks are there in total?",
+    "after": "For the desert rally, Kiwi runs the calculation. What is the remainder when 11^11 is divided by 3?"
+   },
+   {
+    "id": "T2-1042",
+    "before": "During the pit stop, Ved needs to figure this out. Arranges gears in 1000 rows with 13 in each row. How many gears are there in total?",
+    "after": "During the pit stop, Ved needs to figure this out. What is the remainder when 1000 is divided by 13?"
+   }
+  ],
+  "class3": [
+   {
+    "id": "T1-098",
+    "before": "Near the garden entrance, Riya spots something. Vanya has 20 biscuits and shares them equally with . How many biscuits does each person get?",
+    "after": "Near the garden entrance, Riya spots something. Vanya has 20 biscuits and shares them equally with Kiwi. How many biscuits does each person get?"
+   },
+   {
+    "id": "T1-516",
+    "before": "Vanya discovers a hidden clearing. Kiwi is 2 years older than . Together their ages add up to 24. How old is ?",
+    "after": "Vanya discovers a hidden clearing. Kiwi is 2 years older than Chikoo. Together their ages add up to 24. How old is Chikoo?"
+   },
+   {
+    "id": "T1-544",
+    "before": "A forest owl hoots a puzzle at Kiwi! Aarohi is 6 years older than . Together their ages add up to 28. How old is ?",
+    "after": "A forest owl hoots a puzzle at Kiwi! Aarohi is 6 years older than Chikoo. Together their ages add up to 28. How old is Chikoo?"
+   },
+   {
+    "id": "T4-0608",
+    "before": "At the Shadow Academy, Nuha faces a logic challenge. Ethan is older than . is older than . Who is the oldest?",
+    "after": "At the Shadow Academy, Nuha faces a logic challenge. Ethan is older than Chloe. Chloe is older than Beni. Who is the oldest?"
+   },
+   {
+    "id": "T4-0609",
+    "before": "At the Shadow Academy, Google faces a logic challenge. Is older than . is older than Anya. Who is the oldest?",
+    "after": "At the Shadow Academy, Google faces a logic challenge. Chloe is older than Gita. Gita is older than Anya. Who is the oldest?"
+   },
+   {
+    "id": "T4-0610",
+    "before": "At the Shadow Academy, Veronica faces a logic challenge. Is older than Ethan. Ethan is older than . Who is the oldest?",
+    "after": "At the Shadow Academy, Veronica faces a logic challenge. Beni is older than Ethan. Ethan is older than Chloe. Who is the oldest?"
+   },
+   {
+    "id": "T4-0613",
+    "before": "At the Shadow Academy, Nuha faces a logic challenge. Faiz is older than . is older than Anya. Who is the oldest?",
+    "after": "At the Shadow Academy, Nuha faces a logic challenge. Faiz is older than Chloe. Chloe is older than Anya. Who is the oldest?"
+   },
+   {
+    "id": "T4-0621",
+    "before": "At the Shadow Academy, Kiwi faces a logic challenge. Dia is older than . is older than . Who is the oldest?",
+    "after": "At the Shadow Academy, Kiwi faces a logic challenge. Dia is older than Chloe. Chloe is older than Gita. Who is the oldest?"
+   }
+  ]
+ }
+}

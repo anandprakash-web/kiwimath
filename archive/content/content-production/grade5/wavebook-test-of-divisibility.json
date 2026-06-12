@@ -1,0 +1,337 @@
+{
+  "topic_id": "wavebook-test-of-divisibility",
+  "topic_name": "Wavebook: Test of divisibility",
+  "topic_emoji": "\ud83d\udcd8",
+  "grade": 5,
+  "domain": "wavebook",
+  "source": "wavebook",
+  "total_questions": 14,
+  "difficulty_range": {
+    "min": 0,
+    "max": 0
+  },
+  "questions": [
+    {
+      "id": "wb_L4_s02_q01",
+      "stem": "A number is divisible by 5 when its unit place must be",
+      "interaction_mode": "mcq",
+      "topic": "Test of divisibility",
+      "difficulty_tier": "warmup",
+      "question_number": 1,
+      "choices": [
+        "0 or 2",
+        "5 or 8",
+        "0 or 5",
+        "zero only"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S2",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "When is a number divisible by 5? Recall the rule before checking anything.",
+        "level_1": "Rule: a number divides by 5 when the last digit is ?",
+        "level_2": "Apply the rule to the number in the question, step by step: does it pass the test for 5? = ?"
+      }
+    },
+    {
+      "id": "wb_L4_s02_q03",
+      "stem": "What least value must be assigned to * so that 197*5462 is divisible by 9?",
+      "interaction_mode": "mcq",
+      "topic": "Test of divisibility",
+      "difficulty_tier": "warmup",
+      "question_number": 3,
+      "choices": [
+        "2",
+        "3",
+        "1",
+        "4"
+      ],
+      "correct_answer": 0,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S2",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "When is a number divisible by 9? Recall the rule before checking anything.",
+        "level_1": "Rule: a number divides by 9 when the sum of the digits divides by 9.",
+        "level_2": "Apply the rule to the number in the question, step by step: does it pass the test for 9? = ?"
+      }
+    },
+    {
+      "id": "wb_L4_s02_q04",
+      "stem": "For a number to be divisible by 88 it should be",
+      "interaction_mode": "mcq",
+      "topic": "Test of divisibility",
+      "difficulty_tier": "warmup",
+      "question_number": 4,
+      "choices": [
+        "Divisible by 8",
+        "Divisible by 9 and 22",
+        "Divisible by 8 and 11",
+        "Divisible by 4 and 22"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S2",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "There's no single rule for 88 \u2014 but 88 can be split into smaller factors with known rules.",
+        "level_1": "Break 88 into two CO-PRIME factors (factors that share nothing, like 9 and 10 for 90). A number divisible by both is divisible by their product.",
+        "level_2": "Check each choice: are its two factors co-prime, and do they multiply to 88? = ?"
+      }
+    },
+    {
+      "id": "wb_L4_s02_q05",
+      "stem": "Find the least value of '*' so that 37*124 is divisible by 9",
+      "interaction_mode": "mcq",
+      "topic": "Test of divisibility",
+      "difficulty_tier": "warmup",
+      "question_number": 5,
+      "choices": [
+        "1",
+        "10",
+        "2",
+        "3"
+      ],
+      "correct_answer": 0,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S2",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "When is a number divisible by 9? Recall the rule before checking anything.",
+        "level_1": "Rule: a number divides by 9 when the sum of the digits divides by 9.",
+        "level_2": "Apply the rule to the number in the question, step by step: does it pass the test for 9? = ?"
+      }
+    },
+    {
+      "id": "wb_L4_s02_q06",
+      "stem": "Find the least value of 'x' so that 73818*4 is divisible by 8",
+      "interaction_mode": "mcq",
+      "topic": "Test of divisibility",
+      "difficulty_tier": "practice",
+      "question_number": 6,
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S2",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "When is a number divisible by 8? Recall the rule before checking anything.",
+        "level_1": "Rule: a number divides by 8 when the last three digits divide by 8.",
+        "level_2": "Apply the rule to the number in the question, step by step: does it pass the test for 8? = ?"
+      }
+    },
+    {
+      "id": "wb_L4_s02_q07",
+      "stem": "4950 is divisible by",
+      "interaction_mode": "mcq",
+      "topic": "Test of divisibility",
+      "difficulty_tier": "practice",
+      "question_number": 7,
+      "choices": [
+        "6",
+        "7",
+        "19",
+        "24"
+      ],
+      "correct_answer": 0,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S2",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "What is known (4950) and what exactly is asked? Say it in your own words.",
+        "level_1": "Choose the operation the story needs (add, subtract, multiply, divide) and set it up with 4950.",
+        "level_2": "Write the calculation out and solve it step by step: ... = ?"
+      }
+    },
+    {
+      "id": "wb_L4_s02_q08",
+      "stem": "7225 is divisible by",
+      "interaction_mode": "mcq",
+      "topic": "Test of divisibility",
+      "difficulty_tier": "practice",
+      "question_number": 8,
+      "choices": [
+        "52",
+        "68",
+        "92",
+        "85"
+      ],
+      "correct_answer": 3,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S2",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "What is known (7225) and what exactly is asked? Say it in your own words.",
+        "level_1": "Choose the operation the story needs (add, subtract, multiply, divide) and set it up with 7225.",
+        "level_2": "Write the calculation out and solve it step by step: ... = ?"
+      }
+    },
+    {
+      "id": "wb_L4_s02_q09",
+      "stem": "Which natural number is nearest to 8485 that is completely divisible by 75?",
+      "interaction_mode": "mcq",
+      "topic": "Test of divisibility",
+      "difficulty_tier": "practice",
+      "question_number": 9,
+      "choices": [
+        "8475",
+        "8500",
+        "8550",
+        "8525"
+      ],
+      "correct_answer": 0,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S2",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "There's no single rule for 75 \u2014 but 75 can be split into smaller factors with known rules.",
+        "level_1": "Break 75 into two CO-PRIME factors (factors that share nothing, like 9 and 10 for 90). A number divisible by both is divisible by their product.",
+        "level_2": "Check each choice: are its two factors co-prime, and do they multiply to 75? = ?"
+      }
+    },
+    {
+      "id": "wb_L4_s02_q10",
+      "stem": "7242595 is divisible by",
+      "interaction_mode": "mcq",
+      "topic": "Test of divisibility",
+      "difficulty_tier": "practice",
+      "question_number": 10,
+      "choices": [
+        "2",
+        "5",
+        "6",
+        "8"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S2",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "What is known (7242595) and what exactly is asked? Say it in your own words.",
+        "level_1": "Choose the operation the story needs (add, subtract, multiply, divide) and set it up with 7242595.",
+        "level_2": "Write the calculation out and solve it step by step: ... = ?"
+      }
+    },
+    {
+      "id": "wb_L4_s02_q11",
+      "stem": "What is the smallest number which must be added to 8261955 so as to obtain a sum divisible by 11?",
+      "interaction_mode": "mcq",
+      "topic": "Test of divisibility",
+      "difficulty_tier": "challenge",
+      "question_number": 11,
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S2",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "When is a number divisible by 11? Recall the rule before checking anything.",
+        "level_1": "Rule: a number divides by 11 when the alternating digit sum divides by 11.",
+        "level_2": "Apply the rule to the number in the question, step by step: does it pass the test for 11? = ?"
+      }
+    },
+    {
+      "id": "wb_L4_s02_q12",
+      "stem": "If the number 42573* is exactly divisible by 72, then the minimum value of * is",
+      "interaction_mode": "mcq",
+      "topic": "Test of divisibility",
+      "difficulty_tier": "challenge",
+      "question_number": 12,
+      "choices": [
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S2",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "There's no single rule for 72 \u2014 but 72 can be split into smaller factors with known rules.",
+        "level_1": "Break 72 into two CO-PRIME factors (factors that share nothing, like 9 and 10 for 90). A number divisible by both is divisible by their product.",
+        "level_2": "Check each choice: are its two factors co-prime, and do they multiply to 72? = ?"
+      }
+    },
+    {
+      "id": "wb_L4_s02_q13",
+      "stem": "Which digit should come in place of * and # if 62684*# is divisible by both 8 and 5?",
+      "interaction_mode": "mcq",
+      "topic": "Test of divisibility",
+      "difficulty_tier": "challenge",
+      "question_number": 13,
+      "choices": [
+        "4 and 0",
+        "0 and 5",
+        "5 and 0",
+        "2 and 0"
+      ],
+      "correct_answer": 0,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S2",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "Each digit's value depends on its POSITION: ones, tens, hundreds, thousands...",
+        "level_1": "Write the number with each digit under its place name. Find the position the question asks about.",
+        "level_2": "Place value = digit \u00d7 value of its position (1, 10, 100, 1000, ...) = ?"
+      }
+    },
+    {
+      "id": "wb_L4_s02_q14",
+      "stem": "What smallest number should be added to 4456 so that the sum is completely divisible by 6?",
+      "interaction_mode": "mcq",
+      "topic": "Test of divisibility",
+      "difficulty_tier": "challenge",
+      "question_number": 14,
+      "choices": [
+        "4",
+        "3",
+        "2",
+        "1"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S2",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "When is a number divisible by 6? Recall the rule before checking anything.",
+        "level_1": "Rule: a number divides by 6 when it divides by both 2 and 3.",
+        "level_2": "Apply the rule to the number in the question, step by step: does it pass the test for 6? = ?"
+      }
+    },
+    {
+      "id": "wb_L4_s02_q15",
+      "stem": "What least number must be subtracted from 13601 so that remainder is divisible by 87?",
+      "interaction_mode": "mcq",
+      "topic": "Test of divisibility",
+      "difficulty_tier": "challenge",
+      "question_number": 15,
+      "choices": [
+        "23",
+        "31",
+        "29",
+        "37"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S2",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "There's no single rule for 87 \u2014 but 87 can be split into smaller factors with known rules.",
+        "level_1": "Break 87 into two CO-PRIME factors (factors that share nothing, like 9 and 10 for 90). A number divisible by both is divisible by their product.",
+        "level_2": "Check each choice: are its two factors co-prime, and do they multiply to 87? = ?"
+      }
+    }
+  ]
+}

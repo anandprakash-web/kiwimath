@@ -1,0 +1,315 @@
+{
+  "topic_id": "wavebook-symmetry-introduction",
+  "topic_name": "Wavebook: Symmetry Introduction",
+  "topic_emoji": "\ud83d\udcd8",
+  "grade": 3,
+  "domain": "wavebook",
+  "source": "wavebook",
+  "total_questions": 13,
+  "difficulty_range": {
+    "min": 0,
+    "max": 0
+  },
+  "questions": [
+    {
+      "id": "wb_L3_s20_q01",
+      "stem": "The area of a square with side 9 cm is",
+      "interaction_mode": "mcq",
+      "topic": "Symmetry Introduction",
+      "difficulty_tier": "warmup",
+      "question_number": 1,
+      "choices": [
+        "36 sq cm",
+        "81 sq cm",
+        "18 sq cm",
+        "72 sq cm"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S20",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "Each side of the square is 9. What is the area \u2014 the space the square covers?",
+        "level_1": "A square's length and width are the same, both 9.",
+        "level_2": "Area = side \u00d7 side = 9 \u00d7 9 = ?"
+      }
+    },
+    {
+      "id": "wb_L3_s20_q02",
+      "stem": "A rectangle has length 10 cm and breadth 6 cm. Its area is",
+      "interaction_mode": "mcq",
+      "topic": "Symmetry Introduction",
+      "difficulty_tier": "warmup",
+      "question_number": 2,
+      "choices": [
+        "32 sq cm",
+        "16 sq cm",
+        "60 sq cm",
+        "100 sq cm"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S20",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "The rectangle is 10 long and 6 wide. How many unit squares cover it \u2014 that is, what is the area?",
+        "level_1": "Think of 6 rows with 10 squares in each row.",
+        "level_2": "Area = length \u00d7 breadth = 10 \u00d7 6 = ?"
+      }
+    },
+    {
+      "id": "wb_L3_s20_q04",
+      "stem": "A square has an area of 49 sq cm. What is the length of its side?",
+      "interaction_mode": "mcq",
+      "topic": "Symmetry Introduction",
+      "difficulty_tier": "warmup",
+      "question_number": 4,
+      "choices": [
+        "24.5 cm",
+        "7 cm",
+        "14 cm",
+        "9 cm"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S20",
+      "svg": "wb_L3_s20_q04.svg",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "Area is the space a shape covers. Which measurements are given?",
+        "level_1": "Pick the right formula: rectangle = length \u00d7 breadth, square = side \u00d7 side, triangle = \u00bd \u00d7 base \u00d7 height. The numbers here: 49.",
+        "level_2": "Put the given numbers into the formula and work it out: ... = ?"
+      }
+    },
+    {
+      "id": "wb_L3_s20_q05",
+      "stem": "The area of a rectangle with length 15 m and breadth 8 m is",
+      "interaction_mode": "mcq",
+      "topic": "Symmetry Introduction",
+      "difficulty_tier": "warmup",
+      "question_number": 5,
+      "choices": [
+        "46 sq m",
+        "120 sq m",
+        "23 sq m",
+        "150 sq m"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S20",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "The rectangle is 15 long and 8 wide. How many unit squares cover it \u2014 that is, what is the area?",
+        "level_1": "Think of 8 rows with 15 squares in each row.",
+        "level_2": "Area = length \u00d7 breadth = 15 \u00d7 8 = ?"
+      }
+    },
+    {
+      "id": "wb_L3_s20_q06",
+      "stem": "A rectangular garden is 25 m long and 18 m wide. What is its area?",
+      "interaction_mode": "mcq",
+      "topic": "Symmetry Introduction",
+      "difficulty_tier": "practice",
+      "question_number": 6,
+      "choices": [
+        "86 sq m",
+        "450 sq m",
+        "43 sq m",
+        "500 sq m"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S20",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "Area is the space a shape covers. Which measurements are given?",
+        "level_1": "Pick the right formula: rectangle = length \u00d7 breadth, square = side \u00d7 side, triangle = \u00bd \u00d7 base \u00d7 height. The numbers here: 25, 18.",
+        "level_2": "Put the given numbers into the formula and work it out: ... = ?"
+      }
+    },
+    {
+      "id": "wb_L3_s20_q07",
+      "stem": "The area of a right triangle with legs 6 cm and 8 cm is",
+      "interaction_mode": "mcq",
+      "topic": "Symmetry Introduction",
+      "difficulty_tier": "practice",
+      "question_number": 7,
+      "choices": [
+        "48 sq cm",
+        "24 sq cm",
+        "14 sq cm",
+        "10 sq cm"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S20",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "Area is the space a shape covers. Which measurements are given?",
+        "level_1": "Pick the right formula: rectangle = length \u00d7 breadth, square = side \u00d7 side, triangle = \u00bd \u00d7 base \u00d7 height. The numbers here: 6, 8.",
+        "level_2": "Put the given numbers into the formula and work it out: ... = ?"
+      }
+    },
+    {
+      "id": "wb_L3_s20_q08",
+      "stem": "A square room has area 144 sq m. Find the length of its side.",
+      "interaction_mode": "mcq",
+      "topic": "Symmetry Introduction",
+      "difficulty_tier": "practice",
+      "question_number": 8,
+      "choices": [
+        "14 m",
+        "12 m",
+        "36 m",
+        "72 m"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S20",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "Area is the space a shape covers. Which measurements are given?",
+        "level_1": "Pick the right formula: rectangle = length \u00d7 breadth, square = side \u00d7 side, triangle = \u00bd \u00d7 base \u00d7 height. The numbers here: 144.",
+        "level_2": "Put the given numbers into the formula and work it out: ... = ?"
+      }
+    },
+    {
+      "id": "wb_L3_s20_q09",
+      "stem": "How many square tiles of side 2 cm are needed to cover a rectangle 12 cm by 8 cm?",
+      "interaction_mode": "mcq",
+      "topic": "Symmetry Introduction",
+      "difficulty_tier": "practice",
+      "question_number": 9,
+      "choices": [
+        "48",
+        "24",
+        "96",
+        "20"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S20",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "What is known (2, 12, 8) and what exactly is asked? Say it in your own words.",
+        "level_1": "Choose the operation the story needs (add, subtract, multiply, divide) and set it up with 2, 12, 8.",
+        "level_2": "Write the calculation out and solve it step by step: ... = ?"
+      }
+    },
+    {
+      "id": "wb_L3_s20_q11",
+      "stem": "A rectangular plot is 40 m by 30 m. What is the cost of levelling it at Rs 5 per sq m?",
+      "interaction_mode": "mcq",
+      "topic": "Symmetry Introduction",
+      "difficulty_tier": "challenge",
+      "question_number": 11,
+      "choices": [
+        "Rs 600",
+        "Rs 6000",
+        "Rs 350",
+        "Rs 1200"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S20",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "What is known (40, 30, 5) and what exactly is asked? Say it in your own words.",
+        "level_1": "Choose the operation the story needs (add, subtract, multiply, divide) and set it up with 40, 30, 5.",
+        "level_2": "Write the calculation out and solve it step by step: ... = ?"
+      }
+    },
+    {
+      "id": "wb_L3_s20_q12",
+      "stem": "Two squares have sides 8 cm and 6 cm. The difference of their areas is",
+      "interaction_mode": "mcq",
+      "topic": "Symmetry Introduction",
+      "difficulty_tier": "challenge",
+      "question_number": 12,
+      "choices": [
+        "28 sq cm",
+        "4 sq cm",
+        "14 sq cm",
+        "2 sq cm"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S20",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "Each side of the square is 8. What is the area \u2014 the space the square covers?",
+        "level_1": "A square's length and width are the same, both 8.",
+        "level_2": "Area = side \u00d7 side = 8 \u00d7 8 = ?"
+      }
+    },
+    {
+      "id": "wb_L3_s20_q13",
+      "stem": "A triangular field has base 20 m and height 15 m. Find its area.",
+      "interaction_mode": "mcq",
+      "topic": "Symmetry Introduction",
+      "difficulty_tier": "challenge",
+      "question_number": 13,
+      "choices": [
+        "300 sq m",
+        "150 sq m",
+        "35 sq m",
+        "70 sq m"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S20",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "Area is the space a shape covers. Which measurements are given?",
+        "level_1": "Pick the right formula: rectangle = length \u00d7 breadth, square = side \u00d7 side, triangle = \u00bd \u00d7 base \u00d7 height. The numbers here: 20, 15.",
+        "level_2": "Put the given numbers into the formula and work it out: ... = ?"
+      }
+    },
+    {
+      "id": "wb_L3_s20_q14",
+      "stem": "A rectangle has area 72 sq cm and length 9 cm. What is its breadth?",
+      "interaction_mode": "mcq",
+      "topic": "Symmetry Introduction",
+      "difficulty_tier": "challenge",
+      "question_number": 14,
+      "choices": [
+        "63 cm",
+        "8 cm",
+        "6 cm",
+        "12 cm"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S20",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "Area is the space a shape covers. Which measurements are given?",
+        "level_1": "Pick the right formula: rectangle = length \u00d7 breadth, square = side \u00d7 side, triangle = \u00bd \u00d7 base \u00d7 height. The numbers here: 72, 9.",
+        "level_2": "Put the given numbers into the formula and work it out: ... = ?"
+      }
+    },
+    {
+      "id": "wb_L3_s20_q15",
+      "stem": "A floor 8 m by 6 m is to be covered with square tiles of side 50 cm. How many tiles are needed?",
+      "interaction_mode": "mcq",
+      "topic": "Symmetry Introduction",
+      "difficulty_tier": "challenge",
+      "question_number": 15,
+      "choices": [
+        "96",
+        "192",
+        "48",
+        "384"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S20",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "What is known (8, 6, 50) and what exactly is asked? Say it in your own words.",
+        "level_1": "Choose the operation the story needs (add, subtract, multiply, divide) and set it up with 8, 6, 50.",
+        "level_2": "Write the calculation out and solve it step by step: ... = ?"
+      }
+    }
+  ]
+}

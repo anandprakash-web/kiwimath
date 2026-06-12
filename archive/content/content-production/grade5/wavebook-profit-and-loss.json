@@ -1,0 +1,246 @@
+{
+  "topic_id": "wavebook-profit-and-loss",
+  "topic_name": "Wavebook: Profit and Loss",
+  "topic_emoji": "\ud83d\udcd8",
+  "grade": 5,
+  "domain": "wavebook",
+  "source": "wavebook",
+  "total_questions": 10,
+  "difficulty_range": {
+    "min": 0,
+    "max": 0
+  },
+  "questions": [
+    {
+      "id": "wb_L4_s09_q05",
+      "stem": "Scooter Rs 4700 + Rs 800 repairs, sold Rs 5800. Gain%?",
+      "interaction_mode": "mcq",
+      "topic": "Profit and Loss",
+      "difficulty_tier": "warmup",
+      "question_number": 5,
+      "choices": [
+        "4 4/7%",
+        "5 5/11%",
+        "10%",
+        "12%"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S9",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "Sort the numbers first: what was PAID in total (cost price) and what was RECEIVED (selling price)?",
+        "level_1": "Profit = selling price \u2212 total cost. Loss = total cost \u2212 selling price. Numbers here: 4700, 800, 5800.",
+        "level_2": "Percent: (profit or loss \u00f7 cost price) \u00d7 100 = ? %"
+      }
+    },
+    {
+      "id": "wb_L4_s09_q06",
+      "stem": "CP of 20 articles = SP of x articles. Profit 25%. x=?",
+      "interaction_mode": "mcq",
+      "topic": "Profit and Loss",
+      "difficulty_tier": "practice",
+      "question_number": 6,
+      "choices": [
+        "15",
+        "16",
+        "18",
+        "25"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S9",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "Sort the numbers first: what was PAID in total (cost price) and what was RECEIVED (selling price)?",
+        "level_1": "Profit = selling price \u2212 total cost. Loss = total cost \u2212 selling price. Numbers here: 20, 25.",
+        "level_2": "Percent: (profit or loss \u00f7 cost price) \u00d7 100 = ? %"
+      }
+    },
+    {
+      "id": "wb_L4_s09_q07",
+      "stem": "If selling price doubled, profit triples. Profit percent?",
+      "interaction_mode": "mcq",
+      "topic": "Profit and Loss",
+      "difficulty_tier": "practice",
+      "question_number": 7,
+      "choices": [
+        "66 2/3",
+        "100",
+        "105 1/3",
+        "120"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S9",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "Sort the numbers first: what was PAID in total (cost price) and what was RECEIVED (selling price)?",
+        "level_1": "Profit = selling price \u2212 total cost. Loss = total cost \u2212 selling price.",
+        "level_2": "Percent: (profit or loss \u00f7 cost price) \u00d7 100 = ? %"
+      }
+    },
+    {
+      "id": "wb_L4_s09_q08",
+      "stem": "Toffees bought at 6 for a rupee. How many for a rupee to gain 20%?",
+      "interaction_mode": "mcq",
+      "topic": "Profit and Loss",
+      "difficulty_tier": "practice",
+      "question_number": 8,
+      "choices": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S9",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "Sort the numbers first: what was PAID in total (cost price) and what was RECEIVED (selling price)?",
+        "level_1": "Profit = selling price \u2212 total cost. Loss = total cost \u2212 selling price. Numbers here: 6, 20.",
+        "level_2": "Percent: (profit or loss \u00f7 cost price) \u00d7 100 = ? %"
+      }
+    },
+    {
+      "id": "wb_L4_s09_q09",
+      "stem": "Cycle Rs 1400, sold at 15% loss. SP?",
+      "interaction_mode": "mcq",
+      "topic": "Profit and Loss",
+      "difficulty_tier": "practice",
+      "question_number": 9,
+      "choices": [
+        "Rs 1090",
+        "Rs 1160",
+        "Rs 1190",
+        "Rs 1202"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S9",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "Sort the numbers first: what was PAID in total (cost price) and what was RECEIVED (selling price)?",
+        "level_1": "Profit = selling price \u2212 total cost. Loss = total cost \u2212 selling price. Numbers here: 1400, 15.",
+        "level_2": "Percent: (profit or loss \u00f7 cost price) \u00d7 100 = ? %"
+      }
+    },
+    {
+      "id": "wb_L4_s09_q10",
+      "stem": "100 oranges bought at Rs 350, sold at Rs 48/dozen. Profit/loss%?",
+      "interaction_mode": "mcq",
+      "topic": "Profit and Loss",
+      "difficulty_tier": "practice",
+      "question_number": 10,
+      "choices": [
+        "14 2/7% gain",
+        "15% gain",
+        "14 2/7% loss",
+        "15% loss"
+      ],
+      "correct_answer": 0,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S9",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "Sort the numbers first: what was PAID in total (cost price) and what was RECEIVED (selling price)?",
+        "level_1": "Profit = selling price \u2212 total cost. Loss = total cost \u2212 selling price. Numbers here: 100, 350, 48.",
+        "level_2": "Percent: (profit or loss \u00f7 cost price) \u00d7 100 = ? %"
+      }
+    },
+    {
+      "id": "wb_L4_s09_q11",
+      "stem": "Trader mixes 26kg at Rs 20 with 30kg at Rs 36, sells at Rs 30/kg. Profit%?",
+      "interaction_mode": "mcq",
+      "topic": "Profit and Loss",
+      "difficulty_tier": "challenge",
+      "question_number": 11,
+      "choices": [
+        "No profit no loss",
+        "5%",
+        "8%",
+        "10%",
+        "None"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S9",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "Sort the numbers first: what was PAID in total (cost price) and what was RECEIVED (selling price)?",
+        "level_1": "Profit = selling price \u2212 total cost. Loss = total cost \u2212 selling price. Numbers here: 26, 20, 30, 36.",
+        "level_2": "Percent: (profit or loss \u00f7 cost price) \u00d7 100 = ? %"
+      }
+    },
+    {
+      "id": "wb_L4_s09_q12",
+      "stem": "Shopkeeper 10% discount, still gains 20%. Marked price if CP Rs 450?",
+      "interaction_mode": "mcq",
+      "topic": "Profit and Loss",
+      "difficulty_tier": "challenge",
+      "question_number": 12,
+      "choices": [
+        "Rs 800",
+        "Rs 400",
+        "Rs 600",
+        "Rs 379"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S9",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "Sort the numbers first: what was PAID in total (cost price) and what was RECEIVED (selling price)?",
+        "level_1": "Profit = selling price \u2212 total cost. Loss = total cost \u2212 selling price. Numbers here: 10, 20, 450.",
+        "level_2": "Percent: (profit or loss \u00f7 cost price) \u00d7 100 = ? %"
+      }
+    },
+    {
+      "id": "wb_L4_s09_q13",
+      "stem": "Article sold at 10% loss. If bought 20% less and sold Rs 44 more, would gain 40%. CP?",
+      "interaction_mode": "mcq",
+      "topic": "Profit and Loss",
+      "difficulty_tier": "challenge",
+      "question_number": 13,
+      "choices": [
+        "150",
+        "200",
+        "250",
+        "400"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S9",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "Sort the numbers first: what was PAID in total (cost price) and what was RECEIVED (selling price)?",
+        "level_1": "Profit = selling price \u2212 total cost. Loss = total cost \u2212 selling price. Numbers here: 10, 20, 44, 40.",
+        "level_2": "Percent: (profit or loss \u00f7 cost price) \u00d7 100 = ? %"
+      }
+    },
+    {
+      "id": "wb_L4_s09_q15",
+      "stem": "TV sold Rs 1540, 30% loss. SP for 30% profit?",
+      "interaction_mode": "mcq",
+      "topic": "Profit and Loss",
+      "difficulty_tier": "challenge",
+      "question_number": 15,
+      "choices": [
+        "Rs 2920",
+        "Rs 2480",
+        "Rs 2680",
+        "Rs 2860"
+      ],
+      "correct_answer": 3,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S9",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "Sort the numbers first: what was PAID in total (cost price) and what was RECEIVED (selling price)?",
+        "level_1": "Profit = selling price \u2212 total cost. Loss = total cost \u2212 selling price. Numbers here: 1540, 30, 30.",
+        "level_2": "Percent: (profit or loss \u00f7 cost price) \u00d7 100 = ? %"
+      }
+    }
+  ]
+}

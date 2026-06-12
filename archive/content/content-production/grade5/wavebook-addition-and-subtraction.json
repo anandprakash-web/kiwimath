@@ -1,0 +1,224 @@
+{
+ "topic_id": "wavebook-addition-and-subtraction",
+ "topic_name": "Wavebook: Addition and Subtraction",
+ "topic_emoji": "📘",
+ "grade": 5,
+ "domain": "wavebook",
+ "source": "wavebook",
+ "total_questions": 9,
+ "difficulty_range": {
+  "min": 0,
+  "max": 0
+ },
+ "questions": [
+  {
+   "id": "wb_L4_s07_q01",
+   "stem": "What is the sum of the first 10 odd numbers?",
+   "interaction_mode": "mcq",
+   "topic": "Addition and Subtraction",
+   "difficulty_tier": "warmup",
+   "question_number": 1,
+   "choices": [
+    "90",
+    "100",
+    "110",
+    "120"
+   ],
+   "correct_answer": 1,
+   "grade_band": "5-6",
+   "source": "Wavebook L4 S7",
+   "diagnostics": {},
+   "hint": {
+    "level_0": "Write out the numbers being summed before adding anything.",
+    "level_1": "Pair them up — first + last, second + second-last. Each pair adds to the same total!",
+    "level_2": "Number of pairs × pair total = ?"
+   }
+  },
+  {
+   "id": "wb_L4_s07_q02",
+   "stem": "If a + b = 15 and a - b = 5, what is the value of a?",
+   "interaction_mode": "mcq",
+   "topic": "Addition and Subtraction",
+   "difficulty_tier": "warmup",
+   "question_number": 2,
+   "choices": [
+    "10",
+    "5",
+    "15",
+    "20"
+   ],
+   "correct_answer": 0,
+   "grade_band": "5-6",
+   "source": "Wavebook L4 S7",
+   "diagnostics": {},
+   "hint": {
+    "level_0": "Two facts: a + b = 15 and a − b = 5. We want one of the letters.",
+    "level_1": "Add the two equations together — the b's cancel out, leaving only a's.",
+    "level_2": "2a = 15 + 5, so a = (15 + 5) ÷ 2 = ?"
+   }
+  },
+  {
+   "id": "wb_L4_s07_q04",
+   "stem": "The sum of two consecutive even numbers is 54. What is the smaller number?",
+   "interaction_mode": "mcq",
+   "topic": "Addition and Subtraction",
+   "difficulty_tier": "warmup",
+   "question_number": 4,
+   "choices": [
+    "26",
+    "28",
+    "24",
+    "22"
+   ],
+   "correct_answer": 0,
+   "grade_band": "5-6",
+   "source": "Wavebook L4 S7",
+   "svg": "wb_L4_s07_q04.svg",
+   "diagnostics": {},
+   "hint": {
+    "level_0": "What is known (54) and what exactly is asked? Say it in your own words.",
+    "level_1": "Choose the operation the story needs (add, subtract, multiply, divide) and set it up with 54.",
+    "level_2": "Write the calculation out and solve it step by step: ... = ?"
+   }
+  },
+  {
+   "id": "wb_L4_s07_q07",
+   "stem": "What should be added to 367 to get 1000?",
+   "interaction_mode": "mcq",
+   "topic": "Addition and Subtraction",
+   "difficulty_tier": "practice",
+   "question_number": 7,
+   "choices": [
+    "633",
+    "643",
+    "733",
+    "533"
+   ],
+   "correct_answer": 0,
+   "grade_band": "5-6",
+   "source": "Wavebook L4 S7",
+   "diagnostics": {},
+   "hint": {
+    "level_0": "What is known (367, 1000) and what exactly is asked? Say it in your own words.",
+    "level_1": "Choose the operation the story needs (add, subtract, multiply, divide) and set it up with 367, 1000.",
+    "level_2": "Write the calculation out and solve it step by step: ... = ?"
+   }
+  },
+  {
+   "id": "wb_L4_s07_q08",
+   "stem": "The difference between two numbers is 256. If the smaller number is 389, what is the larger number?",
+   "interaction_mode": "mcq",
+   "topic": "Addition and Subtraction",
+   "difficulty_tier": "practice",
+   "question_number": 8,
+   "choices": [
+    "133",
+    "256",
+    "645",
+    "745"
+   ],
+   "correct_answer": 2,
+   "grade_band": "5-6",
+   "source": "Wavebook L4 S7",
+   "diagnostics": {},
+   "hint": {
+    "level_0": "What is known (256, 389) and what exactly is asked? Say it in your own words.",
+    "level_1": "Choose the operation the story needs (add, subtract, multiply, divide) and set it up with 256, 389.",
+    "level_2": "Write the calculation out and solve it step by step: ... = ?"
+   }
+  },
+  {
+   "id": "wb_L4_s07_q09",
+   "stem": "What is 9999 + 999 + 99 + 9?",
+   "interaction_mode": "mcq",
+   "topic": "Addition and Subtraction",
+   "difficulty_tier": "practice",
+   "question_number": 9,
+   "choices": [
+    "10000",
+    "11016",
+    "11106",
+    "11116"
+   ],
+   "correct_answer": 2,
+   "grade_band": "5-6",
+   "source": "Wavebook L4 S7",
+   "diagnostics": {},
+   "hint": {
+    "level_0": "What is known (9999, 999, 99, 9) and what exactly is asked? Say it in your own words.",
+    "level_1": "Choose the operation the story needs (add, subtract, multiply, divide) and set it up with 9999, 999, 99.",
+    "level_2": "Write the calculation out and solve it step by step: ... = ?"
+   }
+  },
+  {
+   "id": "wb_L4_s07_q11",
+   "stem": "A shopkeeper had 5000 items. He sold 2367 on Monday and 1589 on Tuesday. How many items are left?",
+   "interaction_mode": "mcq",
+   "topic": "Addition and Subtraction",
+   "difficulty_tier": "challenge",
+   "question_number": 11,
+   "choices": [
+    "1034",
+    "1044",
+    "1144",
+    "1054"
+   ],
+   "correct_answer": 3,
+   "grade_band": "5-6",
+   "source": "Wavebook L4 S7",
+   "diagnostics": {},
+   "hint": {
+    "level_0": "What is known (5000, 2367, 1589) and what exactly is asked? Say it in your own words.",
+    "level_1": "Choose the operation the story needs (add, subtract, multiply, divide) and set it up with 5000, 2367, 1589.",
+    "level_2": "Write the calculation out and solve it step by step: ... = ?"
+   }
+  },
+  {
+   "id": "wb_L4_s07_q13",
+   "stem": "The sum of three consecutive numbers is 96. What is the middle number?",
+   "interaction_mode": "mcq",
+   "topic": "Addition and Subtraction",
+   "difficulty_tier": "challenge",
+   "question_number": 13,
+   "choices": [
+    "31",
+    "32",
+    "33",
+    "34"
+   ],
+   "correct_answer": 1,
+   "grade_band": "5-6",
+   "source": "Wavebook L4 S7",
+   "svg": "wb_L4_s07_q13.svg",
+   "diagnostics": {},
+   "hint": {
+    "level_0": "What is known (96) and what exactly is asked? Say it in your own words.",
+    "level_1": "Choose the operation the story needs (add, subtract, multiply, divide) and set it up with 96.",
+    "level_2": "Write the calculation out and solve it step by step: ... = ?"
+   }
+  },
+  {
+   "id": "wb_L4_s07_q15",
+   "stem": "What is the value of 1 - 2 + 3 - 4 + 5 - 6 +... + 99 - 100?",
+   "interaction_mode": "mcq",
+   "topic": "Addition and Subtraction",
+   "difficulty_tier": "challenge",
+   "question_number": 15,
+   "choices": [
+    "-50",
+    "50",
+    "-100",
+    "0"
+   ],
+   "correct_answer": 0,
+   "grade_band": "5-6",
+   "source": "Wavebook L4 S7",
+   "diagnostics": {},
+   "hint": {
+    "level_0": "What is known (1, 2, 3, 4) and what exactly is asked? Say it in your own words.",
+    "level_1": "Choose the operation the story needs (add, subtract, multiply, divide) and set it up with 1, 2, 3.",
+    "level_2": "Write the calculation out and solve it step by step: ... = ?"
+   }
+  }
+ ]
+}

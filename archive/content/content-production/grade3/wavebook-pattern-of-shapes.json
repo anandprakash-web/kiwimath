@@ -1,0 +1,364 @@
+{
+  "topic_id": "wavebook-pattern-of-shapes",
+  "topic_name": "Wavebook: Pattern of shapes",
+  "topic_emoji": "\ud83d\udcd8",
+  "grade": 3,
+  "domain": "wavebook",
+  "source": "wavebook",
+  "total_questions": 15,
+  "difficulty_range": {
+    "min": 0,
+    "max": 0
+  },
+  "questions": [
+    {
+      "id": "wb_L3_s32_q01",
+      "stem": "Statement: All squares are rectangles. Which is correct?",
+      "interaction_mode": "mcq",
+      "topic": "Pattern of shapes",
+      "difficulty_tier": "warmup",
+      "question_number": 1,
+      "choices": [
+        "True",
+        "False",
+        "Partially true",
+        "Cannot say"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S32",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "Judge each statement on its OWN first \u2014 true or false?",
+        "level_1": "Recall the exact math fact each statement uses; test it with a small example if unsure.",
+        "level_2": "Now combine your verdicts and pick the choice that matches them = ?"
+      }
+    },
+    {
+      "id": "wb_L3_s32_q02",
+      "stem": "Assertion: A triangle has 3 sides. Reason: The sum of angles in a triangle is 360 degrees.",
+      "interaction_mode": "mcq",
+      "topic": "Pattern of shapes",
+      "difficulty_tier": "warmup",
+      "question_number": 2,
+      "choices": [
+        "Both A and R are true, R is correct explanation",
+        "Both A and R are true, R is not correct explanation",
+        "A is true, R is false",
+        "A is false, R is true"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S32",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "Judge each statement on its OWN first \u2014 true or false?",
+        "level_1": "Recall the exact math fact each statement uses; test it with a small example if unsure.",
+        "level_2": "Now combine your verdicts and pick the choice that matches them = ?"
+      }
+    },
+    {
+      "id": "wb_L3_s32_q03",
+      "stem": "Statement I: A square has 4 lines of symmetry. Statement II: A rectangle has 2 lines of symmetry. Which is correct?",
+      "interaction_mode": "mcq",
+      "topic": "Pattern of shapes",
+      "difficulty_tier": "warmup",
+      "question_number": 3,
+      "choices": [
+        "Only I",
+        "Only II",
+        "Both I and II",
+        "Neither I nor II"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S32",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 180\" width=\"300\" height=\"180\" style=\"font-family:Arial,sans-serif\"><rect x=\"50\" y=\"30\" width=\"200\" height=\"120\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2.5\" rx=\"2\"/></svg>",
+      "hint": {
+        "level_0": "A line of symmetry folds the shape onto itself exactly \u2014 both halves match.",
+        "level_1": "Test each shape in your head: fold it top-to-bottom, left-to-right, and along the diagonals.",
+        "level_2": "Count the folds that work perfectly for each choice \u2014 which fits what the question asks? = ?"
+      }
+    },
+    {
+      "id": "wb_L3_s32_q04",
+      "stem": "Assertion: The number 12 is divisible by 3. Reason: 1 + 2 = 3, which is divisible by 3.",
+      "interaction_mode": "mcq",
+      "topic": "Pattern of shapes",
+      "difficulty_tier": "warmup",
+      "question_number": 4,
+      "choices": [
+        "Both A and R are true, R is correct explanation",
+        "Both A and R are true, R is not correct explanation",
+        "A is true, R is false",
+        "A is false, R is true"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S32",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "When is a number divisible by 3? Recall the rule before checking anything.",
+        "level_1": "Rule: a number divides by 3 when the sum of the digits divides by 3.",
+        "level_2": "Apply the rule to the number in the question, step by step: does it pass the test for 3? = ?"
+      }
+    },
+    {
+      "id": "wb_L3_s32_q05",
+      "stem": "Statement: All prime numbers are odd. Which is correct?",
+      "interaction_mode": "mcq",
+      "topic": "Pattern of shapes",
+      "difficulty_tier": "warmup",
+      "question_number": 5,
+      "choices": [
+        "True",
+        "False",
+        "True only for numbers > 2",
+        "Cannot determine"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S32",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "A prime number has exactly two factors: 1 and itself. Co-primes share NO common factor except 1.",
+        "level_1": "Check the numbers in the question one by one: list their factors.",
+        "level_2": "Use the definitions on the given numbers and match the choice that fits = ?"
+      }
+    },
+    {
+      "id": "wb_L3_s32_q06",
+      "stem": "Assertion: 0 is a natural number. Reason: Natural numbers start from 1.",
+      "interaction_mode": "mcq",
+      "topic": "Pattern of shapes",
+      "difficulty_tier": "practice",
+      "question_number": 6,
+      "choices": [
+        "Both A and R are true, R is correct explanation",
+        "A is false, R is true",
+        "A is true, R is false",
+        "Both are false"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S32",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "Judge each statement on its OWN first \u2014 true or false?",
+        "level_1": "Recall the exact math fact each statement uses; test it with a small example if unsure.",
+        "level_2": "Now combine your verdicts and pick the choice that matches them = ?"
+      }
+    },
+    {
+      "id": "wb_L3_s32_q07",
+      "stem": "Statement I: A rhombus has all sides equal. Statement II: A rhombus has all angles equal. Which is correct?",
+      "interaction_mode": "mcq",
+      "topic": "Pattern of shapes",
+      "difficulty_tier": "practice",
+      "question_number": 7,
+      "choices": [
+        "Only I",
+        "Only II",
+        "Both I and II",
+        "Neither"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S32",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "Judge each statement on its OWN first \u2014 true or false?",
+        "level_1": "Recall the exact math fact each statement uses; test it with a small example if unsure.",
+        "level_2": "Now combine your verdicts and pick the choice that matches them = ?"
+      }
+    },
+    {
+      "id": "wb_L3_s32_q08",
+      "stem": "Assertion: The area of a rectangle with length 5 and breadth 3 is 15. Reason: Area of rectangle = length + breadth.",
+      "interaction_mode": "mcq",
+      "topic": "Pattern of shapes",
+      "difficulty_tier": "practice",
+      "question_number": 8,
+      "choices": [
+        "Both A and R are true, R is correct explanation",
+        "A is true, R is false",
+        "A is false, R is true",
+        "Both are false"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S32",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "The rectangle is 5 long and 3 wide. How many unit squares cover it \u2014 that is, what is the area?",
+        "level_1": "Think of 3 rows with 5 squares in each row.",
+        "level_2": "Area = length \u00d7 breadth = 5 \u00d7 3 = ?"
+      }
+    },
+    {
+      "id": "wb_L3_s32_q09",
+      "stem": "Statement: A circle has infinite lines of symmetry.",
+      "interaction_mode": "mcq",
+      "topic": "Pattern of shapes",
+      "difficulty_tier": "practice",
+      "question_number": 9,
+      "choices": [
+        "True",
+        "False",
+        "It has only 4",
+        "It has only 2"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S32",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 180\" width=\"300\" height=\"180\" style=\"font-family:Arial,sans-serif\"><circle cx=\"150\" cy=\"90\" r=\"70\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2.5\"/></svg>",
+      "hint": {
+        "level_0": "A line of symmetry folds the shape onto itself exactly \u2014 both halves match.",
+        "level_1": "Test each shape in your head: fold it top-to-bottom, left-to-right, and along the diagonals.",
+        "level_2": "Count the folds that work perfectly for each choice \u2014 which fits what the question asks? = ?"
+      }
+    },
+    {
+      "id": "wb_L3_s32_q10",
+      "stem": "Assertion: 7 x 8 = 54. Reason: Multiplication is repeated addition.",
+      "interaction_mode": "mcq",
+      "topic": "Pattern of shapes",
+      "difficulty_tier": "practice",
+      "question_number": 10,
+      "choices": [
+        "Both A and R are true, R is correct explanation",
+        "Both A and R are true, R is not correct explanation",
+        "A is false, R is true",
+        "Both are false"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S32",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "Judge each statement on its OWN first \u2014 true or false?",
+        "level_1": "Recall the exact math fact each statement uses; test it with a small example if unsure.",
+        "level_2": "Now combine your verdicts and pick the choice that matches them = ?"
+      }
+    },
+    {
+      "id": "wb_L3_s32_q11",
+      "stem": "Statement I: The perimeter of a square with side 5 cm is 20 cm. Statement II: The area of the same square is 20 sq cm.",
+      "interaction_mode": "mcq",
+      "topic": "Pattern of shapes",
+      "difficulty_tier": "challenge",
+      "question_number": 11,
+      "choices": [
+        "Only I is true",
+        "Only II is true",
+        "Both are true",
+        "Neither is true"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S32",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "We know each side of the square is 5. What is the perimeter \u2014 the total distance around the shape?",
+        "level_1": "A square has 4 equal sides, each 5. Add them: 5 + 5 + 5 + 5, or multiply.",
+        "level_2": "Perimeter of a square = 4 \u00d7 side = 4 \u00d7 5 = ?"
+      }
+    },
+    {
+      "id": "wb_L3_s32_q12",
+      "stem": "Assertion: February has 29 days in a leap year. Reason: A leap year is divisible by 4 but not by 100, unless also divisible by 400.",
+      "interaction_mode": "mcq",
+      "topic": "Pattern of shapes",
+      "difficulty_tier": "challenge",
+      "question_number": 12,
+      "choices": [
+        "Both A and R are true, R is correct explanation",
+        "Both A and R are true, R is not correct explanation",
+        "A is true, R is false",
+        "A is false, R is true"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S32",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "When is a number divisible by 4? Recall the rule before checking anything.",
+        "level_1": "Rule: a number divides by 4 when the last two digits divide by 4.",
+        "level_2": "Apply the rule to the number in the question, step by step: does it pass the test for 4? = ?"
+      }
+    },
+    {
+      "id": "wb_L3_s32_q13",
+      "stem": "Statement: The smallest 3-digit number is 100.",
+      "interaction_mode": "mcq",
+      "topic": "Pattern of shapes",
+      "difficulty_tier": "challenge",
+      "question_number": 13,
+      "choices": [
+        "True",
+        "False",
+        "It is 101",
+        "It is 001"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S32",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "Judge each statement on its OWN first \u2014 true or false?",
+        "level_1": "Recall the exact math fact each statement uses; test it with a small example if unsure.",
+        "level_2": "Now combine your verdicts and pick the choice that matches them = ?"
+      }
+    },
+    {
+      "id": "wb_L3_s32_q14",
+      "stem": "Assertion: A cube has 8 faces. Reason: A cube is a 3D shape with all sides equal.",
+      "interaction_mode": "mcq",
+      "topic": "Pattern of shapes",
+      "difficulty_tier": "challenge",
+      "question_number": 14,
+      "choices": [
+        "Both A and R are true, R is correct explanation",
+        "A is false, R is true",
+        "Both are true, R is not correct explanation",
+        "Both are false"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S32",
+      "svg": "wb_L3_s32_q14.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 190\" width=\"260\" height=\"190\" style=\"font-family:Arial,sans-serif\"><polygon points=\"60,60 160,60 160,160 60,160\" fill=\"#E8F4FD\" stroke=\"#333\" stroke-width=\"2\"/><polygon points=\"60,60 100,30 200,30 160,60\" fill=\"#D0E8F0\" stroke=\"#333\" stroke-width=\"2\"/><polygon points=\"160,60 200,30 200,130 160,160\" fill=\"#B8D8E8\" stroke=\"#333\" stroke-width=\"2\"/></svg>",
+      "hint": {
+        "level_0": "Picture a real dice in your hand (or grab one!). What feature does the question ask about?",
+        "level_1": "Turn it slowly: count the flat surfaces, the straight edges where two surfaces meet, or the sharp corners.",
+        "level_2": "Count systematically \u2014 top/bottom, then the ring around the middle. Total = ?"
+      }
+    },
+    {
+      "id": "wb_L3_s32_q15",
+      "stem": "Statement I: HCF of 12 and 18 is 6. Statement II: LCM of 12 and 18 is 36.",
+      "interaction_mode": "mcq",
+      "topic": "Pattern of shapes",
+      "difficulty_tier": "challenge",
+      "question_number": 15,
+      "choices": [
+        "Only I is true",
+        "Only II is true",
+        "Both are true",
+        "Neither is true"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S32",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "We need the H.C.F. of 12 and 18 \u2014 the LARGEST number that divides both exactly.",
+        "level_1": "List the factors of 12 and the factors of 18. Circle the ones they share.",
+        "level_2": "Of the common factors of 12 and 18, the largest one = ?"
+      }
+    }
+  ]
+}

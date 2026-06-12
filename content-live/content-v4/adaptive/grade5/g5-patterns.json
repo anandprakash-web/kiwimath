@@ -1,0 +1,2989 @@
+{
+  "topic_id": "g5-patterns",
+  "topic_name": "Patterns & Logic",
+  "topic_emoji": "\ud83e\udde9",
+  "grade": 5,
+  "domain": "numbers",
+  "skills": [
+    "number_patterns"
+  ],
+  "total_questions": 31,
+  "difficulty_range": {
+    "min_irt_b": -1.49,
+    "max_irt_b": 1.24
+  },
+  "source_breakdown": {
+    "ncert": 31
+  },
+  "schema_version": "4.2",
+  "generated_at": "2026-05-03T09:32:39.963797",
+  "questions": [
+    {
+      "id": "A5-PAT-0001",
+      "stem": "Find the next number: 9, 12, 15, 18, ?",
+      "choices": [],
+      "correct_answer": 2,
+      "difficulty_tier": "easy-medium",
+      "difficulty_score": 202,
+      "visual_svg": null,
+      "visual_alt": null,
+      "diagnostics": {
+        "1": "Wrong pattern identified",
+        "2": "Arithmetic error",
+        "3": "Skipped a term"
+      },
+      "tags": [
+        "patterns",
+        "sequences"
+      ],
+      "topic": "ncert_g5_patterns",
+      "chapter": "Ch10: Patterns",
+      "hint": {
+        "level_0": "Look for a pattern between consecutive numbers.",
+        "level_1": "Find the difference or ratio between terms. The next number is 21. Try working out the calculation step-by-step. Double-check your final calculation.",
+        "level_2": "Look at how things change from one step to the next \u2014 that's the rule!"
+      },
+      "curriculum_tags": [],
+      "irt_params": {
+        "a": 1.4,
+        "b": -1.49,
+        "c": 0.25
+      },
+      "irt_a": 1.4,
+      "irt_b": -1.49,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Find the rule connecting consecutive terms",
+        "Apply the rule to the last known term",
+        "The next number is 21"
+      ],
+      "interaction_mode": "integer",
+      "correct_value": 21,
+      "level": 5,
+      "level_name": "Strategist",
+      "universal_skill_id": "NUM_PATTERN_5",
+      "skill_id": "number_patterns",
+      "skill_domain": "numbers",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "none",
+      "visual_type": "none",
+      "visual_ai_verified": false,
+      "media_id": null,
+      "media_hash": null,
+      "misconception_ids": [
+        "MISC_1",
+        "SKIP_COUNT_ERR",
+        "MISC_2"
+      ],
+      "why_quality": "ai_generated",
+      "why_framework": "pending",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "good",
+        "has_3_layers": true
+      },
+      "curriculum_source": "ncert",
+      "curriculum_map": {
+        "cbse": "Ch3: Patterns",
+        "icse": "Ch3: Patterns",
+        "cambridge": "Na - Algebra",
+        "singapore": "Patterns",
+        "common_core": "OA - Operations & Algebraic Thinking"
+      },
+      "school_grade": 5,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "adaptive_topic_id": "g5-patterns",
+      "adaptive_topic_name": "Patterns & Logic",
+      "adaptive_topic_emoji": "\ud83e\udde9",
+      "adaptive_grade": 5,
+      "dual_tagged": true,
+      "content_source": "ncert",
+      "sequence_id": 1,
+      "difficulty_tier_in_topic": "intro",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "original_id": "NCERT-G5-509"
+    },
+    {
+      "id": "A5-PAT-0002",
+      "stem": "What comes next: 14, 20, 26, 32, ?",
+      "choices": [
+        "39",
+        "44",
+        "38",
+        "37"
+      ],
+      "correct_answer": 2,
+      "difficulty_tier": "easy-medium",
+      "difficulty_score": 212,
+      "visual_svg": "<svg viewBox=\"0 0 280 55\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"30\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"30\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">14</text><circle cx=\"75\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"75\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">20</text><circle cx=\"120\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"120\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">26</text><circle cx=\"165\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"165\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">32</text><circle cx=\"210\" cy=\"25\" r=\"18\" fill=\"#FFF3E0\" stroke=\"#F57C00\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"210\" y=\"31\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#F57C00\">?</text></svg>",
+      "visual_alt": "Visual for: What comes next: 14, 20, 26, 32, ?",
+      "diagnostics": {
+        "0": "Wrong pattern identified",
+        "1": "Arithmetic error",
+        "3": "Skipped a term"
+      },
+      "tags": [
+        "patterns",
+        "sequences"
+      ],
+      "topic": "ncert_g5_patterns",
+      "chapter": "Ch10: Patterns",
+      "hint": {
+        "level_0": "Look for a pattern between consecutive numbers.",
+        "level_1": "Find the difference or ratio between terms. The next number is 38.",
+        "level_2": "Look at how things change from one step to the next \u2014 that's the rule!"
+      },
+      "curriculum_tags": [],
+      "irt_params": {
+        "a": 1.11,
+        "b": -1.33,
+        "c": 0.25
+      },
+      "irt_a": 1.11,
+      "irt_b": -1.33,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Find the rule connecting consecutive terms",
+        "Apply the rule to the last known term",
+        "The next number is 38"
+      ],
+      "interaction_mode": "mcq",
+      "level": 5,
+      "level_name": "Strategist",
+      "universal_skill_id": "NUM_PATTERN_5",
+      "skill_id": "number_patterns",
+      "skill_domain": "numbers",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "optional",
+      "visual_type": "none",
+      "visual_ai_verified": false,
+      "media_id": null,
+      "media_hash": null,
+      "misconception_ids": [
+        "MISC_1",
+        "SKIP_COUNT_ERR",
+        "MISC_2"
+      ],
+      "why_quality": "ai_generated",
+      "why_framework": "pending",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "good",
+        "has_3_layers": true
+      },
+      "curriculum_source": "ncert",
+      "curriculum_map": {
+        "cbse": "Ch3: Patterns",
+        "icse": "Ch3: Patterns",
+        "cambridge": "Na - Algebra",
+        "singapore": "Patterns",
+        "common_core": "OA - Operations & Algebraic Thinking"
+      },
+      "school_grade": 5,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "adaptive_topic_id": "g5-patterns",
+      "adaptive_topic_name": "Patterns & Logic",
+      "adaptive_topic_emoji": "\ud83e\udde9",
+      "adaptive_grade": 5,
+      "dual_tagged": true,
+      "content_source": "ncert",
+      "sequence_id": 2,
+      "difficulty_tier_in_topic": "intro",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "original_id": "NCERT-G5-633"
+    },
+    {
+      "id": "A5-PAT-0003",
+      "stem": "Find the next number: 1, 8, 15, 22, ?",
+      "choices": [],
+      "correct_answer": 1,
+      "difficulty_tier": "easy-medium",
+      "difficulty_score": 205,
+      "visual_svg": null,
+      "visual_alt": null,
+      "diagnostics": {
+        "1": "Wrong pattern identified",
+        "2": "Arithmetic error",
+        "3": "Skipped a term"
+      },
+      "tags": [
+        "patterns",
+        "sequences"
+      ],
+      "topic": "ncert_g5_patterns",
+      "chapter": "Ch10: Patterns",
+      "hint": {
+        "level_0": "Look for a pattern between consecutive numbers.",
+        "level_1": "Find the difference or ratio between terms. The next number is 29. Try working out the calculation step-by-step. Double-check your final calculation.",
+        "level_2": "Look at how things change from one step to the next \u2014 that's the rule!"
+      },
+      "curriculum_tags": [],
+      "irt_params": {
+        "a": 0.98,
+        "b": -1.31,
+        "c": 0.25
+      },
+      "irt_a": 0.98,
+      "irt_b": -1.31,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Find the rule connecting consecutive terms",
+        "Apply the rule to the last known term",
+        "The next number is 29"
+      ],
+      "interaction_mode": "integer",
+      "correct_value": 29,
+      "level": 5,
+      "level_name": "Strategist",
+      "universal_skill_id": "NUM_PATTERN_5",
+      "skill_id": "number_patterns",
+      "skill_domain": "numbers",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "none",
+      "visual_type": "none",
+      "visual_ai_verified": false,
+      "media_id": null,
+      "media_hash": null,
+      "misconception_ids": [
+        "MISC_1",
+        "SKIP_COUNT_ERR",
+        "MISC_2"
+      ],
+      "why_quality": "ai_generated",
+      "why_framework": "pending",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "good",
+        "has_3_layers": true
+      },
+      "curriculum_source": "ncert",
+      "curriculum_map": {
+        "cbse": "Ch3: Patterns",
+        "icse": "Ch3: Patterns",
+        "cambridge": "Na - Algebra",
+        "singapore": "Patterns",
+        "common_core": "OA - Operations & Algebraic Thinking"
+      },
+      "school_grade": 5,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "adaptive_topic_id": "g5-patterns",
+      "adaptive_topic_name": "Patterns & Logic",
+      "adaptive_topic_emoji": "\ud83e\udde9",
+      "adaptive_grade": 5,
+      "dual_tagged": true,
+      "content_source": "ncert",
+      "sequence_id": 3,
+      "difficulty_tier_in_topic": "intro",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "original_id": "NCERT-G5-544"
+    },
+    {
+      "id": "A5-PAT-0004",
+      "stem": "What comes next: 7, 16, 25, 34, ?",
+      "choices": [
+        "44",
+        "43",
+        "52",
+        "42"
+      ],
+      "correct_answer": 1,
+      "difficulty_tier": "easy-medium",
+      "difficulty_score": 207,
+      "visual_svg": "<svg viewBox=\"0 0 280 55\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"30\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"30\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">7</text><circle cx=\"75\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"75\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">16</text><circle cx=\"120\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"120\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">25</text><circle cx=\"165\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"165\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">34</text><circle cx=\"210\" cy=\"25\" r=\"18\" fill=\"#FFF3E0\" stroke=\"#F57C00\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"210\" y=\"31\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#F57C00\">?</text></svg>",
+      "visual_alt": "Visual for: What comes next: 7, 16, 25, 34, ?",
+      "diagnostics": {
+        "0": "Wrong pattern identified",
+        "2": "Arithmetic error",
+        "3": "Skipped a term"
+      },
+      "tags": [
+        "patterns",
+        "sequences"
+      ],
+      "topic": "ncert_g5_patterns",
+      "chapter": "Ch10: Patterns",
+      "hint": {
+        "level_0": "Look for a pattern between consecutive numbers.",
+        "level_1": "Find the difference or ratio between terms. The next number is 43.",
+        "level_2": "Look at how things change from one step to the next \u2014 that's the rule!"
+      },
+      "curriculum_tags": [],
+      "irt_params": {
+        "a": 0.87,
+        "b": -1.21,
+        "c": 0.25
+      },
+      "irt_a": 0.87,
+      "irt_b": -1.21,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Find the rule connecting consecutive terms",
+        "Apply the rule to the last known term",
+        "The next number is 43"
+      ],
+      "interaction_mode": "mcq",
+      "level": 5,
+      "level_name": "Strategist",
+      "universal_skill_id": "NUM_PATTERN_5",
+      "skill_id": "number_patterns",
+      "skill_domain": "numbers",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "optional",
+      "visual_type": "none",
+      "visual_ai_verified": false,
+      "media_id": null,
+      "media_hash": null,
+      "misconception_ids": [
+        "MISC_1",
+        "SKIP_COUNT_ERR",
+        "MISC_2"
+      ],
+      "why_quality": "ai_generated",
+      "why_framework": "pending",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "good",
+        "has_3_layers": true
+      },
+      "curriculum_source": "ncert",
+      "curriculum_map": {
+        "cbse": "Ch3: Patterns",
+        "icse": "Ch3: Patterns",
+        "cambridge": "Na - Algebra",
+        "singapore": "Patterns",
+        "common_core": "OA - Operations & Algebraic Thinking"
+      },
+      "school_grade": 5,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "adaptive_topic_id": "g5-patterns",
+      "adaptive_topic_name": "Patterns & Logic",
+      "adaptive_topic_emoji": "\ud83e\udde9",
+      "adaptive_grade": 5,
+      "dual_tagged": true,
+      "content_source": "ncert",
+      "sequence_id": 5,
+      "difficulty_tier_in_topic": "intro",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "original_id": "NCERT-G5-568"
+    },
+    {
+      "id": "A5-PAT-0005",
+      "stem": "What comes next: 18, 23, 28, 33, ?",
+      "choices": [
+        "43",
+        "38",
+        "39",
+        "37"
+      ],
+      "correct_answer": 1,
+      "difficulty_tier": "easy-medium",
+      "difficulty_score": 215,
+      "visual_svg": "<svg viewBox=\"0 0 280 55\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"30\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"30\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">18</text><circle cx=\"75\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"75\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">23</text><circle cx=\"120\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"120\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">28</text><circle cx=\"165\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"165\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">33</text><circle cx=\"210\" cy=\"25\" r=\"18\" fill=\"#FFF3E0\" stroke=\"#F57C00\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"210\" y=\"31\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#F57C00\">?</text></svg>",
+      "visual_alt": "Visual for: What comes next: 18, 23, 28, 33, ?",
+      "diagnostics": {
+        "0": "Wrong pattern identified",
+        "2": "Arithmetic error",
+        "3": "Skipped a term"
+      },
+      "tags": [
+        "patterns",
+        "sequences"
+      ],
+      "topic": "ncert_g5_patterns",
+      "chapter": "Ch10: Patterns",
+      "hint": {
+        "level_0": "Look for a pattern between consecutive numbers.",
+        "level_1": "Find the difference or ratio between terms. The next number is 38.",
+        "level_2": "Look at how things change from one step to the next \u2014 that's the rule!"
+      },
+      "curriculum_tags": [],
+      "irt_params": {
+        "a": 1.66,
+        "b": -0.66,
+        "c": 0.25
+      },
+      "irt_a": 1.66,
+      "irt_b": -0.66,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Find the rule connecting consecutive terms",
+        "Apply the rule to the last known term",
+        "The next number is 38"
+      ],
+      "interaction_mode": "mcq",
+      "level": 5,
+      "level_name": "Strategist",
+      "universal_skill_id": "NUM_PATTERN_5",
+      "skill_id": "number_patterns",
+      "skill_domain": "numbers",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "optional",
+      "visual_type": "none",
+      "visual_ai_verified": false,
+      "media_id": null,
+      "media_hash": null,
+      "misconception_ids": [
+        "MISC_1",
+        "SKIP_COUNT_ERR",
+        "MISC_2"
+      ],
+      "why_quality": "ai_generated",
+      "why_framework": "pending",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "good",
+        "has_3_layers": true
+      },
+      "curriculum_source": "ncert",
+      "curriculum_map": {
+        "cbse": "Ch3: Patterns",
+        "icse": "Ch3: Patterns",
+        "cambridge": "Na - Algebra",
+        "singapore": "Patterns",
+        "common_core": "OA - Operations & Algebraic Thinking"
+      },
+      "school_grade": 5,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "adaptive_topic_id": "g5-patterns",
+      "adaptive_topic_name": "Patterns & Logic",
+      "adaptive_topic_emoji": "\ud83e\udde9",
+      "adaptive_grade": 5,
+      "dual_tagged": true,
+      "content_source": "ncert",
+      "sequence_id": 9,
+      "difficulty_tier_in_topic": "intro",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "original_id": "NCERT-G5-666"
+    },
+    {
+      "id": "A5-PAT-0006",
+      "stem": "What is the next number in the pattern: 9, 12, 15, 18, 21, ...?",
+      "choices": [],
+      "correct_answer": 2,
+      "difficulty_tier": "easy-medium",
+      "difficulty_score": 25,
+      "visual_svg": "<svg viewBox=\"0 0 330 55\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"30\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"30\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">9</text><circle cx=\"75\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"75\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">12</text><circle cx=\"120\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"120\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">15</text><circle cx=\"165\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"165\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">18</text><circle cx=\"210\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"210\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">21</text><circle cx=\"255\" cy=\"25\" r=\"18\" fill=\"#FFF3E0\" stroke=\"#F57C00\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"255\" y=\"31\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#F57C00\">?</text></svg>",
+      "visual_alt": "Visual for: What is the next number in the pattern: 9, 12, 15,",
+      "diagnostics": {
+        "1": "Wrong common difference",
+        "2": "Multiplied instead of added",
+        "3": "Pattern recognition error"
+      },
+      "tags": [
+        "patterns",
+        "sequences"
+      ],
+      "topic": "ncert_g5_patterns",
+      "chapter": "Ch10: Patterns",
+      "hint": {
+        "level_0": "Find the common difference between consecutive terms.",
+        "level_1": "Each number increases by 3. 21 + 3 = ? Try working out the calculation step-by-step. Double-check your final calculation.",
+        "level_2": "Look at how things change from one step to the next \u2014 that's the rule!"
+      },
+      "curriculum_tags": [
+        "NCERT_5_10"
+      ],
+      "irt_params": {
+        "a": 1.05,
+        "b": -0.64,
+        "c": 0.25
+      },
+      "irt_a": 1.05,
+      "irt_b": -0.64,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Look at the differences: 12-9=3",
+        "The pattern adds 3 each time",
+        "Add 3 to the last number to find next"
+      ],
+      "interaction_mode": "integer",
+      "correct_value": 24,
+      "level": 5,
+      "level_name": "Strategist",
+      "universal_skill_id": "NUM_PATTERN_5",
+      "skill_id": "number_patterns",
+      "skill_domain": "numbers",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "none",
+      "visual_type": "none",
+      "visual_ai_verified": false,
+      "media_id": null,
+      "media_hash": null,
+      "misconception_ids": [
+        "MISC_1",
+        "MISC_3",
+        "MISC_2"
+      ],
+      "why_quality": "ai_generated",
+      "why_framework": "pending",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "good",
+        "has_3_layers": true,
+        "spoiler_remediated": true
+      },
+      "curriculum_source": "ncert",
+      "curriculum_map": {
+        "cbse": "Ch3: Patterns",
+        "icse": "Ch3: Patterns",
+        "cambridge": "Na - Algebra",
+        "singapore": "Patterns",
+        "common_core": "OA - Operations & Algebraic Thinking"
+      },
+      "school_grade": 5,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "adaptive_topic_id": "g5-patterns",
+      "adaptive_topic_name": "Patterns & Logic",
+      "adaptive_topic_emoji": "\ud83e\udde9",
+      "adaptive_grade": 5,
+      "dual_tagged": true,
+      "content_source": "ncert",
+      "sequence_id": 10,
+      "difficulty_tier_in_topic": "intro",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "original_id": "NCERT-G5-043"
+    },
+    {
+      "id": "A5-PAT-0007",
+      "stem": "What is the next number in the pattern: 2, 4, 6, 8, 10, ...?",
+      "choices": [],
+      "correct_answer": 2,
+      "difficulty_tier": "easy-medium",
+      "difficulty_score": 25,
+      "visual_svg": "<svg viewBox=\"0 0 330 55\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"30\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"30\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">2</text><circle cx=\"75\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"75\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">4</text><circle cx=\"120\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"120\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">6</text><circle cx=\"165\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"165\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">8</text><circle cx=\"210\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"210\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">10</text><circle cx=\"255\" cy=\"25\" r=\"18\" fill=\"#FFF3E0\" stroke=\"#F57C00\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"255\" y=\"31\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#F57C00\">?</text></svg>",
+      "visual_alt": "Visual for: What is the next number in the pattern: 2, 4, 6, 8",
+      "diagnostics": {
+        "1": "Wrong common difference",
+        "2": "Multiplied instead of added",
+        "3": "Pattern recognition error"
+      },
+      "tags": [
+        "patterns",
+        "sequences"
+      ],
+      "topic": "ncert_g5_patterns",
+      "chapter": "Ch10: Patterns",
+      "hint": {
+        "level_0": "Find the common difference between consecutive terms.",
+        "level_1": "Each number increases by 2. 10 + 2 = ? Try working out the calculation step-by-step. Double-check your final calculation.",
+        "level_2": "Look at how things change from one step to the next \u2014 that's the rule!"
+      },
+      "curriculum_tags": [
+        "NCERT_5_10"
+      ],
+      "irt_params": {
+        "a": 1.05,
+        "b": -0.64,
+        "c": 0.25
+      },
+      "irt_a": 1.05,
+      "irt_b": -0.64,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Look at the differences: 4-2=2",
+        "The pattern adds 2 each time",
+        "Add 2 to the last number to find next"
+      ],
+      "interaction_mode": "integer",
+      "correct_value": 12,
+      "level": 5,
+      "level_name": "Strategist",
+      "universal_skill_id": "NUM_PATTERN_5",
+      "skill_id": "number_patterns",
+      "skill_domain": "numbers",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "none",
+      "visual_type": "none",
+      "visual_ai_verified": false,
+      "media_id": null,
+      "media_hash": null,
+      "misconception_ids": [
+        "MISC_1",
+        "MISC_3",
+        "MISC_2"
+      ],
+      "why_quality": "ai_generated",
+      "why_framework": "pending",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "good",
+        "has_3_layers": true,
+        "spoiler_remediated": true
+      },
+      "curriculum_source": "ncert",
+      "curriculum_map": {
+        "cbse": "Ch3: Patterns",
+        "icse": "Ch3: Patterns",
+        "cambridge": "Na - Algebra",
+        "singapore": "Patterns",
+        "common_core": "OA - Operations & Algebraic Thinking"
+      },
+      "school_grade": 5,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "adaptive_topic_id": "g5-patterns",
+      "adaptive_topic_name": "Patterns & Logic",
+      "adaptive_topic_emoji": "\ud83e\udde9",
+      "adaptive_grade": 5,
+      "dual_tagged": true,
+      "content_source": "ncert",
+      "sequence_id": 11,
+      "difficulty_tier_in_topic": "intro",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "original_id": "NCERT-G5-044"
+    },
+    {
+      "id": "A5-PAT-0008",
+      "stem": "What is the next number in the pattern: 6, 9, 12, 15, 18, ...?",
+      "choices": [],
+      "correct_answer": 0,
+      "difficulty_tier": "easy-medium",
+      "difficulty_score": 25,
+      "visual_svg": "<svg viewBox=\"0 0 330 55\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"30\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"30\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">6</text><circle cx=\"75\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"75\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">9</text><circle cx=\"120\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"120\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">12</text><circle cx=\"165\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"165\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">15</text><circle cx=\"210\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"210\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">18</text><circle cx=\"255\" cy=\"25\" r=\"18\" fill=\"#FFF3E0\" stroke=\"#F57C00\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"255\" y=\"31\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#F57C00\">?</text></svg>",
+      "visual_alt": "Visual for: What is the next number in the pattern: 6, 9, 12, ",
+      "diagnostics": {
+        "1": "Wrong common difference",
+        "2": "Multiplied instead of added",
+        "3": "Pattern recognition error"
+      },
+      "tags": [
+        "patterns",
+        "sequences"
+      ],
+      "topic": "ncert_g5_patterns",
+      "chapter": "Ch10: Patterns",
+      "hint": {
+        "level_0": "Find the common difference between consecutive terms.",
+        "level_1": "Each number increases by 3. 18 + 3 = ? Try working out the calculation step-by-step. Double-check your final calculation.",
+        "level_2": "Look at how things change from one step to the next \u2014 that's the rule!"
+      },
+      "curriculum_tags": [
+        "NCERT_5_10"
+      ],
+      "irt_params": {
+        "a": 1.05,
+        "b": -0.64,
+        "c": 0.25
+      },
+      "irt_a": 1.05,
+      "irt_b": -0.64,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Look at the differences: 9-6=3",
+        "The pattern adds 3 each time",
+        "Add 3 to the last number to find next"
+      ],
+      "interaction_mode": "integer",
+      "correct_value": 21,
+      "level": 5,
+      "level_name": "Strategist",
+      "universal_skill_id": "NUM_PATTERN_5",
+      "skill_id": "number_patterns",
+      "skill_domain": "numbers",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "none",
+      "visual_type": "2d",
+      "visual_ai_verified": false,
+      "media_id": "NCERT-G5-193.svg",
+      "media_hash": "sha256:6e3a6e7ddad15906",
+      "misconception_ids": [
+        "MISC_1",
+        "MISC_3",
+        "MISC_2"
+      ],
+      "why_quality": "ai_generated",
+      "why_framework": "pending",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "good",
+        "has_3_layers": true,
+        "spoiler_remediated": true
+      },
+      "curriculum_source": "ncert",
+      "curriculum_map": {
+        "cbse": "Ch3: Patterns",
+        "icse": "Ch3: Patterns",
+        "cambridge": "Na - Algebra",
+        "singapore": "Patterns",
+        "common_core": "OA - Operations & Algebraic Thinking"
+      },
+      "school_grade": 5,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "adaptive_topic_id": "g5-patterns",
+      "adaptive_topic_name": "Patterns & Logic",
+      "adaptive_topic_emoji": "\ud83e\udde9",
+      "adaptive_grade": 5,
+      "dual_tagged": true,
+      "content_source": "ncert",
+      "sequence_id": 12,
+      "difficulty_tier_in_topic": "intro",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "original_id": "NCERT-G5-045"
+    },
+    {
+      "id": "A5-PAT-0009",
+      "stem": "What is the next number in the pattern: 6, 8, 10, 12, 14, ...?",
+      "choices": [],
+      "correct_answer": 0,
+      "difficulty_tier": "easy-medium",
+      "difficulty_score": 25,
+      "visual_svg": "<svg viewBox=\"0 0 330 55\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"30\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"30\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">6</text><circle cx=\"75\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"75\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">8</text><circle cx=\"120\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"120\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">10</text><circle cx=\"165\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"165\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">12</text><circle cx=\"210\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"210\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">14</text><circle cx=\"255\" cy=\"25\" r=\"18\" fill=\"#FFF3E0\" stroke=\"#F57C00\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"255\" y=\"31\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#F57C00\">?</text></svg>",
+      "visual_alt": "Visual for: What is the next number in the pattern: 6, 8, 10, ",
+      "diagnostics": {
+        "1": "Wrong common difference",
+        "2": "Multiplied instead of added",
+        "3": "Pattern recognition error"
+      },
+      "tags": [
+        "patterns",
+        "sequences"
+      ],
+      "topic": "ncert_g5_patterns",
+      "chapter": "Ch10: Patterns",
+      "hint": {
+        "level_0": "Find the common difference between consecutive terms.",
+        "level_1": "Each number increases by 2. 14 + 2 = ? Try working out the calculation step-by-step. Double-check your final calculation.",
+        "level_2": "Look at how things change from one step to the next \u2014 that's the rule!"
+      },
+      "curriculum_tags": [
+        "NCERT_5_10"
+      ],
+      "irt_params": {
+        "a": 1.05,
+        "b": -0.64,
+        "c": 0.25
+      },
+      "irt_a": 1.05,
+      "irt_b": -0.64,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Look at the differences: 8-6=2",
+        "The pattern adds 2 each time",
+        "Add 2 to the last number to find next"
+      ],
+      "interaction_mode": "integer",
+      "correct_value": 16,
+      "level": 5,
+      "level_name": "Strategist",
+      "universal_skill_id": "NUM_PATTERN_5",
+      "skill_id": "number_patterns",
+      "skill_domain": "numbers",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "none",
+      "visual_type": "none",
+      "visual_ai_verified": false,
+      "media_id": null,
+      "media_hash": null,
+      "misconception_ids": [
+        "MISC_1",
+        "MISC_3",
+        "MISC_2"
+      ],
+      "why_quality": "ai_generated",
+      "why_framework": "pending",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "good",
+        "has_3_layers": true,
+        "spoiler_remediated": true
+      },
+      "curriculum_source": "ncert",
+      "curriculum_map": {
+        "cbse": "Ch3: Patterns",
+        "icse": "Ch3: Patterns",
+        "cambridge": "Na - Algebra",
+        "singapore": "Patterns",
+        "common_core": "OA - Operations & Algebraic Thinking"
+      },
+      "school_grade": 5,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "adaptive_topic_id": "g5-patterns",
+      "adaptive_topic_name": "Patterns & Logic",
+      "adaptive_topic_emoji": "\ud83e\udde9",
+      "adaptive_grade": 5,
+      "dual_tagged": true,
+      "content_source": "ncert",
+      "sequence_id": 13,
+      "difficulty_tier_in_topic": "intro",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "original_id": "NCERT-G5-046"
+    },
+    {
+      "id": "A5-PAT-0010",
+      "stem": "What is the next number in the pattern: 2, 9, 16, 23, 30, ...?",
+      "choices": [],
+      "correct_answer": 1,
+      "difficulty_tier": "easy-medium",
+      "difficulty_score": 25,
+      "visual_svg": "<svg viewBox=\"0 0 330 55\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"30\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"30\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">2</text><circle cx=\"75\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"75\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">9</text><circle cx=\"120\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"120\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">16</text><circle cx=\"165\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"165\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">23</text><circle cx=\"210\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"210\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">30</text><circle cx=\"255\" cy=\"25\" r=\"18\" fill=\"#FFF3E0\" stroke=\"#F57C00\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"255\" y=\"31\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#F57C00\">?</text></svg>",
+      "visual_alt": "Visual for: What is the next number in the pattern: 2, 9, 16, ",
+      "diagnostics": {
+        "1": "Wrong common difference",
+        "2": "Multiplied instead of added",
+        "3": "Pattern recognition error"
+      },
+      "tags": [
+        "patterns",
+        "sequences"
+      ],
+      "topic": "ncert_g5_patterns",
+      "chapter": "Ch10: Patterns",
+      "hint": {
+        "level_0": "Find the common difference between consecutive terms.",
+        "level_1": "Each number increases by 7. 30 + 7 = ? Try working out the calculation step-by-step. Double-check your final calculation.",
+        "level_2": "Look at how things change from one step to the next \u2014 that's the rule!"
+      },
+      "curriculum_tags": [
+        "NCERT_5_10"
+      ],
+      "irt_params": {
+        "a": 1.05,
+        "b": -0.64,
+        "c": 0.25
+      },
+      "irt_a": 1.05,
+      "irt_b": -0.64,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Look at the differences: 9-2=7",
+        "The pattern adds 7 each time",
+        "Add 7 to the last number to find next"
+      ],
+      "interaction_mode": "integer",
+      "correct_value": 37,
+      "level": 5,
+      "level_name": "Strategist",
+      "universal_skill_id": "NUM_PATTERN_5",
+      "skill_id": "number_patterns",
+      "skill_domain": "numbers",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "none",
+      "visual_type": "2d",
+      "visual_ai_verified": false,
+      "media_id": "NCERT-G5-199.svg",
+      "media_hash": "sha256:6e3a6e7ddad15906",
+      "misconception_ids": [
+        "MISC_1",
+        "MISC_3",
+        "MISC_2"
+      ],
+      "why_quality": "ai_generated",
+      "why_framework": "pending",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "good",
+        "has_3_layers": true,
+        "spoiler_remediated": true
+      },
+      "curriculum_source": "ncert",
+      "curriculum_map": {
+        "cbse": "Ch3: Patterns",
+        "icse": "Ch3: Patterns",
+        "cambridge": "Na - Algebra",
+        "singapore": "Patterns",
+        "common_core": "OA - Operations & Algebraic Thinking"
+      },
+      "school_grade": 5,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "adaptive_topic_id": "g5-patterns",
+      "adaptive_topic_name": "Patterns & Logic",
+      "adaptive_topic_emoji": "\ud83e\udde9",
+      "adaptive_grade": 5,
+      "dual_tagged": true,
+      "content_source": "ncert",
+      "sequence_id": 14,
+      "difficulty_tier_in_topic": "intro",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "original_id": "NCERT-G5-047"
+    },
+    {
+      "id": "A5-PAT-0011",
+      "stem": "What is the next number in the pattern: 4, 6, 8, 10, 12, ...?",
+      "choices": [],
+      "correct_answer": 0,
+      "difficulty_tier": "easy-medium",
+      "difficulty_score": 25,
+      "visual_svg": "<svg viewBox=\"0 0 330 55\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"30\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"30\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">4</text><circle cx=\"75\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"75\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">6</text><circle cx=\"120\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"120\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">8</text><circle cx=\"165\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"165\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">10</text><circle cx=\"210\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"210\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">12</text><circle cx=\"255\" cy=\"25\" r=\"18\" fill=\"#FFF3E0\" stroke=\"#F57C00\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"255\" y=\"31\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#F57C00\">?</text></svg>",
+      "visual_alt": "Visual for: What is the next number in the pattern: 4, 6, 8, 1",
+      "diagnostics": {
+        "1": "Wrong common difference",
+        "2": "Multiplied instead of added",
+        "3": "Pattern recognition error"
+      },
+      "tags": [
+        "patterns",
+        "sequences"
+      ],
+      "topic": "ncert_g5_patterns",
+      "chapter": "Ch10: Patterns",
+      "hint": {
+        "level_0": "Find the common difference between consecutive terms.",
+        "level_1": "Each number increases by 2. 12 + 2 = ? Try working out the calculation step-by-step. Double-check your final calculation.",
+        "level_2": "Look at how things change from one step to the next \u2014 that's the rule!"
+      },
+      "curriculum_tags": [
+        "NCERT_5_10"
+      ],
+      "irt_params": {
+        "a": 1.05,
+        "b": -0.64,
+        "c": 0.25
+      },
+      "irt_a": 1.05,
+      "irt_b": -0.64,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Look at the differences: 6-4=2",
+        "The pattern adds 2 each time",
+        "Add 2 to the last number to find next"
+      ],
+      "interaction_mode": "integer",
+      "correct_value": 14,
+      "level": 5,
+      "level_name": "Strategist",
+      "universal_skill_id": "NUM_PATTERN_5",
+      "skill_id": "number_patterns",
+      "skill_domain": "numbers",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "none",
+      "visual_type": "2d",
+      "visual_ai_verified": false,
+      "media_id": "NCERT-G5-202.svg",
+      "media_hash": "sha256:6e3a6e7ddad15906",
+      "misconception_ids": [
+        "MISC_1",
+        "MISC_3",
+        "MISC_2"
+      ],
+      "why_quality": "ai_generated",
+      "why_framework": "pending",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "good",
+        "has_3_layers": true,
+        "spoiler_remediated": true
+      },
+      "curriculum_source": "ncert",
+      "curriculum_map": {
+        "cbse": "Ch3: Patterns",
+        "icse": "Ch3: Patterns",
+        "cambridge": "Na - Algebra",
+        "singapore": "Patterns",
+        "common_core": "OA - Operations & Algebraic Thinking"
+      },
+      "school_grade": 5,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "adaptive_topic_id": "g5-patterns",
+      "adaptive_topic_name": "Patterns & Logic",
+      "adaptive_topic_emoji": "\ud83e\udde9",
+      "adaptive_grade": 5,
+      "dual_tagged": true,
+      "content_source": "ncert",
+      "sequence_id": 15,
+      "difficulty_tier_in_topic": "intro",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "original_id": "NCERT-G5-048"
+    },
+    {
+      "id": "A5-PAT-0012",
+      "stem": "Find the next number: 6, 9, 12, 15, ?",
+      "choices": [],
+      "correct_answer": 2,
+      "difficulty_tier": "easy-medium",
+      "difficulty_score": 201,
+      "visual_svg": null,
+      "visual_alt": null,
+      "diagnostics": {
+        "1": "Wrong pattern identified",
+        "2": "Arithmetic error",
+        "3": "Skipped a term"
+      },
+      "tags": [
+        "patterns",
+        "sequences"
+      ],
+      "topic": "ncert_g5_patterns",
+      "chapter": "Ch10: Patterns",
+      "hint": {
+        "level_0": "Look for a pattern between consecutive numbers.",
+        "level_1": "Find the difference or ratio between terms. The next number is 18. Try working out the calculation step-by-step. Double-check your final calculation.",
+        "level_2": "Look at how things change from one step to the next \u2014 that's the rule!"
+      },
+      "curriculum_tags": [],
+      "irt_params": {
+        "a": 0.94,
+        "b": -0.54,
+        "c": 0.25
+      },
+      "irt_a": 0.94,
+      "irt_b": -0.54,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Find the rule connecting consecutive terms",
+        "Apply the rule to the last known term",
+        "The next number is 18"
+      ],
+      "interaction_mode": "integer",
+      "correct_value": 18,
+      "level": 5,
+      "level_name": "Strategist",
+      "universal_skill_id": "NUM_PATTERN_5",
+      "skill_id": "number_patterns",
+      "skill_domain": "numbers",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "none",
+      "visual_type": "none",
+      "visual_ai_verified": false,
+      "media_id": null,
+      "media_hash": null,
+      "misconception_ids": [
+        "MISC_1",
+        "SKIP_COUNT_ERR",
+        "MISC_2"
+      ],
+      "why_quality": "ai_generated",
+      "why_framework": "pending",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "good",
+        "has_3_layers": true
+      },
+      "curriculum_source": "ncert",
+      "curriculum_map": {
+        "cbse": "Ch3: Patterns",
+        "icse": "Ch3: Patterns",
+        "cambridge": "Na - Algebra",
+        "singapore": "Patterns",
+        "common_core": "OA - Operations & Algebraic Thinking"
+      },
+      "school_grade": 5,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "adaptive_topic_id": "g5-patterns",
+      "adaptive_topic_name": "Patterns & Logic",
+      "adaptive_topic_emoji": "\ud83e\udde9",
+      "adaptive_grade": 5,
+      "dual_tagged": true,
+      "content_source": "ncert",
+      "sequence_id": 17,
+      "difficulty_tier_in_topic": "intro",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "original_id": "NCERT-G5-487"
+    },
+    {
+      "id": "A5-PAT-0013",
+      "stem": "What comes next: 17, 23, 29, 35, ?",
+      "choices": [
+        "40",
+        "47",
+        "41",
+        "42"
+      ],
+      "correct_answer": 2,
+      "difficulty_tier": "medium",
+      "difficulty_score": 229,
+      "visual_svg": "<svg viewBox=\"0 0 280 55\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"30\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"30\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">17</text><circle cx=\"75\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"75\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">23</text><circle cx=\"120\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"120\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">29</text><circle cx=\"165\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"165\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">35</text><circle cx=\"210\" cy=\"25\" r=\"18\" fill=\"#FFF3E0\" stroke=\"#F57C00\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"210\" y=\"31\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#F57C00\">?</text></svg>",
+      "visual_alt": "Visual for: What comes next: 17, 23, 29, 35, ?",
+      "diagnostics": {
+        "0": "Wrong pattern identified",
+        "1": "Arithmetic error",
+        "3": "Skipped a term"
+      },
+      "tags": [
+        "patterns",
+        "sequences"
+      ],
+      "topic": "ncert_g5_patterns",
+      "chapter": "Ch10: Patterns",
+      "hint": {
+        "level_0": "Look for a pattern between consecutive numbers.",
+        "level_1": "Find the difference or ratio between terms. The next number is 41.",
+        "level_2": "Look at how things change from one step to the next \u2014 that's the rule!"
+      },
+      "curriculum_tags": [],
+      "irt_params": {
+        "a": 1.45,
+        "b": -0.13,
+        "c": 0.25
+      },
+      "irt_a": 1.45,
+      "irt_b": -0.13,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Find the rule connecting consecutive terms",
+        "Apply the rule to the last known term",
+        "The next number is 41"
+      ],
+      "interaction_mode": "mcq",
+      "level": 5,
+      "level_name": "Strategist",
+      "universal_skill_id": "NUM_PATTERN_5",
+      "skill_id": "number_patterns",
+      "skill_domain": "numbers",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "optional",
+      "visual_type": "none",
+      "visual_ai_verified": false,
+      "media_id": null,
+      "media_hash": null,
+      "misconception_ids": [
+        "MISC_1",
+        "SKIP_COUNT_ERR",
+        "MISC_2"
+      ],
+      "why_quality": "ai_generated",
+      "why_framework": "pending",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "good",
+        "has_3_layers": true
+      },
+      "curriculum_source": "ncert",
+      "curriculum_map": {
+        "cbse": "Ch3: Patterns",
+        "icse": "Ch3: Patterns",
+        "cambridge": "Na - Algebra",
+        "singapore": "Patterns",
+        "common_core": "OA - Operations & Algebraic Thinking"
+      },
+      "school_grade": 5,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "adaptive_topic_id": "g5-patterns",
+      "adaptive_topic_name": "Patterns & Logic",
+      "adaptive_topic_emoji": "\ud83e\udde9",
+      "adaptive_grade": 5,
+      "dual_tagged": true,
+      "content_source": "ncert",
+      "sequence_id": 21,
+      "difficulty_tier_in_topic": "intro",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "original_id": "NCERT-G5-836"
+    },
+    {
+      "id": "A5-PAT-0014",
+      "stem": "What comes next: 2, 9, 16, 23, ?",
+      "choices": [
+        "31",
+        "37",
+        "29",
+        "30"
+      ],
+      "correct_answer": 3,
+      "difficulty_tier": "medium",
+      "difficulty_score": 226,
+      "visual_svg": "<svg viewBox=\"0 0 280 55\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"30\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"30\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">2</text><circle cx=\"75\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"75\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">9</text><circle cx=\"120\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"120\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">16</text><circle cx=\"165\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"165\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">23</text><circle cx=\"210\" cy=\"25\" r=\"18\" fill=\"#FFF3E0\" stroke=\"#F57C00\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"210\" y=\"31\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#F57C00\">?</text></svg>",
+      "visual_alt": "Visual for: What comes next: 2, 9, 16, 23, ?",
+      "diagnostics": {
+        "0": "Wrong pattern identified",
+        "1": "Arithmetic error",
+        "2": "Skipped a term"
+      },
+      "tags": [
+        "patterns",
+        "sequences"
+      ],
+      "topic": "ncert_g5_patterns",
+      "chapter": "Ch10: Patterns",
+      "hint": {
+        "level_0": "Look for a pattern between consecutive numbers.",
+        "level_1": "Find the difference or ratio between terms. The next number is 30.",
+        "level_2": "Look at how things change from one step to the next \u2014 that's the rule!"
+      },
+      "curriculum_tags": [],
+      "irt_params": {
+        "a": 1.72,
+        "b": -0.11,
+        "c": 0.25
+      },
+      "irt_a": 1.72,
+      "irt_b": -0.11,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Find the rule connecting consecutive terms",
+        "Apply the rule to the last known term",
+        "The next number is 30"
+      ],
+      "interaction_mode": "mcq",
+      "level": 5,
+      "level_name": "Strategist",
+      "universal_skill_id": "NUM_PATTERN_5",
+      "skill_id": "number_patterns",
+      "skill_domain": "numbers",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "optional",
+      "visual_type": "none",
+      "visual_ai_verified": false,
+      "media_id": null,
+      "media_hash": null,
+      "misconception_ids": [
+        "MISC_1",
+        "SKIP_COUNT_ERR",
+        "MISC_2"
+      ],
+      "why_quality": "ai_generated",
+      "why_framework": "pending",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "good",
+        "has_3_layers": true
+      },
+      "curriculum_source": "ncert",
+      "curriculum_map": {
+        "cbse": "Ch3: Patterns",
+        "icse": "Ch3: Patterns",
+        "cambridge": "Na - Algebra",
+        "singapore": "Patterns",
+        "common_core": "OA - Operations & Algebraic Thinking"
+      },
+      "school_grade": 5,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "adaptive_topic_id": "g5-patterns",
+      "adaptive_topic_name": "Patterns & Logic",
+      "adaptive_topic_emoji": "\ud83e\udde9",
+      "adaptive_grade": 5,
+      "dual_tagged": true,
+      "content_source": "ncert",
+      "sequence_id": 22,
+      "difficulty_tier_in_topic": "intro",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "original_id": "NCERT-G5-799"
+    },
+    {
+      "id": "A5-PAT-0015",
+      "stem": "Find the next number: 3, 9, 15, 21, ?",
+      "choices": [],
+      "correct_answer": 2,
+      "difficulty_tier": "medium",
+      "difficulty_score": 223,
+      "visual_svg": null,
+      "visual_alt": null,
+      "diagnostics": {
+        "1": "Wrong pattern identified",
+        "2": "Arithmetic error",
+        "3": "Skipped a term"
+      },
+      "tags": [
+        "patterns",
+        "sequences"
+      ],
+      "topic": "ncert_g5_patterns",
+      "chapter": "Ch10: Patterns",
+      "hint": {
+        "level_0": "Look for a pattern between consecutive numbers.",
+        "level_1": "Find the difference or ratio between terms. The next number is 27. Try working out the calculation step-by-step. Double-check your final calculation.",
+        "level_2": "Look at how things change from one step to the next \u2014 that's the rule!"
+      },
+      "curriculum_tags": [],
+      "irt_params": {
+        "a": 0.98,
+        "b": -0.05,
+        "c": 0.25
+      },
+      "irt_a": 0.98,
+      "irt_b": -0.05,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Find the rule connecting consecutive terms",
+        "Apply the rule to the last known term",
+        "The next number is 27"
+      ],
+      "interaction_mode": "integer",
+      "correct_value": 27,
+      "level": 5,
+      "level_name": "Strategist",
+      "universal_skill_id": "NUM_PATTERN_5",
+      "skill_id": "number_patterns",
+      "skill_domain": "numbers",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "none",
+      "visual_type": "none",
+      "visual_ai_verified": false,
+      "media_id": null,
+      "media_hash": null,
+      "misconception_ids": [
+        "MISC_1",
+        "SKIP_COUNT_ERR",
+        "MISC_2"
+      ],
+      "why_quality": "ai_generated",
+      "why_framework": "pending",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "good",
+        "has_3_layers": true
+      },
+      "curriculum_source": "ncert",
+      "curriculum_map": {
+        "cbse": "Ch3: Patterns",
+        "icse": "Ch3: Patterns",
+        "cambridge": "Na - Algebra",
+        "singapore": "Patterns",
+        "common_core": "OA - Operations & Algebraic Thinking"
+      },
+      "school_grade": 5,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "adaptive_topic_id": "g5-patterns",
+      "adaptive_topic_name": "Patterns & Logic",
+      "adaptive_topic_emoji": "\ud83e\udde9",
+      "adaptive_grade": 5,
+      "dual_tagged": true,
+      "content_source": "ncert",
+      "sequence_id": 24,
+      "difficulty_tier_in_topic": "intro",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "original_id": "NCERT-G5-769"
+    },
+    {
+      "id": "A5-PAT-0016",
+      "stem": "Find the next number: 4, 8, 16, 32, ...?",
+      "choices": [],
+      "correct_answer": 2,
+      "difficulty_tier": "medium",
+      "difficulty_score": 40,
+      "visual_svg": null,
+      "visual_alt": null,
+      "diagnostics": {
+        "1": "Assumed addition pattern",
+        "2": "Wrong multiplier",
+        "3": "Added instead of multiplied"
+      },
+      "tags": [
+        "patterns",
+        "geometric"
+      ],
+      "topic": "ncert_g5_patterns",
+      "chapter": "Ch10: Patterns",
+      "hint": {
+        "level_0": "Look at the ratio between consecutive terms.",
+        "level_1": "Each term is multiplied by 2. 32 \u00d7 2 = ? Try working out the calculation step-by-step. Double-check your final calculation.",
+        "level_2": "Look at how things change from one step to the next \u2014 that's the rule!"
+      },
+      "curriculum_tags": [
+        "NCERT_5_10"
+      ],
+      "irt_params": {
+        "a": 1.1,
+        "b": 0.3,
+        "c": 0.25
+      },
+      "irt_a": 1.1,
+      "irt_b": 0.3,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Look at how the numbers change each step",
+        "Find the rule connecting consecutive numbers",
+        "Apply the rule to find the missing number"
+      ],
+      "interaction_mode": "integer",
+      "correct_value": 64,
+      "level": 5,
+      "level_name": "Strategist",
+      "universal_skill_id": "NUM_PATTERN_5",
+      "skill_id": "number_patterns",
+      "skill_domain": "numbers",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "none",
+      "visual_type": "none",
+      "visual_ai_verified": false,
+      "media_id": null,
+      "media_hash": null,
+      "misconception_ids": [
+        "MISC_1",
+        "ADD_INSTEAD_SUB",
+        "MISC_2"
+      ],
+      "why_quality": "ai_generated",
+      "why_framework": "pending",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "good",
+        "has_3_layers": true,
+        "spoiler_remediated": true
+      },
+      "curriculum_source": "ncert",
+      "curriculum_map": {
+        "cbse": "Ch3: Patterns",
+        "icse": "Ch3: Patterns",
+        "cambridge": "Na - Algebra",
+        "singapore": "Patterns",
+        "common_core": "OA - Operations & Algebraic Thinking"
+      },
+      "school_grade": 5,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "adaptive_topic_id": "g5-patterns",
+      "adaptive_topic_name": "Patterns & Logic",
+      "adaptive_topic_emoji": "\ud83e\udde9",
+      "adaptive_grade": 5,
+      "dual_tagged": true,
+      "content_source": "ncert",
+      "sequence_id": 26,
+      "difficulty_tier_in_topic": "intro",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "original_id": "NCERT-G5-216"
+    },
+    {
+      "id": "A5-PAT-0017",
+      "stem": "Find the next number: 3, 6, 12, 24, ...?",
+      "choices": [],
+      "correct_answer": 1,
+      "difficulty_tier": "medium",
+      "difficulty_score": 40,
+      "visual_svg": null,
+      "visual_alt": null,
+      "diagnostics": {
+        "1": "Assumed addition pattern",
+        "2": "Wrong multiplier",
+        "3": "Added instead of multiplied"
+      },
+      "tags": [
+        "patterns",
+        "geometric"
+      ],
+      "topic": "ncert_g5_patterns",
+      "chapter": "Ch10: Patterns",
+      "hint": {
+        "level_0": "Look at the ratio between consecutive terms.",
+        "level_1": "Each term is multiplied by 2. 24 \u00d7 2 = ? Try working out the calculation step-by-step. Double-check your final calculation.",
+        "level_2": "Look at how things change from one step to the next \u2014 that's the rule!"
+      },
+      "curriculum_tags": [
+        "NCERT_5_10"
+      ],
+      "irt_params": {
+        "a": 1.1,
+        "b": 0.3,
+        "c": 0.25
+      },
+      "irt_a": 1.1,
+      "irt_b": 0.3,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Look at how the numbers change each step",
+        "Find the rule connecting consecutive numbers",
+        "Apply the rule to find the missing number"
+      ],
+      "interaction_mode": "integer",
+      "correct_value": 48,
+      "level": 5,
+      "level_name": "Strategist",
+      "universal_skill_id": "NUM_PATTERN_5",
+      "skill_id": "number_patterns",
+      "skill_domain": "numbers",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "none",
+      "visual_type": "2d",
+      "visual_ai_verified": false,
+      "media_id": "NCERT-G5-192.svg",
+      "media_hash": "sha256:6e3a6e7ddad15906",
+      "misconception_ids": [
+        "MISC_1",
+        "ADD_INSTEAD_SUB",
+        "MISC_2"
+      ],
+      "why_quality": "ai_generated",
+      "why_framework": "pending",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "good",
+        "has_3_layers": true,
+        "spoiler_remediated": true
+      },
+      "curriculum_source": "ncert",
+      "curriculum_map": {
+        "cbse": "Ch3: Patterns",
+        "icse": "Ch3: Patterns",
+        "cambridge": "Na - Algebra",
+        "singapore": "Patterns",
+        "common_core": "OA - Operations & Algebraic Thinking"
+      },
+      "school_grade": 5,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "adaptive_topic_id": "g5-patterns",
+      "adaptive_topic_name": "Patterns & Logic",
+      "adaptive_topic_emoji": "\ud83e\udde9",
+      "adaptive_grade": 5,
+      "dual_tagged": true,
+      "content_source": "ncert",
+      "sequence_id": 27,
+      "difficulty_tier_in_topic": "intro",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "original_id": "NCERT-G5-217"
+    },
+    {
+      "id": "A5-PAT-0018",
+      "stem": "Find the next number: 5, 10, 20, 40, ...?",
+      "choices": [],
+      "correct_answer": 2,
+      "difficulty_tier": "medium",
+      "difficulty_score": 40,
+      "visual_svg": null,
+      "visual_alt": null,
+      "diagnostics": {
+        "1": "Assumed addition pattern",
+        "2": "Wrong multiplier",
+        "3": "Added instead of multiplied"
+      },
+      "tags": [
+        "patterns",
+        "geometric"
+      ],
+      "topic": "ncert_g5_patterns",
+      "chapter": "Ch10: Patterns",
+      "hint": {
+        "level_0": "Look at the ratio between consecutive terms.",
+        "level_1": "Each term is multiplied by 2. 40 \u00d7 2 = ? Try working out the calculation step-by-step. Double-check your final calculation.",
+        "level_2": "Look at how things change from one step to the next \u2014 that's the rule!"
+      },
+      "curriculum_tags": [
+        "NCERT_5_10"
+      ],
+      "irt_params": {
+        "a": 1.1,
+        "b": 0.3,
+        "c": 0.25
+      },
+      "irt_a": 1.1,
+      "irt_b": 0.3,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Look at how the numbers change each step",
+        "Find the rule connecting consecutive numbers",
+        "Apply the rule to find the missing number"
+      ],
+      "interaction_mode": "integer",
+      "correct_value": 80,
+      "level": 5,
+      "level_name": "Strategist",
+      "universal_skill_id": "NUM_PATTERN_5",
+      "skill_id": "number_patterns",
+      "skill_domain": "numbers",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "none",
+      "visual_type": "none",
+      "visual_ai_verified": false,
+      "media_id": null,
+      "media_hash": null,
+      "misconception_ids": [
+        "MISC_1",
+        "ADD_INSTEAD_SUB",
+        "MISC_2"
+      ],
+      "why_quality": "ai_generated",
+      "why_framework": "pending",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "good",
+        "has_3_layers": true,
+        "spoiler_remediated": true
+      },
+      "curriculum_source": "ncert",
+      "curriculum_map": {
+        "cbse": "Ch3: Patterns",
+        "icse": "Ch3: Patterns",
+        "cambridge": "Na - Algebra",
+        "singapore": "Patterns",
+        "common_core": "OA - Operations & Algebraic Thinking"
+      },
+      "school_grade": 5,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "adaptive_topic_id": "g5-patterns",
+      "adaptive_topic_name": "Patterns & Logic",
+      "adaptive_topic_emoji": "\ud83e\udde9",
+      "adaptive_grade": 5,
+      "dual_tagged": true,
+      "content_source": "ncert",
+      "sequence_id": 28,
+      "difficulty_tier_in_topic": "intro",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "original_id": "NCERT-G5-218"
+    },
+    {
+      "id": "A5-PAT-0019",
+      "stem": "Find the next number: 5, 20, 80, 320, ...?",
+      "choices": [],
+      "correct_answer": 3,
+      "difficulty_tier": "medium",
+      "difficulty_score": 40,
+      "visual_svg": null,
+      "visual_alt": null,
+      "diagnostics": {
+        "1": "Assumed addition pattern",
+        "2": "Wrong multiplier",
+        "3": "Added instead of multiplied"
+      },
+      "tags": [
+        "patterns",
+        "geometric"
+      ],
+      "topic": "ncert_g5_patterns",
+      "chapter": "Ch10: Patterns",
+      "hint": {
+        "level_0": "Look at the ratio between consecutive terms.",
+        "level_1": "Each term is multiplied by 4. 320 \u00d7 4 = ? Try working out the calculation step-by-step. Double-check your final calculation.",
+        "level_2": "Look at how things change from one step to the next \u2014 that's the rule!"
+      },
+      "curriculum_tags": [
+        "NCERT_5_10"
+      ],
+      "irt_params": {
+        "a": 1.1,
+        "b": 0.3,
+        "c": 0.25
+      },
+      "irt_a": 1.1,
+      "irt_b": 0.3,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Look at how the numbers change each step",
+        "Find the rule connecting consecutive numbers",
+        "Apply the rule to find the missing number"
+      ],
+      "interaction_mode": "integer",
+      "correct_value": 1280,
+      "level": 5,
+      "level_name": "Strategist",
+      "universal_skill_id": "NUM_PATTERN_5",
+      "skill_id": "number_patterns",
+      "skill_domain": "numbers",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "none",
+      "visual_type": "2d",
+      "visual_ai_verified": false,
+      "media_id": "NCERT-G5-198.svg",
+      "media_hash": "sha256:6e3a6e7ddad15906",
+      "misconception_ids": [
+        "MISC_1",
+        "ADD_INSTEAD_SUB",
+        "MISC_2"
+      ],
+      "why_quality": "ai_generated",
+      "why_framework": "pending",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "good",
+        "has_3_layers": true,
+        "spoiler_remediated": true
+      },
+      "curriculum_source": "ncert",
+      "curriculum_map": {
+        "cbse": "Ch3: Patterns",
+        "icse": "Ch3: Patterns",
+        "cambridge": "Na - Algebra",
+        "singapore": "Patterns",
+        "common_core": "OA - Operations & Algebraic Thinking"
+      },
+      "school_grade": 5,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "adaptive_topic_id": "g5-patterns",
+      "adaptive_topic_name": "Patterns & Logic",
+      "adaptive_topic_emoji": "\ud83e\udde9",
+      "adaptive_grade": 5,
+      "dual_tagged": true,
+      "content_source": "ncert",
+      "sequence_id": 29,
+      "difficulty_tier_in_topic": "intro",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "original_id": "NCERT-G5-219"
+    },
+    {
+      "id": "A5-PAT-0020",
+      "stem": "Find the next number: 4, 12, 36, 108, ...?",
+      "choices": [],
+      "correct_answer": 3,
+      "difficulty_tier": "medium",
+      "difficulty_score": 40,
+      "visual_svg": null,
+      "visual_alt": null,
+      "diagnostics": {
+        "1": "Assumed addition pattern",
+        "2": "Wrong multiplier",
+        "3": "Added instead of multiplied"
+      },
+      "tags": [
+        "patterns",
+        "geometric"
+      ],
+      "topic": "ncert_g5_patterns",
+      "chapter": "Ch10: Patterns",
+      "hint": {
+        "level_0": "Look at the ratio between consecutive terms.",
+        "level_1": "Each term is multiplied by 3. 108 \u00d7 3 = ? Try working out the calculation step-by-step. Double-check your final calculation.",
+        "level_2": "Look at how things change from one step to the next \u2014 that's the rule!"
+      },
+      "curriculum_tags": [
+        "NCERT_5_10"
+      ],
+      "irt_params": {
+        "a": 1.1,
+        "b": 0.3,
+        "c": 0.25
+      },
+      "irt_a": 1.1,
+      "irt_b": 0.3,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Look at how the numbers change each step",
+        "Find the rule connecting consecutive numbers",
+        "Apply the rule to find the missing number"
+      ],
+      "interaction_mode": "integer",
+      "correct_value": 324,
+      "level": 5,
+      "level_name": "Strategist",
+      "universal_skill_id": "NUM_PATTERN_5",
+      "skill_id": "number_patterns",
+      "skill_domain": "numbers",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "none",
+      "visual_type": "none",
+      "visual_ai_verified": false,
+      "media_id": null,
+      "media_hash": null,
+      "misconception_ids": [
+        "MISC_1",
+        "ADD_INSTEAD_SUB",
+        "MISC_2"
+      ],
+      "why_quality": "ai_generated",
+      "why_framework": "pending",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "good",
+        "has_3_layers": true,
+        "spoiler_remediated": true
+      },
+      "curriculum_source": "ncert",
+      "curriculum_map": {
+        "cbse": "Ch3: Patterns",
+        "icse": "Ch3: Patterns",
+        "cambridge": "Na - Algebra",
+        "singapore": "Patterns",
+        "common_core": "OA - Operations & Algebraic Thinking"
+      },
+      "school_grade": 5,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "adaptive_topic_id": "g5-patterns",
+      "adaptive_topic_name": "Patterns & Logic",
+      "adaptive_topic_emoji": "\ud83e\udde9",
+      "adaptive_grade": 5,
+      "dual_tagged": true,
+      "content_source": "ncert",
+      "sequence_id": 30,
+      "difficulty_tier_in_topic": "intro",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "original_id": "NCERT-G5-220"
+    },
+    {
+      "id": "A5-PAT-0021",
+      "stem": "Find the next number: 1, 2, 4, 8, ...?",
+      "choices": [],
+      "correct_answer": 0,
+      "difficulty_tier": "medium",
+      "difficulty_score": 40,
+      "visual_svg": null,
+      "visual_alt": null,
+      "diagnostics": {
+        "1": "Assumed addition pattern",
+        "2": "Wrong multiplier",
+        "3": "Added instead of multiplied"
+      },
+      "tags": [
+        "patterns",
+        "geometric"
+      ],
+      "topic": "ncert_g5_patterns",
+      "chapter": "Ch10: Patterns",
+      "hint": {
+        "level_0": "Look at the ratio between consecutive terms.",
+        "level_1": "Each term is multiplied by 2. 8 \u00d7 2 = ? Try working out the calculation step-by-step. Double-check your final calculation.",
+        "level_2": "Look at how things change from one step to the next \u2014 that's the rule!"
+      },
+      "curriculum_tags": [
+        "NCERT_5_10"
+      ],
+      "irt_params": {
+        "a": 1.1,
+        "b": 0.3,
+        "c": 0.25
+      },
+      "irt_a": 1.1,
+      "irt_b": 0.3,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Look at how the numbers change each step",
+        "Find the rule connecting consecutive numbers",
+        "Apply the rule to find the missing number"
+      ],
+      "interaction_mode": "integer",
+      "correct_value": 16,
+      "level": 5,
+      "level_name": "Strategist",
+      "universal_skill_id": "NUM_PATTERN_5",
+      "skill_id": "number_patterns",
+      "skill_domain": "numbers",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "none",
+      "visual_type": "2d",
+      "visual_ai_verified": false,
+      "media_id": "NCERT-G5-204.svg",
+      "media_hash": "sha256:6e3a6e7ddad15906",
+      "misconception_ids": [
+        "MISC_1",
+        "ADD_INSTEAD_SUB",
+        "MISC_2"
+      ],
+      "why_quality": "ai_generated",
+      "why_framework": "pending",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "good",
+        "has_3_layers": true,
+        "spoiler_remediated": true
+      },
+      "curriculum_source": "ncert",
+      "curriculum_map": {
+        "cbse": "Ch3: Patterns",
+        "icse": "Ch3: Patterns",
+        "cambridge": "Na - Algebra",
+        "singapore": "Patterns",
+        "common_core": "OA - Operations & Algebraic Thinking"
+      },
+      "school_grade": 5,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "adaptive_topic_id": "g5-patterns",
+      "adaptive_topic_name": "Patterns & Logic",
+      "adaptive_topic_emoji": "\ud83e\udde9",
+      "adaptive_grade": 5,
+      "dual_tagged": true,
+      "content_source": "ncert",
+      "sequence_id": 31,
+      "difficulty_tier_in_topic": "intro",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "original_id": "NCERT-G5-221"
+    },
+    {
+      "id": "A5-PAT-0022",
+      "stem": "What comes next: 10, 20, 30, 40, ?",
+      "choices": [
+        "49",
+        "50",
+        "60",
+        "51"
+      ],
+      "correct_answer": 1,
+      "difficulty_tier": "medium-hard",
+      "difficulty_score": 250,
+      "visual_svg": "<svg viewBox=\"0 0 280 55\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"30\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"30\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">10</text><circle cx=\"75\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"75\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">20</text><circle cx=\"120\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"120\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">30</text><circle cx=\"165\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"165\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">40</text><circle cx=\"210\" cy=\"25\" r=\"18\" fill=\"#FFF3E0\" stroke=\"#F57C00\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"210\" y=\"31\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#F57C00\">?</text></svg>",
+      "visual_alt": "Visual for: What comes next: 10, 20, 30, 40, ?",
+      "diagnostics": {
+        "0": "Wrong pattern identified",
+        "2": "Arithmetic error",
+        "3": "Skipped a term"
+      },
+      "tags": [
+        "patterns",
+        "sequences"
+      ],
+      "topic": "ncert_g5_patterns",
+      "chapter": "Ch10: Patterns",
+      "hint": {
+        "level_0": "Look for a pattern between consecutive numbers.",
+        "level_1": "Find the difference or ratio between terms. The next number is 50.",
+        "level_2": "Look at how things change from one step to the next \u2014 that's the rule!"
+      },
+      "curriculum_tags": [],
+      "irt_params": {
+        "a": 1.57,
+        "b": 0.75,
+        "c": 0.25
+      },
+      "irt_a": 1.57,
+      "irt_b": 0.75,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Find the rule connecting consecutive terms",
+        "Apply the rule to the last known term",
+        "The next number is 50"
+      ],
+      "interaction_mode": "mcq",
+      "level": 5,
+      "level_name": "Strategist",
+      "universal_skill_id": "NUM_PATTERN_5",
+      "skill_id": "number_patterns",
+      "skill_domain": "numbers",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "optional",
+      "visual_type": "none",
+      "visual_ai_verified": false,
+      "media_id": null,
+      "media_hash": null,
+      "misconception_ids": [
+        "MISC_1",
+        "SKIP_COUNT_ERR",
+        "MISC_2"
+      ],
+      "why_quality": "ai_generated",
+      "why_framework": "pending",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "good",
+        "has_3_layers": true
+      },
+      "curriculum_source": "ncert",
+      "curriculum_map": {
+        "cbse": "Ch3: Patterns",
+        "icse": "Ch3: Patterns",
+        "cambridge": "Na - Algebra",
+        "singapore": "Patterns",
+        "common_core": "OA - Operations & Algebraic Thinking"
+      },
+      "school_grade": 5,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "adaptive_topic_id": "g5-patterns",
+      "adaptive_topic_name": "Patterns & Logic",
+      "adaptive_topic_emoji": "\ud83e\udde9",
+      "adaptive_grade": 5,
+      "dual_tagged": true,
+      "content_source": "ncert",
+      "sequence_id": 83,
+      "difficulty_tier_in_topic": "intro",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "original_id": "NCERT-G5-1080"
+    },
+    {
+      "id": "A5-PAT-0023",
+      "stem": "Find the next number: 1, 6, 11, 16, ?",
+      "choices": [],
+      "correct_answer": 3,
+      "difficulty_tier": "medium-hard",
+      "difficulty_score": 238,
+      "visual_svg": null,
+      "visual_alt": null,
+      "diagnostics": {
+        "1": "Wrong pattern identified",
+        "2": "Arithmetic error",
+        "3": "Skipped a term"
+      },
+      "tags": [
+        "patterns",
+        "sequences"
+      ],
+      "topic": "ncert_g5_patterns",
+      "chapter": "Ch10: Patterns",
+      "hint": {
+        "level_0": "Look for a pattern between consecutive numbers.",
+        "level_1": "Find the difference or ratio between terms. The next number is 21. Try working out the calculation step-by-step. Double-check your final calculation.",
+        "level_2": "Look at how things change from one step to the next \u2014 that's the rule!"
+      },
+      "curriculum_tags": [],
+      "irt_params": {
+        "a": 1.21,
+        "b": 1.02,
+        "c": 0.25
+      },
+      "irt_a": 1.21,
+      "irt_b": 1.02,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Find the rule connecting consecutive terms",
+        "Apply the rule to the last known term",
+        "The next number is 21"
+      ],
+      "interaction_mode": "integer",
+      "correct_value": 21,
+      "level": 5,
+      "level_name": "Strategist",
+      "universal_skill_id": "NUM_PATTERN_5",
+      "skill_id": "number_patterns",
+      "skill_domain": "numbers",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "none",
+      "visual_type": "none",
+      "visual_ai_verified": false,
+      "media_id": null,
+      "media_hash": null,
+      "misconception_ids": [
+        "MISC_1",
+        "SKIP_COUNT_ERR",
+        "MISC_2"
+      ],
+      "why_quality": "ai_generated",
+      "why_framework": "pending",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "good",
+        "has_3_layers": true
+      },
+      "curriculum_source": "ncert",
+      "curriculum_map": {
+        "cbse": "Ch3: Patterns",
+        "icse": "Ch3: Patterns",
+        "cambridge": "Na - Algebra",
+        "singapore": "Patterns",
+        "common_core": "OA - Operations & Algebraic Thinking"
+      },
+      "school_grade": 5,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "adaptive_topic_id": "g5-patterns",
+      "adaptive_topic_name": "Patterns & Logic",
+      "adaptive_topic_emoji": "\ud83e\udde9",
+      "adaptive_grade": 5,
+      "dual_tagged": true,
+      "content_source": "ncert",
+      "sequence_id": 163,
+      "difficulty_tier_in_topic": "developing",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "original_id": "NCERT-G5-948"
+    },
+    {
+      "id": "A5-PAT-0024",
+      "stem": "What comes next: 11, 20, 29, 38, ?",
+      "choices": [
+        "46",
+        "56",
+        "48",
+        "47"
+      ],
+      "correct_answer": 3,
+      "difficulty_tier": "medium-hard",
+      "difficulty_score": 242,
+      "visual_svg": "<svg viewBox=\"0 0 280 55\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"30\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"30\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">11</text><circle cx=\"75\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"75\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">20</text><circle cx=\"120\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"120\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">29</text><circle cx=\"165\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"165\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">38</text><circle cx=\"210\" cy=\"25\" r=\"18\" fill=\"#FFF3E0\" stroke=\"#F57C00\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"210\" y=\"31\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#F57C00\">?</text></svg>",
+      "visual_alt": "Visual for: What comes next: 11, 20, 29, 38, ?",
+      "diagnostics": {
+        "0": "Wrong pattern identified",
+        "1": "Arithmetic error",
+        "2": "Skipped a term"
+      },
+      "tags": [
+        "patterns",
+        "sequences"
+      ],
+      "topic": "ncert_g5_patterns",
+      "chapter": "Ch10: Patterns",
+      "hint": {
+        "level_0": "Look for a pattern between consecutive numbers.",
+        "level_1": "Find the difference or ratio between terms. The next number is 47.",
+        "level_2": "Look at how things change from one step to the next \u2014 that's the rule!"
+      },
+      "curriculum_tags": [],
+      "irt_params": {
+        "a": 1.31,
+        "b": 1.12,
+        "c": 0.25
+      },
+      "irt_a": 1.31,
+      "irt_b": 1.12,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Find the rule connecting consecutive terms",
+        "Apply the rule to the last known term",
+        "The next number is 47"
+      ],
+      "interaction_mode": "mcq",
+      "level": 5,
+      "level_name": "Strategist",
+      "universal_skill_id": "NUM_PATTERN_5",
+      "skill_id": "number_patterns",
+      "skill_domain": "numbers",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "optional",
+      "visual_type": "none",
+      "visual_ai_verified": false,
+      "media_id": null,
+      "media_hash": null,
+      "misconception_ids": [
+        "MISC_1",
+        "SKIP_COUNT_ERR",
+        "MISC_2"
+      ],
+      "why_quality": "ai_generated",
+      "why_framework": "pending",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "good",
+        "has_3_layers": true
+      },
+      "curriculum_source": "ncert",
+      "curriculum_map": {
+        "cbse": "Ch3: Patterns",
+        "icse": "Ch3: Patterns",
+        "cambridge": "Na - Algebra",
+        "singapore": "Patterns",
+        "common_core": "OA - Operations & Algebraic Thinking"
+      },
+      "school_grade": 5,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "adaptive_topic_id": "g5-patterns",
+      "adaptive_topic_name": "Patterns & Logic",
+      "adaptive_topic_emoji": "\ud83e\udde9",
+      "adaptive_grade": 5,
+      "dual_tagged": true,
+      "content_source": "ncert",
+      "sequence_id": 208,
+      "difficulty_tier_in_topic": "developing",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "original_id": "NCERT-G5-996"
+    },
+    {
+      "id": "A5-PAT-0025",
+      "stem": "Find the next number: 1, 7, 13, 19, ?",
+      "choices": [],
+      "correct_answer": 1,
+      "difficulty_tier": "medium-hard",
+      "difficulty_score": 246,
+      "visual_svg": null,
+      "visual_alt": null,
+      "diagnostics": {
+        "1": "Wrong pattern identified",
+        "2": "Arithmetic error",
+        "3": "Skipped a term"
+      },
+      "tags": [
+        "patterns",
+        "sequences"
+      ],
+      "topic": "ncert_g5_patterns",
+      "chapter": "Ch10: Patterns",
+      "hint": {
+        "level_0": "Look for a pattern between consecutive numbers.",
+        "level_1": "Find the difference or ratio between terms. The next number is 25. Try working out the calculation step-by-step. Double-check your final calculation.",
+        "level_2": "Look at how things change from one step to the next \u2014 that's the rule!"
+      },
+      "curriculum_tags": [],
+      "irt_params": {
+        "a": 1.7,
+        "b": 1.16,
+        "c": 0.25
+      },
+      "irt_a": 1.7,
+      "irt_b": 1.16,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Find the rule connecting consecutive terms",
+        "Apply the rule to the last known term",
+        "The next number is 25"
+      ],
+      "interaction_mode": "integer",
+      "correct_value": 25,
+      "level": 5,
+      "level_name": "Strategist",
+      "universal_skill_id": "NUM_PATTERN_5",
+      "skill_id": "number_patterns",
+      "skill_domain": "numbers",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "none",
+      "visual_type": "none",
+      "visual_ai_verified": false,
+      "media_id": null,
+      "media_hash": null,
+      "misconception_ids": [
+        "MISC_1",
+        "SKIP_COUNT_ERR",
+        "MISC_2"
+      ],
+      "why_quality": "ai_generated",
+      "why_framework": "pending",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "good",
+        "has_3_layers": true
+      },
+      "curriculum_source": "ncert",
+      "curriculum_map": {
+        "cbse": "Ch3: Patterns",
+        "icse": "Ch3: Patterns",
+        "cambridge": "Na - Algebra",
+        "singapore": "Patterns",
+        "common_core": "OA - Operations & Algebraic Thinking"
+      },
+      "school_grade": 5,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "adaptive_topic_id": "g5-patterns",
+      "adaptive_topic_name": "Patterns & Logic",
+      "adaptive_topic_emoji": "\ud83e\udde9",
+      "adaptive_grade": 5,
+      "dual_tagged": true,
+      "content_source": "ncert",
+      "sequence_id": 236,
+      "difficulty_tier_in_topic": "developing",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "original_id": "NCERT-G5-1043"
+    },
+    {
+      "id": "A5-PAT-0026",
+      "stem": "In the sequence 5, 9, 13, 17, ..., what is the 8th term?",
+      "choices": [],
+      "correct_answer": 1,
+      "difficulty_tier": "medium-hard",
+      "difficulty_score": 55,
+      "visual_svg": null,
+      "visual_alt": null,
+      "diagnostics": {
+        "1": "Used n instead of n-1",
+        "2": "Wrong common difference",
+        "3": "Arithmetic error"
+      },
+      "tags": [
+        "patterns",
+        "nth-term"
+      ],
+      "topic": "ncert_g5_patterns",
+      "chapter": "Ch10: Patterns",
+      "hint": {
+        "level_0": "Use the formula: nth term = first term + (n-1) \u00d7 common difference",
+        "level_1": "= 5 + (8-1) \u00d7 4 = 5 + 28 = ? Try working out the calculation step-by-step. Double-check your final calculation.",
+        "level_2": "Look at how things change from one step to the next \u2014 that's the rule!"
+      },
+      "curriculum_tags": [
+        "NCERT_5_10"
+      ],
+      "irt_params": {
+        "a": 1.15,
+        "b": 1.24,
+        "c": 0.25
+      },
+      "irt_a": 1.15,
+      "irt_b": 1.24,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Look at the differences: 9-5=4",
+        "The pattern adds 4 each time",
+        "Add 4 to the last number to find next"
+      ],
+      "interaction_mode": "integer",
+      "correct_value": 33,
+      "level": 5,
+      "level_name": "Strategist",
+      "universal_skill_id": "NUM_PATTERN_5",
+      "skill_id": "number_patterns",
+      "skill_domain": "numbers",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "none",
+      "visual_type": "2d",
+      "visual_ai_verified": false,
+      "media_id": "NCERT-G5-188.svg",
+      "media_hash": "sha256:6e3a6e7ddad15906",
+      "misconception_ids": [
+        "MISC_1",
+        "MISC_3",
+        "MISC_2"
+      ],
+      "why_quality": "ai_generated",
+      "why_framework": "pending",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "good",
+        "has_3_layers": true,
+        "spoiler_remediated": true
+      },
+      "curriculum_source": "ncert",
+      "curriculum_map": {
+        "cbse": "Ch3: Patterns",
+        "icse": "Ch3: Patterns",
+        "cambridge": "Na - Algebra",
+        "singapore": "Patterns",
+        "common_core": "OA - Operations & Algebraic Thinking"
+      },
+      "school_grade": 5,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "adaptive_topic_id": "g5-patterns",
+      "adaptive_topic_name": "Patterns & Logic",
+      "adaptive_topic_emoji": "\ud83e\udde9",
+      "adaptive_grade": 5,
+      "dual_tagged": true,
+      "content_source": "ncert",
+      "sequence_id": 272,
+      "difficulty_tier_in_topic": "proficient",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "original_id": "NCERT-G5-371"
+    },
+    {
+      "id": "A5-PAT-0027",
+      "stem": "In the sequence 5, 8, 11, 14, ..., what is the 9th term?",
+      "choices": [],
+      "correct_answer": 1,
+      "difficulty_tier": "medium-hard",
+      "difficulty_score": 55,
+      "visual_svg": null,
+      "visual_alt": null,
+      "diagnostics": {
+        "1": "Used n instead of n-1",
+        "2": "Wrong common difference",
+        "3": "Arithmetic error"
+      },
+      "tags": [
+        "patterns",
+        "nth-term"
+      ],
+      "topic": "ncert_g5_patterns",
+      "chapter": "Ch10: Patterns",
+      "hint": {
+        "level_0": "Use the formula: nth term = first term + (n-1) \u00d7 common difference",
+        "level_1": "= 5 + (9-1) \u00d7 3 = 5 + 24 = ? Try working out the calculation step-by-step. Double-check your final calculation.",
+        "level_2": "Look at how things change from one step to the next \u2014 that's the rule!"
+      },
+      "curriculum_tags": [
+        "NCERT_5_10"
+      ],
+      "irt_params": {
+        "a": 1.15,
+        "b": 1.24,
+        "c": 0.25
+      },
+      "irt_a": 1.15,
+      "irt_b": 1.24,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Look at the differences: 8-5=3",
+        "The pattern adds 3 each time",
+        "Add 3 to the last number to find next"
+      ],
+      "interaction_mode": "integer",
+      "correct_value": 29,
+      "level": 5,
+      "level_name": "Strategist",
+      "universal_skill_id": "NUM_PATTERN_5",
+      "skill_id": "number_patterns",
+      "skill_domain": "numbers",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "none",
+      "visual_type": "none",
+      "visual_ai_verified": false,
+      "media_id": null,
+      "media_hash": null,
+      "misconception_ids": [
+        "MISC_1",
+        "MISC_3",
+        "MISC_2"
+      ],
+      "why_quality": "ai_generated",
+      "why_framework": "pending",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "good",
+        "has_3_layers": true,
+        "spoiler_remediated": true
+      },
+      "curriculum_source": "ncert",
+      "curriculum_map": {
+        "cbse": "Ch3: Patterns",
+        "icse": "Ch3: Patterns",
+        "cambridge": "Na - Algebra",
+        "singapore": "Patterns",
+        "common_core": "OA - Operations & Algebraic Thinking"
+      },
+      "school_grade": 5,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "adaptive_topic_id": "g5-patterns",
+      "adaptive_topic_name": "Patterns & Logic",
+      "adaptive_topic_emoji": "\ud83e\udde9",
+      "adaptive_grade": 5,
+      "dual_tagged": true,
+      "content_source": "ncert",
+      "sequence_id": 273,
+      "difficulty_tier_in_topic": "proficient",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "original_id": "NCERT-G5-372"
+    },
+    {
+      "id": "A5-PAT-0028",
+      "stem": "In the sequence 2, 4, 6, 8, ..., what is the 8th term?",
+      "choices": [],
+      "correct_answer": 1,
+      "difficulty_tier": "medium-hard",
+      "difficulty_score": 55,
+      "visual_svg": null,
+      "visual_alt": null,
+      "diagnostics": {
+        "1": "Used n instead of n-1",
+        "2": "Wrong common difference",
+        "3": "Arithmetic error"
+      },
+      "tags": [
+        "patterns",
+        "nth-term"
+      ],
+      "topic": "ncert_g5_patterns",
+      "chapter": "Ch10: Patterns",
+      "hint": {
+        "level_0": "Use the formula: nth term = first term + (n-1) \u00d7 common difference",
+        "level_1": "= 2 + (8-1) \u00d7 2 = 2 + 14 = ? Try working out the calculation step-by-step. Double-check your final calculation.",
+        "level_2": "Look at how things change from one step to the next \u2014 that's the rule!"
+      },
+      "curriculum_tags": [
+        "NCERT_5_10"
+      ],
+      "irt_params": {
+        "a": 1.15,
+        "b": 1.24,
+        "c": 0.25
+      },
+      "irt_a": 1.15,
+      "irt_b": 1.24,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Look at the differences: 4-2=2",
+        "The pattern adds 2 each time",
+        "Add 2 to the last number to find next"
+      ],
+      "interaction_mode": "integer",
+      "correct_value": 16,
+      "level": 5,
+      "level_name": "Strategist",
+      "universal_skill_id": "NUM_PATTERN_5",
+      "skill_id": "number_patterns",
+      "skill_domain": "numbers",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "none",
+      "visual_type": "2d",
+      "visual_ai_verified": false,
+      "media_id": "NCERT-G5-194.svg",
+      "media_hash": "sha256:6e3a6e7ddad15906",
+      "misconception_ids": [
+        "MISC_1",
+        "MISC_3",
+        "MISC_2"
+      ],
+      "why_quality": "ai_generated",
+      "why_framework": "pending",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "good",
+        "has_3_layers": true,
+        "spoiler_remediated": true
+      },
+      "curriculum_source": "ncert",
+      "curriculum_map": {
+        "cbse": "Ch3: Patterns",
+        "icse": "Ch3: Patterns",
+        "cambridge": "Na - Algebra",
+        "singapore": "Patterns",
+        "common_core": "OA - Operations & Algebraic Thinking"
+      },
+      "school_grade": 5,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "adaptive_topic_id": "g5-patterns",
+      "adaptive_topic_name": "Patterns & Logic",
+      "adaptive_topic_emoji": "\ud83e\udde9",
+      "adaptive_grade": 5,
+      "dual_tagged": true,
+      "content_source": "ncert",
+      "sequence_id": 274,
+      "difficulty_tier_in_topic": "proficient",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "original_id": "NCERT-G5-373"
+    },
+    {
+      "id": "A5-PAT-0029",
+      "stem": "In the sequence 5, 7, 9, 11, ..., what is the 9th term?",
+      "choices": [],
+      "correct_answer": 0,
+      "difficulty_tier": "medium-hard",
+      "difficulty_score": 55,
+      "visual_svg": null,
+      "visual_alt": null,
+      "diagnostics": {
+        "1": "Used n instead of n-1",
+        "2": "Wrong common difference",
+        "3": "Arithmetic error"
+      },
+      "tags": [
+        "patterns",
+        "nth-term"
+      ],
+      "topic": "ncert_g5_patterns",
+      "chapter": "Ch10: Patterns",
+      "hint": {
+        "level_0": "Use the formula: nth term = first term + (n-1) \u00d7 common difference",
+        "level_1": "= 5 + (9-1) \u00d7 2 = 5 + 16 = ? Try working out the calculation step-by-step. Double-check your final calculation.",
+        "level_2": "Look at how things change from one step to the next \u2014 that's the rule!"
+      },
+      "curriculum_tags": [
+        "NCERT_5_10"
+      ],
+      "irt_params": {
+        "a": 1.15,
+        "b": 1.24,
+        "c": 0.25
+      },
+      "irt_a": 1.15,
+      "irt_b": 1.24,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Look at the differences: 7-5=2",
+        "The pattern adds 2 each time",
+        "Add 2 to the last number to find next"
+      ],
+      "interaction_mode": "integer",
+      "correct_value": 21,
+      "level": 5,
+      "level_name": "Strategist",
+      "universal_skill_id": "NUM_PATTERN_5",
+      "skill_id": "number_patterns",
+      "skill_domain": "numbers",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "none",
+      "visual_type": "none",
+      "visual_ai_verified": false,
+      "media_id": null,
+      "media_hash": null,
+      "misconception_ids": [
+        "MISC_1",
+        "MISC_3",
+        "MISC_2"
+      ],
+      "why_quality": "ai_generated",
+      "why_framework": "pending",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "good",
+        "has_3_layers": true,
+        "spoiler_remediated": true
+      },
+      "curriculum_source": "ncert",
+      "curriculum_map": {
+        "cbse": "Ch3: Patterns",
+        "icse": "Ch3: Patterns",
+        "cambridge": "Na - Algebra",
+        "singapore": "Patterns",
+        "common_core": "OA - Operations & Algebraic Thinking"
+      },
+      "school_grade": 5,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "adaptive_topic_id": "g5-patterns",
+      "adaptive_topic_name": "Patterns & Logic",
+      "adaptive_topic_emoji": "\ud83e\udde9",
+      "adaptive_grade": 5,
+      "dual_tagged": true,
+      "content_source": "ncert",
+      "sequence_id": 275,
+      "difficulty_tier_in_topic": "proficient",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "original_id": "NCERT-G5-374"
+    },
+    {
+      "id": "A5-PAT-0030",
+      "stem": "In the sequence 1, 6, 11, 16, ..., what is the 14th term?",
+      "choices": [],
+      "correct_answer": 1,
+      "difficulty_tier": "medium-hard",
+      "difficulty_score": 55,
+      "visual_svg": null,
+      "visual_alt": null,
+      "diagnostics": {
+        "1": "Used n instead of n-1",
+        "2": "Wrong common difference",
+        "3": "Arithmetic error"
+      },
+      "tags": [
+        "patterns",
+        "nth-term"
+      ],
+      "topic": "ncert_g5_patterns",
+      "chapter": "Ch10: Patterns",
+      "hint": {
+        "level_0": "Use the formula: nth term = first term + (n-1) \u00d7 common difference",
+        "level_1": "= ? + (14-1) \u00d7 5 = ? + 65 = ? Try working out the calculation step-by-step. Double-check your final calculation.",
+        "level_2": "Look at how things change from one step to the next \u2014 that's the rule!"
+      },
+      "curriculum_tags": [
+        "NCERT_5_10"
+      ],
+      "irt_params": {
+        "a": 1.15,
+        "b": 1.24,
+        "c": 0.25
+      },
+      "irt_a": 1.15,
+      "irt_b": 1.24,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Look at the differences: 6-1=5",
+        "The pattern adds 5 each time",
+        "Add 5 to the last number to find next"
+      ],
+      "interaction_mode": "integer",
+      "correct_value": 66,
+      "level": 5,
+      "level_name": "Strategist",
+      "universal_skill_id": "NUM_PATTERN_5",
+      "skill_id": "number_patterns",
+      "skill_domain": "numbers",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "none",
+      "visual_type": "none",
+      "visual_ai_verified": false,
+      "media_id": null,
+      "media_hash": null,
+      "misconception_ids": [
+        "MISC_1",
+        "MISC_3",
+        "MISC_2"
+      ],
+      "why_quality": "ai_generated",
+      "why_framework": "pending",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "good",
+        "has_3_layers": true,
+        "spoiler_remediated": true
+      },
+      "curriculum_source": "ncert",
+      "curriculum_map": {
+        "cbse": "Ch3: Patterns",
+        "icse": "Ch3: Patterns",
+        "cambridge": "Na - Algebra",
+        "singapore": "Patterns",
+        "common_core": "OA - Operations & Algebraic Thinking"
+      },
+      "school_grade": 5,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "adaptive_topic_id": "g5-patterns",
+      "adaptive_topic_name": "Patterns & Logic",
+      "adaptive_topic_emoji": "\ud83e\udde9",
+      "adaptive_grade": 5,
+      "dual_tagged": true,
+      "content_source": "ncert",
+      "sequence_id": 276,
+      "difficulty_tier_in_topic": "proficient",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "original_id": "NCERT-G5-375"
+    },
+    {
+      "id": "A5-PAT-0031",
+      "stem": "In the sequence 4, 10, 16, 22, ..., what is the 12th term?",
+      "choices": [],
+      "correct_answer": 0,
+      "difficulty_tier": "medium-hard",
+      "difficulty_score": 55,
+      "visual_svg": null,
+      "visual_alt": null,
+      "diagnostics": {
+        "1": "Used n instead of n-1",
+        "2": "Wrong common difference",
+        "3": "Arithmetic error"
+      },
+      "tags": [
+        "patterns",
+        "nth-term"
+      ],
+      "topic": "ncert_g5_patterns",
+      "chapter": "Ch10: Patterns",
+      "hint": {
+        "level_0": "Use the formula: nth term = first term + (n-1) \u00d7 common difference",
+        "level_1": "= 4 + (12-1) \u00d7 6 = 4 + 66 = ? Try working out the calculation step-by-step. Double-check your final calculation.",
+        "level_2": "Look at how things change from one step to the next \u2014 that's the rule!"
+      },
+      "curriculum_tags": [
+        "NCERT_5_10"
+      ],
+      "irt_params": {
+        "a": 1.15,
+        "b": 1.24,
+        "c": 0.25
+      },
+      "irt_a": 1.15,
+      "irt_b": 1.24,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Look at the differences: 10-4=6",
+        "The pattern adds 6 each time",
+        "Add 6 to the last number to find next"
+      ],
+      "interaction_mode": "integer",
+      "correct_value": 70,
+      "level": 5,
+      "level_name": "Strategist",
+      "universal_skill_id": "NUM_PATTERN_5",
+      "skill_id": "number_patterns",
+      "skill_domain": "numbers",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "none",
+      "visual_type": "2d",
+      "visual_ai_verified": false,
+      "media_id": "NCERT-G5-203.svg",
+      "media_hash": "sha256:6e3a6e7ddad15906",
+      "misconception_ids": [
+        "MISC_1",
+        "MISC_3",
+        "MISC_2"
+      ],
+      "why_quality": "ai_generated",
+      "why_framework": "pending",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "good",
+        "has_3_layers": true,
+        "spoiler_remediated": true
+      },
+      "curriculum_source": "ncert",
+      "curriculum_map": {
+        "cbse": "Ch3: Patterns",
+        "icse": "Ch3: Patterns",
+        "cambridge": "Na - Algebra",
+        "singapore": "Patterns",
+        "common_core": "OA - Operations & Algebraic Thinking"
+      },
+      "school_grade": 5,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "adaptive_topic_id": "g5-patterns",
+      "adaptive_topic_name": "Patterns & Logic",
+      "adaptive_topic_emoji": "\ud83e\udde9",
+      "adaptive_grade": 5,
+      "dual_tagged": true,
+      "content_source": "ncert",
+      "sequence_id": 277,
+      "difficulty_tier_in_topic": "proficient",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "original_id": "NCERT-G5-376"
+    }
+  ],
+  "fixed_at": "2026-05-03T09:39:35.155750",
+  "corrected_at": "2026-06-09T22:19:52.781881"
+}

@@ -8,7 +8,7 @@ Usage: python3 pre_deploy_check.py
 import json, os, glob, sys, hashlib
 from collections import defaultdict
 
-content_dir = os.path.join(os.path.dirname(__file__), '..', 'content-v2')
+content_dir = os.path.join(os.path.dirname(__file__), '..', 'content-live', 'content-v2')
 content_dir = os.path.abspath(content_dir)
 
 print(f"=== Kiwimath Pre-Deploy Check ===")

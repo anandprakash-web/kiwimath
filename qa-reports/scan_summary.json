@@ -1,0 +1,22 @@
+{
+  "fixes": {
+    "stem_punct_spacing": 2,
+    "stem_dropped_word_repaired": 2
+  },
+  "scanned": {
+    "stems": 20056,
+    "answers": 20056,
+    "answers_parseable": 4200,
+    "missing_visual": 20056,
+    "hints": 20056,
+    "visuals": 9566,
+    "visual_flagged": 4504
+  },
+  "clean": {
+    "stems": 19359,
+    "answers_parseable_ok": 4144,
+    "hints": 11956,
+    "answers_unparsed": 15856,
+    "visuals": 5062
+  }
+}

@@ -1,0 +1,360 @@
+{
+  "topic_id": "wavebook-days-months-dates",
+  "topic_name": "Wavebook: Days months dates",
+  "topic_emoji": "\ud83d\udcd8",
+  "grade": 3,
+  "domain": "wavebook",
+  "source": "wavebook",
+  "total_questions": 15,
+  "difficulty_range": {
+    "min": 0,
+    "max": 0
+  },
+  "questions": [
+    {
+      "id": "wb_L3_s25_q01",
+      "stem": "How many days are there in a leap year?",
+      "interaction_mode": "mcq",
+      "topic": "Days months dates",
+      "difficulty_tier": "warmup",
+      "question_number": 1,
+      "choices": [
+        "364",
+        "365",
+        "366",
+        "367"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S25",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "An ordinary year and a leap year differ by exactly one day. Which one is asked about?",
+        "level_1": "An ordinary year has 365 days. In a leap year, February gets one extra day.",
+        "level_2": "Days in a leap year = 365 + 1 = ?"
+      }
+    },
+    {
+      "id": "wb_L3_s25_q02",
+      "stem": "Which of the following is a leap year?",
+      "interaction_mode": "mcq",
+      "topic": "Days months dates",
+      "difficulty_tier": "warmup",
+      "question_number": 2,
+      "choices": [
+        "2100",
+        "2200",
+        "2300",
+        "2400"
+      ],
+      "correct_answer": 3,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S25",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "What makes a year a leap year? Recall the rule before checking the choices.",
+        "level_1": "Rule: the year must divide exactly by 4. BUT century years (ending 00) must divide by 400.",
+        "level_2": "Test each choice: divide by 4 (and by 400 if it ends in 00). Which one passes? = ?"
+      }
+    },
+    {
+      "id": "wb_L3_s25_q03",
+      "stem": "If January 1 is a Monday, what day is January 31?",
+      "interaction_mode": "mcq",
+      "topic": "Days months dates",
+      "difficulty_tier": "warmup",
+      "question_number": 3,
+      "choices": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S25",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "We know January 1 is a Monday, and we want the weekday of January 31.",
+        "level_1": "Weekdays repeat every 7 days. Count how many days lie between January 1 and January 31, then find the remainder after dividing by 7.",
+        "level_2": "Move that remainder of days forward from Monday: Monday + remainder days = ?"
+      }
+    },
+    {
+      "id": "wb_L3_s25_q04",
+      "stem": "How many months have 31 days?",
+      "interaction_mode": "mcq",
+      "topic": "Days months dates",
+      "difficulty_tier": "warmup",
+      "question_number": 4,
+      "choices": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S25",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "What do we know about the calendar here? Re-read what period the question asks about.",
+        "level_1": "Useful facts: 1 week = 7 days, a year = 365 days, a LEAP year has one extra day in February.",
+        "level_2": "Use the right calendar fact and work it out: ... = ?"
+      }
+    },
+    {
+      "id": "wb_L3_s25_q05",
+      "stem": "What is the day after 28th February in a non-leap year?",
+      "interaction_mode": "mcq",
+      "topic": "Days months dates",
+      "difficulty_tier": "warmup",
+      "question_number": 5,
+      "choices": [
+        "28th February",
+        "29th February",
+        "1st March",
+        "2nd March"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S25",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "What makes a year a leap year? Recall the rule before checking the choices.",
+        "level_1": "Rule: the year must divide exactly by 4. BUT century years (ending 00) must divide by 400.",
+        "level_2": "Test each choice: divide by 4 (and by 400 if it ends in 00). Which one passes? = ?"
+      }
+    },
+    {
+      "id": "wb_L3_s25_q06",
+      "stem": "If today is Wednesday, what day will it be after 45 days?",
+      "interaction_mode": "mcq",
+      "topic": "Days months dates",
+      "difficulty_tier": "practice",
+      "question_number": 6,
+      "choices": [
+        "Friday",
+        "Saturday",
+        "Sunday",
+        "Thursday"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S25",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "What is known (45) and what exactly is asked? Say it in your own words.",
+        "level_1": "Choose the operation the story needs (add, subtract, multiply, divide) and set it up with 45.",
+        "level_2": "Write the calculation out and solve it step by step: ... = ?"
+      }
+    },
+    {
+      "id": "wb_L3_s25_q07",
+      "stem": "How many days are there from March 5 to April 15 (both included)?",
+      "interaction_mode": "mcq",
+      "topic": "Days months dates",
+      "difficulty_tier": "practice",
+      "question_number": 7,
+      "choices": [
+        "41",
+        "42",
+        "40",
+        "43"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S25",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "What is known (5, 15) and what exactly is asked? Say it in your own words.",
+        "level_1": "Choose the operation the story needs (add, subtract, multiply, divide) and set it up with 5, 15.",
+        "level_2": "Write the calculation out and solve it step by step: ... = ?"
+      }
+    },
+    {
+      "id": "wb_L3_s25_q08",
+      "stem": "The year 1900 is",
+      "interaction_mode": "mcq",
+      "topic": "Days months dates",
+      "difficulty_tier": "practice",
+      "question_number": 8,
+      "choices": [
+        "A leap year",
+        "Not a leap year",
+        "Has 364 days",
+        "None of these"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S25",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "What is known (1900) and what exactly is asked? Say it in your own words.",
+        "level_1": "Choose the operation the story needs (add, subtract, multiply, divide) and set it up with 1900.",
+        "level_2": "Write the calculation out and solve it step by step: ... = ?"
+      }
+    },
+    {
+      "id": "wb_L3_s25_q09",
+      "stem": "If 15th August falls on a Thursday, what day is 26th January of the next year?",
+      "interaction_mode": "mcq",
+      "topic": "Days months dates",
+      "difficulty_tier": "practice",
+      "question_number": 9,
+      "choices": [
+        "Sunday",
+        "Monday",
+        "Saturday",
+        "Friday"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S25",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "What is known (15, 26) and what exactly is asked? Say it in your own words.",
+        "level_1": "Choose the operation the story needs (add, subtract, multiply, divide) and set it up with 15, 26.",
+        "level_2": "Write the calculation out and solve it step by step: ... = ?"
+      }
+    },
+    {
+      "id": "wb_L3_s25_q10",
+      "stem": "How many odd days are in 100 years?",
+      "interaction_mode": "mcq",
+      "topic": "Days months dates",
+      "difficulty_tier": "practice",
+      "question_number": 10,
+      "choices": [
+        "5",
+        "4",
+        "3",
+        "2"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S25",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "What do we know about the calendar here? Re-read what period the question asks about.",
+        "level_1": "Useful facts: 1 week = 7 days, a year = 365 days, a LEAP year has one extra day in February.",
+        "level_2": "Use the right calendar fact and work it out: ... = ?"
+      }
+    },
+    {
+      "id": "wb_L3_s25_q11",
+      "stem": "A man was born on March 5, 2010. What day of the week was it if March 1, 2010 was a Monday?",
+      "interaction_mode": "mcq",
+      "topic": "Days months dates",
+      "difficulty_tier": "challenge",
+      "question_number": 11,
+      "choices": [
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Wednesday"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S25",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "What is known (5, 2010, 1, 2010) and what exactly is asked? Say it in your own words.",
+        "level_1": "Choose the operation the story needs (add, subtract, multiply, divide) and set it up with 5, 2010, 1.",
+        "level_2": "Write the calculation out and solve it step by step: ... = ?"
+      }
+    },
+    {
+      "id": "wb_L3_s25_q12",
+      "stem": "How many Sundays are in a year that begins on a Sunday and is not a leap year?",
+      "interaction_mode": "mcq",
+      "topic": "Days months dates",
+      "difficulty_tier": "challenge",
+      "question_number": 12,
+      "choices": [
+        "52",
+        "53",
+        "54",
+        "51"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S25",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "What makes a year a leap year? Recall the rule before checking the choices.",
+        "level_1": "Rule: the year must divide exactly by 4. BUT century years (ending 00) must divide by 400.",
+        "level_2": "Test each choice: divide by 4 (and by 400 if it ends in 00). Which one passes? = ?"
+      }
+    },
+    {
+      "id": "wb_L3_s25_q13",
+      "stem": "If December 25 is a Tuesday, what day is January 1 of the next year?",
+      "interaction_mode": "mcq",
+      "topic": "Days months dates",
+      "difficulty_tier": "challenge",
+      "question_number": 13,
+      "choices": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S25",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "We know December 25 is a Tuesday, and we want the weekday of January 1.",
+        "level_1": "Weekdays repeat every 7 days. Count how many days lie between December 25 and January 1, then find the remainder after dividing by 7.",
+        "level_2": "Move that remainder of days forward from Tuesday: Tuesday + remainder days = ?"
+      }
+    },
+    {
+      "id": "wb_L3_s25_q14",
+      "stem": "The number of days from July 4 to September 3 (not including start date) is",
+      "interaction_mode": "mcq",
+      "topic": "Days months dates",
+      "difficulty_tier": "challenge",
+      "question_number": 14,
+      "choices": [
+        "60",
+        "61",
+        "62",
+        "58"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S25",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "What is known (4, 3) and what exactly is asked? Say it in your own words.",
+        "level_1": "Choose the operation the story needs (add, subtract, multiply, divide) and set it up with 4, 3.",
+        "level_2": "Write the calculation out and solve it step by step: ... = ?"
+      }
+    },
+    {
+      "id": "wb_L3_s25_q15",
+      "stem": "Which century year is a leap year?",
+      "interaction_mode": "mcq",
+      "topic": "Days months dates",
+      "difficulty_tier": "challenge",
+      "question_number": 15,
+      "choices": [
+        "1700",
+        "1800",
+        "1900",
+        "2000"
+      ],
+      "correct_answer": 3,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S25",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "What makes a year a leap year? Recall the rule before checking the choices.",
+        "level_1": "Rule: the year must divide exactly by 4. BUT century years (ending 00) must divide by 400.",
+        "level_2": "Test each choice: divide by 4 (and by 400 if it ends in 00). Which one passes? = ?"
+      }
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "generated_at": "2026-05-17T11:17:19.455724Z",
+  "schema_version": "5.0",
+  "total_questions": 29460,
+  "grades": {
+    "1": {
+      "topics": 16,
+      "questions": 6040
+    },
+    "2": {
+      "topics": 16,
+      "questions": 6175
+    },
+    "3": {
+      "topics": 39,
+      "questions": 6284
+    },
+    "4": {
+      "topics": 39,
+      "questions": 5717
+    },
+    "5": {
+      "topics": 44,
+      "questions": 3206
+    },
+    "6": {
+      "topics": 35,
+      "questions": 2038
+    }
+  }
+}

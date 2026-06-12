@@ -1,0 +1,379 @@
+{
+  "topic_id": "wavebook-paper-folding",
+  "topic_name": "Wavebook: Paper Folding",
+  "topic_emoji": "\ud83d\udcd8",
+  "grade": 4,
+  "domain": "wavebook",
+  "source": "wavebook",
+  "total_questions": 15,
+  "difficulty_range": {
+    "min": 0,
+    "max": 0
+  },
+  "questions": [
+    {
+      "id": "wb_L3_s30_q01",
+      "stem": "A square paper is folded once along its diagonal and a cut is made. When unfolded, the resulting shape is",
+      "interaction_mode": "mcq",
+      "topic": "Paper Folding",
+      "difficulty_tier": "warmup",
+      "question_number": 1,
+      "choices": [
+        "Triangle",
+        "Rectangle",
+        "Rhombus",
+        "Pentagon"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S30",
+      "svg": "wb_L3_s30_q01.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 180\" width=\"300\" height=\"180\" style=\"font-family:Arial,sans-serif\"><rect x=\"50\" y=\"30\" width=\"200\" height=\"120\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2.5\" rx=\"2\"/></svg>",
+      "hint": {
+        "level_0": "Track two things: how many LAYERS the folds make, and where the cut goes through them.",
+        "level_1": "Each fold doubles the layers: 1 fold = 2 layers, 2 folds = 4 layers. One cut goes through every layer.",
+        "level_2": "Unfold step by step in your head \u2014 each layer shows its own copy of the cut. How many copies / what shape? = ?"
+      }
+    },
+    {
+      "id": "wb_L3_s30_q02",
+      "stem": "A circular paper is folded in half and then in half again. A small triangle is cut from the folded corner. How many holes appear when unfolded?",
+      "interaction_mode": "mcq",
+      "topic": "Paper Folding",
+      "difficulty_tier": "warmup",
+      "question_number": 2,
+      "choices": [
+        "1",
+        "2",
+        "4",
+        "8"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S30",
+      "svg": "wb_L3_s30_q02.svg",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "Sort the numbers first: what was PAID in total (cost price) and what was RECEIVED (selling price)?",
+        "level_1": "Profit = selling price \u2212 total cost. Loss = total cost \u2212 selling price.",
+        "level_2": "Percent: (profit or loss \u00f7 cost price) \u00d7 100 = ? %"
+      }
+    },
+    {
+      "id": "wb_L3_s30_q03",
+      "stem": "A rectangular paper is folded along its length. A semicircle is cut on the folded edge. When opened, it becomes",
+      "interaction_mode": "mcq",
+      "topic": "Paper Folding",
+      "difficulty_tier": "warmup",
+      "question_number": 3,
+      "choices": [
+        "A circle",
+        "A semicircle",
+        "An oval",
+        "Two semicircles"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S30",
+      "svg": "wb_L3_s30_q03.svg",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "Track two things: how many LAYERS the folds make, and where the cut goes through them.",
+        "level_1": "Each fold doubles the layers: 1 fold = 2 layers, 2 folds = 4 layers. One cut goes through every layer.",
+        "level_2": "Unfold step by step in your head \u2014 each layer shows its own copy of the cut. How many copies / what shape? = ?"
+      }
+    },
+    {
+      "id": "wb_L3_s30_q04",
+      "stem": "A paper is folded twice (into quarters). A corner is cut off. How many corners are removed when unfolded?",
+      "interaction_mode": "mcq",
+      "topic": "Paper Folding",
+      "difficulty_tier": "warmup",
+      "question_number": 4,
+      "choices": [
+        "1",
+        "2",
+        "4",
+        "8"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S30",
+      "svg": "wb_L3_s30_q04.svg",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "Track two things: how many LAYERS the folds make, and where the cut goes through them.",
+        "level_1": "Each fold doubles the layers: 1 fold = 2 layers, 2 folds = 4 layers. One cut goes through every layer.",
+        "level_2": "Unfold step by step in your head \u2014 each layer shows its own copy of the cut. How many copies / what shape? = ?"
+      }
+    },
+    {
+      "id": "wb_L3_s30_q05",
+      "stem": "When a square paper is folded along both diagonals and a small square is cut at the center, the unfolded paper shows",
+      "interaction_mode": "mcq",
+      "topic": "Paper Folding",
+      "difficulty_tier": "warmup",
+      "question_number": 5,
+      "choices": [
+        "1 square hole",
+        "2 square holes",
+        "4 square holes",
+        "A diamond shape"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S30",
+      "svg": "wb_L3_s30_q05.svg",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "Track two things: how many LAYERS the folds make, and where the cut goes through them.",
+        "level_1": "Each fold doubles the layers: 1 fold = 2 layers, 2 folds = 4 layers. One cut goes through every layer.",
+        "level_2": "Unfold step by step in your head \u2014 each layer shows its own copy of the cut. How many copies / what shape? = ?"
+      }
+    },
+    {
+      "id": "wb_L3_s30_q06",
+      "stem": "A rectangular paper is folded in half widthwise. Two small squares are cut on the folded side. When opened, how many square holes appear?",
+      "interaction_mode": "mcq",
+      "topic": "Paper Folding",
+      "difficulty_tier": "practice",
+      "question_number": 6,
+      "choices": [
+        "2",
+        "4",
+        "6",
+        "8"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S30",
+      "svg": "wb_L3_s30_q06.svg",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "Track two things: how many LAYERS the folds make, and where the cut goes through them.",
+        "level_1": "Each fold doubles the layers: 1 fold = 2 layers, 2 folds = 4 layers. One cut goes through every layer.",
+        "level_2": "Unfold step by step in your head \u2014 each layer shows its own copy of the cut. How many copies / what shape? = ?"
+      }
+    },
+    {
+      "id": "wb_L3_s30_q07",
+      "stem": "A paper folded into a triangle (2 folds from square) has a semicircle cut at the base. The unfolded shape of the cut is",
+      "interaction_mode": "mcq",
+      "topic": "Paper Folding",
+      "difficulty_tier": "practice",
+      "question_number": 7,
+      "choices": [
+        "Full circle",
+        "Two semicircles",
+        "Half circle",
+        "Quarter circle"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S30",
+      "svg": "wb_L3_s30_q07.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 200\" width=\"300\" height=\"200\" style=\"font-family:Arial,sans-serif\"><polygon points=\"150,20 50,170 250,170\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2.5\"/></svg>",
+      "hint": {
+        "level_0": "Track two things: how many LAYERS the folds make, and where the cut goes through them.",
+        "level_1": "Each fold doubles the layers: 1 fold = 2 layers, 2 folds = 4 layers. One cut goes through every layer.",
+        "level_2": "Unfold step by step in your head \u2014 each layer shows its own copy of the cut. How many copies / what shape? = ?"
+      }
+    },
+    {
+      "id": "wb_L3_s30_q08",
+      "stem": "A square paper is folded in half. A right triangle is cut from the open edge corner. When unfolded, the result is",
+      "interaction_mode": "mcq",
+      "topic": "Paper Folding",
+      "difficulty_tier": "practice",
+      "question_number": 8,
+      "choices": [
+        "A triangle removed",
+        "A rectangle removed",
+        "A diamond removed",
+        "Two triangles removed"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S30",
+      "svg": "wb_L3_s30_q08.svg",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "Track two things: how many LAYERS the folds make, and where the cut goes through them.",
+        "level_1": "Each fold doubles the layers: 1 fold = 2 layers, 2 folds = 4 layers. One cut goes through every layer.",
+        "level_2": "Unfold step by step in your head \u2014 each layer shows its own copy of the cut. How many copies / what shape? = ?"
+      }
+    },
+    {
+      "id": "wb_L3_s30_q09",
+      "stem": "A paper is folded 3 times and a single hole is punched. How many holes appear when fully unfolded?",
+      "interaction_mode": "mcq",
+      "topic": "Paper Folding",
+      "difficulty_tier": "practice",
+      "question_number": 9,
+      "choices": [
+        "3",
+        "6",
+        "8",
+        "4"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S30",
+      "svg": "wb_L3_s30_q09.svg",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "Track two things: how many LAYERS the folds make, and where the cut goes through them.",
+        "level_1": "Each fold doubles the layers: 1 fold = 2 layers, 2 folds = 4 layers. One cut goes through every layer.",
+        "level_2": "Unfold step by step in your head \u2014 each layer shows its own copy of the cut. How many copies / what shape? = ?"
+      }
+    },
+    {
+      "id": "wb_L3_s30_q10",
+      "stem": "A square paper is folded along its vertical axis. An L-shaped cut is made. When unfolded, the shape is",
+      "interaction_mode": "mcq",
+      "topic": "Paper Folding",
+      "difficulty_tier": "practice",
+      "question_number": 10,
+      "choices": [
+        "L-shape",
+        "T-shape",
+        "U-shape",
+        "Plus sign"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S30",
+      "svg": "wb_L3_s30_q10.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 180\" width=\"300\" height=\"180\" style=\"font-family:Arial,sans-serif\"><rect x=\"50\" y=\"30\" width=\"200\" height=\"120\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2.5\" rx=\"2\"/></svg>",
+      "hint": {
+        "level_0": "Track two things: how many LAYERS the folds make, and where the cut goes through them.",
+        "level_1": "Each fold doubles the layers: 1 fold = 2 layers, 2 folds = 4 layers. One cut goes through every layer.",
+        "level_2": "Unfold step by step in your head \u2014 each layer shows its own copy of the cut. How many copies / what shape? = ?"
+      }
+    },
+    {
+      "id": "wb_L3_s30_q11",
+      "stem": "A paper is folded twice diagonally and a piece is cut. The resulting pattern has",
+      "interaction_mode": "mcq",
+      "topic": "Paper Folding",
+      "difficulty_tier": "challenge",
+      "question_number": 11,
+      "choices": [
+        "2-fold symmetry",
+        "4-fold symmetry",
+        "No symmetry",
+        "8-fold symmetry"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S30",
+      "svg": "wb_L3_s30_q11.svg",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "Track two things: how many LAYERS the folds make, and where the cut goes through them.",
+        "level_1": "Each fold doubles the layers: 1 fold = 2 layers, 2 folds = 4 layers. One cut goes through every layer.",
+        "level_2": "Unfold step by step in your head \u2014 each layer shows its own copy of the cut. How many copies / what shape? = ?"
+      }
+    },
+    {
+      "id": "wb_L3_s30_q12",
+      "stem": "A circular paper is folded into thirds and a notch is cut at the edge. When unfolded, how many notches appear?",
+      "interaction_mode": "mcq",
+      "topic": "Paper Folding",
+      "difficulty_tier": "challenge",
+      "question_number": 12,
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "6"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S30",
+      "svg": "wb_L3_s30_q12.svg",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "Track two things: how many LAYERS the folds make, and where the cut goes through them.",
+        "level_1": "Each fold doubles the layers: 1 fold = 2 layers, 2 folds = 4 layers. One cut goes through every layer.",
+        "level_2": "Unfold step by step in your head \u2014 each layer shows its own copy of the cut. How many copies / what shape? = ?"
+      }
+    },
+    {
+      "id": "wb_L3_s30_q13",
+      "stem": "A square paper folded once (top to bottom). A triangle is cut from the right side of the fold. The unfolded shape shows",
+      "interaction_mode": "mcq",
+      "topic": "Paper Folding",
+      "difficulty_tier": "challenge",
+      "question_number": 13,
+      "choices": [
+        "One triangle cutout",
+        "A diamond cutout",
+        "Two separate triangles",
+        "A rectangle"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S30",
+      "svg": "wb_L3_s30_q13.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 200\" width=\"300\" height=\"200\" style=\"font-family:Arial,sans-serif\"><polygon points=\"150,20 50,170 250,170\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2.5\"/></svg>",
+      "hint": {
+        "level_0": "Track two things: how many LAYERS the folds make, and where the cut goes through them.",
+        "level_1": "Each fold doubles the layers: 1 fold = 2 layers, 2 folds = 4 layers. One cut goes through every layer.",
+        "level_2": "Unfold step by step in your head \u2014 each layer shows its own copy of the cut. How many copies / what shape? = ?"
+      }
+    },
+    {
+      "id": "wb_L3_s30_q14",
+      "stem": "If a paper is folded 4 times and one hole is punched, maximum how many holes can appear?",
+      "interaction_mode": "mcq",
+      "topic": "Paper Folding",
+      "difficulty_tier": "challenge",
+      "question_number": 14,
+      "choices": [
+        "4",
+        "8",
+        "16",
+        "12"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S30",
+      "svg": "wb_L3_s30_q14.svg",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "Track two things: how many LAYERS the folds make, and where the cut goes through them.",
+        "level_1": "Each fold doubles the layers: 1 fold = 2 layers, 2 folds = 4 layers. One cut goes through every layer.",
+        "level_2": "Unfold step by step in your head \u2014 each layer shows its own copy of the cut. How many copies / what shape? = ?"
+      }
+    },
+    {
+      "id": "wb_L3_s30_q15",
+      "stem": "A paper is folded in half, then in half again perpendicular to the first fold. A circle is cut at the corner where all folds meet. The unfolded paper shows",
+      "interaction_mode": "mcq",
+      "topic": "Paper Folding",
+      "difficulty_tier": "challenge",
+      "question_number": 15,
+      "choices": [
+        "1 circle",
+        "2 circles",
+        "4 circles",
+        "1 large circle"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S30",
+      "svg": "wb_L3_s30_q15.svg",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "Sort the numbers first: what was PAID in total (cost price) and what was RECEIVED (selling price)?",
+        "level_1": "Profit = selling price \u2212 total cost. Loss = total cost \u2212 selling price.",
+        "level_2": "Percent: (profit or loss \u00f7 cost price) \u00d7 100 = ? %"
+      }
+    }
+  ]
+}

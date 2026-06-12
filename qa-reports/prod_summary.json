@@ -1,0 +1,53 @@
+{
+ "scanned": 29460,
+ "duplicate_ids": {
+  "count": 545,
+  "examples": [
+   [
+    "wb_L3_s11_q01",
+    2
+   ],
+   [
+    "wb_L3_s11_q02",
+    2
+   ],
+   [
+    "wb_L3_s11_q04",
+    2
+   ],
+   [
+    "wb_L3_s11_q06",
+    2
+   ],
+   [
+    "wb_L3_s11_q08",
+    2
+   ]
+  ],
+  "file_pairs": {
+   "grade3/wavebook-blood-relation.json | grade4/wavebook-blood-relation.json": 15,
+   "grade3/wavebook-days-months-dates.json | grade4/wavebook-days-months-dates.json": 15,
+   "grade3/wavebook-decimals-part-2.json | grade4/wavebook-decimals-part-2.json": 15,
+   "grade3/wavebook-factors-and-multiples.json | grade4/wavebook-factors-and-multiples.json": 15,
+   "grade3/wavebook-knowing-about-numbers.json | grade4/wavebook-knowing-about-numbers.json": 15,
+   "grade3/wavebook-mental-ability.json | grade4/wavebook-mental-ability.json": 15,
+   "grade3/wavebook-metric-conversion-time-money-volume.json | grade4/wavebook-metric-conversion-time-money-volume.json": 15,
+   "grade3/wavebook-multiplication-and-division.json | grade4/wavebook-multiplication-and-division.json": 15,
+   "grade3/wavebook-paper-folding.json | grade4/wavebook-paper-folding.json": 15,
+   "grade3/wavebook-pattern-of-shapes.json | grade4/wavebook-pattern-of-shapes.json": 15
+  }
+ },
+ "no_hint": {
+  "total": 0,
+  "files": {}
+ },
+ "counts": {
+  "answer_recomputed/info": 4542,
+  "choice_format_mix/low": 3,
+  "hint_no_stem_numbers/low": 11263,
+  "stem_filler/medium": 599,
+  "visual_object_mismatch/medium": 1
+ },
+ "applied": false,
+ "files_modified": []
+}

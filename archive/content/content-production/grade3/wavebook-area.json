@@ -1,0 +1,181 @@
+{
+  "topic_id": "wavebook-area",
+  "topic_name": "Wavebook: Area",
+  "topic_emoji": "\ud83d\udcd8",
+  "grade": 3,
+  "domain": "wavebook",
+  "source": "wavebook",
+  "total_questions": 7,
+  "difficulty_range": {
+    "min": 0,
+    "max": 0
+  },
+  "questions": [
+    {
+      "id": "wb_L3_s11_q01",
+      "stem": "Calculate the area of rectangle if one square represents an area of 1 cm\u00b2 (6 columns, 4 rows)",
+      "interaction_mode": "mcq",
+      "topic": "Area",
+      "difficulty_tier": "warmup",
+      "question_number": 1,
+      "choices": [
+        "2 cm\u00b2",
+        "9 cm\u00b2",
+        "50 cm\u00b2",
+        "24 cm\u00b2"
+      ],
+      "correct_answer": 3,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S11",
+      "svg": "svg/wb_L3_s11_q01.svg",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "Each small square of the grid counts as one unit of area. What is being asked \u2014 the total covered?",
+        "level_1": "You don't need a formula here: count the unit squares the region covers, row by row.",
+        "level_2": "Number of covered squares \u00d7 area of one square = ?"
+      }
+    },
+    {
+      "id": "wb_L3_s11_q02",
+      "stem": "Each side of square is of 10m. What will be the area of the square?",
+      "interaction_mode": "mcq",
+      "topic": "Area",
+      "difficulty_tier": "warmup",
+      "question_number": 2,
+      "choices": [
+        "100 m\u00b2",
+        "90 m\u00b2",
+        "34 m\u00b2",
+        "115 m\u00b2"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S11",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "Each side of the square is 10. What is the area \u2014 the space the square covers?",
+        "level_1": "A square's length and width are the same, both 10.",
+        "level_2": "Area = side \u00d7 side = 10 \u00d7 10 = ?"
+      }
+    },
+    {
+      "id": "wb_L3_s11_q04",
+      "stem": "The length and breadth of a rectangle are (3a + 2) and (2a - 1). Which represents its perimeter?",
+      "interaction_mode": "mcq",
+      "topic": "Area",
+      "difficulty_tier": "warmup",
+      "question_number": 4,
+      "choices": [
+        "2(5a - 1)",
+        "(5a + 1)",
+        "(5a - 1)",
+        "2(5a + 1)"
+      ],
+      "correct_answer": 3,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S11",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "The sides are algebraic expressions. Perimeter still means: add ALL the sides around the shape.",
+        "level_1": "A rectangle has two lengths and two breadths, so each expression is used twice.",
+        "level_2": "Perimeter = 2 \u00d7 (length + breadth) \u2014 add the two expressions inside the bracket first, then double = ?"
+      }
+    },
+    {
+      "id": "wb_L3_s11_q06",
+      "stem": "Find the area of shaded region. (Each square = 1 m\u00b2, 21 squares shaded in L-pattern)",
+      "interaction_mode": "mcq",
+      "topic": "Area",
+      "difficulty_tier": "practice",
+      "question_number": 6,
+      "choices": [
+        "21 m\u00b2",
+        "35 m\u00b2",
+        "34 m\u00b2",
+        "13 m\u00b2"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S11",
+      "svg": "svg/wb_L3_s11_q06.svg",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "Each small square of the grid counts as one unit of area. What is being asked \u2014 the total covered?",
+        "level_1": "You don't need a formula here: count the unit squares the region covers, row by row.",
+        "level_2": "Number of covered squares \u00d7 area of one square = ?"
+      }
+    },
+    {
+      "id": "wb_L3_s11_q08",
+      "stem": "Rohit's family is building a concrete basketball court (7m x 5m) in their backyard (11m x 6m). How many square metres will be left for grass?",
+      "interaction_mode": "mcq",
+      "topic": "Area",
+      "difficulty_tier": "practice",
+      "question_number": 8,
+      "choices": [
+        "60 sq.m",
+        "35 sq.m",
+        "31 sq.m",
+        "24 sq.m"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S11",
+      "svg": "svg/wb_L3_s11_q08.svg",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "What is known (7, 5, 11, 6) and what exactly is asked? Say it in your own words.",
+        "level_1": "Choose the operation the story needs (add, subtract, multiply, divide) and set it up with 7, 5, 11.",
+        "level_2": "Write the calculation out and solve it step by step: ... = ?"
+      }
+    },
+    {
+      "id": "wb_L3_s11_q12",
+      "stem": "The area of a square is 100 sq.cm. If the sides are increased by 10%, what will be the area of the new square?",
+      "interaction_mode": "mcq",
+      "topic": "Area",
+      "difficulty_tier": "challenge",
+      "question_number": 12,
+      "choices": [
+        "121 sq.cm",
+        "101 sq.cm",
+        "81 sq.cm",
+        "169 sq.cm"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S11",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "The sides grow by 10%. What happens to each side length first, before the area?",
+        "level_1": "New side = old side + 10% of it. Find the new side first.",
+        "level_2": "Then: new area = new side \u00d7 new side = ?"
+      }
+    },
+    {
+      "id": "wb_L3_s11_q15",
+      "stem": "Find the total shaded area of the figure made up of identical squares (each square 4cm side, 6 shaded)",
+      "interaction_mode": "mcq",
+      "topic": "Area",
+      "difficulty_tier": "challenge",
+      "question_number": 15,
+      "choices": [
+        "48 sq.cm",
+        "80 sq.cm",
+        "96 sq.cm",
+        "85 sq.cm"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S11",
+      "svg": "wb_L3_s11_q15.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 200 180\" width=\"200\" height=\"180\" style=\"font-family:Arial,sans-serif\"><path d=\"M100,80 L100.0,20.0 A60,60 0 0 1 160.0,80.0 Z\" fill=\"#FF8A65\" stroke=\"#333\" stroke-width=\"1.5\"/><path d=\"M100,80 L160.0,80.0 A60,60 0 0 1 100.0,140.0 Z\" fill=\"#E8F4FD\" stroke=\"#333\" stroke-width=\"1.5\"/><path d=\"M100,80 L100.0,140.0 A60,60 0 0 1 40.0,80.0 Z\" fill=\"#E8F4FD\" stroke=\"#333\" stroke-width=\"1.5\"/><path d=\"M100,80 L40.0,80.0 A60,60 0 0 1 100.0,20.0 Z\" fill=\"#E8F4FD\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"100\" y=\"165\" text-anchor=\"middle\" font-size=\"16\" fill=\"#333\">1/4</text></svg>",
+      "hint": {
+        "level_0": "Each small square of the grid counts as one unit of area. What is being asked \u2014 the total covered?",
+        "level_1": "You don't need a formula here: count the unit squares the region covers, row by row.",
+        "level_2": "Number of covered squares \u00d7 area of one square = ?"
+      }
+    }
+  ]
+}

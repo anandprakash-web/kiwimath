@@ -1,0 +1,26 @@
+{
+  "stem_punct_spacing": [
+    [
+      "A1-ADD-0220",
+      "'Ranger Roo is counting stars. A treasure box has  red, blue, and green balls. There are 4 red balls,'",
+      "'Ranger Roo is counting stars. A treasure box has red, blue, and green balls. There are 4 red balls, '"
+    ],
+    [
+      "A6-GEO-0066",
+      "'In the figure, rays OA, OB, OC, OD, and OE emanate from point O, with DOB being a straight line and '",
+      "'In the figure, rays OA, OB, OC, OD, and OE emanate from point O, with DOB being a straight line and '"
+    ]
+  ],
+  "stem_dropped_word_repaired": [
+    [
+      "A1-CNT-0546",
+      "toy store,  has 3 shelves",
+      "toy store, there are 3 shelves"
+    ],
+    [
+      "A1-CNT-0609",
+      "magical garden,  3 rows",
+      "magical garden, there are 3 rows"
+    ]
+  ]
+}

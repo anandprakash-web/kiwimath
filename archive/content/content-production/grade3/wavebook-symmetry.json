@@ -1,0 +1,65 @@
+{
+  "topic_id": "wavebook-symmetry",
+  "topic_name": "Wavebook: Symmetry",
+  "topic_emoji": "\ud83d\udcd8",
+  "grade": 3,
+  "domain": "wavebook",
+  "source": "wavebook",
+  "total_questions": 2,
+  "difficulty_range": {
+    "min": 0,
+    "max": 0
+  },
+  "questions": [
+    {
+      "id": "wb_L3_s20_q03",
+      "stem": "Which of the following figures has at least 3 lines of symmetry?",
+      "interaction_mode": "mcq",
+      "topic": "Symmetry",
+      "difficulty_tier": "warmup",
+      "question_number": 3,
+      "choices": [
+        "Circle",
+        "Equilateral triangle",
+        "Square",
+        "Parallelogram"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S20",
+      "svg": "svg/wb_L3_s20_q03.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 210\" width=\"300\" height=\"210\" style=\"font-family:Arial,sans-serif\"><line x1=\"150\" y1=\"10\" x2=\"150\" y2=\"190\" stroke=\"#E57373\" stroke-width=\"2\" stroke-dasharray=\"6,4\"/><path d=\"M150,60 Q100,30 80,80 Q70,130 150,140 Q230,130 220,80 Q200,30 150,60Z\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2\"/><text x=\"150\" y=\"195\" text-anchor=\"middle\" font-size=\"11\" fill=\"#E57373\">Line of Symmetry</text></svg>",
+      "hint": {
+        "level_0": "A line of symmetry folds the shape onto itself exactly \u2014 both halves match.",
+        "level_1": "Test each shape in your head: fold it top-to-bottom, left-to-right, and along the diagonals.",
+        "level_2": "Count the folds that work perfectly for each choice \u2014 which fits what the question asks? = ?"
+      }
+    },
+    {
+      "id": "wb_L3_s20_q10",
+      "stem": "Which of the following shapes has more than 1 line of symmetry?",
+      "interaction_mode": "mcq",
+      "topic": "Symmetry",
+      "difficulty_tier": "practice",
+      "question_number": 10,
+      "choices": [
+        "Arrow shape",
+        "Regular hexagon",
+        "Letter L",
+        "Right triangle"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S20",
+      "svg": "svg/wb_L3_s20_q10.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 210\" width=\"300\" height=\"210\" style=\"font-family:Arial,sans-serif\"><line x1=\"150\" y1=\"10\" x2=\"150\" y2=\"190\" stroke=\"#E57373\" stroke-width=\"2\" stroke-dasharray=\"6,4\"/><path d=\"M150,60 Q100,30 80,80 Q70,130 150,140 Q230,130 220,80 Q200,30 150,60Z\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2\"/><text x=\"150\" y=\"195\" text-anchor=\"middle\" font-size=\"11\" fill=\"#E57373\">Line of Symmetry</text></svg>",
+      "hint": {
+        "level_0": "A line of symmetry folds the shape onto itself exactly \u2014 both halves match.",
+        "level_1": "Test each shape in your head: fold it top-to-bottom, left-to-right, and along the diagonals.",
+        "level_2": "Count the folds that work perfectly for each choice \u2014 which fits what the question asks? = ?"
+      }
+    }
+  ]
+}

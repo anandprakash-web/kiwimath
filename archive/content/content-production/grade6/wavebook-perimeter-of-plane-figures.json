@@ -1,0 +1,154 @@
+{
+  "topic_id": "wavebook-perimeter-of-plane-figures",
+  "topic_name": "Wavebook: Perimeter of Plane Figures",
+  "topic_emoji": "\ud83d\udcd8",
+  "grade": 6,
+  "domain": "wavebook",
+  "source": "wavebook",
+  "total_questions": 6,
+  "difficulty_range": {
+    "min": 0,
+    "max": 0
+  },
+  "questions": [
+    {
+      "id": "wb_L4_s38_q06",
+      "stem": "The perimeter of a rectangle with length 12 cm and breadth 7 cm is:",
+      "interaction_mode": "mcq",
+      "topic": "Perimeter of Plane Figures",
+      "difficulty_tier": "practice",
+      "question_number": 6,
+      "choices": [
+        "19 cm",
+        "38 cm",
+        "84 cm",
+        "44 cm"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S38",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "We know the rectangle is 12 long and 7 wide. What is its perimeter \u2014 the distance all the way around?",
+        "level_1": "A rectangle has TWO lengths and TWO breadths. So you need 12 twice and 7 twice.",
+        "level_2": "Perimeter = 2 \u00d7 (length + breadth) = 2 \u00d7 (12 + 7) = ?"
+      }
+    },
+    {
+      "id": "wb_L4_s38_q08",
+      "stem": "The perimeter of an equilateral triangle with side 10 cm is:",
+      "interaction_mode": "mcq",
+      "topic": "Perimeter of Plane Figures",
+      "difficulty_tier": "practice",
+      "question_number": 8,
+      "choices": [
+        "20 cm",
+        "40 cm",
+        "50 cm",
+        "25 cm",
+        "30 cm"
+      ],
+      "correct_answer": 4,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S38",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "An equilateral triangle has all sides equal \u2014 here each side is 10 cm. What is the perimeter?",
+        "level_1": "All 3 sides are the same: 10 + 10 + 10.",
+        "level_2": "Perimeter = 3 \u00d7 side = 3 \u00d7 10 = ?"
+      }
+    },
+    {
+      "id": "wb_L4_s38_q11",
+      "stem": "If the perimeter of a square is 48 cm, what is its side?",
+      "interaction_mode": "mcq",
+      "topic": "Perimeter of Plane Figures",
+      "difficulty_tier": "challenge",
+      "question_number": 11,
+      "choices": [
+        "24 cm",
+        "16 cm",
+        "12 cm",
+        "8 cm"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S38",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "Perimeter means the total distance around the outside of the shape. Which side lengths do you know?",
+        "level_1": "Walk around the shape edge by edge and add every side length once. The numbers given are: 48.",
+        "level_2": "Add ALL the side lengths together: side + side + ... = ?"
+      }
+    },
+    {
+      "id": "wb_L4_s38_q13",
+      "stem": "The circumference of a circle with radius 7 cm is (\u03c0 = 22/7):",
+      "interaction_mode": "mcq",
+      "topic": "Perimeter of Plane Figures",
+      "difficulty_tier": "challenge",
+      "question_number": 13,
+      "choices": [
+        "22 cm",
+        "154 cm",
+        "44 cm",
+        "88 cm"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S38",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "What is known (7, 22, 7) and what exactly is asked? Say it in your own words.",
+        "level_1": "Choose the operation the story needs (add, subtract, multiply, divide) and set it up with 7, 22, 7.",
+        "level_2": "Write the calculation out and solve it step by step: ... = ?"
+      }
+    },
+    {
+      "id": "wb_L4_s38_q14",
+      "stem": "The perimeter of a regular hexagon with side 5 cm is:",
+      "interaction_mode": "mcq",
+      "topic": "Perimeter of Plane Figures",
+      "difficulty_tier": "challenge",
+      "question_number": 14,
+      "choices": [
+        "25 cm",
+        "35 cm",
+        "20 cm",
+        "30 cm"
+      ],
+      "correct_answer": 3,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S38",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "We know each side of the square is 5. What is the perimeter \u2014 the total distance around the shape?",
+        "level_1": "A square has 4 equal sides, each 5. Add them: 5 + 5 + 5 + 5, or multiply.",
+        "level_2": "Perimeter of a square = 4 \u00d7 side = 4 \u00d7 5 = ?"
+      }
+    },
+    {
+      "id": "wb_L4_s38_q15",
+      "stem": "If the perimeter of a rectangle is 50 cm and its length is 15 cm, what is its breadth?",
+      "interaction_mode": "mcq",
+      "topic": "Perimeter of Plane Figures",
+      "difficulty_tier": "challenge",
+      "question_number": 15,
+      "choices": [
+        "20 cm",
+        "10 cm",
+        "35 cm",
+        "25 cm"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S38",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "Perimeter means the total distance around the outside of the shape. Which side lengths do you know?",
+        "level_1": "Walk around the shape edge by edge and add every side length once. The numbers given are: 50, 15.",
+        "level_2": "Add ALL the side lengths together: side + side + ... = ?"
+      }
+    }
+  ]
+}

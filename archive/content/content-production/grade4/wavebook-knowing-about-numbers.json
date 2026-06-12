@@ -1,0 +1,365 @@
+{
+  "topic_id": "wavebook-knowing-about-numbers",
+  "topic_name": "Wavebook: Knowing about numbers",
+  "topic_emoji": "\ud83d\udcd8",
+  "grade": 4,
+  "domain": "wavebook",
+  "source": "wavebook",
+  "total_questions": 15,
+  "difficulty_range": {
+    "min": 0,
+    "max": 0
+  },
+  "questions": [
+    {
+      "id": "wb_L3_s01_q01",
+      "stem": "The difference between the place value of 8 and 9 in the number 8964 is",
+      "interaction_mode": "mcq",
+      "topic": "Knowing about numbers",
+      "difficulty_tier": "warmup",
+      "question_number": 1,
+      "choices": [
+        "7000",
+        "7100",
+        "6900",
+        "7150"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S1",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "Each digit's value depends on its POSITION: ones, tens, hundreds, thousands...",
+        "level_1": "Write the number with each digit under its place name. Find the position the question asks about.",
+        "level_2": "Place value = digit \u00d7 value of its position (1, 10, 100, 1000, ...) = ?"
+      }
+    },
+    {
+      "id": "wb_L3_s01_q02",
+      "stem": "How many of the given numbers has digit 3 at the hundreds place? 7034, 2637, 2306, 3108, 2304, 8013, 6430, 7838, 5357, 9402, 2337, 5121",
+      "interaction_mode": "mcq",
+      "topic": "Knowing about numbers",
+      "difficulty_tier": "warmup",
+      "question_number": 2,
+      "choices": [
+        "5",
+        "4",
+        "3",
+        "8"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S1",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "Each digit's value depends on its POSITION: ones, tens, hundreds, thousands...",
+        "level_1": "Write the number with each digit under its place name. Find where the digit 3 sits in 7034,.",
+        "level_2": "Place value = digit \u00d7 value of its position (1, 10, 100, 1000, ...) = ?"
+      }
+    },
+    {
+      "id": "wb_L3_s01_q03",
+      "stem": "Arrange the following from the smallest to the greatest",
+      "interaction_mode": "mcq",
+      "topic": "Knowing about numbers",
+      "difficulty_tier": "warmup",
+      "question_number": 3,
+      "choices": [
+        "P, Q, R, S",
+        "P, R, S, Q",
+        "P, R, Q, S",
+        "P, Q, S, R"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S1",
+      "svg": "wb_L3_s01_q03.svg",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "Read the question again slowly \u2014 what is given, and what is asked?",
+        "level_1": "Recall the key fact or rule for this topic, then test each choice against it.",
+        "level_2": "Eliminate the choices that break the rule; check the one that remains = ?"
+      }
+    },
+    {
+      "id": "wb_L3_s01_q04",
+      "stem": "Which of the following is the correct arrangement of numbers in the ascending order?",
+      "interaction_mode": "mcq",
+      "topic": "Knowing about numbers",
+      "difficulty_tier": "warmup",
+      "question_number": 4,
+      "choices": [
+        "4890 > 5569 > 5728 > 6129 > 9888",
+        "8768 < 6139 < 5718 < 5169 < 4110",
+        "4220 < 5265 < 5456 < 6239 < 9658",
+        "None of these"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S1",
+      "svg": "wb_L3_s01_q04.svg",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "Descending = biggest first; ascending = smallest first. Which is asked?",
+        "level_1": "To compare fractions, give them the SAME denominator (or compare each to 1: how far away is it?).",
+        "level_2": "Sort the values once they're comparable, then match against the choices = ?"
+      }
+    },
+    {
+      "id": "wb_L3_s01_q05",
+      "stem": "Find the addition of all the odd numbers from the boxes given below",
+      "interaction_mode": "mcq",
+      "topic": "Knowing about numbers",
+      "difficulty_tier": "warmup",
+      "question_number": 5,
+      "choices": [
+        "234",
+        "463",
+        "453",
+        "473"
+      ],
+      "correct_answer": 3,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S1",
+      "svg": "wb_L3_s01_q05.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 130\" width=\"300\" height=\"130\" style=\"font-family:Arial,sans-serif\"><rect x=\"20\" y=\"20\" width=\"70\" height=\"35\" rx=\"5\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2\"/><text x=\"55\" y=\"43\" text-anchor=\"middle\" font-size=\"16\" fill=\"#333\">3</text><rect x=\"110\" y=\"20\" width=\"70\" height=\"35\" rx=\"5\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2\"/><text x=\"145\" y=\"43\" text-anchor=\"middle\" font-size=\"16\" fill=\"#333\">7</text><rect x=\"200\" y=\"20\" width=\"70\" height=\"35\" rx=\"5\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2\"/><text x=\"235\" y=\"43\" text-anchor=\"middle\" font-size=\"16\" fill=\"#333\">12</text><rect x=\"20\" y=\"70\" width=\"70\" height=\"35\" rx=\"5\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2\"/><text x=\"55\" y=\"93\" text-anchor=\"middle\" font-size=\"16\" fill=\"#333\">5</text><rect x=\"110\" y=\"70\" width=\"70\" height=\"35\" rx=\"5\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2\"/><text x=\"145\" y=\"93\" text-anchor=\"middle\" font-size=\"16\" fill=\"#333\">8</text><rect x=\"200\" y=\"70\" width=\"70\" height=\"35\" rx=\"5\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2\"/><text x=\"235\" y=\"93\" text-anchor=\"middle\" font-size=\"16\" fill=\"#333\">1</text></svg>",
+      "hint": {
+        "level_0": "Read the question again slowly \u2014 what is given, and what is asked?",
+        "level_1": "Recall the key fact or rule for this topic, then test each choice against it.",
+        "level_2": "Eliminate the choices that break the rule; check the one that remains = ?"
+      }
+    },
+    {
+      "id": "wb_L3_s01_q06",
+      "stem": "The difference between the place value of 6 and 9 in the number 6593 is",
+      "interaction_mode": "mcq",
+      "topic": "Knowing about numbers",
+      "difficulty_tier": "practice",
+      "question_number": 6,
+      "choices": [
+        "5108",
+        "5901",
+        "5910",
+        "9510"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S1",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "Each digit's value depends on its POSITION: ones, tens, hundreds, thousands...",
+        "level_1": "Write the number with each digit under its place name. Find the position the question asks about.",
+        "level_2": "Place value = digit \u00d7 value of its position (1, 10, 100, 1000, ...) = ?"
+      }
+    },
+    {
+      "id": "wb_L3_s01_q07",
+      "stem": "Which of the following has the same value as 9632?",
+      "interaction_mode": "mcq",
+      "topic": "Knowing about numbers",
+      "difficulty_tier": "practice",
+      "question_number": 7,
+      "choices": [
+        "900 + 600 + 30 + 2",
+        "9000 + 60 + 300 + 2",
+        "90 + 600 + 30 + 20",
+        "9000 + 600 + 30 + 2"
+      ],
+      "correct_answer": 3,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S1",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "What is known (9632) and what exactly is asked? Say it in your own words.",
+        "level_1": "Choose the operation the story needs (add, subtract, multiply, divide) and set it up with 9632.",
+        "level_2": "Write the calculation out and solve it step by step: ... = ?"
+      }
+    },
+    {
+      "id": "wb_L3_s01_q08",
+      "stem": "Arrange the following in the ascending order: 123, 23, 133, 33, 1133, 1311, 2311, 2633",
+      "interaction_mode": "mcq",
+      "topic": "Knowing about numbers",
+      "difficulty_tier": "practice",
+      "question_number": 8,
+      "choices": [
+        "23, 33, 123, 133, 1133, 1311, 2311, 2633",
+        "2633, 2311, 1311, 1133, 133, 123, 33, 23",
+        "33, 23, 133, 123, 1133, 1311, 2311, 2633",
+        "None of these"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S1",
+      "svg": "wb_L3_s01_q08.svg",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "The data is 123, 23, 133, 33, 1133, 1311, 2311, 2633. The range measures how spread out it is.",
+        "level_1": "Find the largest value and the smallest value in the list.",
+        "level_2": "Range = largest \u2212 smallest = ?"
+      }
+    },
+    {
+      "id": "wb_L3_s01_q09",
+      "stem": "Find the number name of the largest four digit number that can be formed using the given digits: 5 2 1 8",
+      "interaction_mode": "mcq",
+      "topic": "Knowing about numbers",
+      "difficulty_tier": "practice",
+      "question_number": 9,
+      "choices": [
+        "Eight thousand five hundred and twenty one",
+        "Eight thousand five hundred and twelve",
+        "Eight thousand two hundred and fifty one",
+        "Eight thousand two hundred and fifteen"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S1",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "What is known (5, 2, 1, 8) and what exactly is asked? Say it in your own words.",
+        "level_1": "Choose the operation the story needs (add, subtract, multiply, divide) and set it up with 5, 2, 1.",
+        "level_2": "Write the calculation out and solve it step by step: ... = ?"
+      }
+    },
+    {
+      "id": "wb_L3_s01_q10",
+      "stem": "Find the product of the face value of 9 and place value of 7 in the number 9657",
+      "interaction_mode": "mcq",
+      "topic": "Knowing about numbers",
+      "difficulty_tier": "practice",
+      "question_number": 10,
+      "choices": [
+        "60",
+        "55",
+        "61",
+        "63"
+      ],
+      "correct_answer": 3,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S1",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "Two different things: FACE value is just the digit itself; PLACE value depends on the digit's position.",
+        "level_1": "Face value of 9 = 9. For the place value of 7 in 9657, find which position 7 sits in (ones, tens, hundreds...).",
+        "level_2": "Now combine them the way the question asks (product = multiply, sum = add): ... = ?"
+      }
+    },
+    {
+      "id": "wb_L3_s01_q11",
+      "stem": "Find the mystery number: It is less than 999. Its hundreds digit is the smallest even number. Its Tens digit is 3 more than the hundreds digit. The sum of its digits is 9",
+      "interaction_mode": "mcq",
+      "topic": "Knowing about numbers",
+      "difficulty_tier": "challenge",
+      "question_number": 11,
+      "choices": [
+        "152",
+        "250",
+        "256",
+        "252"
+      ],
+      "correct_answer": 3,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S1",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "What is known (999, 3, 9) and what exactly is asked? Say it in your own words.",
+        "level_1": "Choose the operation the story needs (add, subtract, multiply, divide) and set it up with 999, 3, 9.",
+        "level_2": "Write the calculation out and solve it step by step: ... = ?"
+      }
+    },
+    {
+      "id": "wb_L3_s01_q12",
+      "stem": "Which of the following is the product of three digit largest number and one digit largest number?",
+      "interaction_mode": "mcq",
+      "topic": "Knowing about numbers",
+      "difficulty_tier": "challenge",
+      "question_number": 12,
+      "choices": [
+        "8900",
+        "8990",
+        "8991",
+        "8910"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S1",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "Read the question again slowly \u2014 what is given, and what is asked?",
+        "level_1": "Recall the key fact or rule for this topic, then test each choice against it.",
+        "level_2": "Eliminate the choices that break the rule; check the one that remains = ?"
+      }
+    },
+    {
+      "id": "wb_L3_s01_q13",
+      "stem": "Find the difference between the greatest and smallest four digit number formed by the following digits, using each digit only once: 8 6 5 9",
+      "interaction_mode": "mcq",
+      "topic": "Knowing about numbers",
+      "difficulty_tier": "challenge",
+      "question_number": 13,
+      "choices": [
+        "4176",
+        "4215",
+        "4312",
+        "4200"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S1",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "What is known (8, 6, 5, 9) and what exactly is asked? Say it in your own words.",
+        "level_1": "Choose the operation the story needs (add, subtract, multiply, divide) and set it up with 8, 6, 5.",
+        "level_2": "Write the calculation out and solve it step by step: ... = ?"
+      }
+    },
+    {
+      "id": "wb_L3_s01_q14",
+      "stem": "How many times does the digit 0 appear between 1 and 100?",
+      "interaction_mode": "mcq",
+      "topic": "Knowing about numbers",
+      "difficulty_tier": "challenge",
+      "question_number": 14,
+      "choices": [
+        "9",
+        "10",
+        "11",
+        "12"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S1",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "What is known (0, 1, 100) and what exactly is asked? Say it in your own words.",
+        "level_1": "Choose the operation the story needs (add, subtract, multiply, divide) and set it up with 0, 1, 100.",
+        "level_2": "Write the calculation out and solve it step by step: ... = ?"
+      }
+    },
+    {
+      "id": "wb_L3_s01_q15",
+      "stem": "A number multiplied by 5 and then added to 209, become 364. Three times of the number is ___. Statement 1: Greater than 85 and less than 95. Statement 2: Number is multiple of 3",
+      "interaction_mode": "mcq",
+      "topic": "Knowing about numbers",
+      "difficulty_tier": "challenge",
+      "question_number": 15,
+      "choices": [
+        "Only statement 1 is true",
+        "Only statement 2 is true",
+        "Both statements 1 and 2 are true",
+        "Neither statement 1 nor 2 is true"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S1",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "Judge each statement on its OWN first \u2014 true or false?",
+        "level_1": "Recall the exact math fact each statement uses; test it with a small example if unsure.",
+        "level_2": "Now combine your verdicts and pick the choice that matches them = ?"
+      }
+    }
+  ]
+}

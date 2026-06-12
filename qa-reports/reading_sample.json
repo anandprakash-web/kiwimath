@@ -1,0 +1,1546 @@
+[
+  {
+    "file": "grade1/g1-patterns.json",
+    "id": "A1-PAT-0143",
+    "stem": "Chef Cheetah is practising math: The number bond of 13: One part is 2, what is the other part?",
+    "choices": [
+      "12",
+      "13",
+      "11",
+      "8"
+    ],
+    "correct_answer": 2,
+    "correct_value": null,
+    "hint": {
+      "level_0": "Look for what repeats!",
+      "level_1": "Read the pattern from left to right. Can you find the part that keeps repeating? Say the pattern out loud. What comes next? Cover the last item. Can you guess it before you look?",
+      "level_2": "Patterns repeat. Find the repeat, then figure out what's next!"
+    },
+    "grade": 1,
+    "has_svg": true,
+    "visual_context": "Visual representation of the math concept.",
+    "diagnostics": {
+      "0": "So close! You're off by just 1. You picked 1 too many \u2014 double-check your counting.",
+      "1": "That's 2 too many. Check your work carefully and try again.",
+      "3": "That's 3 too few. Check your work carefully and try again."
+    }
+  },
+  {
+    "file": "grade6/g6-data.json",
+    "id": "A6-DAT-0042",
+    "stem": "In a class survey, pencils: 20, oranges: 10, balls: 4. Which item has the most?",
+    "choices": [
+      "pencils (alt)",
+      "oranges",
+      "balls",
+      "pencils"
+    ],
+    "correct_answer": 3,
+    "correct_value": null,
+    "hint": {
+      "level_0": "Read the data carefully.",
+      "level_1": "Compare or add the values as needed. Read each value from the data carefully, then apply the operation asked (add for total, compare for most/least, divide for average). Try working out the calculation step-by-step. Compare your result to the choices: pencils (alt), oranges, balls, pencils",
+      "level_2": "Read the data carefully and compare the values one by one."
+    },
+    "grade": 6,
+    "has_svg": false,
+    "visual_context": null,
+    "diagnostics": {
+      "0": "Re-read the question and try a different approach. Check your work step by step.",
+      "1": "Re-read the question and try a different approach. Check your work step by step.",
+      "2": "Re-read the question and try a different approach. Check your work step by step."
+    }
+  },
+  {
+    "file": "grade4/g4-word-problems.json",
+    "id": "A4-WPR-0197",
+    "stem": "Is 21 a multiple of 7?",
+    "choices": [
+      "Cannot tell",
+      "Yes",
+      "Sometimes",
+      "No"
+    ],
+    "correct_answer": 1,
+    "correct_value": null,
+    "hint": {
+      "level_0": "Factors divide evenly. Multiples are products.",
+      "level_1": "LCM = smallest common multiple. HCF = largest common factor. Test divisibility: try dividing by 2, 3, 5, 7. If nothing divides evenly (except 1 and itself), it's prime. Try working out the calculation step-by-step. Compare your result to the choices: Cannot tell, Yes, Sometimes, No",
+      "level_2": "Read the problem again slowly \u2014 find the numbers and what they ask for."
+    },
+    "grade": 4,
+    "has_svg": false,
+    "visual_context": null,
+    "diagnostics": {
+      "0": "Confused factors with multiples",
+      "2": "Incomplete factor list",
+      "3": "LCM/HCF confusion"
+    }
+  },
+  {
+    "file": "grade3/g3-shapes.json",
+    "id": "A3-SHP-0095",
+    "stem": "Help Captain Kiwi with this: A rectangle is 7 cm by 9 cm. What is its perimeter?",
+    "choices": [
+      "63",
+      "16",
+      "23",
+      "32"
+    ],
+    "correct_answer": 3,
+    "correct_value": null,
+    "hint": {
+      "level_0": "Think about shapes and their properties.",
+      "level_1": "What's known? What's unknown? Can you break it into smaller steps? Try with simpler numbers first, then scale up. Write down what you have on each side.",
+      "level_2": "Perimeter = 2 \u00d7 (length + width)."
+    },
+    "grade": 3,
+    "has_svg": true,
+    "visual_context": "A rectangle with length and width labelled.",
+    "diagnostics": {
+      "0": "That's 31 too many. Check your work carefully and try again.",
+      "1": "That's 16 too few. Check your work carefully and try again.",
+      "2": "Watch out for off-by-one slips here."
+    }
+  },
+  {
+    "file": "grade5/g5-percent.json",
+    "id": "A5-PER-0036",
+    "stem": "What is 5% of 1000?",
+    "choices": [
+      "50",
+      "5",
+      "150",
+      "950"
+    ],
+    "correct_answer": 0,
+    "correct_value": null,
+    "hint": {
+      "level_0": "You need to find 5% of 1000. 'Percent' means 'per hundred'.",
+      "level_1": "Convert 5% to a decimal by dividing by 100: 5% = 0.05. Now multiply: 0.05 x 1000. Work it out step by step. To find X% of Y, calculate (X / 100) x Y. Try: (5 / 100) x 1000. Check: is your answer smaller than 1000? (It should be, since 5% is a part of the whole.)",
+      "level_2": "Compare the parts \u2014 how many of one for every one of the other?"
+    },
+    "grade": 5,
+    "has_svg": false,
+    "visual_context": null,
+    "diagnostics": {
+      "1": "You gave the percentage (5%) itself, not 5% of 1000. Multiply 5/100 by 1000.",
+      "2": "Your answer is 100 too high. Remember: 5% means 5 out of 100. Try 5/100 \u00d7 1000.",
+      "3": "You found the remaining 95% instead of 5%. Check which part the question asks for."
+    }
+  },
+  {
+    "file": "grade4/g4-numbers.json",
+    "id": "A4-NUM-0128",
+    "stem": "What is the digit in the tens place of 57,467?",
+    "choices": [
+      "6",
+      "9",
+      "0",
+      "2"
+    ],
+    "correct_answer": 0,
+    "correct_value": null,
+    "hint": {
+      "level_0": "Think about what each position in a number represents.",
+      "level_1": "In 57,467, count the positions from right: ones, tens, hundreds... The tens digit in 57,467 is 6. Try working out the calculation step-by-step. Compare your result to the choices: 6, 9, 0, 2",
+      "level_2": "You have everything you need \u2014 work through it one step at a time!"
+    },
+    "grade": 4,
+    "has_svg": false,
+    "visual_context": null,
+    "diagnostics": {
+      "1": "Confused place positions",
+      "2": "Counted from wrong end",
+      "3": "Mixed up digit values"
+    }
+  },
+  {
+    "file": "grade2/g2-time-money.json",
+    "id": "A2-TIM-0113",
+    "stem": "If the time is 9:15, what time will it be after 60 minutes?",
+    "choices": [
+      "10:00",
+      "11:15",
+      "10:25",
+      "10:15"
+    ],
+    "correct_answer": 3,
+    "correct_value": null,
+    "hint": {
+      "level_0": "Add the minutes to the current time.",
+      "level_1": "Start at 9:15 and add 60 minutes. The new time is 10:15. Try working out the calculation step-by-step. Compare your result to the choices: 10:00, 11:15, 10:25, 10:15",
+      "level_2": "Check the units carefully and compare the quantities step by step."
+    },
+    "grade": 2,
+    "has_svg": true,
+    "visual_context": null,
+    "diagnostics": {
+      "0": "Hour rollover error",
+      "1": "Added to hour instead of minutes",
+      "2": "Subtracted instead of added"
+    }
+  },
+  {
+    "file": "grade2/g2-shapes.json",
+    "id": "A2-SHP-0559",
+    "stem": "Tara walks 4 steps right on a grid. How many squares crossed?",
+    "choices": [
+      "3",
+      "7",
+      "5",
+      "4"
+    ],
+    "correct_answer": 3,
+    "correct_value": null,
+    "hint": {
+      "level_0": "A map shows where things are.",
+      "level_1": "Right = towards right side, up = towards top. Count each square as one step. Try working out the calculation step-by-step. Compare your result to the choices: 3, 7, 5, 4",
+      "level_2": "Sketch the shape and label what you know \u2014 it will guide you."
+    },
+    "grade": 2,
+    "has_svg": true,
+    "visual_context": null,
+    "diagnostics": {
+      "0": "Think: left, right, up, down on the grid.",
+      "1": "Count steps on the grid carefully.",
+      "2": "Nearer means fewer steps away."
+    }
+  },
+  {
+    "file": "grade2/g2-word-problems.json",
+    "id": "A2-WPR-0604",
+    "stem": "Kiwi wants to solve: Veer has 48 marbles to share equally among 6 friends. How many does each get?",
+    "choices": [
+      "10",
+      "8",
+      "7",
+      "12"
+    ],
+    "correct_answer": 1,
+    "correct_value": null,
+    "hint": {
+      "level_0": "Count each item carefully. Point to each one as you count.",
+      "level_1": "Try grouping items by 2s, 5s, or 10s to count faster. Double-check by counting again from a different starting point. Try working out the calculation step-by-step. Compare your result to the choices: 10, 8, 7, 12",
+      "level_2": "Read the problem again slowly \u2014 find the numbers and what they ask for."
+    },
+    "grade": 2,
+    "has_svg": true,
+    "visual_context": "Colourful marbles arranged in groups for easy counting.",
+    "diagnostics": {
+      "0": "That's 2 too many. Read the question again \u2014 what is it asking you to find? Check which numbers you need to use.",
+      "2": "So close! You're off by just 1. You're 1 short \u2014 try counting one more time.",
+      "3": "That's 4 too many. Read the question again \u2014 what is it asking you to find? Check which numbers you need to use."
+    }
+  },
+  {
+    "file": "grade6/g6-algebra.json",
+    "id": "A6-ALG-0326",
+    "stem": "Calculate: 112 \u00d7 61 = ?",
+    "choices": [
+      "6834",
+      "6842",
+      "6821",
+      "6832"
+    ],
+    "correct_answer": 3,
+    "correct_value": null,
+    "hint": {
+      "level_0": "This is a basic \u00d7 problem.",
+      "level_1": "Compute 112 \u00d7 61 step by step. Multiply step by step: 112 \u00d7 61. Break 61 into parts if it helps (e.g., tens and ones). Try working out the calculation step-by-step. Compare your result to the choices: 6834, 6842, 6821, 6832",
+      "level_2": "Use the relationship given in the problem to set up your steps."
+    },
+    "grade": 6,
+    "has_svg": false,
+    "visual_context": null,
+    "diagnostics": {
+      "0": "Not quite. Re-read the question carefully and check each step of your calculation.",
+      "1": "Break the multiplication into parts. Multiply ones first, then tens, then add both results.",
+      "2": "Your answer is 11 too low. Recheck your calculation \u2014 did you miss a step?"
+    }
+  },
+  {
+    "file": "grade5/g5-fractions.json",
+    "id": "A5-FRC-0075",
+    "stem": "Ishaan ate 1/4 of a plate of gulab jamun in the morning and 3/7 in the evening. How much did Ishaan eat in total?",
+    "choices": [
+      "19/28",
+      "4/7",
+      "4/11",
+      "20/28"
+    ],
+    "correct_answer": 0,
+    "correct_value": null,
+    "hint": {
+      "level_0": "Find a common denominator first.",
+      "level_1": "LCD of 4 and 7 is 28. 1/4 + 3/7 = 7/28 + 12/28 = ___ Try working out the calculation step-by-step. Compare your result to the choices: 19/28, 4/7, 4/11, 20/28",
+      "level_2": "Try drawing the fraction or splitting it into equal parts to see it clearly."
+    },
+    "grade": 5,
+    "has_svg": false,
+    "visual_context": null,
+    "diagnostics": {
+      "1": "Added numerators and denominators separately",
+      "2": "Did not find LCD",
+      "3": "Did not simplify"
+    }
+  },
+  {
+    "file": "grade2/g2-measurement.json",
+    "id": "A2-MSR-0078",
+    "stem": "A ribbon is 21 cm long. What is its length in cm?",
+    "choices": [
+      "31 cm",
+      "16 cm",
+      "21 cm",
+      "42 cm"
+    ],
+    "correct_answer": 2,
+    "correct_value": null,
+    "hint": {
+      "level_0": "Think about what you are measuring (length, weight, or how much it holds).",
+      "level_1": "For length: use cm for small things, meters for big things. 100 cm = 1 meter. Read the measurement tool carefully. Start counting from 0, not from 1. Try working out the calculation step-by-step. Compare your result to the choices: 31 cm, 16 cm, 21 cm, 42 cm",
+      "level_2": "Check the units carefully and compare the quantities step by step."
+    },
+    "grade": 2,
+    "has_svg": false,
+    "visual_context": null,
+    "diagnostics": {
+      "0": "Check the conversion factor. Did you multiply when you should divide, or vice versa? (e.g., cm\u2192m means \u00f7100)",
+      "1": "Try a different approach. What is the question really asking?",
+      "3": "Your answer is double what it should be. Check whether you multiplied when you should have just added, or counted something twice."
+    }
+  },
+  {
+    "file": "grade1/g1-addition.json",
+    "id": "A1-ADD-0026",
+    "stem": "Captain Kiwi's number machine adds. When 4 goes in with rule '+3', what comes out?",
+    "choices": [
+      "7",
+      "6",
+      "8",
+      "4"
+    ],
+    "correct_answer": 0,
+    "correct_value": null,
+    "hint": {
+      "level_0": "This is an addition problem.",
+      "level_1": "Look at the examples. What goes in? What comes out? What happens to the number each time? Check if the rule involves two steps (e.g., multiply then add). You found the rule! Now apply it to the new input.",
+      "level_2": "Number machines follow rules. Test your rule on ALL examples to make sure!"
+    },
+    "grade": 1,
+    "has_svg": true,
+    "visual_context": "Visual representation of the math concept.",
+    "diagnostics": {
+      "2": "4+3=7, not 8.",
+      "1": "4+3=7, not 6.",
+      "3": "The machine changes the number."
+    }
+  },
+  {
+    "file": "grade1/g1-time-money.json",
+    "id": "A1-TIM-0217",
+    "stem": "If the time is 6:20, what time will it be after 120 minutes?",
+    "choices": [
+      "8:05",
+      "8:30",
+      "8:20",
+      "9:20"
+    ],
+    "correct_answer": 2,
+    "correct_value": null,
+    "hint": {
+      "level_0": "Add the minutes to the current time.",
+      "level_1": "Start at 6:20 and add 120 minutes. The new time is 8:20. Try working out the calculation step-by-step. Compare your result to the choices: 8:05, 8:30, 8:20, 9:20",
+      "level_2": "Check the units carefully and compare the quantities step by step."
+    },
+    "grade": 1,
+    "has_svg": true,
+    "visual_context": null,
+    "diagnostics": {
+      "0": "Hour rollover error",
+      "1": "Added to hour instead of minutes",
+      "3": "Subtracted instead of added"
+    }
+  },
+  {
+    "file": "grade1/g1-subtraction.json",
+    "id": "A1-SUB-0303",
+    "stem": "What is 13 - 5?",
+    "choices": [
+      "8",
+      "18",
+      "19",
+      "6"
+    ],
+    "correct_answer": 0,
+    "correct_value": null,
+    "hint": {
+      "level_0": "This is an subtraction problem.",
+      "level_1": "Line up the digits by place value and subtract. 13 - 5 = Try working out the calculation step-by-step. Compare your result to the choices: 8, 18, 19, 6",
+      "level_2": "Think about what you start with and what is taken away."
+    },
+    "grade": 1,
+    "has_svg": false,
+    "visual_context": null,
+    "diagnostics": {
+      "1": "Carry/borrow error",
+      "2": "Start with the larger number and count backwards.",
+      "3": "Digit alignment mistake"
+    }
+  },
+  {
+    "file": "grade1/g1-addition.json",
+    "id": "A1-ADD-0115",
+    "stem": "Pirate Papaya needs to work out: Team A scored 6 goals. Team B scored 4 goals. How many more goals did Team A score?",
+    "choices": [
+      "4",
+      "1",
+      "2",
+      "3"
+    ],
+    "correct_answer": 2,
+    "correct_value": null,
+    "hint": {
+      "level_0": "This is a number problem.",
+      "level_1": "What numbers do you see in the problem? What operation should you use \u2014 adding or subtracting? Break it into two smaller steps. Do the calculation now. What number do you get?",
+      "level_2": "Read the problem once more. Circle the important numbers and keywords."
+    },
+    "grade": 1,
+    "has_svg": false,
+    "visual_context": null,
+    "diagnostics": {
+      "1": "So close! You're off by just 1. You're 1 short \u2014 try counting one more time.",
+      "3": "So close! You're off by just 1. You picked 1 too many \u2014 double-check your counting.",
+      "0": "That's 2 too many. Try the calculation again carefully."
+    }
+  },
+  {
+    "file": "grade4/g4-data.json",
+    "id": "A4-DAT-0078",
+    "stem": "Pie chart 'Sports Preference': most popular?",
+    "choices": [
+      "Football",
+      "Cricket",
+      "Badminton",
+      "Kabaddi"
+    ],
+    "correct_answer": 1,
+    "correct_value": null,
+    "hint": {
+      "level_0": "Read each section carefully.",
+      "level_1": "Largest slice = most popular. Read each bar/tally value carefully. For 'most' = tallest bar. For 'total' = add all values. Try working out the calculation step-by-step. Compare your result to the choices: Football, Cricket, Badminton, Kabaddi",
+      "level_2": "Read the data carefully and compare the values one by one."
+    },
+    "grade": 4,
+    "has_svg": true,
+    "visual_context": null,
+    "diagnostics": {
+      "0": "Cannot read chart",
+      "2": "Arithmetic error",
+      "3": "Confused largest/smallest"
+    }
+  },
+  {
+    "file": "grade4/g4-add-sub.json",
+    "id": "A4-ASB-0368",
+    "stem": "Builder Bee needs to work out: What is 189 \u00f7 9?",
+    "choices": [
+      "11",
+      "31",
+      "26",
+      "21"
+    ],
+    "correct_answer": 3,
+    "correct_value": null,
+    "hint": {
+      "level_0": "How many times does the divisor fit?",
+      "level_1": "You need to divide here. Use a multiplication table you know. Try guessing and checking. Multiplication and division are inverses.",
+      "level_2": "189 \u00f7 9 = 21"
+    },
+    "grade": 4,
+    "has_svg": false,
+    "visual_context": null,
+    "diagnostics": {
+      "0": "That's 10 too few. Think: how many groups of 9 fit into 189?",
+      "1": "That's 10 too many. Think: how many groups of 9 fit into 189?",
+      "2": "That's 5 too many. Think: how many groups of 9 fit into 189?"
+    }
+  },
+  {
+    "file": "grade6/g6-fractions.json",
+    "id": "A6-FRC-0048",
+    "stem": "Divide: 2/3 \u00f7 2/4.",
+    "choices": [
+      "4/12",
+      "4/3",
+      "4/4",
+      "12/4"
+    ],
+    "correct_answer": 1,
+    "correct_value": null,
+    "hint": {
+      "level_0": "To divide fractions, multiply by the reciprocal.",
+      "level_1": "2/3 \u00d7 4/2 = ? = 8/6 = ___ Try working out the calculation step-by-step. Compare your result to the choices: 4/12, 4/3, 4/4, 12/4",
+      "level_2": "Try drawing the fraction or splitting it into equal parts to see it clearly."
+    },
+    "grade": 6,
+    "has_svg": false,
+    "visual_context": null,
+    "diagnostics": {
+      "0": "Check your fraction work. Did you find a common denominator? For division, did you flip and multiply?",
+      "2": "Check your fraction work. Did you find a common denominator? For division, did you flip and multiply?",
+      "3": "Check your fraction work. Did you find a common denominator? For division, did you flip and multiply?"
+    }
+  },
+  {
+    "file": "grade3/g3-division.json",
+    "id": "A3-DIV-0082",
+    "stem": "\u20b94 is divided equally among 2 friends. How much does each friend get?",
+    "choices": [
+      "3",
+      "2",
+      "4",
+      "1"
+    ],
+    "correct_answer": 1,
+    "correct_value": null,
+    "hint": {
+      "level_0": "Division is splitting into equal groups.",
+      "level_1": "How many groups of 2 fit into 4? 4 \u00f7 2 = Try working out the calculation step-by-step. Compare your result to the choices: 3, 2, 4, 1",
+      "level_2": "Think about sharing into equal groups."
+    },
+    "grade": 3,
+    "has_svg": false,
+    "visual_context": null,
+    "diagnostics": {
+      "0": "Remainder confusion",
+      "2": "Used wrong operation",
+      "3": "Table recall error"
+    }
+  },
+  {
+    "file": "grade1/g1-word-problems.json",
+    "id": "A1-WPR-0017",
+    "stem": "Help Kiwi with this: There are 12 apples in a basket. Ishaan adds 3 more. How many apples are in the basket?",
+    "choices": [
+      "15",
+      "12",
+      "14",
+      "19"
+    ],
+    "correct_answer": 0,
+    "correct_value": null,
+    "hint": {
+      "level_0": "Read the story carefully.",
+      "level_1": "What numbers are in the story? Are we putting groups together or taking away? This story is about adding! Find the two numbers. Add the numbers together to find the answer.",
+      "level_2": "Word problems: find the numbers, decide add or subtract, then solve!"
+    },
+    "grade": 1,
+    "has_svg": true,
+    "visual_context": "Colourful apples arranged in groups for easy counting.",
+    "diagnostics": {
+      "1": "That's 3 too few. Read the question again \u2014 what is it asking you to find? Check which numbers you need to use.",
+      "2": "So close! You're off by just 1. You're 1 short \u2014 try counting one more time.",
+      "3": "That's 4 too many. Read the question again \u2014 what is it asking you to find? Check which numbers you need to use."
+    }
+  },
+  {
+    "file": "grade1/g1-counting.json",
+    "id": "A1-CNT-0776",
+    "stem": "What number comes just before 54?",
+    "choices": [
+      "53",
+      "55",
+      "52",
+      "54"
+    ],
+    "correct_answer": 0,
+    "correct_value": null,
+    "hint": {
+      "level_0": "Think about counting backwards by 1.",
+      "level_1": "Count: ...52, ___, 54 Subtract 1 from 54. Try working out the calculation step-by-step. Compare your result to the choices: 53, 55, 52, 54",
+      "level_2": "Count slowly and carefully, pointing to each item once."
+    },
+    "grade": 1,
+    "has_svg": true,
+    "visual_context": null,
+    "diagnostics": {
+      "1": "Confuses before with after",
+      "2": "Counts forward instead of backward",
+      "3": "That's 1 too many. Try again - count more carefully!"
+    }
+  },
+  {
+    "file": "grade2/g2-patterns.json",
+    "id": "A2-PAT-0028",
+    "stem": "Builder Bee is solving a number puzzle: In a magic square, each row adds up to 11. If two numbers in a row are 8 and 2, what is the third?",
+    "choices": [
+      "5",
+      "1",
+      "4",
+      "3"
+    ],
+    "correct_answer": 1,
+    "correct_value": null,
+    "hint": {
+      "level_0": "Look at the shape. Count its sides (straight lines) and corners (where sides meet).",
+      "level_1": "Triangle=3 sides, Square=4 equal sides, Rectangle=4 sides (2 long, 2 short), Pentagon=5, Hexagon=6. A circle has no straight sides or corners. It is perfectly round. Try working out the calculation step-by-step. Compare your result to the choices: 5, 1, 4, 3",
+      "level_2": "Look at how things change from one step to the next \u2014 that's the rule!"
+    },
+    "grade": 2,
+    "has_svg": false,
+    "visual_context": "A square with equal sides marked.",
+    "diagnostics": {
+      "0": "That's 4 too many. Check your work carefully and try again.",
+      "2": "That's 3 too many. Check your work carefully and try again.",
+      "3": "That's 2 too many. Check your work carefully and try again."
+    }
+  },
+  {
+    "file": "grade4/g4-shapes.json",
+    "id": "A4-SHP-0644",
+    "stem": "Vanya is exploring shapes: How many edges does a square pyramid have?",
+    "choices": [
+      "8",
+      "3",
+      "6",
+      "18"
+    ],
+    "correct_answer": 0,
+    "correct_value": null,
+    "hint": {
+      "level_0": "An edge is where two faces meet.",
+      "level_1": "Trace the square pyramid's outline. Count top edges, bottom edges, then sides. Don't double count. Be systematic.",
+      "level_2": "A square pyramid has 8 edges."
+    },
+    "grade": 4,
+    "has_svg": false,
+    "visual_context": "A square with equal sides marked.",
+    "diagnostics": {
+      "1": "That's 5 too few. Check your work carefully and try again.",
+      "2": "That's 2 too few. Check your work carefully and try again.",
+      "3": "That's 10 too many. Check your work carefully and try again."
+    }
+  },
+  {
+    "file": "grade6/g6-patterns.json",
+    "id": "A6-PAT-0018",
+    "stem": "What is the 10th triangular number?",
+    "choices": [],
+    "correct_answer": 0,
+    "correct_value": 55,
+    "hint": {
+      "level_0": "T(n) = n(n+1)/2",
+      "level_1": "T(10) = 10 x 11 / 2 = ? Try working out the calculation step-by-step. Double-check your final calculation.",
+      "level_2": "Look at how things change from one step to the next \u2014 that's the rule!"
+    },
+    "grade": 6,
+    "has_svg": false,
+    "visual_context": null,
+    "diagnostics": {
+      "1": "Used n^2",
+      "2": "Forgot /2",
+      "3": "Used n-1"
+    }
+  },
+  {
+    "file": "grade3/g3-shapes.json",
+    "id": "A3-SHP-0105",
+    "stem": "Help Vanya with this: A rectangle is 20 cm by 17 cm. What is its area in sq cm?",
+    "choices": [
+      "360",
+      "74",
+      "340",
+      "37"
+    ],
+    "correct_answer": 2,
+    "correct_value": null,
+    "hint": {
+      "level_0": "Think about shapes and their properties.",
+      "level_1": "What's known? What's unknown? Can you break it into smaller steps? Try with simpler numbers first, then scale up. Write down what you have on each side.",
+      "level_2": "Area = length \u00d7 width."
+    },
+    "grade": 3,
+    "has_svg": true,
+    "visual_context": "A rectangle with length and width labelled.",
+    "diagnostics": {
+      "0": "That's 20 too many. Check your work carefully and try again.",
+      "1": "That's 266 too few. Check your work carefully and try again.",
+      "3": "That's 303 too few. Check your work carefully and try again."
+    }
+  },
+  {
+    "file": "grade4/g4-add-sub.json",
+    "id": "A4-ASB-0353",
+    "stem": "Vanya is practising math: Fill in the missing number: 403 - ___ = 230.",
+    "choices": [
+      "175",
+      "178",
+      "176",
+      "173"
+    ],
+    "correct_answer": 3,
+    "correct_value": null,
+    "hint": {
+      "level_0": "This is a subtraction problem.",
+      "level_1": "What information do you have? What do you need to find? Pick the right operation: add, subtract, multiply, or divide? Write the numbers down and line them up by place value. Do the operation step by step \u2014 don't try to do it all in your head.",
+      "level_2": "Check your answer by plugging it back into the problem."
+    },
+    "grade": 4,
+    "has_svg": false,
+    "visual_context": null,
+    "diagnostics": {
+      "guessed_subtract": "Try plugging your answer back in to check.",
+      "0": "That gives 175 but the answer is smaller. Try recalculating.",
+      "1": "That gives 178 but the answer is smaller. Try recalculating.",
+      "2": "That gives 176 but the answer is smaller. Try recalculating."
+    }
+  },
+  {
+    "file": "grade4/g4-time-money.json",
+    "id": "A4-TIM-0159",
+    "stem": "Detective Dodo found some stars and wants to count them. It is 1:45. What time will it be in 90 minutes?",
+    "choices": [
+      "2:15",
+      "4:15",
+      "3:30",
+      "3:15"
+    ],
+    "correct_answer": 3,
+    "correct_value": null,
+    "hint": {
+      "level_0": "This is a number problem.",
+      "level_1": "Try with simpler numbers first, then scale up. Can you break it into smaller steps? Try with simpler numbers first, then scale up. Write down what you have on each side.",
+      "level_2": "Skip-counting tip: keep a tally as you go."
+    },
+    "grade": 4,
+    "has_svg": true,
+    "visual_context": "An analog clock face showing the time from the problem.",
+    "diagnostics": {
+      "0": "Not 2:15 \u2014 think about why 3:15 is the right answer.",
+      "1": "Not 4:15 \u2014 think about why 3:15 is the right answer.",
+      "2": "Watch out for off-by-one slips here."
+    }
+  },
+  {
+    "file": "grade5/g5-data.json",
+    "id": "A5-DAT-0059",
+    "stem": "In a class survey, books: 10, pencils: 18, balls: 3, oranges: 14. Which item has the most?",
+    "choices": [
+      "oranges",
+      "pencils",
+      "books",
+      "balls"
+    ],
+    "correct_answer": 1,
+    "correct_value": null,
+    "hint": {
+      "level_0": "Read the data carefully.",
+      "level_1": "Compare or add the values as needed. Read each value from the data carefully, then apply the operation asked (add for total, compare for most/least, divide for average). Try working out the calculation step-by-step. Compare your result to the choices: oranges, pencils, books, balls",
+      "level_2": "Read the data carefully and compare the values one by one."
+    },
+    "grade": 5,
+    "has_svg": false,
+    "visual_context": null,
+    "diagnostics": {
+      "0": "Misread data",
+      "2": "Wrong operation",
+      "3": "Counting error"
+    }
+  },
+  {
+    "file": "grade3/g3-multiplication.json",
+    "id": "A3-MUL-0175",
+    "stem": "Jackson buys 9 packs of stickers. Each pack has 8 stickers. How many stickers in all?",
+    "choices": [
+      "64",
+      "81",
+      "72",
+      "17"
+    ],
+    "correct_answer": 2,
+    "correct_value": null,
+    "hint": {
+      "level_0": "Multiply the two numbers.",
+      "level_1": "Think: 9 groups of 8. 9 \u00d7 8 = ___ Try working out the calculation step-by-step. Compare your result to the choices: 64, 81, 72, 17",
+      "level_2": "Think of it as equal groups added together."
+    },
+    "grade": 3,
+    "has_svg": false,
+    "visual_context": null,
+    "diagnostics": {
+      "0": "Added an extra group",
+      "1": "Missed one group",
+      "3": "Added instead of multiplied"
+    }
+  },
+  {
+    "file": "grade5/g5-measurement.json",
+    "id": "A5-MSR-0120",
+    "stem": "A figure is made up of a rectangle (5 cm \u00d7 4 cm) with a right triangle (base 3 cm, height 1 cm) attached. What is the total area?",
+    "choices": [
+      "21.5 cm\u00b2",
+      "22 cm\u00b2",
+      "24 cm\u00b2",
+      "25.5 cm\u00b2"
+    ],
+    "correct_answer": 3,
+    "correct_value": null,
+    "hint": {
+      "level_0": "Break the figure into simple shapes and add their areas.",
+      "level_1": "Rectangle area = length \u00d7 width. Triangle area = 1/2 \u00d7 base \u00d7 height. The total area per the competition key is 25.5 cm\u00b2. This accounts for all component shapes. Try working out the calculation step-by-step. Compare your result to the choices: 21.5 cm\u00b2, 22 cm\u00b2, 24 cm\u00b2, 25.5 cm\u00b2",
+      "level_2": "5 cm\u00b2."
+    },
+    "grade": 5,
+    "has_svg": true,
+    "visual_context": null,
+    "diagnostics": {
+      "0": "Recheck the dimensions and shape areas. Total should include all component areas.",
+      "1": "22 would be if the triangle had area 2. But 1/2 \u00d7 3 \u00d7 1 = 1.5, and rectangle may have different dimensions.",
+      "2": "24 is close but check whether you included all parts of the figure."
+    }
+  },
+  {
+    "file": "grade1/g1-counting.json",
+    "id": "A1-CNT-0282",
+    "stem": "Help Chef Cheetah figure out the count: There are 9 children in a class. 5 are girls. How many are boys?",
+    "choices": [
+      "4",
+      "6",
+      "3",
+      "5"
+    ],
+    "correct_answer": 0,
+    "correct_value": null,
+    "hint": {
+      "level_0": "This is about counting carefully.",
+      "level_1": "Where should you start counting? Make sure you count every item once. Point to each object and say the number out loud. Touch each item once \u2014 no skipping, no repeating.",
+      "level_2": "Counting tip: line them up in a row and count left to right!"
+    },
+    "grade": 1,
+    "has_svg": true,
+    "visual_context": "A visual representation of the problem.",
+    "diagnostics": {
+      "2": "So close! You're off by just 1. You're 1 short \u2014 try counting one more time.",
+      "3": "So close! You're off by just 1. You picked 1 too many \u2014 double-check your counting.",
+      "1": "That's 2 too many. Count each group separately, then add them together."
+    }
+  },
+  {
+    "file": "grade1/g1-measurement.json",
+    "id": "A1-MSR-0063",
+    "stem": "The bottle is 14 cm long. The notebook is 10 cm long. Which is longer?",
+    "choices": [
+      "notebook",
+      "Cannot tell",
+      "bottle",
+      "Both same"
+    ],
+    "correct_answer": 2,
+    "correct_value": null,
+    "hint": {
+      "level_0": "Compare the two values. Which is longer?",
+      "level_1": "A bigger number means longer/heavier. Compare the numbers directly. Try working out the calculation step-by-step. Compare your result to the choices: notebook, Cannot tell, bottle, Both same",
+      "level_2": "Check the units carefully and compare the quantities step by step."
+    },
+    "grade": 1,
+    "has_svg": true,
+    "visual_context": null,
+    "diagnostics": {
+      "0": "Confuses longer/shorter or heavier/lighter",
+      "1": "Reads the wrong value",
+      "3": "Compares incorrectly"
+    }
+  },
+  {
+    "file": "grade4/g4-patterns.json",
+    "id": "A4-PAT-0566",
+    "stem": "Professor Plum is solving a number puzzle: What is the sum of the digits of 5690?",
+    "choices": [
+      "18",
+      "10",
+      "20",
+      "30"
+    ],
+    "correct_answer": 2,
+    "correct_value": null,
+    "hint": {
+      "level_0": "Add the digits one by one.",
+      "level_1": "Digits of 5690: 5 + 6 + 9 + 0 Add left to right. Group into pairs if it helps. Stay neat.",
+      "level_2": "Sum = 20"
+    },
+    "grade": 4,
+    "has_svg": true,
+    "visual_context": "Visual representation of the math concept.",
+    "diagnostics": {
+      "0": "That's 2 too few. Check your work carefully and try again.",
+      "1": "That's 10 too few. Check your work carefully and try again.",
+      "3": "That's 10 too many. Check your work carefully and try again."
+    }
+  },
+  {
+    "file": "grade3/g3-measurement.json",
+    "id": "A3-MSR-0109",
+    "stem": "Captain Kiwi is measuring and building: A box is 2 cm long, 6 cm wide, and 5 cm tall. What is its volume in cubic cm?",
+    "choices": [
+      "13",
+      "17",
+      "58",
+      "60"
+    ],
+    "correct_answer": 3,
+    "correct_value": null,
+    "hint": {
+      "level_0": "Think about shapes and space.",
+      "level_1": "What's known? What's unknown? Can you break it into smaller steps? Try with simpler numbers first, then scale up. Write down what you have on each side.",
+      "level_2": "Volume = length \u00d7 width \u00d7 height."
+    },
+    "grade": 3,
+    "has_svg": true,
+    "visual_context": "Visual representation of the math concept.",
+    "diagnostics": {
+      "0": "That's 47 too few. Check your work carefully and try again.",
+      "1": "That's 43 too few. Check your work carefully and try again.",
+      "2": "Watch out for off-by-one slips here."
+    }
+  },
+  {
+    "file": "grade4/g4-fractions.json",
+    "id": "A4-FRC-0012",
+    "stem": "Chef Cheetah wants to solve: A shape is divided into 8 equal parts. 4 parts are shaded. What fraction is shaded?",
+    "choices": [
+      "4/8",
+      "4/9",
+      "5/8",
+      "3/8"
+    ],
+    "correct_answer": 0,
+    "correct_value": null,
+    "hint": {
+      "level_0": "Count the total number of equal parts and the number of shaded parts.",
+      "level_1": "A fraction is written as shaded parts / total parts. The numerator (top) = shaded parts. The denominator (bottom) = total equal parts. Try working out the calculation step-by-step. Compare your result to the choices: 4/8, 4/9, 5/8, 3/8",
+      "level_2": "Try drawing the fraction or splitting it into equal parts to see it clearly."
+    },
+    "grade": 4,
+    "has_svg": false,
+    "visual_context": "A shape divided into equal parts with some shaded.",
+    "diagnostics": {
+      "1": "Not 4/9 \u2014 think about why 4/8 is the right answer.",
+      "2": "Not 5/8 \u2014 think about why 4/8 is the right answer.",
+      "3": "Not 3/8 \u2014 think about why 4/8 is the right answer."
+    }
+  },
+  {
+    "file": "grade2/g2-addition.json",
+    "id": "A2-ADD-0096",
+    "stem": "Ranger Roo found some marbles and wants to count them. You have a 4\u00d74 grid. You colour some squares so that every row and every column has exactly 2 coloured squares. How many squares do you colour in total?",
+    "choices": [
+      "4",
+      "8",
+      "6",
+      "10"
+    ],
+    "correct_answer": 1,
+    "correct_value": null,
+    "hint": {
+      "level_0": "You need to find the total. Count or add all the groups together.",
+      "level_1": "Count each group separately, then add the groups. Write an addition sentence with all the groups, then solve. Try working out the calculation step-by-step. Compare your result to the choices: 4, 8, 6, 10",
+      "level_2": "Count slowly and carefully, pointing to each item once."
+    },
+    "grade": 2,
+    "has_svg": true,
+    "visual_context": "A square with equal sides marked.",
+    "diagnostics": {
+      "0": "That's not enough. Did you count everything?",
+      "2": "That's 2 too few. Make sure you count every item \u2014 try pointing to each one as you count.",
+      "3": "That's 2 too many. Count each group separately, then add them together."
+    }
+  },
+  {
+    "file": "grade2/g2-subtraction.json",
+    "id": "A2-SUB-0108",
+    "stem": "Mei Ling has 378 rulers. Mei Ling gives away 184 more. How many rulers does Mei Ling have now?",
+    "choices": [
+      "204",
+      "195",
+      "194",
+      "184"
+    ],
+    "correct_answer": 2,
+    "correct_value": null,
+    "hint": {
+      "level_0": "Break numbers into hundreds, tens and ones.",
+      "level_1": "Regroup if needed when subtracting. Compute: 378 - 184 step by step. Try working out the calculation step-by-step. Compare your result to the choices: 204, 195, 194, 184",
+      "level_2": "Think about what you start with and what is taken away."
+    },
+    "grade": 2,
+    "has_svg": false,
+    "visual_context": null,
+    "diagnostics": {
+      "0": "Regrouping error",
+      "1": "Place value confusion",
+      "3": "Operation error"
+    }
+  },
+  {
+    "file": "grade5/g5-geometry.json",
+    "id": "A5-GEO-0011",
+    "stem": "An angle measuring 70\u00b0 is called a:.",
+    "choices": [
+      "Straight angle",
+      "Acute angle",
+      "Right angle",
+      "Obtuse angle"
+    ],
+    "correct_answer": 1,
+    "correct_value": null,
+    "hint": {
+      "level_0": "Acute < 90\u00b0, Right = 90\u00b0, Obtuse > 90\u00b0 and < 180\u00b0",
+      "level_1": "Is 70\u00b0 less than, equal to, or greater than 90\u00b0? 70\u00b0 is acute angle. Try working out the calculation step-by-step. Compare your result to the choices: Straight angle, Acute angle, Right angle, Obtuse angle",
+      "level_2": "Sketch the shape and label what you know \u2014 it will guide you."
+    },
+    "grade": 5,
+    "has_svg": false,
+    "visual_context": null,
+    "diagnostics": {
+      "0": "Confused acute and obtuse",
+      "2": "Thought all angles > 45 are obtuse",
+      "3": "Did not check against 90"
+    }
+  },
+  {
+    "file": "grade4/g4-numbers.json",
+    "id": "A4-NUM-0388",
+    "stem": "Captain Kiwi sees 5 groups, each with 12 stickers. How many stickers in all?",
+    "choices": [
+      "60",
+      "72",
+      "48",
+      "17"
+    ],
+    "correct_answer": 0,
+    "correct_value": null,
+    "hint": {
+      "level_0": "This involves multiplication.",
+      "level_1": "Try with simpler numbers first, then scale up. Can you break it into smaller steps? Try with simpler numbers first, then scale up. Write down what you have on each side.",
+      "level_2": "Skip-counting tip: keep a tally as you go."
+    },
+    "grade": 4,
+    "has_svg": true,
+    "visual_context": "Colourful stickers arranged in groups for easy counting.",
+    "diagnostics": {
+      "1": "That's 12 too many. Count each group separately, then add them together.",
+      "2": "Watch out for off-by-one slips here.",
+      "3": "That's 43 too few. Make sure you count every item \u2014 try pointing to each one as you count."
+    }
+  },
+  {
+    "file": "grade3/g3-add-sub.json",
+    "id": "A3-ASB-0285",
+    "stem": "Help Chikoo calculate: What is 24 \u00d7 7?",
+    "choices": [
+      "168",
+      "173",
+      "163",
+      "170"
+    ],
+    "correct_answer": 0,
+    "correct_value": null,
+    "hint": {
+      "level_0": "Use the multiplication algorithm.",
+      "level_1": "Break it down by place value. 24 \u00d7 7 = 24 \u00d7 (00 + 7) Multiply, then add the partial products. Double-check addition at the end.",
+      "level_2": "24 \u00d7 7 = 168"
+    },
+    "grade": 3,
+    "has_svg": false,
+    "visual_context": null,
+    "diagnostics": {
+      "1": "That's 5 too many. Remember, 24 \u00d7 7 means adding 24 together 7 times.",
+      "2": "That's 5 too few. Remember, 24 \u00d7 7 means adding 24 together 7 times.",
+      "3": "That's 2 too many. Remember, 24 \u00d7 7 means adding 24 together 7 times."
+    }
+  },
+  {
+    "file": "grade3/g3-patterns.json",
+    "id": "A3-PAT-0345",
+    "stem": "Vanya noticed something interesting: What is the next number in the sequence: 6, 13, 20, 27, 34, ___ ?",
+    "choices": [
+      "46",
+      "31",
+      "39",
+      "41"
+    ],
+    "correct_answer": 3,
+    "correct_value": null,
+    "hint": {
+      "level_0": "Look at the gap between numbers.",
+      "level_1": "The gap is 7 each time. Add the gap to the last number. 34 + 7 = ? It's an arithmetic sequence.",
+      "level_2": "Next: 41"
+    },
+    "grade": 3,
+    "has_svg": true,
+    "visual_context": "The pattern elements shown in a row with the missing position highlighted.",
+    "diagnostics": {
+      "0": "That's 5 too high. Look at how much the numbers change each step \u2014 the pattern adds the same amount each time.",
+      "1": "That's 10 too low. Look at how much the numbers change each step \u2014 the pattern adds the same amount each time.",
+      "2": "That's 2 too low. Look at how much the numbers change each step \u2014 the pattern adds the same amount each time."
+    }
+  },
+  {
+    "file": "grade4/g4-measurement.json",
+    "id": "A4-MSR-0118",
+    "stem": "Knight Koko is measuring and building: A box is 5 cm long, 9 cm wide, and 4 cm tall. What is its volume in cubic cm?",
+    "choices": [
+      "180",
+      "175",
+      "18",
+      "49"
+    ],
+    "correct_answer": 0,
+    "correct_value": null,
+    "hint": {
+      "level_0": "Think about shapes and space.",
+      "level_1": "What's known? What's unknown? Can you break it into smaller steps? Try with simpler numbers first, then scale up. Write down what you have on each side.",
+      "level_2": "Volume = length \u00d7 width \u00d7 height."
+    },
+    "grade": 4,
+    "has_svg": true,
+    "visual_context": "Visual representation of the math concept.",
+    "diagnostics": {
+      "1": "That's 5 too few. Check your work carefully and try again.",
+      "2": "Watch out for off-by-one slips here.",
+      "3": "That's 131 too few. Check your work carefully and try again."
+    }
+  },
+  {
+    "file": "grade6/g6-arithmetic.json",
+    "id": "A6-ARI-0187",
+    "stem": "What is 6/3 \u00d7 5/7?",
+    "choices": [
+      "11/21",
+      "10/7",
+      "30/10",
+      "11/7"
+    ],
+    "correct_answer": 1,
+    "correct_value": null,
+    "hint": {
+      "level_0": "Identify what mathematical concept is being tested.",
+      "level_1": "Multiply 6 \u00d7 3 using the standard method. Break it down: multiply 6 by each digit of 3 separately, then add the partial products. Try working out the calculation step-by-step. Compare your result to the choices: 11/21, 10/7, 30/10, 11/7",
+      "level_2": "You have everything you need \u2014 work through it one step at a time!"
+    },
+    "grade": 6,
+    "has_svg": false,
+    "visual_context": null,
+    "diagnostics": {
+      "0": "Recheck your multiplication \u2014 break it into partial products if the numbers are large.",
+      "2": "Go back to the basics. Can you draw or model this problem?",
+      "3": "Look at the problem again \u2014 are you reading all the information correctly?"
+    }
+  },
+  {
+    "file": "grade3/g3-numbers.json",
+    "id": "A3-NUM-0160",
+    "stem": "What is the digit in the hundreds place of 6,551?",
+    "choices": [
+      "4",
+      "5",
+      "7",
+      "2"
+    ],
+    "correct_answer": 1,
+    "correct_value": null,
+    "hint": {
+      "level_0": "Think about what each position in a number represents.",
+      "level_1": "In 6,551, count the positions from right: ones, tens, hundreds... The hundreds digit in 6,551 is 5. Try working out the calculation step-by-step. Compare your result to the choices: 4, 5, 7, 2",
+      "level_2": "You have everything you need \u2014 work through it one step at a time!"
+    },
+    "grade": 3,
+    "has_svg": false,
+    "visual_context": null,
+    "diagnostics": {
+      "0": "Confused place positions",
+      "2": "Counted from wrong end",
+      "3": "Mixed up digit values"
+    }
+  },
+  {
+    "file": "grade2/g2-counting.json",
+    "id": "A2-CNT-0224",
+    "stem": "Diya says \"I have 15 books.\" Neha says \"Diya is lying and actually has 18.\" If Neha is right, how many does Diya really have?",
+    "choices": [
+      "21",
+      "19",
+      "18",
+      "22"
+    ],
+    "correct_answer": 2,
+    "correct_value": null,
+    "hint": {
+      "level_0": "Count each item carefully. Point to each one as you count.",
+      "level_1": "Try grouping items by 2s, 5s, or 10s to count faster. Double-check by counting again from a different starting point. Try working out the calculation step-by-step. Compare your result to the choices: 21, 19, 18, 22",
+      "level_2": "Test each possibility one at a time and rule out what can't work."
+    },
+    "grade": 2,
+    "has_svg": false,
+    "visual_context": null,
+    "diagnostics": {
+      "0": "That's 3 too many. Check your work carefully and try again.",
+      "1": "So close! You're off by just 1. You picked 1 too many \u2014 double-check your counting.",
+      "3": "That's 4 too many. Check your work carefully and try again."
+    }
+  },
+  {
+    "file": "grade1/g1-shapes.json",
+    "id": "A1-SHP-0559",
+    "stem": "What is the perimeter of a rectangle with length 9 cm and width 6 cm?",
+    "choices": [
+      "54 cm",
+      "15 cm",
+      "24 cm",
+      "30 cm"
+    ],
+    "correct_answer": 3,
+    "correct_value": null,
+    "hint": {
+      "level_0": "Perimeter = 2 \u00d7 (length + width).",
+      "level_1": "Add 9 + 6 first, then multiply by 2. 2 \u00d7 15 = ___ Try working out the calculation step-by-step. Compare your result to the choices: 54 cm, 15 cm, 24 cm, 30 cm",
+      "level_2": "Sketch the shape and label what you know \u2014 it will guide you."
+    },
+    "grade": 1,
+    "has_svg": true,
+    "visual_context": null,
+    "diagnostics": {
+      "0": "Confused perimeter/area",
+      "1": "Wrong formula",
+      "2": "Counting error"
+    }
+  },
+  {
+    "file": "grade2/g2-counting.json",
+    "id": "A2-CNT-0239",
+    "stem": "Vanya found some coins and wants to count them. Write the number that has 4 hundreds, 6 tens, and 4 ones. What is this number?",
+    "choices": [
+      "459",
+      "462",
+      "464",
+      "467"
+    ],
+    "correct_answer": 2,
+    "correct_value": null,
+    "hint": {
+      "level_0": "Count each item carefully. Point to each one as you count.",
+      "level_1": "Try grouping items by 2s, 5s, or 10s to count faster. Double-check by counting again from a different starting point. Try working out the calculation step-by-step. Compare your result to the choices: 459, 462, 464, 467",
+      "level_2": "Count slowly and carefully, pointing to each item once."
+    },
+    "grade": 2,
+    "has_svg": false,
+    "visual_context": "Coins and notes arranged for counting.",
+    "diagnostics": {
+      "0": "That's 5 too few. Make sure you count every item \u2014 try pointing to each one as you count.",
+      "1": "That's 2 too few. Make sure you count every item \u2014 try pointing to each one as you count.",
+      "3": "That's 3 too many. Count each group separately, then add them together."
+    }
+  },
+  {
+    "file": "grade6/g6-word-problems.json",
+    "id": "A6-WPR-0045",
+    "stem": "Hafiz buys 7 items. Pens cost $7 each and books cost $9 each. Total spent is $55. How many pens?",
+    "choices": [
+      "4",
+      "6",
+      "3",
+      "9"
+    ],
+    "correct_answer": 0,
+    "correct_value": null,
+    "hint": {
+      "level_0": "Try the heuristic: guess check.",
+      "level_1": "Break the problem into smaller steps. Identify what you know and what you need to find. Try working out the calculation step-by-step. Compare your result to the choices: 4, 6, 3, 9",
+      "level_2": "Read the problem again slowly \u2014 find the numbers and what they ask for."
+    },
+    "grade": 6,
+    "has_svg": false,
+    "visual_context": null,
+    "diagnostics": {
+      "1": "Not quite. Re-read the question carefully and check each step of your calculation.",
+      "2": "You're off by 1. Recount carefully \u2014 did you include all values?",
+      "3": "Computation error in multi-step"
+    }
+  },
+  {
+    "file": "grade5/g5-patterns.json",
+    "id": "A5-PAT-0013",
+    "stem": "What comes next: 17, 23, 29, 35, ?",
+    "choices": [
+      "40",
+      "47",
+      "41",
+      "42"
+    ],
+    "correct_answer": 2,
+    "correct_value": null,
+    "hint": {
+      "level_0": "Look for a pattern between consecutive numbers.",
+      "level_1": "Find the difference or ratio between terms. The next number is 41. Try working out the calculation step-by-step. Compare your result to the choices: 40, 47, 41, 42",
+      "level_2": "Look at how things change from one step to the next \u2014 that's the rule!"
+    },
+    "grade": 5,
+    "has_svg": true,
+    "visual_context": null,
+    "diagnostics": {
+      "0": "Wrong pattern identified",
+      "1": "Arithmetic error",
+      "3": "Skipped a term"
+    }
+  },
+  {
+    "file": "grade4/g4-shapes.json",
+    "id": "A4-SHP-0301",
+    "stem": "Knight Koko is working on a problem: A rectangle is 7 cm by 3 cm. What is its area in sq cm?",
+    "choices": [
+      "28",
+      "20",
+      "10",
+      "21"
+    ],
+    "correct_answer": 3,
+    "correct_value": null,
+    "hint": {
+      "level_0": "Think about shapes and their properties.",
+      "level_1": "What's known? What's unknown? Can you break it into smaller steps? Try with simpler numbers first, then scale up. Write down what you have on each side.",
+      "level_2": "Area = length \u00d7 width."
+    },
+    "grade": 4,
+    "has_svg": true,
+    "visual_context": "A rectangle with length and width labelled.",
+    "diagnostics": {
+      "0": "That's 7 too many. Check your work carefully and try again.",
+      "1": "So close! You're off by just 1. You're 1 short \u2014 try counting one more time.",
+      "2": "Watch out for off-by-one slips here."
+    }
+  },
+  {
+    "file": "grade2/g2-word-problems.json",
+    "id": "A2-WPR-0460",
+    "stem": "What is 3 \u00d7 2?",
+    "choices": [],
+    "correct_answer": 3,
+    "correct_value": 6,
+    "hint": {
+      "level_0": "Multiplication means repeated addition.",
+      "level_1": "Add 2 a total of 3 times. 3 \u00d7 2 = 2 + 2 + ... (3 times) Try working out the calculation step-by-step. Double-check your final calculation.",
+      "level_2": "Read the problem again slowly \u2014 find the numbers and what they ask for."
+    },
+    "grade": 2,
+    "has_svg": false,
+    "visual_context": null,
+    "diagnostics": {
+      "common_errors": "Adds instead of multiplying; Table recall error"
+    }
+  },
+  {
+    "file": "grade6/g6-measurement.json",
+    "id": "A6-MSR-0027",
+    "stem": "A car travels 80 km at 80 km/h. How long does the journey take?",
+    "choices": [
+      "9 h",
+      "2 h",
+      "6 h",
+      "1 h"
+    ],
+    "correct_answer": 3,
+    "correct_value": null,
+    "hint": {
+      "level_0": "Speed = Distance \u00f7 Time. Distance = Speed \u00d7 Time.",
+      "level_1": "Use the triangle: S, D, T. Cover what you want to find. The other two show the operation. Try working out the calculation step-by-step. Compare your result to the choices: 9 h, 2 h, 6 h, 1 h",
+      "level_2": "Check the units carefully and compare the quantities step by step."
+    },
+    "grade": 6,
+    "has_svg": false,
+    "visual_context": null,
+    "diagnostics": {
+      "0": "Check your fraction work. Did you find a common denominator? For division, did you flip and multiply?",
+      "1": "Check your fraction work. Did you find a common denominator? For division, did you flip and multiply?",
+      "2": "Check your fraction work. Did you find a common denominator? For division, did you flip and multiply?"
+    }
+  },
+  {
+    "file": "grade6/g6-numbers.json",
+    "id": "A6-NUM-0344",
+    "stem": "The pie chart shows favourite sports of 200 students. How many chose Football?",
+    "choices": [
+      "30",
+      "20",
+      "180",
+      "10"
+    ],
+    "correct_answer": 1,
+    "correct_value": null,
+    "hint": {
+      "level_0": "Find the percentage for each category first.",
+      "level_1": "Convert percentage to actual number using total. Difference in % \u00d7 total \u00f7 100 = answer Try working out the calculation step-by-step. Compare your result to the choices: 30, 20, 180, 10",
+      "level_2": "You have everything you need \u2014 work through it one step at a time!"
+    },
+    "grade": 6,
+    "has_svg": true,
+    "visual_context": null,
+    "diagnostics": {
+      "0": "You're off by 10. Check your place value \u2014 did you carry or borrow correctly?",
+      "2": "Not quite. Re-read the question carefully and check each step of your calculation.",
+      "3": "Subtracts percentages without converting"
+    }
+  },
+  {
+    "file": "grade5/g5-arithmetic.json",
+    "id": "A5-ARI-0047",
+    "stem": "Calculate: 227 - 181 = ?",
+    "choices": [],
+    "correct_answer": 3,
+    "correct_value": 46,
+    "hint": {
+      "level_0": "This is a basic - problem.",
+      "level_1": "Compute 227 - 181 step by step. Subtract column by column: start from ones. If the top digit is smaller, borrow 10 from the next column. Try working out the calculation step-by-step. Double-check your final calculation.",
+      "level_2": "You have everything you need \u2014 work through it one step at a time!"
+    },
+    "grade": 5,
+    "has_svg": false,
+    "visual_context": null,
+    "diagnostics": {
+      "1": "Check your subtraction. Did you borrow from the next column when needed?",
+      "2": "You chose option 2. Think about what operation the question is asking for and try a different approach.",
+      "3": "You chose option 3. Think about what operation the question is asking for and try a different approach."
+    }
+  },
+  {
+    "file": "grade6/g6-geometry.json",
+    "id": "A6-GEO-0091",
+    "stem": "A triangle has a base of 7 inches and a height of 6 inches. What is its area?",
+    "choices": [
+      "22 square inches",
+      "21 square inches",
+      "13 square inches",
+      "42 square inches"
+    ],
+    "correct_answer": 1,
+    "correct_value": null,
+    "hint": {
+      "level_0": "Area of triangle = 1/2 \u00d7 base \u00d7 height.",
+      "level_1": "A = 1/2 \u00d7 7 \u00d7 6. A = ___. Try working out the calculation step-by-step. Compare your result to the choices: 22 square inches, 21 square inches, 13 square inches, 42 square inches",
+      "level_2": "Sketch the shape and label what you know \u2014 it will guide you."
+    },
+    "grade": 6,
+    "has_svg": true,
+    "visual_context": null,
+    "diagnostics": {
+      "0": "Remember: area of a triangle is HALF of base times height. Did you divide by 2?",
+      "2": "Remember: area of a triangle is HALF of base times height. Did you divide by 2?",
+      "3": "Remember: area of a triangle is HALF of base times height. Did you divide by 2?"
+    }
+  },
+  {
+    "file": "grade4/g4-division.json",
+    "id": "A4-DIV-0068",
+    "stem": "What is 161 \u00f7 7?",
+    "choices": [
+      "7",
+      "23",
+      "22",
+      "24"
+    ],
+    "correct_answer": 1,
+    "correct_value": null,
+    "hint": {
+      "level_0": "Think carefully about the operation.",
+      "level_1": "Use your math knowledge. Check your work. Try working out the calculation step-by-step. Compare your result to the choices: 7, 23, 22, 24",
+      "level_2": "Think about sharing into equal groups."
+    },
+    "grade": 4,
+    "has_svg": false,
+    "visual_context": null,
+    "diagnostics": {
+      "0": "Common error",
+      "2": "Calculation mistake",
+      "3": "Wrong approach"
+    }
+  },
+  {
+    "file": "grade4/g4-word-problems.json",
+    "id": "A4-WPR-0371",
+    "stem": "Mei Ling and Kavitha have 404 marbles altogether. Kavitha has 3 times as many as Mei Ling. How many marbles does Mei Ling have?",
+    "choices": [
+      "101",
+      "0",
+      "303",
+      "202"
+    ],
+    "correct_answer": 0,
+    "correct_value": null,
+    "hint": {
+      "level_0": "Draw a bar model. One bar is longer than the other.",
+      "level_1": "Kavitha's bar is 3 times Mei Ling's bar. Identify what the question asks: total, one part, or difference? Try working out the calculation step-by-step. Compare your result to the choices: 101, 0, 303, 202",
+      "level_2": "Read the problem again slowly \u2014 find the numbers and what they ask for."
+    },
+    "grade": 4,
+    "has_svg": false,
+    "visual_context": null,
+    "diagnostics": {
+      "1": "Finds only one person's amount",
+      "2": "Wrong operation for total/difference",
+      "3": "Misinterprets 'times as many'"
+    }
+  },
+  {
+    "file": "grade3/g3-patterns.json",
+    "id": "A3-PAT-0221",
+    "stem": "Help Knight Koko find the pattern: What number comes next? 26, 31, 36, 41, 46, ___.",
+    "choices": [
+      "52",
+      "46",
+      "56",
+      "51"
+    ],
+    "correct_answer": 3,
+    "correct_value": null,
+    "hint": {
+      "level_0": "Look for a pattern here.",
+      "level_1": "What's known? What's unknown? Can you break it into smaller steps? Try with simpler numbers first, then scale up. Write down what you have on each side.",
+      "level_2": "Look at the gap between numbers \u2014 does it stay the same?"
+    },
+    "grade": 3,
+    "has_svg": true,
+    "visual_context": "A sequence of elements with the missing piece highlighted.",
+    "diagnostics": {
+      "0": "So close! You're off by just 1. You picked 1 too many \u2014 double-check your counting.",
+      "1": "That's 5 too low. Look at how much the numbers change each step \u2014 the pattern adds the same amount each time.",
+      "2": "Watch out for off-by-one slips here."
+    }
+  },
+  {
+    "file": "grade5/g5-algebra.json",
+    "id": "A5-ALG-0046",
+    "stem": "What is 22 - 7 \u00d7 3?",
+    "choices": [
+      "8",
+      "45",
+      "1",
+      "-21"
+    ],
+    "correct_answer": 2,
+    "correct_value": null,
+    "hint": {
+      "level_0": "BODMAS: Brackets, Orders, Division/Multiplication, Addition/Subtraction.",
+      "level_1": "Do multiplication/division before addition/subtraction. Work out brackets first, then \u00d7 and \u00f7, then + and -. Try working out the calculation step-by-step. Compare your result to the choices: 8, 45, 1, -21",
+      "level_2": "Use the relationship given in the problem to set up your steps."
+    },
+    "grade": 5,
+    "has_svg": false,
+    "visual_context": null,
+    "diagnostics": {
+      "0": "Ignores order of operations",
+      "1": "Computes left to right",
+      "3": "Remember BODMAS: multiply or divide before you add or subtract. Work left to right within the same priority."
+    }
+  }
+]

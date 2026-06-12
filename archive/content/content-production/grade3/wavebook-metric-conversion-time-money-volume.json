@@ -1,0 +1,360 @@
+{
+ "topic_id": "wavebook-metric-conversion-time-money-volume",
+ "topic_name": "Wavebook: Metric Conversion time money volume",
+ "topic_emoji": "📘",
+ "grade": 3,
+ "domain": "wavebook",
+ "source": "wavebook",
+ "total_questions": 15,
+ "difficulty_range": {
+  "min": 0,
+  "max": 0
+ },
+ "questions": [
+  {
+   "id": "wb_L3_s12_q01",
+   "stem": "How many minutes are there in 2 hours 15 minutes?",
+   "interaction_mode": "mcq",
+   "topic": "Metric Conversion time money volume",
+   "difficulty_tier": "warmup",
+   "question_number": 1,
+   "choices": [
+    "215",
+    "135",
+    "125",
+    "145"
+   ],
+   "correct_answer": 1,
+   "grade_band": "3-4",
+   "source": "Wavebook L3 S12",
+   "diagnostics": {},
+   "hint": {
+    "level_0": "We must turn 2 hours 15 minutes into minutes only.",
+    "level_1": "Each hour is 60 minutes. So 2 hours = 2 × 60 minutes.",
+    "level_2": "2 × 60 + 15 = ?"
+   }
+  },
+  {
+   "id": "wb_L3_s12_q02",
+   "stem": "Convert 3500 mL to litres.",
+   "interaction_mode": "mcq",
+   "topic": "Metric Conversion time money volume",
+   "difficulty_tier": "warmup",
+   "question_number": 2,
+   "choices": [
+    "35 L",
+    "3.5 L",
+    "0.35 L",
+    "350 L"
+   ],
+   "correct_answer": 1,
+   "grade_band": "3-4",
+   "source": "Wavebook L3 S12",
+   "diagnostics": {},
+   "hint": {
+    "level_0": "Which units appear here, and which way are we converting? The numbers: 3500.",
+    "level_1": "Key fact: 1 litre = 1000 mL. Going small → big means dividing; big → small means multiplying.",
+    "level_2": "Apply the fact: 3500 ÷ 1000 (or × the other way) = ?"
+   }
+  },
+  {
+   "id": "wb_L3_s12_q03",
+   "stem": "Rs 5 and 75 paise =? paise",
+   "interaction_mode": "mcq",
+   "topic": "Metric Conversion time money volume",
+   "difficulty_tier": "warmup",
+   "question_number": 3,
+   "choices": [
+    "575",
+    "5075",
+    "5750",
+    "57.5"
+   ],
+   "correct_answer": 0,
+   "grade_band": "3-4",
+   "source": "Wavebook L3 S12",
+   "diagnostics": {},
+   "hint": {
+    "level_0": "Which units appear here, and which way are we converting? The numbers: 5, 75.",
+    "level_1": "Key fact: Rs 1 = 100 paise. Going small → big means dividing; big → small means multiplying.",
+    "level_2": "Apply the fact: 5 ÷ 100 (or × the other way) = ?"
+   }
+  },
+  {
+   "id": "wb_L3_s12_q04",
+   "stem": "2 km 350 m =? m",
+   "interaction_mode": "mcq",
+   "topic": "Metric Conversion time money volume",
+   "difficulty_tier": "warmup",
+   "question_number": 4,
+   "choices": [
+    "2350",
+    "23500",
+    "235",
+    "2035"
+   ],
+   "correct_answer": 0,
+   "grade_band": "3-4",
+   "source": "Wavebook L3 S12",
+   "diagnostics": {},
+   "hint": {
+    "level_0": "Which units appear here, and which way are we converting? The numbers: 2, 350.",
+    "level_1": "Key fact: 1 km = 1000 m. Going small → big means dividing; big → small means multiplying.",
+    "level_2": "Apply the fact: 2 ÷ 1000 (or × the other way) = ?"
+   }
+  },
+  {
+   "id": "wb_L3_s12_q05",
+   "stem": "How many seconds are in 5 minutes?",
+   "interaction_mode": "mcq",
+   "topic": "Metric Conversion time money volume",
+   "difficulty_tier": "warmup",
+   "question_number": 5,
+   "choices": [
+    "500",
+    "50",
+    "300",
+    "350"
+   ],
+   "correct_answer": 2,
+   "grade_band": "3-4",
+   "source": "Wavebook L3 S12",
+   "diagnostics": {},
+   "hint": {
+    "level_0": "What is known (5) and what exactly is asked? Say it in your own words.",
+    "level_1": "Choose the operation the story needs (add, subtract, multiply, divide) and set it up with 5.",
+    "level_2": "Write the calculation out and solve it step by step: ... = ?"
+   }
+  },
+  {
+   "id": "wb_L3_s12_q06",
+   "stem": "A bottle contains 1.5 litres of water. How many mL is that?",
+   "interaction_mode": "mcq",
+   "topic": "Metric Conversion time money volume",
+   "difficulty_tier": "practice",
+   "question_number": 6,
+   "choices": [
+    "15 mL",
+    "150 mL",
+    "1500 mL",
+    "15000 mL"
+   ],
+   "correct_answer": 2,
+   "grade_band": "3-4",
+   "source": "Wavebook L3 S12",
+   "diagnostics": {},
+   "hint": {
+    "level_0": "Which units appear here, and which way are we converting? The numbers: 1.5.",
+    "level_1": "Key fact: 1 litre = 1000 mL. Going small → big means dividing; big → small means multiplying.",
+    "level_2": "Apply the fact: 1.5 ÷ 1000 (or × the other way) = ?"
+   }
+  },
+  {
+   "id": "wb_L3_s12_q07",
+   "stem": "Priya left home at 8:45 AM and reached school at 9:20 AM. How long did the journey take?",
+   "interaction_mode": "mcq",
+   "topic": "Metric Conversion time money volume",
+   "difficulty_tier": "practice",
+   "question_number": 7,
+   "choices": [
+    "25 minutes",
+    "35 minutes",
+    "45 minutes",
+    "30 minutes"
+   ],
+   "correct_answer": 1,
+   "grade_band": "3-4",
+   "source": "Wavebook L3 S12",
+   "diagnostics": {},
+   "hint": {
+    "level_0": "What is known (8, 45, 9, 20) and what exactly is asked? Say it in your own words.",
+    "level_1": "Choose the operation the story needs (add, subtract, multiply, divide) and set it up with 8, 45, 9.",
+    "level_2": "Write the calculation out and solve it step by step: ... = ?"
+   }
+  },
+  {
+   "id": "wb_L3_s12_q08",
+   "stem": "4 kg 250 g =? g",
+   "interaction_mode": "mcq",
+   "topic": "Metric Conversion time money volume",
+   "difficulty_tier": "practice",
+   "question_number": 8,
+   "choices": [
+    "4250",
+    "42500",
+    "425",
+    "4025"
+   ],
+   "correct_answer": 0,
+   "grade_band": "3-4",
+   "source": "Wavebook L3 S12",
+   "diagnostics": {},
+   "hint": {
+    "level_0": "Which units appear here, and which way are we converting? The numbers: 4, 250.",
+    "level_1": "Key fact: 1 kg = 1000 g. Going small → big means dividing; big → small means multiplying.",
+    "level_2": "Apply the fact: 4 ÷ 1000 (or × the other way) = ?"
+   }
+  },
+  {
+   "id": "wb_L3_s12_q09",
+   "stem": "If 1 dozen bananas cost Rs 48, what is the cost of one banana?",
+   "interaction_mode": "mcq",
+   "topic": "Metric Conversion time money volume",
+   "difficulty_tier": "practice",
+   "question_number": 9,
+   "choices": [
+    "Rs 3",
+    "Rs 4",
+    "Rs 5",
+    "Rs 6"
+   ],
+   "correct_answer": 1,
+   "grade_band": "3-4",
+   "source": "Wavebook L3 S12",
+   "diagnostics": {},
+   "hint": {
+    "level_0": "What is known (1, 48) and what exactly is asked? Say it in your own words.",
+    "level_1": "Choose the operation the story needs (add, subtract, multiply, divide) and set it up with 1, 48.",
+    "level_2": "Write the calculation out and solve it step by step: ... = ?"
+   }
+  },
+  {
+   "id": "wb_L3_s12_q10",
+   "stem": "Convert 180 minutes to hours.",
+   "interaction_mode": "mcq",
+   "topic": "Metric Conversion time money volume",
+   "difficulty_tier": "practice",
+   "question_number": 10,
+   "choices": [
+    "2 hours",
+    "2.5 hours",
+    "3 hours",
+    "1.8 hours"
+   ],
+   "correct_answer": 2,
+   "grade_band": "3-4",
+   "source": "Wavebook L3 S12",
+   "diagnostics": {},
+   "hint": {
+    "level_0": "What is known (180) and what exactly is asked? Say it in your own words.",
+    "level_1": "Choose the operation the story needs (add, subtract, multiply, divide) and set it up with 180.",
+    "level_2": "Write the calculation out and solve it step by step: ... = ?"
+   }
+  },
+  {
+   "id": "wb_L3_s12_q11",
+   "stem": "A tank holds 25 litres of water. If 8 litres 500 mL is used, how much remains?",
+   "interaction_mode": "mcq",
+   "topic": "Metric Conversion time money volume",
+   "difficulty_tier": "challenge",
+   "question_number": 11,
+   "choices": [
+    "16 L 500 mL",
+    "17 L 500 mL",
+    "16 L",
+    "15 L 500 mL"
+   ],
+   "correct_answer": 0,
+   "grade_band": "3-4",
+   "source": "Wavebook L3 S12",
+   "diagnostics": {},
+   "hint": {
+    "level_0": "Which units appear here, and which way are we converting? The numbers: 25, 8, 500.",
+    "level_1": "Key fact: 1 litre = 1000 mL. Going small → big means dividing; big → small means multiplying.",
+    "level_2": "Apply the fact: 25 ÷ 1000 (or × the other way) = ?"
+   }
+  },
+  {
+   "id": "wb_L3_s12_q12",
+   "stem": "Rs 72.50 x 4 =?",
+   "interaction_mode": "mcq",
+   "topic": "Metric Conversion time money volume",
+   "difficulty_tier": "challenge",
+   "question_number": 12,
+   "choices": [
+    "Rs 280",
+    "Rs 290",
+    "Rs 288",
+    "Rs 292"
+   ],
+   "correct_answer": 1,
+   "grade_band": "3-4",
+   "source": "Wavebook L3 S12",
+   "diagnostics": {},
+   "hint": {
+    "level_0": "What is known (72.50, 4) and what exactly is asked? Say it in your own words.",
+    "level_1": "Choose the operation the story needs (add, subtract, multiply, divide) and set it up with 72.50, 4.",
+    "level_2": "Write the calculation out and solve it step by step: ... = ?"
+   }
+  },
+  {
+   "id": "wb_L3_s12_q13",
+   "stem": "A movie starts at 3:45 PM and ends at 6:10 PM. What is the duration?",
+   "interaction_mode": "mcq",
+   "topic": "Metric Conversion time money volume",
+   "difficulty_tier": "challenge",
+   "question_number": 13,
+   "choices": [
+    "2 hours 15 minutes",
+    "2 hours 25 minutes",
+    "2 hours 35 minutes",
+    "3 hours 25 minutes"
+   ],
+   "correct_answer": 1,
+   "grade_band": "3-4",
+   "source": "Wavebook L3 S12",
+   "diagnostics": {},
+   "hint": {
+    "level_0": "The ratio is 3 : 45. An equivalent ratio multiplies (or divides) BOTH parts by the same number.",
+    "level_1": "Try a multiplier: 3 × k and 45 × k. Which choice keeps the two parts in that exact relationship?",
+    "level_2": "Check each choice: divide its two parts — do you get back to 3 : 45? = ?"
+   }
+  },
+  {
+   "id": "wb_L3_s12_q14",
+   "stem": "7500 g =? kg? g",
+   "interaction_mode": "mcq",
+   "topic": "Metric Conversion time money volume",
+   "difficulty_tier": "challenge",
+   "question_number": 14,
+   "choices": [
+    "7 kg 500 g",
+    "75 kg 0 g",
+    "750 kg",
+    "7 kg 50 g"
+   ],
+   "correct_answer": 0,
+   "grade_band": "3-4",
+   "source": "Wavebook L3 S12",
+   "diagnostics": {},
+   "hint": {
+    "level_0": "Which units appear here, and which way are we converting? The numbers: 7500.",
+    "level_1": "Key fact: 1 kg = 1000 g. Going small → big means dividing; big → small means multiplying.",
+    "level_2": "Apply the fact: 7500 ÷ 1000 (or × the other way) = ?"
+   }
+  },
+  {
+   "id": "wb_L3_s12_q15",
+   "stem": "Ravi bought 3 notebooks at Rs 35.50 each and 2 pens at Rs 12.25 each. What is the total cost?",
+   "interaction_mode": "mcq",
+   "topic": "Metric Conversion time money volume",
+   "difficulty_tier": "challenge",
+   "question_number": 15,
+   "choices": [
+    "Rs 131.00",
+    "Rs 130.50",
+    "Rs 131.25",
+    "Rs 130.00"
+   ],
+   "correct_answer": 0,
+   "grade_band": "3-4",
+   "source": "Wavebook L3 S12",
+   "diagnostics": {},
+   "hint": {
+    "level_0": "What is known (3, 35.50, 2, 12.25) and what exactly is asked? Say it in your own words.",
+    "level_1": "Choose the operation the story needs (add, subtract, multiply, divide) and set it up with 3, 35.50, 2.",
+    "level_2": "Write the calculation out and solve it step by step: ... = ?"
+   }
+  }
+ ]
+}

@@ -1,0 +1,176 @@
+{
+  "topic_id": "wavebook-area-of-plane-figures",
+  "topic_name": "Wavebook: Area of Plane Figures",
+  "topic_emoji": "\ud83d\udcd8",
+  "grade": 5,
+  "domain": "wavebook",
+  "source": "wavebook",
+  "total_questions": 7,
+  "difficulty_range": {
+    "min": 0,
+    "max": 0
+  },
+  "questions": [
+    {
+      "id": "wb_L4_s37_q05",
+      "stem": "The area of a triangle with base 12 cm and height 8 cm is:",
+      "interaction_mode": "mcq",
+      "topic": "Area of Plane Figures",
+      "difficulty_tier": "warmup",
+      "question_number": 5,
+      "choices": [
+        "96 cm\u00b2",
+        "48 cm\u00b2",
+        "24 cm\u00b2",
+        "36 cm\u00b2"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S37",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "We know the triangle has base 12 cm and height 8 cm. What is its area?",
+        "level_1": "A triangle is HALF of a rectangle with the same base and height. First find 12 \u00d7 8.",
+        "level_2": "Area of triangle = \u00bd \u00d7 base \u00d7 height = \u00bd \u00d7 12 \u00d7 8 = ?"
+      }
+    },
+    {
+      "id": "wb_L4_s37_q06",
+      "stem": "The area of a rectangle with length 15 cm and breadth 8 cm is:",
+      "interaction_mode": "mcq",
+      "topic": "Area of Plane Figures",
+      "difficulty_tier": "practice",
+      "question_number": 6,
+      "choices": [
+        "46 cm\u00b2",
+        "120 cm\u00b2",
+        "23 cm\u00b2",
+        "60 cm\u00b2"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S37",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "The rectangle is 15 long and 8 wide. How many unit squares cover it \u2014 that is, what is the area?",
+        "level_1": "Think of 8 rows with 15 squares in each row.",
+        "level_2": "Area = length \u00d7 breadth = 15 \u00d7 8 = ?"
+      }
+    },
+    {
+      "id": "wb_L4_s37_q07",
+      "stem": "The area of a parallelogram with base 10 cm and height 6 cm is:",
+      "interaction_mode": "mcq",
+      "topic": "Area of Plane Figures",
+      "difficulty_tier": "practice",
+      "question_number": 7,
+      "choices": [
+        "16 cm\u00b2",
+        "30 cm\u00b2",
+        "60 cm\u00b2",
+        "None of these"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S37",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "Area is the space a shape covers. Which measurements are given?",
+        "level_1": "Pick the right formula: rectangle = length \u00d7 breadth, square = side \u00d7 side, triangle = \u00bd \u00d7 base \u00d7 height. The numbers here: 10, 6.",
+        "level_2": "Put the given numbers into the formula and work it out: ... = ?"
+      }
+    },
+    {
+      "id": "wb_L4_s37_q10",
+      "stem": "If the area of a rectangle is 72 cm\u00b2 and its length is 12 cm, what is the breadth?",
+      "interaction_mode": "mcq",
+      "topic": "Area of Plane Figures",
+      "difficulty_tier": "practice",
+      "question_number": 10,
+      "choices": [
+        "8 cm",
+        "6 cm",
+        "7 cm",
+        "9 cm"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S37",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "Area is the space a shape covers. Which measurements are given?",
+        "level_1": "Pick the right formula: rectangle = length \u00d7 breadth, square = side \u00d7 side, triangle = \u00bd \u00d7 base \u00d7 height. The numbers here: 72, 12.",
+        "level_2": "Put the given numbers into the formula and work it out: ... = ?"
+      }
+    },
+    {
+      "id": "wb_L4_s37_q12",
+      "stem": "The area of a rhombus with diagonals 10 cm and 8 cm is:",
+      "interaction_mode": "mcq",
+      "topic": "Area of Plane Figures",
+      "difficulty_tier": "challenge",
+      "question_number": 12,
+      "choices": [
+        "80 cm\u00b2",
+        "18 cm\u00b2",
+        "40 cm\u00b2",
+        "36 cm\u00b2"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S37",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "Area is the space a shape covers. Which measurements are given?",
+        "level_1": "Pick the right formula: rectangle = length \u00d7 breadth, square = side \u00d7 side, triangle = \u00bd \u00d7 base \u00d7 height. The numbers here: 10, 8.",
+        "level_2": "Put the given numbers into the formula and work it out: ... = ?"
+      }
+    },
+    {
+      "id": "wb_L4_s37_q14",
+      "stem": "The area of a trapezium with parallel sides 8 cm and 12 cm and height 5 cm is:",
+      "interaction_mode": "mcq",
+      "topic": "Area of Plane Figures",
+      "difficulty_tier": "challenge",
+      "question_number": 14,
+      "choices": [
+        "60 cm\u00b2",
+        "100 cm\u00b2",
+        "40 cm\u00b2",
+        "50 cm\u00b2"
+      ],
+      "correct_answer": 3,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S37",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "Area is the space a shape covers. Which measurements are given?",
+        "level_1": "Pick the right formula: rectangle = length \u00d7 breadth, square = side \u00d7 side, triangle = \u00bd \u00d7 base \u00d7 height. The numbers here: 8, 12, 5.",
+        "level_2": "Put the given numbers into the formula and work it out: ... = ?"
+      }
+    },
+    {
+      "id": "wb_L4_s37_q15",
+      "stem": "The area of an equilateral triangle with side 6 cm is:",
+      "interaction_mode": "mcq",
+      "topic": "Area of Plane Figures",
+      "difficulty_tier": "challenge",
+      "question_number": 15,
+      "choices": [
+        "9\u221a3 cm\u00b2",
+        "18 cm\u00b2",
+        "12\u221a3 cm\u00b2",
+        "36 cm\u00b2"
+      ],
+      "correct_answer": 0,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S37",
+      "diagnostics": {},
+      "hint": {
+        "level_0": "Area is the space a shape covers. Which measurements are given?",
+        "level_1": "Pick the right formula: rectangle = length \u00d7 breadth, square = side \u00d7 side, triangle = \u00bd \u00d7 base \u00d7 height. The numbers here: 6.",
+        "level_2": "Put the given numbers into the formula and work it out: ... = ?"
+      }
+    }
+  ]
+}

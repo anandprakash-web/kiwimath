@@ -153,7 +153,7 @@ def create_app() -> FastAPI:
     # -----------------------------------------------------------------------
     ncert_content_dir = Path(os.environ.get(
         "NCERT_CONTENT_DIR",
-        str(Path(__file__).resolve().parent.parent.parent / "content-v2" / "ncert-curriculum"),
+        str(Path(__file__).resolve().parent.parent.parent / "content-live" / "content-v2" / "ncert-curriculum"),
     ))
     if ncert_content_dir.exists():
         app.mount("/static/ncert", StaticFiles(directory=str(ncert_content_dir)), name="ncert_static")
@@ -164,7 +164,7 @@ def create_app() -> FastAPI:
     # -----------------------------------------------------------------------
     singapore_content_dir = Path(os.environ.get(
         "SINGAPORE_CONTENT_DIR",
-        str(Path(__file__).resolve().parent.parent.parent / "content-v2" / "singapore-curriculum"),
+        str(Path(__file__).resolve().parent.parent.parent / "content-live" / "content-v2" / "singapore-curriculum"),
     ))
     if singapore_content_dir.exists():
         app.mount("/static/singapore", StaticFiles(directory=str(singapore_content_dir)), name="singapore_static")
@@ -175,7 +175,7 @@ def create_app() -> FastAPI:
     # -----------------------------------------------------------------------
     uscc_content_dir = Path(os.environ.get(
         "USCC_CONTENT_DIR",
-        str(Path(__file__).resolve().parent.parent.parent / "content-v2" / "us-common-core"),
+        str(Path(__file__).resolve().parent.parent.parent / "content-live" / "content-v2" / "us-common-core"),
     ))
     if uscc_content_dir.exists():
         app.mount("/static/uscc", StaticFiles(directory=str(uscc_content_dir)), name="uscc_static")
@@ -186,7 +186,7 @@ def create_app() -> FastAPI:
     # -----------------------------------------------------------------------
     icse_content_dir = Path(os.environ.get(
         "ICSE_CONTENT_DIR",
-        str(Path(__file__).resolve().parent.parent.parent / "content-v2" / "icse-curriculum"),
+        str(Path(__file__).resolve().parent.parent.parent / "content-live" / "content-v2" / "icse-curriculum"),
     ))
     if icse_content_dir.exists():
         app.mount("/static/icse", StaticFiles(directory=str(icse_content_dir)), name="icse_static")
@@ -197,7 +197,7 @@ def create_app() -> FastAPI:
     # -----------------------------------------------------------------------
     wavebook_svg_dir = Path(os.environ.get(
         "KIWIMATH_V2_CONTENT_DIR",
-        str(Path(__file__).resolve().parent.parent.parent / "content-v2"),
+        str(Path(__file__).resolve().parent.parent.parent / "content-live" / "content-v2"),
     )) / "wavebook" / "svg"
     if wavebook_svg_dir.exists():
         app.mount("/static/wavebook", StaticFiles(directory=str(wavebook_svg_dir)), name="wavebook_static")

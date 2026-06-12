@@ -1,5 +1,10 @@
 # Memory
 
+## ⚠️ REORGANIZED 2026-06-12 — READ FIRST
+- **Canonical content = `content-live/`** (content-live/content-v2 + content-live/content-v4). All question QA/fixes happen ONLY here. Old paths `content-v2/`, `content-v4/` moved under it; deploy.sh/main.py/pre_deploy_check.py updated.
+- **`archive/`** holds everything not served: content-production (never wired, ~97% overlap with live), Benjamin olympiad (QUARANTINED — placeholder answer keys, do not serve), old docs/tools/strays. See archive/ARCHIVE_INDEX.md.
+- Full question QA done 2026-06-12 (QA_FULL_REPORT_2026-06-12.md): 0 critical issues in content-live; 209 unanswerable deleted (recoverable in qa-reports/); hints de-leaked. Security hardening + API auth + Firestore persistence done (FIXES_APPLIED_2026-06-12.md).
+
 ## Me
 Anand Prakash (anand.prakash@vedantu.com), Founder of Kiwimath — adaptive math learning app for K-6 kids. Building with Flutter + FastAPI + Firebase.
 
