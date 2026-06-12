@@ -266,6 +266,7 @@ class _WorksheetListScreenState extends State<WorksheetListScreen> {
   // ── Download All button ────────────────────────────────────────────────
 
   Widget _buildDownloadAllButton(KiwiTierColors colors, KiwiTierTypography typo) {
+    final shape = KiwiTier.forGrade(_selectedGrade).shape;
     final downloaded = _cache.downloadedDays(_selectedGrade);
     final isFullyDownloaded = downloaded.length >= 100;
 
@@ -399,6 +400,7 @@ class _WorksheetListScreenState extends State<WorksheetListScreen> {
   // ══════════════════════════════════════════════════════════════════════
 
   List<Widget> _buildTopicGroupView(KiwiTierColors colors, KiwiTierTypography typo) {
+    final shape = KiwiTier.forGrade(_selectedGrade).shape;
     // Group worksheets by dominant topic
     final groups = <String, List<WorksheetMeta>>{};
     for (final ws in _worksheets) {

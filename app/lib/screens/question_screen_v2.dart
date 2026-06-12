@@ -1996,7 +1996,7 @@ class _ReportQuestionSheetState extends State<_ReportQuestionSheet> {
           backgroundColor: KiwiColors.kiwiGreen,
           behavior: SnackBarBehavior.floating,
           margin: EdgeInsets.fromLTRB(40, 0, 40, 100),
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(_tier.shape.chipRadius - 4)),
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
           duration: const Duration(seconds: 2),
         ),
       );

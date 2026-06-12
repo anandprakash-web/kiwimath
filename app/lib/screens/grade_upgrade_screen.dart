@@ -124,7 +124,7 @@ class _GradeUpgradeScreenState extends State<GradeUpgradeScreen>
                       shape: BoxShape.circle,
                       boxShadow: [
                         BoxShadow(
-                          color: const KiwiColors.gemGold.withOpacity(0.4),
+                          color: KiwiColors.gemGold.withOpacity(0.4),
                           blurRadius: 30,
                           spreadRadius: 5,
                         ),
@@ -262,7 +262,7 @@ class _GradeUpgradeScreenState extends State<GradeUpgradeScreen>
                             borderRadius: BorderRadius.circular(16),
                             boxShadow: [
                               BoxShadow(
-                                color: const KiwiColors.amber.withOpacity(0.4),
+                                color: KiwiColors.gemGold.withOpacity(0.4),
                                 blurRadius: 12,
                                 offset: const Offset(0, 4),
                               ),
@@ -340,13 +340,13 @@ class _GradeUpgradeScreenState extends State<GradeUpgradeScreen>
         border: Border.all(
           color: completed
               ? KiwiColors.kiwiGreen
-              : const KiwiColors.gemGold,
+              : KiwiColors.gemGold,
           width: 3,
         ),
         boxShadow: !completed
             ? [
                 BoxShadow(
-                  color: const KiwiColors.gemGold.withOpacity(0.3),
+                  color: KiwiColors.gemGold.withOpacity(0.3),
                   blurRadius: 12,
                   spreadRadius: 2,
                 ),
@@ -366,7 +366,7 @@ class _GradeUpgradeScreenState extends State<GradeUpgradeScreen>
                 fontWeight: FontWeight.w800,
                 color: completed
                     ? KiwiColors.kiwiGreen
-                    : const KiwiColors.gemGold,
+                    : KiwiColors.gemGold,
               ),
             ),
           ],

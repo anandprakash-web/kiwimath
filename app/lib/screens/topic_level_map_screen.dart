@@ -190,7 +190,7 @@ class TopicLevelMapScreen extends StatelessWidget {
                 ),
                 borderRadius: BorderRadius.circular(tier.shape.chipRadius - 8),
               ),
-              child: const Row(
+              child: Row(
                 mainAxisSize: MainAxisSize.min,
                 children: [
                   Text('\u{1F3C6}', style: TextStyle(fontSize: tier.typography.chipSize)),
@@ -377,7 +377,7 @@ class TopicLevelMapScreen extends StatelessWidget {
                         ),
                       ],
                     ),
-                    child: const Row(
+                    child: Row(
                       mainAxisSize: MainAxisSize.min,
                       children: [
                         Icon(Icons.play_arrow_rounded, size: 16, color: Colors.white),

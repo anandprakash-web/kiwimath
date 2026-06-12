@@ -474,7 +474,7 @@ class _HintBottomSheet extends StatelessWidget {
             width: 40,
             height: 4,
             decoration: BoxDecoration(
-              color: const KiwiColors.textMuted,
+              color: KiwiColors.textMuted,
               borderRadius: BorderRadius.circular(2),
             ),
           ),

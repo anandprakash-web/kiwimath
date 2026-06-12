@@ -362,13 +362,13 @@ class _EnterPinDialogState extends State<_EnterPinDialog> {
                   decoration: BoxDecoration(
                     color: filled
                         ? (_showError
-                            ? const KiwiColors.coral
+                            ? KiwiColors.coral
                             : KiwiColors.kiwiPrimary)
                         : Colors.transparent,
                     shape: BoxShape.circle,
                     border: Border.all(
                       color: _showError
-                          ? const KiwiColors.coral
+                          ? KiwiColors.coral
                           : (filled
                               ? KiwiColors.kiwiPrimary
                               : KiwiColors.textMuted.withOpacity(0.3)),

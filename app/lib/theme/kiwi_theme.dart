@@ -54,6 +54,12 @@ class KiwiColors {
   static const Color streakWarm = Color(0xFFFF8A65);   // Gentle, warm streak color
   static const Color leagueBlue = Color(0xFF2979FF);
 
+  // Warm orange family (encouragement / "not quite" feedback)
+  static const Color warmOrange = Color(0xFFFB8C00);
+  static const Color warmOrangeDark = Color(0xFFE65100);
+  static const Color warmOrangeBg = Color(0xFFFFF3E0);
+  static const Color warmOrangeBorder = Color(0xFFFFE0B2);
+
   // Surfaces
   static const Color background = Color(0xFFFFF8F0);     // Warm cream
   static const Color backgroundDark = Color(0xFFF5EFDF); // Darker cream

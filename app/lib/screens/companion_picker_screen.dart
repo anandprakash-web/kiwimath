@@ -78,7 +78,7 @@ class _CompanionPickerScreenState extends State<CompanionPickerScreen>
       body: Container(
         width: double.infinity,
         height: double.infinity,
-        decoration: const BoxDecoration(
+        decoration: BoxDecoration(
           gradient: LinearGradient(
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
@@ -92,7 +92,7 @@ class _CompanionPickerScreenState extends State<CompanionPickerScreen>
 
               // Title
               Text(
-                ‘Choose your companion!’,
+                'Choose your companion!',
                 style: TextStyle(
                   fontSize: 24,
                   fontWeight: FontWeight.w800,
@@ -101,7 +101,7 @@ class _CompanionPickerScreenState extends State<CompanionPickerScreen>
               ),
               SizedBox(height: KiwiSpacing.sm),
               Text(
-                ‘They’ll help you on your math adventure’,
+                "They'll help you on your math adventure",
                 style: TextStyle(
                   fontSize: 14,
                   color: KiwiColors.kiwiGreenDark,
