@@ -1,0 +1,237 @@
+{
+  "topic_id": "wavebook-integers-and-fractions",
+  "topic_name": "Wavebook: Integers and Fractions",
+  "topic_emoji": "\ud83d\udcd8",
+  "grade": 5,
+  "domain": "wavebook",
+  "source": "wavebook",
+  "total_questions": 12,
+  "difficulty_range": {
+    "min": 0,
+    "max": 0
+  },
+  "questions": [
+    {
+      "id": "wb_L4_s04_q01",
+      "stem": "Which of the following represents fractions in descending order?",
+      "interaction_mode": "mcq",
+      "topic": "Integers and Fractions",
+      "difficulty_tier": "warmup",
+      "question_number": 1,
+      "choices": [
+        "1/2, 3/4, 5/6, 7/8",
+        "7/8, 5/6, 3/4, 1/2",
+        "3/4, 1/2, 7/8, 5/6",
+        "7/8, 5/6, 1/2, 3/4"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S4",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L4_s04_q03",
+      "stem": "What is the simplest form of 0.44?",
+      "interaction_mode": "mcq",
+      "topic": "Integers and Fractions",
+      "difficulty_tier": "warmup",
+      "question_number": 3,
+      "choices": [
+        "11/25",
+        "22/50",
+        "44/100",
+        "4/9"
+      ],
+      "correct_answer": 0,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S4",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L4_s04_q04",
+      "stem": "Which integer lies on the extreme left on the number line among -3, 5, -7, 2?",
+      "interaction_mode": "mcq",
+      "topic": "Integers and Fractions",
+      "difficulty_tier": "warmup",
+      "question_number": 4,
+      "choices": [
+        "-3",
+        "5",
+        "-7",
+        "2"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S4",
+      "svg": "wb_L4_s04_q04.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 350 80\" width=\"350\" height=\"80\" style=\"font-family:Arial,sans-serif\"><line x1=\"40\" y1=\"40\" x2=\"310\" y2=\"40\" stroke=\"#333\" stroke-width=\"2\"/><polygon points=\"35,40 45,35 45,45\" fill=\"#333\"/><polygon points=\"315,40 305,35 305,45\" fill=\"#333\"/><line x1=\"50.0\" y1=\"34\" x2=\"50.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"50.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">2</text><line x1=\"100.0\" y1=\"34\" x2=\"100.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"100.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">3</text><line x1=\"150.0\" y1=\"34\" x2=\"150.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"150.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">4</text><line x1=\"200.0\" y1=\"34\" x2=\"200.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"200.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">5</text><line x1=\"250.0\" y1=\"34\" x2=\"250.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"250.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">6</text><line x1=\"300.0\" y1=\"34\" x2=\"300.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"300.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">7</text><circle cx=\"100.0\" cy=\"40\" r=\"6\" fill=\"#FF6B35\" stroke=\"#333\" stroke-width=\"1\"/></svg>"
+    },
+    {
+      "id": "wb_L4_s04_q05",
+      "stem": "What is the next number in the pattern: -62, -37, -12, ...?",
+      "interaction_mode": "mcq",
+      "topic": "Integers and Fractions",
+      "difficulty_tier": "warmup",
+      "question_number": 5,
+      "choices": [
+        "-13",
+        "0",
+        "13",
+        "25"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S4",
+      "svg": "wb_L4_s04_q05.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg viewBox=\"0 0 230 55\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"30\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"30\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">62</text><circle cx=\"75\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"75\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">37</text><circle cx=\"120\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"120\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">12</text><circle cx=\"165\" cy=\"25\" r=\"18\" fill=\"#FFF3E0\" stroke=\"#F57C00\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"165\" y=\"31\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#F57C00\">?</text></svg>",
+      "visual_alt": "Visual for: What is the next number in the pattern: -62, -37, "
+    },
+    {
+      "id": "wb_L4_s04_q06",
+      "stem": "What integer should be subtracted from -5 to get -12?",
+      "interaction_mode": "mcq",
+      "topic": "Integers and Fractions",
+      "difficulty_tier": "practice",
+      "question_number": 6,
+      "choices": [
+        "7",
+        "-7",
+        "12",
+        "-12"
+      ],
+      "correct_answer": 0,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S4",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L4_s04_q09",
+      "stem": "Which of the following statements about integers is incorrect?",
+      "interaction_mode": "mcq",
+      "topic": "Integers and Fractions",
+      "difficulty_tier": "practice",
+      "question_number": 9,
+      "choices": [
+        "The sum of two positive integers is always positive",
+        "The sum of two negative integers is always negative",
+        "The sum of a positive and negative integer is always negative",
+        "The product of two negative integers is positive"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S4",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L4_s04_q10",
+      "stem": "Which of the following statements about integers is correct?",
+      "interaction_mode": "mcq",
+      "topic": "Integers and Fractions",
+      "difficulty_tier": "practice",
+      "question_number": 10,
+      "choices": [
+        "Every integer is a whole number",
+        "Every whole number is a natural number",
+        "Zero is a positive integer",
+        "Every whole number is an integer"
+      ],
+      "correct_answer": 3,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S4",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L4_s04_q11",
+      "stem": "In a magic square where each row, column and diagonal add up to the same sum, if A and B are missing values, find A and B.",
+      "interaction_mode": "mcq",
+      "topic": "Integers and Fractions",
+      "difficulty_tier": "challenge",
+      "question_number": 11,
+      "choices": [
+        "A = -3, B = -5",
+        "A = -4, B = -7",
+        "A = -2, B = -6",
+        "A = -5, B = -8"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S4",
+      "svg": "wb_L4_s04_q11.svg",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L4_s04_q12",
+      "stem": "In a survey of 240 students, the ratio of students who like hockey to cricket is 3:1. How many students like hockey and how many like cricket?",
+      "interaction_mode": "mcq",
+      "topic": "Integers and Fractions",
+      "difficulty_tier": "challenge",
+      "question_number": 12,
+      "choices": [
+        "180, 60",
+        "120, 40",
+        "200, 40",
+        "160, 80"
+      ],
+      "correct_answer": 0,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S4",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L4_s04_q13",
+      "stem": "From the above survey, if 30 students like both, how many like neither hockey nor cricket?",
+      "interaction_mode": "mcq",
+      "topic": "Integers and Fractions",
+      "difficulty_tier": "challenge",
+      "question_number": 13,
+      "choices": [
+        "20",
+        "40",
+        "10",
+        "30"
+      ],
+      "correct_answer": 3,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S4",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L4_s04_q14",
+      "stem": "Which fraction lies between 3/4 and 5/6?",
+      "interaction_mode": "mcq",
+      "topic": "Integers and Fractions",
+      "difficulty_tier": "challenge",
+      "question_number": 14,
+      "choices": [
+        "2/3",
+        "7/8",
+        "4/5",
+        "1/2"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S4",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L4_s04_q15",
+      "stem": "What is the value of (-1) \u00d7 (-1) \u00d7 (-1) \u00d7 ... (2023 times) + (-1) \u00d7 (-1) \u00d7 (-1) \u00d7 ... (2024 times)?",
+      "interaction_mode": "mcq",
+      "topic": "Integers and Fractions",
+      "difficulty_tier": "challenge",
+      "question_number": 15,
+      "choices": [
+        "2",
+        "-2",
+        "1",
+        "0"
+      ],
+      "correct_answer": 3,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S4",
+      "diagnostics": {}
+    }
+  ]
+}

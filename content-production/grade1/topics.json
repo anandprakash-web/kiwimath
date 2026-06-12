@@ -1,0 +1,151 @@
+{
+  "grade": 1,
+  "total_topics": 16,
+  "total_questions": 6077,
+  "topics": [
+    {
+      "topic_id": "g1-addition",
+      "topic_name": "Addition",
+      "topic_emoji": "\u2795",
+      "domain": "arithmetic",
+      "source": "v4-adaptive",
+      "total_questions": 592,
+      "file": "g1-addition.json"
+    },
+    {
+      "topic_id": "g1-counting",
+      "topic_name": "Counting & Numbers",
+      "topic_emoji": "\ud83d\udd22",
+      "domain": "numbers",
+      "source": "v4-adaptive",
+      "total_questions": 942,
+      "file": "g1-counting.json"
+    },
+    {
+      "topic_id": "g1-measurement",
+      "topic_name": "Measurement",
+      "topic_emoji": "\ud83d\udccf",
+      "domain": "measurement",
+      "source": "v4-adaptive",
+      "total_questions": 195,
+      "file": "g1-measurement.json"
+    },
+    {
+      "topic_id": "g1-patterns",
+      "topic_name": "Patterns & Sequences",
+      "topic_emoji": "\ud83e\udde9",
+      "domain": "numbers",
+      "source": "v4-adaptive",
+      "total_questions": 633,
+      "file": "g1-patterns.json"
+    },
+    {
+      "topic_id": "g1-shapes",
+      "topic_name": "Shapes & Geometry",
+      "topic_emoji": "\ud83d\udcd0",
+      "domain": "geometry",
+      "source": "v4-adaptive",
+      "total_questions": 588,
+      "file": "g1-shapes.json"
+    },
+    {
+      "topic_id": "g1-subtraction",
+      "topic_name": "Subtraction",
+      "topic_emoji": "\u2796",
+      "domain": "arithmetic",
+      "source": "v4-adaptive",
+      "total_questions": 318,
+      "file": "g1-subtraction.json"
+    },
+    {
+      "topic_id": "g1-time-money",
+      "topic_name": "Time & Money",
+      "topic_emoji": "\u23f0",
+      "domain": "measurement",
+      "source": "v4-adaptive",
+      "total_questions": 268,
+      "file": "g1-time-money.json"
+    },
+    {
+      "topic_id": "g1-word-problems",
+      "topic_name": "Word Problems",
+      "topic_emoji": "\ud83d\udcd6",
+      "domain": "arithmetic",
+      "source": "v4-adaptive",
+      "total_questions": 371,
+      "file": "g1-word-problems.json"
+    },
+    {
+      "topic_id": "olympiad-topic-1-counting",
+      "topic_name": "Olympiad: Counting & Observation",
+      "topic_emoji": "\ud83c\udfc5",
+      "domain": "olympiad",
+      "source": "v2-olympiad",
+      "total_questions": 362,
+      "file": "olympiad-topic-1-counting.json"
+    },
+    {
+      "topic_id": "olympiad-topic-2-arithmetic",
+      "topic_name": "Olympiad: Arithmetic & Missing Numbers",
+      "topic_emoji": "\ud83c\udfc5",
+      "domain": "olympiad",
+      "source": "v2-olympiad",
+      "total_questions": 357,
+      "file": "olympiad-topic-2-arithmetic.json"
+    },
+    {
+      "topic_id": "olympiad-topic-3-patterns",
+      "topic_name": "Olympiad: Patterns & Sequences",
+      "topic_emoji": "\ud83c\udfc5",
+      "domain": "olympiad",
+      "source": "v2-olympiad",
+      "total_questions": 267,
+      "file": "olympiad-topic-3-patterns.json"
+    },
+    {
+      "topic_id": "olympiad-topic-4-logic",
+      "topic_name": "Olympiad: Logic & Ordering",
+      "topic_emoji": "\ud83c\udfc5",
+      "domain": "olympiad",
+      "source": "v2-olympiad",
+      "total_questions": 303,
+      "file": "olympiad-topic-4-logic.json"
+    },
+    {
+      "topic_id": "olympiad-topic-5-spatial",
+      "topic_name": "Olympiad: Spatial Reasoning",
+      "topic_emoji": "\ud83c\udfc5",
+      "domain": "olympiad",
+      "source": "v2-olympiad",
+      "total_questions": 187,
+      "file": "olympiad-topic-5-spatial.json"
+    },
+    {
+      "topic_id": "olympiad-topic-6-shapes",
+      "topic_name": "Olympiad: Shapes & Symmetry",
+      "topic_emoji": "\ud83c\udfc5",
+      "domain": "olympiad",
+      "source": "v2-olympiad",
+      "total_questions": 192,
+      "file": "olympiad-topic-6-shapes.json"
+    },
+    {
+      "topic_id": "olympiad-topic-7-word-problems",
+      "topic_name": "Olympiad: Word Problems",
+      "topic_emoji": "\ud83c\udfc5",
+      "domain": "olympiad",
+      "source": "v2-olympiad",
+      "total_questions": 310,
+      "file": "olympiad-topic-7-word-problems.json"
+    },
+    {
+      "topic_id": "olympiad-topic-8-puzzles",
+      "topic_name": "Olympiad: Number Puzzles & Games",
+      "topic_emoji": "\ud83c\udfc5",
+      "domain": "olympiad",
+      "source": "v2-olympiad",
+      "total_questions": 192,
+      "file": "olympiad-topic-8-puzzles.json"
+    }
+  ]
+}

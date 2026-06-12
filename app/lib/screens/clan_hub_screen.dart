@@ -169,58 +169,58 @@ class _ClanHubScreenState extends State<ClanHubScreen>
           _buildHeader(context),
           SliverToBoxAdapter(
             child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 16),
+              padding: EdgeInsets.symmetric(horizontal: KiwiSpacing.lg),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const SizedBox(height: 20),
+                  SizedBox(height: KiwiSpacing.xl),
 
                   // 2. Daily Puzzle Card
                   if (widget.dailyPuzzle != null) ...[
                     _buildDailyPuzzleCard(),
-                    const SizedBox(height: 16),
+                    SizedBox(height: KiwiSpacing.lg),
                   ],
 
                   // 3. Streak & Rewards Row
                   if (widget.streakData != null || widget.rewardData != null) ...[
                     _buildStreakRewardsRow(),
-                    const SizedBox(height: 16),
+                    SizedBox(height: KiwiSpacing.lg),
                   ],
 
                   // 4. Daily Reward Calendar
                   if (widget.rewardData != null &&
                       widget.rewardData!.dailyCalendar.isNotEmpty) ...[
                     _buildDailyRewardCalendar(),
-                    const SizedBox(height: 16),
+                    SizedBox(height: KiwiSpacing.lg),
                   ],
 
                   // 5. League Badge
                   if (widget.leagueStatus != null) ...[
                     _buildLeagueBadge(),
-                    const SizedBox(height: 16),
+                    SizedBox(height: KiwiSpacing.lg),
                   ],
 
                   // 6. Clan Wars Section
                   _buildClanWarsSection(),
-                  const SizedBox(height: 16),
+                  SizedBox(height: KiwiSpacing.lg),
 
                   // 7. Pledge Widget
                   _buildPledgeWidget(),
-                  const SizedBox(height: 16),
+                  SizedBox(height: KiwiSpacing.lg),
 
                   // 8. Squad Activity
                   _buildSquadActivity(),
-                  const SizedBox(height: 16),
+                  SizedBox(height: KiwiSpacing.lg),
 
                   // 9. Picture Unravel
                   if (widget.activeChallenge != null) ...[
                     _buildChallengePreview(),
-                    const SizedBox(height: 16),
+                    SizedBox(height: KiwiSpacing.lg),
                   ],
 
                   // 10. Quick Actions
                   _buildQuickActions(context),
-                  const SizedBox(height: 32),
+                  SizedBox(height: KiwiSpacing.xxl),
                 ],
               ),
             ),
@@ -250,7 +250,7 @@ class _ClanHubScreenState extends State<ClanHubScreen>
           ),
           child: SafeArea(
             child: Padding(
-              padding: const EdgeInsets.fromLTRB(20, 16, 20, 24),
+              padding: EdgeInsets.fromLTRB(KiwiSpacing.xl, KiwiSpacing.lg, KiwiSpacing.xl, KiwiSpacing.xl),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.end,
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -262,7 +262,7 @@ class _ClanHubScreenState extends State<ClanHubScreen>
                         height: 52,
                         decoration: BoxDecoration(
                           color: Colors.white.withOpacity(0.25),
-                          borderRadius: BorderRadius.circular(14),
+                          borderRadius: BorderRadius.circular(KiwiSpacing.md),
                         ),
                         alignment: Alignment.center,
                         child: Text(
@@ -270,7 +270,7 @@ class _ClanHubScreenState extends State<ClanHubScreen>
                           style: const TextStyle(fontSize: 28),
                         ),
                       ),
-                      const SizedBox(width: 14),
+                      SizedBox(width: KiwiSpacing.md),
                       Expanded(
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -285,7 +285,7 @@ class _ClanHubScreenState extends State<ClanHubScreen>
                               maxLines: 1,
                               overflow: TextOverflow.ellipsis,
                             ),
-                            const SizedBox(height: 4),
+                            SizedBox(height: KiwiSpacing.xs),
                             Row(
                               children: [
                                 Container(
@@ -295,7 +295,7 @@ class _ClanHubScreenState extends State<ClanHubScreen>
                                   ),
                                   decoration: BoxDecoration(
                                     color: Colors.white.withOpacity(0.2),
-                                    borderRadius: BorderRadius.circular(20),
+                                    borderRadius: BorderRadius.circular(KiwiSpacing.xl),
                                   ),
                                   child: Text(
                                     '${widget.clan.clanLevel.emoji} ${widget.clan.clanLevel.name}',
@@ -306,7 +306,7 @@ class _ClanHubScreenState extends State<ClanHubScreen>
                                     ),
                                   ),
                                 ),
-                                const SizedBox(width: 10),
+                                SizedBox(width: KiwiSpacing.sm + 2),
                                 Row(
                                   children: [
                                     const Icon(
@@ -314,7 +314,7 @@ class _ClanHubScreenState extends State<ClanHubScreen>
                                       size: 16,
                                       color: Colors.white70,
                                     ),
-                                    const SizedBox(width: 4),
+                                    SizedBox(width: KiwiSpacing.xs),
                                     Text(
                                       '${widget.clan.memberCount} members',
                                       style: const TextStyle(
@@ -352,19 +352,19 @@ class _ClanHubScreenState extends State<ClanHubScreen>
       onTap: isLive ? widget.onSolveDailyPuzzle : null,
       child: Container(
         width: double.infinity,
-        padding: const EdgeInsets.all(20),
+        padding: EdgeInsets.all(KiwiSpacing.xl),
         decoration: BoxDecoration(
           gradient: LinearGradient(
             colors: isLive
-                ? [const Color(0xFFFF6D00), const Color(0xFFFF9100)]
-                : [const Color(0xFF455A64), const Color(0xFF607D8B)],
+                ? [KiwiColors.kiwiPrimary, KiwiColors.pathCurrent]
+                : [KiwiColors.textMid, KiwiColors.textMuted],
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
           ),
-          borderRadius: BorderRadius.circular(18),
+          borderRadius: BorderRadius.circular(KiwiSpacing.lg + 2),
           boxShadow: [
             BoxShadow(
-              color: (isLive ? KiwiColors.kiwiPrimary : Colors.grey)
+              color: (isLive ? KiwiColors.kiwiPrimary : KiwiColors.textMuted)
                   .withOpacity(0.3),
               blurRadius: 16,
               offset: const Offset(0, 6),
@@ -381,7 +381,7 @@ class _ClanHubScreenState extends State<ClanHubScreen>
                   '\u{1F9E9}',
                   style: TextStyle(fontSize: 24),
                 ),
-                const SizedBox(width: 10),
+                SizedBox(width: KiwiSpacing.sm + 2),
                 Expanded(
                   child: Text(
                     'Puzzle of the Day',
@@ -394,13 +394,13 @@ class _ClanHubScreenState extends State<ClanHubScreen>
                 ),
                 if (isLive)
                   Container(
-                    padding: const EdgeInsets.symmetric(
-                      horizontal: 10,
-                      vertical: 4,
+                    padding: EdgeInsets.symmetric(
+                      horizontal: KiwiSpacing.sm + 2,
+                      vertical: KiwiSpacing.xs,
                     ),
                     decoration: BoxDecoration(
                       color: Colors.white.withOpacity(0.25),
-                      borderRadius: BorderRadius.circular(12),
+                      borderRadius: BorderRadius.circular(KiwiSpacing.md),
                     ),
                     child: Row(
                       mainAxisSize: MainAxisSize.min,
@@ -412,7 +412,7 @@ class _ClanHubScreenState extends State<ClanHubScreen>
                             height: 8,
                             decoration: BoxDecoration(
                               shape: BoxShape.circle,
-                              color: Colors.greenAccent
+                              color: KiwiColors.correct
                                   .withOpacity(0.5 + _pulseController.value * 0.5),
                             ),
                           ),
@@ -432,7 +432,7 @@ class _ClanHubScreenState extends State<ClanHubScreen>
                   ),
               ],
             ),
-            const SizedBox(height: 12),
+            SizedBox(height: KiwiSpacing.md),
 
             // Title
             Text(
@@ -443,7 +443,7 @@ class _ClanHubScreenState extends State<ClanHubScreen>
                 color: Colors.white,
               ),
             ),
-            const SizedBox(height: 6),
+            SizedBox(height: KiwiSpacing.xs + 2),
 
             // Story snippet
             Text(
@@ -456,7 +456,7 @@ class _ClanHubScreenState extends State<ClanHubScreen>
                 height: 1.4,
               ),
             ),
-            const SizedBox(height: 14),
+            SizedBox(height: KiwiSpacing.md + 2),
 
             // Countdown or streak row
             Row(
@@ -467,7 +467,7 @@ class _ClanHubScreenState extends State<ClanHubScreen>
                     size: 18,
                     color: Colors.white70,
                   ),
-                  const SizedBox(width: 6),
+                  SizedBox(width: KiwiSpacing.xs + 2),
                   Text(
                     _countdown.inSeconds > 0
                         ? _formatCountdown(_countdown)
@@ -484,7 +484,7 @@ class _ClanHubScreenState extends State<ClanHubScreen>
                     '\u{1F525}',
                     style: TextStyle(fontSize: 18),
                   ),
-                  const SizedBox(width: 4),
+                  SizedBox(width: KiwiSpacing.xs),
                   Text(
                     'x ${widget.streakData!.currentStreak}',
                     style: const TextStyle(
@@ -505,19 +505,19 @@ class _ClanHubScreenState extends State<ClanHubScreen>
                 ),
               ],
             ),
-            const SizedBox(height: 14),
+            SizedBox(height: KiwiSpacing.md + 2),
 
             // CTA button
             SizedBox(
               width: double.infinity,
               child: Material(
                 color: Colors.white,
-                borderRadius: BorderRadius.circular(14),
+                borderRadius: BorderRadius.circular(KiwiSpacing.md + 2),
                 child: InkWell(
-                  borderRadius: BorderRadius.circular(14),
+                  borderRadius: BorderRadius.circular(KiwiSpacing.md + 2),
                   onTap: isLive ? widget.onSolveDailyPuzzle : null,
                   child: Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 14),
+                    padding: EdgeInsets.symmetric(vertical: KiwiSpacing.md + 2),
                     child: Center(
                       child: Text(
                         isLive ? 'Solve Now  \u{27A1}' : 'Coming at 4 PM  \u{23F0}',
@@ -564,7 +564,7 @@ class _ClanHubScreenState extends State<ClanHubScreen>
                 showFreezeButton: false,
               ),
             ),
-          if (streak != null) const SizedBox(width: 10),
+          if (streak != null) SizedBox(width: KiwiSpacing.sm + 2),
 
           // Gems count
           if (rewards != null)
@@ -573,7 +573,7 @@ class _ClanHubScreenState extends State<ClanHubScreen>
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   const Text('\u{1F48E}', style: TextStyle(fontSize: 28)),
-                  const SizedBox(height: 4),
+                  SizedBox(height: KiwiSpacing.xs),
                   Text(
                     _formatNumber(rewards.totalGems),
                     style: const TextStyle(
@@ -593,7 +593,7 @@ class _ClanHubScreenState extends State<ClanHubScreen>
                 ],
               ),
             ),
-          if (rewards != null) const SizedBox(width: 10),
+          if (rewards != null) SizedBox(width: KiwiSpacing.sm + 2),
 
           // Mystery box (G3+)
           if (grade >= 3 && rewards != null && rewards.mysteryBoxesAvailable > 0)
@@ -604,7 +604,7 @@ class _ClanHubScreenState extends State<ClanHubScreen>
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     const Text('\u{1F381}', style: TextStyle(fontSize: 28)),
-                    const SizedBox(height: 4),
+                    SizedBox(height: KiwiSpacing.xs),
                     Text(
                       'x${rewards.mysteryBoxesAvailable}',
                       style: const TextStyle(
@@ -633,7 +633,7 @@ class _ClanHubScreenState extends State<ClanHubScreen>
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   const Text('\u{1F4D6}', style: TextStyle(fontSize: 28)),
-                  const SizedBox(height: 4),
+                  SizedBox(height: KiwiSpacing.xs),
                   Text(
                     '${(rewards.stickerAlbumProgress * 30).round()}/30',
                     style: const TextStyle(
@@ -661,10 +661,10 @@ class _ClanHubScreenState extends State<ClanHubScreen>
   Widget _streakRewardTile({required Widget child}) {
     return Container(
       width: 100,
-      padding: const EdgeInsets.all(8),
+      padding: EdgeInsets.all(KiwiSpacing.sm),
       decoration: BoxDecoration(
         color: KiwiColors.cardBg,
-        borderRadius: BorderRadius.circular(16),
+        borderRadius: BorderRadius.circular(KiwiSpacing.lg),
         boxShadow: [
           BoxShadow(
             color: Colors.black.withOpacity(0.05),
@@ -706,15 +706,15 @@ class _ClanHubScreenState extends State<ClanHubScreen>
                 GestureDetector(
                   onTap: widget.onClaimDailyReward,
                   child: Container(
-                    padding: const EdgeInsets.symmetric(
-                      horizontal: 12,
-                      vertical: 5,
+                    padding: EdgeInsets.symmetric(
+                      horizontal: KiwiSpacing.md,
+                      vertical: KiwiSpacing.xs + 1,
                     ),
                     decoration: BoxDecoration(
                       gradient: const LinearGradient(
                         colors: [KiwiColors.kiwiPrimary, KiwiColors.kiwiPrimaryDark],
                       ),
-                      borderRadius: BorderRadius.circular(12),
+                      borderRadius: BorderRadius.circular(KiwiSpacing.md),
                     ),
                     child: const Text(
                       'Claim!',
@@ -728,13 +728,13 @@ class _ClanHubScreenState extends State<ClanHubScreen>
                 ),
             ],
           ),
-          const SizedBox(height: 12),
+          SizedBox(height: KiwiSpacing.md),
           SizedBox(
             height: 72,
             child: Row(
               children: [
                 for (int i = 0; i < calendar.length && i < 7; i++) ...[
-                  if (i > 0) const SizedBox(width: 6),
+                  if (i > 0) SizedBox(width: KiwiSpacing.xs + 2),
                   Expanded(child: _buildDayCircle(calendar[i], i + 1)),
                 ],
               ],
@@ -769,7 +769,7 @@ class _ClanHubScreenState extends State<ClanHubScreen>
       opacity = 0.4;
     } else {
       bgColor = KiwiColors.cardBg;
-      borderColor = Colors.grey.shade300;
+      borderColor = KiwiColors.pathLocked;
       opacity = 0.6;
     }
 
@@ -790,7 +790,7 @@ class _ClanHubScreenState extends State<ClanHubScreen>
                 ? const Icon(Icons.check_rounded, size: 20, color: KiwiColors.kiwiGreen)
                 : Text(emoji, style: const TextStyle(fontSize: 18)),
           ),
-          const SizedBox(height: 4),
+          SizedBox(height: KiwiSpacing.xs),
           Text(
             'D$dayNum',
             style: TextStyle(
@@ -824,7 +824,7 @@ class _ClanHubScreenState extends State<ClanHubScreen>
                 _leagueEmoji(league.league),
                 style: const TextStyle(fontSize: 28),
               ),
-              const SizedBox(width: 10),
+              SizedBox(width: KiwiSpacing.sm + 2),
               Expanded(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -850,10 +850,10 @@ class _ClanHubScreenState extends State<ClanHubScreen>
                 ),
               ),
               Container(
-                padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+                padding: EdgeInsets.symmetric(horizontal: KiwiSpacing.sm + 2, vertical: KiwiSpacing.xs + 1),
                 decoration: BoxDecoration(
                   color: KiwiColors.leagueBlue.withOpacity(0.1),
-                  borderRadius: BorderRadius.circular(10),
+                  borderRadius: BorderRadius.circular(KiwiSpacing.sm + 2),
                 ),
                 child: Text(
                   'S${league.seasonNumber}',
@@ -866,11 +866,11 @@ class _ClanHubScreenState extends State<ClanHubScreen>
               ),
             ],
           ),
-          const SizedBox(height: 14),
+          SizedBox(height: KiwiSpacing.md + 2),
 
           // Progress bar
           ClipRRect(
-            borderRadius: BorderRadius.circular(8),
+            borderRadius: BorderRadius.circular(KiwiSpacing.sm),
             child: LinearProgressIndicator(
               value: progress,
               minHeight: 12,
@@ -878,7 +878,7 @@ class _ClanHubScreenState extends State<ClanHubScreen>
               valueColor: const AlwaysStoppedAnimation<Color>(KiwiColors.leagueBlue),
             ),
           ),
-          const SizedBox(height: 6),
+          SizedBox(height: KiwiSpacing.xs + 2),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
@@ -919,7 +919,7 @@ class _ClanHubScreenState extends State<ClanHubScreen>
               '\u{2694}\u{FE0F}',
               style: TextStyle(fontSize: 32),
             ),
-            const SizedBox(height: 8),
+            SizedBox(height: KiwiSpacing.sm),
             const Text(
               'Clan Wars',
               style: TextStyle(
@@ -928,7 +928,7 @@ class _ClanHubScreenState extends State<ClanHubScreen>
                 color: KiwiColors.textDark,
               ),
             ),
-            const SizedBox(height: 6),
+            SizedBox(height: KiwiSpacing.xs + 2),
             Text(
               war?.startTime.isNotEmpty == true
                   ? 'Next war starts ${war!.startTime}'
@@ -952,17 +952,17 @@ class _ClanHubScreenState extends State<ClanHubScreen>
 
     return Container(
       width: double.infinity,
-      padding: const EdgeInsets.all(18),
+      padding: EdgeInsets.all(KiwiSpacing.lg + 2),
       decoration: BoxDecoration(
         gradient: const LinearGradient(
-          colors: [Color(0xFFD32F2F), Color(0xFFB71C1C)],
+          colors: [KiwiColors.coral, Color(0xFFB71C1C)], // decorative — war red gradient
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
         ),
-        borderRadius: BorderRadius.circular(18),
+        borderRadius: BorderRadius.circular(KiwiSpacing.lg + 2),
         boxShadow: [
           BoxShadow(
-            color: Colors.red.withOpacity(0.3),
+            color: KiwiColors.coral.withOpacity(0.3),
             blurRadius: 16,
             offset: const Offset(0, 6),
           ),
@@ -981,12 +981,12 @@ class _ClanHubScreenState extends State<ClanHubScreen>
                   height: 10,
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
-                    color: Colors.redAccent
+                    color: KiwiColors.coral
                         .withOpacity(0.5 + _pulseController.value * 0.5),
                   ),
                 ),
               ),
-              const SizedBox(width: 8),
+              SizedBox(width: KiwiSpacing.sm),
               const Text(
                 '\u{2694}\u{FE0F} CLAN WAR',
                 style: TextStyle(
@@ -998,7 +998,7 @@ class _ClanHubScreenState extends State<ClanHubScreen>
               ),
             ],
           ),
-          const SizedBox(height: 16),
+          SizedBox(height: KiwiSpacing.lg),
 
           // VS matchup
           Row(
@@ -1011,7 +1011,7 @@ class _ClanHubScreenState extends State<ClanHubScreen>
                     widget.clan.crest.emoji,
                     style: const TextStyle(fontSize: 36),
                   ),
-                  const SizedBox(height: 4),
+                  SizedBox(height: KiwiSpacing.xs),
                   Text(
                     widget.clan.name,
                     style: const TextStyle(
@@ -1062,7 +1062,7 @@ class _ClanHubScreenState extends State<ClanHubScreen>
                     opponentEmoji,
                     style: const TextStyle(fontSize: 36),
                   ),
-                  const SizedBox(height: 4),
+                  SizedBox(height: KiwiSpacing.xs),
                   Text(
                     opponentName,
                     style: const TextStyle(
@@ -1077,26 +1077,26 @@ class _ClanHubScreenState extends State<ClanHubScreen>
               ),
             ],
           ),
-          const SizedBox(height: 12),
+          SizedBox(height: KiwiSpacing.md),
 
           // Comeback boost
           if (isLosing && war.comebackBoost > 1.0) ...[
             Container(
-              padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 6),
+              padding: EdgeInsets.symmetric(horizontal: KiwiSpacing.md + 2, vertical: KiwiSpacing.xs + 2),
               decoration: BoxDecoration(
                 color: Colors.white.withOpacity(0.15),
-                borderRadius: BorderRadius.circular(10),
+                borderRadius: BorderRadius.circular(KiwiSpacing.sm + 2),
               ),
               child: Text(
                 '\u{1F680} ${war.comebackBoost}x UNDERDOG BOOST!',
                 style: const TextStyle(
                   fontSize: 13,
                   fontWeight: FontWeight.w800,
-                  color: Colors.amberAccent,
+                  color: KiwiColors.gemGold,
                 ),
               ),
             ),
-            const SizedBox(height: 12),
+            SizedBox(height: KiwiSpacing.md),
           ],
 
           // Battle Now button
@@ -1104,19 +1104,19 @@ class _ClanHubScreenState extends State<ClanHubScreen>
             width: double.infinity,
             child: Material(
               color: Colors.white,
-              borderRadius: BorderRadius.circular(14),
+              borderRadius: BorderRadius.circular(KiwiSpacing.md + 2),
               child: InkWell(
-                borderRadius: BorderRadius.circular(14),
+                borderRadius: BorderRadius.circular(KiwiSpacing.md + 2),
                 onTap: widget.onOpenClanWar,
-                child: const Padding(
-                  padding: EdgeInsets.symmetric(vertical: 14),
+                child: Padding(
+                  padding: EdgeInsets.symmetric(vertical: KiwiSpacing.md + 2),
                   child: Center(
                     child: Text(
                       'Battle Now  \u{2694}\u{FE0F}',
                       style: TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.w800,
-                        color: Color(0xFFD32F2F),
+                        color: KiwiColors.coral,
                       ),
                     ),
                   ),
@@ -1143,7 +1143,7 @@ class _ClanHubScreenState extends State<ClanHubScreen>
           child: Row(
             children: [
               const Text('\u{1F91D}', style: TextStyle(fontSize: 28)),
-              const SizedBox(width: 12),
+              SizedBox(width: KiwiSpacing.md),
               const Expanded(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -1188,7 +1188,7 @@ class _ClanHubScreenState extends State<ClanHubScreen>
           Row(
             children: [
               const Text('\u{1F91D}', style: TextStyle(fontSize: 22)),
-              const SizedBox(width: 8),
+              SizedBox(width: KiwiSpacing.sm),
               const Expanded(
                 child: Text(
                   'My Pledge',
@@ -1200,10 +1200,10 @@ class _ClanHubScreenState extends State<ClanHubScreen>
                 ),
               ),
               Container(
-                padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
+                padding: EdgeInsets.symmetric(horizontal: KiwiSpacing.sm, vertical: 3),
                 decoration: BoxDecoration(
                   color: KiwiColors.kiwiGreenLight,
-                  borderRadius: BorderRadius.circular(8),
+                  borderRadius: BorderRadius.circular(KiwiSpacing.sm),
                 ),
                 child: Text(
                   'Active',
@@ -1216,7 +1216,7 @@ class _ClanHubScreenState extends State<ClanHubScreen>
               ),
             ],
           ),
-          const SizedBox(height: 10),
+          SizedBox(height: KiwiSpacing.sm + 2),
           Text(
             '${pledge.targetPuzzles} puzzles/day for ${pledge.durationDays} days',
             style: const TextStyle(
@@ -1225,14 +1225,14 @@ class _ClanHubScreenState extends State<ClanHubScreen>
               color: KiwiColors.textMid,
             ),
           ),
-          const SizedBox(height: 10),
+          SizedBox(height: KiwiSpacing.sm + 2),
 
           // Overall progress
           Row(
             children: [
               Expanded(
                 child: ClipRRect(
-                  borderRadius: BorderRadius.circular(6),
+                  borderRadius: BorderRadius.circular(KiwiSpacing.xs + 2),
                   child: LinearProgressIndicator(
                     value: dayProgress,
                     minHeight: 10,
@@ -1242,7 +1242,7 @@ class _ClanHubScreenState extends State<ClanHubScreen>
                   ),
                 ),
               ),
-              const SizedBox(width: 10),
+              SizedBox(width: KiwiSpacing.sm + 2),
               Text(
                 '${pledge.currentPuzzles}/${pledge.targetPuzzles * pledge.durationDays}',
                 style: const TextStyle(
@@ -1282,12 +1282,12 @@ class _ClanHubScreenState extends State<ClanHubScreen>
               ),
             ),
             if (hasInactive) ...[
-              const SizedBox(width: 8),
+              SizedBox(width: KiwiSpacing.sm),
               Container(
-                padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
+                padding: EdgeInsets.symmetric(horizontal: KiwiSpacing.sm, vertical: 3),
                 decoration: BoxDecoration(
                   color: KiwiColors.wrongBg,
-                  borderRadius: BorderRadius.circular(8),
+                  borderRadius: BorderRadius.circular(KiwiSpacing.sm),
                 ),
                 child: Text(
                   'We miss ${inactiveMembers.length}!',
@@ -1301,14 +1301,14 @@ class _ClanHubScreenState extends State<ClanHubScreen>
             ],
           ],
         ),
-        const SizedBox(height: 10),
+        SizedBox(height: KiwiSpacing.sm + 2),
         widget.squadMembers.isNotEmpty
             ? SquadActivityBar(members: widget.squadMembers)
             : Container(
                 height: 64,
                 decoration: BoxDecoration(
                   color: KiwiColors.cardBg,
-                  borderRadius: BorderRadius.circular(14),
+                  borderRadius: BorderRadius.circular(KiwiSpacing.md + 2),
                   boxShadow: [
                     BoxShadow(
                       color: Colors.black.withOpacity(0.05),
@@ -1356,13 +1356,13 @@ class _ClanHubScreenState extends State<ClanHubScreen>
                 ),
                 const Spacer(),
                 Container(
-                  padding: const EdgeInsets.symmetric(
-                    horizontal: 8,
+                  padding: EdgeInsets.symmetric(
+                    horizontal: KiwiSpacing.sm,
                     vertical: 3,
                   ),
                   decoration: BoxDecoration(
                     color: KiwiColors.kiwiPrimaryLight,
-                    borderRadius: BorderRadius.circular(10),
+                    borderRadius: BorderRadius.circular(KiwiSpacing.sm + 2),
                   ),
                   child: Text(
                     '${challenge.daysRemaining}d left',
@@ -1375,7 +1375,7 @@ class _ClanHubScreenState extends State<ClanHubScreen>
                 ),
               ],
             ),
-            const SizedBox(height: 8),
+            SizedBox(height: KiwiSpacing.sm),
             Text(
               challenge.title,
               style: const TextStyle(
@@ -1384,12 +1384,12 @@ class _ClanHubScreenState extends State<ClanHubScreen>
                 color: KiwiColors.textDark,
               ),
             ),
-            const SizedBox(height: 10),
+            SizedBox(height: KiwiSpacing.sm + 2),
             Row(
               children: [
                 Expanded(
                   child: ClipRRect(
-                    borderRadius: BorderRadius.circular(6),
+                    borderRadius: BorderRadius.circular(KiwiSpacing.xs + 2),
                     child: LinearProgressIndicator(
                       value: (progress?.revealPercentage ?? 0) / 100,
                       minHeight: 10,
@@ -1400,7 +1400,7 @@ class _ClanHubScreenState extends State<ClanHubScreen>
                     ),
                   ),
                 ),
-                const SizedBox(width: 10),
+                SizedBox(width: KiwiSpacing.sm + 2),
                 Text(
                   '$revealPct revealed',
                   style: const TextStyle(
@@ -1411,7 +1411,7 @@ class _ClanHubScreenState extends State<ClanHubScreen>
                 ),
               ],
             ),
-            const SizedBox(height: 8),
+            SizedBox(height: KiwiSpacing.sm),
             Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
@@ -1446,7 +1446,7 @@ class _ClanHubScreenState extends State<ClanHubScreen>
             onTap: widget.onOpenLeaderboard,
           ),
         ),
-        const SizedBox(width: 10),
+        SizedBox(width: KiwiSpacing.sm + 2),
         Expanded(
           child: _actionButton(
             icon: Icons.emoji_events_rounded,
@@ -1455,12 +1455,12 @@ class _ClanHubScreenState extends State<ClanHubScreen>
             onTap: widget.onOpenRewards,
           ),
         ),
-        const SizedBox(width: 10),
+        SizedBox(width: KiwiSpacing.sm + 2),
         Expanded(
           child: _actionButton(
             icon: Icons.exit_to_app_rounded,
             label: 'Leave Clan',
-            color: Colors.redAccent,
+            color: KiwiColors.coral,
             onTap: () => _confirmLeaveClan(context),
           ),
         ),
@@ -1476,18 +1476,18 @@ class _ClanHubScreenState extends State<ClanHubScreen>
   }) {
     return Material(
       color: KiwiColors.cardBg,
-      borderRadius: BorderRadius.circular(14),
+      borderRadius: BorderRadius.circular(KiwiSpacing.md + 2),
       elevation: 1,
       shadowColor: Colors.black12,
       child: InkWell(
-        borderRadius: BorderRadius.circular(14),
+        borderRadius: BorderRadius.circular(KiwiSpacing.md + 2),
         onTap: onTap,
         child: Padding(
-          padding: const EdgeInsets.symmetric(vertical: 16),
+          padding: EdgeInsets.symmetric(vertical: KiwiSpacing.lg),
           child: Column(
             children: [
               Icon(icon, color: color, size: 26),
-              const SizedBox(height: 6),
+              SizedBox(height: KiwiSpacing.xs + 2),
               Text(
                 label,
                 style: TextStyle(
@@ -1508,7 +1508,7 @@ class _ClanHubScreenState extends State<ClanHubScreen>
     showDialog(
       context: context,
       builder: (ctx) => AlertDialog(
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(KiwiSpacing.lg)),
         title: const Text(
           'Leave Clan?',
           style: TextStyle(fontWeight: FontWeight.w800),
@@ -1537,7 +1537,7 @@ class _ClanHubScreenState extends State<ClanHubScreen>
             child: const Text(
               'Leave',
               style: TextStyle(
-                color: Colors.redAccent,
+                color: KiwiColors.coral,
                 fontWeight: FontWeight.w700,
               ),
             ),
@@ -1554,10 +1554,10 @@ class _ClanHubScreenState extends State<ClanHubScreen>
   Widget _card({required Widget child}) {
     return Container(
       width: double.infinity,
-      padding: const EdgeInsets.all(16),
+      padding: EdgeInsets.all(KiwiSpacing.lg),
       decoration: BoxDecoration(
         color: KiwiColors.cardBg,
-        borderRadius: BorderRadius.circular(14),
+        borderRadius: BorderRadius.circular(KiwiSpacing.md + 2),
         boxShadow: [
           BoxShadow(
             color: Colors.black.withOpacity(0.05),

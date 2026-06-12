@@ -159,7 +159,7 @@ class _ClanJoinScreenState extends State<ClanJoinScreen>
               _buildHeader(),
               Expanded(
                 child: SingleChildScrollView(
-                  padding: const EdgeInsets.symmetric(horizontal: 24),
+                  padding: EdgeInsets.symmetric(horizontal: KiwiSpacing.xl),
                   child: _phase == _JoinPhase.parentGate
                       ? _buildParentGate()
                       : _buildCodeEntry(),
@@ -177,7 +177,7 @@ class _ClanJoinScreenState extends State<ClanJoinScreen>
   Widget _buildHeader() {
     return Container(
       width: double.infinity,
-      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 12),
+      padding: EdgeInsets.symmetric(horizontal: KiwiSpacing.sm, vertical: KiwiSpacing.md),
       decoration: const BoxDecoration(
         gradient: LinearGradient(
           colors: [KiwiColors.kiwiPrimary, KiwiColors.kiwiPrimaryDark],
@@ -214,14 +214,14 @@ class _ClanJoinScreenState extends State<ClanJoinScreen>
 
   Widget _buildParentGate() {
     return Padding(
-      padding: const EdgeInsets.only(top: 48),
+      padding: EdgeInsets.only(top: KiwiSpacing.xxl + KiwiSpacing.lg),
       child: Column(
         children: [
           Container(
-            padding: const EdgeInsets.all(24),
+            padding: EdgeInsets.all(KiwiSpacing.xl),
             decoration: BoxDecoration(
               color: KiwiColors.cardBg,
-              borderRadius: BorderRadius.circular(14),
+              borderRadius: BorderRadius.circular(KiwiSpacing.md + 2),
               boxShadow: [
                 BoxShadow(
                   color: Colors.black.withOpacity(0.06),
@@ -234,7 +234,7 @@ class _ClanJoinScreenState extends State<ClanJoinScreen>
               children: [
                 const Icon(Icons.lock_outline_rounded,
                     size: 40, color: KiwiColors.kiwiPrimary),
-                const SizedBox(height: 12),
+                SizedBox(height: KiwiSpacing.md),
                 const Text(
                   'Parent Check',
                   style: TextStyle(
@@ -243,7 +243,7 @@ class _ClanJoinScreenState extends State<ClanJoinScreen>
                     color: KiwiColors.textDark,
                   ),
                 ),
-                const SizedBox(height: 8),
+                SizedBox(height: KiwiSpacing.sm),
                 const Text(
                   'Ask a parent to answer this before joining a clan.',
                   textAlign: TextAlign.center,
@@ -252,7 +252,7 @@ class _ClanJoinScreenState extends State<ClanJoinScreen>
                     color: KiwiColors.textMid,
                   ),
                 ),
-                const SizedBox(height: 24),
+                SizedBox(height: KiwiSpacing.xl),
                 Text(
                   'What is $_a × $_b?',
                   style: const TextStyle(
@@ -261,7 +261,7 @@ class _ClanJoinScreenState extends State<ClanJoinScreen>
                     color: KiwiColors.textDark,
                   ),
                 ),
-                const SizedBox(height: 16),
+                SizedBox(height: KiwiSpacing.lg),
                 SizedBox(
                   width: 120,
                   child: TextField(
@@ -280,16 +280,16 @@ class _ClanJoinScreenState extends State<ClanJoinScreen>
                       filled: true,
                       fillColor: KiwiColors.kiwiPrimaryLight,
                       border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(14),
+                        borderRadius: BorderRadius.circular(KiwiSpacing.md + 2),
                         borderSide: BorderSide.none,
                       ),
-                      contentPadding: const EdgeInsets.symmetric(vertical: 12),
+                      contentPadding: EdgeInsets.symmetric(vertical: KiwiSpacing.md),
                     ),
                     onSubmitted: (_) => _checkGate(),
                   ),
                 ),
                 if (_gateWrong) ...[
-                  const SizedBox(height: 12),
+                  SizedBox(height: KiwiSpacing.md),
                   const Text(
                     'Not quite — try again!',
                     style: TextStyle(
@@ -298,7 +298,7 @@ class _ClanJoinScreenState extends State<ClanJoinScreen>
                     ),
                   ),
                 ],
-                const SizedBox(height: 20),
+                SizedBox(height: KiwiSpacing.xl),
                 SizedBox(
                   width: double.infinity,
                   height: 48,
@@ -308,7 +308,7 @@ class _ClanJoinScreenState extends State<ClanJoinScreen>
                       backgroundColor: KiwiColors.kiwiPrimary,
                       foregroundColor: Colors.white,
                       shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(14),
+                        borderRadius: BorderRadius.circular(KiwiSpacing.md + 2),
                       ),
                       elevation: 0,
                     ),
@@ -333,7 +333,7 @@ class _ClanJoinScreenState extends State<ClanJoinScreen>
 
   Widget _buildCodeEntry() {
     return Padding(
-      padding: const EdgeInsets.only(top: 32),
+      padding: EdgeInsets.only(top: KiwiSpacing.xxl),
       child: Column(
         children: [
           // Instruction
@@ -345,19 +345,19 @@ class _ClanJoinScreenState extends State<ClanJoinScreen>
               color: KiwiColors.textDark,
             ),
           ),
-          const SizedBox(height: 8),
+          SizedBox(height: KiwiSpacing.sm),
           const Text(
             'Ask your clan leader for the 9-character code',
             style: TextStyle(fontSize: 14, color: KiwiColors.textMid),
           ),
-          const SizedBox(height: 24),
+          SizedBox(height: KiwiSpacing.xl),
 
           // Code input field
           Container(
-            padding: const EdgeInsets.all(20),
+            padding: EdgeInsets.all(KiwiSpacing.xl),
             decoration: BoxDecoration(
               color: KiwiColors.cardBg,
-              borderRadius: BorderRadius.circular(14),
+              borderRadius: BorderRadius.circular(KiwiSpacing.md + 2),
               boxShadow: [
                 BoxShadow(
                   color: Colors.black.withOpacity(0.06),
@@ -390,12 +390,12 @@ class _ClanJoinScreenState extends State<ClanJoinScreen>
                     filled: true,
                     fillColor: KiwiColors.kiwiPrimaryLight,
                     border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(14),
+                      borderRadius: BorderRadius.circular(KiwiSpacing.md + 2),
                       borderSide: BorderSide.none,
                     ),
-                    contentPadding: const EdgeInsets.symmetric(
-                      vertical: 16,
-                      horizontal: 12,
+                    contentPadding: EdgeInsets.symmetric(
+                      vertical: KiwiSpacing.lg,
+                      horizontal: KiwiSpacing.md,
                     ),
                   ),
                   inputFormatters: [
@@ -405,7 +405,7 @@ class _ClanJoinScreenState extends State<ClanJoinScreen>
                 ),
                 // Error message
                 if (_error != _JoinError.none) ...[
-                  const SizedBox(height: 12),
+                  SizedBox(height: KiwiSpacing.md),
                   _buildErrorBanner(),
                 ],
               ],
@@ -414,11 +414,11 @@ class _ClanJoinScreenState extends State<ClanJoinScreen>
 
           // Clan preview card (mock — appears when code is complete)
           if (_showPreview) ...[
-            const SizedBox(height: 20),
+            SizedBox(height: KiwiSpacing.xl),
             _buildClanPreviewCard(),
           ],
 
-          const SizedBox(height: 28),
+          SizedBox(height: KiwiSpacing.xxl - 4),
 
           // Join button
           SizedBox(
@@ -431,7 +431,7 @@ class _ClanJoinScreenState extends State<ClanJoinScreen>
                 foregroundColor: Colors.white,
                 disabledBackgroundColor: KiwiColors.kiwiPrimary.withOpacity(0.4),
                 shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(14),
+                  borderRadius: BorderRadius.circular(KiwiSpacing.md + 2),
                 ),
                 elevation: _showPreview ? 4 : 0,
               ),
@@ -454,7 +454,7 @@ class _ClanJoinScreenState extends State<ClanJoinScreen>
             ),
           ),
 
-          const SizedBox(height: 40),
+          SizedBox(height: KiwiSpacing.xxl + KiwiSpacing.sm),
         ],
       ),
     );
@@ -466,10 +466,10 @@ class _ClanJoinScreenState extends State<ClanJoinScreen>
     return AnimatedContainer(
       duration: const Duration(milliseconds: 300),
       curve: Curves.easeOut,
-      padding: const EdgeInsets.all(16),
+      padding: EdgeInsets.all(KiwiSpacing.lg),
       decoration: BoxDecoration(
         color: KiwiColors.cardBg,
-        borderRadius: BorderRadius.circular(14),
+        borderRadius: BorderRadius.circular(KiwiSpacing.md + 2),
         border: Border.all(
           color: KiwiColors.kiwiPrimary.withOpacity(0.3),
           width: 2,
@@ -494,13 +494,13 @@ class _ClanJoinScreenState extends State<ClanJoinScreen>
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
               ),
-              borderRadius: BorderRadius.circular(14),
+              borderRadius: BorderRadius.circular(KiwiSpacing.md + 2),
             ),
             child: const Center(
               child: Text('⚡', style: TextStyle(fontSize: 28)),
             ),
           ),
-          const SizedBox(width: 14),
+          SizedBox(width: KiwiSpacing.md + 2),
           // Clan info
           Expanded(
             child: Column(
@@ -514,11 +514,11 @@ class _ClanJoinScreenState extends State<ClanJoinScreen>
                     color: KiwiColors.textDark,
                   ),
                 ),
-                const SizedBox(height: 4),
+                SizedBox(height: KiwiSpacing.xs),
                 Row(
                   children: [
                     _infoChip(Icons.people_alt_rounded, '8/15 members'),
-                    const SizedBox(width: 10),
+                    SizedBox(width: KiwiSpacing.sm + 2),
                     _infoChip(Icons.school_rounded, 'Grade ${widget.userGrade}'),
                   ],
                 ),
@@ -549,7 +549,7 @@ class _ClanJoinScreenState extends State<ClanJoinScreen>
       mainAxisSize: MainAxisSize.min,
       children: [
         Icon(icon, size: 14, color: KiwiColors.textMuted),
-        const SizedBox(width: 4),
+        SizedBox(width: KiwiSpacing.xs),
         Text(
           label,
           style: const TextStyle(
@@ -604,16 +604,16 @@ class _ClanJoinScreenState extends State<ClanJoinScreen>
     }
 
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
+      padding: EdgeInsets.symmetric(horizontal: KiwiSpacing.md + 2, vertical: KiwiSpacing.sm + 2),
       decoration: BoxDecoration(
         color: color.withOpacity(0.08),
-        borderRadius: BorderRadius.circular(10),
+        borderRadius: BorderRadius.circular(KiwiSpacing.sm + 2),
         border: Border.all(color: color.withOpacity(0.3)),
       ),
       child: Row(
         children: [
           Icon(icon, size: 20, color: color),
-          const SizedBox(width: 10),
+          SizedBox(width: KiwiSpacing.sm + 2),
           Expanded(
             child: Text(
               message,

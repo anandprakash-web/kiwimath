@@ -1,4 +1,8 @@
 """
+DEPRECATED — Olympiad v1 API (May 2026)
+Replaced by /olympiad/v2/ endpoints in api/olympiad_v2.py
+Keep running for backward compatibility until Flutter v2 migration is complete.
+
 Olympiad Worksheet API — serves daily olympiad worksheets with on-demand SVG rendering.
 
 Endpoints:

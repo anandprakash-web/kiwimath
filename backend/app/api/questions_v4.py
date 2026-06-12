@@ -53,6 +53,8 @@ class ChapterSummary(BaseModel):
 class QuestionOut(BaseModel):
     id: str
     stem: str
+    # SECURITY: never populated at fetch time — answers must not be leaked
+    # to the client before the student answers.
     correct_value: Any = None
     options: Any = None
     visual_svg: Optional[str] = None
@@ -146,7 +148,7 @@ def next_question(
     return QuestionOut(
         id=q.id,
         stem=q.stem,
-        correct_value=q.correct_value,
+        correct_value=None,  # SECURITY: answer not sent at fetch time
         options=q.options,
         visual_svg=q.visual_svg,
         visual_requirement=q.visual_requirement,
@@ -170,7 +172,7 @@ def get_question(question_id: str):
     return QuestionOut(
         id=q.id,
         stem=q.stem,
-        correct_value=q.correct_value,
+        correct_value=None,  # SECURITY: answer not sent at fetch time
         options=q.options,
         visual_svg=q.visual_svg,
         visual_requirement=q.visual_requirement,
@@ -232,7 +234,7 @@ def chapter_questions(curriculum: str, grade: int, chapter: str):
             {
                 "id": q.id,
                 "stem": q.stem,
-                "correct_value": q.correct_value,
+                # SECURITY: correct_value intentionally omitted at fetch time
                 "options": q.options,
                 "skill_id": q.skill_id,
                 "difficulty_tier": q.difficulty_tier,
@@ -283,6 +285,9 @@ def download_offline_bundle(
     Returns `size` questions centered around the student's ability (theta),
     sorted by difficulty so the Flutter app can serve them in order.
     The app should sync results back via POST /v4/offline/sync when online.
+
+    NOTE: this bundle intentionally includes correct answers — offline play
+    requires client-side checking. It is auth-gated like every other endpoint.
     """
     from datetime import datetime, timezone
 

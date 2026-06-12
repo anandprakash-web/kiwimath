@@ -40,6 +40,28 @@ class UnsafeExpressionError(ValueError):
 Number = Union[int, float]
 
 
+_POW_MAX_BASE = 1e6
+_POW_MAX_EXPONENT = 100
+
+
+def _safe_pow(a, b):
+    """Exponentiation with a resource guard.
+
+    Unbounded ** lets a malicious/buggy formula like 9**9**9 burn CPU and
+    memory. Cap base and exponent to ranges K-6 content will never exceed.
+    """
+    if isinstance(a, (int, float)) and isinstance(b, (int, float)):
+        if abs(a) > _POW_MAX_BASE:
+            raise UnsafeExpressionError(
+                f"power base {a} exceeds limit ({_POW_MAX_BASE:g})"
+            )
+        if abs(b) > _POW_MAX_EXPONENT:
+            raise UnsafeExpressionError(
+                f"power exponent {b} exceeds limit ({_POW_MAX_EXPONENT})"
+            )
+    return a ** b
+
+
 _ALLOWED_BINOPS = {
     ast.Add: lambda a, b: a + b,
     ast.Sub: lambda a, b: a - b,
@@ -47,7 +69,7 @@ _ALLOWED_BINOPS = {
     ast.Div: lambda a, b: a / b,
     ast.FloorDiv: lambda a, b: a // b,
     ast.Mod: lambda a, b: a % b,
-    ast.Pow: lambda a, b: a ** b,
+    ast.Pow: _safe_pow,
 }
 
 _ALLOWED_UNARYOPS = {

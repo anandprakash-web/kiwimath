@@ -1,0 +1,25 @@
+{
+  "grade": 6,
+  "source": "Math Kangaroo Benjamin (Grades 5-6)",
+  "years_covered": "2009-2025",
+  "total_papers": 17,
+  "questions_per_paper": 24,
+  "original_questions": 379,
+  "variant_questions": 505,
+  "total_questions": 884,
+  "files": {
+    "benjamin_g6_questions.json": "379 original Benjamin questions",
+    "benjamin_variants.json": "505 generated variants (needs answer verification)"
+  },
+  "variant_types": {
+    "step_down": "Simplified version \u2014 smaller numbers, fewer steps",
+    "step_up": "Harder version \u2014 larger numbers, extra constraints",
+    "similar": "Same structure with different values"
+  },
+  "notes": [
+    "Original questions need correct_answer verification (currently set to first choice as placeholder)",
+    "Variant questions need answer recalculation (choices are inherited from originals, not recomputed)",
+    "Visual questions (needs_visual=true) need SVG generation from PDF images",
+    "Topic split files also available: benjamin_topic{1-8}_{name}.json"
+  ]
+}

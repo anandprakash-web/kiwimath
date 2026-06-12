@@ -1,0 +1,296 @@
+{
+  "topic_id": "wavebook-average-and-pie-chart",
+  "topic_name": "Wavebook: Average and Pie Chart",
+  "topic_emoji": "\ud83d\udcd8",
+  "grade": 5,
+  "domain": "wavebook",
+  "source": "wavebook",
+  "total_questions": 15,
+  "difficulty_range": {
+    "min": 0,
+    "max": 0
+  },
+  "questions": [
+    {
+      "id": "wb_L4_s20_q01",
+      "stem": "The average of first 5 natural numbers is:",
+      "interaction_mode": "mcq",
+      "topic": "Average and Pie Chart",
+      "difficulty_tier": "warmup",
+      "question_number": 1,
+      "choices": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "correct_answer": 0,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S20",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L4_s20_q02",
+      "stem": "The average of 10, 12, 14, 16, 18 is:",
+      "interaction_mode": "mcq",
+      "topic": "Average and Pie Chart",
+      "difficulty_tier": "warmup",
+      "question_number": 2,
+      "choices": [
+        "12",
+        "14",
+        "15",
+        "16"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S20",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L4_s20_q03",
+      "stem": "If the average of 5 numbers is 20, what is their sum?",
+      "interaction_mode": "mcq",
+      "topic": "Average and Pie Chart",
+      "difficulty_tier": "warmup",
+      "question_number": 3,
+      "choices": [
+        "25",
+        "50",
+        "100",
+        "200"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S20",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L4_s20_q04",
+      "stem": "The average of first 10 even numbers is:",
+      "interaction_mode": "mcq",
+      "topic": "Average and Pie Chart",
+      "difficulty_tier": "warmup",
+      "question_number": 4,
+      "choices": [
+        "11",
+        "10",
+        "12",
+        "9"
+      ],
+      "correct_answer": 0,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S20",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L4_s20_q05",
+      "stem": "In a pie chart, the central angle for a sector representing 25% is:",
+      "interaction_mode": "mcq",
+      "topic": "Average and Pie Chart",
+      "difficulty_tier": "warmup",
+      "question_number": 5,
+      "choices": [
+        "25\u00b0",
+        "90\u00b0",
+        "120\u00b0",
+        "180\u00b0"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S20",
+      "svg": "wb_L4_s20_q05.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 240\" width=\"340\" height=\"240\" style=\"font-family:Arial,sans-serif\"><path d=\"M130,120 L130.0,40.0 A80,80 0 0 1 177.0,184.7 Z\" fill=\"#42A5F5\" stroke=\"white\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"40\" width=\"12\" height=\"12\" fill=\"#42A5F5\"/><text x=\"258\" y=\"50\" font-size=\"11\" fill=\"#333\">Part A</text><path d=\"M130,120 L177.0,184.7 A80,80 0 0 1 53.9,144.7 Z\" fill=\"#66BB6A\" stroke=\"white\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"60\" width=\"12\" height=\"12\" fill=\"#66BB6A\"/><text x=\"258\" y=\"70\" font-size=\"11\" fill=\"#333\">Part B</text><path d=\"M130,120 L53.9,144.7 A80,80 0 0 1 83.0,55.3 Z\" fill=\"#FF7043\" stroke=\"white\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"80\" width=\"12\" height=\"12\" fill=\"#FF7043\"/><text x=\"258\" y=\"90\" font-size=\"11\" fill=\"#333\">Part C</text><path d=\"M130,120 L83.0,55.3 A80,80 0 0 1 130.0,40.0 Z\" fill=\"#AB47BC\" stroke=\"white\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"100\" width=\"12\" height=\"12\" fill=\"#AB47BC\"/><text x=\"258\" y=\"110\" font-size=\"11\" fill=\"#333\">Part D</text></svg>"
+    },
+    {
+      "id": "wb_L4_s20_q06",
+      "stem": "The average of three consecutive odd numbers is 15. The largest number is:",
+      "interaction_mode": "mcq",
+      "topic": "Average and Pie Chart",
+      "difficulty_tier": "practice",
+      "question_number": 6,
+      "choices": [
+        "13",
+        "15",
+        "17",
+        "19"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S20",
+      "svg": "wb_L4_s20_q06.svg",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L4_s20_q07",
+      "stem": "In a pie chart, if a sector has a central angle of 72\u00b0, what percentage does it represent?",
+      "interaction_mode": "mcq",
+      "topic": "Average and Pie Chart",
+      "difficulty_tier": "practice",
+      "question_number": 7,
+      "choices": [
+        "25%",
+        "15%",
+        "30%",
+        "20%"
+      ],
+      "correct_answer": 3,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S20",
+      "svg": "wb_L4_s20_q07.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 240\" width=\"340\" height=\"240\" style=\"font-family:Arial,sans-serif\"><path d=\"M130,120 L130.0,40.0 A80,80 0 0 1 177.0,184.7 Z\" fill=\"#42A5F5\" stroke=\"white\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"40\" width=\"12\" height=\"12\" fill=\"#42A5F5\"/><text x=\"258\" y=\"50\" font-size=\"11\" fill=\"#333\">Part A</text><path d=\"M130,120 L177.0,184.7 A80,80 0 0 1 53.9,144.7 Z\" fill=\"#66BB6A\" stroke=\"white\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"60\" width=\"12\" height=\"12\" fill=\"#66BB6A\"/><text x=\"258\" y=\"70\" font-size=\"11\" fill=\"#333\">Part B</text><path d=\"M130,120 L53.9,144.7 A80,80 0 0 1 83.0,55.3 Z\" fill=\"#FF7043\" stroke=\"white\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"80\" width=\"12\" height=\"12\" fill=\"#FF7043\"/><text x=\"258\" y=\"90\" font-size=\"11\" fill=\"#333\">Part C</text><path d=\"M130,120 L83.0,55.3 A80,80 0 0 1 130.0,40.0 Z\" fill=\"#AB47BC\" stroke=\"white\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"100\" width=\"12\" height=\"12\" fill=\"#AB47BC\"/><text x=\"258\" y=\"110\" font-size=\"11\" fill=\"#333\">Part D</text></svg>"
+    },
+    {
+      "id": "wb_L4_s20_q08",
+      "stem": "The average weight of 4 students is 40 kg. If a new student weighing 50 kg joins, the new average is:",
+      "interaction_mode": "mcq",
+      "topic": "Average and Pie Chart",
+      "difficulty_tier": "practice",
+      "question_number": 8,
+      "choices": [
+        "44 kg",
+        "43 kg",
+        "42 kg",
+        "45 kg"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S20",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L4_s20_q09",
+      "stem": "In a pie chart showing monthly expenses, if food takes up 120\u00b0 and rent takes up 90\u00b0, what fraction of the total does food represent?",
+      "interaction_mode": "mcq",
+      "topic": "Average and Pie Chart",
+      "difficulty_tier": "practice",
+      "question_number": 9,
+      "choices": [
+        "1/4",
+        "1/2",
+        "2/5",
+        "1/3"
+      ],
+      "correct_answer": 3,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S20",
+      "svg": "wb_L4_s20_q09.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 240\" width=\"340\" height=\"240\" style=\"font-family:Arial,sans-serif\"><path d=\"M130,120 L130.0,40.0 A80,80 0 0 1 199.3,160.0 Z\" fill=\"#42A5F5\" stroke=\"white\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"40\" width=\"12\" height=\"12\" fill=\"#42A5F5\"/><text x=\"258\" y=\"50\" font-size=\"11\" fill=\"#333\">food</text><path d=\"M130,120 L199.3,160.0 A80,80 0 0 1 90.0,189.3 Z\" fill=\"#66BB6A\" stroke=\"white\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"60\" width=\"12\" height=\"12\" fill=\"#66BB6A\"/><text x=\"258\" y=\"70\" font-size=\"11\" fill=\"#333\">rent</text><path d=\"M130,120 L90.0,189.3 A80,80 0 0 1 130.0,40.0 Z\" fill=\"#FF7043\" stroke=\"white\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"80\" width=\"12\" height=\"12\" fill=\"#FF7043\"/><text x=\"258\" y=\"90\" font-size=\"11\" fill=\"#333\">Other</text></svg>"
+    },
+    {
+      "id": "wb_L4_s20_q10",
+      "stem": "The average of 6 numbers is 30. If one number is removed, the average becomes 25. The removed number is:",
+      "interaction_mode": "mcq",
+      "topic": "Average and Pie Chart",
+      "difficulty_tier": "practice",
+      "question_number": 10,
+      "choices": [
+        "30",
+        "35",
+        "50",
+        "55"
+      ],
+      "correct_answer": 3,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S20",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L4_s20_q11",
+      "stem": "In a pie chart, the total of all central angles is:",
+      "interaction_mode": "mcq",
+      "topic": "Average and Pie Chart",
+      "difficulty_tier": "challenge",
+      "question_number": 11,
+      "choices": [
+        "180\u00b0",
+        "270\u00b0",
+        "360\u00b0",
+        "90\u00b0"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S20",
+      "svg": "wb_L4_s20_q11.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 240\" width=\"340\" height=\"240\" style=\"font-family:Arial,sans-serif\"><path d=\"M130,120 L130.0,40.0 A80,80 0 0 1 177.0,184.7 Z\" fill=\"#42A5F5\" stroke=\"white\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"40\" width=\"12\" height=\"12\" fill=\"#42A5F5\"/><text x=\"258\" y=\"50\" font-size=\"11\" fill=\"#333\">Part A</text><path d=\"M130,120 L177.0,184.7 A80,80 0 0 1 53.9,144.7 Z\" fill=\"#66BB6A\" stroke=\"white\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"60\" width=\"12\" height=\"12\" fill=\"#66BB6A\"/><text x=\"258\" y=\"70\" font-size=\"11\" fill=\"#333\">Part B</text><path d=\"M130,120 L53.9,144.7 A80,80 0 0 1 83.0,55.3 Z\" fill=\"#FF7043\" stroke=\"white\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"80\" width=\"12\" height=\"12\" fill=\"#FF7043\"/><text x=\"258\" y=\"90\" font-size=\"11\" fill=\"#333\">Part C</text><path d=\"M130,120 L83.0,55.3 A80,80 0 0 1 130.0,40.0 Z\" fill=\"#AB47BC\" stroke=\"white\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"100\" width=\"12\" height=\"12\" fill=\"#AB47BC\"/><text x=\"258\" y=\"110\" font-size=\"11\" fill=\"#333\">Part D</text></svg>"
+    },
+    {
+      "id": "wb_L4_s20_q12",
+      "stem": "The average marks of a student in 4 subjects is 75. If the marks in the 5th subject are 95, the new average is:",
+      "interaction_mode": "mcq",
+      "topic": "Average and Pie Chart",
+      "difficulty_tier": "challenge",
+      "question_number": 12,
+      "choices": [
+        "79",
+        "80",
+        "81",
+        "82"
+      ],
+      "correct_answer": 0,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S20",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L4_s20_q13",
+      "stem": "A batsman has an average of 40 runs in 10 innings. How many runs must he score in the 11th innings to raise his average to 42?",
+      "interaction_mode": "mcq",
+      "topic": "Average and Pie Chart",
+      "difficulty_tier": "challenge",
+      "question_number": 13,
+      "choices": [
+        "60",
+        "62",
+        "64",
+        "66"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S20",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L4_s20_q14",
+      "stem": "In a pie chart, if 'games' is represented by a sector of 54\u00b0, and total students are 400, how many students chose games?",
+      "interaction_mode": "mcq",
+      "topic": "Average and Pie Chart",
+      "difficulty_tier": "challenge",
+      "question_number": 14,
+      "choices": [
+        "40",
+        "50",
+        "54",
+        "60"
+      ],
+      "correct_answer": 3,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S20",
+      "svg": "wb_L4_s20_q14.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 240\" width=\"340\" height=\"240\" style=\"font-family:Arial,sans-serif\"><path d=\"M130,120 L130.0,40.0 A80,80 0 0 1 177.0,184.7 Z\" fill=\"#42A5F5\" stroke=\"white\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"40\" width=\"12\" height=\"12\" fill=\"#42A5F5\"/><text x=\"258\" y=\"50\" font-size=\"11\" fill=\"#333\">Part A</text><path d=\"M130,120 L177.0,184.7 A80,80 0 0 1 53.9,144.7 Z\" fill=\"#66BB6A\" stroke=\"white\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"60\" width=\"12\" height=\"12\" fill=\"#66BB6A\"/><text x=\"258\" y=\"70\" font-size=\"11\" fill=\"#333\">Part B</text><path d=\"M130,120 L53.9,144.7 A80,80 0 0 1 83.0,55.3 Z\" fill=\"#FF7043\" stroke=\"white\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"80\" width=\"12\" height=\"12\" fill=\"#FF7043\"/><text x=\"258\" y=\"90\" font-size=\"11\" fill=\"#333\">Part C</text><path d=\"M130,120 L83.0,55.3 A80,80 0 0 1 130.0,40.0 Z\" fill=\"#AB47BC\" stroke=\"white\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"100\" width=\"12\" height=\"12\" fill=\"#AB47BC\"/><text x=\"258\" y=\"110\" font-size=\"11\" fill=\"#333\">Part D</text></svg>"
+    },
+    {
+      "id": "wb_L4_s20_q15",
+      "stem": "The average of first 7 multiples of 3 is:",
+      "interaction_mode": "mcq",
+      "topic": "Average and Pie Chart",
+      "difficulty_tier": "challenge",
+      "question_number": 15,
+      "choices": [
+        "9",
+        "12",
+        "15",
+        "21"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S20",
+      "diagnostics": {}
+    }
+  ]
+}

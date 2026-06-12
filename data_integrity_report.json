@@ -1,0 +1,55 @@
+{
+  "generated": "2026-05-16T14:16:48.190559",
+  "summary": {
+    "total_files": 105,
+    "total_questions": 30167,
+    "unique_ids": 30167,
+    "id_collisions": 0,
+    "cross_file_duplicates": 0,
+    "duplicate_choices": 0,
+    "invalid_svgs": 0,
+    "issues_found": 0
+  },
+  "question_types": {
+    "mcq": 27112,
+    "integer": 3055
+  },
+  "coverage": {
+    "svg_visuals": 18796,
+    "hints": 29622,
+    "explanations": 29622
+  },
+  "svg_by_requirement": {
+    "none": {
+      "total": 16331,
+      "with_svg": 8844,
+      "coverage": "54%"
+    },
+    "optional": {
+      "total": 9907,
+      "with_svg": 6092,
+      "coverage": "61%"
+    },
+    "required": {
+      "total": 2823,
+      "with_svg": 2823,
+      "coverage": "100%"
+    },
+    "pending_manual": {
+      "total": 69,
+      "with_svg": 0,
+      "coverage": "0%"
+    },
+    "essential": {
+      "total": 1025,
+      "with_svg": 1025,
+      "coverage": "100%"
+    },
+    "recommended": {
+      "total": 12,
+      "with_svg": 12,
+      "coverage": "100%"
+    }
+  },
+  "verdict": "ALL CHECKS PASSED"
+}

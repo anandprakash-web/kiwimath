@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 /// Kiwimath design tokens — v7.0 play-first kids' brand.
 ///
@@ -173,7 +174,9 @@ class KiwiTierTypography {
   final double buttonSize;
   final double streakNumberSize;
   final FontWeight headlineWeight;
-  final String fontFamily;
+
+  /// Logical font key: 'nunito' (junior) or 'poppins' (senior).
+  final String _fontKey;
 
   const KiwiTierTypography({
     required this.headlineSize,
@@ -183,8 +186,15 @@ class KiwiTierTypography {
     required this.buttonSize,
     required this.streakNumberSize,
     required this.headlineWeight,
-    required this.fontFamily,
-  });
+    required String fontKey,
+  }) : _fontKey = fontKey;
+
+  /// Resolved google_fonts family name — safe to pass to
+  /// `TextStyle(fontFamily: ...)` because google_fonts registers the loaded
+  /// font under this exact name. Falls back to the plain family string.
+  String get fontFamily => _fontKey == 'poppins'
+      ? (GoogleFonts.poppins().fontFamily ?? 'Poppins')
+      : (GoogleFonts.nunito().fontFamily ?? 'Nunito');
 
   /// K-2: Larger, rounder, friendlier.
   static const junior = KiwiTierTypography(
@@ -195,7 +205,7 @@ class KiwiTierTypography {
     buttonSize: 17,
     streakNumberSize: 40,
     headlineWeight: FontWeight.w800,
-    fontFamily: 'Nunito',
+    fontKey: 'nunito',
   );
 
   /// 3-5: More compact, sharper, mature.
@@ -207,7 +217,7 @@ class KiwiTierTypography {
     buttonSize: 15,
     streakNumberSize: 34,
     headlineWeight: FontWeight.w700,
-    fontFamily: 'Poppins',
+    fontKey: 'poppins',
   );
 }
 
@@ -281,6 +291,22 @@ class KiwiTier {
 }
 
 // ===========================================================================
+// Spacing scale — consistent 4px grid
+// ===========================================================================
+class KiwiSpacing {
+  static const double xs = 4;
+  static const double sm = 8;
+  static const double md = 12;
+  static const double lg = 16;
+  static const double xl = 24;
+  static const double xxl = 32;
+
+  static const EdgeInsets screenPadding = EdgeInsets.symmetric(horizontal: 16, vertical: 12);
+  static const EdgeInsets cardMargin = EdgeInsets.symmetric(horizontal: 16, vertical: 6);
+  static const EdgeInsets sectionPadding = EdgeInsets.fromLTRB(16, 16, 16, 8);
+}
+
+// ===========================================================================
 // Theme builder (for MaterialApp)
 // ===========================================================================
 ThemeData kiwiTheme({int grade = 1}) {
@@ -296,27 +322,47 @@ ThemeData kiwiTheme({int grade = 1}) {
       primary: c.primary,
       brightness: Brightness.light,
     ),
-    textTheme: TextTheme(
-      headlineLarge: TextStyle(
+    // Subtle page transitions — long-stable builders on both platforms.
+    pageTransitionsTheme: const PageTransitionsTheme(
+      builders: {
+        TargetPlatform.android: FadeUpwardsPageTransitionsBuilder(),
+        TargetPlatform.iOS: CupertinoPageTransitionsBuilder(),
+        TargetPlatform.macOS: CupertinoPageTransitionsBuilder(),
+      },
+    ),
+    // Nunito everywhere by default, Baloo 2 for display/headlines —
+    // friendly, rounded kids' typography via google_fonts.
+    textTheme: GoogleFonts.nunitoTextTheme().copyWith(
+      displayLarge: GoogleFonts.baloo2(
+        fontSize: t.headlineSize + 12,
+        fontWeight: t.headlineWeight,
+        color: c.textPrimary,
+      ),
+      displayMedium: GoogleFonts.baloo2(
+        fontSize: t.headlineSize + 8,
+        fontWeight: t.headlineWeight,
+        color: c.textPrimary,
+      ),
+      headlineLarge: GoogleFonts.baloo2(
         fontSize: t.headlineSize + 4,
         fontWeight: t.headlineWeight,
         color: c.textPrimary,
       ),
-      headlineMedium: TextStyle(
+      headlineMedium: GoogleFonts.baloo2(
         fontSize: t.bodySize + 2,
         fontWeight: FontWeight.w600,
         color: c.textPrimary,
         height: 1.45,
       ),
-      bodyLarge: TextStyle(
+      bodyLarge: GoogleFonts.nunito(
         fontSize: t.bodySize,
         color: c.textPrimary,
       ),
-      bodyMedium: TextStyle(
+      bodyMedium: GoogleFonts.nunito(
         fontSize: t.bodySize - 2,
         color: c.textPrimary,
       ),
-      labelSmall: TextStyle(
+      labelSmall: GoogleFonts.nunito(
         fontSize: t.chipSize - 1,
         fontWeight: FontWeight.w600,
         color: c.textSecondary,

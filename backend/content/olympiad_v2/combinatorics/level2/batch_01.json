@@ -1,0 +1,842 @@
+[
+  {
+    "id": "comb-l2-pm-001",
+    "topic": "permutations",
+    "stem": "How many 3-letter words can you make from the letters A, B, C using each letter exactly once?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: For the first letter, we have 3 choices (A, B, or C).\nStep 2: For the second letter, we have 2 remaining choices.\nStep 3: For the third letter, we have 1 remaining choice.\nStep 4: Total arrangements = 3 \u00d7 2 \u00d7 1 = 6.\nThe words are: ABC, ACB, BAC, BCA, CAB, CBA.",
+    "difficulty": 1,
+    "tags": [
+      "combinatorics",
+      "level2"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "comb-l2-pm-002",
+    "topic": "permutations",
+    "stem": "How many different ways can 4 children stand in a line for a photo?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: The first position can be filled by any of the 4 children.\nStep 2: The second position can be filled by any of the remaining 3 children.\nStep 3: The third position can be filled by any of the remaining 2 children.\nStep 4: The last position is filled by the 1 remaining child.\nStep 5: Total = 4 \u00d7 3 \u00d7 2 \u00d7 1 = 24 ways.",
+    "difficulty": 1,
+    "tags": [
+      "combinatorics",
+      "level2"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "comb-l2-pm-003",
+    "topic": "permutations",
+    "stem": "How many routes are there from corner A to corner B on a 3\u00d72 grid if you can only move right or down?",
+    "visual_svg": "<svg viewBox='0 0 250 200' xmlns='http://www.w3.org/2000/svg'><rect width='250' height='200' fill='#f9f9f9' rx='8'/><line x1='30' y1='30' x2='30' y2='150' stroke='#333' stroke-width='1.5'/><line x1='90' y1='30' x2='90' y2='150' stroke='#333' stroke-width='1.5'/><line x1='150' y1='30' x2='150' y2='150' stroke='#333' stroke-width='1.5'/><line x1='210' y1='30' x2='210' y2='150' stroke='#333' stroke-width='1.5'/><line x1='30' y1='30' x2='210' y2='30' stroke='#333' stroke-width='1.5'/><line x1='30' y1='90' x2='210' y2='90' stroke='#333' stroke-width='1.5'/><line x1='30' y1='150' x2='210' y2='150' stroke='#333' stroke-width='1.5'/><circle cx='30' cy='30' r='6' fill='#e74c3c'/><text x='20' y='22' font-size='14' font-weight='bold' fill='#e74c3c'>A</text><circle cx='210' cy='150' r='6' fill='#2ecc71'/><text x='215' y='165' font-size='14' font-weight='bold' fill='#2ecc71'>B</text></svg>",
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: To go from A to B on a 3\u00d72 grid, we must move 3 steps right and 2 steps down \u2014 a total of 5 steps.\nStep 2: We need to choose which 2 of the 5 steps are 'down' (the rest are 'right').\nStep 3: The number of ways = C(5,2) = 5!/(2!\u00d73!) = (5\u00d74)/(2\u00d71) = 10.\nAnswer: 10 routes.",
+    "difficulty": 2,
+    "tags": [
+      "combinatorics",
+      "level2"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 10
+  },
+  {
+    "id": "comb-l2-pm-004",
+    "topic": "permutations",
+    "stem": "How many 2-digit numbers can you make using the digits 1, 2, 3 if no digit is repeated?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: For the tens digit, we have 3 choices (1, 2, or 3).\nStep 2: For the units digit, we have 2 remaining choices.\nStep 3: Total = 3 \u00d7 2 = 6.\nThe numbers are: 12, 13, 21, 23, 31, 32.",
+    "difficulty": 1,
+    "tags": [
+      "combinatorics",
+      "level2"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "comb-l2-pm-005",
+    "topic": "permutations",
+    "stem": "Five books are placed on a shelf. In how many ways can you arrange the first and last books (the ones in the middle stay fixed)?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: We need to choose which book goes first \u2014 there are 5 options.\nStep 2: We then need to choose which of the remaining 4 books goes last.\nStep 3: The 3 middle positions are filled by the remaining books in a fixed order.\nStep 4: Total = 5 \u00d7 4 = 20 ways.",
+    "difficulty": 2,
+    "tags": [
+      "combinatorics",
+      "level2"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "comb-l2-pm-006",
+    "topic": "permutations",
+    "stem": "How many different 3-letter arrangements can be made from the letters in the word 'MATH' using each letter at most once?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: We have 4 letters (M, A, T, H) and want to arrange 3 of them.\nStep 2: First position: 4 choices.\nStep 3: Second position: 3 remaining choices.\nStep 4: Third position: 2 remaining choices.\nStep 5: Total = 4 \u00d7 3 \u00d7 2 = 24 arrangements.",
+    "difficulty": 2,
+    "tags": [
+      "combinatorics",
+      "level2"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "comb-l2-pm-007",
+    "topic": "permutations",
+    "stem": "How many routes are there from corner A to corner B on a 2\u00d72 grid if you can only move right or down?",
+    "visual_svg": "<svg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'><rect width='200' height='200' fill='#f9f9f9' rx='8'/><line x1='30' y1='30' x2='30' y2='150' stroke='#333' stroke-width='1.5'/><line x1='90' y1='30' x2='90' y2='150' stroke='#333' stroke-width='1.5'/><line x1='150' y1='30' x2='150' y2='150' stroke='#333' stroke-width='1.5'/><line x1='30' y1='30' x2='150' y2='30' stroke='#333' stroke-width='1.5'/><line x1='30' y1='90' x2='150' y2='90' stroke='#333' stroke-width='1.5'/><line x1='30' y1='150' x2='150' y2='150' stroke='#333' stroke-width='1.5'/><circle cx='30' cy='30' r='6' fill='#e74c3c'/><text x='15' y='22' font-size='14' font-weight='bold' fill='#e74c3c'>A</text><circle cx='150' cy='150' r='6' fill='#2ecc71'/><text x='155' y='165' font-size='14' font-weight='bold' fill='#2ecc71'>B</text></svg>",
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: From A to B on a 2\u00d72 grid, we must go 2 steps right and 2 steps down \u2014 a total of 4 steps.\nStep 2: We choose which 2 of the 4 steps are 'down'.\nStep 3: C(4,2) = 4!/(2!\u00d72!) = 6.\nAnswer: 6 routes.",
+    "difficulty": 2,
+    "tags": [
+      "combinatorics",
+      "level2"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 6
+  },
+  {
+    "id": "comb-l2-pm-008",
+    "topic": "permutations",
+    "stem": "Three friends \u2014 Ravi, Sita, and Meena \u2014 are seated in a row. If Ravi must sit on the left end, how many seating arrangements are possible?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: Ravi is fixed on the left end \u2014 1 way for his seat.\nStep 2: The remaining 2 friends (Sita and Meena) can sit in the other 2 seats in 2! = 2 ways.\nStep 3: Total = 1 \u00d7 2 = 2 arrangements.\nThey are: Ravi-Sita-Meena and Ravi-Meena-Sita.",
+    "difficulty": 1,
+    "tags": [
+      "combinatorics",
+      "level2"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "comb-l2-pm-009",
+    "topic": "permutations",
+    "stem": "A flag is made of 3 horizontal stripes. You have 5 different colors to choose from, and no color can repeat. How many different flags can you make?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: For the top stripe, choose 1 of 5 colors.\nStep 2: For the middle stripe, choose 1 of the remaining 4 colors.\nStep 3: For the bottom stripe, choose 1 of the remaining 3 colors.\nStep 4: Total = 5 \u00d7 4 \u00d7 3 = 60 flags.",
+    "difficulty": 2,
+    "tags": [
+      "combinatorics",
+      "level2"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "comb-l2-pm-010",
+    "topic": "permutations",
+    "stem": "How many routes are there from corner A to corner B on a 3\u00d71 grid (3 columns, 1 row) if you can only move right or down?",
+    "visual_svg": "<svg viewBox='0 0 250 120' xmlns='http://www.w3.org/2000/svg'><rect width='250' height='120' fill='#f9f9f9' rx='8'/><line x1='30' y1='30' x2='210' y2='30' stroke='#333' stroke-width='1.5'/><line x1='30' y1='80' x2='210' y2='80' stroke='#333' stroke-width='1.5'/><line x1='30' y1='30' x2='30' y2='80' stroke='#333' stroke-width='1.5'/><line x1='90' y1='30' x2='90' y2='80' stroke='#333' stroke-width='1.5'/><line x1='150' y1='30' x2='150' y2='80' stroke='#333' stroke-width='1.5'/><line x1='210' y1='30' x2='210' y2='80' stroke='#333' stroke-width='1.5'/><circle cx='30' cy='30' r='5' fill='#e74c3c'/><text x='15' y='22' font-size='13' font-weight='bold' fill='#e74c3c'>A</text><circle cx='210' cy='80' r='5' fill='#2ecc71'/><text x='215' y='90' font-size='13' font-weight='bold' fill='#2ecc71'>B</text></svg>",
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: We must go 3 steps right and 1 step down \u2014 4 steps total.\nStep 2: We choose which 1 of the 4 steps is 'down'.\nStep 3: C(4,1) = 4.\nAnswer: 4 routes.",
+    "difficulty": 1,
+    "tags": [
+      "combinatorics",
+      "level2"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 4
+  },
+  {
+    "id": "comb-l2-cm-001",
+    "topic": "combinations",
+    "stem": "How many ways can you choose 2 fruits from apple, banana, cherry, and mango?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: We need to choose 2 fruits from 4 without caring about order.\nStep 2: C(4,2) = 4!/(2!\u00d72!) = (4\u00d73)/(2\u00d71) = 6.\nStep 3: The 6 pairs are: {apple,banana}, {apple,cherry}, {apple,mango}, {banana,cherry}, {banana,mango}, {cherry,mango}.",
+    "difficulty": 1,
+    "tags": [
+      "combinatorics",
+      "level2"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "comb-l2-cm-002",
+    "topic": "combinations",
+    "stem": "If 6 people each shake hands with every other person exactly once, how many handshakes happen in total?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: Each handshake involves choosing 2 people from 6.\nStep 2: Number of handshakes = C(6,2) = 6!/(2!\u00d74!) = (6\u00d75)/(2\u00d71) = 15.\nAnswer: 15 handshakes.",
+    "difficulty": 2,
+    "tags": [
+      "combinatorics",
+      "level2"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 15
+  },
+  {
+    "id": "comb-l2-cm-003",
+    "topic": "combinations",
+    "stem": "A team of 3 players is chosen from a group of 5. How many different teams are possible?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: We choose 3 from 5 (order doesn't matter for a team).\nStep 2: C(5,3) = 5!/(3!\u00d72!) = (5\u00d74)/(2\u00d71) = 10.\nAnswer: 10 different teams.",
+    "difficulty": 1,
+    "tags": [
+      "combinatorics",
+      "level2"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 10
+  },
+  {
+    "id": "comb-l2-cm-004",
+    "topic": "combinations",
+    "stem": "How many triangles can be formed by connecting vertices of a regular pentagon?",
+    "visual_svg": "<svg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'><rect width='200' height='200' fill='#f9f9f9' rx='8'/><polygon points='100,20 185,78 153,170 47,170 15,78' fill='none' stroke='#3498db' stroke-width='2'/><circle cx='100' cy='20' r='4' fill='#e74c3c'/><circle cx='185' cy='78' r='4' fill='#e74c3c'/><circle cx='153' cy='170' r='4' fill='#e74c3c'/><circle cx='47' cy='170' r='4' fill='#e74c3c'/><circle cx='15' cy='78' r='4' fill='#e74c3c'/></svg>",
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: A pentagon has 5 vertices.\nStep 2: A triangle is formed by choosing any 3 vertices.\nStep 3: C(5,3) = 5!/(3!\u00d72!) = 10.\nAnswer: 10 triangles.",
+    "difficulty": 2,
+    "tags": [
+      "combinatorics",
+      "level2"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 10
+  },
+  {
+    "id": "comb-l2-cm-005",
+    "topic": "combinations",
+    "stem": "From a box of 7 colored pencils, you pick 2. How many different pairs can you pick?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: We choose 2 pencils from 7, and order doesn't matter.\nStep 2: C(7,2) = 7!/(2!\u00d75!) = (7\u00d76)/(2\u00d71) = 21.\nAnswer: 21 different pairs.",
+    "difficulty": 1,
+    "tags": [
+      "combinatorics",
+      "level2"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 21
+  },
+  {
+    "id": "comb-l2-cm-006",
+    "topic": "combinations",
+    "stem": "In a class, 8 students volunteer for a committee. How many ways can a 2-person committee be formed?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: Choose 2 students from 8 (order doesn't matter).\nStep 2: C(8,2) = 8!/(2!\u00d76!) = (8\u00d77)/(2\u00d71) = 28.\nAnswer: 28 ways.",
+    "difficulty": 1,
+    "tags": [
+      "combinatorics",
+      "level2"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 28
+  },
+  {
+    "id": "comb-l2-cm-007",
+    "topic": "combinations",
+    "stem": "How many diagonals does a hexagon have?",
+    "visual_svg": "<svg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'><rect width='200' height='200' fill='#f9f9f9' rx='8'/><polygon points='100,20 175,55 175,135 100,170 25,135 25,55' fill='none' stroke='#3498db' stroke-width='2'/><circle cx='100' cy='20' r='4' fill='#e74c3c'/><circle cx='175' cy='55' r='4' fill='#e74c3c'/><circle cx='175' cy='135' r='4' fill='#e74c3c'/><circle cx='100' cy='170' r='4' fill='#e74c3c'/><circle cx='25' cy='135' r='4' fill='#e74c3c'/><circle cx='25' cy='55' r='4' fill='#e74c3c'/></svg>",
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: A hexagon has 6 vertices.\nStep 2: Total line segments joining any 2 vertices = C(6,2) = 15.\nStep 3: Out of these, 6 are sides of the hexagon.\nStep 4: Diagonals = 15 \u2212 6 = 9.\nAnswer: 9 diagonals.",
+    "difficulty": 2,
+    "tags": [
+      "combinatorics",
+      "level2"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 9
+  },
+  {
+    "id": "comb-l2-cm-008",
+    "topic": "combinations",
+    "stem": "You have 5 stickers and want to give 3 to a friend. How many different sets of 3 stickers can you give?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: Choose 3 stickers from 5 (order doesn't matter \u2014 it's a set).\nStep 2: C(5,3) = 5!/(3!\u00d72!) = (5\u00d74)/(2\u00d71) = 10.\nAnswer: 10 different sets.",
+    "difficulty": 1,
+    "tags": [
+      "combinatorics",
+      "level2"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 10
+  },
+  {
+    "id": "comb-l2-cm-009",
+    "topic": "combinations",
+    "stem": "If 5 people each shake hands with every other person exactly once, how many handshakes happen in total?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: Each handshake involves 2 people.\nStep 2: Number of handshakes = C(5,2) = (5\u00d74)/(2\u00d71) = 10.\nAnswer: 10 handshakes.",
+    "difficulty": 1,
+    "tags": [
+      "combinatorics",
+      "level2"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 10
+  },
+  {
+    "id": "comb-l2-cm-010",
+    "topic": "combinations",
+    "stem": "How many ways can you choose 4 books from a shelf of 6 books?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: Choose 4 from 6 (order doesn't matter).\nStep 2: C(6,4) = C(6,2) = (6\u00d75)/(2\u00d71) = 15.\nNote: C(6,4) = C(6,2) because choosing 4 to take is the same as choosing 2 to leave.\nAnswer: 15 ways.",
+    "difficulty": 2,
+    "tags": [
+      "combinatorics",
+      "level2"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 15
+  },
+  {
+    "id": "comb-l2-mp-001",
+    "topic": "multiplication_principle",
+    "stem": "You have 4 shirts and 3 pants. How many different outfits can you make?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: For each shirt, you can pair it with any of the 3 pants.\nStep 2: Total outfits = 4 \u00d7 3 = 12.\nAnswer: 12 outfits.",
+    "difficulty": 1,
+    "tags": [
+      "combinatorics",
+      "level2"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 12
+  },
+  {
+    "id": "comb-l2-mp-002",
+    "topic": "multiplication_principle",
+    "stem": "A secret code has 2 digits, and each digit can be any number from 1 to 5. How many different codes are possible?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: The first digit can be 1, 2, 3, 4, or 5 \u2014 that's 5 choices.\nStep 2: The second digit can also be 1, 2, 3, 4, or 5 \u2014 that's 5 choices (digits can repeat).\nStep 3: Total codes = 5 \u00d7 5 = 25.\nAnswer: 25 codes.",
+    "difficulty": 1,
+    "tags": [
+      "combinatorics",
+      "level2"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 25
+  },
+  {
+    "id": "comb-l2-mp-003",
+    "topic": "multiplication_principle",
+    "stem": "An ice cream shop offers 3 flavors and 4 toppings. If you choose one flavor and one topping, how many combinations are possible?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: Choose 1 flavor from 3 options.\nStep 2: Choose 1 topping from 4 options.\nStep 3: Total combinations = 3 \u00d7 4 = 12.\nAnswer: 12 combinations.",
+    "difficulty": 1,
+    "tags": [
+      "combinatorics",
+      "level2"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 12
+  },
+  {
+    "id": "comb-l2-mp-004",
+    "topic": "multiplication_principle",
+    "stem": "A license plate has 1 letter followed by 2 digits. How many plates are possible if there are 26 letters and 10 digits (0-9)?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: The letter can be any of 26 options.\nStep 2: The first digit can be any of 10 options.\nStep 3: The second digit can be any of 10 options.\nStep 4: Total = 26 \u00d7 10 \u00d7 10 = 2600.\nAnswer: 2600 license plates.",
+    "difficulty": 2,
+    "tags": [
+      "combinatorics",
+      "level2"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 2600
+  },
+  {
+    "id": "comb-l2-mp-005",
+    "topic": "multiplication_principle",
+    "stem": "You flip a coin 4 times. How many different sequences of heads and tails are possible?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: Each flip has 2 outcomes (H or T).\nStep 2: With 4 flips, total sequences = 2 \u00d7 2 \u00d7 2 \u00d7 2 = 2\u2074 = 16.\nAnswer: 16 sequences.",
+    "difficulty": 1,
+    "tags": [
+      "combinatorics",
+      "level2"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 16
+  },
+  {
+    "id": "comb-l2-mp-006",
+    "topic": "multiplication_principle",
+    "stem": "A restaurant menu has 3 starters, 5 main courses, and 2 desserts. If you order one of each, how many different meals are possible?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: Choose 1 starter from 3.\nStep 2: Choose 1 main course from 5.\nStep 3: Choose 1 dessert from 2.\nStep 4: Total meals = 3 \u00d7 5 \u00d7 2 = 30.\nAnswer: 30 different meals.",
+    "difficulty": 1,
+    "tags": [
+      "combinatorics",
+      "level2"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 30
+  },
+  {
+    "id": "comb-l2-mp-007",
+    "topic": "multiplication_principle",
+    "stem": "A car comes in 5 colors and 3 engine types. How many different car models are available?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: Choose 1 color from 5 options.\nStep 2: Choose 1 engine type from 3 options.\nStep 3: Total models = 5 \u00d7 3 = 15.\nAnswer: 15 different car models.",
+    "difficulty": 1,
+    "tags": [
+      "combinatorics",
+      "level2"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 15
+  },
+  {
+    "id": "comb-l2-mp-008",
+    "topic": "multiplication_principle",
+    "stem": "A password has 3 characters. The first must be a vowel (A, E, I, O, U), the second a digit (0-9), and the third a consonant (21 consonants). How many passwords are possible?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: First character: 5 vowels.\nStep 2: Second character: 10 digits.\nStep 3: Third character: 21 consonants.\nStep 4: Total = 5 \u00d7 10 \u00d7 21 = 1050.\nAnswer: 1050 passwords.",
+    "difficulty": 2,
+    "tags": [
+      "combinatorics",
+      "level2"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 1050
+  },
+  {
+    "id": "comb-l2-mp-009",
+    "topic": "multiplication_principle",
+    "stem": "You roll a die and flip a coin. How many different outcomes are possible?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: The die has 6 outcomes (1, 2, 3, 4, 5, 6).\nStep 2: The coin has 2 outcomes (H, T).\nStep 3: Total outcomes = 6 \u00d7 2 = 12.\nAnswer: 12 outcomes.",
+    "difficulty": 1,
+    "tags": [
+      "combinatorics",
+      "level2"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 12
+  },
+  {
+    "id": "comb-l2-mp-010",
+    "topic": "multiplication_principle",
+    "stem": "A phone lock uses a 3-digit PIN where each digit is 0-9. How many possible PINs are there?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: Each of the 3 positions can be any digit from 0 to 9 \u2014 that's 10 choices per position.\nStep 2: Total PINs = 10 \u00d7 10 \u00d7 10 = 1000.\nAnswer: 1000 PINs.",
+    "difficulty": 1,
+    "tags": [
+      "combinatorics",
+      "level2"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 1000
+  }
+]

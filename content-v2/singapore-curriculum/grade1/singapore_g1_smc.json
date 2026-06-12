@@ -1,0 +1,2501 @@
+[
+  {
+    "id": "SING-G1-SMC-021",
+    "stem": "The clock shows the hour hand pointing to 3 and the minute hand pointing to 12. What time is it?",
+    "choices": [
+      "12:03",
+      "3:00",
+      "3:12",
+      "12:15"
+    ],
+    "correct_answer": "B",
+    "difficulty_tier": "easy",
+    "difficulty_score": 1,
+    "tags": [
+      "time_clock",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": "An analog clock with the hour hand pointing to 3 and the minute hand pointing to 12.",
+    "hint": {
+      "level_0": "When the minute hand points to 12, it is exactly on the hour.",
+      "level_1": "Let's review the core details of the question stem.",
+      "level_2": "Try testing each option to see which one matches the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 3:00.",
+      "0": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+      "2": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+      "3": "This doesn't match all the conditions in the problem. Test each clue against your answer."
+    },
+    "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 200 200\" width=\"200\" height=\"200\" style=\"font-family:Arial,sans-serif\"><circle cx=\"100\" cy=\"100\" r=\"80\" fill=\"white\" stroke=\"#333\" stroke-width=\"3\"/><line x1=\"100.0\" y1=\"30.0\" x2=\"100.0\" y2=\"22.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"100.0\" y=\"42.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">12</text><line x1=\"135.0\" y1=\"39.4\" x2=\"139.0\" y2=\"32.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"129.0\" y=\"49.8\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">1</text><line x1=\"160.6\" y1=\"65.0\" x2=\"167.5\" y2=\"61.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"150.2\" y=\"71.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">2</text><line x1=\"170.0\" y1=\"100.0\" x2=\"178.0\" y2=\"100.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"158.0\" y=\"100.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">3</text><line x1=\"160.6\" y1=\"135.0\" x2=\"167.5\" y2=\"139.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"150.2\" y=\"129.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">4</text><line x1=\"135.0\" y1=\"160.6\" x2=\"139.0\" y2=\"167.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"129.0\" y=\"150.2\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">5</text><line x1=\"100.0\" y1=\"170.0\" x2=\"100.0\" y2=\"178.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"100.0\" y=\"158.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">6</text><line x1=\"65.0\" y1=\"160.6\" x2=\"61.0\" y2=\"167.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"71.0\" y=\"150.2\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">7</text><line x1=\"39.4\" y1=\"135.0\" x2=\"32.5\" y2=\"139.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"49.8\" y=\"129.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">8</text><line x1=\"30.0\" y1=\"100.0\" x2=\"22.0\" y2=\"100.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"42.0\" y=\"100.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">9</text><line x1=\"39.4\" y1=\"65.0\" x2=\"32.5\" y2=\"61.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"49.8\" y=\"71.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">10</text><line x1=\"65.0\" y1=\"39.4\" x2=\"61.0\" y2=\"32.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"71.0\" y=\"49.8\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">11</text><line x1=\"100\" y1=\"100\" x2=\"145.0\" y2=\"100.0\" stroke=\"#333\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"100\" y1=\"100\" x2=\"100.0\" y2=\"35.0\" stroke=\"#555\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><circle cx=\"100\" cy=\"100\" r=\"4\" fill=\"#333\"/></svg>"
+  },
+  {
+    "id": "SING-G1-SMC-061",
+    "stem": "Ahmad is 7 years old. His sister is 2 years older than him. How old is his sister?",
+    "choices": [
+      "5",
+      "7",
+      "9",
+      "10"
+    ],
+    "correct_answer": "C",
+    "difficulty_tier": "easy",
+    "difficulty_score": 2,
+    "tags": [
+      "age_problems",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "'2 years older' means add 2.",
+      "level_1": "Let's review the core details of the question stem.",
+      "level_2": "Try testing each option to see which one matches the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 9.",
+      "0": "Not quite. You're off by 4. Re-check your arithmetic step by step.",
+      "1": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+      "3": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?"
+    }
+  },
+  {
+    "id": "SING-G1-SMC-066",
+    "stem": "Mei Ling has 10 sweets. She shares them equally among 5 friends. How many sweets does each friend get?",
+    "choices": [
+      "1",
+      "2",
+      "3",
+      "5"
+    ],
+    "correct_answer": "B",
+    "difficulty_tier": "easy",
+    "difficulty_score": 3,
+    "tags": [
+      "equal_sharing",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "Divide 10 sweets among 5 friends equally.",
+      "level_1": "Let's review the core details of the question stem.",
+      "level_2": "Try testing each option to see which one matches the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 2.",
+      "0": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?",
+      "2": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?",
+      "3": "Not quite. You're off by 3. Re-check your arithmetic step by step."
+    }
+  },
+  {
+    "id": "SING-G1-SMC-076",
+    "stem": "In a picture, there are 3 rows of stars. The first row has 5 stars, the second row has 3 stars, and the third row has 4 stars. How many stars are there altogether?",
+    "choices": [
+      "10",
+      "11",
+      "12",
+      "13"
+    ],
+    "correct_answer": "C",
+    "difficulty_tier": "easy",
+    "difficulty_score": 4,
+    "tags": [
+      "counting_objects",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": "Three rows of stars: Row 1 has 5 stars, Row 2 has 3 stars, Row 3 has 4 stars.",
+    "hint": {
+      "level_0": "Add the stars in all three rows.",
+      "level_1": "Let's review the core details of the question stem.",
+      "level_2": "Try testing each option to see which one matches the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 12.",
+      "0": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+      "1": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?",
+      "3": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?"
+    },
+    "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 205 80\" width=\"205\" height=\"80\" style=\"font-family:Arial,sans-serif\"><text x=\"20\" y=\"25\" font-size=\"22\">\u2b50</text><text x=\"55\" y=\"25\" font-size=\"22\">\u2b50</text><text x=\"90\" y=\"25\" font-size=\"22\">\u2b50</text><text x=\"125\" y=\"25\" font-size=\"22\">\u2b50</text><text x=\"160\" y=\"25\" font-size=\"22\">\u2b50</text></svg>"
+  },
+  {
+    "id": "SING-G1-SMC-003",
+    "stem": "Siti has four 10\u00a2 coins and Raju has two 20\u00a2 coins. Who has more money?",
+    "choices": [
+      "Siti has more",
+      "Raju has more",
+      "They have the same amount",
+      "Cannot tell"
+    ],
+    "correct_answer": "C",
+    "difficulty_tier": "easy",
+    "difficulty_score": 5,
+    "tags": [
+      "money_singapore_coins",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "Work out the total for each person and compare.",
+      "level_1": "Let's review the core details of the question stem.",
+      "level_2": "Try testing each option to see which one matches the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is They have the same amount.",
+      "0": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+      "1": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+      "3": "This doesn't match all the conditions in the problem. Test each clue against your answer."
+    },
+    "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1290 110\" width=\"1290\" height=\"110\" style=\"font-family:Arial,sans-serif\"><circle cx=\"55\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"55\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"55\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"55\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"117\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"117\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"117\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"117\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"179\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"179\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"179\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"179\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"241\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"241\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"241\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"241\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"303\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"303\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"303\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"303\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"365\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"365\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"365\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"365\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"427\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"427\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"427\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"427\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"489\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"489\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"489\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"489\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"551\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"551\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"551\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"551\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"613\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"613\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"613\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"613\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"675\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"675\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"675\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"675\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"737\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"737\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"737\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"737\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"799\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"799\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"799\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"799\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"861\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"861\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"861\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"861\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"923\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"923\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"923\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"923\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"985\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"985\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"985\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"985\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"1047\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"1047\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"1047\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"1047\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"1109\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"1109\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"1109\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"1109\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"1171\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"1171\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"1171\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"1171\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"1233\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"1233\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"1233\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"1233\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text></svg>"
+  },
+  {
+    "id": "SING-G1-SMC-006",
+    "stem": "A fishball stick costs 60\u00a2 and a curry puff costs 90\u00a2 at the hawker centre. Mei Ling buys one of each. How much does she pay altogether?",
+    "choices": [
+      "$1.40",
+      "$1.50",
+      "$1.60",
+      "$1.30"
+    ],
+    "correct_answer": "B",
+    "difficulty_tier": "easy",
+    "difficulty_score": 6,
+    "tags": [
+      "money_shopping",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "Add 60\u00a2 and 90\u00a2 together.",
+      "level_1": "Let's review the core details of the question stem.",
+      "level_2": "Try testing each option to see which one matches the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is $1.50.",
+      "0": "Not quite. You're off by 0. Re-check your arithmetic step by step.",
+      "2": "Not quite. You're off by 0. Re-check your arithmetic step by step.",
+      "3": "Not quite. You're off by 0. Re-check your arithmetic step by step."
+    }
+  },
+  {
+    "id": "SING-G1-SMC-011",
+    "stem": "There are 4 plates on a table. Each plate has 3 kueh lapis on it. How many kueh lapis are there altogether?",
+    "choices": [
+      "7",
+      "10",
+      "12",
+      "15"
+    ],
+    "correct_answer": "C",
+    "difficulty_tier": "easy",
+    "difficulty_score": 7,
+    "tags": [
+      "multiplication_reasoning",
+      "competition",
+      "problem_solving",
+      "visual_needed"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "Count by threes: 3, 6, 9, ...",
+      "level_1": "Let's review the core details of the question stem.",
+      "level_2": "Try testing each option to see which one matches the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 12.",
+      "0": "Not quite. You're off by 5. Re-check your arithmetic step by step.",
+      "1": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+      "3": "Not quite. You're off by 3. Re-check your arithmetic step by step."
+    }
+  },
+  {
+    "id": "SING-G1-SMC-014",
+    "stem": "Ahmad buys 3 packets of chicken rice. Each packet costs $2. How much does he pay altogether?",
+    "choices": [
+      "$5",
+      "$6",
+      "$8",
+      "$9"
+    ],
+    "correct_answer": "B",
+    "difficulty_tier": "easy",
+    "difficulty_score": 8,
+    "tags": [
+      "multiplication_reasoning",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "Read the problem carefully. What is being asked?",
+      "level_1": "The key values are: 3, 2. What operation do you need? Work step by step with 3, 2.",
+      "level_2": "The answer is $6."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is $6.",
+      "0": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?",
+      "2": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+      "3": "Not quite. You're off by 3. Re-check your arithmetic step by step."
+    }
+  },
+  {
+    "id": "SING-G1-SMC-022",
+    "stem": "Mei Ling starts reading at 4 o'clock. She reads for 2 hours. What time does she finish?",
+    "choices": [
+      "5 o'clock",
+      "6 o'clock",
+      "7 o'clock",
+      "2 o'clock"
+    ],
+    "correct_answer": "B",
+    "difficulty_tier": "easy",
+    "difficulty_score": 9,
+    "tags": [
+      "time_clock",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "Start at 4 and count forward 2 hours.",
+      "level_1": "Let's review the core details of the question stem.",
+      "level_2": "Try testing each option to see which one matches the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 6 o'clock.",
+      "0": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+      "2": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+      "3": "This doesn't match all the conditions in the problem. Test each clue against your answer."
+    },
+    "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 200 200\" width=\"200\" height=\"200\" style=\"font-family:Arial,sans-serif\"><circle cx=\"100\" cy=\"100\" r=\"80\" fill=\"white\" stroke=\"#333\" stroke-width=\"3\"/><line x1=\"100.0\" y1=\"30.0\" x2=\"100.0\" y2=\"22.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"100.0\" y=\"42.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">12</text><line x1=\"135.0\" y1=\"39.4\" x2=\"139.0\" y2=\"32.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"129.0\" y=\"49.8\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">1</text><line x1=\"160.6\" y1=\"65.0\" x2=\"167.5\" y2=\"61.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"150.2\" y=\"71.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">2</text><line x1=\"170.0\" y1=\"100.0\" x2=\"178.0\" y2=\"100.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"158.0\" y=\"100.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">3</text><line x1=\"160.6\" y1=\"135.0\" x2=\"167.5\" y2=\"139.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"150.2\" y=\"129.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">4</text><line x1=\"135.0\" y1=\"160.6\" x2=\"139.0\" y2=\"167.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"129.0\" y=\"150.2\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">5</text><line x1=\"100.0\" y1=\"170.0\" x2=\"100.0\" y2=\"178.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"100.0\" y=\"158.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">6</text><line x1=\"65.0\" y1=\"160.6\" x2=\"61.0\" y2=\"167.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"71.0\" y=\"150.2\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">7</text><line x1=\"39.4\" y1=\"135.0\" x2=\"32.5\" y2=\"139.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"49.8\" y=\"129.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">8</text><line x1=\"30.0\" y1=\"100.0\" x2=\"22.0\" y2=\"100.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"42.0\" y=\"100.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">9</text><line x1=\"39.4\" y1=\"65.0\" x2=\"32.5\" y2=\"61.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"49.8\" y=\"71.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">10</text><line x1=\"65.0\" y1=\"39.4\" x2=\"61.0\" y2=\"32.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"71.0\" y=\"49.8\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">11</text><line x1=\"100\" y1=\"100\" x2=\"139.0\" y2=\"122.5\" stroke=\"#333\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"100\" y1=\"100\" x2=\"100.0\" y2=\"35.0\" stroke=\"#555\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><circle cx=\"100\" cy=\"100\" r=\"4\" fill=\"#333\"/></svg>"
+  },
+  {
+    "id": "SING-G1-SMC-027",
+    "stem": "What is the sum of the digits of the number 58?",
+    "choices": [
+      "11",
+      "12",
+      "13",
+      "14"
+    ],
+    "correct_answer": "C",
+    "difficulty_tier": "easy",
+    "difficulty_score": 10,
+    "tags": [
+      "number_properties",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "Add the tens digit and the ones digit: 5 + 8.",
+      "level_1": "Let's review the core details of the question stem.",
+      "level_2": "Try testing each option to see which one matches the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 13.",
+      "0": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+      "1": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?",
+      "3": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?"
+    }
+  },
+  {
+    "id": "SING-G1-SMC-032",
+    "stem": "In a picture equation: Circle + Triangle = 10. Circle = 4. What is Triangle?",
+    "choices": [
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "correct_answer": "C",
+    "difficulty_tier": "easy",
+    "difficulty_score": 11,
+    "tags": [
+      "algebra_picture_eq",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": "An equation showing: \u25cf + \u25b2 = 10, and \u25cf = 4.",
+    "hint": {
+      "level_0": "Replace Circle with 4.",
+      "level_1": "What plus 4 gives 10?",
+      "level_2": "Take a moment to carefully evaluate each choice before answering."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 6.",
+      "0": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+      "1": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?",
+      "3": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?"
+    },
+    "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 200\" width=\"300\" height=\"200\" style=\"font-family:Arial,sans-serif\"><polygon points=\"150,20 50,170 250,170\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2.5\"/><text x=\"150\" y=\"190\" text-anchor=\"middle\" font-size=\"13\" fill=\"#333\">10 cm</text><text x=\"30\" y=\"100\" text-anchor=\"middle\" font-size=\"13\" fill=\"#333\"></text></svg>"
+  },
+  {
+    "id": "SING-G1-SMC-036",
+    "stem": "Mei Ling has 12 mooncakes. She puts them equally into 3 boxes. How many mooncakes are in each box?",
+    "choices": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "correct_answer": "B",
+    "difficulty_tier": "easy",
+    "difficulty_score": 12,
+    "tags": [
+      "division_grouping",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "Share 12 mooncakes equally among 3 boxes.",
+      "level_1": "Let's review the core details of the question stem.",
+      "level_2": "Try testing each option to see which one matches the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 4.",
+      "0": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?",
+      "2": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?",
+      "3": "You're off by 2. Check whether you accidentally included or excluded boundary values."
+    }
+  },
+  {
+    "id": "SING-G1-SMC-063",
+    "stem": "Wei Ming is 7 years old now. How old will he be in 5 years?",
+    "choices": [
+      "2",
+      "10",
+      "12",
+      "13"
+    ],
+    "correct_answer": "C",
+    "difficulty_tier": "easy",
+    "difficulty_score": 13,
+    "tags": [
+      "age_problems",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "Add 5 to his current age.",
+      "level_1": "Let's review the core details of the question stem.",
+      "level_2": "Try testing each option to see which one matches the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 12.",
+      "0": "Not quite. You're off by 10. Re-check your arithmetic step by step.",
+      "1": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+      "3": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?"
+    }
+  },
+  {
+    "id": "SING-G1-SMC-080",
+    "stem": "A picture shows dots arranged in a triangle pattern: 1 dot in the top row, 2 dots in the next, 3 dots in the next, and 4 dots in the bottom row. How many dots are there?",
+    "choices": [
+      "8",
+      "9",
+      "10",
+      "12"
+    ],
+    "correct_answer": "C",
+    "difficulty_tier": "easy",
+    "difficulty_score": 14,
+    "tags": [
+      "counting_objects",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": "Dots arranged in a triangle: 1 dot on top, 2 in the second row, 3 in the third row, 4 in the bottom row.",
+    "hint": {
+      "level_0": "Read the problem carefully. What is being asked?",
+      "level_1": "The key values are: 1, 2, 3, 4. What operation do you need? Work step by step with 1, 2, 3, 4.",
+      "level_2": "The answer is 10."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 10.",
+      "0": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+      "1": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?",
+      "3": "You're off by 2. Check whether you accidentally included or excluded boundary values."
+    },
+    "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 200\" width=\"300\" height=\"200\" style=\"font-family:Arial,sans-serif\"><polygon points=\"150,20 50,170 250,170\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2.5\"/><text x=\"150\" y=\"190\" text-anchor=\"middle\" font-size=\"13\" fill=\"#333\">1 cm</text><text x=\"30\" y=\"100\" text-anchor=\"middle\" font-size=\"13\" fill=\"#333\"></text></svg>"
+  },
+  {
+    "id": "SING-G1-SMC-001",
+    "stem": "Mei Ling has three 50\u00a2 coins and two 20\u00a2 coins. How much money does she have altogether?",
+    "choices": [
+      "$1.70",
+      "$1.90",
+      "$1.80",
+      "$2.00"
+    ],
+    "correct_answer": "B",
+    "difficulty_tier": "easy",
+    "difficulty_score": 15,
+    "tags": [
+      "money_singapore_coins",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "Add the value of the 50\u00a2 coins first, then add the 20\u00a2 coins.",
+      "level_1": "Let's review the core details of the question stem.",
+      "level_2": "Try testing each option to see which one matches the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is $1.90.",
+      "0": "Not quite. You're off by 0. Re-check your arithmetic step by step.",
+      "2": "Not quite. You're off by 0. Re-check your arithmetic step by step.",
+      "3": "Not quite. You're off by 0. Re-check your arithmetic step by step."
+    },
+    "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1290 110\" width=\"1290\" height=\"110\" style=\"font-family:Arial,sans-serif\"><circle cx=\"55\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"55\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"55\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"55\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"117\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"117\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"117\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"117\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"179\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"179\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"179\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"179\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"241\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"241\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"241\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"241\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"303\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"303\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"303\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"303\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"365\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"365\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"365\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"365\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"427\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"427\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"427\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"427\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"489\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"489\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"489\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"489\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"551\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"551\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"551\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"551\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"613\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"613\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"613\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"613\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"675\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"675\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"675\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"675\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"737\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"737\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"737\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"737\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"799\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"799\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"799\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"799\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"861\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"861\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"861\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"861\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"923\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"923\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"923\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"923\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"985\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"985\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"985\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"985\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"1047\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"1047\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"1047\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"1047\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"1109\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"1109\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"1109\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"1109\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"1171\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"1171\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"1171\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"1171\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"1233\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"1233\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"1233\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"1233\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text></svg>"
+  },
+  {
+    "id": "SING-G1-SMC-004",
+    "stem": "Wei Ming has one 50\u00a2 coin, one 20\u00a2 coin, and one 5\u00a2 coin. He gives the 20\u00a2 coin to his friend. How much money does Wei Ming have left?",
+    "choices": [
+      "55\u00a2",
+      "45\u00a2",
+      "70\u00a2",
+      "75\u00a2"
+    ],
+    "correct_answer": "A",
+    "difficulty_tier": "easy",
+    "difficulty_score": 16,
+    "tags": [
+      "money_singapore_coins",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "Add the coins Wei Ming keeps: the 50\u00a2 coin and the 5\u00a2 coin.",
+      "level_1": "Let's review the core details of the question stem.",
+      "level_2": "Try testing each option to see which one matches the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 55\u00a2.",
+      "1": "Not quite. You're off by 10. Re-check your arithmetic step by step.",
+      "2": "Re-read the problem carefully and check which numbers and operations to use.",
+      "3": "Re-read the problem carefully and check which numbers and operations to use."
+    },
+    "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1290 110\" width=\"1290\" height=\"110\" style=\"font-family:Arial,sans-serif\"><circle cx=\"55\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"55\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"55\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"55\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"117\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"117\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"117\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"117\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"179\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"179\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"179\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"179\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"241\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"241\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"241\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"241\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"303\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"303\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"303\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"303\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"365\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"365\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"365\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"365\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"427\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"427\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"427\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"427\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"489\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"489\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"489\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"489\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"551\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"551\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"551\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"551\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"613\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"613\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"613\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"613\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"675\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"675\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"675\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"675\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"737\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"737\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"737\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"737\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"799\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"799\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"799\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"799\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"861\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"861\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"861\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"861\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"923\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"923\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"923\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"923\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"985\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"985\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"985\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"985\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"1047\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"1047\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"1047\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"1047\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"1109\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"1109\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"1109\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"1109\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"1171\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"1171\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"1171\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"1171\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"1233\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"1233\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"1233\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"1233\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text></svg>"
+  },
+  {
+    "id": "SING-G1-SMC-010",
+    "stem": "A toy car costs $1.50 and a toy bus costs $1.20. Which costs more, and by how much?",
+    "choices": [
+      "The car costs 20\u00a2 more",
+      "The car costs 30\u00a2 more",
+      "The bus costs 30\u00a2 more",
+      "The car costs 50\u00a2 more"
+    ],
+    "correct_answer": "B",
+    "difficulty_tier": "easy",
+    "difficulty_score": 17,
+    "tags": [
+      "money_shopping",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "Subtract the smaller price from the larger price.",
+      "level_1": "Let's review the core details of the question stem.",
+      "level_2": "Try testing each option to see which one matches the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is The car costs 30\u00a2 more.",
+      "0": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+      "2": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+      "3": "This doesn't match all the conditions in the problem. Test each clue against your answer."
+    }
+  },
+  {
+    "id": "SING-G1-SMC-012",
+    "stem": "Mei Ling arranges her stickers in 5 rows. Each row has 4 stickers. How many stickers does she have?",
+    "choices": [
+      "9",
+      "15",
+      "20",
+      "25"
+    ],
+    "correct_answer": "C",
+    "difficulty_tier": "easy",
+    "difficulty_score": 18,
+    "tags": [
+      "multiplication_reasoning",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "Count by fours: 4, 8, 12, ...",
+      "level_1": "Let's review the core details of the question stem.",
+      "level_2": "Try testing each option to see which one matches the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 20.",
+      "0": "Check your multiplication. Break it into smaller steps if needed.",
+      "1": "Check your multiplication. Break it into smaller steps if needed.",
+      "3": "Check your multiplication. Break it into smaller steps if needed."
+    }
+  },
+  {
+    "id": "SING-G1-SMC-013",
+    "stem": "A tricycle has 3 wheels. How many wheels do 5 tricycles have in total?",
+    "choices": [
+      "8",
+      "12",
+      "15",
+      "18"
+    ],
+    "correct_answer": "C",
+    "difficulty_tier": "easy",
+    "difficulty_score": 19,
+    "tags": [
+      "multiplication_reasoning",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "Each tricycle has 3 wheels.",
+      "level_1": "Count by threes five times.",
+      "level_2": "Take a moment to carefully evaluate each choice before answering."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 15.",
+      "0": "Not quite. You're off by 7. Re-check your arithmetic step by step.",
+      "1": "Not quite. You're off by 3. Re-check your arithmetic step by step.",
+      "3": "Not quite. You're off by 3. Re-check your arithmetic step by step."
+    }
+  },
+  {
+    "id": "SING-G1-SMC-024",
+    "stem": "The clock shows 9 o'clock now. What time was it 3 hours ago?",
+    "choices": [
+      "6 o'clock",
+      "7 o'clock",
+      "12 o'clock",
+      "5 o'clock"
+    ],
+    "correct_answer": "A",
+    "difficulty_tier": "easy",
+    "difficulty_score": 20,
+    "tags": [
+      "time_clock",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "Start at 9 and count backwards 3 hours.",
+      "level_1": "Let's review the core details of the question stem.",
+      "level_2": "Try testing each option to see which one matches the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 6 o'clock.",
+      "1": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+      "2": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+      "3": "This doesn't match all the conditions in the problem. Test each clue against your answer."
+    },
+    "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 200 200\" width=\"200\" height=\"200\" style=\"font-family:Arial,sans-serif\"><circle cx=\"100\" cy=\"100\" r=\"80\" fill=\"white\" stroke=\"#333\" stroke-width=\"3\"/><line x1=\"100.0\" y1=\"30.0\" x2=\"100.0\" y2=\"22.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"100.0\" y=\"42.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">12</text><line x1=\"135.0\" y1=\"39.4\" x2=\"139.0\" y2=\"32.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"129.0\" y=\"49.8\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">1</text><line x1=\"160.6\" y1=\"65.0\" x2=\"167.5\" y2=\"61.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"150.2\" y=\"71.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">2</text><line x1=\"170.0\" y1=\"100.0\" x2=\"178.0\" y2=\"100.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"158.0\" y=\"100.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">3</text><line x1=\"160.6\" y1=\"135.0\" x2=\"167.5\" y2=\"139.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"150.2\" y=\"129.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">4</text><line x1=\"135.0\" y1=\"160.6\" x2=\"139.0\" y2=\"167.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"129.0\" y=\"150.2\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">5</text><line x1=\"100.0\" y1=\"170.0\" x2=\"100.0\" y2=\"178.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"100.0\" y=\"158.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">6</text><line x1=\"65.0\" y1=\"160.6\" x2=\"61.0\" y2=\"167.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"71.0\" y=\"150.2\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">7</text><line x1=\"39.4\" y1=\"135.0\" x2=\"32.5\" y2=\"139.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"49.8\" y=\"129.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">8</text><line x1=\"30.0\" y1=\"100.0\" x2=\"22.0\" y2=\"100.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"42.0\" y=\"100.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">9</text><line x1=\"39.4\" y1=\"65.0\" x2=\"32.5\" y2=\"61.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"49.8\" y=\"71.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">10</text><line x1=\"65.0\" y1=\"39.4\" x2=\"61.0\" y2=\"32.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"71.0\" y=\"49.8\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">11</text><line x1=\"100\" y1=\"100\" x2=\"55.0\" y2=\"100.0\" stroke=\"#333\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"100\" y1=\"100\" x2=\"100.0\" y2=\"35.0\" stroke=\"#555\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><circle cx=\"100\" cy=\"100\" r=\"4\" fill=\"#333\"/></svg>"
+  },
+  {
+    "id": "SING-G1-SMC-025",
+    "stem": "Siti eats lunch at 12 o'clock. She eats dinner 6 hours later. What time does she eat dinner?",
+    "choices": [
+      "5 o'clock",
+      "6 o'clock",
+      "7 o'clock",
+      "8 o'clock"
+    ],
+    "correct_answer": "B",
+    "difficulty_tier": "medium",
+    "difficulty_score": 21,
+    "tags": [
+      "time_clock",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "Start at 12 and count forward 6 hours.",
+      "level_1": "Let's review the core details of the question stem.",
+      "level_2": "Try testing each option to see which one matches the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 6 o'clock.",
+      "0": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+      "2": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+      "3": "This doesn't match all the conditions in the problem. Test each clue against your answer."
+    },
+    "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 200 200\" width=\"200\" height=\"200\" style=\"font-family:Arial,sans-serif\"><circle cx=\"100\" cy=\"100\" r=\"80\" fill=\"white\" stroke=\"#333\" stroke-width=\"3\"/><line x1=\"100.0\" y1=\"30.0\" x2=\"100.0\" y2=\"22.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"100.0\" y=\"42.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">12</text><line x1=\"135.0\" y1=\"39.4\" x2=\"139.0\" y2=\"32.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"129.0\" y=\"49.8\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">1</text><line x1=\"160.6\" y1=\"65.0\" x2=\"167.5\" y2=\"61.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"150.2\" y=\"71.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">2</text><line x1=\"170.0\" y1=\"100.0\" x2=\"178.0\" y2=\"100.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"158.0\" y=\"100.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">3</text><line x1=\"160.6\" y1=\"135.0\" x2=\"167.5\" y2=\"139.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"150.2\" y=\"129.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">4</text><line x1=\"135.0\" y1=\"160.6\" x2=\"139.0\" y2=\"167.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"129.0\" y=\"150.2\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">5</text><line x1=\"100.0\" y1=\"170.0\" x2=\"100.0\" y2=\"178.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"100.0\" y=\"158.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">6</text><line x1=\"65.0\" y1=\"160.6\" x2=\"61.0\" y2=\"167.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"71.0\" y=\"150.2\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">7</text><line x1=\"39.4\" y1=\"135.0\" x2=\"32.5\" y2=\"139.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"49.8\" y=\"129.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">8</text><line x1=\"30.0\" y1=\"100.0\" x2=\"22.0\" y2=\"100.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"42.0\" y=\"100.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">9</text><line x1=\"39.4\" y1=\"65.0\" x2=\"32.5\" y2=\"61.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"49.8\" y=\"71.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">10</text><line x1=\"65.0\" y1=\"39.4\" x2=\"61.0\" y2=\"32.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"71.0\" y=\"49.8\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">11</text><line x1=\"100\" y1=\"100\" x2=\"100.0\" y2=\"55.0\" stroke=\"#333\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"100\" y1=\"100\" x2=\"100.0\" y2=\"35.0\" stroke=\"#555\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><circle cx=\"100\" cy=\"100\" r=\"4\" fill=\"#333\"/></svg>"
+  },
+  {
+    "id": "SING-G1-SMC-031",
+    "stem": "In a picture equation, a star stands for a number. Star + Star = 14. What number does the star stand for?",
+    "choices": [
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "correct_answer": "B",
+    "difficulty_tier": "medium",
+    "difficulty_score": 22,
+    "tags": [
+      "algebra_picture_eq",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": "An equation showing: \u2605 + \u2605 = 14",
+    "hint": {
+      "level_0": "What number added to itself gives 14?",
+      "level_1": "Let's review the core details of the question stem.",
+      "level_2": "Try testing each option to see which one matches the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 7.",
+      "0": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?",
+      "2": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?",
+      "3": "You're off by 2. Check whether you accidentally included or excluded boundary values."
+    },
+    "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 90 90\" width=\"90\" height=\"90\" style=\"font-family:Arial,sans-serif\"><rect x=\"20\" y=\"20\" width=\"50\" height=\"50\" rx=\"8\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2\"/><text x=\"45\" y=\"52\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#333\">14</text></svg>"
+  },
+  {
+    "id": "SING-G1-SMC-037",
+    "stem": "Ahmad has 20 satay sticks. He puts 5 sticks on each plate. How many plates does he need?",
+    "choices": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "correct_answer": "B",
+    "difficulty_tier": "medium",
+    "difficulty_score": 23,
+    "tags": [
+      "division_grouping",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "How many groups of 5 can you make from 20?",
+      "level_1": "Let's review the core details of the question stem.",
+      "level_2": "Try testing each option to see which one matches the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 4.",
+      "0": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?",
+      "2": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?",
+      "3": "You're off by 2. Check whether you accidentally included or excluded boundary values."
+    }
+  },
+  {
+    "id": "SING-G1-SMC-038",
+    "stem": "Siti has 18 beads. She makes bracelets using 6 beads each. How many bracelets can she make?",
+    "choices": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct_answer": "B",
+    "difficulty_tier": "medium",
+    "difficulty_score": 24,
+    "tags": [
+      "division_grouping",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "Count by sixes: 6, 12, 18.",
+      "level_1": "How many groups?",
+      "level_2": "Take a moment to carefully evaluate each choice before answering."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 3.",
+      "0": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?",
+      "2": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?",
+      "3": "You're off by 2. Check whether you accidentally included or excluded boundary values."
+    }
+  },
+  {
+    "id": "SING-G1-SMC-053",
+    "stem": "A machine makes 5 ice cream cones every hour. How many cones does it make in 4 hours?",
+    "choices": [
+      "9",
+      "15",
+      "20",
+      "25"
+    ],
+    "correct_answer": "C",
+    "difficulty_tier": "medium",
+    "difficulty_score": 25,
+    "tags": [
+      "proportional_reasoning",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "Count by fives: 5, 10, 15, 20.",
+      "level_1": "Let's review the core details of the question stem.",
+      "level_2": "Try testing each option to see which one matches the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 20.",
+      "0": "Re-read the problem carefully and check which numbers and operations to use.",
+      "1": "Not quite. You're off by 5. Re-check your arithmetic step by step.",
+      "3": "Not quite. You're off by 5. Re-check your arithmetic step by step."
+    }
+  },
+  {
+    "id": "SING-G1-SMC-062",
+    "stem": "Siti is 6 years old. Her mother is 30 years old. How much older is Siti's mother?",
+    "choices": [
+      "20 years",
+      "24 years",
+      "26 years",
+      "36 years"
+    ],
+    "correct_answer": "B",
+    "difficulty_tier": "medium",
+    "difficulty_score": 26,
+    "tags": [
+      "age_problems",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "Subtract Siti's age from her mother's age.",
+      "level_1": "Let's review the core details of the question stem.",
+      "level_2": "Try testing each option to see which one matches the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 24 years.",
+      "0": "Not quite. You're off by 4. Re-check your arithmetic step by step.",
+      "2": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+      "3": "Re-read the problem carefully and check which numbers and operations to use."
+    }
+  },
+  {
+    "id": "SING-G1-SMC-007",
+    "stem": "A pencil costs 45\u00a2. Ahmad pays with a $1 coin. How much change does he get?",
+    "choices": [
+      "55\u00a2",
+      "65\u00a2",
+      "45\u00a2",
+      "50\u00a2"
+    ],
+    "correct_answer": "A",
+    "difficulty_tier": "medium",
+    "difficulty_score": 27,
+    "tags": [
+      "money_shopping",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "Subtract 45\u00a2 from 100\u00a2.",
+      "level_1": "Let's review the core details of the question stem.",
+      "level_2": "Try testing each option to see which one matches the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 55\u00a2.",
+      "1": "Not quite. You're off by 10. Re-check your arithmetic step by step.",
+      "2": "Not quite. You're off by 10. Re-check your arithmetic step by step.",
+      "3": "Not quite. You're off by 5. Re-check your arithmetic step by step."
+    },
+    "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 200 110\" width=\"200\" height=\"110\" style=\"font-family:Arial,sans-serif\"><circle cx=\"55\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"55\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"55\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"55\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text></svg>"
+  },
+  {
+    "id": "SING-G1-SMC-028",
+    "stem": "Raju writes all the even numbers from 2 to 20. How many numbers does he write?",
+    "choices": [
+      "8",
+      "9",
+      "10",
+      "11"
+    ],
+    "correct_answer": "C",
+    "difficulty_tier": "medium",
+    "difficulty_score": 28,
+    "tags": [
+      "number_properties",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "List the even numbers: 2, 4, 6, 8, 10, 12, 14, 16, 18, 20.",
+      "level_1": "Let's review the core details of the question stem.",
+      "level_2": "Try testing each option to see which one matches the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 10.",
+      "0": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+      "1": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?",
+      "3": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?"
+    }
+  },
+  {
+    "id": "SING-G1-SMC-033",
+    "stem": "Heart + Heart + Heart = 15. What is Heart?",
+    "choices": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "correct_answer": "C",
+    "difficulty_tier": "medium",
+    "difficulty_score": 29,
+    "tags": [
+      "algebra_picture_eq",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": "An equation showing: \u2665 + \u2665 + \u2665 = 15",
+    "hint": {
+      "level_0": "What number, added three times, gives 15?",
+      "level_1": "Let's review the core details of the question stem.",
+      "level_2": "Try testing each option to see which one matches the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 5.",
+      "0": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+      "1": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?",
+      "3": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?"
+    }
+  },
+  {
+    "id": "SING-G1-SMC-040",
+    "stem": "Raju has 24 toy cars. He puts them equally into some boxes. Each box has 8 cars. How many boxes does he use?",
+    "choices": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct_answer": "B",
+    "difficulty_tier": "medium",
+    "difficulty_score": 30,
+    "tags": [
+      "division_grouping",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "Count by eights: 8, 16, 24.",
+      "level_1": "How many groups of 8?",
+      "level_2": "Take a moment to carefully evaluate each choice before answering."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 3.",
+      "0": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?",
+      "2": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?",
+      "3": "You're off by 2. Check whether you accidentally included or excluded boundary values."
+    }
+  },
+  {
+    "id": "SING-G1-SMC-054",
+    "stem": "Ahmad needs 3 eggs to make 1 cake. He wants to make 4 cakes. How many eggs does he need?",
+    "choices": [
+      "7",
+      "9",
+      "12",
+      "15"
+    ],
+    "correct_answer": "C",
+    "difficulty_tier": "medium",
+    "difficulty_score": 31,
+    "tags": [
+      "proportional_reasoning",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "Each cake needs 3 eggs.",
+      "level_1": "He makes 4 cakes.",
+      "level_2": "Take a moment to carefully evaluate each choice before answering."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 12.",
+      "0": "Not quite. You're off by 5. Re-check your arithmetic step by step.",
+      "1": "Not quite. You're off by 3. Re-check your arithmetic step by step.",
+      "3": "Not quite. You're off by 3. Re-check your arithmetic step by step."
+    }
+  },
+  {
+    "id": "SING-G1-SMC-056",
+    "stem": "Siti had some stickers. She gave 5 to Mei Ling and had 8 left. How many stickers did Siti have at first?",
+    "choices": [
+      "3",
+      "10",
+      "13",
+      "15"
+    ],
+    "correct_answer": "C",
+    "difficulty_tier": "medium",
+    "difficulty_score": 32,
+    "tags": [
+      "work_backwards",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "She has 8 left after giving away 5.",
+      "level_1": "Work backwards by adding.",
+      "level_2": "Take a moment to carefully evaluate each choice before answering."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 13.",
+      "0": "Not quite. You're off by 10. Re-check your arithmetic step by step.",
+      "1": "Not quite. You're off by 3. Re-check your arithmetic step by step.",
+      "3": "You're off by 2. Check whether you accidentally included or excluded boundary values."
+    }
+  },
+  {
+    "id": "SING-G1-SMC-057",
+    "stem": "Ahmad had some marbles. He found 6 more and then had 17. How many did he start with?",
+    "choices": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "correct_answer": "C",
+    "difficulty_tier": "medium",
+    "difficulty_score": 33,
+    "tags": [
+      "work_backwards",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "He ended with 17 after finding 6.",
+      "level_1": "Subtract to find the start.",
+      "level_2": "Take a moment to carefully evaluate each choice before answering."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 11.",
+      "0": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+      "1": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?",
+      "3": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?"
+    }
+  },
+  {
+    "id": "SING-G1-SMC-068",
+    "stem": "Siti has 15 cookies. She wants to share them equally among some friends so that each gets exactly 5. How many friends are there?",
+    "choices": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct_answer": "B",
+    "difficulty_tier": "medium",
+    "difficulty_score": 34,
+    "tags": [
+      "equal_sharing",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "How many groups of 5 can you make from 15?",
+      "level_1": "Let's review the core details of the question stem.",
+      "level_2": "Try testing each option to see which one matches the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 3.",
+      "0": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?",
+      "2": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?",
+      "3": "You're off by 2. Check whether you accidentally included or excluded boundary values."
+    }
+  },
+  {
+    "id": "SING-G1-SMC-073",
+    "stem": "Ahmad has 2 boxes of 10 pencils each. He wants to repack them into bundles of 5. How many bundles can he make?",
+    "choices": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct_answer": "C",
+    "difficulty_tier": "medium",
+    "difficulty_score": 35,
+    "tags": [
+      "repacking_division",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "Total pencils = 20.",
+      "level_1": "Each bundle has 5 pencils.",
+      "level_2": "Take a moment to carefully evaluate each choice before answering."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 4.",
+      "0": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+      "1": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?",
+      "3": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?"
+    }
+  },
+  {
+    "id": "SING-G1-SMC-002",
+    "stem": "Ahmad wants to make exactly 80\u00a2 using only 20\u00a2 coins and 10\u00a2 coins. He uses two 20\u00a2 coins. How many 10\u00a2 coins does he need?",
+    "choices": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct_answer": "C",
+    "difficulty_tier": "medium",
+    "difficulty_score": 36,
+    "tags": [
+      "money_singapore_coins",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "Two 20\u00a2 coins make 40\u00a2.",
+      "level_1": "How much more do you need to reach 80\u00a2?",
+      "level_2": "Take a moment to carefully evaluate each choice before answering."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 4.",
+      "0": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+      "1": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?",
+      "3": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?"
+    },
+    "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1290 110\" width=\"1290\" height=\"110\" style=\"font-family:Arial,sans-serif\"><circle cx=\"55\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"55\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"55\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"55\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"117\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"117\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"117\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"117\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"179\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"179\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"179\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"179\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"241\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"241\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"241\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"241\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"303\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"303\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"303\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"303\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"365\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"365\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"365\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"365\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"427\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"427\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"427\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"427\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"489\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"489\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"489\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"489\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"551\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"551\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"551\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"551\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"613\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"613\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"613\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"613\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"675\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"675\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"675\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"675\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"737\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"737\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"737\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"737\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"799\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"799\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"799\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"799\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"861\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"861\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"861\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"861\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"923\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"923\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"923\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"923\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"985\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"985\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"985\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"985\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"1047\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"1047\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"1047\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"1047\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"1109\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"1109\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"1109\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"1109\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"1171\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"1171\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"1171\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"1171\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"1233\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"1233\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"1233\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"1233\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text></svg>"
+  },
+  {
+    "id": "SING-G1-SMC-046",
+    "stem": "Mei Ling can choose 1 colour for her bag: red, blue, or green. She can choose 1 keychain: star or heart. How many different combinations of bag and keychain can she make?",
+    "choices": [
+      "3",
+      "5",
+      "6",
+      "8"
+    ],
+    "correct_answer": "C",
+    "difficulty_tier": "medium",
+    "difficulty_score": 37,
+    "tags": [
+      "combinatorics",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "For each colour, she can pick 2 keychains.",
+      "level_1": "Count all the pairs.",
+      "level_2": "Take a moment to carefully evaluate each choice before answering."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 6.",
+      "0": "You may have divided when you should have multiplied, or only counted half the items.",
+      "1": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?",
+      "3": "You're off by 2. Check whether you accidentally included or excluded boundary values."
+    }
+  },
+  {
+    "id": "SING-G1-SMC-047",
+    "stem": "Ahmad has 2 shirts (white and blue) and 3 pairs of shorts (black, grey, and brown). How many different outfits can he wear?",
+    "choices": [
+      "3",
+      "5",
+      "6",
+      "9"
+    ],
+    "correct_answer": "C",
+    "difficulty_tier": "medium",
+    "difficulty_score": 38,
+    "tags": [
+      "combinatorics",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "For each shirt, he can pair it with any of the 3 shorts.",
+      "level_1": "Let's review the core details of the question stem.",
+      "level_2": "Try testing each option to see which one matches the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 6.",
+      "0": "You may have divided when you should have multiplied, or only counted half the items.",
+      "1": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?",
+      "3": "Not quite. You're off by 3. Re-check your arithmetic step by step."
+    }
+  },
+  {
+    "id": "SING-G1-SMC-050",
+    "stem": "Ahmad wants to go from home to school. He can walk or take a bus to the MRT station. Then he can take the red line or green line. How many different routes can he take?",
+    "choices": [
+      "2",
+      "3",
+      "4",
+      "6"
+    ],
+    "correct_answer": "C",
+    "difficulty_tier": "medium",
+    "difficulty_score": 39,
+    "tags": [
+      "combinatorics",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "2 ways to the MRT station and 2 MRT lines.",
+      "level_1": "Count all paths.",
+      "level_2": "Take a moment to carefully evaluate each choice before answering."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 4.",
+      "0": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+      "1": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?",
+      "3": "You're off by 2. Check whether you accidentally included or excluded boundary values."
+    }
+  },
+  {
+    "id": "SING-G1-SMC-071",
+    "stem": "A bakery packs 12 pineapple tarts into big boxes of 6. Then they repack them into small boxes of 3. How many small boxes do they need?",
+    "choices": [
+      "2",
+      "3",
+      "4",
+      "6"
+    ],
+    "correct_answer": "C",
+    "difficulty_tier": "medium",
+    "difficulty_score": 40,
+    "tags": [
+      "repacking_division",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "There are 12 tarts total.",
+      "level_1": "Each small box holds 3.",
+      "level_2": "Take a moment to carefully evaluate each choice before answering."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 4.",
+      "0": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+      "1": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?",
+      "3": "You're off by 2. Check whether you accidentally included or excluded boundary values."
+    }
+  },
+  {
+    "id": "SING-G1-SMC-075",
+    "stem": "Siti repacks 18 cookies from big jars of 9 into small packets of 6. How many small packets does she make?",
+    "choices": [
+      "2",
+      "3",
+      "4",
+      "6"
+    ],
+    "correct_answer": "B",
+    "difficulty_tier": "hard",
+    "difficulty_score": 41,
+    "tags": [
+      "repacking_division",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "There are 18 cookies total.",
+      "level_1": "Each packet holds 6.",
+      "level_2": "Take a moment to carefully evaluate each choice before answering."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 3.",
+      "0": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?",
+      "2": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?",
+      "3": "You doubled when you shouldn't have. Re-read the problem \u2014 are you counting each item once or twice?"
+    }
+  },
+  {
+    "id": "SING-G1-SMC-019",
+    "stem": "There are red, blue, and green balls in a bag. There are no blue balls that are big. All big balls are red. Mei Ling picks a big ball. What colour is it?",
+    "choices": [
+      "Red",
+      "Blue",
+      "Green",
+      "Cannot tell"
+    ],
+    "correct_answer": "A",
+    "difficulty_tier": "hard",
+    "difficulty_score": 42,
+    "tags": [
+      "logic_deduction",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "Read the clue: 'All big balls are red.'",
+      "level_1": "Let's review the core details of the question stem.",
+      "level_2": "Try testing each option to see which one matches the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is Red.",
+      "1": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+      "2": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+      "3": "This doesn't match all the conditions in the problem. Test each clue against your answer."
+    }
+  },
+  {
+    "id": "SING-G1-SMC-052",
+    "stem": "Mei Ling gives out 4 sweets for every 1 sticker she collects. She has 3 stickers. How many sweets did she give out?",
+    "choices": [
+      "7",
+      "8",
+      "12",
+      "16"
+    ],
+    "correct_answer": "C",
+    "difficulty_tier": "hard",
+    "difficulty_score": 43,
+    "tags": [
+      "proportional_reasoning",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "Each sticker means 4 sweets.",
+      "level_1": "She has 3 stickers.",
+      "level_2": "Take a moment to carefully evaluate each choice before answering."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 12.",
+      "0": "Not quite. You're off by 5. Re-check your arithmetic step by step.",
+      "1": "Not quite. You're off by 4. Re-check your arithmetic step by step.",
+      "3": "Not quite. You're off by 4. Re-check your arithmetic step by step."
+    }
+  },
+  {
+    "id": "SING-G1-SMC-005",
+    "stem": "Which set of coins makes exactly $1?\n(A) Two 50\u00a2 coins\n(B) Five 10\u00a2 coins\n(C) Three 20\u00a2 coins and one 10\u00a2 coin\n(D) Four 20\u00a2 coins and one 10\u00a2 coin",
+    "choices": [
+      "Two 50\u00a2 coins",
+      "Five 10\u00a2 coins",
+      "Three 20\u00a2 coins and one 10\u00a2 coin",
+      "Four 20\u00a2 coins and one 10\u00a2 coin"
+    ],
+    "correct_answer": "A",
+    "difficulty_tier": "hard",
+    "difficulty_score": 44,
+    "tags": [
+      "money_singapore_coins",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "Check each set by adding the coins.",
+      "level_1": "$1 = 100\u00a2.",
+      "level_2": "Take a moment to carefully evaluate each choice before answering."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is Two 50\u00a2 coins.",
+      "1": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+      "2": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+      "3": "This doesn't match all the conditions in the problem. Test each clue against your answer."
+    },
+    "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 732 110\" width=\"732\" height=\"110\" style=\"font-family:Arial,sans-serif\"><circle cx=\"55\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"55\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"55\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"55\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"117\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"117\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"117\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"117\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"179\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"179\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"179\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"179\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"241\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"241\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"241\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"241\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"303\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"303\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"303\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"303\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"365\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"365\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"365\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"365\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"427\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"427\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"427\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"427\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"489\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"489\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"489\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"489\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"551\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"551\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"551\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"551\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"613\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"613\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"613\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"613\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"675\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"675\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"675\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"675\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text></svg>"
+  },
+  {
+    "id": "SING-G1-SMC-023",
+    "stem": "Ahmad's school starts at 7:30. He takes 1 hour to get ready. What time must he wake up?",
+    "choices": [
+      "6:00",
+      "6:30",
+      "7:00",
+      "8:30"
+    ],
+    "correct_answer": "B",
+    "difficulty_tier": "hard",
+    "difficulty_score": 45,
+    "tags": [
+      "time_clock",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "Count backwards 1 hour from 7:30.",
+      "level_1": "Let's review the core details of the question stem.",
+      "level_2": "Try testing each option to see which one matches the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 6:30.",
+      "0": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+      "2": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+      "3": "This doesn't match all the conditions in the problem. Test each clue against your answer."
+    }
+  },
+  {
+    "id": "SING-G1-SMC-064",
+    "stem": "Mei Ling is 7 years old. Her brother is twice her age. How old is her brother?",
+    "choices": [
+      "9",
+      "12",
+      "14",
+      "16"
+    ],
+    "correct_answer": "C",
+    "difficulty_tier": "hard",
+    "difficulty_score": 46,
+    "tags": [
+      "age_problems",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "Twice means 2 groups of 7.",
+      "level_1": "Let's review the core details of the question stem.",
+      "level_2": "Try testing each option to see which one matches the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 14.",
+      "0": "Not quite. You're off by 5. Re-check your arithmetic step by step.",
+      "1": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+      "3": "You're off by 2. Check whether you accidentally included or excluded boundary values."
+    }
+  },
+  {
+    "id": "SING-G1-SMC-067",
+    "stem": "Ahmad and his 3 friends share 16 ang pao equally. How many ang pao does each person get?",
+    "choices": [
+      "3",
+      "4",
+      "5",
+      "8"
+    ],
+    "correct_answer": "B",
+    "difficulty_tier": "hard",
+    "difficulty_score": 47,
+    "tags": [
+      "equal_sharing",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "Ahmad plus 3 friends = 4 people.",
+      "level_1": "Share 16 among 4.",
+      "level_2": "Take a moment to carefully evaluate each choice before answering."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 4.",
+      "0": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?",
+      "2": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?",
+      "3": "You doubled when you shouldn't have. Re-read the problem \u2014 are you counting each item once or twice?"
+    }
+  },
+  {
+    "id": "SING-G1-SMC-077",
+    "stem": "A picture shows some birds on a wire and some on the ground. There are 6 birds on the wire. There are 3 more birds on the ground than on the wire. How many birds are there altogether?",
+    "choices": [
+      "9",
+      "12",
+      "15",
+      "18"
+    ],
+    "correct_answer": "C",
+    "difficulty_tier": "hard",
+    "difficulty_score": 48,
+    "tags": [
+      "counting_objects",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": "A scene showing birds on a wire and birds on the ground below.",
+    "hint": {
+      "level_0": "Birds on ground = 6 + 3 = 9.",
+      "level_1": "Total = birds on wire + birds on ground.",
+      "level_2": "Take a moment to carefully evaluate each choice before answering."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 15.",
+      "0": "Not quite. You're off by 6. Re-check your arithmetic step by step.",
+      "1": "Not quite. You're off by 3. Re-check your arithmetic step by step.",
+      "3": "Not quite. You're off by 3. Re-check your arithmetic step by step."
+    },
+    "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 80\" width=\"240\" height=\"80\" style=\"font-family:Arial,sans-serif\"><text x=\"20\" y=\"25\" font-size=\"22\">\ud83d\udc26</text><text x=\"55\" y=\"25\" font-size=\"22\">\ud83d\udc26</text><text x=\"90\" y=\"25\" font-size=\"22\">\ud83d\udc26</text><text x=\"125\" y=\"25\" font-size=\"22\">\ud83d\udc26</text><text x=\"160\" y=\"25\" font-size=\"22\">\ud83d\udc26</text><text x=\"195\" y=\"25\" font-size=\"22\">\ud83d\udc26</text></svg>"
+  },
+  {
+    "id": "SING-G1-SMC-008",
+    "stem": "At a school bookshop, an eraser costs 30\u00a2 and a ruler costs 50\u00a2. Siti buys 2 erasers and 1 ruler. How much does she spend?",
+    "choices": [
+      "$1.00",
+      "$1.10",
+      "$1.20",
+      "$0.80"
+    ],
+    "correct_answer": "B",
+    "difficulty_tier": "hard",
+    "difficulty_score": 49,
+    "tags": [
+      "money_shopping",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "Two erasers cost 30\u00a2 + 30\u00a2 = 60\u00a2.",
+      "level_1": "Then add the ruler.",
+      "level_2": "Take a moment to carefully evaluate each choice before answering."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is $1.10.",
+      "0": "Not quite. You're off by 0. Re-check your arithmetic step by step.",
+      "2": "Not quite. You're off by 0. Re-check your arithmetic step by step.",
+      "3": "Not quite. You're off by 0. Re-check your arithmetic step by step."
+    }
+  },
+  {
+    "id": "SING-G1-SMC-017",
+    "stem": "Raju is thinking of a number. It is greater than 5. It is less than 9. It is an even number. The digit sum is more than 6. What is the number?",
+    "choices": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "correct_answer": "D",
+    "difficulty_tier": "hard",
+    "difficulty_score": 50,
+    "tags": [
+      "logic_deduction",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "Numbers greater than 5 and less than 9: 6, 7, 8.",
+      "level_1": "Even ones: 6 and 8.",
+      "level_2": "Which has a digit sum more than 6?"
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 8.",
+      "0": "Not quite. You're off by 3. Re-check your arithmetic step by step.",
+      "1": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+      "2": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?"
+    }
+  },
+  {
+    "id": "SING-G1-SMC-029",
+    "stem": "I am a two-digit number. My tens digit is 3 more than my ones digit. My ones digit is 2. What number am I?",
+    "choices": [
+      "23",
+      "32",
+      "52",
+      "53"
+    ],
+    "correct_answer": "C",
+    "difficulty_tier": "hard",
+    "difficulty_score": 51,
+    "tags": [
+      "number_properties",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "Ones digit = 2.",
+      "level_1": "Tens digit = 2 + 3 = 5.",
+      "level_2": "Take a moment to carefully evaluate each choice before answering."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 52.",
+      "0": "Check your subtraction \u2014 make sure you're borrowing/regrouping correctly.",
+      "1": "Check your subtraction \u2014 make sure you're borrowing/regrouping correctly.",
+      "3": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?"
+    }
+  },
+  {
+    "id": "SING-G1-SMC-069",
+    "stem": "Raju has 13 strawberries to share equally among 4 friends. Each friend gets the same number. How many strawberries are left over?",
+    "choices": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "correct_answer": "B",
+    "difficulty_tier": "hard",
+    "difficulty_score": 52,
+    "tags": [
+      "equal_sharing",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "4 friends can each get 3 strawberries (4 \u00d7 3 = 12).",
+      "level_1": "How many are left from 13?",
+      "level_2": "Take a moment to carefully evaluate each choice before answering."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 1.",
+      "0": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?",
+      "2": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?",
+      "3": "You're off by 2. Check whether you accidentally included or excluded boundary values."
+    }
+  },
+  {
+    "id": "SING-G1-SMC-072",
+    "stem": "Mei Ling has 3 bags with 4 kueh in each bag. She repacks them into new bags of 2 kueh each. How many new bags does she need?",
+    "choices": [
+      "4",
+      "5",
+      "6",
+      "8"
+    ],
+    "correct_answer": "C",
+    "difficulty_tier": "hard",
+    "difficulty_score": 53,
+    "tags": [
+      "repacking_division",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "First find the total: 3 bags \u00d7 4 kueh = 12 kueh.",
+      "level_1": "Then divide into bags of 2.",
+      "level_2": "Take a moment to carefully evaluate each choice before answering."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 6.",
+      "0": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+      "1": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?",
+      "3": "You're off by 2. Check whether you accidentally included or excluded boundary values."
+    }
+  },
+  {
+    "id": "SING-G1-SMC-009",
+    "stem": "Raju has $2. He buys a drink for 80\u00a2 and a bun for 70\u00a2. How much money does he have left?",
+    "choices": [
+      "40\u00a2",
+      "50\u00a2",
+      "60\u00a2",
+      "30\u00a2"
+    ],
+    "correct_answer": "B",
+    "difficulty_tier": "hard",
+    "difficulty_score": 54,
+    "tags": [
+      "money_shopping",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "First find the total cost, then subtract from $2.",
+      "level_1": "Let's review the core details of the question stem.",
+      "level_2": "Try testing each option to see which one matches the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 50\u00a2.",
+      "0": "Not quite. You're off by 10. Re-check your arithmetic step by step.",
+      "2": "Not quite. You're off by 10. Re-check your arithmetic step by step.",
+      "3": "Re-read the problem carefully and check which numbers and operations to use."
+    }
+  },
+  {
+    "id": "SING-G1-SMC-015",
+    "stem": "There are 6 bags. Each bag has 2 oranges. Siti eats 3 oranges. How many oranges are left?",
+    "choices": [
+      "7",
+      "8",
+      "9",
+      "10"
+    ],
+    "correct_answer": "C",
+    "difficulty_tier": "hard",
+    "difficulty_score": 55,
+    "tags": [
+      "multiplication_reasoning",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "First find the total number of oranges, then subtract 3.",
+      "level_1": "Let's review the core details of the question stem.",
+      "level_2": "Try testing each option to see which one matches the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 9.",
+      "0": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+      "1": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?",
+      "3": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?"
+    }
+  },
+  {
+    "id": "SING-G1-SMC-039",
+    "stem": "There are 15 children. They form groups of 4 for a game. How many complete groups can they form, and how many children are left over?",
+    "choices": [
+      "3 groups, 3 left over",
+      "4 groups, 1 left over",
+      "3 groups, 2 left over",
+      "4 groups, 0 left over"
+    ],
+    "correct_answer": "A",
+    "difficulty_tier": "hard",
+    "difficulty_score": 56,
+    "tags": [
+      "division_grouping",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "3 groups of 4 = 12.",
+      "level_1": "How many are left from 15?",
+      "level_2": "Take a moment to carefully evaluate each choice before answering."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 3 groups, 3 left over.",
+      "1": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+      "2": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+      "3": "This doesn't match all the conditions in the problem. Test each clue against your answer."
+    }
+  },
+  {
+    "id": "SING-G1-SMC-041",
+    "stem": "A square garden has sides of 3 metres. Mei Ling places a plant at each corner and one plant in the middle of each side. How many plants does she place?",
+    "choices": [
+      "4",
+      "6",
+      "8",
+      "12"
+    ],
+    "correct_answer": "C",
+    "difficulty_tier": "hard",
+    "difficulty_score": 57,
+    "tags": [
+      "spatial_perimeter",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": "A square with dots at each of the 4 corners and 1 dot in the middle of each of the 4 sides.",
+    "hint": {
+      "level_0": "A square has 4 corners and 4 sides.",
+      "level_1": "Count the plants at corners and sides separately.",
+      "level_2": "Take a moment to carefully evaluate each choice before answering."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 8.",
+      "0": "You may have divided when you should have multiplied, or only counted half the items.",
+      "1": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+      "3": "Not quite. You're off by 4. Re-check your arithmetic step by step."
+    }
+  },
+  {
+    "id": "SING-G1-SMC-044",
+    "stem": "There are 12 chairs arranged in a circle for musical chairs. How many spaces are there between the chairs?",
+    "choices": [
+      "10",
+      "11",
+      "12",
+      "13"
+    ],
+    "correct_answer": "C",
+    "difficulty_tier": "hard",
+    "difficulty_score": 58,
+    "tags": [
+      "spatial_perimeter",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": "12 chairs arranged in a circle.",
+    "hint": {
+      "level_0": "In a circle, the number of spaces between objects equals the number of objects.",
+      "level_1": "Let's review the core details of the question stem.",
+      "level_2": "Try testing each option to see which one matches the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 12.",
+      "0": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+      "1": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?",
+      "3": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?"
+    }
+  },
+  {
+    "id": "SING-G1-SMC-048",
+    "stem": "There are 3 children: Siti, Raju, and Wei Ming. Two of them will be chosen to carry the class flag. How many different pairs can be chosen?",
+    "choices": [
+      "2",
+      "3",
+      "4",
+      "6"
+    ],
+    "correct_answer": "B",
+    "difficulty_tier": "hard",
+    "difficulty_score": 59,
+    "tags": [
+      "combinatorics",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "List all pairs: (Siti, Raju), (Siti, Wei Ming), (Raju, Wei Ming).",
+      "level_1": "Let's review the core details of the question stem.",
+      "level_2": "Try testing each option to see which one matches the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 3.",
+      "0": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?",
+      "2": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?",
+      "3": "You doubled when you shouldn't have. Re-read the problem \u2014 are you counting each item once or twice?"
+    }
+  },
+  {
+    "id": "SING-G1-SMC-051",
+    "stem": "For every 2 red beads Siti strings, she strings 3 blue beads. If she has 6 red beads, how many blue beads does she have?",
+    "choices": [
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "correct_answer": "D",
+    "difficulty_tier": "hard",
+    "difficulty_score": 60,
+    "tags": [
+      "proportional_reasoning",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "6 red beads = 3 groups of 2 red beads.",
+      "level_1": "For each group, there are 3 blue beads.",
+      "level_2": "Take a moment to carefully evaluate each choice before answering."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 9.",
+      "0": "Not quite. You're off by 3. Re-check your arithmetic step by step.",
+      "1": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+      "2": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?"
+    }
+  },
+  {
+    "id": "SING-G1-SMC-055",
+    "stem": "For every 1 boy in the art class, there are 2 girls. There are 5 boys. How many children are in the class altogether?",
+    "choices": [
+      "10",
+      "12",
+      "15",
+      "17"
+    ],
+    "correct_answer": "C",
+    "difficulty_tier": "olympiad",
+    "difficulty_score": 61,
+    "tags": [
+      "proportional_reasoning",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "5 boys and 2 girls for each boy means 10 girls.",
+      "level_1": "Total = boys + girls.",
+      "level_2": "Take a moment to carefully evaluate each choice before answering."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 15.",
+      "0": "Not quite. You're off by 5. Re-check your arithmetic step by step.",
+      "1": "Not quite. You're off by 3. Re-check your arithmetic step by step.",
+      "3": "You're off by 2. Check whether you accidentally included or excluded boundary values."
+    }
+  },
+  {
+    "id": "SING-G1-SMC-058",
+    "stem": "Raju thought of a number. He added 4 and then subtracted 2. He got 9. What was his starting number?",
+    "choices": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "correct_answer": "C",
+    "difficulty_tier": "olympiad",
+    "difficulty_score": 62,
+    "tags": [
+      "work_backwards",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "Work backwards: 9 + 2 = 11, then 11 \u2212 4 = 7.",
+      "level_1": "Let's review the core details of the question stem.",
+      "level_2": "Try testing each option to see which one matches the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 7.",
+      "0": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+      "1": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?",
+      "3": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?"
+    }
+  },
+  {
+    "id": "SING-G1-SMC-070",
+    "stem": "3 children share 18 grapes equally. Then each child gives 2 grapes to the teacher. How many grapes does each child have now?",
+    "choices": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct_answer": "C",
+    "difficulty_tier": "olympiad",
+    "difficulty_score": 63,
+    "tags": [
+      "equal_sharing",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "First share 18 among 3, then subtract 2 from each child's share.",
+      "level_1": "Let's review the core details of the question stem.",
+      "level_2": "Try testing each option to see which one matches the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 4.",
+      "0": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+      "1": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?",
+      "3": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?"
+    }
+  },
+  {
+    "id": "SING-G1-SMC-074",
+    "stem": "A fruit seller has 4 trays of 5 mangoes. She repacks them into bags of 4 mangoes each. How many bags can she fill completely?",
+    "choices": [
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "correct_answer": "B",
+    "difficulty_tier": "olympiad",
+    "difficulty_score": 64,
+    "tags": [
+      "repacking_division",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "Total = 20 mangoes.",
+      "level_1": "20 \u00f7 4 = 5 bags.",
+      "level_2": "Take a moment to carefully evaluate each choice before answering."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 5.",
+      "0": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?",
+      "2": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?",
+      "3": "You're off by 2. Check whether you accidentally included or excluded boundary values."
+    }
+  },
+  {
+    "id": "SING-G1-SMC-079",
+    "stem": "A picture shows apples in a basket. Some are red and some are green. There are 4 green apples. There are twice as many red apples as green apples. How many apples are in the basket?",
+    "choices": [
+      "6",
+      "8",
+      "10",
+      "12"
+    ],
+    "correct_answer": "D",
+    "difficulty_tier": "olympiad",
+    "difficulty_score": 65,
+    "tags": [
+      "counting_objects",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": "A basket containing red and green apples.",
+    "hint": {
+      "level_0": "Red apples = twice 4 = 8.",
+      "level_1": "Total = red + green.",
+      "level_2": "Take a moment to carefully evaluate each choice before answering."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 12.",
+      "0": "You may have divided when you should have multiplied, or only counted half the items.",
+      "1": "Not quite. You're off by 4. Re-check your arithmetic step by step.",
+      "2": "You're off by 2. Check whether you accidentally included or excluded boundary values."
+    },
+    "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 90 90\" width=\"90\" height=\"90\" style=\"font-family:Arial,sans-serif\"><rect x=\"20\" y=\"20\" width=\"50\" height=\"50\" rx=\"8\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2\"/><text x=\"45\" y=\"52\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#333\">4</text></svg>"
+  },
+  {
+    "id": "SING-G1-SMC-016",
+    "stem": "Three children \u2014 Mei Ling, Ahmad, and Siti \u2014 each have a different favourite fruit: apple, banana, or orange. Mei Ling does not like apples. Ahmad likes oranges. What is Mei Ling's favourite fruit?",
+    "choices": [
+      "Apple",
+      "Banana",
+      "Orange",
+      "Cannot tell"
+    ],
+    "correct_answer": "B",
+    "difficulty_tier": "olympiad",
+    "difficulty_score": 66,
+    "tags": [
+      "logic_deduction",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "Ahmad likes oranges.",
+      "level_1": "Mei Ling does not like apples.",
+      "level_2": "What is left for Mei Ling?"
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is Banana.",
+      "0": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+      "2": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+      "3": "This doesn't match all the conditions in the problem. Test each clue against your answer."
+    }
+  },
+  {
+    "id": "SING-G1-SMC-030",
+    "stem": "Mei Ling adds two odd numbers. Is the answer odd or even?",
+    "choices": [
+      "Always odd",
+      "Always even",
+      "Sometimes odd, sometimes even",
+      "Cannot tell"
+    ],
+    "correct_answer": "B",
+    "difficulty_tier": "olympiad",
+    "difficulty_score": 67,
+    "tags": [
+      "number_properties",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "Try some examples: 1+3, 3+5, 5+7.",
+      "level_1": "What do you notice?",
+      "level_2": "Take a moment to carefully evaluate each choice before answering."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is Always even.",
+      "0": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+      "2": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+      "3": "This doesn't match all the conditions in the problem. Test each clue against your answer."
+    }
+  },
+  {
+    "id": "SING-G1-SMC-043",
+    "stem": "Siti walks around a rectangular garden that is 5 metres long and 3 metres wide. How many metres does she walk in one full loop?",
+    "choices": [
+      "8",
+      "15",
+      "16",
+      "30"
+    ],
+    "correct_answer": "C",
+    "difficulty_tier": "olympiad",
+    "difficulty_score": 68,
+    "tags": [
+      "spatial_perimeter",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": "A rectangle labelled 5 m on the long sides and 3 m on the short sides.",
+    "hint": {
+      "level_0": "Add all four sides: 5 + 3 + 5 + 3.",
+      "level_1": "Let's review the core details of the question stem.",
+      "level_2": "Try testing each option to see which one matches the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 16.",
+      "0": "You may have divided when you should have multiplied, or only counted half the items.",
+      "1": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?",
+      "3": "Re-read the problem carefully and check which numbers and operations to use."
+    }
+  },
+  {
+    "id": "SING-G1-SMC-045",
+    "stem": "Wei Ming plants 4 flags in a straight line. There are 2 metres between each pair of neighbouring flags. What is the distance from the first flag to the last flag?",
+    "choices": [
+      "4 m",
+      "6 m",
+      "8 m",
+      "10 m"
+    ],
+    "correct_answer": "B",
+    "difficulty_tier": "olympiad",
+    "difficulty_score": 69,
+    "tags": [
+      "spatial_perimeter",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": "4 flags in a row with equal gaps between them.",
+    "hint": {
+      "level_0": "4 flags create 3 gaps.",
+      "level_1": "Each gap is 2 m.",
+      "level_2": "Take a moment to carefully evaluate each choice before answering."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 6 m.",
+      "0": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+      "2": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+      "3": "Not quite. You're off by 4. Re-check your arithmetic step by step."
+    }
+  },
+  {
+    "id": "SING-G1-SMC-059",
+    "stem": "Mei Ling had some books. She returned 3 to the library and borrowed 5 new ones. Now she has 12 books. How many did she have at first?",
+    "choices": [
+      "8",
+      "10",
+      "12",
+      "14"
+    ],
+    "correct_answer": "B",
+    "difficulty_tier": "olympiad",
+    "difficulty_score": 70,
+    "tags": [
+      "work_backwards",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "Work backwards from 12: undo borrowing 5 (subtract 5), then undo returning 3 (add 3).",
+      "level_1": "Let's review the core details of the question stem.",
+      "level_2": "Try testing each option to see which one matches the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 10.",
+      "0": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+      "2": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+      "3": "Not quite. You're off by 4. Re-check your arithmetic step by step."
+    }
+  },
+  {
+    "id": "SING-G1-SMC-065",
+    "stem": "Raju is 6. Ahmad is 3 years older than Raju. Siti is 2 years younger than Ahmad. How old is Siti?",
+    "choices": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "correct_answer": "C",
+    "difficulty_tier": "olympiad",
+    "difficulty_score": 71,
+    "tags": [
+      "age_problems",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "First find Ahmad's age, then subtract 2 for Siti.",
+      "level_1": "Let's review the core details of the question stem.",
+      "level_2": "Try testing each option to see which one matches the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 7.",
+      "0": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+      "1": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?",
+      "3": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?"
+    }
+  },
+  {
+    "id": "SING-G1-SMC-020",
+    "stem": "Siti, Ahmad, and Raju each have a different pet: a cat, a dog, or a fish. Ahmad's pet lives in water. Raju's pet barks. What pet does Siti have?",
+    "choices": [
+      "Cat",
+      "Dog",
+      "Fish",
+      "Cannot tell"
+    ],
+    "correct_answer": "A",
+    "difficulty_tier": "olympiad",
+    "difficulty_score": 72,
+    "tags": [
+      "logic_deduction",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "Ahmad's pet lives in water \u2014 that is the fish.",
+      "level_1": "Raju's pet barks \u2014 that is the dog.",
+      "level_2": "What is left for Siti?"
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is Cat.",
+      "1": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+      "2": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+      "3": "This doesn't match all the conditions in the problem. Test each clue against your answer."
+    }
+  },
+  {
+    "id": "SING-G1-SMC-042",
+    "stem": "Ahmad places tiles around the border of a 3-by-3 square grid. How many tiles does he need for the border only?",
+    "choices": [
+      "6",
+      "8",
+      "9",
+      "12"
+    ],
+    "correct_answer": "B",
+    "difficulty_tier": "olympiad",
+    "difficulty_score": 73,
+    "tags": [
+      "spatial_perimeter",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": "A 3x3 grid of squares. The 8 border squares are shaded and the 1 centre square is unshaded.",
+    "hint": {
+      "level_0": "A 3-by-3 grid has 9 squares total.",
+      "level_1": "Only 1 is in the centre, not on the border.",
+      "level_2": "Take a moment to carefully evaluate each choice before answering."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 8.",
+      "0": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+      "2": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?",
+      "3": "You may have added instead of subtracting, or subtracted in the wrong order."
+    },
+    "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 190\" width=\"300\" height=\"190\" style=\"font-family:Arial,sans-serif\"><rect x=\"80\" y=\"20\" width=\"140\" height=\"140\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2.5\"/><text x=\"150\" y=\"178\" text-anchor=\"middle\" font-size=\"13\" fill=\"#333\">3 cm</text></svg>"
+  },
+  {
+    "id": "SING-G1-SMC-049",
+    "stem": "A sandwich shop offers chicken or tuna filling, and white or brown bread. Mei Ling also chooses whether to add cheese or not. How many different sandwiches can she order?",
+    "choices": [
+      "4",
+      "6",
+      "8",
+      "12"
+    ],
+    "correct_answer": "C",
+    "difficulty_tier": "olympiad",
+    "difficulty_score": 74,
+    "tags": [
+      "combinatorics",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "2 fillings, 2 breads, 2 cheese options.",
+      "level_1": "Multiply: 2 \u00d7 2 \u00d7 2.",
+      "level_2": "Take a moment to carefully evaluate each choice before answering."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 8.",
+      "0": "You may have divided when you should have multiplied, or only counted half the items.",
+      "1": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+      "3": "Not quite. You're off by 4. Re-check your arithmetic step by step."
+    }
+  },
+  {
+    "id": "SING-G1-SMC-018",
+    "stem": "Four children sit in a row. Wei Ming is not at either end. Siti is next to Wei Ming. Ahmad is at the left end. Where is Siti?",
+    "choices": [
+      "1st from left",
+      "2nd from left",
+      "3rd from left",
+      "4th from left"
+    ],
+    "correct_answer": "B",
+    "difficulty_tier": "olympiad",
+    "difficulty_score": 75,
+    "tags": [
+      "logic_deduction",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "Ahmad is 1st.",
+      "level_1": "Wei Ming is not at either end, so he is 2nd or 3rd.",
+      "level_2": "Siti is next to Wei Ming."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 2nd from left.",
+      "0": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+      "2": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+      "3": "This doesn't match all the conditions in the problem. Test each clue against your answer."
+    }
+  },
+  {
+    "id": "SING-G1-SMC-026",
+    "stem": "How many times does the digit 1 appear when you write all the numbers from 1 to 20?",
+    "choices": [
+      "10",
+      "11",
+      "12",
+      "13"
+    ],
+    "correct_answer": "C",
+    "difficulty_tier": "olympiad",
+    "difficulty_score": 76,
+    "tags": [
+      "number_properties",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "List: 1, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19.",
+      "level_1": "Count each '1' digit.",
+      "level_2": "Note that 11 has two 1s."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 12.",
+      "0": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+      "1": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?",
+      "3": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?"
+    }
+  },
+  {
+    "id": "SING-G1-SMC-034",
+    "stem": "Star + Moon = 9. Star \u2212 Moon = 3. What is Star?",
+    "choices": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "correct_answer": "D",
+    "difficulty_tier": "olympiad",
+    "difficulty_score": 77,
+    "tags": [
+      "algebra_picture_eq",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": "Two equations: \u2605 + \u263d = 9 and \u2605 \u2212 \u263d = 3.",
+    "hint": {
+      "level_0": "Try each answer for Star and see which one works for both equations.",
+      "level_1": "Let's review the core details of the question stem.",
+      "level_2": "Try testing each option to see which one matches the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 6.",
+      "0": "You may have divided when you should have multiplied, or only counted half the items.",
+      "1": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+      "2": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?"
+    }
+  },
+  {
+    "id": "SING-G1-SMC-060",
+    "stem": "A bus had some passengers. At the first stop, 4 people got off and 7 got on. Now there are 15 passengers. How many were on the bus at the start?",
+    "choices": [
+      "10",
+      "11",
+      "12",
+      "13"
+    ],
+    "correct_answer": "C",
+    "difficulty_tier": "olympiad",
+    "difficulty_score": 78,
+    "tags": [
+      "work_backwards",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "Work backwards from 15: undo the 7 who got on (subtract 7 = 8), then undo the 4 who got off (add 4 = 12).",
+      "level_1": "Let's review the core details of the question stem.",
+      "level_2": "Try testing each option to see which one matches the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 12.",
+      "0": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+      "1": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?",
+      "3": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?"
+    }
+  },
+  {
+    "id": "SING-G1-SMC-078",
+    "stem": "In a picture, there are circles and triangles. There are 8 shapes altogether. There are 2 more circles than triangles. How many circles are there?",
+    "choices": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "correct_answer": "C",
+    "difficulty_tier": "olympiad",
+    "difficulty_score": 79,
+    "tags": [
+      "counting_objects",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": "A collection of 5 circles and 3 triangles mixed together.",
+    "hint": {
+      "level_0": "If there are 5 circles and 3 triangles, then 5 + 3 = 8 and 5 \u2212 3 = 2.",
+      "level_1": "Both conditions are met.",
+      "level_2": "Take a moment to carefully evaluate each choice before answering."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 5.",
+      "0": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+      "1": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?",
+      "3": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?"
+    },
+    "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 200\" width=\"300\" height=\"200\" style=\"font-family:Arial,sans-serif\"><polygon points=\"150,20 50,170 250,170\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2.5\"/><text x=\"150\" y=\"190\" text-anchor=\"middle\" font-size=\"13\" fill=\"#333\">8 cm</text><text x=\"30\" y=\"100\" text-anchor=\"middle\" font-size=\"13\" fill=\"#333\"></text></svg>"
+  },
+  {
+    "id": "SING-G1-SMC-035",
+    "stem": "Apple + Banana = 8. Apple + Apple + Banana = 13. What is Apple?",
+    "choices": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "correct_answer": "C",
+    "difficulty_tier": "olympiad",
+    "difficulty_score": 80,
+    "tags": [
+      "algebra_picture_eq",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": "Two equations using fruit pictures: \ud83c\udf4e + \ud83c\udf4c = 8 and \ud83c\udf4e + \ud83c\udf4e + \ud83c\udf4c = 13.",
+    "hint": {
+      "level_0": "Compare the two equations.",
+      "level_1": "The second has one extra Apple.",
+      "level_2": "So Apple = 13 \u2212 8."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 5.",
+      "0": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+      "1": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?",
+      "3": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?"
+    }
+  }
+]

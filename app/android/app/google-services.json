@@ -66,6 +66,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "876296514345-255fht6nf545p7hesl7dakc9i5jvme07.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vedantu.kiwimath",
+            "certificate_hash": "bd7bb08a2fbe0f57addc98d231b79b7de28a9c70"
+          }
+        },
+        {
           "client_id": "876296514345-cvqc476ikc8ehqa25kat4oeqmfavt1n2.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {

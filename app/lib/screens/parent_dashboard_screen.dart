@@ -84,13 +84,18 @@ class _ParentDashboardScreenState extends State<ParentDashboardScreen> {
   // Build
   // ---------------------------------------------------------------------------
 
+  // Tier for theming — parent dashboard defaults to junior tier.
+  KiwiTier get _tier => KiwiTier.forGrade(1);
+
   @override
   Widget build(BuildContext context) {
+    final tier = _tier;
+    final colors = tier.colors;
     return Scaffold(
-      backgroundColor: KiwiColors.cream,
+      backgroundColor: colors.background,
       body: SafeArea(
         child: _loading
-            ? Center(child: CircularProgressIndicator(color: KiwiColors.kiwiPrimary))
+            ? Center(child: CircularProgressIndicator(color: colors.primary))
             : _error != null
                 ? _buildError()
                 : _buildBody(),
@@ -99,40 +104,45 @@ class _ParentDashboardScreenState extends State<ParentDashboardScreen> {
   }
 
   Widget _buildError() {
+    final tier = _tier;
+    final colors = tier.colors;
+    final typo = tier.typography;
+    final shape = tier.shape;
     return Center(
       child: Padding(
-        padding: const EdgeInsets.all(24),
+        padding: const EdgeInsets.all(KiwiSpacing.xl),
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Icon(Icons.cloud_off_rounded, size: 48, color: Colors.grey.shade300),
-            const SizedBox(height: 12),
-            const Text(
+            Icon(Icons.cloud_off_rounded, size: 48, color: colors.textMuted),
+            const SizedBox(height: KiwiSpacing.md),
+            Text(
               'Could not load the dashboard',
               style: TextStyle(
-                fontSize: 16,
-                fontWeight: FontWeight.w800,
-                color: KiwiColors.textDark,
+                fontSize: typo.bodySize,
+                fontWeight: typo.headlineWeight,
+                color: colors.textPrimary,
+                fontFamily: typo.fontFamily,
               ),
             ),
-            const SizedBox(height: 6),
+            const SizedBox(height: KiwiSpacing.sm),
             Text(
               _error!,
               textAlign: TextAlign.center,
-              style: const TextStyle(fontSize: 13, color: KiwiColors.textMid, height: 1.4),
+              style: TextStyle(fontSize: typo.chipSize, color: colors.textSecondary, height: 1.4, fontFamily: typo.fontFamily),
             ),
-            const SizedBox(height: 18),
+            const SizedBox(height: KiwiSpacing.lg),
             GestureDetector(
               onTap: _load,
               child: Container(
-                padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                padding: shape.buttonPadding,
                 decoration: BoxDecoration(
-                  color: KiwiColors.kiwiPrimary,
-                  borderRadius: BorderRadius.circular(12),
+                  color: colors.primary,
+                  borderRadius: BorderRadius.circular(shape.buttonRadius),
                 ),
-                child: const Text(
+                child: Text(
                   'Try again',
-                  style: TextStyle(fontSize: 14, fontWeight: FontWeight.w700, color: Colors.white),
+                  style: TextStyle(fontSize: typo.buttonSize, fontWeight: FontWeight.w700, color: Colors.white, fontFamily: typo.fontFamily),
                 ),
               ),
             ),
@@ -168,11 +178,16 @@ class _ParentDashboardScreenState extends State<ParentDashboardScreen> {
     final competency = data['competency_breakdown'] as Map<String, dynamic>?;
     final growth = data['growth'] as Map<String, dynamic>?;
 
+    final tier = _tier;
+    final colors = tier.colors;
+    final typo = tier.typography;
+    final shape = tier.shape;
+
     return RefreshIndicator(
-      color: KiwiColors.kiwiPrimary,
+      color: colors.primary,
       onRefresh: _load,
       child: ListView(
-        padding: const EdgeInsets.fromLTRB(18, 14, 18, 28),
+        padding: KiwiSpacing.sectionPadding,
         children: [
           // Kiwi mascot + greeting
           _buildGreeting(childName),
@@ -225,6 +240,10 @@ class _ParentDashboardScreenState extends State<ParentDashboardScreen> {
             const SizedBox(height: 8),
             ...recommendations.map((r) => _buildTip(r)),
           ],
+
+          // COPPA — Child data management
+          const SizedBox(height: 24),
+          _buildDataManagementSection(childName),
         ],
       ),
     );
@@ -235,13 +254,15 @@ class _ParentDashboardScreenState extends State<ParentDashboardScreen> {
   // ---------------------------------------------------------------------------
 
   Widget _buildGreeting(String childName) {
+    final colors = _tier.colors;
+    final typo = _tier.typography;
     return Row(
       children: [
         // Kiwi avatar
         Container(
           width: 44,
           height: 44,
-          decoration: const BoxDecoration(
+          decoration: BoxDecoration(
             color: KiwiColors.kiwiPrimaryLight,
             shape: BoxShape.circle,
           ),
@@ -249,22 +270,23 @@ class _ParentDashboardScreenState extends State<ParentDashboardScreen> {
             child: Text('\u{1F95D}', style: TextStyle(fontSize: 22)),
           ),
         ),
-        const SizedBox(width: 12),
+        const SizedBox(width: KiwiSpacing.md),
         Expanded(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
                 "How $childName is doing",
-                style: const TextStyle(
-                  fontSize: 18,
-                  fontWeight: FontWeight.w800,
-                  color: KiwiColors.textDark,
+                style: TextStyle(
+                  fontSize: typo.headlineSize,
+                  fontWeight: typo.headlineWeight,
+                  color: colors.textPrimary,
+                  fontFamily: typo.fontFamily,
                 ),
               ),
-              const Text(
+              Text(
                 'Your child\'s learning journey',
-                style: TextStyle(fontSize: 12, color: KiwiColors.textMuted),
+                style: TextStyle(fontSize: typo.chipSize, color: colors.textMuted, fontFamily: typo.fontFamily),
               ),
             ],
           ),
@@ -272,12 +294,12 @@ class _ParentDashboardScreenState extends State<ParentDashboardScreen> {
         if (_loading)
           SizedBox(
             width: 18, height: 18,
-            child: CircularProgressIndicator(strokeWidth: 2, color: KiwiColors.kiwiPrimary),
+            child: CircularProgressIndicator(strokeWidth: 2, color: colors.primary),
           )
         else
           GestureDetector(
             onTap: _load,
-            child: const Icon(Icons.refresh_rounded, size: 22, color: KiwiColors.textMuted),
+            child: Icon(Icons.refresh_rounded, size: 22, color: colors.textMuted),
           ),
       ],
     );
@@ -301,12 +323,15 @@ class _ParentDashboardScreenState extends State<ParentDashboardScreen> {
       emoji = '\u{1F680}';
     }
 
+    final colors = _tier.colors;
+    final typo = _tier.typography;
+    final shape = _tier.shape;
     return Container(
-      padding: const EdgeInsets.all(18),
+      padding: shape.cardPadding,
       decoration: BoxDecoration(
-        color: Colors.white,
-        borderRadius: BorderRadius.circular(16),
-        border: Border.all(color: KiwiColors.kiwiPrimary.withOpacity(0.15)),
+        color: colors.cardBg,
+        borderRadius: BorderRadius.circular(shape.cardRadius),
+        border: Border.all(color: colors.primary.withOpacity(0.15)),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -316,14 +341,15 @@ class _ParentDashboardScreenState extends State<ParentDashboardScreen> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(emoji, style: const TextStyle(fontSize: 24)),
-              const SizedBox(width: 12),
+              const SizedBox(width: KiwiSpacing.md),
               Expanded(
                 child: RichText(
                   text: TextSpan(
-                    style: const TextStyle(
-                      fontSize: 15,
-                      color: KiwiColors.textDark,
+                    style: TextStyle(
+                      fontSize: typo.bodySize,
+                      color: colors.textPrimary,
                       height: 1.4,
+                      fontFamily: typo.fontFamily,
                     ),
                     children: [
                       const TextSpan(
@@ -340,15 +366,15 @@ class _ParentDashboardScreenState extends State<ParentDashboardScreen> {
               ),
             ],
           ),
-          const SizedBox(height: 16),
+          const SizedBox(height: KiwiSpacing.lg),
           // Key numbers — simple, not overwhelming
           Row(
             children: [
               _miniStat('${accuracy.round()}%', 'Accuracy',
                   accuracy >= 70 ? KiwiColors.kiwiPrimary : KiwiColors.sunset),
-              const SizedBox(width: 16),
+              const SizedBox(width: KiwiSpacing.lg),
               _miniStat('$totalQ', 'Questions', KiwiColors.sky),
-              const SizedBox(width: 16),
+              const SizedBox(width: KiwiSpacing.lg),
               _miniStat('$streak days', 'This week', KiwiColors.streakWarm),
             ],
           ),
@@ -358,30 +384,34 @@ class _ParentDashboardScreenState extends State<ParentDashboardScreen> {
   }
 
   Widget _miniStat(String value, String label, Color color) {
+    final typo = _tier.typography;
+    final shape = _tier.shape;
     return Expanded(
       child: Container(
-        padding: const EdgeInsets.symmetric(vertical: 10),
+        padding: const EdgeInsets.symmetric(vertical: KiwiSpacing.sm),
         decoration: BoxDecoration(
           color: color.withOpacity(0.08),
-          borderRadius: BorderRadius.circular(10),
+          borderRadius: BorderRadius.circular(shape.chipRadius),
         ),
         child: Column(
           children: [
             Text(
               value,
               style: TextStyle(
-                fontSize: 16,
+                fontSize: typo.bodySize,
                 fontWeight: FontWeight.w800,
                 color: color,
+                fontFamily: typo.fontFamily,
               ),
             ),
             const SizedBox(height: 2),
             Text(
               label,
               style: TextStyle(
-                fontSize: 10,
+                fontSize: typo.chipSize - 2,
                 fontWeight: FontWeight.w500,
                 color: color.withOpacity(0.8),
+                fontFamily: typo.fontFamily,
               ),
             ),
           ],
@@ -393,13 +423,16 @@ class _ParentDashboardScreenState extends State<ParentDashboardScreen> {
   Widget _buildWeeklyCheck(int done, int goal) {
     final fraction = goal > 0 ? (done / goal).clamp(0.0, 1.0) : 0.0;
     final isComplete = done >= goal;
+    final colors = _tier.colors;
+    final typo = _tier.typography;
+    final shape = _tier.shape;
 
     return Container(
-      padding: const EdgeInsets.all(14),
+      padding: shape.cardPadding,
       decoration: BoxDecoration(
-        color: Colors.white,
-        borderRadius: BorderRadius.circular(14),
-        border: Border.all(color: Colors.grey.shade200),
+        color: colors.cardBg,
+        borderRadius: BorderRadius.circular(shape.cardRadius),
+        border: Border.all(color: colors.topicCardBorder),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -411,25 +444,26 @@ class _ParentDashboardScreenState extends State<ParentDashboardScreen> {
                 size: 18,
                 color: isComplete ? KiwiColors.kiwiGreen : KiwiColors.sunset,
               ),
-              const SizedBox(width: 8),
-              const Text(
+              const SizedBox(width: KiwiSpacing.sm),
+              Text(
                 'Weekly practice',
-                style: TextStyle(fontSize: 13, fontWeight: FontWeight.w700, color: KiwiColors.textDark),
+                style: TextStyle(fontSize: typo.chipSize, fontWeight: FontWeight.w700, color: colors.textPrimary, fontFamily: typo.fontFamily),
               ),
               const Spacer(),
               Text(
                 '$done / $goal questions',
                 style: TextStyle(
-                  fontSize: 12,
+                  fontSize: typo.chipSize,
                   fontWeight: FontWeight.w600,
                   color: isComplete ? KiwiColors.kiwiGreen : KiwiColors.sunset,
+                  fontFamily: typo.fontFamily,
                 ),
               ),
             ],
           ),
-          const SizedBox(height: 10),
+          const SizedBox(height: KiwiSpacing.sm),
           ClipRRect(
-            borderRadius: BorderRadius.circular(4),
+            borderRadius: BorderRadius.circular(KiwiSpacing.xs),
             child: LinearProgressIndicator(
               value: fraction,
               minHeight: 7,
@@ -439,10 +473,10 @@ class _ParentDashboardScreenState extends State<ParentDashboardScreen> {
             ),
           ),
           if (isComplete) ...[
-            const SizedBox(height: 6),
+            const SizedBox(height: KiwiSpacing.sm),
             Text(
               'Great job this week! Consistent practice builds confidence.',
-              style: TextStyle(fontSize: 11.5, color: KiwiColors.kiwiPrimary, fontWeight: FontWeight.w500),
+              style: TextStyle(fontSize: typo.chipSize - 1, color: colors.primary, fontWeight: FontWeight.w500, fontFamily: typo.fontFamily),
             ),
           ],
         ],
@@ -451,6 +485,9 @@ class _ParentDashboardScreenState extends State<ParentDashboardScreen> {
   }
 
   Widget _buildDiagnosticButton() {
+    final colors = _tier.colors;
+    final typo = _tier.typography;
+    final shape = _tier.shape;
     return GestureDetector(
       onTap: () {
         Navigator.of(context).push(
@@ -466,10 +503,10 @@ class _ParentDashboardScreenState extends State<ParentDashboardScreen> {
         );
       },
       child: Container(
-        padding: const EdgeInsets.all(14),
+        padding: shape.cardPadding,
         decoration: BoxDecoration(
-          color: Colors.white,
-          borderRadius: BorderRadius.circular(14),
+          color: colors.cardBg,
+          borderRadius: BorderRadius.circular(shape.cardRadius),
           border: Border.all(color: KiwiColors.sky.withOpacity(0.3)),
         ),
         child: Row(
@@ -479,32 +516,32 @@ class _ParentDashboardScreenState extends State<ParentDashboardScreen> {
               height: 36,
               decoration: BoxDecoration(
                 color: KiwiColors.sky.withOpacity(0.1),
-                borderRadius: BorderRadius.circular(10),
+                borderRadius: BorderRadius.circular(shape.chipRadius),
               ),
               child: const Center(
                 child: Icon(Icons.assignment_outlined, size: 18, color: KiwiColors.sky),
               ),
             ),
-            const SizedBox(width: 12),
+            const SizedBox(width: KiwiSpacing.md),
             Expanded(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
-                children: const [
+                children: [
                   Text(
                     'Run a diagnostic test',
                     style: TextStyle(
-                      fontSize: 13, fontWeight: FontWeight.w700, color: KiwiColors.textDark,
+                      fontSize: typo.chipSize, fontWeight: FontWeight.w700, color: colors.textPrimary, fontFamily: typo.fontFamily,
                     ),
                   ),
-                  SizedBox(height: 2),
+                  const SizedBox(height: 2),
                   Text(
                     '20 questions to measure exact proficiency level',
-                    style: TextStyle(fontSize: 11.5, color: KiwiColors.textMuted),
+                    style: TextStyle(fontSize: typo.chipSize - 1, color: colors.textMuted, fontFamily: typo.fontFamily),
                   ),
                 ],
               ),
             ),
-            const Icon(Icons.chevron_right_rounded, size: 20, color: KiwiColors.textMuted),
+            Icon(Icons.chevron_right_rounded, size: 20, color: colors.textMuted),
           ],
         ),
       ),
@@ -513,34 +550,37 @@ class _ParentDashboardScreenState extends State<ParentDashboardScreen> {
 
   Widget _buildClanSection() {
     final clan = widget.childClan;
+    final colors = _tier.colors;
+    final typo = _tier.typography;
+    final shape = _tier.shape;
 
     // Child is not in a clan — show informational card
     if (clan == null) {
       return Container(
-        padding: const EdgeInsets.all(14),
+        padding: shape.cardPadding,
         decoration: BoxDecoration(
-          color: Colors.white,
-          borderRadius: BorderRadius.circular(14),
-          border: Border.all(color: Colors.grey.shade200),
+          color: colors.cardBg,
+          borderRadius: BorderRadius.circular(shape.cardRadius),
+          border: Border.all(color: colors.topicCardBorder),
         ),
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const Icon(Icons.groups_rounded, size: 20, color: KiwiColors.textMuted),
-            const SizedBox(width: 10),
+            Icon(Icons.groups_rounded, size: 20, color: colors.textMuted),
+            const SizedBox(width: KiwiSpacing.sm),
             Expanded(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
-                children: const [
+                children: [
                   Text(
                     'Clan Activity',
-                    style: TextStyle(fontSize: 13, fontWeight: FontWeight.w700, color: KiwiColors.textDark),
+                    style: TextStyle(fontSize: typo.chipSize, fontWeight: FontWeight.w700, color: colors.textPrimary, fontFamily: typo.fontFamily),
                   ),
-                  SizedBox(height: 4),
+                  const SizedBox(height: KiwiSpacing.xs),
                   Text(
                     'Your child hasn\'t joined a study clan yet. '
                     'Clans are moderated groups where kids solve math puzzles together.',
-                    style: TextStyle(fontSize: 12.5, color: KiwiColors.textMid, height: 1.4),
+                    style: TextStyle(fontSize: typo.chipSize, color: colors.textSecondary, height: 1.4, fontFamily: typo.fontFamily),
                   ),
                 ],
               ),
@@ -555,11 +595,11 @@ class _ParentDashboardScreenState extends State<ParentDashboardScreen> {
     final progress = widget.challengeProgressInfo;
 
     return Container(
-      padding: const EdgeInsets.all(14),
+      padding: shape.cardPadding,
       decoration: BoxDecoration(
-        color: Colors.white,
-        borderRadius: BorderRadius.circular(14),
-        border: Border.all(color: Colors.grey.shade200),
+        color: colors.cardBg,
+        borderRadius: BorderRadius.circular(shape.cardRadius),
+        border: Border.all(color: colors.topicCardBorder),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -567,15 +607,15 @@ class _ParentDashboardScreenState extends State<ParentDashboardScreen> {
           // Header row: crest emoji + clan name + level
           Row(
             children: [
-              const Icon(Icons.groups_rounded, size: 18, color: KiwiColors.kiwiPrimary),
-              const SizedBox(width: 8),
-              const Text(
+              Icon(Icons.groups_rounded, size: 18, color: colors.primary),
+              const SizedBox(width: KiwiSpacing.sm),
+              Text(
                 'Clan Activity',
-                style: TextStyle(fontSize: 13, fontWeight: FontWeight.w700, color: KiwiColors.textDark),
+                style: TextStyle(fontSize: typo.chipSize, fontWeight: FontWeight.w700, color: colors.textPrimary, fontFamily: typo.fontFamily),
               ),
             ],
           ),
-          const SizedBox(height: 12),
+          const SizedBox(height: KiwiSpacing.md),
 
           // Clan info row
           Row(
@@ -586,33 +626,35 @@ class _ParentDashboardScreenState extends State<ParentDashboardScreen> {
                 height: 38,
                 decoration: BoxDecoration(
                   color: KiwiColors.kiwiPrimaryLight,
-                  borderRadius: BorderRadius.circular(10),
+                  borderRadius: BorderRadius.circular(shape.chipRadius),
                 ),
                 child: Center(
                   child: Text(clan.crest.emoji, style: const TextStyle(fontSize: 20)),
                 ),
               ),
-              const SizedBox(width: 12),
+              const SizedBox(width: KiwiSpacing.md),
               Expanded(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
                       clan.name,
-                      style: const TextStyle(
-                        fontSize: 14,
+                      style: TextStyle(
+                        fontSize: typo.bodySize,
                         fontWeight: FontWeight.w700,
-                        color: KiwiColors.textDark,
+                        color: colors.textPrimary,
+                        fontFamily: typo.fontFamily,
                       ),
                     ),
                     const SizedBox(height: 2),
                     Text(
                       '${clan.clanLevel.emoji} Level ${clan.clanLevel.level} ${clan.clanLevel.name}'
                       '  ·  ${clan.memberCount} members',
-                      style: const TextStyle(
-                        fontSize: 11.5,
+                      style: TextStyle(
+                        fontSize: typo.chipSize - 1,
                         fontWeight: FontWeight.w500,
-                        color: KiwiColors.textMid,
+                        color: colors.textSecondary,
+                        fontFamily: typo.fontFamily,
                       ),
                     ),
                   ],
@@ -624,26 +666,27 @@ class _ParentDashboardScreenState extends State<ParentDashboardScreen> {
           // Challenge status (if active)
           if (challenge != null && challenge.status == 'active') ...[
             Padding(
-              padding: const EdgeInsets.symmetric(vertical: 10),
-              child: Divider(height: 1, color: Colors.grey.shade200),
+              padding: const EdgeInsets.symmetric(vertical: KiwiSpacing.sm),
+              child: Divider(height: 1, color: colors.topicCardBorder),
             ),
             Row(
               children: [
-                Icon(Icons.extension_rounded, size: 16, color: KiwiColors.sky),
-                const SizedBox(width: 6),
+                const Icon(Icons.extension_rounded, size: 16, color: KiwiColors.sky),
+                const SizedBox(width: KiwiSpacing.sm),
                 Expanded(
                   child: Text(
                     challenge.title,
-                    style: const TextStyle(
-                      fontSize: 12.5,
+                    style: TextStyle(
+                      fontSize: typo.chipSize,
                       fontWeight: FontWeight.w600,
-                      color: KiwiColors.textDark,
+                      color: colors.textPrimary,
+                      fontFamily: typo.fontFamily,
                     ),
                   ),
                 ),
               ],
             ),
-            const SizedBox(height: 8),
+            const SizedBox(height: KiwiSpacing.sm),
             Row(
               children: [
                 _miniStat(
@@ -651,7 +694,7 @@ class _ParentDashboardScreenState extends State<ParentDashboardScreen> {
                   'Revealed',
                   KiwiColors.sky,
                 ),
-                const SizedBox(width: 10),
+                const SizedBox(width: KiwiSpacing.sm),
                 _miniStat(
                   '${challenge.daysRemaining}d',
                   'Left',
@@ -662,27 +705,28 @@ class _ParentDashboardScreenState extends State<ParentDashboardScreen> {
           ],
 
           // Reassuring message for parents
-          const SizedBox(height: 10),
+          const SizedBox(height: KiwiSpacing.sm),
           Container(
-            padding: const EdgeInsets.all(10),
+            padding: const EdgeInsets.all(KiwiSpacing.sm),
             decoration: BoxDecoration(
               color: KiwiColors.kiwiPrimaryLight,
-              borderRadius: BorderRadius.circular(10),
+              borderRadius: BorderRadius.circular(shape.chipRadius),
             ),
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.start,
-              children: const [
-                Icon(Icons.verified_user_rounded, size: 14, color: KiwiColors.kiwiPrimaryDark),
-                SizedBox(width: 8),
+              children: [
+                const Icon(Icons.verified_user_rounded, size: 14, color: KiwiColors.kiwiPrimaryDark),
+                const SizedBox(width: KiwiSpacing.sm),
                 Expanded(
                   child: Text(
                     'Your child is part of a moderated study group. '
                     'No chat — just collaborative puzzle-solving!',
                     style: TextStyle(
-                      fontSize: 11.5,
+                      fontSize: typo.chipSize - 1,
                       color: KiwiColors.kiwiPrimaryDark,
                       height: 1.35,
                       fontWeight: FontWeight.w500,
+                      fontFamily: typo.fontFamily,
                     ),
                   ),
                 ),
@@ -695,12 +739,15 @@ class _ParentDashboardScreenState extends State<ParentDashboardScreen> {
   }
 
   Widget _buildStrengthsAndGrowth(List<String> strengths, List<String> weaknesses) {
+    final colors = _tier.colors;
+    final typo = _tier.typography;
+    final shape = _tier.shape;
     return Container(
-      padding: const EdgeInsets.all(14),
+      padding: shape.cardPadding,
       decoration: BoxDecoration(
-        color: Colors.white,
-        borderRadius: BorderRadius.circular(14),
-        border: Border.all(color: Colors.grey.shade200),
+        color: colors.cardBg,
+        borderRadius: BorderRadius.circular(shape.cardRadius),
+        border: Border.all(color: colors.topicCardBorder),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -709,40 +756,40 @@ class _ParentDashboardScreenState extends State<ParentDashboardScreen> {
             Row(
               children: [
                 const Icon(Icons.star_rounded, size: 16, color: KiwiColors.kiwiGreen),
-                const SizedBox(width: 6),
+                const SizedBox(width: KiwiSpacing.sm),
                 Text(
                   'Doing well in',
-                  style: TextStyle(fontSize: 12, fontWeight: FontWeight.w700, color: KiwiColors.textMid),
+                  style: TextStyle(fontSize: typo.chipSize, fontWeight: FontWeight.w700, color: colors.textSecondary, fontFamily: typo.fontFamily),
                 ),
               ],
             ),
-            const SizedBox(height: 8),
+            const SizedBox(height: KiwiSpacing.sm),
             Wrap(
-              spacing: 6,
-              runSpacing: 6,
+              spacing: KiwiSpacing.sm,
+              runSpacing: KiwiSpacing.sm,
               children: strengths.map((id) => _pill(_prettyTopic(id), KiwiColors.kiwiGreen)).toList(),
             ),
           ],
           if (strengths.isNotEmpty && weaknesses.isNotEmpty)
             Padding(
-              padding: const EdgeInsets.symmetric(vertical: 10),
-              child: Divider(height: 1, color: Colors.grey.shade200),
+              padding: const EdgeInsets.symmetric(vertical: KiwiSpacing.sm),
+              child: Divider(height: 1, color: colors.topicCardBorder),
             ),
           if (weaknesses.isNotEmpty) ...[
             Row(
               children: [
-                Icon(Icons.trending_up_rounded, size: 16, color: KiwiColors.sunset),
-                const SizedBox(width: 6),
+                const Icon(Icons.trending_up_rounded, size: 16, color: KiwiColors.sunset),
+                const SizedBox(width: KiwiSpacing.sm),
                 Text(
                   'Room to grow',
-                  style: TextStyle(fontSize: 12, fontWeight: FontWeight.w700, color: KiwiColors.textMid),
+                  style: TextStyle(fontSize: typo.chipSize, fontWeight: FontWeight.w700, color: colors.textSecondary, fontFamily: typo.fontFamily),
                 ),
               ],
             ),
-            const SizedBox(height: 8),
+            const SizedBox(height: KiwiSpacing.sm),
             Wrap(
-              spacing: 6,
-              runSpacing: 6,
+              spacing: KiwiSpacing.sm,
+              runSpacing: KiwiSpacing.sm,
               children: weaknesses.map((id) => _pill(_prettyTopic(id), KiwiColors.sunset)).toList(),
             ),
           ],
@@ -752,26 +799,31 @@ class _ParentDashboardScreenState extends State<ParentDashboardScreen> {
   }
 
   Widget _pill(String text, Color color) {
+    final shape = _tier.shape;
+    final typo = _tier.typography;
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+      padding: const EdgeInsets.symmetric(horizontal: KiwiSpacing.sm, vertical: KiwiSpacing.xs),
       decoration: BoxDecoration(
         color: color.withOpacity(0.1),
-        borderRadius: BorderRadius.circular(16),
+        borderRadius: BorderRadius.circular(shape.chipRadius),
       ),
       child: Text(
         text,
-        style: TextStyle(fontSize: 12, fontWeight: FontWeight.w600, color: color),
+        style: TextStyle(fontSize: typo.chipSize, fontWeight: FontWeight.w600, color: color, fontFamily: typo.fontFamily),
       ),
     );
   }
 
   Widget _sectionLabel(String title) {
+    final colors = _tier.colors;
+    final typo = _tier.typography;
     return Text(
       title,
-      style: const TextStyle(
-        fontSize: 14,
-        fontWeight: FontWeight.w800,
-        color: KiwiColors.textMid,
+      style: TextStyle(
+        fontSize: typo.bodySize,
+        fontWeight: typo.headlineWeight,
+        color: colors.textSecondary,
+        fontFamily: typo.fontFamily,
       ),
     );
   }
@@ -780,6 +832,9 @@ class _ParentDashboardScreenState extends State<ParentDashboardScreen> {
     final name = t['topic_name']?.toString() ?? '';
     final accuracy = (t['accuracy'] as num?)?.toDouble() ?? 0.0;
     final mastery = t['mastery']?.toString() ?? 'learning';
+    final colors = _tier.colors;
+    final typo = _tier.typography;
+    final shape = _tier.shape;
 
     final color = mastery == 'mastered'
         ? KiwiColors.kiwiGreen
@@ -788,13 +843,13 @@ class _ParentDashboardScreenState extends State<ParentDashboardScreen> {
             : KiwiColors.sunset;
 
     return Padding(
-      padding: const EdgeInsets.only(bottom: 10),
+      padding: const EdgeInsets.only(bottom: KiwiSpacing.sm),
       child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
+        padding: shape.cardPadding,
         decoration: BoxDecoration(
-          color: Colors.white,
-          borderRadius: BorderRadius.circular(12),
-          border: Border.all(color: Colors.grey.shade200),
+          color: colors.cardBg,
+          borderRadius: BorderRadius.circular(shape.cardRadius),
+          border: Border.all(color: colors.topicCardBorder),
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -804,22 +859,22 @@ class _ParentDashboardScreenState extends State<ParentDashboardScreen> {
                 Expanded(
                   child: Text(
                     name,
-                    style: const TextStyle(fontSize: 13, fontWeight: FontWeight.w600, color: KiwiColors.textDark),
+                    style: TextStyle(fontSize: typo.chipSize, fontWeight: FontWeight.w600, color: colors.textPrimary, fontFamily: typo.fontFamily),
                   ),
                 ),
                 Text(
                   '${accuracy.round()}%',
-                  style: TextStyle(fontSize: 12, fontWeight: FontWeight.w700, color: color),
+                  style: TextStyle(fontSize: typo.chipSize, fontWeight: FontWeight.w700, color: color, fontFamily: typo.fontFamily),
                 ),
               ],
             ),
-            const SizedBox(height: 6),
+            const SizedBox(height: KiwiSpacing.sm),
             ClipRRect(
-              borderRadius: BorderRadius.circular(3),
+              borderRadius: BorderRadius.circular(KiwiSpacing.xs),
               child: LinearProgressIndicator(
                 value: (accuracy / 100).clamp(0.0, 1.0),
                 minHeight: 5,
-                backgroundColor: Colors.grey.shade200,
+                backgroundColor: colors.backgroundDark,
                 valueColor: AlwaysStoppedAnimation<Color>(color),
               ),
             ),
@@ -830,24 +885,280 @@ class _ParentDashboardScreenState extends State<ParentDashboardScreen> {
   }
 
   Widget _buildTip(String text) {
+    final colors = _tier.colors;
+    final typo = _tier.typography;
+    final shape = _tier.shape;
     return Container(
-      margin: const EdgeInsets.only(bottom: 8),
-      padding: const EdgeInsets.all(12),
+      margin: const EdgeInsets.only(bottom: KiwiSpacing.sm),
+      padding: shape.cardPadding,
       decoration: BoxDecoration(
         color: KiwiColors.kiwiPrimaryLight,
-        borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: KiwiColors.kiwiPrimary.withOpacity(0.15)),
+        borderRadius: BorderRadius.circular(shape.cardRadius),
+        border: Border.all(color: colors.primary.withOpacity(0.15)),
       ),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           const Icon(Icons.lightbulb_outline_rounded, size: 16, color: KiwiColors.kiwiPrimaryDark),
-          const SizedBox(width: 8),
+          const SizedBox(width: KiwiSpacing.sm),
           Expanded(
             child: Text(
               text,
-              style: const TextStyle(fontSize: 13, color: KiwiColors.textDark, height: 1.35),
+              style: TextStyle(fontSize: typo.chipSize, color: colors.textPrimary, height: 1.35, fontFamily: typo.fontFamily),
             ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  // ---------------------------------------------------------------------------
+  // COPPA — Child Data Management
+  // ---------------------------------------------------------------------------
+
+  Widget _buildDataManagementSection(String childName) {
+    final colors = _tier.colors;
+    final typo = _tier.typography;
+    final shape = _tier.shape;
+    return Container(
+      padding: shape.cardPadding,
+      decoration: BoxDecoration(
+        color: colors.cardBg,
+        borderRadius: BorderRadius.circular(shape.cardRadius),
+        border: Border.all(color: colors.topicCardBorder),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              Container(
+                width: 32,
+                height: 32,
+                decoration: BoxDecoration(
+                  color: KiwiColors.teal.withOpacity(0.1),
+                  borderRadius: BorderRadius.circular(shape.chipRadius),
+                ),
+                child: const Icon(Icons.shield_outlined, size: 18, color: KiwiColors.teal),
+              ),
+              const SizedBox(width: KiwiSpacing.sm),
+              Expanded(
+                child: Text(
+                  'Child Data & Privacy',
+                  style: TextStyle(
+                    fontSize: typo.bodySize,
+                    fontWeight: FontWeight.w700,
+                    color: colors.textPrimary,
+                    fontFamily: typo.fontFamily,
+                  ),
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: KiwiSpacing.sm),
+          Text(
+            'As $childName\'s parent or guardian, you can manage their data at any time under COPPA.',
+            style: TextStyle(
+              fontSize: typo.chipSize,
+              color: colors.textMuted,
+              height: 1.35,
+              fontFamily: typo.fontFamily,
+            ),
+          ),
+          const SizedBox(height: KiwiSpacing.md),
+          _dataAction(
+            icon: Icons.visibility_outlined,
+            label: 'Review collected data',
+            subtitle: 'See what information we store',
+            onTap: () => _showDataReviewSheet(childName),
+          ),
+          const SizedBox(height: KiwiSpacing.sm),
+          _dataAction(
+            icon: Icons.download_outlined,
+            label: 'Export data',
+            subtitle: 'Download a copy of all data',
+            onTap: () => _requestDataExport(childName),
+          ),
+          const SizedBox(height: KiwiSpacing.sm),
+          _dataAction(
+            icon: Icons.delete_outline_rounded,
+            label: 'Delete all data',
+            subtitle: 'Permanently remove all records',
+            onTap: () => _confirmDataDeletion(childName),
+            destructive: true,
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _dataAction({
+    required IconData icon,
+    required String label,
+    required String subtitle,
+    required VoidCallback onTap,
+    bool destructive = false,
+  }) {
+    final colors = _tier.colors;
+    final typo = _tier.typography;
+    final shape = _tier.shape;
+    final color = destructive ? KiwiColors.coral : colors.textPrimary;
+    return GestureDetector(
+      onTap: onTap,
+      child: Container(
+        padding: const EdgeInsets.symmetric(horizontal: KiwiSpacing.md, vertical: KiwiSpacing.sm),
+        decoration: BoxDecoration(
+          color: destructive
+              ? KiwiColors.wrongBg
+              : colors.backgroundDark.withOpacity(0.4),
+          borderRadius: BorderRadius.circular(shape.chipRadius),
+        ),
+        child: Row(
+          children: [
+            Icon(icon, size: 20, color: color),
+            const SizedBox(width: KiwiSpacing.sm),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(label, style: TextStyle(
+                    fontSize: typo.chipSize, fontWeight: FontWeight.w600, color: color, fontFamily: typo.fontFamily,
+                  )),
+                  Text(subtitle, style: TextStyle(
+                    fontSize: typo.chipSize - 2, color: colors.textMuted, fontFamily: typo.fontFamily,
+                  )),
+                ],
+              ),
+            ),
+            Icon(Icons.chevron_right, size: 18, color: colors.textMuted),
+          ],
+        ),
+      ),
+    );
+  }
+
+  void _showDataReviewSheet(String childName) {
+    showModalBottomSheet(
+      context: context,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.vertical(top: Radius.circular(_tier.shape.cardRadius)),
+      ),
+      builder: (_) => SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.fromLTRB(20, 20, 20, 24),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              const Text(
+                'Data We Collect',
+                style: TextStyle(fontSize: 17, fontWeight: FontWeight.w700),
+              ),
+              const SizedBox(height: 14),
+              _dataItem('Child\'s first name', 'Used for in-app greetings'),
+              _dataItem('Grade level', 'Adjusts question difficulty'),
+              _dataItem('Practice history', 'Questions answered, scores, time spent'),
+              _dataItem('Mastery progress', 'Topic proficiency levels'),
+              _dataItem('Streak & coins', 'Motivation rewards (no monetary value)'),
+              const SizedBox(height: 14),
+              const Text(
+                'We do not collect photos, contacts, location, or any advertising identifiers.',
+                style: TextStyle(fontSize: 11, color: KiwiColors.textMuted, height: 1.4),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _dataItem(String title, String desc) {
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 10),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          const Icon(Icons.check_circle_outline, size: 16, color: KiwiColors.teal),
+          const SizedBox(width: 8),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(title, style: const TextStyle(
+                  fontSize: 13, fontWeight: FontWeight.w600, color: KiwiColors.textDark,
+                )),
+                Text(desc, style: const TextStyle(
+                  fontSize: 11, color: KiwiColors.textMuted,
+                )),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  void _requestDataExport(String childName) {
+    showDialog(
+      context: context,
+      builder: (_) => AlertDialog(
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(_tier.shape.cardRadius)),
+        title: const Text('Export Data', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w700)),
+        content: Text(
+          'We\'ll prepare a copy of $childName\'s data and send it to your registered email address within 48 hours.',
+          style: const TextStyle(fontSize: 13, height: 1.4),
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(context),
+            child: const Text('Cancel'),
+          ),
+          TextButton(
+            onPressed: () {
+              Navigator.pop(context);
+              ScaffoldMessenger.of(context).showSnackBar(
+                const SnackBar(
+                  content: Text('Data export requested. Check your email within 48 hours.'),
+                  behavior: SnackBarBehavior.floating,
+                ),
+              );
+              // TODO: wire to backend endpoint POST /api/user/{uid}/export-data
+            },
+            child: const Text('Request Export'),
+          ),
+        ],
+      ),
+    );
+  }
+
+  void _confirmDataDeletion(String childName) {
+    showDialog(
+      context: context,
+      builder: (_) => AlertDialog(
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(_tier.shape.cardRadius)),
+        title: const Text('Delete All Data?', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w700)),
+        content: Text(
+          'This will permanently delete all of $childName\'s learning data, including practice history, scores, streaks, and coins. This cannot be undone.',
+          style: const TextStyle(fontSize: 13, height: 1.4),
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(context),
+            child: const Text('Cancel'),
+          ),
+          TextButton(
+            style: TextButton.styleFrom(foregroundColor: KiwiColors.coral),
+            onPressed: () {
+              Navigator.pop(context);
+              ScaffoldMessenger.of(context).showSnackBar(
+                const SnackBar(
+                  content: Text('Deletion requested. All data will be removed within 24 hours.'),
+                  behavior: SnackBarBehavior.floating,
+                ),
+              );
+              // TODO: wire to backend endpoint DELETE /api/user/{uid}/data
+            },
+            child: const Text('Delete Everything'),
           ),
         ],
       ),

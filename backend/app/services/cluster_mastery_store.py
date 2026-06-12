@@ -214,22 +214,25 @@ def _load_one(db, uid: str, did: str) -> ClusterMastery:
 
 def _save_one(db, uid: str, did: str, m: ClusterMastery) -> None:
     payload = m.to_dict()
-    if db:
+    # Always update the in-memory fallback so it stays current.
+    _mem_cluster_mastery.setdefault(uid, {})[did] = payload
+    # Re-check Firestore on every write (it may have become available).
+    effective_db = db
+    if not effective_db:
+        effective_db = _get_db()
+    if effective_db:
         try:
             (
-                db.collection("users")
+                effective_db.collection("users")
                 .document(uid)
                 .collection("cluster_mastery")
                 .document(did)
                 .set(payload, merge=True)
             )
-            return
         except Exception as e:
             logger.warning(
                 f"Firestore write failed for cluster_mastery {uid}/{did}: {e}"
             )
-    # In-memory fallback.
-    _mem_cluster_mastery.setdefault(uid, {})[did] = payload
 
 
 def _load_all(db, uid: str) -> Dict[str, Dict[str, Any]]:

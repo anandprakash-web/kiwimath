@@ -1,0 +1,8 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="200" fill="#f9f9f0" rx="8"/>
+  <text x="100" y="20" text-anchor="middle" font-size="12" font-family="Arial" fill="#555">Cube — 12 Edges</text>
+  <polygon points="50,110 100,140.0 150,110 100,80.0" fill="#e8e8e8" stroke="#333" stroke-width="1.5"/>
+  <polygon points="50,110 100,80.0 100,45.0 50,75.0" fill="#d0d0d0" stroke="#333" stroke-width="1.5"/>
+  <polygon points="100,80.0 150,110 150,75.0 100,45.0" fill="#c0c0c0" stroke="#333" stroke-width="1.5"/>
+  <text x="100" y="185" text-anchor="middle" font-size="11" font-family="Arial" fill="#777">A cube has 12 edges</text>
+</svg>

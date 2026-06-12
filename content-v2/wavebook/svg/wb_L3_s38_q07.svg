@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 120" width="280" height="120">
+  <text x="140.0" y="18" text-anchor="middle" font-size="13" font-weight="bold" font-family="Arial" fill="#333">Students Pictograph</text>
+  <text x="140.0" y="112" text-anchor="middle" font-size="10" font-family="Arial" fill="#666">Each circle = 20 Students</text>
+  <text x="10" y="66.0" text-anchor="start" font-size="10" font-family="Arial" fill="#333">Students</text>
+  <circle cx="60" cy="62.0" r="12" fill="#4285F4" stroke="#333" stroke-width="1.5"/>
+  <circle cx="92" cy="62.0" r="12" fill="#4285F4" stroke="#333" stroke-width="1.5"/>
+  <circle cx="124" cy="62.0" r="12" fill="#4285F4" stroke="#333" stroke-width="1.5"/>
+  <clipPath id="halfClip"><rect x="144" y="50.0" width="12" height="24"/></clipPath>
+  <circle cx="156" cy="62.0" r="12" fill="#4285F4" stroke="#333" stroke-width="1.5" clip-path="url(#halfClip)"/>
+  <circle cx="156" cy="62.0" r="12" fill="none" stroke="#ccc" stroke-width="1" stroke-dasharray="3,3"/>
+</svg>

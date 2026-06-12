@@ -1,0 +1,23 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="200" fill="#f9f9f0" rx="8"/>
+  <text x="100" y="22" text-anchor="middle" font-size="11" font-family="Arial" fill="#555">What comes next in the sequence?</text>
+  <circle cx="32.5" cy="85" r="14" fill="#E3F2FD" stroke="#2196F3" stroke-width="1.5"/>
+  <text x="32.5" y="89" text-anchor="middle" font-size="10" font-family="Arial" font-weight="bold" fill="#1565C0">4</text>
+  <circle cx="55.0" cy="85" r="14" fill="#E3F2FD" stroke="#2196F3" stroke-width="1.5"/>
+  <text x="55.0" y="89" text-anchor="middle" font-size="10" font-family="Arial" font-weight="bold" fill="#1565C0">8</text>
+  <circle cx="77.5" cy="85" r="14" fill="#E3F2FD" stroke="#2196F3" stroke-width="1.5"/>
+  <text x="77.5" y="89" text-anchor="middle" font-size="10" font-family="Arial" font-weight="bold" fill="#1565C0">12</text>
+  <circle cx="100.0" cy="85" r="14" fill="#E3F2FD" stroke="#2196F3" stroke-width="1.5"/>
+  <text x="100.0" y="89" text-anchor="middle" font-size="10" font-family="Arial" font-weight="bold" fill="#1565C0">16</text>
+  <circle cx="122.5" cy="85" r="14" fill="#E3F2FD" stroke="#2196F3" stroke-width="1.5"/>
+  <text x="122.5" y="89" text-anchor="middle" font-size="10" font-family="Arial" font-weight="bold" fill="#1565C0">20</text>
+  <circle cx="145.0" cy="85" r="14" fill="#E3F2FD" stroke="#2196F3" stroke-width="1.5"/>
+  <text x="145.0" y="89" text-anchor="middle" font-size="10" font-family="Arial" font-weight="bold" fill="#1565C0">24</text>
+  <circle cx="167.5" cy="85" r="14" fill="#FFF9C4" stroke="#FBC02D" stroke-width="2"/>
+  <text x="167.5" y="92" text-anchor="middle" font-size="16" font-family="Arial" font-weight="bold" fill="#F57F17">?</text>
+  <text x="43.75" y="62" text-anchor="middle" font-size="8" font-family="Arial" fill="#FF9800">+4</text>
+  <text x="66.25" y="62" text-anchor="middle" font-size="8" font-family="Arial" fill="#FF9800">+4</text>
+  <text x="88.75" y="62" text-anchor="middle" font-size="8" font-family="Arial" fill="#FF9800">+4</text>
+  <text x="111.25" y="62" text-anchor="middle" font-size="8" font-family="Arial" fill="#FF9800">+4</text>
+  <text x="133.75" y="62" text-anchor="middle" font-size="8" font-family="Arial" fill="#FF9800">+4</text>
+</svg>

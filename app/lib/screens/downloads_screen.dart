@@ -120,7 +120,7 @@ class _DownloadsScreenState extends State<DownloadsScreen> {
         // ── Header ─────────────────────────────────────────────
         SliverToBoxAdapter(
           child: Padding(
-            padding: const EdgeInsets.fromLTRB(20, 16, 20, 8),
+            padding: EdgeInsets.fromLTRB(KiwiSpacing.xl - 4, KiwiSpacing.lg, KiwiSpacing.xl - 4, KiwiSpacing.sm),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -133,11 +133,11 @@ class _DownloadsScreenState extends State<DownloadsScreen> {
                         gradient: LinearGradient(
                           colors: [colors.buttonGradientStart, colors.buttonGradientEnd],
                         ),
-                        borderRadius: BorderRadius.circular(12),
+                        borderRadius: BorderRadius.circular(KiwiSpacing.md),
                       ),
                       child: const Icon(Icons.download_rounded, color: Colors.white, size: 24),
                     ),
-                    const SizedBox(width: 12),
+                    SizedBox(width: KiwiSpacing.md),
                     Expanded(
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -166,11 +166,11 @@ class _DownloadsScreenState extends State<DownloadsScreen> {
                   ],
                 ),
 
-                const SizedBox(height: 16),
+                SizedBox(height: KiwiSpacing.lg),
 
                 // ── Storage usage card ───────────────────────────
                 Container(
-                  padding: const EdgeInsets.all(16),
+                  padding: EdgeInsets.all(KiwiSpacing.lg),
                   decoration: BoxDecoration(
                     color: colors.cardBg,
                     borderRadius: BorderRadius.circular(shape.cardRadius),
@@ -179,7 +179,7 @@ class _DownloadsScreenState extends State<DownloadsScreen> {
                   child: Row(
                     children: [
                       Icon(Icons.storage_rounded, color: colors.primary, size: 28),
-                      const SizedBox(width: 12),
+                      SizedBox(width: KiwiSpacing.md),
                       Expanded(
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -193,7 +193,7 @@ class _DownloadsScreenState extends State<DownloadsScreen> {
                                 fontFamily: typo.fontFamily,
                               ),
                             ),
-                            const SizedBox(height: 4),
+                            SizedBox(height: KiwiSpacing.xs),
                             Text(
                               _loadingSize
                                   ? 'Calculating...'
@@ -233,7 +233,7 @@ class _DownloadsScreenState extends State<DownloadsScreen> {
                   ),
                 ),
 
-                const SizedBox(height: 20),
+                SizedBox(height: KiwiSpacing.xl - 4),
                 Text(
                   'Download by Grade',
                   style: TextStyle(
@@ -243,7 +243,7 @@ class _DownloadsScreenState extends State<DownloadsScreen> {
                     fontFamily: typo.fontFamily,
                   ),
                 ),
-                const SizedBox(height: 4),
+                SizedBox(height: KiwiSpacing.xs),
               ],
             ),
           ),
@@ -251,7 +251,7 @@ class _DownloadsScreenState extends State<DownloadsScreen> {
 
         // ── Grade cards ────────────────────────────────────────
         SliverPadding(
-          padding: const EdgeInsets.symmetric(horizontal: 20),
+          padding: EdgeInsets.symmetric(horizontal: KiwiSpacing.xl - 4),
           sliver: SliverList(
             delegate: SliverChildBuilderDelegate(
               (context, index) {
@@ -272,17 +272,17 @@ class _DownloadsScreenState extends State<DownloadsScreen> {
         // ── Bottom info ────────────────────────────────────────
         SliverToBoxAdapter(
           child: Padding(
-            padding: const EdgeInsets.fromLTRB(20, 20, 20, 40),
+            padding: EdgeInsets.fromLTRB(KiwiSpacing.xl - 4, KiwiSpacing.xl - 4, KiwiSpacing.xl - 4, KiwiSpacing.xxl + KiwiSpacing.sm),
             child: Container(
-              padding: const EdgeInsets.all(14),
+              padding: EdgeInsets.all(KiwiSpacing.md + 2),
               decoration: BoxDecoration(
                 color: KiwiColors.kiwiPrimaryLight,
-                borderRadius: BorderRadius.circular(12),
+                borderRadius: BorderRadius.circular(KiwiSpacing.md),
               ),
               child: Row(
                 children: [
                   Icon(Icons.info_outline_rounded, color: colors.primary, size: 20),
-                  const SizedBox(width: 10),
+                  SizedBox(width: KiwiSpacing.sm + 2),
                   Expanded(
                     child: Text(
                       'Each grade (~100 worksheets) uses about 8-12 MB. '
@@ -341,7 +341,7 @@ class _GradeDownloadCard extends StatelessWidget {
     final gradColors = KiwiColors.topicGradients[grade % KiwiColors.topicGradients.length];
 
     return Padding(
-      padding: const EdgeInsets.only(bottom: 12),
+      padding: EdgeInsets.only(bottom: KiwiSpacing.md),
       child: Container(
         decoration: BoxDecoration(
           color: colors.cardBg,
@@ -349,7 +349,7 @@ class _GradeDownloadCard extends StatelessWidget {
           border: Border.all(color: colors.topicCardBorder),
         ),
         child: Padding(
-          padding: const EdgeInsets.all(16),
+          padding: EdgeInsets.all(KiwiSpacing.lg),
           child: Column(
             children: [
               Row(
@@ -364,7 +364,7 @@ class _GradeDownloadCard extends StatelessWidget {
                         begin: Alignment.topLeft,
                         end: Alignment.bottomRight,
                       ),
-                      borderRadius: BorderRadius.circular(14),
+                      borderRadius: BorderRadius.circular(KiwiSpacing.md + 2),
                     ),
                     child: Center(
                       child: Text(
@@ -377,7 +377,7 @@ class _GradeDownloadCard extends StatelessWidget {
                       ),
                     ),
                   ),
-                  const SizedBox(width: 14),
+                  SizedBox(width: KiwiSpacing.md + 2),
 
                   // Title + status
                   Expanded(
@@ -443,7 +443,7 @@ class _GradeDownloadCard extends StatelessWidget {
                       mainAxisSize: MainAxisSize.min,
                       children: [
                         Icon(Icons.check_circle_rounded, color: KiwiColors.kiwiGreen, size: 28),
-                        const SizedBox(width: 8),
+                        SizedBox(width: KiwiSpacing.sm),
                         GestureDetector(
                           onTap: () {
                             HapticFeedback.lightImpact();
@@ -454,7 +454,7 @@ class _GradeDownloadCard extends StatelessWidget {
                             height: 36,
                             decoration: BoxDecoration(
                               color: Colors.red.shade50,
-                              borderRadius: BorderRadius.circular(10),
+                              borderRadius: BorderRadius.circular(KiwiSpacing.sm + 2),
                             ),
                             child: Icon(Icons.delete_outline_rounded, color: Colors.red.shade400, size: 20),
                           ),
@@ -476,12 +476,12 @@ class _GradeDownloadCard extends StatelessWidget {
                               height: 36,
                               decoration: BoxDecoration(
                                 color: Colors.red.shade50,
-                                borderRadius: BorderRadius.circular(10),
+                                borderRadius: BorderRadius.circular(KiwiSpacing.sm + 2),
                               ),
                               child: Icon(Icons.delete_outline_rounded, color: Colors.red.shade400, size: 18),
                             ),
                           ),
-                        if (downloaded > 0) const SizedBox(width: 8),
+                        if (downloaded > 0) SizedBox(width: KiwiSpacing.sm),
                         GestureDetector(
                           onTap: () {
                             HapticFeedback.lightImpact();
@@ -489,16 +489,16 @@ class _GradeDownloadCard extends StatelessWidget {
                           },
                           child: Container(
                             height: 36,
-                            padding: const EdgeInsets.symmetric(horizontal: 16),
+                            padding: EdgeInsets.symmetric(horizontal: KiwiSpacing.lg),
                             decoration: BoxDecoration(
                               gradient: LinearGradient(colors: gradColors),
-                              borderRadius: BorderRadius.circular(10),
+                              borderRadius: BorderRadius.circular(KiwiSpacing.sm + 2),
                             ),
                             child: Row(
                               mainAxisSize: MainAxisSize.min,
                               children: [
                                 const Icon(Icons.download_rounded, color: Colors.white, size: 18),
-                                const SizedBox(width: 6),
+                                SizedBox(width: KiwiSpacing.xs + 2),
                                 Text(
                                   downloaded > 0 ? 'Resume' : 'Download',
                                   style: const TextStyle(
@@ -518,9 +518,9 @@ class _GradeDownloadCard extends StatelessWidget {
 
               // Progress bar
               if (downloaded > 0 || isDownloading) ...[
-                const SizedBox(height: 12),
+                SizedBox(height: KiwiSpacing.md),
                 ClipRRect(
-                  borderRadius: BorderRadius.circular(4),
+                  borderRadius: BorderRadius.circular(KiwiSpacing.xs),
                   child: LinearProgressIndicator(
                     value: isDownloading ? downloadProgress! : fillRatio,
                     minHeight: 6,

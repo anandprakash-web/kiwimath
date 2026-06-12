@@ -7,6 +7,7 @@ library;
 import 'package:flutter/material.dart';
 import '../models/companion.dart';
 import '../services/companion_service.dart';
+import '../theme/kiwi_theme.dart';
 import '../widgets/companion_view.dart';
 
 class CompanionPickerScreen extends StatefulWidget {
@@ -81,44 +82,44 @@ class _CompanionPickerScreenState extends State<CompanionPickerScreen>
           gradient: LinearGradient(
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
-            colors: [Color(0xFFFFF8F0), Color(0xFFFFF3E0), Color(0xFFFFE0B2)],
+            colors: [KiwiColors.cream, KiwiColors.kiwiPrimaryLight, KiwiColors.kiwiPrimaryLight.withOpacity(0.7)],
           ),
         ),
         child: SafeArea(
           child: Column(
             children: [
-              const SizedBox(height: 32),
+              SizedBox(height: KiwiSpacing.xxl),
 
               // Title
-              const Text(
-                'Choose your companion!',
+              Text(
+                ‘Choose your companion!’,
                 style: TextStyle(
                   fontSize: 24,
                   fontWeight: FontWeight.w800,
-                  color: Color(0xFFE65100),
+                  color: KiwiColors.kiwiPrimaryDark,
                 ),
               ),
-              const SizedBox(height: 8),
-              const Text(
-                'They’ll help you on your math adventure',
+              SizedBox(height: KiwiSpacing.sm),
+              Text(
+                ‘They’ll help you on your math adventure’,
                 style: TextStyle(
                   fontSize: 14,
-                  color: Color(0xFF558B2F),
+                  color: KiwiColors.kiwiGreenDark,
                 ),
               ),
 
-              const SizedBox(height: 32),
+              SizedBox(height: KiwiSpacing.xxl),
 
               // Companion grid
               Expanded(
                 child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 16),
+                  padding: EdgeInsets.symmetric(horizontal: KiwiSpacing.lg),
                   child: GridView.builder(
                     gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                       crossAxisCount: 2,
                       childAspectRatio: 0.85,
-                      mainAxisSpacing: 12,
-                      crossAxisSpacing: 12,
+                      mainAxisSpacing: KiwiSpacing.md,
+                      crossAxisSpacing: KiwiSpacing.md,
                     ),
                     itemCount: config.cast.length,
                     itemBuilder: (context, index) {
@@ -136,12 +137,12 @@ class _CompanionPickerScreenState extends State<CompanionPickerScreen>
                           decoration: BoxDecoration(
                             color: isSelected
                                 ? companion.signatureColorSoft
-                                : Colors.white,
+                                : KiwiColors.cardBg,
                             borderRadius: BorderRadius.circular(20),
                             border: Border.all(
                               color: isSelected
                                   ? companion.signatureColor
-                                  : Colors.grey.shade200,
+                                  : KiwiColors.pathLocked,
                               width: isSelected ? 3 : 1.5,
                             ),
                             boxShadow: isSelected
@@ -202,14 +203,14 @@ class _CompanionPickerScreenState extends State<CompanionPickerScreen>
                                     padding: const EdgeInsets.symmetric(
                                         horizontal: 8, vertical: 2),
                                     decoration: BoxDecoration(
-                                      color: Colors.grey.shade200,
+                                      color: KiwiColors.pathLocked,
                                       borderRadius: BorderRadius.circular(8),
                                     ),
                                     child: const Text(
                                       'Coming soon',
                                       style: TextStyle(
                                         fontSize: 9,
-                                        color: Colors.grey,
+                                        color: KiwiColors.textMuted,
                                         fontWeight: FontWeight.w600,
                                       ),
                                     ),
@@ -227,7 +228,7 @@ class _CompanionPickerScreenState extends State<CompanionPickerScreen>
 
               // Confirm button
               Padding(
-                padding: const EdgeInsets.fromLTRB(24, 8, 24, 24),
+                padding: EdgeInsets.fromLTRB(KiwiSpacing.xl, KiwiSpacing.sm, KiwiSpacing.xl, KiwiSpacing.xl),
                 child: SizedBox(
                   width: double.infinity,
                   child: AnimatedBuilder(
@@ -246,11 +247,11 @@ class _CompanionPickerScreenState extends State<CompanionPickerScreen>
                             ? config.cast
                                 .firstWhere((c) => c.id == _selectedId)
                                 .signatureColor
-                            : Colors.grey.shade300,
+                            : KiwiColors.pathLocked,
                         foregroundColor: Colors.white,
-                        padding: const EdgeInsets.symmetric(vertical: 16),
+                        padding: EdgeInsets.symmetric(vertical: KiwiSpacing.lg),
                         shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(16),
+                          borderRadius: BorderRadius.circular(KiwiSpacing.lg),
                         ),
                         elevation: _selectedId != null ? 4 : 0,
                         textStyle: const TextStyle(

@@ -429,20 +429,6 @@ class SkillAbilityStore:
 
     def __init__(self):
         self._memory: Dict[str, Dict[str, SkillAbility]] = {}  # uid -> {skill_id -> ability}
-        self._firestore_available = False
-        self._db = None
-        self._try_init_firestore()
-
-    def _try_init_firestore(self):
-        try:
-            import firebase_admin
-            from firebase_admin import firestore
-            if firebase_admin._apps:
-                self._db = firestore.client()
-                self._firestore_available = True
-                logger.info("SkillAbilityStore: Firestore connected")
-        except Exception:
-            logger.info("SkillAbilityStore: Using in-memory fallback")
 
     def get_skill_ability(self, user_id: str, skill_id: str) -> SkillAbility:
         """Get ability for a specific skill. Creates default if not exists."""
@@ -451,10 +437,12 @@ class SkillAbilityStore:
             return self._memory[user_id][skill_id]
 
         # Try Firestore
-        if self._firestore_available and self._db:
+        from app.services.firestore_service import _get_db
+        db = _get_db()
+        if db:
             try:
                 doc = (
-                    self._db.collection("users")
+                    db.collection("users")
                     .document(user_id)
                     .collection("skill_abilities")
                     .document(skill_id)
@@ -475,10 +463,12 @@ class SkillAbilityStore:
     def get_all_abilities(self, user_id: str) -> Dict[str, SkillAbility]:
         """Get all skill abilities for a user."""
         # Try Firestore first for complete picture
-        if self._firestore_available and self._db:
+        from app.services.firestore_service import _get_db
+        db = _get_db()
+        if db:
             try:
                 docs = (
-                    self._db.collection("users")
+                    db.collection("users")
                     .document(user_id)
                     .collection("skill_abilities")
                     .stream()
@@ -498,14 +488,16 @@ class SkillAbilityStore:
         """Persist a skill ability to Firestore."""
         self._memory.setdefault(user_id, {})[ability.skill_id] = ability
 
-        if self._firestore_available and self._db:
+        from app.services.firestore_service import _get_db
+        db = _get_db()
+        if db:
             try:
                 (
-                    self._db.collection("users")
+                    db.collection("users")
                     .document(user_id)
                     .collection("skill_abilities")
                     .document(ability.skill_id)
-                    .set(ability.to_dict())
+                    .set(ability.to_dict(), merge=True)
                 )
             except Exception as e:
                 logger.warning(f"Firestore write error: {e}")
@@ -668,10 +660,12 @@ class SkillAbilityStore:
                 return ids
 
         # Try Firestore
-        if self._firestore_available and self._db:
+        from app.services.firestore_service import _get_db
+        db = _get_db()
+        if db:
             try:
                 doc = (
-                    self._db.collection("users")
+                    db.collection("users")
                     .document(user_id)
                     .collection("question_history")
                     .document("recent")
@@ -701,17 +695,19 @@ class SkillAbilityStore:
         new_set = set(trimmed)
         self._memory[cache_key] = new_set
 
-        if self._firestore_available and self._db:
+        from app.services.firestore_service import _get_db
+        db = _get_db()
+        if db:
             try:
                 (
-                    self._db.collection("users")
+                    db.collection("users")
                     .document(user_id)
                     .collection("question_history")
                     .document("recent")
                     .set({
                         "question_ids": trimmed,
                         "updated_at": datetime.now(timezone.utc).isoformat(),
-                    })
+                    }, merge=True)
                 )
             except Exception as e:
                 logger.warning(f"Firestore question history write error: {e}")

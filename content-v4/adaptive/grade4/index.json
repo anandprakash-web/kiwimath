@@ -1,7 +1,7 @@
 {
   "grade": 4,
   "total_topics": 11,
-  "total_questions": 7055,
+  "total_questions": 3888,
   "topics": [
     {
       "id": "g4-add-sub",
@@ -12,18 +12,10 @@
         "addition_2digit",
         "subtraction_2digit"
       ],
-      "total_questions": 877,
+      "total_questions": 531,
       "difficulty_range": {
         "min_irt_b": -1.97,
         "max_irt_b": 3.0
-      },
-      "source_breakdown": {
-        "olympiad": 669,
-        "igcse": 89,
-        "icse": 50,
-        "singapore": 36,
-        "ncert": 19,
-        "us-common-core": 14
       }
     },
     {
@@ -34,15 +26,10 @@
       "skills": [
         "data_handling"
       ],
-      "total_questions": 109,
+      "total_questions": 103,
       "difficulty_range": {
         "min_irt_b": -2.94,
         "max_irt_b": 3.0
-      },
-      "source_breakdown": {
-        "igcse": 50,
-        "icse": 35,
-        "ncert": 24
       }
     },
     {
@@ -53,17 +40,10 @@
       "skills": [
         "division_basic"
       ],
-      "total_questions": 145,
+      "total_questions": 129,
       "difficulty_range": {
         "min_irt_b": -2.94,
         "max_irt_b": 3.0
-      },
-      "source_breakdown": {
-        "igcse": 50,
-        "ncert": 50,
-        "us-common-core": 13,
-        "olympiad": 17,
-        "icse": 15
       }
     },
     {
@@ -76,18 +56,10 @@
         "fraction_compare",
         "fraction_add"
       ],
-      "total_questions": 209,
+      "total_questions": 142,
       "difficulty_range": {
         "min_irt_b": -2.25,
         "max_irt_b": 2.38
-      },
-      "source_breakdown": {
-        "olympiad": 12,
-        "icse": 30,
-        "ncert": 54,
-        "igcse": 33,
-        "us-common-core": 45,
-        "singapore": 35
       }
     },
     {
@@ -101,17 +73,10 @@
         "capacity",
         "unit_conversion"
       ],
-      "total_questions": 289,
+      "total_questions": 140,
       "difficulty_range": {
         "min_irt_b": -2.94,
         "max_irt_b": 3.0
-      },
-      "source_breakdown": {
-        "igcse": 100,
-        "ncert": 104,
-        "icse": 60,
-        "olympiad": 107,
-        "us-common-core": 27
       }
     },
     {
@@ -122,16 +87,10 @@
       "skills": [
         "multiplication_facts"
       ],
-      "total_questions": 84,
+      "total_questions": 72,
       "difficulty_range": {
         "min_irt_b": -2.94,
         "max_irt_b": 3.0
-      },
-      "source_breakdown": {
-        "igcse": 23,
-        "icse": 20,
-        "ncert": 22,
-        "us-common-core": 19
       }
     },
     {
@@ -145,18 +104,10 @@
         "comparison",
         "rounding"
       ],
-      "total_questions": 1413,
+      "total_questions": 781,
       "difficulty_range": {
         "min_irt_b": -2.95,
         "max_irt_b": 2.4
-      },
-      "source_breakdown": {
-        "olympiad": 1053,
-        "igcse": 127,
-        "singapore": 44,
-        "icse": 85,
-        "ncert": 65,
-        "us-common-core": 39
       }
     },
     {
@@ -167,15 +118,10 @@
       "skills": [
         "number_patterns"
       ],
-      "total_questions": 1263,
+      "total_questions": 583,
       "difficulty_range": {
         "min_irt_b": -2.78,
         "max_irt_b": 2.6
-      },
-      "source_breakdown": {
-        "olympiad": 1221,
-        "ncert": 32,
-        "us-common-core": 10
       }
     },
     {
@@ -191,18 +137,10 @@
         "area",
         "angles"
       ],
-      "total_questions": 1485,
+      "total_questions": 663,
       "difficulty_range": {
         "min_irt_b": -2.95,
         "max_irt_b": 2.4
-      },
-      "source_breakdown": {
-        "olympiad": 1157,
-        "igcse": 61,
-        "icse": 70,
-        "ncert": 129,
-        "singapore": 50,
-        "us-common-core": 18
       }
     },
     {
@@ -214,15 +152,10 @@
         "time",
         "money"
       ],
-      "total_questions": 338,
+      "total_questions": 217,
       "difficulty_range": {
         "min_irt_b": -2.94,
         "max_irt_b": 3.0
-      },
-      "source_breakdown": {
-        "igcse": 50,
-        "ncert": 104,
-        "olympiad": 184
       }
     },
     {
@@ -234,21 +167,13 @@
         "multi_step",
         "order_of_ops"
       ],
-      "total_questions": 843,
+      "total_questions": 527,
       "difficulty_range": {
         "min_irt_b": -1.49,
         "max_irt_b": 2.6
-      },
-      "source_breakdown": {
-        "ncert": 106,
-        "igcse": 67,
-        "icse": 20,
-        "olympiad": 600,
-        "us-common-core": 15,
-        "singapore": 35
       }
     }
   ],
-  "schema_version": "4.1",
-  "generated_at": "2026-05-03T10:02:31.229500"
+  "schema_version": "4.2",
+  "generated_at": "2026-06-09T22:19:53.253254"
 }

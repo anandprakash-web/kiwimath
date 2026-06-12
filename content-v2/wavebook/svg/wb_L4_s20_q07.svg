@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" width="300" height="200">
+  <rect width="300" height="200" fill="#FFF8F0" rx="8"/>
+  <text x="150.0" y="14" text-anchor="middle" font-size="11" font-weight="bold" font-family="Arial" fill="#1A1A2E">72° Sector</text>
+  <path d="M 150.0,105.0 L 150.0,40.0 A 65,65 0 0,1 211.8,84.9 Z" fill="#FF6D00" stroke="white" stroke-width="1.5"/>
+  <text x="174.833926909357" y="74.81903198765846" text-anchor="middle" font-size="9" font-weight="bold" font-family="Arial" fill="white">72°</text>
+  <path d="M 150.0,105.0 L 211.8,84.9 A 65,65 0 1,1 150.0,40.0 Z" fill="#1976D2" stroke="white" stroke-width="1.5"/>
+  <text x="125.16607309064301" y="143.18096801234154" text-anchor="middle" font-size="9" font-weight="bold" font-family="Arial" fill="white">288°</text>
+  <rect x="210" y="25" width="8" height="8" fill="#FF6D00" rx="1"/>
+  <text x="222" y="33" text-anchor="start" font-size="8" font-family="Arial" fill="#1A1A2E">72°</text>
+  <rect x="210" y="39" width="8" height="8" fill="#1976D2" rx="1"/>
+  <text x="222" y="47" text-anchor="start" font-size="8" font-family="Arial" fill="#1A1A2E">Rest</text>
+</svg>

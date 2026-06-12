@@ -1,0 +1,977 @@
+[
+  {
+    "id": "nt-l1-fm-001",
+    "topic": "factors_multiples",
+    "stem": "Which of these numbers is a multiple of 3?",
+    "visual_svg": null,
+    "answer_type": "mcq",
+    "correct_answer": 0,
+    "solution": "Step 1: A multiple of 3 means the number is in the 3 times table.\nStep 2: 3, 6, 9, 12, 15, 18...\nStep 3: 12 is in the list, so 12 is a multiple of 3.",
+    "difficulty": 1,
+    "tags": [
+      "multiples",
+      "times_table",
+      "identify"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken.",
+      "1": "Review the question carefully and try again.",
+      "2": "Review the question carefully and try again.",
+      "3": "Review the question carefully and try again."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [
+      "A) 7",
+      "B) 10",
+      "C) 12",
+      "D) 14"
+    ],
+    "interaction_mode": "mcq"
+  },
+  {
+    "id": "nt-l1-fm-002",
+    "topic": "factors_multiples",
+    "stem": "How many multiples of 5 are there between 1 and 20?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: List multiples of 5: 5, 10, 15, 20.\nStep 2: Count them: 5, 10, 15, 20.\nStep 3: There are 4 multiples of 5 between 1 and 20.",
+    "difficulty": 1,
+    "tags": [
+      "multiples",
+      "counting",
+      "skip_counting"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "nt-l1-fm-003",
+    "topic": "factors_multiples",
+    "stem": "Is 15 a multiple of 4?",
+    "visual_svg": null,
+    "answer_type": "mcq",
+    "correct_answer": 0,
+    "solution": "Step 1: Multiples of 4 are: 4, 8, 12, 16, 20...\nStep 2: 15 is not in this list.\nStep 3: 15 \u00f7 4 = 3 remainder 3, so 15 is not a multiple of 4.",
+    "difficulty": 1,
+    "tags": [
+      "multiples",
+      "yes_no",
+      "reasoning"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken.",
+      "1": "Review the question carefully and try again."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [
+      "A) Yes",
+      "B) No"
+    ],
+    "interaction_mode": "mcq"
+  },
+  {
+    "id": "nt-l1-fm-004",
+    "topic": "factors_multiples",
+    "stem": "How many even numbers are there from 1 to 20?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: Even numbers are multiples of 2.\nStep 2: 2, 4, 6, 8, 10, 12, 14, 16, 18, 20.\nStep 3: There are 10 even numbers from 1 to 20.",
+    "difficulty": 1,
+    "tags": [
+      "multiples",
+      "even",
+      "counting"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "nt-l1-fm-005",
+    "topic": "factors_multiples",
+    "stem": "Riya counts by 4s starting from 4. What is the third number she says?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: Counting by 4s: 4, 8, 12, 16...\nStep 2: First number: 4. Second number: 8. Third number: 12.\nStep 3: The third number is 12.",
+    "difficulty": 1,
+    "tags": [
+      "multiples",
+      "skip_counting",
+      "real_world"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "nt-l1-fm-006",
+    "topic": "factors_multiples",
+    "stem": "A toy robot takes 3 steps at a time. Starting from 0, can it land exactly on step 10?",
+    "visual_svg": null,
+    "answer_type": "mcq",
+    "correct_answer": 0,
+    "solution": "Step 1: The robot lands on multiples of 3: 0, 3, 6, 9, 12...\nStep 2: 10 is not in this list.\nStep 3: No, the robot cannot land exactly on step 10.",
+    "difficulty": 2,
+    "tags": [
+      "multiples",
+      "real_world",
+      "reasoning"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken.",
+      "1": "Review the question carefully and try again."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [
+      "A) Yes",
+      "B) No"
+    ],
+    "interaction_mode": "mcq"
+  },
+  {
+    "id": "nt-l1-fm-007",
+    "topic": "factors_multiples",
+    "stem": "Which of these numbers is a multiple of both 2 and 3?",
+    "visual_svg": null,
+    "answer_type": "mcq",
+    "correct_answer": 0,
+    "solution": "Step 1: Multiples of 2 are even numbers. Multiples of 3: 3, 6, 9, 12, 15, 18...\nStep 2: Check each option: 8 (even but not \u00f73), 9 (not even), 15 (not even), 18 (even AND \u00f73).\nStep 3: 18 is a multiple of both 2 and 3.",
+    "difficulty": 3,
+    "tags": [
+      "multiples",
+      "common_multiples",
+      "reasoning"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken.",
+      "1": "Review the question carefully and try again.",
+      "2": "Review the question carefully and try again.",
+      "3": "Review the question carefully and try again."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [
+      "A) 8",
+      "B) 9",
+      "C) 15",
+      "D) 18"
+    ],
+    "interaction_mode": "mcq"
+  },
+  {
+    "id": "nt-l1-fm-008",
+    "topic": "factors_multiples",
+    "stem": "Arun arranges 12 stickers in equal rows. Which of these could be the number of stickers in each row?",
+    "visual_svg": null,
+    "answer_type": "mcq",
+    "correct_answer": 0,
+    "solution": "Step 1: We need a number that divides 12 evenly (a factor of 12).\nStep 2: 12 \u00f7 5 = 2 R2 (no). 12 \u00f7 7 = 1 R5 (no). 12 \u00f7 4 = 3 (yes!). 12 \u00f7 8 = 1 R4 (no).\nStep 3: 4 is a factor of 12, so 4 stickers per row works.",
+    "difficulty": 2,
+    "tags": [
+      "factors",
+      "real_world",
+      "division"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken.",
+      "1": "Review the question carefully and try again.",
+      "2": "Review the question carefully and try again.",
+      "3": "Review the question carefully and try again."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [
+      "A) 5",
+      "B) 7",
+      "C) 4",
+      "D) 8"
+    ],
+    "interaction_mode": "mcq"
+  },
+  {
+    "id": "nt-l1-fm-009",
+    "topic": "factors_multiples",
+    "stem": "What is the smallest number that is a multiple of both 4 and 6?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: Multiples of 4: 4, 8, 12, 16, 20, 24...\nStep 2: Multiples of 6: 6, 12, 18, 24...\nStep 3: The first number in both lists is 12.",
+    "difficulty": 3,
+    "tags": [
+      "multiples",
+      "lcm_intro",
+      "reasoning"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "nt-l1-fm-010",
+    "topic": "factors_multiples",
+    "stem": "How many factors does 10 have?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: A factor of 10 divides 10 evenly.\nStep 2: 10 \u00f7 1 = 10 \u2713, 10 \u00f7 2 = 5 \u2713, 10 \u00f7 5 = 2 \u2713, 10 \u00f7 10 = 1 \u2713.\nStep 3: The factors of 10 are 1, 2, 5, 10. That is 4 factors.",
+    "difficulty": 2,
+    "tags": [
+      "factors",
+      "counting",
+      "division"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "nt-l1-dr-001",
+    "topic": "divisibility_rules",
+    "stem": "Can 18 pencils be shared equally among 3 children?",
+    "visual_svg": null,
+    "answer_type": "mcq",
+    "correct_answer": 0,
+    "solution": "Step 1: To check, divide 18 by 3.\nStep 2: 18 \u00f7 3 = 6 with no remainder.\nStep 3: Yes! Each child gets 6 pencils.",
+    "difficulty": 1,
+    "tags": [
+      "divisibility",
+      "sharing",
+      "real_world"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken.",
+      "1": "Review the question carefully and try again."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [
+      "A) Yes",
+      "B) No"
+    ],
+    "interaction_mode": "mcq"
+  },
+  {
+    "id": "nt-l1-dr-002",
+    "topic": "divisibility_rules",
+    "stem": "Is 35 divisible by 5?",
+    "visual_svg": null,
+    "answer_type": "mcq",
+    "correct_answer": 0,
+    "solution": "Step 1: A number is divisible by 5 if it ends in 0 or 5.\nStep 2: 35 ends in 5.\nStep 3: Yes, 35 is divisible by 5. (35 \u00f7 5 = 7)",
+    "difficulty": 1,
+    "tags": [
+      "divisibility",
+      "rule_of_5",
+      "ends_in"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken.",
+      "1": "Review the question carefully and try again."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [
+      "A) Yes",
+      "B) No"
+    ],
+    "interaction_mode": "mcq"
+  },
+  {
+    "id": "nt-l1-dr-003",
+    "topic": "divisibility_rules",
+    "stem": "Which of these numbers is divisible by 2?",
+    "visual_svg": null,
+    "answer_type": "mcq",
+    "correct_answer": 0,
+    "solution": "Step 1: A number is divisible by 2 if it is even (ends in 0, 2, 4, 6, or 8).\nStep 2: 13 ends in 3 (odd). 27 ends in 7 (odd). 34 ends in 4 (even). 45 ends in 5 (odd).\nStep 3: 34 is divisible by 2.",
+    "difficulty": 1,
+    "tags": [
+      "divisibility",
+      "rule_of_2",
+      "even"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken.",
+      "1": "Review the question carefully and try again.",
+      "2": "Review the question carefully and try again.",
+      "3": "Review the question carefully and try again."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [
+      "A) 13",
+      "B) 27",
+      "C) 34",
+      "D) 45"
+    ],
+    "interaction_mode": "mcq"
+  },
+  {
+    "id": "nt-l1-dr-004",
+    "topic": "divisibility_rules",
+    "stem": "A teacher has 24 cookies and wants to give each student exactly 4 cookies. Can she do it without any cookies left over?",
+    "visual_svg": null,
+    "answer_type": "mcq",
+    "correct_answer": 0,
+    "solution": "Step 1: Divide 24 by 4.\nStep 2: 24 \u00f7 4 = 6 with no remainder.\nStep 3: Yes! She can give 4 cookies each to 6 students with none left over.",
+    "difficulty": 1,
+    "tags": [
+      "divisibility",
+      "sharing",
+      "real_world"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken.",
+      "1": "Review the question carefully and try again."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [
+      "A) Yes",
+      "B) No"
+    ],
+    "interaction_mode": "mcq"
+  },
+  {
+    "id": "nt-l1-dr-005",
+    "topic": "divisibility_rules",
+    "stem": "Can 22 toys be divided equally into groups of 5?",
+    "visual_svg": null,
+    "answer_type": "mcq",
+    "correct_answer": 0,
+    "solution": "Step 1: Check if 22 is divisible by 5.\nStep 2: 22 does not end in 0 or 5.\nStep 3: 22 \u00f7 5 = 4 remainder 2. No, there will be 2 toys left over.",
+    "difficulty": 1,
+    "tags": [
+      "divisibility",
+      "rule_of_5",
+      "remainder"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken.",
+      "1": "Review the question carefully and try again."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [
+      "A) Yes",
+      "B) No"
+    ],
+    "interaction_mode": "mcq"
+  },
+  {
+    "id": "nt-l1-dr-006",
+    "topic": "divisibility_rules",
+    "stem": "Which of these numbers is divisible by 3: 14, 18, 22, 25?",
+    "visual_svg": null,
+    "answer_type": "mcq",
+    "correct_answer": 0,
+    "solution": "Step 1: To check divisibility by 3, add the digits.\nStep 2: 14: 1+4=5 (not \u00f73). 18: 1+8=9 (yes, \u00f73!). 22: 2+2=4 (not \u00f73). 25: 2+5=7 (not \u00f73).\nStep 3: 18 is divisible by 3. (18 \u00f7 3 = 6)",
+    "difficulty": 2,
+    "tags": [
+      "divisibility",
+      "rule_of_3",
+      "digit_sum"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken.",
+      "1": "Review the question carefully and try again.",
+      "2": "Review the question carefully and try again.",
+      "3": "Review the question carefully and try again."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [
+      "A) 14",
+      "B) 18",
+      "C) 22",
+      "D) 25"
+    ],
+    "interaction_mode": "mcq"
+  },
+  {
+    "id": "nt-l1-dr-007",
+    "topic": "divisibility_rules",
+    "stem": "A baker puts muffins in boxes of 6. She baked 30 muffins. How many full boxes can she make?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: Divide 30 by 6.\nStep 2: 30 \u00f7 6 = 5.\nStep 3: She can make 5 full boxes.",
+    "difficulty": 2,
+    "tags": [
+      "divisibility",
+      "real_world",
+      "division"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "nt-l1-dr-008",
+    "topic": "divisibility_rules",
+    "stem": "A number ends in 0. Is it always divisible by both 2 and 5?",
+    "visual_svg": null,
+    "answer_type": "mcq",
+    "correct_answer": 0,
+    "solution": "Step 1: A number ending in 0 is even, so it is divisible by 2.\nStep 2: A number ending in 0 or 5 is divisible by 5. Since 0 qualifies, it is divisible by 5.\nStep 3: Yes, a number ending in 0 is always divisible by both 2 and 5.",
+    "difficulty": 3,
+    "tags": [
+      "divisibility",
+      "rule_of_2",
+      "rule_of_5",
+      "reasoning"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken.",
+      "1": "Review the question carefully and try again."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [
+      "A) Yes, always",
+      "B) No, not always"
+    ],
+    "interaction_mode": "mcq"
+  },
+  {
+    "id": "nt-l1-dr-009",
+    "topic": "divisibility_rules",
+    "stem": "There are 17 children at a party. Can they be split into equal teams of 3 with nobody left out?",
+    "visual_svg": null,
+    "answer_type": "mcq",
+    "correct_answer": 0,
+    "solution": "Step 1: Divide 17 by 3.\nStep 2: 17 \u00f7 3 = 5 remainder 2.\nStep 3: No, 2 children would be left out.",
+    "difficulty": 2,
+    "tags": [
+      "divisibility",
+      "remainder",
+      "real_world"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken.",
+      "1": "Review the question carefully and try again."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [
+      "A) Yes",
+      "B) No"
+    ],
+    "interaction_mode": "mcq"
+  },
+  {
+    "id": "nt-l1-dr-010",
+    "topic": "divisibility_rules",
+    "stem": "Which of these numbers is divisible by both 2 and 3?",
+    "visual_svg": null,
+    "answer_type": "mcq",
+    "correct_answer": 0,
+    "solution": "Step 1: Check divisible by 2 (even): 14 \u2713, 15 \u2717, 20 \u2713, 24 \u2713.\nStep 2: Check divisible by 3 (digit sum \u00f73): 14: 1+4=5 \u2717. 20: 2+0=2 \u2717. 24: 2+4=6 \u2713.\nStep 3: 24 is divisible by both 2 and 3.",
+    "difficulty": 3,
+    "tags": [
+      "divisibility",
+      "rule_of_2",
+      "rule_of_3",
+      "combined"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken.",
+      "1": "Review the question carefully and try again.",
+      "2": "Review the question carefully and try again.",
+      "3": "Review the question carefully and try again."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [
+      "A) 14",
+      "B) 15",
+      "C) 20",
+      "D) 24"
+    ],
+    "interaction_mode": "mcq"
+  },
+  {
+    "id": "nt-l1-pc-001",
+    "topic": "prime_composite",
+    "stem": "Which of these numbers can only be divided by 1 and itself?",
+    "visual_svg": null,
+    "answer_type": "mcq",
+    "correct_answer": 0,
+    "solution": "Step 1: 6 = 2 \u00d7 3 (can be divided by 2 and 3). 8 = 2 \u00d7 4. 9 = 3 \u00d7 3.\nStep 2: 7 can only be divided by 1 and 7.\nStep 3: 7 is a prime number.",
+    "difficulty": 1,
+    "tags": [
+      "prime",
+      "identify",
+      "definition"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken.",
+      "1": "Review the question carefully and try again.",
+      "2": "Review the question carefully and try again.",
+      "3": "Review the question carefully and try again."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [
+      "A) 6",
+      "B) 7",
+      "C) 8",
+      "D) 9"
+    ],
+    "interaction_mode": "mcq"
+  },
+  {
+    "id": "nt-l1-pc-002",
+    "topic": "prime_composite",
+    "stem": "Is the number 9 prime or composite?",
+    "visual_svg": null,
+    "answer_type": "mcq",
+    "correct_answer": 0,
+    "solution": "Step 1: A prime number has exactly 2 factors: 1 and itself.\nStep 2: 9 = 3 \u00d7 3, so 9 has factors 1, 3, and 9.\nStep 3: Since 9 has more than 2 factors, it is composite.",
+    "difficulty": 1,
+    "tags": [
+      "prime",
+      "composite",
+      "definition"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken.",
+      "1": "Review the question carefully and try again."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [
+      "A) Prime",
+      "B) Composite"
+    ],
+    "interaction_mode": "mcq"
+  },
+  {
+    "id": "nt-l1-pc-003",
+    "topic": "prime_composite",
+    "stem": "How many prime numbers are there less than 10?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: Check each number from 2 to 9.\nStep 2: 2 (prime), 3 (prime), 4 = 2\u00d72 (not prime), 5 (prime), 6 = 2\u00d73 (not prime), 7 (prime), 8 = 2\u00d74 (not prime), 9 = 3\u00d73 (not prime).\nStep 3: The primes less than 10 are: 2, 3, 5, 7. That is 4 primes.",
+    "difficulty": 2,
+    "tags": [
+      "prime",
+      "counting",
+      "listing"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "nt-l1-pc-004",
+    "topic": "prime_composite",
+    "stem": "Which is the only even prime number?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: Even numbers can be divided by 2.\nStep 2: If an even number is greater than 2, it has at least 3 factors (1, 2, and itself), so it is not prime.\nStep 3: 2 is the only even number with exactly 2 factors (1 and 2). So 2 is the only even prime.",
+    "difficulty": 2,
+    "tags": [
+      "prime",
+      "even",
+      "special_case"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "nt-l1-pc-005",
+    "topic": "prime_composite",
+    "stem": "Priya says 11 is a composite number. Is she correct?",
+    "visual_svg": null,
+    "answer_type": "mcq",
+    "correct_answer": 0,
+    "solution": "Step 1: Check if 11 can be divided by any number other than 1 and 11.\nStep 2: 11 \u00f7 2 = 5 R1. 11 \u00f7 3 = 3 R2. 11 \u00f7 5 = 2 R1. None divide evenly.\nStep 3: 11 is prime, not composite. Priya is wrong.",
+    "difficulty": 2,
+    "tags": [
+      "prime",
+      "reasoning",
+      "true_false"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken.",
+      "1": "Review the question carefully and try again."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [
+      "A) Yes, she is correct",
+      "B) No, she is wrong"
+    ],
+    "interaction_mode": "mcq"
+  },
+  {
+    "id": "nt-l1-pc-006",
+    "topic": "prime_composite",
+    "stem": "Which of the following is a composite number?",
+    "visual_svg": null,
+    "answer_type": "mcq",
+    "correct_answer": 0,
+    "solution": "Step 1: 2, 5, and 11 are prime (only divisible by 1 and themselves).\nStep 2: 15 = 3 \u00d7 5, so 15 has factors 1, 3, 5, and 15.\nStep 3: 15 is composite because it has more than 2 factors.",
+    "difficulty": 1,
+    "tags": [
+      "composite",
+      "identify",
+      "multiple_choice"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken.",
+      "1": "Review the question carefully and try again.",
+      "2": "Review the question carefully and try again.",
+      "3": "Review the question carefully and try again."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [
+      "A) 2",
+      "B) 5",
+      "C) 11",
+      "D) 15"
+    ],
+    "interaction_mode": "mcq"
+  },
+  {
+    "id": "nt-l1-pc-007",
+    "topic": "prime_composite",
+    "stem": "A number has exactly 2 factors. What do we call this type of number?",
+    "visual_svg": null,
+    "answer_type": "mcq",
+    "correct_answer": 0,
+    "solution": "Step 1: A number with exactly 2 factors has only 1 and itself as factors.\nStep 2: This is the definition of a prime number.\nStep 3: The answer is prime number.",
+    "difficulty": 1,
+    "tags": [
+      "prime",
+      "definition",
+      "vocabulary"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken.",
+      "1": "Review the question carefully and try again.",
+      "2": "Review the question carefully and try again.",
+      "3": "Review the question carefully and try again."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [
+      "A) Even number",
+      "B) Odd number",
+      "C) Prime number",
+      "D) Composite number"
+    ],
+    "interaction_mode": "mcq"
+  },
+  {
+    "id": "nt-l1-pc-008",
+    "topic": "prime_composite",
+    "stem": "Dev has 13 chocolates. Can he arrange them in equal rows with more than 1 chocolate per row and more than 1 row?",
+    "visual_svg": null,
+    "answer_type": "mcq",
+    "correct_answer": 0,
+    "solution": "Step 1: To arrange in equal rows, 13 must be divisible by the number of rows.\nStep 2: 13 \u00f7 2 = 6 R1. 13 \u00f7 3 = 4 R1. 13 \u00f7 4 = 3 R1. None work.\nStep 3: 13 is prime, so it can only be arranged as 1 row of 13 or 13 rows of 1. He cannot make equal rows as described.",
+    "difficulty": 3,
+    "tags": [
+      "prime",
+      "real_world",
+      "arrangement"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken.",
+      "1": "Review the question carefully and try again."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [
+      "A) Yes",
+      "B) No"
+    ],
+    "interaction_mode": "mcq"
+  },
+  {
+    "id": "nt-l1-pc-009",
+    "topic": "prime_composite",
+    "stem": "How many composite numbers are there between 1 and 10?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: Numbers from 2 to 10: 2, 3, 4, 5, 6, 7, 8, 9, 10.\nStep 2: Primes: 2, 3, 5, 7 (4 primes). Note: 1 is neither prime nor composite.\nStep 3: Composite numbers: 4, 6, 8, 9, 10. That is 5 composite numbers.",
+    "difficulty": 3,
+    "tags": [
+      "composite",
+      "counting",
+      "listing"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "nt-l1-pc-010",
+    "topic": "prime_composite",
+    "stem": "Which pair of prime numbers adds up to 10?",
+    "visual_svg": null,
+    "answer_type": "mcq",
+    "correct_answer": 0,
+    "solution": "Step 1: Check each pair:\nA) 1 is not prime. B) 8 = 2\u00d74, not prime. C) 3 is prime and 7 is prime. D) 4 = 2\u00d72 and 6 = 2\u00d73, neither is prime.\nStep 2: Only option C has two prime numbers.\nStep 3: 3 + 7 = 10. Both are prime!",
+    "difficulty": 3,
+    "tags": [
+      "prime",
+      "addition",
+      "pair"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken.",
+      "1": "Review the question carefully and try again.",
+      "2": "Review the question carefully and try again.",
+      "3": "Review the question carefully and try again."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [
+      "A) 1 and 9",
+      "B) 2 and 8",
+      "C) 3 and 7",
+      "D) 4 and 6"
+    ],
+    "interaction_mode": "mcq"
+  }
+]

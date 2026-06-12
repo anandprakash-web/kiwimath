@@ -1,0 +1,23 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="200" fill="#f9f9f0" rx="8"/>
+  <text x="100" y="22" text-anchor="middle" font-size="11" font-family="Arial" fill="#555">Find the Next Figure</text>
+  <g transform="translate(37,90) rotate(0)">
+    <rect x="-14" y="-14" width="28" height="28" rx="3" fill="#E8EAF6" stroke="#5C6BC0" stroke-width="1"/>
+    <polygon points="0,-9 7,3 2,3 2,9 -2,9 -2,3 -7,3" fill="#3F51B5"/>
+  </g>
+  <g transform="translate(79,90) rotate(90)">
+    <rect x="-14" y="-14" width="28" height="28" rx="3" fill="#E8EAF6" stroke="#5C6BC0" stroke-width="1"/>
+    <polygon points="0,-9 7,3 2,3 2,9 -2,9 -2,3 -7,3" fill="#3F51B5"/>
+  </g>
+  <g transform="translate(121,90) rotate(180)">
+    <rect x="-14" y="-14" width="28" height="28" rx="3" fill="#E8EAF6" stroke="#5C6BC0" stroke-width="1"/>
+    <polygon points="0,-9 7,3 2,3 2,9 -2,9 -2,3 -7,3" fill="#3F51B5"/>
+  </g>
+  <g transform="translate(163,90) rotate(270)">
+    <rect x="-14" y="-14" width="28" height="28" rx="3" fill="#E8EAF6" stroke="#5C6BC0" stroke-width="1"/>
+    <polygon points="0,-9 7,3 2,3 2,9 -2,9 -2,3 -7,3" fill="#3F51B5"/>
+  </g>
+  <rect x="192" y="76" width="28" height="28" rx="3" fill="#FFF9C4" stroke="#FBC02D" stroke-width="2"/>
+  <text x="206" y="96" text-anchor="middle" font-size="16" font-family="Arial" font-weight="bold" fill="#F57F17">?</text>
+  <text x="100" y="140" text-anchor="middle" font-size="10" font-family="Arial" fill="#777">Each figure rotates 90 degrees clockwise</text>
+</svg>

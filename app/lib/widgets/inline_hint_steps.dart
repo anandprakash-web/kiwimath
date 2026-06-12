@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../models/question_v2.dart';
+import '../theme/kiwi_theme.dart';
 
 /// Khan Academy-style inline stepped hint widget.
 ///
@@ -42,24 +43,24 @@ class _InlineHintStepsState extends State<InlineHintSteps>
   // Step color palette — cycles if more than 4 steps.
   static const _stepColors = [
     _StepColorScheme(
-      background: Color(0xFFE1F5FE),
-      border: Color(0xFF81D4FA),
-      text: Color(0xFF0277BD),
+      background: KiwiColors.visualBlueBg,
+      border: KiwiColors.visualBlueBorder,
+      text: KiwiColors.sky,
     ),
     _StepColorScheme(
-      background: Color(0xFFFFF3E0),
-      border: Color(0xFFFFB74D),
-      text: Color(0xFFE65100),
+      background: KiwiColors.kiwiPrimaryLight,
+      border: KiwiColors.amber,
+      text: KiwiColors.kiwiPrimaryDark,
     ),
     _StepColorScheme(
-      background: Color(0xFFF3E5F5),
-      border: Color(0xFFCE93D8),
-      text: Color(0xFF6A1B9A),
+      background: Color(0xFFF3E5F5), // decorative — no token
+      border: KiwiColors.indigo,
+      text: KiwiColors.indigo,
     ),
     _StepColorScheme(
-      background: Color(0xFFE8F5E9),
-      border: Color(0xFF81C784),
-      text: Color(0xFF2E7D32),
+      background: KiwiColors.kiwiGreenLight,
+      border: KiwiColors.correct,
+      text: KiwiColors.kiwiGreenDark,
     ),
   ];
 
@@ -200,12 +201,12 @@ class _InlineHintStepsState extends State<InlineHintSteps>
             padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
             decoration: BoxDecoration(
               gradient: const LinearGradient(
-                colors: [Color(0xFF42A5F5), Color(0xFF1976D2)],
+                colors: [KiwiColors.sky, KiwiColors.sky],
               ),
               borderRadius: BorderRadius.circular(20),
               boxShadow: [
                 BoxShadow(
-                  color: const Color(0xFF1976D2).withOpacity(0.3),
+                  color: KiwiColors.sky.withOpacity(0.3),
                   blurRadius: 6,
                   offset: const Offset(0, 2),
                 ),
@@ -273,7 +274,7 @@ class _InlineHintStepsState extends State<InlineHintSteps>
               Text(
                 _steps[index],
                 style: TextStyle(
-                  color: Colors.grey.shade900,
+                  color: KiwiColors.textDark,
                   fontSize: 14,
                   height: 1.4,
                 ),
@@ -295,7 +296,7 @@ class _InlineHintStepsState extends State<InlineHintSteps>
         icon: const Icon(Icons.arrow_downward, size: 16),
         label: Text('Show next step ($remaining remaining)'),
         style: TextButton.styleFrom(
-          foregroundColor: const Color(0xFF1976D2),
+          foregroundColor: KiwiColors.sky,
           textStyle: const TextStyle(
             fontSize: 13,
             fontWeight: FontWeight.w600,

@@ -1,0 +1,252 @@
+{
+  "topic_id": "wavebook-data-handling",
+  "topic_name": "Wavebook: Data Handling",
+  "topic_emoji": "\ud83d\udcd8",
+  "grade": 6,
+  "domain": "wavebook",
+  "source": "wavebook",
+  "total_questions": 13,
+  "difficulty_range": {
+    "min": 0,
+    "max": 0
+  },
+  "questions": [
+    {
+      "id": "wb_L4_s21_q01",
+      "stem": "The most frequently occurring value in a data set is called the:",
+      "interaction_mode": "mcq",
+      "topic": "Data Handling",
+      "difficulty_tier": "warmup",
+      "question_number": 1,
+      "choices": [
+        "Mean",
+        "Median",
+        "Range",
+        "Mode"
+      ],
+      "correct_answer": 3,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S21",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L4_s21_q02",
+      "stem": "The range of the data 5, 8, 12, 3, 15, 7 is:",
+      "interaction_mode": "mcq",
+      "topic": "Data Handling",
+      "difficulty_tier": "warmup",
+      "question_number": 2,
+      "choices": [
+        "15",
+        "5",
+        "12",
+        "10"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S21",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L4_s21_q03",
+      "stem": "The median of 7, 3, 5, 9, 11 is:",
+      "interaction_mode": "mcq",
+      "topic": "Data Handling",
+      "difficulty_tier": "warmup",
+      "question_number": 3,
+      "choices": [
+        "5",
+        "9",
+        "11",
+        "7"
+      ],
+      "correct_answer": 3,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S21",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L4_s21_q04",
+      "stem": "In a bar graph, the height of each bar represents:",
+      "interaction_mode": "mcq",
+      "topic": "Data Handling",
+      "difficulty_tier": "warmup",
+      "question_number": 4,
+      "choices": [
+        "The category name",
+        "The frequency of the category",
+        "The total of all values",
+        "The average"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S21",
+      "svg": "wb_L4_s21_q04.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 350 220\" width=\"350\" height=\"220\" style=\"font-family:Arial,sans-serif\"><line x1=\"60\" y1=\"30\" x2=\"60\" y2=\"180\" stroke=\"#333\" stroke-width=\"1.5\"/><line x1=\"60\" y1=\"180\" x2=\"340\" y2=\"180\" stroke=\"#333\" stroke-width=\"1.5\"/><line x1=\"60\" y1=\"180.0\" x2=\"340\" y2=\"180.0\" stroke=\"#eee\" stroke-width=\"1\"/><text x=\"52\" y=\"184.0\" text-anchor=\"end\" font-size=\"10\" fill=\"#666\">0</text><line x1=\"60\" y1=\"142.5\" x2=\"340\" y2=\"142.5\" stroke=\"#eee\" stroke-width=\"1\"/><text x=\"52\" y=\"146.5\" text-anchor=\"end\" font-size=\"10\" fill=\"#666\">2</text><line x1=\"60\" y1=\"105.0\" x2=\"340\" y2=\"105.0\" stroke=\"#eee\" stroke-width=\"1\"/><text x=\"52\" y=\"109.0\" text-anchor=\"end\" font-size=\"10\" fill=\"#666\">4</text><line x1=\"60\" y1=\"67.5\" x2=\"340\" y2=\"67.5\" stroke=\"#eee\" stroke-width=\"1\"/><text x=\"52\" y=\"71.5\" text-anchor=\"end\" font-size=\"10\" fill=\"#666\">6</text><line x1=\"60\" y1=\"30.0\" x2=\"340\" y2=\"30.0\" stroke=\"#eee\" stroke-width=\"1\"/><text x=\"52\" y=\"34.0\" text-anchor=\"end\" font-size=\"10\" fill=\"#666\">8</text><rect x=\"75.0\" y=\"86.2\" width=\"40.0\" height=\"93.8\" fill=\"#42A5F5\" rx=\"2\"/><text x=\"95.0\" y=\"194\" text-anchor=\"middle\" font-size=\"9\" fill=\"#333\">A</text><text x=\"95.0\" y=\"82.2\" text-anchor=\"middle\" font-size=\"10\" fill=\"#333\">5</text><rect x=\"127.0\" y=\"30.0\" width=\"40.0\" height=\"150.0\" fill=\"#66BB6A\" rx=\"2\"/><text x=\"147.0\" y=\"194\" text-anchor=\"middle\" font-size=\"9\" fill=\"#333\">B</text><text x=\"147.0\" y=\"26.0\" text-anchor=\"middle\" font-size=\"10\" fill=\"#333\">8</text><rect x=\"179.0\" y=\"123.8\" width=\"40.0\" height=\"56.2\" fill=\"#FF7043\" rx=\"2\"/><text x=\"199.0\" y=\"194\" text-anchor=\"middle\" font-size=\"9\" fill=\"#333\">C</text><text x=\"199.0\" y=\"119.8\" text-anchor=\"middle\" font-size=\"10\" fill=\"#333\">3</text></svg>"
+    },
+    {
+      "id": "wb_L4_s21_q05",
+      "stem": "The mean of first 5 prime numbers (2, 3, 5, 7, 11) is:",
+      "interaction_mode": "mcq",
+      "topic": "Data Handling",
+      "difficulty_tier": "warmup",
+      "question_number": 5,
+      "choices": [
+        "5",
+        "7",
+        "6",
+        "5.6"
+      ],
+      "correct_answer": 3,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S21",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L4_s21_q06",
+      "stem": "Which measure of central tendency is affected most by extreme values?",
+      "interaction_mode": "mcq",
+      "topic": "Data Handling",
+      "difficulty_tier": "practice",
+      "question_number": 6,
+      "choices": [
+        "Mode",
+        "Median",
+        "Range",
+        "Mean"
+      ],
+      "correct_answer": 3,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S21",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L4_s21_q07",
+      "stem": "The class mark of the class interval 20-30 is:",
+      "interaction_mode": "mcq",
+      "topic": "Data Handling",
+      "difficulty_tier": "practice",
+      "question_number": 7,
+      "choices": [
+        "20",
+        "30",
+        "10",
+        "25"
+      ],
+      "correct_answer": 3,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S21",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L4_s21_q09",
+      "stem": "If the mean of 5 observations is 12, and four of them are 10, 14, 11, 15, the fifth observation is:",
+      "interaction_mode": "mcq",
+      "topic": "Data Handling",
+      "difficulty_tier": "practice",
+      "question_number": 9,
+      "choices": [
+        "12",
+        "10",
+        "8",
+        "15"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S21",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L4_s21_q10",
+      "stem": "A frequency polygon is drawn by connecting the midpoints of the tops of bars in a:",
+      "interaction_mode": "mcq",
+      "topic": "Data Handling",
+      "difficulty_tier": "practice",
+      "question_number": 10,
+      "choices": [
+        "Histogram",
+        "Pie chart",
+        "Line graph",
+        "Scatter plot"
+      ],
+      "correct_answer": 0,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S21",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L4_s21_q11",
+      "stem": "The mode of the data 2, 3, 5, 3, 7, 3, 8, 3 is:",
+      "interaction_mode": "mcq",
+      "topic": "Data Handling",
+      "difficulty_tier": "challenge",
+      "question_number": 11,
+      "choices": [
+        "3",
+        "5",
+        "7",
+        "8"
+      ],
+      "correct_answer": 0,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S21",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L4_s21_q12",
+      "stem": "The median of 12, 14, 10, 8, 16, 18 (even number of observations) is:",
+      "interaction_mode": "mcq",
+      "topic": "Data Handling",
+      "difficulty_tier": "challenge",
+      "question_number": 12,
+      "choices": [
+        "12",
+        "13",
+        "14",
+        "11"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S21",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L4_s21_q13",
+      "stem": "Which type of graph is best for showing parts of a whole?",
+      "interaction_mode": "mcq",
+      "topic": "Data Handling",
+      "difficulty_tier": "challenge",
+      "question_number": 13,
+      "choices": [
+        "Bar graph",
+        "Line graph",
+        "Histogram",
+        "Pie chart"
+      ],
+      "correct_answer": 3,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S21",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 350 220\" width=\"350\" height=\"220\" style=\"font-family:Arial,sans-serif\"><text x=\"175\" y=\"18\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#333\">Graph</text><line x1=\"60\" y1=\"30\" x2=\"60\" y2=\"180\" stroke=\"#333\" stroke-width=\"1.5\"/><line x1=\"60\" y1=\"180\" x2=\"340\" y2=\"180\" stroke=\"#333\" stroke-width=\"1.5\"/><line x1=\"60\" y1=\"180.0\" x2=\"340\" y2=\"180.0\" stroke=\"#eee\" stroke-width=\"1\"/><text x=\"52\" y=\"184.0\" text-anchor=\"end\" font-size=\"10\" fill=\"#666\">0</text><line x1=\"60\" y1=\"142.5\" x2=\"340\" y2=\"142.5\" stroke=\"#eee\" stroke-width=\"1\"/><text x=\"52\" y=\"146.5\" text-anchor=\"end\" font-size=\"10\" fill=\"#666\">2</text><line x1=\"60\" y1=\"105.0\" x2=\"340\" y2=\"105.0\" stroke=\"#eee\" stroke-width=\"1\"/><text x=\"52\" y=\"109.0\" text-anchor=\"end\" font-size=\"10\" fill=\"#666\">4</text><line x1=\"60\" y1=\"67.5\" x2=\"340\" y2=\"67.5\" stroke=\"#eee\" stroke-width=\"1\"/><text x=\"52\" y=\"71.5\" text-anchor=\"end\" font-size=\"10\" fill=\"#666\">6</text><line x1=\"60\" y1=\"30.0\" x2=\"340\" y2=\"30.0\" stroke=\"#eee\" stroke-width=\"1\"/><text x=\"52\" y=\"34.0\" text-anchor=\"end\" font-size=\"10\" fill=\"#666\">8</text><rect x=\"75.0\" y=\"86.2\" width=\"40.0\" height=\"93.8\" fill=\"#42A5F5\" rx=\"2\"/><text x=\"95.0\" y=\"194\" text-anchor=\"middle\" font-size=\"9\" fill=\"#333\">A</text><text x=\"95.0\" y=\"82.2\" text-anchor=\"middle\" font-size=\"10\" fill=\"#333\">5</text><rect x=\"127.0\" y=\"30.0\" width=\"40.0\" height=\"150.0\" fill=\"#66BB6A\" rx=\"2\"/><text x=\"147.0\" y=\"194\" text-anchor=\"middle\" font-size=\"9\" fill=\"#333\">B</text><text x=\"147.0\" y=\"26.0\" text-anchor=\"middle\" font-size=\"10\" fill=\"#333\">8</text><rect x=\"179.0\" y=\"123.8\" width=\"40.0\" height=\"56.2\" fill=\"#FF7043\" rx=\"2\"/><text x=\"199.0\" y=\"194\" text-anchor=\"middle\" font-size=\"9\" fill=\"#333\">C</text><text x=\"199.0\" y=\"119.8\" text-anchor=\"middle\" font-size=\"10\" fill=\"#333\">3</text></svg>"
+    },
+    {
+      "id": "wb_L4_s21_q14",
+      "stem": "The difference between the highest and lowest values in a data set is called:",
+      "interaction_mode": "mcq",
+      "topic": "Data Handling",
+      "difficulty_tier": "challenge",
+      "question_number": 14,
+      "choices": [
+        "Mean",
+        "Mode",
+        "Median",
+        "Range"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S21",
+      "diagnostics": {}
+    }
+  ]
+}

@@ -36,12 +36,12 @@ class _MatchColumnWidgetState extends State<MatchColumnWidget> {
 
   // Match line colors — each pair gets a distinct color
   static const _matchColors = [
-    Color(0xFFFF6D00), // orange
-    Color(0xFF2196F3), // blue
-    Color(0xFF4CAF50), // green
-    Color(0xFF9C27B0), // purple
-    Color(0xFFFF4081), // pink
-    Color(0xFF00BCD4), // cyan
+    KiwiColors.kiwiPrimary, // orange
+    KiwiColors.sky, // blue
+    KiwiColors.kiwiGreen, // green
+    KiwiColors.indigo, // purple
+    KiwiColors.coral, // pink
+    KiwiColors.teal, // cyan
   ];
 
   bool get _allMatched => _matches.length == widget.leftItems.length;
@@ -98,10 +98,10 @@ class _MatchColumnWidgetState extends State<MatchColumnWidget> {
           margin: const EdgeInsets.only(bottom: 14),
           decoration: BoxDecoration(
             gradient: const LinearGradient(
-              colors: [Color(0xFFF3E5F5), Color(0xFFE1BEE7)],
+              colors: [Color(0xFFF3E5F5), Color(0xFFE1BEE7)], // decorative — no token
             ),
             borderRadius: BorderRadius.circular(12),
-            border: Border.all(color: const Color(0xFFCE93D8), width: 1.5),
+            border: Border.all(color: const Color(0xFFCE93D8), width: 1.5), // decorative — no token
           ),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -113,7 +113,7 @@ class _MatchColumnWidgetState extends State<MatchColumnWidget> {
                 style: TextStyle(
                   fontSize: 14,
                   fontWeight: FontWeight.w700,
-                  color: const Color(0xFF6A1B9A),
+                  color: const Color(0xFF6A1B9A), // decorative — no token
                 ),
               ),
             ],
@@ -147,7 +147,7 @@ class _MatchColumnWidgetState extends State<MatchColumnWidget> {
                 fontSize: 13,
                 fontWeight: FontWeight.w600,
                 color: _allMatched
-                    ? const Color(0xFF4CAF50)
+                    ? KiwiColors.kiwiGreen
                     : KiwiColors.textMuted,
               ),
             ),
@@ -161,12 +161,12 @@ class _MatchColumnWidgetState extends State<MatchColumnWidget> {
                 ? DecoratedBox(
                     decoration: BoxDecoration(
                       gradient: const LinearGradient(
-                        colors: [Color(0xFF9C27B0), Color(0xFF7B1FA2)],
+                        colors: [Color(0xFF9C27B0), Color(0xFF7B1FA2)], // decorative — no token
                       ),
                       borderRadius: BorderRadius.circular(16),
                       boxShadow: [
                         BoxShadow(
-                          color: const Color(0xFF9C27B0).withOpacity(0.4),
+                          color: const Color(0xFF9C27B0).withOpacity(0.4), // decorative — no token
                           blurRadius: 10,
                           offset: const Offset(0, 4),
                         ),
@@ -195,9 +195,9 @@ class _MatchColumnWidgetState extends State<MatchColumnWidget> {
                     onPressed: null,
                     style: ElevatedButton.styleFrom(
                       disabledBackgroundColor:
-                          const Color(0xFF9C27B0).withOpacity(0.08),
+                          const Color(0xFF9C27B0).withOpacity(0.08), // decorative — no token
                       disabledForegroundColor:
-                          const Color(0xFF9C27B0).withOpacity(0.35),
+                          const Color(0xFF9C27B0).withOpacity(0.35), // decorative — no token
                       padding: const EdgeInsets.symmetric(vertical: 16),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(16),
@@ -236,24 +236,24 @@ class _MatchColumnWidgetState extends State<MatchColumnWidget> {
                         vertical: 14, horizontal: 12),
                     decoration: BoxDecoration(
                       color: isSelected
-                          ? const Color(0xFFE1BEE7)
+                          ? const Color(0xFFE1BEE7) // decorative — no token
                           : isMatched
                               ? color!.withOpacity(0.1)
                               : Colors.white,
                       borderRadius: BorderRadius.circular(14),
                       border: Border.all(
                         color: isSelected
-                            ? const Color(0xFF9C27B0)
+                            ? const Color(0xFF9C27B0) // decorative — no token
                             : isMatched
                                 ? color!
-                                : const Color(0xFFE0E0E0),
+                                : KiwiColors.pathLocked,
                         width: isSelected || isMatched ? 2.5 : 1.5,
                       ),
                       boxShadow: isSelected
                           ? [
                               BoxShadow(
                                 color:
-                                    const Color(0xFF9C27B0).withOpacity(0.2),
+                                    const Color(0xFF9C27B0).withOpacity(0.2), // decorative — no token
                                 blurRadius: 8,
                                 offset: const Offset(0, 3),
                               ),
@@ -269,8 +269,8 @@ class _MatchColumnWidgetState extends State<MatchColumnWidget> {
                             color: isMatched
                                 ? color!
                                 : isSelected
-                                    ? const Color(0xFF9C27B0)
-                                    : const Color(0xFFE0E0E0),
+                                    ? const Color(0xFF9C27B0) // decorative — no token
+                                    : KiwiColors.pathLocked,
                             shape: BoxShape.circle,
                           ),
                           child: Center(
@@ -284,7 +284,7 @@ class _MatchColumnWidgetState extends State<MatchColumnWidget> {
                                       fontWeight: FontWeight.w800,
                                       color: isSelected
                                           ? Colors.white
-                                          : const Color(0xFF757575),
+                                          : KiwiColors.textMid,
                                     ),
                                   ),
                           ),
@@ -296,7 +296,7 @@ class _MatchColumnWidgetState extends State<MatchColumnWidget> {
                             style: TextStyle(
                               fontSize: 14,
                               fontWeight: FontWeight.w700,
-                              color: const Color(0xFF212121),
+                              color: KiwiColors.textDark,
                             ),
                             maxLines: 2,
                             overflow: TextOverflow.ellipsis,
@@ -340,22 +340,22 @@ class _MatchColumnWidgetState extends State<MatchColumnWidget> {
                       color: isMatched
                           ? color!.withOpacity(0.1)
                           : isHighlighted
-                              ? const Color(0xFFF3E5F5)
+                              ? const Color(0xFFF3E5F5) // decorative — no token
                               : Colors.white,
                       borderRadius: BorderRadius.circular(14),
                       border: Border.all(
                         color: isMatched
                             ? color!
                             : isHighlighted
-                                ? const Color(0xFFCE93D8)
-                                : const Color(0xFFE0E0E0),
+                                ? const Color(0xFFCE93D8) // decorative — no token
+                                : KiwiColors.pathLocked,
                         width: isMatched ? 2.5 : 1.5,
                       ),
                       boxShadow: isHighlighted
                           ? [
                               BoxShadow(
                                 color:
-                                    const Color(0xFFCE93D8).withOpacity(0.2),
+                                    const Color(0xFFCE93D8).withOpacity(0.2), // decorative — no token
                                 blurRadius: 6,
                                 offset: const Offset(0, 2),
                               ),
@@ -370,7 +370,7 @@ class _MatchColumnWidgetState extends State<MatchColumnWidget> {
                           decoration: BoxDecoration(
                             color: isMatched
                                 ? color!
-                                : const Color(0xFFE0E0E0),
+                                : KiwiColors.pathLocked,
                             shape: BoxShape.circle,
                           ),
                           child: Center(
@@ -379,10 +379,10 @@ class _MatchColumnWidgetState extends State<MatchColumnWidget> {
                                     size: 14, color: Colors.white)
                                 : Text(
                                     String.fromCharCode(65 + i), // A, B, C...
-                                    style: const TextStyle(
+                                    style: TextStyle(
                                       fontSize: 12,
                                       fontWeight: FontWeight.w800,
-                                      color: Color(0xFF757575),
+                                      color: KiwiColors.textMid,
                                     ),
                                   ),
                           ),
@@ -394,7 +394,7 @@ class _MatchColumnWidgetState extends State<MatchColumnWidget> {
                             style: TextStyle(
                               fontSize: 14,
                               fontWeight: FontWeight.w700,
-                              color: const Color(0xFF212121),
+                              color: KiwiColors.textDark,
                             ),
                             maxLines: 2,
                             overflow: TextOverflow.ellipsis,

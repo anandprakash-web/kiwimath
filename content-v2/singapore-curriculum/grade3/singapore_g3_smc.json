@@ -1,0 +1,1026 @@
+{
+  "topic_id": "singapore_g3_smc",
+  "topic_name": "Singapore Math Challenge – Grade 3",
+  "version": "1.0",
+  "curriculum": "SINGAPORE",
+  "grade": 3,
+  "total_questions": 32,
+  "questions": [
+    {
+      "id": "SING-G3-SMC-006",
+      "stem": "Darren bought 4 pens at $3 each and 5 notebooks at $2 each. He paid with a $50 note. How much change did he receive?",
+      "choices": [
+        "$22",
+        "$26",
+        "$28",
+        "$30"
+      ],
+      "correct_answer": "C",
+      "difficulty_tier": "easy",
+      "difficulty_score": 1,
+      "tags": [
+        "money_change",
+        "multiplication",
+        "subtraction"
+      ],
+      "chapter": "Singapore Math Challenge",
+      "visual_context": null,
+      "hint": {
+        "level_0": "Find total cost of pens and notebooks.",
+        "level_1": "Pens: 4 × $3 = $12. Notebooks: 5 × $2 = $10. Total = $22.",
+        "level_2": "$50 − $22 = $28."
+      },
+      "diagnostics": {
+        "correct_explanation": "The answer is $28.",
+        "0": "Not quite. You're off by 6. Re-check your arithmetic step by step.",
+        "1": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+        "3": "You're off by 2. Check whether you accidentally included or excluded boundary values."
+      }
+    },
+    {
+      "id": "SING-G3-SMC-022",
+      "stem": "A shop sells ice cream in 3 flavours: chocolate, vanilla, and strawberry. Toppings available are sprinkles and nuts. If Amir chooses 1 flavour and 1 topping, how many different combinations can he make?",
+      "choices": [
+        "3",
+        "5",
+        "6",
+        "8"
+      ],
+      "correct_answer": "C",
+      "difficulty_tier": "easy",
+      "difficulty_score": 2,
+      "tags": [
+        "combinatorics",
+        "counting",
+        "multiplication_principle"
+      ],
+      "chapter": "Singapore Math Challenge",
+      "visual_context": null,
+      "hint": {
+        "level_0": "Multiply flavours by toppings.",
+        "level_1": "3 flavours × 2 toppings.",
+        "level_2": "3 × 2 = 6."
+      },
+      "diagnostics": {
+        "correct_explanation": "The answer is 6.",
+        "0": "You may have divided when you should have multiplied, or only counted half the items.",
+        "1": "You're off by 1. Double-check your final calculation step — did you count the endpoints correctly?",
+        "3": "You're off by 2. Check whether you accidentally included or excluded boundary values."
+      }
+    },
+    {
+      "id": "SING-G3-SMC-010",
+      "stem": "5 identical pencils cost $4. How much do 15 such pencils cost?",
+      "choices": [
+        "$8",
+        "$10",
+        "$12",
+        "$14"
+      ],
+      "correct_answer": "C",
+      "difficulty_tier": "easy",
+      "difficulty_score": 3,
+      "tags": [
+        "money_unit_rate",
+        "scaling",
+        "multiplication"
+      ],
+      "chapter": "Singapore Math Challenge",
+      "visual_context": null,
+      "hint": {
+        "level_0": "15 pencils is 3 times 5 pencils.",
+        "level_1": "Cost = 3 × $4 = $12.",
+        "level_2": "Or: 1 pencil = $4 ÷ 5 = $0.80, so 15 × $0.80 = $12."
+      },
+      "diagnostics": {
+        "correct_explanation": "The answer is $12.",
+        "0": "Not quite. You're off by 4. Re-check your arithmetic step by step.",
+        "1": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+        "3": "You're off by 2. Check whether you accidentally included or excluded boundary values."
+      }
+    },
+    {
+      "id": "SING-G3-SMC-005",
+      "stem": "Auntie Lim bought 3 kg of prawns at $8 per kg and 2 kg of fish at $6 per kg. She paid with a $50 note. How much change did she receive?",
+      "choices": [
+        "$12",
+        "$14",
+        "$16",
+        "$18"
+      ],
+      "correct_answer": "B",
+      "difficulty_tier": "easy",
+      "difficulty_score": 4,
+      "tags": [
+        "money_change",
+        "multiplication",
+        "subtraction"
+      ],
+      "chapter": "Singapore Math Challenge",
+      "visual_context": null,
+      "hint": {
+        "level_0": "Find the total cost first.",
+        "level_1": "Prawns: 3 × $8 = $24. Fish: 2 × $6 = $12. Total = $36.",
+        "level_2": "$50 − $36 = $14."
+      },
+      "diagnostics": {
+        "correct_explanation": "The answer is $14.",
+        "0": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+        "2": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+        "3": "Not quite. You're off by 4. Re-check your arithmetic step by step."
+      }
+    },
+    {
+      "id": "SING-G3-SMC-002",
+      "stem": "Mei Ling has some stickers. She gives 12 to her brother and then receives 7 from her friend. She now has 30 stickers. How many stickers did Mei Ling have at first?",
+      "choices": [
+        "25",
+        "35",
+        "37",
+        "49"
+      ],
+      "correct_answer": "B",
+      "difficulty_tier": "easy",
+      "difficulty_score": 5,
+      "tags": [
+        "algebra_equations",
+        "word_problem",
+        "addition",
+        "subtraction"
+      ],
+      "chapter": "Singapore Math Challenge",
+      "visual_context": null,
+      "hint": {
+        "level_0": "Undo each step starting from 30.",
+        "level_1": "Before receiving 7, she had 30 − 7 = 23.",
+        "level_2": "Before giving 12, she had 23 + 12 = 35."
+      },
+      "diagnostics": {
+        "correct_explanation": "The answer is 35.",
+        "0": "Not quite. You're off by 10. Re-check your arithmetic step by step.",
+        "2": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+        "3": "Re-read the problem carefully and check which numbers and operations to use."
+      }
+    },
+    {
+      "id": "SING-G3-SMC-007",
+      "stem": "Mrs Tan bought a cake for $15 and 6 curry puffs at $1.50 each. She paid with a $50 note. How much change did she receive?",
+      "choices": [
+        "$24",
+        "$26",
+        "$28",
+        "$30"
+      ],
+      "correct_answer": "B",
+      "difficulty_tier": "easy",
+      "difficulty_score": 6,
+      "tags": [
+        "money_change",
+        "multiplication",
+        "decimals"
+      ],
+      "chapter": "Singapore Math Challenge",
+      "visual_context": null,
+      "hint": {
+        "level_0": "Find the cost of the curry puffs first.",
+        "level_1": "6 × $1.50 = $9. Total = $15 + $9 = $24.",
+        "level_2": "$50 − $24 = $26."
+      },
+      "diagnostics": {
+        "correct_explanation": "The answer is $26.",
+        "0": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+        "2": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+        "3": "Not quite. You're off by 4. Re-check your arithmetic step by step."
+      }
+    },
+    {
+      "id": "SING-G3-SMC-009",
+      "stem": "3 kg of mangoes cost $24. How much do 9 kg of mangoes cost?",
+      "choices": [
+        "$48",
+        "$56",
+        "$64",
+        "$72"
+      ],
+      "correct_answer": "D",
+      "difficulty_tier": "easy",
+      "difficulty_score": 7,
+      "tags": [
+        "money_unit_rate",
+        "multiplication",
+        "division"
+      ],
+      "chapter": "Singapore Math Challenge",
+      "visual_context": null,
+      "hint": {
+        "level_0": "Find the cost of 1 kg first.",
+        "level_1": "1 kg = $24 ÷ 3 = $8.",
+        "level_2": "9 kg = 9 × $8 = $72."
+      },
+      "diagnostics": {
+        "correct_explanation": "The answer is $72.",
+        "0": "Re-read the problem carefully and check which numbers and operations to use.",
+        "1": "Re-read the problem carefully and check which numbers and operations to use.",
+        "2": "Not quite. You're off by 8. Re-check your arithmetic step by step."
+      }
+    },
+    {
+      "id": "SING-G3-SMC-011",
+      "stem": "4 towels cost $36. Siti wants to buy 7 towels. How much must she pay?",
+      "choices": [
+        "$54",
+        "$63",
+        "$72",
+        "$81"
+      ],
+      "correct_answer": "B",
+      "difficulty_tier": "easy",
+      "difficulty_score": 8,
+      "tags": [
+        "money_unit_rate",
+        "division",
+        "multiplication"
+      ],
+      "chapter": "Singapore Math Challenge",
+      "visual_context": null,
+      "hint": {
+        "level_0": "Find the cost of 1 towel.",
+        "level_1": "1 towel = $36 ÷ 4 = $9.",
+        "level_2": "7 towels = 7 × $9 = $63."
+      },
+      "diagnostics": {
+        "correct_explanation": "The answer is $63.",
+        "0": "Not quite. You're off by 9. Re-check your arithmetic step by step.",
+        "2": "Not quite. You're off by 9. Re-check your arithmetic step by step.",
+        "3": "Re-read the problem carefully and check which numbers and operations to use."
+      }
+    },
+    {
+      "id": "SING-G3-SMC-021",
+      "stem": "Siti has 3 different coloured beads: red, blue, and yellow. She wants to arrange all 3 beads in a row. How many different arrangements can she make?",
+      "choices": [
+        "3",
+        "4",
+        "6",
+        "9"
+      ],
+      "correct_answer": "C",
+      "difficulty_tier": "medium",
+      "difficulty_score": 9,
+      "tags": [
+        "combinatorics",
+        "permutations",
+        "counting"
+      ],
+      "chapter": "Singapore Math Challenge",
+      "visual_context": null,
+      "hint": {
+        "level_0": "List all possible orders.",
+        "level_1": "First position: 3 choices, second: 2, third: 1.",
+        "level_2": "3 × 2 × 1 = 6."
+      },
+      "diagnostics": {
+        "correct_explanation": "The answer is 6.",
+        "0": "You may have divided when you should have multiplied, or only counted half the items.",
+        "1": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+        "3": "Not quite. You're off by 3. Re-check your arithmetic step by step."
+      }
+    },
+    {
+      "id": "SING-G3-SMC-027",
+      "stem": "Mei, Nurul, and Ong each like a different fruit: apple, banana, or cherry. Mei does not like banana. Nurul does not like apple or banana. What fruit does Mei like?",
+      "choices": [
+        "Apple",
+        "Banana",
+        "Cherry",
+        "Cannot be determined"
+      ],
+      "correct_answer": "A",
+      "difficulty_tier": "medium",
+      "difficulty_score": 10,
+      "tags": [
+        "logic",
+        "elimination",
+        "deduction"
+      ],
+      "chapter": "Singapore Math Challenge",
+      "visual_context": null,
+      "hint": {
+        "level_0": "Start with the person who has the most restrictions.",
+        "level_1": "Nurul does not like apple or banana → Nurul likes cherry.",
+        "level_2": "Mei does not like banana → Mei likes apple. Ong likes banana."
+      },
+      "diagnostics": {
+        "correct_explanation": "The answer is Apple.",
+        "1": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+        "2": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+        "3": "This doesn't match all the conditions in the problem. Test each clue against your answer."
+      }
+    },
+    {
+      "id": "SING-G3-SMC-003",
+      "stem": "A number is multiplied by 4 and then 9 is subtracted. The result is 27. What is the number?",
+      "choices": [
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "correct_answer": "C",
+      "difficulty_tier": "medium",
+      "difficulty_score": 11,
+      "tags": [
+        "algebra_equations",
+        "inverse_operations",
+        "multiplication"
+      ],
+      "chapter": "Singapore Math Challenge",
+      "visual_context": null,
+      "hint": {
+        "level_0": "Reverse the operations.",
+        "level_1": "27 + 9 = 36. Then divide by 4.",
+        "level_2": "36 ÷ 4 = 9."
+      },
+      "diagnostics": {
+        "correct_explanation": "The answer is 9.",
+        "0": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+        "1": "You're off by 1. Double-check your final calculation step — did you count the endpoints correctly?",
+        "3": "You're off by 1. Double-check your final calculation step — did you count the endpoints correctly?"
+      }
+    },
+    {
+      "id": "SING-G3-SMC-008",
+      "stem": "Kumar bought 2 books at $9 each and a pencil case. He paid with a $50 note and received $23 change. How much did the pencil case cost?",
+      "choices": [
+        "$7",
+        "$8",
+        "$9",
+        "$10"
+      ],
+      "correct_answer": "C",
+      "difficulty_tier": "medium",
+      "difficulty_score": 12,
+      "tags": [
+        "money_change",
+        "word_problem",
+        "subtraction"
+      ],
+      "chapter": "Singapore Math Challenge",
+      "visual_context": null,
+      "hint": {
+        "level_0": "Find how much Kumar spent in total.",
+        "level_1": "$50 − $23 = $27 spent. Books cost 2 × $9 = $18.",
+        "level_2": "Pencil case = $27 − $18 = $9."
+      },
+      "diagnostics": {
+        "correct_explanation": "The answer is $9.",
+        "0": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+        "1": "You're off by 1. Double-check your final calculation step — did you count the endpoints correctly?",
+        "3": "You're off by 1. Double-check your final calculation step — did you count the endpoints correctly?"
+      }
+    },
+    {
+      "id": "SING-G3-SMC-013",
+      "stem": "A clock is 10 minutes fast. It shows 3:25 p.m. What is the correct time?",
+      "choices": [
+        "3:15 p.m.",
+        "3:20 p.m.",
+        "3:35 p.m.",
+        "3:05 p.m."
+      ],
+      "correct_answer": "A",
+      "difficulty_tier": "medium",
+      "difficulty_score": 13,
+      "tags": [
+        "time_clock",
+        "fast_slow_clock",
+        "subtraction"
+      ],
+      "chapter": "Singapore Math Challenge",
+      "visual_context": "A clock face showing 3:25",
+      "hint": {
+        "level_0": "A fast clock shows a time ahead of the real time.",
+        "level_1": "Subtract 10 minutes from what the clock shows.",
+        "level_2": "3:25 − 10 min = 3:15 p.m."
+      },
+      "diagnostics": {
+        "correct_explanation": "The answer is 3:15 p.m..",
+        "1": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+        "2": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+        "3": "This doesn't match all the conditions in the problem. Test each clue against your answer."
+      },
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 200 200\" width=\"200\" height=\"200\" style=\"font-family:Arial,sans-serif\"><circle cx=\"100\" cy=\"100\" r=\"80\" fill=\"white\" stroke=\"#333\" stroke-width=\"3\"/><line x1=\"100.0\" y1=\"30.0\" x2=\"100.0\" y2=\"22.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"100.0\" y=\"42.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">12</text><line x1=\"135.0\" y1=\"39.4\" x2=\"139.0\" y2=\"32.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"129.0\" y=\"49.8\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">1</text><line x1=\"160.6\" y1=\"65.0\" x2=\"167.5\" y2=\"61.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"150.2\" y=\"71.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">2</text><line x1=\"170.0\" y1=\"100.0\" x2=\"178.0\" y2=\"100.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"158.0\" y=\"100.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">3</text><line x1=\"160.6\" y1=\"135.0\" x2=\"167.5\" y2=\"139.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"150.2\" y=\"129.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">4</text><line x1=\"135.0\" y1=\"160.6\" x2=\"139.0\" y2=\"167.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"129.0\" y=\"150.2\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">5</text><line x1=\"100.0\" y1=\"170.0\" x2=\"100.0\" y2=\"178.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"100.0\" y=\"158.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">6</text><line x1=\"65.0\" y1=\"160.6\" x2=\"61.0\" y2=\"167.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"71.0\" y=\"150.2\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">7</text><line x1=\"39.4\" y1=\"135.0\" x2=\"32.5\" y2=\"139.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"49.8\" y=\"129.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">8</text><line x1=\"30.0\" y1=\"100.0\" x2=\"22.0\" y2=\"100.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"42.0\" y=\"100.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">9</text><line x1=\"39.4\" y1=\"65.0\" x2=\"32.5\" y2=\"61.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"49.8\" y=\"71.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">10</text><line x1=\"65.0\" y1=\"39.4\" x2=\"61.0\" y2=\"32.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"71.0\" y=\"49.8\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">11</text><line x1=\"100\" y1=\"100\" x2=\"143.9\" y2=\"109.7\" stroke=\"#333\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"100\" y1=\"100\" x2=\"132.5\" y2=\"156.3\" stroke=\"#555\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><circle cx=\"100\" cy=\"100\" r=\"4\" fill=\"#333\"/></svg>"
+    },
+    {
+      "id": "SING-G3-SMC-017",
+      "stem": "Look at the pattern made with sticks.\nShape 1 uses 4 sticks.\nShape 2 uses 7 sticks.\nShape 3 uses 10 sticks.\nHow many sticks are needed for Shape 8?",
+      "choices": [
+        "22",
+        "25",
+        "28",
+        "31"
+      ],
+      "correct_answer": "B",
+      "difficulty_tier": "medium",
+      "difficulty_score": 14,
+      "tags": [
+        "patterns_sticks",
+        "growing_pattern",
+        "arithmetic_sequence"
+      ],
+      "chapter": "Singapore Math Challenge",
+      "visual_context": "Three shapes made of sticks: squares sharing sides in a row. Shape 1 is a single square (4 sticks), Shape 2 is two joined squares (7 sticks), Shape 3 is three joined squares (10 sticks).",
+      "hint": {
+        "level_0": "Each new shape adds a fixed number of sticks.",
+        "level_1": "Pattern: +3, +3, … Shape n = 4 + 3(n − 1).",
+        "level_2": "Shape 8 = 4 + 3 × 7 = 4 + 21 = 25."
+      },
+      "diagnostics": {
+        "correct_explanation": "The answer is 25.",
+        "0": "Re-examine the pattern. Check the differences between ALL consecutive terms, not just the first pair.",
+        "2": "Re-examine the pattern. Check the differences between ALL consecutive terms, not just the first pair.",
+        "3": "Re-examine the pattern. Check the differences between ALL consecutive terms, not just the first pair."
+      },
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 100 100\" width=\"100\" height=\"100\" style=\"font-family:Arial,sans-serif\"><rect x=\"10\" y=\"70\" width=\"20\" height=\"20\" fill=\"#FFB74D\" stroke=\"#333\" stroke-width=\"1\"/><rect x=\"10\" y=\"50\" width=\"20\" height=\"20\" fill=\"#FFB74D\" stroke=\"#333\" stroke-width=\"1\"/><rect x=\"30\" y=\"50\" width=\"20\" height=\"20\" fill=\"#FFB74D\" stroke=\"#333\" stroke-width=\"1\"/><rect x=\"10\" y=\"30\" width=\"20\" height=\"20\" fill=\"#FFB74D\" stroke=\"#333\" stroke-width=\"1\"/><rect x=\"30\" y=\"30\" width=\"20\" height=\"20\" fill=\"#FFB74D\" stroke=\"#333\" stroke-width=\"1\"/><rect x=\"50\" y=\"30\" width=\"20\" height=\"20\" fill=\"#FFB74D\" stroke=\"#333\" stroke-width=\"1\"/><rect x=\"10\" y=\"10\" width=\"20\" height=\"20\" fill=\"#FFB74D\" stroke=\"#333\" stroke-width=\"1\"/><rect x=\"30\" y=\"10\" width=\"20\" height=\"20\" fill=\"#FFB74D\" stroke=\"#333\" stroke-width=\"1\"/><rect x=\"50\" y=\"10\" width=\"20\" height=\"20\" fill=\"#FFB74D\" stroke=\"#333\" stroke-width=\"1\"/><rect x=\"70\" y=\"10\" width=\"20\" height=\"20\" fill=\"#FFB74D\" stroke=\"#333\" stroke-width=\"1\"/></svg>"
+    },
+    {
+      "id": "SING-G3-SMC-020",
+      "stem": "Li Wei makes a pattern using matchsticks. Each figure is a cross shape.\nFigure 1: 5 sticks.\nFigure 2: 9 sticks.\nFigure 3: 13 sticks.\nHow many sticks does Figure 7 use?",
+      "choices": [
+        "25",
+        "27",
+        "29",
+        "33"
+      ],
+      "correct_answer": "C",
+      "difficulty_tier": "medium",
+      "difficulty_score": 15,
+      "tags": [
+        "patterns_sticks",
+        "growing_pattern",
+        "cross_shape"
+      ],
+      "chapter": "Singapore Math Challenge",
+      "visual_context": "Cross-shaped figures growing by adding one arm segment each time.",
+      "hint": {
+        "level_0": "The pattern increases by 4 each time.",
+        "level_1": "Figure n = 5 + 4(n − 1) = 4n + 1.",
+        "level_2": "Figure 7 = 4(7) + 1 = 29."
+      },
+      "diagnostics": {
+        "correct_explanation": "The answer is 29.",
+        "0": "Re-examine the pattern. Check the differences between ALL consecutive terms, not just the first pair.",
+        "1": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+        "3": "Re-examine the pattern. Check the differences between ALL consecutive terms, not just the first pair."
+      },
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" width=\"120\" height=\"120\" style=\"font-family:Arial,sans-serif\"><rect x=\"10\" y=\"90\" width=\"20\" height=\"20\" fill=\"#FFB74D\" stroke=\"#333\" stroke-width=\"1\"/><rect x=\"10\" y=\"70\" width=\"20\" height=\"20\" fill=\"#FFB74D\" stroke=\"#333\" stroke-width=\"1\"/><rect x=\"30\" y=\"70\" width=\"20\" height=\"20\" fill=\"#FFB74D\" stroke=\"#333\" stroke-width=\"1\"/><rect x=\"10\" y=\"50\" width=\"20\" height=\"20\" fill=\"#FFB74D\" stroke=\"#333\" stroke-width=\"1\"/><rect x=\"30\" y=\"50\" width=\"20\" height=\"20\" fill=\"#FFB74D\" stroke=\"#333\" stroke-width=\"1\"/><rect x=\"50\" y=\"50\" width=\"20\" height=\"20\" fill=\"#FFB74D\" stroke=\"#333\" stroke-width=\"1\"/><rect x=\"10\" y=\"30\" width=\"20\" height=\"20\" fill=\"#FFB74D\" stroke=\"#333\" stroke-width=\"1\"/><rect x=\"30\" y=\"30\" width=\"20\" height=\"20\" fill=\"#FFB74D\" stroke=\"#333\" stroke-width=\"1\"/><rect x=\"50\" y=\"30\" width=\"20\" height=\"20\" fill=\"#FFB74D\" stroke=\"#333\" stroke-width=\"1\"/><rect x=\"70\" y=\"30\" width=\"20\" height=\"20\" fill=\"#FFB74D\" stroke=\"#333\" stroke-width=\"1\"/><rect x=\"10\" y=\"10\" width=\"20\" height=\"20\" fill=\"#FFB74D\" stroke=\"#333\" stroke-width=\"1\"/><rect x=\"30\" y=\"10\" width=\"20\" height=\"20\" fill=\"#FFB74D\" stroke=\"#333\" stroke-width=\"1\"/><rect x=\"50\" y=\"10\" width=\"20\" height=\"20\" fill=\"#FFB74D\" stroke=\"#333\" stroke-width=\"1\"/><rect x=\"70\" y=\"10\" width=\"20\" height=\"20\" fill=\"#FFB74D\" stroke=\"#333\" stroke-width=\"1\"/><rect x=\"90\" y=\"10\" width=\"20\" height=\"20\" fill=\"#FFB74D\" stroke=\"#333\" stroke-width=\"1\"/></svg>"
+    },
+    {
+      "id": "SING-G3-SMC-001",
+      "stem": "Wei Ming thinks of a number. He adds 15 to it and then doubles the result. His answer is 46. What number did he think of?",
+      "choices": [
+        "6",
+        "8",
+        "10",
+        "12"
+      ],
+      "correct_answer": "B",
+      "difficulty_tier": "medium",
+      "difficulty_score": 16,
+      "tags": [
+        "algebra_equations",
+        "word_problem",
+        "inverse_operations"
+      ],
+      "chapter": "Singapore Math Challenge",
+      "visual_context": null,
+      "hint": {
+        "level_0": "Work backwards from the answer.",
+        "level_1": "46 ÷ 2 = 23. Then subtract 15.",
+        "level_2": "23 − 15 = 8."
+      },
+      "diagnostics": {
+        "correct_explanation": "The answer is 8.",
+        "0": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+        "2": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+        "3": "Not quite. You're off by 4. Re-check your arithmetic step by step."
+      }
+    },
+    {
+      "id": "SING-G3-SMC-012",
+      "stem": "Mrs Lee paid $30 for 6 bowls of laksa. Mr Tan paid $45 for some bowls of the same laksa. How many bowls did Mr Tan buy?",
+      "choices": [
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "correct_answer": "C",
+      "difficulty_tier": "hard",
+      "difficulty_score": 17,
+      "tags": [
+        "money_unit_rate",
+        "division",
+        "word_problem"
+      ],
+      "chapter": "Singapore Math Challenge",
+      "visual_context": null,
+      "hint": {
+        "level_0": "Find the price of 1 bowl.",
+        "level_1": "1 bowl = $30 ÷ 6 = $5.",
+        "level_2": "$45 ÷ $5 = 9 bowls."
+      },
+      "diagnostics": {
+        "correct_explanation": "The answer is 9.",
+        "0": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+        "1": "You're off by 1. Double-check your final calculation step — did you count the endpoints correctly?",
+        "3": "You're off by 1. Double-check your final calculation step — did you count the endpoints correctly?"
+      }
+    },
+    {
+      "id": "SING-G3-SMC-018",
+      "stem": "Matchsticks are arranged in a pattern.\nFigure 1: a triangle (3 sticks).\nFigure 2: two triangles sharing a side (5 sticks).\nFigure 3: three triangles sharing sides (7 sticks).\nHow many matchsticks are needed for Figure 10?",
+      "choices": [
+        "19",
+        "21",
+        "23",
+        "25"
+      ],
+      "correct_answer": "B",
+      "difficulty_tier": "hard",
+      "difficulty_score": 18,
+      "tags": [
+        "patterns_sticks",
+        "growing_pattern",
+        "triangles"
+      ],
+      "chapter": "Singapore Math Challenge",
+      "visual_context": "Triangles sharing sides in a row. Figure 1: 1 triangle, Figure 2: 2 triangles, Figure 3: 3 triangles.",
+      "hint": {
+        "level_0": "Each new triangle adds 2 sticks.",
+        "level_1": "Figure n = 3 + 2(n − 1) = 2n + 1.",
+        "level_2": "Figure 10 = 2(10) + 1 = 21."
+      },
+      "diagnostics": {
+        "correct_explanation": "The answer is 21.",
+        "0": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+        "2": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+        "3": "Re-examine the pattern. Check the differences between ALL consecutive terms, not just the first pair."
+      },
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 200\" width=\"300\" height=\"200\" style=\"font-family:Arial,sans-serif\"><polygon points=\"150,20 50,170 250,170\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2.5\"/><text x=\"150\" y=\"190\" text-anchor=\"middle\" font-size=\"13\" fill=\"#333\">1 cm</text><text x=\"30\" y=\"100\" text-anchor=\"middle\" font-size=\"13\" fill=\"#333\">3 cm</text></svg>"
+    },
+    {
+      "id": "SING-G3-SMC-019",
+      "stem": "Sticks are arranged to form hexagons in a row.\nFigure 1 (1 hexagon): 6 sticks.\nFigure 2 (2 hexagons): 11 sticks.\nFigure 3 (3 hexagons): 16 sticks.\nHow many sticks are needed for Figure 6?",
+      "choices": [
+        "26",
+        "31",
+        "36",
+        "41"
+      ],
+      "correct_answer": "B",
+      "difficulty_tier": "hard",
+      "difficulty_score": 19,
+      "tags": [
+        "patterns_sticks",
+        "hexagons",
+        "growing_pattern"
+      ],
+      "chapter": "Singapore Math Challenge",
+      "visual_context": "Hexagons in a row, each sharing one side with the next.",
+      "hint": {
+        "level_0": "Each new hexagon adds 5 sticks.",
+        "level_1": "Figure n = 6 + 5(n − 1) = 5n + 1.",
+        "level_2": "Figure 6 = 5(6) + 1 = 31."
+      },
+      "diagnostics": {
+        "correct_explanation": "The answer is 31.",
+        "0": "Not quite. You're off by 5. Re-check your arithmetic step by step.",
+        "2": "Not quite. You're off by 5. Re-check your arithmetic step by step.",
+        "3": "Not quite. You're off by 10. Re-check your arithmetic step by step."
+      },
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 75 75\" width=\"75\" height=\"75\" style=\"font-family:Arial,sans-serif\"><rect x=\"20\" y=\"20\" width=\"35\" height=\"35\" fill=\"white\" stroke=\"#333\" stroke-width=\"1\"/></svg>"
+    },
+    {
+      "id": "SING-G3-SMC-023",
+      "stem": "How many 3-digit numbers can be formed using the digits 1, 2, and 3, if each digit can only be used once?",
+      "choices": [
+        "3",
+        "6",
+        "9",
+        "12"
+      ],
+      "correct_answer": "B",
+      "difficulty_tier": "hard",
+      "difficulty_score": 20,
+      "tags": [
+        "combinatorics",
+        "permutations",
+        "numbers"
+      ],
+      "chapter": "Singapore Math Challenge",
+      "visual_context": null,
+      "hint": {
+        "level_0": "Think about how many choices you have for each position.",
+        "level_1": "Hundreds: 3, Tens: 2, Ones: 1.",
+        "level_2": "3 × 2 × 1 = 6."
+      },
+      "diagnostics": {
+        "correct_explanation": "The answer is 6.",
+        "0": "You may have divided when you should have multiplied, or only counted half the items.",
+        "2": "You may have added instead of subtracting, or subtracted in the wrong order.",
+        "3": "You doubled when you shouldn't have. Re-read the problem — are you counting each item once or twice?"
+      }
+    },
+    {
+      "id": "SING-G3-SMC-025",
+      "stem": "Three friends — Aisyah, Bala, and Chen — each own a different pet: a cat, a dog, and a fish. Aisyah does not have the dog or the cat. Bala does not have the cat or the fish. Who has the cat?",
+      "choices": [
+        "Aisyah",
+        "Bala",
+        "Chen",
+        "Cannot be determined"
+      ],
+      "correct_answer": "C",
+      "difficulty_tier": "hard",
+      "difficulty_score": 21,
+      "tags": [
+        "logic",
+        "elimination",
+        "reasoning"
+      ],
+      "chapter": "Singapore Math Challenge",
+      "visual_context": null,
+      "hint": {
+        "level_0": "Use elimination. Start with the person who has the fewest options.",
+        "level_1": "Aisyah does not have dog or cat → Aisyah has fish. Bala does not have cat or fish → Bala has dog.",
+        "level_2": "Chen has the cat."
+      },
+      "diagnostics": {
+        "correct_explanation": "The answer is Chen.",
+        "0": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+        "1": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+        "3": "This doesn't match all the conditions in the problem. Test each clue against your answer."
+      }
+    },
+    {
+      "id": "SING-G3-SMC-029",
+      "stem": "Ahmad has 8 times as many marbles as Benny. Together they have 72 marbles. How many marbles does Ahmad have?",
+      "choices": [
+        "8",
+        "9",
+        "56",
+        "64"
+      ],
+      "correct_answer": "D",
+      "difficulty_tier": "hard",
+      "difficulty_score": 22,
+      "tags": [
+        "arithmetic_multiplicative",
+        "comparison",
+        "word_problem",
+        "drag_drop_candidate"
+      ],
+      "chapter": "Singapore Math Challenge",
+      "visual_context": "A bar model with 1 unit for Benny and 8 units for Ahmad.",
+      "hint": {
+        "level_0": "Draw a bar model. Benny has 1 unit, Ahmad has 8 units.",
+        "level_1": "Total = 9 units = 72. So 1 unit = 8.",
+        "level_2": "Ahmad = 8 × 8 = 64."
+      },
+      "diagnostics": {
+        "correct_explanation": "The answer is 64.",
+        "0": "Re-read the problem carefully and check which numbers and operations to use.",
+        "1": "Re-read the problem carefully and check which numbers and operations to use.",
+        "2": "Not quite. You're off by 8. Re-check your arithmetic step by step."
+      },
+      "interaction_mode": "drag_drop",
+      "visual_svg": "<svg viewBox=\"0 0 160 80\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"5\" y=\"5\" width=\"150\" height=\"70\" rx=\"8\" fill=\"#F8F9FA\" stroke=\"#DEE2E6\" stroke-width=\"1.5\"/><text x=\"80\" y=\"42\" text-anchor=\"middle\" font-size=\"10\" fill=\"#6C757D\">A bar model with 1 unit for Benny a</text></svg>",
+      "visual_alt": "Visual for: Ahmad has 8 times as many marbles as Benny. Togeth"
+    },
+    {
+      "id": "SING-G3-SMC-031",
+      "stem": "A farm has 6 times as many chickens as ducks. There are 35 more chickens than ducks. How many chickens are there?",
+      "choices": [
+        "7",
+        "35",
+        "42",
+        "49"
+      ],
+      "correct_answer": "C",
+      "difficulty_tier": "hard",
+      "difficulty_score": 23,
+      "tags": [
+        "arithmetic_multiplicative",
+        "comparison",
+        "difference",
+        "drag_drop_candidate"
+      ],
+      "chapter": "Singapore Math Challenge",
+      "visual_context": "A bar model with 1 unit for ducks and 6 units for chickens, with the difference of 5 units labeled 35.",
+      "hint": {
+        "level_0": "Use a bar model.",
+        "level_1": "Difference = 6 − 1 = 5 units = 35. So 1 unit = 7.",
+        "level_2": "Chickens = 6 × 7 = 42."
+      },
+      "diagnostics": {
+        "correct_explanation": "The answer is 42.",
+        "0": "Re-read the problem carefully and check which numbers and operations to use.",
+        "1": "Not quite. You're off by 7. Re-check your arithmetic step by step.",
+        "3": "Not quite. You're off by 7. Re-check your arithmetic step by step."
+      },
+      "interaction_mode": "drag_drop",
+      "visual_svg": "<svg viewBox=\"0 0 160 80\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"5\" y=\"5\" width=\"150\" height=\"70\" rx=\"8\" fill=\"#F8F9FA\" stroke=\"#DEE2E6\" stroke-width=\"1.5\"/><text x=\"80\" y=\"42\" text-anchor=\"middle\" font-size=\"10\" fill=\"#6C757D\">A bar model with 1 unit for ducks a</text></svg>",
+      "visual_alt": "Visual for: A farm has 6 times as many chickens as ducks. Ther"
+    },
+    {
+      "id": "SING-G3-SMC-004",
+      "stem": "Raju bought some erasers. He gave half of them to Siti and then bought 5 more. He now has 14 erasers. How many erasers did Raju buy at first?",
+      "choices": [
+        "13",
+        "16",
+        "18",
+        "19"
+      ],
+      "correct_answer": "C",
+      "difficulty_tier": "hard",
+      "difficulty_score": 24,
+      "tags": [
+        "algebra_equations",
+        "word_problem",
+        "halving"
+      ],
+      "chapter": "Singapore Math Challenge",
+      "visual_context": null,
+      "hint": {
+        "level_0": "Work backwards from 14.",
+        "level_1": "Before buying 5 more, he had 14 − 5 = 9.",
+        "level_2": "9 is half of the original, so original = 9 × 2 = 18."
+      },
+      "diagnostics": {
+        "correct_explanation": "The answer is 18.",
+        "0": "Not quite. You're off by 5. Re-check your arithmetic step by step.",
+        "1": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+        "3": "You're off by 1. Double-check your final calculation step — did you count the endpoints correctly?"
+      }
+    },
+    {
+      "id": "SING-G3-SMC-024",
+      "stem": "There are 4 students: Ali, Ben, Chitra, and Devi. Two of them are chosen to carry the class flag. How many different pairs can be chosen?",
+      "choices": [
+        "4",
+        "6",
+        "8",
+        "12"
+      ],
+      "correct_answer": "B",
+      "difficulty_tier": "olympiad",
+      "difficulty_score": 25,
+      "tags": [
+        "combinatorics",
+        "combinations",
+        "counting"
+      ],
+      "chapter": "Singapore Math Challenge",
+      "visual_context": null,
+      "hint": {
+        "level_0": "List all possible pairs systematically.",
+        "level_1": "AB, AC, AD, BC, BD, CD.",
+        "level_2": "There are 6 pairs."
+      },
+      "diagnostics": {
+        "correct_explanation": "The answer is 6.",
+        "0": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+        "2": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+        "3": "You doubled when you shouldn't have. Re-read the problem — are you counting each item once or twice?"
+      }
+    },
+    {
+      "id": "SING-G3-SMC-015",
+      "stem": "Priya's watch is 15 minutes slow. She looks at her watch and it shows 7:30 a.m. School starts at 7:45 a.m. How many minutes does she have before school starts?",
+      "choices": [
+        "0 minutes",
+        "5 minutes",
+        "10 minutes",
+        "15 minutes"
+      ],
+      "correct_answer": "A",
+      "difficulty_tier": "olympiad",
+      "difficulty_score": 26,
+      "tags": [
+        "time_clock",
+        "fast_slow_clock",
+        "word_problem"
+      ],
+      "chapter": "Singapore Math Challenge",
+      "visual_context": null,
+      "hint": {
+        "level_0": "A slow watch shows a time behind the real time.",
+        "level_1": "Real time = 7:30 + 15 min = 7:45 a.m.",
+        "level_2": "School starts at 7:45. She has 0 minutes left!"
+      },
+      "diagnostics": {
+        "correct_explanation": "The answer is 0 minutes.",
+        "1": "Not quite. You're off by 5. Re-check your arithmetic step by step.",
+        "2": "Not quite. You're off by 10. Re-check your arithmetic step by step.",
+        "3": "Re-read the problem carefully and check which numbers and operations to use."
+      }
+    },
+    {
+      "id": "SING-G3-SMC-026",
+      "stem": "Four children sit in a row. Priya sits next to Rahul. Siti sits at one end. Tom does not sit next to Siti. Who must sit next to Siti?",
+      "choices": [
+        "Only Priya",
+        "Only Rahul",
+        "Only Tom",
+        "Either Priya or Rahul"
+      ],
+      "correct_answer": "D",
+      "difficulty_tier": "olympiad",
+      "difficulty_score": 27,
+      "tags": [
+        "logic",
+        "seating",
+        "reasoning"
+      ],
+      "chapter": "Singapore Math Challenge",
+      "visual_context": null,
+      "hint": {
+        "level_0": "Tom cannot sit next to Siti. So who can?",
+        "level_1": "Priya and Rahul are adjacent. Tom is not next to Siti, so Tom is not in position 2.",
+        "level_2": "Priya-Rahul must be in positions 2-3, with Tom in position 4. Either Priya or Rahul can be in position 2 next to Siti."
+      },
+      "diagnostics": {
+        "correct_explanation": "The answer is Either Priya or Rahul.",
+        "0": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+        "1": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+        "2": "This doesn't match all the conditions in the problem. Test each clue against your answer."
+      }
+    },
+    {
+      "id": "SING-G3-SMC-032",
+      "stem": "Hafiz collected 4 times as many shells as Jia Yi. Hafiz collected 3 times as many shells as Kumar. If Hafiz collected 48 shells, how many shells did Jia Yi and Kumar collect altogether?",
+      "choices": [
+        "24",
+        "28",
+        "30",
+        "32"
+      ],
+      "correct_answer": "B",
+      "difficulty_tier": "olympiad",
+      "difficulty_score": 28,
+      "tags": [
+        "arithmetic_multiplicative",
+        "comparison",
+        "multiple_relationships",
+        "drag_drop_candidate"
+      ],
+      "chapter": "Singapore Math Challenge",
+      "visual_context": null,
+      "hint": {
+        "level_0": "Find Jia Yi's and Kumar's shells separately.",
+        "level_1": "Jia Yi = 48 ÷ 4 = 12. Kumar = 48 ÷ 3 = 16.",
+        "level_2": "Total = 12 + 16 = 28."
+      },
+      "diagnostics": {
+        "correct_explanation": "The answer is 28.",
+        "0": "Not quite. You're off by 4. Re-check your arithmetic step by step.",
+        "2": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+        "3": "Not quite. You're off by 4. Re-check your arithmetic step by step."
+      },
+      "interaction_mode": "drag_drop"
+    },
+    {
+      "id": "SING-G3-SMC-014",
+      "stem": "A clock loses 5 minutes every hour. At noon, it was set to the correct time. What time does the clock show at 4 p.m.?",
+      "choices": [
+        "3:30 p.m.",
+        "3:40 p.m.",
+        "3:50 p.m.",
+        "4:20 p.m."
+      ],
+      "correct_answer": "B",
+      "difficulty_tier": "olympiad",
+      "difficulty_score": 29,
+      "tags": [
+        "time_clock",
+        "fast_slow_clock",
+        "multiplication"
+      ],
+      "chapter": "Singapore Math Challenge",
+      "visual_context": null,
+      "hint": {
+        "level_0": "How many hours passed? How many minutes lost?",
+        "level_1": "4 hours passed. Lost 4 × 5 = 20 minutes.",
+        "level_2": "Clock shows 4:00 − 20 min = 3:40 p.m."
+      },
+      "diagnostics": {
+        "correct_explanation": "The answer is 3:40 p.m..",
+        "0": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+        "2": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+        "3": "This doesn't match all the conditions in the problem. Test each clue against your answer."
+      },
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 200 200\" width=\"200\" height=\"200\" style=\"font-family:Arial,sans-serif\"><circle cx=\"100\" cy=\"100\" r=\"80\" fill=\"white\" stroke=\"#333\" stroke-width=\"3\"/><line x1=\"100.0\" y1=\"30.0\" x2=\"100.0\" y2=\"22.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"100.0\" y=\"42.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">12</text><line x1=\"135.0\" y1=\"39.4\" x2=\"139.0\" y2=\"32.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"129.0\" y=\"49.8\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">1</text><line x1=\"160.6\" y1=\"65.0\" x2=\"167.5\" y2=\"61.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"150.2\" y=\"71.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">2</text><line x1=\"170.0\" y1=\"100.0\" x2=\"178.0\" y2=\"100.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"158.0\" y=\"100.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">3</text><line x1=\"160.6\" y1=\"135.0\" x2=\"167.5\" y2=\"139.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"150.2\" y=\"129.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">4</text><line x1=\"135.0\" y1=\"160.6\" x2=\"139.0\" y2=\"167.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"129.0\" y=\"150.2\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">5</text><line x1=\"100.0\" y1=\"170.0\" x2=\"100.0\" y2=\"178.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"100.0\" y=\"158.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">6</text><line x1=\"65.0\" y1=\"160.6\" x2=\"61.0\" y2=\"167.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"71.0\" y=\"150.2\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">7</text><line x1=\"39.4\" y1=\"135.0\" x2=\"32.5\" y2=\"139.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"49.8\" y=\"129.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">8</text><line x1=\"30.0\" y1=\"100.0\" x2=\"22.0\" y2=\"100.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"42.0\" y=\"100.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">9</text><line x1=\"39.4\" y1=\"65.0\" x2=\"32.5\" y2=\"61.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"49.8\" y=\"71.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">10</text><line x1=\"65.0\" y1=\"39.4\" x2=\"61.0\" y2=\"32.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"71.0\" y=\"49.8\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">11</text><line x1=\"100\" y1=\"100\" x2=\"145.0\" y2=\"100.0\" stroke=\"#333\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"100\" y1=\"100\" x2=\"100.0\" y2=\"35.0\" stroke=\"#555\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><circle cx=\"100\" cy=\"100\" r=\"4\" fill=\"#333\"/></svg>"
+    },
+    {
+      "id": "SING-G3-SMC-028",
+      "stem": "In a class, every student likes either Mathematics or Science or both. 18 students like Mathematics. 15 students like Science. 5 students like both. How many students are in the class?",
+      "choices": [
+        "23",
+        "28",
+        "33",
+        "38"
+      ],
+      "correct_answer": "B",
+      "difficulty_tier": "olympiad",
+      "difficulty_score": 30,
+      "tags": [
+        "logic",
+        "venn_diagram",
+        "sets"
+      ],
+      "chapter": "Singapore Math Challenge",
+      "visual_context": "A Venn diagram with two overlapping circles labeled Mathematics and Science.",
+      "hint": {
+        "level_0": "Use the inclusion-exclusion principle.",
+        "level_1": "Total = Maths + Science − Both.",
+        "level_2": "Total = 18 + 15 − 5 = 28."
+      },
+      "diagnostics": {
+        "correct_explanation": "The answer is 28.",
+        "0": "Not quite. You're off by 5. Re-check your arithmetic step by step.",
+        "2": "Not quite. You're off by 5. Re-check your arithmetic step by step.",
+        "3": "Not quite. You're off by 10. Re-check your arithmetic step by step."
+      },
+      "visual_svg": "<svg viewBox=\"0 0 160 80\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"5\" y=\"5\" width=\"150\" height=\"70\" rx=\"8\" fill=\"#F8F9FA\" stroke=\"#DEE2E6\" stroke-width=\"1.5\"/><text x=\"80\" y=\"42\" text-anchor=\"middle\" font-size=\"10\" fill=\"#6C757D\">A Venn diagram with two overlapping</text></svg>",
+      "visual_alt": "Visual for: In a class, every student likes either Mathematics"
+    },
+    {
+      "id": "SING-G3-SMC-030",
+      "stem": "Siti has 5 times as many stamps as Chong. If Siti gives 12 stamps to Chong, they will have the same number. How many stamps does Chong have?",
+      "choices": [
+        "4",
+        "6",
+        "8",
+        "10"
+      ],
+      "correct_answer": "B",
+      "difficulty_tier": "olympiad",
+      "difficulty_score": 31,
+      "tags": [
+        "arithmetic_multiplicative",
+        "comparison",
+        "algebra",
+        "drag_drop_candidate"
+      ],
+      "chapter": "Singapore Math Challenge",
+      "visual_context": "A bar model showing Siti's bar as 5 units and Chong's bar as 1 unit.",
+      "hint": {
+        "level_0": "After transfer, both have the same number.",
+        "level_1": "Chong = 1 unit, Siti = 5 units. Total = 6 units. After transfer they each have 3 units.",
+        "level_2": "Chong gains 12 stamps: from 1 unit to 3 units, so 2 units = 12, 1 unit = 6."
+      },
+      "diagnostics": {
+        "correct_explanation": "The answer is 6.",
+        "0": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+        "2": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+        "3": "Not quite. You're off by 4. Re-check your arithmetic step by step."
+      },
+      "interaction_mode": "drag_drop",
+      "visual_svg": "<svg viewBox=\"0 0 160 80\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"5\" y=\"5\" width=\"150\" height=\"70\" rx=\"8\" fill=\"#F8F9FA\" stroke=\"#DEE2E6\" stroke-width=\"1.5\"/><text x=\"80\" y=\"42\" text-anchor=\"middle\" font-size=\"10\" fill=\"#6C757D\">A bar model showing Siti's bar as 5</text></svg>",
+      "visual_alt": "Visual for: Siti has 5 times as many stamps as Chong. If Siti "
+    },
+    {
+      "id": "SING-G3-SMC-016",
+      "stem": "A clock gains 3 minutes every hour. It is set to the correct time at 8:00 a.m. What is the correct time when the clock shows 11:09 a.m.?",
+      "choices": [
+        "10:45 a.m.",
+        "11:00 a.m.",
+        "11:06 a.m.",
+        "11:12 a.m."
+      ],
+      "correct_answer": "B",
+      "difficulty_tier": "olympiad",
+      "difficulty_score": 32,
+      "tags": [
+        "time_clock",
+        "fast_slow_clock",
+        "reasoning"
+      ],
+      "chapter": "Singapore Math Challenge",
+      "visual_context": null,
+      "hint": {
+        "level_0": "Every real hour, the clock advances 63 minutes.",
+        "level_1": "From 8:00 to 11:09 on the clock is 189 clock-minutes. 189 ÷ 63 = 3 real hours.",
+        "level_2": "Correct time = 8:00 + 3 hours = 11:00 a.m."
+      },
+      "diagnostics": {
+        "correct_explanation": "The answer is 11:00 a.m..",
+        "0": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+        "2": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+        "3": "This doesn't match all the conditions in the problem. Test each clue against your answer."
+      },
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 200 200\" width=\"200\" height=\"200\" style=\"font-family:Arial,sans-serif\"><circle cx=\"100\" cy=\"100\" r=\"80\" fill=\"white\" stroke=\"#333\" stroke-width=\"3\"/><line x1=\"100.0\" y1=\"30.0\" x2=\"100.0\" y2=\"22.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"100.0\" y=\"42.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">12</text><line x1=\"135.0\" y1=\"39.4\" x2=\"139.0\" y2=\"32.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"129.0\" y=\"49.8\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">1</text><line x1=\"160.6\" y1=\"65.0\" x2=\"167.5\" y2=\"61.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"150.2\" y=\"71.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">2</text><line x1=\"170.0\" y1=\"100.0\" x2=\"178.0\" y2=\"100.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"158.0\" y=\"100.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">3</text><line x1=\"160.6\" y1=\"135.0\" x2=\"167.5\" y2=\"139.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"150.2\" y=\"129.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">4</text><line x1=\"135.0\" y1=\"160.6\" x2=\"139.0\" y2=\"167.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"129.0\" y=\"150.2\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">5</text><line x1=\"100.0\" y1=\"170.0\" x2=\"100.0\" y2=\"178.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"100.0\" y=\"158.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">6</text><line x1=\"65.0\" y1=\"160.6\" x2=\"61.0\" y2=\"167.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"71.0\" y=\"150.2\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">7</text><line x1=\"39.4\" y1=\"135.0\" x2=\"32.5\" y2=\"139.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"49.8\" y=\"129.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">8</text><line x1=\"30.0\" y1=\"100.0\" x2=\"22.0\" y2=\"100.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"42.0\" y=\"100.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">9</text><line x1=\"39.4\" y1=\"65.0\" x2=\"32.5\" y2=\"61.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"49.8\" y=\"71.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">10</text><line x1=\"65.0\" y1=\"39.4\" x2=\"61.0\" y2=\"32.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"71.0\" y=\"49.8\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">11</text><line x1=\"100\" y1=\"100\" x2=\"61.0\" y2=\"122.5\" stroke=\"#333\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"100\" y1=\"100\" x2=\"100.0\" y2=\"35.0\" stroke=\"#555\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><circle cx=\"100\" cy=\"100\" r=\"4\" fill=\"#333\"/></svg>"
+    }
+  ]
+}

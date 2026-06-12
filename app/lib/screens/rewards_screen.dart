@@ -119,19 +119,19 @@ class _RewardsScreenState extends State<RewardsScreen>
     final collected = widget.stickers.where((s) => s['collected'] == true).length;
 
     return SingleChildScrollView(
-      padding: const EdgeInsets.all(20),
+      padding: EdgeInsets.all(KiwiSpacing.xl),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           // Progress header
           Container(
             width: double.infinity,
-            padding: const EdgeInsets.all(18),
+            padding: EdgeInsets.all(KiwiSpacing.lg + 2),
             decoration: BoxDecoration(
               gradient: const LinearGradient(
-                colors: [Color(0xFFFFF8E1), Color(0xFFFFF3E0)],
+                colors: [KiwiColors.visualYellowBg, KiwiColors.kiwiPrimaryLight],
               ),
-              borderRadius: BorderRadius.circular(16),
+              borderRadius: BorderRadius.circular(KiwiSpacing.lg),
             ),
             child: Column(
               children: [
@@ -139,7 +139,7 @@ class _RewardsScreenState extends State<RewardsScreen>
                   '\u{1F4D6}',
                   style: TextStyle(fontSize: 40),
                 ),
-                const SizedBox(height: 8),
+                SizedBox(height: KiwiSpacing.sm),
                 const Text(
                   'Sticker Album',
                   style: TextStyle(
@@ -148,7 +148,7 @@ class _RewardsScreenState extends State<RewardsScreen>
                     color: KiwiColors.textDark,
                   ),
                 ),
-                const SizedBox(height: 6),
+                SizedBox(height: KiwiSpacing.xs + 2),
                 Text(
                   '$collected / $totalSlots collected',
                   style: const TextStyle(
@@ -157,9 +157,9 @@ class _RewardsScreenState extends State<RewardsScreen>
                     color: KiwiColors.textMid,
                   ),
                 ),
-                const SizedBox(height: 12),
+                SizedBox(height: KiwiSpacing.md),
                 ClipRRect(
-                  borderRadius: BorderRadius.circular(8),
+                  borderRadius: BorderRadius.circular(KiwiSpacing.sm),
                   child: LinearProgressIndicator(
                     value: widget.stickerProgress.clamp(0.0, 1.0),
                     minHeight: 12,
@@ -171,7 +171,7 @@ class _RewardsScreenState extends State<RewardsScreen>
               ],
             ),
           ),
-          const SizedBox(height: 20),
+          SizedBox(height: KiwiSpacing.xl),
 
           // Sticker grid
           GridView.builder(
@@ -179,8 +179,8 @@ class _RewardsScreenState extends State<RewardsScreen>
             physics: const NeverScrollableScrollPhysics(),
             gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: 5,
-              mainAxisSpacing: 10,
-              crossAxisSpacing: 10,
+              mainAxisSpacing: KiwiSpacing.sm + 2,
+              crossAxisSpacing: KiwiSpacing.sm + 2,
               childAspectRatio: 1.0,
             ),
             itemCount: totalSlots,
@@ -196,11 +196,11 @@ class _RewardsScreenState extends State<RewardsScreen>
                   color: hasSticker
                       ? KiwiColors.kiwiPrimaryLight
                       : KiwiColors.creamDark,
-                  borderRadius: BorderRadius.circular(12),
+                  borderRadius: BorderRadius.circular(KiwiSpacing.md),
                   border: Border.all(
                     color: hasSticker
                         ? KiwiColors.kiwiPrimary.withOpacity(0.3)
-                        : Colors.grey.shade300,
+                        : KiwiColors.pathLocked,
                     width: 1.5,
                   ),
                   boxShadow: hasSticker
@@ -218,7 +218,7 @@ class _RewardsScreenState extends State<RewardsScreen>
                     : Icon(
                         Icons.help_outline_rounded,
                         size: 24,
-                        color: Colors.grey.shade400,
+                        color: KiwiColors.textMuted,
                       ),
               );
             },
@@ -239,7 +239,7 @@ class _RewardsScreenState extends State<RewardsScreen>
           mainAxisSize: MainAxisSize.min,
           children: [
             const Text('\u{1F3C5}', style: TextStyle(fontSize: 56)),
-            const SizedBox(height: 16),
+            SizedBox(height: KiwiSpacing.lg),
             const Text(
               'No badges yet',
               style: TextStyle(
@@ -248,7 +248,7 @@ class _RewardsScreenState extends State<RewardsScreen>
                 color: KiwiColors.textDark,
               ),
             ),
-            const SizedBox(height: 8),
+            SizedBox(height: KiwiSpacing.sm),
             const Text(
               'Keep solving puzzles to earn badges!',
               style: TextStyle(
@@ -262,9 +262,9 @@ class _RewardsScreenState extends State<RewardsScreen>
     }
 
     return ListView.separated(
-      padding: const EdgeInsets.all(20),
+      padding: EdgeInsets.all(KiwiSpacing.xl),
       itemCount: widget.badges.length,
-      separatorBuilder: (_, __) => const SizedBox(height: 10),
+      separatorBuilder: (_, __) => SizedBox(height: KiwiSpacing.sm + 2),
       itemBuilder: (context, index) {
         final badge = widget.badges[index];
         final earned = badge['earned'] == true;
@@ -273,10 +273,10 @@ class _RewardsScreenState extends State<RewardsScreen>
         final description = badge['description'] as String? ?? '';
 
         return Container(
-          padding: const EdgeInsets.all(16),
+          padding: EdgeInsets.all(KiwiSpacing.lg),
           decoration: BoxDecoration(
             color: earned ? KiwiColors.cardBg : KiwiColors.creamDark,
-            borderRadius: BorderRadius.circular(14),
+            borderRadius: BorderRadius.circular(KiwiSpacing.md + 2),
             border: earned
                 ? Border.all(color: KiwiColors.gemGold.withOpacity(0.4))
                 : null,
@@ -300,7 +300,7 @@ class _RewardsScreenState extends State<RewardsScreen>
                   shape: BoxShape.circle,
                   color: earned
                       ? KiwiColors.gemGold.withOpacity(0.15)
-                      : Colors.grey.shade200,
+                      : KiwiColors.pathLocked,
                 ),
                 alignment: Alignment.center,
                 child: Opacity(
@@ -308,7 +308,7 @@ class _RewardsScreenState extends State<RewardsScreen>
                   child: Text(emoji, style: const TextStyle(fontSize: 26)),
                 ),
               ),
-              const SizedBox(width: 14),
+              SizedBox(width: KiwiSpacing.md + 2),
               Expanded(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -341,7 +341,7 @@ class _RewardsScreenState extends State<RewardsScreen>
               if (!earned)
                 Icon(
                   Icons.lock_rounded,
-                  color: Colors.grey.shade400,
+                  color: KiwiColors.textMuted,
                   size: 22,
                 ),
             ],
@@ -363,17 +363,17 @@ class _RewardsScreenState extends State<RewardsScreen>
     final isReady = available > 0;
 
     return SingleChildScrollView(
-      padding: const EdgeInsets.all(20),
+      padding: EdgeInsets.all(KiwiSpacing.xl),
       child: Column(
         children: [
-          const SizedBox(height: 20),
+          SizedBox(height: KiwiSpacing.xl),
 
           // Mystery box visual
           _MysteryBoxVisual(
             isReady: isReady,
             onTap: isReady ? widget.onOpenMysteryBox : null,
           ),
-          const SizedBox(height: 24),
+          SizedBox(height: KiwiSpacing.xl),
 
           // Status text
           Text(
@@ -384,7 +384,7 @@ class _RewardsScreenState extends State<RewardsScreen>
               color: KiwiColors.textDark,
             ),
           ),
-          const SizedBox(height: 8),
+          SizedBox(height: KiwiSpacing.sm),
 
           if (isReady)
             Text(
@@ -404,11 +404,11 @@ class _RewardsScreenState extends State<RewardsScreen>
                 color: KiwiColors.textMid,
               ),
             ),
-            const SizedBox(height: 14),
+            SizedBox(height: KiwiSpacing.md + 2),
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 40),
+              padding: EdgeInsets.symmetric(horizontal: KiwiSpacing.xxl + KiwiSpacing.sm),
               child: ClipRRect(
-                borderRadius: BorderRadius.circular(8),
+                borderRadius: BorderRadius.circular(KiwiSpacing.sm),
                 child: LinearProgressIndicator(
                   value: progress,
                   minHeight: 12,
@@ -419,21 +419,21 @@ class _RewardsScreenState extends State<RewardsScreen>
               ),
             ),
           ],
-          const SizedBox(height: 24),
+          SizedBox(height: KiwiSpacing.xl),
 
           if (isReady)
             GestureDetector(
               onTap: widget.onOpenMysteryBox,
               child: Container(
-                padding: const EdgeInsets.symmetric(
-                  horizontal: 32,
-                  vertical: 16,
+                padding: EdgeInsets.symmetric(
+                  horizontal: KiwiSpacing.xxl,
+                  vertical: KiwiSpacing.lg,
                 ),
                 decoration: BoxDecoration(
                   gradient: const LinearGradient(
-                    colors: [KiwiColors.xpPurple, Color(0xFF6200EA)],
+                    colors: [KiwiColors.xpPurple, KiwiColors.indigo],
                   ),
-                  borderRadius: BorderRadius.circular(16),
+                  borderRadius: BorderRadius.circular(KiwiSpacing.lg),
                   boxShadow: [
                     BoxShadow(
                       color: KiwiColors.xpPurple.withOpacity(0.3),
@@ -453,14 +453,14 @@ class _RewardsScreenState extends State<RewardsScreen>
               ),
             ),
 
-          const SizedBox(height: 30),
+          SizedBox(height: KiwiSpacing.xxl - 2),
 
           // Info section
           Container(
-            padding: const EdgeInsets.all(16),
+            padding: EdgeInsets.all(KiwiSpacing.lg),
             decoration: BoxDecoration(
               color: KiwiColors.cardBg,
-              borderRadius: BorderRadius.circular(14),
+              borderRadius: BorderRadius.circular(KiwiSpacing.md + 2),
               boxShadow: [
                 BoxShadow(
                   color: Colors.black.withOpacity(0.04),
@@ -480,13 +480,13 @@ class _RewardsScreenState extends State<RewardsScreen>
                     color: KiwiColors.textDark,
                   ),
                 ),
-                const SizedBox(height: 10),
+                SizedBox(height: KiwiSpacing.sm + 2),
                 _infoRow('\u{1F9E9}', 'Solve ${widget.puzzlesRequiredForBox} daily puzzles to earn a box'),
-                const SizedBox(height: 6),
+                SizedBox(height: KiwiSpacing.xs + 2),
                 _infoRow('\u{1F381}', 'Tap to shake and open your box'),
-                const SizedBox(height: 6),
+                SizedBox(height: KiwiSpacing.xs + 2),
                 _infoRow('\u{2728}', 'Win gems, stickers, or rare badges'),
-                const SizedBox(height: 6),
+                SizedBox(height: KiwiSpacing.xs + 2),
                 _infoRow('\u{1F48E}', 'Rarer rewards come from longer streaks'),
               ],
             ),
@@ -500,7 +500,7 @@ class _RewardsScreenState extends State<RewardsScreen>
     return Row(
       children: [
         Text(emoji, style: const TextStyle(fontSize: 16)),
-        const SizedBox(width: 10),
+        SizedBox(width: KiwiSpacing.sm + 2),
         Expanded(
           child: Text(
             text,
@@ -599,10 +599,10 @@ class _MysteryBoxVisualState extends State<_MysteryBoxVisual>
           decoration: BoxDecoration(
             gradient: widget.isReady
                 ? const RadialGradient(
-                    colors: [Color(0xFFE1BEE7), Color(0xFFCE93D8)],
+                    colors: [Color(0xFFE1BEE7), Color(0xFFCE93D8)], // decorative — no token
                   )
                 : RadialGradient(
-                    colors: [Colors.grey.shade200, Colors.grey.shade300],
+                    colors: [KiwiColors.pathLocked, KiwiColors.pathLocked],
                   ),
             shape: BoxShape.circle,
             boxShadow: widget.isReady

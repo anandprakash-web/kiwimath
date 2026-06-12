@@ -1,9 +1,9 @@
 import 'dart:convert';
 
-import 'package:http/http.dart' as http;
-
 import '../models/engagement.dart';
 import 'api_client.dart';
+import 'auth_token.dart';
+import 'authed_http.dart' as http;
 
 /// Flutter API client for the Kiwimath Engagement system (v4 endpoints).
 ///
@@ -13,13 +13,12 @@ class EngagementService {
   EngagementService._();
   static final EngagementService instance = EngagementService._();
 
-  static const _jsonHeaders = {'Content-Type': 'application/json'};
-
   // ---------------------------------------------------------------------------
   // Retry helper (same semantics as ApiClient._withRetry)
   // ---------------------------------------------------------------------------
 
-  /// Retries up to 2 times on timeout / 5xx with increasing delay.
+  /// Retries IDEMPOTENT requests (GETs only) up to 2 extra times on
+  /// timeout / 5xx with increasing delay. Mutations must use [_postOnce].
   Future<http.Response> _withRetry(
       Future<http.Response> Function() request) async {
     const maxAttempts = 3;
@@ -36,9 +35,20 @@ class EngagementService {
         await Future.delayed(Duration(milliseconds: 500 * attempt));
       }
     }
-    // Final fallback (should never reach here).
-    return await request();
+    // Unreachable: the final attempt either returned or rethrew above.
+    throw ApiException('retry loop exhausted unexpectedly');
   }
+
+  /// Execute a mutation (POST) exactly once — NO automatic retries.
+  /// Retrying could double-submit puzzle answers or double-claim rewards.
+  Future<http.Response> _postOnce(Future<http.Response> Function() request) =>
+      request();
+
+  /// JSON headers with a fresh idempotency key for backend dedupe.
+  Map<String, String> _idemJsonHeaders() => {
+        'Content-Type': 'application/json',
+        'X-Idempotency-Key': newIdempotencyKey(),
+      };
 
   // ---------------------------------------------------------------------------
   // 1. GET /v4/daily-puzzle  --  Get today's puzzle
@@ -85,8 +95,8 @@ class EngagementService {
       'answer': answer,
       'time_taken_seconds': timeTakenSeconds,
     };
-    final res = await _withRetry(() => http
-        .post(uri, headers: _jsonHeaders, body: jsonEncode(body))
+    final res = await _postOnce(() => http
+        .post(uri, headers: _idemJsonHeaders(), body: jsonEncode(body))
         .timeout(const Duration(seconds: 15)));
     if (res.statusCode != 200) {
       throw ApiException(
@@ -150,8 +160,8 @@ class EngagementService {
     required String uid,
   }) async {
     final uri = Uri.parse('${ApiClient.baseUrl}/v4/streaks/$uid/freeze');
-    final res = await _withRetry(() => http
-        .post(uri, headers: _jsonHeaders)
+    final res = await _postOnce(() => http
+        .post(uri, headers: _idemJsonHeaders())
         .timeout(const Duration(seconds: 10)));
     if (res.statusCode != 200) {
       throw ApiException(
@@ -222,8 +232,8 @@ class EngagementService {
       'answer': answer,
       'time_taken': timeTaken,
     };
-    final res = await _withRetry(() => http
-        .post(uri, headers: _jsonHeaders, body: jsonEncode(body))
+    final res = await _postOnce(() => http
+        .post(uri, headers: _idemJsonHeaders(), body: jsonEncode(body))
         .timeout(const Duration(seconds: 15)));
     if (res.statusCode != 200) {
       throw ApiException(
@@ -259,8 +269,8 @@ class EngagementService {
   Future<MysteryBoxResult?> openMysteryBox({required String uid}) async {
     final uri =
         Uri.parse('${ApiClient.baseUrl}/v4/rewards/$uid/open-mystery-box');
-    final res = await _withRetry(() => http
-        .post(uri, headers: _jsonHeaders)
+    final res = await _postOnce(() => http
+        .post(uri, headers: _idemJsonHeaders())
         .timeout(const Duration(seconds: 10)));
     if (res.statusCode == 404) return null;
     if (res.statusCode != 200) {
@@ -282,8 +292,8 @@ class EngagementService {
   }) async {
     final uri =
         Uri.parse('${ApiClient.baseUrl}/v4/rewards/$uid/claim-daily');
-    final res = await _withRetry(() => http
-        .post(uri, headers: _jsonHeaders)
+    final res = await _postOnce(() => http
+        .post(uri, headers: _idemJsonHeaders())
         .timeout(const Duration(seconds: 10)));
     if (res.statusCode != 200) {
       throw ApiException(
@@ -306,8 +316,8 @@ class EngagementService {
     final body = {
       'target_puzzles': targetPuzzles,
     };
-    final res = await _withRetry(() => http
-        .post(uri, headers: _jsonHeaders, body: jsonEncode(body))
+    final res = await _postOnce(() => http
+        .post(uri, headers: _idemJsonHeaders(), body: jsonEncode(body))
         .timeout(const Duration(seconds: 15)));
     if (res.statusCode != 200 && res.statusCode != 201) {
       throw ApiException(

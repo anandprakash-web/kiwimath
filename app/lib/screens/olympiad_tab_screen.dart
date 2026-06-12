@@ -3,29 +3,48 @@ import 'package:flutter/services.dart';
 
 import '../theme/kiwi_theme.dart';
 import 'olympiad_screen.dart';
+import 'pillar_home_screen.dart';
 import 'worksheet_list_screen.dart';
-import 'downloads_screen.dart';
+import 'saved_questions_screen.dart';
 import 'wavebook_screen.dart';
 
 /// Combined Olympiad tab — top shelf with sub-tabs:
-///   Practice | DPP | Worksheet (G3+ only) | Saved
+///   Practice | DPP | Worksheet | Saved
 ///
 /// - Practice: Smart adaptive practice with topic unlocking
-/// - DPP: Daily Practice Problems (previously "Worksheets") — olympiad worksheets
-/// - Worksheet: Live class wavebook MCQs (G3-6 only, L3 for G3-4, L4 for G5-6)
+/// - DPP: Daily Practice Problems — olympiad worksheets
+/// - Worksheet: Wavebook MCQs (L3 for G3-4, L4 for G5-6, defaults to L3 for G1-2)
 /// - Saved: Downloads / offline management
 class OlympiadTabScreen extends StatefulWidget {
+  final String userId;
   final int selectedGrade;
   final void Function(int grade) onGradeChanged;
   final void Function(String topicId, String topicName) onStartPractice;
+  final VoidCallback? onSmartSession;
   final Map<String, int> topicMastery;
+
+  // Greeting & stats (from _AppShell)
+  final String studentName;
+  final int streak;
+  final int kiwiCoins;
+  final int dailyProgress;
+  final int dailyGoal;
+  final VoidCallback? onAvatarTap;
 
   const OlympiadTabScreen({
     super.key,
+    required this.userId,
     required this.selectedGrade,
     required this.onGradeChanged,
     required this.onStartPractice,
+    this.onSmartSession,
     this.topicMastery = const {},
+    this.studentName = '',
+    this.streak = 0,
+    this.kiwiCoins = 0,
+    this.dailyProgress = 0,
+    this.dailyGoal = 5,
+    this.onAvatarTap,
   });
 
   @override
@@ -35,28 +54,8 @@ class OlympiadTabScreen extends StatefulWidget {
 class _OlympiadTabScreenState extends State<OlympiadTabScreen> {
   int _subTab = 0; // 0=Practice, 1=DPP, 2=Worksheet, 3=Saved
 
-  bool get _showWorksheetTab => widget.selectedGrade >= 3;
-
-  /// Map visible tab index to logical tab index.
-  /// For G1-2: 0=Practice, 1=DPP, 2=Saved (no Worksheet)
-  /// For G3+:  0=Practice, 1=DPP, 2=Worksheet, 3=Saved
-  int get _logicalTab {
-    if (_showWorksheetTab) return _subTab;
-    // G1-2: skip Worksheet tab
-    if (_subTab >= 2) return _subTab + 1; // 2→3 (Saved)
-    return _subTab;
-  }
-
-  @override
-  void didUpdateWidget(covariant OlympiadTabScreen oldWidget) {
-    super.didUpdateWidget(oldWidget);
-    if (oldWidget.selectedGrade != widget.selectedGrade) {
-      // Reset to Practice if currently on Worksheet and grade drops below 3
-      if (!_showWorksheetTab && _subTab == 2) {
-        setState(() => _subTab = 0);
-      }
-    }
-  }
+  /// All grades show the same 4 sub-tabs for a consistent layout.
+  int get _logicalTab => _subTab;
 
   @override
   Widget build(BuildContext context) {
@@ -64,13 +63,12 @@ class _OlympiadTabScreenState extends State<OlympiadTabScreen> {
     final colors = tier.colors;
     final typo = tier.typography;
 
-    // Build tab list based on grade
+    // Same 4 tabs for all grades — consistent layout
     final tabs = <_TabDef>[
       const _TabDef('Practice', Icons.psychology_rounded),
-      const _TabDef('DPP', Icons.calendar_today_rounded),
-      if (_showWorksheetTab)
-        const _TabDef('Worksheet', Icons.assignment_rounded),
-      const _TabDef('Saved', Icons.download_rounded),
+      const _TabDef('Daily', Icons.calendar_today_rounded),
+      const _TabDef('Worksheets', Icons.assignment_rounded),
+      const _TabDef('Saved', Icons.bookmark_rounded),
     ];
 
     return Scaffold(
@@ -78,14 +76,135 @@ class _OlympiadTabScreenState extends State<OlympiadTabScreen> {
       body: SafeArea(
         child: Column(
           children: [
+            // ── Greeting bar with name, streak, coins ─────────
+            Padding(
+              padding: EdgeInsets.fromLTRB(KiwiSpacing.lg, KiwiSpacing.sm + 2, KiwiSpacing.lg, 0),
+              child: Row(
+                children: [
+                  // Avatar circle with initial
+                  GestureDetector(
+                    onTap: widget.onAvatarTap,
+                    child: Container(
+                      width: 34,
+                      height: 34,
+                      decoration: BoxDecoration(
+                        gradient: LinearGradient(
+                          colors: [colors.primary, colors.primaryDark],
+                          begin: Alignment.topLeft,
+                          end: Alignment.bottomRight,
+                        ),
+                        shape: BoxShape.circle,
+                      ),
+                      child: Center(
+                        child: Text(
+                          widget.studentName.isNotEmpty
+                              ? widget.studentName[0].toUpperCase()
+                              : 'K',
+                          style: TextStyle(
+                            fontSize: typo.chipSize,
+                            fontWeight: FontWeight.w800,
+                            color: Colors.white,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                  SizedBox(width: KiwiSpacing.sm + 2),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          widget.studentName.isNotEmpty
+                              ? 'Hi, ${widget.studentName}!'
+                              : 'Kiwimath',
+                          style: TextStyle(
+                            fontSize: typo.topicNameSize,
+                            fontWeight: FontWeight.w700,
+                            color: colors.textPrimary,
+                          ),
+                        ),
+                        Text(
+                          'Grade ${widget.selectedGrade}',
+                          style: TextStyle(
+                            fontSize: typo.chipSize - 3,
+                            color: colors.textMuted,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  // Coins chip
+                  if (widget.kiwiCoins > 0)
+                    Container(
+                      padding: EdgeInsets.symmetric(horizontal: KiwiSpacing.sm, vertical: KiwiSpacing.xs),
+                      decoration: BoxDecoration(
+                        color: colors.cardBg,
+                        borderRadius: BorderRadius.circular(tier.shape.chipRadius - 8),
+                        border: Border.all(color: KiwiColors.textMuted.withOpacity(0.12)),
+                      ),
+                      child: Row(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Text('\u{1FA99}', style: TextStyle(fontSize: typo.chipSize - 3)),
+                          SizedBox(width: KiwiSpacing.xs - 1),
+                          Text(
+                            '${widget.kiwiCoins}',
+                            style: TextStyle(
+                              fontSize: typo.chipSize - 3,
+                              fontWeight: FontWeight.w700,
+                              color: colors.textPrimary,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  SizedBox(width: KiwiSpacing.xs + 2),
+                  // Streak chip
+                  if (widget.streak > 0)
+                    Container(
+                      padding: EdgeInsets.symmetric(horizontal: KiwiSpacing.sm, vertical: KiwiSpacing.xs),
+                      decoration: BoxDecoration(
+                        color: KiwiColors.wrongBg,
+                        borderRadius: BorderRadius.circular(tier.shape.chipRadius - 8),
+                      ),
+                      child: Row(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Text('\u{1F525}', style: TextStyle(fontSize: typo.chipSize - 2)),
+                          SizedBox(width: KiwiSpacing.xs - 1),
+                          Text(
+                            '${widget.streak}',
+                            style: TextStyle(
+                              fontSize: typo.chipSize - 2,
+                              fontWeight: FontWeight.w800,
+                              color: colors.primaryDark,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                ],
+              ),
+            ),
+            // ── Daily progress bar ────────────────────────────
+            if (widget.dailyGoal > 0)
+              Padding(
+                padding: EdgeInsets.fromLTRB(KiwiSpacing.lg, KiwiSpacing.sm, KiwiSpacing.lg, 0),
+                child: _DailyProgressBar(
+                  progress: widget.dailyProgress,
+                  goal: widget.dailyGoal,
+                  colors: colors,
+                ),
+              ),
             // ── Top shelf segmented toggle ─────────────────────
             Padding(
-              padding: const EdgeInsets.fromLTRB(16, 12, 16, 0),
+              padding: EdgeInsets.fromLTRB(KiwiSpacing.lg, KiwiSpacing.sm + 2, KiwiSpacing.lg, 0),
               child: Container(
-                height: 44,
+                height: 40,
                 decoration: BoxDecoration(
                   color: colors.cardBg,
-                  borderRadius: BorderRadius.circular(12),
+                  borderRadius: BorderRadius.circular(tier.shape.chipRadius - 8),
                   border: Border.all(color: colors.topicCardBorder),
                 ),
                 child: Row(
@@ -116,30 +235,34 @@ class _OlympiadTabScreenState extends State<OlympiadTabScreen> {
   Widget _buildContent() {
     switch (_logicalTab) {
       case 0: // Practice
-        return OlympiadScreen(
-          selectedGrade: widget.selectedGrade,
-          onGradeChanged: widget.onGradeChanged,
-          onStartPractice: widget.onStartPractice,
-          topicMastery: widget.topicMastery,
-        );
+        return _buildPracticeTab();
       case 1: // DPP (was Worksheets)
         return WorksheetListScreen(
           grade: widget.selectedGrade,
           onGradeChanged: widget.onGradeChanged,
         );
-      case 2: // Worksheet (wavebook, G3+ only)
+      case 2: // Worksheet (wavebook MCQs)
         return WavebookScreen(
           selectedGrade: widget.selectedGrade,
           onGradeChanged: widget.onGradeChanged,
         );
-      case 3: // Saved (Downloads)
-        return DownloadsScreen(
-          selectedGrade: widget.selectedGrade,
-          onGradeChanged: widget.onGradeChanged,
+      case 3: // Saved (Bookmarked questions)
+        return SavedQuestionsScreen(
+          userId: widget.userId,
+          grade: widget.selectedGrade,
         );
       default:
         return const SizedBox.shrink();
     }
+  }
+
+  /// Practice tab — now shows the 4-Pillar grid (Olympiad v2).
+  Widget _buildPracticeTab() {
+    return PillarHomeScreen(
+      userId: widget.userId,
+      selectedGrade: widget.selectedGrade,
+      onGradeChanged: widget.onGradeChanged,
+    );
   }
 
   Widget _tabButton(
@@ -156,45 +279,30 @@ class _OlympiadTabScreenState extends State<OlympiadTabScreen> {
           HapticFeedback.lightImpact();
           setState(() => _subTab = index);
         },
-        child: AnimatedContainer(
-          duration: const Duration(milliseconds: 200),
-          margin: const EdgeInsets.all(3),
-          decoration: BoxDecoration(
-            color: selected ? colors.primary : Colors.transparent,
-            borderRadius: BorderRadius.circular(10),
-            boxShadow: selected
-                ? [
-                    BoxShadow(
-                      color: colors.primary.withOpacity(0.2),
-                      blurRadius: 6,
-                      offset: const Offset(0, 2),
-                    ),
-                  ]
-                : [],
-          ),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Icon(
-                icon,
-                size: 14,
-                color: selected ? Colors.white : colors.textMuted,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const Spacer(),
+            Text(
+              label,
+              overflow: TextOverflow.ellipsis,
+              style: TextStyle(
+                fontSize: typo.chipSize - 2,
+                fontWeight: selected ? FontWeight.w700 : FontWeight.w400,
+                color: selected ? colors.primary : colors.textMuted,
+                fontFamily: typo.fontFamily,
               ),
-              const SizedBox(width: 4),
-              Flexible(
-                child: Text(
-                  label,
-                  overflow: TextOverflow.ellipsis,
-                  style: TextStyle(
-                    fontSize: 12,
-                    fontWeight: FontWeight.w700,
-                    color: selected ? Colors.white : colors.textMuted,
-                    fontFamily: typo.fontFamily,
-                  ),
-                ),
+            ),
+            const Spacer(),
+            AnimatedContainer(
+              duration: const Duration(milliseconds: 200),
+              height: 2,
+              decoration: BoxDecoration(
+                color: selected ? colors.primary : Colors.transparent,
+                borderRadius: BorderRadius.circular(1),
               ),
-            ],
-          ),
+            ),
+          ],
         ),
       ),
     );
@@ -205,4 +313,46 @@ class _TabDef {
   final String label;
   final IconData icon;
   const _TabDef(this.label, this.icon);
+}
+
+/// Compact daily progress bar — shows "X/Y questions today"
+class _DailyProgressBar extends StatelessWidget {
+  final int progress;
+  final int goal;
+  final KiwiTierColors colors;
+  const _DailyProgressBar({
+    required this.progress,
+    required this.goal,
+    required this.colors,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final fraction = goal > 0 ? (progress / goal).clamp(0.0, 1.0) : 0.0;
+    final remaining = (goal - progress).clamp(0, goal);
+    return Row(
+      children: [
+        Expanded(
+          child: ClipRRect(
+            borderRadius: BorderRadius.circular(3),
+            child: LinearProgressIndicator(
+              value: fraction,
+              minHeight: 4,
+              backgroundColor: KiwiColors.pathLocked,
+              valueColor: AlwaysStoppedAnimation<Color>(colors.primary),
+            ),
+          ),
+        ),
+        SizedBox(width: KiwiSpacing.sm),
+        Text(
+          remaining > 0 ? '$progress/$goal today' : 'Goal done!',
+          style: TextStyle(
+            fontSize: 10,
+            fontWeight: FontWeight.w600,
+            color: colors.textMuted,
+          ),
+        ),
+      ],
+    );
+  }
 }

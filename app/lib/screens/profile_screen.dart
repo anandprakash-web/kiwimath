@@ -17,6 +17,7 @@ class ProfileScreen extends StatefulWidget {
   final VoidCallback onSignOut;
   final VoidCallback onRestartOnboarding;
   final void Function(String emoji) onAvatarChanged;
+  final VoidCallback? onOpenParentDashboard;
 
   const ProfileScreen({
     super.key,
@@ -33,6 +34,7 @@ class ProfileScreen extends StatefulWidget {
     required this.onSignOut,
     required this.onRestartOnboarding,
     required this.onAvatarChanged,
+    this.onOpenParentDashboard,
   });
 
   @override
@@ -378,12 +380,12 @@ class _ProfileScreenState extends State<ProfileScreen> {
               // ── Daily Math Quote ────────────────────────────────────────
               Container(
                 width: double.infinity,
-                padding: const EdgeInsets.all(18),
+                padding: EdgeInsets.all(KiwiSpacing.lg + 2),
                 decoration: BoxDecoration(
                   gradient: LinearGradient(
                     colors: [
-                      const Color(0xFF1A1A2E),
-                      const Color(0xFF16213E),
+                      KiwiColors.textDark,
+                      KiwiColors.textDark.withOpacity(0.85),
                     ],
                     begin: Alignment.topLeft,
                     end: Alignment.bottomRight,
@@ -391,7 +393,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   borderRadius: BorderRadius.circular(shape.cardRadius),
                   boxShadow: [
                     BoxShadow(
-                      color: const Color(0xFF1A1A2E).withOpacity(0.2),
+                      color: KiwiColors.textDark.withOpacity(0.2),
                       blurRadius: 10,
                       offset: const Offset(0, 4),
                     ),
@@ -502,7 +504,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                       icon: Icons.monetization_on_rounded,
                       value: '${widget.kiwiCoins}',
                       label: 'Kiwi Coins',
-                      color: const Color(0xFFFF6F00),
+                      color: KiwiColors.kiwiPrimary,
                       tier: tier,
                     ),
                   ),
@@ -512,7 +514,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                       icon: Icons.auto_awesome_rounded,
                       value: '${widget.masteryGems}',
                       label: 'Mastery Gems',
-                      color: const Color(0xFF7B1FA2),
+                      color: KiwiColors.xpPurple,
                       tier: tier,
                     ),
                   ),
@@ -526,6 +528,19 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 onTap: () => _shareInvite(context),
               ),
               const SizedBox(height: 10),
+
+              // ── Parent Dashboard ─────────────────────────────────────
+              if (widget.onOpenParentDashboard != null)
+                _ActionTile(
+                  icon: Icons.family_restroom_rounded,
+                  iconColor: KiwiColors.kiwiPrimaryDark,
+                  title: 'Parent Dashboard',
+                  subtitle: 'Progress reports & data privacy',
+                  tier: tier,
+                  onTap: widget.onOpenParentDashboard!,
+                ),
+              if (widget.onOpenParentDashboard != null)
+                const SizedBox(height: 10),
 
               // ── Edit Profile ───────────────────────────────────────────
               _ActionTile(
@@ -776,24 +791,24 @@ class _InviteFriendCard extends StatelessWidget {
         onTap: onTap,
         borderRadius: BorderRadius.circular(shape.cardRadius),
         child: Container(
-          padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 16),
+          padding: EdgeInsets.symmetric(horizontal: KiwiSpacing.lg + 2, vertical: KiwiSpacing.lg),
           decoration: BoxDecoration(
             gradient: LinearGradient(
               colors: [
-                const Color(0xFFFFF0F5), // lavender blush
-                const Color(0xFFFFF8E7), // warm cream
+                KiwiColors.kiwiPrimaryLight, // soft warm
+                KiwiColors.cream,            // warm cream
               ],
               begin: Alignment.topLeft,
               end: Alignment.bottomRight,
             ),
             borderRadius: BorderRadius.circular(shape.cardRadius),
             border: Border.all(
-              color: const Color(0xFFFFD1DC), // soft pink border
+              color: colors.topicCardBorder,
               width: 1.5,
             ),
             boxShadow: [
               BoxShadow(
-                color: const Color(0xFFFFB7C5).withOpacity(0.15),
+                color: colors.primary.withOpacity(0.1),
                 blurRadius: 10,
                 offset: const Offset(0, 3),
               ),
@@ -806,7 +821,7 @@ class _InviteFriendCard extends StatelessWidget {
                 width: 52,
                 height: 52,
                 decoration: BoxDecoration(
-                  color: const Color(0xFFFFE4EC).withOpacity(0.8),
+                  color: colors.primary.withOpacity(0.08),
                   borderRadius: BorderRadius.circular(14),
                 ),
                 child: const Stack(
@@ -866,14 +881,14 @@ class _InviteFriendCard extends StatelessWidget {
                 ),
               ),
               Container(
-                padding: const EdgeInsets.all(6),
+                padding: EdgeInsets.all(KiwiSpacing.xs + 2),
                 decoration: BoxDecoration(
-                  color: const Color(0xFFFFD1DC).withOpacity(0.4),
+                  color: colors.primary.withOpacity(0.12),
                   shape: BoxShape.circle,
                 ),
-                child: const Icon(
+                child: Icon(
                   Icons.share_rounded,
-                  color: Color(0xFFE75480),
+                  color: colors.primary,
                   size: 18,
                 ),
               ),

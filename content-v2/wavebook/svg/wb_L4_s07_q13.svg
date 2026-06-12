@@ -1,0 +1,27 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="200" rx="6" fill="#FFF8F0" stroke="#E0D5C0" stroke-width="1"/>
+  <style>
+    .label { font-family: sans-serif; font-size: 9px; fill: #555; text-anchor: middle; }
+    .qlabel { font-family: sans-serif; font-size: 22px; fill: #D44; text-anchor: middle; font-weight: bold; }
+    .arrow { fill: none; stroke: #888; stroke-width: 1; marker-end: url(#ah); }
+  </style>
+  <defs>
+    <marker id="ah" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6" fill="#888"/>
+    </marker>
+  </defs>
+
+  <rect x="10" y="60" width="46" height="46" fill="white" stroke="#333" stroke-width="1.2"/>
+  <line x1="10" y1="83" x2="56" y2="83" stroke="#D33" stroke-width="1" stroke-dasharray="3,2"/>
+
+  <rect x="78" y="70" width="44" height="30" fill="#F5F0E5" stroke="#333" stroke-width="1.2"/>
+  <polygon points="122,70 112,70 122,80" fill="none" stroke="#2266CC" stroke-width="1.2"/>
+  <line x1="115" y1="67" x2="125" y2="77" stroke="#2266CC" stroke-width="0.8" stroke-dasharray="2,1"/>
+  <text x="167" y="115" class="qlabel">?</text>
+
+  <text x="33" y="195" class="label">Fold</text>
+  <text x="100" y="195" class="label">Cut</text>
+  <text x="167" y="195" class="label">?</text>
+  <path class="arrow" d="M55,100 L72,100"/>
+  <path class="arrow" d="M128,100 L145,100"/>
+</svg>

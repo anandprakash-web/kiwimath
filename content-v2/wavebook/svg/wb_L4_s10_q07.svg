@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <circle cx="100.0" cy="100.0" r="18" fill="#E3F2FD" stroke="#1976D2" stroke-width="2"/>
+  <text x="100.0" y="100.0" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="bold" font-family="Arial" fill="#1976D2">+4</text>
+  <line x1="100.0" y1="100.0" x2="100.0" y2="45.0" stroke="#ccc" stroke-width="1.5"/>
+  <line x1="100.0" y1="100.0" x2="155.0" y2="100.0" stroke="#ccc" stroke-width="1.5"/>
+  <line x1="100.0" y1="100.0" x2="100.0" y2="155.0" stroke="#ccc" stroke-width="1.5"/>
+  <line x1="100.0" y1="100.0" x2="45.0" y2="100.0" stroke="#ccc" stroke-width="1.5"/>
+  <circle cx="100.0" cy="45.0" r="20" fill="#F5F5F5" stroke="#666" stroke-width="2"/>
+  <text x="100.0" y="45.0" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="bold" font-family="Arial" fill="#333">4</text>
+  <circle cx="155.0" cy="100.0" r="20" fill="#F5F5F5" stroke="#666" stroke-width="2"/>
+  <text x="155.0" y="100.0" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="bold" font-family="Arial" fill="#333">8</text>
+  <circle cx="100.0" cy="155.0" r="20" fill="#F5F5F5" stroke="#666" stroke-width="2"/>
+  <text x="100.0" y="155.0" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="bold" font-family="Arial" fill="#333">12</text>
+  <circle cx="45.0" cy="100.0" r="20" fill="#FFF3E0" stroke="#FF9800" stroke-width="2"/>
+  <text x="45.0" y="100.0" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="bold" font-family="Arial" fill="#FF9800">?</text>
+</svg>

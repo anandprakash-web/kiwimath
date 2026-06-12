@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 120" width="280" height="120">
+  <text x="140.0" y="18" text-anchor="middle" font-size="13" font-weight="bold" font-family="Arial" fill="#333">Children Pictograph</text>
+  <text x="140.0" y="112" text-anchor="middle" font-size="10" font-family="Arial" fill="#666">Each smiley = 8 Children</text>
+  <text x="10" y="66.0" text-anchor="start" font-size="10" font-family="Arial" fill="#333">Children</text>
+  <circle cx="60" cy="62.0" r="12" fill="#FFD600" stroke="#333" stroke-width="1.5"/>
+  <circle cx="56" cy="59.0" r="2" fill="#333"/>
+  <circle cx="64" cy="59.0" r="2" fill="#333"/>
+  <path d="M55 65.0 Q60 71.0 65 65.0" fill="none" stroke="#333" stroke-width="1.5"/>
+  <circle cx="92" cy="62.0" r="12" fill="#FFD600" stroke="#333" stroke-width="1.5"/>
+  <circle cx="88" cy="59.0" r="2" fill="#333"/>
+  <circle cx="96" cy="59.0" r="2" fill="#333"/>
+  <path d="M87 65.0 Q92 71.0 97 65.0" fill="none" stroke="#333" stroke-width="1.5"/>
+  <circle cx="124" cy="62.0" r="12" fill="#FFD600" stroke="#333" stroke-width="1.5"/>
+  <circle cx="120" cy="59.0" r="2" fill="#333"/>
+  <circle cx="128" cy="59.0" r="2" fill="#333"/>
+  <path d="M119 65.0 Q124 71.0 129 65.0" fill="none" stroke="#333" stroke-width="1.5"/>
+  <clipPath id="halfClip"><rect x="144" y="50.0" width="12" height="24"/></clipPath>
+  <circle cx="156" cy="62.0" r="12" fill="#FFD600" stroke="#333" stroke-width="1.5" clip-path="url(#halfClip)"/>
+  <circle cx="156" cy="62.0" r="12" fill="none" stroke="#ccc" stroke-width="1" stroke-dasharray="3,3"/>
+</svg>

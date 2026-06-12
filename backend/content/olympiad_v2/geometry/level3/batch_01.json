@@ -1,0 +1,870 @@
+[
+  {
+    "id": "geo-l3-op-001",
+    "topic": "overlapping_pie",
+    "stem": "Two squares of side 6 cm overlap in a 2 cm \u00d7 2 cm region. What is the total visible area?",
+    "visual_svg": "<svg viewBox='0 0 280 180' xmlns='http://www.w3.org/2000/svg'><rect width='280' height='180' fill='#f9f9f9' rx='8'/><rect x='30' y='30' width='120' height='120' fill='#3498db' fill-opacity='0.3' stroke='#3498db' stroke-width='2'/><rect x='110' y='80' width='120' height='120' fill='#e74c3c' fill-opacity='0.3' stroke='#e74c3c' stroke-width='2' transform='translate(0,-50)'/><rect x='110' y='30' width='40' height='40' fill='#9b59b6' fill-opacity='0.4' stroke='#9b59b6' stroke-width='1.5'/><text x='123' y='55' font-size='11' fill='#9b59b6'>2\u00d72</text><text x='60' y='100' font-size='13' fill='#3498db'>6 cm</text><text x='175' y='80' font-size='13' fill='#e74c3c'>6 cm</text></svg>",
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: Area of each square = 6 \u00d7 6 = 36 cm\u00b2.\nStep 2: Total area if we add both = 36 + 36 = 72 cm\u00b2.\nStep 3: The overlapping region (2 \u00d7 2 = 4 cm\u00b2) is counted twice.\nStep 4: Total visible area = 72 \u2212 4 = 68 cm\u00b2.\nAnswer: 68 cm\u00b2.",
+    "difficulty": 1,
+    "tags": [
+      "geometry",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 68
+  },
+  {
+    "id": "geo-l3-op-002",
+    "topic": "overlapping_pie",
+    "stem": "Two circles each have radius 5 cm. They overlap such that the overlapping region has area 10 cm\u00b2. What is the total area covered by both circles? (Use \u03c0 \u2248 3.14)",
+    "visual_svg": null,
+    "answer_type": "mcq",
+    "correct_answer": 0,
+    "solution": "Step 1: Area of each circle = \u03c0 \u00d7 5\u00b2 = 25\u03c0 \u2248 78.5 cm\u00b2.\nStep 2: Total covered area = 78.5 + 78.5 \u2212 10 = 147 cm\u00b2.\nUsing inclusion-exclusion: total = area\u2081 + area\u2082 \u2212 overlap = 78.5 + 78.5 \u2212 10 = 147 cm\u00b2.\nAnswer: 147 cm\u00b2.",
+    "difficulty": 2,
+    "tags": [
+      "geometry",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken.",
+      "1": "Review the question carefully and try again.",
+      "2": "Review the question carefully and try again.",
+      "3": "Review the question carefully and try again."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [
+      "A) 147 cm\u00b2",
+      "B) 157 cm\u00b2",
+      "C) 147.1 cm\u00b2",
+      "D) 167 cm\u00b2"
+    ],
+    "interaction_mode": "mcq"
+  },
+  {
+    "id": "geo-l3-op-003",
+    "topic": "overlapping_pie",
+    "stem": "Three identical circles each with area 30 cm\u00b2 overlap pairwise. Each pair overlaps in an area of 5 cm\u00b2, and all three circles share a common region of 2 cm\u00b2. What is the total area covered?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: By the Inclusion-Exclusion Principle for 3 sets:\nTotal = A\u2081 + A\u2082 + A\u2083 \u2212 A\u2081\u2082 \u2212 A\u2081\u2083 \u2212 A\u2082\u2083 + A\u2081\u2082\u2083.\nStep 2: = 30 + 30 + 30 \u2212 5 \u2212 5 \u2212 5 + 2.\nStep 3: = 90 \u2212 15 + 2 = 77.\nAnswer: 77 cm\u00b2.",
+    "difficulty": 3,
+    "tags": [
+      "geometry",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 77
+  },
+  {
+    "id": "geo-l3-op-004",
+    "topic": "overlapping_pie",
+    "stem": "A rectangle 10 cm \u00d7 6 cm and a square of side 6 cm overlap in a region of area 12 cm\u00b2. What is the total area covered by both shapes?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: Area of rectangle = 10 \u00d7 6 = 60 cm\u00b2.\nStep 2: Area of square = 6 \u00d7 6 = 36 cm\u00b2.\nStep 3: Total covered = 60 + 36 \u2212 12 = 84 cm\u00b2.\nAnswer: 84 cm\u00b2.",
+    "difficulty": 1,
+    "tags": [
+      "geometry",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 84
+  },
+  {
+    "id": "geo-l3-op-005",
+    "topic": "overlapping_pie",
+    "stem": "Two rectangles each measure 8 cm \u00d7 4 cm. They are placed so that one is horizontal and one is vertical, crossing to form a 4 cm \u00d7 4 cm overlap. What is the total visible area?",
+    "visual_svg": "<svg viewBox='0 0 280 200' xmlns='http://www.w3.org/2000/svg'><rect width='280' height='200' fill='#f9f9f9' rx='8'/><rect x='30' y='70' width='200' height='50' fill='#3498db' fill-opacity='0.3' stroke='#3498db' stroke-width='2'/><rect x='100' y='20' width='50' height='160' fill='#e74c3c' fill-opacity='0.3' stroke='#e74c3c' stroke-width='2'/><rect x='100' y='70' width='50' height='50' fill='#9b59b6' fill-opacity='0.4'/><text x='115' y='100' font-size='10' fill='#9b59b6'>4\u00d74</text></svg>",
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: Area of each rectangle = 8 \u00d7 4 = 32 cm\u00b2.\nStep 2: Overlap = 4 \u00d7 4 = 16 cm\u00b2.\nStep 3: Total visible area = 32 + 32 \u2212 16 = 48 cm\u00b2.\nAnswer: 48 cm\u00b2.",
+    "difficulty": 2,
+    "tags": [
+      "geometry",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 48
+  },
+  {
+    "id": "geo-l3-op-006",
+    "topic": "overlapping_pie",
+    "stem": "A circle of radius 4 cm is drawn inside a square of side 10 cm. What is the area inside the square but outside the circle? (Use \u03c0 \u2248 3.14)",
+    "visual_svg": "<svg viewBox='0 0 220 220' xmlns='http://www.w3.org/2000/svg'><rect width='220' height='220' fill='#f9f9f9' rx='8'/><rect x='30' y='30' width='160' height='160' fill='#d5e8f0' stroke='#3498db' stroke-width='2'/><circle cx='110' cy='110' r='64' fill='#f9f9f9' stroke='#e74c3c' stroke-width='2'/><text x='105' y='115' font-size='12' fill='#e74c3c'>r=4</text><text x='95' y='205' font-size='12' fill='#3498db'>10 cm</text></svg>",
+    "answer_type": "mcq",
+    "correct_answer": 0,
+    "solution": "Step 1: Area of square = 10 \u00d7 10 = 100 cm\u00b2.\nStep 2: Area of circle = \u03c0 \u00d7 4\u00b2 = 16\u03c0 \u2248 50.24 cm\u00b2.\nStep 3: Area inside square but outside circle = 100 \u2212 50.24 = 49.76 cm\u00b2.\nAnswer: A) 49.76 cm\u00b2.",
+    "difficulty": 2,
+    "tags": [
+      "geometry",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken.",
+      "1": "Review the question carefully and try again.",
+      "2": "Review the question carefully and try again.",
+      "3": "Review the question carefully and try again."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [
+      "A) 49.76 cm\u00b2",
+      "B) 50.24 cm\u00b2",
+      "C) 100 cm\u00b2",
+      "D) 150.24 cm\u00b2"
+    ],
+    "interaction_mode": "mcq"
+  },
+  {
+    "id": "geo-l3-op-007",
+    "topic": "overlapping_pie",
+    "stem": "Four identical squares of side 5 cm are arranged so each adjacent pair shares a 1 cm \u00d7 5 cm strip. What is the total area covered?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: Area of each square = 5 \u00d7 5 = 25 cm\u00b2.\nStep 2: 4 squares \u2192 4 \u00d7 25 = 100 cm\u00b2.\nStep 3: There are 3 overlapping strips (between squares 1-2, 2-3, 3-4), each 1 \u00d7 5 = 5 cm\u00b2.\nStep 4: Total = 100 \u2212 3 \u00d7 5 = 100 \u2212 15 = 85 cm\u00b2.\nAnswer: 85 cm\u00b2.",
+    "difficulty": 2,
+    "tags": [
+      "geometry",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 85
+  },
+  {
+    "id": "geo-l3-op-008",
+    "topic": "overlapping_pie",
+    "stem": "Two equilateral triangles each with area 36 cm\u00b2 overlap to form a Star of David. If the overlapping region (a regular hexagon) has area 12 cm\u00b2, what is the total visible area?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: Total area of both triangles = 36 + 36 = 72 cm\u00b2.\nStep 2: The overlapping region is counted twice, so subtract it once.\nStep 3: Total visible area = 72 \u2212 12 = 60 cm\u00b2.\nAnswer: 60 cm\u00b2.",
+    "difficulty": 2,
+    "tags": [
+      "geometry",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 60
+  },
+  {
+    "id": "geo-l3-op-009",
+    "topic": "overlapping_pie",
+    "stem": "A square of side 8 cm has a right triangle with legs 8 cm and 6 cm placed on top, sharing the 8 cm side. What is the total area of the combined figure?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: Area of square = 8 \u00d7 8 = 64 cm\u00b2.\nStep 2: Area of triangle = \u00bd \u00d7 8 \u00d7 6 = 24 cm\u00b2.\nStep 3: They share an edge but do not overlap in area.\nStep 4: Total = 64 + 24 = 88 cm\u00b2.\nAnswer: 88 cm\u00b2.",
+    "difficulty": 1,
+    "tags": [
+      "geometry",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 88
+  },
+  {
+    "id": "geo-l3-op-010",
+    "topic": "overlapping_pie",
+    "stem": "Two identical right triangles with legs 6 cm and 8 cm are overlapped so they share a rectangular region of area 12 cm\u00b2. What is the total visible area?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: Area of each right triangle = \u00bd \u00d7 6 \u00d7 8 = 24 cm\u00b2.\nStep 2: Total = 24 + 24 \u2212 12 = 36 cm\u00b2.\nAnswer: 36 cm\u00b2.",
+    "difficulty": 1,
+    "tags": [
+      "geometry",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 36
+  },
+  {
+    "id": "geo-l3-cs-001",
+    "topic": "congruence_similarity",
+    "stem": "Triangle ABC has sides 3, 4, 5. Triangle DEF is similar with the shortest side equal to 6. What is the perimeter of triangle DEF?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: The shortest side of ABC is 3. The shortest side of DEF is 6.\nStep 2: Scale factor = 6/3 = 2.\nStep 3: Sides of DEF = 3\u00d72, 4\u00d72, 5\u00d72 = 6, 8, 10.\nStep 4: Perimeter = 6 + 8 + 10 = 24.\nAnswer: 24.",
+    "difficulty": 1,
+    "tags": [
+      "geometry",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 24
+  },
+  {
+    "id": "geo-l3-cs-002",
+    "topic": "congruence_similarity",
+    "stem": "Two triangles are similar. The sides of the first are 5, 12, 13. The longest side of the second is 39. What is the shortest side of the second triangle?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: Longest side of the first triangle = 13. Longest side of second = 39.\nStep 2: Scale factor = 39/13 = 3.\nStep 3: Shortest side of first = 5. Shortest side of second = 5 \u00d7 3 = 15.\nAnswer: 15.",
+    "difficulty": 1,
+    "tags": [
+      "geometry",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 15
+  },
+  {
+    "id": "geo-l3-cs-003",
+    "topic": "congruence_similarity",
+    "stem": "Two similar rectangles have lengths 4 cm and 12 cm respectively. If the area of the smaller rectangle is 20 cm\u00b2, what is the area of the larger?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: Linear scale factor = 12/4 = 3.\nStep 2: Area scale factor = 3\u00b2 = 9.\nStep 3: Area of larger = 20 \u00d7 9 = 180 cm\u00b2.\nAnswer: 180 cm\u00b2.",
+    "difficulty": 2,
+    "tags": [
+      "geometry",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 180
+  },
+  {
+    "id": "geo-l3-cs-004",
+    "topic": "congruence_similarity",
+    "stem": "In triangle ABC, DE is parallel to BC where D is on AB and E is on AC. If AD = 4, DB = 6, and BC = 15, what is DE?",
+    "visual_svg": "<svg viewBox='0 0 260 200' xmlns='http://www.w3.org/2000/svg'><rect width='260' height='200' fill='#f9f9f9' rx='8'/><polygon points='130,20 20,180 240,180' fill='none' stroke='#3498db' stroke-width='2'/><line x1='86' y1='84' x2='174' y2='84' stroke='#e74c3c' stroke-width='2'/><text x='100' y='45' font-size='11' fill='#333'>4</text><text x='70' y='130' font-size='11' fill='#333'>6</text><text x='125' y='195' font-size='11' fill='#333'>15</text><text x='60' y='80' font-size='11' fill='#e74c3c'>D</text><text x='178' y='80' font-size='11' fill='#e74c3c'>E</text><text x='128' y='15' font-size='11' fill='#333'>A</text><text x='8' y='192' font-size='11' fill='#333'>B</text><text x='238' y='192' font-size='11' fill='#333'>C</text></svg>",
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: Since DE \u2225 BC, triangles ADE and ABC are similar.\nStep 2: AD/AB = 4/(4+6) = 4/10 = 2/5.\nStep 3: DE/BC = AD/AB = 2/5.\nStep 4: DE = (2/5) \u00d7 15 = 6.\nAnswer: 6.",
+    "difficulty": 2,
+    "tags": [
+      "geometry",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 6
+  },
+  {
+    "id": "geo-l3-cs-005",
+    "topic": "congruence_similarity",
+    "stem": "Two congruent triangles have a combined perimeter of 36 cm. What is the perimeter of each triangle?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: Congruent triangles are identical in size and shape.\nStep 2: Combined perimeter = 36 cm.\nStep 3: Each triangle's perimeter = 36 \u00f7 2 = 18 cm.\nAnswer: 18 cm.",
+    "difficulty": 1,
+    "tags": [
+      "geometry",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 18
+  },
+  {
+    "id": "geo-l3-cs-006",
+    "topic": "congruence_similarity",
+    "stem": "A flagpole casts a shadow of 12 m. At the same time, a 2 m stick casts a shadow of 3 m. How tall is the flagpole?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: The flagpole and stick form similar triangles with their shadows (same sun angle).\nStep 2: Height/Shadow is constant: flagpole/12 = 2/3.\nStep 3: Flagpole = 12 \u00d7 2/3 = 8 m.\nAnswer: 8 m.",
+    "difficulty": 1,
+    "tags": [
+      "geometry",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 8
+  },
+  {
+    "id": "geo-l3-cs-007",
+    "topic": "congruence_similarity",
+    "stem": "Two similar triangles have areas 16 cm\u00b2 and 64 cm\u00b2. If the perimeter of the smaller is 12 cm, what is the perimeter of the larger?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: Area ratio = 64/16 = 4.\nStep 2: Linear scale factor = \u221a4 = 2.\nStep 3: Perimeter of larger = 12 \u00d7 2 = 24 cm.\nAnswer: 24 cm.",
+    "difficulty": 2,
+    "tags": [
+      "geometry",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 24
+  },
+  {
+    "id": "geo-l3-cs-008",
+    "topic": "congruence_similarity",
+    "stem": "Triangle PQR is congruent to triangle XYZ. If PQ = 7 cm, QR = 10 cm, and PR = 8 cm, what is XZ?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: Congruent triangles have corresponding sides equal.\nStep 2: PQ corresponds to XY, QR to YZ, PR to XZ.\nStep 3: XZ = PR = 8 cm.\nAnswer: 8 cm.",
+    "difficulty": 1,
+    "tags": [
+      "geometry",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 8
+  },
+  {
+    "id": "geo-l3-cs-009",
+    "topic": "congruence_similarity",
+    "stem": "A triangle with sides 6, 8, 10 cm is similar to another triangle. If the area of the larger triangle is 4 times the area of the smaller, what is the longest side of the larger triangle?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: Area ratio = 4.\nStep 2: Linear scale factor = \u221a4 = 2.\nStep 3: Longest side of smaller = 10. Longest side of larger = 10 \u00d7 2 = 20.\nAnswer: 20 cm.",
+    "difficulty": 2,
+    "tags": [
+      "geometry",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 20
+  },
+  {
+    "id": "geo-l3-cs-010",
+    "topic": "congruence_similarity",
+    "stem": "In a right triangle, the altitude from the right angle to the hypotenuse creates two smaller triangles. Are these smaller triangles similar to each other and to the original?",
+    "visual_svg": "<svg viewBox=\"0 0 200 200\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"30,30 30,170 170,170\" fill=\"none\" stroke=\"#7B1FA2\" stroke-width=\"2\"/><line x1=\"30\" y1=\"170\" x2=\"82\" y2=\"82\" stroke=\"#7B1FA2\" stroke-width=\"1.5\" stroke-dasharray=\"5,3\"/><text x=\"20\" y=\"25\" font-size=\"14\" fill=\"#333\">A</text><text x=\"18\" y=\"180\" font-size=\"14\" fill=\"#333\">B</text><text x=\"175\" y=\"180\" font-size=\"14\" fill=\"#333\">C</text><text x=\"70\" y=\"78\" font-size=\"12\" fill=\"#666\">D</text><rect x=\"30\" y=\"155\" width=\"12\" height=\"12\" fill=\"none\" stroke=\"#7B1FA2\" stroke-width=\"1\"/></svg>",
+    "answer_type": "mcq",
+    "correct_answer": 0,
+    "solution": "Step 1: Let the right angle be at B, and the altitude from B meets hypotenuse AC at D.\nStep 2: Triangle ABD has angles: \u2220ADB = 90\u00b0, \u2220A, and \u2220ABD = 90\u00b0 \u2212 \u2220A.\nStep 3: Triangle BDC has angles: \u2220BDC = 90\u00b0, \u2220C = 90\u00b0 \u2212 \u2220A, and \u2220DBC = \u2220A.\nStep 4: Original triangle ABC has angles: \u2220B = 90\u00b0, \u2220A, \u2220C.\nStep 5: All three triangles have the same set of angles, so all three are similar.\nAnswer: A) Yes, all three are similar.",
+    "difficulty": 3,
+    "tags": [
+      "geometry",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken.",
+      "1": "Review the question carefully and try again.",
+      "2": "Review the question carefully and try again.",
+      "3": "Review the question carefully and try again."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [
+      "A) Yes, all three are similar",
+      "B) No, only two are similar",
+      "C) Only the smaller ones are similar to each other",
+      "D) None are similar"
+    ],
+    "interaction_mode": "mcq"
+  },
+  {
+    "id": "geo-l3-cp-001",
+    "topic": "circle_properties",
+    "stem": "Find the circumference of a circle with radius 7 cm. (Use \u03c0 = 22/7)",
+    "visual_svg": "<svg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'><rect width='200' height='200' fill='#f9f9f9' rx='8'/><circle cx='100' cy='100' r='70' fill='none' stroke='#3498db' stroke-width='2'/><line x1='100' y1='100' x2='170' y2='100' stroke='#e74c3c' stroke-width='1.5'/><circle cx='100' cy='100' r='3' fill='#333'/><text x='125' y='95' font-size='13' fill='#e74c3c'>7 cm</text></svg>",
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: Circumference = 2\u03c0r.\nStep 2: C = 2 \u00d7 (22/7) \u00d7 7 = 2 \u00d7 22 = 44 cm.\nAnswer: 44 cm.",
+    "difficulty": 1,
+    "tags": [
+      "geometry",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 44
+  },
+  {
+    "id": "geo-l3-cp-002",
+    "topic": "circle_properties",
+    "stem": "A semicircle has diameter 14 cm. Find its area. (Use \u03c0 = 22/7)",
+    "visual_svg": "<svg viewBox='0 0 240 140' xmlns='http://www.w3.org/2000/svg'><rect width='240' height='140' fill='#f9f9f9' rx='8'/><path d='M 30 100 A 90 90 0 0 1 210 100' fill='#d5e8f0' stroke='#3498db' stroke-width='2'/><line x1='30' y1='100' x2='210' y2='100' stroke='#3498db' stroke-width='2'/><text x='100' y='120' font-size='13' fill='#333'>14 cm</text></svg>",
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: Radius = diameter/2 = 14/2 = 7 cm.\nStep 2: Area of full circle = \u03c0r\u00b2 = (22/7) \u00d7 7\u00b2 = (22/7) \u00d7 49 = 154 cm\u00b2.\nStep 3: Area of semicircle = 154/2 = 77 cm\u00b2.\nAnswer: 77 cm\u00b2.",
+    "difficulty": 1,
+    "tags": [
+      "geometry",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 77
+  },
+  {
+    "id": "geo-l3-cp-003",
+    "topic": "circle_properties",
+    "stem": "A circle has area 154 cm\u00b2. What is its radius? (Use \u03c0 = 22/7)",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: Area = \u03c0r\u00b2 = 154.\nStep 2: r\u00b2 = 154 / (22/7) = 154 \u00d7 7/22 = 1078/22 = 49.\nStep 3: r = \u221a49 = 7 cm.\nAnswer: 7 cm.",
+    "difficulty": 1,
+    "tags": [
+      "geometry",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 7
+  },
+  {
+    "id": "geo-l3-cp-004",
+    "topic": "circle_properties",
+    "stem": "The diameter of a wheel is 56 cm. How far does the wheel travel in 10 complete rotations? (Use \u03c0 = 22/7)",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: Circumference = \u03c0d = (22/7) \u00d7 56 = 22 \u00d7 8 = 176 cm.\nStep 2: Distance in 10 rotations = 10 \u00d7 176 = 1760 cm.\nAnswer: 1760 cm.",
+    "difficulty": 2,
+    "tags": [
+      "geometry",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 1760
+  },
+  {
+    "id": "geo-l3-cp-005",
+    "topic": "circle_properties",
+    "stem": "An arc subtends an angle of 90\u00b0 at the center of a circle with radius 14 cm. What is the length of the arc? (Use \u03c0 = 22/7)",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: Arc length = (\u03b8/360\u00b0) \u00d7 2\u03c0r.\nStep 2: = (90/360) \u00d7 2 \u00d7 (22/7) \u00d7 14.\nStep 3: = (1/4) \u00d7 2 \u00d7 22 \u00d7 2 = (1/4) \u00d7 88 = 22 cm.\nAnswer: 22 cm.",
+    "difficulty": 2,
+    "tags": [
+      "geometry",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 22
+  },
+  {
+    "id": "geo-l3-cp-006",
+    "topic": "circle_properties",
+    "stem": "A square is inscribed in a circle of radius 5 cm. What is the side length of the square?",
+    "visual_svg": "<svg viewBox='0 0 220 220' xmlns='http://www.w3.org/2000/svg'><rect width='220' height='220' fill='#f9f9f9' rx='8'/><circle cx='110' cy='110' r='75' fill='none' stroke='#3498db' stroke-width='2'/><rect x='57' y='57' width='106' height='106' fill='none' stroke='#e74c3c' stroke-width='2' transform='rotate(0 110 110)'/><line x1='110' y1='110' x2='163' y2='57' stroke='#999' stroke-width='1' stroke-dasharray='4,3'/><text x='135' y='80' font-size='11' fill='#999'>5</text></svg>",
+    "answer_type": "mcq",
+    "correct_answer": 0,
+    "solution": "Step 1: The diagonal of the inscribed square equals the diameter of the circle = 2 \u00d7 5 = 10 cm.\nStep 2: If the side of the square is s, then diagonal = s\u221a2.\nStep 3: s\u221a2 = 10 \u2192 s = 10/\u221a2 = 5\u221a2 cm.\nAnswer: B) 5\u221a2 cm.",
+    "difficulty": 2,
+    "tags": [
+      "geometry",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken.",
+      "1": "Review the question carefully and try again.",
+      "2": "Review the question carefully and try again.",
+      "3": "Review the question carefully and try again."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [
+      "A) 5 cm",
+      "B) 5\u221a2 cm",
+      "C) 10 cm",
+      "D) 10\u221a2 cm"
+    ],
+    "interaction_mode": "mcq"
+  },
+  {
+    "id": "geo-l3-cp-007",
+    "topic": "circle_properties",
+    "stem": "Two concentric circles have radii 7 cm and 14 cm. What is the area of the ring (annulus) between them? (Use \u03c0 = 22/7)",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: Area of ring = \u03c0(R\u00b2 \u2212 r\u00b2) where R = 14 and r = 7.\nStep 2: = (22/7)(14\u00b2 \u2212 7\u00b2) = (22/7)(196 \u2212 49) = (22/7)(147).\nStep 3: = 22 \u00d7 21 = 462 cm\u00b2.\nAnswer: 462 cm\u00b2.",
+    "difficulty": 2,
+    "tags": [
+      "geometry",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 462
+  },
+  {
+    "id": "geo-l3-cp-008",
+    "topic": "circle_properties",
+    "stem": "A chord is 24 cm long and is 5 cm away from the center of a circle. What is the radius of the circle?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: The perpendicular from the center to a chord bisects the chord.\nStep 2: Half-chord = 24/2 = 12 cm.\nStep 3: The perpendicular distance = 5 cm.\nStep 4: By the Pythagorean theorem: r\u00b2 = 12\u00b2 + 5\u00b2 = 144 + 25 = 169.\nStep 5: r = \u221a169 = 13 cm.\nAnswer: 13 cm.",
+    "difficulty": 2,
+    "tags": [
+      "geometry",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 13
+  },
+  {
+    "id": "geo-l3-cp-009",
+    "topic": "circle_properties",
+    "stem": "Find the area of a circle whose circumference is 44 cm. (Use \u03c0 = 22/7)",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: Circumference = 2\u03c0r = 44.\nStep 2: r = 44/(2 \u00d7 22/7) = 44 \u00d7 7/44 = 7 cm.\nStep 3: Area = \u03c0r\u00b2 = (22/7) \u00d7 49 = 22 \u00d7 7 = 154 cm\u00b2.\nAnswer: 154 cm\u00b2.",
+    "difficulty": 1,
+    "tags": [
+      "geometry",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 154
+  },
+  {
+    "id": "geo-l3-cp-010",
+    "topic": "circle_properties",
+    "stem": "A sector of a circle has radius 21 cm and central angle 60\u00b0. What is the area of the sector? (Use \u03c0 = 22/7)",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: Area of sector = (\u03b8/360\u00b0) \u00d7 \u03c0r\u00b2.\nStep 2: = (60/360) \u00d7 (22/7) \u00d7 21\u00b2.\nStep 3: = (1/6) \u00d7 (22/7) \u00d7 441.\nStep 4: = (1/6) \u00d7 22 \u00d7 63 = (1/6) \u00d7 1386 = 231 cm\u00b2.\nAnswer: 231 cm\u00b2.",
+    "difficulty": 2,
+    "tags": [
+      "geometry",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 231
+  }
+]

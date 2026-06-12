@@ -46,7 +46,7 @@ class TopicLevelMapScreen extends StatelessWidget {
 
   Widget _buildHeader(BuildContext context, KiwiTier tier) {
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+      padding: EdgeInsets.symmetric(horizontal: KiwiSpacing.lg, vertical: KiwiSpacing.sm + 2),
       child: Row(
         children: [
           GestureDetector(
@@ -72,7 +72,7 @@ class TopicLevelMapScreen extends StatelessWidget {
               ),
             ),
           ),
-          const SizedBox(width: 12),
+          SizedBox(width: KiwiSpacing.md),
           Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -81,7 +81,7 @@ class TopicLevelMapScreen extends StatelessWidget {
                   topicName,
                   style: TextStyle(
                     fontSize: tier.typography.headlineSize,
-                    fontWeight: FontWeight.w800,
+                    fontWeight: tier.typography.headlineWeight,
                     color: tier.colors.textPrimary,
                   ),
                   maxLines: 1,
@@ -90,7 +90,7 @@ class TopicLevelMapScreen extends StatelessWidget {
                 Text(
                   'Grade ${topicLevels.grade} \u{00B7} ${topicLevels.levels.length} Levels',
                   style: TextStyle(
-                    fontSize: 11,
+                    fontSize: tier.typography.chipSize - 3,
                     fontWeight: FontWeight.w600,
                     color: tier.colors.textMuted,
                   ),
@@ -110,8 +110,8 @@ class TopicLevelMapScreen extends StatelessWidget {
     final maxStars = total * 3;
 
     return Container(
-      margin: const EdgeInsets.symmetric(horizontal: 16),
-      padding: const EdgeInsets.all(14),
+      margin: EdgeInsets.symmetric(horizontal: KiwiSpacing.lg),
+      padding: EdgeInsets.all(KiwiSpacing.md + 2),
       decoration: BoxDecoration(
         color: tier.colors.cardBg,
         borderRadius: BorderRadius.circular(tier.shape.cardRadius),
@@ -150,7 +150,7 @@ class TopicLevelMapScreen extends StatelessWidget {
               ],
             ),
           ),
-          const SizedBox(width: 14),
+          SizedBox(width: KiwiSpacing.md + 2),
           Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -158,7 +158,7 @@ class TopicLevelMapScreen extends StatelessWidget {
                 Text(
                   '$completed of $total levels completed',
                   style: TextStyle(
-                    fontSize: 13,
+                    fontSize: tier.typography.chipSize - 1,
                     fontWeight: FontWeight.w700,
                     color: tier.colors.textPrimary,
                   ),
@@ -166,12 +166,12 @@ class TopicLevelMapScreen extends StatelessWidget {
                 const SizedBox(height: 2),
                 Row(
                   children: [
-                    const Text('\u{2B50}', style: TextStyle(fontSize: 12)),
-                    const SizedBox(width: 4),
+                    Text('\u{2B50}', style: TextStyle(fontSize: tier.typography.chipSize - 2)),
+                    SizedBox(width: KiwiSpacing.xs),
                     Text(
                       '$totalStars / $maxStars stars',
                       style: TextStyle(
-                        fontSize: 11,
+                        fontSize: tier.typography.chipSize - 3,
                         fontWeight: FontWeight.w600,
                         color: tier.colors.textMuted,
                       ),
@@ -183,23 +183,23 @@ class TopicLevelMapScreen extends StatelessWidget {
           ),
           if (topicLevels.allMastered)
             Container(
-              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+              padding: EdgeInsets.symmetric(horizontal: KiwiSpacing.sm + 2, vertical: KiwiSpacing.xs + 1),
               decoration: BoxDecoration(
                 gradient: LinearGradient(
                   colors: [tier.colors.buttonGradientStart, tier.colors.buttonGradientEnd],
                 ),
-                borderRadius: BorderRadius.circular(12),
+                borderRadius: BorderRadius.circular(tier.shape.chipRadius - 8),
               ),
               child: const Row(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  Text('\u{1F3C6}', style: TextStyle(fontSize: 14)),
-                  SizedBox(width: 4),
+                  Text('\u{1F3C6}', style: TextStyle(fontSize: tier.typography.chipSize)),
+                  SizedBox(width: KiwiSpacing.xs),
                   Text(
                     'Mastered',
                     style: TextStyle(
-                      fontSize: 11,
-                      fontWeight: FontWeight.w800,
+                      fontSize: tier.typography.chipSize - 3,
+                      fontWeight: tier.typography.headlineWeight,
                       color: Colors.white,
                     ),
                   ),
@@ -216,7 +216,7 @@ class TopicLevelMapScreen extends StatelessWidget {
     final reversedLevels = topicLevels.levels.reversed.toList();
 
     return ListView.builder(
-      padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
+      padding: EdgeInsets.symmetric(horizontal: KiwiSpacing.xl, vertical: KiwiSpacing.lg),
       itemCount: reversedLevels.length,
       itemBuilder: (context, index) {
         final level = reversedLevels[index];
@@ -244,8 +244,8 @@ class TopicLevelMapScreen extends StatelessWidget {
       textColor = tier.colors.textPrimary;
       statusIcon = Icons.play_circle_rounded;
     } else {
-      nodeColor = Colors.grey.withOpacity(0.08);
-      nodeBorderColor = Colors.grey.withOpacity(0.2);
+      nodeColor = KiwiColors.pathLocked.withOpacity(0.08);
+      nodeBorderColor = KiwiColors.pathLocked.withOpacity(0.5);
       textColor = tier.colors.textMuted;
       statusIcon = Icons.lock_rounded;
     }
@@ -260,7 +260,7 @@ class TopicLevelMapScreen extends StatelessWidget {
             decoration: BoxDecoration(
               color: level.isCompleted || level.isCurrent
                   ? tier.colors.primary.withOpacity(0.3)
-                  : Colors.grey.withOpacity(0.15),
+                  : KiwiColors.pathLocked.withOpacity(0.3),
               borderRadius: BorderRadius.circular(2),
             ),
           ),
@@ -269,7 +269,7 @@ class TopicLevelMapScreen extends StatelessWidget {
           onTap: level.isCurrent ? () => onPlayLevel(level.level) : null,
           child: Container(
             width: double.infinity,
-            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+            padding: EdgeInsets.symmetric(horizontal: KiwiSpacing.lg, vertical: KiwiSpacing.md),
             decoration: BoxDecoration(
               color: tier.colors.cardBg,
               borderRadius: BorderRadius.circular(tier.shape.cardRadius),
@@ -307,14 +307,14 @@ class TopicLevelMapScreen extends StatelessWidget {
                         : Text(
                             '${level.level}',
                             style: TextStyle(
-                              fontSize: 16,
-                              fontWeight: FontWeight.w800,
+                              fontSize: tier.typography.bodySize,
+                              fontWeight: tier.typography.headlineWeight,
                               color: textColor,
                             ),
                           ),
                   ),
                 ),
-                const SizedBox(width: 12),
+                SizedBox(width: KiwiSpacing.md),
                 // Level info
                 Expanded(
                   child: Column(
@@ -323,7 +323,7 @@ class TopicLevelMapScreen extends StatelessWidget {
                       Text(
                         level.name,
                         style: TextStyle(
-                          fontSize: 14,
+                          fontSize: tier.typography.bodySize - 2,
                           fontWeight: FontWeight.w700,
                           color: textColor,
                         ),
@@ -336,7 +336,7 @@ class TopicLevelMapScreen extends StatelessWidget {
                                 ? '${level.questionsDone}/${level.questionsTotal} questions'
                                 : 'Difficulty ${level.difficultyMin}-${level.difficultyMax}',
                         style: TextStyle(
-                          fontSize: 11,
+                          fontSize: tier.typography.chipSize - 3,
                           fontWeight: FontWeight.w500,
                           color: tier.colors.textMuted,
                         ),
@@ -350,20 +350,20 @@ class TopicLevelMapScreen extends StatelessWidget {
                     mainAxisSize: MainAxisSize.min,
                     children: List.generate(3, (i) {
                       return Padding(
-                        padding: const EdgeInsets.only(left: 2),
+                        padding: EdgeInsets.only(left: 2),
                         child: Icon(
                           i < level.stars ? Icons.star_rounded : Icons.star_border_rounded,
                           size: 18,
                           color: i < level.stars
                               ? KiwiColors.gemGold
-                              : Colors.grey.withOpacity(0.3),
+                              : KiwiColors.pathLocked.withOpacity(0.5),
                         ),
                       );
                     }),
                   )
                 else if (level.isCurrent)
                   Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
+                    padding: EdgeInsets.symmetric(horizontal: KiwiSpacing.md + 2, vertical: KiwiSpacing.sm),
                     decoration: BoxDecoration(
                       gradient: LinearGradient(
                         colors: [tier.colors.buttonGradientStart, tier.colors.buttonGradientEnd],
@@ -381,11 +381,11 @@ class TopicLevelMapScreen extends StatelessWidget {
                       mainAxisSize: MainAxisSize.min,
                       children: [
                         Icon(Icons.play_arrow_rounded, size: 16, color: Colors.white),
-                        SizedBox(width: 4),
+                        SizedBox(width: KiwiSpacing.xs),
                         Text(
                           'Play',
                           style: TextStyle(
-                            fontSize: 12,
+                            fontSize: tier.typography.chipSize - 2,
                             fontWeight: FontWeight.w700,
                             color: Colors.white,
                           ),
@@ -407,7 +407,7 @@ class TopicLevelMapScreen extends StatelessWidget {
             decoration: BoxDecoration(
               color: level.isCompleted
                   ? tier.colors.primary.withOpacity(0.3)
-                  : Colors.grey.withOpacity(0.15),
+                  : KiwiColors.pathLocked.withOpacity(0.3),
               borderRadius: BorderRadius.circular(2),
             ),
           ),

@@ -1,0 +1,299 @@
+{
+  "topic_id": "wavebook-direction-sense",
+  "topic_name": "Wavebook: Direction Sense",
+  "topic_emoji": "\ud83d\udcd8",
+  "grade": 6,
+  "domain": "wavebook",
+  "source": "wavebook",
+  "total_questions": 15,
+  "difficulty_range": {
+    "min": 0,
+    "max": 0
+  },
+  "questions": [
+    {
+      "id": "wb_L4_s32_q01",
+      "stem": "A man walks 5 km North, then turns right and walks 3 km. In which direction is he from his starting point?",
+      "interaction_mode": "mcq",
+      "topic": "Direction Sense",
+      "difficulty_tier": "warmup",
+      "question_number": 1,
+      "choices": [
+        "North-West",
+        "South-East",
+        "South-West",
+        "North-East"
+      ],
+      "correct_answer": 3,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S32",
+      "svg": "wb_L4_s32_q01.svg",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L4_s32_q02",
+      "stem": "If you face East and turn 270\u00b0 clockwise, which direction do you face?",
+      "interaction_mode": "mcq",
+      "topic": "Direction Sense",
+      "difficulty_tier": "warmup",
+      "question_number": 2,
+      "choices": [
+        "South",
+        "West",
+        "East",
+        "North"
+      ],
+      "correct_answer": 3,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S32",
+      "svg": "wb_L4_s32_q02.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 200 200\" width=\"200\" height=\"200\" style=\"font-family:Arial,sans-serif\"><circle cx=\"100\" cy=\"100\" r=\"80\" fill=\"white\" stroke=\"#333\" stroke-width=\"3\"/><line x1=\"100.0\" y1=\"30.0\" x2=\"100.0\" y2=\"22.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"100.0\" y=\"42.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">12</text><line x1=\"135.0\" y1=\"39.4\" x2=\"139.0\" y2=\"32.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"129.0\" y=\"49.8\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">1</text><line x1=\"160.6\" y1=\"65.0\" x2=\"167.5\" y2=\"61.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"150.2\" y=\"71.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">2</text><line x1=\"170.0\" y1=\"100.0\" x2=\"178.0\" y2=\"100.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"158.0\" y=\"100.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">3</text><line x1=\"160.6\" y1=\"135.0\" x2=\"167.5\" y2=\"139.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"150.2\" y=\"129.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">4</text><line x1=\"135.0\" y1=\"160.6\" x2=\"139.0\" y2=\"167.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"129.0\" y=\"150.2\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">5</text><line x1=\"100.0\" y1=\"170.0\" x2=\"100.0\" y2=\"178.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"100.0\" y=\"158.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">6</text><line x1=\"65.0\" y1=\"160.6\" x2=\"61.0\" y2=\"167.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"71.0\" y=\"150.2\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">7</text><line x1=\"39.4\" y1=\"135.0\" x2=\"32.5\" y2=\"139.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"49.8\" y=\"129.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">8</text><line x1=\"30.0\" y1=\"100.0\" x2=\"22.0\" y2=\"100.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"42.0\" y=\"100.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">9</text><line x1=\"39.4\" y1=\"65.0\" x2=\"32.5\" y2=\"61.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"49.8\" y=\"71.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">10</text><line x1=\"65.0\" y1=\"39.4\" x2=\"61.0\" y2=\"32.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"71.0\" y=\"49.8\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">11</text><line x1=\"100\" y1=\"100\" x2=\"145.0\" y2=\"100.0\" stroke=\"#333\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"100\" y1=\"100\" x2=\"100.0\" y2=\"35.0\" stroke=\"#555\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><circle cx=\"100\" cy=\"100\" r=\"4\" fill=\"#333\"/></svg>"
+    },
+    {
+      "id": "wb_L4_s32_q03",
+      "stem": "Ravi walks 10m South, turns left and walks 5m. He then turns left again and walks 10m. In which direction is he from the start?",
+      "interaction_mode": "mcq",
+      "topic": "Direction Sense",
+      "difficulty_tier": "warmup",
+      "question_number": 3,
+      "choices": [
+        "East",
+        "North",
+        "South",
+        "None of these"
+      ],
+      "correct_answer": 0,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S32",
+      "svg": "wb_L4_s32_q03.svg",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L4_s32_q04",
+      "stem": "If South-East becomes North, what does North-West become?",
+      "interaction_mode": "mcq",
+      "topic": "Direction Sense",
+      "difficulty_tier": "warmup",
+      "question_number": 4,
+      "choices": [
+        "East",
+        "West",
+        "South",
+        "North"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S32",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L4_s32_q05",
+      "stem": "A boy walks 4 km West, turns left, walks 3 km. How far is he from the starting point?",
+      "interaction_mode": "mcq",
+      "topic": "Direction Sense",
+      "difficulty_tier": "warmup",
+      "question_number": 5,
+      "choices": [
+        "7 km",
+        "1 km",
+        "5 km",
+        "4 km"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S32",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L4_s32_q06",
+      "stem": "Facing North, Manu turns 90\u00b0 clockwise, then 180\u00b0 anticlockwise. Which direction is he facing?",
+      "interaction_mode": "mcq",
+      "topic": "Direction Sense",
+      "difficulty_tier": "practice",
+      "question_number": 6,
+      "choices": [
+        "North",
+        "South",
+        "West",
+        "East"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S32",
+      "svg": "wb_L4_s32_q06.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 200 200\" width=\"200\" height=\"200\" style=\"font-family:Arial,sans-serif\"><circle cx=\"100\" cy=\"100\" r=\"80\" fill=\"white\" stroke=\"#333\" stroke-width=\"3\"/><line x1=\"100.0\" y1=\"30.0\" x2=\"100.0\" y2=\"22.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"100.0\" y=\"42.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">12</text><line x1=\"135.0\" y1=\"39.4\" x2=\"139.0\" y2=\"32.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"129.0\" y=\"49.8\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">1</text><line x1=\"160.6\" y1=\"65.0\" x2=\"167.5\" y2=\"61.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"150.2\" y=\"71.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">2</text><line x1=\"170.0\" y1=\"100.0\" x2=\"178.0\" y2=\"100.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"158.0\" y=\"100.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">3</text><line x1=\"160.6\" y1=\"135.0\" x2=\"167.5\" y2=\"139.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"150.2\" y=\"129.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">4</text><line x1=\"135.0\" y1=\"160.6\" x2=\"139.0\" y2=\"167.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"129.0\" y=\"150.2\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">5</text><line x1=\"100.0\" y1=\"170.0\" x2=\"100.0\" y2=\"178.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"100.0\" y=\"158.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">6</text><line x1=\"65.0\" y1=\"160.6\" x2=\"61.0\" y2=\"167.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"71.0\" y=\"150.2\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">7</text><line x1=\"39.4\" y1=\"135.0\" x2=\"32.5\" y2=\"139.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"49.8\" y=\"129.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">8</text><line x1=\"30.0\" y1=\"100.0\" x2=\"22.0\" y2=\"100.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"42.0\" y=\"100.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">9</text><line x1=\"39.4\" y1=\"65.0\" x2=\"32.5\" y2=\"61.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"49.8\" y=\"71.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">10</text><line x1=\"65.0\" y1=\"39.4\" x2=\"61.0\" y2=\"32.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"71.0\" y=\"49.8\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">11</text><line x1=\"100\" y1=\"100\" x2=\"145.0\" y2=\"100.0\" stroke=\"#333\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"100\" y1=\"100\" x2=\"100.0\" y2=\"35.0\" stroke=\"#555\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><circle cx=\"100\" cy=\"100\" r=\"4\" fill=\"#333\"/></svg>"
+    },
+    {
+      "id": "wb_L4_s32_q07",
+      "stem": "The direction exactly opposite to North-East is:",
+      "interaction_mode": "mcq",
+      "topic": "Direction Sense",
+      "difficulty_tier": "practice",
+      "question_number": 7,
+      "choices": [
+        "South-West",
+        "North-West",
+        "South-East",
+        "East"
+      ],
+      "correct_answer": 0,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S32",
+      "svg": "wb_L4_s32_q07.svg",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L4_s32_q08",
+      "stem": "If it is 4 PM and the sun is in the West, where is your shadow?",
+      "interaction_mode": "mcq",
+      "topic": "Direction Sense",
+      "difficulty_tier": "practice",
+      "question_number": 8,
+      "choices": [
+        "West",
+        "East",
+        "North",
+        "No shadow"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S32",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L4_s32_q09",
+      "stem": "A man facing West turns 45\u00b0 anticlockwise. Which direction is he facing now?",
+      "interaction_mode": "mcq",
+      "topic": "Direction Sense",
+      "difficulty_tier": "practice",
+      "question_number": 9,
+      "choices": [
+        "South-West",
+        "North-East",
+        "North-West",
+        "South-East"
+      ],
+      "correct_answer": 0,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S32",
+      "svg": "wb_L4_s32_q09.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 200 200\" width=\"200\" height=\"200\" style=\"font-family:Arial,sans-serif\"><circle cx=\"100\" cy=\"100\" r=\"80\" fill=\"white\" stroke=\"#333\" stroke-width=\"3\"/><line x1=\"100.0\" y1=\"30.0\" x2=\"100.0\" y2=\"22.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"100.0\" y=\"42.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">12</text><line x1=\"135.0\" y1=\"39.4\" x2=\"139.0\" y2=\"32.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"129.0\" y=\"49.8\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">1</text><line x1=\"160.6\" y1=\"65.0\" x2=\"167.5\" y2=\"61.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"150.2\" y=\"71.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">2</text><line x1=\"170.0\" y1=\"100.0\" x2=\"178.0\" y2=\"100.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"158.0\" y=\"100.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">3</text><line x1=\"160.6\" y1=\"135.0\" x2=\"167.5\" y2=\"139.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"150.2\" y=\"129.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">4</text><line x1=\"135.0\" y1=\"160.6\" x2=\"139.0\" y2=\"167.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"129.0\" y=\"150.2\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">5</text><line x1=\"100.0\" y1=\"170.0\" x2=\"100.0\" y2=\"178.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"100.0\" y=\"158.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">6</text><line x1=\"65.0\" y1=\"160.6\" x2=\"61.0\" y2=\"167.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"71.0\" y=\"150.2\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">7</text><line x1=\"39.4\" y1=\"135.0\" x2=\"32.5\" y2=\"139.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"49.8\" y=\"129.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">8</text><line x1=\"30.0\" y1=\"100.0\" x2=\"22.0\" y2=\"100.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"42.0\" y=\"100.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">9</text><line x1=\"39.4\" y1=\"65.0\" x2=\"32.5\" y2=\"61.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"49.8\" y=\"71.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">10</text><line x1=\"65.0\" y1=\"39.4\" x2=\"61.0\" y2=\"32.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"71.0\" y=\"49.8\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">11</text><line x1=\"100\" y1=\"100\" x2=\"145.0\" y2=\"100.0\" stroke=\"#333\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"100\" y1=\"100\" x2=\"100.0\" y2=\"35.0\" stroke=\"#555\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><circle cx=\"100\" cy=\"100\" r=\"4\" fill=\"#333\"/></svg>"
+    },
+    {
+      "id": "wb_L4_s32_q10",
+      "stem": "Priya walks 6 km North, 4 km East, 6 km South. How far is she from the start?",
+      "interaction_mode": "mcq",
+      "topic": "Direction Sense",
+      "difficulty_tier": "practice",
+      "question_number": 10,
+      "choices": [
+        "6 km",
+        "2 km",
+        "10 km",
+        "4 km"
+      ],
+      "correct_answer": 3,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S32",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L4_s32_q11",
+      "stem": "If you face South and turn 135\u00b0 clockwise, which direction do you face?",
+      "interaction_mode": "mcq",
+      "topic": "Direction Sense",
+      "difficulty_tier": "challenge",
+      "question_number": 11,
+      "choices": [
+        "North-East",
+        "North-West",
+        "West",
+        "South-West"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S32",
+      "svg": "wb_L4_s32_q11.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 200 200\" width=\"200\" height=\"200\" style=\"font-family:Arial,sans-serif\"><circle cx=\"100\" cy=\"100\" r=\"80\" fill=\"white\" stroke=\"#333\" stroke-width=\"3\"/><line x1=\"100.0\" y1=\"30.0\" x2=\"100.0\" y2=\"22.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"100.0\" y=\"42.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">12</text><line x1=\"135.0\" y1=\"39.4\" x2=\"139.0\" y2=\"32.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"129.0\" y=\"49.8\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">1</text><line x1=\"160.6\" y1=\"65.0\" x2=\"167.5\" y2=\"61.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"150.2\" y=\"71.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">2</text><line x1=\"170.0\" y1=\"100.0\" x2=\"178.0\" y2=\"100.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"158.0\" y=\"100.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">3</text><line x1=\"160.6\" y1=\"135.0\" x2=\"167.5\" y2=\"139.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"150.2\" y=\"129.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">4</text><line x1=\"135.0\" y1=\"160.6\" x2=\"139.0\" y2=\"167.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"129.0\" y=\"150.2\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">5</text><line x1=\"100.0\" y1=\"170.0\" x2=\"100.0\" y2=\"178.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"100.0\" y=\"158.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">6</text><line x1=\"65.0\" y1=\"160.6\" x2=\"61.0\" y2=\"167.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"71.0\" y=\"150.2\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">7</text><line x1=\"39.4\" y1=\"135.0\" x2=\"32.5\" y2=\"139.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"49.8\" y=\"129.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">8</text><line x1=\"30.0\" y1=\"100.0\" x2=\"22.0\" y2=\"100.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"42.0\" y=\"100.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">9</text><line x1=\"39.4\" y1=\"65.0\" x2=\"32.5\" y2=\"61.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"49.8\" y=\"71.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">10</text><line x1=\"65.0\" y1=\"39.4\" x2=\"61.0\" y2=\"32.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"71.0\" y=\"49.8\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">11</text><line x1=\"100\" y1=\"100\" x2=\"145.0\" y2=\"100.0\" stroke=\"#333\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"100\" y1=\"100\" x2=\"100.0\" y2=\"35.0\" stroke=\"#555\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><circle cx=\"100\" cy=\"100\" r=\"4\" fill=\"#333\"/></svg>"
+    },
+    {
+      "id": "wb_L4_s32_q12",
+      "stem": "The sun rises in the East. If you face the sunrise, your left hand points towards:",
+      "interaction_mode": "mcq",
+      "topic": "Direction Sense",
+      "difficulty_tier": "challenge",
+      "question_number": 12,
+      "choices": [
+        "South",
+        "West",
+        "East",
+        "North"
+      ],
+      "correct_answer": 3,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S32",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L4_s32_q13",
+      "stem": "A person walks 3 km East, 4 km North, 3 km West. How far and in which direction is he from start?",
+      "interaction_mode": "mcq",
+      "topic": "Direction Sense",
+      "difficulty_tier": "challenge",
+      "question_number": 13,
+      "choices": [
+        "4 km East",
+        "3 km West",
+        "4 km North",
+        "5 km North-East"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S32",
+      "svg": "wb_L4_s32_q13.svg",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L4_s32_q14",
+      "stem": "If Monday's sunrise direction is considered 'A' and sunset direction is 'B', what is the angle between A and B?",
+      "interaction_mode": "mcq",
+      "topic": "Direction Sense",
+      "difficulty_tier": "challenge",
+      "question_number": 14,
+      "choices": [
+        "90\u00b0",
+        "270\u00b0",
+        "180\u00b0",
+        "360\u00b0"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S32",
+      "svg": "wb_L4_s32_q14.svg",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L4_s32_q15",
+      "stem": "Facing North, you turn right, then take two consecutive left turns. Which direction are you facing?",
+      "interaction_mode": "mcq",
+      "topic": "Direction Sense",
+      "difficulty_tier": "challenge",
+      "question_number": 15,
+      "choices": [
+        "North",
+        "South",
+        "East",
+        "West"
+      ],
+      "correct_answer": 3,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S32",
+      "svg": "wb_L4_s32_q15.svg",
+      "diagnostics": {}
+    }
+  ]
+}

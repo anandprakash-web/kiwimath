@@ -1,0 +1,919 @@
+[
+  {
+    "id": "nt-l2-gl-001",
+    "topic": "gcd_lcm",
+    "stem": "Find the greatest common divisor (GCD) of 18 and 30.",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Method 1 (List factors):\nFactors of 18: 1, 2, 3, 6, 9, 18.\nFactors of 30: 1, 2, 3, 5, 6, 10, 15, 30.\nCommon factors: 1, 2, 3, 6.\nGCD = 6.\n\nMethod 2 (Prime factorization):\n18 = 2 \u00d7 3 \u00d7 3\n30 = 2 \u00d7 3 \u00d7 5\nGCD = 2 \u00d7 3 = 6.",
+    "difficulty": 1,
+    "tags": [
+      "number_theory",
+      "level2",
+      "gcd"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "nt-l2-gl-002",
+    "topic": "gcd_lcm",
+    "stem": "Two traffic lights blink every 8 seconds and every 12 seconds. They just blinked together. After how many seconds will they blink together again?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "We need the LCM of 8 and 12.\n8 = 2 \u00d7 2 \u00d7 2\n12 = 2 \u00d7 2 \u00d7 3\nLCM = 2 \u00d7 2 \u00d7 2 \u00d7 3 = 24.\nThey will blink together again after 24 seconds.\n\nCheck: 24 \u00f7 8 = 3 (whole number) \u2713, 24 \u00f7 12 = 2 (whole number) \u2713.",
+    "difficulty": 2,
+    "tags": [
+      "number_theory",
+      "level2",
+      "lcm"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "nt-l2-gl-003",
+    "topic": "gcd_lcm",
+    "stem": "Maya has 24 red roses and 36 white roses. She wants to make identical bouquets using all the flowers, with each bouquet having the same number of red roses and the same number of white roses. What is the greatest number of bouquets she can make?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "The number of bouquets must divide both 24 and 36 evenly.\nWe need the GCD of 24 and 36.\n24 = 2 \u00d7 2 \u00d7 2 \u00d7 3\n36 = 2 \u00d7 2 \u00d7 3 \u00d7 3\nGCD = 2 \u00d7 2 \u00d7 3 = 12.\nShe can make 12 bouquets.\nEach bouquet: 24 \u00f7 12 = 2 red roses and 36 \u00f7 12 = 3 white roses.",
+    "difficulty": 2,
+    "tags": [
+      "number_theory",
+      "level2",
+      "gcd"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "nt-l2-gl-004",
+    "topic": "gcd_lcm",
+    "stem": "Find the least common multiple (LCM) of 6 and 9.",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Method 1 (List multiples):\nMultiples of 6: 6, 12, 18, 24, ...\nMultiples of 9: 9, 18, 27, ...\nSmallest common multiple = 18.\n\nMethod 2 (Prime factorization):\n6 = 2 \u00d7 3\n9 = 3 \u00d7 3\nLCM = 2 \u00d7 3 \u00d7 3 = 18.",
+    "difficulty": 1,
+    "tags": [
+      "number_theory",
+      "level2",
+      "lcm"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "nt-l2-gl-005",
+    "topic": "gcd_lcm",
+    "stem": "Three bells ring at intervals of 4, 6, and 10 minutes. They all ring together at 9:00 AM. At what time will they next all ring together?",
+    "visual_svg": null,
+    "answer_type": "mcq",
+    "correct_answer": 0,
+    "solution": "Find LCM of 4, 6, and 10.\n4 = 2 \u00d7 2\n6 = 2 \u00d7 3\n10 = 2 \u00d7 5\nLCM = 2 \u00d7 2 \u00d7 3 \u00d7 5 = 60 minutes.\n60 minutes = 1 hour.\nThey next ring together at 9:00 AM + 1 hour = 10:00 AM.\n\nCheck: 60 \u00f7 4 = 15 \u2713, 60 \u00f7 6 = 10 \u2713, 60 \u00f7 10 = 6 \u2713.",
+    "difficulty": 3,
+    "tags": [
+      "number_theory",
+      "level2",
+      "lcm"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken.",
+      "1": "Review the question carefully and try again.",
+      "2": "Review the question carefully and try again.",
+      "3": "Review the question carefully and try again."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [
+      "A) 9:30 AM",
+      "B) 9:40 AM",
+      "C) 10:00 AM",
+      "D) 10:20 AM"
+    ],
+    "interaction_mode": "mcq"
+  },
+  {
+    "id": "nt-l2-gl-006",
+    "topic": "gcd_lcm",
+    "stem": "What is the GCD of 28 and 42?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "28 = 2 \u00d7 2 \u00d7 7\n42 = 2 \u00d7 3 \u00d7 7\nGCD = 2 \u00d7 7 = 14.\n\nCheck: 28 \u00f7 14 = 2, 42 \u00f7 14 = 3. Both whole numbers. \u2713",
+    "difficulty": 1,
+    "tags": [
+      "number_theory",
+      "level2",
+      "gcd"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "nt-l2-gl-007",
+    "topic": "gcd_lcm",
+    "stem": "A rope 48 cm long and another rope 60 cm long are each cut into equal pieces with no rope left over. What is the greatest possible length of each piece?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "The piece length must divide both 48 and 60 evenly.\nGCD of 48 and 60:\n48 = 2 \u00d7 2 \u00d7 2 \u00d7 2 \u00d7 3\n60 = 2 \u00d7 2 \u00d7 3 \u00d7 5\nGCD = 2 \u00d7 2 \u00d7 3 = 12 cm.\nRope 1: 48 \u00f7 12 = 4 pieces. Rope 2: 60 \u00f7 12 = 5 pieces.",
+    "difficulty": 2,
+    "tags": [
+      "number_theory",
+      "level2",
+      "gcd"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "nt-l2-gl-008",
+    "topic": "gcd_lcm",
+    "stem": "Find the LCM of 8 and 14.",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "8 = 2 \u00d7 2 \u00d7 2\n14 = 2 \u00d7 7\nLCM = 2 \u00d7 2 \u00d7 2 \u00d7 7 = 56.\n\nAlternatively: GCD(8,14) = 2.\nLCM = 8 \u00d7 14 \u00f7 GCD = 112 \u00f7 2 = 56.",
+    "difficulty": 1,
+    "tags": [
+      "number_theory",
+      "level2",
+      "lcm"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "nt-l2-gl-009",
+    "topic": "gcd_lcm",
+    "stem": "Two runners start at the same point on a circular track. Runner A completes a lap every 5 minutes and Runner B every 7 minutes. After how many minutes will they be at the starting point together again?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "We need the LCM of 5 and 7.\nSince 5 and 7 are both prime, their LCM = 5 \u00d7 7 = 35.\nThey meet at the starting point after 35 minutes.\nRunner A has done 35 \u00f7 5 = 7 laps. Runner B has done 35 \u00f7 7 = 5 laps.",
+    "difficulty": 2,
+    "tags": [
+      "number_theory",
+      "level2",
+      "lcm"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "nt-l2-gl-010",
+    "topic": "gcd_lcm",
+    "stem": "A number is divisible by both 6 and 8. What is the smallest such number greater than 50?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "First find LCM of 6 and 8.\n6 = 2 \u00d7 3\n8 = 2 \u00d7 2 \u00d7 2\nLCM = 2 \u00d7 2 \u00d7 2 \u00d7 3 = 24.\nMultiples of 24: 24, 48, 72, 96, ...\nThe smallest multiple of 24 greater than 50 is 72.\nCheck: 72 \u00f7 6 = 12 \u2713, 72 \u00f7 8 = 9 \u2713.",
+    "difficulty": 2,
+    "tags": [
+      "number_theory",
+      "level2",
+      "lcm"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "nt-l2-pv-001",
+    "topic": "place_value",
+    "stem": "How many digits are used to number all the pages of a 70-page book?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Pages 1\u20139: 9 pages \u00d7 1 digit = 9 digits.\nPages 10\u201370: 61 pages \u00d7 2 digits = 122 digits.\nTotal = 9 + 122 = 131 digits.",
+    "difficulty": 2,
+    "tags": [
+      "number_theory",
+      "level2",
+      "place_value",
+      "counting"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "nt-l2-pv-002",
+    "topic": "place_value",
+    "stem": "How many 2-digit numbers have both digits the same? (For example, 11, 22, ...)",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "The digits can be 1, 2, 3, 4, 5, 6, 7, 8, or 9.\n(We cannot use 0 because 00 is not a 2-digit number.)\nThe numbers are: 11, 22, 33, 44, 55, 66, 77, 88, 99.\nThere are 9 such numbers.",
+    "difficulty": 1,
+    "tags": [
+      "number_theory",
+      "level2",
+      "place_value",
+      "counting"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "nt-l2-pv-003",
+    "topic": "place_value",
+    "stem": "A 3-digit number has digits that add up to 12. The hundreds digit is 3 times the units digit. The tens digit is twice the units digit. What is the number?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Let the units digit = u.\nHundreds digit = 3u. Tens digit = 2u.\nDigit sum: 3u + 2u + u = 6u = 12.\nu = 2.\nHundreds = 6, Tens = 4, Units = 2.\nThe number is 642.\n\nCheck: 6 + 4 + 2 = 12 \u2713. Hundreds (6) = 3 \u00d7 units (2) \u2713. Tens (4) = 2 \u00d7 units (2) \u2713.",
+    "difficulty": 2,
+    "tags": [
+      "number_theory",
+      "level2",
+      "place_value"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "nt-l2-pv-004",
+    "topic": "place_value",
+    "stem": "I am a 3-digit number. My hundreds digit is 5. My tens digit is 3 less than my hundreds digit. My units digit is the sum of my other two digits. What number am I?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Hundreds digit = 5.\nTens digit = 5 \u2212 3 = 2.\nUnits digit = 5 + 2 = 7.\nThe number is 527.\n\nCheck: Hundreds = 5 \u2713. Tens = 5 \u2212 3 = 2 \u2713. Units = 5 + 2 = 7 \u2713.",
+    "difficulty": 1,
+    "tags": [
+      "number_theory",
+      "level2",
+      "place_value"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "nt-l2-pv-005",
+    "topic": "place_value",
+    "stem": "How many 3-digit numbers can be formed using the digits 1, 2, and 3 if each digit can be used only once?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "We need to arrange 3 different digits in 3 positions.\nChoices for hundreds: 3 options (1, 2, or 3).\nChoices for tens: 2 remaining options.\nChoices for units: 1 remaining option.\nTotal = 3 \u00d7 2 \u00d7 1 = 6.\n\nThe numbers are: 123, 132, 213, 231, 312, 321.",
+    "difficulty": 1,
+    "tags": [
+      "number_theory",
+      "level2",
+      "place_value",
+      "counting"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "nt-l2-pv-006",
+    "topic": "place_value",
+    "stem": "How many digits are used to number all the pages of a 200-page book?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Pages 1\u20139: 9 pages \u00d7 1 digit = 9 digits.\nPages 10\u201399: 90 pages \u00d7 2 digits = 180 digits.\nPages 100\u2013200: 101 pages \u00d7 3 digits = 303 digits.\nTotal = 9 + 180 + 303 = 492 digits.",
+    "difficulty": 2,
+    "tags": [
+      "number_theory",
+      "level2",
+      "place_value",
+      "counting"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "nt-l2-pv-007",
+    "topic": "place_value",
+    "stem": "When you reverse the digits of a 2-digit number, you get a number that is 27 more than the original. The sum of the digits is 9. What is the original number?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Let the tens digit = a and units digit = b.\nOriginal number = 10a + b. Reversed = 10b + a.\n(10b + a) \u2212 (10a + b) = 27\n9b \u2212 9a = 27\nb \u2212 a = 3.\nAlso a + b = 9.\nAdding: 2b = 12, so b = 6, a = 3.\nOriginal number = 36.\n\nCheck: Reverse of 36 = 63. 63 \u2212 36 = 27 \u2713. Digit sum = 3 + 6 = 9 \u2713.",
+    "difficulty": 3,
+    "tags": [
+      "number_theory",
+      "level2",
+      "place_value"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "nt-l2-pv-008",
+    "topic": "place_value",
+    "stem": "How many whole numbers between 1 and 100 contain the digit 7?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Numbers with 7 in the units place: 7, 17, 27, 37, 47, 57, 67, 77, 87, 97 \u2192 10 numbers.\nNumbers with 7 in the tens place: 70, 71, 72, 73, 74, 75, 76, 77, 78, 79 \u2192 10 numbers.\nBut 77 was counted twice, so subtract 1.\nTotal = 10 + 10 \u2212 1 = 19.",
+    "difficulty": 2,
+    "tags": [
+      "number_theory",
+      "level2",
+      "place_value",
+      "counting"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "nt-l2-pv-009",
+    "topic": "place_value",
+    "stem": "A 2-digit number is 4 times the sum of its digits. The units digit is 2 more than the tens digit. What is the number?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Let the tens digit = t. Units digit = t + 2.\nThe number = 10t + (t + 2) = 11t + 2.\nDigit sum = t + (t + 2) = 2t + 2.\nGiven: 11t + 2 = 4(2t + 2) = 8t + 8.\n3t = 6, so t = 2.\nUnits digit = 2 + 2 = 4. The number is 24.\n\nCheck: 24 = 4 \u00d7 (2 + 4) = 4 \u00d7 6 = 24 \u2713. Units (4) = Tens (2) + 2 \u2713.",
+    "difficulty": 3,
+    "tags": [
+      "number_theory",
+      "level2",
+      "place_value"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "nt-l2-pv-010",
+    "topic": "place_value",
+    "stem": "How many 2-digit numbers are there where the tens digit is greater than the units digit?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "If tens digit = 1: units can be 0. That's 1 number (10).\nIf tens digit = 2: units can be 0, 1. That's 2 numbers.\nIf tens digit = 3: units can be 0, 1, 2. That's 3 numbers.\n...\nIf tens digit = 9: units can be 0, 1, 2, ..., 8. That's 9 numbers.\nTotal = 1 + 2 + 3 + ... + 9 = 45.",
+    "difficulty": 2,
+    "tags": [
+      "number_theory",
+      "level2",
+      "place_value",
+      "counting"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "nt-l2-rm-001",
+    "topic": "remainders",
+    "stem": "What is the remainder when 53 is divided by 7?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "53 \u00f7 7 = 7 remainder 4.\nCheck: 7 \u00d7 7 = 49, and 53 \u2212 49 = 4.\nThe remainder is 4.",
+    "difficulty": 1,
+    "tags": [
+      "number_theory",
+      "level2",
+      "remainder"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "nt-l2-rm-002",
+    "topic": "remainders",
+    "stem": "Today is Wednesday. What day of the week will it be in 50 days?",
+    "visual_svg": null,
+    "answer_type": "mcq",
+    "correct_answer": 0,
+    "solution": "A week has 7 days, so we find 50 \u00f7 7.\n50 \u00f7 7 = 7 remainder 1.\nSo 50 days = 7 full weeks + 1 extra day.\n1 day after Wednesday = Thursday.\nThe answer is Thursday.",
+    "difficulty": 1,
+    "tags": [
+      "number_theory",
+      "level2",
+      "remainder",
+      "cyclic_pattern"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken.",
+      "1": "Review the question carefully and try again.",
+      "2": "Review the question carefully and try again.",
+      "3": "Review the question carefully and try again."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [
+      "A) Sunday",
+      "B) Monday",
+      "C) Friday",
+      "D) Thursday"
+    ],
+    "interaction_mode": "mcq"
+  },
+  {
+    "id": "nt-l2-rm-003",
+    "topic": "remainders",
+    "stem": "When a number is divided by 5, the remainder is 3. What is the remainder when that number plus 14 is divided by 5?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Let the number be N. N = 5q + 3 for some whole number q.\nN + 14 = 5q + 3 + 14 = 5q + 17.\n17 = 5 \u00d7 3 + 2.\nSo N + 14 = 5(q + 3) + 2.\nThe remainder is 2.\n\nExample check: If N = 8 (8 \u00f7 5 = 1 R 3 \u2713), then 8 + 14 = 22. 22 \u00f7 5 = 4 R 2. \u2713",
+    "difficulty": 2,
+    "tags": [
+      "number_theory",
+      "level2",
+      "remainder"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "nt-l2-rm-004",
+    "topic": "remainders",
+    "stem": "The letters A, B, C, D, E are written in a repeating pattern: A, B, C, D, E, A, B, C, D, E, A, B, ... What is the 37th letter in this pattern?",
+    "visual_svg": null,
+    "answer_type": "mcq",
+    "correct_answer": 0,
+    "solution": "The pattern repeats every 5 letters.\n37 \u00f7 5 = 7 remainder 2.\nThe 2nd letter in the pattern A, B, C, D, E is B.\nThe 37th letter is B.\n\nCheck: Position 35 = 7 \u00d7 5 is the last letter E. Position 36 = A, position 37 = B. \u2713",
+    "difficulty": 1,
+    "tags": [
+      "number_theory",
+      "level2",
+      "remainder",
+      "cyclic_pattern"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken.",
+      "1": "Review the question carefully and try again.",
+      "2": "Review the question carefully and try again.",
+      "3": "Review the question carefully and try again."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [
+      "A) A",
+      "B) B",
+      "C) C",
+      "D) D"
+    ],
+    "interaction_mode": "mcq"
+  },
+  {
+    "id": "nt-l2-rm-005",
+    "topic": "remainders",
+    "stem": "What is the remainder when 1 + 2 + 3 + ... + 20 is divided by 9?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "First find the sum: 1 + 2 + 3 + ... + 20 = 20 \u00d7 21 / 2 = 210.\nNow find 210 \u00f7 9.\n9 \u00d7 23 = 207.\n210 \u2212 207 = 3.\nThe remainder is 3.",
+    "difficulty": 2,
+    "tags": [
+      "number_theory",
+      "level2",
+      "remainder",
+      "gauss_sum"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "nt-l2-rm-006",
+    "topic": "remainders",
+    "stem": "What is the units digit of 3 \u00d7 3 \u00d7 3 \u00d7 3 \u00d7 3 \u00d7 3 \u00d7 3 \u00d7 3 (that is, 3 to the power of 8)?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "The units digits of powers of 3 follow a cycle:\n3\u00b9 = 3 (units digit 3)\n3\u00b2 = 9 (units digit 9)\n3\u00b3 = 27 (units digit 7)\n3\u2074 = 81 (units digit 1)\n3\u2075 = 243 (units digit 3)\nThe cycle is 3, 9, 7, 1 and repeats every 4.\n8 \u00f7 4 = 2 remainder 0. A remainder of 0 means the 4th position in the cycle.\nThe 4th digit in the cycle is 1.\nThe units digit of 3\u2078 is 1.\n\nCheck: 3\u2078 = 6561. Units digit = 1. \u2713",
+    "difficulty": 3,
+    "tags": [
+      "number_theory",
+      "level2",
+      "remainder",
+      "cyclic_pattern"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "nt-l2-rm-007",
+    "topic": "remainders",
+    "stem": "Eggs are packed into boxes of 6. After packing, there are 4 eggs left over. If there are fewer than 50 eggs, and the number of eggs is also 5 more than a multiple of 7, how many eggs are there?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "The number of eggs N gives remainder 4 when divided by 6.\nPossible values: 4, 10, 16, 22, 28, 34, 40, 46.\n\nN also gives remainder 5 when divided by 7.\nCheck each: 4 \u00f7 7 = 0 R 4 \u2717. 10 \u00f7 7 = 1 R 3 \u2717. 16 \u00f7 7 = 2 R 2 \u2717. 22 \u00f7 7 = 3 R 1 \u2717. 28 \u00f7 7 = 4 R 0 \u2717. 34 \u00f7 7 = 4 R 6 \u2717. 40 \u00f7 7 = 5 R 5 \u2713. 46 \u00f7 7 = 6 R 4 \u2717.\n\nThe answer is 40 eggs.",
+    "difficulty": 3,
+    "tags": [
+      "number_theory",
+      "level2",
+      "remainder"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "nt-l2-rm-008",
+    "topic": "remainders",
+    "stem": "The colours red, blue, green, yellow are used to paint fence posts in a repeating pattern. What colour is the 30th fence post?",
+    "visual_svg": null,
+    "answer_type": "mcq",
+    "correct_answer": 0,
+    "solution": "The pattern repeats every 4 posts.\n30 \u00f7 4 = 7 remainder 2.\nThe 2nd colour in the pattern is blue.\nThe 30th fence post is blue.\n\nCheck: Post 28 = 4 \u00d7 7 \u2192 yellow (4th). Post 29 = red (1st). Post 30 = blue (2nd). \u2713",
+    "difficulty": 1,
+    "tags": [
+      "number_theory",
+      "level2",
+      "remainder",
+      "cyclic_pattern"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken.",
+      "1": "Review the question carefully and try again.",
+      "2": "Review the question carefully and try again.",
+      "3": "Review the question carefully and try again."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [
+      "A) Red",
+      "B) Blue",
+      "C) Green",
+      "D) Yellow"
+    ],
+    "interaction_mode": "mcq"
+  },
+  {
+    "id": "nt-l2-rm-009",
+    "topic": "remainders",
+    "stem": "A number divided by 8 gives a remainder of 5. What is the remainder when twice that number is divided by 8?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Let the number be N = 8q + 5.\n2N = 2(8q + 5) = 16q + 10.\n16q \u00f7 8 = 2q (no remainder).\n10 \u00f7 8 = 1 remainder 2.\nSo 2N = 8(2q + 1) + 2.\nThe remainder is 2.\n\nExample: N = 13 (13 \u00f7 8 = 1 R 5 \u2713). 2 \u00d7 13 = 26. 26 \u00f7 8 = 3 R 2. \u2713",
+    "difficulty": 2,
+    "tags": [
+      "number_theory",
+      "level2",
+      "remainder"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "nt-l2-rm-010",
+    "topic": "remainders",
+    "stem": "January 1st of a certain year is a Tuesday. What day of the week is March 1st of the same year? (It is not a leap year.)",
+    "visual_svg": null,
+    "answer_type": "mcq",
+    "correct_answer": 0,
+    "solution": "From January 1 to March 1:\nJanuary has 31 days, February has 28 days (not a leap year).\nTotal days from Jan 1 to Mar 1 = 31 + 28 = 59 days.\n59 \u00f7 7 = 8 remainder 3.\nSo March 1 is 3 days after Tuesday.\nTuesday + 3 = Friday.\nMarch 1st is a Friday.\n\nCheck: Jan 1 (Tue) \u2192 Jan 8 (Tue) \u2192 ... \u2192 Feb 26 (Tue, day 57 from Jan 1 counting Jan 1 as day 1... let me recount).\nDay 1 = Jan 1 (Tue). Day 59+1 = Day 60 = Mar 1.\nActually, days elapsed from Jan 1 to Mar 1 = 59 days.\n59 = 8 \u00d7 7 + 3. Tuesday + 3 days = Friday. \u2713",
+    "difficulty": 2,
+    "tags": [
+      "number_theory",
+      "level2",
+      "remainder",
+      "cyclic_pattern"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken.",
+      "1": "Review the question carefully and try again.",
+      "2": "Review the question carefully and try again.",
+      "3": "Review the question carefully and try again."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [
+      "A) Thursday",
+      "B) Friday",
+      "C) Saturday",
+      "D) Sunday"
+    ],
+    "interaction_mode": "mcq"
+  }
+]

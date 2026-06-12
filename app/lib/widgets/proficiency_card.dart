@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../theme/kiwi_theme.dart';
 
 /// Displays the student's proficiency level with visual progress indicator.
 class ProficiencyCard extends StatelessWidget {
@@ -33,9 +34,9 @@ class ProficiencyCard extends StatelessWidget {
 
     return Card(
       elevation: 2,
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(KiwiSpacing.lg)),
       child: Padding(
-        padding: const EdgeInsets.all(20),
+        padding: EdgeInsets.all(KiwiSpacing.xl - 4),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -47,7 +48,7 @@ class ProficiencyCard extends StatelessWidget {
                   height: 56,
                   decoration: BoxDecoration(
                     color: color.withOpacity(0.15),
-                    borderRadius: BorderRadius.circular(16),
+                    borderRadius: BorderRadius.circular(KiwiSpacing.lg),
                   ),
                   child: Center(
                     child: Text(emoji, style: const TextStyle(fontSize: 28)),
@@ -93,7 +94,7 @@ class ProficiencyCard extends StatelessWidget {
                         style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.bold,
-                          color: Colors.grey[800],
+                          color: KiwiColors.textDark,
                         ),
                       ),
                     ],
@@ -111,11 +112,11 @@ class ProficiencyCard extends StatelessWidget {
                 children: [
                   Text(
                     name,
-                    style: TextStyle(fontSize: 12, color: Colors.grey[600]),
+                    style: TextStyle(fontSize: 12, color: KiwiColors.textMuted),
                   ),
                   Text(
                     nextLevel,
-                    style: TextStyle(fontSize: 12, color: Colors.grey[600]),
+                    style: TextStyle(fontSize: 12, color: KiwiColors.textMuted),
                   ),
                 ],
               ),
@@ -125,14 +126,14 @@ class ProficiencyCard extends StatelessWidget {
                 child: LinearProgressIndicator(
                   value: progress / 100.0,
                   minHeight: 10,
-                  backgroundColor: Colors.grey[200],
+                  backgroundColor: KiwiColors.pathLocked,
                   valueColor: AlwaysStoppedAnimation<Color>(color),
                 ),
               ),
               const SizedBox(height: 4),
               Text(
                 '$progress% to $nextLevel',
-                style: TextStyle(fontSize: 11, color: Colors.grey[500]),
+                style: TextStyle(fontSize: 11, color: KiwiColors.textMuted),
               ),
             ],
 
@@ -143,7 +144,7 @@ class ProficiencyCard extends StatelessWidget {
               description,
               style: TextStyle(
                 fontSize: 14,
-                color: Colors.grey[700],
+                color: KiwiColors.textMid,
                 height: 1.4,
               ),
             ),
@@ -168,7 +169,7 @@ class ProficiencyCard extends StatelessWidget {
                 style: TextStyle(
                   fontSize: 13,
                   fontWeight: FontWeight.w600,
-                  color: Colors.grey[800],
+                  color: KiwiColors.textDark,
                 ),
               ),
               const SizedBox(height: 8),
@@ -183,7 +184,7 @@ class ProficiencyCard extends StatelessWidget {
                           child: Text(
                             item,
                             style: TextStyle(
-                                fontSize: 13, color: Colors.grey[700]),
+                                fontSize: 13, color: KiwiColors.textMid),
                           ),
                         ),
                       ],
@@ -199,7 +200,7 @@ class ProficiencyCard extends StatelessWidget {
                 style: TextStyle(
                   fontSize: 13,
                   fontWeight: FontWeight.w600,
-                  color: Colors.grey[800],
+                  color: KiwiColors.textDark,
                 ),
               ),
               const SizedBox(height: 8),
@@ -209,13 +210,13 @@ class ProficiencyCard extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Icon(Icons.arrow_forward,
-                            size: 14, color: Colors.blue[400]),
+                            size: 14, color: KiwiColors.sky),
                         const SizedBox(width: 8),
                         Expanded(
                           child: Text(
                             item,
                             style: TextStyle(
-                                fontSize: 13, color: Colors.grey[700]),
+                                fontSize: 13, color: KiwiColors.textMid),
                           ),
                         ),
                       ],
@@ -246,22 +247,22 @@ class _GrowthIndicator extends StatelessWidget {
     switch (trajectory) {
       case 'improving':
         icon = Icons.trending_up;
-        color = Colors.green;
+        color = KiwiColors.kiwiGreen;
         break;
       case 'declining':
         icon = Icons.trending_down;
-        color = Colors.red;
+        color = KiwiColors.coral;
         break;
       default:
         icon = Icons.trending_flat;
-        color = Colors.orange;
+        color = KiwiColors.amber;
     }
 
     return Container(
       padding: const EdgeInsets.all(12),
       decoration: BoxDecoration(
         color: color.withOpacity(0.08),
-        borderRadius: BorderRadius.circular(12),
+        borderRadius: BorderRadius.circular(KiwiSpacing.md),
         border: Border.all(color: color.withOpacity(0.2)),
       ),
       child: Row(
@@ -284,7 +285,7 @@ class _GrowthIndicator extends StatelessWidget {
                 ),
                 Text(
                   message,
-                  style: TextStyle(fontSize: 12, color: Colors.grey[700]),
+                  style: TextStyle(fontSize: 12, color: KiwiColors.textMid),
                 ),
               ],
             ),
@@ -310,7 +311,7 @@ class _CompetencyBreakdown extends StatelessWidget {
           style: TextStyle(
             fontSize: 13,
             fontWeight: FontWeight.w600,
-            color: Colors.grey[800],
+            color: KiwiColors.textDark,
           ),
         ),
         const SizedBox(height: 12),
@@ -318,21 +319,21 @@ class _CompetencyBreakdown extends StatelessWidget {
           label: 'Knowing',
           subtitle: 'Recall & Compute',
           data: competency['knowing'] ?? {},
-          color: Colors.blue,
+          color: KiwiColors.sky,
         ),
         const SizedBox(height: 8),
         _CompetencyBar(
           label: 'Applying',
           subtitle: 'Use & Solve',
           data: competency['applying'] ?? {},
-          color: Colors.green,
+          color: KiwiColors.kiwiGreen,
         ),
         const SizedBox(height: 8),
         _CompetencyBar(
           label: 'Reasoning',
           subtitle: 'Analyze & Justify',
           data: competency['reasoning'] ?? {},
-          color: Colors.purple,
+          color: KiwiColors.indigo,
         ),
       ],
     );
@@ -369,9 +370,9 @@ class _CompetencyBar extends StatelessWidget {
                   style: TextStyle(
                       fontSize: 12,
                       fontWeight: FontWeight.w600,
-                      color: Colors.grey[800])),
+                      color: KiwiColors.textDark)),
               Text(subtitle,
-                  style: TextStyle(fontSize: 10, color: Colors.grey[500])),
+                  style: TextStyle(fontSize: 10, color: KiwiColors.textMuted)),
             ],
           ),
         ),
@@ -382,7 +383,7 @@ class _CompetencyBar extends StatelessWidget {
             child: LinearProgressIndicator(
               value: total > 0 ? accuracy / 100.0 : 0,
               minHeight: 8,
-              backgroundColor: Colors.grey[200],
+              backgroundColor: KiwiColors.pathLocked,
               valueColor: AlwaysStoppedAnimation<Color>(color),
             ),
           ),
@@ -396,7 +397,7 @@ class _CompetencyBar extends StatelessWidget {
             style: TextStyle(
               fontSize: 12,
               fontWeight: FontWeight.w600,
-              color: Colors.grey[700],
+              color: KiwiColors.textMid,
             ),
           ),
         ),

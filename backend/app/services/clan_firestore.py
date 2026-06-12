@@ -163,6 +163,52 @@ class ClanFirestoreService:
             logger.error("Failed to find clans for grade %s: %s", grade, e)
             return []
 
+    def find_clan_by_invite_code(
+        self, invite_code: str
+    ) -> Optional[Tuple[str, Dict[str, Any]]]:
+        """Find the active clan with the given invite code.
+
+        Returns ``(clan_id, clan_dict)`` or ``None``.
+        """
+        db = _get_db()
+        if not db:
+            logger.warning(
+                "Firestore unavailable — cannot look up invite code %s", invite_code
+            )
+            return None
+        try:
+            docs = (
+                db.collection("clans")
+                .where("invite_code", "==", invite_code)
+                .where("status", "==", "active")
+                .limit(1)
+                .stream()
+            )
+            for doc in docs:
+                return (doc.id, doc.to_dict())
+            return None
+        except Exception as e:
+            logger.error("Failed to find clan by invite code: %s", e)
+            return None
+
+    def all_active_clans(self, limit: int = 1000) -> List[Tuple[str, Dict[str, Any]]]:
+        """Return all active clans (cron/aggregation use only — full scan)."""
+        db = _get_db()
+        if not db:
+            logger.warning("Firestore unavailable — cannot list active clans")
+            return []
+        try:
+            docs = (
+                db.collection("clans")
+                .where("status", "==", "active")
+                .limit(limit)
+                .stream()
+            )
+            return [(doc.id, doc.to_dict()) for doc in docs]
+        except Exception as e:
+            logger.error("Failed to list active clans: %s", e)
+            return []
+
     # ------------------------------------------------------------------ #
     # Global challenges
     # ------------------------------------------------------------------ #
@@ -180,6 +226,26 @@ class ClanFirestoreService:
             return doc.to_dict() if doc.exists else None
         except Exception as e:
             logger.error("Failed to get challenge %s: %s", challenge_id, e)
+            return None
+
+    def find_active_challenge(self) -> Optional[Tuple[str, Dict[str, Any]]]:
+        """Return the first active global challenge, or None."""
+        db = _get_db()
+        if not db:
+            logger.warning("Firestore unavailable — cannot find active challenge")
+            return None
+        try:
+            docs = (
+                db.collection("challenges")
+                .where("status", "==", "active")
+                .limit(1)
+                .stream()
+            )
+            for doc in docs:
+                return (doc.id, doc.to_dict())
+            return None
+        except Exception as e:
+            logger.error("Failed to find active challenge: %s", e)
             return None
 
     def create_challenge(self, challenge_id: str, data: Dict[str, Any]) -> None:

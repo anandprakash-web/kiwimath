@@ -3,6 +3,8 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
 import 'firebase_options.dart';
+import 'services/connectivity_service.dart';
+import 'services/offline_store.dart';
 import 'models/clan.dart';
 import 'models/engagement.dart';
 import 'models/user_profile.dart';
@@ -22,6 +24,8 @@ import 'screens/picture_challenge_screen.dart';
 import 'screens/profile_screen.dart';
 import 'screens/question_screen_v2.dart';
 import 'screens/rewards_screen.dart';
+import 'screens/admin_review_screen.dart';
+import 'screens/analytics_dashboard_screen.dart';
 import 'screens/sign_in_screen.dart';
 import 'services/api_client.dart';
 import 'services/auth_service.dart';
@@ -37,6 +41,8 @@ Future<void> main() async {
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
+  await OfflineStore.init();
+  ConnectivityService.instance.start();
   runApp(const KiwimathApp());
 }
 
@@ -48,6 +54,11 @@ class KiwimathApp extends StatelessWidget {
     return MaterialApp(
       title: 'Kiwimath',
       debugShowCheckedModeBanner: false,
+      // NOTE: the selected grade lives inside _AppShellState (below this
+      // MaterialApp), so the app-level theme uses the junior (grade 1)
+      // palette. Grade-adaptive styling is applied per-screen via
+      // KiwiTier.forGrade(_selectedGrade); hoisting grade above MaterialApp
+      // would require restructuring state management — deliberately not done.
       theme: kiwiTheme(),
       home: const _AuthWrapper(),
     );
@@ -79,15 +90,13 @@ class _AuthWrapper extends StatelessWidget {
   }
 }
 
-/// v8 app shell — 6-tab navigation.
+/// v9 app shell — 4-tab navigation (simplified from v8's 6 tabs).
 ///
-/// Bottom nav: Olympiad / School / Growth / Clan / Parent / Profile
-///   - Olympiad: Smart practice with progressive topic unlocking
+/// Bottom nav: Practice / School / Progress / Me
+///   - Practice: Smart practice with progressive topic unlocking + daily + worksheets
 ///   - School: Multi-curriculum chapter browser (Cambridge, NCERT, Singapore, ICSE)
-///   - Growth: Diagnostic test → improvement journey with mountain climb
-///   - Clan: Team-based puzzle challenges + daily challenge
-///   - Parent: PIN-protected dashboard
-///   - Profile: Stats, invite, quote, sign out
+///   - Progress: Diagnostic test → improvement journey with mountain climb
+///   - Me: Profile stats, parent dashboard (PIN-gated), invite, sign out
 class _AppShell extends StatefulWidget {
   final String userId;
   const _AppShell({required this.userId});
@@ -102,7 +111,7 @@ class _AppShellState extends State<_AppShell> {
   bool _loading = true;
   String? _error;
 
-  // Bottom nav: 0=Olympiad, 1=School, 2=Growth, 3=Clan, 4=Parent, 5=Profile
+  // Bottom nav: 0=Practice, 1=School, 2=Progress, 3=Me
   int _selectedTab = 0;
 
   // Parent PIN gate
@@ -138,6 +147,9 @@ class _AppShellState extends State<_AppShell> {
   // Onboarding guard
   bool _onboardingHandled = false;
 
+  // Admin
+  bool _isAdmin = false;
+
   @override
   void initState() {
     super.initState();
@@ -160,19 +172,23 @@ class _AppShellState extends State<_AppShell> {
 
     try {
       final profile = await _api.getProfile(widget.userId);
+      if (!mounted) return;
       setState(() {
         _profile = profile;
         _loading = false;
-        if (_studentName.isEmpty &&
-            profile.displayName.isNotEmpty &&
-            profile.displayName != 'Kiwi Learner' &&
-            profile.displayName.length >= 3) {
-          _studentName = profile.displayName;
+        // Use child_name from onboarding (not parent's Firebase Auth name)
+        if (_studentName.isEmpty) {
+          final resolved = profile.resolvedChildName;
+          if (resolved.isNotEmpty) {
+            _studentName = resolved;
+          }
         }
       });
       _maybeShowOnboarding();
+      _checkAdmin();
     } catch (e) {
       debugPrint('Failed to load profile: $e');
+      if (!mounted) return;
       setState(() {
         _profile = UserProfile(userId: widget.userId);
         _loading = false;
@@ -217,6 +233,17 @@ class _AppShellState extends State<_AppShell> {
         ),
       );
     });
+  }
+
+  Future<void> _checkAdmin() async {
+    final email = AuthService().currentUser?.email;
+    if (email == null) return;
+    try {
+      final admin = await _api.isAdmin(email);
+      if (mounted && admin != _isAdmin) {
+        setState(() => _isAdmin = admin);
+      }
+    } catch (_) {}
   }
 
   void _restartOnboarding() {
@@ -266,6 +293,7 @@ class _AppShellState extends State<_AppShell> {
     try {
       // Check if user belongs to a clan
       final myClan = await _clanService.getMyClan(userUid: widget.userId);
+      if (!mounted) return;
       setState(() => _clan = myClan);
 
       // Always load engagement data (daily puzzle, streaks, etc.)
@@ -275,6 +303,7 @@ class _AppShellState extends State<_AppShell> {
       if (myClan != null) {
         // Load active challenge
         final challenge = await _clanService.getActiveChallenge(grade: _selectedGrade);
+        if (!mounted) return;
         setState(() => _activeChallenge = challenge);
 
         // Load challenge progress if there's an active challenge
@@ -290,7 +319,7 @@ class _AppShellState extends State<_AppShell> {
     } catch (e) {
       debugPrint('Failed to load clan data: $e');
     } finally {
-      setState(() => _clanLoading = false);
+      if (mounted) setState(() => _clanLoading = false);
     }
   }
 
@@ -304,6 +333,7 @@ class _AppShellState extends State<_AppShell> {
         if (_clan != null) _engagementService.getCurrentWar(clanId: _clan!.clanId),
         if (_clan != null) _engagementService.getClanPledges(clanId: _clan!.clanId),
       ]);
+      if (!mounted) return;
 
       setState(() {
         _dailyPuzzle = futures[0] as DailyPuzzle?;
@@ -332,6 +362,7 @@ class _AppShellState extends State<_AppShell> {
         challengeId: _activeChallenge!.challengeId,
         clanId: _clan!.clanId,
       );
+      if (!mounted) return;
       setState(() {
         _challengeProgress = progress;
         _guesses = guesses;
@@ -344,6 +375,7 @@ class _AppShellState extends State<_AppShell> {
   Future<void> _loadLeaderboard() async {
     try {
       final entries = await _clanService.getLeaderboard(grade: _selectedGrade);
+      if (!mounted) return;
       setState(() => _leaderboardEntries = entries);
     } catch (e) {
       debugPrint('Failed to load leaderboard: $e');
@@ -360,13 +392,14 @@ class _AppShellState extends State<_AppShell> {
         crestShape: crestShape,
         crestColor: crestColor,
       );
+      if (!mounted) return;
       setState(() => _clan = clan);
-      if (mounted) Navigator.of(context).pop();
+      Navigator.of(context).pop();
       _loadClan();
     } catch (e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Could not create clan: $e')),
+          SnackBar(content: Text('Oops! Could not create clan. Check your connection and try again.')),
         );
       }
     }
@@ -380,13 +413,14 @@ class _AppShellState extends State<_AppShell> {
         parentUid: widget.userId,
         userGrade: _selectedGrade,
       );
+      if (!mounted) return;
       setState(() => _clan = clan);
-      if (mounted) Navigator.of(context).pop();
+      Navigator.of(context).pop();
       _loadClan();
     } catch (e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Could not join clan: $e')),
+          SnackBar(content: Text('Oops! Could not join clan. Check the code and try again.')),
         );
       }
     }
@@ -444,7 +478,7 @@ class _AppShellState extends State<_AppShell> {
             } catch (e) {
               if (mounted) {
                 ScaffoldMessenger.of(context).showSnackBar(
-                  SnackBar(content: Text('Could not submit answer: $e')),
+                  SnackBar(content: Text('Could not send your answer. Try again!')),
                 );
               }
             }
@@ -461,7 +495,7 @@ class _AppShellState extends State<_AppShell> {
             } catch (e) {
               if (mounted) {
                 ScaffoldMessenger.of(context).showSnackBar(
-                  SnackBar(content: Text('Could not submit guess: $e')),
+                  SnackBar(content: Text('Could not send your guess. Try again!')),
                 );
               }
             }
@@ -497,6 +531,7 @@ class _AppShellState extends State<_AppShell> {
         clanId: _clan!.clanId,
         userUid: widget.userId,
       );
+      if (!mounted) return;
       setState(() {
         _clan = null;
         _challengeProgress = null;
@@ -505,7 +540,7 @@ class _AppShellState extends State<_AppShell> {
     } catch (e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Could not leave clan: $e')),
+          SnackBar(content: Text('Could not leave clan right now. Try again later.')),
         );
       }
     }
@@ -532,22 +567,21 @@ class _AppShellState extends State<_AppShell> {
           puzzle: _dailyPuzzle!,
           currentStreak: _streakData?.currentStreak ?? 0,
           gemsBalance: _rewardData?.totalGems ?? 0,
-          onSubmit: (selectedIndex) async {
-            try {
-              final options = _dailyPuzzle!.options;
-              final answerText = selectedIndex < options.length
-                  ? options[selectedIndex]
-                  : '$selectedIndex';
-              await _engagementService.submitPuzzleAnswer(
-                uid: widget.userId,
-                puzzleId: _dailyPuzzle!.puzzleId,
-                answer: answerText,
-                timeTakenSeconds: 0, // DailyPuzzleScreen tracks internally
-              );
-              _loadEngagementData();
-            } catch (e) {
-              debugPrint('Failed to submit puzzle answer: $e');
-            }
+          onSubmit: (selectedIndex, timeTakenSeconds) async {
+            final options = _dailyPuzzle!.options;
+            final answerText = selectedIndex < options.length
+                ? options[selectedIndex]
+                : '$selectedIndex';
+            // Server grades the answer — result.correct is authoritative.
+            // Errors propagate to DailyPuzzleScreen, which offers a retry.
+            final result = await _engagementService.submitPuzzleAnswer(
+              uid: widget.userId,
+              puzzleId: _dailyPuzzle!.puzzleId,
+              answer: answerText,
+              timeTakenSeconds: timeTakenSeconds,
+            );
+            _loadEngagementData();
+            return result;
           },
           onClose: () {
             Navigator.of(context).pop();
@@ -634,7 +668,7 @@ class _AppShellState extends State<_AppShell> {
       backgroundColor: KiwiColors.cream,
       body: SafeArea(
         child: SingleChildScrollView(
-          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
+          padding: EdgeInsets.symmetric(horizontal: KiwiSpacing.xl - 4, vertical: KiwiSpacing.lg),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -648,7 +682,7 @@ class _AppShellState extends State<_AppShell> {
                   fontFamily: tier.typography.fontFamily,
                 ),
               ),
-              const SizedBox(height: 4),
+              SizedBox(height: KiwiSpacing.xs),
               Text(
                 'Team up, challenge, compete!',
                 style: TextStyle(
@@ -668,7 +702,7 @@ class _AppShellState extends State<_AppShell> {
               if (_streakData != null)
                 Container(
                   width: double.infinity,
-                  padding: const EdgeInsets.all(16),
+                  padding: tier.shape.cardPadding,
                   decoration: BoxDecoration(
                     color: tier.colors.cardBg,
                     borderRadius: BorderRadius.circular(tier.shape.cardRadius),
@@ -677,14 +711,14 @@ class _AppShellState extends State<_AppShell> {
                   child: Row(
                     children: [
                       const Text('\u{1F525}', style: TextStyle(fontSize: 28)),
-                      const SizedBox(width: 12),
+                      SizedBox(width: KiwiSpacing.md),
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
                             '${_streakData!.currentStreak} day streak',
                             style: TextStyle(
-                              fontSize: 16,
+                              fontSize: tier.typography.bodySize,
                               fontWeight: FontWeight.w700,
                               color: tier.colors.textPrimary,
                             ),
@@ -692,7 +726,7 @@ class _AppShellState extends State<_AppShell> {
                           Text(
                             'Keep solving puzzles daily!',
                             style: TextStyle(
-                              fontSize: 13,
+                              fontSize: tier.typography.chipSize - 1,
                               color: tier.colors.textMuted,
                             ),
                           ),
@@ -701,12 +735,12 @@ class _AppShellState extends State<_AppShell> {
                     ],
                   ),
                 ),
-              if (_streakData != null) const SizedBox(height: 20),
+              if (_streakData != null) SizedBox(height: KiwiSpacing.xl - 4),
 
               // ── Clan promo ──────────────────────────────────────────
               Container(
                 width: double.infinity,
-                padding: const EdgeInsets.all(20),
+                padding: EdgeInsets.all(KiwiSpacing.xl - 4),
                 decoration: BoxDecoration(
                   gradient: LinearGradient(
                     colors: [
@@ -724,22 +758,22 @@ class _AppShellState extends State<_AppShell> {
                 child: Column(
                   children: [
                     const Text('⚔️', style: TextStyle(fontSize: 48)),
-                    const SizedBox(height: 12),
+                    SizedBox(height: KiwiSpacing.md),
                     Text(
                       'Join a Clan!',
                       style: TextStyle(
-                        fontSize: 22,
-                        fontWeight: FontWeight.w800,
+                        fontSize: tier.typography.headlineSize + 2,
+                        fontWeight: tier.typography.headlineWeight,
                         color: tier.colors.textPrimary,
                       ),
                     ),
-                    const SizedBox(height: 6),
+                    SizedBox(height: KiwiSpacing.xs + 2),
                     Text(
                       'Team up with friends, solve puzzles together, '
                       'and compete on the leaderboard!',
                       textAlign: TextAlign.center,
                       style: TextStyle(
-                        fontSize: 14,
+                        fontSize: tier.typography.bodySize - 2,
                         color: tier.colors.textSecondary,
                         height: 1.4,
                       ),
@@ -747,7 +781,7 @@ class _AppShellState extends State<_AppShell> {
                   ],
                 ),
               ),
-              const SizedBox(height: 20),
+              SizedBox(height: KiwiSpacing.xl - 4),
 
               // ── Create / Join buttons (at bottom) ───────────────────
               SizedBox(
@@ -755,24 +789,24 @@ class _AppShellState extends State<_AppShell> {
                 child: Container(
                   decoration: BoxDecoration(
                     gradient: LinearGradient(
-                      colors: [tier.colors.primary, tier.colors.primaryDark],
+                      colors: [tier.colors.buttonGradientStart, tier.colors.buttonGradientEnd],
                     ),
-                    borderRadius: BorderRadius.circular(14),
+                    borderRadius: BorderRadius.circular(tier.shape.buttonRadius),
                   ),
                   child: ElevatedButton(
                     onPressed: _navigateToCreateClan,
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.transparent,
                       shadowColor: Colors.transparent,
-                      padding: const EdgeInsets.symmetric(vertical: 14),
+                      padding: tier.shape.buttonPadding,
                       shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(14),
+                        borderRadius: BorderRadius.circular(tier.shape.buttonRadius),
                       ),
                     ),
-                    child: const Text(
+                    child: Text(
                       'Create a Clan',
                       style: TextStyle(
-                        fontSize: 16,
+                        fontSize: tier.typography.buttonSize,
                         fontWeight: FontWeight.w700,
                         color: Colors.white,
                       ),
@@ -780,29 +814,29 @@ class _AppShellState extends State<_AppShell> {
                   ),
                 ),
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: KiwiSpacing.md),
               SizedBox(
                 width: double.infinity,
                 child: OutlinedButton(
                   onPressed: _navigateToJoinClan,
                   style: OutlinedButton.styleFrom(
-                    padding: const EdgeInsets.symmetric(vertical: 14),
+                    padding: tier.shape.buttonPadding,
                     side: BorderSide(color: tier.colors.primary, width: 2),
                     shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(14),
+                      borderRadius: BorderRadius.circular(tier.shape.buttonRadius),
                     ),
                   ),
                   child: Text(
                     'Join with Invite Code',
                     style: TextStyle(
-                      fontSize: 16,
+                      fontSize: tier.typography.buttonSize,
                       fontWeight: FontWeight.w700,
                       color: tier.colors.primary,
                     ),
                   ),
                 ),
               ),
-              const SizedBox(height: 24),
+              SizedBox(height: KiwiSpacing.xl),
             ],
           ),
         ),
@@ -817,12 +851,12 @@ class _AppShellState extends State<_AppShell> {
       onTap: _navigateToDailyPuzzle,
       child: Container(
         width: double.infinity,
-        padding: const EdgeInsets.all(16),
+        padding: tier.shape.cardPadding,
         decoration: BoxDecoration(
           gradient: LinearGradient(
             colors: [
-              const Color(0xFF1A1A2E),
-              const Color(0xFF16213E),
+              KiwiColors.textDark,
+              KiwiColors.textDark.withOpacity(0.85),
             ],
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
@@ -830,7 +864,7 @@ class _AppShellState extends State<_AppShell> {
           borderRadius: BorderRadius.circular(tier.shape.cardRadius),
           boxShadow: [
             BoxShadow(
-              color: const Color(0xFF1A1A2E).withOpacity(0.2),
+              color: KiwiColors.textDark.withOpacity(0.2),
               blurRadius: 10,
               offset: const Offset(0, 4),
             ),
@@ -842,12 +876,12 @@ class _AppShellState extends State<_AppShell> {
             Row(
               children: [
                 const Text('\u{1F9E9}', style: TextStyle(fontSize: 22)),
-                const SizedBox(width: 8),
+                SizedBox(width: KiwiSpacing.sm),
                 Expanded(
                   child: Text(
                     'Daily Challenge',
                     style: TextStyle(
-                      fontSize: 18,
+                      fontSize: tier.typography.headlineSize - 2,
                       fontWeight: FontWeight.w700,
                       color: Colors.white,
                       fontFamily: tier.typography.fontFamily,
@@ -856,15 +890,15 @@ class _AppShellState extends State<_AppShell> {
                 ),
                 Container(
                   padding:
-                      const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+                      EdgeInsets.symmetric(horizontal: KiwiSpacing.sm + 2, vertical: KiwiSpacing.xs),
                   decoration: BoxDecoration(
                     color: KiwiColors.gemGold.withOpacity(0.2),
-                    borderRadius: BorderRadius.circular(8),
+                    borderRadius: BorderRadius.circular(tier.shape.chipRadius / 2),
                   ),
                   child: Text(
                     'Grade $_selectedGrade',
                     style: TextStyle(
-                      fontSize: 12,
+                      fontSize: tier.typography.chipSize - 2,
                       fontWeight: FontWeight.w600,
                       color: KiwiColors.gemGold,
                       fontFamily: tier.typography.fontFamily,
@@ -873,41 +907,41 @@ class _AppShellState extends State<_AppShell> {
                 ),
               ],
             ),
-            const SizedBox(height: 10),
+            SizedBox(height: KiwiSpacing.sm + 2),
             Text(
               puzzle.title,
               style: TextStyle(
-                fontSize: 15,
+                fontSize: tier.typography.topicNameSize,
                 fontWeight: FontWeight.w600,
                 color: Colors.white.withOpacity(0.9),
                 fontFamily: tier.typography.fontFamily,
               ),
             ),
-            const SizedBox(height: 4),
+            SizedBox(height: KiwiSpacing.xs),
             Text(
               puzzle.storyNarrative.length > 80
                   ? '${puzzle.storyNarrative.substring(0, 80)}...'
                   : puzzle.storyNarrative,
               style: TextStyle(
-                fontSize: 13,
+                fontSize: tier.typography.chipSize - 1,
                 color: Colors.white.withOpacity(0.6),
                 fontFamily: tier.typography.fontFamily,
                 height: 1.4,
               ),
             ),
-            const SizedBox(height: 12),
+            SizedBox(height: KiwiSpacing.md),
             Container(
               width: double.infinity,
-              padding: const EdgeInsets.symmetric(vertical: 10),
+              padding: EdgeInsets.symmetric(vertical: KiwiSpacing.sm + 2),
               decoration: BoxDecoration(
                 color: KiwiColors.gemGold.withOpacity(0.15),
-                borderRadius: BorderRadius.circular(10),
+                borderRadius: BorderRadius.circular(tier.shape.chipRadius / 2),
               ),
-              child: const Center(
+              child: Center(
                 child: Text(
                   'Tap to Solve \u{2728}',
                   style: TextStyle(
-                    fontSize: 14,
+                    fontSize: tier.typography.bodySize - 2,
                     fontWeight: FontWeight.w700,
                     color: KiwiColors.gemGold,
                   ),
@@ -918,6 +952,58 @@ class _AppShellState extends State<_AppShell> {
         ),
       ),
     );
+  }
+
+  // ---------------------------------------------------------------------------
+  // Smart Session — unified 5-phase learning loop
+  // ---------------------------------------------------------------------------
+
+  Future<void> _startSmartSession() async {
+    // Show loading overlay
+    showDialog(
+      context: context,
+      barrierDismissible: false,
+      builder: (_) => const Center(child: CircularProgressIndicator()),
+    );
+
+    try {
+      final response = await _api.getUnifiedSession(widget.userId, _selectedGrade);
+      if (!mounted) return;
+      Navigator.of(context).pop(); // dismiss loading
+
+      final questions = List<Map<String, dynamic>>.from(response['questions'] ?? []);
+      if (questions.isEmpty) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(content: Text('No questions available right now. Try again later!')),
+        );
+        return;
+      }
+
+      final sessionMessage = response['session_message'] as String? ?? 'Smart Session';
+
+      Navigator.of(context).push(
+        MaterialPageRoute(
+          builder: (_) => QuestionScreenV2(
+            topicId: 'smart-session',
+            topicName: sessionMessage,
+            userId: widget.userId,
+            grade: _selectedGrade,
+            sessionPlan: questions,
+            companionService: _companionService,
+            onBackToHome: () {
+              Navigator.of(context).pop();
+              _loadProfile();
+            },
+          ),
+        ),
+      );
+    } catch (e) {
+      if (!mounted) return;
+      Navigator.of(context).pop(); // dismiss loading
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('Could not start the session. Check your connection and try again.')),
+      );
+    }
   }
 
   void _navigateToQuestions({
@@ -973,12 +1059,29 @@ class _AppShellState extends State<_AppShell> {
   }
 
   void _onTabTapped(int index) async {
-    if (index == 4 && !_parentPinVerified) {
+    setState(() => _selectedTab = index);
+  }
+
+  /// Navigate to parent dashboard behind PIN gate (from Profile tab)
+  void _openParentDashboard() async {
+    if (!_parentPinVerified) {
       final verified = await PinGate.show(context);
       if (!verified || !mounted) return;
       setState(() => _parentPinVerified = true);
     }
-    setState(() => _selectedTab = index);
+    if (!mounted) return;
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (_) => ParentDashboardScreen(
+          userId: widget.userId,
+          childName: _studentName.isNotEmpty
+              ? _studentName
+              : (_profile.displayName != 'Kiwi Learner' ? _profile.displayName : null),
+          embedded: false,
+          curriculum: _profile.curriculum,
+        ),
+      ),
+    );
   }
 
   @override
@@ -997,14 +1100,21 @@ class _AppShellState extends State<_AppShell> {
           IndexedStack(
             index: _selectedTab,
             children: [
-              // Tab 0 — Olympiad (smart practice + daily worksheets)
+              // Tab 0 — Practice (Olympiad: smart practice + daily worksheets)
               OlympiadTabScreen(
+                userId: widget.userId,
                 selectedGrade: _selectedGrade,
                 onGradeChanged: _onGradeChanged,
                 onStartPractice: (topicId, topicName) => _navigateToQuestions(
                   topicId: topicId,
                   topicName: topicName,
                 ),
+                onSmartSession: _startSmartSession,
+                studentName: _studentName,
+                streak: _streakData?.currentStreak ?? _profile.streakCurrent,
+                kiwiCoins: _profile.kiwiCoins,
+                dailyProgress: _profile.dailyProgress,
+                dailyGoal: _profile.dailyGoal,
               ),
               // Tab 1 — School (multi-curriculum chapter browser)
               CurriculumScreen(
@@ -1020,7 +1130,7 @@ class _AppShellState extends State<_AppShell> {
                 ),
                 companionService: _companionService,
               ),
-              // Tab 2 — Growth (diagnostic + improvement journey)
+              // Tab 2 — Progress (Growth + Clan combined)
               GrowthTabScreen(
                 selectedGrade: _selectedGrade,
                 onGradeChanged: _onGradeChanged,
@@ -1031,43 +1141,7 @@ class _AppShellState extends State<_AppShell> {
                   topicName: topicName,
                 ),
               ),
-              // Tab 3 — Clan
-              _clan != null
-                  ? ClanHubScreen(
-                      clan: _clan!,
-                      activeChallenge: _activeChallenge,
-                      challengeProgress: _challengeProgress,
-                      // Engagement data
-                      dailyPuzzle: _dailyPuzzle,
-                      streakData: _streakData,
-                      leagueStatus: _leagueStatus,
-                      clanWar: _clanWar,
-                      rewardData: _rewardData,
-                      activePledge: _activePledge,
-                      // Callbacks
-                      onOpenChallenge: _navigateToChallenge,
-                      onOpenLeaderboard: _navigateToLeaderboard,
-                      onLeaveClan: _handleLeaveClan,
-                      onCopyInviteCode: _copyInviteCode,
-                      onSolveDailyPuzzle: _navigateToDailyPuzzle,
-                      onClaimDailyReward: _handleClaimDailyReward,
-                      onOpenMysteryBox: _handleOpenMysteryBox,
-                      onOpenRewards: _navigateToRewards,
-                      onMakePledge: _handleMakePledge,
-                    )
-                  : _buildClanLanding(tier),
-              // Tab 4 — Parent Dashboard (PIN-protected)
-              _parentPinVerified
-                  ? ParentDashboardScreen(
-                      userId: widget.userId,
-                      childName: _studentName.isNotEmpty
-                          ? _studentName
-                          : (_profile.displayName != 'Kiwi Learner' ? _profile.displayName : null),
-                      embedded: true,
-                      curriculum: _profile.curriculum,
-                    )
-                  : const Scaffold(body: Center(child: CircularProgressIndicator())),
-              // Tab 5 — Profile (stats, invite, sign out)
+              // Tab 3 — Me (Profile + Parent access)
               ProfileScreen(
                 userId: widget.userId,
                 studentName: _studentName.isNotEmpty
@@ -1086,6 +1160,7 @@ class _AppShellState extends State<_AppShell> {
                 onSignOut: _signOut,
                 onRestartOnboarding: _restartOnboarding,
                 onAvatarChanged: _onAvatarChanged,
+                onOpenParentDashboard: _openParentDashboard,
               ),
             ],
           ),
@@ -1097,28 +1172,28 @@ class _AppShellState extends State<_AppShell> {
               right: 0,
               child: SafeArea(
                 child: Container(
-                  margin: const EdgeInsets.symmetric(horizontal: 14, vertical: 6),
-                  padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
+                  margin: KiwiSpacing.cardMargin,
+                  padding: EdgeInsets.symmetric(horizontal: KiwiSpacing.lg - 2, vertical: KiwiSpacing.sm),
                   decoration: BoxDecoration(
-                    color: const Color(0xFFFFF3E0),
-                    borderRadius: BorderRadius.circular(10),
-                    border: Border.all(color: const Color(0xFFFFCC80)),
+                    color: KiwiColors.wrongBg,
+                    borderRadius: BorderRadius.circular(tier.shape.chipRadius / 2),
+                    border: Border.all(color: tier.colors.topicCardBorder),
                   ),
                   child: Row(
                     children: [
-                      const Icon(Icons.cloud_off, size: 16, color: Color(0xFFE65100)),
-                      const SizedBox(width: 8),
+                      Icon(Icons.cloud_off, size: 16, color: KiwiColors.kiwiPrimaryDark),
+                      SizedBox(width: KiwiSpacing.sm),
                       Expanded(
                         child: Text(
                           _error!,
-                          style: const TextStyle(fontSize: 12, color: Color(0xFFE65100)),
+                          style: TextStyle(fontSize: tier.typography.chipSize - 2, color: KiwiColors.kiwiPrimaryDark),
                         ),
                       ),
                       GestureDetector(
                         onTap: _loadProfile,
-                        child: const Padding(
-                          padding: EdgeInsets.only(left: 8),
-                          child: Icon(Icons.refresh, size: 18, color: Color(0xFFE65100)),
+                        child: Padding(
+                          padding: EdgeInsets.only(left: KiwiSpacing.sm),
+                          child: Icon(Icons.refresh, size: 18, color: KiwiColors.kiwiPrimaryDark),
                         ),
                       ),
                     ],
@@ -1128,7 +1203,7 @@ class _AppShellState extends State<_AppShell> {
             ),
         ],
       ),
-      // Bottom nav: Olympiad / School / Growth / Clan / Parent / Profile
+      // Bottom nav: Practice / School / Progress / Me
       bottomNavigationBar: Container(
         decoration: BoxDecoration(
           color: tier.colors.cardBg,
@@ -1143,16 +1218,14 @@ class _AppShellState extends State<_AppShell> {
         child: SafeArea(
           top: false,
           child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 6),
+            padding: EdgeInsets.symmetric(horizontal: KiwiSpacing.sm, vertical: KiwiSpacing.xs + 2),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                _buildNavItem(0, Icons.emoji_events_rounded, 'Olympiad', tier),
+                _buildNavItem(0, Icons.emoji_events_rounded, 'Practice', tier),
                 _buildNavItem(1, Icons.school_rounded, 'School', tier),
-                _buildNavItem(2, Icons.trending_up_rounded, 'Growth', tier),
-                _buildNavItem(3, Icons.groups_rounded, 'Clan', tier),
-                _buildNavItem(4, Icons.family_restroom_rounded, 'Parent', tier),
-                _buildNavItem(5, Icons.person_rounded, 'Profile', tier),
+                _buildNavItem(2, Icons.trending_up_rounded, 'Progress', tier),
+                _buildNavItem(3, Icons.person_rounded, 'Me', tier),
               ],
             ),
           ),
@@ -1160,6 +1233,49 @@ class _AppShellState extends State<_AppShell> {
       ),
     );
 
+    if (_isAdmin) {
+      final adminEmail = AuthService().currentUser?.email ?? '';
+      return Stack(
+        children: [
+          shell,
+          Positioned(
+            right: 16,
+            bottom: 90,
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                FloatingActionButton.small(
+                  heroTag: 'admin_analytics_fab',
+                  backgroundColor: tier.colors.primaryDark,
+                  onPressed: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (_) =>
+                            AnalyticsDashboardScreen(email: adminEmail),
+                      ),
+                    );
+                  },
+                  child: const Icon(Icons.analytics, size: 20, color: Colors.white),
+                ),
+                SizedBox(height: KiwiSpacing.sm + 2),
+                FloatingActionButton.small(
+                  heroTag: 'admin_review_fab',
+                  backgroundColor: tier.colors.primary,
+                  onPressed: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (_) => AdminReviewScreen(email: adminEmail),
+                      ),
+                    );
+                  },
+                  child: const Icon(Icons.rate_review, size: 20, color: Colors.white),
+                ),
+              ],
+            ),
+          ),
+        ],
+      );
+    }
     return shell;
   }
 
@@ -1170,11 +1286,11 @@ class _AppShellState extends State<_AppShell> {
       behavior: HitTestBehavior.opaque,
       child: AnimatedContainer(
         duration: const Duration(milliseconds: 200),
-        padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 6),
+        padding: EdgeInsets.symmetric(horizontal: KiwiSpacing.md, vertical: KiwiSpacing.sm),
         decoration: isSelected
             ? BoxDecoration(
                 color: tier.colors.primary.withOpacity(0.1),
-                borderRadius: BorderRadius.circular(12),
+                borderRadius: BorderRadius.circular(tier.shape.buttonRadius),
               )
             : null,
         child: Column(
@@ -1182,14 +1298,14 @@ class _AppShellState extends State<_AppShell> {
           children: [
             Icon(
               icon,
-              size: 22,
+              size: 24,
               color: isSelected ? tier.colors.primary : tier.colors.textMuted,
             ),
-            const SizedBox(height: 2),
+            SizedBox(height: KiwiSpacing.xs - 1),
             Text(
               label,
               style: TextStyle(
-                fontSize: 10,
+                fontSize: tier.typography.chipSize - 3,
                 fontWeight: isSelected ? FontWeight.w700 : FontWeight.w500,
                 color: isSelected ? tier.colors.primary : tier.colors.textMuted,
               ),

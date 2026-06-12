@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 160" width="300" height="160">
+  <rect width="300" height="160" fill="#FFF8F0" rx="8"/>
+  <text x="150.0" y="16" text-anchor="middle" font-size="10" font-weight="bold" font-family="Arial" fill="#1A1A2E">AMBULANCE in Mirror</text>
+  <line x1="150.0" y1="25" x2="150.0" y2="150" stroke="#1976D2" stroke-width="2" stroke-dasharray="6,3"/>
+  <text x="150.0" y="156" text-anchor="middle" font-size="8" font-family="Arial" fill="#1976D2">Mirror</text>
+  <rect x="15" y="55" width="120" height="40" fill="white" stroke="#FF6D00" stroke-width="1.5" rx="4"/>
+  <text x="75" y="80" text-anchor="middle" font-size="13" font-family="Arial" font-weight="bold" fill="#1A1A2E" transform="scale(-1,1) translate(-150,0)">AMBULANCE</text>
+  <text x="75" y="108" text-anchor="middle" font-size="8" font-family="Arial" fill="#9E9E9E">Written reversed</text>
+  <rect x="165" y="55" width="120" height="40" fill="#E3F2FD" stroke="#1976D2" stroke-width="1.5" rx="4"/>
+  <text x="225" y="80" text-anchor="middle" font-size="13" font-weight="bold" font-family="Arial" fill="#1A1A2E">AMBULANCE</text>
+  <text x="225" y="108" text-anchor="middle" font-size="8" font-family="Arial" fill="#4CAF50">Reads correctly</text>
+</svg>

@@ -1,0 +1,12 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="200" fill="#f9f9f0" rx="8"/>
+  <text x="100" y="20" text-anchor="middle" font-size="11" font-family="Arial" fill="#555">Paper Folded and Cut</text>
+  <rect x="50" y="40" width="100" height="100" fill="#FFFDE7" stroke="#333" stroke-width="1.5"/>
+  <line x1="50" y1="40" x2="150" y2="140" stroke="#F44336" stroke-width="1" stroke-dasharray="4,3"/>
+  <line x1="150" y1="40" x2="50" y2="140" stroke="#F44336" stroke-width="1" stroke-dasharray="4,3"/>
+  <polygon points="90,70 110,70 100,55" fill="#FF9800" opacity="0.5" stroke="#E65100" stroke-width="1"/>
+  <text x="100" y="160" text-anchor="middle" font-size="10" font-family="Arial" fill="#555">Folded twice diagonally</text>
+  <text x="100" y="175" text-anchor="middle" font-size="10" font-family="Arial" font-weight="bold" fill="#E53935">Result: 4-fold symmetry</text>
+  <line x1="100" y1="40" x2="100" y2="140" stroke="#2196F3" stroke-width="0.8" stroke-dasharray="2,2"/>
+  <line x1="50" y1="90" x2="150" y2="90" stroke="#2196F3" stroke-width="0.8" stroke-dasharray="2,2"/>
+</svg>

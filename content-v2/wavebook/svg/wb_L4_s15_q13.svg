@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <rect width="200" height="200" fill="#FFF8F0" rx="8"/>
+  <text x="100.0" y="16" text-anchor="middle" font-size="10" font-weight="bold" font-family="Arial" fill="#1A1A2E">N to E Angle</text>
+  <circle cx="100.0" cy="105.0" r="60" fill="none" stroke="#1A1A2E" stroke-width="1.5"/>
+  <circle cx="100.0" cy="105.0" r="3" fill="#FF6D00"/>
+  <line x1="100.0" y1="105.0" x2="100.0" y2="60.0" stroke="#1A1A2E" stroke-width="1.5"/>
+  <text x="100.0" y="37.0" text-anchor="middle" font-size="12" font-weight="bold" font-family="Arial" fill="#FF6D00">N</text>
+  <line x1="100.0" y1="105.0" x2="145.0" y2="105.0" stroke="#1A1A2E" stroke-width="1.5"/>
+  <text x="172.0" y="109.0" text-anchor="middle" font-size="12" font-weight="bold" font-family="Arial" fill="#FF6D00">E</text>
+  <line x1="100.0" y1="105.0" x2="100.0" y2="150.0" stroke="#1A1A2E" stroke-width="1.5"/>
+  <text x="100.0" y="181.0" text-anchor="middle" font-size="12" font-weight="bold" font-family="Arial" fill="#FF6D00">S</text>
+  <line x1="100.0" y1="105.0" x2="55.0" y2="105.0" stroke="#1A1A2E" stroke-width="1.5"/>
+  <text x="28.0" y="109.0" text-anchor="middle" font-size="12" font-weight="bold" font-family="Arial" fill="#FF6D00">W</text>
+  <text x="150.904" y="58.096000000000004" text-anchor="middle" font-size="8" font-family="Arial" fill="#9E9E9E">NE</text>
+  <text x="150.904" y="159.904" text-anchor="middle" font-size="8" font-family="Arial" fill="#9E9E9E">SE</text>
+  <text x="49.096000000000004" y="159.904" text-anchor="middle" font-size="8" font-family="Arial" fill="#9E9E9E">SW</text>
+  <text x="49.096000000000004" y="58.096000000000004" text-anchor="middle" font-size="8" font-family="Arial" fill="#9E9E9E">NW</text>
+  <path d="M 100.0,75.0 A 30.0,30.0 0 0,1 130.0,105.0" fill="none" stroke="#FF6D00" stroke-width="2"/>
+  <text x="131.81980515339464" y="77.18019484660536" text-anchor="middle" font-size="10" font-weight="bold" font-family="Arial" fill="#FF6D00">90°</text>
+</svg>

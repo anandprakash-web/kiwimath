@@ -4,7 +4,9 @@ __pycache__/
 .venv/
 venv/
 .env
+.env.*
 .env.local
+.env.save
 .DS_Store
 .pytest_cache/
 *.egg-info/
@@ -38,11 +40,15 @@ app/.metadata
 
 # Sensitive files — never commit
 app/android/key.properties
+app/android/local.properties
 *.jks
 *.keystore
+app/android/app/google-services.json.bak
+app/android/app/old jason/
 
 # OS files
 Thumbs.db
 
 # Generated docs (keep source, not output)
 Kiwimath_Project_Summary.pdf
+backend/static/all_questions*.json

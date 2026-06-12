@@ -58,7 +58,7 @@ class _GrowthTabScreenState extends State<GrowthTabScreen>
   ];
 
   // ── Level colors ──────────────────────────────────────────────────────────
-  static const _levelColors = [
+  static const _levelColors = [ // decorative — no token
     Color(0xFF90CAF9), // L1 — light blue
     Color(0xFF81C784), // L2 — green
     Color(0xFFFFD54F), // L3 — amber
@@ -489,15 +489,15 @@ class _NoDiagnosticHeroCard extends StatelessWidget {
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
           colors: [
-            Color(0xFF1A237E), // deep blue
-            Color(0xFF2E7D32), // forest green
-            Color(0xFF4CAF50), // green base
+            KiwiColors.leagueBlue, // deep blue
+            KiwiColors.kiwiGreenDark, // forest green
+            KiwiColors.kiwiGreen, // green base
           ],
           stops: [0.0, 0.65, 1.0],
         ),
         boxShadow: [
           BoxShadow(
-            color: const Color(0xFF1A237E).withOpacity(0.3),
+            color: KiwiColors.leagueBlue.withOpacity(0.3),
             blurRadius: 20,
             offset: const Offset(0, 8),
           ),
@@ -836,15 +836,15 @@ class _MountainHeroCard extends StatelessWidget {
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
           colors: [
-            const Color(0xFF0D47A1),
-            const Color(0xFF1B5E20).withOpacity(0.95),
-            const Color(0xFF2E7D32),
+            KiwiColors.leagueBlue,
+            KiwiColors.kiwiGreenDark.withOpacity(0.95),
+            KiwiColors.kiwiGreenDark,
           ],
           stops: const [0.0, 0.55, 1.0],
         ),
         boxShadow: [
           BoxShadow(
-            color: const Color(0xFF0D47A1).withOpacity(0.35),
+            color: KiwiColors.leagueBlue.withOpacity(0.35),
             blurRadius: 24,
             offset: const Offset(0, 8),
           ),
@@ -983,8 +983,8 @@ class _DeltaChip extends StatelessWidget {
         ? KiwiColors.kiwiGreen.withOpacity(0.25)
         : KiwiColors.coral.withOpacity(0.25);
     final fg = positive
-        ? const Color(0xFFA5D6A7)
-        : const Color(0xFFFFAB91);
+        ? KiwiColors.correct
+        : KiwiColors.sunset;
 
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
@@ -1465,7 +1465,7 @@ class _TopicCard extends StatelessWidget {
                   fontFamily: t.fontFamily,
                   fontSize: t.chipSize - 2,
                   fontWeight: FontWeight.w700,
-                  color: const Color(0xFFFF8F00),
+                  color: KiwiColors.amber,
                 ),
               ),
             )
@@ -1522,14 +1522,14 @@ class _MilestoneTimeline extends StatelessWidget {
   };
 
   static const _typeColors = {
-    'diagnostic': Color(0xFF42A5F5),
-    'level_up': Color(0xFF66BB6A),
-    'topic_breakthrough': Color(0xFFFFD600),
-    'streak': Color(0xFFFF8A65),
-    'gems': Color(0xFF448AFF),
-    'badge': Color(0xFFCE93D8),
-    'worksheet': Color(0xFF4DB6AC),
-    'clan_war': Color(0xFFFF7043),
+    'diagnostic': KiwiColors.sky,
+    'level_up': KiwiColors.correct,
+    'topic_breakthrough': KiwiColors.gemGold,
+    'streak': KiwiColors.streakWarm,
+    'gems': KiwiColors.gemBlue,
+    'badge': KiwiColors.indigo,
+    'worksheet': KiwiColors.teal,
+    'clan_war': KiwiColors.sunset,
   };
 
   @override

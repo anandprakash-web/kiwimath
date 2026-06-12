@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" width="300" height="200">
+  <rect width="300" height="200" fill="#FFF8F0" rx="8"/>
+  <text x="150.0" y="14" text-anchor="middle" font-size="11" font-weight="bold" font-family="Arial" fill="#1A1A2E">Range = Highest − Lowest</text>
+  <line x1="45" y1="30" x2="45" y2="165" stroke="#1A1A2E" stroke-width="1.5"/>
+  <line x1="45" y1="165" x2="285" y2="165" stroke="#1A1A2E" stroke-width="1.5"/>
+  <line x1="41" y1="165.0" x2="45" y2="165.0" stroke="#1A1A2E" stroke-width="1"/>
+  <text x="38" y="169.0" text-anchor="end" font-size="9" font-family="Arial" fill="#9E9E9E">0</text>
+  <line x1="41" y1="138.0" x2="45" y2="138.0" stroke="#1A1A2E" stroke-width="1"/>
+  <text x="38" y="142.0" text-anchor="end" font-size="9" font-family="Arial" fill="#9E9E9E">12</text>
+  <line x1="45" y1="138.0" x2="285" y2="138.0" stroke="#E0E0E0" stroke-width="0.5"/>
+  <line x1="41" y1="111.0" x2="45" y2="111.0" stroke="#1A1A2E" stroke-width="1"/>
+  <text x="38" y="115.0" text-anchor="end" font-size="9" font-family="Arial" fill="#9E9E9E">24</text>
+  <line x1="45" y1="111.0" x2="285" y2="111.0" stroke="#E0E0E0" stroke-width="0.5"/>
+  <line x1="41" y1="84.0" x2="45" y2="84.0" stroke="#1A1A2E" stroke-width="1"/>
+  <text x="38" y="88.0" text-anchor="end" font-size="9" font-family="Arial" fill="#9E9E9E">36</text>
+  <line x1="45" y1="84.0" x2="285" y2="84.0" stroke="#E0E0E0" stroke-width="0.5"/>
+  <line x1="41" y1="57.0" x2="45" y2="57.0" stroke="#1A1A2E" stroke-width="1"/>
+  <text x="38" y="61.0" text-anchor="end" font-size="9" font-family="Arial" fill="#9E9E9E">48</text>
+  <line x1="45" y1="57.0" x2="285" y2="57.0" stroke="#E0E0E0" stroke-width="0.5"/>
+  <line x1="41" y1="30.0" x2="45" y2="30.0" stroke="#1A1A2E" stroke-width="1"/>
+  <text x="38" y="34.0" text-anchor="end" font-size="9" font-family="Arial" fill="#9E9E9E">60</text>
+  <line x1="45" y1="30.0" x2="285" y2="30.0" stroke="#E0E0E0" stroke-width="0.5"/>
+  <rect x="69.0" y="120.0" width="30.0" height="45.0" fill="#FF6D00" rx="2"/>
+  <text x="84.0" y="116.0" text-anchor="middle" font-size="9" font-family="Arial" fill="#1A1A2E">20</text>
+  <text x="84.0" y="177" text-anchor="middle" font-size="9" font-family="Arial" fill="#1A1A2E">A</text>
+  <rect x="123.0" y="41.2" width="30.0" height="123.8" fill="#1976D2" rx="2"/>
+  <text x="138.0" y="37.25" text-anchor="middle" font-size="9" font-family="Arial" fill="#1A1A2E">55</text>
+  <text x="138.0" y="177" text-anchor="middle" font-size="9" font-family="Arial" fill="#1A1A2E">B</text>
+  <rect x="177.0" y="142.5" width="30.0" height="22.5" fill="#4CAF50" rx="2"/>
+  <text x="192.0" y="138.5" text-anchor="middle" font-size="9" font-family="Arial" fill="#1A1A2E">10</text>
+  <text x="192.0" y="177" text-anchor="middle" font-size="9" font-family="Arial" fill="#1A1A2E">C</text>
+  <rect x="231.0" y="75.0" width="30.0" height="90.0" fill="#E91E63" rx="2"/>
+  <text x="246.0" y="71.0" text-anchor="middle" font-size="9" font-family="Arial" fill="#1A1A2E">40</text>
+  <text x="246.0" y="177" text-anchor="middle" font-size="9" font-family="Arial" fill="#1A1A2E">D</text>
+</svg>

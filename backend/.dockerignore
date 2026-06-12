@@ -6,3 +6,17 @@ __pycache__
 *.egg-info
 .DS_Store
 test_harness.html
+static/all_questions.json
+static/all_questions_lite.json
+static/all_questions.json.bak
+
+# Old artifacts — not needed in Docker image
+audit_*.json
+bot_report*.json
+cms*.db
+cms*.db-journal
+assessment_items.json.bak
+qa_review_data.json
+qa_review_server.py
+concept_graph_all_grades.json
+tests/

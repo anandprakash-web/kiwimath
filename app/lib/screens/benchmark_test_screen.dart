@@ -147,10 +147,13 @@ class _BenchmarkTestScreenState extends State<BenchmarkTestScreen> {
     }
   }
 
+  KiwiTier get _tier => KiwiTier.forGrade(widget.grade);
+
   @override
   Widget build(BuildContext context) {
+    final colors = _tier.colors;
     return Scaffold(
-      backgroundColor: KiwiColors.cream,
+      backgroundColor: colors.background,
       body: SafeArea(
         child: _buildContent(),
       ),
@@ -174,40 +177,45 @@ class _BenchmarkTestScreenState extends State<BenchmarkTestScreen> {
   }
 
   Widget _buildLoading(String message) {
+    final colors = _tier.colors;
+    final typo = _tier.typography;
     return Center(
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          CircularProgressIndicator(color: KiwiColors.kiwiPrimary),
-          const SizedBox(height: 16),
-          Text(message, style: const TextStyle(fontSize: 14, color: KiwiColors.textMid)),
+          CircularProgressIndicator(color: colors.primary),
+          const SizedBox(height: KiwiSpacing.lg),
+          Text(message, style: TextStyle(fontSize: typo.bodySize, color: colors.textSecondary, fontFamily: typo.fontFamily)),
         ],
       ),
     );
   }
 
   Widget _buildError() {
+    final colors = _tier.colors;
+    final typo = _tier.typography;
+    final shape = _tier.shape;
     return Center(
       child: Padding(
-        padding: const EdgeInsets.all(24),
+        padding: const EdgeInsets.all(KiwiSpacing.xl),
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Icon(Icons.error_outline_rounded, size: 48, color: Colors.red.shade300),
-            const SizedBox(height: 12),
+            Icon(Icons.error_outline_rounded, size: 48, color: KiwiColors.coral),
+            const SizedBox(height: KiwiSpacing.md),
             Text(_error!, textAlign: TextAlign.center,
-                style: const TextStyle(fontSize: 14, color: KiwiColors.textMid)),
-            const SizedBox(height: 18),
+                style: TextStyle(fontSize: typo.bodySize, color: colors.textSecondary, fontFamily: typo.fontFamily)),
+            const SizedBox(height: KiwiSpacing.lg),
             GestureDetector(
               onTap: _createTest,
               child: Container(
-                padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                padding: shape.buttonPadding,
                 decoration: BoxDecoration(
-                  color: KiwiColors.kiwiPrimary,
-                  borderRadius: BorderRadius.circular(12),
+                  color: colors.primary,
+                  borderRadius: BorderRadius.circular(shape.buttonRadius),
                 ),
-                child: const Text('Try Again',
-                    style: TextStyle(fontSize: 14, fontWeight: FontWeight.w700, color: Colors.white)),
+                child: Text('Try Again',
+                    style: TextStyle(fontSize: typo.buttonSize, fontWeight: FontWeight.w700, color: Colors.white, fontFamily: typo.fontFamily)),
               ),
             ),
           ],
@@ -222,6 +230,9 @@ class _BenchmarkTestScreenState extends State<BenchmarkTestScreen> {
 
   Widget _buildIntro() {
     final name = widget.childName ?? 'your child';
+    final colors = _tier.colors;
+    final typo = _tier.typography;
+    final shape = _tier.shape;
     final typeLabel = widget.benchmarkType == 'baseline'
         ? 'Baseline Assessment'
         : widget.benchmarkType == 'midline'
@@ -231,7 +242,7 @@ class _BenchmarkTestScreenState extends State<BenchmarkTestScreen> {
                 : 'Diagnostic Test';
 
     return Padding(
-      padding: const EdgeInsets.all(24),
+      padding: const EdgeInsets.all(KiwiSpacing.xl),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
@@ -240,76 +251,76 @@ class _BenchmarkTestScreenState extends State<BenchmarkTestScreen> {
             height: 80,
             decoration: BoxDecoration(
               color: KiwiColors.kiwiPrimaryLight,
-              borderRadius: BorderRadius.circular(20),
+              borderRadius: BorderRadius.circular(shape.cardRadius),
             ),
             child: const Center(
               child: Text('\u{1F4CA}', style: TextStyle(fontSize: 40)),
             ),
           ),
-          const SizedBox(height: 24),
+          const SizedBox(height: KiwiSpacing.xl),
           Text(
             typeLabel,
-            style: const TextStyle(
-              fontSize: 22, fontWeight: FontWeight.w800, color: KiwiColors.textDark,
+            style: TextStyle(
+              fontSize: typo.headlineSize + 2, fontWeight: typo.headlineWeight, color: colors.textPrimary, fontFamily: typo.fontFamily,
             ),
           ),
-          const SizedBox(height: 12),
+          const SizedBox(height: KiwiSpacing.md),
           Text(
             'This short test helps us understand exactly where $name '
             'stands in math. It takes about 10-15 minutes.',
             textAlign: TextAlign.center,
-            style: const TextStyle(fontSize: 15, color: KiwiColors.textMid, height: 1.5),
+            style: TextStyle(fontSize: typo.bodySize, color: colors.textSecondary, height: 1.5, fontFamily: typo.fontFamily),
           ),
-          const SizedBox(height: 8),
+          const SizedBox(height: KiwiSpacing.sm),
           Text(
             '${_questions.length} questions across different topics and difficulty levels.',
             textAlign: TextAlign.center,
-            style: const TextStyle(fontSize: 13, color: KiwiColors.textMuted),
+            style: TextStyle(fontSize: typo.chipSize, color: colors.textMuted, fontFamily: typo.fontFamily),
           ),
-          const SizedBox(height: 32),
+          const SizedBox(height: KiwiSpacing.xxl),
           // Tips
           Container(
-            padding: const EdgeInsets.all(16),
+            padding: shape.cardPadding,
             decoration: BoxDecoration(
-              color: Colors.white,
-              borderRadius: BorderRadius.circular(14),
-              border: Border.all(color: Colors.grey.shade200),
+              color: colors.cardBg,
+              borderRadius: BorderRadius.circular(shape.cardRadius),
+              border: Border.all(color: colors.topicCardBorder),
             ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const Text('Tips for parents:',
-                    style: TextStyle(fontSize: 13, fontWeight: FontWeight.w700, color: KiwiColors.textDark)),
-                const SizedBox(height: 8),
+                Text('Tips for parents:',
+                    style: TextStyle(fontSize: typo.chipSize, fontWeight: FontWeight.w700, color: colors.textPrimary, fontFamily: typo.fontFamily)),
+                const SizedBox(height: KiwiSpacing.sm),
                 _tipRow(Icons.timer_outlined, 'No time pressure — let them think'),
-                const SizedBox(height: 6),
+                const SizedBox(height: KiwiSpacing.sm),
                 _tipRow(Icons.block, 'Please don\'t help with answers'),
-                const SizedBox(height: 6),
+                const SizedBox(height: KiwiSpacing.sm),
                 _tipRow(Icons.favorite_outline, 'It\'s okay to skip hard ones'),
               ],
             ),
           ),
-          const SizedBox(height: 32),
+          const SizedBox(height: KiwiSpacing.xxl),
           GestureDetector(
             onTap: _startTest,
             child: Container(
               width: double.infinity,
-              padding: const EdgeInsets.symmetric(vertical: 16),
+              padding: shape.buttonPadding,
               decoration: BoxDecoration(
-                color: KiwiColors.kiwiPrimary,
-                borderRadius: BorderRadius.circular(14),
+                color: colors.primary,
+                borderRadius: BorderRadius.circular(shape.buttonRadius),
               ),
-              child: const Center(
+              child: Center(
                 child: Text('Start Test',
-                    style: TextStyle(fontSize: 16, fontWeight: FontWeight.w700, color: Colors.white)),
+                    style: TextStyle(fontSize: typo.buttonSize, fontWeight: FontWeight.w700, color: Colors.white, fontFamily: typo.fontFamily)),
               ),
             ),
           ),
-          const SizedBox(height: 12),
+          const SizedBox(height: KiwiSpacing.md),
           GestureDetector(
             onTap: () => Navigator.of(context).pop(),
-            child: const Text('Not now',
-                style: TextStyle(fontSize: 13, color: KiwiColors.textMuted, fontWeight: FontWeight.w500)),
+            child: Text('Not now',
+                style: TextStyle(fontSize: typo.chipSize, color: colors.textMuted, fontWeight: FontWeight.w500, fontFamily: typo.fontFamily)),
           ),
         ],
       ),
@@ -317,12 +328,14 @@ class _BenchmarkTestScreenState extends State<BenchmarkTestScreen> {
   }
 
   Widget _tipRow(IconData icon, String text) {
+    final colors = _tier.colors;
+    final typo = _tier.typography;
     return Row(
       children: [
-        Icon(icon, size: 16, color: KiwiColors.kiwiPrimary),
-        const SizedBox(width: 8),
+        Icon(icon, size: 16, color: colors.primary),
+        const SizedBox(width: KiwiSpacing.sm),
         Expanded(
-          child: Text(text, style: const TextStyle(fontSize: 13, color: KiwiColors.textMid)),
+          child: Text(text, style: TextStyle(fontSize: typo.chipSize, color: colors.textSecondary, fontFamily: typo.fontFamily)),
         ),
       ],
     );
@@ -340,9 +353,12 @@ class _BenchmarkTestScreenState extends State<BenchmarkTestScreen> {
         .toList();
     final progress = (_currentIndex + 1) / _questions.length;
     final correctIndex = q['correct_answer'] as int?;
+    final colors = _tier.colors;
+    final typo = _tier.typography;
+    final shape = _tier.shape;
 
     return Padding(
-      padding: const EdgeInsets.fromLTRB(18, 12, 18, 18),
+      padding: KiwiSpacing.sectionPadding,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -351,29 +367,29 @@ class _BenchmarkTestScreenState extends State<BenchmarkTestScreen> {
             children: [
               GestureDetector(
                 onTap: () => _confirmExit(),
-                child: const Icon(Icons.close, size: 22, color: KiwiColors.textMuted),
+                child: Icon(Icons.close, size: 22, color: colors.textMuted),
               ),
-              const SizedBox(width: 12),
+              const SizedBox(width: KiwiSpacing.md),
               Expanded(
                 child: ClipRRect(
-                  borderRadius: BorderRadius.circular(4),
+                  borderRadius: BorderRadius.circular(KiwiSpacing.xs),
                   child: LinearProgressIndicator(
                     value: progress,
                     minHeight: 6,
-                    backgroundColor: Colors.grey.shade200,
-                    valueColor: AlwaysStoppedAnimation<Color>(KiwiColors.kiwiPrimary),
+                    backgroundColor: colors.backgroundDark,
+                    valueColor: AlwaysStoppedAnimation<Color>(colors.primary),
                   ),
                 ),
               ),
-              const SizedBox(width: 12),
+              const SizedBox(width: KiwiSpacing.md),
               Text(
                 '${_currentIndex + 1}/${_questions.length}',
-                style: const TextStyle(
-                    fontSize: 13, fontWeight: FontWeight.w700, color: KiwiColors.textMid),
+                style: TextStyle(
+                    fontSize: typo.chipSize, fontWeight: FontWeight.w700, color: colors.textSecondary, fontFamily: typo.fontFamily),
               ),
             ],
           ),
-          const SizedBox(height: 24),
+          const SizedBox(height: KiwiSpacing.xl),
 
           // Question stem
           Expanded(
@@ -383,30 +399,30 @@ class _BenchmarkTestScreenState extends State<BenchmarkTestScreen> {
                 children: [
                   Text(
                     stem,
-                    style: const TextStyle(
-                      fontSize: 18, fontWeight: FontWeight.w600,
-                      color: KiwiColors.textDark, height: 1.5,
+                    style: TextStyle(
+                      fontSize: typo.headlineSize, fontWeight: FontWeight.w600,
+                      color: colors.textPrimary, height: 1.5, fontFamily: typo.fontFamily,
                     ),
                   ),
-                  const SizedBox(height: 24),
+                  const SizedBox(height: KiwiSpacing.xl),
 
                   // Options
                   ...List.generate(options.length, (i) {
                     final isSelected = _selectedOption == i;
                     final isCorrect = correctIndex != null && i == correctIndex;
-                    Color bgColor = Colors.white;
-                    Color borderColor = Colors.grey.shade300;
-                    Color textColor = KiwiColors.textDark;
+                    Color bgColor = colors.cardBg;
+                    Color borderColor = colors.topicCardBorder;
+                    Color textColor = colors.textPrimary;
 
                     if (_selectedOption != null) {
                       if (isSelected && isCorrect) {
-                        bgColor = Colors.green.shade50;
-                        borderColor = Colors.green;
-                        textColor = Colors.green.shade800;
+                        bgColor = KiwiColors.correctBg;
+                        borderColor = KiwiColors.correct;
+                        textColor = KiwiColors.kiwiGreenDark;
                       } else if (isSelected && !isCorrect) {
-                        bgColor = Colors.red.shade50;
-                        borderColor = Colors.red.shade300;
-                        textColor = Colors.red.shade800;
+                        bgColor = KiwiColors.wrongBg;
+                        borderColor = KiwiColors.wrong;
+                        textColor = KiwiColors.kiwiPrimaryDark;
                       }
                     }
 
@@ -414,17 +430,17 @@ class _BenchmarkTestScreenState extends State<BenchmarkTestScreen> {
                       onTap: () => _selectOption(i),
                       child: Container(
                         width: double.infinity,
-                        margin: const EdgeInsets.only(bottom: 10),
-                        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
+                        margin: const EdgeInsets.only(bottom: KiwiSpacing.sm),
+                        padding: const EdgeInsets.symmetric(horizontal: KiwiSpacing.lg, vertical: KiwiSpacing.md),
                         decoration: BoxDecoration(
                           color: bgColor,
-                          borderRadius: BorderRadius.circular(12),
+                          borderRadius: BorderRadius.circular(shape.buttonRadius),
                           border: Border.all(color: borderColor, width: isSelected ? 2 : 1),
                         ),
                         child: Text(
                           options[i],
                           style: TextStyle(
-                            fontSize: 15, fontWeight: FontWeight.w500, color: textColor,
+                            fontSize: typo.bodySize, fontWeight: FontWeight.w500, color: textColor, fontFamily: typo.fontFamily,
                           ),
                         ),
                       ),
@@ -434,28 +450,29 @@ class _BenchmarkTestScreenState extends State<BenchmarkTestScreen> {
                   // Skip button — lets user advance even without selecting
                   if (_selectedOption == null)
                     Padding(
-                      padding: const EdgeInsets.only(top: 12),
+                      padding: const EdgeInsets.only(top: KiwiSpacing.md),
                       child: Center(
                         child: GestureDetector(
                           onTap: _skipQuestion,
                           child: Container(
-                            padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+                            padding: const EdgeInsets.symmetric(horizontal: KiwiSpacing.xl, vertical: KiwiSpacing.md),
                             decoration: BoxDecoration(
-                              color: Colors.grey.shade100,
-                              borderRadius: BorderRadius.circular(20),
-                              border: Border.all(color: Colors.grey.shade300),
+                              color: colors.backgroundDark,
+                              borderRadius: BorderRadius.circular(shape.chipRadius),
+                              border: Border.all(color: colors.topicCardBorder),
                             ),
                             child: Row(
                               mainAxisSize: MainAxisSize.min,
                               children: [
-                                Icon(Icons.skip_next_rounded, size: 18, color: Colors.grey.shade600),
-                                const SizedBox(width: 6),
+                                Icon(Icons.skip_next_rounded, size: 18, color: colors.textMuted),
+                                const SizedBox(width: KiwiSpacing.sm),
                                 Text(
                                   'Skip',
                                   style: TextStyle(
-                                    fontSize: 14,
+                                    fontSize: typo.bodySize,
                                     fontWeight: FontWeight.w600,
-                                    color: Colors.grey.shade600,
+                                    color: colors.textMuted,
+                                    fontFamily: typo.fontFamily,
                                   ),
                                 ),
                               ],
@@ -490,7 +507,7 @@ class _BenchmarkTestScreenState extends State<BenchmarkTestScreen> {
               Navigator.of(ctx).pop();
               Navigator.of(context).pop();
             },
-            child: Text('Leave', style: TextStyle(color: Colors.red.shade400)),
+            child: Text('Leave', style: TextStyle(color: KiwiColors.coral)),
           ),
         ],
       ),
@@ -509,35 +526,38 @@ class _BenchmarkTestScreenState extends State<BenchmarkTestScreen> {
     final totalCorrect = (result['total_correct'] as num?)?.toInt() ?? 0;
     final totalQuestions = (result['total_questions'] as num?)?.toInt() ?? _questions.length;
     final accuracy = totalQuestions > 0 ? (totalCorrect / totalQuestions * 100) : 0.0;
+    final colors = _tier.colors;
+    final typo = _tier.typography;
+    final shape = _tier.shape;
 
     return SingleChildScrollView(
-      padding: const EdgeInsets.all(20),
+      padding: const EdgeInsets.all(KiwiSpacing.xl),
       child: Column(
         children: [
-          const SizedBox(height: 12),
+          const SizedBox(height: KiwiSpacing.md),
           // Completion header
           Container(
             width: 64,
             height: 64,
             decoration: BoxDecoration(
               color: KiwiColors.kiwiPrimaryLight,
-              borderRadius: BorderRadius.circular(16),
+              borderRadius: BorderRadius.circular(shape.cardRadius),
             ),
             child: const Center(
               child: Text('\u{1F389}', style: TextStyle(fontSize: 32)),
             ),
           ),
-          const SizedBox(height: 16),
-          const Text(
+          const SizedBox(height: KiwiSpacing.lg),
+          Text(
             'Test Complete!',
-            style: TextStyle(fontSize: 22, fontWeight: FontWeight.w800, color: KiwiColors.textDark),
+            style: TextStyle(fontSize: typo.headlineSize + 2, fontWeight: typo.headlineWeight, color: colors.textPrimary, fontFamily: typo.fontFamily),
           ),
-          const SizedBox(height: 8),
+          const SizedBox(height: KiwiSpacing.sm),
           Text(
             '$totalCorrect of $totalQuestions correct (${accuracy.round()}%)',
-            style: const TextStyle(fontSize: 14, color: KiwiColors.textMid),
+            style: TextStyle(fontSize: typo.bodySize, color: colors.textSecondary, fontFamily: typo.fontFamily),
           ),
-          const SizedBox(height: 24),
+          const SizedBox(height: KiwiSpacing.xl),
 
           // Proficiency card (reuse the widget)
           if (proficiency != null)
@@ -550,11 +570,11 @@ class _BenchmarkTestScreenState extends State<BenchmarkTestScreen> {
           if (proficiency == null)
             Container(
               width: double.infinity,
-              padding: const EdgeInsets.all(20),
+              padding: shape.cardPadding,
               decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(16),
-                border: Border.all(color: Colors.grey.shade200),
+                color: colors.cardBg,
+                borderRadius: BorderRadius.circular(shape.cardRadius),
+                border: Border.all(color: colors.topicCardBorder),
               ),
               child: Column(
                 children: [
@@ -562,34 +582,35 @@ class _BenchmarkTestScreenState extends State<BenchmarkTestScreen> {
                     '$scaleScore',
                     style: TextStyle(
                       fontSize: 48, fontWeight: FontWeight.w800,
-                      color: KiwiColors.kiwiPrimary,
+                      color: colors.primary,
+                      fontFamily: typo.fontFamily,
                     ),
                   ),
-                  const SizedBox(height: 4),
-                  const Text('Scale Score',
-                      style: TextStyle(fontSize: 14, color: KiwiColors.textMid)),
+                  const SizedBox(height: KiwiSpacing.xs),
+                  Text('Scale Score',
+                      style: TextStyle(fontSize: typo.bodySize, color: colors.textSecondary, fontFamily: typo.fontFamily)),
                 ],
               ),
             ),
 
-          const SizedBox(height: 24),
+          const SizedBox(height: KiwiSpacing.xl),
 
           // Topic breakdown if available
           if (result['topic_scores'] != null) ...[
             Container(
               width: double.infinity,
-              padding: const EdgeInsets.all(16),
+              padding: shape.cardPadding,
               decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(14),
-                border: Border.all(color: Colors.grey.shade200),
+                color: colors.cardBg,
+                borderRadius: BorderRadius.circular(shape.cardRadius),
+                border: Border.all(color: colors.topicCardBorder),
               ),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Text('Topic Breakdown',
-                      style: TextStyle(fontSize: 14, fontWeight: FontWeight.w700, color: KiwiColors.textDark)),
-                  const SizedBox(height: 12),
+                  Text('Topic Breakdown',
+                      style: TextStyle(fontSize: typo.bodySize, fontWeight: FontWeight.w700, color: colors.textPrimary, fontFamily: typo.fontFamily)),
+                  const SizedBox(height: KiwiSpacing.md),
                   ...(result['topic_scores'] as Map<String, dynamic>).entries.map((e) {
                     final topicData = e.value as Map<String, dynamic>;
                     final topicAcc = (topicData['accuracy'] as num?)?.toDouble() ?? 0;
@@ -599,15 +620,15 @@ class _BenchmarkTestScreenState extends State<BenchmarkTestScreen> {
                             ? KiwiColors.kiwiPrimary
                             : KiwiColors.sunset;
                     return Padding(
-                      padding: const EdgeInsets.only(bottom: 8),
+                      padding: const EdgeInsets.only(bottom: KiwiSpacing.sm),
                       child: Row(
                         children: [
                           Expanded(
                             child: Text(e.key,
-                                style: const TextStyle(fontSize: 13, color: KiwiColors.textMid)),
+                                style: TextStyle(fontSize: typo.chipSize, color: colors.textSecondary, fontFamily: typo.fontFamily)),
                           ),
                           Text('${topicAcc.round()}%',
-                              style: TextStyle(fontSize: 13, fontWeight: FontWeight.w700, color: topicColor)),
+                              style: TextStyle(fontSize: typo.chipSize, fontWeight: FontWeight.w700, color: topicColor, fontFamily: typo.fontFamily)),
                         ],
                       ),
                     );
@@ -617,7 +638,7 @@ class _BenchmarkTestScreenState extends State<BenchmarkTestScreen> {
             ),
           ],
 
-          const SizedBox(height: 24),
+          const SizedBox(height: KiwiSpacing.xl),
 
           // Done button
           GestureDetector(
@@ -627,18 +648,18 @@ class _BenchmarkTestScreenState extends State<BenchmarkTestScreen> {
             },
             child: Container(
               width: double.infinity,
-              padding: const EdgeInsets.symmetric(vertical: 16),
+              padding: shape.buttonPadding,
               decoration: BoxDecoration(
-                color: KiwiColors.kiwiPrimary,
-                borderRadius: BorderRadius.circular(14),
+                color: colors.primary,
+                borderRadius: BorderRadius.circular(shape.buttonRadius),
               ),
-              child: const Center(
+              child: Center(
                 child: Text('Done',
-                    style: TextStyle(fontSize: 16, fontWeight: FontWeight.w700, color: Colors.white)),
+                    style: TextStyle(fontSize: typo.buttonSize, fontWeight: FontWeight.w700, color: Colors.white, fontFamily: typo.fontFamily)),
               ),
             ),
           ),
-          const SizedBox(height: 16),
+          const SizedBox(height: KiwiSpacing.lg),
         ],
       ),
     );

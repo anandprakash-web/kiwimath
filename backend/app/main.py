@@ -19,12 +19,14 @@ import os
 import time
 from pathlib import Path
 
-from fastapi import FastAPI, Request
+from fastapi import Depends, FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import HTMLResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
 
+from app.core.auth import verify_admin, verify_token
 from app.api.admin import router as admin_router
+from app.api.admin_review import router as admin_review_router
 from app.api.analytics import router as analytics_router
 from app.api.assessment import router as assessment_router
 from app.api.flag import router as flag_router
@@ -41,12 +43,15 @@ from app.api.engagement import router as engagement_router
 from app.api.growth import router as growth_router
 from app.api.content_editor import router as content_editor_router
 from app.api.olympiad import router as olympiad_router
+from app.api.olympiad_v2 import router as olympiad_v2_router
+from app.api.bookmarks import router as bookmarks_router
 from app.api.wavebook import router as wavebook_router
 from app.api.questions_v2 import router as questions_v2_router
 from app.api.questions_v4 import router as questions_v4_router
 from app.api.user import router as user_router
 from app.services.content_store_v2 import bootstrap_v2_from_env, store_v2
 from app.services.content_store_v4 import bootstrap_v4_from_env, store_v4
+from app.services.pillar_content_store import init_pillar_store
 from app.services.firestore_service import is_firestore_available
 from app.services.ncert_content_store import init_ncert_store, ncert_store
 from app.services.singapore_content_store import init_singapore_store, singapore_store
@@ -58,54 +63,87 @@ logger = logging.getLogger("kiwimath")
 
 
 def create_app() -> FastAPI:
+    is_production = os.environ.get("KIWIMATH_ENV", "").lower() == "production"
+
     app = FastAPI(
         title="Kiwimath API",
         version="2.0.0",
         description="Adaptive K-5 math olympiad engine with behavioral prediction (PoP model).",
+        # In production, disable interactive API docs and the OpenAPI schema.
+        docs_url=None if is_production else "/docs",
+        redoc_url=None if is_production else "/redoc",
+        openapi_url=None if is_production else "/openapi.json",
     )
 
-    # CORS — Flutter app + web preview.
+    # CORS — restrict to known web origins (Flutter native apps are unaffected
+    # by CORS). Override with KIWIMATH_CORS_ORIGINS (comma-separated).
+    cors_origins = [
+        o.strip()
+        for o in os.environ.get(
+            "KIWIMATH_CORS_ORIGINS",
+            "https://kiwimath-801c1.web.app,https://kiwimath-801c1.firebaseapp.com",
+        ).split(",")
+        if o.strip()
+    ]
     app.add_middleware(
         CORSMiddleware,
-        allow_origins=["*"],
+        allow_origins=cors_origins,
         allow_credentials=True,
         allow_methods=["*"],
         allow_headers=["*"],
         expose_headers=["*"],
     )
 
-    # Routers — v2 only.
-    app.include_router(questions_v2_router)
-    app.include_router(questions_v4_router)
-    app.include_router(onboarding_router)
-    app.include_router(parent_router)
-    app.include_router(learning_path_router)
-    app.include_router(gamification_router)
-    app.include_router(paywall_router)
-    app.include_router(user_router)
-    app.include_router(admin_router)
-    app.include_router(analytics_router)
-    app.include_router(companion_router)
-    app.include_router(portal_router)
-    app.include_router(assessment_router)
-    app.include_router(flag_router)
-    app.include_router(clans_router)
-    app.include_router(daily_puzzle_router)
-    app.include_router(engagement_router)
-    app.include_router(growth_router)
-    app.include_router(content_editor_router)
-    app.include_router(olympiad_router)
-    app.include_router(wavebook_router)
+    # Auth dependencies:
+    #   user_auth  — any signed-in Firebase user (verified ID token)
+    #   admin_auth — allowlisted admin (KIWIMATH_ADMIN_EMAILS / KIWIMATH_ADMIN_UIDS)
+    user_auth = [Depends(verify_token)]
+    admin_auth = [Depends(verify_admin)]
+
+    # Routers — user-facing (require a valid Firebase ID token).
+    app.include_router(questions_v2_router, dependencies=user_auth)
+    app.include_router(questions_v4_router, dependencies=user_auth)
+    app.include_router(onboarding_router, dependencies=user_auth)
+    app.include_router(parent_router, dependencies=user_auth)
+    app.include_router(learning_path_router, dependencies=user_auth)
+    app.include_router(gamification_router, dependencies=user_auth)
+    app.include_router(paywall_router, dependencies=user_auth)
+    app.include_router(user_router, dependencies=user_auth)
+    app.include_router(companion_router, dependencies=user_auth)
+    app.include_router(assessment_router, dependencies=user_auth)
+    app.include_router(flag_router, dependencies=user_auth)
+    app.include_router(clans_router, dependencies=user_auth)
+    app.include_router(daily_puzzle_router, dependencies=user_auth)
+    app.include_router(engagement_router, dependencies=user_auth)
+    app.include_router(growth_router, dependencies=user_auth)
+    app.include_router(olympiad_router, dependencies=user_auth)
+    app.include_router(olympiad_v2_router, dependencies=user_auth)
+    app.include_router(bookmarks_router, dependencies=user_auth)
+    app.include_router(wavebook_router, dependencies=user_auth)
+
+    # Routers — admin-only.
+    app.include_router(admin_router, dependencies=admin_auth)
+    app.include_router(admin_review_router, dependencies=admin_auth)
+    app.include_router(analytics_router, dependencies=admin_auth)
+    app.include_router(portal_router, dependencies=admin_auth)
+    app.include_router(content_editor_router, dependencies=admin_auth)
 
     # -----------------------------------------------------------------------
     # Question Editor UI — simple web page for content team
     # -----------------------------------------------------------------------
-    @app.get("/editor", response_class=HTMLResponse)
+    @app.get("/editor", response_class=HTMLResponse, dependencies=admin_auth)
     def serve_editor():
         editor_path = Path(__file__).resolve().parent.parent / "static" / "editor.html"
         if editor_path.exists():
             return HTMLResponse(content=editor_path.read_text(), status_code=200)
         return HTMLResponse(content="<h1>Editor not found</h1>", status_code=404)
+
+    @app.get("/admin/dashboard", response_class=HTMLResponse, dependencies=admin_auth)
+    def serve_admin_dashboard():
+        dash_path = Path(__file__).resolve().parent.parent / "static" / "admin_dashboard.html"
+        if dash_path.exists():
+            return HTMLResponse(content=dash_path.read_text(), status_code=200)
+        return HTMLResponse(content="<h1>Dashboard not found</h1>", status_code=404)
 
     # -----------------------------------------------------------------------
     # Startup
@@ -206,6 +244,13 @@ def create_app() -> FastAPI:
             logger.info(f"ICSE content: {icse_store.total_questions} questions loaded")
         except Exception as e:
             logger.warning(f"ICSE store init failed (non-fatal): {e}")
+        try:
+            init_pillar_store()
+            from app.services.pillar_content_store import pillar_store
+            ps = pillar_store.stats
+            logger.info(f"Olympiad v2 pillar content: {ps['total']} questions loaded")
+        except Exception as e:
+            logger.warning(f"Pillar store init failed (non-fatal): {e}")
         logger.info(f"Firestore: {'connected' if is_firestore_available() else 'unavailable (in-memory mode)'}")
         logger.info(f"Startup complete in {time.time()-t0:.1f}s")
 
@@ -236,29 +281,30 @@ def create_app() -> FastAPI:
             "firestore": "connected" if is_firestore_available() else "in-memory",
         }
 
-    @app.get("/debug/content")
-    def debug_content():
-        """Debug endpoint: shows what content is loaded and filesystem state."""
-        import os
-        content_dir = os.environ.get("KIWIMATH_V2_CONTENT_DIR", "NOT SET")
-        dir_exists = os.path.isdir(content_dir) if content_dir != "NOT SET" else False
-        dir_contents = []
-        if dir_exists:
-            try:
-                dir_contents = sorted(os.listdir(content_dir))
-            except Exception as e:
-                dir_contents = [f"ERROR: {e}"]
-        v2_stats = store_v2.stats()
-        # Sample question IDs
-        sample_ids = list(store_v2._questions.keys())[:20]
-        return {
-            "env_var": content_dir,
-            "dir_exists": dir_exists,
-            "dir_contents": dir_contents,
-            "v2_stats": v2_stats,
-            "sample_question_ids": sample_ids,
-            "memory_mb": _get_memory_mb(),
-        }
+    # Debug endpoint — never registered in production (404 there).
+    if not is_production:
+        @app.get("/debug/content", dependencies=admin_auth)
+        def debug_content():
+            """Debug endpoint: shows what content is loaded and filesystem state."""
+            content_dir = os.environ.get("KIWIMATH_V2_CONTENT_DIR", "NOT SET")
+            dir_exists = os.path.isdir(content_dir) if content_dir != "NOT SET" else False
+            dir_contents = []
+            if dir_exists:
+                try:
+                    dir_contents = sorted(os.listdir(content_dir))
+                except Exception as e:
+                    dir_contents = [f"ERROR: {e}"]
+            v2_stats = store_v2.stats()
+            # Sample question IDs
+            sample_ids = list(store_v2._questions.keys())[:20]
+            return {
+                "env_var": content_dir,
+                "dir_exists": dir_exists,
+                "dir_contents": dir_contents,
+                "v2_stats": v2_stats,
+                "sample_question_ids": sample_ids,
+                "memory_mb": _get_memory_mb(),
+            }
 
     def _get_memory_mb():
         try:
@@ -270,7 +316,7 @@ def create_app() -> FastAPI:
     # -----------------------------------------------------------------------
     # Content stats (for dashboards / admin)
     # -----------------------------------------------------------------------
-    @app.get("/stats")
+    @app.get("/stats", dependencies=user_auth)
     def content_stats():
         """Detailed v2 content statistics."""
         return {
@@ -281,7 +327,7 @@ def create_app() -> FastAPI:
     # -----------------------------------------------------------------------
     # Admin CMS UI
     # -----------------------------------------------------------------------
-    @app.get("/cms", response_class=HTMLResponse)
+    @app.get("/cms", response_class=HTMLResponse, dependencies=admin_auth)
     def admin_cms():
         admin_path = Path(__file__).parent.parent / "admin.html"
         if admin_path.exists():
@@ -291,7 +337,7 @@ def create_app() -> FastAPI:
     # -----------------------------------------------------------------------
     # Test harness (dev only)
     # -----------------------------------------------------------------------
-    @app.get("/test", response_class=HTMLResponse)
+    @app.get("/test", response_class=HTMLResponse, dependencies=admin_auth)
     def test_harness():
         harness_path = Path(__file__).parent.parent / "test_harness.html"
         if harness_path.exists():

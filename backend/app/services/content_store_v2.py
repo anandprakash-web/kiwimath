@@ -30,30 +30,42 @@ from pydantic import BaseModel, ConfigDict, Field, field_validator
 # ---------------------------------------------------------------------------
 
 class HintLadder(BaseModel):
-    """Socratic hint ladder — 6 levels from gentle nudge to teach-and-retry."""
+    """Socratic hint ladder — up to 6 levels from gentle nudge to teach-and-retry.
+
+    v4 content ships 3-level ladders (level_0..level_2); level_3..level_5 are
+    optional so those ladders validate instead of silently returning None.
+    """
     level_0: str = Field(..., description="Pause prompt — gentle nudge to re-read")
     level_1: str = Field(..., description="Attention direction — where to look")
     level_2: str = Field(..., description="Thinking question — Socratic prompt")
-    level_3: str = Field(..., description="Scaffolded step — break it down")
-    level_4: str = Field(..., description="Guided reveal — almost there")
-    level_5: str = Field(..., description="Teach + retry — explain the concept")
+    level_3: Optional[str] = Field(default=None, description="Scaffolded step — break it down")
+    level_4: Optional[str] = Field(default=None, description="Guided reveal — almost there")
+    level_5: Optional[str] = Field(default=None, description="Teach + retry — explain the concept")
 
 
 # ---------------------------------------------------------------------------
 # v2 Question model (flat, no templates)
 # ---------------------------------------------------------------------------
 
-# Accept T[1-8]-NNN topic IDs *and* curriculum IDs: NCERT-G3-001, SING-G1-001,
-# USCC-G2-005, ICSE-G4-100.  The expanded pattern keeps backward compat with
-# the original Grade 1-6 content while also allowing the four curriculum
-# question banks (NCERT, Singapore/SING, USCC, ICSE) to be loaded into the
-# same unified store.
+# Accept all question ID formats:
+#   T[1-8]-NNN           — Olympiad (v2 original)
+#   NCERT-G3-001 etc.    — Curriculum question banks
+#   GEN-G3M-001          — Generated multiplication/division
+#   PCT-G5-001           — Generated percentage/ratio
+#   A1-ADD-0001          — v4 adaptive (grade-topic unique IDs)
+#   wb_L3_s01_q01        — Wavebook questions
+#   BEN-001              — Benjamin olympiad
+#   OLY-001              — Olympiad DPP
 _QUESTION_ID_RE = re.compile(
     r"^(?:"
-    r"T[1-8]-\d{3,4}(?:-G\d(?:-L\d)?)?"         # Olympiad (original + grade-suffixed copies)
+    r"T[1-8]-\d{3,4}[a-z]?(?:-G\d(?:-L\d)?)?"   # Olympiad (original + grade-suffixed + variety copies)
     r"|(?:NCERT|SING|USCC|ICSE|IGCSE)-G[1-6]-\d{3,4}(?:-G\d)?"  # Curriculum (+ grade copies)
     r"|GEN-G\d[MD]-\d{3}"                         # Generated multiplication/division
     r"|PCT-G5-\d{3}"                              # Generated percentage/ratio
+    r"|A[1-6]-[A-Z]{2,4}-\d{4}"                  # v4 adaptive (A1-ADD-0001)
+    r"|wb_[A-Za-z0-9_]+"                          # Wavebook (wb_L3_s01_q01)
+    r"|BEN[-_]\d{3,4}"                            # Benjamin olympiad
+    r"|OLY[-_]\d{3,4}"                            # Olympiad DPP
     r")$"
 )
 
@@ -65,7 +77,7 @@ class QuestionV2(BaseModel):
     stem: str
     original_stem: Optional[str] = None
     choices: List[str] = Field(default_factory=list)
-    correct_answer: int = Field(default=0, ge=0, le=3)
+    correct_answer: int = Field(default=0, ge=0)  # MCQ: index 0-3, Integer/drag_drop: actual value
     difficulty_tier: str  # easy, medium, hard, advanced, expert
     difficulty_score: int = Field(..., ge=1, le=500)
     visual_svg: Optional[str] = None
@@ -88,7 +100,7 @@ class QuestionV2(BaseModel):
     solution_steps: List[str] = Field(default_factory=list)
     # Multi-mode interaction support
     interaction_mode: str = "mcq"  # "mcq" | "integer" | "drag_drop"
-    correct_value: Optional[int] = None  # For integer mode: the correct numeric answer
+    correct_value: Optional[Union[int, float]] = None  # For integer/decimal mode: the correct numeric answer
     correct_order: Optional[List[int]] = None  # For drag_drop: correct ordering of items
     drag_items: Optional[List[str]] = None  # For drag_drop: the items to be arranged
 
@@ -138,20 +150,40 @@ class QuestionV2(BaseModel):
     def validate_id_format(cls, v: str) -> str:
         if not _QUESTION_ID_RE.match(v):
             raise ValueError(
-                f"Question ID '{v}' does not match required format T[1-8]-NNN "
-                f"(e.g. T1-001, T8-600)"
+                f"Question ID '{v}' does not match any valid format "
+                f"(e.g. T1-001, A1-ADD-0001, NCERT-G3-001)"
             )
         return v
 
     @property
     def hint_ladder(self) -> Optional[HintLadder]:
-        """Get structured hint ladder if available."""
-        if isinstance(self.hint, dict):
-            try:
-                return HintLadder(**self.hint)
-            except Exception:
-                return None
-        return None
+        """Get structured hint ladder if available.
+
+        Accepts both 6-level (legacy v2) and 3-level (v4) ladders. Missing
+        deeper levels are forward-filled with the deepest available hint so
+        consumers that expect 6 string levels degrade gracefully.
+        """
+        if not isinstance(self.hint, dict):
+            return None
+        levels: List[Optional[str]] = []
+        for i in range(6):
+            v = self.hint.get(f"level_{i}")
+            levels.append(v.strip() if isinstance(v, str) and v.strip() else None)
+        if not any(levels):
+            return None
+        # Forward-fill: each missing level inherits the deepest earlier hint
+        # (and leading gaps take the first available one).
+        first = next(v for v in levels if v)
+        filled: List[str] = []
+        prev = first
+        for v in levels:
+            if v:
+                prev = v
+            filled.append(prev)
+        try:
+            return HintLadder(**{f"level_{i}": filled[i] for i in range(6)})
+        except Exception:
+            return None
 
     @property
     def hint_text(self) -> Optional[str]:

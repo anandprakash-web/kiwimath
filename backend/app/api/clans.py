@@ -15,16 +15,31 @@ Endpoints (12):
     POST   /v4/challenges/{cid}/answer            → Submit answer (leader only)
     GET    /v4/challenges/{cid}/guesses/{clan_id} → Get clan's guess board
     POST   /v4/challenges/{cid}/guess             → Submit a guess (1/day, 60 chars)
+
+Persistence:
+    All clan state lives in Firestore via ClanFirestoreService
+    (app/services/clan_firestore.py). When Firestore is unavailable
+    (local dev / tests without firebase-admin) the module-level dicts
+    below act as the fallback store so everything still works.
+
+    Firestore queries used (may require composite indexes):
+      - clans: member_uids array_contains + status ==   (find my clan)
+      - clans: invite_code == + status ==               (join by code)
+      - clans: grade == + status ==                     (leaderboard)
 """
 
 from __future__ import annotations
 
 from datetime import datetime, timedelta, timezone
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, List, Optional, Tuple
 
-from fastapi import APIRouter, HTTPException, Query
+from fastapi import APIRouter, Header, HTTPException, Query
 from pydantic import BaseModel, Field
 
+from app.core.auth import internal_key_matches
+
+from app.services.clan_firestore import ClanFirestoreService
+from app.services.state_store import FirestoreBackedStore
 from app.services.clan_service import (
     CREST_COLORS,
     CREST_SHAPES,
@@ -45,14 +60,137 @@ from app.services.clan_service import (
 router = APIRouter(prefix="/v4", tags=["clans"])
 
 # ---------------------------------------------------------------------------
-# In-memory stores (replace with Firestore in production)
+# Persistence layer
 # ---------------------------------------------------------------------------
+# Firestore-backed (authoritative in production). The dicts below are used
+# ONLY as the fallback store when Firestore is unavailable — they are not a
+# read-through cache, so reads never serve stale cross-instance data.
+_clan_fs = ClanFirestoreService()
+
 _clans: Dict[str, Dict[str, Any]] = {}
-_daily_scores: Dict[str, Dict[str, Dict[str, Any]]] = {}  # clan_id -> date -> scores
+_daily_scores: Dict[str, Dict[str, Any]] = {}  # "{clan_id}:{date}" or "{clan_id}:{uid}:{date}"
 _challenges: Dict[str, Dict[str, Any]] = {}
 _clan_challenge_progress: Dict[str, Dict[str, Dict[str, Any]]] = {}  # clan_id -> cid -> progress
 _guesses: Dict[str, Dict[str, Dict[str, Dict[str, Any]]]] = {}  # clan_id -> cid -> uid -> guess
-_reactions: Dict[str, List[Dict[str, Any]]] = {}  # clan_id -> [reactions]
+
+# Reactions are ephemeral social fluff — short-TTL read cache is fine.
+_reactions_store = FirestoreBackedStore("clan_reactions", cache_ttl_seconds=10)
+# Per-member daily practice scores (written by the practice pipeline; read by
+# the daily aggregation cron). Key: "{clan_id}:{uid}:{date}".
+_member_scores_store = FirestoreBackedStore("clan_member_daily_scores")
+
+
+def _fs() -> bool:
+    """True when Firestore is connected (authoritative mode)."""
+    try:
+        from app.services.firestore_service import is_firestore_available
+        return is_firestore_available()
+    except Exception:
+        return False
+
+
+# --- Clan accessors --------------------------------------------------------
+
+def get_clan_doc(clan_id: str) -> Optional[Dict[str, Any]]:
+    """Public accessor used by other routers (e.g. engagement pledges)."""
+    if _fs():
+        return _clan_fs.get_clan(clan_id)
+    return _clans.get(clan_id)
+
+
+def _save_clan(clan_id: str, doc: Dict[str, Any]) -> None:
+    if _fs():
+        _clan_fs.create_clan(clan_id, doc)
+    else:
+        _clans[clan_id] = doc
+
+
+def _update_clan(clan_id: str, updates: Dict[str, Any]) -> None:
+    if _fs():
+        _clan_fs.update_clan(clan_id, updates)
+    else:
+        _clans.setdefault(clan_id, {}).update(updates)
+
+
+def _find_clan_by_member(uid: str) -> Optional[Tuple[str, Dict[str, Any]]]:
+    if _fs():
+        return _clan_fs.find_clan_by_member(uid)
+    for cid, clan in _clans.items():
+        if uid in clan.get("member_uids", []) and clan.get("status") == "active":
+            return cid, clan
+    return None
+
+
+def _find_clan_by_invite(code: str) -> Optional[Tuple[str, Dict[str, Any]]]:
+    if _fs():
+        return _clan_fs.find_clan_by_invite_code(code)
+    for cid, clan in _clans.items():
+        if clan.get("invite_code") == code and clan.get("status") == "active":
+            return cid, clan
+    return None
+
+
+def _find_clans_by_grade(grade: int) -> List[Tuple[str, Dict[str, Any]]]:
+    if _fs():
+        return _clan_fs.find_clans_by_grade(grade)
+    return [
+        (cid, clan) for cid, clan in _clans.items()
+        if clan.get("grade") == grade and clan.get("status") == "active"
+    ]
+
+
+def _all_active_clans() -> List[Tuple[str, Dict[str, Any]]]:
+    if _fs():
+        return _clan_fs.all_active_clans()
+    return [(cid, c) for cid, c in _clans.items() if c.get("status") == "active"]
+
+
+# --- Challenge accessors -----------------------------------------------------
+
+def _get_challenge(challenge_id: str) -> Optional[Dict[str, Any]]:
+    if _fs():
+        return _clan_fs.get_challenge(challenge_id)
+    return _challenges.get(challenge_id)
+
+
+def _find_active_challenge() -> Optional[Tuple[str, Dict[str, Any]]]:
+    if _fs():
+        return _clan_fs.find_active_challenge()
+    for cid, ch in _challenges.items():
+        if ch.get("status") == "active":
+            return cid, ch
+    return None
+
+
+def _get_progress(clan_id: str, challenge_id: str) -> Dict[str, Any]:
+    if _fs():
+        return _clan_fs.get_challenge_progress(clan_id, challenge_id) or {}
+    return _clan_challenge_progress.get(clan_id, {}).get(challenge_id, {})
+
+
+def _update_progress(clan_id: str, challenge_id: str, updates: Dict[str, Any]) -> None:
+    if _fs():
+        _clan_fs.update_challenge_progress(clan_id, challenge_id, updates)
+    else:
+        prog = _clan_challenge_progress.setdefault(clan_id, {}).setdefault(challenge_id, {})
+        prog.update(updates)
+
+
+# --- Guess accessors ----------------------------------------------------------
+
+def _get_guess_map(clan_id: str, challenge_id: str) -> Dict[str, Dict[str, Any]]:
+    """Return uid -> guess dict for a clan + challenge."""
+    if _fs():
+        entries = _clan_fs.get_guesses(clan_id, challenge_id)
+        return {e["uid"]: e for e in entries}
+    return _guesses.get(clan_id, {}).get(challenge_id, {})
+
+
+def _save_guess(clan_id: str, challenge_id: str, uid: str, guess: Dict[str, Any]) -> None:
+    if _fs():
+        _clan_fs.add_guess(clan_id, challenge_id, uid, guess)
+    else:
+        _guesses.setdefault(clan_id, {}).setdefault(challenge_id, {})[uid] = guess
 
 
 # ---------------------------------------------------------------------------
@@ -159,6 +297,26 @@ class GuessEntry(BaseModel):
     submitted_at: str
 
 
+def _clan_response(clan_id: str, clan: Dict[str, Any], include_private: bool = True) -> ClanResponse:
+    return ClanResponse(
+        clan_id=clan_id,
+        name=clan["name"],
+        grade=clan["grade"],
+        crest=clan["crest"],
+        leader_uid=clan["leader_uid"],
+        member_count=len(clan.get("member_uids", [])),
+        status=clan.get("status", "active"),
+        lifetime_brain_points=clan.get("lifetime_brain_points", 0),
+        lifetime_brawn_points=clan.get("lifetime_brawn_points", 0),
+        lifetime_quiz_points=clan.get("lifetime_quiz_points", 0),
+        clan_level=get_clan_level(clan.get("clan_xp", 0)),
+        invite_code=clan.get("invite_code") if include_private else None,
+        invite_expires_at=clan.get("invite_expires_at") if include_private else None,
+        member_uids=clan.get("member_uids", []) if include_private else [],
+        created_at=clan.get("created_at", ""),
+    )
+
+
 # ---------------------------------------------------------------------------
 # Clan CRUD
 # ---------------------------------------------------------------------------
@@ -178,9 +336,8 @@ async def create_clan(req: CreateClanRequest):
         raise HTTPException(400, f"Invalid crest color. Choose from: {CREST_COLORS}")
 
     # Check if user already in a clan
-    for cid, clan in _clans.items():
-        if req.leader_uid in clan.get("member_uids", []) and clan["status"] == "active":
-            raise HTTPException(400, "You are already in a clan. Leave your current clan first.")
+    if _find_clan_by_member(req.leader_uid):
+        raise HTTPException(400, "You are already in a clan. Leave your current clan first.")
 
     # Create clan
     import uuid
@@ -192,97 +349,39 @@ async def create_clan(req: CreateClanRequest):
         crest_shape=req.crest_shape,
         crest_color=req.crest_color,
     )
-    _clans[clan_id] = doc
+    _save_clan(clan_id, doc)
 
-    return ClanResponse(
-        clan_id=clan_id,
-        name=doc["name"],
-        grade=doc["grade"],
-        crest=doc["crest"],
-        leader_uid=doc["leader_uid"],
-        member_count=len(doc["member_uids"]),
-        status=doc["status"],
-        lifetime_brain_points=0,
-        lifetime_brawn_points=0,
-        lifetime_quiz_points=0,
-        clan_level=get_clan_level(0),
-        invite_code=doc["invite_code"],
-        invite_expires_at=doc["invite_expires_at"],
-        member_uids=doc["member_uids"],
-        created_at=doc["created_at"],
-    )
+    return _clan_response(clan_id, doc)
 
 
 @router.get("/clans/mine")
 async def get_my_clan(user_uid: str = Query(...)):
     """Look up the clan a user belongs to. Returns 404 if not in any clan."""
-    for cid, clan in _clans.items():
-        if user_uid in clan.get("member_uids", []):
-            member_count = len(clan.get("member_uids", []))
-            clan_xp = clan.get("clan_xp", 0)
-            lvl = get_clan_level(clan_xp)
-            return ClanResponse(
-                clan_id=cid,
-                name=clan["name"],
-                grade=clan["grade"],
-                crest=clan["crest"],
-                leader_uid=clan["leader_uid"],
-                member_count=member_count,
-                status=clan.get("status", "active"),
-                lifetime_brain_points=clan.get("lifetime_brain_points", 0),
-                lifetime_brawn_points=clan.get("lifetime_brawn_points", 0),
-                lifetime_quiz_points=clan.get("lifetime_quiz_points", 0),
-                clan_level=lvl,
-                invite_code=clan.get("invite_code"),
-                invite_expires_at=clan.get("invite_expires_at"),
-                member_uids=clan.get("member_uids", []),
-                created_at=clan.get("created_at", ""),
-            )
-    raise HTTPException(404, "You are not in any clan")
+    found = _find_clan_by_member(user_uid)
+    if not found:
+        raise HTTPException(404, "You are not in any clan")
+    cid, clan = found
+    return _clan_response(cid, clan)
 
 
 @router.get("/clans/{clan_id}", response_model=ClanResponse)
 async def get_clan(clan_id: str, uid: Optional[str] = None):
     """Get clan details. Only members see invite code and member list."""
-    clan = _clans.get(clan_id)
+    clan = get_clan_doc(clan_id)
     if not clan:
         raise HTTPException(404, "Clan not found")
 
     is_member = uid in clan.get("member_uids", []) if uid else False
-
-    return ClanResponse(
-        clan_id=clan_id,
-        name=clan["name"],
-        grade=clan["grade"],
-        crest=clan["crest"],
-        leader_uid=clan["leader_uid"],
-        member_count=len(clan["member_uids"]),
-        status=clan["status"],
-        lifetime_brain_points=clan.get("lifetime_brain_points", 0),
-        lifetime_brawn_points=clan.get("lifetime_brawn_points", 0),
-        lifetime_quiz_points=clan.get("lifetime_quiz_points", 0),
-        clan_level=get_clan_level(clan.get("clan_xp", 0)),
-        invite_code=clan.get("invite_code") if is_member else None,
-        invite_expires_at=clan.get("invite_expires_at") if is_member else None,
-        member_uids=clan["member_uids"] if is_member else [],
-        created_at=clan.get("created_at", ""),
-    )
+    return _clan_response(clan_id, clan, include_private=is_member)
 
 
 @router.post("/clans/join", response_model=ClanResponse)
 async def join_clan(req: JoinClanRequest):
     """Join a clan via invite code (parent-authorized)."""
-    # Find clan by invite code
-    target_clan_id = None
-    target_clan = None
-    for cid, clan in _clans.items():
-        if clan.get("invite_code") == req.invite_code and clan["status"] == "active":
-            target_clan_id = cid
-            target_clan = clan
-            break
-
-    if not target_clan:
+    found = _find_clan_by_invite(req.invite_code)
+    if not found:
         raise HTTPException(404, "Invalid or expired invite code")
+    target_clan_id, target_clan = found
 
     # Check expiry
     expires = target_clan.get("invite_expires_at", "")
@@ -309,36 +408,23 @@ async def join_clan(req: JoinClanRequest):
         raise HTTPException(400, "You are already in this clan")
 
     # Check if user is in another clan
-    for cid, clan in _clans.items():
-        if cid != target_clan_id and req.uid in clan.get("member_uids", []) and clan["status"] == "active":
-            raise HTTPException(400, "You are already in another clan. Leave it first.")
+    other = _find_clan_by_member(req.uid)
+    if other and other[0] != target_clan_id:
+        raise HTTPException(400, "You are already in another clan. Leave it first.")
 
-    # Join
+    # Join. NOTE: read-modify-write — two simultaneous joins could briefly
+    # exceed MAX_CLAN_SIZE or drop one member (last write wins). Join traffic
+    # per clan is tiny; accepted.
     target_clan["member_uids"].append(req.uid)
+    _update_clan(target_clan_id, {"member_uids": target_clan["member_uids"]})
 
-    return ClanResponse(
-        clan_id=target_clan_id,
-        name=target_clan["name"],
-        grade=target_clan["grade"],
-        crest=target_clan["crest"],
-        leader_uid=target_clan["leader_uid"],
-        member_count=len(target_clan["member_uids"]),
-        status=target_clan["status"],
-        lifetime_brain_points=target_clan.get("lifetime_brain_points", 0),
-        lifetime_brawn_points=target_clan.get("lifetime_brawn_points", 0),
-        lifetime_quiz_points=target_clan.get("lifetime_quiz_points", 0),
-        clan_level=get_clan_level(target_clan.get("clan_xp", 0)),
-        invite_code=target_clan.get("invite_code"),
-        invite_expires_at=target_clan.get("invite_expires_at"),
-        member_uids=target_clan["member_uids"],
-        created_at=target_clan.get("created_at", ""),
-    )
+    return _clan_response(target_clan_id, target_clan)
 
 
 @router.delete("/clans/{clan_id}/members/{uid}")
 async def remove_member(clan_id: str, uid: str, requester_uid: str = Query(...)):
     """Remove a member (leader or self-removal). Gentle messaging — no 'kicked' language."""
-    clan = _clans.get(clan_id)
+    clan = get_clan_doc(clan_id)
     if not clan:
         raise HTTPException(404, "Clan not found")
 
@@ -350,14 +436,19 @@ async def remove_member(clan_id: str, uid: str, requester_uid: str = Query(...))
         raise HTTPException(403, "Only the clan leader can remove members")
 
     clan["member_uids"].remove(uid)
+    updates: Dict[str, Any] = {"member_uids": clan["member_uids"]}
 
     # If leader leaves, promote longest-tenured
     if uid == clan["leader_uid"] and clan["member_uids"]:
         clan["leader_uid"] = clan["member_uids"][0]
+        updates["leader_uid"] = clan["leader_uid"]
 
     # If empty, dissolve
     if not clan["member_uids"]:
         clan["status"] = "dissolved"
+        updates["status"] = "dissolved"
+
+    _update_clan(clan_id, updates)
 
     return {"message": "This clan adventure has ended for this member", "remaining_members": len(clan["member_uids"])}
 
@@ -365,17 +456,17 @@ async def remove_member(clan_id: str, uid: str, requester_uid: str = Query(...))
 @router.post("/clans/{clan_id}/invite")
 async def regenerate_invite(clan_id: str, uid: str = Query(...)):
     """Regenerate invite code (leader only)."""
-    clan = _clans.get(clan_id)
+    clan = get_clan_doc(clan_id)
     if not clan:
         raise HTTPException(404, "Clan not found")
     if uid != clan["leader_uid"]:
         raise HTTPException(403, "Only the clan leader can regenerate invite codes")
 
     new_code = generate_invite_code()
-    clan["invite_code"] = new_code
-    clan["invite_expires_at"] = (datetime.now(timezone.utc) + timedelta(hours=48)).isoformat()
+    expires_at = (datetime.now(timezone.utc) + timedelta(hours=48)).isoformat()
+    _update_clan(clan_id, {"invite_code": new_code, "invite_expires_at": expires_at})
 
-    return {"invite_code": new_code, "expires_at": clan["invite_expires_at"]}
+    return {"invite_code": new_code, "expires_at": expires_at}
 
 
 # ---------------------------------------------------------------------------
@@ -391,16 +482,15 @@ async def get_leaderboard(
     """Get top clans for a grade. Optionally filter by challenge."""
     grade_clans = [
         {**clan, "clan_id": cid}
-        for cid, clan in _clans.items()
-        if clan["grade"] == grade and clan["status"] == "active"
+        for cid, clan in _find_clans_by_grade(grade)
     ]
 
     sort_key = "lifetime_brain_points"
     if challenge_id:
-        # Use challenge-specific points
+        # Use challenge-specific points (one progress read per clan; grade
+        # leaderboards are capped at 50 clans so this stays bounded).
         for clan in grade_clans:
-            cid = clan["clan_id"]
-            progress = (_clan_challenge_progress.get(cid, {}).get(challenge_id, {}))
+            progress = _get_progress(clan["clan_id"], challenge_id)
             clan["challenge_points"] = progress.get("total_clan_points", 0)
         sort_key = "challenge_points"
 
@@ -429,26 +519,24 @@ VALID_EMOJIS = {"high_five", "fire", "star", "brain", "muscle"}
 @router.post("/clans/{clan_id}/react")
 async def send_reaction(clan_id: str, req: ReactRequest):
     """Send a pre-set emoji reaction (throttled: 1 per type per hour)."""
-    if clan_id not in _clans:
+    clan = get_clan_doc(clan_id)
+    if not clan:
         raise HTTPException(404, "Clan not found")
     if req.emoji not in VALID_EMOJIS:
         raise HTTPException(400, f"Invalid emoji. Choose from: {VALID_EMOJIS}")
 
-    clan = _clans[clan_id]
     if req.uid not in clan["member_uids"]:
         raise HTTPException(403, "You must be a clan member to react")
 
-    if clan_id not in _reactions:
-        _reactions[clan_id] = []
-
-    _reactions[clan_id].append({
+    doc = _reactions_store.get(clan_id, allow_cached=False) or {"reactions": []}
+    doc["reactions"].append({
         "uid": req.uid,
         "emoji": req.emoji,
         "timestamp": datetime.now(timezone.utc).isoformat(),
     })
-
     # Keep only last 50 reactions
-    _reactions[clan_id] = _reactions[clan_id][-50:]
+    doc["reactions"] = doc["reactions"][-50:]
+    _reactions_store.set(clan_id, doc)
 
     return {"status": "ok", "emoji": req.emoji}
 
@@ -461,38 +549,39 @@ async def send_reaction(clan_id: str, req: ReactRequest):
 async def get_active_challenge():
     """Get the current active Picture Unravel challenge."""
     now = datetime.now(timezone.utc)
-    for cid, ch in _challenges.items():
-        if ch["status"] == "active":
-            end = datetime.fromisoformat(ch["end_date"])
-            days_remaining = max(0, (end - now).days)
-            return ChallengeResponse(
-                challenge_id=cid,
-                title=ch["title"],
-                puzzle_type=ch.get("puzzle_type", "pattern_sequence"),
-                difficulty_tier=ch.get("difficulty_tier", "explorer"),
-                grid_rows=ch["grid_rows"],
-                grid_cols=ch["grid_cols"],
-                duration_days=ch["duration_days"],
-                start_date=ch["start_date"],
-                end_date=ch["end_date"],
-                status="active",
-                days_remaining=days_remaining,
-            )
+    found = _find_active_challenge()
+    if found:
+        cid, ch = found
+        end = datetime.fromisoformat(ch["end_date"])
+        days_remaining = max(0, (end - now).days)
+        return ChallengeResponse(
+            challenge_id=cid,
+            title=ch["title"],
+            puzzle_type=ch.get("puzzle_type", "pattern_sequence"),
+            difficulty_tier=ch.get("difficulty_tier", "explorer"),
+            grid_rows=ch["grid_rows"],
+            grid_cols=ch["grid_cols"],
+            duration_days=ch["duration_days"],
+            start_date=ch["start_date"],
+            end_date=ch["end_date"],
+            status="active",
+            days_remaining=days_remaining,
+        )
     return {"message": "No active challenge right now", "status": "none"}
 
 
 @router.get("/challenges/{challenge_id}/progress/{clan_id}")
 async def get_challenge_progress(challenge_id: str, clan_id: str):
     """Get clan's progress in a challenge — blocks revealed, scores, answer status."""
-    ch = _challenges.get(challenge_id)
+    ch = _get_challenge(challenge_id)
     if not ch:
         raise HTTPException(404, "Challenge not found")
-    clan = _clans.get(clan_id)
+    clan = get_clan_doc(clan_id)
     if not clan:
         raise HTTPException(404, "Clan not found")
 
     total_blocks = ch["grid_rows"] * ch["grid_cols"]
-    progress = _clan_challenge_progress.get(clan_id, {}).get(challenge_id, {})
+    progress = _get_progress(clan_id, challenge_id)
 
     total_points = progress.get("total_clan_points", 0)
     brain = progress.get("brain_points", 0)
@@ -531,17 +620,17 @@ async def get_challenge_progress(challenge_id: str, clan_id: str):
 @router.post("/challenges/{challenge_id}/answer")
 async def submit_answer(challenge_id: str, req: SubmitAnswerRequest):
     """Submit or update the official answer (leader only)."""
-    ch = _challenges.get(challenge_id)
+    ch = _get_challenge(challenge_id)
     if not ch:
         raise HTTPException(404, "Challenge not found")
-    clan = _clans.get(req.clan_id)
+    clan = get_clan_doc(req.clan_id)
     if not clan:
         raise HTTPException(404, "Clan not found")
     if req.uid != clan["leader_uid"]:
         raise HTTPException(403, "Only the clan leader can submit the official answer")
 
     total_blocks = ch["grid_rows"] * ch["grid_cols"]
-    progress = _clan_challenge_progress.setdefault(req.clan_id, {}).setdefault(challenge_id, {})
+    progress = _get_progress(req.clan_id, challenge_id)
     total_points = progress.get("total_clan_points", 0)
     blocks = compute_blocks_revealed(total_points, ch.get("points_per_block", 100), total_blocks)
 
@@ -553,12 +642,15 @@ async def submit_answer(challenge_id: str, req: SubmitAnswerRequest):
     day_number = max(1, (datetime.now(timezone.utc) - start).days + 1)
     pts = compute_answer_points(day_number, ch["duration_days"])
 
-    progress["answer"] = req.answer.strip()
-    progress["answer_day"] = day_number
-    progress["answer_points"] = pts
+    answer = req.answer.strip()
+    _update_progress(req.clan_id, challenge_id, {
+        "answer": answer,
+        "answer_day": day_number,
+        "answer_points": pts,
+    })
 
     return {
-        "answer": progress["answer"],
+        "answer": answer,
         "day_submitted": day_number,
         "points_if_correct": pts,
         "message": "Answer updated. You can change it again — last answer counts.",
@@ -572,7 +664,7 @@ async def submit_answer(challenge_id: str, req: SubmitAnswerRequest):
 @router.get("/challenges/{challenge_id}/guesses/{clan_id}")
 async def get_guess_board(challenge_id: str, clan_id: str):
     """Get all guesses from clan members for this challenge."""
-    clan_guesses = _guesses.get(clan_id, {}).get(challenge_id, {})
+    clan_guesses = _get_guess_map(clan_id, challenge_id)
 
     entries = []
     for uid, guess in sorted(clan_guesses.items(), key=lambda x: x[1].get("submitted_at", "")):
@@ -590,10 +682,10 @@ async def get_guess_board(challenge_id: str, clan_id: str):
 @router.post("/challenges/{challenge_id}/guess")
 async def submit_guess(challenge_id: str, req: SubmitGuessRequest):
     """Submit a guess to the clan's guess board (1/day, 60 chars, filtered)."""
-    ch = _challenges.get(challenge_id)
+    ch = _get_challenge(challenge_id)
     if not ch:
         raise HTTPException(404, "Challenge not found")
-    clan = _clans.get(req.clan_id)
+    clan = get_clan_doc(req.clan_id)
     if not clan:
         raise HTTPException(404, "Clan not found")
     if req.uid not in clan["member_uids"]:
@@ -604,11 +696,9 @@ async def submit_guess(challenge_id: str, req: SubmitGuessRequest):
     if not valid:
         raise HTTPException(400, reason)
 
-    # Check 1/day limit
+    # Check 1/day limit (reads Firestore directly — no stale cache)
     today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
-    clan_guesses = _guesses.setdefault(req.clan_id, {}).setdefault(challenge_id, {})
-
-    existing = clan_guesses.get(req.uid)
+    existing = _get_guess_map(req.clan_id, challenge_id).get(req.uid)
     if existing and existing.get("date") == today:
         raise HTTPException(400, "You've already submitted a guess today. Try again tomorrow!")
 
@@ -616,12 +706,12 @@ async def submit_guess(challenge_id: str, req: SubmitGuessRequest):
     start = datetime.fromisoformat(ch["start_date"])
     day_number = max(1, (datetime.now(timezone.utc) - start).days + 1)
 
-    clan_guesses[req.uid] = {
+    _save_guess(req.clan_id, challenge_id, req.uid, {
         "guess_text": req.guess_text.strip(),
         "day_number": day_number,
         "date": today,
         "submitted_at": datetime.now(timezone.utc).isoformat(),
-    }
+    })
 
     return {
         "guess_text": req.guess_text.strip(),
@@ -636,7 +726,11 @@ async def submit_guess(challenge_id: str, req: SubmitGuessRequest):
 
 
 @router.post("/internal/aggregate-daily")
-async def aggregate_daily_scores(api_key: str = Query(...)):
+async def aggregate_daily_scores(
+    x_internal_key: Optional[str] = Header(default=None, alias="X-Internal-Key"),
+    api_key: Optional[str] = Query(default=None, deprecated=True,
+                                   description="Deprecated — use X-Internal-Key header"),
+):
     """Aggregate daily clan scores. Called by Cloud Scheduler at midnight IST.
 
     For each active clan:
@@ -646,30 +740,33 @@ async def aggregate_daily_scores(api_key: str = Query(...)):
     4. Update clan lifetime totals and XP
     5. Store daily score document
     """
-    # Simple API key check for internal endpoints
-    if api_key != "kiwimath_internal_2026":
+    # Internal key check — compares against KIWIMATH_INTERNAL_API_KEY env var
+    # (constant-time). Rejects if the env var is unset/empty. Prefer the
+    # X-Internal-Key header; the api_key query param is a deprecated fallback.
+    provided = x_internal_key or api_key or ""
+    if not internal_key_matches(provided):
         raise HTTPException(403, "Invalid API key")
 
     results = []
     now = datetime.now(timezone.utc)
     today = now.strftime("%Y-%m-%d")
 
-    for clan_id, clan in _clans.items():
-        if clan.get("status") != "active":
-            continue
+    active_challenge = _find_active_challenge()
 
+    for clan_id, clan in _all_active_clans():
         member_uids = clan.get("member_uids", [])
         if not member_uids:
             continue
 
-        # Simulate member scores for now (in production, query from session data)
-        # Each member's daily score would come from their practice sessions
+        # Per-member daily scores written by the practice pipeline
+        # (clan_member_daily_scores collection; key "{clan_id}:{uid}:{date}").
         member_scores = {}
         active_count = 0
         for uid in member_uids:
-            # Check if member has sessions today (simulated)
-            # In production: query user_sessions collection for today's sessions
-            score = _daily_scores.get(f"{clan_id}:{uid}:{today}", {})
+            if _fs():
+                score = _member_scores_store.get(f"{clan_id}:{uid}:{today}")
+            else:
+                score = _daily_scores.get(f"{clan_id}:{uid}:{today}")
             if score:
                 member_scores[uid] = score
                 active_count += 1
@@ -682,27 +779,35 @@ async def aggregate_daily_scores(api_key: str = Query(...)):
         daily_doc = new_daily_score_doc(member_scores, active_count)
 
         # Store daily score
-        _daily_scores[f"{clan_id}:{today}"] = daily_doc
+        if _fs():
+            _clan_fs.set_daily_scores(clan_id, today, daily_doc)
+        else:
+            _daily_scores[f"{clan_id}:{today}"] = daily_doc
 
-        # Update clan lifetime totals
+        # Update clan lifetime totals. Cron runs once daily from a single
+        # Cloud Scheduler job, so this read-modify-write is effectively
+        # single-writer.
         clan["lifetime_brain_points"] = clan.get("lifetime_brain_points", 0) + daily_doc["brain_points"]
         clan["lifetime_brawn_points"] = clan.get("lifetime_brawn_points", 0) + daily_doc["brawn_points"]
         clan["lifetime_quiz_points"] = clan.get("lifetime_quiz_points", 0) + daily_doc["quiz_clan_score"]
         clan["clan_xp"] = clan.get("clan_xp", 0) + daily_doc["clan_xp_earned"]
+        _update_clan(clan_id, {
+            "lifetime_brain_points": clan["lifetime_brain_points"],
+            "lifetime_brawn_points": clan["lifetime_brawn_points"],
+            "lifetime_quiz_points": clan["lifetime_quiz_points"],
+            "clan_xp": clan["clan_xp"],
+        })
 
         # Update challenge progress if active
-        for cid, challenge in _challenges.items():
-            if challenge.get("status") == "active":
-                progress = _clan_challenge_progress.setdefault(clan_id, {}).setdefault(cid, {
-                    "total_clan_points": 0,
-                    "brain_points": 0,
-                    "quiz_points": 0,
-                    "brawn_points": 0,
-                })
-                progress["total_clan_points"] += daily_doc["daily_total"]
-                progress["brain_points"] += daily_doc["brain_points"]
-                progress["quiz_points"] += daily_doc["quiz_clan_score"]
-                progress["brawn_points"] += daily_doc["brawn_points"]
+        if active_challenge:
+            cid, _challenge = active_challenge
+            progress = _get_progress(clan_id, cid)
+            _update_progress(clan_id, cid, {
+                "total_clan_points": progress.get("total_clan_points", 0) + daily_doc["daily_total"],
+                "brain_points": progress.get("brain_points", 0) + daily_doc["brain_points"],
+                "quiz_points": progress.get("quiz_points", 0) + daily_doc["quiz_clan_score"],
+                "brawn_points": progress.get("brawn_points", 0) + daily_doc["brawn_points"],
+            })
 
         results.append({
             "clan_id": clan_id,
@@ -728,9 +833,14 @@ async def aggregate_daily_scores(api_key: str = Query(...)):
 # ---------------------------------------------------------------------------
 
 def seed_demo_challenge():
-    """Create 'The Star Map' demo challenge."""
+    """Create 'The Star Map' demo challenge.
+
+    - Firestore mode: only creates it if no active challenge exists, so
+      redeploys never reset challenge dates.
+    - Fallback mode (local/tests): seeds the in-memory store on import.
+    """
     now = datetime.now(timezone.utc)
-    _challenges["challenge_star_map_01"] = {
+    doc = {
         "title": "The Star Map",
         "puzzle_type": "pattern_sequence",
         "difficulty_tier": "explorer",
@@ -744,6 +854,14 @@ def seed_demo_challenge():
         "end_date": (now + timedelta(days=10)).isoformat(),
         "status": "active",
     }
+    try:
+        if _fs():
+            if _clan_fs.find_active_challenge() is None:
+                _clan_fs.create_challenge("challenge_star_map_01", doc)
+        else:
+            _challenges["challenge_star_map_01"] = doc
+    except Exception:
+        _challenges["challenge_star_map_01"] = doc
 
 
 seed_demo_challenge()

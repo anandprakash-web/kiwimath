@@ -87,15 +87,15 @@ class _ParentalGateDialogState extends State<_ParentalGateDialog> {
             width: 56,
             height: 56,
             decoration: BoxDecoration(
-              color: const Color(0xFFE8F5E9),
+              color: KiwiColors.correctBg,
               shape: BoxShape.circle,
-              border: Border.all(color: const Color(0xFFA5D6A7), width: 2),
+              border: Border.all(color: KiwiColors.correct, width: 2),
             ),
             child: const Center(
               child: Icon(
                 Icons.family_restroom_rounded,
                 size: 28,
-                color: Color(0xFF2E7D32),
+                color: KiwiColors.kiwiGreenDark,
               ),
             ),
           ),
@@ -123,9 +123,9 @@ class _ParentalGateDialogState extends State<_ParentalGateDialog> {
             width: double.infinity,
             padding: const EdgeInsets.symmetric(vertical: 16),
             decoration: BoxDecoration(
-              color: const Color(0xFFF3F1EC),
+              color: KiwiColors.creamDark,
               borderRadius: BorderRadius.circular(14),
-              border: Border.all(color: const Color(0xFFE0DDD6), width: 1.5),
+              border: Border.all(color: KiwiColors.pathLocked, width: 1.5),
             ),
             child: Center(
               child: Text(
@@ -156,7 +156,7 @@ class _ParentalGateDialogState extends State<_ParentalGateDialog> {
               hintStyle: TextStyle(
                 fontSize: 16,
                 fontWeight: FontWeight.w500,
-                color: Colors.grey.shade400,
+                color: KiwiColors.textMuted,
               ),
               contentPadding: const EdgeInsets.symmetric(
                 horizontal: 16,
@@ -166,8 +166,8 @@ class _ParentalGateDialogState extends State<_ParentalGateDialog> {
                 borderRadius: BorderRadius.circular(12),
                 borderSide: BorderSide(
                   color: _showError
-                      ? const Color(0xFFEF5350)
-                      : const Color(0xFFE0E0E0),
+                      ? KiwiColors.coral
+                      : KiwiColors.pathLocked,
                   width: 2,
                 ),
               ),
@@ -175,8 +175,8 @@ class _ParentalGateDialogState extends State<_ParentalGateDialog> {
                 borderRadius: BorderRadius.circular(12),
                 borderSide: BorderSide(
                   color: _showError
-                      ? const Color(0xFFEF5350)
-                      : const Color(0xFFE0E0E0),
+                      ? KiwiColors.coral
+                      : KiwiColors.pathLocked,
                   width: 2,
                 ),
               ),
@@ -184,7 +184,7 @@ class _ParentalGateDialogState extends State<_ParentalGateDialog> {
                 borderRadius: BorderRadius.circular(12),
                 borderSide: BorderSide(
                   color: _showError
-                      ? const Color(0xFFEF5350)
+                      ? KiwiColors.coral
                       : KiwiColors.kiwiGreen,
                   width: 2,
                 ),
@@ -201,7 +201,7 @@ class _ParentalGateDialogState extends State<_ParentalGateDialog> {
               style: const TextStyle(
                 fontSize: 12,
                 fontWeight: FontWeight.w600,
-                color: Color(0xFFEF5350),
+                color: KiwiColors.coral,
               ),
             ),
           ],

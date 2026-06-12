@@ -115,11 +115,11 @@ class _MemberAvatar extends StatelessWidget {
                   shape: BoxShape.circle,
                   color: member.practicedToday
                       ? avatarColor.withOpacity(0.15)
-                      : const Color(0xFFE0E0E0),
+                      : KiwiColors.pathLocked,
                   border: Border.all(
                     color: member.practicedToday
                         ? avatarColor
-                        : const Color(0xFFBDBDBD),
+                        : KiwiColors.pathLocked,
                     width: 2,
                   ),
                 ),
@@ -149,7 +149,7 @@ class _MemberAvatar extends StatelessWidget {
                 height: 16,
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
-                  color: const Color(0xFF4CAF50),
+                  color: KiwiColors.kiwiGreen,
                   border: Border.all(
                     color: KiwiColors.cardBg,
                     width: 1.5,

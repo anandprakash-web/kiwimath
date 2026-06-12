@@ -42,9 +42,9 @@ class _HintLadderBarState extends State<HintLadderBar>
 
   // 3-level colors
   static const _levelColors = [
-    [Color(0xFF81D4FA), Color(0xFF039BE5)], // L1: sky blue
-    [Color(0xFFFFCC80), Color(0xFFFF9800)], // L2: warm amber
-    [Color(0xFFCE93D8), Color(0xFFAB47BC)], // L3: purple
+    [KiwiColors.sky, KiwiColors.sky], // L1: sky blue
+    [KiwiColors.amber, KiwiColors.amber], // L2: warm amber
+    [KiwiColors.indigo, KiwiColors.indigo], // L3: purple
   ];
 
   static const _levelEmoji = [
@@ -150,7 +150,7 @@ class _HintLadderBarState extends State<HintLadderBar>
             gradient: isRevealed
                 ? LinearGradient(colors: colors)
                 : null,
-            color: isRevealed ? null : const Color(0xFFE0E0E0),
+            color: isRevealed ? null : KiwiColors.pathLocked,
             borderRadius: BorderRadius.circular(6),
             boxShadow: isCurrent
                 ? [
@@ -182,14 +182,14 @@ class _HintLadderBarState extends State<HintLadderBar>
           padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
           decoration: BoxDecoration(
             gradient: const LinearGradient(
-              colors: [Color(0xFF81D4FA), Color(0xFF039BE5)],
+              colors: [KiwiColors.sky, KiwiColors.sky],
               begin: Alignment.topLeft,
               end: Alignment.bottomRight,
             ),
             borderRadius: BorderRadius.circular(20),
             boxShadow: [
               BoxShadow(
-                color: const Color(0xFF039BE5).withOpacity(0.3),
+                color: KiwiColors.sky.withOpacity(0.3),
                 blurRadius: 10,
                 offset: const Offset(0, 4),
               ),
@@ -390,13 +390,13 @@ class _HintButtonState extends State<HintButton> {
         decoration: BoxDecoration(
           gradient: LinearGradient(
             colors: hasRevealed
-                ? [const Color(0xFFE1F5FE), const Color(0xFFB3E5FC)]
-                : [const Color(0xFFB3E5FC), const Color(0xFF81D4FA)],
+                ? [KiwiColors.visualBlueBg, KiwiColors.visualBlueBorder]
+                : [KiwiColors.visualBlueBorder, KiwiColors.sky],
           ),
           borderRadius: BorderRadius.circular(16),
           boxShadow: [
             BoxShadow(
-              color: const Color(0xFF039BE5).withOpacity(0.2),
+              color: KiwiColors.sky.withOpacity(0.2),
               blurRadius: 6,
               offset: const Offset(0, 2),
             ),
@@ -414,7 +414,7 @@ class _HintButtonState extends State<HintButton> {
               style: const TextStyle(
                 fontSize: 12,
                 fontWeight: FontWeight.w700,
-                color: Color(0xFF0277BD),
+                color: KiwiColors.sky,
               ),
             ),
           ],
@@ -462,7 +462,7 @@ class _HintBottomSheet extends StatelessWidget {
         maxHeight: MediaQuery.of(context).size.height * 0.55,
       ),
       decoration: const BoxDecoration(
-        color: Color(0xFFFAFCFF),
+        color: KiwiColors.cream,
         borderRadius: BorderRadius.vertical(top: Radius.circular(24)),
       ),
       child: Column(
@@ -474,7 +474,7 @@ class _HintBottomSheet extends StatelessWidget {
             width: 40,
             height: 4,
             decoration: BoxDecoration(
-              color: const Color(0xFFBDBDBD),
+              color: const KiwiColors.textMuted,
               borderRadius: BorderRadius.circular(2),
             ),
           ),

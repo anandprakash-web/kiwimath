@@ -1,9 +1,8 @@
 import 'dart:convert';
 
-import 'package:http/http.dart' as http;
-
 import '../models/growth.dart';
 import 'api_client.dart';
+import 'authed_http.dart' as http;
 
 /// Flutter API client for the Kiwimath Growth Journey system.
 ///
@@ -19,6 +18,8 @@ class GrowthService {
   // Retry helper (same semantics as ApiClient._withRetry)
   // ---------------------------------------------------------------------------
 
+  /// Retries IDEMPOTENT requests (GETs only) up to 2 extra times on
+  /// timeout / 5xx with increasing delay. Mutations must use [_postOnce].
   Future<http.Response> _withRetry(
       Future<http.Response> Function() request) async {
     const maxAttempts = 3;
@@ -35,8 +36,13 @@ class GrowthService {
         await Future.delayed(Duration(milliseconds: 500 * attempt));
       }
     }
-    return await request();
+    // Unreachable: the final attempt either returned or rethrew above.
+    throw ApiException('retry loop exhausted unexpectedly');
   }
+
+  /// Execute a mutation (POST) exactly once — NO automatic retries.
+  Future<http.Response> _postOnce(Future<http.Response> Function() request) =>
+      request();
 
   // ---------------------------------------------------------------------------
   // 1. GET /growth/journey — Full growth journey aggregate
@@ -179,7 +185,7 @@ class GrowthService {
       'theta': theta,
       'per_topic_theta': perTopicTheta,
     };
-    final res = await _withRetry(() => http
+    final res = await _postOnce(() => http
         .post(uri, headers: _jsonHeaders, body: jsonEncode(body))
         .timeout(const Duration(seconds: 15)));
     if (res.statusCode != 200) {

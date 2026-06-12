@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 120" width="280" height="120">
+  <text x="140.0" y="18" text-anchor="middle" font-size="13" font-weight="bold" font-family="Arial" fill="#333">Trees Pictograph</text>
+  <text x="140.0" y="112" text-anchor="middle" font-size="10" font-family="Arial" fill="#666">Each tree = 50 Trees</text>
+  <text x="10" y="66.0" text-anchor="start" font-size="10" font-family="Arial" fill="#333">Trees</text>
+  <polygon points="60,50.0 52,66.0 68,66.0" fill="#4CAF50" stroke="#333" stroke-width="1"/>
+  <rect x="58" y="66.0" width="4" height="6" fill="#795548"/>
+  <polygon points="92,50.0 84,66.0 100,66.0" fill="#4CAF50" stroke="#333" stroke-width="1"/>
+  <rect x="90" y="66.0" width="4" height="6" fill="#795548"/>
+  <polygon points="124,50.0 116,66.0 132,66.0" fill="#4CAF50" stroke="#333" stroke-width="1"/>
+  <rect x="122" y="66.0" width="4" height="6" fill="#795548"/>
+  <polygon points="156,50.0 148,66.0 164,66.0" fill="#4CAF50" stroke="#333" stroke-width="1"/>
+  <rect x="154" y="66.0" width="4" height="6" fill="#795548"/>
+  <clipPath id="halfClip"><rect x="180" y="50.0" width="8" height="34"/></clipPath>
+  <g clip-path="url(#halfClip)">
+    <polygon points="188,50.0 180,66.0 196,66.0" fill="#4CAF50" stroke="#333" stroke-width="1"/>
+    <rect x="186" y="66.0" width="4" height="6" fill="#795548"/>
+  </g>
+  <polygon points="188,50.0 180,66.0 196,66.0" fill="none" stroke="#ccc" stroke-width="1" stroke-dasharray="3,3"/>
+</svg>

@@ -1,9 +1,8 @@
 import 'dart:convert';
 
-import 'package:http/http.dart' as http;
-
 import '../models/clan.dart';
 import 'api_client.dart';
+import 'authed_http.dart' as http;
 
 /// Flutter API client for the Kiwimath Clan system (v4 endpoints).
 ///
@@ -19,7 +18,8 @@ class ClanService {
   // Retry helper (same semantics as ApiClient._withRetry)
   // ---------------------------------------------------------------------------
 
-  /// Retries up to 2 times on timeout / 5xx with increasing delay.
+  /// Retries IDEMPOTENT requests (GETs only) up to 2 extra times on
+  /// timeout / 5xx with increasing delay. Mutations must use [_postOnce].
   Future<http.Response> _withRetry(
       Future<http.Response> Function() request) async {
     const maxAttempts = 3;
@@ -36,9 +36,14 @@ class ClanService {
         await Future.delayed(Duration(milliseconds: 500 * attempt));
       }
     }
-    // Final fallback (should never reach here).
-    return await request();
+    // Unreachable: the final attempt either returned or rethrew above.
+    throw ApiException('retry loop exhausted unexpectedly');
   }
+
+  /// Execute a mutation (POST/DELETE) exactly once — NO automatic retries.
+  /// Retrying could double-create clans, double-join, or duplicate guesses.
+  Future<http.Response> _postOnce(Future<http.Response> Function() request) =>
+      request();
 
   // ---------------------------------------------------------------------------
   // 1. POST /v4/clans  --  Create a clan
@@ -62,7 +67,7 @@ class ClanService {
       'crest_shape': crestShape,
       'crest_color': crestColor,
     };
-    final res = await _withRetry(() => http
+    final res = await _postOnce(() => http
         .post(uri, headers: _jsonHeaders, body: jsonEncode(body))
         .timeout(const Duration(seconds: 15)));
     if (res.statusCode != 200 && res.statusCode != 201) {
@@ -90,7 +95,7 @@ class ClanService {
       'parent_uid': parentUid,
       'grade': userGrade,
     };
-    final res = await _withRetry(() => http
+    final res = await _postOnce(() => http
         .post(uri, headers: _jsonHeaders, body: jsonEncode(body))
         .timeout(const Duration(seconds: 15)));
     if (res.statusCode != 200) {
@@ -113,7 +118,7 @@ class ClanService {
     final uri = Uri.parse(
         '${ApiClient.baseUrl}/v4/clans/$clanId/members/$userUid')
         .replace(queryParameters: {'requester_uid': requesterUid ?? userUid});
-    final res = await _withRetry(() => http
+    final res = await _postOnce(() => http
         .delete(uri, headers: _jsonHeaders)
         .timeout(const Duration(seconds: 10)));
     if (res.statusCode != 200 && res.statusCode != 204) {
@@ -136,7 +141,7 @@ class ClanService {
     final uri =
         Uri.parse('${ApiClient.baseUrl}/v4/clans/$clanId/invite')
             .replace(queryParameters: {'uid': requesterUid});
-    final res = await _withRetry(() => http
+    final res = await _postOnce(() => http
         .post(uri, headers: _jsonHeaders)
         .timeout(const Duration(seconds: 10)));
     if (res.statusCode != 200) {
@@ -230,7 +235,7 @@ class ClanService {
       'uid': userUid,
       'emoji': emoji,
     };
-    final res = await _withRetry(() => http
+    final res = await _postOnce(() => http
         .post(uri, headers: _jsonHeaders, body: jsonEncode(body))
         .timeout(const Duration(seconds: 10)));
     if (res.statusCode != 200) {
@@ -303,7 +308,7 @@ class ClanService {
       'uid': leaderUid,
       'answer': answerText,
     };
-    final res = await _withRetry(() => http
+    final res = await _postOnce(() => http
         .post(uri, headers: _jsonHeaders, body: jsonEncode(body))
         .timeout(const Duration(seconds: 15)));
     if (res.statusCode != 200) {
@@ -356,7 +361,7 @@ class ClanService {
       'uid': userUid,
       'guess_text': guessText,
     };
-    final res = await _withRetry(() => http
+    final res = await _postOnce(() => http
         .post(uri, headers: _jsonHeaders, body: jsonEncode(body))
         .timeout(const Duration(seconds: 15)));
     if (res.statusCode != 200) {

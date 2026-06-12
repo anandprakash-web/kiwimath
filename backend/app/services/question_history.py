@@ -32,6 +32,9 @@ class QuestionHistoryTracker:
     """Tracks which diagnostic questions each student has seen.
 
     Thread-safe via a lock around all mutations.
+    Persists completed sessions to Firestore at
+    ``users/{student_id}/diagnostic_history/sessions``.
+    In-memory dicts serve as a read-through cache.
     """
 
     def __init__(self) -> None:
@@ -41,6 +44,83 @@ class QuestionHistoryTracker:
         # student_id -> current (in-progress) session set
         self._current_session: Dict[str, Set[str]] = {}
         self._lock = Lock()
+        # Track which students have been loaded from Firestore
+        self._loaded_students: Set[str] = set()
+
+    # ------------------------------------------------------------------
+    # Firestore helpers
+    # ------------------------------------------------------------------
+
+    def _load_student(self, student_id: str) -> None:
+        """Lazily load a student's diagnostic history from Firestore.
+
+        Called with the lock held.  Populates ``self._history`` for the
+        student if data exists in Firestore and we haven't loaded yet.
+        """
+        if student_id in self._loaded_students:
+            return
+        self._loaded_students.add(student_id)
+        try:
+            from app.services.firestore_service import _get_db
+            db = _get_db()
+            if not db:
+                return
+            doc = (
+                db.collection("users")
+                .document(student_id)
+                .collection("diagnostic_history")
+                .document("sessions")
+                .get()
+            )
+            if doc.exists:
+                data = doc.to_dict()
+                stored_sessions: List[List[str]] = data.get("sessions", [])
+                if stored_sessions and student_id not in self._history:
+                    self._history[student_id] = [
+                        set(s) for s in stored_sessions
+                    ]
+                    logger.debug(
+                        "Loaded %d diagnostic sessions from Firestore for student=%s",
+                        len(stored_sessions),
+                        student_id,
+                    )
+        except Exception as e:
+            logger.warning(
+                "Failed to load diagnostic history from Firestore for student=%s: %s",
+                student_id,
+                e,
+            )
+
+    def _save_session(self, student_id: str, session_set: Set[str]) -> None:
+        """Persist the full session list to Firestore after finalising.
+
+        Called with the lock held.
+        """
+        try:
+            from app.services.firestore_service import _get_db
+            db = _get_db()
+            if not db:
+                return
+            all_sessions = self._history.get(student_id, [])
+            serialised = [sorted(s) for s in all_sessions]
+            (
+                db.collection("users")
+                .document(student_id)
+                .collection("diagnostic_history")
+                .document("sessions")
+                .set({"sessions": serialised}, merge=True)
+            )
+            logger.debug(
+                "Saved %d diagnostic sessions to Firestore for student=%s",
+                len(serialised),
+                student_id,
+            )
+        except Exception as e:
+            logger.warning(
+                "Failed to save diagnostic session to Firestore for student=%s: %s",
+                student_id,
+                e,
+            )
 
     # ------------------------------------------------------------------
     # Public API
@@ -52,6 +132,7 @@ class QuestionHistoryTracker:
         Finalises any in-progress session and opens a fresh one.
         """
         with self._lock:
+            self._load_student(student_id)
             self._finalise_current(student_id)
             self._current_session[student_id] = set()
             logger.debug(
@@ -69,6 +150,7 @@ class QuestionHistoryTracker:
     ) -> None:
         """Record that a student saw a question in a diagnostic context."""
         with self._lock:
+            self._load_student(student_id)
             if student_id not in self._current_session:
                 # Auto-start a session if none was explicitly started.
                 self._current_session[student_id] = set()
@@ -83,6 +165,7 @@ class QuestionHistoryTracker:
     def end_diagnostic_session(self, student_id: str) -> None:
         """Call when a diagnostic session ends. Finalises the current set."""
         with self._lock:
+            self._load_student(student_id)
             self._finalise_current(student_id)
 
     def get_seen_questions(
@@ -92,6 +175,7 @@ class QuestionHistoryTracker:
     ) -> Set[str]:
         """Get all question IDs this student has ever seen in diagnostics."""
         with self._lock:
+            self._load_student(student_id)
             result: Set[str] = set()
             for session_set in self._history.get(student_id, []):
                 result |= session_set
@@ -125,6 +209,7 @@ class QuestionHistoryTracker:
         Set of question IDs to exclude.
         """
         with self._lock:
+            self._load_student(student_id)
             sessions = list(self._history.get(student_id, []))
             current = self._current_session.get(student_id)
 
@@ -186,6 +271,7 @@ class QuestionHistoryTracker:
     def get_retest_count(self, student_id: str) -> int:
         """Return how many completed diagnostic sessions this student has."""
         with self._lock:
+            self._load_student(student_id)
             return len(self._history.get(student_id, []))
 
     def is_retest(self, student_id: str) -> bool:
@@ -210,6 +296,7 @@ class QuestionHistoryTracker:
                 len(current),
                 len(self._history[student_id]),
             )
+            self._save_session(student_id, current)
 
 
 # ---------------------------------------------------------------------------

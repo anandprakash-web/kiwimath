@@ -38,10 +38,18 @@ _cat_engine: Optional[CATEngine] = None
 _path_engine: Optional[PathEngine] = None
 _spaced_rep: Optional[SpacedRepEngine] = None
 
-# Track multi-domain sessions: student_id -> {domain -> session_id}
-_diagnostic_sessions: dict[str, dict[str, str]] = {}
+# Track multi-domain sessions: student_id -> {domain -> session_id}.
+# Persisted to Firestore (collection "diagnostic_sessions") so the mapping
+# survives deploys. NOTE: the CAT engine's per-session state itself is still
+# in-memory, so an in-flight diagnostic cannot hop Cloud Run instances —
+# only the student → session-id mapping is durable. Documented limitation.
+from app.services.state_store import FirestoreBackedStore
 
-# Track per-session exclusion sets: session_id -> set of item IDs to exclude
+_diagnostic_store = FirestoreBackedStore("diagnostic_sessions")
+
+# Track per-session exclusion sets: session_id -> set of item IDs to exclude.
+# Intentionally in-memory: it is ephemeral, tied to the in-memory CAT session
+# living on this instance, and harmless to lose (worst case: a repeated item).
 _session_exclusions: dict[str, set[str]] = {}
 
 
@@ -290,8 +298,8 @@ async def start_full_diagnostic(req: FullDiagnosticRequest):
         if exclude_ids:
             _session_exclusions[session.session_id] = exclude_ids
 
-    # Track for this student
-    _diagnostic_sessions[req.student_id] = sessions
+    # Track for this student (write-through to Firestore)
+    _diagnostic_store.set(req.student_id, {"sessions": sessions})
 
     # Get first item from first domain
     first_domain = domains[0]
@@ -319,7 +327,8 @@ async def get_full_report(student_id: str = Query(...)):
 
     Requires all domain sessions to be completed.
     """
-    sessions = _diagnostic_sessions.get(student_id)
+    doc = _diagnostic_store.get(student_id)
+    sessions = (doc or {}).get("sessions")
     if not sessions:
         raise HTTPException(404, "No diagnostic found for this student")
 

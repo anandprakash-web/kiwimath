@@ -1,0 +1,945 @@
+[
+  {
+    "id": "geo-l1-s2-001",
+    "topic": "shapes_2d",
+    "stem": "How many triangles can you find in this figure?",
+    "visual_svg": "<svg viewBox=\"0 0 300 200\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"150,20 50,180 250,180\" fill=\"none\" stroke=\"#1565C0\" stroke-width=\"2.5\"/><line x1=\"150\" y1=\"20\" x2=\"150\" y2=\"180\" stroke=\"#1565C0\" stroke-width=\"2.5\"/></svg>",
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "There is one big triangle. The vertical line from the top to the base splits it into 2 smaller triangles. Total triangles: 2 small + 1 big = 3.",
+    "difficulty": 1,
+    "tags": [
+      "counting_shapes",
+      "triangles"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "geo-l1-s2-002",
+    "topic": "shapes_2d",
+    "stem": "How many sides does a hexagon have?",
+    "visual_svg": "<svg viewBox=\"0 0 300 200\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"150,20 250,60 250,140 150,180 50,140 50,60\" fill=\"#E3F2FD\" stroke=\"#1565C0\" stroke-width=\"2.5\"/><text x=\"150\" y=\"110\" text-anchor=\"middle\" font-size=\"16\" fill=\"#1565C0\">?</text></svg>",
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "A hexagon has 6 sides. You can count each side of the shape shown: top-right, right, bottom-right, bottom-left, left, top-left = 6 sides.",
+    "difficulty": 1,
+    "tags": [
+      "polygon",
+      "sides",
+      "hexagon"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "geo-l1-s2-003",
+    "topic": "shapes_2d",
+    "stem": "How many rectangles can you count in this figure?",
+    "visual_svg": "<svg viewBox=\"0 0 300 200\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"50\" y=\"40\" width=\"200\" height=\"120\" fill=\"none\" stroke=\"#FF6D00\" stroke-width=\"2.5\"/><line x1=\"150\" y1=\"40\" x2=\"150\" y2=\"160\" stroke=\"#FF6D00\" stroke-width=\"2.5\"/></svg>",
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "The vertical line divides the big rectangle into 2 smaller rectangles. So we have: 2 small rectangles + 1 big rectangle = 3 rectangles in total.",
+    "difficulty": 1,
+    "tags": [
+      "counting_shapes",
+      "rectangles"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "geo-l1-s2-004",
+    "topic": "shapes_2d",
+    "stem": "Which shape has 4 equal sides and 4 right angles?",
+    "visual_svg": null,
+    "answer_type": "mcq",
+    "correct_answer": 0,
+    "solution": "A square has 4 equal sides AND 4 right angles (90 degrees each). A rectangle has 4 right angles but not necessarily 4 equal sides. A rhombus has 4 equal sides but not necessarily right angles.",
+    "difficulty": 1,
+    "tags": [
+      "properties",
+      "quadrilateral",
+      "square"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken.",
+      "1": "Review the question carefully and try again.",
+      "2": "Review the question carefully and try again.",
+      "3": "Review the question carefully and try again."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [
+      "A) Rectangle",
+      "B) Rhombus",
+      "C) Square",
+      "D) Trapezoid"
+    ],
+    "interaction_mode": "mcq"
+  },
+  {
+    "id": "geo-l1-s2-005",
+    "topic": "shapes_2d",
+    "stem": "How many triangles are in this figure?",
+    "visual_svg": "<svg viewBox=\"0 0 300 200\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"150,20 50,180 250,180\" fill=\"none\" stroke=\"#2E7D32\" stroke-width=\"2.5\"/><line x1=\"150\" y1=\"20\" x2=\"100\" y2=\"180\" stroke=\"#2E7D32\" stroke-width=\"2.5\"/><line x1=\"150\" y1=\"20\" x2=\"200\" y2=\"180\" stroke=\"#2E7D32\" stroke-width=\"2.5\"/></svg>",
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Two lines from the apex divide the big triangle into 3 small triangles. Medium triangles formed by combining 2 adjacent small triangles: left+middle and middle+right = 2 medium triangles. Plus the 1 big triangle. Total: 3 + 2 + 1 = 6.",
+    "difficulty": 2,
+    "tags": [
+      "counting_shapes",
+      "triangles"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "geo-l1-s2-006",
+    "topic": "shapes_2d",
+    "stem": "A shape has 3 sides. Two of the sides are the same length. What is this shape called?",
+    "visual_svg": null,
+    "answer_type": "mcq",
+    "correct_answer": 0,
+    "solution": "A triangle with exactly 2 sides of equal length is called an isosceles triangle. An equilateral triangle has all 3 sides equal. A scalene triangle has no equal sides.",
+    "difficulty": 1,
+    "tags": [
+      "triangle_types",
+      "properties"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken.",
+      "1": "Review the question carefully and try again.",
+      "2": "Review the question carefully and try again.",
+      "3": "Review the question carefully and try again."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [
+      "A) Equilateral triangle",
+      "B) Isosceles triangle",
+      "C) Scalene triangle",
+      "D) Right triangle"
+    ],
+    "interaction_mode": "mcq"
+  },
+  {
+    "id": "geo-l1-s2-007",
+    "topic": "shapes_2d",
+    "stem": "Count the total number of squares in this 2x2 grid.",
+    "visual_svg": "<svg viewBox=\"0 0 300 200\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"75\" y=\"25\" width=\"150\" height=\"150\" fill=\"none\" stroke=\"#7B1FA2\" stroke-width=\"2.5\"/><line x1=\"150\" y1=\"25\" x2=\"150\" y2=\"175\" stroke=\"#7B1FA2\" stroke-width=\"2.5\"/><line x1=\"75\" y1=\"100\" x2=\"225\" y2=\"100\" stroke=\"#7B1FA2\" stroke-width=\"2.5\"/></svg>",
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "There are 4 small squares (1x1 each) and 1 big square (2x2) that contains all four. Total = 4 + 1 = 5 squares.",
+    "difficulty": 2,
+    "tags": [
+      "counting_shapes",
+      "squares",
+      "grid"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "geo-l1-s2-008",
+    "topic": "shapes_2d",
+    "stem": "How many corners (vertices) does a pentagon have?",
+    "visual_svg": "<svg viewBox=\"0 0 300 200\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"150,20 245,75 210,175 90,175 55,75\" fill=\"#FFF3E0\" stroke=\"#FF6D00\" stroke-width=\"2.5\"/><circle cx=\"150\" cy=\"20\" r=\"5\" fill=\"#FF6D00\"/><circle cx=\"245\" cy=\"75\" r=\"5\" fill=\"#FF6D00\"/><circle cx=\"210\" cy=\"175\" r=\"5\" fill=\"#FF6D00\"/><circle cx=\"90\" cy=\"175\" r=\"5\" fill=\"#FF6D00\"/><circle cx=\"55\" cy=\"75\" r=\"5\" fill=\"#FF6D00\"/></svg>",
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "A pentagon has 5 sides and 5 corners (vertices). You can count the highlighted dots at each corner of the shape: there are 5.",
+    "difficulty": 1,
+    "tags": [
+      "polygon",
+      "vertices",
+      "pentagon"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "geo-l1-s2-009",
+    "topic": "shapes_2d",
+    "stem": "A rectangle has a length of 6 cm and a width of 4 cm. What is the perimeter of the rectangle?",
+    "visual_svg": "<svg viewBox=\"0 0 300 200\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"60\" y=\"50\" width=\"180\" height=\"100\" fill=\"#E8F5E9\" stroke=\"#2E7D32\" stroke-width=\"2.5\"/><text x=\"150\" y=\"42\" text-anchor=\"middle\" font-size=\"14\" fill=\"#2E7D32\">6 cm</text><text x=\"252\" y=\"105\" text-anchor=\"start\" font-size=\"14\" fill=\"#2E7D32\">4 cm</text></svg>",
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "The perimeter of a rectangle = 2 x (length + width) = 2 x (6 + 4) = 2 x 10 = 20 cm.",
+    "difficulty": 2,
+    "tags": [
+      "perimeter",
+      "rectangle",
+      "measurement"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "geo-l1-s2-010",
+    "topic": "shapes_2d",
+    "stem": "If you put two identical right triangles together along their longest side, what shape can you make?",
+    "visual_svg": "<svg viewBox=\"0 0 300 200\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"60,160 200,160 60,40\" fill=\"#E3F2FD\" stroke=\"#1565C0\" stroke-width=\"2.5\"/><polygon points=\"200,160 60,40 200,40\" fill=\"#FFF3E0\" stroke=\"#FF6D00\" stroke-width=\"2.5\" stroke-dasharray=\"5,5\"/><text x=\"130\" y=\"110\" text-anchor=\"middle\" font-size=\"14\" fill=\"#333\">?</text></svg>",
+    "answer_type": "mcq",
+    "correct_answer": 0,
+    "solution": "When you put two identical right triangles together along their longest side (the hypotenuse), they form a rectangle.",
+    "difficulty": 2,
+    "tags": [
+      "composition",
+      "triangle",
+      "rectangle"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken.",
+      "1": "Review the question carefully and try again.",
+      "2": "Review the question carefully and try again.",
+      "3": "Review the question carefully and try again."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [
+      "A) Triangle",
+      "B) Rectangle",
+      "C) Pentagon",
+      "D) Circle"
+    ],
+    "interaction_mode": "mcq"
+  },
+  {
+    "id": "geo-l1-sr-001",
+    "topic": "symmetry_reflection",
+    "stem": "How many lines of symmetry does a square have?",
+    "visual_svg": "<svg viewBox=\"0 0 300 200\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"100\" y=\"25\" width=\"150\" height=\"150\" fill=\"#E8F5E9\" stroke=\"#2E7D32\" stroke-width=\"2.5\"/><line x1=\"175\" y1=\"15\" x2=\"175\" y2=\"185\" stroke=\"#FF6D00\" stroke-width=\"1.5\" stroke-dasharray=\"5,5\"/><line x1=\"90\" y1=\"100\" x2=\"260\" y2=\"100\" stroke=\"#FF6D00\" stroke-width=\"1.5\" stroke-dasharray=\"5,5\"/><line x1=\"90\" y1=\"15\" x2=\"260\" y2=\"185\" stroke=\"#7B1FA2\" stroke-width=\"1.5\" stroke-dasharray=\"5,5\"/><line x1=\"260\" y1=\"15\" x2=\"90\" y2=\"185\" stroke=\"#7B1FA2\" stroke-width=\"1.5\" stroke-dasharray=\"5,5\"/></svg>",
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "A square has 4 lines of symmetry: one vertical, one horizontal, and two diagonal. Each line divides the square into two identical halves.",
+    "difficulty": 1,
+    "tags": [
+      "symmetry",
+      "square",
+      "lines_of_symmetry"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "geo-l1-sr-002",
+    "topic": "symmetry_reflection",
+    "stem": "Which of these capital letters looks the same when you see it in a mirror (reflected left-to-right)?",
+    "visual_svg": "<svg viewBox=\"0 0 300 200\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"50\" y=\"120\" font-size=\"60\" font-family=\"Arial\" fill=\"#1565C0\">A</text><text x=\"120\" y=\"120\" font-size=\"60\" font-family=\"Arial\" fill=\"#FF6D00\">B</text><text x=\"190\" y=\"120\" font-size=\"60\" font-family=\"Arial\" fill=\"#2E7D32\">F</text><text x=\"250\" y=\"120\" font-size=\"60\" font-family=\"Arial\" fill=\"#7B1FA2\">G</text></svg>",
+    "answer_type": "mcq",
+    "correct_answer": 0,
+    "solution": "The letter A has a vertical line of symmetry - the left half mirrors the right half. So it looks the same in a left-right mirror. B, F, and G do not have vertical symmetry and would look different in a mirror.",
+    "difficulty": 1,
+    "tags": [
+      "mirror",
+      "symmetry",
+      "letters"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken.",
+      "1": "Review the question carefully and try again.",
+      "2": "Review the question carefully and try again.",
+      "3": "Review the question carefully and try again."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [
+      "A) A",
+      "B) B",
+      "C) F",
+      "D) G"
+    ],
+    "interaction_mode": "mcq"
+  },
+  {
+    "id": "geo-l1-sr-003",
+    "topic": "symmetry_reflection",
+    "stem": "How many lines of symmetry does an equilateral triangle have?",
+    "visual_svg": "<svg viewBox=\"0 0 300 200\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"150,20 50,180 250,180\" fill=\"#E3F2FD\" stroke=\"#1565C0\" stroke-width=\"2.5\"/><line x1=\"150\" y1=\"20\" x2=\"150\" y2=\"180\" stroke=\"#FF6D00\" stroke-width=\"1.5\" stroke-dasharray=\"5,5\"/></svg>",
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "An equilateral triangle has 3 lines of symmetry. Each line goes from one vertex (corner) to the middle of the opposite side. Only one is shown in the figure, but there are 3 in total.",
+    "difficulty": 1,
+    "tags": [
+      "symmetry",
+      "triangle",
+      "lines_of_symmetry"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "geo-l1-sr-004",
+    "topic": "symmetry_reflection",
+    "stem": "How many lines of symmetry does a circle have?",
+    "visual_svg": "<svg viewBox=\"0 0 300 200\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"150\" cy=\"100\" r=\"80\" fill=\"#FFF3E0\" stroke=\"#FF6D00\" stroke-width=\"2.5\"/><line x1=\"150\" y1=\"10\" x2=\"150\" y2=\"190\" stroke=\"#7B1FA2\" stroke-width=\"1.5\" stroke-dasharray=\"5,5\"/><line x1=\"60\" y1=\"100\" x2=\"240\" y2=\"100\" stroke=\"#2E7D32\" stroke-width=\"1.5\" stroke-dasharray=\"5,5\"/><line x1=\"93\" y1=\"43\" x2=\"207\" y2=\"157\" stroke=\"#1565C0\" stroke-width=\"1.5\" stroke-dasharray=\"5,5\"/></svg>",
+    "answer_type": "mcq",
+    "correct_answer": 0,
+    "solution": "A circle has infinitely many lines of symmetry. Any line that passes through the center of the circle divides it into two identical halves. You can draw such a line at any angle.",
+    "difficulty": 2,
+    "tags": [
+      "symmetry",
+      "circle",
+      "infinite"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken.",
+      "1": "Review the question carefully and try again.",
+      "2": "Review the question carefully and try again.",
+      "3": "Review the question carefully and try again."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [
+      "A) 1",
+      "B) 4",
+      "C) 8",
+      "D) Infinitely many"
+    ],
+    "interaction_mode": "mcq"
+  },
+  {
+    "id": "geo-l1-sr-005",
+    "topic": "symmetry_reflection",
+    "stem": "Which of these shapes has exactly 1 line of symmetry?",
+    "visual_svg": "<svg viewBox=\"0 0 300 200\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"40,170 90,30 140,170\" fill=\"#E3F2FD\" stroke=\"#1565C0\" stroke-width=\"2\"/><text x=\"90\" y=\"195\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">Isosceles</text><rect x=\"160\" y=\"50\" width=\"120\" height=\"120\" fill=\"#E8F5E9\" stroke=\"#2E7D32\" stroke-width=\"2\"/><text x=\"220\" y=\"195\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">Square</text></svg>",
+    "answer_type": "mcq",
+    "correct_answer": 0,
+    "solution": "An isosceles triangle (with exactly 2 equal sides) has exactly 1 line of symmetry - the line from the top vertex to the midpoint of the base. A square has 4, an equilateral triangle has 3, and a circle has infinitely many.",
+    "difficulty": 2,
+    "tags": [
+      "symmetry",
+      "comparison",
+      "lines_of_symmetry"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken.",
+      "1": "Review the question carefully and try again.",
+      "2": "Review the question carefully and try again.",
+      "3": "Review the question carefully and try again."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [
+      "A) Square",
+      "B) Equilateral triangle",
+      "C) Isosceles triangle",
+      "D) Circle"
+    ],
+    "interaction_mode": "mcq"
+  },
+  {
+    "id": "geo-l1-sr-006",
+    "topic": "symmetry_reflection",
+    "stem": "The left half of a shape is shown. The dotted line is a mirror line. How many sides does the complete shape have?",
+    "visual_svg": "<svg viewBox=\"0 0 300 200\" xmlns=\"http://www.w3.org/2000/svg\"><line x1=\"150\" y1=\"10\" x2=\"150\" y2=\"190\" stroke=\"#999\" stroke-width=\"2\" stroke-dasharray=\"6,4\"/><polygon points=\"150,30 80,70 60,140 150,170\" fill=\"#E3F2FD\" stroke=\"#1565C0\" stroke-width=\"2.5\"/><text x=\"155\" y=\"105\" font-size=\"14\" fill=\"#999\">mirror</text></svg>",
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "The left half shows a shape with vertices going from the mirror line out and back. When reflected, the complete shape will have 3 sides on the left and 3 matching sides on the right, sharing the top and bottom points on the mirror line. The complete shape is a hexagon with 6 sides.",
+    "difficulty": 2,
+    "tags": [
+      "symmetry",
+      "reflection",
+      "complete_shape"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "geo-l1-sr-007",
+    "topic": "symmetry_reflection",
+    "stem": "Which of these capital letters has a horizontal line of symmetry (looks the same when flipped upside down)?",
+    "visual_svg": "<svg viewBox=\"0 0 300 200\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"50\" y=\"120\" font-size=\"60\" font-family=\"Arial\" fill=\"#FF6D00\">H</text><text x=\"120\" y=\"120\" font-size=\"60\" font-family=\"Arial\" fill=\"#1565C0\">K</text><text x=\"190\" y=\"120\" font-size=\"60\" font-family=\"Arial\" fill=\"#2E7D32\">L</text><text x=\"250\" y=\"120\" font-size=\"60\" font-family=\"Arial\" fill=\"#7B1FA2\">R</text></svg>",
+    "answer_type": "mcq",
+    "correct_answer": 0,
+    "solution": "The letter H has a horizontal line of symmetry. The top half is a mirror image of the bottom half. K, L, and R do not look the same when flipped over a horizontal line.",
+    "difficulty": 2,
+    "tags": [
+      "symmetry",
+      "horizontal",
+      "letters"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken.",
+      "1": "Review the question carefully and try again.",
+      "2": "Review the question carefully and try again.",
+      "3": "Review the question carefully and try again."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [
+      "A) H",
+      "B) K",
+      "C) L",
+      "D) R"
+    ],
+    "interaction_mode": "mcq"
+  },
+  {
+    "id": "geo-l1-sr-008",
+    "topic": "symmetry_reflection",
+    "stem": "A butterfly is a good example of symmetry in nature. How many lines of symmetry does a butterfly have?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "A butterfly has 1 line of symmetry that runs vertically down the center of its body. The left wing mirrors the right wing.",
+    "difficulty": 1,
+    "tags": [
+      "symmetry",
+      "nature",
+      "real_world"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "geo-l1-sr-009",
+    "topic": "symmetry_reflection",
+    "stem": "How many lines of symmetry does a regular pentagon (5 equal sides) have?",
+    "visual_svg": "<svg viewBox=\"0 0 300 200\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"150,20 245,75 210,175 90,175 55,75\" fill=\"#F3E5F5\" stroke=\"#7B1FA2\" stroke-width=\"2.5\"/></svg>",
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "A regular pentagon has 5 lines of symmetry. Each line goes from one vertex to the midpoint of the opposite side.",
+    "difficulty": 2,
+    "tags": [
+      "symmetry",
+      "pentagon",
+      "regular_polygon"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "geo-l1-sr-010",
+    "topic": "symmetry_reflection",
+    "stem": "A rectangle (that is not a square) has how many lines of symmetry?",
+    "visual_svg": "<svg viewBox=\"0 0 300 200\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"50\" y=\"55\" width=\"200\" height=\"90\" fill=\"#FFF3E0\" stroke=\"#FF6D00\" stroke-width=\"2.5\"/><line x1=\"150\" y1=\"45\" x2=\"150\" y2=\"155\" stroke=\"#1565C0\" stroke-width=\"1.5\" stroke-dasharray=\"5,5\"/><line x1=\"40\" y1=\"100\" x2=\"260\" y2=\"100\" stroke=\"#2E7D32\" stroke-width=\"1.5\" stroke-dasharray=\"5,5\"/></svg>",
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "A non-square rectangle has 2 lines of symmetry: one vertical (through the middle of the top and bottom sides) and one horizontal (through the middle of the left and right sides). The diagonals are NOT lines of symmetry for a non-square rectangle.",
+    "difficulty": 1,
+    "tags": [
+      "symmetry",
+      "rectangle",
+      "lines_of_symmetry"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "geo-l1-sp-001",
+    "topic": "spatial_reasoning",
+    "stem": "How many cubes are in this L-shaped stack?",
+    "visual_svg": "<svg viewBox=\"0 0 300 200\" xmlns=\"http://www.w3.org/2000/svg\"><g transform=\"translate(80,20)\"><polygon points=\"0,80 40,60 80,80 40,100\" fill=\"#E3F2FD\" stroke=\"#1565C0\" stroke-width=\"1.5\"/><polygon points=\"0,80 0,120 40,140 40,100\" fill=\"#BBDEFB\" stroke=\"#1565C0\" stroke-width=\"1.5\"/><polygon points=\"40,100 40,140 80,120 80,80\" fill=\"#90CAF9\" stroke=\"#1565C0\" stroke-width=\"1.5\"/><polygon points=\"80,80 120,60 160,80 120,100\" fill=\"#E3F2FD\" stroke=\"#1565C0\" stroke-width=\"1.5\"/><polygon points=\"80,80 80,120 120,140 120,100\" fill=\"#BBDEFB\" stroke=\"#1565C0\" stroke-width=\"1.5\"/><polygon points=\"120,100 120,140 160,120 160,80\" fill=\"#90CAF9\" stroke=\"#1565C0\" stroke-width=\"1.5\"/><polygon points=\"0,120 40,100 80,120 40,140\" fill=\"#E3F2FD\" stroke=\"#1565C0\" stroke-width=\"1.5\"/><polygon points=\"0,120 0,160 40,180 40,140\" fill=\"#BBDEFB\" stroke=\"#1565C0\" stroke-width=\"1.5\"/><polygon points=\"40,140 40,180 80,160 80,120\" fill=\"#90CAF9\" stroke=\"#1565C0\" stroke-width=\"1.5\"/><polygon points=\"0,40 40,20 80,40 40,60\" fill=\"#E3F2FD\" stroke=\"#1565C0\" stroke-width=\"1.5\"/><polygon points=\"0,40 0,80 40,100 40,60\" fill=\"#BBDEFB\" stroke=\"#1565C0\" stroke-width=\"1.5\"/><polygon points=\"40,60 40,100 80,80 80,40\" fill=\"#90CAF9\" stroke=\"#1565C0\" stroke-width=\"1.5\"/></g></svg>",
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Count each cube in the L-shape: there are 2 cubes along the bottom row, 1 cube to the right on the same level, and 1 cube stacked on top of the left cube. Total = 4 cubes.",
+    "difficulty": 1,
+    "tags": [
+      "3d",
+      "cube_counting",
+      "spatial"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "geo-l1-sp-002",
+    "topic": "spatial_reasoning",
+    "stem": "If you cut a square piece of paper along one diagonal, what two shapes do you get?",
+    "visual_svg": "<svg viewBox=\"0 0 300 200\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"75\" y=\"25\" width=\"150\" height=\"150\" fill=\"#FFF3E0\" stroke=\"#FF6D00\" stroke-width=\"2.5\"/><line x1=\"75\" y1=\"25\" x2=\"225\" y2=\"175\" stroke=\"#FF6D00\" stroke-width=\"2\" stroke-dasharray=\"8,4\"/><text x=\"120\" y=\"120\" font-size=\"14\" fill=\"#FF6D00\">cut</text></svg>",
+    "answer_type": "mcq",
+    "correct_answer": 0,
+    "solution": "Cutting a square along its diagonal produces two identical right triangles. Each triangle has the diagonal as its longest side.",
+    "difficulty": 1,
+    "tags": [
+      "cutting",
+      "square",
+      "triangle"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken.",
+      "1": "Review the question carefully and try again.",
+      "2": "Review the question carefully and try again.",
+      "3": "Review the question carefully and try again."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [
+      "A) Two squares",
+      "B) Two triangles",
+      "C) Two rectangles",
+      "D) A triangle and a rectangle"
+    ],
+    "interaction_mode": "mcq"
+  },
+  {
+    "id": "geo-l1-sp-003",
+    "topic": "spatial_reasoning",
+    "stem": "Which of these nets can be folded into a cube?",
+    "visual_svg": "<svg viewBox=\"0 0 300 200\" xmlns=\"http://www.w3.org/2000/svg\"><g transform=\"translate(20,30)\"><rect x=\"0\" y=\"40\" width=\"40\" height=\"40\" fill=\"#E8F5E9\" stroke=\"#2E7D32\" stroke-width=\"1.5\"/><rect x=\"40\" y=\"0\" width=\"40\" height=\"40\" fill=\"#E8F5E9\" stroke=\"#2E7D32\" stroke-width=\"1.5\"/><rect x=\"40\" y=\"40\" width=\"40\" height=\"40\" fill=\"#E8F5E9\" stroke=\"#2E7D32\" stroke-width=\"1.5\"/><rect x=\"40\" y=\"80\" width=\"40\" height=\"40\" fill=\"#E8F5E9\" stroke=\"#2E7D32\" stroke-width=\"1.5\"/><rect x=\"40\" y=\"120\" width=\"40\" height=\"40\" fill=\"#E8F5E9\" stroke=\"#2E7D32\" stroke-width=\"1.5\"/><rect x=\"80\" y=\"80\" width=\"40\" height=\"40\" fill=\"#E8F5E9\" stroke=\"#2E7D32\" stroke-width=\"1.5\"/><text x=\"40\" y=\"185\" text-anchor=\"middle\" font-size=\"16\" fill=\"#2E7D32\">A</text></g><g transform=\"translate(170,30)\"><rect x=\"0\" y=\"0\" width=\"40\" height=\"40\" fill=\"#E3F2FD\" stroke=\"#1565C0\" stroke-width=\"1.5\"/><rect x=\"40\" y=\"0\" width=\"40\" height=\"40\" fill=\"#E3F2FD\" stroke=\"#1565C0\" stroke-width=\"1.5\"/><rect x=\"0\" y=\"40\" width=\"40\" height=\"40\" fill=\"#E3F2FD\" stroke=\"#1565C0\" stroke-width=\"1.5\"/><rect x=\"40\" y=\"40\" width=\"40\" height=\"40\" fill=\"#E3F2FD\" stroke=\"#1565C0\" stroke-width=\"1.5\"/><rect x=\"0\" y=\"80\" width=\"40\" height=\"40\" fill=\"#E3F2FD\" stroke=\"#1565C0\" stroke-width=\"1.5\"/><rect x=\"40\" y=\"80\" width=\"40\" height=\"40\" fill=\"#E3F2FD\" stroke=\"#1565C0\" stroke-width=\"1.5\"/><text x=\"40\" y=\"145\" text-anchor=\"middle\" font-size=\"16\" fill=\"#1565C0\">B</text></g></svg>",
+    "answer_type": "mcq",
+    "correct_answer": 0,
+    "solution": "Net A is a valid cube net - it has 6 squares arranged so that no two squares would overlap when folded. Net B has 6 squares in a 2x3 grid, which cannot fold into a cube because opposite faces would overlap. So only Net A works.",
+    "difficulty": 2,
+    "tags": [
+      "nets",
+      "cube",
+      "3d_thinking"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken.",
+      "1": "Review the question carefully and try again.",
+      "2": "Review the question carefully and try again.",
+      "3": "Review the question carefully and try again."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [
+      "A) Net A",
+      "B) Net B",
+      "C) Both",
+      "D) Neither"
+    ],
+    "interaction_mode": "mcq"
+  },
+  {
+    "id": "geo-l1-sp-004",
+    "topic": "spatial_reasoning",
+    "stem": "A cube has how many edges?",
+    "visual_svg": "<svg viewBox=\"0 0 300 200\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"100,140 200,140 200,50 100,50\" fill=\"none\" stroke=\"#7B1FA2\" stroke-width=\"2\"/><polygon points=\"100,50 140,25 240,25 200,50\" fill=\"none\" stroke=\"#7B1FA2\" stroke-width=\"2\"/><polygon points=\"200,50 240,25 240,115 200,140\" fill=\"none\" stroke=\"#7B1FA2\" stroke-width=\"2\"/><line x1=\"100\" y1=\"140\" x2=\"140\" y2=\"115\" stroke=\"#7B1FA2\" stroke-width=\"1.5\" stroke-dasharray=\"5,3\"/><line x1=\"140\" y1=\"115\" x2=\"240\" y2=\"115\" stroke=\"#7B1FA2\" stroke-width=\"1.5\" stroke-dasharray=\"5,3\"/><line x1=\"140\" y1=\"115\" x2=\"140\" y2=\"25\" stroke=\"#7B1FA2\" stroke-width=\"1.5\" stroke-dasharray=\"5,3\"/></svg>",
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "A cube has 12 edges: 4 edges on the top face, 4 edges on the bottom face, and 4 vertical edges connecting them.",
+    "difficulty": 1,
+    "tags": [
+      "cube",
+      "edges",
+      "3d_properties"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "geo-l1-sp-005",
+    "topic": "spatial_reasoning",
+    "stem": "How many faces does a cube have?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "A cube has 6 faces: top, bottom, front, back, left, and right. Each face is a square.",
+    "difficulty": 1,
+    "tags": [
+      "cube",
+      "faces",
+      "3d_properties"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "geo-l1-sp-006",
+    "topic": "spatial_reasoning",
+    "stem": "You fold a square piece of paper in half, then cut a small triangle from the folded edge. When you unfold the paper, what shape is the hole?",
+    "visual_svg": null,
+    "answer_type": "mcq",
+    "correct_answer": 0,
+    "solution": "When you cut a triangle from the folded edge and unfold, the cut is reflected across the fold line. The triangle and its reflection together form a diamond (rhombus) shape.",
+    "difficulty": 2,
+    "tags": [
+      "folding",
+      "symmetry",
+      "spatial"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken.",
+      "1": "Review the question carefully and try again.",
+      "2": "Review the question carefully and try again.",
+      "3": "Review the question carefully and try again."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [
+      "A) Triangle",
+      "B) Diamond (rhombus)",
+      "C) Square",
+      "D) Circle"
+    ],
+    "interaction_mode": "mcq"
+  },
+  {
+    "id": "geo-l1-sp-007",
+    "topic": "spatial_reasoning",
+    "stem": "How many unit cubes are needed to build a 2 x 2 x 2 cube?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "A 2 x 2 x 2 cube needs 2 x 2 x 2 = 8 unit cubes. Think of it as 2 layers, each with 2 rows of 2 cubes.",
+    "difficulty": 1,
+    "tags": [
+      "cube",
+      "volume",
+      "multiplication"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "geo-l1-sp-008",
+    "topic": "spatial_reasoning",
+    "stem": "A 3 x 3 x 3 cube is built from small unit cubes, then the outside is painted red. How many small cubes have NO red paint on them?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "In a 3x3x3 cube, only the cube at the very center is completely hidden and has no painted faces. All other 26 cubes are on the surface and have at least one red face. So 1 cube has no red paint.",
+    "difficulty": 3,
+    "tags": [
+      "cube",
+      "3d_thinking",
+      "painted_cube"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "geo-l1-sp-009",
+    "topic": "spatial_reasoning",
+    "stem": "If you look at a cube directly from above, what shape do you see?",
+    "visual_svg": null,
+    "answer_type": "mcq",
+    "correct_answer": 0,
+    "solution": "Looking at a cube directly from above, you see the top face, which is a square. All faces of a cube are squares.",
+    "difficulty": 1,
+    "tags": [
+      "3d_to_2d",
+      "views",
+      "cube"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken.",
+      "1": "Review the question carefully and try again.",
+      "2": "Review the question carefully and try again.",
+      "3": "Review the question carefully and try again."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [
+      "A) Triangle",
+      "B) Square",
+      "C) Rectangle",
+      "D) Hexagon"
+    ],
+    "interaction_mode": "mcq"
+  },
+  {
+    "id": "geo-l1-sp-010",
+    "topic": "spatial_reasoning",
+    "stem": "A rectangular box is 3 cm long, 2 cm wide, and 1 cm tall. It is built from 1 cm unit cubes. How many unit cubes are needed?",
+    "visual_svg": "<svg viewBox=\"0 0 300 200\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"80,130 180,130 180,90 80,90\" fill=\"#E8F5E9\" stroke=\"#2E7D32\" stroke-width=\"2\"/><polygon points=\"80,90 110,65 210,65 180,90\" fill=\"#C8E6C9\" stroke=\"#2E7D32\" stroke-width=\"2\"/><polygon points=\"180,90 210,65 210,105 180,130\" fill=\"#A5D6A7\" stroke=\"#2E7D32\" stroke-width=\"2\"/><text x=\"130\" y=\"155\" text-anchor=\"middle\" font-size=\"13\" fill=\"#2E7D32\">3 cm</text><text x=\"225\" y=\"90\" font-size=\"13\" fill=\"#2E7D32\">1 cm</text><text x=\"200\" y=\"55\" font-size=\"13\" fill=\"#2E7D32\">2 cm</text></svg>",
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "The box is 3 cm x 2 cm x 1 cm. The number of unit cubes = 3 x 2 x 1 = 6.",
+    "difficulty": 1,
+    "tags": [
+      "volume",
+      "rectangular_prism",
+      "multiplication"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  }
+]

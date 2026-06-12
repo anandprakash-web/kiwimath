@@ -16,9 +16,10 @@ from __future__ import annotations
 from datetime import datetime, timezone
 from typing import Any, Dict, List, Optional
 
-from fastapi import APIRouter, HTTPException, Query
+from fastapi import APIRouter, Depends, HTTPException, Query
 from pydantic import BaseModel, Field
 
+from app.core.auth import assert_user_match, verify_token
 from app.services.adaptive_engine_v2 import engine_v2
 from app.services.content_store_v2 import store_v2
 from app.services.gamification import gamification
@@ -199,6 +200,7 @@ def _build_recommendations(
 def get_parent_dashboard(
     user_id: str = Query(..., min_length=1, description="Child's user ID"),
     curriculum: Optional[str] = Query(None, description="Child's curriculum: ncert, icse, igcse, olympiad"),
+    decoded: dict = Depends(verify_token),
 ):
     """Parent-facing summary of the child's learning state.
 
@@ -209,6 +211,10 @@ def get_parent_dashboard(
     - Olympiad users: 8 Kangaroo topics (topic-1 through topic-8)
     - Curriculum users (NCERT/ICSE/IGCSE): Kangaroo topics + their curriculum topics
     """
+    # Identity enforcement: parents may only view their own child's dashboard
+    # (parent and child share the Firebase account; admins exempt).
+    assert_user_match(decoded, user_id)
+
     # ── Filter topics based on child's curriculum ─────────────────────
     all_topics = store_v2.topics()
     if curriculum and curriculum != 'olympiad':

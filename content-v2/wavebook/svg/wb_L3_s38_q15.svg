@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" width="300" height="200">
+  <rect width="300" height="200" fill="#FFF8F0" rx="8"/>
+  <text x="150.0" y="14" text-anchor="middle" font-size="11" font-weight="bold" font-family="Arial" fill="#1A1A2E">5 Equal Sections</text>
+  <path d="M 150.0,105.0 L 150.0,40.0 A 65,65 0 0,1 211.8,84.9 Z" fill="#FF6D00" stroke="white" stroke-width="1.5"/>
+  <text x="174.833926909357" y="74.81903198765846" text-anchor="middle" font-size="9" font-weight="bold" font-family="Arial" fill="white">72.0°</text>
+  <path d="M 150.0,105.0 L 211.8,84.9 A 65,65 0 0,1 188.2,157.6 Z" fill="#1976D2" stroke="white" stroke-width="1.5"/>
+  <text x="190.18213781347023" y="122.05596801234152" text-anchor="middle" font-size="9" font-weight="bold" font-family="Arial" fill="white">72.0°</text>
+  <path d="M 150.0,105.0 L 188.2,157.6 A 65,65 0 0,1 111.8,157.6 Z" fill="#4CAF50" stroke="white" stroke-width="1.5"/>
+  <text x="150.0" y="151.25" text-anchor="middle" font-size="9" font-weight="bold" font-family="Arial" fill="white">72.0°</text>
+  <path d="M 150.0,105.0 L 111.8,157.6 A 65,65 0 0,1 88.2,84.9 Z" fill="#E91E63" stroke="white" stroke-width="1.5"/>
+  <text x="109.81786218652977" y="122.05596801234154" text-anchor="middle" font-size="9" font-weight="bold" font-family="Arial" fill="white">72.0°</text>
+  <path d="M 150.0,105.0 L 88.2,84.9 A 65,65 0 0,1 150.0,40.0 Z" fill="#9C27B0" stroke="white" stroke-width="1.5"/>
+  <text x="125.16607309064301" y="74.81903198765848" text-anchor="middle" font-size="9" font-weight="bold" font-family="Arial" fill="white">72.0°</text>
+  <rect x="210" y="25" width="8" height="8" fill="#FF6D00" rx="1"/>
+  <text x="222" y="33" text-anchor="start" font-size="8" font-family="Arial" fill="#1A1A2E">S1</text>
+  <rect x="210" y="39" width="8" height="8" fill="#1976D2" rx="1"/>
+  <text x="222" y="47" text-anchor="start" font-size="8" font-family="Arial" fill="#1A1A2E">S2</text>
+  <rect x="210" y="53" width="8" height="8" fill="#4CAF50" rx="1"/>
+  <text x="222" y="61" text-anchor="start" font-size="8" font-family="Arial" fill="#1A1A2E">S3</text>
+  <rect x="210" y="67" width="8" height="8" fill="#E91E63" rx="1"/>
+  <text x="222" y="75" text-anchor="start" font-size="8" font-family="Arial" fill="#1A1A2E">S4</text>
+  <rect x="210" y="81" width="8" height="8" fill="#9C27B0" rx="1"/>
+  <text x="222" y="89" text-anchor="start" font-size="8" font-family="Arial" fill="#1A1A2E">S5</text>
+</svg>

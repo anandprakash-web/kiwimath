@@ -1,0 +1,5300 @@
+{
+  "topic_id": "g6-word-problems",
+  "topic_name": "Word Problems",
+  "topic_emoji": "\ud83d\udcd6",
+  "grade": 6,
+  "domain": "arithmetic",
+  "source": "v4-adaptive",
+  "total_questions": 55,
+  "difficulty_range": {
+    "min": 46,
+    "max": 95
+  },
+  "questions": [
+    {
+      "id": "A6-WPR-0001",
+      "stem": "$64 is shared among 3 people in the ratio 3 : 3 : 2. How much does the first person get?",
+      "choices": [
+        "24",
+        "39",
+        "21",
+        "27"
+      ],
+      "correct_answer": 0,
+      "difficulty_tier": "easy",
+      "difficulty_score": 46,
+      "visual_svg": null,
+      "visual_alt": "Bar model for ratio problem",
+      "diagnostics": {
+        "1": "Wrong total number of parts",
+        "2": "Confuses which share to find",
+        "3": "Does not account for transfer"
+      },
+      "tags": [
+        "ratio",
+        "advanced",
+        "bar_model",
+        "model_method",
+        "multi_step"
+      ],
+      "chapter": "6A: Ratio Advanced",
+      "hint": {
+        "level_0": "Find total parts, then value of 1 part.",
+        "level_1": "Total parts = sum of ratio numbers.",
+        "level_2": "1 part = total \u00f7 number of parts."
+      },
+      "curriculum_tags": [
+        "SING_6A_4"
+      ],
+      "irt_params": {
+        "a": 1.1,
+        "b": 0.42,
+        "c": 0.25
+      },
+      "irt_a": 1.1,
+      "irt_b": 0.42,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Given: 64 shared among 3",
+        "Operation needed: division",
+        "Divide: 64 \u00f7 3"
+      ],
+      "level": 6,
+      "level_name": "Master",
+      "universal_skill_id": "ARITH_MULTI_6",
+      "skill_id": "multi_step",
+      "skill_domain": "arithmetic",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "none",
+      "visual_type": "2d",
+      "visual_ai_verified": false,
+      "media_id": "SING-G6-144.svg",
+      "media_hash": "sha256:c214d7781eea3ddc",
+      "misconception_ids": [
+        "MISC_1",
+        "MISC_2",
+        "COUNT_ERR"
+      ],
+      "why_quality": "ai_generated",
+      "why_framework": "pending",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "acceptable",
+        "has_3_layers": true
+      },
+      "curriculum_source": "singapore",
+      "curriculum_map": {},
+      "school_grade": 6,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "adaptive_topic_id": "g6-word-problems",
+      "adaptive_topic_name": "Word Problems",
+      "adaptive_topic_emoji": "\ud83d\udcd6",
+      "adaptive_grade": 6,
+      "dual_tagged": true,
+      "content_source": "singapore",
+      "sequence_id": 111,
+      "difficulty_tier_in_topic": "easy",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "topic": "g6-word-problems",
+      "interaction_mode": "mcq",
+      "original_id": "SING-G6-050"
+    },
+    {
+      "id": "A6-WPR-0002",
+      "stem": "The ratio of boys to girls is 3:6. There are 54 children altogether. How many boys are there?",
+      "choices": [
+        "21",
+        "12",
+        "36",
+        "18"
+      ],
+      "correct_answer": 3,
+      "difficulty_tier": "easy",
+      "difficulty_score": 47,
+      "visual_svg": null,
+      "visual_alt": "Bar model for ratio problem",
+      "diagnostics": {
+        "0": "Check the order of your ratio. Which quantity should come first? Did you simplify completely?",
+        "1": "Check the order of your ratio. Which quantity should come first? Did you simplify completely?",
+        "2": "Check the order of your ratio. Which quantity should come first? Did you simplify completely?"
+      },
+      "tags": [
+        "ratio",
+        "advanced",
+        "bar_model",
+        "model_method",
+        "multi_step"
+      ],
+      "chapter": "6A: Ratio Advanced",
+      "hint": {
+        "level_0": "Find total parts, then value of 1 part.",
+        "level_1": "Total parts = sum of ratio numbers.",
+        "level_2": "1 part = total \u00f7 number of parts."
+      },
+      "curriculum_tags": [
+        "SING_6A_4"
+      ],
+      "irt_params": {
+        "a": 1.1,
+        "b": 0.47,
+        "c": 0.25
+      },
+      "irt_a": 1.1,
+      "irt_b": 0.47,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify what you need to count",
+        "Count systematically, left to right",
+        "The total count is your answer"
+      ],
+      "level": 6,
+      "level_name": "Master",
+      "universal_skill_id": "ARITH_MULTI_6",
+      "skill_id": "multi_step",
+      "skill_domain": "arithmetic",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "none",
+      "visual_type": "2d",
+      "visual_ai_verified": false,
+      "media_id": "SING-G6-153.svg",
+      "media_hash": "sha256:3a702ce656b91ab1",
+      "misconception_ids": [
+        "MISC_1",
+        "MISC_2",
+        "COUNT_ERR"
+      ],
+      "why_quality": "ai_generated",
+      "why_framework": "pending",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "acceptable",
+        "has_3_layers": true
+      },
+      "curriculum_source": "singapore",
+      "curriculum_map": {},
+      "school_grade": 6,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "adaptive_topic_id": "g6-word-problems",
+      "adaptive_topic_name": "Word Problems",
+      "adaptive_topic_emoji": "\ud83d\udcd6",
+      "adaptive_grade": 6,
+      "dual_tagged": true,
+      "content_source": "singapore",
+      "sequence_id": 124,
+      "difficulty_tier_in_topic": "easy",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "topic": "g6-word-problems",
+      "interaction_mode": "mcq",
+      "original_id": "SING-G6-053"
+    },
+    {
+      "id": "A6-WPR-0003",
+      "stem": "The ratio of boys to girls is 4:3. There are 35 children altogether. How many boys are there?",
+      "choices": [
+        "24",
+        "17",
+        "15",
+        "20"
+      ],
+      "correct_answer": 3,
+      "difficulty_tier": "easy",
+      "difficulty_score": 47,
+      "visual_svg": null,
+      "visual_alt": "Bar model for ratio problem",
+      "diagnostics": {
+        "0": "Check the order of your ratio. Which quantity should come first? Did you simplify completely?",
+        "1": "Check the order of your ratio. Which quantity should come first? Did you simplify completely?",
+        "2": "Check the order of your ratio. Which quantity should come first? Did you simplify completely?"
+      },
+      "tags": [
+        "ratio",
+        "advanced",
+        "bar_model",
+        "model_method",
+        "multi_step"
+      ],
+      "chapter": "6A: Ratio Advanced",
+      "hint": {
+        "level_0": "Find total parts, then value of 1 part.",
+        "level_1": "Total parts = sum of ratio numbers.",
+        "level_2": "1 part = total \u00f7 number of parts."
+      },
+      "curriculum_tags": [
+        "SING_6A_4"
+      ],
+      "irt_params": {
+        "a": 1.1,
+        "b": 0.47,
+        "c": 0.25
+      },
+      "irt_a": 1.1,
+      "irt_b": 0.47,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify what you need to count",
+        "Count systematically, left to right",
+        "The total count is your answer"
+      ],
+      "level": 6,
+      "level_name": "Master",
+      "universal_skill_id": "ARITH_MULTI_6",
+      "skill_id": "multi_step",
+      "skill_domain": "arithmetic",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "none",
+      "visual_type": "2d",
+      "visual_ai_verified": false,
+      "media_id": "SING-G6-156.svg",
+      "media_hash": "sha256:f50ad2545b7bd28a",
+      "misconception_ids": [
+        "MISC_1",
+        "MISC_2",
+        "COUNT_ERR"
+      ],
+      "why_quality": "ai_generated",
+      "why_framework": "pending",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "acceptable",
+        "has_3_layers": true
+      },
+      "curriculum_source": "singapore",
+      "curriculum_map": {},
+      "school_grade": 6,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "adaptive_topic_id": "g6-word-problems",
+      "adaptive_topic_name": "Word Problems",
+      "adaptive_topic_emoji": "\ud83d\udcd6",
+      "adaptive_grade": 6,
+      "dual_tagged": true,
+      "content_source": "singapore",
+      "sequence_id": 125,
+      "difficulty_tier_in_topic": "easy",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "topic": "g6-word-problems",
+      "interaction_mode": "mcq",
+      "original_id": "SING-G6-054"
+    },
+    {
+      "id": "A6-WPR-0004",
+      "stem": "$48 is shared among 3 people in the ratio 5 : 5 : 2. How much does the first person get?",
+      "choices": [
+        "29",
+        "20",
+        "25",
+        "15"
+      ],
+      "correct_answer": 1,
+      "difficulty_tier": "medium",
+      "difficulty_score": 48,
+      "visual_svg": null,
+      "visual_alt": "Bar model for ratio problem",
+      "diagnostics": {
+        "0": "Check the order of your ratio. Which quantity should come first? Did you simplify completely?",
+        "2": "Check the order of your ratio. Which quantity should come first? Did you simplify completely?",
+        "3": "Check the order of your ratio. Which quantity should come first? Did you simplify completely?"
+      },
+      "tags": [
+        "ratio",
+        "advanced",
+        "bar_model",
+        "model_method",
+        "multi_step"
+      ],
+      "chapter": "6A: Ratio Advanced",
+      "hint": {
+        "level_0": "Find total parts, then value of 1 part.",
+        "level_1": "Total parts = sum of ratio numbers.",
+        "level_2": "1 part = total \u00f7 number of parts."
+      },
+      "curriculum_tags": [
+        "SING_6A_4"
+      ],
+      "irt_params": {
+        "a": 1.1,
+        "b": 0.53,
+        "c": 0.25
+      },
+      "irt_a": 1.1,
+      "irt_b": 0.53,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Given: 48 shared among 3",
+        "Operation needed: division",
+        "Divide: 48 \u00f7 3"
+      ],
+      "level": 6,
+      "level_name": "Master",
+      "universal_skill_id": "ARITH_MULTI_6",
+      "skill_id": "multi_step",
+      "skill_domain": "arithmetic",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "none",
+      "visual_type": "2d",
+      "visual_ai_verified": false,
+      "media_id": "SING-G6-141.svg",
+      "media_hash": "sha256:a3a7b8955614c04e",
+      "misconception_ids": [
+        "MISC_1",
+        "MISC_2",
+        "COUNT_ERR"
+      ],
+      "why_quality": "ai_generated",
+      "why_framework": "pending",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "acceptable",
+        "has_3_layers": true
+      },
+      "curriculum_source": "singapore",
+      "curriculum_map": {},
+      "school_grade": 6,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "adaptive_topic_id": "g6-word-problems",
+      "adaptive_topic_name": "Word Problems",
+      "adaptive_topic_emoji": "\ud83d\udcd6",
+      "adaptive_grade": 6,
+      "dual_tagged": true,
+      "content_source": "singapore",
+      "sequence_id": 142,
+      "difficulty_tier_in_topic": "practice",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "topic": "g6-word-problems",
+      "interaction_mode": "mcq",
+      "original_id": "SING-G6-058"
+    },
+    {
+      "id": "A6-WPR-0005",
+      "stem": "Mei Ling and Raju have stickers in ratio 5:7. If Mei Ling gives 4 to Raju, Mei Ling has 31. How many did Mei Ling have originally?",
+      "choices": [
+        "40",
+        "49",
+        "35",
+        "28"
+      ],
+      "correct_answer": 2,
+      "difficulty_tier": "medium",
+      "difficulty_score": 49,
+      "visual_svg": null,
+      "visual_alt": "Bar model for ratio problem",
+      "diagnostics": {
+        "0": "Check the order of your ratio. Which quantity should come first? Did you simplify completely?",
+        "1": "Check the order of your ratio. Which quantity should come first? Did you simplify completely?",
+        "3": "Check the order of your ratio. Which quantity should come first? Did you simplify completely?"
+      },
+      "tags": [
+        "ratio",
+        "advanced",
+        "bar_model",
+        "model_method",
+        "multi_step"
+      ],
+      "chapter": "6A: Ratio Advanced",
+      "hint": {
+        "level_0": "Find total parts, then value of 1 part.",
+        "level_1": "Total parts = sum of ratio numbers.",
+        "level_2": "1 part = total \u00f7 number of parts."
+      },
+      "curriculum_tags": [
+        "SING_6A_4"
+      ],
+      "irt_params": {
+        "a": 1.1,
+        "b": 0.58,
+        "c": 0.25
+      },
+      "irt_a": 1.1,
+      "irt_b": 0.58,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify what you need to count",
+        "Count systematically, left to right",
+        "The total count is your answer"
+      ],
+      "level": 6,
+      "level_name": "Master",
+      "universal_skill_id": "ARITH_MULTI_6",
+      "skill_id": "multi_step",
+      "skill_domain": "arithmetic",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "none",
+      "visual_type": "2d",
+      "visual_ai_verified": false,
+      "media_id": "SING-G6-138.svg",
+      "media_hash": "sha256:8682e5b65fd74e12",
+      "misconception_ids": [
+        "MISC_1",
+        "MISC_2",
+        "COUNT_ERR"
+      ],
+      "why_quality": "ai_generated",
+      "why_framework": "pending",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "acceptable",
+        "has_3_layers": true
+      },
+      "curriculum_source": "singapore",
+      "curriculum_map": {},
+      "school_grade": 6,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "adaptive_topic_id": "g6-word-problems",
+      "adaptive_topic_name": "Word Problems",
+      "adaptive_topic_emoji": "\ud83d\udcd6",
+      "adaptive_grade": 6,
+      "dual_tagged": true,
+      "content_source": "singapore",
+      "sequence_id": 155,
+      "difficulty_tier_in_topic": "practice",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "topic": "g6-word-problems",
+      "interaction_mode": "mcq",
+      "original_id": "SING-G6-065"
+    },
+    {
+      "id": "A6-WPR-0006",
+      "stem": "The ratio of boys to girls is 3:5. There are 48 children altogether. How many boys are there?",
+      "choices": [
+        "13",
+        "18",
+        "21",
+        "30"
+      ],
+      "correct_answer": 1,
+      "difficulty_tier": "medium",
+      "difficulty_score": 49,
+      "visual_svg": null,
+      "visual_alt": "Bar model for ratio problem",
+      "diagnostics": {
+        "0": "Check the order of your ratio. Which quantity should come first? Did you simplify completely?",
+        "2": "Check the order of your ratio. Which quantity should come first? Did you simplify completely?",
+        "3": "Check the order of your ratio. Which quantity should come first? Did you simplify completely?"
+      },
+      "tags": [
+        "ratio",
+        "advanced",
+        "bar_model",
+        "model_method",
+        "multi_step"
+      ],
+      "chapter": "6A: Ratio Advanced",
+      "hint": {
+        "level_0": "Find total parts, then value of 1 part.",
+        "level_1": "Total parts = sum of ratio numbers.",
+        "level_2": "1 part = total \u00f7 number of parts."
+      },
+      "curriculum_tags": [
+        "SING_6A_4"
+      ],
+      "irt_params": {
+        "a": 1.1,
+        "b": 0.58,
+        "c": 0.25
+      },
+      "irt_a": 1.1,
+      "irt_b": 0.58,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify what you need to count",
+        "Count systematically, left to right",
+        "The total count is your answer"
+      ],
+      "level": 6,
+      "level_name": "Master",
+      "universal_skill_id": "ARITH_MULTI_6",
+      "skill_id": "multi_step",
+      "skill_domain": "arithmetic",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "none",
+      "visual_type": "2d",
+      "visual_ai_verified": false,
+      "media_id": "SING-G6-148.svg",
+      "media_hash": "sha256:b73064f2ec2db86e",
+      "misconception_ids": [
+        "MISC_1",
+        "MISC_2",
+        "COUNT_ERR"
+      ],
+      "why_quality": "ai_generated",
+      "why_framework": "pending",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "acceptable",
+        "has_3_layers": true
+      },
+      "curriculum_source": "singapore",
+      "curriculum_map": {},
+      "school_grade": 6,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "adaptive_topic_id": "g6-word-problems",
+      "adaptive_topic_name": "Word Problems",
+      "adaptive_topic_emoji": "\ud83d\udcd6",
+      "adaptive_grade": 6,
+      "dual_tagged": true,
+      "content_source": "singapore",
+      "sequence_id": 156,
+      "difficulty_tier_in_topic": "practice",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "topic": "g6-word-problems",
+      "interaction_mode": "mcq",
+      "original_id": "SING-G6-066"
+    },
+    {
+      "id": "A6-WPR-0007",
+      "stem": "Jun Wei and Kavitha have stickers in ratio 5:3. If Jun Wei gives 1 to Kavitha, Jun Wei has 39. How many did Jun Wei have originally?",
+      "choices": [
+        "45",
+        "37",
+        "24",
+        "40"
+      ],
+      "correct_answer": 3,
+      "difficulty_tier": "medium",
+      "difficulty_score": 49,
+      "visual_svg": null,
+      "visual_alt": "Bar model for ratio problem",
+      "diagnostics": {
+        "0": "Check the order of your ratio. Which quantity should come first? Did you simplify completely?",
+        "1": "Check the order of your ratio. Which quantity should come first? Did you simplify completely?",
+        "2": "Check the order of your ratio. Which quantity should come first? Did you simplify completely?"
+      },
+      "tags": [
+        "ratio",
+        "advanced",
+        "bar_model",
+        "model_method",
+        "multi_step"
+      ],
+      "chapter": "6A: Ratio Advanced",
+      "hint": {
+        "level_0": "Find total parts, then value of 1 part.",
+        "level_1": "Total parts = sum of ratio numbers.",
+        "level_2": "1 part = total \u00f7 number of parts."
+      },
+      "curriculum_tags": [
+        "SING_6A_4"
+      ],
+      "irt_params": {
+        "a": 1.1,
+        "b": 0.58,
+        "c": 0.25
+      },
+      "irt_a": 1.1,
+      "irt_b": 0.58,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify what you need to count",
+        "Count systematically, left to right",
+        "The total count is your answer"
+      ],
+      "level": 6,
+      "level_name": "Master",
+      "universal_skill_id": "ARITH_MULTI_6",
+      "skill_id": "multi_step",
+      "skill_domain": "arithmetic",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "none",
+      "visual_type": "2d",
+      "visual_ai_verified": false,
+      "media_id": "SING-G6-158.svg",
+      "media_hash": "sha256:08c6a14ad6a417b7",
+      "misconception_ids": [
+        "MISC_1",
+        "MISC_2",
+        "COUNT_ERR"
+      ],
+      "why_quality": "ai_generated",
+      "why_framework": "pending",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "acceptable",
+        "has_3_layers": true
+      },
+      "curriculum_source": "singapore",
+      "curriculum_map": {},
+      "school_grade": 6,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "adaptive_topic_id": "g6-word-problems",
+      "adaptive_topic_name": "Word Problems",
+      "adaptive_topic_emoji": "\ud83d\udcd6",
+      "adaptive_grade": 6,
+      "dual_tagged": true,
+      "content_source": "singapore",
+      "sequence_id": 157,
+      "difficulty_tier_in_topic": "practice",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "topic": "g6-word-problems",
+      "interaction_mode": "mcq",
+      "original_id": "SING-G6-067"
+    },
+    {
+      "id": "A6-WPR-0008",
+      "stem": "Jun Wei and Wei Ming have stickers in ratio 2:7. If Jun Wei gives 3 to Wei Ming, Jun Wei has 11. How many did Jun Wei have originally?",
+      "choices": [
+        "14",
+        "16",
+        "49",
+        "7"
+      ],
+      "correct_answer": 0,
+      "difficulty_tier": "medium",
+      "difficulty_score": 51,
+      "visual_svg": null,
+      "visual_alt": "Bar model for ratio problem",
+      "diagnostics": {
+        "1": "Wrong total number of parts",
+        "2": "Confuses which share to find",
+        "3": "Does not account for transfer"
+      },
+      "tags": [
+        "ratio",
+        "advanced",
+        "bar_model",
+        "model_method",
+        "multi_step"
+      ],
+      "chapter": "6A: Ratio Advanced",
+      "hint": {
+        "level_0": "Find total parts, then value of 1 part.",
+        "level_1": "Total parts = sum of ratio numbers.",
+        "level_2": "1 part = total \u00f7 number of parts."
+      },
+      "curriculum_tags": [
+        "SING_6A_4"
+      ],
+      "irt_params": {
+        "a": 1.15,
+        "b": 0.68,
+        "c": 0.25
+      },
+      "irt_a": 1.15,
+      "irt_b": 0.68,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify what you need to count",
+        "Count systematically, left to right",
+        "The total count is your answer"
+      ],
+      "level": 6,
+      "level_name": "Master",
+      "universal_skill_id": "ARITH_MULTI_6",
+      "skill_id": "multi_step",
+      "skill_domain": "arithmetic",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "none",
+      "visual_type": "2d",
+      "visual_ai_verified": false,
+      "media_id": "SING-G6-154.svg",
+      "media_hash": "sha256:ecc10ea248a067a9",
+      "misconception_ids": [
+        "MISC_1",
+        "MISC_2",
+        "COUNT_ERR"
+      ],
+      "why_quality": "ai_generated",
+      "why_framework": "pending",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "acceptable",
+        "has_3_layers": true
+      },
+      "curriculum_source": "singapore",
+      "curriculum_map": {},
+      "school_grade": 6,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "adaptive_topic_id": "g6-word-problems",
+      "adaptive_topic_name": "Word Problems",
+      "adaptive_topic_emoji": "\ud83d\udcd6",
+      "adaptive_grade": 6,
+      "dual_tagged": true,
+      "content_source": "singapore",
+      "sequence_id": 182,
+      "difficulty_tier_in_topic": "medium",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "topic": "g6-word-problems",
+      "interaction_mode": "mcq",
+      "original_id": "SING-G6-075"
+    },
+    {
+      "id": "A6-WPR-0009",
+      "stem": "The ratio of boys to girls is 5:4. There are 54 children altogether. How many boys are there?",
+      "choices": [
+        "35",
+        "30",
+        "24",
+        "26"
+      ],
+      "correct_answer": 1,
+      "difficulty_tier": "medium",
+      "difficulty_score": 52,
+      "visual_svg": null,
+      "visual_alt": null,
+      "diagnostics": {
+        "0": "Check the order of your ratio. Which quantity should come first? Did you simplify completely?",
+        "2": "Check the order of your ratio. Which quantity should come first? Did you simplify completely?",
+        "3": "Check the order of your ratio. Which quantity should come first? Did you simplify completely?"
+      },
+      "tags": [
+        "ratio",
+        "advanced",
+        "bar_model",
+        "model_method",
+        "multi_step"
+      ],
+      "chapter": "6A: Ratio Advanced",
+      "hint": {
+        "level_0": "Find total parts, then value of 1 part.",
+        "level_1": "Total parts = sum of ratio numbers.",
+        "level_2": "1 part = total \u00f7 number of parts."
+      },
+      "curriculum_tags": [
+        "SING_6A_4"
+      ],
+      "irt_params": {
+        "a": 1.15,
+        "b": 0.74,
+        "c": 0.25
+      },
+      "irt_a": 1.15,
+      "irt_b": 0.74,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify what you need to count",
+        "Count systematically, left to right",
+        "The total count is your answer"
+      ],
+      "level": 6,
+      "level_name": "Master",
+      "universal_skill_id": "ARITH_MULTI_6",
+      "skill_id": "multi_step",
+      "skill_domain": "arithmetic",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "none",
+      "visual_type": "none",
+      "visual_ai_verified": false,
+      "media_id": null,
+      "media_hash": null,
+      "misconception_ids": [
+        "MISC_1",
+        "MISC_2",
+        "COUNT_ERR"
+      ],
+      "why_quality": "ai_generated",
+      "why_framework": "pending",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "acceptable",
+        "has_3_layers": true
+      },
+      "curriculum_source": "singapore",
+      "curriculum_map": {},
+      "school_grade": 6,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "adaptive_topic_id": "g6-word-problems",
+      "adaptive_topic_name": "Word Problems",
+      "adaptive_topic_emoji": "\ud83d\udcd6",
+      "adaptive_grade": 6,
+      "dual_tagged": true,
+      "content_source": "singapore",
+      "sequence_id": 196,
+      "difficulty_tier_in_topic": "medium",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "topic": "g6-word-problems",
+      "interaction_mode": "mcq",
+      "original_id": "SING-G6-082"
+    },
+    {
+      "id": "A6-WPR-0010",
+      "stem": "Siti and Nurul have stickers in ratio 4:3. If Siti gives 1 to Nurul, Siti has 11. How many did Siti have originally?",
+      "choices": [
+        "21",
+        "9",
+        "12",
+        "16"
+      ],
+      "correct_answer": 2,
+      "difficulty_tier": "medium",
+      "difficulty_score": 53,
+      "visual_svg": null,
+      "visual_alt": "Bar model for ratio problem",
+      "diagnostics": {
+        "0": "Check the order of your ratio. Which quantity should come first? Did you simplify completely?",
+        "1": "Check the order of your ratio. Which quantity should come first? Did you simplify completely?",
+        "3": "Check the order of your ratio. Which quantity should come first? Did you simplify completely?"
+      },
+      "tags": [
+        "ratio",
+        "advanced",
+        "bar_model",
+        "model_method",
+        "multi_step"
+      ],
+      "chapter": "6A: Ratio Advanced",
+      "hint": {
+        "level_0": "Find total parts, then value of 1 part.",
+        "level_1": "Total parts = sum of ratio numbers.",
+        "level_2": "1 part = total \u00f7 number of parts."
+      },
+      "curriculum_tags": [
+        "SING_6A_4"
+      ],
+      "irt_params": {
+        "a": 1.15,
+        "b": 0.79,
+        "c": 0.25
+      },
+      "irt_a": 1.15,
+      "irt_b": 0.79,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify what you need to count",
+        "Count systematically, left to right",
+        "The total count is your answer"
+      ],
+      "level": 6,
+      "level_name": "Master",
+      "universal_skill_id": "ARITH_MULTI_6",
+      "skill_id": "multi_step",
+      "skill_domain": "arithmetic",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "none",
+      "visual_type": "2d",
+      "visual_ai_verified": false,
+      "media_id": "SING-G6-142.svg",
+      "media_hash": "sha256:f50ad2545b7bd28a",
+      "misconception_ids": [
+        "MISC_1",
+        "MISC_2",
+        "COUNT_ERR"
+      ],
+      "why_quality": "ai_generated",
+      "why_framework": "pending",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "acceptable",
+        "has_3_layers": true
+      },
+      "curriculum_source": "singapore",
+      "curriculum_map": {},
+      "school_grade": 6,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "adaptive_topic_id": "g6-word-problems",
+      "adaptive_topic_name": "Word Problems",
+      "adaptive_topic_emoji": "\ud83d\udcd6",
+      "adaptive_grade": 6,
+      "dual_tagged": true,
+      "content_source": "singapore",
+      "sequence_id": 210,
+      "difficulty_tier_in_topic": "medium",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "topic": "g6-word-problems",
+      "interaction_mode": "mcq",
+      "original_id": "SING-G6-087"
+    },
+    {
+      "id": "A6-WPR-0011",
+      "stem": "Kai and Priya have stickers in ratio 4:7. If Kai gives 4 to Priya, Kai has 24. How many did Kai have originally?",
+      "choices": [
+        "49",
+        "32",
+        "28",
+        "21"
+      ],
+      "correct_answer": 2,
+      "difficulty_tier": "medium",
+      "difficulty_score": 53,
+      "visual_svg": null,
+      "visual_alt": null,
+      "diagnostics": {
+        "0": "Check the order of your ratio. Which quantity should come first? Did you simplify completely?",
+        "1": "Check the order of your ratio. Which quantity should come first? Did you simplify completely?",
+        "3": "Check the order of your ratio. Which quantity should come first? Did you simplify completely?"
+      },
+      "tags": [
+        "ratio",
+        "advanced",
+        "bar_model",
+        "model_method",
+        "multi_step"
+      ],
+      "chapter": "6A: Ratio Advanced",
+      "hint": {
+        "level_0": "Find total parts, then value of 1 part.",
+        "level_1": "Total parts = sum of ratio numbers.",
+        "level_2": "1 part = total \u00f7 number of parts."
+      },
+      "curriculum_tags": [
+        "SING_6A_4"
+      ],
+      "irt_params": {
+        "a": 1.15,
+        "b": 0.79,
+        "c": 0.25
+      },
+      "irt_a": 1.15,
+      "irt_b": 0.79,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify what you need to count",
+        "Count systematically, left to right",
+        "The total count is your answer"
+      ],
+      "level": 6,
+      "level_name": "Master",
+      "universal_skill_id": "ARITH_MULTI_6",
+      "skill_id": "multi_step",
+      "skill_domain": "arithmetic",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "none",
+      "visual_type": "none",
+      "visual_ai_verified": false,
+      "media_id": null,
+      "media_hash": null,
+      "misconception_ids": [
+        "MISC_1",
+        "MISC_2",
+        "COUNT_ERR"
+      ],
+      "why_quality": "ai_generated",
+      "why_framework": "pending",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "acceptable",
+        "has_3_layers": true
+      },
+      "curriculum_source": "singapore",
+      "curriculum_map": {},
+      "school_grade": 6,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "adaptive_topic_id": "g6-word-problems",
+      "adaptive_topic_name": "Word Problems",
+      "adaptive_topic_emoji": "\ud83d\udcd6",
+      "adaptive_grade": 6,
+      "dual_tagged": true,
+      "content_source": "singapore",
+      "sequence_id": 211,
+      "difficulty_tier_in_topic": "medium",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "topic": "g6-word-problems",
+      "interaction_mode": "mcq",
+      "original_id": "SING-G6-088"
+    },
+    {
+      "id": "A6-WPR-0012",
+      "stem": "Wei Ming has only 20-cent and 50-cent coins. He has 100 cents in total. If he has more 20-cent coins than 50-cent coins, how many 20-cent coins does he have?",
+      "choices": [
+        "4",
+        "5",
+        "10",
+        "7"
+      ],
+      "correct_answer": 1,
+      "difficulty_tier": "medium",
+      "difficulty_score": 55,
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 236 110\" width=\"236\" height=\"110\" style=\"font-family:Arial,sans-serif\"><circle cx=\"55\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"55\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"55\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"55\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">5</text><circle cx=\"117\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"117\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"117\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"117\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">5</text><circle cx=\"179\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"179\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"179\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"179\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">10</text></svg>",
+      "visual_alt": "Diagram for make list problem",
+      "diagnostics": {
+        "0": "You're off by 1. Recount carefully \u2014 did you include all values?",
+        "2": "Your answer is double the correct one. Did you forget to divide by 2?",
+        "3": "Computation error in multi-step"
+      },
+      "tags": [
+        "heuristic_make_list",
+        "challenging",
+        "multi_step",
+        "problem_solving",
+        "olympiad_prep"
+      ],
+      "chapter": "6B: Challenging Problems",
+      "hint": {
+        "level_0": "Try the heuristic: make list.",
+        "level_1": "Break the problem into smaller steps.",
+        "level_2": "Identify what you know and what you need to find."
+      },
+      "curriculum_tags": [
+        "SING_6B_5"
+      ],
+      "irt_params": {
+        "a": 1.15,
+        "b": 0.89,
+        "c": 0.25
+      },
+      "irt_a": 1.15,
+      "irt_b": 0.89,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Find the two quantities to compare",
+        "Subtract the smaller from the larger",
+        "The difference is your answer"
+      ],
+      "level": 6,
+      "level_name": "Master",
+      "universal_skill_id": "ARITH_MULTI_6",
+      "skill_id": "multi_step",
+      "skill_domain": "arithmetic",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "none",
+      "visual_type": "2d",
+      "visual_ai_verified": false,
+      "media_id": "SING-G6-198.svg",
+      "media_hash": "sha256:8682e5b65fd74e12",
+      "misconception_ids": [
+        "MISC_1",
+        "MISC_3",
+        "MISC_2"
+      ],
+      "why_quality": "ai_generated",
+      "why_framework": "pending",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "good",
+        "has_3_layers": true
+      },
+      "curriculum_source": "singapore",
+      "curriculum_map": {},
+      "school_grade": 6,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "adaptive_topic_id": "g6-word-problems",
+      "adaptive_topic_name": "Word Problems",
+      "adaptive_topic_emoji": "\ud83d\udcd6",
+      "adaptive_grade": 6,
+      "dual_tagged": true,
+      "content_source": "singapore",
+      "sequence_id": 236,
+      "difficulty_tier_in_topic": "medium",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "topic": "g6-word-problems",
+      "interaction_mode": "mcq",
+      "original_id": "SING-G6-093"
+    },
+    {
+      "id": "A6-WPR-0013",
+      "stem": "Ahmad buys 7 items. Pens cost $4 each and books cost $8 each. Total spent is $40. How many pens?",
+      "choices": [
+        "3",
+        "4",
+        "6",
+        "9"
+      ],
+      "correct_answer": 1,
+      "difficulty_tier": "medium",
+      "difficulty_score": 56,
+      "visual_svg": null,
+      "visual_alt": "Diagram for guess check problem",
+      "diagnostics": {
+        "0": "You're off by 1. Recount carefully \u2014 did you include all values?",
+        "2": "Not quite. Re-read the question carefully and check each step of your calculation.",
+        "3": "Computation error in multi-step"
+      },
+      "tags": [
+        "heuristic_guess_check",
+        "challenging",
+        "multi_step",
+        "problem_solving",
+        "olympiad_prep"
+      ],
+      "chapter": "6B: Challenging Problems",
+      "hint": {
+        "level_0": "Try the heuristic: guess check.",
+        "level_1": "Break the problem into smaller steps.",
+        "level_2": "Identify what you know and what you need to find."
+      },
+      "curriculum_tags": [
+        "SING_6B_5"
+      ],
+      "irt_params": {
+        "a": 1.15,
+        "b": 0.95,
+        "c": 0.25
+      },
+      "irt_a": 1.15,
+      "irt_b": 0.95,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify what you need to count",
+        "Count systematically, left to right",
+        "The total count is your answer"
+      ],
+      "level": 6,
+      "level_name": "Master",
+      "universal_skill_id": "ARITH_MULTI_6",
+      "skill_id": "multi_step",
+      "skill_domain": "arithmetic",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "none",
+      "visual_type": "2d",
+      "visual_ai_verified": false,
+      "media_id": "SING-G6-180.svg",
+      "media_hash": "sha256:de7ebf3b482e2476",
+      "misconception_ids": [
+        "MISC_1",
+        "MISC_3",
+        "MISC_2"
+      ],
+      "why_quality": "ai_generated",
+      "why_framework": "pending",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "good",
+        "has_3_layers": true
+      },
+      "curriculum_source": "singapore",
+      "curriculum_map": {},
+      "school_grade": 6,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "adaptive_topic_id": "g6-word-problems",
+      "adaptive_topic_name": "Word Problems",
+      "adaptive_topic_emoji": "\ud83d\udcd6",
+      "adaptive_grade": 6,
+      "dual_tagged": true,
+      "content_source": "singapore",
+      "sequence_id": 256,
+      "difficulty_tier_in_topic": "medium",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "topic": "g6-word-problems",
+      "interaction_mode": "mcq",
+      "original_id": "SING-G6-098"
+    },
+    {
+      "id": "A6-WPR-0014",
+      "stem": "Ahmad buys 7 items. Pens cost $6 each and books cost $11 each. Total spent is $57. How many pens?",
+      "choices": [
+        "9",
+        "4",
+        "6",
+        "3"
+      ],
+      "correct_answer": 1,
+      "difficulty_tier": "medium",
+      "difficulty_score": 56,
+      "visual_svg": null,
+      "visual_alt": "Diagram for guess check problem",
+      "diagnostics": {
+        "0": "Not quite. Re-read the question carefully and check each step of your calculation.",
+        "2": "Not quite. Re-read the question carefully and check each step of your calculation.",
+        "3": "Computation error in multi-step"
+      },
+      "tags": [
+        "heuristic_guess_check",
+        "challenging",
+        "multi_step",
+        "problem_solving",
+        "olympiad_prep"
+      ],
+      "chapter": "6B: Challenging Problems",
+      "hint": {
+        "level_0": "Try the heuristic: guess check.",
+        "level_1": "Break the problem into smaller steps.",
+        "level_2": "Identify what you know and what you need to find."
+      },
+      "curriculum_tags": [
+        "SING_6B_5"
+      ],
+      "irt_params": {
+        "a": 1.15,
+        "b": 0.95,
+        "c": 0.25
+      },
+      "irt_a": 1.15,
+      "irt_b": 0.95,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify what you need to count",
+        "Count systematically, left to right",
+        "The total count is your answer"
+      ],
+      "level": 6,
+      "level_name": "Master",
+      "universal_skill_id": "ARITH_MULTI_6",
+      "skill_id": "multi_step",
+      "skill_domain": "arithmetic",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "none",
+      "visual_type": "2d",
+      "visual_ai_verified": false,
+      "media_id": "SING-G6-199.svg",
+      "media_hash": "sha256:de7ebf3b482e2476",
+      "misconception_ids": [
+        "MISC_1",
+        "MISC_3",
+        "MISC_2"
+      ],
+      "why_quality": "ai_generated",
+      "why_framework": "pending",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "good",
+        "has_3_layers": true
+      },
+      "curriculum_source": "singapore",
+      "curriculum_map": {},
+      "school_grade": 6,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "adaptive_topic_id": "g6-word-problems",
+      "adaptive_topic_name": "Word Problems",
+      "adaptive_topic_emoji": "\ud83d\udcd6",
+      "adaptive_grade": 6,
+      "dual_tagged": true,
+      "content_source": "singapore",
+      "sequence_id": 257,
+      "difficulty_tier_in_topic": "medium",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "topic": "g6-word-problems",
+      "interaction_mode": "mcq",
+      "original_id": "SING-G6-099"
+    },
+    {
+      "id": "A6-WPR-0015",
+      "stem": "The ratio of boys to girls is 2:5. There are 21 children altogether. How many boys are there?",
+      "choices": [
+        "15",
+        "1",
+        "8",
+        "6"
+      ],
+      "correct_answer": 3,
+      "difficulty_tier": "medium",
+      "difficulty_score": 57,
+      "visual_svg": null,
+      "visual_alt": "Bar model for ratio problem",
+      "diagnostics": {
+        "0": "Check the order of your ratio. Which quantity should come first? Did you simplify completely?",
+        "1": "Check the order of your ratio. Which quantity should come first? Did you simplify completely?",
+        "2": "Check the order of your ratio. Which quantity should come first? Did you simplify completely?"
+      },
+      "tags": [
+        "ratio",
+        "advanced",
+        "bar_model",
+        "model_method",
+        "multi_step"
+      ],
+      "chapter": "6A: Ratio Advanced",
+      "hint": {
+        "level_0": "Find total parts, then value of 1 part.",
+        "level_1": "Total parts = sum of ratio numbers.",
+        "level_2": "1 part = total \u00f7 number of parts."
+      },
+      "curriculum_tags": [
+        "SING_6A_4"
+      ],
+      "irt_params": {
+        "a": 1.15,
+        "b": 1.0,
+        "c": 0.25
+      },
+      "irt_a": 1.15,
+      "irt_b": 1.0,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify what you need to count",
+        "Count systematically, left to right",
+        "The total count is your answer"
+      ],
+      "level": 6,
+      "level_name": "Master",
+      "universal_skill_id": "ARITH_MULTI_6",
+      "skill_id": "multi_step",
+      "skill_domain": "arithmetic",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "none",
+      "visual_type": "2d",
+      "visual_ai_verified": false,
+      "media_id": "SING-G6-137.svg",
+      "media_hash": "sha256:eb1671d022c0ba72",
+      "misconception_ids": [
+        "MISC_1",
+        "MISC_2",
+        "COUNT_ERR"
+      ],
+      "why_quality": "ai_generated",
+      "why_framework": "pending",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "acceptable",
+        "has_3_layers": true
+      },
+      "curriculum_source": "singapore",
+      "curriculum_map": {},
+      "school_grade": 6,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "adaptive_topic_id": "g6-word-problems",
+      "adaptive_topic_name": "Word Problems",
+      "adaptive_topic_emoji": "\ud83d\udcd6",
+      "adaptive_grade": 6,
+      "dual_tagged": true,
+      "content_source": "singapore",
+      "sequence_id": 270,
+      "difficulty_tier_in_topic": "medium",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "topic": "g6-word-problems",
+      "interaction_mode": "mcq",
+      "original_id": "SING-G6-107"
+    },
+    {
+      "id": "A6-WPR-0016",
+      "stem": "Wei Ming has only 20-cent and 50-cent coins. He has 150 cents in total. If he has more 20-cent coins than 50-cent coins, how many 20-cent coins does he have?",
+      "choices": [
+        "7",
+        "4",
+        "5",
+        "10"
+      ],
+      "correct_answer": 2,
+      "difficulty_tier": "medium",
+      "difficulty_score": 57,
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 236 110\" width=\"236\" height=\"110\" style=\"font-family:Arial,sans-serif\"><circle cx=\"55\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"55\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"55\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"55\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">5</text><circle cx=\"117\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"117\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"117\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"117\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">5</text><circle cx=\"179\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"179\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"179\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"179\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">10</text></svg>",
+      "visual_alt": "Diagram for make list problem",
+      "diagnostics": {
+        "0": "Not quite. Re-read the question carefully and check each step of your calculation.",
+        "1": "You're off by 1. Recount carefully \u2014 did you include all values?",
+        "3": "Computation error in multi-step"
+      },
+      "tags": [
+        "heuristic_make_list",
+        "challenging",
+        "multi_step",
+        "problem_solving",
+        "olympiad_prep"
+      ],
+      "chapter": "6B: Challenging Problems",
+      "hint": {
+        "level_0": "Try the heuristic: make list.",
+        "level_1": "Break the problem into smaller steps.",
+        "level_2": "Identify what you know and what you need to find."
+      },
+      "curriculum_tags": [
+        "SING_6B_5"
+      ],
+      "irt_params": {
+        "a": 1.15,
+        "b": 1.0,
+        "c": 0.25
+      },
+      "irt_a": 1.15,
+      "irt_b": 1.0,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Find the two quantities to compare",
+        "Subtract the smaller from the larger",
+        "The difference is your answer"
+      ],
+      "level": 6,
+      "level_name": "Master",
+      "universal_skill_id": "ARITH_MULTI_6",
+      "skill_id": "multi_step",
+      "skill_domain": "arithmetic",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "none",
+      "visual_type": "2d",
+      "visual_ai_verified": false,
+      "media_id": "SING-G6-184.svg",
+      "media_hash": "sha256:8682e5b65fd74e12",
+      "misconception_ids": [
+        "MISC_1",
+        "MISC_3",
+        "MISC_2"
+      ],
+      "why_quality": "ai_generated",
+      "why_framework": "pending",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "good",
+        "has_3_layers": true
+      },
+      "curriculum_source": "singapore",
+      "curriculum_map": {},
+      "school_grade": 6,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "adaptive_topic_id": "g6-word-problems",
+      "adaptive_topic_name": "Word Problems",
+      "adaptive_topic_emoji": "\ud83d\udcd6",
+      "adaptive_grade": 6,
+      "dual_tagged": true,
+      "content_source": "singapore",
+      "sequence_id": 271,
+      "difficulty_tier_in_topic": "medium",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "topic": "g6-word-problems",
+      "interaction_mode": "mcq",
+      "original_id": "SING-G6-108"
+    },
+    {
+      "id": "A6-WPR-0017",
+      "stem": "Jun Wei and Wei Ming have 160 marbles. The ratio of Jun Wei's to Wei Ming's is 5:3. How many does Jun Wei have?",
+      "choices": [
+        "102",
+        "105",
+        "100",
+        "99"
+      ],
+      "correct_answer": 2,
+      "difficulty_tier": "medium",
+      "difficulty_score": 57,
+      "visual_svg": null,
+      "visual_alt": "Diagram for draw diagram problem",
+      "diagnostics": {
+        "0": "Check the order of your ratio. Which quantity should come first? Did you simplify completely?",
+        "1": "Check the order of your ratio. Which quantity should come first? Did you simplify completely?",
+        "3": "Computation error in multi-step"
+      },
+      "tags": [
+        "heuristic_draw_diagram",
+        "challenging",
+        "multi_step",
+        "problem_solving",
+        "olympiad_prep"
+      ],
+      "chapter": "6B: Challenging Problems",
+      "hint": {
+        "level_0": "Try the heuristic: draw diagram.",
+        "level_1": "Break the problem into smaller steps.",
+        "level_2": "Identify what you know and what you need to find."
+      },
+      "curriculum_tags": [
+        "SING_6B_5"
+      ],
+      "irt_params": {
+        "a": 1.15,
+        "b": 1.0,
+        "c": 0.25
+      },
+      "irt_a": 1.15,
+      "irt_b": 1.0,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify what you need to count",
+        "Count systematically, left to right",
+        "The total count is your answer"
+      ],
+      "level": 6,
+      "level_name": "Master",
+      "universal_skill_id": "ARITH_MULTI_6",
+      "skill_id": "multi_step",
+      "skill_domain": "arithmetic",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "none",
+      "visual_type": "2d",
+      "visual_ai_verified": false,
+      "media_id": "SING-G6-187.svg",
+      "media_hash": "sha256:2586ecd7fa849f90",
+      "misconception_ids": [
+        "MISC_1",
+        "MISC_3",
+        "MISC_2"
+      ],
+      "why_quality": "ai_generated",
+      "why_framework": "pending",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "good",
+        "has_3_layers": true
+      },
+      "curriculum_source": "singapore",
+      "curriculum_map": {},
+      "school_grade": 6,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "adaptive_topic_id": "g6-word-problems",
+      "adaptive_topic_name": "Word Problems",
+      "adaptive_topic_emoji": "\ud83d\udcd6",
+      "adaptive_grade": 6,
+      "dual_tagged": true,
+      "content_source": "singapore",
+      "sequence_id": 272,
+      "difficulty_tier_in_topic": "medium",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "topic": "g6-word-problems",
+      "interaction_mode": "mcq",
+      "original_id": "SING-G6-109"
+    },
+    {
+      "id": "A6-WPR-0018",
+      "stem": "$90 is shared among 3 people in the ratio 5 : 7 : 3. How much does the first person get?",
+      "choices": [
+        "35",
+        "23",
+        "30",
+        "42"
+      ],
+      "correct_answer": 2,
+      "difficulty_tier": "hard",
+      "difficulty_score": 58,
+      "visual_svg": null,
+      "visual_alt": "Bar model for ratio problem",
+      "diagnostics": {
+        "0": "Check the order of your ratio. Which quantity should come first? Did you simplify completely?",
+        "1": "Check the order of your ratio. Which quantity should come first? Did you simplify completely?",
+        "3": "Check the order of your ratio. Which quantity should come first? Did you simplify completely?"
+      },
+      "tags": [
+        "ratio",
+        "advanced",
+        "bar_model",
+        "model_method",
+        "multi_step"
+      ],
+      "chapter": "6A: Ratio Advanced",
+      "hint": {
+        "level_0": "Find total parts, then value of 1 part.",
+        "level_1": "Total parts = sum of ratio numbers.",
+        "level_2": "1 part = total \u00f7 number of parts."
+      },
+      "curriculum_tags": [
+        "SING_6A_4"
+      ],
+      "irt_params": {
+        "a": 1.15,
+        "b": 1.05,
+        "c": 0.25
+      },
+      "irt_a": 1.15,
+      "irt_b": 1.05,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Given: 90 shared among 3",
+        "Operation needed: division",
+        "Divide: 90 \u00f7 3"
+      ],
+      "level": 6,
+      "level_name": "Master",
+      "universal_skill_id": "ARITH_MULTI_6",
+      "skill_id": "multi_step",
+      "skill_domain": "arithmetic",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "none",
+      "visual_type": "2d",
+      "visual_ai_verified": false,
+      "media_id": "SING-G6-136.svg",
+      "media_hash": "sha256:aabc9c7c127fc2b7",
+      "misconception_ids": [
+        "MISC_1",
+        "MISC_2",
+        "COUNT_ERR"
+      ],
+      "why_quality": "ai_generated",
+      "why_framework": "pending",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "acceptable",
+        "has_3_layers": true
+      },
+      "curriculum_source": "singapore",
+      "curriculum_map": {},
+      "school_grade": 6,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "adaptive_topic_id": "g6-word-problems",
+      "adaptive_topic_name": "Word Problems",
+      "adaptive_topic_emoji": "\ud83d\udcd6",
+      "adaptive_grade": 6,
+      "dual_tagged": true,
+      "content_source": "singapore",
+      "sequence_id": 286,
+      "difficulty_tier_in_topic": "practice",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "topic": "g6-word-problems",
+      "interaction_mode": "mcq",
+      "original_id": "SING-G6-113"
+    },
+    {
+      "id": "A6-WPR-0019",
+      "stem": "Siti and Aisha have stickers in ratio 4:5. If Siti gives 2 to Aisha, Siti has 22. How many did Siti have originally?",
+      "choices": [
+        "19",
+        "30",
+        "28",
+        "24"
+      ],
+      "correct_answer": 3,
+      "difficulty_tier": "hard",
+      "difficulty_score": 59,
+      "visual_svg": null,
+      "visual_alt": "Bar model for ratio problem",
+      "diagnostics": {
+        "0": "Check the order of your ratio. Which quantity should come first? Did you simplify completely?",
+        "1": "Check the order of your ratio. Which quantity should come first? Did you simplify completely?",
+        "2": "Check the order of your ratio. Which quantity should come first? Did you simplify completely?"
+      },
+      "tags": [
+        "ratio",
+        "advanced",
+        "bar_model",
+        "model_method",
+        "multi_step"
+      ],
+      "chapter": "6A: Ratio Advanced",
+      "hint": {
+        "level_0": "Find total parts, then value of 1 part.",
+        "level_1": "Total parts = sum of ratio numbers.",
+        "level_2": "1 part = total \u00f7 number of parts."
+      },
+      "curriculum_tags": [
+        "SING_6A_4"
+      ],
+      "irt_params": {
+        "a": 1.15,
+        "b": 1.11,
+        "c": 0.25
+      },
+      "irt_a": 1.15,
+      "irt_b": 1.11,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify what you need to count",
+        "Count systematically, left to right",
+        "The total count is your answer"
+      ],
+      "level": 6,
+      "level_name": "Master",
+      "universal_skill_id": "ARITH_MULTI_6",
+      "skill_id": "multi_step",
+      "skill_domain": "arithmetic",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "none",
+      "visual_type": "2d",
+      "visual_ai_verified": false,
+      "media_id": "SING-G6-146.svg",
+      "media_hash": "sha256:8b332fa7f3bc6d23",
+      "misconception_ids": [
+        "MISC_1",
+        "MISC_2",
+        "COUNT_ERR"
+      ],
+      "why_quality": "ai_generated",
+      "why_framework": "pending",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "acceptable",
+        "has_3_layers": true
+      },
+      "curriculum_source": "singapore",
+      "curriculum_map": {},
+      "school_grade": 6,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "adaptive_topic_id": "g6-word-problems",
+      "adaptive_topic_name": "Word Problems",
+      "adaptive_topic_emoji": "\ud83d\udcd6",
+      "adaptive_grade": 6,
+      "dual_tagged": true,
+      "content_source": "singapore",
+      "sequence_id": 299,
+      "difficulty_tier_in_topic": "practice",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "topic": "g6-word-problems",
+      "interaction_mode": "mcq",
+      "original_id": "SING-G6-117"
+    },
+    {
+      "id": "A6-WPR-0020",
+      "stem": "$42 is shared among 3 people in the ratio 4 : 5 : 5. How much does the first person get?",
+      "choices": [
+        "15",
+        "7",
+        "16",
+        "12"
+      ],
+      "correct_answer": 3,
+      "difficulty_tier": "hard",
+      "difficulty_score": 59,
+      "visual_svg": null,
+      "visual_alt": "Bar model for ratio problem",
+      "diagnostics": {
+        "0": "Check the order of your ratio. Which quantity should come first? Did you simplify completely?",
+        "1": "Check the order of your ratio. Which quantity should come first? Did you simplify completely?",
+        "2": "Check the order of your ratio. Which quantity should come first? Did you simplify completely?"
+      },
+      "tags": [
+        "ratio",
+        "advanced",
+        "bar_model",
+        "model_method",
+        "multi_step"
+      ],
+      "chapter": "6A: Ratio Advanced",
+      "hint": {
+        "level_0": "Find total parts, then value of 1 part.",
+        "level_1": "Total parts = sum of ratio numbers.",
+        "level_2": "1 part = total \u00f7 number of parts."
+      },
+      "curriculum_tags": [
+        "SING_6A_4"
+      ],
+      "irt_params": {
+        "a": 1.15,
+        "b": 1.11,
+        "c": 0.25
+      },
+      "irt_a": 1.15,
+      "irt_b": 1.11,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Given: 42 shared among 3",
+        "Operation needed: division",
+        "Divide: 42 \u00f7 3"
+      ],
+      "level": 6,
+      "level_name": "Master",
+      "universal_skill_id": "ARITH_MULTI_6",
+      "skill_id": "multi_step",
+      "skill_domain": "arithmetic",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "none",
+      "visual_type": "2d",
+      "visual_ai_verified": false,
+      "media_id": "SING-G6-159.svg",
+      "media_hash": "sha256:d9129522a1f6d61f",
+      "misconception_ids": [
+        "MISC_1",
+        "MISC_2",
+        "COUNT_ERR"
+      ],
+      "why_quality": "ai_generated",
+      "why_framework": "pending",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "acceptable",
+        "has_3_layers": true
+      },
+      "curriculum_source": "singapore",
+      "curriculum_map": {},
+      "school_grade": 6,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "adaptive_topic_id": "g6-word-problems",
+      "adaptive_topic_name": "Word Problems",
+      "adaptive_topic_emoji": "\ud83d\udcd6",
+      "adaptive_grade": 6,
+      "dual_tagged": true,
+      "content_source": "singapore",
+      "sequence_id": 300,
+      "difficulty_tier_in_topic": "practice",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "topic": "g6-word-problems",
+      "interaction_mode": "mcq",
+      "original_id": "SING-G6-118"
+    },
+    {
+      "id": "A6-WPR-0021",
+      "stem": "Wei Ming has only 20-cent and 50-cent coins. He has 50 cents in total. If he has more 20-cent coins than 50-cent coins, how many 20-cent coins does he have?",
+      "choices": [
+        "4",
+        "1",
+        "7",
+        "2"
+      ],
+      "correct_answer": 3,
+      "difficulty_tier": "hard",
+      "difficulty_score": 59,
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 236 110\" width=\"236\" height=\"110\" style=\"font-family:Arial,sans-serif\"><circle cx=\"55\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"55\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"55\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"55\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">5</text><circle cx=\"117\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"117\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"117\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"117\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">5</text><circle cx=\"179\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"179\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"179\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"179\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">10</text></svg>",
+      "visual_alt": "Diagram for make list problem",
+      "diagnostics": {
+        "0": "Your answer is double the correct one. Did you forget to divide by 2?",
+        "1": "You're off by 1. Recount carefully \u2014 did you include all values?",
+        "2": "Not quite. Re-read the question carefully and check each step of your calculation."
+      },
+      "tags": [
+        "heuristic_make_list",
+        "challenging",
+        "multi_step",
+        "problem_solving",
+        "olympiad_prep"
+      ],
+      "chapter": "6B: Challenging Problems",
+      "hint": {
+        "level_0": "Try the heuristic: make list.",
+        "level_1": "Break the problem into smaller steps.",
+        "level_2": "Identify what you know and what you need to find."
+      },
+      "curriculum_tags": [
+        "SING_6B_5"
+      ],
+      "irt_params": {
+        "a": 1.15,
+        "b": 1.11,
+        "c": 0.25
+      },
+      "irt_a": 1.15,
+      "irt_b": 1.11,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Find the two quantities to compare",
+        "Subtract the smaller from the larger",
+        "The difference is your answer"
+      ],
+      "level": 6,
+      "level_name": "Master",
+      "universal_skill_id": "ARITH_MULTI_6",
+      "skill_id": "multi_step",
+      "skill_domain": "arithmetic",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "none",
+      "visual_type": "2d",
+      "visual_ai_verified": false,
+      "media_id": "SING-G6-161.svg",
+      "media_hash": "sha256:0a6b41c1cb346019",
+      "misconception_ids": [
+        "MISC_1",
+        "MISC_3",
+        "MISC_2"
+      ],
+      "why_quality": "ai_generated",
+      "why_framework": "pending",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "good",
+        "has_3_layers": true
+      },
+      "curriculum_source": "singapore",
+      "curriculum_map": {},
+      "school_grade": 6,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "adaptive_topic_id": "g6-word-problems",
+      "adaptive_topic_name": "Word Problems",
+      "adaptive_topic_emoji": "\ud83d\udcd6",
+      "adaptive_grade": 6,
+      "dual_tagged": true,
+      "content_source": "singapore",
+      "sequence_id": 301,
+      "difficulty_tier_in_topic": "practice",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "topic": "g6-word-problems",
+      "interaction_mode": "mcq",
+      "original_id": "SING-G6-119"
+    },
+    {
+      "id": "A6-WPR-0022",
+      "stem": "$65 is shared among 3 people in the ratio 3 : 6 : 4. How much does the first person get?",
+      "choices": [
+        "9",
+        "15",
+        "18",
+        "30"
+      ],
+      "correct_answer": 1,
+      "difficulty_tier": "hard",
+      "difficulty_score": 60,
+      "visual_svg": null,
+      "visual_alt": "Bar model for ratio problem",
+      "diagnostics": {
+        "0": "Check the order of your ratio. Which quantity should come first? Did you simplify completely?",
+        "2": "Check the order of your ratio. Which quantity should come first? Did you simplify completely?",
+        "3": "Check the order of your ratio. Which quantity should come first? Did you simplify completely?"
+      },
+      "tags": [
+        "ratio",
+        "advanced",
+        "bar_model",
+        "model_method",
+        "multi_step"
+      ],
+      "chapter": "6A: Ratio Advanced",
+      "hint": {
+        "level_0": "Find total parts, then value of 1 part.",
+        "level_1": "Total parts = sum of ratio numbers.",
+        "level_2": "1 part = total \u00f7 number of parts."
+      },
+      "curriculum_tags": [
+        "SING_6A_4"
+      ],
+      "irt_params": {
+        "a": 1.15,
+        "b": 1.16,
+        "c": 0.25
+      },
+      "irt_a": 1.15,
+      "irt_b": 1.16,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Given: 65 shared among 3",
+        "Operation needed: division",
+        "Divide: 65 \u00f7 3"
+      ],
+      "level": 6,
+      "level_name": "Master",
+      "universal_skill_id": "ARITH_MULTI_6",
+      "skill_id": "multi_step",
+      "skill_domain": "arithmetic",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "none",
+      "visual_type": "2d",
+      "visual_ai_verified": false,
+      "media_id": "SING-G6-149.svg",
+      "media_hash": "sha256:1c500e690996f9c9",
+      "misconception_ids": [
+        "MISC_1",
+        "MISC_2",
+        "COUNT_ERR"
+      ],
+      "why_quality": "ai_generated",
+      "why_framework": "pending",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "acceptable",
+        "has_3_layers": true
+      },
+      "curriculum_source": "singapore",
+      "curriculum_map": {},
+      "school_grade": 6,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "adaptive_topic_id": "g6-word-problems",
+      "adaptive_topic_name": "Word Problems",
+      "adaptive_topic_emoji": "\ud83d\udcd6",
+      "adaptive_grade": 6,
+      "dual_tagged": true,
+      "content_source": "singapore",
+      "sequence_id": 315,
+      "difficulty_tier_in_topic": "practice",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "topic": "g6-word-problems",
+      "interaction_mode": "mcq",
+      "original_id": "SING-G6-126"
+    },
+    {
+      "id": "A6-WPR-0023",
+      "stem": "Siti thinks of a number. Subtracts 6, then multiplies by 3. The result is 93. What was the number?",
+      "choices": [
+        "37",
+        "36",
+        "42",
+        "39"
+      ],
+      "correct_answer": 0,
+      "difficulty_tier": "hard",
+      "difficulty_score": 60,
+      "visual_svg": null,
+      "visual_alt": "Diagram for work backwards problem",
+      "diagnostics": {
+        "1": "You're off by 1. Recount carefully \u2014 did you include all values?",
+        "2": "Not quite. Re-read the question carefully and check each step of your calculation.",
+        "3": "Computation error in multi-step"
+      },
+      "tags": [
+        "heuristic_work_backwards",
+        "challenging",
+        "multi_step",
+        "problem_solving",
+        "olympiad_prep"
+      ],
+      "chapter": "6B: Challenging Problems",
+      "hint": {
+        "level_0": "Try the heuristic: work backwards.",
+        "level_1": "Break the problem into smaller steps.",
+        "level_2": "Identify what you know and what you need to find."
+      },
+      "curriculum_tags": [
+        "SING_6B_5"
+      ],
+      "irt_params": {
+        "a": 1.15,
+        "b": 1.16,
+        "c": 0.25
+      },
+      "irt_a": 1.15,
+      "irt_b": 1.16,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Start at 6 on the number line",
+        "Count back 3 steps",
+        "The number you land on is your answer"
+      ],
+      "level": 6,
+      "level_name": "Master",
+      "universal_skill_id": "ARITH_MULTI_6",
+      "skill_id": "multi_step",
+      "skill_domain": "arithmetic",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "none",
+      "visual_type": "2d",
+      "visual_ai_verified": false,
+      "media_id": "SING-G6-200.svg",
+      "media_hash": "sha256:d42c000ddd19a3f2",
+      "misconception_ids": [
+        "MISC_1",
+        "MISC_3",
+        "MISC_2"
+      ],
+      "why_quality": "ai_generated",
+      "why_framework": "pending",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "good",
+        "has_3_layers": true
+      },
+      "curriculum_source": "singapore",
+      "curriculum_map": {},
+      "school_grade": 6,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "adaptive_topic_id": "g6-word-problems",
+      "adaptive_topic_name": "Word Problems",
+      "adaptive_topic_emoji": "\ud83d\udcd6",
+      "adaptive_grade": 6,
+      "dual_tagged": true,
+      "content_source": "singapore",
+      "sequence_id": 316,
+      "difficulty_tier_in_topic": "practice",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "topic": "g6-word-problems",
+      "interaction_mode": "mcq",
+      "original_id": "SING-G6-127"
+    },
+    {
+      "id": "A6-WPR-0024",
+      "stem": "$96 is shared among 3 people in the ratio 5 : 7 : 4. How much does the first person get?",
+      "choices": [
+        "30",
+        "23",
+        "42",
+        "35"
+      ],
+      "correct_answer": 0,
+      "difficulty_tier": "hard",
+      "difficulty_score": 61,
+      "visual_svg": null,
+      "visual_alt": "Bar model for ratio problem",
+      "diagnostics": {
+        "1": "Wrong total number of parts",
+        "2": "Confuses which share to find",
+        "3": "Does not account for transfer"
+      },
+      "tags": [
+        "ratio",
+        "advanced",
+        "bar_model",
+        "model_method",
+        "multi_step"
+      ],
+      "chapter": "6A: Ratio Advanced",
+      "hint": {
+        "level_0": "Find total parts, then value of 1 part.",
+        "level_1": "Total parts = sum of ratio numbers.",
+        "level_2": "1 part = total \u00f7 number of parts."
+      },
+      "curriculum_tags": [
+        "SING_6A_4"
+      ],
+      "irt_params": {
+        "a": 1.15,
+        "b": 1.21,
+        "c": 0.25
+      },
+      "irt_a": 1.15,
+      "irt_b": 1.21,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Given: 96 shared among 3",
+        "Operation needed: division",
+        "Divide: 96 \u00f7 3",
+        "Check: multiply back to verify"
+      ],
+      "level": 6,
+      "level_name": "Master",
+      "universal_skill_id": "ARITH_MULTI_6",
+      "skill_id": "multi_step",
+      "skill_domain": "arithmetic",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "none",
+      "visual_type": "2d",
+      "visual_ai_verified": false,
+      "media_id": "SING-G6-160.svg",
+      "media_hash": "sha256:85215dc470e21e02",
+      "misconception_ids": [
+        "MISC_1",
+        "MISC_2",
+        "COUNT_ERR"
+      ],
+      "why_quality": "ai_generated",
+      "why_framework": "pending",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "acceptable",
+        "has_3_layers": true
+      },
+      "curriculum_source": "singapore",
+      "curriculum_map": {},
+      "school_grade": 6,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "adaptive_topic_id": "g6-word-problems",
+      "adaptive_topic_name": "Word Problems",
+      "adaptive_topic_emoji": "\ud83d\udcd6",
+      "adaptive_grade": 6,
+      "dual_tagged": true,
+      "content_source": "singapore",
+      "sequence_id": 330,
+      "difficulty_tier_in_topic": "practice",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "topic": "g6-word-problems",
+      "interaction_mode": "mcq",
+      "original_id": "SING-G6-130"
+    },
+    {
+      "id": "A6-WPR-0025",
+      "stem": "Siti thinks of a number. Subtracts 8, then multiplies by 3. The result is 192. What was the number?",
+      "choices": [
+        "72",
+        "74",
+        "71",
+        "77"
+      ],
+      "correct_answer": 0,
+      "difficulty_tier": "hard",
+      "difficulty_score": 61,
+      "visual_svg": null,
+      "visual_alt": "Diagram for work backwards problem",
+      "diagnostics": {
+        "1": "Not quite. Re-read the question carefully and check each step of your calculation.",
+        "2": "You're off by 1. Recount carefully \u2014 did you include all values?",
+        "3": "Computation error in multi-step"
+      },
+      "tags": [
+        "heuristic_work_backwards",
+        "challenging",
+        "multi_step",
+        "problem_solving",
+        "olympiad_prep"
+      ],
+      "chapter": "6B: Challenging Problems",
+      "hint": {
+        "level_0": "Try the heuristic: work backwards.",
+        "level_1": "Break the problem into smaller steps.",
+        "level_2": "Identify what you know and what you need to find."
+      },
+      "curriculum_tags": [
+        "SING_6B_5"
+      ],
+      "irt_params": {
+        "a": 1.15,
+        "b": 1.21,
+        "c": 0.25
+      },
+      "irt_a": 1.15,
+      "irt_b": 1.21,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Start at 8 on the number line",
+        "Count back 3 steps",
+        "The number you land on is your answer"
+      ],
+      "level": 6,
+      "level_name": "Master",
+      "universal_skill_id": "ARITH_MULTI_6",
+      "skill_id": "multi_step",
+      "skill_domain": "arithmetic",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "none",
+      "visual_type": "2d",
+      "visual_ai_verified": false,
+      "media_id": "SING-G6-178.svg",
+      "media_hash": "sha256:6b21ad7e2ace40de",
+      "misconception_ids": [
+        "MISC_1",
+        "MISC_3",
+        "MISC_2"
+      ],
+      "why_quality": "ai_generated",
+      "why_framework": "pending",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "good",
+        "has_3_layers": true
+      },
+      "curriculum_source": "singapore",
+      "curriculum_map": {},
+      "school_grade": 6,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "adaptive_topic_id": "g6-word-problems",
+      "adaptive_topic_name": "Word Problems",
+      "adaptive_topic_emoji": "\ud83d\udcd6",
+      "adaptive_grade": 6,
+      "dual_tagged": true,
+      "content_source": "singapore",
+      "sequence_id": 331,
+      "difficulty_tier_in_topic": "practice",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "topic": "g6-word-problems",
+      "interaction_mode": "mcq",
+      "original_id": "SING-G6-131"
+    },
+    {
+      "id": "A6-WPR-0026",
+      "stem": "$16 is shared among 3 people in the ratio 2 : 3 : 3. How much does the first person get?",
+      "choices": [
+        "6",
+        "1",
+        "7",
+        "4"
+      ],
+      "correct_answer": 3,
+      "difficulty_tier": "hard",
+      "difficulty_score": 63,
+      "visual_svg": null,
+      "visual_alt": "Bar model for ratio problem",
+      "diagnostics": {
+        "0": "Check the order of your ratio. Which quantity should come first? Did you simplify completely?",
+        "1": "Check the order of your ratio. Which quantity should come first? Did you simplify completely?",
+        "2": "Check the order of your ratio. Which quantity should come first? Did you simplify completely?"
+      },
+      "tags": [
+        "ratio",
+        "advanced",
+        "bar_model",
+        "model_method",
+        "multi_step"
+      ],
+      "chapter": "6A: Ratio Advanced",
+      "hint": {
+        "level_0": "Find total parts, then value of 1 part.",
+        "level_1": "Total parts = sum of ratio numbers.",
+        "level_2": "1 part = total \u00f7 number of parts."
+      },
+      "curriculum_tags": [
+        "SING_6A_4"
+      ],
+      "irt_params": {
+        "a": 1.15,
+        "b": 1.32,
+        "c": 0.25
+      },
+      "irt_a": 1.15,
+      "irt_b": 1.32,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Given: 16 shared among 3",
+        "Operation needed: division",
+        "Divide: 16 \u00f7 3",
+        "Check: multiply back to verify"
+      ],
+      "level": 6,
+      "level_name": "Master",
+      "universal_skill_id": "ARITH_MULTI_6",
+      "skill_id": "multi_step",
+      "skill_domain": "arithmetic",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "none",
+      "visual_type": "2d",
+      "visual_ai_verified": false,
+      "media_id": "SING-G6-147.svg",
+      "media_hash": "sha256:fd3b3dbdab365cc4",
+      "misconception_ids": [
+        "MISC_1",
+        "MISC_2",
+        "COUNT_ERR"
+      ],
+      "why_quality": "ai_generated",
+      "why_framework": "pending",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "acceptable",
+        "has_3_layers": true
+      },
+      "curriculum_source": "singapore",
+      "curriculum_map": {},
+      "school_grade": 6,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "adaptive_topic_id": "g6-word-problems",
+      "adaptive_topic_name": "Word Problems",
+      "adaptive_topic_emoji": "\ud83d\udcd6",
+      "adaptive_grade": 6,
+      "dual_tagged": true,
+      "content_source": "singapore",
+      "sequence_id": 359,
+      "difficulty_tier_in_topic": "challenge",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "topic": "g6-word-problems",
+      "interaction_mode": "mcq",
+      "original_id": "SING-G6-139"
+    },
+    {
+      "id": "A6-WPR-0027",
+      "stem": "$98 is shared among 3 people in the ratio 2 : 6 : 6. How much does the first person get?",
+      "choices": [
+        "16",
+        "14",
+        "8",
+        "42"
+      ],
+      "correct_answer": 1,
+      "difficulty_tier": "hard",
+      "difficulty_score": 64,
+      "visual_svg": null,
+      "visual_alt": "Bar model for ratio problem",
+      "diagnostics": {
+        "0": "Check the order of your ratio. Which quantity should come first? Did you simplify completely?",
+        "2": "Check the order of your ratio. Which quantity should come first? Did you simplify completely?",
+        "3": "Check the order of your ratio. Which quantity should come first? Did you simplify completely?"
+      },
+      "tags": [
+        "ratio",
+        "advanced",
+        "bar_model",
+        "model_method",
+        "multi_step"
+      ],
+      "chapter": "6A: Ratio Advanced",
+      "hint": {
+        "level_0": "Find total parts, then value of 1 part.",
+        "level_1": "Total parts = sum of ratio numbers.",
+        "level_2": "1 part = total \u00f7 number of parts."
+      },
+      "curriculum_tags": [
+        "SING_6A_4"
+      ],
+      "irt_params": {
+        "a": 1.15,
+        "b": 1.37,
+        "c": 0.25
+      },
+      "irt_a": 1.15,
+      "irt_b": 1.37,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Given: 98 shared among 3",
+        "Operation needed: division",
+        "Divide: 98 \u00f7 3",
+        "Check: multiply back to verify"
+      ],
+      "level": 6,
+      "level_name": "Master",
+      "universal_skill_id": "ARITH_MULTI_6",
+      "skill_id": "multi_step",
+      "skill_domain": "arithmetic",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "none",
+      "visual_type": "2d",
+      "visual_ai_verified": false,
+      "media_id": "SING-G6-143.svg",
+      "media_hash": "sha256:b325f1ef6e9f0213",
+      "misconception_ids": [
+        "MISC_1",
+        "MISC_2",
+        "COUNT_ERR"
+      ],
+      "why_quality": "ai_generated",
+      "why_framework": "pending",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "acceptable",
+        "has_3_layers": true
+      },
+      "curriculum_source": "singapore",
+      "curriculum_map": {},
+      "school_grade": 6,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "adaptive_topic_id": "g6-word-problems",
+      "adaptive_topic_name": "Word Problems",
+      "adaptive_topic_emoji": "\ud83d\udcd6",
+      "adaptive_grade": 6,
+      "dual_tagged": true,
+      "content_source": "singapore",
+      "sequence_id": 376,
+      "difficulty_tier_in_topic": "challenge",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "topic": "g6-word-problems",
+      "interaction_mode": "mcq",
+      "original_id": "SING-G6-146"
+    },
+    {
+      "id": "A6-WPR-0028",
+      "stem": "Sarah and Kai have stickers in ratio 2:3. If Sarah gives 1 to Kai, Sarah has 15. How many did Sarah have originally?",
+      "choices": [
+        "13",
+        "18",
+        "16",
+        "24"
+      ],
+      "correct_answer": 2,
+      "difficulty_tier": "hard",
+      "difficulty_score": 64,
+      "visual_svg": null,
+      "visual_alt": "Bar model for ratio problem",
+      "diagnostics": {
+        "0": "Check the order of your ratio. Which quantity should come first? Did you simplify completely?",
+        "1": "Check the order of your ratio. Which quantity should come first? Did you simplify completely?",
+        "3": "Check the order of your ratio. Which quantity should come first? Did you simplify completely?"
+      },
+      "tags": [
+        "ratio",
+        "advanced",
+        "bar_model",
+        "model_method",
+        "multi_step"
+      ],
+      "chapter": "6A: Ratio Advanced",
+      "hint": {
+        "level_0": "Find total parts, then value of 1 part.",
+        "level_1": "Total parts = sum of ratio numbers.",
+        "level_2": "1 part = total \u00f7 number of parts."
+      },
+      "curriculum_tags": [
+        "SING_6A_4"
+      ],
+      "irt_params": {
+        "a": 1.15,
+        "b": 1.37,
+        "c": 0.25
+      },
+      "irt_a": 1.15,
+      "irt_b": 1.37,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify what you need to count",
+        "Count systematically, left to right",
+        "The total count is your answer"
+      ],
+      "level": 6,
+      "level_name": "Master",
+      "universal_skill_id": "ARITH_MULTI_6",
+      "skill_id": "multi_step",
+      "skill_domain": "arithmetic",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "none",
+      "visual_type": "2d",
+      "visual_ai_verified": false,
+      "media_id": "SING-G6-150.svg",
+      "media_hash": "sha256:af189bff6db7d506",
+      "misconception_ids": [
+        "MISC_1",
+        "MISC_2",
+        "COUNT_ERR"
+      ],
+      "why_quality": "ai_generated",
+      "why_framework": "pending",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "acceptable",
+        "has_3_layers": true
+      },
+      "curriculum_source": "singapore",
+      "curriculum_map": {},
+      "school_grade": 6,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "adaptive_topic_id": "g6-word-problems",
+      "adaptive_topic_name": "Word Problems",
+      "adaptive_topic_emoji": "\ud83d\udcd6",
+      "adaptive_grade": 6,
+      "dual_tagged": true,
+      "content_source": "singapore",
+      "sequence_id": 377,
+      "difficulty_tier_in_topic": "challenge",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "topic": "g6-word-problems",
+      "interaction_mode": "mcq",
+      "original_id": "SING-G6-147"
+    },
+    {
+      "id": "A6-WPR-0029",
+      "stem": "What is the next number in the pattern: 1, 2, 4, 8, ____?",
+      "choices": [
+        "21",
+        "15",
+        "18",
+        "16"
+      ],
+      "correct_answer": 3,
+      "difficulty_tier": "hard",
+      "difficulty_score": 65,
+      "visual_svg": "<svg viewBox=\"0 0 280 55\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"30\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"30\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">1</text><circle cx=\"75\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"75\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">2</text><circle cx=\"120\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"120\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">4</text><circle cx=\"165\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"165\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">8</text><circle cx=\"210\" cy=\"25\" r=\"18\" fill=\"#FFF3E0\" stroke=\"#F57C00\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"210\" y=\"31\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#F57C00\">?</text></svg>",
+      "visual_alt": "Visual for: What is the next number in the pattern: 1, 2, 4, 8",
+      "diagnostics": {
+        "0": "Not quite. Re-read the question carefully and check each step of your calculation.",
+        "1": "You're off by 1. Recount carefully \u2014 did you include all values?",
+        "2": "Not quite. Re-read the question carefully and check each step of your calculation."
+      },
+      "tags": [
+        "heuristic_look_for_pattern",
+        "challenging",
+        "multi_step",
+        "problem_solving",
+        "olympiad_prep"
+      ],
+      "chapter": "6B: Challenging Problems",
+      "hint": {
+        "level_0": "Try the heuristic: look for pattern.",
+        "level_1": "Break the problem into smaller steps.",
+        "level_2": "Identify what you know and what you need to find."
+      },
+      "curriculum_tags": [
+        "SING_6B_5"
+      ],
+      "irt_params": {
+        "a": 1.15,
+        "b": 1.42,
+        "c": 0.25
+      },
+      "irt_a": 1.15,
+      "irt_b": 1.42,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Look at how the numbers change each step",
+        "Find the rule connecting consecutive numbers",
+        "Apply the rule to find the missing number"
+      ],
+      "level": 6,
+      "level_name": "Master",
+      "universal_skill_id": "ARITH_MULTI_6",
+      "skill_id": "multi_step",
+      "skill_domain": "arithmetic",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "none",
+      "visual_type": "none",
+      "visual_ai_verified": false,
+      "media_id": null,
+      "media_hash": null,
+      "misconception_ids": [
+        "MISC_1",
+        "MISC_3",
+        "MISC_2"
+      ],
+      "why_quality": "ai_generated",
+      "why_framework": "pending",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "good",
+        "has_3_layers": true
+      },
+      "curriculum_source": "singapore",
+      "curriculum_map": {},
+      "school_grade": 6,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "adaptive_topic_id": "g6-word-problems",
+      "adaptive_topic_name": "Word Problems",
+      "adaptive_topic_emoji": "\ud83d\udcd6",
+      "adaptive_grade": 6,
+      "dual_tagged": true,
+      "content_source": "singapore",
+      "sequence_id": 390,
+      "difficulty_tier_in_topic": "challenge",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "topic": "g6-word-problems",
+      "interaction_mode": "mcq",
+      "original_id": "SING-G6-150"
+    },
+    {
+      "id": "A6-WPR-0030",
+      "stem": "Siti and Hafiz have stickers in ratio 4:3. If Siti gives 1 to Hafiz, Siti has 15. How many did Siti have originally?",
+      "choices": [
+        "16",
+        "20",
+        "12",
+        "13"
+      ],
+      "correct_answer": 0,
+      "difficulty_tier": "advanced",
+      "difficulty_score": 69,
+      "visual_svg": null,
+      "visual_alt": "Bar model for ratio problem",
+      "diagnostics": {
+        "1": "Wrong total number of parts",
+        "2": "Confuses which share to find",
+        "3": "Does not account for transfer"
+      },
+      "tags": [
+        "ratio",
+        "advanced",
+        "bar_model",
+        "model_method",
+        "multi_step"
+      ],
+      "chapter": "6A: Ratio Advanced",
+      "hint": {
+        "level_0": "Find total parts, then value of 1 part.",
+        "level_1": "Total parts = sum of ratio numbers.",
+        "level_2": "1 part = total \u00f7 number of parts."
+      },
+      "curriculum_tags": [
+        "SING_6A_4"
+      ],
+      "irt_params": {
+        "a": 1.15,
+        "b": 1.63,
+        "c": 0.25
+      },
+      "irt_a": 1.15,
+      "irt_b": 1.63,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify what you need to count",
+        "Count systematically, left to right",
+        "The total count is your answer"
+      ],
+      "level": 6,
+      "level_name": "Master",
+      "universal_skill_id": "ARITH_MULTI_6",
+      "skill_id": "multi_step",
+      "skill_domain": "arithmetic",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "none",
+      "visual_type": "2d",
+      "visual_ai_verified": false,
+      "media_id": "SING-G6-139.svg",
+      "media_hash": "sha256:f50ad2545b7bd28a",
+      "misconception_ids": [
+        "MISC_1",
+        "MISC_2",
+        "COUNT_ERR"
+      ],
+      "why_quality": "ai_generated",
+      "why_framework": "pending",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "acceptable",
+        "has_3_layers": true
+      },
+      "curriculum_source": "singapore",
+      "curriculum_map": {},
+      "school_grade": 6,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "adaptive_topic_id": "g6-word-problems",
+      "adaptive_topic_name": "Word Problems",
+      "adaptive_topic_emoji": "\ud83d\udcd6",
+      "adaptive_grade": 6,
+      "dual_tagged": true,
+      "content_source": "singapore",
+      "sequence_id": 442,
+      "difficulty_tier_in_topic": "advanced",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "topic": "g6-word-problems",
+      "interaction_mode": "mcq",
+      "original_id": "SING-G6-165"
+    },
+    {
+      "id": "A6-WPR-0031",
+      "stem": "Wei Ming has only 20-cent and 50-cent coins. He has 75 cents in total. If he has more 20-cent coins than 50-cent coins, how many 20-cent coins does he have?",
+      "choices": [
+        "5",
+        "2",
+        "8",
+        "3"
+      ],
+      "correct_answer": 3,
+      "difficulty_tier": "advanced",
+      "difficulty_score": 69,
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 236 110\" width=\"236\" height=\"110\" style=\"font-family:Arial,sans-serif\"><circle cx=\"55\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"55\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"55\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"55\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">5</text><circle cx=\"117\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"117\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"117\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"117\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">5</text><circle cx=\"179\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"179\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"179\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">\u20b9</text><text x=\"179\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">10</text></svg>",
+      "visual_alt": "Diagram for make list problem",
+      "diagnostics": {
+        "0": "Not quite. Re-read the question carefully and check each step of your calculation.",
+        "1": "You're off by 1. Recount carefully \u2014 did you include all values?",
+        "2": "Not quite. Re-read the question carefully and check each step of your calculation."
+      },
+      "tags": [
+        "heuristic_make_list",
+        "challenging",
+        "multi_step",
+        "problem_solving",
+        "olympiad_prep"
+      ],
+      "chapter": "6B: Challenging Problems",
+      "hint": {
+        "level_0": "Try the heuristic: make list.",
+        "level_1": "Break the problem into smaller steps.",
+        "level_2": "Identify what you know and what you need to find."
+      },
+      "curriculum_tags": [
+        "SING_6B_5"
+      ],
+      "irt_params": {
+        "a": 1.15,
+        "b": 1.63,
+        "c": 0.25
+      },
+      "irt_a": 1.15,
+      "irt_b": 1.63,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Find the two quantities to compare",
+        "Subtract the smaller from the larger",
+        "The difference is your answer"
+      ],
+      "level": 6,
+      "level_name": "Master",
+      "universal_skill_id": "ARITH_MULTI_6",
+      "skill_id": "multi_step",
+      "skill_domain": "arithmetic",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "none",
+      "visual_type": "2d",
+      "visual_ai_verified": false,
+      "media_id": "SING-G6-167.svg",
+      "media_hash": "sha256:b73064f2ec2db86e",
+      "misconception_ids": [
+        "MISC_1",
+        "MISC_3",
+        "MISC_2"
+      ],
+      "why_quality": "ai_generated",
+      "why_framework": "pending",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "good",
+        "has_3_layers": true
+      },
+      "curriculum_source": "singapore",
+      "curriculum_map": {},
+      "school_grade": 6,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "adaptive_topic_id": "g6-word-problems",
+      "adaptive_topic_name": "Word Problems",
+      "adaptive_topic_emoji": "\ud83d\udcd6",
+      "adaptive_grade": 6,
+      "dual_tagged": true,
+      "content_source": "singapore",
+      "sequence_id": 444,
+      "difficulty_tier_in_topic": "advanced",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "topic": "g6-word-problems",
+      "interaction_mode": "mcq",
+      "original_id": "SING-G6-167"
+    },
+    {
+      "id": "A6-WPR-0032",
+      "stem": "Raju buys 7 items. Pens cost $3 each and books cost $6 each. Total spent is $30. How many pens?",
+      "choices": [
+        "4",
+        "6",
+        "9",
+        "3"
+      ],
+      "correct_answer": 0,
+      "difficulty_tier": "advanced",
+      "difficulty_score": 69,
+      "visual_svg": null,
+      "visual_alt": "Diagram for guess check problem",
+      "diagnostics": {
+        "1": "Not quite. Re-read the question carefully and check each step of your calculation.",
+        "2": "Not quite. Re-read the question carefully and check each step of your calculation.",
+        "3": "Computation error in multi-step"
+      },
+      "tags": [
+        "heuristic_guess_check",
+        "challenging",
+        "multi_step",
+        "problem_solving",
+        "olympiad_prep"
+      ],
+      "chapter": "6B: Challenging Problems",
+      "hint": {
+        "level_0": "Try the heuristic: guess check.",
+        "level_1": "Break the problem into smaller steps.",
+        "level_2": "Identify what you know and what you need to find."
+      },
+      "curriculum_tags": [
+        "SING_6B_5"
+      ],
+      "irt_params": {
+        "a": 1.15,
+        "b": 1.63,
+        "c": 0.25
+      },
+      "irt_a": 1.15,
+      "irt_b": 1.63,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify what you need to count",
+        "Count systematically, left to right",
+        "The total count is your answer"
+      ],
+      "level": 6,
+      "level_name": "Master",
+      "universal_skill_id": "ARITH_MULTI_6",
+      "skill_id": "multi_step",
+      "skill_domain": "arithmetic",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "none",
+      "visual_type": "2d",
+      "visual_ai_verified": false,
+      "media_id": "SING-G6-197.svg",
+      "media_hash": "sha256:de7ebf3b482e2476",
+      "misconception_ids": [
+        "MISC_1",
+        "MISC_3",
+        "MISC_2"
+      ],
+      "why_quality": "ai_generated",
+      "why_framework": "pending",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "good",
+        "has_3_layers": true
+      },
+      "curriculum_source": "singapore",
+      "curriculum_map": {},
+      "school_grade": 6,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "adaptive_topic_id": "g6-word-problems",
+      "adaptive_topic_name": "Word Problems",
+      "adaptive_topic_emoji": "\ud83d\udcd6",
+      "adaptive_grade": 6,
+      "dual_tagged": true,
+      "content_source": "singapore",
+      "sequence_id": 445,
+      "difficulty_tier_in_topic": "advanced",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "topic": "g6-word-problems",
+      "interaction_mode": "mcq",
+      "original_id": "SING-G6-168"
+    },
+    {
+      "id": "A6-WPR-0033",
+      "stem": "Priya thinks of a number. Subtracts 12, then multiplies by 2. The result is 128. What was the number?",
+      "choices": [
+        "76",
+        "78",
+        "81",
+        "75"
+      ],
+      "correct_answer": 0,
+      "difficulty_tier": "advanced",
+      "difficulty_score": 71,
+      "visual_svg": null,
+      "visual_alt": "Diagram for work backwards problem",
+      "diagnostics": {
+        "1": "Not quite. Re-read the question carefully and check each step of your calculation.",
+        "2": "Not quite. Re-read the question carefully and check each step of your calculation.",
+        "3": "Computation error in multi-step"
+      },
+      "tags": [
+        "heuristic_work_backwards",
+        "challenging",
+        "multi_step",
+        "problem_solving",
+        "olympiad_prep"
+      ],
+      "chapter": "6B: Challenging Problems",
+      "hint": {
+        "level_0": "Try the heuristic: work backwards.",
+        "level_1": "Break the problem into smaller steps.",
+        "level_2": "Identify what you know and what you need to find."
+      },
+      "curriculum_tags": [
+        "SING_6B_5"
+      ],
+      "irt_params": {
+        "a": 1.15,
+        "b": 1.74,
+        "c": 0.25
+      },
+      "irt_a": 1.15,
+      "irt_b": 1.74,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Start at 12 on the number line",
+        "Count back 2 steps",
+        "The number you land on is your answer"
+      ],
+      "level": 6,
+      "level_name": "Master",
+      "universal_skill_id": "ARITH_MULTI_6",
+      "skill_id": "multi_step",
+      "skill_domain": "arithmetic",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "none",
+      "visual_type": "2d",
+      "visual_ai_verified": false,
+      "media_id": "SING-G6-171.svg",
+      "media_hash": "sha256:1ca0ca2b7cf69a84",
+      "misconception_ids": [
+        "MISC_1",
+        "MISC_3",
+        "MISC_2"
+      ],
+      "why_quality": "ai_generated",
+      "why_framework": "pending",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "good",
+        "has_3_layers": true
+      },
+      "curriculum_source": "singapore",
+      "curriculum_map": {},
+      "school_grade": 6,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "adaptive_topic_id": "g6-word-problems",
+      "adaptive_topic_name": "Word Problems",
+      "adaptive_topic_emoji": "\ud83d\udcd6",
+      "adaptive_grade": 6,
+      "dual_tagged": true,
+      "content_source": "singapore",
+      "sequence_id": 469,
+      "difficulty_tier_in_topic": "advanced",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "topic": "g6-word-problems",
+      "interaction_mode": "mcq",
+      "original_id": "SING-G6-169"
+    },
+    {
+      "id": "A6-WPR-0034",
+      "stem": "What is the next number in the pattern: 5, 15, 45, 135, ____?",
+      "choices": [
+        "405",
+        "407",
+        "410",
+        "404"
+      ],
+      "correct_answer": 0,
+      "difficulty_tier": "advanced",
+      "difficulty_score": 72,
+      "visual_svg": "<svg viewBox=\"0 0 280 55\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"30\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"30\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">5</text><circle cx=\"75\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"75\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">15</text><circle cx=\"120\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"120\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">45</text><circle cx=\"165\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"165\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">135</text><circle cx=\"210\" cy=\"25\" r=\"18\" fill=\"#FFF3E0\" stroke=\"#F57C00\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"210\" y=\"31\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#F57C00\">?</text></svg>",
+      "visual_alt": "Diagram for look for pattern problem",
+      "diagnostics": {
+        "1": "Not quite. Re-read the question carefully and check each step of your calculation.",
+        "2": "Not quite. Re-read the question carefully and check each step of your calculation.",
+        "3": "Computation error in multi-step"
+      },
+      "tags": [
+        "heuristic_look_for_pattern",
+        "challenging",
+        "multi_step",
+        "problem_solving",
+        "olympiad_prep"
+      ],
+      "chapter": "6B: Challenging Problems",
+      "hint": {
+        "level_0": "Try the heuristic: look for pattern.",
+        "level_1": "Break the problem into smaller steps.",
+        "level_2": "Identify what you know and what you need to find."
+      },
+      "curriculum_tags": [
+        "SING_6B_5"
+      ],
+      "irt_params": {
+        "a": 1.15,
+        "b": 1.79,
+        "c": 0.25
+      },
+      "irt_a": 1.15,
+      "irt_b": 1.79,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Look at how the numbers change each step",
+        "Find the rule connecting consecutive numbers",
+        "Apply the rule to find the missing number"
+      ],
+      "level": 6,
+      "level_name": "Master",
+      "universal_skill_id": "ARITH_MULTI_6",
+      "skill_id": "multi_step",
+      "skill_domain": "arithmetic",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "none",
+      "visual_type": "2d",
+      "visual_ai_verified": false,
+      "media_id": "SING-G6-192.svg",
+      "media_hash": "sha256:db482aecaeb0a2ed",
+      "misconception_ids": [
+        "MISC_1",
+        "MISC_3",
+        "MISC_2"
+      ],
+      "why_quality": "ai_generated",
+      "why_framework": "pending",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "good",
+        "has_3_layers": true
+      },
+      "curriculum_source": "singapore",
+      "curriculum_map": {},
+      "school_grade": 6,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "adaptive_topic_id": "g6-word-problems",
+      "adaptive_topic_name": "Word Problems",
+      "adaptive_topic_emoji": "\ud83d\udcd6",
+      "adaptive_grade": 6,
+      "dual_tagged": true,
+      "content_source": "singapore",
+      "sequence_id": 482,
+      "difficulty_tier_in_topic": "advanced",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "topic": "g6-word-problems",
+      "interaction_mode": "mcq",
+      "original_id": "SING-G6-172"
+    },
+    {
+      "id": "A6-WPR-0035",
+      "stem": "$52 is shared among 3 people in the ratio 4 : 7 : 2. How much does the first person get?",
+      "choices": [
+        "28",
+        "16",
+        "9",
+        "20"
+      ],
+      "correct_answer": 1,
+      "difficulty_tier": "advanced",
+      "difficulty_score": 73,
+      "visual_svg": null,
+      "visual_alt": "Bar model for ratio problem",
+      "diagnostics": {
+        "0": "Check the order of your ratio. Which quantity should come first? Did you simplify completely?",
+        "2": "Check the order of your ratio. Which quantity should come first? Did you simplify completely?",
+        "3": "Check the order of your ratio. Which quantity should come first? Did you simplify completely?"
+      },
+      "tags": [
+        "ratio",
+        "advanced",
+        "bar_model",
+        "model_method",
+        "multi_step"
+      ],
+      "chapter": "6A: Ratio Advanced",
+      "hint": {
+        "level_0": "Find total parts, then value of 1 part.",
+        "level_1": "Total parts = sum of ratio numbers.",
+        "level_2": "1 part = total \u00f7 number of parts."
+      },
+      "curriculum_tags": [
+        "SING_6A_4"
+      ],
+      "irt_params": {
+        "a": 1.15,
+        "b": 1.84,
+        "c": 0.25
+      },
+      "irt_a": 1.15,
+      "irt_b": 1.84,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Given: 52 shared among 3",
+        "Operation needed: division",
+        "Divide: 52 \u00f7 3",
+        "Check: multiply back to verify"
+      ],
+      "level": 6,
+      "level_name": "Master",
+      "universal_skill_id": "ARITH_MULTI_6",
+      "skill_id": "multi_step",
+      "skill_domain": "arithmetic",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "none",
+      "visual_type": "2d",
+      "visual_ai_verified": false,
+      "media_id": "SING-G6-157.svg",
+      "media_hash": "sha256:b1dc6189caea79d9",
+      "misconception_ids": [
+        "MISC_1",
+        "MISC_2",
+        "COUNT_ERR"
+      ],
+      "why_quality": "ai_generated",
+      "why_framework": "pending",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "acceptable",
+        "has_3_layers": true
+      },
+      "curriculum_source": "singapore",
+      "curriculum_map": {},
+      "school_grade": 6,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "adaptive_topic_id": "g6-word-problems",
+      "adaptive_topic_name": "Word Problems",
+      "adaptive_topic_emoji": "\ud83d\udcd6",
+      "adaptive_grade": 6,
+      "dual_tagged": true,
+      "content_source": "singapore",
+      "sequence_id": 495,
+      "difficulty_tier_in_topic": "advanced",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "topic": "g6-word-problems",
+      "interaction_mode": "mcq",
+      "original_id": "SING-G6-173"
+    },
+    {
+      "id": "A6-WPR-0036",
+      "stem": "Aisha and Jun Wei have 363 marbles. The ratio of Aisha's to Jun Wei's is 4:7. How many does Aisha have?",
+      "choices": [
+        "132",
+        "131",
+        "137",
+        "134"
+      ],
+      "correct_answer": 0,
+      "difficulty_tier": "advanced",
+      "difficulty_score": 73,
+      "visual_svg": null,
+      "visual_alt": "Diagram for draw diagram problem",
+      "diagnostics": {
+        "1": "Check the order of your ratio. Which quantity should come first? Did you simplify completely?",
+        "2": "Check the order of your ratio. Which quantity should come first? Did you simplify completely?",
+        "3": "Computation error in multi-step"
+      },
+      "tags": [
+        "heuristic_draw_diagram",
+        "challenging",
+        "multi_step",
+        "problem_solving",
+        "olympiad_prep"
+      ],
+      "chapter": "6B: Challenging Problems",
+      "hint": {
+        "level_0": "Try the heuristic: draw diagram.",
+        "level_1": "Break the problem into smaller steps.",
+        "level_2": "Identify what you know and what you need to find."
+      },
+      "curriculum_tags": [
+        "SING_6B_5"
+      ],
+      "irt_params": {
+        "a": 1.15,
+        "b": 1.84,
+        "c": 0.25
+      },
+      "irt_a": 1.15,
+      "irt_b": 1.84,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify what you need to count",
+        "Count systematically, left to right",
+        "The total count is your answer"
+      ],
+      "level": 6,
+      "level_name": "Master",
+      "universal_skill_id": "ARITH_MULTI_6",
+      "skill_id": "multi_step",
+      "skill_domain": "arithmetic",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "none",
+      "visual_type": "2d",
+      "visual_ai_verified": false,
+      "media_id": "SING-G6-162.svg",
+      "media_hash": "sha256:c0f5af8517a34f04",
+      "misconception_ids": [
+        "MISC_1",
+        "MISC_3",
+        "MISC_2"
+      ],
+      "why_quality": "ai_generated",
+      "why_framework": "pending",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "good",
+        "has_3_layers": true
+      },
+      "curriculum_source": "singapore",
+      "curriculum_map": {},
+      "school_grade": 6,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "adaptive_topic_id": "g6-word-problems",
+      "adaptive_topic_name": "Word Problems",
+      "adaptive_topic_emoji": "\ud83d\udcd6",
+      "adaptive_grade": 6,
+      "dual_tagged": true,
+      "content_source": "singapore",
+      "sequence_id": 496,
+      "difficulty_tier_in_topic": "advanced",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "topic": "g6-word-problems",
+      "interaction_mode": "mcq",
+      "original_id": "SING-G6-174"
+    },
+    {
+      "id": "A6-WPR-0037",
+      "stem": "Zhi Hao buys 7 items. Pens cost $6 each and books cost $10 each. Total spent is $54. How many pens?",
+      "choices": [
+        "3",
+        "9",
+        "4",
+        "6"
+      ],
+      "correct_answer": 2,
+      "difficulty_tier": "advanced",
+      "difficulty_score": 73,
+      "visual_svg": null,
+      "visual_alt": "Diagram for guess check problem",
+      "diagnostics": {
+        "0": "You're off by 1. Recount carefully \u2014 did you include all values?",
+        "1": "Not quite. Re-read the question carefully and check each step of your calculation.",
+        "3": "Computation error in multi-step"
+      },
+      "tags": [
+        "heuristic_guess_check",
+        "challenging",
+        "multi_step",
+        "problem_solving",
+        "olympiad_prep"
+      ],
+      "chapter": "6B: Challenging Problems",
+      "hint": {
+        "level_0": "Try the heuristic: guess check.",
+        "level_1": "Break the problem into smaller steps.",
+        "level_2": "Identify what you know and what you need to find."
+      },
+      "curriculum_tags": [
+        "SING_6B_5"
+      ],
+      "irt_params": {
+        "a": 1.15,
+        "b": 1.84,
+        "c": 0.25
+      },
+      "irt_a": 1.15,
+      "irt_b": 1.84,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify what you need to count",
+        "Count systematically, left to right",
+        "The total count is your answer"
+      ],
+      "level": 6,
+      "level_name": "Master",
+      "universal_skill_id": "ARITH_MULTI_6",
+      "skill_id": "multi_step",
+      "skill_domain": "arithmetic",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "none",
+      "visual_type": "2d",
+      "visual_ai_verified": false,
+      "media_id": "SING-G6-173.svg",
+      "media_hash": "sha256:de7ebf3b482e2476",
+      "misconception_ids": [
+        "MISC_1",
+        "MISC_3",
+        "MISC_2"
+      ],
+      "why_quality": "ai_generated",
+      "why_framework": "pending",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "good",
+        "has_3_layers": true
+      },
+      "curriculum_source": "singapore",
+      "curriculum_map": {},
+      "school_grade": 6,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "adaptive_topic_id": "g6-word-problems",
+      "adaptive_topic_name": "Word Problems",
+      "adaptive_topic_emoji": "\ud83d\udcd6",
+      "adaptive_grade": 6,
+      "dual_tagged": true,
+      "content_source": "singapore",
+      "sequence_id": 497,
+      "difficulty_tier_in_topic": "advanced",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "topic": "g6-word-problems",
+      "interaction_mode": "mcq",
+      "original_id": "SING-G6-175"
+    },
+    {
+      "id": "A6-WPR-0038",
+      "stem": "Kai thinks of a number. Subtracts 7, then multiplies by 3. The result is 129. What was the number?",
+      "choices": [
+        "49",
+        "55",
+        "52",
+        "50"
+      ],
+      "correct_answer": 3,
+      "difficulty_tier": "advanced",
+      "difficulty_score": 73,
+      "visual_svg": null,
+      "visual_alt": "Diagram for work backwards problem",
+      "diagnostics": {
+        "0": "You're off by 1. Recount carefully \u2014 did you include all values?",
+        "1": "Not quite. Re-read the question carefully and check each step of your calculation.",
+        "2": "Not quite. Re-read the question carefully and check each step of your calculation."
+      },
+      "tags": [
+        "heuristic_work_backwards",
+        "challenging",
+        "multi_step",
+        "problem_solving",
+        "olympiad_prep"
+      ],
+      "chapter": "6B: Challenging Problems",
+      "hint": {
+        "level_0": "Try the heuristic: work backwards.",
+        "level_1": "Break the problem into smaller steps.",
+        "level_2": "Identify what you know and what you need to find."
+      },
+      "curriculum_tags": [
+        "SING_6B_5"
+      ],
+      "irt_params": {
+        "a": 1.15,
+        "b": 1.84,
+        "c": 0.25
+      },
+      "irt_a": 1.15,
+      "irt_b": 1.84,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Start at 7 on the number line",
+        "Count back 3 steps",
+        "The number you land on is your answer"
+      ],
+      "level": 6,
+      "level_name": "Master",
+      "universal_skill_id": "ARITH_MULTI_6",
+      "skill_id": "multi_step",
+      "skill_domain": "arithmetic",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "none",
+      "visual_type": "2d",
+      "visual_ai_verified": false,
+      "media_id": "SING-G6-186.svg",
+      "media_hash": "sha256:a1cd2413f374c88d",
+      "misconception_ids": [
+        "MISC_1",
+        "MISC_3",
+        "MISC_2"
+      ],
+      "why_quality": "ai_generated",
+      "why_framework": "pending",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "good",
+        "has_3_layers": true
+      },
+      "curriculum_source": "singapore",
+      "curriculum_map": {},
+      "school_grade": 6,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "adaptive_topic_id": "g6-word-problems",
+      "adaptive_topic_name": "Word Problems",
+      "adaptive_topic_emoji": "\ud83d\udcd6",
+      "adaptive_grade": 6,
+      "dual_tagged": true,
+      "content_source": "singapore",
+      "sequence_id": 498,
+      "difficulty_tier_in_topic": "advanced",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "topic": "g6-word-problems",
+      "interaction_mode": "mcq",
+      "original_id": "SING-G6-176"
+    },
+    {
+      "id": "A6-WPR-0039",
+      "stem": "What is the next number in the pattern: 4, 12, 36, 108, ____?",
+      "choices": [
+        "329",
+        "323",
+        "326",
+        "324"
+      ],
+      "correct_answer": 3,
+      "difficulty_tier": "advanced",
+      "difficulty_score": 73,
+      "visual_svg": "<svg viewBox=\"0 0 280 55\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"30\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"30\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">4</text><circle cx=\"75\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"75\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">12</text><circle cx=\"120\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"120\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">36</text><circle cx=\"165\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"165\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">108</text><circle cx=\"210\" cy=\"25\" r=\"18\" fill=\"#FFF3E0\" stroke=\"#F57C00\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"210\" y=\"31\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#F57C00\">?</text></svg>",
+      "visual_alt": "Diagram for look for pattern problem",
+      "diagnostics": {
+        "0": "Not quite. Re-read the question carefully and check each step of your calculation.",
+        "1": "You're off by 1. Recount carefully \u2014 did you include all values?",
+        "2": "Not quite. Re-read the question carefully and check each step of your calculation."
+      },
+      "tags": [
+        "heuristic_look_for_pattern",
+        "challenging",
+        "multi_step",
+        "problem_solving",
+        "olympiad_prep"
+      ],
+      "chapter": "6B: Challenging Problems",
+      "hint": {
+        "level_0": "Try the heuristic: look for pattern.",
+        "level_1": "Break the problem into smaller steps.",
+        "level_2": "Identify what you know and what you need to find."
+      },
+      "curriculum_tags": [
+        "SING_6B_5"
+      ],
+      "irt_params": {
+        "a": 1.15,
+        "b": 1.84,
+        "c": 0.25
+      },
+      "irt_a": 1.15,
+      "irt_b": 1.84,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Look at how the numbers change each step",
+        "Find the rule connecting consecutive numbers",
+        "Apply the rule to find the missing number"
+      ],
+      "level": 6,
+      "level_name": "Master",
+      "universal_skill_id": "ARITH_MULTI_6",
+      "skill_id": "multi_step",
+      "skill_domain": "arithmetic",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "none",
+      "visual_type": "2d",
+      "visual_ai_verified": false,
+      "media_id": "SING-G6-189.svg",
+      "media_hash": "sha256:0ad6958c66dd621e",
+      "misconception_ids": [
+        "MISC_1",
+        "MISC_3",
+        "MISC_2"
+      ],
+      "why_quality": "ai_generated",
+      "why_framework": "pending",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "good",
+        "has_3_layers": true
+      },
+      "curriculum_source": "singapore",
+      "curriculum_map": {},
+      "school_grade": 6,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "adaptive_topic_id": "g6-word-problems",
+      "adaptive_topic_name": "Word Problems",
+      "adaptive_topic_emoji": "\ud83d\udcd6",
+      "adaptive_grade": 6,
+      "dual_tagged": true,
+      "content_source": "singapore",
+      "sequence_id": 499,
+      "difficulty_tier_in_topic": "advanced",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "topic": "g6-word-problems",
+      "interaction_mode": "mcq",
+      "original_id": "SING-G6-177"
+    },
+    {
+      "id": "A6-WPR-0040",
+      "stem": "What is the next number in the pattern: 5, 10, 20, 40, ____?",
+      "choices": [
+        "79",
+        "80",
+        "82",
+        "85"
+      ],
+      "correct_answer": 1,
+      "difficulty_tier": "advanced",
+      "difficulty_score": 74,
+      "visual_svg": "<svg viewBox=\"0 0 280 55\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"30\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"30\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">5</text><circle cx=\"75\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"75\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">10</text><circle cx=\"120\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"120\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">20</text><circle cx=\"165\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"165\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">40</text><circle cx=\"210\" cy=\"25\" r=\"18\" fill=\"#FFF3E0\" stroke=\"#F57C00\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"210\" y=\"31\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#F57C00\">?</text></svg>",
+      "visual_alt": "Diagram for look for pattern problem",
+      "diagnostics": {
+        "0": "You're off by 1. Recount carefully \u2014 did you include all values?",
+        "2": "Not quite. Re-read the question carefully and check each step of your calculation.",
+        "3": "Computation error in multi-step"
+      },
+      "tags": [
+        "heuristic_look_for_pattern",
+        "challenging",
+        "multi_step",
+        "problem_solving",
+        "olympiad_prep"
+      ],
+      "chapter": "6B: Challenging Problems",
+      "hint": {
+        "level_0": "Try the heuristic: look for pattern.",
+        "level_1": "Break the problem into smaller steps.",
+        "level_2": "Identify what you know and what you need to find."
+      },
+      "curriculum_tags": [
+        "SING_6B_5"
+      ],
+      "irt_params": {
+        "a": 1.15,
+        "b": 1.89,
+        "c": 0.25
+      },
+      "irt_a": 1.15,
+      "irt_b": 1.89,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Look at how the numbers change each step",
+        "Find the rule connecting consecutive numbers",
+        "Apply the rule to find the missing number"
+      ],
+      "level": 6,
+      "level_name": "Master",
+      "universal_skill_id": "ARITH_MULTI_6",
+      "skill_id": "multi_step",
+      "skill_domain": "arithmetic",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "none",
+      "visual_type": "2d",
+      "visual_ai_verified": false,
+      "media_id": "SING-G6-188.svg",
+      "media_hash": "sha256:211ea576b177eff4",
+      "misconception_ids": [
+        "MISC_1",
+        "MISC_3",
+        "MISC_2"
+      ],
+      "why_quality": "ai_generated",
+      "why_framework": "pending",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "good",
+        "has_3_layers": true
+      },
+      "curriculum_source": "singapore",
+      "curriculum_map": {},
+      "school_grade": 6,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "adaptive_topic_id": "g6-word-problems",
+      "adaptive_topic_name": "Word Problems",
+      "adaptive_topic_emoji": "\ud83d\udcd6",
+      "adaptive_grade": 6,
+      "dual_tagged": true,
+      "content_source": "singapore",
+      "sequence_id": 512,
+      "difficulty_tier_in_topic": "advanced",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "topic": "g6-word-problems",
+      "interaction_mode": "mcq",
+      "original_id": "SING-G6-179"
+    },
+    {
+      "id": "A6-WPR-0041",
+      "stem": "Priya and Nurul have 133 marbles. The ratio of Priya's to Nurul's is 2:5. How many does Priya have?",
+      "choices": [
+        "43",
+        "37",
+        "38",
+        "40"
+      ],
+      "correct_answer": 2,
+      "difficulty_tier": "advanced",
+      "difficulty_score": 75,
+      "visual_svg": null,
+      "visual_alt": "Diagram for draw diagram problem",
+      "diagnostics": {
+        "0": "Check the order of your ratio. Which quantity should come first? Did you simplify completely?",
+        "1": "Check the order of your ratio. Which quantity should come first? Did you simplify completely?",
+        "3": "Computation error in multi-step"
+      },
+      "tags": [
+        "heuristic_draw_diagram",
+        "challenging",
+        "multi_step",
+        "problem_solving",
+        "olympiad_prep"
+      ],
+      "chapter": "6B: Challenging Problems",
+      "hint": {
+        "level_0": "Try the heuristic: draw diagram.",
+        "level_1": "Break the problem into smaller steps.",
+        "level_2": "Identify what you know and what you need to find."
+      },
+      "curriculum_tags": [
+        "SING_6B_5"
+      ],
+      "irt_params": {
+        "a": 1.15,
+        "b": 1.95,
+        "c": 0.25
+      },
+      "irt_a": 1.15,
+      "irt_b": 1.95,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify what you need to count",
+        "Count systematically, left to right",
+        "The total count is your answer"
+      ],
+      "level": 6,
+      "level_name": "Master",
+      "universal_skill_id": "ARITH_MULTI_6",
+      "skill_id": "multi_step",
+      "skill_domain": "arithmetic",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "none",
+      "visual_type": "2d",
+      "visual_ai_verified": false,
+      "media_id": "SING-G6-164.svg",
+      "media_hash": "sha256:8409a896a6a65c79",
+      "misconception_ids": [
+        "MISC_1",
+        "MISC_3",
+        "MISC_2"
+      ],
+      "why_quality": "ai_generated",
+      "why_framework": "pending",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "good",
+        "has_3_layers": true
+      },
+      "curriculum_source": "singapore",
+      "curriculum_map": {},
+      "school_grade": 6,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "adaptive_topic_id": "g6-word-problems",
+      "adaptive_topic_name": "Word Problems",
+      "adaptive_topic_emoji": "\ud83d\udcd6",
+      "adaptive_grade": 6,
+      "dual_tagged": true,
+      "content_source": "singapore",
+      "sequence_id": 531,
+      "difficulty_tier_in_topic": "advanced",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "topic": "g6-word-problems",
+      "interaction_mode": "mcq",
+      "original_id": "SING-G6-180"
+    },
+    {
+      "id": "A6-WPR-0042",
+      "stem": "Aisha and Kavitha have 117 marbles. The ratio of Aisha's to Kavitha's is 2:7. How many does Aisha have?",
+      "choices": [
+        "25",
+        "26",
+        "28",
+        "31"
+      ],
+      "correct_answer": 1,
+      "difficulty_tier": "advanced",
+      "difficulty_score": 75,
+      "visual_svg": null,
+      "visual_alt": "Diagram for draw diagram problem",
+      "diagnostics": {
+        "0": "Check the order of your ratio. Which quantity should come first? Did you simplify completely?",
+        "2": "Check the order of your ratio. Which quantity should come first? Did you simplify completely?",
+        "3": "Computation error in multi-step"
+      },
+      "tags": [
+        "heuristic_draw_diagram",
+        "challenging",
+        "multi_step",
+        "problem_solving",
+        "olympiad_prep"
+      ],
+      "chapter": "6B: Challenging Problems",
+      "hint": {
+        "level_0": "Try the heuristic: draw diagram.",
+        "level_1": "Break the problem into smaller steps.",
+        "level_2": "Identify what you know and what you need to find."
+      },
+      "curriculum_tags": [
+        "SING_6B_5"
+      ],
+      "irt_params": {
+        "a": 1.15,
+        "b": 1.95,
+        "c": 0.25
+      },
+      "irt_a": 1.15,
+      "irt_b": 1.95,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify what you need to count",
+        "Count systematically, left to right",
+        "The total count is your answer"
+      ],
+      "level": 6,
+      "level_name": "Master",
+      "universal_skill_id": "ARITH_MULTI_6",
+      "skill_id": "multi_step",
+      "skill_domain": "arithmetic",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "none",
+      "visual_type": "2d",
+      "visual_ai_verified": false,
+      "media_id": "SING-G6-166.svg",
+      "media_hash": "sha256:9376089a5d40d50a",
+      "misconception_ids": [
+        "MISC_1",
+        "MISC_3",
+        "MISC_2"
+      ],
+      "why_quality": "ai_generated",
+      "why_framework": "pending",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "good",
+        "has_3_layers": true
+      },
+      "curriculum_source": "singapore",
+      "curriculum_map": {},
+      "school_grade": 6,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "adaptive_topic_id": "g6-word-problems",
+      "adaptive_topic_name": "Word Problems",
+      "adaptive_topic_emoji": "\ud83d\udcd6",
+      "adaptive_grade": 6,
+      "dual_tagged": true,
+      "content_source": "singapore",
+      "sequence_id": 532,
+      "difficulty_tier_in_topic": "advanced",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "topic": "g6-word-problems",
+      "interaction_mode": "mcq",
+      "original_id": "SING-G6-181"
+    },
+    {
+      "id": "A6-WPR-0043",
+      "stem": "$70 is shared among 3 people in the ratio 4 : 4 : 2. How much does the first person get?",
+      "choices": [
+        "24",
+        "28",
+        "32",
+        "38"
+      ],
+      "correct_answer": 1,
+      "difficulty_tier": "expert",
+      "difficulty_score": 76,
+      "visual_svg": null,
+      "visual_alt": "Bar model for ratio problem",
+      "diagnostics": {
+        "0": "Check the order of your ratio. Which quantity should come first? Did you simplify completely?",
+        "2": "Check the order of your ratio. Which quantity should come first? Did you simplify completely?",
+        "3": "Check the order of your ratio. Which quantity should come first? Did you simplify completely?"
+      },
+      "tags": [
+        "ratio",
+        "advanced",
+        "bar_model",
+        "model_method",
+        "multi_step"
+      ],
+      "chapter": "6A: Ratio Advanced",
+      "hint": {
+        "level_0": "Find total parts, then value of 1 part.",
+        "level_1": "Total parts = sum of ratio numbers.",
+        "level_2": "1 part = total \u00f7 number of parts."
+      },
+      "curriculum_tags": [
+        "SING_6A_4"
+      ],
+      "irt_params": {
+        "a": 1.2,
+        "b": 2.0,
+        "c": 0.25
+      },
+      "irt_a": 1.2,
+      "irt_b": 2.0,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Given: 70 shared among 3",
+        "Operation needed: division",
+        "Divide: 70 \u00f7 3",
+        "Check: multiply back to verify"
+      ],
+      "level": 6,
+      "level_name": "Master",
+      "universal_skill_id": "ARITH_MULTI_6",
+      "skill_id": "multi_step",
+      "skill_domain": "arithmetic",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "none",
+      "visual_type": "2d",
+      "visual_ai_verified": false,
+      "media_id": "SING-G6-151.svg",
+      "media_hash": "sha256:ea9c0e3d1b634735",
+      "misconception_ids": [
+        "MISC_1",
+        "MISC_2",
+        "COUNT_ERR"
+      ],
+      "why_quality": "ai_generated",
+      "why_framework": "pending",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "acceptable",
+        "has_3_layers": true
+      },
+      "curriculum_source": "singapore",
+      "curriculum_map": {},
+      "school_grade": 6,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "adaptive_topic_id": "g6-word-problems",
+      "adaptive_topic_name": "Word Problems",
+      "adaptive_topic_emoji": "\ud83d\udcd6",
+      "adaptive_grade": 6,
+      "dual_tagged": true,
+      "content_source": "singapore",
+      "sequence_id": 545,
+      "difficulty_tier_in_topic": "expert",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "topic": "g6-word-problems",
+      "interaction_mode": "mcq",
+      "original_id": "SING-G6-182"
+    },
+    {
+      "id": "A6-WPR-0044",
+      "stem": "What is the next number in the pattern: 3, 6, 12, 24, ____?",
+      "choices": [
+        "47",
+        "48",
+        "50",
+        "53"
+      ],
+      "correct_answer": 1,
+      "difficulty_tier": "expert",
+      "difficulty_score": 76,
+      "visual_svg": "<svg viewBox=\"0 0 280 55\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"30\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"30\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">3</text><circle cx=\"75\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"75\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">6</text><circle cx=\"120\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"120\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">12</text><circle cx=\"165\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"165\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">24</text><circle cx=\"210\" cy=\"25\" r=\"18\" fill=\"#FFF3E0\" stroke=\"#F57C00\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"210\" y=\"31\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#F57C00\">?</text></svg>",
+      "visual_alt": "Diagram for look for pattern problem",
+      "diagnostics": {
+        "0": "You're off by 1. Recount carefully \u2014 did you include all values?",
+        "2": "Not quite. Re-read the question carefully and check each step of your calculation.",
+        "3": "Computation error in multi-step"
+      },
+      "tags": [
+        "heuristic_look_for_pattern",
+        "challenging",
+        "multi_step",
+        "problem_solving",
+        "olympiad_prep"
+      ],
+      "chapter": "6B: Challenging Problems",
+      "hint": {
+        "level_0": "Try the heuristic: look for pattern.",
+        "level_1": "Break the problem into smaller steps.",
+        "level_2": "Identify what you know and what you need to find."
+      },
+      "curriculum_tags": [
+        "SING_6B_5"
+      ],
+      "irt_params": {
+        "a": 1.2,
+        "b": 2.0,
+        "c": 0.25
+      },
+      "irt_a": 1.2,
+      "irt_b": 2.0,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Look at how the numbers change each step",
+        "Find the rule connecting consecutive numbers",
+        "Apply the rule to find the missing number"
+      ],
+      "level": 6,
+      "level_name": "Master",
+      "universal_skill_id": "ARITH_MULTI_6",
+      "skill_id": "multi_step",
+      "skill_domain": "arithmetic",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "none",
+      "visual_type": "2d",
+      "visual_ai_verified": false,
+      "media_id": "SING-G6-194.svg",
+      "media_hash": "sha256:8b056f402794f00e",
+      "misconception_ids": [
+        "MISC_1",
+        "MISC_3",
+        "MISC_2"
+      ],
+      "why_quality": "ai_generated",
+      "why_framework": "pending",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "good",
+        "has_3_layers": true
+      },
+      "curriculum_source": "singapore",
+      "curriculum_map": {},
+      "school_grade": 6,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "adaptive_topic_id": "g6-word-problems",
+      "adaptive_topic_name": "Word Problems",
+      "adaptive_topic_emoji": "\ud83d\udcd6",
+      "adaptive_grade": 6,
+      "dual_tagged": true,
+      "content_source": "singapore",
+      "sequence_id": 546,
+      "difficulty_tier_in_topic": "expert",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "topic": "g6-word-problems",
+      "interaction_mode": "mcq",
+      "original_id": "SING-G6-183"
+    },
+    {
+      "id": "A6-WPR-0045",
+      "stem": "Hafiz buys 7 items. Pens cost $7 each and books cost $9 each. Total spent is $55. How many pens?",
+      "choices": [
+        "4",
+        "6",
+        "3",
+        "9"
+      ],
+      "correct_answer": 0,
+      "difficulty_tier": "expert",
+      "difficulty_score": 76,
+      "visual_svg": null,
+      "visual_alt": null,
+      "diagnostics": {
+        "1": "Not quite. Re-read the question carefully and check each step of your calculation.",
+        "2": "You're off by 1. Recount carefully \u2014 did you include all values?",
+        "3": "Computation error in multi-step"
+      },
+      "tags": [
+        "heuristic_guess_check",
+        "challenging",
+        "multi_step",
+        "problem_solving",
+        "olympiad_prep"
+      ],
+      "chapter": "6B: Challenging Problems",
+      "hint": {
+        "level_0": "Try the heuristic: guess check.",
+        "level_1": "Break the problem into smaller steps.",
+        "level_2": "Identify what you know and what you need to find."
+      },
+      "curriculum_tags": [
+        "SING_6B_5"
+      ],
+      "irt_params": {
+        "a": 1.2,
+        "b": 2.0,
+        "c": 0.25
+      },
+      "irt_a": 1.2,
+      "irt_b": 2.0,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify what you need to count",
+        "Count systematically, left to right",
+        "The total count is your answer"
+      ],
+      "level": 6,
+      "level_name": "Master",
+      "universal_skill_id": "ARITH_MULTI_6",
+      "skill_id": "multi_step",
+      "skill_domain": "arithmetic",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "none",
+      "visual_type": "none",
+      "visual_ai_verified": false,
+      "media_id": null,
+      "media_hash": null,
+      "misconception_ids": [
+        "MISC_1",
+        "MISC_3",
+        "MISC_2"
+      ],
+      "why_quality": "ai_generated",
+      "why_framework": "pending",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "good",
+        "has_3_layers": true
+      },
+      "curriculum_source": "singapore",
+      "curriculum_map": {},
+      "school_grade": 6,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "adaptive_topic_id": "g6-word-problems",
+      "adaptive_topic_name": "Word Problems",
+      "adaptive_topic_emoji": "\ud83d\udcd6",
+      "adaptive_grade": 6,
+      "dual_tagged": true,
+      "content_source": "singapore",
+      "sequence_id": 547,
+      "difficulty_tier_in_topic": "expert",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "topic": "g6-word-problems",
+      "interaction_mode": "mcq",
+      "original_id": "SING-G6-184"
+    },
+    {
+      "id": "A6-WPR-0046",
+      "stem": "The ratio of boys to girls is 3:5. There are 32 children altogether. How many boys are there?",
+      "choices": [
+        "15",
+        "7",
+        "12",
+        "20"
+      ],
+      "correct_answer": 2,
+      "difficulty_tier": "expert",
+      "difficulty_score": 79,
+      "visual_svg": null,
+      "visual_alt": "Bar model for ratio problem",
+      "diagnostics": {
+        "0": "Check the order of your ratio. Which quantity should come first? Did you simplify completely?",
+        "1": "Check the order of your ratio. Which quantity should come first? Did you simplify completely?",
+        "3": "Check the order of your ratio. Which quantity should come first? Did you simplify completely?"
+      },
+      "tags": [
+        "ratio",
+        "advanced",
+        "bar_model",
+        "model_method",
+        "multi_step"
+      ],
+      "chapter": "6A: Ratio Advanced",
+      "hint": {
+        "level_0": "Find total parts, then value of 1 part.",
+        "level_1": "Total parts = sum of ratio numbers.",
+        "level_2": "1 part = total \u00f7 number of parts."
+      },
+      "curriculum_tags": [
+        "SING_6A_4"
+      ],
+      "irt_params": {
+        "a": 1.2,
+        "b": 2.16,
+        "c": 0.25
+      },
+      "irt_a": 1.2,
+      "irt_b": 2.16,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify what you need to count",
+        "Count systematically, left to right",
+        "The total count is your answer"
+      ],
+      "level": 6,
+      "level_name": "Master",
+      "universal_skill_id": "ARITH_MULTI_6",
+      "skill_id": "multi_step",
+      "skill_domain": "arithmetic",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "none",
+      "visual_type": "2d",
+      "visual_ai_verified": false,
+      "media_id": "SING-G6-140.svg",
+      "media_hash": "sha256:b73064f2ec2db86e",
+      "misconception_ids": [
+        "MISC_1",
+        "MISC_2",
+        "COUNT_ERR"
+      ],
+      "why_quality": "ai_generated",
+      "why_framework": "pending",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "acceptable",
+        "has_3_layers": true
+      },
+      "curriculum_source": "singapore",
+      "curriculum_map": {},
+      "school_grade": 6,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "adaptive_topic_id": "g6-word-problems",
+      "adaptive_topic_name": "Word Problems",
+      "adaptive_topic_emoji": "\ud83d\udcd6",
+      "adaptive_grade": 6,
+      "dual_tagged": true,
+      "content_source": "singapore",
+      "sequence_id": 584,
+      "difficulty_tier_in_topic": "expert",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "topic": "g6-word-problems",
+      "interaction_mode": "mcq",
+      "original_id": "SING-G6-185"
+    },
+    {
+      "id": "A6-WPR-0047",
+      "stem": "Nurul buys 7 items. Pens cost $4 each and books cost $9 each. Total spent is $43. How many pens?",
+      "choices": [
+        "3",
+        "6",
+        "4",
+        "9"
+      ],
+      "correct_answer": 2,
+      "difficulty_tier": "expert",
+      "difficulty_score": 79,
+      "visual_svg": null,
+      "visual_alt": "Diagram for guess check problem",
+      "diagnostics": {
+        "0": "You're off by 1. Recount carefully \u2014 did you include all values?",
+        "1": "Not quite. Re-read the question carefully and check each step of your calculation.",
+        "3": "Computation error in multi-step"
+      },
+      "tags": [
+        "heuristic_guess_check",
+        "challenging",
+        "multi_step",
+        "problem_solving",
+        "olympiad_prep"
+      ],
+      "chapter": "6B: Challenging Problems",
+      "hint": {
+        "level_0": "Try the heuristic: guess check.",
+        "level_1": "Break the problem into smaller steps.",
+        "level_2": "Identify what you know and what you need to find."
+      },
+      "curriculum_tags": [
+        "SING_6B_5"
+      ],
+      "irt_params": {
+        "a": 1.2,
+        "b": 2.16,
+        "c": 0.25
+      },
+      "irt_a": 1.2,
+      "irt_b": 2.16,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify what you need to count",
+        "Count systematically, left to right",
+        "The total count is your answer"
+      ],
+      "level": 6,
+      "level_name": "Master",
+      "universal_skill_id": "ARITH_MULTI_6",
+      "skill_id": "multi_step",
+      "skill_domain": "arithmetic",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "none",
+      "visual_type": "2d",
+      "visual_ai_verified": false,
+      "media_id": "SING-G6-165.svg",
+      "media_hash": "sha256:de7ebf3b482e2476",
+      "misconception_ids": [
+        "MISC_1",
+        "MISC_3",
+        "MISC_2"
+      ],
+      "why_quality": "ai_generated",
+      "why_framework": "pending",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "good",
+        "has_3_layers": true
+      },
+      "curriculum_source": "singapore",
+      "curriculum_map": {},
+      "school_grade": 6,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "adaptive_topic_id": "g6-word-problems",
+      "adaptive_topic_name": "Word Problems",
+      "adaptive_topic_emoji": "\ud83d\udcd6",
+      "adaptive_grade": 6,
+      "dual_tagged": true,
+      "content_source": "singapore",
+      "sequence_id": 585,
+      "difficulty_tier_in_topic": "expert",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "topic": "g6-word-problems",
+      "interaction_mode": "mcq",
+      "original_id": "SING-G6-186"
+    },
+    {
+      "id": "A6-WPR-0048",
+      "stem": "Aisha and Li Hua have 140 marbles. The ratio of Aisha's to Li Hua's is 5:5. How many does Aisha have?",
+      "choices": [
+        "72",
+        "69",
+        "75",
+        "70"
+      ],
+      "correct_answer": 3,
+      "difficulty_tier": "expert",
+      "difficulty_score": 79,
+      "visual_svg": null,
+      "visual_alt": "Diagram for draw diagram problem",
+      "diagnostics": {
+        "0": "Check the order of your ratio. Which quantity should come first? Did you simplify completely?",
+        "1": "Check the order of your ratio. Which quantity should come first? Did you simplify completely?",
+        "2": "Check the order of your ratio. Which quantity should come first? Did you simplify completely?"
+      },
+      "tags": [
+        "heuristic_draw_diagram",
+        "challenging",
+        "multi_step",
+        "problem_solving",
+        "olympiad_prep"
+      ],
+      "chapter": "6B: Challenging Problems",
+      "hint": {
+        "level_0": "Try the heuristic: draw diagram.",
+        "level_1": "Break the problem into smaller steps.",
+        "level_2": "Identify what you know and what you need to find."
+      },
+      "curriculum_tags": [
+        "SING_6B_5"
+      ],
+      "irt_params": {
+        "a": 1.2,
+        "b": 2.16,
+        "c": 0.25
+      },
+      "irt_a": 1.2,
+      "irt_b": 2.16,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify what you need to count",
+        "Count systematically, left to right",
+        "The total count is your answer"
+      ],
+      "level": 6,
+      "level_name": "Master",
+      "universal_skill_id": "ARITH_MULTI_6",
+      "skill_id": "multi_step",
+      "skill_domain": "arithmetic",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "none",
+      "visual_type": "2d",
+      "visual_ai_verified": false,
+      "media_id": "SING-G6-177.svg",
+      "media_hash": "sha256:56e8a4f608294d91",
+      "misconception_ids": [
+        "MISC_1",
+        "MISC_3",
+        "MISC_2"
+      ],
+      "why_quality": "ai_generated",
+      "why_framework": "pending",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "good",
+        "has_3_layers": true
+      },
+      "curriculum_source": "singapore",
+      "curriculum_map": {},
+      "school_grade": 6,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "adaptive_topic_id": "g6-word-problems",
+      "adaptive_topic_name": "Word Problems",
+      "adaptive_topic_emoji": "\ud83d\udcd6",
+      "adaptive_grade": 6,
+      "dual_tagged": true,
+      "content_source": "singapore",
+      "sequence_id": 586,
+      "difficulty_tier_in_topic": "expert",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "topic": "g6-word-problems",
+      "interaction_mode": "mcq",
+      "original_id": "SING-G6-187"
+    },
+    {
+      "id": "A6-WPR-0049",
+      "stem": "What is the next number in the pattern: 1, 3, 9, 27, ____?",
+      "choices": [
+        "80",
+        "81",
+        "86",
+        "83"
+      ],
+      "correct_answer": 1,
+      "difficulty_tier": "expert",
+      "difficulty_score": 81,
+      "visual_svg": "<svg viewBox=\"0 0 280 55\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"30\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"30\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">1</text><circle cx=\"75\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"75\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">3</text><circle cx=\"120\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"120\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">9</text><circle cx=\"165\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"165\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">27</text><circle cx=\"210\" cy=\"25\" r=\"18\" fill=\"#FFF3E0\" stroke=\"#F57C00\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"210\" y=\"31\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#F57C00\">?</text></svg>",
+      "visual_alt": "Diagram for look for pattern problem",
+      "diagnostics": {
+        "0": "You're off by 1. Recount carefully \u2014 did you include all values?",
+        "2": "Not quite. Re-read the question carefully and check each step of your calculation.",
+        "3": "Computation error in multi-step"
+      },
+      "tags": [
+        "heuristic_look_for_pattern",
+        "challenging",
+        "multi_step",
+        "problem_solving",
+        "olympiad_prep"
+      ],
+      "chapter": "6B: Challenging Problems",
+      "hint": {
+        "level_0": "Try the heuristic: look for pattern.",
+        "level_1": "Break the problem into smaller steps.",
+        "level_2": "Identify what you know and what you need to find."
+      },
+      "curriculum_tags": [
+        "SING_6B_5"
+      ],
+      "irt_params": {
+        "a": 1.2,
+        "b": 2.26,
+        "c": 0.25
+      },
+      "irt_a": 1.2,
+      "irt_b": 2.26,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Look at how the numbers change each step",
+        "Find the rule connecting consecutive numbers",
+        "Apply the rule to find the missing number"
+      ],
+      "level": 6,
+      "level_name": "Master",
+      "universal_skill_id": "ARITH_MULTI_6",
+      "skill_id": "multi_step",
+      "skill_domain": "arithmetic",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "none",
+      "visual_type": "2d",
+      "visual_ai_verified": false,
+      "media_id": "SING-G6-193.svg",
+      "media_hash": "sha256:4ca08dcc9b1feda8",
+      "misconception_ids": [
+        "MISC_1",
+        "MISC_3",
+        "MISC_2"
+      ],
+      "why_quality": "ai_generated",
+      "why_framework": "pending",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "good",
+        "has_3_layers": true
+      },
+      "curriculum_source": "singapore",
+      "curriculum_map": {},
+      "school_grade": 6,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "adaptive_topic_id": "g6-word-problems",
+      "adaptive_topic_name": "Word Problems",
+      "adaptive_topic_emoji": "\ud83d\udcd6",
+      "adaptive_grade": 6,
+      "dual_tagged": true,
+      "content_source": "singapore",
+      "sequence_id": 611,
+      "difficulty_tier_in_topic": "expert",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "topic": "g6-word-problems",
+      "interaction_mode": "mcq",
+      "original_id": "SING-G6-188"
+    },
+    {
+      "id": "A6-WPR-0050",
+      "stem": "Jun Wei buys 7 items. Pens cost $6 each and books cost $8 each. Total spent is $48. How many pens?",
+      "choices": [
+        "9",
+        "4",
+        "6",
+        "3"
+      ],
+      "correct_answer": 1,
+      "difficulty_tier": "expert",
+      "difficulty_score": 83,
+      "visual_svg": null,
+      "visual_alt": "Diagram for guess check problem",
+      "diagnostics": {
+        "0": "Not quite. Re-read the question carefully and check each step of your calculation.",
+        "2": "Not quite. Re-read the question carefully and check each step of your calculation.",
+        "3": "Computation error in multi-step"
+      },
+      "tags": [
+        "heuristic_guess_check",
+        "challenging",
+        "multi_step",
+        "problem_solving",
+        "olympiad_prep"
+      ],
+      "chapter": "6B: Challenging Problems",
+      "hint": {
+        "level_0": "Try the heuristic: guess check.",
+        "level_1": "Break the problem into smaller steps.",
+        "level_2": "Identify what you know and what you need to find."
+      },
+      "curriculum_tags": [
+        "SING_6B_5"
+      ],
+      "irt_params": {
+        "a": 1.2,
+        "b": 2.37,
+        "c": 0.25
+      },
+      "irt_a": 1.2,
+      "irt_b": 2.37,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify what you need to count",
+        "Count systematically, left to right",
+        "The total count is your answer"
+      ],
+      "level": 6,
+      "level_name": "Master",
+      "universal_skill_id": "ARITH_MULTI_6",
+      "skill_id": "multi_step",
+      "skill_domain": "arithmetic",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "none",
+      "visual_type": "2d",
+      "visual_ai_verified": false,
+      "media_id": "SING-G6-181.svg",
+      "media_hash": "sha256:de7ebf3b482e2476",
+      "misconception_ids": [
+        "MISC_1",
+        "MISC_3",
+        "MISC_2"
+      ],
+      "why_quality": "ai_generated",
+      "why_framework": "pending",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "good",
+        "has_3_layers": true
+      },
+      "curriculum_source": "singapore",
+      "curriculum_map": {},
+      "school_grade": 6,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "adaptive_topic_id": "g6-word-problems",
+      "adaptive_topic_name": "Word Problems",
+      "adaptive_topic_emoji": "\ud83d\udcd6",
+      "adaptive_grade": 6,
+      "dual_tagged": true,
+      "content_source": "singapore",
+      "sequence_id": 630,
+      "difficulty_tier_in_topic": "expert",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "topic": "g6-word-problems",
+      "interaction_mode": "mcq",
+      "original_id": "SING-G6-191"
+    },
+    {
+      "id": "A6-WPR-0051",
+      "stem": "Mei Ling and Wei Ming have 340 marbles. The ratio of Mei Ling's to Wei Ming's is 4:6. How many does Mei Ling have?",
+      "choices": [
+        "135",
+        "136",
+        "138",
+        "141"
+      ],
+      "correct_answer": 1,
+      "difficulty_tier": "olympiad",
+      "difficulty_score": 87,
+      "visual_svg": null,
+      "visual_alt": "Diagram for draw diagram problem",
+      "diagnostics": {
+        "0": "Check the order of your ratio. Which quantity should come first? Did you simplify completely?",
+        "2": "Check the order of your ratio. Which quantity should come first? Did you simplify completely?",
+        "3": "Computation error in multi-step"
+      },
+      "tags": [
+        "heuristic_draw_diagram",
+        "challenging",
+        "multi_step",
+        "problem_solving",
+        "olympiad_prep"
+      ],
+      "chapter": "6B: Challenging Problems",
+      "hint": {
+        "level_0": "Try the heuristic: draw diagram.",
+        "level_1": "Break the problem into smaller steps.",
+        "level_2": "Identify what you know and what you need to find."
+      },
+      "curriculum_tags": [
+        "SING_6B_5"
+      ],
+      "irt_params": {
+        "a": 1.2,
+        "b": 2.58,
+        "c": 0.25
+      },
+      "irt_a": 1.2,
+      "irt_b": 2.58,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify what you need to count",
+        "Count systematically, left to right",
+        "The total count is your answer"
+      ],
+      "level": 6,
+      "level_name": "Master",
+      "universal_skill_id": "ARITH_MULTI_6",
+      "skill_id": "multi_step",
+      "skill_domain": "arithmetic",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "none",
+      "visual_type": "2d",
+      "visual_ai_verified": false,
+      "media_id": "SING-G6-176.svg",
+      "media_hash": "sha256:5da964faaecff3e8",
+      "misconception_ids": [
+        "MISC_1",
+        "MISC_3",
+        "MISC_2"
+      ],
+      "why_quality": "ai_generated",
+      "why_framework": "pending",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "good",
+        "has_3_layers": true
+      },
+      "curriculum_source": "singapore",
+      "curriculum_map": {},
+      "school_grade": 6,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "adaptive_topic_id": "g6-word-problems",
+      "adaptive_topic_name": "Word Problems",
+      "adaptive_topic_emoji": "\ud83d\udcd6",
+      "adaptive_grade": 6,
+      "dual_tagged": true,
+      "content_source": "singapore",
+      "sequence_id": 661,
+      "difficulty_tier_in_topic": "olympiad",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "topic": "g6-word-problems",
+      "interaction_mode": "mcq",
+      "original_id": "SING-G6-195"
+    },
+    {
+      "id": "A6-WPR-0052",
+      "stem": "What is the next number in the pattern: 3, 9, 27, 81, ____?",
+      "choices": [
+        "245",
+        "248",
+        "243",
+        "242"
+      ],
+      "correct_answer": 2,
+      "difficulty_tier": "olympiad",
+      "difficulty_score": 92,
+      "visual_svg": "<svg viewBox=\"0 0 280 55\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"30\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"30\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">3</text><circle cx=\"75\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"75\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">9</text><circle cx=\"120\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"120\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">27</text><circle cx=\"165\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"165\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">81</text><circle cx=\"210\" cy=\"25\" r=\"18\" fill=\"#FFF3E0\" stroke=\"#F57C00\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"210\" y=\"31\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#F57C00\">?</text></svg>",
+      "visual_alt": "Visual for: What is the next number in the pattern: 3, 9, 27, ",
+      "diagnostics": {
+        "0": "Not quite. Re-read the question carefully and check each step of your calculation.",
+        "1": "Not quite. Re-read the question carefully and check each step of your calculation.",
+        "3": "Computation error in multi-step"
+      },
+      "tags": [
+        "heuristic_look_for_pattern",
+        "challenging",
+        "multi_step",
+        "problem_solving",
+        "olympiad_prep"
+      ],
+      "chapter": "6B: Challenging Problems",
+      "hint": {
+        "level_0": "Try the heuristic: look for pattern.",
+        "level_1": "Break the problem into smaller steps.",
+        "level_2": "Identify what you know and what you need to find."
+      },
+      "curriculum_tags": [
+        "SING_6B_5"
+      ],
+      "irt_params": {
+        "a": 1.2,
+        "b": 2.84,
+        "c": 0.25
+      },
+      "irt_a": 1.2,
+      "irt_b": 2.84,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Look at how the numbers change each step",
+        "Find the rule connecting consecutive numbers",
+        "Apply the rule to find the missing number"
+      ],
+      "level": 6,
+      "level_name": "Master",
+      "universal_skill_id": "ARITH_MULTI_6",
+      "skill_id": "multi_step",
+      "skill_domain": "arithmetic",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "none",
+      "visual_type": "none",
+      "visual_ai_verified": false,
+      "media_id": null,
+      "media_hash": null,
+      "misconception_ids": [
+        "MISC_1",
+        "MISC_3",
+        "MISC_2"
+      ],
+      "why_quality": "ai_generated",
+      "why_framework": "pending",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "good",
+        "has_3_layers": true
+      },
+      "curriculum_source": "singapore",
+      "curriculum_map": {},
+      "school_grade": 6,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "adaptive_topic_id": "g6-word-problems",
+      "adaptive_topic_name": "Word Problems",
+      "adaptive_topic_emoji": "\ud83d\udcd6",
+      "adaptive_grade": 6,
+      "dual_tagged": true,
+      "content_source": "singapore",
+      "sequence_id": 677,
+      "difficulty_tier_in_topic": "olympiad",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "topic": "g6-word-problems",
+      "interaction_mode": "mcq",
+      "original_id": "SING-G6-196"
+    },
+    {
+      "id": "A6-WPR-0053",
+      "stem": "Aisha and Ethan have 100 marbles. The ratio of Aisha's to Ethan's is 5:5. How many does Aisha have?",
+      "choices": [
+        "55",
+        "52",
+        "50",
+        "49"
+      ],
+      "correct_answer": 2,
+      "difficulty_tier": "olympiad",
+      "difficulty_score": 93,
+      "visual_svg": null,
+      "visual_alt": "Diagram for draw diagram problem",
+      "diagnostics": {
+        "0": "Check the order of your ratio. Which quantity should come first? Did you simplify completely?",
+        "1": "Check the order of your ratio. Which quantity should come first? Did you simplify completely?",
+        "3": "Computation error in multi-step"
+      },
+      "tags": [
+        "heuristic_draw_diagram",
+        "challenging",
+        "multi_step",
+        "problem_solving",
+        "olympiad_prep"
+      ],
+      "chapter": "6B: Challenging Problems",
+      "hint": {
+        "level_0": "Try the heuristic: draw diagram.",
+        "level_1": "Break the problem into smaller steps.",
+        "level_2": "Identify what you know and what you need to find."
+      },
+      "curriculum_tags": [
+        "SING_6B_5"
+      ],
+      "irt_params": {
+        "a": 1.2,
+        "b": 2.89,
+        "c": 0.25
+      },
+      "irt_a": 1.2,
+      "irt_b": 2.89,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Identify what you need to count",
+        "Count systematically, left to right",
+        "The total count is your answer"
+      ],
+      "level": 6,
+      "level_name": "Master",
+      "universal_skill_id": "ARITH_MULTI_6",
+      "skill_id": "multi_step",
+      "skill_domain": "arithmetic",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "none",
+      "visual_type": "2d",
+      "visual_ai_verified": false,
+      "media_id": "SING-G6-168.svg",
+      "media_hash": "sha256:aec8c94bd6f56692",
+      "misconception_ids": [
+        "MISC_1",
+        "MISC_3",
+        "MISC_2"
+      ],
+      "why_quality": "ai_generated",
+      "why_framework": "pending",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "good",
+        "has_3_layers": true
+      },
+      "curriculum_source": "singapore",
+      "curriculum_map": {},
+      "school_grade": 6,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "adaptive_topic_id": "g6-word-problems",
+      "adaptive_topic_name": "Word Problems",
+      "adaptive_topic_emoji": "\ud83d\udcd6",
+      "adaptive_grade": 6,
+      "dual_tagged": true,
+      "content_source": "singapore",
+      "sequence_id": 679,
+      "difficulty_tier_in_topic": "olympiad",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "topic": "g6-word-problems",
+      "interaction_mode": "mcq",
+      "original_id": "SING-G6-198"
+    },
+    {
+      "id": "A6-WPR-0054",
+      "stem": "Mei Ling thinks of a number. Subtracts 13, then multiplies by 2. The result is 132. What was the number?",
+      "choices": [
+        "84",
+        "81",
+        "78",
+        "79"
+      ],
+      "correct_answer": 3,
+      "difficulty_tier": "olympiad",
+      "difficulty_score": 93,
+      "visual_svg": null,
+      "visual_alt": "Diagram for work backwards problem",
+      "diagnostics": {
+        "0": "Not quite. Re-read the question carefully and check each step of your calculation.",
+        "1": "Not quite. Re-read the question carefully and check each step of your calculation.",
+        "2": "You're off by 1. Recount carefully \u2014 did you include all values?"
+      },
+      "tags": [
+        "heuristic_work_backwards",
+        "challenging",
+        "multi_step",
+        "problem_solving",
+        "olympiad_prep"
+      ],
+      "chapter": "6B: Challenging Problems",
+      "hint": {
+        "level_0": "Try the heuristic: work backwards.",
+        "level_1": "Break the problem into smaller steps.",
+        "level_2": "Identify what you know and what you need to find."
+      },
+      "curriculum_tags": [
+        "SING_6B_5"
+      ],
+      "irt_params": {
+        "a": 1.2,
+        "b": 2.89,
+        "c": 0.25
+      },
+      "irt_a": 1.2,
+      "irt_b": 2.89,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Start at 13 on the number line",
+        "Count back 2 steps",
+        "The number you land on is your answer"
+      ],
+      "level": 6,
+      "level_name": "Master",
+      "universal_skill_id": "ARITH_MULTI_6",
+      "skill_id": "multi_step",
+      "skill_domain": "arithmetic",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "none",
+      "visual_type": "2d",
+      "visual_ai_verified": false,
+      "media_id": "SING-G6-169.svg",
+      "media_hash": "sha256:ccb8d41f93f2fabb",
+      "misconception_ids": [
+        "MISC_1",
+        "MISC_3",
+        "MISC_2"
+      ],
+      "why_quality": "ai_generated",
+      "why_framework": "pending",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "good",
+        "has_3_layers": true
+      },
+      "curriculum_source": "singapore",
+      "curriculum_map": {},
+      "school_grade": 6,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "adaptive_topic_id": "g6-word-problems",
+      "adaptive_topic_name": "Word Problems",
+      "adaptive_topic_emoji": "\ud83d\udcd6",
+      "adaptive_grade": 6,
+      "dual_tagged": true,
+      "content_source": "singapore",
+      "sequence_id": 680,
+      "difficulty_tier_in_topic": "olympiad",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "topic": "g6-word-problems",
+      "interaction_mode": "mcq",
+      "original_id": "SING-G6-199"
+    },
+    {
+      "id": "A6-WPR-0055",
+      "stem": "What is the next number in the pattern: 4, 8, 16, 32, ____?",
+      "choices": [
+        "63",
+        "64",
+        "69",
+        "66"
+      ],
+      "correct_answer": 1,
+      "difficulty_tier": "olympiad",
+      "difficulty_score": 95,
+      "visual_svg": "<svg viewBox=\"0 0 280 55\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"30\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"30\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">4</text><circle cx=\"75\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"75\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">8</text><circle cx=\"120\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"120\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">16</text><circle cx=\"165\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"165\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">32</text><circle cx=\"210\" cy=\"25\" r=\"18\" fill=\"#FFF3E0\" stroke=\"#F57C00\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"210\" y=\"31\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#F57C00\">?</text></svg>",
+      "visual_alt": "Diagram for look for pattern problem",
+      "diagnostics": {
+        "0": "You're off by 1. Recount carefully \u2014 did you include all values?",
+        "2": "Not quite. Re-read the question carefully and check each step of your calculation.",
+        "3": "Computation error in multi-step"
+      },
+      "tags": [
+        "heuristic_look_for_pattern",
+        "challenging",
+        "multi_step",
+        "problem_solving",
+        "olympiad_prep"
+      ],
+      "chapter": "6B: Challenging Problems",
+      "hint": {
+        "level_0": "Try the heuristic: look for pattern.",
+        "level_1": "Break the problem into smaller steps.",
+        "level_2": "Identify what you know and what you need to find."
+      },
+      "curriculum_tags": [
+        "SING_6B_5"
+      ],
+      "irt_params": {
+        "a": 1.2,
+        "b": 3.0,
+        "c": 0.25
+      },
+      "irt_a": 1.2,
+      "irt_b": 3.0,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Look at how the numbers change each step",
+        "Find the rule connecting consecutive numbers",
+        "Apply the rule to find the missing number"
+      ],
+      "level": 6,
+      "level_name": "Master",
+      "universal_skill_id": "ARITH_MULTI_6",
+      "skill_id": "multi_step",
+      "skill_domain": "arithmetic",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "none",
+      "visual_type": "2d",
+      "visual_ai_verified": false,
+      "media_id": "SING-G6-195.svg",
+      "media_hash": "sha256:fb6147b90867ad90",
+      "misconception_ids": [
+        "MISC_1",
+        "MISC_3",
+        "MISC_2"
+      ],
+      "why_quality": "ai_generated",
+      "why_framework": "pending",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "good",
+        "has_3_layers": true
+      },
+      "curriculum_source": "singapore",
+      "curriculum_map": {},
+      "school_grade": 6,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "adaptive_topic_id": "g6-word-problems",
+      "adaptive_topic_name": "Word Problems",
+      "adaptive_topic_emoji": "\ud83d\udcd6",
+      "adaptive_grade": 6,
+      "dual_tagged": true,
+      "content_source": "singapore",
+      "sequence_id": 681,
+      "difficulty_tier_in_topic": "olympiad",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "topic": "g6-word-problems",
+      "interaction_mode": "mcq",
+      "original_id": "SING-G6-200"
+    }
+  ]
+}

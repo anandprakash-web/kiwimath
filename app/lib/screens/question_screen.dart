@@ -338,7 +338,7 @@ class _QuestionScreenState extends State<QuestionScreen> {
           'Oops! Could not reach the server. Tap Check to try again.',
           style: TextStyle(fontSize: 13),
         ),
-        backgroundColor: const Color(0xFFE65100),
+        backgroundColor: KiwiColors.kiwiPrimaryDark,
         behavior: SnackBarBehavior.floating,
         margin: const EdgeInsets.fromLTRB(16, 0, 16, 80),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
@@ -450,7 +450,7 @@ class _QuestionScreenState extends State<QuestionScreen> {
                 child: LinearProgressIndicator(
                   value: shownScore / 100.0,
                   minHeight: 4,
-                  backgroundColor: const Color(0xFFC8E6C9),
+                  backgroundColor: const KiwiColors.kiwiGreenLight,
                   valueColor: const AlwaysStoppedAnimation<Color>(KiwiColors.kiwiGreen),
                 ),
               ),
@@ -774,7 +774,7 @@ class _QuestionScreenState extends State<QuestionScreen> {
                 SizedBox(height: 1),
                 Text(
                   'Working through it step by step',
-                  style: TextStyle(fontSize: 10, color: Color(0xFFBF360C)),
+                  style: TextStyle(fontSize: 10, color: KiwiColors.kiwiPrimaryDark),
                 ),
               ],
             ),
@@ -869,7 +869,7 @@ class _QuestionScreenState extends State<QuestionScreen> {
               textAlign: TextAlign.center,
               style: const TextStyle(
                 fontSize: 14,
-                color: Color(0xFF558B2F),
+                color: KiwiColors.kiwiGreenDark,
                 height: 1.5,
               ),
             ),
@@ -1064,7 +1064,7 @@ class _QuestionScreenState extends State<QuestionScreen> {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
       decoration: const BoxDecoration(
-        border: Border(top: BorderSide(color: Color(0xFFF0F0F0))),
+        border: Border(top: BorderSide(color: KiwiColors.pathLocked)),
       ),
       child: SafeArea(
         top: false,
@@ -1074,13 +1074,13 @@ class _QuestionScreenState extends State<QuestionScreen> {
             onPressed: disabled ? null : _onCheckAnswer,
             style: ElevatedButton.styleFrom(
               backgroundColor: disabled
-                  ? const Color(0xFFE0E0E0)
+                  ? KiwiColors.pathLocked
                   : isStepDown
                       ? KiwiColors.warmOrange
                       : _tier.colors.primary,
-              foregroundColor: disabled ? const Color(0xFF999999) : Colors.white,
-              disabledBackgroundColor: const Color(0xFFE0E0E0),
-              disabledForegroundColor: const Color(0xFF999999),
+              foregroundColor: disabled ? const KiwiColors.textMuted : Colors.white,
+              disabledBackgroundColor: KiwiColors.pathLocked,
+              disabledForegroundColor: const KiwiColors.textMuted,
               padding: EdgeInsets.symmetric(vertical: _tier.isJunior ? 16 : 13),
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(_tier.shape.buttonRadius),
@@ -1102,7 +1102,7 @@ class _QuestionScreenState extends State<QuestionScreen> {
                     height: 20,
                     child: CircularProgressIndicator(
                       strokeWidth: 2,
-                      valueColor: AlwaysStoppedAnimation<Color>(Color(0xFF999999)),
+                      valueColor: AlwaysStoppedAnimation<Color>(KiwiColors.textMuted),
                     ),
                   )
                 : Text(isStepDown ? 'Check' : 'Check answer'),
@@ -1179,7 +1179,7 @@ class _QuestionScreenState extends State<QuestionScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Icon(Icons.cloud_off, size: 48, color: Colors.grey),
+            const Icon(Icons.cloud_off, size: 48, color: KiwiColors.textMuted),
             const SizedBox(height: 16),
             const Text(
               "Can't reach Kiwimath backend",
@@ -1189,7 +1189,7 @@ class _QuestionScreenState extends State<QuestionScreen> {
             Text(
               _error ?? '',
               textAlign: TextAlign.center,
-              style: const TextStyle(color: Colors.grey, fontSize: 13),
+              style: const TextStyle(color: KiwiColors.textMuted, fontSize: 13),
             ),
             const SizedBox(height: 24),
             ElevatedButton(
@@ -1290,7 +1290,7 @@ class _WhyBottomSheet extends StatelessWidget {
                   width: 40,
                   height: 4,
                   decoration: BoxDecoration(
-                    color: const Color(0xFFE0E0E0),
+                    color: KiwiColors.pathLocked,
                     borderRadius: BorderRadius.circular(2),
                   ),
                 ),
@@ -1303,7 +1303,7 @@ class _WhyBottomSheet extends StatelessWidget {
                       width: 32,
                       height: 32,
                       decoration: const BoxDecoration(
-                        color: Color(0xFFFFF3E0),
+                        color: KiwiColors.wrongBg,
                         shape: BoxShape.circle,
                       ),
                       child: const Center(
@@ -1316,13 +1316,13 @@ class _WhyBottomSheet extends StatelessWidget {
                       style: TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.w700,
-                        color: Color(0xFFE65100),
+                        color: KiwiColors.kiwiPrimaryDark,
                       ),
                     ),
                   ],
                 ),
               ),
-              const Divider(height: 1, color: Color(0xFFF5F5F5)),
+              Divider(height: 1, color: KiwiColors.pathLocked),
               Expanded(
                 child: ListView(
                   controller: scrollController,
@@ -1335,7 +1335,7 @@ class _WhyBottomSheet extends StatelessWidget {
                         const Padding(
                           padding: EdgeInsets.symmetric(horizontal: 10),
                           child: Icon(Icons.arrow_forward,
-                              color: Color(0xFFBDBDBD), size: 18),
+                              color: KiwiColors.pathLocked, size: 18),
                         ),
                         _buildAnswerChip(correctAnswer, true),
                       ],
@@ -1345,10 +1345,10 @@ class _WhyBottomSheet extends StatelessWidget {
                       width: double.infinity,
                       padding: const EdgeInsets.all(16),
                       decoration: BoxDecoration(
-                        color: const Color(0xFFFFFDE7),
+                        color: KiwiColors.visualYellowBg,
                         borderRadius: BorderRadius.circular(14),
                         border: Border.all(
-                            color: const Color(0xFFFFF9C4), width: 1.5),
+                            color: KiwiColors.visualYellowBorder, width: 1.5),
                       ),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -1358,7 +1358,7 @@ class _WhyBottomSheet extends StatelessWidget {
                             style: TextStyle(
                               fontSize: 13,
                               fontWeight: FontWeight.w700,
-                              color: Color(0xFFF57F17),
+                              color: KiwiColors.amber,
                             ),
                           ),
                           const SizedBox(height: 8),
@@ -1366,7 +1366,7 @@ class _WhyBottomSheet extends StatelessWidget {
                             feedbackMessage,
                             style: const TextStyle(
                               fontSize: 14,
-                              color: Color(0xFF424242),
+                              color: KiwiColors.textMid,
                               height: 1.5,
                             ),
                           ),
@@ -1378,14 +1378,14 @@ class _WhyBottomSheet extends StatelessWidget {
                       width: double.infinity,
                       padding: const EdgeInsets.all(14),
                       decoration: BoxDecoration(
-                        color: const Color(0xFFF5F5F5),
+                        color: KiwiColors.creamDark,
                         borderRadius: BorderRadius.circular(12),
                       ),
                       child: Text(
                         questionStem,
                         style: const TextStyle(
                           fontSize: 12,
-                          color: Color(0xFF757575),
+                          color: KiwiColors.textMid,
                           height: 1.4,
                         ),
                       ),
@@ -1406,7 +1406,7 @@ class _WhyBottomSheet extends StatelessWidget {
                         padding: const EdgeInsets.symmetric(vertical: 14),
                         decoration: BoxDecoration(
                           gradient: const LinearGradient(
-                            colors: [Color(0xFFFF9800), Color(0xFFE65100)],
+                            colors: [KiwiColors.kiwiPrimary, KiwiColors.kiwiPrimaryDark],
                           ),
                           borderRadius: BorderRadius.circular(14),
                         ),
@@ -1433,9 +1433,9 @@ class _WhyBottomSheet extends StatelessWidget {
 
   Widget _buildAnswerChip(String text, bool isCorrect) {
     final color =
-        isCorrect ? const Color(0xFF2E7D32) : const Color(0xFFEF5350);
+        isCorrect ? KiwiColors.kiwiGreenDark : KiwiColors.coral;
     final bg =
-        isCorrect ? const Color(0xFFE8F5E9) : const Color(0xFFFFEBEE);
+        isCorrect ? KiwiColors.correctBg : KiwiColors.wrongBg;
     final icon = isCorrect ? Icons.check : Icons.close;
 
     return Container(

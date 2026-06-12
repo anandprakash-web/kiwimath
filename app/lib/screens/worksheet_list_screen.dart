@@ -1,3 +1,10 @@
+// ============================================================================
+// DEPRECATED — Olympiad v2 rework (May 2026)
+// This screen is archived at lib/screens/archive/worksheet_list_screen.dart
+// DPP content is folded into the new 4-pillar Olympiad worksheets.
+// Will be removed after v2 migration is complete.
+// ============================================================================
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -7,13 +14,12 @@ import '../services/worksheet_cache.dart';
 import '../theme/kiwi_theme.dart';
 import 'worksheet_solve_screen.dart';
 
-/// Worksheet list screen — redesigned with 3 views:
-///   1. Topic-grouped (default) — worksheets grouped by dominant topic
-///   2. Journey — horizontal swipeable cards with titles + topic icons
-///   3. Grid — compact 10×10 calendar progress grid
+/// DPP (Daily Practice Problems) list screen — clean two-view layout:
+///   1. Topics (default) — worksheets grouped by dominant topic
+///   2. Grid — compact 10x10 calendar progress grid
 ///
-/// Each worksheet card shows: title, subtitle (topics), difficulty badges,
-/// download indicator (cloud/checkmark), and completion status.
+/// Each worksheet card shows: numbered badge, title, subtitle,
+/// download indicator (cloud/checkmark), chevron, and completion status.
 class WorksheetListScreen extends StatefulWidget {
   final int grade;
   final void Function(int grade)? onGradeChanged;
@@ -43,13 +49,13 @@ class _WorksheetListScreenState extends State<WorksheetListScreen> {
 
   // Topic display config
   static const _topicConfig = <String, _TopicInfo>{
-    'counting_observation': _TopicInfo('Counting & Observation', Icons.visibility_rounded, Color(0xFF42A5F5)),
-    'arithmetic_missing_numbers': _TopicInfo('Arithmetic', Icons.calculate_rounded, Color(0xFFFF7043)),
-    'logic_ordering': _TopicInfo('Logic & Reasoning', Icons.psychology_rounded, Color(0xFF7C4DFF)),
-    'word_problems_stories': _TopicInfo('Word Problems', Icons.auto_stories_rounded, Color(0xFFEC407A)),
-    'shapes_folding_symmetry': _TopicInfo('Shapes & Symmetry', Icons.category_rounded, Color(0xFF26C6DA)),
-    'patterns_sequences': _TopicInfo('Patterns & Sequences', Icons.auto_awesome_rounded, Color(0xFFFFCA28)),
-    'mixed': _TopicInfo('Mixed Challenge', Icons.shuffle_rounded, Color(0xFF66BB6A)),
+    'counting_observation': _TopicInfo('Counting & Observation', Icons.visibility_rounded, KiwiColors.sky),
+    'arithmetic_missing_numbers': _TopicInfo('Arithmetic', Icons.calculate_rounded, KiwiColors.sunset),
+    'logic_ordering': _TopicInfo('Logic & Reasoning', Icons.psychology_rounded, KiwiColors.indigo),
+    'word_problems_stories': _TopicInfo('Word Problems', Icons.auto_stories_rounded, KiwiColors.coral),
+    'shapes_folding_symmetry': _TopicInfo('Shapes & Symmetry', Icons.category_rounded, KiwiColors.teal),
+    'patterns_sequences': _TopicInfo('Patterns & Sequences', Icons.auto_awesome_rounded, KiwiColors.amber),
+    'mixed': _TopicInfo('Mixed Challenge', Icons.shuffle_rounded, KiwiColors.correct),
   };
 
   @override
@@ -98,9 +104,6 @@ class _WorksheetListScreenState extends State<WorksheetListScreen> {
     return 1;
   }
 
-  int get _completedCount => _results.length;
-  int get _totalStars => _results.values.fold(0, (s, r) => s + r.stars);
-
   Future<void> _startDownloadAll() async {
     setState(() {
       _downloading = true;
@@ -139,19 +142,12 @@ class _WorksheetListScreenState extends State<WorksheetListScreen> {
     );
   }
 
-  WorksheetMeta? _metaForDay(int day) {
-    try {
-      return _worksheets.firstWhere((w) => w.day == day);
-    } catch (_) {
-      return null;
-    }
-  }
-
   @override
   Widget build(BuildContext context) {
     final tier = KiwiTier.forGrade(_selectedGrade);
     final colors = tier.colors;
     final typo = tier.typography;
+    final shape = tier.shape;
 
     return Scaffold(
       backgroundColor: colors.background,
@@ -163,21 +159,11 @@ class _WorksheetListScreenState extends State<WorksheetListScreen> {
                   // ── Header ─────────────────────────────────────────
                   SliverToBoxAdapter(child: _buildHeader(colors, typo)),
 
-                  // ── Continue card ──────────────────────────────────
-                  SliverToBoxAdapter(
-                    child: Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 16),
-                      child: _buildContinueCard(colors, typo),
-                    ),
-                  ),
-
-                  const SliverToBoxAdapter(child: SizedBox(height: 16)),
-
                   // ── View toggle ────────────────────────────────────
                   SliverToBoxAdapter(
                     child: Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 16),
-                      child: _buildViewToggle(colors, typo),
+                      child: _buildViewToggle(colors, typo, shape),
                     ),
                   ),
 
@@ -217,15 +203,6 @@ class _WorksheetListScreenState extends State<WorksheetListScreen> {
                         fontFamily: typo.fontFamily,
                       ),
                     ),
-                    const SizedBox(height: 2),
-                    Text(
-                      'Daily Practice Problems',
-                      style: TextStyle(
-                        fontSize: typo.bodySize - 1,
-                        color: colors.textSecondary,
-                        fontFamily: typo.fontFamily,
-                      ),
-                    ),
                   ],
                 ),
               ),
@@ -256,7 +233,7 @@ class _WorksheetListScreenState extends State<WorksheetListScreen> {
                     padding: const EdgeInsets.symmetric(horizontal: 18),
                     decoration: BoxDecoration(
                       color: selected ? colors.primary : colors.cardBg,
-                      borderRadius: BorderRadius.circular(20),
+                      borderRadius: BorderRadius.circular(KiwiSpacing.xl),
                       border: Border.all(
                         color: selected ? colors.primaryDark : colors.topicCardBorder,
                         width: selected ? 2 : 1,
@@ -266,7 +243,7 @@ class _WorksheetListScreenState extends State<WorksheetListScreen> {
                       child: Text(
                         'G$g',
                         style: TextStyle(
-                          fontSize: 15,
+                          fontSize: typo.bodySize,
                           fontWeight: FontWeight.w700,
                           color: selected ? Colors.white : colors.textPrimary,
                           fontFamily: typo.fontFamily,
@@ -302,13 +279,13 @@ class _WorksheetListScreenState extends State<WorksheetListScreen> {
             CircularProgressIndicator(
               value: _downloadProgress,
               strokeWidth: 3,
-              backgroundColor: const Color(0xFFE0E0E0),
+              backgroundColor: KiwiColors.pathLocked,
               valueColor: AlwaysStoppedAnimation(colors.primary),
             ),
             Text(
               '${(_downloadProgress * 100).toInt()}',
               style: TextStyle(
-                fontSize: 10,
+                fontSize: typo.chipSize - 2,
                 fontWeight: FontWeight.w700,
                 color: colors.primary,
               ),
@@ -321,12 +298,12 @@ class _WorksheetListScreenState extends State<WorksheetListScreen> {
     return GestureDetector(
       onTap: isFullyDownloaded ? null : _startDownloadAll,
       child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+        padding: const EdgeInsets.symmetric(horizontal: KiwiSpacing.md, vertical: KiwiSpacing.sm),
         decoration: BoxDecoration(
           color: isFullyDownloaded
               ? KiwiColors.kiwiGreenLight
               : colors.primary.withOpacity(0.1),
-          borderRadius: BorderRadius.circular(12),
+          borderRadius: BorderRadius.circular(shape.buttonRadius),
           border: Border.all(
             color: isFullyDownloaded
                 ? KiwiColors.kiwiGreen
@@ -351,7 +328,7 @@ class _WorksheetListScreenState extends State<WorksheetListScreen> {
                       ? 'Download All'
                       : '${downloaded.length}/100',
               style: TextStyle(
-                fontSize: 12,
+                fontSize: typo.chipSize,
                 fontWeight: FontWeight.w700,
                 color: isFullyDownloaded
                     ? KiwiColors.kiwiGreenDark
@@ -365,210 +342,54 @@ class _WorksheetListScreenState extends State<WorksheetListScreen> {
     );
   }
 
-  // ── Stats row ──────────────────────────────────────────────────────────
-
-  Widget _buildStatsRow(KiwiTierColors colors, KiwiTierTypography typo) {
-    return Row(
-      children: [
-        _statChip('\u{2705}', '$_completedCount/100', 'Completed', colors, typo),
-        const SizedBox(width: 10),
-        _statChip('\u{2B50}', '$_totalStars', 'Stars', colors, typo),
-        const SizedBox(width: 10),
-        _statChip(
-          '\u{1F525}',
-          _results.isEmpty
-              ? '0%'
-              : '${(_results.values.fold<double>(0, (s, r) => s + r.accuracy) / _results.length * 100).toInt()}%',
-          'Accuracy',
-          colors,
-          typo,
-        ),
-      ],
-    );
-  }
-
-  Widget _statChip(String emoji, String value, String label,
-      KiwiTierColors colors, KiwiTierTypography typo) {
-    return Expanded(
-      child: Container(
-        padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 8),
-        decoration: BoxDecoration(
-          color: colors.cardBg,
-          borderRadius: BorderRadius.circular(12),
-          border: Border.all(color: colors.topicCardBorder),
-        ),
-        child: Column(
-          children: [
-            Text(emoji, style: const TextStyle(fontSize: 18)),
-            const SizedBox(height: 2),
-            Text(
-              value,
-              style: TextStyle(
-                fontSize: typo.bodySize + 1,
-                fontWeight: FontWeight.w800,
-                color: colors.textPrimary,
-                fontFamily: typo.fontFamily,
-              ),
-            ),
-            Text(
-              label,
-              style: TextStyle(
-                fontSize: 10,
-                fontWeight: FontWeight.w600,
-                color: colors.textMuted,
-                fontFamily: typo.fontFamily,
-              ),
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-
-  // ── Continue card ──────────────────────────────────────────────────────
-
-  Widget _buildContinueCard(KiwiTierColors colors, KiwiTierTypography typo) {
-    final day = _nextDay;
-    final meta = _metaForDay(day);
-
-    return GestureDetector(
-      onTap: () => _openWorksheet(day),
-      child: Container(
-        padding: const EdgeInsets.all(16),
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-            colors: [colors.primary, colors.primaryDark],
-            begin: Alignment.topLeft,
-            end: Alignment.bottomRight,
-          ),
-          borderRadius: BorderRadius.circular(16),
-          boxShadow: [
-            BoxShadow(
-              color: colors.primary.withOpacity(0.3),
-              blurRadius: 12,
-              offset: const Offset(0, 4),
-            ),
-          ],
-        ),
-        child: Row(
-          children: [
-            Container(
-              width: 56,
-              height: 56,
-              decoration: BoxDecoration(
-                color: Colors.white.withOpacity(0.2),
-                borderRadius: BorderRadius.circular(14),
-              ),
-              child: Center(
-                child: Text(
-                  'D$day',
-                  style: TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.w900,
-                    color: Colors.white,
-                    fontFamily: typo.fontFamily,
-                  ),
-                ),
-              ),
-            ),
-            const SizedBox(width: 14),
-            Expanded(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    meta?.title ?? (_completedCount == 0 ? 'Start Your Journey!' : 'Continue Training'),
-                    style: TextStyle(
-                      fontSize: typo.bodySize + 2,
-                      fontWeight: FontWeight.w800,
-                      color: Colors.white,
-                      fontFamily: typo.fontFamily,
-                    ),
-                    maxLines: 1,
-                    overflow: TextOverflow.ellipsis,
-                  ),
-                  const SizedBox(height: 2),
-                  Text(
-                    meta?.subtitle ?? 'Day $day \u{2022} 12 questions',
-                    style: TextStyle(
-                      fontSize: typo.chipSize,
-                      color: Colors.white.withOpacity(0.85),
-                      fontFamily: typo.fontFamily,
-                    ),
-                    maxLines: 1,
-                    overflow: TextOverflow.ellipsis,
-                  ),
-                ],
-              ),
-            ),
-            Container(
-              width: 44,
-              height: 44,
-              decoration: BoxDecoration(
-                color: Colors.white.withOpacity(0.2),
-                shape: BoxShape.circle,
-              ),
-              child: const Icon(Icons.play_arrow_rounded, color: Colors.white, size: 28),
-            ),
-          ],
-        ),
-      ),
-    );
-  }
+  // (Stats row and Continue card removed for cleaner design)
 
   // ── View toggle ────────────────────────────────────────────────────────
 
-  Widget _buildViewToggle(KiwiTierColors colors, KiwiTierTypography typo) {
-    return Row(
-      children: [
-        _viewTab('Topics', Icons.category_rounded, _ViewMode.topics, colors, typo),
-        const SizedBox(width: 8),
-        _viewTab('Grid', Icons.grid_view_rounded, _ViewMode.grid, colors, typo),
-      ],
-    );
-  }
-
-  Widget _viewTab(String label, IconData icon, _ViewMode mode,
-      KiwiTierColors colors, KiwiTierTypography typo) {
-    final selected = _viewMode == mode;
-    return Expanded(
-      child: GestureDetector(
-        onTap: () {
-          HapticFeedback.lightImpact();
-          setState(() => _viewMode = mode);
-        },
-        child: AnimatedContainer(
-          duration: const Duration(milliseconds: 200),
-          padding: const EdgeInsets.symmetric(vertical: 10),
-          decoration: BoxDecoration(
-            color: selected ? colors.primary : colors.cardBg,
-            borderRadius: BorderRadius.circular(12),
-            border: Border.all(
-              color: selected ? colors.primaryDark : colors.topicCardBorder,
-              width: selected ? 2 : 1,
+  Widget _buildViewToggle(KiwiTierColors colors, KiwiTierTypography typo, KiwiTierShape shape) {
+    Widget pill(String label, _ViewMode mode) {
+      final selected = _viewMode == mode;
+      return Expanded(
+        child: GestureDetector(
+          onTap: () {
+            HapticFeedback.lightImpact();
+            setState(() => _viewMode = mode);
+          },
+          child: AnimatedContainer(
+            duration: const Duration(milliseconds: 200),
+            padding: const EdgeInsets.symmetric(vertical: KiwiSpacing.sm + 2),
+            decoration: BoxDecoration(
+              color: selected ? colors.primary : Colors.transparent,
+              borderRadius: BorderRadius.circular(shape.chipRadius - 6),
             ),
-          ),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Icon(
-                icon,
-                size: 16,
-                color: selected ? Colors.white : colors.textMuted,
-              ),
-              const SizedBox(width: 4),
-              Text(
+            child: Center(
+              child: Text(
                 label,
                 style: TextStyle(
-                  fontSize: 12,
+                  fontSize: typo.topicNameSize,
                   fontWeight: FontWeight.w700,
-                  color: selected ? Colors.white : colors.textPrimary,
+                  color: selected ? Colors.white : colors.textMuted,
                   fontFamily: typo.fontFamily,
                 ),
               ),
-            ],
+            ),
           ),
         ),
+      );
+    }
+
+    return Container(
+      padding: const EdgeInsets.all(3),
+      decoration: BoxDecoration(
+        color: colors.cardBg,
+        borderRadius: BorderRadius.circular(shape.buttonRadius),
+        border: Border.all(color: colors.topicCardBorder),
+      ),
+      child: Row(
+        children: [
+          pill('Topics', _ViewMode.topics),
+          pill('Grid', _ViewMode.grid),
+        ],
       ),
     );
   }
@@ -601,15 +422,15 @@ class _WorksheetListScreenState extends State<WorksheetListScreen> {
           child: Row(
             children: [
               Container(
-                width: 32,
-                height: 32,
+                width: 40,
+                height: 40,
                 decoration: BoxDecoration(
                   color: info.color.withOpacity(0.12),
-                  borderRadius: BorderRadius.circular(8),
+                  borderRadius: BorderRadius.circular(KiwiSpacing.sm + 2),
                 ),
-                child: Icon(info.icon, size: 18, color: info.color),
+                child: Icon(info.icon, size: 22, color: info.color),
               ),
-              const SizedBox(width: 10),
+              const SizedBox(width: 12),
               Expanded(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -626,7 +447,7 @@ class _WorksheetListScreenState extends State<WorksheetListScreen> {
                     Text(
                       '${worksheetsInGroup.length} worksheets',
                       style: TextStyle(
-                        fontSize: 11,
+                        fontSize: typo.chipSize - 1,
                         color: colors.textMuted,
                         fontFamily: typo.fontFamily,
                       ),
@@ -634,6 +455,9 @@ class _WorksheetListScreenState extends State<WorksheetListScreen> {
                   ],
                 ),
               ),
+              Icon(Icons.cloud_download_outlined, size: 18, color: colors.textMuted),
+              const SizedBox(width: 8),
+              Icon(Icons.chevron_right_rounded, size: 20, color: colors.textMuted),
             ],
           ),
         ),
@@ -648,7 +472,7 @@ class _WorksheetListScreenState extends State<WorksheetListScreen> {
               final ws = worksheetsInGroup[index];
               return Padding(
                 padding: const EdgeInsets.only(bottom: 8),
-                child: _buildWorksheetCard(ws, info.color, colors, typo),
+                child: _buildWorksheetCard(ws, info.color, colors, typo, shape),
               );
             },
             childCount: worksheetsInGroup.length,
@@ -658,184 +482,6 @@ class _WorksheetListScreenState extends State<WorksheetListScreen> {
     }
 
     return slivers;
-  }
-
-  // ══════════════════════════════════════════════════════════════════════
-  // VIEW 2: Journey (horizontal swipeable cards)
-  // ══════════════════════════════════════════════════════════════════════
-
-  List<Widget> _buildJourneyView(KiwiTierColors colors, KiwiTierTypography typo) {
-    return [
-      SliverToBoxAdapter(
-        child: SizedBox(
-          height: 220,
-          child: PageView.builder(
-            controller: PageController(viewportFraction: 0.85, initialPage: _nextDay - 1),
-            itemCount: _worksheets.length,
-            itemBuilder: (context, index) {
-              final ws = _worksheets[index];
-              final info = _topicConfig[ws.dominantTopic] ?? _topicConfig['mixed']!;
-              final result = _results[ws.day];
-              final isCompleted = result != null;
-              final isDownloaded = _cache.isDownloaded(_selectedGrade, ws.day);
-
-              return Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 8),
-                child: GestureDetector(
-                  onTap: () => _openWorksheet(ws.day),
-                  child: Container(
-                    decoration: BoxDecoration(
-                      gradient: LinearGradient(
-                        colors: isCompleted
-                            ? [const Color(0xFF66BB6A), const Color(0xFF43A047)]
-                            : [info.color, info.color.withOpacity(0.7)],
-                        begin: Alignment.topLeft,
-                        end: Alignment.bottomRight,
-                      ),
-                      borderRadius: BorderRadius.circular(20),
-                      boxShadow: [
-                        BoxShadow(
-                          color: info.color.withOpacity(0.25),
-                          blurRadius: 12,
-                          offset: const Offset(0, 4),
-                        ),
-                      ],
-                    ),
-                    padding: const EdgeInsets.all(20),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Row(
-                          children: [
-                            Container(
-                              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
-                              decoration: BoxDecoration(
-                                color: Colors.white.withOpacity(0.25),
-                                borderRadius: BorderRadius.circular(10),
-                              ),
-                              child: Text(
-                                'Day ${ws.day}',
-                                style: TextStyle(
-                                  fontSize: 12,
-                                  fontWeight: FontWeight.w800,
-                                  color: Colors.white,
-                                  fontFamily: typo.fontFamily,
-                                ),
-                              ),
-                            ),
-                            const Spacer(),
-                            if (isCompleted)
-                              Text(
-                                '\u{2B50}' * result.stars,
-                                style: const TextStyle(fontSize: 16),
-                              ),
-                            if (!isCompleted)
-                              _downloadIndicator(ws.day, isDownloaded, Colors.white),
-                          ],
-                        ),
-                        const Spacer(),
-                        Text(
-                          ws.title,
-                          style: TextStyle(
-                            fontSize: 22,
-                            fontWeight: FontWeight.w900,
-                            color: Colors.white,
-                            fontFamily: typo.fontFamily,
-                          ),
-                          maxLines: 2,
-                          overflow: TextOverflow.ellipsis,
-                        ),
-                        const SizedBox(height: 4),
-                        Text(
-                          ws.subtitle,
-                          style: TextStyle(
-                            fontSize: 13,
-                            color: Colors.white.withOpacity(0.85),
-                            fontFamily: typo.fontFamily,
-                          ),
-                          maxLines: 1,
-                          overflow: TextOverflow.ellipsis,
-                        ),
-                        const SizedBox(height: 10),
-                        Row(
-                          children: [
-                            _journeyDiffBadge('${ws.warmupCount}', 'W', const Color(0xFF4CAF50)),
-                            const SizedBox(width: 6),
-                            _journeyDiffBadge('${ws.practiceCount}', 'P', const Color(0xFFFF9800)),
-                            const SizedBox(width: 6),
-                            _journeyDiffBadge('${ws.challengeCount}', 'C', const Color(0xFFE53935)),
-                            const Spacer(),
-                            if (isCompleted)
-                              Text(
-                                '${result.correctCount}/${result.totalCount}',
-                                style: TextStyle(
-                                  fontSize: 13,
-                                  fontWeight: FontWeight.w700,
-                                  color: Colors.white.withOpacity(0.9),
-                                  fontFamily: typo.fontFamily,
-                                ),
-                              ),
-                          ],
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-              );
-            },
-          ),
-        ),
-      ),
-      // Also show a compact list below the journey cards
-      SliverToBoxAdapter(
-        child: Padding(
-          padding: const EdgeInsets.fromLTRB(16, 16, 16, 8),
-          child: Text(
-            'All Worksheets',
-            style: TextStyle(
-              fontSize: typo.bodySize + 1,
-              fontWeight: FontWeight.w700,
-              color: colors.textPrimary,
-              fontFamily: typo.fontFamily,
-            ),
-          ),
-        ),
-      ),
-      SliverPadding(
-        padding: const EdgeInsets.fromLTRB(16, 0, 16, 8),
-        sliver: SliverList(
-          delegate: SliverChildBuilderDelegate(
-            (context, index) {
-              final ws = _worksheets[index];
-              final info = _topicConfig[ws.dominantTopic] ?? _topicConfig['mixed']!;
-              return Padding(
-                padding: const EdgeInsets.only(bottom: 8),
-                child: _buildCompactCard(ws, info, colors, typo),
-              );
-            },
-            childCount: _worksheets.length,
-          ),
-        ),
-      ),
-    ];
-  }
-
-  Widget _journeyDiffBadge(String count, String label, Color color) {
-    return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
-      decoration: BoxDecoration(
-        color: Colors.white.withOpacity(0.2),
-        borderRadius: BorderRadius.circular(8),
-      ),
-      child: Text(
-        '$count$label',
-        style: TextStyle(
-          fontSize: 11,
-          fontWeight: FontWeight.w700,
-          color: Colors.white.withOpacity(0.95),
-        ),
-      ),
-    );
   }
 
   // ══════════════════════════════════════════════════════════════════════
@@ -871,9 +517,9 @@ class _WorksheetListScreenState extends State<WorksheetListScreen> {
             children: [
               _legendDot(colors.primary.withOpacity(0.12), 'Current', colors, typo),
               const SizedBox(width: 16),
-              _legendDot(const Color(0xFFFFF8E1), '\u{2B50} Done', colors, typo),
-              const SizedBox(width: 16),
-              _legendDot(const Color(0xFF90CAF9).withOpacity(0.2), 'Downloaded', colors, typo),
+              _legendDot(KiwiColors.visualYellowBg, '\u{2B50} Done', colors, typo),
+              const SizedBox(width: KiwiSpacing.lg),
+              _legendDot(KiwiColors.visualBlueBg, 'Downloaded', colors, typo),
             ],
           ),
         ),
@@ -889,7 +535,7 @@ class _WorksheetListScreenState extends State<WorksheetListScreen> {
           height: 14,
           decoration: BoxDecoration(
             color: color,
-            borderRadius: BorderRadius.circular(4),
+            borderRadius: BorderRadius.circular(KiwiSpacing.xs),
             border: Border.all(color: colors.topicCardBorder),
           ),
         ),
@@ -897,7 +543,7 @@ class _WorksheetListScreenState extends State<WorksheetListScreen> {
         Text(
           label,
           style: TextStyle(
-            fontSize: 10,
+            fontSize: typo.chipSize - 2,
             color: colors.textMuted,
             fontFamily: typo.fontFamily,
           ),
@@ -920,12 +566,12 @@ class _WorksheetListScreenState extends State<WorksheetListScreen> {
     if (isCompleted) {
       final stars = result.stars;
       bg = stars >= 3
-          ? const Color(0xFFFFF8E1)
+          ? KiwiColors.visualYellowBg
           : stars >= 2
               ? KiwiColors.kiwiGreenLight
-              : const Color(0xFFF1F8E9);
-      textColor = stars >= 3 ? const Color(0xFFE65100) : KiwiColors.kiwiGreenDark;
-      borderColor = stars >= 3 ? const Color(0xFFFFB300) : KiwiColors.kiwiGreen;
+              : KiwiColors.correctBg;
+      textColor = stars >= 3 ? KiwiColors.kiwiPrimaryDark : KiwiColors.kiwiGreenDark;
+      borderColor = stars >= 3 ? KiwiColors.gemGold : KiwiColors.kiwiGreen;
       overlay = Positioned(
         bottom: 1,
         right: 1,
@@ -938,12 +584,12 @@ class _WorksheetListScreenState extends State<WorksheetListScreen> {
     } else {
       bg = colors.cardBg;
       textColor = colors.textMuted;
-      borderColor = isDownloaded ? const Color(0xFF90CAF9) : colors.topicCardBorder;
+      borderColor = isDownloaded ? KiwiColors.visualBlueBorder : colors.topicCardBorder;
       overlay = isDownloaded
           ? const Positioned(
               bottom: 1,
               right: 1,
-              child: Icon(Icons.download_done, size: 8, color: Color(0xFF64B5F6)),
+              child: Icon(Icons.download_done, size: 8, color: KiwiColors.visualBlueBorder),
             )
           : null;
     }
@@ -956,14 +602,14 @@ class _WorksheetListScreenState extends State<WorksheetListScreen> {
             duration: const Duration(milliseconds: 200),
             decoration: BoxDecoration(
               color: bg,
-              borderRadius: BorderRadius.circular(8),
+              borderRadius: BorderRadius.circular(KiwiSpacing.sm),
               border: Border.all(color: borderColor, width: isCurrent ? 2 : 1),
             ),
             child: Center(
               child: Text(
                 '$day',
                 style: TextStyle(
-                  fontSize: 11,
+                  fontSize: typo.chipSize - 1,
                   fontWeight: isCompleted || isCurrent ? FontWeight.w800 : FontWeight.w500,
                   color: textColor,
                   fontFamily: typo.fontFamily,
@@ -983,21 +629,21 @@ class _WorksheetListScreenState extends State<WorksheetListScreen> {
 
   /// Rich worksheet card for topic-grouped view.
   Widget _buildWorksheetCard(WorksheetMeta ws, Color topicColor,
-      KiwiTierColors colors, KiwiTierTypography typo) {
+      KiwiTierColors colors, KiwiTierTypography typo, KiwiTierShape shape) {
     final result = _results[ws.day];
     final isCompleted = result != null;
     final isDownloaded = _cache.isDownloaded(_selectedGrade, ws.day);
 
     return Material(
       color: colors.cardBg,
-      borderRadius: BorderRadius.circular(14),
+      borderRadius: BorderRadius.circular(shape.cardRadius),
       child: InkWell(
         onTap: () => _openWorksheet(ws.day),
-        borderRadius: BorderRadius.circular(14),
+        borderRadius: BorderRadius.circular(shape.cardRadius),
         child: Container(
-          padding: const EdgeInsets.all(14),
+          padding: shape.cardPadding,
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(14),
+            borderRadius: BorderRadius.circular(shape.cardRadius),
             border: Border.all(
               color: isCompleted ? KiwiColors.kiwiGreen.withOpacity(0.4) : colors.topicCardBorder,
             ),
@@ -1011,11 +657,11 @@ class _WorksheetListScreenState extends State<WorksheetListScreen> {
                 decoration: BoxDecoration(
                   gradient: isCompleted
                       ? const LinearGradient(
-                          colors: [Color(0xFF66BB6A), Color(0xFF43A047)])
+                          colors: [KiwiColors.correct, KiwiColors.kiwiGreen])
                       : LinearGradient(
                           colors: [topicColor.withOpacity(0.15), topicColor.withOpacity(0.08)],
                         ),
-                  borderRadius: BorderRadius.circular(12),
+                  borderRadius: BorderRadius.circular(shape.buttonRadius),
                 ),
                 child: Center(
                   child: isCompleted
@@ -1023,7 +669,7 @@ class _WorksheetListScreenState extends State<WorksheetListScreen> {
                       : Text(
                           '${ws.day}',
                           style: TextStyle(
-                            fontSize: 18,
+                            fontSize: typo.headlineSize,
                             fontWeight: FontWeight.w800,
                             color: topicColor,
                             fontFamily: typo.fontFamily,
@@ -1064,16 +710,16 @@ class _WorksheetListScreenState extends State<WorksheetListScreen> {
                         children: [
                           Text(
                             '${result.correctCount}/${result.totalCount}',
-                            style: const TextStyle(
-                              fontSize: 11,
+                            style: TextStyle(
+                              fontSize: typo.chipSize - 1,
                               fontWeight: FontWeight.w700,
-                              color: Color(0xFF2E7D32),
+                              color: KiwiColors.kiwiGreenDark,
                             ),
                           ),
                           const SizedBox(width: 6),
                           Text(
                             '\u{2B50}' * result.stars,
-                            style: const TextStyle(fontSize: 11),
+                            style: TextStyle(fontSize: typo.chipSize - 1),
                           ),
                         ],
                       ),
@@ -1081,91 +727,9 @@ class _WorksheetListScreenState extends State<WorksheetListScreen> {
                   ],
                 ),
               ),
-              // Difficulty badges + download
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.end,
-                children: [
-                  if (ws.warmupCount > 0)
-                    _diffBadge('${ws.warmupCount} Warmup', const Color(0xFF4CAF50)),
-                  if (ws.practiceCount > 0) ...[
-                    const SizedBox(height: 3),
-                    _diffBadge('${ws.practiceCount} Practice', const Color(0xFFFF9800)),
-                  ],
-                  if (ws.challengeCount > 0) ...[
-                    const SizedBox(height: 3),
-                    _diffBadge('${ws.challengeCount} Challenge', const Color(0xFFE53935)),
-                  ],
-                  const SizedBox(height: 6),
-                  _downloadIndicator(ws.day, isDownloaded, colors.textMuted),
-                ],
-              ),
-            ],
-          ),
-        ),
-      ),
-    );
-  }
-
-  /// Compact card for journey list view.
-  Widget _buildCompactCard(WorksheetMeta ws, _TopicInfo info,
-      KiwiTierColors colors, KiwiTierTypography typo) {
-    final result = _results[ws.day];
-    final isCompleted = result != null;
-    final isDownloaded = _cache.isDownloaded(_selectedGrade, ws.day);
-
-    return Material(
-      color: colors.cardBg,
-      borderRadius: BorderRadius.circular(12),
-      child: InkWell(
-        onTap: () => _openWorksheet(ws.day),
-        borderRadius: BorderRadius.circular(12),
-        child: Container(
-          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(12),
-            border: Border.all(color: colors.topicCardBorder),
-          ),
-          child: Row(
-            children: [
-              // Topic color dot
-              Container(
-                width: 8,
-                height: 32,
-                decoration: BoxDecoration(
-                  color: isCompleted ? KiwiColors.kiwiGreen : info.color,
-                  borderRadius: BorderRadius.circular(4),
-                ),
-              ),
-              const SizedBox(width: 10),
-              Text(
-                '${ws.day}.',
-                style: TextStyle(
-                  fontSize: 13,
-                  fontWeight: FontWeight.w800,
-                  color: colors.textMuted,
-                  fontFamily: typo.fontFamily,
-                ),
-              ),
+              _downloadIndicator(ws.day, isDownloaded, colors.textMuted),
               const SizedBox(width: 8),
-              Expanded(
-                child: Text(
-                  ws.title,
-                  style: TextStyle(
-                    fontSize: typo.chipSize + 1,
-                    fontWeight: FontWeight.w600,
-                    color: colors.textPrimary,
-                    fontFamily: typo.fontFamily,
-                  ),
-                  maxLines: 1,
-                  overflow: TextOverflow.ellipsis,
-                ),
-              ),
-              if (isCompleted)
-                Text('\u{2B50}' * result.stars, style: const TextStyle(fontSize: 12)),
-              if (!isCompleted)
-                _downloadIndicator(ws.day, isDownloaded, colors.textMuted),
-              const SizedBox(width: 4),
-              Icon(Icons.chevron_right_rounded, size: 18, color: colors.textMuted),
+              Icon(Icons.chevron_right_rounded, size: 20, color: colors.textMuted),
             ],
           ),
         ),
@@ -1174,24 +738,6 @@ class _WorksheetListScreenState extends State<WorksheetListScreen> {
   }
 
   // ── Shared small widgets ───────────────────────────────────────────────
-
-  Widget _diffBadge(String label, Color color) {
-    return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
-      decoration: BoxDecoration(
-        color: color.withOpacity(0.1),
-        borderRadius: BorderRadius.circular(6),
-      ),
-      child: Text(
-        label,
-        style: TextStyle(
-          fontSize: 9,
-          fontWeight: FontWeight.w700,
-          color: color,
-        ),
-      ),
-    );
-  }
 
   /// Per-worksheet download indicator — cloud icon (not downloaded) or checkmark (downloaded).
   /// Tapping cloud triggers a single worksheet download.

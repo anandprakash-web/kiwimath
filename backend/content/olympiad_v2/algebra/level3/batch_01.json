@@ -1,0 +1,906 @@
+[
+  {
+    "id": "alg-l3-qd-001",
+    "topic": "quadratics",
+    "stem": "If x\u00b2 = 49, what are the values of x?",
+    "visual_svg": null,
+    "answer_type": "mcq",
+    "correct_answer": 0,
+    "solution": "Step 1: x\u00b2 = 49.\nStep 2: Taking square root of both sides: x = \u00b1\u221a49 = \u00b17.\nStep 3: Both x = 7 and x = \u22127 satisfy the equation.\nAnswer: C) 7 and \u22127.",
+    "difficulty": 1,
+    "tags": [
+      "algebra",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken.",
+      "1": "Review the question carefully and try again.",
+      "2": "Review the question carefully and try again.",
+      "3": "Review the question carefully and try again."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [
+      "A) 7 only",
+      "B) -7 only",
+      "C) 7 and -7",
+      "D) 49"
+    ],
+    "interaction_mode": "mcq"
+  },
+  {
+    "id": "alg-l3-qd-002",
+    "topic": "quadratics",
+    "stem": "Find two numbers whose sum is 12 and product is 35.",
+    "visual_svg": null,
+    "answer_type": "mcq",
+    "correct_answer": 0,
+    "solution": "Step 1: Let the numbers be x and (12 \u2212 x).\nStep 2: x(12 \u2212 x) = 35 \u2192 12x \u2212 x\u00b2 = 35 \u2192 x\u00b2 \u2212 12x + 35 = 0.\nStep 3: Factor: (x \u2212 5)(x \u2212 7) = 0.\nStep 4: x = 5 or x = 7.\nStep 5: The two numbers are 5 and 7. Check: 5 + 7 = 12, 5 \u00d7 7 = 35. \u2713\nAnswer: A) 5 and 7.",
+    "difficulty": 1,
+    "tags": [
+      "algebra",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken.",
+      "1": "Review the question carefully and try again.",
+      "2": "Review the question carefully and try again.",
+      "3": "Review the question carefully and try again."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [
+      "A) 5 and 7",
+      "B) 4 and 8",
+      "C) 6 and 6",
+      "D) 3 and 9"
+    ],
+    "interaction_mode": "mcq"
+  },
+  {
+    "id": "alg-l3-qd-003",
+    "topic": "quadratics",
+    "stem": "Solve: x\u00b2 \u2212 9 = 0. What is the sum of the solutions?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: x\u00b2 \u2212 9 = 0 \u2192 x\u00b2 = 9.\nStep 2: x = 3 or x = \u22123.\nStep 3: Sum of solutions = 3 + (\u22123) = 0.\nAnswer: 0.",
+    "difficulty": 1,
+    "tags": [
+      "algebra",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "alg-l3-qd-004",
+    "topic": "quadratics",
+    "stem": "If x\u00b2 + 5x + 6 = 0, what is the product of the two solutions?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: Factor: x\u00b2 + 5x + 6 = (x + 2)(x + 3) = 0.\nStep 2: Solutions: x = \u22122 or x = \u22123.\nStep 3: Product = (\u22122) \u00d7 (\u22123) = 6.\nAlternatively, for ax\u00b2 + bx + c = 0, product of roots = c/a = 6/1 = 6.\nAnswer: 6.",
+    "difficulty": 2,
+    "tags": [
+      "algebra",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 6
+  },
+  {
+    "id": "alg-l3-qd-005",
+    "topic": "quadratics",
+    "stem": "A rectangle has length (x + 3) cm and width (x \u2212 1) cm. If its area is 21 cm\u00b2, find x.",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: Area = (x + 3)(x \u2212 1) = 21.\nStep 2: x\u00b2 + 2x \u2212 3 = 21 \u2192 x\u00b2 + 2x \u2212 24 = 0.\nStep 3: Factor: (x + 6)(x \u2212 4) = 0.\nStep 4: x = \u22126 or x = 4.\nStep 5: Since x \u2212 1 must be positive (it's a length), x = 4.\nCheck: length = 7, width = 3, area = 21. \u2713\nAnswer: 4.",
+    "difficulty": 2,
+    "tags": [
+      "algebra",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 4
+  },
+  {
+    "id": "alg-l3-qd-006",
+    "topic": "quadratics",
+    "stem": "What is the sum of the roots of x\u00b2 \u2212 7x + 10 = 0?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: For ax\u00b2 + bx + c = 0, sum of roots = \u2212b/a.\nStep 2: Here a = 1, b = \u22127, c = 10.\nStep 3: Sum = \u2212(\u22127)/1 = 7.\nVerification: (x \u2212 2)(x \u2212 5) = 0 \u2192 roots are 2 and 5, sum = 7. \u2713\nAnswer: 7.",
+    "difficulty": 2,
+    "tags": [
+      "algebra",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 7
+  },
+  {
+    "id": "alg-l3-qd-007",
+    "topic": "quadratics",
+    "stem": "Find two consecutive positive integers whose product is 72.",
+    "visual_svg": null,
+    "answer_type": "mcq",
+    "correct_answer": 0,
+    "solution": "Step 1: Let the numbers be n and n + 1.\nStep 2: n(n + 1) = 72 \u2192 n\u00b2 + n \u2212 72 = 0.\nStep 3: Factor: (n + 9)(n \u2212 8) = 0.\nStep 4: n = 8 (taking positive value).\nStep 5: The numbers are 8 and 9. Check: 8 \u00d7 9 = 72. \u2713\nAnswer: B) 8 and 9.",
+    "difficulty": 2,
+    "tags": [
+      "algebra",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken.",
+      "1": "Review the question carefully and try again.",
+      "2": "Review the question carefully and try again.",
+      "3": "Review the question carefully and try again."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [
+      "A) 7 and 8",
+      "B) 8 and 9",
+      "C) 6 and 12",
+      "D) 9 and 10"
+    ],
+    "interaction_mode": "mcq"
+  },
+  {
+    "id": "alg-l3-qd-008",
+    "topic": "quadratics",
+    "stem": "If (x \u2212 3)\u00b2 = 16, what are the possible values of x?",
+    "visual_svg": null,
+    "answer_type": "mcq",
+    "correct_answer": 0,
+    "solution": "Step 1: (x \u2212 3)\u00b2 = 16.\nStep 2: x \u2212 3 = \u00b14.\nStep 3: x \u2212 3 = 4 \u2192 x = 7.\nStep 4: x \u2212 3 = \u22124 \u2192 x = \u22121.\nAnswer: A) 7 and \u22121.",
+    "difficulty": 1,
+    "tags": [
+      "algebra",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken.",
+      "1": "Review the question carefully and try again.",
+      "2": "Review the question carefully and try again.",
+      "3": "Review the question carefully and try again."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [
+      "A) 7 and -1",
+      "B) 7 and 1",
+      "C) 7 only",
+      "D) -1 and -7"
+    ],
+    "interaction_mode": "mcq"
+  },
+  {
+    "id": "alg-l3-qd-009",
+    "topic": "quadratics",
+    "stem": "The difference of two numbers is 4 and their product is 45. What is their sum?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: Let the numbers be x and x \u2212 4.\nStep 2: x(x \u2212 4) = 45 \u2192 x\u00b2 \u2212 4x \u2212 45 = 0.\nStep 3: Factor: (x \u2212 9)(x + 5) = 0.\nStep 4: x = 9 (positive), so the other number = 9 \u2212 4 = 5.\nStep 5: Sum = 9 + 5 = 14.\nCheck: difference = 4, product = 45. \u2713\nAnswer: 14.",
+    "difficulty": 2,
+    "tags": [
+      "algebra",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 14
+  },
+  {
+    "id": "alg-l3-qd-010",
+    "topic": "quadratics",
+    "stem": "How many real solutions does x\u00b2 + 4 = 0 have?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: x\u00b2 + 4 = 0 \u2192 x\u00b2 = \u22124.\nStep 2: Since x\u00b2 is always \u2265 0 for real numbers, x\u00b2 cannot equal \u22124.\nStep 3: This equation has no real solutions.\nAnswer: 0.",
+    "difficulty": 2,
+    "tags": [
+      "algebra",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "alg-l3-iq-001",
+    "topic": "inequalities",
+    "stem": "If x + y = 10 and both x and y are positive, what is the maximum possible value of x \u00d7 y?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: By AM-GM inequality, for positive numbers x + y \u2265 2\u221a(xy).\nStep 2: Since x + y = 10, we get 10 \u2265 2\u221a(xy), so \u221a(xy) \u2264 5, meaning xy \u2264 25.\nStep 3: Maximum occurs when x = y = 5, giving xy = 25.\nAnswer: 25.",
+    "difficulty": 1,
+    "tags": [
+      "AM-GM",
+      "optimization",
+      "inequality"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 25
+  },
+  {
+    "id": "alg-l3-iq-002",
+    "topic": "inequalities",
+    "stem": "If a + b = 10, what is the maximum value of a \u00d7 b?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: By the AM-GM inequality, for non-negative a and b:\n(a + b)/2 \u2265 \u221a(ab).\nStep 2: 10/2 \u2265 \u221a(ab) \u2192 5 \u2265 \u221a(ab) \u2192 25 \u2265 ab.\nStep 3: The maximum of ab is 25, achieved when a = b = 5.\nCheck: 5 + 5 = 10, 5 \u00d7 5 = 25. \u2713\nAnswer: 25.",
+    "difficulty": 2,
+    "tags": [
+      "algebra",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 25
+  },
+  {
+    "id": "alg-l3-iq-003",
+    "topic": "inequalities",
+    "stem": "If x > 3 and x is an integer, what is the smallest possible value of x\u00b2?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: x is an integer greater than 3.\nStep 2: The smallest such integer is 4.\nStep 3: x\u00b2 = 4\u00b2 = 16.\nAnswer: 16.",
+    "difficulty": 1,
+    "tags": [
+      "algebra",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 16
+  },
+  {
+    "id": "alg-l3-iq-004",
+    "topic": "inequalities",
+    "stem": "Three positive numbers have a sum of 15. What is the maximum possible value of their product?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: By the AM-GM inequality, the product is maximized when all three numbers are equal.\nStep 2: Each number = 15 \u00f7 3 = 5.\nStep 3: Maximum product = 5 \u00d7 5 \u00d7 5 = 125.\nAnswer: 125.",
+    "difficulty": 3,
+    "tags": [
+      "algebra",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 125
+  },
+  {
+    "id": "alg-l3-iq-005",
+    "topic": "inequalities",
+    "stem": "If 2x \u2212 3 > 7, what is the smallest integer value of x?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: 2x \u2212 3 > 7.\nStep 2: 2x > 10.\nStep 3: x > 5.\nStep 4: The smallest integer greater than 5 is 6.\nAnswer: 6.",
+    "difficulty": 1,
+    "tags": [
+      "algebra",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 6
+  },
+  {
+    "id": "alg-l3-iq-006",
+    "topic": "inequalities",
+    "stem": "The arithmetic mean of two positive numbers is 10. Their geometric mean cannot exceed what value?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: AM-GM inequality states: Arithmetic Mean \u2265 Geometric Mean.\nStep 2: AM = 10, so GM \u2264 10.\nStep 3: GM = 10 when both numbers are equal (both = 10).\nAnswer: 10.",
+    "difficulty": 2,
+    "tags": [
+      "algebra",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 10
+  },
+  {
+    "id": "alg-l3-iq-007",
+    "topic": "inequalities",
+    "stem": "If x + y = 8 and x, y are positive integers, what is the minimum value of x\u00b2 + y\u00b2?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: x + y = 8. We want to minimize x\u00b2 + y\u00b2.\nStep 2: x\u00b2 + y\u00b2 = (x + y)\u00b2 \u2212 2xy = 64 \u2212 2xy.\nStep 3: To minimize x\u00b2 + y\u00b2, maximize xy.\nStep 4: By AM-GM, xy is maximized when x = y = 4.\nStep 5: Minimum of x\u00b2 + y\u00b2 = 64 \u2212 2(16) = 64 \u2212 32 = 32.\nCheck: 4\u00b2 + 4\u00b2 = 16 + 16 = 32. \u2713\nAnswer: 32.",
+    "difficulty": 3,
+    "tags": [
+      "algebra",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 32
+  },
+  {
+    "id": "alg-l3-iq-008",
+    "topic": "inequalities",
+    "stem": "How many integers satisfy the inequality \u22123 \u2264 x < 5?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: x must be an integer with \u22123 \u2264 x < 5.\nStep 2: The integers are: \u22123, \u22122, \u22121, 0, 1, 2, 3, 4.\nStep 3: Count = 8.\nAnswer: 8.",
+    "difficulty": 1,
+    "tags": [
+      "algebra",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 8
+  },
+  {
+    "id": "alg-l3-iq-009",
+    "topic": "inequalities",
+    "stem": "If a and b are positive numbers with a + b = 6, find the minimum value of 1/a + 1/b.",
+    "visual_svg": null,
+    "answer_type": "mcq",
+    "correct_answer": 0,
+    "solution": "Step 1: 1/a + 1/b = (a + b)/(ab) = 6/(ab).\nStep 2: To minimize 6/(ab), we need to maximize ab.\nStep 3: By AM-GM, ab \u2264 (a+b)\u00b2/4 = 36/4 = 9, with equality when a = b = 3.\nStep 4: Minimum of 1/a + 1/b = 6/9 = 2/3.\nAnswer: B) 2/3.",
+    "difficulty": 3,
+    "tags": [
+      "algebra",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken.",
+      "1": "Review the question carefully and try again.",
+      "2": "Review the question carefully and try again.",
+      "3": "Review the question carefully and try again."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [
+      "A) 1/3",
+      "B) 2/3",
+      "C) 1",
+      "D) 6"
+    ],
+    "interaction_mode": "mcq"
+  },
+  {
+    "id": "alg-l3-iq-010",
+    "topic": "inequalities",
+    "stem": "A farmer encloses a rectangular field with 40 m of fencing. What is the maximum area he can enclose?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: Perimeter = 2(l + w) = 40, so l + w = 20.\nStep 2: Area = l \u00d7 w.\nStep 3: By AM-GM, l \u00d7 w is maximized when l = w = 10.\nStep 4: Maximum area = 10 \u00d7 10 = 100 m\u00b2.\nAnswer: 100 m\u00b2.",
+    "difficulty": 2,
+    "tags": [
+      "algebra",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 100
+  },
+  {
+    "id": "alg-l3-pl-001",
+    "topic": "polynomials",
+    "stem": "If f(x) = x\u00b2 + 3x + 2, find f(3).",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: Substitute x = 3 into f(x) = x\u00b2 + 3x + 2.\nStep 2: f(3) = 3\u00b2 + 3(3) + 2 = 9 + 9 + 2 = 20.\nAnswer: 20.",
+    "difficulty": 1,
+    "tags": [
+      "algebra",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 20
+  },
+  {
+    "id": "alg-l3-pl-002",
+    "topic": "polynomials",
+    "stem": "Factorize: x\u00b2 \u2212 5x + 6.",
+    "visual_svg": null,
+    "answer_type": "mcq",
+    "correct_answer": 0,
+    "solution": "Step 1: We need two numbers that multiply to 6 and add to \u22125.\nStep 2: \u22122 \u00d7 \u22123 = 6 and \u22122 + (\u22123) = \u22125. \u2713\nStep 3: x\u00b2 \u2212 5x + 6 = (x \u2212 2)(x \u2212 3).\nAnswer: B) (x \u2212 2)(x \u2212 3).",
+    "difficulty": 1,
+    "tags": [
+      "algebra",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken.",
+      "1": "Review the question carefully and try again.",
+      "2": "Review the question carefully and try again.",
+      "3": "Review the question carefully and try again."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [
+      "A) (x \u2212 1)(x \u2212 6)",
+      "B) (x \u2212 2)(x \u2212 3)",
+      "C) (x + 2)(x + 3)",
+      "D) (x \u2212 2)(x + 3)"
+    ],
+    "interaction_mode": "mcq"
+  },
+  {
+    "id": "alg-l3-pl-003",
+    "topic": "polynomials",
+    "stem": "If f(x) = 2x\u00b3 \u2212 x + 4, find f(\u22121).",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: f(\u22121) = 2(\u22121)\u00b3 \u2212 (\u22121) + 4.\nStep 2: = 2(\u22121) + 1 + 4.\nStep 3: = \u22122 + 1 + 4 = 3.\nAnswer: 3.",
+    "difficulty": 2,
+    "tags": [
+      "algebra",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 3
+  },
+  {
+    "id": "alg-l3-pl-004",
+    "topic": "polynomials",
+    "stem": "Factorize: x\u00b2 \u2212 16.",
+    "visual_svg": null,
+    "answer_type": "mcq",
+    "correct_answer": 0,
+    "solution": "Step 1: This is a difference of squares: a\u00b2 \u2212 b\u00b2 = (a \u2212 b)(a + b).\nStep 2: x\u00b2 \u2212 16 = x\u00b2 \u2212 4\u00b2 = (x \u2212 4)(x + 4).\nAnswer: C) (x \u2212 4)(x + 4).",
+    "difficulty": 1,
+    "tags": [
+      "algebra",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken.",
+      "1": "Review the question carefully and try again.",
+      "2": "Review the question carefully and try again.",
+      "3": "Review the question carefully and try again."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [
+      "A) (x \u2212 4)\u00b2",
+      "B) (x + 4)\u00b2",
+      "C) (x \u2212 4)(x + 4)",
+      "D) (x \u2212 8)(x + 2)"
+    ],
+    "interaction_mode": "mcq"
+  },
+  {
+    "id": "alg-l3-pl-005",
+    "topic": "polynomials",
+    "stem": "Simplify: (x + 2)(x + 3) \u2212 (x + 1)(x + 4).",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: Expand (x + 2)(x + 3) = x\u00b2 + 5x + 6.\nStep 2: Expand (x + 1)(x + 4) = x\u00b2 + 5x + 4.\nStep 3: Subtract: (x\u00b2 + 5x + 6) \u2212 (x\u00b2 + 5x + 4) = 6 \u2212 4 = 2.\nAnswer: 2.",
+    "difficulty": 2,
+    "tags": [
+      "algebra",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 2
+  },
+  {
+    "id": "alg-l3-pl-006",
+    "topic": "polynomials",
+    "stem": "If f(x) = x\u00b2 \u2212 4x + 3, for which value of x is f(x) = 0 and x > 2?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: Factor: x\u00b2 \u2212 4x + 3 = (x \u2212 1)(x \u2212 3) = 0.\nStep 2: x = 1 or x = 3.\nStep 3: Since x > 2, x = 3.\nAnswer: 3.",
+    "difficulty": 2,
+    "tags": [
+      "algebra",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 3
+  },
+  {
+    "id": "alg-l3-pl-007",
+    "topic": "polynomials",
+    "stem": "What is the coefficient of x in the expansion of (x + 4)(x \u2212 3)?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: (x + 4)(x \u2212 3) = x\u00b2 \u2212 3x + 4x \u2212 12 = x\u00b2 + x \u2212 12.\nStep 2: The coefficient of x is 1.\nAnswer: 1.",
+    "difficulty": 1,
+    "tags": [
+      "algebra",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 1
+  },
+  {
+    "id": "alg-l3-pl-008",
+    "topic": "polynomials",
+    "stem": "Factorize: x\u00b2 + 7x + 12.",
+    "visual_svg": null,
+    "answer_type": "mcq",
+    "correct_answer": 0,
+    "solution": "Step 1: Find two numbers that multiply to 12 and add to 7.\nStep 2: 3 \u00d7 4 = 12 and 3 + 4 = 7. \u2713\nStep 3: x\u00b2 + 7x + 12 = (x + 3)(x + 4).\nAnswer: A) (x + 3)(x + 4).",
+    "difficulty": 1,
+    "tags": [
+      "algebra",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken.",
+      "1": "Review the question carefully and try again.",
+      "2": "Review the question carefully and try again.",
+      "3": "Review the question carefully and try again."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [
+      "A) (x + 3)(x + 4)",
+      "B) (x + 2)(x + 6)",
+      "C) (x + 1)(x + 12)",
+      "D) (x \u2212 3)(x \u2212 4)"
+    ],
+    "interaction_mode": "mcq"
+  },
+  {
+    "id": "alg-l3-pl-009",
+    "topic": "polynomials",
+    "stem": "If p(x) = x\u00b3 \u2212 6x\u00b2 + 11x \u2212 6, verify that x = 1 is a root. What is the sum of all three roots?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: Check p(1) = 1 \u2212 6 + 11 \u2212 6 = 0. \u2713 So x = 1 is a root.\nStep 2: By Vieta's formulas for x\u00b3 + bx\u00b2 + cx + d, sum of roots = \u2212b/a.\nStep 3: Here the equation is x\u00b3 \u2212 6x\u00b2 + 11x \u2212 6 = 0, so sum of roots = 6.\nStep 4: In fact the roots are 1, 2, 3 and 1 + 2 + 3 = 6. \u2713\nAnswer: 6.",
+    "difficulty": 3,
+    "tags": [
+      "algebra",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 6
+  },
+  {
+    "id": "alg-l3-pl-010",
+    "topic": "polynomials",
+    "stem": "Expand and simplify: (2x \u2212 1)\u00b2.",
+    "visual_svg": null,
+    "answer_type": "mcq",
+    "correct_answer": 0,
+    "solution": "Step 1: (2x \u2212 1)\u00b2 = (2x)\u00b2 \u2212 2(2x)(1) + 1\u00b2 = 4x\u00b2 \u2212 4x + 1.\nAnswer: B) 4x\u00b2 \u2212 4x + 1.",
+    "difficulty": 1,
+    "tags": [
+      "algebra",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken.",
+      "1": "Review the question carefully and try again.",
+      "2": "Review the question carefully and try again.",
+      "3": "Review the question carefully and try again."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [
+      "A) 4x\u00b2 \u2212 1",
+      "B) 4x\u00b2 \u2212 4x + 1",
+      "C) 4x\u00b2 + 4x + 1",
+      "D) 2x\u00b2 \u2212 2x + 1"
+    ],
+    "interaction_mode": "mcq"
+  }
+]

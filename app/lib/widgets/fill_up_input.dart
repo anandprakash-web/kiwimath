@@ -65,10 +65,10 @@ class _FillUpInputState extends State<FillUpInput> {
           margin: const EdgeInsets.only(bottom: 14),
           decoration: BoxDecoration(
             gradient: const LinearGradient(
-              colors: [Color(0xFFE3F2FD), Color(0xFFBBDEFB)],
+              colors: [KiwiColors.visualBlueBg, KiwiColors.visualBlueBg],
             ),
             borderRadius: BorderRadius.circular(12),
-            border: Border.all(color: const Color(0xFF64B5F6), width: 1.5),
+            border: Border.all(color: KiwiColors.visualBlueBorder, width: 1.5),
           ),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -80,7 +80,7 @@ class _FillUpInputState extends State<FillUpInput> {
                 style: TextStyle(
                   fontSize: 14,
                   fontWeight: FontWeight.w700,
-                  color: const Color(0xFF1565C0),
+                  color: KiwiColors.sky,
                 ),
               ),
             ],
@@ -101,12 +101,12 @@ class _FillUpInputState extends State<FillUpInput> {
               ? DecoratedBox(
                   decoration: BoxDecoration(
                     gradient: const LinearGradient(
-                      colors: [Color(0xFF42A5F5), Color(0xFF1E88E5)],
+                      colors: [KiwiColors.sky, KiwiColors.sky],
                     ),
                     borderRadius: BorderRadius.circular(16),
                     boxShadow: [
                       BoxShadow(
-                        color: const Color(0xFF42A5F5).withOpacity(0.4),
+                        color: KiwiColors.sky.withOpacity(0.4),
                         blurRadius: 10,
                         offset: const Offset(0, 4),
                       ),
@@ -134,8 +134,8 @@ class _FillUpInputState extends State<FillUpInput> {
               : ElevatedButton(
                   onPressed: null,
                   style: ElevatedButton.styleFrom(
-                    disabledBackgroundColor: const Color(0xFF42A5F5).withOpacity(0.08),
-                    disabledForegroundColor: const Color(0xFF42A5F5).withOpacity(0.35),
+                    disabledBackgroundColor: KiwiColors.sky.withOpacity(0.08),
+                    disabledForegroundColor: KiwiColors.sky.withOpacity(0.35),
                     padding: const EdgeInsets.symmetric(vertical: 16),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(16),
@@ -159,8 +159,8 @@ class _FillUpInputState extends State<FillUpInput> {
         borderRadius: BorderRadius.circular(16),
         border: Border.all(
           color: _controller.text.isNotEmpty
-              ? const Color(0xFF42A5F5)
-              : const Color(0xFFE0E0E0),
+              ? KiwiColors.sky
+              : KiwiColors.pathLocked,
           width: 2,
         ),
         boxShadow: [
@@ -185,7 +185,7 @@ class _FillUpInputState extends State<FillUpInput> {
           hintStyle: TextStyle(
             fontSize: 28,
             fontWeight: FontWeight.w800,
-            color: const Color(0xFFBDBDBD),
+            color: KiwiColors.textMuted,
           ),
           border: InputBorder.none,
           contentPadding: const EdgeInsets.symmetric(vertical: 18, horizontal: 20),
@@ -223,19 +223,19 @@ class _FillUpInputState extends State<FillUpInput> {
                 padding: const EdgeInsets.symmetric(vertical: 20),
                 decoration: BoxDecoration(
                   color: selected
-                      ? const Color(0xFF42A5F5).withOpacity(0.15)
+                      ? KiwiColors.sky.withOpacity(0.15)
                       : Colors.white,
                   borderRadius: BorderRadius.circular(16),
                   border: Border.all(
                     color: selected
-                        ? const Color(0xFF1E88E5)
-                        : const Color(0xFFE0E0E0),
+                        ? KiwiColors.sky
+                        : KiwiColors.pathLocked,
                     width: selected ? 2.5 : 1.5,
                   ),
                   boxShadow: selected
                       ? [
                           BoxShadow(
-                            color: const Color(0xFF42A5F5).withOpacity(0.2),
+                            color: KiwiColors.sky.withOpacity(0.2),
                             blurRadius: 8,
                             offset: const Offset(0, 3),
                           ),
@@ -250,7 +250,7 @@ class _FillUpInputState extends State<FillUpInput> {
                         fontSize: 36,
                         fontWeight: FontWeight.w900,
                         color: selected
-                            ? const Color(0xFF1565C0)
+                            ? KiwiColors.sky
                             : KiwiColors.textMid,
                       ),
                     ),
@@ -261,7 +261,7 @@ class _FillUpInputState extends State<FillUpInput> {
                         fontSize: 11,
                         fontWeight: FontWeight.w600,
                         color: selected
-                            ? const Color(0xFF1565C0)
+                            ? KiwiColors.sky
                             : KiwiColors.textMuted,
                       ),
                     ),

@@ -28,3 +28,22 @@ def test_rejects_attribute_access():
 def test_rejects_unknown_variable():
     with pytest.raises(UnsafeExpressionError, match="unknown variable"):
         safe_eval("X + 1", {"N": 5})
+
+
+def test_pow_within_limits():
+    assert safe_eval("2 ** 10", {}) == 1024
+    assert safe_eval("N ** 2", {"N": 12}) == 144
+
+
+def test_pow_guard_rejects_huge_exponent():
+    with pytest.raises(UnsafeExpressionError, match="exponent"):
+        safe_eval("2 ** 101", {})
+    with pytest.raises(UnsafeExpressionError, match="exponent"):
+        safe_eval("9 ** 999999", {})
+
+
+def test_pow_guard_rejects_huge_base():
+    with pytest.raises(UnsafeExpressionError, match="base"):
+        safe_eval("1000001 ** 2", {})
+    with pytest.raises(UnsafeExpressionError, match="base"):
+        safe_eval("N ** 2", {"N": -2000000})

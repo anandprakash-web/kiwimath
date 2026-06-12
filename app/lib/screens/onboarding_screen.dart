@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 import '../models/question_v2.dart';
 import '../services/api_client.dart';
@@ -110,9 +109,17 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
       });
     } catch (e) {
       if (!mounted) return;
+      final raw = e.toString();
+      String msg;
+      if (raw.contains('SocketException') || raw.contains('Connection') ||
+          raw.contains('TimeoutException')) {
+        msg = "Can't reach our servers right now. Check your internet.";
+      } else {
+        msg = 'Something went wrong loading the quiz. Please try again!';
+      }
       setState(() {
         _phase = _OnboardingPhase.error;
-        _error = e.toString();
+        _error = msg;
       });
     }
   }
@@ -153,6 +160,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
           await _api.updateStudentProfile(
             userId: widget.userId,
             name: _kidName,
+            childName: _kidName,
             grade: _grade ?? 1,
             curriculum: _curriculum,
           );
@@ -191,9 +199,17 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
       });
     } catch (e) {
       if (!mounted) return;
+      final raw = e.toString();
+      String msg;
+      if (raw.contains('SocketException') || raw.contains('Connection') ||
+          raw.contains('TimeoutException')) {
+        msg = "Can't reach our servers right now. Check your internet.";
+      } else {
+        msg = 'Something went wrong saving your results. Please try again!';
+      }
       setState(() {
         _phase = _OnboardingPhase.error;
-        _error = e.toString();
+        _error = msg;
       });
     }
   }
@@ -479,7 +495,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                   child: LinearProgressIndicator(
                     value: progress,
                     minHeight: 6,
-                    backgroundColor: const Color(0xFFE0E0E0),
+                    backgroundColor: KiwiColors.pathLocked,
                     valueColor: const AlwaysStoppedAnimation<Color>(
                       KiwiColors.kiwiPrimary,
                     ),
@@ -536,7 +552,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                         border: Border.all(
                           color: selected
                               ? KiwiColors.kiwiPrimary
-                              : Colors.grey.shade200,
+                              : KiwiColors.pathLocked,
                           width: selected ? 2 : 1,
                         ),
                       ),
@@ -567,8 +583,8 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                   padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
                   decoration: BoxDecoration(
                     color: _flaggedQuestions.contains(q.questionId)
-                        ? const Color(0xFFFFF3E0)
-                        : Colors.grey.shade100,
+                        ? KiwiColors.wrongBg
+                        : KiwiColors.pathLocked,
                     borderRadius: BorderRadius.circular(10),
                   ),
                   child: Icon(
@@ -589,8 +605,8 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                   style: ElevatedButton.styleFrom(
                     backgroundColor: KiwiColors.kiwiPrimary,
                     foregroundColor: Colors.white,
-                    disabledBackgroundColor: Colors.grey.shade200,
-                    disabledForegroundColor: Colors.grey.shade400,
+                    disabledBackgroundColor: KiwiColors.pathLocked,
+                    disabledForegroundColor: KiwiColors.textMuted,
                     padding: const EdgeInsets.symmetric(vertical: 16),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(14),
@@ -861,11 +877,11 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                     vertical: 12,
                   ),
                   decoration: BoxDecoration(
-                    color: item.isStrength ? Colors.grey.shade50 : Colors.white,
+                    color: item.isStrength ? KiwiColors.pathLocked : Colors.white,
                     borderRadius: BorderRadius.circular(14),
                     border: Border.all(
                       color: item.isStrength
-                          ? Colors.grey.shade200
+                          ? KiwiColors.pathLocked
                           : item.badgeColor.withOpacity(0.3),
                       width: 1.5,
                     ),
@@ -981,12 +997,12 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
         decoration: BoxDecoration(
           color: hasSelected
               ? KiwiColors.kiwiPrimaryLight
-              : Colors.grey.shade50,
+              : KiwiColors.pathLocked,
           borderRadius: BorderRadius.circular(12),
           border: Border.all(
             color: hasSelected
                 ? KiwiColors.kiwiPrimary.withOpacity(0.3)
-                : Colors.grey.shade200,
+                : KiwiColors.pathLocked,
           ),
         ),
         child: Row(
@@ -1051,11 +1067,11 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                 style: TextStyle(fontSize: 13, color: KiwiColors.textMid),
               ),
               const SizedBox(height: 20),
-              _syllabusOption(ctx, 'NCERT', 'CBSE schools', Icons.school_rounded, const Color(0xFF2E7D32), 'ncert'),
-              const SizedBox(height: 8),
-              _syllabusOption(ctx, 'ICSE', 'ICSE/ISC schools', Icons.auto_stories_rounded, const Color(0xFF1565C0), 'icse'),
-              const SizedBox(height: 8),
-              _syllabusOption(ctx, 'Cambridge Primary', 'International', Icons.language_rounded, const Color(0xFF6A1B9A), 'cambridge'),
+              _syllabusOption(ctx, 'NCERT', 'CBSE schools', Icons.school_rounded, KiwiColors.kiwiGreenDark, 'ncert'),
+              SizedBox(height: KiwiSpacing.sm),
+              _syllabusOption(ctx, 'ICSE', 'ICSE/ISC schools', Icons.auto_stories_rounded, KiwiColors.leagueBlue, 'icse'),
+              SizedBox(height: KiwiSpacing.sm),
+              _syllabusOption(ctx, 'Cambridge Primary', 'International', Icons.language_rounded, KiwiColors.indigo, 'cambridge'),
               const SizedBox(height: 8),
               _syllabusOption(ctx, 'None', 'Pure adaptive practice', Icons.bolt_rounded, KiwiColors.kiwiPrimary, ''),
             ],
@@ -1078,7 +1094,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
           color: selected ? color.withOpacity(0.08) : Colors.white,
           borderRadius: BorderRadius.circular(12),
           border: Border.all(
-            color: selected ? color : Colors.grey.shade200,
+            color: selected ? color : KiwiColors.pathLocked,
             width: selected ? 2 : 1,
           ),
         ),
@@ -1277,7 +1293,7 @@ class _ResultCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.circular(16),
-          border: Border.all(color: Colors.grey.shade200),
+          border: Border.all(color: KiwiColors.pathLocked),
         ),
         child: Row(
           children: [

@@ -1,0 +1,61 @@
+<svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Knight and Knave Island (Smullyan) -->
+  <defs>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#87CEEB;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E0F7FA;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="island" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4CAF50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2E7D32;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- Sky -->
+  <rect width="600" height="400" fill="url(#sky)" rx="12"/>
+  <!-- Water -->
+  <ellipse cx="300" cy="360" rx="300" ry="60" fill="#1565C0" opacity="0.3"/>
+  <!-- Island -->
+  <ellipse cx="300" cy="300" rx="250" ry="80" fill="url(#island)"/>
+  <!-- Palm tree -->
+  <rect x="445" y="180" width="10" height="120" fill="#795548" rx="3"/>
+  <ellipse cx="450" cy="180" rx="45" ry="15" fill="#388E3C" transform="rotate(-30 450 180)"/>
+  <ellipse cx="450" cy="180" rx="45" ry="15" fill="#43A047" transform="rotate(20 450 180)"/>
+  <ellipse cx="450" cy="180" rx="45" ry="15" fill="#4CAF50" transform="rotate(60 450 180)"/>
+  <!-- Title -->
+  <text x="300" y="35" text-anchor="middle" font-family="Georgia" font-size="20" fill="#1A237E" font-weight="bold">The Island of Knights and Knaves</text>
+  <!-- Character A (Knight - blue shield) -->
+  <circle cx="150" cy="240" r="30" fill="#FFE0B2" stroke="#E65100" stroke-width="2"/>
+  <circle cx="142" cy="233" r="3" fill="#3E2723"/>
+  <circle cx="158" cy="233" r="3" fill="#3E2723"/>
+  <path d="M143 248 Q150 255 157 248" stroke="#3E2723" stroke-width="2" fill="none"/>
+  <text x="150" y="205" text-anchor="middle" font-family="Arial" font-size="14" fill="#1565C0" font-weight="bold">A</text>
+  <!-- Shield icon for Knight -->
+  <path d="M120 260 L120 280 Q130 295 140 280 L140 260 Z" fill="#1565C0" stroke="#0D47A1" stroke-width="1.5"/>
+  <text x="130" y="278" text-anchor="middle" font-family="Arial" font-size="10" fill="white" font-weight="bold">T</text>
+  <!-- Speech bubble A -->
+  <rect x="55" y="130" width="190" height="50" fill="white" rx="10" stroke="#1565C0" stroke-width="2"/>
+  <polygon points="150,180 140,195 160,180" fill="white" stroke="#1565C0" stroke-width="2"/>
+  <polygon points="152,180 142,192 158,180" fill="white"/>
+  <text x="150" y="152" text-anchor="middle" font-family="Georgia" font-size="12" fill="#1A237E" font-style="italic">"At least one of us</text>
+  <text x="150" y="168" text-anchor="middle" font-family="Georgia" font-size="12" fill="#1A237E" font-style="italic">is a knave."</text>
+  <!-- Character B (Knave - red mask) -->
+  <circle cx="350" cy="240" r="30" fill="#FFE0B2" stroke="#B71C1C" stroke-width="2"/>
+  <circle cx="342" cy="233" r="3" fill="#3E2723"/>
+  <circle cx="358" cy="233" r="3" fill="#3E2723"/>
+  <path d="M343 252 Q350 245 357 252" stroke="#3E2723" stroke-width="2" fill="none"/>
+  <text x="350" y="205" text-anchor="middle" font-family="Arial" font-size="14" fill="#B71C1C" font-weight="bold">B</text>
+  <!-- Mask icon for Knave -->
+  <path d="M320 260 L320 280 Q330 295 340 280 L340 260 Z" fill="#B71C1C" stroke="#7F0000" stroke-width="1.5"/>
+  <text x="330" y="278" text-anchor="middle" font-family="Arial" font-size="10" fill="white" font-weight="bold">F</text>
+  <!-- Speech bubble B -->
+  <rect x="355" y="130" width="190" height="50" fill="white" rx="10" stroke="#B71C1C" stroke-width="2"/>
+  <polygon points="350,180 340,195 360,180" fill="white" stroke="#B71C1C" stroke-width="2"/>
+  <polygon points="352,180 342,192 358,180" fill="white"/>
+  <text x="450" y="158" text-anchor="middle" font-family="Georgia" font-size="12" fill="#B71C1C" font-style="italic">"I am a knight."</text>
+  <!-- Legend -->
+  <rect x="180" y="335" width="240" height="45" fill="white" rx="8" opacity="0.9" stroke="#455A64" stroke-width="1"/>
+  <circle cx="210" cy="348" r="6" fill="#1565C0"/>
+  <text x="222" y="352" font-family="Arial" font-size="11" fill="#1A237E">Knight = Always TRUE</text>
+  <circle cx="210" cy="368" r="6" fill="#B71C1C"/>
+  <text x="222" y="372" font-family="Arial" font-size="11" fill="#B71C1C">Knave = Always LIES</text>
+</svg>

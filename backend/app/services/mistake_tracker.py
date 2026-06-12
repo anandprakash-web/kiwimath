@@ -170,13 +170,163 @@ class RevisionItem:
 # ---------------------------------------------------------------------------
 
 class MistakeTracker:
-    """Tracks student mistakes and schedules spaced revision."""
+    """Tracks student mistakes and schedules spaced revision.
+
+    Persists to Firestore:
+    - ``users/{student_id}/revision_items/{concept_cluster}`` for RevisionItems
+    - ``users/{student_id}/mistake_log/{auto_id}`` for raw log entries
+
+    In-memory dicts serve as a read-through cache.
+    """
 
     def __init__(self):
         # student_id -> {concept_cluster -> RevisionItem}
         self._items: Dict[str, Dict[str, RevisionItem]] = {}
         # student_id -> [MistakeRecord] (raw log of all mistakes)
         self._mistake_log: Dict[str, List[MistakeRecord]] = {}
+        # Track which students have been loaded from Firestore
+        self._loaded_students: Set[str] = set()
+
+    # ------------------------------------------------------------------
+    # Firestore helpers
+    # ------------------------------------------------------------------
+
+    def _load_student(self, student_id: str) -> None:
+        """Lazily load a student's revision items and mistake log from Firestore."""
+        if student_id in self._loaded_students:
+            return
+        self._loaded_students.add(student_id)
+        try:
+            from app.services.firestore_service import _get_db
+            db = _get_db()
+            if not db:
+                return
+            # Load revision items
+            items_docs = (
+                db.collection("users")
+                .document(student_id)
+                .collection("revision_items")
+                .stream()
+            )
+            if student_id not in self._items:
+                self._items[student_id] = {}
+            for doc in items_docs:
+                data = doc.to_dict()
+                item = RevisionItem(
+                    student_id=data.get("student_id", student_id),
+                    concept_cluster=data.get("concept_cluster", doc.id),
+                    topic_id=data.get("topic_id", ""),
+                    tags=data.get("tags", []),
+                    mistake_question_ids=data.get("mistake_question_ids", []),
+                    mistake_timestamps=data.get("mistake_timestamps", []),
+                    interval_index=data.get("interval_index", 0),
+                    times_reviewed=data.get("times_reviewed", 0),
+                    times_correct=data.get("times_correct", 0),
+                    times_wrong=data.get("times_wrong", 0),
+                    last_review_time=data.get("last_review_time", 0.0),
+                    created_at=data.get("created_at", 0.0),
+                )
+                self._items[student_id][item.concept_cluster] = item
+            # Load mistake log
+            log_docs = (
+                db.collection("users")
+                .document(student_id)
+                .collection("mistake_log")
+                .order_by("timestamp")
+                .stream()
+            )
+            if student_id not in self._mistake_log:
+                self._mistake_log[student_id] = []
+            for doc in log_docs:
+                data = doc.to_dict()
+                record = MistakeRecord(
+                    student_id=data.get("student_id", student_id),
+                    question_id=data.get("question_id", ""),
+                    topic_id=data.get("topic_id", ""),
+                    concept_cluster=data.get("concept_cluster", ""),
+                    tags=data.get("tags", []),
+                    timestamp=data.get("timestamp", 0.0),
+                )
+                self._mistake_log[student_id].append(record)
+            logger.debug(
+                "Loaded %d revision items and %d mistake log entries from "
+                "Firestore for student=%s",
+                len(self._items.get(student_id, {})),
+                len(self._mistake_log.get(student_id, [])),
+                student_id,
+            )
+        except Exception as e:
+            logger.warning(
+                "Failed to load mistake data from Firestore for student=%s: %s",
+                student_id,
+                e,
+            )
+
+    def _save_item(self, student_id: str, concept_cluster: str, item: RevisionItem) -> None:
+        """Persist a single RevisionItem to Firestore."""
+        try:
+            from app.services.firestore_service import _get_db
+            db = _get_db()
+            if not db:
+                return
+            doc_id = concept_cluster.replace("/", "__")
+            data = {
+                "student_id": item.student_id,
+                "concept_cluster": item.concept_cluster,
+                "topic_id": item.topic_id,
+                "tags": item.tags,
+                "mistake_question_ids": item.mistake_question_ids,
+                "mistake_timestamps": item.mistake_timestamps,
+                "interval_index": item.interval_index,
+                "times_reviewed": item.times_reviewed,
+                "times_correct": item.times_correct,
+                "times_wrong": item.times_wrong,
+                "last_review_time": item.last_review_time,
+                "created_at": item.created_at,
+            }
+            (
+                db.collection("users")
+                .document(student_id)
+                .collection("revision_items")
+                .document(doc_id)
+                .set(data, merge=True)
+            )
+        except Exception as e:
+            logger.warning(
+                "Failed to save revision item to Firestore for student=%s cluster=%s: %s",
+                student_id,
+                concept_cluster,
+                e,
+            )
+
+    def _save_mistake_record(self, student_id: str, record: MistakeRecord) -> None:
+        """Append a single MistakeRecord to Firestore (append-only)."""
+        try:
+            from app.services.firestore_service import _get_db
+            db = _get_db()
+            if not db:
+                return
+            data = {
+                "student_id": record.student_id,
+                "question_id": record.question_id,
+                "topic_id": record.topic_id,
+                "concept_cluster": record.concept_cluster,
+                "tags": record.tags,
+                "timestamp": record.timestamp,
+            }
+            (
+                db.collection("users")
+                .document(student_id)
+                .collection("mistake_log")
+                .document()  # auto_id
+                .set(data)
+            )
+        except Exception as e:
+            logger.warning(
+                "Failed to save mistake record to Firestore for student=%s: %s",
+                student_id,
+                e,
+            )
 
     # ------------------------------------------------------------------
     # Recording mistakes
@@ -209,6 +359,9 @@ class MistakeTracker:
 
         # Use topic_id as fallback cluster if none provided
         effective_cluster = concept_cluster or f"{topic_id}/_default"
+
+        # Ensure student data is loaded from Firestore
+        self._load_student(student_id)
 
         # Store raw mistake record
         record = MistakeRecord(
@@ -251,6 +404,9 @@ class MistakeTracker:
             "Recorded mistake for %s on cluster %s (q=%s, total=%d)",
             student_id, effective_cluster, question_id, item.mistake_count,
         )
+        # Persist to Firestore
+        self._save_mistake_record(student_id, record)
+        self._save_item(student_id, effective_cluster, item)
         return item
 
     # ------------------------------------------------------------------
@@ -272,6 +428,9 @@ class MistakeTracker:
             The updated RevisionItem, or None if not found.
         """
         now = timestamp or time.time()
+
+        # Ensure student data is loaded from Firestore
+        self._load_student(student_id)
 
         if student_id not in self._items:
             return None
@@ -299,6 +458,8 @@ class MistakeTracker:
             student_id, concept_cluster, "correct" if correct else "wrong",
             item.interval_index, item.mastery_status,
         )
+        # Persist to Firestore
+        self._save_item(student_id, concept_cluster, item)
         return item
 
     # ------------------------------------------------------------------
@@ -322,6 +483,7 @@ class MistakeTracker:
         Returns:
             List of RevisionItems sorted by priority.
         """
+        self._load_student(student_id)
         if student_id not in self._items:
             return []
 
@@ -350,6 +512,7 @@ class MistakeTracker:
 
         Returns a list of pattern summaries sorted by frequency then recency.
         """
+        self._load_student(student_id)
         if student_id not in self._items:
             return []
 
@@ -363,6 +526,7 @@ class MistakeTracker:
 
     def get_all_items(self, student_id: str) -> List[RevisionItem]:
         """Get all revision items for a student (all statuses)."""
+        self._load_student(student_id)
         if student_id not in self._items:
             return []
         return list(self._items[student_id].values())

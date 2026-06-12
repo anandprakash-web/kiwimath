@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 import '../theme/kiwi_theme.dart';
 
@@ -8,7 +9,8 @@ enum OptionState { idle, selected, selectedCorrect, selectedWrong, disabled }
 ///
 /// Compact, centered text, no letter badge clutter.
 /// Inspired by competitor's clean card-per-option style.
-class OptionCard extends StatelessWidget {
+/// Tap gives a selection-click haptic + a quick 0.96 press-scale squish.
+class OptionCard extends StatefulWidget {
   final String text;
   final int index;
   final OptionState state;
@@ -23,7 +25,26 @@ class OptionCard extends StatelessWidget {
   });
 
   @override
+  State<OptionCard> createState() => _OptionCardState();
+}
+
+class _OptionCardState extends State<OptionCard> {
+  bool _pressed = false;
+
+  bool get _tappable =>
+      (widget.state == OptionState.idle ||
+          widget.state == OptionState.selected) &&
+      widget.onTap != null;
+
+  void _setPressed(bool value) {
+    if (_pressed == value) return;
+    setState(() => _pressed = value);
+  }
+
+  @override
   Widget build(BuildContext context) {
+    final state = widget.state;
+    final text = widget.text;
     Color bg;
     Color borderColor;
     Color fg;
@@ -33,52 +54,62 @@ class OptionCard extends StatelessWidget {
 
     switch (state) {
       case OptionState.selected:
-        bg = const Color(0xFFE3F2FD);
-        borderColor = const Color(0xFF448AFF);
+        bg = KiwiColors.visualBlueBg;
+        borderColor = KiwiColors.gemBlue;
         fg = KiwiColors.textDark;
         borderWidth = 2.5;
         break;
       case OptionState.selectedCorrect:
-        bg = const Color(0xFFE8F5E9);
-        borderColor = const Color(0xFF00C853);
+        bg = KiwiColors.correctBg;
+        borderColor = KiwiColors.correct;
         fg = KiwiColors.textDark;
         borderWidth = 2.5;
         trailingIcon = Icons.check_circle;
-        iconColor = const Color(0xFF00C853);
+        iconColor = KiwiColors.correct;
         break;
       case OptionState.selectedWrong:
-        bg = const Color(0xFFFFEBEE);
-        borderColor = const Color(0xFFFF5252);
+        bg = KiwiColors.wrongBg;
+        borderColor = KiwiColors.coral;
         fg = KiwiColors.textDark;
         borderWidth = 2.5;
         trailingIcon = Icons.cancel;
-        iconColor = const Color(0xFFFF5252);
+        iconColor = KiwiColors.coral;
         break;
       case OptionState.disabled:
-        bg = Colors.grey.shade50;
-        borderColor = Colors.grey.shade200;
-        fg = Colors.grey.shade400;
+        bg = KiwiColors.creamDark;
+        borderColor = KiwiColors.pathLocked;
+        fg = KiwiColors.textMuted;
         borderWidth = 1.5;
         break;
       case OptionState.idle:
         bg = KiwiColors.cardBg;
-        borderColor = const Color(0xFFE0E0E0);
+        borderColor = KiwiColors.pathLocked;
         fg = KiwiColors.textDark;
         borderWidth = 1.5;
     }
 
     return GestureDetector(
-      onTap: (state == OptionState.idle || state == OptionState.selected)
-          ? onTap
+      onTapDown: _tappable ? (_) => _setPressed(true) : null,
+      onTapUp: _tappable ? (_) => _setPressed(false) : null,
+      onTapCancel: _tappable ? () => _setPressed(false) : null,
+      onTap: _tappable
+          ? () {
+              HapticFeedback.selectionClick();
+              widget.onTap?.call();
+            }
           : null,
-      child: AnimatedContainer(
+      child: AnimatedScale(
+        scale: _pressed ? 0.96 : 1.0,
+        duration: const Duration(milliseconds: 90),
+        curve: Curves.easeOut,
+        child: AnimatedContainer(
         duration: const Duration(milliseconds: 200),
         curve: Curves.easeOut,
-        padding: const EdgeInsets.symmetric(vertical: 14, horizontal: 12),
+        padding: EdgeInsets.symmetric(vertical: KiwiSpacing.md + 2, horizontal: KiwiSpacing.md),
         decoration: BoxDecoration(
           color: bg,
           border: Border.all(color: borderColor, width: borderWidth),
-          borderRadius: BorderRadius.circular(16),
+          borderRadius: BorderRadius.circular(KiwiSpacing.lg),
           boxShadow: state == OptionState.idle
               ? [
                   BoxShadow(
@@ -114,6 +145,7 @@ class OptionCard extends StatelessWidget {
               ],
             ],
           ),
+        ),
         ),
       ),
     );

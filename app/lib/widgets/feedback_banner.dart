@@ -49,10 +49,10 @@ class WrongAnswerSheet extends StatelessWidget {
 
     if (isScaffoldHint && scaffoldLevel == 1) {
       // Level 1: gentle hint — light blue
-      bgColor = const Color(0xFFE3F2FD);          // KiwiColors.visualBlueBg
-      borderColor = const Color(0xFF90CAF9);       // KiwiColors.visualBlueBorder
-      titleColor = const Color(0xFF1565C0);
-      hintTextColor = const Color(0xFF1976D2);
+      bgColor = KiwiColors.visualBlueBg;
+      borderColor = KiwiColors.visualBlueBorder;
+      titleColor = KiwiColors.sky;
+      hintTextColor = KiwiColors.sky;
       iconData = Icons.lightbulb_outline;
       titleText = 'Here\'s a hint';
     } else if (isScaffoldHint && scaffoldLevel == 2) {
@@ -60,7 +60,7 @@ class WrongAnswerSheet extends StatelessWidget {
       bgColor = KiwiColors.warmOrangeBg;
       borderColor = KiwiColors.warmOrange;
       titleColor = KiwiColors.warmOrangeDark;
-      hintTextColor = const Color(0xFFBF360C);
+      hintTextColor = KiwiColors.kiwiPrimaryDark;
       iconData = Icons.warning_amber_rounded;
       titleText = 'Watch out for this';
     } else {
@@ -68,7 +68,7 @@ class WrongAnswerSheet extends StatelessWidget {
       bgColor = KiwiColors.warmOrangeBg;
       borderColor = KiwiColors.warmOrange;
       titleColor = KiwiColors.warmOrangeDark;
-      hintTextColor = const Color(0xFFBF360C);
+      hintTextColor = KiwiColors.kiwiPrimaryDark;
       iconData = null; // use emoji instead
       titleText = 'Not quite!';
     }
@@ -131,7 +131,7 @@ class WrongAnswerSheet extends StatelessWidget {
                   onPressed: onTryAgain,
                   style: ElevatedButton.styleFrom(
                     backgroundColor: scaffoldLevel == 1
-                        ? const Color(0xFF42A5F5)
+                        ? KiwiColors.sky
                         : KiwiColors.warmOrange,
                     foregroundColor: Colors.white,
                     padding: const EdgeInsets.symmetric(vertical: 11),
@@ -178,7 +178,7 @@ class WrongAnswerSheet extends StatelessWidget {
                       onPressed: onTryAgain,
                       style: OutlinedButton.styleFrom(
                         foregroundColor: KiwiColors.warmOrangeDark,
-                        side: const BorderSide(color: Color(0xFFFFB74D), width: 2),
+                        side: const BorderSide(color: KiwiColors.amber, width: 2),
                         padding: const EdgeInsets.symmetric(vertical: 11),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(10),
@@ -261,11 +261,11 @@ class CorrectAnswerBar extends StatelessWidget {
     return Container(
       decoration: const BoxDecoration(
         gradient: LinearGradient(
-          colors: [Color(0xFFB9F6CA), Color(0xFF69F0AE)],
+          colors: [KiwiColors.correctBg, KiwiColors.kiwiGreenLight],
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
         ),
-        border: Border(top: BorderSide(color: Color(0xFF00E676), width: 3)),
+        border: Border(top: BorderSide(color: KiwiColors.correct, width: 3)),
       ),
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
       child: SafeArea(
@@ -276,13 +276,13 @@ class CorrectAnswerBar extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                const Icon(Icons.check_circle, color: Color(0xFF00962E), size: 26),
+                const Icon(Icons.check_circle, color: KiwiColors.kiwiGreenDark, size: 26),
                 const SizedBox(width: 8),
                 Text(
                   _celebrationText,
                   style: const TextStyle(
                     fontWeight: FontWeight.w800,
-                    color: Color(0xFF00962E),
+                    color: KiwiColors.kiwiGreenDark,
                     fontSize: 18,
                   ),
                 ),
@@ -291,12 +291,12 @@ class CorrectAnswerBar extends StatelessWidget {
                   padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 3),
                   decoration: BoxDecoration(
                     gradient: const LinearGradient(
-                      colors: [Color(0xFFAA00FF), Color(0xFF7C4DFF)],
+                      colors: [KiwiColors.xpPurple, KiwiColors.indigo],
                     ),
-                    borderRadius: BorderRadius.circular(16),
+                    borderRadius: BorderRadius.circular(KiwiSpacing.lg),
                     boxShadow: [
                       BoxShadow(
-                        color: const Color(0xFFAA00FF).withOpacity(0.3),
+                        color: KiwiColors.xpPurple.withOpacity(0.3),
                         blurRadius: 6,
                         offset: const Offset(0, 2),
                       ),
@@ -326,14 +326,14 @@ class CorrectAnswerBar extends StatelessWidget {
               child: ElevatedButton(
                 onPressed: onContinue,
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: const Color(0xFF00C853),
+                  backgroundColor: KiwiColors.correct,
                   foregroundColor: Colors.white,
                   padding: const EdgeInsets.symmetric(vertical: 13),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(14),
                   ),
                   elevation: 3,
-                  shadowColor: const Color(0xFF00C853).withOpacity(0.4),
+                  shadowColor: KiwiColors.correct.withOpacity(0.4),
                   textStyle: const TextStyle(
                     fontSize: 15,
                     fontWeight: FontWeight.w700,
@@ -371,7 +371,7 @@ class FeedbackBanner extends StatelessWidget {
         : KiwiColors.warmOrangeBg;
     final border = tone == BannerTone.success
         ? KiwiColors.kiwiGreen
-        : const Color(0xFFFFB74D);
+        : KiwiColors.amber;
     final icon = tone == BannerTone.success
         ? Icons.emoji_events
         : Icons.lightbulb_outline;

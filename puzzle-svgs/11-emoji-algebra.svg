@@ -1,0 +1,62 @@
+<svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Emoji Algebra Decoder (Everything Kids style) -->
+  <defs>
+    <linearGradient id="funBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E8EAF6"/>
+      <stop offset="100%" style="stop-color:#C5CAE9"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="600" height="400" fill="url(#funBg)" rx="12"/>
+  <rect x="5" y="5" width="590" height="390" fill="none" stroke="#7C4DFF" stroke-width="3" rx="10" stroke-dasharray="12,6"/>
+  <text x="300" y="35" text-anchor="middle" font-family="Georgia" font-size="22" fill="#311B92" font-weight="bold">Emoji Math!</text>
+  <text x="300" y="55" text-anchor="middle" font-family="Arial" font-size="13" fill="#5C6BC0">Each emoji stands for a number. Can you crack the code?</text>
+  <!-- Equation 1: Apple + Apple + Apple = 12 -->
+  <rect x="40" y="75" width="520" height="55" fill="white" rx="10" stroke="#E8EAF6" stroke-width="2"/>
+  <text x="60" y="110" font-family="Arial" font-size="30">🍎</text>
+  <text x="120" y="110" text-anchor="middle" font-family="Arial" font-size="24" fill="#311B92" font-weight="bold">+</text>
+  <text x="140" y="110" font-family="Arial" font-size="30">🍎</text>
+  <text x="200" y="110" text-anchor="middle" font-family="Arial" font-size="24" fill="#311B92" font-weight="bold">+</text>
+  <text x="220" y="110" font-family="Arial" font-size="30">🍎</text>
+  <text x="310" y="110" text-anchor="middle" font-family="Arial" font-size="24" fill="#311B92" font-weight="bold">=</text>
+  <text x="370" y="110" text-anchor="middle" font-family="Georgia" font-size="32" fill="#E53935" font-weight="bold">12</text>
+  <text x="520" y="108" text-anchor="middle" font-family="Arial" font-size="12" fill="#9E9E9E">Equation 1</text>
+  <!-- Equation 2: Apple + Banana + Banana = 16 -->
+  <rect x="40" y="140" width="520" height="55" fill="white" rx="10" stroke="#E8EAF6" stroke-width="2"/>
+  <text x="60" y="175" font-family="Arial" font-size="30">🍎</text>
+  <text x="120" y="175" text-anchor="middle" font-family="Arial" font-size="24" fill="#311B92" font-weight="bold">+</text>
+  <text x="140" y="175" font-family="Arial" font-size="30">🍌</text>
+  <text x="200" y="175" text-anchor="middle" font-family="Arial" font-size="24" fill="#311B92" font-weight="bold">+</text>
+  <text x="220" y="175" font-family="Arial" font-size="30">🍌</text>
+  <text x="310" y="175" text-anchor="middle" font-family="Arial" font-size="24" fill="#311B92" font-weight="bold">=</text>
+  <text x="370" y="175" text-anchor="middle" font-family="Georgia" font-size="32" fill="#E53935" font-weight="bold">16</text>
+  <text x="520" y="173" text-anchor="middle" font-family="Arial" font-size="12" fill="#9E9E9E">Equation 2</text>
+  <!-- Equation 3: Banana + Cherry + Cherry = 10 -->
+  <rect x="40" y="205" width="520" height="55" fill="white" rx="10" stroke="#E8EAF6" stroke-width="2"/>
+  <text x="60" y="240" font-family="Arial" font-size="30">🍌</text>
+  <text x="120" y="240" text-anchor="middle" font-family="Arial" font-size="24" fill="#311B92" font-weight="bold">+</text>
+  <text x="140" y="240" font-family="Arial" font-size="30">🍒</text>
+  <text x="200" y="240" text-anchor="middle" font-family="Arial" font-size="24" fill="#311B92" font-weight="bold">+</text>
+  <text x="220" y="240" font-family="Arial" font-size="30">🍒</text>
+  <text x="310" y="240" text-anchor="middle" font-family="Arial" font-size="24" fill="#311B92" font-weight="bold">=</text>
+  <text x="370" y="240" text-anchor="middle" font-family="Georgia" font-size="32" fill="#E53935" font-weight="bold">10</text>
+  <text x="520" y="238" text-anchor="middle" font-family="Arial" font-size="12" fill="#9E9E9E">Equation 3</text>
+  <!-- Question: Apple + Banana + Cherry = ? -->
+  <rect x="40" y="275" width="520" height="55" fill="#FFF9C4" rx="10" stroke="#FFD600" stroke-width="2"/>
+  <text x="60" y="310" font-family="Arial" font-size="30">🍎</text>
+  <text x="120" y="310" text-anchor="middle" font-family="Arial" font-size="24" fill="#311B92" font-weight="bold">+</text>
+  <text x="140" y="310" font-family="Arial" font-size="30">🍌</text>
+  <text x="200" y="310" text-anchor="middle" font-family="Arial" font-size="24" fill="#311B92" font-weight="bold">+</text>
+  <text x="220" y="310" font-family="Arial" font-size="30">🍒</text>
+  <text x="310" y="310" text-anchor="middle" font-family="Arial" font-size="24" fill="#311B92" font-weight="bold">=</text>
+  <text x="370" y="310" text-anchor="middle" font-family="Georgia" font-size="36" fill="#FF6F00" font-weight="bold">?</text>
+  <!-- Answer boxes -->
+  <rect x="430" y="280" width="50" height="40" fill="white" rx="6" stroke="#7C4DFF" stroke-width="2"/>
+  <text x="455" y="305" text-anchor="middle" font-family="Arial" font-size="12" fill="#BDBDBD">A: 11</text>
+  <rect x="490" y="280" width="50" height="40" fill="white" rx="6" stroke="#7C4DFF" stroke-width="2"/>
+  <text x="515" y="305" text-anchor="middle" font-family="Arial" font-size="12" fill="#BDBDBD">B: 12</text>
+  <!-- Hint area -->
+  <rect x="130" y="348" width="340" height="42" fill="#311B92" rx="8" opacity="0.85"/>
+  <text x="300" y="367" text-anchor="middle" font-family="Georgia" font-size="13" fill="#FFD700">Start with Equation 1 to find 🍎!</text>
+  <text x="300" y="382" text-anchor="middle" font-family="Arial" font-size="11" fill="#B388FF">Then use what you know to solve the rest.</text>
+</svg>

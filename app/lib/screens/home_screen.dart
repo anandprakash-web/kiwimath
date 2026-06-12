@@ -74,16 +74,16 @@ class HomeScreen extends StatelessWidget {
   // ---------------------------------------------------------------------------
 
   /// Orange gradient — Kiwimath brand.
-  static const _greenStart = Color(0xFFFF6D00);
-  static const _greenEnd = Color(0xFFE65100);
+  static const _greenStart = KiwiColors.kiwiPrimary;
+  static const _greenEnd = KiwiColors.kiwiPrimaryDark;
 
   /// Level color tiers.
-  static const _greenBorder = Color(0xFFFF6D00);
-  static const _greenBg = Color(0xFFFFF3E0);
-  static const _blueBorder = Color(0xFF1E88E5);
-  static const _blueBg = Color(0xFFE3F2FD);
-  static const _purpleBorder = Color(0xFF8E24AA);
-  static const _purpleBg = Color(0xFFF3E5F5);
+  static const _greenBorder = KiwiColors.kiwiPrimary;
+  static const _greenBg = KiwiColors.kiwiPrimaryLight;
+  static const _blueBorder = KiwiColors.sky;
+  static const _blueBg = KiwiColors.visualBlueBg;
+  static const _purpleBorder = KiwiColors.indigo;
+  static const _purpleBg = Color(0xFFF3E5F5); // decorative — no token
 
   /// Badge milestones — every 50 questions.
   static const _badgeMilestones = <int, String>{
@@ -127,23 +127,23 @@ class HomeScreen extends StatelessWidget {
 
   /// Topic background colors.
   static const _topicIconBgs = <String, Color>{
-    'count': Color(0xFFE3F2FD),
-    'number': Color(0xFFE3F2FD),
-    'arithmetic': Color(0xFFFFF3E0),
-    'add': Color(0xFFFFF3E0),
-    'subtract': Color(0xFFFFF3E0),
-    'pattern': Color(0xFFFFF8E1),
-    'logic': Color(0xFFF3E5F5),
-    'puzzle': Color(0xFFF3E5F5),
-    'shape': Color(0xFFE8F5E9),
-    'geo': Color(0xFFE8F5E9),
-    'spatial': Color(0xFFFCE4EC),
-    '3d': Color(0xFFFCE4EC),
-    'word': Color(0xFFE8EAF6),
-    'story': Color(0xFFE8EAF6),
-    'data': Color(0xFFE1F5FE),
-    'graph': Color(0xFFE1F5FE),
-    'measur': Color(0xFFE0F2F1),
+    'count': KiwiColors.visualBlueBg,
+    'number': KiwiColors.visualBlueBg,
+    'arithmetic': KiwiColors.kiwiPrimaryLight,
+    'add': KiwiColors.kiwiPrimaryLight,
+    'subtract': KiwiColors.kiwiPrimaryLight,
+    'pattern': KiwiColors.visualYellowBg,
+    'logic': Color(0xFFF3E5F5), // decorative — no token
+    'puzzle': Color(0xFFF3E5F5), // decorative — no token
+    'shape': KiwiColors.correctBg,
+    'geo': KiwiColors.correctBg,
+    'spatial': Color(0xFFFCE4EC), // decorative — no token
+    '3d': Color(0xFFFCE4EC), // decorative — no token
+    'word': Color(0xFFE8EAF6), // decorative — no token
+    'story': Color(0xFFE8EAF6), // decorative — no token
+    'data': KiwiColors.visualBlueBg,
+    'graph': KiwiColors.visualBlueBg,
+    'measur': Color(0xFFE0F2F1), // decorative — no token
   };
 
   // ---------------------------------------------------------------------------
@@ -169,7 +169,7 @@ class HomeScreen extends StatelessWidget {
         return entry.value;
       }
     }
-    return const Color(0xFFF5F5F5);
+    return KiwiColors.creamDark;
   }
 
   (Color, Color) _levelColors(int level) {
@@ -335,7 +335,7 @@ class HomeScreen extends StatelessWidget {
       decoration: BoxDecoration(
         color: tier.colors.cardBg,
         borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: Colors.grey.withOpacity(0.12)),
+        border: Border.all(color: KiwiColors.pathLocked.withOpacity(0.5)),
       ),
       child: Row(
         mainAxisSize: MainAxisSize.min,
@@ -476,7 +476,7 @@ class HomeScreen extends StatelessWidget {
       decoration: BoxDecoration(
         color: tier.colors.cardBg,
         borderRadius: BorderRadius.circular(14),
-        border: Border.all(color: Colors.grey.withOpacity(0.1)),
+        border: Border.all(color: KiwiColors.pathLocked.withOpacity(0.4)),
       ),
       child: Row(
         children: [
@@ -489,7 +489,7 @@ class HomeScreen extends StatelessWidget {
                 CircularProgressIndicator(
                   value: progress,
                   strokeWidth: 4,
-                  backgroundColor: Colors.grey.shade200,
+                  backgroundColor: KiwiColors.pathLocked,
                   valueColor: const AlwaysStoppedAnimation<Color>(_greenStart),
                 ),
                 Center(
@@ -544,7 +544,7 @@ class HomeScreen extends StatelessWidget {
       decoration: BoxDecoration(
         color: tier.colors.cardBg,
         borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: const Color(0xFFFFD54F).withOpacity(0.3)),
+        border: Border.all(color: KiwiColors.gemGold.withOpacity(0.3)),
       ),
       child: Row(
         children: [
@@ -553,7 +553,7 @@ class HomeScreen extends StatelessWidget {
             height: 28,
             decoration: const BoxDecoration(
               gradient: LinearGradient(
-                colors: [Color(0xFFFFD54F), Color(0xFFFFB300)],
+                colors: [KiwiColors.gemGold, KiwiColors.amber],
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
               ),
@@ -596,7 +596,7 @@ class HomeScreen extends StatelessWidget {
                     minHeight: 4,
                     backgroundColor: tier.colors.background,
                     valueColor: const AlwaysStoppedAnimation<Color>(
-                      Color(0xFFFFB300),
+                      KiwiColors.amber,
                     ),
                   ),
                 ),
@@ -656,7 +656,7 @@ class HomeScreen extends StatelessWidget {
         decoration: BoxDecoration(
           color: tier.colors.cardBg,
           borderRadius: BorderRadius.circular(12),
-          border: Border.all(color: Colors.grey.withOpacity(0.15)),
+          border: Border.all(color: KiwiColors.pathLocked.withOpacity(0.6)),
         ),
         child: Text(
           'No topics available yet. Check your connection.',
@@ -696,7 +696,7 @@ class HomeScreen extends StatelessWidget {
           borderRadius: BorderRadius.circular(12),
           border: Border.all(
             color: isLocked
-                ? Colors.grey.withOpacity(0.12)
+                ? KiwiColors.pathLocked.withOpacity(0.5)
                 : borderColor.withOpacity(0.12),
           ),
         ),
@@ -706,7 +706,7 @@ class HomeScreen extends StatelessWidget {
               width: 30,
               height: 30,
               decoration: BoxDecoration(
-                color: isLocked ? Colors.grey.shade100 : iconBg,
+                color: isLocked ? KiwiColors.pathLocked.withOpacity(0.4) : iconBg,
                 borderRadius: BorderRadius.circular(8),
               ),
               alignment: Alignment.center,
@@ -768,7 +768,7 @@ class HomeScreen extends StatelessWidget {
               Icon(
                 Icons.lock_rounded,
                 size: 18,
-                color: Colors.grey.shade400,
+                color: KiwiColors.textMuted,
               ),
           ],
         ),

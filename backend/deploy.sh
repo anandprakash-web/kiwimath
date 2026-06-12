@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # ============================================================================
-# Kiwimath API — Deploy to Google Cloud Run (v2-only)
+# Kiwimath API — Deploy to Google Cloud Run (v2 + v4 content)
 #
 # Prerequisites:
 #   1. gcloud CLI installed and authenticated
@@ -19,7 +19,7 @@ GCP_REGION="${GCP_REGION:-asia-south1}"       # Mumbai — closest to Indian use
 SERVICE_NAME="${SERVICE_NAME:-kiwimath-api}"
 IMAGE_NAME="gcr.io/${GCP_PROJECT}/${SERVICE_NAME}"
 
-echo "=== Kiwimath API Deploy (v2) ==="
+echo "=== Kiwimath API Deploy (v2 + v4) ==="
 echo "Project:  $GCP_PROJECT"
 echo "Region:   $GCP_REGION"
 echo "Service:  $SERVICE_NAME"
@@ -59,6 +59,20 @@ if [ "$V2_FOUND" = false ]; then
     exit 1
 fi
 
+# Copy v4 content (adaptive questions — ~32K questions across all grades).
+V4_FOUND=false
+for v4_path in "../content-v4" "../../content-v4"; do
+    if [ -d "$v4_path" ]; then
+        cp -r "$v4_path" "$TMPDIR/backend/content-v4"
+        echo "    (v4 content baked from $v4_path)"
+        V4_FOUND=true
+        break
+    fi
+done
+if [ "$V4_FOUND" = false ]; then
+    echo "WARNING: No v4 content folder found. Deploying without adaptive questions."
+fi
+
 # Build from the temp context with content included.
 cd "$TMPDIR/backend"
 cat >> Dockerfile <<'BAKE'
@@ -67,24 +81,41 @@ cat >> Dockerfile <<'BAKE'
 COPY content-v2/ /content-v2/
 BAKE
 
+# Add v4 content if found.
+if [ "$V4_FOUND" = true ]; then
+cat >> Dockerfile <<'BAKE'
+
+# Bake v4 adaptive content into image (added by deploy.sh).
+COPY content-v4/ /content-v4/
+BAKE
+fi
+
 gcloud builds submit --tag "$IMAGE_NAME" .
 cd - > /dev/null
 rm -rf "$TMPDIR"
 
 # Step 4: Deploy to Cloud Run.
+# NOTE (security): the following env vars must also be set on the service
+# (one-time, via `gcloud run services update kiwimath-api --region $GCP_REGION \
+#   --update-env-vars KEY=VALUE` — do NOT hardcode secrets in this script):
+#   KIWIMATH_INTERNAL_API_KEY  — shared secret for the Cloud Scheduler clan cron
+#                                (X-Internal-Key header; see deploy/clan_cron.yaml)
+#   KIWIMATH_ADMIN_EMAILS      — comma-separated admin emails for /admin, /editor, /cms
+#   KIWIMATH_CORS_ORIGINS      — optional override of allowed web origins
+# Never set KIWIMATH_AUTH_DISABLED in production.
 echo ">>> Deploying to Cloud Run..."
 gcloud run deploy "$SERVICE_NAME" \
     --image "$IMAGE_NAME" \
     --region "$GCP_REGION" \
     --platform managed \
     --allow-unauthenticated \
-    --memory 1Gi \
+    --memory 2Gi \
     --cpu 1 \
     --min-instances 1 \
     --max-instances 10 \
     --concurrency 80 \
     --timeout 300 \
-    --set-env-vars "KIWIMATH_V2_CONTENT_DIR=/content-v2" \
+    --set-env-vars "KIWIMATH_V2_CONTENT_DIR=/content-v2,KIWIMATH_V4_CONTENT_DIR=/content-v4,KIWIMATH_ENV=production" \
     --port 8000
 
 # Step 5: Print the URL.

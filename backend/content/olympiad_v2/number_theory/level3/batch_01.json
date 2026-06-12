@@ -1,0 +1,872 @@
+[
+  {
+    "id": "nt-l3-mi-001",
+    "topic": "modular_intro",
+    "stem": "What is the remainder when 2\u00b2\u2070 is divided by 3?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: Find the pattern of remainders when powers of 2 are divided by 3.\nStep 2: 2\u00b9 = 2 \u2192 remainder 2. 2\u00b2 = 4 \u2192 remainder 1. 2\u00b3 = 8 \u2192 remainder 2. 2\u2074 = 16 \u2192 remainder 1.\nStep 3: The pattern repeats with period 2: remainder is 2 for odd powers, 1 for even powers.\nStep 4: Since 20 is even, 2\u00b2\u2070 mod 3 = 1.\nAnswer: 1.",
+    "difficulty": 2,
+    "tags": [
+      "number_theory",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 1
+  },
+  {
+    "id": "nt-l3-mi-002",
+    "topic": "modular_intro",
+    "stem": "Find the last digit of 7\u2074\u00b3.",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: The last digit depends on 7\u207f mod 10. Find the cycle.\nStep 2: 7\u00b9 \u2192 7, 7\u00b2 \u2192 9, 7\u00b3 \u2192 3, 7\u2074 \u2192 1, 7\u2075 \u2192 7, ...\nStep 3: The pattern of last digits is {7, 9, 3, 1} with period 4.\nStep 4: 43 = 4 \u00d7 10 + 3, so 43 mod 4 = 3.\nStep 5: The last digit of 7\u2074\u00b3 is the same as 7\u00b3, which is 3.\nAnswer: 3.",
+    "difficulty": 2,
+    "tags": [
+      "number_theory",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 3
+  },
+  {
+    "id": "nt-l3-mi-003",
+    "topic": "modular_intro",
+    "stem": "What is the remainder when 123456 is divided by 9?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: A number mod 9 equals the sum of its digits mod 9.\nStep 2: Sum of digits = 1 + 2 + 3 + 4 + 5 + 6 = 21.\nStep 3: 21 mod 9: 2 + 1 = 3.\nStep 4: Remainder = 3.\nAnswer: 3.",
+    "difficulty": 1,
+    "tags": [
+      "number_theory",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 3
+  },
+  {
+    "id": "nt-l3-mi-004",
+    "topic": "modular_intro",
+    "stem": "What is the last digit of 3\u00b9\u2070\u2070?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: Pattern of last digits of powers of 3: 3\u00b9\u21923, 3\u00b2\u21929, 3\u00b3\u21927, 3\u2074\u21921, 3\u2075\u21923, ...\nStep 2: Cycle length = 4: {3, 9, 7, 1}.\nStep 3: 100 mod 4 = 0, which corresponds to the 4th position in the cycle.\nStep 4: Last digit = 1.\nAnswer: 1.",
+    "difficulty": 2,
+    "tags": [
+      "number_theory",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 1
+  },
+  {
+    "id": "nt-l3-mi-005",
+    "topic": "modular_intro",
+    "stem": "What is the remainder when 1000 is divided by 7?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: 1000 \u00f7 7 = 142 remainder r.\nStep 2: 142 \u00d7 7 = 994.\nStep 3: 1000 \u2212 994 = 6.\nAnswer: 6.",
+    "difficulty": 1,
+    "tags": [
+      "number_theory",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 6
+  },
+  {
+    "id": "nt-l3-mi-006",
+    "topic": "modular_intro",
+    "stem": "Today is Monday. What day will it be 100 days from now?",
+    "visual_svg": null,
+    "answer_type": "mcq",
+    "correct_answer": 0,
+    "solution": "Step 1: Days of the week repeat every 7 days.\nStep 2: 100 mod 7 = 100 \u2212 14\u00d77 = 100 \u2212 98 = 2.\nStep 3: 2 days after Monday is Wednesday.\nAnswer: A) Wednesday.",
+    "difficulty": 1,
+    "tags": [
+      "number_theory",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken.",
+      "1": "Review the question carefully and try again.",
+      "2": "Review the question carefully and try again.",
+      "3": "Review the question carefully and try again."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [
+      "A) Wednesday",
+      "B) Thursday",
+      "C) Friday",
+      "D) Saturday"
+    ],
+    "interaction_mode": "mcq"
+  },
+  {
+    "id": "nt-l3-mi-007",
+    "topic": "modular_intro",
+    "stem": "What is the last digit of 2\u2075\u2070 + 3\u2075\u2070?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: Last digit of 2^50: The cycle of last digits of powers of 2 is {2, 4, 8, 6} with period 4. Since 50 mod 4 = 2, the last digit of 2^50 is 4.\nStep 2: Last digit of 3^50: The cycle of last digits of powers of 3 is {3, 9, 7, 1} with period 4. Since 50 mod 4 = 2, the last digit of 3^50 is 9.\nStep 3: Last digit of the sum = last digit of (4 + 9) = last digit of 13 = 3.\nAnswer: 3.",
+    "difficulty": 3,
+    "tags": [
+      "number_theory",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 3
+  },
+  {
+    "id": "nt-l3-mi-008",
+    "topic": "modular_intro",
+    "stem": "If a number leaves remainder 3 when divided by 5 and remainder 2 when divided by 3, what is the smallest positive such number?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: The number \u2261 3 (mod 5), so it could be 3, 8, 13, 18, ...\nStep 2: Check which of these \u2261 2 (mod 3):\n- 3 mod 3 = 0. \u2717\n- 8 mod 3 = 2. \u2713\nStep 3: The smallest is 8.\nAnswer: 8.",
+    "difficulty": 2,
+    "tags": [
+      "number_theory",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 8
+  },
+  {
+    "id": "nt-l3-mi-009",
+    "topic": "modular_intro",
+    "stem": "What is the remainder when 11\u00b9\u00b9 is divided by 5?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: 11 mod 5 = 1.\nStep 2: So 11\u00b9\u00b9 mod 5 = 1\u00b9\u00b9 mod 5 = 1.\nAnswer: 1.",
+    "difficulty": 1,
+    "tags": [
+      "number_theory",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 1
+  },
+  {
+    "id": "nt-l3-mi-010",
+    "topic": "modular_intro",
+    "stem": "What is the last two digits of 99\u00b2? In other words, what is 99\u00b2 mod 100?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: 99 = 100 \u2212 1.\nStep 2: 99\u00b2 = (100 \u2212 1)\u00b2 = 10000 \u2212 200 + 1 = 9801.\nStep 3: 9801 mod 100 = 1.\nStep 4: The last two digits are 01, so the remainder is 1.\nAnswer: 1.",
+    "difficulty": 2,
+    "tags": [
+      "number_theory",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 1
+  },
+  {
+    "id": "nt-l3-db-001",
+    "topic": "diophantine_basic",
+    "stem": "Find the number of positive integer solutions to 3x + 5y = 26.",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: From 3x + 5y = 26, we get x = (26 \u2212 5y)/3.\nStep 2: For x to be a positive integer, (26 \u2212 5y) must be divisible by 3 and positive.\nStep 3: Try y = 1: x = (26 \u2212 5)/3 = 21/3 = 7. \u2713 (x=7, y=1)\nStep 4: Try y = 2: x = (26 \u2212 10)/3 = 16/3. Not an integer. \u2717\nStep 5: Try y = 3: x = (26 \u2212 15)/3 = 11/3. Not an integer. \u2717\nStep 6: Try y = 4: x = (26 \u2212 20)/3 = 6/3 = 2. \u2713 (x=2, y=4)\nStep 7: y = 5: x = (26 \u2212 25)/3 = 1/3. Not an integer. \u2717\nStep 8: y \u2265 6: 5y \u2265 30 > 26, so x would be negative. Stop.\nAnswer: 2 solutions.",
+    "difficulty": 2,
+    "tags": [
+      "number_theory",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 2
+  },
+  {
+    "id": "nt-l3-db-002",
+    "topic": "diophantine_basic",
+    "stem": "A stamp collector uses 5\u00a2 and 8\u00a2 stamps. How many ways can he make exactly 40\u00a2?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: 5a + 8b = 40 where a, b are non-negative integers.\nStep 2: Try b = 0: 5a = 40 \u2192 a = 8. \u2713\nStep 3: Try b = 1: 5a = 32 \u2192 a = 6.4. \u2717\nStep 4: Try b = 2: 5a = 24 \u2192 a = 4.8. \u2717\nStep 5: Try b = 3: 5a = 16 \u2192 a = 3.2. \u2717\nStep 6: Try b = 4: 5a = 8 \u2192 a = 1.6. \u2717\nStep 7: Try b = 5: 5a = 0 \u2192 a = 0. \u2713\nStep 8: b \u2265 6 gives 8b \u2265 48 > 40. Stop.\nAnswer: 2 ways (8 five-cent or 5 eight-cent stamps).",
+    "difficulty": 2,
+    "tags": [
+      "number_theory",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 2
+  },
+  {
+    "id": "nt-l3-db-003",
+    "topic": "diophantine_basic",
+    "stem": "Find positive integers x and y such that 2x + 7y = 30. What is x + y for the solution with the largest y?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: 2x + 7y = 30. For x to be a positive integer, (30 \u2212 7y) must be even and positive.\nStep 2: 7y must be even subtracted from 30 to give an even result. 30 is even, 7y is even only when y is even.\nStep 3: Try y = 2: 2x = 30 \u2212 14 = 16, x = 8. \u2713\nStep 4: Try y = 4: 2x = 30 \u2212 28 = 2, x = 1. \u2713 (largest y)\nStep 5: y = 6: 7(6) = 42 > 30. \u2717\nStep 6: For y = 4: x + y = 1 + 4 = 5.\nAnswer: 5.",
+    "difficulty": 2,
+    "tags": [
+      "number_theory",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 5
+  },
+  {
+    "id": "nt-l3-db-004",
+    "topic": "diophantine_basic",
+    "stem": "Can you pay exactly 19\u00a2 using only 4\u00a2 and 6\u00a2 coins?",
+    "visual_svg": null,
+    "answer_type": "mcq",
+    "correct_answer": 0,
+    "solution": "Step 1: 4a + 6b = 19 where a, b are non-negative integers.\nStep 2: Notice that 4a is always even and 6b is always even.\nStep 3: Even + even = even, but 19 is odd.\nStep 4: It is impossible to make an odd number with sums of even numbers.\nAnswer: B) No.",
+    "difficulty": 1,
+    "tags": [
+      "number_theory",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken.",
+      "1": "Review the question carefully and try again."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [
+      "A) Yes",
+      "B) No"
+    ],
+    "interaction_mode": "mcq"
+  },
+  {
+    "id": "nt-l3-db-005",
+    "topic": "diophantine_basic",
+    "stem": "A store sells erasers for 3 rupees each and pens for 5 rupees each. Ravi spends exactly 31 rupees. How many erasers did he buy if he bought more pens than erasers?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: 3e + 5p = 31, where e, p are positive integers.\nStep 2: e = (31 \u2212 5p)/3. Need 31 \u2212 5p > 0 and divisible by 3.\nStep 3: Try p = 1: e = 26/3. \u2717\nStep 4: p = 2: e = 21/3 = 7. \u2713 But p < e, doesn't satisfy p > e.\nStep 5: p = 4: e = 11/3. \u2717\nStep 6: p = 5: e = 6/3 = 2. \u2713 And p(5) > e(2). \u2713\nStep 7: p = 7: 5(7) = 35 > 31. \u2717\nAnswer: 2 erasers.",
+    "difficulty": 2,
+    "tags": [
+      "number_theory",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 2
+  },
+  {
+    "id": "nt-l3-db-006",
+    "topic": "diophantine_basic",
+    "stem": "How many non-negative integer solutions does x + y + z = 5 have if x, y, z can each be 0, 1, 2, 3, 4, or 5?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: We need non-negative integers x, y, z with x + y + z = 5.\nStep 2: This is a stars and bars problem: C(5 + 3 \u2212 1, 3 \u2212 1) = C(7, 2) = 21.\nStep 3: Since each variable can be at most 5 (and their sum is 5), no restriction is violated.\nAnswer: 21.",
+    "difficulty": 3,
+    "tags": [
+      "number_theory",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 21
+  },
+  {
+    "id": "nt-l3-db-007",
+    "topic": "diophantine_basic",
+    "stem": "Find all positive integer solutions to x + y = 7 where x \u2264 y. How many solutions are there?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: x + y = 7 with x \u2264 y and both positive.\nStep 2: x = 1, y = 6. \u2713\nStep 3: x = 2, y = 5. \u2713\nStep 4: x = 3, y = 4. \u2713\nStep 5: x = 4, y = 3. But x > y, so \u2717.\nAnswer: 3 solutions.",
+    "difficulty": 1,
+    "tags": [
+      "number_theory",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 3
+  },
+  {
+    "id": "nt-l3-db-008",
+    "topic": "diophantine_basic",
+    "stem": "How many ways can you make 25 cents using only 5-cent and 10-cent coins?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: 5a + 10b = 25 where a, b are non-negative integers.\nStep 2: Simplify by dividing by 5: a + 2b = 5.\nStep 3: Try b = 0: a = 5. Valid. (Five 5-cent coins)\nStep 4: Try b = 1: a = 3. Valid. (Three 5-cent + one 10-cent)\nStep 5: Try b = 2: a = 1. Valid. (One 5-cent + two 10-cent)\nStep 6: Try b = 3: a = 5 - 6 = -1. Not valid.\nAnswer: 3 ways.",
+    "difficulty": 2,
+    "tags": [
+      "number_theory",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 3
+  },
+  {
+    "id": "nt-l3-db-009",
+    "topic": "diophantine_basic",
+    "stem": "Find the largest amount of money that CANNOT be made using only 3\u00a2 and 5\u00a2 stamps.",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: This is the Frobenius/Chicken McNugget problem for coprime numbers a and b.\nStep 2: The largest number that cannot be represented as 3a + 5b (non-negative integers) is ab \u2212 a \u2212 b.\nStep 3: = 3 \u00d7 5 \u2212 3 \u2212 5 = 15 \u2212 8 = 7.\nStep 4: Verify: 7 = 3a + 5b has no non-negative solution. 5(1) = 5, need 2 more from 3s \u2014 impossible. 5(0) = 0, need 7 from 3s \u2014 impossible. \u2713\nStep 5: 8 = 3(1) + 5(1). \u2713 So 7 is indeed the largest that cannot be made.\nAnswer: 7.",
+    "difficulty": 3,
+    "tags": [
+      "number_theory",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 7
+  },
+  {
+    "id": "nt-l3-db-010",
+    "topic": "diophantine_basic",
+    "stem": "How many positive integer solutions does 4x + y = 20 have?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: y = 20 \u2212 4x. Need y > 0, so 20 \u2212 4x > 0, meaning x < 5.\nStep 2: Also x > 0.\nStep 3: x = 1: y = 16. \u2713\nStep 4: x = 2: y = 12. \u2713\nStep 5: x = 3: y = 8. \u2713\nStep 6: x = 4: y = 4. \u2713\nStep 7: x = 5: y = 0. Not positive. \u2717\nAnswer: 4 solutions.",
+    "difficulty": 1,
+    "tags": [
+      "number_theory",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 4
+  },
+  {
+    "id": "nt-l3-pn-001",
+    "topic": "perfect_numbers",
+    "stem": "What is the 7th triangular number?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: The nth triangular number = n(n+1)/2.\nStep 2: 7th triangular number = 7 \u00d7 8 / 2 = 56 / 2 = 28.\nAnswer: 28.",
+    "difficulty": 1,
+    "tags": [
+      "number_theory",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 28
+  },
+  {
+    "id": "nt-l3-pn-002",
+    "topic": "perfect_numbers",
+    "stem": "Is 28 a perfect number? (A perfect number equals the sum of its proper divisors.)",
+    "visual_svg": null,
+    "answer_type": "mcq",
+    "correct_answer": 0,
+    "solution": "Step 1: Find the proper divisors of 28 (all divisors except 28 itself).\nStep 2: Divisors of 28: 1, 2, 4, 7, 14, 28.\nStep 3: Proper divisors: 1, 2, 4, 7, 14.\nStep 4: Sum = 1 + 2 + 4 + 7 + 14 = 28.\nStep 5: Since the sum equals the number, 28 is a perfect number.\nAnswer: A) Yes.",
+    "difficulty": 1,
+    "tags": [
+      "number_theory",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken.",
+      "1": "Review the question carefully and try again."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [
+      "A) Yes",
+      "B) No"
+    ],
+    "interaction_mode": "mcq"
+  },
+  {
+    "id": "nt-l3-pn-003",
+    "topic": "perfect_numbers",
+    "stem": "How many perfect squares are between 50 and 200 (not including 50 and 200)?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: \u221a50 \u2248 7.07, so the smallest perfect square > 50 is 8\u00b2 = 64.\nStep 2: \u221a200 \u2248 14.14, so the largest perfect square < 200 is 14\u00b2 = 196.\nStep 3: Perfect squares between 50 and 200: 64, 81, 100, 121, 144, 169, 196.\nStep 4: These are 8\u00b2, 9\u00b2, 10\u00b2, 11\u00b2, 12\u00b2, 13\u00b2, 14\u00b2 = 7 perfect squares.\nAnswer: 7.",
+    "difficulty": 1,
+    "tags": [
+      "number_theory",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 7
+  },
+  {
+    "id": "nt-l3-pn-004",
+    "topic": "perfect_numbers",
+    "stem": "The first perfect number is 6. What is the second perfect number?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: A perfect number equals the sum of its proper divisors.\nStep 2: 6: divisors 1, 2, 3. Sum = 6. \u2713 (1st perfect number)\nStep 3: Check numbers after 6:\n- 8: 1+2+4 = 7. \u2717\n- 10: 1+2+5 = 8. \u2717\n- 12: 1+2+3+4+6 = 16. \u2717\n- 28: 1+2+4+7+14 = 28. \u2713\nStep 4: The 2nd perfect number is 28.\nAnswer: 28.",
+    "difficulty": 2,
+    "tags": [
+      "number_theory",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 28
+  },
+  {
+    "id": "nt-l3-pn-005",
+    "topic": "perfect_numbers",
+    "stem": "What is the 10th triangular number?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: The nth triangular number = n(n+1)/2.\nStep 2: T(10) = 10 \u00d7 11 / 2 = 110 / 2 = 55.\nAnswer: 55.",
+    "difficulty": 1,
+    "tags": [
+      "number_theory",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 55
+  },
+  {
+    "id": "nt-l3-pn-006",
+    "topic": "perfect_numbers",
+    "stem": "How many perfect cubes are less than 100?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: List perfect cubes: 1\u00b3 = 1, 2\u00b3 = 8, 3\u00b3 = 27, 4\u00b3 = 64, 5\u00b3 = 125.\nStep 2: 125 > 100, so we stop.\nStep 3: Perfect cubes less than 100: 1, 8, 27, 64.\nAnswer: 4.",
+    "difficulty": 1,
+    "tags": [
+      "number_theory",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 4
+  },
+  {
+    "id": "nt-l3-pn-007",
+    "topic": "perfect_numbers",
+    "stem": "Is the sum of the first 5 triangular numbers itself a triangular number? If yes, which one?",
+    "visual_svg": null,
+    "answer_type": "mcq",
+    "correct_answer": 0,
+    "solution": "Step 1: First 5 triangular numbers: T(1)=1, T(2)=3, T(3)=6, T(4)=10, T(5)=15.\nStep 2: Sum = 1 + 3 + 6 + 10 + 15 = 35.\nStep 3: Check if 35 is triangular: T(7) = 28, T(8) = 36. Since 35 is not equal to any triangular number, it is NOT triangular.\nAnswer: C) No.",
+    "difficulty": 3,
+    "tags": [
+      "number_theory",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken.",
+      "1": "Review the question carefully and try again.",
+      "2": "Review the question carefully and try again.",
+      "3": "Review the question carefully and try again."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [
+      "A) Yes, the 5th",
+      "B) Yes, the 7th",
+      "C) No",
+      "D) Yes, the 10th"
+    ],
+    "interaction_mode": "mcq"
+  },
+  {
+    "id": "nt-l3-pn-008",
+    "topic": "perfect_numbers",
+    "stem": "Which of the following is both a perfect square and a triangular number: 1, 9, 25, 36?",
+    "visual_svg": null,
+    "answer_type": "mcq",
+    "correct_answer": 0,
+    "solution": "Step 1: Triangular numbers: 1, 3, 6, 10, 15, 21, 28, 36, 45, ...\nStep 2: Check each:\n- 1: Perfect square (1\u00b2) \u2713 and Triangular (T(1)) \u2713.\n- 9: Perfect square (3\u00b2) \u2713 but NOT triangular. \u2717\n- 25: Perfect square (5\u00b2) \u2713 but NOT triangular. \u2717\n- 36: Perfect square (6\u00b2) \u2713 and Triangular (T(8)) \u2713.\nAnswer: A) 1 and 36.",
+    "difficulty": 2,
+    "tags": [
+      "number_theory",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken.",
+      "1": "Review the question carefully and try again.",
+      "2": "Review the question carefully and try again.",
+      "3": "Review the question carefully and try again."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [
+      "A) 1 and 36",
+      "B) 9 and 25",
+      "C) 36 only",
+      "D) 1 only"
+    ],
+    "interaction_mode": "mcq"
+  },
+  {
+    "id": "nt-l3-pn-009",
+    "topic": "perfect_numbers",
+    "stem": "A number is called 'abundant' if the sum of its proper divisors is greater than the number. Is 12 abundant?",
+    "visual_svg": null,
+    "answer_type": "mcq",
+    "correct_answer": 0,
+    "solution": "Step 1: Proper divisors of 12: 1, 2, 3, 4, 6.\nStep 2: Sum = 1 + 2 + 3 + 4 + 6 = 16.\nStep 3: 16 > 12, so 12 is abundant.\nAnswer: A) Yes.",
+    "difficulty": 1,
+    "tags": [
+      "number_theory",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken.",
+      "1": "Review the question carefully and try again."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [
+      "A) Yes",
+      "B) No"
+    ],
+    "interaction_mode": "mcq"
+  },
+  {
+    "id": "nt-l3-pn-010",
+    "topic": "perfect_numbers",
+    "stem": "What is the sum of the first 20 positive integers? (Hint: use the triangular number formula.)",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: The sum of the first n positive integers = T(n) = n(n+1)/2.\nStep 2: T(20) = 20 \u00d7 21 / 2 = 420 / 2 = 210.\nAnswer: 210.",
+    "difficulty": 1,
+    "tags": [
+      "number_theory",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 210
+  }
+]

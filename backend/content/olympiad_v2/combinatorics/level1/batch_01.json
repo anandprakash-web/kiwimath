@@ -1,0 +1,918 @@
+[
+  {
+    "id": "comb-l1-cb-001",
+    "topic": "counting_basics",
+    "stem": "There are 10 fence posts in a straight line. How many sections of fence are between them?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "The number of fence sections is always one less than the number of posts. With 10 posts, there are 10 - 1 = 9 sections between them.",
+    "difficulty": 1,
+    "tags": [
+      "fencepost",
+      "intervals",
+      "counting"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "comb-l1-cb-002",
+    "topic": "counting_basics",
+    "stem": "A baker cuts a long baguette into 7 pieces. How many cuts did the baker make?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "To get 7 pieces from one baguette, you need one fewer cut than pieces. So the baker made 7 - 1 = 6 cuts.",
+    "difficulty": 1,
+    "tags": [
+      "fencepost",
+      "cutting",
+      "counting"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "comb-l1-cb-003",
+    "topic": "counting_basics",
+    "stem": "Lamp posts are placed every 4 meters along a straight road that is 20 meters long. A lamp post is placed at both ends. How many lamp posts are there?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "The road is 20 meters long and posts are placed every 4 meters. The number of gaps is 20 / 4 = 5. Since posts are at both ends, the number of posts is 5 + 1 = 6.",
+    "difficulty": 2,
+    "tags": [
+      "fencepost",
+      "intervals",
+      "division"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "comb-l1-cb-004",
+    "topic": "counting_basics",
+    "stem": "A clock strikes once at 1 o'clock, twice at 2 o'clock, and so on. How many times does it strike from 1 o'clock to 5 o'clock (including both)?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "At 1 o'clock it strikes 1 time, at 2 o'clock 2 times, at 3 o'clock 3 times, at 4 o'clock 4 times, at 5 o'clock 5 times. Total = 1 + 2 + 3 + 4 + 5 = 15.",
+    "difficulty": 2,
+    "tags": [
+      "counting",
+      "addition",
+      "clock"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "comb-l1-cb-005",
+    "topic": "counting_basics",
+    "stem": "12 children sit in a circle. How many gaps are there between the children?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "When objects are arranged in a circle, the number of gaps equals the number of objects. With 12 children in a circle, there are 12 gaps between them.",
+    "difficulty": 2,
+    "tags": [
+      "fencepost",
+      "circle",
+      "counting"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "comb-l1-cb-006",
+    "topic": "counting_basics",
+    "stem": "Flags are placed every 5 meters along a 30-meter path. A flag is placed at the start but NOT at the end. How many flags are there?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "The path is 30 meters and flags are every 5 meters. Number of intervals = 30 / 5 = 6. With a flag at the start but not the end, the number of flags equals the number of intervals = 6. (Flags at 0m, 5m, 10m, 15m, 20m, 25m.)",
+    "difficulty": 3,
+    "tags": [
+      "fencepost",
+      "intervals",
+      "counting"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "comb-l1-cb-007",
+    "topic": "counting_basics",
+    "stem": "Mia has a ribbon that is 18 centimeters long. She wants to cut it into pieces that are each 3 centimeters long. How many cuts does she need to make?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "The ribbon is 18 cm and each piece is 3 cm, so she gets 18 / 3 = 6 pieces. The number of cuts is one fewer than the number of pieces: 6 - 1 = 5.",
+    "difficulty": 1,
+    "tags": [
+      "fencepost",
+      "cutting",
+      "division"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "comb-l1-cb-008",
+    "topic": "counting_basics",
+    "stem": "A staircase goes from the 1st floor to the 4th floor. There are 9 steps between each floor. How many steps are there in total?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Going from floor 1 to floor 4 means climbing 3 sets of stairs (1 to 2, 2 to 3, 3 to 4). Each set has 9 steps. Total = 3 x 9 = 27 steps.",
+    "difficulty": 2,
+    "tags": [
+      "fencepost",
+      "intervals",
+      "multiplication"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "comb-l1-cb-009",
+    "topic": "counting_basics",
+    "stem": "A gardener plants a bush at the start and end of a 16-meter garden path, and also at every 2 meters in between. How many bushes does the gardener plant?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "The path is 16 meters with bushes every 2 meters. Number of intervals = 16 / 2 = 8. With bushes at both ends, the number of bushes = 8 + 1 = 9.",
+    "difficulty": 2,
+    "tags": [
+      "fencepost",
+      "intervals",
+      "counting"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "comb-l1-cb-010",
+    "topic": "counting_basics",
+    "stem": "Pages 5 through 12 of a book are torn out. How many pages were torn out?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "From page 5 to page 12 inclusive, the count is 12 - 5 + 1 = 8 pages.",
+    "difficulty": 1,
+    "tags": [
+      "counting",
+      "inclusive",
+      "intervals"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "comb-l1-po-001",
+    "topic": "patterns_observation",
+    "stem": "What comes next in the pattern: 2, 5, 8, 11, ___?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Each number increases by 3: 2+3=5, 5+3=8, 8+3=11. So the next number is 11+3 = 14.",
+    "difficulty": 1,
+    "tags": [
+      "number_pattern",
+      "arithmetic_sequence"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "comb-l1-po-002",
+    "topic": "patterns_observation",
+    "stem": "In the pattern RGBRGBRGB..., what is the 11th letter?",
+    "visual_svg": null,
+    "answer_type": "mcq",
+    "correct_answer": 0,
+    "solution": "The pattern RGB repeats every 3 letters. To find the 11th letter, divide 11 by 3: 11 = 3 x 3 + 2. The remainder is 2, so the 11th letter is the 2nd letter in the pattern, which is G.",
+    "difficulty": 2,
+    "tags": [
+      "repeating_pattern",
+      "modular"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken.",
+      "1": "Review the question carefully and try again.",
+      "2": "Review the question carefully and try again."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [
+      "A) R",
+      "B) G",
+      "C) B"
+    ],
+    "interaction_mode": "mcq"
+  },
+  {
+    "id": "comb-l1-po-003",
+    "topic": "patterns_observation",
+    "stem": "What shape comes next: triangle, square, pentagon, ___?",
+    "visual_svg": null,
+    "answer_type": "mcq",
+    "correct_answer": 0,
+    "solution": "The pattern shows shapes with 3 sides, 4 sides, then 5 sides. Each shape has one more side than the previous. The next shape has 6 sides, which is a hexagon.",
+    "difficulty": 1,
+    "tags": [
+      "shape_pattern",
+      "sequence"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken.",
+      "1": "Review the question carefully and try again.",
+      "2": "Review the question carefully and try again.",
+      "3": "Review the question carefully and try again."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [
+      "A) Circle",
+      "B) Hexagon",
+      "C) Rectangle",
+      "D) Star"
+    ],
+    "interaction_mode": "mcq"
+  },
+  {
+    "id": "comb-l1-po-004",
+    "topic": "patterns_observation",
+    "stem": "Look at this number pattern: 1, 1, 2, 3, 5, 8, ___. What is the next number?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Each number is the sum of the two numbers before it: 1+1=2, 1+2=3, 2+3=5, 3+5=8. So the next number is 5+8 = 13.",
+    "difficulty": 3,
+    "tags": [
+      "fibonacci",
+      "number_pattern"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "comb-l1-po-005",
+    "topic": "patterns_observation",
+    "stem": "The pattern is: 3, 6, 12, 24, ___. What number comes next?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Each number is doubled (multiplied by 2): 3x2=6, 6x2=12, 12x2=24. So the next number is 24x2 = 48.",
+    "difficulty": 2,
+    "tags": [
+      "doubling",
+      "geometric_pattern"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "comb-l1-po-006",
+    "topic": "patterns_observation",
+    "stem": "Anika draws dots in rows: Row 1 has 1 dot, Row 2 has 3 dots, Row 3 has 5 dots, Row 4 has 7 dots. How many dots will Row 6 have?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Each row has 2 more dots than the previous row. Row 5 has 7+2 = 9 dots. Row 6 has 9+2 = 11 dots.",
+    "difficulty": 2,
+    "tags": [
+      "number_pattern",
+      "odd_numbers"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "comb-l1-po-007",
+    "topic": "patterns_observation",
+    "stem": "In the repeating pattern XOXXOXXOXXOX..., what is the 15th symbol?",
+    "visual_svg": null,
+    "answer_type": "mcq",
+    "correct_answer": 0,
+    "solution": "The repeating block is XOX (3 symbols). 15 divided by 3 = 5 with remainder 0. A remainder of 0 means the 15th symbol is the last symbol in the block, which is X.",
+    "difficulty": 3,
+    "tags": [
+      "repeating_pattern",
+      "modular"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken.",
+      "1": "Review the question carefully and try again."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [
+      "A) X",
+      "B) O"
+    ],
+    "interaction_mode": "mcq"
+  },
+  {
+    "id": "comb-l1-po-008",
+    "topic": "patterns_observation",
+    "stem": "What number is missing? 20, 17, 14, ___, 8, 5.",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Each number decreases by 3: 20-3=17, 17-3=14. The missing number is 14-3 = 11. Check: 11-3=8 and 8-3=5. Correct!",
+    "difficulty": 1,
+    "tags": [
+      "number_pattern",
+      "decreasing"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "comb-l1-po-009",
+    "topic": "patterns_observation",
+    "stem": "Look at the pattern: 1, 4, 9, 16, ___. What comes next?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "These are square numbers: 1x1=1, 2x2=4, 3x3=9, 4x4=16. The next is 5x5 = 25.",
+    "difficulty": 3,
+    "tags": [
+      "square_numbers",
+      "number_pattern"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "comb-l1-po-010",
+    "topic": "patterns_observation",
+    "stem": "A tower of blocks is built: Level 1 uses 1 block, Level 2 uses 3 blocks, Level 3 uses 6 blocks, Level 4 uses 10 blocks. How many blocks does Level 5 use?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "The differences between levels are: 2, 3, 4. Each difference increases by 1. The next difference is 5, so Level 5 uses 10 + 5 = 15 blocks. (These are triangular numbers.)",
+    "difficulty": 3,
+    "tags": [
+      "triangular_numbers",
+      "number_pattern"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "comb-l1-sl-001",
+    "topic": "simple_logic",
+    "stem": "Amy is taller than Ben. Cara is shorter than Ben. Who is the shortest?",
+    "visual_svg": null,
+    "answer_type": "mcq",
+    "correct_answer": 0,
+    "solution": "Amy is taller than Ben, so: Amy > Ben. Cara is shorter than Ben, so: Ben > Cara. Putting them in order from tallest to shortest: Amy > Ben > Cara. Cara is the shortest.",
+    "difficulty": 1,
+    "tags": [
+      "ordering",
+      "comparison",
+      "logic"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken.",
+      "1": "Review the question carefully and try again.",
+      "2": "Review the question carefully and try again."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [
+      "A) Amy",
+      "B) Ben",
+      "C) Cara"
+    ],
+    "interaction_mode": "mcq"
+  },
+  {
+    "id": "comb-l1-sl-002",
+    "topic": "simple_logic",
+    "stem": "Three friends ran a race. Dev did not finish last. Ema finished before Dev. Who finished first?",
+    "visual_svg": null,
+    "answer_type": "mcq",
+    "correct_answer": 0,
+    "solution": "Ema finished before Dev, so Ema was ahead of Dev. Dev did not finish last, so someone else was last. Since Ema was before Dev and Dev was not last, the order must be: 1st Ema, 2nd Dev, 3rd Fay.",
+    "difficulty": 1,
+    "tags": [
+      "ordering",
+      "logic",
+      "race"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken.",
+      "1": "Review the question carefully and try again.",
+      "2": "Review the question carefully and try again."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [
+      "A) Dev",
+      "B) Ema",
+      "C) Fay"
+    ],
+    "interaction_mode": "mcq"
+  },
+  {
+    "id": "comb-l1-sl-003",
+    "topic": "simple_logic",
+    "stem": "I am a number between 10 and 20. I am odd. The sum of my digits is 8. What number am I?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Odd numbers between 10 and 20: 11, 13, 15, 17, 19. Check digit sums: 1+1=2, 1+3=4, 1+5=6, 1+7=8, 1+9=10. The number with digit sum 8 is 17.",
+    "difficulty": 2,
+    "tags": [
+      "number_puzzle",
+      "digit_sum",
+      "logic"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "comb-l1-sl-004",
+    "topic": "simple_logic",
+    "stem": "There are three boxes. One has only apples, one has only bananas, and one has both apples and bananas. The labels on ALL three boxes are WRONG. You pick one fruit from the box labeled 'Both' and it is an apple. What does the box labeled 'Bananas' actually contain?",
+    "visual_svg": null,
+    "answer_type": "mcq",
+    "correct_answer": 0,
+    "solution": "All labels are wrong. The box labeled 'Both' is not 'Both', and you drew an apple, so it must be the 'Only Apples' box. Now the box labeled 'Apples' cannot be apples (wrong label) and the apples box is taken, so it must be 'Only Bananas'. That leaves the box labeled 'Bananas' which must be 'Both'.",
+    "difficulty": 3,
+    "tags": [
+      "logic_puzzle",
+      "mislabeled_boxes"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken.",
+      "1": "Review the question carefully and try again.",
+      "2": "Review the question carefully and try again."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [
+      "A) Only apples",
+      "B) Only bananas",
+      "C) Both apples and bananas"
+    ],
+    "interaction_mode": "mcq"
+  },
+  {
+    "id": "comb-l1-sl-005",
+    "topic": "simple_logic",
+    "stem": "Gita has more stickers than Hari. Hari has more stickers than Ira. Ira has 5 stickers. Gita has 11 stickers. How many stickers could Hari have?",
+    "visual_svg": null,
+    "answer_type": "mcq",
+    "correct_answer": 0,
+    "solution": "Hari has more than Ira (5) and fewer than Gita (11). So Hari has between 6 and 10 stickers. The only option in that range is 7.",
+    "difficulty": 2,
+    "tags": [
+      "inequality",
+      "logic",
+      "range"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken.",
+      "1": "Review the question carefully and try again.",
+      "2": "Review the question carefully and try again.",
+      "3": "Review the question carefully and try again."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [
+      "A) 4",
+      "B) 7",
+      "C) 12",
+      "D) 5"
+    ],
+    "interaction_mode": "mcq"
+  },
+  {
+    "id": "comb-l1-sl-006",
+    "topic": "simple_logic",
+    "stem": "Three children are standing in a line. Jay is not first. Kim is right after Jay. Lee is first. What position is Jay in?",
+    "visual_svg": null,
+    "answer_type": "mcq",
+    "correct_answer": 0,
+    "solution": "Lee is first. Jay is not first, and Kim is right after Jay. The only option is Jay = 2nd and Kim = 3rd.",
+    "difficulty": 2,
+    "tags": [
+      "ordering",
+      "position",
+      "logic"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken.",
+      "1": "Review the question carefully and try again.",
+      "2": "Review the question carefully and try again."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [
+      "A) 1st",
+      "B) 2nd",
+      "C) 3rd"
+    ],
+    "interaction_mode": "mcq"
+  },
+  {
+    "id": "comb-l1-sl-007",
+    "topic": "simple_logic",
+    "stem": "A dog, a cat, and a rabbit weigh different amounts. The dog is heavier than the rabbit. The cat is lighter than the rabbit. Which animal is the heaviest?",
+    "visual_svg": null,
+    "answer_type": "mcq",
+    "correct_answer": 0,
+    "solution": "Dog > Rabbit (dog is heavier than rabbit). Cat < Rabbit (cat is lighter than rabbit). So the order from heaviest to lightest is: Dog > Rabbit > Cat. The dog is the heaviest.",
+    "difficulty": 1,
+    "tags": [
+      "ordering",
+      "comparison",
+      "logic"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken.",
+      "1": "Review the question carefully and try again.",
+      "2": "Review the question carefully and try again."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [
+      "A) Dog",
+      "B) Cat",
+      "C) Rabbit"
+    ],
+    "interaction_mode": "mcq"
+  },
+  {
+    "id": "comb-l1-sl-008",
+    "topic": "simple_logic",
+    "stem": "Three children each have a different favorite color: red, blue, or green. Nora does not like red. Omar does not like red or green. What is Nora's favorite color?",
+    "visual_svg": null,
+    "answer_type": "mcq",
+    "correct_answer": 0,
+    "solution": "Omar does not like red or green, so Omar likes blue. Nora does not like red, and blue is taken by Omar, so Nora likes green. That leaves red for the third child.",
+    "difficulty": 2,
+    "tags": [
+      "elimination",
+      "logic_puzzle"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken.",
+      "1": "Review the question carefully and try again.",
+      "2": "Review the question carefully and try again."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [
+      "A) Red",
+      "B) Blue",
+      "C) Green"
+    ],
+    "interaction_mode": "mcq"
+  },
+  {
+    "id": "comb-l1-sl-009",
+    "topic": "simple_logic",
+    "stem": "Priya says: 'If it is raining, I will carry an umbrella.' It is raining today. What do we know for sure?",
+    "visual_svg": null,
+    "answer_type": "mcq",
+    "correct_answer": 0,
+    "solution": "Priya said if it rains, she will carry an umbrella. It is raining. So we know for sure that Priya will carry an umbrella.",
+    "difficulty": 1,
+    "tags": [
+      "if_then",
+      "conditional_logic"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken.",
+      "1": "Review the question carefully and try again.",
+      "2": "Review the question carefully and try again.",
+      "3": "Review the question carefully and try again."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [
+      "A) Priya will carry an umbrella",
+      "B) Priya will not carry an umbrella",
+      "C) Priya will wear a raincoat",
+      "D) We cannot tell"
+    ],
+    "interaction_mode": "mcq"
+  },
+  {
+    "id": "comb-l1-sl-010",
+    "topic": "simple_logic",
+    "stem": "Ravi is older than Sam. Sam is older than Tina. Tina is 6 years old. Ravi is 10 years old. Sam's age is an even number. How old is Sam?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Sam is older than Tina (6) and younger than Ravi (10). So Sam's age is 7, 8, or 9. Sam's age is even, so Sam is 8 years old.",
+    "difficulty": 2,
+    "tags": [
+      "inequality",
+      "logic",
+      "even_odd"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  }
+]

@@ -1,0 +1,78 @@
+<svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Maze/Path Puzzle (Yoshigahara style) -->
+  <defs>
+    <linearGradient id="wallGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#37474F"/>
+      <stop offset="100%" style="stop-color:#263238"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="600" height="400" fill="#ECEFF1" rx="12"/>
+  <text x="300" y="30" text-anchor="middle" font-family="Georgia" font-size="20" fill="#1A237E" font-weight="bold">Number Maze</text>
+  <text x="300" y="50" text-anchor="middle" font-family="Georgia" font-size="12" fill="#546E7A" font-style="italic">Find a path from START to END that sums to exactly 30!</text>
+  <!-- Grid maze 5x5 -->
+  <!-- Outer border -->
+  <rect x="125" y="65" width="350" height="280" fill="none" stroke="#37474F" stroke-width="3" rx="4"/>
+  <!-- Grid cells 5x5 (70x56 each) -->
+  <!-- Row 1 -->
+  <rect x="125" y="65" width="70" height="56" fill="white" stroke="#B0BEC5" stroke-width="1"/>
+  <text x="160" y="100" text-anchor="middle" font-family="Arial" font-size="22" fill="#1565C0" font-weight="bold">3</text>
+  <rect x="195" y="65" width="70" height="56" fill="white" stroke="#B0BEC5" stroke-width="1"/>
+  <text x="230" y="100" text-anchor="middle" font-family="Arial" font-size="22" fill="#1565C0" font-weight="bold">7</text>
+  <rect x="265" y="65" width="70" height="56" fill="white" stroke="#B0BEC5" stroke-width="1"/>
+  <text x="300" y="100" text-anchor="middle" font-family="Arial" font-size="22" fill="#1565C0" font-weight="bold">2</text>
+  <rect x="335" y="65" width="70" height="56" fill="white" stroke="#B0BEC5" stroke-width="1"/>
+  <text x="370" y="100" text-anchor="middle" font-family="Arial" font-size="22" fill="#1565C0" font-weight="bold">8</text>
+  <rect x="405" y="65" width="70" height="56" fill="white" stroke="#B0BEC5" stroke-width="1"/>
+  <text x="440" y="100" text-anchor="middle" font-family="Arial" font-size="22" fill="#1565C0" font-weight="bold">1</text>
+  <!-- Row 2 -->
+  <rect x="125" y="121" width="70" height="56" fill="white" stroke="#B0BEC5" stroke-width="1"/>
+  <text x="160" y="156" text-anchor="middle" font-family="Arial" font-size="22" fill="#1565C0" font-weight="bold">5</text>
+  <rect x="195" y="121" width="70" height="56" fill="#37474F" stroke="#B0BEC5" stroke-width="1"/>
+  <rect x="265" y="121" width="70" height="56" fill="white" stroke="#B0BEC5" stroke-width="1"/>
+  <text x="300" y="156" text-anchor="middle" font-family="Arial" font-size="22" fill="#1565C0" font-weight="bold">9</text>
+  <rect x="335" y="121" width="70" height="56" fill="#37474F" stroke="#B0BEC5" stroke-width="1"/>
+  <rect x="405" y="121" width="70" height="56" fill="white" stroke="#B0BEC5" stroke-width="1"/>
+  <text x="440" y="156" text-anchor="middle" font-family="Arial" font-size="22" fill="#1565C0" font-weight="bold">4</text>
+  <!-- Row 3 -->
+  <rect x="125" y="177" width="70" height="56" fill="white" stroke="#B0BEC5" stroke-width="1"/>
+  <text x="160" y="212" text-anchor="middle" font-family="Arial" font-size="22" fill="#1565C0" font-weight="bold">6</text>
+  <rect x="195" y="177" width="70" height="56" fill="white" stroke="#B0BEC5" stroke-width="1"/>
+  <text x="230" y="212" text-anchor="middle" font-family="Arial" font-size="22" fill="#1565C0" font-weight="bold">1</text>
+  <rect x="265" y="177" width="70" height="56" fill="#37474F" stroke="#B0BEC5" stroke-width="1"/>
+  <rect x="335" y="177" width="70" height="56" fill="white" stroke="#B0BEC5" stroke-width="1"/>
+  <text x="370" y="212" text-anchor="middle" font-family="Arial" font-size="22" fill="#1565C0" font-weight="bold">3</text>
+  <rect x="405" y="177" width="70" height="56" fill="white" stroke="#B0BEC5" stroke-width="1"/>
+  <text x="440" y="212" text-anchor="middle" font-family="Arial" font-size="22" fill="#1565C0" font-weight="bold">7</text>
+  <!-- Row 4 -->
+  <rect x="125" y="233" width="70" height="56" fill="#37474F" stroke="#B0BEC5" stroke-width="1"/>
+  <rect x="195" y="233" width="70" height="56" fill="white" stroke="#B0BEC5" stroke-width="1"/>
+  <text x="230" y="268" text-anchor="middle" font-family="Arial" font-size="22" fill="#1565C0" font-weight="bold">8</text>
+  <rect x="265" y="233" width="70" height="56" fill="white" stroke="#B0BEC5" stroke-width="1"/>
+  <text x="300" y="268" text-anchor="middle" font-family="Arial" font-size="22" fill="#1565C0" font-weight="bold">5</text>
+  <rect x="335" y="233" width="70" height="56" fill="white" stroke="#B0BEC5" stroke-width="1"/>
+  <text x="370" y="268" text-anchor="middle" font-family="Arial" font-size="22" fill="#1565C0" font-weight="bold">2</text>
+  <rect x="405" y="233" width="70" height="56" fill="#37474F" stroke="#B0BEC5" stroke-width="1"/>
+  <!-- Row 5 -->
+  <rect x="125" y="289" width="70" height="56" fill="white" stroke="#B0BEC5" stroke-width="1"/>
+  <text x="160" y="324" text-anchor="middle" font-family="Arial" font-size="22" fill="#1565C0" font-weight="bold">4</text>
+  <rect x="195" y="289" width="70" height="56" fill="white" stroke="#B0BEC5" stroke-width="1"/>
+  <text x="230" y="324" text-anchor="middle" font-family="Arial" font-size="22" fill="#1565C0" font-weight="bold">6</text>
+  <rect x="265" y="289" width="70" height="56" fill="#37474F" stroke="#B0BEC5" stroke-width="1"/>
+  <rect x="335" y="289" width="70" height="56" fill="white" stroke="#B0BEC5" stroke-width="1"/>
+  <text x="370" y="324" text-anchor="middle" font-family="Arial" font-size="22" fill="#1565C0" font-weight="bold">9</text>
+  <rect x="405" y="289" width="70" height="56" fill="white" stroke="#B0BEC5" stroke-width="1"/>
+  <text x="440" y="324" text-anchor="middle" font-family="Arial" font-size="22" fill="#1565C0" font-weight="bold">5</text>
+  <!-- START marker -->
+  <rect x="125" y="60" width="70" height="18" fill="#4CAF50" rx="4"/>
+  <text x="160" y="73" text-anchor="middle" font-family="Arial" font-size="11" fill="white" font-weight="bold">START</text>
+  <!-- END marker -->
+  <rect x="405" y="345" width="70" height="18" fill="#F44336" rx="4"/>
+  <text x="440" y="358" text-anchor="middle" font-family="Arial" font-size="11" fill="white" font-weight="bold">END</text>
+  <!-- Legend -->
+  <rect x="20" y="370" width="560" height="25" fill="#455A64" rx="6" opacity="0.8"/>
+  <rect x="35" y="377" width="12" height="12" fill="#37474F" rx="2"/>
+  <text x="55" y="387" font-family="Arial" font-size="11" fill="#E0E0E0">= Wall (can't pass)</text>
+  <text x="200" y="387" font-family="Arial" font-size="11" fill="#E0E0E0">Move: up, down, left, right only</text>
+  <text x="430" y="387" font-family="Arial" font-size="11" fill="#FFD700" font-weight="bold">Target Sum: 30</text>
+</svg>

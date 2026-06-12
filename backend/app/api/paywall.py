@@ -13,6 +13,7 @@ Topics 3-8 cost 500 Kiwi Coins each, or are free with a premium subscription.
 
 from __future__ import annotations
 
+import logging
 import threading
 from typing import Any, Dict, List, Optional, Set
 
@@ -20,6 +21,13 @@ from fastapi import APIRouter, HTTPException, Query
 from pydantic import BaseModel, Field, field_validator
 
 from app.services.gamification import gamification
+from app.services.play_store_verifier import (
+    PACKAGE_NAME,
+    verify_one_time_purchase,
+    verify_subscription,
+)
+
+logger = logging.getLogger(__name__)
 
 router = APIRouter(prefix="/v2/paywall", tags=["v2-paywall"])
 
@@ -136,6 +144,17 @@ class UnlockRequest(BaseModel):
 class RestoreRequest(BaseModel):
     user_id: str
     subscription_id: str
+    purchase_token: str
+
+
+class VerifyReceiptRequest(BaseModel):
+    subscription_id: Optional[str] = None
+    product_id: Optional[str] = None
+    purchase_token: str
+    purchase_type: str = Field(
+        default="subscription",
+        description="Type of purchase: 'subscription' or 'one_time'",
+    )
 
 
 # ---------------------------------------------------------------------------
@@ -244,13 +263,44 @@ def unlock_topic(req: UnlockRequest):
 def restore_purchases(req: RestoreRequest):
     """Restore purchases / activate premium subscription.
 
-    In production this would verify the subscription with Play Store or
-    App Store. For now it simply marks the user as premium, unlocking
-    all topics.
+    Verifies the subscription purchase token with the Google Play Developer
+    API before granting premium access.  If credentials are not configured
+    (dev/staging), verification is skipped with a warning.
     """
     user_id = req.user_id
     subscription_id = req.subscription_id
+    purchase_token = req.purchase_token
 
+    # Verify with Google Play
+    result = verify_subscription(
+        package_name=PACKAGE_NAME,
+        subscription_id=subscription_id,
+        purchase_token=purchase_token,
+    )
+
+    verification_disabled = result.get("reason") == "verification_disabled"
+
+    if verification_disabled:
+        logger.warning(
+            "Granting premium to user %s WITHOUT verification — "
+            "Google Play credentials not configured.",
+            user_id,
+        )
+
+    if not result["is_valid"]:
+        raise HTTPException(
+            status_code=403,
+            detail={
+                "error": "Subscription verification failed",
+                "reason": result.get("reason"),
+                "message": (
+                    "The subscription could not be verified with Google Play. "
+                    "Please ensure you have an active subscription."
+                ),
+            },
+        )
+
+    # Verification passed (or is disabled) — grant premium
     with _LOCK:
         _PREMIUM_USERS[user_id] = subscription_id
 
@@ -261,8 +311,57 @@ def restore_purchases(req: RestoreRequest):
         "user_id": user_id,
         "is_premium": True,
         "subscription_id": subscription_id,
+        "verification_status": "verified" if not verification_disabled else "verification_disabled",
+        "expiry_time": result.get("expiry_time"),
+        "auto_renewing": result.get("auto_renewing"),
         "topics_unlocked": [t["topic_id"] for t in _TOPIC_CATALOG],
         "message": "Premium activated! All topics are now unlocked.",
+    }
+
+
+# ---------------------------------------------------------------------------
+# POST /v2/paywall/verify-receipt
+# ---------------------------------------------------------------------------
+
+@router.post("/verify-receipt")
+def verify_receipt(req: VerifyReceiptRequest):
+    """Verify a purchase receipt with Google Play without restoring/activating.
+
+    Useful for checking the current status of a subscription or one-time
+    purchase from the client side.
+    """
+    if req.purchase_type == "subscription":
+        if not req.subscription_id:
+            raise HTTPException(
+                status_code=422,
+                detail="subscription_id is required for subscription verification",
+            )
+        result = verify_subscription(
+            package_name=PACKAGE_NAME,
+            subscription_id=req.subscription_id,
+            purchase_token=req.purchase_token,
+        )
+    elif req.purchase_type == "one_time":
+        if not req.product_id:
+            raise HTTPException(
+                status_code=422,
+                detail="product_id is required for one-time purchase verification",
+            )
+        result = verify_one_time_purchase(
+            package_name=PACKAGE_NAME,
+            product_id=req.product_id,
+            purchase_token=req.purchase_token,
+        )
+    else:
+        raise HTTPException(
+            status_code=422,
+            detail=f"Invalid purchase_type: {req.purchase_type}. Must be 'subscription' or 'one_time'.",
+        )
+
+    return {
+        "verified": result["is_valid"],
+        "verification_disabled": result.get("reason") == "verification_disabled",
+        "details": result,
     }
 
 

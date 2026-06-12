@@ -95,7 +95,7 @@ class _ExplanationScreenState extends State<ExplanationScreen>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: KiwiColors.cardBg,
       body: SafeArea(
         child: Column(
           children: [
@@ -103,7 +103,7 @@ class _ExplanationScreenState extends State<ExplanationScreen>
             _buildProgressDots(),
             Expanded(
               child: SingleChildScrollView(
-                padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+                padding: EdgeInsets.symmetric(horizontal: KiwiSpacing.xl - 4, vertical: KiwiSpacing.md),
                 child: _buildStepContent(),
               ),
             ),
@@ -116,7 +116,7 @@ class _ExplanationScreenState extends State<ExplanationScreen>
 
   Widget _buildHeader() {
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
+      padding: EdgeInsets.symmetric(horizontal: KiwiSpacing.md, vertical: KiwiSpacing.sm + 2),
       decoration: const BoxDecoration(
         color: KiwiColors.visualYellowBg,
         border: Border(
@@ -131,7 +131,7 @@ class _ExplanationScreenState extends State<ExplanationScreen>
               width: 28,
               child: Text(
                 '✕',
-                style: TextStyle(fontSize: 16, color: Color(0xFFBF360C)),
+                style: TextStyle(fontSize: 16, color: KiwiColors.kiwiPrimaryDark),
               ),
             ),
           ),
@@ -142,7 +142,7 @@ class _ExplanationScreenState extends State<ExplanationScreen>
               style: TextStyle(
                 fontSize: 13,
                 fontWeight: FontWeight.w700,
-                color: Color(0xFFE65100),
+                color: KiwiColors.kiwiPrimaryDark,
               ),
             ),
           ),
@@ -238,7 +238,7 @@ class _ExplanationScreenState extends State<ExplanationScreen>
                 'The question you were working on',
                 style: TextStyle(
                   fontSize: 10,
-                  color: const Color(0xFFF57F17),
+                  color: KiwiColors.amber,
                 ),
               ),
             ],
@@ -262,8 +262,8 @@ class _ExplanationScreenState extends State<ExplanationScreen>
             _buildAnswerChip(
               widget.wrongAnswer,
               Icons.close,
-              const Color(0xFFEF5350),
-              const Color(0xFFFFEBEE),
+              KiwiColors.coral,
+              KiwiColors.wrongBg,
             ),
             const Padding(
               padding: EdgeInsets.symmetric(horizontal: 10),
@@ -346,9 +346,9 @@ class _ExplanationScreenState extends State<ExplanationScreen>
           width: double.infinity,
           padding: const EdgeInsets.all(16),
           decoration: BoxDecoration(
-            color: const Color(0xFFF3F1EC),
-            borderRadius: BorderRadius.circular(16),
-            border: Border.all(color: const Color(0xFFE0DDD6), width: 1.5),
+            color: KiwiColors.creamDark,
+            borderRadius: BorderRadius.circular(KiwiSpacing.lg),
+            border: Border.all(color: KiwiColors.creamDark, width: 1.5),
           ),
           child: Wrap(
             spacing: 10,
@@ -374,7 +374,7 @@ class _ExplanationScreenState extends State<ExplanationScreen>
                     border: Border.all(
                       color: isTapped
                           ? KiwiColors.kiwiGreen
-                          : const Color(0xFFE0E0E0),
+                          : KiwiColors.pathLocked,
                       width: isTapped ? 2 : 1.5,
                     ),
                     boxShadow: isTapped
@@ -421,12 +421,12 @@ class _ExplanationScreenState extends State<ExplanationScreen>
             decoration: BoxDecoration(
               color: _countingComplete
                   ? KiwiColors.kiwiGreenLight
-                  : const Color(0xFFF5F5F5),
-              borderRadius: BorderRadius.circular(20),
+                  : KiwiColors.creamDark,
+              borderRadius: BorderRadius.circular(KiwiSpacing.xl - 4),
               border: Border.all(
                 color: _countingComplete
                     ? KiwiColors.kiwiGreen
-                    : const Color(0xFFE0E0E0),
+                    : KiwiColors.pathLocked,
                 width: 1.5,
               ),
             ),
@@ -524,12 +524,12 @@ class _ExplanationScreenState extends State<ExplanationScreen>
       width: double.infinity,
       padding: const EdgeInsets.all(14),
       decoration: BoxDecoration(
-        color: revealed ? Colors.white : const Color(0xFFF5F5F5),
-        borderRadius: BorderRadius.circular(12),
+        color: revealed ? KiwiColors.cardBg : KiwiColors.creamDark,
+        borderRadius: BorderRadius.circular(KiwiSpacing.md),
         border: Border.all(
           color: revealed
               ? KiwiColors.kiwiGreen.withOpacity(0.3)
-              : const Color(0xFFE0E0E0),
+              : KiwiColors.pathLocked,
           width: 1.5,
         ),
       ),
@@ -598,7 +598,7 @@ class _ExplanationScreenState extends State<ExplanationScreen>
             height: 80,
             decoration: BoxDecoration(
               gradient: const LinearGradient(
-                colors: [Color(0xFF66BB6A), Color(0xFF43A047)],
+                colors: [KiwiColors.correct, KiwiColors.kiwiGreen],
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
               ),
@@ -643,7 +643,7 @@ class _ExplanationScreenState extends State<ExplanationScreen>
           decoration: BoxDecoration(
             color: KiwiColors.kiwiGreenLight,
             borderRadius: BorderRadius.circular(16),
-            border: Border.all(color: const Color(0xFFA5D6A7), width: 2),
+            border: Border.all(color: KiwiColors.correct.withOpacity(0.5), width: 2),
           ),
           child: Column(
             children: [
@@ -668,7 +668,7 @@ class _ExplanationScreenState extends State<ExplanationScreen>
                 style: TextStyle(
                   fontSize: 13,
                   fontWeight: FontWeight.w600,
-                  color: Color(0xFF558B2F),
+                  color: KiwiColors.kiwiGreenDark,
                 ),
               ),
             ],
@@ -680,9 +680,9 @@ class _ExplanationScreenState extends State<ExplanationScreen>
           width: double.infinity,
           padding: const EdgeInsets.all(14),
           decoration: BoxDecoration(
-            color: const Color(0xFFFFF8E1),
-            borderRadius: BorderRadius.circular(12),
-            border: Border.all(color: const Color(0xFFFFE082), width: 1),
+            color: KiwiColors.kiwiPrimaryLight,
+            borderRadius: BorderRadius.circular(KiwiSpacing.md),
+            border: Border.all(color: KiwiColors.amber, width: 1),
           ),
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -694,7 +694,7 @@ class _ExplanationScreenState extends State<ExplanationScreen>
                   widget.feedbackMessage,
                   style: const TextStyle(
                     fontSize: 12,
-                    color: Color(0xFF795548),
+                    color: KiwiColors.textMid,
                     height: 1.45,
                   ),
                 ),
@@ -718,7 +718,7 @@ class _ExplanationScreenState extends State<ExplanationScreen>
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
       decoration: const BoxDecoration(
-        border: Border(top: BorderSide(color: Color(0xFFF0F0F0), width: 1)),
+        border: Border(top: BorderSide(color: KiwiColors.pathLocked, width: 1)),
       ),
       child: Row(
         children: [
@@ -728,9 +728,9 @@ class _ExplanationScreenState extends State<ExplanationScreen>
               child: Container(
                 padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
                 decoration: BoxDecoration(
-                  color: Colors.white,
-                  border: Border.all(color: const Color(0xFFE0E0E0), width: 2),
-                  borderRadius: BorderRadius.circular(12),
+                  color: KiwiColors.cardBg,
+                  border: Border.all(color: KiwiColors.pathLocked, width: 2),
+                  borderRadius: BorderRadius.circular(KiwiSpacing.md),
                 ),
                 child: const Text(
                   '← Back',
@@ -752,7 +752,7 @@ class _ExplanationScreenState extends State<ExplanationScreen>
                 padding: const EdgeInsets.symmetric(vertical: 14),
                 decoration: BoxDecoration(
                   color: !canProceed
-                      ? Colors.grey.shade300
+                      ? KiwiColors.pathLocked
                       : isLastStep
                           ? KiwiColors.kiwiGreen
                           : KiwiColors.warmOrange,
@@ -768,7 +768,7 @@ class _ExplanationScreenState extends State<ExplanationScreen>
                   style: TextStyle(
                     fontSize: 13,
                     fontWeight: FontWeight.w700,
-                    color: canProceed ? Colors.white : Colors.grey.shade500,
+                    color: canProceed ? Colors.white : KiwiColors.textMuted,
                   ),
                 ),
               ),

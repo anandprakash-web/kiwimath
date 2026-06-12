@@ -1,0 +1,59 @@
+<svg viewBox="0 0 600 350" xmlns="http://www.w3.org/2000/svg">
+  <!-- Matchstick Equation Puzzle (Moscow Puzzles Ch. III) -->
+  <defs>
+    <linearGradient id="matchHead" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF6B6B"/>
+      <stop offset="50%" style="stop-color:#E53935"/>
+      <stop offset="100%" style="stop-color:#B71C1C"/>
+    </linearGradient>
+    <linearGradient id="matchStick" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFCC80"/>
+      <stop offset="100%" style="stop-color:#E6A54A"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="600" height="350" fill="#1A1A2E" rx="12"/>
+  <text x="300" y="35" text-anchor="middle" font-family="Georgia" font-size="20" fill="#FF6B6B" font-weight="bold">Matchstick Equation</text>
+  <text x="300" y="55" text-anchor="middle" font-family="Georgia" font-size="12" fill="#B0BEC5" font-style="italic">Move exactly ONE matchstick to make the equation true!</text>
+  <!-- Roman numeral style equation: VI + I = V (wrong, move one to fix) -->
+  <!-- V made of matchsticks -->
+  <line x1="45" y1="100" x2="60" y2="170" stroke="url(#matchStick)" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="45" cy="100" r="5" fill="url(#matchHead)"/>
+  <line x1="75" y1="100" x2="60" y2="170" stroke="url(#matchStick)" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="75" cy="100" r="5" fill="url(#matchHead)"/>
+  <!-- I (vertical stick) -->
+  <line x1="95" y1="100" x2="95" y2="170" stroke="url(#matchStick)" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="95" cy="100" r="5" fill="url(#matchHead)"/>
+  <!-- Plus sign -->
+  <line x1="130" y1="135" x2="170" y2="135" stroke="#FFD54F" stroke-width="5" stroke-linecap="round"/>
+  <line x1="150" y1="115" x2="150" y2="155" stroke="#FFD54F" stroke-width="5" stroke-linecap="round"/>
+  <!-- I (single matchstick) -->
+  <line x1="205" y1="100" x2="205" y2="170" stroke="url(#matchStick)" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="205" cy="100" r="5" fill="url(#matchHead)"/>
+  <!-- Equals sign -->
+  <line x1="245" y1="125" x2="285" y2="125" stroke="#FFD54F" stroke-width="5" stroke-linecap="round"/>
+  <line x1="245" y1="145" x2="285" y2="145" stroke="#FFD54F" stroke-width="5" stroke-linecap="round"/>
+  <!-- V made of matchsticks (result) -->
+  <line x1="315" y1="100" x2="330" y2="170" stroke="url(#matchStick)" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="315" cy="100" r="5" fill="url(#matchHead)"/>
+  <line x1="345" y1="100" x2="330" y2="170" stroke="url(#matchStick)" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="345" cy="100" r="5" fill="url(#matchHead)"/>
+  <!-- Equation label -->
+  <text x="200" y="205" text-anchor="middle" font-family="Georgia" font-size="18" fill="#FFAB40">VI + I = V</text>
+  <text x="200" y="225" text-anchor="middle" font-family="Arial" font-size="13" fill="#EF5350">This is WRONG!</text>
+  <!-- Hint area -->
+  <rect x="400" y="85" width="180" height="155" fill="#263238" rx="10" opacity="0.8"/>
+  <text x="490" y="112" text-anchor="middle" font-family="Georgia" font-size="14" fill="#FFD700" font-weight="bold">Rules</text>
+  <circle cx="420" cy="135" r="4" fill="#4CAF50"/>
+  <text x="435" y="140" font-family="Arial" font-size="11" fill="#E0E0E0">Move exactly 1 matchstick</text>
+  <circle cx="420" cy="160" r="4" fill="#4CAF50"/>
+  <text x="435" y="165" font-family="Arial" font-size="11" fill="#E0E0E0">Can't remove or add</text>
+  <circle cx="420" cy="185" r="4" fill="#4CAF50"/>
+  <text x="435" y="190" font-family="Arial" font-size="11" fill="#E0E0E0">Make equation TRUE</text>
+  <circle cx="420" cy="210" r="4" fill="#FFAB40"/>
+  <text x="435" y="215" font-family="Arial" font-size="11" fill="#FFAB40">Hint: Think Roman!</text>
+  <!-- Bottom instruction -->
+  <rect x="120" y="260" width="360" height="65" fill="#311B92" rx="10" opacity="0.6"/>
+  <text x="300" y="285" text-anchor="middle" font-family="Georgia" font-size="14" fill="#FFD700">Can you fix the equation?</text>
+  <text x="300" y="308" text-anchor="middle" font-family="Arial" font-size="12" fill="#B388FF">Drag a matchstick to a new position!</text>
+</svg>

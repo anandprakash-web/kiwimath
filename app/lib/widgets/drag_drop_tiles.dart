@@ -45,21 +45,21 @@ class _DragDropTilesState extends State<DragDropTiles>
 
   // Tile colors — each position gets a distinct pastel color
   static const _tileColors = [
-    Color(0xFFFFF3E0), // warm peach
-    Color(0xFFE3F2FD), // sky blue
-    Color(0xFFE8F5E9), // mint green
-    Color(0xFFF3E5F5), // lavender
-    Color(0xFFFFFDE7), // sunshine yellow
-    Color(0xFFE0F7FA), // aqua
+    KiwiColors.kiwiPrimaryLight, // warm peach
+    KiwiColors.visualBlueBg, // sky blue
+    KiwiColors.kiwiGreenLight, // mint green
+    Color(0xFFF3E5F5), // lavender — decorative — no token
+    KiwiColors.visualYellowBg, // sunshine yellow
+    Color(0xFFE0F7FA), // aqua — decorative — no token
   ];
 
   static const _tileBorderColors = [
-    Color(0xFFFF9800), // orange
-    Color(0xFF2196F3), // blue
-    Color(0xFF4CAF50), // green
-    Color(0xFF9C27B0), // purple
-    Color(0xFFFFC107), // amber
-    Color(0xFF00BCD4), // cyan
+    KiwiColors.kiwiPrimary, // orange
+    KiwiColors.sky, // blue
+    KiwiColors.kiwiGreen, // green
+    KiwiColors.indigo, // purple
+    KiwiColors.amber, // amber
+    KiwiColors.teal, // cyan
   ];
 
   @override
@@ -152,12 +152,12 @@ class _DragDropTilesState extends State<DragDropTiles>
           decoration: BoxDecoration(
             gradient: LinearGradient(
               colors: [
-                const Color(0xFFFFF8E1),
-                const Color(0xFFFFECB3),
+                KiwiColors.visualYellowBg,
+                KiwiColors.visualYellowBorder.withOpacity(0.3),
               ],
             ),
-            borderRadius: BorderRadius.circular(12),
-            border: Border.all(color: const Color(0xFFFFD54F), width: 1.5),
+            borderRadius: BorderRadius.circular(KiwiSpacing.md),
+            border: Border.all(color: KiwiColors.visualYellowBorder, width: 1.5),
           ),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -169,14 +169,14 @@ class _DragDropTilesState extends State<DragDropTiles>
                 style: TextStyle(
                   fontSize: 14,
                   fontWeight: FontWeight.w700,
-                  color: const Color(0xFF5D4037),
+                  color: KiwiColors.textDark,
                 ),
               ),
               const SizedBox(width: 8),
               Icon(
                 Icons.swap_vert_rounded,
                 size: 20,
-                color: const Color(0xFFFF6D00),
+                color: KiwiColors.kiwiPrimary,
               ),
             ],
           ),
@@ -245,14 +245,14 @@ class _DragDropTilesState extends State<DragDropTiles>
             child: DecoratedBox(
               decoration: BoxDecoration(
                 gradient: const LinearGradient(
-                  colors: [Color(0xFFFF6D00), Color(0xFFFF8F00)],
+                  colors: [KiwiColors.kiwiPrimary, KiwiColors.kiwiPrimary],
                   begin: Alignment.topLeft,
                   end: Alignment.bottomRight,
                 ),
                 borderRadius: BorderRadius.circular(16),
                 boxShadow: [
                   BoxShadow(
-                    color: const Color(0xFFFF6D00).withOpacity(0.4),
+                    color: KiwiColors.kiwiPrimary.withOpacity(0.4),
                     blurRadius: 10,
                     offset: const Offset(0, 4),
                   ),
@@ -296,25 +296,25 @@ class _DragDropTilesState extends State<DragDropTiles>
     Widget? statusIcon;
 
     if (_checked && isCorrect == true) {
-      bg = const Color(0xFFE8F5E9);
-      borderColor = const Color(0xFF4CAF50);
+      bg = KiwiColors.correctBg;
+      borderColor = KiwiColors.kiwiGreen;
       statusIcon = Container(
         width: 26,
         height: 26,
         decoration: const BoxDecoration(
-          color: Color(0xFF4CAF50),
+          color: KiwiColors.kiwiGreen,
           shape: BoxShape.circle,
         ),
         child: const Icon(Icons.check, size: 16, color: Colors.white),
       );
     } else if (_checked && isCorrect == false) {
-      bg = const Color(0xFFFFEBEE);
-      borderColor = const Color(0xFFE53935);
+      bg = KiwiColors.wrongBg;
+      borderColor = KiwiColors.coral;
       statusIcon = Container(
         width: 26,
         height: 26,
         decoration: const BoxDecoration(
-          color: Color(0xFFE53935),
+          color: KiwiColors.coral,
           shape: BoxShape.circle,
         ),
         child: const Icon(Icons.close, size: 16, color: Colors.white),
@@ -356,8 +356,8 @@ class _DragDropTilesState extends State<DragDropTiles>
                     gradient: LinearGradient(
                       colors: _checked
                           ? isCorrect == true
-                              ? [const Color(0xFF4CAF50), const Color(0xFF2E7D32)]
-                              : [const Color(0xFFE53935), const Color(0xFFC62828)]
+                              ? [KiwiColors.kiwiGreen, KiwiColors.kiwiGreenDark]
+                              : [KiwiColors.coral, KiwiColors.coral]
                           : [
                               _tileBorderColors[colorIdx],
                               _tileBorderColors[colorIdx].withOpacity(0.7),
@@ -395,8 +395,8 @@ class _DragDropTilesState extends State<DragDropTiles>
                       fontSize: 16,
                       fontWeight: FontWeight.w700,
                       color: _checked && isCorrect == false
-                          ? const Color(0xFFC62828)
-                          : const Color(0xFF212121),
+                          ? KiwiColors.coral
+                          : KiwiColors.textDark,
                       letterSpacing: 0.2,
                     ),
                     maxLines: 2,
@@ -439,10 +439,10 @@ class _DragDropTilesState extends State<DragDropTiles>
     return Container(
       padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 16),
       decoration: BoxDecoration(
-        color: allCorrect ? const Color(0xFFE8F5E9) : const Color(0xFFFFF3E0),
-        borderRadius: BorderRadius.circular(12),
+        color: allCorrect ? KiwiColors.correctBg : KiwiColors.wrongBg,
+        borderRadius: BorderRadius.circular(KiwiSpacing.md),
         border: Border.all(
-          color: allCorrect ? const Color(0xFF4CAF50) : const Color(0xFFFF9800),
+          color: allCorrect ? KiwiColors.kiwiGreen : KiwiColors.kiwiPrimary,
           width: 1.5,
         ),
       ),
@@ -461,7 +461,7 @@ class _DragDropTilesState extends State<DragDropTiles>
             style: TextStyle(
               fontSize: 14,
               fontWeight: FontWeight.w700,
-              color: allCorrect ? const Color(0xFF2E7D32) : const Color(0xFFE65100),
+              color: allCorrect ? KiwiColors.kiwiGreenDark : KiwiColors.kiwiPrimaryDark,
             ),
           ),
         ],

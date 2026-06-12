@@ -1,0 +1,2497 @@
+[
+  {
+    "id": "SING-G2-SMC-015",
+    "stem": "Priya wants to estimate the height of her classroom door. Which is the best estimate?",
+    "choices": [
+      "2 cm",
+      "2 m",
+      "20 m",
+      "200 m"
+    ],
+    "correct_answer": "B",
+    "difficulty_tier": "easy",
+    "difficulty_score": 1,
+    "tags": [
+      "measurement_estimation",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "Think about how tall an adult is.",
+      "level_1": "Most adults are between 150 cm and 180 cm.",
+      "level_2": "A door must be taller than that."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 2 m.",
+      "0": "Not quite. You're off by 0. Re-check your arithmetic step by step.",
+      "2": "Check your place value \u2014 you may have a digit in the wrong column.",
+      "3": "Re-read the problem carefully and check which numbers and operations to use."
+    }
+  },
+  {
+    "id": "SING-G2-SMC-034",
+    "stem": "A teacher has 50 pencils. She gives 8 pencils to each student. After giving pencils to as many students as possible, she has some pencils left. How many pencils are left?",
+    "choices": [
+      "2",
+      "4",
+      "6",
+      "8"
+    ],
+    "correct_answer": "A",
+    "difficulty_tier": "easy",
+    "difficulty_score": 2,
+    "tags": [
+      "distribution_remainder",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "8 \u00d7 6 = 48.",
+      "level_1": "50 \u2212 48 = 2 left over.",
+      "level_2": "Take a moment to carefully evaluate each choice before answering."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 2.",
+      "1": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+      "2": "Not quite. You're off by 4. Re-check your arithmetic step by step.",
+      "3": "Not quite. You're off by 6. Re-check your arithmetic step by step."
+    }
+  },
+  {
+    "id": "SING-G2-SMC-037",
+    "stem": "The picture graph shows the number of ice cream cones sold at a canteen. Each picture of an ice cream cone stands for 5 cones sold. Monday shows 3 pictures, Tuesday shows 5 pictures, Wednesday shows 2 pictures. How many more cones were sold on Tuesday than on Wednesday?",
+    "choices": [
+      "3",
+      "10",
+      "15",
+      "25"
+    ],
+    "correct_answer": "C",
+    "difficulty_tier": "easy",
+    "difficulty_score": 3,
+    "tags": [
+      "data_picture_graph",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": "A picture graph with rows for Monday (3 ice cream icons), Tuesday (5 icons), Wednesday (2 icons). Key: each icon = 5 cones.",
+    "hint": {
+      "level_0": "Tuesday = 5 \u00d7 5 = 25.",
+      "level_1": "Wednesday = 2 \u00d7 5 = 10.",
+      "level_2": "Difference = 25 \u2212 10."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 15.",
+      "0": "Re-read the problem carefully and check which numbers and operations to use.",
+      "1": "Not quite. You're off by 5. Re-check your arithmetic step by step.",
+      "3": "Not quite. You're off by 10. Re-check your arithmetic step by step."
+    },
+    "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 270 80\" width=\"270\" height=\"80\" style=\"font-family:Arial,sans-serif\"><circle cx=\"20\" cy=\"40\" r=\"10\" fill=\"#42A5F5\" stroke=\"#1565C0\" stroke-width=\"1.5\"/><circle cx=\"45\" cy=\"40\" r=\"10\" fill=\"#42A5F5\" stroke=\"#1565C0\" stroke-width=\"1.5\"/><circle cx=\"70\" cy=\"40\" r=\"10\" fill=\"#42A5F5\" stroke=\"#1565C0\" stroke-width=\"1.5\"/><circle cx=\"95\" cy=\"40\" r=\"10\" fill=\"#42A5F5\" stroke=\"#1565C0\" stroke-width=\"1.5\"/><circle cx=\"120\" cy=\"40\" r=\"10\" fill=\"#42A5F5\" stroke=\"#1565C0\" stroke-width=\"1.5\"/><text x=\"150\" y=\"45\" font-size=\"20\" fill=\"#333\">+</text><circle cx=\"175\" cy=\"40\" r=\"10\" fill=\"#FF7043\" stroke=\"#D84315\" stroke-width=\"1.5\"/><circle cx=\"200\" cy=\"40\" r=\"10\" fill=\"#FF7043\" stroke=\"#D84315\" stroke-width=\"1.5\"/><circle cx=\"225\" cy=\"40\" r=\"10\" fill=\"#FF7043\" stroke=\"#D84315\" stroke-width=\"1.5\"/></svg>"
+  },
+  {
+    "id": "SING-G2-SMC-040",
+    "stem": "In a picture graph, each book icon represents 6 books. The school library lent out books over 4 days: Monday (3 icons), Tuesday (5 icons), Wednesday (4 icons), Thursday (2 icons). On which day were exactly 24 books lent out?",
+    "choices": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday"
+    ],
+    "correct_answer": "C",
+    "difficulty_tier": "easy",
+    "difficulty_score": 4,
+    "tags": [
+      "data_picture_graph",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": "A picture graph of books lent by the library each day. Key: each book icon = 6 books.",
+    "hint": {
+      "level_0": "24 \u00f7 6 = 4 icons.",
+      "level_1": "Which day shows 4 icons?",
+      "level_2": "Take a moment to carefully evaluate each choice before answering."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is Wednesday.",
+      "0": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+      "1": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+      "3": "This doesn't match all the conditions in the problem. Test each clue against your answer."
+    },
+    "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 80\" width=\"240\" height=\"80\" style=\"font-family:Arial,sans-serif\"><text x=\"20\" y=\"25\" font-size=\"22\">\ud83d\udcd6</text><text x=\"55\" y=\"25\" font-size=\"22\">\ud83d\udcd6</text><text x=\"90\" y=\"25\" font-size=\"22\">\ud83d\udcd6</text><text x=\"125\" y=\"25\" font-size=\"22\">\ud83d\udcd6</text><text x=\"160\" y=\"25\" font-size=\"22\">\ud83d\udcd6</text><text x=\"195\" y=\"25\" font-size=\"22\">\ud83d\udcd6</text></svg>"
+  },
+  {
+    "id": "SING-G2-SMC-050",
+    "stem": "Wei Jie is 8 years old. His father is 4 times as old as Wei Jie. What is the difference in their ages?",
+    "choices": [
+      "16",
+      "24",
+      "32",
+      "40"
+    ],
+    "correct_answer": "B",
+    "difficulty_tier": "easy",
+    "difficulty_score": 5,
+    "tags": [
+      "age_problems",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "Father's age = 4 \u00d7 8 = 32.",
+      "level_1": "Difference = 32 \u2212 8.",
+      "level_2": "Take a moment to carefully evaluate each choice before answering."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 24.",
+      "0": "Not quite. You're off by 8. Re-check your arithmetic step by step.",
+      "2": "Not quite. You're off by 8. Re-check your arithmetic step by step.",
+      "3": "Re-read the problem carefully and check which numbers and operations to use."
+    }
+  },
+  {
+    "id": "SING-G2-SMC-077",
+    "stem": "Ravi is 120 cm tall. Siti is 15 cm shorter than Ravi. Ahmad is 10 cm taller than Siti. How tall is Ahmad?",
+    "choices": [
+      "105 cm",
+      "110 cm",
+      "115 cm",
+      "125 cm"
+    ],
+    "correct_answer": "C",
+    "difficulty_tier": "easy",
+    "difficulty_score": 6,
+    "tags": [
+      "measurement_height",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "Siti = 120 \u2212 15 = 105 cm.",
+      "level_1": "Ahmad = 105 + 10 = ?",
+      "level_2": "Take a moment to carefully evaluate each choice before answering."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 115 cm.",
+      "0": "Not quite. You're off by 10. Re-check your arithmetic step by step.",
+      "1": "Not quite. You're off by 5. Re-check your arithmetic step by step.",
+      "3": "Not quite. You're off by 10. Re-check your arithmetic step by step."
+    }
+  },
+  {
+    "id": "SING-G2-SMC-009",
+    "stem": "A papaya has a mass of 800 g. A mango has a mass of 350 g. What is the total mass of 2 papayas and 1 mango?",
+    "choices": [
+      "1550 g",
+      "1950 g",
+      "1150 g",
+      "1500 g"
+    ],
+    "correct_answer": "B",
+    "difficulty_tier": "easy",
+    "difficulty_score": 7,
+    "tags": [
+      "measurement_mass",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "Find the mass of 2 papayas first: 800 + 800 = 1600.",
+      "level_1": "Then add the mango.",
+      "level_2": "Take a moment to carefully evaluate each choice before answering."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 1950 g.",
+      "0": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+      "2": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+      "3": "This doesn't match all the conditions in the problem. Test each clue against your answer."
+    }
+  },
+  {
+    "id": "SING-G2-SMC-016",
+    "stem": "A hawker centre has about 80 stalls. Each stall serves about 50 customers a day. About how many customers does the whole hawker centre serve in a day?",
+    "choices": [
+      "400",
+      "4000",
+      "800",
+      "8000"
+    ],
+    "correct_answer": "B",
+    "difficulty_tier": "easy",
+    "difficulty_score": 8,
+    "tags": [
+      "measurement_estimation",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "Multiply the number of stalls by the number of customers each stall serves.",
+      "level_1": "80 \u00d7 50 = ?",
+      "level_2": "Take a moment to carefully evaluate each choice before answering."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 4000.",
+      "0": "Re-read the problem carefully and check which numbers and operations to use.",
+      "2": "Re-read the problem carefully and check which numbers and operations to use.",
+      "3": "You doubled when you shouldn't have. Re-read the problem \u2014 are you counting each item once or twice?"
+    }
+  },
+  {
+    "id": "SING-G2-SMC-018",
+    "stem": "\u25b2 + \u25b2 + \u25a0 = 20. \u25a0 = 8. What is the value of \u25b2?",
+    "choices": [
+      "4",
+      "6",
+      "8",
+      "12"
+    ],
+    "correct_answer": "B",
+    "difficulty_tier": "easy",
+    "difficulty_score": 9,
+    "tags": [
+      "algebra_symbol_eq",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": "Equation with triangle and square symbols",
+    "hint": {
+      "level_0": "Replace \u25a0 with 8: \u25b2 + \u25b2 + 8 = 20.",
+      "level_1": "So \u25b2 + \u25b2 = 12.",
+      "level_2": "Take a moment to carefully evaluate each choice before answering."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 6.",
+      "0": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+      "2": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+      "3": "You doubled when you shouldn't have. Re-read the problem \u2014 are you counting each item once or twice?"
+    }
+  },
+  {
+    "id": "SING-G2-SMC-024",
+    "stem": "A number is divisible by both 4 and 5. It is greater than 50 but less than 70. What is the number?",
+    "choices": [
+      "55",
+      "56",
+      "60",
+      "65"
+    ],
+    "correct_answer": "C",
+    "difficulty_tier": "easy",
+    "difficulty_score": 10,
+    "tags": [
+      "divisibility_LCM",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "Multiples of 4: 52, 56, 60, 64, 68.",
+      "level_1": "Multiples of 5: 55, 60, 65.",
+      "level_2": "Which number is in both lists?"
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 60.",
+      "0": "Not quite. You're off by 5. Re-check your arithmetic step by step.",
+      "1": "Not quite. You're off by 4. Re-check your arithmetic step by step.",
+      "3": "Not quite. You're off by 5. Re-check your arithmetic step by step."
+    }
+  },
+  {
+    "id": "SING-G2-SMC-033",
+    "stem": "45 mooncakes are shared equally among 7 children. How many mooncakes does each child get, and how many are left over?",
+    "choices": [
+      "6 each, 3 left over",
+      "6 each, 2 left over",
+      "7 each, 4 left over",
+      "5 each, 10 left over"
+    ],
+    "correct_answer": "A",
+    "difficulty_tier": "easy",
+    "difficulty_score": 11,
+    "tags": [
+      "distribution_remainder",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "7 \u00d7 6 = 42.",
+      "level_1": "45 \u2212 42 = 3.",
+      "level_2": "So each child gets 6, with 3 left over."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 6 each, 3 left over.",
+      "1": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+      "2": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+      "3": "This doesn't match all the conditions in the problem. Test each clue against your answer."
+    }
+  },
+  {
+    "id": "SING-G2-SMC-038",
+    "stem": "In a picture graph, each smiley face stands for 4 students. The row for 'Swimming' has 6 smiley faces, and the row for 'Soccer' has 8 smiley faces. How many students chose Swimming or Soccer altogether?",
+    "choices": [
+      "14",
+      "24",
+      "48",
+      "56"
+    ],
+    "correct_answer": "D",
+    "difficulty_tier": "easy",
+    "difficulty_score": 12,
+    "tags": [
+      "data_picture_graph",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": "A picture graph showing favourite sports with smiley face icons. Key: each smiley = 4 students.",
+    "hint": {
+      "level_0": "Swimming = 6 \u00d7 4 = 24.",
+      "level_1": "Soccer = 8 \u00d7 4 = 32.",
+      "level_2": "Total = 24 + 32."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 56.",
+      "0": "Re-read the problem carefully and check which numbers and operations to use.",
+      "1": "Re-read the problem carefully and check which numbers and operations to use.",
+      "2": "Not quite. You're off by 8. Re-check your arithmetic step by step."
+    },
+    "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 80\" width=\"320\" height=\"80\" style=\"font-family:Arial,sans-serif\"><circle cx=\"20\" cy=\"40\" r=\"10\" fill=\"#42A5F5\" stroke=\"#1565C0\" stroke-width=\"1.5\"/><circle cx=\"45\" cy=\"40\" r=\"10\" fill=\"#42A5F5\" stroke=\"#1565C0\" stroke-width=\"1.5\"/><circle cx=\"70\" cy=\"40\" r=\"10\" fill=\"#42A5F5\" stroke=\"#1565C0\" stroke-width=\"1.5\"/><circle cx=\"95\" cy=\"40\" r=\"10\" fill=\"#42A5F5\" stroke=\"#1565C0\" stroke-width=\"1.5\"/><text x=\"125\" y=\"45\" font-size=\"20\" fill=\"#333\">+</text><circle cx=\"150\" cy=\"40\" r=\"10\" fill=\"#FF7043\" stroke=\"#D84315\" stroke-width=\"1.5\"/><circle cx=\"175\" cy=\"40\" r=\"10\" fill=\"#FF7043\" stroke=\"#D84315\" stroke-width=\"1.5\"/><circle cx=\"200\" cy=\"40\" r=\"10\" fill=\"#FF7043\" stroke=\"#D84315\" stroke-width=\"1.5\"/><circle cx=\"225\" cy=\"40\" r=\"10\" fill=\"#FF7043\" stroke=\"#D84315\" stroke-width=\"1.5\"/><circle cx=\"250\" cy=\"40\" r=\"10\" fill=\"#FF7043\" stroke=\"#D84315\" stroke-width=\"1.5\"/><circle cx=\"275\" cy=\"40\" r=\"10\" fill=\"#FF7043\" stroke=\"#D84315\" stroke-width=\"1.5\"/></svg>"
+  },
+  {
+    "id": "SING-G2-SMC-045",
+    "stem": "A rope is 60 cm long. Siti cuts it into 5 equal pieces. She then cuts one of the pieces in half. How many pieces of rope does she have now?",
+    "choices": [
+      "5",
+      "6",
+      "7",
+      "10"
+    ],
+    "correct_answer": "B",
+    "difficulty_tier": "easy",
+    "difficulty_score": 13,
+    "tags": [
+      "measurement_cutting",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "After cutting into 5 equal pieces, she has 5 pieces.",
+      "level_1": "She cuts 1 of those in half, making 2 pieces from 1.",
+      "level_2": "Total = 5 \u2212 1 + 2."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 6.",
+      "0": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?",
+      "2": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?",
+      "3": "Not quite. You're off by 4. Re-check your arithmetic step by step."
+    }
+  },
+  {
+    "id": "SING-G2-SMC-049",
+    "stem": "Auntie Lim is 54 years old. She is 30 years older than her daughter. How old will her daughter be in 6 years?",
+    "choices": [
+      "24",
+      "30",
+      "36",
+      "60"
+    ],
+    "correct_answer": "B",
+    "difficulty_tier": "easy",
+    "difficulty_score": 14,
+    "tags": [
+      "age_problems",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "Daughter's current age = 54 \u2212 30 = 24.",
+      "level_1": "In 6 years: 24 + 6 = ?",
+      "level_2": "Take a moment to carefully evaluate each choice before answering."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 30.",
+      "0": "Not quite. You're off by 6. Re-check your arithmetic step by step.",
+      "2": "Not quite. You're off by 6. Re-check your arithmetic step by step.",
+      "3": "You doubled when you shouldn't have. Re-read the problem \u2014 are you counting each item once or twice?"
+    }
+  },
+  {
+    "id": "SING-G2-SMC-054",
+    "stem": "A jug holds 2 litres of water. Chen fills 6 cups, each holding 250 ml. How much water is left in the jug?",
+    "choices": [
+      "250 ml",
+      "500 ml",
+      "750 ml",
+      "1 \u2113"
+    ],
+    "correct_answer": "B",
+    "difficulty_tier": "easy",
+    "difficulty_score": 15,
+    "tags": [
+      "measurement_volume",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "Water used = 6 \u00d7 250 = 1500 ml.",
+      "level_1": "Water left = 2000 \u2212 1500.",
+      "level_2": "Take a moment to carefully evaluate each choice before answering."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 500 ml.",
+      "0": "You may have divided when you should have multiplied, or only counted half the items.",
+      "2": "Re-read the problem carefully and check which numbers and operations to use.",
+      "3": "This doesn't match all the conditions in the problem. Test each clue against your answer."
+    }
+  },
+  {
+    "id": "SING-G2-SMC-012",
+    "stem": "Three durians have masses of 1 kg 400 g, 1 kg 250 g, and 1 kg 350 g. What is the difference in mass between the heaviest and the lightest durian?",
+    "choices": [
+      "100 g",
+      "150 g",
+      "200 g",
+      "250 g"
+    ],
+    "correct_answer": "B",
+    "difficulty_tier": "easy",
+    "difficulty_score": 16,
+    "tags": [
+      "measurement_mass",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "The heaviest is 1 kg 400 g and the lightest is 1 kg 250 g.",
+      "level_1": "Find the difference.",
+      "level_2": "Take a moment to carefully evaluate each choice before answering."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 150 g.",
+      "0": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+      "2": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+      "3": "This doesn't match all the conditions in the problem. Test each clue against your answer."
+    }
+  },
+  {
+    "id": "SING-G2-SMC-013",
+    "stem": "A chicken rice stall sells about 200 plates of chicken rice each day. About how many plates does it sell in 4 weeks?",
+    "choices": [
+      "800",
+      "2800",
+      "5600",
+      "6000"
+    ],
+    "correct_answer": "C",
+    "difficulty_tier": "easy",
+    "difficulty_score": 17,
+    "tags": [
+      "measurement_estimation",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "There are 7 days in a week.",
+      "level_1": "4 weeks = 28 days.",
+      "level_2": "200 \u00d7 28 = ?"
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 5600.",
+      "0": "Re-read the problem carefully and check which numbers and operations to use.",
+      "1": "You may have divided when you should have multiplied, or only counted half the items.",
+      "3": "Re-read the problem carefully and check which numbers and operations to use."
+    }
+  },
+  {
+    "id": "SING-G2-SMC-021",
+    "stem": "I am thinking of a number. It can be divided equally by both 3 and 5. It is between 20 and 40. What is the number?",
+    "choices": [
+      "15",
+      "25",
+      "30",
+      "35"
+    ],
+    "correct_answer": "C",
+    "difficulty_tier": "easy",
+    "difficulty_score": 18,
+    "tags": [
+      "divisibility_LCM",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "The number must appear in both the 3 times table and the 5 times table.",
+      "level_1": "Which multiples of 15 are between 20 and 40?",
+      "level_2": "Take a moment to carefully evaluate each choice before answering."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 30.",
+      "0": "You may have divided when you should have multiplied, or only counted half the items.",
+      "1": "Not quite. You're off by 5. Re-check your arithmetic step by step.",
+      "3": "Not quite. You're off by 5. Re-check your arithmetic step by step."
+    }
+  },
+  {
+    "id": "SING-G2-SMC-035",
+    "stem": "Ravi has 67 sweets. He packs them into bags of 9. How many bags can he fill completely, and how many sweets are left?",
+    "choices": [
+      "7 bags, 2 left",
+      "7 bags, 4 left",
+      "8 bags, 3 left",
+      "6 bags, 13 left"
+    ],
+    "correct_answer": "B",
+    "difficulty_tier": "easy",
+    "difficulty_score": 19,
+    "tags": [
+      "distribution_remainder",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "9 \u00d7 7 = 63.",
+      "level_1": "67 \u2212 63 = 4.",
+      "level_2": "Take a moment to carefully evaluate each choice before answering."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 7 bags, 4 left.",
+      "0": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+      "2": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+      "3": "This doesn't match all the conditions in the problem. Test each clue against your answer."
+    }
+  },
+  {
+    "id": "SING-G2-SMC-039",
+    "stem": "A picture graph shows the favourite fruits of children. Each fruit picture stands for 3 children. Mango has 7 pictures. Durian has 4 pictures. Rambutan has 5 pictures. How many children chose their favourite fruit altogether?",
+    "choices": [
+      "16",
+      "36",
+      "42",
+      "48"
+    ],
+    "correct_answer": "D",
+    "difficulty_tier": "easy",
+    "difficulty_score": 20,
+    "tags": [
+      "data_picture_graph",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": "A picture graph with fruit icons for Mango (7), Durian (4), and Rambutan (5). Key: each icon = 3 children.",
+    "hint": {
+      "level_0": "Total pictures = 7 + 4 + 5 = 16.",
+      "level_1": "Each picture = 3 children.",
+      "level_2": "Total = 16 \u00d7 3."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 48.",
+      "0": "Re-read the problem carefully and check which numbers and operations to use.",
+      "1": "Re-read the problem carefully and check which numbers and operations to use.",
+      "2": "Not quite. You're off by 6. Re-check your arithmetic step by step."
+    },
+    "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 80\" width=\"320\" height=\"80\" style=\"font-family:Arial,sans-serif\"><circle cx=\"20\" cy=\"40\" r=\"10\" fill=\"#42A5F5\" stroke=\"#1565C0\" stroke-width=\"1.5\"/><circle cx=\"45\" cy=\"40\" r=\"10\" fill=\"#42A5F5\" stroke=\"#1565C0\" stroke-width=\"1.5\"/><circle cx=\"70\" cy=\"40\" r=\"10\" fill=\"#42A5F5\" stroke=\"#1565C0\" stroke-width=\"1.5\"/><text x=\"100\" y=\"45\" font-size=\"20\" fill=\"#333\">+</text><circle cx=\"125\" cy=\"40\" r=\"10\" fill=\"#FF7043\" stroke=\"#D84315\" stroke-width=\"1.5\"/><circle cx=\"150\" cy=\"40\" r=\"10\" fill=\"#FF7043\" stroke=\"#D84315\" stroke-width=\"1.5\"/><circle cx=\"175\" cy=\"40\" r=\"10\" fill=\"#FF7043\" stroke=\"#D84315\" stroke-width=\"1.5\"/><circle cx=\"200\" cy=\"40\" r=\"10\" fill=\"#FF7043\" stroke=\"#D84315\" stroke-width=\"1.5\"/><circle cx=\"225\" cy=\"40\" r=\"10\" fill=\"#FF7043\" stroke=\"#D84315\" stroke-width=\"1.5\"/><circle cx=\"250\" cy=\"40\" r=\"10\" fill=\"#FF7043\" stroke=\"#D84315\" stroke-width=\"1.5\"/><circle cx=\"275\" cy=\"40\" r=\"10\" fill=\"#FF7043\" stroke=\"#D84315\" stroke-width=\"1.5\"/></svg>"
+  },
+  {
+    "id": "SING-G2-SMC-047",
+    "stem": "A ribbon is 84 cm long. Mei Ling cuts it into 3 equal pieces. She then cuts 6 cm off one piece. How long is that shorter piece now?",
+    "choices": [
+      "22 cm",
+      "24 cm",
+      "28 cm",
+      "30 cm"
+    ],
+    "correct_answer": "A",
+    "difficulty_tier": "medium",
+    "difficulty_score": 21,
+    "tags": [
+      "measurement_cutting",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "Each piece = 84 \u00f7 3 = 28 cm.",
+      "level_1": "After cutting 6 cm off: 28 \u2212 6 = ?",
+      "level_2": "Take a moment to carefully evaluate each choice before answering."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 22 cm.",
+      "1": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+      "2": "Not quite. You're off by 6. Re-check your arithmetic step by step.",
+      "3": "Not quite. You're off by 8. Re-check your arithmetic step by step."
+    }
+  },
+  {
+    "id": "SING-G2-SMC-052",
+    "stem": "Mei Ling is 7 years old. Her brother is twice her age. In how many years will her brother be 20 years old?",
+    "choices": [
+      "3",
+      "5",
+      "6",
+      "7"
+    ],
+    "correct_answer": "C",
+    "difficulty_tier": "medium",
+    "difficulty_score": 22,
+    "tags": [
+      "age_problems",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "Brother's age = 2 \u00d7 7 = 14.",
+      "level_1": "Years until he is 20: 20 \u2212 14.",
+      "level_2": "Take a moment to carefully evaluate each choice before answering."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 6.",
+      "0": "You may have divided when you should have multiplied, or only counted half the items.",
+      "1": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?",
+      "3": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?"
+    }
+  },
+  {
+    "id": "SING-G2-SMC-059",
+    "stem": "Uncle distributes ang pows (red packets). The 1st child gets $2, the 2nd child gets $5, the 3rd child gets $8, and so on. How much does the 6th child get?",
+    "choices": [
+      "$14",
+      "$15",
+      "$17",
+      "$20"
+    ],
+    "correct_answer": "C",
+    "difficulty_tier": "medium",
+    "difficulty_score": 23,
+    "tags": [
+      "patterns_distribution",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "The pattern increases by $3 each time: $2, $5, $8, $11, $14, $17.",
+      "level_1": "Let's review the core details of the question stem.",
+      "level_2": "Try testing each option to see which one matches the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is $17.",
+      "0": "Not quite. You're off by 3. Re-check your arithmetic step by step.",
+      "1": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+      "3": "Not quite. You're off by 3. Re-check your arithmetic step by step."
+    }
+  },
+  {
+    "id": "SING-G2-SMC-060",
+    "stem": "A teacher places stickers on a chart. Row 1 gets 10 stickers, Row 2 gets 8 stickers, Row 3 gets 6 stickers. If the pattern continues, which row gets 0 stickers?",
+    "choices": [
+      "Row 5",
+      "Row 6",
+      "Row 7",
+      "Row 8"
+    ],
+    "correct_answer": "B",
+    "difficulty_tier": "medium",
+    "difficulty_score": 24,
+    "tags": [
+      "patterns_distribution",
+      "competition",
+      "problem_solving",
+      "visual_needed"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "The pattern decreases by 2: 10, 8, 6, 4, 2, 0.",
+      "level_1": "Row 6 gets 0.",
+      "level_2": "Take a moment to carefully evaluate each choice before answering."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is Row 6.",
+      "0": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+      "2": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+      "3": "This doesn't match all the conditions in the problem. Test each clue against your answer."
+    },
+    "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 495 100\" width=\"495\" height=\"100\" style=\"font-family:Arial,sans-serif\"><rect x=\"30\" y=\"30\" width=\"45\" height=\"45\" rx=\"8\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2\"/><text x=\"52\" y=\"58\" text-anchor=\"middle\" font-size=\"18\" fill=\"#333\">1</text><rect x=\"85\" y=\"30\" width=\"45\" height=\"45\" rx=\"8\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2\"/><text x=\"107\" y=\"58\" text-anchor=\"middle\" font-size=\"18\" fill=\"#333\">10</text><rect x=\"140\" y=\"30\" width=\"45\" height=\"45\" rx=\"8\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2\"/><text x=\"162\" y=\"58\" text-anchor=\"middle\" font-size=\"18\" fill=\"#333\">2</text><rect x=\"195\" y=\"30\" width=\"45\" height=\"45\" rx=\"8\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2\"/><text x=\"217\" y=\"58\" text-anchor=\"middle\" font-size=\"18\" fill=\"#333\">8</text><rect x=\"250\" y=\"30\" width=\"45\" height=\"45\" rx=\"8\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2\"/><text x=\"272\" y=\"58\" text-anchor=\"middle\" font-size=\"18\" fill=\"#333\">3</text><rect x=\"305\" y=\"30\" width=\"45\" height=\"45\" rx=\"8\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2\"/><text x=\"327\" y=\"58\" text-anchor=\"middle\" font-size=\"18\" fill=\"#333\">6</text><rect x=\"360\" y=\"30\" width=\"45\" height=\"45\" rx=\"8\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2\"/><text x=\"382\" y=\"58\" text-anchor=\"middle\" font-size=\"18\" fill=\"#333\">0</text><rect x=\"415\" y=\"30\" width=\"45\" height=\"45\" rx=\"8\" fill=\"#FFF3E0\" stroke=\"#FF9800\" stroke-width=\"2\" stroke-dasharray=\"5,3\"/><text x=\"437\" y=\"58\" text-anchor=\"middle\" font-size=\"20\" fill=\"#FF9800\">?</text></svg>"
+  },
+  {
+    "id": "SING-G2-SMC-069",
+    "stem": "There are 4 children: Ali, Bina, Cheng, and Diya. Ali is taller than Bina. Cheng is shorter than Bina. Diya is taller than Ali. Who is the shortest?",
+    "choices": [
+      "Ali",
+      "Bina",
+      "Cheng",
+      "Diya"
+    ],
+    "correct_answer": "C",
+    "difficulty_tier": "medium",
+    "difficulty_score": 25,
+    "tags": [
+      "logic_chain",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "Order from the clues: Diya > Ali > Bina > Cheng.",
+      "level_1": "Who is at the bottom?",
+      "level_2": "Take a moment to carefully evaluate each choice before answering."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is Cheng.",
+      "0": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+      "1": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+      "3": "This doesn't match all the conditions in the problem. Test each clue against your answer."
+    }
+  },
+  {
+    "id": "SING-G2-SMC-005",
+    "stem": "Mei Ling makes a pattern using triangles. Row 1 has 1 triangle, Row 2 has 3 triangles, Row 3 has 5 triangles. How many triangles are in Row 6?",
+    "choices": [
+      "9",
+      "11",
+      "13",
+      "15"
+    ],
+    "correct_answer": "B",
+    "difficulty_tier": "medium",
+    "difficulty_score": 26,
+    "tags": [
+      "patterns_growing",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": "Rows of small triangles: Row 1 has 1, Row 2 has 3, Row 3 has 5 arranged in increasing rows",
+    "hint": {
+      "level_0": "Each row has 2 more triangles than the row before.",
+      "level_1": "Row 4 = 7, Row 5 = 9, Row 6 = ?",
+      "level_2": "Take a moment to carefully evaluate each choice before answering."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 11.",
+      "0": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+      "2": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+      "3": "Re-examine the pattern. Check the differences between ALL consecutive terms, not just the first pair."
+    }
+  },
+  {
+    "id": "SING-G2-SMC-014",
+    "stem": "A school bus makes 6 trips each day. Each trip carries about 40 children. About how many children does the bus carry in 5 school days?",
+    "choices": [
+      "200",
+      "300",
+      "1000",
+      "1200"
+    ],
+    "correct_answer": "D",
+    "difficulty_tier": "medium",
+    "difficulty_score": 27,
+    "tags": [
+      "measurement_estimation",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "Each day: 6 \u00d7 40 = 240 children.",
+      "level_1": "In 5 days: 240 \u00d7 5 = ?",
+      "level_2": "Take a moment to carefully evaluate each choice before answering."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 1200.",
+      "0": "Re-read the problem carefully and check which numbers and operations to use.",
+      "1": "Re-read the problem carefully and check which numbers and operations to use.",
+      "2": "Re-read the problem carefully and check which numbers and operations to use."
+    }
+  },
+  {
+    "id": "SING-G2-SMC-026",
+    "stem": "A kitchen scale has markings from 0 g to 500 g. There are 10 equal divisions. The pointer points to the 7th mark. What mass is shown on the scale?",
+    "choices": [
+      "70 g",
+      "175 g",
+      "350 g",
+      "370 g"
+    ],
+    "correct_answer": "C",
+    "difficulty_tier": "medium",
+    "difficulty_score": 28,
+    "tags": [
+      "measurement_scale",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": "A kitchen scale marked from 0 g to 500 g with 10 equal divisions",
+    "hint": {
+      "level_0": "Each division = 500 \u00f7 10 = 50 g.",
+      "level_1": "The 7th mark = 7 \u00d7 50 g.",
+      "level_2": "Take a moment to carefully evaluate each choice before answering."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 350 g.",
+      "0": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+      "1": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+      "3": "This doesn't match all the conditions in the problem. Test each clue against your answer."
+    },
+    "visual_svg": "<svg viewBox=\"0 0 200 100\" xmlns=\"http://www.w3.org/2000/svg\"><line x1=\"100\" y1=\"10\" x2=\"100\" y2=\"30\" stroke=\"#333\" stroke-width=\"2\"/><polygon points=\"95,10 105,10 100,5\" fill=\"#333\"/><line x1=\"40\" y1=\"30\" x2=\"160\" y2=\"30\" stroke=\"#333\" stroke-width=\"2\"/><line x1=\"40\" y1=\"30\" x2=\"40\" y2=\"45\" stroke=\"#333\" stroke-width=\"1.5\"/><line x1=\"160\" y1=\"30\" x2=\"160\" y2=\"45\" stroke=\"#333\" stroke-width=\"1.5\"/><path d=\"M25,45 Q40,55 55,45\" fill=\"none\" stroke=\"#333\" stroke-width=\"1.5\"/><path d=\"M145,45 Q160,55 175,45\" fill=\"none\" stroke=\"#333\" stroke-width=\"1.5\"/></svg>",
+    "visual_alt": "Visual for: A kitchen scale has markings from 0 g to 500 g. Th"
+  },
+  {
+    "id": "SING-G2-SMC-030",
+    "stem": "Mei Ling thought of a number. She doubled it, then added 6, and got 22. What was her original number?",
+    "choices": [
+      "6",
+      "8",
+      "10",
+      "14"
+    ],
+    "correct_answer": "B",
+    "difficulty_tier": "medium",
+    "difficulty_score": 29,
+    "tags": [
+      "work_backwards",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "Reverse the steps: 22 \u2212 6 = 16.",
+      "level_1": "Then halve it: 16 \u00f7 2 = ?",
+      "level_2": "Take a moment to carefully evaluate each choice before answering."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 8.",
+      "0": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+      "2": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+      "3": "Not quite. You're off by 6. Re-check your arithmetic step by step."
+    }
+  },
+  {
+    "id": "SING-G2-SMC-041",
+    "stem": "In a garden, for every 3 red flowers, there are 5 yellow flowers. If there are 12 red flowers, how many yellow flowers are there?",
+    "choices": [
+      "15",
+      "17",
+      "20",
+      "24"
+    ],
+    "correct_answer": "C",
+    "difficulty_tier": "medium",
+    "difficulty_score": 30,
+    "tags": [
+      "ratio_basic",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "12 red flowers \u00f7 3 = 4 groups.",
+      "level_1": "Each group has 5 yellow flowers.",
+      "level_2": "4 \u00d7 5 = ?"
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 20.",
+      "0": "Not quite. You're off by 5. Re-check your arithmetic step by step.",
+      "1": "Not quite. You're off by 3. Re-check your arithmetic step by step.",
+      "3": "Not quite. You're off by 4. Re-check your arithmetic step by step."
+    }
+  },
+  {
+    "id": "SING-G2-SMC-046",
+    "stem": "A wire is 1 m long. Ahmad cuts off 35 cm. He then cuts the remaining wire into 5 equal parts. How long is each part?",
+    "choices": [
+      "10 cm",
+      "13 cm",
+      "15 cm",
+      "20 cm"
+    ],
+    "correct_answer": "B",
+    "difficulty_tier": "medium",
+    "difficulty_score": 31,
+    "tags": [
+      "measurement_cutting",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "1 m = 100 cm.",
+      "level_1": "Remaining wire = 100 \u2212 35 = 65 cm.",
+      "level_2": "Each part = 65 \u00f7 5."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 13 cm.",
+      "0": "Not quite. You're off by 3. Re-check your arithmetic step by step.",
+      "2": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+      "3": "Not quite. You're off by 7. Re-check your arithmetic step by step."
+    }
+  },
+  {
+    "id": "SING-G2-SMC-053",
+    "stem": "A tank contains 4 litres 500 ml of water. Priya pours out 1 litre 750 ml. How much water is left in the tank?",
+    "choices": [
+      "2 \u2113 250 ml",
+      "2 \u2113 500 ml",
+      "2 \u2113 750 ml",
+      "3 \u2113 250 ml"
+    ],
+    "correct_answer": "C",
+    "difficulty_tier": "medium",
+    "difficulty_score": 32,
+    "tags": [
+      "measurement_volume",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "4500 ml \u2212 1750 ml = 2750 ml = 2 \u2113 750 ml.",
+      "level_1": "Let's review the core details of the question stem.",
+      "level_2": "Try testing each option to see which one matches the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 2 \u2113 750 ml.",
+      "0": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+      "1": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+      "3": "This doesn't match all the conditions in the problem. Test each clue against your answer."
+    }
+  },
+  {
+    "id": "SING-G2-SMC-057",
+    "stem": "A shopkeeper gives 1 sweet to the 1st customer, 3 sweets to the 2nd customer, 5 sweets to the 3rd customer, and so on. How many sweets does the 8th customer get?",
+    "choices": [
+      "13",
+      "15",
+      "17",
+      "19"
+    ],
+    "correct_answer": "B",
+    "difficulty_tier": "medium",
+    "difficulty_score": 33,
+    "tags": [
+      "patterns_distribution",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "The pattern increases by 2 each time: 1, 3, 5, 7, 9, 11, 13, 15.",
+      "level_1": "The 8th number is 15.",
+      "level_2": "Take a moment to carefully evaluate each choice before answering."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 15.",
+      "0": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+      "2": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+      "3": "Not quite. You're off by 4. Re-check your arithmetic step by step."
+    }
+  },
+  {
+    "id": "SING-G2-SMC-065",
+    "stem": "A balance scale is level. The left side has 3 identical apples. The right side has 1 apple and 400 g. What is the mass of one apple?",
+    "choices": [
+      "100 g",
+      "150 g",
+      "200 g",
+      "400 g"
+    ],
+    "correct_answer": "C",
+    "difficulty_tier": "medium",
+    "difficulty_score": 34,
+    "tags": [
+      "balance_equations",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": "A balance scale with 3 apples on the left and 1 apple plus a 400 g weight on the right",
+    "hint": {
+      "level_0": "3 apples = 1 apple + 400 g.",
+      "level_1": "Remove 1 apple from both sides: 2 apples = 400 g.",
+      "level_2": "So 1 apple = ?"
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 200 g.",
+      "0": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+      "1": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+      "3": "This doesn't match all the conditions in the problem. Test each clue against your answer."
+    }
+  },
+  {
+    "id": "SING-G2-SMC-070",
+    "stem": "Four animals had a race. The rabbit finished before the cat. The dog finished before the rabbit. The hamster finished after the cat. What position did the rabbit finish in?",
+    "choices": [
+      "1st",
+      "2nd",
+      "3rd",
+      "4th"
+    ],
+    "correct_answer": "B",
+    "difficulty_tier": "medium",
+    "difficulty_score": 35,
+    "tags": [
+      "logic_chain",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "Dog before Rabbit, Rabbit before Cat, Cat before Hamster.",
+      "level_1": "Order: Dog, Rabbit, Cat, Hamster.",
+      "level_2": "Take a moment to carefully evaluate each choice before answering."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 2nd.",
+      "0": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+      "2": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+      "3": "This doesn't match all the conditions in the problem. Test each clue against your answer."
+    }
+  },
+  {
+    "id": "SING-G2-SMC-078",
+    "stem": "A sunflower is 1 m 35 cm tall. It grows 8 cm each week. How tall will it be after 5 weeks?",
+    "choices": [
+      "1 m 43 cm",
+      "1 m 65 cm",
+      "1 m 75 cm",
+      "1 m 85 cm"
+    ],
+    "correct_answer": "C",
+    "difficulty_tier": "medium",
+    "difficulty_score": 36,
+    "tags": [
+      "measurement_height",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "Growth in 5 weeks = 5 \u00d7 8 = 40 cm.",
+      "level_1": "New height = 135 + 40 = 175 cm = 1 m 75 cm.",
+      "level_2": "Take a moment to carefully evaluate each choice before answering."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 1 m 75 cm.",
+      "0": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+      "1": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+      "3": "This doesn't match all the conditions in the problem. Test each clue against your answer."
+    }
+  },
+  {
+    "id": "SING-G2-SMC-010",
+    "stem": "A basket of rambutans has a mass of 1 kg 200 g. The empty basket has a mass of 450 g. What is the mass of the rambutans alone?",
+    "choices": [
+      "650 g",
+      "750 g",
+      "850 g",
+      "700 g"
+    ],
+    "correct_answer": "B",
+    "difficulty_tier": "medium",
+    "difficulty_score": 37,
+    "tags": [
+      "measurement_mass",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "Convert 1 kg 200 g to 1200 g first.",
+      "level_1": "Then subtract the mass of the basket.",
+      "level_2": "Take a moment to carefully evaluate each choice before answering."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 750 g.",
+      "0": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+      "2": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+      "3": "This doesn't match all the conditions in the problem. Test each clue against your answer."
+    }
+  },
+  {
+    "id": "SING-G2-SMC-023",
+    "stem": "A florist arranges roses into bunches. She can make equal bunches of 3 or equal bunches of 7 with no roses left over. What is the smallest number of roses she could have?",
+    "choices": [
+      "10",
+      "14",
+      "21",
+      "42"
+    ],
+    "correct_answer": "C",
+    "difficulty_tier": "medium",
+    "difficulty_score": 38,
+    "tags": [
+      "divisibility_LCM",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "Find the smallest number that is in both the 3 times table and the 7 times table.",
+      "level_1": "Let's review the core details of the question stem.",
+      "level_2": "Try testing each option to see which one matches the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 21.",
+      "0": "Re-read the problem carefully and check which numbers and operations to use.",
+      "1": "Not quite. You're off by 7. Re-check your arithmetic step by step.",
+      "3": "You doubled when you shouldn't have. Re-read the problem \u2014 are you counting each item once or twice?"
+    }
+  },
+  {
+    "id": "SING-G2-SMC-029",
+    "stem": "Ahmad had some marbles. He gave 12 marbles to Bala and then received 5 marbles from Chen. He now has 28 marbles. How many marbles did Ahmad have at first?",
+    "choices": [
+      "21",
+      "35",
+      "40",
+      "45"
+    ],
+    "correct_answer": "B",
+    "difficulty_tier": "medium",
+    "difficulty_score": 39,
+    "tags": [
+      "work_backwards",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "Work backwards from 28.",
+      "level_1": "Before receiving 5: 28 \u2212 5 = 23.",
+      "level_2": "Before giving 12: 23 + 12 = ?"
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 35.",
+      "0": "Re-read the problem carefully and check which numbers and operations to use.",
+      "2": "Not quite. You're off by 5. Re-check your arithmetic step by step.",
+      "3": "Not quite. You're off by 10. Re-check your arithmetic step by step."
+    }
+  },
+  {
+    "id": "SING-G2-SMC-042",
+    "stem": "For every 2 boys in a class, there are 3 girls. If there are 10 boys, how many children are there in the class altogether?",
+    "choices": [
+      "15",
+      "20",
+      "25",
+      "30"
+    ],
+    "correct_answer": "C",
+    "difficulty_tier": "medium",
+    "difficulty_score": 40,
+    "tags": [
+      "ratio_basic",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "10 boys \u00f7 2 = 5 groups.",
+      "level_1": "Each group has 3 girls, so 5 \u00d7 3 = 15 girls.",
+      "level_2": "Total = 10 + 15."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 25.",
+      "0": "Not quite. You're off by 10. Re-check your arithmetic step by step.",
+      "1": "Not quite. You're off by 5. Re-check your arithmetic step by step.",
+      "3": "Not quite. You're off by 5. Re-check your arithmetic step by step."
+    }
+  },
+  {
+    "id": "SING-G2-SMC-071",
+    "stem": "Five friends compare the number of stickers they have. Siti has more than Ahmad. Ravi has fewer than Ahmad. Mei Ling has more than Siti. Priya has fewer than Ravi. Who has the most stickers?",
+    "choices": [
+      "Siti",
+      "Ahmad",
+      "Mei Ling",
+      "Priya"
+    ],
+    "correct_answer": "C",
+    "difficulty_tier": "hard",
+    "difficulty_score": 41,
+    "tags": [
+      "logic_chain",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "Order from the clues: Mei Ling > Siti > Ahmad > Ravi > Priya.",
+      "level_1": "Let's review the core details of the question stem.",
+      "level_2": "Try testing each option to see which one matches the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is Mei Ling.",
+      "0": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+      "1": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+      "3": "This doesn't match all the conditions in the problem. Test each clue against your answer."
+    }
+  },
+  {
+    "id": "SING-G2-SMC-028",
+    "stem": "A scale reads from 0 to 2 kg. There are 8 equal divisions between 0 and 2 kg. A bag of sweets makes the pointer point to the 5th mark. What is the mass of the bag of sweets?",
+    "choices": [
+      "1 kg",
+      "1 kg 100 g",
+      "1 kg 200 g",
+      "1 kg 250 g"
+    ],
+    "correct_answer": "D",
+    "difficulty_tier": "hard",
+    "difficulty_score": 42,
+    "tags": [
+      "measurement_scale",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": "A scale from 0 to 2 kg with 8 equal divisions",
+    "hint": {
+      "level_0": "Each division = 2000 g \u00f7 8 = 250 g.",
+      "level_1": "The 5th mark = 5 \u00d7 250 g.",
+      "level_2": "Take a moment to carefully evaluate each choice before answering."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 1 kg 250 g.",
+      "0": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+      "1": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+      "2": "This doesn't match all the conditions in the problem. Test each clue against your answer."
+    }
+  },
+  {
+    "id": "SING-G2-SMC-036",
+    "stem": "A bus can carry 12 passengers. There are 80 people waiting. What is the smallest number of trips the bus must make to carry everyone?",
+    "choices": [
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "correct_answer": "B",
+    "difficulty_tier": "hard",
+    "difficulty_score": 43,
+    "tags": [
+      "distribution_remainder",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "12 \u00d7 6 = 72 (not enough).",
+      "level_1": "12 \u00d7 7 = 84 (enough).",
+      "level_2": "Even though there is a remainder, we need one more trip."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 7.",
+      "0": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?",
+      "2": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?",
+      "3": "You're off by 2. Check whether you accidentally included or excluded boundary values."
+    }
+  },
+  {
+    "id": "SING-G2-SMC-043",
+    "stem": "At a pet shop, for every 4 goldfish, there are 3 guppies. If there are 28 goldfish, how many fish are there in total?",
+    "choices": [
+      "21",
+      "42",
+      "49",
+      "52"
+    ],
+    "correct_answer": "C",
+    "difficulty_tier": "hard",
+    "difficulty_score": 44,
+    "tags": [
+      "ratio_basic",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "28 goldfish \u00f7 4 = 7 groups.",
+      "level_1": "Guppies = 7 \u00d7 3 = 21.",
+      "level_2": "Total fish = 28 + 21."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 49.",
+      "0": "Re-read the problem carefully and check which numbers and operations to use.",
+      "1": "Not quite. You're off by 7. Re-check your arithmetic step by step.",
+      "3": "Not quite. You're off by 3. Re-check your arithmetic step by step."
+    }
+  },
+  {
+    "id": "SING-G2-SMC-055",
+    "stem": "Bottle A holds 1 \u2113 200 ml. Bottle B holds 850 ml. Bottle C holds 1 \u2113 50 ml. How much liquid do all three bottles hold altogether?",
+    "choices": [
+      "2 \u2113 100 ml",
+      "3 \u2113",
+      "3 \u2113 100 ml",
+      "3 \u2113 200 ml"
+    ],
+    "correct_answer": "C",
+    "difficulty_tier": "hard",
+    "difficulty_score": 45,
+    "tags": [
+      "measurement_volume",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "Convert to ml: 1200 + 850 + 1050 = 3100 ml = 3 \u2113 100 ml.",
+      "level_1": "Let's review the core details of the question stem.",
+      "level_2": "Try testing each option to see which one matches the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 3 \u2113 100 ml.",
+      "0": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+      "1": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+      "3": "This doesn't match all the conditions in the problem. Test each clue against your answer."
+    }
+  },
+  {
+    "id": "SING-G2-SMC-072",
+    "stem": "Wei Jie, Xia, Ying, and Zara each have a different pet. Wei Jie's pet has fur. Xia's pet lives in water. Ying's pet can fly. The four pets are a bird, a fish, a hamster, and a turtle. What is Zara's pet?",
+    "choices": [
+      "Bird",
+      "Fish",
+      "Hamster",
+      "Turtle"
+    ],
+    "correct_answer": "D",
+    "difficulty_tier": "hard",
+    "difficulty_score": 46,
+    "tags": [
+      "logic_chain",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "Wei Jie has fur \u2192 hamster.",
+      "level_1": "Xia lives in water \u2192 fish. Ying can fly \u2192 bird.",
+      "level_2": "What is left for Zara?"
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is Turtle.",
+      "0": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+      "1": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+      "2": "This doesn't match all the conditions in the problem. Test each clue against your answer."
+    }
+  },
+  {
+    "id": "SING-G2-SMC-079",
+    "stem": "A bookshelf has 4 shelves. The bottom shelf is 20 cm above the floor. Each shelf is 35 cm above the one below. How high is the top shelf from the floor?",
+    "choices": [
+      "120 cm",
+      "125 cm",
+      "140 cm",
+      "160 cm"
+    ],
+    "correct_answer": "B",
+    "difficulty_tier": "hard",
+    "difficulty_score": 47,
+    "tags": [
+      "measurement_height",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": "A bookshelf with 4 shelves, bottom shelf at 20 cm from floor, equal spacing between shelves",
+    "hint": {
+      "level_0": "Bottom shelf = 20 cm.",
+      "level_1": "There are 3 gaps above it (to shelves 2, 3, 4).",
+      "level_2": "Top shelf = 20 + 3 \u00d7 35."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 125 cm.",
+      "0": "Not quite. You're off by 5. Re-check your arithmetic step by step.",
+      "2": "Re-read the problem carefully and check which numbers and operations to use.",
+      "3": "Re-read the problem carefully and check which numbers and operations to use."
+    }
+  },
+  {
+    "id": "SING-G2-SMC-004",
+    "stem": "Three friends each pick a number card: 3, 7, and 9. Priya's number is odd and greater than 5. Wei Jie's number is less than Priya's number but greater than 4. What number does Aisha have?",
+    "choices": [
+      "3",
+      "7",
+      "9",
+      "Cannot be determined"
+    ],
+    "correct_answer": "A",
+    "difficulty_tier": "hard",
+    "difficulty_score": 48,
+    "tags": [
+      "logic_deduction",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "All three numbers are odd and greater than 5, but only 7 and 9 qualify.",
+      "level_1": "Priya's is odd and greater than 5. Could Priya have 7 or 9?",
+      "level_2": "Then figure out Wei Jie's."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 3.",
+      "1": "Not quite. You're off by 4. Re-check your arithmetic step by step.",
+      "2": "Not quite. You're off by 6. Re-check your arithmetic step by step.",
+      "3": "This doesn't match all the conditions in the problem. Test each clue against your answer."
+    }
+  },
+  {
+    "id": "SING-G2-SMC-006",
+    "stem": "Ravi builds shapes using matchsticks. Shape 1 uses 4 matchsticks (a square). Shape 2 uses 7 matchsticks (two squares sharing a side). Shape 3 uses 10 matchsticks. How many matchsticks does Shape 5 use?",
+    "choices": [
+      "13",
+      "15",
+      "16",
+      "18"
+    ],
+    "correct_answer": "C",
+    "difficulty_tier": "hard",
+    "difficulty_score": 49,
+    "tags": [
+      "patterns_growing",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": "A row of squares made from matchsticks, each new square shares one side with the previous one",
+    "hint": {
+      "level_0": "Each new shape adds 3 more matchsticks.",
+      "level_1": "Shape 4 = 13, Shape 5 = ?",
+      "level_2": "Take a moment to carefully evaluate each choice before answering."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 16.",
+      "0": "Not quite. You're off by 3. Re-check your arithmetic step by step.",
+      "1": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?",
+      "3": "You're off by 2. Check whether you accidentally included or excluded boundary values."
+    },
+    "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 190\" width=\"300\" height=\"190\" style=\"font-family:Arial,sans-serif\"><rect x=\"80\" y=\"20\" width=\"140\" height=\"140\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2.5\"/><text x=\"150\" y=\"178\" text-anchor=\"middle\" font-size=\"13\" fill=\"#333\">1 cm</text></svg>"
+  },
+  {
+    "id": "SING-G2-SMC-011",
+    "stem": "Bag A has a mass of 2 kg. Bag B is 650 g lighter than Bag A. Bag C is 400 g heavier than Bag B. What is the mass of Bag C?",
+    "choices": [
+      "1350 g",
+      "1750 g",
+      "1650 g",
+      "1450 g"
+    ],
+    "correct_answer": "B",
+    "difficulty_tier": "hard",
+    "difficulty_score": 50,
+    "tags": [
+      "measurement_mass",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "Bag A = 2000 g.",
+      "level_1": "Bag B = 2000 \u2212 650 = 1350 g.",
+      "level_2": "Bag C = 1350 + 400 = ?"
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 1750 g.",
+      "0": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+      "2": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+      "3": "This doesn't match all the conditions in the problem. Test each clue against your answer."
+    }
+  },
+  {
+    "id": "SING-G2-SMC-019",
+    "stem": "\u2665 + \u2666 = 13. \u2666 + \u2666 = 10. What is the value of \u2665 + \u2665?",
+    "choices": [
+      "16",
+      "18",
+      "14",
+      "12"
+    ],
+    "correct_answer": "A",
+    "difficulty_tier": "hard",
+    "difficulty_score": 51,
+    "tags": [
+      "algebra_symbol_eq",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": "Two equations using heart and diamond symbols",
+    "hint": {
+      "level_0": "From \u2666 + \u2666 = 10, \u2666 = 5.",
+      "level_1": "Then \u2665 = 13 \u2212 5 = 8.",
+      "level_2": "So \u2665 + \u2665 = ?"
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 16.",
+      "1": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+      "2": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+      "3": "Not quite. You're off by 4. Re-check your arithmetic step by step."
+    }
+  },
+  {
+    "id": "SING-G2-SMC-027",
+    "stem": "A scale shows mass in kilograms. The markings go from 0 to 5 kg. There are 4 equal parts between each whole number. The pointer is on the 3rd mark after 2 kg. What is the mass shown?",
+    "choices": [
+      "2 kg 300 g",
+      "2 kg 600 g",
+      "2 kg 750 g",
+      "2 kg 800 g"
+    ],
+    "correct_answer": "C",
+    "difficulty_tier": "hard",
+    "difficulty_score": 52,
+    "tags": [
+      "measurement_scale",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": "A weighing scale from 0 to 5 kg with 4 equal divisions between whole numbers",
+    "hint": {
+      "level_0": "4 equal parts between whole numbers means each part = 1000 \u00f7 4 = 250 g.",
+      "level_1": "The 3rd mark after 2 kg = 2 kg + 3 \u00d7 250 g.",
+      "level_2": "Take a moment to carefully evaluate each choice before answering."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 2 kg 750 g.",
+      "0": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+      "1": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+      "3": "This doesn't match all the conditions in the problem. Test each clue against your answer."
+    },
+    "visual_svg": "<svg viewBox=\"0 0 200 100\" xmlns=\"http://www.w3.org/2000/svg\"><line x1=\"100\" y1=\"10\" x2=\"100\" y2=\"30\" stroke=\"#333\" stroke-width=\"2\"/><polygon points=\"95,10 105,10 100,5\" fill=\"#333\"/><line x1=\"40\" y1=\"30\" x2=\"160\" y2=\"30\" stroke=\"#333\" stroke-width=\"2\"/><line x1=\"40\" y1=\"30\" x2=\"40\" y2=\"45\" stroke=\"#333\" stroke-width=\"1.5\"/><line x1=\"160\" y1=\"30\" x2=\"160\" y2=\"45\" stroke=\"#333\" stroke-width=\"1.5\"/><path d=\"M25,45 Q40,55 55,45\" fill=\"none\" stroke=\"#333\" stroke-width=\"1.5\"/><path d=\"M145,45 Q160,55 175,45\" fill=\"none\" stroke=\"#333\" stroke-width=\"1.5\"/></svg>",
+    "visual_alt": "Visual for: A scale shows mass in kilograms. The markings go f"
+  },
+  {
+    "id": "SING-G2-SMC-031",
+    "stem": "Priya had some stickers. She gave half to Siti, then bought 10 more. She now has 30 stickers. How many stickers did Priya have at first?",
+    "choices": [
+      "20",
+      "30",
+      "40",
+      "50"
+    ],
+    "correct_answer": "C",
+    "difficulty_tier": "hard",
+    "difficulty_score": 53,
+    "tags": [
+      "work_backwards",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "Work backwards: before buying 10 more, she had 30 \u2212 10 = 20.",
+      "level_1": "She gave half away, so 20 is half.",
+      "level_2": "The original = 20 \u00d7 2."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 40.",
+      "0": "You may have divided when you should have multiplied, or only counted half the items.",
+      "1": "Not quite. You're off by 10. Re-check your arithmetic step by step.",
+      "3": "Not quite. You're off by 10. Re-check your arithmetic step by step."
+    }
+  },
+  {
+    "id": "SING-G2-SMC-064",
+    "stem": "\u2665 + \u25cf = 20. \u2665 = \u25cf + 6. What is the value of \u25cf?",
+    "choices": [
+      "5",
+      "7",
+      "9",
+      "13"
+    ],
+    "correct_answer": "B",
+    "difficulty_tier": "hard",
+    "difficulty_score": 54,
+    "tags": [
+      "algebra_simultaneous",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": "Two equations with heart and circle symbols",
+    "hint": {
+      "level_0": "Replace \u2665 with \u25cf + 6 in the first equation: (\u25cf + 6) + \u25cf = 20.",
+      "level_1": "So 2\u25cf + 6 = 20.",
+      "level_2": "Take a moment to carefully evaluate each choice before answering."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 7.",
+      "0": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+      "2": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+      "3": "Not quite. You're off by 6. Re-check your arithmetic step by step."
+    }
+  },
+  {
+    "id": "SING-G2-SMC-067",
+    "stem": "A balance scale is level. The left pan has 4 identical toy cars. The right pan has 2 toy cars and a 300 g weight. What is the mass of each toy car?",
+    "choices": [
+      "100 g",
+      "150 g",
+      "200 g",
+      "300 g"
+    ],
+    "correct_answer": "B",
+    "difficulty_tier": "hard",
+    "difficulty_score": 55,
+    "tags": [
+      "balance_equations",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": "A balance scale with 4 toy cars on the left and 2 toy cars plus a 300 g weight on the right",
+    "hint": {
+      "level_0": "4 cars = 2 cars + 300 g.",
+      "level_1": "Remove 2 cars from each side: 2 cars = 300 g.",
+      "level_2": "So 1 car = ?"
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 150 g.",
+      "0": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+      "2": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+      "3": "This doesn't match all the conditions in the problem. Test each clue against your answer."
+    }
+  },
+  {
+    "id": "SING-G2-SMC-076",
+    "stem": "A chessboard-pattern has 4 rows and 4 columns. Each small square is either black or white, and no two squares sharing a side have the same colour. How many black squares are there?",
+    "choices": [
+      "4",
+      "6",
+      "8",
+      "10"
+    ],
+    "correct_answer": "C",
+    "difficulty_tier": "hard",
+    "difficulty_score": 56,
+    "tags": [
+      "grid_spatial",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": "A 4 \u00d7 4 chessboard pattern with alternating black and white squares",
+    "hint": {
+      "level_0": "A 4 \u00d7 4 grid has 16 squares.",
+      "level_1": "In a chessboard pattern, exactly half are black.",
+      "level_2": "Take a moment to carefully evaluate each choice before answering."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 8.",
+      "0": "You may have divided when you should have multiplied, or only counted half the items.",
+      "1": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+      "3": "You're off by 2. Check whether you accidentally included or excluded boundary values."
+    }
+  },
+  {
+    "id": "SING-G2-SMC-080",
+    "stem": "Chen is 1 m 10 cm tall. His sister is 25 cm shorter. Their father is twice as tall as Chen's sister. How tall is their father?",
+    "choices": [
+      "1 m 50 cm",
+      "1 m 70 cm",
+      "1 m 80 cm",
+      "2 m 20 cm"
+    ],
+    "correct_answer": "B",
+    "difficulty_tier": "hard",
+    "difficulty_score": 57,
+    "tags": [
+      "measurement_height",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "Sister = 110 \u2212 25 = 85 cm.",
+      "level_1": "Father = 2 \u00d7 85 = 170 cm = 1 m 70 cm.",
+      "level_2": "Take a moment to carefully evaluate each choice before answering."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 1 m 70 cm.",
+      "0": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+      "2": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+      "3": "This doesn't match all the conditions in the problem. Test each clue against your answer."
+    }
+  },
+  {
+    "id": "SING-G2-SMC-001",
+    "stem": "Mei Ling, Ravi, and Siti each have a different favourite fruit: mango, durian, and rambutan. Mei Ling does not like durian. Ravi does not like mango or durian. What is Siti's favourite fruit?",
+    "choices": [
+      "Mango",
+      "Durian",
+      "Rambutan",
+      "Cannot be determined"
+    ],
+    "correct_answer": "B",
+    "difficulty_tier": "hard",
+    "difficulty_score": 58,
+    "tags": [
+      "logic_deduction",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "Start with the person who has the most restrictions.",
+      "level_1": "Ravi does not like mango or durian, so what must Ravi like?",
+      "level_2": "Take a moment to carefully evaluate each choice before answering."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is Durian.",
+      "0": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+      "2": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+      "3": "This doesn't match all the conditions in the problem. Test each clue against your answer."
+    }
+  },
+  {
+    "id": "SING-G2-SMC-017",
+    "stem": "\u2606 + \u25ef = 15. \u2606 \u2212 \u25ef = 3. What is the value of \u2606?",
+    "choices": [
+      "6",
+      "9",
+      "12",
+      "7"
+    ],
+    "correct_answer": "B",
+    "difficulty_tier": "hard",
+    "difficulty_score": 59,
+    "tags": [
+      "algebra_symbol_eq",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": "Two equations using star and circle symbols",
+    "hint": {
+      "level_0": "Add the two equations: \u2606 + \u25ef + \u2606 \u2212 \u25ef = 15 + 3, so 2 \u00d7 \u2606 = 18.",
+      "level_1": "Let's review the core details of the question stem.",
+      "level_2": "Try testing each option to see which one matches the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 9.",
+      "0": "Not quite. You're off by 3. Re-check your arithmetic step by step.",
+      "2": "Not quite. You're off by 3. Re-check your arithmetic step by step.",
+      "3": "You're off by 2. Check whether you accidentally included or excluded boundary values."
+    }
+  },
+  {
+    "id": "SING-G2-SMC-025",
+    "stem": "A weighing scale shows a reading between 1 kg and 2 kg. The pointer is at the 3rd small mark after 1 kg. There are 5 equal small marks between 1 kg and 2 kg. What is the mass shown?",
+    "choices": [
+      "1 kg 200 g",
+      "1 kg 300 g",
+      "1 kg 400 g",
+      "1 kg 600 g"
+    ],
+    "correct_answer": "D",
+    "difficulty_tier": "hard",
+    "difficulty_score": 60,
+    "tags": [
+      "measurement_scale",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": "A circular weighing scale with a pointer. The scale is marked from 0 to 3 kg with 5 equal divisions between each whole number.",
+    "hint": {
+      "level_0": "If there are 5 equal marks between 1 kg and 2 kg, each mark represents 1000 \u00f7 5 = 200 g.",
+      "level_1": "The 3rd mark = 1 kg + 3 \u00d7 200 g.",
+      "level_2": "Take a moment to carefully evaluate each choice before answering."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 1 kg 600 g.",
+      "0": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+      "1": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+      "2": "This doesn't match all the conditions in the problem. Test each clue against your answer."
+    },
+    "visual_svg": "<svg viewBox=\"0 0 200 100\" xmlns=\"http://www.w3.org/2000/svg\"><line x1=\"100\" y1=\"10\" x2=\"100\" y2=\"30\" stroke=\"#333\" stroke-width=\"2\"/><polygon points=\"95,10 105,10 100,5\" fill=\"#333\"/><line x1=\"40\" y1=\"30\" x2=\"160\" y2=\"30\" stroke=\"#333\" stroke-width=\"2\"/><line x1=\"40\" y1=\"30\" x2=\"40\" y2=\"45\" stroke=\"#333\" stroke-width=\"1.5\"/><line x1=\"160\" y1=\"30\" x2=\"160\" y2=\"45\" stroke=\"#333\" stroke-width=\"1.5\"/><path d=\"M25,45 Q40,55 55,45\" fill=\"none\" stroke=\"#333\" stroke-width=\"1.5\"/><path d=\"M145,45 Q160,55 175,45\" fill=\"none\" stroke=\"#333\" stroke-width=\"1.5\"/></svg>",
+    "visual_alt": "Visual for: A weighing scale shows a reading between 1 kg and "
+  },
+  {
+    "id": "SING-G2-SMC-032",
+    "stem": "A baker made some curry puffs. He sold 35 in the morning and 28 in the afternoon. He then baked 20 more. He now has 17 curry puffs. How many did he start with?",
+    "choices": [
+      "50",
+      "55",
+      "60",
+      "80"
+    ],
+    "correct_answer": "C",
+    "difficulty_tier": "olympiad",
+    "difficulty_score": 61,
+    "tags": [
+      "work_backwards",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "Work backwards from 17.",
+      "level_1": "Before baking 20 more: 17 \u2212 20 = \u22123? No \u2014 reverse adding: 17 \u2212 20 is wrong. He added 20, so before that he had 17 \u2212 20... Wait, undo: before baking 20 more he had fewer. Reverse: 17 \u2212 20 = \u22123 doesn't work. Think again: he baked 20 more (added). So before that: 17 \u2212 20 = \u22123. Hmm, the original minus 35 minus 28 plus 20 = 17.",
+      "level_2": "So original = 17 + 35 + 28 \u2212 20."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 60.",
+      "0": "Not quite. You're off by 10. Re-check your arithmetic step by step.",
+      "1": "Not quite. You're off by 5. Re-check your arithmetic step by step.",
+      "3": "Re-read the problem carefully and check which numbers and operations to use."
+    }
+  },
+  {
+    "id": "SING-G2-SMC-044",
+    "stem": "Mrs Tan bakes cookies. For every 5 chocolate cookies, she bakes 2 peanut cookies. She bakes 35 cookies in total. How many peanut cookies does she bake?",
+    "choices": [
+      "7",
+      "10",
+      "14",
+      "25"
+    ],
+    "correct_answer": "B",
+    "difficulty_tier": "olympiad",
+    "difficulty_score": 62,
+    "tags": [
+      "ratio_basic",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "Each group has 5 + 2 = 7 cookies.",
+      "level_1": "35 \u00f7 7 = 5 groups.",
+      "level_2": "Peanut cookies = 5 \u00d7 2."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 10.",
+      "0": "Not quite. You're off by 3. Re-check your arithmetic step by step.",
+      "2": "Not quite. You're off by 4. Re-check your arithmetic step by step.",
+      "3": "Re-read the problem carefully and check which numbers and operations to use."
+    }
+  },
+  {
+    "id": "SING-G2-SMC-051",
+    "stem": "Grandma is 65 years old. She is 5 times as old as her granddaughter. How old was Grandma when her granddaughter was born?",
+    "choices": [
+      "45",
+      "48",
+      "50",
+      "52"
+    ],
+    "correct_answer": "D",
+    "difficulty_tier": "olympiad",
+    "difficulty_score": 63,
+    "tags": [
+      "age_problems",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "Granddaughter = 65 \u00f7 5 = 13 years old now.",
+      "level_1": "Grandma's age when granddaughter was born = 65 \u2212 13.",
+      "level_2": "Take a moment to carefully evaluate each choice before answering."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 52.",
+      "0": "Not quite. You're off by 7. Re-check your arithmetic step by step.",
+      "1": "Not quite. You're off by 4. Re-check your arithmetic step by step.",
+      "2": "You're off by 2. Check whether you accidentally included or excluded boundary values."
+    }
+  },
+  {
+    "id": "SING-G2-SMC-056",
+    "stem": "A fish tank needs 5 \u2113 of water. Siti uses a 750 ml bottle to fill it. What is the least number of full bottles she needs?",
+    "choices": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "correct_answer": "C",
+    "difficulty_tier": "olympiad",
+    "difficulty_score": 64,
+    "tags": [
+      "measurement_volume",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "5 \u2113 = 5000 ml.",
+      "level_1": "5000 \u00f7 750 = 6 remainder 500.",
+      "level_2": "She needs 6 full bottles + 1 more to cover the remaining 500 ml."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 7.",
+      "0": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+      "1": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?",
+      "3": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?"
+    }
+  },
+  {
+    "id": "SING-G2-SMC-061",
+    "stem": "\u25ef + \u25b3 = 14. \u25ef \u2212 \u25b3 = 4. What is the value of \u25ef?",
+    "choices": [
+      "5",
+      "7",
+      "9",
+      "10"
+    ],
+    "correct_answer": "C",
+    "difficulty_tier": "olympiad",
+    "difficulty_score": 65,
+    "tags": [
+      "algebra_simultaneous",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": "Two equations with circle and triangle symbols",
+    "hint": {
+      "level_0": "Add the two equations: \u25ef + \u25b3 + \u25ef \u2212 \u25b3 = 14 + 4.",
+      "level_1": "So 2 \u00d7 \u25ef = 18.",
+      "level_2": "Take a moment to carefully evaluate each choice before answering."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 9.",
+      "0": "Not quite. You're off by 4. Re-check your arithmetic step by step.",
+      "1": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+      "3": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?"
+    }
+  },
+  {
+    "id": "SING-G2-SMC-066",
+    "stem": "A balance scale is level. On the left side are 2 oranges and a 200 g weight. On the right side are 6 oranges. All oranges have the same mass. What is the mass of one orange?",
+    "choices": [
+      "25 g",
+      "50 g",
+      "75 g",
+      "100 g"
+    ],
+    "correct_answer": "B",
+    "difficulty_tier": "olympiad",
+    "difficulty_score": 66,
+    "tags": [
+      "balance_equations",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": "A balance scale with 2 oranges and a 200 g weight on the left, and 6 oranges on the right",
+    "hint": {
+      "level_0": "2 oranges + 200 g = 6 oranges.",
+      "level_1": "Remove 2 oranges from each side: 200 g = 4 oranges.",
+      "level_2": "So 1 orange = 200 \u00f7 4."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 50 g.",
+      "0": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+      "2": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+      "3": "This doesn't match all the conditions in the problem. Test each clue against your answer."
+    }
+  },
+  {
+    "id": "SING-G2-SMC-068",
+    "stem": "On a balanced scale, 5 identical books on the left weigh the same as 2 books and 900 g on the right. What is the mass of one book?",
+    "choices": [
+      "180 g",
+      "200 g",
+      "250 g",
+      "300 g"
+    ],
+    "correct_answer": "D",
+    "difficulty_tier": "olympiad",
+    "difficulty_score": 67,
+    "tags": [
+      "balance_equations",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": "A balance scale with 5 books on one side and 2 books plus a 900 g weight on the other",
+    "hint": {
+      "level_0": "5 books = 2 books + 900 g.",
+      "level_1": "So 3 books = 900 g.",
+      "level_2": "1 book = ?"
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 300 g.",
+      "0": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+      "1": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+      "2": "This doesn't match all the conditions in the problem. Test each clue against your answer."
+    }
+  },
+  {
+    "id": "SING-G2-SMC-073",
+    "stem": "A square has 4 dots, one on each corner. How many straight lines can be drawn connecting any 2 dots?",
+    "choices": [
+      "4",
+      "5",
+      "6",
+      "8"
+    ],
+    "correct_answer": "C",
+    "difficulty_tier": "olympiad",
+    "difficulty_score": 68,
+    "tags": [
+      "grid_spatial",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": "A square with dots at each corner labelled A, B, C, D",
+    "hint": {
+      "level_0": "Count all pairs: AB, AC, AD, BC, BD, CD.",
+      "level_1": "The 4 sides plus 2 diagonals.",
+      "level_2": "Take a moment to carefully evaluate each choice before answering."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 6.",
+      "0": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+      "1": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?",
+      "3": "You're off by 2. Check whether you accidentally included or excluded boundary values."
+    }
+  },
+  {
+    "id": "SING-G2-SMC-003",
+    "stem": "There are 5 boxes labelled A, B, C, D, and E. Box A is heavier than Box C. Box B is lighter than Box D. Box D is lighter than Box C. Box E is the heaviest. Which box is the lightest?",
+    "choices": [
+      "Box A",
+      "Box B",
+      "Box C",
+      "Box D"
+    ],
+    "correct_answer": "B",
+    "difficulty_tier": "olympiad",
+    "difficulty_score": 69,
+    "tags": [
+      "logic_deduction",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "Order the boxes step by step.",
+      "level_1": "B < D < C < A, and E is heaviest.",
+      "level_2": "Which is at the bottom?"
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is Box B.",
+      "0": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+      "2": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+      "3": "This doesn't match all the conditions in the problem. Test each clue against your answer."
+    }
+  },
+  {
+    "id": "SING-G2-SMC-022",
+    "stem": "Siti has some stickers. When she puts them in groups of 4, there are none left over. When she puts them in groups of 6, there are none left over. She has fewer than 30 stickers. How many stickers could she have?",
+    "choices": [
+      "12 or 24",
+      "16 or 24",
+      "18 or 24",
+      "12 or 18"
+    ],
+    "correct_answer": "A",
+    "difficulty_tier": "olympiad",
+    "difficulty_score": 70,
+    "tags": [
+      "divisibility_LCM",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "The number must be divisible by both 4 and 6.",
+      "level_1": "The smallest such number is 12.",
+      "level_2": "The next is 24."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 12 or 24.",
+      "1": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+      "2": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+      "3": "This doesn't match all the conditions in the problem. Test each clue against your answer."
+    }
+  },
+  {
+    "id": "SING-G2-SMC-058",
+    "stem": "Mei Ling saves money each week. In Week 1 she saves 5 cents, in Week 2 she saves 10 cents, in Week 3 she saves 20 cents, and in Week 4 she saves 40 cents. If the pattern continues, how much does she save in Week 6?",
+    "choices": [
+      "80 cents",
+      "$1.20",
+      "$1.60",
+      "$3.20"
+    ],
+    "correct_answer": "C",
+    "difficulty_tier": "olympiad",
+    "difficulty_score": 71,
+    "tags": [
+      "patterns_distribution",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "The amount doubles each week: 5, 10, 20, 40, 80, 160.",
+      "level_1": "Week 6 = 160 cents = $1.60.",
+      "level_2": "Take a moment to carefully evaluate each choice before answering."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is $1.60.",
+      "0": "Re-examine the pattern. Check the differences between ALL consecutive terms, not just the first pair.",
+      "1": "Re-examine the pattern. Check the differences between ALL consecutive terms, not just the first pair.",
+      "3": "You doubled when you shouldn't have. Re-read the problem \u2014 are you counting each item once or twice?"
+    }
+  },
+  {
+    "id": "SING-G2-SMC-063",
+    "stem": "\u25b2 + \u25a0 = 11. \u25b2 + \u25b2 + \u25a0 = 16. What is the value of \u25a0?",
+    "choices": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "correct_answer": "D",
+    "difficulty_tier": "olympiad",
+    "difficulty_score": 72,
+    "tags": [
+      "algebra_simultaneous",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": "Two equations with triangle and square symbols",
+    "hint": {
+      "level_0": "From the two equations: (\u25b2 + \u25b2 + \u25a0) \u2212 (\u25b2 + \u25a0) = 16 \u2212 11.",
+      "level_1": "So \u25b2 = 5.",
+      "level_2": "Then \u25a0 = 11 \u2212 5."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 6.",
+      "0": "You may have divided when you should have multiplied, or only counted half the items.",
+      "1": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+      "2": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?"
+    }
+  },
+  {
+    "id": "SING-G2-SMC-002",
+    "stem": "Four children \u2014 Ahmad, Bala, Chen, and Devi \u2014 sit in a row. Ahmad is not next to Bala. Chen sits at one end. Devi sits next to Ahmad. Who sits at the other end?",
+    "choices": [
+      "Ahmad",
+      "Bala",
+      "Devi",
+      "Cannot be determined"
+    ],
+    "correct_answer": "B",
+    "difficulty_tier": "olympiad",
+    "difficulty_score": 73,
+    "tags": [
+      "logic_deduction",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": "Four chairs in a row labelled Position 1 to Position 4",
+    "hint": {
+      "level_0": "Place Chen at one end first.",
+      "level_1": "Since Devi is next to Ahmad, try placing them together.",
+      "level_2": "Ahmad cannot be next to Bala."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is Bala.",
+      "0": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+      "2": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+      "3": "This doesn't match all the conditions in the problem. Test each clue against your answer."
+    }
+  },
+  {
+    "id": "SING-G2-SMC-008",
+    "stem": "Ahmad draws dots in a triangle pattern. Pattern 1 has 1 dot, Pattern 2 has 3 dots, Pattern 3 has 6 dots, Pattern 4 has 10 dots. How many dots are in Pattern 7?",
+    "choices": [
+      "21",
+      "25",
+      "28",
+      "36"
+    ],
+    "correct_answer": "C",
+    "difficulty_tier": "olympiad",
+    "difficulty_score": 74,
+    "tags": [
+      "patterns_growing",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": "Triangular dot arrangements growing by adding a new bottom row each time",
+    "hint": {
+      "level_0": "Pattern 5 = 15, Pattern 6 = 21, Pattern 7 adds 7 more dots to Pattern 6.",
+      "level_1": "Let's review the core details of the question stem.",
+      "level_2": "Try testing each option to see which one matches the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 28.",
+      "0": "Re-examine the pattern. Check the differences between ALL consecutive terms, not just the first pair.",
+      "1": "Re-examine the pattern. Check the differences between ALL consecutive terms, not just the first pair.",
+      "3": "Re-examine the pattern. Check the differences between ALL consecutive terms, not just the first pair."
+    }
+  },
+  {
+    "id": "SING-G2-SMC-048",
+    "stem": "A piece of string is 2 m long. Ravi cuts it into 4 equal pieces. He ties 2 pieces together (the knot uses 3 cm from each piece). How long is the tied piece?",
+    "choices": [
+      "94 cm",
+      "97 cm",
+      "100 cm",
+      "47 cm"
+    ],
+    "correct_answer": "A",
+    "difficulty_tier": "olympiad",
+    "difficulty_score": 75,
+    "tags": [
+      "measurement_cutting",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "Each piece = 200 \u00f7 4 = 50 cm.",
+      "level_1": "When tied, each piece loses 3 cm for the knot.",
+      "level_2": "Tied length = 50 + 50 \u2212 3 \u2212 3."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 94 cm.",
+      "1": "Not quite. You're off by 3. Re-check your arithmetic step by step.",
+      "2": "Not quite. You're off by 6. Re-check your arithmetic step by step.",
+      "3": "You may have divided when you should have multiplied, or only counted half the items."
+    }
+  },
+  {
+    "id": "SING-G2-SMC-062",
+    "stem": "\u2606 + \u2606 + \u2666 = 19. \u2606 + \u2666 + \u2666 = 17. What is the value of \u2606?",
+    "choices": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "correct_answer": "C",
+    "difficulty_tier": "olympiad",
+    "difficulty_score": 76,
+    "tags": [
+      "algebra_simultaneous",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": "Two equations with star and diamond symbols",
+    "hint": {
+      "level_0": "Subtract the second equation from the first: (\u2606 + \u2606 + \u2666) \u2212 (\u2606 + \u2666 + \u2666) = 19 \u2212 17.",
+      "level_1": "So \u2606 \u2212 \u2666 = 2.",
+      "level_2": "Take a moment to carefully evaluate each choice before answering."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 7.",
+      "0": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+      "1": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?",
+      "3": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?"
+    }
+  },
+  {
+    "id": "SING-G2-SMC-075",
+    "stem": "Mei Ling places coins on the sides of a triangle. She places 3 coins on each side. What is the smallest number of coins she needs?",
+    "choices": [
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "correct_answer": "A",
+    "difficulty_tier": "olympiad",
+    "difficulty_score": 77,
+    "tags": [
+      "grid_spatial",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": "A triangle with coins placed along each side, with corner coins shared between two sides",
+    "hint": {
+      "level_0": "The 3 corner coins are each shared by 2 sides.",
+      "level_1": "Each side has 3 coins, but the corners are counted twice.",
+      "level_2": "Total = 3 \u00d7 3 \u2212 3 = 6."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 6.",
+      "1": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?",
+      "2": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+      "3": "Not quite. You're off by 3. Re-check your arithmetic step by step."
+    },
+    "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 200\" width=\"300\" height=\"200\" style=\"font-family:Arial,sans-serif\"><polygon points=\"150,20 50,170 250,170\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2.5\"/><text x=\"150\" y=\"190\" text-anchor=\"middle\" font-size=\"13\" fill=\"#333\">3 cm</text><text x=\"30\" y=\"100\" text-anchor=\"middle\" font-size=\"13\" fill=\"#333\"></text></svg>"
+  },
+  {
+    "id": "SING-G2-SMC-007",
+    "stem": "Siti arranges beads in a pattern. Group 1 has 2 beads, Group 2 has 6 beads, Group 3 has 12 beads, Group 4 has 20 beads. How many beads are in Group 5?",
+    "choices": [
+      "28",
+      "30",
+      "32",
+      "36"
+    ],
+    "correct_answer": "B",
+    "difficulty_tier": "olympiad",
+    "difficulty_score": 78,
+    "tags": [
+      "patterns_growing",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": null,
+    "hint": {
+      "level_0": "Look at the differences: 4, 6, 8.",
+      "level_1": "The differences increase by 2 each time.",
+      "level_2": "The next difference is 10."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 30.",
+      "0": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+      "2": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+      "3": "Re-examine the pattern. Check the differences between ALL consecutive terms, not just the first pair."
+    }
+  },
+  {
+    "id": "SING-G2-SMC-020",
+    "stem": "\u25cf \u00d7 \u25b2 = 24. \u25cf + \u25b2 = 10. Both \u25cf and \u25b2 are whole numbers. What is \u25cf \u2212 \u25b2 if \u25cf is greater than \u25b2?",
+    "choices": [
+      "2",
+      "4",
+      "5",
+      "6"
+    ],
+    "correct_answer": "A",
+    "difficulty_tier": "olympiad",
+    "difficulty_score": 79,
+    "tags": [
+      "algebra_symbol_eq",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": "Two equations using circle and triangle symbols",
+    "hint": {
+      "level_0": "Find two numbers that multiply to give 24 and add to give 10.",
+      "level_1": "Try 6 and 4.",
+      "level_2": "Take a moment to carefully evaluate each choice before answering."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 2.",
+      "1": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+      "2": "Check your multiplication. Break it into smaller steps if needed.",
+      "3": "Check your multiplication. Break it into smaller steps if needed."
+    }
+  },
+  {
+    "id": "SING-G2-SMC-074",
+    "stem": "A 3 \u00d7 3 grid is made of unit squares. How many squares of all sizes can you find in the grid?",
+    "choices": [
+      "9",
+      "10",
+      "13",
+      "14"
+    ],
+    "correct_answer": "D",
+    "difficulty_tier": "olympiad",
+    "difficulty_score": 80,
+    "tags": [
+      "grid_spatial",
+      "competition",
+      "problem_solving"
+    ],
+    "chapter": "Singapore Math Challenge",
+    "visual_context": "A 3 \u00d7 3 grid of unit squares",
+    "hint": {
+      "level_0": "Count 1\u00d71 squares: 9.",
+      "level_1": "Count 2\u00d72 squares: 4. Count 3\u00d73 squares: 1.",
+      "level_2": "Total = 9 + 4 + 1."
+    },
+    "diagnostics": {
+      "correct_explanation": "The answer is 14.",
+      "0": "Check your multiplication. Break it into smaller steps if needed.",
+      "1": "Check your multiplication. Break it into smaller steps if needed.",
+      "2": "You're off by 1. Double-check your final calculation step \u2014 did you count the endpoints correctly?"
+    },
+    "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 190\" width=\"300\" height=\"190\" style=\"font-family:Arial,sans-serif\"><rect x=\"80\" y=\"20\" width=\"140\" height=\"140\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2.5\"/><text x=\"150\" y=\"178\" text-anchor=\"middle\" font-size=\"13\" fill=\"#333\">3 cm</text></svg>"
+  }
+]

@@ -1,8 +1,8 @@
-# Kiwimath API — production Docker image (v2-only)
+# Kiwimath API — production Docker image (v2 + v4 content)
 # Build:  docker build -t kiwimath-api .
 # Run:    docker run -p 8000:8000 kiwimath-api
 #
-# Content is bundled at build time (v2 in /content-v2).
+# Content is bundled at build time (v2 in /content-v2, v4 in /content-v4).
 
 FROM python:3.12-slim
 
@@ -20,6 +20,7 @@ COPY . .
 
 # Content directories — all curricula bundled at build time.
 ENV KIWIMATH_V2_CONTENT_DIR=/content-v2
+ENV KIWIMATH_V4_CONTENT_DIR=/content-v4
 ENV NCERT_CONTENT_DIR=/content-v2/ncert-curriculum
 ENV SINGAPORE_CONTENT_DIR=/content-v2/singapore-curriculum
 ENV USCC_CONTENT_DIR=/content-v2/us-common-core

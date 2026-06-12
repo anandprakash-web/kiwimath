@@ -6,6 +6,7 @@ import '../models/olympiad_worksheet.dart';
 import '../services/api_client.dart';
 import '../services/worksheet_cache.dart';
 import '../theme/kiwi_theme.dart';
+import '../widgets/authed_svg.dart';
 import '../widgets/drag_drop_tiles.dart';
 import '../widgets/fill_up_input.dart';
 import '../widgets/integer_input.dart';
@@ -21,11 +22,20 @@ class WorksheetSolveScreen extends StatefulWidget {
   final int day;
   final void Function(WorksheetResult result)? onComplete;
 
+  /// Optional pre-loaded worksheet (for v2 pillar flow).
+  /// When provided, skips the API fetch and uses this directly.
+  final OlympiadWorksheet? worksheet;
+
+  /// Optional user ID for progress tracking (v2 pillar flow).
+  final String? userId;
+
   const WorksheetSolveScreen({
     super.key,
     required this.grade,
-    required this.day,
+    this.day = 0,
     this.onComplete,
+    this.worksheet,
+    this.userId,
   });
 
   @override
@@ -38,6 +48,7 @@ class _WorksheetSolveScreenState extends State<WorksheetSolveScreen>
     with SingleTickerProviderStateMixin {
   final _api = ApiClient();
   final _cache = WorksheetCache.instance;
+  KiwiTier get _tier => KiwiTier.forGrade(widget.grade);
 
   OlympiadWorksheet? _worksheet;
   _Phase _phase = _Phase.loading;
@@ -85,6 +96,17 @@ class _WorksheetSolveScreenState extends State<WorksheetSolveScreen>
 
   Future<void> _loadWorksheet() async {
     try {
+      // v2 pillar flow — use pre-loaded worksheet
+      if (widget.worksheet != null) {
+        if (mounted) {
+          setState(() {
+            _worksheet = widget.worksheet;
+            _phase = _Phase.answering;
+            _stopwatch.start();
+          });
+        }
+        return;
+      }
       final ws = await _cache.getWorksheet(widget.grade, widget.day);
       if (mounted) {
         setState(() {
@@ -168,10 +190,10 @@ class _WorksheetSolveScreenState extends State<WorksheetSolveScreen>
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              const Icon(Icons.error_outline, size: 48, color: Colors.red),
+              const Icon(Icons.error_outline, size: 48, color: KiwiColors.coral),
               const SizedBox(height: 12),
               Text('Failed to load worksheet',
-                  style: TextStyle(fontSize: 16, color: colors.textPrimary)),
+                  style: TextStyle(fontSize: typo.bodySize, color: colors.textPrimary)),
               const SizedBox(height: 8),
               ElevatedButton(
                 onPressed: _loadWorksheet,
@@ -239,7 +261,7 @@ class _WorksheetSolveScreenState extends State<WorksheetSolveScreen>
 
   Widget _buildHeader(KiwiTierColors colors, KiwiTierTypography typo) {
     return Container(
-      padding: const EdgeInsets.fromLTRB(8, 8, 16, 8),
+      padding: const EdgeInsets.fromLTRB(KiwiSpacing.sm, KiwiSpacing.sm, KiwiSpacing.lg, KiwiSpacing.sm),
       child: Row(
         children: [
           // Back button
@@ -253,7 +275,7 @@ class _WorksheetSolveScreenState extends State<WorksheetSolveScreen>
           Text(
             'Day ${widget.day}',
             style: TextStyle(
-              fontSize: 15,
+              fontSize: typo.topicNameSize,
               fontWeight: FontWeight.w700,
               color: colors.textPrimary,
               fontFamily: typo.fontFamily,
@@ -264,11 +286,11 @@ class _WorksheetSolveScreenState extends State<WorksheetSolveScreen>
           // Progress bar
           Expanded(
             child: ClipRRect(
-              borderRadius: BorderRadius.circular(6),
+              borderRadius: BorderRadius.circular(KiwiSpacing.sm - 2),
               child: LinearProgressIndicator(
                 value: (_currentIndex + 1) / _totalQuestions,
                 minHeight: 8,
-                backgroundColor: const Color(0xFFE0E0E0),
+                backgroundColor: KiwiColors.pathLocked,
                 valueColor: AlwaysStoppedAnimation(colors.primary),
               ),
             ),
@@ -279,7 +301,7 @@ class _WorksheetSolveScreenState extends State<WorksheetSolveScreen>
           Text(
             '${_currentIndex + 1}/$_totalQuestions',
             style: TextStyle(
-              fontSize: 13,
+              fontSize: typo.topicNameSize,
               fontWeight: FontWeight.w700,
               color: colors.textMuted,
               fontFamily: typo.fontFamily,
@@ -299,36 +321,36 @@ class _WorksheetSolveScreenState extends State<WorksheetSolveScreen>
     String emoji;
     switch (tierLabel) {
       case 'warmup':
-        tierColor = const Color(0xFF4CAF50);
+        tierColor = KiwiColors.kiwiGreen;
         emoji = '\u{1F33F}'; // 🌿
         break;
       case 'challenge':
-        tierColor = const Color(0xFFE53935);
+        tierColor = KiwiColors.coral;
         emoji = '\u{1F525}'; // 🔥
         break;
       default:
-        tierColor = const Color(0xFFFF9800);
+        tierColor = KiwiColors.amber;
         emoji = '\u{1F4AA}'; // 💪
     }
 
     return Row(
       children: [
         Container(
-          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+          padding: const EdgeInsets.symmetric(horizontal: KiwiSpacing.sm + 2, vertical: KiwiSpacing.xs),
           decoration: BoxDecoration(
             color: tierColor.withOpacity(0.1),
-            borderRadius: BorderRadius.circular(8),
+            borderRadius: BorderRadius.circular(KiwiSpacing.sm),
             border: Border.all(color: tierColor.withOpacity(0.3)),
           ),
           child: Row(
             mainAxisSize: MainAxisSize.min,
             children: [
-              Text(emoji, style: const TextStyle(fontSize: 12)),
-              const SizedBox(width: 4),
+              Text(emoji, style: TextStyle(fontSize: typo.chipSize)),
+              const SizedBox(width: KiwiSpacing.xs),
               Text(
                 tierLabel.toUpperCase(),
                 style: TextStyle(
-                  fontSize: 11,
+                  fontSize: typo.chipSize - 1,
                   fontWeight: FontWeight.w800,
                   letterSpacing: 1,
                   color: tierColor,
@@ -374,20 +396,20 @@ class _WorksheetSolveScreenState extends State<WorksheetSolveScreen>
         label = mode;
     }
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
+      padding: const EdgeInsets.symmetric(horizontal: KiwiSpacing.sm, vertical: 3),
       decoration: BoxDecoration(
         color: colors.primary.withOpacity(0.08),
-        borderRadius: BorderRadius.circular(8),
+        borderRadius: BorderRadius.circular(KiwiSpacing.sm),
       ),
       child: Row(
         mainAxisSize: MainAxisSize.min,
         children: [
           Icon(icon, size: 14, color: colors.primary),
-          const SizedBox(width: 4),
+          const SizedBox(width: KiwiSpacing.xs),
           Text(
             label,
             style: TextStyle(
-              fontSize: 11,
+              fontSize: typo.chipSize - 1,
               fontWeight: FontWeight.w700,
               color: colors.primary,
               fontFamily: typo.fontFamily,
@@ -422,19 +444,21 @@ class _WorksheetSolveScreenState extends State<WorksheetSolveScreen>
     return Container(
       width: double.infinity,
       margin: const EdgeInsets.only(bottom: 14),
-      padding: const EdgeInsets.all(12),
+      padding: const EdgeInsets.all(KiwiSpacing.md),
       decoration: BoxDecoration(
         color: KiwiColors.visualYellowBg,
-        borderRadius: BorderRadius.circular(14),
+        borderRadius: BorderRadius.circular(_tier.shape.cardRadius),
         border: Border.all(color: KiwiColors.visualYellowBorder, width: 1.5),
       ),
       child: Center(
-        child: SvgPicture.network(
-          url,
+        child: SizedBox(
           height: 140,
-          placeholderBuilder: (_) => const SizedBox(
-            height: 80,
-            child: Center(child: CircularProgressIndicator(strokeWidth: 2)),
+          child: AuthedSvg(
+            url: url,
+            placeholderBuilder: (_) => const SizedBox(
+              height: 80,
+              child: Center(child: CircularProgressIndicator(strokeWidth: 2)),
+            ),
           ),
         ),
       ),
@@ -526,7 +550,7 @@ class _WorksheetSolveScreenState extends State<WorksheetSolveScreen>
           padding: const EdgeInsets.symmetric(vertical: 14, horizontal: 16),
           decoration: BoxDecoration(
             color: isCorrect ? KiwiColors.correctBg : KiwiColors.wrongBg,
-            borderRadius: BorderRadius.circular(14),
+            borderRadius: BorderRadius.circular(_tier.shape.cardRadius),
             border: Border.all(
               color: isCorrect ? KiwiColors.correct : KiwiColors.wrong,
               width: 1.5,
@@ -536,7 +560,7 @@ class _WorksheetSolveScreenState extends State<WorksheetSolveScreen>
             children: [
               Icon(
                 isCorrect ? Icons.check_circle : Icons.cancel,
-                color: isCorrect ? KiwiColors.kiwiGreenDark : const Color(0xFFE65100),
+                color: isCorrect ? KiwiColors.kiwiGreenDark : KiwiColors.kiwiPrimaryDark,
                 size: 28,
               ),
               const SizedBox(width: 10),
@@ -547,11 +571,11 @@ class _WorksheetSolveScreenState extends State<WorksheetSolveScreen>
                     Text(
                       isCorrect ? 'Correct!' : 'Not quite!',
                       style: TextStyle(
-                        fontSize: 18,
+                        fontSize: typo.headlineSize,
                         fontWeight: FontWeight.w800,
                         color: isCorrect
                             ? KiwiColors.kiwiGreenDark
-                            : const Color(0xFFE65100),
+                            : KiwiColors.kiwiPrimaryDark,
                         fontFamily: typo.fontFamily,
                       ),
                     ),
@@ -560,8 +584,8 @@ class _WorksheetSolveScreenState extends State<WorksheetSolveScreen>
                       Text(
                         _getCorrectAnswerText(q),
                         style: TextStyle(
-                          fontSize: 13,
-                          color: const Color(0xFFBF360C),
+                          fontSize: typo.topicNameSize,
+                          color: KiwiColors.kiwiPrimaryDark,
                           fontFamily: typo.fontFamily,
                         ),
                       ),
@@ -581,22 +605,22 @@ class _WorksheetSolveScreenState extends State<WorksheetSolveScreen>
           child: Container(
             padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 14),
             decoration: BoxDecoration(
-              color: const Color(0xFFF5F5F5),
-              borderRadius: BorderRadius.circular(12),
-              border: Border.all(color: const Color(0xFFE0E0E0)),
+              color: KiwiColors.creamDark,
+              borderRadius: BorderRadius.circular(KiwiSpacing.md),
+              border: Border.all(color: KiwiColors.pathLocked),
             ),
             child: Row(
               children: [
                 Icon(
                   _showApproach ? Icons.lightbulb : Icons.lightbulb_outline,
                   size: 20,
-                  color: const Color(0xFFFFA000),
+                  color: KiwiColors.amber,
                 ),
                 const SizedBox(width: 8),
                 Text(
                   _showApproach ? 'Hide Explanation' : 'Show Why (Solution)',
                   style: TextStyle(
-                    fontSize: 14,
+                    fontSize: typo.bodySize,
                     fontWeight: FontWeight.w700,
                     color: colors.textPrimary,
                     fontFamily: typo.fontFamily,
@@ -620,18 +644,18 @@ class _WorksheetSolveScreenState extends State<WorksheetSolveScreen>
           const SizedBox(height: 8),
           Container(
             width: double.infinity,
-            padding: const EdgeInsets.all(14),
+            padding: _tier.shape.cardPadding,
             decoration: BoxDecoration(
-              color: const Color(0xFFFFFDE7),
-              borderRadius: BorderRadius.circular(12),
-              border: Border.all(color: const Color(0xFFFFD54F)),
+              color: KiwiColors.visualYellowBg,
+              borderRadius: BorderRadius.circular(KiwiSpacing.md),
+              border: Border.all(color: KiwiColors.visualYellowBorder),
             ),
             child: Text(
               q.approach,
               style: TextStyle(
-                fontSize: 14,
+                fontSize: typo.bodySize,
                 height: 1.5,
-                color: const Color(0xFF5D4037),
+                color: KiwiColors.textDark,
                 fontFamily: typo.fontFamily,
               ),
             ),
@@ -648,7 +672,7 @@ class _WorksheetSolveScreenState extends State<WorksheetSolveScreen>
               gradient: LinearGradient(
                 colors: [colors.primary, colors.primaryDark],
               ),
-              borderRadius: BorderRadius.circular(16),
+              borderRadius: BorderRadius.circular(_tier.shape.cardRadius),
               boxShadow: [
                 BoxShadow(
                   color: colors.primary.withOpacity(0.3),
@@ -665,10 +689,10 @@ class _WorksheetSolveScreenState extends State<WorksheetSolveScreen>
                 shadowColor: Colors.transparent,
                 padding: const EdgeInsets.symmetric(vertical: 16),
                 shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(16),
+                  borderRadius: BorderRadius.circular(_tier.shape.cardRadius),
                 ),
                 textStyle: TextStyle(
-                  fontSize: 17,
+                  fontSize: typo.buttonSize,
                   fontWeight: FontWeight.w800,
                   fontFamily: typo.fontFamily,
                 ),
@@ -745,7 +769,7 @@ class _WorksheetSolveScreenState extends State<WorksheetSolveScreen>
                         ? 'Good Effort!'
                         : 'Keep Practicing!',
             style: TextStyle(
-              fontSize: 28,
+              fontSize: typo.streakNumberSize - 12,
               fontWeight: FontWeight.w900,
               color: colors.textPrimary,
               fontFamily: typo.fontFamily,
@@ -755,12 +779,12 @@ class _WorksheetSolveScreenState extends State<WorksheetSolveScreen>
           Text(
             'Day ${widget.day} Complete',
             style: TextStyle(
-              fontSize: 16,
+              fontSize: typo.bodySize,
               color: colors.textMuted,
               fontFamily: typo.fontFamily,
             ),
           ),
-          const SizedBox(height: 24),
+          const SizedBox(height: KiwiSpacing.xl),
 
           // Stars display
           Row(
@@ -772,8 +796,8 @@ class _WorksheetSolveScreenState extends State<WorksheetSolveScreen>
                   i < stars ? Icons.star_rounded : Icons.star_border_rounded,
                   size: 48,
                   color: i < stars
-                      ? const Color(0xFFFFD600)
-                      : const Color(0xFFE0E0E0),
+                      ? KiwiColors.gemGold
+                      : KiwiColors.pathLocked,
                 ),
               );
             }),
@@ -818,7 +842,7 @@ class _WorksheetSolveScreenState extends State<WorksheetSolveScreen>
                 gradient: LinearGradient(
                   colors: [colors.primary, colors.primaryDark],
                 ),
-                borderRadius: BorderRadius.circular(16),
+                borderRadius: BorderRadius.circular(_tier.shape.cardRadius),
               ),
               child: ElevatedButton(
                 onPressed: () => Navigator.of(context).pop(),
@@ -828,10 +852,10 @@ class _WorksheetSolveScreenState extends State<WorksheetSolveScreen>
                   shadowColor: Colors.transparent,
                   padding: const EdgeInsets.symmetric(vertical: 16),
                   shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(16),
+                    borderRadius: BorderRadius.circular(_tier.shape.cardRadius),
                   ),
                   textStyle: TextStyle(
-                    fontSize: 17,
+                    fontSize: typo.buttonSize,
                     fontWeight: FontWeight.w800,
                     fontFamily: typo.fontFamily,
                   ),
@@ -858,7 +882,7 @@ class _WorksheetSolveScreenState extends State<WorksheetSolveScreen>
               child: Text(
                 'Try Again',
                 style: TextStyle(
-                  fontSize: 15,
+                  fontSize: typo.topicNameSize,
                   fontWeight: FontWeight.w700,
                   color: colors.primary,
                   fontFamily: typo.fontFamily,
@@ -878,17 +902,17 @@ class _WorksheetSolveScreenState extends State<WorksheetSolveScreen>
         padding: const EdgeInsets.symmetric(vertical: 16),
         decoration: BoxDecoration(
           color: colors.cardBg,
-          borderRadius: BorderRadius.circular(14),
+          borderRadius: BorderRadius.circular(_tier.shape.cardRadius),
           border: Border.all(color: colors.topicCardBorder),
         ),
         child: Column(
           children: [
-            Text(emoji, style: const TextStyle(fontSize: 24)),
+            Text(emoji, style: TextStyle(fontSize: typo.headlineSize + 4)),
             const SizedBox(height: 6),
             Text(
               value,
               style: TextStyle(
-                fontSize: 22,
+                fontSize: typo.headlineSize + 2,
                 fontWeight: FontWeight.w900,
                 color: colors.textPrimary,
                 fontFamily: typo.fontFamily,
@@ -897,7 +921,7 @@ class _WorksheetSolveScreenState extends State<WorksheetSolveScreen>
             Text(
               label,
               style: TextStyle(
-                fontSize: 12,
+                fontSize: typo.chipSize,
                 color: colors.textMuted,
                 fontFamily: typo.fontFamily,
               ),

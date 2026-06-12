@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 120" width="250" height="120">
+  <rect x="5" y="5" width="240" height="110" rx="10" fill="#FAFAFA" stroke="#4285F4" stroke-width="2" stroke-dasharray="6,3"/>
+  <circle cx="125.0" cy="28" r="12" fill="#FFC107" stroke="#F57F17" stroke-width="1.5"/>
+  <rect x="121.0" y="38" width="8" height="5" rx="1" fill="#F57F17"/>
+  <text x="125.0" y="60" text-anchor="middle" font-size="12" font-family="Arial" fill="#333">All books have pages.</text>
+  <text x="125.0" y="78" text-anchor="middle" font-size="12" font-family="Arial" fill="#333">Some pages have pictures.</text>
+  <text x="125.0" y="96" text-anchor="middle" font-size="12" font-family="Arial" fill="#333"></text>
+  <text x="125.0" y="114" text-anchor="middle" font-size="12" font-family="Arial" fill="#333">Which statement is true?</text>
+</svg>

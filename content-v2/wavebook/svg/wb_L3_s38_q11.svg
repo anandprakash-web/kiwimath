@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" width="300" height="200">
+  <rect width="300" height="200" fill="#FFF8F0" rx="8"/>
+  <text x="150.0" y="14" text-anchor="middle" font-size="11" font-weight="bold" font-family="Arial" fill="#1A1A2E">Bar Graph Scale</text>
+  <line x1="50" y1="25" x2="50" y2="175" stroke="#1A1A2E" stroke-width="1.5"/>
+  <line x1="50" y1="175" x2="250" y2="175" stroke="#1A1A2E" stroke-width="1.5"/>
+  <line x1="46" y1="175.0" x2="50" y2="175.0" stroke="#1A1A2E" stroke-width="1"/>
+  <text x="43" y="179.0" text-anchor="end" font-size="9" font-family="Arial" fill="#9E9E9E">0</text>
+  <line x1="50" y1="175.0" x2="250" y2="175.0" stroke="#E0E0E0" stroke-width="0.5"/>
+  <line x1="46" y1="145.0" x2="50" y2="145.0" stroke="#1A1A2E" stroke-width="1"/>
+  <text x="43" y="149.0" text-anchor="end" font-size="9" font-family="Arial" fill="#9E9E9E">20</text>
+  <line x1="50" y1="145.0" x2="250" y2="145.0" stroke="#E0E0E0" stroke-width="0.5"/>
+  <line x1="46" y1="115.0" x2="50" y2="115.0" stroke="#1A1A2E" stroke-width="1"/>
+  <text x="43" y="119.0" text-anchor="end" font-size="9" font-family="Arial" fill="#9E9E9E">40</text>
+  <line x1="50" y1="115.0" x2="250" y2="115.0" stroke="#E0E0E0" stroke-width="0.5"/>
+  <line x1="46" y1="85.0" x2="50" y2="85.0" stroke="#1A1A2E" stroke-width="1"/>
+  <text x="43" y="89.0" text-anchor="end" font-size="9" font-family="Arial" fill="#9E9E9E">60</text>
+  <line x1="50" y1="85.0" x2="250" y2="85.0" stroke="#E0E0E0" stroke-width="0.5"/>
+  <line x1="46" y1="55.0" x2="50" y2="55.0" stroke="#1A1A2E" stroke-width="1"/>
+  <text x="43" y="59.0" text-anchor="end" font-size="9" font-family="Arial" fill="#9E9E9E">80</text>
+  <line x1="50" y1="55.0" x2="250" y2="55.0" stroke="#E0E0E0" stroke-width="0.5"/>
+  <line x1="46" y1="25.0" x2="50" y2="25.0" stroke="#1A1A2E" stroke-width="1"/>
+  <text x="43" y="29.0" text-anchor="end" font-size="9" font-family="Arial" fill="#9E9E9E">100</text>
+  <line x1="50" y1="25.0" x2="250" y2="25.0" stroke="#E0E0E0" stroke-width="0.5"/>
+  <rect x="110" y="85.0" width="40" height="90.0" fill="#FF6D00" rx="2"/>
+  <text x="130.0" y="80.0" text-anchor="middle" font-size="10" font-weight="bold" font-family="Arial" fill="#FF6D00">60</text>
+  <line x1="160" y1="130.0" x2="190" y2="130.0" stroke="#FF6D00" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+</svg>

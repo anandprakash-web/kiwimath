@@ -1,0 +1,17 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="200" fill="#f9f9f0" rx="8"/>
+  <text x="100" y="20" text-anchor="middle" font-size="11" font-family="Arial" fill="#555">Paper Fold and Punch</text>
+  <text x="55" y="42" text-anchor="middle" font-size="9" font-family="Arial" fill="#777">Folded</text>
+  <rect x="25" y="48" width="60" height="50" fill="#FFFDE7" stroke="#333" stroke-width="1"/>
+  <line x1="55" y1="48" x2="55" y2="98" stroke="#F44336" stroke-width="1" stroke-dasharray="3,2"/>
+  <circle cx="45" cy="73" r="4" fill="#333"/>
+  <text x="55" y="110" text-anchor="middle" font-size="8" font-family="Arial" fill="#F44336">fold line</text>
+  <text x="100" y="78" text-anchor="middle" font-size="20" fill="#999">&#x2192;</text>
+  <text x="150" y="42" text-anchor="middle" font-size="9" font-family="Arial" fill="#777">Unfolded</text>
+  <rect x="118" y="48" width="65" height="50" fill="#FFFDE7" stroke="#333" stroke-width="1"/>
+  <line x1="150.5" y1="48" x2="150.5" y2="98" stroke="#F44336" stroke-width="1" stroke-dasharray="3,2"/>
+  <circle cx="140" cy="73" r="4" fill="#333"/>
+  <circle cx="161" cy="73" r="4" fill="#333"/>
+  <text x="100" y="140" text-anchor="middle" font-size="10" font-family="Arial" fill="#555">Holes are symmetric about</text>
+  <text x="100" y="158" text-anchor="middle" font-size="12" font-family="Arial" font-weight="bold" fill="#E53935">the fold line</text>
+</svg>

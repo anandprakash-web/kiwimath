@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import '../models/companion.dart';
 import '../services/companion_service.dart';
 import '../theme/kiwi_theme.dart';
@@ -23,6 +24,7 @@ class CelebrationScreen extends StatefulWidget {
   final int dailyRemaining;
   final bool fromStepDown;
   final VoidCallback onContinue;
+  final VoidCallback? onPlayAgain;
   final int? correctCount;
   final int? totalQuestions;
   final int? comebackBonus;    // kept for backend, not displayed
@@ -42,6 +44,7 @@ class CelebrationScreen extends StatefulWidget {
     required this.dailyRemaining,
     this.fromStepDown = false,
     required this.onContinue,
+    this.onPlayAgain,
     this.correctCount,
     this.totalQuestions,
     this.comebackBonus,
@@ -66,6 +69,9 @@ class _CelebrationScreenState extends State<CelebrationScreen>
   @override
   void initState() {
     super.initState();
+
+    // Celebratory thump as the screen appears.
+    HapticFeedback.heavyImpact();
 
     _bounceCtrl = AnimationController(
       vsync: this,
@@ -125,9 +131,9 @@ class _CelebrationScreenState extends State<CelebrationScreen>
             end: Alignment.bottomCenter,
             stops: [0.0, 0.5, 1.0],
             colors: [
-              Color(0xFFFFF3E0),  // Warm orange mist
-              Color(0xFFFFF8F0),  // Warm cream
-              Color(0xFFFFF8F0),  // Warm cream
+              KiwiColors.kiwiPrimaryLight,  // Warm orange mist
+              KiwiColors.cream,             // Warm cream
+              KiwiColors.cream,             // Warm cream
             ],
           ),
         ),
@@ -162,7 +168,7 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                       ),
               ),
 
-              const SizedBox(height: 24),
+              SizedBox(height: KiwiSpacing.xl),
 
               // 2. Big score
               AnimatedOpacity(
@@ -171,16 +177,22 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                 child: Column(
                   children: [
                     if (widget.correctCount != null && widget.totalQuestions != null)
-                      Text(
-                        '${widget.correctCount}/${widget.totalQuestions}',
-                        style: const TextStyle(
-                          fontSize: 56,
-                          fontWeight: FontWeight.w900,
-                          color: KiwiColors.kiwiPrimaryDark,
-                          height: 1.0,
+                      // Count-up score: 0 → correctCount over ~800ms.
+                      TweenAnimationBuilder<int>(
+                        tween: IntTween(begin: 0, end: widget.correctCount!),
+                        duration: const Duration(milliseconds: 800),
+                        curve: Curves.easeOut,
+                        builder: (context, value, _) => Text(
+                          '$value/${widget.totalQuestions}',
+                          style: const TextStyle(
+                            fontSize: 56,
+                            fontWeight: FontWeight.w900,
+                            color: KiwiColors.kiwiPrimaryDark,
+                            height: 1.0,
+                          ),
                         ),
                       ),
-                    const SizedBox(height: 6),
+                    SizedBox(height: KiwiSpacing.xs + 2),
                     Text(
                       widget.fromStepDown ? 'You figured it out!' : 'Session complete!',
                       style: const TextStyle(
@@ -189,9 +201,9 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                         color: KiwiColors.kiwiPrimaryDark,
                       ),
                     ),
-                    const SizedBox(height: 8),
+                    SizedBox(height: KiwiSpacing.sm),
                     Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 40),
+                      padding: EdgeInsets.symmetric(horizontal: KiwiSpacing.xxl + 8),
                       child: Text(
                         _encouragement,
                         textAlign: TextAlign.center,
@@ -206,7 +218,7 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                 ),
               ),
 
-              const SizedBox(height: 24),
+              SizedBox(height: KiwiSpacing.xl),
 
               // 3. One progress insight (if available)
               if (widget.progressInsight != null)
@@ -214,10 +226,10 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                   opacity: _showContent ? 1.0 : 0.0,
                   duration: const Duration(milliseconds: 600),
                   child: Container(
-                    margin: const EdgeInsets.symmetric(horizontal: 32),
-                    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                    margin: EdgeInsets.symmetric(horizontal: KiwiSpacing.xxl),
+                    padding: EdgeInsets.symmetric(horizontal: KiwiSpacing.lg, vertical: KiwiSpacing.md),
                     decoration: BoxDecoration(
-                      color: Colors.white,
+                      color: KiwiColors.cardBg,
                       borderRadius: BorderRadius.circular(14),
                       border: Border.all(color: KiwiColors.kiwiPrimary.withOpacity(0.2)),
                     ),
@@ -240,7 +252,7 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                   ),
                 ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: KiwiSpacing.lg - 2),
 
               // 4. Gentle practice-days note
               AnimatedOpacity(
@@ -275,56 +287,61 @@ class _CelebrationScreenState extends State<CelebrationScreen>
 
               // 6. Action buttons
               Padding(
-                padding: const EdgeInsets.fromLTRB(28, 0, 28, 16),
+                padding: EdgeInsets.fromLTRB(KiwiSpacing.xl + 4, 0, KiwiSpacing.xl + 4, KiwiSpacing.lg),
                 child: Column(
                   children: [
                     // Play again (primary — if daily goal not yet done)
                     if (widget.dailyRemaining > 0)
-                      GestureDetector(
-                        onTap: widget.onContinue,
-                        child: Container(
-                          width: double.infinity,
-                          padding: const EdgeInsets.symmetric(vertical: 16),
-                          decoration: BoxDecoration(
-                            color: KiwiColors.kiwiPrimary,
-                            borderRadius: BorderRadius.circular(14),
-                          ),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              const Icon(Icons.play_arrow_rounded, color: Colors.white, size: 22),
-                              const SizedBox(width: 6),
-                              const Text(
-                                'Keep practicing',
-                                style: TextStyle(
-                                  fontSize: 16,
-                                  fontWeight: FontWeight.w700,
-                                  color: Colors.white,
+                      Material(
+                        color: KiwiColors.kiwiPrimary,
+                        borderRadius: BorderRadius.circular(14),
+                        child: InkWell(
+                          onTap: widget.onPlayAgain ?? widget.onContinue,
+                          borderRadius: BorderRadius.circular(14),
+                          child: Container(
+                            width: double.infinity,
+                            padding: EdgeInsets.symmetric(vertical: KiwiSpacing.lg),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: const [
+                                Icon(Icons.play_arrow_rounded, color: Colors.white, size: 22),
+                                SizedBox(width: 6),
+                                Text(
+                                  'Keep practicing',
+                                  style: TextStyle(
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.w700,
+                                    color: Colors.white,
+                                  ),
                                 ),
-                              ),
-                            ],
+                              ],
+                            ),
                           ),
                         ),
                       ),
-                    if (widget.dailyRemaining > 0) const SizedBox(height: 10),
+                    if (widget.dailyRemaining > 0) SizedBox(height: KiwiSpacing.sm + 2),
                     // Back to home (secondary)
-                    GestureDetector(
-                      onTap: widget.onContinue,
-                      child: Container(
-                        width: double.infinity,
-                        padding: const EdgeInsets.symmetric(vertical: 14),
-                        decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(14),
-                          border: Border.all(color: Colors.black12),
-                        ),
-                        child: const Text(
-                          'Back to home',
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                            fontSize: 14,
-                            fontWeight: FontWeight.w600,
-                            color: KiwiColors.kiwiPrimaryDark,
+                    Material(
+                      color: KiwiColors.cardBg,
+                      borderRadius: BorderRadius.circular(14),
+                      child: InkWell(
+                        onTap: widget.onContinue,
+                        borderRadius: BorderRadius.circular(14),
+                        child: Container(
+                          width: double.infinity,
+                          padding: EdgeInsets.symmetric(vertical: KiwiSpacing.lg - 2),
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(14),
+                            border: Border.all(color: Colors.black12),
+                          ),
+                          child: const Text(
+                            'Back to home',
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                              fontSize: 14,
+                              fontWeight: FontWeight.w600,
+                              color: KiwiColors.kiwiPrimaryDark,
+                            ),
                           ),
                         ),
                       ),

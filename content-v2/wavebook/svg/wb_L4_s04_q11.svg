@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <rect width="200" height="200" fill="#FFF8F0" rx="8"/>
+  <text x="100.0" y="18" text-anchor="middle" font-size="10" font-weight="bold" font-family="Arial" fill="#1A1A2E">Magic Square</text>
+  <rect x="40.0" y="35" width="40" height="40" fill="white" stroke="#9E9E9E" stroke-width="1.5"/>
+  <text x="60.0" y="60.0" text-anchor="middle" font-size="14" font-family="Arial" fill="#1A1A2E">-1</text>
+  <rect x="80.0" y="35" width="40" height="40" fill="#FFE0B2" stroke="#FF6D00" stroke-width="1.5"/>
+  <text x="100.0" y="60.0" text-anchor="middle" font-size="14" font-weight="bold" font-family="Arial" fill="#FF6D00">A</text>
+  <rect x="120.0" y="35" width="40" height="40" fill="white" stroke="#9E9E9E" stroke-width="1.5"/>
+  <text x="140.0" y="60.0" text-anchor="middle" font-size="14" font-family="Arial" fill="#1A1A2E">-6</text>
+  <rect x="40.0" y="75" width="40" height="40" fill="white" stroke="#9E9E9E" stroke-width="1.5"/>
+  <text x="60.0" y="100.0" text-anchor="middle" font-size="14" font-family="Arial" fill="#1A1A2E">-8</text>
+  <rect x="80.0" y="75" width="40" height="40" fill="white" stroke="#9E9E9E" stroke-width="1.5"/>
+  <text x="100.0" y="100.0" text-anchor="middle" font-size="14" font-family="Arial" fill="#1A1A2E">-4</text>
+  <rect x="120.0" y="75" width="40" height="40" fill="#FFE0B2" stroke="#FF6D00" stroke-width="1.5"/>
+  <text x="140.0" y="100.0" text-anchor="middle" font-size="14" font-weight="bold" font-family="Arial" fill="#FF6D00">B</text>
+  <rect x="40.0" y="115" width="40" height="40" fill="white" stroke="#9E9E9E" stroke-width="1.5"/>
+  <text x="60.0" y="140.0" text-anchor="middle" font-size="14" font-family="Arial" fill="#1A1A2E">0</text>
+  <rect x="80.0" y="115" width="40" height="40" fill="white" stroke="#9E9E9E" stroke-width="1.5"/>
+  <text x="100.0" y="140.0" text-anchor="middle" font-size="14" font-family="Arial" fill="#1A1A2E">-3</text>
+  <rect x="120.0" y="115" width="40" height="40" fill="white" stroke="#9E9E9E" stroke-width="1.5"/>
+  <text x="140.0" y="140.0" text-anchor="middle" font-size="14" font-family="Arial" fill="#1A1A2E">-9</text>
+  <text x="100.0" y="173" text-anchor="middle" font-size="8" font-family="Arial" fill="#9E9E9E">Each row/col/diag = same sum</text>
+</svg>

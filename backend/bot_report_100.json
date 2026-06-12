@@ -1,0 +1,7048 @@
+{
+  "timestamp": "2026-05-16T06:42:23.994659",
+  "base_url": "https://kiwimath-api-deufqab6gq-el.a.run.app",
+  "n_bots": 100,
+  "rounds": 5,
+  "reports": [
+    {
+      "bot_id": "bot_5ed6cfcfcd35",
+      "persona": {
+        "name": "Aarav",
+        "grade": 1
+      },
+      "started_at": "2026-05-16T06:39:24.898350",
+      "finished_at": "2026-05-16T06:40:05.072425",
+      "rounds": 5,
+      "questions": 19,
+      "accuracy": "21%",
+      "avg_latency_ms": "121",
+      "p95_latency_ms": "231",
+      "errors": 2,
+      "error_details": [
+        "GET /v4/rewards/bot_5ed6cfcfcd35 \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "bookmark_save": {
+          "pass": 3,
+          "fail": 0
+        },
+        "bookmark_list": {
+          "pass": 3,
+          "fail": 0
+        },
+        "wavebook_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "smart_session": {
+          "pass": 2,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 4,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 2,
+          "fail": 0
+        },
+        "growth_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "daily_puzzle": {
+          "pass": 1,
+          "fail": 0
+        },
+        "worksheets_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "rewards_balance": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_0cadeb177ead",
+      "persona": {
+        "name": "Diya",
+        "grade": 2
+      },
+      "started_at": "2026-05-16T06:39:24.904106",
+      "finished_at": "2026-05-16T06:39:53.873073",
+      "rounds": 5,
+      "questions": 13,
+      "accuracy": "8%",
+      "avg_latency_ms": "127",
+      "p95_latency_ms": "256",
+      "errors": 3,
+      "error_details": [
+        "GET /v4/rewards/bot_0cadeb177ead \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "GET /v4/rewards/bot_0cadeb177ead \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "rewards_balance": {
+          "pass": 2,
+          "fail": 0
+        },
+        "worksheets_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 2,
+          "fail": 0
+        },
+        "smart_session": {
+          "pass": 1,
+          "fail": 0
+        },
+        "bookmark_save": {
+          "pass": 2,
+          "fail": 0
+        },
+        "bookmark_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "daily_puzzle": {
+          "pass": 1,
+          "fail": 0
+        },
+        "wavebook_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_1188a1c589df",
+      "persona": {
+        "name": "Kabir",
+        "grade": 3
+      },
+      "started_at": "2026-05-16T06:39:24.904364",
+      "finished_at": "2026-05-16T06:39:57.284812",
+      "rounds": 5,
+      "questions": 15,
+      "accuracy": "7%",
+      "avg_latency_ms": "127",
+      "p95_latency_ms": "317",
+      "errors": 3,
+      "error_details": [
+        "GET /v4/rewards/bot_1188a1c589df \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "GET /v4/rewards/bot_1188a1c589df \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 2,
+          "fail": 0
+        },
+        "growth_read": {
+          "pass": 3,
+          "fail": 0
+        },
+        "rewards_balance": {
+          "pass": 2,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 2,
+          "fail": 0
+        },
+        "bookmark_save": {
+          "pass": 2,
+          "fail": 0
+        },
+        "bookmark_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "streak_read": {
+          "pass": 2,
+          "fail": 0
+        },
+        "wavebook_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_f8da89e2ed75",
+      "persona": {
+        "name": "Ananya",
+        "grade": 4
+      },
+      "started_at": "2026-05-16T06:39:24.904535",
+      "finished_at": "2026-05-16T06:39:51.468021",
+      "rounds": 5,
+      "questions": 14,
+      "accuracy": "21%",
+      "avg_latency_ms": "128",
+      "p95_latency_ms": "357",
+      "errors": 1,
+      "error_details": [
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "worksheets_list": {
+          "pass": 3,
+          "fail": 0
+        },
+        "smart_session": {
+          "pass": 3,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 2,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 1,
+          "fail": 0
+        },
+        "bookmark_save": {
+          "pass": 2,
+          "fail": 0
+        },
+        "bookmark_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "growth_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "daily_puzzle": {
+          "pass": 2,
+          "fail": 0
+        },
+        "streak_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_7f3492c5ec15",
+      "persona": {
+        "name": "Vihaan",
+        "grade": 5
+      },
+      "started_at": "2026-05-16T06:39:24.904694",
+      "finished_at": "2026-05-16T06:39:46.144317",
+      "rounds": 5,
+      "questions": 8,
+      "accuracy": "25%",
+      "avg_latency_ms": "125",
+      "p95_latency_ms": "342",
+      "errors": 3,
+      "error_details": [
+        "GET /v4/rewards/bot_7f3492c5ec15 \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "GET /v4/rewards/bot_7f3492c5ec15 \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "streak_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "wavebook_list": {
+          "pass": 5,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 1,
+          "fail": 0
+        },
+        "growth_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "bookmark_save": {
+          "pass": 1,
+          "fail": 0
+        },
+        "bookmark_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "worksheets_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "rewards_balance": {
+          "pass": 2,
+          "fail": 0
+        },
+        "daily_puzzle": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_80a4e1329c56",
+      "persona": {
+        "name": "Meera",
+        "grade": 1
+      },
+      "started_at": "2026-05-16T06:39:24.904847",
+      "finished_at": "2026-05-16T06:39:52.461794",
+      "rounds": 5,
+      "questions": 13,
+      "accuracy": "31%",
+      "avg_latency_ms": "122",
+      "p95_latency_ms": "331",
+      "errors": 4,
+      "error_details": [
+        "GET /v4/rewards/bot_80a4e1329c56 \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "GET /v4/rewards/bot_80a4e1329c56 \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "GET /v4/rewards/bot_80a4e1329c56 \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 1,
+          "fail": 0
+        },
+        "rewards_balance": {
+          "pass": 3,
+          "fail": 0
+        },
+        "worksheets_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "smart_session": {
+          "pass": 2,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 2,
+          "fail": 0
+        },
+        "streak_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "daily_puzzle": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_d058de7e792a",
+      "persona": {
+        "name": "Rohan",
+        "grade": 2
+      },
+      "started_at": "2026-05-16T06:39:24.904987",
+      "finished_at": "2026-05-16T06:39:52.077829",
+      "rounds": 5,
+      "questions": 10,
+      "accuracy": "30%",
+      "avg_latency_ms": "127",
+      "p95_latency_ms": "356",
+      "errors": 4,
+      "error_details": [
+        "GET /v4/rewards/bot_d058de7e792a \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "GET /v4/rewards/bot_d058de7e792a \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "GET /v4/rewards/bot_d058de7e792a \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "worksheets_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "rewards_balance": {
+          "pass": 3,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 2,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 1,
+          "fail": 0
+        },
+        "daily_puzzle": {
+          "pass": 2,
+          "fail": 0
+        },
+        "smart_session": {
+          "pass": 1,
+          "fail": 0
+        },
+        "growth_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "bookmark_save": {
+          "pass": 2,
+          "fail": 0
+        },
+        "bookmark_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "wavebook_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "streak_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_adced246caf3",
+      "persona": {
+        "name": "Arjun",
+        "grade": 3
+      },
+      "started_at": "2026-05-16T06:39:24.905127",
+      "finished_at": "2026-05-16T06:39:56.461917",
+      "rounds": 5,
+      "questions": 14,
+      "accuracy": "21%",
+      "avg_latency_ms": "123",
+      "p95_latency_ms": "295",
+      "errors": 2,
+      "error_details": [
+        "GET /v4/rewards/bot_adced246caf3 \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 2,
+          "fail": 0
+        },
+        "growth_read": {
+          "pass": 2,
+          "fail": 0
+        },
+        "worksheets_list": {
+          "pass": 3,
+          "fail": 0
+        },
+        "wavebook_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "daily_puzzle": {
+          "pass": 2,
+          "fail": 0
+        },
+        "bookmark_save": {
+          "pass": 3,
+          "fail": 0
+        },
+        "bookmark_list": {
+          "pass": 3,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 1,
+          "fail": 0
+        },
+        "rewards_balance": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_b545ff0134e8",
+      "persona": {
+        "name": "Saanvi",
+        "grade": 4
+      },
+      "started_at": "2026-05-16T06:39:24.905273",
+      "finished_at": "2026-05-16T06:39:58.766350",
+      "rounds": 5,
+      "questions": 17,
+      "accuracy": "29%",
+      "avg_latency_ms": "130",
+      "p95_latency_ms": "346",
+      "errors": 2,
+      "error_details": [
+        "GET /v4/rewards/bot_b545ff0134e8 \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "daily_puzzle": {
+          "pass": 1,
+          "fail": 0
+        },
+        "smart_session": {
+          "pass": 1,
+          "fail": 0
+        },
+        "wavebook_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 2,
+          "fail": 0
+        },
+        "worksheets_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "streak_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 1,
+          "fail": 0
+        },
+        "growth_read": {
+          "pass": 2,
+          "fail": 0
+        },
+        "bookmark_save": {
+          "pass": 2,
+          "fail": 0
+        },
+        "bookmark_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "rewards_balance": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_05cd254345df",
+      "persona": {
+        "name": "Isha",
+        "grade": 5
+      },
+      "started_at": "2026-05-16T06:39:24.905411",
+      "finished_at": "2026-05-16T06:39:57.277323",
+      "rounds": 5,
+      "questions": 14,
+      "accuracy": "14%",
+      "avg_latency_ms": "119",
+      "p95_latency_ms": "348",
+      "errors": 3,
+      "error_details": [
+        "GET /v4/rewards/bot_05cd254345df \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "GET /v4/rewards/bot_05cd254345df \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "worksheets_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "bookmark_save": {
+          "pass": 1,
+          "fail": 0
+        },
+        "bookmark_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "streak_read": {
+          "pass": 3,
+          "fail": 0
+        },
+        "smart_session": {
+          "pass": 1,
+          "fail": 0
+        },
+        "daily_puzzle": {
+          "pass": 2,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 2,
+          "fail": 0
+        },
+        "rewards_balance": {
+          "pass": 2,
+          "fail": 0
+        },
+        "wavebook_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 2,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_c2b98c06c2e6",
+      "persona": {
+        "name": "Riya",
+        "grade": 1
+      },
+      "started_at": "2026-05-16T06:39:24.905554",
+      "finished_at": "2026-05-16T06:40:00.385200",
+      "rounds": 5,
+      "questions": 16,
+      "accuracy": "19%",
+      "avg_latency_ms": "135",
+      "p95_latency_ms": "295",
+      "errors": 1,
+      "error_details": [
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "wavebook_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 2,
+          "fail": 0
+        },
+        "growth_read": {
+          "pass": 3,
+          "fail": 0
+        },
+        "daily_puzzle": {
+          "pass": 3,
+          "fail": 0
+        },
+        "worksheets_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 2,
+          "fail": 0
+        },
+        "bookmark_save": {
+          "pass": 1,
+          "fail": 0
+        },
+        "bookmark_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "smart_session": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_e1746acdbcfa",
+      "persona": {
+        "name": "Anvi",
+        "grade": 2
+      },
+      "started_at": "2026-05-16T06:39:24.905691",
+      "finished_at": "2026-05-16T06:39:46.427265",
+      "rounds": 5,
+      "questions": 9,
+      "accuracy": "11%",
+      "avg_latency_ms": "137",
+      "p95_latency_ms": "461",
+      "errors": 1,
+      "error_details": [
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "growth_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "daily_puzzle": {
+          "pass": 4,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 1,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 1,
+          "fail": 0
+        },
+        "streak_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "smart_session": {
+          "pass": 2,
+          "fail": 0
+        },
+        "bookmark_save": {
+          "pass": 1,
+          "fail": 0
+        },
+        "bookmark_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "worksheets_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_a72fe7d92c12",
+      "persona": {
+        "name": "Zara",
+        "grade": 3
+      },
+      "started_at": "2026-05-16T06:39:24.905834",
+      "finished_at": "2026-05-16T06:39:51.343676",
+      "rounds": 5,
+      "questions": 12,
+      "accuracy": "8%",
+      "avg_latency_ms": "128",
+      "p95_latency_ms": "337",
+      "errors": 3,
+      "error_details": [
+        "GET /v4/rewards/bot_a72fe7d92c12 \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "GET /v4/rewards/bot_a72fe7d92c12 \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "streak_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "growth_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "wavebook_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 1,
+          "fail": 0
+        },
+        "rewards_balance": {
+          "pass": 2,
+          "fail": 0
+        },
+        "smart_session": {
+          "pass": 2,
+          "fail": 0
+        },
+        "worksheets_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "bookmark_save": {
+          "pass": 1,
+          "fail": 0
+        },
+        "bookmark_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "daily_puzzle": {
+          "pass": 2,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_9f2f9d8aaadc",
+      "persona": {
+        "name": "Veer",
+        "grade": 4
+      },
+      "started_at": "2026-05-16T06:39:24.905971",
+      "finished_at": "2026-05-16T06:39:53.278786",
+      "rounds": 5,
+      "questions": 16,
+      "accuracy": "12%",
+      "avg_latency_ms": "118",
+      "p95_latency_ms": "247",
+      "errors": 2,
+      "error_details": [
+        "GET /v4/rewards/bot_9f2f9d8aaadc \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "wavebook_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "daily_puzzle": {
+          "pass": 3,
+          "fail": 0
+        },
+        "streak_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "rewards_balance": {
+          "pass": 1,
+          "fail": 0
+        },
+        "smart_session": {
+          "pass": 2,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 1,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 2,
+          "fail": 0
+        },
+        "bookmark_save": {
+          "pass": 2,
+          "fail": 0
+        },
+        "bookmark_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_af89134cae79",
+      "persona": {
+        "name": "Neil",
+        "grade": 5
+      },
+      "started_at": "2026-05-16T06:39:24.906118",
+      "finished_at": "2026-05-16T06:39:35.247102",
+      "rounds": 5,
+      "questions": 2,
+      "accuracy": "0%",
+      "avg_latency_ms": "149",
+      "p95_latency_ms": "590",
+      "errors": 3,
+      "error_details": [
+        "GET /v4/rewards/bot_af89134cae79 \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "GET /v4/rewards/bot_af89134cae79 \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "streak_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "smart_session": {
+          "pass": 1,
+          "fail": 0
+        },
+        "daily_puzzle": {
+          "pass": 2,
+          "fail": 0
+        },
+        "rewards_balance": {
+          "pass": 2,
+          "fail": 0
+        },
+        "bookmark_save": {
+          "pass": 2,
+          "fail": 0
+        },
+        "bookmark_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "growth_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "worksheets_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_143c040ef2c0",
+      "persona": {
+        "name": "Krish",
+        "grade": 1
+      },
+      "started_at": "2026-05-16T06:39:24.906255",
+      "finished_at": "2026-05-16T06:39:59.771013",
+      "rounds": 5,
+      "questions": 20,
+      "accuracy": "10%",
+      "avg_latency_ms": "128",
+      "p95_latency_ms": "352",
+      "errors": 5,
+      "error_details": [
+        "GET /v4/rewards/bot_143c040ef2c0 \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "GET /v4/rewards/bot_143c040ef2c0 \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "GET /v4/rewards/bot_143c040ef2c0 \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "GET /v4/rewards/bot_143c040ef2c0 \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "streak_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "rewards_balance": {
+          "pass": 4,
+          "fail": 0
+        },
+        "wavebook_list": {
+          "pass": 3,
+          "fail": 0
+        },
+        "smart_session": {
+          "pass": 3,
+          "fail": 0
+        },
+        "daily_puzzle": {
+          "pass": 1,
+          "fail": 0
+        },
+        "growth_read": {
+          "pass": 2,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 2,
+          "fail": 0
+        },
+        "worksheets_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_8e5fcd466d60",
+      "persona": {
+        "name": "Aditya",
+        "grade": 2
+      },
+      "started_at": "2026-05-16T06:39:24.906392",
+      "finished_at": "2026-05-16T06:40:14.013665",
+      "rounds": 5,
+      "questions": 26,
+      "accuracy": "23%",
+      "avg_latency_ms": "125",
+      "p95_latency_ms": "256",
+      "errors": 3,
+      "error_details": [
+        "GET /v4/rewards/bot_8e5fcd466d60 \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "GET /v4/rewards/bot_8e5fcd466d60 \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 4,
+          "fail": 0
+        },
+        "bookmark_save": {
+          "pass": 2,
+          "fail": 0
+        },
+        "bookmark_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 2,
+          "fail": 0
+        },
+        "daily_puzzle": {
+          "pass": 2,
+          "fail": 0
+        },
+        "rewards_balance": {
+          "pass": 2,
+          "fail": 0
+        },
+        "growth_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "worksheets_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_9eaf88ab3765",
+      "persona": {
+        "name": "Atharv",
+        "grade": 3
+      },
+      "started_at": "2026-05-16T06:39:24.906528",
+      "finished_at": "2026-05-16T06:39:54.149186",
+      "rounds": 5,
+      "questions": 14,
+      "accuracy": "14%",
+      "avg_latency_ms": "131",
+      "p95_latency_ms": "347",
+      "errors": 1,
+      "error_details": [
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "growth_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "worksheets_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "daily_puzzle": {
+          "pass": 2,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 3,
+          "fail": 0
+        },
+        "bookmark_save": {
+          "pass": 2,
+          "fail": 0
+        },
+        "bookmark_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "smart_session": {
+          "pass": 2,
+          "fail": 0
+        },
+        "wavebook_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "streak_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_09b03fdf796a",
+      "persona": {
+        "name": "Siya",
+        "grade": 4
+      },
+      "started_at": "2026-05-16T06:39:24.906662",
+      "finished_at": "2026-05-16T06:40:19.505233",
+      "rounds": 5,
+      "questions": 27,
+      "accuracy": "30%",
+      "avg_latency_ms": "127",
+      "p95_latency_ms": "247",
+      "errors": 2,
+      "error_details": [
+        "GET /v4/rewards/bot_09b03fdf796a \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "smart_session": {
+          "pass": 2,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 2,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 3,
+          "fail": 0
+        },
+        "worksheets_list": {
+          "pass": 3,
+          "fail": 0
+        },
+        "streak_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "bookmark_save": {
+          "pass": 2,
+          "fail": 0
+        },
+        "bookmark_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "growth_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "wavebook_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "daily_puzzle": {
+          "pass": 1,
+          "fail": 0
+        },
+        "rewards_balance": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_a2befe1bb8fd",
+      "persona": {
+        "name": "Tara",
+        "grade": 5
+      },
+      "started_at": "2026-05-16T06:39:24.906802",
+      "finished_at": "2026-05-16T06:39:41.303676",
+      "rounds": 5,
+      "questions": 5,
+      "accuracy": "0%",
+      "avg_latency_ms": "122",
+      "p95_latency_ms": "446",
+      "errors": 4,
+      "error_details": [
+        "GET /v4/rewards/bot_a2befe1bb8fd \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "GET /v4/rewards/bot_a2befe1bb8fd \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "GET /v4/rewards/bot_a2befe1bb8fd \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "rewards_balance": {
+          "pass": 3,
+          "fail": 0
+        },
+        "daily_puzzle": {
+          "pass": 3,
+          "fail": 0
+        },
+        "growth_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "smart_session": {
+          "pass": 2,
+          "fail": 0
+        },
+        "wavebook_list": {
+          "pass": 3,
+          "fail": 0
+        },
+        "bookmark_save": {
+          "pass": 1,
+          "fail": 0
+        },
+        "bookmark_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_be225ef0c53e",
+      "persona": {
+        "name": "Advait",
+        "grade": 1
+      },
+      "started_at": "2026-05-16T06:39:35.247244",
+      "finished_at": "2026-05-16T06:40:04.893448",
+      "rounds": 5,
+      "questions": 15,
+      "accuracy": "20%",
+      "avg_latency_ms": "127",
+      "p95_latency_ms": "241",
+      "errors": 1,
+      "error_details": [
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "growth_read": {
+          "pass": 2,
+          "fail": 0
+        },
+        "wavebook_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "smart_session": {
+          "pass": 2,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 2,
+          "fail": 0
+        },
+        "worksheets_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 1,
+          "fail": 0
+        },
+        "streak_read": {
+          "pass": 2,
+          "fail": 0
+        },
+        "bookmark_save": {
+          "pass": 1,
+          "fail": 0
+        },
+        "bookmark_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "daily_puzzle": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_715c3d65bf83",
+      "persona": {
+        "name": "Ishaan",
+        "grade": 2
+      },
+      "started_at": "2026-05-16T06:39:41.303854",
+      "finished_at": "2026-05-16T06:39:55.290059",
+      "rounds": 5,
+      "questions": 3,
+      "accuracy": "0%",
+      "avg_latency_ms": "114",
+      "p95_latency_ms": "427",
+      "errors": 1,
+      "error_details": [
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "daily_puzzle": {
+          "pass": 1,
+          "fail": 0
+        },
+        "wavebook_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "growth_read": {
+          "pass": 3,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 3,
+          "fail": 0
+        },
+        "smart_session": {
+          "pass": 1,
+          "fail": 0
+        },
+        "streak_read": {
+          "pass": 2,
+          "fail": 0
+        },
+        "bookmark_save": {
+          "pass": 2,
+          "fail": 0
+        },
+        "bookmark_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "worksheets_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_7c4225456907",
+      "persona": {
+        "name": "Pihu",
+        "grade": 3
+      },
+      "started_at": "2026-05-16T06:39:46.144618",
+      "finished_at": "2026-05-16T06:40:34.156370",
+      "rounds": 5,
+      "questions": 28,
+      "accuracy": "18%",
+      "avg_latency_ms": "121",
+      "p95_latency_ms": "255",
+      "errors": 2,
+      "error_details": [
+        "GET /v4/rewards/bot_7c4225456907 \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "growth_read": {
+          "pass": 2,
+          "fail": 0
+        },
+        "smart_session": {
+          "pass": 2,
+          "fail": 0
+        },
+        "worksheets_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "wavebook_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 3,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 1,
+          "fail": 0
+        },
+        "rewards_balance": {
+          "pass": 1,
+          "fail": 0
+        },
+        "bookmark_save": {
+          "pass": 1,
+          "fail": 0
+        },
+        "bookmark_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "daily_puzzle": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_063ed0af1f68",
+      "persona": {
+        "name": "Arnav",
+        "grade": 4
+      },
+      "started_at": "2026-05-16T06:39:46.427398",
+      "finished_at": "2026-05-16T06:40:20.684111",
+      "rounds": 5,
+      "questions": 17,
+      "accuracy": "24%",
+      "avg_latency_ms": "117",
+      "p95_latency_ms": "268",
+      "errors": 4,
+      "error_details": [
+        "GET /v4/rewards/bot_063ed0af1f68 \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "GET /v4/rewards/bot_063ed0af1f68 \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "GET /v4/rewards/bot_063ed0af1f68 \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "rewards_balance": {
+          "pass": 3,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 2,
+          "fail": 0
+        },
+        "worksheets_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "streak_read": {
+          "pass": 2,
+          "fail": 0
+        },
+        "bookmark_save": {
+          "pass": 2,
+          "fail": 0
+        },
+        "bookmark_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "smart_session": {
+          "pass": 2,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 2,
+          "fail": 0
+        },
+        "wavebook_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "growth_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_8717a87bf44d",
+      "persona": {
+        "name": "Om",
+        "grade": 5
+      },
+      "started_at": "2026-05-16T06:39:51.344253",
+      "finished_at": "2026-05-16T06:40:12.310114",
+      "rounds": 5,
+      "questions": 8,
+      "accuracy": "12%",
+      "avg_latency_ms": "122",
+      "p95_latency_ms": "486",
+      "errors": 3,
+      "error_details": [
+        "GET /v4/rewards/bot_8717a87bf44d \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "GET /v4/rewards/bot_8717a87bf44d \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "worksheets_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "bookmark_save": {
+          "pass": 2,
+          "fail": 0
+        },
+        "bookmark_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 1,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 2,
+          "fail": 0
+        },
+        "growth_read": {
+          "pass": 2,
+          "fail": 0
+        },
+        "rewards_balance": {
+          "pass": 2,
+          "fail": 0
+        },
+        "wavebook_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "daily_puzzle": {
+          "pass": 1,
+          "fail": 0
+        },
+        "smart_session": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_dd6fdb9d4a11",
+      "persona": {
+        "name": "Aanya",
+        "grade": 1
+      },
+      "started_at": "2026-05-16T06:39:51.468113",
+      "finished_at": "2026-05-16T06:40:16.237299",
+      "rounds": 5,
+      "questions": 11,
+      "accuracy": "18%",
+      "avg_latency_ms": "130",
+      "p95_latency_ms": "322",
+      "errors": 2,
+      "error_details": [
+        "GET /v4/rewards/bot_dd6fdb9d4a11 \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "growth_read": {
+          "pass": 4,
+          "fail": 0
+        },
+        "daily_puzzle": {
+          "pass": 2,
+          "fail": 0
+        },
+        "smart_session": {
+          "pass": 1,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 2,
+          "fail": 0
+        },
+        "rewards_balance": {
+          "pass": 1,
+          "fail": 0
+        },
+        "wavebook_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_9d7196423f8a",
+      "persona": {
+        "name": "Saira",
+        "grade": 2
+      },
+      "started_at": "2026-05-16T06:39:52.077923",
+      "finished_at": "2026-05-16T06:40:17.748667",
+      "rounds": 5,
+      "questions": 7,
+      "accuracy": "14%",
+      "avg_latency_ms": "100",
+      "p95_latency_ms": "249",
+      "errors": 3,
+      "error_details": [
+        "GET /v4/rewards/bot_9d7196423f8a \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "GET /v4/rewards/bot_9d7196423f8a \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "rewards_balance": {
+          "pass": 2,
+          "fail": 0
+        },
+        "bookmark_save": {
+          "pass": 3,
+          "fail": 0
+        },
+        "bookmark_list": {
+          "pass": 3,
+          "fail": 0
+        },
+        "daily_puzzle": {
+          "pass": 2,
+          "fail": 0
+        },
+        "worksheets_list": {
+          "pass": 3,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 1,
+          "fail": 0
+        },
+        "streak_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "smart_session": {
+          "pass": 1,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 2,
+          "fail": 0
+        },
+        "wavebook_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_776bad1d4725",
+      "persona": {
+        "name": "Shaurya",
+        "grade": 3
+      },
+      "started_at": "2026-05-16T06:39:52.461935",
+      "finished_at": "2026-05-16T06:40:14.900912",
+      "rounds": 5,
+      "questions": 7,
+      "accuracy": "29%",
+      "avg_latency_ms": "102",
+      "p95_latency_ms": "228",
+      "errors": 1,
+      "error_details": [
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "streak_read": {
+          "pass": 4,
+          "fail": 0
+        },
+        "daily_puzzle": {
+          "pass": 3,
+          "fail": 0
+        },
+        "wavebook_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 1,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 2,
+          "fail": 0
+        },
+        "worksheets_list": {
+          "pass": 3,
+          "fail": 0
+        },
+        "growth_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_5a43a2ed57f8",
+      "persona": {
+        "name": "Kavya",
+        "grade": 4
+      },
+      "started_at": "2026-05-16T06:39:53.278911",
+      "finished_at": "2026-05-16T06:40:15.154933",
+      "rounds": 5,
+      "questions": 8,
+      "accuracy": "25%",
+      "avg_latency_ms": "119",
+      "p95_latency_ms": "462",
+      "errors": 1,
+      "error_details": [
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "streak_read": {
+          "pass": 2,
+          "fail": 0
+        },
+        "smart_session": {
+          "pass": 1,
+          "fail": 0
+        },
+        "growth_read": {
+          "pass": 2,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 4,
+          "fail": 0
+        },
+        "daily_puzzle": {
+          "pass": 3,
+          "fail": 0
+        },
+        "worksheets_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 1,
+          "fail": 0
+        },
+        "wavebook_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_4c4951a14595",
+      "persona": {
+        "name": "Prisha",
+        "grade": 5
+      },
+      "started_at": "2026-05-16T06:39:53.874037",
+      "finished_at": "2026-05-16T06:40:22.188021",
+      "rounds": 5,
+      "questions": 16,
+      "accuracy": "19%",
+      "avg_latency_ms": "122",
+      "p95_latency_ms": "290",
+      "errors": 1,
+      "error_details": [
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "bookmark_save": {
+          "pass": 3,
+          "fail": 0
+        },
+        "bookmark_list": {
+          "pass": 3,
+          "fail": 0
+        },
+        "smart_session": {
+          "pass": 3,
+          "fail": 0
+        },
+        "streak_read": {
+          "pass": 2,
+          "fail": 0
+        },
+        "worksheets_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 1,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 1,
+          "fail": 0
+        },
+        "growth_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "daily_puzzle": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_c664fefde447",
+      "persona": {
+        "name": "Vivaan",
+        "grade": 1
+      },
+      "started_at": "2026-05-16T06:39:54.149336",
+      "finished_at": "2026-05-16T06:40:27.469462",
+      "rounds": 5,
+      "questions": 16,
+      "accuracy": "31%",
+      "avg_latency_ms": "117",
+      "p95_latency_ms": "314",
+      "errors": 4,
+      "error_details": [
+        "GET /v4/rewards/bot_c664fefde447 \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "GET /v4/rewards/bot_c664fefde447 \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "GET /v4/rewards/bot_c664fefde447 \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "wavebook_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "smart_session": {
+          "pass": 2,
+          "fail": 0
+        },
+        "streak_read": {
+          "pass": 3,
+          "fail": 0
+        },
+        "worksheets_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "daily_puzzle": {
+          "pass": 2,
+          "fail": 0
+        },
+        "rewards_balance": {
+          "pass": 3,
+          "fail": 0
+        },
+        "growth_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 1,
+          "fail": 0
+        },
+        "bookmark_save": {
+          "pass": 1,
+          "fail": 0
+        },
+        "bookmark_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_37f6f3aa3189",
+      "persona": {
+        "name": "Dhruv",
+        "grade": 2
+      },
+      "started_at": "2026-05-16T06:39:55.290172",
+      "finished_at": "2026-05-16T06:40:19.894119",
+      "rounds": 5,
+      "questions": 10,
+      "accuracy": "20%",
+      "avg_latency_ms": "121",
+      "p95_latency_ms": "397",
+      "errors": 4,
+      "error_details": [
+        "GET /v4/rewards/bot_37f6f3aa3189 \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "GET /v4/rewards/bot_37f6f3aa3189 \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "GET /v4/rewards/bot_37f6f3aa3189 \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 3,
+          "fail": 0
+        },
+        "worksheets_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "daily_puzzle": {
+          "pass": 1,
+          "fail": 0
+        },
+        "rewards_balance": {
+          "pass": 3,
+          "fail": 0
+        },
+        "growth_read": {
+          "pass": 2,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 1,
+          "fail": 0
+        },
+        "bookmark_save": {
+          "pass": 1,
+          "fail": 0
+        },
+        "bookmark_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "smart_session": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_f636acf68bde",
+      "persona": {
+        "name": "Anika",
+        "grade": 3
+      },
+      "started_at": "2026-05-16T06:39:56.462053",
+      "finished_at": "2026-05-16T06:40:27.675695",
+      "rounds": 5,
+      "questions": 14,
+      "accuracy": "21%",
+      "avg_latency_ms": "112",
+      "p95_latency_ms": "268",
+      "errors": 3,
+      "error_details": [
+        "GET /v4/rewards/bot_f636acf68bde \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "GET /v4/rewards/bot_f636acf68bde \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "smart_session": {
+          "pass": 2,
+          "fail": 0
+        },
+        "wavebook_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "rewards_balance": {
+          "pass": 2,
+          "fail": 0
+        },
+        "daily_puzzle": {
+          "pass": 5,
+          "fail": 0
+        },
+        "bookmark_save": {
+          "pass": 1,
+          "fail": 0
+        },
+        "bookmark_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "growth_read": {
+          "pass": 2,
+          "fail": 0
+        },
+        "streak_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 1,
+          "fail": 0
+        },
+        "worksheets_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_e904af54e3c1",
+      "persona": {
+        "name": "Laksh",
+        "grade": 4
+      },
+      "started_at": "2026-05-16T06:39:57.277415",
+      "finished_at": "2026-05-16T06:40:31.479123",
+      "rounds": 5,
+      "questions": 16,
+      "accuracy": "31%",
+      "avg_latency_ms": "116",
+      "p95_latency_ms": "231",
+      "errors": 1,
+      "error_details": [
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "wavebook_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "daily_puzzle": {
+          "pass": 4,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 3,
+          "fail": 0
+        },
+        "worksheets_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 2,
+          "fail": 0
+        },
+        "growth_read": {
+          "pass": 2,
+          "fail": 0
+        },
+        "streak_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_e27b6396ea2f",
+      "persona": {
+        "name": "Ritvik",
+        "grade": 5
+      },
+      "started_at": "2026-05-16T06:39:57.284930",
+      "finished_at": "2026-05-16T06:40:42.530444",
+      "rounds": 5,
+      "questions": 23,
+      "accuracy": "13%",
+      "avg_latency_ms": "130",
+      "p95_latency_ms": "240",
+      "errors": 1,
+      "error_details": [
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 1,
+          "fail": 0
+        },
+        "daily_puzzle": {
+          "pass": 1,
+          "fail": 0
+        },
+        "wavebook_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "bookmark_save": {
+          "pass": 3,
+          "fail": 0
+        },
+        "bookmark_list": {
+          "pass": 3,
+          "fail": 0
+        },
+        "smart_session": {
+          "pass": 1,
+          "fail": 0
+        },
+        "worksheets_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "growth_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "streak_read": {
+          "pass": 2,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 3,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_9601528562c5",
+      "persona": {
+        "name": "Pari",
+        "grade": 1
+      },
+      "started_at": "2026-05-16T06:39:58.766457",
+      "finished_at": "2026-05-16T06:40:24.857385",
+      "rounds": 5,
+      "questions": 11,
+      "accuracy": "18%",
+      "avg_latency_ms": "126",
+      "p95_latency_ms": "349",
+      "errors": 3,
+      "error_details": [
+        "GET /v4/rewards/bot_9601528562c5 \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "GET /v4/rewards/bot_9601528562c5 \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "growth_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "rewards_balance": {
+          "pass": 2,
+          "fail": 0
+        },
+        "daily_puzzle": {
+          "pass": 1,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 2,
+          "fail": 0
+        },
+        "worksheets_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "wavebook_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "smart_session": {
+          "pass": 2,
+          "fail": 0
+        },
+        "streak_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 1,
+          "fail": 0
+        },
+        "bookmark_save": {
+          "pass": 1,
+          "fail": 0
+        },
+        "bookmark_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_d08a934e26fb",
+      "persona": {
+        "name": "Trisha",
+        "grade": 2
+      },
+      "started_at": "2026-05-16T06:39:59.771111",
+      "finished_at": "2026-05-16T06:40:32.870608",
+      "rounds": 5,
+      "questions": 15,
+      "accuracy": "0%",
+      "avg_latency_ms": "121",
+      "p95_latency_ms": "241",
+      "errors": 2,
+      "error_details": [
+        "GET /v4/rewards/bot_d08a934e26fb \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "streak_read": {
+          "pass": 2,
+          "fail": 0
+        },
+        "daily_puzzle": {
+          "pass": 2,
+          "fail": 0
+        },
+        "worksheets_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "wavebook_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 2,
+          "fail": 0
+        },
+        "smart_session": {
+          "pass": 1,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 1,
+          "fail": 0
+        },
+        "rewards_balance": {
+          "pass": 1,
+          "fail": 0
+        },
+        "growth_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "bookmark_save": {
+          "pass": 1,
+          "fail": 0
+        },
+        "bookmark_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_61a02e5550cb",
+      "persona": {
+        "name": "Rudra",
+        "grade": 3
+      },
+      "started_at": "2026-05-16T06:40:00.385346",
+      "finished_at": "2026-05-16T06:40:08.690588",
+      "rounds": 5,
+      "questions": 0,
+      "accuracy": "N/A",
+      "avg_latency_ms": "62",
+      "p95_latency_ms": "128",
+      "errors": 4,
+      "error_details": [
+        "GET /v4/rewards/bot_61a02e5550cb \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "GET /v4/rewards/bot_61a02e5550cb \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "GET /v4/rewards/bot_61a02e5550cb \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "bookmark_save": {
+          "pass": 2,
+          "fail": 0
+        },
+        "bookmark_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "rewards_balance": {
+          "pass": 3,
+          "fail": 0
+        },
+        "worksheets_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 3,
+          "fail": 0
+        },
+        "daily_puzzle": {
+          "pass": 3,
+          "fail": 0
+        },
+        "streak_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_33081bba36f0",
+      "persona": {
+        "name": "Nisha",
+        "grade": 4
+      },
+      "started_at": "2026-05-16T06:40:04.893554",
+      "finished_at": "2026-05-16T06:40:35.894925",
+      "rounds": 5,
+      "questions": 15,
+      "accuracy": "27%",
+      "avg_latency_ms": "125",
+      "p95_latency_ms": "250",
+      "errors": 3,
+      "error_details": [
+        "GET /v4/rewards/bot_33081bba36f0 \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "GET /v4/rewards/bot_33081bba36f0 \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "growth_read": {
+          "pass": 3,
+          "fail": 0
+        },
+        "worksheets_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "bookmark_save": {
+          "pass": 1,
+          "fail": 0
+        },
+        "bookmark_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 3,
+          "fail": 0
+        },
+        "rewards_balance": {
+          "pass": 2,
+          "fail": 0
+        },
+        "wavebook_list": {
+          "pass": 3,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 2,
+          "fail": 0
+        },
+        "smart_session": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_69814c8fb003",
+      "persona": {
+        "name": "Aisha",
+        "grade": 5
+      },
+      "started_at": "2026-05-16T06:40:05.072527",
+      "finished_at": "2026-05-16T06:40:54.355998",
+      "rounds": 5,
+      "questions": 30,
+      "accuracy": "23%",
+      "avg_latency_ms": "127",
+      "p95_latency_ms": "239",
+      "errors": 2,
+      "error_details": [
+        "GET /v4/rewards/bot_69814c8fb003 \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "smart_session": {
+          "pass": 4,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 2,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 2,
+          "fail": 0
+        },
+        "rewards_balance": {
+          "pass": 1,
+          "fail": 0
+        },
+        "bookmark_save": {
+          "pass": 3,
+          "fail": 0
+        },
+        "bookmark_list": {
+          "pass": 3,
+          "fail": 0
+        },
+        "daily_puzzle": {
+          "pass": 2,
+          "fail": 0
+        },
+        "wavebook_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "worksheets_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_8e5b6377155c",
+      "persona": {
+        "name": "Reyansh",
+        "grade": 1
+      },
+      "started_at": "2026-05-16T06:40:08.690773",
+      "finished_at": "2026-05-16T06:40:34.187646",
+      "rounds": 5,
+      "questions": 10,
+      "accuracy": "40%",
+      "avg_latency_ms": "98",
+      "p95_latency_ms": "195",
+      "errors": 4,
+      "error_details": [
+        "GET /v4/rewards/bot_8e5b6377155c \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "GET /v4/rewards/bot_8e5b6377155c \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "GET /v4/rewards/bot_8e5b6377155c \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "bookmark_save": {
+          "pass": 4,
+          "fail": 0
+        },
+        "bookmark_list": {
+          "pass": 4,
+          "fail": 0
+        },
+        "streak_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "wavebook_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "rewards_balance": {
+          "pass": 3,
+          "fail": 0
+        },
+        "worksheets_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 3,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 1,
+          "fail": 0
+        },
+        "smart_session": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_3076055d5bb2",
+      "persona": {
+        "name": "Aryan",
+        "grade": 2
+      },
+      "started_at": "2026-05-16T06:40:12.310337",
+      "finished_at": "2026-05-16T06:40:40.966044",
+      "rounds": 5,
+      "questions": 14,
+      "accuracy": "21%",
+      "avg_latency_ms": "107",
+      "p95_latency_ms": "206",
+      "errors": 2,
+      "error_details": [
+        "GET /v4/rewards/bot_3076055d5bb2 \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 3,
+          "fail": 0
+        },
+        "smart_session": {
+          "pass": 3,
+          "fail": 0
+        },
+        "rewards_balance": {
+          "pass": 1,
+          "fail": 0
+        },
+        "daily_puzzle": {
+          "pass": 2,
+          "fail": 0
+        },
+        "streak_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "wavebook_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "bookmark_save": {
+          "pass": 1,
+          "fail": 0
+        },
+        "bookmark_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_2c275f4d6e5d",
+      "persona": {
+        "name": "Myra",
+        "grade": 3
+      },
+      "started_at": "2026-05-16T06:40:14.013827",
+      "finished_at": "2026-05-16T06:40:46.729103",
+      "rounds": 5,
+      "questions": 14,
+      "accuracy": "14%",
+      "avg_latency_ms": "118",
+      "p95_latency_ms": "230",
+      "errors": 1,
+      "error_details": [
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "daily_puzzle": {
+          "pass": 3,
+          "fail": 0
+        },
+        "wavebook_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "bookmark_save": {
+          "pass": 2,
+          "fail": 0
+        },
+        "bookmark_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "worksheets_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "smart_session": {
+          "pass": 2,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 3,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 1,
+          "fail": 0
+        },
+        "growth_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_e9a0e5e38870",
+      "persona": {
+        "name": "Parth",
+        "grade": 4
+      },
+      "started_at": "2026-05-16T06:40:14.901094",
+      "finished_at": "2026-05-16T06:40:32.255628",
+      "rounds": 5,
+      "questions": 7,
+      "accuracy": "14%",
+      "avg_latency_ms": "131",
+      "p95_latency_ms": "470",
+      "errors": 3,
+      "error_details": [
+        "GET /v4/rewards/bot_e9a0e5e38870 \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "GET /v4/rewards/bot_e9a0e5e38870 \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 3,
+          "fail": 0
+        },
+        "growth_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "smart_session": {
+          "pass": 1,
+          "fail": 0
+        },
+        "daily_puzzle": {
+          "pass": 1,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 1,
+          "fail": 0
+        },
+        "rewards_balance": {
+          "pass": 2,
+          "fail": 0
+        },
+        "wavebook_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "streak_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_c6f1a64d3c98",
+      "persona": {
+        "name": "Yash",
+        "grade": 5
+      },
+      "started_at": "2026-05-16T06:40:15.155015",
+      "finished_at": "2026-05-16T06:40:35.127213",
+      "rounds": 5,
+      "questions": 8,
+      "accuracy": "12%",
+      "avg_latency_ms": "121",
+      "p95_latency_ms": "437",
+      "errors": 1,
+      "error_details": [
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 2,
+          "fail": 0
+        },
+        "smart_session": {
+          "pass": 2,
+          "fail": 0
+        },
+        "streak_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "bookmark_save": {
+          "pass": 1,
+          "fail": 0
+        },
+        "bookmark_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "worksheets_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 1,
+          "fail": 0
+        },
+        "daily_puzzle": {
+          "pass": 1,
+          "fail": 0
+        },
+        "growth_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_60743a07d275",
+      "persona": {
+        "name": "Navya",
+        "grade": 1
+      },
+      "started_at": "2026-05-16T06:40:16.237426",
+      "finished_at": "2026-05-16T06:41:04.162262",
+      "rounds": 5,
+      "questions": 27,
+      "accuracy": "26%",
+      "avg_latency_ms": "134",
+      "p95_latency_ms": "257",
+      "errors": 2,
+      "error_details": [
+        "GET /v4/rewards/bot_60743a07d275 \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "daily_puzzle": {
+          "pass": 2,
+          "fail": 0
+        },
+        "worksheets_list": {
+          "pass": 3,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 2,
+          "fail": 0
+        },
+        "rewards_balance": {
+          "pass": 1,
+          "fail": 0
+        },
+        "streak_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "smart_session": {
+          "pass": 3,
+          "fail": 0
+        },
+        "wavebook_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "growth_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_1b7e43ce5db7",
+      "persona": {
+        "name": "Kiara",
+        "grade": 2
+      },
+      "started_at": "2026-05-16T06:40:17.748795",
+      "finished_at": "2026-05-16T06:40:37.998421",
+      "rounds": 5,
+      "questions": 8,
+      "accuracy": "0%",
+      "avg_latency_ms": "119",
+      "p95_latency_ms": "401",
+      "errors": 1,
+      "error_details": [
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "streak_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "bookmark_save": {
+          "pass": 3,
+          "fail": 0
+        },
+        "bookmark_list": {
+          "pass": 3,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 4,
+          "fail": 0
+        },
+        "growth_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 1,
+          "fail": 0
+        },
+        "worksheets_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "smart_session": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_748077126ba1",
+      "persona": {
+        "name": "Ayaan",
+        "grade": 3
+      },
+      "started_at": "2026-05-16T06:40:19.505410",
+      "finished_at": "2026-05-16T06:40:31.408372",
+      "rounds": 5,
+      "questions": 0,
+      "accuracy": "N/A",
+      "avg_latency_ms": "96",
+      "p95_latency_ms": "147",
+      "errors": 4,
+      "error_details": [
+        "GET /v4/rewards/bot_748077126ba1 \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "GET /v4/rewards/bot_748077126ba1 \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "GET /v4/rewards/bot_748077126ba1 \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "rewards_balance": {
+          "pass": 3,
+          "fail": 0
+        },
+        "growth_read": {
+          "pass": 3,
+          "fail": 0
+        },
+        "wavebook_list": {
+          "pass": 3,
+          "fail": 0
+        },
+        "worksheets_list": {
+          "pass": 3,
+          "fail": 0
+        },
+        "streak_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "daily_puzzle": {
+          "pass": 2,
+          "fail": 0
+        },
+        "bookmark_save": {
+          "pass": 1,
+          "fail": 0
+        },
+        "bookmark_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_d5e17864c66e",
+      "persona": {
+        "name": "Rashi",
+        "grade": 4
+      },
+      "started_at": "2026-05-16T06:40:19.894263",
+      "finished_at": "2026-05-16T06:40:39.881823",
+      "rounds": 5,
+      "questions": 9,
+      "accuracy": "22%",
+      "avg_latency_ms": "127",
+      "p95_latency_ms": "547",
+      "errors": 3,
+      "error_details": [
+        "GET /v4/rewards/bot_d5e17864c66e \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "GET /v4/rewards/bot_d5e17864c66e \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "rewards_balance": {
+          "pass": 2,
+          "fail": 0
+        },
+        "smart_session": {
+          "pass": 2,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 1,
+          "fail": 0
+        },
+        "streak_read": {
+          "pass": 3,
+          "fail": 0
+        },
+        "growth_read": {
+          "pass": 2,
+          "fail": 0
+        },
+        "worksheets_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "wavebook_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 1,
+          "fail": 0
+        },
+        "daily_puzzle": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_c1a37fe76346",
+      "persona": {
+        "name": "Mahi",
+        "grade": 5
+      },
+      "started_at": "2026-05-16T06:40:20.684259",
+      "finished_at": "2026-05-16T06:40:56.051068",
+      "rounds": 5,
+      "questions": 18,
+      "accuracy": "11%",
+      "avg_latency_ms": "122",
+      "p95_latency_ms": "231",
+      "errors": 2,
+      "error_details": [
+        "GET /v4/rewards/bot_c1a37fe76346 \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "streak_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 1,
+          "fail": 0
+        },
+        "daily_puzzle": {
+          "pass": 2,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 2,
+          "fail": 0
+        },
+        "rewards_balance": {
+          "pass": 1,
+          "fail": 0
+        },
+        "bookmark_save": {
+          "pass": 3,
+          "fail": 0
+        },
+        "bookmark_list": {
+          "pass": 3,
+          "fail": 0
+        },
+        "smart_session": {
+          "pass": 3,
+          "fail": 0
+        },
+        "growth_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "wavebook_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "worksheets_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_d2ffd3cbe231",
+      "persona": {
+        "name": "Aarav",
+        "grade": 1
+      },
+      "started_at": "2026-05-16T06:40:22.188217",
+      "finished_at": "2026-05-16T06:40:37.599281",
+      "rounds": 5,
+      "questions": 6,
+      "accuracy": "0%",
+      "avg_latency_ms": "120",
+      "p95_latency_ms": "277",
+      "errors": 3,
+      "error_details": [
+        "GET /v4/rewards/bot_d2ffd3cbe231 \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "GET /v4/rewards/bot_d2ffd3cbe231 \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "wavebook_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 1,
+          "fail": 0
+        },
+        "bookmark_save": {
+          "pass": 2,
+          "fail": 0
+        },
+        "bookmark_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "growth_read": {
+          "pass": 3,
+          "fail": 0
+        },
+        "smart_session": {
+          "pass": 2,
+          "fail": 0
+        },
+        "rewards_balance": {
+          "pass": 2,
+          "fail": 0
+        },
+        "worksheets_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "streak_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_7f38335e2cfb",
+      "persona": {
+        "name": "Diya",
+        "grade": 2
+      },
+      "started_at": "2026-05-16T06:40:24.857513",
+      "finished_at": "2026-05-16T06:40:50.418385",
+      "rounds": 5,
+      "questions": 12,
+      "accuracy": "8%",
+      "avg_latency_ms": "118",
+      "p95_latency_ms": "282",
+      "errors": 2,
+      "error_details": [
+        "GET /v4/rewards/bot_7f38335e2cfb \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "growth_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 3,
+          "fail": 0
+        },
+        "worksheets_list": {
+          "pass": 3,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 1,
+          "fail": 0
+        },
+        "bookmark_save": {
+          "pass": 2,
+          "fail": 0
+        },
+        "bookmark_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "rewards_balance": {
+          "pass": 1,
+          "fail": 0
+        },
+        "smart_session": {
+          "pass": 2,
+          "fail": 0
+        },
+        "streak_read": {
+          "pass": 2,
+          "fail": 0
+        },
+        "wavebook_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "daily_puzzle": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_d84f8448f64f",
+      "persona": {
+        "name": "Kabir",
+        "grade": 3
+      },
+      "started_at": "2026-05-16T06:40:27.469590",
+      "finished_at": "2026-05-16T06:41:10.703571",
+      "rounds": 5,
+      "questions": 23,
+      "accuracy": "22%",
+      "avg_latency_ms": "124",
+      "p95_latency_ms": "307",
+      "errors": 3,
+      "error_details": [
+        "GET /v4/rewards/bot_d84f8448f64f \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "GET /v4/rewards/bot_d84f8448f64f \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "smart_session": {
+          "pass": 2,
+          "fail": 0
+        },
+        "bookmark_save": {
+          "pass": 2,
+          "fail": 0
+        },
+        "bookmark_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "rewards_balance": {
+          "pass": 2,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 2,
+          "fail": 0
+        },
+        "daily_puzzle": {
+          "pass": 3,
+          "fail": 0
+        },
+        "growth_read": {
+          "pass": 2,
+          "fail": 0
+        },
+        "wavebook_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 1,
+          "fail": 0
+        },
+        "worksheets_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_7d9e76766039",
+      "persona": {
+        "name": "Ananya",
+        "grade": 4
+      },
+      "started_at": "2026-05-16T06:40:27.675805",
+      "finished_at": "2026-05-16T06:40:58.267180",
+      "rounds": 5,
+      "questions": 15,
+      "accuracy": "20%",
+      "avg_latency_ms": "125",
+      "p95_latency_ms": "349",
+      "errors": 2,
+      "error_details": [
+        "GET /v4/rewards/bot_7d9e76766039 \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "streak_read": {
+          "pass": 2,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 2,
+          "fail": 0
+        },
+        "smart_session": {
+          "pass": 3,
+          "fail": 0
+        },
+        "daily_puzzle": {
+          "pass": 2,
+          "fail": 0
+        },
+        "growth_read": {
+          "pass": 2,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 1,
+          "fail": 0
+        },
+        "worksheets_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "bookmark_save": {
+          "pass": 1,
+          "fail": 0
+        },
+        "bookmark_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "rewards_balance": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_14b9ccb0114a",
+      "persona": {
+        "name": "Vihaan",
+        "grade": 5
+      },
+      "started_at": "2026-05-16T06:40:31.408567",
+      "finished_at": "2026-05-16T06:41:05.259757",
+      "rounds": 5,
+      "questions": 15,
+      "accuracy": "13%",
+      "avg_latency_ms": "136",
+      "p95_latency_ms": "299",
+      "errors": 2,
+      "error_details": [
+        "GET /v4/rewards/bot_14b9ccb0114a \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "smart_session": {
+          "pass": 1,
+          "fail": 0
+        },
+        "growth_read": {
+          "pass": 2,
+          "fail": 0
+        },
+        "streak_read": {
+          "pass": 3,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 2,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 1,
+          "fail": 0
+        },
+        "bookmark_save": {
+          "pass": 3,
+          "fail": 0
+        },
+        "bookmark_list": {
+          "pass": 3,
+          "fail": 0
+        },
+        "wavebook_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "worksheets_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "rewards_balance": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_e6595329a191",
+      "persona": {
+        "name": "Meera",
+        "grade": 1
+      },
+      "started_at": "2026-05-16T06:40:31.479206",
+      "finished_at": "2026-05-16T06:41:11.232725",
+      "rounds": 5,
+      "questions": 19,
+      "accuracy": "37%",
+      "avg_latency_ms": "115",
+      "p95_latency_ms": "243",
+      "errors": 1,
+      "error_details": [
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "daily_puzzle": {
+          "pass": 3,
+          "fail": 0
+        },
+        "wavebook_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 2,
+          "fail": 0
+        },
+        "growth_read": {
+          "pass": 2,
+          "fail": 0
+        },
+        "streak_read": {
+          "pass": 2,
+          "fail": 0
+        },
+        "worksheets_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 1,
+          "fail": 0
+        },
+        "smart_session": {
+          "pass": 2,
+          "fail": 0
+        },
+        "bookmark_save": {
+          "pass": 1,
+          "fail": 0
+        },
+        "bookmark_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_ac1079df514f",
+      "persona": {
+        "name": "Rohan",
+        "grade": 2
+      },
+      "started_at": "2026-05-16T06:40:32.255774",
+      "finished_at": "2026-05-16T06:40:59.280393",
+      "rounds": 5,
+      "questions": 15,
+      "accuracy": "13%",
+      "avg_latency_ms": "111",
+      "p95_latency_ms": "210",
+      "errors": 3,
+      "error_details": [
+        "GET /v4/rewards/bot_ac1079df514f \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "GET /v4/rewards/bot_ac1079df514f \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "daily_puzzle": {
+          "pass": 4,
+          "fail": 0
+        },
+        "smart_session": {
+          "pass": 2,
+          "fail": 0
+        },
+        "bookmark_save": {
+          "pass": 2,
+          "fail": 0
+        },
+        "bookmark_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 1,
+          "fail": 0
+        },
+        "worksheets_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 1,
+          "fail": 0
+        },
+        "rewards_balance": {
+          "pass": 2,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_0afe2aa781f5",
+      "persona": {
+        "name": "Arjun",
+        "grade": 3
+      },
+      "started_at": "2026-05-16T06:40:32.870698",
+      "finished_at": "2026-05-16T06:41:10.505174",
+      "rounds": 5,
+      "questions": 16,
+      "accuracy": "19%",
+      "avg_latency_ms": "139",
+      "p95_latency_ms": "354",
+      "errors": 1,
+      "error_details": [
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "worksheets_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "wavebook_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "streak_read": {
+          "pass": 4,
+          "fail": 0
+        },
+        "growth_read": {
+          "pass": 3,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 2,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 1,
+          "fail": 0
+        },
+        "smart_session": {
+          "pass": 1,
+          "fail": 0
+        },
+        "bookmark_save": {
+          "pass": 1,
+          "fail": 0
+        },
+        "bookmark_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_9795a87648a3",
+      "persona": {
+        "name": "Saanvi",
+        "grade": 4
+      },
+      "started_at": "2026-05-16T06:40:34.156506",
+      "finished_at": "2026-05-16T06:41:07.599920",
+      "rounds": 5,
+      "questions": 17,
+      "accuracy": "6%",
+      "avg_latency_ms": "116",
+      "p95_latency_ms": "222",
+      "errors": 2,
+      "error_details": [
+        "GET /v4/rewards/bot_9795a87648a3 \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 1,
+          "fail": 0
+        },
+        "smart_session": {
+          "pass": 3,
+          "fail": 0
+        },
+        "growth_read": {
+          "pass": 2,
+          "fail": 0
+        },
+        "worksheets_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "wavebook_list": {
+          "pass": 3,
+          "fail": 0
+        },
+        "rewards_balance": {
+          "pass": 1,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 1,
+          "fail": 0
+        },
+        "streak_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "bookmark_save": {
+          "pass": 1,
+          "fail": 0
+        },
+        "bookmark_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_9c6c2615f547",
+      "persona": {
+        "name": "Isha",
+        "grade": 5
+      },
+      "started_at": "2026-05-16T06:40:34.187746",
+      "finished_at": "2026-05-16T06:41:11.375989",
+      "rounds": 5,
+      "questions": 19,
+      "accuracy": "21%",
+      "avg_latency_ms": "136",
+      "p95_latency_ms": "276",
+      "errors": 5,
+      "error_details": [
+        "GET /v4/rewards/bot_9c6c2615f547 \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "GET /v4/rewards/bot_9c6c2615f547 \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "GET /v4/rewards/bot_9c6c2615f547 \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "GET /v4/rewards/bot_9c6c2615f547 \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "worksheets_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "daily_puzzle": {
+          "pass": 3,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 2,
+          "fail": 0
+        },
+        "wavebook_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "rewards_balance": {
+          "pass": 4,
+          "fail": 0
+        },
+        "smart_session": {
+          "pass": 1,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 1,
+          "fail": 0
+        },
+        "growth_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_85b5737a73ae",
+      "persona": {
+        "name": "Riya",
+        "grade": 1
+      },
+      "started_at": "2026-05-16T06:40:35.127368",
+      "finished_at": "2026-05-16T06:40:53.002123",
+      "rounds": 5,
+      "questions": 6,
+      "accuracy": "0%",
+      "avg_latency_ms": "129",
+      "p95_latency_ms": "489",
+      "errors": 3,
+      "error_details": [
+        "GET /v4/rewards/bot_85b5737a73ae \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "GET /v4/rewards/bot_85b5737a73ae \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "wavebook_list": {
+          "pass": 4,
+          "fail": 0
+        },
+        "smart_session": {
+          "pass": 2,
+          "fail": 0
+        },
+        "streak_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "daily_puzzle": {
+          "pass": 2,
+          "fail": 0
+        },
+        "rewards_balance": {
+          "pass": 2,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 1,
+          "fail": 0
+        },
+        "growth_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "worksheets_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "bookmark_save": {
+          "pass": 1,
+          "fail": 0
+        },
+        "bookmark_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_01392370ee4e",
+      "persona": {
+        "name": "Anvi",
+        "grade": 2
+      },
+      "started_at": "2026-05-16T06:40:35.895073",
+      "finished_at": "2026-05-16T06:40:49.206769",
+      "rounds": 5,
+      "questions": 3,
+      "accuracy": "0%",
+      "avg_latency_ms": "127",
+      "p95_latency_ms": "487",
+      "errors": 3,
+      "error_details": [
+        "GET /v4/rewards/bot_01392370ee4e \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "GET /v4/rewards/bot_01392370ee4e \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "smart_session": {
+          "pass": 1,
+          "fail": 0
+        },
+        "streak_read": {
+          "pass": 4,
+          "fail": 0
+        },
+        "growth_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "bookmark_save": {
+          "pass": 2,
+          "fail": 0
+        },
+        "bookmark_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 2,
+          "fail": 0
+        },
+        "rewards_balance": {
+          "pass": 2,
+          "fail": 0
+        },
+        "wavebook_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_c40691a53b01",
+      "persona": {
+        "name": "Zara",
+        "grade": 3
+      },
+      "started_at": "2026-05-16T06:40:37.599458",
+      "finished_at": "2026-05-16T06:40:59.812834",
+      "rounds": 5,
+      "questions": 9,
+      "accuracy": "0%",
+      "avg_latency_ms": "131",
+      "p95_latency_ms": "482",
+      "errors": 4,
+      "error_details": [
+        "GET /v4/rewards/bot_c40691a53b01 \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "GET /v4/rewards/bot_c40691a53b01 \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "GET /v4/rewards/bot_c40691a53b01 \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "wavebook_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "rewards_balance": {
+          "pass": 3,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 2,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 1,
+          "fail": 0
+        },
+        "daily_puzzle": {
+          "pass": 2,
+          "fail": 0
+        },
+        "bookmark_save": {
+          "pass": 1,
+          "fail": 0
+        },
+        "bookmark_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "worksheets_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "growth_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "smart_session": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_269808e04f53",
+      "persona": {
+        "name": "Veer",
+        "grade": 4
+      },
+      "started_at": "2026-05-16T06:40:37.998565",
+      "finished_at": "2026-05-16T06:41:03.932650",
+      "rounds": 5,
+      "questions": 10,
+      "accuracy": "10%",
+      "avg_latency_ms": "112",
+      "p95_latency_ms": "268",
+      "errors": 2,
+      "error_details": [
+        "GET /v4/rewards/bot_269808e04f53 \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "worksheets_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "bookmark_save": {
+          "pass": 1,
+          "fail": 0
+        },
+        "bookmark_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "rewards_balance": {
+          "pass": 1,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 1,
+          "fail": 0
+        },
+        "streak_read": {
+          "pass": 4,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 1,
+          "fail": 0
+        },
+        "wavebook_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "smart_session": {
+          "pass": 1,
+          "fail": 0
+        },
+        "daily_puzzle": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_9dc7d2a7b964",
+      "persona": {
+        "name": "Neil",
+        "grade": 5
+      },
+      "started_at": "2026-05-16T06:40:39.881948",
+      "finished_at": "2026-05-16T06:41:35.684802",
+      "rounds": 5,
+      "questions": 30,
+      "accuracy": "23%",
+      "avg_latency_ms": "133",
+      "p95_latency_ms": "264",
+      "errors": 2,
+      "error_details": [
+        "GET /v4/rewards/bot_9dc7d2a7b964 \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 4,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 4,
+          "fail": 0
+        },
+        "wavebook_list": {
+          "pass": 3,
+          "fail": 0
+        },
+        "rewards_balance": {
+          "pass": 1,
+          "fail": 0
+        },
+        "growth_read": {
+          "pass": 2,
+          "fail": 0
+        },
+        "bookmark_save": {
+          "pass": 1,
+          "fail": 0
+        },
+        "bookmark_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_b26bad980ba5",
+      "persona": {
+        "name": "Krish",
+        "grade": 1
+      },
+      "started_at": "2026-05-16T06:40:40.966575",
+      "finished_at": "2026-05-16T06:41:52.785383",
+      "rounds": 5,
+      "questions": 42,
+      "accuracy": "21%",
+      "avg_latency_ms": "124",
+      "p95_latency_ms": "260",
+      "errors": 5,
+      "error_details": [
+        "GET /v4/rewards/bot_b26bad980ba5 \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "GET /v4/rewards/bot_b26bad980ba5 \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "GET /v4/rewards/bot_b26bad980ba5 \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "GET /v4/rewards/bot_b26bad980ba5 \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "rewards_balance": {
+          "pass": 4,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 4,
+          "fail": 0
+        },
+        "streak_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "smart_session": {
+          "pass": 2,
+          "fail": 0
+        },
+        "worksheets_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 2,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_74fa69b9df6e",
+      "persona": {
+        "name": "Aditya",
+        "grade": 2
+      },
+      "started_at": "2026-05-16T06:40:42.530644",
+      "finished_at": "2026-05-16T06:41:02.978334",
+      "rounds": 5,
+      "questions": 7,
+      "accuracy": "14%",
+      "avg_latency_ms": "119",
+      "p95_latency_ms": "254",
+      "errors": 3,
+      "error_details": [
+        "GET /v4/rewards/bot_74fa69b9df6e \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "GET /v4/rewards/bot_74fa69b9df6e \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "worksheets_list": {
+          "pass": 3,
+          "fail": 0
+        },
+        "streak_read": {
+          "pass": 2,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 1,
+          "fail": 0
+        },
+        "growth_read": {
+          "pass": 3,
+          "fail": 0
+        },
+        "rewards_balance": {
+          "pass": 2,
+          "fail": 0
+        },
+        "bookmark_save": {
+          "pass": 2,
+          "fail": 0
+        },
+        "bookmark_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 1,
+          "fail": 0
+        },
+        "daily_puzzle": {
+          "pass": 1,
+          "fail": 0
+        },
+        "wavebook_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_46fad014b142",
+      "persona": {
+        "name": "Atharv",
+        "grade": 3
+      },
+      "started_at": "2026-05-16T06:40:46.729304",
+      "finished_at": "2026-05-16T06:41:01.593104",
+      "rounds": 5,
+      "questions": 6,
+      "accuracy": "0%",
+      "avg_latency_ms": "118",
+      "p95_latency_ms": "486",
+      "errors": 2,
+      "error_details": [
+        "GET /v4/rewards/bot_46fad014b142 \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "smart_session": {
+          "pass": 2,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 1,
+          "fail": 0
+        },
+        "worksheets_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "rewards_balance": {
+          "pass": 1,
+          "fail": 0
+        },
+        "daily_puzzle": {
+          "pass": 2,
+          "fail": 0
+        },
+        "streak_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "wavebook_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "bookmark_save": {
+          "pass": 1,
+          "fail": 0
+        },
+        "bookmark_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "growth_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_0382ab90a402",
+      "persona": {
+        "name": "Siya",
+        "grade": 4
+      },
+      "started_at": "2026-05-16T06:40:49.206872",
+      "finished_at": "2026-05-16T06:41:47.572461",
+      "rounds": 5,
+      "questions": 32,
+      "accuracy": "22%",
+      "avg_latency_ms": "128",
+      "p95_latency_ms": "229",
+      "errors": 3,
+      "error_details": [
+        "GET /v4/rewards/bot_0382ab90a402 \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "GET /v4/rewards/bot_0382ab90a402 \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "daily_puzzle": {
+          "pass": 3,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 4,
+          "fail": 0
+        },
+        "streak_read": {
+          "pass": 2,
+          "fail": 0
+        },
+        "smart_session": {
+          "pass": 1,
+          "fail": 0
+        },
+        "wavebook_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "bookmark_save": {
+          "pass": 2,
+          "fail": 0
+        },
+        "bookmark_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "growth_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "rewards_balance": {
+          "pass": 2,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_8020ec748d28",
+      "persona": {
+        "name": "Tara",
+        "grade": 5
+      },
+      "started_at": "2026-05-16T06:40:50.418539",
+      "finished_at": "2026-05-16T06:40:59.441174",
+      "rounds": 5,
+      "questions": 0,
+      "accuracy": "N/A",
+      "avg_latency_ms": "103",
+      "p95_latency_ms": "546",
+      "errors": 3,
+      "error_details": [
+        "GET /v4/rewards/bot_8020ec748d28 \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "GET /v4/rewards/bot_8020ec748d28 \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "worksheets_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "growth_read": {
+          "pass": 3,
+          "fail": 0
+        },
+        "wavebook_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "bookmark_save": {
+          "pass": 1,
+          "fail": 0
+        },
+        "bookmark_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "streak_read": {
+          "pass": 2,
+          "fail": 0
+        },
+        "rewards_balance": {
+          "pass": 2,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_a4a1f5207c68",
+      "persona": {
+        "name": "Advait",
+        "grade": 1
+      },
+      "started_at": "2026-05-16T06:40:53.002251",
+      "finished_at": "2026-05-16T06:41:21.409475",
+      "rounds": 5,
+      "questions": 14,
+      "accuracy": "7%",
+      "avg_latency_ms": "127",
+      "p95_latency_ms": "278",
+      "errors": 1,
+      "error_details": [
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "wavebook_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "growth_read": {
+          "pass": 4,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 2,
+          "fail": 0
+        },
+        "streak_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "bookmark_save": {
+          "pass": 1,
+          "fail": 0
+        },
+        "bookmark_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "daily_puzzle": {
+          "pass": 1,
+          "fail": 0
+        },
+        "smart_session": {
+          "pass": 2,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_dd1b8101adee",
+      "persona": {
+        "name": "Ishaan",
+        "grade": 2
+      },
+      "started_at": "2026-05-16T06:40:54.356076",
+      "finished_at": "2026-05-16T06:41:37.460246",
+      "rounds": 5,
+      "questions": 24,
+      "accuracy": "4%",
+      "avg_latency_ms": "117",
+      "p95_latency_ms": "266",
+      "errors": 4,
+      "error_details": [
+        "GET /v4/rewards/bot_dd1b8101adee \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "GET /v4/rewards/bot_dd1b8101adee \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "GET /v4/rewards/bot_dd1b8101adee \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "smart_session": {
+          "pass": 3,
+          "fail": 0
+        },
+        "wavebook_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "daily_puzzle": {
+          "pass": 3,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 2,
+          "fail": 0
+        },
+        "rewards_balance": {
+          "pass": 3,
+          "fail": 0
+        },
+        "worksheets_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "growth_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "streak_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_41fadd0ef97b",
+      "persona": {
+        "name": "Pihu",
+        "grade": 3
+      },
+      "started_at": "2026-05-16T06:40:56.051483",
+      "finished_at": "2026-05-16T06:41:20.250542",
+      "rounds": 5,
+      "questions": 11,
+      "accuracy": "18%",
+      "avg_latency_ms": "119",
+      "p95_latency_ms": "272",
+      "errors": 2,
+      "error_details": [
+        "GET /v4/rewards/bot_41fadd0ef97b \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "bookmark_save": {
+          "pass": 3,
+          "fail": 0
+        },
+        "bookmark_list": {
+          "pass": 3,
+          "fail": 0
+        },
+        "growth_read": {
+          "pass": 3,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 2,
+          "fail": 0
+        },
+        "smart_session": {
+          "pass": 2,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 1,
+          "fail": 0
+        },
+        "streak_read": {
+          "pass": 2,
+          "fail": 0
+        },
+        "wavebook_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "rewards_balance": {
+          "pass": 1,
+          "fail": 0
+        },
+        "worksheets_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_99a4a4fd416d",
+      "persona": {
+        "name": "Arnav",
+        "grade": 4
+      },
+      "started_at": "2026-05-16T06:40:58.267345",
+      "finished_at": "2026-05-16T06:41:54.634739",
+      "rounds": 5,
+      "questions": 31,
+      "accuracy": "29%",
+      "avg_latency_ms": "120",
+      "p95_latency_ms": "236",
+      "errors": 4,
+      "error_details": [
+        "GET /v4/rewards/bot_99a4a4fd416d \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "GET /v4/rewards/bot_99a4a4fd416d \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "GET /v4/rewards/bot_99a4a4fd416d \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "wavebook_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "bookmark_save": {
+          "pass": 2,
+          "fail": 0
+        },
+        "bookmark_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 4,
+          "fail": 0
+        },
+        "growth_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "rewards_balance": {
+          "pass": 3,
+          "fail": 0
+        },
+        "worksheets_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 1,
+          "fail": 0
+        },
+        "streak_read": {
+          "pass": 2,
+          "fail": 0
+        },
+        "daily_puzzle": {
+          "pass": 1,
+          "fail": 0
+        },
+        "smart_session": {
+          "pass": 2,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_6c10725f830d",
+      "persona": {
+        "name": "Om",
+        "grade": 5
+      },
+      "started_at": "2026-05-16T06:40:59.280546",
+      "finished_at": "2026-05-16T06:41:33.611963",
+      "rounds": 5,
+      "questions": 17,
+      "accuracy": "24%",
+      "avg_latency_ms": "117",
+      "p95_latency_ms": "229",
+      "errors": 2,
+      "error_details": [
+        "GET /v4/rewards/bot_6c10725f830d \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "streak_read": {
+          "pass": 2,
+          "fail": 0
+        },
+        "growth_read": {
+          "pass": 2,
+          "fail": 0
+        },
+        "smart_session": {
+          "pass": 1,
+          "fail": 0
+        },
+        "daily_puzzle": {
+          "pass": 2,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 3,
+          "fail": 0
+        },
+        "bookmark_save": {
+          "pass": 2,
+          "fail": 0
+        },
+        "bookmark_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "worksheets_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 2,
+          "fail": 0
+        },
+        "wavebook_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "rewards_balance": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_5e9b9af2306d",
+      "persona": {
+        "name": "Aanya",
+        "grade": 1
+      },
+      "started_at": "2026-05-16T06:40:59.441574",
+      "finished_at": "2026-05-16T06:41:11.446684",
+      "rounds": 5,
+      "questions": 3,
+      "accuracy": "0%",
+      "avg_latency_ms": "115",
+      "p95_latency_ms": "281",
+      "errors": 2,
+      "error_details": [
+        "GET /v4/rewards/bot_5e9b9af2306d \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "growth_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "daily_puzzle": {
+          "pass": 3,
+          "fail": 0
+        },
+        "streak_read": {
+          "pass": 2,
+          "fail": 0
+        },
+        "rewards_balance": {
+          "pass": 1,
+          "fail": 0
+        },
+        "worksheets_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "smart_session": {
+          "pass": 1,
+          "fail": 0
+        },
+        "wavebook_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "bookmark_save": {
+          "pass": 1,
+          "fail": 0
+        },
+        "bookmark_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_768b80150baf",
+      "persona": {
+        "name": "Saira",
+        "grade": 2
+      },
+      "started_at": "2026-05-16T06:40:59.813344",
+      "finished_at": "2026-05-16T06:41:25.957198",
+      "rounds": 5,
+      "questions": 11,
+      "accuracy": "36%",
+      "avg_latency_ms": "119",
+      "p95_latency_ms": "464",
+      "errors": 3,
+      "error_details": [
+        "GET /v4/rewards/bot_768b80150baf \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "GET /v4/rewards/bot_768b80150baf \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "rewards_balance": {
+          "pass": 2,
+          "fail": 0
+        },
+        "smart_session": {
+          "pass": 1,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 2,
+          "fail": 0
+        },
+        "worksheets_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "wavebook_list": {
+          "pass": 3,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 1,
+          "fail": 0
+        },
+        "growth_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "bookmark_save": {
+          "pass": 2,
+          "fail": 0
+        },
+        "bookmark_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "streak_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_3099f8261d48",
+      "persona": {
+        "name": "Shaurya",
+        "grade": 3
+      },
+      "started_at": "2026-05-16T06:41:01.593195",
+      "finished_at": "2026-05-16T06:41:27.384969",
+      "rounds": 5,
+      "questions": 12,
+      "accuracy": "8%",
+      "avg_latency_ms": "120",
+      "p95_latency_ms": "235",
+      "errors": 2,
+      "error_details": [
+        "GET /v4/rewards/bot_3099f8261d48 \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "smart_session": {
+          "pass": 3,
+          "fail": 0
+        },
+        "bookmark_save": {
+          "pass": 2,
+          "fail": 0
+        },
+        "bookmark_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "streak_read": {
+          "pass": 4,
+          "fail": 0
+        },
+        "worksheets_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 1,
+          "fail": 0
+        },
+        "rewards_balance": {
+          "pass": 1,
+          "fail": 0
+        },
+        "daily_puzzle": {
+          "pass": 2,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 1,
+          "fail": 0
+        },
+        "wavebook_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_c064697cbc4f",
+      "persona": {
+        "name": "Kavya",
+        "grade": 4
+      },
+      "started_at": "2026-05-16T06:41:02.978511",
+      "finished_at": "2026-05-16T06:41:34.452319",
+      "rounds": 5,
+      "questions": 15,
+      "accuracy": "20%",
+      "avg_latency_ms": "126",
+      "p95_latency_ms": "336",
+      "errors": 2,
+      "error_details": [
+        "GET /v4/rewards/bot_c064697cbc4f \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 2,
+          "fail": 0
+        },
+        "worksheets_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "bookmark_save": {
+          "pass": 2,
+          "fail": 0
+        },
+        "bookmark_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "wavebook_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 1,
+          "fail": 0
+        },
+        "growth_read": {
+          "pass": 3,
+          "fail": 0
+        },
+        "daily_puzzle": {
+          "pass": 2,
+          "fail": 0
+        },
+        "rewards_balance": {
+          "pass": 1,
+          "fail": 0
+        },
+        "smart_session": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_102c64845c7a",
+      "persona": {
+        "name": "Prisha",
+        "grade": 5
+      },
+      "started_at": "2026-05-16T06:41:03.932774",
+      "finished_at": "2026-05-16T06:41:52.950787",
+      "rounds": 5,
+      "questions": 26,
+      "accuracy": "31%",
+      "avg_latency_ms": "115",
+      "p95_latency_ms": "215",
+      "errors": 2,
+      "error_details": [
+        "GET /v4/rewards/bot_102c64845c7a \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "bookmark_save": {
+          "pass": 4,
+          "fail": 0
+        },
+        "bookmark_list": {
+          "pass": 4,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 3,
+          "fail": 0
+        },
+        "rewards_balance": {
+          "pass": 1,
+          "fail": 0
+        },
+        "streak_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "wavebook_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 2,
+          "fail": 0
+        },
+        "daily_puzzle": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_a0210141f686",
+      "persona": {
+        "name": "Vivaan",
+        "grade": 1
+      },
+      "started_at": "2026-05-16T06:41:04.162466",
+      "finished_at": "2026-05-16T06:41:34.257614",
+      "rounds": 5,
+      "questions": 12,
+      "accuracy": "17%",
+      "avg_latency_ms": "117",
+      "p95_latency_ms": "232",
+      "errors": 3,
+      "error_details": [
+        "GET /v4/rewards/bot_a0210141f686 \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "GET /v4/rewards/bot_a0210141f686 \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "worksheets_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "smart_session": {
+          "pass": 2,
+          "fail": 0
+        },
+        "wavebook_list": {
+          "pass": 3,
+          "fail": 0
+        },
+        "daily_puzzle": {
+          "pass": 2,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 1,
+          "fail": 0
+        },
+        "bookmark_save": {
+          "pass": 2,
+          "fail": 0
+        },
+        "bookmark_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 1,
+          "fail": 0
+        },
+        "growth_read": {
+          "pass": 2,
+          "fail": 0
+        },
+        "rewards_balance": {
+          "pass": 2,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_1f87a79eaa3b",
+      "persona": {
+        "name": "Dhruv",
+        "grade": 2
+      },
+      "started_at": "2026-05-16T06:41:05.259999",
+      "finished_at": "2026-05-16T06:41:20.608696",
+      "rounds": 5,
+      "questions": 5,
+      "accuracy": "0%",
+      "avg_latency_ms": "103",
+      "p95_latency_ms": "428",
+      "errors": 2,
+      "error_details": [
+        "GET /v4/rewards/bot_1f87a79eaa3b \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "streak_read": {
+          "pass": 3,
+          "fail": 0
+        },
+        "daily_puzzle": {
+          "pass": 2,
+          "fail": 0
+        },
+        "bookmark_save": {
+          "pass": 4,
+          "fail": 0
+        },
+        "bookmark_list": {
+          "pass": 4,
+          "fail": 0
+        },
+        "smart_session": {
+          "pass": 2,
+          "fail": 0
+        },
+        "worksheets_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "rewards_balance": {
+          "pass": 1,
+          "fail": 0
+        },
+        "growth_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_b39d68cc8555",
+      "persona": {
+        "name": "Anika",
+        "grade": 3
+      },
+      "started_at": "2026-05-16T06:41:07.600122",
+      "finished_at": "2026-05-16T06:41:32.962376",
+      "rounds": 5,
+      "questions": 9,
+      "accuracy": "11%",
+      "avg_latency_ms": "103",
+      "p95_latency_ms": "227",
+      "errors": 1,
+      "error_details": [
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "wavebook_list": {
+          "pass": 4,
+          "fail": 0
+        },
+        "bookmark_save": {
+          "pass": 2,
+          "fail": 0
+        },
+        "bookmark_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "growth_read": {
+          "pass": 2,
+          "fail": 0
+        },
+        "daily_puzzle": {
+          "pass": 2,
+          "fail": 0
+        },
+        "streak_read": {
+          "pass": 4,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 1,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_c2e88966205f",
+      "persona": {
+        "name": "Laksh",
+        "grade": 4
+      },
+      "started_at": "2026-05-16T06:41:10.505355",
+      "finished_at": "2026-05-16T06:41:48.054898",
+      "rounds": 5,
+      "questions": 21,
+      "accuracy": "19%",
+      "avg_latency_ms": "114",
+      "p95_latency_ms": "216",
+      "errors": 4,
+      "error_details": [
+        "GET /v4/rewards/bot_c2e88966205f \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "GET /v4/rewards/bot_c2e88966205f \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "GET /v4/rewards/bot_c2e88966205f \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "streak_read": {
+          "pass": 3,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 1,
+          "fail": 0
+        },
+        "daily_puzzle": {
+          "pass": 2,
+          "fail": 0
+        },
+        "smart_session": {
+          "pass": 3,
+          "fail": 0
+        },
+        "rewards_balance": {
+          "pass": 3,
+          "fail": 0
+        },
+        "worksheets_list": {
+          "pass": 3,
+          "fail": 0
+        },
+        "growth_read": {
+          "pass": 2,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 2,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_2b0f56890028",
+      "persona": {
+        "name": "Ritvik",
+        "grade": 5
+      },
+      "started_at": "2026-05-16T06:41:10.703731",
+      "finished_at": "2026-05-16T06:41:32.732196",
+      "rounds": 5,
+      "questions": 7,
+      "accuracy": "0%",
+      "avg_latency_ms": "108",
+      "p95_latency_ms": "206",
+      "errors": 2,
+      "error_details": [
+        "GET /v4/rewards/bot_2b0f56890028 \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "growth_read": {
+          "pass": 4,
+          "fail": 0
+        },
+        "wavebook_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "streak_read": {
+          "pass": 3,
+          "fail": 0
+        },
+        "daily_puzzle": {
+          "pass": 2,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 1,
+          "fail": 0
+        },
+        "rewards_balance": {
+          "pass": 1,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 1,
+          "fail": 0
+        },
+        "bookmark_save": {
+          "pass": 1,
+          "fail": 0
+        },
+        "bookmark_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_415faeddc15b",
+      "persona": {
+        "name": "Pari",
+        "grade": 1
+      },
+      "started_at": "2026-05-16T06:41:11.232922",
+      "finished_at": "2026-05-16T06:41:42.664107",
+      "rounds": 5,
+      "questions": 13,
+      "accuracy": "31%",
+      "avg_latency_ms": "114",
+      "p95_latency_ms": "241",
+      "errors": 2,
+      "error_details": [
+        "GET /v4/rewards/bot_415faeddc15b \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "daily_puzzle": {
+          "pass": 2,
+          "fail": 0
+        },
+        "wavebook_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "smart_session": {
+          "pass": 1,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 1,
+          "fail": 0
+        },
+        "rewards_balance": {
+          "pass": 1,
+          "fail": 0
+        },
+        "worksheets_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "growth_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 2,
+          "fail": 0
+        },
+        "bookmark_save": {
+          "pass": 2,
+          "fail": 0
+        },
+        "bookmark_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "streak_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_e367b330e93c",
+      "persona": {
+        "name": "Trisha",
+        "grade": 2
+      },
+      "started_at": "2026-05-16T06:41:11.376096",
+      "finished_at": "2026-05-16T06:41:38.712747",
+      "rounds": 5,
+      "questions": 10,
+      "accuracy": "0%",
+      "avg_latency_ms": "112",
+      "p95_latency_ms": "248",
+      "errors": 2,
+      "error_details": [
+        "GET /v4/rewards/bot_e367b330e93c \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "streak_read": {
+          "pass": 2,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 3,
+          "fail": 0
+        },
+        "daily_puzzle": {
+          "pass": 2,
+          "fail": 0
+        },
+        "rewards_balance": {
+          "pass": 1,
+          "fail": 0
+        },
+        "bookmark_save": {
+          "pass": 1,
+          "fail": 0
+        },
+        "bookmark_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 2,
+          "fail": 0
+        },
+        "growth_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "wavebook_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_da1ac8cc2e29",
+      "persona": {
+        "name": "Rudra",
+        "grade": 3
+      },
+      "started_at": "2026-05-16T06:41:11.446921",
+      "finished_at": "2026-05-16T06:41:46.047582",
+      "rounds": 5,
+      "questions": 19,
+      "accuracy": "16%",
+      "avg_latency_ms": "122",
+      "p95_latency_ms": "228",
+      "errors": 1,
+      "error_details": [
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "streak_read": {
+          "pass": 3,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 4,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 2,
+          "fail": 0
+        },
+        "smart_session": {
+          "pass": 2,
+          "fail": 0
+        },
+        "growth_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "worksheets_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "daily_puzzle": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_c795021931f1",
+      "persona": {
+        "name": "Nisha",
+        "grade": 4
+      },
+      "started_at": "2026-05-16T06:41:20.250859",
+      "finished_at": "2026-05-16T06:41:45.303910",
+      "rounds": 5,
+      "questions": 10,
+      "accuracy": "30%",
+      "avg_latency_ms": "114",
+      "p95_latency_ms": "216",
+      "errors": 3,
+      "error_details": [
+        "GET /v4/rewards/bot_c795021931f1 \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "GET /v4/rewards/bot_c795021931f1 \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "daily_puzzle": {
+          "pass": 3,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 1,
+          "fail": 0
+        },
+        "growth_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "wavebook_list": {
+          "pass": 3,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 2,
+          "fail": 0
+        },
+        "streak_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "worksheets_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "bookmark_save": {
+          "pass": 1,
+          "fail": 0
+        },
+        "bookmark_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "rewards_balance": {
+          "pass": 2,
+          "fail": 0
+        },
+        "smart_session": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_f1bd2576416d",
+      "persona": {
+        "name": "Aisha",
+        "grade": 5
+      },
+      "started_at": "2026-05-16T06:41:20.608870",
+      "finished_at": "2026-05-16T06:41:48.154481",
+      "rounds": 5,
+      "questions": 15,
+      "accuracy": "7%",
+      "avg_latency_ms": "124",
+      "p95_latency_ms": "236",
+      "errors": 2,
+      "error_details": [
+        "GET /v4/rewards/bot_f1bd2576416d \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "smart_session": {
+          "pass": 2,
+          "fail": 0
+        },
+        "worksheets_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "growth_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "wavebook_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "rewards_balance": {
+          "pass": 1,
+          "fail": 0
+        },
+        "bookmark_save": {
+          "pass": 1,
+          "fail": 0
+        },
+        "bookmark_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "daily_puzzle": {
+          "pass": 2,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 1,
+          "fail": 0
+        },
+        "streak_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_039759824734",
+      "persona": {
+        "name": "Reyansh",
+        "grade": 1
+      },
+      "started_at": "2026-05-16T06:41:21.409589",
+      "finished_at": "2026-05-16T06:41:47.407708",
+      "rounds": 5,
+      "questions": 13,
+      "accuracy": "8%",
+      "avg_latency_ms": "110",
+      "p95_latency_ms": "239",
+      "errors": 2,
+      "error_details": [
+        "GET /v4/rewards/bot_039759824734 \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "worksheets_list": {
+          "pass": 3,
+          "fail": 0
+        },
+        "growth_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "daily_puzzle": {
+          "pass": 1,
+          "fail": 0
+        },
+        "streak_read": {
+          "pass": 2,
+          "fail": 0
+        },
+        "smart_session": {
+          "pass": 3,
+          "fail": 0
+        },
+        "bookmark_save": {
+          "pass": 1,
+          "fail": 0
+        },
+        "bookmark_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "rewards_balance": {
+          "pass": 1,
+          "fail": 0
+        },
+        "wavebook_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_7d54b1e0256f",
+      "persona": {
+        "name": "Aryan",
+        "grade": 2
+      },
+      "started_at": "2026-05-16T06:41:25.957345",
+      "finished_at": "2026-05-16T06:41:55.123123",
+      "rounds": 5,
+      "questions": 17,
+      "accuracy": "0%",
+      "avg_latency_ms": "112",
+      "p95_latency_ms": "224",
+      "errors": 2,
+      "error_details": [
+        "GET /v4/rewards/bot_7d54b1e0256f \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "streak_read": {
+          "pass": 2,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 2,
+          "fail": 0
+        },
+        "worksheets_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "daily_puzzle": {
+          "pass": 2,
+          "fail": 0
+        },
+        "growth_read": {
+          "pass": 2,
+          "fail": 0
+        },
+        "bookmark_save": {
+          "pass": 1,
+          "fail": 0
+        },
+        "bookmark_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "rewards_balance": {
+          "pass": 1,
+          "fail": 0
+        },
+        "smart_session": {
+          "pass": 3,
+          "fail": 0
+        },
+        "wavebook_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_9a6d98971d8b",
+      "persona": {
+        "name": "Myra",
+        "grade": 3
+      },
+      "started_at": "2026-05-16T06:41:27.385058",
+      "finished_at": "2026-05-16T06:42:23.898918",
+      "rounds": 5,
+      "questions": 36,
+      "accuracy": "22%",
+      "avg_latency_ms": "115",
+      "p95_latency_ms": "209",
+      "errors": 2,
+      "error_details": [
+        "GET /v4/rewards/bot_9a6d98971d8b \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "rewards_balance": {
+          "pass": 1,
+          "fail": 0
+        },
+        "smart_session": {
+          "pass": 3,
+          "fail": 0
+        },
+        "bookmark_save": {
+          "pass": 2,
+          "fail": 0
+        },
+        "bookmark_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "streak_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "growth_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 3,
+          "fail": 0
+        },
+        "wavebook_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_bd4052bf72de",
+      "persona": {
+        "name": "Parth",
+        "grade": 4
+      },
+      "started_at": "2026-05-16T06:41:32.732317",
+      "finished_at": "2026-05-16T06:42:11.300729",
+      "rounds": 5,
+      "questions": 19,
+      "accuracy": "21%",
+      "avg_latency_ms": "118",
+      "p95_latency_ms": "224",
+      "errors": 2,
+      "error_details": [
+        "GET /v4/rewards/bot_bd4052bf72de \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 2,
+          "fail": 0
+        },
+        "streak_read": {
+          "pass": 2,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 3,
+          "fail": 0
+        },
+        "daily_puzzle": {
+          "pass": 2,
+          "fail": 0
+        },
+        "rewards_balance": {
+          "pass": 1,
+          "fail": 0
+        },
+        "smart_session": {
+          "pass": 2,
+          "fail": 0
+        },
+        "wavebook_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "bookmark_save": {
+          "pass": 1,
+          "fail": 0
+        },
+        "bookmark_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "growth_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_af1bdaaa02a6",
+      "persona": {
+        "name": "Yash",
+        "grade": 5
+      },
+      "started_at": "2026-05-16T06:41:32.962535",
+      "finished_at": "2026-05-16T06:42:13.495919",
+      "rounds": 5,
+      "questions": 21,
+      "accuracy": "19%",
+      "avg_latency_ms": "127",
+      "p95_latency_ms": "265",
+      "errors": 1,
+      "error_details": [
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "streak_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 3,
+          "fail": 0
+        },
+        "daily_puzzle": {
+          "pass": 3,
+          "fail": 0
+        },
+        "wavebook_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "growth_read": {
+          "pass": 3,
+          "fail": 0
+        },
+        "bookmark_save": {
+          "pass": 2,
+          "fail": 0
+        },
+        "bookmark_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "worksheets_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "smart_session": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_4acac14adc13",
+      "persona": {
+        "name": "Navya",
+        "grade": 1
+      },
+      "started_at": "2026-05-16T06:41:33.612065",
+      "finished_at": "2026-05-16T06:42:12.418957",
+      "rounds": 5,
+      "questions": 19,
+      "accuracy": "26%",
+      "avg_latency_ms": "116",
+      "p95_latency_ms": "225",
+      "errors": 2,
+      "error_details": [
+        "GET /v4/rewards/bot_4acac14adc13 \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 2,
+          "fail": 0
+        },
+        "wavebook_list": {
+          "pass": 3,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 4,
+          "fail": 0
+        },
+        "growth_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "daily_puzzle": {
+          "pass": 2,
+          "fail": 0
+        },
+        "bookmark_save": {
+          "pass": 2,
+          "fail": 0
+        },
+        "bookmark_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "worksheets_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "rewards_balance": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_46613aa4a0d5",
+      "persona": {
+        "name": "Kiara",
+        "grade": 2
+      },
+      "started_at": "2026-05-16T06:41:34.257776",
+      "finished_at": "2026-05-16T06:41:43.867728",
+      "rounds": 5,
+      "questions": 0,
+      "accuracy": "N/A",
+      "avg_latency_ms": "96",
+      "p95_latency_ms": "489",
+      "errors": 4,
+      "error_details": [
+        "GET /v4/rewards/bot_46613aa4a0d5 \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "GET /v4/rewards/bot_46613aa4a0d5 \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "GET /v4/rewards/bot_46613aa4a0d5 \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "growth_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "daily_puzzle": {
+          "pass": 2,
+          "fail": 0
+        },
+        "streak_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "bookmark_save": {
+          "pass": 1,
+          "fail": 0
+        },
+        "bookmark_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "rewards_balance": {
+          "pass": 3,
+          "fail": 0
+        },
+        "wavebook_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 2,
+          "fail": 0
+        },
+        "worksheets_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_661783698574",
+      "persona": {
+        "name": "Ayaan",
+        "grade": 3
+      },
+      "started_at": "2026-05-16T06:41:34.452446",
+      "finished_at": "2026-05-16T06:42:12.031511",
+      "rounds": 5,
+      "questions": 20,
+      "accuracy": "20%",
+      "avg_latency_ms": "121",
+      "p95_latency_ms": "246",
+      "errors": 4,
+      "error_details": [
+        "GET /v4/rewards/bot_661783698574 \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "GET /v4/rewards/bot_661783698574 \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "GET /v4/rewards/bot_661783698574 \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 2,
+          "fail": 0
+        },
+        "growth_read": {
+          "pass": 2,
+          "fail": 0
+        },
+        "worksheets_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "smart_session": {
+          "pass": 1,
+          "fail": 0
+        },
+        "rewards_balance": {
+          "pass": 3,
+          "fail": 0
+        },
+        "streak_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "wavebook_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 2,
+          "fail": 0
+        },
+        "daily_puzzle": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_cb6f1d391104",
+      "persona": {
+        "name": "Rashi",
+        "grade": 4
+      },
+      "started_at": "2026-05-16T06:41:35.684894",
+      "finished_at": "2026-05-16T06:42:00.914533",
+      "rounds": 5,
+      "questions": 10,
+      "accuracy": "30%",
+      "avg_latency_ms": "116",
+      "p95_latency_ms": "250",
+      "errors": 3,
+      "error_details": [
+        "GET /v4/rewards/bot_cb6f1d391104 \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "GET /v4/rewards/bot_cb6f1d391104 \u2192 404: {\"detail\":\"Reward data not found for this player\"}",
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "worksheets_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "wavebook_list": {
+          "pass": 2,
+          "fail": 0
+        },
+        "growth_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "smart_session": {
+          "pass": 2,
+          "fail": 0
+        },
+        "streak_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "daily_puzzle": {
+          "pass": 3,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 1,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 1,
+          "fail": 0
+        },
+        "rewards_balance": {
+          "pass": 2,
+          "fail": 0
+        },
+        "bookmark_save": {
+          "pass": 1,
+          "fail": 0
+        },
+        "bookmark_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "bot_id": "bot_a7d1bf6840c0",
+      "persona": {
+        "name": "Mahi",
+        "grade": 5
+      },
+      "started_at": "2026-05-16T06:41:37.460336",
+      "finished_at": "2026-05-16T06:42:07.979310",
+      "rounds": 5,
+      "questions": 15,
+      "accuracy": "20%",
+      "avg_latency_ms": "121",
+      "p95_latency_ms": "298",
+      "errors": 1,
+      "error_details": [
+        "POST /v4/clans \u2192 400: {\"detail\":\"Clan name can only contain letters, numbers, and spaces\"}"
+      ],
+      "features_tested": {
+        "onboarding": {
+          "pass": 1,
+          "fail": 0
+        },
+        "profile_read": {
+          "pass": 1,
+          "fail": 0
+        },
+        "practice_session": {
+          "pass": 1,
+          "fail": 0
+        },
+        "worksheets_list": {
+          "pass": 3,
+          "fail": 0
+        },
+        "streak_read": {
+          "pass": 4,
+          "fail": 0
+        },
+        "growth_read": {
+          "pass": 3,
+          "fail": 0
+        },
+        "parent_dashboard": {
+          "pass": 2,
+          "fail": 0
+        },
+        "smart_session": {
+          "pass": 2,
+          "fail": 0
+        },
+        "wavebook_list": {
+          "pass": 1,
+          "fail": 0
+        },
+        "daily_puzzle": {
+          "pass": 1,
+          "fail": 0
+        },
+        "clan_create": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    }
+  ]
+}

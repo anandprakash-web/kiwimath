@@ -1,0 +1,249 @@
+{
+  "topic_id": "wavebook-knowing-your-numbers",
+  "topic_name": "Wavebook: Knowing your numbers",
+  "topic_emoji": "\ud83d\udcd8",
+  "grade": 6,
+  "domain": "wavebook",
+  "source": "wavebook",
+  "total_questions": 13,
+  "difficulty_range": {
+    "min": 0,
+    "max": 0
+  },
+  "questions": [
+    {
+      "id": "wb_L4_s01_q01",
+      "stem": "Which of the following numbers in Roman numerals is incorrect?",
+      "interaction_mode": "mcq",
+      "topic": "Knowing your numbers",
+      "difficulty_tier": "warmup",
+      "question_number": 1,
+      "choices": [
+        "LXXX",
+        "LXX",
+        "LX",
+        "LLX"
+      ],
+      "correct_answer": 3,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S1",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L4_s01_q02",
+      "stem": "The numbers (11, 13) are ___ numbers",
+      "interaction_mode": "mcq",
+      "topic": "Knowing your numbers",
+      "difficulty_tier": "warmup",
+      "question_number": 2,
+      "choices": [
+        "Co-prime",
+        "Prime",
+        "Both prime and co-prime",
+        "None of these"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S1",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L4_s01_q03",
+      "stem": "Every natural number is the successor of",
+      "interaction_mode": "mcq",
+      "topic": "Knowing your numbers",
+      "difficulty_tier": "warmup",
+      "question_number": 3,
+      "choices": [
+        "Whole number",
+        "Natural number",
+        "Integer",
+        "None of these"
+      ],
+      "correct_answer": 0,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S1",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L4_s01_q04",
+      "stem": "The only even prime number is",
+      "interaction_mode": "mcq",
+      "topic": "Knowing your numbers",
+      "difficulty_tier": "warmup",
+      "question_number": 4,
+      "choices": [
+        "0",
+        "2",
+        "4",
+        "6"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S1",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L4_s01_q05",
+      "stem": "Zero is ___ every negative integer",
+      "interaction_mode": "mcq",
+      "topic": "Knowing your numbers",
+      "difficulty_tier": "warmup",
+      "question_number": 5,
+      "choices": [
+        "smaller than",
+        "equal to",
+        "greater than",
+        "None of these"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S1",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L4_s01_q06",
+      "stem": "Which statement is NOT true?",
+      "interaction_mode": "mcq",
+      "topic": "Knowing your numbers",
+      "difficulty_tier": "practice",
+      "question_number": 6,
+      "choices": [
+        "Every whole number has a successor",
+        "Every whole number has a predecessor",
+        "0 is the least whole number",
+        "Every natural number is a whole number"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S1",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L4_s01_q09",
+      "stem": "15 hundred multiplied by fifteen tenths multiplied by three fifteenths divided by forty five thousandths is equal to the successor of",
+      "interaction_mode": "mcq",
+      "topic": "Knowing your numbers",
+      "difficulty_tier": "practice",
+      "question_number": 9,
+      "choices": [
+        "999",
+        "9999",
+        "99999",
+        "14999"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S1",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L4_s01_q10",
+      "stem": "The Indo Arabic numeral for CMLXXXII is",
+      "interaction_mode": "mcq",
+      "topic": "Knowing your numbers",
+      "difficulty_tier": "practice",
+      "question_number": 10,
+      "choices": [
+        "482",
+        "532",
+        "982",
+        "1532"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S1",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L4_s01_q11",
+      "stem": "Identify the least Roman numeral from: MDCCCLXXXIX, MCMLXXXI, MCMXVIII, MDLXVII, MCDXCIX",
+      "interaction_mode": "mcq",
+      "topic": "Knowing your numbers",
+      "difficulty_tier": "challenge",
+      "question_number": 11,
+      "choices": [
+        "MDCCCLXXXIX",
+        "MCDXCIX",
+        "MDLXVII",
+        "MCMXVIII"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S1",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L4_s01_q12",
+      "stem": "Raghu is 21 years old, and Karishma is 72 years old. The sum of their ages is",
+      "interaction_mode": "mcq",
+      "topic": "Knowing your numbers",
+      "difficulty_tier": "challenge",
+      "question_number": 12,
+      "choices": [
+        "XXXIII",
+        "XCIII",
+        "CXIII",
+        "LXXXXIII"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S1",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L4_s01_q13",
+      "stem": "Digit 1 is occurring 136 times on writing all page numbers of a book. What will be the number of pages?",
+      "interaction_mode": "mcq",
+      "topic": "Knowing your numbers",
+      "difficulty_tier": "challenge",
+      "question_number": 13,
+      "choices": [
+        "194",
+        "195",
+        "200",
+        "295"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S1",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L4_s01_q14",
+      "stem": "Roshan wanted to type the first 190 whole numbers. Find the number of times he pressed numbered keys",
+      "interaction_mode": "mcq",
+      "topic": "Knowing your numbers",
+      "difficulty_tier": "challenge",
+      "question_number": 14,
+      "choices": [
+        "461",
+        "462",
+        "463",
+        "464"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S1",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L4_s01_q15",
+      "stem": "How many times does digit 3 appear in numbers from 1 to 100?",
+      "interaction_mode": "mcq",
+      "topic": "Knowing your numbers",
+      "difficulty_tier": "challenge",
+      "question_number": 15,
+      "choices": [
+        "18",
+        "19",
+        "20",
+        "21"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S1",
+      "diagnostics": {}
+    }
+  ]
+}

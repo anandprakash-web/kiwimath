@@ -1,4 +1,8 @@
 """
+DEPRECATED — Wavebook API (May 2026)
+Wavebook content folded into /olympiad/v2/ pillar worksheets.
+Keep running for backward compatibility until Flutter v2 migration is complete.
+
 Wavebook API — serves live-class olympiad worksheet MCQs (Level 3 = G3-4, Level 4 = G5-6).
 
 Endpoints:

@@ -149,7 +149,7 @@ class _GuessBoardWidgetState extends State<GuessBoardWidget> {
                             color: widget.canSubmit
                                 ? KiwiColors.kiwiPrimary
                                     .withOpacity(0.3)
-                                : const Color(0xFFE0E0E0),
+                                : KiwiColors.pathLocked,
                             width: 1.2,
                           ),
                         ),
@@ -191,7 +191,7 @@ class _GuessBoardWidgetState extends State<GuessBoardWidget> {
                     Material(
                       color: widget.canSubmit && _hasText
                           ? KiwiColors.kiwiPrimary
-                          : const Color(0xFFE0E0E0),
+                          : KiwiColors.pathLocked,
                       borderRadius: BorderRadius.circular(12),
                       child: InkWell(
                         onTap: widget.canSubmit && _hasText

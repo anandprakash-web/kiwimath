@@ -1,13 +1,16 @@
+import 'dart:async';
 import 'dart:convert';
-import 'dart:io' show Platform;
+import 'dart:io' show Platform, SocketException;
 
 import 'package:flutter/foundation.dart';
-import 'package:http/http.dart' as http;
 
 import '../models/olympiad_worksheet.dart';
 import '../models/question_v2.dart';
 import '../models/student_levels.dart';
 import '../models/user_profile.dart';
+import 'auth_token.dart';
+import 'authed_http.dart' as http;
+import 'offline_store.dart';
 
 /// Kiwimath backend API client (v2-only).
 ///
@@ -35,7 +38,12 @@ class ApiClient {
     return _productionUrl;
   }
 
-  /// Retry wrapper — retries up to 2 times on timeout/5xx with increasing delay.
+  /// Retry wrapper for IDEMPOTENT requests (GETs only) — retries up to
+  /// 2 extra times on timeout/5xx with increasing delay.
+  ///
+  /// Do NOT route mutations (POST/DELETE) through this: retrying a
+  /// non-idempotent request can double-submit answers or reward claims.
+  /// Use [_postOnce] for those instead.
   Future<http.Response> _withRetry(Future<http.Response> Function() request) async {
     const maxAttempts = 3;
     for (int attempt = 1; attempt <= maxAttempts; attempt++) {
@@ -46,12 +54,83 @@ class ApiClient {
           continue;
         }
         return res;
-      } on Exception catch (e) {
+      } on Exception {
         if (attempt == maxAttempts) rethrow;
         await Future.delayed(Duration(milliseconds: 500 * attempt));
       }
     }
-    return await request();
+    // Unreachable: the final attempt either returned or rethrew above.
+    throw ApiException('retry loop exhausted unexpectedly');
+  }
+
+  /// Execute a mutation (POST/DELETE) exactly once — NO automatic retries.
+  /// Callers that need dedupe protection attach an X-Idempotency-Key header
+  /// (see [newIdempotencyKey]) so the backend can discard duplicates.
+  Future<http.Response> _postOnce(Future<http.Response> Function() request) =>
+      request();
+
+  // ---------------------------------------------------------------------------
+  // Offline-aware fetch with Hive cache fallback
+  // ---------------------------------------------------------------------------
+
+  /// Try a network call first; on success cache the result in [OfflineStore].
+  /// On failure (SocketException, TimeoutException), fall back to the cache.
+  /// Returns null if both network and cache miss.
+  ///
+  /// Usage:
+  /// ```dart
+  /// final questions = await api.fetchWithCache(
+  ///   'topic_grade_3_arithmetic',
+  ///   () async {
+  ///     final res = await http.get(uri);
+  ///     return List<Map<String, dynamic>>.from(jsonDecode(res.body));
+  ///   },
+  /// );
+  /// ```
+  Future<List<Map<String, dynamic>>?> fetchWithCache(
+    String cacheKey,
+    Future<List<Map<String, dynamic>>> Function() fetcher,
+  ) async {
+    try {
+      final result = await fetcher();
+      // Cache on success
+      try {
+        OfflineStore.instance.cacheQuestions(cacheKey, result);
+      } catch (e) {
+        debugPrint('ApiClient.fetchWithCache: cache write failed: $e');
+      }
+      return result;
+    } on SocketException catch (_) {
+      debugPrint('ApiClient.fetchWithCache: SocketException, falling back to cache ($cacheKey)');
+    } on TimeoutException catch (_) {
+      debugPrint('ApiClient.fetchWithCache: TimeoutException, falling back to cache ($cacheKey)');
+    } on http.ClientException catch (_) {
+      debugPrint('ApiClient.fetchWithCache: ClientException, falling back to cache ($cacheKey)');
+    } catch (e) {
+      // For other errors (e.g. ApiException for 4xx), don't fall back to cache
+      // unless it's a network-related issue.
+      if (e.toString().contains('SocketException') ||
+          e.toString().contains('Connection refused') ||
+          e.toString().contains('Network is unreachable')) {
+        debugPrint('ApiClient.fetchWithCache: network error, falling back to cache ($cacheKey)');
+      } else {
+        rethrow;
+      }
+    }
+
+    // Network failed — try cache
+    try {
+      final cached = OfflineStore.instance.getCachedQuestions(cacheKey);
+      if (cached != null) {
+        final age = OfflineStore.instance.getQuestionsCachedAt(cacheKey);
+        debugPrint('ApiClient.fetchWithCache: serving from cache ($cacheKey, cached at $age)');
+        return cached;
+      }
+    } catch (e) {
+      debugPrint('ApiClient.fetchWithCache: cache read failed: $e');
+    }
+
+    return null;
   }
 
   Future<Map<String, dynamic>> health() async {
@@ -190,10 +269,15 @@ class ApiClient {
     if (timeTakenMs > 0) body['time_taken_ms'] = timeTakenMs;
     if (hintsUsed > 0) body['hints_used'] = hintsUsed;
     final uri = Uri.parse('$baseUrl/v2/answer/check');
-    final res = await _withRetry(() => http
+    // Mutation: sent exactly once, with an idempotency key for backend dedupe.
+    final idemHeaders = {
+      'Content-Type': 'application/json',
+      'X-Idempotency-Key': newIdempotencyKey(),
+    };
+    final res = await _postOnce(() => http
         .post(
           uri,
-          headers: {'Content-Type': 'application/json'},
+          headers: idemHeaders,
           body: jsonEncode(body),
         )
         .timeout(const Duration(seconds: 20)));
@@ -231,7 +315,7 @@ class ApiClient {
       body['comment'] = comment.trim();
     }
     final uri = Uri.parse('$baseUrl/v2/questions/$questionId/feedback');
-    final res = await _withRetry(() => http
+    final res = await _postOnce(() => http
         .post(
           uri,
           headers: {'Content-Type': 'application/json'},
@@ -286,7 +370,7 @@ class ApiClient {
       'answers': answers,
     };
     final uri = Uri.parse('$baseUrl/v2/onboarding/benchmark');
-    final res = await _withRetry(() => http
+    final res = await _postOnce(() => http
         .post(
           uri,
           headers: {'Content-Type': 'application/json'},
@@ -369,7 +453,7 @@ class ApiClient {
     int problemStepsRequired = 1,
     int picoAppearancesInLesson = 0,
   }) async {
-    final resp = await _withRetry(() => http.post(
+    final resp = await _postOnce(() => http.post(
           Uri.parse('$baseUrl/companion/summon'),
           headers: {'Content-Type': 'application/json'},
           body: jsonEncode({
@@ -399,7 +483,7 @@ class ApiClient {
     required String surface,
     Map<String, dynamic> extra = const {},
   }) async {
-    await _withRetry(() => http.post(
+    await _postOnce(() => http.post(
           Uri.parse('$baseUrl/companion/telemetry'),
           headers: {'Content-Type': 'application/json'},
           body: jsonEncode({
@@ -481,9 +565,12 @@ class ApiClient {
       'grade': grade,
       'results': results,
     };
-    final res = await _withRetry(() => http
+    final res = await _postOnce(() => http
         .post(uri,
-            headers: {'Content-Type': 'application/json'},
+            headers: {
+              'Content-Type': 'application/json',
+              'X-Idempotency-Key': newIdempotencyKey(),
+            },
             body: jsonEncode(body))
         .timeout(const Duration(seconds: 15)));
     if (res.statusCode != 200) {
@@ -518,18 +605,20 @@ class ApiClient {
   Future<Map<String, dynamic>> updateStudentProfile({
     required String userId,
     String? name,
+    String? childName,
     int? grade,
     String? avatar,
     String? curriculum,
   }) async {
     final body = <String, dynamic>{};
     if (name != null) body['display_name'] = name;
+    if (childName != null) body['child_name'] = childName;
     if (grade != null) body['grade'] = grade;
     if (avatar != null) body['avatar'] = avatar;
     if (curriculum != null) body['curriculum'] = curriculum;
     final uri = Uri.parse('$baseUrl/v2/student/profile')
         .replace(queryParameters: {'user_id': userId});
-    final res = await _withRetry(() => http
+    final res = await _postOnce(() => http
         .post(
           uri,
           headers: {'Content-Type': 'application/json'},
@@ -587,7 +676,7 @@ class ApiClient {
     }
     if (sessionId != null) body['session_id'] = sessionId;
     final uri = Uri.parse('$baseUrl/flag/submit');
-    final res = await _withRetry(() => http
+    final res = await _postOnce(() => http
         .post(
           uri,
           headers: {'Content-Type': 'application/json'},
@@ -625,7 +714,7 @@ class ApiClient {
     if (sessionNotes != null) body['session_notes'] = sessionNotes;
 
     final uri = Uri.parse('$baseUrl/flag/diagnostic-review');
-    final res = await _withRetry(() => http
+    final res = await _postOnce(() => http
         .post(
           uri,
           headers: {'Content-Type': 'application/json'},
@@ -642,9 +731,12 @@ class ApiClient {
   /// Unlock a topic using Kiwi Coins (500 coins).
   Future<Map<String, dynamic>> unlockTopic(String userId, String topicId) async {
     final uri = Uri.parse('$baseUrl/v2/paywall/unlock');
-    final res = await _withRetry(() => http.post(
+    final res = await _postOnce(() => http.post(
       uri,
-      headers: {'Content-Type': 'application/json'},
+      headers: {
+        'Content-Type': 'application/json',
+        'X-Idempotency-Key': newIdempotencyKey(),
+      },
       body: jsonEncode({'user_id': userId, 'topic_id': topicId}),
     ));
     return Map<String, dynamic>.from(jsonDecode(res.body));
@@ -769,7 +861,7 @@ class ApiClient {
       'theta_at_download': thetaAtDownload,
       'downloaded_at': downloadedAt,
     };
-    final res = await _withRetry(() => http
+    final res = await _postOnce(() => http
         .post(uri,
             headers: {'Content-Type': 'application/json'},
             body: jsonEncode(body))
@@ -794,7 +886,7 @@ class ApiClient {
     };
     if (topicId != null) body['topic_id'] = topicId;
     if (grade != null) body['grade'] = grade;
-    final res = await _withRetry(() => http
+    final res = await _postOnce(() => http
         .post(uri,
             headers: {'Content-Type': 'application/json'},
             body: jsonEncode(body))
@@ -816,7 +908,7 @@ class ApiClient {
     final params = {'user_id': userId, 'device_id': deviceId};
     final uri = Uri.parse('$baseUrl/v4/session/heartbeat')
         .replace(queryParameters: params);
-    await _withRetry(() => http.post(uri).timeout(const Duration(seconds: 5)));
+    await _postOnce(() => http.post(uri).timeout(const Duration(seconds: 5)));
   }
 
   /// Release session lock when play ends.
@@ -825,7 +917,7 @@ class ApiClient {
     required String deviceId,
   }) async {
     final uri = Uri.parse('$baseUrl/v4/session/unlock');
-    await _withRetry(() => http
+    await _postOnce(() => http
         .post(uri,
             headers: {'Content-Type': 'application/json'},
             body: jsonEncode({'user_id': userId, 'device_id': deviceId}))
@@ -885,7 +977,7 @@ class ApiClient {
     };
     final uri = Uri.parse('$baseUrl/v2/benchmark/create')
         .replace(queryParameters: params);
-    final res = await _withRetry(
+    final res = await _postOnce(
         () => http.post(uri).timeout(const Duration(seconds: 20)));
     if (res.statusCode != 200) {
       throw ApiException(
@@ -901,7 +993,7 @@ class ApiClient {
     required List<Map<String, dynamic>> responses,
   }) async {
     final uri = Uri.parse('$baseUrl/v2/benchmark/submit');
-    final res = await _withRetry(() => http
+    final res = await _postOnce(() => http
         .post(uri,
             headers: {'Content-Type': 'application/json'},
             body: jsonEncode({
@@ -1040,6 +1132,222 @@ class ApiClient {
           'GET /wavebook/download failed: ${res.statusCode} ${res.body}');
     }
     return res.body;
+  }
+
+  // ---------------------------------------------------------------------------
+  // Bookmarks API
+  // ---------------------------------------------------------------------------
+
+  /// Toggle bookmark on/off for a question.
+  /// Returns {bookmarked: bool, total_bookmarks: int}.
+  Future<Map<String, dynamic>> toggleBookmark(String userId, String questionId) async {
+    final uri = Uri.parse('$baseUrl/v2/bookmarks/toggle');
+    final res = await _postOnce(() => http
+        .post(
+          uri,
+          headers: {'Content-Type': 'application/json'},
+          body: jsonEncode({'user_id': userId, 'question_id': questionId}),
+        )
+        .timeout(const Duration(seconds: 10)));
+    if (res.statusCode != 200) {
+      throw ApiException(
+          'POST /v2/bookmarks/toggle failed: ${res.statusCode} ${res.body}');
+    }
+    return jsonDecode(res.body) as Map<String, dynamic>;
+  }
+
+  /// Get paginated list of bookmarked questions with full question data.
+  Future<Map<String, dynamic>> getBookmarks(String userId, {int page = 1, int perPage = 20}) async {
+    final params = <String, String>{
+      'user_id': userId,
+      'page': page.toString(),
+      'per_page': perPage.toString(),
+    };
+    final uri = Uri.parse('$baseUrl/v2/bookmarks/list')
+        .replace(queryParameters: params);
+    final res = await _withRetry(
+        () => http.get(uri).timeout(const Duration(seconds: 20)));
+    if (res.statusCode != 200) {
+      throw ApiException(
+          'GET /v2/bookmarks/list failed: ${res.statusCode} ${res.body}');
+    }
+    return jsonDecode(res.body) as Map<String, dynamic>;
+  }
+
+  /// Check if a specific question is bookmarked by the user.
+  Future<bool> isBookmarked(String userId, String questionId) async {
+    final params = <String, String>{
+      'user_id': userId,
+      'question_id': questionId,
+    };
+    final uri = Uri.parse('$baseUrl/v2/bookmarks/check')
+        .replace(queryParameters: params);
+    final res = await _withRetry(
+        () => http.get(uri).timeout(const Duration(seconds: 10)));
+    if (res.statusCode != 200) {
+      throw ApiException(
+          'GET /v2/bookmarks/check failed: ${res.statusCode} ${res.body}');
+    }
+    final data = jsonDecode(res.body) as Map<String, dynamic>;
+    return data['bookmarked'] as bool? ?? false;
+  }
+
+  // ---------------------------------------------------------------------------
+  // Admin Review API
+  // ---------------------------------------------------------------------------
+
+  Future<bool> isAdmin(String email) async {
+    final uri = Uri.parse('$baseUrl/admin/verify')
+        .replace(queryParameters: {'email': email});
+    final res = await _withRetry(
+        () => http.get(uri).timeout(const Duration(seconds: 10)));
+    if (res.statusCode != 200) return false;
+    final data = jsonDecode(res.body) as Map<String, dynamic>;
+    return data['is_admin'] as bool? ?? false;
+  }
+
+  Future<List<Map<String, dynamic>>> getReviewQuestions({
+    int? grade,
+    String? topic,
+    int page = 1,
+  }) async {
+    final params = <String, String>{'page': page.toString()};
+    if (grade != null) params['grade'] = grade.toString();
+    if (topic != null) params['topic'] = topic;
+    final uri = Uri.parse('$baseUrl/admin/review/questions')
+        .replace(queryParameters: params);
+    final res = await _withRetry(
+        () => http.get(uri).timeout(const Duration(seconds: 20)));
+    if (res.statusCode != 200) {
+      throw ApiException(
+          'GET /admin/review/questions failed: ${res.statusCode} ${res.body}');
+    }
+    return List<Map<String, dynamic>>.from(jsonDecode(res.body));
+  }
+
+  Future<void> approveQuestion(String questionId, String email) async {
+    final uri = Uri.parse('$baseUrl/admin/review/approve');
+    final res = await _postOnce(() => http
+        .post(
+          uri,
+          headers: {'Content-Type': 'application/json'},
+          body: jsonEncode({'question_id': questionId, 'email': email}),
+        )
+        .timeout(const Duration(seconds: 10)));
+    if (res.statusCode != 200) {
+      throw ApiException(
+          'POST /admin/review/approve failed: ${res.statusCode} ${res.body}');
+    }
+  }
+
+  Future<void> adminFlagQuestion(
+    String questionId,
+    String email,
+    String flagType,
+    String comment, {
+    String? correctAnswer,
+  }) async {
+    final body = <String, dynamic>{
+      'question_id': questionId,
+      'email': email,
+      'flag_type': flagType,
+      'comment': comment,
+    };
+    if (correctAnswer != null) body['correct_answer'] = correctAnswer;
+    final uri = Uri.parse('$baseUrl/admin/review/flag');
+    final res = await _postOnce(() => http
+        .post(
+          uri,
+          headers: {'Content-Type': 'application/json'},
+          body: jsonEncode(body),
+        )
+        .timeout(const Duration(seconds: 10)));
+    if (res.statusCode != 200) {
+      throw ApiException(
+          'POST /admin/review/flag failed: ${res.statusCode} ${res.body}');
+    }
+  }
+
+  Future<Map<String, dynamic>> getReviewStats() async {
+    final uri = Uri.parse('$baseUrl/admin/review/stats');
+    final res = await _withRetry(
+        () => http.get(uri).timeout(const Duration(seconds: 10)));
+    if (res.statusCode != 200) {
+      throw ApiException(
+          'GET /admin/review/stats failed: ${res.statusCode} ${res.body}');
+    }
+    return jsonDecode(res.body) as Map<String, dynamic>;
+  }
+
+  // ---------------------------------------------------------------------------
+  // Admin Analytics API
+  // ---------------------------------------------------------------------------
+
+  /// Fetch top-level analytics KPIs.
+  Future<Map<String, dynamic>> getAnalyticsOverview(String email) async {
+    final uri = Uri.parse('$baseUrl/admin/analytics/overview')
+        .replace(queryParameters: {'email': email});
+    final res = await _withRetry(
+        () => http.get(uri).timeout(const Duration(seconds: 20)));
+    if (res.statusCode != 200) {
+      throw ApiException(
+          'GET /admin/analytics/overview failed: ${res.statusCode} ${res.body}');
+    }
+    return jsonDecode(res.body) as Map<String, dynamic>;
+  }
+
+  /// Fetch content quality analytics.
+  Future<Map<String, dynamic>> getAnalyticsContent(String email) async {
+    final uri = Uri.parse('$baseUrl/admin/analytics/content')
+        .replace(queryParameters: {'email': email});
+    final res = await _withRetry(
+        () => http.get(uri).timeout(const Duration(seconds: 20)));
+    if (res.statusCode != 200) {
+      throw ApiException(
+          'GET /admin/analytics/content failed: ${res.statusCode} ${res.body}');
+    }
+    return jsonDecode(res.body) as Map<String, dynamic>;
+  }
+
+  /// Fetch user engagement analytics.
+  Future<Map<String, dynamic>> getAnalyticsEngagement(String email, {int days = 30}) async {
+    final uri = Uri.parse('$baseUrl/admin/analytics/engagement')
+        .replace(queryParameters: {'email': email, 'days': days.toString()});
+    final res = await _withRetry(
+        () => http.get(uri).timeout(const Duration(seconds: 20)));
+    if (res.statusCode != 200) {
+      throw ApiException(
+          'GET /admin/analytics/engagement failed: ${res.statusCode} ${res.body}');
+    }
+    return jsonDecode(res.body) as Map<String, dynamic>;
+  }
+
+  /// Fetch learning outcomes analytics.
+  Future<Map<String, dynamic>> getAnalyticsLearning(String email, {int? grade}) async {
+    final params = <String, String>{'email': email};
+    if (grade != null) params['grade'] = grade.toString();
+    final uri = Uri.parse('$baseUrl/admin/analytics/learning')
+        .replace(queryParameters: params);
+    final res = await _withRetry(
+        () => http.get(uri).timeout(const Duration(seconds: 20)));
+    if (res.statusCode != 200) {
+      throw ApiException(
+          'GET /admin/analytics/learning failed: ${res.statusCode} ${res.body}');
+    }
+    return jsonDecode(res.body) as Map<String, dynamic>;
+  }
+
+  /// Fetch revenue and growth analytics.
+  Future<Map<String, dynamic>> getAnalyticsRevenue(String email) async {
+    final uri = Uri.parse('$baseUrl/admin/analytics/revenue')
+        .replace(queryParameters: {'email': email});
+    final res = await _withRetry(
+        () => http.get(uri).timeout(const Duration(seconds: 20)));
+    if (res.statusCode != 200) {
+      throw ApiException(
+          'GET /admin/analytics/revenue failed: ${res.statusCode} ${res.body}');
+    }
+    return jsonDecode(res.body) as Map<String, dynamic>;
   }
 }
 

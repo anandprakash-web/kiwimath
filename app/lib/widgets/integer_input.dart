@@ -81,7 +81,7 @@ class _IntegerInputState extends State<IntegerInput> {
             border: Border.all(
               color: _input.isNotEmpty
                   ? KiwiColors.kiwiGreen
-                  : const Color(0xFFE0E0E0),
+                  : KiwiColors.pathLocked,
               width: 2,
             ),
             boxShadow: [
@@ -99,7 +99,7 @@ class _IntegerInputState extends State<IntegerInput> {
               fontSize: 32,
               fontWeight: FontWeight.w800,
               color: _input.isEmpty
-                  ? const Color(0xFFBDBDBD)
+                  ? KiwiColors.textMuted
                   : KiwiColors.textDark,
               letterSpacing: 2,
             ),
@@ -118,7 +118,7 @@ class _IntegerInputState extends State<IntegerInput> {
               ? DecoratedBox(
                   decoration: BoxDecoration(
                     gradient: const LinearGradient(
-                      colors: [Color(0xFF4CAF50), Color(0xFF2E7D32)],
+                      colors: [KiwiColors.kiwiGreen, KiwiColors.kiwiGreenDark],
                     ),
                     borderRadius: BorderRadius.circular(16),
                     boxShadow: [
@@ -214,12 +214,12 @@ class _IntegerInputState extends State<IntegerInput> {
         height: 52,
         decoration: BoxDecoration(
           color: key.isIcon
-              ? const Color(0xFFF5F5F5)
+              ? KiwiColors.creamDark
               : KiwiColors.kiwiGreenLight,
           borderRadius: BorderRadius.circular(14),
           border: Border.all(
             color: key.isIcon
-                ? const Color(0xFFE0E0E0)
+                ? KiwiColors.pathLocked
                 : KiwiColors.kiwiGreen.withOpacity(0.3),
             width: 1.5,
           ),

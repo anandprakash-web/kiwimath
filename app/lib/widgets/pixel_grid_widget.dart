@@ -161,7 +161,7 @@ class PixelGridWidget extends StatelessWidget {
   Widget _placeholderBackground() {
     return Container(
       decoration: const BoxDecoration(
-        gradient: LinearGradient(
+        gradient: LinearGradient( // decorative — no token
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
           colors: [
@@ -266,7 +266,7 @@ class _BlockTileState extends State<_BlockTile>
             )!,
             Color.lerp(
               KiwiColors.kiwiPrimary,
-              const Color(0xFFFF8F00),
+              const Color(0xFFFF8F00), // decorative — no token
               tCol,
             )!,
           ],

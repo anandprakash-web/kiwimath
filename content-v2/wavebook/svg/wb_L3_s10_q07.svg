@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 160" width="300" height="160">
+  <rect width="300" height="160" fill="#FFF8F0" rx="8"/>
+  <text x="150.0" y="16" text-anchor="middle" font-size="10" font-weight="bold" font-family="Arial" fill="#1A1A2E">Ascending Order</text>
+  <rect x="42.0" y="30" width="50.0" height="28" fill="white" stroke="#9E9E9E" stroke-width="1" rx="4"/>
+  <text x="67.0" y="48" text-anchor="middle" font-size="10" font-family="Arial" fill="#1A1A2E">0.5</text>
+  <rect x="96.0" y="30" width="50.0" height="28" fill="white" stroke="#9E9E9E" stroke-width="1" rx="4"/>
+  <text x="121.0" y="48" text-anchor="middle" font-size="10" font-family="Arial" fill="#1A1A2E">0.05</text>
+  <rect x="150.0" y="30" width="50.0" height="28" fill="white" stroke="#9E9E9E" stroke-width="1" rx="4"/>
+  <text x="175.0" y="48" text-anchor="middle" font-size="10" font-family="Arial" fill="#1A1A2E">0.55</text>
+  <rect x="204.0" y="30" width="50.0" height="28" fill="white" stroke="#9E9E9E" stroke-width="1" rx="4"/>
+  <text x="229.0" y="48" text-anchor="middle" font-size="10" font-family="Arial" fill="#1A1A2E">0.505</text>
+  <text x="150.0" y="76" text-anchor="middle" font-size="9" font-weight="bold" font-family="Arial" fill="#FF6D00">↓ ascending ↓</text>
+  <rect x="42.0" y="88" width="50.0" height="28" fill="#E8F5E9" stroke="#4CAF50" stroke-width="1.5" rx="4"/>
+  <text x="67.0" y="106" text-anchor="middle" font-size="10" font-weight="bold" font-family="Arial" fill="#1A1A2E">0.05</text>
+  <rect x="96.0" y="88" width="50.0" height="28" fill="#E8F5E9" stroke="#4CAF50" stroke-width="1.5" rx="4"/>
+  <text x="121.0" y="106" text-anchor="middle" font-size="10" font-weight="bold" font-family="Arial" fill="#1A1A2E">0.5</text>
+  <rect x="150.0" y="88" width="50.0" height="28" fill="#E8F5E9" stroke="#4CAF50" stroke-width="1.5" rx="4"/>
+  <text x="175.0" y="106" text-anchor="middle" font-size="10" font-weight="bold" font-family="Arial" fill="#1A1A2E">0.505</text>
+  <rect x="204.0" y="88" width="50.0" height="28" fill="#E8F5E9" stroke="#4CAF50" stroke-width="1.5" rx="4"/>
+  <text x="229.0" y="106" text-anchor="middle" font-size="10" font-weight="bold" font-family="Arial" fill="#1A1A2E">0.55</text>
+</svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" width="300" height="200">
+  <rect width="300" height="200" fill="#FFF8F0" rx="8"/>
+  <text x="150.0" y="14" text-anchor="middle" font-size="11" font-weight="bold" font-family="Arial" fill="#1A1A2E">Sports Preference (600 students)</text>
+  <path d="M 150.0,105.0 L 150.0,40.0 A 65,65 0 0,1 206.3,137.5 Z" fill="#FF6D00" stroke="white" stroke-width="1.5"/>
+  <text x="186.58957330989253" y="87.875" text-anchor="middle" font-size="9" font-weight="bold" font-family="Arial" fill="white">120°</text>
+  <path d="M 150.0,105.0 L 206.3,137.5 A 65,65 0 0,1 108.2,154.8 Z" fill="#1976D2" stroke="white" stroke-width="1.5"/>
+  <text x="157.3366355064278" y="150.6081275647658" text-anchor="middle" font-size="9" font-weight="bold" font-family="Arial" fill="white">100°</text>
+  <path d="M 150.0,105.0 L 108.2,154.8 A 65,65 0 0,1 93.7,72.5 Z" fill="#4CAF50" stroke="white" stroke-width="1.5"/>
+  <text x="108.3918724352342" y="116.3366355064278" text-anchor="middle" font-size="9" font-weight="bold" font-family="Arial" fill="white">80°</text>
+  <path d="M 150.0,105.0 L 93.7,72.5 A 65,65 0 0,1 150.0,40.0 Z" fill="#E91E63" stroke="white" stroke-width="1.5"/>
+  <text x="128.87499999999997" y="72.41042669010747" text-anchor="middle" font-size="9" font-weight="bold" font-family="Arial" fill="white">60°</text>
+  <rect x="210" y="25" width="8" height="8" fill="#FF6D00" rx="1"/>
+  <text x="222" y="33" text-anchor="start" font-size="8" font-family="Arial" fill="#1A1A2E">Cricket</text>
+  <rect x="210" y="39" width="8" height="8" fill="#1976D2" rx="1"/>
+  <text x="222" y="47" text-anchor="start" font-size="8" font-family="Arial" fill="#1A1A2E">Football</text>
+  <rect x="210" y="53" width="8" height="8" fill="#4CAF50" rx="1"/>
+  <text x="222" y="61" text-anchor="start" font-size="8" font-family="Arial" fill="#1A1A2E">Tennis</text>
+  <rect x="210" y="67" width="8" height="8" fill="#E91E63" rx="1"/>
+  <text x="222" y="75" text-anchor="start" font-size="8" font-family="Arial" fill="#1A1A2E">Hockey</text>
+</svg>

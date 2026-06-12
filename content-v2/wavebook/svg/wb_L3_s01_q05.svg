@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 140" width="280" height="140">
+  <text x="140.0" y="18" text-anchor="middle" font-size="12" font-weight="bold" font-family="Arial" fill="#333">Find the sum of odd numbers</text>
+  <rect x="12.5" y="30.0" width="47.0" height="36" rx="4" fill="#E8F5E9" stroke="#4CAF50" stroke-width="1.5"/>
+  <text x="36.0" y="48.0" text-anchor="middle" dominant-baseline="central" font-size="14" font-family="Arial" fill="#333">125</text>
+  <rect x="64.5" y="30.0" width="47.0" height="36" rx="4" fill="#FFFFFF" stroke="#999" stroke-width="1.5"/>
+  <text x="88.0" y="48.0" text-anchor="middle" dominant-baseline="central" font-size="14" font-family="Arial" fill="#333">234</text>
+  <rect x="116.5" y="30.0" width="47.0" height="36" rx="4" fill="#E8F5E9" stroke="#4CAF50" stroke-width="1.5"/>
+  <text x="140.0" y="48.0" text-anchor="middle" dominant-baseline="central" font-size="14" font-family="Arial" fill="#333">87</text>
+  <rect x="168.5" y="30.0" width="47.0" height="36" rx="4" fill="#E8F5E9" stroke="#4CAF50" stroke-width="1.5"/>
+  <text x="192.0" y="48.0" text-anchor="middle" dominant-baseline="central" font-size="14" font-family="Arial" fill="#333">109</text>
+  <rect x="220.5" y="30.0" width="47.0" height="36" rx="4" fill="#FFFFFF" stroke="#999" stroke-width="1.5"/>
+  <text x="244.0" y="48.0" text-anchor="middle" dominant-baseline="central" font-size="14" font-family="Arial" fill="#333">46</text>
+  <rect x="12.5" y="74.0" width="47.0" height="36" rx="4" fill="#FFFFFF" stroke="#999" stroke-width="1.5"/>
+  <text x="36.0" y="92.0" text-anchor="middle" dominant-baseline="central" font-size="14" font-family="Arial" fill="#333">152</text>
+  <rect x="64.5" y="74.0" width="47.0" height="36" rx="4" fill="#FFFFFF" stroke="#999" stroke-width="1.5"/>
+  <text x="88.0" y="92.0" text-anchor="middle" dominant-baseline="central" font-size="14" font-family="Arial" fill="#333">78</text>
+  <rect x="116.5" y="74.0" width="47.0" height="36" rx="4" fill="#E8F5E9" stroke="#4CAF50" stroke-width="1.5"/>
+  <text x="140.0" y="92.0" text-anchor="middle" dominant-baseline="central" font-size="14" font-family="Arial" fill="#333">63</text>
+  <rect x="168.5" y="74.0" width="47.0" height="36" rx="4" fill="#E8F5E9" stroke="#4CAF50" stroke-width="1.5"/>
+  <text x="192.0" y="92.0" text-anchor="middle" dominant-baseline="central" font-size="14" font-family="Arial" fill="#333">89</text>
+</svg>

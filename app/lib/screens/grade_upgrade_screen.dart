@@ -97,9 +97,9 @@ class _GradeUpgradeScreenState extends State<GradeUpgradeScreen>
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
             colors: [
-              const Color(0xFF1A237E), // deep indigo
-              const Color(0xFF283593),
-              const Color(0xFF3949AB),
+              KiwiColors.indigo, // deep indigo
+              KiwiColors.indigo.withOpacity(0.9),
+              KiwiColors.indigo.withOpacity(0.8),
             ],
           ),
         ),
@@ -117,14 +117,14 @@ class _GradeUpgradeScreenState extends State<GradeUpgradeScreen>
                     height: 120,
                     decoration: BoxDecoration(
                       gradient: const LinearGradient(
-                        colors: [Color(0xFFFFD54F), Color(0xFFFFA000)],
+                        colors: [KiwiColors.gemGold, KiwiColors.amber],
                         begin: Alignment.topLeft,
                         end: Alignment.bottomRight,
                       ),
                       shape: BoxShape.circle,
                       boxShadow: [
                         BoxShadow(
-                          color: const Color(0xFFFFD54F).withOpacity(0.4),
+                          color: const KiwiColors.gemGold.withOpacity(0.4),
                           blurRadius: 30,
                           spreadRadius: 5,
                         ),
@@ -182,7 +182,7 @@ class _GradeUpgradeScreenState extends State<GradeUpgradeScreen>
                         style: TextStyle(
                           fontSize: 14,
                           fontWeight: FontWeight.w600,
-                          color: Color(0xFFFFD54F),
+                          color: KiwiColors.gemGold,
                           letterSpacing: 2,
                         ),
                       ),
@@ -220,7 +220,7 @@ class _GradeUpgradeScreenState extends State<GradeUpgradeScreen>
                             padding: EdgeInsets.symmetric(horizontal: 12),
                             child: Icon(
                               Icons.arrow_forward_rounded,
-                              color: Color(0xFFFFD54F),
+                              color: KiwiColors.gemGold,
                               size: 28,
                             ),
                           ),
@@ -257,12 +257,12 @@ class _GradeUpgradeScreenState extends State<GradeUpgradeScreen>
                           padding: const EdgeInsets.symmetric(vertical: 16),
                           decoration: BoxDecoration(
                             gradient: const LinearGradient(
-                              colors: [Color(0xFFFFD54F), Color(0xFFFFA000)],
+                              colors: [KiwiColors.gemGold, KiwiColors.amber],
                             ),
                             borderRadius: BorderRadius.circular(16),
                             boxShadow: [
                               BoxShadow(
-                                color: const Color(0xFFFFA000).withOpacity(0.4),
+                                color: const KiwiColors.amber.withOpacity(0.4),
                                 blurRadius: 12,
                                 offset: const Offset(0, 4),
                               ),
@@ -276,14 +276,14 @@ class _GradeUpgradeScreenState extends State<GradeUpgradeScreen>
                                 style: const TextStyle(
                                   fontSize: 16,
                                   fontWeight: FontWeight.w800,
-                                  color: Color(0xFF1A237E),
+                                  color: KiwiColors.textDark,
                                 ),
                               ),
                               const SizedBox(width: 8),
                               const Icon(
                                 Icons.rocket_launch_rounded,
                                 size: 20,
-                                color: Color(0xFF1A237E),
+                                color: KiwiColors.textDark,
                               ),
                             ],
                           ),
@@ -334,19 +334,19 @@ class _GradeUpgradeScreenState extends State<GradeUpgradeScreen>
       height: 64,
       decoration: BoxDecoration(
         color: completed
-            ? const Color(0xFF4CAF50).withOpacity(0.2)
+            ? KiwiColors.kiwiGreen.withOpacity(0.2)
             : Colors.white.withOpacity(0.1),
         shape: BoxShape.circle,
         border: Border.all(
           color: completed
-              ? const Color(0xFF4CAF50)
-              : const Color(0xFFFFD54F),
+              ? KiwiColors.kiwiGreen
+              : const KiwiColors.gemGold,
           width: 3,
         ),
         boxShadow: !completed
             ? [
                 BoxShadow(
-                  color: const Color(0xFFFFD54F).withOpacity(0.3),
+                  color: const KiwiColors.gemGold.withOpacity(0.3),
                   blurRadius: 12,
                   spreadRadius: 2,
                 ),
@@ -358,15 +358,15 @@ class _GradeUpgradeScreenState extends State<GradeUpgradeScreen>
           mainAxisSize: MainAxisSize.min,
           children: [
             if (completed)
-              const Icon(Icons.check_rounded, color: Color(0xFF4CAF50), size: 16),
+              const Icon(Icons.check_rounded, color: KiwiColors.kiwiGreen, size: 16),
             Text(
               'G$grade',
               style: TextStyle(
                 fontSize: completed ? 14 : 18,
                 fontWeight: FontWeight.w800,
                 color: completed
-                    ? const Color(0xFF4CAF50)
-                    : const Color(0xFFFFD54F),
+                    ? KiwiColors.kiwiGreen
+                    : const KiwiColors.gemGold,
               ),
             ),
           ],

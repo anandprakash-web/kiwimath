@@ -1,0 +1,55 @@
+<svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Number Carousel 142857 (Moscow Puzzles #343) -->
+  <defs>
+    <radialGradient id="wheelGrad" cx="50%" cy="50%">
+      <stop offset="0%" style="stop-color:#1A237E"/>
+      <stop offset="70%" style="stop-color:#283593"/>
+      <stop offset="100%" style="stop-color:#1565C0"/>
+    </radialGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="600" height="400" fill="#0A0A23" rx="12"/>
+  <text x="300" y="32" text-anchor="middle" font-family="Georgia" font-size="20" fill="#FFD700" font-weight="bold">The Magic Number Carousel</text>
+  <text x="300" y="52" text-anchor="middle" font-family="Georgia" font-size="12" fill="#81D4FA" font-style="italic">Watch what happens when you multiply 142857!</text>
+  <!-- Central carousel wheel -->
+  <circle cx="200" cy="210" r="120" fill="url(#wheelGrad)" stroke="#FFD700" stroke-width="3"/>
+  <circle cx="200" cy="210" r="90" fill="none" stroke="#FFD700" stroke-width="1" opacity="0.3"/>
+  <circle cx="200" cy="210" r="25" fill="#FFD700" opacity="0.2"/>
+  <!-- Numbers around the wheel -->
+  <text x="200" y="105" text-anchor="middle" font-family="Georgia" font-size="32" fill="#FFD54F" font-weight="bold">1</text>
+  <text x="303" y="155" text-anchor="middle" font-family="Georgia" font-size="32" fill="#FFD54F" font-weight="bold">4</text>
+  <text x="303" y="275" text-anchor="middle" font-family="Georgia" font-size="32" fill="#FFD54F" font-weight="bold">2</text>
+  <text x="200" y="325" text-anchor="middle" font-family="Georgia" font-size="32" fill="#FFD54F" font-weight="bold">8</text>
+  <text x="97" y="275" text-anchor="middle" font-family="Georgia" font-size="32" fill="#FFD54F" font-weight="bold">5</text>
+  <text x="97" y="155" text-anchor="middle" font-family="Georgia" font-size="32" fill="#FFD54F" font-weight="bold">7</text>
+  <!-- Rotation arrow -->
+  <path d="M200 85 A125 125 0 0 1 325 210" fill="none" stroke="#4CAF50" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#greenArrow)"/>
+  <defs>
+    <marker id="greenArrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#4CAF50"/>
+    </marker>
+  </defs>
+  <!-- Multiplication results table -->
+  <rect x="360" y="70" width="220" height="265" fill="#1A237E" rx="10" opacity="0.8" stroke="#3F51B5" stroke-width="1"/>
+  <text x="470" y="98" text-anchor="middle" font-family="Georgia" font-size="15" fill="#FFD700" font-weight="bold">Multiply!</text>
+  <!-- Table rows -->
+  <text x="380" y="125" font-family="monospace" font-size="14" fill="#90CAF9">142857 x 1 =</text>
+  <text x="540" y="125" text-anchor="middle" font-family="monospace" font-size="14" fill="#4CAF50" font-weight="bold">142857</text>
+  <text x="380" y="152" font-family="monospace" font-size="14" fill="#90CAF9">142857 x 2 =</text>
+  <text x="540" y="152" text-anchor="middle" font-family="monospace" font-size="14" fill="#4CAF50" font-weight="bold">285714</text>
+  <text x="380" y="179" font-family="monospace" font-size="14" fill="#90CAF9">142857 x 3 =</text>
+  <text x="540" y="179" text-anchor="middle" font-family="monospace" font-size="14" fill="#4CAF50" font-weight="bold">428571</text>
+  <text x="380" y="206" font-family="monospace" font-size="14" fill="#90CAF9">142857 x 4 =</text>
+  <text x="540" y="206" text-anchor="middle" font-family="monospace" font-size="14" fill="#4CAF50" font-weight="bold">571428</text>
+  <text x="380" y="233" font-family="monospace" font-size="14" fill="#90CAF9">142857 x 5 =</text>
+  <text x="540" y="233" text-anchor="middle" font-family="monospace" font-size="14" fill="#4CAF50" font-weight="bold">714285</text>
+  <text x="380" y="260" font-family="monospace" font-size="14" fill="#90CAF9">142857 x 6 =</text>
+  <text x="540" y="260" text-anchor="middle" font-family="monospace" font-size="14" fill="#4CAF50" font-weight="bold">857142</text>
+  <line x1="375" y1="275" x2="565" y2="275" stroke="#FFD700" stroke-width="1" opacity="0.5"/>
+  <text x="380" y="298" font-family="monospace" font-size="14" fill="#FFD54F">142857 x 7 =</text>
+  <text x="540" y="298" text-anchor="middle" font-family="monospace" font-size="14" fill="#FF5722" font-weight="bold">999999</text>
+  <text x="540" y="318" text-anchor="middle" font-family="Arial" font-size="10" fill="#FF8A65">Whoa!</text>
+  <!-- Bottom question -->
+  <rect x="80" y="355" width="440" height="35" fill="#311B92" rx="8" opacity="0.7"/>
+  <text x="300" y="377" text-anchor="middle" font-family="Georgia" font-size="13" fill="#FFD700">See the pattern? The same digits rotate around like a carousel!</text>
+</svg>

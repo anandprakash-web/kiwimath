@@ -1,0 +1,862 @@
+[
+  {
+    "id": "comb-l3-pt-001",
+    "topic": "pascals_triangle",
+    "stem": "What is the 5th row of Pascal's triangle? (Row 0 is the top row: 1)",
+    "visual_svg": "<svg viewBox='0 0 300 220' xmlns='http://www.w3.org/2000/svg'><rect width='300' height='220' fill='#f9f9f9' rx='8'/><text x='150' y='25' text-anchor='middle' font-size='14' fill='#333'>1</text><text x='135' y='50' text-anchor='middle' font-size='14' fill='#333'>1</text><text x='165' y='50' text-anchor='middle' font-size='14' fill='#333'>1</text><text x='120' y='75' text-anchor='middle' font-size='14' fill='#333'>1</text><text x='150' y='75' text-anchor='middle' font-size='14' fill='#333'>2</text><text x='180' y='75' text-anchor='middle' font-size='14' fill='#333'>1</text><text x='105' y='100' text-anchor='middle' font-size='14' fill='#333'>1</text><text x='135' y='100' text-anchor='middle' font-size='14' fill='#333'>3</text><text x='165' y='100' text-anchor='middle' font-size='14' fill='#333'>3</text><text x='195' y='100' text-anchor='middle' font-size='14' fill='#333'>1</text><text x='90' y='125' text-anchor='middle' font-size='14' fill='#333'>1</text><text x='120' y='125' text-anchor='middle' font-size='14' fill='#333'>4</text><text x='150' y='125' text-anchor='middle' font-size='14' fill='#333'>6</text><text x='180' y='125' text-anchor='middle' font-size='14' fill='#333'>4</text><text x='210' y='125' text-anchor='middle' font-size='14' fill='#333'>1</text><text x='75' y='155' text-anchor='middle' font-size='16' font-weight='bold' fill='#e74c3c'>?</text><text x='105' y='155' text-anchor='middle' font-size='16' font-weight='bold' fill='#e74c3c'>?</text><text x='135' y='155' text-anchor='middle' font-size='16' font-weight='bold' fill='#e74c3c'>?</text><text x='165' y='155' text-anchor='middle' font-size='16' font-weight='bold' fill='#e74c3c'>?</text><text x='195' y='155' text-anchor='middle' font-size='16' font-weight='bold' fill='#e74c3c'>?</text><text x='225' y='155' text-anchor='middle' font-size='16' font-weight='bold' fill='#e74c3c'>?</text><text x='150' y='195' text-anchor='middle' font-size='12' fill='#666'>Row 5 = ?</text></svg>",
+    "answer_type": "mcq",
+    "correct_answer": 0,
+    "solution": "Step 1: In Pascal's triangle, each entry is the sum of the two entries above it.\nStep 2: Row 4 is: 1, 4, 6, 4, 1.\nStep 3: Row 5: start with 1, then 1+4=5, 4+6=10, 6+4=10, 4+1=5, end with 1.\nStep 4: Row 5 = 1, 5, 10, 10, 5, 1.\nAnswer: A) 1, 5, 10, 10, 5, 1.",
+    "difficulty": 1,
+    "tags": [
+      "combinatorics",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken.",
+      "1": "Review the question carefully and try again.",
+      "2": "Review the question carefully and try again.",
+      "3": "Review the question carefully and try again."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [
+      "A) 1, 5, 10, 10, 5, 1",
+      "B) 1, 4, 6, 4, 1",
+      "C) 1, 5, 10, 5, 1",
+      "D) 1, 5, 15, 15, 5, 1"
+    ],
+    "interaction_mode": "mcq"
+  },
+  {
+    "id": "comb-l3-pt-002",
+    "topic": "pascals_triangle",
+    "stem": "Find C(6, 2) \u2014 the number of ways to choose 2 items from 6.",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: C(6,2) = 6! / (2! \u00d7 4!).\nStep 2: = (6 \u00d7 5) / (2 \u00d7 1) = 30 / 2 = 15.\nAnswer: 15.",
+    "difficulty": 1,
+    "tags": [
+      "combinatorics",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 15
+  },
+  {
+    "id": "comb-l3-pt-003",
+    "topic": "pascals_triangle",
+    "stem": "What is the sum of all numbers in the 6th row of Pascal's triangle?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: The sum of all entries in row n of Pascal's triangle is 2\u207f.\nStep 2: For row 6: sum = 2\u2076 = 64.\nStep 3: Verify: Row 6 = 1, 6, 15, 20, 15, 6, 1. Sum = 1+6+15+20+15+6+1 = 64. \u2713\nAnswer: 64.",
+    "difficulty": 2,
+    "tags": [
+      "combinatorics",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 64
+  },
+  {
+    "id": "comb-l3-pt-004",
+    "topic": "pascals_triangle",
+    "stem": "Using Pascal's triangle, find C(7, 3).",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: C(7,3) = 7! / (3! \u00d7 4!).\nStep 2: = (7 \u00d7 6 \u00d7 5) / (3 \u00d7 2 \u00d7 1) = 210 / 6 = 35.\nAnswer: 35.",
+    "difficulty": 1,
+    "tags": [
+      "combinatorics",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 35
+  },
+  {
+    "id": "comb-l3-pt-005",
+    "topic": "pascals_triangle",
+    "stem": "In Pascal's triangle, what is C(5,2) + C(5,3)?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: By Pascal's identity: C(5,2) + C(5,3) = C(6,3).\nStep 2: C(6,3) = 6!/(3!\u00d73!) = (6\u00d75\u00d74)/(3\u00d72\u00d71) = 120/6 = 20.\nStep 3: Verify: C(5,2) = 10, C(5,3) = 10. Sum = 20. \u2713\nAnswer: 20.",
+    "difficulty": 2,
+    "tags": [
+      "combinatorics",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 20
+  },
+  {
+    "id": "comb-l3-pt-006",
+    "topic": "pascals_triangle",
+    "stem": "What is the 3rd entry (counting from 0) in row 8 of Pascal's triangle?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: The kth entry (0-indexed) in row n is C(n, k).\nStep 2: The 3rd entry in row 8 = C(8, 3).\nStep 3: C(8,3) = (8 \u00d7 7 \u00d7 6) / (3 \u00d7 2 \u00d7 1) = 336 / 6 = 56.\nAnswer: 56.",
+    "difficulty": 2,
+    "tags": [
+      "combinatorics",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 56
+  },
+  {
+    "id": "comb-l3-pt-007",
+    "topic": "pascals_triangle",
+    "stem": "How many odd numbers are in row 4 of Pascal's triangle?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: Row 4 of Pascal's triangle: 1, 4, 6, 4, 1.\nStep 2: Odd numbers: 1, 1. (4 and 6 are even)\nStep 3: Count = 2.\nAnswer: 2.",
+    "difficulty": 1,
+    "tags": [
+      "combinatorics",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 2
+  },
+  {
+    "id": "comb-l3-pt-008",
+    "topic": "pascals_triangle",
+    "stem": "C(10, 4) = C(10, ?). What is the missing number?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: By the symmetry property of combinations: C(n, k) = C(n, n\u2212k).\nStep 2: C(10, 4) = C(10, 10\u22124) = C(10, 6).\nAnswer: 6.",
+    "difficulty": 1,
+    "tags": [
+      "combinatorics",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 6
+  },
+  {
+    "id": "comb-l3-pt-009",
+    "topic": "pascals_triangle",
+    "stem": "Using Pascal's triangle, expand (a+b)\u2074. What is the coefficient of a\u00b2b\u00b2?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: (a+b)\u2074 = C(4,0)a\u2074 + C(4,1)a\u00b3b + C(4,2)a\u00b2b\u00b2 + C(4,3)ab\u00b3 + C(4,4)b\u2074.\nStep 2: Row 4 of Pascal's triangle: 1, 4, 6, 4, 1.\nStep 3: The coefficient of a\u00b2b\u00b2 is C(4,2) = 6.\nAnswer: 6.",
+    "difficulty": 2,
+    "tags": [
+      "combinatorics",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 6
+  },
+  {
+    "id": "comb-l3-pt-010",
+    "topic": "pascals_triangle",
+    "stem": "What is C(8,0) + C(8,1) + C(8,2) + ... + C(8,8)?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: The sum of all entries in row n of Pascal's triangle = 2\u207f.\nStep 2: Sum = 2\u2078 = 256.\nStep 3: This also equals the total number of subsets of an 8-element set.\nAnswer: 256.",
+    "difficulty": 2,
+    "tags": [
+      "combinatorics",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 256
+  },
+  {
+    "id": "comb-l3-ph-001",
+    "topic": "pigeonhole",
+    "stem": "A drawer has red, blue, and green socks. How many socks must you pull out (in the dark) to guarantee a matching pair?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: There are 3 colors (pigeonholes).\nStep 2: In the worst case, you first pick one sock of each color (3 socks, no match).\nStep 3: The 4th sock must match one of the 3 colors already picked.\nStep 4: By the Pigeonhole Principle, 4 socks guarantee a matching pair.\nAnswer: 4.",
+    "difficulty": 1,
+    "tags": [
+      "combinatorics",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 4
+  },
+  {
+    "id": "comb-l3-ph-002",
+    "topic": "pigeonhole",
+    "stem": "45 students scored between 60 and 100 on a test (integer scores only). What is the minimum number of students who must have the same score?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: Possible scores: 60, 61, 62, ..., 100. That is 41 possible scores.\nStep 2: With 45 students and 41 possible scores, by the Pigeonhole Principle, at least \u230845/41\u2309 = 2 students must share the same score.\nStep 3: In the worst case, 41 students each get different scores, but the 42nd through 45th must repeat.\nAnswer: 2.",
+    "difficulty": 2,
+    "tags": [
+      "combinatorics",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 2
+  },
+  {
+    "id": "comb-l3-ph-003",
+    "topic": "pigeonhole",
+    "stem": "In a group of 13 people, at least how many must share the same birth month?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: There are 12 months (pigeonholes) and 13 people (pigeons).\nStep 2: By the Pigeonhole Principle, at least \u230813/12\u2309 = 2 people must share the same birth month.\nAnswer: 2.",
+    "difficulty": 1,
+    "tags": [
+      "combinatorics",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 2
+  },
+  {
+    "id": "comb-l3-ph-004",
+    "topic": "pigeonhole",
+    "stem": "You pick 5 integers from the set {1, 2, 3, 4, 5, 6, 7, 8}. Must there be two of them that add up to 9?",
+    "visual_svg": null,
+    "answer_type": "mcq",
+    "correct_answer": 0,
+    "solution": "Step 1: Pair the numbers that sum to 9: {1,8}, {2,7}, {3,6}, {4,5}.\nStep 2: There are 4 pairs (pigeonholes).\nStep 3: If we pick 5 numbers, by Pigeonhole, at least 2 must come from the same pair.\nStep 4: Two numbers from the same pair sum to 9.\nAnswer: A) Yes, always.",
+    "difficulty": 2,
+    "tags": [
+      "combinatorics",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken.",
+      "1": "Review the question carefully and try again."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [
+      "A) Yes, always",
+      "B) Not necessarily"
+    ],
+    "interaction_mode": "mcq"
+  },
+  {
+    "id": "comb-l3-ph-005",
+    "topic": "pigeonhole",
+    "stem": "A bag contains balls numbered 1 to 10. How many balls must you draw to guarantee that you have at least two balls whose numbers differ by exactly 1?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: Group the numbers into 'non-consecutive' sets: {1,3,5,7,9} and {2,4,6,8,10}.\nStep 2: You can pick at most 5 numbers without any two being consecutive (e.g., all odds: 1,3,5,7,9).\nStep 3: The 6th number must be adjacent to one already picked.\nAnswer: 6.",
+    "difficulty": 3,
+    "tags": [
+      "combinatorics",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 6
+  },
+  {
+    "id": "comb-l3-ph-006",
+    "topic": "pigeonhole",
+    "stem": "A class has 27 students. By the Pigeonhole Principle, at least how many students must share a birth month?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: There are 12 months and 27 students.\nStep 2: By the Pigeonhole Principle, at least \u230827/12\u2309 = \u23082.25\u2309 = 3 students must share a birth month.\nAnswer: 3.",
+    "difficulty": 1,
+    "tags": [
+      "combinatorics",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 3
+  },
+  {
+    "id": "comb-l3-ph-007",
+    "topic": "pigeonhole",
+    "stem": "In any group of 6 people, must there be either 3 who all know each other or 3 who are all strangers?",
+    "visual_svg": null,
+    "answer_type": "mcq",
+    "correct_answer": 0,
+    "solution": "Step 1: Pick any person P. They have a relationship (know/don't know) with the other 5.\nStep 2: By Pigeonhole, at least \u23085/2\u2309 = 3 of those 5 are in the same category.\nStep 3: Case 1: P knows at least 3, say A, B, C. If any pair of A,B,C know each other, that pair plus P forms a group of 3 mutual friends. If none of A,B,C know each other, they form 3 mutual strangers.\nStep 4: Case 2 (P doesn't know at least 3) is symmetric.\nStep 5: In both cases, we find 3 mutual friends or 3 mutual strangers.\nAnswer: A) Yes, always. (This is the Ramsey number R(3,3) = 6.)",
+    "difficulty": 3,
+    "tags": [
+      "combinatorics",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken.",
+      "1": "Review the question carefully and try again."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [
+      "A) Yes, always",
+      "B) Not necessarily"
+    ],
+    "interaction_mode": "mcq"
+  },
+  {
+    "id": "comb-l3-ph-008",
+    "topic": "pigeonhole",
+    "stem": "A deck has 4 suits and 13 ranks. How many cards must you draw to guarantee you have 3 cards of the same suit?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: 4 suits (pigeonholes). We want 3 cards in one suit.\nStep 2: Worst case: 2 cards of each suit = 2 \u00d7 4 = 8 cards, no suit has 3.\nStep 3: The 9th card must make one suit have 3.\nAnswer: 9.",
+    "difficulty": 2,
+    "tags": [
+      "combinatorics",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 9
+  },
+  {
+    "id": "comb-l3-ph-009",
+    "topic": "pigeonhole",
+    "stem": "If 10 points are placed inside a 3\u00d73 square, what is the maximum distance that can be guaranteed between at least one pair of points?",
+    "visual_svg": null,
+    "answer_type": "mcq",
+    "correct_answer": 0,
+    "solution": "Step 1: Divide the 3\u00d73 square into 9 equal 1\u00d71 squares.\nStep 2: 10 points placed in 9 squares \u2192 by the Pigeonhole Principle, at least 2 points are in the same 1\u00d71 square.\nStep 3: The maximum distance between two points inside a 1\u00d71 square is the diagonal = \u221a(1\u00b2 + 1\u00b2) = \u221a2.\nStep 4: So we can guarantee at least two points are within distance \u221a2 of each other.\nAnswer: A) Less than \u221a2.",
+    "difficulty": 3,
+    "tags": [
+      "combinatorics",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken.",
+      "1": "Review the question carefully and try again.",
+      "2": "Review the question carefully and try again.",
+      "3": "Review the question carefully and try again."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [
+      "A) Less than \u221a2",
+      "B) Less than \u221a(4.5)",
+      "C) Less than 3",
+      "D) Less than 1"
+    ],
+    "interaction_mode": "mcq"
+  },
+  {
+    "id": "comb-l3-ph-010",
+    "topic": "pigeonhole",
+    "stem": "How many people must be in a room to guarantee that at least 3 of them have the same first initial (26 letters)?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: 26 possible first initials (pigeonholes).\nStep 2: To guarantee 3 with the same initial, worst case: 2 people for each initial = 2 \u00d7 26 = 52.\nStep 3: The 53rd person must give some initial its 3rd person.\nAnswer: 53.",
+    "difficulty": 2,
+    "tags": [
+      "combinatorics",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 53
+  },
+  {
+    "id": "comb-l3-ie-001",
+    "topic": "inclusion_exclusion",
+    "stem": "In a class of 40 students, 25 play football, 20 play cricket, and 10 play both. How many play neither?",
+    "visual_svg": "<svg viewBox='0 0 300 200' xmlns='http://www.w3.org/2000/svg'><rect width='300' height='200' fill='#f9f9f9' rx='8'/><rect x='10' y='10' width='280' height='180' fill='none' stroke='#333' stroke-width='1.5' rx='5'/><text x='260' y='30' font-size='11' fill='#333'>40</text><ellipse cx='120' cy='100' rx='80' ry='60' fill='#3498db' fill-opacity='0.2' stroke='#3498db' stroke-width='2'/><ellipse cx='190' cy='100' rx='80' ry='60' fill='#e74c3c' fill-opacity='0.2' stroke='#e74c3c' stroke-width='2'/><text x='80' y='105' font-size='14' font-weight='bold' fill='#3498db'>15</text><text x='145' y='105' font-size='14' font-weight='bold' fill='#9b59b6'>10</text><text x='215' y='105' font-size='14' font-weight='bold' fill='#e74c3c'>10</text><text x='100' y='45' font-size='12' fill='#3498db'>Football</text><text x='195' y='45' font-size='12' fill='#e74c3c'>Cricket</text></svg>",
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: By Inclusion-Exclusion: |F \u222a C| = |F| + |C| \u2212 |F \u2229 C|.\nStep 2: |F \u222a C| = 25 + 20 \u2212 10 = 35.\nStep 3: Students playing neither = Total \u2212 |F \u222a C| = 40 \u2212 35 = 5.\nAnswer: 5.",
+    "difficulty": 1,
+    "tags": [
+      "combinatorics",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 5
+  },
+  {
+    "id": "comb-l3-ie-002",
+    "topic": "inclusion_exclusion",
+    "stem": "How many integers from 1 to 100 are divisible by 3 or 5?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: Multiples of 3 up to 100: \u230a100/3\u230b = 33.\nStep 2: Multiples of 5 up to 100: \u230a100/5\u230b = 20.\nStep 3: Multiples of both 3 and 5 (i.e., multiples of 15): \u230a100/15\u230b = 6.\nStep 4: By Inclusion-Exclusion: |A \u222a B| = 33 + 20 \u2212 6 = 47.\nAnswer: 47.",
+    "difficulty": 2,
+    "tags": [
+      "combinatorics",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 47
+  },
+  {
+    "id": "comb-l3-ie-003",
+    "topic": "inclusion_exclusion",
+    "stem": "In a survey of 50 people, 30 like tea, 25 like coffee, and 15 like both. How many like only tea?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: People who like only tea = those who like tea \u2212 those who like both.\nStep 2: Only tea = 30 \u2212 15 = 15.\nAnswer: 15.",
+    "difficulty": 1,
+    "tags": [
+      "combinatorics",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 15
+  },
+  {
+    "id": "comb-l3-ie-004",
+    "topic": "inclusion_exclusion",
+    "stem": "How many integers from 1 to 60 are divisible by neither 2 nor 3?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: Multiples of 2 up to 60: 60/2 = 30.\nStep 2: Multiples of 3 up to 60: 60/3 = 20.\nStep 3: Multiples of 6 (both 2 and 3) up to 60: 60/6 = 10.\nStep 4: Divisible by 2 or 3: 30 + 20 \u2212 10 = 40.\nStep 5: Divisible by neither: 60 \u2212 40 = 20.\nAnswer: 20.",
+    "difficulty": 2,
+    "tags": [
+      "combinatorics",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 20
+  },
+  {
+    "id": "comb-l3-ie-005",
+    "topic": "inclusion_exclusion",
+    "stem": "In a school, 60 students study French, 45 study Spanish, 30 study German. 20 study French and Spanish, 15 study French and German, 10 study Spanish and German, and 5 study all three. How many students study at least one language?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: By 3-set Inclusion-Exclusion:\n|F \u222a S \u222a G| = |F| + |S| + |G| \u2212 |F\u2229S| \u2212 |F\u2229G| \u2212 |S\u2229G| + |F\u2229S\u2229G|.\nStep 2: = 60 + 45 + 30 \u2212 20 \u2212 15 \u2212 10 + 5 = 95.\nAnswer: 95 students.",
+    "difficulty": 3,
+    "tags": [
+      "combinatorics",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 95
+  },
+  {
+    "id": "comb-l3-ie-006",
+    "topic": "inclusion_exclusion",
+    "stem": "At a party of 100 guests, 60 had cake, 50 had ice cream, and 20 had both. How many had only ice cream?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: Only ice cream = ice cream \u2212 both = 50 \u2212 20 = 30.\nAnswer: 30.",
+    "difficulty": 1,
+    "tags": [
+      "combinatorics",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 30
+  },
+  {
+    "id": "comb-l3-ie-007",
+    "topic": "inclusion_exclusion",
+    "stem": "How many integers from 1 to 200 are divisible by 4 or 6?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: Multiples of 4 up to 200: \u230a200/4\u230b = 50.\nStep 2: Multiples of 6 up to 200: \u230a200/6\u230b = 33.\nStep 3: LCM(4,6) = 12. Multiples of 12 up to 200: \u230a200/12\u230b = 16.\nStep 4: By Inclusion-Exclusion: 50 + 33 \u2212 16 = 67.\nAnswer: 67.",
+    "difficulty": 2,
+    "tags": [
+      "combinatorics",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 67
+  },
+  {
+    "id": "comb-l3-ie-008",
+    "topic": "inclusion_exclusion",
+    "stem": "Of 80 students, 50 play football, 40 play basketball. What is the minimum number who play both?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: By Inclusion-Exclusion: |F \u222a B| = |F| + |B| \u2212 |F \u2229 B|.\nStep 2: |F \u222a B| \u2264 80 (can't exceed total students).\nStep 3: 50 + 40 \u2212 |F \u2229 B| \u2264 80.\nStep 4: 90 \u2212 |F \u2229 B| \u2264 80.\nStep 5: |F \u2229 B| \u2265 10.\nAnswer: Minimum 10 students play both.",
+    "difficulty": 2,
+    "tags": [
+      "combinatorics",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "comb-l3-ie-009",
+    "topic": "inclusion_exclusion",
+    "stem": "How many integers from 1 to 1000 are not divisible by 2, 3, or 5?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: |A\u2082| = \u230a1000/2\u230b = 500. |A\u2083| = \u230a1000/3\u230b = 333. |A\u2085| = \u230a1000/5\u230b = 200.\nStep 2: |A\u2082\u2229A\u2083| = \u230a1000/6\u230b = 166. |A\u2082\u2229A\u2085| = \u230a1000/10\u230b = 100. |A\u2083\u2229A\u2085| = \u230a1000/15\u230b = 66.\nStep 3: |A\u2082\u2229A\u2083\u2229A\u2085| = \u230a1000/30\u230b = 33.\nStep 4: |A\u2082\u222aA\u2083\u222aA\u2085| = 500+333+200 \u2212 166\u2212100\u221266 + 33 = 734.\nStep 5: Not divisible by any: 1000 \u2212 734 = 266.\nAnswer: 266.",
+    "difficulty": 3,
+    "tags": [
+      "combinatorics",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 266
+  },
+  {
+    "id": "comb-l3-ie-010",
+    "topic": "inclusion_exclusion",
+    "stem": "In a group of 35 students, 20 like math, 18 like science, and 8 like both. How many like exactly one of the two subjects?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: Only math = 20 \u2212 8 = 12.\nStep 2: Only science = 18 \u2212 8 = 10.\nStep 3: Exactly one subject = 12 + 10 = 22.\nAnswer: 22.",
+    "difficulty": 1,
+    "tags": [
+      "combinatorics",
+      "level3"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 22
+  }
+]

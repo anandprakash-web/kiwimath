@@ -1,0 +1,291 @@
+{
+  "topic_id": "wavebook-multiplication-and-division",
+  "topic_name": "Wavebook: Multiplication and Division",
+  "topic_emoji": "\ud83d\udcd8",
+  "grade": 3,
+  "domain": "wavebook",
+  "source": "wavebook",
+  "total_questions": 15,
+  "difficulty_range": {
+    "min": 0,
+    "max": 0
+  },
+  "questions": [
+    {
+      "id": "wb_L3_s04_q01",
+      "stem": "Which of the following expressions is NOT true?",
+      "interaction_mode": "mcq",
+      "topic": "Multiplication and Division",
+      "difficulty_tier": "warmup",
+      "question_number": 1,
+      "choices": [
+        "12 x 89 = 89 x 12",
+        "12 x 89 = 12 x (80 + 9)",
+        "12 x 89 = (10 + 2) x 89",
+        "12 x 89 = (12 x 8) + (12 x 9)"
+      ],
+      "correct_answer": 3,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S4",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L3_s04_q02",
+      "stem": "Shiva arranged some tiles in the pattern shown here. Which number sentence best represents his arrangement of tiles?",
+      "interaction_mode": "mcq",
+      "topic": "Multiplication and Division",
+      "difficulty_tier": "warmup",
+      "question_number": 2,
+      "choices": [
+        "7 + 4 = 11",
+        "7 x 4 = 28",
+        "7 x 7 = 49",
+        "28 - 4 = 18"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S4",
+      "svg": "wb_L3_s04_q02.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 370 100\" width=\"370\" height=\"100\" style=\"font-family:Arial,sans-serif\"><circle cx=\"30\" cy=\"50\" r=\"20\" fill=\"#42A5F5\" stroke=\"#333\" stroke-width=\"1.5\"/><rect x=\"72\" y=\"32\" width=\"36\" height=\"36\" fill=\"#FF7043\" stroke=\"#333\" stroke-width=\"1.5\"/><circle cx=\"150\" cy=\"50\" r=\"20\" fill=\"#42A5F5\" stroke=\"#333\" stroke-width=\"1.5\"/><rect x=\"192\" y=\"32\" width=\"36\" height=\"36\" fill=\"#FF7043\" stroke=\"#333\" stroke-width=\"1.5\"/><circle cx=\"270\" cy=\"50\" r=\"20\" fill=\"#42A5F5\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"330\" y=\"55\" font-size=\"24\" fill=\"#333\">?</text></svg>"
+    },
+    {
+      "id": "wb_L3_s04_q03",
+      "stem": "Samrath has a ball of string 6 yards long. He needs 20 feet string for a project. What should Samrath do first to find out length of string he require? (1 yard = 3 feet)",
+      "interaction_mode": "mcq",
+      "topic": "Multiplication and Division",
+      "difficulty_tier": "warmup",
+      "question_number": 3,
+      "choices": [
+        "Multiply 20 by 3",
+        "Multiply 20 by 6",
+        "Multiply 6 by 3",
+        "Multiply 6 by 12"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S4",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L3_s04_q04",
+      "stem": "Which of the following shows the common factors of 12 and 15?",
+      "interaction_mode": "mcq",
+      "topic": "Multiplication and Division",
+      "difficulty_tier": "warmup",
+      "question_number": 4,
+      "choices": [
+        "1 and 2",
+        "2 and 3",
+        "1 and 3",
+        "3 and 4"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S4",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L3_s04_q05",
+      "stem": "Find the missing number",
+      "interaction_mode": "mcq",
+      "topic": "Multiplication and Division",
+      "difficulty_tier": "warmup",
+      "question_number": 5,
+      "choices": [
+        "2",
+        "3",
+        "6",
+        "4"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S4",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L3_s04_q06",
+      "stem": "Shubham bought 8 bags of blue balls and 6 bags of white balls. Each bag of balls had 9 pieces in it. Which expression could he use to find the total number of balls he bought?",
+      "interaction_mode": "mcq",
+      "topic": "Multiplication and Division",
+      "difficulty_tier": "practice",
+      "question_number": 6,
+      "choices": [
+        "(9 x 8) + 6",
+        "(9 x 6) + 8",
+        "9 x (8 + 6)",
+        "9 + (8 x 6)"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S4",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L3_s04_q07",
+      "stem": "What is the missing digit which makes the number 9724* exactly divisible by 6?",
+      "interaction_mode": "mcq",
+      "topic": "Multiplication and Division",
+      "difficulty_tier": "practice",
+      "question_number": 7,
+      "choices": [
+        "2",
+        "4",
+        "6",
+        "5"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S4",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L3_s04_q08",
+      "stem": "Find the least value of '*' so that the number 37*124 is divisible by 9?",
+      "interaction_mode": "mcq",
+      "topic": "Multiplication and Division",
+      "difficulty_tier": "practice",
+      "question_number": 8,
+      "choices": [
+        "2",
+        "1",
+        "5",
+        "6"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S4",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L3_s04_q09",
+      "stem": "Multiply 3212 x 11",
+      "interaction_mode": "mcq",
+      "topic": "Multiplication and Division",
+      "difficulty_tier": "practice",
+      "question_number": 9,
+      "choices": [
+        "35332",
+        "38332",
+        "37332",
+        "36332"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S4",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L3_s04_q10",
+      "stem": "A number is always divisible by 90 if",
+      "interaction_mode": "mcq",
+      "topic": "Multiplication and Division",
+      "difficulty_tier": "practice",
+      "question_number": 10,
+      "choices": [
+        "it is divisible by both 2 and 45",
+        "it is divisible by both 5 and 18",
+        "it is divisible by both 9 and 10",
+        "All the above"
+      ],
+      "correct_answer": 3,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S4",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L3_s04_q11",
+      "stem": "David has a stove with two hobs. The dishes need 40 min, 15 min, 35 min, 10 min and 45 min. How long does he need for the preparation?",
+      "interaction_mode": "mcq",
+      "topic": "Multiplication and Division",
+      "difficulty_tier": "challenge",
+      "question_number": 11,
+      "choices": [
+        "60 min",
+        "70 min",
+        "75 min",
+        "80 min",
+        "85 min"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S4",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L3_s04_q12",
+      "stem": "Which number must be written into the circle with the question mark so that the calculation is correct?",
+      "interaction_mode": "mcq",
+      "topic": "Multiplication and Division",
+      "difficulty_tier": "challenge",
+      "question_number": 12,
+      "choices": [
+        "8",
+        "9",
+        "10",
+        "11",
+        "12"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S4",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L3_s04_q13",
+      "stem": "Benjamin writes a number into the first circle. How many of the six numbers are divisible by 3?",
+      "interaction_mode": "mcq",
+      "topic": "Multiplication and Division",
+      "difficulty_tier": "challenge",
+      "question_number": 13,
+      "choices": [
+        "1",
+        "2",
+        "1 or 2",
+        "2 or 3",
+        "3 or 4"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S4",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L3_s04_q14",
+      "stem": "In a witch's garden there are 30 animals: dogs, cats and mice. The witch changes 6 dogs into 6 cats and then 5 cats into 5 mice. Now there is an equal number. How many cats were there to start with?",
+      "interaction_mode": "mcq",
+      "topic": "Multiplication and Division",
+      "difficulty_tier": "challenge",
+      "question_number": 14,
+      "choices": [
+        "4",
+        "5",
+        "9",
+        "10",
+        "11"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S4",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L3_s04_q15",
+      "stem": "Which of the following numbers is divisible by 11?",
+      "interaction_mode": "mcq",
+      "topic": "Multiplication and Division",
+      "difficulty_tier": "challenge",
+      "question_number": 15,
+      "choices": [
+        "3,116,365",
+        "901,351",
+        "8,790,322",
+        "311,136"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S4",
+      "diagnostics": {}
+    }
+  ]
+}

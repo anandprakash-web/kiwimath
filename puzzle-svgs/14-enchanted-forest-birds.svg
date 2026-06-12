@@ -1,0 +1,73 @@
+<svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Enchanted Forest Birds (Smullyan: To Mock a Mockingbird — Combinatory Logic) -->
+  <defs>
+    <linearGradient id="forestGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1B5E20"/>
+      <stop offset="50%" style="stop-color:#2E7D32"/>
+      <stop offset="100%" style="stop-color:#33691E"/>
+    </linearGradient>
+    <radialGradient id="sunGlow" cx="80%" cy="15%">
+      <stop offset="0%" style="stop-color:#FFF9C4;stop-opacity:0.6"/>
+      <stop offset="100%" style="stop-color:#FFF9C4;stop-opacity:0"/>
+    </radialGradient>
+  </defs>
+  <!-- Background — enchanted forest -->
+  <rect width="600" height="400" fill="url(#forestGrad)" rx="12"/>
+  <rect width="600" height="400" fill="url(#sunGlow)" rx="12"/>
+  <!-- Trees -->
+  <rect x="30" y="180" width="16" height="220" fill="#4E342E"/>
+  <polygon points="38,80 -5,200 80,200" fill="#2E7D32" opacity="0.8"/>
+  <polygon points="38,120 5,210 70,210" fill="#388E3C" opacity="0.7"/>
+  <rect x="540" y="200" width="16" height="200" fill="#4E342E"/>
+  <polygon points="548,100 505,220 590,220" fill="#2E7D32" opacity="0.8"/>
+  <polygon points="548,140 515,225 580,225" fill="#388E3C" opacity="0.7"/>
+  <rect x="480" y="250" width="12" height="150" fill="#3E2723"/>
+  <polygon points="486,170 455,270 517,270" fill="#1B5E20" opacity="0.7"/>
+  <!-- Title -->
+  <text x="300" y="35" text-anchor="middle" font-family="Georgia" font-size="20" fill="#FFD700" font-weight="bold">The Enchanted Forest</text>
+  <text x="300" y="55" text-anchor="middle" font-family="Georgia" font-size="12" fill="#C8E6C9" font-style="italic">Every bird has a special song. When Bird A hears Bird B sing, A responds!</text>
+  <!-- Bird A — Mockingbird (blue) -->
+  <ellipse cx="160" cy="160" rx="30" ry="22" fill="#42A5F5" stroke="#1565C0" stroke-width="2"/>
+  <circle cx="148" cy="152" r="5" fill="white"/><circle cx="148" cy="152" r="2.5" fill="#0D47A1"/>
+  <polygon points="190,155 205,150 190,160" fill="#FF8F00"/>
+  <path d="M135 170 Q120 190 140 180" stroke="#42A5F5" stroke-width="3" fill="none"/>
+  <text x="160" y="130" text-anchor="middle" font-family="Georgia" font-size="14" fill="#E3F2FD" font-weight="bold">Mockingbird</text>
+  <text x="160" y="115" text-anchor="middle" font-family="Arial" font-size="11" fill="#90CAF9">(copies any song)</text>
+  <!-- Speech bubble from Mockingbird -->
+  <rect x="80" y="195" width="160" height="40" fill="white" rx="8" opacity="0.9" stroke="#42A5F5" stroke-width="1.5"/>
+  <polygon points="160,195 150,185 170,195" fill="white" stroke="#42A5F5" stroke-width="1.5"/>
+  <polygon points="162,195 152,187 168,195" fill="white"/>
+  <text x="160" y="215" text-anchor="middle" font-family="Georgia" font-size="11" fill="#1A237E" font-style="italic">"If you sing X to me,</text>
+  <text x="160" y="228" text-anchor="middle" font-family="Georgia" font-size="11" fill="#1A237E" font-style="italic">I sing X right back!"</text>
+  <!-- Bird B — Kestrel (red) -->
+  <ellipse cx="430" cy="160" rx="30" ry="22" fill="#EF5350" stroke="#C62828" stroke-width="2"/>
+  <circle cx="418" cy="152" r="5" fill="white"/><circle cx="418" cy="152" r="2.5" fill="#B71C1C"/>
+  <polygon points="460,155 475,150 460,160" fill="#FF8F00"/>
+  <path d="M405 170 Q390 190 410 180" stroke="#EF5350" stroke-width="3" fill="none"/>
+  <text x="430" y="130" text-anchor="middle" font-family="Georgia" font-size="14" fill="#FFCDD2" font-weight="bold">Kestrel</text>
+  <text x="430" y="115" text-anchor="middle" font-family="Arial" font-size="11" fill="#EF9A9A">(keeps only the first)</text>
+  <!-- Speech bubble from Kestrel -->
+  <rect x="350" y="195" width="160" height="40" fill="white" rx="8" opacity="0.9" stroke="#EF5350" stroke-width="1.5"/>
+  <polygon points="430,195 420,185 440,195" fill="white" stroke="#EF5350" stroke-width="1.5"/>
+  <polygon points="432,195 422,187 438,195" fill="white"/>
+  <text x="430" y="215" text-anchor="middle" font-family="Georgia" font-size="11" fill="#B71C1C" font-style="italic">"Sing me X then Y...</text>
+  <text x="430" y="228" text-anchor="middle" font-family="Georgia" font-size="11" fill="#B71C1C" font-style="italic">I only sing back X!"</text>
+  <!-- Musical notes floating -->
+  <text x="250" y="100" font-family="Georgia" font-size="18" fill="#FFD700" opacity="0.6">♪</text>
+  <text x="320" y="85" font-family="Georgia" font-size="22" fill="#FFD700" opacity="0.5">♫</text>
+  <text x="370" y="105" font-family="Georgia" font-size="16" fill="#FFD700" opacity="0.6">♪</text>
+  <!-- Challenge box -->
+  <rect x="100" y="255" width="400" height="120" fill="#1B5E20" rx="12" opacity="0.9" stroke="#4CAF50" stroke-width="1.5"/>
+  <text x="300" y="280" text-anchor="middle" font-family="Georgia" font-size="15" fill="#FFD700" font-weight="bold">Captain Kiwi's Puzzle</text>
+  <text x="300" y="305" text-anchor="middle" font-family="Arial" font-size="13" fill="#E8F5E9">If you sing "DO" to the Mockingbird,</text>
+  <text x="300" y="325" text-anchor="middle" font-family="Arial" font-size="13" fill="#E8F5E9">what does it sing back?</text>
+  <!-- Answer options -->
+  <rect x="160" y="340" width="80" height="28" fill="#43A047" rx="6"/><text x="200" y="359" text-anchor="middle" font-family="Arial" font-size="13" fill="white" font-weight="bold">DO</text>
+  <rect x="260" y="340" width="80" height="28" fill="#43A047" rx="6"/><text x="300" y="359" text-anchor="middle" font-family="Arial" font-size="13" fill="white" font-weight="bold">RE</text>
+  <rect x="360" y="340" width="80" height="28" fill="#43A047" rx="6"/><text x="400" y="359" text-anchor="middle" font-family="Arial" font-size="13" fill="white" font-weight="bold">Nothing</text>
+  <!-- Ground -->
+  <rect x="0" y="385" width="600" height="15" fill="#33691E" rx="0"/>
+  <!-- Flowers -->
+  <circle cx="80" cy="385" r="4" fill="#F48FB1"/><circle cx="120" cy="388" r="3" fill="#CE93D8"/>
+  <circle cx="460" cy="386" r="4" fill="#FFF176"/><circle cx="510" cy="388" r="3" fill="#F48FB1"/>
+</svg>

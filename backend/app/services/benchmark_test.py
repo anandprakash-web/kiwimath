@@ -92,6 +92,83 @@ ANCHOR_SELECTION_CRITERIA = {
     'min_per_competency': 2,         # At least 2 K, 2 A, 2 R
 }
 
+# Grade-band mapping for Kangaroo topics (T1-T8).
+# questions.json = G1-2 (difficulty 1-100), grade34 = G3-4 (101-200), g56 = G5-6 (201-300)
+KANGAROO_GRADE_BANDS = {
+    1: (1, 2),    # Grade 1 tests → G1-2 content
+    2: (1, 2),    # Grade 2 tests → G1-2 content
+    3: (3, 4),    # Grade 3 tests → G3-4 content
+    4: (3, 4),    # Grade 4 tests → G3-4 content
+    5: (5, 6),    # Grade 5 tests → G5-6 content
+    6: (5, 6),    # Grade 6 tests → G5-6 content
+}
+
+# Difficulty score ranges that correspond to each grade band in Kangaroo topics
+KANGAROO_DIFFICULTY_RANGES = {
+    (1, 2): (1, 100),
+    (3, 4): (101, 200),
+    (5, 6): (201, 300),
+}
+
+
+def _grade_for_question(q: Dict) -> Optional[int]:
+    """Infer the target grade of a question from its ID or difficulty.
+
+    Returns the grade (1-6) or None if undetermined.
+
+    Curriculum questions: ID contains -G{grade}- (e.g., NCERT-G3-001)
+    Kangaroo topics: difficulty_score 1-100 → G1-2, 101-200 → G3-4, 201-300 → G5-6
+    """
+    import re
+    qid = q.get('id', '')
+
+    # Curriculum questions have grade in ID
+    m = re.search(r'-G(\d)-', qid)
+    if m:
+        return int(m.group(1))
+
+    # Kangaroo topics (T1-T8): use difficulty_score to infer grade band
+    if re.match(r'^T\d-', qid):
+        diff = q.get('difficulty_score', 0)
+        if diff <= 100:
+            return 1  # G1-2 band, return lower grade
+        elif diff <= 200:
+            return 3  # G3-4 band
+        else:
+            return 5  # G5-6 band
+
+    return None
+
+
+def _filter_questions_for_grade(all_questions: List[Dict], grade: int) -> List[Dict]:
+    """Filter questions appropriate for a benchmark test at the given grade.
+
+    For a grade N test, include:
+    - Curriculum questions for grade N-1 and grade N (test what they should already
+      know + what they're currently learning)
+    - Kangaroo topic questions from the matching grade band
+
+    This ensures a grade-2 child never sees grade-6 algebra, and the test
+    covers both mastery of prior content and current-grade progress.
+    """
+    # Grades to include: current grade + one below (floor at 1)
+    allowed_grades = {grade, max(1, grade - 1)}
+
+    # For Kangaroo topics, also allow the full grade band
+    band = KANGAROO_GRADE_BANDS.get(grade, (grade, grade))
+    allowed_grades.update(range(band[0], band[1] + 1))
+
+    filtered = []
+    for q in all_questions:
+        q_grade = _grade_for_question(q)
+        if q_grade is None:
+            # Unknown grade — skip for benchmarks (these are the ~3600 untagged questions)
+            continue
+        if q_grade in allowed_grades:
+            filtered.append(q)
+
+    return filtered
+
 
 @dataclass
 class AnchorItem:
@@ -211,12 +288,20 @@ class BenchmarkTestService:
         exclude_ids = exclude_ids or set()
         benchmark_id = f"bm-{user_id[:8]}-{benchmark_type}-{int(time.time())}"
 
+        # CRITICAL: Filter questions to only include grade-appropriate content.
+        # Without this, a grade-1 child could receive grade-6 algebra questions.
+        grade_questions = _filter_questions_for_grade(all_questions, grade)
+        logger.info(
+            f"Benchmark grade filter: grade={grade}, "
+            f"total={len(all_questions)} → filtered={len(grade_questions)}"
+        )
+
         # Select anchor items (fixed across test forms)
-        anchor_ids = self._select_anchor_items(grade, all_questions, exclude_ids)
+        anchor_ids = self._select_anchor_items(grade, grade_questions, exclude_ids)
 
         # Select non-anchor items (balanced by competency and topic)
         non_anchor_ids = self._select_balanced_items(
-            grade, all_questions,
+            grade, grade_questions,
             exclude_ids | set(anchor_ids),
             count=NON_ANCHOR_ITEMS,
         )
@@ -351,6 +436,14 @@ class BenchmarkTestService:
 
         # Build question lookup
         q_map = {q.get('id', ''): q for q in all_questions}
+
+        # Compute correctness from selected_option if not already set
+        for r in responses:
+            if 'correct' not in r:
+                q = q_map.get(r.get('question_id', ''), {})
+                correct_ans = q.get('correct_answer', q.get('a', -1))
+                selected = r.get('selected_option', -1)
+                r['correct'] = (selected == correct_ans) if selected >= 0 else False
 
         # Compute theta using MLE
         theta = self._estimate_theta_mle(responses, q_map)

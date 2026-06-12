@@ -1,7 +1,7 @@
 {
   "level": 4,
   "grade_band": "5-6",
-  "total_questions": 229,
+  "total_questions": 225,
   "questions": [
     {
       "id": "wb_L4_s04_q01",
@@ -16,9 +16,10 @@
         "3/4, 1/2, 7/8, 5/6",
         "7/8, 5/6, 1/2, 3/4"
       ],
-      "correct_answer": 3,
+      "correct_answer": 1,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S4"
+      "source": "Wavebook L4 S4",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s04_q03",
@@ -35,7 +36,8 @@
       ],
       "correct_answer": 0,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S4"
+      "source": "Wavebook L4 S4",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s04_q04",
@@ -52,7 +54,10 @@
       ],
       "correct_answer": 2,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S4"
+      "source": "Wavebook L4 S4",
+      "svg": "wb_L4_s04_q04.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 350 80\" width=\"350\" height=\"80\" style=\"font-family:Arial,sans-serif\"><line x1=\"40\" y1=\"40\" x2=\"310\" y2=\"40\" stroke=\"#333\" stroke-width=\"2\"/><polygon points=\"35,40 45,35 45,45\" fill=\"#333\"/><polygon points=\"315,40 305,35 305,45\" fill=\"#333\"/><line x1=\"50.0\" y1=\"34\" x2=\"50.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"50.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">2</text><line x1=\"100.0\" y1=\"34\" x2=\"100.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"100.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">3</text><line x1=\"150.0\" y1=\"34\" x2=\"150.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"150.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">4</text><line x1=\"200.0\" y1=\"34\" x2=\"200.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"200.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">5</text><line x1=\"250.0\" y1=\"34\" x2=\"250.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"250.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">6</text><line x1=\"300.0\" y1=\"34\" x2=\"300.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"300.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">7</text><circle cx=\"100.0\" cy=\"40\" r=\"6\" fill=\"#FF6B35\" stroke=\"#333\" stroke-width=\"1\"/></svg>"
     },
     {
       "id": "wb_L4_s04_q05",
@@ -67,9 +72,13 @@
         "13",
         "25"
       ],
-      "correct_answer": 1,
+      "correct_answer": 2,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S4"
+      "source": "Wavebook L4 S4",
+      "svg": "wb_L4_s04_q05.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg viewBox=\"0 0 230 55\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"30\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"30\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">62</text><circle cx=\"75\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"75\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">37</text><circle cx=\"120\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"120\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">12</text><circle cx=\"165\" cy=\"25\" r=\"18\" fill=\"#FFF3E0\" stroke=\"#F57C00\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"165\" y=\"31\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#F57C00\">?</text></svg>",
+      "visual_alt": "Visual for: What is the next number in the pattern: -62, -37, "
     },
     {
       "id": "wb_L4_s04_q06",
@@ -86,7 +95,8 @@
       ],
       "correct_answer": 0,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S4"
+      "source": "Wavebook L4 S4",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s04_q09",
@@ -103,7 +113,8 @@
       ],
       "correct_answer": 2,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S4"
+      "source": "Wavebook L4 S4",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s04_q10",
@@ -120,7 +131,8 @@
       ],
       "correct_answer": 3,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S4"
+      "source": "Wavebook L4 S4",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s04_q11",
@@ -137,7 +149,9 @@
       ],
       "correct_answer": 1,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S4"
+      "source": "Wavebook L4 S4",
+      "svg": "wb_L4_s04_q11.svg",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s04_q12",
@@ -147,14 +161,15 @@
       "difficulty_tier": "challenge",
       "question_number": 12,
       "choices": [
-        "180, 30",
+        "180, 60",
         "120, 40",
         "200, 40",
         "160, 80"
       ],
       "correct_answer": 0,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S4"
+      "source": "Wavebook L4 S4",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s04_q13",
@@ -171,7 +186,8 @@
       ],
       "correct_answer": 3,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S4"
+      "source": "Wavebook L4 S4",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s04_q14",
@@ -188,11 +204,12 @@
       ],
       "correct_answer": 2,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S4"
+      "source": "Wavebook L4 S4",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s04_q15",
-      "stem": "What is the value of (-1) \u00d7 (-1) \u00d7 (-1) \u00d7 ... (2023 times) + (-1) \u00d7 (-1) \u00d7 (-1) \u00d7 ... (2024 times)?",
+      "stem": "What is the value of (-1) × (-1) × (-1) × ... (2023 times) + (-1) × (-1) × (-1) × ... (2024 times)?",
       "interaction_mode": "mcq",
       "topic": "Integers and Fractions",
       "difficulty_tier": "challenge",
@@ -205,7 +222,8 @@
       ],
       "correct_answer": 3,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S4"
+      "source": "Wavebook L4 S4",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s07_q01",
@@ -222,7 +240,8 @@
       ],
       "correct_answer": 1,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S7"
+      "source": "Wavebook L4 S7",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s07_q02",
@@ -239,7 +258,8 @@
       ],
       "correct_answer": 0,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S7"
+      "source": "Wavebook L4 S7",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s07_q04",
@@ -256,7 +276,9 @@
       ],
       "correct_answer": 0,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S7"
+      "source": "Wavebook L4 S7",
+      "svg": "wb_L4_s07_q04.svg",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s07_q07",
@@ -273,7 +295,8 @@
       ],
       "correct_answer": 0,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S7"
+      "source": "Wavebook L4 S7",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s07_q08",
@@ -290,7 +313,8 @@
       ],
       "correct_answer": 2,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S7"
+      "source": "Wavebook L4 S7",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s07_q09",
@@ -303,11 +327,12 @@
         "10000",
         "11016",
         "11106",
-        "11106"
+        "11116"
       ],
-      "correct_answer": 3,
+      "correct_answer": 2,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S7"
+      "source": "Wavebook L4 S7",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s07_q11",
@@ -320,11 +345,12 @@
         "1034",
         "1044",
         "1144",
-        "1044"
+        "1054"
       ],
       "correct_answer": 3,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S7"
+      "source": "Wavebook L4 S7",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s07_q13",
@@ -341,7 +367,9 @@
       ],
       "correct_answer": 1,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S7"
+      "source": "Wavebook L4 S7",
+      "svg": "wb_L4_s07_q13.svg",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s07_q15",
@@ -358,11 +386,12 @@
       ],
       "correct_answer": 0,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S7"
+      "source": "Wavebook L4 S7",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s13_q04",
-      "stem": "In a 3\u00d73 magic square with magic constant 15, if the center is 5, what is the corner value opposite to 2?",
+      "stem": "In a 3×3 magic square with magic constant 15, if the center is 5, what is the corner value opposite to 2?",
       "interaction_mode": "mcq",
       "topic": "Magic Squares and Money",
       "difficulty_tier": "warmup",
@@ -375,7 +404,9 @@
       ],
       "correct_answer": 0,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S13"
+      "source": "Wavebook L4 S13",
+      "svg": "wb_L4_s13_q04.svg",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s13_q05",
@@ -392,7 +423,9 @@
       ],
       "correct_answer": 3,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S13"
+      "source": "Wavebook L4 S13",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 236 110\" width=\"236\" height=\"110\" style=\"font-family:Arial,sans-serif\"><circle cx=\"55\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"55\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"55\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">₹</text><text x=\"55\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"117\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"117\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"117\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">₹</text><text x=\"117\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"179\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"179\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"179\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">₹</text><text x=\"179\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text></svg>"
     },
     {
       "id": "wb_L4_s13_q06",
@@ -409,11 +442,13 @@
       ],
       "correct_answer": 1,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S13"
+      "source": "Wavebook L4 S13",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 546 110\" width=\"546\" height=\"110\" style=\"font-family:Arial,sans-serif\"><circle cx=\"55\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"55\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"55\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">₹</text><text x=\"55\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"117\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"117\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"117\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">₹</text><text x=\"117\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"179\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"179\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"179\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">₹</text><text x=\"179\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"241\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"241\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"241\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">₹</text><text x=\"241\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"303\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"303\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"303\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">₹</text><text x=\"303\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"365\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"365\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"365\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">₹</text><text x=\"365\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"427\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"427\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"427\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">₹</text><text x=\"427\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"489\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"489\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"489\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">₹</text><text x=\"489\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text></svg>"
     },
     {
       "id": "wb_L4_s13_q07",
-      "stem": "In a 3\u00d73 magic square with numbers 1-9, if the magic constant is 15, what number is in the center?",
+      "stem": "In a 3×3 magic square with numbers 1-9, if the magic constant is 15, what number is in the center?",
       "interaction_mode": "mcq",
       "topic": "Magic Squares and Money",
       "difficulty_tier": "practice",
@@ -426,7 +461,9 @@
       ],
       "correct_answer": 0,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S13"
+      "source": "Wavebook L4 S13",
+      "svg": "wb_L4_s13_q07.svg",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s13_q08",
@@ -443,7 +480,9 @@
       ],
       "correct_answer": 2,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S13"
+      "source": "Wavebook L4 S13",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 546 110\" width=\"546\" height=\"110\" style=\"font-family:Arial,sans-serif\"><circle cx=\"55\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"55\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"55\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">₹</text><text x=\"55\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"117\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"117\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"117\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">₹</text><text x=\"117\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"179\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"179\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"179\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">₹</text><text x=\"179\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"241\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"241\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"241\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">₹</text><text x=\"241\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"303\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"303\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"303\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">₹</text><text x=\"303\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"365\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"365\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"365\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">₹</text><text x=\"365\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"427\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"427\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"427\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">₹</text><text x=\"427\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text><circle cx=\"489\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"489\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"489\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">₹</text><text x=\"489\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text></svg>"
     },
     {
       "id": "wb_L4_s13_q09",
@@ -460,11 +499,12 @@
       ],
       "correct_answer": 2,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S13"
+      "source": "Wavebook L4 S13",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s13_q10",
-      "stem": "In a 4\u00d74 magic square, if the magic constant is 34, what is the sum of all numbers used?",
+      "stem": "In a 4×4 magic square, if the magic constant is 34, what is the sum of all numbers used?",
       "interaction_mode": "mcq",
       "topic": "Magic Squares and Money",
       "difficulty_tier": "practice",
@@ -477,7 +517,9 @@
       ],
       "correct_answer": 3,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S13"
+      "source": "Wavebook L4 S13",
+      "svg": "wb_L4_s13_q10.svg",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s13_q11",
@@ -489,16 +531,17 @@
       "choices": [
         "Rs. 85",
         "Rs. 95",
-        "Rs. 95",
+        "None of these",
         "Rs. 105"
       ],
       "correct_answer": 2,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S13"
+      "source": "Wavebook L4 S13",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s13_q14",
-      "stem": "If the magic constant of a 3\u00d73 magic square is 21, what is the middle element?",
+      "stem": "If the magic constant of a 3×3 magic square is 21, what is the middle element?",
       "interaction_mode": "mcq",
       "topic": "Magic Squares and Money",
       "difficulty_tier": "challenge",
@@ -511,7 +554,9 @@
       ],
       "correct_answer": 0,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S13"
+      "source": "Wavebook L4 S13",
+      "svg": "wb_L4_s13_q14.svg",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s13_q15",
@@ -528,11 +573,13 @@
       ],
       "correct_answer": 2,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S13"
+      "source": "Wavebook L4 S13",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 200 110\" width=\"200\" height=\"110\" style=\"font-family:Arial,sans-serif\"><circle cx=\"55\" cy=\"55\" r=\"28\" fill=\"#FFD700\" stroke=\"#B8860B\" stroke-width=\"2\"/><circle cx=\"55\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#B8860B\" stroke-width=\"0.8\"/><text x=\"55\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#8B6914\">₹</text><text x=\"55\" y=\"67\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#8B6914\">1</text></svg>"
     },
     {
       "id": "wb_L4_s15_q01",
-      "stem": "An angle that measures more than 180\u00b0 but less than 360\u00b0 is called a:",
+      "stem": "An angle that measures more than 180° but less than 360° is called a:",
       "interaction_mode": "mcq",
       "topic": "Geometry - Angles and Lines",
       "difficulty_tier": "warmup",
@@ -545,41 +592,44 @@
       ],
       "correct_answer": 3,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S15"
+      "source": "Wavebook L4 S15",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s15_q02",
-      "stem": "The complement of 35\u00b0 is:",
+      "stem": "The complement of 35° is:",
       "interaction_mode": "mcq",
       "topic": "Geometry - Angles and Lines",
       "difficulty_tier": "warmup",
       "question_number": 2,
       "choices": [
-        "55\u00b0",
-        "145\u00b0",
-        "65\u00b0",
-        "125\u00b0"
+        "55°",
+        "145°",
+        "65°",
+        "125°"
       ],
       "correct_answer": 0,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S15"
+      "source": "Wavebook L4 S15",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s15_q03",
-      "stem": "Two angles are supplementary. If one angle is 110\u00b0, what is the other?",
+      "stem": "Two angles are supplementary. If one angle is 110°, what is the other?",
       "interaction_mode": "mcq",
       "topic": "Geometry - Angles and Lines",
       "difficulty_tier": "warmup",
       "question_number": 3,
       "choices": [
-        "70\u00b0",
-        "80\u00b0",
-        "90\u00b0",
-        "60\u00b0"
+        "70°",
+        "80°",
+        "90°",
+        "60°"
       ],
       "correct_answer": 0,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S15"
+      "source": "Wavebook L4 S15",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s15_q04",
@@ -596,7 +646,8 @@
       ],
       "correct_answer": 1,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S15"
+      "source": "Wavebook L4 S15",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s15_q05",
@@ -606,31 +657,35 @@
       "difficulty_tier": "warmup",
       "question_number": 5,
       "choices": [
-        "60\u00b0",
-        "120\u00b0",
-        "90\u00b0",
-        "180\u00b0"
+        "60°",
+        "120°",
+        "90°",
+        "180°"
       ],
       "correct_answer": 2,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S15"
+      "source": "Wavebook L4 S15",
+      "svg": "wb_L4_s15_q05.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 200 200\" width=\"200\" height=\"200\" style=\"font-family:Arial,sans-serif\"><circle cx=\"100\" cy=\"100\" r=\"80\" fill=\"white\" stroke=\"#333\" stroke-width=\"3\"/><line x1=\"100.0\" y1=\"30.0\" x2=\"100.0\" y2=\"22.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"100.0\" y=\"42.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">12</text><line x1=\"135.0\" y1=\"39.4\" x2=\"139.0\" y2=\"32.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"129.0\" y=\"49.8\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">1</text><line x1=\"160.6\" y1=\"65.0\" x2=\"167.5\" y2=\"61.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"150.2\" y=\"71.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">2</text><line x1=\"170.0\" y1=\"100.0\" x2=\"178.0\" y2=\"100.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"158.0\" y=\"100.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">3</text><line x1=\"160.6\" y1=\"135.0\" x2=\"167.5\" y2=\"139.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"150.2\" y=\"129.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">4</text><line x1=\"135.0\" y1=\"160.6\" x2=\"139.0\" y2=\"167.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"129.0\" y=\"150.2\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">5</text><line x1=\"100.0\" y1=\"170.0\" x2=\"100.0\" y2=\"178.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"100.0\" y=\"158.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">6</text><line x1=\"65.0\" y1=\"160.6\" x2=\"61.0\" y2=\"167.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"71.0\" y=\"150.2\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">7</text><line x1=\"39.4\" y1=\"135.0\" x2=\"32.5\" y2=\"139.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"49.8\" y=\"129.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">8</text><line x1=\"30.0\" y1=\"100.0\" x2=\"22.0\" y2=\"100.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"42.0\" y=\"100.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">9</text><line x1=\"39.4\" y1=\"65.0\" x2=\"32.5\" y2=\"61.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"49.8\" y=\"71.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">10</text><line x1=\"65.0\" y1=\"39.4\" x2=\"61.0\" y2=\"32.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"71.0\" y=\"49.8\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">11</text><line x1=\"100\" y1=\"100\" x2=\"145.0\" y2=\"100.0\" stroke=\"#333\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"100\" y1=\"100\" x2=\"100.0\" y2=\"35.0\" stroke=\"#555\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><circle cx=\"100\" cy=\"100\" r=\"4\" fill=\"#333\"/></svg>"
     },
     {
       "id": "wb_L4_s15_q06",
-      "stem": "An angle is 20\u00b0 more than its complement. The angle is:",
+      "stem": "An angle is 20° more than its complement. The angle is:",
       "interaction_mode": "mcq",
       "topic": "Geometry - Angles and Lines",
       "difficulty_tier": "practice",
       "question_number": 6,
       "choices": [
-        "35\u00b0",
-        "45\u00b0",
-        "55\u00b0",
-        "65\u00b0"
+        "35°",
+        "45°",
+        "55°",
+        "65°"
       ],
       "correct_answer": 2,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S15"
+      "source": "Wavebook L4 S15",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s15_q07",
@@ -640,14 +695,15 @@
       "difficulty_tier": "practice",
       "question_number": 7,
       "choices": [
-        "45\u00b0",
-        "60\u00b0",
-        "90\u00b0",
-        "180\u00b0"
+        "45°",
+        "60°",
+        "90°",
+        "180°"
       ],
       "correct_answer": 2,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S15"
+      "source": "Wavebook L4 S15",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s15_q08",
@@ -664,7 +720,9 @@
       ],
       "correct_answer": 3,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S15"
+      "source": "Wavebook L4 S15",
+      "svg": "wb_L4_s15_q08.svg",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s15_q09",
@@ -674,14 +732,15 @@
       "difficulty_tier": "practice",
       "question_number": 9,
       "choices": [
-        "45\u00b0",
-        "90\u00b0",
-        "135\u00b0",
-        "180\u00b0"
+        "45°",
+        "90°",
+        "135°",
+        "180°"
       ],
       "correct_answer": 1,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S15"
+      "source": "Wavebook L4 S15",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s15_q10",
@@ -691,14 +750,15 @@
       "difficulty_tier": "practice",
       "question_number": 10,
       "choices": [
-        "60\u00b0",
-        "90\u00b0",
-        "105\u00b0",
-        "120\u00b0"
+        "60°",
+        "90°",
+        "105°",
+        "120°"
       ],
       "correct_answer": 3,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S15"
+      "source": "Wavebook L4 S15",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s15_q11",
@@ -708,14 +768,15 @@
       "difficulty_tier": "challenge",
       "question_number": 11,
       "choices": [
-        "45\u00b0",
-        "60\u00b0",
-        "80\u00b0",
-        "90\u00b0"
+        "45°",
+        "60°",
+        "80°",
+        "90°"
       ],
       "correct_answer": 3,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S15"
+      "source": "Wavebook L4 S15",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s15_q12",
@@ -732,7 +793,9 @@
       ],
       "correct_answer": 2,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S15"
+      "source": "Wavebook L4 S15",
+      "svg": "wb_L4_s15_q12.svg",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s15_q13",
@@ -742,31 +805,34 @@
       "difficulty_tier": "challenge",
       "question_number": 13,
       "choices": [
-        "90\u00b0",
-        "180\u00b0",
-        "270\u00b0",
-        "360\u00b0"
+        "90°",
+        "180°",
+        "270°",
+        "360°"
       ],
       "correct_answer": 0,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S15"
+      "source": "Wavebook L4 S15",
+      "svg": "wb_L4_s15_q13.svg",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s15_q14",
-      "stem": "If one angle of a linear pair is 65\u00b0, the other angle is:",
+      "stem": "If one angle of a linear pair is 65°, the other angle is:",
       "interaction_mode": "mcq",
       "topic": "Geometry - Angles and Lines",
       "difficulty_tier": "challenge",
       "question_number": 14,
       "choices": [
-        "65\u00b0",
-        "115\u00b0",
-        "125\u00b0",
-        "135\u00b0"
+        "65°",
+        "115°",
+        "125°",
+        "135°"
       ],
       "correct_answer": 1,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S15"
+      "source": "Wavebook L4 S15",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s15_q15",
@@ -776,14 +842,15 @@
       "difficulty_tier": "challenge",
       "question_number": 15,
       "choices": [
-        "90\u00b0",
-        "180\u00b0",
-        "270\u00b0",
-        "360\u00b0"
+        "90°",
+        "180°",
+        "270°",
+        "360°"
       ],
       "correct_answer": 3,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S15"
+      "source": "Wavebook L4 S15",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s20_q01",
@@ -800,7 +867,8 @@
       ],
       "correct_answer": 0,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S20"
+      "source": "Wavebook L4 S20",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s20_q02",
@@ -817,7 +885,8 @@
       ],
       "correct_answer": 1,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S20"
+      "source": "Wavebook L4 S20",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s20_q03",
@@ -834,7 +903,8 @@
       ],
       "correct_answer": 2,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S20"
+      "source": "Wavebook L4 S20",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s20_q04",
@@ -851,7 +921,8 @@
       ],
       "correct_answer": 0,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S20"
+      "source": "Wavebook L4 S20",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s20_q05",
@@ -861,14 +932,17 @@
       "difficulty_tier": "warmup",
       "question_number": 5,
       "choices": [
-        "25\u00b0",
-        "90\u00b0",
-        "120\u00b0",
-        "180\u00b0"
+        "25°",
+        "90°",
+        "120°",
+        "180°"
       ],
       "correct_answer": 1,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S20"
+      "source": "Wavebook L4 S20",
+      "svg": "wb_L4_s20_q05.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 240\" width=\"340\" height=\"240\" style=\"font-family:Arial,sans-serif\"><path d=\"M130,120 L130.0,40.0 A80,80 0 0 1 177.0,184.7 Z\" fill=\"#42A5F5\" stroke=\"white\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"40\" width=\"12\" height=\"12\" fill=\"#42A5F5\"/><text x=\"258\" y=\"50\" font-size=\"11\" fill=\"#333\">Part A</text><path d=\"M130,120 L177.0,184.7 A80,80 0 0 1 53.9,144.7 Z\" fill=\"#66BB6A\" stroke=\"white\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"60\" width=\"12\" height=\"12\" fill=\"#66BB6A\"/><text x=\"258\" y=\"70\" font-size=\"11\" fill=\"#333\">Part B</text><path d=\"M130,120 L53.9,144.7 A80,80 0 0 1 83.0,55.3 Z\" fill=\"#FF7043\" stroke=\"white\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"80\" width=\"12\" height=\"12\" fill=\"#FF7043\"/><text x=\"258\" y=\"90\" font-size=\"11\" fill=\"#333\">Part C</text><path d=\"M130,120 L83.0,55.3 A80,80 0 0 1 130.0,40.0 Z\" fill=\"#AB47BC\" stroke=\"white\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"100\" width=\"12\" height=\"12\" fill=\"#AB47BC\"/><text x=\"258\" y=\"110\" font-size=\"11\" fill=\"#333\">Part D</text></svg>"
     },
     {
       "id": "wb_L4_s20_q06",
@@ -885,11 +959,13 @@
       ],
       "correct_answer": 2,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S20"
+      "source": "Wavebook L4 S20",
+      "svg": "wb_L4_s20_q06.svg",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s20_q07",
-      "stem": "In a pie chart, if a sector has a central angle of 72\u00b0, what percentage does it represent?",
+      "stem": "In a pie chart, if a sector has a central angle of 72°, what percentage does it represent?",
       "interaction_mode": "mcq",
       "topic": "Average and Pie Chart",
       "difficulty_tier": "practice",
@@ -902,7 +978,10 @@
       ],
       "correct_answer": 3,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S20"
+      "source": "Wavebook L4 S20",
+      "svg": "wb_L4_s20_q07.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 240\" width=\"340\" height=\"240\" style=\"font-family:Arial,sans-serif\"><path d=\"M130,120 L130.0,40.0 A80,80 0 0 1 177.0,184.7 Z\" fill=\"#42A5F5\" stroke=\"white\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"40\" width=\"12\" height=\"12\" fill=\"#42A5F5\"/><text x=\"258\" y=\"50\" font-size=\"11\" fill=\"#333\">Part A</text><path d=\"M130,120 L177.0,184.7 A80,80 0 0 1 53.9,144.7 Z\" fill=\"#66BB6A\" stroke=\"white\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"60\" width=\"12\" height=\"12\" fill=\"#66BB6A\"/><text x=\"258\" y=\"70\" font-size=\"11\" fill=\"#333\">Part B</text><path d=\"M130,120 L53.9,144.7 A80,80 0 0 1 83.0,55.3 Z\" fill=\"#FF7043\" stroke=\"white\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"80\" width=\"12\" height=\"12\" fill=\"#FF7043\"/><text x=\"258\" y=\"90\" font-size=\"11\" fill=\"#333\">Part C</text><path d=\"M130,120 L83.0,55.3 A80,80 0 0 1 130.0,40.0 Z\" fill=\"#AB47BC\" stroke=\"white\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"100\" width=\"12\" height=\"12\" fill=\"#AB47BC\"/><text x=\"258\" y=\"110\" font-size=\"11\" fill=\"#333\">Part D</text></svg>"
     },
     {
       "id": "wb_L4_s20_q08",
@@ -919,11 +998,12 @@
       ],
       "correct_answer": 2,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S20"
+      "source": "Wavebook L4 S20",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s20_q09",
-      "stem": "In a pie chart showing monthly expenses, if food takes up 120\u00b0 and rent takes up 90\u00b0, what fraction of the total does food represent?",
+      "stem": "In a pie chart showing monthly expenses, if food takes up 120° and rent takes up 90°, what fraction of the total does food represent?",
       "interaction_mode": "mcq",
       "topic": "Average and Pie Chart",
       "difficulty_tier": "practice",
@@ -936,7 +1016,10 @@
       ],
       "correct_answer": 3,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S20"
+      "source": "Wavebook L4 S20",
+      "svg": "wb_L4_s20_q09.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 240\" width=\"340\" height=\"240\" style=\"font-family:Arial,sans-serif\"><path d=\"M130,120 L130.0,40.0 A80,80 0 0 1 199.3,160.0 Z\" fill=\"#42A5F5\" stroke=\"white\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"40\" width=\"12\" height=\"12\" fill=\"#42A5F5\"/><text x=\"258\" y=\"50\" font-size=\"11\" fill=\"#333\">food</text><path d=\"M130,120 L199.3,160.0 A80,80 0 0 1 90.0,189.3 Z\" fill=\"#66BB6A\" stroke=\"white\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"60\" width=\"12\" height=\"12\" fill=\"#66BB6A\"/><text x=\"258\" y=\"70\" font-size=\"11\" fill=\"#333\">rent</text><path d=\"M130,120 L90.0,189.3 A80,80 0 0 1 130.0,40.0 Z\" fill=\"#FF7043\" stroke=\"white\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"80\" width=\"12\" height=\"12\" fill=\"#FF7043\"/><text x=\"258\" y=\"90\" font-size=\"11\" fill=\"#333\">Other</text></svg>"
     },
     {
       "id": "wb_L4_s20_q10",
@@ -953,7 +1036,8 @@
       ],
       "correct_answer": 3,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S20"
+      "source": "Wavebook L4 S20",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s20_q11",
@@ -963,14 +1047,17 @@
       "difficulty_tier": "challenge",
       "question_number": 11,
       "choices": [
-        "180\u00b0",
-        "270\u00b0",
-        "360\u00b0",
-        "90\u00b0"
+        "180°",
+        "270°",
+        "360°",
+        "90°"
       ],
       "correct_answer": 2,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S20"
+      "source": "Wavebook L4 S20",
+      "svg": "wb_L4_s20_q11.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 240\" width=\"340\" height=\"240\" style=\"font-family:Arial,sans-serif\"><path d=\"M130,120 L130.0,40.0 A80,80 0 0 1 177.0,184.7 Z\" fill=\"#42A5F5\" stroke=\"white\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"40\" width=\"12\" height=\"12\" fill=\"#42A5F5\"/><text x=\"258\" y=\"50\" font-size=\"11\" fill=\"#333\">Part A</text><path d=\"M130,120 L177.0,184.7 A80,80 0 0 1 53.9,144.7 Z\" fill=\"#66BB6A\" stroke=\"white\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"60\" width=\"12\" height=\"12\" fill=\"#66BB6A\"/><text x=\"258\" y=\"70\" font-size=\"11\" fill=\"#333\">Part B</text><path d=\"M130,120 L53.9,144.7 A80,80 0 0 1 83.0,55.3 Z\" fill=\"#FF7043\" stroke=\"white\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"80\" width=\"12\" height=\"12\" fill=\"#FF7043\"/><text x=\"258\" y=\"90\" font-size=\"11\" fill=\"#333\">Part C</text><path d=\"M130,120 L83.0,55.3 A80,80 0 0 1 130.0,40.0 Z\" fill=\"#AB47BC\" stroke=\"white\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"100\" width=\"12\" height=\"12\" fill=\"#AB47BC\"/><text x=\"258\" y=\"110\" font-size=\"11\" fill=\"#333\">Part D</text></svg>"
     },
     {
       "id": "wb_L4_s20_q12",
@@ -987,7 +1074,8 @@
       ],
       "correct_answer": 0,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S20"
+      "source": "Wavebook L4 S20",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s20_q13",
@@ -1004,11 +1092,12 @@
       ],
       "correct_answer": 1,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S20"
+      "source": "Wavebook L4 S20",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s20_q14",
-      "stem": "In a pie chart, if 'games' is represented by a sector of 54\u00b0, and total students are 400, how many students chose games?",
+      "stem": "In a pie chart, if 'games' is represented by a sector of 54°, and total students are 400, how many students chose games?",
       "interaction_mode": "mcq",
       "topic": "Average and Pie Chart",
       "difficulty_tier": "challenge",
@@ -1021,7 +1110,10 @@
       ],
       "correct_answer": 3,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S20"
+      "source": "Wavebook L4 S20",
+      "svg": "wb_L4_s20_q14.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 240\" width=\"340\" height=\"240\" style=\"font-family:Arial,sans-serif\"><path d=\"M130,120 L130.0,40.0 A80,80 0 0 1 177.0,184.7 Z\" fill=\"#42A5F5\" stroke=\"white\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"40\" width=\"12\" height=\"12\" fill=\"#42A5F5\"/><text x=\"258\" y=\"50\" font-size=\"11\" fill=\"#333\">Part A</text><path d=\"M130,120 L177.0,184.7 A80,80 0 0 1 53.9,144.7 Z\" fill=\"#66BB6A\" stroke=\"white\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"60\" width=\"12\" height=\"12\" fill=\"#66BB6A\"/><text x=\"258\" y=\"70\" font-size=\"11\" fill=\"#333\">Part B</text><path d=\"M130,120 L53.9,144.7 A80,80 0 0 1 83.0,55.3 Z\" fill=\"#FF7043\" stroke=\"white\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"80\" width=\"12\" height=\"12\" fill=\"#FF7043\"/><text x=\"258\" y=\"90\" font-size=\"11\" fill=\"#333\">Part C</text><path d=\"M130,120 L83.0,55.3 A80,80 0 0 1 130.0,40.0 Z\" fill=\"#AB47BC\" stroke=\"white\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"100\" width=\"12\" height=\"12\" fill=\"#AB47BC\"/><text x=\"258\" y=\"110\" font-size=\"11\" fill=\"#333\">Part D</text></svg>"
     },
     {
       "id": "wb_L4_s20_q15",
@@ -1038,7 +1130,8 @@
       ],
       "correct_answer": 1,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S20"
+      "source": "Wavebook L4 S20",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s21_q01",
@@ -1055,7 +1148,8 @@
       ],
       "correct_answer": 3,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S21"
+      "source": "Wavebook L4 S21",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s21_q02",
@@ -1072,7 +1166,8 @@
       ],
       "correct_answer": 2,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S21"
+      "source": "Wavebook L4 S21",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s21_q03",
@@ -1089,7 +1184,8 @@
       ],
       "correct_answer": 3,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S21"
+      "source": "Wavebook L4 S21",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s21_q04",
@@ -1106,7 +1202,10 @@
       ],
       "correct_answer": 1,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S21"
+      "source": "Wavebook L4 S21",
+      "svg": "wb_L4_s21_q04.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 350 220\" width=\"350\" height=\"220\" style=\"font-family:Arial,sans-serif\"><line x1=\"60\" y1=\"30\" x2=\"60\" y2=\"180\" stroke=\"#333\" stroke-width=\"1.5\"/><line x1=\"60\" y1=\"180\" x2=\"340\" y2=\"180\" stroke=\"#333\" stroke-width=\"1.5\"/><line x1=\"60\" y1=\"180.0\" x2=\"340\" y2=\"180.0\" stroke=\"#eee\" stroke-width=\"1\"/><text x=\"52\" y=\"184.0\" text-anchor=\"end\" font-size=\"10\" fill=\"#666\">0</text><line x1=\"60\" y1=\"142.5\" x2=\"340\" y2=\"142.5\" stroke=\"#eee\" stroke-width=\"1\"/><text x=\"52\" y=\"146.5\" text-anchor=\"end\" font-size=\"10\" fill=\"#666\">2</text><line x1=\"60\" y1=\"105.0\" x2=\"340\" y2=\"105.0\" stroke=\"#eee\" stroke-width=\"1\"/><text x=\"52\" y=\"109.0\" text-anchor=\"end\" font-size=\"10\" fill=\"#666\">4</text><line x1=\"60\" y1=\"67.5\" x2=\"340\" y2=\"67.5\" stroke=\"#eee\" stroke-width=\"1\"/><text x=\"52\" y=\"71.5\" text-anchor=\"end\" font-size=\"10\" fill=\"#666\">6</text><line x1=\"60\" y1=\"30.0\" x2=\"340\" y2=\"30.0\" stroke=\"#eee\" stroke-width=\"1\"/><text x=\"52\" y=\"34.0\" text-anchor=\"end\" font-size=\"10\" fill=\"#666\">8</text><rect x=\"75.0\" y=\"86.2\" width=\"40.0\" height=\"93.8\" fill=\"#42A5F5\" rx=\"2\"/><text x=\"95.0\" y=\"194\" text-anchor=\"middle\" font-size=\"9\" fill=\"#333\">A</text><text x=\"95.0\" y=\"82.2\" text-anchor=\"middle\" font-size=\"10\" fill=\"#333\">5</text><rect x=\"127.0\" y=\"30.0\" width=\"40.0\" height=\"150.0\" fill=\"#66BB6A\" rx=\"2\"/><text x=\"147.0\" y=\"194\" text-anchor=\"middle\" font-size=\"9\" fill=\"#333\">B</text><text x=\"147.0\" y=\"26.0\" text-anchor=\"middle\" font-size=\"10\" fill=\"#333\">8</text><rect x=\"179.0\" y=\"123.8\" width=\"40.0\" height=\"56.2\" fill=\"#FF7043\" rx=\"2\"/><text x=\"199.0\" y=\"194\" text-anchor=\"middle\" font-size=\"9\" fill=\"#333\">C</text><text x=\"199.0\" y=\"119.8\" text-anchor=\"middle\" font-size=\"10\" fill=\"#333\">3</text></svg>"
     },
     {
       "id": "wb_L4_s21_q05",
@@ -1123,7 +1222,8 @@
       ],
       "correct_answer": 3,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S21"
+      "source": "Wavebook L4 S21",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s21_q06",
@@ -1140,7 +1240,8 @@
       ],
       "correct_answer": 3,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S21"
+      "source": "Wavebook L4 S21",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s21_q07",
@@ -1157,7 +1258,8 @@
       ],
       "correct_answer": 3,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S21"
+      "source": "Wavebook L4 S21",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s21_q09",
@@ -1174,7 +1276,8 @@
       ],
       "correct_answer": 1,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S21"
+      "source": "Wavebook L4 S21",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s21_q10",
@@ -1191,7 +1294,8 @@
       ],
       "correct_answer": 0,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S21"
+      "source": "Wavebook L4 S21",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s21_q11",
@@ -1208,7 +1312,8 @@
       ],
       "correct_answer": 0,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S21"
+      "source": "Wavebook L4 S21",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s21_q12",
@@ -1225,7 +1330,8 @@
       ],
       "correct_answer": 1,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S21"
+      "source": "Wavebook L4 S21",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s21_q13",
@@ -1242,7 +1348,9 @@
       ],
       "correct_answer": 3,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S21"
+      "source": "Wavebook L4 S21",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 350 220\" width=\"350\" height=\"220\" style=\"font-family:Arial,sans-serif\"><text x=\"175\" y=\"18\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#333\">Graph</text><line x1=\"60\" y1=\"30\" x2=\"60\" y2=\"180\" stroke=\"#333\" stroke-width=\"1.5\"/><line x1=\"60\" y1=\"180\" x2=\"340\" y2=\"180\" stroke=\"#333\" stroke-width=\"1.5\"/><line x1=\"60\" y1=\"180.0\" x2=\"340\" y2=\"180.0\" stroke=\"#eee\" stroke-width=\"1\"/><text x=\"52\" y=\"184.0\" text-anchor=\"end\" font-size=\"10\" fill=\"#666\">0</text><line x1=\"60\" y1=\"142.5\" x2=\"340\" y2=\"142.5\" stroke=\"#eee\" stroke-width=\"1\"/><text x=\"52\" y=\"146.5\" text-anchor=\"end\" font-size=\"10\" fill=\"#666\">2</text><line x1=\"60\" y1=\"105.0\" x2=\"340\" y2=\"105.0\" stroke=\"#eee\" stroke-width=\"1\"/><text x=\"52\" y=\"109.0\" text-anchor=\"end\" font-size=\"10\" fill=\"#666\">4</text><line x1=\"60\" y1=\"67.5\" x2=\"340\" y2=\"67.5\" stroke=\"#eee\" stroke-width=\"1\"/><text x=\"52\" y=\"71.5\" text-anchor=\"end\" font-size=\"10\" fill=\"#666\">6</text><line x1=\"60\" y1=\"30.0\" x2=\"340\" y2=\"30.0\" stroke=\"#eee\" stroke-width=\"1\"/><text x=\"52\" y=\"34.0\" text-anchor=\"end\" font-size=\"10\" fill=\"#666\">8</text><rect x=\"75.0\" y=\"86.2\" width=\"40.0\" height=\"93.8\" fill=\"#42A5F5\" rx=\"2\"/><text x=\"95.0\" y=\"194\" text-anchor=\"middle\" font-size=\"9\" fill=\"#333\">A</text><text x=\"95.0\" y=\"82.2\" text-anchor=\"middle\" font-size=\"10\" fill=\"#333\">5</text><rect x=\"127.0\" y=\"30.0\" width=\"40.0\" height=\"150.0\" fill=\"#66BB6A\" rx=\"2\"/><text x=\"147.0\" y=\"194\" text-anchor=\"middle\" font-size=\"9\" fill=\"#333\">B</text><text x=\"147.0\" y=\"26.0\" text-anchor=\"middle\" font-size=\"10\" fill=\"#333\">8</text><rect x=\"179.0\" y=\"123.8\" width=\"40.0\" height=\"56.2\" fill=\"#FF7043\" rx=\"2\"/><text x=\"199.0\" y=\"194\" text-anchor=\"middle\" font-size=\"9\" fill=\"#333\">C</text><text x=\"199.0\" y=\"119.8\" text-anchor=\"middle\" font-size=\"10\" fill=\"#333\">3</text></svg>"
     },
     {
       "id": "wb_L4_s21_q14",
@@ -1259,11 +1367,12 @@
       ],
       "correct_answer": 2,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S21"
+      "source": "Wavebook L4 S21",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s22_q01",
-      "stem": "The coefficient of x in the expression 5x\u00b2 - 3x + 7 is:",
+      "stem": "The coefficient of x in the expression 5x² - 3x + 7 is:",
       "interaction_mode": "mcq",
       "topic": "Algebra",
       "difficulty_tier": "warmup",
@@ -1276,7 +1385,8 @@
       ],
       "correct_answer": 2,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S22"
+      "source": "Wavebook L4 S22",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s22_q02",
@@ -1293,7 +1403,8 @@
       ],
       "correct_answer": 0,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S22"
+      "source": "Wavebook L4 S22",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s22_q03",
@@ -1303,14 +1414,15 @@
       "difficulty_tier": "warmup",
       "question_number": 3,
       "choices": [
-        "-15y\u00b2",
-        "-15xy\u00b2",
+        "-15y²",
+        "-15xy²",
         "15xy",
         "-15xy"
       ],
       "correct_answer": 1,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S22"
+      "source": "Wavebook L4 S22",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s22_q04",
@@ -1320,18 +1432,19 @@
       "difficulty_tier": "warmup",
       "question_number": 4,
       "choices": [
-        "3x\u00b2y",
+        "3x²y",
         "x + y",
         "2x + 3y + 1",
         "a - b"
       ],
       "correct_answer": 0,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S22"
+      "source": "Wavebook L4 S22",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s22_q05",
-      "stem": "The degree of the polynomial 4x\u00b3 - 2x\u00b2 + x - 7 is:",
+      "stem": "The degree of the polynomial 4x³ - 2x² + x - 7 is:",
       "interaction_mode": "mcq",
       "topic": "Algebra",
       "difficulty_tier": "warmup",
@@ -1344,11 +1457,12 @@
       ],
       "correct_answer": 1,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S22"
+      "source": "Wavebook L4 S22",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s23_q01",
-      "stem": "The number of terms in the expression 3x\u00b2 + 5xy - 4y + 7 is:",
+      "stem": "The number of terms in the expression 3x² + 5xy - 4y + 7 is:",
       "interaction_mode": "mcq",
       "topic": "Algebra - Expressions",
       "difficulty_tier": "warmup",
@@ -1361,7 +1475,8 @@
       ],
       "correct_answer": 2,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S23"
+      "source": "Wavebook L4 S23",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s23_q02",
@@ -1378,7 +1493,8 @@
       ],
       "correct_answer": 0,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S23"
+      "source": "Wavebook L4 S23",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s23_q03",
@@ -1395,11 +1511,12 @@
       ],
       "correct_answer": 2,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S23"
+      "source": "Wavebook L4 S23",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s23_q05",
-      "stem": "What is the value of 3a\u00b2 - 2a + 1 when a = 2?",
+      "stem": "What is the value of 3a² - 2a + 1 when a = 2?",
       "interaction_mode": "mcq",
       "topic": "Algebra - Expressions",
       "difficulty_tier": "warmup",
@@ -1412,7 +1529,8 @@
       ],
       "correct_answer": 2,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S23"
+      "source": "Wavebook L4 S23",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s23_q15",
@@ -1429,7 +1547,8 @@
       ],
       "correct_answer": 3,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S23"
+      "source": "Wavebook L4 S23",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s26_q01",
@@ -1447,7 +1566,9 @@
       "correct_answer": 3,
       "grade_band": "5-6",
       "source": "Wavebook L4 S26",
-      "svg": "svg/wb_L4_s26_q01.svg"
+      "svg": "svg/wb_L4_s26_q01.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 200\" width=\"300\" height=\"200\" style=\"font-family:Arial,sans-serif\"><polygon points=\"150,20 50,170 250,170\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2.5\"/></svg>"
     },
     {
       "id": "wb_L4_s26_q02",
@@ -1465,7 +1586,9 @@
       "correct_answer": 3,
       "grade_band": "5-6",
       "source": "Wavebook L4 S26",
-      "svg": "svg/wb_L4_s26_q02.svg"
+      "svg": "svg/wb_L4_s26_q02.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 180\" width=\"300\" height=\"180\" style=\"font-family:Arial,sans-serif\"><rect x=\"50\" y=\"30\" width=\"200\" height=\"120\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2.5\" rx=\"2\"/></svg>"
     },
     {
       "id": "wb_L4_s26_q03",
@@ -1483,7 +1606,9 @@
       "correct_answer": 0,
       "grade_band": "5-6",
       "source": "Wavebook L4 S26",
-      "svg": "svg/wb_L4_s26_q03.svg"
+      "svg": "svg/wb_L4_s26_q03.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 180\" width=\"300\" height=\"180\" style=\"font-family:Arial,sans-serif\"><rect x=\"50\" y=\"30\" width=\"200\" height=\"120\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2.5\" rx=\"2\"/></svg>"
     },
     {
       "id": "wb_L4_s26_q04",
@@ -1501,7 +1626,9 @@
       "correct_answer": 2,
       "grade_band": "5-6",
       "source": "Wavebook L4 S26",
-      "svg": "svg/wb_L4_s26_q04.svg"
+      "svg": "svg/wb_L4_s26_q04.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 200\" width=\"300\" height=\"200\" style=\"font-family:Arial,sans-serif\"><polygon points=\"150,20 50,170 250,170\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2.5\"/></svg>"
     },
     {
       "id": "wb_L4_s26_q05",
@@ -1519,7 +1646,9 @@
       "correct_answer": 1,
       "grade_band": "5-6",
       "source": "Wavebook L4 S26",
-      "svg": "svg/wb_L4_s26_q05.svg"
+      "svg": "svg/wb_L4_s26_q05.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 200\" width=\"300\" height=\"200\" style=\"font-family:Arial,sans-serif\"><line x1=\"50\" y1=\"50\" x2=\"250\" y2=\"150\" stroke=\"#333\" stroke-width=\"2\"/><line x1=\"50\" y1=\"150\" x2=\"250\" y2=\"50\" stroke=\"#333\" stroke-width=\"2\"/><line x1=\"150\" y1=\"30\" x2=\"150\" y2=\"170\" stroke=\"#333\" stroke-width=\"2\"/><circle cx=\"150\" cy=\"100\" r=\"3\" fill=\"#E57373\"/></svg>"
     },
     {
       "id": "wb_L4_s26_q06",
@@ -1537,7 +1666,9 @@
       "correct_answer": 3,
       "grade_band": "5-6",
       "source": "Wavebook L4 S26",
-      "svg": "svg/wb_L4_s26_q06.svg"
+      "svg": "svg/wb_L4_s26_q06.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 200\" width=\"300\" height=\"200\" style=\"font-family:Arial,sans-serif\"><polygon points=\"150,20 50,170 250,170\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2.5\"/></svg>"
     },
     {
       "id": "wb_L4_s26_q07",
@@ -1555,7 +1686,9 @@
       "correct_answer": 1,
       "grade_band": "5-6",
       "source": "Wavebook L4 S26",
-      "svg": "svg/wb_L4_s26_q07.svg"
+      "svg": "svg/wb_L4_s26_q07.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 180\" width=\"300\" height=\"180\" style=\"font-family:Arial,sans-serif\"><rect x=\"50\" y=\"30\" width=\"200\" height=\"120\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2.5\" rx=\"2\"/></svg>"
     },
     {
       "id": "wb_L4_s26_q08",
@@ -1573,25 +1706,9 @@
       "correct_answer": 3,
       "grade_band": "5-6",
       "source": "Wavebook L4 S26",
-      "svg": "svg/wb_L4_s26_q08.svg"
-    },
-    {
-      "id": "wb_L4_s26_q09",
-      "stem": "How many triangles are there in the given figure?",
-      "interaction_mode": "mcq",
-      "topic": "Counting Figures",
-      "difficulty_tier": "practice",
-      "question_number": 9,
-      "choices": [
-        "10",
-        "8",
-        "12",
-        "14"
-      ],
-      "correct_answer": 0,
-      "grade_band": "5-6",
-      "source": "Wavebook L4 S26",
-      "svg": "svg/wb_L4_s26_q09.svg"
+      "svg": "svg/wb_L4_s26_q08.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 180\" width=\"300\" height=\"180\" style=\"font-family:Arial,sans-serif\"><rect x=\"50\" y=\"30\" width=\"200\" height=\"120\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2.5\" rx=\"2\"/></svg>"
     },
     {
       "id": "wb_L4_s26_q10",
@@ -1609,29 +1726,13 @@
       "correct_answer": 2,
       "grade_band": "5-6",
       "source": "Wavebook L4 S26",
-      "svg": "svg/wb_L4_s26_q10.svg"
-    },
-    {
-      "id": "wb_L4_s26_q11",
-      "stem": "How many triangles are there in the given figure?",
-      "interaction_mode": "mcq",
-      "topic": "Counting Figures",
-      "difficulty_tier": "challenge",
-      "question_number": 11,
-      "choices": [
-        "14",
-        "16",
-        "18",
-        "20"
-      ],
-      "correct_answer": 1,
-      "grade_band": "5-6",
-      "source": "Wavebook L4 S26",
-      "svg": "svg/wb_L4_s26_q11.svg"
+      "svg": "svg/wb_L4_s26_q10.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 200\" width=\"300\" height=\"200\" style=\"font-family:Arial,sans-serif\"><polygon points=\"80,140 180,140 220,60 120,60\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2.5\"/></svg>"
     },
     {
       "id": "wb_L4_s26_q12",
-      "stem": "Count the total number of squares in a 4\u00d74 grid.",
+      "stem": "Count the total number of squares in a 4×4 grid.",
       "interaction_mode": "mcq",
       "topic": "Counting Figures",
       "difficulty_tier": "challenge",
@@ -1645,7 +1746,9 @@
       "correct_answer": 0,
       "grade_band": "5-6",
       "source": "Wavebook L4 S26",
-      "svg": "svg/wb_L4_s26_q12.svg"
+      "svg": "svg/wb_L4_s26_q12.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 180\" width=\"300\" height=\"180\" style=\"font-family:Arial,sans-serif\"><rect x=\"50\" y=\"30\" width=\"200\" height=\"120\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2.5\" rx=\"2\"/></svg>"
     },
     {
       "id": "wb_L4_s26_q13",
@@ -1663,7 +1766,9 @@
       "correct_answer": 3,
       "grade_band": "5-6",
       "source": "Wavebook L4 S26",
-      "svg": "svg/wb_L4_s26_q13.svg"
+      "svg": "svg/wb_L4_s26_q13.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 200\" width=\"300\" height=\"200\" style=\"font-family:Arial,sans-serif\"><polygon points=\"150,20 50,170 250,170\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2.5\"/></svg>"
     },
     {
       "id": "wb_L4_s26_q14",
@@ -1681,7 +1786,9 @@
       "correct_answer": 0,
       "grade_band": "5-6",
       "source": "Wavebook L4 S26",
-      "svg": "svg/wb_L4_s26_q14.svg"
+      "svg": "svg/wb_L4_s26_q14.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 180\" width=\"300\" height=\"180\" style=\"font-family:Arial,sans-serif\"><rect x=\"50\" y=\"30\" width=\"200\" height=\"120\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2.5\" rx=\"2\"/></svg>"
     },
     {
       "id": "wb_L4_s26_q15",
@@ -1699,7 +1806,9 @@
       "correct_answer": 0,
       "grade_band": "5-6",
       "source": "Wavebook L4 S26",
-      "svg": "svg/wb_L4_s26_q15.svg"
+      "svg": "svg/wb_L4_s26_q15.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 200\" width=\"300\" height=\"200\" style=\"font-family:Arial,sans-serif\"><line x1=\"50\" y1=\"50\" x2=\"250\" y2=\"150\" stroke=\"#333\" stroke-width=\"2\"/><line x1=\"50\" y1=\"150\" x2=\"250\" y2=\"50\" stroke=\"#333\" stroke-width=\"2\"/><line x1=\"150\" y1=\"30\" x2=\"150\" y2=\"170\" stroke=\"#333\" stroke-width=\"2\"/><circle cx=\"150\" cy=\"100\" r=\"3\" fill=\"#E57373\"/></svg>"
     },
     {
       "id": "wb_L4_s27_q01",
@@ -1717,7 +1826,9 @@
       "correct_answer": 2,
       "grade_band": "5-6",
       "source": "Wavebook L4 S27",
-      "svg": "svg/wb_L4_s27_q01.svg"
+      "svg": "svg/wb_L4_s27_q01.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 180\" width=\"300\" height=\"180\" style=\"font-family:Arial,sans-serif\"><rect x=\"50\" y=\"30\" width=\"200\" height=\"120\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2.5\" rx=\"2\"/></svg>"
     },
     {
       "id": "wb_L4_s27_q02",
@@ -1735,7 +1846,8 @@
       "correct_answer": 2,
       "grade_band": "5-6",
       "source": "Wavebook L4 S27",
-      "svg": "svg/wb_L4_s27_q02.svg"
+      "svg": "svg/wb_L4_s27_q02.svg",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s27_q03",
@@ -1753,7 +1865,9 @@
       "correct_answer": 1,
       "grade_band": "5-6",
       "source": "Wavebook L4 S27",
-      "svg": "svg/wb_L4_s27_q03.svg"
+      "svg": "svg/wb_L4_s27_q03.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 180\" width=\"300\" height=\"180\" style=\"font-family:Arial,sans-serif\"><rect x=\"50\" y=\"30\" width=\"200\" height=\"120\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2.5\" rx=\"2\"/></svg>"
     },
     {
       "id": "wb_L4_s27_q04",
@@ -1771,7 +1885,9 @@
       "correct_answer": 1,
       "grade_band": "5-6",
       "source": "Wavebook L4 S27",
-      "svg": "svg/wb_L4_s27_q04.svg"
+      "svg": "svg/wb_L4_s27_q04.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 190\" width=\"300\" height=\"190\" style=\"font-family:Arial,sans-serif\"><rect x=\"80\" y=\"20\" width=\"140\" height=\"140\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2.5\"/></svg>"
     },
     {
       "id": "wb_L4_s27_q05",
@@ -1789,7 +1905,9 @@
       "correct_answer": 3,
       "grade_band": "5-6",
       "source": "Wavebook L4 S27",
-      "svg": "svg/wb_L4_s27_q05.svg"
+      "svg": "svg/wb_L4_s27_q05.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 190\" width=\"300\" height=\"190\" style=\"font-family:Arial,sans-serif\"><rect x=\"80\" y=\"20\" width=\"140\" height=\"140\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2.5\"/></svg>"
     },
     {
       "id": "wb_L4_s27_q06",
@@ -1807,7 +1925,8 @@
       "correct_answer": 1,
       "grade_band": "5-6",
       "source": "Wavebook L4 S27",
-      "svg": "svg/wb_L4_s27_q06.svg"
+      "svg": "svg/wb_L4_s27_q06.svg",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s27_q07",
@@ -1825,7 +1944,10 @@
       "correct_answer": 0,
       "grade_band": "5-6",
       "source": "Wavebook L4 S27",
-      "svg": "svg/wb_L4_s27_q07.svg"
+      "svg": "svg/wb_L4_s27_q07.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg viewBox=\"0 0 200 100\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"10\" y=\"10\" width=\"80\" height=\"80\" fill=\"#F0F4FF\" stroke=\"#4A90D9\" stroke-width=\"1.5\" rx=\"2\"/><line x1=\"50\" y1=\"10\" x2=\"50\" y2=\"90\" stroke=\"#4A90D9\" stroke-width=\"1\" stroke-dasharray=\"4,3\"/><circle cx=\"35\" cy=\"50\" r=\"5\" fill=\"#FF6B6B\"/><text x=\"10\" y=\"100\" font-size=\"8\" fill=\"#999\">folded</text><text x=\"105\" y=\"15\" font-size=\"8\" fill=\"#999\">→ unfolded</text><rect x=\"110\" y=\"10\" width=\"80\" height=\"80\" fill=\"#FAFAFA\" stroke=\"#333\" stroke-width=\"1.5\" rx=\"2\"/><line x1=\"150\" y1=\"10\" x2=\"150\" y2=\"90\" stroke=\"#CCC\" stroke-width=\"0.5\" stroke-dasharray=\"3,3\"/><circle cx=\"135\" cy=\"50\" r=\"5\" fill=\"#FF6B6B\"/><circle cx=\"165\" cy=\"50\" r=\"5\" fill=\"#FF6B6B\" opacity=\"0.5\"/></svg>",
+      "visual_alt": "Visual for: A paper is folded and punched with a hole. When un"
     },
     {
       "id": "wb_L4_s27_q08",
@@ -1843,7 +1965,8 @@
       "correct_answer": 1,
       "grade_band": "5-6",
       "source": "Wavebook L4 S27",
-      "svg": "svg/wb_L4_s27_q08.svg"
+      "svg": "svg/wb_L4_s27_q08.svg",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s27_q09",
@@ -1861,7 +1984,8 @@
       "correct_answer": 0,
       "grade_band": "5-6",
       "source": "Wavebook L4 S27",
-      "svg": "svg/wb_L4_s27_q09.svg"
+      "svg": "svg/wb_L4_s27_q09.svg",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s27_q10",
@@ -1879,7 +2003,8 @@
       "correct_answer": 2,
       "grade_band": "5-6",
       "source": "Wavebook L4 S27",
-      "svg": "svg/wb_L4_s27_q10.svg"
+      "svg": "svg/wb_L4_s27_q10.svg",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s27_q11",
@@ -1897,7 +2022,8 @@
       "correct_answer": 2,
       "grade_band": "5-6",
       "source": "Wavebook L4 S27",
-      "svg": "svg/wb_L4_s27_q11.svg"
+      "svg": "svg/wb_L4_s27_q11.svg",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s27_q12",
@@ -1915,7 +2041,9 @@
       "correct_answer": 2,
       "grade_band": "5-6",
       "source": "Wavebook L4 S27",
-      "svg": "svg/wb_L4_s27_q12.svg"
+      "svg": "svg/wb_L4_s27_q12.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 190\" width=\"300\" height=\"190\" style=\"font-family:Arial,sans-serif\"><rect x=\"80\" y=\"20\" width=\"140\" height=\"140\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2.5\"/></svg>"
     },
     {
       "id": "wb_L4_s27_q13",
@@ -1933,7 +2061,8 @@
       "correct_answer": 3,
       "grade_band": "5-6",
       "source": "Wavebook L4 S27",
-      "svg": "svg/wb_L4_s27_q13.svg"
+      "svg": "svg/wb_L4_s27_q13.svg",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s27_q14",
@@ -1951,7 +2080,9 @@
       "correct_answer": 1,
       "grade_band": "5-6",
       "source": "Wavebook L4 S27",
-      "svg": "svg/wb_L4_s27_q14.svg"
+      "svg": "svg/wb_L4_s27_q14.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 200\" width=\"300\" height=\"200\" style=\"font-family:Arial,sans-serif\"><polygon points=\"150,20 50,170 250,170\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2.5\"/></svg>"
     },
     {
       "id": "wb_L4_s27_q15",
@@ -1969,7 +2100,8 @@
       "correct_answer": 3,
       "grade_band": "5-6",
       "source": "Wavebook L4 S27",
-      "svg": "svg/wb_L4_s27_q15.svg"
+      "svg": "svg/wb_L4_s27_q15.svg",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s28_q01",
@@ -1982,11 +2114,12 @@
         "55",
         "60",
         "65",
-        "57"
+        "50"
       ],
       "correct_answer": 3,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S28"
+      "source": "Wavebook L4 S28",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s28_q02",
@@ -2003,7 +2136,8 @@
       ],
       "correct_answer": 2,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S28"
+      "source": "Wavebook L4 S28",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s28_q03",
@@ -2020,7 +2154,8 @@
       ],
       "correct_answer": 0,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S28"
+      "source": "Wavebook L4 S28",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s28_q04",
@@ -2037,7 +2172,8 @@
       ],
       "correct_answer": 3,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S28"
+      "source": "Wavebook L4 S28",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s28_q05",
@@ -2054,7 +2190,8 @@
       ],
       "correct_answer": 1,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S28"
+      "source": "Wavebook L4 S28",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s28_q06",
@@ -2071,7 +2208,8 @@
       ],
       "correct_answer": 0,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S28"
+      "source": "Wavebook L4 S28",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s28_q07",
@@ -2088,7 +2226,8 @@
       ],
       "correct_answer": 1,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S28"
+      "source": "Wavebook L4 S28",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s28_q08",
@@ -2105,7 +2244,8 @@
       ],
       "correct_answer": 1,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S28"
+      "source": "Wavebook L4 S28",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s28_q09",
@@ -2122,7 +2262,9 @@
       ],
       "correct_answer": 3,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S28"
+      "source": "Wavebook L4 S28",
+      "svg": "wb_L4_s28_q09.svg",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s28_q10",
@@ -2139,7 +2281,8 @@
       ],
       "correct_answer": 3,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S28"
+      "source": "Wavebook L4 S28",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s28_q11",
@@ -2156,7 +2299,8 @@
       ],
       "correct_answer": 2,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S28"
+      "source": "Wavebook L4 S28",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s28_q12",
@@ -2173,7 +2317,8 @@
       ],
       "correct_answer": 1,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S28"
+      "source": "Wavebook L4 S28",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s28_q13",
@@ -2190,7 +2335,8 @@
       ],
       "correct_answer": 0,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S28"
+      "source": "Wavebook L4 S28",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s28_q14",
@@ -2205,9 +2351,10 @@
         "36",
         "42"
       ],
-      "correct_answer": 2,
+      "correct_answer": 3,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S28"
+      "source": "Wavebook L4 S28",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s28_q15",
@@ -2224,7 +2371,8 @@
       ],
       "correct_answer": 2,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S28"
+      "source": "Wavebook L4 S28",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s29_q01",
@@ -2241,7 +2389,10 @@
       ],
       "correct_answer": 2,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S29"
+      "source": "Wavebook L4 S29",
+      "svg": "wb_L4_s29_q01.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 210\" width=\"300\" height=\"210\" style=\"font-family:Arial,sans-serif\"><line x1=\"150\" y1=\"10\" x2=\"150\" y2=\"190\" stroke=\"#E57373\" stroke-width=\"2\" stroke-dasharray=\"6,4\"/><path d=\"M150,60 Q100,30 80,80 Q70,130 150,140 Q230,130 220,80 Q200,30 150,60Z\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2\"/><text x=\"150\" y=\"195\" text-anchor=\"middle\" font-size=\"11\" fill=\"#E57373\">Line of Symmetry</text></svg>"
     },
     {
       "id": "wb_L4_s29_q02",
@@ -2258,7 +2409,10 @@
       ],
       "correct_answer": 1,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S29"
+      "source": "Wavebook L4 S29",
+      "svg": "wb_L4_s29_q02.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 210\" width=\"300\" height=\"210\" style=\"font-family:Arial,sans-serif\"><line x1=\"150\" y1=\"10\" x2=\"150\" y2=\"190\" stroke=\"#E57373\" stroke-width=\"2\" stroke-dasharray=\"6,4\"/><path d=\"M150,60 Q100,30 80,80 Q70,130 150,140 Q230,130 220,80 Q200,30 150,60Z\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2\"/><text x=\"150\" y=\"195\" text-anchor=\"middle\" font-size=\"11\" fill=\"#E57373\">Line of Symmetry</text></svg>"
     },
     {
       "id": "wb_L4_s29_q03",
@@ -2275,7 +2429,9 @@
       ],
       "correct_answer": 0,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S29"
+      "source": "Wavebook L4 S29",
+      "svg": "wb_L4_s29_q03.svg",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s29_q04",
@@ -2293,7 +2449,9 @@
       "correct_answer": 3,
       "grade_band": "5-6",
       "source": "Wavebook L4 S29",
-      "svg": "svg/wb_L4_s29_q04.svg"
+      "svg": "svg/wb_L4_s29_q04.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 210\" width=\"300\" height=\"210\" style=\"font-family:Arial,sans-serif\"><line x1=\"150\" y1=\"10\" x2=\"150\" y2=\"190\" stroke=\"#E57373\" stroke-width=\"2\" stroke-dasharray=\"6,4\"/><path d=\"M150,60 Q100,30 80,80 Q70,130 150,140 Q230,130 220,80 Q200,30 150,60Z\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2\"/><text x=\"150\" y=\"195\" text-anchor=\"middle\" font-size=\"11\" fill=\"#E57373\">Line of Symmetry</text></svg>"
     },
     {
       "id": "wb_L4_s29_q05",
@@ -2310,7 +2468,8 @@
       ],
       "correct_answer": 3,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S29"
+      "source": "Wavebook L4 S29",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s29_q06",
@@ -2327,7 +2486,8 @@
       ],
       "correct_answer": 2,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S29"
+      "source": "Wavebook L4 S29",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s29_q07",
@@ -2344,7 +2504,8 @@
       ],
       "correct_answer": 1,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S29"
+      "source": "Wavebook L4 S29",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s29_q08",
@@ -2361,7 +2522,8 @@
       ],
       "correct_answer": 1,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S29"
+      "source": "Wavebook L4 S29",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s29_q09",
@@ -2378,7 +2540,8 @@
       ],
       "correct_answer": 0,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S29"
+      "source": "Wavebook L4 S29",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s29_q10",
@@ -2395,7 +2558,10 @@
       ],
       "correct_answer": 2,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S29"
+      "source": "Wavebook L4 S29",
+      "svg": "wb_L4_s29_q10.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 200 200\" width=\"200\" height=\"200\" style=\"font-family:Arial,sans-serif\"><circle cx=\"100\" cy=\"100\" r=\"80\" fill=\"white\" stroke=\"#333\" stroke-width=\"3\"/><line x1=\"100.0\" y1=\"30.0\" x2=\"100.0\" y2=\"22.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"100.0\" y=\"42.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">12</text><line x1=\"135.0\" y1=\"39.4\" x2=\"139.0\" y2=\"32.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"129.0\" y=\"49.8\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">1</text><line x1=\"160.6\" y1=\"65.0\" x2=\"167.5\" y2=\"61.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"150.2\" y=\"71.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">2</text><line x1=\"170.0\" y1=\"100.0\" x2=\"178.0\" y2=\"100.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"158.0\" y=\"100.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">3</text><line x1=\"160.6\" y1=\"135.0\" x2=\"167.5\" y2=\"139.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"150.2\" y=\"129.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">4</text><line x1=\"135.0\" y1=\"160.6\" x2=\"139.0\" y2=\"167.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"129.0\" y=\"150.2\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">5</text><line x1=\"100.0\" y1=\"170.0\" x2=\"100.0\" y2=\"178.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"100.0\" y=\"158.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">6</text><line x1=\"65.0\" y1=\"160.6\" x2=\"61.0\" y2=\"167.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"71.0\" y=\"150.2\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">7</text><line x1=\"39.4\" y1=\"135.0\" x2=\"32.5\" y2=\"139.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"49.8\" y=\"129.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">8</text><line x1=\"30.0\" y1=\"100.0\" x2=\"22.0\" y2=\"100.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"42.0\" y=\"100.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">9</text><line x1=\"39.4\" y1=\"65.0\" x2=\"32.5\" y2=\"61.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"49.8\" y=\"71.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">10</text><line x1=\"65.0\" y1=\"39.4\" x2=\"61.0\" y2=\"32.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"71.0\" y=\"49.8\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">11</text><line x1=\"100\" y1=\"100\" x2=\"143.5\" y2=\"88.4\" stroke=\"#333\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"100\" y1=\"100\" x2=\"100.0\" y2=\"165.0\" stroke=\"#555\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><circle cx=\"100\" cy=\"100\" r=\"4\" fill=\"#333\"/></svg>"
     },
     {
       "id": "wb_L4_s29_q11",
@@ -2412,7 +2578,8 @@
       ],
       "correct_answer": 3,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S29"
+      "source": "Wavebook L4 S29",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s29_q12",
@@ -2429,7 +2596,8 @@
       ],
       "correct_answer": 0,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S29"
+      "source": "Wavebook L4 S29",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s29_q13",
@@ -2446,7 +2614,8 @@
       ],
       "correct_answer": 2,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S29"
+      "source": "Wavebook L4 S29",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s29_q14",
@@ -2463,7 +2632,8 @@
       ],
       "correct_answer": 0,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S29"
+      "source": "Wavebook L4 S29",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s29_q15",
@@ -2480,7 +2650,10 @@
       ],
       "correct_answer": 2,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S29"
+      "source": "Wavebook L4 S29",
+      "svg": "wb_L4_s29_q15.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 200 200\" width=\"200\" height=\"200\" style=\"font-family:Arial,sans-serif\"><circle cx=\"100\" cy=\"100\" r=\"80\" fill=\"white\" stroke=\"#333\" stroke-width=\"3\"/><line x1=\"100.0\" y1=\"30.0\" x2=\"100.0\" y2=\"22.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"100.0\" y=\"42.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">12</text><line x1=\"135.0\" y1=\"39.4\" x2=\"139.0\" y2=\"32.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"129.0\" y=\"49.8\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">1</text><line x1=\"160.6\" y1=\"65.0\" x2=\"167.5\" y2=\"61.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"150.2\" y=\"71.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">2</text><line x1=\"170.0\" y1=\"100.0\" x2=\"178.0\" y2=\"100.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"158.0\" y=\"100.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">3</text><line x1=\"160.6\" y1=\"135.0\" x2=\"167.5\" y2=\"139.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"150.2\" y=\"129.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">4</text><line x1=\"135.0\" y1=\"160.6\" x2=\"139.0\" y2=\"167.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"129.0\" y=\"150.2\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">5</text><line x1=\"100.0\" y1=\"170.0\" x2=\"100.0\" y2=\"178.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"100.0\" y=\"158.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">6</text><line x1=\"65.0\" y1=\"160.6\" x2=\"61.0\" y2=\"167.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"71.0\" y=\"150.2\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">7</text><line x1=\"39.4\" y1=\"135.0\" x2=\"32.5\" y2=\"139.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"49.8\" y=\"129.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">8</text><line x1=\"30.0\" y1=\"100.0\" x2=\"22.0\" y2=\"100.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"42.0\" y=\"100.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">9</text><line x1=\"39.4\" y1=\"65.0\" x2=\"32.5\" y2=\"61.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"49.8\" y=\"71.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">10</text><line x1=\"65.0\" y1=\"39.4\" x2=\"61.0\" y2=\"32.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"71.0\" y=\"49.8\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">11</text><line x1=\"100\" y1=\"100\" x2=\"134.5\" y2=\"128.9\" stroke=\"#333\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"100\" y1=\"100\" x2=\"156.3\" y2=\"132.5\" stroke=\"#555\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><circle cx=\"100\" cy=\"100\" r=\"4\" fill=\"#333\"/></svg>"
     },
     {
       "id": "wb_L4_s30_q01",
@@ -2490,14 +2663,15 @@
       "difficulty_tier": "warmup",
       "question_number": 1,
       "choices": [
-        "180\u00b0",
-        "90\u00b0",
-        "120\u00b0",
-        "150\u00b0"
+        "180°",
+        "90°",
+        "120°",
+        "150°"
       ],
       "correct_answer": 0,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S30"
+      "source": "Wavebook L4 S30",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s30_q02",
@@ -2514,7 +2688,10 @@
       ],
       "correct_answer": 2,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S30"
+      "source": "Wavebook L4 S30",
+      "svg": "wb_L4_s30_q02.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 200 200\" width=\"200\" height=\"200\" style=\"font-family:Arial,sans-serif\"><circle cx=\"100\" cy=\"100\" r=\"80\" fill=\"white\" stroke=\"#333\" stroke-width=\"3\"/><line x1=\"100.0\" y1=\"30.0\" x2=\"100.0\" y2=\"22.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"100.0\" y=\"42.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">12</text><line x1=\"135.0\" y1=\"39.4\" x2=\"139.0\" y2=\"32.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"129.0\" y=\"49.8\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">1</text><line x1=\"160.6\" y1=\"65.0\" x2=\"167.5\" y2=\"61.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"150.2\" y=\"71.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">2</text><line x1=\"170.0\" y1=\"100.0\" x2=\"178.0\" y2=\"100.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"158.0\" y=\"100.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">3</text><line x1=\"160.6\" y1=\"135.0\" x2=\"167.5\" y2=\"139.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"150.2\" y=\"129.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">4</text><line x1=\"135.0\" y1=\"160.6\" x2=\"139.0\" y2=\"167.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"129.0\" y=\"150.2\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">5</text><line x1=\"100.0\" y1=\"170.0\" x2=\"100.0\" y2=\"178.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"100.0\" y=\"158.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">6</text><line x1=\"65.0\" y1=\"160.6\" x2=\"61.0\" y2=\"167.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"71.0\" y=\"150.2\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">7</text><line x1=\"39.4\" y1=\"135.0\" x2=\"32.5\" y2=\"139.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"49.8\" y=\"129.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">8</text><line x1=\"30.0\" y1=\"100.0\" x2=\"22.0\" y2=\"100.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"42.0\" y=\"100.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">9</text><line x1=\"39.4\" y1=\"65.0\" x2=\"32.5\" y2=\"61.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"49.8\" y=\"71.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">10</text><line x1=\"65.0\" y1=\"39.4\" x2=\"61.0\" y2=\"32.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"71.0\" y=\"49.8\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">11</text><line x1=\"100\" y1=\"100\" x2=\"100.0\" y2=\"55.0\" stroke=\"#333\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"100\" y1=\"100\" x2=\"100.0\" y2=\"35.0\" stroke=\"#555\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><circle cx=\"100\" cy=\"100\" r=\"4\" fill=\"#333\"/></svg>"
     },
     {
       "id": "wb_L4_s30_q03",
@@ -2531,7 +2708,8 @@
       ],
       "correct_answer": 0,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S30"
+      "source": "Wavebook L4 S30",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s30_q04",
@@ -2541,14 +2719,17 @@
       "difficulty_tier": "warmup",
       "question_number": 4,
       "choices": [
-        "90\u00b0",
-        "60\u00b0",
-        "45\u00b0",
-        "30\u00b0"
+        "90°",
+        "60°",
+        "45°",
+        "30°"
       ],
       "correct_answer": 0,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S30"
+      "source": "Wavebook L4 S30",
+      "svg": "wb_L4_s30_q04.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 200 200\" width=\"200\" height=\"200\" style=\"font-family:Arial,sans-serif\"><circle cx=\"100\" cy=\"100\" r=\"80\" fill=\"white\" stroke=\"#333\" stroke-width=\"3\"/><line x1=\"100.0\" y1=\"30.0\" x2=\"100.0\" y2=\"22.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"100.0\" y=\"42.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">12</text><line x1=\"135.0\" y1=\"39.4\" x2=\"139.0\" y2=\"32.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"129.0\" y=\"49.8\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">1</text><line x1=\"160.6\" y1=\"65.0\" x2=\"167.5\" y2=\"61.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"150.2\" y=\"71.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">2</text><line x1=\"170.0\" y1=\"100.0\" x2=\"178.0\" y2=\"100.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"158.0\" y=\"100.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">3</text><line x1=\"160.6\" y1=\"135.0\" x2=\"167.5\" y2=\"139.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"150.2\" y=\"129.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">4</text><line x1=\"135.0\" y1=\"160.6\" x2=\"139.0\" y2=\"167.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"129.0\" y=\"150.2\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">5</text><line x1=\"100.0\" y1=\"170.0\" x2=\"100.0\" y2=\"178.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"100.0\" y=\"158.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">6</text><line x1=\"65.0\" y1=\"160.6\" x2=\"61.0\" y2=\"167.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"71.0\" y=\"150.2\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">7</text><line x1=\"39.4\" y1=\"135.0\" x2=\"32.5\" y2=\"139.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"49.8\" y=\"129.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">8</text><line x1=\"30.0\" y1=\"100.0\" x2=\"22.0\" y2=\"100.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"42.0\" y=\"100.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">9</text><line x1=\"39.4\" y1=\"65.0\" x2=\"32.5\" y2=\"61.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"49.8\" y=\"71.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">10</text><line x1=\"65.0\" y1=\"39.4\" x2=\"61.0\" y2=\"32.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"71.0\" y=\"49.8\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">11</text><line x1=\"100\" y1=\"100\" x2=\"145.0\" y2=\"100.0\" stroke=\"#333\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"100\" y1=\"100\" x2=\"100.0\" y2=\"35.0\" stroke=\"#555\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><circle cx=\"100\" cy=\"100\" r=\"4\" fill=\"#333\"/></svg>"
     },
     {
       "id": "wb_L4_s30_q05",
@@ -2565,7 +2746,8 @@
       ],
       "correct_answer": 3,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S30"
+      "source": "Wavebook L4 S30",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s30_q06",
@@ -2582,7 +2764,8 @@
       ],
       "correct_answer": 3,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S30"
+      "source": "Wavebook L4 S30",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s30_q07",
@@ -2599,7 +2782,10 @@
       ],
       "correct_answer": 3,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S30"
+      "source": "Wavebook L4 S30",
+      "svg": "wb_L4_s30_q07.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 200 200\" width=\"200\" height=\"200\" style=\"font-family:Arial,sans-serif\"><circle cx=\"100\" cy=\"100\" r=\"80\" fill=\"white\" stroke=\"#333\" stroke-width=\"3\"/><line x1=\"100.0\" y1=\"30.0\" x2=\"100.0\" y2=\"22.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"100.0\" y=\"42.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">12</text><line x1=\"135.0\" y1=\"39.4\" x2=\"139.0\" y2=\"32.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"129.0\" y=\"49.8\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">1</text><line x1=\"160.6\" y1=\"65.0\" x2=\"167.5\" y2=\"61.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"150.2\" y=\"71.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">2</text><line x1=\"170.0\" y1=\"100.0\" x2=\"178.0\" y2=\"100.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"158.0\" y=\"100.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">3</text><line x1=\"160.6\" y1=\"135.0\" x2=\"167.5\" y2=\"139.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"150.2\" y=\"129.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">4</text><line x1=\"135.0\" y1=\"160.6\" x2=\"139.0\" y2=\"167.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"129.0\" y=\"150.2\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">5</text><line x1=\"100.0\" y1=\"170.0\" x2=\"100.0\" y2=\"178.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"100.0\" y=\"158.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">6</text><line x1=\"65.0\" y1=\"160.6\" x2=\"61.0\" y2=\"167.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"71.0\" y=\"150.2\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">7</text><line x1=\"39.4\" y1=\"135.0\" x2=\"32.5\" y2=\"139.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"49.8\" y=\"129.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">8</text><line x1=\"30.0\" y1=\"100.0\" x2=\"22.0\" y2=\"100.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"42.0\" y=\"100.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">9</text><line x1=\"39.4\" y1=\"65.0\" x2=\"32.5\" y2=\"61.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"49.8\" y=\"71.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">10</text><line x1=\"65.0\" y1=\"39.4\" x2=\"61.0\" y2=\"32.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"71.0\" y=\"49.8\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">11</text><line x1=\"100\" y1=\"100\" x2=\"145.0\" y2=\"100.0\" stroke=\"#333\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"100\" y1=\"100\" x2=\"100.0\" y2=\"35.0\" stroke=\"#555\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><circle cx=\"100\" cy=\"100\" r=\"4\" fill=\"#333\"/></svg>"
     },
     {
       "id": "wb_L4_s30_q08",
@@ -2609,14 +2795,15 @@
       "difficulty_tier": "practice",
       "question_number": 8,
       "choices": [
-        "30\u00b0",
-        "60\u00b0",
-        "90\u00b0",
-        "120\u00b0"
+        "30°",
+        "60°",
+        "90°",
+        "120°"
       ],
       "correct_answer": 1,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S30"
+      "source": "Wavebook L4 S30",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s30_q09",
@@ -2633,7 +2820,8 @@
       ],
       "correct_answer": 1,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S30"
+      "source": "Wavebook L4 S30",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s30_q10",
@@ -2643,14 +2831,15 @@
       "difficulty_tier": "practice",
       "question_number": 10,
       "choices": [
-        "15\u00b0",
-        "20\u00b0",
-        "25\u00b0",
-        "30\u00b0"
+        "15°",
+        "20°",
+        "25°",
+        "30°"
       ],
       "correct_answer": 3,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S30"
+      "source": "Wavebook L4 S30",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s30_q11",
@@ -2660,14 +2849,17 @@
       "difficulty_tier": "challenge",
       "question_number": 11,
       "choices": [
-        "90\u00b0",
-        "105\u00b0",
-        "120\u00b0",
-        "135\u00b0"
+        "90°",
+        "105°",
+        "120°",
+        "135°"
       ],
       "correct_answer": 1,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S30"
+      "source": "Wavebook L4 S30",
+      "svg": "wb_L4_s30_q11.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 200 200\" width=\"200\" height=\"200\" style=\"font-family:Arial,sans-serif\"><circle cx=\"100\" cy=\"100\" r=\"80\" fill=\"white\" stroke=\"#333\" stroke-width=\"3\"/><line x1=\"100.0\" y1=\"30.0\" x2=\"100.0\" y2=\"22.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"100.0\" y=\"42.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">12</text><line x1=\"135.0\" y1=\"39.4\" x2=\"139.0\" y2=\"32.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"129.0\" y=\"49.8\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">1</text><line x1=\"160.6\" y1=\"65.0\" x2=\"167.5\" y2=\"61.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"150.2\" y=\"71.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">2</text><line x1=\"170.0\" y1=\"100.0\" x2=\"178.0\" y2=\"100.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"158.0\" y=\"100.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">3</text><line x1=\"160.6\" y1=\"135.0\" x2=\"167.5\" y2=\"139.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"150.2\" y=\"129.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">4</text><line x1=\"135.0\" y1=\"160.6\" x2=\"139.0\" y2=\"167.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"129.0\" y=\"150.2\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">5</text><line x1=\"100.0\" y1=\"170.0\" x2=\"100.0\" y2=\"178.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"100.0\" y=\"158.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">6</text><line x1=\"65.0\" y1=\"160.6\" x2=\"61.0\" y2=\"167.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"71.0\" y=\"150.2\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">7</text><line x1=\"39.4\" y1=\"135.0\" x2=\"32.5\" y2=\"139.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"49.8\" y=\"129.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">8</text><line x1=\"30.0\" y1=\"100.0\" x2=\"22.0\" y2=\"100.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"42.0\" y=\"100.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">9</text><line x1=\"39.4\" y1=\"65.0\" x2=\"32.5\" y2=\"61.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"49.8\" y=\"71.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">10</text><line x1=\"65.0\" y1=\"39.4\" x2=\"61.0\" y2=\"32.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"71.0\" y=\"49.8\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">11</text><line x1=\"100\" y1=\"100\" x2=\"56.5\" y2=\"88.4\" stroke=\"#333\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"100\" y1=\"100\" x2=\"100.0\" y2=\"165.0\" stroke=\"#555\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><circle cx=\"100\" cy=\"100\" r=\"4\" fill=\"#333\"/></svg>"
     },
     {
       "id": "wb_L4_s30_q12",
@@ -2684,7 +2876,8 @@
       ],
       "correct_answer": 2,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S30"
+      "source": "Wavebook L4 S30",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s30_q13",
@@ -2701,7 +2894,8 @@
       ],
       "correct_answer": 2,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S30"
+      "source": "Wavebook L4 S30",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s30_q14",
@@ -2718,7 +2912,8 @@
       ],
       "correct_answer": 2,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S30"
+      "source": "Wavebook L4 S30",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s30_q15",
@@ -2728,14 +2923,15 @@
       "difficulty_tier": "challenge",
       "question_number": 15,
       "choices": [
-        "30\u00b0",
-        "35\u00b0",
-        "40\u00b0",
-        "45\u00b0"
+        "30°",
+        "35°",
+        "40°",
+        "45°"
       ],
       "correct_answer": 3,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S30"
+      "source": "Wavebook L4 S30",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s31_q01",
@@ -2752,7 +2948,9 @@
       ],
       "correct_answer": 3,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S31"
+      "source": "Wavebook L4 S31",
+      "svg": "wb_L4_s31_q01.svg",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s31_q02",
@@ -2769,7 +2967,9 @@
       ],
       "correct_answer": 0,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S31"
+      "source": "Wavebook L4 S31",
+      "svg": "wb_L4_s31_q02.svg",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s31_q03",
@@ -2786,7 +2986,8 @@
       ],
       "correct_answer": 1,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S31"
+      "source": "Wavebook L4 S31",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s31_q04",
@@ -2803,7 +3004,9 @@
       ],
       "correct_answer": 0,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S31"
+      "source": "Wavebook L4 S31",
+      "svg": "wb_L4_s31_q04.svg",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s31_q05",
@@ -2821,7 +3024,8 @@
       "correct_answer": 3,
       "grade_band": "5-6",
       "source": "Wavebook L4 S31",
-      "svg": "svg/wb_L4_s31_q05.svg"
+      "svg": "svg/wb_L4_s31_q05.svg",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s31_q06",
@@ -2839,7 +3043,8 @@
       "correct_answer": 1,
       "grade_band": "5-6",
       "source": "Wavebook L4 S31",
-      "svg": "svg/wb_L4_s31_q06.svg"
+      "svg": "svg/wb_L4_s31_q06.svg",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s31_q07",
@@ -2857,7 +3062,8 @@
       "correct_answer": 3,
       "grade_band": "5-6",
       "source": "Wavebook L4 S31",
-      "svg": "svg/wb_L4_s31_q07.svg"
+      "svg": "svg/wb_L4_s31_q07.svg",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s31_q08",
@@ -2875,7 +3081,8 @@
       "correct_answer": 2,
       "grade_band": "5-6",
       "source": "Wavebook L4 S31",
-      "svg": "svg/wb_L4_s31_q08.svg"
+      "svg": "svg/wb_L4_s31_q08.svg",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s31_q09",
@@ -2892,7 +3099,10 @@
       ],
       "correct_answer": 2,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S31"
+      "source": "Wavebook L4 S31",
+      "svg": "wb_L4_s31_q09.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 200 160\" width=\"200\" height=\"160\" style=\"font-family:Arial,sans-serif\"><rect x=\"40\" y=\"20\" width=\"120\" height=\"120\" rx=\"12\" fill=\"white\" stroke=\"#333\" stroke-width=\"2.5\"/><circle cx=\"70\" cy=\"45\" r=\"8\" fill=\"#333\"/><circle cx=\"130\" cy=\"45\" r=\"8\" fill=\"#333\"/><circle cx=\"70\" cy=\"80\" r=\"8\" fill=\"#333\"/><circle cx=\"130\" cy=\"80\" r=\"8\" fill=\"#333\"/><circle cx=\"70\" cy=\"115\" r=\"8\" fill=\"#333\"/><circle cx=\"130\" cy=\"115\" r=\"8\" fill=\"#333\"/></svg>"
     },
     {
       "id": "wb_L4_s31_q10",
@@ -2910,7 +3120,8 @@
       "correct_answer": 3,
       "grade_band": "5-6",
       "source": "Wavebook L4 S31",
-      "svg": "svg/wb_L4_s31_q10.svg"
+      "svg": "svg/wb_L4_s31_q10.svg",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s31_q11",
@@ -2928,7 +3139,8 @@
       "correct_answer": 2,
       "grade_band": "5-6",
       "source": "Wavebook L4 S31",
-      "svg": "svg/wb_L4_s31_q11.svg"
+      "svg": "svg/wb_L4_s31_q11.svg",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s31_q12",
@@ -2946,7 +3158,9 @@
       "correct_answer": 2,
       "grade_band": "5-6",
       "source": "Wavebook L4 S31",
-      "svg": "svg/wb_L4_s31_q12.svg"
+      "svg": "svg/wb_L4_s31_q12.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 190\" width=\"260\" height=\"190\" style=\"font-family:Arial,sans-serif\"><polygon points=\"60,60 160,60 160,160 60,160\" fill=\"#E8F4FD\" stroke=\"#333\" stroke-width=\"2\"/><polygon points=\"60,60 100,30 200,30 160,60\" fill=\"#D0E8F0\" stroke=\"#333\" stroke-width=\"2\"/><polygon points=\"160,60 200,30 200,130 160,160\" fill=\"#B8D8E8\" stroke=\"#333\" stroke-width=\"2\"/></svg>"
     },
     {
       "id": "wb_L4_s31_q13",
@@ -2963,11 +3177,13 @@
       ],
       "correct_answer": 3,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S31"
+      "source": "Wavebook L4 S31",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 200 160\" width=\"200\" height=\"160\" style=\"font-family:Arial,sans-serif\"><rect x=\"40\" y=\"20\" width=\"120\" height=\"120\" rx=\"12\" fill=\"white\" stroke=\"#333\" stroke-width=\"2.5\"/><circle cx=\"70\" cy=\"50\" r=\"8\" fill=\"#333\"/><circle cx=\"130\" cy=\"50\" r=\"8\" fill=\"#333\"/><circle cx=\"100\" cy=\"80\" r=\"8\" fill=\"#333\"/><circle cx=\"70\" cy=\"110\" r=\"8\" fill=\"#333\"/><circle cx=\"130\" cy=\"110\" r=\"8\" fill=\"#333\"/></svg>"
     },
     {
       "id": "wb_L4_s31_q14",
-      "stem": "A 3\u00d73\u00d73 cube is painted and cut into unit cubes. How many unit cubes have exactly one face painted?",
+      "stem": "A 3×3×3 cube is painted and cut into unit cubes. How many unit cubes have exactly one face painted?",
       "interaction_mode": "mcq",
       "topic": "Cubes and Dice",
       "difficulty_tier": "challenge",
@@ -2981,7 +3197,8 @@
       "correct_answer": 3,
       "grade_band": "5-6",
       "source": "Wavebook L4 S31",
-      "svg": "svg/wb_L4_s31_q14.svg"
+      "svg": "svg/wb_L4_s31_q14.svg",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s31_q15",
@@ -2996,9 +3213,11 @@
         "1/2",
         "2/3"
       ],
-      "correct_answer": 2,
+      "correct_answer": 1,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S31"
+      "source": "Wavebook L4 S31",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 200 160\" width=\"200\" height=\"160\" style=\"font-family:Arial,sans-serif\"><rect x=\"40\" y=\"20\" width=\"120\" height=\"120\" rx=\"12\" fill=\"white\" stroke=\"#333\" stroke-width=\"2.5\"/><circle cx=\"70\" cy=\"45\" r=\"8\" fill=\"#333\"/><circle cx=\"130\" cy=\"45\" r=\"8\" fill=\"#333\"/><circle cx=\"70\" cy=\"80\" r=\"8\" fill=\"#333\"/><circle cx=\"130\" cy=\"80\" r=\"8\" fill=\"#333\"/><circle cx=\"70\" cy=\"115\" r=\"8\" fill=\"#333\"/><circle cx=\"130\" cy=\"115\" r=\"8\" fill=\"#333\"/></svg>"
     },
     {
       "id": "wb_L4_s32_q01",
@@ -3010,16 +3229,18 @@
       "choices": [
         "North-West",
         "South-East",
-        "North-East",
+        "South-West",
         "North-East"
       ],
       "correct_answer": 3,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S32"
+      "source": "Wavebook L4 S32",
+      "svg": "wb_L4_s32_q01.svg",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s32_q02",
-      "stem": "If you face East and turn 270\u00b0 clockwise, which direction do you face?",
+      "stem": "If you face East and turn 270° clockwise, which direction do you face?",
       "interaction_mode": "mcq",
       "topic": "Direction Sense",
       "difficulty_tier": "warmup",
@@ -3032,7 +3253,10 @@
       ],
       "correct_answer": 3,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S32"
+      "source": "Wavebook L4 S32",
+      "svg": "wb_L4_s32_q02.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 200 200\" width=\"200\" height=\"200\" style=\"font-family:Arial,sans-serif\"><circle cx=\"100\" cy=\"100\" r=\"80\" fill=\"white\" stroke=\"#333\" stroke-width=\"3\"/><line x1=\"100.0\" y1=\"30.0\" x2=\"100.0\" y2=\"22.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"100.0\" y=\"42.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">12</text><line x1=\"135.0\" y1=\"39.4\" x2=\"139.0\" y2=\"32.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"129.0\" y=\"49.8\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">1</text><line x1=\"160.6\" y1=\"65.0\" x2=\"167.5\" y2=\"61.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"150.2\" y=\"71.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">2</text><line x1=\"170.0\" y1=\"100.0\" x2=\"178.0\" y2=\"100.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"158.0\" y=\"100.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">3</text><line x1=\"160.6\" y1=\"135.0\" x2=\"167.5\" y2=\"139.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"150.2\" y=\"129.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">4</text><line x1=\"135.0\" y1=\"160.6\" x2=\"139.0\" y2=\"167.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"129.0\" y=\"150.2\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">5</text><line x1=\"100.0\" y1=\"170.0\" x2=\"100.0\" y2=\"178.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"100.0\" y=\"158.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">6</text><line x1=\"65.0\" y1=\"160.6\" x2=\"61.0\" y2=\"167.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"71.0\" y=\"150.2\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">7</text><line x1=\"39.4\" y1=\"135.0\" x2=\"32.5\" y2=\"139.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"49.8\" y=\"129.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">8</text><line x1=\"30.0\" y1=\"100.0\" x2=\"22.0\" y2=\"100.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"42.0\" y=\"100.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">9</text><line x1=\"39.4\" y1=\"65.0\" x2=\"32.5\" y2=\"61.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"49.8\" y=\"71.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">10</text><line x1=\"65.0\" y1=\"39.4\" x2=\"61.0\" y2=\"32.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"71.0\" y=\"49.8\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">11</text><line x1=\"100\" y1=\"100\" x2=\"145.0\" y2=\"100.0\" stroke=\"#333\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"100\" y1=\"100\" x2=\"100.0\" y2=\"35.0\" stroke=\"#555\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><circle cx=\"100\" cy=\"100\" r=\"4\" fill=\"#333\"/></svg>"
     },
     {
       "id": "wb_L4_s32_q03",
@@ -3045,11 +3269,13 @@
         "East",
         "North",
         "South",
-        "West"
+        "None of these"
       ],
       "correct_answer": 0,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S32"
+      "source": "Wavebook L4 S32",
+      "svg": "wb_L4_s32_q03.svg",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s32_q04",
@@ -3066,7 +3292,8 @@
       ],
       "correct_answer": 2,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S32"
+      "source": "Wavebook L4 S32",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s32_q05",
@@ -3083,11 +3310,12 @@
       ],
       "correct_answer": 2,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S32"
+      "source": "Wavebook L4 S32",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s32_q06",
-      "stem": "Facing North, Manu turns 90\u00b0 clockwise, then 180\u00b0 anticlockwise. Which direction is he facing?",
+      "stem": "Facing North, Manu turns 90° clockwise, then 180° anticlockwise. Which direction is he facing?",
       "interaction_mode": "mcq",
       "topic": "Direction Sense",
       "difficulty_tier": "practice",
@@ -3100,7 +3328,10 @@
       ],
       "correct_answer": 2,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S32"
+      "source": "Wavebook L4 S32",
+      "svg": "wb_L4_s32_q06.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 200 200\" width=\"200\" height=\"200\" style=\"font-family:Arial,sans-serif\"><circle cx=\"100\" cy=\"100\" r=\"80\" fill=\"white\" stroke=\"#333\" stroke-width=\"3\"/><line x1=\"100.0\" y1=\"30.0\" x2=\"100.0\" y2=\"22.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"100.0\" y=\"42.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">12</text><line x1=\"135.0\" y1=\"39.4\" x2=\"139.0\" y2=\"32.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"129.0\" y=\"49.8\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">1</text><line x1=\"160.6\" y1=\"65.0\" x2=\"167.5\" y2=\"61.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"150.2\" y=\"71.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">2</text><line x1=\"170.0\" y1=\"100.0\" x2=\"178.0\" y2=\"100.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"158.0\" y=\"100.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">3</text><line x1=\"160.6\" y1=\"135.0\" x2=\"167.5\" y2=\"139.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"150.2\" y=\"129.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">4</text><line x1=\"135.0\" y1=\"160.6\" x2=\"139.0\" y2=\"167.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"129.0\" y=\"150.2\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">5</text><line x1=\"100.0\" y1=\"170.0\" x2=\"100.0\" y2=\"178.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"100.0\" y=\"158.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">6</text><line x1=\"65.0\" y1=\"160.6\" x2=\"61.0\" y2=\"167.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"71.0\" y=\"150.2\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">7</text><line x1=\"39.4\" y1=\"135.0\" x2=\"32.5\" y2=\"139.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"49.8\" y=\"129.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">8</text><line x1=\"30.0\" y1=\"100.0\" x2=\"22.0\" y2=\"100.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"42.0\" y=\"100.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">9</text><line x1=\"39.4\" y1=\"65.0\" x2=\"32.5\" y2=\"61.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"49.8\" y=\"71.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">10</text><line x1=\"65.0\" y1=\"39.4\" x2=\"61.0\" y2=\"32.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"71.0\" y=\"49.8\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">11</text><line x1=\"100\" y1=\"100\" x2=\"145.0\" y2=\"100.0\" stroke=\"#333\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"100\" y1=\"100\" x2=\"100.0\" y2=\"35.0\" stroke=\"#555\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><circle cx=\"100\" cy=\"100\" r=\"4\" fill=\"#333\"/></svg>"
     },
     {
       "id": "wb_L4_s32_q07",
@@ -3117,7 +3348,9 @@
       ],
       "correct_answer": 0,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S32"
+      "source": "Wavebook L4 S32",
+      "svg": "wb_L4_s32_q07.svg",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s32_q08",
@@ -3134,11 +3367,12 @@
       ],
       "correct_answer": 1,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S32"
+      "source": "Wavebook L4 S32",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s32_q09",
-      "stem": "A man facing West turns 45\u00b0 anticlockwise. Which direction is he facing now?",
+      "stem": "A man facing West turns 45° anticlockwise. Which direction is he facing now?",
       "interaction_mode": "mcq",
       "topic": "Direction Sense",
       "difficulty_tier": "practice",
@@ -3151,7 +3385,10 @@
       ],
       "correct_answer": 0,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S32"
+      "source": "Wavebook L4 S32",
+      "svg": "wb_L4_s32_q09.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 200 200\" width=\"200\" height=\"200\" style=\"font-family:Arial,sans-serif\"><circle cx=\"100\" cy=\"100\" r=\"80\" fill=\"white\" stroke=\"#333\" stroke-width=\"3\"/><line x1=\"100.0\" y1=\"30.0\" x2=\"100.0\" y2=\"22.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"100.0\" y=\"42.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">12</text><line x1=\"135.0\" y1=\"39.4\" x2=\"139.0\" y2=\"32.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"129.0\" y=\"49.8\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">1</text><line x1=\"160.6\" y1=\"65.0\" x2=\"167.5\" y2=\"61.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"150.2\" y=\"71.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">2</text><line x1=\"170.0\" y1=\"100.0\" x2=\"178.0\" y2=\"100.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"158.0\" y=\"100.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">3</text><line x1=\"160.6\" y1=\"135.0\" x2=\"167.5\" y2=\"139.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"150.2\" y=\"129.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">4</text><line x1=\"135.0\" y1=\"160.6\" x2=\"139.0\" y2=\"167.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"129.0\" y=\"150.2\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">5</text><line x1=\"100.0\" y1=\"170.0\" x2=\"100.0\" y2=\"178.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"100.0\" y=\"158.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">6</text><line x1=\"65.0\" y1=\"160.6\" x2=\"61.0\" y2=\"167.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"71.0\" y=\"150.2\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">7</text><line x1=\"39.4\" y1=\"135.0\" x2=\"32.5\" y2=\"139.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"49.8\" y=\"129.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">8</text><line x1=\"30.0\" y1=\"100.0\" x2=\"22.0\" y2=\"100.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"42.0\" y=\"100.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">9</text><line x1=\"39.4\" y1=\"65.0\" x2=\"32.5\" y2=\"61.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"49.8\" y=\"71.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">10</text><line x1=\"65.0\" y1=\"39.4\" x2=\"61.0\" y2=\"32.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"71.0\" y=\"49.8\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">11</text><line x1=\"100\" y1=\"100\" x2=\"145.0\" y2=\"100.0\" stroke=\"#333\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"100\" y1=\"100\" x2=\"100.0\" y2=\"35.0\" stroke=\"#555\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><circle cx=\"100\" cy=\"100\" r=\"4\" fill=\"#333\"/></svg>"
     },
     {
       "id": "wb_L4_s32_q10",
@@ -3168,11 +3405,12 @@
       ],
       "correct_answer": 3,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S32"
+      "source": "Wavebook L4 S32",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s32_q11",
-      "stem": "If you face South and turn 135\u00b0 clockwise, which direction do you face?",
+      "stem": "If you face South and turn 135° clockwise, which direction do you face?",
       "interaction_mode": "mcq",
       "topic": "Direction Sense",
       "difficulty_tier": "challenge",
@@ -3185,7 +3423,10 @@
       ],
       "correct_answer": 2,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S32"
+      "source": "Wavebook L4 S32",
+      "svg": "wb_L4_s32_q11.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 200 200\" width=\"200\" height=\"200\" style=\"font-family:Arial,sans-serif\"><circle cx=\"100\" cy=\"100\" r=\"80\" fill=\"white\" stroke=\"#333\" stroke-width=\"3\"/><line x1=\"100.0\" y1=\"30.0\" x2=\"100.0\" y2=\"22.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"100.0\" y=\"42.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">12</text><line x1=\"135.0\" y1=\"39.4\" x2=\"139.0\" y2=\"32.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"129.0\" y=\"49.8\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">1</text><line x1=\"160.6\" y1=\"65.0\" x2=\"167.5\" y2=\"61.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"150.2\" y=\"71.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">2</text><line x1=\"170.0\" y1=\"100.0\" x2=\"178.0\" y2=\"100.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"158.0\" y=\"100.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">3</text><line x1=\"160.6\" y1=\"135.0\" x2=\"167.5\" y2=\"139.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"150.2\" y=\"129.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">4</text><line x1=\"135.0\" y1=\"160.6\" x2=\"139.0\" y2=\"167.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"129.0\" y=\"150.2\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">5</text><line x1=\"100.0\" y1=\"170.0\" x2=\"100.0\" y2=\"178.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"100.0\" y=\"158.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">6</text><line x1=\"65.0\" y1=\"160.6\" x2=\"61.0\" y2=\"167.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"71.0\" y=\"150.2\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">7</text><line x1=\"39.4\" y1=\"135.0\" x2=\"32.5\" y2=\"139.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"49.8\" y=\"129.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">8</text><line x1=\"30.0\" y1=\"100.0\" x2=\"22.0\" y2=\"100.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"42.0\" y=\"100.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">9</text><line x1=\"39.4\" y1=\"65.0\" x2=\"32.5\" y2=\"61.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"49.8\" y=\"71.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">10</text><line x1=\"65.0\" y1=\"39.4\" x2=\"61.0\" y2=\"32.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"71.0\" y=\"49.8\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">11</text><line x1=\"100\" y1=\"100\" x2=\"145.0\" y2=\"100.0\" stroke=\"#333\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"100\" y1=\"100\" x2=\"100.0\" y2=\"35.0\" stroke=\"#555\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><circle cx=\"100\" cy=\"100\" r=\"4\" fill=\"#333\"/></svg>"
     },
     {
       "id": "wb_L4_s32_q12",
@@ -3202,7 +3443,8 @@
       ],
       "correct_answer": 3,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S32"
+      "source": "Wavebook L4 S32",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s32_q13",
@@ -3219,7 +3461,9 @@
       ],
       "correct_answer": 2,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S32"
+      "source": "Wavebook L4 S32",
+      "svg": "wb_L4_s32_q13.svg",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s32_q14",
@@ -3229,14 +3473,16 @@
       "difficulty_tier": "challenge",
       "question_number": 14,
       "choices": [
-        "90\u00b0",
-        "270\u00b0",
-        "180\u00b0",
-        "360\u00b0"
+        "90°",
+        "270°",
+        "180°",
+        "360°"
       ],
       "correct_answer": 2,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S32"
+      "source": "Wavebook L4 S32",
+      "svg": "wb_L4_s32_q14.svg",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s32_q15",
@@ -3253,7 +3499,9 @@
       ],
       "correct_answer": 3,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S32"
+      "source": "Wavebook L4 S32",
+      "svg": "wb_L4_s32_q15.svg",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s37_q05",
@@ -3263,14 +3511,15 @@
       "difficulty_tier": "warmup",
       "question_number": 5,
       "choices": [
-        "96 cm\u00b2",
-        "48 cm\u00b2",
-        "24 cm\u00b2",
-        "48 cm\u00b2"
+        "96 cm²",
+        "48 cm²",
+        "24 cm²",
+        "36 cm²"
       ],
-      "correct_answer": 3,
+      "correct_answer": 1,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S37"
+      "source": "Wavebook L4 S37",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s37_q06",
@@ -3280,14 +3529,15 @@
       "difficulty_tier": "practice",
       "question_number": 6,
       "choices": [
-        "46 cm\u00b2",
-        "120 cm\u00b2",
-        "23 cm\u00b2",
-        "60 cm\u00b2"
+        "46 cm²",
+        "120 cm²",
+        "23 cm²",
+        "60 cm²"
       ],
       "correct_answer": 1,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S37"
+      "source": "Wavebook L4 S37",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s37_q07",
@@ -3297,35 +3547,19 @@
       "difficulty_tier": "practice",
       "question_number": 7,
       "choices": [
-        "16 cm\u00b2",
-        "30 cm\u00b2",
-        "60 cm\u00b2",
-        "80 cm\u00b2"
+        "16 cm²",
+        "30 cm²",
+        "60 cm²",
+        "None of these"
       ],
       "correct_answer": 2,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S37"
-    },
-    {
-      "id": "wb_L4_s37_q08",
-      "stem": "The area of a square with side 9 cm is:",
-      "interaction_mode": "mcq",
-      "topic": "Area of Plane Figures",
-      "difficulty_tier": "practice",
-      "question_number": 8,
-      "choices": [
-        "18 cm\u00b2",
-        "36 cm\u00b2",
-        "81 cm\u00b2",
-        "72 cm\u00b2"
-      ],
-      "correct_answer": 2,
-      "grade_band": "5-6",
-      "source": "Wavebook L4 S37"
+      "source": "Wavebook L4 S37",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s37_q10",
-      "stem": "If the area of a rectangle is 72 cm\u00b2 and its length is 12 cm, what is the breadth?",
+      "stem": "If the area of a rectangle is 72 cm² and its length is 12 cm, what is the breadth?",
       "interaction_mode": "mcq",
       "topic": "Area of Plane Figures",
       "difficulty_tier": "practice",
@@ -3338,7 +3572,8 @@
       ],
       "correct_answer": 1,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S37"
+      "source": "Wavebook L4 S37",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s37_q12",
@@ -3348,14 +3583,15 @@
       "difficulty_tier": "challenge",
       "question_number": 12,
       "choices": [
-        "80 cm\u00b2",
-        "18 cm\u00b2",
-        "40 cm\u00b2",
-        "36 cm\u00b2"
+        "80 cm²",
+        "18 cm²",
+        "40 cm²",
+        "36 cm²"
       ],
       "correct_answer": 2,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S37"
+      "source": "Wavebook L4 S37",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s37_q14",
@@ -3365,14 +3601,15 @@
       "difficulty_tier": "challenge",
       "question_number": 14,
       "choices": [
-        "60 cm\u00b2",
-        "100 cm\u00b2",
-        "40 cm\u00b2",
-        "50 cm\u00b2"
+        "60 cm²",
+        "100 cm²",
+        "40 cm²",
+        "50 cm²"
       ],
       "correct_answer": 3,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S37"
+      "source": "Wavebook L4 S37",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s37_q15",
@@ -3382,14 +3619,15 @@
       "difficulty_tier": "challenge",
       "question_number": 15,
       "choices": [
-        "9\u221a3 cm\u00b2",
-        "18 cm\u00b2",
-        "12\u221a3 cm\u00b2",
-        "36 cm\u00b2"
+        "9√3 cm²",
+        "18 cm²",
+        "12√3 cm²",
+        "36 cm²"
       ],
       "correct_answer": 0,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S37"
+      "source": "Wavebook L4 S37",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s38_q06",
@@ -3406,24 +3644,8 @@
       ],
       "correct_answer": 1,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S38"
-    },
-    {
-      "id": "wb_L4_s38_q07",
-      "stem": "The perimeter of a square with side 15 cm is:",
-      "interaction_mode": "mcq",
-      "topic": "Perimeter of Plane Figures",
-      "difficulty_tier": "practice",
-      "question_number": 7,
-      "choices": [
-        "30 cm",
-        "45 cm",
-        "225 cm\u00b2",
-        "60 cm"
-      ],
-      "correct_answer": 3,
-      "grade_band": "5-6",
-      "source": "Wavebook L4 S38"
+      "source": "Wavebook L4 S38",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s38_q08",
@@ -3441,7 +3663,8 @@
       ],
       "correct_answer": 4,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S38"
+      "source": "Wavebook L4 S38",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s38_q11",
@@ -3458,11 +3681,12 @@
       ],
       "correct_answer": 2,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S38"
+      "source": "Wavebook L4 S38",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s38_q13",
-      "stem": "The circumference of a circle with radius 7 cm is (\u03c0 = 22/7):",
+      "stem": "The circumference of a circle with radius 7 cm is (π = 22/7):",
       "interaction_mode": "mcq",
       "topic": "Perimeter of Plane Figures",
       "difficulty_tier": "challenge",
@@ -3475,7 +3699,8 @@
       ],
       "correct_answer": 2,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S38"
+      "source": "Wavebook L4 S38",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s38_q14",
@@ -3492,7 +3717,8 @@
       ],
       "correct_answer": 3,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S38"
+      "source": "Wavebook L4 S38",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s38_q15",
@@ -3509,7 +3735,8 @@
       ],
       "correct_answer": 1,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S38"
+      "source": "Wavebook L4 S38",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s40_q01",
@@ -3526,7 +3753,8 @@
       ],
       "correct_answer": 1,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S40"
+      "source": "Wavebook L4 S40",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s40_q02",
@@ -3543,7 +3771,8 @@
       ],
       "correct_answer": 3,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S40"
+      "source": "Wavebook L4 S40",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s40_q03",
@@ -3555,12 +3784,13 @@
       "choices": [
         "Only I follows",
         "Only II follows",
-        "Only I follows",
+        "Both I and II follow",
         "Neither follows"
       ],
-      "correct_answer": 2,
+      "correct_answer": 0,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S40"
+      "source": "Wavebook L4 S40",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s40_q04",
@@ -3577,7 +3807,8 @@
       ],
       "correct_answer": 1,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S40"
+      "source": "Wavebook L4 S40",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s40_q05",
@@ -3594,7 +3825,8 @@
       ],
       "correct_answer": 0,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S40"
+      "source": "Wavebook L4 S40",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s40_q06",
@@ -3611,7 +3843,8 @@
       ],
       "correct_answer": 0,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S40"
+      "source": "Wavebook L4 S40",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s40_q07",
@@ -3623,12 +3856,13 @@
       "choices": [
         "40",
         "36",
-        "38",
+        "39",
         "42"
       ],
       "correct_answer": 3,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S40"
+      "source": "Wavebook L4 S40",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s40_q08",
@@ -3645,7 +3879,8 @@
       ],
       "correct_answer": 0,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S40"
+      "source": "Wavebook L4 S40",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s40_q09",
@@ -3662,7 +3897,8 @@
       ],
       "correct_answer": 2,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S40"
+      "source": "Wavebook L4 S40",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s40_q10",
@@ -3679,7 +3915,8 @@
       ],
       "correct_answer": 2,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S40"
+      "source": "Wavebook L4 S40",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s40_q11",
@@ -3696,7 +3933,8 @@
       ],
       "correct_answer": 0,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S40"
+      "source": "Wavebook L4 S40",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s40_q12",
@@ -3713,7 +3951,8 @@
       ],
       "correct_answer": 1,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S40"
+      "source": "Wavebook L4 S40",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s40_q13",
@@ -3730,7 +3969,8 @@
       ],
       "correct_answer": 1,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S40"
+      "source": "Wavebook L4 S40",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s40_q14",
@@ -3747,7 +3987,10 @@
       ],
       "correct_answer": 1,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S40"
+      "source": "Wavebook L4 S40",
+      "svg": "wb_L4_s40_q14.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 160\" width=\"300\" height=\"160\" style=\"font-family:Arial,sans-serif\"><rect x=\"20\" y=\"20\" width=\"260\" height=\"120\" rx=\"10\" fill=\"#F5F5F5\" stroke=\"#BDBDBD\" stroke-width=\"2\"/><text x=\"150\" y=\"70\" text-anchor=\"middle\" font-size=\"13\" fill=\"#666\">Visual Illustration</text><text x=\"150\" y=\"95\" text-anchor=\"middle\" font-size=\"11\" fill=\"#999\">for this question</text></svg>"
     },
     {
       "id": "wb_L4_s40_q15",
@@ -3764,7 +4007,8 @@
       ],
       "correct_answer": 3,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S40"
+      "source": "Wavebook L4 S40",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s10_q01",
@@ -3782,7 +4026,8 @@
       "correct_answer": 2,
       "grade_band": "5-6",
       "source": "Wavebook L4 S10",
-      "svg": "svg/wb_L4_s10_q01.svg"
+      "svg": "svg/wb_L4_s10_q01.svg",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s10_q02",
@@ -3800,7 +4045,8 @@
       "correct_answer": 1,
       "grade_band": "5-6",
       "source": "Wavebook L4 S10",
-      "svg": "svg/wb_L4_s10_q02.svg"
+      "svg": "svg/wb_L4_s10_q02.svg",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s10_q03",
@@ -3818,7 +4064,9 @@
       "correct_answer": 0,
       "grade_band": "5-6",
       "source": "Wavebook L4 S10",
-      "svg": "svg/wb_L4_s10_q03.svg"
+      "svg": "svg/wb_L4_s10_q03.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 130\" width=\"300\" height=\"130\" style=\"font-family:Arial,sans-serif\"><rect x=\"20\" y=\"20\" width=\"70\" height=\"35\" rx=\"5\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2\"/><text x=\"55\" y=\"43\" text-anchor=\"middle\" font-size=\"16\" fill=\"#333\">3</text><rect x=\"110\" y=\"20\" width=\"70\" height=\"35\" rx=\"5\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2\"/><text x=\"145\" y=\"43\" text-anchor=\"middle\" font-size=\"16\" fill=\"#333\">7</text><rect x=\"200\" y=\"20\" width=\"70\" height=\"35\" rx=\"5\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2\"/><text x=\"235\" y=\"43\" text-anchor=\"middle\" font-size=\"16\" fill=\"#333\">12</text><rect x=\"20\" y=\"70\" width=\"70\" height=\"35\" rx=\"5\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2\"/><text x=\"55\" y=\"93\" text-anchor=\"middle\" font-size=\"16\" fill=\"#333\">5</text><rect x=\"110\" y=\"70\" width=\"70\" height=\"35\" rx=\"5\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2\"/><text x=\"145\" y=\"93\" text-anchor=\"middle\" font-size=\"16\" fill=\"#333\">8</text><rect x=\"200\" y=\"70\" width=\"70\" height=\"35\" rx=\"5\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2\"/><text x=\"235\" y=\"93\" text-anchor=\"middle\" font-size=\"16\" fill=\"#333\">1</text></svg>"
     },
     {
       "id": "wb_L4_s10_q04",
@@ -3836,7 +4084,9 @@
       "correct_answer": 3,
       "grade_band": "5-6",
       "source": "Wavebook L4 S10",
-      "svg": "svg/wb_L4_s10_q04.svg"
+      "svg": "svg/wb_L4_s10_q04.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 370 100\" width=\"370\" height=\"100\" style=\"font-family:Arial,sans-serif\"><circle cx=\"30\" cy=\"50\" r=\"20\" fill=\"#42A5F5\" stroke=\"#333\" stroke-width=\"1.5\"/><rect x=\"72\" y=\"32\" width=\"36\" height=\"36\" fill=\"#FF7043\" stroke=\"#333\" stroke-width=\"1.5\"/><circle cx=\"150\" cy=\"50\" r=\"20\" fill=\"#42A5F5\" stroke=\"#333\" stroke-width=\"1.5\"/><rect x=\"192\" y=\"32\" width=\"36\" height=\"36\" fill=\"#FF7043\" stroke=\"#333\" stroke-width=\"1.5\"/><circle cx=\"270\" cy=\"50\" r=\"20\" fill=\"#42A5F5\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"330\" y=\"55\" font-size=\"24\" fill=\"#333\">?</text></svg>"
     },
     {
       "id": "wb_L4_s10_q05",
@@ -3854,7 +4104,8 @@
       "correct_answer": 1,
       "grade_band": "5-6",
       "source": "Wavebook L4 S10",
-      "svg": "svg/wb_L4_s10_q05.svg"
+      "svg": "svg/wb_L4_s10_q05.svg",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s10_q06",
@@ -3872,7 +4123,9 @@
       "correct_answer": 2,
       "grade_band": "5-6",
       "source": "Wavebook L4 S10",
-      "svg": "svg/wb_L4_s10_q06.svg"
+      "svg": "svg/wb_L4_s10_q06.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 370 100\" width=\"370\" height=\"100\" style=\"font-family:Arial,sans-serif\"><circle cx=\"30\" cy=\"50\" r=\"20\" fill=\"#42A5F5\" stroke=\"#333\" stroke-width=\"1.5\"/><rect x=\"72\" y=\"32\" width=\"36\" height=\"36\" fill=\"#FF7043\" stroke=\"#333\" stroke-width=\"1.5\"/><circle cx=\"150\" cy=\"50\" r=\"20\" fill=\"#42A5F5\" stroke=\"#333\" stroke-width=\"1.5\"/><rect x=\"192\" y=\"32\" width=\"36\" height=\"36\" fill=\"#FF7043\" stroke=\"#333\" stroke-width=\"1.5\"/><circle cx=\"270\" cy=\"50\" r=\"20\" fill=\"#42A5F5\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"330\" y=\"55\" font-size=\"24\" fill=\"#333\">?</text></svg>"
     },
     {
       "id": "wb_L4_s10_q07",
@@ -3890,7 +4143,8 @@
       "correct_answer": 0,
       "grade_band": "5-6",
       "source": "Wavebook L4 S10",
-      "svg": "svg/wb_L4_s10_q07.svg"
+      "svg": "svg/wb_L4_s10_q07.svg",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s10_q08",
@@ -3908,7 +4162,8 @@
       "correct_answer": 3,
       "grade_band": "5-6",
       "source": "Wavebook L4 S10",
-      "svg": "svg/wb_L4_s10_q08.svg"
+      "svg": "svg/wb_L4_s10_q08.svg",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s10_q09",
@@ -3926,7 +4181,9 @@
       "correct_answer": 1,
       "grade_band": "5-6",
       "source": "Wavebook L4 S10",
-      "svg": "svg/wb_L4_s10_q09.svg"
+      "svg": "svg/wb_L4_s10_q09.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 160\" width=\"300\" height=\"160\" style=\"font-family:Arial,sans-serif\"><rect x=\"20\" y=\"20\" width=\"260\" height=\"120\" rx=\"10\" fill=\"#F5F5F5\" stroke=\"#BDBDBD\" stroke-width=\"2\"/><text x=\"150\" y=\"70\" text-anchor=\"middle\" font-size=\"13\" fill=\"#666\">Visual Illustration</text><text x=\"150\" y=\"95\" text-anchor=\"middle\" font-size=\"11\" fill=\"#999\">for this question</text></svg>"
     },
     {
       "id": "wb_L4_s10_q10",
@@ -3944,7 +4201,8 @@
       "correct_answer": 2,
       "grade_band": "5-6",
       "source": "Wavebook L4 S10",
-      "svg": "svg/wb_L4_s10_q10.svg"
+      "svg": "svg/wb_L4_s10_q10.svg",
+      "diagnostics": {}
     }
   ]
 }

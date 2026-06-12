@@ -1,0 +1,76 @@
+<svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Six-Pointed Star Number Placement (Moscow Puzzles #324) -->
+  <defs>
+    <radialGradient id="nodeGlow" cx="50%" cy="50%">
+      <stop offset="0%" style="stop-color:#FFF9C4"/>
+      <stop offset="100%" style="stop-color:#FFD54F"/>
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <!-- Background -->
+  <rect width="600" height="400" fill="#0D1B2A" rx="12"/>
+  <text x="300" y="32" text-anchor="middle" font-family="Georgia" font-size="20" fill="#FFD700" font-weight="bold">The Magic Star</text>
+  <text x="300" y="52" text-anchor="middle" font-family="Georgia" font-size="12" fill="#81D4FA" font-style="italic">Place numbers 1-12 so each line sums to 26!</text>
+  <!-- Star of David shape - outer points and inner hexagon -->
+  <!-- Star lines -->
+  <polygon points="300,75 345,165 435,165 360,220 385,310 300,260 215,310 240,220 165,165 255,165"
+           fill="none" stroke="#1E88E5" stroke-width="2" opacity="0.4"/>
+  <!-- Inner hexagon lines -->
+  <polygon points="255,165 345,165 360,220 300,260 240,220 255,165"
+           fill="none" stroke="#1E88E5" stroke-width="1.5" opacity="0.3"/>
+  <!-- Connection lines for the star -->
+  <line x1="300" y1="75" x2="300" y2="260" stroke="#1E88E5" stroke-width="1" opacity="0.2"/>
+  <line x1="165" y1="165" x2="385" y2="310" stroke="#1E88E5" stroke-width="1" opacity="0.2"/>
+  <line x1="435" y1="165" x2="215" y2="310" stroke="#1E88E5" stroke-width="1" opacity="0.2"/>
+  <!-- Node circles - 6 outer tips -->
+  <circle cx="300" cy="75" r="20" fill="url(#nodeGlow)" filter="url(#glow)" stroke="#FF8F00" stroke-width="2"/>
+  <text x="300" y="81" text-anchor="middle" font-family="Arial" font-size="16" fill="#5D4037" font-weight="bold">?</text>
+  <circle cx="435" cy="165" r="20" fill="url(#nodeGlow)" filter="url(#glow)" stroke="#FF8F00" stroke-width="2"/>
+  <text x="435" y="171" text-anchor="middle" font-family="Arial" font-size="16" fill="#5D4037" font-weight="bold">?</text>
+  <circle cx="385" cy="310" r="20" fill="url(#nodeGlow)" filter="url(#glow)" stroke="#FF8F00" stroke-width="2"/>
+  <text x="385" y="316" text-anchor="middle" font-family="Arial" font-size="16" fill="#5D4037" font-weight="bold">?</text>
+  <circle cx="215" cy="310" r="20" fill="url(#nodeGlow)" filter="url(#glow)" stroke="#FF8F00" stroke-width="2"/>
+  <text x="215" y="316" text-anchor="middle" font-family="Arial" font-size="16" fill="#5D4037" font-weight="bold">?</text>
+  <circle cx="165" cy="165" r="20" fill="url(#nodeGlow)" filter="url(#glow)" stroke="#FF8F00" stroke-width="2"/>
+  <text x="165" y="171" text-anchor="middle" font-family="Arial" font-size="16" fill="#5D4037" font-weight="bold">?</text>
+  <!-- 6 inner hexagon vertices -->
+  <circle cx="255" cy="165" r="20" fill="url(#nodeGlow)" filter="url(#glow)" stroke="#FF8F00" stroke-width="2"/>
+  <text x="255" y="171" text-anchor="middle" font-family="Arial" font-size="16" fill="#5D4037" font-weight="bold">?</text>
+  <circle cx="345" cy="165" r="20" fill="url(#nodeGlow)" filter="url(#glow)" stroke="#FF8F00" stroke-width="2"/>
+  <text x="345" y="171" text-anchor="middle" font-family="Arial" font-size="16" fill="#5D4037" font-weight="bold">?</text>
+  <circle cx="360" cy="220" r="20" fill="url(#nodeGlow)" filter="url(#glow)" stroke="#FF8F00" stroke-width="2"/>
+  <text x="360" y="226" text-anchor="middle" font-family="Arial" font-size="16" fill="#5D4037" font-weight="bold">?</text>
+  <circle cx="300" cy="260" r="20" fill="url(#nodeGlow)" filter="url(#glow)" stroke="#FF8F00" stroke-width="2"/>
+  <text x="300" y="266" text-anchor="middle" font-family="Arial" font-size="16" fill="#5D4037" font-weight="bold">?</text>
+  <circle cx="240" cy="220" r="20" fill="url(#nodeGlow)" filter="url(#glow)" stroke="#FF8F00" stroke-width="2"/>
+  <text x="240" y="226" text-anchor="middle" font-family="Arial" font-size="16" fill="#5D4037" font-weight="bold">?</text>
+  <!-- Two more nodes needed for 12 total -->
+  <circle cx="300" cy="165" r="20" fill="url(#nodeGlow)" filter="url(#glow)" stroke="#FF8F00" stroke-width="2"/>
+  <text x="300" y="171" text-anchor="middle" font-family="Arial" font-size="16" fill="#5D4037" font-weight="bold">?</text>
+  <circle cx="300" cy="220" r="20" fill="url(#nodeGlow)" filter="url(#glow)" stroke="#FF8F00" stroke-width="2"/>
+  <text x="300" y="226" text-anchor="middle" font-family="Arial" font-size="16" fill="#5D4037" font-weight="bold">?</text>
+  <!-- Number bank -->
+  <rect x="470" y="75" width="120" height="270" fill="#1B3A4B" rx="10" opacity="0.8"/>
+  <text x="530" y="100" text-anchor="middle" font-family="Georgia" font-size="13" fill="#FFD700" font-weight="bold">Numbers</text>
+  <circle cx="500" cy="125" r="14" fill="#2196F3" opacity="0.8"/><text x="500" y="130" text-anchor="middle" font-family="Arial" font-size="12" fill="white" font-weight="bold">1</text>
+  <circle cx="530" cy="125" r="14" fill="#2196F3" opacity="0.8"/><text x="530" y="130" text-anchor="middle" font-family="Arial" font-size="12" fill="white" font-weight="bold">2</text>
+  <circle cx="560" cy="125" r="14" fill="#2196F3" opacity="0.8"/><text x="560" y="130" text-anchor="middle" font-family="Arial" font-size="12" fill="white" font-weight="bold">3</text>
+  <circle cx="500" cy="160" r="14" fill="#2196F3" opacity="0.8"/><text x="500" y="165" text-anchor="middle" font-family="Arial" font-size="12" fill="white" font-weight="bold">4</text>
+  <circle cx="530" cy="160" r="14" fill="#2196F3" opacity="0.8"/><text x="530" y="165" text-anchor="middle" font-family="Arial" font-size="12" fill="white" font-weight="bold">5</text>
+  <circle cx="560" cy="160" r="14" fill="#2196F3" opacity="0.8"/><text x="560" y="165" text-anchor="middle" font-family="Arial" font-size="12" fill="white" font-weight="bold">6</text>
+  <circle cx="500" cy="195" r="14" fill="#2196F3" opacity="0.8"/><text x="500" y="200" text-anchor="middle" font-family="Arial" font-size="12" fill="white" font-weight="bold">7</text>
+  <circle cx="530" cy="195" r="14" fill="#2196F3" opacity="0.8"/><text x="530" y="200" text-anchor="middle" font-family="Arial" font-size="12" fill="white" font-weight="bold">8</text>
+  <circle cx="560" cy="195" r="14" fill="#2196F3" opacity="0.8"/><text x="560" y="200" text-anchor="middle" font-family="Arial" font-size="12" fill="white" font-weight="bold">9</text>
+  <circle cx="500" cy="230" r="14" fill="#2196F3" opacity="0.8"/><text x="500" y="235" text-anchor="middle" font-family="Arial" font-size="12" fill="white" font-weight="bold">10</text>
+  <circle cx="530" cy="230" r="14" fill="#2196F3" opacity="0.8"/><text x="530" y="235" text-anchor="middle" font-family="Arial" font-size="12" fill="white" font-weight="bold">11</text>
+  <circle cx="560" cy="230" r="14" fill="#2196F3" opacity="0.8"/><text x="560" y="235" text-anchor="middle" font-family="Arial" font-size="12" fill="white" font-weight="bold">12</text>
+  <!-- Sum target -->
+  <rect x="485" y="260" width="90" height="35" fill="#FF6F00" rx="6" opacity="0.9"/>
+  <text x="530" y="282" text-anchor="middle" font-family="Georgia" font-size="14" fill="white" font-weight="bold">Sum = 26</text>
+  <!-- Bottom instruction -->
+  <rect x="30" y="350" width="540" height="40" fill="#263238" rx="8" opacity="0.7"/>
+  <text x="300" y="375" text-anchor="middle" font-family="Arial" font-size="13" fill="#81D4FA">Drag numbers from the bank to the star nodes!</text>
+</svg>

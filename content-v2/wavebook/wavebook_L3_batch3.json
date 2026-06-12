@@ -2,76 +2,8 @@
   "level": 3,
   "batch": 3,
   "grade_band": "3-4",
-  "total_questions": 40,
+  "total_questions": 15,
   "questions": [
-    {
-      "id": "wb_L3_s18_q01",
-      "stem": "The perimeter of a square with side 15 cm is",
-      "interaction_mode": "mcq",
-      "topic": "Perimeter advanced",
-      "difficulty_tier": "warmup",
-      "question_number": 1,
-      "choices": [
-        "30 cm",
-        "45 cm",
-        "60 cm",
-        "225 cm"
-      ],
-      "correct_answer": 2,
-      "grade_band": "3-4",
-      "source": "Wavebook L3 S18"
-    },
-    {
-      "id": "wb_L3_s18_q02",
-      "stem": "Pranav jogged 4.5 times around a rectangular field that measured 25m by 12m. What is the total distance he jogged?",
-      "interaction_mode": "mcq",
-      "topic": "Perimeter",
-      "difficulty_tier": "warmup",
-      "question_number": 2,
-      "choices": [
-        "323m",
-        "333m",
-        "433m",
-        "443m"
-      ],
-      "correct_answer": 1,
-      "grade_band": "3-4",
-      "source": "Wavebook L3 S18"
-    },
-    {
-      "id": "wb_L3_s18_q03",
-      "stem": "An equilateral triangle has a perimeter of 36 cm. What is the length of each side?",
-      "interaction_mode": "mcq",
-      "topic": "Perimeter advanced",
-      "difficulty_tier": "warmup",
-      "question_number": 3,
-      "choices": [
-        "9 cm",
-        "12 cm",
-        "18 cm",
-        "6 cm"
-      ],
-      "correct_answer": 1,
-      "grade_band": "3-4",
-      "source": "Wavebook L3 S18"
-    },
-    {
-      "id": "wb_L3_s18_q04",
-      "stem": "The perimeter of a rectangle is 50 cm. If its length is 15 cm, what is its breadth?",
-      "interaction_mode": "mcq",
-      "topic": "Perimeter advanced",
-      "difficulty_tier": "warmup",
-      "question_number": 4,
-      "choices": [
-        "35 cm",
-        "20 cm",
-        "10 cm",
-        "25 cm"
-      ],
-      "correct_answer": 2,
-      "grade_band": "3-4",
-      "source": "Wavebook L3 S18"
-    },
     {
       "id": "wb_L3_s18_q05",
       "stem": "Which of the following figures has an area of 20 sq. units and a perimeter of 18 units?",
@@ -88,143 +20,9 @@
       "correct_answer": 3,
       "grade_band": "3-4",
       "source": "Wavebook L3 S18",
-      "svg": "svg/wb_L3_s18_q05.svg"
-    },
-    {
-      "id": "wb_L3_s18_q06",
-      "stem": "A triangular park has sides 45 m, 60 m, and 75 m. What is its perimeter?",
-      "interaction_mode": "mcq",
-      "topic": "Perimeter advanced",
-      "difficulty_tier": "practice",
-      "question_number": 6,
-      "choices": [
-        "180 m",
-        "150 m",
-        "170 m",
-        "160 m"
-      ],
-      "correct_answer": 0,
-      "grade_band": "3-4",
-      "source": "Wavebook L3 S18"
-    },
-    {
-      "id": "wb_L3_s18_q07",
-      "stem": "Fencing is needed around a rectangular field 80 m long and 60 m wide. Find the total length of fencing required.",
-      "interaction_mode": "mcq",
-      "topic": "Perimeter advanced",
-      "difficulty_tier": "practice",
-      "question_number": 7,
-      "choices": [
-        "140 m",
-        "280 m",
-        "4800 m",
-        "300 m"
-      ],
-      "correct_answer": 1,
-      "grade_band": "3-4",
-      "source": "Wavebook L3 S18"
-    },
-    {
-      "id": "wb_L3_s18_q08",
-      "stem": "A wire is bent into a square of side 22 cm. If the same wire is bent into a rectangle of length 25 cm, what is the breadth?",
-      "interaction_mode": "mcq",
-      "topic": "Perimeter advanced",
-      "difficulty_tier": "practice",
-      "question_number": 8,
-      "choices": [
-        "19 cm",
-        "22 cm",
-        "15 cm",
-        "20 cm"
-      ],
-      "correct_answer": 0,
-      "grade_band": "3-4",
-      "source": "Wavebook L3 S18"
-    },
-    {
-      "id": "wb_L3_s18_q09",
-      "stem": "The cost of fencing a rectangular plot at Rs 15 per metre is Rs 1200. If the length is 25 m, find the breadth.",
-      "interaction_mode": "mcq",
-      "topic": "Perimeter advanced",
-      "difficulty_tier": "practice",
-      "question_number": 9,
-      "choices": [
-        "15 m",
-        "20 m",
-        "10 m",
-        "25 m"
-      ],
-      "correct_answer": 0,
-      "grade_band": "3-4",
-      "source": "Wavebook L3 S18"
-    },
-    {
-      "id": "wb_L3_s18_q10",
-      "stem": "A regular hexagon has a perimeter of 48 cm. What is the length of each side?",
-      "interaction_mode": "mcq",
-      "topic": "Perimeter advanced",
-      "difficulty_tier": "practice",
-      "question_number": 10,
-      "choices": [
-        "6 cm",
-        "8 cm",
-        "12 cm",
-        "24 cm"
-      ],
-      "correct_answer": 1,
-      "grade_band": "3-4",
-      "source": "Wavebook L3 S18"
-    },
-    {
-      "id": "wb_L3_s18_q11",
-      "stem": "Two squares have sides 5 cm and 3 cm. The difference of their perimeters is",
-      "interaction_mode": "mcq",
-      "topic": "Perimeter advanced",
-      "difficulty_tier": "challenge",
-      "question_number": 11,
-      "choices": [
-        "8 cm",
-        "2 cm",
-        "16 cm",
-        "4 cm"
-      ],
-      "correct_answer": 0,
-      "grade_band": "3-4",
-      "source": "Wavebook L3 S18"
-    },
-    {
-      "id": "wb_L3_s18_q12",
-      "stem": "A path goes around the outside of a rectangular park 200 m by 150 m. How far do you walk in one complete round?",
-      "interaction_mode": "mcq",
-      "topic": "Perimeter advanced",
-      "difficulty_tier": "challenge",
-      "question_number": 12,
-      "choices": [
-        "350 m",
-        "700 m",
-        "300 m",
-        "600 m"
-      ],
-      "correct_answer": 1,
-      "grade_band": "3-4",
-      "source": "Wavebook L3 S18"
-    },
-    {
-      "id": "wb_L3_s18_q13",
-      "stem": "The perimeter of an isosceles triangle is 40 cm. If the unequal side is 12 cm, what is the length of each equal side?",
-      "interaction_mode": "mcq",
-      "topic": "Perimeter advanced",
-      "difficulty_tier": "challenge",
-      "question_number": 13,
-      "choices": [
-        "14 cm",
-        "28 cm",
-        "16 cm",
-        "20 cm"
-      ],
-      "correct_answer": 0,
-      "grade_band": "3-4",
-      "source": "Wavebook L3 S18"
+      "svg": "svg/wb_L3_s18_q05.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 215 180\" width=\"215\" height=\"180\" style=\"font-family:Arial,sans-serif\"><rect x=\"20\" y=\"20\" width=\"35\" height=\"35\" fill=\"#FFB74D\" stroke=\"#333\" stroke-width=\"1\"/><rect x=\"55\" y=\"20\" width=\"35\" height=\"35\" fill=\"#FFB74D\" stroke=\"#333\" stroke-width=\"1\"/><rect x=\"90\" y=\"20\" width=\"35\" height=\"35\" fill=\"#FFB74D\" stroke=\"#333\" stroke-width=\"1\"/><rect x=\"125\" y=\"20\" width=\"35\" height=\"35\" fill=\"#FFB74D\" stroke=\"#333\" stroke-width=\"1\"/><rect x=\"160\" y=\"20\" width=\"35\" height=\"35\" fill=\"#FFB74D\" stroke=\"#333\" stroke-width=\"1\"/><rect x=\"20\" y=\"55\" width=\"35\" height=\"35\" fill=\"#FFB74D\" stroke=\"#333\" stroke-width=\"1\"/><rect x=\"55\" y=\"55\" width=\"35\" height=\"35\" fill=\"#FFB74D\" stroke=\"#333\" stroke-width=\"1\"/><rect x=\"90\" y=\"55\" width=\"35\" height=\"35\" fill=\"#FFB74D\" stroke=\"#333\" stroke-width=\"1\"/><rect x=\"125\" y=\"55\" width=\"35\" height=\"35\" fill=\"#FFB74D\" stroke=\"#333\" stroke-width=\"1\"/><rect x=\"160\" y=\"55\" width=\"35\" height=\"35\" fill=\"#FFB74D\" stroke=\"#333\" stroke-width=\"1\"/><rect x=\"20\" y=\"90\" width=\"35\" height=\"35\" fill=\"#FFB74D\" stroke=\"#333\" stroke-width=\"1\"/><rect x=\"55\" y=\"90\" width=\"35\" height=\"35\" fill=\"#FFB74D\" stroke=\"#333\" stroke-width=\"1\"/><rect x=\"90\" y=\"90\" width=\"35\" height=\"35\" fill=\"#FFB74D\" stroke=\"#333\" stroke-width=\"1\"/><rect x=\"125\" y=\"90\" width=\"35\" height=\"35\" fill=\"#FFB74D\" stroke=\"#333\" stroke-width=\"1\"/><rect x=\"160\" y=\"90\" width=\"35\" height=\"35\" fill=\"#FFB74D\" stroke=\"#333\" stroke-width=\"1\"/><rect x=\"20\" y=\"125\" width=\"35\" height=\"35\" fill=\"#FFB74D\" stroke=\"#333\" stroke-width=\"1\"/><rect x=\"55\" y=\"125\" width=\"35\" height=\"35\" fill=\"#FFB74D\" stroke=\"#333\" stroke-width=\"1\"/><rect x=\"90\" y=\"125\" width=\"35\" height=\"35\" fill=\"#FFB74D\" stroke=\"#333\" stroke-width=\"1\"/><rect x=\"125\" y=\"125\" width=\"35\" height=\"35\" fill=\"#FFB74D\" stroke=\"#333\" stroke-width=\"1\"/><rect x=\"160\" y=\"125\" width=\"35\" height=\"35\" fill=\"#FFB74D\" stroke=\"#333\" stroke-width=\"1\"/></svg>"
     },
     {
       "id": "wb_L3_s18_q14",
@@ -241,7 +39,8 @@
       ],
       "correct_answer": 1,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S18"
+      "source": "Wavebook L3 S18",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s18_q15",
@@ -257,43 +56,11 @@
         "10 mm",
         "12 mm"
       ],
-      "correct_answer": 3,
+      "correct_answer": 4,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S18"
-    },
-    {
-      "id": "wb_L3_s20_q01",
-      "stem": "The area of a square with side 9 cm is",
-      "interaction_mode": "mcq",
-      "topic": "Symmetry Introduction",
-      "difficulty_tier": "warmup",
-      "question_number": 1,
-      "choices": [
-        "36 sq cm",
-        "81 sq cm",
-        "18 sq cm",
-        "72 sq cm"
-      ],
-      "correct_answer": 1,
-      "grade_band": "3-4",
-      "source": "Wavebook L3 S20"
-    },
-    {
-      "id": "wb_L3_s20_q02",
-      "stem": "A rectangle has length 10 cm and breadth 6 cm. Its area is",
-      "interaction_mode": "mcq",
-      "topic": "Symmetry Introduction",
-      "difficulty_tier": "warmup",
-      "question_number": 2,
-      "choices": [
-        "32 sq cm",
-        "16 sq cm",
-        "60 sq cm",
-        "100 sq cm"
-      ],
-      "correct_answer": 2,
-      "grade_band": "3-4",
-      "source": "Wavebook L3 S20"
+      "source": "Wavebook L3 S18",
+      "svg": "wb_L3_s18_q15.svg",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s20_q03",
@@ -311,110 +78,9 @@
       "correct_answer": 1,
       "grade_band": "3-4",
       "source": "Wavebook L3 S20",
-      "svg": "svg/wb_L3_s20_q03.svg"
-    },
-    {
-      "id": "wb_L3_s20_q04",
-      "stem": "A triangle that has zero line of symmetry is",
-      "interaction_mode": "mcq",
-      "topic": "Symmetry",
-      "difficulty_tier": "warmup",
-      "question_number": 4,
-      "choices": [
-        "Equilateral triangle",
-        "Isosceles triangle",
-        "Scalene triangle",
-        "Right angled isosceles triangle"
-      ],
-      "correct_answer": 2,
-      "grade_band": "3-4",
-      "source": "Wavebook L3 S20",
-      "svg": "svg/wb_L3_s20_q04.svg"
-    },
-    {
-      "id": "wb_L3_s20_q05",
-      "stem": "The area of a rectangle with length 15 m and breadth 8 m is",
-      "interaction_mode": "mcq",
-      "topic": "Symmetry Introduction",
-      "difficulty_tier": "warmup",
-      "question_number": 5,
-      "choices": [
-        "46 sq m",
-        "120 sq m",
-        "23 sq m",
-        "150 sq m"
-      ],
-      "correct_answer": 1,
-      "grade_band": "3-4",
-      "source": "Wavebook L3 S20"
-    },
-    {
-      "id": "wb_L3_s20_q06",
-      "stem": "A rectangular garden is 25 m long and 18 m wide. What is its area?",
-      "interaction_mode": "mcq",
-      "topic": "Symmetry Introduction",
-      "difficulty_tier": "practice",
-      "question_number": 6,
-      "choices": [
-        "86 sq m",
-        "450 sq m",
-        "43 sq m",
-        "500 sq m"
-      ],
-      "correct_answer": 1,
-      "grade_band": "3-4",
-      "source": "Wavebook L3 S20"
-    },
-    {
-      "id": "wb_L3_s20_q07",
-      "stem": "The area of a right triangle with legs 6 cm and 8 cm is",
-      "interaction_mode": "mcq",
-      "topic": "Symmetry Introduction",
-      "difficulty_tier": "practice",
-      "question_number": 7,
-      "choices": [
-        "48 sq cm",
-        "24 sq cm",
-        "14 sq cm",
-        "10 sq cm"
-      ],
-      "correct_answer": 1,
-      "grade_band": "3-4",
-      "source": "Wavebook L3 S20"
-    },
-    {
-      "id": "wb_L3_s20_q08",
-      "stem": "A square room has area 144 sq m. Find the length of its side.",
-      "interaction_mode": "mcq",
-      "topic": "Symmetry Introduction",
-      "difficulty_tier": "practice",
-      "question_number": 8,
-      "choices": [
-        "14 m",
-        "12 m",
-        "36 m",
-        "72 m"
-      ],
-      "correct_answer": 1,
-      "grade_band": "3-4",
-      "source": "Wavebook L3 S20"
-    },
-    {
-      "id": "wb_L3_s20_q09",
-      "stem": "How many square tiles of side 2 cm are needed to cover a rectangle 12 cm by 8 cm?",
-      "interaction_mode": "mcq",
-      "topic": "Symmetry Introduction",
-      "difficulty_tier": "practice",
-      "question_number": 9,
-      "choices": [
-        "48",
-        "24",
-        "96",
-        "20"
-      ],
-      "correct_answer": 1,
-      "grade_band": "3-4",
-      "source": "Wavebook L3 S20"
+      "svg": "svg/wb_L3_s20_q03.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 210\" width=\"300\" height=\"210\" style=\"font-family:Arial,sans-serif\"><line x1=\"150\" y1=\"10\" x2=\"150\" y2=\"190\" stroke=\"#E57373\" stroke-width=\"2\" stroke-dasharray=\"6,4\"/><path d=\"M150,60 Q100,30 80,80 Q70,130 150,140 Q230,130 220,80 Q200,30 150,60Z\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2\"/><text x=\"150\" y=\"195\" text-anchor=\"middle\" font-size=\"11\" fill=\"#E57373\">Line of Symmetry</text></svg>"
     },
     {
       "id": "wb_L3_s20_q10",
@@ -432,92 +98,9 @@
       "correct_answer": 1,
       "grade_band": "3-4",
       "source": "Wavebook L3 S20",
-      "svg": "svg/wb_L3_s20_q10.svg"
-    },
-    {
-      "id": "wb_L3_s20_q11",
-      "stem": "How many of the following letters do not have any line of symmetry? R, K, A, M, T, O",
-      "interaction_mode": "mcq",
-      "topic": "Symmetry",
-      "difficulty_tier": "challenge",
-      "question_number": 11,
-      "choices": [
-        "None",
-        "Two",
-        "Three",
-        "Four"
-      ],
-      "correct_answer": 1,
-      "grade_band": "3-4",
-      "source": "Wavebook L3 S20"
-    },
-    {
-      "id": "wb_L3_s20_q12",
-      "stem": "Two squares have sides 8 cm and 6 cm. The difference of their areas is",
-      "interaction_mode": "mcq",
-      "topic": "Symmetry Introduction",
-      "difficulty_tier": "challenge",
-      "question_number": 12,
-      "choices": [
-        "28 sq cm",
-        "4 sq cm",
-        "14 sq cm",
-        "2 sq cm"
-      ],
-      "correct_answer": 0,
-      "grade_band": "3-4",
-      "source": "Wavebook L3 S20"
-    },
-    {
-      "id": "wb_L3_s20_q13",
-      "stem": "A triangular field has base 20 m and height 15 m. Find its area.",
-      "interaction_mode": "mcq",
-      "topic": "Symmetry Introduction",
-      "difficulty_tier": "challenge",
-      "question_number": 13,
-      "choices": [
-        "300 sq m",
-        "150 sq m",
-        "35 sq m",
-        "70 sq m"
-      ],
-      "correct_answer": 1,
-      "grade_band": "3-4",
-      "source": "Wavebook L3 S20"
-    },
-    {
-      "id": "wb_L3_s20_q14",
-      "stem": "A rectangle has area 72 sq cm and length 9 cm. What is its breadth?",
-      "interaction_mode": "mcq",
-      "topic": "Symmetry Introduction",
-      "difficulty_tier": "challenge",
-      "question_number": 14,
-      "choices": [
-        "63 cm",
-        "8 cm",
-        "6 cm",
-        "12 cm"
-      ],
-      "correct_answer": 1,
-      "grade_band": "3-4",
-      "source": "Wavebook L3 S20"
-    },
-    {
-      "id": "wb_L3_s20_q15",
-      "stem": "A floor 8 m by 6 m is to be covered with square tiles of side 50 cm. How many tiles are needed?",
-      "interaction_mode": "mcq",
-      "topic": "Symmetry Introduction",
-      "difficulty_tier": "challenge",
-      "question_number": 15,
-      "choices": [
-        "96",
-        "192",
-        "48",
-        "384"
-      ],
-      "correct_answer": 1,
-      "grade_band": "3-4",
-      "source": "Wavebook L3 S20"
+      "svg": "svg/wb_L3_s20_q10.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 210\" width=\"300\" height=\"210\" style=\"font-family:Arial,sans-serif\"><line x1=\"150\" y1=\"10\" x2=\"150\" y2=\"190\" stroke=\"#E57373\" stroke-width=\"2\" stroke-dasharray=\"6,4\"/><path d=\"M150,60 Q100,30 80,80 Q70,130 150,140 Q230,130 220,80 Q200,30 150,60Z\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2\"/><text x=\"150\" y=\"195\" text-anchor=\"middle\" font-size=\"11\" fill=\"#E57373\">Line of Symmetry</text></svg>"
     },
     {
       "id": "wb_L3_s22_q01",
@@ -535,7 +118,9 @@
       "correct_answer": 0,
       "grade_band": "3-4",
       "source": "Wavebook L3 S22",
-      "svg": "svg/wb_L3_s22_q01.svg"
+      "svg": "svg/wb_L3_s22_q01.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" width=\"320\" height=\"200\" style=\"font-family:Arial,sans-serif\"><circle cx=\"120\" cy=\"100\" r=\"70\" fill=\"rgba(66,165,245,0.3)\" stroke=\"#42A5F5\" stroke-width=\"2\"/><circle cx=\"200\" cy=\"100\" r=\"70\" fill=\"rgba(102,187,106,0.3)\" stroke=\"#66BB6A\" stroke-width=\"2\"/><text x=\"85\" y=\"30\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1565C0\">Set A</text><text x=\"235\" y=\"30\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#2E7D32\">Set B</text></svg>"
     },
     {
       "id": "wb_L3_s22_q02",
@@ -553,7 +138,9 @@
       "correct_answer": 2,
       "grade_band": "3-4",
       "source": "Wavebook L3 S22",
-      "svg": "svg/wb_L3_s22_q01.svg"
+      "svg": "svg/wb_L3_s22_q01.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" width=\"320\" height=\"200\" style=\"font-family:Arial,sans-serif\"><circle cx=\"120\" cy=\"100\" r=\"70\" fill=\"rgba(66,165,245,0.3)\" stroke=\"#42A5F5\" stroke-width=\"2\"/><circle cx=\"200\" cy=\"100\" r=\"70\" fill=\"rgba(102,187,106,0.3)\" stroke=\"#66BB6A\" stroke-width=\"2\"/><text x=\"85\" y=\"30\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1565C0\">Set A</text><text x=\"235\" y=\"30\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#2E7D32\">Set B</text></svg>"
     },
     {
       "id": "wb_L3_s22_q03",
@@ -571,7 +158,9 @@
       "correct_answer": 2,
       "grade_band": "3-4",
       "source": "Wavebook L3 S22",
-      "svg": "svg/wb_L3_s22_q03.svg"
+      "svg": "svg/wb_L3_s22_q03.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" width=\"320\" height=\"200\" style=\"font-family:Arial,sans-serif\"><circle cx=\"120\" cy=\"100\" r=\"70\" fill=\"rgba(66,165,245,0.3)\" stroke=\"#42A5F5\" stroke-width=\"2\"/><circle cx=\"200\" cy=\"100\" r=\"70\" fill=\"rgba(102,187,106,0.3)\" stroke=\"#66BB6A\" stroke-width=\"2\"/><text x=\"85\" y=\"30\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1565C0\">Set A</text><text x=\"235\" y=\"30\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#2E7D32\">Set B</text></svg>"
     },
     {
       "id": "wb_L3_s22_q04",
@@ -589,7 +178,8 @@
       "correct_answer": 2,
       "grade_band": "3-4",
       "source": "Wavebook L3 S22",
-      "svg": "svg/wb_L3_s22_q01.svg"
+      "svg": "svg/wb_L3_s22_q01.svg",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s22_q05",
@@ -606,7 +196,10 @@
       ],
       "correct_answer": 0,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S22"
+      "source": "Wavebook L3 S22",
+      "svg": "wb_L3_s22_q05.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" width=\"320\" height=\"200\" style=\"font-family:Arial,sans-serif\"><circle cx=\"120\" cy=\"100\" r=\"70\" fill=\"rgba(66,165,245,0.3)\" stroke=\"#42A5F5\" stroke-width=\"2\"/><circle cx=\"200\" cy=\"100\" r=\"70\" fill=\"rgba(102,187,106,0.3)\" stroke=\"#66BB6A\" stroke-width=\"2\"/><text x=\"85\" y=\"30\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1565C0\">Set A</text><text x=\"235\" y=\"30\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#2E7D32\">Set B</text></svg>"
     },
     {
       "id": "wb_L3_s23_q01",
@@ -623,7 +216,8 @@
       ],
       "correct_answer": 1,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S23"
+      "source": "Wavebook L3 S23",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s23_q04",
@@ -640,7 +234,8 @@
       ],
       "correct_answer": 0,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S23"
+      "source": "Wavebook L3 S23",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s23_q07",
@@ -658,7 +253,9 @@
       "correct_answer": 2,
       "grade_band": "3-4",
       "source": "Wavebook L3 S23",
-      "svg": "svg/wb_L3_s23_q07.svg"
+      "svg": "svg/wb_L3_s23_q07.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 200 200\" width=\"200\" height=\"200\" style=\"font-family:Arial,sans-serif\"><circle cx=\"100\" cy=\"100\" r=\"80\" fill=\"white\" stroke=\"#333\" stroke-width=\"3\"/><line x1=\"100.0\" y1=\"30.0\" x2=\"100.0\" y2=\"22.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"100.0\" y=\"42.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">12</text><line x1=\"135.0\" y1=\"39.4\" x2=\"139.0\" y2=\"32.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"129.0\" y=\"49.8\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">1</text><line x1=\"160.6\" y1=\"65.0\" x2=\"167.5\" y2=\"61.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"150.2\" y=\"71.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">2</text><line x1=\"170.0\" y1=\"100.0\" x2=\"178.0\" y2=\"100.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"158.0\" y=\"100.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">3</text><line x1=\"160.6\" y1=\"135.0\" x2=\"167.5\" y2=\"139.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"150.2\" y=\"129.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">4</text><line x1=\"135.0\" y1=\"160.6\" x2=\"139.0\" y2=\"167.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"129.0\" y=\"150.2\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">5</text><line x1=\"100.0\" y1=\"170.0\" x2=\"100.0\" y2=\"178.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"100.0\" y=\"158.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">6</text><line x1=\"65.0\" y1=\"160.6\" x2=\"61.0\" y2=\"167.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"71.0\" y=\"150.2\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">7</text><line x1=\"39.4\" y1=\"135.0\" x2=\"32.5\" y2=\"139.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"49.8\" y=\"129.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">8</text><line x1=\"30.0\" y1=\"100.0\" x2=\"22.0\" y2=\"100.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"42.0\" y=\"100.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">9</text><line x1=\"39.4\" y1=\"65.0\" x2=\"32.5\" y2=\"61.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"49.8\" y=\"71.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">10</text><line x1=\"65.0\" y1=\"39.4\" x2=\"61.0\" y2=\"32.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"71.0\" y=\"49.8\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">11</text><line x1=\"100\" y1=\"100\" x2=\"145.0\" y2=\"100.0\" stroke=\"#333\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"100\" y1=\"100\" x2=\"100.0\" y2=\"35.0\" stroke=\"#555\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><circle cx=\"100\" cy=\"100\" r=\"4\" fill=\"#333\"/></svg>"
     },
     {
       "id": "wb_L3_s23_q09",
@@ -675,7 +272,8 @@
       ],
       "correct_answer": 0,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S23"
+      "source": "Wavebook L3 S23",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s23_q14",
@@ -693,7 +291,10 @@
       ],
       "correct_answer": 0,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S23"
+      "source": "Wavebook L3 S23",
+      "svg": "wb_L3_s23_q14.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 200 200\" width=\"200\" height=\"200\" style=\"font-family:Arial,sans-serif\"><circle cx=\"100\" cy=\"100\" r=\"80\" fill=\"white\" stroke=\"#333\" stroke-width=\"3\"/><line x1=\"100.0\" y1=\"30.0\" x2=\"100.0\" y2=\"22.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"100.0\" y=\"42.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">12</text><line x1=\"135.0\" y1=\"39.4\" x2=\"139.0\" y2=\"32.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"129.0\" y=\"49.8\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">1</text><line x1=\"160.6\" y1=\"65.0\" x2=\"167.5\" y2=\"61.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"150.2\" y=\"71.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">2</text><line x1=\"170.0\" y1=\"100.0\" x2=\"178.0\" y2=\"100.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"158.0\" y=\"100.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">3</text><line x1=\"160.6\" y1=\"135.0\" x2=\"167.5\" y2=\"139.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"150.2\" y=\"129.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">4</text><line x1=\"135.0\" y1=\"160.6\" x2=\"139.0\" y2=\"167.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"129.0\" y=\"150.2\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">5</text><line x1=\"100.0\" y1=\"170.0\" x2=\"100.0\" y2=\"178.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"100.0\" y=\"158.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">6</text><line x1=\"65.0\" y1=\"160.6\" x2=\"61.0\" y2=\"167.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"71.0\" y=\"150.2\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">7</text><line x1=\"39.4\" y1=\"135.0\" x2=\"32.5\" y2=\"139.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"49.8\" y=\"129.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">8</text><line x1=\"30.0\" y1=\"100.0\" x2=\"22.0\" y2=\"100.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"42.0\" y=\"100.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">9</text><line x1=\"39.4\" y1=\"65.0\" x2=\"32.5\" y2=\"61.0\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"49.8\" y=\"71.0\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">10</text><line x1=\"65.0\" y1=\"39.4\" x2=\"61.0\" y2=\"32.5\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"71.0\" y=\"49.8\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#333\">11</text><line x1=\"100\" y1=\"100\" x2=\"94.1\" y2=\"144.6\" stroke=\"#333\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"100\" y1=\"100\" x2=\"165.0\" y2=\"100.0\" stroke=\"#555\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><circle cx=\"100\" cy=\"100\" r=\"4\" fill=\"#333\"/></svg>"
     }
   ]
 }

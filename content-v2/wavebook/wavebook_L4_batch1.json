@@ -2,7 +2,7 @@
   "level": 4,
   "batch": 1,
   "grade_band": "5-6",
-  "total_questions": 71,
+  "total_questions": 48,
   "questions": [
     {
       "id": "wb_L4_s01_q01",
@@ -19,7 +19,8 @@
       ],
       "correct_answer": 3,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S1"
+      "source": "Wavebook L4 S1",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s01_q02",
@@ -36,7 +37,8 @@
       ],
       "correct_answer": 2,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S1"
+      "source": "Wavebook L4 S1",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s01_q03",
@@ -53,7 +55,8 @@
       ],
       "correct_answer": 0,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S1"
+      "source": "Wavebook L4 S1",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s01_q04",
@@ -70,7 +73,8 @@
       ],
       "correct_answer": 1,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S1"
+      "source": "Wavebook L4 S1",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s01_q05",
@@ -87,7 +91,8 @@
       ],
       "correct_answer": 2,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S1"
+      "source": "Wavebook L4 S1",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s01_q06",
@@ -104,7 +109,8 @@
       ],
       "correct_answer": 1,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S1"
+      "source": "Wavebook L4 S1",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s01_q09",
@@ -121,7 +127,8 @@
       ],
       "correct_answer": 1,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S1"
+      "source": "Wavebook L4 S1",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s01_q10",
@@ -138,7 +145,8 @@
       ],
       "correct_answer": 2,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S1"
+      "source": "Wavebook L4 S1",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s01_q11",
@@ -155,7 +163,8 @@
       ],
       "correct_answer": 1,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S1"
+      "source": "Wavebook L4 S1",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s01_q12",
@@ -172,7 +181,8 @@
       ],
       "correct_answer": 1,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S1"
+      "source": "Wavebook L4 S1",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s01_q13",
@@ -189,7 +199,8 @@
       ],
       "correct_answer": 1,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S1"
+      "source": "Wavebook L4 S1",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s01_q14",
@@ -206,7 +217,8 @@
       ],
       "correct_answer": 2,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S1"
+      "source": "Wavebook L4 S1",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s01_q15",
@@ -223,7 +235,8 @@
       ],
       "correct_answer": 2,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S1"
+      "source": "Wavebook L4 S1",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s02_q01",
@@ -240,24 +253,8 @@
       ],
       "correct_answer": 2,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S2"
-    },
-    {
-      "id": "wb_L4_s02_q02",
-      "stem": "What is the missing digit which makes the number 9724* exactly divisible by 6?",
-      "interaction_mode": "mcq",
-      "topic": "Test of divisibility",
-      "difficulty_tier": "warmup",
-      "question_number": 2,
-      "choices": [
-        "2",
-        "4",
-        "5",
-        "6"
-      ],
-      "correct_answer": 0,
-      "grade_band": "5-6",
-      "source": "Wavebook L4 S2"
+      "source": "Wavebook L4 S2",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s02_q03",
@@ -274,7 +271,8 @@
       ],
       "correct_answer": 0,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S2"
+      "source": "Wavebook L4 S2",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s02_q04",
@@ -291,7 +289,8 @@
       ],
       "correct_answer": 2,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S2"
+      "source": "Wavebook L4 S2",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s02_q05",
@@ -308,7 +307,8 @@
       ],
       "correct_answer": 0,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S2"
+      "source": "Wavebook L4 S2",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s02_q06",
@@ -325,7 +325,8 @@
       ],
       "correct_answer": 1,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S2"
+      "source": "Wavebook L4 S2",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s02_q07",
@@ -342,7 +343,8 @@
       ],
       "correct_answer": 0,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S2"
+      "source": "Wavebook L4 S2",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s02_q08",
@@ -359,7 +361,8 @@
       ],
       "correct_answer": 3,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S2"
+      "source": "Wavebook L4 S2",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s02_q09",
@@ -376,7 +379,8 @@
       ],
       "correct_answer": 0,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S2"
+      "source": "Wavebook L4 S2",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s02_q10",
@@ -393,7 +397,8 @@
       ],
       "correct_answer": 1,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S2"
+      "source": "Wavebook L4 S2",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s02_q11",
@@ -410,7 +415,8 @@
       ],
       "correct_answer": 1,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S2"
+      "source": "Wavebook L4 S2",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s02_q12",
@@ -427,7 +433,8 @@
       ],
       "correct_answer": 2,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S2"
+      "source": "Wavebook L4 S2",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s02_q13",
@@ -444,7 +451,8 @@
       ],
       "correct_answer": 0,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S2"
+      "source": "Wavebook L4 S2",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s02_q14",
@@ -461,7 +469,8 @@
       ],
       "correct_answer": 2,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S2"
+      "source": "Wavebook L4 S2",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s02_q15",
@@ -478,7 +487,8 @@
       ],
       "correct_answer": 2,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S2"
+      "source": "Wavebook L4 S2",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s03_q01",
@@ -495,7 +505,8 @@
       ],
       "correct_answer": 0,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S3"
+      "source": "Wavebook L4 S3",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s03_q02",
@@ -510,9 +521,10 @@
         "120",
         "136"
       ],
-      "correct_answer": 1,
+      "correct_answer": 2,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S3"
+      "source": "Wavebook L4 S3",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s03_q03",
@@ -529,24 +541,8 @@
       ],
       "correct_answer": 0,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S3"
-    },
-    {
-      "id": "wb_L4_s03_q04",
-      "stem": "A number is always divisible by 90 if",
-      "interaction_mode": "mcq",
-      "topic": "Factors and multiples",
-      "difficulty_tier": "warmup",
-      "question_number": 4,
-      "choices": [
-        "Divisible by both 2 and 45",
-        "Divisible by both 5 and 18",
-        "Divisible by both 9 and 10",
-        "All of these"
-      ],
-      "correct_answer": 3,
-      "grade_band": "5-6",
-      "source": "Wavebook L4 S3"
+      "source": "Wavebook L4 S3",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s03_q05",
@@ -563,7 +559,8 @@
       ],
       "correct_answer": 1,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S3"
+      "source": "Wavebook L4 S3",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s03_q06",
@@ -580,7 +577,8 @@
       ],
       "correct_answer": 2,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S3"
+      "source": "Wavebook L4 S3",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s03_q07",
@@ -597,7 +595,8 @@
       ],
       "correct_answer": 0,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S3"
+      "source": "Wavebook L4 S3",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s03_q08",
@@ -614,7 +613,8 @@
       ],
       "correct_answer": 2,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S3"
+      "source": "Wavebook L4 S3",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s03_q09",
@@ -631,7 +631,8 @@
       ],
       "correct_answer": 0,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S3"
+      "source": "Wavebook L4 S3",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s03_q10",
@@ -648,7 +649,8 @@
       ],
       "correct_answer": 2,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S3"
+      "source": "Wavebook L4 S3",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s03_q11",
@@ -665,7 +667,8 @@
       ],
       "correct_answer": 2,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S3"
+      "source": "Wavebook L4 S3",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s03_q12",
@@ -682,7 +685,9 @@
       ],
       "correct_answer": 2,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S3"
+      "source": "Wavebook L4 S3",
+      "svg": "wb_L4_s03_q12.svg",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s03_q13",
@@ -699,7 +704,8 @@
       ],
       "correct_answer": 3,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S3"
+      "source": "Wavebook L4 S3",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s03_q14",
@@ -716,7 +722,8 @@
       ],
       "correct_answer": 0,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S3"
+      "source": "Wavebook L4 S3",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s03_q15",
@@ -733,364 +740,9 @@
       ],
       "correct_answer": 2,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S3"
-    },
-    {
-      "id": "wb_L4_s04_q01",
-      "stem": "Which of the following represents fractions in descending order?",
-      "interaction_mode": "mcq",
-      "topic": "Integers and Fractions",
-      "difficulty_tier": "warmup",
-      "question_number": 1,
-      "choices": [
-        "1/2, 3/4, 5/6, 7/8",
-        "7/8, 5/6, 3/4, 1/2",
-        "3/4, 1/2, 7/8, 5/6",
-        "7/8, 5/6, 1/2, 3/4"
-      ],
-      "correct_answer": 3,
-      "grade_band": "5-6",
-      "source": "Wavebook L4 S4"
-    },
-    {
-      "id": "wb_L4_s04_q03",
-      "stem": "What is the simplest form of 0.44?",
-      "interaction_mode": "mcq",
-      "topic": "Integers and Fractions",
-      "difficulty_tier": "warmup",
-      "question_number": 3,
-      "choices": [
-        "11/25",
-        "22/50",
-        "44/100",
-        "4/9"
-      ],
-      "correct_answer": 0,
-      "grade_band": "5-6",
-      "source": "Wavebook L4 S4"
-    },
-    {
-      "id": "wb_L4_s04_q04",
-      "stem": "Which integer lies on the extreme left on the number line among -3, 5, -7, 2?",
-      "interaction_mode": "mcq",
-      "topic": "Integers and Fractions",
-      "difficulty_tier": "warmup",
-      "question_number": 4,
-      "choices": [
-        "-3",
-        "5",
-        "-7",
-        "2"
-      ],
-      "correct_answer": 2,
-      "grade_band": "5-6",
-      "source": "Wavebook L4 S4"
-    },
-    {
-      "id": "wb_L4_s04_q05",
-      "stem": "What is the next number in the pattern: -62, -37, -12, ...?",
-      "interaction_mode": "mcq",
-      "topic": "Integers and Fractions",
-      "difficulty_tier": "warmup",
-      "question_number": 5,
-      "choices": [
-        "-13",
-        "0",
-        "13",
-        "25"
-      ],
-      "correct_answer": 1,
-      "grade_band": "5-6",
-      "source": "Wavebook L4 S4"
-    },
-    {
-      "id": "wb_L4_s04_q06",
-      "stem": "What integer should be subtracted from -5 to get -12?",
-      "interaction_mode": "mcq",
-      "topic": "Integers and Fractions",
-      "difficulty_tier": "practice",
-      "question_number": 6,
-      "choices": [
-        "7",
-        "-7",
-        "12",
-        "-12"
-      ],
-      "correct_answer": 0,
-      "grade_band": "5-6",
-      "source": "Wavebook L4 S4"
-    },
-    {
-      "id": "wb_L4_s04_q09",
-      "stem": "Which of the following statements about integers is incorrect?",
-      "interaction_mode": "mcq",
-      "topic": "Integers and Fractions",
-      "difficulty_tier": "practice",
-      "question_number": 9,
-      "choices": [
-        "The sum of two positive integers is always positive",
-        "The sum of two negative integers is always negative",
-        "The sum of a positive and negative integer is always negative",
-        "The product of two negative integers is positive"
-      ],
-      "correct_answer": 2,
-      "grade_band": "5-6",
-      "source": "Wavebook L4 S4"
-    },
-    {
-      "id": "wb_L4_s04_q10",
-      "stem": "Which of the following statements about integers is correct?",
-      "interaction_mode": "mcq",
-      "topic": "Integers and Fractions",
-      "difficulty_tier": "practice",
-      "question_number": 10,
-      "choices": [
-        "Every integer is a whole number",
-        "Every whole number is a natural number",
-        "Zero is a positive integer",
-        "Every whole number is an integer"
-      ],
-      "correct_answer": 3,
-      "grade_band": "5-6",
-      "source": "Wavebook L4 S4"
-    },
-    {
-      "id": "wb_L4_s04_q11",
-      "stem": "In a magic square where each row, column and diagonal add up to the same sum, if A and B are missing values, find A and B.",
-      "interaction_mode": "mcq",
-      "topic": "Integers and Fractions",
-      "difficulty_tier": "challenge",
-      "question_number": 11,
-      "choices": [
-        "A = -3, B = -5",
-        "A = -4, B = -7",
-        "A = -2, B = -6",
-        "A = -5, B = -8"
-      ],
-      "correct_answer": 1,
-      "grade_band": "5-6",
-      "source": "Wavebook L4 S4"
-    },
-    {
-      "id": "wb_L4_s04_q12",
-      "stem": "In a survey of 240 students, the ratio of students who like hockey to cricket is 3:1. How many students like hockey and how many like cricket?",
-      "interaction_mode": "mcq",
-      "topic": "Integers and Fractions",
-      "difficulty_tier": "challenge",
-      "question_number": 12,
-      "choices": [
-        "180, 30",
-        "120, 40",
-        "200, 40",
-        "160, 80"
-      ],
-      "correct_answer": 0,
-      "grade_band": "5-6",
-      "source": "Wavebook L4 S4"
-    },
-    {
-      "id": "wb_L4_s04_q13",
-      "stem": "From the above survey, if 30 students like both, how many like neither hockey nor cricket?",
-      "interaction_mode": "mcq",
-      "topic": "Integers and Fractions",
-      "difficulty_tier": "challenge",
-      "question_number": 13,
-      "choices": [
-        "20",
-        "40",
-        "10",
-        "30"
-      ],
-      "correct_answer": 3,
-      "grade_band": "5-6",
-      "source": "Wavebook L4 S4"
-    },
-    {
-      "id": "wb_L4_s04_q14",
-      "stem": "Which fraction lies between 3/4 and 5/6?",
-      "interaction_mode": "mcq",
-      "topic": "Integers and Fractions",
-      "difficulty_tier": "challenge",
-      "question_number": 14,
-      "choices": [
-        "2/3",
-        "7/8",
-        "4/5",
-        "1/2"
-      ],
-      "correct_answer": 2,
-      "grade_band": "5-6",
-      "source": "Wavebook L4 S4"
-    },
-    {
-      "id": "wb_L4_s04_q15",
-      "stem": "What is the value of (-1) \u00d7 (-1) \u00d7 (-1) \u00d7 ... (2023 times) + (-1) \u00d7 (-1) \u00d7 (-1) \u00d7 ... (2024 times)?",
-      "interaction_mode": "mcq",
-      "topic": "Integers and Fractions",
-      "difficulty_tier": "challenge",
-      "question_number": 15,
-      "choices": [
-        "2",
-        "-2",
-        "1",
-        "0"
-      ],
-      "correct_answer": 3,
-      "grade_band": "5-6",
-      "source": "Wavebook L4 S4"
-    },
-    {
-      "id": "wb_L4_s07_q01",
-      "stem": "What is the sum of the first 10 odd numbers?",
-      "interaction_mode": "mcq",
-      "topic": "Addition and Subtraction",
-      "difficulty_tier": "warmup",
-      "question_number": 1,
-      "choices": [
-        "90",
-        "100",
-        "110",
-        "120"
-      ],
-      "correct_answer": 1,
-      "grade_band": "5-6",
-      "source": "Wavebook L4 S7"
-    },
-    {
-      "id": "wb_L4_s07_q02",
-      "stem": "If a + b = 15 and a - b = 5, what is the value of a?",
-      "interaction_mode": "mcq",
-      "topic": "Addition and Subtraction",
-      "difficulty_tier": "warmup",
-      "question_number": 2,
-      "choices": [
-        "10",
-        "5",
-        "15",
-        "20"
-      ],
-      "correct_answer": 0,
-      "grade_band": "5-6",
-      "source": "Wavebook L4 S7"
-    },
-    {
-      "id": "wb_L4_s07_q04",
-      "stem": "The sum of two consecutive even numbers is 54. What is the smaller number?",
-      "interaction_mode": "mcq",
-      "topic": "Addition and Subtraction",
-      "difficulty_tier": "warmup",
-      "question_number": 4,
-      "choices": [
-        "26",
-        "28",
-        "24",
-        "22"
-      ],
-      "correct_answer": 0,
-      "grade_band": "5-6",
-      "source": "Wavebook L4 S7"
-    },
-    {
-      "id": "wb_L4_s07_q07",
-      "stem": "What should be added to 367 to get 1000?",
-      "interaction_mode": "mcq",
-      "topic": "Addition and Subtraction",
-      "difficulty_tier": "practice",
-      "question_number": 7,
-      "choices": [
-        "633",
-        "643",
-        "733",
-        "533"
-      ],
-      "correct_answer": 0,
-      "grade_band": "5-6",
-      "source": "Wavebook L4 S7"
-    },
-    {
-      "id": "wb_L4_s07_q08",
-      "stem": "The difference between two numbers is 256. If the smaller number is 389, what is the larger number?",
-      "interaction_mode": "mcq",
-      "topic": "Addition and Subtraction",
-      "difficulty_tier": "practice",
-      "question_number": 8,
-      "choices": [
-        "133",
-        "256",
-        "645",
-        "745"
-      ],
-      "correct_answer": 2,
-      "grade_band": "5-6",
-      "source": "Wavebook L4 S7"
-    },
-    {
-      "id": "wb_L4_s07_q09",
-      "stem": "What is 9999 + 999 + 99 + 9?",
-      "interaction_mode": "mcq",
-      "topic": "Addition and Subtraction",
-      "difficulty_tier": "practice",
-      "question_number": 9,
-      "choices": [
-        "10000",
-        "11016",
-        "11106",
-        "11106"
-      ],
-      "correct_answer": 3,
-      "grade_band": "5-6",
-      "source": "Wavebook L4 S7"
-    },
-    {
-      "id": "wb_L4_s07_q11",
-      "stem": "A shopkeeper had 5000 items. He sold 2367 on Monday and 1589 on Tuesday. How many items are left?",
-      "interaction_mode": "mcq",
-      "topic": "Addition and Subtraction",
-      "difficulty_tier": "challenge",
-      "question_number": 11,
-      "choices": [
-        "1034",
-        "1044",
-        "1144",
-        "1044"
-      ],
-      "correct_answer": 3,
-      "grade_band": "5-6",
-      "source": "Wavebook L4 S7"
-    },
-    {
-      "id": "wb_L4_s07_q13",
-      "stem": "The sum of three consecutive numbers is 96. What is the middle number?",
-      "interaction_mode": "mcq",
-      "topic": "Addition and Subtraction",
-      "difficulty_tier": "challenge",
-      "question_number": 13,
-      "choices": [
-        "31",
-        "32",
-        "33",
-        "34"
-      ],
-      "correct_answer": 1,
-      "grade_band": "5-6",
-      "source": "Wavebook L4 S7"
-    },
-    {
-      "id": "wb_L4_s07_q15",
-      "stem": "What is the value of 1 - 2 + 3 - 4 + 5 - 6 + ... + 99 - 100?",
-      "interaction_mode": "mcq",
-      "topic": "Addition and Subtraction",
-      "difficulty_tier": "challenge",
-      "question_number": 15,
-      "choices": [
-        "-50",
-        "50",
-        "-100",
-        "0"
-      ],
-      "correct_answer": 0,
-      "grade_band": "5-6",
-      "source": "Wavebook L4 S7"
+      "source": "Wavebook L4 S3",
+      "svg": "wb_L4_s03_q15.svg",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s08_q05",
@@ -1107,7 +759,8 @@
       ],
       "correct_answer": 2,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S8"
+      "source": "Wavebook L4 S8",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s08_q07",
@@ -1124,7 +777,8 @@
       ],
       "correct_answer": 3,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S8"
+      "source": "Wavebook L4 S8",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s08_q08",
@@ -1142,7 +796,8 @@
       ],
       "correct_answer": 4,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S8"
+      "source": "Wavebook L4 S8",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s08_q10",
@@ -1159,7 +814,8 @@
       ],
       "correct_answer": 2,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S8"
+      "source": "Wavebook L4 S8",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s08_q11",
@@ -1176,7 +832,8 @@
       ],
       "correct_answer": 2,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S8"
+      "source": "Wavebook L4 S8",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s08_q12",
@@ -1193,7 +850,8 @@
       ],
       "correct_answer": 1,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S8"
+      "source": "Wavebook L4 S8",
+      "diagnostics": {}
     },
     {
       "id": "wb_L4_s08_q13",
@@ -1210,7 +868,8 @@
       ],
       "correct_answer": 3,
       "grade_band": "5-6",
-      "source": "Wavebook L4 S8"
+      "source": "Wavebook L4 S8",
+      "diagnostics": {}
     }
   ]
 }

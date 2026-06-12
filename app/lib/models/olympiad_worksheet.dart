@@ -7,10 +7,18 @@
 class OlympiadQuestion {
   final String id;
   final String stem;
-  final String interactionMode; // mcq, integer, fill_up, drag_drop, match_column
+  final String interactionMode; // mcq, integer, fill_up, drag_drop, match_column, subjective_ai
   final String topic;
   final String difficultyTier; // warmup, practice, challenge
   final int questionNumber;
+
+  // ── v2 fields ──────────────────────────────────────────────────────────
+  final String pillar;           // algebra, number_theory, combinatorics, geometry
+  final int level;               // 1–5
+  final String? competitionSource; // kangaroo, ioqm, mathkangaroo, imo, etc.
+  final String? modelSolution;   // Full worked solution (shown post-submit)
+  final String? subjectiveRubric; // Grading rubric for subjective_ai mode
+  final int? timeLimitSeconds;   // Per-question time limit (null = no limit)
 
   // MCQ
   final List<String> choices;
@@ -46,6 +54,12 @@ class OlympiadQuestion {
     required this.topic,
     required this.difficultyTier,
     required this.questionNumber,
+    this.pillar = '',
+    this.level = 1,
+    this.competitionSource,
+    this.modelSolution,
+    this.subjectiveRubric,
+    this.timeLimitSeconds,
     this.choices = const [],
     this.correctAnswer = 0,
     this.correctValue,
@@ -76,6 +90,12 @@ class OlympiadQuestion {
       topic: json['topic'] as String? ?? '',
       difficultyTier: json['difficulty_tier'] as String? ?? 'practice',
       questionNumber: json['question_number'] as int? ?? 0,
+      pillar: json['pillar'] as String? ?? '',
+      level: json['level'] as int? ?? 1,
+      competitionSource: json['competition_source'] as String?,
+      modelSolution: json['model_solution'] as String?,
+      subjectiveRubric: json['subjective_rubric'] as String?,
+      timeLimitSeconds: json['time_limit_seconds'] as int?,
       choices: choicesRaw.map((e) => e.toString()).toList(),
       correctAnswer: json['correct_answer'] is int ? json['correct_answer'] as int : 0,
       correctValue: json['correct_value'] is int ? json['correct_value'] as int : null,
@@ -99,6 +119,12 @@ class OlympiadQuestion {
         'topic': topic,
         'difficulty_tier': difficultyTier,
         'question_number': questionNumber,
+        'pillar': pillar,
+        'level': level,
+        if (competitionSource != null) 'competition_source': competitionSource,
+        if (modelSolution != null) 'model_solution': modelSolution,
+        if (subjectiveRubric != null) 'subjective_rubric': subjectiveRubric,
+        if (timeLimitSeconds != null) 'time_limit_seconds': timeLimitSeconds,
         'choices': choices,
         'correct_answer': correctAnswer,
         'correct_value': correctValue,
@@ -139,6 +165,11 @@ class OlympiadQuestion {
           if (matchPairs[entry.key] != entry.value) return false;
         }
         return true;
+      case 'subjective_ai':
+        // Subjective answers are graded server-side by Gemini.
+        // Client-side checkAnswer always returns false; real result
+        // comes from POST /olympiad/v2/submit-proof.
+        return false;
       default:
         return false;
     }

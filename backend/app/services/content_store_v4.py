@@ -82,6 +82,7 @@ class ContentStoreV4:
 
     def __init__(self) -> None:
         self._questions: Dict[str, QuestionV2] = {}
+        self._original_id_index: Dict[str, str] = {}  # original_id -> new (renamed) id
         self._topics: Dict[str, AdaptiveTopic] = {}  # topic_id -> topic
         self._by_grade: Dict[int, List[AdaptiveTopic]] = defaultdict(list)
         self._by_grade_topic: Dict[tuple, List[QuestionV2]] = {}  # (grade, topic_id) -> questions
@@ -117,6 +118,13 @@ class ContentStoreV4:
                         try:
                             q = QuestionV2.model_validate(qd)
                             self._questions[q.id] = q
+                            # Index original_id (pre-rename id, e.g. NCERT-G1-045)
+                            # so school chapter refs resolve. Never overwrites a
+                            # primary id entry — aliases live in a separate map
+                            # and primary ids always win in get().
+                            orig_id = qd.get('original_id')
+                            if orig_id and orig_id != q.id:
+                                self._original_id_index.setdefault(orig_id, q.id)
                             questions.append(q)
                             count += 1
                             if q.concept_cluster:
@@ -158,7 +166,13 @@ class ContentStoreV4:
     # --- Adaptive queries ---
 
     def get(self, qid: str) -> Optional[QuestionV2]:
-        return self._questions.get(qid)
+        q = self._questions.get(qid)
+        if q is None:
+            # Fall back to original_id alias (chapter refs use pre-rename ids)
+            new_id = self._original_id_index.get(qid)
+            if new_id is not None:
+                q = self._questions.get(new_id)
+        return q
 
     def all_questions(self) -> List[QuestionV2]:
         return list(self._questions.values())
@@ -279,7 +293,13 @@ class ContentStoreV4:
         if not chapter:
             return []
 
-        questions = [self._questions[qid] for qid in chapter.question_ids if qid in self._questions]
+        questions = []
+        seen = set()
+        for qid in chapter.question_ids:
+            q = self.get(qid)  # resolves both new ids and original_id aliases
+            if q is not None and q.id not in seen:
+                seen.add(q.id)
+                questions.append(q)
         return questions
 
     def available_curricula(self, grade: int) -> List[str]:

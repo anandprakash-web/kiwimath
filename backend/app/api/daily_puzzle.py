@@ -17,6 +17,13 @@ IPS scoring (max 1000):
     speed     30%  → 300 pts max (under 30s = max, linear to 0 at 300s)
     streak    15%  → 150 pts max
     bonus      5%  →  50 pts (first attempt, early bird)
+
+Persistence:
+    Firestore via FirestoreBackedStore (in-memory fallback for local/tests).
+    - Submissions + streaks + freezes read Firestore directly (correctness).
+    - Leaderboard docs use a 30s read cache (staleness acceptable).
+    - Submissions are naturally idempotent: doc id = "{uid}:{puzzle_id}",
+      duplicate submits replay the stored result (no double scoring).
 """
 
 from __future__ import annotations
@@ -24,9 +31,14 @@ from __future__ import annotations
 from datetime import datetime, timedelta, timezone
 from typing import Any, Dict, List, Optional
 
-from fastapi import APIRouter, HTTPException, Query
+from fastapi import APIRouter, Header, HTTPException, Query
 from pydantic import BaseModel, Field
 
+from app.services.state_store import (
+    FirestoreBackedStore,
+    get_idempotent_response,
+    record_idempotent_response,
+)
 from app.services.daily_puzzle_service import (
     GRADE_BAND_STYLES,
     PUZZLE_TYPE_LABELS,
@@ -43,12 +55,13 @@ from app.services.daily_puzzle_service import (
 router = APIRouter(prefix="/v4", tags=["daily-puzzle"])
 
 # ---------------------------------------------------------------------------
-# In-memory stores (replace with Firestore in production)
+# Firestore-backed stores (in-memory fallback when Firestore unavailable)
 # ---------------------------------------------------------------------------
-_submissions: Dict[str, Dict[str, Any]] = {}          # "{uid}:{puzzle_id}" -> submission
-_streaks: Dict[str, Dict[str, Any]] = {}              # uid -> streak data
-_leaderboard_scores: Dict[str, List[Dict[str, Any]]] = {}  # "{grade}:{date}" -> [scores]
-_freeze_usage: Dict[str, Dict[str, Any]] = {}         # uid -> {"week_start": str, "used": bool}
+_submissions_store = FirestoreBackedStore("daily_puzzle_submissions")   # "{uid}:{puzzle_id}"
+_streaks_store = FirestoreBackedStore("daily_puzzle_streaks")            # uid
+# "{grade}:{date}" → {"entries": [...]}; "{grade}:alltime" → {"players": {uid: {...}}}
+_leaderboard_store = FirestoreBackedStore("daily_puzzle_leaderboards", cache_ttl_seconds=30)
+_freeze_store = FirestoreBackedStore("streak_freezes")                   # uid
 
 
 # ---------------------------------------------------------------------------
@@ -145,9 +158,14 @@ def _today_str() -> str:
 
 
 def _ensure_streak(uid: str) -> Dict[str, Any]:
-    """Get or create streak record for a user."""
-    if uid not in _streaks:
-        _streaks[uid] = {
+    """Get or create streak record for a user. Reads Firestore directly.
+
+    Callers that mutate the returned dict MUST persist via
+    _streaks_store.set(uid, data).
+    """
+    data = _streaks_store.get(uid)
+    if data is None:
+        data = {
             "current_streak": 0,
             "longest_streak": 0,
             "last_puzzle_date": None,
@@ -155,7 +173,8 @@ def _ensure_streak(uid: str) -> Dict[str, Any]:
             "daily_log": {},  # date -> {"completed": bool, "points": int}
             "display_name": f"Student_{uid[:6]}",
         }
-    return _streaks[uid]
+        _streaks_store.set(uid, data)
+    return data
 
 
 def _is_early_bird(date_str: str) -> bool:
@@ -164,6 +183,22 @@ def _is_early_bird(date_str: str) -> bool:
     now = datetime.now(timezone.utc)
     drops = datetime.fromisoformat(window["drops_at"])
     return drops <= now <= drops + timedelta(minutes=30)
+
+
+def _submission_to_response(existing: Dict[str, Any], message: str) -> SubmitAnswerResponse:
+    return SubmitAnswerResponse(
+        correct=existing["correct"],
+        points_earned=existing["points_earned"],
+        accuracy_pts=existing["accuracy_pts"],
+        speed_pts=existing["speed_pts"],
+        streak_pts=existing["streak_pts"],
+        bonus_pts=existing["bonus_pts"],
+        streak_count=existing["streak_count"],
+        streak_bonus=existing["streak_bonus"],
+        total_score=existing["total_score"],
+        streak_tier=existing["streak_tier"],
+        message=message,
+    )
 
 
 # ---------------------------------------------------------------------------
@@ -227,6 +262,10 @@ async def submit_daily_puzzle(req: SubmitAnswerRequest):
 
     Computes IPS score (accuracy + speed + streak + bonus = max 1000).
     Updates the student's streak and records the submission.
+
+    Idempotency: the submission document id is "{uid}:{puzzle_id}", so client
+    retries (with or without X-Idempotency-Key) replay the stored result and
+    can never double-score.
     """
     # Parse puzzle_id to extract date and grade
     parts = req.puzzle_id.split("_")
@@ -239,22 +278,12 @@ async def submit_daily_puzzle(req: SubmitAnswerRequest):
     except ValueError:
         raise HTTPException(400, "Invalid puzzle_id format")
 
-    # Check for duplicate submission
+    # Check for duplicate submission (reads Firestore directly — durable dedupe)
     submission_key = f"{req.uid}:{req.puzzle_id}"
-    if submission_key in _submissions:
-        existing = _submissions[submission_key]
-        return SubmitAnswerResponse(
-            correct=existing["correct"],
-            points_earned=existing["points_earned"],
-            accuracy_pts=existing["accuracy_pts"],
-            speed_pts=existing["speed_pts"],
-            streak_pts=existing["streak_pts"],
-            bonus_pts=existing["bonus_pts"],
-            streak_count=existing["streak_count"],
-            streak_bonus=existing["streak_bonus"],
-            total_score=existing["total_score"],
-            streak_tier=existing["streak_tier"],
-            message="You already submitted for this puzzle. Here are your results.",
+    existing = _submissions_store.get(submission_key)
+    if existing:
+        return _submission_to_response(
+            existing, "You already submitted for this puzzle. Here are your results."
         )
 
     # Get the puzzle to check answer
@@ -268,9 +297,10 @@ async def submit_daily_puzzle(req: SubmitAnswerRequest):
     # Check correctness
     correct = req.answer.strip().lower() == puzzle["correct_answer"].strip().lower()
 
-    # Get/update streak
+    # Get/update streak (read-modify-write; a child cannot realistically race
+    # against their own single device, and retries hit the dedupe above)
     streak_data = _ensure_streak(req.uid)
-    is_first_attempt = submission_key not in _submissions
+    is_first_attempt = True  # duplicate submissions returned above
     early_bird = _is_early_bird(puzzle_date)
 
     # Update streak if correct
@@ -299,15 +329,16 @@ async def submit_daily_puzzle(req: SubmitAnswerRequest):
     streak_bonus = get_streak_bonus_points(new_streak) if correct else 0
     tier = get_streak_tier(new_streak)
 
-    # Update total points and daily log
+    # Update total points and daily log, persist streak synchronously
     streak_data["total_points"] = streak_data.get("total_points", 0) + ips["total"]
-    streak_data["daily_log"][puzzle_date] = {
+    streak_data.setdefault("daily_log", {})[puzzle_date] = {
         "completed": True,
         "points": ips["total"],
     }
+    _streaks_store.set(req.uid, streak_data)
 
-    # Record submission
-    _submissions[submission_key] = {
+    # Record submission (write-through — this is the idempotency anchor)
+    submission = {
         "uid": req.uid,
         "puzzle_id": req.puzzle_id,
         "answer": req.answer,
@@ -324,15 +355,18 @@ async def submit_daily_puzzle(req: SubmitAnswerRequest):
         "streak_tier": tier,
         "submitted_at": datetime.now(timezone.utc).isoformat(),
     }
+    _submissions_store.set(submission_key, submission)
 
-    # Add to leaderboard
+    # Add to daily leaderboard doc.
+    # NOTE: read-modify-write on a shared doc — two students submitting in the
+    # same instant on different instances could drop one entry. Leaderboards
+    # are approximate by design; accepted.
     lb_key = f"{puzzle_grade}:{puzzle_date}"
-    if lb_key not in _leaderboard_scores:
-        _leaderboard_scores[lb_key] = []
+    lb_doc = _leaderboard_store.get(lb_key, allow_cached=False) or {"entries": []}
+    entries = lb_doc["entries"]
 
-    # Update or insert leaderboard entry
     existing_entry = None
-    for entry in _leaderboard_scores[lb_key]:
+    for entry in entries:
         if entry["uid"] == req.uid:
             existing_entry = entry
             break
@@ -341,7 +375,7 @@ async def submit_daily_puzzle(req: SubmitAnswerRequest):
         existing_entry["score"] = ips["total"]
         existing_entry["streak_count"] = new_streak
     else:
-        _leaderboard_scores[lb_key].append({
+        entries.append({
             "uid": req.uid,
             "display_name": streak_data.get("display_name", f"Student_{req.uid[:6]}"),
             "score": ips["total"],
@@ -349,6 +383,24 @@ async def submit_daily_puzzle(req: SubmitAnswerRequest):
             "date": puzzle_date,
             "streak_count": new_streak,
         })
+    _leaderboard_store.set(lb_key, lb_doc)
+
+    # Maintain the all-time aggregate doc per grade (avoids full-collection
+    # scans on the alltime leaderboard path).
+    at_key = f"{puzzle_grade}:alltime"
+    at_doc = _leaderboard_store.get(at_key, allow_cached=False) or {"players": {}}
+    player = at_doc["players"].get(req.uid) or {
+        "uid": req.uid,
+        "display_name": streak_data.get("display_name", f"Student_{req.uid[:6]}"),
+        "total_score": 0,
+        "puzzles_solved": 0,
+        "streak_count": 0,
+    }
+    player["total_score"] += ips["total"]
+    player["puzzles_solved"] += 1
+    player["streak_count"] = new_streak
+    at_doc["players"][req.uid] = player
+    _leaderboard_store.set(at_key, at_doc)
 
     # Build message
     if correct:
@@ -395,11 +447,13 @@ async def get_streaks(uid: str):
     # Check if streak is still alive
     if streak_data["last_puzzle_date"] and not is_streak_alive(streak_data["last_puzzle_date"], today):
         # Check if a freeze was used
-        freeze = _freeze_usage.get(uid, {})
+        freeze = _freeze_store.get(uid) or {}
         week_start = get_freeze_window_start(today)
         if not (freeze.get("week_start") == week_start and freeze.get("used_for_date")):
-            # Streak is broken — reset
-            streak_data["current_streak"] = 0
+            # Streak is broken — reset and persist
+            if streak_data["current_streak"] != 0:
+                streak_data["current_streak"] = 0
+                _streaks_store.set(uid, streak_data)
 
     current = streak_data["current_streak"]
     longest = streak_data["longest_streak"]
@@ -420,7 +474,7 @@ async def get_streaks(uid: str):
 
     # Check freeze availability
     week_start = get_freeze_window_start(today)
-    freeze_info = _freeze_usage.get(uid, {})
+    freeze_info = _freeze_store.get(uid) or {}
     freeze_available = not (freeze_info.get("week_start") == week_start and freeze_info.get("used"))
 
     return StreakResponse(
@@ -440,18 +494,29 @@ async def get_streaks(uid: str):
 # ---------------------------------------------------------------------------
 
 @router.post("/streaks/{uid}/freeze", response_model=FreezeResponse)
-async def use_streak_freeze(uid: str):
+async def use_streak_freeze(
+    uid: str,
+    x_idempotency_key: Optional[str] = Header(default=None, alias="X-Idempotency-Key"),
+):
     """Use a streak freeze to preserve the current streak.
 
     Each student gets 1 free freeze per week (resets Monday 00:00 UTC).
     The freeze prevents streak reset for one missed day.
     """
+    # Idempotent replay — a retried freeze request must not look like
+    # "already used your freeze this week".
+    idem_key = f"streak_freeze:{x_idempotency_key}" if x_idempotency_key else None
+    if idem_key:
+        cached = get_idempotent_response(idem_key)
+        if cached is not None and "freeze_used" in cached:
+            return FreezeResponse(**cached)
+
     streak_data = _ensure_streak(uid)
     today = _today_str()
     week_start = get_freeze_window_start(today)
 
-    # Check if freeze already used this week
-    freeze_info = _freeze_usage.get(uid, {})
+    # Check if freeze already used this week (reads Firestore directly)
+    freeze_info = _freeze_store.get(uid) or {}
     if freeze_info.get("week_start") == week_start and freeze_info.get("used"):
         # Calculate next Monday
         today_date = datetime.strptime(today, "%Y-%m-%d").date()
@@ -477,13 +542,13 @@ async def use_streak_freeze(uid: str):
             message="No active streak to freeze. Start solving puzzles to build one!",
         )
 
-    # Use the freeze
-    _freeze_usage[uid] = {
+    # Use the freeze (write-through)
+    _freeze_store.set(uid, {
         "week_start": week_start,
         "used": True,
         "used_for_date": today,
         "used_at": datetime.now(timezone.utc).isoformat(),
-    }
+    })
 
     # Calculate next Monday
     today_date = datetime.strptime(today, "%Y-%m-%d").date()
@@ -492,13 +557,16 @@ async def use_streak_freeze(uid: str):
         days_until_monday = 7
     next_monday = today_date + timedelta(days=days_until_monday)
 
-    return FreezeResponse(
+    response = FreezeResponse(
         freeze_used=True,
         streak_preserved=True,
         next_freeze_available=next_monday.strftime("%Y-%m-%d"),
         current_streak=streak_data["current_streak"],
         message=f"Streak freeze activated! Your {streak_data['current_streak']}-day streak is safe. Captain Kiwi has your back!",
     )
+    if idem_key:
+        record_idempotent_response(idem_key, response.model_dump(mode="json"))
+    return response
 
 
 # ---------------------------------------------------------------------------
@@ -516,6 +584,8 @@ async def get_leaderboard(
         daily   → today's scores only
         weekly  → sum of scores from the last 7 days
         alltime → total accumulated IPS points
+
+    Reads may be up to 30s stale (per-instance cache) — fine for leaderboards.
     """
     if period not in ("daily", "weekly", "alltime"):
         raise HTTPException(400, "Period must be one of: daily, weekly, alltime")
@@ -525,9 +595,8 @@ async def get_leaderboard(
 
     if period == "daily":
         # Single day leaderboard
-        lb_key = f"{grade}:{today}"
-        entries = _leaderboard_scores.get(lb_key, [])
-        ranked = sorted(entries, key=lambda e: e.get("score", 0), reverse=True)[:20]
+        lb_doc = _leaderboard_store.get(f"{grade}:{today}") or {"entries": []}
+        ranked = sorted(lb_doc["entries"], key=lambda e: e.get("score", 0), reverse=True)[:20]
         return [
             LeaderboardEntry(
                 rank=i + 1,
@@ -542,13 +611,13 @@ async def get_leaderboard(
         ]
 
     elif period == "weekly":
-        # Aggregate last 7 days
+        # Aggregate last 7 days (7 bounded doc reads)
         aggregated: Dict[str, Dict[str, Any]] = {}
         for day_offset in range(7):
             d = today_date - timedelta(days=day_offset)
             d_str = d.strftime("%Y-%m-%d")
-            lb_key = f"{grade}:{d_str}"
-            for entry in _leaderboard_scores.get(lb_key, []):
+            lb_doc = _leaderboard_store.get(f"{grade}:{d_str}") or {"entries": []}
+            for entry in lb_doc["entries"]:
                 uid = entry["uid"]
                 if uid not in aggregated:
                     aggregated[uid] = {
@@ -581,49 +650,20 @@ async def get_leaderboard(
         ]
 
     else:  # alltime
-        # Use streak data for all-time totals
-        all_students: List[Dict[str, Any]] = []
-        for uid, sdata in _streaks.items():
-            # Check if this student has scores for the requested grade
-            has_grade_scores = False
-            for key in _leaderboard_scores:
-                if key.startswith(f"{grade}:"):
-                    for entry in _leaderboard_scores[key]:
-                        if entry["uid"] == uid:
-                            has_grade_scores = True
-                            break
-                if has_grade_scores:
-                    break
-
-            if has_grade_scores:
-                # Sum all scores for this grade
-                total = 0
-                puzzles = 0
-                for key, entries in _leaderboard_scores.items():
-                    if key.startswith(f"{grade}:"):
-                        for entry in entries:
-                            if entry["uid"] == uid:
-                                total += entry.get("score", 0)
-                                puzzles += 1
-
-                all_students.append({
-                    "uid": uid,
-                    "display_name": sdata.get("display_name", f"Student_{uid[:6]}"),
-                    "total_score": total,
-                    "puzzles_solved": puzzles,
-                    "streak_count": sdata.get("current_streak", 0),
-                })
-
-        ranked = sorted(all_students, key=lambda e: e["total_score"], reverse=True)[:20]
+        # Single aggregate doc maintained on every submit (no collection scans)
+        at_doc = _leaderboard_store.get(f"{grade}:alltime") or {"players": {}}
+        ranked = sorted(
+            at_doc["players"].values(), key=lambda e: e.get("total_score", 0), reverse=True
+        )[:20]
         return [
             LeaderboardEntry(
                 rank=i + 1,
                 uid=e["uid"],
-                display_name=e["display_name"],
-                total_score=e["total_score"],
-                puzzles_solved=e["puzzles_solved"],
-                streak_count=e["streak_count"],
-                streak_tier=get_streak_tier(e["streak_count"]),
+                display_name=e.get("display_name", f"Student_{e['uid'][:6]}"),
+                total_score=e.get("total_score", 0),
+                puzzles_solved=e.get("puzzles_solved", 0),
+                streak_count=e.get("streak_count", 0),
+                streak_tier=get_streak_tier(e.get("streak_count", 0)),
             )
             for i, e in enumerate(ranked)
         ]

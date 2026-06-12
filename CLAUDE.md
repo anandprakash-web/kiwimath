@@ -3,29 +3,24 @@
 ## Me
 Anand Prakash (anand.prakash@vedantu.com), Founder of Kiwimath — adaptive math learning app for K-6 kids. Building with Flutter + FastAPI + Firebase.
 
-## Current Status (May 3, 2026)
+## Current Status (May 5, 2026)
 
-**DEPLOYMENT READY: All systems verified — 36,459 questions, v4 API wired, offline + locking + clan + Vedantu LO system done**
+**v8 APP: 6-tab nav (Practice/Worksheets/School/Clan/Growth/Parent), 28,803+ questions, all systems live**
 
 ### What's Built & Verified:
+- ✅ **v8 Flutter App**: 6-tab nav — Practice (smart adaptive), Worksheets (100 daily olympiad), School (multi-curriculum), Clan (social+puzzles), Growth (mountain journey), Parent (PIN-protected)
+- ✅ **Practice tab**: Smart adaptive practice with topic unlocking, 8 core topics per grade
+- ✅ **Worksheets tab**: 600 olympiad worksheets (100/grade × 6 grades), 3 views (Topics/Journey/Grid), per-worksheet + bulk download, offline cache
+- ✅ **School tab**: Multi-curriculum chapter browser (Cambridge, NCERT, Singapore, ICSE, US Common Core sub-tabs)
+- ✅ **Clan tab**: Daily puzzle + streak system, clan wars, engagement rewards, join/create clan
+- ✅ **Growth tab**: Mountain journey visualization, milestones, scale scores, proficiency levels
+- ✅ **Parent tab**: PIN-gated dashboard with diagnostic reports, clan section
+- ✅ **Terry Chew "why" explanations**: All 21,603 practice questions + 7,200 olympiad questions have Analysis-style explanations
+- ✅ **Olympiad worksheet system**: 30 batch JSON files, SVG visual renderer, mixed interaction modes (MCQ, integer, fill-up, drag-drop, match-column)
 - ✅ Vedantu LO System: competency taxonomy (K/A/R), 6-level proficiency, scale scores, growth tracking, benchmark tests, auto-remedial, parent diagnostic reports
 - ✅ Adaptive engine (5 phases) + Flutter wired to `/v2/session/unified`
 - ✅ Content v4: 22,467 base questions → 36,459 grade-topic organized (multi-grade overlap via KiwiTier)
-- ✅ 57 adaptive topics (8 per G1-G2, 10-11 per G3-G6), IRT-sequenced within each
-- ✅ School tab: 5 curricula (NCERT, ICSE, Cambridge, Singapore, US Common Core) with chapter references
-- ✅ Dual-tagging: 12,745 curriculum questions appear in both adaptive + school views
-- ✅ Backend content_store_v4.py with adaptive question selection + school chapter queries
-- ✅ All quality issues fixed (diagnostics, hints, visuals, domain classification, locale extraction)
-- ✅ v4 API router: 14 endpoints (topics, adaptive next, school chapters, offline bundle/sync, session lock)
-- ✅ Flutter ApiClient updated with all v4 methods
-- ✅ Offline session download + sync (`/v4/offline/bundle` + `/v4/offline/sync`)
-- ✅ Multi-device session locking (`/v4/session/lock` + heartbeat + unlock)
-- ✅ Review caps (max 3/session) + Welcome Back mode (≥3 days away → boosted warmups)
-- ✅ QA verified: all 525 AI-generated questions (120 PCT, 185 mult, 220 div) pass math + structure checks
-- ✅ E2E test: all 8 verification checks pass
-- ✅ Clan system: 14 clan endpoints, 11 Flutter screens/widgets, 6 puzzle SVGs, all locally tested
-- ✅ API contract verified: Dart client ↔ Python backend field names aligned
-- ✅ Parent dashboard updated with clan section
+- ✅ Clan system: 14 clan endpoints + engagement (daily puzzle, streak, leagues, wars, rewards)
 
 ### Content v4 Summary:
 | Grade | Topics | Questions |
@@ -72,6 +67,37 @@ content-v4/
 - Visual requirements audited: 9,425 over-tagged essentials downgraded, 6,686 fake SVG refs cleared
 - 15 genuinely essential questions got inline SVGs generated
 - Final: 636 essential (all covered), 22,090 optional, 13,733 none
+
+### Flutter v8 Navigation:
+```
+Tab 0: Practice    → OlympiadScreen (Smart adaptive practice, topic unlocking G1-G6)
+Tab 1: Worksheets  → OlympiadTabScreen (sub-tabs: Smart Practice / Daily Worksheets / Downloads)
+Tab 2: School      → CurriculumScreen (Cambridge/NCERT/Singapore/ICSE/USCC sub-tabs)
+Tab 3: Clan        → ClanHubScreen (daily puzzle, streak, wars, rewards) or ClanLanding (join/create)
+Tab 4: Growth      → GrowthScreen (mountain journey, milestones, proficiency)
+Tab 5: Parent      → ParentDashboardScreen (PIN-gated via PinGate)
+```
+- PIN gate: `app/lib/widgets/pin_gate.dart` — 4-digit numeric PIN, SharedPreferences
+- Bottom nav: `_AppShell` in `app/lib/main.dart` (v8) — 6 tabs: Olympiad (star icon, orange), School (house), Growth (chart), Clan (people group), Parent (person+child), Profile (person)
+- App icon: minimal white kiwi bird + sparkle on orange gradient
+
+### Olympiad Worksheet System (BUILT):
+- **600 worksheets**: 100 per grade × 6 grades, stored in `content/olympiad/g{1-6}_olympiad_batch{1-5}.json`
+- **12 questions each**: Mixed difficulty (warmup/practice/challenge), mixed interaction modes
+- **5 interaction modes**: MCQ, integer, fill_up, drag_drop, match_column
+- **SVG visuals**: Parameterized components in `content/olympiad/svg_components/`, rendered on-demand via `/olympiad/questions/{id}/visual`
+- **Titles & topics**: Each worksheet has engaging title (e.g., "Pattern Detective", "Number Ninja"), subtitle (topic chips), dominant_topic
+- **Terry Chew Analysis**: All 7,200 question approaches normalized to "Analysis: [method]... Answer: [correct]." format
+- **Offline cache**: `WorksheetCache` — per-worksheet + bulk download, disk persistence, SVG pre-fetch
+- **3-view UI**: Topic-grouped (default), Journey (swipeable cards), Grid (10×10 calendar)
+- **API**: GET `/olympiad/worksheets?grade=N&day=D`, GET `/olympiad/worksheets/list?grade=N` (rich metadata), GET `/olympiad/questions/{qid}/visual`, GET `/olympiad/stats`
+
+### Practice Bank "Why" Explanations (BUILT):
+- **21,603 practice questions** have `w` field with Terry Chew-style Analysis explanations
+- **Format**: "Analysis: [method/insight].\n[step-by-step reasoning with actual math].\nAnswer: [correct answer]."
+- **Topic-specific generators**: pattern_sequence, word_problem, logic, spatial, shapes, fractions, measurement, data_handling, algebra, ratio_proportion, etc.
+- **Zero fallbacks**: All questions have specific, math-aware explanations (not generic)
+- **File**: `backend/static/all_questions.json` — compact format with keys: id, s, c, a, d, k, t, g, src, svg, w
 
 ## Key Architecture:
 | Component | File | Purpose |
@@ -137,6 +163,35 @@ content-v4/
 
 → Full details: memory/projects/clan-construct.md
 
+### Engagement System (BUILT):
+| Component | File | Purpose |
+|-----------|------|---------|
+| Daily Puzzle API | `backend/app/api/engagement.py` | Daily puzzle endpoints (get, submit, streak) |
+| League API | `backend/app/api/engagement.py` | League leaderboards, clan wars |
+| Rewards API | `backend/app/api/engagement.py` | Achievement unlocks, XP tracking |
+| Puzzle Screen | `app/lib/screens/daily_puzzle_screen.dart` | Daily puzzle solve flow |
+| Streak Screen | `app/lib/screens/streak_screen.dart` | Streak calendar + rewards |
+| Wars Screen | `app/lib/screens/clan_wars_screen.dart` | Clan vs clan battles |
+| Rewards Screen | `app/lib/screens/rewards_screen.dart` | Achievements + XP store |
+| Growth Screen | `app/lib/screens/growth_screen.dart` | Mountain journey + milestones |
+| Growth API | `backend/app/api/growth.py` | Growth endpoints, milestone detection |
+
+### Daily Puzzle System (BUILT)
+| Term | Meaning |
+|------|---------|
+| **Daily Puzzle** | One new puzzle per grade per day, drops 4 PM IST (after school), closes 10 PM IST |
+| **Narrative Style** | Story-wrapped puzzles from 9 books (~2,000 puzzles analyzed). 5 styles: Smullyan Dialogue Logic, Moscow Real-World, Everything Kids Visual, Yoshigahara Spatial, Party Trick/Game |
+| **Puzzle Books Deep-Read** | Alice in Puzzle-Land, Lady or Tiger, What is the Name of This Book, To Mock a Mockingbird, This Book Needs No Title, Riddle of Scheherazade, Godelian Puzzle Book (all Smullyan) + Moscow Puzzles (Kordemsky) + Puzzles of Yoshigahara |
+→ Full analysis: memory/puzzle-books/ (4 files: smullyan-storytelling-patterns.md, moscow-puzzles-patterns.md, yoshigahara-visual-puzzles.md, puzzle-creation-guide.md) |
+| **IPS** | Individual Puzzle Score: Accuracy(50%) + Speed(30%) + Streak(15%) + Bonus(5%) = max 1,000 |
+| **CDS** | Clan Daily Score: Brain(top 10 IPS × participation multiplier) + Brawn(solvers×50) + Full Squad(+500) |
+| **Streak** | Consecutive daily solves: Day 1=10 → Day 7+=150 pts. Missing a day resets. |
+| **Puzzle Types** | 10 types: Number Crunch, Pattern Hunt, Shape Shift, Logic Lock, Measure Up, Code Break, Speed Race, Coin & Dice, KenKen Grid, Story Puzzle |
+| **Leagues** | Bronze → Silver → Gold → Diamond → Legendary (trophy-based, seasonal reset) |
+| **Special Modifiers** | Double XP (10%), Boss Puzzle (10%), Mystery (5%), Clan vs Clan Duel (5%) |
+| **Build Plan** | Phase 1: 60 puzzles/grade MVP → Phase 2: Social layer → Phase 3: Leagues → Phase 4: 360/grade/year |
+→ Design doc: Kiwimath_Clan_Daily_Puzzle_System.docx
+
 ## Vedantu Learning Outcomes System (BUILT — Assessment & Reporting Layer)
 | Term | Meaning |
 |------|---------|
@@ -179,7 +234,7 @@ POST /v4/clans/{id}/react:  uid, emoji
 POST /v4/challenges/{id}/answer:  clan_id, uid, answer
 POST /v4/challenges/{id}/guess:   clan_id, uid, guess_text
 Crest shapes: bolt, lion, wave, rocket, blossom, dolphin
-parent_uid = same as userId (parent gate is multiplication question in UI)
+parent_uid = same as userId (parent gate is 4-digit PIN in UI)
 ```
 
 ### Clan Local Test Results (May 3, 2026):
@@ -189,10 +244,100 @@ All 14 endpoints passing: create, get, mine, join, invite regen, remove member, 
 - **tap_to_reveal "no option" bug FIXED**: Two bugs — (1) `questions_v2.py` `_to_response()` stripped choices for non-mcq modes, fixed to send choices whenever they exist; (2) 1,555 questions had unimplemented `tap_to_reveal` mode across 11 content-v2 files, all changed to `mcq`
 - **Color(KiwiColors.xxx) compile errors FIXED**: 4 widget files had `Color(KiwiColors.xxx)` wrapping already-typed Color values; removed redundant Color() constructors
 
+### Benchmark Audit & Fixes (May 4, 2026):
+- **CRITICAL: Grade filtering added to benchmark tests**: `benchmark_test.py` now filters questions by grade before selection — Grade N test only gets Grade N-1 + N content. Previously used ALL 26,722 questions regardless of grade.
+- **8 wrong ICSE-G3 comparison answers FIXED**: Choices contained neither of the two numbers being compared. All 8 in `icse_g3_questions.json`.
+- **2 competency mistagged questions FIXED**: T4-0905, T4-0915 (logical negation) changed K → R
+- **26 placeholder rect-only SVGs cleared**: ICSE-G1 (12) + USCC-G1/G3 (14) had empty rectangles
+- **3,600 curriculum questions got topic tags**: Singapore, USCC, ICSE questions had empty topic field, now auto-assigned based on chapter/tags/stem
+- **Full audit report**: `BENCHMARK_AUDIT_REPORT.md`
+
+### Benjamin Olympiad G6 Content (May 4, 2026):
+- **17 Benjamin PDFs extracted**: 2009-2025, 408 questions total (24 per year)
+- **2009-2012 manually extracted** from visual PDF reading (OCR failed on 2009-2011, 2012 had artifacts)
+- **379 original questions** built in content-v2 format with IRT parameters and competency tags
+- **505 variant questions** generated: 202 step-down + 202 step-up + 101 similar
+- **G6 Smart Practice enabled**: QA review server now serves Benjamin questions for Grade 6
+- **Content location**: `content-v2/benjamin-olympiad/grade6/`
+- **216 filler sentences removed**: "workspace" intros, disconnected character names stripped from stems across 11 files
+
+### Story Rewriting System (May 4, 2026):
+- **All 12,185 Kangaroo questions rewritten** with continuous story narratives
+- **16 story themes** across 8 topics × 2 grade bands (junior G1-3 + senior G4-6)
+- **Characters G1-3**: Kiwi (lead), Chikoo, Aarohi, Vanya, Riya
+- **Characters G4-6**: Kiwi (lead), Ved, Nuha, Google, Veronica
+- **Story themes**: The Enchanted Garden, The LEGO Kingdom, The Music Festival, The Treasure Hunt, The Pirate Ship, The Shape Village, The Forest Bakery, The Wizard's Tower (junior) | The Lost City Expedition, The Racing Garage, The Code Breakers, The Demon Hunters, The Space Station, The Architect's Challenge, The World Tour, The Escape Room (senior)
+- **8 chapters per topic** — questions progress through the story arc
+- **Zero junk remaining**: all old character names (Knight Koko, Chef Cheetah, etc.), workspace mentions, filler sentences stripped
+- **Math preserved**: all numbers, operations, choices, and correct answers unchanged
+- **Pipeline**: `content-v2/_workspace/rewrite_stories.py` — re-runnable, idempotent
+- **Story design**: `content-v2/_workspace/story_design.md`
+
+### Visual & Quality Audit (May 4, 2026):
+- **111 visual_context mismatches fixed**: ctx said "pictograph" but stem said "bar graph", wrong clock/number line refs
+- **262 empty math stems reconstructed**: 75 from original_stem, 187 from tags/choices
+- **74 old character names stripped**: Professor Panda, Ninja Nemo, Astronaut Ava, etc.
+- **138 fragment leftovers cleaned**: "Help calculate:", "Needs to work out:", "Needs the GCD!"
+
+### Deduplication (May 4, 2026):
+- **12,185 → 8,902 questions** after removing duplicates and near-duplicates
+- **342 exact duplicates removed**: same stem + same choices + same answer
+- **1,147 near duplicates removed**: same stem, different distractors, same answer
+- **1,790 skeleton overloads trimmed**: 4+ questions with identical template in same file (kept max 8 per group)
+- **18 duplicate IDs fixed**: T2-1001–T2-1020 clashed between g56 and grade34_variety files
+- **Final distribution**: G1-2: 5,387 | G3-4: 1,079 | G5-6: 2,373 | Other: 63
+- **All 8,902 IDs verified unique**
+
+### Curriculum Deduplication (May 4, 2026):
+- **Singapore**: 1,200 → 1,023 (-177) — number bonds, fraction bars, angle type dupes
+  - **+325 SMC questions added** (from 2023 Singapore Math Challenge PDFs G1-G6): fills 104 gap topics (money, time, logic, algebra, patterns, combinatorics, etc.) → **1,348 total Singapore questions**
+- **IGCSE (Cambridge Primary)**: 3,600 → 2,808 (-792) — place value, triangle angles, shape sides dupes
+- **NCERT**: 3,159 → 2,734 (-425) — G3-G6 had heavy skeleton overload
+- **ICSE**: 2,372 → 1,835 (-537) — G1 had 154 dupes alone
+- **US Common Core**: 1,200 → 990 (-210) — G1-G3 most affected
+- **All 6 curricula verified clean**: 0 dup IDs, 0 exact dupes, 0 skeleton overload
+- **Grand total across all content**: 18,617 unique questions (18,292 + 325 SMC)
+
+### Wavebook Question Bank (BUILT — May 5, 2026):
+- **551 questions** from Vedantu live olympiad class worksheets (separate from main olympiad system)
+- **Level 3** (Grades 3-4): 239 questions, 21 topics, 4 batches — Numbers, Multiplication, Factors, Area, Perimeter, Symmetry, Venn Diagrams, Patterns, Clocks, Data Handling
+- **Level 4** (Grades 5-6): 312 questions, 26 topics, 4 batches — Numbers, Divisibility, Factors, Percentage, Profit/Loss, Ratio/Proportion, Quadrilaterals/Polygons
+- **25 SVG illustrations**: Geometry figures, Venn diagrams, bar charts, clock faces, symmetry shapes, area grids, number patterns
+- **Content location**: `content-v2/wavebook/` — 8 batch JSONs + `svg/` subfolder + `memory/wavebook-index.md`
+- **Source**: 18 Google Drive PDFs (file IDs in `_meta.json`)
+- **Backend**: `backend/app/api/wavebook.py` — 4 endpoints (/wavebook/topics, /questions, /download, /stats)
+- **Flutter**: `app/lib/screens/wavebook_screen.dart` — full MCQ solve flow with per-topic download
+
+### UI Redesign (May 5, 2026) — Worksheet Tab Addition:
+- **Bottom nav remains 6 tabs**: Olympiad (star, orange active), School (house), Growth (chart), Clan (people group), Parent (person+child), Profile (person)
+- **DPP tab** (formerly "Worksheets"): Daily Practice Problems — olympiad worksheets, all grades, Topics|Grid toggle, Journey removed, play bar removed, downloadable per-worksheet
+- **Worksheet tab**: NEW tab added in top shelf alongside DPP — only for G3+, shows live class wavebook MCQs
+  - G3/G4 share Level 3 content, G5/G6 share Level 4 content
+  - Downloadable individually per topic
+  - Topics|Grid toggle (same as DPP)
+  - No Journey toggle, no play bar, no "New" badge, no numeric counts (question counts, worksheet counts, completion stats)
+- **Top shelf sub-tabs** (within the DPP bottom nav tab): Practice | DPP | Worksheet | Saved
+- **Kiwimath Orange**: #FF6F00 (primary accent throughout)
+
+### Currency System (Audited May 5, 2026):
+- **Kiwi Coins**: Effort-based, spendable in Shop (avatar items). Earned on every practice session.
+- **Mastery Gems**: Skill-based, achievement-gated legendary items. Harder to earn.
+- **totalGems**: Engagement gems from daily calendar (7-day cycle: day1=10, day3=25, day5=50, day7=100) + mystery boxes. Separate from Mastery Gems.
+- **XP**: Earned per question answered. Drives level system.
+- **Profile screen shows**: XP, totalGems, Streak, Topics Mastered, Kiwi Coins, Mastery Gems (6 stats in 3x2 grid — FIXED May 5)
+- **⚠️ "gems" exists in TWO backend systems**: gamification (state.gems = Mastery Gems) AND engagement (total_gems = calendar rewards). Profile now shows both separately.
+- **Parent dashboard deliberately hides all currencies** — shows only mastery/accuracy/strengths.
+- **Clan Hub is the reward HUB** — daily calendar, mystery boxes, stickers, leagues all claimed here.
+- **Wavebook/Worksheet**: No client-side reward logic — rewards granted server-side on answer submit (same as Practice/DPP).
+
 ### Pending:
+- **⚠️ CRITICAL: Git commit needed** — Worksheet tab files are UNTRACKED: olympiad_tab_screen.dart, wavebook_screen.dart, worksheet_list_screen.dart, wavebook.py, content-v2/wavebook/. Anand must `git add` + commit + push from Terminal.
+- **Deploy**: Backend + Flutter need redeployment (worksheet tab, gems fix, "why" explanations, engagement system)
+- **Benjamin answers need verification**: correct_answer currently set to first choice as placeholder
+- **Benjamin visual questions**: 175 questions need SVG generation from PDF images
+- **Benjamin variants**: choices need recalculation (inherited from originals, not recomputed)
 - **FlagStore → Firestore**: flag_store.py is in-memory only, flags lost on deploy/restart. Need to wire to Firestore.
 - **Git push**: .git/index.lock blocks sandbox — Anand needs to run `git add -A && git commit && git push` from Terminal
-- **Deploy**: Backend needs redeployment to Cloud Run for tap_to_reveal fix to go live
 
 ## Critical Product Principles:
 - **IRON RULE: Grades exist ONLY in the Curriculum tab** — core PLAY uses Levels only

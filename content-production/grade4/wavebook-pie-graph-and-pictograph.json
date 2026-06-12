@@ -1,0 +1,314 @@
+{
+  "topic_id": "wavebook-pie-graph-and-pictograph",
+  "topic_name": "Wavebook: Pie graph and pictograph",
+  "topic_emoji": "\ud83d\udcd8",
+  "grade": 4,
+  "domain": "wavebook",
+  "source": "wavebook",
+  "total_questions": 15,
+  "difficulty_range": {
+    "min": 0,
+    "max": 0
+  },
+  "questions": [
+    {
+      "id": "wb_L3_s38_q01",
+      "stem": "In a pie chart, the total angle at the center is",
+      "interaction_mode": "mcq",
+      "topic": "Pie graph and pictograph",
+      "difficulty_tier": "warmup",
+      "question_number": 1,
+      "choices": [
+        "180 degrees",
+        "270 degrees",
+        "360 degrees",
+        "90 degrees"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S38",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 240\" width=\"340\" height=\"240\" style=\"font-family:Arial,sans-serif\"><path d=\"M130,120 L130.0,40.0 A80,80 0 0 1 177.0,184.7 Z\" fill=\"#42A5F5\" stroke=\"white\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"40\" width=\"12\" height=\"12\" fill=\"#42A5F5\"/><text x=\"258\" y=\"50\" font-size=\"11\" fill=\"#333\">Part A</text><path d=\"M130,120 L177.0,184.7 A80,80 0 0 1 53.9,144.7 Z\" fill=\"#66BB6A\" stroke=\"white\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"60\" width=\"12\" height=\"12\" fill=\"#66BB6A\"/><text x=\"258\" y=\"70\" font-size=\"11\" fill=\"#333\">Part B</text><path d=\"M130,120 L53.9,144.7 A80,80 0 0 1 83.0,55.3 Z\" fill=\"#FF7043\" stroke=\"white\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"80\" width=\"12\" height=\"12\" fill=\"#FF7043\"/><text x=\"258\" y=\"90\" font-size=\"11\" fill=\"#333\">Part C</text><path d=\"M130,120 L83.0,55.3 A80,80 0 0 1 130.0,40.0 Z\" fill=\"#AB47BC\" stroke=\"white\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"100\" width=\"12\" height=\"12\" fill=\"#AB47BC\"/><text x=\"258\" y=\"110\" font-size=\"11\" fill=\"#333\">Part D</text></svg>"
+    },
+    {
+      "id": "wb_L3_s38_q02",
+      "stem": "A pictograph shows 5 symbols for apples, where each symbol represents 10 apples. How many apples are there?",
+      "interaction_mode": "mcq",
+      "topic": "Pie graph and pictograph",
+      "difficulty_tier": "warmup",
+      "question_number": 2,
+      "choices": [
+        "5",
+        "15",
+        "50",
+        "100"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S38",
+      "svg": "wb_L3_s38_q02.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 350 78\" width=\"350\" height=\"78\" style=\"font-family:Arial,sans-serif\"><text x=\"10\" y=\"44\" font-size=\"12\" fill=\"#333\">A</text><text x=\"100\" y=\"44\" font-size=\"16\">\u2b50</text><text x=\"122\" y=\"44\" font-size=\"16\">\u2b50</text><text x=\"144\" y=\"44\" font-size=\"16\">\u2b50</text><text x=\"166\" y=\"44\" font-size=\"16\">\u2b50</text><text x=\"188\" y=\"44\" font-size=\"16\">\u2b50</text><text x=\"10\" y=\"68\" font-size=\"10\" fill=\"#888\">Each \u2b50 = 1</text></svg>"
+    },
+    {
+      "id": "wb_L3_s38_q03",
+      "stem": "In a bar graph, the tallest bar represents",
+      "interaction_mode": "mcq",
+      "topic": "Pie graph and pictograph",
+      "difficulty_tier": "warmup",
+      "question_number": 3,
+      "choices": [
+        "The smallest value",
+        "The largest value",
+        "The average value",
+        "The middle value"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S38",
+      "svg": "wb_L3_s38_q03.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 350 220\" width=\"350\" height=\"220\" style=\"font-family:Arial,sans-serif\"><line x1=\"60\" y1=\"30\" x2=\"60\" y2=\"180\" stroke=\"#333\" stroke-width=\"1.5\"/><line x1=\"60\" y1=\"180\" x2=\"340\" y2=\"180\" stroke=\"#333\" stroke-width=\"1.5\"/><line x1=\"60\" y1=\"180.0\" x2=\"340\" y2=\"180.0\" stroke=\"#eee\" stroke-width=\"1\"/><text x=\"52\" y=\"184.0\" text-anchor=\"end\" font-size=\"10\" fill=\"#666\">0</text><line x1=\"60\" y1=\"142.5\" x2=\"340\" y2=\"142.5\" stroke=\"#eee\" stroke-width=\"1\"/><text x=\"52\" y=\"146.5\" text-anchor=\"end\" font-size=\"10\" fill=\"#666\">2</text><line x1=\"60\" y1=\"105.0\" x2=\"340\" y2=\"105.0\" stroke=\"#eee\" stroke-width=\"1\"/><text x=\"52\" y=\"109.0\" text-anchor=\"end\" font-size=\"10\" fill=\"#666\">4</text><line x1=\"60\" y1=\"67.5\" x2=\"340\" y2=\"67.5\" stroke=\"#eee\" stroke-width=\"1\"/><text x=\"52\" y=\"71.5\" text-anchor=\"end\" font-size=\"10\" fill=\"#666\">6</text><line x1=\"60\" y1=\"30.0\" x2=\"340\" y2=\"30.0\" stroke=\"#eee\" stroke-width=\"1\"/><text x=\"52\" y=\"34.0\" text-anchor=\"end\" font-size=\"10\" fill=\"#666\">8</text><rect x=\"75.0\" y=\"86.2\" width=\"40.0\" height=\"93.8\" fill=\"#42A5F5\" rx=\"2\"/><text x=\"95.0\" y=\"194\" text-anchor=\"middle\" font-size=\"9\" fill=\"#333\">A</text><text x=\"95.0\" y=\"82.2\" text-anchor=\"middle\" font-size=\"10\" fill=\"#333\">5</text><rect x=\"127.0\" y=\"30.0\" width=\"40.0\" height=\"150.0\" fill=\"#66BB6A\" rx=\"2\"/><text x=\"147.0\" y=\"194\" text-anchor=\"middle\" font-size=\"9\" fill=\"#333\">B</text><text x=\"147.0\" y=\"26.0\" text-anchor=\"middle\" font-size=\"10\" fill=\"#333\">8</text><rect x=\"179.0\" y=\"123.8\" width=\"40.0\" height=\"56.2\" fill=\"#FF7043\" rx=\"2\"/><text x=\"199.0\" y=\"194\" text-anchor=\"middle\" font-size=\"9\" fill=\"#333\">C</text><text x=\"199.0\" y=\"119.8\" text-anchor=\"middle\" font-size=\"10\" fill=\"#333\">3</text></svg>"
+    },
+    {
+      "id": "wb_L3_s38_q04",
+      "stem": "A pie chart shows that games take up 90 degrees. What fraction of the day is spent on games?",
+      "interaction_mode": "mcq",
+      "topic": "Pie graph and pictograph",
+      "difficulty_tier": "warmup",
+      "question_number": 4,
+      "choices": [
+        "1/2",
+        "1/3",
+        "1/4",
+        "1/6"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S38",
+      "svg": "wb_L3_s38_q04.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 240\" width=\"340\" height=\"240\" style=\"font-family:Arial,sans-serif\"><path d=\"M130,120 L130.0,40.0 A80,80 0 0 1 210.0,120.0 Z\" fill=\"#42A5F5\" stroke=\"white\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"40\" width=\"12\" height=\"12\" fill=\"#42A5F5\"/><text x=\"258\" y=\"50\" font-size=\"11\" fill=\"#333\">games</text><path d=\"M130,120 L210.0,120.0 A80,80 0 1 1 130.0,40.0 Z\" fill=\"#66BB6A\" stroke=\"white\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"60\" width=\"12\" height=\"12\" fill=\"#66BB6A\"/><text x=\"258\" y=\"70\" font-size=\"11\" fill=\"#333\">Other</text></svg>"
+    },
+    {
+      "id": "wb_L3_s38_q05",
+      "stem": "In a pictograph, a half symbol represents",
+      "interaction_mode": "mcq",
+      "topic": "Pie graph and pictograph",
+      "difficulty_tier": "warmup",
+      "question_number": 5,
+      "choices": [
+        "Full value",
+        "Double value",
+        "Half the value of one symbol",
+        "Zero"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S38",
+      "svg": "wb_L3_s38_q05.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 350 134\" width=\"350\" height=\"134\" style=\"font-family:Arial,sans-serif\"><text x=\"10\" y=\"44\" font-size=\"12\" fill=\"#333\">Item A</text><text x=\"100\" y=\"44\" font-size=\"16\">\u2b50</text><text x=\"122\" y=\"44\" font-size=\"16\">\u2b50</text><text x=\"144\" y=\"44\" font-size=\"16\">\u2b50</text><text x=\"166\" y=\"44\" font-size=\"16\">\u2b50</text><text x=\"10\" y=\"72\" font-size=\"12\" fill=\"#333\">Item B</text><text x=\"100\" y=\"72\" font-size=\"16\">\u2b50</text><text x=\"122\" y=\"72\" font-size=\"16\">\u2b50</text><text x=\"144\" y=\"72\" font-size=\"16\">\u2b50</text><text x=\"10\" y=\"100\" font-size=\"12\" fill=\"#333\">Item C</text><text x=\"100\" y=\"100\" font-size=\"16\">\u2b50</text><text x=\"122\" y=\"100\" font-size=\"16\">\u2b50</text><text x=\"144\" y=\"100\" font-size=\"16\">\u2b50</text><text x=\"166\" y=\"100\" font-size=\"16\">\u2b50</text><text x=\"188\" y=\"100\" font-size=\"16\">\u2b50</text><text x=\"10\" y=\"124\" font-size=\"10\" fill=\"#888\">Each \u2b50 = 1</text></svg>"
+    },
+    {
+      "id": "wb_L3_s38_q06",
+      "stem": "A pie chart shows expenses: Food 120 degrees, Rent 90 degrees, Transport 60 degrees, Others 90 degrees. What percentage is spent on food?",
+      "interaction_mode": "mcq",
+      "topic": "Pie graph and pictograph",
+      "difficulty_tier": "practice",
+      "question_number": 6,
+      "choices": [
+        "25%",
+        "33.3%",
+        "40%",
+        "50%"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S38",
+      "svg": "wb_L3_s38_q06.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 240\" width=\"340\" height=\"240\" style=\"font-family:Arial,sans-serif\"><path d=\"M130,120 L130.0,40.0 A80,80 0 0 1 177.0,184.7 Z\" fill=\"#42A5F5\" stroke=\"white\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"40\" width=\"12\" height=\"12\" fill=\"#42A5F5\"/><text x=\"258\" y=\"50\" font-size=\"11\" fill=\"#333\">Part A</text><path d=\"M130,120 L177.0,184.7 A80,80 0 0 1 53.9,144.7 Z\" fill=\"#66BB6A\" stroke=\"white\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"60\" width=\"12\" height=\"12\" fill=\"#66BB6A\"/><text x=\"258\" y=\"70\" font-size=\"11\" fill=\"#333\">Part B</text><path d=\"M130,120 L53.9,144.7 A80,80 0 0 1 83.0,55.3 Z\" fill=\"#FF7043\" stroke=\"white\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"80\" width=\"12\" height=\"12\" fill=\"#FF7043\"/><text x=\"258\" y=\"90\" font-size=\"11\" fill=\"#333\">Part C</text><path d=\"M130,120 L83.0,55.3 A80,80 0 0 1 130.0,40.0 Z\" fill=\"#AB47BC\" stroke=\"white\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"100\" width=\"12\" height=\"12\" fill=\"#AB47BC\"/><text x=\"258\" y=\"110\" font-size=\"11\" fill=\"#333\">Part D</text></svg>"
+    },
+    {
+      "id": "wb_L3_s38_q07",
+      "stem": "In a pictograph where each picture = 20 students, how many pictures represent 70 students?",
+      "interaction_mode": "mcq",
+      "topic": "Pie graph and pictograph",
+      "difficulty_tier": "practice",
+      "question_number": 7,
+      "choices": [
+        "3",
+        "3.5",
+        "4",
+        "7"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S38",
+      "svg": "wb_L3_s38_q07.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 350 134\" width=\"350\" height=\"134\" style=\"font-family:Arial,sans-serif\"><text x=\"10\" y=\"44\" font-size=\"12\" fill=\"#333\">Item A</text><text x=\"100\" y=\"44\" font-size=\"16\">\u2b50</text><text x=\"122\" y=\"44\" font-size=\"16\">\u2b50</text><text x=\"144\" y=\"44\" font-size=\"16\">\u2b50</text><text x=\"166\" y=\"44\" font-size=\"16\">\u2b50</text><text x=\"10\" y=\"72\" font-size=\"12\" fill=\"#333\">Item B</text><text x=\"100\" y=\"72\" font-size=\"16\">\u2b50</text><text x=\"122\" y=\"72\" font-size=\"16\">\u2b50</text><text x=\"144\" y=\"72\" font-size=\"16\">\u2b50</text><text x=\"10\" y=\"100\" font-size=\"12\" fill=\"#333\">Item C</text><text x=\"100\" y=\"100\" font-size=\"16\">\u2b50</text><text x=\"122\" y=\"100\" font-size=\"16\">\u2b50</text><text x=\"144\" y=\"100\" font-size=\"16\">\u2b50</text><text x=\"166\" y=\"100\" font-size=\"16\">\u2b50</text><text x=\"188\" y=\"100\" font-size=\"16\">\u2b50</text><text x=\"10\" y=\"124\" font-size=\"10\" fill=\"#888\">Each \u2b50 = 1</text></svg>"
+    },
+    {
+      "id": "wb_L3_s38_q08",
+      "stem": "A bar graph shows: Monday 30, Tuesday 45, Wednesday 25, Thursday 50, Friday 40. Which day had the least sales?",
+      "interaction_mode": "mcq",
+      "topic": "Pie graph and pictograph",
+      "difficulty_tier": "practice",
+      "question_number": 8,
+      "choices": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Friday"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S38",
+      "svg": "wb_L3_s38_q08.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 350 220\" width=\"350\" height=\"220\" style=\"font-family:Arial,sans-serif\"><line x1=\"60\" y1=\"30\" x2=\"60\" y2=\"180\" stroke=\"#333\" stroke-width=\"1.5\"/><line x1=\"60\" y1=\"180\" x2=\"340\" y2=\"180\" stroke=\"#333\" stroke-width=\"1.5\"/><line x1=\"60\" y1=\"180.0\" x2=\"340\" y2=\"180.0\" stroke=\"#eee\" stroke-width=\"1\"/><text x=\"52\" y=\"184.0\" text-anchor=\"end\" font-size=\"10\" fill=\"#666\">0</text><line x1=\"60\" y1=\"142.5\" x2=\"340\" y2=\"142.5\" stroke=\"#eee\" stroke-width=\"1\"/><text x=\"52\" y=\"146.5\" text-anchor=\"end\" font-size=\"10\" fill=\"#666\">2</text><line x1=\"60\" y1=\"105.0\" x2=\"340\" y2=\"105.0\" stroke=\"#eee\" stroke-width=\"1\"/><text x=\"52\" y=\"109.0\" text-anchor=\"end\" font-size=\"10\" fill=\"#666\">4</text><line x1=\"60\" y1=\"67.5\" x2=\"340\" y2=\"67.5\" stroke=\"#eee\" stroke-width=\"1\"/><text x=\"52\" y=\"71.5\" text-anchor=\"end\" font-size=\"10\" fill=\"#666\">6</text><line x1=\"60\" y1=\"30.0\" x2=\"340\" y2=\"30.0\" stroke=\"#eee\" stroke-width=\"1\"/><text x=\"52\" y=\"34.0\" text-anchor=\"end\" font-size=\"10\" fill=\"#666\">8</text><rect x=\"75.0\" y=\"86.2\" width=\"40.0\" height=\"93.8\" fill=\"#42A5F5\" rx=\"2\"/><text x=\"95.0\" y=\"194\" text-anchor=\"middle\" font-size=\"9\" fill=\"#333\">A</text><text x=\"95.0\" y=\"82.2\" text-anchor=\"middle\" font-size=\"10\" fill=\"#333\">5</text><rect x=\"127.0\" y=\"30.0\" width=\"40.0\" height=\"150.0\" fill=\"#66BB6A\" rx=\"2\"/><text x=\"147.0\" y=\"194\" text-anchor=\"middle\" font-size=\"9\" fill=\"#333\">B</text><text x=\"147.0\" y=\"26.0\" text-anchor=\"middle\" font-size=\"10\" fill=\"#333\">8</text><rect x=\"179.0\" y=\"123.8\" width=\"40.0\" height=\"56.2\" fill=\"#FF7043\" rx=\"2\"/><text x=\"199.0\" y=\"194\" text-anchor=\"middle\" font-size=\"9\" fill=\"#333\">C</text><text x=\"199.0\" y=\"119.8\" text-anchor=\"middle\" font-size=\"10\" fill=\"#333\">3</text></svg>"
+    },
+    {
+      "id": "wb_L3_s38_q09",
+      "stem": "In a pie chart, if Science = 72 degrees out of 360 degrees total, what percentage of students like Science?",
+      "interaction_mode": "mcq",
+      "topic": "Pie graph and pictograph",
+      "difficulty_tier": "practice",
+      "question_number": 9,
+      "choices": [
+        "72%",
+        "20%",
+        "36%",
+        "15%"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S38",
+      "svg": "wb_L3_s38_q09.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 240\" width=\"340\" height=\"240\" style=\"font-family:Arial,sans-serif\"><path d=\"M130,120 L130.0,40.0 A80,80 0 0 1 177.0,184.7 Z\" fill=\"#42A5F5\" stroke=\"white\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"40\" width=\"12\" height=\"12\" fill=\"#42A5F5\"/><text x=\"258\" y=\"50\" font-size=\"11\" fill=\"#333\">Part A</text><path d=\"M130,120 L177.0,184.7 A80,80 0 0 1 53.9,144.7 Z\" fill=\"#66BB6A\" stroke=\"white\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"60\" width=\"12\" height=\"12\" fill=\"#66BB6A\"/><text x=\"258\" y=\"70\" font-size=\"11\" fill=\"#333\">Part B</text><path d=\"M130,120 L53.9,144.7 A80,80 0 0 1 83.0,55.3 Z\" fill=\"#FF7043\" stroke=\"white\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"80\" width=\"12\" height=\"12\" fill=\"#FF7043\"/><text x=\"258\" y=\"90\" font-size=\"11\" fill=\"#333\">Part C</text><path d=\"M130,120 L83.0,55.3 A80,80 0 0 1 130.0,40.0 Z\" fill=\"#AB47BC\" stroke=\"white\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"100\" width=\"12\" height=\"12\" fill=\"#AB47BC\"/><text x=\"258\" y=\"110\" font-size=\"11\" fill=\"#333\">Part D</text></svg>"
+    },
+    {
+      "id": "wb_L3_s38_q10",
+      "stem": "A pictograph uses smiley faces. If 3 full faces and 1 half face are shown, and each face = 8 children, how many children are represented?",
+      "interaction_mode": "mcq",
+      "topic": "Pie graph and pictograph",
+      "difficulty_tier": "practice",
+      "question_number": 10,
+      "choices": [
+        "24",
+        "28",
+        "32",
+        "30"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S38",
+      "svg": "wb_L3_s38_q10.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 350 134\" width=\"350\" height=\"134\" style=\"font-family:Arial,sans-serif\"><text x=\"10\" y=\"44\" font-size=\"12\" fill=\"#333\">Item A</text><text x=\"100\" y=\"44\" font-size=\"16\">\ud83d\ude0a</text><text x=\"122\" y=\"44\" font-size=\"16\">\ud83d\ude0a</text><text x=\"144\" y=\"44\" font-size=\"16\">\ud83d\ude0a</text><text x=\"166\" y=\"44\" font-size=\"16\">\ud83d\ude0a</text><text x=\"10\" y=\"72\" font-size=\"12\" fill=\"#333\">Item B</text><text x=\"100\" y=\"72\" font-size=\"16\">\ud83d\ude0a</text><text x=\"122\" y=\"72\" font-size=\"16\">\ud83d\ude0a</text><text x=\"144\" y=\"72\" font-size=\"16\">\ud83d\ude0a</text><text x=\"10\" y=\"100\" font-size=\"12\" fill=\"#333\">Item C</text><text x=\"100\" y=\"100\" font-size=\"16\">\ud83d\ude0a</text><text x=\"122\" y=\"100\" font-size=\"16\">\ud83d\ude0a</text><text x=\"144\" y=\"100\" font-size=\"16\">\ud83d\ude0a</text><text x=\"166\" y=\"100\" font-size=\"16\">\ud83d\ude0a</text><text x=\"188\" y=\"100\" font-size=\"16\">\ud83d\ude0a</text><text x=\"10\" y=\"124\" font-size=\"10\" fill=\"#888\">Each \ud83d\ude0a = 1</text></svg>"
+    },
+    {
+      "id": "wb_L3_s38_q11",
+      "stem": "In a bar graph, if the y-axis scale starts at 0 and goes to 100 with intervals of 20, a bar reaching the 60 mark represents",
+      "interaction_mode": "mcq",
+      "topic": "Pie graph and pictograph",
+      "difficulty_tier": "challenge",
+      "question_number": 11,
+      "choices": [
+        "3 units",
+        "60 units",
+        "6 units",
+        "30 units"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S38",
+      "svg": "wb_L3_s38_q11.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 350 220\" width=\"350\" height=\"220\" style=\"font-family:Arial,sans-serif\"><line x1=\"60\" y1=\"30\" x2=\"60\" y2=\"180\" stroke=\"#333\" stroke-width=\"1.5\"/><line x1=\"60\" y1=\"180\" x2=\"340\" y2=\"180\" stroke=\"#333\" stroke-width=\"1.5\"/><line x1=\"60\" y1=\"180.0\" x2=\"340\" y2=\"180.0\" stroke=\"#eee\" stroke-width=\"1\"/><text x=\"52\" y=\"184.0\" text-anchor=\"end\" font-size=\"10\" fill=\"#666\">0</text><line x1=\"60\" y1=\"142.5\" x2=\"340\" y2=\"142.5\" stroke=\"#eee\" stroke-width=\"1\"/><text x=\"52\" y=\"146.5\" text-anchor=\"end\" font-size=\"10\" fill=\"#666\">2</text><line x1=\"60\" y1=\"105.0\" x2=\"340\" y2=\"105.0\" stroke=\"#eee\" stroke-width=\"1\"/><text x=\"52\" y=\"109.0\" text-anchor=\"end\" font-size=\"10\" fill=\"#666\">4</text><line x1=\"60\" y1=\"67.5\" x2=\"340\" y2=\"67.5\" stroke=\"#eee\" stroke-width=\"1\"/><text x=\"52\" y=\"71.5\" text-anchor=\"end\" font-size=\"10\" fill=\"#666\">6</text><line x1=\"60\" y1=\"30.0\" x2=\"340\" y2=\"30.0\" stroke=\"#eee\" stroke-width=\"1\"/><text x=\"52\" y=\"34.0\" text-anchor=\"end\" font-size=\"10\" fill=\"#666\">8</text><rect x=\"75.0\" y=\"86.2\" width=\"40.0\" height=\"93.8\" fill=\"#42A5F5\" rx=\"2\"/><text x=\"95.0\" y=\"194\" text-anchor=\"middle\" font-size=\"9\" fill=\"#333\">A</text><text x=\"95.0\" y=\"82.2\" text-anchor=\"middle\" font-size=\"10\" fill=\"#333\">5</text><rect x=\"127.0\" y=\"30.0\" width=\"40.0\" height=\"150.0\" fill=\"#66BB6A\" rx=\"2\"/><text x=\"147.0\" y=\"194\" text-anchor=\"middle\" font-size=\"9\" fill=\"#333\">B</text><text x=\"147.0\" y=\"26.0\" text-anchor=\"middle\" font-size=\"10\" fill=\"#333\">8</text><rect x=\"179.0\" y=\"123.8\" width=\"40.0\" height=\"56.2\" fill=\"#FF7043\" rx=\"2\"/><text x=\"199.0\" y=\"194\" text-anchor=\"middle\" font-size=\"9\" fill=\"#333\">C</text><text x=\"199.0\" y=\"119.8\" text-anchor=\"middle\" font-size=\"10\" fill=\"#333\">3</text></svg>"
+    },
+    {
+      "id": "wb_L3_s38_q12",
+      "stem": "A pie chart for 600 students shows Cricket at 120 degrees. How many students prefer Cricket?",
+      "interaction_mode": "mcq",
+      "topic": "Pie graph and pictograph",
+      "difficulty_tier": "challenge",
+      "question_number": 12,
+      "choices": [
+        "120",
+        "200",
+        "300",
+        "180"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S38",
+      "svg": "wb_L3_s38_q12.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 240\" width=\"340\" height=\"240\" style=\"font-family:Arial,sans-serif\"><path d=\"M130,120 L130.0,40.0 A80,80 0 0 1 177.0,184.7 Z\" fill=\"#42A5F5\" stroke=\"white\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"40\" width=\"12\" height=\"12\" fill=\"#42A5F5\"/><text x=\"258\" y=\"50\" font-size=\"11\" fill=\"#333\">Part A</text><path d=\"M130,120 L177.0,184.7 A80,80 0 0 1 53.9,144.7 Z\" fill=\"#66BB6A\" stroke=\"white\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"60\" width=\"12\" height=\"12\" fill=\"#66BB6A\"/><text x=\"258\" y=\"70\" font-size=\"11\" fill=\"#333\">Part B</text><path d=\"M130,120 L53.9,144.7 A80,80 0 0 1 83.0,55.3 Z\" fill=\"#FF7043\" stroke=\"white\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"80\" width=\"12\" height=\"12\" fill=\"#FF7043\"/><text x=\"258\" y=\"90\" font-size=\"11\" fill=\"#333\">Part C</text><path d=\"M130,120 L83.0,55.3 A80,80 0 0 1 130.0,40.0 Z\" fill=\"#AB47BC\" stroke=\"white\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"100\" width=\"12\" height=\"12\" fill=\"#AB47BC\"/><text x=\"258\" y=\"110\" font-size=\"11\" fill=\"#333\">Part D</text></svg>"
+    },
+    {
+      "id": "wb_L3_s38_q13",
+      "stem": "In a pictograph, if each tree symbol = 50 trees and a region shows 4 full symbols and 1 half symbol, the total trees are",
+      "interaction_mode": "mcq",
+      "topic": "Pie graph and pictograph",
+      "difficulty_tier": "challenge",
+      "question_number": 13,
+      "choices": [
+        "200",
+        "225",
+        "250",
+        "175"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S38",
+      "svg": "wb_L3_s38_q13.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 350 134\" width=\"350\" height=\"134\" style=\"font-family:Arial,sans-serif\"><text x=\"10\" y=\"44\" font-size=\"12\" fill=\"#333\">Item A</text><text x=\"100\" y=\"44\" font-size=\"16\">\u2b50</text><text x=\"122\" y=\"44\" font-size=\"16\">\u2b50</text><text x=\"144\" y=\"44\" font-size=\"16\">\u2b50</text><text x=\"166\" y=\"44\" font-size=\"16\">\u2b50</text><text x=\"10\" y=\"72\" font-size=\"12\" fill=\"#333\">Item B</text><text x=\"100\" y=\"72\" font-size=\"16\">\u2b50</text><text x=\"122\" y=\"72\" font-size=\"16\">\u2b50</text><text x=\"144\" y=\"72\" font-size=\"16\">\u2b50</text><text x=\"10\" y=\"100\" font-size=\"12\" fill=\"#333\">Item C</text><text x=\"100\" y=\"100\" font-size=\"16\">\u2b50</text><text x=\"122\" y=\"100\" font-size=\"16\">\u2b50</text><text x=\"144\" y=\"100\" font-size=\"16\">\u2b50</text><text x=\"166\" y=\"100\" font-size=\"16\">\u2b50</text><text x=\"188\" y=\"100\" font-size=\"16\">\u2b50</text><text x=\"10\" y=\"124\" font-size=\"10\" fill=\"#888\">Each \u2b50 = 1</text></svg>"
+    },
+    {
+      "id": "wb_L3_s38_q14",
+      "stem": "The difference between the highest and lowest bars in a bar graph is called",
+      "interaction_mode": "mcq",
+      "topic": "Pie graph and pictograph",
+      "difficulty_tier": "challenge",
+      "question_number": 14,
+      "choices": [
+        "Mean",
+        "Range",
+        "Mode",
+        "Median"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S38",
+      "svg": "wb_L3_s38_q14.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 350 220\" width=\"350\" height=\"220\" style=\"font-family:Arial,sans-serif\"><line x1=\"60\" y1=\"30\" x2=\"60\" y2=\"180\" stroke=\"#333\" stroke-width=\"1.5\"/><line x1=\"60\" y1=\"180\" x2=\"340\" y2=\"180\" stroke=\"#333\" stroke-width=\"1.5\"/><line x1=\"60\" y1=\"180.0\" x2=\"340\" y2=\"180.0\" stroke=\"#eee\" stroke-width=\"1\"/><text x=\"52\" y=\"184.0\" text-anchor=\"end\" font-size=\"10\" fill=\"#666\">0</text><line x1=\"60\" y1=\"142.5\" x2=\"340\" y2=\"142.5\" stroke=\"#eee\" stroke-width=\"1\"/><text x=\"52\" y=\"146.5\" text-anchor=\"end\" font-size=\"10\" fill=\"#666\">2</text><line x1=\"60\" y1=\"105.0\" x2=\"340\" y2=\"105.0\" stroke=\"#eee\" stroke-width=\"1\"/><text x=\"52\" y=\"109.0\" text-anchor=\"end\" font-size=\"10\" fill=\"#666\">4</text><line x1=\"60\" y1=\"67.5\" x2=\"340\" y2=\"67.5\" stroke=\"#eee\" stroke-width=\"1\"/><text x=\"52\" y=\"71.5\" text-anchor=\"end\" font-size=\"10\" fill=\"#666\">6</text><line x1=\"60\" y1=\"30.0\" x2=\"340\" y2=\"30.0\" stroke=\"#eee\" stroke-width=\"1\"/><text x=\"52\" y=\"34.0\" text-anchor=\"end\" font-size=\"10\" fill=\"#666\">8</text><rect x=\"75.0\" y=\"86.2\" width=\"40.0\" height=\"93.8\" fill=\"#42A5F5\" rx=\"2\"/><text x=\"95.0\" y=\"194\" text-anchor=\"middle\" font-size=\"9\" fill=\"#333\">A</text><text x=\"95.0\" y=\"82.2\" text-anchor=\"middle\" font-size=\"10\" fill=\"#333\">5</text><rect x=\"127.0\" y=\"30.0\" width=\"40.0\" height=\"150.0\" fill=\"#66BB6A\" rx=\"2\"/><text x=\"147.0\" y=\"194\" text-anchor=\"middle\" font-size=\"9\" fill=\"#333\">B</text><text x=\"147.0\" y=\"26.0\" text-anchor=\"middle\" font-size=\"10\" fill=\"#333\">8</text><rect x=\"179.0\" y=\"123.8\" width=\"40.0\" height=\"56.2\" fill=\"#FF7043\" rx=\"2\"/><text x=\"199.0\" y=\"194\" text-anchor=\"middle\" font-size=\"9\" fill=\"#333\">C</text><text x=\"199.0\" y=\"119.8\" text-anchor=\"middle\" font-size=\"10\" fill=\"#333\">3</text></svg>"
+    },
+    {
+      "id": "wb_L3_s38_q15",
+      "stem": "A pie chart has 5 equal sections. The angle of each section is",
+      "interaction_mode": "mcq",
+      "topic": "Pie graph and pictograph",
+      "difficulty_tier": "challenge",
+      "question_number": 15,
+      "choices": [
+        "36 degrees",
+        "72 degrees",
+        "60 degrees",
+        "45 degrees"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S38",
+      "svg": "wb_L3_s38_q15.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 240\" width=\"340\" height=\"240\" style=\"font-family:Arial,sans-serif\"><path d=\"M130,120 L130.0,40.0 A80,80 0 0 1 177.0,184.7 Z\" fill=\"#42A5F5\" stroke=\"white\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"40\" width=\"12\" height=\"12\" fill=\"#42A5F5\"/><text x=\"258\" y=\"50\" font-size=\"11\" fill=\"#333\">Part A</text><path d=\"M130,120 L177.0,184.7 A80,80 0 0 1 53.9,144.7 Z\" fill=\"#66BB6A\" stroke=\"white\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"60\" width=\"12\" height=\"12\" fill=\"#66BB6A\"/><text x=\"258\" y=\"70\" font-size=\"11\" fill=\"#333\">Part B</text><path d=\"M130,120 L53.9,144.7 A80,80 0 0 1 83.0,55.3 Z\" fill=\"#FF7043\" stroke=\"white\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"80\" width=\"12\" height=\"12\" fill=\"#FF7043\"/><text x=\"258\" y=\"90\" font-size=\"11\" fill=\"#333\">Part C</text><path d=\"M130,120 L83.0,55.3 A80,80 0 0 1 130.0,40.0 Z\" fill=\"#AB47BC\" stroke=\"white\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"100\" width=\"12\" height=\"12\" fill=\"#AB47BC\"/><text x=\"258\" y=\"110\" font-size=\"11\" fill=\"#333\">Part D</text></svg>"
+    }
+  ]
+}

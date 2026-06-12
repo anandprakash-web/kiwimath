@@ -1,0 +1,15 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="200" fill="#f9f9f0" rx="8"/>
+  <text x="100" y="22" text-anchor="middle" font-size="11" font-family="Arial" fill="#555">Complete the Pattern</text>
+  <rect x="25.33333333333333" y="70" width="36" height="30" rx="5" fill="#E8F5E9" stroke="#4CAF50" stroke-width="1.5"/>
+  <text x="43.33333333333333" y="90" text-anchor="middle" font-size="14" font-family="Arial" font-weight="bold" fill="#2E7D32">AZ</text>
+  <rect x="53.66666666666666" y="70" width="36" height="30" rx="5" fill="#E8F5E9" stroke="#4CAF50" stroke-width="1.5"/>
+  <text x="71.66666666666666" y="90" text-anchor="middle" font-size="14" font-family="Arial" font-weight="bold" fill="#2E7D32">BY</text>
+  <rect x="82.0" y="70" width="36" height="30" rx="5" fill="#E8F5E9" stroke="#4CAF50" stroke-width="1.5"/>
+  <text x="100.0" y="90" text-anchor="middle" font-size="14" font-family="Arial" font-weight="bold" fill="#2E7D32">CX</text>
+  <rect x="110.33333333333331" y="70" width="36" height="30" rx="5" fill="#E8F5E9" stroke="#4CAF50" stroke-width="1.5"/>
+  <text x="128.33333333333331" y="90" text-anchor="middle" font-size="14" font-family="Arial" font-weight="bold" fill="#2E7D32">DW</text>
+  <rect x="138.66666666666666" y="70" width="36" height="30" rx="5" fill="#FFF9C4" stroke="#FBC02D" stroke-width="2"/>
+  <text x="156.66666666666666" y="92" text-anchor="middle" font-size="18" font-family="Arial" font-weight="bold" fill="#F57F17">?</text>
+  <text x="100" y="130" text-anchor="middle" font-size="9" font-family="Arial" fill="#999">First letter: A→B→C→D→?  Second letter: Z→Y→X→W→?</text>
+</svg>

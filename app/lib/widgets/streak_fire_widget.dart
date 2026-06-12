@@ -80,9 +80,9 @@ class _StreakFireWidgetState extends State<StreakFireWidget>
 
   /// Glow color intensifies with streak.
   Color _glowColor() {
-    if (widget.streakCount >= 30) return const Color(0xFFFF3D00);
-    if (widget.streakCount >= 14) return const Color(0xFFFF6D00);
-    if (widget.streakCount >= 7) return const Color(0xFFFF9100);
+    if (widget.streakCount >= 30) return KiwiColors.coral;
+    if (widget.streakCount >= 14) return KiwiColors.kiwiPrimary;
+    if (widget.streakCount >= 7) return KiwiColors.pathCurrent;
     if (widget.streakCount >= 3) return KiwiColors.streakWarm;
     return KiwiColors.amber;
   }
@@ -129,7 +129,7 @@ class _StreakFireWidgetState extends State<StreakFireWidget>
               ),
             ),
             Text(
-              'days',
+              'day streak',
               style: const TextStyle(
                 fontSize: 10,
                 fontWeight: FontWeight.w600,

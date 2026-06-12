@@ -1,0 +1,205 @@
+{
+  "topic_id": "wavebook-perimeter",
+  "topic_name": "Wavebook: Perimeter",
+  "topic_emoji": "\ud83d\udcd8",
+  "grade": 4,
+  "domain": "wavebook",
+  "source": "wavebook",
+  "total_questions": 10,
+  "difficulty_range": {
+    "min": 0,
+    "max": 0
+  },
+  "questions": [
+    {
+      "id": "wb_L3_s17_q01",
+      "stem": "The perimeter of a square of 13 cm is equal to",
+      "interaction_mode": "mcq",
+      "topic": "Perimeter",
+      "difficulty_tier": "warmup",
+      "question_number": 1,
+      "choices": [
+        "169 cm",
+        "52 cm",
+        "26 cm",
+        "None of these"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S17",
+      "svg": "svg/wb_L3_s17_q01.svg",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L3_s17_q02",
+      "stem": "The length of a rectangular plot is 20 meters more than its breadth. If the cost of fencing at Rs. 26.50 per meter is Rs. 5300. What is the length of the plot?",
+      "interaction_mode": "mcq",
+      "topic": "Perimeter",
+      "difficulty_tier": "warmup",
+      "question_number": 2,
+      "choices": [
+        "40",
+        "120",
+        "50",
+        "None of these"
+      ],
+      "correct_answer": 3,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S17",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L3_s17_q03",
+      "stem": "A man wants to fence his rectangular garden which is 15m long and 8m wide. Find the minimum length of fencing he needs to buy.",
+      "interaction_mode": "mcq",
+      "topic": "Perimeter",
+      "difficulty_tier": "warmup",
+      "question_number": 3,
+      "choices": [
+        "46 m",
+        "30 m",
+        "23 m",
+        "120 m"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S17",
+      "svg": "svg/wb_L3_s17_q03.svg",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L3_s17_q06",
+      "stem": "The sides of a triangle are 5, 12 and 13 units. A rectangle of width 10 units is constructed equal in area to the area of the triangle. Then, the perimeter of the rectangle is",
+      "interaction_mode": "mcq",
+      "topic": "Perimeter",
+      "difficulty_tier": "practice",
+      "question_number": 6,
+      "choices": [
+        "30 units",
+        "26 units",
+        "13 units",
+        "15 units"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S17",
+      "svg": "svg/wb_L3_s17_q06.svg",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L3_s17_q09",
+      "stem": "Which expression can be used to represent the perimeter of the given rectangle ABCD? (Length = 4a - 3b, Width = 5a + 4b)",
+      "interaction_mode": "mcq",
+      "topic": "Perimeter",
+      "difficulty_tier": "practice",
+      "question_number": 9,
+      "choices": [
+        "9a + 7b",
+        "18a + 2b",
+        "20a - 2b",
+        "18a + b"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S17",
+      "svg": "svg/wb_L3_s17_q09.svg",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L3_s17_q10",
+      "stem": "The figure given consists of two squares of sides 8cm and 6cm. What is the perimeter of the figure?",
+      "interaction_mode": "mcq",
+      "topic": "Perimeter",
+      "difficulty_tier": "practice",
+      "question_number": 10,
+      "choices": [
+        "44 cm",
+        "42 cm",
+        "50 cm",
+        "58 cm"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S17",
+      "svg": "svg/wb_L3_s17_q10.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 180\" width=\"300\" height=\"180\" style=\"font-family:Arial,sans-serif\"><rect x=\"50\" y=\"30\" width=\"200\" height=\"120\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2.5\" rx=\"2\"/><text x=\"150\" y=\"168\" text-anchor=\"middle\" font-size=\"13\" fill=\"#333\"></text><text x=\"30\" y=\"90\" text-anchor=\"middle\" font-size=\"13\" fill=\"#333\" transform=\"rotate(-90,30,90)\"></text></svg>"
+    },
+    {
+      "id": "wb_L3_s17_q11",
+      "stem": "The area of an equilateral triangle is 64\u221a3 sq.cm. Find its perimeter.",
+      "interaction_mode": "mcq",
+      "topic": "Perimeter",
+      "difficulty_tier": "challenge",
+      "question_number": 11,
+      "choices": [
+        "32 cm",
+        "48 cm",
+        "64 cm",
+        "72 cm"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S17",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L3_s18_q05",
+      "stem": "Which of the following figures has an area of 20 sq. units and a perimeter of 18 units?",
+      "interaction_mode": "mcq",
+      "topic": "Perimeter",
+      "difficulty_tier": "warmup",
+      "question_number": 5,
+      "choices": [
+        "6x3 rectangle",
+        "9x2 rectangle",
+        "8x2 rectangle",
+        "5x4 rectangle"
+      ],
+      "correct_answer": 3,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S18",
+      "svg": "svg/wb_L3_s18_q05.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 215 180\" width=\"215\" height=\"180\" style=\"font-family:Arial,sans-serif\"><rect x=\"20\" y=\"20\" width=\"35\" height=\"35\" fill=\"#FFB74D\" stroke=\"#333\" stroke-width=\"1\"/><rect x=\"55\" y=\"20\" width=\"35\" height=\"35\" fill=\"#FFB74D\" stroke=\"#333\" stroke-width=\"1\"/><rect x=\"90\" y=\"20\" width=\"35\" height=\"35\" fill=\"#FFB74D\" stroke=\"#333\" stroke-width=\"1\"/><rect x=\"125\" y=\"20\" width=\"35\" height=\"35\" fill=\"#FFB74D\" stroke=\"#333\" stroke-width=\"1\"/><rect x=\"160\" y=\"20\" width=\"35\" height=\"35\" fill=\"#FFB74D\" stroke=\"#333\" stroke-width=\"1\"/><rect x=\"20\" y=\"55\" width=\"35\" height=\"35\" fill=\"#FFB74D\" stroke=\"#333\" stroke-width=\"1\"/><rect x=\"55\" y=\"55\" width=\"35\" height=\"35\" fill=\"#FFB74D\" stroke=\"#333\" stroke-width=\"1\"/><rect x=\"90\" y=\"55\" width=\"35\" height=\"35\" fill=\"#FFB74D\" stroke=\"#333\" stroke-width=\"1\"/><rect x=\"125\" y=\"55\" width=\"35\" height=\"35\" fill=\"#FFB74D\" stroke=\"#333\" stroke-width=\"1\"/><rect x=\"160\" y=\"55\" width=\"35\" height=\"35\" fill=\"#FFB74D\" stroke=\"#333\" stroke-width=\"1\"/><rect x=\"20\" y=\"90\" width=\"35\" height=\"35\" fill=\"#FFB74D\" stroke=\"#333\" stroke-width=\"1\"/><rect x=\"55\" y=\"90\" width=\"35\" height=\"35\" fill=\"#FFB74D\" stroke=\"#333\" stroke-width=\"1\"/><rect x=\"90\" y=\"90\" width=\"35\" height=\"35\" fill=\"#FFB74D\" stroke=\"#333\" stroke-width=\"1\"/><rect x=\"125\" y=\"90\" width=\"35\" height=\"35\" fill=\"#FFB74D\" stroke=\"#333\" stroke-width=\"1\"/><rect x=\"160\" y=\"90\" width=\"35\" height=\"35\" fill=\"#FFB74D\" stroke=\"#333\" stroke-width=\"1\"/><rect x=\"20\" y=\"125\" width=\"35\" height=\"35\" fill=\"#FFB74D\" stroke=\"#333\" stroke-width=\"1\"/><rect x=\"55\" y=\"125\" width=\"35\" height=\"35\" fill=\"#FFB74D\" stroke=\"#333\" stroke-width=\"1\"/><rect x=\"90\" y=\"125\" width=\"35\" height=\"35\" fill=\"#FFB74D\" stroke=\"#333\" stroke-width=\"1\"/><rect x=\"125\" y=\"125\" width=\"35\" height=\"35\" fill=\"#FFB74D\" stroke=\"#333\" stroke-width=\"1\"/><rect x=\"160\" y=\"125\" width=\"35\" height=\"35\" fill=\"#FFB74D\" stroke=\"#333\" stroke-width=\"1\"/></svg>"
+    },
+    {
+      "id": "wb_L3_s18_q14",
+      "stem": "The length of a rectangle is 8 cm. The width is half as long. How long are the sides of a square that has the same perimeter?",
+      "interaction_mode": "mcq",
+      "topic": "Perimeter",
+      "difficulty_tier": "challenge",
+      "question_number": 14,
+      "choices": [
+        "4 cm",
+        "6 cm",
+        "8 cm",
+        "12 cm"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S18",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L3_s18_q15",
+      "stem": "A rectangular paper 60mm x 36mm. After straight cuts to make squares repeatedly, what is the side length of the last square?",
+      "interaction_mode": "mcq",
+      "topic": "Perimeter",
+      "difficulty_tier": "challenge",
+      "question_number": 15,
+      "choices": [
+        "1 mm",
+        "4 mm",
+        "6 mm",
+        "10 mm",
+        "12 mm"
+      ],
+      "correct_answer": 4,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S18",
+      "svg": "wb_L3_s18_q15.svg",
+      "diagnostics": {}
+    }
+  ]
+}

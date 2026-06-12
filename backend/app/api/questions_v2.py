@@ -22,9 +22,14 @@ from datetime import datetime, timezone
 from threading import Lock
 from typing import Any, Dict, List, Optional
 
-from fastapi import APIRouter, HTTPException, Query
+from fastapi import APIRouter, Depends, Header, HTTPException, Query
 from pydantic import BaseModel, Field, field_validator
 
+from app.core.auth import verify_admin
+from app.services.state_store import (
+    get_idempotent_response,
+    record_idempotent_response,
+)
 from app.services.content_store_v2 import store_v2, QuestionV2, _QUESTION_ID_RE
 from app.services.adaptive_engine_v2 import engine_v2, theta_to_difficulty, difficulty_to_theta, p_correct
 from app.services.gamification import gamification
@@ -107,15 +112,16 @@ class QuestionOutV2(BaseModel):
     topic: str
     topic_name: str
     tags: List[str] = Field(default_factory=list)
-    # In production, correct_answer should NOT be sent to client.
-    # For v2 preview / dev mode, we include it.
-    correct_answer: int
+    # SECURITY: answers are never sent at fetch time. correct_answer is kept
+    # in the schema as a -1 sentinel for older client builds that require the
+    # key to exist; the real answer comes back from POST /v2/answer/check.
+    correct_answer: int = -1
     hint: Optional[str] = None
     hint_ladder: Optional[HintLadderOut] = None
     solution_steps: List[str] = Field(default_factory=list)
     # Multi-mode interaction
     interaction_mode: str = "mcq"  # "mcq" | "integer" | "drag_drop"
-    correct_value: Optional[int] = None  # Integer mode answer
+    correct_value: Optional[Any] = None  # never populated at fetch time
     drag_items: Optional[List[str]] = None  # Drag-drop items (shuffled)
 
 
@@ -133,7 +139,8 @@ class AnswerCheckRequest(BaseModel):
     def validate_question_id(cls, v: str) -> str:
         if not _QUESTION_ID_RE.match(v):
             raise ValueError(
-                f"Invalid question_id '{v}'. Must match format T[1-8]-NNN (e.g. T1-001)"
+                f"Invalid question_id '{v}'. Must match a valid ID format "
+                f"(e.g. T1-001, A1-ADD-0001, NCERT-G3-001)"
             )
         return v
 
@@ -141,6 +148,8 @@ class AnswerCheckRequest(BaseModel):
 class AnswerCheckResponse(BaseModel):
     correct: bool
     correct_answer: int
+    correct_value: Optional[Any] = None  # integer-mode answer (post-answer only)
+    solution_steps: List[str] = Field(default_factory=list)  # post-answer only
     feedback: str
     difficulty_score: int
     next_difficulty: int  # ELO/IRT recommended next difficulty (1-100)
@@ -205,12 +214,14 @@ def _to_response(q: QuestionV2) -> QuestionOutV2:
         topic=q.topic,
         topic_name=q.topic_name,
         tags=q.tags,
-        correct_answer=q.correct_answer,
+        # SECURITY: never leak answers at fetch time. The client gets the
+        # correct answer + feedback from POST /v2/answer/check after answering.
+        correct_answer=-1,
         hint=q.hint_text,
         hint_ladder=ladder_out,
-        solution_steps=q.solution_steps if hasattr(q, 'solution_steps') else [],
+        solution_steps=[],
         interaction_mode=q.interaction_mode or "mcq",
-        correct_value=q.correct_value if q.interaction_mode == "integer" else None,
+        correct_value=None,
         drag_items=drag_items,
     )
 
@@ -484,7 +495,10 @@ def get_question(question_id: str):
 
 
 @router.post("/answer/check", response_model=AnswerCheckResponse)
-def check_answer(req: AnswerCheckRequest):
+def check_answer(
+    req: AnswerCheckRequest,
+    x_idempotency_key: Optional[str] = Header(default=None, alias="X-Idempotency-Key"),
+):
     """Check an answer and get diagnostic feedback.
 
     Uses ELO/IRT adaptive engine to:
@@ -493,7 +507,17 @@ def check_answer(req: AnswerCheckRequest):
     3. Return rich adaptive feedback
 
     If no user_id is provided, falls back to simple +5/-3 adjustment.
+
+    Idempotency: when the client sends X-Idempotency-Key, a duplicate request
+    (network retry) replays the previously computed response verbatim instead
+    of re-running ability updates and re-granting XP/coins/gems.
     """
+    idem_key = f"answer_check:{x_idempotency_key}" if x_idempotency_key else None
+    if idem_key:
+        cached = get_idempotent_response(idem_key)
+        if cached is not None and "correct" in cached:
+            return AnswerCheckResponse(**cached)
+
     q = store_v2.get(req.question_id)
     if q is None:
         raise HTTPException(status_code=404, detail=f"Question {req.question_id} not found")
@@ -616,9 +640,11 @@ def check_answer(req: AnswerCheckRequest):
         base_xp = gam_events.get("xp_earned", 0)
         boosted_xp = int(base_xp * result.reward_multiplier)
 
-        return AnswerCheckResponse(
+        response = AnswerCheckResponse(
             correct=is_correct,
             correct_answer=q.correct_answer,
+            correct_value=q.correct_value if mode == "integer" else None,
+            solution_steps=getattr(q, 'solution_steps', None) or [],
             feedback=feedback,
             difficulty_score=q.difficulty_score,
             next_difficulty=result.new_difficulty,
@@ -643,6 +669,14 @@ def check_answer(req: AnswerCheckRequest):
             next_action=gam_events.get("next_action"),
             reward_breakdown=gam_events.get("reward_breakdown"),
         )
+        if idem_key:
+            # Store the response so a retry replays it (rewards never
+            # double-grant). Best-effort: never fail the answer check.
+            try:
+                record_idempotent_response(idem_key, response.model_dump(mode="json"))
+            except Exception:
+                pass
+        return response
 
     # Fallback: simple adaptive (for anonymous / legacy clients)
     # Correct: step up by 3 levels.  Wrong: fall back halfway toward 1.
@@ -651,13 +685,21 @@ def check_answer(req: AnswerCheckRequest):
     else:
         next_diff = max(1, (q.difficulty_score + 1) // 2)
 
-    return AnswerCheckResponse(
+    response = AnswerCheckResponse(
         correct=is_correct,
         correct_answer=q.correct_answer,
+        correct_value=q.correct_value if mode == "integer" else None,
+        solution_steps=getattr(q, 'solution_steps', None) or [],
         feedback=feedback,
         difficulty_score=q.difficulty_score,
         next_difficulty=next_diff,
     )
+    if idem_key:
+        try:
+            record_idempotent_response(idem_key, response.model_dump(mode="json"))
+        except Exception:
+            pass
+    return response
 
 
 @router.get("/irt/stats")
@@ -988,7 +1030,7 @@ def submit_question_feedback(question_id: str, req: QuestionFeedbackRequest):
     if not _QUESTION_ID_RE.match(question_id):
         raise HTTPException(
             status_code=422,
-            detail=f"Invalid question_id '{question_id}'. Must match T[1-8]-NNN format.",
+            detail=f"Invalid question_id '{question_id}'. Must match a valid ID format.",
         )
 
     q = store_v2.get(question_id)
@@ -1015,7 +1057,8 @@ def submit_question_feedback(question_id: str, req: QuestionFeedbackRequest):
     return QuestionFeedbackOut(**record)
 
 
-@router.get("/admin/feedback", response_model=List[QuestionFeedbackOut])
+@router.get("/admin/feedback", response_model=List[QuestionFeedbackOut],
+            dependencies=[Depends(verify_admin)])
 def list_feedback(
     question_id: Optional[str] = Query(None, description="Filter by question ID"),
     feedback_type: Optional[str] = Query(None, description="Filter by feedback type"),
@@ -1066,7 +1109,7 @@ def list_feedback(
     return [QuestionFeedbackOut(**r) for r in page]
 
 
-@router.get("/admin/feedback/summary")
+@router.get("/admin/feedback/summary", dependencies=[Depends(verify_admin)])
 def feedback_summary():
     """High-level feedback stats for the admin dashboard."""
     with _FEEDBACK_LOCK:

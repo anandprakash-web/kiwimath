@@ -1,0 +1,878 @@
+[
+  {
+    "id": "alg-l2-ae-001",
+    "topic": "algebraic_expressions",
+    "stem": "I think of a number, multiply it by 4, and then subtract 7. The result is 29. What was my number?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Work backwards from the result.\nStart with 29.\nUndo 'subtract 7': 29 + 7 = 36.\nUndo 'multiply by 4': 36 \u00f7 4 = 9.\nCheck: 9 \u00d7 4 = 36, then 36 \u2212 7 = 29. \u2713\nThe number is 9.",
+    "difficulty": 1,
+    "tags": [
+      "algebra",
+      "level2",
+      "working_backwards"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "alg-l2-ae-002",
+    "topic": "algebraic_expressions",
+    "stem": "Mia had some erasers. She bought 15 more and then gave 8 to her friend. Now she has 23 erasers. How many erasers did Mia start with?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Work backwards from the end.\nShe ended with 23 erasers.\nUndo 'gave 8 away': 23 + 8 = 31.\nUndo 'bought 15 more': 31 \u2212 15 = 16.\nCheck: 16 + 15 = 31, then 31 \u2212 8 = 23. \u2713\nMia started with 16 erasers.",
+    "difficulty": 1,
+    "tags": [
+      "algebra",
+      "level2",
+      "working_backwards"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "alg-l2-ae-003",
+    "topic": "algebraic_expressions",
+    "stem": "If \u2605 \u00d7 5 \u2212 3 = 32, what is the value of \u2605?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Solve step by step:\n\u2605 \u00d7 5 \u2212 3 = 32\n\u2605 \u00d7 5 = 32 + 3 = 35\n\u2605 = 35 \u00f7 5 = 7\nCheck: 7 \u00d7 5 \u2212 3 = 35 \u2212 3 = 32. \u2713",
+    "difficulty": 1,
+    "tags": [
+      "algebra",
+      "level2",
+      "simple_unknown"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "alg-l2-ae-004",
+    "topic": "algebraic_expressions",
+    "stem": "Jake had some toy cars. He lost 9 on Monday and found 4 on Tuesday. He now has 18 toy cars. How many did he have at first?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Work backwards:\nHe ended with 18.\nUndo 'found 4': 18 \u2212 4 = 14.\nUndo 'lost 9': 14 + 9 = 23.\nCheck: 23 \u2212 9 = 14, then 14 + 4 = 18. \u2713\nJake started with 23 toy cars.",
+    "difficulty": 1,
+    "tags": [
+      "algebra",
+      "level2",
+      "working_backwards"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "alg-l2-ae-005",
+    "topic": "algebraic_expressions",
+    "stem": "I think of a number, add 6, then double the result. I get 40. What was my number?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Work backwards from 40.\nUndo 'double': 40 \u00f7 2 = 20.\nUndo 'add 6': 20 \u2212 6 = 14.\nCheck: 14 + 6 = 20, then 20 \u00d7 2 = 40. \u2713\nThe number is 14.",
+    "difficulty": 2,
+    "tags": [
+      "algebra",
+      "level2",
+      "working_backwards"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "alg-l2-ae-006",
+    "topic": "algebraic_expressions",
+    "stem": "A baker had some muffins. He sold half of them in the morning and 7 more in the afternoon. He had 11 muffins left at the end of the day. How many muffins did the baker start with?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Work backwards:\nHe ended with 11.\nUndo 'sold 7 in afternoon': 11 + 7 = 18.\nUndo 'sold half in morning': 18 is the remaining half, so he had 18 \u00d7 2 = 36.\nCheck: 36 \u00f7 2 = 18, then 18 \u2212 7 = 11. \u2713\nThe baker started with 36 muffins.",
+    "difficulty": 2,
+    "tags": [
+      "algebra",
+      "level2",
+      "working_backwards",
+      "bar_model"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "alg-l2-ae-007",
+    "topic": "algebraic_expressions",
+    "stem": "If \u25b2 + \u25b2 + \u25b2 + 5 = 26, what is the value of \u25b2?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "\u25b2 + \u25b2 + \u25b2 + 5 = 26\n3 \u00d7 \u25b2 + 5 = 26\n3 \u00d7 \u25b2 = 26 \u2212 5 = 21\n\u25b2 = 21 \u00f7 3 = 7\nCheck: 7 + 7 + 7 + 5 = 21 + 5 = 26. \u2713",
+    "difficulty": 1,
+    "tags": [
+      "algebra",
+      "level2",
+      "simple_unknown"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "alg-l2-ae-008",
+    "topic": "algebraic_expressions",
+    "stem": "Priya had some beads. She used 14 to make a bracelet, then her mother gave her 20 more. After that she used 9 for a necklace. She now has 32 beads. How many beads did Priya have at the start?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Work backwards from 32:\nUndo 'used 9': 32 + 9 = 41.\nUndo 'mother gave 20': 41 \u2212 20 = 21.\nUndo 'used 14': 21 + 14 = 35.\nCheck: 35 \u2212 14 = 21, 21 + 20 = 41, 41 \u2212 9 = 32. \u2713\nPriya started with 35 beads.",
+    "difficulty": 2,
+    "tags": [
+      "algebra",
+      "level2",
+      "working_backwards"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "alg-l2-ae-009",
+    "topic": "algebraic_expressions",
+    "stem": "If \u25cf \u00d7 4 + \u25cf = 35, what is the value of \u25cf?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "\u25cf \u00d7 4 + \u25cf is the same as 5 \u00d7 \u25cf.\nSo 5 \u00d7 \u25cf = 35.\n\u25cf = 35 \u00f7 5 = 7.\nCheck: 7 \u00d7 4 + 7 = 28 + 7 = 35. \u2713",
+    "difficulty": 2,
+    "tags": [
+      "algebra",
+      "level2",
+      "simple_unknown"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "alg-l2-ae-010",
+    "topic": "algebraic_expressions",
+    "stem": "I think of a number, triple it, add 8, then halve the result. I get 19. What was my original number?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Work backwards from 19.\nUndo 'halve': 19 \u00d7 2 = 38.\nUndo 'add 8': 38 \u2212 8 = 30.\nUndo 'triple': 30 \u00f7 3 = 10.\nCheck: 10 \u00d7 3 = 30, 30 + 8 = 38, 38 \u00f7 2 = 19. \u2713\nThe number is 10.",
+    "difficulty": 3,
+    "tags": [
+      "algebra",
+      "level2",
+      "working_backwards"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "alg-l2-le-001",
+    "topic": "linear_equations",
+    "stem": "A farm has chickens and rabbits. Together they have 8 heads and 22 legs. How many rabbits are there?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Method 1 (Chicken-and-Rabbit):\nAssume all 8 animals are chickens: 8 \u00d7 2 = 16 legs.\nExtra legs needed: 22 \u2212 16 = 6.\nEach rabbit has 2 extra legs over a chicken.\nNumber of rabbits: 6 \u00f7 2 = 3.\nChickens: 8 \u2212 3 = 5.\nCheck: 5 \u00d7 2 + 3 \u00d7 4 = 10 + 12 = 22 legs. \u2713\n\nMethod 2 (Equations):\nLet c = chickens, r = rabbits.\nc + r = 8 and 2c + 4r = 22.\nFrom first: c = 8 \u2212 r. Substitute: 2(8 \u2212 r) + 4r = 22 \u2192 16 + 2r = 22 \u2192 r = 3.",
+    "difficulty": 2,
+    "tags": [
+      "algebra",
+      "level2",
+      "chicken_and_rabbit"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "alg-l2-le-002",
+    "topic": "linear_equations",
+    "stem": "Lily has 3 times as many stickers as Ben. Together they have 48 stickers. How many stickers does Lily have?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Method 1 (Bar Model):\nDraw bars: Ben = 1 unit, Lily = 3 units. Total = 4 units = 48.\n1 unit = 48 \u00f7 4 = 12.\nLily = 3 \u00d7 12 = 36.\n\nMethod 2 (Equation):\nLet Ben = x. Lily = 3x.\nx + 3x = 48 \u2192 4x = 48 \u2192 x = 12.\nLily = 3 \u00d7 12 = 36.\nCheck: 36 + 12 = 48. \u2713",
+    "difficulty": 1,
+    "tags": [
+      "algebra",
+      "level2",
+      "comparison",
+      "bar_model"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "alg-l2-le-003",
+    "topic": "linear_equations",
+    "stem": "4 pencils cost the same as 2 notebooks. If one notebook costs $6, how much does one pencil cost?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "2 notebooks cost 2 \u00d7 $6 = $12.\n4 pencils = $12.\n1 pencil = $12 \u00f7 4 = $3.\nCheck: 4 \u00d7 $3 = $12 = 2 \u00d7 $6. \u2713",
+    "difficulty": 1,
+    "tags": [
+      "algebra",
+      "level2",
+      "replacement"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "alg-l2-le-004",
+    "topic": "linear_equations",
+    "stem": "A parking lot has bicycles and cars. There are 12 vehicles in total and 38 wheels altogether. How many cars are in the parking lot?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Assume all 12 are bicycles: 12 \u00d7 2 = 24 wheels.\nExtra wheels: 38 \u2212 24 = 14.\nEach car has 2 extra wheels over a bicycle.\nCars: 14 \u00f7 2 = 7.\nBicycles: 12 \u2212 7 = 5.\nCheck: 5 \u00d7 2 + 7 \u00d7 4 = 10 + 28 = 38. \u2713",
+    "difficulty": 2,
+    "tags": [
+      "algebra",
+      "level2",
+      "chicken_and_rabbit"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "alg-l2-le-005",
+    "topic": "linear_equations",
+    "stem": "Raj has 14 more marbles than Sita. Together they have 50 marbles. How many marbles does Sita have?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Method 1 (Bar Model):\nSita = 1 unit. Raj = 1 unit + 14.\nTotal: 2 units + 14 = 50.\n2 units = 50 \u2212 14 = 36.\n1 unit = 18.\nSita has 18 marbles.\n\nCheck: Raj = 18 + 14 = 32. Total = 18 + 32 = 50. \u2713",
+    "difficulty": 1,
+    "tags": [
+      "algebra",
+      "level2",
+      "comparison",
+      "bar_model"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "alg-l2-le-006",
+    "topic": "linear_equations",
+    "stem": "A quiz has 20 questions. You earn 5 points for each correct answer and lose 2 points for each wrong answer. Arun answered all 20 questions and scored 65 points. How many questions did he answer correctly?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Assume all 20 are correct: 20 \u00d7 5 = 100 points.\nActual score: 65. Difference: 100 \u2212 65 = 35.\nEach wrong answer costs 5 + 2 = 7 points (you lose 5 you would have gained, plus lose 2 more).\nWrong answers: 35 \u00f7 7 = 5.\nCorrect answers: 20 \u2212 5 = 15.\nCheck: 15 \u00d7 5 \u2212 5 \u00d7 2 = 75 \u2212 10 = 65. \u2713",
+    "difficulty": 3,
+    "tags": [
+      "algebra",
+      "level2",
+      "chicken_and_rabbit",
+      "excess_shortage"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "alg-l2-le-007",
+    "topic": "linear_equations",
+    "stem": "In a class, the number of girls is 5 more than twice the number of boys. There are 35 students in total. How many boys are in the class?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Let boys = b. Girls = 2b + 5.\nb + (2b + 5) = 35\n3b + 5 = 35\n3b = 30\nb = 10.\nGirls = 2 \u00d7 10 + 5 = 25.\nCheck: 10 + 25 = 35. \u2713",
+    "difficulty": 2,
+    "tags": [
+      "algebra",
+      "level2",
+      "comparison"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "alg-l2-le-008",
+    "topic": "linear_equations",
+    "stem": "3 apples and 2 bananas cost $17. One banana costs $1. How much does one apple cost?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "2 bananas cost 2 \u00d7 $1 = $2.\n3 apples cost $17 \u2212 $2 = $15.\n1 apple costs $15 \u00f7 3 = $5.\nCheck: 3 \u00d7 $5 + 2 \u00d7 $1 = $15 + $2 = $17. \u2713",
+    "difficulty": 1,
+    "tags": [
+      "algebra",
+      "level2",
+      "replacement"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "alg-l2-le-009",
+    "topic": "linear_equations",
+    "stem": "A pet shop has parrots and dogs. There are 15 animals altogether with a total of 42 legs. How many parrots are there?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Assume all 15 are dogs: 15 \u00d7 4 = 60 legs.\nToo many by: 60 \u2212 42 = 18.\nEach parrot has 2 fewer legs than a dog.\nParrots: 18 \u00f7 2 = 9.\nDogs: 15 \u2212 9 = 6.\nCheck: 9 \u00d7 2 + 6 \u00d7 4 = 18 + 24 = 42. \u2713",
+    "difficulty": 2,
+    "tags": [
+      "algebra",
+      "level2",
+      "chicken_and_rabbit"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "alg-l2-le-010",
+    "topic": "linear_equations",
+    "stem": "Father is 28 years older than his son. In 4 years, the father will be 3 times as old as his son. How old is the son now?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Let son's current age = s. Father's current age = s + 28.\nIn 4 years: son = s + 4, father = s + 32.\nFather = 3 \u00d7 son: s + 32 = 3(s + 4)\ns + 32 = 3s + 12\n32 \u2212 12 = 3s \u2212 s\n20 = 2s\ns = 10.\nCheck: Son now = 10, Father now = 38. In 4 years: son = 14, father = 42. 42 = 3 \u00d7 14. \u2713",
+    "difficulty": 3,
+    "tags": [
+      "algebra",
+      "level2",
+      "age_problem"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "alg-l2-ss-001",
+    "topic": "sequences_series",
+    "stem": "Find the sum: 1 + 2 + 3 + ... + 30.",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Use Gauss's method: pair the first and last numbers.\n1 + 30 = 31\n2 + 29 = 31\n...\n15 + 16 = 31\nThere are 15 pairs, each summing to 31.\nTotal = 15 \u00d7 31 = 465.\n\nAlternatively: n(n+1)/2 = 30 \u00d7 31 / 2 = 465.",
+    "difficulty": 1,
+    "tags": [
+      "algebra",
+      "level2",
+      "gauss_sum"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "alg-l2-ss-002",
+    "topic": "sequences_series",
+    "stem": "In the sequence 5, 9, 13, 17, 21, ..., what is the 12th term?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "The common difference is 9 \u2212 5 = 4.\nThe nth term = first term + (n \u2212 1) \u00d7 difference.\n12th term = 5 + (12 \u2212 1) \u00d7 4 = 5 + 44 = 49.\n\nAlternatively, list them out:\n5, 9, 13, 17, 21, 25, 29, 33, 37, 41, 45, 49.\nThe 12th term is 49.",
+    "difficulty": 2,
+    "tags": [
+      "algebra",
+      "level2",
+      "arithmetic_sequence"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "alg-l2-ss-003",
+    "topic": "sequences_series",
+    "stem": "What is the sum of all odd numbers from 1 to 39?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "The odd numbers from 1 to 39 are: 1, 3, 5, ..., 39.\nHow many terms? (39 \u2212 1) \u00f7 2 + 1 = 20 terms.\nPair them: 1 + 39 = 40, 3 + 37 = 40, ..., 19 + 21 = 40.\nThat's 10 pairs, each summing to 40.\nTotal = 10 \u00d7 40 = 400.\n\nShortcut: The sum of the first n odd numbers = n\u00b2. Here n = 20, so sum = 20\u00b2 = 400.",
+    "difficulty": 2,
+    "tags": [
+      "algebra",
+      "level2",
+      "gauss_sum",
+      "arithmetic_sequence"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "alg-l2-ss-004",
+    "topic": "sequences_series",
+    "stem": "Find the sum of all even numbers from 2 to 40.",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "The even numbers are 2, 4, 6, ..., 40.\nNumber of terms: 40 \u00f7 2 = 20.\nPair them: 2 + 40 = 42, 4 + 38 = 42, ..., 20 + 22 = 42.\n10 pairs \u00d7 42 = 420.\n\nAlternatively: Sum = 2(1 + 2 + ... + 20) = 2 \u00d7 20 \u00d7 21/2 = 420.",
+    "difficulty": 1,
+    "tags": [
+      "algebra",
+      "level2",
+      "gauss_sum"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "alg-l2-ss-005",
+    "topic": "sequences_series",
+    "stem": "In the sequence 3, 7, 11, 15, ..., which term is equal to 47?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Common difference = 4. First term = 3.\nnth term = 3 + (n \u2212 1) \u00d7 4.\nSet equal to 47: 3 + (n \u2212 1) \u00d7 4 = 47.\n(n \u2212 1) \u00d7 4 = 44.\nn \u2212 1 = 11.\nn = 12.\nCheck: 3 + 11 \u00d7 4 = 3 + 44 = 47. \u2713\n47 is the 12th term.",
+    "difficulty": 2,
+    "tags": [
+      "algebra",
+      "level2",
+      "arithmetic_sequence"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "alg-l2-ss-006",
+    "topic": "sequences_series",
+    "stem": "Find the sum: 2 + 4 + 6 + 8 + ... + 100.",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "These are even numbers from 2 to 100.\nNumber of terms: 100 \u00f7 2 = 50.\nPair them: 2 + 100 = 102, 4 + 98 = 102, ...\n25 pairs \u00d7 102 = 2550.\n\nAlternatively: Sum = 2(1 + 2 + ... + 50) = 2 \u00d7 50 \u00d7 51/2 = 2550.",
+    "difficulty": 2,
+    "tags": [
+      "algebra",
+      "level2",
+      "gauss_sum"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "alg-l2-ss-007",
+    "topic": "sequences_series",
+    "stem": "A staircase pattern is made of blocks. Step 1 has 2 blocks, Step 2 has 5 blocks, Step 3 has 8 blocks, and so on. How many blocks are in Step 10?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "The sequence is 2, 5, 8, ... with common difference 3.\nStep n has 2 + (n \u2212 1) \u00d7 3 blocks.\nStep 10 = 2 + 9 \u00d7 3 = 2 + 27 = 29 blocks.\nCheck first few: Step 1 = 2, Step 2 = 5, Step 3 = 8. \u2713 Pattern holds.",
+    "difficulty": 2,
+    "tags": [
+      "algebra",
+      "level2",
+      "arithmetic_sequence"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "alg-l2-ss-008",
+    "topic": "sequences_series",
+    "stem": "What is the sum of the first 15 odd numbers?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "The first 15 odd numbers: 1, 3, 5, ..., 29.\nThe 15th odd number = 2 \u00d7 15 \u2212 1 = 29.\nUsing pairing: 1 + 29 = 30, 3 + 27 = 30, ..., 13 + 17 = 30. That's 7 pairs = 210, plus the middle term 15.\nTotal = 210 + 15 = 225.\n\nShortcut: Sum of first n odd numbers = n\u00b2 = 15\u00b2 = 225.",
+    "difficulty": 2,
+    "tags": [
+      "algebra",
+      "level2",
+      "gauss_sum"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "alg-l2-ss-009",
+    "topic": "sequences_series",
+    "stem": "A gardener plants 6 flowers in the first row, 10 in the second row, 14 in the third row, and so on. How many flowers does she plant in the first 8 rows altogether?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "The sequence is 6, 10, 14, ... with common difference 4.\nRow n has 6 + (n\u22121) \u00d7 4 = 4n + 2 flowers.\nRow 8 = 4 \u00d7 8 + 2 = 34.\nSum = (first + last) \u00d7 number of terms \u00f7 2\nSum = (6 + 34) \u00d7 8 \u00f7 2 = 40 \u00d7 4 = 160.\n\nCheck by listing: 6, 10, 14, 18, 22, 26, 30, 34.\nSum = 6+10+14+18+22+26+30+34 = 160. \u2713",
+    "difficulty": 3,
+    "tags": [
+      "algebra",
+      "level2",
+      "arithmetic_sequence",
+      "gauss_sum"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  },
+  {
+    "id": "alg-l2-ss-010",
+    "topic": "sequences_series",
+    "stem": "Find the sum: 5 + 10 + 15 + 20 + ... + 60.",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "These are multiples of 5 from 5 to 60.\nNumber of terms: 60 \u00f7 5 = 12.\nPair them: 5 + 60 = 65, 10 + 55 = 65, ...\n6 pairs \u00d7 65 = 390.\n\nAlternatively: Sum = 5(1 + 2 + ... + 12) = 5 \u00d7 12 \u00d7 13/2 = 5 \u00d7 78 = 390.",
+    "difficulty": 1,
+    "tags": [
+      "algebra",
+      "level2",
+      "gauss_sum"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 0
+  }
+]

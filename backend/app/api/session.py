@@ -52,6 +52,18 @@ router = APIRouter(prefix="/session", tags=["session"])
 
 # ---------------------------------------------------------------------------
 # In-memory session store (active sessions only — Firestore handles persistence)
+#
+# DELIBERATELY in-memory (audited): a session here is a short-lived working
+# set for the adaptive loop. Durable state (mastery, gamification, session
+# logs) is flushed to Firestore on session completion via
+# save_mastery_states/save_session_log/update_gamification_on_session_end.
+#
+# KNOWN LIMITATION (multi-instance Cloud Run): if a follow-up /session/answer
+# request lands on a different instance than /session/start, the session id
+# is unknown there and the client gets a 404 → it should restart the session
+# (mastery loss is bounded to the in-flight session). Mitigations: Cloud Run
+# session affinity, or persisting SessionState snapshots — not done yet
+# because SessionState is a large engine object; tracked as acceptable debt.
 # ---------------------------------------------------------------------------
 
 _sessions: Dict[str, SessionState] = {}

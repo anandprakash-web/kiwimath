@@ -1,3 +1,10 @@
+// ============================================================================
+// DEPRECATED — Olympiad v2 rework (May 2026)
+// This screen is archived at lib/screens/archive/wavebook_screen.dart
+// Wavebook content is folded into the new 4-pillar Olympiad worksheets.
+// Will be removed after v2 migration is complete.
+// ============================================================================
+
 import 'dart:io';
 
 import 'package:flutter/material.dart';
@@ -132,18 +139,6 @@ class _WavebookScreenState extends State<WavebookScreen> {
                 ),
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.fromLTRB(16, 4, 16, 12),
-              child: Text(
-                'Olympiad MCQs from live class worksheets',
-                style: TextStyle(
-                  fontSize: 13,
-                  color: colors.textSecondary,
-                  fontFamily: typo.fontFamily,
-                ),
-              ),
-            ),
-
             // ── Grade band pills ──────────────────────────────
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16),
@@ -541,11 +536,13 @@ class _WavebookTopicDetailState extends State<_WavebookTopicDetail> {
   Future<void> _loadQuestions() async {
     try {
       final data = await _api.getWavebookQuestions(widget.grade, widget.topicName);
+      if (!mounted) return;
       setState(() {
         _questions = data['questions'] as List<dynamic>? ?? [];
         _loading = false;
       });
     } catch (e) {
+      if (!mounted) return;
       setState(() => _loading = false);
     }
   }

@@ -1,22 +1,17 @@
 """
-FSRS-Lite Spaced Review Engine — Adaptive review scheduling based on forgetting curves.
+FSRS v5 Spaced Review Engine — Adaptive review scheduling using the Free
+Spaced Repetition Scheduler algorithm (now in Anki since v23.10).
 
-Replaces the fixed 3-day review window with per-skill exponential decay modeling.
-Each mastered skill has an independent "stability" value that grows with successful
-reviews and decays differently based on skill type.
+Implements the full FSRS v5 formulas from:
+  "A Stochastic Shortest Path Algorithm for Optimizing Spaced Repetition
+   Scheduling" — Ye et al. (2024)
 
-Research basis:
-- FSRS algorithm (Free Spaced Repetition Scheduler) — now in Anki since v23.10
-- PNAS: "Enhancing human learning via spaced repetition optimization" (2019)
-- Meta-analyses show spaced practice benefits g > 0.40 for mathematics
-
-Key insight: review should happen just before P(recall) drops to 90%.
-The optimal interval = stability × (-ln(0.9) / decay_rate).
-
-Skill types decay at different rates:
-- Procedural (addition, multiplication): slow decay — once learned, stays longer
-- Conceptual (fractions, place value): faster decay — abstract concepts fade
-- Spatial (geometry, symmetry): moderate decay
+Key improvements over the previous FSRS-Lite implementation:
+  - Power-law forgetting curve: R(t,S) = (1 + FACTOR*t/S)^DECAY
+  - Per-skill difficulty tracking (1.0–10.0 scale)
+  - 4-grade rating support (Again/Hard/Good/Easy)
+  - Research-validated parameter set (17 weights)
+  - Backward-compatible: boolean success maps to Good/Again
 
 Firestore path: users/{uid}/review_schedule/{skill_id}
 """
@@ -33,39 +28,60 @@ from app.assessment.path_engine import PREREQUISITE_GRAPH
 
 logger = logging.getLogger("kiwimath.spaced_review")
 
-
 # ---------------------------------------------------------------------------
-# Constants
+# FSRS v5 Constants & Parameters
 # ---------------------------------------------------------------------------
 
-# Target recall probability — schedule review when P(recall) drops to this
+# Ratings
+AGAIN, HARD, GOOD, EASY = 1, 2, 3, 4
+
+# Power-law forgetting curve constants
+DECAY = -0.5
+FACTOR = 19.0 / 81.0  # (0.9^(1/DECAY) - 1)
+
+# Target recall probability
 TARGET_RECALL = 0.90
 
-# Base stability (days) — how long a skill "lasts" after first mastery
-BASE_STABILITY = 1.0
-
-# Success multiplier — each successful review multiplies stability
-SUCCESS_MULTIPLIER = 2.2
-
-# Failure divisor — failed review divides stability
-FAILURE_DIVISOR = 1.8
-
-# Maximum interval (days) — never wait longer than this
-MAX_INTERVAL_DAYS = 90
-
-# Minimum interval (days)
+# Maximum / minimum intervals (days)
+MAX_INTERVAL_DAYS = 365
 MIN_INTERVAL_DAYS = 1
 
-# Decay rates by skill category (higher = faster forgetting)
-DECAY_RATES = {
-    "procedural": 0.25,    # Addition, subtraction, multiplication, division
-    "conceptual": 0.45,    # Fractions, place value, decimals, comparison
-    "spatial": 0.35,       # Geometry, shapes, symmetry, coordinates
-    "measurement": 0.30,   # Units, time, money, length, weight
-    "data": 0.35,          # Data handling, statistics, graphs
-}
+# FSRS v5 default parameters (from open-source FSRS optimizer)
+# w[0..3] : initial stability for ratings Again, Hard, Good, Easy
+# w[4]    : initial difficulty mean
+# w[5]    : initial difficulty scaling
+# w[6]    : difficulty reversion strength
+# w[7]    : difficulty mean-reversion weight
+# w[8..10]: success stability factors
+# w[11..14]: failure (lapse) stability factors
+# w[15]   : hard penalty multiplier
+# w[16]   : easy bonus multiplier
+W = [
+    0.40,   # w0  - S0(Again)
+    0.60,   # w1  - S0(Hard)
+    2.40,   # w2  - S0(Good)
+    5.80,   # w3  - S0(Easy)
+    4.93,   # w4  - initial difficulty base
+    0.94,   # w5  - initial difficulty scaling
+    0.86,   # w6  - difficulty grade factor
+    0.01,   # w7  - difficulty mean-reversion weight
+    1.49,   # w8  - success stability exp factor
+    0.14,   # w9  - success stability power factor
+    0.94,   # w10 - success retrievability factor
+    2.18,   # w11 - lapse stability base
+    0.05,   # w12 - lapse difficulty power
+    0.34,   # w13 - lapse stability power
+    1.26,   # w14 - lapse retrievability factor
+    0.29,   # w15 - hard penalty
+    2.61,   # w16 - easy bonus
+]
 
-# Map skill domains to decay categories
+# Difficulty bounds
+MIN_DIFFICULTY = 1.0
+MAX_DIFFICULTY = 10.0
+
+# Skill-type difficulty adjustments (offset added to D0)
+# Procedural skills are easier to retain; conceptual skills harder
 DOMAIN_TO_CATEGORY = {
     "numbers": "conceptual",
     "arithmetic": "procedural",
@@ -75,9 +91,15 @@ DOMAIN_TO_CATEGORY = {
     "data": "data",
 }
 
-# Map specific skills to override categories
+CATEGORY_DIFFICULTY_OFFSET = {
+    "procedural": -0.8,   # Easier to retain (drill-based)
+    "conceptual": +0.5,   # Harder (abstract)
+    "spatial": 0.0,
+    "measurement": -0.3,
+    "data": 0.0,
+}
+
 SKILL_CATEGORY_OVERRIDES = {
-    # These arithmetic skills are more procedural (drill-based)
     "addition_basic": "procedural",
     "addition_2digit": "procedural",
     "subtraction_basic": "procedural",
@@ -85,11 +107,101 @@ SKILL_CATEGORY_OVERRIDES = {
     "multiplication_facts": "procedural",
     "division_basic": "procedural",
     "order_of_ops": "procedural",
-    # These are conceptual despite being in arithmetic domain
     "multi_step": "conceptual",
     "number_patterns": "conceptual",
     "rounding": "conceptual",
 }
+
+
+# ---------------------------------------------------------------------------
+# Core FSRS v5 formulas
+# ---------------------------------------------------------------------------
+
+def _clamp(val: float, lo: float, hi: float) -> float:
+    return max(lo, min(hi, val))
+
+
+def forgetting_curve(elapsed_days: float, stability: float) -> float:
+    """Power-law forgetting curve: R(t, S) = (1 + FACTOR * t / S)^DECAY"""
+    if stability <= 0:
+        return 0.0
+    return (1.0 + FACTOR * elapsed_days / stability) ** DECAY
+
+
+def next_interval(stability: float, desired_retention: float = TARGET_RECALL) -> float:
+    """Compute days until recall drops to desired_retention.
+
+    Solving R = (1 + FACTOR*t/S)^DECAY for t:
+        t = S/FACTOR * (R^(1/DECAY) - 1)
+    """
+    if stability <= 0:
+        return MIN_INTERVAL_DAYS
+    interval = stability / FACTOR * (desired_retention ** (1.0 / DECAY) - 1.0)
+    return _clamp(interval, MIN_INTERVAL_DAYS, MAX_INTERVAL_DAYS)
+
+
+def initial_stability(rating: int) -> float:
+    """S0(G) = w[G-1] for rating G ∈ {1,2,3,4}"""
+    idx = _clamp(rating - 1, 0, 3)
+    return max(0.01, W[int(idx)])
+
+
+def initial_difficulty(rating: int) -> float:
+    """D0(G) = w4 - exp(w5 * (G - 1)) + 1, clamped to [1, 10]"""
+    d = W[4] - math.exp(W[5] * (rating - 1)) + 1.0
+    return _clamp(d, MIN_DIFFICULTY, MAX_DIFFICULTY)
+
+
+def next_difficulty(d: float, rating: int) -> float:
+    """Mean-reversion difficulty update:
+    D' = w7 * D0(3) + (1 - w7) * (D - w6 * (G - 3))
+    """
+    d_new = W[7] * initial_difficulty(GOOD) + (1.0 - W[7]) * (d - W[6] * (rating - 3))
+    return _clamp(d_new, MIN_DIFFICULTY, MAX_DIFFICULTY)
+
+
+def next_stability_success(s: float, d: float, r: float, rating: int) -> float:
+    """Stability after successful recall:
+    S'_s = S * (exp(w8) * (11-D) * S^(-w9) * (exp(w10*(1-R)) - 1) * hard_pen * easy_bon + 1)
+    """
+    hard_pen = W[15] if rating == HARD else 1.0
+    easy_bon = W[16] if rating == EASY else 1.0
+
+    inner = (
+        math.exp(W[8])
+        * (11.0 - d)
+        * (s ** (-W[9]))
+        * (math.exp(W[10] * (1.0 - r)) - 1.0)
+        * hard_pen
+        * easy_bon
+    )
+    return max(0.01, s * (inner + 1.0))
+
+
+def next_stability_failure(s: float, d: float, r: float) -> float:
+    """Stability after lapse (forgot):
+    S'_f = w11 * D^(-w12) * ((S+1)^w13 - 1) * exp(w14*(1-R))
+    """
+    s_new = (
+        W[11]
+        * (d ** (-W[12]))
+        * ((s + 1.0) ** W[13] - 1.0)
+        * math.exp(W[14] * (1.0 - r))
+    )
+    return _clamp(s_new, 0.01, s)  # Never increase stability on failure
+
+
+# ---------------------------------------------------------------------------
+# Skill category helper
+# ---------------------------------------------------------------------------
+
+def _get_skill_category(skill_id: str) -> str:
+    if skill_id in SKILL_CATEGORY_OVERRIDES:
+        return SKILL_CATEGORY_OVERRIDES[skill_id]
+    node = PREREQUISITE_GRAPH.get(skill_id)
+    if node:
+        return DOMAIN_TO_CATEGORY.get(node.domain, "conceptual")
+    return "conceptual"
 
 
 # ---------------------------------------------------------------------------
@@ -98,21 +210,22 @@ SKILL_CATEGORY_OVERRIDES = {
 
 @dataclass
 class ReviewSchedule:
-    """Tracks the review schedule for a single mastered skill."""
+    """Tracks the FSRS review schedule for a single mastered skill."""
     skill_id: str
-    stability: float = BASE_STABILITY       # Current stability in days
-    n_reviews: int = 0                      # Total reviews completed
-    n_successful: int = 0                   # Successful reviews (recalled)
-    last_review_date: Optional[str] = None  # ISO datetime of last review
-    next_review_date: Optional[str] = None  # ISO datetime of next scheduled review
-    mastery_date: Optional[str] = None      # When mastery was first confirmed
-    decay_rate: float = 0.35                # Skill-specific decay rate
-    consecutive_successes: int = 0          # Streak of successful reviews
+    stability: float = 2.4                  # Current stability (days)
+    difficulty: float = 5.0                 # Difficulty (1.0–10.0)
+    n_reviews: int = 0
+    n_successful: int = 0
+    last_review_date: Optional[str] = None
+    next_review_date: Optional[str] = None
+    mastery_date: Optional[str] = None
+    consecutive_successes: int = 0
     review_history: List[Dict[str, Any]] = field(default_factory=list)
+    # Legacy field kept for backward compatibility (ignored in FSRS v5)
+    decay_rate: float = 0.35
 
     @property
     def is_due(self) -> bool:
-        """Check if this skill is due for review right now."""
         if not self.next_review_date:
             return False
         try:
@@ -123,156 +236,166 @@ class ReviewSchedule:
 
     @property
     def days_overdue(self) -> float:
-        """How many days past the scheduled review date. Negative = not yet due."""
         if not self.next_review_date:
             return -999.0
         try:
             next_dt = datetime.fromisoformat(self.next_review_date.replace("Z", "+00:00"))
-            delta = (datetime.now(timezone.utc) - next_dt).total_seconds() / 86400
-            return delta
+            return (datetime.now(timezone.utc) - next_dt).total_seconds() / 86400
         except (ValueError, AttributeError):
             return -999.0
 
     @property
     def estimated_recall(self) -> float:
-        """Estimate current recall probability based on time since last review."""
         if not self.last_review_date:
-            return 1.0  # Just mastered, assume full recall
+            return 1.0
         try:
             last_dt = datetime.fromisoformat(self.last_review_date.replace("Z", "+00:00"))
-            days_elapsed = (datetime.now(timezone.utc) - last_dt).total_seconds() / 86400
-            # Exponential decay: R(t) = exp(-decay_rate * t / stability)
-            recall = math.exp(-self.decay_rate * days_elapsed / max(0.1, self.stability))
-            return max(0.0, min(1.0, recall))
+            elapsed = (datetime.now(timezone.utc) - last_dt).total_seconds() / 86400
+            return forgetting_curve(elapsed, self.stability)
         except (ValueError, AttributeError):
             return 0.5
 
     def to_dict(self) -> Dict[str, Any]:
         return {
             "skill_id": self.skill_id,
-            "stability": self.stability,
+            "stability": round(self.stability, 4),
+            "difficulty": round(self.difficulty, 2),
             "n_reviews": self.n_reviews,
             "n_successful": self.n_successful,
             "last_review_date": self.last_review_date,
             "next_review_date": self.next_review_date,
             "mastery_date": self.mastery_date,
-            "decay_rate": self.decay_rate,
             "consecutive_successes": self.consecutive_successes,
             "review_history": self.review_history[-20:],
+            "decay_rate": self.decay_rate,
         }
 
     @classmethod
     def from_dict(cls, data: Dict[str, Any]) -> "ReviewSchedule":
         return cls(
             skill_id=data.get("skill_id", ""),
-            stability=data.get("stability", BASE_STABILITY),
+            stability=data.get("stability", 2.4),
+            difficulty=data.get("difficulty", 5.0),
             n_reviews=data.get("n_reviews", 0),
             n_successful=data.get("n_successful", 0),
             last_review_date=data.get("last_review_date"),
             next_review_date=data.get("next_review_date"),
             mastery_date=data.get("mastery_date"),
-            decay_rate=data.get("decay_rate", 0.35),
             consecutive_successes=data.get("consecutive_successes", 0),
             review_history=data.get("review_history", []),
+            decay_rate=data.get("decay_rate", 0.35),
         )
 
 
 # ---------------------------------------------------------------------------
-# Core algorithm
+# Core scheduling API
 # ---------------------------------------------------------------------------
-
-def _get_skill_category(skill_id: str) -> str:
-    """Determine the decay category for a skill."""
-    if skill_id in SKILL_CATEGORY_OVERRIDES:
-        return SKILL_CATEGORY_OVERRIDES[skill_id]
-
-    node = PREREQUISITE_GRAPH.get(skill_id)
-    if node:
-        return DOMAIN_TO_CATEGORY.get(node.domain, "conceptual")
-    return "conceptual"
-
-
-def _compute_next_interval(stability: float, decay_rate: float) -> float:
-    """Compute optimal review interval in days.
-
-    The interval is when P(recall) drops to TARGET_RECALL (0.90).
-    Solving: 0.90 = exp(-decay_rate * t / stability)
-    → t = stability * (-ln(0.90)) / decay_rate
-    """
-    interval = stability * (-math.log(TARGET_RECALL)) / max(0.01, decay_rate)
-    return max(MIN_INTERVAL_DAYS, min(MAX_INTERVAL_DAYS, interval))
-
 
 def create_review_schedule(skill_id: str) -> ReviewSchedule:
     """Create a new review schedule when a skill is mastered.
 
-    Called immediately after mastery confirmation.
-    First review is scheduled at base_stability * factor.
+    First review is treated as an initial rating of Good (3).
     """
     category = _get_skill_category(skill_id)
-    decay_rate = DECAY_RATES.get(category, 0.35)
+    d_offset = CATEGORY_DIFFICULTY_OFFSET.get(category, 0.0)
+
+    s0 = initial_stability(GOOD)
+    d0 = _clamp(initial_difficulty(GOOD) + d_offset, MIN_DIFFICULTY, MAX_DIFFICULTY)
 
     now = datetime.now(timezone.utc)
-    first_interval = _compute_next_interval(BASE_STABILITY, decay_rate)
-    next_review = now + timedelta(days=first_interval)
+    interval = next_interval(s0)
+    next_review = now + timedelta(days=interval)
 
     schedule = ReviewSchedule(
         skill_id=skill_id,
-        stability=BASE_STABILITY,
-        decay_rate=decay_rate,
+        stability=s0,
+        difficulty=d0,
         mastery_date=now.isoformat(),
         last_review_date=now.isoformat(),
         next_review_date=next_review.isoformat(),
     )
 
     logger.info(
-        f"REVIEW SCHEDULED: skill={skill_id}, category={category}, "
-        f"decay_rate={decay_rate}, first_review_in={first_interval:.1f} days"
+        f"FSRS SCHEDULED: skill={skill_id}, category={category}, "
+        f"S0={s0:.2f}, D0={d0:.2f}, first_review_in={interval:.1f}d"
     )
     return schedule
 
 
-def record_review_result(schedule: ReviewSchedule, success: bool) -> ReviewSchedule:
-    """Update the schedule after a review attempt.
+def record_review_result(
+    schedule: ReviewSchedule,
+    success: bool,
+    rating: Optional[int] = None,
+) -> ReviewSchedule:
+    """Update the schedule after a review.
 
-    Success (recalled correctly): stability increases, interval grows.
-    Failure (forgot): stability decreases, interval shrinks.
+    Args:
+        schedule: Current schedule to update.
+        success: True if recalled correctly (backward compat).
+        rating: Optional FSRS rating 1-4 (Again/Hard/Good/Easy).
+                If not provided, maps success→Good(3), fail→Again(1).
     """
     now = datetime.now(timezone.utc)
+
+    # Determine rating
+    if rating is not None:
+        g = _clamp(rating, AGAIN, EASY)
+    else:
+        g = GOOD if success else AGAIN
+
+    # Compute elapsed days since last review
+    elapsed = 0.0
+    if schedule.last_review_date:
+        try:
+            last_dt = datetime.fromisoformat(schedule.last_review_date.replace("Z", "+00:00"))
+            elapsed = max(0, (now - last_dt).total_seconds() / 86400)
+        except (ValueError, AttributeError):
+            pass
+
+    # Current retrievability at the moment of review
+    r = forgetting_curve(elapsed, schedule.stability)
+
+    # Update difficulty
+    schedule.difficulty = next_difficulty(schedule.difficulty, int(g))
+
+    # Update stability based on success/failure
+    old_stability = schedule.stability
+    if g == AGAIN:
+        schedule.stability = next_stability_failure(
+            schedule.stability, schedule.difficulty, r
+        )
+        schedule.consecutive_successes = 0
+    else:
+        schedule.stability = next_stability_success(
+            schedule.stability, schedule.difficulty, r, int(g)
+        )
+        schedule.n_successful += 1
+        schedule.consecutive_successes += 1
 
     schedule.n_reviews += 1
     schedule.last_review_date = now.isoformat()
 
-    if success:
-        schedule.n_successful += 1
-        schedule.consecutive_successes += 1
-        # Stability grows with success — each review strengthens memory
-        schedule.stability *= SUCCESS_MULTIPLIER
-        # Bonus for consecutive successes (strong retention signal)
-        if schedule.consecutive_successes >= 3:
-            schedule.stability *= 1.1  # 10% extra stability for 3+ streaks
-    else:
-        schedule.consecutive_successes = 0
-        # Stability drops on failure
-        schedule.stability /= FAILURE_DIVISOR
-        schedule.stability = max(BASE_STABILITY * 0.5, schedule.stability)
-
-    # Compute next interval
-    interval = _compute_next_interval(schedule.stability, schedule.decay_rate)
+    # Schedule next review
+    interval = next_interval(schedule.stability)
     schedule.next_review_date = (now + timedelta(days=interval)).isoformat()
 
-    # Record in history
+    # History
     schedule.review_history.append({
         "date": now.isoformat(),
-        "success": success,
+        "rating": int(g),
+        "success": g != AGAIN,
+        "stability_before": round(old_stability, 2),
         "stability_after": round(schedule.stability, 2),
+        "difficulty": round(schedule.difficulty, 2),
+        "retrievability": round(r, 3),
         "interval_days": round(interval, 1),
     })
     schedule.review_history = schedule.review_history[-20:]
 
     logger.info(
-        f"REVIEW {'SUCCESS' if success else 'FAIL'}: skill={schedule.skill_id}, "
-        f"stability={schedule.stability:.1f}, next_in={interval:.1f} days"
+        f"FSRS REVIEW: skill={schedule.skill_id}, rating={g}, "
+        f"S={old_stability:.1f}→{schedule.stability:.1f}, "
+        f"D={schedule.difficulty:.1f}, R={r:.2f}, next_in={interval:.1f}d"
     )
     return schedule
 
@@ -282,37 +405,24 @@ def record_review_result(schedule: ReviewSchedule, success: bool) -> ReviewSched
 # ---------------------------------------------------------------------------
 
 class SpacedReviewStore:
-    """Manages review schedules for all students.
+    """Manages FSRS review schedules for all students.
 
     Firestore path: users/{uid}/review_schedule/{skill_id}
     """
 
     def __init__(self):
         self._memory: Dict[str, Dict[str, ReviewSchedule]] = {}
-        self._firestore_available = False
-        self._db = None
-        self._try_init_firestore()
-
-    def _try_init_firestore(self):
-        try:
-            import firebase_admin
-            from firebase_admin import firestore
-            if firebase_admin._apps:
-                self._db = firestore.client()
-                self._firestore_available = True
-                logger.info("SpacedReviewStore: Firestore connected")
-        except Exception:
-            logger.info("SpacedReviewStore: Using in-memory fallback")
 
     def get_schedule(self, user_id: str, skill_id: str) -> Optional[ReviewSchedule]:
-        """Get review schedule for a skill. Returns None if not scheduled."""
         if user_id in self._memory and skill_id in self._memory[user_id]:
             return self._memory[user_id][skill_id]
 
-        if self._firestore_available and self._db:
+        from app.services.firestore_service import _get_db
+        db = _get_db()
+        if db:
             try:
                 doc = (
-                    self._db.collection("users")
+                    db.collection("users")
                     .document(user_id)
                     .collection("review_schedule")
                     .document(skill_id)
@@ -324,24 +434,17 @@ class SpacedReviewStore:
                     return schedule
             except Exception as e:
                 logger.warning(f"Firestore read error: {e}")
-
         return None
 
     def get_due_reviews(self, user_id: str, max_items: int = 5) -> List[ReviewSchedule]:
-        """Get all skills that are due for review, sorted by urgency.
-
-        Most overdue items come first.
-        """
         all_schedules = self._get_all_schedules(user_id)
         due = [s for s in all_schedules.values() if s.is_due]
-        due.sort(key=lambda s: s.days_overdue, reverse=True)  # Most overdue first
+        due.sort(key=lambda s: s.days_overdue, reverse=True)
         return due[:max_items]
 
     def get_upcoming_reviews(self, user_id: str, days_ahead: int = 7) -> List[ReviewSchedule]:
-        """Get reviews coming up in the next N days."""
         all_schedules = self._get_all_schedules(user_id)
         cutoff = datetime.now(timezone.utc) + timedelta(days=days_ahead)
-
         upcoming = []
         for schedule in all_schedules.values():
             if not schedule.next_review_date:
@@ -354,56 +457,57 @@ class SpacedReviewStore:
                     upcoming.append(schedule)
             except (ValueError, AttributeError):
                 continue
-
         upcoming.sort(key=lambda s: s.next_review_date or "")
         return upcoming
 
     def schedule_mastered_skill(self, user_id: str, skill_id: str) -> ReviewSchedule:
-        """Create and save a review schedule when a skill is mastered."""
         schedule = create_review_schedule(skill_id)
         self._save_schedule(user_id, schedule)
         return schedule
 
     def record_review(
-        self, user_id: str, skill_id: str, success: bool
+        self, user_id: str, skill_id: str, success: bool, rating: Optional[int] = None,
     ) -> Optional[ReviewSchedule]:
-        """Record a review attempt result and update the schedule."""
         schedule = self.get_schedule(user_id, skill_id)
         if not schedule:
             return None
-
-        record_review_result(schedule, success)
+        record_review_result(schedule, success, rating=rating)
         self._save_schedule(user_id, schedule)
         return schedule
 
     def get_review_summary(self, user_id: str) -> Dict[str, Any]:
-        """Summary for parent dashboard: what's been reviewed, what's due."""
         all_schedules = self._get_all_schedules(user_id)
-
         due_now = [s for s in all_schedules.values() if s.is_due]
         total_scheduled = len(all_schedules)
-        avg_recall = sum(s.estimated_recall for s in all_schedules.values()) / max(1, total_scheduled)
-
+        avg_recall = (
+            sum(s.estimated_recall for s in all_schedules.values())
+            / max(1, total_scheduled)
+        )
         return {
             "total_mastered_skills": total_scheduled,
             "due_for_review": len(due_now),
             "average_recall": round(avg_recall, 2),
             "upcoming_7_days": len(self.get_upcoming_reviews(user_id, 7)),
             "skills_due": [
-                {"skill_id": s.skill_id, "days_overdue": round(s.days_overdue, 1)}
+                {
+                    "skill_id": s.skill_id,
+                    "days_overdue": round(s.days_overdue, 1),
+                    "difficulty": round(s.difficulty, 1),
+                }
                 for s in due_now[:5]
             ],
         }
 
     def _get_all_schedules(self, user_id: str) -> Dict[str, ReviewSchedule]:
-        """Load all review schedules for a user."""
         if user_id in self._memory:
             return self._memory[user_id]
 
-        if self._firestore_available and self._db:
+        from app.services.firestore_service import _get_db
+        db = _get_db()
+        if db:
             try:
                 docs = (
-                    self._db.collection("users")
+                    db.collection("users")
                     .document(user_id)
                     .collection("review_schedule")
                     .stream()
@@ -421,17 +525,18 @@ class SpacedReviewStore:
         return self._memory[user_id]
 
     def _save_schedule(self, user_id: str, schedule: ReviewSchedule) -> None:
-        """Persist a review schedule."""
         self._memory.setdefault(user_id, {})[schedule.skill_id] = schedule
 
-        if self._firestore_available and self._db:
+        from app.services.firestore_service import _get_db
+        db = _get_db()
+        if db:
             try:
                 (
-                    self._db.collection("users")
+                    db.collection("users")
                     .document(user_id)
                     .collection("review_schedule")
                     .document(schedule.skill_id)
-                    .set(schedule.to_dict())
+                    .set(schedule.to_dict(), merge=True)
                 )
             except Exception as e:
                 logger.warning(f"Firestore write error: {e}")

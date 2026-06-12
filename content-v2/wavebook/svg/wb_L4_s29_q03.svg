@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 180" width="250" height="180">
+  <rect width="250" height="180" fill="#FFF8F0" rx="8"/>
+  <text x="125.0" y="16" text-anchor="middle" font-size="10" font-weight="bold" font-family="Arial" fill="#1A1A2E">Mirror Reflection</text>
+  <line x1="125.0" y1="25" x2="125.0" y2="170" stroke="#1976D2" stroke-width="2" stroke-dasharray="6,3"/>
+  <text x="125.0" y="178" text-anchor="middle" font-size="8" font-family="Arial" fill="#1976D2">Mirror</text>
+  <circle cx="60" cy="55" r="15" fill="#FFE0B2" stroke="#FF6D00" stroke-width="1.5"/>
+  <text x="60" y="59" text-anchor="middle" font-size="9" font-family="Arial" fill="#1A1A2E">You</text>
+  <line x1="75" y1="65" x2="95" y2="85" stroke="#FF6D00" stroke-width="3"/>
+  <text x="100" y="90" text-anchor="middle" font-size="10" font-weight="bold" font-family="Arial" fill="#FF6D00">R</text>
+  <line x1="45" y1="65" x2="25" y2="85" stroke="#9E9E9E" stroke-width="3"/>
+  <text x="20" y="90" text-anchor="middle" font-size="10" font-family="Arial" fill="#9E9E9E">L</text>
+  <circle cx="190" cy="55" r="15" fill="#E3F2FD" stroke="#1976D2" stroke-width="1.5"/>
+  <text x="190" y="59" text-anchor="middle" font-size="8" font-family="Arial" fill="#1A1A2E">Image</text>
+  <line x1="175" y1="65" x2="155" y2="85" stroke="#FF6D00" stroke-width="3"/>
+  <text x="150" y="90" text-anchor="middle" font-size="10" font-weight="bold" font-family="Arial" fill="#FF6D00">R?</text>
+  <line x1="205" y1="65" x2="225" y2="85" stroke="#9E9E9E" stroke-width="3"/>
+  <text x="125.0" y="130" text-anchor="middle" font-size="9" font-weight="bold" font-family="Arial" fill="#FF6D00">Right hand appears on LEFT</text>
+  <text x="125.0" y="142" text-anchor="middle" font-size="9" font-family="Arial" fill="#9E9E9E">in the mirror image</text>
+</svg>

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 220" width="250" height="220">
+  <rect width="250" height="220" fill="#FFF8F0" rx="8"/>
+  <text x="125.0" y="18" text-anchor="middle" font-size="10" font-weight="bold" font-family="Arial" fill="#1A1A2E">4×4 Magic Square (constant=34)</text>
+  <rect x="53.0" y="30" width="36" height="36" fill="white" stroke="#9E9E9E" stroke-width="1.5"/>
+  <text x="71.0" y="53.0" text-anchor="middle" font-size="12" font-family="Arial" fill="#1A1A2E">1</text>
+  <rect x="89.0" y="30" width="36" height="36" fill="white" stroke="#9E9E9E" stroke-width="1.5"/>
+  <text x="107.0" y="53.0" text-anchor="middle" font-size="12" font-family="Arial" fill="#1A1A2E">15</text>
+  <rect x="125.0" y="30" width="36" height="36" fill="white" stroke="#9E9E9E" stroke-width="1.5"/>
+  <text x="143.0" y="53.0" text-anchor="middle" font-size="12" font-family="Arial" fill="#1A1A2E">14</text>
+  <rect x="161.0" y="30" width="36" height="36" fill="white" stroke="#9E9E9E" stroke-width="1.5"/>
+  <text x="179.0" y="53.0" text-anchor="middle" font-size="12" font-family="Arial" fill="#1A1A2E">4</text>
+  <rect x="53.0" y="66" width="36" height="36" fill="white" stroke="#9E9E9E" stroke-width="1.5"/>
+  <text x="71.0" y="89.0" text-anchor="middle" font-size="12" font-family="Arial" fill="#1A1A2E">12</text>
+  <rect x="89.0" y="66" width="36" height="36" fill="white" stroke="#9E9E9E" stroke-width="1.5"/>
+  <text x="107.0" y="89.0" text-anchor="middle" font-size="12" font-family="Arial" fill="#1A1A2E">6</text>
+  <rect x="125.0" y="66" width="36" height="36" fill="white" stroke="#9E9E9E" stroke-width="1.5"/>
+  <text x="143.0" y="89.0" text-anchor="middle" font-size="12" font-family="Arial" fill="#1A1A2E">7</text>
+  <rect x="161.0" y="66" width="36" height="36" fill="white" stroke="#9E9E9E" stroke-width="1.5"/>
+  <text x="179.0" y="89.0" text-anchor="middle" font-size="12" font-family="Arial" fill="#1A1A2E">9</text>
+  <rect x="53.0" y="102" width="36" height="36" fill="white" stroke="#9E9E9E" stroke-width="1.5"/>
+  <text x="71.0" y="125.0" text-anchor="middle" font-size="12" font-family="Arial" fill="#1A1A2E">8</text>
+  <rect x="89.0" y="102" width="36" height="36" fill="white" stroke="#9E9E9E" stroke-width="1.5"/>
+  <text x="107.0" y="125.0" text-anchor="middle" font-size="12" font-family="Arial" fill="#1A1A2E">10</text>
+  <rect x="125.0" y="102" width="36" height="36" fill="white" stroke="#9E9E9E" stroke-width="1.5"/>
+  <text x="143.0" y="125.0" text-anchor="middle" font-size="12" font-family="Arial" fill="#1A1A2E">11</text>
+  <rect x="161.0" y="102" width="36" height="36" fill="white" stroke="#9E9E9E" stroke-width="1.5"/>
+  <text x="179.0" y="125.0" text-anchor="middle" font-size="12" font-family="Arial" fill="#1A1A2E">5</text>
+  <rect x="53.0" y="138" width="36" height="36" fill="white" stroke="#9E9E9E" stroke-width="1.5"/>
+  <text x="71.0" y="161.0" text-anchor="middle" font-size="12" font-family="Arial" fill="#1A1A2E">13</text>
+  <rect x="89.0" y="138" width="36" height="36" fill="white" stroke="#9E9E9E" stroke-width="1.5"/>
+  <text x="107.0" y="161.0" text-anchor="middle" font-size="12" font-family="Arial" fill="#1A1A2E">3</text>
+  <rect x="125.0" y="138" width="36" height="36" fill="white" stroke="#9E9E9E" stroke-width="1.5"/>
+  <text x="143.0" y="161.0" text-anchor="middle" font-size="12" font-family="Arial" fill="#1A1A2E">2</text>
+  <rect x="161.0" y="138" width="36" height="36" fill="white" stroke="#9E9E9E" stroke-width="1.5"/>
+  <text x="179.0" y="161.0" text-anchor="middle" font-size="12" font-family="Arial" fill="#1A1A2E">16</text>
+  <text x="209.0" y="53.0" text-anchor="start" font-size="9" font-weight="bold" font-family="Arial" fill="#FF6D00">=34</text>
+  <text x="209.0" y="89.0" text-anchor="start" font-size="9" font-weight="bold" font-family="Arial" fill="#FF6D00">=34</text>
+  <text x="209.0" y="125.0" text-anchor="start" font-size="9" font-weight="bold" font-family="Arial" fill="#FF6D00">=34</text>
+  <text x="209.0" y="161.0" text-anchor="start" font-size="9" font-weight="bold" font-family="Arial" fill="#FF6D00">=34</text>
+  <text x="125.0" y="190" text-anchor="middle" font-size="8" font-family="Arial" fill="#9E9E9E">Magic constant = 34, Sum = 4 × 34 = 136</text>
+</svg>

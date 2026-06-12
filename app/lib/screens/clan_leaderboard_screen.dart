@@ -27,9 +27,9 @@ class ClanLeaderboardScreen extends StatelessWidget {
   });
 
   // Podium accent colors
-  static const _gold = Color(0xFFFFD600);
-  static const _silver = Color(0xFFB0BEC5);
-  static const _bronze = Color(0xFFFF8A65);
+  static const _gold = KiwiColors.gemGold;
+  static const _silver = Color(0xFFB0BEC5); // decorative — no token
+  static const _bronze = KiwiColors.streakWarm;
 
   @override
   Widget build(BuildContext context) {
@@ -51,7 +51,7 @@ class ClanLeaderboardScreen extends StatelessWidget {
                   if (top3.isNotEmpty)
                     SliverToBoxAdapter(
                       child: Padding(
-                        padding: const EdgeInsets.fromLTRB(24, 20, 24, 8),
+                        padding: EdgeInsets.fromLTRB(KiwiSpacing.xl, KiwiSpacing.xl, KiwiSpacing.xl, KiwiSpacing.sm),
                         child: _buildPodium(top3),
                       ),
                     ),
@@ -60,7 +60,7 @@ class ClanLeaderboardScreen extends StatelessWidget {
                   if (rest.isNotEmpty)
                     const SliverToBoxAdapter(
                       child: Padding(
-                        padding: EdgeInsets.fromLTRB(28, 16, 28, 8),
+                        padding: EdgeInsets.fromLTRB(KiwiSpacing.xxl - 4, KiwiSpacing.lg, KiwiSpacing.xxl - 4, KiwiSpacing.sm),
                         child: Text(
                           'Rankings',
                           style: TextStyle(
@@ -74,7 +74,7 @@ class ClanLeaderboardScreen extends StatelessWidget {
 
                   // Remaining list
                   SliverPadding(
-                    padding: const EdgeInsets.fromLTRB(24, 0, 24, 40),
+                    padding: EdgeInsets.fromLTRB(KiwiSpacing.xl, 0, KiwiSpacing.xl, KiwiSpacing.xxl + KiwiSpacing.sm),
                     sliver: SliverList(
                       delegate: SliverChildBuilderDelegate(
                         (context, index) =>
@@ -93,7 +93,7 @@ class ClanLeaderboardScreen extends StatelessWidget {
                           children: [
                             Icon(Icons.emoji_events_outlined,
                                 size: 56, color: KiwiColors.textMuted),
-                            SizedBox(height: 12),
+                            SizedBox(height: KiwiSpacing.md),
                             Text(
                               'No clans yet for this grade!',
                               style: TextStyle(
@@ -128,7 +128,7 @@ class ClanLeaderboardScreen extends StatelessWidget {
   Widget _buildHeader(BuildContext context) {
     return Container(
       width: double.infinity,
-      padding: const EdgeInsets.fromLTRB(8, 12, 16, 16),
+      padding: EdgeInsets.fromLTRB(KiwiSpacing.sm, KiwiSpacing.md, KiwiSpacing.lg, KiwiSpacing.lg),
       decoration: const BoxDecoration(
         gradient: LinearGradient(
           colors: [KiwiColors.kiwiPrimary, KiwiColors.kiwiPrimaryDark],
@@ -156,10 +156,10 @@ class ClanLeaderboardScreen extends StatelessWidget {
           ),
           // Grade filter dropdown
           Container(
-            padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 2),
+            padding: EdgeInsets.symmetric(horizontal: KiwiSpacing.sm + 2, vertical: 2),
             decoration: BoxDecoration(
               color: Colors.white.withOpacity(0.2),
-              borderRadius: BorderRadius.circular(10),
+              borderRadius: BorderRadius.circular(KiwiSpacing.sm + 2),
               border: Border.all(color: Colors.white.withOpacity(0.4)),
             ),
             child: DropdownButtonHideUnderline(
@@ -201,10 +201,10 @@ class ClanLeaderboardScreen extends StatelessWidget {
     final third = top3.length > 2 ? top3[2] : null;
 
     return Container(
-      padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 8),
+      padding: EdgeInsets.symmetric(vertical: KiwiSpacing.xl, horizontal: KiwiSpacing.sm),
       decoration: BoxDecoration(
         color: KiwiColors.cardBg,
-        borderRadius: BorderRadius.circular(14),
+        borderRadius: BorderRadius.circular(KiwiSpacing.md + 2),
         boxShadow: [
           BoxShadow(
             color: Colors.black.withOpacity(0.06),
@@ -252,7 +252,7 @@ class ClanLeaderboardScreen extends StatelessWidget {
       children: [
         // Rank emoji
         Text(rankEmoji, style: const TextStyle(fontSize: 28)),
-        const SizedBox(height: 6),
+        SizedBox(height: KiwiSpacing.xs + 2),
 
         // Crest
         Container(
@@ -264,7 +264,7 @@ class ClanLeaderboardScreen extends StatelessWidget {
               begin: Alignment.topLeft,
               end: Alignment.bottomRight,
             ),
-            borderRadius: BorderRadius.circular(14),
+            borderRadius: BorderRadius.circular(KiwiSpacing.md + 2),
             border: isCurrentClan
                 ? Border.all(color: KiwiColors.kiwiPrimary, width: 3)
                 : null,
@@ -283,7 +283,7 @@ class ClanLeaderboardScreen extends StatelessWidget {
             ),
           ),
         ),
-        const SizedBox(height: 8),
+        SizedBox(height: KiwiSpacing.sm),
 
         // Clan name
         Text(
@@ -297,14 +297,14 @@ class ClanLeaderboardScreen extends StatelessWidget {
             color: KiwiColors.textDark,
           ),
         ),
-        const SizedBox(height: 4),
+        SizedBox(height: KiwiSpacing.xs),
 
         // Level badge
         Container(
-          padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
+          padding: EdgeInsets.symmetric(horizontal: KiwiSpacing.sm, vertical: 3),
           decoration: BoxDecoration(
             color: KiwiColors.xpPurple.withOpacity(0.1),
-            borderRadius: BorderRadius.circular(8),
+            borderRadius: BorderRadius.circular(KiwiSpacing.sm),
           ),
           child: Text(
             '${entry.clanLevel.emoji} Lv${entry.clanLevel.level}',
@@ -315,7 +315,7 @@ class ClanLeaderboardScreen extends StatelessWidget {
             ),
           ),
         ),
-        const SizedBox(height: 4),
+        SizedBox(height: KiwiSpacing.xs),
 
         // Points
         Text(
@@ -326,7 +326,7 @@ class ClanLeaderboardScreen extends StatelessWidget {
             color: KiwiColors.kiwiPrimary,
           ),
         ),
-        const SizedBox(height: 8),
+        SizedBox(height: KiwiSpacing.sm),
 
         // Podium block
         Container(
@@ -338,7 +338,7 @@ class ClanLeaderboardScreen extends StatelessWidget {
               begin: Alignment.topCenter,
               end: Alignment.bottomCenter,
             ),
-            borderRadius: const BorderRadius.vertical(top: Radius.circular(8)),
+            borderRadius: BorderRadius.vertical(top: Radius.circular(KiwiSpacing.sm)),
           ),
           child: Center(
             child: Text(
@@ -361,11 +361,11 @@ class ClanLeaderboardScreen extends StatelessWidget {
     final isCurrentClan = entry.clanId == currentClanId;
 
     return Container(
-      margin: const EdgeInsets.only(bottom: 10),
-      padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
+      margin: EdgeInsets.only(bottom: KiwiSpacing.sm + 2),
+      padding: EdgeInsets.symmetric(horizontal: KiwiSpacing.md + 2, vertical: KiwiSpacing.md),
       decoration: BoxDecoration(
         color: KiwiColors.cardBg,
-        borderRadius: BorderRadius.circular(14),
+        borderRadius: BorderRadius.circular(KiwiSpacing.md + 2),
         border: isCurrentClan
             ? Border.all(color: KiwiColors.kiwiPrimary, width: 2)
             : null,
@@ -393,7 +393,7 @@ class ClanLeaderboardScreen extends StatelessWidget {
               ),
             ),
           ),
-          const SizedBox(width: 8),
+          SizedBox(width: KiwiSpacing.sm),
 
           // Crest
           Container(
@@ -403,7 +403,7 @@ class ClanLeaderboardScreen extends StatelessWidget {
               color: isCurrentClan
                   ? KiwiColors.kiwiPrimaryLight
                   : KiwiColors.kiwiPrimaryLight.withOpacity(0.5),
-              borderRadius: BorderRadius.circular(12),
+              borderRadius: BorderRadius.circular(KiwiSpacing.md),
             ),
             child: Center(
               child: Text(
@@ -412,7 +412,7 @@ class ClanLeaderboardScreen extends StatelessWidget {
               ),
             ),
           ),
-          const SizedBox(width: 12),
+          SizedBox(width: KiwiSpacing.md),
 
           // Name + level
           Expanded(
@@ -431,7 +431,7 @@ class ClanLeaderboardScreen extends StatelessWidget {
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
                 ),
-                const SizedBox(height: 3),
+                SizedBox(height: KiwiSpacing.xs - 1),
                 Row(
                   children: [
                     Text(
@@ -442,7 +442,7 @@ class ClanLeaderboardScreen extends StatelessWidget {
                         color: KiwiColors.xpPurple,
                       ),
                     ),
-                    const SizedBox(width: 8),
+                    SizedBox(width: KiwiSpacing.sm),
                     Text(
                       '${entry.memberCount} members',
                       style: const TextStyle(
@@ -483,7 +483,7 @@ class ClanLeaderboardScreen extends StatelessWidget {
 
           // Highlight indicator for current clan
           if (isCurrentClan) ...[
-            const SizedBox(width: 8),
+            SizedBox(width: KiwiSpacing.sm),
             Container(
               width: 8,
               height: 8,

@@ -1,14 +1,14 @@
 {
   "topic_id": "g5-algebra",
   "topic_name": "Algebra & Equations",
-  "topic_emoji": "📝",
+  "topic_emoji": "\ud83d\udcdd",
   "grade": 5,
   "domain": "algebra",
   "skills": [
     "number_patterns",
     "order_of_ops"
   ],
-  "total_questions": 60,
+  "total_questions": 57,
   "difficulty_range": {
     "min_irt_b": -0.68,
     "max_irt_b": 2.12
@@ -17,12 +17,12 @@
     "singapore": 30,
     "us-common-core": 30
   },
-  "schema_version": "4.1",
+  "schema_version": "4.2",
   "generated_at": "2026-05-03T09:32:38.777309",
   "questions": [
     {
-      "id": "SING-G5-001",
-      "stem": "What is 64 - 7 × 9?",
+      "id": "A5-ALG-0001",
+      "stem": "What is 64 - 7 \u00d7 9?",
       "choices": [
         "8",
         "-63",
@@ -30,14 +30,14 @@
         "1"
       ],
       "correct_answer": 3,
-      "difficulty_tier": "medium",
+      "difficulty_tier": "easy-medium",
       "difficulty_score": 27,
       "visual_svg": null,
       "visual_alt": null,
       "diagnostics": {
-        "1": "Ignores order of operations",
-        "2": "Computes left to right",
-        "3": "Remember BODMAS: multiply or divide before you add or subtract. Work left to right within the same priority."
+        "0": "Ignores order of operations",
+        "1": "Computes left to right",
+        "2": "Remember BODMAS: multiply or divide before you add or subtract. Work left to right within the same priority."
       },
       "tags": [
         "order_of_operations",
@@ -47,8 +47,8 @@
       "chapter": "5A: Order of Operations",
       "hint": {
         "level_0": "BODMAS: Brackets, Orders, Division/Multiplication, Addition/Subtraction.",
-        "level_1": "Do multiplication/division before addition/subtraction.",
-        "level_2": "Work out brackets first, then × and ÷, then + and -."
+        "level_1": "Do multiplication/division before addition/subtraction. Work out brackets first, then \u00d7 and \u00f7, then + and -. Try working out the calculation step-by-step. Compare your result to the choices: 8, -63, 513, 1",
+        "level_2": "Use the relationship given in the problem to set up your steps."
       },
       "curriculum_tags": [
         "SING_5A_1"
@@ -62,9 +62,9 @@
       "irt_b": -0.68,
       "irt_c": 0.25,
       "solution_steps": [
-        "Start at 64 on the number line",
-        "Count back 7 steps",
-        "The number you land on is your answer"
+        "Compute: 64 - 7",
+        "Work through the calculation step by step",
+        "= 1"
       ],
       "level": 5,
       "level_name": "Strategist",
@@ -98,7 +98,7 @@
       "schema_version": "3.0",
       "adaptive_topic_id": "g5-algebra",
       "adaptive_topic_name": "Algebra & Equations",
-      "adaptive_topic_emoji": "📝",
+      "adaptive_topic_emoji": "\ud83d\udcdd",
       "adaptive_grade": 5,
       "dual_tagged": true,
       "content_source": "singapore",
@@ -110,11 +110,12 @@
         "us",
         "global"
       ],
-      "topic": "g5-algebra"
+      "topic": "g5-algebra",
+      "original_id": "SING-G5-001"
     },
     {
-      "id": "SING-G5-002",
-      "stem": "What is 68 - 8 × 8?",
+      "id": "A5-ALG-0002",
+      "stem": "What is 68 - 8 \u00d7 8?",
       "choices": [
         "480",
         "-64",
@@ -122,14 +123,14 @@
         "4"
       ],
       "correct_answer": 3,
-      "difficulty_tier": "medium",
+      "difficulty_tier": "easy-medium",
       "difficulty_score": 30,
       "visual_svg": null,
       "visual_alt": null,
       "diagnostics": {
-        "1": "Ignores order of operations",
-        "2": "Computes left to right",
-        "3": "Remember BODMAS: multiply or divide before you add or subtract. Work left to right within the same priority."
+        "0": "Ignores order of operations",
+        "1": "Computes left to right",
+        "2": "Remember BODMAS: multiply or divide before you add or subtract. Work left to right within the same priority."
       },
       "tags": [
         "order_of_operations",
@@ -139,8 +140,8 @@
       "chapter": "5A: Order of Operations",
       "hint": {
         "level_0": "BODMAS: Brackets, Orders, Division/Multiplication, Addition/Subtraction.",
-        "level_1": "Do multiplication/division before addition/subtraction.",
-        "level_2": "Work out brackets first, then × and ÷, then + and -."
+        "level_1": "Do multiplication/division before addition/subtraction. Work out brackets first, then \u00d7 and \u00f7, then + and -. Try working out the calculation step-by-step. Compare your result to the choices: 480, -64, 12, 4",
+        "level_2": "Use the relationship given in the problem to set up your steps."
       },
       "curriculum_tags": [
         "SING_5A_1"
@@ -190,7 +191,7 @@
       "schema_version": "3.0",
       "adaptive_topic_id": "g5-algebra",
       "adaptive_topic_name": "Algebra & Equations",
-      "adaptive_topic_emoji": "📝",
+      "adaptive_topic_emoji": "\ud83d\udcdd",
       "adaptive_grade": 5,
       "dual_tagged": true,
       "content_source": "singapore",
@@ -202,11 +203,12 @@
         "us",
         "global"
       ],
-      "topic": "g5-algebra"
+      "topic": "g5-algebra",
+      "original_id": "SING-G5-002"
     },
     {
-      "id": "SING-G5-005",
-      "stem": "What is 82 - 8 × 10?",
+      "id": "A5-ALG-0003",
+      "stem": "What is 82 - 8 \u00d7 10?",
       "choices": [
         "2",
         "-80",
@@ -231,8 +233,8 @@
       "chapter": "5A: Order of Operations",
       "hint": {
         "level_0": "BODMAS: Brackets, Orders, Division/Multiplication, Addition/Subtraction.",
-        "level_1": "Do multiplication/division before addition/subtraction.",
-        "level_2": "Work out brackets first, then × and ÷, then + and -."
+        "level_1": "Do multiplication/division before addition/subtraction. Work out brackets first, then \u00d7 and \u00f7, then + and -. Try working out the calculation step-by-step. Compare your result to the choices: 2, -80, 10, 740",
+        "level_2": "Use the relationship given in the problem to set up your steps."
       },
       "curriculum_tags": [
         "SING_5A_1"
@@ -282,7 +284,7 @@
       "schema_version": "3.0",
       "adaptive_topic_id": "g5-algebra",
       "adaptive_topic_name": "Algebra & Equations",
-      "adaptive_topic_emoji": "📝",
+      "adaptive_topic_emoji": "\ud83d\udcdd",
       "adaptive_grade": 5,
       "dual_tagged": true,
       "content_source": "singapore",
@@ -294,11 +296,12 @@
         "us",
         "global"
       ],
-      "topic": "g5-algebra"
+      "topic": "g5-algebra",
+      "original_id": "SING-G5-005"
     },
     {
-      "id": "SING-G5-009",
-      "stem": "What is 2 + 8 × 6?",
+      "id": "A5-ALG-0004",
+      "stem": "What is 2 + 8 \u00d7 6?",
       "choices": [
         "50",
         "58",
@@ -323,8 +326,8 @@
       "chapter": "5A: Order of Operations",
       "hint": {
         "level_0": "BODMAS: Brackets, Orders, Division/Multiplication, Addition/Subtraction.",
-        "level_1": "Do multiplication/division before addition/subtraction.",
-        "level_2": "Work out brackets first, then × and ÷, then + and -."
+        "level_1": "Do multiplication/division before addition/subtraction. Work out brackets first, then \u00d7 and \u00f7, then + and -. Try working out the calculation step-by-step. Compare your result to the choices: 50, 58, 48, 60",
+        "level_2": "Use the relationship given in the problem to set up your steps."
       },
       "curriculum_tags": [
         "SING_5A_1"
@@ -374,7 +377,7 @@
       "schema_version": "3.0",
       "adaptive_topic_id": "g5-algebra",
       "adaptive_topic_name": "Algebra & Equations",
-      "adaptive_topic_emoji": "📝",
+      "adaptive_topic_emoji": "\ud83d\udcdd",
       "adaptive_grade": 5,
       "dual_tagged": true,
       "content_source": "singapore",
@@ -386,11 +389,12 @@
         "us",
         "global"
       ],
-      "topic": "g5-algebra"
+      "topic": "g5-algebra",
+      "original_id": "SING-G5-009"
     },
     {
-      "id": "SING-G5-013",
-      "stem": "What is 11 + 5 × 6?",
+      "id": "A5-ALG-0005",
+      "stem": "What is 11 + 5 \u00d7 6?",
       "choices": [
         "41",
         "96",
@@ -415,8 +419,8 @@
       "chapter": "5A: Order of Operations",
       "hint": {
         "level_0": "BODMAS: Brackets, Orders, Division/Multiplication, Addition/Subtraction.",
-        "level_1": "Do multiplication/division before addition/subtraction.",
-        "level_2": "Work out brackets first, then × and ÷, then + and -."
+        "level_1": "Do multiplication/division before addition/subtraction. Work out brackets first, then \u00d7 and \u00f7, then + and -. Try working out the calculation step-by-step. Compare your result to the choices: 41, 96, 46, 30",
+        "level_2": "Use the relationship given in the problem to set up your steps."
       },
       "curriculum_tags": [
         "SING_5A_1"
@@ -466,7 +470,7 @@
       "schema_version": "3.0",
       "adaptive_topic_id": "g5-algebra",
       "adaptive_topic_name": "Algebra & Equations",
-      "adaptive_topic_emoji": "📝",
+      "adaptive_topic_emoji": "\ud83d\udcdd",
       "adaptive_grade": 5,
       "dual_tagged": true,
       "content_source": "singapore",
@@ -478,11 +482,12 @@
         "us",
         "global"
       ],
-      "topic": "g5-algebra"
+      "topic": "g5-algebra",
+      "original_id": "SING-G5-013"
     },
     {
-      "id": "SING-G5-018",
-      "stem": "What is 8 + 5 × 7?",
+      "id": "A5-ALG-0006",
+      "stem": "What is 8 + 5 \u00d7 7?",
       "choices": [
         "43",
         "35",
@@ -507,8 +512,8 @@
       "chapter": "5A: Order of Operations",
       "hint": {
         "level_0": "BODMAS: Brackets, Orders, Division/Multiplication, Addition/Subtraction.",
-        "level_1": "Do multiplication/division before addition/subtraction.",
-        "level_2": "Work out brackets first, then × and ÷, then + and -."
+        "level_1": "Do multiplication/division before addition/subtraction. Work out brackets first, then \u00d7 and \u00f7, then + and -. Try working out the calculation step-by-step. Compare your result to the choices: 43, 35, 48, 91",
+        "level_2": "Use the relationship given in the problem to set up your steps."
       },
       "curriculum_tags": [
         "SING_5A_1"
@@ -558,7 +563,7 @@
       "schema_version": "3.0",
       "adaptive_topic_id": "g5-algebra",
       "adaptive_topic_name": "Algebra & Equations",
-      "adaptive_topic_emoji": "📝",
+      "adaptive_topic_emoji": "\ud83d\udcdd",
       "adaptive_grade": 5,
       "dual_tagged": true,
       "content_source": "singapore",
@@ -570,11 +575,12 @@
         "us",
         "global"
       ],
-      "topic": "g5-algebra"
+      "topic": "g5-algebra",
+      "original_id": "SING-G5-018"
     },
     {
-      "id": "SING-G5-021",
-      "stem": "What is 11 - 3 × 2?",
+      "id": "A5-ALG-0007",
+      "stem": "What is 11 - 3 \u00d7 2?",
       "choices": [
         "16",
         "8",
@@ -587,8 +593,8 @@
       "visual_svg": null,
       "visual_alt": null,
       "diagnostics": {
-        "1": "Ignores order of operations",
-        "2": "Computes left to right",
+        "0": "Ignores order of operations",
+        "1": "Computes left to right",
         "3": "Remember BODMAS: multiply or divide before you add or subtract. Work left to right within the same priority."
       },
       "tags": [
@@ -599,8 +605,8 @@
       "chapter": "5A: Order of Operations",
       "hint": {
         "level_0": "BODMAS: Brackets, Orders, Division/Multiplication, Addition/Subtraction.",
-        "level_1": "Do multiplication/division before addition/subtraction.",
-        "level_2": "Work out brackets first, then × and ÷, then + and -."
+        "level_1": "Do multiplication/division before addition/subtraction. Work out brackets first, then \u00d7 and \u00f7, then + and -. Try working out the calculation step-by-step. Compare your result to the choices: 16, 8, 5, -6",
+        "level_2": "Use the relationship given in the problem to set up your steps."
       },
       "curriculum_tags": [
         "SING_5A_1"
@@ -650,7 +656,7 @@
       "schema_version": "3.0",
       "adaptive_topic_id": "g5-algebra",
       "adaptive_topic_name": "Algebra & Equations",
-      "adaptive_topic_emoji": "📝",
+      "adaptive_topic_emoji": "\ud83d\udcdd",
       "adaptive_grade": 5,
       "dual_tagged": true,
       "content_source": "singapore",
@@ -662,11 +668,12 @@
         "us",
         "global"
       ],
-      "topic": "g5-algebra"
+      "topic": "g5-algebra",
+      "original_id": "SING-G5-021"
     },
     {
-      "id": "SING-G5-027",
-      "stem": "What is 30 - 4 × 7?",
+      "id": "A5-ALG-0008",
+      "stem": "What is 30 - 4 \u00d7 7?",
       "choices": [
         "6",
         "-28",
@@ -679,9 +686,9 @@
       "visual_svg": null,
       "visual_alt": null,
       "diagnostics": {
-        "1": "Ignores order of operations",
-        "2": "Computes left to right",
-        "3": "Remember BODMAS: multiply or divide before you add or subtract. Work left to right within the same priority."
+        "0": "Ignores order of operations",
+        "1": "Computes left to right",
+        "2": "Remember BODMAS: multiply or divide before you add or subtract. Work left to right within the same priority."
       },
       "tags": [
         "order_of_operations",
@@ -691,8 +698,8 @@
       "chapter": "5A: Order of Operations",
       "hint": {
         "level_0": "BODMAS: Brackets, Orders, Division/Multiplication, Addition/Subtraction.",
-        "level_1": "Do multiplication/division before addition/subtraction.",
-        "level_2": "Work out brackets first, then × and ÷, then + and -."
+        "level_1": "Do multiplication/division before addition/subtraction. Work out brackets first, then \u00d7 and \u00f7, then + and -. Try working out the calculation step-by-step. Compare your result to the choices: 6, -28, 182, 2",
+        "level_2": "Use the relationship given in the problem to set up your steps."
       },
       "curriculum_tags": [
         "SING_5A_1"
@@ -742,7 +749,7 @@
       "schema_version": "3.0",
       "adaptive_topic_id": "g5-algebra",
       "adaptive_topic_name": "Algebra & Equations",
-      "adaptive_topic_emoji": "📝",
+      "adaptive_topic_emoji": "\ud83d\udcdd",
       "adaptive_grade": 5,
       "dual_tagged": true,
       "content_source": "singapore",
@@ -754,11 +761,12 @@
         "us",
         "global"
       ],
-      "topic": "g5-algebra"
+      "topic": "g5-algebra",
+      "original_id": "SING-G5-027"
     },
     {
-      "id": "SING-G5-035",
-      "stem": "What is 64 - 6 × 10?",
+      "id": "A5-ALG-0009",
+      "stem": "What is 64 - 6 \u00d7 10?",
       "choices": [
         "10",
         "-60",
@@ -771,9 +779,9 @@
       "visual_svg": null,
       "visual_alt": null,
       "diagnostics": {
-        "1": "Ignores order of operations",
-        "2": "Computes left to right",
-        "3": "Remember BODMAS: multiply or divide before you add or subtract. Work left to right within the same priority."
+        "0": "Ignores order of operations",
+        "1": "Computes left to right",
+        "2": "Remember BODMAS: multiply or divide before you add or subtract. Work left to right within the same priority."
       },
       "tags": [
         "order_of_operations",
@@ -783,8 +791,8 @@
       "chapter": "5A: Order of Operations",
       "hint": {
         "level_0": "BODMAS: Brackets, Orders, Division/Multiplication, Addition/Subtraction.",
-        "level_1": "Do multiplication/division before addition/subtraction.",
-        "level_2": "Work out brackets first, then × and ÷, then + and -."
+        "level_1": "Do multiplication/division before addition/subtraction. Work out brackets first, then \u00d7 and \u00f7, then + and -. Try working out the calculation step-by-step. Compare your result to the choices: 10, -60, 580, 4",
+        "level_2": "Use the relationship given in the problem to set up your steps."
       },
       "curriculum_tags": [
         "SING_5A_1"
@@ -834,7 +842,7 @@
       "schema_version": "3.0",
       "adaptive_topic_id": "g5-algebra",
       "adaptive_topic_name": "Algebra & Equations",
-      "adaptive_topic_emoji": "📝",
+      "adaptive_topic_emoji": "\ud83d\udcdd",
       "adaptive_grade": 5,
       "dual_tagged": true,
       "content_source": "singapore",
@@ -846,11 +854,12 @@
         "us",
         "global"
       ],
-      "topic": "g5-algebra"
+      "topic": "g5-algebra",
+      "original_id": "SING-G5-035"
     },
     {
-      "id": "SING-G5-036",
-      "stem": "What is 4 + 3 × 10?",
+      "id": "A5-ALG-0010",
+      "stem": "What is 4 + 3 \u00d7 10?",
       "choices": [
         "30",
         "70",
@@ -863,9 +872,9 @@
       "visual_svg": null,
       "visual_alt": null,
       "diagnostics": {
-        "1": "Ignores order of operations",
-        "2": "Computes left to right",
-        "3": "Remember BODMAS: multiply or divide before you add or subtract. Work left to right within the same priority."
+        "0": "Ignores order of operations",
+        "1": "Computes left to right",
+        "2": "Remember BODMAS: multiply or divide before you add or subtract. Work left to right within the same priority."
       },
       "tags": [
         "order_of_operations",
@@ -875,8 +884,8 @@
       "chapter": "5A: Order of Operations",
       "hint": {
         "level_0": "BODMAS: Brackets, Orders, Division/Multiplication, Addition/Subtraction.",
-        "level_1": "Do multiplication/division before addition/subtraction.",
-        "level_2": "Work out brackets first, then × and ÷, then + and -."
+        "level_1": "Do multiplication/division before addition/subtraction. Work out brackets first, then \u00d7 and \u00f7, then + and -. Try working out the calculation step-by-step. Compare your result to the choices: 30, 70, 37, 34",
+        "level_2": "Use the relationship given in the problem to set up your steps."
       },
       "curriculum_tags": [
         "SING_5A_1"
@@ -926,7 +935,7 @@
       "schema_version": "3.0",
       "adaptive_topic_id": "g5-algebra",
       "adaptive_topic_name": "Algebra & Equations",
-      "adaptive_topic_emoji": "📝",
+      "adaptive_topic_emoji": "\ud83d\udcdd",
       "adaptive_grade": 5,
       "dual_tagged": true,
       "content_source": "singapore",
@@ -938,11 +947,12 @@
         "us",
         "global"
       ],
-      "topic": "g5-algebra"
+      "topic": "g5-algebra",
+      "original_id": "SING-G5-036"
     },
     {
-      "id": "SING-G5-037",
-      "stem": "What is 9 × (6 + 1)?",
+      "id": "A5-ALG-0011",
+      "stem": "What is 9 \u00d7 (6 + 1)?",
       "choices": [
         "54",
         "63",
@@ -955,7 +965,7 @@
       "visual_svg": null,
       "visual_alt": null,
       "diagnostics": {
-        "1": "Ignores order of operations",
+        "0": "Ignores order of operations",
         "2": "Computes left to right",
         "3": "Forgets brackets"
       },
@@ -967,8 +977,8 @@
       "chapter": "5A: Order of Operations",
       "hint": {
         "level_0": "BODMAS: Brackets, Orders, Division/Multiplication, Addition/Subtraction.",
-        "level_1": "Do multiplication/division before addition/subtraction.",
-        "level_2": "Work out brackets first, then × and ÷, then + and -."
+        "level_1": "Do multiplication/division before addition/subtraction. Work out brackets first, then \u00d7 and \u00f7, then + and -. Try working out the calculation step-by-step. Compare your result to the choices: 54, 63, 69, 55",
+        "level_2": "Use the relationship given in the problem to set up your steps."
       },
       "curriculum_tags": [
         "SING_5A_1"
@@ -1018,7 +1028,7 @@
       "schema_version": "3.0",
       "adaptive_topic_id": "g5-algebra",
       "adaptive_topic_name": "Algebra & Equations",
-      "adaptive_topic_emoji": "📝",
+      "adaptive_topic_emoji": "\ud83d\udcdd",
       "adaptive_grade": 5,
       "dual_tagged": true,
       "content_source": "singapore",
@@ -1030,11 +1040,12 @@
         "us",
         "global"
       ],
-      "topic": "g5-algebra"
+      "topic": "g5-algebra",
+      "original_id": "SING-G5-037"
     },
     {
-      "id": "USCC-G5-006",
-      "stem": "What is 2 × 4 + 4?",
+      "id": "A5-ALG-0012",
+      "stem": "What is 2 \u00d7 4 + 4?",
       "choices": [
         "12",
         "16",
@@ -1042,7 +1053,7 @@
         "13"
       ],
       "correct_answer": 0,
-      "difficulty_tier": "easy",
+      "difficulty_tier": "medium",
       "difficulty_score": 33,
       "tags": [
         "order_of_operations",
@@ -1051,11 +1062,13 @@
       "chapter": "Operations & Algebraic Thinking",
       "hint": {
         "level_0": "Use the correct operation.",
-        "level_1": "Apply rules carefully.",
-        "level_2": "Double-check your answer."
+        "level_1": "Apply rules carefully. Double-check your answer. Try working out the calculation step-by-step. Compare your result to the choices: 12, 16, 11, 13",
+        "level_2": "Use the relationship given in the problem to set up your steps."
       },
       "diagnostics": {
-        "common_errors": "Common error; Arithmetic mistake; Wrong approach"
+        "1": "Common error",
+        "2": "Arithmetic mistake",
+        "3": "Wrong approach"
       },
       "curriculum_tags": [
         "5.OA.1"
@@ -1103,7 +1116,7 @@
       "schema_version": "3.0",
       "adaptive_topic_id": "g5-algebra",
       "adaptive_topic_name": "Algebra & Equations",
-      "adaptive_topic_emoji": "📝",
+      "adaptive_topic_emoji": "\ud83d\udcdd",
       "adaptive_grade": 5,
       "dual_tagged": true,
       "content_source": "us-common-core",
@@ -1115,11 +1128,12 @@
         "us",
         "global"
       ],
-      "topic": "g5-algebra"
+      "topic": "g5-algebra",
+      "original_id": "USCC-G5-006"
     },
     {
-      "id": "SING-G5-054",
-      "stem": "What is 3 × (2 + 9)?",
+      "id": "A5-ALG-0013",
+      "stem": "What is 3 \u00d7 (2 + 9)?",
       "choices": [
         "35",
         "15",
@@ -1132,8 +1146,8 @@
       "visual_svg": null,
       "visual_alt": null,
       "diagnostics": {
-        "1": "Ignores order of operations",
-        "2": "Computes left to right",
+        "0": "Ignores order of operations",
+        "1": "Computes left to right",
         "3": "Forgets brackets"
       },
       "tags": [
@@ -1144,8 +1158,8 @@
       "chapter": "5A: Order of Operations",
       "hint": {
         "level_0": "BODMAS: Brackets, Orders, Division/Multiplication, Addition/Subtraction.",
-        "level_1": "Do multiplication/division before addition/subtraction.",
-        "level_2": "Work out brackets first, then × and ÷, then + and -."
+        "level_1": "Do multiplication/division before addition/subtraction. Work out brackets first, then \u00d7 and \u00f7, then + and -. Try working out the calculation step-by-step. Compare your result to the choices: 35, 15, 33, 30",
+        "level_2": "Use the relationship given in the problem to set up your steps."
       },
       "curriculum_tags": [
         "SING_5A_1"
@@ -1195,23 +1209,24 @@
       "schema_version": "3.0",
       "adaptive_topic_id": "g5-algebra",
       "adaptive_topic_name": "Algebra & Equations",
-      "adaptive_topic_emoji": "📝",
+      "adaptive_topic_emoji": "\ud83d\udcdd",
       "adaptive_grade": 5,
       "dual_tagged": true,
       "content_source": "singapore",
       "sequence_id": 13,
-      "difficulty_tier_in_topic": "practice",
+      "difficulty_tier_in_topic": "developing",
       "locale_ids": [
         "india",
         "singapore",
         "us",
         "global"
       ],
-      "topic": "g5-algebra"
+      "topic": "g5-algebra",
+      "original_id": "SING-G5-054"
     },
     {
-      "id": "USCC-G5-008",
-      "stem": "What is 2 × 5 + 1?",
+      "id": "A5-ALG-0014",
+      "stem": "What is 2 \u00d7 5 + 1?",
       "choices": [
         "11",
         "12",
@@ -1229,11 +1244,13 @@
       "chapter": "Operations & Algebraic Thinking",
       "hint": {
         "level_0": "Do multiplication before addition/subtraction.",
-        "level_1": "First: 2 × 5 = 10. Then + 1.",
-        "level_2": "10 + 1 = ___"
+        "level_1": "First: 2 \u00d7 5 = 10. Then + 1. 10 + 1 = ___ Try working out the calculation step-by-step. Compare your result to the choices: 11, 12, 10, 15",
+        "level_2": "Use the relationship given in the problem to set up your steps."
       },
       "diagnostics": {
-        "common_errors": "Did addition/subtraction before multiplication; Arithmetic error; Off by one"
+        "1": "Did addition/subtraction before multiplication",
+        "2": "Arithmetic error",
+        "3": "Off by one"
       },
       "curriculum_tags": [
         "5.OA.1"
@@ -1283,23 +1300,24 @@
       "schema_version": "3.0",
       "adaptive_topic_id": "g5-algebra",
       "adaptive_topic_name": "Algebra & Equations",
-      "adaptive_topic_emoji": "📝",
+      "adaptive_topic_emoji": "\ud83d\udcdd",
       "adaptive_grade": 5,
       "dual_tagged": true,
       "content_source": "us-common-core",
       "sequence_id": 14,
-      "difficulty_tier_in_topic": "practice",
+      "difficulty_tier_in_topic": "developing",
       "locale_ids": [
         "india",
         "singapore",
         "us",
         "global"
       ],
-      "topic": "g5-algebra"
+      "topic": "g5-algebra",
+      "original_id": "USCC-G5-008"
     },
     {
-      "id": "USCC-G5-014",
-      "stem": "What is 4 × 4 + 1?",
+      "id": "A5-ALG-0015",
+      "stem": "What is 4 \u00d7 4 + 1?",
       "choices": [
         "16",
         "20",
@@ -1316,11 +1334,13 @@
       "chapter": "Operations & Algebraic Thinking",
       "hint": {
         "level_0": "Use the correct operation.",
-        "level_1": "Apply rules carefully.",
-        "level_2": "Double-check your answer."
+        "level_1": "Apply rules carefully. Double-check your answer. Try working out the calculation step-by-step. Compare your result to the choices: 16, 20, 17, 18",
+        "level_2": "Use the relationship given in the problem to set up your steps."
       },
       "diagnostics": {
-        "common_errors": "Common error; Arithmetic mistake; Wrong approach"
+        "0": "Common error",
+        "1": "Arithmetic mistake",
+        "3": "Wrong approach"
       },
       "curriculum_tags": [
         "5.OA.1"
@@ -1368,23 +1388,24 @@
       "schema_version": "3.0",
       "adaptive_topic_id": "g5-algebra",
       "adaptive_topic_name": "Algebra & Equations",
-      "adaptive_topic_emoji": "📝",
+      "adaptive_topic_emoji": "\ud83d\udcdd",
       "adaptive_grade": 5,
       "dual_tagged": true,
       "content_source": "us-common-core",
       "sequence_id": 15,
-      "difficulty_tier_in_topic": "practice",
+      "difficulty_tier_in_topic": "developing",
       "locale_ids": [
         "india",
         "singapore",
         "us",
         "global"
       ],
-      "topic": "g5-algebra"
+      "topic": "g5-algebra",
+      "original_id": "USCC-G5-014"
     },
     {
-      "id": "SING-G5-066",
-      "stem": "What is 12 - 4 × 2?",
+      "id": "A5-ALG-0016",
+      "stem": "What is 12 - 4 \u00d7 2?",
       "choices": [
         "4",
         "8",
@@ -1409,8 +1430,8 @@
       "chapter": "5A: Order of Operations",
       "hint": {
         "level_0": "BODMAS: Brackets, Orders, Division/Multiplication, Addition/Subtraction.",
-        "level_1": "Do multiplication/division before addition/subtraction.",
-        "level_2": "Work out brackets first, then × and ÷, then + and -."
+        "level_1": "Do multiplication/division before addition/subtraction. Work out brackets first, then \u00d7 and \u00f7, then + and -. Try working out the calculation step-by-step. Compare your result to the choices: 4, 8, -8, 16",
+        "level_2": "Use the relationship given in the problem to set up your steps."
       },
       "curriculum_tags": [
         "SING_5A_1"
@@ -1460,23 +1481,24 @@
       "schema_version": "3.0",
       "adaptive_topic_id": "g5-algebra",
       "adaptive_topic_name": "Algebra & Equations",
-      "adaptive_topic_emoji": "📝",
+      "adaptive_topic_emoji": "\ud83d\udcdd",
       "adaptive_grade": 5,
       "dual_tagged": true,
       "content_source": "singapore",
       "sequence_id": 16,
-      "difficulty_tier_in_topic": "practice",
+      "difficulty_tier_in_topic": "developing",
       "locale_ids": [
         "india",
         "singapore",
         "us",
         "global"
       ],
-      "topic": "g5-algebra"
+      "topic": "g5-algebra",
+      "original_id": "SING-G5-066"
     },
     {
-      "id": "SING-G5-071",
-      "stem": "What is 26 - 5 × 5?",
+      "id": "A5-ALG-0017",
+      "stem": "What is 26 - 5 \u00d7 5?",
       "choices": [
         "6",
         "1",
@@ -1489,7 +1511,7 @@
       "visual_svg": null,
       "visual_alt": null,
       "diagnostics": {
-        "1": "Ignores order of operations",
+        "0": "Ignores order of operations",
         "2": "Computes left to right",
         "3": "Remember BODMAS: multiply or divide before you add or subtract. Work left to right within the same priority."
       },
@@ -1501,8 +1523,8 @@
       "chapter": "5A: Order of Operations",
       "hint": {
         "level_0": "BODMAS: Brackets, Orders, Division/Multiplication, Addition/Subtraction.",
-        "level_1": "Do multiplication/division before addition/subtraction.",
-        "level_2": "Work out brackets first, then × and ÷, then + and -."
+        "level_1": "Do multiplication/division before addition/subtraction. Work out brackets first, then \u00d7 and \u00f7, then + and -. Try working out the calculation step-by-step. Compare your result to the choices: 6, 1, 105, -25",
+        "level_2": "Use the relationship given in the problem to set up your steps."
       },
       "curriculum_tags": [
         "SING_5A_1"
@@ -1552,23 +1574,24 @@
       "schema_version": "3.0",
       "adaptive_topic_id": "g5-algebra",
       "adaptive_topic_name": "Algebra & Equations",
-      "adaptive_topic_emoji": "📝",
+      "adaptive_topic_emoji": "\ud83d\udcdd",
       "adaptive_grade": 5,
       "dual_tagged": true,
       "content_source": "singapore",
       "sequence_id": 17,
-      "difficulty_tier_in_topic": "practice",
+      "difficulty_tier_in_topic": "developing",
       "locale_ids": [
         "india",
         "singapore",
         "us",
         "global"
       ],
-      "topic": "g5-algebra"
+      "topic": "g5-algebra",
+      "original_id": "SING-G5-071"
     },
     {
-      "id": "USCC-G5-018",
-      "stem": "What is 8 × 4 + 1?",
+      "id": "A5-ALG-0018",
+      "stem": "What is 8 \u00d7 4 + 1?",
       "choices": [
         "40",
         "33",
@@ -1586,11 +1609,13 @@
       "chapter": "Operations & Algebraic Thinking",
       "hint": {
         "level_0": "Do multiplication before addition/subtraction.",
-        "level_1": "First: 8 × 4 = 32. Then + 1.",
-        "level_2": "32 + 1 = ___"
+        "level_1": "First: 8 \u00d7 4 = 32. Then + 1. 32 + 1 = ___ Try working out the calculation step-by-step. Compare your result to the choices: 40, 33, 32, 34",
+        "level_2": "Use the relationship given in the problem to set up your steps."
       },
       "diagnostics": {
-        "common_errors": "Did addition/subtraction before multiplication; Arithmetic error; Off by one"
+        "0": "Did addition/subtraction before multiplication",
+        "2": "Arithmetic error",
+        "3": "Off by one"
       },
       "curriculum_tags": [
         "5.OA.1"
@@ -1640,23 +1665,24 @@
       "schema_version": "3.0",
       "adaptive_topic_id": "g5-algebra",
       "adaptive_topic_name": "Algebra & Equations",
-      "adaptive_topic_emoji": "📝",
+      "adaptive_topic_emoji": "\ud83d\udcdd",
       "adaptive_grade": 5,
       "dual_tagged": true,
       "content_source": "us-common-core",
       "sequence_id": 18,
-      "difficulty_tier_in_topic": "practice",
+      "difficulty_tier_in_topic": "developing",
       "locale_ids": [
         "india",
         "singapore",
         "us",
         "global"
       ],
-      "topic": "g5-algebra"
+      "topic": "g5-algebra",
+      "original_id": "USCC-G5-018"
     },
     {
-      "id": "SING-G5-082",
-      "stem": "What is 11 + 7 × 1?",
+      "id": "A5-ALG-0019",
+      "stem": "What is 11 + 7 \u00d7 1?",
       "choices": [
         "24",
         "25",
@@ -1669,9 +1695,9 @@
       "visual_svg": null,
       "visual_alt": null,
       "diagnostics": {
-        "1": "Ignores order of operations",
-        "2": "Computes left to right",
-        "3": "Remember BODMAS: multiply or divide before you add or subtract. Work left to right within the same priority."
+        "0": "Ignores order of operations",
+        "1": "Computes left to right",
+        "2": "Remember BODMAS: multiply or divide before you add or subtract. Work left to right within the same priority."
       },
       "tags": [
         "order_of_operations",
@@ -1681,8 +1707,8 @@
       "chapter": "5A: Order of Operations",
       "hint": {
         "level_0": "BODMAS: Brackets, Orders, Division/Multiplication, Addition/Subtraction.",
-        "level_1": "Do multiplication/division before addition/subtraction.",
-        "level_2": "Work out brackets first, then × and ÷, then + and -."
+        "level_1": "Do multiplication/division before addition/subtraction. Work out brackets first, then \u00d7 and \u00f7, then + and -. Try working out the calculation step-by-step. Compare your result to the choices: 24, 25, 7, 18",
+        "level_2": "Use the relationship given in the problem to set up your steps."
       },
       "curriculum_tags": [
         "SING_5A_1"
@@ -1732,23 +1758,24 @@
       "schema_version": "3.0",
       "adaptive_topic_id": "g5-algebra",
       "adaptive_topic_name": "Algebra & Equations",
-      "adaptive_topic_emoji": "📝",
+      "adaptive_topic_emoji": "\ud83d\udcdd",
       "adaptive_grade": 5,
       "dual_tagged": true,
       "content_source": "singapore",
       "sequence_id": 19,
-      "difficulty_tier_in_topic": "practice",
+      "difficulty_tier_in_topic": "developing",
       "locale_ids": [
         "india",
         "singapore",
         "us",
         "global"
       ],
-      "topic": "g5-algebra"
+      "topic": "g5-algebra",
+      "original_id": "SING-G5-082"
     },
     {
-      "id": "USCC-G5-026",
-      "stem": "What is 7 × 2 - 4?",
+      "id": "A5-ALG-0020",
+      "stem": "What is 7 \u00d7 2 - 4?",
       "choices": [
         "10",
         "11",
@@ -1766,11 +1793,13 @@
       "chapter": "Operations & Algebraic Thinking",
       "hint": {
         "level_0": "Do multiplication before addition/subtraction.",
-        "level_1": "First: 7 × 2 = 14. Then - 4.",
-        "level_2": "14 - 4 = ___"
+        "level_1": "First: 7 \u00d7 2 = 14. Then - 4. 14 - 4 = ___ Try working out the calculation step-by-step. Compare your result to the choices: 10, 11, -14, 9",
+        "level_2": "Use the relationship given in the problem to set up your steps."
       },
       "diagnostics": {
-        "common_errors": "Did addition/subtraction before multiplication; Arithmetic error; Off by one"
+        "1": "Did addition/subtraction before multiplication",
+        "2": "Arithmetic error",
+        "3": "Off by one"
       },
       "curriculum_tags": [
         "5.OA.1"
@@ -1820,23 +1849,24 @@
       "schema_version": "3.0",
       "adaptive_topic_id": "g5-algebra",
       "adaptive_topic_name": "Algebra & Equations",
-      "adaptive_topic_emoji": "📝",
+      "adaptive_topic_emoji": "\ud83d\udcdd",
       "adaptive_grade": 5,
       "dual_tagged": true,
       "content_source": "us-common-core",
       "sequence_id": 20,
-      "difficulty_tier_in_topic": "practice",
+      "difficulty_tier_in_topic": "developing",
       "locale_ids": [
         "india",
         "singapore",
         "us",
         "global"
       ],
-      "topic": "g5-algebra"
+      "topic": "g5-algebra",
+      "original_id": "USCC-G5-026"
     },
     {
-      "id": "USCC-G5-030",
-      "stem": "What is 8 × 3 + 4?",
+      "id": "A5-ALG-0021",
+      "stem": "What is 8 \u00d7 3 + 4?",
       "choices": [
         "29",
         "56",
@@ -1853,11 +1883,13 @@
       "chapter": "Operations & Algebraic Thinking",
       "hint": {
         "level_0": "Use the correct operation.",
-        "level_1": "Apply rules carefully.",
-        "level_2": "Double-check your answer."
+        "level_1": "Apply rules carefully. Double-check your answer. Try working out the calculation step-by-step. Compare your result to the choices: 29, 56, 27, 28",
+        "level_2": "Use the relationship given in the problem to set up your steps."
       },
       "diagnostics": {
-        "common_errors": "Common error; Arithmetic mistake; Wrong approach"
+        "0": "Common error",
+        "1": "Arithmetic mistake",
+        "2": "Wrong approach"
       },
       "curriculum_tags": [
         "5.OA.1"
@@ -1905,23 +1937,24 @@
       "schema_version": "3.0",
       "adaptive_topic_id": "g5-algebra",
       "adaptive_topic_name": "Algebra & Equations",
-      "adaptive_topic_emoji": "📝",
+      "adaptive_topic_emoji": "\ud83d\udcdd",
       "adaptive_grade": 5,
       "dual_tagged": true,
       "content_source": "us-common-core",
       "sequence_id": 21,
-      "difficulty_tier_in_topic": "practice",
+      "difficulty_tier_in_topic": "developing",
       "locale_ids": [
         "india",
         "singapore",
         "us",
         "global"
       ],
-      "topic": "g5-algebra"
+      "topic": "g5-algebra",
+      "original_id": "USCC-G5-030"
     },
     {
-      "id": "SING-G5-088",
-      "stem": "What is 2 + 5 × 3?",
+      "id": "A5-ALG-0022",
+      "stem": "What is 2 + 5 \u00d7 3?",
       "choices": [
         "22",
         "17",
@@ -1929,12 +1962,12 @@
         "21"
       ],
       "correct_answer": 1,
-      "difficulty_tier": "medium",
+      "difficulty_tier": "medium-hard",
       "difficulty_score": 48,
       "visual_svg": null,
       "visual_alt": null,
       "diagnostics": {
-        "1": "Ignores order of operations",
+        "0": "Ignores order of operations",
         "2": "Computes left to right",
         "3": "Remember BODMAS: multiply or divide before you add or subtract. Work left to right within the same priority."
       },
@@ -1946,8 +1979,8 @@
       "chapter": "5A: Order of Operations",
       "hint": {
         "level_0": "BODMAS: Brackets, Orders, Division/Multiplication, Addition/Subtraction.",
-        "level_1": "Do multiplication/division before addition/subtraction.",
-        "level_2": "Work out brackets first, then × and ÷, then + and -."
+        "level_1": "Do multiplication/division before addition/subtraction. Work out brackets first, then \u00d7 and \u00f7, then + and -. Try working out the calculation step-by-step. Compare your result to the choices: 22, 17, 15, 21",
+        "level_2": "Use the relationship given in the problem to set up your steps."
       },
       "curriculum_tags": [
         "SING_5A_1"
@@ -1997,23 +2030,24 @@
       "schema_version": "3.0",
       "adaptive_topic_id": "g5-algebra",
       "adaptive_topic_name": "Algebra & Equations",
-      "adaptive_topic_emoji": "📝",
+      "adaptive_topic_emoji": "\ud83d\udcdd",
       "adaptive_grade": 5,
       "dual_tagged": true,
       "content_source": "singapore",
       "sequence_id": 22,
-      "difficulty_tier_in_topic": "practice",
+      "difficulty_tier_in_topic": "developing",
       "locale_ids": [
         "india",
         "singapore",
         "us",
         "global"
       ],
-      "topic": "g5-algebra"
+      "topic": "g5-algebra",
+      "original_id": "SING-G5-088"
     },
     {
-      "id": "USCC-G5-031",
-      "stem": "What is 5 × (4 + 3)?",
+      "id": "A5-ALG-0023",
+      "stem": "What is 5 \u00d7 (4 + 3)?",
       "choices": [
         "40",
         "12",
@@ -2021,7 +2055,7 @@
         "23"
       ],
       "correct_answer": 2,
-      "difficulty_tier": "medium",
+      "difficulty_tier": "medium-hard",
       "difficulty_score": 40,
       "tags": [
         "order_of_operations",
@@ -2031,11 +2065,13 @@
       "chapter": "Operations & Algebraic Thinking",
       "hint": {
         "level_0": "Do what's inside parentheses first.",
-        "level_1": "First: 4 + 3 = 7. Then × 5.",
-        "level_2": "5 × 7 = ___"
+        "level_1": "First: 4 + 3 = 7. Then \u00d7 5. 5 \u00d7 7 = ___ Try working out the calculation step-by-step. Compare your result to the choices: 40, 12, 35, 23",
+        "level_2": "Use the relationship given in the problem to set up your steps."
       },
       "diagnostics": {
-        "common_errors": "Ignored parentheses; Added instead of multiplied at end; Added all numbers"
+        "0": "Ignored parentheses",
+        "1": "Added instead of multiplied at end",
+        "3": "Added all numbers"
       },
       "curriculum_tags": [
         "5.OA.1"
@@ -2085,23 +2121,24 @@
       "schema_version": "3.0",
       "adaptive_topic_id": "g5-algebra",
       "adaptive_topic_name": "Algebra & Equations",
-      "adaptive_topic_emoji": "📝",
+      "adaptive_topic_emoji": "\ud83d\udcdd",
       "adaptive_grade": 5,
       "dual_tagged": true,
       "content_source": "us-common-core",
       "sequence_id": 23,
-      "difficulty_tier_in_topic": "practice",
+      "difficulty_tier_in_topic": "developing",
       "locale_ids": [
         "india",
         "singapore",
         "us",
         "global"
       ],
-      "topic": "g5-algebra"
+      "topic": "g5-algebra",
+      "original_id": "USCC-G5-031"
     },
     {
-      "id": "SING-G5-095",
-      "stem": "What is 2 × (4 + 7)?",
+      "id": "A5-ALG-0024",
+      "stem": "What is 2 \u00d7 (4 + 7)?",
       "choices": [
         "22",
         "20",
@@ -2109,7 +2146,7 @@
         "15"
       ],
       "correct_answer": 0,
-      "difficulty_tier": "medium",
+      "difficulty_tier": "medium-hard",
       "difficulty_score": 49,
       "visual_svg": null,
       "visual_alt": null,
@@ -2126,8 +2163,8 @@
       "chapter": "5A: Order of Operations",
       "hint": {
         "level_0": "BODMAS: Brackets, Orders, Division/Multiplication, Addition/Subtraction.",
-        "level_1": "Do multiplication/division before addition/subtraction.",
-        "level_2": "Work out brackets first, then × and ÷, then + and -."
+        "level_1": "Do multiplication/division before addition/subtraction. Work out brackets first, then \u00d7 and \u00f7, then + and -. Try working out the calculation step-by-step. Compare your result to the choices: 22, 20, 26, 15",
+        "level_2": "Use the relationship given in the problem to set up your steps."
       },
       "curriculum_tags": [
         "SING_5A_1"
@@ -2177,23 +2214,24 @@
       "schema_version": "3.0",
       "adaptive_topic_id": "g5-algebra",
       "adaptive_topic_name": "Algebra & Equations",
-      "adaptive_topic_emoji": "📝",
+      "adaptive_topic_emoji": "\ud83d\udcdd",
       "adaptive_grade": 5,
       "dual_tagged": true,
       "content_source": "singapore",
       "sequence_id": 24,
-      "difficulty_tier_in_topic": "practice",
+      "difficulty_tier_in_topic": "developing",
       "locale_ids": [
         "india",
         "singapore",
         "us",
         "global"
       ],
-      "topic": "g5-algebra"
+      "topic": "g5-algebra",
+      "original_id": "SING-G5-095"
     },
     {
-      "id": "USCC-G5-036",
-      "stem": "What is 2 × 5 + 5?",
+      "id": "A5-ALG-0025",
+      "stem": "What is 2 \u00d7 5 + 5?",
       "choices": [
         "14",
         "16",
@@ -2201,7 +2239,7 @@
         "15"
       ],
       "correct_answer": 3,
-      "difficulty_tier": "medium",
+      "difficulty_tier": "medium-hard",
       "difficulty_score": 41,
       "tags": [
         "order_of_operations",
@@ -2211,11 +2249,13 @@
       "chapter": "Operations & Algebraic Thinking",
       "hint": {
         "level_0": "Do multiplication before addition/subtraction.",
-        "level_1": "First: 2 × 5 = 10. Then + 5.",
-        "level_2": "10 + 5 = ___"
+        "level_1": "First: 2 \u00d7 5 = 10. Then + 5. 10 + 5 = ___ Try working out the calculation step-by-step. Compare your result to the choices: 14, 16, 20, 15",
+        "level_2": "Use the relationship given in the problem to set up your steps."
       },
       "diagnostics": {
-        "common_errors": "Did addition/subtraction before multiplication; Arithmetic error; Off by one"
+        "0": "Did addition/subtraction before multiplication",
+        "1": "Arithmetic error",
+        "2": "Off by one"
       },
       "curriculum_tags": [
         "5.OA.1"
@@ -2265,23 +2305,24 @@
       "schema_version": "3.0",
       "adaptive_topic_id": "g5-algebra",
       "adaptive_topic_name": "Algebra & Equations",
-      "adaptive_topic_emoji": "📝",
+      "adaptive_topic_emoji": "\ud83d\udcdd",
       "adaptive_grade": 5,
       "dual_tagged": true,
       "content_source": "us-common-core",
       "sequence_id": 25,
-      "difficulty_tier_in_topic": "practice",
+      "difficulty_tier_in_topic": "proficient",
       "locale_ids": [
         "india",
         "singapore",
         "us",
         "global"
       ],
-      "topic": "g5-algebra"
+      "topic": "g5-algebra",
+      "original_id": "USCC-G5-036"
     },
     {
-      "id": "USCC-G5-041",
-      "stem": "What is 6 × 2 + 1?",
+      "id": "A5-ALG-0026",
+      "stem": "What is 6 \u00d7 2 + 1?",
       "choices": [
         "18",
         "14",
@@ -2289,7 +2330,7 @@
         "12"
       ],
       "correct_answer": 2,
-      "difficulty_tier": "medium",
+      "difficulty_tier": "medium-hard",
       "difficulty_score": 41,
       "tags": [
         "order_of_operations",
@@ -2298,11 +2339,13 @@
       "chapter": "Operations & Algebraic Thinking",
       "hint": {
         "level_0": "Use the correct operation.",
-        "level_1": "Apply rules carefully.",
-        "level_2": "Double-check your answer."
+        "level_1": "Apply rules carefully. Double-check your answer. Try working out the calculation step-by-step. Compare your result to the choices: 18, 14, 13, 12",
+        "level_2": "Use the relationship given in the problem to set up your steps."
       },
       "diagnostics": {
-        "common_errors": "Common error; Arithmetic mistake; Wrong approach"
+        "0": "Common error",
+        "1": "Arithmetic mistake",
+        "3": "Wrong approach"
       },
       "curriculum_tags": [
         "5.OA.1"
@@ -2350,23 +2393,24 @@
       "schema_version": "3.0",
       "adaptive_topic_id": "g5-algebra",
       "adaptive_topic_name": "Algebra & Equations",
-      "adaptive_topic_emoji": "📝",
+      "adaptive_topic_emoji": "\ud83d\udcdd",
       "adaptive_grade": 5,
       "dual_tagged": true,
       "content_source": "us-common-core",
       "sequence_id": 26,
-      "difficulty_tier_in_topic": "practice",
+      "difficulty_tier_in_topic": "proficient",
       "locale_ids": [
         "india",
         "singapore",
         "us",
         "global"
       ],
-      "topic": "g5-algebra"
+      "topic": "g5-algebra",
+      "original_id": "USCC-G5-041"
     },
     {
-      "id": "SING-G5-102",
-      "stem": "What is 11 + 3 × 6?",
+      "id": "A5-ALG-0027",
+      "stem": "What is 11 + 3 \u00d7 6?",
       "choices": [
         "84",
         "18",
@@ -2374,13 +2418,13 @@
         "32"
       ],
       "correct_answer": 2,
-      "difficulty_tier": "hard",
+      "difficulty_tier": "medium-hard",
       "difficulty_score": 51,
       "visual_svg": null,
       "visual_alt": null,
       "diagnostics": {
-        "1": "Ignores order of operations",
-        "2": "Computes left to right",
+        "0": "Ignores order of operations",
+        "1": "Computes left to right",
         "3": "Remember BODMAS: multiply or divide before you add or subtract. Work left to right within the same priority."
       },
       "tags": [
@@ -2391,8 +2435,8 @@
       "chapter": "5A: Order of Operations",
       "hint": {
         "level_0": "BODMAS: Brackets, Orders, Division/Multiplication, Addition/Subtraction.",
-        "level_1": "Do multiplication/division before addition/subtraction.",
-        "level_2": "Work out brackets first, then × and ÷, then + and -."
+        "level_1": "Do multiplication/division before addition/subtraction. Work out brackets first, then \u00d7 and \u00f7, then + and -. Try working out the calculation step-by-step. Compare your result to the choices: 84, 18, 29, 32",
+        "level_2": "Use the relationship given in the problem to set up your steps."
       },
       "curriculum_tags": [
         "SING_5A_1"
@@ -2442,23 +2486,24 @@
       "schema_version": "3.0",
       "adaptive_topic_id": "g5-algebra",
       "adaptive_topic_name": "Algebra & Equations",
-      "adaptive_topic_emoji": "📝",
+      "adaptive_topic_emoji": "\ud83d\udcdd",
       "adaptive_grade": 5,
       "dual_tagged": true,
       "content_source": "singapore",
       "sequence_id": 27,
-      "difficulty_tier_in_topic": "practice",
+      "difficulty_tier_in_topic": "proficient",
       "locale_ids": [
         "india",
         "singapore",
         "us",
         "global"
       ],
-      "topic": "g5-algebra"
+      "topic": "g5-algebra",
+      "original_id": "SING-G5-102"
     },
     {
-      "id": "USCC-G5-042",
-      "stem": "What is 3 × (6 + 5)?",
+      "id": "A5-ALG-0028",
+      "stem": "What is 3 \u00d7 (6 + 5)?",
       "choices": [
         "33",
         "14",
@@ -2466,7 +2511,7 @@
         "23"
       ],
       "correct_answer": 0,
-      "difficulty_tier": "medium",
+      "difficulty_tier": "medium-hard",
       "difficulty_score": 42,
       "tags": [
         "order_of_operations",
@@ -2476,11 +2521,13 @@
       "chapter": "Operations & Algebraic Thinking",
       "hint": {
         "level_0": "Do what's inside parentheses first.",
-        "level_1": "First: 6 + 5 = 11. Then × 3.",
-        "level_2": "3 × 11 = ___"
+        "level_1": "First: 6 + 5 = 11. Then \u00d7 3. 3 \u00d7 11 = ___ Try working out the calculation step-by-step. Compare your result to the choices: 33, 14, 36, 23",
+        "level_2": "Use the relationship given in the problem to set up your steps."
       },
       "diagnostics": {
-        "common_errors": "Ignored parentheses; Added instead of multiplied at end; Added all numbers"
+        "1": "Ignored parentheses",
+        "2": "Added instead of multiplied at end",
+        "3": "Added all numbers"
       },
       "curriculum_tags": [
         "5.OA.1"
@@ -2530,23 +2577,24 @@
       "schema_version": "3.0",
       "adaptive_topic_id": "g5-algebra",
       "adaptive_topic_name": "Algebra & Equations",
-      "adaptive_topic_emoji": "📝",
+      "adaptive_topic_emoji": "\ud83d\udcdd",
       "adaptive_grade": 5,
       "dual_tagged": true,
       "content_source": "us-common-core",
       "sequence_id": 28,
-      "difficulty_tier_in_topic": "practice",
+      "difficulty_tier_in_topic": "proficient",
       "locale_ids": [
         "india",
         "singapore",
         "us",
         "global"
       ],
-      "topic": "g5-algebra"
+      "topic": "g5-algebra",
+      "original_id": "USCC-G5-042"
     },
     {
-      "id": "SING-G5-112",
-      "stem": "What is 10 + 2 × 2?",
+      "id": "A5-ALG-0029",
+      "stem": "What is 10 + 2 \u00d7 2?",
       "choices": [
         "14",
         "24",
@@ -2554,7 +2602,7 @@
         "4"
       ],
       "correct_answer": 0,
-      "difficulty_tier": "hard",
+      "difficulty_tier": "medium-hard",
       "difficulty_score": 52,
       "visual_svg": null,
       "visual_alt": null,
@@ -2571,8 +2619,8 @@
       "chapter": "5A: Order of Operations",
       "hint": {
         "level_0": "BODMAS: Brackets, Orders, Division/Multiplication, Addition/Subtraction.",
-        "level_1": "Do multiplication/division before addition/subtraction.",
-        "level_2": "Work out brackets first, then × and ÷, then + and -."
+        "level_1": "Do multiplication/division before addition/subtraction. Work out brackets first, then \u00d7 and \u00f7, then + and -. Try working out the calculation step-by-step. Compare your result to the choices: 14, 24, 16, 4",
+        "level_2": "Use the relationship given in the problem to set up your steps."
       },
       "curriculum_tags": [
         "SING_5A_1"
@@ -2622,23 +2670,24 @@
       "schema_version": "3.0",
       "adaptive_topic_id": "g5-algebra",
       "adaptive_topic_name": "Algebra & Equations",
-      "adaptive_topic_emoji": "📝",
+      "adaptive_topic_emoji": "\ud83d\udcdd",
       "adaptive_grade": 5,
       "dual_tagged": true,
       "content_source": "singapore",
       "sequence_id": 29,
-      "difficulty_tier_in_topic": "practice",
+      "difficulty_tier_in_topic": "proficient",
       "locale_ids": [
         "india",
         "singapore",
         "us",
         "global"
       ],
-      "topic": "g5-algebra"
+      "topic": "g5-algebra",
+      "original_id": "SING-G5-112"
     },
     {
-      "id": "SING-G5-113",
-      "stem": "What is 58 - 6 × 9?",
+      "id": "A5-ALG-0030",
+      "stem": "What is 58 - 6 \u00d7 9?",
       "choices": [
         "-54",
         "10",
@@ -2646,13 +2695,13 @@
         "468"
       ],
       "correct_answer": 2,
-      "difficulty_tier": "hard",
+      "difficulty_tier": "medium-hard",
       "difficulty_score": 52,
       "visual_svg": null,
       "visual_alt": null,
       "diagnostics": {
-        "1": "Ignores order of operations",
-        "2": "Computes left to right",
+        "0": "Ignores order of operations",
+        "1": "Computes left to right",
         "3": "Remember BODMAS: multiply or divide before you add or subtract. Work left to right within the same priority."
       },
       "tags": [
@@ -2663,8 +2712,8 @@
       "chapter": "5A: Order of Operations",
       "hint": {
         "level_0": "BODMAS: Brackets, Orders, Division/Multiplication, Addition/Subtraction.",
-        "level_1": "Do multiplication/division before addition/subtraction.",
-        "level_2": "Work out brackets first, then × and ÷, then + and -."
+        "level_1": "Do multiplication/division before addition/subtraction. Work out brackets first, then \u00d7 and \u00f7, then + and -. Try working out the calculation step-by-step. Compare your result to the choices: -54, 10, 4, 468",
+        "level_2": "Use the relationship given in the problem to set up your steps."
       },
       "curriculum_tags": [
         "SING_5A_1"
@@ -2714,23 +2763,24 @@
       "schema_version": "3.0",
       "adaptive_topic_id": "g5-algebra",
       "adaptive_topic_name": "Algebra & Equations",
-      "adaptive_topic_emoji": "📝",
+      "adaptive_topic_emoji": "\ud83d\udcdd",
       "adaptive_grade": 5,
       "dual_tagged": true,
       "content_source": "singapore",
       "sequence_id": 30,
-      "difficulty_tier_in_topic": "practice",
+      "difficulty_tier_in_topic": "proficient",
       "locale_ids": [
         "india",
         "singapore",
         "us",
         "global"
       ],
-      "topic": "g5-algebra"
+      "topic": "g5-algebra",
+      "original_id": "SING-G5-113"
     },
     {
-      "id": "USCC-G5-045",
-      "stem": "What is 8 × 4 + 2?",
+      "id": "A5-ALG-0031",
+      "stem": "What is 8 \u00d7 4 + 2?",
       "choices": [
         "34",
         "35",
@@ -2738,7 +2788,7 @@
         "33"
       ],
       "correct_answer": 0,
-      "difficulty_tier": "medium",
+      "difficulty_tier": "medium-hard",
       "difficulty_score": 43,
       "tags": [
         "order_of_operations",
@@ -2748,11 +2798,13 @@
       "chapter": "Operations & Algebraic Thinking",
       "hint": {
         "level_0": "Do multiplication before addition/subtraction.",
-        "level_1": "First: 8 × 4 = 32. Then + 2.",
-        "level_2": "32 + 2 = ___"
+        "level_1": "First: 8 \u00d7 4 = 32. Then + 2. 32 + 2 = ___ Try working out the calculation step-by-step. Compare your result to the choices: 34, 35, 48, 33",
+        "level_2": "Use the relationship given in the problem to set up your steps."
       },
       "diagnostics": {
-        "common_errors": "Did addition/subtraction before multiplication; Arithmetic error; Off by one"
+        "1": "Did addition/subtraction before multiplication",
+        "2": "Arithmetic error",
+        "3": "Off by one"
       },
       "curriculum_tags": [
         "5.OA.1"
@@ -2802,23 +2854,24 @@
       "schema_version": "3.0",
       "adaptive_topic_id": "g5-algebra",
       "adaptive_topic_name": "Algebra & Equations",
-      "adaptive_topic_emoji": "📝",
+      "adaptive_topic_emoji": "\ud83d\udcdd",
       "adaptive_grade": 5,
       "dual_tagged": true,
       "content_source": "us-common-core",
       "sequence_id": 31,
-      "difficulty_tier_in_topic": "challenge",
+      "difficulty_tier_in_topic": "proficient",
       "locale_ids": [
         "india",
         "singapore",
         "us",
         "global"
       ],
-      "topic": "g5-algebra"
+      "topic": "g5-algebra",
+      "original_id": "USCC-G5-045"
     },
     {
-      "id": "SING-G5-119",
-      "stem": "What is 7 + 4 × 1?",
+      "id": "A5-ALG-0032",
+      "stem": "What is 7 + 4 \u00d7 1?",
       "choices": [
         "11",
         "20",
@@ -2826,7 +2879,7 @@
         "4"
       ],
       "correct_answer": 0,
-      "difficulty_tier": "hard",
+      "difficulty_tier": "medium-hard",
       "difficulty_score": 53,
       "visual_svg": null,
       "visual_alt": null,
@@ -2843,8 +2896,8 @@
       "chapter": "5A: Order of Operations",
       "hint": {
         "level_0": "BODMAS: Brackets, Orders, Division/Multiplication, Addition/Subtraction.",
-        "level_1": "Do multiplication/division before addition/subtraction.",
-        "level_2": "Work out brackets first, then × and ÷, then + and -."
+        "level_1": "Do multiplication/division before addition/subtraction. Work out brackets first, then \u00d7 and \u00f7, then + and -. Try working out the calculation step-by-step. Compare your result to the choices: 11, 20, 15, 4",
+        "level_2": "Use the relationship given in the problem to set up your steps."
       },
       "curriculum_tags": [
         "SING_5A_1"
@@ -2894,23 +2947,24 @@
       "schema_version": "3.0",
       "adaptive_topic_id": "g5-algebra",
       "adaptive_topic_name": "Algebra & Equations",
-      "adaptive_topic_emoji": "📝",
+      "adaptive_topic_emoji": "\ud83d\udcdd",
       "adaptive_grade": 5,
       "dual_tagged": true,
       "content_source": "singapore",
       "sequence_id": 32,
-      "difficulty_tier_in_topic": "challenge",
+      "difficulty_tier_in_topic": "proficient",
       "locale_ids": [
         "india",
         "singapore",
         "us",
         "global"
       ],
-      "topic": "g5-algebra"
+      "topic": "g5-algebra",
+      "original_id": "SING-G5-119"
     },
     {
-      "id": "USCC-G5-050",
-      "stem": "What is 5 × (2 + 1)?",
+      "id": "A5-ALG-0033",
+      "stem": "What is 5 \u00d7 (2 + 1)?",
       "choices": [
         "20",
         "15",
@@ -2918,7 +2972,7 @@
         "11"
       ],
       "correct_answer": 1,
-      "difficulty_tier": "medium",
+      "difficulty_tier": "medium-hard",
       "difficulty_score": 44,
       "tags": [
         "order_of_operations",
@@ -2928,11 +2982,13 @@
       "chapter": "Operations & Algebraic Thinking",
       "hint": {
         "level_0": "Do what's inside parentheses first.",
-        "level_1": "First: 2 + 1 = 3. Then × 5.",
-        "level_2": "5 × 3 = ___"
+        "level_1": "First: 2 + 1 = 3. Then \u00d7 5. 5 \u00d7 3 = ___ Try working out the calculation step-by-step. Compare your result to the choices: 20, 15, 8, 11",
+        "level_2": "Use the relationship given in the problem to set up your steps."
       },
       "diagnostics": {
-        "common_errors": "Ignored parentheses; Added instead of multiplied at end; Added all numbers"
+        "0": "Ignored parentheses",
+        "2": "Added instead of multiplied at end",
+        "3": "Added all numbers"
       },
       "curriculum_tags": [
         "5.OA.1"
@@ -2982,108 +3038,24 @@
       "schema_version": "3.0",
       "adaptive_topic_id": "g5-algebra",
       "adaptive_topic_name": "Algebra & Equations",
-      "adaptive_topic_emoji": "📝",
+      "adaptive_topic_emoji": "\ud83d\udcdd",
       "adaptive_grade": 5,
       "dual_tagged": true,
       "content_source": "us-common-core",
       "sequence_id": 33,
-      "difficulty_tier_in_topic": "challenge",
+      "difficulty_tier_in_topic": "proficient",
       "locale_ids": [
         "india",
         "singapore",
         "us",
         "global"
       ],
-      "topic": "g5-algebra"
+      "topic": "g5-algebra",
+      "original_id": "USCC-G5-050"
     },
     {
-      "id": "USCC-G5-054",
-      "stem": "What is 8 × 4 + 1?",
-      "choices": [
-        "34",
-        "32",
-        "40",
-        "33"
-      ],
-      "correct_answer": 3,
-      "difficulty_tier": "medium",
-      "difficulty_score": 44,
-      "tags": [
-        "order_of_operations",
-        "5.OA.1"
-      ],
-      "chapter": "Operations & Algebraic Thinking",
-      "hint": {
-        "level_0": "Use the correct operation.",
-        "level_1": "Apply rules carefully.",
-        "level_2": "Double-check your answer."
-      },
-      "diagnostics": {
-        "common_errors": "Common error; Arithmetic mistake; Wrong approach"
-      },
-      "curriculum_tags": [
-        "5.OA.1"
-      ],
-      "irt_params": {
-        "a": 1.15,
-        "b": 0.81,
-        "c": 0.25
-      },
-      "irt_a": 1.15,
-      "irt_b": 0.81,
-      "irt_c": 0.25,
-      "solution_steps": [
-        "Think of 8 groups of 4",
-        "Add 4 to itself 8 times",
-        "The total is your answer"
-      ],
-      "level": 5,
-      "level_name": "Strategist",
-      "universal_skill_id": "ORDER_OPS_5",
-      "skill_id": "order_of_ops",
-      "skill_domain": "arithmetic",
-      "maturity_bucket": "calibrating",
-      "visual_requirement": "none",
-      "visual_type": "none",
-      "visual_ai_verified": false,
-      "media_id": null,
-      "media_hash": null,
-      "misconception_ids": [
-        "UNCLASSIFIED"
-      ],
-      "why_quality": "structured",
-      "why_framework": "3R",
-      "hint_quality": {
-        "layers": 3,
-        "quality": "good",
-        "has_3_layers": true
-      },
-      "curriculum_source": "uscc",
-      "curriculum_map": {},
-      "school_grade": 5,
-      "avg_time_to_solve_ms": null,
-      "times_served": 0,
-      "flag_count": 0,
-      "schema_version": "3.0",
-      "adaptive_topic_id": "g5-algebra",
-      "adaptive_topic_name": "Algebra & Equations",
-      "adaptive_topic_emoji": "📝",
-      "adaptive_grade": 5,
-      "dual_tagged": true,
-      "content_source": "us-common-core",
-      "sequence_id": 34,
-      "difficulty_tier_in_topic": "challenge",
-      "locale_ids": [
-        "india",
-        "singapore",
-        "us",
-        "global"
-      ],
-      "topic": "g5-algebra"
-    },
-    {
-      "id": "USCC-G5-055",
-      "stem": "What is 5 × 3 - 4?",
+      "id": "A5-ALG-0034",
+      "stem": "What is 5 \u00d7 3 - 4?",
       "choices": [
         "12",
         "11",
@@ -3091,7 +3063,7 @@
         "10"
       ],
       "correct_answer": 1,
-      "difficulty_tier": "medium",
+      "difficulty_tier": "medium-hard",
       "difficulty_score": 45,
       "tags": [
         "order_of_operations",
@@ -3101,11 +3073,13 @@
       "chapter": "Operations & Algebraic Thinking",
       "hint": {
         "level_0": "Do multiplication before addition/subtraction.",
-        "level_1": "First: 5 × 3 = 15. Then - 4.",
-        "level_2": "15 - 4 = ___"
+        "level_1": "First: 5 \u00d7 3 = 15. Then - 4. 15 - 4 = ___ Try working out the calculation step-by-step. Compare your result to the choices: 12, 11, -5, 10",
+        "level_2": "Use the relationship given in the problem to set up your steps."
       },
       "diagnostics": {
-        "common_errors": "Did addition/subtraction before multiplication; Arithmetic error; Off by one"
+        "0": "Did addition/subtraction before multiplication",
+        "2": "Arithmetic error",
+        "3": "Off by one"
       },
       "curriculum_tags": [
         "5.OA.1"
@@ -3155,23 +3129,24 @@
       "schema_version": "3.0",
       "adaptive_topic_id": "g5-algebra",
       "adaptive_topic_name": "Algebra & Equations",
-      "adaptive_topic_emoji": "📝",
+      "adaptive_topic_emoji": "\ud83d\udcdd",
       "adaptive_grade": 5,
       "dual_tagged": true,
       "content_source": "us-common-core",
       "sequence_id": 35,
-      "difficulty_tier_in_topic": "challenge",
+      "difficulty_tier_in_topic": "proficient",
       "locale_ids": [
         "india",
         "singapore",
         "us",
         "global"
       ],
-      "topic": "g5-algebra"
+      "topic": "g5-algebra",
+      "original_id": "USCC-G5-055"
     },
     {
-      "id": "SING-G5-128",
-      "stem": "What is 7 - 2 × 2?",
+      "id": "A5-ALG-0035",
+      "stem": "What is 7 - 2 \u00d7 2?",
       "choices": [
         "-4",
         "3",
@@ -3179,12 +3154,12 @@
         "10"
       ],
       "correct_answer": 1,
-      "difficulty_tier": "hard",
+      "difficulty_tier": "medium-hard",
       "difficulty_score": 55,
       "visual_svg": null,
       "visual_alt": null,
       "diagnostics": {
-        "1": "Ignores order of operations",
+        "0": "Ignores order of operations",
         "2": "Computes left to right",
         "3": "Remember BODMAS: multiply or divide before you add or subtract. Work left to right within the same priority."
       },
@@ -3196,8 +3171,8 @@
       "chapter": "5A: Order of Operations",
       "hint": {
         "level_0": "BODMAS: Brackets, Orders, Division/Multiplication, Addition/Subtraction.",
-        "level_1": "Do multiplication/division before addition/subtraction.",
-        "level_2": "Work out brackets first, then × and ÷, then + and -."
+        "level_1": "Do multiplication/division before addition/subtraction. Work out brackets first, then \u00d7 and \u00f7, then + and -. Try working out the calculation step-by-step. Compare your result to the choices: -4, 3, 5, 10",
+        "level_2": "Use the relationship given in the problem to set up your steps."
       },
       "curriculum_tags": [
         "SING_5A_1"
@@ -3247,23 +3222,24 @@
       "schema_version": "3.0",
       "adaptive_topic_id": "g5-algebra",
       "adaptive_topic_name": "Algebra & Equations",
-      "adaptive_topic_emoji": "📝",
+      "adaptive_topic_emoji": "\ud83d\udcdd",
       "adaptive_grade": 5,
       "dual_tagged": true,
       "content_source": "singapore",
       "sequence_id": 36,
-      "difficulty_tier_in_topic": "challenge",
+      "difficulty_tier_in_topic": "proficient",
       "locale_ids": [
         "india",
         "singapore",
         "us",
         "global"
       ],
-      "topic": "g5-algebra"
+      "topic": "g5-algebra",
+      "original_id": "SING-G5-128"
     },
     {
-      "id": "SING-G5-132",
-      "stem": "What is 9 × (7 + 7)?",
+      "id": "A5-ALG-0036",
+      "stem": "What is 9 \u00d7 (7 + 7)?",
       "choices": [
         "126",
         "70",
@@ -3271,7 +3247,7 @@
         "117"
       ],
       "correct_answer": 0,
-      "difficulty_tier": "hard",
+      "difficulty_tier": "medium-hard",
       "difficulty_score": 56,
       "visual_svg": null,
       "visual_alt": null,
@@ -3288,8 +3264,8 @@
       "chapter": "5A: Order of Operations",
       "hint": {
         "level_0": "BODMAS: Brackets, Orders, Division/Multiplication, Addition/Subtraction.",
-        "level_1": "Do multiplication/division before addition/subtraction.",
-        "level_2": "Work out brackets first, then × and ÷, then + and -."
+        "level_1": "Do multiplication/division before addition/subtraction. Work out brackets first, then \u00d7 and \u00f7, then + and -. Try working out the calculation step-by-step. Compare your result to the choices: 126, 70, 133, 117",
+        "level_2": "Use the relationship given in the problem to set up your steps."
       },
       "curriculum_tags": [
         "SING_5A_1"
@@ -3339,23 +3315,24 @@
       "schema_version": "3.0",
       "adaptive_topic_id": "g5-algebra",
       "adaptive_topic_name": "Algebra & Equations",
-      "adaptive_topic_emoji": "📝",
+      "adaptive_topic_emoji": "\ud83d\udcdd",
       "adaptive_grade": 5,
       "dual_tagged": true,
       "content_source": "singapore",
       "sequence_id": 37,
-      "difficulty_tier_in_topic": "challenge",
+      "difficulty_tier_in_topic": "advanced",
       "locale_ids": [
         "india",
         "singapore",
         "us",
         "global"
       ],
-      "topic": "g5-algebra"
+      "topic": "g5-algebra",
+      "original_id": "SING-G5-132"
     },
     {
-      "id": "SING-G5-133",
-      "stem": "What is 4 + 2 × 6?",
+      "id": "A5-ALG-0037",
+      "stem": "What is 4 + 2 \u00d7 6?",
       "choices": [
         "16",
         "12",
@@ -3363,7 +3340,7 @@
         "36"
       ],
       "correct_answer": 0,
-      "difficulty_tier": "hard",
+      "difficulty_tier": "medium-hard",
       "difficulty_score": 56,
       "visual_svg": null,
       "visual_alt": null,
@@ -3380,8 +3357,8 @@
       "chapter": "5A: Order of Operations",
       "hint": {
         "level_0": "BODMAS: Brackets, Orders, Division/Multiplication, Addition/Subtraction.",
-        "level_1": "Do multiplication/division before addition/subtraction.",
-        "level_2": "Work out brackets first, then × and ÷, then + and -."
+        "level_1": "Do multiplication/division before addition/subtraction. Work out brackets first, then \u00d7 and \u00f7, then + and -. Try working out the calculation step-by-step. Compare your result to the choices: 16, 12, 18, 36",
+        "level_2": "Use the relationship given in the problem to set up your steps."
       },
       "curriculum_tags": [
         "SING_5A_1"
@@ -3431,23 +3408,24 @@
       "schema_version": "3.0",
       "adaptive_topic_id": "g5-algebra",
       "adaptive_topic_name": "Algebra & Equations",
-      "adaptive_topic_emoji": "📝",
+      "adaptive_topic_emoji": "\ud83d\udcdd",
       "adaptive_grade": 5,
       "dual_tagged": true,
       "content_source": "singapore",
       "sequence_id": 38,
-      "difficulty_tier_in_topic": "challenge",
+      "difficulty_tier_in_topic": "advanced",
       "locale_ids": [
         "india",
         "singapore",
         "us",
         "global"
       ],
-      "topic": "g5-algebra"
+      "topic": "g5-algebra",
+      "original_id": "SING-G5-133"
     },
     {
-      "id": "SING-G5-134",
-      "stem": "What is 15 - 5 × 2?",
+      "id": "A5-ALG-0038",
+      "stem": "What is 15 - 5 \u00d7 2?",
       "choices": [
         "-10",
         "10",
@@ -3455,14 +3433,14 @@
         "5"
       ],
       "correct_answer": 3,
-      "difficulty_tier": "hard",
+      "difficulty_tier": "medium-hard",
       "difficulty_score": 56,
       "visual_svg": null,
       "visual_alt": null,
       "diagnostics": {
-        "1": "Ignores order of operations",
-        "2": "Computes left to right",
-        "3": "Remember BODMAS: multiply or divide before you add or subtract. Work left to right within the same priority."
+        "0": "Ignores order of operations",
+        "1": "Computes left to right",
+        "2": "Remember BODMAS: multiply or divide before you add or subtract. Work left to right within the same priority."
       },
       "tags": [
         "order_of_operations",
@@ -3472,8 +3450,8 @@
       "chapter": "5A: Order of Operations",
       "hint": {
         "level_0": "BODMAS: Brackets, Orders, Division/Multiplication, Addition/Subtraction.",
-        "level_1": "Do multiplication/division before addition/subtraction.",
-        "level_2": "Work out brackets first, then × and ÷, then + and -."
+        "level_1": "Do multiplication/division before addition/subtraction. Work out brackets first, then \u00d7 and \u00f7, then + and -. Try working out the calculation step-by-step. Compare your result to the choices: -10, 10, 20, 5",
+        "level_2": "Use the relationship given in the problem to set up your steps."
       },
       "curriculum_tags": [
         "SING_5A_1"
@@ -3523,23 +3501,24 @@
       "schema_version": "3.0",
       "adaptive_topic_id": "g5-algebra",
       "adaptive_topic_name": "Algebra & Equations",
-      "adaptive_topic_emoji": "📝",
+      "adaptive_topic_emoji": "\ud83d\udcdd",
       "adaptive_grade": 5,
       "dual_tagged": true,
       "content_source": "singapore",
       "sequence_id": 39,
-      "difficulty_tier_in_topic": "challenge",
+      "difficulty_tier_in_topic": "advanced",
       "locale_ids": [
         "india",
         "singapore",
         "us",
         "global"
       ],
-      "topic": "g5-algebra"
+      "topic": "g5-algebra",
+      "original_id": "SING-G5-134"
     },
     {
-      "id": "USCC-G5-064",
-      "stem": "What is 4 × (2 + 5)?",
+      "id": "A5-ALG-0039",
+      "stem": "What is 4 \u00d7 (2 + 5)?",
       "choices": [
         "11",
         "28",
@@ -3547,7 +3526,7 @@
         "13"
       ],
       "correct_answer": 1,
-      "difficulty_tier": "medium",
+      "difficulty_tier": "medium-hard",
       "difficulty_score": 46,
       "tags": [
         "order_of_operations",
@@ -3557,11 +3536,13 @@
       "chapter": "Operations & Algebraic Thinking",
       "hint": {
         "level_0": "Do what's inside parentheses first.",
-        "level_1": "First: 2 + 5 = 7. Then × 4.",
-        "level_2": "4 × 7 = ___"
+        "level_1": "First: 2 + 5 = 7. Then \u00d7 4. 4 \u00d7 7 = ___ Try working out the calculation step-by-step. Compare your result to the choices: 11, 28, 32, 13",
+        "level_2": "Use the relationship given in the problem to set up your steps."
       },
       "diagnostics": {
-        "common_errors": "Ignored parentheses; Added instead of multiplied at end; Added all numbers"
+        "0": "Ignored parentheses",
+        "2": "Added instead of multiplied at end",
+        "3": "Added all numbers"
       },
       "curriculum_tags": [
         "5.OA.1"
@@ -3611,23 +3592,24 @@
       "schema_version": "3.0",
       "adaptive_topic_id": "g5-algebra",
       "adaptive_topic_name": "Algebra & Equations",
-      "adaptive_topic_emoji": "📝",
+      "adaptive_topic_emoji": "\ud83d\udcdd",
       "adaptive_grade": 5,
       "dual_tagged": true,
       "content_source": "us-common-core",
       "sequence_id": 40,
-      "difficulty_tier_in_topic": "challenge",
+      "difficulty_tier_in_topic": "advanced",
       "locale_ids": [
         "india",
         "singapore",
         "us",
         "global"
       ],
-      "topic": "g5-algebra"
+      "topic": "g5-algebra",
+      "original_id": "USCC-G5-064"
     },
     {
-      "id": "SING-G5-137",
-      "stem": "What is 10 × (6 + 5)?",
+      "id": "A5-ALG-0040",
+      "stem": "What is 10 \u00d7 (6 + 5)?",
       "choices": [
         "100",
         "65",
@@ -3635,13 +3617,13 @@
         "116"
       ],
       "correct_answer": 2,
-      "difficulty_tier": "hard",
+      "difficulty_tier": "medium-hard",
       "difficulty_score": 57,
       "visual_svg": null,
       "visual_alt": null,
       "diagnostics": {
-        "1": "Ignores order of operations",
-        "2": "Computes left to right",
+        "0": "Ignores order of operations",
+        "1": "Computes left to right",
         "3": "Forgets brackets"
       },
       "tags": [
@@ -3652,8 +3634,8 @@
       "chapter": "5A: Order of Operations",
       "hint": {
         "level_0": "BODMAS: Brackets, Orders, Division/Multiplication, Addition/Subtraction.",
-        "level_1": "Do multiplication/division before addition/subtraction.",
-        "level_2": "Work out brackets first, then × and ÷, then + and -."
+        "level_1": "Do multiplication/division before addition/subtraction. Work out brackets first, then \u00d7 and \u00f7, then + and -. Try working out the calculation step-by-step. Compare your result to the choices: 100, 65, 110, 116",
+        "level_2": "Use the relationship given in the problem to set up your steps."
       },
       "curriculum_tags": [
         "SING_5A_1"
@@ -3703,23 +3685,24 @@
       "schema_version": "3.0",
       "adaptive_topic_id": "g5-algebra",
       "adaptive_topic_name": "Algebra & Equations",
-      "adaptive_topic_emoji": "📝",
+      "adaptive_topic_emoji": "\ud83d\udcdd",
       "adaptive_grade": 5,
       "dual_tagged": true,
       "content_source": "singapore",
       "sequence_id": 41,
-      "difficulty_tier_in_topic": "challenge",
+      "difficulty_tier_in_topic": "advanced",
       "locale_ids": [
         "india",
         "singapore",
         "us",
         "global"
       ],
-      "topic": "g5-algebra"
+      "topic": "g5-algebra",
+      "original_id": "SING-G5-137"
     },
     {
-      "id": "USCC-G5-068",
-      "stem": "What is 6 × 4 - 1?",
+      "id": "A5-ALG-0041",
+      "stem": "What is 6 \u00d7 4 - 1?",
       "choices": [
         "22",
         "23",
@@ -3727,7 +3710,7 @@
         "18"
       ],
       "correct_answer": 1,
-      "difficulty_tier": "medium",
+      "difficulty_tier": "medium-hard",
       "difficulty_score": 47,
       "tags": [
         "order_of_operations",
@@ -3737,11 +3720,13 @@
       "chapter": "Operations & Algebraic Thinking",
       "hint": {
         "level_0": "Do multiplication before addition/subtraction.",
-        "level_1": "First: 6 × 4 = 24. Then - 1.",
-        "level_2": "24 - 1 = ___"
+        "level_1": "First: 6 \u00d7 4 = 24. Then - 1. 24 - 1 = ___ Try working out the calculation step-by-step. Compare your result to the choices: 22, 23, 24, 18",
+        "level_2": "Use the relationship given in the problem to set up your steps."
       },
       "diagnostics": {
-        "common_errors": "Did addition/subtraction before multiplication; Arithmetic error; Off by one"
+        "0": "Did addition/subtraction before multiplication",
+        "2": "Arithmetic error",
+        "3": "Off by one"
       },
       "curriculum_tags": [
         "5.OA.1"
@@ -3791,115 +3776,24 @@
       "schema_version": "3.0",
       "adaptive_topic_id": "g5-algebra",
       "adaptive_topic_name": "Algebra & Equations",
-      "adaptive_topic_emoji": "📝",
+      "adaptive_topic_emoji": "\ud83d\udcdd",
       "adaptive_grade": 5,
       "dual_tagged": true,
       "content_source": "us-common-core",
       "sequence_id": 42,
-      "difficulty_tier_in_topic": "challenge",
+      "difficulty_tier_in_topic": "advanced",
       "locale_ids": [
         "india",
         "singapore",
         "us",
         "global"
       ],
-      "topic": "g5-algebra"
+      "topic": "g5-algebra",
+      "original_id": "USCC-G5-068"
     },
     {
-      "id": "SING-G5-143",
-      "stem": "What is 3 + 2 × 9?",
-      "choices": [
-        "45",
-        "18",
-        "21",
-        "23"
-      ],
-      "correct_answer": 2,
-      "difficulty_tier": "hard",
-      "difficulty_score": 58,
-      "visual_svg": null,
-      "visual_alt": null,
-      "diagnostics": {
-        "1": "Ignores order of operations",
-        "2": "Computes left to right",
-        "3": "Remember BODMAS: multiply or divide before you add or subtract. Work left to right within the same priority."
-      },
-      "tags": [
-        "order_of_operations",
-        "BODMAS",
-        "mental_math"
-      ],
-      "chapter": "5A: Order of Operations",
-      "hint": {
-        "level_0": "BODMAS: Brackets, Orders, Division/Multiplication, Addition/Subtraction.",
-        "level_1": "Do multiplication/division before addition/subtraction.",
-        "level_2": "Work out brackets first, then × and ÷, then + and -."
-      },
-      "curriculum_tags": [
-        "SING_5A_1"
-      ],
-      "irt_params": {
-        "a": 1.25,
-        "b": 1.06,
-        "c": 0.25
-      },
-      "irt_a": 1.25,
-      "irt_b": 1.06,
-      "irt_c": 0.25,
-      "solution_steps": [
-        "Start with 3 and count up 2 more",
-        "Use fingers or a number line to add",
-        "The number you land on is your answer"
-      ],
-      "level": 5,
-      "level_name": "Strategist",
-      "universal_skill_id": "ORDER_OPS_5",
-      "skill_id": "order_of_ops",
-      "skill_domain": "arithmetic",
-      "maturity_bucket": "calibrating",
-      "visual_requirement": "none",
-      "visual_type": "none",
-      "visual_ai_verified": false,
-      "media_id": null,
-      "media_hash": null,
-      "misconception_ids": [
-        "MISC_1",
-        "MISC_3",
-        "MISC_2"
-      ],
-      "why_quality": "ai_generated",
-      "why_framework": "pending",
-      "hint_quality": {
-        "layers": 3,
-        "quality": "good",
-        "has_3_layers": true
-      },
-      "curriculum_source": "singapore",
-      "curriculum_map": {},
-      "school_grade": 5,
-      "avg_time_to_solve_ms": null,
-      "times_served": 0,
-      "flag_count": 0,
-      "schema_version": "3.0",
-      "adaptive_topic_id": "g5-algebra",
-      "adaptive_topic_name": "Algebra & Equations",
-      "adaptive_topic_emoji": "📝",
-      "adaptive_grade": 5,
-      "dual_tagged": true,
-      "content_source": "singapore",
-      "sequence_id": 43,
-      "difficulty_tier_in_topic": "challenge",
-      "locale_ids": [
-        "india",
-        "singapore",
-        "us",
-        "global"
-      ],
-      "topic": "g5-algebra"
-    },
-    {
-      "id": "SING-G5-144",
-      "stem": "What is 3 × (7 + 9)?",
+      "id": "A5-ALG-0042",
+      "stem": "What is 3 \u00d7 (7 + 9)?",
       "choices": [
         "55",
         "48",
@@ -3907,12 +3801,12 @@
         "45"
       ],
       "correct_answer": 1,
-      "difficulty_tier": "hard",
+      "difficulty_tier": "medium-hard",
       "difficulty_score": 58,
       "visual_svg": null,
       "visual_alt": null,
       "diagnostics": {
-        "1": "Ignores order of operations",
+        "0": "Ignores order of operations",
         "2": "Computes left to right",
         "3": "Forgets brackets"
       },
@@ -3924,8 +3818,8 @@
       "chapter": "5A: Order of Operations",
       "hint": {
         "level_0": "BODMAS: Brackets, Orders, Division/Multiplication, Addition/Subtraction.",
-        "level_1": "Do multiplication/division before addition/subtraction.",
-        "level_2": "Work out brackets first, then × and ÷, then + and -."
+        "level_1": "Do multiplication/division before addition/subtraction. Work out brackets first, then \u00d7 and \u00f7, then + and -. Try working out the calculation step-by-step. Compare your result to the choices: 55, 48, 30, 45",
+        "level_2": "Use the relationship given in the problem to set up your steps."
       },
       "curriculum_tags": [
         "SING_5A_1"
@@ -3975,23 +3869,24 @@
       "schema_version": "3.0",
       "adaptive_topic_id": "g5-algebra",
       "adaptive_topic_name": "Algebra & Equations",
-      "adaptive_topic_emoji": "📝",
+      "adaptive_topic_emoji": "\ud83d\udcdd",
       "adaptive_grade": 5,
       "dual_tagged": true,
       "content_source": "singapore",
       "sequence_id": 44,
-      "difficulty_tier_in_topic": "challenge",
+      "difficulty_tier_in_topic": "advanced",
       "locale_ids": [
         "india",
         "singapore",
         "us",
         "global"
       ],
-      "topic": "g5-algebra"
+      "topic": "g5-algebra",
+      "original_id": "SING-G5-144"
     },
     {
-      "id": "USCC-G5-075",
-      "stem": "What is 3 × (4 + 5)?",
+      "id": "A5-ALG-0043",
+      "stem": "What is 3 \u00d7 (4 + 5)?",
       "choices": [
         "17",
         "12",
@@ -3999,7 +3894,7 @@
         "27"
       ],
       "correct_answer": 3,
-      "difficulty_tier": "medium",
+      "difficulty_tier": "medium-hard",
       "difficulty_score": 48,
       "tags": [
         "order_of_operations",
@@ -4009,11 +3904,13 @@
       "chapter": "Operations & Algebraic Thinking",
       "hint": {
         "level_0": "Do what's inside parentheses first.",
-        "level_1": "First: 4 + 5 = 9. Then × 3.",
-        "level_2": "3 × 9 = ___"
+        "level_1": "First: 4 + 5 = 9. Then \u00d7 3. 3 \u00d7 9 = ___ Try working out the calculation step-by-step. Compare your result to the choices: 17, 12, 30, 27",
+        "level_2": "Use the relationship given in the problem to set up your steps."
       },
       "diagnostics": {
-        "common_errors": "Ignored parentheses; Added instead of multiplied at end; Added all numbers"
+        "0": "Ignored parentheses",
+        "1": "Added instead of multiplied at end",
+        "2": "Added all numbers"
       },
       "curriculum_tags": [
         "5.OA.1"
@@ -4063,23 +3960,24 @@
       "schema_version": "3.0",
       "adaptive_topic_id": "g5-algebra",
       "adaptive_topic_name": "Algebra & Equations",
-      "adaptive_topic_emoji": "📝",
+      "adaptive_topic_emoji": "\ud83d\udcdd",
       "adaptive_grade": 5,
       "dual_tagged": true,
       "content_source": "us-common-core",
       "sequence_id": 45,
-      "difficulty_tier_in_topic": "challenge",
+      "difficulty_tier_in_topic": "advanced",
       "locale_ids": [
         "india",
         "singapore",
         "us",
         "global"
       ],
-      "topic": "g5-algebra"
+      "topic": "g5-algebra",
+      "original_id": "USCC-G5-075"
     },
     {
-      "id": "SING-G5-149",
-      "stem": "What is 12 + 6 × 7?",
+      "id": "A5-ALG-0044",
+      "stem": "What is 12 + 6 \u00d7 7?",
       "choices": [
         "126",
         "42",
@@ -4087,13 +3985,13 @@
         "60"
       ],
       "correct_answer": 2,
-      "difficulty_tier": "hard",
+      "difficulty_tier": "medium-hard",
       "difficulty_score": 59,
       "visual_svg": null,
       "visual_alt": null,
       "diagnostics": {
-        "1": "Ignores order of operations",
-        "2": "Computes left to right",
+        "0": "Ignores order of operations",
+        "1": "Computes left to right",
         "3": "Remember BODMAS: multiply or divide before you add or subtract. Work left to right within the same priority."
       },
       "tags": [
@@ -4104,8 +4002,8 @@
       "chapter": "5A: Order of Operations",
       "hint": {
         "level_0": "BODMAS: Brackets, Orders, Division/Multiplication, Addition/Subtraction.",
-        "level_1": "Do multiplication/division before addition/subtraction.",
-        "level_2": "Work out brackets first, then × and ÷, then + and -."
+        "level_1": "Do multiplication/division before addition/subtraction. Work out brackets first, then \u00d7 and \u00f7, then + and -. Try working out the calculation step-by-step. Compare your result to the choices: 126, 42, 54, 60",
+        "level_2": "Use the relationship given in the problem to set up your steps."
       },
       "curriculum_tags": [
         "SING_5A_1"
@@ -4155,23 +4053,24 @@
       "schema_version": "3.0",
       "adaptive_topic_id": "g5-algebra",
       "adaptive_topic_name": "Algebra & Equations",
-      "adaptive_topic_emoji": "📝",
+      "adaptive_topic_emoji": "\ud83d\udcdd",
       "adaptive_grade": 5,
       "dual_tagged": true,
       "content_source": "singapore",
       "sequence_id": 46,
-      "difficulty_tier_in_topic": "challenge",
+      "difficulty_tier_in_topic": "advanced",
       "locale_ids": [
         "india",
         "singapore",
         "us",
         "global"
       ],
-      "topic": "g5-algebra"
+      "topic": "g5-algebra",
+      "original_id": "SING-G5-149"
     },
     {
-      "id": "USCC-G5-081",
-      "stem": "What is 8 × 6 + 5?",
+      "id": "A5-ALG-0045",
+      "stem": "What is 8 \u00d7 6 + 5?",
       "choices": [
         "52",
         "53",
@@ -4179,7 +4078,7 @@
         "54"
       ],
       "correct_answer": 1,
-      "difficulty_tier": "medium",
+      "difficulty_tier": "medium-hard",
       "difficulty_score": 49,
       "tags": [
         "order_of_operations",
@@ -4189,11 +4088,13 @@
       "chapter": "Operations & Algebraic Thinking",
       "hint": {
         "level_0": "Do multiplication before addition/subtraction.",
-        "level_1": "First: 8 × 6 = 48. Then + 5.",
-        "level_2": "48 + 5 = ___"
+        "level_1": "First: 8 \u00d7 6 = 48. Then + 5. 48 + 5 = ___ Try working out the calculation step-by-step. Compare your result to the choices: 52, 53, 88, 54",
+        "level_2": "Use the relationship given in the problem to set up your steps."
       },
       "diagnostics": {
-        "common_errors": "Did addition/subtraction before multiplication; Arithmetic error; Off by one"
+        "0": "Did addition/subtraction before multiplication",
+        "2": "Arithmetic error",
+        "3": "Off by one"
       },
       "curriculum_tags": [
         "5.OA.1"
@@ -4243,23 +4144,24 @@
       "schema_version": "3.0",
       "adaptive_topic_id": "g5-algebra",
       "adaptive_topic_name": "Algebra & Equations",
-      "adaptive_topic_emoji": "📝",
+      "adaptive_topic_emoji": "\ud83d\udcdd",
       "adaptive_grade": 5,
       "dual_tagged": true,
       "content_source": "us-common-core",
       "sequence_id": 47,
-      "difficulty_tier_in_topic": "challenge",
+      "difficulty_tier_in_topic": "advanced",
       "locale_ids": [
         "india",
         "singapore",
         "us",
         "global"
       ],
-      "topic": "g5-algebra"
+      "topic": "g5-algebra",
+      "original_id": "USCC-G5-081"
     },
     {
-      "id": "SING-G5-151",
-      "stem": "What is 22 - 7 × 3?",
+      "id": "A5-ALG-0046",
+      "stem": "What is 22 - 7 \u00d7 3?",
       "choices": [
         "8",
         "45",
@@ -4267,13 +4169,13 @@
         "-21"
       ],
       "correct_answer": 2,
-      "difficulty_tier": "hard",
+      "difficulty_tier": "medium-hard",
       "difficulty_score": 60,
       "visual_svg": null,
       "visual_alt": null,
       "diagnostics": {
-        "1": "Ignores order of operations",
-        "2": "Computes left to right",
+        "0": "Ignores order of operations",
+        "1": "Computes left to right",
         "3": "Remember BODMAS: multiply or divide before you add or subtract. Work left to right within the same priority."
       },
       "tags": [
@@ -4284,8 +4186,8 @@
       "chapter": "5A: Order of Operations",
       "hint": {
         "level_0": "BODMAS: Brackets, Orders, Division/Multiplication, Addition/Subtraction.",
-        "level_1": "Do multiplication/division before addition/subtraction.",
-        "level_2": "Work out brackets first, then × and ÷, then + and -."
+        "level_1": "Do multiplication/division before addition/subtraction. Work out brackets first, then \u00d7 and \u00f7, then + and -. Try working out the calculation step-by-step. Compare your result to the choices: 8, 45, 1, -21",
+        "level_2": "Use the relationship given in the problem to set up your steps."
       },
       "curriculum_tags": [
         "SING_5A_1"
@@ -4335,23 +4237,24 @@
       "schema_version": "3.0",
       "adaptive_topic_id": "g5-algebra",
       "adaptive_topic_name": "Algebra & Equations",
-      "adaptive_topic_emoji": "📝",
+      "adaptive_topic_emoji": "\ud83d\udcdd",
       "adaptive_grade": 5,
       "dual_tagged": true,
       "content_source": "singapore",
       "sequence_id": 48,
-      "difficulty_tier_in_topic": "challenge",
+      "difficulty_tier_in_topic": "advanced",
       "locale_ids": [
         "india",
         "singapore",
         "us",
         "global"
       ],
-      "topic": "g5-algebra"
+      "topic": "g5-algebra",
+      "original_id": "SING-G5-151"
     },
     {
-      "id": "USCC-G5-087",
-      "stem": "What is 3 × (4 + 1)?",
+      "id": "A5-ALG-0047",
+      "stem": "What is 3 \u00d7 (4 + 1)?",
       "choices": [
         "15",
         "18",
@@ -4359,7 +4262,7 @@
         "8"
       ],
       "correct_answer": 0,
-      "difficulty_tier": "medium",
+      "difficulty_tier": "medium-hard",
       "difficulty_score": 50,
       "tags": [
         "order_of_operations",
@@ -4369,11 +4272,13 @@
       "chapter": "Operations & Algebraic Thinking",
       "hint": {
         "level_0": "Do what's inside parentheses first.",
-        "level_1": "First: 4 + 1 = 5. Then × 3.",
-        "level_2": "3 × 5 = ___"
+        "level_1": "First: 4 + 1 = 5. Then \u00d7 3. 3 \u00d7 5 = ___ Try working out the calculation step-by-step. Compare your result to the choices: 15, 18, 13, 8",
+        "level_2": "Use the relationship given in the problem to set up your steps."
       },
       "diagnostics": {
-        "common_errors": "Ignored parentheses; Added instead of multiplied at end; Added all numbers"
+        "1": "Ignored parentheses",
+        "2": "Added instead of multiplied at end",
+        "3": "Added all numbers"
       },
       "curriculum_tags": [
         "5.OA.1"
@@ -4423,111 +4328,24 @@
       "schema_version": "3.0",
       "adaptive_topic_id": "g5-algebra",
       "adaptive_topic_name": "Algebra & Equations",
-      "adaptive_topic_emoji": "📝",
+      "adaptive_topic_emoji": "\ud83d\udcdd",
       "adaptive_grade": 5,
       "dual_tagged": true,
       "content_source": "us-common-core",
       "sequence_id": 49,
-      "difficulty_tier_in_topic": "mastery",
+      "difficulty_tier_in_topic": "expert",
       "locale_ids": [
         "india",
         "singapore",
         "us",
         "global"
       ],
-      "topic": "g5-algebra"
+      "topic": "g5-algebra",
+      "original_id": "USCC-G5-087"
     },
     {
-      "id": "USCC-G5-092",
-      "stem": "What is 8 × 4 + 2?",
-      "choices": [
-        "48",
-        "33",
-        "34",
-        "35"
-      ],
-      "correct_answer": 2,
-      "difficulty_tier": "medium",
-      "difficulty_score": 51,
-      "tags": [
-        "order_of_operations",
-        "PEMDAS",
-        "5.OA.1"
-      ],
-      "chapter": "Operations & Algebraic Thinking",
-      "hint": {
-        "level_0": "Do multiplication before addition/subtraction.",
-        "level_1": "First: 8 × 4 = 32. Then + 2.",
-        "level_2": "32 + 2 = ___"
-      },
-      "diagnostics": {
-        "common_errors": "Did addition/subtraction before multiplication; Arithmetic error; Off by one"
-      },
-      "curriculum_tags": [
-        "5.OA.1"
-      ],
-      "irt_params": {
-        "a": 1.15,
-        "b": 1.29,
-        "c": 0.25
-      },
-      "visual_type": "2d",
-      "visual_svg": "<svg viewBox=\"0 0 100 60\" xmlns=\"http://www.w3.org/2000/svg\">\n<rect x=\"5\" y=\"5\" width=\"90\" height=\"40\" fill=\"#f8f9fa\" stroke=\"#333\" stroke-width=\"1\" rx=\"8\"/>\n<text x=\"50\" y=\"28\" text-anchor=\"middle\" font-size=\"10\">?</text>\n</svg>",
-      "irt_a": 1.15,
-      "irt_b": 1.29,
-      "irt_c": 0.25,
-      "solution_steps": [
-        "Think of 8 groups of 4",
-        "Add 4 to itself 8 times",
-        "The total is your answer"
-      ],
-      "level": 5,
-      "level_name": "Strategist",
-      "universal_skill_id": "ORDER_OPS_5",
-      "skill_id": "order_of_ops",
-      "skill_domain": "arithmetic",
-      "maturity_bucket": "calibrating",
-      "visual_requirement": "optional",
-      "visual_ai_verified": false,
-      "media_id": null,
-      "media_hash": "sha256:aa41fe6e5f4b9cfe",
-      "misconception_ids": [
-        "UNCLASSIFIED"
-      ],
-      "why_quality": "structured",
-      "why_framework": "3R",
-      "hint_quality": {
-        "layers": 3,
-        "quality": "good",
-        "has_3_layers": true,
-        "spoiler_remediated": true
-      },
-      "curriculum_source": "uscc",
-      "curriculum_map": {},
-      "school_grade": 5,
-      "avg_time_to_solve_ms": null,
-      "times_served": 0,
-      "flag_count": 0,
-      "schema_version": "3.0",
-      "adaptive_topic_id": "g5-algebra",
-      "adaptive_topic_name": "Algebra & Equations",
-      "adaptive_topic_emoji": "📝",
-      "adaptive_grade": 5,
-      "dual_tagged": true,
-      "content_source": "us-common-core",
-      "sequence_id": 50,
-      "difficulty_tier_in_topic": "mastery",
-      "locale_ids": [
-        "india",
-        "singapore",
-        "us",
-        "global"
-      ],
-      "topic": "g5-algebra"
-    },
-    {
-      "id": "USCC-G5-101",
-      "stem": "What is 2 × (4 + 3)?",
+      "id": "A5-ALG-0048",
+      "stem": "What is 2 \u00d7 (4 + 3)?",
       "choices": [
         "11",
         "16",
@@ -4535,7 +4353,7 @@
         "14"
       ],
       "correct_answer": 3,
-      "difficulty_tier": "medium",
+      "difficulty_tier": "medium-hard",
       "difficulty_score": 52,
       "tags": [
         "order_of_operations",
@@ -4545,11 +4363,13 @@
       "chapter": "Operations & Algebraic Thinking",
       "hint": {
         "level_0": "Do what's inside parentheses first.",
-        "level_1": "First: 4 + 3 = 7. Then × 2.",
-        "level_2": "2 × 7 = ___"
+        "level_1": "First: 4 + 3 = 7. Then \u00d7 2. 2 \u00d7 7 = ___ Try working out the calculation step-by-step. Compare your result to the choices: 11, 16, 9, 14",
+        "level_2": "Use the relationship given in the problem to set up your steps."
       },
       "diagnostics": {
-        "common_errors": "Ignored parentheses; Added instead of multiplied at end; Added all numbers"
+        "0": "Ignored parentheses",
+        "1": "Added instead of multiplied at end",
+        "2": "Added all numbers"
       },
       "curriculum_tags": [
         "5.OA.1"
@@ -4599,23 +4419,24 @@
       "schema_version": "3.0",
       "adaptive_topic_id": "g5-algebra",
       "adaptive_topic_name": "Algebra & Equations",
-      "adaptive_topic_emoji": "📝",
+      "adaptive_topic_emoji": "\ud83d\udcdd",
       "adaptive_grade": 5,
       "dual_tagged": true,
       "content_source": "us-common-core",
       "sequence_id": 51,
-      "difficulty_tier_in_topic": "mastery",
+      "difficulty_tier_in_topic": "expert",
       "locale_ids": [
         "india",
         "singapore",
         "us",
         "global"
       ],
-      "topic": "g5-algebra"
+      "topic": "g5-algebra",
+      "original_id": "USCC-G5-101"
     },
     {
-      "id": "USCC-G5-106",
-      "stem": "What is 2 × 6 + 1?",
+      "id": "A5-ALG-0049",
+      "stem": "What is 2 \u00d7 6 + 1?",
       "choices": [
         "12",
         "14",
@@ -4623,7 +4444,7 @@
         "20"
       ],
       "correct_answer": 2,
-      "difficulty_tier": "medium",
+      "difficulty_tier": "medium-hard",
       "difficulty_score": 53,
       "tags": [
         "order_of_operations",
@@ -4633,11 +4454,13 @@
       "chapter": "Operations & Algebraic Thinking",
       "hint": {
         "level_0": "Do multiplication before addition/subtraction.",
-        "level_1": "First: 2 × 6 = 12. Then + 1.",
-        "level_2": "12 + 1 = ___"
+        "level_1": "First: 2 \u00d7 6 = 12. Then + 1. 12 + 1 = ___ Try working out the calculation step-by-step. Compare your result to the choices: 12, 14, 13, 20",
+        "level_2": "Use the relationship given in the problem to set up your steps."
       },
       "diagnostics": {
-        "common_errors": "Did addition/subtraction before multiplication; Arithmetic error; Off by one"
+        "0": "Did addition/subtraction before multiplication",
+        "1": "Arithmetic error",
+        "3": "Off by one"
       },
       "curriculum_tags": [
         "5.OA.1"
@@ -4687,23 +4510,24 @@
       "schema_version": "3.0",
       "adaptive_topic_id": "g5-algebra",
       "adaptive_topic_name": "Algebra & Equations",
-      "adaptive_topic_emoji": "📝",
+      "adaptive_topic_emoji": "\ud83d\udcdd",
       "adaptive_grade": 5,
       "dual_tagged": true,
       "content_source": "us-common-core",
       "sequence_id": 52,
-      "difficulty_tier_in_topic": "mastery",
+      "difficulty_tier_in_topic": "expert",
       "locale_ids": [
         "india",
         "singapore",
         "us",
         "global"
       ],
-      "topic": "g5-algebra"
+      "topic": "g5-algebra",
+      "original_id": "USCC-G5-106"
     },
     {
-      "id": "USCC-G5-113",
-      "stem": "What is 5 × (6 + 2)?",
+      "id": "A5-ALG-0050",
+      "stem": "What is 5 \u00d7 (6 + 2)?",
       "choices": [
         "32",
         "45",
@@ -4711,7 +4535,7 @@
         "40"
       ],
       "correct_answer": 3,
-      "difficulty_tier": "medium",
+      "difficulty_tier": "hard",
       "difficulty_score": 54,
       "tags": [
         "order_of_operations",
@@ -4721,11 +4545,13 @@
       "chapter": "Operations & Algebraic Thinking",
       "hint": {
         "level_0": "Do what's inside parentheses first.",
-        "level_1": "First: 6 + 2 = 8. Then × 5.",
-        "level_2": "5 × 8 = ___"
+        "level_1": "First: 6 + 2 = 8. Then \u00d7 5. 5 \u00d7 8 = ___ Try working out the calculation step-by-step. Compare your result to the choices: 32, 45, 13, 40",
+        "level_2": "Use the relationship given in the problem to set up your steps."
       },
       "diagnostics": {
-        "common_errors": "Ignored parentheses; Added instead of multiplied at end; Added all numbers"
+        "0": "Ignored parentheses",
+        "1": "Added instead of multiplied at end",
+        "2": "Added all numbers"
       },
       "curriculum_tags": [
         "5.OA.1"
@@ -4775,23 +4601,24 @@
       "schema_version": "3.0",
       "adaptive_topic_id": "g5-algebra",
       "adaptive_topic_name": "Algebra & Equations",
-      "adaptive_topic_emoji": "📝",
+      "adaptive_topic_emoji": "\ud83d\udcdd",
       "adaptive_grade": 5,
       "dual_tagged": true,
       "content_source": "us-common-core",
       "sequence_id": 53,
-      "difficulty_tier_in_topic": "mastery",
+      "difficulty_tier_in_topic": "expert",
       "locale_ids": [
         "india",
         "singapore",
         "us",
         "global"
       ],
-      "topic": "g5-algebra"
+      "topic": "g5-algebra",
+      "original_id": "USCC-G5-113"
     },
     {
-      "id": "USCC-G5-117",
-      "stem": "What is 5 × 3 - 2?",
+      "id": "A5-ALG-0051",
+      "stem": "What is 5 \u00d7 3 - 2?",
       "choices": [
         "5",
         "14",
@@ -4799,7 +4626,7 @@
         "12"
       ],
       "correct_answer": 2,
-      "difficulty_tier": "medium",
+      "difficulty_tier": "hard",
       "difficulty_score": 55,
       "tags": [
         "order_of_operations",
@@ -4809,11 +4636,13 @@
       "chapter": "Operations & Algebraic Thinking",
       "hint": {
         "level_0": "Do multiplication before addition/subtraction.",
-        "level_1": "First: 5 × 3 = 15. Then - 2.",
-        "level_2": "15 - 2 = ___"
+        "level_1": "First: 5 \u00d7 3 = 15. Then - 2. 15 - 2 = ___ Try working out the calculation step-by-step. Compare your result to the choices: 5, 14, 13, 12",
+        "level_2": "Use the relationship given in the problem to set up your steps."
       },
       "diagnostics": {
-        "common_errors": "Did addition/subtraction before multiplication; Arithmetic error; Off by one"
+        "0": "Did addition/subtraction before multiplication",
+        "1": "Arithmetic error",
+        "3": "Off by one"
       },
       "curriculum_tags": [
         "5.OA.1"
@@ -4863,23 +4692,24 @@
       "schema_version": "3.0",
       "adaptive_topic_id": "g5-algebra",
       "adaptive_topic_name": "Algebra & Equations",
-      "adaptive_topic_emoji": "📝",
+      "adaptive_topic_emoji": "\ud83d\udcdd",
       "adaptive_grade": 5,
       "dual_tagged": true,
       "content_source": "us-common-core",
       "sequence_id": 54,
-      "difficulty_tier_in_topic": "mastery",
+      "difficulty_tier_in_topic": "expert",
       "locale_ids": [
         "india",
         "singapore",
         "us",
         "global"
       ],
-      "topic": "g5-algebra"
+      "topic": "g5-algebra",
+      "original_id": "USCC-G5-117"
     },
     {
-      "id": "USCC-G5-125",
-      "stem": "What is 3 × (6 + 4)?",
+      "id": "A5-ALG-0052",
+      "stem": "What is 3 \u00d7 (6 + 4)?",
       "choices": [
         "13",
         "33",
@@ -4887,7 +4717,7 @@
         "22"
       ],
       "correct_answer": 2,
-      "difficulty_tier": "medium",
+      "difficulty_tier": "hard",
       "difficulty_score": 56,
       "tags": [
         "order_of_operations",
@@ -4897,11 +4727,13 @@
       "chapter": "Operations & Algebraic Thinking",
       "hint": {
         "level_0": "Do what's inside parentheses first.",
-        "level_1": "First: 6 + 4 = 10. Then × 3.",
-        "level_2": "3 × 10 = ___"
+        "level_1": "First: 6 + 4 = 10. Then \u00d7 3. 3 \u00d7 10 = ___ Try working out the calculation step-by-step. Compare your result to the choices: 13, 33, 30, 22",
+        "level_2": "Use the relationship given in the problem to set up your steps."
       },
       "diagnostics": {
-        "common_errors": "Ignored parentheses; Added instead of multiplied at end; Added all numbers"
+        "0": "Ignored parentheses",
+        "1": "Added instead of multiplied at end",
+        "3": "Added all numbers"
       },
       "curriculum_tags": [
         "5.OA.1"
@@ -4951,23 +4783,24 @@
       "schema_version": "3.0",
       "adaptive_topic_id": "g5-algebra",
       "adaptive_topic_name": "Algebra & Equations",
-      "adaptive_topic_emoji": "📝",
+      "adaptive_topic_emoji": "\ud83d\udcdd",
       "adaptive_grade": 5,
       "dual_tagged": true,
       "content_source": "us-common-core",
       "sequence_id": 55,
-      "difficulty_tier_in_topic": "mastery",
+      "difficulty_tier_in_topic": "expert",
       "locale_ids": [
         "india",
         "singapore",
         "us",
         "global"
       ],
-      "topic": "g5-algebra"
+      "topic": "g5-algebra",
+      "original_id": "USCC-G5-125"
     },
     {
-      "id": "USCC-G5-129",
-      "stem": "What is 3 × 5 - 3?",
+      "id": "A5-ALG-0053",
+      "stem": "What is 3 \u00d7 5 - 3?",
       "choices": [
         "11",
         "6",
@@ -4975,7 +4808,7 @@
         "13"
       ],
       "correct_answer": 2,
-      "difficulty_tier": "medium",
+      "difficulty_tier": "hard",
       "difficulty_score": 57,
       "tags": [
         "order_of_operations",
@@ -4985,11 +4818,13 @@
       "chapter": "Operations & Algebraic Thinking",
       "hint": {
         "level_0": "Do multiplication before addition/subtraction.",
-        "level_1": "First: 3 × 5 = 15. Then - 3.",
-        "level_2": "15 - 3 = ___"
+        "level_1": "First: 3 \u00d7 5 = 15. Then - 3. 15 - 3 = ___ Try working out the calculation step-by-step. Compare your result to the choices: 11, 6, 12, 13",
+        "level_2": "Use the relationship given in the problem to set up your steps."
       },
       "diagnostics": {
-        "common_errors": "Did addition/subtraction before multiplication; Arithmetic error; Off by one"
+        "0": "Did addition/subtraction before multiplication",
+        "1": "Arithmetic error",
+        "3": "Off by one"
       },
       "curriculum_tags": [
         "5.OA.1"
@@ -5039,23 +4874,24 @@
       "schema_version": "3.0",
       "adaptive_topic_id": "g5-algebra",
       "adaptive_topic_name": "Algebra & Equations",
-      "adaptive_topic_emoji": "📝",
+      "adaptive_topic_emoji": "\ud83d\udcdd",
       "adaptive_grade": 5,
       "dual_tagged": true,
       "content_source": "us-common-core",
       "sequence_id": 56,
-      "difficulty_tier_in_topic": "mastery",
+      "difficulty_tier_in_topic": "expert",
       "locale_ids": [
         "india",
         "singapore",
         "us",
         "global"
       ],
-      "topic": "g5-algebra"
+      "topic": "g5-algebra",
+      "original_id": "USCC-G5-129"
     },
     {
-      "id": "USCC-G5-137",
-      "stem": "What is 2 × (2 + 4)?",
+      "id": "A5-ALG-0054",
+      "stem": "What is 2 \u00d7 (2 + 4)?",
       "choices": [
         "14",
         "8",
@@ -5063,7 +4899,7 @@
         "5"
       ],
       "correct_answer": 2,
-      "difficulty_tier": "medium",
+      "difficulty_tier": "hard",
       "difficulty_score": 58,
       "tags": [
         "order_of_operations",
@@ -5073,11 +4909,13 @@
       "chapter": "Operations & Algebraic Thinking",
       "hint": {
         "level_0": "Do what's inside parentheses first.",
-        "level_1": "First: 2 + 4 = 6. Then × 2.",
-        "level_2": "2 × 6 = ___"
+        "level_1": "First: 2 + 4 = 6. Then \u00d7 2. 2 \u00d7 6 = ___ Try working out the calculation step-by-step. Compare your result to the choices: 14, 8, 12, 5",
+        "level_2": "Use the relationship given in the problem to set up your steps."
       },
       "diagnostics": {
-        "common_errors": "Ignored parentheses; Added instead of multiplied at end; Added all numbers"
+        "0": "Ignored parentheses",
+        "1": "Added instead of multiplied at end",
+        "3": "Added all numbers"
       },
       "curriculum_tags": [
         "5.OA.1"
@@ -5127,23 +4965,24 @@
       "schema_version": "3.0",
       "adaptive_topic_id": "g5-algebra",
       "adaptive_topic_name": "Algebra & Equations",
-      "adaptive_topic_emoji": "📝",
+      "adaptive_topic_emoji": "\ud83d\udcdd",
       "adaptive_grade": 5,
       "dual_tagged": true,
       "content_source": "us-common-core",
       "sequence_id": 57,
-      "difficulty_tier_in_topic": "mastery",
+      "difficulty_tier_in_topic": "expert",
       "locale_ids": [
         "india",
         "singapore",
         "us",
         "global"
       ],
-      "topic": "g5-algebra"
+      "topic": "g5-algebra",
+      "original_id": "USCC-G5-137"
     },
     {
-      "id": "USCC-G5-141",
-      "stem": "What is 3 × 2 - 4?",
+      "id": "A5-ALG-0055",
+      "stem": "What is 3 \u00d7 2 - 4?",
       "choices": [
         "-6",
         "3",
@@ -5151,7 +4990,7 @@
         "1"
       ],
       "correct_answer": 2,
-      "difficulty_tier": "medium",
+      "difficulty_tier": "hard",
       "difficulty_score": 59,
       "tags": [
         "order_of_operations",
@@ -5161,11 +5000,13 @@
       "chapter": "Operations & Algebraic Thinking",
       "hint": {
         "level_0": "Do multiplication before addition/subtraction.",
-        "level_1": "First: 3 × 2 = 6. Then - 4.",
-        "level_2": "6 - 4 work through the steps to find the answer"
+        "level_1": "First: 3 \u00d7 2 = 6. Then - 4. 6 - 4 = Try working out the calculation step-by-step. Compare your result to the choices: -6, 3, 2, 1",
+        "level_2": "Use the relationship given in the problem to set up your steps."
       },
       "diagnostics": {
-        "common_errors": "Did addition/subtraction before multiplication; Arithmetic error; Off by one"
+        "0": "Did addition/subtraction before multiplication",
+        "1": "Arithmetic error",
+        "3": "Off by one"
       },
       "curriculum_tags": [
         "5.OA.1"
@@ -5215,23 +5056,24 @@
       "schema_version": "3.0",
       "adaptive_topic_id": "g5-algebra",
       "adaptive_topic_name": "Algebra & Equations",
-      "adaptive_topic_emoji": "📝",
+      "adaptive_topic_emoji": "\ud83d\udcdd",
       "adaptive_grade": 5,
       "dual_tagged": true,
       "content_source": "us-common-core",
       "sequence_id": 58,
-      "difficulty_tier_in_topic": "mastery",
+      "difficulty_tier_in_topic": "expert",
       "locale_ids": [
         "india",
         "singapore",
         "us",
         "global"
       ],
-      "topic": "g5-algebra"
+      "topic": "g5-algebra",
+      "original_id": "USCC-G5-141"
     },
     {
-      "id": "USCC-G5-153",
-      "stem": "What is 3 × 4 - 4?",
+      "id": "A5-ALG-0056",
+      "stem": "What is 3 \u00d7 4 - 4?",
       "choices": [
         "8",
         "0",
@@ -5239,7 +5081,7 @@
         "7"
       ],
       "correct_answer": 0,
-      "difficulty_tier": "medium",
+      "difficulty_tier": "hard",
       "difficulty_score": 61,
       "tags": [
         "order_of_operations",
@@ -5249,11 +5091,13 @@
       "chapter": "Operations & Algebraic Thinking",
       "hint": {
         "level_0": "Do multiplication before addition/subtraction.",
-        "level_1": "First: 3 × 4 = 12. Then - 4.",
-        "level_2": "12 - 4 work through the steps to find the answer"
+        "level_1": "First: 3 \u00d7 4 = 12. Then - 4. 12 - 4 = Try working out the calculation step-by-step. Compare your result to the choices: 8, 0, 9, 7",
+        "level_2": "Use the relationship given in the problem to set up your steps."
       },
       "diagnostics": {
-        "common_errors": "Did addition/subtraction before multiplication; Arithmetic error; Off by one"
+        "1": "Did addition/subtraction before multiplication",
+        "2": "Arithmetic error",
+        "3": "Off by one"
       },
       "curriculum_tags": [
         "5.OA.1"
@@ -5303,23 +5147,24 @@
       "schema_version": "3.0",
       "adaptive_topic_id": "g5-algebra",
       "adaptive_topic_name": "Algebra & Equations",
-      "adaptive_topic_emoji": "📝",
+      "adaptive_topic_emoji": "\ud83d\udcdd",
       "adaptive_grade": 5,
       "dual_tagged": true,
       "content_source": "us-common-core",
       "sequence_id": 59,
-      "difficulty_tier_in_topic": "mastery",
+      "difficulty_tier_in_topic": "expert",
       "locale_ids": [
         "india",
         "singapore",
         "us",
         "global"
       ],
-      "topic": "g5-algebra"
+      "topic": "g5-algebra",
+      "original_id": "USCC-G5-153"
     },
     {
-      "id": "USCC-G5-164",
-      "stem": "What is 6 × 4 - 4?",
+      "id": "A5-ALG-0057",
+      "stem": "What is 6 \u00d7 4 - 4?",
       "choices": [
         "20",
         "21",
@@ -5327,7 +5172,7 @@
         "0"
       ],
       "correct_answer": 0,
-      "difficulty_tier": "medium",
+      "difficulty_tier": "hard",
       "difficulty_score": 63,
       "tags": [
         "order_of_operations",
@@ -5337,11 +5182,13 @@
       "chapter": "Operations & Algebraic Thinking",
       "hint": {
         "level_0": "Do multiplication before addition/subtraction.",
-        "level_1": "First: 6 × 4 = 24. Then - 4.",
-        "level_2": "24 - 4 = ___"
+        "level_1": "First: 6 \u00d7 4 = 24. Then - 4. 24 - 4 = ___ Try working out the calculation step-by-step. Compare your result to the choices: 20, 21, 19, 0",
+        "level_2": "Use the relationship given in the problem to set up your steps."
       },
       "diagnostics": {
-        "common_errors": "Did addition/subtraction before multiplication; Arithmetic error; Off by one"
+        "1": "Did addition/subtraction before multiplication",
+        "2": "Arithmetic error",
+        "3": "Off by one"
       },
       "curriculum_tags": [
         "5.OA.1"
@@ -5391,20 +5238,22 @@
       "schema_version": "3.0",
       "adaptive_topic_id": "g5-algebra",
       "adaptive_topic_name": "Algebra & Equations",
-      "adaptive_topic_emoji": "📝",
+      "adaptive_topic_emoji": "\ud83d\udcdd",
       "adaptive_grade": 5,
       "dual_tagged": true,
       "content_source": "us-common-core",
       "sequence_id": 60,
-      "difficulty_tier_in_topic": "mastery",
+      "difficulty_tier_in_topic": "expert",
       "locale_ids": [
         "india",
         "singapore",
         "us",
         "global"
       ],
-      "topic": "g5-algebra"
+      "topic": "g5-algebra",
+      "original_id": "USCC-G5-164"
     }
   ],
-  "fixed_at": "2026-05-03T09:39:34.261251"
+  "fixed_at": "2026-05-03T09:39:34.261251",
+  "corrected_at": "2026-06-09T22:19:52.634643"
 }

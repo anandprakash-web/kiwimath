@@ -1,0 +1,286 @@
+{
+  "topic_id": "wavebook-factors-and-multiples",
+  "topic_name": "Wavebook: Factors and multiples",
+  "topic_emoji": "\ud83d\udcd8",
+  "grade": 4,
+  "domain": "wavebook",
+  "source": "wavebook",
+  "total_questions": 15,
+  "difficulty_range": {
+    "min": 0,
+    "max": 0
+  },
+  "questions": [
+    {
+      "id": "wb_L3_s06_q01",
+      "stem": "Statement-I: 1 is a factor of every number. Statement-II: 2 is the first prime number. Which is correct?",
+      "interaction_mode": "mcq",
+      "topic": "Factors and multiples",
+      "difficulty_tier": "warmup",
+      "question_number": 1,
+      "choices": [
+        "I only",
+        "II only",
+        "Both I and II",
+        "Neither I nor II"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S6",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L3_s06_q02",
+      "stem": "Find the H.C.F. of 27 and 45",
+      "interaction_mode": "mcq",
+      "topic": "Factors and multiples",
+      "difficulty_tier": "warmup",
+      "question_number": 2,
+      "choices": [
+        "3",
+        "6",
+        "9",
+        "15"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S6",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L3_s06_q03",
+      "stem": "What is the greatest number that divides 37, 50 and 123 leaving remainders 1, 2 and 3 respectively?",
+      "interaction_mode": "mcq",
+      "topic": "Factors and multiples",
+      "difficulty_tier": "warmup",
+      "question_number": 3,
+      "choices": [
+        "9",
+        "10",
+        "15",
+        "12"
+      ],
+      "correct_answer": 3,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S6",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L3_s06_q04",
+      "stem": "The common factor between the numerator and denominator of 6/15 is",
+      "interaction_mode": "mcq",
+      "topic": "Factors and multiples",
+      "difficulty_tier": "warmup",
+      "question_number": 4,
+      "choices": [
+        "3",
+        "2",
+        "5",
+        "4"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S6",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L3_s06_q05",
+      "stem": "David has a stove with two hobs. Dishes need 40, 15, 35, 10 and 45 min. How long for preparation?",
+      "interaction_mode": "mcq",
+      "topic": "Factors and multiples",
+      "difficulty_tier": "warmup",
+      "question_number": 5,
+      "choices": [
+        "60 min",
+        "70 min",
+        "75 min",
+        "80 min",
+        "85 min"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S6",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L3_s06_q06",
+      "stem": "The L.C.M. of 4, 8, and 16 is",
+      "interaction_mode": "mcq",
+      "topic": "Factors and multiples",
+      "difficulty_tier": "practice",
+      "question_number": 6,
+      "choices": [
+        "2",
+        "4",
+        "1",
+        "16"
+      ],
+      "correct_answer": 3,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S6",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L3_s06_q07",
+      "stem": "The LCM of two numbers is 30 and their HCF is 15. If one number is 30, then what is the other?",
+      "interaction_mode": "mcq",
+      "topic": "Factors and multiples",
+      "difficulty_tier": "practice",
+      "question_number": 7,
+      "choices": [
+        "30",
+        "25",
+        "15",
+        "20"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S6",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L3_s06_q08",
+      "stem": "The L.C.M. of 5, 10, and 18 is",
+      "interaction_mode": "mcq",
+      "topic": "Factors and multiples",
+      "difficulty_tier": "practice",
+      "question_number": 8,
+      "choices": [
+        "80",
+        "85",
+        "90",
+        "180"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S6",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L3_s06_q09",
+      "stem": "The L.C.M. of two co-prime numbers is 117. What is the sum of squares of the numbers?",
+      "interaction_mode": "mcq",
+      "topic": "Factors and multiples",
+      "difficulty_tier": "practice",
+      "question_number": 9,
+      "choices": [
+        "220",
+        "1530",
+        "250",
+        "22"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S6",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L3_s06_q10",
+      "stem": "Four bells ring at intervals of 6, 7, 8 and 9 seconds. After how many seconds do all ring together?",
+      "interaction_mode": "mcq",
+      "topic": "Factors and multiples",
+      "difficulty_tier": "practice",
+      "question_number": 10,
+      "choices": [
+        "504",
+        "516",
+        "508",
+        "512"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S6",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L3_s06_q11",
+      "stem": "HCF of two numbers is 11 and their LCM is 385. If numbers don't differ by more than 50, what is their sum?",
+      "interaction_mode": "mcq",
+      "topic": "Factors and multiples",
+      "difficulty_tier": "challenge",
+      "question_number": 11,
+      "choices": [
+        "132",
+        "35",
+        "12",
+        "36"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S6",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L3_s06_q12",
+      "stem": "What is the least number which when divided by 4, 5, 6 and 7 leaves remainder 3, but when divided by 9 leaves no remainder?",
+      "interaction_mode": "mcq",
+      "topic": "Factors and multiples",
+      "difficulty_tier": "challenge",
+      "question_number": 12,
+      "choices": [
+        "1683",
+        "1263",
+        "843",
+        "423"
+      ],
+      "correct_answer": 3,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S6",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L3_s06_q13",
+      "stem": "What is the greatest 4-digit number exactly divisible by 12, 15, 20 and 35?",
+      "interaction_mode": "mcq",
+      "topic": "Factors and multiples",
+      "difficulty_tier": "challenge",
+      "question_number": 13,
+      "choices": [
+        "9999",
+        "9660",
+        "9832",
+        "9860"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S6",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L3_s06_q14",
+      "stem": "What is the smallest number which when divided by 20, 25, 35 and 40 leaves remainders 14, 19, 29 and 34?",
+      "interaction_mode": "mcq",
+      "topic": "Factors and multiples",
+      "difficulty_tier": "challenge",
+      "question_number": 14,
+      "choices": [
+        "1394",
+        "1404",
+        "1664",
+        "1406"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S6",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L3_s06_q15",
+      "stem": "The greatest number which on dividing 1657 and 2037 leaves remainders 6 and 5 respectively",
+      "interaction_mode": "mcq",
+      "topic": "Factors and multiples",
+      "difficulty_tier": "challenge",
+      "question_number": 15,
+      "choices": [
+        "123",
+        "127",
+        "235",
+        "305"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S6",
+      "diagnostics": {}
+    }
+  ]
+}

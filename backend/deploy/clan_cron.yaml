@@ -1,22 +1,36 @@
 # Cloud Scheduler job for daily clan score aggregation
 # Runs at midnight IST (18:30 UTC previous day)
 #
-# Deploy:
+# The endpoint authenticates via the X-Internal-Key header, which must match
+# the KIWIMATH_INTERNAL_API_KEY env var set on the Cloud Run service.
+# Generate a strong secret once (e.g. `openssl rand -hex 32`) and use the SAME
+# value in both places. Do NOT commit the secret to git.
+#
+# Deploy (replace $KIWIMATH_INTERNAL_API_KEY with the actual secret):
 #   gcloud scheduler jobs create http daily-clan-aggregation \
 #     --schedule="30 18 * * *" \
-#     --uri="https://kiwimath-api-deufqab6gq-el.a.run.app/v4/internal/aggregate-daily?api_key=kiwimath_internal_2026" \
+#     --uri="https://kiwimath-api-deufqab6gq-el.a.run.app/v4/internal/aggregate-daily" \
 #     --http-method=POST \
+#     --headers="X-Internal-Key=$KIWIMATH_INTERNAL_API_KEY" \
 #     --location=asia-south1 \
 #     --time-zone="UTC" \
 #     --description="Aggregate daily clan scores at midnight IST"
+#
+# Update an existing job:
+#   gcloud scheduler jobs update http daily-clan-aggregation \
+#     --uri="https://kiwimath-api-deufqab6gq-el.a.run.app/v4/internal/aggregate-daily" \
+#     --update-headers="X-Internal-Key=$KIWIMATH_INTERNAL_API_KEY" \
+#     --location=asia-south1
 
 name: daily-clan-aggregation
 schedule: "30 18 * * *"
 time_zone: UTC
 description: "Aggregate daily clan scores at midnight IST"
 http_target:
-  uri: "https://kiwimath-api-deufqab6gq-el.a.run.app/v4/internal/aggregate-daily?api_key=kiwimath_internal_2026"
+  uri: "https://kiwimath-api-deufqab6gq-el.a.run.app/v4/internal/aggregate-daily"
   http_method: POST
+  headers:
+    X-Internal-Key: "REPLACE_WITH_KIWIMATH_INTERNAL_API_KEY"
 retry_config:
   retry_count: 3
   min_backoff_duration: "30s"

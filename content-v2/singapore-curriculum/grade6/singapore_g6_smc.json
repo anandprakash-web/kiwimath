@@ -1,0 +1,976 @@
+{
+  "topic_id": "singapore_g6_smc",
+  "topic_name": "Singapore Math Challenge — Grade 6 Gap-Fill",
+  "version": "1.0",
+  "curriculum": "SINGAPORE",
+  "grade": 6,
+  "source": "2023 Singapore Math Challenge gaps",
+  "total_questions": 30,
+  "questions": [
+    {
+      "id": "SING-G6-SMC-009",
+      "stem": "A net is folded to form an open box (no lid). The base is 10 cm × 6 cm and the height is 4 cm. What is the volume of the open box?",
+      "choices": [
+        "200 cm³",
+        "220 cm³",
+        "240 cm³",
+        "280 cm³"
+      ],
+      "correct_answer": "C",
+      "difficulty_tier": "easy",
+      "difficulty_score": 1,
+      "tags": [
+        "volume_nets",
+        "cuboid",
+        "open_box"
+      ],
+      "chapter": "Singapore Math Challenge",
+      "visual_context": "Net of an open box — base rectangle with four flaps.",
+      "hint": {
+        "level_0": "An open box still has the same volume formula as a closed cuboid.",
+        "level_1": "Volume = length × width × height.",
+        "level_2": "Volume = 10 × 6 × 4 = 240 cm³."
+      },
+      "diagnostics": {
+        "correct_explanation": "The answer is 240 cm³.",
+        "0": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+        "1": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+        "3": "This doesn't match all the conditions in the problem. Test each clue against your answer."
+      },
+      "visual_svg": "<svg viewBox=\"0 0 160 80\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"5\" y=\"5\" width=\"150\" height=\"70\" rx=\"8\" fill=\"#F8F9FA\" stroke=\"#DEE2E6\" stroke-width=\"1.5\"/><text x=\"80\" y=\"42\" text-anchor=\"middle\" font-size=\"10\" fill=\"#6C757D\">Net of an open box — base rectangle</text></svg>",
+      "visual_alt": "Visual for: A net is folded to form an open box (no lid). The "
+    },
+    {
+      "id": "SING-G6-SMC-021",
+      "stem": "A box measures 30 cm × 20 cm × 15 cm. Small cubes of side 5 cm are packed into the box. How many cubes can fit?",
+      "choices": [
+        "36",
+        "48",
+        "60",
+        "72"
+      ],
+      "correct_answer": "D",
+      "difficulty_tier": "easy",
+      "difficulty_score": 2,
+      "tags": [
+        "volume_packing",
+        "cubes",
+        "division"
+      ],
+      "chapter": "Singapore Math Challenge",
+      "visual_context": "Rectangular box with small cubes packed inside.",
+      "hint": {
+        "level_0": "Find how many cubes fit along each dimension.",
+        "level_1": "Along length: 30 ÷ 5 = 6. Width: 20 ÷ 5 = 4. Height: 15 ÷ 5 = 3.",
+        "level_2": "Total cubes = 6 × 4 × 3 = 72."
+      },
+      "diagnostics": {
+        "correct_explanation": "The answer is 72.",
+        "0": "You may have divided when you should have multiplied, or only counted half the items.",
+        "1": "Check your multiplication. Break it into smaller steps if needed.",
+        "2": "Check your multiplication. Break it into smaller steps if needed."
+      },
+      "visual_svg": "<svg viewBox=\"0 0 160 80\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"5\" y=\"5\" width=\"150\" height=\"70\" rx=\"8\" fill=\"#F8F9FA\" stroke=\"#DEE2E6\" stroke-width=\"1.5\"/><text x=\"80\" y=\"42\" text-anchor=\"middle\" font-size=\"10\" fill=\"#6C757D\">Rectangular box with small cubes pa</text></svg>",
+      "visual_alt": "Visual for: A box measures 30 cm × 20 cm × 15 cm. Small cubes "
+    },
+    {
+      "id": "SING-G6-SMC-013",
+      "stem": "The average of four numbers is 45. When one number is removed, the average of the remaining three numbers is 40. What was the number that was removed?",
+      "choices": [
+        "50",
+        "55",
+        "60",
+        "65"
+      ],
+      "correct_answer": "C",
+      "difficulty_tier": "easy",
+      "difficulty_score": 3,
+      "tags": [
+        "average",
+        "removal",
+        "word_problem"
+      ],
+      "chapter": "Singapore Math Challenge",
+      "visual_context": null,
+      "hint": {
+        "level_0": "Find totals before and after removal.",
+        "level_1": "Before: 4 × 45 = 180. After: 3 × 40 = 120.",
+        "level_2": "Removed number = 180 − 120 = 60."
+      },
+      "diagnostics": {
+        "correct_explanation": "The answer is 60.",
+        "0": "Not quite. You're off by 10. Re-check your arithmetic step by step.",
+        "1": "Not quite. You're off by 5. Re-check your arithmetic step by step.",
+        "3": "Not quite. You're off by 5. Re-check your arithmetic step by step."
+      }
+    },
+    {
+      "id": "SING-G6-SMC-025",
+      "stem": "Cubes of side 3 cm are packed into a rectangular box. Along the length, 8 cubes fit. Along the width, 5 cubes fit. Along the height, 4 cubes fit. What is the volume of the box?",
+      "choices": [
+        "1,080 cm³",
+        "2,160 cm³",
+        "4,320 cm³",
+        "12,960 cm³"
+      ],
+      "correct_answer": "C",
+      "difficulty_tier": "easy",
+      "difficulty_score": 4,
+      "tags": [
+        "volume_packing",
+        "cubes",
+        "multiplication"
+      ],
+      "chapter": "Singapore Math Challenge",
+      "visual_context": "Box filled with uniform cubes.",
+      "hint": {
+        "level_0": "Find the box dimensions from the number of cubes and cube size.",
+        "level_1": "Length = 8 × 3 = 24 cm. Width = 5 × 3 = 15 cm. Height = 4 × 3 = 12 cm.",
+        "level_2": "Volume = 24 × 15 × 12 = 4,320 cm³."
+      },
+      "diagnostics": {
+        "correct_explanation": "The answer is 4,320 cm³.",
+        "0": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+        "1": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+        "3": "This doesn't match all the conditions in the problem. Test each clue against your answer."
+      },
+      "visual_svg": "<svg viewBox=\"0 0 160 80\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"5\" y=\"5\" width=\"150\" height=\"70\" rx=\"8\" fill=\"#F8F9FA\" stroke=\"#DEE2E6\" stroke-width=\"1.5\"/><text x=\"80\" y=\"42\" text-anchor=\"middle\" font-size=\"10\" fill=\"#6C757D\">Box filled with uniform cubes.</text></svg>",
+      "visual_alt": "Visual for: Cubes of side 3 cm are packed into a rectangular b"
+    },
+    {
+      "id": "SING-G6-SMC-006",
+      "stem": "The net of a cube has a total surface area of 150 cm². What is the volume of the cube?",
+      "choices": [
+        "25 cm³",
+        "100 cm³",
+        "125 cm³",
+        "150 cm³"
+      ],
+      "correct_answer": "C",
+      "difficulty_tier": "easy",
+      "difficulty_score": 5,
+      "tags": [
+        "volume_nets",
+        "cube",
+        "surface_area"
+      ],
+      "chapter": "Singapore Math Challenge",
+      "visual_context": "Net of a cube (cross-shaped arrangement of 6 squares).",
+      "hint": {
+        "level_0": "A cube has 6 faces. Find the area of one face first.",
+        "level_1": "Area of one face = 150 ÷ 6 = 25 cm². Side = 5 cm.",
+        "level_2": "Volume = 5 × 5 × 5 = 125 cm³."
+      },
+      "diagnostics": {
+        "correct_explanation": "The answer is 125 cm³.",
+        "0": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+        "1": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+        "3": "This doesn't match all the conditions in the problem. Test each clue against your answer."
+      },
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 190\" width=\"260\" height=\"190\" style=\"font-family:Arial,sans-serif\"><polygon points=\"60,60 160,60 160,160 60,160\" fill=\"#E8F4FD\" stroke=\"#333\" stroke-width=\"2\"/><polygon points=\"60,60 100,30 200,30 160,60\" fill=\"#D0E8F0\" stroke=\"#333\" stroke-width=\"2\"/><polygon points=\"160,60 200,30 200,130 160,160\" fill=\"#B8D8E8\" stroke=\"#333\" stroke-width=\"2\"/></svg>"
+    },
+    {
+      "id": "SING-G6-SMC-011",
+      "stem": "The average mark of 5 pupils is 72. When a 6th pupil joins, the average becomes 74. What is the 6th pupil's mark?",
+      "choices": [
+        "76",
+        "82",
+        "84",
+        "86"
+      ],
+      "correct_answer": "C",
+      "difficulty_tier": "easy",
+      "difficulty_score": 6,
+      "tags": [
+        "average",
+        "addition",
+        "word_problem"
+      ],
+      "chapter": "Singapore Math Challenge",
+      "visual_context": null,
+      "hint": {
+        "level_0": "Find the total marks before and after the 6th pupil joins.",
+        "level_1": "Before: 5 × 72 = 360. After: 6 × 74 = 444.",
+        "level_2": "6th pupil's mark = 444 − 360 = 84."
+      },
+      "diagnostics": {
+        "correct_explanation": "The answer is 84.",
+        "0": "Not quite. You're off by 8. Re-check your arithmetic step by step.",
+        "1": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+        "3": "You're off by 2. Check whether you accidentally included or excluded boundary values."
+      }
+    },
+    {
+      "id": "SING-G6-SMC-015",
+      "stem": "The average score of a team of 6 players is 15 points. After two more players with scores of 20 and 26 join the team, what is the new average?",
+      "choices": [
+        "16",
+        "16.5",
+        "17",
+        "17.5"
+      ],
+      "correct_answer": "C",
+      "difficulty_tier": "easy",
+      "difficulty_score": 7,
+      "tags": [
+        "average",
+        "addition",
+        "word_problem"
+      ],
+      "chapter": "Singapore Math Challenge",
+      "visual_context": null,
+      "hint": {
+        "level_0": "Find the new total and divide by the new number of players.",
+        "level_1": "Original total = 6 × 15 = 90. New total = 90 + 20 + 26 = 136.",
+        "level_2": "New average = 136 ÷ 8 = 17."
+      },
+      "diagnostics": {
+        "correct_explanation": "The answer is 17.",
+        "0": "You're off by 1. Double-check your final calculation step — did you count the endpoints correctly?",
+        "1": "Not quite. You're off by 0. Re-check your arithmetic step by step.",
+        "3": "Not quite. You're off by 0. Re-check your arithmetic step by step."
+      }
+    },
+    {
+      "id": "SING-G6-SMC-026",
+      "stem": "Pattern 1 is a single cube. Pattern 2 is a 2 × 2 × 2 arrangement of cubes. Pattern 3 is a 3 × 3 × 3 arrangement. Each small cube has a volume of 8 cm³. What is the total volume of Pattern 5?",
+      "choices": [
+        "200 cm³",
+        "500 cm³",
+        "1,000 cm³",
+        "1,250 cm³"
+      ],
+      "correct_answer": "C",
+      "difficulty_tier": "easy",
+      "difficulty_score": 8,
+      "tags": [
+        "patterns_volume",
+        "cubes",
+        "sequences"
+      ],
+      "chapter": "Singapore Math Challenge",
+      "visual_context": "Growing cube patterns: 1×1×1, 2×2×2, 3×3×3, etc.",
+      "hint": {
+        "level_0": "Pattern n uses n³ small cubes.",
+        "level_1": "Pattern 5 uses 5³ = 125 small cubes.",
+        "level_2": "Total volume = 125 × 8 = 1,000 cm³."
+      },
+      "diagnostics": {
+        "correct_explanation": "The answer is 1,000 cm³.",
+        "0": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+        "1": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+        "3": "This doesn't match all the conditions in the problem. Test each clue against your answer."
+      },
+      "visual_svg": "<svg viewBox=\"0 0 430 55\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"30\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"30\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">1</text><circle cx=\"75\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"75\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">2</text><circle cx=\"120\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"120\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">2</text><circle cx=\"165\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"165\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">2</text><circle cx=\"210\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"210\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">2</text><circle cx=\"255\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"255\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">3</text><circle cx=\"300\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"300\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">3</text><circle cx=\"345\" cy=\"25\" r=\"18\" fill=\"#FFF3E0\" stroke=\"#F57C00\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"345\" y=\"31\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#F57C00\">?</text></svg>",
+      "visual_alt": "Visual for: Pattern 1 is a single cube. Pattern 2 is a 2 × 2 ×"
+    },
+    {
+      "id": "SING-G6-SMC-007",
+      "stem": "A net is folded to form a rectangular box (cuboid). The net shows three pairs of rectangles: two are 8 cm × 5 cm, two are 8 cm × 3 cm, and two are 5 cm × 3 cm. What is the volume of the cuboid?",
+      "choices": [
+        "80 cm³",
+        "100 cm³",
+        "120 cm³",
+        "158 cm³"
+      ],
+      "correct_answer": "C",
+      "difficulty_tier": "medium",
+      "difficulty_score": 9,
+      "tags": [
+        "volume_nets",
+        "cuboid",
+        "surface_area"
+      ],
+      "chapter": "Singapore Math Challenge",
+      "visual_context": "Net of a cuboid showing six rectangular faces.",
+      "hint": {
+        "level_0": "Identify the three dimensions from the face sizes.",
+        "level_1": "The faces are l×w, l×h, w×h. So l = 8, w = 5, h = 3.",
+        "level_2": "Volume = 8 × 5 × 3 = 120 cm³."
+      },
+      "diagnostics": {
+        "correct_explanation": "The answer is 120 cm³.",
+        "0": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+        "1": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+        "3": "This doesn't match all the conditions in the problem. Test each clue against your answer."
+      },
+      "visual_svg": "<svg viewBox=\"0 0 150 155\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"15\" y=\"35\" width=\"120\" height=\"80\" fill=\"none\" stroke=\"#4A90D9\" stroke-width=\"2.5\"/><text x=\"75\" y=\"148\" text-anchor=\"middle\" font-size=\"11\" fill=\"#333\">8 cm</text><text x=\"142\" y=\"85\" font-size=\"11\" fill=\"#333\">5 cm</text></svg>",
+      "visual_alt": "Visual for: A net is folded to form a rectangular box (cuboid)"
+    },
+    {
+      "id": "SING-G6-SMC-024",
+      "stem": "A cube of side 12 cm is filled completely with smaller cubes of side 2 cm. If 1/4 of the small cubes are removed, how many small cubes remain?",
+      "choices": [
+        "108",
+        "162",
+        "216",
+        "648"
+      ],
+      "correct_answer": "B",
+      "difficulty_tier": "medium",
+      "difficulty_score": 10,
+      "tags": [
+        "volume_packing",
+        "cubes",
+        "fractions"
+      ],
+      "chapter": "Singapore Math Challenge",
+      "visual_context": "Large cube partially filled with small cubes.",
+      "hint": {
+        "level_0": "Find the total number of small cubes, then remove 1/4.",
+        "level_1": "Along each side: 12 ÷ 2 = 6. Total = 6³ = 216.",
+        "level_2": "Remaining = 216 × 3/4 = 162 cubes."
+      },
+      "diagnostics": {
+        "correct_explanation": "The answer is 162.",
+        "0": "Re-read the problem carefully and check which numbers and operations to use.",
+        "2": "Re-read the problem carefully and check which numbers and operations to use.",
+        "3": "Re-read the problem carefully and check which numbers and operations to use."
+      },
+      "visual_svg": "<svg viewBox=\"0 0 160 80\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"5\" y=\"5\" width=\"150\" height=\"70\" rx=\"8\" fill=\"#F8F9FA\" stroke=\"#DEE2E6\" stroke-width=\"1.5\"/><text x=\"80\" y=\"42\" text-anchor=\"middle\" font-size=\"10\" fill=\"#6C757D\">Large cube partially filled with sm</text></svg>",
+      "visual_alt": "Visual for: A cube of side 12 cm is filled completely with sma"
+    },
+    {
+      "id": "SING-G6-SMC-001",
+      "stem": "Numbers are written in a zigzag pattern in a grid with 5 columns as shown.\nColumn: 1  2  3  4  5\nRow 1:  1  2  3  4  5\nRow 2:  10 9  8  7  6\nRow 3:  11 12 13 14 15\nRow 4:  20 19 18 17 16\nIn which column is the number 83?",
+      "choices": [
+        "Column 1",
+        "Column 2",
+        "Column 3",
+        "Column 4"
+      ],
+      "correct_answer": "C",
+      "difficulty_tier": "medium",
+      "difficulty_score": 11,
+      "tags": [
+        "patterns_zigzag",
+        "grid",
+        "number_pattern"
+      ],
+      "chapter": "Singapore Math Challenge",
+      "visual_context": "Numbers 1–20 arranged in a 5-column zigzag grid: left-to-right in odd rows, right-to-left in even rows.",
+      "hint": {
+        "level_0": "Each row has 5 numbers. Find which row 83 is in.",
+        "level_1": "83 ÷ 5 = 16 remainder 3, so 83 is in Row 17, position 3.",
+        "level_2": "Row 17 is odd, so numbers go left to right. Position 3 = Column 3."
+      },
+      "diagnostics": {
+        "correct_explanation": "The answer is Column 3.",
+        "0": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+        "1": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+        "3": "This doesn't match all the conditions in the problem. Test each clue against your answer."
+      },
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 210\" width=\"300\" height=\"210\" style=\"font-family:Arial,sans-serif\"><line x1=\"150\" y1=\"10\" x2=\"150\" y2=\"190\" stroke=\"#E57373\" stroke-width=\"2\" stroke-dasharray=\"6,4\"/><polygon points=\"150,30 100,80 110,150 190,150 200,80\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2\"/><text x=\"150\" y=\"195\" text-anchor=\"middle\" font-size=\"11\" fill=\"#E57373\">Line of Symmetry</text></svg>"
+    },
+    {
+      "id": "SING-G6-SMC-012",
+      "stem": "The average height of 8 boys is 142 cm. The average height of 12 girls is 138 cm. What is the average height of all 20 children?",
+      "choices": [
+        "139.0 cm",
+        "139.4 cm",
+        "139.6 cm",
+        "140.0 cm"
+      ],
+      "correct_answer": "C",
+      "difficulty_tier": "medium",
+      "difficulty_score": 12,
+      "tags": [
+        "average",
+        "weighted_average",
+        "word_problem"
+      ],
+      "chapter": "Singapore Math Challenge",
+      "visual_context": null,
+      "hint": {
+        "level_0": "Use the weighted average formula.",
+        "level_1": "Total height = 8 × 142 + 12 × 138 = 1136 + 1656 = 2792.",
+        "level_2": "Average = 2792 ÷ 20 = 139.6 cm."
+      },
+      "diagnostics": {
+        "correct_explanation": "The answer is 139.6 cm.",
+        "0": "Not quite. You're off by 0. Re-check your arithmetic step by step.",
+        "1": "Not quite. You're off by 0. Re-check your arithmetic step by step.",
+        "3": "Not quite. You're off by 0. Re-check your arithmetic step by step."
+      }
+    },
+    {
+      "id": "SING-G6-SMC-017",
+      "stem": "A taxi charges $3.50 for the first km and $0.25 for each additional 500 m. Mrs Tan takes a taxi and pays exactly $8.50. What distance did she travel?",
+      "choices": [
+        "10 km",
+        "10.5 km",
+        "11 km",
+        "11.5 km"
+      ],
+      "correct_answer": "C",
+      "difficulty_tier": "medium",
+      "difficulty_score": 13,
+      "tags": [
+        "decimals_taxi",
+        "fare_calculation",
+        "word_problem"
+      ],
+      "chapter": "Singapore Math Challenge",
+      "visual_context": null,
+      "hint": {
+        "level_0": "Subtract the base fare, then find the number of 500 m intervals.",
+        "level_1": "Extra charge = $8.50 − $3.50 = $5.00. Intervals = $5.00 ÷ $0.25 = 20.",
+        "level_2": "Additional distance = 20 × 500 m = 10,000 m = 10 km. Total = 1 + 10 = 11 km."
+      },
+      "diagnostics": {
+        "correct_explanation": "The answer is 11 km.",
+        "0": "You're off by 1. Double-check your final calculation step — did you count the endpoints correctly?",
+        "1": "Not quite. You're off by 0. Re-check your arithmetic step by step.",
+        "3": "Not quite. You're off by 0. Re-check your arithmetic step by step."
+      }
+    },
+    {
+      "id": "SING-G6-SMC-022",
+      "stem": "A container is 40 cm long, 25 cm wide and 20 cm high. Identical cuboids measuring 10 cm × 5 cm × 4 cm are packed into the container. What is the maximum number of cuboids that can fit?",
+      "choices": [
+        "80",
+        "100",
+        "120",
+        "200"
+      ],
+      "correct_answer": "B",
+      "difficulty_tier": "medium",
+      "difficulty_score": 14,
+      "tags": [
+        "volume_packing",
+        "cuboids",
+        "division"
+      ],
+      "chapter": "Singapore Math Challenge",
+      "visual_context": "Rectangular container with smaller cuboids packed inside.",
+      "hint": {
+        "level_0": "Divide the container volume by the cuboid volume.",
+        "level_1": "Container volume = 40 × 25 × 20 = 20,000 cm³. Cuboid volume = 10 × 5 × 4 = 200 cm³.",
+        "level_2": "Maximum = 20,000 ÷ 200 = 100 cuboids. (Dimensions divide evenly: 40/10=4, 25/5=5, 20/4=5.)"
+      },
+      "diagnostics": {
+        "correct_explanation": "The answer is 100.",
+        "0": "Check your multiplication. Break it into smaller steps if needed.",
+        "2": "Check your multiplication. Break it into smaller steps if needed.",
+        "3": "You doubled when you shouldn't have. Re-read the problem — are you counting each item once or twice?"
+      },
+      "visual_svg": "<svg viewBox=\"0 0 150 155\" xmlns=\"http://www.w3.org/2000/svg\"><g stroke=\"#4A90D9\" stroke-width=\"2\" fill=\"none\"><rect x=\"30\" y=\"40\" width=\"70\" height=\"60\"/><line x1=\"30\" y1=\"40\" x2=\"55\" y2=\"20\"/><line x1=\"100\" y1=\"40\" x2=\"125\" y2=\"20\"/><line x1=\"55\" y1=\"20\" x2=\"125\" y2=\"20\"/><line x1=\"125\" y1=\"20\" x2=\"125\" y2=\"80\"/><line x1=\"100\" y1=\"100\" x2=\"125\" y2=\"80\"/></g><text x=\"75\" y=\"148\" text-anchor=\"middle\" font-size=\"11\" fill=\"#333\">40 cm</text><text x=\"142\" y=\"85\" font-size=\"11\" fill=\"#333\">25 cm</text></svg>",
+      "visual_alt": "Visual for: A container is 40 cm long, 25 cm wide and 20 cm hi"
+    },
+    {
+      "id": "SING-G6-SMC-016",
+      "stem": "A taxi charges a base fare of $3.20 for the first kilometre. For every additional 400 m, it charges $0.22. How much does a 5.8 km trip cost?",
+      "choices": [
+        "$5.60",
+        "$5.84",
+        "$6.06",
+        "$6.40"
+      ],
+      "correct_answer": "B",
+      "difficulty_tier": "medium",
+      "difficulty_score": 15,
+      "tags": [
+        "decimals_taxi",
+        "fare_calculation",
+        "word_problem"
+      ],
+      "chapter": "Singapore Math Challenge",
+      "visual_context": null,
+      "hint": {
+        "level_0": "Find the distance beyond the first km, then count 400 m intervals.",
+        "level_1": "Additional distance = 5.8 − 1 = 4.8 km = 4800 m. Intervals = 4800 ÷ 400 = 12.",
+        "level_2": "Cost = $3.20 + 12 × $0.22 = $3.20 + $2.64 = $5.84."
+      },
+      "diagnostics": {
+        "correct_explanation": "The answer is $5.84.",
+        "0": "Not quite. You're off by 0. Re-check your arithmetic step by step.",
+        "2": "Not quite. You're off by 0. Re-check your arithmetic step by step.",
+        "3": "Not quite. You're off by 0. Re-check your arithmetic step by step."
+      }
+    },
+    {
+      "id": "SING-G6-SMC-020",
+      "stem": "A taxi fare is $3.60 for the first km and $0.30 for each additional 500 m. Ling Ling and her two friends share the cost equally for a 7 km trip. How much does each person pay?",
+      "choices": [
+        "$2.20",
+        "$2.40",
+        "$2.60",
+        "$3.80"
+      ],
+      "correct_answer": "B",
+      "difficulty_tier": "hard",
+      "difficulty_score": 16,
+      "tags": [
+        "decimals_taxi",
+        "fare_calculation",
+        "sharing"
+      ],
+      "chapter": "Singapore Math Challenge",
+      "visual_context": null,
+      "hint": {
+        "level_0": "Find the total fare, then divide by 3.",
+        "level_1": "Additional distance = 6 km = 6000 m. Intervals = 6000 ÷ 500 = 12. Fare = $3.60 + 12 × $0.30 = $3.60 + $3.60 = $7.20.",
+        "level_2": "Each person pays $7.20 ÷ 3 = $2.40."
+      },
+      "diagnostics": {
+        "correct_explanation": "The answer is $2.40.",
+        "0": "Not quite. You're off by 0. Re-check your arithmetic step by step.",
+        "2": "Not quite. You're off by 0. Re-check your arithmetic step by step.",
+        "3": "Not quite. You're off by 1. Re-check your arithmetic step by step."
+      }
+    },
+    {
+      "id": "SING-G6-SMC-023",
+      "stem": "A warehouse has a space of 6 m × 4 m × 3 m. Crates measuring 1 m × 0.5 m × 0.5 m are stacked inside. What is the maximum number of crates?",
+      "choices": [
+        "144",
+        "192",
+        "240",
+        "288"
+      ],
+      "correct_answer": "D",
+      "difficulty_tier": "hard",
+      "difficulty_score": 17,
+      "tags": [
+        "volume_packing",
+        "cuboids",
+        "real_world"
+      ],
+      "chapter": "Singapore Math Challenge",
+      "visual_context": "Warehouse space with crates stacked inside.",
+      "hint": {
+        "level_0": "Find the volume of the space and each crate, then divide.",
+        "level_1": "Space = 6 × 4 × 3 = 72 m³. Crate = 1 × 0.5 × 0.5 = 0.25 m³.",
+        "level_2": "Maximum = 72 ÷ 0.25 = 288 crates. (Check fit: 6/1=6, 4/0.5=8, 3/0.5=6. Total = 6 × 8 × 6 = 288.)"
+      },
+      "diagnostics": {
+        "correct_explanation": "The answer is 288.",
+        "0": "You may have divided when you should have multiplied, or only counted half the items.",
+        "1": "Check your multiplication. Break it into smaller steps if needed.",
+        "2": "Check your multiplication. Break it into smaller steps if needed."
+      },
+      "visual_svg": "<svg viewBox=\"0 0 160 80\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"5\" y=\"5\" width=\"150\" height=\"70\" rx=\"8\" fill=\"#F8F9FA\" stroke=\"#DEE2E6\" stroke-width=\"1.5\"/><text x=\"80\" y=\"42\" text-anchor=\"middle\" font-size=\"10\" fill=\"#6C757D\">Warehouse space with crates stacked</text></svg>",
+      "visual_alt": "Visual for: A warehouse has a space of 6 m × 4 m × 3 m. Crates"
+    },
+    {
+      "id": "SING-G6-SMC-002",
+      "stem": "Numbers are arranged in a serpentine pattern across 4 columns.\nColumn: 1  2  3  4\nRow 1:  1  2  3  4\nRow 2:  8  7  6  5\nRow 3:  9  10 11 12\nWhat number is in Row 25, Column 3?",
+      "choices": [
+        "95",
+        "97",
+        "99",
+        "100"
+      ],
+      "correct_answer": "C",
+      "difficulty_tier": "hard",
+      "difficulty_score": 18,
+      "tags": [
+        "patterns_zigzag",
+        "grid",
+        "number_pattern"
+      ],
+      "chapter": "Singapore Math Challenge",
+      "visual_context": "Numbers in 4-column zigzag: left-to-right in odd rows, right-to-left in even rows.",
+      "hint": {
+        "level_0": "Each row has 4 numbers. Row 25 starts at number 4 × 24 + 1 = 97.",
+        "level_1": "Row 25 is odd, so it goes left to right: Col 1 = 97, Col 2 = 98, Col 3 = 99, Col 4 = 100.",
+        "level_2": "Row 25 (odd): 97, 98, 99, 100. Column 3 = 99."
+      },
+      "diagnostics": {
+        "correct_explanation": "The answer is 99.",
+        "0": "Re-examine the pattern. Check the differences between ALL consecutive terms, not just the first pair.",
+        "1": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+        "3": "You're off by 1. Double-check your final calculation step — did you count the endpoints correctly?"
+      },
+      "visual_svg": "<svg viewBox=\"0 0 430 55\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"30\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"30\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">4</text><circle cx=\"75\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"75\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">1</text><circle cx=\"120\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"120\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">2</text><circle cx=\"165\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"165\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">3</text><circle cx=\"210\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"210\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">4</text><circle cx=\"255\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"255\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">1</text><circle cx=\"300\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"300\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">1</text><circle cx=\"345\" cy=\"25\" r=\"18\" fill=\"#FFF3E0\" stroke=\"#F57C00\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"345\" y=\"31\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#F57C00\">?</text></svg>",
+      "visual_alt": "Visual for: Numbers are arranged in a serpentine pattern acros"
+    },
+    {
+      "id": "SING-G6-SMC-008",
+      "stem": "A cube of side 6 cm has a square hole of side 2 cm cut straight through from one face to the opposite face. What is the volume of the remaining solid?",
+      "choices": [
+        "192 cm³",
+        "196 cm³",
+        "200 cm³",
+        "208 cm³"
+      ],
+      "correct_answer": "A",
+      "difficulty_tier": "hard",
+      "difficulty_score": 19,
+      "tags": [
+        "volume_nets",
+        "cube",
+        "subtraction"
+      ],
+      "chapter": "Singapore Math Challenge",
+      "visual_context": "Cube with a square tunnel cut through the centre from front to back.",
+      "hint": {
+        "level_0": "Volume of cube minus volume of the hole.",
+        "level_1": "Cube volume = 6³ = 216 cm³. Hole = 2 × 2 × 6 = 24 cm³.",
+        "level_2": "Remaining = 216 − 24 = 192 cm³."
+      },
+      "diagnostics": {
+        "correct_explanation": "The answer is 192 cm³.",
+        "1": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+        "2": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+        "3": "This doesn't match all the conditions in the problem. Test each clue against your answer."
+      },
+      "visual_svg": "<svg viewBox=\"0 0 150 155\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"25\" y=\"25\" width=\"100\" height=\"100\" fill=\"none\" stroke=\"#4A90D9\" stroke-width=\"2.5\"/><text x=\"75\" y=\"148\" text-anchor=\"middle\" font-size=\"11\" fill=\"#333\">6 cm</text><text x=\"142\" y=\"85\" font-size=\"11\" fill=\"#333\">2 cm</text></svg>",
+      "visual_alt": "Visual for: A cube of side 6 cm has a square hole of side 2 cm"
+    },
+    {
+      "id": "SING-G6-SMC-027",
+      "stem": "A staircase pattern is built with cubes. Step 1 has 1 cube, Step 2 has 1 + 2 = 3 cubes stacked (1 on top of 2), Step 3 has 1 + 2 + 3 = 6 cubes. Each cube has side 2 cm. What is the total volume of a 6-step staircase?",
+      "choices": [
+        "128 cm³",
+        "168 cm³",
+        "336 cm³",
+        "672 cm³"
+      ],
+      "correct_answer": "B",
+      "difficulty_tier": "hard",
+      "difficulty_score": 20,
+      "tags": [
+        "patterns_volume",
+        "cubes",
+        "triangular_numbers"
+      ],
+      "chapter": "Singapore Math Challenge",
+      "visual_context": "Staircase pattern built from unit cubes, increasing by one layer each step.",
+      "hint": {
+        "level_0": "Step n uses 1 + 2 + ... + n cubes. Find the total for 6 steps.",
+        "level_1": "Total cubes in 6-step staircase = 1 + 2 + 3 + 4 + 5 + 6 = 21 cubes.",
+        "level_2": "Volume per cube = 2³ = 8 cm³. Total volume = 21 × 8 = 168 cm³."
+      },
+      "diagnostics": {
+        "correct_explanation": "The answer is 168 cm³.",
+        "0": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+        "2": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+        "3": "This doesn't match all the conditions in the problem. Test each clue against your answer."
+      },
+      "visual_svg": "<svg viewBox=\"0 0 430 55\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"30\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"30\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">1</text><circle cx=\"75\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"75\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">1</text><circle cx=\"120\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"120\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">2</text><circle cx=\"165\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"165\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">1</text><circle cx=\"210\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"210\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">2</text><circle cx=\"255\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"255\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">3</text><circle cx=\"300\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"300\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">1</text><circle cx=\"345\" cy=\"25\" r=\"18\" fill=\"#FFF3E0\" stroke=\"#F57C00\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"345\" y=\"31\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#F57C00\">?</text></svg>",
+      "visual_alt": "Visual for: A staircase pattern is built with cubes. Step 1 ha"
+    },
+    {
+      "id": "SING-G6-SMC-005",
+      "stem": "Numbers are placed in a zigzag in 5 columns. Farah highlights every number that is a multiple of 3. In Row 6, how many highlighted numbers are there?",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correct_answer": "B",
+      "difficulty_tier": "hard",
+      "difficulty_score": 21,
+      "tags": [
+        "patterns_zigzag",
+        "multiples",
+        "grid"
+      ],
+      "chapter": "Singapore Math Challenge",
+      "visual_context": "5-column zigzag grid with multiples of 3 highlighted.",
+      "hint": {
+        "level_0": "First find which numbers are in Row 6, then check for multiples of 3.",
+        "level_1": "Row 6 (even, right-to-left): numbers 30, 29, 28, 27, 26.",
+        "level_2": "Multiples of 3: 30 and 27. That is 2 highlighted numbers."
+      },
+      "diagnostics": {
+        "correct_explanation": "The answer is 2.",
+        "0": "You're off by 1. Double-check your final calculation step — did you count the endpoints correctly?",
+        "2": "You're off by 1. Double-check your final calculation step — did you count the endpoints correctly?",
+        "3": "You're off by 2. Check whether you accidentally included or excluded boundary values."
+      },
+      "visual_svg": "<svg viewBox=\"0 0 160 80\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"5\" y=\"5\" width=\"150\" height=\"70\" rx=\"8\" fill=\"#F8F9FA\" stroke=\"#DEE2E6\" stroke-width=\"1.5\"/><text x=\"80\" y=\"42\" text-anchor=\"middle\" font-size=\"10\" fill=\"#6C757D\">5-column zigzag grid with multiples</text></svg>",
+      "visual_alt": "Visual for: Numbers are placed in a zigzag in 5 columns. Farah"
+    },
+    {
+      "id": "SING-G6-SMC-010",
+      "stem": "A triangular prism has a net that shows two right-angled triangles (base 6 cm, height 8 cm) and three rectangles. The length of the prism is 10 cm. What is the volume of the prism?",
+      "choices": [
+        "200 cm³",
+        "220 cm³",
+        "240 cm³",
+        "480 cm³"
+      ],
+      "correct_answer": "C",
+      "difficulty_tier": "hard",
+      "difficulty_score": 22,
+      "tags": [
+        "volume_nets",
+        "triangular_prism",
+        "3D_shapes"
+      ],
+      "chapter": "Singapore Math Challenge",
+      "visual_context": "Net of a triangular prism with right-angled triangle cross-section.",
+      "hint": {
+        "level_0": "Volume of a prism = area of cross-section × length.",
+        "level_1": "Cross-section area = ½ × 6 × 8 = 24 cm².",
+        "level_2": "Volume = 24 × 10 = 240 cm³."
+      },
+      "diagnostics": {
+        "correct_explanation": "The answer is 240 cm³.",
+        "0": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+        "1": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+        "3": "This doesn't match all the conditions in the problem. Test each clue against your answer."
+      },
+      "visual_svg": "<svg viewBox=\"0 0 150 155\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"75,15 15,135 135,135\" fill=\"none\" stroke=\"#4A90D9\" stroke-width=\"2.5\"/><text x=\"75\" y=\"148\" text-anchor=\"middle\" font-size=\"11\" fill=\"#333\">6 cm</text><text x=\"142\" y=\"85\" font-size=\"11\" fill=\"#333\">8 cm</text></svg>",
+      "visual_alt": "Visual for: A triangular prism has a net that shows two right-"
+    },
+    {
+      "id": "SING-G6-SMC-014",
+      "stem": "In a class of 30 pupils, the boys scored an average of 75 marks and the girls scored an average of 85 marks. The overall class average is 81 marks. How many boys are in the class?",
+      "choices": [
+        "10",
+        "12",
+        "15",
+        "18"
+      ],
+      "correct_answer": "B",
+      "difficulty_tier": "olympiad",
+      "difficulty_score": 23,
+      "tags": [
+        "average",
+        "weighted_average",
+        "algebra"
+      ],
+      "chapter": "Singapore Math Challenge",
+      "visual_context": null,
+      "hint": {
+        "level_0": "Let b = number of boys. Then girls = 30 − b.",
+        "level_1": "75b + 85(30 − b) = 81 × 30 = 2430.",
+        "level_2": "75b + 2550 − 85b = 2430 → −10b = −120 → b = 12."
+      },
+      "diagnostics": {
+        "correct_explanation": "The answer is 12.",
+        "0": "You're off by 2. Check whether you accidentally included or excluded boundary values.",
+        "2": "Not quite. You're off by 3. Re-check your arithmetic step by step.",
+        "3": "Not quite. You're off by 6. Re-check your arithmetic step by step."
+      }
+    },
+    {
+      "id": "SING-G6-SMC-029",
+      "stem": "A growing L-shaped pattern is made from cubes. Pattern 1 uses 3 cubes (a 2×1 base with 1 cube on top of one end). Pattern 2 uses 8 cubes (a 3×2 base minus one corner, stacked 1 high, with 2 cubes on top). In general, Pattern n uses n³ + 2n cubes. How many cubes are in Pattern 4?",
+      "choices": [
+        "64",
+        "68",
+        "72",
+        "80"
+      ],
+      "correct_answer": "C",
+      "difficulty_tier": "olympiad",
+      "difficulty_score": 24,
+      "tags": [
+        "patterns_volume",
+        "cubes",
+        "formula"
+      ],
+      "chapter": "Singapore Math Challenge",
+      "visual_context": "L-shaped 3D pattern growing in each direction.",
+      "hint": {
+        "level_0": "Use the formula: Pattern n uses n³ + 2n cubes.",
+        "level_1": "Pattern 4: 4³ + 2(4) = 64 + 8 = 72.",
+        "level_2": "72 cubes are needed for Pattern 4."
+      },
+      "diagnostics": {
+        "correct_explanation": "The answer is 72.",
+        "0": "Check your subtraction — make sure you're borrowing/regrouping correctly.",
+        "1": "Check your subtraction — make sure you're borrowing/regrouping correctly.",
+        "3": "You may have added instead of subtracting, or subtracted in the wrong order."
+      },
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 190\" width=\"260\" height=\"190\" style=\"font-family:Arial,sans-serif\"><polygon points=\"60,60 160,60 160,160 60,160\" fill=\"#E8F4FD\" stroke=\"#333\" stroke-width=\"2\"/><polygon points=\"60,60 100,30 200,30 160,60\" fill=\"#D0E8F0\" stroke=\"#333\" stroke-width=\"2\"/><polygon points=\"160,60 200,30 200,130 160,160\" fill=\"#B8D8E8\" stroke=\"#333\" stroke-width=\"2\"/></svg>"
+    },
+    {
+      "id": "SING-G6-SMC-003",
+      "stem": "Numbers are placed in a zigzag pattern in a 6-column grid.\nRow 1: 1, 2, 3, 4, 5, 6\nRow 2: 12, 11, 10, 9, 8, 7\nRow 3: 13, 14, 15, 16, 17, 18\nWhat is the sum of all numbers in Row 10?",
+      "choices": [
+        "327",
+        "333",
+        "339",
+        "345"
+      ],
+      "correct_answer": "D",
+      "difficulty_tier": "olympiad",
+      "difficulty_score": 25,
+      "tags": [
+        "patterns_zigzag",
+        "grid",
+        "sum"
+      ],
+      "chapter": "Singapore Math Challenge",
+      "visual_context": "6-column zigzag grid of consecutive numbers.",
+      "hint": {
+        "level_0": "Row 10 contains 6 numbers. Find the first and last number in Row 10.",
+        "level_1": "Row 10 contains numbers from 6(9)+1 = 55 to 6(10) = 60. Row 10 is even, so right-to-left: 60, 59, 58, 57, 56, 55.",
+        "level_2": "Sum = 55 + 56 + 57 + 58 + 59 + 60 = 345."
+      },
+      "diagnostics": {
+        "correct_explanation": "The answer is 345.",
+        "0": "Check your subtraction — make sure you're borrowing/regrouping correctly.",
+        "1": "Check your subtraction — make sure you're borrowing/regrouping correctly.",
+        "2": "Check your subtraction — make sure you're borrowing/regrouping correctly."
+      },
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 210\" width=\"300\" height=\"210\" style=\"font-family:Arial,sans-serif\"><line x1=\"150\" y1=\"10\" x2=\"150\" y2=\"190\" stroke=\"#E57373\" stroke-width=\"2\" stroke-dasharray=\"6,4\"/><polygon points=\"150,30 100,80 110,150 190,150 200,80\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2\"/><text x=\"150\" y=\"195\" text-anchor=\"middle\" font-size=\"11\" fill=\"#E57373\">Line of Symmetry</text></svg>"
+    },
+    {
+      "id": "SING-G6-SMC-018",
+      "stem": "A taxi has two fare components: $3.00 base fare for the first km, and $0.20 per 400 m thereafter. During peak hours, a 25% surcharge is added to the total fare. Kelvin travels 9 km during peak hours. How much does he pay?",
+      "choices": [
+        "$7.00",
+        "$7.50",
+        "$8.75",
+        "$9.00"
+      ],
+      "correct_answer": "C",
+      "difficulty_tier": "olympiad",
+      "difficulty_score": 26,
+      "tags": [
+        "decimals_taxi",
+        "fare_calculation",
+        "percentage"
+      ],
+      "chapter": "Singapore Math Challenge",
+      "visual_context": null,
+      "hint": {
+        "level_0": "Calculate the base fare, then the metered fare, then add the surcharge.",
+        "level_1": "Additional distance = 8 km = 8000 m. Intervals = 8000 ÷ 400 = 20. Metered = 20 × $0.20 = $4.00. Total before surcharge = $3.00 + $4.00 = $7.00.",
+        "level_2": "25% surcharge = $7.00 × 0.25 = $1.75. Final = $7.00 + $1.75 = $8.75."
+      },
+      "diagnostics": {
+        "correct_explanation": "The answer is $8.75.",
+        "0": "Not quite. You're off by 1. Re-check your arithmetic step by step.",
+        "1": "Not quite. You're off by 1. Re-check your arithmetic step by step.",
+        "3": "Not quite. You're off by 0. Re-check your arithmetic step by step."
+      }
+    },
+    {
+      "id": "SING-G6-SMC-019",
+      "stem": "Mr Lim takes a taxi from home to the airport and back. The fare is $3.00 for the first km and $0.50 for each additional km. The airport is 9 km away. On the return trip, a 50% midnight surcharge is added to the total fare. What is the total fare for both trips?",
+      "choices": [
+        "$14.00",
+        "$17.50",
+        "$21.00",
+        "$24.50"
+      ],
+      "correct_answer": "B",
+      "difficulty_tier": "olympiad",
+      "difficulty_score": 27,
+      "tags": [
+        "decimals_taxi",
+        "fare_calculation",
+        "surcharge"
+      ],
+      "chapter": "Singapore Math Challenge",
+      "visual_context": null,
+      "hint": {
+        "level_0": "Calculate the one-way fare, then apply the surcharge for the return.",
+        "level_1": "One-way: $3.00 + 8 × $0.50 = $3.00 + $4.00 = $7.00. Return: $7.00 × 1.50 = $10.50.",
+        "level_2": "Total = $7.00 + $10.50 = $17.50."
+      },
+      "diagnostics": {
+        "correct_explanation": "The answer is $17.50.",
+        "0": "Not quite. You're off by 3. Re-check your arithmetic step by step.",
+        "2": "Not quite. You're off by 3. Re-check your arithmetic step by step.",
+        "3": "Not quite. You're off by 7. Re-check your arithmetic step by step."
+      }
+    },
+    {
+      "id": "SING-G6-SMC-028",
+      "stem": "A pyramid of cubes is built in layers. Layer 1 (top) has 1 × 1 = 1 cube. Layer 2 has 2 × 2 = 4 cubes. Layer 3 has 3 × 3 = 9 cubes. Each cube has side 3 cm. What is the total volume of a 5-layer pyramid?",
+      "choices": [
+        "810 cm³",
+        "1,215 cm³",
+        "1,350 cm³",
+        "1,485 cm³"
+      ],
+      "correct_answer": "D",
+      "difficulty_tier": "olympiad",
+      "difficulty_score": 28,
+      "tags": [
+        "patterns_volume",
+        "cubes",
+        "square_numbers"
+      ],
+      "chapter": "Singapore Math Challenge",
+      "visual_context": "Pyramid built with layers of cubes: 1, 4, 9, 16, 25 cubes from top to bottom.",
+      "hint": {
+        "level_0": "Total cubes = 1² + 2² + 3² + 4² + 5².",
+        "level_1": "Total = 1 + 4 + 9 + 16 + 25 = 55 cubes.",
+        "level_2": "Volume per cube = 3³ = 27 cm³. Total = 55 × 27 = 1,485 cm³."
+      },
+      "diagnostics": {
+        "correct_explanation": "The answer is 1,485 cm³.",
+        "0": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+        "1": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+        "2": "This doesn't match all the conditions in the problem. Test each clue against your answer."
+      },
+      "visual_svg": "<svg viewBox=\"0 0 160 80\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"5\" y=\"5\" width=\"150\" height=\"70\" rx=\"8\" fill=\"#F8F9FA\" stroke=\"#DEE2E6\" stroke-width=\"1.5\"/><text x=\"80\" y=\"42\" text-anchor=\"middle\" font-size=\"10\" fill=\"#6C757D\">Pyramid built with layers of cubes:</text></svg>",
+      "visual_alt": "Visual for: A pyramid of cubes is built in layers. Layer 1 (to"
+    },
+    {
+      "id": "SING-G6-SMC-004",
+      "stem": "In a zigzag grid with 7 columns, numbers are placed left-to-right in odd rows and right-to-left in even rows. The number 200 is in which row and column?",
+      "choices": [
+        "Row 29, Column 4",
+        "Row 29, Column 3",
+        "Row 28, Column 5",
+        "Row 29, Column 5"
+      ],
+      "correct_answer": "A",
+      "difficulty_tier": "olympiad",
+      "difficulty_score": 29,
+      "tags": [
+        "patterns_zigzag",
+        "grid",
+        "number_pattern"
+      ],
+      "chapter": "Singapore Math Challenge",
+      "visual_context": "7-column zigzag grid.",
+      "hint": {
+        "level_0": "Each row has 7 numbers. Divide 200 by 7.",
+        "level_1": "200 ÷ 7 = 28 remainder 4. So 200 is in Row 29, position 4.",
+        "level_2": "Row 29 is odd → left to right. Position 4 = Column 4."
+      },
+      "diagnostics": {
+        "correct_explanation": "The answer is Row 29, Column 4.",
+        "1": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+        "2": "This doesn't match all the conditions in the problem. Test each clue against your answer.",
+        "3": "This doesn't match all the conditions in the problem. Test each clue against your answer."
+      },
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 215 215\" width=\"215\" height=\"215\" style=\"font-family:Arial,sans-serif\"><rect x=\"20\" y=\"20\" width=\"35\" height=\"35\" fill=\"white\" stroke=\"#333\" stroke-width=\"1\"/><rect x=\"55\" y=\"20\" width=\"35\" height=\"35\" fill=\"white\" stroke=\"#333\" stroke-width=\"1\"/><rect x=\"90\" y=\"20\" width=\"35\" height=\"35\" fill=\"white\" stroke=\"#333\" stroke-width=\"1\"/><rect x=\"125\" y=\"20\" width=\"35\" height=\"35\" fill=\"white\" stroke=\"#333\" stroke-width=\"1\"/><rect x=\"160\" y=\"20\" width=\"35\" height=\"35\" fill=\"white\" stroke=\"#333\" stroke-width=\"1\"/><rect x=\"20\" y=\"55\" width=\"35\" height=\"35\" fill=\"white\" stroke=\"#333\" stroke-width=\"1\"/><rect x=\"55\" y=\"55\" width=\"35\" height=\"35\" fill=\"white\" stroke=\"#333\" stroke-width=\"1\"/><rect x=\"90\" y=\"55\" width=\"35\" height=\"35\" fill=\"white\" stroke=\"#333\" stroke-width=\"1\"/><rect x=\"125\" y=\"55\" width=\"35\" height=\"35\" fill=\"white\" stroke=\"#333\" stroke-width=\"1\"/><rect x=\"160\" y=\"55\" width=\"35\" height=\"35\" fill=\"white\" stroke=\"#333\" stroke-width=\"1\"/><rect x=\"20\" y=\"90\" width=\"35\" height=\"35\" fill=\"white\" stroke=\"#333\" stroke-width=\"1\"/><rect x=\"55\" y=\"90\" width=\"35\" height=\"35\" fill=\"white\" stroke=\"#333\" stroke-width=\"1\"/><rect x=\"90\" y=\"90\" width=\"35\" height=\"35\" fill=\"white\" stroke=\"#333\" stroke-width=\"1\"/><rect x=\"125\" y=\"90\" width=\"35\" height=\"35\" fill=\"white\" stroke=\"#333\" stroke-width=\"1\"/><rect x=\"160\" y=\"90\" width=\"35\" height=\"35\" fill=\"white\" stroke=\"#333\" stroke-width=\"1\"/><rect x=\"20\" y=\"125\" width=\"35\" height=\"35\" fill=\"white\" stroke=\"#333\" stroke-width=\"1\"/><rect x=\"55\" y=\"125\" width=\"35\" height=\"35\" fill=\"white\" stroke=\"#333\" stroke-width=\"1\"/><rect x=\"90\" y=\"125\" width=\"35\" height=\"35\" fill=\"white\" stroke=\"#333\" stroke-width=\"1\"/><rect x=\"125\" y=\"125\" width=\"35\" height=\"35\" fill=\"white\" stroke=\"#333\" stroke-width=\"1\"/><rect x=\"160\" y=\"125\" width=\"35\" height=\"35\" fill=\"white\" stroke=\"#333\" stroke-width=\"1\"/><rect x=\"20\" y=\"160\" width=\"35\" height=\"35\" fill=\"white\" stroke=\"#333\" stroke-width=\"1\"/><rect x=\"55\" y=\"160\" width=\"35\" height=\"35\" fill=\"white\" stroke=\"#333\" stroke-width=\"1\"/><rect x=\"90\" y=\"160\" width=\"35\" height=\"35\" fill=\"white\" stroke=\"#333\" stroke-width=\"1\"/><rect x=\"125\" y=\"160\" width=\"35\" height=\"35\" fill=\"white\" stroke=\"#333\" stroke-width=\"1\"/><rect x=\"160\" y=\"160\" width=\"35\" height=\"35\" fill=\"white\" stroke=\"#333\" stroke-width=\"1\"/></svg>"
+    },
+    {
+      "id": "SING-G6-SMC-030",
+      "stem": "Cubes of side 1 cm are used to build hollow cubes (only the outer shell, no cubes inside). A hollow cube of side 3 uses 26 cubes (27 − 1 inside). A hollow cube of side 4 uses 56 cubes (64 − 8 inside). How many cubes does a hollow cube of side 6 use?",
+      "choices": [
+        "152",
+        "168",
+        "180",
+        "216"
+      ],
+      "correct_answer": "A",
+      "difficulty_tier": "olympiad",
+      "difficulty_score": 30,
+      "tags": [
+        "patterns_volume",
+        "cubes",
+        "hollow_cube"
+      ],
+      "chapter": "Singapore Math Challenge",
+      "visual_context": "Hollow cube showing only the outer shell of unit cubes.",
+      "hint": {
+        "level_0": "Hollow cube cubes = total cubes − inside cubes.",
+        "level_1": "Total = 6³ = 216. Inside cube has side 6 − 2 = 4, so inside = 4³ = 64.",
+        "level_2": "Shell cubes = 216 − 64 = 152."
+      },
+      "diagnostics": {
+        "correct_explanation": "The answer is 152.",
+        "1": "Re-read the problem carefully and check which numbers and operations to use.",
+        "2": "Re-read the problem carefully and check which numbers and operations to use.",
+        "3": "Re-read the problem carefully and check which numbers and operations to use."
+      },
+      "visual_svg": "<svg viewBox=\"0 0 160 80\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"5\" y=\"5\" width=\"150\" height=\"70\" rx=\"8\" fill=\"#F8F9FA\" stroke=\"#DEE2E6\" stroke-width=\"1.5\"/><text x=\"80\" y=\"42\" text-anchor=\"middle\" font-size=\"10\" fill=\"#6C757D\">Hollow cube showing only the outer </text></svg>",
+      "visual_alt": "Visual for: Cubes of side 1 cm are used to build hollow cubes "
+    }
+  ]
+}

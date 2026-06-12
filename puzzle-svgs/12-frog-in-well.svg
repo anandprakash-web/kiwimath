@@ -1,0 +1,104 @@
+<svg viewBox="0 0 600 450" xmlns="http://www.w3.org/2000/svg">
+  <!-- Frog in the Well Sequential Puzzle (Classic / Moscow) -->
+  <defs>
+    <linearGradient id="wellWall" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#795548"/>
+      <stop offset="15%" style="stop-color:#6D4C41"/>
+      <stop offset="85%" style="stop-color:#6D4C41"/>
+      <stop offset="100%" style="stop-color:#795548"/>
+    </linearGradient>
+    <linearGradient id="waterGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#42A5F5;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#1565C0;stop-opacity:0.6"/>
+    </linearGradient>
+    <linearGradient id="skyGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#64B5F6"/>
+      <stop offset="100%" style="stop-color:#E3F2FD"/>
+    </linearGradient>
+  </defs>
+  <!-- Sky background -->
+  <rect width="600" height="450" fill="url(#skyGrad2)" rx="12"/>
+  <!-- Sun -->
+  <circle cx="520" cy="50" r="30" fill="#FFD54F" opacity="0.8"/>
+  <!-- Clouds -->
+  <ellipse cx="100" cy="40" rx="40" ry="15" fill="white" opacity="0.7"/>
+  <ellipse cx="130" cy="35" rx="30" ry="12" fill="white" opacity="0.7"/>
+  <text x="300" y="30" text-anchor="middle" font-family="Georgia" font-size="20" fill="#1A237E" font-weight="bold">The Frog in the Well</text>
+  <!-- Well structure -->
+  <!-- Well walls -->
+  <rect x="200" y="60" width="30" height="340" fill="url(#wellWall)" stroke="#4E342E" stroke-width="2"/>
+  <rect x="370" y="60" width="30" height="340" fill="url(#wellWall)" stroke="#4E342E" stroke-width="2"/>
+  <!-- Well opening rim -->
+  <rect x="185" y="55" width="230" height="15" fill="#5D4037" rx="3" stroke="#3E2723" stroke-width="1.5"/>
+  <!-- Brick pattern on walls -->
+  <line x1="200" y1="100" x2="230" y2="100" stroke="#4E342E" stroke-width="0.5"/>
+  <line x1="200" y1="140" x2="230" y2="140" stroke="#4E342E" stroke-width="0.5"/>
+  <line x1="200" y1="180" x2="230" y2="180" stroke="#4E342E" stroke-width="0.5"/>
+  <line x1="200" y1="220" x2="230" y2="220" stroke="#4E342E" stroke-width="0.5"/>
+  <line x1="200" y1="260" x2="230" y2="260" stroke="#4E342E" stroke-width="0.5"/>
+  <line x1="200" y1="300" x2="230" y2="300" stroke="#4E342E" stroke-width="0.5"/>
+  <line x1="200" y1="340" x2="230" y2="340" stroke="#4E342E" stroke-width="0.5"/>
+  <line x1="370" y1="100" x2="400" y2="100" stroke="#4E342E" stroke-width="0.5"/>
+  <line x1="370" y1="140" x2="400" y2="140" stroke="#4E342E" stroke-width="0.5"/>
+  <line x1="370" y1="180" x2="400" y2="180" stroke="#4E342E" stroke-width="0.5"/>
+  <line x1="370" y1="220" x2="400" y2="220" stroke="#4E342E" stroke-width="0.5"/>
+  <line x1="370" y1="260" x2="400" y2="260" stroke="#4E342E" stroke-width="0.5"/>
+  <line x1="370" y1="300" x2="400" y2="300" stroke="#4E342E" stroke-width="0.5"/>
+  <line x1="370" y1="340" x2="400" y2="340" stroke="#4E342E" stroke-width="0.5"/>
+  <!-- Well bottom -->
+  <rect x="230" y="385" width="140" height="15" fill="#3E2723"/>
+  <!-- Water at bottom -->
+  <rect x="230" y="360" width="140" height="25" fill="url(#waterGrad)" rx="2"/>
+  <!-- Depth markings -->
+  <text x="243" y="100" font-family="monospace" font-size="10" fill="#FFCC80">10m</text>
+  <line x1="230" y1="95" x2="250" y2="95" stroke="#FFCC80" stroke-width="1"/>
+  <text x="243" y="180" font-family="monospace" font-size="10" fill="#FFCC80">7m</text>
+  <line x1="230" y1="175" x2="250" y2="175" stroke="#FFCC80" stroke-width="1"/>
+  <text x="243" y="260" font-family="monospace" font-size="10" fill="#FFCC80">4m</text>
+  <line x1="230" y1="255" x2="250" y2="255" stroke="#FFCC80" stroke-width="1"/>
+  <text x="243" y="340" font-family="monospace" font-size="10" fill="#FFCC80">1m</text>
+  <line x1="230" y1="335" x2="250" y2="335" stroke="#FFCC80" stroke-width="1"/>
+  <!-- Frog -->
+  <ellipse cx="300" cy="335" rx="18" ry="12" fill="#4CAF50" stroke="#2E7D32" stroke-width="1.5"/>
+  <circle cx="292" cy="326" r="4" fill="#C8E6C9" stroke="#2E7D32" stroke-width="1"/>
+  <circle cx="308" cy="326" r="4" fill="#C8E6C9" stroke="#2E7D32" stroke-width="1"/>
+  <circle cx="292" cy="326" r="2" fill="#1B5E20"/>
+  <circle cx="308" cy="326" r="2" fill="#1B5E20"/>
+  <!-- UP arrow (day) -->
+  <path d="M310 320 L310 280" stroke="#4CAF50" stroke-width="2.5" marker-end="url(#upArrow)"/>
+  <text x="325" y="300" font-family="Arial" font-size="11" fill="#2E7D32" font-weight="bold">+3m</text>
+  <text x="325" y="312" font-family="Arial" font-size="9" fill="#4CAF50">(day)</text>
+  <defs>
+    <marker id="upArrow" markerWidth="8" markerHeight="6" refX="4" refY="6" orient="auto">
+      <polygon points="0 6, 4 0, 8 6" fill="#4CAF50"/>
+    </marker>
+    <marker id="downArrow" markerWidth="8" markerHeight="6" refX="4" refY="0" orient="auto">
+      <polygon points="0 0, 4 6, 8 0" fill="#E53935"/>
+    </marker>
+  </defs>
+  <!-- DOWN arrow (night) -->
+  <path d="M340 285 L340 310" stroke="#E53935" stroke-width="2.5" marker-end="url(#downArrow)"/>
+  <text x="350" y="296" font-family="Arial" font-size="11" fill="#C62828" font-weight="bold">-2m</text>
+  <text x="350" y="308" font-family="Arial" font-size="9" fill="#E53935">(night)</text>
+  <!-- Info panel -->
+  <rect x="30" y="80" width="155" height="180" fill="white" rx="10" opacity="0.9" stroke="#7C4DFF" stroke-width="1.5"/>
+  <text x="107" y="105" text-anchor="middle" font-family="Georgia" font-size="14" fill="#311B92" font-weight="bold">The Problem</text>
+  <text x="42" y="128" font-family="Arial" font-size="11" fill="#37474F">A frog is at the</text>
+  <text x="42" y="143" font-family="Arial" font-size="11" fill="#37474F">bottom of a 10m well.</text>
+  <text x="42" y="168" font-family="Arial" font-size="11" fill="#2E7D32" font-weight="bold">Day: climbs UP 3m</text>
+  <text x="42" y="190" font-family="Arial" font-size="11" fill="#C62828" font-weight="bold">Night: slides DOWN 2m</text>
+  <rect x="45" y="210" width="125" height="35" fill="#FFF9C4" rx="6"/>
+  <text x="107" y="228" text-anchor="middle" font-family="Georgia" font-size="12" fill="#E65100" font-weight="bold">How many days</text>
+  <text x="107" y="242" text-anchor="middle" font-family="Georgia" font-size="12" fill="#E65100" font-weight="bold">to escape?</text>
+  <!-- Answer options -->
+  <rect x="30" y="280" width="155" height="105" fill="#E8EAF6" rx="10" opacity="0.9"/>
+  <text x="107" y="302" text-anchor="middle" font-family="Arial" font-size="12" fill="#311B92" font-weight="bold">Choose your answer:</text>
+  <rect x="45" y="310" width="55" height="28" fill="#7C4DFF" rx="6"/><text x="72" y="329" text-anchor="middle" font-family="Arial" font-size="13" fill="white" font-weight="bold">8</text>
+  <rect x="110" y="310" width="55" height="28" fill="#7C4DFF" rx="6"/><text x="137" y="329" text-anchor="middle" font-family="Arial" font-size="13" fill="white" font-weight="bold">9</text>
+  <rect x="45" y="345" width="55" height="28" fill="#7C4DFF" rx="6"/><text x="72" y="364" text-anchor="middle" font-family="Arial" font-size="13" fill="white" font-weight="bold">10</text>
+  <rect x="110" y="345" width="55" height="28" fill="#7C4DFF" rx="6"/><text x="137" y="364" text-anchor="middle" font-family="Arial" font-size="13" fill="white" font-weight="bold">11</text>
+  <!-- Grass at top -->
+  <path d="M185 55 L180 40 L190 55 M195 55 L192 35 L200 55 M395 55 L400 38 L405 55 M410 55 L408 42 L415 55" stroke="#4CAF50" stroke-width="2" fill="none"/>
+  <!-- Freedom text at top -->
+  <text x="300" y="50" text-anchor="middle" font-family="Arial" font-size="11" fill="#1565C0" font-weight="bold">FREEDOM!</text>
+</svg>

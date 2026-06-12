@@ -169,7 +169,7 @@ class _SetPinDialogState extends State<_SetPinDialog> {
                   style: TextStyle(
                       fontSize: 12,
                       fontWeight: FontWeight.w600,
-                      color: Color(0xFFEF5350))),
+                      color: KiwiColors.coral)),
             ],
             const SizedBox(height: 20),
             // Numpad
@@ -258,7 +258,7 @@ class _SetPinDialogState extends State<_SetPinDialog> {
         height: 52,
         margin: const EdgeInsets.symmetric(horizontal: 6),
         decoration: BoxDecoration(
-          color: const Color(0xFFF5F5F5),
+          color: KiwiColors.creamDark,
           borderRadius: BorderRadius.circular(14),
         ),
         child: Center(child: child),
@@ -362,13 +362,13 @@ class _EnterPinDialogState extends State<_EnterPinDialog> {
                   decoration: BoxDecoration(
                     color: filled
                         ? (_showError
-                            ? const Color(0xFFEF5350)
+                            ? const KiwiColors.coral
                             : KiwiColors.kiwiPrimary)
                         : Colors.transparent,
                     shape: BoxShape.circle,
                     border: Border.all(
                       color: _showError
-                          ? const Color(0xFFEF5350)
+                          ? const KiwiColors.coral
                           : (filled
                               ? KiwiColors.kiwiPrimary
                               : KiwiColors.textMuted.withOpacity(0.3)),
@@ -387,7 +387,7 @@ class _EnterPinDialogState extends State<_EnterPinDialog> {
                 style: const TextStyle(
                     fontSize: 12,
                     fontWeight: FontWeight.w600,
-                    color: Color(0xFFEF5350)),
+                    color: KiwiColors.coral),
               ),
             ],
             const SizedBox(height: 20),
@@ -452,7 +452,7 @@ class _EnterPinDialogState extends State<_EnterPinDialog> {
         height: 52,
         margin: const EdgeInsets.symmetric(horizontal: 6),
         decoration: BoxDecoration(
-          color: const Color(0xFFF5F5F5),
+          color: KiwiColors.creamDark,
           borderRadius: BorderRadius.circular(14),
         ),
         child: Center(child: child),

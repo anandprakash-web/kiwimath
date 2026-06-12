@@ -1338,6 +1338,11 @@ class GamificationState:
 class GamificationManager:
     """Manages gamification state with Firestore persistence — v2 economy."""
 
+    # Per-instance cache cap. State is persisted to Firestore on every
+    # mutation (_save_to_firestore), so evicting a cached entry is safe —
+    # it reloads on next access. Prevents unbounded per-user memory growth.
+    MAX_CACHED_USERS = 5000
+
     def __init__(self):
         self._cache: Dict[str, GamificationState] = {}
 
@@ -1348,6 +1353,11 @@ class GamificationManager:
         state = self._load_from_firestore(user_id)
         if state is None:
             state = GamificationState(user_id=user_id)
+
+        # Simple FIFO eviction (dict preserves insertion order). Good enough:
+        # we just need a hard cap, not strict LRU.
+        if len(self._cache) >= self.MAX_CACHED_USERS:
+            self._cache.pop(next(iter(self._cache)))
 
         self._cache[user_id] = state
         return state
@@ -1389,6 +1399,10 @@ class GamificationManager:
                 "time_s": round(time_taken_seconds, 1),
                 "ts": datetime.now(timezone.utc).isoformat(),
             })
+            # MEMORY LEAK FIX: cap telemetry at the last 50 entries — this
+            # list grew unbounded per cached user and is never persisted.
+            if len(state.question_history) > 50:
+                state.question_history = state.question_history[-50:]
 
         # Update stats
         state.total_attempts += 1

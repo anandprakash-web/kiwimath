@@ -1,0 +1,896 @@
+[
+  {
+    "id": "geo-l2-at-001",
+    "topic": "angles_triangles",
+    "stem": "A triangle has angles of 60\u00b0 and 80\u00b0. What is the measure of the third angle?",
+    "visual_svg": "<svg viewBox='0 0 250 200' xmlns='http://www.w3.org/2000/svg'><rect width='250' height='200' fill='#f9f9f9' rx='8'/><polygon points='30,170 220,170 140,30' fill='none' stroke='#3498db' stroke-width='2'/><text x='40' y='162' font-size='13' fill='#333'>60\u00b0</text><text x='190' y='162' font-size='13' fill='#333'>80\u00b0</text><text x='132' y='55' font-size='13' fill='#e74c3c'>?</text></svg>",
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: The sum of angles in any triangle is 180\u00b0.\nStep 2: Third angle = 180\u00b0 \u2212 60\u00b0 \u2212 80\u00b0 = 40\u00b0.\nAnswer: 40\u00b0.",
+    "difficulty": 1,
+    "tags": [
+      "geometry",
+      "level2"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 40
+  },
+  {
+    "id": "geo-l2-at-002",
+    "topic": "angles_triangles",
+    "stem": "How many right angles does a rectangle have?",
+    "visual_svg": "<svg viewBox='0 0 200 160' xmlns='http://www.w3.org/2000/svg'><rect width='200' height='160' fill='#f9f9f9' rx='8'/><rect x='30' y='30' width='140' height='90' fill='none' stroke='#3498db' stroke-width='2'/><rect x='30' y='30' width='12' height='12' fill='none' stroke='#e74c3c' stroke-width='1.5'/><rect x='158' y='30' width='12' height='12' fill='none' stroke='#e74c3c' stroke-width='1.5'/><rect x='30' y='108' width='12' height='12' fill='none' stroke='#e74c3c' stroke-width='1.5'/><rect x='158' y='108' width='12' height='12' fill='none' stroke='#e74c3c' stroke-width='1.5'/></svg>",
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: A rectangle has 4 corners.\nStep 2: Each corner of a rectangle is exactly 90\u00b0 (a right angle).\nStep 3: Therefore, a rectangle has 4 right angles.\nAnswer: 4.",
+    "difficulty": 1,
+    "tags": [
+      "geometry",
+      "level2"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 4
+  },
+  {
+    "id": "geo-l2-at-003",
+    "topic": "angles_triangles",
+    "stem": "An isosceles triangle has two equal angles of 70\u00b0 each. What is the third angle?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: Sum of angles in a triangle = 180\u00b0.\nStep 2: Third angle = 180\u00b0 \u2212 70\u00b0 \u2212 70\u00b0 = 40\u00b0.\nAnswer: 40\u00b0.",
+    "difficulty": 1,
+    "tags": [
+      "geometry",
+      "level2"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 40
+  },
+  {
+    "id": "geo-l2-at-004",
+    "topic": "angles_triangles",
+    "stem": "A triangle has one angle of 90\u00b0 and another of 45\u00b0. What is the third angle?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: Sum of angles = 180\u00b0.\nStep 2: Third angle = 180\u00b0 \u2212 90\u00b0 \u2212 45\u00b0 = 45\u00b0.\nStep 3: This is a right isosceles triangle.\nAnswer: 45\u00b0.",
+    "difficulty": 1,
+    "tags": [
+      "geometry",
+      "level2"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 45
+  },
+  {
+    "id": "geo-l2-at-005",
+    "topic": "angles_triangles",
+    "stem": "What is the sum of all interior angles of a quadrilateral (4-sided shape)?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: A quadrilateral can be divided into 2 triangles by drawing one diagonal.\nStep 2: Each triangle has angle sum 180\u00b0.\nStep 3: Total angle sum = 2 \u00d7 180\u00b0 = 360\u00b0.\nAnswer: 360\u00b0.",
+    "difficulty": 2,
+    "tags": [
+      "geometry",
+      "level2"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 360
+  },
+  {
+    "id": "geo-l2-at-006",
+    "topic": "angles_triangles",
+    "stem": "An equilateral triangle has all sides equal. What is the measure of each angle?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: In an equilateral triangle, all 3 angles are equal.\nStep 2: Let each angle = x. Then 3x = 180\u00b0.\nStep 3: x = 180\u00b0 \u00f7 3 = 60\u00b0.\nAnswer: 60\u00b0.",
+    "difficulty": 1,
+    "tags": [
+      "geometry",
+      "level2"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 60
+  },
+  {
+    "id": "geo-l2-at-007",
+    "topic": "angles_triangles",
+    "stem": "A triangle has angles in the ratio 1:2:3. What is the largest angle?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: Let the angles be x, 2x, and 3x.\nStep 2: x + 2x + 3x = 180\u00b0 \u2192 6x = 180\u00b0 \u2192 x = 30\u00b0.\nStep 3: The three angles are 30\u00b0, 60\u00b0, and 90\u00b0.\nStep 4: The largest angle is 90\u00b0.\nAnswer: 90\u00b0.",
+    "difficulty": 2,
+    "tags": [
+      "geometry",
+      "level2"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 90
+  },
+  {
+    "id": "geo-l2-at-008",
+    "topic": "angles_triangles",
+    "stem": "Two angles of a triangle are 55\u00b0 and 65\u00b0. Is this triangle acute, right, or obtuse?",
+    "visual_svg": null,
+    "answer_type": "mcq",
+    "correct_answer": 0,
+    "solution": "Step 1: Third angle = 180\u00b0 \u2212 55\u00b0 \u2212 65\u00b0 = 60\u00b0.\nStep 2: All three angles (55\u00b0, 60\u00b0, 65\u00b0) are less than 90\u00b0.\nStep 3: A triangle with all angles less than 90\u00b0 is an acute triangle.\nAnswer: A) Acute.",
+    "difficulty": 1,
+    "tags": [
+      "geometry",
+      "level2"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken.",
+      "1": "Review the question carefully and try again.",
+      "2": "Review the question carefully and try again."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [
+      "A) Acute",
+      "B) Right",
+      "C) Obtuse"
+    ],
+    "interaction_mode": "mcq"
+  },
+  {
+    "id": "geo-l2-at-009",
+    "topic": "angles_triangles",
+    "stem": "An exterior angle of a triangle is 120\u00b0. The two non-adjacent interior angles are equal. What is each of those angles?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: An exterior angle of a triangle equals the sum of the two non-adjacent interior angles.\nStep 2: Let each equal angle be x. Then x + x = 120\u00b0.\nStep 3: 2x = 120\u00b0 \u2192 x = 60\u00b0.\nAnswer: 60\u00b0.",
+    "difficulty": 2,
+    "tags": [
+      "geometry",
+      "level2"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 60
+  },
+  {
+    "id": "geo-l2-at-010",
+    "topic": "angles_triangles",
+    "stem": "How many triangles can you see in this figure?",
+    "visual_svg": "<svg viewBox='0 0 220 200' xmlns='http://www.w3.org/2000/svg'><rect width='220' height='200' fill='#f9f9f9' rx='8'/><polygon points='110,20 20,180 200,180' fill='none' stroke='#3498db' stroke-width='2'/><line x1='110' y1='20' x2='110' y2='180' stroke='#3498db' stroke-width='2'/></svg>",
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: The figure shows a large triangle with a line from the top vertex to the base, splitting it into 2 smaller triangles.\nStep 2: Small triangle on the left = 1.\nStep 3: Small triangle on the right = 1.\nStep 4: The large triangle itself = 1.\nStep 5: Total = 1 + 1 + 1 = 3 triangles.\nAnswer: 3.",
+    "difficulty": 2,
+    "tags": [
+      "geometry",
+      "level2"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 3
+  },
+  {
+    "id": "geo-l2-ap-001",
+    "topic": "area_perimeter",
+    "stem": "Find the perimeter of a rectangle that is 8 cm long and 5 cm wide.",
+    "visual_svg": "<svg viewBox='0 0 240 170' xmlns='http://www.w3.org/2000/svg'><rect width='240' height='170' fill='#f9f9f9' rx='8'/><rect x='30' y='30' width='180' height='100' fill='none' stroke='#3498db' stroke-width='2'/><text x='110' y='25' font-size='13' text-anchor='middle' fill='#333'>8 cm</text><text x='220' y='85' font-size='13' fill='#333'>5 cm</text></svg>",
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: Perimeter of a rectangle = 2 \u00d7 (length + width).\nStep 2: Perimeter = 2 \u00d7 (8 + 5) = 2 \u00d7 13 = 26 cm.\nAnswer: 26 cm.",
+    "difficulty": 1,
+    "tags": [
+      "geometry",
+      "level2"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 26
+  },
+  {
+    "id": "geo-l2-ap-002",
+    "topic": "area_perimeter",
+    "stem": "A square has a perimeter of 24 cm. What is its area?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: A square has 4 equal sides. Side = Perimeter \u00f7 4 = 24 \u00f7 4 = 6 cm.\nStep 2: Area = side \u00d7 side = 6 \u00d7 6 = 36 cm\u00b2.\nAnswer: 36 cm\u00b2.",
+    "difficulty": 1,
+    "tags": [
+      "geometry",
+      "level2"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 36
+  },
+  {
+    "id": "geo-l2-ap-003",
+    "topic": "area_perimeter",
+    "stem": "Find the area of a figure made by joining two squares, each with side 4 cm, along one edge.",
+    "visual_svg": "<svg viewBox='0 0 260 140' xmlns='http://www.w3.org/2000/svg'><rect width='260' height='140' fill='#f9f9f9' rx='8'/><rect x='30' y='30' width='90' height='90' fill='#d5e8f0' stroke='#3498db' stroke-width='2'/><rect x='120' y='30' width='90' height='90' fill='#d5e8f0' stroke='#3498db' stroke-width='2'/><text x='75' y='80' font-size='13' text-anchor='middle' fill='#333'>4 cm</text><text x='165' y='80' font-size='13' text-anchor='middle' fill='#333'>4 cm</text></svg>",
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: Area of one square = 4 \u00d7 4 = 16 cm\u00b2.\nStep 2: Two squares joined together = 16 + 16 = 32 cm\u00b2.\nAnswer: 32 cm\u00b2.",
+    "difficulty": 1,
+    "tags": [
+      "geometry",
+      "level2"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 32
+  },
+  {
+    "id": "geo-l2-ap-004",
+    "topic": "area_perimeter",
+    "stem": "A rectangle has area 48 cm\u00b2 and length 8 cm. What is its width?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: Area = length \u00d7 width.\nStep 2: 48 = 8 \u00d7 width.\nStep 3: Width = 48 \u00f7 8 = 6 cm.\nAnswer: 6 cm.",
+    "difficulty": 1,
+    "tags": [
+      "geometry",
+      "level2"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 6
+  },
+  {
+    "id": "geo-l2-ap-005",
+    "topic": "area_perimeter",
+    "stem": "An L-shaped figure is formed by removing a 2 cm \u00d7 2 cm square from a corner of a 6 cm \u00d7 4 cm rectangle. What is the area of the L-shape?",
+    "visual_svg": "<svg viewBox='0 0 250 190' xmlns='http://www.w3.org/2000/svg'><rect width='250' height='190' fill='#f9f9f9' rx='8'/><rect x='30' y='30' width='150' height='100' fill='#d5e8f0' stroke='#3498db' stroke-width='2'/><rect x='130' y='30' width='50' height='50' fill='#f9f9f9' stroke='#e74c3c' stroke-width='2' stroke-dasharray='5,3'/><text x='105' y='165' font-size='13' text-anchor='middle' fill='#333'>6 cm</text><text x='200' y='85' font-size='13' fill='#333'>4 cm</text><text x='155' y='22' font-size='11' fill='#e74c3c'>2 cm</text></svg>",
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: Area of the full rectangle = 6 \u00d7 4 = 24 cm\u00b2.\nStep 2: Area of the removed square = 2 \u00d7 2 = 4 cm\u00b2.\nStep 3: Area of the L-shape = 24 \u2212 4 = 20 cm\u00b2.\nAnswer: 20 cm\u00b2.",
+    "difficulty": 2,
+    "tags": [
+      "geometry",
+      "level2"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 20
+  },
+  {
+    "id": "geo-l2-ap-006",
+    "topic": "area_perimeter",
+    "stem": "A square garden has side 10 m. A path 1 m wide runs around the inside of the garden. What is the area of the path?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: Area of the outer square (whole garden) = 10 \u00d7 10 = 100 m\u00b2.\nStep 2: The inner square has side = 10 \u2212 2(1) = 8 m.\nStep 3: Area of the inner square = 8 \u00d7 8 = 64 m\u00b2.\nStep 4: Area of the path = 100 \u2212 64 = 36 m\u00b2.\nAnswer: 36 m\u00b2.",
+    "difficulty": 3,
+    "tags": [
+      "geometry",
+      "level2"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 36
+  },
+  {
+    "id": "geo-l2-ap-007",
+    "topic": "area_perimeter",
+    "stem": "Find the perimeter of a shape made by removing a 3 cm \u00d7 3 cm square from the corner of a 9 cm \u00d7 6 cm rectangle.",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: Original perimeter of the rectangle = 2(9 + 6) = 30 cm.\nStep 2: When we cut a square from a corner, we remove two edges of the square (3 + 3 = 6 cm) from the perimeter but add two new inner edges of the same lengths (3 + 3 = 6 cm).\nStep 3: The perimeter doesn't change! It remains 30 cm.\nAnswer: 30 cm.",
+    "difficulty": 3,
+    "tags": [
+      "geometry",
+      "level2"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 30
+  },
+  {
+    "id": "geo-l2-ap-008",
+    "topic": "area_perimeter",
+    "stem": "A triangle has a base of 10 cm and a height of 6 cm. What is its area?",
+    "visual_svg": "<svg viewBox='0 0 240 170' xmlns='http://www.w3.org/2000/svg'><rect width='240' height='170' fill='#f9f9f9' rx='8'/><polygon points='30,150 220,150 150,30' fill='none' stroke='#3498db' stroke-width='2'/><line x1='150' y1='30' x2='150' y2='150' stroke='#e74c3c' stroke-width='1.5' stroke-dasharray='5,3'/><text x='120' y='160' font-size='13' fill='#333'>10 cm</text><text x='155' y='95' font-size='13' fill='#e74c3c'>6 cm</text></svg>",
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: Area of a triangle = \u00bd \u00d7 base \u00d7 height.\nStep 2: Area = \u00bd \u00d7 10 \u00d7 6 = 30 cm\u00b2.\nAnswer: 30 cm\u00b2.",
+    "difficulty": 1,
+    "tags": [
+      "geometry",
+      "level2"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 30
+  },
+  {
+    "id": "geo-l2-ap-009",
+    "topic": "area_perimeter",
+    "stem": "A rectangle and a square have the same perimeter of 20 cm. The rectangle has length 7 cm. Which shape has the greater area, and by how much?",
+    "visual_svg": null,
+    "answer_type": "mcq",
+    "correct_answer": 0,
+    "solution": "Step 1: Rectangle: Perimeter = 2(7 + w) = 20, so w = 3 cm. Area = 7 \u00d7 3 = 21 cm\u00b2.\nStep 2: Square: Perimeter = 4s = 20, so s = 5 cm. Area = 5 \u00d7 5 = 25 cm\u00b2.\nStep 3: Difference = 25 \u2212 21 = 4 cm\u00b2. The square has the greater area by 4 cm\u00b2.\nAnswer: B) Square, by 4 cm\u00b2.",
+    "difficulty": 2,
+    "tags": [
+      "geometry",
+      "level2"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken.",
+      "1": "Review the question carefully and try again.",
+      "2": "Review the question carefully and try again.",
+      "3": "Review the question carefully and try again."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [
+      "A) Rectangle, by 4 cm\u00b2",
+      "B) Square, by 4 cm\u00b2",
+      "C) They are equal",
+      "D) Square, by 2 cm\u00b2"
+    ],
+    "interaction_mode": "mcq"
+  },
+  {
+    "id": "geo-l2-ap-010",
+    "topic": "area_perimeter",
+    "stem": "Find the area of a right triangle with legs 5 cm and 12 cm.",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: In a right triangle, the two legs serve as the base and height.\nStep 2: Area = \u00bd \u00d7 5 \u00d7 12 = 30 cm\u00b2.\nAnswer: 30 cm\u00b2.",
+    "difficulty": 1,
+    "tags": [
+      "geometry",
+      "level2"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 30
+  },
+  {
+    "id": "geo-l2-ci-001",
+    "topic": "coordinate_intro",
+    "stem": "What are the coordinates of the point that is 3 units to the right and 4 units up from the origin?",
+    "visual_svg": "<svg viewBox='0 0 250 250' xmlns='http://www.w3.org/2000/svg'><rect width='250' height='250' fill='#f9f9f9' rx='8'/><line x1='30' y1='220' x2='230' y2='220' stroke='#333' stroke-width='1.5'/><line x1='30' y1='220' x2='30' y2='20' stroke='#333' stroke-width='1.5'/><line x1='30' y1='220' x2='30' y2='220' stroke='#333'/><text x='20' y='235' font-size='12' fill='#333'>O</text><circle cx='120' cy='100' r='5' fill='#e74c3c'/><line x1='30' y1='220' x2='120' y2='220' stroke='#e74c3c' stroke-width='1.5' stroke-dasharray='5,3'/><line x1='120' y1='220' x2='120' y2='100' stroke='#e74c3c' stroke-width='1.5' stroke-dasharray='5,3'/><text x='75' y='238' font-size='12' fill='#e74c3c'>3</text><text x='125' y='165' font-size='12' fill='#e74c3c'>4</text><text x='125' y='95' font-size='12' fill='#e74c3c'>(3, 4)</text></svg>",
+    "answer_type": "mcq",
+    "correct_answer": 0,
+    "solution": "Step 1: Starting from the origin (0, 0).\nStep 2: Move 3 units right \u2192 x-coordinate is 3.\nStep 3: Move 4 units up \u2192 y-coordinate is 4.\nStep 4: The point is (3, 4).\nAnswer: B) (3, 4).",
+    "difficulty": 1,
+    "tags": [
+      "geometry",
+      "level2"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken.",
+      "1": "Review the question carefully and try again.",
+      "2": "Review the question carefully and try again.",
+      "3": "Review the question carefully and try again."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [
+      "A) (4, 3)",
+      "B) (3, 4)",
+      "C) (3, 3)",
+      "D) (4, 4)"
+    ],
+    "interaction_mode": "mcq"
+  },
+  {
+    "id": "geo-l2-ci-002",
+    "topic": "coordinate_intro",
+    "stem": "Plot the points A(1,1), B(5,1), C(5,4), D(1,4). What shape do they form?",
+    "visual_svg": "<svg viewBox='0 0 260 220' xmlns='http://www.w3.org/2000/svg'><rect width='260' height='220' fill='#f9f9f9' rx='8'/><line x1='30' y1='190' x2='240' y2='190' stroke='#ccc' stroke-width='1'/><line x1='30' y1='190' x2='30' y2='10' stroke='#ccc' stroke-width='1'/><polygon points='60,160 150,160 150,70 60,70' fill='#d5e8f0' fill-opacity='0.5' stroke='#3498db' stroke-width='2'/><circle cx='60' cy='160' r='4' fill='#e74c3c'/><circle cx='150' cy='160' r='4' fill='#e74c3c'/><circle cx='150' cy='70' r='4' fill='#e74c3c'/><circle cx='60' cy='70' r='4' fill='#e74c3c'/><text x='42' y='175' font-size='11' fill='#333'>A(1,1)</text><text x='152' y='175' font-size='11' fill='#333'>B(5,1)</text><text x='152' y='65' font-size='11' fill='#333'>C(5,4)</text><text x='42' y='65' font-size='11' fill='#333'>D(1,4)</text></svg>",
+    "answer_type": "mcq",
+    "correct_answer": 0,
+    "solution": "Step 1: AB: horizontal distance = 5 \u2212 1 = 4, vertical = 0. Length = 4.\nStep 2: BC: horizontal = 0, vertical = 4 \u2212 1 = 3. Length = 3.\nStep 3: CD: horizontal = 5 \u2212 1 = 4, vertical = 0. Length = 4.\nStep 4: DA: horizontal = 0, vertical = 4 \u2212 1 = 3. Length = 3.\nStep 5: Opposite sides are equal (4 and 3) and all angles are 90\u00b0, but the sides are not all equal.\nStep 6: This is a rectangle.\nAnswer: B) Rectangle.",
+    "difficulty": 1,
+    "tags": [
+      "geometry",
+      "level2"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken.",
+      "1": "Review the question carefully and try again.",
+      "2": "Review the question carefully and try again.",
+      "3": "Review the question carefully and try again."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [
+      "A) Square",
+      "B) Rectangle",
+      "C) Parallelogram",
+      "D) Trapezoid"
+    ],
+    "interaction_mode": "mcq"
+  },
+  {
+    "id": "geo-l2-ci-003",
+    "topic": "coordinate_intro",
+    "stem": "What is the distance between the points (1, 2) and (4, 2) on a coordinate grid?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: Both points have the same y-coordinate (2), so they lie on a horizontal line.\nStep 2: Distance = |4 \u2212 1| = 3 units.\nAnswer: 3 units.",
+    "difficulty": 1,
+    "tags": [
+      "geometry",
+      "level2"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 3
+  },
+  {
+    "id": "geo-l2-ci-004",
+    "topic": "coordinate_intro",
+    "stem": "A point starts at (2, 3). It moves 4 units right and 2 units down. What are its new coordinates?",
+    "visual_svg": null,
+    "answer_type": "mcq",
+    "correct_answer": 0,
+    "solution": "Step 1: Starting point: (2, 3).\nStep 2: Move 4 right: x changes from 2 to 2 + 4 = 6.\nStep 3: Move 2 down: y changes from 3 to 3 \u2212 2 = 1.\nStep 4: New coordinates: (6, 1).\nAnswer: B) (6, 1).",
+    "difficulty": 1,
+    "tags": [
+      "geometry",
+      "level2"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken.",
+      "1": "Review the question carefully and try again.",
+      "2": "Review the question carefully and try again.",
+      "3": "Review the question carefully and try again."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [
+      "A) (6, 5)",
+      "B) (6, 1)",
+      "C) (-2, 5)",
+      "D) (4, 2)"
+    ],
+    "interaction_mode": "mcq"
+  },
+  {
+    "id": "geo-l2-ci-005",
+    "topic": "coordinate_intro",
+    "stem": "Three vertices of a square are at (0, 0), (4, 0), and (4, 4). What are the coordinates of the fourth vertex?",
+    "visual_svg": null,
+    "answer_type": "mcq",
+    "correct_answer": 0,
+    "solution": "Step 1: The three given vertices form an L-shape: (0,0) \u2192 (4,0) \u2192 (4,4).\nStep 2: To complete the square, the fourth vertex must be at (0, 4).\nStep 3: Check: all sides = 4, all angles = 90\u00b0.\nAnswer: A) (0, 4).",
+    "difficulty": 1,
+    "tags": [
+      "geometry",
+      "level2"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken.",
+      "1": "Review the question carefully and try again.",
+      "2": "Review the question carefully and try again.",
+      "3": "Review the question carefully and try again."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [
+      "A) (0, 4)",
+      "B) (4, 0)",
+      "C) (2, 2)",
+      "D) (0, 2)"
+    ],
+    "interaction_mode": "mcq"
+  },
+  {
+    "id": "geo-l2-ci-006",
+    "topic": "coordinate_intro",
+    "stem": "What is the distance between the points (3, 1) and (3, 7)?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: Both points have the same x-coordinate (3), so they lie on a vertical line.\nStep 2: Distance = |7 \u2212 1| = 6 units.\nAnswer: 6 units.",
+    "difficulty": 1,
+    "tags": [
+      "geometry",
+      "level2"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 6
+  },
+  {
+    "id": "geo-l2-ci-007",
+    "topic": "coordinate_intro",
+    "stem": "A rectangle has vertices at (1, 1), (7, 1), (7, 4), and (1, 4). What is its area?",
+    "visual_svg": null,
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: Length = 7 \u2212 1 = 6 units.\nStep 2: Width = 4 \u2212 1 = 3 units.\nStep 3: Area = 6 \u00d7 3 = 18 square units.\nAnswer: 18 square units.",
+    "difficulty": 2,
+    "tags": [
+      "geometry",
+      "level2"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 18
+  },
+  {
+    "id": "geo-l2-ci-008",
+    "topic": "coordinate_intro",
+    "stem": "The midpoint of a line segment is at (5, 3). One endpoint is at (2, 1). What is the other endpoint?",
+    "visual_svg": null,
+    "answer_type": "mcq",
+    "correct_answer": 0,
+    "solution": "Step 1: Midpoint formula: midpoint = ((x\u2081+x\u2082)/2, (y\u2081+y\u2082)/2).\nStep 2: (5, 3) = ((2+x\u2082)/2, (1+y\u2082)/2).\nStep 3: (2+x\u2082)/2 = 5 \u2192 x\u2082 = 8.\nStep 4: (1+y\u2082)/2 = 3 \u2192 y\u2082 = 5.\nStep 5: The other endpoint is (8, 5).\nAnswer: B) (8, 5).",
+    "difficulty": 3,
+    "tags": [
+      "geometry",
+      "level2"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken.",
+      "1": "Review the question carefully and try again.",
+      "2": "Review the question carefully and try again.",
+      "3": "Review the question carefully and try again."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [
+      "A) (7, 5)",
+      "B) (8, 5)",
+      "C) (3, 2)",
+      "D) (3.5, 2)"
+    ],
+    "interaction_mode": "mcq"
+  },
+  {
+    "id": "geo-l2-ci-009",
+    "topic": "coordinate_intro",
+    "stem": "A triangle has vertices at (0, 0), (6, 0), and (3, 4). What is its area?",
+    "visual_svg": "<svg viewBox='0 0 240 180' xmlns='http://www.w3.org/2000/svg'><rect width='240' height='180' fill='#f9f9f9' rx='8'/><line x1='20' y1='150' x2='220' y2='150' stroke='#ccc' stroke-width='1'/><line x1='20' y1='150' x2='20' y2='10' stroke='#ccc' stroke-width='1'/><polygon points='20,150 200,150 110,30' fill='#d5e8f0' fill-opacity='0.5' stroke='#3498db' stroke-width='2'/><circle cx='20' cy='150' r='3' fill='#e74c3c'/><circle cx='200' cy='150' r='3' fill='#e74c3c'/><circle cx='110' cy='30' r='3' fill='#e74c3c'/><text x='8' y='168' font-size='11' fill='#333'>(0,0)</text><text x='188' y='168' font-size='11' fill='#333'>(6,0)</text><text x='112' y='25' font-size='11' fill='#333'>(3,4)</text></svg>",
+    "answer_type": "integer",
+    "correct_answer": 0,
+    "solution": "Step 1: The base lies along the x-axis from (0,0) to (6,0). Base = 6.\nStep 2: The height is the y-coordinate of the top vertex = 4.\nStep 3: Area = \u00bd \u00d7 base \u00d7 height = \u00bd \u00d7 6 \u00d7 4 = 12 square units.\nAnswer: 12 square units.",
+    "difficulty": 2,
+    "tags": [
+      "geometry",
+      "level2"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [],
+    "interaction_mode": "integer",
+    "correct_value": 12
+  },
+  {
+    "id": "geo-l2-ci-010",
+    "topic": "coordinate_intro",
+    "stem": "Which of these points is farthest from the origin (0, 0): (3, 0), (0, 4), or (2, 2)?",
+    "visual_svg": null,
+    "answer_type": "mcq",
+    "correct_answer": 0,
+    "solution": "Step 1: Distance of (3, 0) from origin = \u221a(3\u00b2 + 0\u00b2) = \u221a9 = 3.\nStep 2: Distance of (0, 4) from origin = \u221a(0\u00b2 + 4\u00b2) = \u221a16 = 4.\nStep 3: Distance of (2, 2) from origin = \u221a(2\u00b2 + 2\u00b2) = \u221a8 \u2248 2.83.\nStep 4: The farthest point is (0, 4) at distance 4.\nAnswer: B) (0, 4).",
+    "difficulty": 2,
+    "tags": [
+      "geometry",
+      "level2"
+    ],
+    "hint": {
+      "level_0": "Read the question carefully. What exactly is it asking you to find?",
+      "level_1": "Look at the numbers or properties given in the problem statement.",
+      "level_2": "Work through the options and check which one satisfies the conditions."
+    },
+    "diagnostics": {
+      "correct_explanation": "The correct answer is shown above. Verify the steps taken.",
+      "1": "Review the question carefully and try again.",
+      "2": "Review the question carefully and try again.",
+      "3": "Review the question carefully and try again."
+    },
+    "solution_steps": [
+      "The correct answer is shown above. Verify the steps taken."
+    ],
+    "choices": [
+      "A) (3, 0)",
+      "B) (0, 4)",
+      "C) (2, 2)",
+      "D) All are the same distance"
+    ],
+    "interaction_mode": "mcq"
+  }
+]

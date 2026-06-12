@@ -2,7 +2,7 @@
   "level": 3,
   "batch": "new",
   "grade_band": "3-4",
-  "total_questions": 165,
+  "total_questions": 160,
   "sessions_processed": [
     10,
     12,
@@ -35,7 +35,8 @@
       ],
       "correct_answer": 0,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S10"
+      "source": "Wavebook L3 S10",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s10_q02",
@@ -52,7 +53,8 @@
       ],
       "correct_answer": 1,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S10"
+      "source": "Wavebook L3 S10",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s10_q03",
@@ -69,7 +71,8 @@
       ],
       "correct_answer": 0,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S10"
+      "source": "Wavebook L3 S10",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s10_q04",
@@ -86,7 +89,8 @@
       ],
       "correct_answer": 1,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S10"
+      "source": "Wavebook L3 S10",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s10_q05",
@@ -103,7 +107,8 @@
       ],
       "correct_answer": 0,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S10"
+      "source": "Wavebook L3 S10",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s10_q06",
@@ -120,7 +125,8 @@
       ],
       "correct_answer": 0,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S10"
+      "source": "Wavebook L3 S10",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s10_q07",
@@ -137,7 +143,9 @@
       ],
       "correct_answer": 0,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S10"
+      "source": "Wavebook L3 S10",
+      "svg": "wb_L3_s10_q07.svg",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s10_q08",
@@ -154,7 +162,8 @@
       ],
       "correct_answer": 1,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S10"
+      "source": "Wavebook L3 S10",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s10_q09",
@@ -171,7 +180,8 @@
       ],
       "correct_answer": 0,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S10"
+      "source": "Wavebook L3 S10",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s10_q10",
@@ -188,7 +198,8 @@
       ],
       "correct_answer": 2,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S10"
+      "source": "Wavebook L3 S10",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s10_q11",
@@ -205,7 +216,8 @@
       ],
       "correct_answer": 0,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S10"
+      "source": "Wavebook L3 S10",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s10_q12",
@@ -222,7 +234,8 @@
       ],
       "correct_answer": 1,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S10"
+      "source": "Wavebook L3 S10",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s10_q13",
@@ -239,7 +252,8 @@
       ],
       "correct_answer": 0,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S10"
+      "source": "Wavebook L3 S10",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s10_q14",
@@ -256,7 +270,8 @@
       ],
       "correct_answer": 0,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S10"
+      "source": "Wavebook L3 S10",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s10_q15",
@@ -273,7 +288,8 @@
       ],
       "correct_answer": 0,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S10"
+      "source": "Wavebook L3 S10",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s12_q01",
@@ -290,7 +306,8 @@
       ],
       "correct_answer": 1,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S12"
+      "source": "Wavebook L3 S12",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s12_q02",
@@ -307,7 +324,8 @@
       ],
       "correct_answer": 1,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S12"
+      "source": "Wavebook L3 S12",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s12_q03",
@@ -324,7 +342,8 @@
       ],
       "correct_answer": 0,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S12"
+      "source": "Wavebook L3 S12",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s12_q04",
@@ -341,7 +360,8 @@
       ],
       "correct_answer": 0,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S12"
+      "source": "Wavebook L3 S12",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s12_q05",
@@ -358,7 +378,8 @@
       ],
       "correct_answer": 2,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S12"
+      "source": "Wavebook L3 S12",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s12_q06",
@@ -375,7 +396,8 @@
       ],
       "correct_answer": 2,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S12"
+      "source": "Wavebook L3 S12",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s12_q07",
@@ -392,7 +414,8 @@
       ],
       "correct_answer": 1,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S12"
+      "source": "Wavebook L3 S12",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s12_q08",
@@ -409,7 +432,8 @@
       ],
       "correct_answer": 0,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S12"
+      "source": "Wavebook L3 S12",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s12_q09",
@@ -426,7 +450,8 @@
       ],
       "correct_answer": 1,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S12"
+      "source": "Wavebook L3 S12",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s12_q10",
@@ -443,7 +468,8 @@
       ],
       "correct_answer": 2,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S12"
+      "source": "Wavebook L3 S12",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s12_q11",
@@ -460,7 +486,8 @@
       ],
       "correct_answer": 0,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S12"
+      "source": "Wavebook L3 S12",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s12_q12",
@@ -477,7 +504,8 @@
       ],
       "correct_answer": 1,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S12"
+      "source": "Wavebook L3 S12",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s12_q13",
@@ -494,7 +522,8 @@
       ],
       "correct_answer": 1,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S12"
+      "source": "Wavebook L3 S12",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s12_q14",
@@ -511,7 +540,8 @@
       ],
       "correct_answer": 0,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S12"
+      "source": "Wavebook L3 S12",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s12_q15",
@@ -528,7 +558,8 @@
       ],
       "correct_answer": 0,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S12"
+      "source": "Wavebook L3 S12",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s15_q01",
@@ -545,7 +576,8 @@
       ],
       "correct_answer": 0,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S15"
+      "source": "Wavebook L3 S15",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s15_q02",
@@ -562,7 +594,10 @@
       ],
       "correct_answer": 1,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S15"
+      "source": "Wavebook L3 S15",
+      "svg": "wb_L3_s15_q02.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" width=\"320\" height=\"200\" style=\"font-family:Arial,sans-serif\"><circle cx=\"120\" cy=\"100\" r=\"70\" fill=\"rgba(66,165,245,0.3)\" stroke=\"#42A5F5\" stroke-width=\"2\"/><circle cx=\"200\" cy=\"100\" r=\"70\" fill=\"rgba(102,187,106,0.3)\" stroke=\"#66BB6A\" stroke-width=\"2\"/><text x=\"85\" y=\"30\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1565C0\">Set A</text><text x=\"235\" y=\"30\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#2E7D32\">Set B</text></svg>"
     },
     {
       "id": "wb_L3_s15_q03",
@@ -579,7 +614,8 @@
       ],
       "correct_answer": 1,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S15"
+      "source": "Wavebook L3 S15",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s15_q04",
@@ -596,7 +632,8 @@
       ],
       "correct_answer": 0,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S15"
+      "source": "Wavebook L3 S15",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s15_q05",
@@ -613,7 +650,8 @@
       ],
       "correct_answer": 1,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S15"
+      "source": "Wavebook L3 S15",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s15_q06",
@@ -630,7 +668,8 @@
       ],
       "correct_answer": 0,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S15"
+      "source": "Wavebook L3 S15",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s15_q07",
@@ -647,7 +686,8 @@
       ],
       "correct_answer": 0,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S15"
+      "source": "Wavebook L3 S15",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s15_q08",
@@ -664,7 +704,8 @@
       ],
       "correct_answer": 2,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S15"
+      "source": "Wavebook L3 S15",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s15_q09",
@@ -681,7 +722,8 @@
       ],
       "correct_answer": 1,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S15"
+      "source": "Wavebook L3 S15",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s15_q10",
@@ -698,7 +740,8 @@
       ],
       "correct_answer": 1,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S15"
+      "source": "Wavebook L3 S15",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s15_q11",
@@ -715,7 +758,8 @@
       ],
       "correct_answer": 0,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S15"
+      "source": "Wavebook L3 S15",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s15_q12",
@@ -732,7 +776,8 @@
       ],
       "correct_answer": 0,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S15"
+      "source": "Wavebook L3 S15",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s15_q13",
@@ -749,7 +794,8 @@
       ],
       "correct_answer": 1,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S15"
+      "source": "Wavebook L3 S15",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s15_q14",
@@ -766,7 +812,8 @@
       ],
       "correct_answer": 0,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S15"
+      "source": "Wavebook L3 S15",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s15_q15",
@@ -783,7 +830,8 @@
       ],
       "correct_answer": 0,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S15"
+      "source": "Wavebook L3 S15",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s18_q01",
@@ -800,7 +848,8 @@
       ],
       "correct_answer": 2,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S18"
+      "source": "Wavebook L3 S18",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s18_q02",
@@ -817,7 +866,8 @@
       ],
       "correct_answer": 1,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S18"
+      "source": "Wavebook L3 S18",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s18_q03",
@@ -834,7 +884,8 @@
       ],
       "correct_answer": 1,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S18"
+      "source": "Wavebook L3 S18",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s18_q04",
@@ -851,24 +902,8 @@
       ],
       "correct_answer": 2,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S18"
-    },
-    {
-      "id": "wb_L3_s18_q05",
-      "stem": "A square garden has a perimeter of 100 m. What is the length of each side?",
-      "interaction_mode": "mcq",
-      "topic": "Perimeter advanced",
-      "difficulty_tier": "warmup",
-      "question_number": 5,
-      "choices": [
-        "50 m",
-        "25 m",
-        "20 m",
-        "400 m"
-      ],
-      "correct_answer": 1,
-      "grade_band": "3-4",
-      "source": "Wavebook L3 S18"
+      "source": "Wavebook L3 S18",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s18_q06",
@@ -885,7 +920,8 @@
       ],
       "correct_answer": 0,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S18"
+      "source": "Wavebook L3 S18",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s18_q07",
@@ -902,7 +938,8 @@
       ],
       "correct_answer": 1,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S18"
+      "source": "Wavebook L3 S18",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s18_q08",
@@ -919,7 +956,8 @@
       ],
       "correct_answer": 0,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S18"
+      "source": "Wavebook L3 S18",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s18_q09",
@@ -936,7 +974,8 @@
       ],
       "correct_answer": 0,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S18"
+      "source": "Wavebook L3 S18",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s18_q10",
@@ -953,7 +992,8 @@
       ],
       "correct_answer": 1,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S18"
+      "source": "Wavebook L3 S18",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s18_q11",
@@ -970,7 +1010,8 @@
       ],
       "correct_answer": 0,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S18"
+      "source": "Wavebook L3 S18",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s18_q12",
@@ -987,7 +1028,8 @@
       ],
       "correct_answer": 1,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S18"
+      "source": "Wavebook L3 S18",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s18_q13",
@@ -1004,41 +1046,8 @@
       ],
       "correct_answer": 0,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S18"
-    },
-    {
-      "id": "wb_L3_s18_q14",
-      "stem": "A rectangular room is 9 m long and 7 m wide. Find the cost of putting a border around it at Rs 20 per metre.",
-      "interaction_mode": "mcq",
-      "topic": "Perimeter advanced",
-      "difficulty_tier": "challenge",
-      "question_number": 14,
-      "choices": [
-        "Rs 640",
-        "Rs 320",
-        "Rs 160",
-        "Rs 720"
-      ],
-      "correct_answer": 0,
-      "grade_band": "3-4",
-      "source": "Wavebook L3 S18"
-    },
-    {
-      "id": "wb_L3_s18_q15",
-      "stem": "A square and a rectangle have the same perimeter. The square has side 10 cm. If the rectangle has length 12 cm, find its breadth.",
-      "interaction_mode": "mcq",
-      "topic": "Perimeter advanced",
-      "difficulty_tier": "challenge",
-      "question_number": 15,
-      "choices": [
-        "8 cm",
-        "10 cm",
-        "6 cm",
-        "14 cm"
-      ],
-      "correct_answer": 0,
-      "grade_band": "3-4",
-      "source": "Wavebook L3 S18"
+      "source": "Wavebook L3 S18",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s20_q01",
@@ -1055,7 +1064,8 @@
       ],
       "correct_answer": 1,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S20"
+      "source": "Wavebook L3 S20",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s20_q02",
@@ -1072,24 +1082,8 @@
       ],
       "correct_answer": 2,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S20"
-    },
-    {
-      "id": "wb_L3_s20_q03",
-      "stem": "The area of a triangle with base 8 cm and height 5 cm is",
-      "interaction_mode": "mcq",
-      "topic": "Symmetry Introduction",
-      "difficulty_tier": "warmup",
-      "question_number": 3,
-      "choices": [
-        "40 sq cm",
-        "20 sq cm",
-        "13 sq cm",
-        "80 sq cm"
-      ],
-      "correct_answer": 1,
-      "grade_band": "3-4",
-      "source": "Wavebook L3 S20"
+      "source": "Wavebook L3 S20",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s20_q04",
@@ -1106,7 +1100,9 @@
       ],
       "correct_answer": 1,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S20"
+      "source": "Wavebook L3 S20",
+      "svg": "wb_L3_s20_q04.svg",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s20_q05",
@@ -1123,7 +1119,8 @@
       ],
       "correct_answer": 1,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S20"
+      "source": "Wavebook L3 S20",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s20_q06",
@@ -1140,7 +1137,8 @@
       ],
       "correct_answer": 1,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S20"
+      "source": "Wavebook L3 S20",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s20_q07",
@@ -1157,7 +1155,8 @@
       ],
       "correct_answer": 1,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S20"
+      "source": "Wavebook L3 S20",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s20_q08",
@@ -1174,7 +1173,8 @@
       ],
       "correct_answer": 1,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S20"
+      "source": "Wavebook L3 S20",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s20_q09",
@@ -1191,24 +1191,8 @@
       ],
       "correct_answer": 1,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S20"
-    },
-    {
-      "id": "wb_L3_s20_q10",
-      "stem": "The area of a triangle with base 14 cm and height 10 cm is",
-      "interaction_mode": "mcq",
-      "topic": "Symmetry Introduction",
-      "difficulty_tier": "practice",
-      "question_number": 10,
-      "choices": [
-        "140 sq cm",
-        "70 sq cm",
-        "24 sq cm",
-        "35 sq cm"
-      ],
-      "correct_answer": 1,
-      "grade_band": "3-4",
-      "source": "Wavebook L3 S20"
+      "source": "Wavebook L3 S20",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s20_q11",
@@ -1225,7 +1209,8 @@
       ],
       "correct_answer": 1,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S20"
+      "source": "Wavebook L3 S20",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s20_q12",
@@ -1242,7 +1227,8 @@
       ],
       "correct_answer": 0,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S20"
+      "source": "Wavebook L3 S20",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s20_q13",
@@ -1259,7 +1245,8 @@
       ],
       "correct_answer": 1,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S20"
+      "source": "Wavebook L3 S20",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s20_q14",
@@ -1276,7 +1263,8 @@
       ],
       "correct_answer": 1,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S20"
+      "source": "Wavebook L3 S20",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s20_q15",
@@ -1293,7 +1281,8 @@
       ],
       "correct_answer": 1,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S20"
+      "source": "Wavebook L3 S20",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s25_q01",
@@ -1310,7 +1299,8 @@
       ],
       "correct_answer": 2,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S25"
+      "source": "Wavebook L3 S25",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s25_q02",
@@ -1327,7 +1317,8 @@
       ],
       "correct_answer": 3,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S25"
+      "source": "Wavebook L3 S25",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s25_q03",
@@ -1344,7 +1335,8 @@
       ],
       "correct_answer": 2,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S25"
+      "source": "Wavebook L3 S25",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s25_q04",
@@ -1361,7 +1353,8 @@
       ],
       "correct_answer": 2,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S25"
+      "source": "Wavebook L3 S25",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s25_q05",
@@ -1378,7 +1371,8 @@
       ],
       "correct_answer": 2,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S25"
+      "source": "Wavebook L3 S25",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s25_q06",
@@ -1388,14 +1382,15 @@
       "difficulty_tier": "practice",
       "question_number": 6,
       "choices": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
+        "Friday",
+        "Saturday",
+        "Sunday",
         "Thursday"
       ],
-      "correct_answer": 3,
+      "correct_answer": 1,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S25"
+      "source": "Wavebook L3 S25",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s25_q07",
@@ -1412,7 +1407,8 @@
       ],
       "correct_answer": 1,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S25"
+      "source": "Wavebook L3 S25",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s25_q08",
@@ -1429,7 +1425,8 @@
       ],
       "correct_answer": 1,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S25"
+      "source": "Wavebook L3 S25",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s25_q09",
@@ -1446,7 +1443,8 @@
       ],
       "correct_answer": 0,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S25"
+      "source": "Wavebook L3 S25",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s25_q10",
@@ -1463,7 +1461,8 @@
       ],
       "correct_answer": 0,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S25"
+      "source": "Wavebook L3 S25",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s25_q11",
@@ -1480,7 +1479,8 @@
       ],
       "correct_answer": 1,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S25"
+      "source": "Wavebook L3 S25",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s25_q12",
@@ -1497,7 +1497,8 @@
       ],
       "correct_answer": 1,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S25"
+      "source": "Wavebook L3 S25",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s25_q13",
@@ -1514,7 +1515,8 @@
       ],
       "correct_answer": 1,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S25"
+      "source": "Wavebook L3 S25",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s25_q14",
@@ -1531,7 +1533,8 @@
       ],
       "correct_answer": 1,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S25"
+      "source": "Wavebook L3 S25",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s25_q15",
@@ -1548,7 +1551,8 @@
       ],
       "correct_answer": 3,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S25"
+      "source": "Wavebook L3 S25",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s29_q01",
@@ -1565,7 +1569,8 @@
       ],
       "correct_answer": 0,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S29"
+      "source": "Wavebook L3 S29",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s29_q02",
@@ -1582,7 +1587,8 @@
       ],
       "correct_answer": 0,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S29"
+      "source": "Wavebook L3 S29",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s29_q03",
@@ -1599,7 +1605,8 @@
       ],
       "correct_answer": 3,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S29"
+      "source": "Wavebook L3 S29",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s29_q04",
@@ -1616,7 +1623,8 @@
       ],
       "correct_answer": 0,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S29"
+      "source": "Wavebook L3 S29",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s29_q05",
@@ -1633,7 +1641,9 @@
       ],
       "correct_answer": 0,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S29"
+      "source": "Wavebook L3 S29",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 350 220\" width=\"350\" height=\"220\" style=\"font-family:Arial,sans-serif\"><text x=\"175\" y=\"18\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#333\">Graph</text><line x1=\"60\" y1=\"30\" x2=\"60\" y2=\"180\" stroke=\"#333\" stroke-width=\"1.5\"/><line x1=\"60\" y1=\"180\" x2=\"340\" y2=\"180\" stroke=\"#333\" stroke-width=\"1.5\"/><line x1=\"60\" y1=\"180.0\" x2=\"340\" y2=\"180.0\" stroke=\"#eee\" stroke-width=\"1\"/><text x=\"52\" y=\"184.0\" text-anchor=\"end\" font-size=\"10\" fill=\"#666\">0</text><line x1=\"60\" y1=\"142.5\" x2=\"340\" y2=\"142.5\" stroke=\"#eee\" stroke-width=\"1\"/><text x=\"52\" y=\"146.5\" text-anchor=\"end\" font-size=\"10\" fill=\"#666\">2</text><line x1=\"60\" y1=\"105.0\" x2=\"340\" y2=\"105.0\" stroke=\"#eee\" stroke-width=\"1\"/><text x=\"52\" y=\"109.0\" text-anchor=\"end\" font-size=\"10\" fill=\"#666\">4</text><line x1=\"60\" y1=\"67.5\" x2=\"340\" y2=\"67.5\" stroke=\"#eee\" stroke-width=\"1\"/><text x=\"52\" y=\"71.5\" text-anchor=\"end\" font-size=\"10\" fill=\"#666\">6</text><line x1=\"60\" y1=\"30.0\" x2=\"340\" y2=\"30.0\" stroke=\"#eee\" stroke-width=\"1\"/><text x=\"52\" y=\"34.0\" text-anchor=\"end\" font-size=\"10\" fill=\"#666\">8</text><rect x=\"75.0\" y=\"86.2\" width=\"40.0\" height=\"93.8\" fill=\"#42A5F5\" rx=\"2\"/><text x=\"95.0\" y=\"194\" text-anchor=\"middle\" font-size=\"9\" fill=\"#333\">A</text><text x=\"95.0\" y=\"82.2\" text-anchor=\"middle\" font-size=\"10\" fill=\"#333\">5</text><rect x=\"127.0\" y=\"30.0\" width=\"40.0\" height=\"150.0\" fill=\"#66BB6A\" rx=\"2\"/><text x=\"147.0\" y=\"194\" text-anchor=\"middle\" font-size=\"9\" fill=\"#333\">B</text><text x=\"147.0\" y=\"26.0\" text-anchor=\"middle\" font-size=\"10\" fill=\"#333\">8</text><rect x=\"179.0\" y=\"123.8\" width=\"40.0\" height=\"56.2\" fill=\"#FF7043\" rx=\"2\"/><text x=\"199.0\" y=\"194\" text-anchor=\"middle\" font-size=\"9\" fill=\"#333\">C</text><text x=\"199.0\" y=\"119.8\" text-anchor=\"middle\" font-size=\"10\" fill=\"#333\">3</text></svg>"
     },
     {
       "id": "wb_L3_s29_q06",
@@ -1650,7 +1660,8 @@
       ],
       "correct_answer": 2,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S29"
+      "source": "Wavebook L3 S29",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s29_q07",
@@ -1667,7 +1678,8 @@
       ],
       "correct_answer": 2,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S29"
+      "source": "Wavebook L3 S29",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s29_q08",
@@ -1684,7 +1696,8 @@
       ],
       "correct_answer": 1,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S29"
+      "source": "Wavebook L3 S29",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s29_q09",
@@ -1701,7 +1714,8 @@
       ],
       "correct_answer": 1,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S29"
+      "source": "Wavebook L3 S29",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s29_q10",
@@ -1718,7 +1732,8 @@
       ],
       "correct_answer": 0,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S29"
+      "source": "Wavebook L3 S29",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s29_q11",
@@ -1735,7 +1750,8 @@
       ],
       "correct_answer": 2,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S29"
+      "source": "Wavebook L3 S29",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s29_q12",
@@ -1752,7 +1768,8 @@
       ],
       "correct_answer": 1,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S29"
+      "source": "Wavebook L3 S29",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s29_q13",
@@ -1769,7 +1786,8 @@
       ],
       "correct_answer": 2,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S29"
+      "source": "Wavebook L3 S29",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s29_q14",
@@ -1786,7 +1804,8 @@
       ],
       "correct_answer": 3,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S29"
+      "source": "Wavebook L3 S29",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s29_q15",
@@ -1803,7 +1822,8 @@
       ],
       "correct_answer": 0,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S29"
+      "source": "Wavebook L3 S29",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s30_q01",
@@ -1820,7 +1840,10 @@
       ],
       "correct_answer": 2,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S30"
+      "source": "Wavebook L3 S30",
+      "svg": "wb_L3_s30_q01.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 180\" width=\"300\" height=\"180\" style=\"font-family:Arial,sans-serif\"><rect x=\"50\" y=\"30\" width=\"200\" height=\"120\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2.5\" rx=\"2\"/></svg>"
     },
     {
       "id": "wb_L3_s30_q02",
@@ -1837,7 +1860,9 @@
       ],
       "correct_answer": 2,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S30"
+      "source": "Wavebook L3 S30",
+      "svg": "wb_L3_s30_q02.svg",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s30_q03",
@@ -1854,7 +1879,9 @@
       ],
       "correct_answer": 0,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S30"
+      "source": "Wavebook L3 S30",
+      "svg": "wb_L3_s30_q03.svg",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s30_q04",
@@ -1871,7 +1898,9 @@
       ],
       "correct_answer": 2,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S30"
+      "source": "Wavebook L3 S30",
+      "svg": "wb_L3_s30_q04.svg",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s30_q05",
@@ -1888,7 +1917,9 @@
       ],
       "correct_answer": 0,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S30"
+      "source": "Wavebook L3 S30",
+      "svg": "wb_L3_s30_q05.svg",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s30_q06",
@@ -1905,7 +1936,9 @@
       ],
       "correct_answer": 1,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S30"
+      "source": "Wavebook L3 S30",
+      "svg": "wb_L3_s30_q06.svg",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s30_q07",
@@ -1922,7 +1955,10 @@
       ],
       "correct_answer": 0,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S30"
+      "source": "Wavebook L3 S30",
+      "svg": "wb_L3_s30_q07.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 200\" width=\"300\" height=\"200\" style=\"font-family:Arial,sans-serif\"><polygon points=\"150,20 50,170 250,170\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2.5\"/></svg>"
     },
     {
       "id": "wb_L3_s30_q08",
@@ -1939,7 +1975,9 @@
       ],
       "correct_answer": 2,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S30"
+      "source": "Wavebook L3 S30",
+      "svg": "wb_L3_s30_q08.svg",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s30_q09",
@@ -1956,7 +1994,9 @@
       ],
       "correct_answer": 2,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S30"
+      "source": "Wavebook L3 S30",
+      "svg": "wb_L3_s30_q09.svg",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s30_q10",
@@ -1973,7 +2013,10 @@
       ],
       "correct_answer": 1,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S30"
+      "source": "Wavebook L3 S30",
+      "svg": "wb_L3_s30_q10.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 180\" width=\"300\" height=\"180\" style=\"font-family:Arial,sans-serif\"><rect x=\"50\" y=\"30\" width=\"200\" height=\"120\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2.5\" rx=\"2\"/></svg>"
     },
     {
       "id": "wb_L3_s30_q11",
@@ -1990,7 +2033,9 @@
       ],
       "correct_answer": 1,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S30"
+      "source": "Wavebook L3 S30",
+      "svg": "wb_L3_s30_q11.svg",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s30_q12",
@@ -2007,7 +2052,9 @@
       ],
       "correct_answer": 2,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S30"
+      "source": "Wavebook L3 S30",
+      "svg": "wb_L3_s30_q12.svg",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s30_q13",
@@ -2024,7 +2071,10 @@
       ],
       "correct_answer": 1,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S30"
+      "source": "Wavebook L3 S30",
+      "svg": "wb_L3_s30_q13.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 200\" width=\"300\" height=\"200\" style=\"font-family:Arial,sans-serif\"><polygon points=\"150,20 50,170 250,170\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2.5\"/></svg>"
     },
     {
       "id": "wb_L3_s30_q14",
@@ -2041,7 +2091,9 @@
       ],
       "correct_answer": 2,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S30"
+      "source": "Wavebook L3 S30",
+      "svg": "wb_L3_s30_q14.svg",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s30_q15",
@@ -2058,7 +2110,9 @@
       ],
       "correct_answer": 0,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S30"
+      "source": "Wavebook L3 S30",
+      "svg": "wb_L3_s30_q15.svg",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s32_q01",
@@ -2075,7 +2129,8 @@
       ],
       "correct_answer": 0,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S32"
+      "source": "Wavebook L3 S32",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s32_q02",
@@ -2092,7 +2147,8 @@
       ],
       "correct_answer": 2,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S32"
+      "source": "Wavebook L3 S32",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s32_q03",
@@ -2109,7 +2165,9 @@
       ],
       "correct_answer": 2,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S32"
+      "source": "Wavebook L3 S32",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 180\" width=\"300\" height=\"180\" style=\"font-family:Arial,sans-serif\"><rect x=\"50\" y=\"30\" width=\"200\" height=\"120\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2.5\" rx=\"2\"/></svg>"
     },
     {
       "id": "wb_L3_s32_q04",
@@ -2126,7 +2184,8 @@
       ],
       "correct_answer": 0,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S32"
+      "source": "Wavebook L3 S32",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s32_q05",
@@ -2143,7 +2202,8 @@
       ],
       "correct_answer": 1,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S32"
+      "source": "Wavebook L3 S32",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s32_q06",
@@ -2160,7 +2220,8 @@
       ],
       "correct_answer": 1,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S32"
+      "source": "Wavebook L3 S32",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s32_q07",
@@ -2177,7 +2238,8 @@
       ],
       "correct_answer": 0,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S32"
+      "source": "Wavebook L3 S32",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s32_q08",
@@ -2194,7 +2256,8 @@
       ],
       "correct_answer": 1,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S32"
+      "source": "Wavebook L3 S32",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s32_q09",
@@ -2211,7 +2274,9 @@
       ],
       "correct_answer": 0,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S32"
+      "source": "Wavebook L3 S32",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 180\" width=\"300\" height=\"180\" style=\"font-family:Arial,sans-serif\"><circle cx=\"150\" cy=\"90\" r=\"70\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2.5\"/></svg>"
     },
     {
       "id": "wb_L3_s32_q10",
@@ -2228,7 +2293,8 @@
       ],
       "correct_answer": 2,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S32"
+      "source": "Wavebook L3 S32",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s32_q11",
@@ -2245,7 +2311,8 @@
       ],
       "correct_answer": 0,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S32"
+      "source": "Wavebook L3 S32",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s32_q12",
@@ -2262,7 +2329,8 @@
       ],
       "correct_answer": 0,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S32"
+      "source": "Wavebook L3 S32",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s32_q13",
@@ -2279,7 +2347,8 @@
       ],
       "correct_answer": 0,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S32"
+      "source": "Wavebook L3 S32",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s32_q14",
@@ -2296,7 +2365,10 @@
       ],
       "correct_answer": 1,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S32"
+      "source": "Wavebook L3 S32",
+      "svg": "wb_L3_s32_q14.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 190\" width=\"260\" height=\"190\" style=\"font-family:Arial,sans-serif\"><polygon points=\"60,60 160,60 160,160 60,160\" fill=\"#E8F4FD\" stroke=\"#333\" stroke-width=\"2\"/><polygon points=\"60,60 100,30 200,30 160,60\" fill=\"#D0E8F0\" stroke=\"#333\" stroke-width=\"2\"/><polygon points=\"160,60 200,30 200,130 160,160\" fill=\"#B8D8E8\" stroke=\"#333\" stroke-width=\"2\"/></svg>"
     },
     {
       "id": "wb_L3_s32_q15",
@@ -2313,7 +2385,8 @@
       ],
       "correct_answer": 2,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S32"
+      "source": "Wavebook L3 S32",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s38_q01",
@@ -2330,7 +2403,9 @@
       ],
       "correct_answer": 2,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S38"
+      "source": "Wavebook L3 S38",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 240\" width=\"340\" height=\"240\" style=\"font-family:Arial,sans-serif\"><path d=\"M130,120 L130.0,40.0 A80,80 0 0 1 177.0,184.7 Z\" fill=\"#42A5F5\" stroke=\"white\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"40\" width=\"12\" height=\"12\" fill=\"#42A5F5\"/><text x=\"258\" y=\"50\" font-size=\"11\" fill=\"#333\">Part A</text><path d=\"M130,120 L177.0,184.7 A80,80 0 0 1 53.9,144.7 Z\" fill=\"#66BB6A\" stroke=\"white\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"60\" width=\"12\" height=\"12\" fill=\"#66BB6A\"/><text x=\"258\" y=\"70\" font-size=\"11\" fill=\"#333\">Part B</text><path d=\"M130,120 L53.9,144.7 A80,80 0 0 1 83.0,55.3 Z\" fill=\"#FF7043\" stroke=\"white\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"80\" width=\"12\" height=\"12\" fill=\"#FF7043\"/><text x=\"258\" y=\"90\" font-size=\"11\" fill=\"#333\">Part C</text><path d=\"M130,120 L83.0,55.3 A80,80 0 0 1 130.0,40.0 Z\" fill=\"#AB47BC\" stroke=\"white\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"100\" width=\"12\" height=\"12\" fill=\"#AB47BC\"/><text x=\"258\" y=\"110\" font-size=\"11\" fill=\"#333\">Part D</text></svg>"
     },
     {
       "id": "wb_L3_s38_q02",
@@ -2347,7 +2422,10 @@
       ],
       "correct_answer": 2,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S38"
+      "source": "Wavebook L3 S38",
+      "svg": "wb_L3_s38_q02.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 350 78\" width=\"350\" height=\"78\" style=\"font-family:Arial,sans-serif\"><text x=\"10\" y=\"44\" font-size=\"12\" fill=\"#333\">A</text><text x=\"100\" y=\"44\" font-size=\"16\">⭐</text><text x=\"122\" y=\"44\" font-size=\"16\">⭐</text><text x=\"144\" y=\"44\" font-size=\"16\">⭐</text><text x=\"166\" y=\"44\" font-size=\"16\">⭐</text><text x=\"188\" y=\"44\" font-size=\"16\">⭐</text><text x=\"10\" y=\"68\" font-size=\"10\" fill=\"#888\">Each ⭐ = 1</text></svg>"
     },
     {
       "id": "wb_L3_s38_q03",
@@ -2364,7 +2442,10 @@
       ],
       "correct_answer": 1,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S38"
+      "source": "Wavebook L3 S38",
+      "svg": "wb_L3_s38_q03.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 350 220\" width=\"350\" height=\"220\" style=\"font-family:Arial,sans-serif\"><line x1=\"60\" y1=\"30\" x2=\"60\" y2=\"180\" stroke=\"#333\" stroke-width=\"1.5\"/><line x1=\"60\" y1=\"180\" x2=\"340\" y2=\"180\" stroke=\"#333\" stroke-width=\"1.5\"/><line x1=\"60\" y1=\"180.0\" x2=\"340\" y2=\"180.0\" stroke=\"#eee\" stroke-width=\"1\"/><text x=\"52\" y=\"184.0\" text-anchor=\"end\" font-size=\"10\" fill=\"#666\">0</text><line x1=\"60\" y1=\"142.5\" x2=\"340\" y2=\"142.5\" stroke=\"#eee\" stroke-width=\"1\"/><text x=\"52\" y=\"146.5\" text-anchor=\"end\" font-size=\"10\" fill=\"#666\">2</text><line x1=\"60\" y1=\"105.0\" x2=\"340\" y2=\"105.0\" stroke=\"#eee\" stroke-width=\"1\"/><text x=\"52\" y=\"109.0\" text-anchor=\"end\" font-size=\"10\" fill=\"#666\">4</text><line x1=\"60\" y1=\"67.5\" x2=\"340\" y2=\"67.5\" stroke=\"#eee\" stroke-width=\"1\"/><text x=\"52\" y=\"71.5\" text-anchor=\"end\" font-size=\"10\" fill=\"#666\">6</text><line x1=\"60\" y1=\"30.0\" x2=\"340\" y2=\"30.0\" stroke=\"#eee\" stroke-width=\"1\"/><text x=\"52\" y=\"34.0\" text-anchor=\"end\" font-size=\"10\" fill=\"#666\">8</text><rect x=\"75.0\" y=\"86.2\" width=\"40.0\" height=\"93.8\" fill=\"#42A5F5\" rx=\"2\"/><text x=\"95.0\" y=\"194\" text-anchor=\"middle\" font-size=\"9\" fill=\"#333\">A</text><text x=\"95.0\" y=\"82.2\" text-anchor=\"middle\" font-size=\"10\" fill=\"#333\">5</text><rect x=\"127.0\" y=\"30.0\" width=\"40.0\" height=\"150.0\" fill=\"#66BB6A\" rx=\"2\"/><text x=\"147.0\" y=\"194\" text-anchor=\"middle\" font-size=\"9\" fill=\"#333\">B</text><text x=\"147.0\" y=\"26.0\" text-anchor=\"middle\" font-size=\"10\" fill=\"#333\">8</text><rect x=\"179.0\" y=\"123.8\" width=\"40.0\" height=\"56.2\" fill=\"#FF7043\" rx=\"2\"/><text x=\"199.0\" y=\"194\" text-anchor=\"middle\" font-size=\"9\" fill=\"#333\">C</text><text x=\"199.0\" y=\"119.8\" text-anchor=\"middle\" font-size=\"10\" fill=\"#333\">3</text></svg>"
     },
     {
       "id": "wb_L3_s38_q04",
@@ -2381,7 +2462,10 @@
       ],
       "correct_answer": 2,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S38"
+      "source": "Wavebook L3 S38",
+      "svg": "wb_L3_s38_q04.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 240\" width=\"340\" height=\"240\" style=\"font-family:Arial,sans-serif\"><path d=\"M130,120 L130.0,40.0 A80,80 0 0 1 210.0,120.0 Z\" fill=\"#42A5F5\" stroke=\"white\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"40\" width=\"12\" height=\"12\" fill=\"#42A5F5\"/><text x=\"258\" y=\"50\" font-size=\"11\" fill=\"#333\">games</text><path d=\"M130,120 L210.0,120.0 A80,80 0 1 1 130.0,40.0 Z\" fill=\"#66BB6A\" stroke=\"white\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"60\" width=\"12\" height=\"12\" fill=\"#66BB6A\"/><text x=\"258\" y=\"70\" font-size=\"11\" fill=\"#333\">Other</text></svg>"
     },
     {
       "id": "wb_L3_s38_q05",
@@ -2398,7 +2482,10 @@
       ],
       "correct_answer": 2,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S38"
+      "source": "Wavebook L3 S38",
+      "svg": "wb_L3_s38_q05.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 350 134\" width=\"350\" height=\"134\" style=\"font-family:Arial,sans-serif\"><text x=\"10\" y=\"44\" font-size=\"12\" fill=\"#333\">Item A</text><text x=\"100\" y=\"44\" font-size=\"16\">⭐</text><text x=\"122\" y=\"44\" font-size=\"16\">⭐</text><text x=\"144\" y=\"44\" font-size=\"16\">⭐</text><text x=\"166\" y=\"44\" font-size=\"16\">⭐</text><text x=\"10\" y=\"72\" font-size=\"12\" fill=\"#333\">Item B</text><text x=\"100\" y=\"72\" font-size=\"16\">⭐</text><text x=\"122\" y=\"72\" font-size=\"16\">⭐</text><text x=\"144\" y=\"72\" font-size=\"16\">⭐</text><text x=\"10\" y=\"100\" font-size=\"12\" fill=\"#333\">Item C</text><text x=\"100\" y=\"100\" font-size=\"16\">⭐</text><text x=\"122\" y=\"100\" font-size=\"16\">⭐</text><text x=\"144\" y=\"100\" font-size=\"16\">⭐</text><text x=\"166\" y=\"100\" font-size=\"16\">⭐</text><text x=\"188\" y=\"100\" font-size=\"16\">⭐</text><text x=\"10\" y=\"124\" font-size=\"10\" fill=\"#888\">Each ⭐ = 1</text></svg>"
     },
     {
       "id": "wb_L3_s38_q06",
@@ -2415,7 +2502,10 @@
       ],
       "correct_answer": 1,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S38"
+      "source": "Wavebook L3 S38",
+      "svg": "wb_L3_s38_q06.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 240\" width=\"340\" height=\"240\" style=\"font-family:Arial,sans-serif\"><path d=\"M130,120 L130.0,40.0 A80,80 0 0 1 177.0,184.7 Z\" fill=\"#42A5F5\" stroke=\"white\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"40\" width=\"12\" height=\"12\" fill=\"#42A5F5\"/><text x=\"258\" y=\"50\" font-size=\"11\" fill=\"#333\">Part A</text><path d=\"M130,120 L177.0,184.7 A80,80 0 0 1 53.9,144.7 Z\" fill=\"#66BB6A\" stroke=\"white\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"60\" width=\"12\" height=\"12\" fill=\"#66BB6A\"/><text x=\"258\" y=\"70\" font-size=\"11\" fill=\"#333\">Part B</text><path d=\"M130,120 L53.9,144.7 A80,80 0 0 1 83.0,55.3 Z\" fill=\"#FF7043\" stroke=\"white\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"80\" width=\"12\" height=\"12\" fill=\"#FF7043\"/><text x=\"258\" y=\"90\" font-size=\"11\" fill=\"#333\">Part C</text><path d=\"M130,120 L83.0,55.3 A80,80 0 0 1 130.0,40.0 Z\" fill=\"#AB47BC\" stroke=\"white\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"100\" width=\"12\" height=\"12\" fill=\"#AB47BC\"/><text x=\"258\" y=\"110\" font-size=\"11\" fill=\"#333\">Part D</text></svg>"
     },
     {
       "id": "wb_L3_s38_q07",
@@ -2432,7 +2522,10 @@
       ],
       "correct_answer": 1,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S38"
+      "source": "Wavebook L3 S38",
+      "svg": "wb_L3_s38_q07.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 350 134\" width=\"350\" height=\"134\" style=\"font-family:Arial,sans-serif\"><text x=\"10\" y=\"44\" font-size=\"12\" fill=\"#333\">Item A</text><text x=\"100\" y=\"44\" font-size=\"16\">⭐</text><text x=\"122\" y=\"44\" font-size=\"16\">⭐</text><text x=\"144\" y=\"44\" font-size=\"16\">⭐</text><text x=\"166\" y=\"44\" font-size=\"16\">⭐</text><text x=\"10\" y=\"72\" font-size=\"12\" fill=\"#333\">Item B</text><text x=\"100\" y=\"72\" font-size=\"16\">⭐</text><text x=\"122\" y=\"72\" font-size=\"16\">⭐</text><text x=\"144\" y=\"72\" font-size=\"16\">⭐</text><text x=\"10\" y=\"100\" font-size=\"12\" fill=\"#333\">Item C</text><text x=\"100\" y=\"100\" font-size=\"16\">⭐</text><text x=\"122\" y=\"100\" font-size=\"16\">⭐</text><text x=\"144\" y=\"100\" font-size=\"16\">⭐</text><text x=\"166\" y=\"100\" font-size=\"16\">⭐</text><text x=\"188\" y=\"100\" font-size=\"16\">⭐</text><text x=\"10\" y=\"124\" font-size=\"10\" fill=\"#888\">Each ⭐ = 1</text></svg>"
     },
     {
       "id": "wb_L3_s38_q08",
@@ -2449,7 +2542,10 @@
       ],
       "correct_answer": 2,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S38"
+      "source": "Wavebook L3 S38",
+      "svg": "wb_L3_s38_q08.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 350 220\" width=\"350\" height=\"220\" style=\"font-family:Arial,sans-serif\"><line x1=\"60\" y1=\"30\" x2=\"60\" y2=\"180\" stroke=\"#333\" stroke-width=\"1.5\"/><line x1=\"60\" y1=\"180\" x2=\"340\" y2=\"180\" stroke=\"#333\" stroke-width=\"1.5\"/><line x1=\"60\" y1=\"180.0\" x2=\"340\" y2=\"180.0\" stroke=\"#eee\" stroke-width=\"1\"/><text x=\"52\" y=\"184.0\" text-anchor=\"end\" font-size=\"10\" fill=\"#666\">0</text><line x1=\"60\" y1=\"142.5\" x2=\"340\" y2=\"142.5\" stroke=\"#eee\" stroke-width=\"1\"/><text x=\"52\" y=\"146.5\" text-anchor=\"end\" font-size=\"10\" fill=\"#666\">2</text><line x1=\"60\" y1=\"105.0\" x2=\"340\" y2=\"105.0\" stroke=\"#eee\" stroke-width=\"1\"/><text x=\"52\" y=\"109.0\" text-anchor=\"end\" font-size=\"10\" fill=\"#666\">4</text><line x1=\"60\" y1=\"67.5\" x2=\"340\" y2=\"67.5\" stroke=\"#eee\" stroke-width=\"1\"/><text x=\"52\" y=\"71.5\" text-anchor=\"end\" font-size=\"10\" fill=\"#666\">6</text><line x1=\"60\" y1=\"30.0\" x2=\"340\" y2=\"30.0\" stroke=\"#eee\" stroke-width=\"1\"/><text x=\"52\" y=\"34.0\" text-anchor=\"end\" font-size=\"10\" fill=\"#666\">8</text><rect x=\"75.0\" y=\"86.2\" width=\"40.0\" height=\"93.8\" fill=\"#42A5F5\" rx=\"2\"/><text x=\"95.0\" y=\"194\" text-anchor=\"middle\" font-size=\"9\" fill=\"#333\">A</text><text x=\"95.0\" y=\"82.2\" text-anchor=\"middle\" font-size=\"10\" fill=\"#333\">5</text><rect x=\"127.0\" y=\"30.0\" width=\"40.0\" height=\"150.0\" fill=\"#66BB6A\" rx=\"2\"/><text x=\"147.0\" y=\"194\" text-anchor=\"middle\" font-size=\"9\" fill=\"#333\">B</text><text x=\"147.0\" y=\"26.0\" text-anchor=\"middle\" font-size=\"10\" fill=\"#333\">8</text><rect x=\"179.0\" y=\"123.8\" width=\"40.0\" height=\"56.2\" fill=\"#FF7043\" rx=\"2\"/><text x=\"199.0\" y=\"194\" text-anchor=\"middle\" font-size=\"9\" fill=\"#333\">C</text><text x=\"199.0\" y=\"119.8\" text-anchor=\"middle\" font-size=\"10\" fill=\"#333\">3</text></svg>"
     },
     {
       "id": "wb_L3_s38_q09",
@@ -2466,7 +2562,10 @@
       ],
       "correct_answer": 1,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S38"
+      "source": "Wavebook L3 S38",
+      "svg": "wb_L3_s38_q09.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 240\" width=\"340\" height=\"240\" style=\"font-family:Arial,sans-serif\"><path d=\"M130,120 L130.0,40.0 A80,80 0 0 1 177.0,184.7 Z\" fill=\"#42A5F5\" stroke=\"white\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"40\" width=\"12\" height=\"12\" fill=\"#42A5F5\"/><text x=\"258\" y=\"50\" font-size=\"11\" fill=\"#333\">Part A</text><path d=\"M130,120 L177.0,184.7 A80,80 0 0 1 53.9,144.7 Z\" fill=\"#66BB6A\" stroke=\"white\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"60\" width=\"12\" height=\"12\" fill=\"#66BB6A\"/><text x=\"258\" y=\"70\" font-size=\"11\" fill=\"#333\">Part B</text><path d=\"M130,120 L53.9,144.7 A80,80 0 0 1 83.0,55.3 Z\" fill=\"#FF7043\" stroke=\"white\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"80\" width=\"12\" height=\"12\" fill=\"#FF7043\"/><text x=\"258\" y=\"90\" font-size=\"11\" fill=\"#333\">Part C</text><path d=\"M130,120 L83.0,55.3 A80,80 0 0 1 130.0,40.0 Z\" fill=\"#AB47BC\" stroke=\"white\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"100\" width=\"12\" height=\"12\" fill=\"#AB47BC\"/><text x=\"258\" y=\"110\" font-size=\"11\" fill=\"#333\">Part D</text></svg>"
     },
     {
       "id": "wb_L3_s38_q10",
@@ -2483,7 +2582,10 @@
       ],
       "correct_answer": 1,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S38"
+      "source": "Wavebook L3 S38",
+      "svg": "wb_L3_s38_q10.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 350 134\" width=\"350\" height=\"134\" style=\"font-family:Arial,sans-serif\"><text x=\"10\" y=\"44\" font-size=\"12\" fill=\"#333\">Item A</text><text x=\"100\" y=\"44\" font-size=\"16\">😊</text><text x=\"122\" y=\"44\" font-size=\"16\">😊</text><text x=\"144\" y=\"44\" font-size=\"16\">😊</text><text x=\"166\" y=\"44\" font-size=\"16\">😊</text><text x=\"10\" y=\"72\" font-size=\"12\" fill=\"#333\">Item B</text><text x=\"100\" y=\"72\" font-size=\"16\">😊</text><text x=\"122\" y=\"72\" font-size=\"16\">😊</text><text x=\"144\" y=\"72\" font-size=\"16\">😊</text><text x=\"10\" y=\"100\" font-size=\"12\" fill=\"#333\">Item C</text><text x=\"100\" y=\"100\" font-size=\"16\">😊</text><text x=\"122\" y=\"100\" font-size=\"16\">😊</text><text x=\"144\" y=\"100\" font-size=\"16\">😊</text><text x=\"166\" y=\"100\" font-size=\"16\">😊</text><text x=\"188\" y=\"100\" font-size=\"16\">😊</text><text x=\"10\" y=\"124\" font-size=\"10\" fill=\"#888\">Each 😊 = 1</text></svg>"
     },
     {
       "id": "wb_L3_s38_q11",
@@ -2500,7 +2602,10 @@
       ],
       "correct_answer": 1,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S38"
+      "source": "Wavebook L3 S38",
+      "svg": "wb_L3_s38_q11.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 350 220\" width=\"350\" height=\"220\" style=\"font-family:Arial,sans-serif\"><line x1=\"60\" y1=\"30\" x2=\"60\" y2=\"180\" stroke=\"#333\" stroke-width=\"1.5\"/><line x1=\"60\" y1=\"180\" x2=\"340\" y2=\"180\" stroke=\"#333\" stroke-width=\"1.5\"/><line x1=\"60\" y1=\"180.0\" x2=\"340\" y2=\"180.0\" stroke=\"#eee\" stroke-width=\"1\"/><text x=\"52\" y=\"184.0\" text-anchor=\"end\" font-size=\"10\" fill=\"#666\">0</text><line x1=\"60\" y1=\"142.5\" x2=\"340\" y2=\"142.5\" stroke=\"#eee\" stroke-width=\"1\"/><text x=\"52\" y=\"146.5\" text-anchor=\"end\" font-size=\"10\" fill=\"#666\">2</text><line x1=\"60\" y1=\"105.0\" x2=\"340\" y2=\"105.0\" stroke=\"#eee\" stroke-width=\"1\"/><text x=\"52\" y=\"109.0\" text-anchor=\"end\" font-size=\"10\" fill=\"#666\">4</text><line x1=\"60\" y1=\"67.5\" x2=\"340\" y2=\"67.5\" stroke=\"#eee\" stroke-width=\"1\"/><text x=\"52\" y=\"71.5\" text-anchor=\"end\" font-size=\"10\" fill=\"#666\">6</text><line x1=\"60\" y1=\"30.0\" x2=\"340\" y2=\"30.0\" stroke=\"#eee\" stroke-width=\"1\"/><text x=\"52\" y=\"34.0\" text-anchor=\"end\" font-size=\"10\" fill=\"#666\">8</text><rect x=\"75.0\" y=\"86.2\" width=\"40.0\" height=\"93.8\" fill=\"#42A5F5\" rx=\"2\"/><text x=\"95.0\" y=\"194\" text-anchor=\"middle\" font-size=\"9\" fill=\"#333\">A</text><text x=\"95.0\" y=\"82.2\" text-anchor=\"middle\" font-size=\"10\" fill=\"#333\">5</text><rect x=\"127.0\" y=\"30.0\" width=\"40.0\" height=\"150.0\" fill=\"#66BB6A\" rx=\"2\"/><text x=\"147.0\" y=\"194\" text-anchor=\"middle\" font-size=\"9\" fill=\"#333\">B</text><text x=\"147.0\" y=\"26.0\" text-anchor=\"middle\" font-size=\"10\" fill=\"#333\">8</text><rect x=\"179.0\" y=\"123.8\" width=\"40.0\" height=\"56.2\" fill=\"#FF7043\" rx=\"2\"/><text x=\"199.0\" y=\"194\" text-anchor=\"middle\" font-size=\"9\" fill=\"#333\">C</text><text x=\"199.0\" y=\"119.8\" text-anchor=\"middle\" font-size=\"10\" fill=\"#333\">3</text></svg>"
     },
     {
       "id": "wb_L3_s38_q12",
@@ -2517,7 +2622,10 @@
       ],
       "correct_answer": 1,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S38"
+      "source": "Wavebook L3 S38",
+      "svg": "wb_L3_s38_q12.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 240\" width=\"340\" height=\"240\" style=\"font-family:Arial,sans-serif\"><path d=\"M130,120 L130.0,40.0 A80,80 0 0 1 177.0,184.7 Z\" fill=\"#42A5F5\" stroke=\"white\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"40\" width=\"12\" height=\"12\" fill=\"#42A5F5\"/><text x=\"258\" y=\"50\" font-size=\"11\" fill=\"#333\">Part A</text><path d=\"M130,120 L177.0,184.7 A80,80 0 0 1 53.9,144.7 Z\" fill=\"#66BB6A\" stroke=\"white\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"60\" width=\"12\" height=\"12\" fill=\"#66BB6A\"/><text x=\"258\" y=\"70\" font-size=\"11\" fill=\"#333\">Part B</text><path d=\"M130,120 L53.9,144.7 A80,80 0 0 1 83.0,55.3 Z\" fill=\"#FF7043\" stroke=\"white\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"80\" width=\"12\" height=\"12\" fill=\"#FF7043\"/><text x=\"258\" y=\"90\" font-size=\"11\" fill=\"#333\">Part C</text><path d=\"M130,120 L83.0,55.3 A80,80 0 0 1 130.0,40.0 Z\" fill=\"#AB47BC\" stroke=\"white\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"100\" width=\"12\" height=\"12\" fill=\"#AB47BC\"/><text x=\"258\" y=\"110\" font-size=\"11\" fill=\"#333\">Part D</text></svg>"
     },
     {
       "id": "wb_L3_s38_q13",
@@ -2534,7 +2642,10 @@
       ],
       "correct_answer": 1,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S38"
+      "source": "Wavebook L3 S38",
+      "svg": "wb_L3_s38_q13.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 350 134\" width=\"350\" height=\"134\" style=\"font-family:Arial,sans-serif\"><text x=\"10\" y=\"44\" font-size=\"12\" fill=\"#333\">Item A</text><text x=\"100\" y=\"44\" font-size=\"16\">⭐</text><text x=\"122\" y=\"44\" font-size=\"16\">⭐</text><text x=\"144\" y=\"44\" font-size=\"16\">⭐</text><text x=\"166\" y=\"44\" font-size=\"16\">⭐</text><text x=\"10\" y=\"72\" font-size=\"12\" fill=\"#333\">Item B</text><text x=\"100\" y=\"72\" font-size=\"16\">⭐</text><text x=\"122\" y=\"72\" font-size=\"16\">⭐</text><text x=\"144\" y=\"72\" font-size=\"16\">⭐</text><text x=\"10\" y=\"100\" font-size=\"12\" fill=\"#333\">Item C</text><text x=\"100\" y=\"100\" font-size=\"16\">⭐</text><text x=\"122\" y=\"100\" font-size=\"16\">⭐</text><text x=\"144\" y=\"100\" font-size=\"16\">⭐</text><text x=\"166\" y=\"100\" font-size=\"16\">⭐</text><text x=\"188\" y=\"100\" font-size=\"16\">⭐</text><text x=\"10\" y=\"124\" font-size=\"10\" fill=\"#888\">Each ⭐ = 1</text></svg>"
     },
     {
       "id": "wb_L3_s38_q14",
@@ -2551,7 +2662,10 @@
       ],
       "correct_answer": 1,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S38"
+      "source": "Wavebook L3 S38",
+      "svg": "wb_L3_s38_q14.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 350 220\" width=\"350\" height=\"220\" style=\"font-family:Arial,sans-serif\"><line x1=\"60\" y1=\"30\" x2=\"60\" y2=\"180\" stroke=\"#333\" stroke-width=\"1.5\"/><line x1=\"60\" y1=\"180\" x2=\"340\" y2=\"180\" stroke=\"#333\" stroke-width=\"1.5\"/><line x1=\"60\" y1=\"180.0\" x2=\"340\" y2=\"180.0\" stroke=\"#eee\" stroke-width=\"1\"/><text x=\"52\" y=\"184.0\" text-anchor=\"end\" font-size=\"10\" fill=\"#666\">0</text><line x1=\"60\" y1=\"142.5\" x2=\"340\" y2=\"142.5\" stroke=\"#eee\" stroke-width=\"1\"/><text x=\"52\" y=\"146.5\" text-anchor=\"end\" font-size=\"10\" fill=\"#666\">2</text><line x1=\"60\" y1=\"105.0\" x2=\"340\" y2=\"105.0\" stroke=\"#eee\" stroke-width=\"1\"/><text x=\"52\" y=\"109.0\" text-anchor=\"end\" font-size=\"10\" fill=\"#666\">4</text><line x1=\"60\" y1=\"67.5\" x2=\"340\" y2=\"67.5\" stroke=\"#eee\" stroke-width=\"1\"/><text x=\"52\" y=\"71.5\" text-anchor=\"end\" font-size=\"10\" fill=\"#666\">6</text><line x1=\"60\" y1=\"30.0\" x2=\"340\" y2=\"30.0\" stroke=\"#eee\" stroke-width=\"1\"/><text x=\"52\" y=\"34.0\" text-anchor=\"end\" font-size=\"10\" fill=\"#666\">8</text><rect x=\"75.0\" y=\"86.2\" width=\"40.0\" height=\"93.8\" fill=\"#42A5F5\" rx=\"2\"/><text x=\"95.0\" y=\"194\" text-anchor=\"middle\" font-size=\"9\" fill=\"#333\">A</text><text x=\"95.0\" y=\"82.2\" text-anchor=\"middle\" font-size=\"10\" fill=\"#333\">5</text><rect x=\"127.0\" y=\"30.0\" width=\"40.0\" height=\"150.0\" fill=\"#66BB6A\" rx=\"2\"/><text x=\"147.0\" y=\"194\" text-anchor=\"middle\" font-size=\"9\" fill=\"#333\">B</text><text x=\"147.0\" y=\"26.0\" text-anchor=\"middle\" font-size=\"10\" fill=\"#333\">8</text><rect x=\"179.0\" y=\"123.8\" width=\"40.0\" height=\"56.2\" fill=\"#FF7043\" rx=\"2\"/><text x=\"199.0\" y=\"194\" text-anchor=\"middle\" font-size=\"9\" fill=\"#333\">C</text><text x=\"199.0\" y=\"119.8\" text-anchor=\"middle\" font-size=\"10\" fill=\"#333\">3</text></svg>"
     },
     {
       "id": "wb_L3_s38_q15",
@@ -2568,7 +2682,10 @@
       ],
       "correct_answer": 1,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S38"
+      "source": "Wavebook L3 S38",
+      "svg": "wb_L3_s38_q15.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 240\" width=\"340\" height=\"240\" style=\"font-family:Arial,sans-serif\"><path d=\"M130,120 L130.0,40.0 A80,80 0 0 1 177.0,184.7 Z\" fill=\"#42A5F5\" stroke=\"white\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"40\" width=\"12\" height=\"12\" fill=\"#42A5F5\"/><text x=\"258\" y=\"50\" font-size=\"11\" fill=\"#333\">Part A</text><path d=\"M130,120 L177.0,184.7 A80,80 0 0 1 53.9,144.7 Z\" fill=\"#66BB6A\" stroke=\"white\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"60\" width=\"12\" height=\"12\" fill=\"#66BB6A\"/><text x=\"258\" y=\"70\" font-size=\"11\" fill=\"#333\">Part B</text><path d=\"M130,120 L53.9,144.7 A80,80 0 0 1 83.0,55.3 Z\" fill=\"#FF7043\" stroke=\"white\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"80\" width=\"12\" height=\"12\" fill=\"#FF7043\"/><text x=\"258\" y=\"90\" font-size=\"11\" fill=\"#333\">Part C</text><path d=\"M130,120 L83.0,55.3 A80,80 0 0 1 130.0,40.0 Z\" fill=\"#AB47BC\" stroke=\"white\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"100\" width=\"12\" height=\"12\" fill=\"#AB47BC\"/><text x=\"258\" y=\"110\" font-size=\"11\" fill=\"#333\">Part D</text></svg>"
     },
     {
       "id": "wb_L3_s40_q01",
@@ -2585,7 +2702,8 @@
       ],
       "correct_answer": 0,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S40"
+      "source": "Wavebook L3 S40",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s40_q02",
@@ -2602,7 +2720,10 @@
       ],
       "correct_answer": 2,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S40"
+      "source": "Wavebook L3 S40",
+      "svg": "wb_L3_s40_q02.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 210\" width=\"300\" height=\"210\" style=\"font-family:Arial,sans-serif\"><line x1=\"150\" y1=\"10\" x2=\"150\" y2=\"190\" stroke=\"#E57373\" stroke-width=\"2\" stroke-dasharray=\"6,4\"/><path d=\"M150,60 Q100,30 80,80 Q70,130 150,140 Q230,130 220,80 Q200,30 150,60Z\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2\"/><text x=\"150\" y=\"195\" text-anchor=\"middle\" font-size=\"11\" fill=\"#E57373\">Line of Symmetry</text></svg>"
     },
     {
       "id": "wb_L3_s40_q03",
@@ -2619,7 +2740,11 @@
       ],
       "correct_answer": 2,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S40"
+      "source": "Wavebook L3 S40",
+      "svg": "wb_L3_s40_q03.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg viewBox=\"0 0 330 55\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"30\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"30\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">2</text><circle cx=\"75\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"75\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">6</text><circle cx=\"120\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"120\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">12</text><circle cx=\"165\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"165\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">20</text><circle cx=\"210\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"210\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">30</text><circle cx=\"255\" cy=\"25\" r=\"18\" fill=\"#FFF3E0\" stroke=\"#F57C00\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"255\" y=\"31\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#F57C00\">?</text></svg>",
+      "visual_alt": "Visual for: Find the next in the pattern: 2, 6, 12, 20, 30, ?"
     },
     {
       "id": "wb_L3_s40_q04",
@@ -2636,7 +2761,8 @@
       ],
       "correct_answer": 0,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S40"
+      "source": "Wavebook L3 S40",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s40_q05",
@@ -2653,7 +2779,11 @@
       ],
       "correct_answer": 1,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S40"
+      "source": "Wavebook L3 S40",
+      "svg": "wb_L3_s40_q05.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg viewBox=\"0 0 260 55\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"30\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"30\" y=\"31\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#1A73E8\">A</text><circle cx=\"75\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"75\" y=\"31\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#1A73E8\">C</text><circle cx=\"120\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"120\" y=\"31\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#1A73E8\">F</text><circle cx=\"165\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"165\" y=\"31\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#1A73E8\">J</text><circle cx=\"210\" cy=\"25\" r=\"18\" fill=\"#FFF3E0\" stroke=\"#F57C00\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"210\" y=\"31\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#F57C00\">?</text></svg>",
+      "visual_alt": "Visual for: What comes next: A, C, F, J, ?"
     },
     {
       "id": "wb_L3_s40_q06",
@@ -2670,7 +2800,8 @@
       ],
       "correct_answer": 0,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S40"
+      "source": "Wavebook L3 S40",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s40_q07",
@@ -2683,11 +2814,14 @@
         "BED",
         "DEb",
         "BEb",
-        "dEB"
+        "None of these"
       ],
       "correct_answer": 3,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S40"
+      "source": "Wavebook L3 S40",
+      "svg": "wb_L3_s40_q07.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 210\" width=\"300\" height=\"210\" style=\"font-family:Arial,sans-serif\"><line x1=\"150\" y1=\"10\" x2=\"150\" y2=\"190\" stroke=\"#E57373\" stroke-width=\"2\" stroke-dasharray=\"6,4\"/><path d=\"M150,60 Q100,30 80,80 Q70,130 150,140 Q230,130 220,80 Q200,30 150,60Z\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2\"/><text x=\"150\" y=\"195\" text-anchor=\"middle\" font-size=\"11\" fill=\"#E57373\">Line of Symmetry</text></svg>"
     },
     {
       "id": "wb_L3_s40_q08",
@@ -2704,7 +2838,8 @@
       ],
       "correct_answer": 1,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S40"
+      "source": "Wavebook L3 S40",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s40_q09",
@@ -2719,9 +2854,10 @@
         "55",
         "50"
       ],
-      "correct_answer": 2,
+      "correct_answer": 1,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S40"
+      "source": "Wavebook L3 S40",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s40_q10",
@@ -2738,7 +2874,10 @@
       ],
       "correct_answer": 2,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S40"
+      "source": "Wavebook L3 S40",
+      "svg": "wb_L3_s40_q10.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 200\" width=\"300\" height=\"200\" style=\"font-family:Arial,sans-serif\"><polygon points=\"150,20 50,170 250,170\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2.5\"/></svg>"
     },
     {
       "id": "wb_L3_s40_q11",
@@ -2755,7 +2894,9 @@
       ],
       "correct_answer": 1,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S40"
+      "source": "Wavebook L3 S40",
+      "svg": "wb_L3_s40_q11.svg",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s40_q12",
@@ -2767,12 +2908,13 @@
       "choices": [
         "50",
         "55",
-        "60",
+        "59",
         "52"
       ],
       "correct_answer": 2,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S40"
+      "source": "Wavebook L3 S40",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s40_q13",
@@ -2789,7 +2931,8 @@
       ],
       "correct_answer": 2,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S40"
+      "source": "Wavebook L3 S40",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s40_q14",
@@ -2801,12 +2944,13 @@
       "choices": [
         "CRRNG",
         "CRRNE",
-        "CRRNG",
+        "None of these",
         "BQQMF"
       ],
       "correct_answer": 0,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S40"
+      "source": "Wavebook L3 S40",
+      "diagnostics": {}
     },
     {
       "id": "wb_L3_s40_q15",
@@ -2823,7 +2967,10 @@
       ],
       "correct_answer": 1,
       "grade_band": "3-4",
-      "source": "Wavebook L3 S40"
+      "source": "Wavebook L3 S40",
+      "svg": "wb_L3_s40_q15.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 210\" width=\"300\" height=\"210\" style=\"font-family:Arial,sans-serif\"><line x1=\"150\" y1=\"10\" x2=\"150\" y2=\"190\" stroke=\"#E57373\" stroke-width=\"2\" stroke-dasharray=\"6,4\"/><path d=\"M150,60 Q100,30 80,80 Q70,130 150,140 Q230,130 220,80 Q200,30 150,60Z\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2\"/><text x=\"150\" y=\"195\" text-anchor=\"middle\" font-size=\"11\" fill=\"#E57373\">Line of Symmetry</text></svg>"
     }
   ]
 }

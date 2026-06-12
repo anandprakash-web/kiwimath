@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 120" width="300" height="120">
+  <rect width="300" height="120" fill="#FFF8F0" rx="8"/>
+  <text x="150.0" y="18" text-anchor="middle" font-size="10" font-weight="bold" font-family="Arial" fill="#1A1A2E">Letter Pattern</text>
+  <rect x="42.5" y="47.5" width="35.0" height="35.0" fill="#E3F2FD" stroke="#1976D2" stroke-width="1.5" rx="4"/>
+  <text x="60.0" y="70.0" text-anchor="middle" font-size="13" font-family="Arial" fill="#1A1A2E">A</text>
+  <text x="81.5" y="69.0" text-anchor="middle" font-size="10" font-family="Arial" fill="#9E9E9E">→</text>
+  <rect x="85.5" y="47.5" width="35.0" height="35.0" fill="#E3F2FD" stroke="#1976D2" stroke-width="1.5" rx="4"/>
+  <text x="103.0" y="70.0" text-anchor="middle" font-size="13" font-family="Arial" fill="#1A1A2E">C</text>
+  <text x="124.5" y="69.0" text-anchor="middle" font-size="10" font-family="Arial" fill="#9E9E9E">→</text>
+  <rect x="128.5" y="47.5" width="35.0" height="35.0" fill="#E3F2FD" stroke="#1976D2" stroke-width="1.5" rx="4"/>
+  <text x="146.0" y="70.0" text-anchor="middle" font-size="13" font-family="Arial" fill="#1A1A2E">F</text>
+  <text x="167.5" y="69.0" text-anchor="middle" font-size="10" font-family="Arial" fill="#9E9E9E">→</text>
+  <rect x="171.5" y="47.5" width="35.0" height="35.0" fill="#E3F2FD" stroke="#1976D2" stroke-width="1.5" rx="4"/>
+  <text x="189.0" y="70.0" text-anchor="middle" font-size="13" font-family="Arial" fill="#1A1A2E">J</text>
+  <text x="210.5" y="69.0" text-anchor="middle" font-size="10" font-family="Arial" fill="#9E9E9E">→</text>
+  <rect x="214.5" y="47.5" width="35.0" height="35.0" fill="#FFE0B2" stroke="#FF6D00" stroke-width="1.5" rx="4"/>
+  <text x="232.0" y="70.0" text-anchor="middle" font-size="13" font-weight="bold" font-family="Arial" fill="#FF6D00">?</text>
+</svg>

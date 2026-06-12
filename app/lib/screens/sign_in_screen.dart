@@ -34,6 +34,9 @@ class _SignInScreenState extends State<SignInScreen> {
   bool _busy = false;
   String? _errorMessage;
 
+  // COPPA consent
+  bool _coppaConsent = false;
+
   // Phone OTP state
   String? _verificationId;
   bool _otpSent = false;
@@ -64,7 +67,7 @@ class _SignInScreenState extends State<SignInScreen> {
         await _auth.signUpWithEmail(email: email, password: password);
       }
     } catch (e) {
-      setState(() => _errorMessage = AuthService.humanMessage(e));
+      if (mounted) setState(() => _errorMessage = AuthService.humanMessage(e));
     } finally {
       if (mounted) setState(() => _busy = false);
     }
@@ -150,7 +153,7 @@ class _SignInScreenState extends State<SignInScreen> {
         SnackBar(content: Text('Password reset email sent to $email')),
       );
     } catch (e) {
-      setState(() => _errorMessage = AuthService.humanMessage(e));
+      if (mounted) setState(() => _errorMessage = AuthService.humanMessage(e));
     }
   }
 
@@ -173,23 +176,41 @@ class _SignInScreenState extends State<SignInScreen> {
                 children: [
                   const SizedBox(height: 12),
 
-                  // Kiwi mascot — hero illustration placeholder
-                  // TODO: Replace with actual Kiwi character asset
+                  // Kiwimath K logo — brand identity
                   Container(
                     alignment: Alignment.center,
                     child: Container(
                       width: 88,
                       height: 88,
-                      decoration: const BoxDecoration(
-                        color: KiwiColors.kiwiPrimaryLight,
-                        shape: BoxShape.circle,
+                      decoration: BoxDecoration(
+                        gradient: LinearGradient(
+                          colors: [KiwiColors.amber, KiwiColors.kiwiPrimary],
+                          begin: Alignment.topLeft,
+                          end: Alignment.bottomRight,
+                        ),
+                        borderRadius: BorderRadius.circular(KiwiSpacing.xl - 2),
+                        boxShadow: [
+                          BoxShadow(
+                            color: KiwiColors.kiwiPrimary.withOpacity(0.3),
+                            blurRadius: 16,
+                            offset: const Offset(0, 6),
+                          ),
+                        ],
                       ),
                       child: const Center(
-                        child: Text('\u{1F95D}', style: TextStyle(fontSize: 44)),
+                        child: Text(
+                          'K',
+                          style: TextStyle(
+                            fontSize: 48,
+                            fontWeight: FontWeight.w900,
+                            color: Colors.white,
+                            letterSpacing: -1,
+                          ),
+                        ),
                       ),
                     ),
                   ),
-                  const SizedBox(height: 12),
+                  const SizedBox(height: 14),
 
                   // App name
                   const Text(
@@ -215,11 +236,11 @@ class _SignInScreenState extends State<SignInScreen> {
 
                   // Parent gate banner
                   Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
+                    padding: EdgeInsets.symmetric(horizontal: KiwiSpacing.lg - 2, vertical: KiwiSpacing.sm + 2),
                     decoration: BoxDecoration(
-                      color: const Color(0xFFFFF8E1),
-                      borderRadius: BorderRadius.circular(12),
-                      border: Border.all(color: const Color(0xFFFFE082), width: 1),
+                      color: KiwiColors.visualYellowBg,
+                      borderRadius: BorderRadius.circular(KiwiSpacing.md),
+                      border: Border.all(color: KiwiColors.visualYellowBorder, width: 1),
                     ),
                     child: Row(
                       children: [
@@ -413,7 +434,7 @@ class _SignInScreenState extends State<SignInScreen> {
               border: OutlineInputBorder(borderRadius: BorderRadius.circular(12)),
               enabledBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(12),
-                borderSide: BorderSide(color: Colors.grey.shade300),
+                borderSide: BorderSide(color: KiwiColors.pathLocked),
               ),
               focusedBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(12),
@@ -439,7 +460,7 @@ class _SignInScreenState extends State<SignInScreen> {
               border: OutlineInputBorder(borderRadius: BorderRadius.circular(12)),
               enabledBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(12),
-                borderSide: BorderSide(color: Colors.grey.shade300),
+                borderSide: BorderSide(color: KiwiColors.pathLocked),
               ),
               focusedBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(12),
@@ -469,9 +490,14 @@ class _SignInScreenState extends State<SignInScreen> {
               ),
             ),
           ],
+          // COPPA consent for new accounts
+          if (_flow == _AuthFlow.signUp) ...[
+            const SizedBox(height: 10),
+            _buildCoppaConsent(),
+          ],
           const SizedBox(height: 14),
           ElevatedButton(
-            onPressed: _busy ? null : _submitEmail,
+            onPressed: _busy ? null : (_flow == _AuthFlow.signUp && !_coppaConsent ? null : _submitEmail),
             style: ElevatedButton.styleFrom(
               backgroundColor: KiwiColors.kiwiPrimary,
               foregroundColor: Colors.white,
@@ -509,7 +535,7 @@ class _SignInScreenState extends State<SignInScreen> {
             border: OutlineInputBorder(borderRadius: BorderRadius.circular(12)),
             enabledBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(12),
-              borderSide: BorderSide(color: Colors.grey.shade300),
+              borderSide: BorderSide(color: KiwiColors.pathLocked),
             ),
             focusedBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(12),
@@ -533,7 +559,7 @@ class _SignInScreenState extends State<SignInScreen> {
               border: OutlineInputBorder(borderRadius: BorderRadius.circular(12)),
               enabledBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(12),
-                borderSide: BorderSide(color: Colors.grey.shade300),
+                borderSide: BorderSide(color: KiwiColors.pathLocked),
               ),
               focusedBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(12),
@@ -578,12 +604,83 @@ class _SignInScreenState extends State<SignInScreen> {
     );
   }
 
+  Widget _buildCoppaConsent() {
+    return Container(
+      padding: EdgeInsets.all(KiwiSpacing.md),
+      decoration: BoxDecoration(
+        color: KiwiColors.visualBlueBg,
+        borderRadius: BorderRadius.circular(KiwiSpacing.md),
+        border: Border.all(color: KiwiColors.visualBlueBorder),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              Icon(Icons.verified_user_outlined, size: 16, color: Colors.blue.shade700),
+              const SizedBox(width: 8),
+              Text(
+                'Parental Consent (COPPA)',
+                style: TextStyle(
+                  fontSize: 12,
+                  fontWeight: FontWeight.w700,
+                  color: Colors.blue.shade900,
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 8),
+          Text(
+            'By creating an account, I confirm that I am the parent or '
+            'legal guardian of the child who will use this app. I consent '
+            'to the collection of limited data (progress, answers) to '
+            'provide an adaptive learning experience.',
+            style: TextStyle(
+              fontSize: 11,
+              color: Colors.blue.shade800,
+              height: 1.4,
+            ),
+          ),
+          const SizedBox(height: 8),
+          Row(
+            children: [
+              SizedBox(
+                width: 20,
+                height: 20,
+                child: Checkbox(
+                  value: _coppaConsent,
+                  onChanged: _busy ? null : (v) => setState(() => _coppaConsent = v ?? false),
+                  activeColor: KiwiColors.kiwiPrimary,
+                  materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                ),
+              ),
+              const SizedBox(width: 8),
+              Expanded(
+                child: GestureDetector(
+                  onTap: _busy ? null : () => setState(() => _coppaConsent = !_coppaConsent),
+                  child: Text(
+                    'I am a parent/guardian and I agree',
+                    style: TextStyle(
+                      fontSize: 12,
+                      fontWeight: FontWeight.w600,
+                      color: Colors.blue.shade900,
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ],
+      ),
+    );
+  }
+
   Widget _buildErrorBox() {
     return Container(
-      padding: const EdgeInsets.all(12),
+      padding: EdgeInsets.all(KiwiSpacing.md),
       decoration: BoxDecoration(
         color: KiwiColors.wrongBg,
-        borderRadius: BorderRadius.circular(12),
+        borderRadius: BorderRadius.circular(KiwiSpacing.md),
         border: Border.all(color: KiwiColors.wrong),
       ),
       child: Row(
@@ -593,7 +690,7 @@ class _SignInScreenState extends State<SignInScreen> {
           Expanded(
             child: Text(
               _errorMessage!,
-              style: const TextStyle(color: Color(0xFFBF360C), fontSize: 13),
+              style: TextStyle(color: KiwiColors.kiwiPrimaryDark, fontSize: 13),
             ),
           ),
         ],
@@ -604,7 +701,49 @@ class _SignInScreenState extends State<SignInScreen> {
   Widget _legalLink(String text) {
     return GestureDetector(
       onTap: () {
-        // TODO: Open privacy/terms URL
+        final url = text.contains('Privacy')
+            ? 'https://kiwimath.com/privacy'
+            : 'https://kiwimath.com/terms';
+        showModalBottomSheet(
+          context: context,
+          shape: const RoundedRectangleBorder(
+            borderRadius: BorderRadius.vertical(top: Radius.circular(16)),
+          ),
+          builder: (_) => SafeArea(
+            child: Padding(
+              padding: const EdgeInsets.fromLTRB(20, 20, 20, 24),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    text,
+                    style: const TextStyle(fontSize: 17, fontWeight: FontWeight.w700),
+                  ),
+                  const SizedBox(height: 14),
+                  Text(
+                    text.contains('Privacy')
+                        ? 'Kiwimath collects only your child\'s first name, grade level, '
+                          'and practice data (questions answered, scores, streaks). '
+                          'We do not collect photos, contacts, location, or advertising identifiers. '
+                          'Parents can review, export, or delete all data from the Parent Dashboard. '
+                          'We comply with COPPA and do not share data with third parties.'
+                        : 'By using Kiwimath, you agree that the app is for educational use. '
+                          'Virtual rewards (Kiwi Coins, Mastery Gems) have no monetary value. '
+                          'Content is provided as-is for math practice. '
+                          'A parent or guardian must create and manage the account for children under 13.',
+                    style: const TextStyle(fontSize: 13, height: 1.5, color: KiwiColors.textMid),
+                  ),
+                  const SizedBox(height: 12),
+                  Text(
+                    'Full policy: $url',
+                    style: const TextStyle(fontSize: 11, color: KiwiColors.textMuted),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        );
       },
       child: Text(
         text,
@@ -630,31 +769,34 @@ class _GoogleSignInButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Material(
-      color: Colors.white,
-      borderRadius: BorderRadius.circular(12),
+      color: KiwiColors.cardBg,
+      borderRadius: BorderRadius.circular(KiwiSpacing.md),
       child: InkWell(
-        borderRadius: BorderRadius.circular(12),
+        borderRadius: BorderRadius.circular(KiwiSpacing.md),
         onTap: busy ? null : onPressed,
         child: Container(
-          padding: const EdgeInsets.symmetric(vertical: 14, horizontal: 20),
+          padding: EdgeInsets.symmetric(vertical: KiwiSpacing.lg - 2, horizontal: KiwiSpacing.xl - 4),
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(12),
-            border: Border.all(color: Colors.grey.shade300, width: 1),
+            borderRadius: BorderRadius.circular(KiwiSpacing.md),
+            border: Border.all(color: KiwiColors.pathLocked, width: 1),
           ),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              // TODO: Replace with Image.asset('assets/images/g-logo.png')
-              // from Google's official brand guidelines.
-              // Using material icon as placeholder until asset is added.
-              Icon(Icons.g_mobiledata, size: 24, color: Colors.blue.shade700),
-              const SizedBox(width: 10),
-              const Text(
+              // Multicolor Google "G" drawn with four arc segments + bar
+              // (no Text-widget fake — keeps sign-in branding compliant).
+              const SizedBox(
+                width: 20,
+                height: 20,
+                child: CustomPaint(painter: _GoogleGPainter()),
+              ),
+              SizedBox(width: KiwiSpacing.sm + 2),
+              Text(
                 'Continue with Google',
                 style: TextStyle(
                   fontSize: 15,
                   fontWeight: FontWeight.w600,
-                  color: Color(0xFF3C4043),
+                  color: KiwiColors.textDark,
                 ),
               ),
             ],
@@ -663,6 +805,62 @@ class _GoogleSignInButton extends StatelessWidget {
       ),
     );
   }
+}
+
+// ---------------------------------------------------------------------------
+// Google "G" mark — four colored arc segments + the horizontal bar
+// ---------------------------------------------------------------------------
+
+class _GoogleGPainter extends CustomPainter {
+  const _GoogleGPainter();
+
+  // Official Google brand colors.
+  static const _blue = Color(0xFF4285F4);
+  static const _green = Color(0xFF34A853);
+  static const _yellow = Color(0xFFFBBC05);
+  static const _red = Color(0xFFEA4335);
+
+  static const _pi = 3.1415926535897932;
+
+  double _deg(double degrees) => degrees * _pi / 180.0;
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    final stroke = size.width * 0.20;
+    final rect = Rect.fromLTWH(
+      stroke / 2,
+      stroke / 2,
+      size.width - stroke,
+      size.height - stroke,
+    );
+    final paint = Paint()
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = stroke;
+
+    // Angles: 0 deg = 3 o'clock, positive sweep = clockwise.
+    // Gap between 315 and 360 deg is the G's opening (top-right).
+    paint.color = _blue; // right side, from the bar downward
+    canvas.drawArc(rect, _deg(0), _deg(60), false, paint);
+    paint.color = _green; // bottom
+    canvas.drawArc(rect, _deg(60), _deg(90), false, paint);
+    paint.color = _yellow; // bottom-left
+    canvas.drawArc(rect, _deg(150), _deg(60), false, paint);
+    paint.color = _red; // left + top
+    canvas.drawArc(rect, _deg(210), _deg(105), false, paint);
+
+    // Horizontal blue bar from the center to the right edge.
+    final barPaint = Paint()
+      ..color = _blue
+      ..style = PaintingStyle.fill;
+    final cy = size.height / 2;
+    canvas.drawRect(
+      Rect.fromLTRB(size.width / 2, cy - stroke / 2, size.width, cy + stroke / 2),
+      barPaint,
+    );
+  }
+
+  @override
+  bool shouldRepaint(covariant _GoogleGPainter oldDelegate) => false;
 }
 
 // ---------------------------------------------------------------------------

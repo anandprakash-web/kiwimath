@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <rect width="200" height="200" fill="white"/>
+  <rect x="5" y="5" width="190" height="190" rx="3" fill="#f8f8f8" stroke="#ddd" stroke-width="0.5"/>
+  <circle cx="17" cy="100" r="11" fill="none" stroke="black" stroke-width="1.5"/>
+  <rect x="37" y="90" width="20" height="20" fill="none" stroke="black" stroke-width="1.5"/>
+  <polygon points="77,88 66,110 88,110" fill="none" stroke="black" stroke-width="1.5"/>
+  <circle cx="107" cy="100" r="11" fill="none" stroke="black" stroke-width="1.5"/>
+  <rect x="127" y="90" width="20" height="20" fill="none" stroke="black" stroke-width="1.5"/>
+  <text x="167" y="106" text-anchor="middle" font-size="20" font-weight="bold" font-family="Arial" fill="#c00">?</text>
+  <text x="32" y="106" text-anchor="middle" font-size="14" font-family="Arial" fill="#666">,</text>
+  <text x="62" y="106" text-anchor="middle" font-size="14" font-family="Arial" fill="#666">,</text>
+  <text x="92" y="106" text-anchor="middle" font-size="14" font-family="Arial" fill="#666">,</text>
+  <text x="122" y="106" text-anchor="middle" font-size="14" font-family="Arial" fill="#666">,</text>
+  <text x="152" y="106" text-anchor="middle" font-size="14" font-family="Arial" fill="#666">,</text>
+</svg>

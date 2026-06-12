@@ -161,7 +161,7 @@ class _ClanCreateScreenState extends State<ClanCreateScreen> {
   Widget _buildParentGate() {
     return Center(
       child: SingleChildScrollView(
-        padding: const EdgeInsets.symmetric(horizontal: 28),
+        padding: EdgeInsets.symmetric(horizontal: KiwiSpacing.xxl - 4),
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
@@ -171,12 +171,12 @@ class _ClanCreateScreenState extends State<ClanCreateScreen> {
               height: 80,
               decoration: BoxDecoration(
                 color: KiwiColors.kiwiPrimaryLight,
-                borderRadius: BorderRadius.circular(24),
+                borderRadius: BorderRadius.circular(KiwiSpacing.xl),
               ),
               alignment: Alignment.center,
               child: const Text('\u{1F512}', style: TextStyle(fontSize: 40)),
             ),
-            const SizedBox(height: 20),
+            SizedBox(height: KiwiSpacing.xl),
             const Text(
               'Ask Your Parent!',
               style: TextStyle(
@@ -185,7 +185,7 @@ class _ClanCreateScreenState extends State<ClanCreateScreen> {
                 color: KiwiColors.textDark,
               ),
             ),
-            const SizedBox(height: 8),
+            SizedBox(height: KiwiSpacing.sm),
             const Text(
               'A grown-up needs to answer this\nquestion before you can create a clan.',
               textAlign: TextAlign.center,
@@ -195,13 +195,13 @@ class _ClanCreateScreenState extends State<ClanCreateScreen> {
                 height: 1.4,
               ),
             ),
-            const SizedBox(height: 28),
+            SizedBox(height: KiwiSpacing.xxl - 4),
             // Question card
             Container(
-              padding: const EdgeInsets.all(20),
+              padding: EdgeInsets.all(KiwiSpacing.xl),
               decoration: BoxDecoration(
                 color: KiwiColors.cardBg,
-                borderRadius: BorderRadius.circular(16),
+                borderRadius: BorderRadius.circular(KiwiSpacing.lg),
                 boxShadow: [
                   BoxShadow(
                     color: Colors.black.withOpacity(0.06),
@@ -220,7 +220,7 @@ class _ClanCreateScreenState extends State<ClanCreateScreen> {
                       color: KiwiColors.textDark,
                     ),
                   ),
-                  const SizedBox(height: 16),
+                  SizedBox(height: KiwiSpacing.lg),
                   TextField(
                     controller: _gateController,
                     keyboardType: TextInputType.number,
@@ -236,12 +236,12 @@ class _ClanCreateScreenState extends State<ClanCreateScreen> {
                       filled: true,
                       fillColor: KiwiColors.kiwiPrimaryLight,
                       border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(12),
+                        borderRadius: BorderRadius.circular(KiwiSpacing.md),
                         borderSide: BorderSide.none,
                       ),
-                      contentPadding: const EdgeInsets.symmetric(
-                        vertical: 14,
-                        horizontal: 16,
+                      contentPadding: EdgeInsets.symmetric(
+                        vertical: KiwiSpacing.md + 2,
+                        horizontal: KiwiSpacing.lg,
                       ),
                       errorText: _gateError,
                     ),
@@ -250,7 +250,7 @@ class _ClanCreateScreenState extends State<ClanCreateScreen> {
                 ],
               ),
             ),
-            const SizedBox(height: 20),
+            SizedBox(height: KiwiSpacing.xl),
             SizedBox(
               width: double.infinity,
               height: 52,
@@ -260,7 +260,7 @@ class _ClanCreateScreenState extends State<ClanCreateScreen> {
                   backgroundColor: KiwiColors.kiwiPrimary,
                   foregroundColor: Colors.white,
                   shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(14),
+                    borderRadius: BorderRadius.circular(KiwiSpacing.md + 2),
                   ),
                   elevation: 0,
                 ),
@@ -285,13 +285,13 @@ class _ClanCreateScreenState extends State<ClanCreateScreen> {
 
   Widget _buildCreationForm() {
     return SingleChildScrollView(
-      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
+      padding: EdgeInsets.symmetric(horizontal: KiwiSpacing.xl, vertical: KiwiSpacing.sm),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           // ---- Clan Name ----
           const _SectionLabel(text: 'Clan Name'),
-          const SizedBox(height: 8),
+          SizedBox(height: KiwiSpacing.sm),
           TextField(
             controller: _nameController,
             maxLength: 20,
@@ -309,50 +309,50 @@ class _ClanCreateScreenState extends State<ClanCreateScreen> {
               filled: true,
               fillColor: KiwiColors.cardBg,
               border: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(14),
+                borderRadius: BorderRadius.circular(KiwiSpacing.md + 2),
                 borderSide: BorderSide(
                   color: KiwiColors.kiwiPrimary.withOpacity(0.3),
                 ),
               ),
               enabledBorder: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(14),
+                borderRadius: BorderRadius.circular(KiwiSpacing.md + 2),
                 borderSide: BorderSide(
                   color: KiwiColors.kiwiPrimary.withOpacity(0.2),
                 ),
               ),
               focusedBorder: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(14),
+                borderRadius: BorderRadius.circular(KiwiSpacing.md + 2),
                 borderSide: const BorderSide(
                   color: KiwiColors.kiwiPrimary,
                   width: 2,
                 ),
               ),
-              contentPadding: const EdgeInsets.symmetric(
-                horizontal: 16,
-                vertical: 14,
+              contentPadding: EdgeInsets.symmetric(
+                horizontal: KiwiSpacing.lg,
+                vertical: KiwiSpacing.md + 2,
               ),
               errorText: _nameError,
             ),
           ),
-          const SizedBox(height: 20),
+          SizedBox(height: KiwiSpacing.xl),
 
           // ---- Crest Picker ----
           const _SectionLabel(text: 'Pick a Crest'),
-          const SizedBox(height: 10),
+          SizedBox(height: KiwiSpacing.sm + 2),
           _buildCrestGrid(),
-          const SizedBox(height: 24),
+          SizedBox(height: KiwiSpacing.xl),
 
           // ---- Colour Picker ----
           const _SectionLabel(text: 'Pick a Colour'),
-          const SizedBox(height: 10),
+          SizedBox(height: KiwiSpacing.sm + 2),
           _buildColorRow(),
-          const SizedBox(height: 28),
+          SizedBox(height: KiwiSpacing.xxl - 4),
 
           // ---- Preview ----
           const _SectionLabel(text: 'Preview'),
-          const SizedBox(height: 10),
+          SizedBox(height: KiwiSpacing.sm + 2),
           _buildPreview(),
-          const SizedBox(height: 28),
+          SizedBox(height: KiwiSpacing.xxl - 4),
 
           // ---- Create Button ----
           SizedBox(
@@ -363,7 +363,7 @@ class _ClanCreateScreenState extends State<ClanCreateScreen> {
                 gradient: const LinearGradient(
                   colors: [KiwiColors.kiwiPrimary, KiwiColors.kiwiPrimaryDark],
                 ),
-                borderRadius: BorderRadius.circular(16),
+                borderRadius: BorderRadius.circular(KiwiSpacing.lg),
                 boxShadow: [
                   BoxShadow(
                     color: KiwiColors.kiwiPrimary.withOpacity(0.35),
@@ -379,7 +379,7 @@ class _ClanCreateScreenState extends State<ClanCreateScreen> {
                   shadowColor: Colors.transparent,
                   foregroundColor: Colors.white,
                   shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(16),
+                    borderRadius: BorderRadius.circular(KiwiSpacing.lg),
                   ),
                 ),
                 child: const Text(
@@ -392,7 +392,7 @@ class _ClanCreateScreenState extends State<ClanCreateScreen> {
               ),
             ),
           ),
-          const SizedBox(height: 32),
+          SizedBox(height: KiwiSpacing.xxl),
         ],
       ),
     );
@@ -409,8 +409,8 @@ class _ClanCreateScreenState extends State<ClanCreateScreen> {
       physics: const NeverScrollableScrollPhysics(),
       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 3,
-        mainAxisSpacing: 10,
-        crossAxisSpacing: 10,
+        mainAxisSpacing: KiwiSpacing.sm + 2,
+        crossAxisSpacing: KiwiSpacing.sm + 2,
         childAspectRatio: 1.3,
       ),
       itemCount: entries.length,
@@ -426,11 +426,11 @@ class _ClanCreateScreenState extends State<ClanCreateScreen> {
               color: selected
                   ? KiwiColors.kiwiPrimaryLight
                   : KiwiColors.cardBg,
-              borderRadius: BorderRadius.circular(14),
+              borderRadius: BorderRadius.circular(KiwiSpacing.md + 2),
               border: Border.all(
                 color: selected
                     ? KiwiColors.kiwiPrimary
-                    : Colors.grey.shade200,
+                    : KiwiColors.pathLocked,
                 width: selected ? 2.5 : 1,
               ),
               boxShadow: selected
@@ -473,8 +473,8 @@ class _ClanCreateScreenState extends State<ClanCreateScreen> {
 
   Widget _buildColorRow() {
     return Wrap(
-      spacing: 10,
-      runSpacing: 10,
+      spacing: KiwiSpacing.sm + 2,
+      runSpacing: KiwiSpacing.sm + 2,
       children: _colors.map((hex) {
         final color = _hexToColor(hex);
         final selected = hex == _selectedColor;
@@ -541,7 +541,7 @@ class _ClanCreateScreenState extends State<ClanCreateScreen> {
             alignment: Alignment.center,
             child: Text(emoji, style: const TextStyle(fontSize: 38)),
           ),
-          const SizedBox(height: 10),
+          SizedBox(height: KiwiSpacing.sm + 2),
           Text(
             name,
             style: const TextStyle(

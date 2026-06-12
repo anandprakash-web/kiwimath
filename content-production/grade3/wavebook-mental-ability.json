@@ -1,0 +1,300 @@
+{
+  "topic_id": "wavebook-mental-ability",
+  "topic_name": "Wavebook: Mental Ability",
+  "topic_emoji": "\ud83d\udcd8",
+  "grade": 3,
+  "domain": "wavebook",
+  "source": "wavebook",
+  "total_questions": 15,
+  "difficulty_range": {
+    "min": 0,
+    "max": 0
+  },
+  "questions": [
+    {
+      "id": "wb_L3_s40_q01",
+      "stem": "If BALL is coded as CBMM, then GAME is coded as",
+      "interaction_mode": "mcq",
+      "topic": "Mental Ability",
+      "difficulty_tier": "warmup",
+      "question_number": 1,
+      "choices": [
+        "HBNF",
+        "HBNE",
+        "GBNF",
+        "HCNF"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S40",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L3_s40_q02",
+      "stem": "What is the mirror image of the number 3?",
+      "interaction_mode": "mcq",
+      "topic": "Mental Ability",
+      "difficulty_tier": "warmup",
+      "question_number": 2,
+      "choices": [
+        "3",
+        "E",
+        "Reversed 3",
+        "8"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S40",
+      "svg": "wb_L3_s40_q02.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 210\" width=\"300\" height=\"210\" style=\"font-family:Arial,sans-serif\"><line x1=\"150\" y1=\"10\" x2=\"150\" y2=\"190\" stroke=\"#E57373\" stroke-width=\"2\" stroke-dasharray=\"6,4\"/><path d=\"M150,60 Q100,30 80,80 Q70,130 150,140 Q230,130 220,80 Q200,30 150,60Z\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2\"/><text x=\"150\" y=\"195\" text-anchor=\"middle\" font-size=\"11\" fill=\"#E57373\">Line of Symmetry</text></svg>"
+    },
+    {
+      "id": "wb_L3_s40_q03",
+      "stem": "Find the next in the pattern: 2, 6, 12, 20, 30, ?",
+      "interaction_mode": "mcq",
+      "topic": "Mental Ability",
+      "difficulty_tier": "warmup",
+      "question_number": 3,
+      "choices": [
+        "36",
+        "40",
+        "42",
+        "48"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S40",
+      "svg": "wb_L3_s40_q03.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg viewBox=\"0 0 330 55\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"30\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"30\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">2</text><circle cx=\"75\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"75\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">6</text><circle cx=\"120\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"120\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">12</text><circle cx=\"165\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"165\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">20</text><circle cx=\"210\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"210\" y=\"30\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1A73E8\">30</text><circle cx=\"255\" cy=\"25\" r=\"18\" fill=\"#FFF3E0\" stroke=\"#F57C00\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"255\" y=\"31\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#F57C00\">?</text></svg>",
+      "visual_alt": "Visual for: Find the next in the pattern: 2, 6, 12, 20, 30, ?"
+    },
+    {
+      "id": "wb_L3_s40_q04",
+      "stem": "If in a code, CAT = 24, DOG = 26, then BAT = ?",
+      "interaction_mode": "mcq",
+      "topic": "Mental Ability",
+      "difficulty_tier": "warmup",
+      "question_number": 4,
+      "choices": [
+        "23",
+        "22",
+        "25",
+        "21"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S40",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L3_s40_q05",
+      "stem": "What comes next: A, C, F, J, ?",
+      "interaction_mode": "mcq",
+      "topic": "Mental Ability",
+      "difficulty_tier": "warmup",
+      "question_number": 5,
+      "choices": [
+        "N",
+        "O",
+        "M",
+        "P"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S40",
+      "svg": "wb_L3_s40_q05.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg viewBox=\"0 0 260 55\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"30\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"30\" y=\"31\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#1A73E8\">A</text><circle cx=\"75\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"75\" y=\"31\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#1A73E8\">C</text><circle cx=\"120\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"120\" y=\"31\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#1A73E8\">F</text><circle cx=\"165\" cy=\"25\" r=\"18\" fill=\"#E8F0FE\" stroke=\"#4A90D9\" stroke-width=\"1.5\"/><text x=\"165\" y=\"31\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#1A73E8\">J</text><circle cx=\"210\" cy=\"25\" r=\"18\" fill=\"#FFF3E0\" stroke=\"#F57C00\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"210\" y=\"31\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#F57C00\">?</text></svg>",
+      "visual_alt": "Visual for: What comes next: A, C, F, J, ?"
+    },
+    {
+      "id": "wb_L3_s40_q06",
+      "stem": "If TREE is coded as 20-18-5-5, then PLANT is coded as",
+      "interaction_mode": "mcq",
+      "topic": "Mental Ability",
+      "difficulty_tier": "practice",
+      "question_number": 6,
+      "choices": [
+        "16-12-1-14-20",
+        "15-11-1-13-19",
+        "16-12-2-14-20",
+        "17-12-1-14-20"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S40",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L3_s40_q07",
+      "stem": "The mirror image of the word BED looks like",
+      "interaction_mode": "mcq",
+      "topic": "Mental Ability",
+      "difficulty_tier": "practice",
+      "question_number": 7,
+      "choices": [
+        "BED",
+        "DEb",
+        "BEb",
+        "None of these"
+      ],
+      "correct_answer": 3,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S40",
+      "svg": "wb_L3_s40_q07.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 210\" width=\"300\" height=\"210\" style=\"font-family:Arial,sans-serif\"><line x1=\"150\" y1=\"10\" x2=\"150\" y2=\"190\" stroke=\"#E57373\" stroke-width=\"2\" stroke-dasharray=\"6,4\"/><path d=\"M150,60 Q100,30 80,80 Q70,130 150,140 Q230,130 220,80 Q200,30 150,60Z\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2\"/><text x=\"150\" y=\"195\" text-anchor=\"middle\" font-size=\"11\" fill=\"#E57373\">Line of Symmetry</text></svg>"
+    },
+    {
+      "id": "wb_L3_s40_q08",
+      "stem": "Find the missing number: 3, 9, 27, 81, ?",
+      "interaction_mode": "mcq",
+      "topic": "Mental Ability",
+      "difficulty_tier": "practice",
+      "question_number": 8,
+      "choices": [
+        "162",
+        "243",
+        "324",
+        "108"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S40",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L3_s40_q09",
+      "stem": "If A=1, B=2, ..., Z=26, what is the sum of the letters in the word SUM?",
+      "interaction_mode": "mcq",
+      "topic": "Mental Ability",
+      "difficulty_tier": "practice",
+      "question_number": 9,
+      "choices": [
+        "52",
+        "53",
+        "55",
+        "50"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S40",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L3_s40_q10",
+      "stem": "Which figure comes next in the pattern: Circle, Square, Triangle, Circle, Square, ?",
+      "interaction_mode": "mcq",
+      "topic": "Mental Ability",
+      "difficulty_tier": "practice",
+      "question_number": 10,
+      "choices": [
+        "Circle",
+        "Square",
+        "Triangle",
+        "Rectangle"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S40",
+      "svg": "wb_L3_s40_q10.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 200\" width=\"300\" height=\"200\" style=\"font-family:Arial,sans-serif\"><polygon points=\"150,20 50,170 250,170\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2.5\"/></svg>"
+    },
+    {
+      "id": "wb_L3_s40_q11",
+      "stem": "In a mirror, AMBULANCE reads correctly because it is written",
+      "interaction_mode": "mcq",
+      "topic": "Mental Ability",
+      "difficulty_tier": "challenge",
+      "question_number": 11,
+      "choices": [
+        "Upside down",
+        "In reverse",
+        "In bold",
+        "In small letters"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S40",
+      "svg": "wb_L3_s40_q11.svg",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L3_s40_q12",
+      "stem": "If PEN = 35, then PENCIL = ?",
+      "interaction_mode": "mcq",
+      "topic": "Mental Ability",
+      "difficulty_tier": "challenge",
+      "question_number": 12,
+      "choices": [
+        "50",
+        "55",
+        "59",
+        "52"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S40",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L3_s40_q13",
+      "stem": "Complete the series: 1, 1, 2, 3, 5, 8, ?",
+      "interaction_mode": "mcq",
+      "topic": "Mental Ability",
+      "difficulty_tier": "challenge",
+      "question_number": 13,
+      "choices": [
+        "11",
+        "12",
+        "13",
+        "10"
+      ],
+      "correct_answer": 2,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S40",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L3_s40_q14",
+      "stem": "If in a certain code, MANGO is written as OCPIQ, then APPLE is written as",
+      "interaction_mode": "mcq",
+      "topic": "Mental Ability",
+      "difficulty_tier": "challenge",
+      "question_number": 14,
+      "choices": [
+        "CRRNG",
+        "CRRNE",
+        "None of these",
+        "BQQMF"
+      ],
+      "correct_answer": 0,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S40",
+      "diagnostics": {}
+    },
+    {
+      "id": "wb_L3_s40_q15",
+      "stem": "What is the water image (reflection in water) of the letter M?",
+      "interaction_mode": "mcq",
+      "topic": "Mental Ability",
+      "difficulty_tier": "challenge",
+      "question_number": 15,
+      "choices": [
+        "M",
+        "W",
+        "Inverted M",
+        "N"
+      ],
+      "correct_answer": 1,
+      "grade_band": "3-4",
+      "source": "Wavebook L3 S40",
+      "svg": "wb_L3_s40_q15.svg",
+      "diagnostics": {},
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 210\" width=\"300\" height=\"210\" style=\"font-family:Arial,sans-serif\"><line x1=\"150\" y1=\"10\" x2=\"150\" y2=\"190\" stroke=\"#E57373\" stroke-width=\"2\" stroke-dasharray=\"6,4\"/><path d=\"M150,60 Q100,30 80,80 Q70,130 150,140 Q230,130 220,80 Q200,30 150,60Z\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2\"/><text x=\"150\" y=\"195\" text-anchor=\"middle\" font-size=\"11\" fill=\"#E57373\">Line of Symmetry</text></svg>"
+    }
+  ]
+}

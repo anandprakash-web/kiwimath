@@ -379,6 +379,12 @@ def information(theta: float, b: float) -> float:
 class AdaptiveEngineV2:
     """ELO/IRT adaptive engine for v2 content."""
 
+    # Per-instance cache cap. Abilities are persisted to Firestore on every
+    # answer (_save_to_firestore in process_answer), so evicting is safe —
+    # the entry reloads from Firestore on next access. Prevents unbounded
+    # memory growth on long-lived Cloud Run instances.
+    MAX_CACHED_ABILITIES = 5000
+
     def __init__(self):
         # In-memory ability cache (uid:topic_id -> StudentAbility)
         self._abilities: Dict[str, StudentAbility] = {}
@@ -399,6 +405,10 @@ class AdaptiveEngineV2:
         ability = self._load_from_firestore(user_id, topic_id)
         if ability is None:
             ability = StudentAbility(topic_id=topic_id)
+
+        # Simple FIFO eviction (dict preserves insertion order) to cap memory.
+        if len(self._abilities) >= self.MAX_CACHED_ABILITIES:
+            self._abilities.pop(next(iter(self._abilities)))
 
         self._abilities[key] = ability
         return ability

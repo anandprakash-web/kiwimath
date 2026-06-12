@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <marker id="arrowBlue" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#2196F3"/>
+    </marker>
+    <marker id="arrowRed" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#F44336"/>
+    </marker>
+  </defs>
+  <circle cx="100.0" cy="100.0" r="76.0" fill="#f9f9f9" stroke="#333" stroke-width="2"/>
+  <line x1="100.0" y1="34.0" x2="100.0" y2="24.0" stroke="#333" stroke-width="2.5"/>
+  <text x="100.0" y="10.0" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="bold" font-family="Arial" fill="#333">N</text>
+  <line x1="149.5" y1="50.5" x2="153.7" y2="46.3" stroke="#333" stroke-width="1.5"/>
+  <text x="163.6" y="36.4" text-anchor="middle" dominant-baseline="central" font-size="10" font-weight="bold" font-family="Arial" fill="#333">NE</text>
+  <line x1="166.0" y1="100.0" x2="176.0" y2="100.0" stroke="#333" stroke-width="2.5"/>
+  <text x="190.0" y="100.0" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="bold" font-family="Arial" fill="#333">E</text>
+  <line x1="149.5" y1="149.5" x2="153.7" y2="153.7" stroke="#333" stroke-width="1.5"/>
+  <text x="163.6" y="163.6" text-anchor="middle" dominant-baseline="central" font-size="10" font-weight="bold" font-family="Arial" fill="#333">SE</text>
+  <line x1="100.0" y1="166.0" x2="100.0" y2="176.0" stroke="#333" stroke-width="2.5"/>
+  <text x="100.0" y="190.0" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="bold" font-family="Arial" fill="#333">S</text>
+  <line x1="50.5" y1="149.5" x2="46.3" y2="153.7" stroke="#333" stroke-width="1.5"/>
+  <text x="36.4" y="163.6" text-anchor="middle" dominant-baseline="central" font-size="10" font-weight="bold" font-family="Arial" fill="#333">SW</text>
+  <line x1="34.0" y1="100.0" x2="24.0" y2="100.0" stroke="#333" stroke-width="2.5"/>
+  <text x="10.0" y="100.0" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="bold" font-family="Arial" fill="#333">W</text>
+  <line x1="50.5" y1="50.5" x2="46.3" y2="46.3" stroke="#333" stroke-width="1.5"/>
+  <text x="36.4" y="36.4" text-anchor="middle" dominant-baseline="central" font-size="10" font-weight="bold" font-family="Arial" fill="#333">NW</text>
+  <line x1="100.0" y1="100.0" x2="100.0" y2="46.8" stroke="#2196F3" stroke-width="3" stroke-linecap="round" marker-end="url(#arrowBlue)"/>
+  <line x1="100.0" y1="100.0" x2="46.8" y2="100.0" stroke="#F44336" stroke-width="3" stroke-linecap="round" marker-end="url(#arrowRed)"/>
+  <circle cx="100.0" cy="100.0" r="3" fill="#333"/>
+  <rect x="5" y="176" width="8" height="8" fill="#2196F3"/>
+  <text x="16" y="184" font-size="9" font-family="Arial" fill="#555">Start</text>
+  <rect x="50" y="176" width="8" height="8" fill="#F44336"/>
+  <text x="61" y="184" font-size="9" font-family="Arial" fill="#555">End</text>
+</svg>

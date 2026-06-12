@@ -3,10 +3,10 @@ import 'dart:io';
 
 import 'package:flutter/foundation.dart';
 import 'package:path_provider/path_provider.dart';
-import 'package:http/http.dart' as http;
 
 import '../models/olympiad_worksheet.dart';
 import 'api_client.dart';
+import 'authed_http.dart' as http;
 
 /// Spotify-style offline cache for olympiad worksheets.
 ///

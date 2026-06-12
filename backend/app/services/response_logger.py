@@ -34,25 +34,8 @@ class ResponseLogger:
     """Logs item-level response data to Firestore."""
 
     def __init__(self):
-        self._db = None
-        self._firestore_available = False
         self._buffer: List[Dict[str, Any]] = []  # In-memory buffer
-        self._buffer_limit = 50  # Flush every N responses
-        self._init_firestore()
-
-    def _init_firestore(self):
-        try:
-            import firebase_admin
-            from firebase_admin import firestore as fs
-
-            if not firebase_admin._apps:
-                firebase_admin.initialize_app()
-            self._db = fs.client()
-            self._firestore_available = True
-            logger.info("Response logger connected to Firestore")
-        except Exception as e:
-            logger.warning(f"Response logger: Firestore unavailable, buffering in memory: {e}")
-            self._firestore_available = False
+        self._buffer_limit = 1  # Flush after every response
 
     def log_response(
         self,
@@ -101,10 +84,12 @@ class ResponseLogger:
         if not self._buffer:
             return
 
-        if self._firestore_available and self._db:
+        from app.services.firestore_service import _get_db
+        db = _get_db()
+        if db:
             try:
-                batch = self._db.batch()
-                collection = self._db.collection("response_logs")
+                batch = db.batch()
+                collection = db.collection("response_logs")
 
                 for record in self._buffer:
                     doc_ref = collection.document()
@@ -127,12 +112,14 @@ class ResponseLogger:
 
     def get_item_responses(self, question_id: str, limit: int = 1000) -> List[Dict]:
         """Get all responses for a specific question (for calibration)."""
-        if not self._firestore_available or not self._db:
+        from app.services.firestore_service import _get_db
+        db = _get_db()
+        if not db:
             return [r for r in self._buffer if r["question_id"] == question_id]
 
         try:
             docs = (
-                self._db.collection("response_logs")
+                db.collection("response_logs")
                 .where("question_id", "==", question_id)
                 .order_by("epoch_ms")
                 .limit(limit)
@@ -145,13 +132,15 @@ class ResponseLogger:
 
     def get_response_count(self) -> int:
         """Get total responses logged (for monitoring)."""
-        if not self._firestore_available or not self._db:
+        from app.services.firestore_service import _get_db
+        db = _get_db()
+        if not db:
             return len(self._buffer)
 
         try:
             # Firestore doesn't have a cheap count operation, use aggregation
             from google.cloud.firestore_v1.aggregation import AggregationQuery
-            query = self._db.collection("response_logs")
+            query = db.collection("response_logs")
             agg = AggregationQuery(query)
             agg.count(alias="total")
             results = agg.get()
@@ -166,10 +155,12 @@ class ResponseLogger:
             date_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
 
         responses = []
-        if self._firestore_available and self._db:
+        from app.services.firestore_service import _get_db
+        db = _get_db()
+        if db:
             try:
                 docs = (
-                    self._db.collection("response_logs")
+                    db.collection("response_logs")
                     .where("timestamp", ">=", f"{date_str}T00:00:00")
                     .where("timestamp", "<", f"{date_str}T23:59:59")
                     .get()

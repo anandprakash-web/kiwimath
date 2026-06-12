@@ -7,6 +7,7 @@
 class UserProfile {
   final String userId;
   final String displayName;
+  final String? childName;      // Kid's name from onboarding (separate from parent's display name)
   final String avatar;
   final int streakCurrent;
   final int streakLongest;
@@ -27,6 +28,7 @@ class UserProfile {
   const UserProfile({
     required this.userId,
     this.displayName = 'Kiwi Learner',
+    this.childName,
     this.avatar = 'kiwi_default',
     this.streakCurrent = 0,
     this.streakLongest = 0,
@@ -45,6 +47,16 @@ class UserProfile {
     this.topicsMastered = 0,
   });
 
+  /// Returns the child's name, preferring the explicitly-set child_name
+  /// over display_name (which may be the parent's Google name).
+  String get resolvedChildName {
+    if (childName != null && childName!.isNotEmpty) return childName!;
+    if (displayName.isNotEmpty && displayName != 'Kiwi Learner') {
+      return displayName;
+    }
+    return '';
+  }
+
   /// Whether this user has completed onboarding (benchmark test).
   bool get hasOnboarded => onboardedAt != null;
 
@@ -54,6 +66,7 @@ class UserProfile {
     return UserProfile(
       userId: json['user_id'] as String? ?? '',
       displayName: json['display_name'] as String? ?? 'Kiwi Learner',
+      childName: json['child_name'] as String?,
       avatar: json['avatar'] as String? ?? 'kiwi_default',
       streakCurrent: json['streak_current'] as int? ?? 0,
       streakLongest: json['streak_longest'] as int? ?? 0,
@@ -91,10 +104,12 @@ class UserProfile {
     int? topicsMastered,
     String? curriculum,
     String? avatar,
+    String? childName,
   }) {
     return UserProfile(
       userId: userId,
       displayName: displayName,
+      childName: childName ?? this.childName,
       avatar: avatar ?? this.avatar,
       streakCurrent: streakCurrent ?? this.streakCurrent,
       streakLongest: streakLongest,
