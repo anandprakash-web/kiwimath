@@ -164,8 +164,15 @@ class _QuestionScreenV2State extends State<QuestionScreenV2> {
           return;
         }
         final planItem = widget.sessionPlan![_planIndex];
-        final questionId = planItem['question_id'] as String;
-        question = await _api.getQuestionV2(questionId);
+        final inline = planItem['question'];
+        if (inline is Map) {
+          // School chapter mode — the full v4 question JSON is inlined in the
+          // plan (v4 ids are not fetchable via GET /v2/questions/{id}).
+          question = _questionFromInline(Map<String, dynamic>.from(inline));
+        } else {
+          final questionId = planItem['question_id'] as String;
+          question = await _api.getQuestionV2(questionId);
+        }
         _planIndex++;
       } else {
         // Default topic-locked mode (with IRT for chapters when curriculum is set)
@@ -203,6 +210,32 @@ class _QuestionScreenV2State extends State<QuestionScreenV2> {
       if (!mounted) return;
       setState(() => _error = e.toString());
     }
+  }
+
+  /// Build a [QuestionV2] from an inlined question payload (v4 school
+  /// chapter format: {id, stem, options/choices, skill_id, difficulty_tier,
+  /// irt_b, ...}). Tolerant of both 'options' and 'choices' keys and of the
+  /// missing fields the strict [QuestionV2.fromJson] requires.
+  QuestionV2 _questionFromInline(Map<String, dynamic> json) {
+    final rawChoices =
+        (json['choices'] ?? json['options']) as List<dynamic>? ?? const [];
+    return QuestionV2(
+      questionId:
+          (json['question_id'] ?? json['id'] ?? '').toString(),
+      stem: json['stem'] as String? ?? '',
+      choices: rawChoices.map((e) => e.toString()).toList(),
+      difficultyScore: (json['difficulty_score'] as num?)?.toInt() ?? 0,
+      difficultyTier: json['difficulty_tier'] as String? ?? 'easy',
+      visualSvgUrl: json['visual_svg'] as String?,
+      visualAlt: json['visual_alt'] as String?,
+      topic: json['topic'] as String? ?? widget.topicId,
+      topicName: json['topic_name'] as String? ?? widget.topicName,
+      tags: const [],
+      // Answers are never sent at fetch time (server-checked); -1 never
+      // matches an option index, so nothing is pre-highlighted as correct.
+      correctAnswer: (json['correct_answer'] as num?)?.toInt() ?? -1,
+      interactionMode: json['interaction_mode'] as String? ?? 'mcq',
+    );
   }
 
   /// Check if a question is broken (no choices for MCQ, empty stem, etc.)
@@ -725,7 +758,10 @@ class _QuestionScreenV2State extends State<QuestionScreenV2> {
         correctAnswer: correctAnswer,
         wrongAnswer: wrongAnswer,
         onDone: () {
-          Navigator.of(ctx).pop(); // close sheet — does NOT auto-advance
+          // "Got it, next question →" — close the sheet AND advance,
+          // exactly like the "Got it" button on the wrong-answer bar.
+          Navigator.of(ctx).pop();
+          _onWrongContinue();
         },
       ),
     );

@@ -9,14 +9,12 @@ import 'models/clan.dart';
 import 'models/engagement.dart';
 import 'models/user_profile.dart';
 import 'screens/clan_create_screen.dart';
-import 'screens/clan_hub_screen.dart';
 import 'screens/clan_join_screen.dart';
 import 'screens/clan_leaderboard_screen.dart';
 import 'screens/curriculum_screen.dart';
 import 'screens/daily_puzzle_screen.dart';
 import 'screens/benchmark_test_screen.dart';
 import 'screens/growth_tab_screen.dart';
-import 'screens/olympiad_screen.dart';
 import 'screens/olympiad_tab_screen.dart';
 import 'screens/onboarding_screen.dart';
 import 'screens/parent_dashboard_screen.dart';
@@ -559,6 +557,19 @@ class _AppShellState extends State<_AppShell> {
   // Engagement navigation callbacks
   // ---------------------------------------------------------------------------
 
+  /// Entry point for the Daily Challenge card on the Practice tab.
+  /// Guards against the puzzle not being loaded yet.
+  void _onDailyChallengeTap() {
+    if (_dailyPuzzle == null) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text("Today's puzzle isn't ready yet")),
+      );
+      _loadEngagementData(); // retry the load in the background
+      return;
+    }
+    _navigateToDailyPuzzle();
+  }
+
   void _navigateToDailyPuzzle() {
     if (_dailyPuzzle == null) return;
     Navigator.of(context).push(
@@ -1011,7 +1022,22 @@ class _AppShellState extends State<_AppShell> {
     required String topicName,
     String? curriculum,
     String? chapter,
+    List<Map<String, dynamic>>? questions,
   }) {
+    // School chapters arrive as full v4 question objects. Build a session
+    // plan with the question JSON inlined — v4 question ids are NOT
+    // resolvable via GET /v2/questions/{id} (store_v2 only), so the screen
+    // renders the inlined payload instead of re-fetching by id.
+    List<Map<String, dynamic>>? sessionPlan;
+    if (questions != null && questions.isNotEmpty) {
+      sessionPlan = questions
+          .map((q) => <String, dynamic>{
+                'question_id': q['id'] ?? q['question_id'] ?? '',
+                'skill_id': q['skill_id'] ?? '',
+                'question': q,
+              })
+          .toList();
+    }
     Navigator.of(context).push(
       MaterialPageRoute(
         builder: (_) => QuestionScreenV2(
@@ -1021,6 +1047,7 @@ class _AppShellState extends State<_AppShell> {
           grade: _selectedGrade,
           curriculum: curriculum,
           chapter: chapter,
+          sessionPlan: sessionPlan,
           companionService: _companionService,
           onBackToHome: () {
             Navigator.of(context).pop();
@@ -1078,7 +1105,11 @@ class _AppShellState extends State<_AppShell> {
               ? _studentName
               : (_profile.displayName != 'Kiwi Learner' ? _profile.displayName : null),
           embedded: false,
+          grade: _selectedGrade,
           curriculum: _profile.curriculum,
+          childClan: _clan,
+          activeChallengeInfo: _activeChallenge,
+          challengeProgressInfo: _challengeProgress,
         ),
       ),
     );
@@ -1110,23 +1141,28 @@ class _AppShellState extends State<_AppShell> {
                   topicName: topicName,
                 ),
                 onSmartSession: _startSmartSession,
+                onDailyChallenge: _onDailyChallengeTap,
+                onAvatarTap: () => setState(() => _selectedTab = 3),
                 studentName: _studentName,
                 streak: _streakData?.currentStreak ?? _profile.streakCurrent,
                 kiwiCoins: _profile.kiwiCoins,
                 dailyProgress: _profile.dailyProgress,
                 dailyGoal: _profile.dailyGoal,
               ),
-              // Tab 1 — School (multi-curriculum chapter browser)
+              // Tab 1 — School (multi-curriculum chapter browser, v4 bank)
               CurriculumScreen(
                 userId: widget.userId,
                 selectedGrade: _selectedGrade,
                 onGradeChanged: _onGradeChanged,
-                onChapterTap: (topicId, topicName, {String? curriculum}) =>
+                onChapterTap: (topicId, topicName,
+                        {String? curriculum,
+                        List<Map<String, dynamic>>? questions}) =>
                     _navigateToQuestions(
                   topicId: topicId,
                   topicName: topicName,
                   curriculum: curriculum,
                   chapter: topicName,
+                  questions: questions,
                 ),
                 companionService: _companionService,
               ),

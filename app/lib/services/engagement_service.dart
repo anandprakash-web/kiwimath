@@ -342,7 +342,17 @@ class EngagementService {
           'GET /v4/pledges/clan/$clanId failed: '
           '${res.statusCode} ${res.body}');
     }
-    final list = jsonDecode(res.body) as List<dynamic>;
+    // Backend returns {"clan_id": ..., "pledges": [...]}; keep backward
+    // compat with a bare list in case of older deployments.
+    final decoded = jsonDecode(res.body);
+    final List<dynamic> list;
+    if (decoded is List) {
+      list = decoded;
+    } else if (decoded is Map<String, dynamic>) {
+      list = decoded['pledges'] as List<dynamic>? ?? const [];
+    } else {
+      list = const [];
+    }
     return list
         .map((e) => Pledge.fromJson(e as Map<String, dynamic>))
         .toList();

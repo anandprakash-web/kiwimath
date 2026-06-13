@@ -92,8 +92,10 @@ class _SavedQuestionsScreenState extends State<SavedQuestionsScreen> {
   }
 
   void _navigateToQuestion(Map<String, dynamic> question) {
-    final questionId = question['id'] as String? ?? '';
+    final questionId =
+        (question['question_id'] ?? question['id'] ?? '').toString();
     final topic = question['topic'] as String? ?? '';
+    if (questionId.isEmpty) return;
     Navigator.of(context).push(
       MaterialPageRoute(
         builder: (_) => QuestionScreenV2(
@@ -101,7 +103,14 @@ class _SavedQuestionsScreenState extends State<SavedQuestionsScreen> {
           topicName: topic,
           userId: widget.userId,
           grade: widget.grade,
-          sessionPlan: [question],
+          // QuestionScreenV2 reads planItem['question_id'] — bookmark
+          // objects key the id as 'id', so map it explicitly.
+          sessionPlan: [
+            <String, dynamic>{
+              'question_id': questionId,
+              'skill_id': question['skill_id'] ?? '',
+            }
+          ],
           onBackToHome: () => Navigator.of(context).pop(),
         ),
       ),
@@ -124,19 +133,23 @@ class _SavedQuestionsScreenState extends State<SavedQuestionsScreen> {
               padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
               child: Row(
                 children: [
-                  GestureDetector(
-                    onTap: widget.onBackToHome ?? () => Navigator.of(context).maybePop(),
-                    child: Container(
-                      width: 36,
-                      height: 36,
-                      decoration: BoxDecoration(
-                        color: colors.primary.withOpacity(0.08),
-                        shape: BoxShape.circle,
+                  // Back arrow only when there's somewhere to go back to —
+                  // hidden when embedded as a tab (onBackToHome == null).
+                  if (widget.onBackToHome != null) ...[
+                    GestureDetector(
+                      onTap: widget.onBackToHome,
+                      child: Container(
+                        width: 36,
+                        height: 36,
+                        decoration: BoxDecoration(
+                          color: colors.primary.withOpacity(0.08),
+                          shape: BoxShape.circle,
+                        ),
+                        child: Icon(Icons.arrow_back, size: 20, color: colors.textSecondary),
                       ),
-                      child: Icon(Icons.arrow_back, size: 20, color: colors.textSecondary),
                     ),
-                  ),
-                  const SizedBox(width: 14),
+                    const SizedBox(width: 14),
+                  ],
                   Expanded(
                     child: Text(
                       'Saved Questions',

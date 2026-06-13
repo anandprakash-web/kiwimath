@@ -520,6 +520,15 @@ def check_answer(
 
     q = store_v2.get(req.question_id)
     if q is None:
+        # Fall back to the v4 store so School-tab (v4 chapter) questions can be
+        # answer-checked through the same endpoint. store_v4 indexes both new
+        # ids (A3-DAT-0029) and original ids (NCERT-G3-456).
+        try:
+            from app.services.content_store_v4 import store_v4
+            q = store_v4.get(req.question_id)
+        except Exception:
+            q = None
+    if q is None:
         raise HTTPException(status_code=404, detail=f"Question {req.question_id} not found")
 
     # Determine correctness based on interaction mode
@@ -901,11 +910,21 @@ def get_visual(question_id: str):
     if not q.visual_svg:
         raise HTTPException(status_code=404, detail=f"Question {question_id} has no visual")
 
+    from fastapi.responses import Response
+
+    # Most v2 questions store INLINE <svg> markup in visual_svg (the loader
+    # nullifies bare filename refs). Serve inline markup directly.
+    visual = q.visual_svg.strip()
+    if "<svg" in visual:
+        # Strip any leading XML prolog/whitespace before the <svg> root
+        svg_start = visual.find("<svg")
+        return Response(content=visual[svg_start:], media_type="image/svg+xml")
+
+    # Otherwise treat it as a filename and fall back to file lookup
     svg_content = store_v2.get_svg(q.topic, q.visual_svg)
     if svg_content is None:
         raise HTTPException(status_code=404, detail=f"SVG file {q.visual_svg} not found")
 
-    from fastapi.responses import Response
     return Response(content=svg_content, media_type="image/svg+xml")
 
 
@@ -1715,21 +1734,22 @@ def complete_unified_session(body: SessionResultIn):
     )
 
     # Record served question IDs so they won't repeat in next session
-    served_ids = [r.question_id for r in body.results]
+    # NOTE: results entries are plain dicts ({question_id, correct, time_ms, skill_id})
+    served_ids = [r.get("question_id", "") for r in body.results if r.get("question_id")]
     skill_ability_store.record_served_questions(body.user_id, served_ids)
 
     # Log responses for IRT calibration
     all_abilities = skill_ability_store.get_all_abilities(body.user_id)
     for r in body.results:
-        q = store_v2.get(r.question_id)
-        skill_id = r.skill_id if hasattr(r, 'skill_id') and r.skill_id else ""
+        q = store_v2.get(r.get("question_id", ""))
+        skill_id = r.get("skill_id") or ""
         ability = all_abilities.get(skill_id)
         user_theta = ability.theta if ability else -1.5
         response_logger.log_response(
             user_id=body.user_id,
-            question_id=r.question_id,
-            correct=r.correct,
-            response_time_ms=r.time_ms if hasattr(r, 'time_ms') else 0,
+            question_id=r.get("question_id", ""),
+            correct=bool(r.get("correct", False)),
+            response_time_ms=r.get("time_ms", 0) or 0,
             user_theta=user_theta,
             skill_id=skill_id,
             question_difficulty=q.difficulty_score if q else 0,

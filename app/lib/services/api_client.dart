@@ -820,6 +820,52 @@ class ApiClient {
     return List<Map<String, dynamic>>.from(jsonDecode(res.body));
   }
 
+  /// School tab chapter list (v4 bank).
+  ///
+  /// GET /v4/school/{curriculum}/{grade} → list of
+  /// {name, question_count, skill_ids, adaptive_topic_ids}.
+  /// A 404 (no chapters for this combination) is returned as an empty list
+  /// so the UI can show its friendly "coming soon" state instead of an error.
+  Future<List<Map<String, dynamic>>> fetchSchoolChaptersV4({
+    required String curriculum,
+    required int grade,
+  }) async {
+    final uri = Uri.parse('$baseUrl/v4/school/$curriculum/$grade');
+    final res = await _withRetry(
+        () => http.get(uri).timeout(const Duration(seconds: 15)));
+    if (res.statusCode == 404) return [];
+    if (res.statusCode != 200) {
+      throw ApiException(
+          'GET /v4/school/$curriculum/$grade failed: ${res.statusCode} ${res.body}');
+    }
+    return List<Map<String, dynamic>>.from(jsonDecode(res.body));
+  }
+
+  /// Questions for a single school chapter (v4 bank).
+  ///
+  /// GET /v4/school/{curriculum}/{grade}/{chapter} →
+  /// {curriculum, grade, chapter, total, questions: [{id, stem, options/choices,
+  /// skill_id, difficulty_tier, irt_b}]}.
+  /// A 404 (chapter resolves to zero questions) is returned as an empty list.
+  Future<List<Map<String, dynamic>>> fetchChapterQuestionsV4({
+    required String curriculum,
+    required int grade,
+    required String chapter,
+  }) async {
+    final encodedChapter = Uri.encodeComponent(chapter);
+    final uri =
+        Uri.parse('$baseUrl/v4/school/$curriculum/$grade/$encodedChapter');
+    final res = await _withRetry(
+        () => http.get(uri).timeout(const Duration(seconds: 20)));
+    if (res.statusCode == 404) return [];
+    if (res.statusCode != 200) {
+      throw ApiException(
+          'GET /v4/school/$curriculum/$grade/$chapter failed: ${res.statusCode} ${res.body}');
+    }
+    final data = jsonDecode(res.body) as Map<String, dynamic>;
+    return List<Map<String, dynamic>>.from(data['questions'] ?? []);
+  }
+
   /// Download an offline question bundle for a topic.
   Future<Map<String, dynamic>> downloadOfflineBundle({
     required int grade,

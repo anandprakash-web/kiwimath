@@ -1,10 +1,3 @@
-// ============================================================================
-// DEPRECATED — Olympiad v2 rework (May 2026)
-// This screen is archived at lib/screens/archive/wavebook_screen.dart
-// Wavebook content is folded into the new 4-pillar Olympiad worksheets.
-// Will be removed after v2 migration is complete.
-// ============================================================================
-
 import 'dart:io';
 
 import 'package:flutter/material.dart';

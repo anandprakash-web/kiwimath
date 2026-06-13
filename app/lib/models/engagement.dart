@@ -54,8 +54,9 @@ class DailyPuzzle {
                 ?.map((e) => e as String)
                 .toList() ??
             [],
-        hint1: json['hint1'] as String? ?? '',
-        hint2: json['hint2'] as String? ?? '',
+        // Backend sends hint_1/hint_2 — accept both spellings.
+        hint1: (json['hint_1'] ?? json['hint1']) as String? ?? '',
+        hint2: (json['hint_2'] ?? json['hint2']) as String? ?? '',
         svgTemplate: json['svg_template'] as String? ?? '',
         gradeBandStyle: json['grade_band_style'] as String? ?? '',
         dropsAt: json['drops_at'] as String? ?? '',

@@ -18,11 +18,15 @@ class PillarHomeScreen extends StatefulWidget {
   final int selectedGrade;
   final void Function(int grade) onGradeChanged;
 
+  /// Opens today's daily puzzle (plumbed from _AppShell via OlympiadTabScreen).
+  final VoidCallback? onDailyChallenge;
+
   const PillarHomeScreen({
     super.key,
     required this.userId,
     required this.selectedGrade,
     required this.onGradeChanged,
+    this.onDailyChallenge,
   });
 
   @override
@@ -141,6 +145,7 @@ class _PillarHomeScreenState extends State<PillarHomeScreen> {
             colors: colors,
             typo: typo,
             tier: tier,
+            onTap: widget.onDailyChallenge,
           ),
         ],
       ),
@@ -341,17 +346,26 @@ class _DailyChallengeCard extends StatelessWidget {
   final KiwiTierColors colors;
   final KiwiTierTypography typo;
   final KiwiTier tier;
+  final VoidCallback? onTap;
 
   const _DailyChallengeCard({
     required this.grade,
     required this.colors,
     required this.typo,
     required this.tier,
+    this.onTap,
   });
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return GestureDetector(
+      onTap: onTap == null
+          ? null
+          : () {
+              HapticFeedback.lightImpact();
+              onTap!();
+            },
+      child: Container(
       width: double.infinity,
       padding: EdgeInsets.all(KiwiSpacing.lg),
       decoration: BoxDecoration(
@@ -416,6 +430,7 @@ class _DailyChallengeCard extends StatelessWidget {
             color: Colors.white.withOpacity(0.7),
           ),
         ],
+      ),
       ),
     );
   }

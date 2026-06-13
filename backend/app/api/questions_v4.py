@@ -149,7 +149,7 @@ def next_question(
         id=q.id,
         stem=q.stem,
         correct_value=None,  # SECURITY: answer not sent at fetch time
-        options=q.options,
+        options=q.choices,
         visual_svg=q.visual_svg,
         visual_requirement=q.visual_requirement,
         skill_id=q.skill_id,
@@ -157,7 +157,7 @@ def next_question(
         topic=q.topic,
         difficulty_tier=q.difficulty_tier,
         irt_b=q.irt_b,
-        hints=q.hints.model_dump() if q.hints else None,
+        hints=q.hint_ladder.model_dump() if q.hint_ladder else None,
         diagnostics=q.diagnostics,
         concept_cluster=q.concept_cluster,
     )
@@ -173,7 +173,7 @@ def get_question(question_id: str):
         id=q.id,
         stem=q.stem,
         correct_value=None,  # SECURITY: answer not sent at fetch time
-        options=q.options,
+        options=q.choices,
         visual_svg=q.visual_svg,
         visual_requirement=q.visual_requirement,
         skill_id=q.skill_id,
@@ -181,7 +181,7 @@ def get_question(question_id: str):
         topic=q.topic,
         difficulty_tier=q.difficulty_tier,
         irt_b=q.irt_b,
-        hints=q.hints.model_dump() if q.hints else None,
+        hints=q.hint_ladder.model_dump() if q.hint_ladder else None,
         diagnostics=q.diagnostics,
         concept_cluster=q.concept_cluster,
     )
@@ -235,7 +235,7 @@ def chapter_questions(curriculum: str, grade: int, chapter: str):
                 "id": q.id,
                 "stem": q.stem,
                 # SECURITY: correct_value intentionally omitted at fetch time
-                "options": q.options,
+                "options": q.choices,
                 "skill_id": q.skill_id,
                 "difficulty_tier": q.difficulty_tier,
                 "irt_b": q.irt_b,

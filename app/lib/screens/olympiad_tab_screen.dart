@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import '../theme/kiwi_theme.dart';
-import 'olympiad_screen.dart';
 import 'pillar_home_screen.dart';
 import 'worksheet_list_screen.dart';
 import 'saved_questions_screen.dart';
@@ -21,6 +20,9 @@ class OlympiadTabScreen extends StatefulWidget {
   final void Function(int grade) onGradeChanged;
   final void Function(String topicId, String topicName) onStartPractice;
   final VoidCallback? onSmartSession;
+
+  /// Opens today's daily puzzle (wired from _AppShell's engagement data).
+  final VoidCallback? onDailyChallenge;
   final Map<String, int> topicMastery;
 
   // Greeting & stats (from _AppShell)
@@ -38,6 +40,7 @@ class OlympiadTabScreen extends StatefulWidget {
     required this.onGradeChanged,
     required this.onStartPractice,
     this.onSmartSession,
+    this.onDailyChallenge,
     this.topicMastery = const {},
     this.studentName = '',
     this.streak = 0,
@@ -262,6 +265,7 @@ class _OlympiadTabScreenState extends State<OlympiadTabScreen> {
       userId: widget.userId,
       selectedGrade: widget.selectedGrade,
       onGradeChanged: widget.onGradeChanged,
+      onDailyChallenge: widget.onDailyChallenge,
     );
   }
 

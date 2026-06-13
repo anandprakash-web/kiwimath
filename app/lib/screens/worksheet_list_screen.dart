@@ -1,10 +1,3 @@
-// ============================================================================
-// DEPRECATED — Olympiad v2 rework (May 2026)
-// This screen is archived at lib/screens/archive/worksheet_list_screen.dart
-// DPP content is folded into the new 4-pillar Olympiad worksheets.
-// Will be removed after v2 migration is complete.
-// ============================================================================
-
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 

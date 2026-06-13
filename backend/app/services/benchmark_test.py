@@ -307,6 +307,17 @@ class BenchmarkTestService:
         )
 
         all_test_ids = anchor_ids + non_anchor_ids
+
+        # Graceful degradation: if the K/A/R blueprint couldn't fill all 20
+        # slots (sparse competency/topic buckets in the grade-filtered pool),
+        # top up from the nearest difficulty/competency bucket within the
+        # allowed grades so the test is always BENCHMARK_TEST_LENGTH long
+        # whenever the pool has enough questions.
+        if len(all_test_ids) < BENCHMARK_TEST_LENGTH:
+            all_test_ids = self._top_up_items(
+                grade_questions, all_test_ids, exclude_ids, BENCHMARK_TEST_LENGTH
+            )
+
         if len(all_test_ids) < BENCHMARK_TEST_LENGTH // 2:
             logger.warning(f"Not enough questions for benchmark test (got {len(all_test_ids)})")
             return None
@@ -352,8 +363,12 @@ class BenchmarkTestService:
             qid = q.get('id', '')
             if qid in exclude_ids:
                 continue
-            irt_a = q.get('irt_a', 1.0)
-            irt_b = q.get('irt_b', 0.0)
+            # Questions may carry irt_a/irt_b keys explicitly set to None
+            # (Optional fields on QuestionV2) — treat None as default.
+            irt_a = q.get('irt_a')
+            irt_b = q.get('irt_b')
+            irt_a = 1.0 if irt_a is None else irt_a
+            irt_b = 0.0 if irt_b is None else irt_b
             comp = q.get('competency_level', 'K')
 
             if irt_a >= a_min and b_min <= irt_b <= b_max:
@@ -418,6 +433,50 @@ class BenchmarkTestService:
                     break
 
         return selected[:count]
+
+    def _top_up_items(
+        self,
+        pool: List[Dict],
+        selected_ids: List[str],
+        exclude_ids: Set[str],
+        target_len: int,
+    ) -> List[str]:
+        """Fill remaining test slots from the nearest difficulty/competency bucket.
+
+        Called when the strict K/A/R blueprint can't fill every slot from the
+        grade-filtered pool. Prefers questions from under-represented
+        competencies, breaking ties by proximity to the pool's median
+        difficulty, so the filled test stays as close to the blueprint as
+        the pool allows.
+        """
+        selected = list(selected_ids)
+        taken = set(selected) | set(exclude_ids)
+        remaining = [q for q in pool if q.get('id') and q.get('id') not in taken]
+        if not remaining:
+            return selected
+
+        # Median difficulty of the grade pool as the anchor point
+        diffs = sorted(q.get('difficulty_score', 100) for q in pool)
+        median_diff = diffs[len(diffs) // 2]
+
+        # Competency counts among the current selection
+        by_id = {q.get('id'): q for q in pool}
+        comp_counts: Dict[str, int] = defaultdict(int)
+        for qid in selected:
+            q = by_id.get(qid)
+            if q:
+                comp_counts[q.get('competency_level', 'K')] += 1
+
+        while len(selected) < target_len and remaining:
+            remaining.sort(key=lambda q: (
+                comp_counts[q.get('competency_level', 'K')],
+                abs(q.get('difficulty_score', 100) - median_diff),
+            ))
+            q = remaining.pop(0)
+            selected.append(q['id'])
+            comp_counts[q.get('competency_level', 'K')] += 1
+
+        return selected
 
     def score_benchmark(
         self,
@@ -532,9 +591,12 @@ class BenchmarkTestService:
 
             for r in responses:
                 q = q_map.get(r.get('question_id', ''), {})
-                a = q.get('irt_a', 1.0)
-                b = q.get('irt_b', 0.0)
-                c = q.get('irt_c', 0.25)
+                a = q.get('irt_a')
+                b = q.get('irt_b')
+                c = q.get('irt_c')
+                a = 1.0 if a is None else a
+                b = 0.0 if b is None else b
+                c = 0.25 if c is None else c
                 correct = 1.0 if r.get('correct', False) else 0.0
 
                 # P(correct | theta)

@@ -430,7 +430,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
               mainAxisSpacing: 14,
               childAspectRatio: 1.6,
               children: List.generate(
-                5,
+                6,
                 (i) => _GradeCard(
                   grade: i + 1,
                   onTap: () => _onGradeSelected(i + 1),

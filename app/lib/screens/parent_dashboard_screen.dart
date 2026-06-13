@@ -20,6 +20,9 @@ class ParentDashboardScreen extends StatefulWidget {
   final bool embedded;
   final int? weeklyGoal;
   final String? curriculum;
+
+  /// Child's selected grade — used for the diagnostic benchmark test.
+  final int grade;
   final Clan? childClan;
   final ChallengeInfo? activeChallengeInfo;
   final ChallengeProgress? challengeProgressInfo;
@@ -31,6 +34,7 @@ class ParentDashboardScreen extends StatefulWidget {
     this.embedded = false,
     this.weeklyGoal,
     this.curriculum,
+    this.grade = 1,
     this.childClan,
     this.activeChallengeInfo,
     this.challengeProgressInfo,
@@ -94,11 +98,34 @@ class _ParentDashboardScreenState extends State<ParentDashboardScreen> {
     return Scaffold(
       backgroundColor: colors.background,
       body: SafeArea(
-        child: _loading
-            ? Center(child: CircularProgressIndicator(color: colors.primary))
-            : _error != null
-                ? _buildError()
-                : _buildBody(),
+        child: Column(
+          children: [
+            // Close affordance — this screen has no AppBar/back button.
+            // Hidden when embedded inside a tab (nothing to pop).
+            if (!widget.embedded)
+              Align(
+                alignment: Alignment.centerLeft,
+                child: Padding(
+                  padding: const EdgeInsets.fromLTRB(4, 2, 4, 0),
+                  child: IconButton(
+                    icon: Icon(Icons.close_rounded,
+                        size: 22, color: colors.textMuted),
+                    tooltip: 'Close',
+                    onPressed: () => Navigator.of(context).maybePop(),
+                  ),
+                ),
+              ),
+            Expanded(
+              child: _loading
+                  ? Center(
+                      child:
+                          CircularProgressIndicator(color: colors.primary))
+                  : _error != null
+                      ? _buildError()
+                      : _buildBody(),
+            ),
+          ],
+        ),
       ),
     );
   }
@@ -494,7 +521,7 @@ class _ParentDashboardScreenState extends State<ParentDashboardScreen> {
           MaterialPageRoute(
             builder: (_) => BenchmarkTestScreen(
               userId: widget.userId,
-              grade: 1,
+              grade: widget.grade,
               childName: widget.childName,
               benchmarkType: 'diagnostic',
               onComplete: _load,

@@ -59,7 +59,7 @@ class HintLadder(BaseModel):
 _QUESTION_ID_RE = re.compile(
     r"^(?:"
     r"T[1-8]-\d{3,4}[a-z]?(?:-G\d(?:-L\d)?)?"   # Olympiad (original + grade-suffixed + variety copies)
-    r"|(?:NCERT|SING|USCC|ICSE|IGCSE)-G[1-6]-\d{3,4}(?:-G\d)?"  # Curriculum (+ grade copies)
+    r"|(?:NCERT|SING|USCC|ICSE|IGCSE)-G[1-6]-(?:[A-Z]{2,6}-)?\d{1,4}(?:-G\d)?"  # Curriculum (+ grade copies, + sub-banks like SING-G1-SMC-021)
     r"|GEN-G\d[MD]-\d{3}"                         # Generated multiplication/division
     r"|PCT-G5-\d{3}"                              # Generated percentage/ratio
     r"|A[1-6]-[A-Z]{2,4}-\d{4}"                  # v4 adaptive (A1-ADD-0001)
@@ -78,6 +78,18 @@ class QuestionV2(BaseModel):
     original_stem: Optional[str] = None
     choices: List[str] = Field(default_factory=list)
     correct_answer: int = Field(default=0, ge=0)  # MCQ: index 0-3, Integer/drag_drop: actual value
+
+    @field_validator("correct_answer", mode="before")
+    @classmethod
+    def coerce_letter_answer(cls, v: Any) -> Any:
+        """Accept letter answers ('A'-'E', case-insensitive) and convert to a
+        0-based choice index (A=0, B=1, ...). Some content packs (e.g. the
+        Singapore SMC bank) store the answer as a letter."""
+        if isinstance(v, str):
+            s = v.strip()
+            if len(s) == 1 and s.upper() in "ABCDE":
+                return ord(s.upper()) - ord("A")
+        return v
     difficulty_tier: str  # easy, medium, hard, advanced, expert
     difficulty_score: int = Field(..., ge=1, le=500)
     visual_svg: Optional[str] = None

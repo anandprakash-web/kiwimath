@@ -632,7 +632,24 @@ async def claim_daily_reward(
 
     reward = _rewards_store.get(uid)
     if not reward:
-        raise HTTPException(404, "Reward data not found for this player")
+        # Brand-new user: initialize a default reward state so day-1 users
+        # can claim their first daily reward instead of getting a 404.
+        reward = {
+            "uid": uid,
+            "grade": 1,
+            "stickers_collected": [],
+            "mystery_boxes_available": 0,
+            "puzzles_completed_today": 0,
+            "badges": [],
+            "total_gems": 0,
+            "total_xp": 0,
+            "streak_freezes": 0,
+            "claimed_days": [],
+            "current_cycle_start": 0,
+            "daily_claim_count": 0,
+            "last_claim_date": None,
+        }
+        _rewards_store.set(uid, reward)
 
     today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
 

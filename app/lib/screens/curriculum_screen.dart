@@ -5,13 +5,18 @@ import '../services/companion_service.dart';
 
 /// Curriculum tab — multi-curriculum chapter browser.
 ///
-/// Sub-tabs: Cambridge, NCERT, Singapore, ICSE.
-/// Loads chapters from API per curriculum + grade combination.
+/// Sub-tabs: Cambridge, NCERT, Singapore, ICSE, US Common Core.
+/// Loads chapters from the v4 school API per curriculum + grade combination.
 class CurriculumScreen extends StatefulWidget {
   final String userId;
   final int selectedGrade;
   final void Function(int grade) onGradeChanged;
-  final void Function(String topicId, String topicName, {String? curriculum}) onChapterTap;
+  final void Function(
+    String topicId,
+    String topicName, {
+    String? curriculum,
+    List<Map<String, dynamic>>? questions,
+  }) onChapterTap;
   final CompanionService? companionService;
 
   const CurriculumScreen({
@@ -28,14 +33,17 @@ class CurriculumScreen extends StatefulWidget {
 }
 
 class _CurriculumScreenState extends State<CurriculumScreen> {
+  // IDs are the v4 school API curriculum keys (content-v4/school/<key>/).
+  // Display: IGCSE is shown as "Cambridge" (Cambridge Primary).
   static const _curricula = [
-    _CurriculumInfo(id: 'cambridge', label: 'Cambridge', icon: Icons.school_outlined),
+    _CurriculumInfo(id: 'igcse', label: 'Cambridge', icon: Icons.school_outlined),
     _CurriculumInfo(id: 'ncert', label: 'NCERT', icon: Icons.menu_book_outlined),
     _CurriculumInfo(id: 'singapore', label: 'Singapore', icon: Icons.auto_stories_outlined),
     _CurriculumInfo(id: 'icse', label: 'ICSE', icon: Icons.library_books_outlined),
+    _CurriculumInfo(id: 'us-common-core', label: 'US Common Core', icon: Icons.flag_outlined),
   ];
 
-  String _selectedCurriculum = 'cambridge';
+  String _selectedCurriculum = 'igcse';
   List<Map<String, dynamic>> _chapters = [];
   bool _loading = false;
   String? _error;
@@ -60,7 +68,7 @@ class _CurriculumScreenState extends State<CurriculumScreen> {
       _error = null;
     });
     try {
-      final chapters = await ApiClient().getChapters(
+      final chapters = await ApiClient().fetchSchoolChaptersV4(
         curriculum: _selectedCurriculum,
         grade: widget.selectedGrade,
       );
@@ -214,21 +222,84 @@ class _CurriculumScreenState extends State<CurriculumScreen> {
       separatorBuilder: (_, __) => const SizedBox(height: 10),
       itemBuilder: (context, index) {
         final chapter = _chapters[index];
+        final questionCount = chapter['question_count'] as int? ??
+            chapter['num_questions'] as int? ??
+            0;
         return _ChapterCard(
           chapter: chapter,
           index: index,
           tier: tier,
-          onTap: () {
-            final topicId = chapter['id']?.toString() ??
-                chapter['topic_id']?.toString() ??
-                '${_selectedCurriculum}-g${widget.selectedGrade}-ch${index + 1}';
-            final name = chapter['name']?.toString() ??
-                chapter['title']?.toString() ??
-                'Chapter ${index + 1}';
-            widget.onChapterTap(topicId, name, curriculum: _selectedCurriculum);
-          },
+          enabled: questionCount > 0,
+          onTap: () => _onChapterSelected(chapter, index),
         );
       },
+    );
+  }
+
+  /// Tap handler: fetch the chapter's question list from the v4 bank,
+  /// then hand the full questions to the question screen as a session plan.
+  /// Chapters that resolve to zero questions show "coming soon" instead of
+  /// navigating into an error.
+  Future<void> _onChapterSelected(
+      Map<String, dynamic> chapter, int index) async {
+    final name = chapter['name']?.toString() ??
+        chapter['title']?.toString() ??
+        'Chapter ${index + 1}';
+    final adaptiveTopics = chapter['adaptive_topic_ids'] as List<dynamic>?;
+    final topicId = (adaptiveTopics != null && adaptiveTopics.isNotEmpty)
+        ? adaptiveTopics.first.toString()
+        : '${_selectedCurriculum}-g${widget.selectedGrade}-ch${index + 1}';
+
+    final questionCount = chapter['question_count'] as int? ?? 0;
+    if (questionCount <= 0) {
+      _showComingSoon(name);
+      return;
+    }
+
+    // Loading overlay while fetching the chapter's question list.
+    showDialog(
+      context: context,
+      barrierDismissible: false,
+      builder: (_) => const Center(child: CircularProgressIndicator()),
+    );
+
+    List<Map<String, dynamic>> questions;
+    try {
+      questions = await ApiClient().fetchChapterQuestionsV4(
+        curriculum: _selectedCurriculum,
+        grade: widget.selectedGrade,
+        chapter: name,
+      );
+    } catch (e) {
+      if (!mounted) return;
+      Navigator.of(context).pop(); // dismiss loading
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('Could not load this chapter. Check your connection and try again.'),
+        ),
+      );
+      return;
+    }
+
+    if (!mounted) return;
+    Navigator.of(context).pop(); // dismiss loading
+
+    if (questions.isEmpty) {
+      _showComingSoon(name);
+      return;
+    }
+
+    widget.onChapterTap(
+      topicId,
+      name,
+      curriculum: _selectedCurriculum,
+      questions: questions,
+    );
+  }
+
+  void _showComingSoon(String chapterName) {
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(content: Text('$chapterName is coming soon!')),
     );
   }
 }
@@ -373,11 +444,16 @@ class _ChapterCard extends StatelessWidget {
   final KiwiTier tier;
   final VoidCallback onTap;
 
+  /// When false (chapter has no questions yet) the card is greyed out and
+  /// shows "Coming soon" — the tap shows a friendly snackbar upstream.
+  final bool enabled;
+
   const _ChapterCard({
     required this.chapter,
     required this.index,
     required this.tier,
     required this.onTap,
+    this.enabled = true,
   });
 
   @override
@@ -405,7 +481,9 @@ class _ChapterCard extends StatelessWidget {
 
     return GestureDetector(
       onTap: onTap,
-      child: Container(
+      child: Opacity(
+        opacity: enabled ? 1.0 : 0.55,
+        child: Container(
         padding: shape.cardPadding,
         decoration: BoxDecoration(
           color: colors.cardBg,
@@ -456,11 +534,12 @@ class _ChapterCard extends StatelessWidget {
                   // Stats
                   Row(
                     children: [
-                      Icon(Icons.quiz_outlined,
+                      Icon(
+                          enabled ? Icons.quiz_outlined : Icons.hourglass_empty,
                           size: 14, color: colors.textMuted),
                       const SizedBox(width: 4),
                       Text(
-                        '$questionCount questions',
+                        enabled ? '$questionCount questions' : 'Coming soon',
                         style: TextStyle(
                           fontSize: typo.chipSize - 1,
                           color: colors.textMuted,
@@ -509,6 +588,7 @@ class _ChapterCard extends StatelessWidget {
               size: 24,
             ),
           ],
+        ),
         ),
       ),
     );
