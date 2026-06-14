@@ -77,11 +77,9 @@ def internal_key_matches(provided: str) -> bool:
 
 
 def _internal_request(request: Request) -> bool:
-    provided = (
-        request.headers.get("X-Internal-Key")
-        or request.query_params.get("api_key")
-        or ""
-    )
+    # Header-only: the old `?api_key=` query fallback leaked the secret into
+    # access logs. Cloud Scheduler sends X-Internal-Key (see clan_cron.yaml).
+    provided = request.headers.get("X-Internal-Key") or ""
     return internal_key_matches(provided)
 
 

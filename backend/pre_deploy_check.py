@@ -101,15 +101,19 @@ for topic in expected_topics:
             svg = q.get('visual_svg')
             if svg:
                 total_visuals += 1
-                svg_path = os.path.join(topic_path, 'visuals', svg)
-                if not os.path.exists(svg_path):
-                    # Case-insensitive fallback
-                    visuals_dir = os.path.join(topic_path, 'visuals')
-                    if os.path.isdir(visuals_dir):
-                        actual = [f for f in os.listdir(visuals_dir) if f.lower() == svg.lower()]
-                        if not actual:
-                            missing_svgs += 1
-                            errors.append(f"{qid}: SVG '{svg}' not found")
+                # Inline SVG (embedded markup) is self-contained — no file to resolve.
+                if isinstance(svg, str) and svg.lstrip().startswith('<'):
+                    pass
+                else:
+                    svg_path = os.path.join(topic_path, 'visuals', svg)
+                    if not os.path.exists(svg_path):
+                        # Case-insensitive fallback
+                        visuals_dir = os.path.join(topic_path, 'visuals')
+                        if os.path.isdir(visuals_dir):
+                            actual = [f for f in os.listdir(visuals_dir) if f.lower() == svg.lower()]
+                            if not actual:
+                                missing_svgs += 1
+                                errors.append(f"{qid}: SVG '{svg}' not found")
 
     topic_counts[topic] = topic_total
 
@@ -120,8 +124,39 @@ for svg_file in glob.glob(os.path.join(content_dir, 'topic-*/visuals/*.svg')):
     h = hashlib.md5(content.encode()).hexdigest()
     svg_hashes[h].append(os.path.basename(svg_file))
 
+# --- Remapped Level/Grade banks (served by /v3 via content_store_level) ---
+level_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'content-live'))
+oly_dir = os.path.join(level_root, 'olympiad')
+cur_dir = os.path.join(level_root, 'curriculum')
+level_oly = level_cur = 0
+level_by_level = {}
+if os.path.isdir(oly_dir):
+    for i in range(1, 9):
+        lv = f'L{i}'; n = 0
+        for f in glob.glob(os.path.join(oly_dir, lv, f'{lv}_*.json')):
+            try:
+                n += len(json.load(open(f)).get('questions', []))
+            except Exception as e:
+                errors.append(f"olympiad {os.path.basename(f)}: {e}")
+        level_by_level[lv] = n; level_oly += n
+    if level_oly < 17000:
+        warnings.append(f"olympiad bank only {level_oly} questions (expected ~18,099)")
+else:
+    warnings.append("content-live/olympiad not found — /v3 olympiad will be empty")
+if os.path.isdir(cur_dir):
+    for f in glob.glob(os.path.join(cur_dir, '*', 'grade*', 'questions.json')):
+        try:
+            level_cur += json.load(open(f)).get('total_questions', 0)
+        except Exception as e:
+            errors.append(f"curriculum {f}: {e}")
+    if level_cur < 9000:
+        warnings.append(f"curriculum bank only {level_cur} questions (expected ~10,340)")
+else:
+    warnings.append("content-live/curriculum not found — /v3 school will be empty")
+
 # Report
 print(f"Questions: {total_questions} across {len(topic_counts)} topics")
+print(f"Level/Grade banks (/v3): olympiad={level_oly} {level_by_level}, curriculum={level_cur}")
 for tid, count in sorted(topic_counts.items()):
     print(f"  {tid}: {count}")
 

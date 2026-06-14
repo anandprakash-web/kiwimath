@@ -48,9 +48,11 @@ from app.api.bookmarks import router as bookmarks_router
 from app.api.wavebook import router as wavebook_router
 from app.api.questions_v2 import router as questions_v2_router
 from app.api.questions_v4 import router as questions_v4_router
+from app.api.level import router as level_router
 from app.api.user import router as user_router
 from app.services.content_store_v2 import bootstrap_v2_from_env, store_v2
 from app.services.content_store_v4 import bootstrap_v4_from_env, store_v4
+from app.services.content_store_level import bootstrap_level_from_env, level_store
 from app.services.pillar_content_store import init_pillar_store
 from app.services.firestore_service import is_firestore_available
 from app.services.ncert_content_store import init_ncert_store, ncert_store
@@ -103,6 +105,7 @@ def create_app() -> FastAPI:
     # Routers — user-facing (require a valid Firebase ID token).
     app.include_router(questions_v2_router, dependencies=user_auth)
     app.include_router(questions_v4_router, dependencies=user_auth)
+    app.include_router(level_router, dependencies=user_auth)
     app.include_router(onboarding_router, dependencies=user_auth)
     app.include_router(parent_router, dependencies=user_auth)
     app.include_router(learning_path_router, dependencies=user_auth)
@@ -225,6 +228,12 @@ def create_app() -> FastAPI:
         except Exception as e:
             logger.warning(f"V4 store init failed (non-fatal): {e}")
         try:
+            bootstrap_level_from_env()
+            ls = level_store.stats()
+            logger.info(f"Level/Grade content loaded: olympiad={ls['olympiad_total']} curriculum={ls['curriculum_total']}")
+        except Exception as e:
+            logger.warning(f"Level store init failed (non-fatal): {e}")
+        try:
             init_ncert_store()
             logger.info(f"NCERT content: {ncert_store.total_questions} questions loaded")
         except Exception as e:
@@ -275,9 +284,10 @@ def create_app() -> FastAPI:
         v4_stats = store_v4.stats()
         return {
             "status": "healthy",
-            "version": "2.0.0",
+            "version": "2.1.0",
             "content_v2": v2_stats,
             "content_v4": v4_stats,
+            "content_level": level_store.stats(),
             "firestore": "connected" if is_firestore_available() else "in-memory",
         }
 

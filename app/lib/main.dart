@@ -1079,6 +1079,11 @@ class _AppShellState extends State<_AppShell> {
   void _onGradeChanged(int grade) {
     if (grade == _selectedGrade) return;
     setState(() => _selectedGrade = grade);
+    // Persist the grade change so it survives a restart (previously lost —
+    // _loadProfile would reset to the onboarding grade).
+    _api
+        .updateStudentProfile(userId: widget.userId, grade: grade)
+        .catchError((Object e) => <String, dynamic>{});
   }
 
   Future<void> _signOut() async {

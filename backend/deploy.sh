@@ -73,6 +73,22 @@ if [ "$V4_FOUND" = false ]; then
     echo "WARNING: No v4 content folder found. Deploying without adaptive questions."
 fi
 
+# Copy the remapped Level/Grade banks (olympiad L1-L8 + curriculum by grade)
+# produced by the 2026-06-13 reorg. Served by content_store_level.py / /v3.
+LEVEL_FOUND=false
+for lv_path in "../content-live" "../../content-live"; do
+    if [ -d "$lv_path/olympiad" ] && [ -d "$lv_path/curriculum" ]; then
+        cp -r "$lv_path/olympiad" "$TMPDIR/backend/content-olympiad"
+        cp -r "$lv_path/curriculum" "$TMPDIR/backend/content-curriculum"
+        echo "    (Level/Grade content baked from $lv_path)"
+        LEVEL_FOUND=true
+        break
+    fi
+done
+if [ "$LEVEL_FOUND" = false ]; then
+    echo "WARNING: No content-live/olympiad+curriculum found. Deploying without the remapped Level/Grade banks (/v3 endpoints will be empty)."
+fi
+
 # Build from the temp context with content included.
 cd "$TMPDIR/backend"
 cat >> Dockerfile <<'BAKE'
@@ -87,6 +103,16 @@ cat >> Dockerfile <<'BAKE'
 
 # Bake v4 adaptive content into image (added by deploy.sh).
 COPY content-v4/ /content-v4/
+BAKE
+fi
+
+# Add remapped Level/Grade content if found.
+if [ "$LEVEL_FOUND" = true ]; then
+cat >> Dockerfile <<'BAKE'
+
+# Bake remapped Level/Grade content into image (added by deploy.sh).
+COPY content-olympiad/ /content-olympiad/
+COPY content-curriculum/ /content-curriculum/
 BAKE
 fi
 
@@ -109,13 +135,13 @@ gcloud run deploy "$SERVICE_NAME" \
     --region "$GCP_REGION" \
     --platform managed \
     --allow-unauthenticated \
-    --memory 2Gi \
+    --memory 4Gi \
     --cpu 1 \
     --min-instances 1 \
     --max-instances 10 \
     --concurrency 80 \
     --timeout 300 \
-    --set-env-vars "KIWIMATH_V2_CONTENT_DIR=/content-v2,KIWIMATH_V4_CONTENT_DIR=/content-v4,KIWIMATH_ENV=production" \
+    --set-env-vars "KIWIMATH_V2_CONTENT_DIR=/content-v2,KIWIMATH_V4_CONTENT_DIR=/content-v4,KIWIMATH_OLYMPIAD_CONTENT_DIR=/content-olympiad,KIWIMATH_CURRICULUM_CONTENT_DIR=/content-curriculum,KIWIMATH_ENV=production" \
     --port 8000
 
 # Step 5: Print the URL.

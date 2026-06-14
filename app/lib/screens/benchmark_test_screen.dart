@@ -69,12 +69,14 @@ class _BenchmarkTestScreenState extends State<BenchmarkTestScreen> {
       _questions = (data['questions'] as List<dynamic>? ?? [])
           .map((e) => Map<String, dynamic>.from(e as Map))
           .toList();
+      if (!mounted) return;
       if (_questions.isEmpty) {
         setState(() { _error = 'No questions available for the test.'; });
         return;
       }
       setState(() { _phase = _BenchmarkPhase.intro; });
     } catch (e) {
+      if (!mounted) return;
       setState(() { _error = 'Could not create the test. Please try again.'; });
     }
   }
@@ -138,8 +140,10 @@ class _BenchmarkTestScreenState extends State<BenchmarkTestScreen> {
         testId: _testId,
         responses: _responses,
       );
+      if (!mounted) return;
       setState(() { _results = result; _phase = _BenchmarkPhase.results; });
     } catch (e) {
+      if (!mounted) return;
       setState(() {
         _error = 'Could not submit the test. Please try again.';
         _phase = _BenchmarkPhase.loading;
