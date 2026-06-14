@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Kiwimath — Prototype</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;600;700;800;900&display=swap');
+:root{
+  --bg:#FAFAF7; --card:#FFFFFF; --ink:#191D26; --muted:#7C8597; --faint:#A7AEBC; --line:#ECEAE3;
+  --orange:#FF6D00; --orange-d:#E65100; --orange-l:#FFF2E6;
+  --nt:#3D7DF6; --alg:#8B5CF6; --geo:#0FB17E; --com:#F59E0B;
+  --nt-l:#EAF1FE; --alg-l:#F2ECFE; --geo-l:#E5F7F0; --com-l:#FEF4E0;
+  --green:#0FB17E; --green-l:#E5F7F0; --blue:#3D7DF6; --blue-l:#EAF1FE;
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;height:100%}
+body{font-family:'Nunito',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  background:radial-gradient(1100px 700px at 50% -8%, #FFE7CE 0%, #F3ECFB 48%, #E7ECFF 100%);
+  display:flex;align-items:center;justify-content:center;min-height:100vh;padding:18px;color:var(--ink)}
+h1,h2,h3,.display{font-family:'Baloo 2','Nunito',sans-serif;margin:0;letter-spacing:.2px}
+.phone{width:393px;max-width:96vw;height:min(852px,94vh);background:var(--bg);border-radius:46px;
+  box-shadow:0 30px 80px rgba(60,30,10,.26),0 0 0 11px #14161d,0 0 0 13px #2a2d38;
+  overflow:hidden;position:relative;display:flex;flex-direction:column}
+.statusbar{height:44px;display:flex;align-items:center;justify-content:space-between;padding:0 28px 0 30px;
+  font-size:14px;font-weight:800;flex:0 0 auto}
+.statusbar .r{display:flex;gap:6px;align-items:center;color:var(--ink)}
+.notch{position:absolute;top:11px;left:50%;transform:translateX(-50%);width:116px;height:28px;background:#14161d;border-radius:18px;z-index:5}
+.screen{flex:1 1 auto;overflow-y:auto;overflow-x:hidden;padding:2px 0 98px}
+.screen::-webkit-scrollbar{display:none}
+.appbar{padding:10px 20px 2px;display:flex;align-items:center;gap:12px}
+.appbar .back{width:38px;height:38px;border-radius:12px;border:1px solid var(--line);background:#fff;display:flex;align-items:center;justify-content:center;cursor:pointer;color:var(--ink)}
+.appbar h1{font-size:26px;font-weight:800}
+.appbar .sub{color:var(--muted);font-weight:700;font-size:13px;margin-top:1px}
+.wrap{padding:6px 20px}
+.eyebrow{font-size:12px;font-weight:800;color:var(--faint);text-transform:uppercase;letter-spacing:1px;margin:20px 4px 11px}
+.row{display:flex;align-items:center;gap:13px}
+.grow{flex:1 1 auto;min-width:0}
+.title{font-weight:800;font-size:16px;line-height:1.15}
+.meta{color:var(--muted);font-weight:700;font-size:13px;margin-top:3px}
+.muted{color:var(--muted)} .faint{color:var(--faint)}
+svg{display:block}
+/* journey (levels) */
+.journey{position:relative;padding-left:6px}
+.lvl{display:flex;gap:14px;align-items:stretch;cursor:pointer;margin-bottom:10px}
+.lvl .railwrap{display:flex;flex-direction:column;align-items:center;width:48px;flex:0 0 auto}
+.node{width:48px;height:48px;border-radius:16px;display:flex;align-items:center;justify-content:center;
+  font-family:'Baloo 2';font-weight:800;font-size:18px;color:#fff;background:linear-gradient(135deg,#FF9A3D,#FF6D00);position:relative;z-index:2}
+.node.done{background:linear-gradient(135deg,#21C796,#0FB17E)}
+.node.locked{background:#E4E6EC;color:#AEB4C1}
+.rail{width:3px;flex:1;background:var(--line);margin:3px 0}
+.lvl .body{flex:1;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:13px 15px;display:flex;align-items:center;gap:12px}
+.lvl.locked .body{background:#F7F7F4}
+.lvl:active .body{transform:scale(.99)}
+.chip{display:inline-flex;align-items:center;gap:5px;font-weight:800;font-size:11.5px;padding:4px 9px;border-radius:999px}
+.chip.go{background:var(--orange-l);color:var(--orange-d)} .chip.done{background:var(--green-l);color:var(--green)} .chip.soon{background:#EEF0F4;color:var(--faint)}
+/* hero */
+.hero{margin:10px 20px 4px;border-radius:22px;padding:18px;color:#fff;position:relative;overflow:hidden;background:linear-gradient(135deg,#FF8A2B,#FF6D00 60%,#E65100)}
+.hero h2{font-size:20px;font-weight:800} .hero p{margin:6px 0 0;font-weight:700;opacity:.95;font-size:13px}
+.hero .cta{margin-top:13px;display:inline-flex;align-items:center;gap:7px;background:#fff;color:var(--orange-d);font-weight:800;font-size:14px;padding:10px 16px;border-radius:13px;border:none;cursor:pointer}
+.hero .mk{position:absolute;right:-14px;bottom:-24px;opacity:.16}
+/* topic grid */
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:11px}
+.tcard{background:#fff;border:1px solid var(--line);border-radius:18px;padding:14px;cursor:pointer}
+.tcard:active{transform:scale(.98)}
+.tglyph{width:38px;height:38px;border-radius:11px;display:flex;align-items:center;justify-content:center;margin-bottom:24px}
+.tname{font-weight:800;font-size:14.5px;line-height:1.18}
+.tprog{display:flex;align-items:center;gap:7px;margin-top:9px}
+.tbar{flex:1;height:6px;border-radius:6px;background:#EEF0F4;overflow:hidden}
+.tbar>i{display:block;height:100%;border-radius:6px}
+.tpct{font-size:11px;font-weight:800;color:var(--faint)}
+.tcard.empty{background:#F7F7F4;cursor:default}.tcard.empty .tname{color:#AEB4C1}
+/* chips/seg */
+.chips{display:flex;gap:8px;overflow-x:auto;padding:6px 20px 2px;scrollbar-width:none}.chips::-webkit-scrollbar{display:none}
+.bchip{flex:0 0 auto;border:1.5px solid var(--line);background:#fff;color:var(--muted);font-weight:800;font-size:13px;padding:9px 14px;border-radius:999px;cursor:pointer;white-space:nowrap}
+.bchip.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.seg{display:flex;gap:6px;padding:8px 20px}
+.seg .g{flex:1;text-align:center;border:1.5px solid var(--line);background:#fff;font-weight:800;border-radius:12px;padding:9px 0;cursor:pointer;font-size:14px;color:var(--muted)}
+.seg .g.on{background:var(--orange-l);border-color:var(--orange);color:var(--orange-d)}
+/* list */
+.li{display:flex;align-items:center;gap:13px;background:#fff;border:1px solid var(--line);border-radius:15px;padding:13px 14px;margin-bottom:9px;cursor:pointer}
+.li .ic{width:38px;height:38px;border-radius:11px;background:var(--orange-l);color:var(--orange-d);display:flex;align-items:center;justify-content:center;flex:0 0 auto}
+.li .num{width:26px;height:26px;border-radius:8px;background:#F0F1F5;color:var(--muted);font-weight:800;font-size:13px;display:flex;align-items:center;justify-content:center;flex:0 0 auto}
+/* academic height */
+.ah{margin:8px 20px;border-radius:22px;padding:18px;background:#fff;border:1px solid var(--line)}
+.ah .verdict{font-family:'Baloo 2';font-size:24px;font-weight:800;line-height:1.1}
+.ah .scorechip{display:inline-flex;align-items:center;gap:6px;font-weight:800;font-size:13px;padding:5px 11px;border-radius:999px;background:var(--green-l);color:var(--green)}
+.gauge{height:14px;border-radius:999px;margin:16px 0 6px;display:flex;overflow:hidden;position:relative}
+.gauge .z{height:100%} .gz1{background:#FBD9BE}.gz2{background:#A9E6CE}.gz3{background:#BBD2FB}
+.gmark{position:absolute;top:-6px;width:4px;height:26px;border-radius:3px;background:var(--ink);transform:translateX(-2px)}
+.glabels{display:flex;justify-content:space-between;font-size:11px;font-weight:800;color:var(--faint)}
+.ah .ex{margin-top:14px;background:#F8F8F5;border:1px solid var(--line);border-radius:13px;padding:12px 13px;font-size:12.5px;font-weight:600;color:var(--muted);line-height:1.5}
+.linkbtn{background:none;border:none;color:var(--orange-d);font-weight:800;font-size:12.5px;cursor:pointer;padding:0;display:inline-flex;align-items:center;gap:5px}
+/* strands */
+.strands{display:grid;grid-template-columns:1fr 1fr;gap:11px}
+.scard{background:#fff;border:1px solid var(--line);border-radius:17px;padding:14px}
+.scard .top{display:flex;align-items:center;gap:11px}
+.ringwrap{position:relative;width:46px;height:46px;flex:0 0 auto}
+.ringwrap span{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:'Baloo 2';font-weight:800;font-size:13px}
+.slabel{font-weight:800;font-size:12px;margin-top:11px;display:inline-flex;align-items:center;gap:5px;padding:4px 9px;border-radius:999px}
+/* practice */
+.qcard{margin:6px 20px;background:#fff;border:1px solid var(--line);border-radius:20px;padding:18px}
+.opt{display:flex;align-items:center;gap:12px;border:1.5px solid var(--line);border-radius:14px;padding:13px 14px;margin-top:9px;cursor:pointer;font-weight:700;background:#fff}
+.opt .k{width:27px;height:27px;border-radius:8px;background:#F2F3F6;color:var(--muted);font-weight:800;display:flex;align-items:center;justify-content:center;font-size:13px}
+.opt.correct{background:var(--green-l);border-color:var(--green)} .opt.correct .k{background:var(--green);color:#fff}
+.opt.wrong{background:#FDECEC;border-color:#EF4444} .opt.wrong .k{background:#EF4444;color:#fff}
+.fbar{margin:12px 20px;border-radius:14px;padding:12px 15px;font-weight:800;display:none;font-size:14px}
+.fbar.ok{background:var(--green-l);color:#0B7C5B;display:block}.fbar.no{background:#FDECEC;color:#C0392B;display:block}
+.ghost{background:#fff;border:1.5px solid var(--line);border-radius:13px;padding:12px 16px;font-weight:800;cursor:pointer;color:var(--ink);display:flex;align-items:center;justify-content:center;gap:8px}
+.primary{background:var(--orange);color:#fff;border:none;border-radius:13px;padding:13px 18px;font-weight:800;cursor:pointer;width:100%;font-size:15px}
+.pbar{height:7px;border-radius:7px;background:#EEF0F4;overflow:hidden}.pbar>i{display:block;height:100%;border-radius:7px;background:var(--orange)}
+/* profile */
+.phead{display:flex;align-items:center;gap:14px}
+.avatar{width:62px;height:62px;border-radius:19px;background:linear-gradient(135deg,#FFB36B,#FF6D00);display:flex;align-items:center;justify-content:center;color:#fff;font-family:'Baloo 2';font-weight:800;font-size:25px;flex:0 0 auto}
+.statgrid{display:flex;gap:9px;margin-top:14px}
+.statgrid .b{flex:1;background:#F8F8F5;border-radius:14px;padding:11px;text-align:center}
+.statgrid .b b{font-family:'Baloo 2';font-size:19px;display:block}.statgrid .b span{color:var(--muted);font-weight:700;font-size:11px}
+.danger{color:#D8412F !important}.danger .ic{background:#FDEAE7;color:#D8412F}
+/* nav */
+.nav{position:absolute;left:0;right:0;bottom:0;height:82px;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);border-top:1px solid var(--line);display:flex;padding:9px 8px 22px;z-index:10}
+.nav button{flex:1;background:none;border:none;display:flex;flex-direction:column;align-items:center;gap:4px;cursor:pointer;color:#A7AEBC;font-weight:800;font-size:10.5px;padding-top:5px}
+.nav button.on{color:var(--orange)}
+.pin{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;max-width:228px;margin:14px auto}
+.pin button{background:#fff;border:1px solid var(--line);border-radius:15px;padding:15px;font-size:20px;font-weight:800;cursor:pointer;font-family:'Baloo 2';display:flex;align-items:center;justify-content:center}
+.dots{display:flex;gap:13px;justify-content:center;margin:6px 0}.dots i{width:13px;height:13px;border-radius:50%;background:#E2E6EE}.dots i.f{background:var(--orange)}
+.fade{animation:fade .22s ease}@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.sheet{position:absolute;left:0;right:0;bottom:0;background:#fff;border-radius:22px 22px 0 0;padding:18px 20px 28px;box-shadow:0 -10px 40px rgba(0,0,0,.16);z-index:20;animation:up .25s ease}
+@keyframes up{from{transform:translateY(100%)}to{transform:none}}
+.scrim{position:absolute;inset:0;background:rgba(20,22,29,.4);z-index:19;animation:fade .2s}
+.wallet{display:flex;align-items:center;gap:8px;justify-content:flex-end;padding:0 18px 4px;flex:0 0 auto}
+.wchip{display:inline-flex;align-items:center;gap:5px;font-weight:800;font-size:13px;padding:5px 10px;border-radius:999px;background:#fff;border:1px solid var(--line)}
+.wchip.flame{color:#FF6D00}.wchip.coin{color:#E68A00}.wchip.gem{color:#8B5CF6}
+.arow{display:flex;gap:10px;overflow-x:auto;padding:2px 18px 4px;scrollbar-width:none}.arow::-webkit-scrollbar{display:none}
+.award{display:flex;flex-direction:column;align-items:center;gap:6px;min-width:72px;text-align:center;flex:0 0 auto}
+.abadge{width:50px;height:50px;border-radius:15px;display:flex;align-items:center;justify-content:center;background:var(--orange-l);color:var(--orange-d)}
+.award.locked .abadge{background:#F0F1F5;color:#C2C8D2}
+.award .an{font-size:10.5px;font-weight:800;line-height:1.15;color:var(--muted)}.award.locked .an{color:var(--faint)}
+.toast{position:absolute;left:50%;top:96px;transform:translateX(-50%);background:var(--ink);color:#fff;font-weight:800;font-size:13px;padding:10px 15px;border-radius:14px;z-index:30;display:flex;align-items:center;gap:7px;box-shadow:0 8px 24px rgba(0,0,0,.22);animation:pop .3s ease;white-space:nowrap}
+@keyframes pop{from{opacity:0;transform:translateX(-50%) translateY(-8px)}to{opacity:1;transform:translateX(-50%)}}
+</style>
+</head>
+<body>
+<div class="phone">
+  <div class="notch"></div>
+  <div class="statusbar"><span>9:41</span><span class="r"><svg width="18" height="12" viewBox="0 0 18 12" fill="currentColor"><rect x="0" y="8" width="3" height="4" rx="1"/><rect x="5" y="5" width="3" height="7" rx="1"/><rect x="10" y="2" width="3" height="10" rx="1"/><rect x="15" y="0" width="3" height="12" rx="1"/></svg><svg width="25" height="13" viewBox="0 0 25 13" fill="none"><rect x="1" y="1.5" width="20" height="10" rx="3" stroke="currentColor" stroke-width="1.5"/><rect x="3" y="3.5" width="14" height="6" rx="1.5" fill="currentColor"/><rect x="22.5" y="4.5" width="2" height="4" rx="1" fill="currentColor"/></svg></span></div>
+  <div class="wallet" id="wallet"></div>
+  <div class="screen" id="screen"></div>
+  <div class="nav" id="nav"></div>
+  <div id="overlay"></div>
+</div>
+<script>
+const DATA = {"olympiad": [{"level": "L1", "level_name": "Grade 1/2", "topics": [{"topic_key": "number_sense", "pillar": "NT", "display_name": "Numbers All Around", "count": 1131}, {"topic_key": "odd_even_skip", "pillar": "NT", "display_name": "Number Hops", "count": 107}, {"topic_key": "number_shape_patterns", "pillar": "ALG", "display_name": "Pattern Play", "count": 1146}, {"topic_key": "missing_number", "pillar": "ALG", "display_name": "Mystery Numbers", "count": 2064}, {"topic_key": "shapes_2d_3d", "pillar": "GEO", "display_name": "Shape Spotters", "count": 857}, {"topic_key": "spatial", "pillar": "GEO", "display_name": "Picture Puzzles", "count": 967}, {"topic_key": "sorting", "pillar": "COM", "display_name": "Sort It Out", "count": 152}, {"topic_key": "counting_logic", "pillar": "COM", "display_name": "Think & Count", "count": 2874}]}, {"level": "L2", "level_name": "Grade 3/4", "topics": [{"topic_key": "place_value", "pillar": "NT", "display_name": "Big Numbers", "count": 1061}, {"topic_key": "factors_multiples", "pillar": "NT", "display_name": "Number Families", "count": 230}, {"topic_key": "unit_digit_patterns", "pillar": "NT", "display_name": "Last-Digit Detective", "count": 4}, {"topic_key": "patterns_rules", "pillar": "ALG", "display_name": "Rule Finders", "count": 575}, {"topic_key": "equations_disguise", "pillar": "ALG", "display_name": "Balance the Scale", "count": 1643}, {"topic_key": "fractions_intro", "pillar": "ALG", "display_name": "Fair Shares", "count": 103}, {"topic_key": "perimeter_area", "pillar": "GEO", "display_name": "Measure Masters", "count": 290}, {"topic_key": "angles_symmetry_grids", "pillar": "GEO", "display_name": "Turn & Flip", "count": 899}, {"topic_key": "systematic_listing", "pillar": "COM", "display_name": "List It All", "count": 0}, {"topic_key": "logic_puzzles", "pillar": "COM", "display_name": "Brain Benders", "count": 1173}]}, {"level": "L3", "level_name": "Grade 5/6", "topics": [{"topic_key": "divisibility_primes", "pillar": "NT", "display_name": "Prime Hunters", "count": 607}, {"topic_key": "hcf_lcm", "pillar": "NT", "display_name": "Common Ground", "count": 40}, {"topic_key": "remainders_cycles", "pillar": "NT", "display_name": "Clock Arithmetic", "count": 88}, {"topic_key": "fractions_decimals_pct", "pillar": "ALG", "display_name": "Parts & Wholes", "count": 153}, {"topic_key": "ratio_proportion", "pillar": "ALG", "display_name": "In Proportion", "count": 340}, {"topic_key": "variables_equations", "pillar": "ALG", "display_name": "Letter Maths", "count": 212}, {"topic_key": "sequences_series", "pillar": "ALG", "display_name": "What Comes Next", "count": 329}, {"topic_key": "angles_triangles", "pillar": "GEO", "display_name": "Angle Chasers", "count": 102}, {"topic_key": "area_perimeter_volume", "pillar": "GEO", "display_name": "Space & Surface", "count": 282}, {"topic_key": "coordinates", "pillar": "GEO", "display_name": "Map Makers", "count": 217}, {"topic_key": "counting_principles", "pillar": "COM", "display_name": "Smart Counting", "count": 205}, {"topic_key": "pigeonhole", "pillar": "COM", "display_name": "Sock Drawer Logic", "count": 28}, {"topic_key": "games_invariants", "pillar": "COM", "display_name": "Winning Moves", "count": 220}]}, {"level": "L4", "level_name": "Grade 7/8", "topics": [{"topic_key": "modular_intro", "pillar": "NT", "display_name": "Remainder World", "count": 0}, {"topic_key": "primes_powers", "pillar": "NT", "display_name": "Power Numbers", "count": 0}, {"topic_key": "number_bases", "pillar": "NT", "display_name": "Beyond Base 10", "count": 0}, {"topic_key": "diophantine_intro", "pillar": "NT", "display_name": "Whole-Number Equations", "count": 0}, {"topic_key": "linear_systems", "pillar": "ALG", "display_name": "Equation Solvers", "count": 0}, {"topic_key": "polynomials_identities", "pillar": "ALG", "display_name": "Algebra Toolkit", "count": 0}, {"topic_key": "inequalities_intro", "pillar": "ALG", "display_name": "Compare & Bound", "count": 0}, {"topic_key": "exponents_roots", "pillar": "ALG", "display_name": "Power Up", "count": 0}, {"topic_key": "congruence_similarity", "pillar": "GEO", "display_name": "Twin Triangles", "count": 0}, {"topic_key": "pythagoras", "pillar": "GEO", "display_name": "Right-Angle Power", "count": 0}, {"topic_key": "circles_basic", "pillar": "GEO", "display_name": "Round About", "count": 0}, {"topic_key": "quadrilaterals_area", "pillar": "GEO", "display_name": "Shape Strategies", "count": 0}, {"topic_key": "permutations_combinations", "pillar": "COM", "display_name": "Arrange & Choose", "count": 0}, {"topic_key": "probability_intro", "pillar": "COM", "display_name": "Chance It", "count": 0}, {"topic_key": "pigeonhole_colouring", "pillar": "COM", "display_name": "Clever Arguments", "count": 0}, {"topic_key": "recursion_patterns", "pillar": "COM", "display_name": "Step by Step", "count": 0}]}, {"level": "L5", "level_name": "Grade 9/10 (IOQM)", "topics": [{"topic_key": "modular_flt", "pillar": "NT", "display_name": "Modular & FLT", "count": 0}, {"topic_key": "gcd_euclid", "pillar": "NT", "display_name": "GCD & Euclid", "count": 0}, {"topic_key": "diophantine", "pillar": "NT", "display_name": "Diophantine", "count": 0}, {"topic_key": "digits_bases", "pillar": "NT", "display_name": "Digits & Bases", "count": 0}, {"topic_key": "polynomials_vieta", "pillar": "ALG", "display_name": "Polynomials & Vieta", "count": 0}, {"topic_key": "quadratics", "pillar": "ALG", "display_name": "Quadratics", "count": 0}, {"topic_key": "inequalities_amgm", "pillar": "ALG", "display_name": "Inequalities (AM-GM)", "count": 0}, {"topic_key": "sequences_floor", "pillar": "ALG", "display_name": "Sequences & Floor", "count": 0}, {"topic_key": "functional_thinking", "pillar": "ALG", "display_name": "Functional Thinking", "count": 0}, {"topic_key": "triangle_geometry", "pillar": "GEO", "display_name": "Triangle Geometry", "count": 0}, {"topic_key": "circle_geometry", "pillar": "GEO", "display_name": "Circle Geometry", "count": 0}, {"topic_key": "trig_geometry", "pillar": "GEO", "display_name": "Trig for Geometry", "count": 0}, {"topic_key": "similarity_chasing", "pillar": "GEO", "display_name": "Similarity & Chasing", "count": 0}, {"topic_key": "advanced_counting", "pillar": "COM", "display_name": "Advanced Counting", "count": 0}, {"topic_key": "recurrences", "pillar": "COM", "display_name": "Recurrences", "count": 0}, {"topic_key": "pigeonhole_extremal", "pillar": "COM", "display_name": "Pigeonhole & Extremal", "count": 0}, {"topic_key": "combinatorial_games", "pillar": "COM", "display_name": "Combinatorial Games", "count": 0}]}, {"level": "L6", "level_name": "Olympiad (RMO)", "topics": [{"topic_key": "congruences_crt", "pillar": "NT", "display_name": "Congruences & CRT", "count": 0}, {"topic_key": "orders_qr", "pillar": "NT", "display_name": "Orders & QR", "count": 0}, {"topic_key": "diophantine_tech", "pillar": "NT", "display_name": "Diophantine Techniques", "count": 0}, {"topic_key": "padic", "pillar": "NT", "display_name": "p-adic Valuation", "count": 0}, {"topic_key": "inequality_toolbox", "pillar": "ALG", "display_name": "Inequality Toolbox", "count": 0}, {"topic_key": "polynomial_theory", "pillar": "ALG", "display_name": "Polynomial Theory", "count": 0}, {"topic_key": "functional_equations", "pillar": "ALG", "display_name": "Functional Equations", "count": 0}, {"topic_key": "recurrence_proofs", "pillar": "ALG", "display_name": "Recurrence Proofs", "count": 0}, {"topic_key": "triangle_circle_configs", "pillar": "GEO", "display_name": "Triangle & Circle Configs", "count": 0}, {"topic_key": "transformations_intro", "pillar": "GEO", "display_name": "Transformations", "count": 0}, {"topic_key": "geometric_inequalities", "pillar": "GEO", "display_name": "Geometric Inequalities", "count": 0}, {"topic_key": "trig_length", "pillar": "GEO", "display_name": "Trig & Length", "count": 0}, {"topic_key": "double_counting", "pillar": "COM", "display_name": "Double Counting", "count": 0}, {"topic_key": "extremal", "pillar": "COM", "display_name": "Extremal Arguments", "count": 0}, {"topic_key": "graph_theory_intro", "pillar": "COM", "display_name": "Graph Theory", "count": 0}, {"topic_key": "invariants", "pillar": "COM", "display_name": "Invariants & Monovariants", "count": 0}]}, {"level": "L7", "level_name": "Olympiad (INMO)", "topics": [{"topic_key": "orders_primitive_qr", "pillar": "NT", "display_name": "Orders, Primitive Roots & QR", "count": 0}, {"topic_key": "lte", "pillar": "NT", "display_name": "Lifting the Exponent", "count": 0}, {"topic_key": "advanced_diophantine", "pillar": "NT", "display_name": "Advanced Diophantine", "count": 0}, {"topic_key": "nt_constructions", "pillar": "NT", "display_name": "NT Constructions", "count": 0}, {"topic_key": "functional_equations_rig", "pillar": "ALG", "display_name": "Functional Equations (Rigorous)", "count": 0}, {"topic_key": "polynomials_adv", "pillar": "ALG", "display_name": "Polynomials (Advanced)", "count": 0}, {"topic_key": "advanced_inequalities", "pillar": "ALG", "display_name": "Advanced Inequalities", "count": 0}, {"topic_key": "algebra_nt_crossover", "pillar": "ALG", "display_name": "Algebra-NT Crossover", "count": 0}, {"topic_key": "inversion", "pillar": "GEO", "display_name": "Inversion", "count": 0}, {"topic_key": "projective", "pillar": "GEO", "display_name": "Projective Flavour", "count": 0}, {"topic_key": "spiral_similarity", "pillar": "GEO", "display_name": "Spiral Similarity", "count": 0}, {"topic_key": "combinatorial_geometry", "pillar": "GEO", "display_name": "Combinatorial Geometry", "count": 0}, {"topic_key": "graph_theory", "pillar": "COM", "display_name": "Graph Theory", "count": 0}, {"topic_key": "extremal_combinatorics", "pillar": "COM", "display_name": "Extremal Combinatorics", "count": 0}, {"topic_key": "games_processes", "pillar": "COM", "display_name": "Games & Processes", "count": 0}, {"topic_key": "algebraic_counting", "pillar": "COM", "display_name": "Algebraic Methods in Counting", "count": 0}]}, {"level": "L8", "level_name": "Olympiad (IMO)", "topics": [{"topic_key": "full_nt", "pillar": "NT", "display_name": "Full NT Arsenal", "count": 0}, {"topic_key": "nt_constructions_open", "pillar": "NT", "display_name": "NT Constructions & Open-Style", "count": 0}, {"topic_key": "fe_mastery", "pillar": "ALG", "display_name": "FE Mastery", "count": 0}, {"topic_key": "polynomial_mastery", "pillar": "ALG", "display_name": "Polynomial Mastery", "count": 0}, {"topic_key": "inequality_mastery", "pillar": "ALG", "display_name": "Inequality Mastery", "count": 0}, {"topic_key": "algebraic_combinatorics", "pillar": "ALG", "display_name": "Algebraic Combinatorics", "count": 0}, {"topic_key": "configurational_geometry", "pillar": "GEO", "display_name": "Configurational Geometry", "count": 0}, {"topic_key": "transformation_toolkit", "pillar": "GEO", "display_name": "Transformation Toolkit", "count": 0}, {"topic_key": "computational_backup", "pillar": "GEO", "display_name": "Computational Backup", "count": 0}, {"topic_key": "extremal_probabilistic", "pillar": "COM", "display_name": "Extremal & Probabilistic", "count": 0}, {"topic_key": "deep_invariants", "pillar": "COM", "display_name": "Deep Invariants & Processes", "count": 0}, {"topic_key": "combinatorial_nt", "pillar": "COM", "display_name": "Combinatorial NT", "count": 0}]}], "curriculum": {"ncert": {"name": "NCERT (CBSE)", "grades": {"1": {"total": 530, "chapters": [{"name": "Ch10: Time", "count": 50}, {"name": "Ch11: Money", "count": 47}, {"name": "Ch12: Data Handling", "count": 57}, {"name": "Ch13: Patterns", "count": 49}, {"name": "Ch1: Numbers 1 to 9", "count": 49}, {"name": "Ch2: Numbers 10 to 20", "count": 46}, {"name": "Ch3: Addition", "count": 50}, {"name": "Ch4: Subtraction", "count": 50}, {"name": "Ch5: Numbers 21 to 50", "count": 47}, {"name": "Ch6: Numbers 51 to 100", "count": 46}, {"name": "Ch7: Addition & Subtraction Together", "count": 50}, {"name": "Ch8: Shapes", "count": 38}, {"name": "Ch9: Measurement", "count": 63}]}, "2": {"total": 490, "chapters": [{"name": "Ch10: Data Handling", "count": 41}, {"name": "Ch11: Fractions introduction", "count": 47}, {"name": "Ch1: Numbers up to 100", "count": 50}, {"name": "Ch2: Addition with carry", "count": 52}, {"name": "Ch3: Subtraction with borrow", "count": 50}, {"name": "Ch4: Numbers up to 999", "count": 57}, {"name": "Ch5: Multiplication introduction", "count": 57}, {"name": "Ch6: Shapes & Patterns", "count": 52}, {"name": "Ch7: Measurement", "count": 56}, {"name": "Ch8: Time", "count": 53}, {"name": "Ch9: Money", "count": 57}]}, "3": {"total": 517, "chapters": [{"name": "Ch10: Patterns", "count": 50}, {"name": "Ch11: Data Handling", "count": 39}, {"name": "Ch12: Area", "count": 42}, {"name": "Ch13: Weight & Capacity", "count": 50}, {"name": "Ch14: Symmetry", "count": 34}, {"name": "Ch1: Numbers up to 9999", "count": 50}, {"name": "Ch2: Addition & Subtraction", "count": 50}, {"name": "Ch3: Multiplication", "count": 50}, {"name": "Ch4: Division", "count": 50}, {"name": "Ch5: Fractions", "count": 40}, {"name": "Ch6: Money", "count": 50}, {"name": "Ch7: Measurement", "count": 50}, {"name": "Ch8: Time", "count": 41}, {"name": "Ch9: Geometry", "count": 45}]}, "4": {"total": 579, "chapters": [{"name": "Ch10: Patterns & Sequences", "count": 47}, {"name": "Ch11: Data Handling", "count": 41}, {"name": "Ch12: Time", "count": 50}, {"name": "Ch13: Money", "count": 50}, {"name": "Ch14: Maps & Directions", "count": 49}, {"name": "Ch1: Numbers beyond 9999", "count": 50}, {"name": "Ch2: Multiplication", "count": 50}, {"name": "Ch3: Division", "count": 50}, {"name": "Ch4: Multiples & Factors", "count": 49}, {"name": "Ch5: Fractions", "count": 50}, {"name": "Ch6: Decimals", "count": 50}, {"name": "Ch7: Measurement", "count": 50}, {"name": "Ch8: Perimeter & Area", "count": 50}, {"name": "Ch9: Geometry", "count": 49}]}, "5": {"total": 906, "chapters": [{"name": "Ch10: Data Handling", "count": 46}, {"name": "Ch10: Patterns", "count": 49}, {"name": "Ch11: Volume", "count": 49}, {"name": "Ch12: Speed/Distance/Time", "count": 50}, {"name": "Ch13: Profit & Loss", "count": 50}, {"name": "Ch14: Symmetry & Tessellations", "count": 30}, {"name": "Ch15: Maps & Scale", "count": 50}, {"name": "Ch1: Large Numbers", "count": 50}, {"name": "Ch2: Factors & Multiples", "count": 48}, {"name": "Ch3: Fractions", "count": 48}, {"name": "Ch3: HCF and LCM", "count": 50}, {"name": "Ch4: Decimal Operations", "count": 45}, {"name": "Ch4: Decimals", "count": 40}, {"name": "Ch5: Measurement", "count": 48}, {"name": "Ch5: Percentage", "count": 50}, {"name": "Ch6: Percentage", "count": 50}, {"name": "Ch6: Speed, Distance and Time", "count": 50}, {"name": "Ch7: Geometry", "count": 44}, {"name": "Ch7: Volume", "count": 50}, {"name": "Ch8: Perimeter & Area", "count": 50}, {"name": "Ch8: Profit and Loss", "count": 50}, {"name": "Ch9: Data Handling", "count": 50}, {"name": "Ch9: Maps and Scale", "count": 50}]}, "6": {"total": 583, "chapters": [{"name": "Ch10: The Other Side of Zero", "count": 50}, {"name": "Ch1: Patterns in Mathematics", "count": 62}, {"name": "Ch2: Lines and Angles", "count": 50}, {"name": "Ch2: Number Play", "count": 43}, {"name": "Ch3: Number Play", "count": 45}, {"name": "Ch3: Prime Time", "count": 44}, {"name": "Ch4: Data Handling & Presentation", "count": 50}, {"name": "Ch4: Integers", "count": 50}, {"name": "Ch5: Constructions", "count": 48}, {"name": "Ch5: Prime Time", "count": 42}, {"name": "Ch6: Perimeter and Area", "count": 49}, {"name": "Ch6: Symmetry", "count": 35}, {"name": "Ch7: Area", "count": 45}, {"name": "Ch7: Fractions", "count": 49}, {"name": "Ch8: Playing with Constructions", "count": 47}, {"name": "Ch9: Symmetry", "count": 27}]}}}, "igcse": {"name": "Cambridge Primary", "grades": {"1": {"total": 510, "chapters": [{"name": "Ch10: Data Handling", "count": 50}, {"name": "Ch11: Position and Direction", "count": 50}, {"name": "Ch12: Doubling and Halving", "count": 50}, {"name": "Ch1: Counting and Numbers (1-20)", "count": 50}, {"name": "Ch2: Place Value", "count": 50}, {"name": "Ch3: Addition (within 20)", "count": 50}, {"name": "Ch4: Subtraction (within 20)", "count": 50}, {"name": "Ch5: Shapes and Patterns", "count": 50}, {"name": "Ch6: Length and Height", "count": 50}, {"name": "Ch7: Weight and Capacity", "count": 50}, {"name": "Ch8: Time", "count": 50}, {"name": "Ch9: Money", "count": 50}]}, "2": {"total": 421, "chapters": [{"name": "Ch10: Time", "count": 50}, {"name": "Ch11: Data Handling", "count": 50}, {"name": "Ch12: Position and Movement", "count": 50}, {"name": "Ch1: Numbers to 100", "count": 50}, {"name": "Ch2: Place Value and Ordering", "count": 50}, {"name": "Ch3: Addition (2-digit)", "count": 50}, {"name": "Ch4: Subtraction (2-digit)", "count": 50}, {"name": "Ch5: Multiplication (2, 5, 10 tables)", "count": 50}, {"name": "Ch6: Division", "count": 50}, {"name": "Ch7: Fractions (halves, quarters)", "count": 50}, {"name": "Ch8: 2D and 3D Shapes", "count": 50}, {"name": "Ch9: Measurement", "count": 50}]}, "3": {"total": 410, "chapters": [{"name": "Ch10: Geometry", "count": 50}, {"name": "Ch11: Data Handling", "count": 50}, {"name": "Ch12: Symmetry", "count": 50}, {"name": "Ch1: Numbers to 1000", "count": 50}, {"name": "Ch2: Place Value", "count": 50}, {"name": "Ch3: Addition and Subtraction (3-digit)", "count": 50}, {"name": "Ch4: Multiplication (2-10 tables)", "count": 50}, {"name": "Ch5: Division", "count": 50}, {"name": "Ch6: Fractions", "count": 50}, {"name": "Ch7: Money", "count": 50}, {"name": "Ch8: Measurement", "count": 50}, {"name": "Ch9: Time", "count": 50}]}, "4": {"total": 465, "chapters": [{"name": "Ch10: Geometry and Angles", "count": 50}, {"name": "Ch11: Data Handling", "count": 50}, {"name": "Ch12: Coordinates", "count": 50}, {"name": "Ch1: Numbers to 10000", "count": 50}, {"name": "Ch2: Place Value and Rounding", "count": 50}, {"name": "Ch3: Addition and Subtraction", "count": 50}, {"name": "Ch4: Multiplication", "count": 50}, {"name": "Ch5: Division", "count": 50}, {"name": "Ch6: Fractions and Decimals", "count": 50}, {"name": "Ch7: Measurement", "count": 50}, {"name": "Ch8: Perimeter and Area", "count": 50}, {"name": "Ch9: Time", "count": 50}]}, "5": {"total": 470, "chapters": [{"name": "Ch10: Data Handling", "count": 50}, {"name": "Ch11: Algebra Basics", "count": 50}, {"name": "Ch12: Problem Solving", "count": 50}, {"name": "Ch1: Large Numbers", "count": 50}, {"name": "Ch2: Decimals", "count": 50}, {"name": "Ch3: Fractions", "count": 50}, {"name": "Ch4: Percentages", "count": 50}, {"name": "Ch5: Addition and Subtraction", "count": 50}, {"name": "Ch6: Multiplication and Division", "count": 50}, {"name": "Ch7: Ratio and Proportion", "count": 50}, {"name": "Ch8: Geometry", "count": 50}, {"name": "Ch9: Measurement and Area", "count": 50}]}, "6": {"total": 438, "chapters": [{"name": "Ch10: Statistics", "count": 50}, {"name": "Ch11: Probability", "count": 50}, {"name": "Ch12: Problem Solving", "count": 50}, {"name": "Ch1: Integers and Number Properties", "count": 50}, {"name": "Ch2: Fractions, Decimals, Percentages", "count": 50}, {"name": "Ch3: Ratio and Proportion", "count": 50}, {"name": "Ch4: Algebra", "count": 50}, {"name": "Ch5: Equations", "count": 50}, {"name": "Ch6: Geometry", "count": 50}, {"name": "Ch7: Transformations", "count": 50}, {"name": "Ch8: Measurement", "count": 50}, {"name": "Ch9: Area and Volume", "count": 50}]}}}, "icse": {"name": "ICSE", "grades": {"1": {"total": 283, "chapters": [{"name": "Addition and Subtraction", "count": 70}, {"name": "Geometry", "count": 50}, {"name": "Measurement", "count": 50}, {"name": "Money", "count": 50}, {"name": "Numbers", "count": 50}, {"name": "Patterns", "count": 50}, {"name": "Time", "count": 50}]}, "2": {"total": 294, "chapters": [{"name": "Addition and Subtraction", "count": 50}, {"name": "Data Handling", "count": 50}, {"name": "Measurement", "count": 50}, {"name": "Money", "count": 50}, {"name": "Multiplication and Division", "count": 50}, {"name": "Numbers", "count": 50}, {"name": "Patterns", "count": 50}, {"name": "Time", "count": 50}]}, "3": {"total": 330, "chapters": [{"name": "Addition and Subtraction", "count": 50}, {"name": "Data Handling", "count": 50}, {"name": "Fractions and Decimals", "count": 50}, {"name": "Geometry", "count": 50}, {"name": "Measurement", "count": 50}, {"name": "Money", "count": 50}, {"name": "Multiplication and Division", "count": 50}, {"name": "Numbers", "count": 50}, {"name": "Time", "count": 50}]}, "4": {"total": 279, "chapters": [{"name": "Addition and Subtraction", "count": 50}, {"name": "Data Handling", "count": 50}, {"name": "Fractions and Decimals", "count": 50}, {"name": "Geometry", "count": 50}, {"name": "Measurement", "count": 50}, {"name": "Multiplication and Division", "count": 50}, {"name": "Numbers", "count": 50}]}, "5": {"total": 289, "chapters": [{"name": "Data Handling", "count": 50}, {"name": "Fractions and Decimals", "count": 50}, {"name": "Geometry", "count": 50}, {"name": "Measurement", "count": 50}, {"name": "Money", "count": 50}, {"name": "Multiplication and Division", "count": 50}, {"name": "Numbers", "count": 50}, {"name": "Percentage", "count": 50}]}, "6": {"total": 337, "chapters": [{"name": "Algebra", "count": 50}, {"name": "Coordinate Geometry", "count": 50}, {"name": "Data Handling", "count": 50}, {"name": "Measurement", "count": 50}, {"name": "Numbers", "count": 52}, {"name": "Percentage", "count": 50}, {"name": "Ratio and Proportion", "count": 50}, {"name": "Sets", "count": 50}]}}}, "singapore": {"name": "Singapore", "grades": {"1": {"total": 201, "chapters": [{"name": "1A: Addition Stories", "count": 35}, {"name": "1A: Number Bonds", "count": 40}, {"name": "1A: Shapes and Patterns", "count": 25}, {"name": "1A: Subtraction Stories", "count": 35}, {"name": "1B: Addition and Subtraction to 40", "count": 15}, {"name": "1B: Length and Mass", "count": 20}, {"name": "1B: Ordinal Numbers", "count": 15}, {"name": "1B: Picture Graphs", "count": 15}]}, "2": {"total": 255, "chapters": [{"name": "2A: Addition and Subtraction to 1000", "count": 40}, {"name": "2A: Division", "count": 25}, {"name": "2A: Multiplication Tables", "count": 40}, {"name": "2B: Bar Models", "count": 30}, {"name": "2B: Fractions", "count": 25}, {"name": "2B: Money", "count": 20}, {"name": "2B: Time", "count": 20}]}, "3": {"total": 199, "chapters": [{"name": "3A: Division", "count": 25}, {"name": "3A: Multiplication", "count": 30}, {"name": "3A: Numbers to 10000", "count": 35}, {"name": "3B: Angles", "count": 15}, {"name": "3B: Area and Perimeter", "count": 25}, {"name": "3B: Bar Graphs", "count": 15}, {"name": "3B: Fractions", "count": 30}, {"name": "3B: Measurement", "count": 25}]}, "4": {"total": 217, "chapters": [{"name": "4A: Factors and Multiples", "count": 25}, {"name": "4A: Fractions", "count": 35}, {"name": "4A: Whole Numbers to 100,000", "count": 25}, {"name": "4B: Area of Composite Figures", "count": 25}, {"name": "4B: Decimals", "count": 30}, {"name": "4B: Multi-step Word Problems", "count": 35}, {"name": "4B: Symmetry", "count": 25}]}, "5": {"total": 243, "chapters": [{"name": "5A: Fractions", "count": 35}, {"name": "5A: Order of Operations", "count": 30}, {"name": "5A: Ratio", "count": 30}, {"name": "5B: Average", "count": 20}, {"name": "5B: Challenging Word Problems", "count": 20}, {"name": "5B: Percentage", "count": 25}, {"name": "5B: Rate", "count": 20}, {"name": "5B: Volume", "count": 20}]}, "6": {"total": 204, "chapters": [{"name": "6A: Algebra", "count": 35}, {"name": "6A: Percentage Advanced", "count": 25}, {"name": "6A: Ratio Advanced", "count": 25}, {"name": "6A: Speed", "count": 30}, {"name": "6B: Challenging Problems", "count": 40}, {"name": "6B: Circles", "count": 25}, {"name": "6B: Pie Charts", "count": 20}]}}}, "us-common-core": {"name": "US Common Core", "grades": {"1": {"total": 139, "chapters": [{"name": "Geometry", "count": 50}, {"name": "Measurement & Data", "count": 40}, {"name": "Number & Operations in Base Ten", "count": 50}, {"name": "Operations & Algebraic Thinking", "count": 60}]}, "2": {"total": 152, "chapters": [{"name": "Geometry", "count": 30}, {"name": "Measurement & Data", "count": 58}, {"name": "Number & Operations in Base Ten", "count": 53}, {"name": "Operations & Algebraic Thinking", "count": 59}]}, "3": {"total": 125, "chapters": [{"name": "Geometry", "count": 20}, {"name": "Measurement & Data", "count": 66}, {"name": "Number & Operations—Fractions", "count": 41}, {"name": "Operations & Algebraic Thinking", "count": 73}]}, "4": {"total": 144, "chapters": [{"name": "Geometry", "count": 25}, {"name": "Measurement & Data", "count": 43}, {"name": "Number & Operations in Base Ten", "count": 47}, {"name": "Number & Operations—Fractions", "count": 50}, {"name": "Operations & Algebraic Thinking", "count": 35}]}, "5": {"total": 157, "chapters": [{"name": "Geometry", "count": 35}, {"name": "Measurement & Data", "count": 34}, {"name": "Number & Operations in Base Ten", "count": 51}, {"name": "Number & Operations—Fractions", "count": 50}, {"name": "Operations & Algebraic Thinking", "count": 30}]}, "6": {"total": 173, "chapters": [{"name": "Expressions & Equations", "count": 41}, {"name": "Geometry", "count": 37}, {"name": "Ratios & Proportional Relationships", "count": 41}, {"name": "Statistics & Probability", "count": 30}, {"name": "The Number System", "count": 51}]}}}}, "curriculum_order": ["ncert", "igcse", "icse", "singapore", "us-common-core"], "samples": {"oly": {"missing_number": {"stem": "If you put 1 ribbons and 6 ribbons together, how many do you get?", "choices": ["7", "4", "9", "5"], "correct_answer": 0, "hint": "Count each item carefully. Point to each one as you count."}, "number_shape_patterns": {"stem": "What colour bead comes next?", "choices": ["White", "Purple", "Black", "Orange"], "correct_answer": 1, "hint": "A pattern has a rule. Find the rule first, then use it to predict the next term."}, "counting_logic": {"stem": "Which is the shortest?", "choices": ["ant", "fish", "elephant", "cat"], "correct_answer": 1, "hint": "Read the problem carefully. What information is given?"}, "sorting": {"stem": "Which number is the odd one out: 26, 22, 14, 3?", "choices": ["3", "22", "26", "14"], "correct_answer": 0, "hint": "Look for what repeats!"}, "shapes_2d_3d": {"stem": "How many corners does a square have?", "choices": ["2", "4", "3", "5"], "correct_answer": 1, "hint": "Picture the shape. Label what you know. What measurement is the question asking for?"}, "spatial": {"stem": "Which is heavier?", "choices": ["The grape", "The watermelon", "They weigh the same", "We cannot tell"], "correct_answer": 1, "hint": "Visualize the shape. How many faces, edges, or sides does it have?"}, "number_sense": {"stem": "A bird has 2 wings. How many wings do 4 birds have altogether?", "choices": ["6", "8", "4", "10"], "correct_answer": 1, "hint": "Think: what does 'altogether' or 'total' or 'in all' really mean here?"}, "odd_even_skip": {"stem": "Ravi tries to split 6 apples equally between two friends. Is it possible?", "choices": ["Maybe", "No", "Cannot tell", "Yes"], "correct_answer": 3, "hint": "This is about counting carefully."}, "equations_disguise": {"stem": "The sum of their numbers is 9. One die shows 5. What does the other die show?", "choices": ["4", "3", "6", "5"], "correct_answer": 0, "hint": "This is an addition problem."}, "fractions_intro": {"stem": "A shape is divided into 6 equal parts. 3 parts are shaded. What fraction is shaded?", "choices": ["3/6", "2/6", "4/6", "3/7"], "correct_answer": 0, "hint": "Count the total number of equal parts and the number of shaded parts."}, "patterns_rules": {"stem": "Ranger Roo is figuring out what comes next: Rule: Add 1, then double. 2, 6, 14, 30, 62, ___.", "choices": ["63", "127", "126", "124"], "correct_answer": 2, "hint": "Look for a pattern here."}, "logic_puzzles": {"stem": "Which is the largest number? 192, 377, 445, 847.", "choices": ["847", "192", "445", "377"], "correct_answer": 0, "hint": "Use logical reasoning here."}, "angles_symmetry_grids": {"stem": "A square has side 3 cm. If enlarged 3 times, what is the new side length?", "choices": ["5", "6", "9", "13"], "correct_answer": 2, "hint": "Look at the shape."}, "perimeter_area": {"stem": "A rectangle is 17 cm by 16 cm. What is its perimeter?", "choices": ["50", "272", "33", "66"], "correct_answer": 3, "hint": "Think about shapes and their properties."}, "factors_multiples": {"stem": "Which number is NOT divisible by 7? 70, 35, 35, 71.", "choices": ["71", "67", "70", "35"], "correct_answer": 0, "hint": "This is a puzzle. Think step by step."}, "place_value": {"stem": "A grid has 8 rows and 7 columns of stickers. How many stickers are there in total?", "choices": ["56", "55", "61", "46"], "correct_answer": 0, "hint": "Rows × columns will give the total."}, "unit_digit_patterns": {"stem": "Help Detective Dodo calculate: What is the ones digit of 590?", "choices": ["3", "2", "0", "4"], "correct_answer": 2, "hint": "Think about what is asked."}, "fractions_decimals_pct": {"stem": "Which of the following represents fractions in descending order?", "choices": ["1/2, 3/4, 5/6, 7/8", "7/8, 5/6, 3/4, 1/2", "3/4, 1/2, 7/8, 5/6", "7/8, 5/6, 1/2, 3/4"], "correct_answer": 1, "hint": "Keep the parts and the whole in the same form."}, "ratio_proportion": {"stem": "What is 10% of 200?", "choices": ["40", "180", "20", "10"], "correct_answer": 2, "hint": "You need to find 10% of 200. 'Percent' means 'per hundred'."}, "sequences_series": {"stem": "What is the sum of the first 10 odd numbers?", "choices": ["90", "100", "110", "120"], "correct_answer": 1, "hint": "Find the rule linking the terms."}, "variables_equations": {"stem": "If the average of 5 numbers is 20, what is their sum?", "choices": ["25", "50", "100", "200"], "correct_answer": 2, "hint": "Let the unknown be a letter."}, "counting_principles": {"stem": "If you don't study, you won't pass. Maria passed. What can you conclude?", "choices": ["Maria studied", "Maria did not study", "Maria might have studied", "Nothing"], "correct_answer": 0, "hint": "List each person's statement. If each statement were true, what would follow?"}, "games_invariants": {"stem": "How many winning lines pass through the center square?", "choices": ["2", "3", "4", "5"], "correct_answer": 2, "hint": "What constraints must the answer satisfy? List them all."}, "pigeonhole": {"stem": "Which of the following is the negation of 'At least 3 students passed'?", "choices": ["Exactly 3 students passed", "More than 3 students passed", "Fewer than 3 students passed", "No students passed"], "correct_answer": 2, "hint": "List each person's statement. If each statement were true, what would follow?"}, "angles_triangles": {"stem": "A rectangle that is not a square has how many lines of symmetry?", "choices": ["4", "1", "0", "2"], "correct_answer": 3, "hint": "Picture the shape. Label what you know. What measurement is the question asking for?"}, "area_perimeter_volume": {"stem": "A dealer has 24kg, 120kg and 72kg of coffee. Capacity of largest box?", "choices": ["50", "36", "24", "12"], "correct_answer": 2, "hint": "Recall the formula for this shape/solid."}, "coordinates": {"stem": "If you cut a square diagonally from corner to corner, how many pieces do you get?", "choices": ["1", "4", "3", "2"], "correct_answer": 3, "hint": "Picture the shape. Label what you know. What measurement is the question asking for?"}, "divisibility_primes": {"stem": "Which of the following numbers in Roman numerals is incorrect?", "choices": ["LXXX", "LXX", "LX", "LLX"], "correct_answer": 3, "hint": "Test small primes (2, 3, 5, 7…)."}, "hcf_lcm": {"stem": "The HCF of the denominator and numerator of a fraction in its lowest form is", "choices": ["1", "0", "Can't be determined", "Always even"], "correct_answer": 0, "hint": "Factorise each number into primes."}, "remainders_cycles": {"stem": "What is the smallest number which divided by 20, 25, 35, 40 leaves remainders 14, 19, 29, 34?", "choices": ["1394", "1404", "1604", "1406"], "correct_answer": 0, "hint": "Think about what is left after dividing."}}, "school": {"1": {"stem": "What number comes just before 45?", "choices": ["44", "46", "43", "45"], "correct_answer": 0, "hint": "Think about counting backwards by 1."}, "2": {"stem": "What is the digit in the tens place of 64?", "choices": ["4", "3", "8", "6"], "correct_answer": 3, "hint": "Remember: in a number like 45, the 4 is in the tens place and the 5 is in the ones place."}, "3": {"stem": "Which fraction is equivalent to 4/5?", "choices": ["13/15", "5/5", "12/16", "12/15"], "correct_answer": 3, "hint": "A fraction shows parts of a whole."}, "4": {"stem": "Which fraction is equivalent to 3/10?", "choices": ["13/40", "12/41", "12/40", "4/10"], "correct_answer": 2, "hint": "You need to divide 3 by 10."}, "5": {"stem": "Find 10% of 100.", "choices": ["10", "20", "90", "6"], "correct_answer": 0, "hint": "Percent means 'per hundred'."}, "6": {"stem": "In which quadrant does the point (5, 2) lie?", "choices": ["Quadrant I", "Quadrant II", "Quadrant IV", "On the axis"], "correct_answer": 0, "hint": "Q-I: (+,+), Q-II: (-,+), Q-III: (-,-), Q-IV: (+,-)."}}}};
+const PHEX={NT:'#3D7DF6',ALG:'#8B5CF6',GEO:'#0FB17E',COM:'#F59E0B',LOG:'#EC4899'};
+const PLT={NT:'var(--nt-l)',ALG:'var(--alg-l)',GEO:'var(--geo-l)',COM:'var(--com-l)'};
+// ---- line icons (no emoji) ----
+const I={
+ star:'<path d="M12 3.5l2.6 5.3 5.8.8-4.2 4.1 1 5.8L12 16.8l-5.2 2.7 1-5.8L3.6 9.6l5.8-.8z"/>',
+ house:'<path d="M4 11l8-6 8 6"/><path d="M6 10v9h12v-9"/>',
+ chart:'<path d="M5 19V11M12 19V5M19 19v-6"/>',
+ user:'<circle cx="12" cy="8" r="3.4"/><path d="M5.5 19a6.5 6.5 0 0 1 13 0"/>',
+ back:'<path d="M15 18l-6-6 6-6"/>', chev:'<path d="M9 6l6 6-6 6"/>',
+ lock:'<rect x="5" y="11" width="14" height="9" rx="2.4"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/>',
+ book:'<path d="M5 4.5A1.5 1.5 0 0 1 6.5 3H18v15H6.5A1.5 1.5 0 0 0 5 19.5z"/><path d="M18 18v3H6.5A1.5 1.5 0 0 1 5 19.5"/>',
+ bulb:'<path d="M9.5 18h5M10.5 21h3M12 3a6 6 0 0 0-3.5 10.9c.6.5.9 1.3 1 2.1h5c.1-.8.4-1.6 1-2.1A6 6 0 0 0 12 3z"/>',
+ flame:'<path d="M12 12c2-2.96 0-7-1-8c0 3.04-1.77 4.74-3 6c-1.23 1.26-2 3.24-2 5a6 6 0 1 0 12 0c0-1.53-1.06-3.94-2-5c-1.79 3-2.79 3-4 2z"/>',
+ coin:'<circle cx="12" cy="12" r="9"/><path d="M14.8 9.4a2.2 2.2 0 0 0-2-1.2h-1.6a2 2 0 0 0 0 4h1.6a2 2 0 0 1 0 4h-1.6a2.2 2.2 0 0 1-2-1.2"/><path d="M12 6v1.7M12 16.3V18"/>',
+ gem:'<path d="M6 4h12l3 5-9 11L3 9z"/><path d="M3 9h18"/><path d="M9 4 6 9l6 11 6-11-3-5"/>',
+ info:'<circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 7.6h.01"/>',
+ edit:'<path d="M5 19h4L19 9l-4-4L5 15z"/><path d="M14 6l4 4"/>',
+ users:'<circle cx="9" cy="8" r="3.2"/><path d="M3.5 19.5a5.5 5.5 0 0 1 11 0"/><path d="M16 5.2a3.2 3.2 0 0 1 0 6.2M20.5 19.5a5.5 5.5 0 0 0-4-5.3"/>',
+ out:'<path d="M14 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-2"/><path d="M18 12H9M15.5 8.5L19 12l-3.5 3.5"/>',
+ bell:'<path d="M6 9.5a6 6 0 0 1 12 0c0 4.5 2 5.5 2 5.5H4s2-1 2-5.5"/><path d="M10 19a2 2 0 0 0 4 0"/>',
+ target:'<circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.2"/><circle cx="12" cy="12" r="1"/>',
+ grad:'<path d="M21 9.5L12 5 3 9.5l9 4.5z"/><path d="M7 11.7V16c0 1.4 2.7 2.6 5 2.6s5-1.2 5-2.6v-4.3"/>',
+ globe:'<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 2.5 15.5 0 18M12 3c-2.5 2.5-2.5 15.5 0 18"/>',
+ trend:'<path d="M4 16l5-5 4 4 7-7"/><path d="M16 8h4v4"/>', check:'<path d="M20 6.5L9.5 17 4 11.5"/>',
+ shield:'<path d="M12 3l7 3v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/>'
+};
+function ic(n,s,c){return `<svg viewBox="0 0 24 24" width="${s||20}" height="${s||20}" fill="none" stroke="${c||'currentColor'}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${I[n]||''}</svg>`;}
+function pglyph(p){const m={NT:'<path d="M5 12h14M12 5v14"/>',ALG:'<path d="M6 18L18 6M8 8h.01M16 16h.01"/><circle cx="8.5" cy="8.5" r="2.3"/>',GEO:'<path d="M12 4l8 14H4z"/>',COM:'<circle cx="8" cy="8" r="2.8"/><circle cx="16" cy="16" r="2.8"/><path d="M8 11v1.5a3 3 0 0 0 3 3h2"/>',LOG:'<path d="M9.5 9a2.5 2.5 0 1 1 3 2.4c-.8.3-1 .9-1 1.6M11.5 16h.01"/>'};return `<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="${PHEX[p]}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${m[p]}</svg>`;}
+function ring(pct,size,color){const r=(size-6)/2,c=2*Math.PI*r,off=c*(1-pct/100);return `<svg width="${size}" height="${size}" viewBox="0 0 ${size} ${size}"><circle cx="${size/2}" cy="${size/2}" r="${r}" fill="none" stroke="#EEF0F4" stroke-width="5"/><circle cx="${size/2}" cy="${size/2}" r="${r}" fill="none" stroke="${color}" stroke-width="5" stroke-linecap="round" stroke-dasharray="${c}" stroke-dashoffset="${off}" transform="rotate(-90 ${size/2} ${size/2})"/></svg>`;}
+/* status icons are inline svg */
+
+// mock student
+const STU={name:'Ved',level:'L3',grade:5,board:'NCERT',score:512,band:[480,540],delta:14,streak:7,coins:340,gems:12,xp:1240,topicsMastered:18,correctStreak:0,answered:0,awards:{},opened:{},
+ lvlProg:{L1:100,L2:62,L3:24},
+ strands:[{n:'Number Theory',p:'NT',pct:78,topics:'7/9'},{n:'Algebra',p:'ALG',pct:61,topics:'4/7'},{n:'Geometry',p:'GEO',pct:48,topics:'3/8'},{n:'Combinatorics',p:'COM',pct:64,topics:'4/7'},{n:'Logic & Puzzles',p:'LOG',pct:72,topics:'5/8'}]};
+
+const S={tab:'olympiad',oly:{view:'levels',level:null},school:{board:'ncert',grade:1,view:'home'},practice:null,parent:{open:false,pin:''},sheet:null,ahOpen:false};
+window.S=S;
+const NAV=[['olympiad','Olympiad','star'],['school','School','house'],['progress','Progress','chart'],['profile','Profile','user']];
+function renderNav(){document.getElementById('nav').innerHTML=NAV.map(([k,l,n])=>`<button class="${S.tab===k?'on':''}" onclick="setTab('${k}')">${ic(n,25)}${l}</button>`).join('');}
+function setTab(t){S.tab=t;S.parent.open=false;if(t==='olympiad')S.oly.view='levels';if(t==='school')S.school.view='home';render();}
+function render(){renderNav();renderWallet();const v={olympiad:olyScreen,school:schoolScreen,progress:progressScreen,profile:profileScreen}[S.tab]();const s=document.getElementById('screen');s.innerHTML=v;s.scrollTop=0;s.firstElementChild&&s.firstElementChild.classList.add('fade');document.getElementById('overlay').innerHTML=S.sheet?sheetHTML():'';}
+function bandName(ln){return ln.replace('Grade','Grades').replace('/','–').replace('Olympiad ','').replace('(','').replace(')','');}
+function ahToggle(){S.ahOpen=!S.ahOpen;render();}
+function fmtK(n){return n>=1000?(n/1000).toFixed(1).replace(/\.0$/,'')+'k':String(n);}
+function pillarOf(tk){for(const lv of DATA.olympiad){const t=lv.topics.find(x=>x.topic_key===tk);if(t)return t.pillar;}return 'NT';}
+const AWARDS=[{id:'first',n:'First Steps',ic:'check'},{id:'sharp',n:'Sharp Shooter',ic:'target'},{id:'coins',n:'Coin Collector',ic:'coin'},{id:'gem',n:'Gem Hunter',ic:'gem'},{id:'streak',n:'Week Warrior',ic:'flame'},{id:'explorer',n:'Level Explorer',ic:'star'}];
+function awardUnlocked(id){const g=STU;if(id==='first')return g.answered>=1;if(id==='sharp')return g.correctStreak>=5;if(id==='coins')return g.coins>=400;if(id==='gem')return g.gems>=1;if(id==='streak')return g.streak>=7;if(id==='explorer')return ['L1','L2','L3'].every(l=>g.opened&&g.opened[l]);return false;}
+function seedAwards(){AWARDS.forEach(a=>{if(awardUnlocked(a.id))STU.awards[a.id]=true;});}
+function checkAwards(){let newly=null;AWARDS.forEach(a=>{if(!STU.awards[a.id]&&awardUnlocked(a.id)){STU.awards[a.id]=true;newly=a;}});if(newly)toast('Award unlocked — '+newly.n);}
+function toast(msg){const t=document.createElement('div');t.className='toast';t.innerHTML=ic('star',16,'#FFD166')+' '+msg;document.getElementById('overlay').appendChild(t);setTimeout(()=>t.remove(),1900);}
+function renderWallet(){document.getElementById('wallet').innerHTML=`<span class="wchip flame">${ic('flame',16)} ${STU.streak}</span><span class="wchip coin">${ic('coin',16)} ${STU.coins}</span><span class="wchip gem">${ic('gem',16)} ${STU.gems}</span>`;}
+
+/* ---------- OLYMPIAD (no question counts) ---------- */
+function olyScreen(){
+ if(S.oly.view==='topics')return olyTopics();
+ if(S.oly.view==='practice')return practiceScreen('Olympiad');
+ let h=`<div class="appbar"><div><h1>Olympiad</h1><div class="sub">Your climb to mastery</div></div></div>`;
+ h+=`<div class="hero"><h2>Keep climbing, Ved</h2><p>You're on Level 3 · Grades 5–6. Pick up where you left off.</p>
+   <button class="cta" onclick="openLevel('L3')">Continue ${ic('chev',16)}</button><div class="mk">${ic('star',150,'#fff')}</div></div>`;
+ h+=`<div class="wrap"><div class="eyebrow">Levels</div><div class="journey">`;
+ DATA.olympiad.forEach((lv,i)=>{
+   const tot=lv.topics.reduce((a,t)=>a+t.count,0),empty=tot===0;
+   const prog=STU.lvlProg[lv.level]||0, done=prog>=100;
+   const last=i===DATA.olympiad.length-1;
+   const node=empty?'locked':(done?'done':'');
+   const tag=empty?`<span class="chip soon">Soon</span>`:(done?`<span class="chip done">${ic('check',14)} Done</span>`:`<span class="chip go">Continue</span>`);
+   h+=`<div class="lvl ${empty?'locked':''}" ${empty?'':`onclick="openLevel('${lv.level}')"`}>
+     <div class="railwrap"><div class="node ${node}">${empty?ic('lock',20):lv.level}</div>${last?'':'<div class="rail"></div>'}</div>
+     <div class="body"><div class="grow"><div class="title">${bandName(lv.level_name)}</div>
+       <div class="meta">${empty?'Content coming soon':lv.topics.length+' topics · '+(done?'Completed':prog+'% explored')}</div></div>${tag}</div></div>`;
+ });
+ return h+`</div></div>`;
+}
+function openLevel(L){S.oly.level=L;S.oly.view='topics';STU.opened[L]=true;checkAwards();render();}
+function olyTopics(){
+ const lv=DATA.olympiad.find(l=>l.level===S.oly.level);
+ let h=`<div class="appbar"><div class="back" onclick="setTab('olympiad')">${ic('back',20)}</div>
+   <div><h1>Level ${lv.level.slice(1)}</h1><div class="sub">${bandName(lv.level_name)} · pick a topic</div></div></div>`;
+ h+=`<div class="wrap"><div class="grid">`;
+ lv.topics.forEach((t,i)=>{
+   const empty=t.count===0;
+   const prog=empty?0:[0,15,40,70,100][i%5];
+   const col=PHEX[t.pillar];
+   h+=`<div class="tcard ${empty?'empty':''}" ${empty?'':`onclick="openTopic('${t.topic_key}','${t.display_name.replace(/'/g,'')}')"`}>
+     <div class="tglyph" style="background:${empty?'#EEF0F4':PLT[t.pillar]}">${empty?'':pglyph(t.pillar)}</div>
+     <div class="tname">${t.display_name}</div>
+     ${empty?`<div class="tprog"><span class="tpct">Coming soon</span></div>`
+       :`<div class="tprog"><div class="tbar"><i style="width:${prog}%;background:${col}"></i></div><span class="tpct">${prog?prog+'%':'Start'}</span></div>`}</div>`;
+ });
+ return h+`</div></div>`;
+}
+function openTopic(key,name){S.practice=makePractice('oly',key,name);S.oly.view='practice';render();}
+
+/* ---------- SCHOOL (chapters sequenced) ---------- */
+function chapNum(name){const m=String(name).match(/^\s*(?:ch\.?|chapter)?\s*(\d+)\s*([A-Za-z])?/i);if(m)return parseInt(m[1])*100+(m[2]?m[2].toUpperCase().charCodeAt(0)-64:0);return 1e6;}
+function schoolScreen(){
+ if(S.school.view==='practice')return practiceScreen('School');
+ const b=S.school.board,g=S.school.grade,cur=DATA.curriculum[b].grades[g];
+ const chaps=(cur.chapters||[]).slice().sort((a,c)=>chapNum(a.name)-chapNum(c.name)||a.name.localeCompare(c.name));
+ let h=`<div class="appbar"><div><h1>School</h1><div class="sub">Your curriculum, chapter by chapter</div></div></div>`;
+ h+=`<div class="chips">`+DATA.curriculum_order.map(k=>`<div class="bchip ${k===b?'on':''}" onclick="selBoard('${k}')">${DATA.curriculum[k].name}</div>`).join('')+`</div>`;
+ h+=`<div class="seg">`+[1,2,3,4,5,6].map(n=>`<div class="g ${n===g?'on':''}" onclick="selGrade(${n})">G${n}</div>`).join('')+`</div>`;
+ h+=`<div class="wrap"><div class="eyebrow">${DATA.curriculum[b].name} · Grade ${g}</div>`;
+ if(!chaps.length)h+=`<div class="li" style="cursor:default"><div class="meta">No chapters mapped yet.</div></div>`;
+ chaps.forEach((c,i)=>{
+   const clean=c.name.replace(/^\s*(ch\.?|chapter)?\s*\d+[A-Za-z]?\s*[:.\-]?\s*/i,'').trim()||c.name;
+   h+=`<div class="li" onclick="openChapter('${clean.replace(/'/g,'')}')">
+     <div class="num">${i+1}</div><div class="grow"><div class="title" style="font-size:14.5px">${clean}</div></div>${ic('chev',18,'#C9CFDA')}</div>`;
+ });
+ return h+`</div>`;
+}
+function selBoard(b){S.school.board=b;render();}
+function selGrade(g){S.school.grade=g;render();}
+function openChapter(name){S.practice=makePractice('school',String(S.school.grade),name);S.school.view='practice';render();}
+
+/* ---------- PRACTICE ---------- */
+function makePractice(kind,key,topicName){const pool=kind==='school'?DATA.samples.school:DATA.samples.oly;const fb=Object.values(DATA.samples.oly)[0];return {topic:topicName,q:(pool&&pool[key])||fb,pillar:kind==='oly'?pillarOf(key):null,picked:null,idx:3,total:10};}
+function practiceScreen(origin){
+ const p=S.practice,q=p.q;const back=origin==='School'?`S.school.view='home';render()`:`S.oly.view='topics';render()`;
+ let h=`<div class="appbar"><div class="back" onclick="${back}">${ic('back',20)}</div><div class="grow"><h1 style="font-size:19px">${p.topic}</h1><div class="sub">${origin} practice</div></div></div>`;
+ h+=`<div class="wrap"><div class="pbar"><i style="width:${p.idx/p.total*100}%"></i></div></div>`;
+ h+=`<div class="qcard"><div style="font-weight:800;font-size:18px;line-height:1.3">${q.stem||'Sample question'}</div>`;
+ const L=['A','B','C','D','E','F'];(q.choices&&q.choices.length?q.choices:['A','B','C','D']).forEach((c,i)=>{h+=`<div class="opt" id="opt${i}" onclick="pick(${i})"><div class="k">${L[i]}</div><div>${c}</div></div>`;});
+ h+=`</div><div class="fbar" id="fbar"></div>`;
+ h+=`<div class="wrap"><button class="ghost" style="width:100%;margin-bottom:10px" onclick="hint()">${ic('bulb',18,'#E65100')} Need a hint?</button>
+   <div id="hintbox" style="display:none;background:var(--orange-l);border-radius:13px;padding:12px;font-weight:700;color:var(--orange-d);margin-bottom:10px;font-size:13.5px"></div>
+   <button class="primary" onclick="nextQ()">Next question →</button></div>`;
+ return h;
+}
+function pick(i){const p=S.practice,q=p.q;if(p.picked!==null)return;p.picked=i;const ca=(typeof q.correct_answer==='number')?q.correct_answer:0;
+ document.getElementById('opt'+i).classList.add(i===ca?'correct':'wrong');if(i!==ca){const e=document.getElementById('opt'+ca);if(e)e.classList.add('correct');}
+ STU.answered++;const f=document.getElementById('fbar');
+ if(i===ca){STU.xp+=10;STU.coins+=5;STU.correctStreak++;STU.score=Math.min(800,STU.score+1);
+   if(p.pillar&&STU.strands){const s=STU.strands.find(x=>x.p===p.pillar);if(s)s.pct=Math.min(100,s.pct+1);}
+   if(STU.correctStreak%5===0)STU.gems+=1;
+   f.className='fbar ok';f.textContent='Correct! +10 XP · +5 coins';}
+ else{STU.xp+=2;STU.correctStreak=0;f.className='fbar no';f.textContent='Not quite — see the answer. +2 XP for trying';}
+ checkAwards();renderWallet();}
+function hint(){const b=document.getElementById('hintbox');b.style.display='block';b.textContent=S.practice.q.hint||'Break it into smaller steps using the numbers given.';}
+function nextQ(){S.practice.picked=null;S.practice.idx=Math.min(S.practice.total,S.practice.idx+1);render();}
+
+/* ---------- PROGRESS ---------- */
+function ahVerdict(){const s=STU.score,[lo,hi]=STU.band;if(s<lo)return{t:'Building foundations',c:'var(--orange-d)',bg:'var(--orange-l)',msg:'We’re strengthening the basics for Grade '+STU.grade+'. Steady practice moves this up.'};if(s<=hi)return{t:'On track',c:'var(--green)',bg:'var(--green-l)',msg:'Right where Ved should be for Grade '+STU.grade+'. Keep the streak going.'};return{t:'Ahead of grade',c:'var(--blue)',bg:'var(--blue-l)',msg:'Working above Grade '+STU.grade+' level — time to stretch with harder topics.'};}
+function progressScreen(){
+ const v=ahVerdict(),[lo,hi]=STU.band,minS=lo-80,maxS=hi+80;
+ const pos=Math.max(3,Math.min(97,(STU.score-minS)/(maxS-minS)*100));
+ const z1=(lo-minS)/(maxS-minS)*100,z2=(hi-minS)/(maxS-minS)*100;
+ let h=`<div class="appbar"><div><h1>Progress</h1><div class="sub">How ${STU.name} is growing</div></div></div>`;
+ h+=`<div class="ah"><div class="row"><div class="grow"><div class="faint" style="font-weight:800;font-size:12px;text-transform:uppercase;letter-spacing:1px">Academic height</div>
+   <div class="verdict" style="color:${v.c}">${v.t}</div></div>
+   <div class="scorechip" style="background:${v.bg};color:${v.c}">${ic('trend',15)} +${STU.delta} this month</div></div>`;
+ h+=`<div class="gauge"><div class="z gz1" style="width:${z1}%"></div><div class="z gz2" style="width:${z2-z1}%"></div><div class="z gz3" style="width:${100-z2}%"></div><div class="gmark" style="left:${pos}%"></div></div>`;
+ h+=`<div class="glabels"><span>Building</span><span style="color:${v.c}">${STU.name} is here</span><span>Ahead</span></div>`;
+ h+=`<div style="margin-top:14px;display:flex;align-items:center;justify-content:space-between"><div class="meta" style="font-weight:800">Around the Grade ${STU.grade} average <span class="faint">· ${STU.score} of 800</span></div>
+   <button class="linkbtn" onclick="ahToggle()">${ic('info',15)} What's this?</button></div>`;
+ if(S.ahOpen)h+=`<div class="ex">We turn how hard the questions ${STU.name} gets right into a score from <b>200 to 800</b>, like a standardised test. <b>500</b> is a typical Grade ${STU.grade} score and <b>800</b> is exceptional — ${STU.name} is at <b>${STU.score}</b>, just above average. We only ever compare ${STU.name} to last week, never to other kids.</div>`;
+ h+=`</div>`;
+ h+=`<div class="wrap"><div class="statgrid">
+   <div class="b">${ic('flame',20,'#FF6D00')}<b>${STU.streak}</b><span>Day streak</span></div>
+   <div class="b">${ic('grad',20,'#8B5CF6')}<b>${STU.topicsMastered}</b><span>Topics mastered</span></div>
+   <div class="b">${ic('target',20,'#0FB17E')}<b>${STU.score}</b><span>Scale score</span></div></div></div>`;
+ const slab=p=>p>=75?['Strong','var(--green)','var(--green-l)']:p>=55?['Growing','#E65100','var(--orange-l)']:['Keep practising','var(--muted)','#F0F1F5'];
+ const scard=s=>{const col=PHEX[s.p],lab=slab(s.pct);return `<div class="scard"><div class="top"><div class="ringwrap">${ring(s.pct,46,col)}<span style="color:${col}">${s.pct}%</span></div>
+   <div class="grow"><div class="title" style="font-size:13.5px">${s.n}</div><div class="meta" style="font-size:12px">${s.topics} topics</div></div></div>
+   <div class="slabel" style="color:${lab[1]};background:${lab[2]}">${lab[0]}</div></div>`;};
+ h+=`<div class="wrap"><div class="eyebrow">Mastery — the 4 pillars</div><div class="strands">`+STU.strands.slice(0,4).map(scard).join('')+`</div>`;
+ const s5=STU.strands[4],c5=PHEX[s5.p],l5=slab(s5.pct);
+ h+=`<div class="eyebrow" style="margin-top:14px">Plus · Logic & Puzzles</div><div class="scard"><div class="top"><div class="ringwrap">${ring(s5.pct,46,c5)}<span style="color:${c5}">${s5.pct}%</span></div>
+   <div class="grow"><div class="title" style="font-size:14px">${s5.n}</div><div class="meta" style="font-size:12px">${s5.topics} topics · spans all pillars</div></div>
+   <div class="slabel" style="color:${l5[1]};background:${l5[2]}">${l5[0]}</div></div></div>`;
+ h+=`</div>`;
+ h+=`<div class="wrap"><div class="eyebrow">Awards</div></div><div class="arow">`+AWARDS.map(a=>{const on=!!STU.awards[a.id];return `<div class="award ${on?'':'locked'}"><div class="abadge">${ic(a.ic,24)}</div><div class="an">${a.n}</div></div>`;}).join('')+`</div>`;
+ h+=`<div class="wrap"><div class="eyebrow">Today</div><div class="li" onclick="alert('Daily puzzle (mock)')"><div class="ic" style="background:var(--alg-l);color:var(--alg)">${ic('star',20)}</div>
+   <div class="grow"><div class="title" style="font-size:14.5px">Daily puzzle</div><div class="meta">Solve to keep your ${STU.streak}-day streak</div></div>${ic('chev',18,'#C9CFDA')}</div></div>`;
+ return h;
+}
+
+/* ---------- PROFILE ---------- */
+function profileScreen(){
+ if(S.parent.open)return parentScreen();
+ let h=`<div class="appbar"><div class="grow"><h1>Profile</h1></div><div class="back" onclick="openSheet('edit')">${ic('edit',18)}</div></div>`;
+ h+=`<div class="wrap"><div class="phead"><div class="avatar">V</div><div class="grow"><div class="title" style="font-size:20px">${STU.name}</div>
+   <div class="meta">Level ${STU.level.slice(1)} · Grade ${STU.grade} · ${STU.board}</div></div></div>
+   <div class="statgrid"><div class="b">${ic('coin',20,'#FF6D00')}<b>${STU.coins}</b><span>Kiwi Coins</span></div>
+   <div class="b">${ic('gem',20,'#8B5CF6')}<b>${STU.gems}</b><span>Mastery Gems</span></div>
+   <div class="b">${ic('star',20,'#0FB17E')}<b>${fmtK(STU.xp)}</b><span>XP</span></div></div></div>`;
+ h+=`<div class="wrap"><div class="eyebrow">Account</div>`;
+ h+=row('edit','Edit profile','Name, avatar, level & grade',`openSheet('edit')`);
+ h+=row('users','Switch learner','Ved · add a sibling',`openSheet('switch')`);
+ h+=row('shield','Parent dashboard','PIN protected',`S.parent.open=true;S.parent.pin='';render()`);
+ h+=`<div class="eyebrow">App</div>`;
+ h+=row('bell','Notifications','Daily reminder · 6 PM',`openSheet('soon')`);
+ h+=row('globe','Language & region','English · India',`openSheet('soon')`);
+ h+=row('info','About Kiwimath','Version 2.0',`openSheet('soon')`);
+ h+=`<div class="li danger" onclick="openSheet('signout')"><div class="ic">${ic('out',20)}</div><div class="grow"><div class="title danger" style="font-size:14.5px">Sign out</div></div></div>`;
+ return h+`</div>`;
+}
+function row(icn,t,m,act){return `<div class="li" onclick="${act}"><div class="ic">${ic(icn,20)}</div><div class="grow"><div class="title" style="font-size:14.5px">${t}</div>${m?`<div class="meta">${m}</div>`:''}</div>${ic('chev',18,'#C9CFDA')}</div>`;}
+
+/* ---------- PARENT ---------- */
+function parentScreen(){
+ const ok=S.parent.pin.length>=4,v=ahVerdict();
+ let h=`<div class="appbar"><div class="back" onclick="S.parent.open=false;render()">${ic('back',20)}</div><div><h1 style="font-size:21px">Parent dashboard</h1><div class="sub">${ok?STU.name+' · Grade '+STU.grade+' · '+STU.board:'Enter your 4-digit PIN'}</div></div></div>`;
+ if(!ok){h+=`<div class="wrap" style="text-align:center;margin-top:12px"><div class="dots">`+[0,1,2,3].map(i=>`<i class="${i<S.parent.pin.length?'f':''}"></i>`).join('')+`</div>`;
+   h+=`<div class="pin">`+[1,2,3,4,5,6,7,8,9].map(n=>`<button onclick="pin(${n})">${n}</button>`).join('')+`<button onclick="pinDel()">${ic('back',20)}</button><button onclick="pin(0)">0</button><button onclick="render()">${ic('check',20,'#0FB17E')}</button></div>`;
+   h+=`<div class="meta" style="margin-top:8px">A PIN, not a maths problem — so the Olympiad kids can't crack it.</div></div>`;return h;}
+ h+=`<div class="ah"><div class="faint" style="font-weight:800;font-size:12px;text-transform:uppercase;letter-spacing:1px">Academic height</div>
+   <div class="verdict" style="color:${v.c}">${v.t} for Grade ${STU.grade}</div><div class="ex" style="margin-top:10px">${v.msg}</div>
+   <div style="margin-top:12px" class="meta">Scale score <b style="color:var(--ink)">${STU.score}</b> of 800 — Grade ${STU.grade} average ≈ 500 · up ${STU.delta} this month</div></div>`;
+ h+=`<div class="wrap"><div class="statgrid"><div class="b"><b>81%</b><span>Accuracy</span></div><div class="b"><b>18/37</b><span>Skills mastered</span></div><div class="b"><b>5</b><span>Days/week</span></div></div>`;
+ h+=`<div class="eyebrow">Strengths</div><div class="li" style="cursor:default"><div class="ic" style="background:var(--green-l);color:var(--green)">${ic('check',20)}</div><div class="grow"><div class="title" style="font-size:14px">Number sense, Patterns</div></div></div>`;
+ h+=`<div class="eyebrow">Needs practice</div><div class="li" style="cursor:default"><div class="ic" style="background:var(--orange-l);color:var(--orange-d)">${ic('target',20)}</div><div class="grow"><div class="title" style="font-size:14px">Geometry — angles & area</div></div></div>`;
+ h+=`<div class="meta" style="text-align:center;margin-top:8px">No coins or gems here — only real learning.</div></div>`;
+ return h;
+}
+function pin(n){if(S.parent.pin.length<4){S.parent.pin+=n;render();}}
+function pinDel(){S.parent.pin=S.parent.pin.slice(0,-1);render();}
+
+/* ---------- sheets ---------- */
+function openSheet(k){S.sheet=k;document.getElementById('overlay').innerHTML=sheetHTML();}
+function closeSheet(){S.sheet=null;document.getElementById('overlay').innerHTML='';}
+function sheetHTML(){
+ const body={
+  edit:`<h2 style="font-size:19px">Edit profile</h2><div class="meta" style="margin:10px 0 4px">Name</div><div class="li" style="cursor:default">Ved</div><div class="meta" style="margin:6px 0 4px">Grade</div><div class="seg" style="padding:0">${[3,4,5,6].map(n=>`<div class="g ${n===5?'on':''}">G${n}</div>`).join('')}</div><button class="primary" style="margin-top:14px" onclick="closeSheet()">Save</button>`,
+  switch:`<h2 style="font-size:19px">Switch learner</h2>${row('user','Ved','Grade 5 · active','closeSheet()')}<div class="li" onclick="closeSheet()"><div class="ic" style="background:var(--orange-l);color:var(--orange-d)">${ic('users',20)}</div><div class="grow"><div class="title" style="font-size:14.5px">Add a learner</div><div class="meta">Up to 4 children per account</div></div></div>`,
+  signout:`<h2 style="font-size:19px">Sign out?</h2><div class="meta" style="margin:8px 0 16px">${STU.name}'s progress is saved to your account. You can sign back in anytime.</div><button class="primary danger" style="background:#D8412F" onclick="closeSheet()">Sign out</button><button class="ghost" style="width:100%;margin-top:9px" onclick="closeSheet()">Cancel</button>`,
+  soon:`<h2 style="font-size:19px">Coming soon</h2><div class="meta" style="margin:8px 0 14px">This setting isn't wired up in the prototype.</div><button class="ghost" style="width:100%" onclick="closeSheet()">Close</button>`
+ }[S.sheet]||'';
+ return `<div class="scrim" onclick="closeSheet()"></div><div class="sheet">${body}</div>`;
+}
+seedAwards();render();
+</script>
+</body>
+</html>

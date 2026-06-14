@@ -1,0 +1,323 @@
+{
+  "curriculum": "singapore",
+  "curriculum_name": "Singapore Math",
+  "grade": 2,
+  "total_chapters": 7,
+  "total_questions": 200,
+  "chapters": [
+    {
+      "chapter_name": "2A: Addition and Subtraction to 1000",
+      "total_questions": 40,
+      "skill_ids": [
+        "subtraction_basic"
+      ],
+      "adaptive_topic_ids": [
+        "g2-subtraction"
+      ],
+      "question_ids": [
+        "SING-G2-007",
+        "SING-G2-012",
+        "SING-G2-013",
+        "SING-G2-017",
+        "SING-G2-018",
+        "SING-G2-019",
+        "SING-G2-021",
+        "SING-G2-033",
+        "SING-G2-035",
+        "SING-G2-042",
+        "SING-G2-043",
+        "SING-G2-056",
+        "SING-G2-060",
+        "SING-G2-061",
+        "SING-G2-068",
+        "SING-G2-070",
+        "SING-G2-071",
+        "SING-G2-079",
+        "SING-G2-089",
+        "SING-G2-090",
+        "SING-G2-091",
+        "SING-G2-096",
+        "SING-G2-101",
+        "SING-G2-113",
+        "SING-G2-115",
+        "SING-G2-116",
+        "SING-G2-117",
+        "SING-G2-125",
+        "SING-G2-126",
+        "SING-G2-127",
+        "SING-G2-133",
+        "SING-G2-140",
+        "SING-G2-145",
+        "SING-G2-149",
+        "SING-G2-151",
+        "SING-G2-152",
+        "SING-G2-153",
+        "SING-G2-154",
+        "SING-G2-157",
+        "SING-G2-161"
+      ],
+      "difficulty_range": {
+        "min": -1.63,
+        "max": 1.11
+      }
+    },
+    {
+      "chapter_name": "2A: Division",
+      "total_questions": 25,
+      "skill_ids": [
+        "division_basic"
+      ],
+      "adaptive_topic_ids": [
+        "g2-word-problems"
+      ],
+      "question_ids": [
+        "SING-G2-045",
+        "SING-G2-052",
+        "SING-G2-053",
+        "SING-G2-054",
+        "SING-G2-057",
+        "SING-G2-062",
+        "SING-G2-072",
+        "SING-G2-073",
+        "SING-G2-074",
+        "SING-G2-082",
+        "SING-G2-083",
+        "SING-G2-084",
+        "SING-G2-085",
+        "SING-G2-099",
+        "SING-G2-107",
+        "SING-G2-118",
+        "SING-G2-128",
+        "SING-G2-162",
+        "SING-G2-163",
+        "SING-G2-167",
+        "SING-G2-168",
+        "SING-G2-175",
+        "SING-G2-181",
+        "SING-G2-185",
+        "SING-G2-186"
+      ],
+      "difficulty_range": {
+        "min": -0.69,
+        "max": 1.5
+      }
+    },
+    {
+      "chapter_name": "2A: Multiplication Tables",
+      "total_questions": 40,
+      "skill_ids": [
+        "multiplication_facts"
+      ],
+      "adaptive_topic_ids": [
+        "g2-word-problems"
+      ],
+      "question_ids": [
+        "SING-G2-001",
+        "SING-G2-002",
+        "SING-G2-003",
+        "SING-G2-004",
+        "SING-G2-005",
+        "SING-G2-006",
+        "SING-G2-008",
+        "SING-G2-009",
+        "SING-G2-010",
+        "SING-G2-011",
+        "SING-G2-014",
+        "SING-G2-015",
+        "SING-G2-016",
+        "SING-G2-020",
+        "SING-G2-024",
+        "SING-G2-025",
+        "SING-G2-026",
+        "SING-G2-028",
+        "SING-G2-029",
+        "SING-G2-030",
+        "SING-G2-031",
+        "SING-G2-032",
+        "SING-G2-036",
+        "SING-G2-037",
+        "SING-G2-038",
+        "SING-G2-044",
+        "SING-G2-051",
+        "SING-G2-080",
+        "SING-G2-081",
+        "SING-G2-093",
+        "SING-G2-097",
+        "SING-G2-098",
+        "SING-G2-102",
+        "SING-G2-105",
+        "SING-G2-106",
+        "SING-G2-111",
+        "SING-G2-120",
+        "SING-G2-134",
+        "SING-G2-135",
+        "SING-G2-141"
+      ],
+      "difficulty_range": {
+        "min": -2.02,
+        "max": 0.72
+      }
+    },
+    {
+      "chapter_name": "2B: Bar Models",
+      "total_questions": 30,
+      "skill_ids": [
+        "comparison"
+      ],
+      "adaptive_topic_ids": [
+        "g2-counting"
+      ],
+      "question_ids": [
+        "SING-G2-067",
+        "SING-G2-076",
+        "SING-G2-077",
+        "SING-G2-078",
+        "SING-G2-092",
+        "SING-G2-095",
+        "SING-G2-100",
+        "SING-G2-110",
+        "SING-G2-114",
+        "SING-G2-124",
+        "SING-G2-148",
+        "SING-G2-150",
+        "SING-G2-156",
+        "SING-G2-171",
+        "SING-G2-172",
+        "SING-G2-173",
+        "SING-G2-174",
+        "SING-G2-176",
+        "SING-G2-183",
+        "SING-G2-184",
+        "SING-G2-187",
+        "SING-G2-188",
+        "SING-G2-192",
+        "SING-G2-194",
+        "SING-G2-195",
+        "SING-G2-196",
+        "SING-G2-197",
+        "SING-G2-198",
+        "SING-G2-199",
+        "SING-G2-200"
+      ],
+      "difficulty_range": {
+        "min": -0.46,
+        "max": 2.2
+      }
+    },
+    {
+      "chapter_name": "2B: Fractions",
+      "total_questions": 25,
+      "skill_ids": [
+        "fraction_concept"
+      ],
+      "adaptive_topic_ids": [
+        "g2-word-problems"
+      ],
+      "question_ids": [
+        "SING-G2-022",
+        "SING-G2-023",
+        "SING-G2-027",
+        "SING-G2-034",
+        "SING-G2-039",
+        "SING-G2-040",
+        "SING-G2-046",
+        "SING-G2-047",
+        "SING-G2-055",
+        "SING-G2-058",
+        "SING-G2-063",
+        "SING-G2-069",
+        "SING-G2-086",
+        "SING-G2-103",
+        "SING-G2-108",
+        "SING-G2-112",
+        "SING-G2-121",
+        "SING-G2-129",
+        "SING-G2-136",
+        "SING-G2-137",
+        "SING-G2-142",
+        "SING-G2-146",
+        "SING-G2-158",
+        "SING-G2-164",
+        "SING-G2-165"
+      ],
+      "difficulty_range": {
+        "min": -1.24,
+        "max": 1.11
+      }
+    },
+    {
+      "chapter_name": "2B: Money",
+      "total_questions": 20,
+      "skill_ids": [
+        "money"
+      ],
+      "adaptive_topic_ids": [
+        "g2-time-money"
+      ],
+      "question_ids": [
+        "SING-G2-041",
+        "SING-G2-048",
+        "SING-G2-049",
+        "SING-G2-050",
+        "SING-G2-059",
+        "SING-G2-064",
+        "SING-G2-065",
+        "SING-G2-066",
+        "SING-G2-075",
+        "SING-G2-087",
+        "SING-G2-104",
+        "SING-G2-119",
+        "SING-G2-122",
+        "SING-G2-138",
+        "SING-G2-159",
+        "SING-G2-160",
+        "SING-G2-166",
+        "SING-G2-169",
+        "SING-G2-177",
+        "SING-G2-178"
+      ],
+      "difficulty_range": {
+        "min": -0.85,
+        "max": 1.34
+      }
+    },
+    {
+      "chapter_name": "2B: Time",
+      "total_questions": 20,
+      "skill_ids": [
+        "time"
+      ],
+      "adaptive_topic_ids": [
+        "g2-time-money"
+      ],
+      "question_ids": [
+        "SING-G2-088",
+        "SING-G2-094",
+        "SING-G2-109",
+        "SING-G2-123",
+        "SING-G2-130",
+        "SING-G2-131",
+        "SING-G2-132",
+        "SING-G2-139",
+        "SING-G2-143",
+        "SING-G2-144",
+        "SING-G2-147",
+        "SING-G2-155",
+        "SING-G2-170",
+        "SING-G2-179",
+        "SING-G2-180",
+        "SING-G2-182",
+        "SING-G2-189",
+        "SING-G2-190",
+        "SING-G2-191",
+        "SING-G2-193"
+      ],
+      "difficulty_range": {
+        "min": -0.22,
+        "max": 1.81
+      }
+    }
+  ],
+  "schema_version": "4.0",
+  "generated_at": "2026-05-03T09:32:42.525472"
+}

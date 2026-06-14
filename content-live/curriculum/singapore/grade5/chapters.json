@@ -1,0 +1,345 @@
+{
+  "curriculum": "singapore",
+  "curriculum_name": "Singapore Math",
+  "grade": 5,
+  "total_chapters": 8,
+  "total_questions": 200,
+  "chapters": [
+    {
+      "chapter_name": "5A: Fractions",
+      "total_questions": 35,
+      "skill_ids": [
+        "fraction_multiply"
+      ],
+      "adaptive_topic_ids": [
+        "g5-fractions"
+      ],
+      "question_ids": [
+        "SING-G5-022",
+        "SING-G5-023",
+        "SING-G5-028",
+        "SING-G5-029",
+        "SING-G5-042",
+        "SING-G5-055",
+        "SING-G5-056",
+        "SING-G5-057",
+        "SING-G5-060",
+        "SING-G5-061",
+        "SING-G5-067",
+        "SING-G5-072",
+        "SING-G5-074",
+        "SING-G5-077",
+        "SING-G5-083",
+        "SING-G5-084",
+        "SING-G5-085",
+        "SING-G5-096",
+        "SING-G5-098",
+        "SING-G5-103",
+        "SING-G5-104",
+        "SING-G5-105",
+        "SING-G5-122",
+        "SING-G5-129",
+        "SING-G5-138",
+        "SING-G5-150",
+        "SING-G5-152",
+        "SING-G5-153",
+        "SING-G5-162",
+        "SING-G5-167",
+        "SING-G5-168",
+        "SING-G5-169",
+        "SING-G5-178",
+        "SING-G5-179",
+        "SING-G5-184"
+      ],
+      "difficulty_range": {
+        "min": -0.23,
+        "max": 1.62
+      }
+    },
+    {
+      "chapter_name": "5A: Order of Operations",
+      "total_questions": 30,
+      "skill_ids": [
+        "order_of_ops"
+      ],
+      "adaptive_topic_ids": [
+        "g5-algebra"
+      ],
+      "question_ids": [
+        "SING-G5-001",
+        "SING-G5-002",
+        "SING-G5-005",
+        "SING-G5-009",
+        "SING-G5-013",
+        "SING-G5-018",
+        "SING-G5-021",
+        "SING-G5-027",
+        "SING-G5-035",
+        "SING-G5-036",
+        "SING-G5-037",
+        "SING-G5-054",
+        "SING-G5-066",
+        "SING-G5-071",
+        "SING-G5-082",
+        "SING-G5-088",
+        "SING-G5-095",
+        "SING-G5-102",
+        "SING-G5-112",
+        "SING-G5-113",
+        "SING-G5-119",
+        "SING-G5-128",
+        "SING-G5-132",
+        "SING-G5-133",
+        "SING-G5-134",
+        "SING-G5-137",
+        "SING-G5-143",
+        "SING-G5-144",
+        "SING-G5-149",
+        "SING-G5-151"
+      ],
+      "difficulty_range": {
+        "min": -0.68,
+        "max": 1.17
+      }
+    },
+    {
+      "chapter_name": "5A: Ratio",
+      "total_questions": 30,
+      "skill_ids": [
+        "counting_10",
+        "addition_basic"
+      ],
+      "adaptive_topic_ids": [
+        "g5-numbers",
+        "g5-arithmetic"
+      ],
+      "question_ids": [
+        "SING-G5-048",
+        "SING-G5-049",
+        "SING-G5-050",
+        "SING-G5-062",
+        "SING-G5-073",
+        "SING-G5-078",
+        "SING-G5-079",
+        "SING-G5-089",
+        "SING-G5-090",
+        "SING-G5-091",
+        "SING-G5-099",
+        "SING-G5-114",
+        "SING-G5-115",
+        "SING-G5-120",
+        "SING-G5-121",
+        "SING-G5-123",
+        "SING-G5-124",
+        "SING-G5-145",
+        "SING-G5-154",
+        "SING-G5-155",
+        "SING-G5-156",
+        "SING-G5-164",
+        "SING-G5-170",
+        "SING-G5-171",
+        "SING-G5-180",
+        "SING-G5-181",
+        "SING-G5-182",
+        "SING-G5-189",
+        "SING-G5-190",
+        "SING-G5-193"
+      ],
+      "difficulty_range": {
+        "min": 0.05,
+        "max": 1.96
+      }
+    },
+    {
+      "chapter_name": "5B: Average",
+      "total_questions": 20,
+      "skill_ids": [
+        "counting_10",
+        "addition_basic"
+      ],
+      "adaptive_topic_ids": [
+        "g5-numbers",
+        "g5-arithmetic"
+      ],
+      "question_ids": [
+        "SING-G5-004",
+        "SING-G5-011",
+        "SING-G5-016",
+        "SING-G5-025",
+        "SING-G5-032",
+        "SING-G5-033",
+        "SING-G5-038",
+        "SING-G5-039",
+        "SING-G5-046",
+        "SING-G5-064",
+        "SING-G5-069",
+        "SING-G5-070",
+        "SING-G5-076",
+        "SING-G5-087",
+        "SING-G5-094",
+        "SING-G5-101",
+        "SING-G5-111",
+        "SING-G5-118",
+        "SING-G5-142",
+        "SING-G5-158"
+      ],
+      "difficulty_range": {
+        "min": -0.51,
+        "max": 1.17
+      }
+    },
+    {
+      "chapter_name": "5B: Challenging Word Problems",
+      "total_questions": 20,
+      "skill_ids": [
+        "multi_step"
+      ],
+      "adaptive_topic_ids": [
+        "g5-word-problems"
+      ],
+      "question_ids": [
+        "SING-G5-159",
+        "SING-G5-161",
+        "SING-G5-172",
+        "SING-G5-175",
+        "SING-G5-176",
+        "SING-G5-177",
+        "SING-G5-183",
+        "SING-G5-185",
+        "SING-G5-186",
+        "SING-G5-187",
+        "SING-G5-188",
+        "SING-G5-191",
+        "SING-G5-192",
+        "SING-G5-194",
+        "SING-G5-195",
+        "SING-G5-196",
+        "SING-G5-197",
+        "SING-G5-198",
+        "SING-G5-199",
+        "SING-G5-200"
+      ],
+      "difficulty_range": {
+        "min": 1.17,
+        "max": 2.8
+      }
+    },
+    {
+      "chapter_name": "5B: Percentage",
+      "total_questions": 25,
+      "skill_ids": [
+        "counting_10",
+        "addition_basic"
+      ],
+      "adaptive_topic_ids": [
+        "g5-numbers",
+        "g5-arithmetic"
+      ],
+      "question_ids": [
+        "SING-G5-003",
+        "SING-G5-006",
+        "SING-G5-010",
+        "SING-G5-019",
+        "SING-G5-030",
+        "SING-G5-031",
+        "SING-G5-043",
+        "SING-G5-063",
+        "SING-G5-068",
+        "SING-G5-080",
+        "SING-G5-086",
+        "SING-G5-092",
+        "SING-G5-106",
+        "SING-G5-116",
+        "SING-G5-125",
+        "SING-G5-130",
+        "SING-G5-135",
+        "SING-G5-136",
+        "SING-G5-146",
+        "SING-G5-160",
+        "SING-G5-163",
+        "SING-G5-165",
+        "SING-G5-166",
+        "SING-G5-173",
+        "SING-G5-174"
+      ],
+      "difficulty_range": {
+        "min": -0.51,
+        "max": 1.45
+      }
+    },
+    {
+      "chapter_name": "5B: Rate",
+      "total_questions": 20,
+      "skill_ids": [
+        "multiplication_facts"
+      ],
+      "adaptive_topic_ids": [
+        "g5-arithmetic"
+      ],
+      "question_ids": [
+        "SING-G5-007",
+        "SING-G5-008",
+        "SING-G5-012",
+        "SING-G5-017",
+        "SING-G5-020",
+        "SING-G5-026",
+        "SING-G5-034",
+        "SING-G5-040",
+        "SING-G5-041",
+        "SING-G5-047",
+        "SING-G5-052",
+        "SING-G5-053",
+        "SING-G5-058",
+        "SING-G5-059",
+        "SING-G5-065",
+        "SING-G5-081",
+        "SING-G5-097",
+        "SING-G5-127",
+        "SING-G5-131",
+        "SING-G5-148"
+      ],
+      "difficulty_range": {
+        "min": -0.46,
+        "max": 1.06
+      }
+    },
+    {
+      "chapter_name": "5B: Volume",
+      "total_questions": 20,
+      "skill_ids": [
+        "capacity"
+      ],
+      "adaptive_topic_ids": [
+        "g5-measurement"
+      ],
+      "question_ids": [
+        "SING-G5-014",
+        "SING-G5-015",
+        "SING-G5-024",
+        "SING-G5-044",
+        "SING-G5-045",
+        "SING-G5-051",
+        "SING-G5-075",
+        "SING-G5-093",
+        "SING-G5-100",
+        "SING-G5-107",
+        "SING-G5-108",
+        "SING-G5-109",
+        "SING-G5-110",
+        "SING-G5-117",
+        "SING-G5-126",
+        "SING-G5-139",
+        "SING-G5-140",
+        "SING-G5-141",
+        "SING-G5-147",
+        "SING-G5-157"
+      ],
+      "difficulty_range": {
+        "min": -0.35,
+        "max": 1.17
+      }
+    }
+  ],
+  "schema_version": "4.0",
+  "generated_at": "2026-05-03T09:32:42.529396"
+}

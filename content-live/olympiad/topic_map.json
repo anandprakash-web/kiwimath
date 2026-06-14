@@ -1,0 +1,701 @@
+{
+ "note": "Kiwi Maths Level/Topic taxonomy. Pillars (NT/ALG/GEO/COM) are internal only.",
+ "levels": [
+  {
+   "level": "L1",
+   "level_name": "Grade 1/2",
+   "topics": [
+    {
+     "topic_key": "number_sense",
+     "pillar": "NT",
+     "display_name": "Numbers All Around",
+     "count": 1131
+    },
+    {
+     "topic_key": "odd_even_skip",
+     "pillar": "NT",
+     "display_name": "Number Hops",
+     "count": 107
+    },
+    {
+     "topic_key": "number_shape_patterns",
+     "pillar": "ALG",
+     "display_name": "Pattern Play",
+     "count": 1146
+    },
+    {
+     "topic_key": "missing_number",
+     "pillar": "ALG",
+     "display_name": "Mystery Numbers",
+     "count": 2064
+    },
+    {
+     "topic_key": "shapes_2d_3d",
+     "pillar": "GEO",
+     "display_name": "Shape Spotters",
+     "count": 857
+    },
+    {
+     "topic_key": "spatial",
+     "pillar": "GEO",
+     "display_name": "Picture Puzzles",
+     "count": 967
+    },
+    {
+     "topic_key": "sorting",
+     "pillar": "COM",
+     "display_name": "Sort It Out",
+     "count": 152
+    },
+    {
+     "topic_key": "counting_logic",
+     "pillar": "COM",
+     "display_name": "Think & Count",
+     "count": 2874
+    }
+   ]
+  },
+  {
+   "level": "L2",
+   "level_name": "Grade 3/4",
+   "topics": [
+    {
+     "topic_key": "place_value",
+     "pillar": "NT",
+     "display_name": "Big Numbers",
+     "count": 1061
+    },
+    {
+     "topic_key": "factors_multiples",
+     "pillar": "NT",
+     "display_name": "Number Families",
+     "count": 230
+    },
+    {
+     "topic_key": "unit_digit_patterns",
+     "pillar": "NT",
+     "display_name": "Last-Digit Detective",
+     "count": 4
+    },
+    {
+     "topic_key": "patterns_rules",
+     "pillar": "ALG",
+     "display_name": "Rule Finders",
+     "count": 575
+    },
+    {
+     "topic_key": "equations_disguise",
+     "pillar": "ALG",
+     "display_name": "Balance the Scale",
+     "count": 1643
+    },
+    {
+     "topic_key": "fractions_intro",
+     "pillar": "ALG",
+     "display_name": "Fair Shares",
+     "count": 103
+    },
+    {
+     "topic_key": "perimeter_area",
+     "pillar": "GEO",
+     "display_name": "Measure Masters",
+     "count": 290
+    },
+    {
+     "topic_key": "angles_symmetry_grids",
+     "pillar": "GEO",
+     "display_name": "Turn & Flip",
+     "count": 899
+    },
+    {
+     "topic_key": "systematic_listing",
+     "pillar": "COM",
+     "display_name": "List It All",
+     "count": 0
+    },
+    {
+     "topic_key": "logic_puzzles",
+     "pillar": "COM",
+     "display_name": "Brain Benders",
+     "count": 1173
+    }
+   ]
+  },
+  {
+   "level": "L3",
+   "level_name": "Grade 5/6",
+   "topics": [
+    {
+     "topic_key": "divisibility_primes",
+     "pillar": "NT",
+     "display_name": "Prime Hunters",
+     "count": 607
+    },
+    {
+     "topic_key": "hcf_lcm",
+     "pillar": "NT",
+     "display_name": "Common Ground",
+     "count": 40
+    },
+    {
+     "topic_key": "remainders_cycles",
+     "pillar": "NT",
+     "display_name": "Clock Arithmetic",
+     "count": 88
+    },
+    {
+     "topic_key": "fractions_decimals_pct",
+     "pillar": "ALG",
+     "display_name": "Parts & Wholes",
+     "count": 153
+    },
+    {
+     "topic_key": "ratio_proportion",
+     "pillar": "ALG",
+     "display_name": "In Proportion",
+     "count": 340
+    },
+    {
+     "topic_key": "variables_equations",
+     "pillar": "ALG",
+     "display_name": "Letter Maths",
+     "count": 212
+    },
+    {
+     "topic_key": "sequences_series",
+     "pillar": "ALG",
+     "display_name": "What Comes Next",
+     "count": 329
+    },
+    {
+     "topic_key": "angles_triangles",
+     "pillar": "GEO",
+     "display_name": "Angle Chasers",
+     "count": 102
+    },
+    {
+     "topic_key": "area_perimeter_volume",
+     "pillar": "GEO",
+     "display_name": "Space & Surface",
+     "count": 282
+    },
+    {
+     "topic_key": "coordinates",
+     "pillar": "GEO",
+     "display_name": "Map Makers",
+     "count": 217
+    },
+    {
+     "topic_key": "counting_principles",
+     "pillar": "COM",
+     "display_name": "Smart Counting",
+     "count": 205
+    },
+    {
+     "topic_key": "pigeonhole",
+     "pillar": "COM",
+     "display_name": "Sock Drawer Logic",
+     "count": 28
+    },
+    {
+     "topic_key": "games_invariants",
+     "pillar": "COM",
+     "display_name": "Winning Moves",
+     "count": 220
+    }
+   ]
+  },
+  {
+   "level": "L4",
+   "level_name": "Grade 7/8",
+   "topics": [
+    {
+     "topic_key": "modular_intro",
+     "pillar": "NT",
+     "display_name": "Remainder World",
+     "count": 0
+    },
+    {
+     "topic_key": "primes_powers",
+     "pillar": "NT",
+     "display_name": "Power Numbers",
+     "count": 0
+    },
+    {
+     "topic_key": "number_bases",
+     "pillar": "NT",
+     "display_name": "Beyond Base 10",
+     "count": 0
+    },
+    {
+     "topic_key": "diophantine_intro",
+     "pillar": "NT",
+     "display_name": "Whole-Number Equations",
+     "count": 0
+    },
+    {
+     "topic_key": "linear_systems",
+     "pillar": "ALG",
+     "display_name": "Equation Solvers",
+     "count": 0
+    },
+    {
+     "topic_key": "polynomials_identities",
+     "pillar": "ALG",
+     "display_name": "Algebra Toolkit",
+     "count": 0
+    },
+    {
+     "topic_key": "inequalities_intro",
+     "pillar": "ALG",
+     "display_name": "Compare & Bound",
+     "count": 0
+    },
+    {
+     "topic_key": "exponents_roots",
+     "pillar": "ALG",
+     "display_name": "Power Up",
+     "count": 0
+    },
+    {
+     "topic_key": "congruence_similarity",
+     "pillar": "GEO",
+     "display_name": "Twin Triangles",
+     "count": 0
+    },
+    {
+     "topic_key": "pythagoras",
+     "pillar": "GEO",
+     "display_name": "Right-Angle Power",
+     "count": 0
+    },
+    {
+     "topic_key": "circles_basic",
+     "pillar": "GEO",
+     "display_name": "Round About",
+     "count": 0
+    },
+    {
+     "topic_key": "quadrilaterals_area",
+     "pillar": "GEO",
+     "display_name": "Shape Strategies",
+     "count": 0
+    },
+    {
+     "topic_key": "permutations_combinations",
+     "pillar": "COM",
+     "display_name": "Arrange & Choose",
+     "count": 0
+    },
+    {
+     "topic_key": "probability_intro",
+     "pillar": "COM",
+     "display_name": "Chance It",
+     "count": 0
+    },
+    {
+     "topic_key": "pigeonhole_colouring",
+     "pillar": "COM",
+     "display_name": "Clever Arguments",
+     "count": 0
+    },
+    {
+     "topic_key": "recursion_patterns",
+     "pillar": "COM",
+     "display_name": "Step by Step",
+     "count": 0
+    }
+   ]
+  },
+  {
+   "level": "L5",
+   "level_name": "Grade 9/10 (IOQM)",
+   "topics": [
+    {
+     "topic_key": "modular_flt",
+     "pillar": "NT",
+     "display_name": "Modular & FLT",
+     "count": 0
+    },
+    {
+     "topic_key": "gcd_euclid",
+     "pillar": "NT",
+     "display_name": "GCD & Euclid",
+     "count": 0
+    },
+    {
+     "topic_key": "diophantine",
+     "pillar": "NT",
+     "display_name": "Diophantine",
+     "count": 0
+    },
+    {
+     "topic_key": "digits_bases",
+     "pillar": "NT",
+     "display_name": "Digits & Bases",
+     "count": 0
+    },
+    {
+     "topic_key": "polynomials_vieta",
+     "pillar": "ALG",
+     "display_name": "Polynomials & Vieta",
+     "count": 0
+    },
+    {
+     "topic_key": "quadratics",
+     "pillar": "ALG",
+     "display_name": "Quadratics",
+     "count": 0
+    },
+    {
+     "topic_key": "inequalities_amgm",
+     "pillar": "ALG",
+     "display_name": "Inequalities (AM-GM)",
+     "count": 0
+    },
+    {
+     "topic_key": "sequences_floor",
+     "pillar": "ALG",
+     "display_name": "Sequences & Floor",
+     "count": 0
+    },
+    {
+     "topic_key": "functional_thinking",
+     "pillar": "ALG",
+     "display_name": "Functional Thinking",
+     "count": 0
+    },
+    {
+     "topic_key": "triangle_geometry",
+     "pillar": "GEO",
+     "display_name": "Triangle Geometry",
+     "count": 0
+    },
+    {
+     "topic_key": "circle_geometry",
+     "pillar": "GEO",
+     "display_name": "Circle Geometry",
+     "count": 0
+    },
+    {
+     "topic_key": "trig_geometry",
+     "pillar": "GEO",
+     "display_name": "Trig for Geometry",
+     "count": 0
+    },
+    {
+     "topic_key": "similarity_chasing",
+     "pillar": "GEO",
+     "display_name": "Similarity & Chasing",
+     "count": 0
+    },
+    {
+     "topic_key": "advanced_counting",
+     "pillar": "COM",
+     "display_name": "Advanced Counting",
+     "count": 0
+    },
+    {
+     "topic_key": "recurrences",
+     "pillar": "COM",
+     "display_name": "Recurrences",
+     "count": 0
+    },
+    {
+     "topic_key": "pigeonhole_extremal",
+     "pillar": "COM",
+     "display_name": "Pigeonhole & Extremal",
+     "count": 0
+    },
+    {
+     "topic_key": "combinatorial_games",
+     "pillar": "COM",
+     "display_name": "Combinatorial Games",
+     "count": 0
+    }
+   ]
+  },
+  {
+   "level": "L6",
+   "level_name": "Olympiad (RMO)",
+   "topics": [
+    {
+     "topic_key": "congruences_crt",
+     "pillar": "NT",
+     "display_name": "Congruences & CRT",
+     "count": 0
+    },
+    {
+     "topic_key": "orders_qr",
+     "pillar": "NT",
+     "display_name": "Orders & QR",
+     "count": 0
+    },
+    {
+     "topic_key": "diophantine_tech",
+     "pillar": "NT",
+     "display_name": "Diophantine Techniques",
+     "count": 0
+    },
+    {
+     "topic_key": "padic",
+     "pillar": "NT",
+     "display_name": "p-adic Valuation",
+     "count": 0
+    },
+    {
+     "topic_key": "inequality_toolbox",
+     "pillar": "ALG",
+     "display_name": "Inequality Toolbox",
+     "count": 0
+    },
+    {
+     "topic_key": "polynomial_theory",
+     "pillar": "ALG",
+     "display_name": "Polynomial Theory",
+     "count": 0
+    },
+    {
+     "topic_key": "functional_equations",
+     "pillar": "ALG",
+     "display_name": "Functional Equations",
+     "count": 0
+    },
+    {
+     "topic_key": "recurrence_proofs",
+     "pillar": "ALG",
+     "display_name": "Recurrence Proofs",
+     "count": 0
+    },
+    {
+     "topic_key": "triangle_circle_configs",
+     "pillar": "GEO",
+     "display_name": "Triangle & Circle Configs",
+     "count": 0
+    },
+    {
+     "topic_key": "transformations_intro",
+     "pillar": "GEO",
+     "display_name": "Transformations",
+     "count": 0
+    },
+    {
+     "topic_key": "geometric_inequalities",
+     "pillar": "GEO",
+     "display_name": "Geometric Inequalities",
+     "count": 0
+    },
+    {
+     "topic_key": "trig_length",
+     "pillar": "GEO",
+     "display_name": "Trig & Length",
+     "count": 0
+    },
+    {
+     "topic_key": "double_counting",
+     "pillar": "COM",
+     "display_name": "Double Counting",
+     "count": 0
+    },
+    {
+     "topic_key": "extremal",
+     "pillar": "COM",
+     "display_name": "Extremal Arguments",
+     "count": 0
+    },
+    {
+     "topic_key": "graph_theory_intro",
+     "pillar": "COM",
+     "display_name": "Graph Theory",
+     "count": 0
+    },
+    {
+     "topic_key": "invariants",
+     "pillar": "COM",
+     "display_name": "Invariants & Monovariants",
+     "count": 0
+    }
+   ]
+  },
+  {
+   "level": "L7",
+   "level_name": "Olympiad (INMO)",
+   "topics": [
+    {
+     "topic_key": "orders_primitive_qr",
+     "pillar": "NT",
+     "display_name": "Orders, Primitive Roots & QR",
+     "count": 0
+    },
+    {
+     "topic_key": "lte",
+     "pillar": "NT",
+     "display_name": "Lifting the Exponent",
+     "count": 0
+    },
+    {
+     "topic_key": "advanced_diophantine",
+     "pillar": "NT",
+     "display_name": "Advanced Diophantine",
+     "count": 0
+    },
+    {
+     "topic_key": "nt_constructions",
+     "pillar": "NT",
+     "display_name": "NT Constructions",
+     "count": 0
+    },
+    {
+     "topic_key": "functional_equations_rig",
+     "pillar": "ALG",
+     "display_name": "Functional Equations (Rigorous)",
+     "count": 0
+    },
+    {
+     "topic_key": "polynomials_adv",
+     "pillar": "ALG",
+     "display_name": "Polynomials (Advanced)",
+     "count": 0
+    },
+    {
+     "topic_key": "advanced_inequalities",
+     "pillar": "ALG",
+     "display_name": "Advanced Inequalities",
+     "count": 0
+    },
+    {
+     "topic_key": "algebra_nt_crossover",
+     "pillar": "ALG",
+     "display_name": "Algebra-NT Crossover",
+     "count": 0
+    },
+    {
+     "topic_key": "inversion",
+     "pillar": "GEO",
+     "display_name": "Inversion",
+     "count": 0
+    },
+    {
+     "topic_key": "projective",
+     "pillar": "GEO",
+     "display_name": "Projective Flavour",
+     "count": 0
+    },
+    {
+     "topic_key": "spiral_similarity",
+     "pillar": "GEO",
+     "display_name": "Spiral Similarity",
+     "count": 0
+    },
+    {
+     "topic_key": "combinatorial_geometry",
+     "pillar": "GEO",
+     "display_name": "Combinatorial Geometry",
+     "count": 0
+    },
+    {
+     "topic_key": "graph_theory",
+     "pillar": "COM",
+     "display_name": "Graph Theory",
+     "count": 0
+    },
+    {
+     "topic_key": "extremal_combinatorics",
+     "pillar": "COM",
+     "display_name": "Extremal Combinatorics",
+     "count": 0
+    },
+    {
+     "topic_key": "games_processes",
+     "pillar": "COM",
+     "display_name": "Games & Processes",
+     "count": 0
+    },
+    {
+     "topic_key": "algebraic_counting",
+     "pillar": "COM",
+     "display_name": "Algebraic Methods in Counting",
+     "count": 0
+    }
+   ]
+  },
+  {
+   "level": "L8",
+   "level_name": "Olympiad (IMO)",
+   "topics": [
+    {
+     "topic_key": "full_nt",
+     "pillar": "NT",
+     "display_name": "Full NT Arsenal",
+     "count": 0
+    },
+    {
+     "topic_key": "nt_constructions_open",
+     "pillar": "NT",
+     "display_name": "NT Constructions & Open-Style",
+     "count": 0
+    },
+    {
+     "topic_key": "fe_mastery",
+     "pillar": "ALG",
+     "display_name": "FE Mastery",
+     "count": 0
+    },
+    {
+     "topic_key": "polynomial_mastery",
+     "pillar": "ALG",
+     "display_name": "Polynomial Mastery",
+     "count": 0
+    },
+    {
+     "topic_key": "inequality_mastery",
+     "pillar": "ALG",
+     "display_name": "Inequality Mastery",
+     "count": 0
+    },
+    {
+     "topic_key": "algebraic_combinatorics",
+     "pillar": "ALG",
+     "display_name": "Algebraic Combinatorics",
+     "count": 0
+    },
+    {
+     "topic_key": "configurational_geometry",
+     "pillar": "GEO",
+     "display_name": "Configurational Geometry",
+     "count": 0
+    },
+    {
+     "topic_key": "transformation_toolkit",
+     "pillar": "GEO",
+     "display_name": "Transformation Toolkit",
+     "count": 0
+    },
+    {
+     "topic_key": "computational_backup",
+     "pillar": "GEO",
+     "display_name": "Computational Backup",
+     "count": 0
+    },
+    {
+     "topic_key": "extremal_probabilistic",
+     "pillar": "COM",
+     "display_name": "Extremal & Probabilistic",
+     "count": 0
+    },
+    {
+     "topic_key": "deep_invariants",
+     "pillar": "COM",
+     "display_name": "Deep Invariants & Processes",
+     "count": 0
+    },
+    {
+     "topic_key": "combinatorial_nt",
+     "pillar": "COM",
+     "display_name": "Combinatorial NT",
+     "count": 0
+    }
+   ]
+  }
+ ]
+}

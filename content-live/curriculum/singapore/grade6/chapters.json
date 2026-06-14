@@ -1,0 +1,329 @@
+{
+  "curriculum": "singapore",
+  "curriculum_name": "Singapore Math",
+  "grade": 6,
+  "total_chapters": 7,
+  "total_questions": 200,
+  "chapters": [
+    {
+      "chapter_name": "6A: Algebra",
+      "total_questions": 35,
+      "skill_ids": [
+        "counting_10",
+        "addition_basic"
+      ],
+      "adaptive_topic_ids": [
+        "g6-arithmetic",
+        "g6-numbers"
+      ],
+      "question_ids": [
+        "SING-G6-001",
+        "SING-G6-002",
+        "SING-G6-005",
+        "SING-G6-006",
+        "SING-G6-008",
+        "SING-G6-009",
+        "SING-G6-022",
+        "SING-G6-023",
+        "SING-G6-028",
+        "SING-G6-029",
+        "SING-G6-030",
+        "SING-G6-031",
+        "SING-G6-036",
+        "SING-G6-037",
+        "SING-G6-040",
+        "SING-G6-044",
+        "SING-G6-059",
+        "SING-G6-060",
+        "SING-G6-068",
+        "SING-G6-076",
+        "SING-G6-077",
+        "SING-G6-083",
+        "SING-G6-084",
+        "SING-G6-090",
+        "SING-G6-094",
+        "SING-G6-095",
+        "SING-G6-110",
+        "SING-G6-114",
+        "SING-G6-121",
+        "SING-G6-122",
+        "SING-G6-132",
+        "SING-G6-136",
+        "SING-G6-156",
+        "SING-G6-157",
+        "SING-G6-160"
+      ],
+      "difficulty_range": {
+        "min": -0.16,
+        "max": 1.58
+      }
+    },
+    {
+      "chapter_name": "6A: Percentage Advanced",
+      "total_questions": 25,
+      "skill_ids": [
+        "counting_10",
+        "addition_basic"
+      ],
+      "adaptive_topic_ids": [
+        "g6-arithmetic",
+        "g6-numbers"
+      ],
+      "question_ids": [
+        "SING-G6-019",
+        "SING-G6-020",
+        "SING-G6-021",
+        "SING-G6-027",
+        "SING-G6-046",
+        "SING-G6-047",
+        "SING-G6-048",
+        "SING-G6-049",
+        "SING-G6-052",
+        "SING-G6-057",
+        "SING-G6-064",
+        "SING-G6-071",
+        "SING-G6-074",
+        "SING-G6-092",
+        "SING-G6-106",
+        "SING-G6-111",
+        "SING-G6-112",
+        "SING-G6-116",
+        "SING-G6-149",
+        "SING-G6-154",
+        "SING-G6-155",
+        "SING-G6-164",
+        "SING-G6-170",
+        "SING-G6-171",
+        "SING-G6-178"
+      ],
+      "difficulty_range": {
+        "min": 0.11,
+        "max": 1.89
+      }
+    },
+    {
+      "chapter_name": "6A: Ratio Advanced",
+      "total_questions": 25,
+      "skill_ids": [
+        "multi_step"
+      ],
+      "adaptive_topic_ids": [
+        "g6-word-problems"
+      ],
+      "question_ids": [
+        "SING-G6-050",
+        "SING-G6-053",
+        "SING-G6-054",
+        "SING-G6-058",
+        "SING-G6-065",
+        "SING-G6-066",
+        "SING-G6-067",
+        "SING-G6-075",
+        "SING-G6-082",
+        "SING-G6-087",
+        "SING-G6-088",
+        "SING-G6-107",
+        "SING-G6-113",
+        "SING-G6-117",
+        "SING-G6-118",
+        "SING-G6-126",
+        "SING-G6-130",
+        "SING-G6-139",
+        "SING-G6-146",
+        "SING-G6-147",
+        "SING-G6-165",
+        "SING-G6-166",
+        "SING-G6-173",
+        "SING-G6-182",
+        "SING-G6-185"
+      ],
+      "difficulty_range": {
+        "min": 0.42,
+        "max": 2.16
+      }
+    },
+    {
+      "chapter_name": "6A: Speed",
+      "total_questions": 30,
+      "skill_ids": [
+        "time"
+      ],
+      "adaptive_topic_ids": [
+        "g6-measurement"
+      ],
+      "question_ids": [
+        "SING-G6-003",
+        "SING-G6-010",
+        "SING-G6-016",
+        "SING-G6-017",
+        "SING-G6-024",
+        "SING-G6-025",
+        "SING-G6-026",
+        "SING-G6-032",
+        "SING-G6-033",
+        "SING-G6-038",
+        "SING-G6-039",
+        "SING-G6-041",
+        "SING-G6-051",
+        "SING-G6-055",
+        "SING-G6-061",
+        "SING-G6-069",
+        "SING-G6-078",
+        "SING-G6-096",
+        "SING-G6-115",
+        "SING-G6-123",
+        "SING-G6-128",
+        "SING-G6-129",
+        "SING-G6-133",
+        "SING-G6-137",
+        "SING-G6-138",
+        "SING-G6-141",
+        "SING-G6-142",
+        "SING-G6-143",
+        "SING-G6-152",
+        "SING-G6-162"
+      ],
+      "difficulty_range": {
+        "min": -0.16,
+        "max": 1.63
+      }
+    },
+    {
+      "chapter_name": "6B: Challenging Problems",
+      "total_questions": 40,
+      "skill_ids": [
+        "multi_step"
+      ],
+      "adaptive_topic_ids": [
+        "g6-word-problems"
+      ],
+      "question_ids": [
+        "SING-G6-093",
+        "SING-G6-098",
+        "SING-G6-099",
+        "SING-G6-108",
+        "SING-G6-109",
+        "SING-G6-119",
+        "SING-G6-120",
+        "SING-G6-127",
+        "SING-G6-131",
+        "SING-G6-140",
+        "SING-G6-150",
+        "SING-G6-151",
+        "SING-G6-167",
+        "SING-G6-168",
+        "SING-G6-169",
+        "SING-G6-172",
+        "SING-G6-174",
+        "SING-G6-175",
+        "SING-G6-176",
+        "SING-G6-177",
+        "SING-G6-179",
+        "SING-G6-180",
+        "SING-G6-181",
+        "SING-G6-183",
+        "SING-G6-184",
+        "SING-G6-186",
+        "SING-G6-187",
+        "SING-G6-188",
+        "SING-G6-189",
+        "SING-G6-190",
+        "SING-G6-191",
+        "SING-G6-192",
+        "SING-G6-193",
+        "SING-G6-194",
+        "SING-G6-195",
+        "SING-G6-196",
+        "SING-G6-197",
+        "SING-G6-198",
+        "SING-G6-199",
+        "SING-G6-200"
+      ],
+      "difficulty_range": {
+        "min": 0.89,
+        "max": 3.0
+      }
+    },
+    {
+      "chapter_name": "6B: Circles",
+      "total_questions": 25,
+      "skill_ids": [
+        "area"
+      ],
+      "adaptive_topic_ids": [
+        "g6-geometry"
+      ],
+      "question_ids": [
+        "SING-G6-004",
+        "SING-G6-007",
+        "SING-G6-011",
+        "SING-G6-013",
+        "SING-G6-014",
+        "SING-G6-034",
+        "SING-G6-042",
+        "SING-G6-043",
+        "SING-G6-045",
+        "SING-G6-056",
+        "SING-G6-062",
+        "SING-G6-079",
+        "SING-G6-080",
+        "SING-G6-085",
+        "SING-G6-091",
+        "SING-G6-100",
+        "SING-G6-101",
+        "SING-G6-124",
+        "SING-G6-125",
+        "SING-G6-134",
+        "SING-G6-144",
+        "SING-G6-153",
+        "SING-G6-158",
+        "SING-G6-161",
+        "SING-G6-163"
+      ],
+      "difficulty_range": {
+        "min": -0.16,
+        "max": 1.63
+      }
+    },
+    {
+      "chapter_name": "6B: Pie Charts",
+      "total_questions": 20,
+      "skill_ids": [
+        "fraction_concept",
+        "comparison"
+      ],
+      "adaptive_topic_ids": [
+        "g6-fractions",
+        "g6-numbers"
+      ],
+      "question_ids": [
+        "SING-G6-012",
+        "SING-G6-015",
+        "SING-G6-018",
+        "SING-G6-035",
+        "SING-G6-063",
+        "SING-G6-070",
+        "SING-G6-072",
+        "SING-G6-073",
+        "SING-G6-081",
+        "SING-G6-086",
+        "SING-G6-089",
+        "SING-G6-097",
+        "SING-G6-102",
+        "SING-G6-103",
+        "SING-G6-104",
+        "SING-G6-105",
+        "SING-G6-135",
+        "SING-G6-145",
+        "SING-G6-148",
+        "SING-G6-159"
+      ],
+      "difficulty_range": {
+        "min": 0.0,
+        "max": 1.53
+      }
+    }
+  ],
+  "schema_version": "4.0",
+  "generated_at": "2026-05-03T09:32:42.530606"
+}
