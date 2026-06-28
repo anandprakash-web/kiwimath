@@ -74,7 +74,7 @@ class _PillarDetailScreenState extends State<PillarDetailScreen> {
         title: Row(
           children: [
             Text(widget.pillar.emoji, style: const TextStyle(fontSize: 22)),
-            SizedBox(width: KiwiSpacing.sm),
+            const SizedBox(width: KiwiSpacing.sm),
             Text(
               widget.pillar.name,
               style: TextStyle(
@@ -91,7 +91,7 @@ class _PillarDetailScreenState extends State<PillarDetailScreen> {
           ? const Center(child: CircularProgressIndicator())
           : SafeArea(
               child: SingleChildScrollView(
-                padding: EdgeInsets.symmetric(horizontal: KiwiSpacing.lg, vertical: KiwiSpacing.md),
+                padding: const EdgeInsets.symmetric(horizontal: KiwiSpacing.lg, vertical: KiwiSpacing.md),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -104,7 +104,7 @@ class _PillarDetailScreenState extends State<PillarDetailScreen> {
                         fontFamily: typo.fontFamily,
                       ),
                     ),
-                    SizedBox(height: KiwiSpacing.lg),
+                    const SizedBox(height: KiwiSpacing.lg),
 
                     // Overall pillar progress
                     if (widget.progress != null && widget.progress!.questionsAttempted > 0)
@@ -116,7 +116,7 @@ class _PillarDetailScreenState extends State<PillarDetailScreen> {
                         tier: tier,
                       ),
 
-                    SizedBox(height: KiwiSpacing.lg),
+                    const SizedBox(height: KiwiSpacing.lg),
 
                     // Level path
                     ...(_levels ?? []).asMap().entries.map((entry) {
@@ -199,7 +199,7 @@ class _PillarProgressHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(KiwiSpacing.md),
+      padding: const EdgeInsets.all(KiwiSpacing.md),
       decoration: BoxDecoration(
         color: pillarColor.withOpacity(0.06),
         borderRadius: BorderRadius.circular(tier.shape.cardRadius),
@@ -232,7 +232,7 @@ class _PillarProgressHeader extends StatelessWidget {
               ],
             ),
           ),
-          SizedBox(width: KiwiSpacing.md),
+          const SizedBox(width: KiwiSpacing.md),
           Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -245,7 +245,7 @@ class _PillarProgressHeader extends StatelessWidget {
                     color: colors.textPrimary,
                   ),
                 ),
-                SizedBox(height: KiwiSpacing.xs - 2),
+                const SizedBox(height: KiwiSpacing.xs - 2),
                 Text(
                   progress.canAdvance
                       ? 'Ready to advance!'
@@ -341,7 +341,7 @@ class _LevelNode extends StatelessWidget {
                             ? const Icon(Icons.check, size: 14, color: Colors.white)
                             : Text(
                                 '$levelNum',
-                                style: TextStyle(
+                                style: const TextStyle(
                                   fontSize: 11,
                                   fontWeight: FontWeight.w800,
                                   color: Colors.white,
@@ -361,7 +361,7 @@ class _LevelNode extends StatelessWidget {
               ],
             ),
           ),
-          SizedBox(width: KiwiSpacing.sm),
+          const SizedBox(width: KiwiSpacing.sm),
 
           // ── Card content ────────────────────────────────────────
           Expanded(
@@ -374,7 +374,7 @@ class _LevelNode extends StatelessWidget {
                   onTap: onTap,
                   borderRadius: BorderRadius.circular(tier.shape.cardRadius),
                   child: Container(
-                    padding: EdgeInsets.all(KiwiSpacing.md),
+                    padding: const EdgeInsets.all(KiwiSpacing.md),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(tier.shape.cardRadius),
                       border: Border.all(
@@ -422,7 +422,7 @@ class _LevelNode extends StatelessWidget {
                             ),
                           ],
                         ),
-                        SizedBox(height: KiwiSpacing.sm),
+                        const SizedBox(height: KiwiSpacing.sm),
 
                         // Topics
                         if (locked)
@@ -461,7 +461,7 @@ class _LevelNode extends StatelessWidget {
 
                         // Progress bar (if attempted)
                         if (!locked && mastery > 0) ...[
-                          SizedBox(height: KiwiSpacing.sm),
+                          const SizedBox(height: KiwiSpacing.sm),
                           Row(
                             children: [
                               Expanded(
@@ -477,7 +477,7 @@ class _LevelNode extends StatelessWidget {
                                   ),
                                 ),
                               ),
-                              SizedBox(width: KiwiSpacing.sm),
+                              const SizedBox(width: KiwiSpacing.sm),
                               Text(
                                 '${mastery.toStringAsFixed(0)}%',
                                 style: TextStyle(
@@ -492,7 +492,7 @@ class _LevelNode extends StatelessWidget {
 
                         // Question count
                         if (!locked) ...[
-                          SizedBox(height: KiwiSpacing.xs),
+                          const SizedBox(height: KiwiSpacing.xs),
                           Text(
                             '$questionCount questions',
                             style: TextStyle(

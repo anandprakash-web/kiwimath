@@ -1,0 +1,1612 @@
+{
+  "level": "L3",
+  "level_name": "Grade 5/6",
+  "pillar": "COM",
+  "topic_key": "pigeonhole",
+  "display_name": "Sock Drawer Logic",
+  "total_questions": 28,
+  "questions": [
+    {
+      "id": "KM-L3-COM-0426",
+      "stem": "A meeting must be scheduled. Person A is free on Monday and Wednesday. Person B is free on Tuesday and Wednesday. Person C is free on Monday, Wednesday, and Thursday. On which day can all three meet?",
+      "choices": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday"
+      ],
+      "correct_answer": 2,
+      "difficulty_tier": "easy",
+      "difficulty_score": 1,
+      "visual_svg": null,
+      "visual_alt": null,
+      "diagnostics": {
+        "0": "Don't jump to the first answer that seems right. Check ALL the clues before deciding.",
+        "1": "Read the problem again — there's a clue you haven't used yet that changes the answer.",
+        "3": "Only use information given in the problem. Don't assume things that aren't stated.",
+        "correct_explanation": "The answer is Wednesday. By checking each clue against every option, only this answer satisfies all the conditions."
+      },
+      "tags": [
+        "schedule",
+        "common-time"
+      ],
+      "hint": {
+        "level_0": "Logic puzzles need patience. Start with the most definite clue and build from there.",
+        "level_1": "Try working through each possibility one at a time. Can you eliminate answers that definitely don't work? List each piece of information as a separate fact. Then test each answer choice — does it match ALL the facts?",
+        "level_2": "Work through each step carefully to see why."
+      },
+      "concept_cluster": "scheduling-logic",
+      "interaction_mode": "mcq",
+      "visual_context": null,
+      "irt_params": {
+        "a": 1.25,
+        "b": 0.86,
+        "c": 0.15
+      },
+      "irt_a": 1.25,
+      "irt_b": 0.86,
+      "irt_c": 0.15,
+      "solution_steps": [
+        "Read the clues or conditions carefully",
+        "Eliminate options that don't fit",
+        "Check remaining options against all conditions"
+      ],
+      "competency_level": "R",
+      "competency_confidence": 0.583,
+      "competency_name": "Reasoning",
+      "story_theme": "The Demon Hunters",
+      "story_chapter": 1,
+      "legacy_id": "T4-0908",
+      "km_level": "L3",
+      "km_pillar": "COM",
+      "km_topic": "pigeonhole",
+      "km_topic_display": "Sock Drawer Logic",
+      "km_source_bank": "v2"
+    },
+    {
+      "id": "KM-L3-COM-0427",
+      "stem": "In a class of 40 students, everyone studies at least one of art or music. 25 study art and 30 study music. How many study both?",
+      "choices": [
+        "5",
+        "10",
+        "15",
+        "20"
+      ],
+      "correct_answer": 2,
+      "difficulty_tier": "easy",
+      "difficulty_score": 19,
+      "visual_svg": null,
+      "visual_alt": null,
+      "diagnostics": {
+        "0": "Don't jump to the first answer that seems right. Check ALL the clues before deciding.",
+        "1": "Read the problem again — there's a clue you haven't used yet that changes the answer.",
+        "3": "Only use information given in the problem. Don't assume things that aren't stated.",
+        "correct_explanation": "The answer is 15. By checking each clue against every option, only this answer satisfies all the conditions."
+      },
+      "tags": [
+        "inclusion-exclusion",
+        "both"
+      ],
+      "hint": {
+        "level_0": "Logic puzzles need patience. Start with the most definite clue and build from there.",
+        "level_1": "Try working through each possibility one at a time. Can you eliminate answers that definitely don't work? List each piece of information as a separate fact. Then test each answer choice — does it match ALL the facts?",
+        "level_2": "Work through each step carefully to see why."
+      },
+      "concept_cluster": "venn-diagram-logic",
+      "interaction_mode": "mcq",
+      "visual_context": null,
+      "irt_params": {
+        "a": 1.53,
+        "b": 1.1,
+        "c": 0.15
+      },
+      "irt_a": 1.53,
+      "irt_b": 1.1,
+      "irt_c": 0.15,
+      "solution_steps": [
+        "Read the clues or conditions carefully",
+        "Eliminate options that don't fit",
+        "Check remaining options against all conditions"
+      ],
+      "competency_level": "K",
+      "competency_confidence": 0.5,
+      "competency_name": "Knowing",
+      "story_theme": "The Demon Hunters",
+      "story_chapter": 1,
+      "legacy_id": "T4-0925",
+      "km_level": "L3",
+      "km_pillar": "COM",
+      "km_topic": "pigeonhole",
+      "km_topic_display": "Sock Drawer Logic",
+      "km_source_bank": "v2"
+    },
+    {
+      "id": "KM-L3-COM-0428",
+      "stem": "In a class of 35, every student plays at least one instrument. 20 play piano, 22 play guitar. What is the minimum number that play both?",
+      "choices": [
+        "5",
+        "7",
+        "8",
+        "15"
+      ],
+      "correct_answer": 1,
+      "difficulty_tier": "easy",
+      "difficulty_score": 50,
+      "visual_svg": null,
+      "visual_alt": null,
+      "diagnostics": {
+        "0": "Don't jump to the first answer that seems right. Check ALL the clues before deciding.",
+        "2": "Almost there — you're off by just 1. Carefully re-do the last step.",
+        "3": "Only use information given in the problem. Don't assume things that aren't stated.",
+        "correct_explanation": "The answer is 7. By checking each clue against every option, only this answer satisfies all the conditions."
+      },
+      "tags": [
+        "minimum-overlap",
+        "pigeonhole"
+      ],
+      "hint": {
+        "level_0": "Logic puzzles need patience. Start with the most definite clue and build from there.",
+        "level_1": "Try working through each possibility one at a time. Can you eliminate answers that definitely don't work? List each piece of information as a separate fact. Then test each answer choice — does it match ALL the facts?",
+        "level_2": "Work through each step carefully to see why."
+      },
+      "concept_cluster": "venn-diagram-logic",
+      "interaction_mode": "mcq",
+      "visual_context": null,
+      "irt_params": {
+        "a": 1.65,
+        "b": 1.32,
+        "c": 0.15
+      },
+      "irt_a": 1.65,
+      "irt_b": 1.32,
+      "irt_c": 0.15,
+      "solution_steps": [
+        "Read the clues or conditions carefully",
+        "Eliminate options that don't fit",
+        "Check remaining options against all conditions"
+      ],
+      "competency_level": "R",
+      "competency_confidence": 0.583,
+      "competency_name": "Reasoning",
+      "story_theme": "The Demon Hunters",
+      "story_chapter": 2,
+      "legacy_id": "T4-0944",
+      "km_level": "L3",
+      "km_pillar": "COM",
+      "km_topic": "pigeonhole",
+      "km_topic_display": "Sock Drawer Logic",
+      "km_source_bank": "v2"
+    },
+    {
+      "id": "KM-L3-COM-0429",
+      "stem": "Six tasks must be done in order, but some can overlap. Task A takes 2 hours. Task B starts when A ends and takes 3 hours. Task C starts when A ends and takes 1 hour (runs in parallel with B). Task D starts when both B and C end and takes 2 hours. What is the minimum total time?",
+      "choices": [
+        "6 hours",
+        "7 hours",
+        "8 hours",
+        "9 hours"
+      ],
+      "correct_answer": 1,
+      "difficulty_tier": "easy",
+      "difficulty_score": 65,
+      "visual_svg": null,
+      "visual_alt": null,
+      "diagnostics": {
+        "0": "Don't jump to the first answer that seems right. Check ALL the clues before deciding.",
+        "2": "You might have the logic backwards. If A is taller than B, then B is shorter than A.",
+        "3": "Only use information given in the problem. Don't assume things that aren't stated.",
+        "correct_explanation": "The answer is 7 hours. By checking each clue against every option, only this answer satisfies all the conditions."
+      },
+      "tags": [
+        "critical-path",
+        "parallel"
+      ],
+      "hint": {
+        "level_0": "Logic puzzles need patience. Start with the most definite clue and build from there.",
+        "level_1": "Try working through each possibility one at a time. Can you eliminate answers that definitely don't work? List each piece of information as a separate fact. Then test each answer choice — does it match ALL the facts?",
+        "level_2": "Work through each step carefully to see why."
+      },
+      "concept_cluster": "scheduling-logic",
+      "interaction_mode": "mcq",
+      "visual_context": null,
+      "irt_params": {
+        "a": 1.4,
+        "b": 1.48,
+        "c": 0.15
+      },
+      "irt_a": 1.4,
+      "irt_b": 1.48,
+      "irt_c": 0.15,
+      "solution_steps": [
+        "List all the items or events mentioned",
+        "Use the given information to order them",
+        "Check your arrangement satisfies all conditions"
+      ],
+      "competency_level": "A",
+      "competency_confidence": 0.588,
+      "competency_name": "Applying",
+      "story_theme": "The Demon Hunters",
+      "story_chapter": 3,
+      "legacy_id": "T4-0997",
+      "km_level": "L3",
+      "km_pillar": "COM",
+      "km_topic": "pigeonhole",
+      "km_topic_display": "Sock Drawer Logic",
+      "km_source_bank": "v2"
+    },
+    {
+      "id": "KM-L3-COM-0430",
+      "stem": "If a shape has 4 equal sides, then it could be a square. Shape X has 4 equal sides. Shape Y is a square. Which must be true?",
+      "choices": [
+        "Shape X is a square",
+        "Shape Y has 4 equal sides",
+        "Shape X could be a square",
+        "Shape X is not a square"
+      ],
+      "correct_answer": 1,
+      "difficulty_tier": "easy",
+      "difficulty_score": 67,
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 180\" width=\"300\" height=\"180\" style=\"font-family:Arial,sans-serif\"><rect x=\"50\" y=\"30\" width=\"200\" height=\"120\" fill=\"#E8F4FD\" stroke=\"#2196F3\" stroke-width=\"2.5\" rx=\"2\"/></svg>",
+      "visual_alt": null,
+      "diagnostics": {
+        "0": "Don't jump to the first answer that seems right. Check ALL the clues before deciding.",
+        "2": "You might have the logic backwards. If A is taller than B, then B is shorter than A.",
+        "3": "Only use information given in the problem. Don't assume things that aren't stated.",
+        "correct_explanation": "The answer is Shape Y has 4 equal sides. By checking each clue against every option, only this answer satisfies all the conditions."
+      },
+      "tags": [
+        "conditional",
+        "properties"
+      ],
+      "hint": {
+        "level_0": "Logic puzzles need patience. Start with the most definite clue and build from there.",
+        "level_1": "Try working through each possibility one at a time. Can you eliminate answers that definitely don't work? List each piece of information as a separate fact. Then test each answer choice — does it match ALL the facts?",
+        "level_2": "Work through each step carefully to see why."
+      },
+      "concept_cluster": "if-then-reasoning",
+      "interaction_mode": "mcq",
+      "visual_context": null,
+      "irt_params": {
+        "a": 1.73,
+        "b": 1.52,
+        "c": 0.15
+      },
+      "irt_a": 1.73,
+      "irt_b": 1.52,
+      "irt_c": 0.15,
+      "solution_steps": [
+        "Read each statement carefully",
+        "Test each against the given information",
+        "Find which one is definitely correct or wrong"
+      ],
+      "competency_level": "A",
+      "competency_confidence": 0.444,
+      "competency_name": "Applying",
+      "story_theme": "The Demon Hunters",
+      "story_chapter": 2,
+      "legacy_id": "T4-0953",
+      "km_level": "L3",
+      "km_pillar": "COM",
+      "km_topic": "pigeonhole",
+      "km_topic_display": "Sock Drawer Logic",
+      "km_source_bank": "v2"
+    },
+    {
+      "id": "KM-L3-COM-0431",
+      "stem": "In a group of 60 children, 40 like pizza, 35 like burgers, and every child likes at least one. How many like both?",
+      "choices": [
+        "10",
+        "15",
+        "20",
+        "25"
+      ],
+      "correct_answer": 1,
+      "difficulty_tier": "easy",
+      "difficulty_score": 68,
+      "visual_svg": null,
+      "visual_alt": null,
+      "diagnostics": {
+        "0": "Don't jump to the first answer that seems right. Check ALL the clues before deciding.",
+        "2": "You might have the logic backwards. If A is taller than B, then B is shorter than A.",
+        "3": "Only use information given in the problem. Don't assume things that aren't stated.",
+        "correct_explanation": "The answer is 15. By checking each clue against every option, only this answer satisfies all the conditions."
+      },
+      "tags": [
+        "inclusion-exclusion",
+        "both"
+      ],
+      "hint": {
+        "level_0": "Logic puzzles need patience. Start with the most definite clue and build from there.",
+        "level_1": "Try working through each possibility one at a time. Can you eliminate answers that definitely don't work? List each piece of information as a separate fact. Then test each answer choice — does it match ALL the facts?",
+        "level_2": "Work through each step carefully to see why."
+      },
+      "concept_cluster": "venn-diagram-logic",
+      "interaction_mode": "mcq",
+      "visual_context": null,
+      "irt_params": {
+        "a": 1.8,
+        "b": 1.52,
+        "c": 0.15
+      },
+      "irt_a": 1.8,
+      "irt_b": 1.52,
+      "irt_c": 0.15,
+      "solution_steps": [
+        "Read the clues or conditions carefully",
+        "Eliminate options that don't fit",
+        "Check remaining options against all conditions"
+      ],
+      "competency_level": "K",
+      "competency_confidence": 0.5,
+      "competency_name": "Knowing",
+      "story_theme": "The Demon Hunters",
+      "story_chapter": 2,
+      "legacy_id": "T4-0955",
+      "km_level": "L3",
+      "km_pillar": "COM",
+      "km_topic": "pigeonhole",
+      "km_topic_display": "Sock Drawer Logic",
+      "km_source_bank": "v2"
+    },
+    {
+      "id": "KM-L3-COM-0432",
+      "stem": "Which of the following is the negation of 'At least 3 students passed'?",
+      "choices": [
+        "Exactly 3 students passed",
+        "More than 3 students passed",
+        "Fewer than 3 students passed",
+        "No students passed"
+      ],
+      "correct_answer": 2,
+      "difficulty_tier": "medium",
+      "difficulty_score": 76,
+      "visual_svg": null,
+      "visual_alt": null,
+      "diagnostics": {
+        "0": "Don't jump to the first answer that seems right. Check ALL the clues before deciding.",
+        "1": "Read the problem again — there's a clue you haven't used yet that changes the answer.",
+        "3": "Only use information given in the problem. Don't assume things that aren't stated.",
+        "correct_explanation": "The answer is Fewer than 3 students passed. By checking each clue against every option, only this answer satisfies all the conditions."
+      },
+      "tags": [
+        "negation",
+        "at-least"
+      ],
+      "hint": {
+        "level_0": "List each person's statement. If each statement were true, what would follow?",
+        "level_1": "Try assuming each person is the liar. Does exactly one lie produce a consistent scenario? Test each answer choice against ALL the given statements. Only one will be consistent.",
+        "level_2": "Testing all possibilities against the clues confirms this."
+      },
+      "concept_cluster": "logical-negation",
+      "interaction_mode": "mcq",
+      "visual_context": null,
+      "irt_params": {
+        "a": 1.5,
+        "b": 1.56,
+        "c": 0.15
+      },
+      "irt_a": 1.5,
+      "irt_b": 1.56,
+      "irt_c": 0.15,
+      "solution_steps": [
+        "Read the clues or conditions carefully",
+        "Eliminate options that don't fit",
+        "Check remaining options against all conditions"
+      ],
+      "competency_level": "A",
+      "competency_confidence": 0.8,
+      "competency_name": "Applying",
+      "story_theme": "The Demon Hunters",
+      "story_chapter": 3,
+      "legacy_id": "T4-0983",
+      "km_level": "L3",
+      "km_pillar": "COM",
+      "km_topic": "pigeonhole",
+      "km_topic_display": "Sock Drawer Logic",
+      "km_source_bank": "v2"
+    },
+    {
+      "id": "KM-L3-COM-0433",
+      "stem": "Consider: 'Statement A is false or Statement B is true.' If we know Statement A is true, what must be true about Statement B?",
+      "choices": [
+        "B must be true",
+        "B must be false",
+        "B can be either true or false",
+        "A must be false"
+      ],
+      "correct_answer": 0,
+      "difficulty_tier": "medium",
+      "difficulty_score": 80,
+      "visual_svg": null,
+      "visual_alt": null,
+      "diagnostics": {
+        "1": "Read the problem again — there's a clue you haven't used yet that changes the answer.",
+        "2": "You might have the logic backwards. If A is taller than B, then B is shorter than A.",
+        "3": "Only use information given in the problem. Don't assume things that aren't stated.",
+        "correct_explanation": "The answer is B must be true. By checking each clue against every option, only this answer satisfies all the conditions."
+      },
+      "tags": [
+        "disjunction",
+        "logic"
+      ],
+      "hint": {
+        "level_0": "Logic puzzles need patience. Start with the most definite clue and build from there.",
+        "level_1": "Try working through each possibility one at a time. Can you eliminate answers that definitely don't work? List each piece of information as a separate fact. Then test each answer choice — does it match ALL the facts?",
+        "level_2": "Work through each step carefully to see why."
+      },
+      "concept_cluster": "statement-analysis",
+      "interaction_mode": "mcq",
+      "visual_context": null,
+      "irt_params": {
+        "a": 1.55,
+        "b": 1.58,
+        "c": 0.15
+      },
+      "irt_a": 1.55,
+      "irt_b": 1.58,
+      "irt_c": 0.15,
+      "solution_steps": [
+        "Read each statement carefully",
+        "Test each against the given information",
+        "Find which one is definitely correct or wrong"
+      ],
+      "competency_level": "R",
+      "competency_confidence": 0.733,
+      "competency_name": "Reasoning",
+      "story_theme": "The Demon Hunters",
+      "story_chapter": 3,
+      "legacy_id": "T4-0980",
+      "km_level": "L3",
+      "km_pillar": "COM",
+      "km_topic": "pigeonhole",
+      "km_topic_display": "Sock Drawer Logic",
+      "km_source_bank": "v2"
+    },
+    {
+      "id": "KM-L3-COM-0434",
+      "stem": "If x > y and y > z, and z > 0, which must be true?",
+      "choices": [
+        "x > 0",
+        "x = y + z",
+        "y < 0",
+        "x < z"
+      ],
+      "correct_answer": 0,
+      "difficulty_tier": "medium",
+      "difficulty_score": 103,
+      "visual_svg": null,
+      "visual_alt": null,
+      "diagnostics": {
+        "1": "Read the problem again — there's a clue you haven't used yet that changes the answer.",
+        "2": "You might have the logic backwards. If A is taller than B, then B is shorter than A.",
+        "3": "Only use information given in the problem. Don't assume things that aren't stated.",
+        "correct_explanation": "The answer is x > 0. By checking each clue against every option, only this answer satisfies all the conditions."
+      },
+      "tags": [
+        "transitivity",
+        "inequalities"
+      ],
+      "hint": {
+        "level_0": "Logic puzzles need patience. Start with the most definite clue and build from there.",
+        "level_1": "Try working through each possibility one at a time. Can you eliminate answers that definitely don't work? List each piece of information as a separate fact. Then test each answer choice — does it match ALL the facts?",
+        "level_2": "Work through each step carefully to see why."
+      },
+      "concept_cluster": "if-then-reasoning",
+      "interaction_mode": "mcq",
+      "visual_context": null,
+      "irt_params": {
+        "a": 1.57,
+        "b": 1.68,
+        "c": 0.15
+      },
+      "irt_a": 1.57,
+      "irt_b": 1.68,
+      "irt_c": 0.15,
+      "solution_steps": [
+        "Read each statement carefully",
+        "Test each against the given information",
+        "Find which one is definitely correct or wrong"
+      ],
+      "competency_level": "R",
+      "competency_confidence": 0.636,
+      "competency_name": "Reasoning",
+      "story_theme": "The Demon Hunters",
+      "story_chapter": 3,
+      "legacy_id": "T4-0993",
+      "km_level": "L3",
+      "km_pillar": "COM",
+      "km_topic": "pigeonhole",
+      "km_topic_display": "Sock Drawer Logic",
+      "km_source_bank": "v2"
+    },
+    {
+      "id": "KM-L3-COM-0435",
+      "stem": "120 people were surveyed about pets. 70 have a dog, 50 have a cat, 40 have a fish. 20 have a dog and cat, 15 have a dog and fish, 10 have a cat and fish, and 5 have all three. How many have at least one pet?",
+      "choices": [
+        "110",
+        "130",
+        "100",
+        "120"
+      ],
+      "correct_answer": 3,
+      "difficulty_tier": "medium",
+      "difficulty_score": 104,
+      "visual_svg": null,
+      "visual_alt": null,
+      "diagnostics": {
+        "0": "Don't jump to the first answer that seems right. Check ALL the clues before deciding.",
+        "1": "Read the problem again — there's a clue you haven't used yet that changes the answer.",
+        "2": "You might have the logic backwards. If A is taller than B, then B is shorter than A.",
+        "correct_explanation": "The answer is 120. By checking each clue against every option, only this answer satisfies all the conditions."
+      },
+      "tags": [
+        "three-set",
+        "inclusion-exclusion"
+      ],
+      "hint": {
+        "level_0": "Logic puzzles need patience. Start with the most definite clue and build from there.",
+        "level_1": "Try working through each possibility one at a time. Can you eliminate answers that definitely don't work? List each piece of information as a separate fact. Then test each answer choice — does it match ALL the facts?",
+        "level_2": "Work through each step carefully to see why."
+      },
+      "concept_cluster": "venn-diagram-logic",
+      "interaction_mode": "mcq",
+      "visual_context": null,
+      "irt_params": {
+        "a": 1.83,
+        "b": 1.7,
+        "c": 0.15
+      },
+      "irt_a": 1.83,
+      "irt_b": 1.7,
+      "irt_c": 0.15,
+      "solution_steps": [
+        "Read the clues or conditions carefully",
+        "Eliminate options that don't fit",
+        "Check remaining options against all conditions"
+      ],
+      "competency_level": "A",
+      "competency_confidence": 0.8,
+      "competency_name": "Applying",
+      "story_theme": "The Demon Hunters",
+      "story_chapter": 3,
+      "legacy_id": "T4-0978",
+      "km_level": "L3",
+      "km_pillar": "COM",
+      "km_topic": "pigeonhole",
+      "km_topic_display": "Sock Drawer Logic",
+      "km_source_bank": "v2"
+    },
+    {
+      "id": "KM-L3-COM-0436",
+      "stem": "The statement 'If P then Q' is true. The statement 'If Q then R' is true. P is true. Which of the following must be true?",
+      "choices": [
+        "Only Q",
+        "Only R",
+        "Both Q and R",
+        "Neither Q nor R"
+      ],
+      "correct_answer": 2,
+      "difficulty_tier": "medium",
+      "difficulty_score": 115,
+      "visual_svg": null,
+      "visual_alt": null,
+      "diagnostics": {
+        "0": "Don't jump to the first answer that seems right. Check ALL the clues before deciding.",
+        "1": "Read the problem again — there's a clue you haven't used yet that changes the answer.",
+        "3": "Only use information given in the problem. Don't assume things that aren't stated.",
+        "correct_explanation": "The answer is Both Q and R. By checking each clue against every option, only this answer satisfies all the conditions."
+      },
+      "tags": [
+        "chain",
+        "modus-ponens"
+      ],
+      "hint": {
+        "level_0": "List each person's statement. If each statement were true, what would follow?",
+        "level_1": "Try assuming each person is the liar. Does exactly one lie produce a consistent scenario? Test each answer choice against ALL the given statements. Only one will be consistent.",
+        "level_2": "Testing all possibilities against the clues confirms this."
+      },
+      "concept_cluster": "if-then-reasoning",
+      "interaction_mode": "mcq",
+      "visual_context": null,
+      "irt_params": {
+        "a": 1.62,
+        "b": 1.76,
+        "c": 0.15
+      },
+      "irt_a": 1.62,
+      "irt_b": 1.76,
+      "irt_c": 0.15,
+      "solution_steps": [
+        "Read each statement carefully",
+        "Test each against the given information",
+        "Find which one is definitely correct or wrong"
+      ],
+      "competency_level": "A",
+      "competency_confidence": 0.588,
+      "competency_name": "Applying",
+      "story_theme": "The Demon Hunters",
+      "story_chapter": 3,
+      "legacy_id": "T4-0999",
+      "km_level": "L3",
+      "km_pillar": "COM",
+      "km_topic": "pigeonhole",
+      "km_topic_display": "Sock Drawer Logic",
+      "km_source_bank": "v2"
+    },
+    {
+      "id": "KM-L3-COM-0437",
+      "stem": "If 'all dogs are animals' is true, which MUST be false?",
+      "choices": [
+        "Some dogs are animals",
+        "All animals are dogs",
+        "Some animals are dogs",
+        "No statement must be false"
+      ],
+      "correct_answer": 3,
+      "difficulty_tier": "medium",
+      "difficulty_score": 116,
+      "visual_svg": null,
+      "visual_alt": null,
+      "diagnostics": {
+        "0": "Don't jump to the first answer that seems right. Check ALL the clues before deciding.",
+        "1": "Read the problem again — there's a clue you haven't used yet that changes the answer.",
+        "2": "You might have the logic backwards. If A is taller than B, then B is shorter than A.",
+        "correct_explanation": "The answer is No statement must be false. By checking each clue against every option, only this answer satisfies all the conditions."
+      },
+      "tags": [
+        "logic",
+        "must-be-false"
+      ],
+      "hint": {
+        "level_0": "List each person's statement. If each statement were true, what would follow?",
+        "level_1": "Try assuming each person is the liar. Does exactly one lie produce a consistent scenario? Test each answer choice against ALL the given statements. Only one will be consistent.",
+        "level_2": "Testing all possibilities against the clues confirms this."
+      },
+      "concept_cluster": "if-then-reasoning",
+      "interaction_mode": "mcq",
+      "visual_context": null,
+      "irt_params": {
+        "a": 1.32,
+        "b": 1.76,
+        "c": 0.15
+      },
+      "irt_a": 1.32,
+      "irt_b": 1.76,
+      "irt_c": 0.15,
+      "solution_steps": [
+        "Read each statement carefully",
+        "Test each against the given information",
+        "Find which one is definitely correct or wrong"
+      ],
+      "original_stem": "If 'all dogs are animals' is true, which MUST be false?",
+      "competency_level": "R",
+      "competency_confidence": 0.812,
+      "competency_name": "Reasoning",
+      "story_theme": "The Demon Hunters",
+      "story_chapter": 4,
+      "legacy_id": "T4-1034",
+      "km_level": "L3",
+      "km_pillar": "COM",
+      "km_topic": "pigeonhole",
+      "km_topic_display": "Sock Drawer Logic",
+      "km_source_bank": "v2"
+    },
+    {
+      "id": "KM-L3-COM-0438",
+      "stem": "180 students: 100 take math, 80 take science, 60 take English. 40 take math and science, 30 take math and English, 20 take science and English, 10 take all three. How many take at least one subject?",
+      "choices": [
+        "140",
+        "150",
+        "160",
+        "170"
+      ],
+      "correct_answer": 2,
+      "difficulty_tier": "medium",
+      "difficulty_score": 133,
+      "visual_svg": null,
+      "visual_alt": null,
+      "diagnostics": {
+        "0": "Don't jump to the first answer that seems right. Check ALL the clues before deciding.",
+        "1": "Read the problem again — there's a clue you haven't used yet that changes the answer.",
+        "3": "Only use information given in the problem. Don't assume things that aren't stated.",
+        "correct_explanation": "The answer is 160. By checking each clue against every option, only this answer satisfies all the conditions."
+      },
+      "tags": [
+        "three-set-inclusion-exclusion",
+        "at-least-one"
+      ],
+      "hint": {
+        "level_0": "List each person's statement. If each statement were true, what would follow?",
+        "level_1": "Try assuming each person is the liar. Does exactly one lie produce a consistent scenario? Test each answer choice against ALL the given statements. Only one will be consistent.",
+        "level_2": "Testing all possibilities against the clues confirms this."
+      },
+      "concept_cluster": "venn-diagram-logic",
+      "interaction_mode": "mcq",
+      "visual_context": null,
+      "irt_params": {
+        "a": 1.53,
+        "b": 1.86,
+        "c": 0.15
+      },
+      "irt_a": 1.53,
+      "irt_b": 1.86,
+      "irt_c": 0.15,
+      "solution_steps": [
+        "Read the clues or conditions carefully",
+        "Eliminate options that don't fit",
+        "Check remaining options against all conditions"
+      ],
+      "competency_level": "A",
+      "competency_confidence": 0.5,
+      "competency_name": "Applying",
+      "story_theme": "The Demon Hunters",
+      "story_chapter": 4,
+      "legacy_id": "T4-1037",
+      "km_level": "L3",
+      "km_pillar": "COM",
+      "km_topic": "pigeonhole",
+      "km_topic_display": "Sock Drawer Logic",
+      "km_source_bank": "v2"
+    },
+    {
+      "id": "KM-L3-COM-0439",
+      "stem": "300 people: 200 like tea, 150 like coffee. What is the minimum number who like both?",
+      "choices": [
+        "0",
+        "50",
+        "100",
+        "150"
+      ],
+      "correct_answer": 1,
+      "difficulty_tier": "medium",
+      "difficulty_score": 144,
+      "visual_svg": null,
+      "visual_alt": null,
+      "diagnostics": {
+        "0": "Don't jump to the first answer that seems right. Check ALL the clues before deciding.",
+        "2": "You might have the logic backwards. If A is taller than B, then B is shorter than A.",
+        "3": "Only use information given in the problem. Don't assume things that aren't stated.",
+        "correct_explanation": "The answer is 50. By checking each clue against every option, only this answer satisfies all the conditions."
+      },
+      "tags": [
+        "minimum-overlap",
+        "pigeonhole"
+      ],
+      "hint": {
+        "level_0": "List each person's statement. If each statement were true, what would follow?",
+        "level_1": "Try assuming each person is the liar. Does exactly one lie produce a consistent scenario? Test each answer choice against ALL the given statements. Only one will be consistent.",
+        "level_2": "Testing all possibilities against the clues confirms this."
+      },
+      "concept_cluster": "venn-diagram-logic",
+      "interaction_mode": "mcq",
+      "visual_context": null,
+      "irt_params": {
+        "a": 1.4,
+        "b": 1.94,
+        "c": 0.15
+      },
+      "irt_a": 1.4,
+      "irt_b": 1.94,
+      "irt_c": 0.15,
+      "solution_steps": [
+        "Read the clues or conditions carefully",
+        "Eliminate options that don't fit",
+        "Check remaining options against all conditions"
+      ],
+      "competency_level": "R",
+      "competency_confidence": 0.75,
+      "competency_name": "Reasoning",
+      "story_theme": "The Demon Hunters",
+      "story_chapter": 5,
+      "legacy_id": "T4-1067",
+      "km_level": "L3",
+      "km_pillar": "COM",
+      "km_topic": "pigeonhole",
+      "km_topic_display": "Sock Drawer Logic",
+      "km_source_bank": "v2"
+    },
+    {
+      "id": "KM-L3-COM-0440",
+      "stem": "Two statements: (1) At least one of us is a liar. (2) We are both truth-tellers. Person A says statement 1. Person B says statement 2. If each person is either always truthful or always lies, what are A and B?",
+      "choices": [
+        "Both truth-tellers",
+        "Both liars",
+        "A is truthful, B is a liar",
+        "A is a liar, B is truthful"
+      ],
+      "correct_answer": 2,
+      "difficulty_tier": "medium",
+      "difficulty_score": 146,
+      "visual_svg": null,
+      "visual_alt": null,
+      "diagnostics": {
+        "0": "Don't jump to the first answer that seems right. Check ALL the clues before deciding.",
+        "1": "Read the problem again — there's a clue you haven't used yet that changes the answer.",
+        "3": "Only use information given in the problem. Don't assume things that aren't stated.",
+        "correct_explanation": "The answer is A is truthful, B is a liar. By checking each clue against every option, only this answer satisfies all the conditions."
+      },
+      "tags": [
+        "pair-analysis",
+        "consistency"
+      ],
+      "hint": {
+        "level_0": "List each person's statement. If each statement were true, what would follow?",
+        "level_1": "Try assuming each person is the liar. Does exactly one lie produce a consistent scenario? Test each answer choice against ALL the given statements. Only one will be consistent.",
+        "level_2": "Testing all possibilities against the clues confirms this."
+      },
+      "concept_cluster": "truth-lie-puzzles",
+      "interaction_mode": "mcq",
+      "visual_context": null,
+      "irt_params": {
+        "a": 1.7,
+        "b": 1.96,
+        "c": 0.15
+      },
+      "irt_a": 1.7,
+      "irt_b": 1.96,
+      "irt_c": 0.15,
+      "solution_steps": [
+        "Read each statement carefully",
+        "Test each against the given information",
+        "Find which one is definitely correct or wrong"
+      ],
+      "competency_level": "A",
+      "competency_confidence": 0.5,
+      "competency_name": "Applying",
+      "story_theme": "The Demon Hunters",
+      "story_chapter": 4,
+      "legacy_id": "T4-1032",
+      "km_level": "L3",
+      "km_pillar": "COM",
+      "km_topic": "pigeonhole",
+      "km_topic_display": "Sock Drawer Logic",
+      "km_source_bank": "v2"
+    },
+    {
+      "id": "KM-L3-COM-0441",
+      "stem": "The statement 'X or Y (or both)' is true. We discover X is false. What must be true?",
+      "choices": [
+        "Y is true",
+        "Y is false",
+        "Both are false",
+        "Cannot determine"
+      ],
+      "correct_answer": 0,
+      "difficulty_tier": "medium",
+      "difficulty_score": 147,
+      "visual_svg": null,
+      "visual_alt": null,
+      "diagnostics": {
+        "1": "Read the problem again — there's a clue you haven't used yet that changes the answer.",
+        "2": "You might have the logic backwards. If A is taller than B, then B is shorter than A.",
+        "3": "Only use information given in the problem. Don't assume things that aren't stated.",
+        "correct_explanation": "The answer is Y is true. By checking each clue against every option, only this answer satisfies all the conditions."
+      },
+      "tags": [
+        "disjunction",
+        "elimination"
+      ],
+      "hint": {
+        "level_0": "List each person's statement. If each statement were true, what would follow?",
+        "level_1": "Try assuming each person is the liar. Does exactly one lie produce a consistent scenario? Test each answer choice against ALL the given statements. Only one will be consistent.",
+        "level_2": "Testing all possibilities against the clues confirms this."
+      },
+      "concept_cluster": "statement-analysis",
+      "interaction_mode": "mcq",
+      "visual_context": null,
+      "irt_params": {
+        "a": 1.45,
+        "b": 1.96,
+        "c": 0.15
+      },
+      "irt_a": 1.45,
+      "irt_b": 1.96,
+      "irt_c": 0.15,
+      "solution_steps": [
+        "Read each statement carefully",
+        "Test each against the given information",
+        "Find which one is definitely correct or wrong"
+      ],
+      "competency_level": "R",
+      "competency_confidence": 0.75,
+      "competency_name": "Reasoning",
+      "story_theme": "The Demon Hunters",
+      "story_chapter": 5,
+      "legacy_id": "T4-1050",
+      "km_level": "L3",
+      "km_pillar": "COM",
+      "km_topic": "pigeonhole",
+      "km_topic_display": "Sock Drawer Logic",
+      "km_source_bank": "v2"
+    },
+    {
+      "id": "KM-L3-COM-0442",
+      "stem": "Five friends each told one statement about a secret number (1-10). At least 3 told the truth. A: 'It's even. ' B: 'It's greater than 5. ' C: 'It's 8. ' D: 'It's less than 9. ' E: 'It's odd. ' Which number satisfies at least 3 truths?",
+      "choices": [
+        "7",
+        "8",
+        "9",
+        "6"
+      ],
+      "correct_answer": 1,
+      "difficulty_tier": "hard",
+      "difficulty_score": 150,
+      "visual_svg": null,
+      "visual_alt": null,
+      "diagnostics": {
+        "0": "Almost there — you're off by just 1. Carefully re-do the last step.",
+        "2": "Almost there — you're off by just 1. Carefully re-do the last step.",
+        "3": "Only use information given in the problem. Don't assume things that aren't stated.",
+        "correct_explanation": "The answer is 8. By checking each clue against every option, only this answer satisfies all the conditions."
+      },
+      "tags": [
+        "majority-truth",
+        "number-guessing"
+      ],
+      "hint": {
+        "level_0": "Logic puzzles need patience. Start with the most definite clue and build from there.",
+        "level_1": "Try working through each possibility one at a time. Can you eliminate answers that definitely don't work? List each piece of information as a separate fact. Then test each answer choice — does it match ALL the facts?",
+        "level_2": "Work through each step carefully to see why."
+      },
+      "concept_cluster": "truth-lie-puzzles",
+      "interaction_mode": "mcq",
+      "visual_context": null,
+      "irt_params": {
+        "a": 1.48,
+        "b": 1.98,
+        "c": 0.15
+      },
+      "irt_a": 1.48,
+      "irt_b": 1.98,
+      "irt_c": 0.15,
+      "solution_steps": [
+        "Read each statement carefully",
+        "Test each against the given information",
+        "Find which one is definitely correct or wrong"
+      ],
+      "competency_level": "A",
+      "competency_confidence": 0.75,
+      "competency_name": "Applying",
+      "story_theme": "The Demon Hunters",
+      "story_chapter": 5,
+      "legacy_id": "T4-1062",
+      "km_level": "L3",
+      "km_pillar": "COM",
+      "km_topic": "pigeonhole",
+      "km_topic_display": "Sock Drawer Logic",
+      "km_source_bank": "v2"
+    },
+    {
+      "id": "KM-L3-COM-0443",
+      "stem": "Two friends make claims. X: 'At least one of us always lies. ' Y: 'X always tells the truth. ' If X always lies, is this consistent?",
+      "choices": [
+        "Yes",
+        "No, because X's statement would be true",
+        "No, because Y's statement can't be resolved",
+        "Only if Y also lies"
+      ],
+      "correct_answer": 1,
+      "difficulty_tier": "hard",
+      "difficulty_score": 167,
+      "visual_svg": null,
+      "visual_alt": null,
+      "diagnostics": {
+        "0": "Don't jump to the first answer that seems right. Check ALL the clues before deciding.",
+        "2": "You might have the logic backwards. If A is taller than B, then B is shorter than A.",
+        "3": "Only use information given in the problem. Don't assume things that aren't stated.",
+        "correct_explanation": "The answer is No, because X's statement would be true. By checking each clue against every option, only this answer satisfies all the conditions."
+      },
+      "tags": [
+        "self-reference",
+        "consistency"
+      ],
+      "hint": {
+        "level_0": "List each person's statement. If each statement were true, what would follow?",
+        "level_1": "Try assuming each person is the liar. Does exactly one lie produce a consistent scenario? Test each answer choice against ALL the given statements. Only one will be consistent.",
+        "level_2": "Testing all possibilities against the clues confirms this."
+      },
+      "concept_cluster": "truth-lie-puzzles",
+      "interaction_mode": "mcq",
+      "visual_context": null,
+      "irt_params": {
+        "a": 1.62,
+        "b": 2.1,
+        "c": 0.15
+      },
+      "irt_a": 1.62,
+      "irt_b": 2.1,
+      "irt_c": 0.15,
+      "solution_steps": [
+        "Read the clues or conditions carefully",
+        "Eliminate options that don't fit",
+        "Check remaining options against all conditions"
+      ],
+      "competency_level": "A",
+      "competency_confidence": 0.5,
+      "competency_name": "Applying",
+      "story_theme": "The Demon Hunters",
+      "story_chapter": 5,
+      "legacy_id": "T4-1052",
+      "km_level": "L3",
+      "km_pillar": "COM",
+      "km_topic": "pigeonhole",
+      "km_topic_display": "Sock Drawer Logic",
+      "km_source_bank": "v2"
+    },
+    {
+      "id": "KM-L3-COM-0444",
+      "stem": "Given: 'If you are a citizen, you may vote. ' 'If you may vote, you are at least 18. ' Maria is a citizen. What follows?",
+      "choices": [
+        "Maria is at least 18",
+        "Maria has voted",
+        "Maria might be under 18",
+        "Nothing follows"
+      ],
+      "correct_answer": 0,
+      "difficulty_tier": "hard",
+      "difficulty_score": 198,
+      "visual_svg": null,
+      "visual_alt": null,
+      "diagnostics": {
+        "1": "Read the problem again — there's a clue you haven't used yet that changes the answer.",
+        "2": "You might have the logic backwards. If A is taller than B, then B is shorter than A.",
+        "3": "Only use information given in the problem. Don't assume things that aren't stated.",
+        "correct_explanation": "The answer is Maria is at least 18. By checking each clue against every option, only this answer satisfies all the conditions."
+      },
+      "tags": [
+        "syllogism",
+        "chain"
+      ],
+      "hint": {
+        "level_0": "List each person's statement. If each statement were true, what would follow?",
+        "level_1": "Try assuming each person is the liar. Does exactly one lie produce a consistent scenario? Test each answer choice against ALL the given statements. Only one will be consistent.",
+        "level_2": "Testing all possibilities against the clues confirms this."
+      },
+      "concept_cluster": "if-then-reasoning",
+      "interaction_mode": "mcq",
+      "visual_context": null,
+      "irt_params": {
+        "a": 1.5,
+        "b": 2.3,
+        "c": 0.15
+      },
+      "irt_a": 1.5,
+      "irt_b": 2.3,
+      "irt_c": 0.15,
+      "solution_steps": [
+        "Read the clues or conditions carefully",
+        "Eliminate options that don't fit",
+        "Check remaining options against all conditions"
+      ],
+      "competency_level": "A",
+      "competency_confidence": 0.5,
+      "competency_name": "Applying",
+      "story_theme": "The Demon Hunters",
+      "story_chapter": 6,
+      "legacy_id": "T4-1094",
+      "km_level": "L3",
+      "km_pillar": "COM",
+      "km_topic": "pigeonhole",
+      "km_topic_display": "Sock Drawer Logic",
+      "km_source_bank": "v2"
+    },
+    {
+      "id": "KM-L3-COM-0445",
+      "stem": "Tasks A(2hr), B(3hr), C(1hr) must be done. A and B can run at the same time. C must come after both A and B. What is the total time?",
+      "choices": [
+        "3 hrs",
+        "6 hrs",
+        "5 hrs",
+        "4 hrs"
+      ],
+      "correct_answer": 3,
+      "difficulty_tier": "hard",
+      "difficulty_score": 224,
+      "visual_svg": null,
+      "visual_alt": null,
+      "diagnostics": {
+        "0": "Don't jump to the first answer that seems right. Check ALL the clues before deciding.",
+        "1": "Read the problem again — there's a clue you haven't used yet that changes the answer.",
+        "2": "You might have the logic backwards. If A is taller than B, then B is shorter than A.",
+        "correct_explanation": "The answer is 4 hrs. By checking each clue against every option, only this answer satisfies all the conditions."
+      },
+      "tags": [
+        "parallel",
+        "dependencies"
+      ],
+      "hint": {
+        "level_0": "List each person's statement. If each statement were true, what would follow?",
+        "level_1": "Try assuming each person is the liar. Does exactly one lie produce a consistent scenario? Test each answer choice against ALL the given statements. Only one will be consistent.",
+        "level_2": "Testing all possibilities against the clues confirms this."
+      },
+      "concept_cluster": "scheduling-logic",
+      "interaction_mode": "mcq",
+      "visual_context": null,
+      "irt_params": {
+        "a": 1.73,
+        "b": 2.5,
+        "c": 0.15
+      },
+      "irt_a": 1.73,
+      "irt_b": 2.5,
+      "irt_c": 0.15,
+      "solution_steps": [
+        "Read the clues or conditions carefully",
+        "Eliminate options that don't fit",
+        "Check remaining options against all conditions"
+      ],
+      "competency_level": "R",
+      "competency_confidence": 0.75,
+      "competency_name": "Reasoning",
+      "story_theme": "The Demon Hunters",
+      "story_chapter": 6,
+      "legacy_id": "T4-1098",
+      "km_level": "L3",
+      "km_pillar": "COM",
+      "km_topic": "pigeonhole",
+      "km_topic_display": "Sock Drawer Logic",
+      "km_source_bank": "v2"
+    },
+    {
+      "id": "KM-L3-COM-0446",
+      "stem": "On the island of knights and knaves: A says 'I am a knave or B is a knight. ' What must be true?",
+      "choices": [
+        "A is a knight and B is a knight",
+        "A is a knave and B is a knave",
+        "A is a knight and B is a knave",
+        "A is a knave and B is a knight"
+      ],
+      "correct_answer": 0,
+      "difficulty_tier": "olympiad",
+      "difficulty_score": 230,
+      "visual_svg": null,
+      "visual_alt": null,
+      "diagnostics": {
+        "1": "Read the problem again — there's a clue you haven't used yet that changes the answer.",
+        "2": "You might have the logic backwards. If A is taller than B, then B is shorter than A.",
+        "3": "Only use information given in the problem. Don't assume things that aren't stated.",
+        "correct_explanation": "The answer is A is a knight and B is a knight. By checking each clue against every option, only this answer satisfies all the conditions."
+      },
+      "tags": [
+        "disjunction",
+        "knights-knaves"
+      ],
+      "hint": {
+        "level_0": "List each person's statement. If each statement were true, what would follow?",
+        "level_1": "Try assuming each person is the liar. Does exactly one lie produce a consistent scenario? Test each answer choice against ALL the given statements. Only one will be consistent.",
+        "level_2": "Testing all possibilities against the clues confirms this."
+      },
+      "concept_cluster": "truth-lie-puzzles",
+      "interaction_mode": "mcq",
+      "visual_context": null,
+      "irt_params": {
+        "a": 1.55,
+        "b": 2.52,
+        "c": 0.15
+      },
+      "irt_a": 1.55,
+      "irt_b": 2.52,
+      "irt_c": 0.15,
+      "solution_steps": [
+        "Read each statement carefully",
+        "Test each against the given information",
+        "Find which one is definitely correct or wrong"
+      ],
+      "competency_level": "R",
+      "competency_confidence": 0.75,
+      "competency_name": "Reasoning",
+      "story_theme": "The Demon Hunters",
+      "story_chapter": 6,
+      "legacy_id": "T4-1122",
+      "km_level": "L3",
+      "km_pillar": "COM",
+      "km_topic": "pigeonhole",
+      "km_topic_display": "Sock Drawer Logic",
+      "km_source_bank": "v2"
+    },
+    {
+      "id": "KM-L3-COM-0447",
+      "stem": "Five philosophers sit around a circular table. Each either 'agrees' or 'disagrees. ' A philosopher is 'happy' if they agree with at least one neighbor. What is the minimum number who could be happy?",
+      "choices": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "correct_answer": 2,
+      "difficulty_tier": "olympiad",
+      "difficulty_score": 233,
+      "visual_svg": null,
+      "visual_alt": null,
+      "diagnostics": {
+        "0": "Don't jump to the first answer that seems right. Check ALL the clues before deciding.",
+        "1": "Almost there — you're off by just 1. Carefully re-do the last step.",
+        "3": "Almost there — you're off by just 1. Carefully re-do the last step.",
+        "correct_explanation": "The answer is 2. By checking each clue against every option, only this answer satisfies all the conditions."
+      },
+      "tags": [
+        "circular",
+        "optimization",
+        "visual_needed"
+      ],
+      "hint": {
+        "level_0": "List each person's statement. If each statement were true, what would follow?",
+        "level_1": "Try assuming each person is the liar. Does exactly one lie produce a consistent scenario? Test each answer choice against ALL the given statements. Only one will be consistent.",
+        "level_2": "Testing all possibilities against the clues confirms this."
+      },
+      "concept_cluster": "deductive-elimination",
+      "interaction_mode": "mcq",
+      "visual_context": null,
+      "irt_params": {
+        "a": 1.4,
+        "b": 2.54,
+        "c": 0.15
+      },
+      "irt_a": 1.4,
+      "irt_b": 2.54,
+      "irt_c": 0.15,
+      "solution_steps": [
+        "Read the clues or conditions carefully",
+        "Eliminate options that don't fit",
+        "Check remaining options against all conditions"
+      ],
+      "competency_level": "R",
+      "competency_confidence": 0.812,
+      "competency_name": "Reasoning",
+      "story_theme": "The Demon Hunters",
+      "story_chapter": 7,
+      "legacy_id": "T4-1143",
+      "km_level": "L3",
+      "km_pillar": "COM",
+      "km_topic": "pigeonhole",
+      "km_topic_display": "Sock Drawer Logic",
+      "km_source_bank": "v2"
+    },
+    {
+      "id": "KM-L3-COM-0448",
+      "stem": "In a set of 100 numbers, 70 are positive and 50 are even. At least how many are both positive and even?",
+      "choices": [
+        "20",
+        "30",
+        "40",
+        "50"
+      ],
+      "correct_answer": 0,
+      "difficulty_tier": "olympiad",
+      "difficulty_score": 236,
+      "visual_svg": null,
+      "visual_alt": null,
+      "diagnostics": {
+        "1": "Read the problem again — there's a clue you haven't used yet that changes the answer.",
+        "2": "You might have the logic backwards. If A is taller than B, then B is shorter than A.",
+        "3": "Only use information given in the problem. Don't assume things that aren't stated.",
+        "correct_explanation": "The answer is 20. By checking each clue against every option, only this answer satisfies all the conditions."
+      },
+      "tags": [
+        "minimum-intersection",
+        "sets",
+        "visual_needed"
+      ],
+      "hint": {
+        "level_0": "List each person's statement. If each statement were true, what would follow?",
+        "level_1": "Try assuming each person is the liar. Does exactly one lie produce a consistent scenario? Test each answer choice against ALL the given statements. Only one will be consistent.",
+        "level_2": "Testing all possibilities against the clues confirms this."
+      },
+      "concept_cluster": "venn-diagram-logic",
+      "interaction_mode": "mcq",
+      "visual_context": null,
+      "irt_params": {
+        "a": 1.7,
+        "b": 2.58,
+        "c": 0.15
+      },
+      "irt_a": 1.7,
+      "irt_b": 2.58,
+      "irt_c": 0.15,
+      "solution_steps": [
+        "Read the clues or conditions carefully",
+        "Eliminate options that don't fit",
+        "Check remaining options against all conditions"
+      ],
+      "competency_level": "A",
+      "competency_confidence": 0.5,
+      "competency_name": "Applying",
+      "story_theme": "The Demon Hunters",
+      "story_chapter": 7,
+      "legacy_id": "T4-1127",
+      "km_level": "L3",
+      "km_pillar": "COM",
+      "km_topic": "pigeonhole",
+      "km_topic_display": "Sock Drawer Logic",
+      "km_source_bank": "v2"
+    },
+    {
+      "id": "KM-L3-COM-0449",
+      "stem": "Negate: 'Every group of 3 or more people contains at least 2 who know each other. '",
+      "choices": [
+        "No group contains people who know each other",
+        "There is a group of 3+ people where no two know each other",
+        "All groups of 2 know each other",
+        "Every group of 3 has all members knowing each other"
+      ],
+      "correct_answer": 1,
+      "difficulty_tier": "olympiad",
+      "difficulty_score": 249,
+      "visual_svg": null,
+      "visual_alt": null,
+      "diagnostics": {
+        "0": "Don't jump to the first answer that seems right. Check ALL the clues before deciding.",
+        "2": "You might have the logic backwards. If A is taller than B, then B is shorter than A.",
+        "3": "Only use information given in the problem. Don't assume things that aren't stated.",
+        "correct_explanation": "The answer is There is a group of 3+ people where no two know each other. By checking each clue against every option, only this answer satisfies all the conditions."
+      },
+      "tags": [
+        "negation",
+        "groups",
+        "visual_needed"
+      ],
+      "hint": {
+        "level_0": "List each person's statement. If each statement were true, what would follow?",
+        "level_1": "Try assuming each person is the liar. Does exactly one lie produce a consistent scenario? Test each answer choice against ALL the given statements. Only one will be consistent.",
+        "level_2": "Testing all possibilities against the clues confirms this."
+      },
+      "concept_cluster": "logical-negation",
+      "interaction_mode": "mcq",
+      "visual_context": null,
+      "irt_params": {
+        "a": 1.7,
+        "b": 2.66,
+        "c": 0.15
+      },
+      "irt_a": 1.7,
+      "irt_b": 2.66,
+      "irt_c": 0.15,
+      "solution_steps": [
+        "Read the clues or conditions carefully",
+        "Eliminate options that don't fit",
+        "Check remaining options against all conditions"
+      ],
+      "competency_level": "A",
+      "competency_confidence": 0.5,
+      "competency_name": "Applying",
+      "story_theme": "The Demon Hunters",
+      "story_chapter": 7,
+      "legacy_id": "T4-1125",
+      "km_level": "L3",
+      "km_pillar": "COM",
+      "km_topic": "pigeonhole",
+      "km_topic_display": "Sock Drawer Logic",
+      "km_source_bank": "v2"
+    },
+    {
+      "id": "KM-L3-COM-0450",
+      "stem": "5 people in a room. Each pair either knows each other or doesn't. Is it guaranteed that there are 3 people who all know each other OR 3 who are all strangers?",
+      "choices": [
+        "Yes, by the Pigeonhole Principle",
+        "No, it depends on the arrangement",
+        "Only if there are 6 people",
+        "Yes, but only with 4+ mutual friends"
+      ],
+      "correct_answer": 0,
+      "difficulty_tier": "olympiad",
+      "difficulty_score": 250,
+      "visual_svg": null,
+      "visual_alt": null,
+      "diagnostics": {
+        "1": "Read the problem again — there's a clue you haven't used yet that changes the answer.",
+        "2": "You might have the logic backwards. If A is taller than B, then B is shorter than A.",
+        "3": "Only use information given in the problem. Don't assume things that aren't stated.",
+        "correct_explanation": "The answer is Yes, by the Pigeonhole Principle. By checking each clue against every option, only this answer satisfies all the conditions."
+      },
+      "tags": [
+        "ramsey",
+        "pigeonhole",
+        "visual_needed"
+      ],
+      "hint": {
+        "level_0": "List each person's statement. If each statement were true, what would follow?",
+        "level_1": "Try assuming each person is the liar. Does exactly one lie produce a consistent scenario? Test each answer choice against ALL the given statements. Only one will be consistent.",
+        "level_2": "Testing all possibilities against the clues confirms this."
+      },
+      "concept_cluster": "grid-logic",
+      "interaction_mode": "mcq",
+      "visual_context": null,
+      "irt_params": {
+        "a": 1.7,
+        "b": 2.66,
+        "c": 0.15
+      },
+      "irt_a": 1.7,
+      "irt_b": 2.66,
+      "irt_c": 0.15,
+      "solution_steps": [
+        "Read the clues or conditions carefully",
+        "Eliminate options that don't fit",
+        "Check remaining options against all conditions"
+      ],
+      "competency_level": "A",
+      "competency_confidence": 0.5,
+      "competency_name": "Applying",
+      "story_theme": "The Demon Hunters",
+      "story_chapter": 7,
+      "legacy_id": "T4-1139",
+      "km_level": "L3",
+      "km_pillar": "COM",
+      "km_topic": "pigeonhole",
+      "km_topic_display": "Sock Drawer Logic",
+      "km_source_bank": "v2"
+    },
+    {
+      "id": "KM-L3-COM-0451",
+      "stem": "Given: (A∨B)→C and C→(D∧E). A is true. What must be true?",
+      "choices": [
+        "D only",
+        "E only",
+        "Both D and E",
+        "C only"
+      ],
+      "correct_answer": 2,
+      "difficulty_tier": "olympiad",
+      "difficulty_score": 272,
+      "visual_svg": null,
+      "visual_alt": null,
+      "diagnostics": {
+        "0": "Don't jump to the first answer that seems right. Check ALL the clues before deciding.",
+        "1": "Read the problem again — there's a clue you haven't used yet that changes the answer.",
+        "3": "Only use information given in the problem. Don't assume things that aren't stated.",
+        "correct_explanation": "The answer is Both D and E. By checking each clue against every option, only this answer satisfies all the conditions."
+      },
+      "tags": [
+        "chain",
+        "conjunction"
+      ],
+      "hint": {
+        "level_0": "List each person's statement. If each statement were true, what would follow?",
+        "level_1": "Try assuming each person is the liar. Does exactly one lie produce a consistent scenario? Test each answer choice against ALL the given statements. Only one will be consistent.",
+        "level_2": "Testing all possibilities against the clues confirms this."
+      },
+      "concept_cluster": "if-then-reasoning",
+      "interaction_mode": "mcq",
+      "visual_context": null,
+      "irt_params": {
+        "a": 1.48,
+        "b": 2.8,
+        "c": 0.15
+      },
+      "irt_a": 1.48,
+      "irt_b": 2.8,
+      "irt_c": 0.15,
+      "solution_steps": [
+        "Read each statement carefully",
+        "Test each against the given information",
+        "Find which one is definitely correct or wrong"
+      ],
+      "original_stem": "Given: (A∨B)→C and C→(D∧E). A is true. What must be true?",
+      "competency_level": "R",
+      "competency_confidence": 0.75,
+      "competency_name": "Reasoning",
+      "story_theme": "The Demon Hunters",
+      "story_chapter": 8,
+      "legacy_id": "T4-1174",
+      "km_level": "L3",
+      "km_pillar": "COM",
+      "km_topic": "pigeonhole",
+      "km_topic_display": "Sock Drawer Logic",
+      "km_source_bank": "v2"
+    },
+    {
+      "id": "KM-L3-COM-0452",
+      "stem": "On an island of knights and knaves, A says 'There are at most 3 knights among us 7. ' B says 'There are at least 5 knights. ' If there are exactly 4 knights, what are A and B?",
+      "choices": [
+        "Both knights",
+        "Both knaves",
+        "A knight, B knave",
+        "A knave, B knight"
+      ],
+      "correct_answer": 2,
+      "difficulty_tier": "olympiad",
+      "difficulty_score": 284,
+      "visual_svg": null,
+      "visual_alt": null,
+      "diagnostics": {
+        "0": "Don't jump to the first answer that seems right. Check ALL the clues before deciding.",
+        "1": "Read the problem again — there's a clue you haven't used yet that changes the answer.",
+        "3": "Only use information given in the problem. Don't assume things that aren't stated.",
+        "correct_explanation": "The answer is A knight, B knave. By checking each clue against every option, only this answer satisfies all the conditions."
+      },
+      "tags": [
+        "counting-knights",
+        "island"
+      ],
+      "hint": {
+        "level_0": "List each person's statement. If each statement were true, what would follow?",
+        "level_1": "Try assuming each person is the liar. Does exactly one lie produce a consistent scenario? Test each answer choice against ALL the given statements. Only one will be consistent.",
+        "level_2": "Testing all possibilities against the clues confirms this."
+      },
+      "concept_cluster": "truth-lie-puzzles",
+      "interaction_mode": "mcq",
+      "visual_context": null,
+      "irt_params": {
+        "a": 1.53,
+        "b": 2.88,
+        "c": 0.15
+      },
+      "irt_a": 1.53,
+      "irt_b": 2.88,
+      "irt_c": 0.15,
+      "solution_steps": [
+        "Look at what you need to count",
+        "Count systematically one by one",
+        "The total is your answer"
+      ],
+      "competency_level": "A",
+      "competency_confidence": 0.5,
+      "competency_name": "Applying",
+      "story_theme": "The Demon Hunters",
+      "story_chapter": 8,
+      "legacy_id": "T4-1192",
+      "km_level": "L3",
+      "km_pillar": "COM",
+      "km_topic": "pigeonhole",
+      "km_topic_display": "Sock Drawer Logic",
+      "km_source_bank": "v2"
+    },
+    {
+      "id": "KM-L3-COM-0453",
+      "stem": "A password must be 5 characters: 3 letters (A-Z) followed by 2 digits (0-9). How many passwords have no repeated characters?",
+      "choices": [
+        "1404000",
+        "1757600",
+        "11232000",
+        "1170000"
+      ],
+      "correct_answer": 0,
+      "difficulty_tier": "olympiad",
+      "difficulty_score": 287,
+      "visual_svg": null,
+      "visual_alt": null,
+      "diagnostics": {
+        "1": "Read the problem again — there's a clue you haven't used yet that changes the answer.",
+        "2": "You might have the logic backwards. If A is taller than B, then B is shorter than A.",
+        "3": "Only use information given in the problem. Don't assume things that aren't stated.",
+        "correct_explanation": "The answer is 1404000. By checking each clue against every option, only this answer satisfies all the conditions."
+      },
+      "tags": [
+        "counting",
+        "permutation"
+      ],
+      "hint": {
+        "level_0": "List each person's statement. If each statement were true, what would follow?",
+        "level_1": "Try assuming each person is the liar. Does exactly one lie produce a consistent scenario? Test each answer choice against ALL the given statements. Only one will be consistent.",
+        "level_2": "Testing all possibilities against the clues confirms this."
+      },
+      "concept_cluster": "scheduling-logic",
+      "interaction_mode": "mcq",
+      "visual_context": null,
+      "irt_params": {
+        "a": 1.2,
+        "b": 2.9,
+        "c": 0.15
+      },
+      "irt_a": 1.2,
+      "irt_b": 2.9,
+      "irt_c": 0.15,
+      "solution_steps": [
+        "Identify what you need to count",
+        "Count systematically, left to right",
+        "The total count is your answer"
+      ],
+      "competency_level": "R",
+      "competency_confidence": 0.5,
+      "competency_name": "Reasoning",
+      "story_theme": "The Demon Hunters",
+      "story_chapter": 8,
+      "legacy_id": "T4-1198",
+      "km_level": "L3",
+      "km_pillar": "COM",
+      "km_topic": "pigeonhole",
+      "km_topic_display": "Sock Drawer Logic",
+      "km_source_bank": "v2"
+    }
+  ]
+}

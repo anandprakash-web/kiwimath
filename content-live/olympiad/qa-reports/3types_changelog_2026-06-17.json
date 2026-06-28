@@ -1,0 +1,671 @@
+[
+  {
+    "id": "KM-L4-GEO-0012",
+    "type": "A",
+    "field": "visual_svg",
+    "before": "\"<svg xmlns=\\\"http://www.w3.org/2000/svg\\\" viewBox=\\\"0 0 300 160\\\" wid",
+    "after": "\"<svg xmlns=\\\"http://www.w3.org/2000/svg\\\" viewBox=\\\"0 0 300 160\\\" wid"
+  },
+  {
+    "id": "KM-L4-GEO-0013",
+    "type": "A",
+    "field": "visual_svg",
+    "before": "\"<svg xmlns=\\\"http://www.w3.org/2000/svg\\\" viewBox=\\\"0 0 300 160\\\" wid",
+    "after": "\"<svg xmlns=\\\"http://www.w3.org/2000/svg\\\" viewBox=\\\"0 0 300 160\\\" wid"
+  },
+  {
+    "id": "KM-L4-GEO-0014",
+    "type": "A",
+    "field": "visual_svg",
+    "before": "\"<svg xmlns=\\\"http://www.w3.org/2000/svg\\\" viewBox=\\\"0 0 300 160\\\" wid",
+    "after": "\"<svg xmlns=\\\"http://www.w3.org/2000/svg\\\" viewBox=\\\"0 0 300 160\\\" wid"
+  },
+  {
+    "id": "KM-L4-GEO-0015",
+    "type": "A",
+    "field": "visual_svg",
+    "before": "\"<svg xmlns=\\\"http://www.w3.org/2000/svg\\\" viewBox=\\\"0 0 300 160\\\" wid",
+    "after": "\"<svg xmlns=\\\"http://www.w3.org/2000/svg\\\" viewBox=\\\"0 0 300 160\\\" wid"
+  },
+  {
+    "id": "KM-L4-GEO-0015",
+    "type": "B",
+    "field": "correct_value",
+    "before": "\"40\"",
+    "after": "140"
+  },
+  {
+    "id": "KM-L4-GEO-0015",
+    "type": "B",
+    "field": "correct_answer",
+    "before": "40",
+    "after": "140"
+  },
+  {
+    "id": "KM-L4-GEO-0015",
+    "type": "B",
+    "field": "solution_steps",
+    "before": "[\"Let the angles be 7k and 2k; 7k+2k = 180°.\", \"k = 180/9 = 20.\", \"Lar",
+    "after": "[\"Let the angles be 7k and 2k; 7k+2k = 180°.\", \"k = 180/9 = 20.\", \"Lar"
+  },
+  {
+    "id": "KM-L4-GEO-0015",
+    "type": "B",
+    "field": "solution",
+    "before": "\"Step 1 — Let the angles be 7k and 2k; 7k+2k = 180°. Step 2 — k = 180/",
+    "after": "\"Step 1 — Let the angles be 7k and 2k; 7k+2k = 180°. Step 2 — k = 180/"
+  },
+  {
+    "id": "KM-L4-GEO-0151",
+    "type": "C",
+    "field": "visual_svg",
+    "before": "\"<svg xmlns=\\\"http://www.w3.org/2000/svg\\\" viewBox=\\\"0 0 300 240\\\" wid",
+    "after": "\"<svg xmlns=\\\"http://www.w3.org/2000/svg\\\" viewBox=\\\"0 0 300 200\\\" wid"
+  },
+  {
+    "id": "KM-L4-GEO-0152",
+    "type": "C",
+    "field": "visual_svg",
+    "before": "\"<svg xmlns=\\\"http://www.w3.org/2000/svg\\\" viewBox=\\\"0 0 300 240\\\" wid",
+    "after": "\"<svg xmlns=\\\"http://www.w3.org/2000/svg\\\" viewBox=\\\"0 0 300 200\\\" wid"
+  },
+  {
+    "id": "KM-L5-COM-0181",
+    "type": "A",
+    "field": "hint",
+    "before": "{\"level_0\": \"Place the {j} ones into the gaps around the zeros — how m",
+    "after": "{\"level_0\": \"Place the 3 ones into the gaps around the zeros — how man"
+  },
+  {
+    "id": "KM-L5-COM-0182",
+    "type": "A",
+    "field": "hint",
+    "before": "{\"level_0\": \"Place the {j} ones into the gaps around the zeros — how m",
+    "after": "{\"level_0\": \"Place the 2 ones into the gaps around the zeros — how man"
+  },
+  {
+    "id": "KM-L5-COM-0183",
+    "type": "A",
+    "field": "hint",
+    "before": "{\"level_0\": \"Place the {j} ones into the gaps around the zeros — how m",
+    "after": "{\"level_0\": \"Place the 4 ones into the gaps around the zeros — how man"
+  },
+  {
+    "id": "KM-L5-COM-0184",
+    "type": "A",
+    "field": "hint",
+    "before": "{\"level_0\": \"Place the {j} ones into the gaps around the zeros — how m",
+    "after": "{\"level_0\": \"Place the 3 ones into the gaps around the zeros — how man"
+  },
+  {
+    "id": "KM-L5-GEO-0229",
+    "type": "A",
+    "field": "hint",
+    "before": "{\"level_0\": \"Begin with 1 region; each chord adds 1, plus one extra fo",
+    "after": "{\"level_0\": \"Begin with 1 region; each chord adds 1, plus one extra fo"
+  },
+  {
+    "id": "KM-L5-GEO-0230",
+    "type": "A",
+    "field": "hint",
+    "before": "{\"level_0\": \"Begin with 1 region; each chord adds 1, plus one extra fo",
+    "after": "{\"level_0\": \"Begin with 1 region; each chord adds 1, plus one extra fo"
+  },
+  {
+    "id": "KM-L7-ALG-0021",
+    "type": "A",
+    "field": "solution",
+    "before": "\"By the Remainder Theorem the remainder equals P(2). Evaluate: P(2) = ",
+    "after": "\"By the Remainder Theorem the remainder equals P(2). Evaluate: P(2) = "
+  },
+  {
+    "id": "KM-L7-ALG-0021",
+    "type": "A",
+    "field": "solution_steps",
+    "before": "[\"By the Remainder Theorem the remainder equals P(2).\", \"Evaluate: P(2",
+    "after": "[\"By the Remainder Theorem the remainder equals P(2).\", \"Evaluate: P(2"
+  },
+  {
+    "id": "KM-L7-ALG-0022",
+    "type": "A",
+    "field": "solution",
+    "before": "\"By the Remainder Theorem the remainder equals P(3). Evaluate: P(3) = ",
+    "after": "\"By the Remainder Theorem the remainder equals P(3). Evaluate: P(3) = "
+  },
+  {
+    "id": "KM-L7-ALG-0022",
+    "type": "A",
+    "field": "solution_steps",
+    "before": "[\"By the Remainder Theorem the remainder equals P(3).\", \"Evaluate: P(3",
+    "after": "[\"By the Remainder Theorem the remainder equals P(3).\", \"Evaluate: P(3"
+  },
+  {
+    "id": "KM-L7-ALG-0023",
+    "type": "A",
+    "field": "solution",
+    "before": "\"By the Remainder Theorem the remainder equals P(-1). Evaluate: P(-1) ",
+    "after": "\"By the Remainder Theorem the remainder equals P(-1). Evaluate: P(-1) "
+  },
+  {
+    "id": "KM-L7-ALG-0023",
+    "type": "A",
+    "field": "solution_steps",
+    "before": "[\"By the Remainder Theorem the remainder equals P(-1).\", \"Evaluate: P(",
+    "after": "[\"By the Remainder Theorem the remainder equals P(-1).\", \"Evaluate: P("
+  },
+  {
+    "id": "KM-L7-ALG-0024",
+    "type": "A",
+    "field": "solution",
+    "before": "\"By the Remainder Theorem the remainder equals P(5). Evaluate: P(5) = ",
+    "after": "\"By the Remainder Theorem the remainder equals P(5). Evaluate: P(5) = "
+  },
+  {
+    "id": "KM-L7-ALG-0024",
+    "type": "A",
+    "field": "solution_steps",
+    "before": "[\"By the Remainder Theorem the remainder equals P(5).\", \"Evaluate: P(5",
+    "after": "[\"By the Remainder Theorem the remainder equals P(5).\", \"Evaluate: P(5"
+  },
+  {
+    "id": "KM-L6-COM-0072",
+    "type": "A",
+    "field": "stem",
+    "before": "\"Prove that any sequence of $5=2^2+1$ distinct real numbers contains a",
+    "after": "\"Prove that any sequence of $5=2^2+1$ distinct real numbers contains a"
+  },
+  {
+    "id": "KM-L6-COM-0114",
+    "type": "A",
+    "field": "stem",
+    "before": "\"Prove the Erd\\\\H{o}s--Ko--Rado theorem for $n=5,k=2$: the largest fam",
+    "after": "\"Prove the Erdős--Ko--Rado theorem for $n=5,k=2$: the largest family o"
+  },
+  {
+    "id": "KM-L6-NT-0040",
+    "type": "A",
+    "field": "solution",
+    "before": "\"Bertrand's postulate asserts a prime in $(n,2n)$ for every $n>1$ (pro",
+    "after": "\"Bertrand's postulate asserts a prime in $(n,2n)$ for every $n>1$ (pro"
+  },
+  {
+    "id": "KM-L6-NT-0040",
+    "type": "A",
+    "field": "solution_steps",
+    "before": "[\"Bertrand's postulate asserts a prime in $(n,2n)$ for every $n>1$ (pr",
+    "after": "[\"Bertrand's postulate asserts a prime in $(n,2n)$ for every $n>1$ (pr"
+  },
+  {
+    "id": "KM-L6-NT-0041",
+    "type": "A",
+    "field": "solution",
+    "before": "\"Bertrand's postulate asserts a prime in $(n,2n)$ for every $n>1$ (pro",
+    "after": "\"Bertrand's postulate asserts a prime in $(n,2n)$ for every $n>1$ (pro"
+  },
+  {
+    "id": "KM-L6-NT-0041",
+    "type": "A",
+    "field": "solution_steps",
+    "before": "[\"Bertrand's postulate asserts a prime in $(n,2n)$ for every $n>1$ (pr",
+    "after": "[\"Bertrand's postulate asserts a prime in $(n,2n)$ for every $n>1$ (pr"
+  },
+  {
+    "id": "KM-L6-NT-0042",
+    "type": "A",
+    "field": "solution",
+    "before": "\"Bertrand's postulate asserts a prime in $(n,2n)$ for every $n>1$ (pro",
+    "after": "\"Bertrand's postulate asserts a prime in $(n,2n)$ for every $n>1$ (pro"
+  },
+  {
+    "id": "KM-L6-NT-0042",
+    "type": "A",
+    "field": "solution_steps",
+    "before": "[\"Bertrand's postulate asserts a prime in $(n,2n)$ for every $n>1$ (pr",
+    "after": "[\"Bertrand's postulate asserts a prime in $(n,2n)$ for every $n>1$ (pr"
+  },
+  {
+    "id": "KM-L6-GEO-0250",
+    "type": "A",
+    "field": "stem",
+    "before": "\"Prove the de Bruijn--Erd\\\\H{o}s theorem: $n$ points in the plane, not",
+    "after": "\"Prove the de Bruijn--Erdős theorem: $n$ points in the plane, not all "
+  },
+  {
+    "id": "KM-L4-ALG-0198",
+    "type": "D",
+    "field": "stem",
+    "note": "reworded 'which figure has N dots' (no figure shown) -> plain 'position of N in odd numbers'; answer preserved"
+  },
+  {
+    "id": "KM-L4-ALG-0199",
+    "type": "D",
+    "field": "stem",
+    "note": "reworded 'which figure has N dots' (no figure shown) -> plain 'position of N in odd numbers'; answer preserved"
+  },
+  {
+    "id": "KM-L4-ALG-0200",
+    "type": "D",
+    "field": "stem",
+    "note": "reworded 'which figure has N dots' (no figure shown) -> plain 'position of N in odd numbers'; answer preserved"
+  },
+  {
+    "id": "KM-L4-COM-0147",
+    "type": "E",
+    "field": "visual_svg",
+    "note": "removed Venn diagram that showed derived region counts (spoiled the union/region answer)"
+  },
+  {
+    "id": "KM-L4-COM-0148",
+    "type": "E",
+    "field": "visual_svg",
+    "note": "removed Venn diagram that showed derived region counts (spoiled the union/region answer)"
+  },
+  {
+    "id": "KM-L4-COM-0149",
+    "type": "E",
+    "field": "visual_svg",
+    "note": "removed Venn diagram that showed derived region counts (spoiled the union/region answer)"
+  },
+  {
+    "id": "KM-L4-COM-0150",
+    "type": "E",
+    "field": "visual_svg",
+    "note": "removed Venn diagram that showed derived region counts (spoiled the union/region answer)"
+  },
+  {
+    "id": "KM-L4-COM-0151",
+    "type": "E",
+    "field": "visual_svg",
+    "note": "removed Venn diagram that showed derived region counts (spoiled the union/region answer)"
+  },
+  {
+    "id": "KM-L4-COM-0152",
+    "type": "E",
+    "field": "visual_svg",
+    "note": "removed Venn diagram that showed derived region counts (spoiled the union/region answer)"
+  },
+  {
+    "id": "KM-L4-COM-0153",
+    "type": "E",
+    "field": "visual_svg",
+    "note": "removed Venn diagram that showed derived region counts (spoiled the union/region answer)"
+  },
+  {
+    "id": "KM-L4-COM-0154",
+    "type": "E",
+    "field": "visual_svg",
+    "note": "removed Venn diagram that showed derived region counts (spoiled the union/region answer)"
+  },
+  {
+    "id": "KM-L4-COM-0155",
+    "type": "E",
+    "field": "visual_svg",
+    "note": "removed Venn diagram that showed derived region counts (spoiled the union/region answer)"
+  },
+  {
+    "id": "KM-L4-COM-0156",
+    "type": "E",
+    "field": "visual_svg",
+    "note": "removed Venn diagram that showed derived region counts (spoiled the union/region answer)"
+  },
+  {
+    "id": "KM-L4-COM-0157",
+    "type": "E",
+    "field": "visual_svg",
+    "note": "removed Venn diagram that showed derived region counts (spoiled the union/region answer)"
+  },
+  {
+    "id": "KM-L4-COM-0158",
+    "type": "E",
+    "field": "visual_svg",
+    "note": "removed Venn diagram that showed derived region counts (spoiled the union/region answer)"
+  },
+  {
+    "id": "KM-L4-COM-0159",
+    "type": "E",
+    "field": "visual_svg",
+    "note": "removed Venn diagram that showed derived region counts (spoiled the union/region answer)"
+  },
+  {
+    "id": "KM-L4-COM-0160",
+    "type": "E",
+    "field": "visual_svg",
+    "note": "removed Venn diagram that showed derived region counts (spoiled the union/region answer)"
+  },
+  {
+    "id": "KM-L4-COM-0161",
+    "type": "E",
+    "field": "visual_svg",
+    "note": "removed Venn diagram that showed derived region counts (spoiled the union/region answer)"
+  },
+  {
+    "id": "KM-L4-COM-0162",
+    "type": "E",
+    "field": "visual_svg",
+    "note": "removed Venn diagram that showed derived region counts (spoiled the union/region answer)"
+  },
+  {
+    "id": "KM-L4-COM-0001",
+    "type": "E",
+    "field": "visual_svg",
+    "note": "removed tree diagram that enumerated all outcomes (leaf-count = answer)"
+  },
+  {
+    "id": "KM-L4-COM-0003",
+    "type": "E",
+    "field": "visual_svg",
+    "note": "removed tree diagram that enumerated all outcomes (leaf-count = answer)"
+  },
+  {
+    "id": "KM-L4-COM-0129",
+    "type": "E",
+    "field": "visual_svg",
+    "note": "removed tree diagram that enumerated all outcomes (leaf-count = answer)"
+  },
+  {
+    "id": "KM-L4-COM-0133",
+    "type": "E",
+    "field": "visual_svg",
+    "note": "removed tree diagram that enumerated all outcomes (leaf-count = answer)"
+  },
+  {
+    "id": "KM-L4-COM-0134",
+    "type": "E",
+    "field": "visual_svg",
+    "note": "removed tree diagram that enumerated all outcomes (leaf-count = answer)"
+  },
+  {
+    "id": "KM-L4-COM-0135",
+    "type": "E",
+    "field": "visual_svg",
+    "note": "removed tree diagram that enumerated all outcomes (leaf-count = answer)"
+  },
+  {
+    "id": "KM-L4-COM-0139",
+    "type": "E",
+    "field": "visual_svg",
+    "note": "removed tree diagram that enumerated all outcomes (leaf-count = answer)"
+  },
+  {
+    "id": "KM-L4-COM-0140",
+    "type": "E",
+    "field": "visual_svg",
+    "note": "removed tree diagram that enumerated all outcomes (leaf-count = answer)"
+  },
+  {
+    "id": "KM-L4-COM-0141",
+    "type": "E",
+    "field": "visual_svg",
+    "note": "removed tree diagram that enumerated all outcomes (leaf-count = answer)"
+  },
+  {
+    "id": "KM-L4-COM-0142",
+    "type": "E",
+    "field": "visual_svg",
+    "note": "removed tree diagram that enumerated all outcomes (leaf-count = answer)"
+  },
+  {
+    "id": "KM-L4-COM-0143",
+    "type": "E",
+    "field": "visual_svg",
+    "note": "removed tree diagram that enumerated all outcomes (leaf-count = answer)"
+  },
+  {
+    "id": "KM-L4-COM-0144",
+    "type": "E",
+    "field": "visual_svg",
+    "note": "removed tree diagram that enumerated all outcomes (leaf-count = answer)"
+  },
+  {
+    "id": "KM-L4-COM-0145",
+    "type": "E",
+    "field": "visual_svg",
+    "note": "removed tree diagram that enumerated all outcomes (leaf-count = answer)"
+  },
+  {
+    "id": "KM-L4-COM-0139",
+    "type": "E",
+    "field": "stem",
+    "note": "dropped 'Using a tree diagram,' after removing the spoiler figure"
+  },
+  {
+    "id": "KM-L4-COM-0140",
+    "type": "E",
+    "field": "stem",
+    "note": "dropped 'Using a tree diagram,' after removing the spoiler figure"
+  },
+  {
+    "id": "KM-L4-COM-0141",
+    "type": "E",
+    "field": "stem",
+    "note": "dropped 'Using a tree diagram,' after removing the spoiler figure"
+  },
+  {
+    "id": "KM-L4-COM-0142",
+    "type": "E",
+    "field": "stem",
+    "note": "dropped 'Using a tree diagram,' after removing the spoiler figure"
+  },
+  {
+    "id": "KM-L4-COM-0143",
+    "type": "E",
+    "field": "stem",
+    "note": "dropped 'Using a tree diagram,' after removing the spoiler figure"
+  },
+  {
+    "id": "KM-L3-GEO-0181",
+    "type": "C",
+    "field": "visual_svg",
+    "note": "L1-L3 extension: semicircle/quarter-circle was drawn as a FULL circle; redrew faithfully (label preserved)"
+  },
+  {
+    "id": "KM-L3-GEO-0192",
+    "type": "C",
+    "field": "visual_svg",
+    "note": "L1-L3 extension: semicircle/quarter-circle was drawn as a FULL circle; redrew faithfully (label preserved)"
+  },
+  {
+    "id": "KM-L3-GEO-0220",
+    "type": "C",
+    "field": "visual_svg",
+    "note": "L1-L3 extension: semicircle/quarter-circle was drawn as a FULL circle; redrew faithfully (label preserved)"
+  },
+  {
+    "id": "KM-L1-GEO-0119",
+    "type": "C",
+    "field": "visual_svg",
+    "note": "L1-L3 extension: semicircle/quarter-circle was drawn as a FULL circle; redrew faithfully (label preserved)"
+  },
+  {
+    "id": "KM-L1-GEO-0166",
+    "type": "C",
+    "field": "visual_svg",
+    "note": "L1-L3 extension: semicircle/quarter-circle was drawn as a FULL circle; redrew faithfully (label preserved)"
+  },
+  {
+    "id": "KM-L1-GEO-0424",
+    "type": "C",
+    "field": "visual_svg",
+    "note": "L1-L3 extension: semicircle/quarter-circle was drawn as a FULL circle; redrew faithfully (label preserved)"
+  },
+  {
+    "id": "KM-L1-GEO-0546",
+    "type": "C",
+    "field": "visual_svg",
+    "note": "L1-L3 extension: semicircle/quarter-circle was drawn as a FULL circle; redrew faithfully (label preserved)"
+  },
+  {
+    "id": "KM-L1-GEO-0705",
+    "type": "C",
+    "field": "visual_svg",
+    "note": "L1-L3 extension: semicircle/quarter-circle was drawn as a FULL circle; redrew faithfully (label preserved)"
+  },
+  {
+    "id": "KM-L1-GEO-0753",
+    "type": "C",
+    "field": "visual_svg",
+    "note": "L1-L3 extension: semicircle/quarter-circle was drawn as a FULL circle; redrew faithfully (label preserved)"
+  },
+  {
+    "id": "KM-L1-GEO-0756",
+    "type": "C",
+    "field": "visual_svg",
+    "note": "L1-L3 extension: semicircle/quarter-circle was drawn as a FULL circle; redrew faithfully (label preserved)"
+  },
+  {
+    "id": "KM-L1-GEO-0767",
+    "type": "C",
+    "field": "visual_svg",
+    "note": "L1-L3 extension: semicircle/quarter-circle was drawn as a FULL circle; redrew faithfully (label preserved)"
+  },
+  {
+    "id": "KM-L1-GEO-0782",
+    "type": "C",
+    "field": "visual_svg",
+    "note": "L1-L3 extension: semicircle/quarter-circle was drawn as a FULL circle; redrew faithfully (label preserved)"
+  },
+  {
+    "id": "KM-L1-GEO-0831",
+    "type": "C",
+    "field": "visual_svg",
+    "note": "L1-L3 extension: semicircle/quarter-circle was drawn as a FULL circle; redrew faithfully (label preserved)"
+  },
+  {
+    "id": "KM-L2-GEO-1014",
+    "type": "D",
+    "field": "stem",
+    "note": "referenced an absent figure; reworded self-contained, answer preserved"
+  },
+  {
+    "id": "KM-L2-GEO-1022",
+    "type": "D",
+    "field": "stem",
+    "note": "referenced an absent figure; reworded self-contained, answer preserved"
+  },
+  {
+    "id": "KM-L4-GEO-0059",
+    "type": "F",
+    "field": "visual_svg",
+    "note": "right-triangle figure labeled the hypotenuse (=answer) at tiny font; redrew showing only the two legs, larger readable font, no hypotenuse label"
+  },
+  {
+    "id": "KM-L4-GEO-0060",
+    "type": "F",
+    "field": "visual_svg",
+    "note": "right-triangle figure labeled the hypotenuse (=answer) at tiny font; redrew showing only the two legs, larger readable font, no hypotenuse label"
+  },
+  {
+    "id": "KM-L4-GEO-0061",
+    "type": "F",
+    "field": "visual_svg",
+    "note": "right-triangle figure labeled the hypotenuse (=answer) at tiny font; redrew showing only the two legs, larger readable font, no hypotenuse label"
+  },
+  {
+    "id": "KM-L4-GEO-0062",
+    "type": "F",
+    "field": "visual_svg",
+    "note": "right-triangle figure labeled the hypotenuse (=answer) at tiny font; redrew showing only the two legs, larger readable font, no hypotenuse label"
+  },
+  {
+    "id": "KM-L4-GEO-0063",
+    "type": "F",
+    "field": "visual_svg",
+    "note": "right-triangle figure labeled the hypotenuse (=answer) at tiny font; redrew showing only the two legs, larger readable font, no hypotenuse label"
+  },
+  {
+    "id": "KM-L5-GEO-0033",
+    "type": "F",
+    "field": "visual_svg",
+    "note": "right-triangle figure labeled the hypotenuse (=answer) at tiny font; redrew showing only the two legs, larger readable font, no hypotenuse label"
+  },
+  {
+    "id": "KM-L5-GEO-0034",
+    "type": "F",
+    "field": "visual_svg",
+    "note": "right-triangle figure labeled the hypotenuse (=answer) at tiny font; redrew showing only the two legs, larger readable font, no hypotenuse label"
+  },
+  {
+    "id": "KM-L5-GEO-0035",
+    "type": "F",
+    "field": "visual_svg",
+    "note": "right-triangle figure labeled the hypotenuse (=answer) at tiny font; redrew showing only the two legs, larger readable font, no hypotenuse label"
+  },
+  {
+    "id": "KM-L5-GEO-0036",
+    "type": "F",
+    "field": "visual_svg",
+    "note": "right-triangle figure labeled the hypotenuse (=answer) at tiny font; redrew showing only the two legs, larger readable font, no hypotenuse label"
+  },
+  {
+    "id": "KM-L5-GEO-0037",
+    "type": "F",
+    "field": "visual_svg",
+    "note": "right-triangle figure labeled the hypotenuse (=answer) at tiny font; redrew showing only the two legs, larger readable font, no hypotenuse label"
+  },
+  {
+    "id": "KM-L5-GEO-0038",
+    "type": "F",
+    "field": "visual_svg",
+    "note": "right-triangle figure labeled the hypotenuse (=answer) at tiny font; redrew showing only the two legs, larger readable font, no hypotenuse label"
+  },
+  {
+    "id": "KM-L5-GEO-0039",
+    "type": "F",
+    "field": "visual_svg",
+    "note": "right-triangle figure labeled the hypotenuse (=answer) at tiny font; redrew showing only the two legs, larger readable font, no hypotenuse label"
+  },
+  {
+    "id": "KM-L5-GEO-0040",
+    "type": "F",
+    "field": "visual_svg",
+    "note": "right-triangle figure labeled the hypotenuse (=answer) at tiny font; redrew showing only the two legs, larger readable font, no hypotenuse label"
+  },
+  {
+    "id": "KM-L5-GEO-0041",
+    "type": "F",
+    "field": "visual_svg",
+    "note": "right-triangle figure labeled the hypotenuse (=answer) at tiny font; redrew showing only the two legs, larger readable font, no hypotenuse label"
+  },
+  {
+    "id": "KM-L5-GEO-0042",
+    "type": "F",
+    "field": "visual_svg",
+    "note": "right-triangle figure labeled the hypotenuse (=answer) at tiny font; redrew showing only the two legs, larger readable font, no hypotenuse label"
+  },
+  {
+    "id": "KM-L5-GEO-0043",
+    "type": "F",
+    "field": "visual_svg",
+    "note": "right-triangle figure labeled the hypotenuse (=answer) at tiny font; redrew showing only the two legs, larger readable font, no hypotenuse label"
+  },
+  {
+    "id": "KM-L5-GEO-0044",
+    "type": "F",
+    "field": "visual_svg",
+    "note": "right-triangle figure labeled the hypotenuse (=answer) at tiny font; redrew showing only the two legs, larger readable font, no hypotenuse label"
+  },
+  {
+    "id": "KM-L4-GEO-0049",
+    "type": "G",
+    "field": "visual_svg",
+    "note": "acute-angle label was drawn on the right-angle vertex (90° corner) + tiny font; redrew with given angle at an acute vertex, ? at the other, right-angle mark at 90°, font 19"
+  },
+  {
+    "id": "KM-L4-GEO-0050",
+    "type": "G",
+    "field": "visual_svg",
+    "note": "acute-angle label was drawn on the right-angle vertex (90° corner) + tiny font; redrew with given angle at an acute vertex, ? at the other, right-angle mark at 90°, font 19"
+  },
+  {
+    "id": "KM-L4-GEO-0051",
+    "type": "G",
+    "field": "visual_svg",
+    "note": "acute-angle label was drawn on the right-angle vertex (90° corner) + tiny font; redrew with given angle at an acute vertex, ? at the other, right-angle mark at 90°, font 19"
+  },
+  {
+    "id": "KM-L4-GEO-0052",
+    "type": "G",
+    "field": "visual_svg",
+    "note": "acute-angle label was drawn on the right-angle vertex (90° corner) + tiny font; redrew with given angle at an acute vertex, ? at the other, right-angle mark at 90°, font 19"
+  }
+]

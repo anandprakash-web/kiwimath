@@ -103,17 +103,17 @@ class _MatchColumnWidgetState extends State<MatchColumnWidget> {
             borderRadius: BorderRadius.circular(12),
             border: Border.all(color: const Color(0xFFCE93D8), width: 1.5), // decorative — no token
           ),
-          child: Row(
+          child: const Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              const Text('\u{1F517}', style: TextStyle(fontSize: 18)),
-              const SizedBox(width: 8),
+              Text('\u{1F517}', style: TextStyle(fontSize: 18)),
+              SizedBox(width: 8),
               Text(
                 'Tap left, then tap right to match!',
                 style: TextStyle(
                   fontSize: 14,
                   fontWeight: FontWeight.w700,
-                  color: const Color(0xFF6A1B9A), // decorative — no token
+                  color: Color(0xFF6A1B9A), // decorative — no token
                 ),
               ),
             ],
@@ -293,7 +293,7 @@ class _MatchColumnWidgetState extends State<MatchColumnWidget> {
                         Expanded(
                           child: Text(
                             widget.leftItems[i],
-                            style: TextStyle(
+                            style: const TextStyle(
                               fontSize: 14,
                               fontWeight: FontWeight.w700,
                               color: KiwiColors.textDark,
@@ -379,7 +379,7 @@ class _MatchColumnWidgetState extends State<MatchColumnWidget> {
                                     size: 14, color: Colors.white)
                                 : Text(
                                     String.fromCharCode(65 + i), // A, B, C...
-                                    style: TextStyle(
+                                    style: const TextStyle(
                                       fontSize: 12,
                                       fontWeight: FontWeight.w800,
                                       color: KiwiColors.textMid,
@@ -391,7 +391,7 @@ class _MatchColumnWidgetState extends State<MatchColumnWidget> {
                         Expanded(
                           child: Text(
                             widget.rightItems[i],
-                            style: TextStyle(
+                            style: const TextStyle(
                               fontSize: 14,
                               fontWeight: FontWeight.w700,
                               color: KiwiColors.textDark,

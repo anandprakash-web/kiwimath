@@ -1,0 +1,12 @@
+{
+  "level": "L5",
+  "level_name": "IOQM",
+  "pillar": "ALG",
+  "topic_key": "factor_and_remainder_theorem",
+  "display_name": "Factor And Remainder Theorem",
+  "total_questions": 0,
+  "questions": [],
+  "pending_conversion": true,
+  "removed_image_questions": 11,
+  "note": "Image-based 'Solve the problem shown' questions removed from served bank 2026-06-22 (display only in Library books). Re-extract from the source PDF and convert to typed HTML/LaTeX (100% certain only) before re-populating."
+}

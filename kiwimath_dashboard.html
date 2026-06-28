@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Kiwimath · Live Dashboard</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+:root{--orange:#FF6F00;--orange-d:#E25E00;--ink:#1E1633;--ink2:#2A2140;--paper:#fff;
+  --bg:#F4F1FA;--text:#231C30;--mute:#7A7290;--line:#E9E3F2;--green:#2FA866;--berry:#FF5470;--teal:#12A99B;--gold:#F5A623}
+*{box-sizing:border-box}
+body{margin:0;background:linear-gradient(170deg,#efe9f6,#f6f1ee);color:var(--text);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+.top{background:var(--ink);color:#fff;padding:16px 22px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.top h1{font-size:18px;margin:0;font-weight:800;letter-spacing:-.2px}
+.top .tag{font-size:11px;font-weight:700;color:#1E1633;background:var(--orange);padding:3px 9px;border-radius:20px}
+.cfg{margin-left:auto;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.cfg input{border:1px solid #3a2f55;background:#241c39;color:#fff;border-radius:9px;padding:8px 10px;font-size:12.5px;font-family:inherit}
+.cfg input#url{width:300px}.cfg input#key{width:150px}
+.cfg button{border:none;border-radius:9px;padding:8px 14px;font-weight:800;font-size:12.5px;cursor:pointer;font-family:inherit;background:var(--orange);color:#fff}
+.cfg label{font-size:12px;color:#cfc6e6;display:flex;align-items:center;gap:5px}
+.status{padding:9px 22px;font-size:12.5px;color:var(--mute);display:flex;gap:10px;align-items:center}
+.status .dot{width:8px;height:8px;border-radius:50%;background:var(--green)}
+.status .dot.err{background:var(--berry)}.status .dot.load{background:var(--gold);animation:p 1s infinite}
+@keyframes p{50%{opacity:.3}}
+.wrap{max-width:1180px;margin:0 auto;padding:8px 22px 50px}
+.banner{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin:12px 0;font-size:14px;color:var(--text);line-height:1.5}
+.banner.err{background:#fdecef;border-color:#f6c2cd;color:#9a2740}
+.banner.warn{background:#fff7e8;border-color:#f3dca6;color:#7a5a14}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:14px 0}
+.kpi{background:#fff;border:1px solid var(--line);border-radius:18px;padding:16px 18px;box-shadow:0 8px 22px -16px rgba(40,20,60,.3)}
+.kpi .v{font-size:32px;font-weight:800;color:var(--ink);letter-spacing:-1px;line-height:1}
+.kpi .l{font-size:12.5px;color:var(--mute);margin-top:6px;font-weight:600}
+.kpi.hl .v{color:var(--orange-d)}
+.cards{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:14px;margin:6px 0 16px}
+.card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:16px 18px;box-shadow:0 8px 22px -16px rgba(40,20,60,.3)}
+.card h3{font-size:13px;font-weight:800;color:var(--ink);margin:0 0 10px;text-transform:uppercase;letter-spacing:.4px}
+.card canvas{max-height:200px}
+.tablecard{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 8px 22px -16px rgba(40,20,60,.3)}
+.tablecard .hd{padding:14px 18px;font-size:13px;font-weight:800;color:var(--ink);text-transform:uppercase;letter-spacing:.4px;border-bottom:1px solid var(--line)}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th,td{padding:10px 14px;text-align:left;white-space:nowrap}
+th{font-size:11px;text-transform:uppercase;letter-spacing:.4px;color:var(--mute);cursor:pointer;user-select:none;border-bottom:1px solid var(--line)}
+th:hover{color:var(--orange-d)}
+tbody tr{border-bottom:1px solid #f3eef8}
+tbody tr:hover{background:#faf7fd}
+td.num{text-align:right;font-variant-numeric:tabular-nums}
+.pillrec{display:inline-block;padding:3px 9px;border-radius:20px;font-size:11px;font-weight:700}
+.rec-now{background:#e7f8ee;color:var(--green)}.rec-week{background:#fff3e0;color:var(--orange-d)}.rec-old{background:#f1eef6;color:var(--mute)}
+.muted{color:var(--mute)}
+@media(max-width:900px){.kpis{grid-template-columns:repeat(2,1fr)}.cards{grid-template-columns:1fr}.cfg input#url{width:180px}}
+</style>
+</head>
+<body>
+<div class="top">
+  <h1>🥝 Kiwimath</h1><span class="tag">LIVE</span>
+  <div class="cfg">
+    <input id="url" placeholder="backend URL"/>
+    <input id="key" placeholder="admin key" type="password"/>
+    <label><input type="checkbox" id="auto" checked/> auto</label>
+    <button onclick="load()">Refresh</button>
+  </div>
+</div>
+<div class="status"><span class="dot" id="dot"></span><span id="statustext">Ready.</span></div>
+
+<div class="wrap">
+  <div id="banner"></div>
+
+  <div class="kpis" id="kpis"></div>
+
+  <div class="cards">
+    <div class="card"><h3>New users by day</h3><canvas id="chDay"></canvas></div>
+    <div class="card"><h3>By grade</h3><canvas id="chGrade"></canvas></div>
+    <div class="card"><h3>Top topics practised</h3><canvas id="chTopic"></canvas></div>
+  </div>
+
+  <div class="tablecard">
+    <div class="hd">Who's using it · what they're doing</div>
+    <div style="overflow-x:auto"><table id="tbl">
+      <thead><tr>
+        <th onclick="sortBy('name')">User</th>
+        <th onclick="sortBy('grade')">Grade</th>
+        <th onclick="sortBy('created_at')">Joined</th>
+        <th onclick="sortBy('days_since_active')">Last seen</th>
+        <th onclick="sortBy('questions_answered')" class="num">Questions</th>
+        <th onclick="sortBy('accuracy')" class="num">Accuracy</th>
+        <th onclick="sortBy('sessions')" class="num">Sessions</th>
+        <th onclick="sortBy('streak_current')" class="num">Streak</th>
+        <th onclick="sortBy('xp')" class="num">XP</th>
+      </tr></thead>
+      <tbody id="tbody"></tbody>
+    </table></div>
+  </div>
+</div>
+
+<script>
+const DEFAULT_URL = "https://kiwimath-api-deufqab6gq-el.a.run.app";
+const DEFAULT_KEY = "kmx-founder-7Q2v9Lp4Ad";
+const $ = id => document.getElementById(id);
+$("url").value = localStorage.getItem("km_url") || DEFAULT_URL;
+$("key").value = localStorage.getItem("km_key") || DEFAULT_KEY;
+
+let charts = {}, lastData = null, sortKey = "days_since_active", sortDir = 1;
+
+function setStatus(t, kind){ $("statustext").textContent = t; $("dot").className = "dot" + (kind?(" "+kind):""); }
+function fmtDate(iso){ if(!iso) return "—"; try{return new Date(iso).toLocaleDateString(undefined,{month:"short",day:"numeric"});}catch(e){return "—";} }
+function recency(d){ if(d==null) return ['—','rec-old']; if(d<=1) return ['today','rec-now']; if(d<=7) return [Math.round(d)+'d ago','rec-week']; return [Math.round(d)+'d ago','rec-old']; }
+
+async function load(){
+  const url = $("url").value.trim().replace(/\/$/,""), key = $("key").value.trim();
+  localStorage.setItem("km_url",url); localStorage.setItem("km_key",key);
+  setStatus("Loading…","load"); $("banner").innerHTML="";
+  try{
+    const r = await fetch(url + "/v3/admin/usage?key=" + encodeURIComponent(key), {method:"GET"});
+    if(r.status===403){ setStatus("Unauthorized — check the admin key.","err"); banner("err","🔑 The admin key didn't match. Check the key in the box (and that it matches <code>KIWIMATH_ADMIN_KEY</code> on the server if you set one)."); return; }
+    if(!r.ok){ setStatus("HTTP "+r.status,"err"); banner("err","Server returned HTTP "+r.status+". Is the backend deployed with the new endpoint?"); return; }
+    const d = await r.json();
+    if(d.available===false){ setStatus("Backend reachable, data layer unavailable.","err"); banner("warn","The endpoint is live but Firebase/Firestore isn't reachable from the server: <code>"+(d.reason||"")+"</code>"); return; }
+    lastData = d; render(d);
+    setStatus("Updated "+new Date(d.generated_at).toLocaleTimeString()+" · "+d.totals.total_users+" users","");
+  }catch(e){
+    setStatus("Couldn't reach the backend.","err");
+    banner("err","Couldn't fetch the endpoint (network or CORS). Two fixes: <b>1)</b> make sure you ran <code>./deploy.sh</code> so <code>/v3/admin/usage</code> is live; <b>2)</b> if your browser blocks it, open the URL directly: <a href='#' onclick='openRaw();return false;'>open the JSON</a>. ("+e.message+")");
+  }
+}
+function openRaw(){ const url=$("url").value.trim().replace(/\/$/,""),key=$("key").value.trim(); window.open(url+"/v3/admin/usage?key="+encodeURIComponent(key),"_blank"); }
+function banner(kind,html){ $("banner").innerHTML = '<div class="banner '+kind+'">'+html+'</div>'; }
+
+function kpi(v,l,hl){ return '<div class="kpi'+(hl?' hl':'')+'"><div class="v">'+v+'</div><div class="l">'+l+'</div></div>'; }
+function render(d){
+  const t = d.totals;
+  let html = "";
+  html += kpi(t.total_users, "Total users", true);
+  html += kpi(t.active_7d, "Active this week");
+  html += kpi(t.active_24h, "Active today");
+  html += kpi(t.new_7d, "New this week");
+  html += kpi(t.questions_answered.toLocaleString(), "Questions answered");
+  html += kpi(t.avg_accuracy!=null? t.avg_accuracy+"%":"—", "Avg accuracy");
+  html += kpi(t.sessions, "Sessions");
+  html += kpi(t.anonymous_users, "Anonymous logins");
+  $("kpis").innerHTML = html;
+
+  if(t.total_users===0){ banner("warn","No one has opened the app yet (0 users in Firebase). Once a tester signs in, they'll appear here within a minute."); }
+
+  drawBar("chDay", Object.keys(d.new_users_by_day), Object.values(d.new_users_by_day), "#FF6F00");
+  drawDoughnut("chGrade", Object.keys(d.by_grade), Object.values(d.by_grade));
+  const tk = Object.keys(d.by_topic).map(k=>k.replace(/^.*?-/,'').slice(0,16));
+  drawBar("chTopic", tk, Object.values(d.by_topic), "#12A99B", true);
+
+  renderTable(d.users);
+}
+function renderTable(users){
+  const arr = [...users].sort((a,b)=>{
+    let x=a[sortKey], y=b[sortKey];
+    if(x==null)x=sortKey==='days_since_active'?1e9:'';if(y==null)y=sortKey==='days_since_active'?1e9:'';
+    if(typeof x==='string') return sortDir*x.localeCompare(y);
+    return sortDir*(x-y);
+  });
+  $("tbody").innerHTML = arr.map(u=>{
+    const [rt,rc]=recency(u.days_since_active);
+    return '<tr><td><b>'+esc(u.name)+'</b>'+(u.anonymous?' <span class="muted">·anon</span>':'')+'</td>'
+      +'<td>'+(u.grade??'—')+'</td><td>'+fmtDate(u.created_at)+'</td>'
+      +'<td><span class="pillrec '+rc+'">'+rt+'</span></td>'
+      +'<td class="num">'+(u.questions_answered||0)+'</td>'
+      +'<td class="num">'+(u.accuracy!=null?u.accuracy+'%':'—')+'</td>'
+      +'<td class="num">'+(u.sessions||0)+'</td>'
+      +'<td class="num">'+(u.streak_current||0)+'🔥</td>'
+      +'<td class="num">'+(u.xp||0)+'</td></tr>';
+  }).join("") || '<tr><td colspan="9" class="muted" style="padding:18px">No users yet.</td></tr>';
+}
+function sortBy(k){ sortDir = (sortKey===k)? -sortDir : 1; sortKey=k; if(lastData) renderTable(lastData.users); }
+function esc(s){ return (s==null?'':String(s)).replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c])); }
+
+function drawBar(id,labels,data,color,horizontal){
+  if(charts[id]) charts[id].destroy();
+  charts[id]=new Chart($(id),{type:'bar',data:{labels,datasets:[{data,backgroundColor:color,borderRadius:6,maxBarThickness:34}]},
+    options:{indexAxis:horizontal?'y':'x',plugins:{legend:{display:false}},responsive:true,
+      scales:{x:{grid:{display:false},ticks:{font:{size:10},color:'#7A7290'}},y:{grid:{color:'#f0ecf6'},ticks:{font:{size:10},color:'#7A7290',precision:0}}}}});
+}
+function drawDoughnut(id,labels,data){
+  if(charts[id]) charts[id].destroy();
+  charts[id]=new Chart($(id),{type:'doughnut',data:{labels:labels.map(l=>'Grade '+l),datasets:[{data,
+    backgroundColor:['#FF6F00','#12A99B','#7A5CFF','#FF5470','#F5A623','#2FA866','#cfc8da']}]},
+    options:{plugins:{legend:{position:'right',labels:{font:{size:11},boxWidth:12}}},cutout:'58%'}});
+}
+
+let timer=null;
+function tick(){ if($("auto").checked) load(); }
+$("auto").addEventListener("change",()=>{ if($("auto").checked && !timer) {} });
+setInterval(tick, 60000);
+load();
+</script>
+</body>
+</html>

@@ -36,7 +36,7 @@ class ProficiencyCard extends StatelessWidget {
       elevation: 2,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(KiwiSpacing.lg)),
       child: Padding(
-        padding: EdgeInsets.all(KiwiSpacing.xl - 4),
+        padding: const EdgeInsets.all(KiwiSpacing.xl - 4),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -91,7 +91,7 @@ class ProficiencyCard extends StatelessWidget {
                       const SizedBox(height: 4),
                       Text(
                         'Scale Score: $scaleScore',
-                        style: TextStyle(
+                        style: const TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.bold,
                           color: KiwiColors.textDark,
@@ -112,11 +112,11 @@ class ProficiencyCard extends StatelessWidget {
                 children: [
                   Text(
                     name,
-                    style: TextStyle(fontSize: 12, color: KiwiColors.textMuted),
+                    style: const TextStyle(fontSize: 12, color: KiwiColors.textMuted),
                   ),
                   Text(
                     nextLevel,
-                    style: TextStyle(fontSize: 12, color: KiwiColors.textMuted),
+                    style: const TextStyle(fontSize: 12, color: KiwiColors.textMuted),
                   ),
                 ],
               ),
@@ -133,7 +133,7 @@ class ProficiencyCard extends StatelessWidget {
               const SizedBox(height: 4),
               Text(
                 '$progress% to $nextLevel',
-                style: TextStyle(fontSize: 11, color: KiwiColors.textMuted),
+                style: const TextStyle(fontSize: 11, color: KiwiColors.textMuted),
               ),
             ],
 
@@ -142,7 +142,7 @@ class ProficiencyCard extends StatelessWidget {
             // Description
             Text(
               description,
-              style: TextStyle(
+              style: const TextStyle(
                 fontSize: 14,
                 color: KiwiColors.textMid,
                 height: 1.4,
@@ -164,7 +164,7 @@ class ProficiencyCard extends StatelessWidget {
             // What your child can do
             if (canDo.isNotEmpty) ...[
               const SizedBox(height: 16),
-              Text(
+              const Text(
                 'What your child can do:',
                 style: TextStyle(
                   fontSize: 13,
@@ -183,7 +183,7 @@ class ProficiencyCard extends StatelessWidget {
                         Expanded(
                           child: Text(
                             item,
-                            style: TextStyle(
+                            style: const TextStyle(
                                 fontSize: 13, color: KiwiColors.textMid),
                           ),
                         ),
@@ -195,7 +195,7 @@ class ProficiencyCard extends StatelessWidget {
             // Next steps
             if (nextSteps.isNotEmpty) ...[
               const SizedBox(height: 12),
-              Text(
+              const Text(
                 'Recommended next steps:',
                 style: TextStyle(
                   fontSize: 13,
@@ -209,13 +209,13 @@ class ProficiencyCard extends StatelessWidget {
                     child: Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Icon(Icons.arrow_forward,
+                        const Icon(Icons.arrow_forward,
                             size: 14, color: KiwiColors.sky),
                         const SizedBox(width: 8),
                         Expanded(
                           child: Text(
                             item,
-                            style: TextStyle(
+                            style: const TextStyle(
                                 fontSize: 13, color: KiwiColors.textMid),
                           ),
                         ),
@@ -285,7 +285,7 @@ class _GrowthIndicator extends StatelessWidget {
                 ),
                 Text(
                   message,
-                  style: TextStyle(fontSize: 12, color: KiwiColors.textMid),
+                  style: const TextStyle(fontSize: 12, color: KiwiColors.textMid),
                 ),
               ],
             ),
@@ -306,7 +306,7 @@ class _CompetencyBreakdown extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(
+        const Text(
           'Competency Breakdown',
           style: TextStyle(
             fontSize: 13,
@@ -367,12 +367,12 @@ class _CompetencyBar extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(label,
-                  style: TextStyle(
+                  style: const TextStyle(
                       fontSize: 12,
                       fontWeight: FontWeight.w600,
                       color: KiwiColors.textDark)),
               Text(subtitle,
-                  style: TextStyle(fontSize: 10, color: KiwiColors.textMuted)),
+                  style: const TextStyle(fontSize: 10, color: KiwiColors.textMuted)),
             ],
           ),
         ),
@@ -394,7 +394,7 @@ class _CompetencyBar extends StatelessWidget {
           child: Text(
             total > 0 ? '${accuracy.round()}%' : '--',
             textAlign: TextAlign.right,
-            style: TextStyle(
+            style: const TextStyle(
               fontSize: 12,
               fontWeight: FontWeight.w600,
               color: KiwiColors.textMid,

@@ -163,14 +163,14 @@ class CompanionService extends ChangeNotifier {
   CompanionConfig _buildFallbackConfig() {
     return CompanionConfig(
       cast: [
-        CompanionData(
+        const CompanionData(
           id: CompanionId.kiwi,
           name: 'Kiwi',
           region: 'pacific_oceania',
           role: 'curious_explorer',
-          signatureColor: const Color(0xFF16A34A),
-          signatureColorSoft: const Color(0xFFD1FAE5),
-          signatureColorText: const Color(0xFF065F46),
+          signatureColor: Color(0xFF16A34A),
+          signatureColorSoft: Color(0xFFD1FAE5),
+          signatureColorText: Color(0xFF065F46),
           isDefault: true,
           shipped: true,
         ),

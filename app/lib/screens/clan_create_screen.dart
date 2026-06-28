@@ -1,7 +1,6 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
 import '../theme/kiwi_theme.dart';
-import '../models/clan.dart';
 
 /// Parent-gated clan creation flow.
 ///
@@ -161,7 +160,7 @@ class _ClanCreateScreenState extends State<ClanCreateScreen> {
   Widget _buildParentGate() {
     return Center(
       child: SingleChildScrollView(
-        padding: EdgeInsets.symmetric(horizontal: KiwiSpacing.xxl - 4),
+        padding: const EdgeInsets.symmetric(horizontal: KiwiSpacing.xxl - 4),
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
@@ -176,7 +175,7 @@ class _ClanCreateScreenState extends State<ClanCreateScreen> {
               alignment: Alignment.center,
               child: const Text('\u{1F512}', style: TextStyle(fontSize: 40)),
             ),
-            SizedBox(height: KiwiSpacing.xl),
+            const SizedBox(height: KiwiSpacing.xl),
             const Text(
               'Ask Your Parent!',
               style: TextStyle(
@@ -185,7 +184,7 @@ class _ClanCreateScreenState extends State<ClanCreateScreen> {
                 color: KiwiColors.textDark,
               ),
             ),
-            SizedBox(height: KiwiSpacing.sm),
+            const SizedBox(height: KiwiSpacing.sm),
             const Text(
               'A grown-up needs to answer this\nquestion before you can create a clan.',
               textAlign: TextAlign.center,
@@ -195,10 +194,10 @@ class _ClanCreateScreenState extends State<ClanCreateScreen> {
                 height: 1.4,
               ),
             ),
-            SizedBox(height: KiwiSpacing.xxl - 4),
+            const SizedBox(height: KiwiSpacing.xxl - 4),
             // Question card
             Container(
-              padding: EdgeInsets.all(KiwiSpacing.xl),
+              padding: const EdgeInsets.all(KiwiSpacing.xl),
               decoration: BoxDecoration(
                 color: KiwiColors.cardBg,
                 borderRadius: BorderRadius.circular(KiwiSpacing.lg),
@@ -220,7 +219,7 @@ class _ClanCreateScreenState extends State<ClanCreateScreen> {
                       color: KiwiColors.textDark,
                     ),
                   ),
-                  SizedBox(height: KiwiSpacing.lg),
+                  const SizedBox(height: KiwiSpacing.lg),
                   TextField(
                     controller: _gateController,
                     keyboardType: TextInputType.number,
@@ -239,7 +238,7 @@ class _ClanCreateScreenState extends State<ClanCreateScreen> {
                         borderRadius: BorderRadius.circular(KiwiSpacing.md),
                         borderSide: BorderSide.none,
                       ),
-                      contentPadding: EdgeInsets.symmetric(
+                      contentPadding: const EdgeInsets.symmetric(
                         vertical: KiwiSpacing.md + 2,
                         horizontal: KiwiSpacing.lg,
                       ),
@@ -250,7 +249,7 @@ class _ClanCreateScreenState extends State<ClanCreateScreen> {
                 ],
               ),
             ),
-            SizedBox(height: KiwiSpacing.xl),
+            const SizedBox(height: KiwiSpacing.xl),
             SizedBox(
               width: double.infinity,
               height: 52,
@@ -285,13 +284,13 @@ class _ClanCreateScreenState extends State<ClanCreateScreen> {
 
   Widget _buildCreationForm() {
     return SingleChildScrollView(
-      padding: EdgeInsets.symmetric(horizontal: KiwiSpacing.xl, vertical: KiwiSpacing.sm),
+      padding: const EdgeInsets.symmetric(horizontal: KiwiSpacing.xl, vertical: KiwiSpacing.sm),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           // ---- Clan Name ----
           const _SectionLabel(text: 'Clan Name'),
-          SizedBox(height: KiwiSpacing.sm),
+          const SizedBox(height: KiwiSpacing.sm),
           TextField(
             controller: _nameController,
             maxLength: 20,
@@ -327,32 +326,32 @@ class _ClanCreateScreenState extends State<ClanCreateScreen> {
                   width: 2,
                 ),
               ),
-              contentPadding: EdgeInsets.symmetric(
+              contentPadding: const EdgeInsets.symmetric(
                 horizontal: KiwiSpacing.lg,
                 vertical: KiwiSpacing.md + 2,
               ),
               errorText: _nameError,
             ),
           ),
-          SizedBox(height: KiwiSpacing.xl),
+          const SizedBox(height: KiwiSpacing.xl),
 
           // ---- Crest Picker ----
           const _SectionLabel(text: 'Pick a Crest'),
-          SizedBox(height: KiwiSpacing.sm + 2),
+          const SizedBox(height: KiwiSpacing.sm + 2),
           _buildCrestGrid(),
-          SizedBox(height: KiwiSpacing.xl),
+          const SizedBox(height: KiwiSpacing.xl),
 
           // ---- Colour Picker ----
           const _SectionLabel(text: 'Pick a Colour'),
-          SizedBox(height: KiwiSpacing.sm + 2),
+          const SizedBox(height: KiwiSpacing.sm + 2),
           _buildColorRow(),
-          SizedBox(height: KiwiSpacing.xxl - 4),
+          const SizedBox(height: KiwiSpacing.xxl - 4),
 
           // ---- Preview ----
           const _SectionLabel(text: 'Preview'),
-          SizedBox(height: KiwiSpacing.sm + 2),
+          const SizedBox(height: KiwiSpacing.sm + 2),
           _buildPreview(),
-          SizedBox(height: KiwiSpacing.xxl - 4),
+          const SizedBox(height: KiwiSpacing.xxl - 4),
 
           // ---- Create Button ----
           SizedBox(
@@ -392,7 +391,7 @@ class _ClanCreateScreenState extends State<ClanCreateScreen> {
               ),
             ),
           ),
-          SizedBox(height: KiwiSpacing.xxl),
+          const SizedBox(height: KiwiSpacing.xxl),
         ],
       ),
     );
@@ -541,7 +540,7 @@ class _ClanCreateScreenState extends State<ClanCreateScreen> {
             alignment: Alignment.center,
             child: Text(emoji, style: const TextStyle(fontSize: 38)),
           ),
-          SizedBox(height: KiwiSpacing.sm + 2),
+          const SizedBox(height: KiwiSpacing.sm + 2),
           Text(
             name,
             style: const TextStyle(

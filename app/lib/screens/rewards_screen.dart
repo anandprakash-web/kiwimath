@@ -2,7 +2,6 @@ import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
 import '../theme/kiwi_theme.dart';
-import '../models/engagement.dart';
 
 /// Rewards screen — sticker album, badges, mystery box.
 ///
@@ -115,18 +114,18 @@ class _RewardsScreenState extends State<RewardsScreen>
   // ---------------------------------------------------------------------------
 
   Widget _buildStickersTab() {
-    final totalSlots = 30;
+    const totalSlots = 30;
     final collected = widget.stickers.where((s) => s['collected'] == true).length;
 
     return SingleChildScrollView(
-      padding: EdgeInsets.all(KiwiSpacing.xl),
+      padding: const EdgeInsets.all(KiwiSpacing.xl),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           // Progress header
           Container(
             width: double.infinity,
-            padding: EdgeInsets.all(KiwiSpacing.lg + 2),
+            padding: const EdgeInsets.all(KiwiSpacing.lg + 2),
             decoration: BoxDecoration(
               gradient: const LinearGradient(
                 colors: [KiwiColors.visualYellowBg, KiwiColors.kiwiPrimaryLight],
@@ -139,7 +138,7 @@ class _RewardsScreenState extends State<RewardsScreen>
                   '\u{1F4D6}',
                   style: TextStyle(fontSize: 40),
                 ),
-                SizedBox(height: KiwiSpacing.sm),
+                const SizedBox(height: KiwiSpacing.sm),
                 const Text(
                   'Sticker Album',
                   style: TextStyle(
@@ -148,7 +147,7 @@ class _RewardsScreenState extends State<RewardsScreen>
                     color: KiwiColors.textDark,
                   ),
                 ),
-                SizedBox(height: KiwiSpacing.xs + 2),
+                const SizedBox(height: KiwiSpacing.xs + 2),
                 Text(
                   '$collected / $totalSlots collected',
                   style: const TextStyle(
@@ -157,7 +156,7 @@ class _RewardsScreenState extends State<RewardsScreen>
                     color: KiwiColors.textMid,
                   ),
                 ),
-                SizedBox(height: KiwiSpacing.md),
+                const SizedBox(height: KiwiSpacing.md),
                 ClipRRect(
                   borderRadius: BorderRadius.circular(KiwiSpacing.sm),
                   child: LinearProgressIndicator(
@@ -171,7 +170,7 @@ class _RewardsScreenState extends State<RewardsScreen>
               ],
             ),
           ),
-          SizedBox(height: KiwiSpacing.xl),
+          const SizedBox(height: KiwiSpacing.xl),
 
           // Sticker grid
           GridView.builder(
@@ -215,7 +214,7 @@ class _RewardsScreenState extends State<RewardsScreen>
                 alignment: Alignment.center,
                 child: hasSticker
                     ? Text(emoji!, style: const TextStyle(fontSize: 26))
-                    : Icon(
+                    : const Icon(
                         Icons.help_outline_rounded,
                         size: 24,
                         color: KiwiColors.textMuted,
@@ -234,13 +233,13 @@ class _RewardsScreenState extends State<RewardsScreen>
 
   Widget _buildBadgesTab() {
     if (widget.badges.isEmpty) {
-      return Center(
+      return const Center(
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            const Text('\u{1F3C5}', style: TextStyle(fontSize: 56)),
+            Text('\u{1F3C5}', style: TextStyle(fontSize: 56)),
             SizedBox(height: KiwiSpacing.lg),
-            const Text(
+            Text(
               'No badges yet',
               style: TextStyle(
                 fontSize: 20,
@@ -249,7 +248,7 @@ class _RewardsScreenState extends State<RewardsScreen>
               ),
             ),
             SizedBox(height: KiwiSpacing.sm),
-            const Text(
+            Text(
               'Keep solving puzzles to earn badges!',
               style: TextStyle(
                 fontSize: 14,
@@ -262,9 +261,9 @@ class _RewardsScreenState extends State<RewardsScreen>
     }
 
     return ListView.separated(
-      padding: EdgeInsets.all(KiwiSpacing.xl),
+      padding: const EdgeInsets.all(KiwiSpacing.xl),
       itemCount: widget.badges.length,
-      separatorBuilder: (_, __) => SizedBox(height: KiwiSpacing.sm + 2),
+      separatorBuilder: (_, __) => const SizedBox(height: KiwiSpacing.sm + 2),
       itemBuilder: (context, index) {
         final badge = widget.badges[index];
         final earned = badge['earned'] == true;
@@ -273,7 +272,7 @@ class _RewardsScreenState extends State<RewardsScreen>
         final description = badge['description'] as String? ?? '';
 
         return Container(
-          padding: EdgeInsets.all(KiwiSpacing.lg),
+          padding: const EdgeInsets.all(KiwiSpacing.lg),
           decoration: BoxDecoration(
             color: earned ? KiwiColors.cardBg : KiwiColors.creamDark,
             borderRadius: BorderRadius.circular(KiwiSpacing.md + 2),
@@ -308,7 +307,7 @@ class _RewardsScreenState extends State<RewardsScreen>
                   child: Text(emoji, style: const TextStyle(fontSize: 26)),
                 ),
               ),
-              SizedBox(width: KiwiSpacing.md + 2),
+              const SizedBox(width: KiwiSpacing.md + 2),
               Expanded(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -339,7 +338,7 @@ class _RewardsScreenState extends State<RewardsScreen>
                   size: 24,
                 ),
               if (!earned)
-                Icon(
+                const Icon(
                   Icons.lock_rounded,
                   color: KiwiColors.textMuted,
                   size: 22,
@@ -363,17 +362,17 @@ class _RewardsScreenState extends State<RewardsScreen>
     final isReady = available > 0;
 
     return SingleChildScrollView(
-      padding: EdgeInsets.all(KiwiSpacing.xl),
+      padding: const EdgeInsets.all(KiwiSpacing.xl),
       child: Column(
         children: [
-          SizedBox(height: KiwiSpacing.xl),
+          const SizedBox(height: KiwiSpacing.xl),
 
           // Mystery box visual
           _MysteryBoxVisual(
             isReady: isReady,
             onTap: isReady ? widget.onOpenMysteryBox : null,
           ),
-          SizedBox(height: KiwiSpacing.xl),
+          const SizedBox(height: KiwiSpacing.xl),
 
           // Status text
           Text(
@@ -384,7 +383,7 @@ class _RewardsScreenState extends State<RewardsScreen>
               color: KiwiColors.textDark,
             ),
           ),
-          SizedBox(height: KiwiSpacing.sm),
+          const SizedBox(height: KiwiSpacing.sm),
 
           if (isReady)
             Text(
@@ -404,9 +403,9 @@ class _RewardsScreenState extends State<RewardsScreen>
                 color: KiwiColors.textMid,
               ),
             ),
-            SizedBox(height: KiwiSpacing.md + 2),
+            const SizedBox(height: KiwiSpacing.md + 2),
             Padding(
-              padding: EdgeInsets.symmetric(horizontal: KiwiSpacing.xxl + KiwiSpacing.sm),
+              padding: const EdgeInsets.symmetric(horizontal: KiwiSpacing.xxl + KiwiSpacing.sm),
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(KiwiSpacing.sm),
                 child: LinearProgressIndicator(
@@ -419,13 +418,13 @@ class _RewardsScreenState extends State<RewardsScreen>
               ),
             ),
           ],
-          SizedBox(height: KiwiSpacing.xl),
+          const SizedBox(height: KiwiSpacing.xl),
 
           if (isReady)
             GestureDetector(
               onTap: widget.onOpenMysteryBox,
               child: Container(
-                padding: EdgeInsets.symmetric(
+                padding: const EdgeInsets.symmetric(
                   horizontal: KiwiSpacing.xxl,
                   vertical: KiwiSpacing.lg,
                 ),
@@ -453,11 +452,11 @@ class _RewardsScreenState extends State<RewardsScreen>
               ),
             ),
 
-          SizedBox(height: KiwiSpacing.xxl - 2),
+          const SizedBox(height: KiwiSpacing.xxl - 2),
 
           // Info section
           Container(
-            padding: EdgeInsets.all(KiwiSpacing.lg),
+            padding: const EdgeInsets.all(KiwiSpacing.lg),
             decoration: BoxDecoration(
               color: KiwiColors.cardBg,
               borderRadius: BorderRadius.circular(KiwiSpacing.md + 2),
@@ -480,13 +479,13 @@ class _RewardsScreenState extends State<RewardsScreen>
                     color: KiwiColors.textDark,
                   ),
                 ),
-                SizedBox(height: KiwiSpacing.sm + 2),
+                const SizedBox(height: KiwiSpacing.sm + 2),
                 _infoRow('\u{1F9E9}', 'Solve ${widget.puzzlesRequiredForBox} daily puzzles to earn a box'),
-                SizedBox(height: KiwiSpacing.xs + 2),
+                const SizedBox(height: KiwiSpacing.xs + 2),
                 _infoRow('\u{1F381}', 'Tap to shake and open your box'),
-                SizedBox(height: KiwiSpacing.xs + 2),
+                const SizedBox(height: KiwiSpacing.xs + 2),
                 _infoRow('\u{2728}', 'Win gems, stickers, or rare badges'),
-                SizedBox(height: KiwiSpacing.xs + 2),
+                const SizedBox(height: KiwiSpacing.xs + 2),
                 _infoRow('\u{1F48E}', 'Rarer rewards come from longer streaks'),
               ],
             ),
@@ -500,7 +499,7 @@ class _RewardsScreenState extends State<RewardsScreen>
     return Row(
       children: [
         Text(emoji, style: const TextStyle(fontSize: 16)),
-        SizedBox(width: KiwiSpacing.sm + 2),
+        const SizedBox(width: KiwiSpacing.sm + 2),
         Expanded(
           child: Text(
             text,
@@ -601,7 +600,7 @@ class _MysteryBoxVisualState extends State<_MysteryBoxVisual>
                 ? const RadialGradient(
                     colors: [Color(0xFFE1BEE7), Color(0xFFCE93D8)], // decorative — no token
                   )
-                : RadialGradient(
+                : const RadialGradient(
                     colors: [KiwiColors.pathLocked, KiwiColors.pathLocked],
                   ),
             shape: BoxShape.circle,

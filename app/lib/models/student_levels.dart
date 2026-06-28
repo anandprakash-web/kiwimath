@@ -3,6 +3,7 @@
 /// Maps to GET /v2/student/levels response.
 /// 10 levels per topic per grade, with status (locked/current/completed)
 /// and 0-3 star ratings based on accuracy.
+library;
 
 class LevelInfo {
   final int level;

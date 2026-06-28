@@ -1,0 +1,130 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Climb — adaptive Challenge (preview)</title>
+<style>
+  :root{--orange:#FF6D00;--orangeD:#E65100;--ink:#1E2330;--muted:#7C8597;--line:#ECEAE3;--green:#0FB17E;--bg:#FAFAF7;--cream:#FFF1E3}
+  *{box-sizing:border-box;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+  body{margin:0;background:#EEEDE8;color:var(--ink);padding:24px 12px 60px}
+  h1{font-size:19px;text-align:center;margin:0 0 4px}
+  .sub{text-align:center;color:#6b7280;font-size:13px;margin:0 0 22px}
+  .row{display:flex;gap:18px;justify-content:center;flex-wrap:wrap;align-items:flex-start}
+  .phone{width:300px;background:var(--bg);border-radius:26px;box-shadow:0 16px 44px rgba(0,0,0,.15);border:1px solid #e3e1da;overflow:hidden}
+  .bar{display:flex;align-items:center;gap:8px;padding:13px 14px;font-weight:800}
+  .bar .b{color:var(--ink)}
+  .body{padding:0 14px 16px}
+  .cap{font-size:12px;color:#8a8f98;text-align:center;margin:8px 0 0}
+  /* lobby hero */
+  .hero{border-radius:20px;padding:18px;color:#fff;background:linear-gradient(135deg,#FFA64D,var(--orange),var(--orangeD))}
+  .hero .t{font-size:21px;font-weight:800;margin:8px 0 6px}
+  .hero p{margin:0;font-weight:600;font-size:13px;line-height:1.45}
+  .best{display:flex;align-items:center;gap:10px;border:1px solid var(--line);background:#fff;border-radius:16px;padding:14px;margin-top:12px}
+  .best .lab{color:var(--muted);font-weight:700;font-size:12px}
+  .best .v{font-weight:800;font-size:16px}
+  .btn{display:block;width:100%;border:none;background:var(--orange);color:#fff;font-weight:800;font-size:15px;padding:14px;border-radius:15px;margin-top:14px;text-align:center}
+  .hint{color:var(--muted);font-weight:600;font-size:11.5px;text-align:center;margin-top:9px}
+  /* climb */
+  .meta{display:flex;align-items:center;color:var(--muted);font-weight:800;font-size:12px;padding:10px 2px 6px}
+  .prog{height:6px;border-radius:6px;background:var(--line);overflow:hidden;margin-bottom:10px}
+  .prog>i{display:block;height:100%;width:40%;background:var(--orange)}
+  .qcard{border:1px solid var(--line);background:#fff;border-radius:16px;padding:15px}
+  .stem{font-weight:700;font-size:15.5px;line-height:1.4}
+  .opt{border:1.5px solid var(--line);border-radius:12px;padding:12px 13px;margin-top:9px;font-weight:700;font-size:14px}
+  .opt.sel{border-color:var(--orange);background:var(--cream);color:var(--orangeD)}
+  /* result */
+  .summit{position:relative;height:200px;border-radius:20px;overflow:hidden;background:#FFF6EC}
+  .summit svg{position:absolute;inset:0;width:100%;height:100%}
+  .summit .ov{position:absolute;inset:0;padding:16px;color:#fff}
+  .summit .k{font-size:11px;font-weight:800;letter-spacing:1.2px}
+  .summit .num{font-size:50px;font-weight:900;line-height:1;margin-top:2px}
+  .summit .band{font-weight:800;font-size:15px}
+  .pb{display:flex;align-items:center;gap:8px;background:#E9F8F1;color:var(--green);font-weight:800;border-radius:12px;padding:9px 13px;margin-bottom:10px;font-size:13px}
+  .stats{display:flex;gap:10px;margin-top:12px}
+  .stat{flex:1;border:1px solid var(--line);background:#fff;border-radius:14px;padding:13px}
+  .stat .lab{color:var(--muted);font-weight:700;font-size:11.5px}
+  .stat .v{font-weight:800;font-size:17px;margin-top:2px}
+</style>
+
+<h1>The Climb — adaptive Challenge (GRE/GMAT-style)</h1>
+<p class="sub">Faithful preview of the three states. Real screen ships with the APK; the engine is built, tested 16/16, and behind the moat gate.</p>
+
+<div class="row">
+
+  <!-- LOBBY -->
+  <div>
+    <div class="phone">
+      <div class="bar"><span style="color:var(--ink)">←</span> <span class="b">The Climb</span></div>
+      <div class="body">
+        <div class="hero">
+          <div style="font-size:26px">⛰️</div>
+          <div class="t">How high can you climb?</div>
+          <p>10 questions that adapt to you — each one chosen right at your edge. Reach your peak for Grade 5–6.</p>
+        </div>
+        <div class="best">
+          <span style="color:var(--orange);font-size:20px">🏅</span>
+          <div><div class="lab">Your best climb</div><div class="v">612 · 4 climbs</div></div>
+        </div>
+        <div class="btn">Climb again</div>
+        <div class="hint">Your rating sharpens the more you play.</div>
+      </div>
+    </div>
+    <div class="cap">Lobby — best rating + start</div>
+  </div>
+
+  <!-- CLIMB -->
+  <div>
+    <div class="phone">
+      <div class="bar"><span style="color:var(--ink)">←</span> <span class="b">The Climb</span></div>
+      <div class="body">
+        <div class="meta">Climbing · 4 of 10 <span style="margin-left:auto;color:var(--orange)">⛰️</span></div>
+        <div class="prog"><i></i></div>
+        <div class="qcard">
+          <div class="stem">A number leaves remainder 2 when divided by 3, and remainder 3 when divided by 5. What is the smallest such number greater than 10?</div>
+          <div class="opt">12</div>
+          <div class="opt sel">23</div>
+          <div class="opt">17</div>
+          <div class="opt">8</div>
+        </div>
+        <div class="btn">Next</div>
+      </div>
+    </div>
+    <div class="cap">Climb — one item at a time, at your edge</div>
+  </div>
+
+  <!-- RESULT -->
+  <div>
+    <div class="phone">
+      <div class="bar"><span style="color:var(--ink)">←</span> <span class="b">The Climb</span></div>
+      <div class="body">
+        <div class="pb">🎉 New personal best!</div>
+        <div class="summit">
+          <svg viewBox="0 0 300 200" preserveAspectRatio="none">
+            <defs>
+              <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#FFA64D"/><stop offset=".5" stop-color="#FF6D00"/><stop offset="1" stop-color="#E65100"/>
+              </linearGradient>
+              <clipPath id="fill"><rect x="0" y="64" width="300" height="136"/></clipPath>
+            </defs>
+            <!-- frac ~0.69 (rating 612) → fill from y=62 down -->
+            <path d="M0,200 L48,116 L90,148 L150,52 L204,128 L252,88 L300,140 L300,200 Z" fill="#FFE3C2"/>
+            <path d="M0,200 L48,116 L90,148 L150,52 L204,128 L252,88 L300,140 L300,200 Z" fill="url(#g)" clip-path="url(#fill)"/>
+            <line x1="0" y1="64" x2="300" y2="64" stroke="rgba(255,255,255,.7)" stroke-width="2"/>
+          </svg>
+          <div class="ov">
+            <div class="k">YOUR CLIMB RATING</div>
+            <div class="num">612</div>
+            <div class="band">🏔️ Achiever</div>
+          </div>
+        </div>
+        <div class="stats">
+          <div class="stat"><div class="lab">Solved</div><div class="v">8 / 10</div></div>
+          <div class="stat"><div class="lab">Highest cleared</div><div class="v">680</div></div>
+        </div>
+        <div class="btn">Climb again</div>
+        <div class="hint" style="margin-top:12px">Ratings are an early signal and sharpen as you play.</div>
+      </div>
+    </div>
+    <div class="cap">Result — the mountain fills to your altitude</div>
+  </div>
+
+</div>

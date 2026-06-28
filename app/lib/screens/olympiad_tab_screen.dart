@@ -81,7 +81,7 @@ class _OlympiadTabScreenState extends State<OlympiadTabScreen> {
           children: [
             // ── Greeting bar with name, streak, coins ─────────
             Padding(
-              padding: EdgeInsets.fromLTRB(KiwiSpacing.lg, KiwiSpacing.sm + 2, KiwiSpacing.lg, 0),
+              padding: const EdgeInsets.fromLTRB(KiwiSpacing.lg, KiwiSpacing.sm + 2, KiwiSpacing.lg, 0),
               child: Row(
                 children: [
                   // Avatar circle with initial
@@ -112,7 +112,7 @@ class _OlympiadTabScreenState extends State<OlympiadTabScreen> {
                       ),
                     ),
                   ),
-                  SizedBox(width: KiwiSpacing.sm + 2),
+                  const SizedBox(width: KiwiSpacing.sm + 2),
                   Expanded(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -140,7 +140,7 @@ class _OlympiadTabScreenState extends State<OlympiadTabScreen> {
                   // Coins chip
                   if (widget.kiwiCoins > 0)
                     Container(
-                      padding: EdgeInsets.symmetric(horizontal: KiwiSpacing.sm, vertical: KiwiSpacing.xs),
+                      padding: const EdgeInsets.symmetric(horizontal: KiwiSpacing.sm, vertical: KiwiSpacing.xs),
                       decoration: BoxDecoration(
                         color: colors.cardBg,
                         borderRadius: BorderRadius.circular(tier.shape.chipRadius - 8),
@@ -150,7 +150,7 @@ class _OlympiadTabScreenState extends State<OlympiadTabScreen> {
                         mainAxisSize: MainAxisSize.min,
                         children: [
                           Text('\u{1FA99}', style: TextStyle(fontSize: typo.chipSize - 3)),
-                          SizedBox(width: KiwiSpacing.xs - 1),
+                          const SizedBox(width: KiwiSpacing.xs - 1),
                           Text(
                             '${widget.kiwiCoins}',
                             style: TextStyle(
@@ -162,11 +162,11 @@ class _OlympiadTabScreenState extends State<OlympiadTabScreen> {
                         ],
                       ),
                     ),
-                  SizedBox(width: KiwiSpacing.xs + 2),
+                  const SizedBox(width: KiwiSpacing.xs + 2),
                   // Streak chip
                   if (widget.streak > 0)
                     Container(
-                      padding: EdgeInsets.symmetric(horizontal: KiwiSpacing.sm, vertical: KiwiSpacing.xs),
+                      padding: const EdgeInsets.symmetric(horizontal: KiwiSpacing.sm, vertical: KiwiSpacing.xs),
                       decoration: BoxDecoration(
                         color: KiwiColors.wrongBg,
                         borderRadius: BorderRadius.circular(tier.shape.chipRadius - 8),
@@ -175,7 +175,7 @@ class _OlympiadTabScreenState extends State<OlympiadTabScreen> {
                         mainAxisSize: MainAxisSize.min,
                         children: [
                           Text('\u{1F525}', style: TextStyle(fontSize: typo.chipSize - 2)),
-                          SizedBox(width: KiwiSpacing.xs - 1),
+                          const SizedBox(width: KiwiSpacing.xs - 1),
                           Text(
                             '${widget.streak}',
                             style: TextStyle(
@@ -193,7 +193,7 @@ class _OlympiadTabScreenState extends State<OlympiadTabScreen> {
             // ── Daily progress bar ────────────────────────────
             if (widget.dailyGoal > 0)
               Padding(
-                padding: EdgeInsets.fromLTRB(KiwiSpacing.lg, KiwiSpacing.sm, KiwiSpacing.lg, 0),
+                padding: const EdgeInsets.fromLTRB(KiwiSpacing.lg, KiwiSpacing.sm, KiwiSpacing.lg, 0),
                 child: _DailyProgressBar(
                   progress: widget.dailyProgress,
                   goal: widget.dailyGoal,
@@ -202,7 +202,7 @@ class _OlympiadTabScreenState extends State<OlympiadTabScreen> {
               ),
             // ── Top shelf segmented toggle ─────────────────────
             Padding(
-              padding: EdgeInsets.fromLTRB(KiwiSpacing.lg, KiwiSpacing.sm + 2, KiwiSpacing.lg, 0),
+              padding: const EdgeInsets.fromLTRB(KiwiSpacing.lg, KiwiSpacing.sm + 2, KiwiSpacing.lg, 0),
               child: Container(
                 height: 40,
                 decoration: BoxDecoration(
@@ -347,7 +347,7 @@ class _DailyProgressBar extends StatelessWidget {
             ),
           ),
         ),
-        SizedBox(width: KiwiSpacing.sm),
+        const SizedBox(width: KiwiSpacing.sm),
         Text(
           remaining > 0 ? '$progress/$goal today' : 'Goal done!',
           style: TextStyle(

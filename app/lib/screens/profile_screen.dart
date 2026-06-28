@@ -380,7 +380,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
               // ── Daily Math Quote ────────────────────────────────────────
               Container(
                 width: double.infinity,
-                padding: EdgeInsets.all(KiwiSpacing.lg + 2),
+                padding: const EdgeInsets.all(KiwiSpacing.lg + 2),
                 decoration: BoxDecoration(
                   gradient: LinearGradient(
                     colors: [
@@ -791,9 +791,9 @@ class _InviteFriendCard extends StatelessWidget {
         onTap: onTap,
         borderRadius: BorderRadius.circular(shape.cardRadius),
         child: Container(
-          padding: EdgeInsets.symmetric(horizontal: KiwiSpacing.lg + 2, vertical: KiwiSpacing.lg),
+          padding: const EdgeInsets.symmetric(horizontal: KiwiSpacing.lg + 2, vertical: KiwiSpacing.lg),
           decoration: BoxDecoration(
-            gradient: LinearGradient(
+            gradient: const LinearGradient(
               colors: [
                 KiwiColors.kiwiPrimaryLight, // soft warm
                 KiwiColors.cream,            // warm cream
@@ -881,7 +881,7 @@ class _InviteFriendCard extends StatelessWidget {
                 ),
               ),
               Container(
-                padding: EdgeInsets.all(KiwiSpacing.xs + 2),
+                padding: const EdgeInsets.all(KiwiSpacing.xs + 2),
                 decoration: BoxDecoration(
                   color: colors.primary.withOpacity(0.12),
                   shape: BoxShape.circle,

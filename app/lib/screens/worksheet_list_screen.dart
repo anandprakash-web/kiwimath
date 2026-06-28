@@ -738,7 +738,7 @@ class _WorksheetListScreenState extends State<WorksheetListScreen> {
   /// Tapping cloud triggers a single worksheet download.
   Widget _downloadIndicator(int day, bool isDownloaded, Color iconColor) {
     if (isDownloaded) {
-      return Icon(Icons.download_done_rounded, size: 16, color: KiwiColors.kiwiGreen);
+      return const Icon(Icons.download_done_rounded, size: 16, color: KiwiColors.kiwiGreen);
     }
     return GestureDetector(
       onTap: () => _downloadSingle(day),

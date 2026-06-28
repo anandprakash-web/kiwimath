@@ -2,6 +2,7 @@
 ///
 /// Covers: DailyPuzzle, PuzzleSubmissionResult, StreakData, DayEntry,
 /// LeagueStatus, ClanWar, WarMemberScore, RewardData, MysteryBoxResult, Pledge.
+library;
 
 // ---------------------------------------------------------------------------
 // Daily Puzzle

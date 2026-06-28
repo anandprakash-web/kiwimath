@@ -2,6 +2,7 @@
 ///
 /// Tracks per-pillar mastery, current level, and question stats.
 /// Synced with Firestore collection: pillar_progress/{userId}
+library;
 
 class PillarProgress {
   final String pillar; // algebra, number_theory, combinatorics, geometry

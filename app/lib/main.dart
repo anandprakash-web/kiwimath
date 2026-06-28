@@ -30,7 +30,6 @@ import 'services/auth_service.dart';
 import 'services/clan_service.dart';
 import 'services/companion_service.dart';
 import 'services/engagement_service.dart';
-import 'services/growth_service.dart';
 import 'theme/kiwi_theme.dart';
 import 'widgets/pin_gate.dart';
 
@@ -397,7 +396,7 @@ class _AppShellState extends State<_AppShell> {
     } catch (e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Oops! Could not create clan. Check your connection and try again.')),
+          const SnackBar(content: Text('Oops! Could not create clan. Check your connection and try again.')),
         );
       }
     }
@@ -418,7 +417,7 @@ class _AppShellState extends State<_AppShell> {
     } catch (e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Oops! Could not join clan. Check the code and try again.')),
+          const SnackBar(content: Text('Oops! Could not join clan. Check the code and try again.')),
         );
       }
     }
@@ -476,7 +475,7 @@ class _AppShellState extends State<_AppShell> {
             } catch (e) {
               if (mounted) {
                 ScaffoldMessenger.of(context).showSnackBar(
-                  SnackBar(content: Text('Could not send your answer. Try again!')),
+                  const SnackBar(content: Text('Could not send your answer. Try again!')),
                 );
               }
             }
@@ -493,7 +492,7 @@ class _AppShellState extends State<_AppShell> {
             } catch (e) {
               if (mounted) {
                 ScaffoldMessenger.of(context).showSnackBar(
-                  SnackBar(content: Text('Could not send your guess. Try again!')),
+                  const SnackBar(content: Text('Could not send your guess. Try again!')),
                 );
               }
             }
@@ -538,7 +537,7 @@ class _AppShellState extends State<_AppShell> {
     } catch (e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Could not leave clan right now. Try again later.')),
+          const SnackBar(content: Text('Could not leave clan right now. Try again later.')),
         );
       }
     }
@@ -679,7 +678,7 @@ class _AppShellState extends State<_AppShell> {
       backgroundColor: KiwiColors.cream,
       body: SafeArea(
         child: SingleChildScrollView(
-          padding: EdgeInsets.symmetric(horizontal: KiwiSpacing.xl - 4, vertical: KiwiSpacing.lg),
+          padding: const EdgeInsets.symmetric(horizontal: KiwiSpacing.xl - 4, vertical: KiwiSpacing.lg),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -693,7 +692,7 @@ class _AppShellState extends State<_AppShell> {
                   fontFamily: tier.typography.fontFamily,
                 ),
               ),
-              SizedBox(height: KiwiSpacing.xs),
+              const SizedBox(height: KiwiSpacing.xs),
               Text(
                 'Team up, challenge, compete!',
                 style: TextStyle(
@@ -722,7 +721,7 @@ class _AppShellState extends State<_AppShell> {
                   child: Row(
                     children: [
                       const Text('\u{1F525}', style: TextStyle(fontSize: 28)),
-                      SizedBox(width: KiwiSpacing.md),
+                      const SizedBox(width: KiwiSpacing.md),
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -746,12 +745,12 @@ class _AppShellState extends State<_AppShell> {
                     ],
                   ),
                 ),
-              if (_streakData != null) SizedBox(height: KiwiSpacing.xl - 4),
+              if (_streakData != null) const SizedBox(height: KiwiSpacing.xl - 4),
 
               // ── Clan promo ──────────────────────────────────────────
               Container(
                 width: double.infinity,
-                padding: EdgeInsets.all(KiwiSpacing.xl - 4),
+                padding: const EdgeInsets.all(KiwiSpacing.xl - 4),
                 decoration: BoxDecoration(
                   gradient: LinearGradient(
                     colors: [
@@ -769,7 +768,7 @@ class _AppShellState extends State<_AppShell> {
                 child: Column(
                   children: [
                     const Text('⚔️', style: TextStyle(fontSize: 48)),
-                    SizedBox(height: KiwiSpacing.md),
+                    const SizedBox(height: KiwiSpacing.md),
                     Text(
                       'Join a Clan!',
                       style: TextStyle(
@@ -778,7 +777,7 @@ class _AppShellState extends State<_AppShell> {
                         color: tier.colors.textPrimary,
                       ),
                     ),
-                    SizedBox(height: KiwiSpacing.xs + 2),
+                    const SizedBox(height: KiwiSpacing.xs + 2),
                     Text(
                       'Team up with friends, solve puzzles together, '
                       'and compete on the leaderboard!',
@@ -792,7 +791,7 @@ class _AppShellState extends State<_AppShell> {
                   ],
                 ),
               ),
-              SizedBox(height: KiwiSpacing.xl - 4),
+              const SizedBox(height: KiwiSpacing.xl - 4),
 
               // ── Create / Join buttons (at bottom) ───────────────────
               SizedBox(
@@ -825,7 +824,7 @@ class _AppShellState extends State<_AppShell> {
                   ),
                 ),
               ),
-              SizedBox(height: KiwiSpacing.md),
+              const SizedBox(height: KiwiSpacing.md),
               SizedBox(
                 width: double.infinity,
                 child: OutlinedButton(
@@ -847,7 +846,7 @@ class _AppShellState extends State<_AppShell> {
                   ),
                 ),
               ),
-              SizedBox(height: KiwiSpacing.xl),
+              const SizedBox(height: KiwiSpacing.xl),
             ],
           ),
         ),
@@ -887,7 +886,7 @@ class _AppShellState extends State<_AppShell> {
             Row(
               children: [
                 const Text('\u{1F9E9}', style: TextStyle(fontSize: 22)),
-                SizedBox(width: KiwiSpacing.sm),
+                const SizedBox(width: KiwiSpacing.sm),
                 Expanded(
                   child: Text(
                     'Daily Challenge',
@@ -901,7 +900,7 @@ class _AppShellState extends State<_AppShell> {
                 ),
                 Container(
                   padding:
-                      EdgeInsets.symmetric(horizontal: KiwiSpacing.sm + 2, vertical: KiwiSpacing.xs),
+                      const EdgeInsets.symmetric(horizontal: KiwiSpacing.sm + 2, vertical: KiwiSpacing.xs),
                   decoration: BoxDecoration(
                     color: KiwiColors.gemGold.withOpacity(0.2),
                     borderRadius: BorderRadius.circular(tier.shape.chipRadius / 2),
@@ -918,7 +917,7 @@ class _AppShellState extends State<_AppShell> {
                 ),
               ],
             ),
-            SizedBox(height: KiwiSpacing.sm + 2),
+            const SizedBox(height: KiwiSpacing.sm + 2),
             Text(
               puzzle.title,
               style: TextStyle(
@@ -928,7 +927,7 @@ class _AppShellState extends State<_AppShell> {
                 fontFamily: tier.typography.fontFamily,
               ),
             ),
-            SizedBox(height: KiwiSpacing.xs),
+            const SizedBox(height: KiwiSpacing.xs),
             Text(
               puzzle.storyNarrative.length > 80
                   ? '${puzzle.storyNarrative.substring(0, 80)}...'
@@ -940,10 +939,10 @@ class _AppShellState extends State<_AppShell> {
                 height: 1.4,
               ),
             ),
-            SizedBox(height: KiwiSpacing.md),
+            const SizedBox(height: KiwiSpacing.md),
             Container(
               width: double.infinity,
-              padding: EdgeInsets.symmetric(vertical: KiwiSpacing.sm + 2),
+              padding: const EdgeInsets.symmetric(vertical: KiwiSpacing.sm + 2),
               decoration: BoxDecoration(
                 color: KiwiColors.gemGold.withOpacity(0.15),
                 borderRadius: BorderRadius.circular(tier.shape.chipRadius / 2),
@@ -1012,7 +1011,7 @@ class _AppShellState extends State<_AppShell> {
       if (!mounted) return;
       Navigator.of(context).pop(); // dismiss loading
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('Could not start the session. Check your connection and try again.')),
+        const SnackBar(content: Text('Could not start the session. Check your connection and try again.')),
       );
     }
   }
@@ -1214,7 +1213,7 @@ class _AppShellState extends State<_AppShell> {
               child: SafeArea(
                 child: Container(
                   margin: KiwiSpacing.cardMargin,
-                  padding: EdgeInsets.symmetric(horizontal: KiwiSpacing.lg - 2, vertical: KiwiSpacing.sm),
+                  padding: const EdgeInsets.symmetric(horizontal: KiwiSpacing.lg - 2, vertical: KiwiSpacing.sm),
                   decoration: BoxDecoration(
                     color: KiwiColors.wrongBg,
                     borderRadius: BorderRadius.circular(tier.shape.chipRadius / 2),
@@ -1222,8 +1221,8 @@ class _AppShellState extends State<_AppShell> {
                   ),
                   child: Row(
                     children: [
-                      Icon(Icons.cloud_off, size: 16, color: KiwiColors.kiwiPrimaryDark),
-                      SizedBox(width: KiwiSpacing.sm),
+                      const Icon(Icons.cloud_off, size: 16, color: KiwiColors.kiwiPrimaryDark),
+                      const SizedBox(width: KiwiSpacing.sm),
                       Expanded(
                         child: Text(
                           _error!,
@@ -1232,7 +1231,7 @@ class _AppShellState extends State<_AppShell> {
                       ),
                       GestureDetector(
                         onTap: _loadProfile,
-                        child: Padding(
+                        child: const Padding(
                           padding: EdgeInsets.only(left: KiwiSpacing.sm),
                           child: Icon(Icons.refresh, size: 18, color: KiwiColors.kiwiPrimaryDark),
                         ),
@@ -1259,7 +1258,7 @@ class _AppShellState extends State<_AppShell> {
         child: SafeArea(
           top: false,
           child: Padding(
-            padding: EdgeInsets.symmetric(horizontal: KiwiSpacing.sm, vertical: KiwiSpacing.xs + 2),
+            padding: const EdgeInsets.symmetric(horizontal: KiwiSpacing.sm, vertical: KiwiSpacing.xs + 2),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
@@ -1298,7 +1297,7 @@ class _AppShellState extends State<_AppShell> {
                   },
                   child: const Icon(Icons.analytics, size: 20, color: Colors.white),
                 ),
-                SizedBox(height: KiwiSpacing.sm + 2),
+                const SizedBox(height: KiwiSpacing.sm + 2),
                 FloatingActionButton.small(
                   heroTag: 'admin_review_fab',
                   backgroundColor: tier.colors.primary,
@@ -1327,7 +1326,7 @@ class _AppShellState extends State<_AppShell> {
       behavior: HitTestBehavior.opaque,
       child: AnimatedContainer(
         duration: const Duration(milliseconds: 200),
-        padding: EdgeInsets.symmetric(horizontal: KiwiSpacing.md, vertical: KiwiSpacing.sm),
+        padding: const EdgeInsets.symmetric(horizontal: KiwiSpacing.md, vertical: KiwiSpacing.sm),
         decoration: isSelected
             ? BoxDecoration(
                 color: tier.colors.primary.withOpacity(0.1),
@@ -1342,7 +1341,7 @@ class _AppShellState extends State<_AppShell> {
               size: 24,
               color: isSelected ? tier.colors.primary : tier.colors.textMuted,
             ),
-            SizedBox(height: KiwiSpacing.xs - 1),
+            const SizedBox(height: KiwiSpacing.xs - 1),
             Text(
               label,
               style: TextStyle(

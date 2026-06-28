@@ -1,0 +1,282 @@
+<!doctype html><html><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kiwimath · GCD & LCM preview</title>
+<script>window.MathJax={tex:{inlineMath:[['$','$']]},svg:{fontCache:'global'}};</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" id="MathJax-script" async></script>
+<style>
+ :root{--o:#FF6F00;--od:#E65100;--bg:#FFF8F2;--ink:#2b2b2b;--mut:#8a8a8a;}
+ *{box-sizing:border-box}
+ body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 -apple-system,Segoe UI,Roboto,sans-serif;}
+ .wrap{max-width:760px;margin:0 auto;padding:20px 16px 60px;}
+ header{background:linear-gradient(135deg,var(--o),var(--od));color:#fff;border-radius:18px;padding:22px 22px 18px;box-shadow:0 8px 24px rgba(230,81,0,.25);}
+ header .crumb{font-size:13px;opacity:.92;letter-spacing:.3px}
+ header h1{margin:6px 0 10px;font-size:26px}
+ header .pills span{display:inline-block;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.35);border-radius:999px;padding:4px 12px;margin:3px 6px 3px 0;font-size:13px}
+ .note{font-size:13px;color:var(--mut);margin:14px 2px 20px}
+ .card{background:#fff;border:1px solid #ffe2cc;border-radius:16px;padding:18px 18px 14px;margin:16px 0;box-shadow:0 3px 10px rgba(0,0,0,.05)}
+ .chead{display:flex;align-items:center;gap:8px;margin-bottom:10px}
+ .qn{font-weight:800;color:var(--od);font-size:15px}
+ .badge{color:#fff;font-size:11px;font-weight:700;border-radius:999px;padding:3px 10px;letter-spacing:.4px}
+ .mode{margin-left:auto;font-size:12.5px;color:var(--mut)}
+ .stem{font-size:17px;margin:4px 0 12px}
+ details{border-top:1px dashed #ffd9b8;padding-top:8px;margin-top:6px}
+ summary{cursor:pointer;font-weight:600;color:var(--od);font-size:14.5px;list-style:none}
+ summary::-webkit-details-marker{display:none}
+ .hbody,.sbody{padding:8px 4px 4px;font-size:15px}
+ .hbody p{margin:6px 0}
+ .ans{background:#FFF3E0;border:1px solid #ffd9b8;border-radius:10px;padding:8px 12px;margin:4px 0 12px;font-size:15px}
+ ol{margin:6px 0 8px 0;padding-left:22px} ol li{margin:5px 0}
+ .solp{color:#444;background:#fafafa;border-left:3px solid var(--o);padding:8px 12px;border-radius:6px;font-size:14.5px}
+ .vid{display:inline-block;margin:12px 0 4px;background:#fff;border:1.5px solid var(--o);color:var(--od);text-decoration:none;font-weight:700;font-size:14px;border-radius:10px;padding:8px 14px}
+ .vid:hover{background:var(--o);color:#fff}
+ .src{margin-top:12px;font-size:12px;color:var(--mut)} .id{font-family:ui-monospace,monospace}
+</style></head><body><div class="wrap">
+ <header>
+   <div class="crumb">KIWIMATH · OLYMPIAD · L6 (RMO) · NUMBER THEORY</div>
+   <h1>GCD &amp; LCM</h1>
+   <div class="pills"><span>15 questions</span><span>12 type-the-answer</span><span>3 proof / reveal</span><span>Source: Vedantu OMM L6</span></div>
+ </header>
+ <div class="note">This is exactly the data now in the live bank (<b>KM-L6-NT-0201–0215</b>) — math typeset, hints &amp; solutions tap-to-reveal, per-problem video, every gradeable key brute-force-verified. Tap “Hint”, “Reveal solution”, or the video button on any card.</div>
+ 
+    <div class="card">
+      <div class="chead">
+        <span class="qn">Q1</span>
+        <span class="badge" style="background:#EF6C00">MEDIUM</span>
+        <span class="mode">✏️ Type the answer</span>
+      </div>
+      <div class="stem">Find the greatest number that divides $22176$ and $22396$ leaving no remainder.</div>
+      <details class="hint"><summary>💡 Hint</summary>
+        <div class="hbody"><p><b>Nudge:</b> A common divisor of both numbers also divides their difference.</p><p><b>Go deeper:</b> Compute $\gcd(22176,22396)=\gcd(22176,\,22396-22176)$.</p></div>
+      </details>
+      <details class="sol"><summary>🔎 Reveal solution</summary>
+        <div class="sbody"><div class="ans">✅ Answer: <b>44</b></div><ol><li>$\gcd(22176,22396)=\gcd(22176,\,220)$.</li><li>$22176=220\cdot100+176$, continue the Euclidean algorithm.</li><li>The gcd is $44$ (note $44$ is not among the listed options, so the answer is &#x27;None of these&#x27;).</li></ol><div class="solp">$\gcd(22176,22396)=\gcd(22176,220)=\gcd(220,176)=\gcd(176,44)=44.$</div></div>
+      </details>
+      <a class="vid" href="https://youtu.be/71EvTRtw4" target="_blank">▶ Watch video solution</a>
+      <div class="src">Source · Vedantu OMM L6 · GCD &amp; LCM &nbsp;·&nbsp; <span class="id">KM-L6-NT-0201</span></div>
+    </div>
+    <div class="card">
+      <div class="chead">
+        <span class="qn">Q2</span>
+        <span class="badge" style="background:#EF6C00">MEDIUM</span>
+        <span class="mode">✏️ Type the answer</span>
+      </div>
+      <div class="stem">Find the least multiple of $7$ which leaves remainder $4$ when divided by $6,\,9,\,15$ and $18$.</div>
+      <details class="hint"><summary>💡 Hint</summary>
+        <div class="hbody"><p><b>Nudge:</b> First make a number that is $\equiv 4$ modulo all of $6,9,15,18$.</p><p><b>Go deeper:</b> Such numbers are $\operatorname{lcm}(6,9,15,18)\,k+4$; find the one divisible by $7$.</p></div>
+      </details>
+      <details class="sol"><summary>🔎 Reveal solution</summary>
+        <div class="sbody"><div class="ans">✅ Answer: <b>364</b></div><ol><li>$\operatorname{lcm}(6,9,15,18)=180$.</li><li>Numbers leaving remainder $4$: $184,\,364,\,544,\dots$</li><li>$364=7\cdot52$ is the first that is a multiple of $7$.</li></ol><div class="solp">$\operatorname{lcm}(6,9,15,18)=180$. The candidates are $180k+4$: $184,364,\dots$ The first multiple of $7$ is $364$.</div></div>
+      </details>
+      <a class="vid" href="https://youtu.be/GtUE50QkoWE" target="_blank">▶ Watch video solution</a>
+      <div class="src">Source · Vedantu OMM L6 · GCD &amp; LCM &nbsp;·&nbsp; <span class="id">KM-L6-NT-0202</span></div>
+    </div>
+    <div class="card">
+      <div class="chead">
+        <span class="qn">Q3</span>
+        <span class="badge" style="background:#EF6C00">MEDIUM</span>
+        <span class="mode">✏️ Type the answer</span>
+      </div>
+      <div class="stem">Find $\gcd(n+3,\ 2n+7)$ for a positive integer $n$.</div>
+      <details class="hint"><summary>💡 Hint</summary>
+        <div class="hbody"><p><b>Nudge:</b> Subtract a multiple of the smaller from the larger.</p><p><b>Go deeper:</b> $\gcd(n+3,2n+7)=\gcd(n+3,\,(2n+7)-2(n+3))$.</p></div>
+      </details>
+      <details class="sol"><summary>🔎 Reveal solution</summary>
+        <div class="sbody"><div class="ans">✅ Answer: <b>1</b></div><ol><li>$(2n+7)-2(n+3)=1$.</li><li>$\gcd(n+3,1)=1$.</li></ol><div class="solp">$\gcd(n+3,2n+7)=\gcd(n+3,\,1)=1.$</div></div>
+      </details>
+      <a class="vid" href="https://youtu.be/ddyE0zMwNbI" target="_blank">▶ Watch video solution</a>
+      <div class="src">Source · Vedantu OMM L6 · GCD &amp; LCM &nbsp;·&nbsp; <span class="id">KM-L6-NT-0203</span></div>
+    </div>
+    <div class="card">
+      <div class="chead">
+        <span class="qn">Q4</span>
+        <span class="badge" style="background:#EF6C00">MEDIUM</span>
+        <span class="mode">✏️ Type the answer</span>
+      </div>
+      <div class="stem">Find the number of positive integers $n$ for which $\dfrac{n^2+3n+3}{\,n+2\,}$ is an integer.</div>
+      <details class="hint"><summary>💡 Hint</summary>
+        <div class="hbody"><p><b>Nudge:</b> Reduce the fraction by polynomial division / Euclid on $n$.</p><p><b>Go deeper:</b> Show numerator and denominator are coprime.</p></div>
+      </details>
+      <details class="sol"><summary>🔎 Reveal solution</summary>
+        <div class="sbody"><div class="ans">✅ Answer: <b>0</b></div><ol><li>$\gcd(n^2+3n+3,\ n+2)=\gcd(1,\ n+2)=1$ (since $n^2+3n+3=(n+2)(n+1)+1$).</li><li>A fraction in lowest terms with denominator $&gt;1$ is never an integer.</li><li>So there are $0$ such $n$.</li></ol><div class="solp">$n^2+3n+3=(n+2)(n+1)+1$, so $\gcd(n^2+3n+3,n+2)=1$. The fraction is never an integer: answer $0$.</div></div>
+      </details>
+      <a class="vid" href="https://youtu.be/-A1onE-wlR8" target="_blank">▶ Watch video solution</a>
+      <div class="src">Source · Vedantu OMM L6 · GCD &amp; LCM &nbsp;·&nbsp; <span class="id">KM-L6-NT-0204</span></div>
+    </div>
+    <div class="card">
+      <div class="chead">
+        <span class="qn">Q5</span>
+        <span class="badge" style="background:#C62828">HARD</span>
+        <span class="mode">📝 Proof · reveal solution</span>
+      </div>
+      <div class="stem">The product of two positive integers is $9984$ and their greatest common divisor equals their difference. Find the two integers.</div>
+      <details class="hint"><summary>💡 Hint</summary>
+        <div class="hbody"><p><b>Nudge:</b> Write $x=mx_1,\ y=my_1$ with $\gcd(x_1,y_1)=1$ and $m=\gcd=x-y$.</p><p><b>Go deeper:</b> Then $x_1-y_1=1$ and $m^2x_1y_1=9984=2^8\cdot3\cdot13$.</p></div>
+      </details>
+      <details class="sol"><summary>🔎 Reveal solution</summary>
+        <div class="sbody"><ol><li>Let $m=\gcd(x,y)$, $x=mx_1,y=my_1$, $\gcd(x_1,y_1)=1$.</li><li>$m=x-y\Rightarrow x_1-y_1=1$ (consecutive, so coprime).</li><li>$m^2x_1y_1=2^8\cdot3\cdot13$. Testing $m=2^3=8$ gives $x_1y_1=2^2\cdot3\cdot13$, $x_1=13,y_1=12$.</li><li>So $x=8\cdot13=104,\ y=8\cdot12=96$.</li></ol><div class="solp">With $m=\gcd=x-y$ and $x=mx_1,y=my_1$: $m^2x_1y_1=9984=2^8\cdot3\cdot13$ and $x_1-y_1=1$. The case $m=8$ gives $x_1=13,y_1=12$, hence the integers are $\mathbf{104}$ and $\mathbf{96}$.</div></div>
+      </details>
+      <a class="vid" href="https://youtu.be/e1Ka6KBeqO8" target="_blank">▶ Watch video solution</a>
+      <div class="src">Source · Vedantu OMM L6 · GCD &amp; LCM &nbsp;·&nbsp; <span class="id">KM-L6-NT-0205</span></div>
+    </div>
+    <div class="card">
+      <div class="chead">
+        <span class="qn">Q6</span>
+        <span class="badge" style="background:#2E7D32">EASY</span>
+        <span class="mode">✏️ Type the answer</span>
+      </div>
+      <div class="stem">Find the greatest number which divides $1535$ and $1222$ leaving remainders $5$ and $7$ respectively.</div>
+      <details class="hint"><summary>💡 Hint</summary>
+        <div class="hbody"><p><b>Nudge:</b> Subtract each remainder first, then take the gcd.</p><p><b>Go deeper:</b> Required $=\gcd(1535-5,\ 1222-7)$.</p></div>
+      </details>
+      <details class="sol"><summary>🔎 Reveal solution</summary>
+        <div class="sbody"><div class="ans">✅ Answer: <b>45</b></div><ol><li>$\gcd(1530,\ 1215)$.</li><li>$=\gcd(1215,315)=\gcd(315,270)=\gcd(270,45)=45$.</li></ol><div class="solp">Required $=\gcd(1535-5,\ 1222-7)=\gcd(1530,1215)=45.$</div></div>
+      </details>
+      <a class="vid" href="https://youtu.be/DDP572eFGyg" target="_blank">▶ Watch video solution</a>
+      <div class="src">Source · Vedantu OMM L6 · GCD &amp; LCM &nbsp;·&nbsp; <span class="id">KM-L6-NT-0206</span></div>
+    </div>
+    <div class="card">
+      <div class="chead">
+        <span class="qn">Q7</span>
+        <span class="badge" style="background:#C62828">HARD</span>
+        <span class="mode">✏️ Type the answer</span>
+      </div>
+      <div class="stem">How many ordered pairs of positive integers $(x,y)$ satisfy $x\cdot y\cdot \gcd(x,y)=1080$?</div>
+      <details class="hint"><summary>💡 Hint</summary>
+        <div class="hbody"><p><b>Nudge:</b> Write $x=ha,\ y=hb$ with $\gcd(a,b)=1$, so $h^3ab=1080$.</p><p><b>Go deeper:</b> $1080=2^3\cdot3^3\cdot5$; split off a cube $h^3$ then count coprime $(a,b)$.</p></div>
+      </details>
+      <details class="sol"><summary>🔎 Reveal solution</summary>
+        <div class="sbody"><div class="ans">✅ Answer: <b>18</b></div><ol><li>$x=ha,y=hb,\ \gcd(a,b)=1\Rightarrow h^3ab=1080=2^3\cdot3^3\cdot5$.</li><li>$h=1$: $ab=1080$ with $\gcd(a,b)=1\Rightarrow4$ unordered.</li><li>$h=2$: $2$; $h=3$: $2$; $h=6$: $1$.</li><li>Total $9$ unordered $\Rightarrow 18$ ordered pairs.</li></ol><div class="solp">$h^3ab=1080$. Counting coprime $(a,b)$ for $h\in\{1,2,3,6\}$ gives $4+2+2+1=9$ unordered, i.e. $\mathbf{18}$ ordered pairs.</div></div>
+      </details>
+      <a class="vid" href="https://youtu.be/9Lb3rhiAP-U" target="_blank">▶ Watch video solution</a>
+      <div class="src">Source · Vedantu OMM L6 · GCD &amp; LCM &nbsp;·&nbsp; <span class="id">KM-L6-NT-0207</span></div>
+    </div>
+    <div class="card">
+      <div class="chead">
+        <span class="qn">Q8</span>
+        <span class="badge" style="background:#EF6C00">MEDIUM</span>
+        <span class="mode">✏️ Type the answer</span>
+      </div>
+      <div class="stem">Find the smallest number that leaves remainder $4$ on division by $5$, $5$ by $6$, $6$ by $7$, $7$ by $8$ and $8$ by $9$.</div>
+      <details class="hint"><summary>💡 Hint</summary>
+        <div class="hbody"><p><b>Nudge:</b> Each remainder is one less than the divisor.</p><p><b>Go deeper:</b> So $N+1$ is a common multiple of $5,6,7,8,9$.</p></div>
+      </details>
+      <details class="sol"><summary>🔎 Reveal solution</summary>
+        <div class="sbody"><div class="ans">✅ Answer: <b>2519</b></div><ol><li>$N\equiv-1\pmod{5,6,7,8,9}$, so $N+1=\operatorname{lcm}(5,6,7,8,9)$.</li><li>$\operatorname{lcm}(5,6,7,8,9)=2520$.</li><li>$N=2520-1=2519$.</li></ol><div class="solp">Each remainder is divisor$-1$, so $N+1=\operatorname{lcm}(5,6,7,8,9)=2520$ and $N=2519$.</div></div>
+      </details>
+      <a class="vid" href="https://youtu.be/gth9sKwySAE" target="_blank">▶ Watch video solution</a>
+      <div class="src">Source · Vedantu OMM L6 · GCD &amp; LCM &nbsp;·&nbsp; <span class="id">KM-L6-NT-0208</span></div>
+    </div>
+    <div class="card">
+      <div class="chead">
+        <span class="qn">Q9</span>
+        <span class="badge" style="background:#EF6C00">MEDIUM</span>
+        <span class="mode">✏️ Type the answer</span>
+      </div>
+      <div class="stem">How many ordered pairs of positive integers $(x,y)$ satisfy $\gcd(x,y)=35$ and $x+y=1085$?</div>
+      <details class="hint"><summary>💡 Hint</summary>
+        <div class="hbody"><p><b>Nudge:</b> Write $x=35a,\ y=35b$ with $\gcd(a,b)=1$.</p><p><b>Go deeper:</b> Then $a+b=31$, a prime; count coprime pairs.</p></div>
+      </details>
+      <details class="sol"><summary>🔎 Reveal solution</summary>
+        <div class="sbody"><div class="ans">✅ Answer: <b>30</b></div><ol><li>$x=35a,y=35b,\ \gcd(a,b)=1\Rightarrow a+b=31$.</li><li>$31$ is prime, so $\gcd(a,31-a)=1$ for every $1\le a\le30$.</li><li>All $30$ ordered pairs work ($15$ unordered). Keyed answer: $30$ ordered.</li></ol><div class="solp">$a+b=31$ (prime), so every $a\in\{1,\dots,30\}$ gives a coprime pair: $\mathbf{30}$ ordered pairs ($15$ unordered).</div></div>
+      </details>
+      <a class="vid" href="https://youtu.be/MjxilqclabM" target="_blank">▶ Watch video solution</a>
+      <div class="src">Source · Vedantu OMM L6 · GCD &amp; LCM &nbsp;·&nbsp; <span class="id">KM-L6-NT-0209</span></div>
+    </div>
+    <div class="card">
+      <div class="chead">
+        <span class="qn">Q10</span>
+        <span class="badge" style="background:#EF6C00">MEDIUM</span>
+        <span class="mode">✏️ Type the answer</span>
+      </div>
+      <div class="stem">Two positive integers satisfy $x+y=1050$. What is the maximum possible value of $\gcd(x,y)$?</div>
+      <details class="hint"><summary>💡 Hint</summary>
+        <div class="hbody"><p><b>Nudge:</b> $\gcd(x,y)$ divides $x+y=1050$.</p><p><b>Go deeper:</b> The largest divisor achievable is half of $1050$ (take $x=y$).</p></div>
+      </details>
+      <details class="sol"><summary>🔎 Reveal solution</summary>
+        <div class="sbody"><div class="ans">✅ Answer: <b>525</b></div><ol><li>$g=\gcd(x,y)\mid x+y=1050$.</li><li>Taking $x=y=525$ gives $g=525$.</li><li>This is the maximum.</li></ol><div class="solp">$\gcd(x,y)\mid 1050$; $x=y=525$ attains $\gcd=525$, the maximum.</div></div>
+      </details>
+      <a class="vid" href="https://youtu.be/1ezXhtUzB-A" target="_blank">▶ Watch video solution</a>
+      <div class="src">Source · Vedantu OMM L6 · GCD &amp; LCM &nbsp;·&nbsp; <span class="id">KM-L6-NT-0210</span></div>
+    </div>
+    <div class="card">
+      <div class="chead">
+        <span class="qn">Q11</span>
+        <span class="badge" style="background:#C62828">HARD</span>
+        <span class="mode">✏️ Type the answer</span>
+      </div>
+      <div class="stem">How many ordered pairs of positive integers $(x,y)$ satisfy $\gcd(x,y)+\operatorname{lcm}(x,y)=91$?</div>
+      <details class="hint"><summary>💡 Hint</summary>
+        <div class="hbody"><p><b>Nudge:</b> Write $x=ha,\ y=hb$ with $\gcd(a,b)=1$; then $\operatorname{lcm}=hab$.</p><p><b>Go deeper:</b> So $h(1+ab)=91=7\cdot13$; check each divisor $h$.</p></div>
+      </details>
+      <details class="sol"><summary>🔎 Reveal solution</summary>
+        <div class="sbody"><div class="ans">✅ Answer: <b>16</b></div><ol><li>$h+hab=91\Rightarrow h(ab+1)=91=7\cdot13$.</li><li>$h=1$: $ab=90$, $4$ coprime pairs; $h=7$: $ab=12$, $2$; $h=13$: $ab=6$, $2$.</li><li>Total $8$ unordered $\Rightarrow 16$ ordered.</li></ol><div class="solp">$h(ab+1)=91$. For $h\in\{1,7,13\}$ the coprime pairs number $4+2+2=8$ unordered $=\mathbf{16}$ ordered.</div></div>
+      </details>
+      <a class="vid" href="https://youtu.be/4b1E7nWYjRE" target="_blank">▶ Watch video solution</a>
+      <div class="src">Source · Vedantu OMM L6 · GCD &amp; LCM &nbsp;·&nbsp; <span class="id">KM-L6-NT-0211</span></div>
+    </div>
+    <div class="card">
+      <div class="chead">
+        <span class="qn">Q12</span>
+        <span class="badge" style="background:#C62828">HARD</span>
+        <span class="mode">📝 Proof · reveal solution</span>
+      </div>
+      <div class="stem">Let $a&gt;b$ be positive integers with $\gcd(a,b)=h$ and $\operatorname{lcm}(a,b)=l$. Express $\operatorname{lcm}(a-b,\ b)$ in terms of $a,b,h$.</div>
+      <details class="hint"><summary>💡 Hint</summary>
+        <div class="hbody"><p><b>Nudge:</b> Show $\gcd(a-b,\,b)=\gcd(a,b)=h$.</p><p><b>Go deeper:</b> Then use $\operatorname{lcm}\cdot\gcd=\text{product}$.</p></div>
+      </details>
+      <details class="sol"><summary>🔎 Reveal solution</summary>
+        <div class="sbody"><ol><li>$\gcd(a-b,b)=\gcd(a,b)=h$.</li><li>$\operatorname{lcm}(a-b,b)\cdot\gcd(a-b,b)=(a-b)\,b$.</li><li>$\operatorname{lcm}(a-b,b)=\dfrac{(a-b)\,b}{h}$.</li></ol><div class="solp">Since $\gcd(a-b,b)=h$, $\operatorname{lcm}(a-b,b)=\dfrac{(a-b)b}{h}$.</div></div>
+      </details>
+      <a class="vid" href="https://youtu.be/O9nkfCvOf7k" target="_blank">▶ Watch video solution</a>
+      <div class="src">Source · Vedantu OMM L6 · GCD &amp; LCM &nbsp;·&nbsp; <span class="id">KM-L6-NT-0212</span></div>
+    </div>
+    <div class="card">
+      <div class="chead">
+        <span class="qn">Q13</span>
+        <span class="badge" style="background:#EF6C00">MEDIUM</span>
+        <span class="mode">✏️ Type the answer</span>
+      </div>
+      <div class="stem">Six varieties of sweets, of counts $32,\,216,\,136,\,88,\,184,\,120$, are packed so that each box holds one variety and every box holds the same number of sweets. What is the minimum number of boxes?</div>
+      <details class="hint"><summary>💡 Hint</summary>
+        <div class="hbody"><p><b>Nudge:</b> To minimise boxes, maximise sweets per box.</p><p><b>Go deeper:</b> Box size $=\gcd$ of all six counts; boxes $=\dfrac{\text{total}}{\text{box size}}$.</p></div>
+      </details>
+      <details class="sol"><summary>🔎 Reveal solution</summary>
+        <div class="sbody"><div class="ans">✅ Answer: <b>97</b></div><ol><li>$\gcd(32,216,136,88,184,120)=8$.</li><li>Total $=32+216+136+88+184+120=776$.</li><li>Boxes $=776/8=97$.</li></ol><div class="solp">Box size $=\gcd(\dots)=8$; total $=776$; minimum boxes $=776/8=97$.</div></div>
+      </details>
+      <a class="vid" href="https://youtu.be/H7zIekF5LNU" target="_blank">▶ Watch video solution</a>
+      <div class="src">Source · Vedantu OMM L6 · GCD &amp; LCM &nbsp;·&nbsp; <span class="id">KM-L6-NT-0213</span></div>
+    </div>
+    <div class="card">
+      <div class="chead">
+        <span class="qn">Q14</span>
+        <span class="badge" style="background:#C62828">HARD</span>
+        <span class="mode">✏️ Type the answer</span>
+      </div>
+      <div class="stem">If $n$ is a positive even integer, find $\gcd(n^2+1,\ n^2+4n+5)$.</div>
+      <details class="hint"><summary>💡 Hint</summary>
+        <div class="hbody"><p><b>Nudge:</b> Subtract to reduce the degree.</p><p><b>Go deeper:</b> $\gcd(n^2+1,\,n^2+4n+5)=\gcd(n^2+1,\,4n+4)$.</p></div>
+      </details>
+      <details class="sol"><summary>🔎 Reveal solution</summary>
+        <div class="sbody"><div class="ans">✅ Answer: <b>1</b></div><ol><li>$\gcd(n^2+1,\ 4n+4)=\gcd(n^2+1,\ n+1)$ (since $\gcd(n^2+1,4)=1$ for even $n$).</li><li>$\gcd(n^2+1,\ n+1)=\gcd(2,\ n+1)$.</li><li>$n$ even $\Rightarrow n+1$ odd $\Rightarrow \gcd=1$.</li></ol><div class="solp">$\gcd(n^2+1,n^2+4n+5)=\gcd(n^2+1,n+1)=\gcd(2,n+1)=1$ since $n+1$ is odd.</div></div>
+      </details>
+      <a class="vid" href="https://youtu.be/KStXi5fzAOc" target="_blank">▶ Watch video solution</a>
+      <div class="src">Source · Vedantu OMM L6 · GCD &amp; LCM &nbsp;·&nbsp; <span class="id">KM-L6-NT-0214</span></div>
+    </div>
+    <div class="card">
+      <div class="chead">
+        <span class="qn">Q15</span>
+        <span class="badge" style="background:#C62828">HARD</span>
+        <span class="mode">📝 Proof · reveal solution</span>
+      </div>
+      <div class="stem">For every positive integer $n$ let $T_n=2^{2^{\,n}}+1$ (the Fermat numbers). Show that if $m\neq n$ then $T_m$ and $T_n$ are relatively prime.</div>
+      <details class="hint"><summary>💡 Hint</summary>
+        <div class="hbody"><p><b>Nudge:</b> Use the identity $T_0T_1\cdots T_{k-1}=T_k-2$.</p><p><b>Go deeper:</b> A common divisor of $T_m,T_n$ would divide $2$, but each $T_n$ is odd.</p></div>
+      </details>
+      <details class="sol"><summary>🔎 Reveal solution</summary>
+        <div class="sbody"><ol><li>Show $\prod_{i=0}^{k-1}T_i=T_k-2$ by induction.</li><li>If $m&lt;n$ then $T_m\mid T_n-2$, so any common divisor $d$ of $T_m,T_n$ divides $2$.</li><li>Each $T_n$ is odd, so $d=1$. Hence $\gcd(T_m,T_n)=1$.</li></ol><div class="solp">Using $T_0\cdots T_{k-1}=T_k-2$: for $m&lt;n$, $T_m\mid T_n-2$, so $\gcd(T_m,T_n)\mid 2$; as $T_n$ is odd, the gcd is $1$.</div></div>
+      </details>
+      <a class="vid" href="https://youtu.be/CtIe8coM9RA" target="_blank">▶ Watch video solution</a>
+      <div class="src">Source · Vedantu OMM L6 · GCD &amp; LCM &nbsp;·&nbsp; <span class="id">KM-L6-NT-0215</span></div>
+    </div>
+ <div class="note" style="text-align:center;margin-top:26px">Kiwimath · ingested from your team's Vedantu assignment library · 2026-06-22</div>
+</div></body></html>

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 import '../models/companion.dart';
 import '../models/question_v2.dart';
@@ -341,7 +340,7 @@ class _QuestionScreenV2State extends State<QuestionScreenV2> {
           ),
           backgroundColor: KiwiColors.kiwiPrimaryDark,
           behavior: SnackBarBehavior.floating,
-          margin: EdgeInsets.fromLTRB(KiwiSpacing.lg, 0, KiwiSpacing.lg, 80),
+          margin: const EdgeInsets.fromLTRB(KiwiSpacing.lg, 0, KiwiSpacing.lg, 80),
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
           duration: const Duration(seconds: 4),
         ),
@@ -454,7 +453,7 @@ class _QuestionScreenV2State extends State<QuestionScreenV2> {
         ),
         backgroundColor: KiwiColors.kiwiPrimaryDark,
         behavior: SnackBarBehavior.floating,
-        margin: EdgeInsets.fromLTRB(KiwiSpacing.lg, 0, KiwiSpacing.lg, 80),
+        margin: const EdgeInsets.fromLTRB(KiwiSpacing.lg, 0, KiwiSpacing.lg, 80),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(_tier.shape.chipRadius / 2)),
         duration: const Duration(seconds: 4),
       ),
@@ -555,7 +554,7 @@ class _QuestionScreenV2State extends State<QuestionScreenV2> {
             color: Colors.transparent,
             child: Container(
               width: 280,
-              padding: EdgeInsets.symmetric(horizontal: KiwiSpacing.xl, vertical: KiwiSpacing.xl + 4),
+              padding: const EdgeInsets.symmetric(horizontal: KiwiSpacing.xl, vertical: KiwiSpacing.xl + 4),
               decoration: BoxDecoration(
                 color: KiwiColors.cardBg,
                 borderRadius: BorderRadius.circular(_tier.shape.cardRadius + 4),
@@ -571,7 +570,7 @@ class _QuestionScreenV2State extends State<QuestionScreenV2> {
                 mainAxisSize: MainAxisSize.min,
                 children: [
                   Text(emoji, style: const TextStyle(fontSize: 48)),
-                  SizedBox(height: KiwiSpacing.md),
+                  const SizedBox(height: KiwiSpacing.md),
                   Text(
                     'Badge Unlocked!',
                     style: TextStyle(
@@ -580,7 +579,7 @@ class _QuestionScreenV2State extends State<QuestionScreenV2> {
                       color: KiwiColors.xpPurple,
                     ),
                   ),
-                  SizedBox(height: KiwiSpacing.sm),
+                  const SizedBox(height: KiwiSpacing.sm),
                   Text(
                     tierDisplay.isNotEmpty ? '$emoji $name — $tierDisplay' : '$emoji $name',
                     style: TextStyle(
@@ -591,7 +590,7 @@ class _QuestionScreenV2State extends State<QuestionScreenV2> {
                     textAlign: TextAlign.center,
                   ),
                   if (gems > 0) ...[
-                    SizedBox(height: KiwiSpacing.xs + 2),
+                    const SizedBox(height: KiwiSpacing.xs + 2),
                     Text(
                       '+$gems gems',
                       style: TextStyle(
@@ -601,7 +600,7 @@ class _QuestionScreenV2State extends State<QuestionScreenV2> {
                       ),
                     ),
                   ],
-                  SizedBox(height: KiwiSpacing.lg),
+                  const SizedBox(height: KiwiSpacing.lg),
                   SizedBox(
                     width: double.infinity,
                     child: ElevatedButton(
@@ -612,7 +611,7 @@ class _QuestionScreenV2State extends State<QuestionScreenV2> {
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(_tier.shape.buttonRadius),
                         ),
-                        padding: EdgeInsets.symmetric(vertical: KiwiSpacing.md),
+                        padding: const EdgeInsets.symmetric(vertical: KiwiSpacing.md),
                       ),
                       child: const Text(
                         'Awesome!',
@@ -651,7 +650,7 @@ class _QuestionScreenV2State extends State<QuestionScreenV2> {
             color: Colors.transparent,
             child: Container(
               width: 280,
-              padding: EdgeInsets.symmetric(horizontal: KiwiSpacing.xl, vertical: KiwiSpacing.xl + 4),
+              padding: const EdgeInsets.symmetric(horizontal: KiwiSpacing.xl, vertical: KiwiSpacing.xl + 4),
               decoration: BoxDecoration(
                 color: KiwiColors.cardBg,
                 borderRadius: BorderRadius.circular(_tier.shape.cardRadius + 4),
@@ -667,7 +666,7 @@ class _QuestionScreenV2State extends State<QuestionScreenV2> {
                 mainAxisSize: MainAxisSize.min,
                 children: [
                   Text(emoji, style: const TextStyle(fontSize: 56)),
-                  SizedBox(height: KiwiSpacing.md),
+                  const SizedBox(height: KiwiSpacing.md),
                   Text(
                     'Level Up!',
                     style: TextStyle(
@@ -676,7 +675,7 @@ class _QuestionScreenV2State extends State<QuestionScreenV2> {
                       color: KiwiColors.kiwiGreenDark,
                     ),
                   ),
-                  SizedBox(height: KiwiSpacing.sm),
+                  const SizedBox(height: KiwiSpacing.sm),
                   Text(
                     "You're now a $name! $emoji",
                     style: TextStyle(
@@ -686,7 +685,7 @@ class _QuestionScreenV2State extends State<QuestionScreenV2> {
                     ),
                     textAlign: TextAlign.center,
                   ),
-                  SizedBox(height: KiwiSpacing.lg),
+                  const SizedBox(height: KiwiSpacing.lg),
                   SizedBox(
                     width: double.infinity,
                     child: ElevatedButton(
@@ -697,7 +696,7 @@ class _QuestionScreenV2State extends State<QuestionScreenV2> {
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(_tier.shape.buttonRadius),
                         ),
-                        padding: EdgeInsets.symmetric(vertical: KiwiSpacing.md),
+                        padding: const EdgeInsets.symmetric(vertical: KiwiSpacing.md),
                       ),
                       child: const Text(
                         "Let's go!",
@@ -891,7 +890,7 @@ class _QuestionScreenV2State extends State<QuestionScreenV2> {
     }
 
     return Container(
-      padding: EdgeInsets.symmetric(horizontal: KiwiSpacing.sm + 2, vertical: KiwiSpacing.xs - 1),
+      padding: const EdgeInsets.symmetric(horizontal: KiwiSpacing.sm + 2, vertical: KiwiSpacing.xs - 1),
       decoration: BoxDecoration(
         color: chipColor.withOpacity(0.12),
         borderRadius: BorderRadius.circular(_tier.shape.chipRadius / 2),
@@ -1121,7 +1120,7 @@ class _QuestionScreenV2State extends State<QuestionScreenV2> {
           if (q.visualSvgUrl != null) ...[
             Container(
               width: double.infinity,
-              padding: EdgeInsets.all(KiwiSpacing.lg - 2),
+              padding: const EdgeInsets.all(KiwiSpacing.lg - 2),
               decoration: BoxDecoration(
                 color: KiwiColors.backgroundDark,
                 borderRadius: BorderRadius.circular(_tier.shape.cardRadius - 4),
@@ -1154,13 +1153,13 @@ class _QuestionScreenV2State extends State<QuestionScreenV2> {
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                Icon(Icons.image_outlined,
+                                const Icon(Icons.image_outlined,
                                     size: 18, color: KiwiColors.textMuted),
                                 const SizedBox(width: 8),
                                 Flexible(
                                   child: Text(
                                     alt,
-                                    style: TextStyle(
+                                    style: const TextStyle(
                                       fontSize: 12,
                                       color: KiwiColors.textMid,
                                       fontStyle: FontStyle.italic,
@@ -1247,7 +1246,7 @@ class _QuestionScreenV2State extends State<QuestionScreenV2> {
   /// Friendly card shown when a question is broken — user taps Skip.
   Widget _buildBrokenQuestionCard() {
     return Container(
-      padding: EdgeInsets.all(KiwiSpacing.xl - 4),
+      padding: const EdgeInsets.all(KiwiSpacing.xl - 4),
       decoration: BoxDecoration(
         color: KiwiColors.wrongBg,
         borderRadius: BorderRadius.circular(_tier.shape.cardRadius - 4),
@@ -1259,7 +1258,7 @@ class _QuestionScreenV2State extends State<QuestionScreenV2> {
             '\u{1F527}',
             style: TextStyle(fontSize: 36),
           ),
-          SizedBox(height: KiwiSpacing.sm),
+          const SizedBox(height: KiwiSpacing.sm),
           Text(
             'Oops! This question needs fixing.',
             textAlign: TextAlign.center,
@@ -1269,7 +1268,7 @@ class _QuestionScreenV2State extends State<QuestionScreenV2> {
               color: KiwiColors.textDark,
             ),
           ),
-          SizedBox(height: KiwiSpacing.xs),
+          const SizedBox(height: KiwiSpacing.xs),
           Text(
             'We\'ve reported it. Tap below to skip!',
             textAlign: TextAlign.center,
@@ -1278,7 +1277,7 @@ class _QuestionScreenV2State extends State<QuestionScreenV2> {
               color: KiwiColors.textMuted,
             ),
           ),
-          SizedBox(height: KiwiSpacing.lg),
+          const SizedBox(height: KiwiSpacing.lg),
           Material(
             color: KiwiColors.kiwiPrimary,
             borderRadius: BorderRadius.circular(_tier.shape.buttonRadius - 6),
@@ -1286,7 +1285,7 @@ class _QuestionScreenV2State extends State<QuestionScreenV2> {
               onTap: _fetchNextQuestion,
               borderRadius: BorderRadius.circular(_tier.shape.buttonRadius - 6),
               child: Padding(
-                padding: EdgeInsets.symmetric(horizontal: KiwiSpacing.xl + 4, vertical: KiwiSpacing.md),
+                padding: const EdgeInsets.symmetric(horizontal: KiwiSpacing.xl + 4, vertical: KiwiSpacing.md),
                 child: Text(
                   'Skip \u{2192}',
                   style: TextStyle(
@@ -1534,7 +1533,7 @@ class _QuestionScreenV2State extends State<QuestionScreenV2> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Icon(Icons.cloud_off, size: 48, color: KiwiColors.textMuted),
+            const Icon(Icons.cloud_off, size: 48, color: KiwiColors.textMuted),
             const SizedBox(height: 16),
             const Text(
               "Can't reach Kiwimath backend",
@@ -1544,7 +1543,7 @@ class _QuestionScreenV2State extends State<QuestionScreenV2> {
             Text(
               _error ?? '',
               textAlign: TextAlign.center,
-              style: TextStyle(color: KiwiColors.textMuted, fontSize: 13),
+              style: const TextStyle(color: KiwiColors.textMuted, fontSize: 13),
             ),
             const SizedBox(height: 24),
             ElevatedButton(
@@ -1654,7 +1653,7 @@ class _XpToastAnimationState extends State<_XpToastAnimation>
         child: FadeTransition(
           opacity: _opacity,
           child: Container(
-            padding: EdgeInsets.symmetric(horizontal: KiwiSpacing.md, vertical: KiwiSpacing.xs + 2),
+            padding: const EdgeInsets.symmetric(horizontal: KiwiSpacing.md, vertical: KiwiSpacing.xs + 2),
             decoration: BoxDecoration(
               gradient: const LinearGradient(
                 colors: [KiwiColors.xpPurple, KiwiColors.indigo],
@@ -1704,7 +1703,7 @@ class _WrongAnswerSheetV3 extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         color: KiwiColors.cream,
-        border: Border(
+        border: const Border(
           top: BorderSide(color: KiwiColors.amber, width: 1.5),
         ),
         boxShadow: [
@@ -1715,7 +1714,7 @@ class _WrongAnswerSheetV3 extends StatelessWidget {
           ),
         ],
       ),
-      padding: EdgeInsets.symmetric(horizontal: KiwiSpacing.xl - 4, vertical: KiwiSpacing.lg - 2),
+      padding: const EdgeInsets.symmetric(horizontal: KiwiSpacing.xl - 4, vertical: KiwiSpacing.lg - 2),
       child: SafeArea(
         top: false,
         child: Row(
@@ -1724,20 +1723,20 @@ class _WrongAnswerSheetV3 extends StatelessWidget {
             Container(
               width: 36,
               height: 36,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 color: KiwiColors.wrongBg,
                 shape: BoxShape.circle,
               ),
-              child: Icon(Icons.close, size: 20, color: KiwiColors.coral),
+              child: const Icon(Icons.close, size: 20, color: KiwiColors.coral),
             ),
-            SizedBox(width: KiwiSpacing.md),
+            const SizedBox(width: KiwiSpacing.md),
             // Text + encouragement
             Expanded(
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
+                  const Text(
                     'Not quite right.',
                     style: TextStyle(
                       fontSize: 15,
@@ -1750,7 +1749,7 @@ class _WrongAnswerSheetV3 extends StatelessWidget {
                       padding: const EdgeInsets.only(top: 2),
                       child: Text(
                         encouragement!,
-                        style: TextStyle(
+                        style: const TextStyle(
                           fontSize: 11,
                           fontWeight: FontWeight.w600,
                           color: KiwiColors.kiwiPrimaryDark,
@@ -1770,12 +1769,12 @@ class _WrongAnswerSheetV3 extends StatelessWidget {
                 onTap: onWhy,
                 borderRadius: BorderRadius.circular(KiwiSpacing.md),
                 child: Container(
-                  padding: EdgeInsets.symmetric(horizontal: KiwiSpacing.lg + 2, vertical: KiwiSpacing.md),
+                  padding: const EdgeInsets.symmetric(horizontal: KiwiSpacing.lg + 2, vertical: KiwiSpacing.md),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(KiwiSpacing.md),
                     border: Border.all(color: KiwiColors.amber, width: 1.5),
                   ),
-                  child: Text(
+                  child: const Text(
                     'Why?',
                     style: TextStyle(
                       fontSize: 15,
@@ -1786,7 +1785,7 @@ class _WrongAnswerSheetV3 extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(width: KiwiSpacing.sm),
+            const SizedBox(width: KiwiSpacing.sm),
             // Continue button
             Material(
               color: Colors.transparent,
@@ -1795,9 +1794,9 @@ class _WrongAnswerSheetV3 extends StatelessWidget {
                 onTap: onContinue,
                 borderRadius: BorderRadius.circular(KiwiSpacing.md),
                 child: Container(
-                  padding: EdgeInsets.symmetric(horizontal: KiwiSpacing.lg + 2, vertical: KiwiSpacing.md),
+                  padding: const EdgeInsets.symmetric(horizontal: KiwiSpacing.lg + 2, vertical: KiwiSpacing.md),
                   decoration: BoxDecoration(
-                    gradient: LinearGradient(
+                    gradient: const LinearGradient(
                       colors: [KiwiColors.amber, KiwiColors.kiwiPrimaryDark],
                     ),
                     borderRadius: BorderRadius.circular(KiwiSpacing.md),
@@ -1841,7 +1840,7 @@ class _CorrectAnswerBarV3 extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         color: KiwiColors.correctBg,
-        border: Border(
+        border: const Border(
           top: BorderSide(color: KiwiColors.correct, width: 1.5),
         ),
         boxShadow: [
@@ -1852,7 +1851,7 @@ class _CorrectAnswerBarV3 extends StatelessWidget {
           ),
         ],
       ),
-      padding: EdgeInsets.symmetric(horizontal: KiwiSpacing.xl - 4, vertical: KiwiSpacing.lg - 2),
+      padding: const EdgeInsets.symmetric(horizontal: KiwiSpacing.xl - 4, vertical: KiwiSpacing.lg - 2),
       child: SafeArea(
         top: false,
         child: Row(
@@ -1861,13 +1860,13 @@ class _CorrectAnswerBarV3 extends StatelessWidget {
             Container(
               width: 36,
               height: 36,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 color: KiwiColors.correctBg,
                 shape: BoxShape.circle,
               ),
-              child: Icon(Icons.check, size: 22, color: KiwiColors.kiwiGreen),
+              child: const Icon(Icons.check, size: 22, color: KiwiColors.kiwiGreen),
             ),
-            SizedBox(width: KiwiSpacing.md),
+            const SizedBox(width: KiwiSpacing.md),
             // "Correct!" text with streak + encouragement + rewards
             Expanded(
               child: Column(
@@ -1876,7 +1875,7 @@ class _CorrectAnswerBarV3 extends StatelessWidget {
                 children: [
                   Row(
                     children: [
-                      Text(
+                      const Text(
                         'Correct!',
                         style: TextStyle(
                           fontSize: 16,
@@ -1888,7 +1887,7 @@ class _CorrectAnswerBarV3 extends StatelessWidget {
                         const SizedBox(width: 6),
                         Text(
                           '\u{1F525} $streak in a row!',
-                          style: TextStyle(
+                          style: const TextStyle(
                             fontSize: 12,
                             fontWeight: FontWeight.w600,
                             color: KiwiColors.streakWarm,
@@ -1903,7 +1902,7 @@ class _CorrectAnswerBarV3 extends StatelessWidget {
                       padding: const EdgeInsets.only(top: 2),
                       child: Text(
                         encouragement!,
-                        style: TextStyle(
+                        style: const TextStyle(
                           fontSize: 11,
                           fontWeight: FontWeight.w500,
                           color: KiwiColors.kiwiGreenDark,
@@ -1918,7 +1917,7 @@ class _CorrectAnswerBarV3 extends StatelessWidget {
                       padding: const EdgeInsets.only(top: 2),
                       child: Text(
                         '+$coinsEarned \u{1FA99}${xpEarned > 0 ? "  +$xpEarned XP" : ""}',
-                        style: TextStyle(
+                        style: const TextStyle(
                           fontSize: 11,
                           fontWeight: FontWeight.w700,
                           color: KiwiColors.correct,
@@ -1932,9 +1931,9 @@ class _CorrectAnswerBarV3 extends StatelessWidget {
             GestureDetector(
               onTap: onContinue,
               child: Container(
-                padding: EdgeInsets.symmetric(horizontal: KiwiSpacing.xl - 4, vertical: KiwiSpacing.sm + 2),
+                padding: const EdgeInsets.symmetric(horizontal: KiwiSpacing.xl - 4, vertical: KiwiSpacing.sm + 2),
                 decoration: BoxDecoration(
-                  gradient: LinearGradient(
+                  gradient: const LinearGradient(
                     colors: [KiwiColors.correct, KiwiColors.kiwiGreenDark],
                   ),
                   borderRadius: BorderRadius.circular(KiwiSpacing.md),
@@ -2031,7 +2030,7 @@ class _ReportQuestionSheetState extends State<_ReportQuestionSheet> {
           ),
           backgroundColor: KiwiColors.kiwiGreen,
           behavior: SnackBarBehavior.floating,
-          margin: EdgeInsets.fromLTRB(40, 0, 40, 100),
+          margin: const EdgeInsets.fromLTRB(40, 0, 40, 100),
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
           duration: const Duration(seconds: 2),
         ),
@@ -2164,7 +2163,7 @@ class _ReportQuestionSheetState extends State<_ReportQuestionSheet> {
                       maxLength: 200,
                       decoration: InputDecoration(
                         hintText: 'Add a note (optional)',
-                        hintStyle: TextStyle(
+                        hintStyle: const TextStyle(
                           fontSize: 13,
                           color: KiwiColors.textMuted,
                         ),
@@ -2172,7 +2171,7 @@ class _ReportQuestionSheetState extends State<_ReportQuestionSheet> {
                             horizontal: 12, vertical: 10),
                         border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(10),
-                          borderSide: BorderSide(color: KiwiColors.pathLocked),
+                          borderSide: const BorderSide(color: KiwiColors.pathLocked),
                         ),
                         counterText: '',
                       ),
@@ -2245,10 +2244,10 @@ class _WhyBottomSheet extends StatelessWidget {
       maxChildSize: 0.85,
       builder: (context, scrollController) {
         return Container(
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             color: KiwiColors.cardBg,
             borderRadius: BorderRadius.vertical(top: Radius.circular(KiwiSpacing.xl)),
-            boxShadow: const [
+            boxShadow: [
               BoxShadow(
                 color: Color(0x1A000000),
                 blurRadius: 20,
@@ -2278,7 +2277,7 @@ class _WhyBottomSheet extends StatelessWidget {
                     Container(
                       width: 32,
                       height: 32,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         color: KiwiColors.wrongBg,
                         shape: BoxShape.circle,
                       ),
@@ -2287,7 +2286,7 @@ class _WhyBottomSheet extends StatelessWidget {
                       ),
                     ),
                     const SizedBox(width: 10),
-                    Text(
+                    const Text(
                       'Understanding the answer',
                       style: TextStyle(
                         fontSize: 16,
@@ -2298,7 +2297,7 @@ class _WhyBottomSheet extends StatelessWidget {
                   ],
                 ),
               ),
-              Divider(height: 1, color: KiwiColors.backgroundDark),
+              const Divider(height: 1, color: KiwiColors.backgroundDark),
               // Content
               Expanded(
                 child: ListView(
@@ -2332,7 +2331,7 @@ class _WhyBottomSheet extends StatelessWidget {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text(
+                          const Text(
                             'Here\'s why:',
                             style: TextStyle(
                               fontSize: 13,
@@ -2343,7 +2342,7 @@ class _WhyBottomSheet extends StatelessWidget {
                           const SizedBox(height: 8),
                           Text(
                             feedbackMessage,
-                            style: TextStyle(
+                            style: const TextStyle(
                               fontSize: 14,
                               color: KiwiColors.textMid,
                               height: 1.5,
@@ -2363,7 +2362,7 @@ class _WhyBottomSheet extends StatelessWidget {
                       ),
                       child: Text(
                         questionStem,
-                        style: TextStyle(
+                        style: const TextStyle(
                           fontSize: 12,
                           color: KiwiColors.textMuted,
                           height: 1.4,
@@ -2386,7 +2385,7 @@ class _WhyBottomSheet extends StatelessWidget {
                       child: Container(
                         padding: const EdgeInsets.symmetric(vertical: 14),
                         decoration: BoxDecoration(
-                          gradient: LinearGradient(
+                          gradient: const LinearGradient(
                             colors: [KiwiColors.amber, KiwiColors.kiwiPrimaryDark],
                           ),
                           borderRadius: BorderRadius.circular(14),

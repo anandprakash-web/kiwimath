@@ -289,7 +289,7 @@ class _ParentDashboardScreenState extends State<ParentDashboardScreen> {
         Container(
           width: 44,
           height: 44,
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             color: KiwiColors.kiwiPrimaryLight,
             shape: BoxShape.circle,
           ),

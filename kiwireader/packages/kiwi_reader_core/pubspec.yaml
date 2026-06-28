@@ -1,0 +1,13 @@
+name: kiwi_reader_core
+description: >-
+  Pure-Dart core for the KiwiReader annotation engine — domain models, the
+  layered (W3C-style) anchor resolver, and the offline-first sync engine.
+  Has NO Flutter dependency so it runs and is unit-tested on any Dart runtime.
+version: 0.1.0
+publish_to: none
+
+environment:
+  sdk: ^3.4.0
+
+dev_dependencies:
+  test: ^1.25.0

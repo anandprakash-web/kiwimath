@@ -159,11 +159,11 @@ class _DragDropTilesState extends State<DragDropTiles>
             borderRadius: BorderRadius.circular(KiwiSpacing.md),
             border: Border.all(color: KiwiColors.visualYellowBorder, width: 1.5),
           ),
-          child: Row(
+          child: const Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              const Text('🎯', style: TextStyle(fontSize: 18)),
-              const SizedBox(width: 8),
+              Text('🎯', style: TextStyle(fontSize: 18)),
+              SizedBox(width: 8),
               Text(
                 'Drag tiles to put them in order!',
                 style: TextStyle(
@@ -172,7 +172,7 @@ class _DragDropTilesState extends State<DragDropTiles>
                   color: KiwiColors.textDark,
                 ),
               ),
-              const SizedBox(width: 8),
+              SizedBox(width: 8),
               Icon(
                 Icons.swap_vert_rounded,
                 size: 20,

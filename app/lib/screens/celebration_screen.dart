@@ -168,7 +168,7 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                       ),
               ),
 
-              SizedBox(height: KiwiSpacing.xl),
+              const SizedBox(height: KiwiSpacing.xl),
 
               // 2. Big score
               AnimatedOpacity(
@@ -192,7 +192,7 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                           ),
                         ),
                       ),
-                    SizedBox(height: KiwiSpacing.xs + 2),
+                    const SizedBox(height: KiwiSpacing.xs + 2),
                     Text(
                       widget.fromStepDown ? 'You figured it out!' : 'Session complete!',
                       style: const TextStyle(
@@ -201,9 +201,9 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                         color: KiwiColors.kiwiPrimaryDark,
                       ),
                     ),
-                    SizedBox(height: KiwiSpacing.sm),
+                    const SizedBox(height: KiwiSpacing.sm),
                     Padding(
-                      padding: EdgeInsets.symmetric(horizontal: KiwiSpacing.xxl + 8),
+                      padding: const EdgeInsets.symmetric(horizontal: KiwiSpacing.xxl + 8),
                       child: Text(
                         _encouragement,
                         textAlign: TextAlign.center,
@@ -218,7 +218,7 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                 ),
               ),
 
-              SizedBox(height: KiwiSpacing.xl),
+              const SizedBox(height: KiwiSpacing.xl),
 
               // 3. One progress insight (if available)
               if (widget.progressInsight != null)
@@ -226,8 +226,8 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                   opacity: _showContent ? 1.0 : 0.0,
                   duration: const Duration(milliseconds: 600),
                   child: Container(
-                    margin: EdgeInsets.symmetric(horizontal: KiwiSpacing.xxl),
-                    padding: EdgeInsets.symmetric(horizontal: KiwiSpacing.lg, vertical: KiwiSpacing.md),
+                    margin: const EdgeInsets.symmetric(horizontal: KiwiSpacing.xxl),
+                    padding: const EdgeInsets.symmetric(horizontal: KiwiSpacing.lg, vertical: KiwiSpacing.md),
                     decoration: BoxDecoration(
                       color: KiwiColors.cardBg,
                       borderRadius: BorderRadius.circular(14),
@@ -252,7 +252,7 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                   ),
                 ),
 
-              SizedBox(height: KiwiSpacing.lg - 2),
+              const SizedBox(height: KiwiSpacing.lg - 2),
 
               // 4. Gentle practice-days note
               AnimatedOpacity(
@@ -287,7 +287,7 @@ class _CelebrationScreenState extends State<CelebrationScreen>
 
               // 6. Action buttons
               Padding(
-                padding: EdgeInsets.fromLTRB(KiwiSpacing.xl + 4, 0, KiwiSpacing.xl + 4, KiwiSpacing.lg),
+                padding: const EdgeInsets.fromLTRB(KiwiSpacing.xl + 4, 0, KiwiSpacing.xl + 4, KiwiSpacing.lg),
                 child: Column(
                   children: [
                     // Play again (primary — if daily goal not yet done)
@@ -300,10 +300,10 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                           borderRadius: BorderRadius.circular(14),
                           child: Container(
                             width: double.infinity,
-                            padding: EdgeInsets.symmetric(vertical: KiwiSpacing.lg),
-                            child: Row(
+                            padding: const EdgeInsets.symmetric(vertical: KiwiSpacing.lg),
+                            child: const Row(
                               mainAxisAlignment: MainAxisAlignment.center,
-                              children: const [
+                              children: [
                                 Icon(Icons.play_arrow_rounded, color: Colors.white, size: 22),
                                 SizedBox(width: 6),
                                 Text(
@@ -319,7 +319,7 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                           ),
                         ),
                       ),
-                    if (widget.dailyRemaining > 0) SizedBox(height: KiwiSpacing.sm + 2),
+                    if (widget.dailyRemaining > 0) const SizedBox(height: KiwiSpacing.sm + 2),
                     // Back to home (secondary)
                     Material(
                       color: KiwiColors.cardBg,
@@ -329,7 +329,7 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                         borderRadius: BorderRadius.circular(14),
                         child: Container(
                           width: double.infinity,
-                          padding: EdgeInsets.symmetric(vertical: KiwiSpacing.lg - 2),
+                          padding: const EdgeInsets.symmetric(vertical: KiwiSpacing.lg - 2),
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(14),
                             border: Border.all(color: Colors.black12),

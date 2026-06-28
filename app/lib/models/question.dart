@@ -1,6 +1,7 @@
 /// Data models that mirror the backend's QuestionOut response.
 /// Source of truth is backend/app/api/questions.py::QuestionOut.
 /// If that shape changes, change this file.
+library;
 
 class KiwiVisual {
   final String kind; // 'svg_inline' or 'static_asset'

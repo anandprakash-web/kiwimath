@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 import '../services/api_client.dart';
 import '../theme/kiwi_theme.dart';
@@ -728,13 +727,13 @@ class _SwipeCardState extends State<_SwipeCard>
 
             const SizedBox(height: 20),
             // Swipe hints
-            Row(
+            const Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Row(
                   children: [
                     Icon(Icons.arrow_back, size: 16, color: KiwiColors.coral),
-                    const SizedBox(width: 4),
+                    SizedBox(width: 4),
                     Text('Flag',
                         style: TextStyle(
                             fontSize: 12, color: KiwiColors.coral)),
@@ -745,7 +744,7 @@ class _SwipeCardState extends State<_SwipeCard>
                     Text('Approve',
                         style: TextStyle(
                             fontSize: 12, color: KiwiColors.kiwiGreen)),
-                    const SizedBox(width: 4),
+                    SizedBox(width: 4),
                     Icon(Icons.arrow_forward,
                         size: 16, color: KiwiColors.kiwiGreen),
                   ],
@@ -939,7 +938,7 @@ class _FlagSheetState extends State<_FlagSheet> {
               width: double.infinity,
               child: Container(
                 decoration: BoxDecoration(
-                  gradient: LinearGradient(
+                  gradient: const LinearGradient(
                     colors: [KiwiColors.coral, KiwiColors.kiwiPrimaryDark],
                   ),
                   borderRadius: BorderRadius.circular(14),

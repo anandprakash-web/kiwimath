@@ -1,6 +1,8 @@
 import json, glob, re
 from collections import defaultdict, Counter
-ROOT='/sessions/compassionate-zealous-pasteur/mnt/kiwimath/content-live'
+import os
+_dir = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.abspath(os.path.join(_dir, "../content-live"))
 # topic->pillar registry to validate tags
 PILLAR_OF={}
 tm=json.load(open(ROOT+'/olympiad/topic_map.json'))
@@ -11,6 +13,8 @@ def norm(s): return re.sub(r'\s+',' ',re.sub(r'[^a-z0-9]',' ',str(s).lower())).s
 qs=[]
 for f in glob.glob(ROOT+'/olympiad/L*/*.json'):
     d=json.load(open(f))
+    if not isinstance(d, dict) or 'questions' not in d:
+        continue
     for q in d.get('questions',[]):
         q['_file']=f; q['_topic']=d['display_name']; q['_tkey']=d['topic_key']; q['_level']=d['level']
         qs.append(q)
@@ -92,4 +96,4 @@ print('=== examples ===')
 for c in order:
     if issues.get(c):
         e=issues[c][0]; print('%-26s e.g. %s | %s | %s'%(c, e[0], e[2], e[3]))
-json.dump({k:v for k,v in issues.items()}, open('/sessions/compassionate-zealous-pasteur/mnt/outputs/km_qa_issues.json','w'))
+json.dump({k:v for k,v in issues.items()}, open(os.path.abspath(os.path.join(_dir, '../outputs/km_qa_issues.json')),'w'))

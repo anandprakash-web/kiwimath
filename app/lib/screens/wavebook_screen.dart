@@ -385,7 +385,7 @@ class _WavebookScreenState extends State<WavebookScreen> {
                           height: 20,
                           child: CircularProgressIndicator(strokeWidth: 2),
                         )
-                      : Icon(
+                      : const Icon(
                           Icons.download_rounded,
                           color: KiwiColors.kiwiPrimary,
                           size: 22,

@@ -279,7 +279,7 @@ class _SavedQuestionsScreenState extends State<SavedQuestionsScreen> {
       color: _tier.colors.primary,
       onRefresh: _loadBookmarks,
       child: ListView.builder(
-        padding: EdgeInsets.symmetric(horizontal: 14, vertical: 8),
+        padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
         itemCount: _questions.length + (_page < _totalPages ? 1 : 0),
         itemBuilder: (context, index) {
           if (index == _questions.length) {

@@ -4,6 +4,7 @@
 /// POST /session/start  → SessionResponse (first question)
 /// POST /session/answer  → SessionResponse (feedback + next question)
 /// GET  /session/concepts → List<ConceptInfo>
+library;
 
 class SessionVisual {
   final String kind;

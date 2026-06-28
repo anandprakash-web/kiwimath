@@ -176,23 +176,23 @@ class _DailyPuzzleScreenState extends State<DailyPuzzleScreen>
                 _buildTopBar(),
                 Expanded(
                   child: SingleChildScrollView(
-                    padding: EdgeInsets.symmetric(horizontal: KiwiSpacing.xl),
+                    padding: const EdgeInsets.symmetric(horizontal: KiwiSpacing.xl),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        SizedBox(height: KiwiSpacing.lg),
+                        const SizedBox(height: KiwiSpacing.lg),
                         _buildStorySection(),
-                        SizedBox(height: KiwiSpacing.xl),
+                        const SizedBox(height: KiwiSpacing.xl),
                         _buildQuestionSection(),
-                        SizedBox(height: KiwiSpacing.xl),
+                        const SizedBox(height: KiwiSpacing.xl),
                         _buildOptions(),
-                        SizedBox(height: KiwiSpacing.xl),
+                        const SizedBox(height: KiwiSpacing.xl),
                         if (!_submitted) ...[
                           _buildHintButtons(),
-                          SizedBox(height: KiwiSpacing.xl),
+                          const SizedBox(height: KiwiSpacing.xl),
                           _buildSubmitButton(),
                         ],
-                        SizedBox(height: KiwiSpacing.xxl + KiwiSpacing.sm),
+                        const SizedBox(height: KiwiSpacing.xxl + KiwiSpacing.sm),
                       ],
                     ),
                   ),
@@ -214,7 +214,7 @@ class _DailyPuzzleScreenState extends State<DailyPuzzleScreen>
 
   Widget _buildTopBar() {
     return Container(
-      padding: EdgeInsets.symmetric(horizontal: KiwiSpacing.lg, vertical: KiwiSpacing.sm + 2),
+      padding: const EdgeInsets.symmetric(horizontal: KiwiSpacing.lg, vertical: KiwiSpacing.sm + 2),
       child: Row(
         children: [
           // Close button
@@ -244,7 +244,7 @@ class _DailyPuzzleScreenState extends State<DailyPuzzleScreen>
 
           // Timer
           Container(
-            padding: EdgeInsets.symmetric(horizontal: KiwiSpacing.md + 2, vertical: KiwiSpacing.xs + 2),
+            padding: const EdgeInsets.symmetric(horizontal: KiwiSpacing.md + 2, vertical: KiwiSpacing.xs + 2),
             decoration: BoxDecoration(
               color: KiwiColors.cardBg,
               borderRadius: BorderRadius.circular(KiwiSpacing.xl),
@@ -265,7 +265,7 @@ class _DailyPuzzleScreenState extends State<DailyPuzzleScreen>
                       ? KiwiColors.coral
                       : KiwiColors.textMid,
                 ),
-                SizedBox(width: KiwiSpacing.xs + 2),
+                const SizedBox(width: KiwiSpacing.xs + 2),
                 Text(
                   _formatTime(_elapsedSeconds),
                   style: TextStyle(
@@ -280,12 +280,12 @@ class _DailyPuzzleScreenState extends State<DailyPuzzleScreen>
               ],
             ),
           ),
-          SizedBox(width: KiwiSpacing.sm + 2),
+          const SizedBox(width: KiwiSpacing.sm + 2),
 
           // Streak badge
           if (widget.currentStreak > 0)
             Container(
-              padding: EdgeInsets.symmetric(horizontal: KiwiSpacing.md, vertical: KiwiSpacing.xs + 2),
+              padding: const EdgeInsets.symmetric(horizontal: KiwiSpacing.md, vertical: KiwiSpacing.xs + 2),
               decoration: BoxDecoration(
                 gradient: const LinearGradient(
                   colors: [KiwiColors.streakWarm, KiwiColors.kiwiPrimaryDark],
@@ -320,7 +320,7 @@ class _DailyPuzzleScreenState extends State<DailyPuzzleScreen>
   Widget _buildStorySection() {
     return Container(
       width: double.infinity,
-      padding: EdgeInsets.all(KiwiSpacing.lg + 2),
+      padding: const EdgeInsets.all(KiwiSpacing.lg + 2),
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [KiwiColors.visualYellowBg, KiwiColors.kiwiPrimaryLight],
@@ -352,7 +352,7 @@ class _DailyPuzzleScreenState extends State<DailyPuzzleScreen>
               style: TextStyle(fontSize: 32),
             ),
           ),
-          SizedBox(width: KiwiSpacing.md + 2),
+          const SizedBox(width: KiwiSpacing.md + 2),
 
           // Story text
           Expanded(
@@ -401,7 +401,7 @@ class _DailyPuzzleScreenState extends State<DailyPuzzleScreen>
             letterSpacing: 0.5,
           ),
         ),
-        SizedBox(height: KiwiSpacing.sm),
+        const SizedBox(height: KiwiSpacing.sm),
         Text(
           widget.puzzle.questionText,
           style: const TextStyle(
@@ -424,7 +424,7 @@ class _DailyPuzzleScreenState extends State<DailyPuzzleScreen>
     return Column(
       children: [
         for (int i = 0; i < options.length && i < 4; i++) ...[
-          if (i > 0) SizedBox(height: KiwiSpacing.sm + 2),
+          if (i > 0) const SizedBox(height: KiwiSpacing.sm + 2),
           _buildOptionButton(i, options[i]),
         ],
       ],
@@ -473,7 +473,7 @@ class _DailyPuzzleScreenState extends State<DailyPuzzleScreen>
         duration: const Duration(milliseconds: 250),
         curve: Curves.easeOut,
         width: double.infinity,
-        padding: EdgeInsets.symmetric(horizontal: KiwiSpacing.lg, vertical: KiwiSpacing.lg),
+        padding: const EdgeInsets.symmetric(horizontal: KiwiSpacing.lg, vertical: KiwiSpacing.lg),
         decoration: BoxDecoration(
           color: bgColor,
           borderRadius: BorderRadius.circular(KiwiSpacing.md + 2),
@@ -518,7 +518,7 @@ class _DailyPuzzleScreenState extends State<DailyPuzzleScreen>
                 ),
               ),
             ),
-            SizedBox(width: KiwiSpacing.md + 2),
+            const SizedBox(width: KiwiSpacing.md + 2),
             Expanded(
               child: Text(
                 text,
@@ -555,17 +555,17 @@ class _DailyPuzzleScreenState extends State<DailyPuzzleScreen>
             onTap: _useHint1,
             child: Container(
               width: double.infinity,
-              padding: EdgeInsets.symmetric(horizontal: KiwiSpacing.lg, vertical: KiwiSpacing.md),
+              padding: const EdgeInsets.symmetric(horizontal: KiwiSpacing.lg, vertical: KiwiSpacing.md),
               decoration: BoxDecoration(
                 color: KiwiColors.visualYellowBg,
                 borderRadius: BorderRadius.circular(KiwiSpacing.md),
                 border: Border.all(color: KiwiColors.visualYellowBorder),
               ),
-              child: Row(
+              child: const Row(
                 children: [
-                  const Text('\u{1F4A1}', style: TextStyle(fontSize: 20)),
+                  Text('\u{1F4A1}', style: TextStyle(fontSize: 20)),
                   SizedBox(width: KiwiSpacing.sm + 2),
-                  const Expanded(
+                  Expanded(
                     child: Text(
                       'Hint 1 (Free)',
                       style: TextStyle(
@@ -575,7 +575,7 @@ class _DailyPuzzleScreenState extends State<DailyPuzzleScreen>
                       ),
                     ),
                   ),
-                  const Icon(
+                  Icon(
                     Icons.touch_app_rounded,
                     size: 20,
                     color: KiwiColors.amber,
@@ -587,7 +587,7 @@ class _DailyPuzzleScreenState extends State<DailyPuzzleScreen>
         else
           Container(
             width: double.infinity,
-            padding: EdgeInsets.all(KiwiSpacing.md + 2),
+            padding: const EdgeInsets.all(KiwiSpacing.md + 2),
             decoration: BoxDecoration(
               color: KiwiColors.visualYellowBg,
               borderRadius: BorderRadius.circular(KiwiSpacing.md),
@@ -611,7 +611,7 @@ class _DailyPuzzleScreenState extends State<DailyPuzzleScreen>
               ],
             ),
           ),
-        SizedBox(height: KiwiSpacing.sm + 2),
+        const SizedBox(height: KiwiSpacing.sm + 2),
 
         // Hint 2 (costs gems)
         if (!_hint2Used)
@@ -619,7 +619,7 @@ class _DailyPuzzleScreenState extends State<DailyPuzzleScreen>
             onTap: _useHint2,
             child: Container(
               width: double.infinity,
-              padding: EdgeInsets.symmetric(horizontal: KiwiSpacing.lg, vertical: KiwiSpacing.md),
+              padding: const EdgeInsets.symmetric(horizontal: KiwiSpacing.lg, vertical: KiwiSpacing.md),
               decoration: BoxDecoration(
                 color: KiwiColors.visualBlueBg,
                 borderRadius: BorderRadius.circular(KiwiSpacing.md),
@@ -628,7 +628,7 @@ class _DailyPuzzleScreenState extends State<DailyPuzzleScreen>
               child: Row(
                 children: [
                   const Text('\u{1F48E}', style: TextStyle(fontSize: 20)),
-                  SizedBox(width: KiwiSpacing.sm + 2),
+                  const SizedBox(width: KiwiSpacing.sm + 2),
                   Expanded(
                     child: Text(
                       'Hint 2 (10 gems)',
@@ -656,7 +656,7 @@ class _DailyPuzzleScreenState extends State<DailyPuzzleScreen>
         else
           Container(
             width: double.infinity,
-            padding: EdgeInsets.all(KiwiSpacing.md + 2),
+            padding: const EdgeInsets.all(KiwiSpacing.md + 2),
             decoration: BoxDecoration(
               color: KiwiColors.visualBlueBg,
               borderRadius: BorderRadius.circular(KiwiSpacing.md),
@@ -719,7 +719,7 @@ class _DailyPuzzleScreenState extends State<DailyPuzzleScreen>
             borderRadius: BorderRadius.circular(KiwiSpacing.lg),
             onTap: canSubmit ? _submit : null,
             child: Padding(
-              padding: EdgeInsets.symmetric(vertical: KiwiSpacing.lg + 2),
+              padding: const EdgeInsets.symmetric(vertical: KiwiSpacing.lg + 2),
               child: Center(
                 child: _checking
                     ? const SizedBox(
@@ -772,8 +772,8 @@ class _DailyPuzzleScreenState extends State<DailyPuzzleScreen>
 
   Widget _buildResultCard() {
     return Container(
-      margin: EdgeInsets.symmetric(horizontal: KiwiSpacing.xxl),
-      padding: EdgeInsets.all(KiwiSpacing.xxl - 4),
+      margin: const EdgeInsets.symmetric(horizontal: KiwiSpacing.xxl),
+      padding: const EdgeInsets.all(KiwiSpacing.xxl - 4),
       decoration: BoxDecoration(
         color: KiwiColors.cardBg,
         borderRadius: BorderRadius.circular(KiwiSpacing.xl),
@@ -794,7 +794,7 @@ class _DailyPuzzleScreenState extends State<DailyPuzzleScreen>
             _isCorrect ? '\u{1F389}\u{1F31F}' : '\u{1F914}',
             style: const TextStyle(fontSize: 56),
           ),
-          SizedBox(height: KiwiSpacing.lg),
+          const SizedBox(height: KiwiSpacing.lg),
 
           // Title
           Text(
@@ -805,7 +805,7 @@ class _DailyPuzzleScreenState extends State<DailyPuzzleScreen>
               color: _isCorrect ? KiwiColors.kiwiGreenDark : KiwiColors.coral,
             ),
           ),
-          SizedBox(height: KiwiSpacing.sm),
+          const SizedBox(height: KiwiSpacing.sm),
 
           Text(
             _isCorrect
@@ -818,11 +818,11 @@ class _DailyPuzzleScreenState extends State<DailyPuzzleScreen>
               height: 1.4,
             ),
           ),
-          SizedBox(height: KiwiSpacing.xl),
+          const SizedBox(height: KiwiSpacing.xl),
 
           // Points earned
           Container(
-            padding: EdgeInsets.symmetric(horizontal: KiwiSpacing.xl, vertical: KiwiSpacing.md),
+            padding: const EdgeInsets.symmetric(horizontal: KiwiSpacing.xl, vertical: KiwiSpacing.md),
             decoration: BoxDecoration(
               color: KiwiColors.kiwiPrimaryLight,
               borderRadius: BorderRadius.circular(KiwiSpacing.md + 2),
@@ -831,7 +831,7 @@ class _DailyPuzzleScreenState extends State<DailyPuzzleScreen>
               mainAxisSize: MainAxisSize.min,
               children: [
                 const Text('\u{2B50}', style: TextStyle(fontSize: 22)),
-                SizedBox(width: KiwiSpacing.sm + 2),
+                const SizedBox(width: KiwiSpacing.sm + 2),
                 Text(
                   '+$_pointsEarned IPS',
                   style: const TextStyle(
@@ -843,12 +843,12 @@ class _DailyPuzzleScreenState extends State<DailyPuzzleScreen>
               ],
             ),
           ),
-          SizedBox(height: KiwiSpacing.md),
+          const SizedBox(height: KiwiSpacing.md),
 
           // Streak update
           if (widget.currentStreak > 0 || _isCorrect)
             Container(
-              padding: EdgeInsets.symmetric(horizontal: KiwiSpacing.lg, vertical: KiwiSpacing.sm),
+              padding: const EdgeInsets.symmetric(horizontal: KiwiSpacing.lg, vertical: KiwiSpacing.sm),
               decoration: BoxDecoration(
                 gradient: const LinearGradient(
                   colors: [KiwiColors.streakWarm, KiwiColors.kiwiPrimaryDark],
@@ -859,7 +859,7 @@ class _DailyPuzzleScreenState extends State<DailyPuzzleScreen>
                 mainAxisSize: MainAxisSize.min,
                 children: [
                   const Text('\u{1F525}', style: TextStyle(fontSize: 18)),
-                  SizedBox(width: KiwiSpacing.xs + 2),
+                  const SizedBox(width: KiwiSpacing.xs + 2),
                   Text(
                     _isCorrect
                         ? 'Streak: ${widget.currentStreak + 1} days!'
@@ -873,7 +873,7 @@ class _DailyPuzzleScreenState extends State<DailyPuzzleScreen>
                 ],
               ),
             ),
-          SizedBox(height: KiwiSpacing.lg),
+          const SizedBox(height: KiwiSpacing.lg),
 
           // Time taken
           Text(
@@ -884,7 +884,7 @@ class _DailyPuzzleScreenState extends State<DailyPuzzleScreen>
               fontWeight: FontWeight.w600,
             ),
           ),
-          SizedBox(height: KiwiSpacing.xl),
+          const SizedBox(height: KiwiSpacing.xl),
 
           // Action buttons
           Row(
@@ -894,7 +894,7 @@ class _DailyPuzzleScreenState extends State<DailyPuzzleScreen>
                 child: GestureDetector(
                   onTap: widget.onShareResult,
                   child: Container(
-                    padding: EdgeInsets.symmetric(vertical: KiwiSpacing.md + 2),
+                    padding: const EdgeInsets.symmetric(vertical: KiwiSpacing.md + 2),
                     decoration: BoxDecoration(
                       color: KiwiColors.creamDark,
                       borderRadius: BorderRadius.circular(KiwiSpacing.md + 2),
@@ -920,13 +920,13 @@ class _DailyPuzzleScreenState extends State<DailyPuzzleScreen>
                   ),
                 ),
               ),
-              SizedBox(width: KiwiSpacing.sm + 2),
+              const SizedBox(width: KiwiSpacing.sm + 2),
               // Done button
               Expanded(
                 child: GestureDetector(
                   onTap: widget.onClose,
                   child: Container(
-                    padding: EdgeInsets.symmetric(vertical: KiwiSpacing.md + 2),
+                    padding: const EdgeInsets.symmetric(vertical: KiwiSpacing.md + 2),
                     decoration: BoxDecoration(
                       gradient: const LinearGradient(
                         colors: [

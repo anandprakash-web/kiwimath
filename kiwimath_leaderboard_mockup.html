@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Kiwimath — Leaderboard UI/UX Mockup</title>
+<style>
+  :root{
+    --orange:#FF6F00; --orange-d:#E65100; --orange-l:#FFF3E0;
+    --ink:#20232A; --grey:#8A93A2; --line:#ECEEF2; --bg:#F6F7F4;
+    --green:#1FA971; --green-l:#E7F7EF; --red:#E5484D; --red-l:#FDECEC;
+    --gold:#F5A623; --blue:#2E5496;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;-webkit-font-smoothing:antialiased}
+  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#EEF0EC;color:var(--ink);padding:28px 18px 60px}
+  h1.title{text-align:center;font-size:26px;font-weight:800;letter-spacing:-.4px}
+  p.sub{text-align:center;color:var(--grey);margin:6px 0 26px;font-size:14px}
+  .gallery{display:flex;flex-wrap:wrap;gap:26px;justify-content:center;align-items:flex-start;max-width:1320px;margin:0 auto}
+  .col{display:flex;flex-direction:column;align-items:center;gap:10px}
+  .cap{font-size:12.5px;font-weight:700;color:#4a5160;text-transform:uppercase;letter-spacing:.5px}
+  .cap span{display:block;font-weight:500;text-transform:none;letter-spacing:0;color:var(--grey);font-size:11.5px;margin-top:2px;max-width:300px;text-align:center}
+  .phone{width:300px;height:620px;background:#fff;border-radius:34px;border:9px solid #14161A;box-shadow:0 16px 40px rgba(20,22,26,.18);overflow:hidden;position:relative;display:flex;flex-direction:column}
+  .sbar{height:30px;display:flex;justify-content:space-between;align-items:center;padding:0 16px;font-size:11px;font-weight:700;color:var(--ink);flex:none}
+  .sbar .dots{letter-spacing:2px;color:var(--grey)}
+  .hdr{padding:6px 16px 12px;display:flex;align-items:center;gap:10px;flex:none}
+  .hdr .back{font-size:20px;color:var(--ink)}
+  .hdr h2{font-size:19px;font-weight:800;letter-spacing:-.3px}
+  .body{flex:1;overflow:hidden;padding:0 14px 14px;position:relative}
+  .pill{display:inline-flex;align-items:center;gap:5px;background:var(--orange-l);color:var(--orange-d);font-weight:700;font-size:11.5px;padding:5px 10px;border-radius:20px}
+  .card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:14px}
+  .soft{background:var(--bg);border-radius:16px}
+  .row{display:flex;align-items:center;gap:10px;padding:9px 10px;border-radius:13px}
+  .rank{width:24px;text-align:center;font-weight:800;color:var(--grey);font-size:14px}
+  .av{width:30px;height:30px;border-radius:50%;flex:none;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800;font-size:13px}
+  .nm{flex:1;font-weight:700;font-size:13.5px}
+  .nm small{display:block;font-weight:500;color:var(--grey);font-size:11px}
+  .pts{font-weight:800;font-size:13.5px}
+  .trend{font-size:11px;font-weight:700;margin-left:2px}
+  .up{color:var(--green)} .dn{color:var(--red)}
+  .me{background:var(--orange-l);outline:2px solid var(--orange)}
+  .zone-lbl{display:flex;align-items:center;gap:6px;font-size:10.5px;font-weight:800;text-transform:uppercase;letter-spacing:.4px;margin:8px 4px 4px}
+  .promote{color:var(--green)} .relegate{color:var(--red)}
+  .divider{height:2px;border-radius:2px;margin:3px 6px}
+  .btn{display:block;text-align:center;background:var(--orange);color:#fff;font-weight:800;font-size:15px;padding:14px;border-radius:16px;box-shadow:0 6px 16px rgba(255,111,0,.32)}
+  .btn.ghost{background:#fff;color:var(--orange-d);border:1.5px solid var(--orange);box-shadow:none}
+  .big{font-size:13px}
+  .center{text-align:center}
+  .count{font-size:38px;font-weight:800;letter-spacing:-1px;font-variant-numeric:tabular-nums}
+  .medal{font-size:30px}
+  .tierbadge{display:inline-flex;flex-direction:column;align-items:center;justify-content:center;width:64px;height:64px;border-radius:18px;color:#fff;font-weight:800;font-size:11px;line-height:1.1}
+  .statgrid{display:flex;gap:8px}
+  .statgrid .s{flex:1;background:var(--bg);border-radius:14px;padding:10px;text-align:center}
+  .statgrid .s b{display:block;font-size:18px;font-weight:800}
+  .statgrid .s span{font-size:10.5px;color:var(--grey);font-weight:600}
+  .toggle{width:42px;height:25px;border-radius:20px;background:var(--green);position:relative;flex:none}
+  .toggle::after{content:"";position:absolute;width:19px;height:19px;border-radius:50%;background:#fff;top:3px;right:3px}
+  .toggle.off{background:#CBD2DC}.toggle.off::after{right:auto;left:3px}
+  .q{font-size:16px;font-weight:700;line-height:1.35}
+  .opt{border:1.5px solid var(--line);border-radius:13px;padding:12px 14px;font-weight:700;font-size:14px;margin-top:9px}
+  .opt.sel{border-color:var(--orange);background:var(--orange-l)}
+  .tbar{height:6px;border-radius:6px;background:var(--line);overflow:hidden}
+  .tbar i{display:block;height:100%;background:var(--orange);border-radius:6px}
+  .legend{font-size:10px;color:var(--grey);text-align:center;margin-top:7px}
+  .ribbon{position:absolute;top:0;right:0;background:var(--orange);color:#fff;font-size:10px;font-weight:800;padding:4px 10px;border-bottom-left-radius:12px}
+</style>
+</head>
+<body>
+  <h1 class="title">Kiwimath — Leaderboard &amp; Competitive Layer</h1>
+  <p class="sub">UI/UX mockup · Grade 6–10 olympiad track · the Daily Contest is the heartbeat, the Weekly League the rivalry, the Rating the prestige.</p>
+
+  <div class="gallery">
+
+    <!-- 1. DAILY CONTEST LOBBY -->
+    <div class="col">
+      <div class="cap">1 · Daily Contest — Lobby<span>Fixed 6 PM appointment + live countdown. The day's biggest points.</span></div>
+      <div class="phone">
+        <div class="sbar"><span>6:00</span><span class="dots">▮ ▮ ▮ 28°</span></div>
+        <div class="hdr"><span class="back">‹</span><h2>Daily Olympiad</h2></div>
+        <div class="body">
+          <div class="card center" style="background:linear-gradient(160deg,#FFF3E0,#fff)">
+            <div class="pill" style="margin:0 auto 10px">🏆 Level 5 · IOQM set</div>
+            <div style="font-size:12px;color:var(--grey);font-weight:700">STARTS IN</div>
+            <div class="count" style="color:var(--orange-d)">01:42:18</div>
+            <div style="font-size:12px;color:var(--grey);margin-top:2px">8 questions · 12 min · one attempt</div>
+          </div>
+          <div class="card" style="margin-top:12px;display:flex;gap:10px;align-items:center">
+            <div style="font-size:22px">⚡</div>
+            <div style="flex:1"><b style="font-size:13px">On-time bonus</b><div style="font-size:11.5px;color:var(--grey)">Enter in the first hour → ×1.5 points</div></div>
+          </div>
+          <div class="statgrid" style="margin-top:12px">
+            <div class="s"><b>1642</b><span>Your rating</span></div>
+            <div class="s"><b>🔥 23</b><span>Day streak</span></div>
+            <div class="s"><b>Gold</b><span>League</span></div>
+          </div>
+          <div style="margin-top:14px"><span class="btn">🔔 Remind me at 6 PM</span></div>
+          <p class="legend">Miss it and you forgo the day's biggest points.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. CONTEST RESULTS -->
+    <div class="col">
+      <div class="cap">2 · Contest — Live Result<span>Instant rank + LP + rating change, with the live board.</span></div>
+      <div class="phone">
+        <div class="sbar"><span>6:09</span><span class="dots">▮ ▮ ▮ 28°</span></div>
+        <div class="hdr"><h2 style="margin:0 auto">Results</h2></div>
+        <div class="body">
+          <div class="card center" style="background:linear-gradient(160deg,#E7F7EF,#fff)">
+            <div class="medal">🥈</div>
+            <div style="font-size:22px;font-weight:800;margin-top:2px">You placed #4</div>
+            <div style="font-size:12px;color:var(--grey)">of 28 in your level today</div>
+            <div style="display:flex;gap:10px;justify-content:center;margin-top:12px">
+              <div class="pill" style="background:var(--green-l);color:var(--green)">＋420 LP</div>
+              <div class="pill">Rating ＋18 → 1660</div>
+            </div>
+          </div>
+          <div style="font-size:11px;font-weight:800;color:var(--grey);text-transform:uppercase;letter-spacing:.5px;margin:14px 6px 6px">Today’s top of your level</div>
+          <div class="card" style="padding:6px">
+            <div class="row"><div class="rank">1</div><div class="av" style="background:#7C4DFF">VS</div><div class="nm">Vihaan S.</div><div class="pts">980</div></div>
+            <div class="row"><div class="rank">2</div><div class="av" style="background:#26A69A">AK</div><div class="nm">Ananya K.</div><div class="pts">915</div></div>
+            <div class="row"><div class="rank">3</div><div class="av" style="background:#EC407A">RP</div><div class="nm">Reyansh P.</div><div class="pts">868</div></div>
+            <div class="row me"><div class="rank" style="color:var(--orange-d)">4</div><div class="av" style="background:var(--orange)">YO</div><div class="nm">You</div><div class="pts">842</div></div>
+          </div>
+          <p class="legend">Live — updates as students finish the window.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. WEEKLY LEAGUE -->
+    <div class="col">
+      <div class="cap">3 · Weekly League ★<span>~30-student cohort, promotion (green) &amp; relegation (red) zones.</span></div>
+      <div class="phone">
+        <div class="sbar"><span>6:11</span><span class="dots">▮ ▮ ▮ 28°</span></div>
+        <div class="hdr"><span class="back">‹</span><h2>Gold League</h2></div>
+        <div class="body" style="overflow:hidden">
+          <div style="display:flex;align-items:center;gap:10px;background:var(--bg);border-radius:14px;padding:10px 12px">
+            <div class="tierbadge" style="background:linear-gradient(160deg,#F5A623,#E08600)">🥇<span style="font-size:9px">GOLD</span></div>
+            <div style="flex:1"><b style="font-size:13px">Top 7 promote to Platinum</b><div style="font-size:11.5px;color:var(--grey)">Resets in 2d 4h · 28 players</div></div>
+          </div>
+          <div class="zone-lbl promote">▲ Promotion zone</div>
+          <div class="card" style="padding:5px">
+            <div class="row"><div class="rank">1</div><div class="av" style="background:#7C4DFF">VS</div><div class="nm">Vihaan S.</div><div class="pts">4,820<span class="trend up">▲</span></div></div>
+            <div class="row"><div class="rank">2</div><div class="av" style="background:#26A69A">AK</div><div class="nm">Ananya K.</div><div class="pts">4,610</div></div>
+            <div class="row me"><div class="rank" style="color:var(--orange-d)">3</div><div class="av" style="background:var(--orange)">YO</div><div class="nm">You<small>＋420 today</small></div><div class="pts">4,180<span class="trend up">▲2</span></div></div>
+            <div class="divider" style="background:var(--green)"></div>
+            <div class="row"><div class="rank">7</div><div class="av" style="background:#5C6BC0">DM</div><div class="nm">Diya M.</div><div class="pts">3,540</div></div>
+          </div>
+          <div style="height:7px"></div>
+          <div class="card" style="padding:5px">
+            <div class="row"><div class="rank">8</div><div class="av" style="background:#8D6E63">KR</div><div class="nm">Kabir R.</div><div class="pts">3,180</div></div>
+            <div class="zone-lbl relegate" style="margin:2px 4px">▼ Relegation zone</div>
+            <div class="divider" style="background:var(--red)"></div>
+            <div class="row"><div class="rank">26</div><div class="av" style="background:#90A4AE">NT</div><div class="nm">Nisha T.</div><div class="pts">610<span class="trend dn">▼</span></div></div>
+            <div class="row"><div class="rank">28</div><div class="av" style="background:#90A4AE">OM</div><div class="nm">Om P.</div><div class="pts">340<span class="trend dn">▼</span></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. RATING CARD -->
+    <div class="col">
+      <div class="cap">4 · Kiwi Rating<span>The persistent chess-style ladder — the Grade 6–10 magnet.</span></div>
+      <div class="phone">
+        <div class="sbar"><span>6:12</span><span class="dots">▮ ▮ ▮ 28°</span></div>
+        <div class="hdr"><span class="back">‹</span><h2>Your Rating</h2></div>
+        <div class="body">
+          <div class="card center">
+            <div style="font-size:11px;font-weight:800;color:var(--grey);letter-spacing:.5px">CANDIDATE MASTER</div>
+            <div class="count" style="font-size:54px;color:var(--orange-d);margin:2px 0">1660</div>
+            <div class="pill" style="margin:0 auto;background:var(--green-l);color:var(--green)">＋18 last contest</div>
+            <svg viewBox="0 0 260 90" style="width:100%;margin-top:14px">
+              <polyline fill="none" stroke="#FFD9B3" stroke-width="8" points="6,78 44,70 82,74 120,58 158,60 196,40 234,30"/>
+              <polyline fill="none" stroke="#FF6F00" stroke-width="3" points="6,78 44,70 82,74 120,58 158,60 196,40 234,30"/>
+              <circle cx="234" cy="30" r="5" fill="#FF6F00"/>
+            </svg>
+            <div class="legend">Last 7 contests · rating only moves in contests</div>
+          </div>
+          <div style="font-size:11px;font-weight:800;color:var(--grey);text-transform:uppercase;letter-spacing:.5px;margin:14px 6px 6px">Next title</div>
+          <div class="card" style="display:flex;align-items:center;gap:10px">
+            <div class="tierbadge" style="background:linear-gradient(160deg,#7C4DFF,#5E35B1);width:50px;height:50px">★<span style="font-size:8px">MASTER</span></div>
+            <div style="flex:1">
+              <div style="display:flex;justify-content:space-between;font-size:12px;font-weight:700"><span>Master</span><span style="color:var(--grey)">1660 / 1800</span></div>
+              <div class="tbar" style="margin-top:6px"><i style="width:62%"></i></div>
+              <div style="font-size:11px;color:var(--grey);margin-top:5px">140 to go — ~6 strong contests</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5. MONTHLY SEASON -->
+    <div class="col">
+      <div class="cap">5 · Monthly Season<span>Champions, Hall of Fame, retiring cosmetic rewards (FOMO).</span></div>
+      <div class="phone">
+        <div class="sbar"><span>6:13</span><span class="dots">▮ ▮ ▮ 28°</span></div>
+        <div class="hdr"><span class="back">‹</span><h2>Season 3</h2></div>
+        <div class="body">
+          <div class="card center" style="background:linear-gradient(160deg,#F3ECFF,#fff);position:relative">
+            <div class="ribbon">6 days left</div>
+            <div style="font-size:30px">👑</div>
+            <div style="font-weight:800;font-size:15px;margin-top:2px">Season Champions race</div>
+            <div style="font-size:11.5px;color:var(--grey)">Top 3 of your level win the trophy + exclusive avatar</div>
+          </div>
+          <div class="card" style="margin-top:12px;padding:6px">
+            <div class="row"><div class="rank">🥇</div><div class="av" style="background:#7C4DFF">VS</div><div class="nm">Vihaan S.</div><div class="pts">18,940</div></div>
+            <div class="row"><div class="rank">🥈</div><div class="av" style="background:#26A69A">AK</div><div class="nm">Ananya K.</div><div class="pts">17,510</div></div>
+            <div class="row me"><div class="rank">🥉</div><div class="av" style="background:var(--orange)">YO</div><div class="nm">You</div><div class="pts">16,220</div></div>
+          </div>
+          <div style="font-size:11px;font-weight:800;color:var(--grey);text-transform:uppercase;letter-spacing:.5px;margin:14px 6px 6px">Season reward (retires June 30)</div>
+          <div class="card" style="display:flex;align-items:center;gap:12px">
+            <div style="font-size:30px">🦉</div>
+            <div style="flex:1"><b style="font-size:13px">“Owl Scholar” avatar + gold border</b><div style="font-size:11.5px;color:var(--grey)">Cosmetic only · gone when the season ends</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 6. PARENT VIEW -->
+    <div class="col">
+      <div class="cap">6 · Parent View<span>Competition reframed as effort &amp; growth, with a master off-switch.</span></div>
+      <div class="phone">
+        <div class="sbar"><span>6:14</span><span class="dots">▮ ▮ ▮ 28°</span></div>
+        <div class="hdr"><span class="back">‹</span><h2>Aarav · This week</h2></div>
+        <div class="body">
+          <div class="statgrid">
+            <div class="s"><b>6/7</b><span>Days active</span></div>
+            <div class="s"><b>23</b><span>Day streak</span></div>
+            <div class="s"><b>＋40</b><span>Rating ▲</span></div>
+          </div>
+          <div class="card" style="margin-top:12px">
+            <div style="font-weight:800;font-size:13px;margin-bottom:8px">Effort &amp; consistency</div>
+            <div style="display:flex;gap:5px;align-items:flex-end;height:52px">
+              <i style="flex:1;background:var(--orange);height:60%;border-radius:5px"></i>
+              <i style="flex:1;background:var(--orange);height:80%;border-radius:5px"></i>
+              <i style="flex:1;background:var(--orange);height:45%;border-radius:5px"></i>
+              <i style="flex:1;background:var(--orange);height:90%;border-radius:5px"></i>
+              <i style="flex:1;background:var(--orange);height:70%;border-radius:5px"></i>
+              <i style="flex:1;background:var(--orange);height:100%;border-radius:5px"></i>
+              <i style="flex:1;background:var(--line);height:30%;border-radius:5px"></i>
+            </div>
+            <div class="legend" style="margin-top:8px">14 new skills mastered · in Gold league, climbing</div>
+          </div>
+          <div class="card" style="margin-top:12px;display:flex;align-items:center;gap:10px">
+            <div style="flex:1"><b style="font-size:13px">Competitive features</b><div style="font-size:11.5px;color:var(--grey)">Leagues, rating, public board</div></div>
+            <div class="toggle"></div>
+          </div>
+          <div class="card" style="margin-top:10px;display:flex;align-items:center;gap:10px">
+            <div style="flex:1"><b style="font-size:13px">Quiet hours (after 9 PM)</b><div style="font-size:11.5px;color:var(--grey)">No contest reminders late</div></div>
+            <div class="toggle"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

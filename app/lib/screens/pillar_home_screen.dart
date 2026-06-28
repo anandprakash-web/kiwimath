@@ -80,7 +80,7 @@ class _PillarHomeScreenState extends State<PillarHomeScreen> {
     final typo = tier.typography;
 
     return SingleChildScrollView(
-      padding: EdgeInsets.fromLTRB(KiwiSpacing.lg, KiwiSpacing.md, KiwiSpacing.lg, KiwiSpacing.xl),
+      padding: const EdgeInsets.fromLTRB(KiwiSpacing.lg, KiwiSpacing.md, KiwiSpacing.lg, KiwiSpacing.xl),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -104,7 +104,7 @@ class _PillarHomeScreenState extends State<PillarHomeScreen> {
                   ),
                 ),
               ),
-              SizedBox(width: KiwiSpacing.sm),
+              const SizedBox(width: KiwiSpacing.sm),
               Text(
                 'Grade ${widget.selectedGrade}',
                 style: TextStyle(
@@ -115,7 +115,7 @@ class _PillarHomeScreenState extends State<PillarHomeScreen> {
               ),
             ],
           ),
-          SizedBox(height: KiwiSpacing.xs),
+          const SizedBox(height: KiwiSpacing.xs),
           Text(
             'Master each pillar from fundamentals to olympiad',
             style: TextStyle(
@@ -124,7 +124,7 @@ class _PillarHomeScreenState extends State<PillarHomeScreen> {
               fontFamily: typo.fontFamily,
             ),
           ),
-          SizedBox(height: KiwiSpacing.lg),
+          const SizedBox(height: KiwiSpacing.lg),
 
           // ── Pillar grid (2×2) ─────────────────────────────────────
           if (_loading)
@@ -137,7 +137,7 @@ class _PillarHomeScreenState extends State<PillarHomeScreen> {
           else
             _buildPillarGrid(colors, typo, tier),
 
-          SizedBox(height: KiwiSpacing.lg),
+          const SizedBox(height: KiwiSpacing.lg),
 
           // ── Daily Challenge card ──────────────────────────────────
           _DailyChallengeCard(
@@ -153,7 +153,7 @@ class _PillarHomeScreenState extends State<PillarHomeScreen> {
   }
 
   Widget _buildPillarGrid(KiwiTierColors colors, KiwiTierTypography typo, KiwiTier tier) {
-    final pillars = PillarMeta.all;
+    const pillars = PillarMeta.all;
 
     return GridView.count(
       crossAxisCount: 2,
@@ -291,7 +291,7 @@ class _PillarCard extends StatelessWidget {
                 maxLines: 1,
                 overflow: TextOverflow.ellipsis,
               ),
-              SizedBox(height: KiwiSpacing.xs - 2),
+              const SizedBox(height: KiwiSpacing.xs - 2),
 
               // Tagline
               Text(
@@ -304,7 +304,7 @@ class _PillarCard extends StatelessWidget {
                 maxLines: 2,
                 overflow: TextOverflow.ellipsis,
               ),
-              SizedBox(height: KiwiSpacing.sm),
+              const SizedBox(height: KiwiSpacing.sm),
 
               // Progress bar
               ClipRRect(
@@ -318,7 +318,7 @@ class _PillarCard extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(height: KiwiSpacing.xs - 2),
+              const SizedBox(height: KiwiSpacing.xs - 2),
 
               // Mastery label
               Text(
@@ -367,7 +367,7 @@ class _DailyChallengeCard extends StatelessWidget {
             },
       child: Container(
       width: double.infinity,
-      padding: EdgeInsets.all(KiwiSpacing.lg),
+      padding: const EdgeInsets.all(KiwiSpacing.lg),
       decoration: BoxDecoration(
         gradient: LinearGradient(
           colors: [
@@ -397,7 +397,7 @@ class _DailyChallengeCard extends StatelessWidget {
             ),
             child: const Icon(Icons.emoji_events, color: Colors.white, size: 22),
           ),
-          SizedBox(width: KiwiSpacing.md),
+          const SizedBox(width: KiwiSpacing.md),
           Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -411,7 +411,7 @@ class _DailyChallengeCard extends StatelessWidget {
                     fontFamily: typo.fontFamily,
                   ),
                 ),
-                SizedBox(height: KiwiSpacing.xs - 2),
+                const SizedBox(height: KiwiSpacing.xs - 2),
                 Text(
                   'One brain-teaser a day keeps boredom away',
                   style: TextStyle(

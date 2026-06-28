@@ -6,6 +6,7 @@
 /// GET  /v2/questions/{id}     → QuestionV2
 /// POST /v2/answer/check       → AnswerCheckResponse
 /// GET  /v2/questions/{id}/visual → SVG content
+library;
 
 /// Socratic 6-level hint ladder.
 class HintLadder {

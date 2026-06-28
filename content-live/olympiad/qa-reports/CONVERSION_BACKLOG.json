@@ -1,0 +1,1141 @@
+{
+  "generated": "2026-06-22",
+  "removed_files": 126,
+  "removed_questions": 1186,
+  "topics": [
+    {
+      "file": "olympiad/L4/L4_ALG_arithmetic_progression.json",
+      "level": "L4",
+      "pillar": "ALG",
+      "topic_key": "arithmetic_progression",
+      "display_name": "Arithmetic Progression",
+      "image_questions": 14,
+      "source_label": "Vedantu OMM · Algebra · Arithmetic Progression"
+    },
+    {
+      "file": "olympiad/L4/L4_ALG_identities_1.json",
+      "level": "L4",
+      "pillar": "ALG",
+      "topic_key": "identities_1",
+      "display_name": "Identities 1",
+      "image_questions": 14,
+      "source_label": "Vedantu OMM · Algebra · Identities 1"
+    },
+    {
+      "file": "olympiad/L4/L4_ALG_identities_2.json",
+      "level": "L4",
+      "pillar": "ALG",
+      "topic_key": "identities_2",
+      "display_name": "Identities 2",
+      "image_questions": 14,
+      "source_label": "Vedantu OMM · Algebra · Identities 2"
+    },
+    {
+      "file": "olympiad/L4/L4_ALG_introduction_to_quadratic_equation.json",
+      "level": "L4",
+      "pillar": "ALG",
+      "topic_key": "introduction_to_quadratic_equation",
+      "display_name": "Introduction To Quadratic Equation",
+      "image_questions": 15,
+      "source_label": "Vedantu OMM · Algebra · Introduction To Quadratic Equation"
+    },
+    {
+      "file": "olympiad/L4/L4_ALG_introduction_to_sequence.json",
+      "level": "L4",
+      "pillar": "ALG",
+      "topic_key": "introduction_to_sequence",
+      "display_name": "Introduction To Sequence",
+      "image_questions": 15,
+      "source_label": "Vedantu OMM · Algebra · Introduction To Sequence"
+    },
+    {
+      "file": "olympiad/L4/L4_ALG_linear_equation_in_one_variable.json",
+      "level": "L4",
+      "pillar": "ALG",
+      "topic_key": "linear_equation_in_one_variable",
+      "display_name": "Linear Equation In One Variable",
+      "image_questions": 11,
+      "source_label": "Vedantu OMM · Algebra · Linear Equation In One Variable"
+    },
+    {
+      "file": "olympiad/L4/L4_ALG_linear_equation_in_two_variable.json",
+      "level": "L4",
+      "pillar": "ALG",
+      "topic_key": "linear_equation_in_two_variable",
+      "display_name": "Linear Equation In Two Variable",
+      "image_questions": 13,
+      "source_label": "Vedantu OMM · Algebra · Linear Equation In Two Variable"
+    },
+    {
+      "file": "olympiad/L4/L4_ALG_methods_to_solve_quadratic_equation.json",
+      "level": "L4",
+      "pillar": "ALG",
+      "topic_key": "methods_to_solve_quadratic_equation",
+      "display_name": "Methods To Solve Quadratic Equation",
+      "image_questions": 15,
+      "source_label": "Vedantu OMM · Algebra · Methods To Solve Quadratic Equation"
+    },
+    {
+      "file": "olympiad/L4/L4_ALG_polynomials_1.json",
+      "level": "L4",
+      "pillar": "ALG",
+      "topic_key": "polynomials_1",
+      "display_name": "Polynomials 1",
+      "image_questions": 15,
+      "source_label": "Vedantu OMM · Algebra · Polynomials 1"
+    },
+    {
+      "file": "olympiad/L4/L4_ALG_polynomials_2.json",
+      "level": "L4",
+      "pillar": "ALG",
+      "topic_key": "polynomials_2",
+      "display_name": "Polynomials 2",
+      "image_questions": 15,
+      "source_label": "Vedantu OMM · Algebra · Polynomials 2"
+    },
+    {
+      "file": "olympiad/L4/L4_ALG_system_of_equations.json",
+      "level": "L4",
+      "pillar": "ALG",
+      "topic_key": "system_of_equations",
+      "display_name": "System Of Equations",
+      "image_questions": 8,
+      "source_label": "Vedantu OMM · Algebra · System Of Equations"
+    },
+    {
+      "file": "olympiad/L4/L4_ARITH_profit_loss.json",
+      "level": "L4",
+      "pillar": "ARITH",
+      "topic_key": "profit_loss",
+      "display_name": "Profit Loss",
+      "image_questions": 10,
+      "source_label": "Vedantu OMM · Arithmetic · Profit Loss"
+    },
+    {
+      "file": "olympiad/L4/L4_ARITH_ratio_proportion.json",
+      "level": "L4",
+      "pillar": "ARITH",
+      "topic_key": "ratio_proportion",
+      "display_name": "Ratio Proportion",
+      "image_questions": 8,
+      "source_label": "Vedantu OMM · Arithmetic · Ratio Proportion"
+    },
+    {
+      "file": "olympiad/L4/L4_ARITH_time_work.json",
+      "level": "L4",
+      "pillar": "ARITH",
+      "topic_key": "time_work",
+      "display_name": "Time Work",
+      "image_questions": 10,
+      "source_label": "Vedantu OMM · Arithmetic · Time Work"
+    },
+    {
+      "file": "olympiad/L4/L4_COM_factorial.json",
+      "level": "L4",
+      "pillar": "COM",
+      "topic_key": "factorial",
+      "display_name": "Factorial",
+      "image_questions": 15,
+      "source_label": "Vedantu OMM · Combinatorics · Factorial"
+    },
+    {
+      "file": "olympiad/L4/L4_COM_fundamental_principles_of_counting.json",
+      "level": "L4",
+      "pillar": "COM",
+      "topic_key": "fundamental_principles_of_counting",
+      "display_name": "Fundamental Principles Of Counting",
+      "image_questions": 14,
+      "source_label": "Vedantu OMM · Combinatorics · Fundamental Principles Of Counting"
+    },
+    {
+      "file": "olympiad/L4/L4_COM_number_of_divisors.json",
+      "level": "L4",
+      "pillar": "COM",
+      "topic_key": "number_of_divisors",
+      "display_name": "Number Of Divisors",
+      "image_questions": 12,
+      "source_label": "Vedantu OMM · Combinatorics · Number Of Divisors"
+    },
+    {
+      "file": "olympiad/L4/L4_GEO_angle_chasing.json",
+      "level": "L4",
+      "pillar": "GEO",
+      "topic_key": "angle_chasing",
+      "display_name": "Angle Chasing",
+      "image_questions": 14,
+      "source_label": "Vedantu OMM · Geometry · Angle Chasing"
+    },
+    {
+      "file": "olympiad/L4/L4_GEO_area_of_parallelogram_triangles_1.json",
+      "level": "L4",
+      "pillar": "GEO",
+      "topic_key": "area_of_parallelogram_triangles_1",
+      "display_name": "Area Of Parallelogram Triangles 1",
+      "image_questions": 15,
+      "source_label": "Vedantu OMM · Geometry · Area Of Parallelogram Triangles 1"
+    },
+    {
+      "file": "olympiad/L4/L4_GEO_area_of_parallelogram_triangles_2.json",
+      "level": "L4",
+      "pillar": "GEO",
+      "topic_key": "area_of_parallelogram_triangles_2",
+      "display_name": "Area Of Parallelogram Triangles 2",
+      "image_questions": 19,
+      "source_label": "Vedantu OMM · Geometry · Area Of Parallelogram Triangles 2"
+    },
+    {
+      "file": "olympiad/L4/L4_GEO_congruent_triangles_1.json",
+      "level": "L4",
+      "pillar": "GEO",
+      "topic_key": "congruent_triangles_1",
+      "display_name": "Congruent Triangles 1",
+      "image_questions": 12,
+      "source_label": "Vedantu OMM · Geometry · Congruent Triangles 1"
+    },
+    {
+      "file": "olympiad/L4/L4_GEO_important_points_of_triangles.json",
+      "level": "L4",
+      "pillar": "GEO",
+      "topic_key": "important_points_of_triangles",
+      "display_name": "Important Points Of Triangles",
+      "image_questions": 10,
+      "source_label": "Vedantu OMM · Geometry · Important Points Of Triangles"
+    },
+    {
+      "file": "olympiad/L4/L4_GEO_polygons.json",
+      "level": "L4",
+      "pillar": "GEO",
+      "topic_key": "polygons",
+      "display_name": "Polygons",
+      "image_questions": 16,
+      "source_label": "Vedantu OMM · Geometry · Polygons"
+    },
+    {
+      "file": "olympiad/L4/L4_GEO_pythagoras_theorem.json",
+      "level": "L4",
+      "pillar": "GEO",
+      "topic_key": "pythagoras_theorem",
+      "display_name": "Pythagoras Theorem",
+      "image_questions": 15,
+      "source_label": "Vedantu OMM · Geometry · Pythagoras Theorem"
+    },
+    {
+      "file": "olympiad/L4/L4_GEO_quadrilaterals.json",
+      "level": "L4",
+      "pillar": "GEO",
+      "topic_key": "quadrilaterals",
+      "display_name": "Quadrilaterals",
+      "image_questions": 14,
+      "source_label": "Vedantu OMM · Geometry · Quadrilaterals"
+    },
+    {
+      "file": "olympiad/L4/L4_GEO_triangle_inequality.json",
+      "level": "L4",
+      "pillar": "GEO",
+      "topic_key": "triangle_inequality",
+      "display_name": "Triangle Inequality",
+      "image_questions": 10,
+      "source_label": "Vedantu OMM · Geometry · Triangle Inequality"
+    },
+    {
+      "file": "olympiad/L4/L4_NT_decimal.json",
+      "level": "L4",
+      "pillar": "NT",
+      "topic_key": "decimal",
+      "display_name": "Decimal",
+      "image_questions": 11,
+      "source_label": "Vedantu OMM · Number Theory · Decimal"
+    },
+    {
+      "file": "olympiad/L4/L4_NT_diophantine_equation_1.json",
+      "level": "L4",
+      "pillar": "NT",
+      "topic_key": "diophantine_equation_1",
+      "display_name": "Diophantine Equation 1",
+      "image_questions": 12,
+      "source_label": "Vedantu OMM · Number Theory · Diophantine Equation 1"
+    },
+    {
+      "file": "olympiad/L4/L4_NT_diophantine_equation_2.json",
+      "level": "L4",
+      "pillar": "NT",
+      "topic_key": "diophantine_equation_2",
+      "display_name": "Diophantine Equation 2",
+      "image_questions": 15,
+      "source_label": "Vedantu OMM · Number Theory · Diophantine Equation 2"
+    },
+    {
+      "file": "olympiad/L4/L4_NT_divisibility_rules.json",
+      "level": "L4",
+      "pillar": "NT",
+      "topic_key": "divisibility_rules",
+      "display_name": "Divisibility Rules",
+      "image_questions": 7,
+      "source_label": "Vedantu OMM · Number Theory · Divisibility Rules"
+    },
+    {
+      "file": "olympiad/L4/L4_NT_divisibility_rules_2.json",
+      "level": "L4",
+      "pillar": "NT",
+      "topic_key": "divisibility_rules_2",
+      "display_name": "Divisibility Rules 2",
+      "image_questions": 9,
+      "source_label": "Vedantu OMM · Number Theory · Divisibility Rules 2"
+    },
+    {
+      "file": "olympiad/L4/L4_NT_exponent.json",
+      "level": "L4",
+      "pillar": "NT",
+      "topic_key": "exponent",
+      "display_name": "Exponent",
+      "image_questions": 15,
+      "source_label": "Vedantu OMM · Number Theory · Exponent"
+    },
+    {
+      "file": "olympiad/L4/L4_NT_hcf_lcm.json",
+      "level": "L4",
+      "pillar": "NT",
+      "topic_key": "hcf_lcm",
+      "display_name": "Hcf Lcm",
+      "image_questions": 14,
+      "source_label": "Vedantu OMM · Number Theory · Hcf Lcm"
+    },
+    {
+      "file": "olympiad/L4/L4_NT_hcf_lcm_2.json",
+      "level": "L4",
+      "pillar": "NT",
+      "topic_key": "hcf_lcm_2",
+      "display_name": "Hcf Lcm 2",
+      "image_questions": 11,
+      "source_label": "Vedantu OMM · Number Theory · Hcf Lcm 2"
+    },
+    {
+      "file": "olympiad/L4/L4_NT_playing_with_numbers_1.json",
+      "level": "L4",
+      "pillar": "NT",
+      "topic_key": "playing_with_numbers_1",
+      "display_name": "Playing With Numbers 1",
+      "image_questions": 11,
+      "source_label": "Vedantu OMM · Number Theory · Playing With Numbers 1"
+    },
+    {
+      "file": "olympiad/L4/L4_NT_playing_with_numbers_2.json",
+      "level": "L4",
+      "pillar": "NT",
+      "topic_key": "playing_with_numbers_2",
+      "display_name": "Playing With Numbers 2",
+      "image_questions": 13,
+      "source_label": "Vedantu OMM · Number Theory · Playing With Numbers 2"
+    },
+    {
+      "file": "olympiad/L4/L4_NT_unit_digit.json",
+      "level": "L4",
+      "pillar": "NT",
+      "topic_key": "unit_digit",
+      "display_name": "Unit Digit",
+      "image_questions": 14,
+      "source_label": "Vedantu OMM · Number Theory · Unit Digit"
+    },
+    {
+      "file": "olympiad/L5/L5_ALG_analysis_of_graph_of_quadratic.json",
+      "level": "L5",
+      "pillar": "ALG",
+      "topic_key": "analysis_of_graph_of_quadratic",
+      "display_name": "Analysis Of Graph Of Quadratic",
+      "image_questions": 11,
+      "source_label": "Vedantu OMM · Algebra · Analysis Of Graph Of Quadratic"
+    },
+    {
+      "file": "olympiad/L5/L5_ALG_arithmetic_progressions.json",
+      "level": "L5",
+      "pillar": "ALG",
+      "topic_key": "arithmetic_progressions",
+      "display_name": "Arithmetic Progressions",
+      "image_questions": 12,
+      "source_label": "Vedantu OMM · Algebra · Arithmetic Progressions"
+    },
+    {
+      "file": "olympiad/L5/L5_ALG_factor_and_remainder_theorem.json",
+      "level": "L5",
+      "pillar": "ALG",
+      "topic_key": "factor_and_remainder_theorem",
+      "display_name": "Factor And Remainder Theorem",
+      "image_questions": 11,
+      "source_label": "Vedantu OMM · Algebra · Factor And Remainder Theorem"
+    },
+    {
+      "file": "olympiad/L5/L5_ALG_geometric_progressions.json",
+      "level": "L5",
+      "pillar": "ALG",
+      "topic_key": "geometric_progressions",
+      "display_name": "Geometric Progressions",
+      "image_questions": 11,
+      "source_label": "Vedantu OMM · Algebra · Geometric Progressions"
+    },
+    {
+      "file": "olympiad/L5/L5_ALG_gif.json",
+      "level": "L5",
+      "pillar": "ALG",
+      "topic_key": "gif",
+      "display_name": "Gif",
+      "image_questions": 1,
+      "source_label": "Vedantu OMM · Algebra · Gif"
+    },
+    {
+      "file": "olympiad/L5/L5_ALG_nature_of_roots_and_iota.json",
+      "level": "L5",
+      "pillar": "ALG",
+      "topic_key": "nature_of_roots_and_iota",
+      "display_name": "Nature Of Roots And Iota",
+      "image_questions": 11,
+      "source_label": "Vedantu OMM · Algebra · Nature Of Roots And Iota"
+    },
+    {
+      "file": "olympiad/L5/L5_ALG_problems_on_quadratic_equations.json",
+      "level": "L5",
+      "pillar": "ALG",
+      "topic_key": "problems_on_quadratic_equations",
+      "display_name": "Problems On Quadratic Equations",
+      "image_questions": 3,
+      "source_label": "Vedantu OMM · Algebra · Problems On Quadratic Equations"
+    },
+    {
+      "file": "olympiad/L5/L5_ALG_quadratic_equations.json",
+      "level": "L5",
+      "pillar": "ALG",
+      "topic_key": "quadratic_equations",
+      "display_name": "Quadratic Equations",
+      "image_questions": 10,
+      "source_label": "Vedantu OMM · Algebra · Quadratic Equations"
+    },
+    {
+      "file": "olympiad/L5/L5_ALG_system_of_equations.json",
+      "level": "L5",
+      "pillar": "ALG",
+      "topic_key": "system_of_equations",
+      "display_name": "System Of Equations",
+      "image_questions": 8,
+      "source_label": "Vedantu OMM · Algebra · System Of Equations"
+    },
+    {
+      "file": "olympiad/L5/L5_ALG_telescoping.json",
+      "level": "L5",
+      "pillar": "ALG",
+      "topic_key": "telescoping",
+      "display_name": "Telescoping",
+      "image_questions": 4,
+      "source_label": "Vedantu OMM · Algebra · Telescoping"
+    },
+    {
+      "file": "olympiad/L5/L5_BMATH_basic_identities.json",
+      "level": "L5",
+      "pillar": "BMATH",
+      "topic_key": "basic_identities",
+      "display_name": "Basic Identities",
+      "image_questions": 10,
+      "source_label": "Vedantu OMM · Basic Mathematics · Basic Identities"
+    },
+    {
+      "file": "olympiad/L5/L5_BMATH_factorization.json",
+      "level": "L5",
+      "pillar": "BMATH",
+      "topic_key": "factorization",
+      "display_name": "Factorization",
+      "image_questions": 9,
+      "source_label": "Vedantu OMM · Basic Mathematics · Factorization"
+    },
+    {
+      "file": "olympiad/L5/L5_BMATH_inequalities_and_wavy_curve.json",
+      "level": "L5",
+      "pillar": "BMATH",
+      "topic_key": "inequalities_and_wavy_curve",
+      "display_name": "Inequalities And Wavy Curve",
+      "image_questions": 3,
+      "source_label": "Vedantu OMM · Basic Mathematics · Inequalities And Wavy Curve"
+    },
+    {
+      "file": "olympiad/L5/L5_COM_arrangements.json",
+      "level": "L5",
+      "pillar": "COM",
+      "topic_key": "arrangements",
+      "display_name": "Arrangements",
+      "image_questions": 13,
+      "source_label": "Vedantu OMM · Combinatorics · Arrangements"
+    },
+    {
+      "file": "olympiad/L5/L5_COM_beggar_coin.json",
+      "level": "L5",
+      "pillar": "COM",
+      "topic_key": "beggar_coin",
+      "display_name": "Beggar Coin",
+      "image_questions": 6,
+      "source_label": "Vedantu OMM · Combinatorics · Beggar Coin"
+    },
+    {
+      "file": "olympiad/L5/L5_COM_divisors.json",
+      "level": "L5",
+      "pillar": "COM",
+      "topic_key": "divisors",
+      "display_name": "Divisors",
+      "image_questions": 10,
+      "source_label": "Vedantu OMM · Combinatorics · Divisors"
+    },
+    {
+      "file": "olympiad/L5/L5_COM_gap_and_block_method.json",
+      "level": "L5",
+      "pillar": "COM",
+      "topic_key": "gap_and_block_method",
+      "display_name": "Gap And Block Method",
+      "image_questions": 9,
+      "source_label": "Vedantu OMM · Combinatorics · Gap And Block Method"
+    },
+    {
+      "file": "olympiad/L5/L5_COM_selections.json",
+      "level": "L5",
+      "pillar": "COM",
+      "topic_key": "selections",
+      "display_name": "Selections",
+      "image_questions": 12,
+      "source_label": "Vedantu OMM · Combinatorics · Selections"
+    },
+    {
+      "file": "olympiad/L5/L5_GEO_angle_bisector_theorem_pythagoras.json",
+      "level": "L5",
+      "pillar": "GEO",
+      "topic_key": "angle_bisector_theorem_pythagoras",
+      "display_name": "Angle Bisector Theorem Pythagoras",
+      "image_questions": 6,
+      "source_label": "Vedantu OMM · Geometry · Angle Bisector Theorem Pythagoras"
+    },
+    {
+      "file": "olympiad/L5/L5_GEO_angle_sense.json",
+      "level": "L5",
+      "pillar": "GEO",
+      "topic_key": "angle_sense",
+      "display_name": "Angle Sense",
+      "image_questions": 12,
+      "source_label": "Vedantu OMM · Geometry · Angle Sense"
+    },
+    {
+      "file": "olympiad/L5/L5_GEO_applications_congruent_triangles_triangle_inequalities.json",
+      "level": "L5",
+      "pillar": "GEO",
+      "topic_key": "applications_congruent_triangles_triangle_inequalities",
+      "display_name": "Applications Congruent Triangles Triangle Inequalities",
+      "image_questions": 2,
+      "source_label": "Vedantu OMM · Geometry · Applications Congruent Triangles Triangle Inequalities"
+    },
+    {
+      "file": "olympiad/L5/L5_GEO_areas.json",
+      "level": "L5",
+      "pillar": "GEO",
+      "topic_key": "areas",
+      "display_name": "Areas",
+      "image_questions": 8,
+      "source_label": "Vedantu OMM · Geometry · Areas"
+    },
+    {
+      "file": "olympiad/L5/L5_GEO_circles_and_related_theorems.json",
+      "level": "L5",
+      "pillar": "GEO",
+      "topic_key": "circles_and_related_theorems",
+      "display_name": "Circles And Related Theorems",
+      "image_questions": 10,
+      "source_label": "Vedantu OMM · Geometry · Circles And Related Theorems"
+    },
+    {
+      "file": "olympiad/L5/L5_GEO_congruent_triangles.json",
+      "level": "L5",
+      "pillar": "GEO",
+      "topic_key": "congruent_triangles",
+      "display_name": "Congruent Triangles",
+      "image_questions": 2,
+      "source_label": "Vedantu OMM · Geometry · Congruent Triangles"
+    },
+    {
+      "file": "olympiad/L5/L5_GEO_mpt_bpt.json",
+      "level": "L5",
+      "pillar": "GEO",
+      "topic_key": "mpt_bpt",
+      "display_name": "Mpt Bpt",
+      "image_questions": 6,
+      "source_label": "Vedantu OMM · Geometry · Mpt Bpt"
+    },
+    {
+      "file": "olympiad/L5/L5_GEO_points_of_triangles.json",
+      "level": "L5",
+      "pillar": "GEO",
+      "topic_key": "points_of_triangles",
+      "display_name": "Points Of Triangles",
+      "image_questions": 13,
+      "source_label": "Vedantu OMM · Geometry · Points Of Triangles"
+    },
+    {
+      "file": "olympiad/L5/L5_GEO_similar_triangles.json",
+      "level": "L5",
+      "pillar": "GEO",
+      "topic_key": "similar_triangles",
+      "display_name": "Similar Triangles",
+      "image_questions": 9,
+      "source_label": "Vedantu OMM · Geometry · Similar Triangles"
+    },
+    {
+      "file": "olympiad/L5/L5_GEO_tangents_and_power.json",
+      "level": "L5",
+      "pillar": "GEO",
+      "topic_key": "tangents_and_power",
+      "display_name": "Tangents And Power",
+      "image_questions": 14,
+      "source_label": "Vedantu OMM · Geometry · Tangents And Power"
+    },
+    {
+      "file": "olympiad/L5/L5_NT_congruence.json",
+      "level": "L5",
+      "pillar": "NT",
+      "topic_key": "congruence",
+      "display_name": "Congruence",
+      "image_questions": 6,
+      "source_label": "Vedantu OMM · Number Theory · Congruence"
+    },
+    {
+      "file": "olympiad/L5/L5_NT_congruence_based_problems.json",
+      "level": "L5",
+      "pillar": "NT",
+      "topic_key": "congruence_based_problems",
+      "display_name": "Congruence Based Problems",
+      "image_questions": 2,
+      "source_label": "Vedantu OMM · Number Theory · Congruence Based Problems"
+    },
+    {
+      "file": "olympiad/L5/L5_NT_diophantine_based_problems_and_theorems.json",
+      "level": "L5",
+      "pillar": "NT",
+      "topic_key": "diophantine_based_problems_and_theorems",
+      "display_name": "Diophantine Based Problems And Theorems",
+      "image_questions": 11,
+      "source_label": "Vedantu OMM · Number Theory · Diophantine Based Problems And Theorems"
+    },
+    {
+      "file": "olympiad/L5/L5_NT_diophantine_equation.json",
+      "level": "L5",
+      "pillar": "NT",
+      "topic_key": "diophantine_equation",
+      "display_name": "Diophantine Equation",
+      "image_questions": 8,
+      "source_label": "Vedantu OMM · Number Theory · Diophantine Equation"
+    },
+    {
+      "file": "olympiad/L5/L5_NT_divisibility_tests.json",
+      "level": "L5",
+      "pillar": "NT",
+      "topic_key": "divisibility_tests",
+      "display_name": "Divisibility Tests",
+      "image_questions": 10,
+      "source_label": "Vedantu OMM · Number Theory · Divisibility Tests"
+    },
+    {
+      "file": "olympiad/L5/L5_NT_problem_solving.json",
+      "level": "L5",
+      "pillar": "NT",
+      "topic_key": "problem_solving",
+      "display_name": "Problem Solving",
+      "image_questions": 10,
+      "source_label": "Vedantu OMM · Number Theory · Problem Solving"
+    },
+    {
+      "file": "olympiad/L5/L5_NT_theorems_and_base_system.json",
+      "level": "L5",
+      "pillar": "NT",
+      "topic_key": "theorems_and_base_system",
+      "display_name": "Theorems And Base System",
+      "image_questions": 15,
+      "source_label": "Vedantu OMM · Number Theory · Theorems And Base System"
+    },
+    {
+      "file": "olympiad/L5/L5_TRIG_areas_and_height_and_distance.json",
+      "level": "L5",
+      "pillar": "TRIG",
+      "topic_key": "areas_and_height_and_distance",
+      "display_name": "Areas And Height And Distance",
+      "image_questions": 8,
+      "source_label": "Vedantu OMM · Trigonometry · Areas And Height And Distance"
+    },
+    {
+      "file": "olympiad/L5/L5_TRIG_identities_and_standard_angles.json",
+      "level": "L5",
+      "pillar": "TRIG",
+      "topic_key": "identities_and_standard_angles",
+      "display_name": "Identities And Standard Angles",
+      "image_questions": 20,
+      "source_label": "Vedantu OMM · Trigonometry · Identities And Standard Angles"
+    },
+    {
+      "file": "olympiad/L5/L5_TRIG_trigonometry_big_picture.json",
+      "level": "L5",
+      "pillar": "TRIG",
+      "topic_key": "trigonometry_big_picture",
+      "display_name": "Trigonometry Big Picture",
+      "image_questions": 14,
+      "source_label": "Vedantu OMM · Trigonometry · Trigonometry Big Picture"
+    },
+    {
+      "file": "olympiad/L5/L5_TRIG_trigonometry_ratios.json",
+      "level": "L5",
+      "pillar": "TRIG",
+      "topic_key": "trigonometry_ratios",
+      "display_name": "Trigonometry Ratios",
+      "image_questions": 11,
+      "source_label": "Vedantu OMM · Trigonometry · Trigonometry Ratios"
+    },
+    {
+      "file": "olympiad/L6/L6_ALG_ap_gp_hp.json",
+      "level": "L6",
+      "pillar": "ALG",
+      "topic_key": "ap_gp_hp",
+      "display_name": "Ap Gp Hp",
+      "image_questions": 17,
+      "source_label": "Vedantu OMM · Algebra · Ap Gp Hp"
+    },
+    {
+      "file": "olympiad/L6/L6_ALG_complex_numbers.json",
+      "level": "L6",
+      "pillar": "ALG",
+      "topic_key": "complex_numbers",
+      "display_name": "Complex Numbers",
+      "image_questions": 12,
+      "source_label": "Vedantu OMM · Algebra · Complex Numbers"
+    },
+    {
+      "file": "olympiad/L6/L6_ALG_factor_and_remainder_theorem.json",
+      "level": "L6",
+      "pillar": "ALG",
+      "topic_key": "factor_and_remainder_theorem",
+      "display_name": "Factor And Remainder Theorem",
+      "image_questions": 4,
+      "source_label": "Vedantu OMM · Algebra · Factor And Remainder Theorem"
+    },
+    {
+      "file": "olympiad/L6/L6_ALG_functional_equations.json",
+      "level": "L6",
+      "pillar": "ALG",
+      "topic_key": "functional_equations",
+      "display_name": "Functional Equations",
+      "image_questions": 6,
+      "source_label": "Vedantu OMM · Algebra · Functional Equations"
+    },
+    {
+      "file": "olympiad/L6/L6_ALG_functions_intro.json",
+      "level": "L6",
+      "pillar": "ALG",
+      "topic_key": "functions_intro",
+      "display_name": "Functions Intro",
+      "image_questions": 4,
+      "source_label": "Vedantu OMM · Algebra · Functions Intro"
+    },
+    {
+      "file": "olympiad/L6/L6_ALG_gif_fractional_part.json",
+      "level": "L6",
+      "pillar": "ALG",
+      "topic_key": "gif_fractional_part",
+      "display_name": "Gif Fractional Part",
+      "image_questions": 7,
+      "source_label": "Vedantu OMM · Algebra · Gif Fractional Part"
+    },
+    {
+      "file": "olympiad/L6/L6_ALG_graph_analysis_and_common_roots.json",
+      "level": "L6",
+      "pillar": "ALG",
+      "topic_key": "graph_analysis_and_common_roots",
+      "display_name": "Graph Analysis And Common Roots",
+      "image_questions": 14,
+      "source_label": "Vedantu OMM · Algebra · Graph Analysis And Common Roots"
+    },
+    {
+      "file": "olympiad/L6/L6_ALG_logarithm.json",
+      "level": "L6",
+      "pillar": "ALG",
+      "topic_key": "logarithm",
+      "display_name": "Logarithm",
+      "image_questions": 8,
+      "source_label": "Vedantu OMM · Algebra · Logarithm"
+    },
+    {
+      "file": "olympiad/L6/L6_ALG_means_inequality_power_means_rms.json",
+      "level": "L6",
+      "pillar": "ALG",
+      "topic_key": "means_inequality_power_means_rms",
+      "display_name": "Means Inequality Power Means Rms",
+      "image_questions": 9,
+      "source_label": "Vedantu OMM · Algebra · Means Inequality Power Means Rms"
+    },
+    {
+      "file": "olympiad/L6/L6_ALG_miscellaneous_equations.json",
+      "level": "L6",
+      "pillar": "ALG",
+      "topic_key": "miscellaneous_equations",
+      "display_name": "Miscellaneous Equations",
+      "image_questions": 12,
+      "source_label": "Vedantu OMM · Algebra · Miscellaneous Equations"
+    },
+    {
+      "file": "olympiad/L6/L6_ALG_modulus.json",
+      "level": "L6",
+      "pillar": "ALG",
+      "topic_key": "modulus",
+      "display_name": "Modulus",
+      "image_questions": 12,
+      "source_label": "Vedantu OMM · Algebra · Modulus"
+    },
+    {
+      "file": "olympiad/L6/L6_ALG_other_sequences.json",
+      "level": "L6",
+      "pillar": "ALG",
+      "topic_key": "other_sequences",
+      "display_name": "Other Sequences",
+      "image_questions": 5,
+      "source_label": "Vedantu OMM · Algebra · Other Sequences"
+    },
+    {
+      "file": "olympiad/L6/L6_ALG_rational_and_integral_roots.json",
+      "level": "L6",
+      "pillar": "ALG",
+      "topic_key": "rational_and_integral_roots",
+      "display_name": "Rational And Integral Roots",
+      "image_questions": 5,
+      "source_label": "Vedantu OMM · Algebra · Rational And Integral Roots"
+    },
+    {
+      "file": "olympiad/L6/L6_ALG_roots_and_coefficients_nature_of_roots.json",
+      "level": "L6",
+      "pillar": "ALG",
+      "topic_key": "roots_and_coefficients_nature_of_roots",
+      "display_name": "Roots And Coefficients Nature Of Roots",
+      "image_questions": 4,
+      "source_label": "Vedantu OMM · Algebra · Roots And Coefficients Nature Of Roots"
+    },
+    {
+      "file": "olympiad/L6/L6_ALG_sigma_notation.json",
+      "level": "L6",
+      "pillar": "ALG",
+      "topic_key": "sigma_notation",
+      "display_name": "Sigma Notation",
+      "image_questions": 8,
+      "source_label": "Vedantu OMM · Algebra · Sigma Notation"
+    },
+    {
+      "file": "olympiad/L6/L6_ALG_telescoping.json",
+      "level": "L6",
+      "pillar": "ALG",
+      "topic_key": "telescoping",
+      "display_name": "Telescoping",
+      "image_questions": 3,
+      "source_label": "Vedantu OMM · Algebra · Telescoping"
+    },
+    {
+      "file": "olympiad/L6/L6_BMATH_binomial_theorem.json",
+      "level": "L6",
+      "pillar": "BMATH",
+      "topic_key": "binomial_theorem",
+      "display_name": "Binomial Theorem",
+      "image_questions": 7,
+      "source_label": "Vedantu OMM · Basic Mathematics · Binomial Theorem"
+    },
+    {
+      "file": "olympiad/L6/L6_BMATH_identities.json",
+      "level": "L6",
+      "pillar": "BMATH",
+      "topic_key": "identities",
+      "display_name": "Identities",
+      "image_questions": 8,
+      "source_label": "Vedantu OMM · Basic Mathematics · Identities"
+    },
+    {
+      "file": "olympiad/L6/L6_BMATH_inequations_and_wavy_curve.json",
+      "level": "L6",
+      "pillar": "BMATH",
+      "topic_key": "inequations_and_wavy_curve",
+      "display_name": "Inequations And Wavy Curve",
+      "image_questions": 9,
+      "source_label": "Vedantu OMM · Basic Mathematics · Inequations And Wavy Curve"
+    },
+    {
+      "file": "olympiad/L6/L6_COM_arrangement_based_problems.json",
+      "level": "L6",
+      "pillar": "COM",
+      "topic_key": "arrangement_based_problems",
+      "display_name": "Arrangement Based Problems",
+      "image_questions": 12,
+      "source_label": "Vedantu OMM · Combinatorics · Arrangement Based Problems"
+    },
+    {
+      "file": "olympiad/L6/L6_COM_beggar_coin.json",
+      "level": "L6",
+      "pillar": "COM",
+      "topic_key": "beggar_coin",
+      "display_name": "Beggar Coin",
+      "image_questions": 12,
+      "source_label": "Vedantu OMM · Combinatorics · Beggar Coin"
+    },
+    {
+      "file": "olympiad/L6/L6_COM_distribution_of_distinct_objects_grouping.json",
+      "level": "L6",
+      "pillar": "COM",
+      "topic_key": "distribution_of_distinct_objects_grouping",
+      "display_name": "Distribution Of Distinct Objects Grouping",
+      "image_questions": 9,
+      "source_label": "Vedantu OMM · Combinatorics · Distribution Of Distinct Objects Grouping"
+    },
+    {
+      "file": "olympiad/L6/L6_COM_divisors.json",
+      "level": "L6",
+      "pillar": "COM",
+      "topic_key": "divisors",
+      "display_name": "Divisors",
+      "image_questions": 13,
+      "source_label": "Vedantu OMM · Combinatorics · Divisors"
+    },
+    {
+      "file": "olympiad/L6/L6_COM_generating_functions.json",
+      "level": "L6",
+      "pillar": "COM",
+      "topic_key": "generating_functions",
+      "display_name": "Generating Functions",
+      "image_questions": 4,
+      "source_label": "Vedantu OMM · Combinatorics · Generating Functions"
+    },
+    {
+      "file": "olympiad/L6/L6_COM_ncr.json",
+      "level": "L6",
+      "pillar": "COM",
+      "topic_key": "ncr",
+      "display_name": "Ncr",
+      "image_questions": 11,
+      "source_label": "Vedantu OMM · Combinatorics · Ncr"
+    },
+    {
+      "file": "olympiad/L6/L6_COM_objects_in_circles.json",
+      "level": "L6",
+      "pillar": "COM",
+      "topic_key": "objects_in_circles",
+      "display_name": "Objects In Circles",
+      "image_questions": 6,
+      "source_label": "Vedantu OMM · Combinatorics · Objects In Circles"
+    },
+    {
+      "file": "olympiad/L6/L6_COM_problem_solving_combi.json",
+      "level": "L6",
+      "pillar": "COM",
+      "topic_key": "problem_solving_combi",
+      "display_name": "Problem Solving Combi",
+      "image_questions": 7,
+      "source_label": "Vedantu OMM · Combinatorics · Problem Solving Combi"
+    },
+    {
+      "file": "olympiad/L6/L6_COM_standard_concepts_and_problems.json",
+      "level": "L6",
+      "pillar": "COM",
+      "topic_key": "standard_concepts_and_problems",
+      "display_name": "Standard Concepts And Problems",
+      "image_questions": 10,
+      "source_label": "Vedantu OMM · Combinatorics · Standard Concepts And Problems"
+    },
+    {
+      "file": "olympiad/L6/L6_GEO_centroid_and_orthocenter.json",
+      "level": "L6",
+      "pillar": "GEO",
+      "topic_key": "centroid_and_orthocenter",
+      "display_name": "Centroid And Orthocenter",
+      "image_questions": 7,
+      "source_label": "Vedantu OMM · Geometry · Centroid And Orthocenter"
+    },
+    {
+      "file": "olympiad/L6/L6_GEO_cevas_and_menelaus.json",
+      "level": "L6",
+      "pillar": "GEO",
+      "topic_key": "cevas_and_menelaus",
+      "display_name": "Cevas And Menelaus",
+      "image_questions": 5,
+      "source_label": "Vedantu OMM · Geometry · Cevas And Menelaus"
+    },
+    {
+      "file": "olympiad/L6/L6_GEO_circles_and_properties.json",
+      "level": "L6",
+      "pillar": "GEO",
+      "topic_key": "circles_and_properties",
+      "display_name": "Circles And Properties",
+      "image_questions": 5,
+      "source_label": "Vedantu OMM · Geometry · Circles And Properties"
+    },
+    {
+      "file": "olympiad/L6/L6_GEO_compound_multiple_angles.json",
+      "level": "L6",
+      "pillar": "GEO",
+      "topic_key": "compound_multiple_angles",
+      "display_name": "Compound Multiple Angles",
+      "image_questions": 5,
+      "source_label": "Vedantu OMM · Geometry · Compound Multiple Angles"
+    },
+    {
+      "file": "olympiad/L6/L6_GEO_concept_of_rotation.json",
+      "level": "L6",
+      "pillar": "GEO",
+      "topic_key": "concept_of_rotation",
+      "display_name": "Concept Of Rotation",
+      "image_questions": 2,
+      "source_label": "Vedantu OMM · Geometry · Concept Of Rotation"
+    },
+    {
+      "file": "olympiad/L6/L6_GEO_congruent_triangles.json",
+      "level": "L6",
+      "pillar": "GEO",
+      "topic_key": "congruent_triangles",
+      "display_name": "Congruent Triangles",
+      "image_questions": 3,
+      "source_label": "Vedantu OMM · Geometry · Congruent Triangles"
+    },
+    {
+      "file": "olympiad/L6/L6_GEO_problem_solving_geo.json",
+      "level": "L6",
+      "pillar": "GEO",
+      "topic_key": "problem_solving_geo",
+      "display_name": "Problem Solving Geo",
+      "image_questions": 7,
+      "source_label": "Vedantu OMM · Geometry · Problem Solving Geo"
+    },
+    {
+      "file": "olympiad/L6/L6_GEO_problems_on_angle_chasing.json",
+      "level": "L6",
+      "pillar": "GEO",
+      "topic_key": "problems_on_angle_chasing",
+      "display_name": "Problems On Angle Chasing",
+      "image_questions": 7,
+      "source_label": "Vedantu OMM · Geometry · Problems On Angle Chasing"
+    },
+    {
+      "file": "olympiad/L6/L6_GEO_problems_on_areas.json",
+      "level": "L6",
+      "pillar": "GEO",
+      "topic_key": "problems_on_areas",
+      "display_name": "Problems On Areas",
+      "image_questions": 9,
+      "source_label": "Vedantu OMM · Geometry · Problems On Areas"
+    },
+    {
+      "file": "olympiad/L6/L6_GEO_ptolemy_and_tangents.json",
+      "level": "L6",
+      "pillar": "GEO",
+      "topic_key": "ptolemy_and_tangents",
+      "display_name": "Ptolemy And Tangents",
+      "image_questions": 5,
+      "source_label": "Vedantu OMM · Geometry · Ptolemy And Tangents"
+    },
+    {
+      "file": "olympiad/L6/L6_GEO_pythagoras_appolonius_stewart.json",
+      "level": "L6",
+      "pillar": "GEO",
+      "topic_key": "pythagoras_appolonius_stewart",
+      "display_name": "Pythagoras Appolonius Stewart",
+      "image_questions": 2,
+      "source_label": "Vedantu OMM · Geometry · Pythagoras Appolonius Stewart"
+    },
+    {
+      "file": "olympiad/L6/L6_GEO_quadrilaterals_cyclic_quadrilaterals.json",
+      "level": "L6",
+      "pillar": "GEO",
+      "topic_key": "quadrilaterals_cyclic_quadrilaterals",
+      "display_name": "Quadrilaterals Cyclic Quadrilaterals",
+      "image_questions": 5,
+      "source_label": "Vedantu OMM · Geometry · Quadrilaterals Cyclic Quadrilaterals"
+    },
+    {
+      "file": "olympiad/L6/L6_GEO_similar_triangles.json",
+      "level": "L6",
+      "pillar": "GEO",
+      "topic_key": "similar_triangles",
+      "display_name": "Similar Triangles",
+      "image_questions": 5,
+      "source_label": "Vedantu OMM · Geometry · Similar Triangles"
+    },
+    {
+      "file": "olympiad/L6/L6_GEO_sine_and_cosine_rule.json",
+      "level": "L6",
+      "pillar": "GEO",
+      "topic_key": "sine_and_cosine_rule",
+      "display_name": "Sine And Cosine Rule",
+      "image_questions": 4,
+      "source_label": "Vedantu OMM · Geometry · Sine And Cosine Rule"
+    },
+    {
+      "file": "olympiad/L6/L6_GEO_triangle_inequalities_mpt_bpt.json",
+      "level": "L6",
+      "pillar": "GEO",
+      "topic_key": "triangle_inequalities_mpt_bpt",
+      "display_name": "Triangle Inequalities Mpt Bpt",
+      "image_questions": 4,
+      "source_label": "Vedantu OMM · Geometry · Triangle Inequalities Mpt Bpt"
+    },
+    {
+      "file": "olympiad/L6/L6_GEO_trigonometry_introduction.json",
+      "level": "L6",
+      "pillar": "GEO",
+      "topic_key": "trigonometry_introduction",
+      "display_name": "Trigonometry Introduction",
+      "image_questions": 11,
+      "source_label": "Vedantu OMM · Geometry · Trigonometry Introduction"
+    },
+    {
+      "file": "olympiad/L6/L6_NT_base_system.json",
+      "level": "L6",
+      "pillar": "NT",
+      "topic_key": "base_system",
+      "display_name": "Base System",
+      "image_questions": 14,
+      "source_label": "Vedantu OMM · Number Theory · Base System"
+    },
+    {
+      "file": "olympiad/L6/L6_NT_congruence.json",
+      "level": "L6",
+      "pillar": "NT",
+      "topic_key": "congruence",
+      "display_name": "Congruence",
+      "image_questions": 3,
+      "source_label": "Vedantu OMM · Number Theory · Congruence"
+    },
+    {
+      "file": "olympiad/L6/L6_NT_diophantine_equation.json",
+      "level": "L6",
+      "pillar": "NT",
+      "topic_key": "diophantine_equation",
+      "display_name": "Diophantine Equation",
+      "image_questions": 3,
+      "source_label": "Vedantu OMM · Number Theory · Diophantine Equation"
+    },
+    {
+      "file": "olympiad/L6/L6_NT_fermat_and_euler_theorem.json",
+      "level": "L6",
+      "pillar": "NT",
+      "topic_key": "fermat_and_euler_theorem",
+      "display_name": "Fermat And Euler Theorem",
+      "image_questions": 2,
+      "source_label": "Vedantu OMM · Number Theory · Fermat And Euler Theorem"
+    },
+    {
+      "file": "olympiad/L6/L6_NT_perfect_squares_primes.json",
+      "level": "L6",
+      "pillar": "NT",
+      "topic_key": "perfect_squares_primes",
+      "display_name": "Perfect Squares Primes",
+      "image_questions": 4,
+      "source_label": "Vedantu OMM · Number Theory · Perfect Squares Primes"
+    },
+    {
+      "file": "olympiad/L6/L6_NT_wilson_and_crt.json",
+      "level": "L6",
+      "pillar": "NT",
+      "topic_key": "wilson_and_crt",
+      "display_name": "Wilson And Crt",
+      "image_questions": 10,
+      "source_label": "Vedantu OMM · Number Theory · Wilson And Crt"
+    }
+  ]
+}

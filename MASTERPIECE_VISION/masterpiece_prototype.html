@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Kiwi — The Masterpiece Prototype</title>
+<style>
+:root{
+  --orange:#FF6F00; --orange-d:#E25E00; --orange-l:#FFF3E8;
+  --ink:#1E1633; --ink2:#2A2140; --paper:#FFFFFF; --bg:#F3EEF7;
+  --text:#231C30; --mute:#7A7290; --line:#ECE6F3;
+  --teal:#12B5A5; --berry:#FF5470; --gold:#FFB12B; --green:#37B86B; --violet:#7A5CFF;
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;background:linear-gradient(160deg,#efe9f6,#f7f1ee 60%);color:var(--text);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;}
+.wrap{max-width:1180px;margin:0 auto;padding:30px 20px 60px;display:flex;gap:38px;align-items:flex-start;flex-wrap:wrap;justify-content:center}
+.intro{flex:1 1 330px;max-width:430px;padding-top:18px}
+.eyebrow{display:inline-block;font-size:12px;font-weight:800;letter-spacing:2px;color:var(--orange);
+  background:var(--orange-l);padding:6px 12px;border-radius:30px;text-transform:uppercase}
+.intro h1{font-size:40px;line-height:1.08;margin:18px 0 10px;letter-spacing:-.5px}
+.intro h1 span{color:var(--orange)}
+.intro p{font-size:17px;line-height:1.6;color:#4b4360;margin:0 0 18px}
+.pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.pill{font-size:12.5px;font-weight:700;color:#5a5270;background:#fff;border:1px solid var(--line);
+  padding:8px 13px;border-radius:30px;box-shadow:0 2px 8px rgba(40,20,60,.04)}
+.pill b{color:var(--ink)}
+.tipbar{margin-top:22px;font-size:13.5px;color:var(--mute);display:flex;align-items:center;gap:8px}
+.tipbar .dot{width:9px;height:9px;border-radius:50%;background:var(--orange);animation:pulse 1.6s infinite}
+@keyframes pulse{0%,100%{opacity:.4}50%{opacity:1}}
+
+/* phone */
+.stage{flex:0 0 auto;display:flex;flex-direction:column;align-items:center;gap:14px}
+.phone{width:390px;height:820px;background:var(--ink);border-radius:46px;padding:13px;
+  box-shadow:0 40px 80px -24px rgba(30,12,48,.55), 0 0 0 2px rgba(255,255,255,.04) inset;position:relative}
+.notch{position:absolute;top:13px;left:50%;transform:translateX(-50%);width:140px;height:26px;background:var(--ink);border-radius:0 0 18px 18px;z-index:30}
+.screen{position:absolute;inset:13px;border-radius:34px;overflow:hidden;background:var(--paper);display:flex;flex-direction:column}
+.scrollarea{flex:1;overflow-y:auto;-webkit-overflow-scrolling:touch}
+.scrollarea::-webkit-scrollbar{width:0}
+
+/* top bar */
+.tbar{padding:30px 18px 12px;display:flex;align-items:center;justify-content:space-between;background:var(--paper)}
+.tbar .hi{font-size:13px;color:var(--mute)}
+.tbar .hi b{display:block;font-size:19px;color:var(--ink);margin-top:1px}
+.coins{display:flex;gap:6px;align-items:center;font-weight:800;font-size:14px;color:var(--orange-d);background:var(--orange-l);padding:7px 12px;border-radius:30px}
+
+.view{display:none;padding:4px 16px 24px;animation:fade .25s ease}
+.view.on{display:block}
+@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+
+.kick{font-size:12px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:var(--orange);margin:14px 2px 8px}
+.h2{font-size:23px;font-weight:800;letter-spacing:-.3px;margin:2px 2px 12px;color:var(--ink)}
+
+.card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:18px;margin-bottom:14px;
+  box-shadow:0 8px 22px -14px rgba(40,20,60,.18)}
+.card.dark{background:linear-gradient(150deg,var(--ink),#34284f);border:none;color:#fff}
+.card.wonder{background:linear-gradient(150deg,#2A2140,#3a2a5e);border:none;color:#fff}
+.badge{width:46px;height:46px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:24px}
+
+.bigq{font-size:21px;line-height:1.45;font-weight:700;margin:8px 0 6px}
+.muted{color:var(--mute);font-size:14px;line-height:1.5}
+.figbox{background:#fff;border-radius:16px;padding:16px;margin:14px 0;display:flex;justify-content:center;border:1px solid var(--line)}
+.btn{display:block;width:100%;border:none;border-radius:16px;padding:15px;font-size:15.5px;font-weight:800;
+  cursor:pointer;font-family:inherit;transition:transform .08s, filter .15s}
+.btn:active{transform:scale(.98)}
+.btn.primary{background:var(--orange);color:#fff;box-shadow:0 10px 22px -10px rgba(255,111,0,.7)}
+.btn.ghost{background:#fff;color:var(--ink);border:1.5px solid var(--line)}
+.btn.soft{background:var(--orange-l);color:var(--orange-d)}
+.btn.teal{background:var(--teal);color:#fff;box-shadow:0 10px 22px -10px rgba(18,181,165,.6)}
+.btn.dark{background:var(--ink);color:#fff}
+.btn.sm{padding:11px;font-size:13.5px;border-radius:13px}
+.row{display:flex;gap:10px}
+.row .btn{margin:0}
+
+/* hint ladder */
+.hint{background:var(--orange-l);border-left:0;border-radius:14px;padding:13px 15px;margin:10px 0;font-size:14.5px;line-height:1.5;
+  display:none;animation:fade .3s}
+.hint.show{display:block}
+.hint .lab{font-size:11px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:var(--orange-d);display:block;margin-bottom:4px}
+.hint.h2c{background:#eafaf7;color:#0c5a52}
+.hint.h2c .lab{color:var(--teal)}
+.hint.h3c{background:#f1edff;color:#3a2a72}
+.hint.h3c .lab{color:var(--violet)}
+
+.ansrow{display:flex;gap:10px;margin:14px 0 4px}
+.ansrow input{flex:1;border:1.5px solid var(--line);border-radius:14px;padding:14px;font-size:18px;font-weight:800;text-align:center;font-family:inherit;color:var(--ink)}
+.ansrow input:focus{outline:none;border-color:var(--orange)}
+.correct{background:#eafaf2;color:var(--green);border-radius:14px;padding:12px;text-align:center;font-weight:800;margin-top:10px;display:none}
+.correct.show{display:block;animation:fade .3s}
+
+/* solution tabs */
+.soltabs{display:flex;gap:7px;margin:6px 0 10px;overflow-x:auto;padding-bottom:2px}
+.soltab{flex:0 0 auto;font-size:12.5px;font-weight:800;padding:9px 13px;border-radius:30px;background:#f3eef8;color:#5a5270;border:none;cursor:pointer;font-family:inherit}
+.soltab.on{background:var(--ink);color:#fff}
+.solbody{font-size:14.5px;line-height:1.55;color:#3a3350}
+.solbody .tag{display:inline-block;font-size:11px;font-weight:800;color:var(--orange-d);background:var(--orange-l);padding:3px 9px;border-radius:20px;margin-bottom:8px}
+.solbody.community .tag{color:var(--teal);background:#eafaf7}
+
+/* community */
+.thread{display:flex;gap:11px;padding:13px 0;border-bottom:1px solid var(--line)}
+.av{width:38px;height:38px;border-radius:50%;flex:0 0 auto;display:flex;align-items:center;justify-content:center;font-size:18px;color:#fff;font-weight:800}
+.thread .who{font-size:13px;font-weight:800;color:var(--ink)}
+.thread .who small{color:var(--mute);font-weight:600;margin-left:6px}
+.thread .txt{font-size:13.5px;color:#473f5e;line-height:1.45;margin:3px 0 7px}
+.up{display:inline-flex;align-items:center;gap:5px;font-size:12.5px;font-weight:800;color:var(--orange-d);background:var(--orange-l);padding:5px 11px;border-radius:20px;cursor:pointer;border:none;font-family:inherit}
+.up.voted{background:var(--orange);color:#fff}
+.safe{display:flex;align-items:center;gap:8px;font-size:12px;color:#0c7a4a;background:#eafaf2;border-radius:12px;padding:10px 12px;margin:4px 0 12px;font-weight:700}
+
+/* path */
+.mountain{position:relative;padding:8px 0 0}
+.node{display:flex;align-items:center;gap:14px;padding:10px 0;position:relative}
+.node .dot{width:44px;height:44px;border-radius:50%;flex:0 0 auto;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:15px;color:#fff;z-index:2;box-shadow:0 6px 14px -6px rgba(40,20,60,.4)}
+.node .line{position:absolute;left:21px;top:40px;width:2px;height:100%;background:var(--line);z-index:1}
+.node:last-child .line{display:none}
+.node .info{flex:1}
+.node .info b{font-size:15.5px;color:var(--ink)}
+.node .info span{display:block;font-size:12.5px;color:var(--mute);margin-top:1px}
+.node.done .dot{background:var(--green)}
+.node.cur .dot{background:var(--orange);box-shadow:0 0 0 6px var(--orange-l)}
+.node.cur .info b{color:var(--orange-d)}
+.node.lock .dot{background:#cfc8da}
+.node.lock .info b{color:#a79fbb}
+
+/* parent */
+.metric{display:flex;align-items:center;justify-content:space-between;padding:13px 0;border-bottom:1px solid var(--line)}
+.metric .ml{font-size:14px;color:#473f5e;font-weight:600}
+.metric .mv{font-size:16px;font-weight:800;color:var(--ink)}
+.gauge{height:9px;background:#efeaf6;border-radius:10px;overflow:hidden;margin-top:8px}
+.gauge i{display:block;height:100%;background:linear-gradient(90deg,var(--orange),var(--gold));border-radius:10px}
+
+/* bottom nav */
+.nav{display:flex;background:var(--paper);border-top:1px solid var(--line);padding:8px 6px 10px}
+.nav button{flex:1;background:none;border:none;display:flex;flex-direction:column;align-items:center;gap:3px;cursor:pointer;font-family:inherit;padding:4px 0;color:var(--mute)}
+.nav button .ico{font-size:21px;line-height:1}
+.nav button .lb{font-size:10.5px;font-weight:700}
+.nav button.on{color:var(--orange)}
+
+/* mastered modal */
+.modal{position:absolute;inset:13px;border-radius:34px;background:rgba(30,12,48,.55);display:none;align-items:flex-end;z-index:40}
+.modal.on{display:flex;animation:fade .25s}
+.sheet{background:#fff;width:100%;border-radius:30px 30px 34px 34px;padding:22px 18px 20px;animation:up .3s}
+@keyframes up{from{transform:translateY(40px);opacity:.6}to{transform:none;opacity:1}}
+.sheet .celebrate{text-align:center;margin-bottom:6px}
+.sheet .celebrate .em{font-size:46px}
+.sheet h3{text-align:center;font-size:22px;margin:6px 0 2px;color:var(--ink)}
+.sheet .sub{text-align:center;color:var(--mute);font-size:14px;margin-bottom:16px;line-height:1.45}
+.fork{display:flex;align-items:center;gap:13px;padding:13px;border:1px solid var(--line);border-radius:16px;margin-bottom:9px;cursor:pointer}
+.fork:active{background:#faf7fd}
+.fork .fi{width:42px;height:42px;border-radius:12px;flex:0 0 auto;display:flex;align-items:center;justify-content:center;font-size:21px}
+.fork .ft b{font-size:14.5px;color:var(--ink);display:block}
+.fork .ft span{font-size:12.5px;color:var(--mute)}
+.closex{position:absolute;top:18px;right:20px;font-size:24px;color:#fff;cursor:pointer;z-index:50;opacity:.85}
+
+.legend{font-size:12px;color:var(--mute);text-align:center;max-width:390px;line-height:1.5}
+.tapnote{font-size:11px;color:#b6aec8;text-align:center;margin-top:-4px}
+@media(max-width:560px){.phone{transform:scale(.92);transform-origin:top center}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="intro">
+    <span class="eyebrow">The Masterpiece · interactive</span>
+    <h1>Where a stuck kid is <span>never alone</span>, and a hard problem is <span>never a dead end</span>.</h1>
+    <p>Not a drill app — a <b>thinking</b> app. Tap through the two experiences that carry the whole vision: <b>Problem of the Day</b> (fall in love) and <b>The Thinking Gym</b> (get deep), plus the Path, the kid-safe Commons, and the moment a child <i>masters</i> a topic.</p>
+    <div class="pills">
+      <span class="pill">🌅 <b>Wonder</b> — fall in love</span>
+      <span class="pill">🏋️ <b>Depth</b> — hint ladder + many solutions</span>
+      <span class="pill">👥 <b>Belong</b> — safe community</span>
+      <span class="pill">🏔️ <b>Path</b> — school → IMO</span>
+      <span class="pill">✅ <b>Correct</b> — the moat</span>
+    </div>
+    <div class="tipbar"><span class="dot"></span> Tap the tabs at the bottom of the phone — and the buttons inside.</div>
+  </div>
+
+  <div class="stage">
+    <div class="phone">
+      <div class="notch"></div>
+      <div class="screen">
+
+        <div class="tbar">
+          <div class="hi">Good morning,<b>Aarohi · Level 4</b></div>
+          <div class="coins">⭐ 1,240</div>
+        </div>
+
+        <div class="scrollarea">
+
+          <!-- ============ TODAY / WONDER ============ -->
+          <div class="view on" id="v-today">
+            <div class="kick">Today · a moment of wonder</div>
+            <div class="h2">Problem of the Day</div>
+            <div class="card wonder">
+              <div class="badge" style="background:rgba(255,255,255,.14)">✨</div>
+              <div class="bigq">Pick <b>any</b> 3-digit number. Reverse it, subtract the smaller from the larger. Do it again with the answer's reverse… you <i>always</i> land on <b>1089</b>.</div>
+              <div class="muted" style="color:#cfc6e6">Why on earth would that be true? Take a guess — then let's find out.</div>
+              <button class="btn soft" style="margin-top:14px" onclick="document.getElementById('why').classList.toggle('show')">🔮 Reveal the magic</button>
+              <div class="hint h3c" id="why" style="margin-top:12px">
+                <span class="lab">Why it's beautiful</span>
+                It's place value in disguise: the subtraction is always a multiple of 99, and the second step forces the middle to 9 and the ends to sum to 9. The "trick" is real number theory wearing a cape. 🦸
+              </div>
+            </div>
+            <div class="row">
+              <button class="btn ghost sm" onclick="go('commons')">💬 Discuss (37)</button>
+              <button class="btn ghost sm" onclick="go('gym')">🏋️ Today's hard one →</button>
+            </div>
+            <div class="kick" style="margin-top:18px">Because you love patterns</div>
+            <div class="card">
+              <div style="display:flex;gap:13px;align-items:center">
+                <div class="badge" style="background:#eafaf7">🧩</div>
+                <div><b style="font-size:15px">The Visual Playground</b><div class="muted">Drag, build, and discover — maths you can touch.</div></div>
+              </div>
+            </div>
+            <div class="tapnote">↑ a daily "whoa" hooks any kid — gifted or not</div>
+          </div>
+
+          <!-- ============ THINKING GYM ============ -->
+          <div class="view" id="v-gym">
+            <div class="kick">The Thinking Gym · one worthy problem</div>
+            <div class="h2">Sit with it.</div>
+            <div class="card">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
+                <span style="font-size:12px;font-weight:800;color:var(--berry);background:#fde8ec;padding:4px 10px;border-radius:20px">★★★☆ Challenge</span>
+                <span class="muted">Number Theory</span>
+              </div>
+              <div class="bigq">Find the smallest positive integer <b>n</b> such that <b>n!</b> ends in exactly <b>10</b> zeros.</div>
+              <div class="ansrow">
+                <input id="gymans" placeholder="n = ?" inputmode="numeric"/>
+                <button class="btn primary" style="width:auto;padding-left:20px;padding-right:20px" onclick="checkGym()">Check</button>
+              </div>
+              <div class="correct" id="gymok">🎉 Yes — 45! ends in exactly 10 zeros. Beautifully done.</div>
+
+              <button class="btn ghost" style="margin-top:12px" onclick="hintStep()">💡 I'm stuck — nudge me, don't spoil it</button>
+              <div class="hint" id="h1"><span class="lab">Nudge</span> Zeros at the end of a number come from factors of 10 — and every 10 is a 2 paired with a 5. Which is rarer in a factorial, 2s or 5s?</div>
+              <div class="hint h2c" id="h2"><span class="lab">Strategy</span> So the number of trailing zeros = the number of 5s in n!. Count them: ⌊n/5⌋ + ⌊n/25⌋ + … Now you're hunting the smallest n where that count hits 10.</div>
+              <div class="hint h3c" id="h3"><span class="lab">A worked step</span> Try n = 45: ⌊45/5⌋ = 9, ⌊45/25⌋ = 1 → 9 + 1 = 10. And 44 gives only 9. So the smallest n is… (you've got it). </div>
+
+              <button class="btn teal" style="margin-top:14px" onclick="go('solutions'); event.stopPropagation()">✨ See how 3 people solved it</button>
+            </div>
+            <div class="tapnote">↑ being stuck is safe — a ladder, never a spoiler, never a dead end</div>
+          </div>
+
+          <!-- ============ MULTIPLE SOLUTIONS ============ -->
+          <div class="view" id="v-solutions">
+            <div class="kick">The soul of Olympiad · many beautiful paths</div>
+            <div class="h2">Three ways to see it.</div>
+            <div class="soltabs">
+              <button class="soltab on" onclick="solTab(0,this)">Counting 5s</button>
+              <button class="soltab" onclick="solTab(1,this)">Legendre</button>
+              <button class="soltab" onclick="solTab(2,this)">By a peer</button>
+            </div>
+            <div class="card">
+              <div class="solbody" id="sol0">
+                <span class="tag">Elementary · clearest</span>
+                Trailing zeros come from factors of 5 (2s are plentiful). Count multiples of 5 up to n, then add an extra for each 25, 125… For 10 zeros: 45 gives 9 + 1 = 10; 44 gives only 9. <b>n = 45.</b>
+              </div>
+              <div class="solbody" id="sol1" style="display:none">
+                <span class="tag">Slick · Legendre's formula</span>
+                The exponent of a prime p in n! is (n − s)/(p−1), where s is the digit-sum of n in base p. Setting p = 5 and solving for 10 lands you on the same 45 — fewer steps, more machinery.
+              </div>
+              <div class="solbody community" id="sol2" style="display:none">
+                <span class="tag">💬 Community · by Vihaan, L4</span>
+                "I just listed where a new zero appears: 5,10,15,20 (×1 each)… 25 adds two! So zeros go 1,2,3,4,6,7,8,9,10 at 5,10,15,20,25,30,35,40,45. Notice it skips 5 zeros — there's no n with exactly 5! Cool, right?" <b>— 41 ▲</b>
+              </div>
+            </div>
+            <div class="card" style="background:var(--orange-l);border:none">
+              <b style="font-size:15px;color:var(--ink)">Now teach it back 🧠</b>
+              <div class="muted" style="margin:5px 0 10px;color:#6a4a2a">Explaining is how it sticks — and how you help the next kid.</div>
+              <button class="btn primary" onclick="go('commons')">✍️ Post my approach</button>
+            </div>
+          </div>
+
+          <!-- ============ COMMONS ============ -->
+          <div class="view" id="v-commons">
+            <div class="kick">The Commons · grow together</div>
+            <div class="h2">Show your approach.</div>
+            <div class="safe">🛡️ Safe space: moderated, age-gated, no private messages. Discussion is always about the maths.</div>
+            <div class="card" style="background:linear-gradient(150deg,#34284f,#4a3570);border:none;color:#fff;margin-bottom:16px">
+              <div style="font-size:12px;font-weight:800;letter-spacing:1px;color:#ffce8c">🤝 SOLVE-TOGETHER · this week</div>
+              <div class="bigq" style="font-size:17px;margin-top:6px">A 7×7 board, remove two opposite corners — can 24 dominoes cover it?</div>
+              <div class="muted" style="color:#d7cdee">112 young mathematicians are chipping away. Add your idea.</div>
+            </div>
+            <div class="kick" style="margin-top:4px">"Smallest n with 10 zeros" · 3 approaches</div>
+            <div class="thread">
+              <div class="av" style="background:var(--violet)">V</div>
+              <div>
+                <div class="who">Vihaan <small>Level 4 · 🔥 21-day streak</small></div>
+                <div class="txt">Listed where each new zero appears — 25 adds two at once, so the count skips 5. Answer 45.</div>
+                <button class="up" onclick="vote(this)">▲ 41</button>
+              </div>
+            </div>
+            <div class="thread">
+              <div class="av" style="background:var(--teal)">M</div>
+              <div>
+                <div class="who">Meera <small>Level 5 · mentor-in-training</small></div>
+                <div class="txt">Same answer with Legendre's formula — here's the one-line version for when the number is huge…</div>
+                <button class="up" onclick="vote(this)">▲ 28</button>
+              </div>
+            </div>
+            <div class="thread" style="border:none">
+              <div class="av" style="background:var(--gold)">🦉</div>
+              <div>
+                <div class="who">Solution of the week <small>by an INMO medalist</small></div>
+                <div class="txt">A beautifully annotated walkthrough — why 2s are never the bottleneck. Watch ▶</div>
+                <button class="up" onclick="vote(this)">▲ 96</button>
+              </div>
+            </div>
+            <div class="tapnote">↑ the AoPS magic — kids teaching kids — but safe for under-13s</div>
+          </div>
+
+          <!-- ============ PATH ============ -->
+          <div class="view" id="v-path">
+            <div class="kick">Your climb</div>
+            <div class="h2">The Path to the summit.</div>
+            <div class="card">
+              <div class="mountain">
+                <div class="node done"><div class="dot">✓</div><div class="line"></div><div class="info"><b>School maths</b><span>fluency — mastered</span></div></div>
+                <div class="node done"><div class="dot">✓</div><div class="line"></div><div class="info"><b>Levels 1–3</b><span>foundations — mastered</span></div></div>
+                <div class="node cur"><div class="dot">4</div><div class="line"></div><div class="info"><b>Level 4 · You are here</b><span>Number Theory 80% · 2 topics to go</span></div></div>
+                <div class="node lock"><div class="dot">5</div><div class="line"></div><div class="info"><b>IOQM track</b><span>unlocks at Level 4 mastery</span></div></div>
+                <div class="node lock"><div class="dot">🇮🇳</div><div class="line"></div><div class="info"><b>RMO → INMO</b><span>the national stage</span></div></div>
+                <div class="node lock"><div class="dot">🌍</div><div class="info"><b>IMO</b><span>the summit</span></div></div>
+              </div>
+            </div>
+            <button class="btn dark" onclick="openMaster()">▶ Preview: I just finished a topic…</button>
+            <div class="tapnote">↑ a real mountain to climb — not an endless feed of drills</div>
+          </div>
+
+          <!-- ============ ME / PARENT ============ -->
+          <div class="view" id="v-me">
+            <div class="kick">For a parent · plain language, no jargon</div>
+            <div class="h2">Aarohi is thriving.</div>
+            <div class="card">
+              <div class="metric"><span class="ml">Academic Height</span><span class="mv">612 <small style="color:var(--green)">▲ rising</small></span></div>
+              <div class="metric"><span class="ml">Being challenged at</span><span class="mv">Level 4 · IOQM-bound</span></div>
+              <div class="metric"><span class="ml">Topics mastered</span><span class="mv">18 / 22</span></div>
+              <div class="metric" style="border:none"><span class="ml">Every answer she sees is…</span><span class="mv" style="color:var(--green)">✓ expert-verified</span></div>
+              <div class="gauge"><i style="width:80%"></i></div>
+              <div class="muted" style="margin-top:8px">She's in the top tier for her level — and genuinely enjoying it. Next: the IOQM track.</div>
+            </div>
+            <div class="card">
+              <b style="font-size:15px">🛡️ Safety controls</b>
+              <div class="metric" style="margin-top:6px"><span class="ml">Community (moderated, no DMs)</span><span class="mv" style="color:var(--green)">On</span></div>
+              <div class="metric" style="border:none"><span class="ml">Daily time guardrail</span><span class="mv">45 min</span></div>
+            </div>
+            <div class="row">
+              <button class="btn soft sm" onclick="go('path')">🏔️ Her path</button>
+              <button class="btn soft sm" onclick="alert('A shareable Mastery Certificate — parents love these.')">🎖️ Certificates</button>
+            </div>
+          </div>
+
+        </div><!-- /scroll -->
+
+        <!-- mastered modal -->
+        <div class="modal" id="master">
+          <span class="closex" onclick="closeMaster()">×</span>
+          <div class="sheet">
+            <div class="celebrate"><div class="em">🎖️</div></div>
+            <h3>You've mastered Number Theory · L4</h3>
+            <div class="sub">You solved <b>every</b> problem we have here. That's genuinely rare — most kids never get this far. So what now?</div>
+            <div class="fork" onclick="closeMaster();go('path')"><div class="fi" style="background:var(--orange-l)">⬆️</div><div class="ft"><b>Unlock the IOQM track</b><span>you've outgrown this — climb higher</span></div></div>
+            <div class="fork" onclick="closeMaster();go('gym')"><div class="fi" style="background:#fde8ec">🔥</div><div class="ft"><b>Boss problems + the NT book</b><span>go deeper, not wider</span></div></div>
+            <div class="fork" onclick="closeMaster();go('commons')"><div class="fi" style="background:#eafaf7">✍️</div><div class="ft"><b>Create a problem for the community</b><span>your problem could teach the next kid</span></div></div>
+            <div class="fork" onclick="closeMaster();alert('Connects to a Vedantu faculty mentor — the human edge.')"><div class="fi" style="background:#f1edff">🧑‍🏫</div><div class="ft"><b>Ask a real mathematician</b><span>a live challenge from a mentor</span></div></div>
+          </div>
+        </div>
+
+        <!-- bottom nav -->
+        <div class="nav">
+          <button class="on" id="n-today" onclick="go('today')"><span class="ico">🌅</span><span class="lb">Today</span></button>
+          <button id="n-gym" onclick="go('gym')"><span class="ico">🏋️</span><span class="lb">Gym</span></button>
+          <button id="n-commons" onclick="go('commons')"><span class="ico">👥</span><span class="lb">Commons</span></button>
+          <button id="n-path" onclick="go('path')"><span class="ico">🏔️</span><span class="lb">Path</span></button>
+          <button id="n-me" onclick="go('me')"><span class="ico">🙂</span><span class="lb">Me</span></button>
+        </div>
+
+      </div>
+    </div>
+    <div class="legend"><b>One app, one identity, one climb.</b> Wonder → Depth → Belonging, tied by the Path — and by the boring superpower no rival has: the maths is actually correct.</div>
+  </div>
+
+</div>
+
+<script>
+const views = ['today','gym','solutions','commons','path','me'];
+const navFor = {today:'today',gym:'gym',solutions:'gym',commons:'commons',path:'path',me:'me'};
+function go(v){
+  views.forEach(x=>document.getElementById('v-'+x).classList.toggle('on', x===v));
+  document.querySelectorAll('.nav button').forEach(b=>b.classList.remove('on'));
+  const n=document.getElementById('n-'+(navFor[v]||v)); if(n) n.classList.add('on');
+  document.querySelector('.scrollarea').scrollTop=0;
+}
+let hintN=0;
+function hintStep(){ hintN=Math.min(hintN+1,3); for(let i=1;i<=3;i++){ document.getElementById('h'+i).classList.toggle('show', i<=hintN);} }
+function checkGym(){
+  const v=(document.getElementById('gymans').value||'').trim();
+  if(v==='45'){ document.getElementById('gymok').classList.add('show'); }
+  else { document.getElementById('gymok').classList.remove('show'); document.getElementById('gymans').style.borderColor='var(--berry)';
+    setTimeout(()=>document.getElementById('gymans').style.borderColor='',700); }
+}
+function solTab(i,el){
+  document.querySelectorAll('.soltab').forEach(t=>t.classList.remove('on')); el.classList.add('on');
+  [0,1,2].forEach(k=>document.getElementById('sol'+k).style.display = k===i?'block':'none');
+}
+function vote(b){ if(b.classList.contains('voted'))return; b.classList.add('voted');
+  const n=parseInt(b.textContent.replace(/\D/g,''))+1; b.textContent='▲ '+n; }
+function openMaster(){ document.getElementById('master').classList.add('on'); }
+function closeMaster(){ document.getElementById('master').classList.remove('on'); }
+</script>
+</body>
+</html>

@@ -3,6 +3,7 @@
 /// API:
 ///   GET /olympiad/worksheets?grade=N&day=D  → OlympiadWorksheet
 ///   GET /olympiad/worksheets/list?grade=N    → WorksheetListResponse
+library;
 
 class OlympiadQuestion {
   final String id;

@@ -650,7 +650,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
               ),
               const SizedBox(height: 12),
               DropdownButtonFormField<String>(
-                value: severity,
+                initialValue: severity,
                 items: const [
                   DropdownMenuItem(value: 'low', child: Text('Low')),
                   DropdownMenuItem(value: 'medium', child: Text('Medium')),
@@ -719,9 +719,9 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
             ),
           ),
           const SizedBox(height: 6),
-          Text(
+          const Text(
             'Here\'s what I learned about you:',
-            style: const TextStyle(fontSize: 14, color: KiwiColors.textMid),
+            style: TextStyle(fontSize: 14, color: KiwiColors.textMid),
           ),
           const SizedBox(height: 24),
           _ResultCard(
@@ -802,7 +802,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
     final planItems = <_PlanItem>[];
 
     // #1 — Adaptive Practice (always first, always primary)
-    planItems.add(_PlanItem(
+    planItems.add(const _PlanItem(
       topicId: 'adaptive',
       topicName: 'Adaptive Practice',
       badge: 'Start here',
@@ -1029,7 +1029,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                 ),
               ),
             ),
-            Icon(
+            const Icon(
               Icons.chevron_right_rounded,
               size: 18,
               color: KiwiColors.textMuted,
@@ -1068,9 +1068,9 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
               ),
               const SizedBox(height: 20),
               _syllabusOption(ctx, 'NCERT', 'CBSE schools', Icons.school_rounded, KiwiColors.kiwiGreenDark, 'ncert'),
-              SizedBox(height: KiwiSpacing.sm),
+              const SizedBox(height: KiwiSpacing.sm),
               _syllabusOption(ctx, 'ICSE', 'ICSE/ISC schools', Icons.auto_stories_rounded, KiwiColors.leagueBlue, 'icse'),
-              SizedBox(height: KiwiSpacing.sm),
+              const SizedBox(height: KiwiSpacing.sm),
               _syllabusOption(ctx, 'Cambridge Primary', 'International', Icons.language_rounded, KiwiColors.indigo, 'cambridge'),
               const SizedBox(height: 8),
               _syllabusOption(ctx, 'None', 'Pure adaptive practice', Icons.bolt_rounded, KiwiColors.kiwiPrimary, ''),

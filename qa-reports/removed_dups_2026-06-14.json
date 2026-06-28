@@ -1,0 +1,3182 @@
+[
+  {
+    "id": "KM-L1-ALG-0018",
+    "file": "content-live/olympiad/L1/L1_ALG_missing_number.json",
+    "stem": "What is 3 + 5?"
+  },
+  {
+    "id": "KM-L1-ALG-0029",
+    "file": "content-live/olympiad/L1/L1_ALG_missing_number.json",
+    "stem": "What is 6 + 4?"
+  },
+  {
+    "id": "KM-L1-ALG-0063",
+    "file": "content-live/olympiad/L1/L1_ALG_missing_number.json",
+    "stem": "What is 2 + 3 + 4?"
+  },
+  {
+    "id": "KM-L1-ALG-0064",
+    "file": "content-live/olympiad/L1/L1_ALG_missing_number.json",
+    "stem": "What is 3 + 3?"
+  },
+  {
+    "id": "KM-L1-ALG-0070",
+    "file": "content-live/olympiad/L1/L1_ALG_missing_number.json",
+    "stem": "What is 7 + 2 + 1?"
+  },
+  {
+    "id": "KM-L1-ALG-0078",
+    "file": "content-live/olympiad/L1/L1_ALG_missing_number.json",
+    "stem": "What is 10 - 3?"
+  },
+  {
+    "id": "KM-L1-ALG-0084",
+    "file": "content-live/olympiad/L1/L1_ALG_missing_number.json",
+    "stem": "What is 4 + 5?"
+  },
+  {
+    "id": "KM-L1-ALG-0088",
+    "file": "content-live/olympiad/L1/L1_ALG_missing_number.json",
+    "stem": "What is 1 + 1?"
+  },
+  {
+    "id": "KM-L1-ALG-0102",
+    "file": "content-live/olympiad/L1/L1_ALG_missing_number.json",
+    "stem": "What is 9 - 4?"
+  },
+  {
+    "id": "KM-L1-ALG-0122",
+    "file": "content-live/olympiad/L1/L1_ALG_missing_number.json",
+    "stem": "What is 12 - 5?"
+  },
+  {
+    "id": "KM-L1-ALG-0154",
+    "file": "content-live/olympiad/L1/L1_ALG_missing_number.json",
+    "stem": "What is 7 + 9?"
+  },
+  {
+    "id": "KM-L1-ALG-0157",
+    "file": "content-live/olympiad/L1/L1_ALG_missing_number.json",
+    "stem": "What is 7 + 2?"
+  },
+  {
+    "id": "KM-L1-ALG-0169",
+    "file": "content-live/olympiad/L1/L1_ALG_missing_number.json",
+    "stem": "What is 4 + 2?"
+  },
+  {
+    "id": "KM-L1-ALG-0172",
+    "file": "content-live/olympiad/L1/L1_ALG_missing_number.json",
+    "stem": "What number goes in the box? 3 + ☐ = 3?"
+  },
+  {
+    "id": "KM-L1-ALG-0204",
+    "file": "content-live/olympiad/L1/L1_ALG_missing_number.json",
+    "stem": "If you put 9 gems and 3 gems together, how many do you get?"
+  },
+  {
+    "id": "KM-L1-ALG-0212",
+    "file": "content-live/olympiad/L1/L1_ALG_missing_number.json",
+    "stem": "What is 4 - 3?"
+  },
+  {
+    "id": "KM-L1-ALG-0236",
+    "file": "content-live/olympiad/L1/L1_ALG_missing_number.json",
+    "stem": "What number goes in the box? ☐ + 3 = 8?"
+  },
+  {
+    "id": "KM-L1-ALG-0252",
+    "file": "content-live/olympiad/L1/L1_ALG_missing_number.json",
+    "stem": "What number goes in the box? 10 - ☐ = 6?"
+  },
+  {
+    "id": "KM-L1-ALG-0263",
+    "file": "content-live/olympiad/L1/L1_ALG_missing_number.json",
+    "stem": "What is 8 - 4?"
+  },
+  {
+    "id": "KM-L1-ALG-0267",
+    "file": "content-live/olympiad/L1/L1_ALG_missing_number.json",
+    "stem": "What is 6 - 4?"
+  },
+  {
+    "id": "KM-L1-ALG-0283",
+    "file": "content-live/olympiad/L1/L1_ALG_missing_number.json",
+    "stem": "Team A scored 6 goals. Team B scored 4 goals. How many more goals did Team A score?"
+  },
+  {
+    "id": "KM-L1-ALG-0304",
+    "file": "content-live/olympiad/L1/L1_ALG_missing_number.json",
+    "stem": "What is 6 - 5?"
+  },
+  {
+    "id": "KM-L1-ALG-0316",
+    "file": "content-live/olympiad/L1/L1_ALG_missing_number.json",
+    "stem": "What is 10 - 3?"
+  },
+  {
+    "id": "KM-L1-ALG-0372",
+    "file": "content-live/olympiad/L1/L1_ALG_missing_number.json",
+    "stem": "There are 8 cards. 7 fall down. How many remain?"
+  },
+  {
+    "id": "KM-L1-ALG-0384",
+    "file": "content-live/olympiad/L1/L1_ALG_missing_number.json",
+    "stem": "What is 9 - 7?"
+  },
+  {
+    "id": "KM-L1-ALG-0410",
+    "file": "content-live/olympiad/L1/L1_ALG_missing_number.json",
+    "stem": "Find the missing number: 13 - ? = 5?"
+  },
+  {
+    "id": "KM-L1-ALG-0424",
+    "file": "content-live/olympiad/L1/L1_ALG_missing_number.json",
+    "stem": "What is 13 - 5?"
+  },
+  {
+    "id": "KM-L1-ALG-0431",
+    "file": "content-live/olympiad/L1/L1_ALG_missing_number.json",
+    "stem": "What is 10 - 8?"
+  },
+  {
+    "id": "KM-L1-ALG-0457",
+    "file": "content-live/olympiad/L1/L1_ALG_missing_number.json",
+    "stem": "What is 13 - 10?"
+  },
+  {
+    "id": "KM-L1-ALG-0459",
+    "file": "content-live/olympiad/L1/L1_ALG_missing_number.json",
+    "stem": "Find the missing number: 14 + ? = 27?"
+  },
+  {
+    "id": "KM-L1-ALG-0479",
+    "file": "content-live/olympiad/L1/L1_ALG_missing_number.json",
+    "stem": "What is 6 + 7?"
+  },
+  {
+    "id": "KM-L1-ALG-0499",
+    "file": "content-live/olympiad/L1/L1_ALG_missing_number.json",
+    "stem": "What is 14 - 12?"
+  },
+  {
+    "id": "KM-L1-ALG-0531",
+    "file": "content-live/olympiad/L1/L1_ALG_missing_number.json",
+    "stem": "What is 12 - 5?"
+  },
+  {
+    "id": "KM-L1-ALG-0537",
+    "file": "content-live/olympiad/L1/L1_ALG_missing_number.json",
+    "stem": "What is 12 - 9?"
+  },
+  {
+    "id": "KM-L1-ALG-0578",
+    "file": "content-live/olympiad/L1/L1_ALG_missing_number.json",
+    "stem": "Find the missing number: 10 - ? = 3?"
+  },
+  {
+    "id": "KM-L1-ALG-0594",
+    "file": "content-live/olympiad/L1/L1_ALG_missing_number.json",
+    "stem": "I am a 2-digit number. My tens digit is 2 and my ones digit is 0. What number am I?"
+  },
+  {
+    "id": "KM-L1-ALG-0633",
+    "file": "content-live/olympiad/L1/L1_ALG_missing_number.json",
+    "stem": "What is 14 - 7?"
+  },
+  {
+    "id": "KM-L1-ALG-0674",
+    "file": "content-live/olympiad/L1/L1_ALG_missing_number.json",
+    "stem": "What is the sum of the digits of 12?"
+  },
+  {
+    "id": "KM-L1-ALG-0720",
+    "file": "content-live/olympiad/L1/L1_ALG_missing_number.json",
+    "stem": "What is 3 + 3 + 3?"
+  },
+  {
+    "id": "KM-L1-ALG-0751",
+    "file": "content-live/olympiad/L1/L1_ALG_missing_number.json",
+    "stem": "Find the missing number: 7 + ? = 11?"
+  },
+  {
+    "id": "KM-L1-ALG-0814",
+    "file": "content-live/olympiad/L1/L1_ALG_missing_number.json",
+    "stem": "Find the missing number: 10 - ? = 6?"
+  },
+  {
+    "id": "KM-L1-ALG-1279",
+    "file": "content-live/olympiad/L1/L1_ALG_missing_number.json",
+    "stem": "What goes in the box? 7 ☐ 5 = 12?"
+  },
+  {
+    "id": "KM-L1-ALG-1325",
+    "file": "content-live/olympiad/L1/L1_ALG_missing_number.json",
+    "stem": "Find the missing number: 8 + ? = 13?"
+  },
+  {
+    "id": "KM-L1-ALG-1363",
+    "file": "content-live/olympiad/L1/L1_ALG_missing_number.json",
+    "stem": "What goes in the box? 7 ☐ 4 = 11?"
+  },
+  {
+    "id": "KM-L1-ALG-1391",
+    "file": "content-live/olympiad/L1/L1_ALG_missing_number.json",
+    "stem": "Find the missing number: 3 × ? = 18?"
+  },
+  {
+    "id": "KM-L1-ALG-1410",
+    "file": "content-live/olympiad/L1/L1_ALG_missing_number.json",
+    "stem": "At the math competition, find the missing number: 3 x ___ - 2 = 10?"
+  },
+  {
+    "id": "KM-L1-ALG-1443",
+    "file": "content-live/olympiad/L1/L1_ALG_missing_number.json",
+    "stem": "In a magic square, each row adds up to 18. If two numbers in a row are 16 and 1, what is the third?"
+  },
+  {
+    "id": "KM-L1-ALG-1489",
+    "file": "content-live/olympiad/L1/L1_ALG_missing_number.json",
+    "stem": "What goes in the box? 6 ☐ 4 = 2?"
+  },
+  {
+    "id": "KM-L1-ALG-1518",
+    "file": "content-live/olympiad/L1/L1_ALG_missing_number.json",
+    "stem": "After giving away 6, there are 11 left. How many were there at first?"
+  },
+  {
+    "id": "KM-L1-ALG-1541",
+    "file": "content-live/olympiad/L1/L1_ALG_missing_number.json",
+    "stem": "After giving away 8, there are 11 left. How many were there at first?"
+  },
+  {
+    "id": "KM-L1-ALG-1584",
+    "file": "content-live/olympiad/L1/L1_ALG_missing_number.json",
+    "stem": "What is the ones digit of 902?"
+  },
+  {
+    "id": "KM-L1-ALG-1596",
+    "file": "content-live/olympiad/L1/L1_ALG_missing_number.json",
+    "stem": "If ☐ + 2 = 15, what is ☐?"
+  },
+  {
+    "id": "KM-L1-ALG-1601",
+    "file": "content-live/olympiad/L1/L1_ALG_missing_number.json",
+    "stem": "In a 3x3 magic square, the magic sum is 18. The center number is 6. The top-left is 1. The top-right is 11. What is the bottom-middle number?"
+  },
+  {
+    "id": "KM-L1-ALG-1629",
+    "file": "content-live/olympiad/L1/L1_ALG_missing_number.json",
+    "stem": "If ▲ + ● = 10, and ▲ = 6, what is ● + ●?"
+  },
+  {
+    "id": "KM-L1-ALG-1630",
+    "file": "content-live/olympiad/L1/L1_ALG_missing_number.json",
+    "stem": "If ☐ + 4 = 10, what is ☐?"
+  },
+  {
+    "id": "KM-L1-ALG-1639",
+    "file": "content-live/olympiad/L1/L1_ALG_missing_number.json",
+    "stem": "What comes next: 5, 8, 11, 14, ?"
+  },
+  {
+    "id": "KM-L1-ALG-1641",
+    "file": "content-live/olympiad/L1/L1_ALG_missing_number.json",
+    "stem": "What is the tens digit of 149?"
+  },
+  {
+    "id": "KM-L1-ALG-1667",
+    "file": "content-live/olympiad/L1/L1_ALG_missing_number.json",
+    "stem": "If ▲ + ● = 10 and ▲ = 8, what is ●?"
+  },
+  {
+    "id": "KM-L1-ALG-1671",
+    "file": "content-live/olympiad/L1/L1_ALG_missing_number.json",
+    "stem": "If ☐ + 8 = 16, what is ☐?"
+  },
+  {
+    "id": "KM-L1-ALG-1673",
+    "file": "content-live/olympiad/L1/L1_ALG_missing_number.json",
+    "stem": "What is the smallest two-digit number whose digits add up to 7?"
+  },
+  {
+    "id": "KM-L1-ALG-1676",
+    "file": "content-live/olympiad/L1/L1_ALG_missing_number.json",
+    "stem": "If ☐ + 3 = 17, what is ☐?"
+  },
+  {
+    "id": "KM-L1-ALG-1678",
+    "file": "content-live/olympiad/L1/L1_ALG_missing_number.json",
+    "stem": "If ▲ + ● = 8 and ▲ = 6, what is ●?"
+  },
+  {
+    "id": "KM-L1-ALG-1680",
+    "file": "content-live/olympiad/L1/L1_ALG_missing_number.json",
+    "stem": "A number goes through 3 machines: First it is doubled, then 3 is added, then 1 is subtracted. The result is 8. What was the starting number?"
+  },
+  {
+    "id": "KM-L1-ALG-1697",
+    "file": "content-live/olympiad/L1/L1_ALG_missing_number.json",
+    "stem": "If ☐ + 5 = 11, what is ☐?"
+  },
+  {
+    "id": "KM-L1-ALG-1706",
+    "file": "content-live/olympiad/L1/L1_ALG_missing_number.json",
+    "stem": "A digital clock shows times from 1:00 to 12:59. How many times does the display show exactly three identical digits (like 1:11)?"
+  },
+  {
+    "id": "KM-L1-ALG-1710",
+    "file": "content-live/olympiad/L1/L1_ALG_missing_number.json",
+    "stem": "Find the missing number: 11 × ? = 132?"
+  },
+  {
+    "id": "KM-L1-ALG-1711",
+    "file": "content-live/olympiad/L1/L1_ALG_missing_number.json",
+    "stem": "Find the missing number: 14 - ? = 6?"
+  },
+  {
+    "id": "KM-L1-ALG-1712",
+    "file": "content-live/olympiad/L1/L1_ALG_missing_number.json",
+    "stem": "If ▲ + ● = 14 and ▲ = 9, what is ●?"
+  },
+  {
+    "id": "KM-L1-ALG-2117",
+    "file": "content-live/olympiad/L1/L1_ALG_number_shape_patterns.json",
+    "stem": "What colour bead comes next?"
+  },
+  {
+    "id": "KM-L1-ALG-2133",
+    "file": "content-live/olympiad/L1/L1_ALG_number_shape_patterns.json",
+    "stem": "What colour bead comes next?"
+  },
+  {
+    "id": "KM-L1-ALG-2227",
+    "file": "content-live/olympiad/L1/L1_ALG_number_shape_patterns.json",
+    "stem": "What colour flag comes next?"
+  },
+  {
+    "id": "KM-L1-ALG-2233",
+    "file": "content-live/olympiad/L1/L1_ALG_number_shape_patterns.json",
+    "stem": "What colour flag comes next?"
+  },
+  {
+    "id": "KM-L1-ALG-2243",
+    "file": "content-live/olympiad/L1/L1_ALG_number_shape_patterns.json",
+    "stem": "What colour flag comes next?"
+  },
+  {
+    "id": "KM-L1-ALG-2255",
+    "file": "content-live/olympiad/L1/L1_ALG_number_shape_patterns.json",
+    "stem": "What colour flag comes next?"
+  },
+  {
+    "id": "KM-L1-ALG-2274",
+    "file": "content-live/olympiad/L1/L1_ALG_number_shape_patterns.json",
+    "stem": "What colour flag comes next?"
+  },
+  {
+    "id": "KM-L1-ALG-2387",
+    "file": "content-live/olympiad/L1/L1_ALG_number_shape_patterns.json",
+    "stem": "What comes next?"
+  },
+  {
+    "id": "KM-L1-ALG-2403",
+    "file": "content-live/olympiad/L1/L1_ALG_number_shape_patterns.json",
+    "stem": "What comes next?"
+  },
+  {
+    "id": "KM-L1-ALG-2424",
+    "file": "content-live/olympiad/L1/L1_ALG_number_shape_patterns.json",
+    "stem": "What comes next?"
+  },
+  {
+    "id": "KM-L1-ALG-2449",
+    "file": "content-live/olympiad/L1/L1_ALG_number_shape_patterns.json",
+    "stem": "What comes next?"
+  },
+  {
+    "id": "KM-L1-ALG-2505",
+    "file": "content-live/olympiad/L1/L1_ALG_number_shape_patterns.json",
+    "stem": "Which one does NOT belong? Look at shape number 4?"
+  },
+  {
+    "id": "KM-L1-ALG-2543",
+    "file": "content-live/olympiad/L1/L1_ALG_number_shape_patterns.json",
+    "stem": "Which one does NOT belong? Look at shape number 3?"
+  },
+  {
+    "id": "KM-L1-ALG-3186",
+    "file": "content-live/olympiad/L1/L1_ALG_number_shape_patterns.json",
+    "stem": "Rule: Add 1, then double. 2, 6, 14, 30, 62, ___"
+  },
+  {
+    "id": "KM-L1-COM-0023",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "Who came second?"
+  },
+  {
+    "id": "KM-L1-COM-0034",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "When 5 goes in with rule '+2', what comes out?"
+  },
+  {
+    "id": "KM-L1-COM-0040",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "Who came second?"
+  },
+  {
+    "id": "KM-L1-COM-0043",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "Who is the shortest?"
+  },
+  {
+    "id": "KM-L1-COM-0047",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "When 4 goes in with rule '+3', what comes out?"
+  },
+  {
+    "id": "KM-L1-COM-0066",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "When 7 goes in with rule '+1', what comes out?"
+  },
+  {
+    "id": "KM-L1-COM-0071",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "When 2 goes in with rule '+5', what comes out?"
+  },
+  {
+    "id": "KM-L1-COM-0080",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "Who came third?"
+  },
+  {
+    "id": "KM-L1-COM-0095",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "When 3 goes in with rule '+4', what comes out?"
+  },
+  {
+    "id": "KM-L1-COM-0101",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "Who came first?"
+  },
+  {
+    "id": "KM-L1-COM-0111",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "When 8 goes in with rule '+2', what comes out?"
+  },
+  {
+    "id": "KM-L1-COM-0139",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "When 6 goes in with rule '+3', what comes out?"
+  },
+  {
+    "id": "KM-L1-COM-0144",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "When 3 goes in with rule '+1', what comes out?"
+  },
+  {
+    "id": "KM-L1-COM-0155",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "Who came fifth?"
+  },
+  {
+    "id": "KM-L1-COM-0159",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "When 5 goes in with rule '-1', what comes out?"
+  },
+  {
+    "id": "KM-L1-COM-0163",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "Who came fourth?"
+  },
+  {
+    "id": "KM-L1-COM-0164",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "Who came first?"
+  },
+  {
+    "id": "KM-L1-COM-0181",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "When 7 goes in with rule '-2', what comes out?"
+  },
+  {
+    "id": "KM-L1-COM-0199",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "When 9 goes in with rule '-3', what comes out?"
+  },
+  {
+    "id": "KM-L1-COM-0221",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "When 10 goes in with rule '-1', what comes out?"
+  },
+  {
+    "id": "KM-L1-COM-0233",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "Who came second?"
+  },
+  {
+    "id": "KM-L1-COM-0242",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "What day comes after Thursday?"
+  },
+  {
+    "id": "KM-L1-COM-0264",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "When 6 goes in with rule '-2', what comes out?"
+  },
+  {
+    "id": "KM-L1-COM-0280",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "What month comes after March?"
+  },
+  {
+    "id": "KM-L1-COM-0303",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "Which number is between 65 and 69?"
+  },
+  {
+    "id": "KM-L1-COM-0314",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "When 8 goes in with rule '-4', what comes out?"
+  },
+  {
+    "id": "KM-L1-COM-0348",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "Which number is between 51 and 56?"
+  },
+  {
+    "id": "KM-L1-COM-0361",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "What day comes before Tuesday?"
+  },
+  {
+    "id": "KM-L1-COM-0375",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "Who came third?"
+  },
+  {
+    "id": "KM-L1-COM-0387",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "Which number is between 26 and 34?"
+  },
+  {
+    "id": "KM-L1-COM-0403",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "Which number is between 26 and 36?"
+  },
+  {
+    "id": "KM-L1-COM-0414",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "Who came fifth?"
+  },
+  {
+    "id": "KM-L1-COM-0419",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "Which is the smallest?"
+  },
+  {
+    "id": "KM-L1-COM-0463",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "In a race, the order is: Sita, Kabir, Meera. Who came second?"
+  },
+  {
+    "id": "KM-L1-COM-0488",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "Left side: 3 + ___. Right side: 5. What number makes it balance?"
+  },
+  {
+    "id": "KM-L1-COM-0549",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "Who came third?"
+  },
+  {
+    "id": "KM-L1-COM-0550",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "Who came second?"
+  },
+  {
+    "id": "KM-L1-COM-0583",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "Left side: 5 + ___. Right side: 8. What number makes it balance?"
+  },
+  {
+    "id": "KM-L1-COM-0584",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "Sort these numbers from smallest to largest: 7, 3, 9, 1. Which number is 3rd?"
+  },
+  {
+    "id": "KM-L1-COM-0586",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "Who came second?"
+  },
+  {
+    "id": "KM-L1-COM-0608",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "What month comes before March?"
+  },
+  {
+    "id": "KM-L1-COM-0612",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "Left side: ___ + 1. Right side: 4. What number makes it balance?"
+  },
+  {
+    "id": "KM-L1-COM-0616",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "Left side: ___ + 2. Right side: 6. What number makes it balance?"
+  },
+  {
+    "id": "KM-L1-COM-0637",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "Left side: 6 + ___. Right side: 10. What number makes it balance?"
+  },
+  {
+    "id": "KM-L1-COM-0642",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "What day comes after Saturday?"
+  },
+  {
+    "id": "KM-L1-COM-0687",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "Left side: ___ + 3. Right side: 7. What number makes it balance?"
+  },
+  {
+    "id": "KM-L1-COM-0709",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "Who came second?"
+  },
+  {
+    "id": "KM-L1-COM-0741",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "Left side: ___ + 4. Right side: 9. What number makes it balance?"
+  },
+  {
+    "id": "KM-L1-COM-0744",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "What month comes before February?"
+  },
+  {
+    "id": "KM-L1-COM-0800",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "What day comes after Friday?"
+  },
+  {
+    "id": "KM-L1-COM-0803",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "Sia has 8 stickers. Kiran has more than Sia. Jay has fewer than Sia. Who has the most?"
+  },
+  {
+    "id": "KM-L1-COM-0820",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "In a race, the order is: Om, Sita, Kavya, Meera. Who came third?"
+  },
+  {
+    "id": "KM-L1-COM-0821",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "Who came first?"
+  },
+  {
+    "id": "KM-L1-COM-0842",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "All apples in the basket are red. You pick an apple from the basket. What colour is it?"
+  },
+  {
+    "id": "KM-L1-COM-0843",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "Who came first?"
+  },
+  {
+    "id": "KM-L1-COM-0850",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "You raise your right hand. Which hand appears to be raised in the mirror?"
+  },
+  {
+    "id": "KM-L1-COM-0875",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "Left side: 7 + ___. Right side: 10. What number makes it balance?"
+  },
+  {
+    "id": "KM-L1-COM-0901",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "Who came fourth?"
+  },
+  {
+    "id": "KM-L1-COM-0908",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "Who came fifth?"
+  },
+  {
+    "id": "KM-L1-COM-0926",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "Which is the shortest?"
+  },
+  {
+    "id": "KM-L1-COM-0928",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "Who came fifth?"
+  },
+  {
+    "id": "KM-L1-COM-0953",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "Shiv has 5 apples. Kabir has more than Shiv. Kavya has fewer than Shiv. Who has the most?"
+  },
+  {
+    "id": "KM-L1-COM-1010",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "Who came second?"
+  },
+  {
+    "id": "KM-L1-COM-1012",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "Who came first?"
+  },
+  {
+    "id": "KM-L1-COM-1039",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "Which one does not belong: Cat, dog, rabbit, fish?"
+  },
+  {
+    "id": "KM-L1-COM-1072",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "Four children — Anu, Bo, Chin, and Dev — sit in a row. Chin sits at the left end. Bo sits at the right end. Anu sits next to Bo. Who sits next to Chin?"
+  },
+  {
+    "id": "KM-L1-COM-1090",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "Pooja has 9 stickers. Anaya has more than Pooja. Om has fewer than Pooja. Who has the most?"
+  },
+  {
+    "id": "KM-L1-COM-1120",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "In: 1→Out: 3. In: 4→Out: 6. In: 7→Out: ? . What comes out?"
+  },
+  {
+    "id": "KM-L1-COM-1121",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "In: 3→Out: 7. In: 5→Out: 11. In: 2→Out: ? . What comes out?"
+  },
+  {
+    "id": "KM-L1-COM-1123",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "Ishaan has 6 apples. Leela has more than Ishaan. Raj has fewer than Ishaan. Who has the most?"
+  },
+  {
+    "id": "KM-L1-COM-1147",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "In: 2→Out: 6. In: 3→Out: 9. In: 5→Out: ? . What comes out?"
+  },
+  {
+    "id": "KM-L1-COM-1182",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "Nisha has 9 apples. Diya has more than Nisha. Dev has fewer than Nisha. Who has the most?"
+  },
+  {
+    "id": "KM-L1-COM-1215",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "What month comes after July?"
+  },
+  {
+    "id": "KM-L1-COM-1260",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "Sia has 3 stickers. Vikram has more than Sia. Ishaan has fewer than Sia. Who has the most?"
+  },
+  {
+    "id": "KM-L1-COM-1284",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "A pineapple and a mango together weigh the same as 5 oranges. A pineapple alone weighs the same as 3 oranges. How many oranges weigh the same as a mango?"
+  },
+  {
+    "id": "KM-L1-COM-1298",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "In: 5→Out: 3. In: 9→Out: 7. In: 12→Out: ? . What comes out?"
+  },
+  {
+    "id": "KM-L1-COM-1314",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "Pooja has 4 stickers. Kabir has more than Pooja. Sia has fewer than Pooja. Who has the most?"
+  },
+  {
+    "id": "KM-L1-COM-1342",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "Sia has 6 stickers. Om has more than Sia. Tara has fewer than Sia. Who has the most?"
+  },
+  {
+    "id": "KM-L1-COM-1373",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "On a balance: 1 red block = 2 blue blocks. 1 blue block = 3 yellow blocks. How many yellow blocks balance 1 red block?"
+  },
+  {
+    "id": "KM-L1-COM-1374",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "It starts at corner An and walks clockwise. After passing 3 corners, which corner is it at?"
+  },
+  {
+    "id": "KM-L1-COM-1378",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "In: 10→Out: 5. In: 8→Out: 4. In: 6→Out: ? . What comes out?"
+  },
+  {
+    "id": "KM-L1-COM-1402",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "Anaya has 6 marbles. Arjun has more than Anaya. Vikram has fewer than Anaya. Who has the most?"
+  },
+  {
+    "id": "KM-L1-COM-1484",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "In: 1→Out: 4. In: 3→Out: 6. In: 10→Out: ? . What comes out?"
+  },
+  {
+    "id": "KM-L1-COM-1530",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "Diya has 5 coins. Ishaan has more than Diya. Dev has fewer than Diya. Who has the most?"
+  },
+  {
+    "id": "KM-L1-COM-1532",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "Veer arranges stamps in 7 rows and 3 columns. How many stamps are there in all?"
+  },
+  {
+    "id": "KM-L1-COM-1619",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "Three children — Pia, Qadir, and Riya — finish a race. Pia did not finish last. Riya finished before Pia. Who finished 2nd?"
+  },
+  {
+    "id": "KM-L1-COM-1700",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "A grid has 6 plants arranged in 3 equal rows. How many plants are in each row?"
+  },
+  {
+    "id": "KM-L1-COM-1775",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "At a flag festival, 3 coloured flags are hung on a pole: Red, white, and green. The red flag must be above the green flag. How many different arrangements are possible?"
+  },
+  {
+    "id": "KM-L1-COM-1838",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "At the zoo, each ticket costs 5 coins for adults and 3 coins for children. A family of 2 adults and 3 children visits. How many coins do they need?"
+  },
+  {
+    "id": "KM-L1-COM-1869",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "In a card game, red cards are worth 3 points and blue cards are worth 2 points. Sam has 2 red cards and 3 blue cards. How many points does Sam have?"
+  },
+  {
+    "id": "KM-L1-COM-1965",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "In a game: If you roll an even number, you move forward 2 spaces. If you roll an odd number, you move forward 1 space. You roll 3, then 4, then 5. How many spaces do you move in total?"
+  },
+  {
+    "id": "KM-L1-COM-1972",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "At the science fair, a two-step machine does: First x3, then -1. If 3 goes in, what comes out?"
+  },
+  {
+    "id": "KM-L1-COM-2021",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "5 children each scored a different mark: 6, 7, 8, 9, 10. Ava scored higher than Bo but lower than Cara. Dev scored 6. Eli scored 10. What did Ava score?"
+  },
+  {
+    "id": "KM-L1-COM-2036",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "A shop has a rule: Buy 2 pencils and get 1 eraser free. Ria buys 6 pencils. How many free erasers does she get?"
+  },
+  {
+    "id": "KM-L1-COM-2116",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "Each of 3 boxes has a label: 'Apples', 'Oranges', 'Mixed'. But EVERY label is wrong. You open the box labelled 'Mixed' and find only apples. What is in the box labelled 'Apples'?"
+  },
+  {
+    "id": "KM-L1-COM-2187",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "There are 5 cards numbered 1 to 5. Two cards are removed. The remaining cards add up to 12. Which two cards were removed?"
+  },
+  {
+    "id": "KM-L1-COM-2225",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "4 cards are placed face-down. Each card has a different number (1, 2, 3, or 4). You know: Card A has a higher number than Card B. Card B has a higher number than Card C. Card D has the number 1. What number is on Card B?"
+  },
+  {
+    "id": "KM-L1-COM-2239",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "Anaya is taller than Kavya. Kavya is taller than Om. Shiv is taller than Anaya. Who is the tallest?"
+  },
+  {
+    "id": "KM-L1-COM-2244",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "4 friends — Anu, Bo, Cara, and Dev — sit around a square table, one on each side. Anu sits opposite Bo. Cara sits to the right of Anu. Who sits opposite Cara?"
+  },
+  {
+    "id": "KM-L1-COM-2284",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "Meera is taller than Pooja. Who is the tallest?"
+  },
+  {
+    "id": "KM-L1-COM-2340",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "Aditya is taller than Aarav. Aarav is taller than Zara. Veer is taller than Aditya. Who is the tallest?"
+  },
+  {
+    "id": "KM-L1-COM-2344",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "Tanya bought 14 chocolates: 8 round, 6 square. Half of all chocolates are dark. Among the square ones, only 2 are not white. How many dark round chocolates are there?"
+  },
+  {
+    "id": "KM-L1-COM-2353",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "In a class of 30 students, 10 play cricket and 16 play badminton. 3 play both. How many play neither?"
+  },
+  {
+    "id": "KM-L1-COM-2369",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "In a class of 31 students, 17 play tennis and 11 play basketball. 5 play both. How many play neither?"
+  },
+  {
+    "id": "KM-L1-COM-2379",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "Who is the tallest?"
+  },
+  {
+    "id": "KM-L1-COM-2380",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "In a class of 33 students, 12 play football and 21 play tennis. 7 play both. How many play neither?"
+  },
+  {
+    "id": "KM-L1-COM-2389",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "Rina is 3 years older than Sam. Sam is 2 years older than Tara. The sum of their ages is 28. How old is Sam?"
+  },
+  {
+    "id": "KM-L1-COM-2392",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "In a class of 37 students, 19 play basketball and 14 play cricket. 5 play both. How many play neither?"
+  },
+  {
+    "id": "KM-L1-COM-2401",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "3 friends — Pia, Qadir, and Riya — each own a different pet (cat, dog, fish) and live on different floors (1, 2, 3). Pia lives above the person with the cat. Qadir has the dog and does not live on Floor 1. Riya lives on Floor 1. What pet does Pia have?"
+  },
+  {
+    "id": "KM-L1-COM-2402",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "Tara is taller than Pooja. Dev is taller than Arjun. Who is the tallest?"
+  },
+  {
+    "id": "KM-L1-COM-2403",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "Kavya is taller than Diya. Veer is taller than Dev. Who is the tallest?"
+  },
+  {
+    "id": "KM-L1-COM-2407",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "Rohan is taller than Anaya. Anaya is taller than Arjun. Sia is taller than Rohan. Who is the tallest?"
+  },
+  {
+    "id": "KM-L1-COM-2409",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "Diya is taller than Mira. Mira is taller than Sia. Aarav is taller than Diya. Who is the tallest?"
+  },
+  {
+    "id": "KM-L1-COM-2410",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "Sita is taller than Kiran. Who is the tallest?"
+  },
+  {
+    "id": "KM-L1-COM-2411",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "A clock shows 10:00. The hour hand and minute hand swap positions. What time does the clock now show?"
+  },
+  {
+    "id": "KM-L1-COM-2413",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "5 children stand in a row. Eli is at the left end. Cara is at the right end. Ana is between Ben and Cara. Dev is between Ana and Cara. Who is in the middle?"
+  },
+  {
+    "id": "KM-L1-COM-2415",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "In a class of 20 students, 10 play badminton and 9 play tennis. 4 play both. How many play neither?"
+  },
+  {
+    "id": "KM-L1-COM-2416",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "Meera is taller than Kiran. Sita is taller than Priya. Who is the tallest?"
+  },
+  {
+    "id": "KM-L1-COM-2419",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "In a 4x4 grid using numbers 1-4, each number appears once per row and column. Row 1: 1,2,3,4. Row 2: 2,_,4,_. Row 3: 3,4,_,_. What number goes in Row 2, Column 2?"
+  },
+  {
+    "id": "KM-L1-COM-2433",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "Who is the tallest?"
+  },
+  {
+    "id": "KM-L1-COM-2434",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "Who is the tallest?"
+  },
+  {
+    "id": "KM-L1-COM-2435",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "Rani is taller than Raj. Who is the tallest?"
+  },
+  {
+    "id": "KM-L1-COM-2437",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "Raj is taller than Pooja. Kavya is taller than Diya. Who is the tallest?"
+  },
+  {
+    "id": "KM-L1-COM-2438",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "Diya is taller than Meera. Who is the tallest?"
+  },
+  {
+    "id": "KM-L1-COM-2441",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "The number bond of 19: One part is 18, what is the other part?"
+  },
+  {
+    "id": "KM-L1-COM-2442",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "Kavya is taller than Vikram. Who is the tallest?"
+  },
+  {
+    "id": "KM-L1-COM-2445",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "5 children each scored different marks from 1 to 5 in a test. Anu scored more than Bo. Cara scored less than Dev but more than Anu. Eli scored the least. What did Cara score?"
+  },
+  {
+    "id": "KM-L1-COM-2449",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "In a class, each boy sits with a girl at a table (2 chairs per table). 4 girls sit alone at separate tables. There are 12 tables in total. How many girls are in the class?"
+  },
+  {
+    "id": "KM-L1-COM-2451",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "Aditya is taller than Kabir. Who is the tallest?"
+  },
+  {
+    "id": "KM-L1-COM-2461",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "Jay is taller than Aarav. Aarav is taller than Kavya. Leela is taller than Jay. Who is the tallest?"
+  },
+  {
+    "id": "KM-L1-COM-2470",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "Meera is taller than Rohan. Zara is taller than Arjun. Who is the tallest?"
+  },
+  {
+    "id": "KM-L1-COM-2473",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "The product of two numbers is 24. Their sum is 10. What are the two numbers?"
+  },
+  {
+    "id": "KM-L1-COM-2474",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "Rohan is taller than Jay. Aditya is taller than Arjun. Who is the tallest?"
+  },
+  {
+    "id": "KM-L1-COM-2475",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "In a class of 34 students, 12 play tennis and 12 play cricket. 7 play both. How many play neither?"
+  },
+  {
+    "id": "KM-L1-COM-2478",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "In a class of 40 students, 11 play basketball and 16 play badminton. 2 play both. How many play neither?"
+  },
+  {
+    "id": "KM-L1-COM-2481",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "Meera is taller than Sia. Who is the tallest?"
+  },
+  {
+    "id": "KM-L1-COM-2482",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "Aditya is taller than Rohan. Rohan is taller than Aarav. Zara is taller than Aditya. Who is the tallest?"
+  },
+  {
+    "id": "KM-L1-COM-2487",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "A witch turns 3 apples into 1 banana and 3 bananas into 1 apple. She starts with 4 apples and 5 bananas. After doing every possible conversion, what remains?"
+  },
+  {
+    "id": "KM-L1-COM-2492",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "In a class of 21 students, 9 play basketball and 12 play football. 3 play both. How many play neither?"
+  },
+  {
+    "id": "KM-L1-COM-2493",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "What is the smallest number that is divisible by both 3 and 4?"
+  },
+  {
+    "id": "KM-L1-COM-2495",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "Who is the tallest?"
+  },
+  {
+    "id": "KM-L1-COM-2504",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "Who is the tallest?"
+  },
+  {
+    "id": "KM-L1-COM-2505",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "Mira is taller than Aarav. Aarav is taller than Priya. Vikram is taller than Mira. Who is the tallest?"
+  },
+  {
+    "id": "KM-L1-COM-2519",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "In a class of 21 students, 9 play tennis and 13 play cricket. 2 play both. How many play neither?"
+  },
+  {
+    "id": "KM-L1-COM-2523",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "In a class of 24 students, 8 play tennis and 10 play football. 3 play both. How many play neither?"
+  },
+  {
+    "id": "KM-L1-COM-2530",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "In a class of 34 students, 14 play football and 19 play badminton. 6 play both. How many play neither?"
+  },
+  {
+    "id": "KM-L1-COM-2535",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "In a class of 37 students, 17 play cricket and 12 play badminton. 4 play both. How many play neither?"
+  },
+  {
+    "id": "KM-L1-COM-2540",
+    "file": "content-live/olympiad/L1/L1_COM_counting_logic.json",
+    "stem": "In a class of 40 students, 17 play football and 9 play tennis. 4 play both. How many play neither?"
+  },
+  {
+    "id": "KM-L1-COM-3095",
+    "file": "content-live/olympiad/L1/L1_COM_sorting.json",
+    "stem": "Which number is the odd one out: 6, 14, 4, 23?"
+  },
+  {
+    "id": "KM-L1-COM-3200",
+    "file": "content-live/olympiad/L1/L1_COM_sorting.json",
+    "stem": "Which number is the odd one out: 12, 22, 40, 39?"
+  },
+  {
+    "id": "KM-L1-GEO-0005",
+    "file": "content-live/olympiad/L1/L1_GEO_shapes_2d_3d.json",
+    "stem": "How many corners does a square have?"
+  },
+  {
+    "id": "KM-L1-GEO-0025",
+    "file": "content-live/olympiad/L1/L1_GEO_shapes_2d_3d.json",
+    "stem": "How many triangles can you see in this picture?"
+  },
+  {
+    "id": "KM-L1-GEO-0043",
+    "file": "content-live/olympiad/L1/L1_GEO_shapes_2d_3d.json",
+    "stem": "How many sides does a rectangle have?"
+  },
+  {
+    "id": "KM-L1-GEO-0051",
+    "file": "content-live/olympiad/L1/L1_GEO_shapes_2d_3d.json",
+    "stem": "If you fold a square along its diagonal, what shape do you get?"
+  },
+  {
+    "id": "KM-L1-GEO-0076",
+    "file": "content-live/olympiad/L1/L1_GEO_shapes_2d_3d.json",
+    "stem": "Which letter of the alphabet has a vertical line of symmetry: A, F, G, or J?"
+  },
+  {
+    "id": "KM-L1-GEO-0101",
+    "file": "content-live/olympiad/L1/L1_GEO_shapes_2d_3d.json",
+    "stem": "Which of these shapes is symmetrical?"
+  },
+  {
+    "id": "KM-L1-GEO-0158",
+    "file": "content-live/olympiad/L1/L1_GEO_shapes_2d_3d.json",
+    "stem": "If you put a mirror on the line of symmetry of a circle, what do you see?"
+  },
+  {
+    "id": "KM-L1-GEO-0226",
+    "file": "content-live/olympiad/L1/L1_GEO_shapes_2d_3d.json",
+    "stem": "Which letter looks the same in a mirror placed on its right side?"
+  },
+  {
+    "id": "KM-L1-GEO-0289",
+    "file": "content-live/olympiad/L1/L1_GEO_shapes_2d_3d.json",
+    "stem": ". ?"
+  },
+  {
+    "id": "KM-L1-GEO-0299",
+    "file": "content-live/olympiad/L1/L1_GEO_shapes_2d_3d.json",
+    "stem": "Which shape takes up more space: a big circle or a small square inside it?"
+  },
+  {
+    "id": "KM-L1-GEO-0730",
+    "file": "content-live/olympiad/L1/L1_GEO_shapes_2d_3d.json",
+    "stem": "On a giant clock tower, a clock's minute hand makes a full turn in 60 minutes. How much of a turn does it make in 15 minutes?"
+  },
+  {
+    "id": "KM-L1-GEO-0734",
+    "file": "content-live/olympiad/L1/L1_GEO_shapes_2d_3d.json",
+    "stem": "How many lines of symmetry does a rectangle have?"
+  },
+  {
+    "id": "KM-L1-GEO-0747",
+    "file": "content-live/olympiad/L1/L1_GEO_shapes_2d_3d.json",
+    "stem": "Aarav uses 6 equilateral triangles to build a shape. Each triangle has side 3 cm. What is the perimeter of the combined shape (in a row)?"
+  },
+  {
+    "id": "KM-L1-GEO-0764",
+    "file": "content-live/olympiad/L1/L1_GEO_shapes_2d_3d.json",
+    "stem": "An angle challenge! Which angle is bigger: The corner of a square or the corner of an equilateral triangle?"
+  },
+  {
+    "id": "KM-L1-GEO-0765",
+    "file": "content-live/olympiad/L1/L1_GEO_shapes_2d_3d.json",
+    "stem": "A 3D shape has 4 vertices and 9 edges. How many faces? (V-E+F=2)?"
+  },
+  {
+    "id": "KM-L1-GEO-0768",
+    "file": "content-live/olympiad/L1/L1_GEO_shapes_2d_3d.json",
+    "stem": "A tiling puzzle! A floor is tiled with identical hexagons. How many hexagons meet at each corner?"
+  },
+  {
+    "id": "KM-L1-GEO-0776",
+    "file": "content-live/olympiad/L1/L1_GEO_shapes_2d_3d.json",
+    "stem": "A rectangle is 9 cm long and 15 cm wide. What is the perimeter?"
+  },
+  {
+    "id": "KM-L1-GEO-0788",
+    "file": "content-live/olympiad/L1/L1_GEO_shapes_2d_3d.json",
+    "stem": "A net of a cube has how many flat faces?"
+  },
+  {
+    "id": "KM-L1-GEO-0789",
+    "file": "content-live/olympiad/L1/L1_GEO_shapes_2d_3d.json",
+    "stem": "A chessboard is made of squares. How many small squares are on a standard 8×8 chessboard?"
+  },
+  {
+    "id": "KM-L1-GEO-0798",
+    "file": "content-live/olympiad/L1/L1_GEO_shapes_2d_3d.json",
+    "stem": "A triangle has a base of 2 cm and height of 3 cm. What is its area?"
+  },
+  {
+    "id": "KM-L1-GEO-0810",
+    "file": "content-live/olympiad/L1/L1_GEO_shapes_2d_3d.json",
+    "stem": "Two angles are supplementary. One is 124°. What is the other?"
+  },
+  {
+    "id": "KM-L1-GEO-0812",
+    "file": "content-live/olympiad/L1/L1_GEO_shapes_2d_3d.json",
+    "stem": "A net of a triangular pyramid has how many flat faces?"
+  },
+  {
+    "id": "KM-L1-GEO-0814",
+    "file": "content-live/olympiad/L1/L1_GEO_shapes_2d_3d.json",
+    "stem": "A figure is made of 5 overlapping circles in a row (like the Olympic rings pattern). How many separate regions are created?"
+  },
+  {
+    "id": "KM-L1-GEO-0817",
+    "file": "content-live/olympiad/L1/L1_GEO_shapes_2d_3d.json",
+    "stem": "A tiling puzzle! Equilateral triangles can tile a flat surface. How many meet at each vertex point?"
+  },
+  {
+    "id": "KM-L1-GEO-0818",
+    "file": "content-live/olympiad/L1/L1_GEO_shapes_2d_3d.json",
+    "stem": "A strip of paper is formed into a loop (ring) and cut along the middle all the way around. How many loops do you get?"
+  },
+  {
+    "id": "KM-L1-GEO-0819",
+    "file": "content-live/olympiad/L1/L1_GEO_shapes_2d_3d.json",
+    "stem": "Does the digit 5 have a vertical line of symmetry?"
+  },
+  {
+    "id": "KM-L1-GEO-0823",
+    "file": "content-live/olympiad/L1/L1_GEO_shapes_2d_3d.json",
+    "stem": "A semicircle has a diameter of 20 cm. What is the radius?"
+  },
+  {
+    "id": "KM-L1-GEO-0824",
+    "file": "content-live/olympiad/L1/L1_GEO_shapes_2d_3d.json",
+    "stem": "How many squares of ALL sizes can you find in a 3×3 grid?"
+  },
+  {
+    "id": "KM-L1-GEO-0828",
+    "file": "content-live/olympiad/L1/L1_GEO_shapes_2d_3d.json",
+    "stem": "A triangle has angles of 70° and 55°. What is the third angle?"
+  },
+  {
+    "id": "KM-L1-GEO-0833",
+    "file": "content-live/olympiad/L1/L1_GEO_shapes_2d_3d.json",
+    "stem": "A net of a square pyramid has how many flat faces?"
+  },
+  {
+    "id": "KM-L1-GEO-0834",
+    "file": "content-live/olympiad/L1/L1_GEO_shapes_2d_3d.json",
+    "stem": "A square has side 5 cm. If enlarged 2 times, what is the new side length?"
+  },
+  {
+    "id": "KM-L1-GEO-0836",
+    "file": "content-live/olympiad/L1/L1_GEO_shapes_2d_3d.json",
+    "stem": "What is the sum of angles in a square?"
+  },
+  {
+    "id": "KM-L1-GEO-0838",
+    "file": "content-live/olympiad/L1/L1_GEO_shapes_2d_3d.json",
+    "stem": "A rectangle is 3 cm long and 5 cm wide. What is the perimeter?"
+  },
+  {
+    "id": "KM-L1-GEO-0839",
+    "file": "content-live/olympiad/L1/L1_GEO_shapes_2d_3d.json",
+    "stem": "A triangle has angles of 36° and 82°. What is the third angle?"
+  },
+  {
+    "id": "KM-L1-GEO-0842",
+    "file": "content-live/olympiad/L1/L1_GEO_shapes_2d_3d.json",
+    "stem": "How many diagonals does a square have?"
+  },
+  {
+    "id": "KM-L1-GEO-0843",
+    "file": "content-live/olympiad/L1/L1_GEO_shapes_2d_3d.json",
+    "stem": "What is the sum of angles in a triangle?"
+  },
+  {
+    "id": "KM-L1-GEO-0845",
+    "file": "content-live/olympiad/L1/L1_GEO_shapes_2d_3d.json",
+    "stem": "A triangle has a base of 10 cm and height of 11 cm. What is its area?"
+  },
+  {
+    "id": "KM-L1-GEO-0846",
+    "file": "content-live/olympiad/L1/L1_GEO_shapes_2d_3d.json",
+    "stem": "A triangle has a base of 10 cm and height of 2 cm. What is its area?"
+  },
+  {
+    "id": "KM-L1-GEO-0847",
+    "file": "content-live/olympiad/L1/L1_GEO_shapes_2d_3d.json",
+    "stem": "A square is rotated 45°. It now looks like a diamond. Has the number of sides changed?"
+  },
+  {
+    "id": "KM-L1-GEO-0849",
+    "file": "content-live/olympiad/L1/L1_GEO_shapes_2d_3d.json",
+    "stem": "A piece of paper in the shape of an equilateral triangle is folded so that one vertex touches the midpoint of the opposite side. How many sides does the resulting flat shape have?"
+  },
+  {
+    "id": "KM-L1-GEO-0852",
+    "file": "content-live/olympiad/L1/L1_GEO_shapes_2d_3d.json",
+    "stem": "12 toothpicks are arranged to make 4 identical small squares in a 2×2 grid. What is the minimum number of toothpicks you must remove to leave exactly 2 non-overlapping squares?"
+  },
+  {
+    "id": "KM-L1-GEO-1172",
+    "file": "content-live/olympiad/L1/L1_GEO_spatial.json",
+    "stem": "Which direction now?"
+  },
+  {
+    "id": "KM-L1-GEO-1188",
+    "file": "content-live/olympiad/L1/L1_GEO_spatial.json",
+    "stem": "Which direction is Veer facing now?"
+  },
+  {
+    "id": "KM-L1-GEO-1208",
+    "file": "content-live/olympiad/L1/L1_GEO_spatial.json",
+    "stem": "What is to the right of the lamp?"
+  },
+  {
+    "id": "KM-L1-GEO-1266",
+    "file": "content-live/olympiad/L1/L1_GEO_spatial.json",
+    "stem": "Kabir stacks 3 cubes. The bottom cube is blue, the top is red. How many cubes are between them?"
+  },
+  {
+    "id": "KM-L1-GEO-1278",
+    "file": "content-live/olympiad/L1/L1_GEO_spatial.json",
+    "stem": "Kabir walks 8 steps forward and 6 steps backward. How many steps from the start?"
+  },
+  {
+    "id": "KM-L1-GEO-1279",
+    "file": "content-live/olympiad/L1/L1_GEO_spatial.json",
+    "stem": "Which direction is Leela facing now?"
+  },
+  {
+    "id": "KM-L1-GEO-1306",
+    "file": "content-live/olympiad/L1/L1_GEO_spatial.json",
+    "stem": "Which direction is Dev facing now?"
+  },
+  {
+    "id": "KM-L1-GEO-1313",
+    "file": "content-live/olympiad/L1/L1_GEO_spatial.json",
+    "stem": "Kabir faces East and turns left. Which direction is Kabir facing now?"
+  },
+  {
+    "id": "KM-L1-GEO-1439",
+    "file": "content-live/olympiad/L1/L1_GEO_spatial.json",
+    "stem": "Which direction now?"
+  },
+  {
+    "id": "KM-L1-GEO-1440",
+    "file": "content-live/olympiad/L1/L1_GEO_spatial.json",
+    "stem": "Which direction is Vikram facing now?"
+  },
+  {
+    "id": "KM-L1-GEO-1452",
+    "file": "content-live/olympiad/L1/L1_GEO_spatial.json",
+    "stem": "Aarav faces South and turns right. Which direction is Aarav facing now?"
+  },
+  {
+    "id": "KM-L1-GEO-1455",
+    "file": "content-live/olympiad/L1/L1_GEO_spatial.json",
+    "stem": "Which direction is Veer facing now?"
+  },
+  {
+    "id": "KM-L1-GEO-1472",
+    "file": "content-live/olympiad/L1/L1_GEO_spatial.json",
+    "stem": "Which direction is Meera facing now?"
+  },
+  {
+    "id": "KM-L1-GEO-1474",
+    "file": "content-live/olympiad/L1/L1_GEO_spatial.json",
+    "stem": "Aarav walks 3 steps forward and 4 steps backward. How many steps from the start?"
+  },
+  {
+    "id": "KM-L1-GEO-1536",
+    "file": "content-live/olympiad/L1/L1_GEO_spatial.json",
+    "stem": "Which direction is Neha facing now?"
+  },
+  {
+    "id": "KM-L1-GEO-1572",
+    "file": "content-live/olympiad/L1/L1_GEO_spatial.json",
+    "stem": "Which direction is Tara facing now?"
+  },
+  {
+    "id": "KM-L1-GEO-1573",
+    "file": "content-live/olympiad/L1/L1_GEO_spatial.json",
+    "stem": "Which direction is Dev facing now?"
+  },
+  {
+    "id": "KM-L1-GEO-1576",
+    "file": "content-live/olympiad/L1/L1_GEO_spatial.json",
+    "stem": "Which other word looks the same?"
+  },
+  {
+    "id": "KM-L1-GEO-1578",
+    "file": "content-live/olympiad/L1/L1_GEO_spatial.json",
+    "stem": ". . ?"
+  },
+  {
+    "id": "KM-L1-GEO-1603",
+    "file": "content-live/olympiad/L1/L1_GEO_spatial.json",
+    "stem": "Which direction is Veer facing now?"
+  },
+  {
+    "id": "KM-L1-GEO-1631",
+    "file": "content-live/olympiad/L1/L1_GEO_spatial.json",
+    "stem": "Which direction now?"
+  },
+  {
+    "id": "KM-L1-GEO-1645",
+    "file": "content-live/olympiad/L1/L1_GEO_spatial.json",
+    "stem": "What does the right wing look like?"
+  },
+  {
+    "id": "KM-L1-GEO-1663",
+    "file": "content-live/olympiad/L1/L1_GEO_spatial.json",
+    "stem": "Which direction now?"
+  },
+  {
+    "id": "KM-L1-GEO-1693",
+    "file": "content-live/olympiad/L1/L1_GEO_spatial.json",
+    "stem": "Which direction now?"
+  },
+  {
+    "id": "KM-L1-GEO-1701",
+    "file": "content-live/olympiad/L1/L1_GEO_spatial.json",
+    "stem": "Which direction now?"
+  },
+  {
+    "id": "KM-L1-GEO-1736",
+    "file": "content-live/olympiad/L1/L1_GEO_spatial.json",
+    "stem": "Which direction is Leela facing now?"
+  },
+  {
+    "id": "KM-L1-GEO-1843",
+    "file": "content-live/olympiad/L1/L1_GEO_spatial.json",
+    "stem": "Neha walks 10 steps forward and 4 steps backward. How many steps from the start?"
+  },
+  {
+    "id": "KM-L1-GEO-1858",
+    "file": "content-live/olympiad/L1/L1_GEO_spatial.json",
+    "stem": "What is to the right of the cup?"
+  },
+  {
+    "id": "KM-L1-GEO-1886",
+    "file": "content-live/olympiad/L1/L1_GEO_spatial.json",
+    "stem": "How many edges does a cube have?"
+  },
+  {
+    "id": "KM-L1-GEO-1897",
+    "file": "content-live/olympiad/L1/L1_GEO_spatial.json",
+    "stem": "How many edges does a cube have?"
+  },
+  {
+    "id": "KM-L1-GEO-1898",
+    "file": "content-live/olympiad/L1/L1_GEO_spatial.json",
+    "stem": "How many edges does a cube have?"
+  },
+  {
+    "id": "KM-L1-NT-0123",
+    "file": "content-live/olympiad/L1/L1_NT_number_sense.json",
+    "stem": "Veer baked 7 cookies on Monday and 8 cookies on Tuesday. How many cookies did Veer bake in all?"
+  },
+  {
+    "id": "KM-L1-NT-0189",
+    "file": "content-live/olympiad/L1/L1_NT_number_sense.json",
+    "stem": "A number cube (die) shows the number 5 on top. How many dots are on the top face?"
+  },
+  {
+    "id": "KM-L1-NT-0229",
+    "file": "content-live/olympiad/L1/L1_NT_number_sense.json",
+    "stem": "Veer had 15 kites but 7 were torn by the wind. How many kites can Veer still fly?"
+  },
+  {
+    "id": "KM-L1-NT-0259",
+    "file": "content-live/olympiad/L1/L1_NT_number_sense.json",
+    "stem": "What is in the 5th from bottom position?"
+  },
+  {
+    "id": "KM-L1-NT-0283",
+    "file": "content-live/olympiad/L1/L1_NT_number_sense.json",
+    "stem": "What is in the 1st position?"
+  },
+  {
+    "id": "KM-L1-NT-0322",
+    "file": "content-live/olympiad/L1/L1_NT_number_sense.json",
+    "stem": "What is in the 2nd position?"
+  },
+  {
+    "id": "KM-L1-NT-0337",
+    "file": "content-live/olympiad/L1/L1_NT_number_sense.json",
+    "stem": "What is in the 1st position?"
+  },
+  {
+    "id": "KM-L1-NT-0374",
+    "file": "content-live/olympiad/L1/L1_NT_number_sense.json",
+    "stem": "You have three 2-rupee coins. How much money do you have in total?"
+  },
+  {
+    "id": "KM-L1-NT-0393",
+    "file": "content-live/olympiad/L1/L1_NT_number_sense.json",
+    "stem": "How many ones are in the number 51?"
+  },
+  {
+    "id": "KM-L1-NT-0402",
+    "file": "content-live/olympiad/L1/L1_NT_number_sense.json",
+    "stem": "The number 79 has how many tens?"
+  },
+  {
+    "id": "KM-L1-NT-0417",
+    "file": "content-live/olympiad/L1/L1_NT_number_sense.json",
+    "stem": "How many fingers do you have on both hands together?"
+  },
+  {
+    "id": "KM-L1-NT-0434",
+    "file": "content-live/olympiad/L1/L1_NT_number_sense.json",
+    "stem": "Which number does NOT belong in this group: 2, 4, 5, 6, 8?"
+  },
+  {
+    "id": "KM-L1-NT-0438",
+    "file": "content-live/olympiad/L1/L1_NT_number_sense.json",
+    "stem": "How many ones are in the number 84?"
+  },
+  {
+    "id": "KM-L1-NT-0440",
+    "file": "content-live/olympiad/L1/L1_NT_number_sense.json",
+    "stem": "The number 24 has how many tens?"
+  },
+  {
+    "id": "KM-L1-NT-0441",
+    "file": "content-live/olympiad/L1/L1_NT_number_sense.json",
+    "stem": "How many ones are in the number 80?"
+  },
+  {
+    "id": "KM-L1-NT-0512",
+    "file": "content-live/olympiad/L1/L1_NT_number_sense.json",
+    "stem": "A bug walks around the outside of a square. How many corners does it turn?"
+  },
+  {
+    "id": "KM-L1-NT-0522",
+    "file": "content-live/olympiad/L1/L1_NT_number_sense.json",
+    "stem": "Out of 21 children, 11 do ballet and 11 do karate. If 1 do both, how many only do karate?"
+  },
+  {
+    "id": "KM-L1-NT-0524",
+    "file": "content-live/olympiad/L1/L1_NT_number_sense.json",
+    "stem": "Three kites are flying: A red one, a blue one, and a green one. One string is tangled. If the red kite has the longest string, and the blue kite has the shortest, which kite is in the middle height?"
+  },
+  {
+    "id": "KM-L1-NT-0538",
+    "file": "content-live/olympiad/L1/L1_NT_number_sense.json",
+    "stem": "Out of 25 children, 12 have a cat and 20 have a dog. If 7 do both, how many only have a dog?"
+  },
+  {
+    "id": "KM-L1-NT-0558",
+    "file": "content-live/olympiad/L1/L1_NT_number_sense.json",
+    "stem": "In a group, 7 children like red, 9 children like blue, and 6 like both. How many children only like red?"
+  },
+  {
+    "id": "KM-L1-NT-0577",
+    "file": "content-live/olympiad/L1/L1_NT_number_sense.json",
+    "stem": "There are 4 tables in a room. Each table has 4 legs. A cat is sleeping under one table. How many table legs are touching the floor?"
+  },
+  {
+    "id": "KM-L1-NT-0579",
+    "file": "content-live/olympiad/L1/L1_NT_number_sense.json",
+    "stem": "A cube has 6 faces. Two cubes are glued together face-to-face. How many faces can you see on the outside?"
+  },
+  {
+    "id": "KM-L1-NT-0674",
+    "file": "content-live/olympiad/L1/L1_NT_number_sense.json",
+    "stem": "A chessboard square is 8×8. How many small squares are along the border (the outer edge) of the chessboard?"
+  },
+  {
+    "id": "KM-L1-NT-0725",
+    "file": "content-live/olympiad/L1/L1_NT_number_sense.json",
+    "stem": "Which number is smaller: 134 or 355?"
+  },
+  {
+    "id": "KM-L1-NT-0755",
+    "file": "content-live/olympiad/L1/L1_NT_number_sense.json",
+    "stem": "Write the number that has 5 hundreds, 1 ten, and 0 ones. What is this number?"
+  },
+  {
+    "id": "KM-L1-NT-0785",
+    "file": "content-live/olympiad/L1/L1_NT_number_sense.json",
+    "stem": "On a standard die, opposite faces add up to 7. If the top face shows 1, what does the bottom face show?"
+  },
+  {
+    "id": "KM-L1-NT-0796",
+    "file": "content-live/olympiad/L1/L1_NT_number_sense.json",
+    "stem": "Write the number that has 4 hundreds, 6 tens, and 4 ones. What is this number?"
+  },
+  {
+    "id": "KM-L1-NT-0806",
+    "file": "content-live/olympiad/L1/L1_NT_number_sense.json",
+    "stem": "A caterpillar climbs 3 metres up a pole each day but slides down 1 metre each night. The pole is 10 metres tall. On which day does the caterpillar reach the top?"
+  },
+  {
+    "id": "KM-L1-NT-0808",
+    "file": "content-live/olympiad/L1/L1_NT_number_sense.json",
+    "stem": "Veer adds 96 and 22 during a math relay race. What is the sum?"
+  },
+  {
+    "id": "KM-L1-NT-0815",
+    "file": "content-live/olympiad/L1/L1_NT_number_sense.json",
+    "stem": "A rope is 20 metres long. You cut it into pieces, each 4 metres long. How many cuts do you need to make?"
+  },
+  {
+    "id": "KM-L1-NT-0817",
+    "file": "content-live/olympiad/L1/L1_NT_number_sense.json",
+    "stem": "What number is exactly halfway between 59 and 11?"
+  },
+  {
+    "id": "KM-L1-NT-0820",
+    "file": "content-live/olympiad/L1/L1_NT_number_sense.json",
+    "stem": "What is the value of the digit 6 in the number 654?"
+  },
+  {
+    "id": "KM-L1-NT-0860",
+    "file": "content-live/olympiad/L1/L1_NT_number_sense.json",
+    "stem": "A snake is made of 12 square body segments in a straight line. It turns a corner, forming an L-shape, with 5 segments going right and the rest going up (the corner segment is counted once). How many segments go up?"
+  },
+  {
+    "id": "KM-L1-NT-0896",
+    "file": "content-live/olympiad/L1/L1_NT_number_sense.json",
+    "stem": "Write the number that has 6 hundreds, 9 tens, and 3 ones. What is this number?"
+  },
+  {
+    "id": "KM-L1-NT-0900",
+    "file": "content-live/olympiad/L1/L1_NT_number_sense.json",
+    "stem": "What is the sum of the digits of the number 90?"
+  },
+  {
+    "id": "KM-L1-NT-0935",
+    "file": "content-live/olympiad/L1/L1_NT_number_sense.json",
+    "stem": "How many two-digit numbers have digits that add up to 7?"
+  },
+  {
+    "id": "KM-L1-NT-0941",
+    "file": "content-live/olympiad/L1/L1_NT_number_sense.json",
+    "stem": "What is the sum of the digits of the number 67?"
+  },
+  {
+    "id": "KM-L1-NT-0948",
+    "file": "content-live/olympiad/L1/L1_NT_number_sense.json",
+    "stem": "You fold a square piece of paper in half, then fold it in half again. You cut off one corner of the folded paper. When you unfold the paper, how many holes are there?"
+  },
+  {
+    "id": "KM-L1-NT-0972",
+    "file": "content-live/olympiad/L1/L1_NT_number_sense.json",
+    "stem": "At a party, 6 friends each shake hands with every other friend exactly once. How many handshakes happen in total?"
+  },
+  {
+    "id": "KM-L1-NT-0983",
+    "file": "content-live/olympiad/L1/L1_NT_number_sense.json",
+    "stem": "A school has 3 floors. On each floor there are 4 classrooms. Each classroom has 2 windows on the front wall and 1 window on the side wall. How many windows are there in the whole school?"
+  },
+  {
+    "id": "KM-L1-NT-0984",
+    "file": "content-live/olympiad/L1/L1_NT_number_sense.json",
+    "stem": "In a 3x3 magic square using numbers 1 to 9, every row, column, and diagonal adds to the same number. What is that number?"
+  },
+  {
+    "id": "KM-L1-NT-0985",
+    "file": "content-live/olympiad/L1/L1_NT_number_sense.json",
+    "stem": "A clock chimes once at 1 o'clock, twice at 2 o'clock, and so on. How many times does it chime from 1 o'clock to 10 o'clock in total?"
+  },
+  {
+    "id": "KM-L1-NT-0988",
+    "file": "content-live/olympiad/L1/L1_NT_number_sense.json",
+    "stem": "What is the sum of the digits of the number 86?"
+  },
+  {
+    "id": "KM-L1-NT-0994",
+    "file": "content-live/olympiad/L1/L1_NT_number_sense.json",
+    "stem": "How many triangles can you count in a triangle that has been divided into 4 smaller triangles by connecting the midpoints of its sides?"
+  },
+  {
+    "id": "KM-L1-NT-1000",
+    "file": "content-live/olympiad/L1/L1_NT_number_sense.json",
+    "stem": "A clock chimes once at 1 o'clock, twice at 2 o'clock, and so on. How many times does it chime from 1 o'clock to 15 o'clock in total?"
+  },
+  {
+    "id": "KM-L1-NT-1007",
+    "file": "content-live/olympiad/L1/L1_NT_number_sense.json",
+    "stem": "How many two-digit numbers have digits that add up to 5?"
+  },
+  {
+    "id": "KM-L1-NT-1014",
+    "file": "content-live/olympiad/L1/L1_NT_number_sense.json",
+    "stem": "In a 4x4 magic square using numbers 1 to 16, what should each row, column, and diagonal add up to?"
+  },
+  {
+    "id": "KM-L1-NT-1040",
+    "file": "content-live/olympiad/L1/L1_NT_number_sense.json",
+    "stem": "There are 3 boxes: One has only apples, one has only oranges, and one has both apples and oranges. All the labels on the boxes are WRONG. You pick one fruit from the box labelled 'Both'. It is an apple. What does the box labelled 'Oranges' actually contain?"
+  },
+  {
+    "id": "KM-L1-NT-1057",
+    "file": "content-live/olympiad/L1/L1_NT_number_sense.json",
+    "stem": "A caterpillar starts at one end of a leaf that is 10 cm long. Each minute, it crawls to the middle of the remaining distance. After 3 minutes, how far is the caterpillar from the starting end?"
+  },
+  {
+    "id": "KM-L1-NT-1146",
+    "file": "content-live/olympiad/L1/L1_NT_odd_even_skip.json",
+    "stem": "Is 17 an even number or an odd number?"
+  },
+  {
+    "id": "KM-L1-NT-1152",
+    "file": "content-live/olympiad/L1/L1_NT_odd_even_skip.json",
+    "stem": "Is 2 an even number or an odd number?"
+  },
+  {
+    "id": "KM-L1-NT-1157",
+    "file": "content-live/olympiad/L1/L1_NT_odd_even_skip.json",
+    "stem": "Is 7 an even number or an odd number?"
+  },
+  {
+    "id": "KM-L2-ALG-0048",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "After giving away 4, there are 21 left. How many were there at first?"
+  },
+  {
+    "id": "KM-L2-ALG-0056",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "After giving away 7, there are 5 left. How many were there at first?"
+  },
+  {
+    "id": "KM-L2-ALG-0060",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "After giving away 10, there are 2 left. How many were there at first?"
+  },
+  {
+    "id": "KM-L2-ALG-0064",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "He counts 8 heads and 22 legs. How many cows does the farmer have?"
+  },
+  {
+    "id": "KM-L2-ALG-0072",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "What is 8 × 3 + 28?"
+  },
+  {
+    "id": "KM-L2-ALG-0073",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "What is 719 − 511?"
+  },
+  {
+    "id": "KM-L2-ALG-0074",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "What is 12 ÷ 4?"
+  },
+  {
+    "id": "KM-L2-ALG-0080",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "What is 12 × 5?"
+  },
+  {
+    "id": "KM-L2-ALG-0082",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "What is 42 ÷ 6?"
+  },
+  {
+    "id": "KM-L2-ALG-0087",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "What is 5 × 3 + 17?"
+  },
+  {
+    "id": "KM-L2-ALG-0094",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "What is 502 − 421?"
+  },
+  {
+    "id": "KM-L2-ALG-0098",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "What is 5 × 4?"
+  },
+  {
+    "id": "KM-L2-ALG-0105",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "What is 592 + 128?"
+  },
+  {
+    "id": "KM-L2-ALG-0116",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "What is 3 × 4 + 30?"
+  },
+  {
+    "id": "KM-L2-ALG-0122",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "What is 8 × 9 + 17?"
+  },
+  {
+    "id": "KM-L2-ALG-0123",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "What is 692 + 192?"
+  },
+  {
+    "id": "KM-L2-ALG-0140",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "What is 652 − 613?"
+  },
+  {
+    "id": "KM-L2-ALG-0141",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "What is 11 × 12?"
+  },
+  {
+    "id": "KM-L2-ALG-0153",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "What is 3 × 7 + 5?"
+  },
+  {
+    "id": "KM-L2-ALG-0167",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "What is 4 × 6 + 8?"
+  },
+  {
+    "id": "KM-L2-ALG-0168",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "What is 191 + 266?"
+  },
+  {
+    "id": "KM-L2-ALG-0179",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "What is 421 + 105?"
+  },
+  {
+    "id": "KM-L2-ALG-0194",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "What is 6 × 3?"
+  },
+  {
+    "id": "KM-L2-ALG-0268",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "What is 991 − 288?"
+  },
+  {
+    "id": "KM-L2-ALG-0283",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "What is 7 × 3?"
+  },
+  {
+    "id": "KM-L2-ALG-0284",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "What is 9 × 7 + 24?"
+  },
+  {
+    "id": "KM-L2-ALG-0316",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "What is 44 ÷ 4?"
+  },
+  {
+    "id": "KM-L2-ALG-0328",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "What is 6 × 3 + 7?"
+  },
+  {
+    "id": "KM-L2-ALG-0329",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "What is 2 × 5?"
+  },
+  {
+    "id": "KM-L2-ALG-0352",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "What is 706 + 653?"
+  },
+  {
+    "id": "KM-L2-ALG-0365",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "What is 176 + 171?"
+  },
+  {
+    "id": "KM-L2-ALG-0382",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "What is 8 × 2?"
+  },
+  {
+    "id": "KM-L2-ALG-0383",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "What is 920 − 710?"
+  },
+  {
+    "id": "KM-L2-ALG-0421",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "What is 9 × 9?"
+  },
+  {
+    "id": "KM-L2-ALG-0423",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "What is 30 ÷ 6?"
+  },
+  {
+    "id": "KM-L2-ALG-0454",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "What is 12 ÷ 2?"
+  },
+  {
+    "id": "KM-L2-ALG-0455",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "What is 5 × 9 + 26?"
+  },
+  {
+    "id": "KM-L2-ALG-0480",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "What is 15 ÷ 5?"
+  },
+  {
+    "id": "KM-L2-ALG-0496",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "What is 303 + 825?"
+  },
+  {
+    "id": "KM-L2-ALG-0497",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "What is 36 ÷ 9?"
+  },
+  {
+    "id": "KM-L2-ALG-0522",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "What is 2 × 10?"
+  },
+  {
+    "id": "KM-L2-ALG-0536",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "What is 710 − 523?"
+  },
+  {
+    "id": "KM-L2-ALG-0537",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "What is 8 × 4 + 7?"
+  },
+  {
+    "id": "KM-L2-ALG-0573",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "What is 40 ÷ 5?"
+  },
+  {
+    "id": "KM-L2-ALG-0584",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "What is 54 ÷ 9?"
+  },
+  {
+    "id": "KM-L2-ALG-0606",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "What is 84 ÷ 12?"
+  },
+  {
+    "id": "KM-L2-ALG-0620",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "What is 698 − 101?"
+  },
+  {
+    "id": "KM-L2-ALG-0663",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "What is 110 ÷ 10?"
+  },
+  {
+    "id": "KM-L2-ALG-0693",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "What is 2 × 8 + 27?"
+  },
+  {
+    "id": "KM-L2-ALG-0694",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "What is 653 − 497?"
+  },
+  {
+    "id": "KM-L2-ALG-0720",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "What is 850 − 684?"
+  },
+  {
+    "id": "KM-L2-ALG-0748",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "What is 527 + 235?"
+  },
+  {
+    "id": "KM-L2-ALG-0770",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "What is 877 − 418?"
+  },
+  {
+    "id": "KM-L2-ALG-0772",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "What is 875 − 665?"
+  },
+  {
+    "id": "KM-L2-ALG-0785",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "What is 173 + 893?"
+  },
+  {
+    "id": "KM-L2-ALG-0788",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "What is 9 × 9 + 11?"
+  },
+  {
+    "id": "KM-L2-ALG-0827",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "What is 32 ÷ 8?"
+  },
+  {
+    "id": "KM-L2-ALG-0829",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "What is 683 + 197?"
+  },
+  {
+    "id": "KM-L2-ALG-0856",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "Cyrus had 55 marbles. Cyrus gave 24 to a friend, then bought 17 more. How many marbles now?"
+  },
+  {
+    "id": "KM-L2-ALG-0858",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "What is 11 × 11?"
+  },
+  {
+    "id": "KM-L2-ALG-0891",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "Pencils cost ₹22 each. Daria buys 7 pencils. How much does Daria spend in total (in ₹)?"
+  },
+  {
+    "id": "KM-L2-ALG-0907",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "Daria had 117 marbles. Daria gave 24 to a friend, then bought 39 more. How many marbles now?"
+  },
+  {
+    "id": "KM-L2-ALG-0909",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "Help Vanya with this: Pencils cost ₹15 each. Daria buys 7 pencils. How much does Daria spend in total (in ₹)?"
+  },
+  {
+    "id": "KM-L2-ALG-0912",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "What is 42 ÷ 7?"
+  },
+  {
+    "id": "KM-L2-ALG-0932",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "What is 2 × 5 + 26?"
+  },
+  {
+    "id": "KM-L2-ALG-0944",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "Gigi had 103 marbles. Gigi gave 8 to a friend, then bought 38 more. How many marbles now?"
+  },
+  {
+    "id": "KM-L2-ALG-0947",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "What is 5 × 2 + 4?"
+  },
+  {
+    "id": "KM-L2-ALG-0954",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "Pencils cost ₹25 each. Felix buys 8 pencils. How much does Felix spend in total (in ₹)?"
+  },
+  {
+    "id": "KM-L2-ALG-0961",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "Pencils cost ₹28 each. Daria buys 8 pencils. How much does Daria spend in total (in ₹)?"
+  },
+  {
+    "id": "KM-L2-ALG-0973",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "A printer prints 12 pages per minute. How many pages in 12 minutes?"
+  },
+  {
+    "id": "KM-L2-ALG-0981",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "Pencils cost ₹34 each. Felix buys 9 pencils. How much does Felix spend in total (in ₹)?"
+  },
+  {
+    "id": "KM-L2-ALG-1002",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "What is 28 ÷ 7?"
+  },
+  {
+    "id": "KM-L2-ALG-1004",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "What is 9 × 8 + 8?"
+  },
+  {
+    "id": "KM-L2-ALG-1007",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "Theo starts with ₹221. Buys a book for ₹16, then a snack for ₹47. How much money is left?"
+  },
+  {
+    "id": "KM-L2-ALG-1016",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "Pencils cost ₹30 each. Daria buys 8 pencils. How much does Daria spend in total (in ₹)?"
+  },
+  {
+    "id": "KM-L2-ALG-1022",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "Ben buys 8 packs of stickers with 9 in each. After giving away 22, how many are left?"
+  },
+  {
+    "id": "KM-L2-ALG-1030",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "Pencils cost ₹24 each. Aria buys 5 pencils. How much does Aria spend in total (in ₹)?"
+  },
+  {
+    "id": "KM-L2-ALG-1031",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "A printer prints 7 pages per minute. How many pages in 7 minutes?"
+  },
+  {
+    "id": "KM-L2-ALG-1056",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "Nora buys 3 packs of stickers with 15 in each. After giving away 14, how many are left?"
+  },
+  {
+    "id": "KM-L2-ALG-1057",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "Maya buys 9 packs of stickers with 11 in each. After giving away 85, how many are left?"
+  },
+  {
+    "id": "KM-L2-ALG-1058",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "Aarav has 71 cookies. After keeping 1 for later, the rest are shared equally among 4 friends. How many cookies does each friend get?"
+  },
+  {
+    "id": "KM-L2-ALG-1075",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "Jay buys 9 packs of stickers with 9 in each. After giving away 50, how many are left?"
+  },
+  {
+    "id": "KM-L2-ALG-1076",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "Theo buys 5 packs of stickers with 9 in each. After giving away 34, how many are left?"
+  },
+  {
+    "id": "KM-L2-ALG-1091",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "Maya buys 4 packs of stickers with 14 in each. After giving away 28, how many are left?"
+  },
+  {
+    "id": "KM-L2-ALG-1112",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "What is 926 + 339?"
+  },
+  {
+    "id": "KM-L2-ALG-1132",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "What is 12 × 11?"
+  },
+  {
+    "id": "KM-L2-ALG-1154",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "Aria climbs 21 steps each day. In 5 days, how many steps total?"
+  },
+  {
+    "id": "KM-L2-ALG-1155",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "Theo buys 4 packs of stickers with 13 in each. After giving away 20, how many are left?"
+  },
+  {
+    "id": "KM-L2-ALG-1167",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "What is 381 + 980?"
+  },
+  {
+    "id": "KM-L2-ALG-1173",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "Nora buys 5 packs of stickers with 12 in each. After giving away 41, how many are left?"
+  },
+  {
+    "id": "KM-L2-ALG-1188",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "What is 8 × 2?"
+  },
+  {
+    "id": "KM-L2-ALG-1209",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "What is 691 − 308?"
+  },
+  {
+    "id": "KM-L2-ALG-1227",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "Sara has 95 cookies. After keeping 1 for later, the rest are shared equally among 2 friends. How many cookies does each friend get?"
+  },
+  {
+    "id": "KM-L2-ALG-1228",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "Aria starts with ₹196. Buys a book for ₹42, then a snack for ₹23. How much money is left?"
+  },
+  {
+    "id": "KM-L2-ALG-1238",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "What is 11 × 9?"
+  },
+  {
+    "id": "KM-L2-ALG-1254",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "Aarav starts with ₹86. Buys a book for ₹20, then a snack for ₹10. How much money is left?"
+  },
+  {
+    "id": "KM-L2-ALG-1277",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "What is 4 × 9?"
+  },
+  {
+    "id": "KM-L2-ALG-1285",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "Maya has 38 cookies. After keeping 5 for later, the rest are shared equally among 6 friends. How many cookies does each friend get?"
+  },
+  {
+    "id": "KM-L2-ALG-1299",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "Theo climbs 36 steps each day. In 2 days, how many steps total?"
+  },
+  {
+    "id": "KM-L2-ALG-1300",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "Aarav starts with ₹233. Buys a book for ₹14, then a snack for ₹53. How much money is left?"
+  },
+  {
+    "id": "KM-L2-ALG-1315",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "What is 978 + 362?"
+  },
+  {
+    "id": "KM-L2-ALG-1319",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "Maya has 68 cookies. After keeping 0 for later, the rest are shared equally among 2 friends. How many cookies does each friend get?"
+  },
+  {
+    "id": "KM-L2-ALG-1320",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "Theo has 37 cookies. After keeping 0 for later, the rest are shared equally among 3 friends. How many cookies does each friend get?"
+  },
+  {
+    "id": "KM-L2-ALG-1352",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "What is 149 + 768?"
+  },
+  {
+    "id": "KM-L2-ALG-1354",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "What is 938 + 385?"
+  },
+  {
+    "id": "KM-L2-ALG-1377",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "Theo climbs 39 steps each day. In 6 days, how many steps total?"
+  },
+  {
+    "id": "KM-L2-ALG-1379",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "Aarav climbs 19 steps each day. In 7 days, how many steps total?"
+  },
+  {
+    "id": "KM-L2-ALG-1398",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "Maya buys 5 packs of stickers with 10 in each. After giving away 14, how many are left?"
+  },
+  {
+    "id": "KM-L2-ALG-1417",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "Theo climbs 25 steps each day. In 6 days, how many steps total?"
+  },
+  {
+    "id": "KM-L2-ALG-1437",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "What is 35 ÷ 5?"
+  },
+  {
+    "id": "KM-L2-ALG-1443",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "Ben buys 8 packs of stickers with 14 in each. After giving away 28, how many are left?"
+  },
+  {
+    "id": "KM-L2-ALG-1453",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "41 + ___ = 65. What is the missing number?"
+  },
+  {
+    "id": "KM-L2-ALG-1463",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "Maya climbs 18 steps each day. In 6 days, how many steps total?"
+  },
+  {
+    "id": "KM-L2-ALG-1464",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "Aarav buys 3 packs of stickers with 15 in each. After giving away 7, how many are left?"
+  },
+  {
+    "id": "KM-L2-ALG-1488",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "What is 788 + 686?"
+  },
+  {
+    "id": "KM-L2-ALG-1491",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "Maya starts with ₹144. Buys a book for ₹47, then a snack for ₹34. How much money is left?"
+  },
+  {
+    "id": "KM-L2-ALG-1513",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "What is 857 − 269?"
+  },
+  {
+    "id": "KM-L2-ALG-1518",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "Aarav has 42 cookies. After keeping 2 for later, the rest are shared equally among 6 friends. How many cookies does each friend get?"
+  },
+  {
+    "id": "KM-L2-ALG-1533",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "What is 10 × 2?"
+  },
+  {
+    "id": "KM-L2-ALG-1541",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "Aarav has 58 cookies. After keeping 3 for later, the rest are shared equally among 5 friends. How many cookies does each friend get?"
+  },
+  {
+    "id": "KM-L2-ALG-1549",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "What is 6 × 9?"
+  },
+  {
+    "id": "KM-L2-ALG-1551",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "What is 915 + 580?"
+  },
+  {
+    "id": "KM-L2-ALG-1556",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "Theo starts with ₹113. Buys a book for ₹12, then a snack for ₹56. How much money is left?"
+  },
+  {
+    "id": "KM-L2-ALG-1577",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "Aarav has 101 cookies. After keeping 0 for later, the rest are shared equally among 2 friends. How many cookies does each friend get?"
+  },
+  {
+    "id": "KM-L2-ALG-1623",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "Theo starts with ₹226. Buys a book for ₹59, then a snack for ₹17. How much money is left?"
+  },
+  {
+    "id": "KM-L2-ALG-1624",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "Nora climbs 58 steps each day. In 7 days, how many steps total?"
+  },
+  {
+    "id": "KM-L2-ALG-1650",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "What is 5 × 9 + 8?"
+  },
+  {
+    "id": "KM-L2-ALG-1657",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "Maya starts with ₹126. Buys a book for ₹14, then a snack for ₹52. How much money is left?"
+  },
+  {
+    "id": "KM-L2-ALG-1658",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "Theo has 119 cookies. After keeping 1 for later, the rest are shared equally among 5 friends. How many cookies does each friend get?"
+  },
+  {
+    "id": "KM-L2-ALG-1661",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "What is 72 ÷ 9?"
+  },
+  {
+    "id": "KM-L2-ALG-1713",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "Pencils cost ₹25 each. Gigi buys 9 pencils. How much does Gigi spend in total (in ₹)?"
+  },
+  {
+    "id": "KM-L2-ALG-1722",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "A printer prints 4 pages per minute. How many pages in 7 minutes?"
+  },
+  {
+    "id": "KM-L2-ALG-1764",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "Help Aarohi with this: Esha had 71 marbles. Esha gave 28 to a friend, then bought 30 more. How many marbles now?"
+  },
+  {
+    "id": "KM-L2-ALG-1766",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "Pencils cost ₹35 each. Gigi buys 5 pencils. How much does Gigi spend in total (in ₹)?"
+  },
+  {
+    "id": "KM-L2-ALG-1772",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "Pencils cost ₹20 each. Aria buys 8 pencils. How much does Aria spend in total (in ₹)?"
+  },
+  {
+    "id": "KM-L2-ALG-1773",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "Aria had 58 marbles. Aria gave 25 to a friend, then bought 44 more. How many marbles now?"
+  },
+  {
+    "id": "KM-L2-ALG-1797",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "Pencils cost ₹19 each. Gigi buys 4 pencils. How much does Gigi spend in total (in ₹)?"
+  },
+  {
+    "id": "KM-L2-ALG-1804",
+    "file": "content-live/olympiad/L2/L2_ALG_equations_disguise.json",
+    "stem": "Bo had 90 marbles. Bo gave 22 to a friend, then bought 26 more. How many marbles now?"
+  },
+  {
+    "id": "KM-L2-ALG-1861",
+    "file": "content-live/olympiad/L2/L2_ALG_fractions_intro.json",
+    "stem": "You have 0 quarter(s), 1 dime(s), 4 nickel(s), and 8 penny/pennies. How many cents in total?"
+  },
+  {
+    "id": "KM-L2-ALG-1880",
+    "file": "content-live/olympiad/L2/L2_ALG_fractions_intro.json",
+    "stem": "You have 0 quarter(s), 1 dime(s), 2 nickel(s), and 0 penny/pennies. How many cents in total?"
+  },
+  {
+    "id": "KM-L2-ALG-1883",
+    "file": "content-live/olympiad/L2/L2_ALG_fractions_intro.json",
+    "stem": "You have 2 quarter(s), 3 dime(s), 4 nickel(s), and 0 penny/pennies. How many cents in total?"
+  },
+  {
+    "id": "KM-L2-ALG-1898",
+    "file": "content-live/olympiad/L2/L2_ALG_fractions_intro.json",
+    "stem": "You have 2 quarter(s), 5 dime(s), 3 nickel(s), and 0 penny/pennies. How many cents in total?"
+  },
+  {
+    "id": "KM-L2-ALG-1899",
+    "file": "content-live/olympiad/L2/L2_ALG_fractions_intro.json",
+    "stem": "You have 0 quarter(s), 3 dime(s), 5 nickel(s), and 0 penny/pennies. How many cents in total?"
+  },
+  {
+    "id": "KM-L2-COM-0035",
+    "file": "content-live/olympiad/L2/L2_COM_logic_puzzles.json",
+    "stem": "Left side: 3 balls. Right side: Ball + 10. The scale is balanced. What does one item weigh?"
+  },
+  {
+    "id": "KM-L2-COM-0123",
+    "file": "content-live/olympiad/L2/L2_COM_logic_puzzles.json",
+    "stem": "What number must be added to 24 to make 52?"
+  },
+  {
+    "id": "KM-L2-COM-0198",
+    "file": "content-live/olympiad/L2/L2_COM_logic_puzzles.json",
+    "stem": "What number must be added to 13 to make 23?"
+  },
+  {
+    "id": "KM-L2-COM-0211",
+    "file": "content-live/olympiad/L2/L2_COM_logic_puzzles.json",
+    "stem": "What number must be added to 8 to make 76?"
+  },
+  {
+    "id": "KM-L2-COM-0227",
+    "file": "content-live/olympiad/L2/L2_COM_logic_puzzles.json",
+    "stem": "Without computing, is 131 × 241 even or odd?"
+  },
+  {
+    "id": "KM-L2-COM-0235",
+    "file": "content-live/olympiad/L2/L2_COM_logic_puzzles.json",
+    "stem": "In the number 7662, what is the value of the digit in the ones place?"
+  },
+  {
+    "id": "KM-L2-COM-0278",
+    "file": "content-live/olympiad/L2/L2_COM_logic_puzzles.json",
+    "stem": "In the number 3093, what is the value of the digit in the hundreds place?"
+  },
+  {
+    "id": "KM-L2-COM-0329",
+    "file": "content-live/olympiad/L2/L2_COM_logic_puzzles.json",
+    "stem": "In the number 8082, what is the value of the digit in the thousands place?"
+  },
+  {
+    "id": "KM-L2-COM-0343",
+    "file": "content-live/olympiad/L2/L2_COM_logic_puzzles.json",
+    "stem": "Which is the largest: 60, 146, 71?"
+  },
+  {
+    "id": "KM-L2-COM-0351",
+    "file": "content-live/olympiad/L2/L2_COM_logic_puzzles.json",
+    "stem": "Who is the oldest?"
+  },
+  {
+    "id": "KM-L2-COM-0363",
+    "file": "content-live/olympiad/L2/L2_COM_logic_puzzles.json",
+    "stem": "Chloe is older than Gita. Who is the oldest?"
+  },
+  {
+    "id": "KM-L2-COM-0374",
+    "file": "content-live/olympiad/L2/L2_COM_logic_puzzles.json",
+    "stem": "Dia is older than Beni. Beni is older than Anya. Who is the oldest?"
+  },
+  {
+    "id": "KM-L2-COM-0392",
+    "file": "content-live/olympiad/L2/L2_COM_logic_puzzles.json",
+    "stem": "What number must be added to 6 to make 40?"
+  },
+  {
+    "id": "KM-L2-COM-0444",
+    "file": "content-live/olympiad/L2/L2_COM_logic_puzzles.json",
+    "stem": "Dia is older than Faiz. Who is the oldest?"
+  },
+  {
+    "id": "KM-L2-COM-0453",
+    "file": "content-live/olympiad/L2/L2_COM_logic_puzzles.json",
+    "stem": "Faiz is older than Beni. Beni is older than Gita. Who is the oldest?"
+  },
+  {
+    "id": "KM-L2-COM-0466",
+    "file": "content-live/olympiad/L2/L2_COM_logic_puzzles.json",
+    "stem": "Ethan is older than Chloe. Chloe is older than Gita. Who is the oldest?"
+  },
+  {
+    "id": "KM-L2-COM-0474",
+    "file": "content-live/olympiad/L2/L2_COM_logic_puzzles.json",
+    "stem": "What number must be added to 23 to make 35?"
+  },
+  {
+    "id": "KM-L2-COM-0498",
+    "file": "content-live/olympiad/L2/L2_COM_logic_puzzles.json",
+    "stem": "Sara is 9 years old. Jay is 8. Maya is 7. Who is the youngest?"
+  },
+  {
+    "id": "KM-L2-COM-0544",
+    "file": "content-live/olympiad/L2/L2_COM_logic_puzzles.json",
+    "stem": "Who is the oldest?"
+  },
+  {
+    "id": "KM-L2-COM-0572",
+    "file": "content-live/olympiad/L2/L2_COM_logic_puzzles.json",
+    "stem": "What number must be added to 50 to make 66?"
+  },
+  {
+    "id": "KM-L2-COM-0578",
+    "file": "content-live/olympiad/L2/L2_COM_logic_puzzles.json",
+    "stem": "Without computing, is 228 × 205 even or odd?"
+  },
+  {
+    "id": "KM-L2-COM-0608",
+    "file": "content-live/olympiad/L2/L2_COM_logic_puzzles.json",
+    "stem": "Ethan is older than Faiz. Faiz is older than Dia. Who is the oldest?"
+  },
+  {
+    "id": "KM-L2-COM-0630",
+    "file": "content-live/olympiad/L2/L2_COM_logic_puzzles.json",
+    "stem": "Who is the oldest?"
+  },
+  {
+    "id": "KM-L2-COM-0633",
+    "file": "content-live/olympiad/L2/L2_COM_logic_puzzles.json",
+    "stem": "What is the sum of the digits of 1718?"
+  },
+  {
+    "id": "KM-L2-COM-0655",
+    "file": "content-live/olympiad/L2/L2_COM_logic_puzzles.json",
+    "stem": "Beni is older than Dia. Dia is older than Gita. Who is the oldest?"
+  },
+  {
+    "id": "KM-L2-COM-0666",
+    "file": "content-live/olympiad/L2/L2_COM_logic_puzzles.json",
+    "stem": "Dia is older than Faiz. Faiz is older than Chloe. Who is the oldest?"
+  },
+  {
+    "id": "KM-L2-COM-0667",
+    "file": "content-live/olympiad/L2/L2_COM_logic_puzzles.json",
+    "stem": "Who is the oldest?"
+  },
+  {
+    "id": "KM-L2-COM-0670",
+    "file": "content-live/olympiad/L2/L2_COM_logic_puzzles.json",
+    "stem": "Ethan is older than Chloe. Chloe is older than Faiz. Who is the oldest?"
+  },
+  {
+    "id": "KM-L2-COM-0674",
+    "file": "content-live/olympiad/L2/L2_COM_logic_puzzles.json",
+    "stem": "In the number 8170, what is the value of the digit in the ones place?"
+  },
+  {
+    "id": "KM-L2-COM-0679",
+    "file": "content-live/olympiad/L2/L2_COM_logic_puzzles.json",
+    "stem": "What number must be added to 47 to make 59?"
+  },
+  {
+    "id": "KM-L2-COM-0684",
+    "file": "content-live/olympiad/L2/L2_COM_logic_puzzles.json",
+    "stem": "Ethan is older than Beni. Beni is older than Chloe. Who is the oldest?"
+  },
+  {
+    "id": "KM-L2-COM-0696",
+    "file": "content-live/olympiad/L2/L2_COM_logic_puzzles.json",
+    "stem": "Who is the oldest?"
+  },
+  {
+    "id": "KM-L2-COM-0714",
+    "file": "content-live/olympiad/L2/L2_COM_logic_puzzles.json",
+    "stem": "Chloe is older than Gita. Gita is older than Ethan. Who is the oldest?"
+  },
+  {
+    "id": "KM-L2-COM-0715",
+    "file": "content-live/olympiad/L2/L2_COM_logic_puzzles.json",
+    "stem": "Which is the largest: 104, 203, 131?"
+  },
+  {
+    "id": "KM-L2-COM-0716",
+    "file": "content-live/olympiad/L2/L2_COM_logic_puzzles.json",
+    "stem": "Faiz is older than Ethan. Ethan is older than Anya. Who is the oldest?"
+  },
+  {
+    "id": "KM-L2-COM-0726",
+    "file": "content-live/olympiad/L2/L2_COM_logic_puzzles.json",
+    "stem": "Which statement is TRUE?"
+  },
+  {
+    "id": "KM-L2-COM-0747",
+    "file": "content-live/olympiad/L2/L2_COM_logic_puzzles.json",
+    "stem": "In the number 5499, what is the value of the digit in the tens place?"
+  },
+  {
+    "id": "KM-L2-COM-0784",
+    "file": "content-live/olympiad/L2/L2_COM_logic_puzzles.json",
+    "stem": "Chloe is older than Beni. Beni is older than Faiz. Who is the oldest?"
+  },
+  {
+    "id": "KM-L2-COM-0790",
+    "file": "content-live/olympiad/L2/L2_COM_logic_puzzles.json",
+    "stem": "Beni is older than Gita. Gita is older than Anya. Who is the oldest?"
+  },
+  {
+    "id": "KM-L2-COM-0792",
+    "file": "content-live/olympiad/L2/L2_COM_logic_puzzles.json",
+    "stem": "Which is the largest: 124, 183, 170?"
+  },
+  {
+    "id": "KM-L2-COM-0795",
+    "file": "content-live/olympiad/L2/L2_COM_logic_puzzles.json",
+    "stem": "Which is the largest: 54, 92, 165?"
+  },
+  {
+    "id": "KM-L2-COM-0796",
+    "file": "content-live/olympiad/L2/L2_COM_logic_puzzles.json",
+    "stem": "Gita is older than Ethan. Who is the oldest?"
+  },
+  {
+    "id": "KM-L2-COM-0805",
+    "file": "content-live/olympiad/L2/L2_COM_logic_puzzles.json",
+    "stem": "Which is the largest: 79, 91, 138?"
+  },
+  {
+    "id": "KM-L2-COM-0806",
+    "file": "content-live/olympiad/L2/L2_COM_logic_puzzles.json",
+    "stem": "Faiz is older than Beni. Beni is older than Anya. Who is the oldest?"
+  },
+  {
+    "id": "KM-L2-COM-0831",
+    "file": "content-live/olympiad/L2/L2_COM_logic_puzzles.json",
+    "stem": "Which is the largest: 130, 147, 70?"
+  },
+  {
+    "id": "KM-L2-COM-0833",
+    "file": "content-live/olympiad/L2/L2_COM_logic_puzzles.json",
+    "stem": "Which is the largest: 80, 167, 216?"
+  },
+  {
+    "id": "KM-L2-COM-0845",
+    "file": "content-live/olympiad/L2/L2_COM_logic_puzzles.json",
+    "stem": "Gita is older than Chloe. Chloe is older than Dia. Who is the oldest?"
+  },
+  {
+    "id": "KM-L2-COM-0853",
+    "file": "content-live/olympiad/L2/L2_COM_logic_puzzles.json",
+    "stem": "Which is the largest: 87, 208, 52?"
+  },
+  {
+    "id": "KM-L2-COM-0881",
+    "file": "content-live/olympiad/L2/L2_COM_logic_puzzles.json",
+    "stem": "Which is the largest: 217, 208, 205?"
+  },
+  {
+    "id": "KM-L2-COM-0936",
+    "file": "content-live/olympiad/L2/L2_COM_logic_puzzles.json",
+    "stem": "Gita is older than Dia. Dia is older than Beni. Who is the oldest?"
+  },
+  {
+    "id": "KM-L2-COM-0949",
+    "file": "content-live/olympiad/L2/L2_COM_logic_puzzles.json",
+    "stem": "Faiz is older than Ethan. Who is the oldest?"
+  },
+  {
+    "id": "KM-L2-COM-0973",
+    "file": "content-live/olympiad/L2/L2_COM_logic_puzzles.json",
+    "stem": "Which is the largest: 71, 73, 166?"
+  },
+  {
+    "id": "KM-L2-COM-0989",
+    "file": "content-live/olympiad/L2/L2_COM_logic_puzzles.json",
+    "stem": "Who is the oldest?"
+  },
+  {
+    "id": "KM-L2-COM-0990",
+    "file": "content-live/olympiad/L2/L2_COM_logic_puzzles.json",
+    "stem": "Ethan is older than Dia. Who is the oldest?"
+  },
+  {
+    "id": "KM-L2-COM-1008",
+    "file": "content-live/olympiad/L2/L2_COM_logic_puzzles.json",
+    "stem": "Who is the oldest?"
+  },
+  {
+    "id": "KM-L2-COM-1027",
+    "file": "content-live/olympiad/L2/L2_COM_logic_puzzles.json",
+    "stem": "Ethan is older than Gita. Gita is older than Dia. Who is the oldest?"
+  },
+  {
+    "id": "KM-L2-COM-1034",
+    "file": "content-live/olympiad/L2/L2_COM_logic_puzzles.json",
+    "stem": "Chloe is older than Faiz. Faiz is older than Beni. Who is the oldest?"
+  },
+  {
+    "id": "KM-L2-COM-1052",
+    "file": "content-live/olympiad/L2/L2_COM_logic_puzzles.json",
+    "stem": "Ethan is older than Gita. Gita is older than Anya. Who is the oldest?"
+  },
+  {
+    "id": "KM-L2-COM-1056",
+    "file": "content-live/olympiad/L2/L2_COM_logic_puzzles.json",
+    "stem": "Without computing, is 239 × 73 even or odd?"
+  },
+  {
+    "id": "KM-L2-COM-1057",
+    "file": "content-live/olympiad/L2/L2_COM_logic_puzzles.json",
+    "stem": "In the number 3497, what is the value of the digit in the ones place?"
+  },
+  {
+    "id": "KM-L2-COM-1060",
+    "file": "content-live/olympiad/L2/L2_COM_logic_puzzles.json",
+    "stem": "What number must be added to 5 to make 46?"
+  },
+  {
+    "id": "KM-L2-COM-1074",
+    "file": "content-live/olympiad/L2/L2_COM_logic_puzzles.json",
+    "stem": "Faiz is older than Beni. Beni is older than Dia. Who is the oldest?"
+  },
+  {
+    "id": "KM-L2-COM-1079",
+    "file": "content-live/olympiad/L2/L2_COM_logic_puzzles.json",
+    "stem": "What is the sum of the digits of 2756?"
+  },
+  {
+    "id": "KM-L2-COM-1085",
+    "file": "content-live/olympiad/L2/L2_COM_logic_puzzles.json",
+    "stem": "Without computing, is 267 × 138 even or odd?"
+  },
+  {
+    "id": "KM-L2-COM-1096",
+    "file": "content-live/olympiad/L2/L2_COM_logic_puzzles.json",
+    "stem": "What is the sum of the digits of 3868?"
+  },
+  {
+    "id": "KM-L2-COM-1098",
+    "file": "content-live/olympiad/L2/L2_COM_logic_puzzles.json",
+    "stem": "What is the sum of the digits of 321?"
+  },
+  {
+    "id": "KM-L2-COM-1111",
+    "file": "content-live/olympiad/L2/L2_COM_logic_puzzles.json",
+    "stem": "Faiz is older than Ethan. Ethan is older than Beni. Who is the oldest?"
+  },
+  {
+    "id": "KM-L2-COM-1117",
+    "file": "content-live/olympiad/L2/L2_COM_logic_puzzles.json",
+    "stem": "Without computing, is 147 × 132 even or odd?"
+  },
+  {
+    "id": "KM-L2-COM-1119",
+    "file": "content-live/olympiad/L2/L2_COM_logic_puzzles.json",
+    "stem": "In the number 6241, what is the value of the digit in the hundreds place?"
+  },
+  {
+    "id": "KM-L2-COM-1132",
+    "file": "content-live/olympiad/L2/L2_COM_logic_puzzles.json",
+    "stem": "Who is the oldest?"
+  },
+  {
+    "id": "KM-L2-COM-1135",
+    "file": "content-live/olympiad/L2/L2_COM_logic_puzzles.json",
+    "stem": "What is the sum of the digits of 319?"
+  },
+  {
+    "id": "KM-L2-COM-1137",
+    "file": "content-live/olympiad/L2/L2_COM_logic_puzzles.json",
+    "stem": "Beni is older than Chloe. Chloe is older than Dia. Who is the oldest?"
+  },
+  {
+    "id": "KM-L2-COM-1138",
+    "file": "content-live/olympiad/L2/L2_COM_logic_puzzles.json",
+    "stem": "Without computing, is 181 × 193 even or odd?"
+  },
+  {
+    "id": "KM-L2-COM-1143",
+    "file": "content-live/olympiad/L2/L2_COM_logic_puzzles.json",
+    "stem": "What is the sum of the digits of 7550?"
+  },
+  {
+    "id": "KM-L2-COM-1145",
+    "file": "content-live/olympiad/L2/L2_COM_logic_puzzles.json",
+    "stem": "Without computing, is 200 × 107 even or odd?"
+  },
+  {
+    "id": "KM-L2-COM-1159",
+    "file": "content-live/olympiad/L2/L2_COM_logic_puzzles.json",
+    "stem": "Faiz is older than Chloe. Chloe is older than Ethan. Who is the oldest?"
+  },
+  {
+    "id": "KM-L2-COM-1164",
+    "file": "content-live/olympiad/L2/L2_COM_logic_puzzles.json",
+    "stem": "Ethan is older than Dia. Who is the oldest?"
+  },
+  {
+    "id": "KM-L2-COM-1167",
+    "file": "content-live/olympiad/L2/L2_COM_logic_puzzles.json",
+    "stem": "Dia is older than Ethan. Ethan is older than Gita. Who is the oldest?"
+  },
+  {
+    "id": "KM-L2-COM-1168",
+    "file": "content-live/olympiad/L2/L2_COM_logic_puzzles.json",
+    "stem": "Which is the largest: 212, 84, 93?"
+  },
+  {
+    "id": "KM-L2-COM-1173",
+    "file": "content-live/olympiad/L2/L2_COM_logic_puzzles.json",
+    "stem": "Beni is older than Faiz. Faiz is older than Gita. Who is the oldest?"
+  },
+  {
+    "id": "KM-L2-COM-1192",
+    "file": "content-live/olympiad/L2/L2_COM_logic_puzzles.json",
+    "stem": "Beni is older than Gita. Gita is older than Dia. Who is the oldest?"
+  },
+  {
+    "id": "KM-L2-COM-1195",
+    "file": "content-live/olympiad/L2/L2_COM_logic_puzzles.json",
+    "stem": "Dia is older than Chloe. Who is the oldest?"
+  },
+  {
+    "id": "KM-L2-COM-1200",
+    "file": "content-live/olympiad/L2/L2_COM_logic_puzzles.json",
+    "stem": "Faiz is older than Dia. Dia is older than Gita. Who is the oldest?"
+  },
+  {
+    "id": "KM-L2-GEO-0006",
+    "file": "content-live/olympiad/L2/L2_GEO_angles_symmetry_grids.json",
+    "stem": "An L-shape is made of two rectangles: 5×4 cm and 5×4 cm. What is the total area?"
+  },
+  {
+    "id": "KM-L2-GEO-0007",
+    "file": "content-live/olympiad/L2/L2_GEO_angles_symmetry_grids.json",
+    "stem": "A square has side 3 cm. If enlarged 3 times, what is the new side length?"
+  },
+  {
+    "id": "KM-L2-GEO-0010",
+    "file": "content-live/olympiad/L2/L2_GEO_angles_symmetry_grids.json",
+    "stem": "Which picture shows the correct mirror image?"
+  },
+  {
+    "id": "KM-L2-GEO-0011",
+    "file": "content-live/olympiad/L2/L2_GEO_angles_symmetry_grids.json",
+    "stem": "Which picture shows the correct mirror image?"
+  },
+  {
+    "id": "KM-L2-GEO-0014",
+    "file": "content-live/olympiad/L2/L2_GEO_angles_symmetry_grids.json",
+    "stem": "Which picture shows the correct mirror image?"
+  },
+  {
+    "id": "KM-L2-GEO-0015",
+    "file": "content-live/olympiad/L2/L2_GEO_angles_symmetry_grids.json",
+    "stem": "Which picture shows the correct mirror image?"
+  },
+  {
+    "id": "KM-L2-GEO-0018",
+    "file": "content-live/olympiad/L2/L2_GEO_angles_symmetry_grids.json",
+    "stem": "An L-shape is made of two rectangles: 3×2 cm and 3×4 cm. What is the total area?"
+  },
+  {
+    "id": "KM-L2-GEO-0019",
+    "file": "content-live/olympiad/L2/L2_GEO_angles_symmetry_grids.json",
+    "stem": "An L-shape is made of two rectangles: 3×5 cm and 4×4 cm. What is the total area?"
+  },
+  {
+    "id": "KM-L2-GEO-0021",
+    "file": "content-live/olympiad/L2/L2_GEO_angles_symmetry_grids.json",
+    "stem": "Which picture shows the correct mirror image?"
+  },
+  {
+    "id": "KM-L2-GEO-0030",
+    "file": "content-live/olympiad/L2/L2_GEO_angles_symmetry_grids.json",
+    "stem": "An L-shape is made of two rectangles: 6×3 cm and 5×4 cm. What is the total area?"
+  },
+  {
+    "id": "KM-L2-GEO-0032",
+    "file": "content-live/olympiad/L2/L2_GEO_angles_symmetry_grids.json",
+    "stem": "A square has side 4 cm. If enlarged 3 times, what is the new side length?"
+  },
+  {
+    "id": "KM-L2-GEO-0038",
+    "file": "content-live/olympiad/L2/L2_GEO_angles_symmetry_grids.json",
+    "stem": "A square has side 8 cm. If enlarged 3 times, what is the new side length?"
+  },
+  {
+    "id": "KM-L2-GEO-0072",
+    "file": "content-live/olympiad/L2/L2_GEO_angles_symmetry_grids.json",
+    "stem": "A rectangle is 12 cm by 6 cm. What is its area in sq cm?"
+  },
+  {
+    "id": "KM-L2-GEO-0148",
+    "file": "content-live/olympiad/L2/L2_GEO_angles_symmetry_grids.json",
+    "stem": "How many lines of symmetry does a rectangle (not a square) have?"
+  },
+  {
+    "id": "KM-L2-GEO-0155",
+    "file": "content-live/olympiad/L2/L2_GEO_angles_symmetry_grids.json",
+    "stem": "A rectangle is 11 cm by 12 cm. What is its area in sq cm?"
+  },
+  {
+    "id": "KM-L2-GEO-0253",
+    "file": "content-live/olympiad/L2/L2_GEO_angles_symmetry_grids.json",
+    "stem": "How many lines of symmetry does a rectangle (not a square) have?"
+  },
+  {
+    "id": "KM-L2-GEO-0273",
+    "file": "content-live/olympiad/L2/L2_GEO_angles_symmetry_grids.json",
+    "stem": "A rectangle is 15 cm by 3 cm. What is its area in sq cm?"
+  },
+  {
+    "id": "KM-L2-GEO-0324",
+    "file": "content-live/olympiad/L2/L2_GEO_angles_symmetry_grids.json",
+    "stem": "How many lines of symmetry does a NON-square rectangle have?"
+  },
+  {
+    "id": "KM-L2-GEO-0349",
+    "file": "content-live/olympiad/L2/L2_GEO_angles_symmetry_grids.json",
+    "stem": "How many lines of symmetry does a rectangle (not a square) have?"
+  },
+  {
+    "id": "KM-L2-GEO-0524",
+    "file": "content-live/olympiad/L2/L2_GEO_angles_symmetry_grids.json",
+    "stem": "Aarohi is measuring and building: A box is 4 cubes long, 5 cubes wide, and 4 cubes tall. How many cubes fill it?"
+  },
+  {
+    "id": "KM-L2-GEO-0562",
+    "file": "content-live/olympiad/L2/L2_GEO_angles_symmetry_grids.json",
+    "stem": "Vanya is measuring and building: A box is 3 cubes long, 3 cubes wide, and 4 cubes tall. How many cubes fill it?"
+  },
+  {
+    "id": "KM-L2-GEO-0569",
+    "file": "content-live/olympiad/L2/L2_GEO_angles_symmetry_grids.json",
+    "stem": "Aarohi is measuring and building: How many faces does a square pyramid have?"
+  },
+  {
+    "id": "KM-L2-GEO-0942",
+    "file": "content-live/olympiad/L2/L2_GEO_angles_symmetry_grids.json",
+    "stem": "Help Vanya with this: A rectangle is 20 cm by 8 cm. What is its area (in cm²)?"
+  },
+  {
+    "id": "KM-L2-GEO-0951",
+    "file": "content-live/olympiad/L2/L2_GEO_angles_symmetry_grids.json",
+    "stem": "Chikoo is exploring shapes: A shape has 4-fold rotational symmetry. By how many degrees can you rotate it to look the same?"
+  },
+  {
+    "id": "KM-L2-GEO-0958",
+    "file": "content-live/olympiad/L2/L2_GEO_angles_symmetry_grids.json",
+    "stem": "Aarohi is exploring shapes: How many faces does a cube have?"
+  },
+  {
+    "id": "KM-L2-GEO-0967",
+    "file": "content-live/olympiad/L2/L2_GEO_angles_symmetry_grids.json",
+    "stem": "A rectangle is 18 cm by 9 cm. What is its area (in cm²)?"
+  },
+  {
+    "id": "KM-L2-GEO-0976",
+    "file": "content-live/olympiad/L2/L2_GEO_perimeter_area.json",
+    "stem": "A rectangle is 17 cm by 16 cm. What is its perimeter?"
+  },
+  {
+    "id": "KM-L2-GEO-0984",
+    "file": "content-live/olympiad/L2/L2_GEO_perimeter_area.json",
+    "stem": "A rectangle is 24 cm by 22 cm. What is its perimeter?"
+  },
+  {
+    "id": "KM-L2-GEO-0985",
+    "file": "content-live/olympiad/L2/L2_GEO_perimeter_area.json",
+    "stem": "A square has side 26 cm. What is its perimeter?"
+  },
+  {
+    "id": "KM-L2-GEO-0997",
+    "file": "content-live/olympiad/L2/L2_GEO_perimeter_area.json",
+    "stem": "A rectangle is 10 cm by 23 cm. What is its perimeter?"
+  },
+  {
+    "id": "KM-L2-GEO-1000",
+    "file": "content-live/olympiad/L2/L2_GEO_perimeter_area.json",
+    "stem": "A square has side 22 cm. What is its perimeter?"
+  },
+  {
+    "id": "KM-L2-GEO-1056",
+    "file": "content-live/olympiad/L2/L2_GEO_perimeter_area.json",
+    "stem": "A rectangle is 10 cm by 5 cm. What is its perimeter?"
+  },
+  {
+    "id": "KM-L2-GEO-1066",
+    "file": "content-live/olympiad/L2/L2_GEO_perimeter_area.json",
+    "stem": "A square has side 4 cm. What is its perimeter?"
+  },
+  {
+    "id": "KM-L2-GEO-1085",
+    "file": "content-live/olympiad/L2/L2_GEO_perimeter_area.json",
+    "stem": "A rectangle is 22 cm by 17 cm. What is its perimeter?"
+  },
+  {
+    "id": "KM-L2-GEO-1093",
+    "file": "content-live/olympiad/L2/L2_GEO_perimeter_area.json",
+    "stem": "A square has side 11 cm. What is its perimeter?"
+  },
+  {
+    "id": "KM-L2-NT-0242",
+    "file": "content-live/olympiad/L2/L2_NT_place_value.json",
+    "stem": "A rectangle is divided into smaller squares. There are 2 rows with 3 squares in each row. How many small squares are there?"
+  },
+  {
+    "id": "KM-L2-NT-0348",
+    "file": "content-live/olympiad/L2/L2_NT_place_value.json",
+    "stem": "It is 4:00. What time will it be in 15 minutes?"
+  },
+  {
+    "id": "KM-L2-NT-0355",
+    "file": "content-live/olympiad/L2/L2_NT_place_value.json",
+    "stem": "It is 4:45. What time will it be in 60 minutes?"
+  },
+  {
+    "id": "KM-L2-NT-0569",
+    "file": "content-live/olympiad/L2/L2_NT_place_value.json",
+    "stem": "It is 7:00. What time will it be in 60 minutes?"
+  },
+  {
+    "id": "KM-L2-NT-0772",
+    "file": "content-live/olympiad/L2/L2_NT_place_value.json",
+    "stem": "It is 2:15. What time will it be in 30 minutes?"
+  },
+  {
+    "id": "KM-L2-NT-0781",
+    "file": "content-live/olympiad/L2/L2_NT_place_value.json",
+    "stem": "A grid has 7 rows and 12 columns of stickers. How many stickers are there in total?"
+  },
+  {
+    "id": "KM-L2-NT-0818",
+    "file": "content-live/olympiad/L2/L2_NT_place_value.json",
+    "stem": "It is 8:00. What time will it be in 90 minutes?"
+  },
+  {
+    "id": "KM-L2-NT-0836",
+    "file": "content-live/olympiad/L2/L2_NT_place_value.json",
+    "stem": "A grid has 8 rows and 15 columns of stickers. How many stickers are there in total?"
+  },
+  {
+    "id": "KM-L2-NT-0937",
+    "file": "content-live/olympiad/L2/L2_NT_place_value.json",
+    "stem": "There are 24 bunches of grapes with 25 grapes in each. How many grapes are there?"
+  },
+  {
+    "id": "KM-L2-NT-1082",
+    "file": "content-live/olympiad/L2/L2_NT_place_value.json",
+    "stem": "A grid has 9 rows and 13 columns of stickers. How many stickers are there in total?"
+  },
+  {
+    "id": "KM-L2-NT-1113",
+    "file": "content-live/olympiad/L2/L2_NT_place_value.json",
+    "stem": "A grid has 10 rows and 7 columns of stickers. How many stickers are there in total?"
+  },
+  {
+    "id": "KM-L2-NT-1140",
+    "file": "content-live/olympiad/L2/L2_NT_place_value.json",
+    "stem": "There are 22 bunches of grapes with 5 grapes in each. How many grapes are there?"
+  },
+  {
+    "id": "KM-L2-NT-1150",
+    "file": "content-live/olympiad/L2/L2_NT_place_value.json",
+    "stem": "A grid has 7 rows and 14 columns of stickers. How many stickers are there in total?"
+  },
+  {
+    "id": "KM-L2-NT-1196",
+    "file": "content-live/olympiad/L2/L2_NT_place_value.json",
+    "stem": "A grid has 10 rows and 12 columns of stickers. How many stickers are there in total?"
+  },
+  {
+    "id": "KM-L2-NT-1204",
+    "file": "content-live/olympiad/L2/L2_NT_place_value.json",
+    "stem": "There are 29 bunches of grapes with 5 grapes in each. How many grapes are there?"
+  },
+  {
+    "id": "KM-L2-NT-1272",
+    "file": "content-live/olympiad/L2/L2_NT_place_value.json",
+    "stem": "There are 25 bunches of grapes with 5 grapes in each. How many grapes are there?"
+  },
+  {
+    "id": "A4-FRC-0103",
+    "file": "content-live/curriculum/icse/grade4/questions.json",
+    "stem": "Add: 1/4 + 1/4."
+  },
+  {
+    "id": "A1-SHP-0548",
+    "file": "content-live/curriculum/ncert/grade1/questions.json",
+    "stem": "What shape is it?"
+  },
+  {
+    "id": "A1-SHP-0560",
+    "file": "content-live/curriculum/ncert/grade1/questions.json",
+    "stem": "What shape is it?"
+  }
+]

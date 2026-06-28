@@ -38,10 +38,12 @@ class LevelService {
   Future<Map<String, dynamic>> getNextQuestion(
     String level,
     String topicKey, {
+    String? userId,
     double theta = 0.0,
     List<String> exclude = const [],
   }) async {
     final q = <String, String>{'theta': '$theta'};
+    if (userId != null) q['user_id'] = userId;
     if (exclude.isNotEmpty) q['exclude'] = exclude.join(',');
     final uri = Uri.parse('$_base/v3/olympiad/levels/$level/topics/$topicKey/next')
         .replace(queryParameters: q);
@@ -76,6 +78,37 @@ class LevelService {
           String board, int grade, String chapter) =>
       _getJson(
           '/v3/curriculum/$board/grade/$grade/chapter/${Uri.encodeComponent(chapter)}/questions');
+
+  // ------------------------------------------------------------- settings
+  /// The user's app-scoping settings: chosen level (L1-L8), grade, curriculum,
+  /// and `onboarded` (true once a level is picked).
+  Future<Map<String, dynamic>> getSettings(String userId) {
+    final uri = Uri.parse('$_base/v3/me/settings')
+        .replace(queryParameters: {'user_id': userId});
+    return http.get(uri).timeout(const Duration(seconds: 15)).then((res) {
+      if (res.statusCode != 200) {
+        throw ApiException('me/settings failed: ${res.statusCode}');
+      }
+      return jsonDecode(res.body) as Map<String, dynamic>;
+    });
+  }
+
+  /// Persist the chosen level / grade (onboarding + the in-app level switcher).
+  Future<void> setSettings(String userId,
+      {String? selectedLevel, int? grade, String? curriculum}) async {
+    final body = <String, dynamic>{'user_id': userId};
+    if (selectedLevel != null) body['selected_level'] = selectedLevel;
+    if (grade != null) body['grade'] = grade;
+    if (curriculum != null) body['curriculum'] = curriculum;
+    final res = await http
+        .post(Uri.parse('$_base/v3/me/settings'),
+            headers: {'Content-Type': 'application/json'},
+            body: jsonEncode(body))
+        .timeout(const Duration(seconds: 15));
+    if (res.statusCode != 200) {
+      throw ApiException('set settings failed: ${res.statusCode} ${res.body}');
+    }
+  }
 
   // ------------------------------------------------------- unified economy
   /// Grade an answer server-side. Drives the ONE economy (coins/gems/XP/
@@ -125,9 +158,11 @@ class LevelService {
 
   /// Academic height + strand mastery, derived from the same state as the
   /// wallet (and now fed by /v3 answer-check), so performance never disagrees.
-  Future<Map<String, dynamic>> getProgress(String userId) {
-    final uri = Uri.parse('$_base/v3/me/progress')
-        .replace(queryParameters: {'user_id': userId});
+  Future<Map<String, dynamic>> getProgress(String userId, {String? level}) {
+    final uri = Uri.parse('$_base/v3/me/progress').replace(queryParameters: {
+      'user_id': userId,
+      if (level != null) 'level': level,
+    });
     return http.get(uri).timeout(const Duration(seconds: 15)).then((res) {
       if (res.statusCode != 200) {
         throw ApiException('me/progress failed: ${res.statusCode}');

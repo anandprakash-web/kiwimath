@@ -139,7 +139,7 @@ class _SetPinDialogState extends State<_SetPinDialog> {
             Container(
               width: 56,
               height: 56,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 color: KiwiColors.kiwiPrimaryLight,
                 shape: BoxShape.circle,
               ),
@@ -156,7 +156,7 @@ class _SetPinDialogState extends State<_SetPinDialog> {
                     color: KiwiColors.textDark)),
             const SizedBox(height: 4),
             Text(subtitle,
-                style: TextStyle(
+                style: const TextStyle(
                     fontSize: 13,
                     color: KiwiColors.textMuted,
                     fontWeight: FontWeight.w500)),
@@ -177,7 +177,7 @@ class _SetPinDialogState extends State<_SetPinDialog> {
             const SizedBox(height: 8),
             TextButton(
               onPressed: () => Navigator.of(context).pop(null),
-              child: Text('Cancel',
+              child: const Text('Cancel',
                   style: TextStyle(
                       color: KiwiColors.textMuted,
                       fontWeight: FontWeight.w600)),
@@ -327,7 +327,7 @@ class _EnterPinDialogState extends State<_EnterPinDialog> {
             Container(
               width: 56,
               height: 56,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 color: KiwiColors.kiwiPrimaryLight,
                 shape: BoxShape.circle,
               ),
@@ -343,7 +343,7 @@ class _EnterPinDialogState extends State<_EnterPinDialog> {
                     fontWeight: FontWeight.w800,
                     color: KiwiColors.textDark)),
             const SizedBox(height: 4),
-            Text('4-digit PIN to access Parent section',
+            const Text('4-digit PIN to access Parent section',
                 style: TextStyle(
                     fontSize: 13,
                     color: KiwiColors.textMuted,
@@ -396,7 +396,7 @@ class _EnterPinDialogState extends State<_EnterPinDialog> {
             const SizedBox(height: 8),
             TextButton(
               onPressed: () => Navigator.of(context).pop(false),
-              child: Text('Cancel',
+              child: const Text('Cancel',
                   style: TextStyle(
                       color: KiwiColors.textMuted,
                       fontWeight: FontWeight.w600)),

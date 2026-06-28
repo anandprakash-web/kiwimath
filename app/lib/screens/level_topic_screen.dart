@@ -83,9 +83,9 @@ class _LevelTopicScreenState extends State<LevelTopicScreen> {
       ),
       body: SafeArea(
         child: ListView.separated(
-          padding: EdgeInsets.all(KiwiSpacing.lg),
+          padding: const EdgeInsets.all(KiwiSpacing.lg),
           itemCount: widget.topics.length,
-          separatorBuilder: (_, __) => SizedBox(height: KiwiSpacing.md),
+          separatorBuilder: (_, __) => const SizedBox(height: KiwiSpacing.md),
           itemBuilder: (context, index) {
             final topic = widget.topics[index];
             return _TopicCard(
@@ -131,7 +131,7 @@ class _LevelTopicScreenState extends State<LevelTopicScreen> {
       if (mounted) {
         setState(() => _loadingTopic = null);
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
+          const SnackBar(
             content: Text('No questions available yet for this topic'),
             behavior: SnackBarBehavior.floating,
           ),
@@ -176,7 +176,7 @@ class _TopicCard extends StatelessWidget {
         onTap: isLoading ? null : onTap,
         borderRadius: BorderRadius.circular(tier.shape.cardRadius),
         child: Container(
-          padding: EdgeInsets.all(KiwiSpacing.lg),
+          padding: const EdgeInsets.all(KiwiSpacing.lg),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(tier.shape.cardRadius),
             border: Border.all(color: colors.topicCardBorder),
@@ -199,7 +199,7 @@ class _TopicCard extends StatelessWidget {
                   shape: BoxShape.circle,
                 ),
               ),
-              SizedBox(width: KiwiSpacing.md),
+              const SizedBox(width: KiwiSpacing.md),
 
               // Content
               Expanded(
@@ -216,7 +216,7 @@ class _TopicCard extends StatelessWidget {
                       ),
                     ),
                     if (tagline.isNotEmpty) ...[
-                      SizedBox(height: KiwiSpacing.xs - 2),
+                      const SizedBox(height: KiwiSpacing.xs - 2),
                       Text(
                         tagline,
                         style: TextStyle(
@@ -226,7 +226,7 @@ class _TopicCard extends StatelessWidget {
                         ),
                       ),
                     ],
-                    SizedBox(height: KiwiSpacing.xs),
+                    const SizedBox(height: KiwiSpacing.xs),
                     Text(
                       '$questionCount questions',
                       style: TextStyle(

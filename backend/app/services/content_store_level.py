@@ -37,7 +37,51 @@ LEVEL_NAMES = {
     "L5": "Grade 9-10 (IOQM)", "L6": "Olympiad (RMO)", "L7": "Olympiad (INMO)",
     "L8": "Olympiad (IMO)",
 }
-PILLAR_NAMES = {"NT": "Number Theory", "ALG": "Algebra", "GEO": "Geometry", "COM": "Combinatorics"}
+
+# Rich per-level metadata for onboarding (grades + exam targets + tagline).
+# Editable here so the onboarding copy can change WITHOUT an app rebuild — the
+# app renders whatever /v3/olympiad/levels returns. Exam names are the founder's
+# to tune; grade_min/grade_max drive grade-first onboarding + School scoping.
+LEVEL_META = {
+    "L1": {"emoji": "\U0001F331", "grades": "1-2",  "grade_min": 1,  "grade_max": 2,
+           "tagline": "First puzzles & number sense",
+           "exams": ["School olympiads (IMO / IEO foundation)"]},
+    "L2": {"emoji": "\U0001F9E9", "grades": "3-4",  "grade_min": 3,  "grade_max": 4,
+           "tagline": "Building problem-solving blocks",
+           "exams": ["Math Kangaroo (Ecolier)", "NSTSE", "School olympiads"]},
+    "L3": {"emoji": "\U0001F680", "grades": "5-6",  "grade_min": 5,  "grade_max": 6,
+           "tagline": "Where real problem-solving begins",
+           "exams": ["Math Kangaroo (Benjamin)", "NMTC (Primary)"]},
+    "L4": {"emoji": "⚡",     "grades": "7-8",  "grade_min": 7,  "grade_max": 8,
+           "tagline": "Pre-olympiad foundations",
+           "exams": ["NMTC (Junior)", "Math Kangaroo (Cadet)", "IOQM prep"]},
+    "L5": {"emoji": "\U0001F3AF", "grades": "9-10", "grade_min": 9,  "grade_max": 10,
+           "tagline": "The IOQM track",
+           "exams": ["IOQM", "AMC 10", "NMTC (Inter)"]},
+    "L6": {"emoji": "\U0001F3C5", "grades": "9-12", "grade_min": 9,  "grade_max": 12,
+           "tagline": "Regional Mathematical Olympiad",
+           "exams": ["RMO"]},
+    "L7": {"emoji": "\U0001F947", "grades": "9-12", "grade_min": 9,  "grade_max": 12,
+           "tagline": "Indian National Mathematical Olympiad",
+           "exams": ["INMO"]},
+    "L8": {"emoji": "\U0001F30D", "grades": "11-12", "grade_min": 11, "grade_max": 12,
+           "tagline": "The international summit",
+           "exams": ["IMO"]},
+}
+# The nine olympiad strands (founder-specified, 2026-06-22). Converted (typed
+# HTML/LaTeX) content is tagged with one of these.
+OLYMPIAD_STRANDS = [
+    {"code": "ALG",   "name": "Algebra"},
+    {"code": "NT",    "name": "Number Theory"},
+    {"code": "COM",   "name": "Combinatorics"},
+    {"code": "GEO",   "name": "Geometry"},
+    {"code": "CGEO",  "name": "Combinatorial Geometry"},
+    {"code": "TRIG",  "name": "Trigonometry"},
+    {"code": "BMATH", "name": "Basic Mathematics"},
+    {"code": "ARITH", "name": "Arithmetic"},
+    {"code": "ALGNT", "name": "Algebra-Number Theory"},
+]
+PILLAR_NAMES = {s["code"]: s["name"] for s in OLYMPIAD_STRANDS}
 BOARD_NAMES = {
     "ncert": "NCERT (CBSE)", "igcse": "Cambridge Primary", "icse": "ICSE",
     "singapore": "Singapore", "us-common-core": "US Common Core",
@@ -48,9 +92,15 @@ class LQ:
     """Lightweight, serve-ready question (the content is pre-validated)."""
     __slots__ = (
         "id", "stem", "choices", "correct_answer", "correct_value", "hint",
-        "diagnostics", "visual_svg", "visual_requirement", "irt_b", "irt_params",
+        "diagnostics", "visual_svg", "visual_png", "visual_requirement", "irt_b", "irt_params",
         "difficulty_tier", "difficulty_score", "interaction_mode", "skill_id",
-        "solution_steps", "legacy_id",
+        "solution_steps", "solution", "legacy_id",
+        # provenance + media (Vedantu content library ingestion)
+        "source", "video_url", "verified",
+        # accepted answer range for fraction/decimal numeric questions
+        "answer_min", "answer_max",
+        # adaptive-layer concept-clustering tags
+        "skill_size", "skill_rank", "is_skill_original", "skill_seq", "skill_difficulty",
     )
 
     def __init__(self, d: dict):
@@ -62,6 +112,7 @@ class LQ:
         self.hint = d.get("hint")
         self.diagnostics = d.get("diagnostics")
         self.visual_svg = d.get("visual_svg")
+        self.visual_png = d.get("visual_png")
         self.visual_requirement = d.get("visual_requirement")
         self.irt_b = d.get("irt_b")
         self.irt_params = d.get("irt_params")
@@ -70,7 +121,43 @@ class LQ:
         self.interaction_mode = d.get("interaction_mode", "mcq")
         self.skill_id = d.get("skill_id")
         self.solution_steps = d.get("solution_steps")
+        self.solution = d.get("solution")
         self.legacy_id = d.get("legacy_id")
+        self.source = d.get("source")
+        self.video_url = d.get("video_url")
+        # human-authored, competition-sourced, answer-key-validated content
+        # (auto-true for any item carrying a provenance source).
+        self.verified = bool(d.get("verified") or d.get("source"))
+        # accepted numeric range (fraction/decimal answers); None => exact match
+        self.answer_min = d.get("answer_min")
+        self.answer_max = d.get("answer_max")
+        # concept-cluster tags (adaptive skill ladder)
+        self.skill_size = d.get("skill_size")
+        self.skill_rank = d.get("skill_rank")
+        self.is_skill_original = d.get("is_skill_original")
+        self.skill_seq = d.get("skill_seq")
+        self.skill_difficulty = d.get("skill_difficulty")
+
+
+def numeric_correct(q, sv) -> bool:
+    """Grade a typed numeric answer. If the question carries an accepted range
+    (answer_min/answer_max — used for fraction/decimal keys), accept any value
+    inside it; otherwise require an exact match on correct_value."""
+    lo = getattr(q, "answer_min", None)
+    hi = getattr(q, "answer_max", None)
+    try:
+        x = float(sv)
+    except (TypeError, ValueError):
+        return str(sv).strip() == str(getattr(q, "correct_value", "")).strip()
+    if lo is not None and hi is not None:
+        try:
+            return float(lo) <= x <= float(hi)
+        except (TypeError, ValueError):
+            pass
+    try:
+        return abs(x - float(q.correct_value)) < 1e-9
+    except (TypeError, ValueError):
+        return str(sv).strip() == str(getattr(q, "correct_value", "")).strip()
 
 
 def _chapter_sort_key(name: str) -> Tuple[float, str]:
@@ -208,12 +295,20 @@ class ContentStoreLevel:
             level = f"L{i}"
             topics = self._by_level.get(level, [])
             total = sum(len(t.questions) for t in topics)
+            meta = LEVEL_META.get(level, {})
             out.append({
                 "level": level,
                 "level_name": LEVEL_NAMES.get(level, level),
                 "topic_count": sum(1 for t in topics if t.questions),
                 "question_count": total,              # app hides this; useful internally
                 "available": total > 0,
+                # onboarding metadata (so the copy is editable server-side)
+                "emoji": meta.get("emoji", ""),
+                "grades": meta.get("grades", ""),
+                "grade_min": meta.get("grade_min"),
+                "grade_max": meta.get("grade_max"),
+                "tagline": meta.get("tagline", ""),
+                "exams": meta.get("exams", []),
             })
         return out
 
@@ -222,6 +317,10 @@ class ContentStoreLevel:
 
     def topic(self, level: str, topic_key: str) -> Optional[LevelTopic]:
         return self._topics.get((level, topic_key))
+
+    def topic_in_level(self, topic_key: str, level: str) -> bool:
+        """True if this topic key exists in the given level (for scoping progress)."""
+        return (level, topic_key) in self._topics
 
     def topic_questions(self, level: str, topic_key: str) -> List[LQ]:
         t = self._topics.get((level, topic_key))

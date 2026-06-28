@@ -1,6 +1,8 @@
 import json, glob, re, hashlib
 from collections import Counter, defaultdict
-ROOT='/sessions/compassionate-zealous-pasteur/mnt/kiwimath/content-live'
+import os
+_dir = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.abspath(os.path.join(_dir, "../content-live"))
 
 CONN=r'(wants to solve|is working on a problem|needs to work out|is helping[^.:!?]{0,30}|needs to figure out|does the math|solves the problem|calculates the figures|tackles the problem|works on the numbers|runs the numbers|runs the calculation|crunches the numbers|figures this out|works out the answer|is curious|wants to know)'
 STRIP=re.compile(r'^\s*[A-Z][^.:!?]{0,80}?\b'+CONN+r'\b[^.:!?]{0,40}?[.:]\s+', re.I)
@@ -73,6 +75,8 @@ seen=set()
 allq=[]
 for f in files:
     d=json.load(open(f))
+    if not isinstance(d, dict) or 'questions' not in d:
+        continue
     for q in d.get('questions',[]):
         pre_hash[q['id']]=integ(q)
         allq.append((f,q))
@@ -89,7 +93,10 @@ del_ids=set(deleted)
 
 # pass 2: edit + write
 for f in files:
-    d=json.load(open(f)); out=[]
+    d=json.load(open(f))
+    if not isinstance(d, dict) or 'questions' not in d:
+        continue
+    out=[]
     changed=False
     for q in d.get('questions',[]):
         if q['id'] in del_ids: changed=True; continue
@@ -129,7 +136,7 @@ for f in files:
     for q in json.load(open(f)).get('questions',[]):
         survivors+=1
         if pre_hash.get(q['id'])!=integ(q): mismatch+=1
-json.dump({'stats':dict(stats),'deleted':deleted}, open('/sessions/compassionate-zealous-pasteur/mnt/outputs/km_qa_fix_report.json','w'))
+json.dump({'stats':dict(stats),'deleted':deleted}, open(os.path.abspath(os.path.join(_dir, '../outputs/km_qa_fix_report.json')),'w'))
 print('=== FIXES APPLIED ===')
 for k,v in stats.most_common(): print('  %-26s %6d'%(k,v))
 print()

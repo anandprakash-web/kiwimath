@@ -3,12 +3,16 @@
 #
 
 list(APPEND FLUTTER_PLUGIN_LIST
+  connectivity_plus
   firebase_auth
   firebase_core
+  flutter_inappwebview_windows
+  url_launcher_windows
 )
 
 list(APPEND FLUTTER_FFI_PLUGIN_LIST
   jni
+  pdfrx
 )
 
 set(PLUGIN_BUNDLED_LIBRARIES)

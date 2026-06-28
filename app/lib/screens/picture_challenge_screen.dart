@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import '../models/clan.dart';
 import '../theme/kiwi_theme.dart';
 import '../widgets/pixel_grid_widget.dart';
-import '../widgets/guess_board_widget.dart';
 
 /// Picture challenge screen — pixel grid puzzle + guess board.
 ///
@@ -92,7 +91,7 @@ class _PictureChallengeScreenState extends State<PictureChallengeScreen>
   Widget _buildHeader() {
     return Container(
       width: double.infinity,
-      padding: EdgeInsets.fromLTRB(KiwiSpacing.sm, KiwiSpacing.md, KiwiSpacing.lg, KiwiSpacing.md + 2),
+      padding: const EdgeInsets.fromLTRB(KiwiSpacing.sm, KiwiSpacing.md, KiwiSpacing.lg, KiwiSpacing.md + 2),
       decoration: const BoxDecoration(
         gradient: LinearGradient(
           colors: [KiwiColors.kiwiPrimary, KiwiColors.kiwiPrimaryDark],
@@ -107,7 +106,7 @@ class _PictureChallengeScreenState extends State<PictureChallengeScreen>
             onPressed: widget.onBack,
             icon: const Icon(Icons.arrow_back_rounded, color: Colors.white),
           ),
-          SizedBox(width: KiwiSpacing.xs),
+          const SizedBox(width: KiwiSpacing.xs),
           Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -144,7 +143,7 @@ class _PictureChallengeScreenState extends State<PictureChallengeScreen>
     final days = widget.challenge.daysRemaining;
     final urgent = days <= 1;
     return Container(
-      padding: EdgeInsets.symmetric(horizontal: KiwiSpacing.sm + 2, vertical: KiwiSpacing.xs + 2),
+      padding: const EdgeInsets.symmetric(horizontal: KiwiSpacing.sm + 2, vertical: KiwiSpacing.xs + 2),
       decoration: BoxDecoration(
         color: urgent
             ? Colors.redAccent.withOpacity(0.2)
@@ -162,7 +161,7 @@ class _PictureChallengeScreenState extends State<PictureChallengeScreen>
             size: 14,
             color: urgent ? Colors.redAccent : Colors.white,
           ),
-          SizedBox(width: KiwiSpacing.xs),
+          const SizedBox(width: KiwiSpacing.xs),
           Text(
             '$days day${days == 1 ? '' : 's'}',
             style: TextStyle(
@@ -180,7 +179,7 @@ class _PictureChallengeScreenState extends State<PictureChallengeScreen>
 
   Widget _buildTabBar() {
     return Container(
-      margin: EdgeInsets.fromLTRB(KiwiSpacing.xl, KiwiSpacing.lg, KiwiSpacing.xl, KiwiSpacing.xs),
+      margin: const EdgeInsets.fromLTRB(KiwiSpacing.xl, KiwiSpacing.lg, KiwiSpacing.xl, KiwiSpacing.xs),
       decoration: BoxDecoration(
         color: KiwiColors.kiwiPrimaryLight,
         borderRadius: BorderRadius.circular(KiwiSpacing.md + 2),
@@ -216,21 +215,21 @@ class _PictureChallengeScreenState extends State<PictureChallengeScreen>
   Widget _buildPuzzleTab() {
     final p = widget.progress;
     return SingleChildScrollView(
-      padding: EdgeInsets.fromLTRB(KiwiSpacing.xl, KiwiSpacing.lg, KiwiSpacing.xl, KiwiSpacing.xxl + KiwiSpacing.sm),
+      padding: const EdgeInsets.fromLTRB(KiwiSpacing.xl, KiwiSpacing.lg, KiwiSpacing.xl, KiwiSpacing.xxl + KiwiSpacing.sm),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           // Pixel grid placeholder
           _buildPixelGridPlaceholder(),
-          SizedBox(height: KiwiSpacing.xl),
+          const SizedBox(height: KiwiSpacing.xl),
 
           // Points breakdown
           _buildPointsBreakdown(p),
-          SizedBox(height: KiwiSpacing.xl),
+          const SizedBox(height: KiwiSpacing.xl),
 
           // Reveal percentage bar
           _buildRevealBar(p),
-          SizedBox(height: KiwiSpacing.xl),
+          const SizedBox(height: KiwiSpacing.xl),
 
           // Answer submission (leader only)
           if (widget.isLeader) _buildAnswerSection(p),
@@ -251,7 +250,7 @@ class _PictureChallengeScreenState extends State<PictureChallengeScreen>
 
   Widget _buildPointsBreakdown(ChallengeProgress p) {
     return Container(
-      padding: EdgeInsets.all(KiwiSpacing.lg),
+      padding: const EdgeInsets.all(KiwiSpacing.lg),
       decoration: BoxDecoration(
         color: KiwiColors.cardBg,
         borderRadius: BorderRadius.circular(KiwiSpacing.md + 2),
@@ -274,17 +273,17 @@ class _PictureChallengeScreenState extends State<PictureChallengeScreen>
               color: KiwiColors.textDark,
             ),
           ),
-          SizedBox(height: KiwiSpacing.md + 2),
+          const SizedBox(height: KiwiSpacing.md + 2),
           Row(
             children: [
               _pointChip('\u{1F9E0} Brain', p.brainPoints, KiwiColors.xpPurple),
-              SizedBox(width: KiwiSpacing.sm + 2),
+              const SizedBox(width: KiwiSpacing.sm + 2),
               _pointChip('\u{1F4DD} Quiz', p.quizPoints, KiwiColors.sky),
-              SizedBox(width: KiwiSpacing.sm + 2),
+              const SizedBox(width: KiwiSpacing.sm + 2),
               _pointChip('\u{1F4AA} Brawn', p.brawnPoints, KiwiColors.kiwiPrimary),
             ],
           ),
-          SizedBox(height: KiwiSpacing.md),
+          const SizedBox(height: KiwiSpacing.md),
           Row(
             children: [
               const Text(
@@ -314,7 +313,7 @@ class _PictureChallengeScreenState extends State<PictureChallengeScreen>
   Widget _pointChip(String label, int value, Color color) {
     return Expanded(
       child: Container(
-        padding: EdgeInsets.symmetric(vertical: KiwiSpacing.sm + 2, horizontal: KiwiSpacing.sm),
+        padding: const EdgeInsets.symmetric(vertical: KiwiSpacing.sm + 2, horizontal: KiwiSpacing.sm),
         decoration: BoxDecoration(
           color: color.withOpacity(0.08),
           borderRadius: BorderRadius.circular(KiwiSpacing.sm + 2),
@@ -329,7 +328,7 @@ class _PictureChallengeScreenState extends State<PictureChallengeScreen>
                 color: color,
               ),
             ),
-            SizedBox(height: KiwiSpacing.xs),
+            const SizedBox(height: KiwiSpacing.xs),
             Text(
               '$value',
               style: TextStyle(
@@ -347,7 +346,7 @@ class _PictureChallengeScreenState extends State<PictureChallengeScreen>
   Widget _buildRevealBar(ChallengeProgress p) {
     final pct = p.revealPercentage.clamp(0.0, 100.0);
     return Container(
-      padding: EdgeInsets.all(KiwiSpacing.lg),
+      padding: const EdgeInsets.all(KiwiSpacing.lg),
       decoration: BoxDecoration(
         color: KiwiColors.cardBg,
         borderRadius: BorderRadius.circular(KiwiSpacing.md + 2),
@@ -383,7 +382,7 @@ class _PictureChallengeScreenState extends State<PictureChallengeScreen>
               ),
             ],
           ),
-          SizedBox(height: KiwiSpacing.sm + 2),
+          const SizedBox(height: KiwiSpacing.sm + 2),
           ClipRRect(
             borderRadius: BorderRadius.circular(KiwiSpacing.sm),
             child: LinearProgressIndicator(
@@ -393,7 +392,7 @@ class _PictureChallengeScreenState extends State<PictureChallengeScreen>
               valueColor: const AlwaysStoppedAnimation(KiwiColors.kiwiPrimary),
             ),
           ),
-          SizedBox(height: KiwiSpacing.sm),
+          const SizedBox(height: KiwiSpacing.sm),
           Text(
             '${p.blocksRevealed} / ${p.totalBlocks} blocks revealed',
             style: const TextStyle(
@@ -414,7 +413,7 @@ class _PictureChallengeScreenState extends State<PictureChallengeScreen>
     final canSubmit = p.canSubmit;
 
     return Container(
-      padding: EdgeInsets.all(KiwiSpacing.lg),
+      padding: const EdgeInsets.all(KiwiSpacing.lg),
       decoration: BoxDecoration(
         color: KiwiColors.cardBg,
         borderRadius: BorderRadius.circular(KiwiSpacing.md + 2),
@@ -439,7 +438,7 @@ class _PictureChallengeScreenState extends State<PictureChallengeScreen>
             children: [
               const Icon(Icons.stars_rounded,
                   size: 20, color: KiwiColors.gemGold),
-              SizedBox(width: KiwiSpacing.sm),
+              const SizedBox(width: KiwiSpacing.sm),
               const Text(
                 'Leader Answer',
                 style: TextStyle(
@@ -452,7 +451,7 @@ class _PictureChallengeScreenState extends State<PictureChallengeScreen>
               if (!canSubmit)
                 Container(
                   padding:
-                      EdgeInsets.symmetric(horizontal: KiwiSpacing.sm, vertical: KiwiSpacing.xs),
+                      const EdgeInsets.symmetric(horizontal: KiwiSpacing.sm, vertical: KiwiSpacing.xs),
                   decoration: BoxDecoration(
                     color: KiwiColors.textMuted.withOpacity(0.1),
                     borderRadius: BorderRadius.circular(KiwiSpacing.sm),
@@ -476,13 +475,13 @@ class _PictureChallengeScreenState extends State<PictureChallengeScreen>
                 ),
             ],
           ),
-          SizedBox(height: KiwiSpacing.md + 2),
+          const SizedBox(height: KiwiSpacing.md + 2),
 
           if (!canSubmit) ...[
             // Locked state
             Container(
               width: double.infinity,
-              padding: EdgeInsets.all(KiwiSpacing.lg),
+              padding: const EdgeInsets.all(KiwiSpacing.lg),
               decoration: BoxDecoration(
                 color: KiwiColors.kiwiPrimaryLight.withOpacity(0.5),
                 borderRadius: BorderRadius.circular(KiwiSpacing.sm + 2),
@@ -502,7 +501,7 @@ class _PictureChallengeScreenState extends State<PictureChallengeScreen>
             // Current answer display
             Container(
               width: double.infinity,
-              padding: EdgeInsets.all(KiwiSpacing.md + 2),
+              padding: const EdgeInsets.all(KiwiSpacing.md + 2),
               decoration: BoxDecoration(
                 color: KiwiColors.kiwiGreenLight,
                 borderRadius: BorderRadius.circular(KiwiSpacing.sm + 2),
@@ -514,7 +513,7 @@ class _PictureChallengeScreenState extends State<PictureChallengeScreen>
                 children: [
                   const Icon(Icons.check_circle_rounded,
                       size: 20, color: KiwiColors.kiwiGreen),
-                  SizedBox(width: KiwiSpacing.sm + 2),
+                  const SizedBox(width: KiwiSpacing.sm + 2),
                   Expanded(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -572,13 +571,13 @@ class _PictureChallengeScreenState extends State<PictureChallengeScreen>
                   borderRadius: BorderRadius.circular(KiwiSpacing.md + 2),
                   borderSide: BorderSide.none,
                 ),
-                contentPadding: EdgeInsets.symmetric(
+                contentPadding: const EdgeInsets.symmetric(
                   horizontal: KiwiSpacing.lg,
                   vertical: KiwiSpacing.md + 2,
                 ),
               ),
             ),
-            SizedBox(height: KiwiSpacing.md),
+            const SizedBox(height: KiwiSpacing.md),
             SizedBox(
               width: double.infinity,
               height: 48,
@@ -624,9 +623,9 @@ class _PictureChallengeScreenState extends State<PictureChallengeScreen>
           child: widget.guesses.isEmpty
               ? _buildEmptyGuessBoard()
               : ListView.separated(
-                  padding: EdgeInsets.fromLTRB(KiwiSpacing.xl, KiwiSpacing.lg, KiwiSpacing.xl, KiwiSpacing.sm),
+                  padding: const EdgeInsets.fromLTRB(KiwiSpacing.xl, KiwiSpacing.lg, KiwiSpacing.xl, KiwiSpacing.sm),
                   itemCount: widget.guesses.length,
-                  separatorBuilder: (_, __) => SizedBox(height: KiwiSpacing.sm + 2),
+                  separatorBuilder: (_, __) => const SizedBox(height: KiwiSpacing.sm + 2),
                   itemBuilder: (_, i) =>
                       _buildGuessCard(widget.guesses[i]),
                 ),
@@ -667,7 +666,7 @@ class _PictureChallengeScreenState extends State<PictureChallengeScreen>
   Widget _buildGuessCard(GuessEntry guess) {
     final isMine = guess.uid == widget.userUid;
     return Container(
-      padding: EdgeInsets.all(KiwiSpacing.md),
+      padding: const EdgeInsets.all(KiwiSpacing.md),
       decoration: BoxDecoration(
         color: isMine
             ? KiwiColors.kiwiPrimaryLight
@@ -711,7 +710,7 @@ class _PictureChallengeScreenState extends State<PictureChallengeScreen>
               ),
             ),
           ),
-          SizedBox(width: KiwiSpacing.sm + 2),
+          const SizedBox(width: KiwiSpacing.sm + 2),
           Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -725,7 +724,7 @@ class _PictureChallengeScreenState extends State<PictureChallengeScreen>
                     height: 1.3,
                   ),
                 ),
-                SizedBox(height: KiwiSpacing.xs),
+                const SizedBox(height: KiwiSpacing.xs),
                 Text(
                   'Day ${guess.dayNumber}',
                   style: const TextStyle(
@@ -744,7 +743,7 @@ class _PictureChallengeScreenState extends State<PictureChallengeScreen>
 
   Widget _buildGuessInput() {
     return Container(
-      padding: EdgeInsets.fromLTRB(KiwiSpacing.xl, KiwiSpacing.md, KiwiSpacing.xl, KiwiSpacing.xl),
+      padding: const EdgeInsets.fromLTRB(KiwiSpacing.xl, KiwiSpacing.md, KiwiSpacing.xl, KiwiSpacing.xl),
       decoration: BoxDecoration(
         color: KiwiColors.cardBg,
         boxShadow: [
@@ -775,7 +774,7 @@ class _PictureChallengeScreenState extends State<PictureChallengeScreen>
                   borderRadius: BorderRadius.circular(KiwiSpacing.md + 2),
                   borderSide: BorderSide.none,
                 ),
-                contentPadding: EdgeInsets.symmetric(
+                contentPadding: const EdgeInsets.symmetric(
                   horizontal: KiwiSpacing.md + 2,
                   vertical: KiwiSpacing.md,
                 ),
@@ -783,7 +782,7 @@ class _PictureChallengeScreenState extends State<PictureChallengeScreen>
               onSubmitted: (_) => _submitGuess(),
             ),
           ),
-          SizedBox(width: KiwiSpacing.sm + 2),
+          const SizedBox(width: KiwiSpacing.sm + 2),
           SizedBox(
             width: 48,
             height: 48,

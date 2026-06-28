@@ -1184,6 +1184,7 @@ class GamificationState:
     gems: int = 5                # Mastery Gems (the "Skill" economy, starter = 5)
     streak_current: int = 0
     streak_longest: int = 0
+    streak_last_date: str = ""    # ISO date (IST) of the last day the daily streak was counted
     sessions_completed: int = 0
     total_attempts: int = 0
     total_correct: int = 0
@@ -1220,6 +1221,21 @@ class GamificationState:
         if self.total_attempts == 0:
             return 0.0
         return (self.total_correct / self.total_attempts) * 100
+
+    @staticmethod
+    def _ist_date(offset_days: int = 0) -> str:
+        """ISO date string in IST (the streak 'day' boundary)."""
+        from datetime import datetime, timedelta, timezone
+        ist = timezone(timedelta(hours=5, minutes=30))
+        return (datetime.now(ist) + timedelta(days=offset_days)).date().isoformat()
+
+    def live_streak(self) -> int:
+        """The streak as it should be *displayed*: the stored streak only counts
+        if the last active day was today or yesterday (IST); otherwise it's
+        broken and shows 0 — so 'don't break your streak' is honest."""
+        if self.streak_last_date in (self._ist_date(0), self._ist_date(-1)):
+            return self.streak_current
+        return 0
 
     def count_mastered_topics(self) -> int:
         """Count topics with 70%+ accuracy and 10+ attempts."""
@@ -1266,6 +1282,7 @@ class GamificationState:
             "gems": self.gems,
             "streak_current": self.streak_current,
             "streak_longest": self.streak_longest,
+            "streak_last_date": self.streak_last_date,
             "sessions_completed": self.sessions_completed,
             "total_attempts": self.total_attempts,
             "total_correct": self.total_correct,
@@ -1306,6 +1323,7 @@ class GamificationState:
             gems=data.get("gems", 5),
             streak_current=data.get("streak_current", 0),
             streak_longest=data.get("streak_longest", 0),
+            streak_last_date=data.get("streak_last_date", ""),
             sessions_completed=data.get("sessions_completed", 0),
             total_attempts=data.get("total_attempts", 0),
             total_correct=data.get("total_correct", 0),
@@ -1362,6 +1380,39 @@ class GamificationManager:
         self._cache[user_id] = state
         return state
 
+    # ---- authoritative currency mutation (the store/economy spends through here) ----
+    @staticmethod
+    def _currency_field(currency: str) -> str:
+        return "gems" if currency == "gems" else "kiwi_coins"
+
+    def spend(self, user_id: str, currency: str, amount: int):
+        """Server-authoritative debit. Returns (ok, new_balance, error). Never
+        deducts on insufficient/invalid; persists on success."""
+        state = self.get_state(user_id)
+        field = self._currency_field(currency)
+        bal = int(getattr(state, field, 0))
+        if amount <= 0:
+            return (False, bal, "invalid_amount")
+        if bal < amount:
+            return (False, bal, "insufficient")
+        setattr(state, field, bal - amount)
+        self._save_to_firestore(user_id, state)
+        return (True, bal - amount, None)
+
+    def grant(self, user_id: str, currency: str, amount: int) -> int:
+        """Server-authoritative credit (rewards, refunds, leaderboard payouts).
+        Returns the new balance."""
+        state = self.get_state(user_id)
+        field = self._currency_field(currency)
+        new = int(getattr(state, field, 0)) + max(0, int(amount))
+        setattr(state, field, new)
+        if field == "kiwi_coins":
+            state.lifetime_coins_earned += max(0, int(amount))
+        else:
+            state.lifetime_gems_earned += max(0, int(amount))
+        self._save_to_firestore(user_id, state)
+        return new
+
     def record_answer(
         self,
         user_id: str,
@@ -1385,6 +1436,21 @@ class GamificationManager:
         """
         state = self.get_state(user_id)
         events: Dict[str, Any] = {}
+
+        # --- Daily streak: consecutive calendar days with activity (IST) ---
+        # Fires once per day, on the first answer of the day. This is the daily
+        # retention loop — distinct from the in-session consecutive_correct below.
+        today = GamificationState._ist_date(0)
+        if state.streak_last_date != today:
+            if state.streak_last_date == GamificationState._ist_date(-1):
+                state.streak_current += 1            # consecutive day -> extend the streak
+            else:
+                state.streak_current = 1             # first day ever, or streak broken -> restart at 1
+            state.streak_last_date = today
+            state.days_active += 1
+            if state.streak_current > state.streak_longest:
+                state.streak_longest = state.streak_current
+            events["streak_day"] = state.streak_current   # new-day streak, so the app can celebrate it
 
         old_xp = state.xp_total
 
@@ -1752,8 +1818,11 @@ class GamificationManager:
             "xp_total": state.xp_total,
             "kiwi_coins": state.kiwi_coins,
             "gems": state.gems,
-            "streak_current": state.streak_current,
+            "streak_current": state.live_streak(),
             "streak_longest": state.streak_longest,
+            # True when today's IST day already counted toward the streak — lets the
+            # app show "see you tomorrow" instead of nudging "solve 1 to keep it".
+            "practiced_today": state.streak_last_date == state._ist_date(0),
             "accuracy": round(state.accuracy_percent, 1),
             "total_questions": state.total_attempts,
             "sessions_completed": state.sessions_completed,

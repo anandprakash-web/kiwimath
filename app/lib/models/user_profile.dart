@@ -3,6 +3,7 @@
 /// Dual currency: Kiwi Coins (effort) + Mastery Gems (skill).
 /// Learner persona classification for identity-based motivation.
 /// Loaded on app start, updated after each session completes.
+library;
 
 class UserProfile {
   final String userId;

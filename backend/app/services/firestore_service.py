@@ -102,6 +102,7 @@ DEFAULT_USER = {
     "last_active": None,
     "onboarded_at": None,  # Set when benchmark is completed — prevents repeat onboarding
     "grade": None,  # Selected grade (1-6)
+    "selected_level": None,  # Chosen olympiad level L1-L8 — scopes the whole app (set in onboarding)
     "curriculum": None,  # Selected curriculum: ncert, icse, igcse, olympiad
     "streak_current": 0,
     "streak_longest": 0,

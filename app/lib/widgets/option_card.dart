@@ -105,7 +105,7 @@ class _OptionCardState extends State<OptionCard> {
         child: AnimatedContainer(
         duration: const Duration(milliseconds: 200),
         curve: Curves.easeOut,
-        padding: EdgeInsets.symmetric(vertical: KiwiSpacing.md + 2, horizontal: KiwiSpacing.md),
+        padding: const EdgeInsets.symmetric(vertical: KiwiSpacing.md + 2, horizontal: KiwiSpacing.md),
         decoration: BoxDecoration(
           color: bg,
           border: Border.all(color: borderColor, width: borderWidth),

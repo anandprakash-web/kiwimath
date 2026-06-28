@@ -318,7 +318,7 @@ SummonResponse resolveCompanion({
     candidate = primary;
     if (!config.isShipped(candidate)) candidate = CompanionId.kiwi;
   }
-  if (secondaryId != null && !config.isShipped(secondaryId!)) {
+  if (secondaryId != null && !config.isShipped(secondaryId)) {
     secondaryId = null;
     secondaryEmotion = null;
   }
@@ -337,7 +337,7 @@ SummonResponse resolveCompanion({
     'silhouette_svg': '/assets/companions/$cid/silhouette.svg',
   };
   if (secondaryId != null) {
-    final sid = secondaryId!.name;
+    final sid = secondaryId.name;
     final se = (secondaryEmotion ?? Emotion.celebrating).name;
     paths['secondary_pose_svg'] = '/assets/companions/$sid/$tier/$se.svg';
   }

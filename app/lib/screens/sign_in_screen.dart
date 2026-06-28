@@ -183,7 +183,7 @@ class _SignInScreenState extends State<SignInScreen> {
                       width: 88,
                       height: 88,
                       decoration: BoxDecoration(
-                        gradient: LinearGradient(
+                        gradient: const LinearGradient(
                           colors: [KiwiColors.amber, KiwiColors.kiwiPrimary],
                           begin: Alignment.topLeft,
                           end: Alignment.bottomRight,
@@ -236,7 +236,7 @@ class _SignInScreenState extends State<SignInScreen> {
 
                   // Parent gate banner
                   Container(
-                    padding: EdgeInsets.symmetric(horizontal: KiwiSpacing.lg - 2, vertical: KiwiSpacing.sm + 2),
+                    padding: const EdgeInsets.symmetric(horizontal: KiwiSpacing.lg - 2, vertical: KiwiSpacing.sm + 2),
                     decoration: BoxDecoration(
                       color: KiwiColors.visualYellowBg,
                       borderRadius: BorderRadius.circular(KiwiSpacing.md),
@@ -434,7 +434,7 @@ class _SignInScreenState extends State<SignInScreen> {
               border: OutlineInputBorder(borderRadius: BorderRadius.circular(12)),
               enabledBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(12),
-                borderSide: BorderSide(color: KiwiColors.pathLocked),
+                borderSide: const BorderSide(color: KiwiColors.pathLocked),
               ),
               focusedBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(12),
@@ -460,7 +460,7 @@ class _SignInScreenState extends State<SignInScreen> {
               border: OutlineInputBorder(borderRadius: BorderRadius.circular(12)),
               enabledBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(12),
-                borderSide: BorderSide(color: KiwiColors.pathLocked),
+                borderSide: const BorderSide(color: KiwiColors.pathLocked),
               ),
               focusedBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(12),
@@ -479,7 +479,7 @@ class _SignInScreenState extends State<SignInScreen> {
               alignment: Alignment.centerRight,
               child: TextButton(
                 onPressed: _busy ? null : _resetPassword,
-                child: Text(
+                child: const Text(
                   'Forgot password?',
                   style: TextStyle(
                     fontSize: 12,
@@ -535,7 +535,7 @@ class _SignInScreenState extends State<SignInScreen> {
             border: OutlineInputBorder(borderRadius: BorderRadius.circular(12)),
             enabledBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(12),
-              borderSide: BorderSide(color: KiwiColors.pathLocked),
+              borderSide: const BorderSide(color: KiwiColors.pathLocked),
             ),
             focusedBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(12),
@@ -559,7 +559,7 @@ class _SignInScreenState extends State<SignInScreen> {
               border: OutlineInputBorder(borderRadius: BorderRadius.circular(12)),
               enabledBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(12),
-                borderSide: BorderSide(color: KiwiColors.pathLocked),
+                borderSide: const BorderSide(color: KiwiColors.pathLocked),
               ),
               focusedBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(12),
@@ -606,7 +606,7 @@ class _SignInScreenState extends State<SignInScreen> {
 
   Widget _buildCoppaConsent() {
     return Container(
-      padding: EdgeInsets.all(KiwiSpacing.md),
+      padding: const EdgeInsets.all(KiwiSpacing.md),
       decoration: BoxDecoration(
         color: KiwiColors.visualBlueBg,
         borderRadius: BorderRadius.circular(KiwiSpacing.md),
@@ -677,7 +677,7 @@ class _SignInScreenState extends State<SignInScreen> {
 
   Widget _buildErrorBox() {
     return Container(
-      padding: EdgeInsets.all(KiwiSpacing.md),
+      padding: const EdgeInsets.all(KiwiSpacing.md),
       decoration: BoxDecoration(
         color: KiwiColors.wrongBg,
         borderRadius: BorderRadius.circular(KiwiSpacing.md),
@@ -690,7 +690,7 @@ class _SignInScreenState extends State<SignInScreen> {
           Expanded(
             child: Text(
               _errorMessage!,
-              style: TextStyle(color: KiwiColors.kiwiPrimaryDark, fontSize: 13),
+              style: const TextStyle(color: KiwiColors.kiwiPrimaryDark, fontSize: 13),
             ),
           ),
         ],
@@ -775,17 +775,17 @@ class _GoogleSignInButton extends StatelessWidget {
         borderRadius: BorderRadius.circular(KiwiSpacing.md),
         onTap: busy ? null : onPressed,
         child: Container(
-          padding: EdgeInsets.symmetric(vertical: KiwiSpacing.lg - 2, horizontal: KiwiSpacing.xl - 4),
+          padding: const EdgeInsets.symmetric(vertical: KiwiSpacing.lg - 2, horizontal: KiwiSpacing.xl - 4),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(KiwiSpacing.md),
             border: Border.all(color: KiwiColors.pathLocked, width: 1),
           ),
-          child: Row(
+          child: const Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               // Multicolor Google "G" drawn with four arc segments + bar
               // (no Text-widget fake — keeps sign-in branding compliant).
-              const SizedBox(
+              SizedBox(
                 width: 20,
                 height: 20,
                 child: CustomPaint(painter: _GoogleGPainter()),

@@ -1,0 +1,2256 @@
+{
+  "level": "L3",
+  "level_name": "Grade 5/6",
+  "pillar": "NT",
+  "topic_key": "hcf_lcm",
+  "display_name": "Common Ground",
+  "total_questions": 40,
+  "questions": [
+    {
+      "id": "KM-L3-NT-0608",
+      "stem": "The HCF of the denominator and numerator of a fraction in its lowest form is",
+      "interaction_mode": "mcq",
+      "difficulty_tier": "warmup",
+      "question_number": 1,
+      "choices": [
+        "1",
+        "0",
+        "Can't be determined",
+        "Always even"
+      ],
+      "correct_answer": 0,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S3",
+      "diagnostics": {},
+      "legacy_id": "wb_L4_s03_q01",
+      "km_level": "L3",
+      "km_pillar": "NT",
+      "km_topic": "hcf_lcm",
+      "km_topic_display": "Common Ground",
+      "km_source_bank": "wb",
+      "hint": {
+        "level_0": "Factorise each number into primes.",
+        "level_1": "HCF takes common factors; LCM takes all factors.",
+        "level_2": "Combine them as the question needs."
+      }
+    },
+    {
+      "id": "KM-L3-NT-0609",
+      "stem": "The HCF of two numbers is 28 and LCM is 336. If one number is 112, the other is",
+      "interaction_mode": "mcq",
+      "difficulty_tier": "warmup",
+      "question_number": 5,
+      "choices": [
+        "64",
+        "84",
+        "34",
+        "92"
+      ],
+      "correct_answer": 1,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S3",
+      "diagnostics": {},
+      "legacy_id": "wb_L4_s03_q05",
+      "km_level": "L3",
+      "km_pillar": "NT",
+      "km_topic": "hcf_lcm",
+      "km_topic_display": "Common Ground",
+      "km_source_bank": "wb",
+      "hint": {
+        "level_0": "Factorise each number into primes.",
+        "level_1": "HCF takes common factors; LCM takes all factors.",
+        "level_2": "Combine them as the question needs."
+      }
+    },
+    {
+      "id": "KM-L3-NT-0610",
+      "stem": "Three numbers in ratio 3:4:5 with LCM 2400. Their HCF is",
+      "interaction_mode": "mcq",
+      "difficulty_tier": "practice",
+      "question_number": 7,
+      "choices": [
+        "40",
+        "80",
+        "120",
+        "200"
+      ],
+      "correct_answer": 0,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S3",
+      "diagnostics": {},
+      "legacy_id": "wb_L4_s03_q07",
+      "km_level": "L3",
+      "km_pillar": "NT",
+      "km_topic": "hcf_lcm",
+      "km_topic_display": "Common Ground",
+      "km_source_bank": "wb",
+      "hint": {
+        "level_0": "Factorise each number into primes.",
+        "level_1": "HCF takes common factors; LCM takes all factors.",
+        "level_2": "Combine them as the question needs."
+      }
+    },
+    {
+      "id": "KM-L3-NT-0611",
+      "stem": "The HCF of 9/10, 12/25, 18/35 and 21/40 is",
+      "interaction_mode": "mcq",
+      "difficulty_tier": "challenge",
+      "question_number": 11,
+      "choices": [
+        "3/5",
+        "25/25",
+        "3/1400",
+        "63/700"
+      ],
+      "correct_answer": 2,
+      "grade_band": "5-6",
+      "source": "Wavebook L4 S3",
+      "diagnostics": {},
+      "legacy_id": "wb_L4_s03_q11",
+      "km_level": "L3",
+      "km_pillar": "NT",
+      "km_topic": "hcf_lcm",
+      "km_topic_display": "Common Ground",
+      "km_source_bank": "wb",
+      "hint": {
+        "level_0": "Factorise each number into primes.",
+        "level_1": "HCF takes common factors; LCM takes all factors.",
+        "level_2": "Combine them as the question needs."
+      }
+    },
+    {
+      "id": "KM-L3-NT-0612",
+      "stem": "What is the HCF (Highest Common Factor) of 42 and 162?",
+      "choices": [
+        "3",
+        "6",
+        "12",
+        "21"
+      ],
+      "correct_answer": 1,
+      "difficulty_tier": "medium-hard",
+      "difficulty_score": 500,
+      "visual_svg": null,
+      "visual_alt": null,
+      "diagnostics": {
+        "0": "3 is a common factor but not the highest. Both 42 and 162 are divisible by 6.",
+        "2": "12 does not divide 42 evenly (42 ÷ 12 = 3.5). So 12 is NOT a common factor.",
+        "3": "21 divides 42 but not 162 (162 ÷ 21 = 7.71...). Not a common factor."
+      },
+      "tags": [
+        "HCF",
+        "factors",
+        "prime_factorization"
+      ],
+      "hint": {
+        "level_0": "Find the prime factorization of both numbers.",
+        "level_1": "42 = 2 × 3 × 7. 162 = 2 × 3⁴. Common factors: 2¹ × 3¹ = 6. HCF = ?",
+        "level_2": "You have everything you need — work through it one step at a time!"
+      },
+      "irt_params": {
+        "a": 1.2,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "irt_a": 1.2,
+      "irt_b": 0.5,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "42 = 2 × 3 × 7",
+        "162 = 2 × 3⁴",
+        "Common prime factors: 2¹ and 3¹",
+        "HCF = 2 × 3 = 6"
+      ],
+      "interaction_mode": "mcq",
+      "level": 5,
+      "level_name": "Master",
+      "universal_skill_id": "NUM_PATTERNS_5",
+      "skill_id": "number_patterns",
+      "skill_domain": "numbers",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "none",
+      "visual_type": "none",
+      "visual_ai_verified": false,
+      "media_id": null,
+      "media_hash": null,
+      "misconception_ids": [],
+      "why_quality": "human_authored",
+      "why_framework": "3R",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "good",
+        "has_3_layers": true
+      },
+      "school_grade": 5,
+      "concept_cluster": "hcf_lcm",
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "content_source": "olympiad",
+      "difficulty_tier_in_topic": "developing",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "original_id": "T6-9006",
+      "legacy_id": "A5-NUM-0284",
+      "legacy_original_id": "T6-9006",
+      "km_level": "L3",
+      "km_pillar": "NT",
+      "km_topic": "hcf_lcm",
+      "km_topic_display": "Common Ground",
+      "km_source_bank": "v4"
+    },
+    {
+      "id": "KM-L3-NT-0613",
+      "stem": "Find the HCF of 105, 1001, and 2436.",
+      "choices": [
+        "3",
+        "7",
+        "21",
+        "14"
+      ],
+      "correct_answer": 1,
+      "difficulty_tier": "medium-hard",
+      "difficulty_score": 500,
+      "visual_svg": null,
+      "visual_alt": null,
+      "diagnostics": {
+        "0": "3 divides 105 (35) and 2436 (812), but 1001 ÷ 3 = 333.67. So 3 is NOT a common factor.",
+        "2": "21 = 3 × 7. But 1001 ÷ 3 is not an integer. So 21 is not a common factor.",
+        "3": "14 = 2 × 7. But 105 ÷ 2 = 52.5. So 14 is not a common factor."
+      },
+      "tags": [
+        "HCF",
+        "factors",
+        "prime_factorization"
+      ],
+      "hint": {
+        "level_0": "Find prime factorizations of all three numbers.",
+        "level_1": "105 = 3 × 5 × 7. 1001 = 7 × 11 × 13. 2436 = 2² × 3 × 7 × 29. The only prime common to all three is 7. HCF = ?",
+        "level_2": "You have everything you need — work through it one step at a time!"
+      },
+      "irt_params": {
+        "a": 1.2,
+        "b": 0.8,
+        "c": 0.25
+      },
+      "irt_a": 1.2,
+      "irt_b": 0.8,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "105 = 3 × 5 × 7",
+        "1001 = 7 × 11 × 13",
+        "2436 = 2² × 3 × 7 × 29",
+        "Common factor: 7",
+        "HCF = 7"
+      ],
+      "interaction_mode": "mcq",
+      "level": 5,
+      "level_name": "Master",
+      "universal_skill_id": "NUM_PATTERNS_5",
+      "skill_id": "number_patterns",
+      "skill_domain": "numbers",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "none",
+      "visual_type": "none",
+      "visual_ai_verified": false,
+      "media_id": null,
+      "media_hash": null,
+      "misconception_ids": [],
+      "why_quality": "human_authored",
+      "why_framework": "3R",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "good",
+        "has_3_layers": true
+      },
+      "school_grade": 5,
+      "concept_cluster": "hcf_lcm",
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "content_source": "olympiad",
+      "difficulty_tier_in_topic": "proficient",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "original_id": "T7-9003",
+      "legacy_id": "A5-NUM-0332",
+      "legacy_original_id": "T7-9003",
+      "km_level": "L3",
+      "km_pillar": "NT",
+      "km_topic": "hcf_lcm",
+      "km_topic_display": "Common Ground",
+      "km_source_bank": "v4"
+    },
+    {
+      "id": "KM-L3-NT-0614",
+      "stem": "How many numbers from 1 to 30 are divisible by both 2 and 3?",
+      "choices": [
+        "5",
+        "10",
+        "15",
+        "6"
+      ],
+      "correct_answer": 0,
+      "difficulty_tier": "easy",
+      "difficulty_score": 3,
+      "visual_svg": null,
+      "visual_alt": null,
+      "diagnostics": {
+        "1": "When skip counting, make sure you add the same amount each time.",
+        "2": "Be careful not to count the same object twice — try crossing them off as you go.",
+        "3": "You counted one extra. Try touching each item as you count to make sure you don't count anything twice.",
+        "correct_explanation": "The answer is 5. When we count each item carefully — making sure not to skip any or count any twice — we get 5."
+      },
+      "tags": [
+        "divisibility",
+        "lcm"
+      ],
+      "hint": {
+        "level_0": "Read the question carefully. What exactly are you being asked to count? Are there conditions to watch for?",
+        "level_1": "Look at the key values: 1, 30, 2, 3. Can you list out what needs to be counted systematically? Work through it step by step with the numbers 1, 30, 2, 3. Write out each item that meets the condition.",
+        "level_2": "Count each qualifying item: 1, 30, 2, 3."
+      },
+      "concept_cluster": "factor-counting",
+      "interaction_mode": "mcq",
+      "visual_context": null,
+      "irt_params": {
+        "a": 1.15,
+        "b": 0.9,
+        "c": 0.15
+      },
+      "irt_a": 1.15,
+      "irt_b": 0.9,
+      "irt_c": 0.15,
+      "solution_steps": [
+        "Identify what you need to count",
+        "Count systematically, left to right",
+        "The total count is your answer"
+      ],
+      "competency_level": "K",
+      "competency_confidence": 0.5,
+      "competency_name": "Knowing",
+      "story_theme": "The Lost City Expedition",
+      "story_chapter": 1,
+      "legacy_id": "T1-0914",
+      "km_level": "L3",
+      "km_pillar": "NT",
+      "km_topic": "hcf_lcm",
+      "km_topic_display": "Common Ground",
+      "km_source_bank": "v2"
+    },
+    {
+      "id": "KM-L3-NT-0615",
+      "stem": "What is the greatest common divisor of 210 and 154?",
+      "choices": [
+        "7",
+        "21",
+        "28",
+        "14"
+      ],
+      "correct_answer": 3,
+      "difficulty_tier": "easy",
+      "difficulty_score": 33,
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 350 80\" width=\"350\" height=\"80\" style=\"font-family:Arial,sans-serif\"><line x1=\"40\" y1=\"40\" x2=\"310\" y2=\"40\" stroke=\"#333\" stroke-width=\"2\"/><polygon points=\"35,40 45,35 45,45\" fill=\"#333\"/><polygon points=\"315,40 305,35 305,45\" fill=\"#333\"/><line x1=\"50.0\" y1=\"34\" x2=\"50.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"50.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">0</text><line x1=\"75.0\" y1=\"34\" x2=\"75.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"75.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">1</text><line x1=\"100.0\" y1=\"34\" x2=\"100.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"100.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">2</text><line x1=\"125.0\" y1=\"34\" x2=\"125.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"125.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">3</text><line x1=\"150.0\" y1=\"34\" x2=\"150.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"150.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">4</text><line x1=\"175.0\" y1=\"34\" x2=\"175.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"175.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">5</text><line x1=\"200.0\" y1=\"34\" x2=\"200.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"200.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">6</text><line x1=\"225.0\" y1=\"34\" x2=\"225.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"225.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">7</text><line x1=\"250.0\" y1=\"34\" x2=\"250.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"250.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">8</text><line x1=\"275.0\" y1=\"34\" x2=\"275.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"275.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">9</text><line x1=\"300.0\" y1=\"34\" x2=\"300.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"300.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">10</text></svg>",
+      "visual_alt": null,
+      "diagnostics": {
+        "0": "When the digits add up to 10 or more, remember to carry the 1 to the next column.",
+        "1": "Check the problem again — are you sure you need to subtract? The word 'more' or 'total' usually means addition.",
+        "2": "Make sure you're lining up the ones, tens, and hundreds columns correctly.",
+        "correct_explanation": "The answer is 14. When we add the numbers together (210 + 154), the total is 14."
+      },
+      "tags": [
+        "GCD",
+        "factors",
+        "divisibility",
+        "grade-5-6"
+      ],
+      "hint": {
+        "level_0": "This problem is asking you to combine amounts. What two (or more) things are being put together?",
+        "level_1": "Think about what you're putting together. Could you draw it, use a number line, or break the numbers into tens and ones? Start with 210. Now add 154 to it.  What do you get?",
+        "level_2": "Here's the solution: 210 + 154 = 364. We combined the two amounts to get the total."
+      },
+      "interaction_mode": "mcq",
+      "visual_context": null,
+      "irt_params": {
+        "a": 1.07,
+        "b": 1.22,
+        "c": 0.15
+      },
+      "irt_a": 1.07,
+      "irt_b": 1.22,
+      "irt_c": 0.15,
+      "solution_steps": [
+        "Identify the numbers: 210, 154",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ],
+      "competency_level": "K",
+      "competency_confidence": 0.5,
+      "competency_name": "Knowing",
+      "story_theme": "The Racing Garage",
+      "story_chapter": 2,
+      "legacy_id": "T2-960",
+      "km_level": "L3",
+      "km_pillar": "NT",
+      "km_topic": "hcf_lcm",
+      "km_topic_display": "Common Ground",
+      "km_source_bank": "v2"
+    },
+    {
+      "id": "KM-L3-NT-0616",
+      "stem": "What is the greatest common divisor of 144 and 60?",
+      "choices": [
+        "12",
+        "24",
+        "6",
+        "18"
+      ],
+      "correct_answer": 0,
+      "difficulty_tier": "easy",
+      "difficulty_score": 34,
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 350 80\" width=\"350\" height=\"80\" style=\"font-family:Arial,sans-serif\"><line x1=\"40\" y1=\"40\" x2=\"310\" y2=\"40\" stroke=\"#333\" stroke-width=\"2\"/><polygon points=\"35,40 45,35 45,45\" fill=\"#333\"/><polygon points=\"315,40 305,35 305,45\" fill=\"#333\"/><line x1=\"50.0\" y1=\"34\" x2=\"50.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"50.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">0</text><line x1=\"75.0\" y1=\"34\" x2=\"75.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"75.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">1</text><line x1=\"100.0\" y1=\"34\" x2=\"100.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"100.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">2</text><line x1=\"125.0\" y1=\"34\" x2=\"125.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"125.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">3</text><line x1=\"150.0\" y1=\"34\" x2=\"150.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"150.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">4</text><line x1=\"175.0\" y1=\"34\" x2=\"175.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"175.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">5</text><line x1=\"200.0\" y1=\"34\" x2=\"200.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"200.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">6</text><line x1=\"225.0\" y1=\"34\" x2=\"225.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"225.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">7</text><line x1=\"250.0\" y1=\"34\" x2=\"250.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"250.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">8</text><line x1=\"275.0\" y1=\"34\" x2=\"275.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"275.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">9</text><line x1=\"300.0\" y1=\"34\" x2=\"300.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"300.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">10</text></svg>",
+      "visual_alt": null,
+      "diagnostics": {
+        "1": "Check the problem again — are you sure you need to subtract? The word 'more' or 'total' usually means addition.",
+        "2": "Make sure you're lining up the ones, tens, and hundreds columns correctly.",
+        "3": "Double-check which numbers the problem is asking you to add together.",
+        "correct_explanation": "The answer is 12. When we add the numbers together (144 + 60), the total is 12."
+      },
+      "tags": [
+        "GCD",
+        "factors",
+        "divisibility",
+        "grade-5-6"
+      ],
+      "hint": {
+        "level_0": "Think: what does 'altogether' or 'total' or 'in all' really mean here?",
+        "level_1": "Think about what you're putting together. Could you draw it, use a number line, or break the numbers into tens and ones? Start with 144. Now add 60 to it.  What do you get?",
+        "level_2": "Here's the solution: 144 + 60 = 204. We combined the two amounts to get the total."
+      },
+      "interaction_mode": "mcq",
+      "visual_context": null,
+      "irt_params": {
+        "a": 1.1,
+        "b": 1.24,
+        "c": 0.15
+      },
+      "irt_a": 1.1,
+      "irt_b": 1.24,
+      "irt_c": 0.15,
+      "solution_steps": [
+        "Identify the numbers: 144, 60",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ],
+      "competency_level": "K",
+      "competency_confidence": 0.5,
+      "competency_name": "Knowing",
+      "story_theme": "The Racing Garage",
+      "story_chapter": 2,
+      "legacy_id": "T2-959",
+      "km_level": "L3",
+      "km_pillar": "NT",
+      "km_topic": "hcf_lcm",
+      "km_topic_display": "Common Ground",
+      "km_source_bank": "v2"
+    },
+    {
+      "id": "KM-L3-NT-0617",
+      "stem": "What is the greatest common divisor of 72 and 54?",
+      "choices": [
+        "6",
+        "18",
+        "9",
+        "36"
+      ],
+      "correct_answer": 1,
+      "difficulty_tier": "easy",
+      "difficulty_score": 42,
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 350 80\" width=\"350\" height=\"80\" style=\"font-family:Arial,sans-serif\"><line x1=\"40\" y1=\"40\" x2=\"310\" y2=\"40\" stroke=\"#333\" stroke-width=\"2\"/><polygon points=\"35,40 45,35 45,45\" fill=\"#333\"/><polygon points=\"315,40 305,35 305,45\" fill=\"#333\"/><line x1=\"50.0\" y1=\"34\" x2=\"50.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"50.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">0</text><line x1=\"75.0\" y1=\"34\" x2=\"75.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"75.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">1</text><line x1=\"100.0\" y1=\"34\" x2=\"100.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"100.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">2</text><line x1=\"125.0\" y1=\"34\" x2=\"125.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"125.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">3</text><line x1=\"150.0\" y1=\"34\" x2=\"150.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"150.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">4</text><line x1=\"175.0\" y1=\"34\" x2=\"175.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"175.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">5</text><line x1=\"200.0\" y1=\"34\" x2=\"200.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"200.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">6</text><line x1=\"225.0\" y1=\"34\" x2=\"225.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"225.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">7</text><line x1=\"250.0\" y1=\"34\" x2=\"250.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"250.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">8</text><line x1=\"275.0\" y1=\"34\" x2=\"275.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"275.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">9</text><line x1=\"300.0\" y1=\"34\" x2=\"300.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"300.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">10</text></svg>",
+      "visual_alt": null,
+      "diagnostics": {
+        "0": "When the digits add up to 10 or more, remember to carry the 1 to the next column.",
+        "2": "Make sure you're lining up the ones, tens, and hundreds columns correctly.",
+        "3": "Double-check which numbers the problem is asking you to add together.",
+        "correct_explanation": "The answer is 18. When we add the numbers together (72 + 54), the total is 18."
+      },
+      "tags": [
+        "GCD",
+        "factors",
+        "divisibility",
+        "grade-5-6"
+      ],
+      "hint": {
+        "level_0": "This problem is asking you to combine amounts. What two (or more) things are being put together?",
+        "level_1": "Think about what you're putting together. Could you draw it, use a number line, or break the numbers into tens and ones? Start with 72. Now add 54 to it.  What do you get?",
+        "level_2": "Here's the solution: 72 - 54 = ?. We combined the two amounts to get the total."
+      },
+      "interaction_mode": "mcq",
+      "visual_context": null,
+      "irt_params": {
+        "a": 1.18,
+        "b": 1.28,
+        "c": 0.15
+      },
+      "irt_a": 1.18,
+      "irt_b": 1.28,
+      "irt_c": 0.15,
+      "solution_steps": [
+        "Identify the numbers: 72, 54",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ],
+      "competency_level": "R",
+      "competency_confidence": 0.583,
+      "competency_name": "Reasoning",
+      "story_theme": "The Racing Garage",
+      "story_chapter": 2,
+      "legacy_id": "T2-957",
+      "km_level": "L3",
+      "km_pillar": "NT",
+      "km_topic": "hcf_lcm",
+      "km_topic_display": "Common Ground",
+      "km_source_bank": "v2"
+    },
+    {
+      "id": "KM-L3-NT-0618",
+      "stem": "What is the greatest common divisor of 315 and 189?",
+      "choices": [
+        "21",
+        "9",
+        "7",
+        "63"
+      ],
+      "correct_answer": 3,
+      "difficulty_tier": "easy",
+      "difficulty_score": 43,
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 350 80\" width=\"350\" height=\"80\" style=\"font-family:Arial,sans-serif\"><line x1=\"40\" y1=\"40\" x2=\"310\" y2=\"40\" stroke=\"#333\" stroke-width=\"2\"/><polygon points=\"35,40 45,35 45,45\" fill=\"#333\"/><polygon points=\"315,40 305,35 305,45\" fill=\"#333\"/><line x1=\"50.0\" y1=\"34\" x2=\"50.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"50.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">0</text><line x1=\"75.0\" y1=\"34\" x2=\"75.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"75.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">1</text><line x1=\"100.0\" y1=\"34\" x2=\"100.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"100.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">2</text><line x1=\"125.0\" y1=\"34\" x2=\"125.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"125.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">3</text><line x1=\"150.0\" y1=\"34\" x2=\"150.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"150.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">4</text><line x1=\"175.0\" y1=\"34\" x2=\"175.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"175.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">5</text><line x1=\"200.0\" y1=\"34\" x2=\"200.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"200.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">6</text><line x1=\"225.0\" y1=\"34\" x2=\"225.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"225.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">7</text><line x1=\"250.0\" y1=\"34\" x2=\"250.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"250.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">8</text><line x1=\"275.0\" y1=\"34\" x2=\"275.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"275.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">9</text><line x1=\"300.0\" y1=\"34\" x2=\"300.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"300.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">10</text></svg>",
+      "visual_alt": null,
+      "diagnostics": {
+        "0": "When the digits add up to 10 or more, remember to carry the 1 to the next column.",
+        "1": "Check the problem again — are you sure you need to subtract? The word 'more' or 'total' usually means addition.",
+        "2": "Make sure you're lining up the ones, tens, and hundreds columns correctly.",
+        "correct_explanation": "The answer is 63. When we add the numbers together (315 + 189), the total is 63."
+      },
+      "tags": [
+        "GCD",
+        "factors",
+        "divisibility",
+        "grade-5-6"
+      ],
+      "hint": {
+        "level_0": "Read it again — what are the quantities, and why are they being joined?",
+        "level_1": "Think about what you're putting together. Could you draw it, use a number line, or break the numbers into tens and ones? Start with 315. Now add 189 to it.  What do you get?",
+        "level_2": "Here's the solution: 315 + 189 = 504. We combined the two amounts to get the total."
+      },
+      "interaction_mode": "mcq",
+      "visual_context": null,
+      "irt_params": {
+        "a": 1.12,
+        "b": 1.28,
+        "c": 0.15
+      },
+      "irt_a": 1.12,
+      "irt_b": 1.28,
+      "irt_c": 0.15,
+      "solution_steps": [
+        "Identify the numbers: 315, 189",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ],
+      "competency_level": "K",
+      "competency_confidence": 0.545,
+      "competency_name": "Knowing",
+      "story_theme": "The Racing Garage",
+      "story_chapter": 2,
+      "legacy_id": "T2-962",
+      "km_level": "L3",
+      "km_pillar": "NT",
+      "km_topic": "hcf_lcm",
+      "km_topic_display": "Common Ground",
+      "km_source_bank": "v2"
+    },
+    {
+      "id": "KM-L3-NT-0619",
+      "stem": "What is the least common multiple of 56 and 84?",
+      "choices": [
+        "84",
+        "336",
+        "112",
+        "168"
+      ],
+      "correct_answer": 3,
+      "difficulty_tier": "easy",
+      "difficulty_score": 47,
+      "visual_svg": null,
+      "visual_alt": null,
+      "diagnostics": {
+        "0": "When the digits add up to 10 or more, remember to carry the 1 to the next column.",
+        "1": "Check the problem again — are you sure you need to subtract? The word 'more' or 'total' usually means addition.",
+        "2": "Make sure you're lining up the ones, tens, and hundreds columns correctly.",
+        "correct_explanation": "The answer is 168. When we add the numbers together (56 + 84), the total is 168."
+      },
+      "tags": [
+        "LCM",
+        "multiples",
+        "divisibility",
+        "grade-5-6"
+      ],
+      "hint": {
+        "level_0": "Read it again — what are the quantities, and why are they being joined?",
+        "level_1": "Think about what you're putting together. Could you draw it, use a number line, or break the numbers into tens and ones? Start with 56. Now add 84 to it.  What do you get?",
+        "level_2": "Here's the solution: 56 + 84 = 140. We combined the two amounts to get the total."
+      },
+      "interaction_mode": "mcq",
+      "visual_context": null,
+      "irt_params": {
+        "a": 1.05,
+        "b": 1.3,
+        "c": 0.15
+      },
+      "irt_a": 1.05,
+      "irt_b": 1.3,
+      "irt_c": 0.15,
+      "solution_steps": [
+        "Identify the numbers: 56, 84",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ],
+      "competency_level": "A",
+      "competency_confidence": 0.8,
+      "competency_name": "Applying",
+      "story_theme": "The Racing Garage",
+      "story_chapter": 3,
+      "legacy_id": "T2-975",
+      "km_level": "L3",
+      "km_pillar": "NT",
+      "km_topic": "hcf_lcm",
+      "km_topic_display": "Common Ground",
+      "km_source_bank": "v2"
+    },
+    {
+      "id": "KM-L3-NT-0620",
+      "stem": "What is the greatest common divisor (GCD) of 132 and 198?",
+      "choices": [
+        "33",
+        "11",
+        "22",
+        "66"
+      ],
+      "correct_answer": 3,
+      "difficulty_tier": "easy",
+      "difficulty_score": 49,
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 350 80\" width=\"350\" height=\"80\" style=\"font-family:Arial,sans-serif\"><line x1=\"40\" y1=\"40\" x2=\"310\" y2=\"40\" stroke=\"#333\" stroke-width=\"2\"/><polygon points=\"35,40 45,35 45,45\" fill=\"#333\"/><polygon points=\"315,40 305,35 305,45\" fill=\"#333\"/><line x1=\"50.0\" y1=\"34\" x2=\"50.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"50.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">0</text><line x1=\"75.0\" y1=\"34\" x2=\"75.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"75.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">1</text><line x1=\"100.0\" y1=\"34\" x2=\"100.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"100.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">2</text><line x1=\"125.0\" y1=\"34\" x2=\"125.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"125.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">3</text><line x1=\"150.0\" y1=\"34\" x2=\"150.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"150.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">4</text><line x1=\"175.0\" y1=\"34\" x2=\"175.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"175.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">5</text><line x1=\"200.0\" y1=\"34\" x2=\"200.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"200.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">6</text><line x1=\"225.0\" y1=\"34\" x2=\"225.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"225.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">7</text><line x1=\"250.0\" y1=\"34\" x2=\"250.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"250.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">8</text><line x1=\"275.0\" y1=\"34\" x2=\"275.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"275.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">9</text><line x1=\"300.0\" y1=\"34\" x2=\"300.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"300.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">10</text></svg>",
+      "visual_alt": null,
+      "diagnostics": {
+        "0": "When the digits add up to 10 or more, remember to carry the 1 to the next column.",
+        "1": "Check the problem again — are you sure you need to subtract? The word 'more' or 'total' usually means addition.",
+        "2": "Make sure you're lining up the ones, tens, and hundreds columns correctly.",
+        "correct_explanation": "The answer is 66. When we add the numbers together (462 + 330), the total is 66."
+      },
+      "tags": [
+        "GCD",
+        "factors",
+        "divisibility",
+        "grade-5-6"
+      ],
+      "hint": {
+        "level_0": "Think: what does 'altogether' or 'total' or 'in all' really mean here?",
+        "level_1": "Think about what you're putting together. Could you draw it, use a number line, or break the numbers into tens and ones? Start with 462. Now add 330 to it.  What do you get?",
+        "level_2": "Here's the solution: 198 - 132 = ?. We combined the two amounts to get the total."
+      },
+      "interaction_mode": "mcq",
+      "visual_context": null,
+      "irt_params": {
+        "a": 1.15,
+        "b": 1.32,
+        "c": 0.15
+      },
+      "irt_a": 1.15,
+      "irt_b": 1.32,
+      "irt_c": 0.15,
+      "solution_steps": [
+        "Identify the numbers: 462, 330",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ],
+      "competency_level": "R",
+      "competency_confidence": 0.636,
+      "competency_name": "Reasoning",
+      "story_theme": "The Racing Garage",
+      "story_chapter": 2,
+      "legacy_id": "T2-965",
+      "km_level": "L3",
+      "km_pillar": "NT",
+      "km_topic": "hcf_lcm",
+      "km_topic_display": "Common Ground",
+      "km_source_bank": "v2"
+    },
+    {
+      "id": "KM-L3-NT-0621",
+      "stem": "What is the least common multiple (LCM) of 4 and 9?",
+      "choices": [
+        "48",
+        "72",
+        "24",
+        "36"
+      ],
+      "correct_answer": 3,
+      "difficulty_tier": "easy",
+      "difficulty_score": 50,
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 350 80\" width=\"350\" height=\"80\" style=\"font-family:Arial,sans-serif\"><line x1=\"40\" y1=\"40\" x2=\"310\" y2=\"40\" stroke=\"#333\" stroke-width=\"2\"/><polygon points=\"35,40 45,35 45,45\" fill=\"#333\"/><polygon points=\"315,40 305,35 305,45\" fill=\"#333\"/><line x1=\"50.0\" y1=\"34\" x2=\"50.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"50.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">0</text><line x1=\"75.0\" y1=\"34\" x2=\"75.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"75.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">1</text><line x1=\"100.0\" y1=\"34\" x2=\"100.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"100.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">2</text><line x1=\"125.0\" y1=\"34\" x2=\"125.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"125.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">3</text><line x1=\"150.0\" y1=\"34\" x2=\"150.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"150.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">4</text><line x1=\"175.0\" y1=\"34\" x2=\"175.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"175.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">5</text><line x1=\"200.0\" y1=\"34\" x2=\"200.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"200.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">6</text><line x1=\"225.0\" y1=\"34\" x2=\"225.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"225.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">7</text><line x1=\"250.0\" y1=\"34\" x2=\"250.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"250.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">8</text><line x1=\"275.0\" y1=\"34\" x2=\"275.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"275.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">9</text><line x1=\"300.0\" y1=\"34\" x2=\"300.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"300.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">10</text></svg>",
+      "visual_alt": null,
+      "diagnostics": {
+        "0": "When the digits add up to 10 or more, remember to carry the 1 to the next column.",
+        "1": "Check the problem again — are you sure you need to subtract? The word 'more' or 'total' usually means addition.",
+        "2": "Make sure you're lining up the ones, tens, and hundreds columns correctly.",
+        "correct_explanation": "The answer is 36. When we add the numbers together (12 + 18), the total is 36."
+      },
+      "tags": [
+        "LCM",
+        "multiples",
+        "divisibility",
+        "grade-5-6"
+      ],
+      "hint": {
+        "level_0": "Think: what does 'altogether' or 'total' or 'in all' really mean here?",
+        "level_1": "Think about what you're putting together. Could you draw it, use a number line, or break the numbers into tens and ones? Start with 12. Now add 18 to it.  What do you get?",
+        "level_2": "Here's the solution: 4 × 9 = ?. We combined the two amounts to get the total."
+      },
+      "interaction_mode": "mcq",
+      "visual_context": null,
+      "irt_params": {
+        "a": 1.15,
+        "b": 1.32,
+        "c": 0.15
+      },
+      "irt_a": 1.15,
+      "irt_b": 1.32,
+      "irt_c": 0.15,
+      "solution_steps": [
+        "Identify the numbers: 12, 18",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ],
+      "competency_level": "A",
+      "competency_confidence": 0.8,
+      "competency_name": "Applying",
+      "story_theme": "The Racing Garage",
+      "story_chapter": 2,
+      "legacy_id": "T2-966",
+      "km_level": "L3",
+      "km_pillar": "NT",
+      "km_topic": "hcf_lcm",
+      "km_topic_display": "Common Ground",
+      "km_source_bank": "v2"
+    },
+    {
+      "id": "KM-L3-NT-0622",
+      "stem": "Tom's soccer practice is every 3 days. His piano lesson is every 4 days. Both happened today. In how many days will both happen on the same day again?",
+      "choices": [
+        "7",
+        "36",
+        "24",
+        "12"
+      ],
+      "correct_answer": 3,
+      "difficulty_tier": "easy",
+      "difficulty_score": 48,
+      "visual_svg": null,
+      "visual_alt": null,
+      "diagnostics": {
+        "0": "Don't jump to the first answer that seems right. Check ALL the clues before deciding.",
+        "1": "Read the problem again — there's a clue you haven't used yet that changes the answer.",
+        "2": "You might have the logic backwards. If A is taller than B, then B is shorter than A.",
+        "correct_explanation": "The answer is 12. By checking each clue against every option, only this answer satisfies all the conditions."
+      },
+      "tags": [
+        "LCM",
+        "scheduling"
+      ],
+      "hint": {
+        "level_0": "Logic puzzles need patience. Start with the most definite clue and build from there.",
+        "level_1": "Try working through each possibility one at a time. Can you eliminate answers that definitely don't work? List each piece of information as a separate fact. Then test each answer choice — does it match ALL the facts?",
+        "level_2": "Work through each step carefully to see why."
+      },
+      "concept_cluster": "scheduling-logic",
+      "interaction_mode": "mcq",
+      "visual_context": null,
+      "irt_params": {
+        "a": 1.68,
+        "b": 1.32,
+        "c": 0.15
+      },
+      "irt_a": 1.68,
+      "irt_b": 1.32,
+      "irt_c": 0.15,
+      "solution_steps": [
+        "Read the clues or conditions carefully",
+        "Eliminate options that don't fit",
+        "Check remaining options against all conditions"
+      ],
+      "competency_level": "K",
+      "competency_confidence": 0.5,
+      "competency_name": "Knowing",
+      "story_theme": "The Demon Hunters",
+      "story_chapter": 1,
+      "legacy_id": "T4-0928",
+      "km_level": "L3",
+      "km_pillar": "NT",
+      "km_topic": "hcf_lcm",
+      "km_topic_display": "Common Ground",
+      "km_source_bank": "v2"
+    },
+    {
+      "id": "KM-L3-NT-0623",
+      "stem": "What is the least common multiple of 35 and 25?",
+      "choices": [
+        "175",
+        "350",
+        "125",
+        "75"
+      ],
+      "correct_answer": 0,
+      "difficulty_tier": "easy",
+      "difficulty_score": 56,
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 350 80\" width=\"350\" height=\"80\" style=\"font-family:Arial,sans-serif\"><line x1=\"40\" y1=\"40\" x2=\"310\" y2=\"40\" stroke=\"#333\" stroke-width=\"2\"/><polygon points=\"35,40 45,35 45,45\" fill=\"#333\"/><polygon points=\"315,40 305,35 305,45\" fill=\"#333\"/><line x1=\"50.0\" y1=\"34\" x2=\"50.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"50.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">0</text><line x1=\"75.0\" y1=\"34\" x2=\"75.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"75.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">1</text><line x1=\"100.0\" y1=\"34\" x2=\"100.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"100.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">2</text><line x1=\"125.0\" y1=\"34\" x2=\"125.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"125.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">3</text><line x1=\"150.0\" y1=\"34\" x2=\"150.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"150.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">4</text><line x1=\"175.0\" y1=\"34\" x2=\"175.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"175.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">5</text><line x1=\"200.0\" y1=\"34\" x2=\"200.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"200.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">6</text><line x1=\"225.0\" y1=\"34\" x2=\"225.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"225.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">7</text><line x1=\"250.0\" y1=\"34\" x2=\"250.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"250.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">8</text><line x1=\"275.0\" y1=\"34\" x2=\"275.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"275.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">9</text><line x1=\"300.0\" y1=\"34\" x2=\"300.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"300.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">10</text></svg>",
+      "visual_alt": null,
+      "diagnostics": {
+        "1": "Check the problem again — are you sure you need to subtract? The word 'more' or 'total' usually means addition.",
+        "2": "Make sure you're lining up the ones, tens, and hundreds columns correctly.",
+        "3": "Double-check which numbers the problem is asking you to add together.",
+        "correct_explanation": "The answer is 175. When we add the numbers together (35 + 25), the total is 175."
+      },
+      "tags": [
+        "LCM",
+        "multiples",
+        "divisibility",
+        "grade-5-6"
+      ],
+      "hint": {
+        "level_0": "This problem is asking you to combine amounts. What two (or more) things are being put together?",
+        "level_1": "Think about what you're putting together. Could you draw it, use a number line, or break the numbers into tens and ones? Start with 35. Now add 25 to it.  What do you get?",
+        "level_2": "Here's the solution: 35 + 25 = 60. We combined the two amounts to get the total."
+      },
+      "interaction_mode": "mcq",
+      "visual_context": null,
+      "irt_params": {
+        "a": 1.18,
+        "b": 1.36,
+        "c": 0.15
+      },
+      "irt_a": 1.18,
+      "irt_b": 1.36,
+      "irt_c": 0.15,
+      "solution_steps": [
+        "Identify the numbers: 35, 25",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ],
+      "competency_level": "K",
+      "competency_confidence": 0.545,
+      "competency_name": "Knowing",
+      "story_theme": "The Racing Garage",
+      "story_chapter": 2,
+      "legacy_id": "T2-970",
+      "km_level": "L3",
+      "km_pillar": "NT",
+      "km_topic": "hcf_lcm",
+      "km_topic_display": "Common Ground",
+      "km_source_bank": "v2"
+    },
+    {
+      "id": "KM-L3-NT-0624",
+      "stem": "What is the least common multiple of 45 and 60?",
+      "choices": [
+        "120",
+        "360",
+        "180",
+        "90"
+      ],
+      "correct_answer": 2,
+      "difficulty_tier": "easy",
+      "difficulty_score": 57,
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 350 80\" width=\"350\" height=\"80\" style=\"font-family:Arial,sans-serif\"><line x1=\"40\" y1=\"40\" x2=\"310\" y2=\"40\" stroke=\"#333\" stroke-width=\"2\"/><polygon points=\"35,40 45,35 45,45\" fill=\"#333\"/><polygon points=\"315,40 305,35 305,45\" fill=\"#333\"/><line x1=\"50.0\" y1=\"34\" x2=\"50.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"50.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">0</text><line x1=\"75.0\" y1=\"34\" x2=\"75.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"75.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">1</text><line x1=\"100.0\" y1=\"34\" x2=\"100.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"100.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">2</text><line x1=\"125.0\" y1=\"34\" x2=\"125.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"125.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">3</text><line x1=\"150.0\" y1=\"34\" x2=\"150.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"150.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">4</text><line x1=\"175.0\" y1=\"34\" x2=\"175.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"175.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">5</text><line x1=\"200.0\" y1=\"34\" x2=\"200.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"200.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">6</text><line x1=\"225.0\" y1=\"34\" x2=\"225.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"225.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">7</text><line x1=\"250.0\" y1=\"34\" x2=\"250.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"250.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">8</text><line x1=\"275.0\" y1=\"34\" x2=\"275.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"275.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">9</text><line x1=\"300.0\" y1=\"34\" x2=\"300.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"300.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">10</text></svg>",
+      "visual_alt": null,
+      "diagnostics": {
+        "0": "When the digits add up to 10 or more, remember to carry the 1 to the next column.",
+        "1": "Check the problem again — are you sure you need to subtract? The word 'more' or 'total' usually means addition.",
+        "3": "Double-check which numbers the problem is asking you to add together.",
+        "correct_explanation": "The answer is 180. When we add the numbers together (45 + 60), the total is 180."
+      },
+      "tags": [
+        "LCM",
+        "multiples",
+        "divisibility",
+        "grade-5-6"
+      ],
+      "hint": {
+        "level_0": "Read it again — what are the quantities, and why are they being joined?",
+        "level_1": "Think about what you're putting together. Could you draw it, use a number line, or break the numbers into tens and ones? Start with 45. Now add 60 to it.  What do you get?",
+        "level_2": "Here's the solution: 45 + 60 = 105. We combined the two amounts to get the total."
+      },
+      "interaction_mode": "mcq",
+      "visual_context": null,
+      "irt_params": {
+        "a": 1.15,
+        "b": 1.36,
+        "c": 0.15
+      },
+      "irt_a": 1.15,
+      "irt_b": 1.36,
+      "irt_c": 0.15,
+      "solution_steps": [
+        "Identify the numbers: 45, 60",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ],
+      "competency_level": "A",
+      "competency_confidence": 0.8,
+      "competency_name": "Applying",
+      "story_theme": "The Racing Garage",
+      "story_chapter": 2,
+      "legacy_id": "T2-972",
+      "km_level": "L3",
+      "km_pillar": "NT",
+      "km_topic": "hcf_lcm",
+      "km_topic_display": "Common Ground",
+      "km_source_bank": "v2"
+    },
+    {
+      "id": "KM-L3-NT-0625",
+      "stem": "What is the greatest common divisor of 48 and 36?",
+      "choices": [
+        "12",
+        "18",
+        "8",
+        "6"
+      ],
+      "correct_answer": 0,
+      "difficulty_tier": "easy",
+      "difficulty_score": 59,
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 350 80\" width=\"350\" height=\"80\" style=\"font-family:Arial,sans-serif\"><line x1=\"40\" y1=\"40\" x2=\"310\" y2=\"40\" stroke=\"#333\" stroke-width=\"2\"/><polygon points=\"35,40 45,35 45,45\" fill=\"#333\"/><polygon points=\"315,40 305,35 305,45\" fill=\"#333\"/><line x1=\"50.0\" y1=\"34\" x2=\"50.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"50.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">0</text><line x1=\"75.0\" y1=\"34\" x2=\"75.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"75.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">1</text><line x1=\"100.0\" y1=\"34\" x2=\"100.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"100.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">2</text><line x1=\"125.0\" y1=\"34\" x2=\"125.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"125.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">3</text><line x1=\"150.0\" y1=\"34\" x2=\"150.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"150.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">4</text><line x1=\"175.0\" y1=\"34\" x2=\"175.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"175.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">5</text><line x1=\"200.0\" y1=\"34\" x2=\"200.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"200.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">6</text><line x1=\"225.0\" y1=\"34\" x2=\"225.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"225.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">7</text><line x1=\"250.0\" y1=\"34\" x2=\"250.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"250.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">8</text><line x1=\"275.0\" y1=\"34\" x2=\"275.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"275.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">9</text><line x1=\"300.0\" y1=\"34\" x2=\"300.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"300.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">10</text></svg>",
+      "visual_alt": null,
+      "diagnostics": {
+        "1": "Check the problem again — are you sure you need to subtract? The word 'more' or 'total' usually means addition.",
+        "2": "Make sure you're lining up the ones, tens, and hundreds columns correctly.",
+        "3": "Double-check which numbers the problem is asking you to add together.",
+        "correct_explanation": "The answer is 12. When we add the numbers together (48 + 36), the total is 12."
+      },
+      "tags": [
+        "GCD",
+        "factors",
+        "divisibility",
+        "grade-5-6"
+      ],
+      "hint": {
+        "level_0": "This problem is asking you to combine amounts. What two (or more) things are being put together?",
+        "level_1": "Think about what you're putting together. Could you draw it, use a number line, or break the numbers into tens and ones? Start with 48. Now add 36 to it.  What do you get?",
+        "level_2": "Here's the solution: 48 - 36 = ?. We combined the two amounts to get the total."
+      },
+      "interaction_mode": "mcq",
+      "visual_context": null,
+      "irt_params": {
+        "a": 1.3,
+        "b": 1.38,
+        "c": 0.15
+      },
+      "irt_a": 1.3,
+      "irt_b": 1.38,
+      "irt_c": 0.15,
+      "solution_steps": [
+        "Identify the numbers: 48, 36",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ],
+      "competency_level": "K",
+      "competency_confidence": 0.5,
+      "competency_name": "Knowing",
+      "story_theme": "The Racing Garage",
+      "story_chapter": 2,
+      "legacy_id": "T2-956",
+      "km_level": "L3",
+      "km_pillar": "NT",
+      "km_topic": "hcf_lcm",
+      "km_topic_display": "Common Ground",
+      "km_source_bank": "v2"
+    },
+    {
+      "id": "KM-L3-NT-0626",
+      "stem": "What is the greatest common divisor of 360 and 240?",
+      "choices": [
+        "120",
+        "60",
+        "40",
+        "24"
+      ],
+      "correct_answer": 0,
+      "difficulty_tier": "easy",
+      "difficulty_score": 60,
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 350 80\" width=\"350\" height=\"80\" style=\"font-family:Arial,sans-serif\"><line x1=\"40\" y1=\"40\" x2=\"310\" y2=\"40\" stroke=\"#333\" stroke-width=\"2\"/><polygon points=\"35,40 45,35 45,45\" fill=\"#333\"/><polygon points=\"315,40 305,35 305,45\" fill=\"#333\"/><line x1=\"50.0\" y1=\"34\" x2=\"50.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"50.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">0</text><line x1=\"75.0\" y1=\"34\" x2=\"75.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"75.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">1</text><line x1=\"100.0\" y1=\"34\" x2=\"100.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"100.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">2</text><line x1=\"125.0\" y1=\"34\" x2=\"125.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"125.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">3</text><line x1=\"150.0\" y1=\"34\" x2=\"150.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"150.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">4</text><line x1=\"175.0\" y1=\"34\" x2=\"175.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"175.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">5</text><line x1=\"200.0\" y1=\"34\" x2=\"200.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"200.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">6</text><line x1=\"225.0\" y1=\"34\" x2=\"225.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"225.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">7</text><line x1=\"250.0\" y1=\"34\" x2=\"250.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"250.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">8</text><line x1=\"275.0\" y1=\"34\" x2=\"275.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"275.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">9</text><line x1=\"300.0\" y1=\"34\" x2=\"300.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"300.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">10</text></svg>",
+      "visual_alt": null,
+      "diagnostics": {
+        "1": "Check the problem again — are you sure you need to subtract? The word 'more' or 'total' usually means addition.",
+        "2": "Make sure you're lining up the ones, tens, and hundreds columns correctly.",
+        "3": "Double-check which numbers the problem is asking you to add together.",
+        "correct_explanation": "The answer is 120. When we add the numbers together (360 + 240), the total is 120."
+      },
+      "tags": [
+        "GCD",
+        "factors",
+        "divisibility",
+        "grade-5-6"
+      ],
+      "hint": {
+        "level_0": "Think: what does 'altogether' or 'total' or 'in all' really mean here?",
+        "level_1": "Think about what you're putting together. Could you draw it, use a number line, or break the numbers into tens and ones? Start with 360. Now add 240 to it.  What do you get?",
+        "level_2": "Here's the solution: 360 - 240 = ?. We combined the two amounts to get the total."
+      },
+      "interaction_mode": "mcq",
+      "visual_context": null,
+      "irt_params": {
+        "a": 1.28,
+        "b": 1.38,
+        "c": 0.15
+      },
+      "irt_a": 1.28,
+      "irt_b": 1.38,
+      "irt_c": 0.15,
+      "solution_steps": [
+        "Identify the numbers: 360, 240",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ],
+      "competency_level": "A",
+      "competency_confidence": 0.8,
+      "competency_name": "Applying",
+      "story_theme": "The Racing Garage",
+      "story_chapter": 2,
+      "legacy_id": "T2-961",
+      "km_level": "L3",
+      "km_pillar": "NT",
+      "km_topic": "hcf_lcm",
+      "km_topic_display": "Common Ground",
+      "km_source_bank": "v2"
+    },
+    {
+      "id": "KM-L3-NT-0627",
+      "stem": "How many whole numbers from 1 to 200 are divisible by both 4 and 6?",
+      "choices": [
+        "16",
+        "17",
+        "33",
+        "50"
+      ],
+      "correct_answer": 0,
+      "difficulty_tier": "easy",
+      "difficulty_score": 66,
+      "visual_svg": null,
+      "visual_alt": null,
+      "diagnostics": {
+        "1": "You counted one extra. Try touching each item as you count to make sure you don't count anything twice.",
+        "2": "Be careful not to count the same object twice — try crossing them off as you go.",
+        "3": "It looks like you forgot to count one of the groups. Read the problem again to find all the items.",
+        "correct_explanation": "The answer is 16. When we count each item carefully — making sure not to skip any or count any twice — we get 16."
+      },
+      "tags": [
+        "lcm",
+        "both-divisible"
+      ],
+      "hint": {
+        "level_0": "Read the question carefully. What exactly are you being asked to count? Are there conditions to watch for?",
+        "level_1": "Look at the key values: 1, 200, 4, 6. Can you list out what needs to be counted systematically? Work through it step by step with the numbers 1, 200, 4, 6. Write out each item that meets the condition.",
+        "level_2": "Count each qualifying item: 1, 200, 4, 6."
+      },
+      "concept_cluster": "factor-counting",
+      "interaction_mode": "mcq",
+      "visual_context": null,
+      "irt_params": {
+        "a": 1.55,
+        "b": 1.42,
+        "c": 0.15
+      },
+      "irt_a": 1.55,
+      "irt_b": 1.42,
+      "irt_c": 0.15,
+      "solution_steps": [
+        "Identify what you need to count",
+        "Count systematically, left to right",
+        "The total count is your answer"
+      ],
+      "competency_level": "K",
+      "competency_confidence": 0.5,
+      "competency_name": "Knowing",
+      "story_theme": "The Lost City Expedition",
+      "story_chapter": 2,
+      "legacy_id": "T1-0945",
+      "km_level": "L3",
+      "km_pillar": "NT",
+      "km_topic": "hcf_lcm",
+      "km_topic_display": "Common Ground",
+      "km_source_bank": "v2"
+    },
+    {
+      "id": "KM-L3-NT-0628",
+      "stem": "What is the least common multiple of 8 and 14?",
+      "choices": [
+        "28",
+        "112",
+        "56",
+        "48"
+      ],
+      "correct_answer": 2,
+      "difficulty_tier": "easy",
+      "difficulty_score": 67,
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 350 80\" width=\"350\" height=\"80\" style=\"font-family:Arial,sans-serif\"><line x1=\"40\" y1=\"40\" x2=\"310\" y2=\"40\" stroke=\"#333\" stroke-width=\"2\"/><polygon points=\"35,40 45,35 45,45\" fill=\"#333\"/><polygon points=\"315,40 305,35 305,45\" fill=\"#333\"/><line x1=\"50.0\" y1=\"34\" x2=\"50.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"50.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">0</text><line x1=\"75.0\" y1=\"34\" x2=\"75.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"75.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">1</text><line x1=\"100.0\" y1=\"34\" x2=\"100.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"100.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">2</text><line x1=\"125.0\" y1=\"34\" x2=\"125.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"125.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">3</text><line x1=\"150.0\" y1=\"34\" x2=\"150.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"150.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">4</text><line x1=\"175.0\" y1=\"34\" x2=\"175.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"175.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">5</text><line x1=\"200.0\" y1=\"34\" x2=\"200.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"200.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">6</text><line x1=\"225.0\" y1=\"34\" x2=\"225.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"225.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">7</text><line x1=\"250.0\" y1=\"34\" x2=\"250.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"250.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">8</text><line x1=\"275.0\" y1=\"34\" x2=\"275.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"275.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">9</text><line x1=\"300.0\" y1=\"34\" x2=\"300.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"300.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">10</text></svg>",
+      "visual_alt": null,
+      "diagnostics": {
+        "0": "When the digits add up to 10 or more, remember to carry the 1 to the next column.",
+        "1": "Check the problem again — are you sure you need to subtract? The word 'more' or 'total' usually means addition.",
+        "3": "Double-check which numbers the problem is asking you to add together.",
+        "correct_explanation": "The answer is 56. When we add the numbers together (8 + 14), the total is 56."
+      },
+      "tags": [
+        "LCM",
+        "multiples",
+        "divisibility",
+        "grade-5-6"
+      ],
+      "hint": {
+        "level_0": "This problem is asking you to combine amounts. What two (or more) things are being put together?",
+        "level_1": "Think about what you're putting together. Could you draw it, use a number line, or break the numbers into tens and ones? Start with 8. Now add 14 to it.  What do you get?",
+        "level_2": "Here's the solution: 8 + 14 = 22. We combined the two amounts to get the total."
+      },
+      "interaction_mode": "mcq",
+      "visual_context": null,
+      "irt_params": {
+        "a": 1.25,
+        "b": 1.42,
+        "c": 0.15
+      },
+      "irt_a": 1.25,
+      "irt_b": 1.42,
+      "irt_c": 0.15,
+      "solution_steps": [
+        "Identify the numbers: 8, 14",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ],
+      "competency_level": "K",
+      "competency_confidence": 0.545,
+      "competency_name": "Knowing",
+      "story_theme": "The Racing Garage",
+      "story_chapter": 2,
+      "legacy_id": "T2-968",
+      "km_level": "L3",
+      "km_pillar": "NT",
+      "km_topic": "hcf_lcm",
+      "km_topic_display": "Common Ground",
+      "km_source_bank": "v2"
+    },
+    {
+      "id": "KM-L3-NT-0629",
+      "stem": "What is the least common multiple of 16 and 28?",
+      "choices": [
+        "56",
+        "224",
+        "112",
+        "64"
+      ],
+      "correct_answer": 2,
+      "difficulty_tier": "medium",
+      "difficulty_score": 71,
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 350 80\" width=\"350\" height=\"80\" style=\"font-family:Arial,sans-serif\"><line x1=\"40\" y1=\"40\" x2=\"310\" y2=\"40\" stroke=\"#333\" stroke-width=\"2\"/><polygon points=\"35,40 45,35 45,45\" fill=\"#333\"/><polygon points=\"315,40 305,35 305,45\" fill=\"#333\"/><line x1=\"50.0\" y1=\"34\" x2=\"50.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"50.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">0</text><line x1=\"75.0\" y1=\"34\" x2=\"75.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"75.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">1</text><line x1=\"100.0\" y1=\"34\" x2=\"100.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"100.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">2</text><line x1=\"125.0\" y1=\"34\" x2=\"125.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"125.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">3</text><line x1=\"150.0\" y1=\"34\" x2=\"150.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"150.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">4</text><line x1=\"175.0\" y1=\"34\" x2=\"175.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"175.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">5</text><line x1=\"200.0\" y1=\"34\" x2=\"200.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"200.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">6</text><line x1=\"225.0\" y1=\"34\" x2=\"225.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"225.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">7</text><line x1=\"250.0\" y1=\"34\" x2=\"250.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"250.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">8</text><line x1=\"275.0\" y1=\"34\" x2=\"275.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"275.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">9</text><line x1=\"300.0\" y1=\"34\" x2=\"300.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"300.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">10</text></svg>",
+      "visual_alt": null,
+      "diagnostics": {
+        "0": "When the digits add up to 10 or more, remember to carry the 1 to the next column.",
+        "1": "Check the problem again — are you sure you need to subtract? The word 'more' or 'total' usually means addition.",
+        "3": "Double-check which numbers the problem is asking you to add together.",
+        "correct_explanation": "The answer is 112. When we add the numbers together (16 + 28), the total is 112."
+      },
+      "tags": [
+        "LCM",
+        "multiples",
+        "divisibility",
+        "grade-5-6"
+      ],
+      "hint": {
+        "level_0": "Read it again — what are the quantities, and why are they being joined?",
+        "level_1": "Think about what you're putting together. Could you draw it, use a number line, or break the numbers into tens and ones? Start with 16. Now add 28 to it.  What do you get?",
+        "level_2": "Here's the solution: 16 + 28 = 44. We combined the two amounts to get the total."
+      },
+      "interaction_mode": "mcq",
+      "visual_context": null,
+      "irt_params": {
+        "a": 1.28,
+        "b": 1.46,
+        "c": 0.15
+      },
+      "irt_a": 1.28,
+      "irt_b": 1.46,
+      "irt_c": 0.15,
+      "solution_steps": [
+        "Identify the numbers: 16, 28",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ],
+      "competency_level": "K",
+      "competency_confidence": 0.545,
+      "competency_name": "Knowing",
+      "story_theme": "The Racing Garage",
+      "story_chapter": 2,
+      "legacy_id": "T2-971",
+      "km_level": "L3",
+      "km_pillar": "NT",
+      "km_topic": "hcf_lcm",
+      "km_topic_display": "Common Ground",
+      "km_source_bank": "v2"
+    },
+    {
+      "id": "KM-L3-NT-0630",
+      "stem": "What is the least common multiple of 24 and 36?",
+      "choices": [
+        "36",
+        "144",
+        "48",
+        "72"
+      ],
+      "correct_answer": 3,
+      "difficulty_tier": "medium",
+      "difficulty_score": 72,
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 350 80\" width=\"350\" height=\"80\" style=\"font-family:Arial,sans-serif\"><line x1=\"40\" y1=\"40\" x2=\"310\" y2=\"40\" stroke=\"#333\" stroke-width=\"2\"/><polygon points=\"35,40 45,35 45,45\" fill=\"#333\"/><polygon points=\"315,40 305,35 305,45\" fill=\"#333\"/><line x1=\"50.0\" y1=\"34\" x2=\"50.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"50.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">0</text><line x1=\"75.0\" y1=\"34\" x2=\"75.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"75.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">1</text><line x1=\"100.0\" y1=\"34\" x2=\"100.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"100.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">2</text><line x1=\"125.0\" y1=\"34\" x2=\"125.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"125.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">3</text><line x1=\"150.0\" y1=\"34\" x2=\"150.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"150.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">4</text><line x1=\"175.0\" y1=\"34\" x2=\"175.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"175.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">5</text><line x1=\"200.0\" y1=\"34\" x2=\"200.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"200.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">6</text><line x1=\"225.0\" y1=\"34\" x2=\"225.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"225.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">7</text><line x1=\"250.0\" y1=\"34\" x2=\"250.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"250.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">8</text><line x1=\"275.0\" y1=\"34\" x2=\"275.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"275.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">9</text><line x1=\"300.0\" y1=\"34\" x2=\"300.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"300.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">10</text></svg>",
+      "visual_alt": null,
+      "diagnostics": {
+        "0": "When the digits add up to 10 or more, remember to carry the 1 to the next column.",
+        "1": "Check the problem again — are you sure you need to subtract? The word 'more' or 'total' usually means addition.",
+        "2": "Make sure you're lining up the ones, tens, and hundreds columns correctly.",
+        "correct_explanation": "The answer is 72. When we add the numbers together (24 + 36), the total is 72."
+      },
+      "tags": [
+        "LCM",
+        "multiples",
+        "divisibility",
+        "grade-5-6"
+      ],
+      "hint": {
+        "level_0": "Read it again — what are the quantities, and why are they being joined?",
+        "level_1": "Think about what you're putting together. Could you draw it, use a number line, or break the numbers into tens and ones? Start with 24. Now add 36 to it.  What do you get?",
+        "level_2": "Here's the solution: 24 + 36 = 60. We combined the two amounts to get the total."
+      },
+      "interaction_mode": "mcq",
+      "visual_context": null,
+      "irt_params": {
+        "a": 1.32,
+        "b": 1.48,
+        "c": 0.15
+      },
+      "irt_a": 1.32,
+      "irt_b": 1.48,
+      "irt_c": 0.15,
+      "solution_steps": [
+        "Identify the numbers: 24, 36",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ],
+      "competency_level": "R",
+      "competency_confidence": 0.636,
+      "competency_name": "Reasoning",
+      "story_theme": "The Racing Garage",
+      "story_chapter": 2,
+      "legacy_id": "T2-969",
+      "km_level": "L3",
+      "km_pillar": "NT",
+      "km_topic": "hcf_lcm",
+      "km_topic_display": "Common Ground",
+      "km_source_bank": "v2"
+    },
+    {
+      "id": "KM-L3-NT-0631",
+      "stem": "What is the smallest number divisible by 1, 2, 3, 4, 5, and 6?",
+      "choices": [
+        "30",
+        "180",
+        "120",
+        "60"
+      ],
+      "correct_answer": 3,
+      "difficulty_tier": "easy",
+      "difficulty_score": 75,
+      "visual_svg": null,
+      "visual_alt": null,
+      "diagnostics": {
+        "0": "Don't jump to the first answer that seems right. Check ALL the clues before deciding.",
+        "1": "Read the problem again — there's a clue you haven't used yet that changes the answer.",
+        "2": "You might have the logic backwards. If A is taller than B, then B is shorter than A.",
+        "correct_explanation": "The answer is 60. By checking each clue against every option, only this answer satisfies all the conditions."
+      },
+      "tags": [
+        "number-puzzle",
+        "lcm"
+      ],
+      "hint": {
+        "level_0": "What constraints must the answer satisfy? List them all.",
+        "level_1": "Try each answer choice and check if it satisfies ALL constraints. Work with the values: 1, 2, 3, 4. Test systematically.",
+        "level_2": "It satisfies all the given conditions."
+      },
+      "concept_cluster": "number-puzzles",
+      "interaction_mode": "mcq",
+      "visual_context": null,
+      "irt_params": {
+        "a": 1.48,
+        "b": 1.5,
+        "c": 0.15
+      },
+      "irt_a": 1.48,
+      "irt_b": 1.5,
+      "irt_c": 0.15,
+      "solution_steps": [
+        "Read the clues or conditions carefully",
+        "Eliminate options that don't fit",
+        "Check remaining options against all conditions"
+      ],
+      "original_stem": "What is the smallest number divisible by 1, 2, 3, 4, 5, and 6?",
+      "competency_level": "A",
+      "competency_confidence": 0.8,
+      "competency_name": "Applying",
+      "story_theme": "The Escape Room",
+      "story_chapter": 3,
+      "legacy_id": "T8-0988",
+      "km_level": "L3",
+      "km_pillar": "NT",
+      "km_topic": "hcf_lcm",
+      "km_topic_display": "Common Ground",
+      "km_source_bank": "v2"
+    },
+    {
+      "id": "KM-L3-NT-0632",
+      "stem": "What is the greatest common divisor of 120 and 84?",
+      "choices": [
+        "8",
+        "6",
+        "24",
+        "12"
+      ],
+      "correct_answer": 3,
+      "difficulty_tier": "medium",
+      "difficulty_score": 75,
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 350 80\" width=\"350\" height=\"80\" style=\"font-family:Arial,sans-serif\"><line x1=\"40\" y1=\"40\" x2=\"310\" y2=\"40\" stroke=\"#333\" stroke-width=\"2\"/><polygon points=\"35,40 45,35 45,45\" fill=\"#333\"/><polygon points=\"315,40 305,35 305,45\" fill=\"#333\"/><line x1=\"50.0\" y1=\"34\" x2=\"50.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"50.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">0</text><line x1=\"75.0\" y1=\"34\" x2=\"75.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"75.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">1</text><line x1=\"100.0\" y1=\"34\" x2=\"100.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"100.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">2</text><line x1=\"125.0\" y1=\"34\" x2=\"125.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"125.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">3</text><line x1=\"150.0\" y1=\"34\" x2=\"150.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"150.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">4</text><line x1=\"175.0\" y1=\"34\" x2=\"175.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"175.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">5</text><line x1=\"200.0\" y1=\"34\" x2=\"200.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"200.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">6</text><line x1=\"225.0\" y1=\"34\" x2=\"225.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"225.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">7</text><line x1=\"250.0\" y1=\"34\" x2=\"250.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"250.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">8</text><line x1=\"275.0\" y1=\"34\" x2=\"275.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"275.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">9</text><line x1=\"300.0\" y1=\"34\" x2=\"300.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"300.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">10</text></svg>",
+      "visual_alt": null,
+      "diagnostics": {
+        "0": "When the digits add up to 10 or more, remember to carry the 1 to the next column.",
+        "1": "Check the problem again — are you sure you need to subtract? The word 'more' or 'total' usually means addition.",
+        "2": "Make sure you're lining up the ones, tens, and hundreds columns correctly.",
+        "correct_explanation": "The answer is 12. When we add the numbers together (120 + 84), the total is 12."
+      },
+      "tags": [
+        "GCD",
+        "factors",
+        "divisibility",
+        "grade-5-6"
+      ],
+      "hint": {
+        "level_0": "Think: what does 'altogether' or 'total' or 'in all' really mean here?",
+        "level_1": "Think about what you're putting together. Could you draw it, use a number line, or break the numbers into tens and ones? Start with 120. Now add 84 to it.  What do you get?",
+        "level_2": "Here's the solution: 120 + 84 = 204. We combined the two amounts to get the total."
+      },
+      "interaction_mode": "mcq",
+      "visual_context": null,
+      "irt_params": {
+        "a": 1.48,
+        "b": 1.52,
+        "c": 0.15
+      },
+      "irt_a": 1.48,
+      "irt_b": 1.52,
+      "irt_c": 0.15,
+      "solution_steps": [
+        "Identify the numbers: 120, 84",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ],
+      "competency_level": "K",
+      "competency_confidence": 0.75,
+      "competency_name": "Knowing",
+      "story_theme": "The Racing Garage",
+      "story_chapter": 2,
+      "legacy_id": "T2-958",
+      "km_level": "L3",
+      "km_pillar": "NT",
+      "km_topic": "hcf_lcm",
+      "km_topic_display": "Common Ground",
+      "km_source_bank": "v2"
+    },
+    {
+      "id": "KM-L3-NT-0633",
+      "stem": "What is the least common multiple (LCM) of 10 and 21?",
+      "choices": [
+        "60",
+        "126",
+        "210",
+        "420"
+      ],
+      "correct_answer": 2,
+      "difficulty_tier": "medium",
+      "difficulty_score": 76,
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 350 80\" width=\"350\" height=\"80\" style=\"font-family:Arial,sans-serif\"><line x1=\"40\" y1=\"40\" x2=\"310\" y2=\"40\" stroke=\"#333\" stroke-width=\"2\"/><polygon points=\"35,40 45,35 45,45\" fill=\"#333\"/><polygon points=\"315,40 305,35 305,45\" fill=\"#333\"/><line x1=\"50.0\" y1=\"34\" x2=\"50.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"50.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">0</text><line x1=\"75.0\" y1=\"34\" x2=\"75.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"75.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">1</text><line x1=\"100.0\" y1=\"34\" x2=\"100.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"100.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">2</text><line x1=\"125.0\" y1=\"34\" x2=\"125.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"125.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">3</text><line x1=\"150.0\" y1=\"34\" x2=\"150.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"150.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">4</text><line x1=\"175.0\" y1=\"34\" x2=\"175.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"175.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">5</text><line x1=\"200.0\" y1=\"34\" x2=\"200.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"200.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">6</text><line x1=\"225.0\" y1=\"34\" x2=\"225.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"225.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">7</text><line x1=\"250.0\" y1=\"34\" x2=\"250.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"250.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">8</text><line x1=\"275.0\" y1=\"34\" x2=\"275.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"275.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">9</text><line x1=\"300.0\" y1=\"34\" x2=\"300.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"300.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">10</text></svg>",
+      "visual_alt": null,
+      "diagnostics": {
+        "0": "When the digits add up to 10 or more, remember to carry the 1 to the next column.",
+        "1": "Check the problem again — are you sure you need to subtract? The word 'more' or 'total' usually means addition.",
+        "3": "Double-check which numbers the problem is asking you to add together.",
+        "correct_explanation": "The answer is 210. When we add the numbers together (30 + 42), the total is 210."
+      },
+      "tags": [
+        "LCM",
+        "multiples",
+        "divisibility",
+        "grade-5-6"
+      ],
+      "hint": {
+        "level_0": "This problem is asking you to combine amounts. What two (or more) things are being put together?",
+        "level_1": "Think about what you're putting together. Could you draw it, use a number line, or break the numbers into tens and ones? Start with 30. Now add 42 to it.  What do you get?",
+        "level_2": "Here's the solution: 10 × 21 = ?. We combined the two amounts to get the total."
+      },
+      "interaction_mode": "mcq",
+      "visual_context": null,
+      "irt_params": {
+        "a": 1.35,
+        "b": 1.52,
+        "c": 0.15
+      },
+      "irt_a": 1.35,
+      "irt_b": 1.52,
+      "irt_c": 0.15,
+      "solution_steps": [
+        "Identify the numbers: 30, 42",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ],
+      "competency_level": "R",
+      "competency_confidence": 0.636,
+      "competency_name": "Reasoning",
+      "story_theme": "The Racing Garage",
+      "story_chapter": 2,
+      "legacy_id": "T2-973",
+      "km_level": "L3",
+      "km_pillar": "NT",
+      "km_topic": "hcf_lcm",
+      "km_topic_display": "Common Ground",
+      "km_source_bank": "v2"
+    },
+    {
+      "id": "KM-L3-NT-0634",
+      "stem": "Bus A comes every 6 minutes and Bus B comes every 8 minutes. Both arrive at 3:00 PM. When will they next arrive at the same time?",
+      "choices": [
+        "3:14 PM",
+        "4:00 PM",
+        "3:48 PM",
+        "3:24 PM"
+      ],
+      "correct_answer": 3,
+      "difficulty_tier": "easy",
+      "difficulty_score": 70,
+      "visual_svg": null,
+      "visual_alt": null,
+      "diagnostics": {
+        "0": "Don't jump to the first answer that seems right. Check ALL the clues before deciding.",
+        "1": "Read the problem again — there's a clue you haven't used yet that changes the answer.",
+        "2": "You might have the logic backwards. If A is taller than B, then B is shorter than A.",
+        "correct_explanation": "The answer is 3:24 PM. By checking each clue against every option, only this answer satisfies all the conditions."
+      },
+      "tags": [
+        "LCM",
+        "time"
+      ],
+      "hint": {
+        "level_0": "List each person's statement. If each statement were true, what would follow?",
+        "level_1": "Try assuming each person is the liar. Does exactly one lie produce a consistent scenario? Test each answer choice against ALL the given statements. Only one will be consistent.",
+        "level_2": "Testing all possibilities against the clues confirms this."
+      },
+      "concept_cluster": "scheduling-logic",
+      "interaction_mode": "mcq",
+      "visual_context": null,
+      "irt_params": {
+        "a": 1.7,
+        "b": 1.52,
+        "c": 0.15
+      },
+      "irt_a": 1.7,
+      "irt_b": 1.52,
+      "irt_c": 0.15,
+      "solution_steps": [
+        "Read the clues or conditions carefully",
+        "Eliminate options that don't fit",
+        "Check remaining options against all conditions"
+      ],
+      "competency_level": "A",
+      "competency_confidence": 0.8,
+      "competency_name": "Applying",
+      "story_theme": "The Demon Hunters",
+      "story_chapter": 2,
+      "legacy_id": "T4-0966",
+      "km_level": "L3",
+      "km_pillar": "NT",
+      "km_topic": "hcf_lcm",
+      "km_topic_display": "Common Ground",
+      "km_source_bank": "v2"
+    },
+    {
+      "id": "KM-L3-NT-0635",
+      "stem": "What is the greatest common divisor of 256 and 192?",
+      "choices": [
+        "16",
+        "32",
+        "64",
+        "128"
+      ],
+      "correct_answer": 2,
+      "difficulty_tier": "medium",
+      "difficulty_score": 79,
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 350 80\" width=\"350\" height=\"80\" style=\"font-family:Arial,sans-serif\"><line x1=\"40\" y1=\"40\" x2=\"310\" y2=\"40\" stroke=\"#333\" stroke-width=\"2\"/><polygon points=\"35,40 45,35 45,45\" fill=\"#333\"/><polygon points=\"315,40 305,35 305,45\" fill=\"#333\"/><line x1=\"50.0\" y1=\"34\" x2=\"50.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"50.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">0</text><line x1=\"75.0\" y1=\"34\" x2=\"75.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"75.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">1</text><line x1=\"100.0\" y1=\"34\" x2=\"100.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"100.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">2</text><line x1=\"125.0\" y1=\"34\" x2=\"125.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"125.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">3</text><line x1=\"150.0\" y1=\"34\" x2=\"150.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"150.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">4</text><line x1=\"175.0\" y1=\"34\" x2=\"175.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"175.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">5</text><line x1=\"200.0\" y1=\"34\" x2=\"200.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"200.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">6</text><line x1=\"225.0\" y1=\"34\" x2=\"225.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"225.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">7</text><line x1=\"250.0\" y1=\"34\" x2=\"250.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"250.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">8</text><line x1=\"275.0\" y1=\"34\" x2=\"275.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"275.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">9</text><line x1=\"300.0\" y1=\"34\" x2=\"300.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"300.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">10</text></svg>",
+      "visual_alt": null,
+      "diagnostics": {
+        "0": "When the digits add up to 10 or more, remember to carry the 1 to the next column.",
+        "1": "Check the problem again — are you sure you need to subtract? The word 'more' or 'total' usually means addition.",
+        "3": "Double-check which numbers the problem is asking you to add together.",
+        "correct_explanation": "The answer is 64. When we add the numbers together (256 + 192), the total is 64."
+      },
+      "tags": [
+        "GCD",
+        "factors",
+        "divisibility",
+        "grade-5-6"
+      ],
+      "hint": {
+        "level_0": "This problem is asking you to combine amounts. What two (or more) things are being put together?",
+        "level_1": "Think about what you're putting together. Could you draw it, use a number line, or break the numbers into tens and ones? Start with 256. Now add 192 to it.  What do you get?",
+        "level_2": "Here's the solution: 256 - 192 = ?. We combined the two amounts to get the total."
+      },
+      "interaction_mode": "mcq",
+      "visual_context": null,
+      "irt_params": {
+        "a": 1.48,
+        "b": 1.56,
+        "c": 0.15
+      },
+      "irt_a": 1.48,
+      "irt_b": 1.56,
+      "irt_c": 0.15,
+      "solution_steps": [
+        "Identify the numbers: 256, 192",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ],
+      "competency_level": "K",
+      "competency_confidence": 0.545,
+      "competency_name": "Knowing",
+      "story_theme": "The Racing Garage",
+      "story_chapter": 2,
+      "legacy_id": "T2-963",
+      "km_level": "L3",
+      "km_pillar": "NT",
+      "km_topic": "hcf_lcm",
+      "km_topic_display": "Common Ground",
+      "km_source_bank": "v2"
+    },
+    {
+      "id": "KM-L3-NT-0636",
+      "stem": "What is the least common multiple of 15 and 20?",
+      "choices": [
+        "60",
+        "120",
+        "30",
+        "45"
+      ],
+      "correct_answer": 0,
+      "difficulty_tier": "medium",
+      "difficulty_score": 82,
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 350 80\" width=\"350\" height=\"80\" style=\"font-family:Arial,sans-serif\"><line x1=\"40\" y1=\"40\" x2=\"310\" y2=\"40\" stroke=\"#333\" stroke-width=\"2\"/><polygon points=\"35,40 45,35 45,45\" fill=\"#333\"/><polygon points=\"315,40 305,35 305,45\" fill=\"#333\"/><line x1=\"50.0\" y1=\"34\" x2=\"50.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"50.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">0</text><line x1=\"75.0\" y1=\"34\" x2=\"75.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"75.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">1</text><line x1=\"100.0\" y1=\"34\" x2=\"100.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"100.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">2</text><line x1=\"125.0\" y1=\"34\" x2=\"125.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"125.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">3</text><line x1=\"150.0\" y1=\"34\" x2=\"150.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"150.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">4</text><line x1=\"175.0\" y1=\"34\" x2=\"175.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"175.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">5</text><line x1=\"200.0\" y1=\"34\" x2=\"200.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"200.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">6</text><line x1=\"225.0\" y1=\"34\" x2=\"225.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"225.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">7</text><line x1=\"250.0\" y1=\"34\" x2=\"250.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"250.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">8</text><line x1=\"275.0\" y1=\"34\" x2=\"275.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"275.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">9</text><line x1=\"300.0\" y1=\"34\" x2=\"300.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"300.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">10</text></svg>",
+      "visual_alt": null,
+      "diagnostics": {
+        "1": "Check the problem again — are you sure you need to subtract? The word 'more' or 'total' usually means addition.",
+        "2": "Make sure you're lining up the ones, tens, and hundreds columns correctly.",
+        "3": "Double-check which numbers the problem is asking you to add together.",
+        "correct_explanation": "The answer is 60. When we add the numbers together (15 + 20), the total is 60."
+      },
+      "tags": [
+        "LCM",
+        "multiples",
+        "divisibility",
+        "grade-5-6"
+      ],
+      "hint": {
+        "level_0": "This problem is asking you to combine amounts. What two (or more) things are being put together?",
+        "level_1": "Think about what you're putting together. Could you draw it, use a number line, or break the numbers into tens and ones? Start with 15. Now add 20 to it.  What do you get?",
+        "level_2": "Here's the solution: 15 + 20 = 35. We combined the two amounts to get the total."
+      },
+      "interaction_mode": "mcq",
+      "visual_context": null,
+      "irt_params": {
+        "a": 1.5,
+        "b": 1.6,
+        "c": 0.15
+      },
+      "irt_a": 1.5,
+      "irt_b": 1.6,
+      "irt_c": 0.15,
+      "solution_steps": [
+        "Identify the numbers: 15, 20",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ],
+      "original_stem": "Vanya needs to work out: What is the least common multiple of 15 and 20?",
+      "competency_level": "K",
+      "competency_confidence": 0.545,
+      "competency_name": "Knowing",
+      "story_theme": "The Racing Garage",
+      "story_chapter": 2,
+      "legacy_id": "T2-967",
+      "km_level": "L3",
+      "km_pillar": "NT",
+      "km_topic": "hcf_lcm",
+      "km_topic_display": "Common Ground",
+      "km_source_bank": "v2"
+    },
+    {
+      "id": "KM-L3-NT-0637",
+      "stem": "What is the least common multiple of 48 and 72?",
+      "choices": [
+        "72",
+        "144",
+        "288",
+        "96"
+      ],
+      "correct_answer": 1,
+      "difficulty_tier": "medium",
+      "difficulty_score": 87,
+      "visual_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 350 80\" width=\"350\" height=\"80\" style=\"font-family:Arial,sans-serif\"><line x1=\"40\" y1=\"40\" x2=\"310\" y2=\"40\" stroke=\"#333\" stroke-width=\"2\"/><polygon points=\"35,40 45,35 45,45\" fill=\"#333\"/><polygon points=\"315,40 305,35 305,45\" fill=\"#333\"/><line x1=\"50.0\" y1=\"34\" x2=\"50.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"50.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">0</text><line x1=\"75.0\" y1=\"34\" x2=\"75.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"75.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">1</text><line x1=\"100.0\" y1=\"34\" x2=\"100.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"100.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">2</text><line x1=\"125.0\" y1=\"34\" x2=\"125.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"125.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">3</text><line x1=\"150.0\" y1=\"34\" x2=\"150.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"150.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">4</text><line x1=\"175.0\" y1=\"34\" x2=\"175.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"175.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">5</text><line x1=\"200.0\" y1=\"34\" x2=\"200.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"200.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">6</text><line x1=\"225.0\" y1=\"34\" x2=\"225.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"225.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">7</text><line x1=\"250.0\" y1=\"34\" x2=\"250.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"250.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">8</text><line x1=\"275.0\" y1=\"34\" x2=\"275.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"275.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">9</text><line x1=\"300.0\" y1=\"34\" x2=\"300.0\" y2=\"46\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"300.0\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" fill=\"#333\">10</text></svg>",
+      "visual_alt": null,
+      "diagnostics": {
+        "0": "When the digits add up to 10 or more, remember to carry the 1 to the next column.",
+        "2": "Make sure you're lining up the ones, tens, and hundreds columns correctly.",
+        "3": "Double-check which numbers the problem is asking you to add together.",
+        "correct_explanation": "The answer is 144. When we add the numbers together (48 + 72), the total is 144."
+      },
+      "tags": [
+        "LCM",
+        "multiples",
+        "divisibility",
+        "grade-5-6"
+      ],
+      "hint": {
+        "level_0": "Think: what does 'altogether' or 'total' or 'in all' really mean here?",
+        "level_1": "Think about what you're putting together. Could you draw it, use a number line, or break the numbers into tens and ones? Start with 48. Now add 72 to it.  What do you get?",
+        "level_2": "Here's the solution: 48 + 72 = 120. We combined the two amounts to get the total."
+      },
+      "interaction_mode": "mcq",
+      "visual_context": null,
+      "irt_params": {
+        "a": 1.5,
+        "b": 1.66,
+        "c": 0.15
+      },
+      "irt_a": 1.5,
+      "irt_b": 1.66,
+      "irt_c": 0.15,
+      "solution_steps": [
+        "Identify the numbers: 48, 72",
+        "Determine the operation needed",
+        "Calculate step by step to find the answer"
+      ],
+      "original_stem": "Vanya needs to work out: What is the least common multiple of 48 and 72?",
+      "competency_level": "K",
+      "competency_confidence": 0.545,
+      "competency_name": "Knowing",
+      "story_theme": "The Racing Garage",
+      "story_chapter": 2,
+      "legacy_id": "T2-974",
+      "km_level": "L3",
+      "km_pillar": "NT",
+      "km_topic": "hcf_lcm",
+      "km_topic_display": "Common Ground",
+      "km_source_bank": "v2"
+    },
+    {
+      "id": "KM-L3-NT-0638",
+      "stem": "Delivery comes every 3 days starting Tuesday. Deep cleaning is every 4 days starting Monday. When is the first day the shop is closed (Sunday) but both delivery and cleaning are scheduled?",
+      "choices": [
+        "Day 13 (Sunday)",
+        "Day 15 (Sunday)",
+        "Day 22 (Sunday)",
+        "Day 29 (Sunday)"
+      ],
+      "correct_answer": 0,
+      "difficulty_tier": "medium",
+      "difficulty_score": 117,
+      "visual_svg": null,
+      "visual_alt": null,
+      "diagnostics": {
+        "1": "Read the problem again — there's a clue you haven't used yet that changes the answer.",
+        "2": "You might have the logic backwards. If A is taller than B, then B is shorter than A.",
+        "3": "Only use information given in the problem. Don't assume things that aren't stated.",
+        "correct_explanation": "The answer is Day 13 (Sunday). By checking each clue against every option, only this answer satisfies all the conditions."
+      },
+      "tags": [
+        "LCM",
+        "calendar"
+      ],
+      "hint": {
+        "level_0": "List each person's statement. If each statement were true, what would follow?",
+        "level_1": "Try assuming each person is the liar. Does exactly one lie produce a consistent scenario? Test each answer choice against ALL the given statements. Only one will be consistent.",
+        "level_2": "Testing all possibilities against the clues confirms this."
+      },
+      "concept_cluster": "scheduling-logic",
+      "interaction_mode": "mcq",
+      "visual_context": null,
+      "irt_params": {
+        "a": 1.73,
+        "b": 1.78,
+        "c": 0.15
+      },
+      "irt_a": 1.73,
+      "irt_b": 1.78,
+      "irt_c": 0.15,
+      "solution_steps": [
+        "Read the clues or conditions carefully",
+        "Eliminate options that don't fit",
+        "Check remaining options against all conditions"
+      ],
+      "competency_level": "A",
+      "competency_confidence": 0.8,
+      "competency_name": "Applying",
+      "story_theme": "The Demon Hunters",
+      "story_chapter": 3,
+      "legacy_id": "T4-0990",
+      "km_level": "L3",
+      "km_pillar": "NT",
+      "km_topic": "hcf_lcm",
+      "km_topic_display": "Common Ground",
+      "km_source_bank": "v2"
+    },
+    {
+      "id": "KM-L3-NT-0639",
+      "stem": "How many numbers between 1 and 500 are divisible by both 3 and 7?",
+      "choices": [
+        "23",
+        "24",
+        "71",
+        "167"
+      ],
+      "correct_answer": 0,
+      "difficulty_tier": "medium",
+      "difficulty_score": 133,
+      "visual_svg": null,
+      "visual_alt": null,
+      "diagnostics": {
+        "1": "You counted one extra. Try touching each item as you count to make sure you don't count anything twice.",
+        "2": "Be careful not to count the same object twice — try crossing them off as you go.",
+        "3": "It looks like you forgot to count one of the groups. Read the problem again to find all the items.",
+        "correct_explanation": "The answer is 23. When we count each item carefully — making sure not to skip any or count any twice — we get 23."
+      },
+      "tags": [
+        "lcm-3-7"
+      ],
+      "hint": {
+        "level_0": "Read the question carefully. What exactly are you being asked to count? Are there conditions to watch for?",
+        "level_1": "Look at the key values: 1, 500, 3, 7. Can you list out what needs to be counted systematically? Work through it step by step with the numbers 1, 500, 3, 7. Write out each item that meets the condition.",
+        "level_2": "Count each qualifying item: 1, 500, 3, 7."
+      },
+      "concept_cluster": "factor-counting",
+      "interaction_mode": "mcq",
+      "visual_context": null,
+      "irt_params": {
+        "a": 1.25,
+        "b": 1.88,
+        "c": 0.15
+      },
+      "irt_a": 1.25,
+      "irt_b": 1.88,
+      "irt_c": 0.15,
+      "solution_steps": [
+        "Identify what you need to count",
+        "Count systematically, left to right",
+        "The total count is your answer"
+      ],
+      "competency_level": "A",
+      "competency_confidence": 0.8,
+      "competency_name": "Applying",
+      "story_theme": "The Lost City Expedition",
+      "story_chapter": 4,
+      "legacy_id": "T1-1012",
+      "km_level": "L3",
+      "km_pillar": "NT",
+      "km_topic": "hcf_lcm",
+      "km_topic_display": "Common Ground",
+      "km_source_bank": "v2"
+    },
+    {
+      "id": "KM-L3-NT-0640",
+      "stem": "Three runners train on different schedules. Ana trains every 2 days, Bo every 3 days, Cal every 5 days. They all trained today. In how many days will all three train together again?",
+      "choices": [
+        "10",
+        "15",
+        "30",
+        "60"
+      ],
+      "correct_answer": 2,
+      "difficulty_tier": "medium",
+      "difficulty_score": 140,
+      "visual_svg": null,
+      "visual_alt": null,
+      "diagnostics": {
+        "0": "Don't jump to the first answer that seems right. Check ALL the clues before deciding.",
+        "1": "Read the problem again — there's a clue you haven't used yet that changes the answer.",
+        "3": "Only use information given in the problem. Don't assume things that aren't stated.",
+        "correct_explanation": "The answer is 30. By checking each clue against every option, only this answer satisfies all the conditions."
+      },
+      "tags": [
+        "LCM",
+        "three-cycles"
+      ],
+      "hint": {
+        "level_0": "Logic puzzles need patience. Start with the most definite clue and build from there.",
+        "level_1": "Try working through each possibility one at a time. Can you eliminate answers that definitely don't work? List each piece of information as a separate fact. Then test each answer choice — does it match ALL the facts?",
+        "level_2": "Work through each step carefully to see why."
+      },
+      "concept_cluster": "scheduling-logic",
+      "interaction_mode": "mcq",
+      "visual_context": null,
+      "irt_params": {
+        "a": 1.58,
+        "b": 1.9,
+        "c": 0.15
+      },
+      "irt_a": 1.58,
+      "irt_b": 1.9,
+      "irt_c": 0.15,
+      "solution_steps": [
+        "Read the clues or conditions carefully",
+        "Eliminate options that don't fit",
+        "Check remaining options against all conditions"
+      ],
+      "competency_level": "A",
+      "competency_confidence": 0.5,
+      "competency_name": "Applying",
+      "story_theme": "The Demon Hunters",
+      "story_chapter": 4,
+      "legacy_id": "T4-1038",
+      "km_level": "L3",
+      "km_pillar": "NT",
+      "km_topic": "hcf_lcm",
+      "km_topic_display": "Common Ground",
+      "km_source_bank": "v2"
+    },
+    {
+      "id": "KM-L3-NT-0641",
+      "stem": "A bus arrives every 15 minutes starting at 7:00 AM. A train arrives every 20 minutes starting at 7:10 AM. When do they first arrive at the same time?",
+      "choices": [
+        "7:30 AM",
+        "7:50 AM",
+        "8:00 AM",
+        "8:10 AM"
+      ],
+      "correct_answer": 2,
+      "difficulty_tier": "hard",
+      "difficulty_score": 182,
+      "visual_svg": null,
+      "visual_alt": null,
+      "diagnostics": {
+        "0": "Don't jump to the first answer that seems right. Check ALL the clues before deciding.",
+        "1": "Read the problem again — there's a clue you haven't used yet that changes the answer.",
+        "3": "Only use information given in the problem. Don't assume things that aren't stated.",
+        "correct_explanation": "The answer is 8:00 AM. By checking each clue against every option, only this answer satisfies all the conditions."
+      },
+      "tags": [
+        "LCM",
+        "offset"
+      ],
+      "hint": {
+        "level_0": "List each person's statement. If each statement were true, what would follow?",
+        "level_1": "Try assuming each person is the liar. Does exactly one lie produce a consistent scenario? Test each answer choice against ALL the given statements. Only one will be consistent.",
+        "level_2": "Testing all possibilities against the clues confirms this."
+      },
+      "concept_cluster": "scheduling-logic",
+      "interaction_mode": "mcq",
+      "visual_context": null,
+      "irt_params": {
+        "a": 1.83,
+        "b": 2.22,
+        "c": 0.15
+      },
+      "irt_a": 1.83,
+      "irt_b": 2.22,
+      "irt_c": 0.15,
+      "solution_steps": [
+        "Read the clues or conditions carefully",
+        "Eliminate options that don't fit",
+        "Check remaining options against all conditions"
+      ],
+      "competency_level": "A",
+      "competency_confidence": 0.5,
+      "competency_name": "Applying",
+      "story_theme": "The Demon Hunters",
+      "story_chapter": 5,
+      "legacy_id": "T4-1058",
+      "km_level": "L3",
+      "km_pillar": "NT",
+      "km_topic": "hcf_lcm",
+      "km_topic_display": "Common Ground",
+      "km_source_bank": "v2"
+    },
+    {
+      "id": "KM-L3-NT-0642",
+      "stem": "The HCF of two numbers is 12 and their LCM is 180. If one number is 36, what is the other?",
+      "choices": [
+        "60",
+        "72",
+        "54",
+        "48"
+      ],
+      "correct_answer": 0,
+      "difficulty_tier": "hard",
+      "difficulty_score": 212,
+      "visual_svg": null,
+      "visual_alt": null,
+      "diagnostics": {
+        "1": "The problem gives you several numbers. Make sure you're using the right ones for your calculation.",
+        "2": "This is a two-step problem. You solved the first step correctly, but there's one more step to finish.",
+        "3": "You did the math correctly, but your answer doesn't match what the question is asking for.",
+        "correct_explanation": "The answer is 60. The key is identifying what operation to use, then applying it to the right numbers from the problem."
+      },
+      "tags": [
+        "HCF",
+        "LCM"
+      ],
+      "hint": {
+        "level_0": "Underline the question it's asking. Now find the numbers and figure out which operation to use.",
+        "level_1": "Circle the numbers and underline the question. What operation connects them? Work through the problem step by step using the numbers given: 12, 180, 36.",
+        "level_2": "Work through each step carefully to see why."
+      },
+      "concept_cluster": "multi-step",
+      "interaction_mode": "mcq",
+      "visual_context": null,
+      "irt_params": {
+        "a": 1.73,
+        "b": 2.32,
+        "c": 0.15
+      },
+      "irt_a": 1.73,
+      "irt_b": 2.32,
+      "irt_c": 0.15,
+      "solution_steps": [
+        "Identify what's given: 12, 180, 36",
+        "Determine what's being asked",
+        "Choose the right operation",
+        "Calculate and check your answer"
+      ],
+      "competency_level": "A",
+      "competency_confidence": 0.5,
+      "competency_name": "Applying",
+      "story_theme": "The World Tour",
+      "story_chapter": 6,
+      "legacy_id": "T7-1103",
+      "km_level": "L3",
+      "km_pillar": "NT",
+      "km_topic": "hcf_lcm",
+      "km_topic_display": "Common Ground",
+      "km_source_bank": "v2"
+    },
+    {
+      "id": "KM-L3-NT-0643",
+      "stem": "In RSA, if n=33 and φ(n)=20, a valid public exponent e must satisfy gcd(e,20)=1. Which is valid?",
+      "choices": [
+        "2",
+        "3",
+        "4",
+        "10"
+      ],
+      "correct_answer": 1,
+      "difficulty_tier": "olympiad",
+      "difficulty_score": 248,
+      "visual_svg": null,
+      "visual_alt": null,
+      "diagnostics": {
+        "0": "Almost there — you're off by just 1. Carefully re-do the last step.",
+        "2": "Almost there — you're off by just 1. Carefully re-do the last step.",
+        "3": "Only use information given in the problem. Don't assume things that aren't stated.",
+        "correct_explanation": "The answer is 3. By checking each clue against every option, only this answer satisfies all the conditions."
+      },
+      "tags": [
+        "cipher",
+        "rsa-exponent"
+      ],
+      "hint": {
+        "level_0": "Logic puzzles need patience. Start with the most definite clue and build from there.",
+        "level_1": "Try working through each possibility one at a time. Can you eliminate answers that definitely don't work? List each piece of information as a separate fact. Then test each answer choice — does it match ALL the facts?",
+        "level_2": "Work through each step carefully to see why."
+      },
+      "concept_cluster": "cipher-codes",
+      "interaction_mode": "mcq",
+      "visual_context": null,
+      "irt_params": {
+        "a": 1.55,
+        "b": 2.68,
+        "c": 0.15
+      },
+      "irt_a": 1.55,
+      "irt_b": 2.68,
+      "irt_c": 0.15,
+      "solution_steps": [
+        "Read the clues or conditions carefully",
+        "Eliminate options that don't fit",
+        "Check remaining options against all conditions"
+      ],
+      "competency_level": "A",
+      "competency_confidence": 0.5,
+      "competency_name": "Applying",
+      "story_theme": "The Escape Room",
+      "story_chapter": 7,
+      "legacy_id": "T8-1158",
+      "km_level": "L3",
+      "km_pillar": "NT",
+      "km_topic": "hcf_lcm",
+      "km_topic_display": "Common Ground",
+      "km_source_bank": "v2"
+    },
+    {
+      "id": "KM-L3-NT-0644",
+      "stem": "The double code has a layered pattern. Veronica untangles it. Integers 1-1000 divisible by both 3 and 5?",
+      "choices": [
+        "33",
+        "50",
+        "66",
+        "200"
+      ],
+      "correct_answer": 2,
+      "difficulty_tier": "olympiad",
+      "difficulty_score": 273,
+      "visual_svg": null,
+      "visual_alt": null,
+      "diagnostics": {
+        "0": "Look at how EACH number changes to get the next one. Is it adding, multiplying, or something else?",
+        "1": "You found the right pattern rule, but applied it incorrectly to find the answer. Try again carefully.",
+        "3": "You found the right pattern, but made a calculation error when finding the next number.",
+        "correct_explanation": "The answer is 66. By finding the rule that connects each term to the next, we can predict what comes next in the sequence."
+      },
+      "tags": [
+        "modular-pattern",
+        "lcm",
+        "counting"
+      ],
+      "hint": {
+        "level_0": "Look at consecutive terms. What changes each time? Is it adding, multiplying, or something else?",
+        "level_1": "Write the differences between consecutive terms in the sequence 1, 1000, 3, 5. The sequence is: 1, 1000, 3, 5. Find the rule: what do you do to one term to get the next?",
+        "level_2": "Following the pattern rule with 1, 1000, 3, 5 gives this."
+      },
+      "concept_cluster": "modular-patterns",
+      "interaction_mode": "mcq",
+      "visual_context": null,
+      "irt_params": {
+        "a": 1.68,
+        "b": 2.78,
+        "c": 0.15
+      },
+      "irt_a": 1.68,
+      "irt_b": 2.78,
+      "irt_c": 0.15,
+      "solution_steps": [
+        "Look at how the numbers change each step",
+        "Find the rule connecting consecutive numbers",
+        "Apply the rule to find the missing number"
+      ],
+      "original_stem": "Integers 1-1000 divisible by both 3 and 5?",
+      "competency_level": "K",
+      "competency_confidence": 0.4,
+      "competency_name": "Knowing",
+      "story_theme": "The Code Breakers",
+      "story_chapter": 7,
+      "legacy_id": "T3-1155",
+      "km_level": "L3",
+      "km_pillar": "NT",
+      "km_topic": "hcf_lcm",
+      "km_topic_display": "Common Ground",
+      "km_source_bank": "v2"
+    },
+    {
+      "id": "KM-L3-NT-0645",
+      "stem": "You have a 6-liter jug and an 11-liter jug. What amounts can you measure?",
+      "choices": [
+        "Only multiples of 6 and 11",
+        "Any integer amount from 1 to 11",
+        "Only 1, 5, 6, and 11 liters",
+        "Any integer amount"
+      ],
+      "correct_answer": 1,
+      "difficulty_tier": "olympiad",
+      "difficulty_score": 271,
+      "visual_svg": null,
+      "visual_alt": null,
+      "diagnostics": {
+        "0": "Don't jump to the first answer that seems right. Check ALL the clues before deciding.",
+        "2": "You might have the logic backwards. If A is taller than B, then B is shorter than A.",
+        "3": "Only use information given in the problem. Don't assume things that aren't stated.",
+        "correct_explanation": "The answer is Any integer amount from 1 to 11. By checking each clue against every option, only this answer satisfies all the conditions."
+      },
+      "tags": [
+        "water-jugs",
+        "GCD"
+      ],
+      "hint": {
+        "level_0": "Logic puzzles need patience. Start with the most definite clue and build from there.",
+        "level_1": "Try working through each possibility one at a time. Can you eliminate answers that definitely don't work? List each piece of information as a separate fact. Then test each answer choice — does it match ALL the facts?",
+        "level_2": "Work through each step carefully to see why."
+      },
+      "concept_cluster": "weighing-puzzles",
+      "interaction_mode": "mcq",
+      "visual_context": null,
+      "irt_params": {
+        "a": 1.43,
+        "b": 2.78,
+        "c": 0.15
+      },
+      "irt_a": 1.43,
+      "irt_b": 2.78,
+      "irt_c": 0.15,
+      "solution_steps": [
+        "Read the clues or conditions carefully",
+        "Eliminate options that don't fit",
+        "Check remaining options against all conditions"
+      ],
+      "competency_level": "A",
+      "competency_confidence": 0.786,
+      "competency_name": "Applying",
+      "story_theme": "The Demon Hunters",
+      "story_chapter": 8,
+      "legacy_id": "T4-1176",
+      "km_level": "L3",
+      "km_pillar": "NT",
+      "km_topic": "hcf_lcm",
+      "km_topic_display": "Common Ground",
+      "km_source_bank": "v2"
+    },
+    {
+      "id": "KM-L3-NT-0646",
+      "stem": "Fermat's Little Theorem: a^(p−1) ≡ 1 (mod p) for prime p and gcd(a,p)=1. What is 2^10 mod 11?",
+      "choices": [
+        "1",
+        "2",
+        "10",
+        "1024"
+      ],
+      "correct_answer": 0,
+      "difficulty_tier": "olympiad",
+      "difficulty_score": 269,
+      "visual_svg": null,
+      "visual_alt": null,
+      "diagnostics": {
+        "1": "Almost there — you're off by just 1. Carefully re-do the last step.",
+        "2": "You might have the logic backwards. If A is taller than B, then B is shorter than A.",
+        "3": "Only use information given in the problem. Don't assume things that aren't stated.",
+        "correct_explanation": "The answer is 1. By checking each clue against every option, only this answer satisfies all the conditions."
+      },
+      "tags": [
+        "number-puzzle",
+        "fermat-little"
+      ],
+      "hint": {
+        "level_0": "What constraints must the answer satisfy? List them all.",
+        "level_1": "Try each answer choice and check if it satisfies ALL constraints. Work with the values: 1, 1, 1, 2. Test systematically.",
+        "level_2": "It satisfies all the given conditions."
+      },
+      "concept_cluster": "number-puzzles",
+      "interaction_mode": "mcq",
+      "visual_context": null,
+      "irt_params": {
+        "a": 1.6,
+        "b": 2.8,
+        "c": 0.15
+      },
+      "irt_a": 1.6,
+      "irt_b": 2.8,
+      "irt_c": 0.15,
+      "solution_steps": [
+        "Read the clues or conditions carefully",
+        "Eliminate options that don't fit",
+        "Check remaining options against all conditions"
+      ],
+      "competency_level": "A",
+      "competency_confidence": 0.5,
+      "competency_name": "Applying",
+      "story_theme": "The Escape Room",
+      "story_chapter": 8,
+      "legacy_id": "T8-1168",
+      "km_level": "L3",
+      "km_pillar": "NT",
+      "km_topic": "hcf_lcm",
+      "km_topic_display": "Common Ground",
+      "km_source_bank": "v2"
+    },
+    {
+      "id": "KM-L3-NT-0647",
+      "stem": "How many integers n, 1 <= n <= 360, satisfy gcd(n, 360) = 12?",
+      "choices": [
+        "8",
+        "10",
+        "12",
+        "24"
+      ],
+      "correct_answer": 0,
+      "difficulty_tier": "olympiad",
+      "difficulty_score": 298,
+      "visual_svg": null,
+      "visual_alt": null,
+      "diagnostics": {
+        "1": "When skip counting, make sure you add the same amount each time.",
+        "2": "Be careful not to count the same object twice — try crossing them off as you go.",
+        "3": "It looks like you forgot to count one of the groups. Read the problem again to find all the items.",
+        "correct_explanation": "The answer is 8. When we count each item carefully — making sure not to skip any or count any twice — we get 8."
+      },
+      "tags": [
+        "gcd-equals-12"
+      ],
+      "hint": {
+        "level_0": "Read the question carefully. What exactly are you being asked to count? Are there conditions to watch for?",
+        "level_1": "Look at the key values: 1, 360, 360, 12. Can you list out what needs to be counted systematically? Work through it step by step with the numbers 1, 360, 360, 12. Write out each item that meets the condition.",
+        "level_2": "Count each qualifying item: 1, 360, 360, 12."
+      },
+      "concept_cluster": "factor-counting",
+      "interaction_mode": "mcq",
+      "visual_context": null,
+      "irt_params": {
+        "a": 1.23,
+        "b": 3.0,
+        "c": 0.15
+      },
+      "irt_a": 1.23,
+      "irt_b": 3.0,
+      "irt_c": 0.15,
+      "solution_steps": [
+        "Identify what you need to count",
+        "Count systematically, left to right",
+        "The total count is your answer"
+      ],
+      "competency_level": "A",
+      "competency_confidence": 0.5,
+      "competency_name": "Applying",
+      "story_theme": "The Lost City Expedition",
+      "story_chapter": 8,
+      "legacy_id": "T1-1194",
+      "km_level": "L3",
+      "km_pillar": "NT",
+      "km_topic": "hcf_lcm",
+      "km_topic_display": "Common Ground",
+      "km_source_bank": "v2"
+    }
+  ]
+}

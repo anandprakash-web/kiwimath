@@ -19,8 +19,9 @@ import shutil
 import sys
 from collections import defaultdict
 
-CONTENT_DIR = "/sessions/optimistic-laughing-franklin/mnt/Downloads/kiwimath/content-v2"
-BACKEND_DIR = "/sessions/optimistic-laughing-franklin/mnt/Downloads/kiwimath/backend"
+_dir = os.path.dirname(os.path.abspath(__file__))
+CONTENT_DIR = os.path.abspath(os.path.join(_dir, "../../content-live"))
+BACKEND_DIR = os.path.abspath(os.path.join(_dir, ".."))
 ASSESSMENT_FILE = os.path.join(BACKEND_DIR, "assessment_items.json")
 
 # ─── Grade inference ────────────────────────────────────────────────────────

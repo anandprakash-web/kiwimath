@@ -1,0 +1,540 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Kiwi — Complete App Prototype</title>
+<style>
+:root{
+  --orange:#FF6F00;--orange-d:#E25E00;--orange-l:#FFF3E8;
+  --ink:#1E1633;--ink2:#2A2140;--paper:#FFFFFF;
+  --text:#231C30;--mute:#7A7290;--line:#ECE6F3;
+  --teal:#12B5A5;--berry:#FF5470;--gold:#FFB12B;--green:#37B86B;--violet:#7A5CFF;
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;background:linear-gradient(160deg,#efe9f6,#f7f1ee 60%);color:var(--text);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+.wrap{max-width:1240px;margin:0 auto;padding:26px 20px 56px;display:flex;gap:34px;align-items:flex-start;flex-wrap:wrap;justify-content:center}
+.intro{flex:1 1 320px;max-width:400px;padding-top:14px}
+.eyebrow{display:inline-block;font-size:11.5px;font-weight:800;letter-spacing:2px;color:var(--orange);background:var(--orange-l);padding:6px 12px;border-radius:30px;text-transform:uppercase}
+.intro h1{font-size:34px;line-height:1.1;margin:16px 0 10px;letter-spacing:-.5px}
+.intro h1 span{color:var(--orange)}
+.intro p{font-size:16px;line-height:1.6;color:#4b4360;margin:0 0 16px}
+.maplist{list-style:none;padding:0;margin:14px 0 0;font-size:13.5px;color:#5a5270}
+.maplist li{padding:7px 0;border-bottom:1px solid var(--line);display:flex;gap:10px;align-items:center}
+.maplist li b{color:var(--ink)}
+.maplist .e{font-size:17px}
+.tipbar{margin-top:18px;font-size:13px;color:var(--mute);display:flex;align-items:center;gap:8px}
+.tipbar .dot{width:9px;height:9px;border-radius:50%;background:var(--orange);animation:pulse 1.6s infinite}
+@keyframes pulse{0%,100%{opacity:.4}50%{opacity:1}}
+
+.stage{flex:0 0 auto;display:flex;flex-direction:column;align-items:center;gap:13px}
+.phone{width:392px;height:824px;background:var(--ink);border-radius:46px;padding:13px;
+  box-shadow:0 40px 80px -24px rgba(30,12,48,.55),0 0 0 2px rgba(255,255,255,.04) inset;position:relative}
+.notch{position:absolute;top:13px;left:50%;transform:translateX(-50%);width:140px;height:26px;background:var(--ink);border-radius:0 0 18px 18px;z-index:60}
+.screen{position:absolute;inset:13px;border-radius:34px;overflow:hidden;background:var(--paper);display:flex;flex-direction:column}
+
+/* onboarding */
+.onb{position:absolute;inset:0;z-index:50;background:var(--paper);display:flex;flex-direction:column}
+.onb .obstep{display:none;flex:1;flex-direction:column;padding:54px 26px 26px;animation:fade .3s}
+.onb .obstep.on{display:flex}
+.obdots{display:flex;gap:7px;justify-content:center;padding:14px}
+.obdots i{width:8px;height:8px;border-radius:50%;background:var(--line)}
+.obdots i.on{background:var(--orange);width:22px;border-radius:5px}
+.obhero{flex:1;display:flex;flex-direction:column;justify-content:center}
+.obhero .em{font-size:54px;margin-bottom:10px}
+.obhero h2{font-size:28px;line-height:1.12;margin:4px 0 10px;letter-spacing:-.4px}
+.obhero p{font-size:16px;color:#574e6e;line-height:1.55;margin:0}
+.goal{display:flex;gap:12px;align-items:center;border:1.5px solid var(--line);border-radius:18px;padding:15px;margin-top:11px;cursor:pointer}
+.goal:active,.goal.sel{border-color:var(--orange);background:var(--orange-l)}
+.goal .em{font-size:26px}
+.goal b{font-size:15.5px;color:var(--ink)}
+.goal span{display:block;font-size:12.5px;color:var(--mute)}
+
+@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.tbar{padding:30px 18px 10px;display:flex;align-items:center;justify-content:space-between;background:var(--paper)}
+.tbar .hi{font-size:13px;color:var(--mute)}
+.tbar .hi b{display:block;font-size:18px;color:var(--ink);margin-top:1px}
+.coins{display:flex;gap:6px;align-items:center;font-weight:800;font-size:13.5px;color:var(--orange-d);background:var(--orange-l);padding:7px 11px;border-radius:30px}
+.scrollarea{flex:1;overflow-y:auto}
+.scrollarea::-webkit-scrollbar{width:0}
+.view{display:none;padding:4px 16px 26px;animation:fade .25s ease}
+.view.on{display:block}
+.back{display:inline-flex;align-items:center;gap:6px;font-size:13.5px;font-weight:700;color:var(--mute);background:none;border:none;cursor:pointer;font-family:inherit;padding:10px 0 2px}
+.kick{font-size:11.5px;font-weight:800;letter-spacing:1.4px;text-transform:uppercase;color:var(--orange);margin:12px 2px 7px}
+.h2{font-size:22px;font-weight:800;letter-spacing:-.3px;margin:2px 2px 12px;color:var(--ink)}
+.card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:16px;margin-bottom:13px;box-shadow:0 8px 22px -14px rgba(40,20,60,.18)}
+.card.wonder{background:linear-gradient(150deg,#2A2140,#3a2a5e);border:none;color:#fff}
+.card.coach{background:linear-gradient(150deg,#FF7A1A,#FF5470);border:none;color:#fff}
+.card.dark{background:linear-gradient(150deg,var(--ink),#34284f);border:none;color:#fff}
+.badge{width:44px;height:44px;border-radius:13px;display:flex;align-items:center;justify-content:center;font-size:22px}
+.bigq{font-size:19px;line-height:1.45;font-weight:700;margin:8px 0 6px}
+.muted{color:var(--mute);font-size:13.5px;line-height:1.5}
+.btn{display:block;width:100%;border:none;border-radius:15px;padding:14px;font-size:15px;font-weight:800;cursor:pointer;font-family:inherit;transition:transform .08s,filter .15s}
+.btn:active{transform:scale(.98)}
+.btn.primary{background:var(--orange);color:#fff;box-shadow:0 10px 22px -10px rgba(255,111,0,.7)}
+.btn.ghost{background:#fff;color:var(--ink);border:1.5px solid var(--line)}
+.btn.soft{background:var(--orange-l);color:var(--orange-d)}
+.btn.teal{background:var(--teal);color:#fff;box-shadow:0 10px 22px -10px rgba(18,181,165,.6)}
+.btn.dark{background:var(--ink);color:#fff}
+.btn.sm{padding:11px;font-size:13px;border-radius:12px}
+.row{display:flex;gap:10px}.row .btn{margin:0}
+.tile{display:flex;gap:13px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:18px;padding:14px;margin-bottom:11px;cursor:pointer;box-shadow:0 6px 16px -12px rgba(40,20,60,.18)}
+.tile:active{background:#faf7fd}
+.tile .ft b{font-size:15px;color:var(--ink);display:block}
+.tile .ft span{font-size:12.5px;color:var(--mute)}
+.tile .chev{margin-left:auto;color:#c9c2da;font-size:20px}
+
+.hint{background:var(--orange-l);border-radius:13px;padding:12px 14px;margin:9px 0;font-size:14px;line-height:1.5;display:none}
+.hint.show{display:block;animation:fade .3s}
+.hint .lab{font-size:10.5px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:var(--orange-d);display:block;margin-bottom:3px}
+.hint.h2c{background:#eafaf7;color:#0c5a52}.hint.h2c .lab{color:var(--teal)}
+.hint.h3c{background:#f1edff;color:#3a2a72}.hint.h3c .lab{color:var(--violet)}
+.ansrow{display:flex;gap:10px;margin:13px 0 4px}
+.ansrow input{flex:1;border:1.5px solid var(--line);border-radius:13px;padding:13px;font-size:17px;font-weight:800;text-align:center;font-family:inherit;color:var(--ink)}
+.ansrow input:focus{outline:none;border-color:var(--orange)}
+.correct{background:#eafaf2;color:var(--green);border-radius:13px;padding:11px;text-align:center;font-weight:800;margin-top:9px;display:none}
+.correct.show{display:block;animation:fade .3s}
+.soltabs{display:flex;gap:6px;margin:6px 0 10px;overflow-x:auto;padding-bottom:2px}
+.soltab{flex:0 0 auto;font-size:12px;font-weight:800;padding:8px 12px;border-radius:30px;background:#f3eef8;color:#5a5270;border:none;cursor:pointer;font-family:inherit}
+.soltab.on{background:var(--ink);color:#fff}
+.solbody{font-size:14px;line-height:1.55;color:#3a3350}
+.solbody .tag{display:inline-block;font-size:10.5px;font-weight:800;color:var(--orange-d);background:var(--orange-l);padding:3px 9px;border-radius:20px;margin-bottom:7px}
+.solbody.community .tag{color:var(--teal);background:#eafaf7}
+.ta{width:100%;border:1.5px solid var(--line);border-radius:13px;padding:12px;font-family:inherit;font-size:14px;min-height:74px;resize:none}
+.ta:focus{outline:none;border-color:var(--orange)}
+
+.safe{display:flex;align-items:center;gap:8px;font-size:11.5px;color:#0c7a4a;background:#eafaf2;border-radius:12px;padding:9px 12px;margin:4px 0 12px;font-weight:700}
+.thread{display:flex;gap:11px;padding:12px 0;border-bottom:1px solid var(--line)}
+.av{width:36px;height:36px;border-radius:50%;flex:0 0 auto;display:flex;align-items:center;justify-content:center;font-size:16px;color:#fff;font-weight:800}
+.thread .who{font-size:12.5px;font-weight:800;color:var(--ink)}
+.thread .who small{color:var(--mute);font-weight:600;margin-left:5px}
+.thread .txt{font-size:13px;color:#473f5e;line-height:1.45;margin:3px 0 6px}
+.up{display:inline-flex;align-items:center;gap:5px;font-size:12px;font-weight:800;color:var(--orange-d);background:var(--orange-l);padding:5px 10px;border-radius:20px;cursor:pointer;border:none;font-family:inherit}
+.up.voted{background:var(--orange);color:#fff}
+
+.mountain{position:relative;padding:6px 0 0}
+.node{display:flex;align-items:center;gap:13px;padding:9px 0;position:relative;cursor:pointer}
+.node .dot{width:42px;height:42px;border-radius:50%;flex:0 0 auto;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;color:#fff;z-index:2}
+.node .line{position:absolute;left:20px;top:38px;width:2px;height:100%;background:var(--line);z-index:1}
+.node:last-child .line{display:none}
+.node .info b{font-size:15px;color:var(--ink)}
+.node .info span{display:block;font-size:12px;color:var(--mute);margin-top:1px}
+.node.done .dot{background:var(--green)}
+.node.cur .dot{background:var(--orange);box-shadow:0 0 0 6px var(--orange-l)}
+.node.cur .info b{color:var(--orange-d)}
+.node.lock .dot{background:#cfc8da}.node.lock .info b{color:#a79fbb}
+
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:11px}
+.book{border-radius:16px;height:150px;padding:13px;display:flex;flex-direction:column;justify-content:flex-end;color:#fff;cursor:pointer;box-shadow:0 8px 18px -10px rgba(40,20,60,.4)}
+.book b{font-size:14px;line-height:1.2}.book span{font-size:11px;opacity:.85}
+.metric{display:flex;align-items:center;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--line)}
+.metric .ml{font-size:13.5px;color:#473f5e;font-weight:600}
+.metric .mv{font-size:15px;font-weight:800;color:var(--ink)}
+.gauge{height:9px;background:#efeaf6;border-radius:10px;overflow:hidden;margin-top:8px}
+.gauge i{display:block;height:100%;background:linear-gradient(90deg,var(--orange),var(--gold));border-radius:10px}
+.radar{display:flex;gap:6px;flex-wrap:wrap;margin-top:4px}
+.chip{font-size:11.5px;font-weight:700;padding:6px 11px;border-radius:20px;background:#f3eef8;color:#5a5270}
+
+.pin{display:flex;gap:10px;justify-content:center;margin:18px 0}
+.pin i{width:46px;height:54px;border-radius:13px;border:1.5px solid var(--line);display:flex;align-items:center;justify-content:center;font-size:22px;font-weight:800;color:var(--ink)}
+.keys{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;max-width:230px;margin:0 auto}
+.keys button{padding:14px;border-radius:13px;border:1px solid var(--line);background:#fff;font-size:18px;font-weight:700;cursor:pointer;font-family:inherit}
+.keys button:active{background:var(--orange-l)}
+
+.nav{display:flex;background:var(--paper);border-top:1px solid var(--line);padding:7px 6px 9px}
+.nav button{flex:1;background:none;border:none;display:flex;flex-direction:column;align-items:center;gap:3px;cursor:pointer;font-family:inherit;padding:3px 0;color:var(--mute)}
+.nav button .ico{font-size:20px;line-height:1}
+.nav button .lb{font-size:10px;font-weight:700}
+.nav button.on{color:var(--orange)}
+
+.modal{position:absolute;inset:13px;border-radius:34px;background:rgba(30,12,48,.55);display:none;align-items:flex-end;z-index:40}
+.modal.on{display:flex;animation:fade .25s}
+.sheet{background:#fff;width:100%;border-radius:28px 28px 34px 34px;padding:20px 17px 18px;animation:up .3s}
+@keyframes up{from{transform:translateY(40px);opacity:.6}to{transform:none;opacity:1}}
+.sheet .em{font-size:42px;text-align:center}
+.sheet h3{text-align:center;font-size:21px;margin:5px 0 2px;color:var(--ink)}
+.sheet .sub{text-align:center;color:var(--mute);font-size:13.5px;margin-bottom:14px;line-height:1.45}
+.fork{display:flex;align-items:center;gap:12px;padding:12px;border:1px solid var(--line);border-radius:15px;margin-bottom:8px;cursor:pointer}
+.fork:active{background:#faf7fd}
+.fork .fi{width:40px;height:40px;border-radius:11px;flex:0 0 auto;display:flex;align-items:center;justify-content:center;font-size:20px}
+.fork .ft b{font-size:14px;color:var(--ink);display:block}
+.fork .ft span{font-size:12px;color:var(--mute)}
+.closex{position:absolute;top:16px;right:20px;font-size:23px;color:#fff;cursor:pointer;z-index:50;opacity:.85}
+.legend{font-size:12px;color:var(--mute);text-align:center;max-width:392px;line-height:1.5}
+@media(max-width:560px){.phone{transform:scale(.9);transform-origin:top center}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="intro">
+    <span class="eyebrow">Complete app design · clickable</span>
+    <h1>The whole app, <span>walkable</span>.</h1>
+    <p>Start in onboarding, then move through all five tabs and the key sub-flows. This is the full design from <b>THE_APP_DESIGN.md</b> — so we can mark up the triage table together.</p>
+    <ul class="maplist">
+      <li><span class="e">🚀</span> <b>Onboarding</b> — goal dial + gentle placement</li>
+      <li><span class="e">🌅</span> <b>Today</b> — Problem of the Day + the Coach</li>
+      <li><span class="e">🏋️</span> <b>Train</b> — Practice · Thinking Gym · Library</li>
+      <li><span class="e">👥</span> <b>Commons</b> — threads · Solve-Together · contest · mentors</li>
+      <li><span class="e">🏔️</span> <b>Path</b> — school → IOQM → IMO + certificates</li>
+      <li><span class="e">🙂</span> <b>Me</b> — profile · shop · Parent Zone (PIN 1234)</li>
+    </ul>
+    <div class="tipbar"><span class="dot"></span> Tap tiles, the bottom tabs, and buttons. Try the Gym's hint ladder.</div>
+  </div>
+
+  <div class="stage">
+    <div class="phone">
+      <div class="notch"></div>
+      <div class="screen">
+
+        <!-- ===================== ONBOARDING ===================== -->
+        <div class="onb" id="onboard">
+          <div class="obstep on" id="ob1">
+            <div class="obhero">
+              <div class="em">🥝</div>
+              <h2>Where young mathematicians are made.</h2>
+              <p>A quick true story to start: pick any 3-digit number, reverse it, subtract… you always reach <b>1089</b>. Maths is full of magic like this. Want to see why?</p>
+            </div>
+            <button class="btn primary" onclick="ob(2)">Let's go →</button>
+          </div>
+          <div class="obstep" id="ob2">
+            <div class="obhero">
+              <div class="em">🎯</div>
+              <h2>What brings you here?</h2>
+              <p>This just sets how hard we start. You can change it anytime.</p>
+              <div class="goal" onclick="pickGoal(this)"><span class="em">💛</span><div><b>Love maths</b><span>play, wonder, get curious</span></div></div>
+              <div class="goal" onclick="pickGoal(this)"><span class="em">📈</span><div><b>School + stretch</b><span>ahead of class, kept challenged</span></div></div>
+              <div class="goal sel" onclick="pickGoal(this)"><span class="em">🏆</span><div><b>Olympiad-bound</b><span>IOQM → RMO → INMO → IMO</span></div></div>
+            </div>
+            <button class="btn primary" onclick="ob(3)">Continue →</button>
+          </div>
+          <div class="obstep" id="ob3">
+            <div class="obhero">
+              <div class="em">🧭</div>
+              <h2>Let's find your starting line.</h2>
+              <p>A few problems — not a test. If you get stuck, a hint is always one tap away. We'll place you exactly right.</p>
+              <div class="card" style="margin-top:16px"><div class="bigq" style="font-size:17px">What is the next number? 2, 6, 12, 20, 30, __</div>
+                <div class="muted">…you'll answer a handful like this.</div></div>
+            </div>
+            <button class="btn primary" onclick="ob(4)">Place me →</button>
+          </div>
+          <div class="obstep" id="ob4">
+            <div class="obhero">
+              <div class="em">🏔️</div>
+              <h2>You're starting at Level 4.</h2>
+              <p>Strong number sense — you're closer to the IOQM track than most. Here's your mountain. Kiwi will guide every step.</p>
+              <div class="card dark" style="margin-top:16px"><b style="font-size:16px">Your summit: IMO 🌍</b><div class="muted" style="color:#cfc6e6;margin-top:4px">Next foothold: finish Number Theory · Level 4 → unlock IOQM.</div></div>
+            </div>
+            <button class="btn primary" onclick="enterApp()">Enter Kiwi 🥝</button>
+          </div>
+          <div class="obdots"><i class="on" id="d1"></i><i id="d2"></i><i id="d3"></i><i id="d4"></i></div>
+        </div>
+
+        <!-- ===================== APP ===================== -->
+        <div class="tbar">
+          <div class="hi">Good morning,<b>Aarohi · Level 4</b></div>
+          <div class="coins">⭐ 1,240</div>
+        </div>
+
+        <div class="scrollarea">
+
+          <!-- TODAY -->
+          <div class="view on" id="v-today">
+            <div class="card coach">
+              <div style="font-size:11px;font-weight:800;letter-spacing:1px">🧭 YOUR COACH · TODAY</div>
+              <div class="bigq" style="margin:6px 0 2px">You're 1 topic from the IOQM track. Want a deep one to push toward it?</div>
+              <button class="btn" style="background:#fff;color:var(--orange-d);margin-top:10px" onclick="go('gym')">Take today's hard problem →</button>
+            </div>
+            <div class="kick">A moment of wonder</div>
+            <div class="card wonder">
+              <div class="badge" style="background:rgba(255,255,255,.14)">✨</div>
+              <div class="bigq">Reverse any 3-digit number, subtract, do it once more… you always land on <b>1089</b>.</div>
+              <div class="muted" style="color:#cfc6e6">Why would that ever be true?</div>
+              <button class="btn soft" style="margin-top:12px" onclick="document.getElementById('todwhy').classList.toggle('show')">🔮 Reveal the magic</button>
+              <div class="hint h3c" id="todwhy" style="margin-top:11px"><span class="lab">Why it's beautiful</span> It's place value in disguise: every step is a multiple of 99, which forces the middle digit to 9. Real number theory in a cape. 🦸</div>
+              <div class="row" style="margin-top:11px"><button class="btn ghost sm" onclick="go('thread')">💬 Discuss (37)</button><button class="btn ghost sm" onclick="alert('Tomorrow: a visual proof that 1+3+5+...+99 is a perfect square.')">🔔 More like this</button></div>
+            </div>
+            <div class="row">
+              <button class="btn dark sm" onclick="go('contest')">⚡ Daily Contest · live</button>
+              <button class="btn ghost sm" onclick="go('train')">▶ Continue practice</button>
+            </div>
+            <div class="kick" style="margin-top:16px">Today's streak · 🔥 21 days</div>
+            <div class="card"><div class="muted">Keep it gentle — a streak should feel like care, never guilt. One problem keeps it alive.</div></div>
+          </div>
+
+          <!-- TRAIN HUB -->
+          <div class="view" id="v-train">
+            <div class="kick">Train · choose how to work</div>
+            <div class="h2">How do you want to grow today?</div>
+            <div class="tile" onclick="go('gym')"><div class="badge" style="background:#fde8ec">🏋️</div><div class="ft"><b>The Thinking Gym</b><span>one hard problem, deeply</span></div><span class="chev">›</span></div>
+            <div class="tile" onclick="go('practice')"><div class="badge" style="background:var(--orange-l)">⚡</div><div class="ft"><b>Practice</b><span>sharpen fluency, adaptive</span></div><span class="chev">›</span></div>
+            <div class="tile" onclick="go('library')"><div class="badge" style="background:#eafaf7">📚</div><div class="ft"><b>Library</b><span>books to read & solve inside</span></div><span class="chev">›</span></div>
+            <div class="tile" onclick="go('topics')"><div class="badge" style="background:#f1edff">🧩</div><div class="ft"><b>Browse topics</b><span>9 strands · pick your own</span></div><span class="chev">›</span></div>
+          </div>
+
+          <!-- GYM -->
+          <div class="view" id="v-gym">
+            <button class="back" onclick="go('train')">‹ Train</button>
+            <div class="kick">The Thinking Gym · one worthy problem</div>
+            <div class="h2">Sit with it.</div>
+            <div class="card">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
+                <span style="font-size:11.5px;font-weight:800;color:var(--berry);background:#fde8ec;padding:4px 10px;border-radius:20px">★★★☆ Challenge</span>
+                <span class="muted">Number Theory</span></div>
+              <div class="bigq">Find the smallest positive integer <b>n</b> such that <b>n!</b> ends in exactly <b>10</b> zeros.</div>
+              <div class="ansrow"><input id="gymans" placeholder="n = ?" inputmode="numeric"/><button class="btn primary" style="width:auto;padding:0 18px" onclick="checkGym()">Check</button></div>
+              <div class="correct" id="gymok">🎉 Yes — 45! ends in exactly 10 zeros. Beautifully done.</div>
+              <button class="btn ghost" style="margin-top:11px" onclick="hintStep()">💡 I'm stuck — nudge me, don't spoil it</button>
+              <div class="hint" id="h1"><span class="lab">Nudge</span> Trailing zeros come from factors of 10 — each is a 2 paired with a 5. Which is rarer in a factorial?</div>
+              <div class="hint h2c" id="h2"><span class="lab">Strategy</span> So zeros = number of 5s = ⌊n/5⌋ + ⌊n/25⌋ + … Hunt the smallest n where that hits 10.</div>
+              <div class="hint h3c" id="h3"><span class="lab">A worked step</span> n=45: ⌊45/5⌋=9, ⌊45/25⌋=1 → 10. And 44 gives only 9. You've got it.</div>
+              <button class="btn teal" style="margin-top:13px" onclick="go('solutions')">✨ See how 3 people solved it</button>
+            </div>
+          </div>
+
+          <!-- SOLUTIONS -->
+          <div class="view" id="v-solutions">
+            <button class="back" onclick="go('gym')">‹ Problem</button>
+            <div class="kick">The soul of Olympiad · many beautiful paths</div>
+            <div class="h2">Three ways to see it.</div>
+            <div class="soltabs"><button class="soltab on" onclick="solTab(0,this)">Counting 5s</button><button class="soltab" onclick="solTab(1,this)">Legendre</button><button class="soltab" onclick="solTab(2,this)">By a peer</button></div>
+            <div class="card">
+              <div class="solbody" id="sol0"><span class="tag">Elementary · clearest</span>Zeros come from 5s (2s are plentiful). Count multiples of 5, add one more per 25, 125… For 10: 45 → 9+1=10; 44 → 9. <b>n=45.</b></div>
+              <div class="solbody" id="sol1" style="display:none"><span class="tag">Slick · Legendre</span>The exponent of prime p in n! is (n−s)/(p−1) with s the base-p digit sum. p=5 lands on 45 in one move.</div>
+              <div class="solbody community" id="sol2" style="display:none"><span class="tag">💬 By Vihaan, L4</span>"I listed where each new zero appears — 25 adds two at once, so the count skips 5. There's no n with exactly 5 zeros. Cool!" <b>— 41 ▲</b></div>
+            </div>
+            <div class="card" style="background:var(--orange-l);border:none"><b style="font-size:14.5px;color:var(--ink)">Now teach it back 🧠</b><div class="muted" style="margin:4px 0 9px;color:#6a4a2a">Explaining is how it sticks — and how you help the next kid.</div><textarea class="ta" placeholder="In my own words, the key idea is…"></textarea><button class="btn primary" style="margin-top:9px" onclick="go('post')">Post my approach →</button></div>
+          </div>
+
+          <!-- PRACTICE -->
+          <div class="view" id="v-practice">
+            <button class="back" onclick="go('train')">‹ Train</button>
+            <div class="kick">Practice · adaptive fluency <span style="color:var(--mute)">(we already have this)</span></div>
+            <div class="h2">Quick & sharp.</div>
+            <div class="card">
+              <div class="muted" style="margin-bottom:6px">Question 3 of 10 · easy → hard</div>
+              <div class="bigq">What is the units digit of 7²³?</div>
+              <div class="row" style="margin-top:8px"><button class="btn ghost sm" onclick="this.style.background='#fde8ec'">1</button><button class="btn ghost sm" onclick="this.style.background='#eafaf2';this.style.color='var(--green)'">3</button></div>
+              <div class="row" style="margin-top:8px"><button class="btn ghost sm" onclick="this.style.background='#fde8ec'">7</button><button class="btn ghost sm" onclick="this.style.background='#fde8ec'">9</button></div>
+              <button class="btn soft sm" style="margin-top:11px">💡 Hint</button>
+            </div>
+            <button class="btn dark" onclick="masterOpen()">▶ Preview: what if I finish this topic?</button>
+          </div>
+
+          <!-- LIBRARY -->
+          <div class="view" id="v-library">
+            <button class="back" onclick="go('train')">‹ Train</button>
+            <div class="kick">Library <span style="color:var(--mute)">(we already have this)</span></div>
+            <div class="h2">Books to read & solve inside.</div>
+            <div class="grid2">
+              <div class="book" style="background:linear-gradient(150deg,#2A2140,#5a3a8e)" onclick="alert('Opens the HTML reader — already built.')"><b>RMO · Number Theory</b><span>faithful, with video</span></div>
+              <div class="book" style="background:linear-gradient(150deg,#E25E00,#FFB12B)" onclick="alert('Opens the authored teaching book — Kiwi voice.')"><b>Kiwi's Math Expedition</b><span>authored · L3</span></div>
+              <div class="book" style="background:linear-gradient(150deg,#0e8c80,#37B86B)" onclick="alert('Interactive: answer inside the book.')"><b>Number Sense</b><span>interactive · K–2</span></div>
+              <div class="book" style="background:linear-gradient(150deg,#7A5CFF,#FF5470)" onclick="alert('Opens reader.')"><b>IOQM · Algebra</b><span>page-perfect</span></div>
+            </div>
+          </div>
+
+          <!-- TOPICS -->
+          <div class="view" id="v-topics">
+            <button class="back" onclick="go('train')">‹ Train</button>
+            <div class="kick">Browse · 9 strands</div>
+            <div class="h2">Pick your playground.</div>
+            <div class="tile" onclick="go('gym')"><div class="badge" style="background:var(--orange-l)">🔢</div><div class="ft"><b>Number Theory</b><span>80% mastered · 2 topics left</span></div><span class="chev">›</span></div>
+            <div class="tile" onclick="go('gym')"><div class="badge" style="background:#eafaf7">📐</div><div class="ft"><b>Geometry</b><span>54% mastered</span></div><span class="chev">›</span></div>
+            <div class="tile" onclick="go('gym')"><div class="badge" style="background:#f1edff">➗</div><div class="ft"><b>Algebra</b><span>61% mastered</span></div><span class="chev">›</span></div>
+            <div class="tile" onclick="go('gym')"><div class="badge" style="background:#fde8ec">🎲</div><div class="ft"><b>Combinatorics</b><span>40% mastered</span></div><span class="chev">›</span></div>
+          </div>
+
+          <!-- COMMONS -->
+          <div class="view" id="v-commons">
+            <div class="kick">The Commons · grow together</div>
+            <div class="h2">You're not solving alone.</div>
+            <div class="safe">🛡️ Safe space: moderated · age-gated · no private messages · always about the maths.</div>
+            <div class="card dark"><div style="font-size:11px;font-weight:800;letter-spacing:1px;color:#ffce8c">🤝 SOLVE-TOGETHER · this week</div><div class="bigq" style="font-size:16px;margin-top:5px">7×7 board, two opposite corners removed — can 24 dominoes cover it?</div><div class="muted" style="color:#d7cdee">112 young mathematicians are chipping away.</div><button class="btn" style="background:#fff;color:var(--ink);margin-top:10px" onclick="go('solve')">Add my idea →</button></div>
+            <div class="tile" onclick="go('thread')"><div class="badge" style="background:var(--orange-l)">💬</div><div class="ft"><b>Discussions</b><span>show your approach · 1.2k today</span></div><span class="chev">›</span></div>
+            <div class="tile" onclick="go('mentors')"><div class="badge" style="background:#f1edff">🦉</div><div class="ft"><b>Ask a Mathematician</b><span>medalist solutions · faculty</span></div><span class="chev">›</span></div>
+            <div class="tile" onclick="go('contest')"><div class="badge" style="background:#fde8ec">⚡</div><div class="ft"><b>Compete</b><span>daily contest · your league</span></div><span class="chev">›</span></div>
+            <div class="tile" onclick="alert('Your clan: a small study group with a shared puzzle board — already built.')"><div class="badge" style="background:#eafaf7">🛡️</div><div class="ft"><b>Your clan · Prime Movers</b><span>6 members · group puzzle live</span></div><span class="chev">›</span></div>
+          </div>
+
+          <!-- THREAD -->
+          <div class="view" id="v-thread">
+            <button class="back" onclick="go('commons')">‹ Commons</button>
+            <div class="kick">Discussion · moderated</div>
+            <div class="h2">Smallest n with 10 zeros</div>
+            <div class="thread"><div class="av" style="background:var(--violet)">V</div><div><div class="who">Vihaan <small>L4 · 🔥 21d</small></div><div class="txt">Listed where each new zero appears — 25 adds two, so the count skips 5. Answer 45.</div><button class="up" onclick="vote(this)">▲ 41</button></div></div>
+            <div class="thread"><div class="av" style="background:var(--teal)">M</div><div><div class="who">Meera <small>L5 · mentor-in-training</small></div><div class="txt">Same with Legendre's formula — one line for huge numbers.</div><button class="up" onclick="vote(this)">▲ 28</button></div></div>
+            <div class="thread" style="border:none"><div class="av" style="background:var(--gold)">🦉</div><div><div class="who">Solution of the week <small>INMO medalist</small></div><div class="txt">Annotated: why 2s are never the bottleneck. Watch ▶</div><button class="up" onclick="vote(this)">▲ 96</button></div></div>
+            <button class="btn primary" style="margin-top:13px" onclick="go('post')">✍️ Show my approach</button>
+          </div>
+
+          <!-- POST -->
+          <div class="view" id="v-post">
+            <button class="back" onclick="go('thread')">‹ Discussion</button>
+            <div class="kick">Show your approach · method, not just answer</div>
+            <div class="h2">How did you crack it?</div>
+            <div class="card"><textarea class="ta" style="min-height:120px" placeholder="The key insight was… (you can write maths with $…$)"></textarea>
+              <div class="safe" style="margin-top:10px">🛡️ Posts are checked before they go public. Be kind — explain so the next kid gets it.</div>
+              <button class="btn primary" onclick="alert('Posted! It will appear once a moderator approves — usually minutes.')">Post to the Commons</button></div>
+          </div>
+
+          <!-- SOLVE-TOGETHER -->
+          <div class="view" id="v-solve">
+            <button class="back" onclick="go('commons')">‹ Commons</button>
+            <div class="kick">Solve-Together · the whole community</div>
+            <div class="h2">The domino puzzle</div>
+            <div class="card"><div class="bigq" style="font-size:17px">7×7, two opposite corners gone. Cover with 24 dominoes?</div>
+              <div class="muted">Ideas build on each other. Partial thoughts welcome.</div></div>
+            <div class="thread"><div class="av" style="background:var(--berry)">A</div><div><div class="who">Arjun</div><div class="txt">Colour it like a chessboard… the two corners are the same colour 👀</div><button class="up" onclick="vote(this)">▲ 53</button></div></div>
+            <div class="thread" style="border:none"><div class="av" style="background:var(--teal)">N</div><div><div class="who">Nuha</div><div class="txt">Right — each domino covers one of each colour, so counts must match. Do they?</div><button class="up" onclick="vote(this)">▲ 47</button></div></div>
+          </div>
+
+          <!-- MENTORS -->
+          <div class="view" id="v-mentors">
+            <button class="back" onclick="go('commons')">‹ Commons</button>
+            <div class="kick">The human edge</div>
+            <div class="h2">Ask a Mathematician.</div>
+            <div class="card dark"><b style="font-size:16px">🦉 Solution of the week</b><div class="muted" style="color:#cfc6e6;margin-top:4px">An INMO medalist walks through this week's hardest problem — annotated, elegant.</div><button class="btn" style="background:#fff;color:var(--ink);margin-top:10px">▶ Watch</button></div>
+            <div class="tile" onclick="alert('Connects you to a Vedantu faculty mentor — a milestone/premium unlock. Our unfair advantage.')"><div class="badge" style="background:#f1edff">🧑‍🏫</div><div class="ft"><b>Connect to a faculty mentor</b><span>a live nudge when you're truly stuck</span></div><span class="chev">›</span></div>
+            <div class="tile" onclick="alert('Live AMA with an Olympiad coach — ask anything.')"><div class="badge" style="background:var(--orange-l)">🎙️</div><div class="ft"><b>Coach AMA · Sunday 6pm</b><span>ask the people who\'ve been there</span></div><span class="chev">›</span></div>
+          </div>
+
+          <!-- CONTEST -->
+          <div class="view" id="v-contest">
+            <button class="back" onclick="go('commons')">‹ Commons</button>
+            <div class="kick">Daily Contest <span style="color:var(--mute)">(we already have this)</span></div>
+            <div class="h2">8 problems · 20 minutes.</div>
+            <div class="card"><div class="metric"><span class="ml">Opens</span><span class="mv">6:00 PM · live now</span></div><div class="metric"><span class="ml">Your league</span><span class="mv">🥈 Silver</span></div><div class="metric" style="border:none"><span class="ml">One attempt · earned rank</span><span class="mv" style="color:var(--green)">money never buys it</span></div>
+              <button class="btn primary" style="margin-top:12px">Enter the arena ⚡</button></div>
+            <div class="tile" onclick="alert('Weekly league standings, promote top, relegate bottom — already built.')"><div class="badge" style="background:#fde8ec">🏆</div><div class="ft"><b>League standings</b><span>Silver · you're 4th of 30</span></div><span class="chev">›</span></div>
+          </div>
+
+          <!-- PATH -->
+          <div class="view" id="v-path">
+            <div class="kick">Your climb</div>
+            <div class="h2">The Path to the summit.</div>
+            <div class="card"><div class="mountain">
+              <div class="node done"><div class="dot">✓</div><div class="line"></div><div class="info"><b>School maths</b><span>fluency — mastered</span></div></div>
+              <div class="node done"><div class="dot">✓</div><div class="line"></div><div class="info"><b>Levels 1–3</b><span>foundations — mastered</span></div></div>
+              <div class="node cur" onclick="go('node')"><div class="dot">4</div><div class="line"></div><div class="info"><b>Level 4 · You are here ›</b><span>Number Theory 80% · 2 topics to go</span></div></div>
+              <div class="node lock"><div class="dot">5</div><div class="line"></div><div class="info"><b>IOQM track</b><span>unlocks at Level 4 mastery</span></div></div>
+              <div class="node lock"><div class="dot">🇮🇳</div><div class="line"></div><div class="info"><b>RMO → INMO</b><span>the national stage</span></div></div>
+              <div class="node lock"><div class="dot">🌍</div><div class="info"><b>IMO</b><span>the summit</span></div></div>
+            </div></div>
+            <button class="btn dark" onclick="masterOpen()">▶ Preview: a mastery moment</button>
+          </div>
+
+          <!-- NODE DETAIL -->
+          <div class="view" id="v-node">
+            <button class="back" onclick="go('path')">‹ Path</button>
+            <div class="kick">Level 4 · inside</div>
+            <div class="h2">Number Theory · 80%</div>
+            <div class="card"><div class="gauge"><i style="width:80%"></i></div>
+              <div class="metric" style="margin-top:10px"><span class="ml">✓ Divisibility & primes</span><span class="mv" style="color:var(--green)">done</span></div>
+              <div class="metric"><span class="ml">✓ Modular arithmetic</span><span class="mv" style="color:var(--green)">done</span></div>
+              <div class="metric"><span class="ml">◷ Factorials & digits</span><span class="mv" style="color:var(--orange-d)">in progress</span></div>
+              <div class="metric" style="border:none"><span class="ml">🔒 Bonus: boss problems</span><span class="mv">2 left</span></div></div>
+            <div class="row"><button class="btn teal" onclick="go('gym')">🏋️ Next problem</button><button class="btn ghost" onclick="go('library')">📖 The book</button></div>
+          </div>
+
+          <!-- ME -->
+          <div class="view" id="v-me">
+            <div class="kick">You · a young mathematician</div>
+            <div class="h2">Aarohi</div>
+            <div class="card"><div class="metric"><span class="ml">Academic Height</span><span class="mv">612 <small style="color:var(--green)">▲ rising</small></span></div>
+              <div class="metric"><span class="ml">Topics mastered</span><span class="mv">18 / 22</span></div>
+              <div class="metric" style="border:none"><span class="ml">Wallet</span><span class="mv">⭐1,240 · 💎18 · 🔥21</span></div>
+              <div style="margin-top:10px" class="radar"><span class="chip">NT 80%</span><span class="chip">Alg 61%</span><span class="chip">Geo 54%</span><span class="chip">Comb 40%</span></div></div>
+            <div class="tile" onclick="alert('Shop: spend coins on cosmetics or unlock books. Money never buys rank — already built.')"><div class="badge" style="background:var(--orange-l)">🛍️</div><div class="ft"><b>Shop</b><span>spend what you earn</span></div><span class="chev">›</span></div>
+            <div class="tile" onclick="alert('A shareable Mastery Certificate.')"><div class="badge" style="background:#eafaf7">🎖️</div><div class="ft"><b>Certificates</b><span>3 earned</span></div><span class="chev">›</span></div>
+            <div class="tile" onclick="go('parent')"><div class="badge" style="background:#f1edff">👪</div><div class="ft"><b>Parent Zone</b><span>PIN-protected</span></div><span class="chev">›</span></div>
+          </div>
+
+          <!-- PARENT -->
+          <div class="view" id="v-parent">
+            <button class="back" onclick="go('me')">‹ Me</button>
+            <div id="parentlock">
+              <div class="kick">Parent Zone</div><div class="h2">Enter PIN</div>
+              <div class="pin"><i id="p0"></i><i id="p1"></i><i id="p2"></i><i id="p3"></i></div>
+              <div class="keys"><button onclick="pin('1')">1</button><button onclick="pin('2')">2</button><button onclick="pin('3')">3</button><button onclick="pin('4')">4</button><button onclick="pin('5')">5</button><button onclick="pin('6')">6</button><button onclick="pin('7')">7</button><button onclick="pin('8')">8</button><button onclick="pin('9')">9</button><button onclick="pinClr()">⌫</button><button onclick="pin('0')">0</button><button></button></div>
+              <div class="muted" style="text-align:center;margin-top:12px">(demo PIN: 1234)</div>
+            </div>
+            <div id="parentin" style="display:none">
+              <div class="kick">Parent Zone · plain language</div><div class="h2">Aarohi is thriving.</div>
+              <div class="card"><div class="metric"><span class="ml">Growth</span><span class="mv">612 · top tier for her level</span></div>
+                <div class="metric"><span class="ml">Being challenged at</span><span class="mv">L4 · IOQM-bound</span></div>
+                <div class="metric" style="border:none"><span class="ml">Every answer she sees is</span><span class="mv" style="color:var(--green)">✓ expert-verified</span></div>
+                <div class="muted" style="margin-top:8px">She's challenged and genuinely enjoying it. Next: the IOQM track.</div></div>
+              <div class="card"><b style="font-size:14.5px">🛡️ Safety controls</b>
+                <div class="metric" style="margin-top:6px"><span class="ml">Community (moderated, no DMs)</span><span class="mv" style="color:var(--green)">On</span></div>
+                <div class="metric"><span class="ml">Daily time guardrail</span><span class="mv">45 min</span></div>
+                <div class="metric" style="border:none"><span class="ml">Plan</span><span class="mv">Free · upgrade for mentors</span></div></div>
+            </div>
+          </div>
+
+        </div><!-- /scroll -->
+
+        <!-- mastered sheet -->
+        <div class="modal" id="master"><span class="closex" onclick="masterClose()">×</span>
+          <div class="sheet"><div class="em">🎖️</div><h3>You've mastered Number Theory · L4</h3>
+            <div class="sub">You solved <b>every</b> problem we have here — genuinely rare. So what now?</div>
+            <div class="fork" onclick="masterClose();go('path')"><div class="fi" style="background:var(--orange-l)">⬆️</div><div class="ft"><b>Unlock the IOQM track</b><span>you've outgrown this</span></div></div>
+            <div class="fork" onclick="masterClose();go('gym')"><div class="fi" style="background:#fde8ec">🔥</div><div class="ft"><b>Boss problems + the NT book</b><span>deeper, not wider</span></div></div>
+            <div class="fork" onclick="masterClose();go('post')"><div class="fi" style="background:#eafaf7">✍️</div><div class="ft"><b>Create a problem</b><span>teach the next kid</span></div></div>
+            <div class="fork" onclick="masterClose();go('mentors')"><div class="fi" style="background:#f1edff">🧑‍🏫</div><div class="ft"><b>Ask a real mathematician</b><span>a live challenge</span></div></div>
+          </div></div>
+
+        <!-- nav -->
+        <div class="nav">
+          <button class="on" id="n-today" onclick="go('today')"><span class="ico">🌅</span><span class="lb">Today</span></button>
+          <button id="n-train" onclick="go('train')"><span class="ico">🏋️</span><span class="lb">Train</span></button>
+          <button id="n-commons" onclick="go('commons')"><span class="ico">👥</span><span class="lb">Commons</span></button>
+          <button id="n-path" onclick="go('path')"><span class="ico">🏔️</span><span class="lb">Path</span></button>
+          <button id="n-me" onclick="go('me')"><span class="ico">🙂</span><span class="lb">Me</span></button>
+        </div>
+
+      </div>
+    </div>
+    <div class="legend"><b>One app, one identity, one climb.</b> Onboarding → Wonder → Train → Belong → Path, with the boring superpower no rival has: the maths is actually correct.</div>
+  </div>
+</div>
+
+<script>
+// onboarding
+let step=1;
+function ob(n){ step=n; for(let i=1;i<=4;i++){ document.getElementById('ob'+i).classList.toggle('on',i===n); document.getElementById('d'+i).classList.toggle('on',i===n);} }
+function pickGoal(el){ document.querySelectorAll('.goal').forEach(g=>g.classList.remove('sel')); el.classList.add('sel'); }
+function enterApp(){ document.getElementById('onboard').style.display='none'; }
+
+// router
+const tabFor={today:'today',train:'train',gym:'train',solutions:'train',practice:'train',library:'train',topics:'train',
+  commons:'commons',thread:'commons',post:'commons',solve:'commons',mentors:'commons',contest:'commons',
+  path:'path',node:'path',me:'me',parent:'me'};
+const views=Object.keys(tabFor).concat(['solutions']);
+function go(v){
+  document.querySelectorAll('.view').forEach(x=>x.classList.remove('on'));
+  const el=document.getElementById('v-'+v); if(el) el.classList.add('on');
+  document.querySelectorAll('.nav button').forEach(b=>b.classList.remove('on'));
+  const n=document.getElementById('n-'+(tabFor[v]||v)); if(n) n.classList.add('on');
+  document.querySelector('.scrollarea').scrollTop=0;
+}
+// gym
+let hintN=0;
+function hintStep(){ hintN=Math.min(hintN+1,3); for(let i=1;i<=3;i++) document.getElementById('h'+i).classList.toggle('show',i<=hintN); }
+function checkGym(){ const v=(document.getElementById('gymans').value||'').trim();
+  if(v==='45') document.getElementById('gymok').classList.add('show');
+  else{ const i=document.getElementById('gymans'); i.style.borderColor='var(--berry)'; setTimeout(()=>i.style.borderColor='',700);} }
+function solTab(i,el){ document.querySelectorAll('.soltab').forEach(t=>t.classList.remove('on')); el.classList.add('on'); [0,1,2].forEach(k=>document.getElementById('sol'+k).style.display=k===i?'block':'none'); }
+function vote(b){ if(b.classList.contains('voted'))return; b.classList.add('voted'); b.textContent='▲ '+(parseInt(b.textContent.replace(/\D/g,''))+1); }
+// mastered
+function masterOpen(){ document.getElementById('master').classList.add('on'); }
+function masterClose(){ document.getElementById('master').classList.remove('on'); }
+// parent pin
+let pinv='';
+function pin(d){ if(pinv.length>=4)return; pinv+=d; for(let i=0;i<4;i++) document.getElementById('p'+i).textContent=i<pinv.length?'•':'';
+  if(pinv.length===4){ if(pinv==='1234'){ document.getElementById('parentlock').style.display='none'; document.getElementById('parentin').style.display='block'; } else { setTimeout(()=>{pinv='';for(let i=0;i<4;i++)document.getElementById('p'+i).textContent='';},400);} } }
+function pinClr(){ pinv=pinv.slice(0,-1); for(let i=0;i<4;i++) document.getElementById('p'+i).textContent=i<pinv.length?'•':''; }
+</script>
+</body>
+</html>

@@ -1,0 +1,386 @@
+openapi: 3.0.3
+info:
+  title: KiwiReader — Annotation & Sync API
+  version: 0.1.0
+  description: >-
+    Durability + cross-device sync for KiwiReader annotations, bookmarks and
+    reading progress. The mobile client is offline-first; these endpoints exist
+    for persistence, multi-device convergence and (opt-in) analytics. The Dart
+    in-memory mock (`InMemoryAnnotationApi`) implements the `/sync` semantics
+    1:1 and is used in the core unit tests.
+servers:
+  - url: https://api.kiwimaths.app/reader
+    description: Production
+  - url: http://localhost:8080
+    description: Local mock
+
+security:
+  - bearerAuth: []
+
+tags:
+  - name: annotations
+  - name: bookmarks
+  - name: progress
+  - name: sync
+
+paths:
+  /v1/books/{bookId}/annotations:
+    parameters:
+      - $ref: '#/components/parameters/BookId'
+    get:
+      tags: [annotations]
+      summary: List annotations for a book (optionally incremental).
+      parameters:
+        - name: sinceCursor
+          in: query
+          schema: { type: integer, format: int64 }
+          description: Opaque server cursor; omit for a full snapshot.
+        - name: includeDeleted
+          in: query
+          schema: { type: boolean, default: false }
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  cursor: { type: integer, format: int64 }
+                  items:
+                    type: array
+                    items: { $ref: '#/components/schemas/Annotation' }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+    post:
+      tags: [annotations]
+      summary: Create an annotation (idempotent by client-supplied id).
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: '#/components/schemas/Annotation' }
+      responses:
+        '201':
+          description: Created
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/Annotation' }
+        '200':
+          description: Already existed (idempotent replay) — returns server record.
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/Annotation' }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+        '403': { $ref: '#/components/responses/Forbidden' }
+
+  /v1/annotations/{id}:
+    parameters:
+      - name: id
+        in: path
+        required: true
+        schema: { type: string, format: uuid }
+    patch:
+      tags: [annotations]
+      summary: Update an annotation (optimistic concurrency via revision).
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: '#/components/schemas/AnnotationPatch' }
+      responses:
+        '200':
+          description: Updated
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/Annotation' }
+        '409':
+          description: Revision conflict — returns the authoritative record.
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/Annotation' }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+    delete:
+      tags: [annotations]
+      summary: Soft-delete (writes a tombstone).
+      responses:
+        '204': { description: Deleted }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+
+  /v1/books/{bookId}/bookmarks:
+    parameters:
+      - $ref: '#/components/parameters/BookId'
+    get:
+      tags: [bookmarks]
+      summary: List bookmarks for a book.
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: { $ref: '#/components/schemas/Bookmark' }
+    post:
+      tags: [bookmarks]
+      summary: Create / toggle a bookmark.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: '#/components/schemas/Bookmark' }
+      responses:
+        '201':
+          description: Created
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/Bookmark' }
+
+  /v1/books/{bookId}/progress:
+    parameters:
+      - $ref: '#/components/parameters/BookId'
+    get:
+      tags: [progress]
+      summary: Get reading progress.
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/ReadingProgress' }
+        '404': { description: No progress yet }
+    put:
+      tags: [progress]
+      summary: Upsert reading progress (last-write-wins by updatedAt).
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: '#/components/schemas/ReadingProgress' }
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/ReadingProgress' }
+
+  /v1/sync:
+    post:
+      tags: [sync]
+      summary: Batch delta sync — push the outbox and pull remote deltas in one round-trip.
+      description: >-
+        The single hot path. `sinceCursor` is an OPAQUE monotonic server token
+        (NOT a wall clock) so delta selection is immune to client/server clock
+        skew. Conflicts resolve field-level last-write-wins, with a tombstone
+        always beating a concurrent edit and divergent notes kept-both.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: '#/components/schemas/SyncRequest' }
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/SyncResponse' }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+        '413':
+          description: Payload too large — client must chunk the outbox.
+
+  /v1/books/{bookId}/reconcile:
+    parameters:
+      - $ref: '#/components/parameters/BookId'
+    post:
+      tags: [annotations]
+      summary: Re-anchor annotations after a content version change.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [fromVersion, toVersion]
+              properties:
+                fromVersion: { type: string }
+                toVersion: { type: string }
+      responses:
+        '200':
+          description: Reconciliation report
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/ReconcileReport' }
+
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+
+  parameters:
+    BookId:
+      name: bookId
+      in: path
+      required: true
+      schema: { type: string }
+
+  responses:
+    Unauthorized:
+      description: Missing/invalid token
+      content:
+        application/json:
+          schema: { $ref: '#/components/schemas/Error' }
+    Forbidden:
+      description: No entitlement for this book (read-only / expired)
+      content:
+        application/json:
+          schema: { $ref: '#/components/schemas/Error' }
+
+  schemas:
+    Error:
+      type: object
+      properties:
+        code: { type: string }
+        message: { type: string }
+        recoverable: { type: boolean }
+
+    TextQuoteSelector:
+      type: object
+      required: [exact]
+      properties:
+        exact: { type: string }
+        prefix: { type: string }
+        suffix: { type: string }
+
+    TextPositionSelector:
+      type: object
+      required: [start, end]
+      properties:
+        start: { type: integer }
+        end: { type: integer }
+
+    StructuralSelector:
+      type: object
+      required: [type, data]
+      properties:
+        type:
+          type: string
+          enum: [domRange, cfi, pdfQuads, rect, percent]
+        data:
+          type: object
+          additionalProperties: true
+
+    Anchor:
+      type: object
+      required: [sectionId, state]
+      properties:
+        sectionId: { type: string }
+        structural: { $ref: '#/components/schemas/StructuralSelector' }
+        quote: { $ref: '#/components/schemas/TextQuoteSelector' }
+        position: { $ref: '#/components/schemas/TextPositionSelector' }
+        state:
+          type: string
+          enum: [resolved, repaired, approx, orphaned]
+
+    Locator:
+      type: object
+      required: [sectionId]
+      properties:
+        sectionId: { type: string }
+        progress: { type: number, format: float }
+        raw:
+          type: object
+          additionalProperties: true
+
+    Annotation:
+      type: object
+      required: [id, bookId, type, anchor, revision, deviceId, createdAt, updatedAt]
+      properties:
+        id: { type: string, format: uuid }
+        bookId: { type: string }
+        type:
+          type: string
+          enum: [highlight, underline, strikethrough, note, ink]
+        color: { type: string }
+        anchor: { $ref: '#/components/schemas/Anchor' }
+        noteText: { type: string }
+        ink:
+          type: object
+          additionalProperties: true
+        revision: { type: integer }
+        deviceId: { type: string }
+        createdAt: { type: string, format: date-time }
+        updatedAt: { type: string, format: date-time }
+        deletedAt: { type: string, format: date-time, nullable: true }
+
+    AnnotationPatch:
+      type: object
+      required: [revision]
+      properties:
+        color: { type: string }
+        noteText: { type: string }
+        anchor: { $ref: '#/components/schemas/Anchor' }
+        revision:
+          type: integer
+          description: The revision the client based this edit on.
+
+    Bookmark:
+      type: object
+      required: [id, bookId, locator, revision, deviceId, createdAt, updatedAt]
+      properties:
+        id: { type: string, format: uuid }
+        bookId: { type: string }
+        locator: { $ref: '#/components/schemas/Locator' }
+        label: { type: string }
+        revision: { type: integer }
+        deviceId: { type: string }
+        createdAt: { type: string, format: date-time }
+        updatedAt: { type: string, format: date-time }
+        deletedAt: { type: string, format: date-time, nullable: true }
+
+    ReadingProgress:
+      type: object
+      required: [bookId, locator, percent, deviceId, updatedAt]
+      properties:
+        bookId: { type: string }
+        locator: { $ref: '#/components/schemas/Locator' }
+        percent: { type: number, format: float }
+        deviceId: { type: string }
+        updatedAt: { type: string, format: date-time }
+
+    SyncRequest:
+      type: object
+      required: [deviceId, changes]
+      properties:
+        deviceId: { type: string }
+        sinceCursor:
+          type: integer
+          format: int64
+          nullable: true
+          description: Opaque monotonic server cursor from the last pull; null on first sync.
+        changes:
+          type: array
+          items: { $ref: '#/components/schemas/Annotation' }
+
+    SyncResponse:
+      type: object
+      required: [cursor, applied, changes]
+      properties:
+        cursor:
+          type: integer
+          format: int64
+          description: New high-watermark cursor; becomes the next sinceCursor.
+        applied:
+          type: array
+          items: { type: string }
+        changes:
+          type: array
+          items: { $ref: '#/components/schemas/Annotation' }
+
+    ReconcileReport:
+      type: object
+      properties:
+        resolved: { type: integer }
+        repaired: { type: integer }
+        approx: { type: integer }
+        orphaned: { type: integer }

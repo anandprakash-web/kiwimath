@@ -2,6 +2,7 @@
 ///
 /// Covers: Clan, ClanLevel, ClanCrest, ChallengeInfo, ChallengeProgress,
 /// GuessEntry, LeaderboardEntry, DailySquadMember.
+library;
 
 class ClanCrest {
   final String shape;
@@ -17,11 +18,11 @@ class ClanCrest {
   /// Emoji representation of the crest shape.
   String get emoji => const {
         'bolt': '⚡',
-        'lion': '\U0001F981',
-        'wave': '\U0001F30A',
-        'rocket': '\U0001F680',
-        'blossom': '\U0001F338',
-        'dolphin': '\U0001F42C',
+        'lion': 'U0001F981',
+        'wave': 'U0001F30A',
+        'rocket': 'U0001F680',
+        'blossom': 'U0001F338',
+        'dolphin': 'U0001F42C',
       }[shape] ??
       '⚡';
 }
@@ -46,7 +47,7 @@ class ClanLevel {
   factory ClanLevel.fromJson(Map<String, dynamic> json) => ClanLevel(
         level: json['level'] as int? ?? 1,
         name: json['name'] as String? ?? 'Seedling',
-        emoji: json['emoji'] as String? ?? '\U0001F331',
+        emoji: json['emoji'] as String? ?? 'U0001F331',
         currentXp: json['current_xp'] as int? ?? 0,
         progress: (json['progress'] as num?)?.toDouble() ?? 0.0,
         xpToNext: json['xp_to_next'] as int? ?? 5000,

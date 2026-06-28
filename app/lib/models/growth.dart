@@ -2,6 +2,7 @@
 ///
 /// Covers: GrowthJourney, GrowthLevel, GrowthEngagement, TopicGrowth,
 /// GrowthMilestone.
+library;
 
 // ---------------------------------------------------------------------------
 // Growth Journey — aggregate view from /growth/journey

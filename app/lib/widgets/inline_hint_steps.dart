@@ -273,7 +273,7 @@ class _InlineHintStepsState extends State<InlineHintSteps>
               const SizedBox(height: 4),
               Text(
                 _steps[index],
-                style: TextStyle(
+                style: const TextStyle(
                   color: KiwiColors.textDark,
                   fontSize: 14,
                   height: 1.4,

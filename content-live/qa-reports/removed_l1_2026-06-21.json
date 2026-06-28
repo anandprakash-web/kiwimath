@@ -1,0 +1,63 @@
+{
+  "date": "2026-06-21",
+  "removed": [
+    {
+      "id": "KM-L1-COM-1016",
+      "reason": "duplicate",
+      "twin": "KM-L1-COM-0976"
+    },
+    {
+      "id": "KM-L1-COM-1018",
+      "reason": "duplicate",
+      "twin": "KM-L1-COM-0884"
+    },
+    {
+      "id": "KM-L1-COM-1150",
+      "reason": "duplicate",
+      "twin": "KM-L1-COM-1024"
+    },
+    {
+      "id": "KM-L1-COM-1168",
+      "reason": "duplicate",
+      "twin": "KM-L1-COM-0808"
+    },
+    {
+      "id": "KM-L1-COM-1180",
+      "reason": "duplicate",
+      "twin": "KM-L1-COM-0829"
+    },
+    {
+      "id": "KM-L1-COM-1216",
+      "reason": "duplicate",
+      "twin": "KM-L1-COM-0998"
+    },
+    {
+      "id": "KM-L1-COM-1315",
+      "reason": "duplicate",
+      "twin": "KM-L1-COM-0977"
+    },
+    {
+      "id": "KM-L1-COM-1421",
+      "reason": "duplicate",
+      "twin": "KM-L1-COM-1048"
+    },
+    {
+      "id": "KM-L1-COM-1612",
+      "reason": "duplicate",
+      "twin": "KM-L1-COM-1194"
+    },
+    {
+      "id": "KM-L1-COM-1625",
+      "reason": "duplicate",
+      "twin": "KM-L1-COM-1195"
+    },
+    {
+      "id": "KM-L1-COM-3128",
+      "reason": "duplicate",
+      "twin": "KM-L1-COM-0945"
+    }
+  ],
+  "by_reason": {
+    "duplicate": 11
+  }
+}

@@ -1,1 +1,12 @@
-{"level": "L6", "level_name": "Olympiad (RMO)", "pillar": "ALG", "topic_key": "functional_equations", "display_name": "Functional Equations", "total_questions": 0, "questions": []}
+{
+  "level": "L6",
+  "level_name": "RMO",
+  "pillar": "ALG",
+  "topic_key": "functional_equations",
+  "display_name": "Functional Equations",
+  "total_questions": 0,
+  "questions": [],
+  "pending_conversion": true,
+  "removed_image_questions": 6,
+  "note": "Image-based 'Solve the problem shown' questions removed from served bank 2026-06-22 (display only in Library books). Re-extract from the source PDF and convert to typed HTML/LaTeX (100% certain only) before re-populating."
+}

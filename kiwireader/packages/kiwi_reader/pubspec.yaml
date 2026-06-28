@@ -1,0 +1,39 @@
+name: kiwi_reader
+description: >-
+  Flutter reader + annotation module for kiwimaths. Renders PDF / EPUB / custom
+  HTML+JSON / images and overlays highlights, underlines, notes, bookmarks and
+  stylus ink on top. Depends on the pure-Dart kiwi_reader_core for all anchoring
+  and sync logic.
+version: 0.1.0
+publish_to: none
+
+environment:
+  sdk: ^3.4.0
+  flutter: ">=3.22.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_riverpod: ^2.5.1
+  uuid: ^4.4.0
+  connectivity_plus: ^6.1.0
+  pdfrx: ^1.0.0
+  flutter_epub_viewer: ^1.0.0
+  sqflite: ^2.3.0
+  shared_preferences: ^2.0.0  # remember reader font + layout across sessions
+  kiwi_reader_core:
+    path: ../kiwi_reader_core
+  # --- Renderer / storage adapters, added per execution-plan ticket ---
+  # pdfrx: ^1.0.0           # KR-012  PDF rendering (PDFium + text layer)
+  # flutter_epub_viewer     # KR-052  EPUB reflow (epub.js + CFI)
+  # flutter_math_fork       # KR-011  LaTeX/MathML in custom HTML
+  # photo_view              # KR-012  image / scanned books
+  # scribble                # KR-053  stylus ink
+  # drift / sqlite3_flutter_libs  # KR-025  on-device LocalStore
+  # dio                     # KR-035  REST AnnotationApi client
+  # connectivity_plus       # KR-036  online/offline trigger
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0

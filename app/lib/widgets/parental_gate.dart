@@ -109,7 +109,7 @@ class _ParentalGateDialogState extends State<_ParentalGateDialog> {
             ),
           ),
           const SizedBox(height: 4),
-          Text(
+          const Text(
             'Solve this to continue:',
             style: TextStyle(
               fontSize: 12,
@@ -153,7 +153,7 @@ class _ParentalGateDialogState extends State<_ParentalGateDialog> {
             ),
             decoration: InputDecoration(
               hintText: 'Your answer',
-              hintStyle: TextStyle(
+              hintStyle: const TextStyle(
                 fontSize: 16,
                 fontWeight: FontWeight.w500,
                 color: KiwiColors.textMuted,
@@ -211,7 +211,7 @@ class _ParentalGateDialogState extends State<_ParentalGateDialog> {
       actions: [
         TextButton(
           onPressed: () => Navigator.of(context).pop(false),
-          child: Text(
+          child: const Text(
             'Cancel',
             style: TextStyle(
               color: KiwiColors.textMuted,

@@ -1,0 +1,101 @@
+{
+  "level": "L2",
+  "level_name": "Grade 3/4",
+  "pillar": "NT",
+  "topic_key": "unit_digit_patterns",
+  "display_name": "Last-Digit Detective",
+  "total_questions": 1,
+  "questions": [
+    {
+      "id": "KM-L2-NT-1300",
+      "stem": "I am a 2-digit number. My tens digit is 2 and my ones digit is 5. What number am I?",
+      "choices": [
+        "17",
+        "25",
+        "27",
+        "35"
+      ],
+      "correct_answer": 1,
+      "difficulty_tier": "medium",
+      "difficulty_score": 56,
+      "visual_svg": null,
+      "visual_alt": null,
+      "tags": [
+        "puzzles",
+        "riddle"
+      ],
+      "hint": {
+        "level_0": "Look at the problem carefully.",
+        "level_1": "What key information is given? Think about the relationships. Try working step by step. Check your answer.",
+        "level_2": "Step by step: 2 - 2 = ?. Count back from 2."
+      },
+      "concept_cluster": null,
+      "interaction_mode": "multiple_choice",
+      "visual_context": null,
+      "diagnostics": {
+        "0": "That's 8 too few. Check your work carefully and try again.",
+        "2": "That's 2 too many. Check your work carefully and try again.",
+        "3": "That's 10 too many. Check your work carefully and try again."
+      },
+      "irt_params": {
+        "a": 1.1,
+        "b": -1.8,
+        "c": 0.25
+      },
+      "irt_a": 1.1,
+      "irt_b": -1.8,
+      "irt_c": 0.25,
+      "solution_steps": [
+        "Read the clues or conditions carefully",
+        "Eliminate options that don't fit",
+        "Check remaining options against all conditions"
+      ],
+      "level": 2,
+      "level_name": "Builder",
+      "universal_skill_id": "NUM_PATTERN_2",
+      "skill_id": "number_patterns",
+      "skill_domain": "numbers",
+      "maturity_bucket": "calibrating",
+      "visual_requirement": "optional",
+      "visual_type": "none",
+      "visual_ai_verified": false,
+      "media_id": "t8-360.svg",
+      "media_hash": "sha256:4d13fff8ba6de854",
+      "misconception_ids": [
+        "MISC_3",
+        "MISC_0",
+        "MISC_2"
+      ],
+      "why_quality": "human_authored",
+      "why_framework": "3R",
+      "hint_quality": {
+        "layers": 3,
+        "quality": "acceptable",
+        "has_3_layers": true
+      },
+      "school_grade": 3,
+      "avg_time_to_solve_ms": null,
+      "times_served": 0,
+      "flag_count": 0,
+      "schema_version": "3.0",
+      "content_source": "olympiad",
+      "difficulty_tier_in_topic": "easy",
+      "locale_ids": [
+        "india",
+        "singapore",
+        "us",
+        "global"
+      ],
+      "audited_at": "2026-05-05T19:04:51.235706",
+      "audit_version": "g3-deep-audit-v1",
+      "original_id": "T8-344-G3",
+      "legacy_id": "A3-PAT-0035",
+      "legacy_original_id": "T8-344-G3",
+      "km_level": "L2",
+      "km_pillar": "NT",
+      "km_topic": "unit_digit_patterns",
+      "km_topic_display": "Last-Digit Detective",
+      "km_source_bank": "v4"
+    }
+  ]
+}

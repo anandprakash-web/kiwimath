@@ -35,7 +35,7 @@ from pydantic import BaseModel
 
 from app.core.auth import assert_user_match, verify_token
 from app.services.content_store_level import (
-    PILLAR_NAMES, level_store,
+    OLYMPIAD_STRANDS, PILLAR_NAMES, level_store,
 )
 from app.services.gamification import gamification
 from app.services.state_store import get_idempotent_response, record_idempotent_response
@@ -57,10 +57,17 @@ def _q_public(q) -> Dict[str, Any]:
         "choices": q.choices,
         "interaction_mode": getattr(q, "interaction_mode", "mcq"),
         "visual_svg": q.visual_svg,
+        "visual_png": getattr(q, "visual_png", None),     # base64 PNG figure (RMO/INMO)
         "visual_requirement": getattr(q, "visual_requirement", None),
         "difficulty_tier": q.difficulty_tier,
         "irt_b": q.irt_b,
         "hint": q.hint,                      # Socratic hints never reveal the answer
+        # Olympiad study cards reveal the worked solution on demand (not a graded quiz).
+        "solution_steps": getattr(q, "solution_steps", None),
+        "solution": getattr(q, "solution", None),
+        "video_url": getattr(q, "video_url", None),   # per-problem video solution (reveal)
+        "source": getattr(q, "source", None),         # provenance, e.g. "Vedantu OMM L6 · GCD & LCM"
+        "verified": getattr(q, "verified", False),    # human-authored + key-validated → "Verified" badge
         # SECURITY: correct_answer / correct_value intentionally omitted here.
     }
 
@@ -69,6 +76,13 @@ def _q_public(q) -> Dict[str, Any]:
 @router.get("/olympiad/levels")
 def olympiad_levels():
     return {"levels": level_store.levels()}
+
+
+@router.get("/olympiad/strands")
+def olympiad_strands():
+    """The seven canonical olympiad strands (subtopics). Converted content is
+    tagged with one of these; the app can show them as filter chips."""
+    return {"strands": OLYMPIAD_STRANDS}
 
 
 @router.get("/olympiad/levels/{level}/topics")
@@ -89,6 +103,7 @@ def olympiad_topics(level: str):
                 "available": bool(t.questions),
             }
             for t in topics
+            if t.questions  # hide empty scaffold topics (0 questions)
         ],
     }
 
@@ -96,14 +111,77 @@ def olympiad_topics(level: str):
 @router.get("/olympiad/levels/{level}/topics/{topic_key}/next")
 def olympiad_next(
     level: str, topic_key: str,
-    theta: float = Query(0.0, description="Student ability (-3..+3)"),
-    exclude: Optional[str] = Query(None, description="Comma-separated ids to skip"),
+    user_id: Optional[str] = Query(None, description="If set, selection follows this student's saved skill-ladder position"),
+    theta: float = Query(0.0, description="Fallback ability used when no user_id is given"),
+    exclude: Optional[str] = Query(None, description="Comma-separated ids to skip (IRT fallback only)"),
+    mode: str = Query("skill", description="'skill' = concept-cluster ladder (default); 'irt' = ability-based"),
+    decoded: Dict[str, Any] = Depends(verify_token),
 ):
+    """Adaptive selection.
+
+    Default ('skill' mode, when user_id is supplied): the concept-cluster ladder.
+    The student is shown the **skill question** for their current rung; getting it
+    right advances to the next skill, getting it wrong drips that skill's **cluster
+    questions** until one is right or they run out (see app.services.adaptive_skill).
+    The position is persisted, so this resumes exactly where the student left off.
+
+    Fallback ('irt' mode, or no user_id, or a topic without skill tags): the older
+    IRT ZPD selection — a question a touch below the student's ability so success
+    stays ~65-80%."""
+    # Bind the token identity to the requested user_id so a signed-in student
+    # can't read/resume another student's ladder via ?user_id=.
+    if user_id:
+        assert_user_match(decoded, user_id)
+    if user_id and mode != "irt":
+        try:
+            from app.services.adaptive_skill import engine_skill
+            st = engine_skill.status(user_id, level, topic_key)
+            if st["skills_total"] > 0:
+                if st["completed"]:
+                    raise HTTPException(404, "Topic complete — every skill cleared")
+                qid = engine_skill.next_qid(user_id, level, topic_key)
+                q = level_store.get(qid) if qid else None
+                if q:
+                    resp = _q_public(q)
+                    resp["adaptive"] = st          # rung the student is on (for resume UI)
+                    return resp
+        except HTTPException:
+            raise
+        except Exception:
+            pass  # fall through to IRT if the ladder is unavailable
+
     exclude_ids = [x.strip() for x in exclude.split(",")] if exclude else []
-    q = level_store.next_adaptive(level, topic_key, theta=theta, exclude_ids=exclude_ids)
+    sel_theta = theta
+    if user_id:
+        try:
+            from app.services.adaptive_engine_v2 import engine_v2
+            ability = engine_v2.get_ability(user_id, topic_key)
+            sel_theta = ability.theta - 0.3  # ZPD: a touch below ability
+        except Exception:
+            pass
+    q = level_store.next_adaptive(level, topic_key, theta=sel_theta, exclude_ids=exclude_ids)
     if not q:
         raise HTTPException(404, "No more questions for this level/topic")
     return _q_public(q)
+
+
+@router.get("/olympiad/levels/{level}/topics/{topic_key}/adaptive-status")
+def olympiad_adaptive_status(
+    level: str, topic_key: str,
+    user_id: str = Query(...),
+    decoded: Dict[str, Any] = Depends(verify_token),
+):
+    """Where the student is on this topic's skill ladder — used to resume on
+    login (skills_total, skill_index, on_cluster_question, completed)."""
+    assert_user_match(decoded, user_id)
+    from app.services.adaptive_skill import engine_skill
+    try:
+        return engine_skill.status(user_id, level, topic_key)
+    except Exception:
+        # Never 500 a resume call — report an empty/fresh ladder instead.
+        return {"level": level, "topic": topic_key, "skills_total": 0,
+                "skill_index": 0, "on_cluster_question": 0,
+                "current_skill_id": None, "completed": False}
 
 
 @router.get("/olympiad/levels/{level}/topics/{topic_key}/questions")
@@ -183,12 +261,9 @@ def _is_correct(q, body: AnswerCheck) -> bool:
             if str(body.selected_index).strip() == str(q.correct_answer).strip():
                 return True
     if body.selected_value is not None and getattr(q, "correct_value", None) is not None:
-        try:
-            if float(body.selected_value) == float(q.correct_value):
-                return True
-        except (TypeError, ValueError):
-            if str(body.selected_value).strip() == str(q.correct_value).strip():
-                return True
+        from app.services.content_store_level import numeric_correct
+        if numeric_correct(q, body.selected_value):   # range-aware (fraction/decimal) or exact
+            return True
     # also accept a typed value matching the keyed choice text
     if body.selected_value is not None and q.choices:
         try:
@@ -251,6 +326,27 @@ def answer_check(
     except Exception:
         pass
 
+    # Advance the adaptive skill ladder (concept-cluster rule) and persist the
+    # student's new position, so a re-login resumes exactly here — correct →
+    # next skill; wrong → next cluster question (or next skill if exhausted).
+    adaptive_status = None
+    try:
+        from app.services.adaptive_skill import engine_skill
+        if meta:
+            engine_skill.record(body.user_id, meta[0], meta[1], q.id, correct)
+            adaptive_status = engine_skill.status(body.user_id, meta[0], meta[1])
+    except Exception:
+        pass
+
+    # Small League Points for correct practice. The Daily Contest is the apex
+    # source; this just lets everyday practice nudge the weekly league.
+    try:
+        if meta and correct:
+            from app.services.league_service import league
+            league.add_lp(body.user_id, meta[0], 5)
+    except Exception:
+        pass
+
     # Wrong-answer diagnostic for the chosen distractor.
     diagnostic = None
     if not correct and body.selected_index is not None and isinstance(q.diagnostics, dict):
@@ -262,6 +358,7 @@ def answer_check(
         "correct_value": getattr(q, "correct_value", None),
         "solution_steps": getattr(q, "solution_steps", None),
         "diagnostic": diagnostic,
+        "adaptive": adaptive_status,     # skill-ladder rung after this answer
         "reward": {
             "xp": events.get("xp_earned", 0),
             "coins": events.get("coins_earned", 0),
@@ -284,21 +381,71 @@ def me_wallet(user_id: str = Query(...), decoded: Dict[str, Any] = Depends(verif
     return gamification.get_profile_summary(user_id)
 
 
+class SettingsUpdate(BaseModel):
+    user_id: str
+    selected_level: Optional[str] = None
+    grade: Optional[int] = None
+    curriculum: Optional[str] = None
+
+
+@router.get("/me/settings")
+def me_settings(user_id: str = Query(...), decoded: Dict[str, Any] = Depends(verify_token)):
+    """The user's app-scoping settings: the chosen level (L1-L8), grade, and
+    curriculum. ``onboarded`` is True once a level has been picked — the app
+    shows onboarding until then, and scopes every tab to ``selected_level``
+    after."""
+    assert_user_match(decoded, user_id)
+    from app.services.firestore_service import get_user_profile
+    p = get_user_profile(user_id)
+    return {
+        "selected_level": p.get("selected_level"),
+        "grade": p.get("grade"),
+        "curriculum": p.get("curriculum"),
+        "onboarded": bool(p.get("selected_level")),
+    }
+
+
+@router.post("/me/settings")
+def set_me_settings(body: SettingsUpdate, decoded: Dict[str, Any] = Depends(verify_token)):
+    """Set the chosen level / grade — onboarding and the in-app level switcher."""
+    assert_user_match(decoded, body.user_id)
+    from app.services.firestore_service import update_user_profile
+    updates: Dict[str, Any] = {}
+    if body.selected_level:
+        updates["selected_level"] = body.selected_level
+    if body.grade is not None:
+        updates["grade"] = body.grade
+    if body.curriculum:
+        updates["curriculum"] = body.curriculum
+    if updates:
+        update_user_profile(body.user_id, updates)
+    return {"ok": True, **updates}
+
+
 @router.get("/me/progress")
 def me_progress(
     user_id: str = Query(...),
+    level: Optional[str] = Query(None, description="Scope to one level (e.g. L3); omit for overall"),
     decoded: Dict[str, Any] = Depends(verify_token),
 ):
     """Academic height + strand mastery, derived from the SAME gamification
-    state as the wallet, so performance never disagrees with the economy."""
+    state as the wallet, so performance never disagrees with the economy.
+
+    When ``level`` is given the score reflects mastery of THAT level's content
+    only (so it genuinely changes as you switch level/grade); omit it for the
+    student's overall academic height."""
     assert_user_match(decoded, user_id)
     state = gamification.get_state(user_id)
 
-    # Strand mastery per pillar (NT/ALG/GEO/COM) + the Logic & Puzzles extra.
+    # Strand mastery per pillar (NT/ALG/GEO/COM) + the Logic & Puzzles extra,
+    # scoped to `level` when supplied.
     p_att: Dict[str, int] = defaultdict(int)
     p_cor: Dict[str, int] = defaultdict(int)
     logic_att = logic_cor = 0
+    scope_att = scope_cor = scope_mastered = 0
     for tk in state.topics_practised:
+        if level and not level_store.topic_in_level(tk, level):
+            continue
         att = state.topic_attempts.get(tk, 0)
         cor = state.topic_correct.get(tk, 0)
         pil = level_store.pillar_for_topic(tk)
@@ -308,6 +455,10 @@ def me_progress(
         if tk in LOGIC_TOPIC_KEYS:
             logic_att += att
             logic_cor += cor
+        scope_att += att
+        scope_cor += cor
+        if att >= 3 and cor / att >= 0.70:
+            scope_mastered += 1
 
     def pct(c: int, a: int) -> int:
         return round(100 * c / a) if a else 0
@@ -320,10 +471,14 @@ def me_progress(
     logic = {"pillar": "LOGIC", "name": "Logic & Puzzles",
              "pct": pct(logic_cor, logic_att), "attempts": logic_att}
 
-    # Scale score (200-800, 500 ~ average). Derived from accuracy + breadth so
-    # it moves with practice. The IRT proficiency service can replace this.
-    acc = state.accuracy_percent
-    mastered = state.topics_mastered_count
+    # Scale score (200-800, 500 ~ average). Scoped to the level when given (so it
+    # moves with grade/level), else the student's overall accuracy + breadth.
+    if level:
+        acc = (100.0 * scope_cor / scope_att) if scope_att else 0.0
+        mastered = scope_mastered
+    else:
+        acc = state.accuracy_percent
+        mastered = state.topics_mastered_count
     scale = max(200, min(800, round(440 + (acc - 50) * 3 + min(mastered, 40) * 2)))
     if scale < 460:
         verdict, band = "Building foundations", "building"
@@ -340,9 +495,11 @@ def me_progress(
         "band": band,
         "accuracy": round(acc, 1),
         "topics_mastered": mastered,
-        "streak": state.streak_current,
+        "streak": state.live_streak(),
         "strands": strands,
         "logic_puzzles": logic,
+        "scope": level or "all",                      # which level this score reflects
+        "scope_attempts": (scope_att if level else None),  # 0 => no practice yet at this level
     }
 
 

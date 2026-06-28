@@ -89,6 +89,20 @@ if [ "$LEVEL_FOUND" = false ]; then
     echo "WARNING: No content-live/olympiad+curriculum found. Deploying without the remapped Level/Grade banks (/v3 endpoints will be empty)."
 fi
 
+# Copy real book files (EPUB/PDF + covers) served by /v3/store/content/*.
+BOOKS_FOUND=false
+for bk_path in "../content-books" "../../content-books"; do
+    if [ -d "$bk_path" ]; then
+        cp -r "$bk_path" "$TMPDIR/backend/content-books"
+        echo "    (Store book files baked from $bk_path)"
+        BOOKS_FOUND=true
+        break
+    fi
+done
+if [ "$BOOKS_FOUND" = false ]; then
+    echo "WARNING: No content-books/ found. Store /v3/store/content/* will 404 (no real book bytes)."
+fi
+
 # Build from the temp context with content included.
 cd "$TMPDIR/backend"
 cat >> Dockerfile <<'BAKE'
@@ -113,6 +127,15 @@ cat >> Dockerfile <<'BAKE'
 # Bake remapped Level/Grade content into image (added by deploy.sh).
 COPY content-olympiad/ /content-olympiad/
 COPY content-curriculum/ /content-curriculum/
+BAKE
+fi
+
+# Add real book files if found.
+if [ "$BOOKS_FOUND" = true ]; then
+cat >> Dockerfile <<'BAKE'
+
+# Bake Store book files (EPUB/PDF + covers) into image (added by deploy.sh).
+COPY content-books/ /content-books/
 BAKE
 fi
 
@@ -141,7 +164,7 @@ gcloud run deploy "$SERVICE_NAME" \
     --max-instances 10 \
     --concurrency 80 \
     --timeout 300 \
-    --set-env-vars "KIWIMATH_V2_CONTENT_DIR=/content-v2,KIWIMATH_V4_CONTENT_DIR=/content-v4,KIWIMATH_OLYMPIAD_CONTENT_DIR=/content-olympiad,KIWIMATH_CURRICULUM_CONTENT_DIR=/content-curriculum,KIWIMATH_ENV=production" \
+    --set-env-vars "KIWIMATH_V2_CONTENT_DIR=/content-v2,KIWIMATH_V4_CONTENT_DIR=/content-v4,KIWIMATH_OLYMPIAD_CONTENT_DIR=/content-olympiad,KIWIMATH_CURRICULUM_CONTENT_DIR=/content-curriculum,KIWIMATH_BOOKS_DIR=/content-books,KIWIMATH_ENV=production" \
     --port 8000
 
 # Step 5: Print the URL.

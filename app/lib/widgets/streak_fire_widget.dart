@@ -128,9 +128,9 @@ class _StreakFireWidgetState extends State<StreakFireWidget>
                 color: KiwiColors.textDark,
               ),
             ),
-            Text(
+            const Text(
               'day streak',
-              style: const TextStyle(
+              style: TextStyle(
                 fontSize: 10,
                 fontWeight: FontWeight.w600,
                 color: KiwiColors.textMuted,

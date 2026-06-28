@@ -49,7 +49,11 @@ from app.api.wavebook import router as wavebook_router
 from app.api.questions_v2 import router as questions_v2_router
 from app.api.questions_v4 import router as questions_v4_router
 from app.api.level import router as level_router
+from app.api.contest import router as contest_router
+from app.api.challenge import router as challenge_router
+from app.api.store import router as store_router
 from app.api.user import router as user_router
+from app.api.usage import router as usage_router
 from app.services.content_store_v2 import bootstrap_v2_from_env, store_v2
 from app.services.content_store_v4 import bootstrap_v4_from_env, store_v4
 from app.services.content_store_level import bootstrap_level_from_env, level_store
@@ -106,6 +110,9 @@ def create_app() -> FastAPI:
     app.include_router(questions_v2_router, dependencies=user_auth)
     app.include_router(questions_v4_router, dependencies=user_auth)
     app.include_router(level_router, dependencies=user_auth)
+    app.include_router(contest_router, dependencies=user_auth)
+    app.include_router(challenge_router, dependencies=user_auth)
+    app.include_router(store_router, dependencies=user_auth)
     app.include_router(onboarding_router, dependencies=user_auth)
     app.include_router(parent_router, dependencies=user_auth)
     app.include_router(learning_path_router, dependencies=user_auth)
@@ -130,6 +137,10 @@ def create_app() -> FastAPI:
     app.include_router(analytics_router, dependencies=admin_auth)
     app.include_router(portal_router, dependencies=admin_auth)
     app.include_router(content_editor_router, dependencies=admin_auth)
+
+    # Usage dashboard — key-gated inside the route (no Firebase login needed),
+    # so the founder's static HTML dashboard can read it. Read-only aggregates.
+    app.include_router(usage_router)
 
     # -----------------------------------------------------------------------
     # Question Editor UI — simple web page for content team

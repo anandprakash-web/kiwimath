@@ -18,8 +18,9 @@ Usage: python3 prod_fix_script.py [--apply]   (default = dry run, prints plan)
 """
 import json, glob, re, os, sys, collections
 
-ROOT = os.environ.get("CP_ROOT", "/sessions/jolly-pensive-rubin/mnt/kiwimath/archive/content-production")
-OUT = os.environ.get("QA_OUT", "/sessions/jolly-pensive-rubin/mnt/kiwimath/qa-reports")
+_dir = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.environ.get("CP_ROOT", os.path.abspath(os.path.join(_dir, "../archive/content-production")))
+OUT = os.environ.get("QA_OUT", _dir)
 APPLY = "--apply" in sys.argv
 
 log = collections.Counter()

@@ -3,7 +3,8 @@
 import json, glob, re, os, sys, hashlib
 from collections import Counter, defaultdict
 
-ROOT='/sessions/compassionate-zealous-pasteur/mnt/kiwimath/content-live'
+_dir = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.abspath(os.path.join(_dir, "../content-live"))
 WRITE = '--write' in sys.argv
 
 def is_q(o): return isinstance(o,dict) and 'id' in o and ('stem' in o or 'choices' in o or 'hint' in o)

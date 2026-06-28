@@ -248,7 +248,7 @@ class _CurriculumScreenState extends State<CurriculumScreen> {
     final adaptiveTopics = chapter['adaptive_topic_ids'] as List<dynamic>?;
     final topicId = (adaptiveTopics != null && adaptiveTopics.isNotEmpty)
         ? adaptiveTopics.first.toString()
-        : '${_selectedCurriculum}-g${widget.selectedGrade}-ch${index + 1}';
+        : '$_selectedCurriculum-g${widget.selectedGrade}-ch${index + 1}';
 
     final questionCount = chapter['question_count'] as int? ?? 0;
     if (questionCount <= 0) {
@@ -548,7 +548,7 @@ class _ChapterCard extends StatelessWidget {
                       ),
                       if (completed > 0) ...[
                         const SizedBox(width: 10),
-                        Icon(Icons.check_circle_outline,
+                        const Icon(Icons.check_circle_outline,
                             size: 14, color: KiwiColors.kiwiGreen),
                         const SizedBox(width: 4),
                         Text(

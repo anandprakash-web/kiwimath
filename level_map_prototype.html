@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Kiwimath — The Level Map</title>
+<style>
+:root{
+  --orange:#FF6F00;--orange-d:#E25E00;--ink:#1E1633;--ink2:#2A2140;--paper:#FFFFFF;
+  --text:#231C30;--mute:#7A7290;--line:#E4DEEE;--gold:#F5A623;--green:#2FA866;--teal:#12A99B;--blue:#3D7DF6;--indigo:#5B4DE0;
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:linear-gradient(165deg,#efe9f6,#f7f1ee 60%);color:var(--text);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+.wrap{max-width:1140px;margin:0 auto;padding:30px 20px 60px;display:flex;gap:40px;align-items:flex-start;flex-wrap:wrap;justify-content:center}
+.intro{flex:1 1 330px;max-width:420px;padding-top:18px}
+.eyebrow{display:inline-block;font-size:12px;font-weight:800;letter-spacing:2px;color:var(--orange);background:#FFF3E8;padding:6px 12px;border-radius:30px;text-transform:uppercase}
+.intro h1{font-size:38px;line-height:1.1;margin:18px 0 12px;letter-spacing:-.5px}
+.intro h1 span{color:var(--orange)}
+.intro p{font-size:16.5px;line-height:1.6;color:#4b4360;margin:0 0 16px}
+.intro .note{font-size:13.5px;color:var(--mute);background:#fff;border:1px solid var(--line);border-radius:14px;padding:13px 15px;line-height:1.55}
+.intro .note b{color:var(--ink)}
+.tip{margin-top:18px;font-size:13px;color:var(--mute);display:flex;align-items:center;gap:8px}
+.tip .dot{width:9px;height:9px;border-radius:50%;background:var(--orange);animation:p 1.6s infinite}
+@keyframes p{0%,100%{opacity:.4}50%{opacity:1}}
+
+.stage{flex:0 0 auto;display:flex;flex-direction:column;align-items:center;gap:13px}
+.phone{width:390px;height:830px;background:var(--ink);border-radius:46px;padding:13px;
+  box-shadow:0 40px 80px -24px rgba(30,12,48,.55),0 0 0 2px rgba(255,255,255,.04) inset;position:relative}
+.notch{position:absolute;top:13px;left:50%;transform:translateX(-50%);width:140px;height:26px;background:var(--ink);border-radius:0 0 18px 18px;z-index:30}
+.screen{position:absolute;inset:13px;border-radius:34px;overflow:hidden;background:var(--paper);display:flex;flex-direction:column}
+.tbar{padding:28px 18px 12px;background:var(--paper)}
+.tbar .k{font-size:11.5px;font-weight:800;letter-spacing:1.4px;text-transform:uppercase;color:var(--orange)}
+.tbar h2{font-size:23px;font-weight:800;letter-spacing:-.4px;margin:3px 0 0;color:var(--ink)}
+.tbar p{margin:3px 0 0;font-size:13.5px;color:var(--mute);font-weight:600}
+.scroll{flex:1;overflow-y:auto;padding:14px 16px 26px}
+.scroll::-webkit-scrollbar{width:0}
+
+.rung{position:relative;padding-left:54px;margin-bottom:12px}
+.rung .spine{position:absolute;left:20.5px;top:-12px;bottom:-12px;width:3px;background:var(--line);z-index:0;border-radius:3px}
+.rung:first-child .spine{top:50%}                     /* line starts at circle 1 */
+.rung:last-child .spine,.rung.lastrung .spine{bottom:50%}  /* line ends at circle 8 */
+.rung .num{position:absolute;left:6px;top:50%;transform:translateY(-50%);width:32px;height:32px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;color:#fff;z-index:2;
+  box-shadow:0 4px 10px -4px rgba(40,20,60,.5)}
+.card{background:#fff;border:1.5px solid var(--line);border-radius:18px;padding:13px 15px;cursor:pointer;transition:border-color .15s,box-shadow .15s}
+.card:hover{box-shadow:0 10px 24px -16px rgba(40,20,60,.35)}
+.card.cur{border-color:var(--orange);box-shadow:0 0 0 3px #FFE9D6}
+.row1{display:flex;align-items:center;gap:9px}
+.emoji{font-size:20px}
+.band{font-weight:800;font-size:15.5px;color:var(--ink);line-height:1.15}
+.grades{font-size:12px;color:var(--mute);font-weight:700;margin-top:1px}
+.here{margin-left:auto;font-size:10.5px;font-weight:800;color:#fff;background:var(--orange);padding:3px 9px;border-radius:20px;letter-spacing:.3px}
+.chev{margin-left:auto;color:#c9c2da;font-size:18px;transition:transform .2s}
+.card.open .chev{transform:rotate(90deg)}
+.examrow{display:flex;flex-wrap:wrap;gap:6px;margin-top:9px}
+.chip{font-size:11px;font-weight:800;padding:4px 10px;border-radius:30px;color:#fff}
+.detail{display:none;margin-top:11px;padding-top:11px;border-top:1px solid var(--line)}
+.card.open .detail{display:block;animation:fade .25s}
+@keyframes fade{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:none}}
+.detail .tag{font-size:13px;font-weight:700;color:var(--ink);font-style:italic;margin-bottom:9px}
+.detail .ml{font-size:11px;font-weight:800;letter-spacing:.6px;color:var(--mute);text-transform:uppercase;margin:6px 0 4px}
+.detail .master{font-size:13px;color:#473f5e;line-height:1.5}
+.cta{display:block;width:100%;border:none;border-radius:12px;padding:11px;font-weight:800;font-size:13.5px;cursor:pointer;margin-top:11px;font-family:inherit}
+.goal{display:flex;align-items:center;justify-content:center;gap:7px;margin-top:4px;font-size:11.5px;font-weight:800;color:var(--mute);text-transform:uppercase;letter-spacing:.8px}
+
+.legend{font-size:12px;color:var(--mute);text-align:center;max-width:390px;line-height:1.5}
+@media(max-width:560px){.phone{transform:scale(.92);transform-origin:top center}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="intro">
+    <span class="eyebrow">The Level Map · onboarding + reference</span>
+    <h1>Show the <span>whole path</span> — not just where they start.</h1>
+    <p>VIPKid's level matrix works because a parent instantly sees the ladder <i>and</i> where it leads. This is ours, for maths: every level mapped to its grade and the real exams it targets, from first puzzles all the way to the <b>IMO</b>.</p>
+    <div class="note"><b>Where it lives:</b> in onboarding ("here's your path, you start at L3") and as a tap-anywhere reference from Profile / the Path tab. It reuses the level data already shipped to the backend (<code>LEVEL_META</code>) — so the copy is editable server-side.</div>
+    <div class="tip"><span class="dot"></span> Tap any level on the phone to expand its exams + what you'll master.</div>
+  </div>
+
+  <div class="stage">
+    <div class="phone">
+      <div class="notch"></div>
+      <div class="screen">
+        <div class="tbar">
+          <div class="k">Your path</div>
+          <h2>School maths → the IMO</h2>
+          <p>One ladder, eight levels. You're on Level 3.</p>
+        </div>
+        <div class="scroll" id="ladder"><!-- rungs L1 (top) → L8 (bottom) --></div>
+      </div>
+    </div>
+    <div class="legend"><b>Legible + aspirational.</b> The level you pick scopes the whole app — and this map is why the choice feels confident instead of overwhelming.</div>
+  </div>
+</div>
+
+<script>
+// Real data from the backend LEVEL_META (founder can tune exam names + "master").
+const LEVELS = [
+  {n:1, color:'#FF7A45', emoji:'🌱', band:'Grades 1–2', grades:'Grades 1–2',
+   tag:'First puzzles & number sense.', exams:['School olympiads','Kangaroo'],
+   master:'Counting, shapes, patterns and the joy of figuring things out.', avail:true},
+  {n:2, color:'#FF6F00', emoji:'🧩', band:'Grades 3–4', grades:'Grades 3–4',
+   tag:'Building the problem-solving blocks.', exams:['Kangaroo (Ecolier)','NSTSE','School olympiads'],
+   master:'Place value, fractions, logic puzzles, early geometry and patterns.', avail:true},
+  {n:3, color:'#F5A623', emoji:'🚀', band:'Grades 5–6', grades:'Grades 5–6',
+   tag:'Where real problem-solving begins.', exams:['Kangaroo (Benjamin)','NMTC (Primary)'],
+   master:'Ratios, integers, angle geometry, smart counting — plus Vedic speed tricks.', avail:true, cur:true},
+  {n:4, color:'#3FB66A', emoji:'⚡', band:'Pre-olympiad', grades:'Grades 7–8',
+   tag:'Pre-olympiad foundations.', exams:['NMTC (Junior)','Kangaroo (Cadet)','IOQM prep'],
+   master:'Algebra, number-theory basics, combinatorics, and your first real proofs.', avail:true},
+  {n:5, color:'#2FA866', emoji:'🎯', band:'IOQM track', grades:'Grades 9–10',
+   tag:'The IOQM track.', exams:['IOQM','AMC 10','NMTC (Inter)'],
+   master:'Olympiad number theory, algebra, geometry and combinatorics at IOQM difficulty.', avail:true},
+  {n:6, color:'#12A99B', emoji:'🏅', band:'RMO', grades:'Grades 9–12',
+   tag:'Regional Mathematical Olympiad.', exams:['RMO'],
+   master:'Proof writing, inequalities, combinatorics, geometry — the step after IOQM.', avail:true},
+  {n:7, color:'#3D7DF6', emoji:'🥇', band:'INMO', grades:'Grades 9–12',
+   tag:'Indian National Mathematical Olympiad.', exams:['INMO'],
+   master:'Advanced proof technique, functional equations, olympiad geometry, deep number theory.', avail:true},
+  {n:8, color:'#5B4DE0', emoji:'🌍', band:'International Olympiad', grades:'Grades 11–12',
+   tag:'The international summit.', exams:['IMO'],
+   master:'World-class problem solving — original ideas, fully rigorous proofs, the hardest problems on Earth.', avail:false},
+];
+
+const L = document.getElementById('ladder');
+LEVELS.forEach((lv) => {
+  const showGrades = !lv.band.startsWith('Grades'); // don't repeat the grade if the title already is it
+  const examChips = lv.exams.map(e=>`<span class="chip" style="background:${lv.color}">${e}</span>`).join('');
+  const right = lv.cur ? '<span class="here">YOU ARE HERE</span>' : '<span class="chev">›</span>';
+  const ctaBg = lv.avail ? lv.color : '#cfc8da';
+  const ctaTxt = lv.cur ? 'Continue at this level' : (lv.avail ? 'Switch to this level' : 'Coming soon');
+  const d = document.createElement('div');
+  d.className = 'rung';
+  d.innerHTML = `
+    <div class="spine"></div>
+    <div class="num" style="background:${lv.color}">${lv.n}</div>
+    <div class="card ${lv.cur?'cur':''}" onclick="this.classList.toggle('open')">
+      <div class="row1">
+        <span class="emoji">${lv.emoji}</span>
+        <div>
+          <div class="band">${lv.band}</div>
+          ${showGrades ? `<div class="grades">${lv.grades}</div>` : ''}
+        </div>
+        ${right}
+      </div>
+      <div class="examrow">${examChips}</div>
+      <div class="detail">
+        <div class="tag">${lv.tag}</div>
+        <div class="ml">What you'll master</div>
+        <div class="master">${lv.master}</div>
+        <button class="cta" style="background:${ctaBg};color:#fff" onclick="event.stopPropagation()">${ctaTxt}</button>
+      </div>
+    </div>`;
+  L.appendChild(d);
+});
+// bound the connecting line at circle 8 (the goal footer comes after the rungs)
+const rungs = L.querySelectorAll('.rung');
+if (rungs.length) rungs[rungs.length - 1].classList.add('lastrung');
+// the destination, at the foot of the path
+const goal = document.createElement('div');
+goal.className = 'goal';
+goal.innerHTML = '🏆 The goal · International Mathematical Olympiad';
+L.appendChild(goal);
+// open the current level by default
+const cur = document.querySelector('.card.cur');
+if (cur) cur.classList.add('open');
+</script>
+</body>
+</html>

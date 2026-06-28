@@ -70,11 +70,11 @@ class _FillUpInputState extends State<FillUpInput> {
             borderRadius: BorderRadius.circular(12),
             border: Border.all(color: KiwiColors.visualBlueBorder, width: 1.5),
           ),
-          child: Row(
+          child: const Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              const Text('\u{270F}\u{FE0F}', style: TextStyle(fontSize: 18)),
-              const SizedBox(width: 8),
+              Text('\u{270F}\u{FE0F}', style: TextStyle(fontSize: 18)),
+              SizedBox(width: 8),
               Text(
                 'Fill in the blank!',
                 style: TextStyle(
@@ -180,7 +180,7 @@ class _FillUpInputState extends State<FillUpInput> {
           color: KiwiColors.textDark,
           letterSpacing: 2,
         ),
-        decoration: InputDecoration(
+        decoration: const InputDecoration(
           hintText: '?',
           hintStyle: TextStyle(
             fontSize: 28,
@@ -188,7 +188,7 @@ class _FillUpInputState extends State<FillUpInput> {
             color: KiwiColors.textMuted,
           ),
           border: InputBorder.none,
-          contentPadding: const EdgeInsets.symmetric(vertical: 18, horizontal: 20),
+          contentPadding: EdgeInsets.symmetric(vertical: 18, horizontal: 20),
         ),
         keyboardType: TextInputType.text,
         textInputAction: TextInputAction.done,

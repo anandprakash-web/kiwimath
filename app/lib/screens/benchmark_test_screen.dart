@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../models/question_v2.dart';
 import '../services/api_client.dart';
 import '../theme/kiwi_theme.dart';
-import '../widgets/option_card.dart';
 import '../widgets/proficiency_card.dart';
 
 /// Structured benchmark / diagnostic test screen.
@@ -205,7 +203,7 @@ class _BenchmarkTestScreenState extends State<BenchmarkTestScreen> {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Icon(Icons.error_outline_rounded, size: 48, color: KiwiColors.coral),
+            const Icon(Icons.error_outline_rounded, size: 48, color: KiwiColors.coral),
             const SizedBox(height: KiwiSpacing.md),
             Text(_error!, textAlign: TextAlign.center,
                 style: TextStyle(fontSize: typo.bodySize, color: colors.textSecondary, fontFamily: typo.fontFamily)),
@@ -511,7 +509,7 @@ class _BenchmarkTestScreenState extends State<BenchmarkTestScreen> {
               Navigator.of(ctx).pop();
               Navigator.of(context).pop();
             },
-            child: Text('Leave', style: TextStyle(color: KiwiColors.coral)),
+            child: const Text('Leave', style: TextStyle(color: KiwiColors.coral)),
           ),
         ],
       ),

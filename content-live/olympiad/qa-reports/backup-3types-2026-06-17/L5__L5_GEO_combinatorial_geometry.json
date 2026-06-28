@@ -1,0 +1,1508 @@
+{
+  "level": "L5",
+  "level_name": "IOQM",
+  "pillar": "GEO",
+  "topic_key": "combinatorial_geometry",
+  "display_name": "Combinatorial Geometry",
+  "total_questions": 50,
+  "questions": [
+    {
+      "id": "KM-L5-GEO-0201",
+      "legacy_id": "CG26-001",
+      "stem": "How many monotone lattice paths go from (0,0) to (4,3) using only unit steps right and up?",
+      "choices": [],
+      "correct_answer": 35,
+      "correct_value": "35",
+      "interaction_mode": "integer",
+      "hint": {
+        "level_0": "Every path is a sequence of right- and up-steps. How many of each, and how many ways to arrange that sequence?"
+      },
+      "solution_steps": [
+        "A path uses 4 R-steps and 3 U-steps in some order — 7 steps total.",
+        "Choose positions of the R-steps: C(7,4).",
+        "= 35."
+      ],
+      "solution": "Step 1 — A path uses 4 R-steps and 3 U-steps in some order — 7 steps total. Step 2 — Choose positions of the R-steps: C(7,4). Step 3 — = 35.",
+      "difficulty_tier": "medium",
+      "irt_b": 1.0,
+      "difficulty_score": 130,
+      "visual_svg": "",
+      "marks": 3,
+      "subtopic": "Lattice paths & points",
+      "area": "Combinatorial Geometry",
+      "year": "2026-27 (predicted)",
+      "km_level": "L5",
+      "km_pillar": "GEO",
+      "km_topic": "combinatorial_geometry",
+      "km_topic_display": "Combinatorial Geometry"
+    },
+    {
+      "id": "KM-L5-GEO-0202",
+      "legacy_id": "CG26-002",
+      "stem": "How many monotone lattice paths go from (0,0) to (5,5) using only unit steps right and up?",
+      "choices": [],
+      "correct_answer": 252,
+      "correct_value": "252",
+      "interaction_mode": "integer",
+      "hint": {
+        "level_0": "Every path is a sequence of right- and up-steps. How many of each, and how many ways to arrange that sequence?"
+      },
+      "solution_steps": [
+        "A path uses 5 R-steps and 5 U-steps in some order — 10 steps total.",
+        "Choose positions of the R-steps: C(10,5).",
+        "= 252."
+      ],
+      "solution": "Step 1 — A path uses 5 R-steps and 5 U-steps in some order — 10 steps total. Step 2 — Choose positions of the R-steps: C(10,5). Step 3 — = 252.",
+      "difficulty_tier": "medium",
+      "irt_b": 1.0,
+      "difficulty_score": 130,
+      "visual_svg": "",
+      "marks": 3,
+      "subtopic": "Lattice paths & points",
+      "area": "Combinatorial Geometry",
+      "year": "2026-27 (predicted)",
+      "km_level": "L5",
+      "km_pillar": "GEO",
+      "km_topic": "combinatorial_geometry",
+      "km_topic_display": "Combinatorial Geometry"
+    },
+    {
+      "id": "KM-L5-GEO-0203",
+      "legacy_id": "CG26-003",
+      "stem": "How many monotone lattice paths go from (0,0) to (6,4) using only unit steps right and up?",
+      "choices": [],
+      "correct_answer": 210,
+      "correct_value": "210",
+      "interaction_mode": "integer",
+      "hint": {
+        "level_0": "Every path is a sequence of right- and up-steps. How many of each, and how many ways to arrange that sequence?"
+      },
+      "solution_steps": [
+        "A path uses 6 R-steps and 4 U-steps in some order — 10 steps total.",
+        "Choose positions of the R-steps: C(10,6).",
+        "= 210."
+      ],
+      "solution": "Step 1 — A path uses 6 R-steps and 4 U-steps in some order — 10 steps total. Step 2 — Choose positions of the R-steps: C(10,6). Step 3 — = 210.",
+      "difficulty_tier": "medium",
+      "irt_b": 1.0,
+      "difficulty_score": 130,
+      "visual_svg": "",
+      "marks": 3,
+      "subtopic": "Lattice paths & points",
+      "area": "Combinatorial Geometry",
+      "year": "2026-27 (predicted)",
+      "km_level": "L5",
+      "km_pillar": "GEO",
+      "km_topic": "combinatorial_geometry",
+      "km_topic_display": "Combinatorial Geometry"
+    },
+    {
+      "id": "KM-L5-GEO-0204",
+      "legacy_id": "CG26-004",
+      "stem": "How many monotone lattice paths go from (0,0) to (7,3) using only unit steps right and up?",
+      "choices": [],
+      "correct_answer": 120,
+      "correct_value": "120",
+      "interaction_mode": "integer",
+      "hint": {
+        "level_0": "Every path is a sequence of right- and up-steps. How many of each, and how many ways to arrange that sequence?"
+      },
+      "solution_steps": [
+        "A path uses 7 R-steps and 3 U-steps in some order — 10 steps total.",
+        "Choose positions of the R-steps: C(10,7).",
+        "= 120."
+      ],
+      "solution": "Step 1 — A path uses 7 R-steps and 3 U-steps in some order — 10 steps total. Step 2 — Choose positions of the R-steps: C(10,7). Step 3 — = 120.",
+      "difficulty_tier": "medium",
+      "irt_b": 1.0,
+      "difficulty_score": 130,
+      "visual_svg": "",
+      "marks": 3,
+      "subtopic": "Lattice paths & points",
+      "area": "Combinatorial Geometry",
+      "year": "2026-27 (predicted)",
+      "km_level": "L5",
+      "km_pillar": "GEO",
+      "km_topic": "combinatorial_geometry",
+      "km_topic_display": "Combinatorial Geometry"
+    },
+    {
+      "id": "KM-L5-GEO-0205",
+      "legacy_id": "CG26-005",
+      "stem": "How many monotone lattice paths from (0,0) to (6,6) AVOID the point (3,3)?",
+      "choices": [],
+      "correct_answer": 524,
+      "correct_value": "524",
+      "interaction_mode": "integer",
+      "hint": {
+        "level_0": "Count all paths, then subtract those that pass through the forbidden point — and a path through it splits into two independent halves."
+      },
+      "solution_steps": [
+        "All paths: C(12,6) = 924.",
+        "Through (3,3): C(6,3)·C(6,3) = 400.",
+        "924 − 400 = 524."
+      ],
+      "solution": "Step 1 — All paths: C(12,6) = 924. Step 2 — Through (3,3): C(6,3)·C(6,3) = 400. Step 3 — 924 − 400 = 524.",
+      "difficulty_tier": "hard",
+      "irt_b": 2.0,
+      "difficulty_score": 200,
+      "visual_svg": "",
+      "marks": 5,
+      "subtopic": "Lattice paths & points",
+      "area": "Combinatorial Geometry",
+      "year": "2026-27 (predicted)",
+      "km_level": "L5",
+      "km_pillar": "GEO",
+      "km_topic": "combinatorial_geometry",
+      "km_topic_display": "Combinatorial Geometry"
+    },
+    {
+      "id": "KM-L5-GEO-0206",
+      "legacy_id": "CG26-006",
+      "stem": "How many monotone lattice paths from (0,0) to (5,5) AVOID the point (2,2)?",
+      "choices": [],
+      "correct_answer": 132,
+      "correct_value": "132",
+      "interaction_mode": "integer",
+      "hint": {
+        "level_0": "Count all paths, then subtract those that pass through the forbidden point — and a path through it splits into two independent halves."
+      },
+      "solution_steps": [
+        "All paths: C(10,5) = 252.",
+        "Through (2,2): C(4,2)·C(6,3) = 120.",
+        "252 − 120 = 132."
+      ],
+      "solution": "Step 1 — All paths: C(10,5) = 252. Step 2 — Through (2,2): C(4,2)·C(6,3) = 120. Step 3 — 252 − 120 = 132.",
+      "difficulty_tier": "hard",
+      "irt_b": 2.0,
+      "difficulty_score": 200,
+      "visual_svg": "",
+      "marks": 5,
+      "subtopic": "Lattice paths & points",
+      "area": "Combinatorial Geometry",
+      "year": "2026-27 (predicted)",
+      "km_level": "L5",
+      "km_pillar": "GEO",
+      "km_topic": "combinatorial_geometry",
+      "km_topic_display": "Combinatorial Geometry"
+    },
+    {
+      "id": "KM-L5-GEO-0207",
+      "legacy_id": "CG26-007",
+      "stem": "How many monotone lattice paths from (0,0) to (7,4) AVOID the point (3,2)?",
+      "choices": [],
+      "correct_answer": 180,
+      "correct_value": "180",
+      "interaction_mode": "integer",
+      "hint": {
+        "level_0": "Count all paths, then subtract those that pass through the forbidden point — and a path through it splits into two independent halves."
+      },
+      "solution_steps": [
+        "All paths: C(11,7) = 330.",
+        "Through (3,2): C(5,3)·C(6,4) = 150.",
+        "330 − 150 = 180."
+      ],
+      "solution": "Step 1 — All paths: C(11,7) = 330. Step 2 — Through (3,2): C(5,3)·C(6,4) = 150. Step 3 — 330 − 150 = 180.",
+      "difficulty_tier": "hard",
+      "irt_b": 2.0,
+      "difficulty_score": 200,
+      "visual_svg": "",
+      "marks": 5,
+      "subtopic": "Lattice paths & points",
+      "area": "Combinatorial Geometry",
+      "year": "2026-27 (predicted)",
+      "km_level": "L5",
+      "km_pillar": "GEO",
+      "km_topic": "combinatorial_geometry",
+      "km_topic_display": "Combinatorial Geometry"
+    },
+    {
+      "id": "KM-L5-GEO-0208",
+      "legacy_id": "CG26-008",
+      "stem": "How many lattice points lie on the segment from (0,0) to (12,8), including both endpoints?",
+      "choices": [],
+      "correct_answer": 5,
+      "correct_value": "5",
+      "interaction_mode": "integer",
+      "hint": {
+        "level_0": "The number of lattice points on a segment is controlled by the gcd of the coordinate differences — why?"
+      },
+      "solution_steps": [
+        "Interior lattice points = gcd(12,8) − 1; gcd(12,8) = 4.",
+        "Add the 2 endpoints: gcd+1.",
+        "= 5."
+      ],
+      "solution": "Step 1 — Interior lattice points = gcd(12,8) − 1; gcd(12,8) = 4. Step 2 — Add the 2 endpoints: gcd+1. Step 3 — = 5.",
+      "difficulty_tier": "medium",
+      "irt_b": 1.0,
+      "difficulty_score": 130,
+      "visual_svg": "",
+      "marks": 3,
+      "subtopic": "Lattice paths & points",
+      "area": "Combinatorial Geometry",
+      "year": "2026-27 (predicted)",
+      "km_level": "L5",
+      "km_pillar": "GEO",
+      "km_topic": "combinatorial_geometry",
+      "km_topic_display": "Combinatorial Geometry"
+    },
+    {
+      "id": "KM-L5-GEO-0209",
+      "legacy_id": "CG26-009",
+      "stem": "How many lattice points lie on the segment from (0,0) to (15,9), including both endpoints?",
+      "choices": [],
+      "correct_answer": 4,
+      "correct_value": "4",
+      "interaction_mode": "integer",
+      "hint": {
+        "level_0": "The number of lattice points on a segment is controlled by the gcd of the coordinate differences — why?"
+      },
+      "solution_steps": [
+        "Interior lattice points = gcd(15,9) − 1; gcd(15,9) = 3.",
+        "Add the 2 endpoints: gcd+1.",
+        "= 4."
+      ],
+      "solution": "Step 1 — Interior lattice points = gcd(15,9) − 1; gcd(15,9) = 3. Step 2 — Add the 2 endpoints: gcd+1. Step 3 — = 4.",
+      "difficulty_tier": "medium",
+      "irt_b": 1.0,
+      "difficulty_score": 130,
+      "visual_svg": "",
+      "marks": 3,
+      "subtopic": "Lattice paths & points",
+      "area": "Combinatorial Geometry",
+      "year": "2026-27 (predicted)",
+      "km_level": "L5",
+      "km_pillar": "GEO",
+      "km_topic": "combinatorial_geometry",
+      "km_topic_display": "Combinatorial Geometry"
+    },
+    {
+      "id": "KM-L5-GEO-0210",
+      "legacy_id": "CG26-010",
+      "stem": "How many lattice points lie on the segment from (0,0) to (20,30), including both endpoints?",
+      "choices": [],
+      "correct_answer": 11,
+      "correct_value": "11",
+      "interaction_mode": "integer",
+      "hint": {
+        "level_0": "The number of lattice points on a segment is controlled by the gcd of the coordinate differences — why?"
+      },
+      "solution_steps": [
+        "Interior lattice points = gcd(20,30) − 1; gcd(20,30) = 10.",
+        "Add the 2 endpoints: gcd+1.",
+        "= 11."
+      ],
+      "solution": "Step 1 — Interior lattice points = gcd(20,30) − 1; gcd(20,30) = 10. Step 2 — Add the 2 endpoints: gcd+1. Step 3 — = 11.",
+      "difficulty_tier": "medium",
+      "irt_b": 1.0,
+      "difficulty_score": 130,
+      "visual_svg": "",
+      "marks": 3,
+      "subtopic": "Lattice paths & points",
+      "area": "Combinatorial Geometry",
+      "year": "2026-27 (predicted)",
+      "km_level": "L5",
+      "km_pillar": "GEO",
+      "km_topic": "combinatorial_geometry",
+      "km_topic_display": "Combinatorial Geometry"
+    },
+    {
+      "id": "KM-L5-GEO-0211",
+      "legacy_id": "CG26-011",
+      "stem": "How many lattice points lie strictly inside the axis-aligned rectangle with corners (0,0) and (5,7)?",
+      "choices": [],
+      "correct_answer": 24,
+      "correct_value": "24",
+      "interaction_mode": "integer",
+      "hint": {
+        "level_0": "Interior points have each coordinate strictly between the edges — how many choices per axis?"
+      },
+      "solution_steps": [
+        "x ∈ {1,…,4} (4 choices), y ∈ {1,…,6} (6 choices).",
+        "(5−1)(7−1) = 24."
+      ],
+      "solution": "Step 1 — x ∈ {1,…,4} (4 choices), y ∈ {1,…,6} (6 choices). Step 2 — (5−1)(7−1) = 24.",
+      "difficulty_tier": "easy",
+      "irt_b": 0.0,
+      "difficulty_score": 60,
+      "visual_svg": "",
+      "marks": 2,
+      "subtopic": "Lattice paths & points",
+      "area": "Combinatorial Geometry",
+      "year": "2026-27 (predicted)",
+      "km_level": "L5",
+      "km_pillar": "GEO",
+      "km_topic": "combinatorial_geometry",
+      "km_topic_display": "Combinatorial Geometry"
+    },
+    {
+      "id": "KM-L5-GEO-0212",
+      "legacy_id": "CG26-012",
+      "stem": "How many lattice points lie strictly inside the axis-aligned rectangle with corners (0,0) and (8,6)?",
+      "choices": [],
+      "correct_answer": 35,
+      "correct_value": "35",
+      "interaction_mode": "integer",
+      "hint": {
+        "level_0": "Interior points have each coordinate strictly between the edges — how many choices per axis?"
+      },
+      "solution_steps": [
+        "x ∈ {1,…,7} (7 choices), y ∈ {1,…,5} (5 choices).",
+        "(8−1)(6−1) = 35."
+      ],
+      "solution": "Step 1 — x ∈ {1,…,7} (7 choices), y ∈ {1,…,5} (5 choices). Step 2 — (8−1)(6−1) = 35.",
+      "difficulty_tier": "easy",
+      "irt_b": 0.0,
+      "difficulty_score": 60,
+      "visual_svg": "",
+      "marks": 2,
+      "subtopic": "Lattice paths & points",
+      "area": "Combinatorial Geometry",
+      "year": "2026-27 (predicted)",
+      "km_level": "L5",
+      "km_pillar": "GEO",
+      "km_topic": "combinatorial_geometry",
+      "km_topic_display": "Combinatorial Geometry"
+    },
+    {
+      "id": "KM-L5-GEO-0213",
+      "legacy_id": "CG26-013",
+      "stem": "How many diagonals does a convex 8-gon have?",
+      "choices": [],
+      "correct_answer": 20,
+      "correct_value": "20",
+      "interaction_mode": "integer",
+      "hint": {
+        "level_0": "Each vertex connects to all others except itself and its two neighbours — then correct for double counting."
+      },
+      "solution_steps": [
+        "Each of 8 vertices has 8−3 diagonals; that counts each twice.",
+        "n(n−3)/2 = 8·5/2.",
+        "= 20."
+      ],
+      "solution": "Step 1 — Each of 8 vertices has 8−3 diagonals; that counts each twice. Step 2 — n(n−3)/2 = 8·5/2. Step 3 — = 20.",
+      "difficulty_tier": "easy",
+      "irt_b": 0.0,
+      "difficulty_score": 60,
+      "visual_svg": "",
+      "marks": 2,
+      "subtopic": "Polygon diagonals & triangulations",
+      "area": "Combinatorial Geometry",
+      "year": "2026-27 (predicted)",
+      "km_level": "L5",
+      "km_pillar": "GEO",
+      "km_topic": "combinatorial_geometry",
+      "km_topic_display": "Combinatorial Geometry"
+    },
+    {
+      "id": "KM-L5-GEO-0214",
+      "legacy_id": "CG26-014",
+      "stem": "How many diagonals does a convex 10-gon have?",
+      "choices": [],
+      "correct_answer": 35,
+      "correct_value": "35",
+      "interaction_mode": "integer",
+      "hint": {
+        "level_0": "Each vertex connects to all others except itself and its two neighbours — then correct for double counting."
+      },
+      "solution_steps": [
+        "Each of 10 vertices has 10−3 diagonals; that counts each twice.",
+        "n(n−3)/2 = 10·7/2.",
+        "= 35."
+      ],
+      "solution": "Step 1 — Each of 10 vertices has 10−3 diagonals; that counts each twice. Step 2 — n(n−3)/2 = 10·7/2. Step 3 — = 35.",
+      "difficulty_tier": "easy",
+      "irt_b": 0.0,
+      "difficulty_score": 60,
+      "visual_svg": "",
+      "marks": 2,
+      "subtopic": "Polygon diagonals & triangulations",
+      "area": "Combinatorial Geometry",
+      "year": "2026-27 (predicted)",
+      "km_level": "L5",
+      "km_pillar": "GEO",
+      "km_topic": "combinatorial_geometry",
+      "km_topic_display": "Combinatorial Geometry"
+    },
+    {
+      "id": "KM-L5-GEO-0215",
+      "legacy_id": "CG26-015",
+      "stem": "How many diagonals does a convex 12-gon have?",
+      "choices": [],
+      "correct_answer": 54,
+      "correct_value": "54",
+      "interaction_mode": "integer",
+      "hint": {
+        "level_0": "Each vertex connects to all others except itself and its two neighbours — then correct for double counting."
+      },
+      "solution_steps": [
+        "Each of 12 vertices has 12−3 diagonals; that counts each twice.",
+        "n(n−3)/2 = 12·9/2.",
+        "= 54."
+      ],
+      "solution": "Step 1 — Each of 12 vertices has 12−3 diagonals; that counts each twice. Step 2 — n(n−3)/2 = 12·9/2. Step 3 — = 54.",
+      "difficulty_tier": "easy",
+      "irt_b": 0.0,
+      "difficulty_score": 60,
+      "visual_svg": "",
+      "marks": 2,
+      "subtopic": "Polygon diagonals & triangulations",
+      "area": "Combinatorial Geometry",
+      "year": "2026-27 (predicted)",
+      "km_level": "L5",
+      "km_pillar": "GEO",
+      "km_topic": "combinatorial_geometry",
+      "km_topic_display": "Combinatorial Geometry"
+    },
+    {
+      "id": "KM-L5-GEO-0216",
+      "legacy_id": "CG26-016",
+      "stem": "In a convex 6-gon with no three diagonals concurrent, how many interior points are diagonal intersections?",
+      "choices": [],
+      "correct_answer": 15,
+      "correct_value": "15",
+      "interaction_mode": "integer",
+      "hint": {
+        "level_0": "Each interior crossing is made by two diagonals, i.e. determined by how many of the polygon's vertices?"
+      },
+      "solution_steps": [
+        "Two crossing diagonals use 4 distinct vertices, and any 4 vertices give exactly one crossing.",
+        "So the count is C(6,4).",
+        "= 15."
+      ],
+      "solution": "Step 1 — Two crossing diagonals use 4 distinct vertices, and any 4 vertices give exactly one crossing. Step 2 — So the count is C(6,4). Step 3 — = 15.",
+      "difficulty_tier": "hard",
+      "irt_b": 2.0,
+      "difficulty_score": 200,
+      "visual_svg": "",
+      "marks": 5,
+      "subtopic": "Polygon diagonals & triangulations",
+      "area": "Combinatorial Geometry",
+      "year": "2026-27 (predicted)",
+      "km_level": "L5",
+      "km_pillar": "GEO",
+      "km_topic": "combinatorial_geometry",
+      "km_topic_display": "Combinatorial Geometry"
+    },
+    {
+      "id": "KM-L5-GEO-0217",
+      "legacy_id": "CG26-017",
+      "stem": "In a convex 7-gon with no three diagonals concurrent, how many interior points are diagonal intersections?",
+      "choices": [],
+      "correct_answer": 35,
+      "correct_value": "35",
+      "interaction_mode": "integer",
+      "hint": {
+        "level_0": "Each interior crossing is made by two diagonals, i.e. determined by how many of the polygon's vertices?"
+      },
+      "solution_steps": [
+        "Two crossing diagonals use 4 distinct vertices, and any 4 vertices give exactly one crossing.",
+        "So the count is C(7,4).",
+        "= 35."
+      ],
+      "solution": "Step 1 — Two crossing diagonals use 4 distinct vertices, and any 4 vertices give exactly one crossing. Step 2 — So the count is C(7,4). Step 3 — = 35.",
+      "difficulty_tier": "hard",
+      "irt_b": 2.0,
+      "difficulty_score": 200,
+      "visual_svg": "",
+      "marks": 5,
+      "subtopic": "Polygon diagonals & triangulations",
+      "area": "Combinatorial Geometry",
+      "year": "2026-27 (predicted)",
+      "km_level": "L5",
+      "km_pillar": "GEO",
+      "km_topic": "combinatorial_geometry",
+      "km_topic_display": "Combinatorial Geometry"
+    },
+    {
+      "id": "KM-L5-GEO-0218",
+      "legacy_id": "CG26-018",
+      "stem": "In a convex 8-gon with no three diagonals concurrent, how many interior points are diagonal intersections?",
+      "choices": [],
+      "correct_answer": 70,
+      "correct_value": "70",
+      "interaction_mode": "integer",
+      "hint": {
+        "level_0": "Each interior crossing is made by two diagonals, i.e. determined by how many of the polygon's vertices?"
+      },
+      "solution_steps": [
+        "Two crossing diagonals use 4 distinct vertices, and any 4 vertices give exactly one crossing.",
+        "So the count is C(8,4).",
+        "= 70."
+      ],
+      "solution": "Step 1 — Two crossing diagonals use 4 distinct vertices, and any 4 vertices give exactly one crossing. Step 2 — So the count is C(8,4). Step 3 — = 70.",
+      "difficulty_tier": "hard",
+      "irt_b": 2.0,
+      "difficulty_score": 200,
+      "visual_svg": "",
+      "marks": 5,
+      "subtopic": "Polygon diagonals & triangulations",
+      "area": "Combinatorial Geometry",
+      "year": "2026-27 (predicted)",
+      "km_level": "L5",
+      "km_pillar": "GEO",
+      "km_topic": "combinatorial_geometry",
+      "km_topic_display": "Combinatorial Geometry"
+    },
+    {
+      "id": "KM-L5-GEO-0219",
+      "legacy_id": "CG26-019",
+      "stem": "In how many ways can a convex 6-gon be cut into triangles by non-crossing diagonals (triangulations)?",
+      "choices": [],
+      "correct_answer": 14,
+      "correct_value": "14",
+      "interaction_mode": "integer",
+      "hint": {
+        "level_0": "The number of triangulations of a convex polygon is a Catalan number — which index goes with an n-gon?"
+      },
+      "solution_steps": [
+        "A convex (n)-gon has C_(n−2) triangulations.",
+        "$C_{4}$ = Catalan(4).",
+        "= 14."
+      ],
+      "solution": "Step 1 — A convex (n)-gon has C_(n−2) triangulations. Step 2 — C_4 = Catalan(4). Step 3 — = 14.",
+      "difficulty_tier": "hard",
+      "irt_b": 2.0,
+      "difficulty_score": 200,
+      "visual_svg": "",
+      "marks": 5,
+      "subtopic": "Polygon diagonals & triangulations",
+      "area": "Combinatorial Geometry",
+      "year": "2026-27 (predicted)",
+      "km_level": "L5",
+      "km_pillar": "GEO",
+      "km_topic": "combinatorial_geometry",
+      "km_topic_display": "Combinatorial Geometry"
+    },
+    {
+      "id": "KM-L5-GEO-0220",
+      "legacy_id": "CG26-020",
+      "stem": "In how many ways can a convex 8-gon be cut into triangles by non-crossing diagonals (triangulations)?",
+      "choices": [],
+      "correct_answer": 132,
+      "correct_value": "132",
+      "interaction_mode": "integer",
+      "hint": {
+        "level_0": "The number of triangulations of a convex polygon is a Catalan number — which index goes with an n-gon?"
+      },
+      "solution_steps": [
+        "A convex (n)-gon has C_(n−2) triangulations.",
+        "$C_{6}$ = Catalan(6).",
+        "= 132."
+      ],
+      "solution": "Step 1 — A convex (n)-gon has C_(n−2) triangulations. Step 2 — C_6 = Catalan(6). Step 3 — = 132.",
+      "difficulty_tier": "hard",
+      "irt_b": 2.0,
+      "difficulty_score": 200,
+      "visual_svg": "",
+      "marks": 5,
+      "subtopic": "Polygon diagonals & triangulations",
+      "area": "Combinatorial Geometry",
+      "year": "2026-27 (predicted)",
+      "km_level": "L5",
+      "km_pillar": "GEO",
+      "km_topic": "combinatorial_geometry",
+      "km_topic_display": "Combinatorial Geometry"
+    },
+    {
+      "id": "KM-L5-GEO-0221",
+      "legacy_id": "CG26-021",
+      "stem": "Given 7 points in general position (no 3 collinear), how many triangles can be formed with vertices among them?",
+      "choices": [],
+      "correct_answer": 35,
+      "correct_value": "35",
+      "interaction_mode": "integer",
+      "hint": {
+        "level_0": "A triangle is just an unordered choice of how many points?"
+      },
+      "solution_steps": [
+        "Any 3 of the 7 points form a triangle (no 3 collinear).",
+        "C(7,3).",
+        "= 35."
+      ],
+      "solution": "Step 1 — Any 3 of the 7 points form a triangle (no 3 collinear). Step 2 — C(7,3). Step 3 — = 35.",
+      "difficulty_tier": "easy",
+      "irt_b": 0.0,
+      "difficulty_score": 60,
+      "visual_svg": "",
+      "marks": 2,
+      "subtopic": "Polygon diagonals & triangulations",
+      "area": "Combinatorial Geometry",
+      "year": "2026-27 (predicted)",
+      "km_level": "L5",
+      "km_pillar": "GEO",
+      "km_topic": "combinatorial_geometry",
+      "km_topic_display": "Combinatorial Geometry"
+    },
+    {
+      "id": "KM-L5-GEO-0222",
+      "legacy_id": "CG26-022",
+      "stem": "Given 9 points in general position (no 3 collinear), how many triangles can be formed with vertices among them?",
+      "choices": [],
+      "correct_answer": 84,
+      "correct_value": "84",
+      "interaction_mode": "integer",
+      "hint": {
+        "level_0": "A triangle is just an unordered choice of how many points?"
+      },
+      "solution_steps": [
+        "Any 3 of the 9 points form a triangle (no 3 collinear).",
+        "C(9,3).",
+        "= 84."
+      ],
+      "solution": "Step 1 — Any 3 of the 9 points form a triangle (no 3 collinear). Step 2 — C(9,3). Step 3 — = 84.",
+      "difficulty_tier": "easy",
+      "irt_b": 0.0,
+      "difficulty_score": 60,
+      "visual_svg": "",
+      "marks": 2,
+      "subtopic": "Polygon diagonals & triangulations",
+      "area": "Combinatorial Geometry",
+      "year": "2026-27 (predicted)",
+      "km_level": "L5",
+      "km_pillar": "GEO",
+      "km_topic": "combinatorial_geometry",
+      "km_topic_display": "Combinatorial Geometry"
+    },
+    {
+      "id": "KM-L5-GEO-0223",
+      "legacy_id": "CG26-023",
+      "stem": "Into how many regions do all the diagonals of a convex 5-gon (no three concurrent) divide its interior?",
+      "choices": [],
+      "correct_answer": 11,
+      "correct_value": "11",
+      "interaction_mode": "integer",
+      "hint": {
+        "level_0": "Start from 1 region and add one each time a diagonal enters, plus one for every interior crossing (Euler's idea). How many crossings are there?"
+      },
+      "solution_steps": [
+        "Regions = 1 + (diagonals) + (interior crossings), which simplifies to C(n,4)+C(n,2)−n+1.",
+        "= C(5,4)+C(5,2)−5+1.",
+        "= 11."
+      ],
+      "solution": "Step 1 — Regions = 1 + (diagonals) + (interior crossings), which simplifies to C(n,4)+C(n,2)−n+1. Step 2 — = C(5,4)+C(5,2)−5+1. Step 3 — = 11.",
+      "difficulty_tier": "hard",
+      "irt_b": 2.0,
+      "difficulty_score": 200,
+      "visual_svg": "",
+      "marks": 5,
+      "subtopic": "Regions from lines & chords",
+      "area": "Combinatorial Geometry",
+      "year": "2026-27 (predicted)",
+      "km_level": "L5",
+      "km_pillar": "GEO",
+      "km_topic": "combinatorial_geometry",
+      "km_topic_display": "Combinatorial Geometry"
+    },
+    {
+      "id": "KM-L5-GEO-0224",
+      "legacy_id": "CG26-024",
+      "stem": "Into how many regions do all the diagonals of a convex 6-gon (no three concurrent) divide its interior?",
+      "choices": [],
+      "correct_answer": 25,
+      "correct_value": "25",
+      "interaction_mode": "integer",
+      "hint": {
+        "level_0": "Start from 1 region and add one each time a diagonal enters, plus one for every interior crossing (Euler's idea). How many crossings are there?"
+      },
+      "solution_steps": [
+        "Regions = 1 + (diagonals) + (interior crossings), which simplifies to C(n,4)+C(n,2)−n+1.",
+        "= C(6,4)+C(6,2)−6+1.",
+        "= 25."
+      ],
+      "solution": "Step 1 — Regions = 1 + (diagonals) + (interior crossings), which simplifies to C(n,4)+C(n,2)−n+1. Step 2 — = C(6,4)+C(6,2)−6+1. Step 3 — = 25.",
+      "difficulty_tier": "hard",
+      "irt_b": 2.0,
+      "difficulty_score": 200,
+      "visual_svg": "",
+      "marks": 5,
+      "subtopic": "Regions from lines & chords",
+      "area": "Combinatorial Geometry",
+      "year": "2026-27 (predicted)",
+      "km_level": "L5",
+      "km_pillar": "GEO",
+      "km_topic": "combinatorial_geometry",
+      "km_topic_display": "Combinatorial Geometry"
+    },
+    {
+      "id": "KM-L5-GEO-0225",
+      "legacy_id": "CG26-025",
+      "stem": "Into how many regions do all the diagonals of a convex 7-gon (no three concurrent) divide its interior?",
+      "choices": [],
+      "correct_answer": 50,
+      "correct_value": "50",
+      "interaction_mode": "integer",
+      "hint": {
+        "level_0": "Start from 1 region and add one each time a diagonal enters, plus one for every interior crossing (Euler's idea). How many crossings are there?"
+      },
+      "solution_steps": [
+        "Regions = 1 + (diagonals) + (interior crossings), which simplifies to C(n,4)+C(n,2)−n+1.",
+        "= C(7,4)+C(7,2)−7+1.",
+        "= 50."
+      ],
+      "solution": "Step 1 — Regions = 1 + (diagonals) + (interior crossings), which simplifies to C(n,4)+C(n,2)−n+1. Step 2 — = C(7,4)+C(7,2)−7+1. Step 3 — = 50.",
+      "difficulty_tier": "hard",
+      "irt_b": 2.0,
+      "difficulty_score": 200,
+      "visual_svg": "",
+      "marks": 5,
+      "subtopic": "Regions from lines & chords",
+      "area": "Combinatorial Geometry",
+      "year": "2026-27 (predicted)",
+      "km_level": "L5",
+      "km_pillar": "GEO",
+      "km_topic": "combinatorial_geometry",
+      "km_topic_display": "Combinatorial Geometry"
+    },
+    {
+      "id": "KM-L5-GEO-0226",
+      "legacy_id": "CG26-026",
+      "stem": "What is the maximum number of regions the plane can be divided into by 5 straight lines?",
+      "choices": [],
+      "correct_answer": 16,
+      "correct_value": "16",
+      "interaction_mode": "integer",
+      "hint": {
+        "level_0": "Each new line, if it crosses all previous ones, adds as many regions as the number of times it is cut, plus one. What's the running total?"
+      },
+      "solution_steps": [
+        "The k-th line adds k regions; total = 1 + (1+2+…+5).",
+        "1 + n(n+1)/2 = 1 + 5·6/2.",
+        "= 16."
+      ],
+      "solution": "Step 1 — The k-th line adds k regions; total = 1 + (1+2+…+5). Step 2 — 1 + n(n+1)/2 = 1 + 5·6/2. Step 3 — = 16.",
+      "difficulty_tier": "medium",
+      "irt_b": 1.0,
+      "difficulty_score": 130,
+      "visual_svg": "",
+      "marks": 3,
+      "subtopic": "Regions from lines & chords",
+      "area": "Combinatorial Geometry",
+      "year": "2026-27 (predicted)",
+      "km_level": "L5",
+      "km_pillar": "GEO",
+      "km_topic": "combinatorial_geometry",
+      "km_topic_display": "Combinatorial Geometry"
+    },
+    {
+      "id": "KM-L5-GEO-0227",
+      "legacy_id": "CG26-027",
+      "stem": "What is the maximum number of regions the plane can be divided into by 8 straight lines?",
+      "choices": [],
+      "correct_answer": 37,
+      "correct_value": "37",
+      "interaction_mode": "integer",
+      "hint": {
+        "level_0": "Each new line, if it crosses all previous ones, adds as many regions as the number of times it is cut, plus one. What's the running total?"
+      },
+      "solution_steps": [
+        "The k-th line adds k regions; total = 1 + (1+2+…+8).",
+        "1 + n(n+1)/2 = 1 + 8·9/2.",
+        "= 37."
+      ],
+      "solution": "Step 1 — The k-th line adds k regions; total = 1 + (1+2+…+8). Step 2 — 1 + n(n+1)/2 = 1 + 8·9/2. Step 3 — = 37.",
+      "difficulty_tier": "medium",
+      "irt_b": 1.0,
+      "difficulty_score": 130,
+      "visual_svg": "",
+      "marks": 3,
+      "subtopic": "Regions from lines & chords",
+      "area": "Combinatorial Geometry",
+      "year": "2026-27 (predicted)",
+      "km_level": "L5",
+      "km_pillar": "GEO",
+      "km_topic": "combinatorial_geometry",
+      "km_topic_display": "Combinatorial Geometry"
+    },
+    {
+      "id": "KM-L5-GEO-0228",
+      "legacy_id": "CG26-028",
+      "stem": "What is the maximum number of regions the plane can be divided into by 10 straight lines?",
+      "choices": [],
+      "correct_answer": 56,
+      "correct_value": "56",
+      "interaction_mode": "integer",
+      "hint": {
+        "level_0": "Each new line, if it crosses all previous ones, adds as many regions as the number of times it is cut, plus one. What's the running total?"
+      },
+      "solution_steps": [
+        "The k-th line adds k regions; total = 1 + (1+2+…+10).",
+        "1 + n(n+1)/2 = 1 + 10·11/2.",
+        "= 56."
+      ],
+      "solution": "Step 1 — The k-th line adds k regions; total = 1 + (1+2+…+10). Step 2 — 1 + n(n+1)/2 = 1 + 10·11/2. Step 3 — = 56.",
+      "difficulty_tier": "medium",
+      "irt_b": 1.0,
+      "difficulty_score": 130,
+      "visual_svg": "",
+      "marks": 3,
+      "subtopic": "Regions from lines & chords",
+      "area": "Combinatorial Geometry",
+      "year": "2026-27 (predicted)",
+      "km_level": "L5",
+      "km_pillar": "GEO",
+      "km_topic": "combinatorial_geometry",
+      "km_topic_display": "Combinatorial Geometry"
+    },
+    {
+      "id": "KM-L5-GEO-0229",
+      "legacy_id": "CG26-029",
+      "stem": "What is the maximum number of regions a circle's interior can be divided into by 4 chords (in general position)?",
+      "choices": [],
+      "correct_answer": 11,
+      "correct_value": "11",
+      "interaction_mode": "integer",
+      "hint": {
+        "level_0": "Begin with 1 region; each chord adds 1, plus one extra for every interior crossing it makes. How many crossings can {n} chords have?"
+      },
+      "solution_steps": [
+        "Regions = 1 + (chords) + (crossings) = 1 + 4 + C(4,2).",
+        "= 1 + 4 + 6.",
+        "= 11."
+      ],
+      "solution": "Step 1 — Regions = 1 + (chords) + (crossings) = 1 + 4 + C(4,2). Step 2 — = 1 + 4 + 6. Step 3 — = 11.",
+      "difficulty_tier": "medium",
+      "irt_b": 1.0,
+      "difficulty_score": 130,
+      "visual_svg": "",
+      "marks": 3,
+      "subtopic": "Regions from lines & chords",
+      "area": "Combinatorial Geometry",
+      "year": "2026-27 (predicted)",
+      "km_level": "L5",
+      "km_pillar": "GEO",
+      "km_topic": "combinatorial_geometry",
+      "km_topic_display": "Combinatorial Geometry"
+    },
+    {
+      "id": "KM-L5-GEO-0230",
+      "legacy_id": "CG26-030",
+      "stem": "What is the maximum number of regions a circle's interior can be divided into by 6 chords (in general position)?",
+      "choices": [],
+      "correct_answer": 22,
+      "correct_value": "22",
+      "interaction_mode": "integer",
+      "hint": {
+        "level_0": "Begin with 1 region; each chord adds 1, plus one extra for every interior crossing it makes. How many crossings can {n} chords have?"
+      },
+      "solution_steps": [
+        "Regions = 1 + (chords) + (crossings) = 1 + 6 + C(6,2).",
+        "= 1 + 6 + 15.",
+        "= 22."
+      ],
+      "solution": "Step 1 — Regions = 1 + (chords) + (crossings) = 1 + 6 + C(6,2). Step 2 — = 1 + 6 + 15. Step 3 — = 22.",
+      "difficulty_tier": "medium",
+      "irt_b": 1.0,
+      "difficulty_score": 130,
+      "visual_svg": "",
+      "marks": 3,
+      "subtopic": "Regions from lines & chords",
+      "area": "Combinatorial Geometry",
+      "year": "2026-27 (predicted)",
+      "km_level": "L5",
+      "km_pillar": "GEO",
+      "km_topic": "combinatorial_geometry",
+      "km_topic_display": "Combinatorial Geometry"
+    },
+    {
+      "id": "KM-L5-GEO-0231",
+      "legacy_id": "CG26-031",
+      "stem": "How many rectangles (axis-aligned) are there in a grid of 3×4 unit cells?",
+      "choices": [],
+      "correct_answer": 60,
+      "correct_value": "60",
+      "interaction_mode": "integer",
+      "hint": {
+        "level_0": "A rectangle is fixed by choosing two of the vertical grid lines and two of the horizontal grid lines — how many of each?"
+      },
+      "solution_steps": [
+        "There are 4 vertical and 5 horizontal lines.",
+        "Choose 2 of each: C(4,2)·C(5,2).",
+        "= 60."
+      ],
+      "solution": "Step 1 — There are 4 vertical and 5 horizontal lines. Step 2 — Choose 2 of each: C(4,2)·C(5,2). Step 3 — = 60.",
+      "difficulty_tier": "medium",
+      "irt_b": 1.0,
+      "difficulty_score": 130,
+      "visual_svg": "",
+      "marks": 3,
+      "subtopic": "Counting figures on grids",
+      "area": "Combinatorial Geometry",
+      "year": "2026-27 (predicted)",
+      "km_level": "L5",
+      "km_pillar": "GEO",
+      "km_topic": "combinatorial_geometry",
+      "km_topic_display": "Combinatorial Geometry"
+    },
+    {
+      "id": "KM-L5-GEO-0232",
+      "legacy_id": "CG26-032",
+      "stem": "How many rectangles (axis-aligned) are there in a grid of 4×5 unit cells?",
+      "choices": [],
+      "correct_answer": 150,
+      "correct_value": "150",
+      "interaction_mode": "integer",
+      "hint": {
+        "level_0": "A rectangle is fixed by choosing two of the vertical grid lines and two of the horizontal grid lines — how many of each?"
+      },
+      "solution_steps": [
+        "There are 5 vertical and 6 horizontal lines.",
+        "Choose 2 of each: C(5,2)·C(6,2).",
+        "= 150."
+      ],
+      "solution": "Step 1 — There are 5 vertical and 6 horizontal lines. Step 2 — Choose 2 of each: C(5,2)·C(6,2). Step 3 — = 150.",
+      "difficulty_tier": "medium",
+      "irt_b": 1.0,
+      "difficulty_score": 130,
+      "visual_svg": "",
+      "marks": 3,
+      "subtopic": "Counting figures on grids",
+      "area": "Combinatorial Geometry",
+      "year": "2026-27 (predicted)",
+      "km_level": "L5",
+      "km_pillar": "GEO",
+      "km_topic": "combinatorial_geometry",
+      "km_topic_display": "Combinatorial Geometry"
+    },
+    {
+      "id": "KM-L5-GEO-0233",
+      "legacy_id": "CG26-033",
+      "stem": "How many rectangles (axis-aligned) are there in a grid of 2×6 unit cells?",
+      "choices": [],
+      "correct_answer": 63,
+      "correct_value": "63",
+      "interaction_mode": "integer",
+      "hint": {
+        "level_0": "A rectangle is fixed by choosing two of the vertical grid lines and two of the horizontal grid lines — how many of each?"
+      },
+      "solution_steps": [
+        "There are 3 vertical and 7 horizontal lines.",
+        "Choose 2 of each: C(3,2)·C(7,2).",
+        "= 63."
+      ],
+      "solution": "Step 1 — There are 3 vertical and 7 horizontal lines. Step 2 — Choose 2 of each: C(3,2)·C(7,2). Step 3 — = 63.",
+      "difficulty_tier": "medium",
+      "irt_b": 1.0,
+      "difficulty_score": 130,
+      "visual_svg": "",
+      "marks": 3,
+      "subtopic": "Counting figures on grids",
+      "area": "Combinatorial Geometry",
+      "year": "2026-27 (predicted)",
+      "km_level": "L5",
+      "km_pillar": "GEO",
+      "km_topic": "combinatorial_geometry",
+      "km_topic_display": "Combinatorial Geometry"
+    },
+    {
+      "id": "KM-L5-GEO-0234",
+      "legacy_id": "CG26-034",
+      "stem": "How many squares (of all sizes) are there in an 3×3 grid of unit cells?",
+      "choices": [],
+      "correct_answer": 14,
+      "correct_value": "14",
+      "interaction_mode": "integer",
+      "hint": {
+        "level_0": "Count k×k squares separately for each side length k — how many positions does a k×k square have?"
+      },
+      "solution_steps": [
+        "A k×k square fits in (3−k+1)² positions.",
+        "Sum over k=1..3: Σ (3−k+1)².",
+        "= 14."
+      ],
+      "solution": "Step 1 — A k×k square fits in (3−k+1)² positions. Step 2 — Sum over k=1..3: Σ (3−k+1)². Step 3 — = 14.",
+      "difficulty_tier": "medium",
+      "irt_b": 1.0,
+      "difficulty_score": 130,
+      "visual_svg": "",
+      "marks": 3,
+      "subtopic": "Counting figures on grids",
+      "area": "Combinatorial Geometry",
+      "year": "2026-27 (predicted)",
+      "km_level": "L5",
+      "km_pillar": "GEO",
+      "km_topic": "combinatorial_geometry",
+      "km_topic_display": "Combinatorial Geometry"
+    },
+    {
+      "id": "KM-L5-GEO-0235",
+      "legacy_id": "CG26-035",
+      "stem": "How many squares (of all sizes) are there in an 4×4 grid of unit cells?",
+      "choices": [],
+      "correct_answer": 30,
+      "correct_value": "30",
+      "interaction_mode": "integer",
+      "hint": {
+        "level_0": "Count k×k squares separately for each side length k — how many positions does a k×k square have?"
+      },
+      "solution_steps": [
+        "A k×k square fits in (4−k+1)² positions.",
+        "Sum over k=1..4: Σ (4−k+1)².",
+        "= 30."
+      ],
+      "solution": "Step 1 — A k×k square fits in (4−k+1)² positions. Step 2 — Sum over k=1..4: Σ (4−k+1)². Step 3 — = 30.",
+      "difficulty_tier": "medium",
+      "irt_b": 1.0,
+      "difficulty_score": 130,
+      "visual_svg": "",
+      "marks": 3,
+      "subtopic": "Counting figures on grids",
+      "area": "Combinatorial Geometry",
+      "year": "2026-27 (predicted)",
+      "km_level": "L5",
+      "km_pillar": "GEO",
+      "km_topic": "combinatorial_geometry",
+      "km_topic_display": "Combinatorial Geometry"
+    },
+    {
+      "id": "KM-L5-GEO-0236",
+      "legacy_id": "CG26-036",
+      "stem": "How many squares (of all sizes) are there in an 5×5 grid of unit cells?",
+      "choices": [],
+      "correct_answer": 55,
+      "correct_value": "55",
+      "interaction_mode": "integer",
+      "hint": {
+        "level_0": "Count k×k squares separately for each side length k — how many positions does a k×k square have?"
+      },
+      "solution_steps": [
+        "A k×k square fits in (5−k+1)² positions.",
+        "Sum over k=1..5: Σ (5−k+1)².",
+        "= 55."
+      ],
+      "solution": "Step 1 — A k×k square fits in (5−k+1)² positions. Step 2 — Sum over k=1..5: Σ (5−k+1)². Step 3 — = 55.",
+      "difficulty_tier": "medium",
+      "irt_b": 1.0,
+      "difficulty_score": 130,
+      "visual_svg": "",
+      "marks": 3,
+      "subtopic": "Counting figures on grids",
+      "area": "Combinatorial Geometry",
+      "year": "2026-27 (predicted)",
+      "km_level": "L5",
+      "km_pillar": "GEO",
+      "km_topic": "combinatorial_geometry",
+      "km_topic_display": "Combinatorial Geometry"
+    },
+    {
+      "id": "KM-L5-GEO-0237",
+      "legacy_id": "CG26-037",
+      "stem": "There are 4 points on one line and 5 points on a parallel line. How many triangles have their vertices among these points?",
+      "choices": [],
+      "correct_answer": 70,
+      "correct_value": "70",
+      "interaction_mode": "integer",
+      "hint": {
+        "level_0": "A triangle needs vertices not all on one line — so it takes 2 points from one line and 1 from the other. Count both ways."
+      },
+      "solution_steps": [
+        "Either 1 point from line A and 2 from line B, or 2 from A and 1 from B.",
+        "4·C(5,2) + 5·C(4,2).",
+        "= 70."
+      ],
+      "solution": "Step 1 — Either 1 point from line A and 2 from line B, or 2 from A and 1 from B. Step 2 — 4·C(5,2) + 5·C(4,2). Step 3 — = 70.",
+      "difficulty_tier": "hard",
+      "irt_b": 2.0,
+      "difficulty_score": 200,
+      "visual_svg": "",
+      "marks": 5,
+      "subtopic": "Counting figures on grids",
+      "area": "Combinatorial Geometry",
+      "year": "2026-27 (predicted)",
+      "km_level": "L5",
+      "km_pillar": "GEO",
+      "km_topic": "combinatorial_geometry",
+      "km_topic_display": "Combinatorial Geometry"
+    },
+    {
+      "id": "KM-L5-GEO-0238",
+      "legacy_id": "CG26-038",
+      "stem": "There are 3 points on one line and 6 points on a parallel line. How many triangles have their vertices among these points?",
+      "choices": [],
+      "correct_answer": 63,
+      "correct_value": "63",
+      "interaction_mode": "integer",
+      "hint": {
+        "level_0": "A triangle needs vertices not all on one line — so it takes 2 points from one line and 1 from the other. Count both ways."
+      },
+      "solution_steps": [
+        "Either 1 point from line A and 2 from line B, or 2 from A and 1 from B.",
+        "3·C(6,2) + 6·C(3,2).",
+        "= 63."
+      ],
+      "solution": "Step 1 — Either 1 point from line A and 2 from line B, or 2 from A and 1 from B. Step 2 — 3·C(6,2) + 6·C(3,2). Step 3 — = 63.",
+      "difficulty_tier": "hard",
+      "irt_b": 2.0,
+      "difficulty_score": 200,
+      "visual_svg": "",
+      "marks": 5,
+      "subtopic": "Counting figures on grids",
+      "area": "Combinatorial Geometry",
+      "year": "2026-27 (predicted)",
+      "km_level": "L5",
+      "km_pillar": "GEO",
+      "km_topic": "combinatorial_geometry",
+      "km_topic_display": "Combinatorial Geometry"
+    },
+    {
+      "id": "KM-L5-GEO-0239",
+      "legacy_id": "CG26-039",
+      "stem": "Of 10 points, exactly 4 are collinear and no other 3 are collinear. How many triangles do they determine?",
+      "choices": [],
+      "correct_answer": 116,
+      "correct_value": "116",
+      "interaction_mode": "integer",
+      "hint": {
+        "level_0": "All triples form triangles except the degenerate ones lying on the special line — how many of those are there?"
+      },
+      "solution_steps": [
+        "All triples: C(10,3) = 120.",
+        "Degenerate (the 4 collinear): C(4,3) = 4.",
+        "120 − 4 = 116."
+      ],
+      "solution": "Step 1 — All triples: C(10,3) = 120. Step 2 — Degenerate (the 4 collinear): C(4,3) = 4. Step 3 — 120 − 4 = 116.",
+      "difficulty_tier": "hard",
+      "irt_b": 2.0,
+      "difficulty_score": 200,
+      "visual_svg": "",
+      "marks": 5,
+      "subtopic": "Counting figures on grids",
+      "area": "Combinatorial Geometry",
+      "year": "2026-27 (predicted)",
+      "km_level": "L5",
+      "km_pillar": "GEO",
+      "km_topic": "combinatorial_geometry",
+      "km_topic_display": "Combinatorial Geometry"
+    },
+    {
+      "id": "KM-L5-GEO-0240",
+      "legacy_id": "CG26-040",
+      "stem": "Of 12 points, exactly 5 are collinear and no other 3 are collinear. How many triangles do they determine?",
+      "choices": [],
+      "correct_answer": 210,
+      "correct_value": "210",
+      "interaction_mode": "integer",
+      "hint": {
+        "level_0": "All triples form triangles except the degenerate ones lying on the special line — how many of those are there?"
+      },
+      "solution_steps": [
+        "All triples: C(12,3) = 220.",
+        "Degenerate (the 5 collinear): C(5,3) = 10.",
+        "220 − 10 = 210."
+      ],
+      "solution": "Step 1 — All triples: C(12,3) = 220. Step 2 — Degenerate (the 5 collinear): C(5,3) = 10. Step 3 — 220 − 10 = 210.",
+      "difficulty_tier": "hard",
+      "irt_b": 2.0,
+      "difficulty_score": 200,
+      "visual_svg": "",
+      "marks": 5,
+      "subtopic": "Counting figures on grids",
+      "area": "Combinatorial Geometry",
+      "year": "2026-27 (predicted)",
+      "km_level": "L5",
+      "km_pillar": "GEO",
+      "km_topic": "combinatorial_geometry",
+      "km_topic_display": "Combinatorial Geometry"
+    },
+    {
+      "id": "KM-L5-GEO-0241",
+      "legacy_id": "CG26-041",
+      "stem": "In how many ways can a 2×4 board be tiled by 1×2 dominoes?",
+      "choices": [],
+      "correct_answer": 5,
+      "correct_value": "5",
+      "interaction_mode": "integer",
+      "hint": {
+        "level_0": "Consider the leftmost column: one vertical domino, or two horizontals stacked. What recurrence appears?"
+      },
+      "solution_steps": [
+        "Vertical domino → 2×(4−1); two horizontals → 2×(4−2).",
+        "T(n)=T(n−1)+T(n−2) (Fibonacci).",
+        "T(4) = 5."
+      ],
+      "solution": "Step 1 — Vertical domino → 2×(4−1); two horizontals → 2×(4−2). Step 2 — T(n)=T(n−1)+T(n−2) (Fibonacci). Step 3 — T(4) = 5.",
+      "difficulty_tier": "medium",
+      "irt_b": 1.0,
+      "difficulty_score": 130,
+      "visual_svg": "",
+      "marks": 3,
+      "subtopic": "Tilings of shapes",
+      "area": "Combinatorial Geometry",
+      "year": "2026-27 (predicted)",
+      "km_level": "L5",
+      "km_pillar": "GEO",
+      "km_topic": "combinatorial_geometry",
+      "km_topic_display": "Combinatorial Geometry"
+    },
+    {
+      "id": "KM-L5-GEO-0242",
+      "legacy_id": "CG26-042",
+      "stem": "In how many ways can a 2×6 board be tiled by 1×2 dominoes?",
+      "choices": [],
+      "correct_answer": 13,
+      "correct_value": "13",
+      "interaction_mode": "integer",
+      "hint": {
+        "level_0": "Consider the leftmost column: one vertical domino, or two horizontals stacked. What recurrence appears?"
+      },
+      "solution_steps": [
+        "Vertical domino → 2×(6−1); two horizontals → 2×(6−2).",
+        "T(n)=T(n−1)+T(n−2) (Fibonacci).",
+        "T(6) = 13."
+      ],
+      "solution": "Step 1 — Vertical domino → 2×(6−1); two horizontals → 2×(6−2). Step 2 — T(n)=T(n−1)+T(n−2) (Fibonacci). Step 3 — T(6) = 13.",
+      "difficulty_tier": "medium",
+      "irt_b": 1.0,
+      "difficulty_score": 130,
+      "visual_svg": "",
+      "marks": 3,
+      "subtopic": "Tilings of shapes",
+      "area": "Combinatorial Geometry",
+      "year": "2026-27 (predicted)",
+      "km_level": "L5",
+      "km_pillar": "GEO",
+      "km_topic": "combinatorial_geometry",
+      "km_topic_display": "Combinatorial Geometry"
+    },
+    {
+      "id": "KM-L5-GEO-0243",
+      "legacy_id": "CG26-043",
+      "stem": "In how many ways can a 2×8 board be tiled by 1×2 dominoes?",
+      "choices": [],
+      "correct_answer": 34,
+      "correct_value": "34",
+      "interaction_mode": "integer",
+      "hint": {
+        "level_0": "Consider the leftmost column: one vertical domino, or two horizontals stacked. What recurrence appears?"
+      },
+      "solution_steps": [
+        "Vertical domino → 2×(8−1); two horizontals → 2×(8−2).",
+        "T(n)=T(n−1)+T(n−2) (Fibonacci).",
+        "T(8) = 34."
+      ],
+      "solution": "Step 1 — Vertical domino → 2×(8−1); two horizontals → 2×(8−2). Step 2 — T(n)=T(n−1)+T(n−2) (Fibonacci). Step 3 — T(8) = 34.",
+      "difficulty_tier": "medium",
+      "irt_b": 1.0,
+      "difficulty_score": 130,
+      "visual_svg": "",
+      "marks": 3,
+      "subtopic": "Tilings of shapes",
+      "area": "Combinatorial Geometry",
+      "year": "2026-27 (predicted)",
+      "km_level": "L5",
+      "km_pillar": "GEO",
+      "km_topic": "combinatorial_geometry",
+      "km_topic_display": "Combinatorial Geometry"
+    },
+    {
+      "id": "KM-L5-GEO-0244",
+      "legacy_id": "CG26-044",
+      "stem": "In how many ways can a 1×5 strip be tiled using tiles of length 1, 2 and 3?",
+      "choices": [],
+      "correct_answer": 13,
+      "correct_value": "13",
+      "interaction_mode": "integer",
+      "hint": {
+        "level_0": "Look at the last tile (length 1, 2 or 3): each choice leaves a shorter strip. What three-term recurrence results?"
+      },
+      "solution_steps": [
+        "f(n)=f(n−1)+f(n−2)+f(n−3) (tribonacci), f(0)=1,f(1)=1,f(2)=2.",
+        "Build up to n=5.",
+        "= 13."
+      ],
+      "solution": "Step 1 — f(n)=f(n−1)+f(n−2)+f(n−3) (tribonacci), f(0)=1,f(1)=1,f(2)=2. Step 2 — Build up to n=5. Step 3 — = 13.",
+      "difficulty_tier": "hard",
+      "irt_b": 2.0,
+      "difficulty_score": 200,
+      "visual_svg": "",
+      "marks": 5,
+      "subtopic": "Tilings of shapes",
+      "area": "Combinatorial Geometry",
+      "year": "2026-27 (predicted)",
+      "km_level": "L5",
+      "km_pillar": "GEO",
+      "km_topic": "combinatorial_geometry",
+      "km_topic_display": "Combinatorial Geometry"
+    },
+    {
+      "id": "KM-L5-GEO-0245",
+      "legacy_id": "CG26-045",
+      "stem": "In how many ways can a 1×6 strip be tiled using tiles of length 1, 2 and 3?",
+      "choices": [],
+      "correct_answer": 24,
+      "correct_value": "24",
+      "interaction_mode": "integer",
+      "hint": {
+        "level_0": "Look at the last tile (length 1, 2 or 3): each choice leaves a shorter strip. What three-term recurrence results?"
+      },
+      "solution_steps": [
+        "f(n)=f(n−1)+f(n−2)+f(n−3) (tribonacci), f(0)=1,f(1)=1,f(2)=2.",
+        "Build up to n=6.",
+        "= 24."
+      ],
+      "solution": "Step 1 — f(n)=f(n−1)+f(n−2)+f(n−3) (tribonacci), f(0)=1,f(1)=1,f(2)=2. Step 2 — Build up to n=6. Step 3 — = 24.",
+      "difficulty_tier": "hard",
+      "irt_b": 2.0,
+      "difficulty_score": 200,
+      "visual_svg": "",
+      "marks": 5,
+      "subtopic": "Tilings of shapes",
+      "area": "Combinatorial Geometry",
+      "year": "2026-27 (predicted)",
+      "km_level": "L5",
+      "km_pillar": "GEO",
+      "km_topic": "combinatorial_geometry",
+      "km_topic_display": "Combinatorial Geometry"
+    },
+    {
+      "id": "KM-L5-GEO-0246",
+      "legacy_id": "CG26-046",
+      "stem": "In how many ways can a 1×7 strip be tiled using tiles of length 1, 2 and 3?",
+      "choices": [],
+      "correct_answer": 44,
+      "correct_value": "44",
+      "interaction_mode": "integer",
+      "hint": {
+        "level_0": "Look at the last tile (length 1, 2 or 3): each choice leaves a shorter strip. What three-term recurrence results?"
+      },
+      "solution_steps": [
+        "f(n)=f(n−1)+f(n−2)+f(n−3) (tribonacci), f(0)=1,f(1)=1,f(2)=2.",
+        "Build up to n=7.",
+        "= 44."
+      ],
+      "solution": "Step 1 — f(n)=f(n−1)+f(n−2)+f(n−3) (tribonacci), f(0)=1,f(1)=1,f(2)=2. Step 2 — Build up to n=7. Step 3 — = 44.",
+      "difficulty_tier": "hard",
+      "irt_b": 2.0,
+      "difficulty_score": 200,
+      "visual_svg": "",
+      "marks": 5,
+      "subtopic": "Tilings of shapes",
+      "area": "Combinatorial Geometry",
+      "year": "2026-27 (predicted)",
+      "km_level": "L5",
+      "km_pillar": "GEO",
+      "km_topic": "combinatorial_geometry",
+      "km_topic_display": "Combinatorial Geometry"
+    },
+    {
+      "id": "KM-L5-GEO-0247",
+      "legacy_id": "CG26-047",
+      "stem": "How many distinct necklaces of 6 beads can be made with 2 colours, where rotations are considered the same?",
+      "choices": [],
+      "correct_answer": 14,
+      "correct_value": "14",
+      "interaction_mode": "integer",
+      "hint": {
+        "level_0": "Average the colourings fixed by each rotation (Burnside). A rotation by d positions fixes colourings constant on its cycles — how many cycles?"
+      },
+      "solution_steps": [
+        "Burnside over the 6 rotations: (1/6)·Σ_d φ(d)·2^(n/d).",
+        "Evaluate the sum over divisors d of 6.",
+        "= 14."
+      ],
+      "solution": "Step 1 — Burnside over the 6 rotations: (1/6)·Σ_d φ(d)·2^(n/d). Step 2 — Evaluate the sum over divisors d of 6. Step 3 — = 14.",
+      "difficulty_tier": "hard",
+      "irt_b": 2.0,
+      "difficulty_score": 200,
+      "visual_svg": "",
+      "marks": 5,
+      "subtopic": "Colourings of figures (Burnside)",
+      "area": "Combinatorial Geometry",
+      "year": "2026-27 (predicted)",
+      "km_level": "L5",
+      "km_pillar": "GEO",
+      "km_topic": "combinatorial_geometry",
+      "km_topic_display": "Combinatorial Geometry"
+    },
+    {
+      "id": "KM-L5-GEO-0248",
+      "legacy_id": "CG26-048",
+      "stem": "How many distinct necklaces of 5 beads can be made with 3 colours, where rotations are considered the same?",
+      "choices": [],
+      "correct_answer": 51,
+      "correct_value": "51",
+      "interaction_mode": "integer",
+      "hint": {
+        "level_0": "Average the colourings fixed by each rotation (Burnside). A rotation by d positions fixes colourings constant on its cycles — how many cycles?"
+      },
+      "solution_steps": [
+        "Burnside over the 5 rotations: (1/5)·Σ_d φ(d)·3^(n/d).",
+        "Evaluate the sum over divisors d of 5.",
+        "= 51."
+      ],
+      "solution": "Step 1 — Burnside over the 5 rotations: (1/5)·Σ_d φ(d)·3^(n/d). Step 2 — Evaluate the sum over divisors d of 5. Step 3 — = 51.",
+      "difficulty_tier": "hard",
+      "irt_b": 2.0,
+      "difficulty_score": 200,
+      "visual_svg": "",
+      "marks": 5,
+      "subtopic": "Colourings of figures (Burnside)",
+      "area": "Combinatorial Geometry",
+      "year": "2026-27 (predicted)",
+      "km_level": "L5",
+      "km_pillar": "GEO",
+      "km_topic": "combinatorial_geometry",
+      "km_topic_display": "Combinatorial Geometry"
+    },
+    {
+      "id": "KM-L5-GEO-0249",
+      "legacy_id": "CG26-049",
+      "stem": "In how many distinct ways can the 6 faces of a cube be coloured with 2 colours, where rotations of the cube are considered the same?",
+      "choices": [],
+      "correct_answer": 10,
+      "correct_value": "10",
+      "interaction_mode": "integer",
+      "hint": {
+        "level_0": "The cube's rotation group has 24 elements; average the colourings each rotation fixes (Burnside)."
+      },
+      "solution_steps": [
+        "Burnside over the 24 rotations gives (k⁶+3k⁴+12k³+8k²)/24.",
+        "Plug k=2.",
+        "= 10."
+      ],
+      "solution": "Step 1 — Burnside over the 24 rotations gives (k⁶+3k⁴+12k³+8k²)/24. Step 2 — Plug k=2. Step 3 — = 10.",
+      "difficulty_tier": "hard",
+      "irt_b": 2.0,
+      "difficulty_score": 200,
+      "visual_svg": "",
+      "marks": 5,
+      "subtopic": "Colourings of figures (Burnside)",
+      "area": "Combinatorial Geometry",
+      "year": "2026-27 (predicted)",
+      "km_level": "L5",
+      "km_pillar": "GEO",
+      "km_topic": "combinatorial_geometry",
+      "km_topic_display": "Combinatorial Geometry"
+    },
+    {
+      "id": "KM-L5-GEO-0250",
+      "legacy_id": "CG26-050",
+      "stem": "In how many distinct ways can the 6 faces of a cube be coloured with 3 colours, where rotations of the cube are considered the same?",
+      "choices": [],
+      "correct_answer": 57,
+      "correct_value": "57",
+      "interaction_mode": "integer",
+      "hint": {
+        "level_0": "The cube's rotation group has 24 elements; average the colourings each rotation fixes (Burnside)."
+      },
+      "solution_steps": [
+        "Burnside over the 24 rotations gives (k⁶+3k⁴+12k³+8k²)/24.",
+        "Plug k=3.",
+        "= 57."
+      ],
+      "solution": "Step 1 — Burnside over the 24 rotations gives (k⁶+3k⁴+12k³+8k²)/24. Step 2 — Plug k=3. Step 3 — = 57.",
+      "difficulty_tier": "hard",
+      "irt_b": 2.0,
+      "difficulty_score": 200,
+      "visual_svg": "",
+      "marks": 5,
+      "subtopic": "Colourings of figures (Burnside)",
+      "area": "Combinatorial Geometry",
+      "year": "2026-27 (predicted)",
+      "km_level": "L5",
+      "km_pillar": "GEO",
+      "km_topic": "combinatorial_geometry",
+      "km_topic_display": "Combinatorial Geometry"
+    }
+  ]
+}
